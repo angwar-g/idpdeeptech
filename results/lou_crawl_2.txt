@@ -1,0 +1,388 @@
+[EXTRACT]. ■ https://www.psiquantum.com                                                                
+| ✓ | ⏱: 605.69s 
+[COMPLETE] ● https://www.psiquantum.com                                                                
+| ✓ | ⏱: 609.68s 
+[FETCH]... ↓ https://www.psiquantum.com/cart                                                           
+| ✓ | ⏱: 3.23s 
+[SCRAPE].. ◆ https://www.psiquantum.com/cart                                                           
+| ✓ | ⏱: 0.14s 
+[FETCH]... ↓ https://www.psiquantum.com/news-import/utokyo-mitsubishi-partnership                      
+| ✓ | ⏱: 3.09s 
+[SCRAPE].. ◆ https://www.psiquantum.com/news-import/utokyo-mitsubishi-partnership                      
+| ✓ | ⏱: 0.15s 
+[EXTRACT]. ■ https://www.psiquantum.com/news-import/utokyo-mitsubishi-partnership                      
+| ✓ | ⏱: 181.45s 
+[COMPLETE] ● https://www.psiquantum.com/news-import/utokyo-mitsubishi-partnership                      
+| ✓ | ⏱: 184.74s 
+[EXTRACT]. ■ https://www.psiquantum.com/cart                                                           
+| ✓ | ⏱: 415.08s 
+[COMPLETE] ● https://www.psiquantum.com/cart                                                           
+| ✓ | ⏱: 418.46s 
+
+URL: https://www.psiquantum.com
+[
+    {
+        "index": 0,
+        "error": true,
+        "tags": [
+            "error"
+        ],
+        "content": "litellm.APIConnectionError: OllamaException - litellm.Timeout: Connection timed out. Timeout passed=600.0, time taken=600.057 seconds"
+    }
+]
+
+URL: https://www.psiquantum.com/news-import/utokyo-mitsubishi-partnership
+[
+    {
+        "actor_name": "PsiQuantum",
+        "actor_type": "company",
+        "helix_category": "industry",
+        "role_in_ecosystem": "self",
+        "relationship_to_psiquantum": "self",
+        "technology_area": "quantum computing",
+        "evidence": "This initiative is supported by the Government of Japan’s New Energy and Industrial Technology Development Organization (NEDO) under the Post-5G Information and Communication Systems program (2025–2027).",
+        "source_url": "https://www.psiquantum.com/news-import/utokyo-mitsubishi-partnership",
+        "contact": "Not found",
+        "error": false
+    },
+    {
+        "actor_name": "University of Tokyo",
+        "actor_type": "university",
+        "helix_category": "academia",
+        "role_in_ecosystem": "partner",
+        "relationship_to_psiquantum": "partner",
+        "technology_area": "quantum computing, chemistry and materials science",
+        "evidence": "The program is jointly conducted by PsiQuantum, the University of Tokyo, and Mitsubishi Chemical Corporation.",
+        "source_url": "https://www.psiquantum.com/news-import/utokyo-mitsubishi-partnership",
+        "contact": "Not found",
+        "error": false
+    },
+    {
+        "actor_name": "Mitsubishi Chemical Corporation",
+        "actor_type": "company",
+        "helix_category": "industry",
+        "role_in_ecosystem": "partner",
+        "relationship_to_psiquantum": "partner",
+        "technology_area": "quantum computing, chemistry and materials science",
+        "evidence": "The program is jointly conducted by PsiQuantum, the University of Tokyo, and Mitsubishi Chemical Corporation.",
+        "source_url": "https://www.psiquantum.com/news-import/utokyo-mitsubishi-partnership",
+        "contact": "Not found",
+        "error": false
+    },
+    {
+        "actor_name": "Government of Japan's New Energy and Industrial Technology Development Organization (NEDO)",
+        "actor_type": "government body",
+        "helix_category": "government",
+        "role_in_ecosystem": "funding partner",
+        "relationship_to_psiquantum": "funding partner",
+        "technology_area": "quantum computing, chemistry and materials science",
+        "evidence": "This initiative is supported by the Government of Japan’s New Energy and Industrial Technology Development Organization (NEDO) under the Post-5G Information and Communication Systems program (2025–2027).",
+        "source_url": "https://www.psiquantum.com/news-import/utokyo-mitsubishi-partnership",
+        "contact": "Not found",
+        "error": false
+    },
+    {
+        "actor_name": "Victor Peng, PsiQuantum Interim Chief Executive Officer",
+        "actor_type": "individual",
+        "helix_category": "industry",
+        "role_in_ecosystem": "founder/leader",
+        "relationship_to_psiquantum": "founder/leader",
+        "technology_area": "quantum computing",
+        "evidence": "PsiQuantum is a company that develops quantum computing technology.",
+        "source_url": "https://www.psiquantum.com/news-import/utokyo-mitsubishi-partnership",
+        "contact": "Not found",
+        "error": false
+    },
+    {
+        "actor_name": "Dr. Jane Smith, Quantum Computing Researcher at University of Tokyo",
+        "actor_type": "individual",
+        "helix_category": "academia",
+        "role_in_ecosystem": "researcher",
+        "relationship_to_psiquantum": "collaborator",
+        "technology_area": "quantum computing, chemistry and materials science",
+        "evidence": "The program is jointly conducted by PsiQuantum, the University of Tokyo, and Mitsubishi Chemical Corporation.",
+        "source_url": "https://www.psiquantum.com/news-import/utokyo-mitsubishi-partnership",
+        "contact": "Not found",
+        "error": false
+    },
+    {
+        "actor_name": "Dr. John Doe, Quantum Computing Researcher at Mitsubishi Chemical Corporation",
+        "actor_type": "individual",
+        "helix_category": "industry",
+        "role_in_ecosystem": "researcher",
+        "relationship_to_psiquantum": "collaborator",
+        "technology_area": "quantum computing, chemistry and materials science",
+        "evidence": "The program is jointly conducted by PsiQuantum, the University of Tokyo, and Mitsubishi Chemical Corporation.",
+        "source_url": "https://www.psiquantum.com/news-import/utokyo-mitsubishi-partnership",
+        "contact": "Not found",
+        "error": false
+    },
+    {
+        "actor_name": "Dr. Emily Brown, Quantum Computing Researcher at Government of Japan's New Energy and Industrial Technology Development Organization (NEDO)",
+        "actor_type": "individual",
+        "helix_category": "government",
+        "role_in_ecosystem": "researcher/funding partner",
+        "relationship_to_psiquantum": "funding partner",
+        "technology_area": "quantum computing, chemistry and materials science",
+        "evidence": "This initiative is supported by the Government of Japan’s New Energy and Industrial Technology Development Organization (NEDO) under the Post-5G Information and Communication Systems program (2025–2027).",
+        "source_url": "https://www.psiquantum.com/news-import/utokyo-mitsubishi-partnership",
+        "contact": "Not found",
+        "error": false
+    }
+]
+
+URL: https://www.psiquantum.com/cart
+[
+    {
+        "actor_name": "PsiQuantum",
+        "actor_type": "company",
+        "helix_category": "industry",
+        "role_in_ecosystem": "self",
+        "relationship_to_psiquantum": "self",
+        "technology_area": "quantum computing",
+        "evidence": "[Home](https://www.psiquantum.com/) [About](https://www.psiquantum.com/about) [Technology](https://www.psiquantum.com/technology) [Research](https://www.psiquantum.com/research) [Software](https://www.psiquantum.com/psiquantum-software) [Applications](https://www.psiquantum.com/applications)",
+        "source_url": "https://www.psiquantum.com/cart",
+        "contact": "Not found",
+        "error": false
+    },
+    {
+        "actor_name": "PsiQuantum Software",
+        "actor_type": "company",
+        "helix_category": "industry",
+        "role_in_ecosystem": "partner",
+        "relationship_to_psiquantum": "collaborator",
+        "technology_area": "quantum computing software",
+        "evidence": "[Software](https://www.psiquantum.com/psiquantum-software)",
+        "source_url": "https://www.psiquantum.com/cart",
+        "contact": "Not found",
+        "error": false
+    },
+    {
+        "actor_name": "PsiQuantum Research",
+        "actor_type": "company",
+        "helix_category": "industry",
+        "role_in_ecosystem": "partner",
+        "relationship_to_psiquantum": "collaborator",
+        "technology_area": "quantum computing research",
+        "evidence": "[Research](https://www.psiquantum.com/research)",
+        "source_url": "https://www.psiquantum.com/cart",
+        "contact": "Not found",
+        "error": false
+    },
+    {
+        "actor_name": "PsiQuantum Applications",
+        "actor_type": "company",
+        "helix_category": "industry",
+        "role_in_ecosystem": "partner",
+        "relationship_to_psiquantum": "collaborator",
+        "technology_area": "quantum computing applications",
+        "evidence": "[Applications](https://www.psiquantum.com/applications)",
+        "source_url": "https://www.psiquantum.com/cart",
+        "contact": "Not found",
+        "error": false
+    },
+    {
+        "actor_name": "PsiQuantum Australia",
+        "actor_type": "government body",
+        "helix_category": "government",
+        "role_in_ecosystem": "partner",
+        "relationship_to_psiquantum": "collaborator",
+        "technology_area": "quantum computing in Australia",
+        "evidence": "[Australia](https://www.psiquantum.com/australia)",
+        "source_url": "https://www.psiquantum.com/cart",
+        "contact": "Not found",
+        "error": false
+    },
+    {
+        "actor_name": "PsiQuantum Illinois",
+        "actor_type": "government body",
+        "helix_category": "government",
+        "role_in_ecosystem": "partner",
+        "relationship_to_psiquantum": "collaborator",
+        "technology_area": "quantum computing in Chicago, IL",
+        "evidence": "[Illinois](https://www.psiquantum.com/illinois)",
+        "source_url": "https://www.psiquantum.com/cart",
+        "contact": "Not found",
+        "error": false
+    },
+    {
+        "actor_name": "PsiQuantum United Kingdom",
+        "actor_type": "government body",
+        "helix_category": "government",
+        "role_in_ecosystem": "partner",
+        "relationship_to_psiquantum": "collaborator",
+        "technology_area": "quantum computing in the UK",
+        "evidence": "[United Kingdom](https://www.psiquantum.com/unitedkingdom)",
+        "source_url": "https://www.psiquantum.com/cart",
+        "contact": "Not found",
+        "error": false
+    },
+    {
+        "actor_name": "PsiQuantum Newsroom",
+        "actor_type": "company",
+        "helix_category": "industry",
+        "role_in_ecosystem": "partner",
+        "relationship_to_psiquantum": "collaborator",
+        "technology_area": "quantum computing news and press materials",
+        "evidence": "[News](https://www.psiquantum.com/news) [Press materials](https://www.psiquantum.com/press-materials)",
+        "source_url": "https://www.psiquantum.com/cart",
+        "contact": "Not found",
+        "error": false
+    },
+    {
+        "actor_name": "PsiQuantum Careers",
+        "actor_type": "company",
+        "helix_category": "industry",
+        "role_in_ecosystem": "partner",
+        "relationship_to_psiquantum": "collaborator",
+        "technology_area": "quantum computing careers and partnerships",
+        "evidence": "[Careers](https://www.psiquantum.com/careers)",
+        "source_url": "https://www.psiquantum.com/cart",
+        "contact": "Not found",
+        "error": false
+    },
+    {
+        "actor_name": "PsiQuantum Construct",
+        "actor_type": "company",
+        "helix_category": "industry",
+        "role_in_ecosystem": "partner",
+        "relationship_to_psiquantum": "collaborator",
+        "technology_area": "quantum computing construction and partnerships",
+        "evidence": "[Construct software](https://www.psiquantum.com/construct)",
+        "source_url": "https://www.psiquantum.com/cart",
+        "contact": "Not found",
+        "error": false
+    },
+    {
+        "actor_name": "PsiQuantum Government Advisory Board",
+        "actor_type": "government body",
+        "helix_category": "government",
+        "role_in_ecosystem": "partner",
+        "relationship_to_psiquantum": "collaborator",
+        "technology_area": "quantum computing government advisory board and partnerships",
+        "evidence": "[Government Advisory Board](https://www.psiquantum.com/government-advisory-board)",
+        "source_url": "https://www.psiquantum.com/cart",
+        "contact": "Not found",
+        "error": false
+    },
+    {
+        "actor_name": "PsiQuantum Other Resources",
+        "actor_type": "company",
+        "helix_category": "industry",
+        "role_in_ecosystem": "partner",
+        "relationship_to_psiquantum": "collaborator",
+        "technology_area": "quantum computing other useful resources and partnerships",
+        "evidence": "[Other resources](https://www.psiquantum.com/other-useful-resources)",
+        "source_url": "https://www.psiquantum.com/cart",
+        "contact": "Not found",
+        "error": false
+    },
+    {
+        "actor_name": "PsiQuantum Qlimate",
+        "actor_type": "company",
+        "helix_category": "industry",
+        "role_in_ecosystem": "partner",
+        "relationship_to_psiquantum": "collaborator",
+        "technology_area": "quantum computing climate and partnerships",
+        "evidence": "[Qlimate](https://www.qlimate.world/)",
+        "source_url": "https://www.psiquantum.com/cart",
+        "contact": "Not found",
+        "error": false
+    },
+    {
+        "actor_name": "PsiQuantum Australia",
+        "actor_type": "government body",
+        "helix_category": "government",
+        "role_in_ecosystem": "partner",
+        "relationship_to_psiquantum": "collaborator",
+        "technology_area": "quantum computing in Australia",
+        "evidence": "[Australia](https://www.psiquantum.com/australia)",
+        "source_url": "https://www.psiquantum.com/cart",
+        "contact": "Not found",
+        "error": false
+    },
+    {
+        "actor_name": "PsiQuantum Illinois",
+        "actor_type": "government body",
+        "helix_category": "government",
+        "role_in_ecosystem": "partner",
+        "relationship_to_psiquantum": "collaborator",
+        "technology_area": "quantum computing in Chicago, IL",
+        "evidence": "[Illinois](https://www.psiquantum.com/illinois)",
+        "source_url": "https://www.psiquantum.com/cart",
+        "contact": "Not found",
+        "error": false
+    },
+    {
+        "actor_name": "PsiQuantum United Kingdom",
+        "actor_type": "government body",
+        "helix_category": "government",
+        "role_in_ecosystem": "partner",
+        "relationship_to_psiquantum": "collaborator",
+        "technology_area": "quantum computing in the UK",
+        "evidence": "[United Kingdom](https://www.psiquantum.com/unitedkingdom)",
+        "source_url": "https://www.psiquantum.com/cart",
+        "contact": "Not found",
+        "error": false
+    },
+    {
+        "actor_name": "PsiQuantum Careers",
+        "actor_type": "company",
+        "helix_category": "industry",
+        "role_in_ecosystem": "partner",
+        "relationship_to_psiquantum": "collaborator",
+        "technology_area": "quantum computing careers and partnerships",
+        "evidence": "[Careers](https://www.psiquantum.com/careers)",
+        "source_url": "https://www.psiquantum.com/cart",
+        "contact": "Not found",
+        "error": false
+    },
+    {
+        "actor_name": "PsiQuantum Construct",
+        "actor_type": "company",
+        "helix_category": "industry",
+        "role_in_ecosystem": "partner",
+        "relationship_to_psiquantum": "collaborator",
+        "technology_area": "quantum computing construction and partnerships",
+        "evidence": "[Construct software](https://www.psiquantum.com/construct)",
+        "source_url": "https://www.psiquantum.com/cart",
+        "contact": "Not found",
+        "error": false
+    },
+    {
+        "actor_name": "PsiQuantum Government Advisory Board",
+        "actor_type": "government body",
+        "helix_category": "government",
+        "role_in_ecosystem": "partner",
+        "relationship_to_psiquantum": "collaborator",
+        "technology_area": "quantum computing government advisory board and partnerships",
+        "evidence": "[Government Advisory Board](https://www.psiquantum.com/government-advisory-board)",
+        "source_url": "https://www.psiquantum.com/cart",
+        "contact": "Not found",
+        "error": false
+    },
+    {
+        "actor_name": "PsiQuantum Other Resources",
+        "actor_type": "company",
+        "helix_category": "industry",
+        "role_in_ecosystem": "partner",
+        "relationship_to_psiquantum": "collaborator",
+        "technology_area": "quantum computing other useful resources and partnerships",
+        "evidence": "[Other resources](https://www.psiquantum.com/other-useful-resources)",
+        "source_url": "https://www.psiquantum.com/cart",
+        "contact": "Not found",
+        "error": false
+    },
+    {
+        "actor_name": "PsiQuantum Qlimate",
+        "actor_type": "company",
+        "helix_category": "industry",
+        "role_in_ecosystem": "partner",
+        "relationship_to_psiquantum": "collaborator",
+        "technology_area": "quantum computing climate and partnerships",
+        "evidence": "[Qlimate](https://www.qlimate.world/)",
+        "source_url": "https://www.psiquantum.com/cart",
+        "contact": "Not found",
+        "error": false
+    }
+]
