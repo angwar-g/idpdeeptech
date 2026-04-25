@@ -1,0 +1,42 @@
+(venv) PS C:\Users\gangw\OneDrive\Desktop\idpdeeptech> python crawler.py       
+[INIT].... → Crawl4AI 0.8.6 
+[FETCH]... ↓ https://www.psiquantum.com/                                                                          | ✓ | ⏱: 3.09s 
+[SCRAPE].. ◆ https://www.psiquantum.com/                                                                          | ✓ | ⏱: 0.14s 
+[EXTRACT]. ■ https://www.psiquantum.com/                                                                          | ✓ | ⏱: 309.98s 
+[COMPLETE] ● https://www.psiquantum.com/                                                                          | ✓ | ⏱: 313.30s 
+[FETCH]... ↓ https://www.psiquantum.com/news-import/utokyo-mitsubishi-partnership                                 | ✓ | ⏱: 2.24s 
+[SCRAPE].. ◆ https://www.psiquantum.com/news-import/utokyo-mitsubishi-partnership                                 | ✓ | ⏱: 0.08s 
+[EXTRACT]. ■ https://www.psiquantum.com/news-import/utokyo-mitsubishi-partnership                                 | ✓ | ⏱: 259.65s 
+[COMPLETE] ● https://www.psiquantum.com/news-import/utokyo-mitsubishi-partnership                                 | ✓ | ⏱: 262.02s 
+
+==============================
+URL: https://www.psiquantum.com/
+==============================
+[
+    {
+        "company_name": "PsiQuantum",
+        "description": "A quantum computing company on a mission to build and deploy the world’s first useful quantum computers.",
+        "contact_details": "Not found"
+    }
+]
+
+==============================
+URL: https://www.psiquantum.com/news-import/utokyo-mitsubishi-partnership
+==============================
+[
+    {
+        "company_name": "PsiQuantum Corp",
+        "description": "PsiQuantum was founded in 2016 and is headquartered in Palo Alto, California.",
+        "contact_details": "Not found"
+    },
+    {
+        "company_name": "University of Tokyo",
+        "description": "The University of Tokyo is Japan's leading university and one of the world's top research universities. The vast research output of some 6,000 researchers is published in the world's top journals across the arts and sciences.",
+        "contact_details": "Not found"
+    },
+    {
+        "company_name": "Mitsubishi Chemical Corporation",
+        "description": "Established in 1933, Mitsubishi Chemical Corporation is a comprehensive chemical manufacturer that provides a wide range of materials, from basic chemicals to performance products. The company operates globally across diverse fields including mobility, semiconductors and communications, food, medical, and infrastructure.",
+        "contact_details": "Not found"
+    }
+]
