@@ -1,0 +1,117 @@
+=== Main issue? Small ===
+
+[INIT].... → Crawl4AI 0.8.6 
+[FETCH]... ↓ https://www.psiquantum.com                                                                           | ✓ | ⏱: 11.21s 
+[SCRAPE].. ◆ https://www.psiquantum.com                                                                           | ✓ | ⏱: 0.08s 
+
+Give Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new
+LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[EXTRACT]. ■ https://www.psiquantum.com                                                                           | ✓ | ⏱: 607.23s 
+[COMPLETE] ● https://www.psiquantum.com                                                                           | ✓ | ⏱: 618.86s 
+[FETCH]... ↓ https://www.psiquantum.com/news-import/utokyo-mitsubishi-partnership                                 | ✓ | ⏱: 6.53s 
+[SCRAPE].. ◆ https://www.psiquantum.com/news-import/utokyo-mitsubishi-partnership                                 | ✓ | ⏱: 0.24s 
+[FETCH]... ↓ https://www.psiquantum.com/cart                                                                      | ✓ | ⏱: 6.97s 
+[SCRAPE].. ◆ https://www.psiquantum.com/cart                                                                      | ✓ | ⏱: 0.26s 
+[EXTRACT]. ■ https://www.psiquantum.com/news-import/utokyo-mitsubishi-partnership                                 | ✓ | ⏱: 167.04s 
+[COMPLETE] ● https://www.psiquantum.com/news-import/utokyo-mitsubishi-partnership                                 | ✓ | ⏱: 173.99s 
+
+Give Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new
+LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[EXTRACT]. ■ https://www.psiquantum.com/cart                                                                      | ✓ | ⏱: 602.20s 
+[COMPLETE] ● https://www.psiquantum.com/cart                                                                      | ✓ | ⏱: 609.79s 
+
+URL: https://www.psiquantum.com
+[
+    {
+        "index": 0,
+        "error": true,
+        "tags": [
+            "error"
+        ],
+        "content": "litellm.APIConnectionError: OllamaException - litellm.Timeout: Connection timed out. Timeout passed=600.0, time taken=600.162 seconds"
+    }
+]
+
+URL: https://www.psiquantum.com/news-import/utokyo-mitsubishi-partnership
+[
+    {
+        "actor_name": "PsiQuantum",
+        "actor_type": "company",
+        "helix_category": "industry",
+        "role_in_ecosystem": "provider of quantum computing solutions and technology",
+        "relationship_to_psiquantum": "self",
+        "technology_area": "quantum computing",
+        "evidence": "This initiative is supported by the Government of Japan’s New Energy and Industrial Technology Development Organization (NEDO) under the Post-5G Information and Communication Systems program (2025–2027).",
+        "source_url": "https://www.psiquantum.com/news-import/utokyo-mitsubishi-partnership",
+        "error": false
+    },
+    {
+        "actor_name": "University of Tokyo",
+        "actor_type": "university",
+        "helix_category": "academia",
+        "role_in_ecosystem": "provider of academic education and research in quantum computing",
+        "relationship_to_psiquantum": "partner",
+        "technology_area": "quantum computing, chemistry, materials science",
+        "evidence": "The program is jointly conducted by PsiQuantum, the University of Tokyo, and Mitsubishi Chemical Corporation, combining academic education, industrial application development, and advanced quantum computing technologies.",
+        "source_url": "https://www.psiquantum.com/news-import/utokyo-mitsubishi-partnership",
+        "error": false
+    },
+    {
+        "actor_name": "Mitsubishi Chemical Corporation",
+        "actor_type": "company",
+        "helix_category": "industry",
+        "role_in_ecosystem": "provider of industrial applications in chemistry and materials science",
+        "relationship_to_psiquantum": "partner",
+        "technology_area": "quantum computing, chemistry, materials science",
+        "evidence": "The program is jointly conducted by PsiQuantum, the University of Tokyo, and Mitsubishi Chemical Corporation, combining academic education, industrial application development, and advanced quantum computing technologies.",
+        "source_url": "https://www.psiquantum.com/news-import/utokyo-mitsubishi-partnership",
+        "error": false
+    },
+    {
+        "actor_name": "Government of Japan",
+        "actor_type": "government body",
+        "helix_category": "government",
+        "role_in_ecosystem": "funding and support for the quantum workforce development program",
+        "relationship_to_psiquantum": "partner",
+        "technology_area": "quantum computing, information technology",
+        "evidence": "This initiative is supported by the Government of Japan’s New Energy and Industrial Technology Development Organization (NEDO) under the Post-5G Information and Communication Systems program (2025–2027).",
+        "source_url": "https://www.psiquantum.com/news-import/utokyo-mitsubishi-partnership",
+        "error": false
+    },
+    {
+        "actor_name": "Victor Peng, PsiQuantum Interim Chief Executive Officer",
+        "actor_type": "individual",
+        "helix_category": "industry",
+        "role_in_ecosystem": "promoter and spokesperson for the quantum workforce development program",
+        "relationship_to_psiquantum": "partner",
+        "technology_area": "quantum computing",
+        "evidence": "This initiative is supported by the Government of Japan’s New Energy and Industrial Technology Development Organization (NEDO) under the Post-5G Information and Communication Systems program (2025–2027).",
+        "source_url": "https://www.psiquantum.com/news-import/utokyo-mitsubishi-partnership",
+        "error": false
+    },
+    {
+        "actor_name": "Qlimate.world",
+        "actor_type": "civil society organisation",
+        "helix_category": "civil society",
+        "role_in_ecosystem": "promoter and spokesperson for the quantum workforce development program",
+        "relationship_to_psiquantum": "partner",
+        "technology_area": "quantum computing, climate change",
+        "evidence": "This initiative is supported by the Government of Japan’s New Energy and Industrial Technology Development Organization (NEDO) under the Post-5G Information and Communication Systems program (2025–2027).",
+        "source_url": "https://www.psiquantum.com/news-import/utokyo-mitsubishi-partnership",
+        "error": false
+    }
+]
+
+URL: https://www.psiquantum.com/cart
+[
+    {
+        "index": 0,
+        "error": true,
+        "tags": [
+            "error"
+        ],
+        "content": "litellm.APIConnectionError: OllamaException - litellm.Timeout: Connection timed out. Timeout passed=600.0, time taken=600.128 seconds"
+    }
+]
