@@ -1,0 +1,290 @@
+=== Main issue? Repetition ===
+
+[FETCH]... ↓ https://quantumcomputinginc.com/                                                                     | ✓ | ⏱: 2.04s 
+[SCRAPE].. ◆ https://quantumcomputinginc.com/                                                                     | ✓ | ⏱: 0.19s 
+[EXTRACT]. ■ https://quantumcomputinginc.com/                                                                     | ✓ | ⏱: 520.20s 
+[COMPLETE] ● https://quantumcomputinginc.com/                                                                     | ✓ | ⏱: 522.58s 
+[FETCH]... ↓ https://quantumcomputinginc.com/                                                                     | ✓ | ⏱: 4.84s 
+[SCRAPE].. ◆ https://quantumcomputinginc.com/                                                                     | ✓ | ⏱: 0.14s 
+[FETCH]... ↓ https://quantumcomputinginc.com/foundry                                                              | ✓ | ⏱: 4.72s 
+[SCRAPE].. ◆ https://quantumcomputinginc.com/foundry                                                              | ✓ | ⏱: 0.03s 
+[EXTRACT]. ■ https://quantumcomputinginc.com/                                                                     | ✓ | ⏱: 443.59s 
+[COMPLETE] ● https://quantumcomputinginc.com/                                                                     | ✓ | ⏱: 448.81s 
+
+Give Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new
+LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[EXTRACT]. ■ https://quantumcomputinginc.com/foundry                                                              | ✓ | ⏱: 602.00s 
+[COMPLETE] ● https://quantumcomputinginc.com/foundry                                                              | ✓ | ⏱: 606.99s 
+
+URL: https://quantumcomputinginc.com/
+[
+    {
+        "actor_name": "NuCrypt",
+        "actor_type": "company",
+        "helix_category": "industry",
+        "role_in_ecosystem": "partner, technology development",
+        "relationship_to_psiquantum": "self",
+        "technology_area": "quantum computing, photonics",
+        "evidence": "[[](http://nucrypt.net/)](https://nucrypt.net/) NuCrypt develops inter-disciplinary technologies for emerging applications in communications and metrology.",
+        "source_url": "https://quantumcomputinginc.com/foundry",
+        "error": false
+    },
+    {
+        "actor_name": "Freedom Photonics",
+        "actor_type": "company",
+        "helix_category": "industry",
+        "role_in_ecosystem": "partner, technology development",
+        "relationship_to_psiquantum": "self",
+        "technology_area": "quantum computing, photonics",
+        "evidence": "[[](https://freedomphotonics.com/)](https://freedomphotonics.com/) Freedom Photonics is a leader in design, development and manufacturing of unique and innovative photonics components, modules and subsystems.",
+        "source_url": "https://quantumcomputinginc.com/foundry",
+        "error": false
+    },
+    {
+        "actor_name": "EM4",
+        "actor_type": "company",
+        "helix_category": "industry",
+        "role_in_ecosystem": "partner, technology development",
+        "relationship_to_psiquantum": "self",
+        "technology_area": "quantum computing, photonics",
+        "evidence": "[[](https://em4photonics.com/)](https://em4photonics.com/) EM4 is a leader in high-performance photonics components, modules and subassemblies with a long heritage as a preferred supplier for leading aerospace and defense contractors around the globe.",
+        "source_url": "https://quantumcomputinginc.com/foundry",
+        "error": false
+    },
+    {
+        "actor_name": "Optogration",
+        "actor_type": "company",
+        "helix_category": "industry",
+        "role_in_ecosystem": "partner, technology development",
+        "relationship_to_psiquantum": "self",
+        "technology_area": "quantum computing, photonics",
+        "evidence": "[[](https://optogration.com/)](https://optogration.com/) Optogration is a leader in advanced photodetectors and detector-based components with extremely high sensitivity and wide dynamic range for mission-critical applications.",
+        "source_url": "https://quantumcomputinginc.com/foundry",
+        "error": false
+    },
+    {
+        "actor_name": "NuCrypt",
+        "actor_type": "company",
+        "helix_category": "industry",
+        "role_in_ecosystem": "technology development, partner",
+        "relationship_to_psiquantum": "partner",
+        "technology_area": "quantum computing, photonics",
+        "evidence": "[[](http://nucrypt.net/)](https://nucrypt.net/) NuCrypt develops inter-disciplinary technologies for emerging applications in communications and metrology.",
+        "source_url": "https://quantumcomputinginc.com/foundry",
+        "error": false
+    },
+    {
+        "actor_name": "Freedom Photonics",
+        "actor_type": "company",
+        "helix_category": "industry",
+        "role_in_ecosystem": "technology development, partner",
+        "relationship_to_psiquantum": "partner",
+        "technology_area": "quantum computing, photonics",
+        "evidence": "[[](https://freedomphotonics.com/)](https://freedomphotonics.com/) Freedom Photonics is a leader in design, development and manufacturing of unique and innovative photonics components, modules and subsystems.",
+        "source_url": "https://quantumcomputinginc.com/foundry",
+        "error": false
+    },
+    {
+        "actor_name": "EM4",
+        "actor_type": "company",
+        "helix_category": "industry",
+        "role_in_ecosystem": "technology development, partner",
+        "relationship_to_psiquantum": "partner",
+        "technology_area": "quantum computing, photonics",
+        "evidence": "[[](https://em4photonics.com/)](https://em4photonics.com/) EM4 is a leader in high-performance photonics components, modules and subassemblies with a long heritage as a preferred supplier for leading aerospace and defense contractors around the globe.",
+        "source_url": "https://quantumcomputinginc.com/foundry",
+        "error": false
+    },
+    {
+        "actor_name": "Optogration",
+        "actor_type": "company",
+        "helix_category": "industry",
+        "role_in_ecosystem": "technology development, partner",
+        "relationship_to_psiquantum": "partner",
+        "technology_area": "quantum computing, photonics",
+        "evidence": "[[](https://optogration.com/)](https://optogration.com/) Optogration is a leader in advanced photodetectors and detector-based components with extremely high sensitivity and wide dynamic range for mission-critical applications.",
+        "source_url": "https://quantumcomputinginc.com/foundry",
+        "error": false
+    },
+    {
+        "actor_name": "NuCrypt",
+        "actor_type": "company",
+        "helix_category": "industry",
+        "role_in_ecosystem": "technology development, partner",
+        "relationship_to_psiquantum": "partner",
+        "technology_area": "quantum computing, photonics",
+        "evidence": "[[](http://nucrypt.net/)](https://nucrypt.net/) NuCrypt develops inter-disciplinary technologies for emerging applications in communications and metrology.",
+        "source_url": "https://quantumcomputinginc.com/foundry",
+        "error": false
+    },
+    {
+        "actor_name": "Freedom Photonics",
+        "actor_type": "company",
+        "helix_category": "industry",
+        "role_in_ecosystem": "technology development, partner",
+        "relationship_to_psiquantum": "partner",
+        "technology_area": "quantum computing, photonics",
+        "evidence": "[[](https://freedomphotonics.com/)](https://freedomphotonics.com/) Freedom Photonics is a leader in design, development and manufacturing of unique and innovative photonics components, modules and subsystems.",
+        "source_url": "https://quantumcomputinginc.com/foundry",
+        "error": false
+    },
+    {
+        "actor_name": "EM4",
+        "actor_type": "company",
+        "helix_category": "industry",
+        "role_in_ecosystem": "technology development, partner",
+        "relationship_to_psiquantum": "partner",
+        "technology_area": "quantum computing, photonics",
+        "evidence": "[[](https://em4photonics.com/)](https://em4photonics.com/) EM4 is a leader in high-performance photonics components, modules and subassemblies with a long heritage as a preferred supplier for leading aerospace and defense contractors around the globe.",
+        "source_url": "https://quantumcomputinginc.com/foundry",
+        "error": false
+    },
+    {
+        "actor_name": "Optogration",
+        "actor_type": "company",
+        "helix_category": "industry",
+        "role_in_ecosystem": "technology development, partner",
+        "relationship_to_psiquantum": "partner",
+        "technology_area": "quantum computing, photonics",
+        "evidence": "[[](https://optogration.com/)](https://optogration.com/) Optogration is a leader in advanced photodetectors and detector-based components with extremely high sensitivity and wide dynamic range for mission-critical applications.",
+        "source_url": "https://quantumcomputinginc.com/foundry",
+        "error": false
+    }
+]
+
+URL: https://quantumcomputinginc.com/
+[
+    {
+        "actor_name": "NuCrypt",
+        "actor_type": "company",
+        "helix_category": "industry",
+        "role_in_ecosystem": "partner, technology development",
+        "relationship_to_psiquantum": "self",
+        "technology_area": "quantum computing, photonics",
+        "evidence": "[[](http://nucrypt.net/)](https://nucrypt.net/) NuCrypt develops inter-disciplinary technologies for emerging applications in communications and metrology.",
+        "source_url": "https://quantumcomputinginc.com/foundry",
+        "error": false
+    },
+    {
+        "actor_name": "Freedom Photonics",
+        "actor_type": "company",
+        "helix_category": "industry",
+        "role_in_ecosystem": "partner, technology development",
+        "relationship_to_psiquantum": "self",
+        "technology_area": "quantum computing, photonics",
+        "evidence": "[[](https://freedomphotonics.com/)](https://freedomphotonics.com/) Freedom Photonics is a leader in design, development and manufacturing of unique and innovative photonics components, modules and subsystems.",
+        "source_url": "https://quantumcomputinginc.com/foundry",
+        "error": false
+    },
+    {
+        "actor_name": "EM4",
+        "actor_type": "company",
+        "helix_category": "industry",
+        "role_in_ecosystem": "partner, technology development",
+        "relationship_to_psiquantum": "self",
+        "technology_area": "quantum computing, photonics",
+        "evidence": "[[](https://em4photonics.com/)](https://em4photonics.com/) EM4 is a leader in high-performance photonics components, modules and subassemblies with a long heritage as a preferred supplier for leading aerospace and defense contractors around the globe.",
+        "source_url": "https://quantumcomputinginc.com/foundry",
+        "error": false
+    },
+    {
+        "actor_name": "Optogration",
+        "actor_type": "company",
+        "helix_category": "industry",
+        "role_in_ecosystem": "partner, technology development",
+        "relationship_to_psiquantum": "self",
+        "technology_area": "quantum computing, photonics",
+        "evidence": "[[](https://optogration.com/)](https://optogration.com/) Optogration is a leader in advanced photodetectors and detector-based components with extremely high sensitivity and wide dynamic range for mission-critical applications.",
+        "source_url": "https://quantumcomputinginc.com/foundry",
+        "error": false
+    },
+    {
+        "actor_name": "NuCrypt",
+        "actor_type": "company",
+        "helix_category": "industry",
+        "role_in_ecosystem": "technology development, partner",
+        "relationship_to_psiquantum": "partner",
+        "technology_area": "quantum computing, photonics",
+        "evidence": "[[](http://nucrypt.net/)](https://nucrypt.net/) NuCrypt develops inter-disciplinary technologies for emerging applications in communications and metrology.",
+        "source_url": "https://quantumcomputinginc.com/foundry",
+        "error": false
+    },
+    {
+        "actor_name": "Freedom Photonics",
+        "actor_type": "company",
+        "helix_category": "industry",
+        "role_in_ecosystem": "technology development, partner",
+        "relationship_to_psiquantum": "partner",
+        "technology_area": "quantum computing, photonics",
+        "evidence": "[[](https://freedomphotonics.com/)](https://freedomphotonics.com/) Freedom Photonics is a leader in design, development and manufacturing of unique and innovative photonics components, modules and subsystems.",
+        "source_url": "https://quantumcomputinginc.com/foundry",
+        "error": false
+    },
+    {
+        "actor_name": "EM4",
+        "actor_type": "company",
+        "helix_category": "industry",
+        "role_in_ecosystem": "technology development, partner",
+        "relationship_to_psiquantum": "partner",
+        "technology_area": "quantum computing, photonics",
+        "evidence": "[[](https://em4photonics.com/)](https://em4photonics.com/) EM4 is a leader in high-performance photonics components, modules and subassemblies with a long heritage as a preferred supplier for leading aerospace and defense contractors around the globe.",
+        "source_url": "https://quantumcomputinginc.com/foundry",
+        "error": false
+    },
+    {
+        "actor_name": "Optogration",
+        "actor_type": "company",
+        "helix_category": "industry",
+        "role_in_ecosystem": "technology development, partner",
+        "relationship_to_psiquantum": "partner",
+        "technology_area": "quantum computing, photonics",
+        "evidence": "[[](https://optogration.com/)](https://optogration.com/) Optogration is a leader in advanced photodetectors and detector-based components with extremely high sensitivity and wide dynamic range for mission-critical applications.",
+        "source_url": "https://quantumcomputinginc.com/foundry",
+        "error": false
+    },
+    {
+        "actor_name": "NuCrypt",
+        "actor_type": "company",
+        "helix_category": "industry",
+        "role_in_ecosystem": "technology development, partner",
+        "relationship_to_psiquantum": "partner",
+        "technology_area": "quantum computing, photonics",
+        "evidence": "[[](http://nucrypt.net/)](https://nucrypt.net/) NuCrypt develops inter-disciplinary technologies for emerging applications in communications and metrology.",
+        "source_url": "https://quantumcomputinginc.com/foundry",
+        "error": false
+    },
+    {
+        "actor_name": "Freedom Photonics",
+        "actor_type": "company",
+        "helix_category": "industry",
+        "role_in_ecosystem": "technology development, partner",
+        "relationship_to_psiquantum": "partner",
+        "technology_area": "quantum computing, photonics",
+        "evidence": "[[](https://freedomphotonics.com/)](https://freedomphotonics.com/) Freedom Photonics is a leader in design, development and manufacturing of unique and innovative photonics components, modules and subsystems.",
+        "source_url": "https://quantumcomputinginc.com/foundry",
+        "error": false
+    },
+    {
+        "actor_name": "EM4",
+        "actor_type": "company",
+        "helix_category": "industry",
+        "role_in_ecosystem": "technology development, partner",
+        "relationship_to_psiquantum": "partner",
+        "technology_area": "quantum computing, photonics",
+        "evidence": "[[](https://em4photonics.com/)](https://em4photonics.com/) EM4 is a leader in high-performance photonics components, modules and subassemblies with a long heritage as a preferred supplier for leading aerospace and defense contractors around the globe.",
+        "source_url": "https://quantumcomputinginc.com/foundry",
+        "error": false
+    },
+    {
+        "actor_name": "Optogration",
+        "actor_type": "company",
+        "helix_category": "industry",
+        "role_in_ecosystem": "technology development, partner",
+        "relationship_to_psiquantum": "partner",
+        "technology_area": "quantum computing, photonics",
+        "evidence": "[[](https://optogration.com/)](https://optogration.com/) Optogration is a leader in advanced photodetectors and detector-based components with extremely high sensitivity and wide dynamic range for mission-critical applications.",
+        "source_url": "https://quantumcomputinginc.com/foundry",
+        "error": false
+    }
+]
