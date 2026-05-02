@@ -1,6 +1,6 @@
-import os
-from dotenv import load_dotenv
-load_dotenv()
+# import os
+# from dotenv import load_dotenv
+# load_dotenv()
 import asyncio
 from crawl4ai import AsyncWebCrawler, BrowserConfig, CrawlerRunConfig, CacheMode, LLMConfig
 from crawl4ai import LLMExtractionStrategy
@@ -12,11 +12,10 @@ class OpenAIModelFee(BaseModel):
     actor_type: str = Field(..., description="Type of actor: company, startup, university, research institute, government body, investor, civil society organisation, individual, or other")
     helix_category: str = Field(..., description="Quadruple Helix category: industry, academia, government, civil society, or unknown")
     role_in_ecosystem: str = Field(..., description="What role this actor plays in the quantum/deep-tech ecosystem, based only on the webpage")
-    relationship_to_psiquantum: str = Field(..., description="How this actor is connected to PsiQuantum, e.g. partner, investor, supplier, customer, collaborator, regulator, founder, employee, mentioned actor, or unknown")
+    relationship_to_domain: str = Field(..., description="How this actor is connected to the domain's company, e.g. partner, investor, supplier, customer, collaborator, regulator, founder, employee, mentioned actor, or unknown")
     technology_area: str = Field(..., description="Relevant technology area, e.g. quantum computing, photonics, semiconductors, cryogenics, manufacturing, policy, investment, or unknown")
     evidence: str = Field(..., description="Short quote or close paraphrase from the webpage supporting this extraction")
     source_url: str = Field(..., description="URL of the webpage where this information was found")
-    contact: str = Field(..., description="Contact details if available, including email, phone, address, or contact page URL; otherwise 'Not found'")
 
 async def main():
     browser_config = BrowserConfig(verbose=True)
@@ -33,7 +32,7 @@ async def main():
             instruction="""
             You are extracting actors and ecosystem relationships for a research project on quantum and deep-tech innovation networks.
 
-            From the crawled webpage, extract all relevant actors mentioned in relation to PsiQuantum or the quantum/deep-tech ecosystem.
+            From the crawled webpage, extract all relevant actors mentioned in relation to domain's company or the quantum/deep-tech ecosystem.
 
             Actors may include:
             - companies
@@ -54,23 +53,24 @@ async def main():
             "actor_type": "...",
             "helix_category": "...",
             "role_in_ecosystem": "...",
-            "relationship_to_psiquantum": "...",
+            "relationship_to_domain": "...",
             "technology_area": "...",
             "evidence": "...",
             "source_url": "...",
-            "contact": "..."
             }
 
             Rules:
+            - Use only text that appears on this webpage.
+            - Do not infer partnerships.
+            - Do not invent news URLs.
+            - Extract multiple actors if the page mentions multiple relevant organisations or people.
+            - Do not include actors unless there is direct evidence in the page text.
+            - The evidence field must quote or closely copy the exact webpage text.
+            - If no actors are found, return [].
             - Return only valid JSON.
             - Do not include markdown.
             - Do not include explanations.
-            - Do not invent actors or relationships.
-            - Use only information present on the webpage.
-            - If the actor is PsiQuantum itself, set relationship_to_psiquantum to "self".
-            - If a field is not available, use "unknown" or "Not found" for contact.
-            - Include contact details only if email, phone, address, or a contact/legal/imprint page is present.
-            - Extract multiple actors if the page mentions multiple relevant organisations or people.
+            - If the actor is the original domain's company itself, set relationship_to_domain to "self".
             """
         ),
         cache_mode=CacheMode.BYPASS,
@@ -83,7 +83,7 @@ async def main():
     
     async with AsyncWebCrawler(config=browser_config) as crawler:
         results = await crawler.arun(
-        url="https://www.psiquantum.com",
+        url="https://quantumcomputinginc.com/",
         config=run_config
         )
 
