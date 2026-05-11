@@ -1,0 +1,214 @@
+was trying to extract + clean in the same script, I'll separate these into 2 steps as I just did for actors
+
+[
+  {
+    "source_actor": "National Venture Guidance Fund",
+    "target_actor": "PRC's State Council",
+    "interaction_phrase": "announced a program to accelerate quantum technology startups",
+    "relation_label": "collaborative_leadership",
+    "relation_label_confidence": "high",
+    "occurrence_sentence": "The PRC's State Council also announced a program in March 2024 to accelerate quantum technology startups.",
+    "source_document": "260129_Tomoshige_China_Quantum.pdf",
+    "page": 3
+  },
+  {
+    "source_actor": "Professor Guo Guangcan",
+    "target_actor": "Origin Quantum Co.",
+    "interaction_phrase": "founded",
+    "relation_label": "collaborative_leadership",
+    "relation_label_confidence": "high",
+    "occurrence_sentence": "Professor Guo Guangcan and one of his students founded Origin Quantum, which developed China's first full-stack quantum computer in 2017.",
+    "source_document": "260129_Tomoshige_China_Quantum.pdf",
+    "page": 4
+  },
+  {
+    "source_actor": "Origin Quantum Computing Technology",
+    "target_actor": "Shanghai Quantum Science Research Center",
+    "interaction_phrase": "collaboration",
+    "relation_label": "networking",
+    "relation_label_confidence": "high",
+    "occurrence_sentence": "... through collaboration between a group of research universities, research centers, and companies, including: ... Origin Quantum Computing Technology; and Shanghai Quantum Science Research Center ...",
+    "source_document": "260129_Tomoshige_China_Quantum.pdf",
+    "page": 5
+  },
+  {
+    "source_actor": "Origin Quantum Computing Technology",
+    "target_actor": "Center for Excellence in Quantum Physics",
+    "interaction_phrase": "collaboration",
+    "relation_label": "networking",
+    "relation_label_confidence": "high",
+    "occurrence_sentence": "... through collaboration between a group of research universities, research centers, and companies, including: ... Origin Quantum Computing Technology; and Center for Excellence in Quantum Physics ...",
+    "source_document": "260129_Tomoshige_China_Quantum.pdf",
+    "page": 5
+  },
+  {
+    "source_actor": "Origin Quantum Computing Technology",
+    "target_actor": "Anhui Quantum Computing Engineering Research Center",
+    "interaction_phrase": "collaboration",
+    "relation_label": "networking",
+    "relation_label_confidence": "high",
+    "occurrence_sentence": "... through collaboration between a group of research universities, research centers, and companies, including: ... Origin Quantum Computing Technology; and Anhui Quantum Computing Engineering Research Center ...",
+    "source_document": "260129_Tomoshige_China_Quantum.pdf",
+    "page": 5
+  },
+  {
+    "source_actor": "Origin Quantum Computing Technology",
+    "target_actor": "China Telecom Quantum Group (CTQG)",
+    "interaction_phrase": "collaboration",
+    "relation_label": "networking",
+    "relation_label_confidence": "high",
+    "occurrence_sentence": "... through collaboration between a group of research universities, research centers, and companies, including: ... Origin Quantum Computing Technology; and China Telecom Quantum Group (CTQG) ...",
+    "source_document": "260129_Tomoshige_China_Quantum.pdf",
+    "page": 5
+  },
+  {
+    "source_actor": "China Telecom Quantum Group (CTQG)",
+    "target_actor": "QuantumCTek Co.",
+    "interaction_phrase": "has emerged as a strategic player in quantum computing",
+    "relation_label": "collaborative_leadership",
+    "relation_label_confidence": "high",
+    "occurrence_sentence": "China Telecom Quantum Group has emerged as a strategic player in quantum computing after becoming the controlling shareholder of QuantumCTek in January 2025.",
+    "source_document": "260129_Tomoshige_China_Quantum.pdf",
+    "page": 5
+  },
+  {
+    "source_actor": "Anhui Quantum Computing Engineering Research Center",
+    "target_actor": "QuantumCTek Co.",
+    "interaction_phrase": "jointly announced that they will mass produce dilution refrigeration.",
+    "relation_label": "collaborative_leadership",
+    "relation_label_confidence": "high",
+    "occurrence_sentence": "As another example of developing its indigenous supply chain, China has long relied on imports for dilution refrigerators, which are essential for superconducting quantum computers, but the Anhui Quantum Computing Engineering Research Center and QuantumCTek last year jointly announced that they will mass produce dilution refrigeration.",
+    "source_document": "260129_Tomoshua_China_Quantum.pdf",
+    "page": 6
+  },
+  {
+    "source_actor": "Wuhan Optics Valley Information Optoelectronic Innovation Center Co.",
+    "target_actor": "CAS Key Laboratory of Quantum Information",
+    "interaction_phrase": "Professor Guo Guoping, cofounder of Origin Quantum Co. and deputy director of the CAS Key Laboratory of Quantum Information",
+    "relation_label": "collaborative_leadership",
+    "relation_label_confidence": "high",
+    "occurrence_sentence": "Professor Guo Guoping, cofounder of Origin Quantum Co. and deputy director of the CAS Key Laboratory of Quantum Information, has noted that Chinese suppliers developed 80 percent of Origin Wukong's hardware, chips, operating systems, and application software.",
+    "source_document": "260129_Tomoshige_China_Quantum.pdf",
+    "page": 6
+  },
+  {
+    "source_actor": "Wuhan Optics Valley Information Optoelectronic Innovation Center Co.",
+    "target_actor": "Zhongke Kuyuan Technology Co.",
+    "interaction_phrase": "in collaboration with Wuhan Optics Valley Information Optoelectronic Innovation Center Co.",
+    "relation_label": "collaborative_leadership",
+    "relation_label_confidence": "high",
+    "occurrence_sentence": "It was developed by CAS's Innovation Academy for Precision Measurement Science and Technology in Wuhan in collaboration with Wuhan University, Zhongke Kuyuan Technology Co., Wuhan Optics Valley Information Optoelectronic Innovation Center Co., Wuhan Institute of Quantum Technology, and Huazhong University of Science and Technology.",
+    "source_document": "260129_Tomoshige_China_Quantum.pdf",
+    "page": 6
+  },
+  {
+    "source_actor": "Wuhan Optics Valley Information Optoelectronic Innovation Center Co.",
+    "target_actor": "Wuhan Institute of Quantum Technology",
+    "interaction_phrase": "in collaboration with Wuhan Optics Valley Information Optoelectronic Innovation Center Co.",
+    "relation_label": "collaborative_leadership",
+    "relation_label_confidence": "high",
+    "occurrence_sentence": "It was developed by CAS's Innovation Academy for Precision Measurement Science and Technology in Wuhan in collaboration with Wuhan University, Zhongke Kuyuan Technology Co., Wuhan Optics Valley Information Optoelectronic Innovation Center Co., Wuhan Institute of Quantum Technology, and Huazhong University of Science and Technology.",
+    "source_document": "260129_Tomoshige_China_Quantum.pdf",
+    "page": 6
+  },
+  {
+    "source_actor": "Tsinghua University",
+    "target_actor": "Wuhan Institute of Quantum Technology",
+    "interaction_phrase": "in collaboration with Tsinghua University",
+    "relation_label": "collaborative_leadership",
+    "relation_label_confidence": "high",
+    "occurrence_sentence": "It was developed by CAS's Innovation Academy for Precision Measurement Science and Technology in Wuhan in collaboration with Wuhan University, Zhongke Kuyuan Technology Co., Wuhan Optics Valley Information Optoelectronic Innovation Center Co., Wuhan Institute of Quantum Technology, and Huazhong University of Science and Technology.",
+    "source_document": "260129_Tomoshige_China_Quantum.pdf",
+    "page": 6
+  },
+  {
+    "source_actor": "Wuhan University",
+    "target_actor": "Wuhan Quantum Technology Research Institute",
+    "interaction_phrase": "A team from Wuhan University and the Wuhan Quantum Technology Research Institute has also developed...",
+    "relation_label": "collaborative_leadership",
+    "relation_label_confidence": "high",
+    "occurrence_sentence": "A team from Wuhan University and the Wuhan Quantum Technology Research Institute has also developed an atomic quantum computing cloud platform to accelerate application development.",
+    "source_document": "260129_Tomoshige_China_Quantum.pdf",
+    "page": 7
+  },
+  {
+    "source_actor": "Wuhan Quantum Technology Research Institute",
+    "target_actor": "Alibaba Cloud",
+    "interaction_phrase": "This team also developing China's first neutral-atom quantum computing center.",
+    "relation_label": "technology_transfer",
+    "relation_label_confidence": "medium",
+    "occurrence_sentence": "A team from Wuhan University and the Wuhan Quantum Technology Research Institute has also developed an atomic quantum computing cloud platform to accelerate application development. This team also developing China's first neutral-atom quantum computing center.",
+    "source_document": "260129_Tomoshige_China_Quantum.pdf",
+    "page": 7
+  },
+  {
+    "source_actor": "Alibaba Cloud",
+    "target_actor": "Wuhan Quantum Technology Research Institute",
+    "interaction_phrase": "Alibaba Cloud's E-HPC platform offers commercial users an interface for deploying quantum-inspired algorithms.",
+    "relation_label": "technology_transfer",
+    "relation_label_confidence": "medium",
+    "occurrence_sentence": "In the industrial sector, Alibaba Cloud's E-HPC platform offers commercial users an interface for deploying quantum-inspired algorithms.",
+    "source_document": "260129_Tomoshige_China_Quantum.pdf",
+    "page": 7
+  },
+  {
+    "source_actor": "National Supercomputing Center in Wuxi",
+    "target_actor": "Wuhan Quantum Technology Research Institute",
+    "interaction_phrase": "The National Supercomputing Center in Wuxi, home to the Sunway TaihuLight supercomputer, is being used to simulate quantum computational chemistry problems.",
+    "relation_label": "technology_transfer",
+    "relation_label_confidence": "medium",
+    "occurrence_sentence": "According to publicly available information, Chinese R&D with respect to the integration of quantum computing and high-performance computing (HPC) appears to be limited. When it comes to quantum simulation on HPC, both the Chinese government and private sector are researching and attempting to commercialize ways to efficiently simulate and develop quantum circuit programs and quantum algorithms on HPC. For example, the National Supercomputing Center in Wuxi, home to the Sunway TaihuLight supercomputer, is being used to simulate quantum computational chemistry problems.",
+    "source_document": "260129_Tomoshige_China_Quantum.pdf",
+    "page": 7
+  },
+  {
+    "source_actor": "China Telecom Quantum Group (CTQG)",
+    "target_actor": "Lu Guiqing",
+    "interaction_phrase": "Lu Guiqing, chairman of China Telecom Quantum Group (CTQG), has stated...",
+    "relation_label": "collaborative_leadership",
+    "relation_label_confidence": "high",
+    "occurrence_sentence": "Lu Guiqing, chairman of China Telecom Quantum Group (CTQG), has stated that CTQG's quantum key distribution services have been introduced hundreds of applications in China, with more than 5.5 million users and 3,000 service providers.",
+    "source_document": "260129_Tomoshige_China_Quantum.pdf",
+    "page": 7
+  },
+  {
+    "source_actor": "Beijing municipal government",
+    "target_actor": "Peking University",
+    "interaction_phrase": "in collaboration with",
+    "relation_label": "collaborative_leadership",
+    "relation_label_confidence": "high",
+    "occurrence_sentence": "the Beijing municipal government, in collaboration with Peking University, Tsinghua  University, CAS, and other institutions, established the Beijing Academy of Quantum Information Science (BAQIS).",
+    "source_document": "260129_Tomoshige_China_Quantum.pdf",
+    "page": 9
+  },
+  {
+    "source_actor": "Beijing municipal government",
+    "target_actor": "Tsinghua University",
+    "interaction_phrase": "in collaboration with",
+    "relation_label": "collaborative_leadership",
+    "relation_label_confidence": "high",
+    "occurrence_sentence": "the Beijing municipal government, in collaboration with Peking University, Tsinghua  University, CAS, and other institutions, established the Beijing Academy of Quantum Information Science (BAQIS).",
+    "source_document": "260129_Tomoshige_China_Quantum.pdf",
+    "page": 9
+  },
+  {
+    "source_actor": "Beijing municipal government",
+    "target_actor": "CAS",
+    "interaction_phrase": "in collaboration with",
+    "relation_label": "collaborative_leadership",
+    "relation_label_confidence": "high",
+    "occurrence_sentence": "the Beijing municipal government, in collaboration with Peking University, Tsinghua  University, CAS, and other institutions, established the Beijing Academy of Quantum Information Science (BAQIS).",
+    "source_document": "260129_Tomoshige_China_Quantum.pdf",
+    "page": 9
+  },
+  {
+    "source_actor": "Beijing Academy of Quantum Information Science (BAQIS)",
+    "target_actor": "Baidu Quantum",
+    "interaction_phrase": "received a significant donation of a quantum computing lab and equipment from",
+    "relation_label": "technology_transfer",
+    "relation_label_confidence": "high",
+    "occurrence_sentence": "In 2024, BAQIS received a significant donation of a quantum computing lab and equipment from Baidu Quantum, the quantum division of the major Chinese technology company Baidu.",
+    "source_document": "260129_Tomoshige_China_Quantum.pdf",
+    "page": 9
+  }
+]
