@@ -1,23 +1,16 @@
 #!/usr/bin/env python3
 """
 classify_triple_helix.py
-
-Post-process IDP PDF actor and interaction JSON files.
+At the end, no need to pollute LLM input
+Post-process PDF actor and interaction JSON files.
 
 Input:
   - 2_actor_nodes_pdf.json
   - 4_interaction_edges_pdf.json
 
 Output:
-  - 5_nodes.json       actors enriched with helix, sphere, r_and_d
-  - 5_edges.json edges enriched with source/target helix and functional_space
-
-Usage:
-  python classify_triple_helix.py \
-    --actors 2_actor_nodes_pdf.json \
-    --interactions 4_interaction_edges_pdf.json \
-    --out-actors 5_nodes.json \
-    --out-interactions 5_edges.json
+  - 5_nodes.json :      actors enriched with helix, sphere, r_and_d
+  - 5_edges.json : edges enriched with source/target helix and functional_space
 """
 
 from __future__ import annotations

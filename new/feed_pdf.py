@@ -305,6 +305,7 @@ async def extract_chunk(pdf_name: str, page_num: int, chunk: str) -> str:
     - Do not invent actors, websites, countries, abbreviations, or affiliations.
     - occurrence_sentence must be copied from the text and must contain the actor.
     - Do not extract page headers, footers, page titles, or repeated author names unless the surrounding sentence describes their role or affiliation.
+    - When multiple named actors appear in one sentence, extract each named actor separately even if only one performs the main action.
     - Do not extract combined mentions like "Actor A and Actor B" as one actor. Extract them separately.
     - Use "Null" where a field does not apply.
     - Return [] only if there are no named actors or actor-like mentions.

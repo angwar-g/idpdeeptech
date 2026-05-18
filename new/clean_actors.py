@@ -141,8 +141,32 @@ def normalize_status(record: dict) -> str:
 
     return status or "unknown"
 
+GENERIC_FRAGMENT_KEYS = {
+    "center", "centre", "institute", "university",
+    "laboratory", "lab", "companies", "institutions",
+    "researchers", "scientists", "suppliers",
+    "users", "stakeholders"
+}
+
+COMPOSITE_PATTERNS = [
+    r"\b and \b",
+    r"\s*&\s*",
+    r"\b in collaboration with \b",
+]
+
+CATEGORY_OVERRIDES = {
+    "state council": "national government institutions",
+    "prc state council": "national government institutions",
+    "prc s state council": "national government institutions",
+    "national development and reform commission": "national government institutions",
+    "beijing municipal government": "sub-national government institutions",
+}
 
 def normalize_category(record: dict) -> str:
+    entity_key = normalize_text(record.get("entity", ""))
+    if entity_key in CATEGORY_OVERRIDES:
+        return CATEGORY_OVERRIDES[entity_key]
+
     category = str(record.get("category", "")).strip()
 
     aliases = {
@@ -161,11 +185,29 @@ def normalize_category(record: dict) -> str:
 
     return aliases.get(category, category)
 
+COMPOSITE_PATTERNS = [
+    r"\b and \b",
+    r"\s*&\s*",
+    r"\b in collaboration with \b",
+]
+
+GENERIC_FRAGMENT_KEYS = {
+    "center", "centre", "institute", "university",
+    "laboratory", "lab", "companies", "institutions",
+    "researchers", "scientists", "suppliers"
+}
+
+def is_composite_actor(entity: str) -> bool:
+    return any(re.search(p, entity, flags=re.I) for p in COMPOSITE_PATTERNS)
+
+def is_generic_fragment(entity: str) -> bool:
+    return normalize_text(entity) in GENERIC_FRAGMENT_KEYS
 
 def is_actor_node(record: dict) -> bool:
     status = normalize_status(record)
     category = normalize_category(record).lower().strip()
-    entity = normalize_text(record.get("entity", ""))
+    entity_raw = str(record.get("entity", "")).strip()
+    entity = normalize_text(entity_raw)
 
     if not entity:
         return False
@@ -176,8 +218,32 @@ def is_actor_node(record: dict) -> bool:
     if category in {"", "null", "unknown"}:
         return False
 
-    return True
+    if entity in GENERIC_FRAGMENT_KEYS:
+        return False
 
+    if any(re.search(p, entity_raw, flags=re.I) for p in COMPOSITE_PATTERNS):
+        return False
+
+    if entity in {"other institutions", "scientists at baqis"}:
+        return False
+
+    PRODUCT_OR_PLATFORM_NAMES = {
+        "zuchongzhi cloud",
+        "tianyan quantum cloud",
+        "origin quantum cloud",
+        "origin wukong",
+        "zuchongzhi 3 0",
+        "zuchongzhi 3 2",
+        "tianyan 504",
+    }
+
+    if entity in PRODUCT_OR_PLATFORM_NAMES:
+        return False
+
+    if "platform" in entity and not re.search(r"\b(company|group|institute|university|center|centre)\b", entity):
+        return False
+
+    return True
 
 def entity_similarity(a: str, b: str) -> float:
     return SequenceMatcher(None, normalize_text(a), normalize_text(b)).ratio()

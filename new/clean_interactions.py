@@ -39,6 +39,7 @@ DROP_TEXT_PATTERNS = [
     r"\bis a senior adviser\b",
     r"\bis a senior advisor\b",
     r"\bformer intern\b",
+    r"\b©\b",
 ]
 
 BAD_PHRASE_PATTERNS = [
@@ -81,6 +82,12 @@ EVIDENCE_PATTERNS = {
         r"\blicensed\b",
         r"\bpatent\b",
         r"\binfrastructure\b",
+        r"\bcommercial deployment\b",
+        r"\bdelivered to\b",
+        r"\bexport to\b",
+        r"\bcloud platform\b",
+        r"\bapplication development\b",
+        r"\bmarket-ready\b",
     ],
     "collaborative_leadership": [
         r"\bestablished\b",
@@ -99,6 +106,11 @@ EVIDENCE_PATTERNS = {
         r"\borganiz",
         r"\bguided\b",
         r"\bled by\b",
+        r"\bannounced\b",
+        r"\bsigned investment intent agreements\b",
+        r"\bprovided risk capital\b",
+        r"\bsupports?\b",
+        r"\bprioriti[sz]es\b",
     ],
     "networking": [
         r"\bin collaboration with\b",
@@ -116,6 +128,11 @@ EVIDENCE_PATTERNS = {
         r"\bcontrolling shareholder\b",
         r"\bowned by\b",
         r"\bacquired\b",
+        r"\bjointly announced\b",
+        r"\bin collaboration with\b",
+        r"\btogether\b",
+        r"\bco-developed\b",
+        r"\bco-built\b",
     ],
     "substitution": [
         r"\bsubstitut",
@@ -193,6 +210,10 @@ def clean_edge_fields(edge: dict) -> dict:
     edge["relation_label"] = edge["relation_label"].strip()
     edge["relation_label_confidence"] = edge["relation_label_confidence"].lower().strip()
 
+    if "controlling shareholder" in edge["occurrence_sentence"].lower():
+        edge["interaction_phrase"] = "becoming the controlling shareholder of " + edge["target_actor"]
+        edge["relation_label"] = "networking"
+
     if edge["relation_label"] not in ALLOWED_RELATION_LABELS:
         edge["relation_label"] = "no_explicit_relation"
 
@@ -253,19 +274,61 @@ def has_real_evidence(edge: dict) -> bool:
         for patterns in EVIDENCE_PATTERNS.values()
     )
 
+# DEPRECATED (I think? ;-;)
+def build_short_aliases(actor_nodes):
+    short_aliases = set()
+
+    for actor in actor_nodes:
+        for alias in actor.get("aliases", []):
+            key = normalize_name(alias)
+            if 2 <= len(key) <= 6 and key.isalnum():
+                short_aliases.add(key)
+
+    return short_aliases
+
+def actor_matches(actor_name, sentence, short_aliases):
+    actor_key = normalize_name(actor_name)
+
+    if actor_key in short_aliases:
+        return re.search(rf"\b{re.escape(actor_key)}\b", sentence) is not None
+
+    tokens = [t for t in actor_key.split() if len(t) > 3]
+    return any(re.search(rf"\b{re.escape(t)}\b", sentence) for t in tokens)
+
 def actors_appear_in_sentence(edge: dict) -> bool:
-    sentence = normalize_text(edge.get("occurrence_sentence", "")).lower()
+    return relation_phrase_links_actors(edge)
 
-    source = normalize_text(edge.get("source_actor", "")).lower()
-    target = normalize_text(edge.get("target_actor", "")).lower()
+def actor_in_sentence(actor: str, sentence: str) -> bool:
+    actor = normalize_name(actor)
 
-    source_tokens = [t for t in source.split() if len(t) > 3]
-    target_tokens = [t for t in target.split() if len(t) > 3]
+    if not actor:
+        return False
 
-    source_match = any(t in sentence for t in source_tokens)
-    target_match = any(t in sentence for t in target_tokens)
+    if len(actor) <= 6:
+        return re.search(rf"\b{re.escape(actor)}\b", sentence) is not None
 
-    return source_match and target_match
+    # For multi-word actors, require either full normalized name
+    # or at least 2 meaningful tokens.
+    if actor in sentence:
+        return True
+
+    tokens = [t for t in actor.split() if len(t) > 3]
+    if len(tokens) <= 1:
+        return any(re.search(rf"\b{re.escape(t)}\b", sentence) for t in tokens)
+
+    matches = sum(
+        1 for t in tokens
+        if re.search(rf"\b{re.escape(t)}\b", sentence)
+    )
+
+    return matches >= 2
+
+def relation_phrase_links_actors(edge: dict) -> bool:
+    sentence = normalize_name(edge.get("occurrence_sentence", ""))
+    source = edge.get("source_actor", "")
+    target = edge.get("target_actor", "")
+
+    return actor_in_sentence(source, sentence) and actor_in_sentence(target, sentence)
 
 def should_drop(edge: dict) -> bool:
     text = combined_text(edge)
@@ -283,7 +346,13 @@ def should_drop(edge: dict) -> bool:
     if has_pattern(DROP_TEXT_PATTERNS, text):
         return True
 
-    if has_pattern(BAD_PHRASE_PATTERNS, phrase):
+    strong_relation = re.search(
+        r"\bin collaboration with\b|\bcollaboration between\b|\bcontrolling shareholder\b|\bhas developed\b|\bestablished\b|\bspun off from\b|\bfounded\b",
+        text,
+        flags=re.I,
+    )
+
+    if has_pattern(BAD_PHRASE_PATTERNS, phrase) and not strong_relation:
         return True
 
     # Drop vague group edges unless there is a clear relation verb.
@@ -301,6 +370,20 @@ def should_drop(edge: dict) -> bool:
     if not actors_appear_in_sentence(edge) and not has_real_evidence(edge):
         return True
 
+    list_collaboration_edge = re.search(
+        r"\bcollaboration between\b|\bincluding:\s*\.\.\.",
+        text,
+        flags=re.I,
+    )
+
+    if not relation_phrase_links_actors(edge) and not list_collaboration_edge:
+        return True
+
+    if re.search(r"\bcollaboration between\b", text, flags=re.I):
+        edge["relation_label"] = "networking"
+        edge["relation_label_confidence"] = "medium"
+        return False
+
     return False
 
 
@@ -308,11 +391,11 @@ def infer_relation_label(edge: dict) -> dict:
     text = combined_text(edge)
 
     for label in [
-        "collaboration_conflict_moderation",
-        "substitution",
-        "networking",
         "collaborative_leadership",
         "technology_transfer",
+        "networking",
+        "substitution",
+        "collaboration_conflict_moderation",
     ]:
         if has_pattern(EVIDENCE_PATTERNS[label], text):
             edge["relation_label"] = label

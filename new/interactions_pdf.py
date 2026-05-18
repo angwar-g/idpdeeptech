@@ -154,13 +154,24 @@ def build_actor_maps(all_actors: list[dict], pdf_name: str):
     return unique_canonical_names, alias_to_canonical
 
 
-def get_present_actors(chunk: str, alias_to_canonical: dict[str, str]) -> list[str]:
+def get_present_actors(
+    chunk: str,
+    alias_to_canonical: dict[str, str],
+    short_aliases: set[str],
+) -> list[str]:
     chunk_norm = normalize_name(chunk)
     present = []
 
     for alias_key, canonical in sorted(alias_to_canonical.items(), key=lambda x: len(x[0]), reverse=True):
-        if alias_key and alias_key in chunk_norm:
-            present.append(canonical)
+        if not alias_key:
+            continue
+
+        if alias_key in short_aliases:
+            if re.search(rf"\b{re.escape(alias_key)}\b", chunk_norm):
+                present.append(canonical)
+        else:
+            if alias_key in chunk_norm:
+                present.append(canonical)
 
     seen = set()
     unique = []
@@ -216,11 +227,37 @@ async def extract_interactions_from_chunk(
     - Do not classify the interaction type.
     - Extract only explicit interactions or co-participation.
     - Interaction can include collaboration, funding, founding, spin-off, donation, establishment, request, cooperation, affiliation, joint development, membership, ownership, controlling shareholder, or participation in the same named initiative.
-    - For list-based collaboration, extract pairwise interactions only when the sentence clearly says the listed actors collaborated, jointly built, jointly developed, or jointly established something.
+        - For list-based collaboration or co-development, extract ALL pairwise interactions between the lead/developing actor and every listed collaborator.
+        - Example: "It was developed by Actor A in collaboration with Actor B, Actor C, and Actor D" must produce:
+        Actor A -> Actor B
+        Actor A -> Actor C
+        Actor A -> Actor D
+        - If multiple actors jointly announced, jointly developed, jointly established, or jointly commercialized something, extract an edge for each explicit pair.
+        - Do not create edges from headers, footers, author bylines, page numbers, acknowledgments, or biography text unless they describe a substantive innovation ecosystem relationship.    
     - Do not create an interaction just because two actors are mentioned in the same document.
     - interaction_phrase must be copied from the text.
     - occurrence_sentence must be the full sentence containing the interaction.
     - If there are no interactions, return [].
+    
+    - Always extract spin-off edges:
+        "Actor A and Actor B both spun off from Actor C" =>
+        Actor A -> Actor C
+        Actor B -> Actor C
+
+        - Always extract founding edges:
+        "Person A founded Actor B" =>
+        Person A -> Actor B
+
+        - Always extract donation edges:
+        "Actor A received a donation from Actor B" =>
+        Actor A -> Actor B
+
+        - Always extract establishment edges:
+        "Actor A, in collaboration with Actor B and Actor C, established Actor D" =>
+        Actor A -> Actor D
+        Actor B -> Actor D
+        Actor C -> Actor D
+    
     - Return only JSON. No markdown. No explanation.
     """
 
@@ -229,7 +266,7 @@ async def extract_interactions_from_chunk(
         api_base="http://localhost:11434",
         messages=[{"role": "user", "content": prompt}],
         temperature=0,
-        num_predict=700,
+        num_predict=1500,
     )
 
     return response.choices[0].message.content  # type: ignore
@@ -286,9 +323,21 @@ def dedupe_edges(edges: list[dict]) -> list[dict]:
 
     return deduped
 
+def build_short_aliases(actor_nodes):
+    short_aliases = set()
+
+    for actor in actor_nodes:
+        for alias in actor.get("aliases", []):
+            key = normalize_name(alias)
+            if 2 <= len(key) <= 6 and key.isalnum():
+                short_aliases.add(key)
+
+    return short_aliases
 
 async def main():
     actors = json.loads(INPUT_JSON.read_text(encoding="utf-8"))
+    short_aliases = build_short_aliases(actors)
+
     all_interactions = []
 
     for pdf_path in PDF_DIR.glob("*.pdf"):
@@ -306,13 +355,18 @@ async def main():
 
         for page in pages:
             page_num = page["page"]
-            chunks = paragraph_chunks(page["text"], max_chars=900, overlap_paragraphs=0)
+            chunks = paragraph_chunks(page["text"], max_chars=1800, overlap_paragraphs=1)
 
             for chunk in chunks:
-                present_actors = get_present_actors(chunk, alias_to_canonical)
+                present_actors = get_present_actors(chunk, alias_to_canonical, short_aliases)
 
-                if len(present_actors) > 12:
-                    present_actors = present_actors[:12]
+                #present_actors = sorted(
+                #    present_actors,
+                #    key=lambda a: len(a),
+                #    reverse=True
+                #)[:25]
+                
+                present_actors = present_actors[:25]
 
                 if len(present_actors) < 2:
                     continue
@@ -350,6 +404,23 @@ async def main():
                     all_interactions.append(edge)
 
                 await asyncio.sleep(1)
+
+        page_present_actors = get_present_actors(page["text"], alias_to_canonical, short_aliases)
+
+    if len(page_present_actors) >= 2:
+        page_present_actors = page_present_actors[:30]
+
+        raw = await extract_interactions_from_chunk(
+            pdf_name=pdf_name,
+            page_num=page_num,
+            chunk=page["text"],
+            actor_names=page_present_actors,
+        )
+
+        parsed = parse_json_array(raw)
+        for edge in parsed:
+            if isinstance(edge, dict) and has_required_schema(edge) and basic_valid_edge(edge, valid_actor_keys):
+                all_interactions.append(edge)
 
     all_interactions = dedupe_edges(all_interactions)
 
