@@ -14,6 +14,7 @@ STEPS = [
     ("4 clean interactions", "clean_interactions.py"),
 ]
 
+
 def run_step(label, script, cwd):
     print(f"\n=== {label} ===")
     subprocess.run(
@@ -22,9 +23,14 @@ def run_step(label, script, cwd):
         check=True,
     )
 
+
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("pdf", help="PDF filename inside pdf_input/, e.g. china25.pdf")
+    parser.add_argument(
+        "--skip-actors", "-s", action="store_true",
+        help="Skip feed_pdf and clean_actors. Requires 2_actor_nodes_pdf.json in output dir.",
+    )
     args = parser.parse_args()
 
     root = Path(__file__).parent.resolve()
@@ -42,7 +48,20 @@ def main():
 
     shutil.copy2(pdf_path, work_pdf_dir / pdf_path.name)
 
-    for label, script in STEPS:
+    if args.skip_actors:
+        nodes_file = out_dir / "2_actor_nodes_pdf.json"
+        if not nodes_file.exists():
+            sys.exit(
+                f"Error: --skip-actors requires {nodes_file} to exist.\n"
+                "Run the pipeline without --skip-actors first to generate actor nodes."
+            )
+        print("\n=== 1 actor extraction (skipped via --skip-actors) ===")
+        print("\n=== 2 clean actors (skipped via --skip-actors) ===")
+        steps_to_run = STEPS[2:]  # interactions onwards
+    else:
+        steps_to_run = STEPS
+
+    for label, script in steps_to_run:
         run_step(label, script, out_dir)
 
     print("\n=== 5 helix enrichment ===")
@@ -66,22 +85,12 @@ def main():
         check=True,
     )
 
-    rename_map = {
-        "1_actor_results_pdf.json": f"{stem}_1_results.json",
-        "2_actor_nodes_pdf.json": f"{stem}_2_actor_nodes.json",
-        "3_interaction_results_pdf.json": f"{stem}_3_interaction_results.json",
-        "4_interaction_edges_pdf.json": f"{stem}_4_edges.json",
-        "5_nodes.json": f"{stem}_5_nodes.json",
-        "5_edges.json": f"{stem}_5_edges.json",
-        "quantum_network.html": f"{stem}_network.html",
-    }
-
-    for old, new in rename_map.items():
-        old_path = out_dir / old
-        if old_path.exists():
-            shutil.copy2(old_path, out_dir / new)
+    html = out_dir / "quantum_network.html"
+    if html.exists():
+        html.rename(out_dir / "network.html")
 
     print(f"\nDone. Outputs written to: {out_dir}")
+
 
 if __name__ == "__main__":
     main()
