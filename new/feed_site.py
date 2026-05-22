@@ -1,4 +1,12 @@
-# like feed.py but for PDFs (doesn't require a crawled output first)
+"""Extract named actors from crawled website pages.
+
+Parallel to feed_pdf.py. Reads markdown from crawl_output/*.json files.
+Uses the same LLM prompt as feed_pdf.py; only the SOURCE block differs
+(source_type=website, source_document=URL).
+
+Writes to 1_actor_results_pdf.json so the existing clean_actors.py picks it up
+without modification. Saves incrementally after each URL.
+"""
 
 import json
 import re
@@ -7,7 +15,6 @@ import warnings
 from pathlib import Path
 
 from dotenv import load_dotenv
-import fitz  # PyMuPDF
 from litellm import acompletion
 from json_repair import repair_json
 
@@ -17,29 +24,14 @@ warnings.filterwarnings("ignore", category=UserWarning)
 warnings.filterwarnings("ignore", message="Pydantic serializer warnings:*")
 
 
-PDF_DIR = Path("pdf_input")
-PDF_DIR.mkdir(exist_ok=True)
-
+CRAWL_DIR = Path("crawl_output")
 OUTPUT_JSON = Path("1_actor_results_pdf.json")
 
 
-def extract_pdf_text(pdf_path: Path) -> list[dict]:
-    doc = fitz.open(pdf_path)
-    pages = []
-
-    for page_num, page in enumerate(doc, start=1):  # type: ignore
-        pages.append({
-            "page": page_num,
-            "text": page.get_text("text"),
-        })
-
-    return pages
-
-
-def paragraph_chunks(text: str, max_chars=1800, overlap_paragraphs=1) -> list[str]:
+def paragraph_chunks(text: str, max_chars: int = 1800, overlap_paragraphs: int = 1) -> list[str]:
     paragraphs = [p.strip() for p in re.split(r"\n\s*\n", text) if p.strip()]
-    chunks = []
-    current = []
+    chunks: list[str] = []
+    current: list[str] = []
     current_len = 0
 
     for p in paragraphs:
@@ -73,159 +65,15 @@ def clean_json(raw: str) -> str:
     return raw
 
 
-def normalize_text(value: str) -> str:
-    value = str(value).lower().strip()
-    value = re.sub(r"\([^)]*\)", "", value)
-    value = re.sub(r"[^a-z0-9\s]", " ", value)
-    value = re.sub(r"\s+", " ", value)
-    return value.strip()
-
-
-def extract_aliases(entity: str) -> list[str]:
-    entity = entity.strip()
-    aliases = [entity]
-
-    m = re.search(r"^(.*?)\s*\((.*?)\)$", entity)
-    if m:
-        full = m.group(1).strip()
-        abbrev = m.group(2).strip()
-
-        if full:
-            aliases.append(full)
-        if abbrev:
-            aliases.append(abbrev)
-
-    return sorted(set(a for a in aliases if a))
-
-
-def normalize_status_and_category(r: dict) -> dict:
-    status = str(r.get("status", "")).lower().strip()
-    category = str(r.get("category", "")).strip().lower()
-
-    if status in {
-        "actor",
-        "individual",
-        "institutional",
-        "company",
-        "university",
-        "research institute",
-        "government body",
-        "financial support institution",
-        "business support institution",
-    }:
-        r["status"] = "entity"
-
-    if status in {"technology", "location_only"}:
-        r["status"] = "not_actor"
-
-    if category.lower() == "individuals":
-        r["category"] = "individual"
-
-    if not r.get("excluded_reason"):
-        r["excluded_reason"] = "Null"
-
-    return r
-
-
-def is_clean_actor(r: dict) -> bool:
-    status = str(r.get("status", "")).lower().strip()
-    category = str(r.get("category", "")).lower().strip()
-    entity_key = normalize_text(r.get("entity", ""))
-
-    if status not in {"entity", "actor", "uncertain"}:
-        return False
-
-    if category in {"", "null", "unknown"}:
-        return False
-
-    if entity_key in {
-        "center", "centre", "institute", "university",
-        "companies", "researchers", "scientists",
-        "stakeholders", "users", "other institutions",
-    }:
-        return False
-
-    return True
-
-
-def better_record(existing: dict, candidate: dict) -> dict:
-    existing_sentence = str(existing.get("occurrence_sentence", ""))
-    candidate_sentence = str(candidate.get("occurrence_sentence", ""))
-
-    if len(candidate_sentence) > len(existing_sentence):
-        return candidate
-
-    return existing
-
-
-def dedupe_results(results: list[dict]) -> list[dict]:
-    alias_to_key = {}
-    key_to_record = {}
-
-    for r in results:
-        if not isinstance(r, dict):
-            continue
-
-        r = normalize_status_and_category(r)
-
-        if not is_clean_actor(r):
-            continue
-
-        entity = str(r.get("entity", "")).strip()
-
-        if not entity:
-            continue
-
-        aliases = extract_aliases(entity)
-        alias_keys = [normalize_text(alias) for alias in aliases if normalize_text(alias)]
-
-        if not alias_keys:
-            continue
-
-        existing_key = None
-        for alias_key in alias_keys:
-            if alias_key in alias_to_key:
-                existing_key = alias_to_key[alias_key]
-                break
-
-        main_key = existing_key or alias_keys[0]
-
-        for alias_key in alias_keys:
-            alias_to_key[alias_key] = main_key
-
-        r["canonical_actor_key"] = main_key
-        r["aliases"] = aliases
-        r["pages"] = [r.get("page")]
-
-        if main_key not in key_to_record:
-            key_to_record[main_key] = r
-        else:
-            existing = key_to_record[main_key]
-            chosen = better_record(existing, r)
-
-            pages = sorted(set(existing.get("pages", []) + [r.get("page")]))
-            aliases_merged = sorted(set(existing.get("aliases", []) + aliases))
-
-            chosen["canonical_actor_key"] = main_key
-            chosen["aliases"] = aliases_merged
-            chosen["pages"] = pages
-
-            if chosen.get("category") in {"Null", "unknown", ""} and r.get("category") not in {"Null", "unknown", ""}:
-                chosen["category"] = r.get("category")
-
-            key_to_record[main_key] = chosen
-
-    return list(key_to_record.values())
-
-
-async def extract_chunk(pdf_name: str, page_num: int, chunk: str) -> str:
+async def extract_chunk(source_url: str, chunk_idx: int, chunk: str) -> str:
+    """Same prompt as feed_pdf.py, with source_type='website'."""
     prompt = f"""
     You are extracting named actors from quantum and deep-tech ecosystem texts.
 
     SOURCE
-    source_type: "pdf"
-    source_document: "{pdf_name}"
-    page: {page_num}
+    source_type: "website"
+    source_document: "{source_url}"
+    page: {chunk_idx}
 
     TEXT
     {chunk}
@@ -243,8 +91,8 @@ async def extract_chunk(pdf_name: str, page_num: int, chunk: str) -> str:
     "role_in_text": "...",
     "technology_area": "quantum computing | quantum communication | quantum sensing | quantum materials | quantum simulation | quantum cryptography | semiconductors | photonics | AI | robotics | fusion | deep tech general | other | unknown",
     "occurrence_sentence": "...",
-    "source_document": "{pdf_name}",
-    "page": {page_num},
+    "source_document": "{source_url}",
+    "page": {chunk_idx},
     "confidence": "high | medium | low"
     }}
 
@@ -311,69 +159,86 @@ async def extract_chunk(pdf_name: str, page_num: int, chunk: str) -> str:
 async def main():
     all_results = []
 
-    for pdf_path in PDF_DIR.glob("*.pdf"):
-        print(f"Reading PDF: {pdf_path.name}")
-        pages = extract_pdf_text(pdf_path)
-        total_pages = len(pages)
+    if not CRAWL_DIR.exists():
+        print(f"No {CRAWL_DIR}/ directory found. Run crawl_site.py first.")
+        return
 
-        for page in pages:
-            page_num = page["page"]
-            text = page["text"]
+    crawl_files = sorted(CRAWL_DIR.glob("*.json"))
+    total_files = len(crawl_files)
 
-            chunks = paragraph_chunks(
-                text,
-                max_chars=2500,
-                overlap_paragraphs=1,
+    if not crawl_files:
+        print(f"No JSON files in {CRAWL_DIR}/. Nothing to extract.")
+        return
+
+    for file_idx, crawl_file in enumerate(crawl_files, start=1):
+        try:
+            data = json.loads(crawl_file.read_text(encoding="utf-8"))
+        except Exception as e:
+            print(f"Skipping malformed crawl file {crawl_file.name}: {e}")
+            continue
+
+        url = data.get("url", crawl_file.stem)
+        markdown = data.get("markdown", "")
+
+        if not markdown.strip():
+            continue
+
+        print(f"Reading page ({file_idx}/{total_files}): {url}")
+
+        chunks = paragraph_chunks(
+            markdown,
+            max_chars=2500,
+            overlap_paragraphs=1,
+        )
+        total_chunks = len(chunks)
+
+        for chunk_idx, chunk in enumerate(chunks, start=1):
+            print(
+                f"Extracting: {url} "
+                f"({file_idx}/{total_files}), "
+                f"chunk {chunk_idx}/{total_chunks}"
             )
-            total_chunks = len(chunks)
 
-            for chunk_idx, chunk in enumerate(chunks, start=1):
-                print(
-                    f"Extracting: {pdf_path.name}, "
-                    f"page {page_num}/{total_pages}, "
-                    f"chunk {chunk_idx}/{total_chunks}"
-                )
+            try:
+                raw = await extract_chunk(url, chunk_idx, chunk)
+            except Exception as e:
+                print(f"Model call failed for {url} chunk {chunk_idx}: {e}")
+                continue
 
+            await asyncio.sleep(1)
+
+            try:
+                parsed = json.loads(clean_json(raw))
+            except Exception:
                 try:
-                    raw = await extract_chunk(pdf_path.name, page_num, chunk)
-                except Exception as e:
-                    print(f"Model call failed on page {page_num} chunk {chunk_idx}: {e}")
+                    repaired = repair_json(clean_json(raw))
+                    parsed = json.loads(repaired)
+                    print("Repaired malformed JSON.")
+                except Exception:
+                    print("Could not parse JSON:")
+                    print(raw[:1000])
                     continue
 
-                await asyncio.sleep(1)
+            for item in parsed:
+                if isinstance(item, dict):
+                    item["source_document"] = url
+                    item["page"] = chunk_idx
 
-                try:
-                    parsed = json.loads(clean_json(raw))
-                except Exception:
-                    try:
-                        repaired = repair_json(clean_json(raw))
-                        parsed = json.loads(repaired)
-                        print("Repaired malformed JSON.")
-                    except Exception:
-                        print("Could not parse JSON:")
-                        print(raw[:1000])
-                        continue
+            all_results.extend(parsed)
 
-                for item in parsed:
-                    if isinstance(item, dict):
-                        item["source_document"] = pdf_path.name
-                        item["page"] = page_num
+        # Incremental save after each URL so a crash keeps prior work.
+        OUTPUT_JSON.write_text(
+            json.dumps(all_results, indent=2, ensure_ascii=False),
+            encoding="utf-8",
+        )
 
-                all_results.extend(parsed)
-
-            # Incremental save after each page so a crash keeps prior work.
-            OUTPUT_JSON.write_text(
-                json.dumps(all_results, indent=2, ensure_ascii=False),
-                encoding="utf-8",
-            )
-
-    # Final save (idempotent if last page already wrote).
+    # Final save.
     OUTPUT_JSON.write_text(
         json.dumps(all_results, indent=2, ensure_ascii=False),
         encoding="utf-8",
     )
 
-    print(f"Saved {OUTPUT_JSON} with {len(all_results)} clean actors")
+    print(f"Saved {OUTPUT_JSON} with {len(all_results)} extracted records")
 
 
 if __name__ == "__main__":

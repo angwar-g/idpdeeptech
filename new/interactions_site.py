@@ -1,17 +1,31 @@
+"""Extract interactions between known actors from crawled website pages.
+
+Parallel to interactions_pdf.py. Reads markdown from crawl_output/*.json files.
+Uses the same LLM prompt as interactions_pdf.py.
+
+Difference: builds ONE combined actor map across the whole site (not per-document),
+so an actor mentioned on the About page can still be matched in a press release
+on a different URL.
+
+Writes to 3_interaction_results_pdf.json so the existing clean_interactions.py
+picks it up without modification. Saves incrementally after each URL.
+"""
+
 import json
 import re
 import asyncio
-from pathlib import Path
 import warnings
+from pathlib import Path
 
-import fitz  # type: ignore PyMuPDF
+import fitz  # noqa: F401  (kept so the env mirrors interactions_pdf.py; harmless)
 from litellm import acompletion
 from json_repair import repair_json
 
 warnings.filterwarnings("ignore", message="Pydantic serializer warnings:*")
 warnings.filterwarnings("ignore", category=UserWarning, module="pydantic")
 
-PDF_DIR = Path("pdf_input")
+
+CRAWL_DIR = Path("crawl_output")
 INPUT_JSON = Path("2_actor_nodes_pdf.json")
 OUTPUT_EDGES_JSON = Path("3_interaction_results_pdf.json")
 
@@ -64,23 +78,10 @@ def parse_json_array(raw: str) -> list:
     return parsed if isinstance(parsed, list) else []
 
 
-def extract_pdf_text(pdf_path: Path) -> list[dict]:
-    doc = fitz.open(pdf_path)
-    pages = []
-
-    for page_num, page in enumerate(doc, start=1):  # type: ignore
-        pages.append({
-            "page": page_num,
-            "text": page.get_text("text"),
-        })
-
-    return pages
-
-
 def paragraph_chunks(text: str, max_chars: int = 2200, overlap_paragraphs: int = 1) -> list[str]:
     paragraphs = [p.strip() for p in re.split(r"\n\s*\n", text) if p.strip()]
-    chunks = []
-    current = []
+    chunks: list[str] = []
+    current: list[str] = []
     current_len = 0
 
     for p in paragraphs:
@@ -115,14 +116,16 @@ def actor_is_valid(actor: dict) -> bool:
     return True
 
 
-def build_actor_maps(all_actors: list[dict], pdf_name: str):
-    canonical_names = []
-    alias_to_canonical = {}
+def build_actor_maps_all(all_actors: list[dict]):
+    """Build one combined actor map across the whole site, ignoring source_document.
+
+    For a single-site crawl, all crawled URLs share one ecosystem context,
+    so an actor extracted from one URL should still be matchable on another.
+    """
+    canonical_names: list[str] = []
+    alias_to_canonical: dict[str, str] = {}
 
     for actor in all_actors:
-        if actor.get("source_document") != pdf_name:
-            continue
-
         if not actor_is_valid(actor):
             continue
 
@@ -152,6 +155,18 @@ def build_actor_maps(all_actors: list[dict], pdf_name: str):
             unique_canonical_names.append(name)
 
     return unique_canonical_names, alias_to_canonical
+
+
+def build_short_aliases(actor_nodes):
+    short_aliases = set()
+
+    for actor in actor_nodes:
+        for alias in actor.get("aliases", []):
+            key = normalize_name(alias)
+            if 2 <= len(key) <= 6 and key.isalnum():
+                short_aliases.add(key)
+
+    return short_aliases
 
 
 def get_present_actors(
@@ -186,19 +201,20 @@ def get_present_actors(
 
 
 async def extract_interactions_from_chunk(
-    pdf_name: str,
-    page_num: int,
+    source_url: str,
+    chunk_idx: int,
     chunk: str,
     actor_names: list[str],
 ) -> str:
+    """Same prompt as interactions_pdf.py, with source_document=URL."""
     actor_list_text = "\n".join(f"- {name}" for name in actor_names)
 
     prompt = f"""
     You extract explicit interactions between known actors in quantum/deep-tech ecosystem texts.
 
     SOURCE
-    source_document: "{pdf_name}"
-    page: {page_num}
+    source_document: "{source_url}"
+    page: {chunk_idx}
 
     KNOWN ACTORS
     {actor_list_text}
@@ -216,8 +232,8 @@ async def extract_interactions_from_chunk(
     "target_actor": "...",
     "interaction_phrase": "...",
     "occurrence_sentence": "...",
-    "source_document": "{pdf_name}",
-    "page": {page_num}
+    "source_document": "{source_url}",
+    "page": {chunk_idx}
     }}
 
     RULES
@@ -324,18 +340,6 @@ def dedupe_edges(edges: list[dict]) -> list[dict]:
     return deduped
 
 
-def build_short_aliases(actor_nodes):
-    short_aliases = set()
-
-    for actor in actor_nodes:
-        for alias in actor.get("aliases", []):
-            key = normalize_name(alias)
-            if 2 <= len(key) <= 6 and key.isalnum():
-                short_aliases.add(key)
-
-    return short_aliases
-
-
 def save_edges(edges: list[dict]) -> None:
     """Write a deduped snapshot of edges to disk."""
     OUTPUT_EDGES_JSON.write_text(
@@ -345,77 +349,96 @@ def save_edges(edges: list[dict]) -> None:
 
 
 async def main():
+    if not INPUT_JSON.exists():
+        print(f"Missing {INPUT_JSON}. Run clean_actors.py first.")
+        return
+
+    if not CRAWL_DIR.exists():
+        print(f"No {CRAWL_DIR}/ directory found. Run crawl_site.py first.")
+        return
+
     actors = json.loads(INPUT_JSON.read_text(encoding="utf-8"))
     short_aliases = build_short_aliases(actors)
 
-    all_interactions = []
+    actor_names, alias_to_canonical = build_actor_maps_all(actors)
 
-    for pdf_path in PDF_DIR.glob("*.pdf"):
-        pdf_name = pdf_path.name
-        print(f"Processing interactions for: {pdf_name}")
+    if not actor_names:
+        print("No valid actors found, skipping.")
+        return
 
-        actor_names, alias_to_canonical = build_actor_maps(actors, pdf_name)
+    valid_actor_keys = {normalize_name(name) for name in actor_names}
+    all_interactions: list[dict] = []
 
-        if not actor_names:
-            print(f"No valid actors found for {pdf_name}, skipping.")
+    crawl_files = sorted(CRAWL_DIR.glob("*.json"))
+    total_files = len(crawl_files)
+
+    if not crawl_files:
+        print(f"No JSON files in {CRAWL_DIR}/. Nothing to do.")
+        return
+
+    for file_idx, crawl_file in enumerate(crawl_files, start=1):
+        try:
+            data = json.loads(crawl_file.read_text(encoding="utf-8"))
+        except Exception as e:
+            print(f"Skipping malformed crawl file {crawl_file.name}: {e}")
             continue
 
-        valid_actor_keys = {normalize_name(name) for name in actor_names}
-        pages = extract_pdf_text(pdf_path)
-        total_pages = len(pages)
+        url = data.get("url", crawl_file.stem)
+        markdown = data.get("markdown", "")
 
-        for page in pages:
-            page_num = page["page"]
-            chunks = paragraph_chunks(page["text"], max_chars=1800, overlap_paragraphs=1)
-            total_chunks = len(chunks)
+        if not markdown.strip():
+            continue
 
-            for chunk_idx, chunk in enumerate(chunks, start=1):
-                present_actors = get_present_actors(chunk, alias_to_canonical, short_aliases)
-                present_actors = present_actors[:25]
+        chunks = paragraph_chunks(markdown, max_chars=1800, overlap_paragraphs=1)
+        total_chunks = len(chunks)
 
-                if len(present_actors) < 2:
-                    continue
+        for chunk_idx, chunk in enumerate(chunks, start=1):
+            present_actors = get_present_actors(chunk, alias_to_canonical, short_aliases)
+            present_actors = present_actors[:25]
 
-                print(
-                    f"Extracting interactions: {pdf_name}, "
-                    f"page {page_num}/{total_pages}, "
-                    f"chunk {chunk_idx}/{total_chunks}"
+            if len(present_actors) < 2:
+                continue
+
+            print(
+                f"Extracting interactions: {url} "
+                f"({file_idx}/{total_files}), "
+                f"chunk {chunk_idx}/{total_chunks}"
+            )
+
+            try:
+                raw = await extract_interactions_from_chunk(
+                    source_url=url,
+                    chunk_idx=chunk_idx,
+                    chunk=chunk,
+                    actor_names=present_actors,
                 )
+            except Exception as e:
+                print(f"Model call failed on {url}, chunk {chunk_idx}: {e}")
+                continue
 
-                try:
-                    raw = await extract_interactions_from_chunk(
-                        pdf_name=pdf_name,
-                        page_num=page_num,
-                        chunk=chunk,
-                        actor_names=present_actors,
-                    )
-                except Exception as e:
-                    print(f"Model call failed on {pdf_name}, page {page_num}: {e}")
+            try:
+                parsed = parse_json_array(raw)
+            except Exception:
+                print("Could not parse interaction JSON:")
+                print(str(raw)[:1000])
+                parsed = []
+
+            for edge in parsed:
+                if not isinstance(edge, dict):
                     continue
 
-                try:
-                    parsed = parse_json_array(raw)
-                except Exception:
-                    print("Could not parse interaction JSON:")
-                    print(str(raw)[:1000])
-                    parsed = []
+                if not has_required_schema(edge):
+                    continue
 
-                for edge in parsed:
-                    if not isinstance(edge, dict):
-                        continue
+                if not basic_valid_edge(edge, valid_actor_keys):
+                    continue
 
-                    if not has_required_schema(edge):
-                        continue
+                all_interactions.append(edge)
 
-                    if not basic_valid_edge(edge, valid_actor_keys):
-                        continue
+            await asyncio.sleep(1)
 
-                    all_interactions.append(edge)
-
-                await asyncio.sleep(1)
-
-            # Incremental save after each page.
-            save_edges(all_interactions)
+        # Incremental save after each URL.
+        save_edges(all_interactions)
 
     all_interactions = dedupe_edges(all_interactions)
 
