@@ -33,7 +33,7 @@ python3 site_pipeline.py <url>
 | Flag | Shortcut | Description |
 |---|---|---|
 | `--crawl N` | `-c N` | Crawl depth (default `2`). Higher = follows more internal links. |
-| `--max-pages N` | | Max pages to crawl (default `50`). Safety ceiling. |
+| `--max-pages N` | | Max pages to crawl (default `10`). Safety ceiling. |
 | `--skip-crawl` | | Reuse existing `crawl_output/`. |
 | `--skip-actors` | `-s` | Reuse cleaned actors. Implies `--skip-crawl`. |
 
