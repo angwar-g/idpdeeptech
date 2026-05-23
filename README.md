@@ -1,6 +1,6 @@
 # Pipeline Cheat Sheet
 
-Two parallel pipelines that extract actor networks from text and render them as an interactive graph: one for PDFs, one for crawled websites. They share the same downstream cleaning, classification, and visualisation steps.
+Three entry points that share the same downstream cleaning, classification, and visualisation steps: one for PDFs, one for a single website, one for a batch of websites from a JSON config.
 
 ## PDF Pipeline
 
@@ -10,7 +10,7 @@ python3 pdf_pipeline.py <pdf_filename>
 
 | Flag | Shortcut | Description |
 |---|---|---|
-| `--skip-actors` | `-s` | Reuse `2_actor_nodes_pdf.json`, jump to interactions. Requires a previous full run. |
+| `--skip-actors` | `-s` | Reuse `2_actor_nodes.json`, jump to interactions. Requires a previous full run. |
 
 **Examples**
 
@@ -24,7 +24,7 @@ python3 pdf_pipeline.py china25.pdf -s
 
 ---
 
-## Site Pipeline
+## Site Pipeline (single URL)
 
 ```
 python3 site_pipeline.py <url>
@@ -36,6 +36,7 @@ python3 site_pipeline.py <url>
 | `--max-pages N` | | Max pages to crawl (default `10`). Safety ceiling. |
 | `--skip-crawl` | | Reuse existing `crawl_output/`. |
 | `--skip-actors` | `-s` | Reuse cleaned actors. Implies `--skip-crawl`. |
+| `--out-dir PATH` | | Explicit output directory. Overrides the auto-derived `site_outputs/<domain>/` path. Used internally by the batch driver — you typically don't need this for one-off runs. |
 
 **Examples**
 
@@ -47,7 +48,65 @@ python3 site_pipeline.py https://www.psiquantum.com -s
 ```
 
 **Output:** `site_outputs/<domain>/`
-Each fresh crawl wipes the site's `crawl_output/` first — no stale files.
+Each fresh crawl wipes that run's `crawl_output/` first — no stale files.
+
+---
+
+## Site Pipeline Batch (many companies)
+
+```
+python3 site_pipeline_batch.py <config.json>
+```
+
+Reads a JSON file shaped like:
+
+```json
+{
+  "Psiquantum": {
+    "website_link": "https://www.psiquantum.com/",
+    "linkedin_link": "https://www.linkedin.com/company/psiquantum/"
+  },
+  "D-Wave Quantum": { ... }
+}
+```
+
+**Input:** drop the config at `site_input/companies.json` (mirroring `pdf_input/`).
+
+| Flag | Shortcut | Description |
+|---|---|---|
+| `--crawl N` | `-c N` | Crawl depth per company (default `2`). |
+| `--max-pages N` | | Max pages per company (default `10`). |
+| `--only NAME ...` | | Restrict to specific company names. Case- and punctuation-insensitive. |
+| `--resume` | | Skip any company whose `website/network.html` already exists. |
+
+**Examples**
+
+```
+python3 site_pipeline_batch.py companies.json
+python3 site_pipeline_batch.py companies.json --crawl 3 --max-pages 30
+python3 site_pipeline_batch.py companies.json --only Psiquantum Quandela
+python3 site_pipeline_batch.py companies.json --only "D-Wave Quantum"
+python3 site_pipeline_batch.py companies.json --resume
+```
+
+Bare filenames are looked up in `site_input/` automatically. You can still pass an explicit path (`site_input/companies.json` or an absolute path) if you prefer.
+
+**Output:** `site_outputs/<company_slug>/website/`
+
+LinkedIn is intentionally not crawled — corporate LinkedIn pages serve an auth wall to anonymous visitors, so a depth-0 fetch returns a login page rather than posts. The `linkedin/` slot is reserved for when this is wired up with proper authentication or an API.
+
+**Slug derivation from JSON keys:**
+- `Amazon Braket (Amazon)` → `amazon_braket` (parentheticals stripped)
+- `D-Wave Quantum` → `d_wave_quantum`
+- `Quantum Computing Inc.` → `quantum_computing_inc`
+- `1Qbit` → `1qbit`
+
+**Behavior on failure:** one company crashing does not stop the batch. Failures are appended to `site_outputs/batch_failures.log` and a summary prints at the end. Resume with `--resume` to skip already-completed companies.
+
+**Edge cases automatically skipped, with a summary at the end:**
+- Empty / missing `website_link`
+- `website_link` that is actually a LinkedIn URL (data-entry bug)
+- Already-completed companies (when `--resume` is set)
 
 ---
 
@@ -55,15 +114,15 @@ Each fresh crawl wipes the site's `crawl_output/` first — no stale files.
 
 | File | Step | LLM call? |
 |---|---|---|
-| `1_actor_results_pdf.json` | Raw actor extraction | yes |
-| `2_actor_nodes_pdf.json` | Cleaned + deduped actors | no |
-| `3_interaction_results_pdf.json` | Raw interaction extraction | yes |
-| `4_interaction_edges_pdf.json` | Cleaned + deduped edges | no |
+| `1_actor_results.json` | Raw actor extraction | yes |
+| `2_actor_nodes.json` | Cleaned + deduped actors | no |
+| `3_interaction_results.json` | Raw interaction extraction | yes |
+| `4_edges.json` | Cleaned + deduped edges | no |
 | `5_nodes.json` | Actors + triple-helix classification | no |
 | `5_edges.json` | Edges + functional-space classification | no |
 | `network.html` | Interactive pyvis visualisation | — |
 
-The two LLM steps (1 and 3) are the slow ones. Both save incrementally after each page (PDFs) or each URL (sites), so a mid-run crash keeps prior work on disk. Filenames keep the `_pdf` suffix even in the site pipeline so the shared `clean_*.py`, `helix.py`, and `network.py` scripts work unchanged.
+The two LLM steps (1 and 3) are the slow ones. Both save incrementally after each page (PDFs) or each URL (sites), so a mid-run crash keeps prior work on disk.
 
 ---
 
@@ -72,7 +131,14 @@ The two LLM steps (1 and 3) are the slow ones. Both save incrementally after eac
 | Situation | Command |
 |---|---|
 | Interactions extraction crashed mid-run on a PDF | `python3 pdf_pipeline.py same.pdf -s` |
-| Interactions extraction crashed mid-run on a site | `python3 site_pipeline.py same_url -s` |
-| Want to tweak the LLM prompt and re-extract | delete `2_actor_nodes_pdf.json` and rerun without `-s` |
+| Interactions extraction crashed mid-run on a single site | `python3 site_pipeline.py same_url -s` |
+| Batch crashed partway through, want to keep going | `python3 site_pipeline_batch.py config.json --resume` |
+| Want to tweak the LLM prompt and re-extract | delete `2_actor_nodes.json` in the affected dirs and rerun |
 | Want to re-crawl with different depth | rerun without `--skip-crawl` (wipes `crawl_output/`) |
 | Want to re-run only the downstream stuff (helix + viz) | run `helix.py` and `network.py` directly in the output folder |
+
+---
+
+## Notes on chunk skipping in interactions
+
+The interactions LLM only runs on chunks containing **at least 2 known actors**. Chunks with 0 or 1 known actor are silently skipped, which is why log lines may jump (e.g. "chunk 3/20" without seeing chunks 1–2). This is intentional — pairwise interactions need at least two actors in scope.
