@@ -20,7 +20,7 @@ warnings.filterwarnings("ignore", message="Pydantic serializer warnings:*")
 PDF_DIR = Path("pdf_input")
 PDF_DIR.mkdir(exist_ok=True)
 
-OUTPUT_JSON = Path("1_actor_results_pdf.json")
+OUTPUT_JSON = Path("1_actor_results.json")
 
 
 def extract_pdf_text(pdf_path: Path) -> list[dict]:

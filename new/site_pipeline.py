@@ -51,13 +51,26 @@ def main():
     parser.add_argument(
         "--skip-actors", "-s", action="store_true",
         help="Skip feed_site and clean_actors (implies --skip-crawl). "
-             "Requires 2_actor_nodes_pdf.json and crawl_output/ in output dir.",
+             "Requires 2_actor_nodes.json and crawl_output/ in output dir.",
+    )
+    parser.add_argument(
+        "--out-dir", default=None,
+        help="Explicit output directory (relative to script root, or absolute). "
+             "When set, overrides the auto-derived site_outputs/<domain>/ path. "
+             "Used by site_pipeline_batch.py to nest outputs under company/source folders.",
     )
     args = parser.parse_args()
 
     root = Path(__file__).parent.resolve()
-    stem = site_stem(args.url)
-    out_dir = root / "site_outputs" / stem
+
+    if args.out_dir:
+        out_dir = Path(args.out_dir)
+        if not out_dir.is_absolute():
+            out_dir = root / out_dir
+    else:
+        stem = site_stem(args.url)
+        out_dir = root / "site_outputs" / stem
+
     out_dir.mkdir(parents=True, exist_ok=True)
 
     # --skip-actors implies --skip-crawl (you can't have cleaned actors without a crawl)
@@ -87,7 +100,7 @@ def main():
 
     # 1, 2. Actor extraction + cleaning
     if args.skip_actors:
-        nodes_file = out_dir / "2_actor_nodes_pdf.json"
+        nodes_file = out_dir / "2_actor_nodes.json"
         if not nodes_file.exists():
             sys.exit(
                 f"Error: --skip-actors requires {nodes_file} to exist.\n"
@@ -125,8 +138,8 @@ def main():
         "5 helix enrichment",
         [
             sys.executable, str(root / "helix.py"),
-            "--actors", "2_actor_nodes_pdf.json",
-            "--interactions", "4_interaction_edges_pdf.json",
+            "--actors", "2_actor_nodes.json",
+            "--interactions", "4_edges.json",
             "--out-actors", "5_nodes.json",
             "--out-interactions", "5_edges.json",
         ],

@@ -4,7 +4,7 @@ Parallel to feed_pdf.py. Reads markdown from crawl_output/*.json files.
 Uses the same LLM prompt as feed_pdf.py; only the SOURCE block differs
 (source_type=website, source_document=URL).
 
-Writes to 1_actor_results_pdf.json so the existing clean_actors.py picks it up
+Writes to 1_actor_results.json so the existing clean_actors.py picks it up
 without modification. Saves incrementally after each URL.
 """
 
@@ -25,11 +25,55 @@ warnings.filterwarnings("ignore", message="Pydantic serializer warnings:*")
 
 
 CRAWL_DIR = Path("crawl_output")
-OUTPUT_JSON = Path("1_actor_results_pdf.json")
+OUTPUT_JSON = Path("1_actor_results.json")
 
 
-def paragraph_chunks(text: str, max_chars: int = 1800, overlap_paragraphs: int = 1) -> list[str]:
-    paragraphs = [p.strip() for p in re.split(r"\n\s*\n", text) if p.strip()]
+def split_oversized_paragraph(paragraph: str, max_chars: int) -> list[str]:
+    """Cut a single oversized paragraph into pieces no larger than max_chars.
+
+    Tries sentence boundaries first, then falls back to hard char-boundary splits.
+    Used to tame web-markdown blobs (nav bars, footer link soup) that arrive as
+    one giant "paragraph" with no internal blank lines.
+    """
+    if len(paragraph) <= max_chars:
+        return [paragraph]
+
+    # Try splitting on sentence-ish boundaries.
+    sentences = re.split(r"(?<=[.!?])\s+", paragraph)
+
+    pieces: list[str] = []
+    buf = ""
+
+    for sentence in sentences:
+        if len(sentence) > max_chars:
+            # Even one sentence is too big — flush buf, then hard-split sentence.
+            if buf:
+                pieces.append(buf)
+                buf = ""
+            for i in range(0, len(sentence), max_chars):
+                pieces.append(sentence[i:i + max_chars])
+            continue
+
+        if len(buf) + len(sentence) + 1 > max_chars and buf:
+            pieces.append(buf)
+            buf = sentence
+        else:
+            buf = f"{buf} {sentence}".strip() if buf else sentence
+
+    if buf:
+        pieces.append(buf)
+
+    return pieces
+
+
+def paragraph_chunks(text: str, max_chars: int = 1500, overlap_paragraphs: int = 1) -> list[str]:
+    raw_paragraphs = [p.strip() for p in re.split(r"\n\s*\n", text) if p.strip()]
+
+    # Pre-split any paragraph that is on its own larger than max_chars.
+    paragraphs: list[str] = []
+    for p in raw_paragraphs:
+        paragraphs.extend(split_oversized_paragraph(p, max_chars))
+
     chunks: list[str] = []
     current: list[str] = []
     current_len = 0
@@ -187,7 +231,7 @@ async def main():
 
         chunks = paragraph_chunks(
             markdown,
-            max_chars=2500,
+            max_chars=1500,
             overlap_paragraphs=1,
         )
         total_chunks = len(chunks)

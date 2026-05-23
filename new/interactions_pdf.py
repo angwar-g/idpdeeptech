@@ -12,8 +12,8 @@ warnings.filterwarnings("ignore", message="Pydantic serializer warnings:*")
 warnings.filterwarnings("ignore", category=UserWarning, module="pydantic")
 
 PDF_DIR = Path("pdf_input")
-INPUT_JSON = Path("2_actor_nodes_pdf.json")
-OUTPUT_EDGES_JSON = Path("3_interaction_results_pdf.json")
+INPUT_JSON = Path("2_actor_nodes.json")
+OUTPUT_EDGES_JSON = Path("3_interaction_results.json")
 
 VALID_STATUSES = {"entity", "actor"}
 INVALID_CATEGORIES = {"", "null", "unknown"}

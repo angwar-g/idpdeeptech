@@ -2,11 +2,11 @@
 """
 classify_triple_helix.py
 At the end, no need to pollute LLM input
-Post-process PDF actor and interaction JSON files.
+Post-process actor and interaction JSON files.
 
 Input:
-  - 2_actor_nodes_pdf.json
-  - 4_interaction_edges_pdf.json
+  - 2_actor_nodes.json
+  - 4_edges.json
 
 Output:
   - 5_nodes.json :      actors enriched with helix, sphere, r_and_d
@@ -368,8 +368,8 @@ def write_json(path: Path, data: List[Dict[str, Any]]) -> None:
 
 def main() -> None:
     parser = argparse.ArgumentParser()
-    parser.add_argument("--actors", default="2_actor_nodes_pdf.json")
-    parser.add_argument("--interactions", default="4_interaction_edges_pdf.json")
+    parser.add_argument("--actors", default="2_actor_nodes.json")
+    parser.add_argument("--interactions", default="4_edges.json")
     parser.add_argument("--out-actors", default="5_nodes.json")
     parser.add_argument("--out-interactions", default="5_edges.json")
     parser.add_argument(

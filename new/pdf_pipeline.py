@@ -29,7 +29,7 @@ def main():
     parser.add_argument("pdf", help="PDF filename inside pdf_input/, e.g. china25.pdf")
     parser.add_argument(
         "--skip-actors", "-s", action="store_true",
-        help="Skip feed_pdf and clean_actors. Requires 2_actor_nodes_pdf.json in output dir.",
+        help="Skip feed_pdf and clean_actors. Requires 2_actor_nodes.json in output dir.",
     )
     args = parser.parse_args()
 
@@ -49,7 +49,7 @@ def main():
     shutil.copy2(pdf_path, work_pdf_dir / pdf_path.name)
 
     if args.skip_actors:
-        nodes_file = out_dir / "2_actor_nodes_pdf.json"
+        nodes_file = out_dir / "2_actor_nodes.json"
         if not nodes_file.exists():
             sys.exit(
                 f"Error: --skip-actors requires {nodes_file} to exist.\n"
@@ -69,8 +69,8 @@ def main():
         [
             sys.executable,
             str(root / "helix.py"),
-            "--actors", "2_actor_nodes_pdf.json",
-            "--interactions", "4_interaction_edges_pdf.json",
+            "--actors", "2_actor_nodes.json",
+            "--interactions", "4_edges.json",
             "--out-actors", "5_nodes.json",
             "--out-interactions", "5_edges.json",
         ],

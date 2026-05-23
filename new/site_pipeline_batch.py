@@ -1,0 +1,208 @@
+#!/usr/bin/env python3
+"""Batch driver: run site_pipeline.py for every company in a JSON config.
+
+Reads a JSON file shaped like:
+    {
+      "Psiquantum": {
+        "website_link": "https://www.psiquantum.com/",
+        "linkedin_link": "https://www.linkedin.com/company/psiquantum/"
+      },
+      ...
+    }
+
+For each company, runs the website pipeline into site_outputs/<slug>/website/.
+LinkedIn is intentionally not processed yet (planned: site_outputs/<slug>/linkedin/).
+
+Usage:
+    python3 site_pipeline_batch.py companies.json                  # looks in site_input/
+    python3 site_pipeline_batch.py site_input/companies.json       # explicit path also works
+    python3 site_pipeline_batch.py /abs/path/to/companies.json     # absolute path also works
+    python3 site_pipeline_batch.py companies.json --crawl 3 --max-pages 30
+    python3 site_pipeline_batch.py companies.json --only Psiquantum Quandela
+    python3 site_pipeline_batch.py companies.json --resume
+"""
+import argparse
+import json
+import re
+import subprocess
+import sys
+import time
+from pathlib import Path
+
+
+def company_slug(name: str) -> str:
+    """Turn a company display name into a folder-safe slug.
+
+    'Amazon Braket (Amazon)'      -> 'amazon_braket'
+    'D-Wave Quantum'              -> 'd_wave_quantum'
+    'Quantum Computing Inc.'      -> 'quantum_computing_inc'
+    'Q-Ctrl'                      -> 'q_ctrl'
+    '1Qbit'                       -> '1qbit'
+    """
+    name = re.sub(r"\([^)]*\)", "", name)               # strip parentheticals
+    name = re.sub(r"[^a-zA-Z0-9]+", "_", name.lower())  # non-alnum -> underscore
+    return name.strip("_") or "unnamed"
+
+
+def is_linkedin_url(url: str) -> bool:
+    return "linkedin.com" in url.lower()
+
+
+def normalize_for_match(text: str) -> str:
+    """Lowercase + strip non-alnum, for tolerant --only matching."""
+    return re.sub(r"[^a-z0-9]+", "", text.lower())
+
+
+def main():
+    parser = argparse.ArgumentParser(
+        formatter_class=argparse.RawDescriptionHelpFormatter,
+        description=__doc__,
+    )
+    parser.add_argument("config", help="Path to companies JSON file")
+    parser.add_argument(
+        "--crawl", "-c", type=int, default=2,
+        help="Crawl depth passed to each site_pipeline run (default 2).",
+    )
+    parser.add_argument(
+        "--max-pages", type=int, default=10,
+        help="Max pages per company (default 10).",
+    )
+    parser.add_argument(
+        "--only", nargs="+", default=None,
+        help="Restrict to these company names (case-insensitive, ignores spaces/punctuation). "
+             "Example: --only Psiquantum 'D-Wave Quantum'",
+    )
+    parser.add_argument(
+        "--resume", action="store_true",
+        help="Skip companies whose website/network.html already exists.",
+    )
+    args = parser.parse_args()
+
+    root = Path(__file__).parent.resolve()
+    SITE_INPUT_DIR = root / "site_input"
+
+    # Path resolution rules:
+    #   /abs/path.json            -> used as-is
+    #   site_input/companies.json -> relative to script root (uses literal path given)
+    #   companies.json            -> bare filename, assumed to live in site_input/
+    raw = args.config
+    config_path = Path(raw)
+    if not config_path.is_absolute():
+        if "/" in raw or "\\" in raw:
+            config_path = root / config_path
+        else:
+            config_path = SITE_INPUT_DIR / config_path
+
+    if not config_path.exists():
+        sys.exit(
+            f"Error: config file not found: {config_path}\n"
+            f"Tip: place the JSON in {SITE_INPUT_DIR}/ and pass just the filename."
+        )
+
+    try:
+        companies = json.loads(config_path.read_text(encoding="utf-8"))
+    except json.JSONDecodeError as e:
+        sys.exit(f"Error: invalid JSON in {config_path}: {e}")
+
+    if not isinstance(companies, dict):
+        sys.exit(f"Error: {config_path} must contain a JSON object keyed by company name.")
+
+    # Optional filter.
+    if args.only:
+        wanted_keys = {normalize_for_match(name) for name in args.only}
+        filtered = {k: v for k, v in companies.items() if normalize_for_match(k) in wanted_keys}
+        missing = wanted_keys - {normalize_for_match(k) for k in filtered.keys()}
+        if missing:
+            print(f"Warning: --only requested names not found in config: {sorted(missing)}")
+        companies = filtered
+
+    if not companies:
+        sys.exit("No companies to process.")
+
+    total = len(companies)
+    succeeded: list[str] = []
+    skipped_existing: list[str] = []
+    skipped_linkedin_in_website: list[str] = []
+    skipped_no_website: list[str] = []
+    failed: list[tuple[str, str]] = []  # (name, reason)
+
+    failures_log = root / "site_outputs" / "batch_failures.log"
+    failures_log.parent.mkdir(parents=True, exist_ok=True)
+    with failures_log.open("a", encoding="utf-8") as f:
+        f.write(f"\n=== Batch run started {time.strftime('%Y-%m-%d %H:%M:%S')} ===\n")
+
+    for idx, (name, links) in enumerate(companies.items(), start=1):
+        slug = company_slug(name)
+        website_url = (links or {}).get("website_link", "").strip()
+        out_dir = root / "site_outputs" / slug / "website"
+
+        print(f"\n========== [{idx}/{total}] {name} (slug: {slug}) ==========")
+
+        # Skip rules in order of cheapness.
+        if not website_url:
+            print(f"  Skipping: no website_link.")
+            skipped_no_website.append(name)
+            continue
+
+        if is_linkedin_url(website_url):
+            print(f"  Skipping: website_link is a LinkedIn URL ({website_url}). "
+                  "LinkedIn is not yet supported.")
+            skipped_linkedin_in_website.append(name)
+            continue
+
+        if args.resume and (out_dir / "network.html").exists():
+            print(f"  Skipping (--resume): {out_dir / 'network.html'} already exists.")
+            skipped_existing.append(name)
+            continue
+
+        out_dir.mkdir(parents=True, exist_ok=True)
+
+        cmd = [
+            sys.executable,
+            str(root / "site_pipeline.py"),
+            website_url,
+            "--crawl", str(args.crawl),
+            "--max-pages", str(args.max_pages),
+            "--out-dir", str(out_dir),
+        ]
+
+        try:
+            subprocess.run(cmd, check=True)
+            succeeded.append(name)
+        except subprocess.CalledProcessError as e:
+            reason = f"site_pipeline exited with code {e.returncode}"
+            print(f"  FAILED: {reason}")
+            failed.append((name, reason))
+            with failures_log.open("a", encoding="utf-8") as f:
+                f.write(f"{name}\t{slug}\t{website_url}\t{reason}\n")
+            continue
+        except KeyboardInterrupt:
+            print("\nInterrupted by user. Stopping batch.")
+            failed.append((name, "KeyboardInterrupt"))
+            break
+
+    # Summary.
+    print("\n" + "=" * 60)
+    print("BATCH SUMMARY")
+    print("=" * 60)
+    print(f"Total in config (after --only filter): {total}")
+    print(f"Succeeded:                  {len(succeeded)}")
+    print(f"Skipped (already done):     {len(skipped_existing)}")
+    print(f"Skipped (LinkedIn in slot): {len(skipped_linkedin_in_website)}")
+    print(f"Skipped (no website_link):  {len(skipped_no_website)}")
+    print(f"Failed:                     {len(failed)}")
+
+    if failed:
+        print("\nFailures:")
+        for name, reason in failed:
+            print(f"  - {name}: {reason}")
+        print(f"\nFull failure log: {failures_log}")
+
+    if skipped_linkedin_in_website:
+        print("\nLinkedIn-in-website-slot (likely a data-entry bug in the config):")
+        for name in skipped_linkedin_in_website:
+            print(f"  - {name}")
+
+
+if __name__ == "__main__":
+    main()

@@ -3,10 +3,9 @@ import re
 from pathlib import Path
 from difflib import SequenceMatcher
 
-
-INPUT_JSON = Path("1_actor_results_pdf.json")
-OUTPUT_JSON = Path("2_actor_nodes_pdf.json")
-
+#PLACEHOLDER
+INPUT_JSON = Path("./site_outputs/psiquantum_com/1_actor_results.json")
+OUTPUT_JSON = Path("./site_outputs/psiquantum_com/2_actor_nodes.json")
 
 ENTITY_LIKE_STATUSES = {
     "entity",
