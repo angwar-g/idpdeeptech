@@ -10,13 +10,15 @@ python3 pdf_pipeline.py <pdf_filename>
 
 | Flag | Shortcut | Description |
 |---|---|---|
-| `--skip-actors` | `-s` | Reuse `2_actor_nodes.json`, jump to interactions. Requires a previous full run. |
+| `--skip-actors` | `-s` | Skip the actor LLM step. Requires `1_actor_results.json`. Re-runs `clean_actors`. |
+| `--skip-interactions` | `-i` | Skip both LLM steps. Requires `1_actor_results.json` AND `3_interaction_results.json`. Re-runs both cleaning steps. Implies `--skip-actors`. |
 
 **Examples**
 
 ```
 python3 pdf_pipeline.py china25.pdf
 python3 pdf_pipeline.py china25.pdf -s
+python3 pdf_pipeline.py china25.pdf -i
 ```
 
 **Input:** drop PDFs into `pdf_input/`
@@ -35,7 +37,8 @@ python3 site_pipeline.py <url>
 | `--crawl N` | `-c N` | Crawl depth (default `2`). Higher = follows more internal links. |
 | `--max-pages N` | | Max pages to crawl (default `10`). Safety ceiling. |
 | `--skip-crawl` | | Reuse existing `crawl_output/`. |
-| `--skip-actors` | `-s` | Reuse cleaned actors. Implies `--skip-crawl`. |
+| `--skip-actors` | `-s` | Skip the actor LLM step. Requires `1_actor_results.json`. Re-runs `clean_actors`. Implies `--skip-crawl`. |
+| `--skip-interactions` | `-i` | Skip both LLM steps. Requires `1_actor_results.json` AND `3_interaction_results.json`. Re-runs both cleaning steps. Implies `--skip-actors` (and `--skip-crawl`). |
 | `--out-dir PATH` | | Explicit output directory. Overrides the auto-derived `site_outputs/<domain>/` path. Used internally by the batch driver — you typically don't need this for one-off runs. |
 
 **Examples**
@@ -45,10 +48,30 @@ python3 site_pipeline.py https://www.psiquantum.com
 python3 site_pipeline.py https://www.psiquantum.com -c 3 --max-pages 80
 python3 site_pipeline.py https://www.psiquantum.com --skip-crawl
 python3 site_pipeline.py https://www.psiquantum.com -s
+python3 site_pipeline.py https://www.psiquantum.com -i
 ```
 
 **Output:** `site_outputs/<domain>/`
 Each fresh crawl wipes that run's `crawl_output/` first — no stale files.
+
+---
+
+## Skip-flag semantics (`-s` and `-i`)
+
+The cleaning scripts (`clean_actors.py`, `clean_interactions.py`) are cheap, fast, and deterministic. The LLM extraction scripts (`feed_*.py`, `interactions_*.py`) are slow and can be interrupted. The skip flags reflect that:
+
+- **`-s` / `--skip-actors`** — skip the actor *LLM*, but always re-run the actor *cleaning* using whatever raw results are on disk. Useful after Ctrl+C-ing the actor extraction mid-way: the incremental save means `1_actor_results.json` already exists with partial data, and `-s` lets you continue from there without re-running the LLM.
+- **`-i` / `--skip-interactions`** — skip *both* LLM steps and always re-run both cleaning steps. Useful after Ctrl+C-ing the interactions step. Implies `-s`.
+
+The implication chain:
+
+```
+-i / --skip-interactions
+    → implies -s / --skip-actors
+        → implies --skip-crawl   (site_pipeline only)
+```
+
+Each flag is validated up front: if you ask to skip something but the required raw file isn't on disk, the script exits immediately with a message pointing at the missing file.
 
 ---
 
@@ -122,7 +145,7 @@ LinkedIn is intentionally not crawled — corporate LinkedIn pages serve an auth
 | `5_edges.json` | Edges + functional-space classification | no |
 | `network.html` | Interactive pyvis visualisation | — |
 
-The two LLM steps (1 and 3) are the slow ones. Both save incrementally after each page (PDFs) or each URL (sites), so a mid-run crash keeps prior work on disk.
+The two LLM steps (1 and 3) are the slow ones. Both save incrementally after each page (PDFs) or each URL (sites), so Ctrl+C or a mid-run crash keeps prior work on disk — exactly what `-s` and `-i` exist to recover from.
 
 ---
 
@@ -130,10 +153,11 @@ The two LLM steps (1 and 3) are the slow ones. Both save incrementally after eac
 
 | Situation | Command |
 |---|---|
-| Interactions extraction crashed mid-run on a PDF | `python3 pdf_pipeline.py same.pdf -s` |
-| Interactions extraction crashed mid-run on a single site | `python3 site_pipeline.py same_url -s` |
+| Ctrl+C'd the actor LLM partway, want to keep what was saved | `python3 pdf_pipeline.py same.pdf -s` (or `site_pipeline.py same_url -s`) |
+| Ctrl+C'd the interactions LLM partway | `python3 pdf_pipeline.py same.pdf -i` (or `site_pipeline.py same_url -i`) |
 | Batch crashed partway through, want to keep going | `python3 site_pipeline_batch.py config.json --resume` |
-| Want to tweak the LLM prompt and re-extract | delete `2_actor_nodes.json` in the affected dirs and rerun |
+| Want to tweak only `clean_actors.py` and re-run from cleaning onwards | `python3 pdf_pipeline.py same.pdf -s` (or site equivalent) |
+| Want to tweak only `clean_interactions.py` and re-run from there | `python3 pdf_pipeline.py same.pdf -i` (or site equivalent) |
 | Want to re-crawl with different depth | rerun without `--skip-crawl` (wipes `crawl_output/`) |
 | Want to re-run only the downstream stuff (helix + viz) | run `helix.py` and `network.py` directly in the output folder |
 
