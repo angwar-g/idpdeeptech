@@ -2,9 +2,8 @@ import json
 import re
 from pathlib import Path
 
-#PLACEHOLDER
-INPUT_JSON = Path("./site_outputs/psiquantum_com/3_interaction_results.json")
-OUTPUT_JSON = Path("./site_outputs/psiquantum_com/4_edges.json")
+INPUT_JSON = Path("3_interaction_results.json")
+OUTPUT_JSON = Path("4_edges.json")
 
 ALLOWED_RELATION_LABELS = {
     "technology_transfer",
