@@ -8,9 +8,18 @@ Mirrors pdf_pipeline.py:
 Usage:
     python3 site_pipeline.py https://www.psiquantum.com --crawl 2
     python3 site_pipeline.py https://example.com -c 3 --max-pages 80
-    python3 site_pipeline.py https://example.com --skip-crawl   # reuse crawl_output/
-    python3 site_pipeline.py https://example.com --skip-actors  # reuse cleaned actors,
-                                                                # rerun interactions onwards
+    python3 site_pipeline.py https://example.com --skip-crawl          # reuse crawl_output/
+    python3 site_pipeline.py https://example.com -s                    # reuse raw actor results,
+                                                                       # rerun clean_actors then continue
+    python3 site_pipeline.py https://example.com -i                    # reuse raw interactions too,
+                                                                       # rerun both cleaning steps
+
+Skip-flag implication chain (any of these will skip everything before it):
+    -i  / --skip-interactions  -> implies --skip-actors -> implies --skip-crawl
+    -s  / --skip-actors        -> implies --skip-crawl
+
+Cleaning is cheap and always re-runs. So Ctrl+C-ing during an LLM step and
+re-launching with -s or -i picks up from whatever was saved incrementally.
 """
 import argparse
 import re
@@ -34,7 +43,10 @@ def run(label: str, cmd: list[str], cwd: Path) -> None:
 
 
 def main():
-    parser = argparse.ArgumentParser()
+    parser = argparse.ArgumentParser(
+        formatter_class=argparse.RawDescriptionHelpFormatter,
+        description=__doc__,
+    )
     parser.add_argument("url", help="Seed URL to crawl, e.g. https://www.psiquantum.com")
     parser.add_argument(
         "--crawl", "-c", type=int, default=2,
@@ -50,8 +62,14 @@ def main():
     )
     parser.add_argument(
         "--skip-actors", "-s", action="store_true",
-        help="Skip feed_site and clean_actors (implies --skip-crawl). "
-             "Requires 2_actor_nodes.json and crawl_output/ in output dir.",
+        help="Skip feed_site (actor LLM). Requires 1_actor_results.json. "
+             "Re-runs clean_actors. Implies --skip-crawl.",
+    )
+    parser.add_argument(
+        "--skip-interactions", "-i", action="store_true",
+        help="Skip feed_site AND interactions_site (both LLM steps). "
+             "Requires 1_actor_results.json AND 3_interaction_results.json. "
+             "Re-runs both cleaning steps. Implies --skip-actors (and --skip-crawl).",
     )
     parser.add_argument(
         "--out-dir", default=None,
@@ -61,31 +79,59 @@ def main():
     )
     args = parser.parse_args()
 
+    # Implication chain: -i -> -s -> --skip-crawl.
+    skip_interaction_llm = args.skip_interactions
+    skip_actor_llm = args.skip_actors or skip_interaction_llm
+    skip_crawl = args.skip_crawl or skip_actor_llm
+
     root = Path(__file__).parent.resolve()
 
     if args.out_dir:
         out_dir = Path(args.out_dir)
         if not out_dir.is_absolute():
-            out_dir = root / out_dir
+            out_dir = root / args.out_dir
     else:
         stem = site_stem(args.url)
         out_dir = root / "site_outputs" / stem
 
     out_dir.mkdir(parents=True, exist_ok=True)
 
-    # --skip-actors implies --skip-crawl (you can't have cleaned actors without a crawl)
-    skip_crawl = args.skip_crawl or args.skip_actors
-
-    # 0. Crawl
+    # Validate required artifacts exist for whatever was skipped.
     if skip_crawl:
         crawl_dir = out_dir / "crawl_output"
         if not crawl_dir.exists():
             sys.exit(
                 f"Error: {crawl_dir} does not exist.\n"
-                "Run without --skip-crawl/--skip-actors first to crawl the site."
+                "Run without --skip-crawl/--skip-actors/--skip-interactions first to crawl the site."
             )
-        reason = "--skip-actors" if args.skip_actors else "--skip-crawl"
-        print(f"\n=== 0 crawl site (skipped via {reason}, reusing {crawl_dir}) ===")
+
+    if skip_actor_llm:
+        raw_actors = out_dir / "1_actor_results.json"
+        if not raw_actors.exists():
+            sys.exit(
+                f"Error: --skip-actors/--skip-interactions requires {raw_actors} to exist.\n"
+                "Run the pipeline without these flags first to produce raw actor results,\n"
+                "or let it run far enough that the incremental save writes the file."
+            )
+
+    if skip_interaction_llm:
+        raw_interactions = out_dir / "3_interaction_results.json"
+        if not raw_interactions.exists():
+            sys.exit(
+                f"Error: --skip-interactions requires {raw_interactions} to exist.\n"
+                "Run with only --skip-actors first to produce raw interactions, then retry."
+            )
+
+    # 0. Crawl
+    if skip_crawl:
+        # Pick the most specific reason flag the user passed.
+        if args.skip_interactions:
+            reason = "--skip-interactions"
+        elif args.skip_actors:
+            reason = "--skip-actors"
+        else:
+            reason = "--skip-crawl"
+        print(f"\n=== 0 crawl site (skipped via {reason}, reusing {out_dir / 'crawl_output'}) ===")
     else:
         run(
             "0 crawl site",
@@ -98,40 +144,23 @@ def main():
             out_dir,
         )
 
-    # 1, 2. Actor extraction + cleaning
-    if args.skip_actors:
-        nodes_file = out_dir / "2_actor_nodes.json"
-        if not nodes_file.exists():
-            sys.exit(
-                f"Error: --skip-actors requires {nodes_file} to exist.\n"
-                "Run the pipeline without --skip-actors first to generate actor nodes\n"
-                "(or with only --skip-crawl if you already have a crawl)."
-            )
-        print("\n=== 1 actor extraction (skipped via --skip-actors) ===")
-        print("\n=== 2 clean actors (skipped via --skip-actors) ===")
+    # 1. Actor extraction (LLM)
+    if skip_actor_llm:
+        print("\n=== 1 actor extraction (skipped, reusing 1_actor_results.json) ===")
     else:
-        run(
-            "1 actor extraction",
-            [sys.executable, str(root / "feed_site.py")],
-            out_dir,
-        )
-        run(
-            "2 clean actors",
-            [sys.executable, str(root / "clean_actors.py")],
-            out_dir,
-        )
+        run("1 actor extraction", [sys.executable, str(root / "feed_site.py")], out_dir)
 
-    # 3, 4. Interactions + cleaning
-    run(
-        "3 interaction extraction",
-        [sys.executable, str(root / "interactions_site.py")],
-        out_dir,
-    )
-    run(
-        "4 clean interactions",
-        [sys.executable, str(root / "clean_interactions.py")],
-        out_dir,
-    )
+    # 2. Clean actors  --- ALWAYS RUNS
+    run("2 clean actors", [sys.executable, str(root / "clean_actors.py")], out_dir)
+
+    # 3. Interaction extraction (LLM)
+    if skip_interaction_llm:
+        print("\n=== 3 interaction extraction (skipped, reusing 3_interaction_results.json) ===")
+    else:
+        run("3 interaction extraction", [sys.executable, str(root / "interactions_site.py")], out_dir)
+
+    # 4. Clean interactions  --- ALWAYS RUNS
+    run("4 clean interactions", [sys.executable, str(root / "clean_interactions.py")], out_dir)
 
     # 5. Helix enrichment
     run(
@@ -147,11 +176,7 @@ def main():
     )
 
     # 6. Network visualisation
-    run(
-        "6 network visualisation",
-        [sys.executable, str(root / "network.py")],
-        out_dir,
-    )
+    run("6 network visualisation", [sys.executable, str(root / "network.py")], out_dir)
 
     html = out_dir / "quantum_network.html"
     if html.exists():
