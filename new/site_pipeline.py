@@ -11,15 +11,16 @@ Usage:
     python3 site_pipeline.py https://example.com --skip-crawl          # reuse crawl_output/
     python3 site_pipeline.py https://example.com -s                    # reuse raw actor results,
                                                                        # rerun clean_actors then continue
-    python3 site_pipeline.py https://example.com -i                    # reuse raw interactions too,
-                                                                       # rerun both cleaning steps
+    python3 site_pipeline.py https://example.com -i                    # reuse everything through
+                                                                       # raw interactions, only rerun
+                                                                       # clean_interactions + downstream
 
 Skip-flag implication chain (any of these will skip everything before it):
     -i  / --skip-interactions  -> implies --skip-actors -> implies --skip-crawl
     -s  / --skip-actors        -> implies --skip-crawl
 
-Cleaning is cheap and always re-runs. So Ctrl+C-ing during an LLM step and
-re-launching with -s or -i picks up from whatever was saved incrementally.
+Cleaning steps are cheap. -s lets you recover from a Ctrl+C of the actor LLM;
+-i lets you recover from a Ctrl+C of the interactions LLM.
 """
 import argparse
 import re
@@ -67,9 +68,10 @@ def main():
     )
     parser.add_argument(
         "--skip-interactions", "-i", action="store_true",
-        help="Skip feed_site AND interactions_site (both LLM steps). "
-             "Requires 1_actor_results.json AND 3_interaction_results.json. "
-             "Re-runs both cleaning steps. Implies --skip-actors (and --skip-crawl).",
+        help="Skip actor LLM, clean_actors, AND interactions LLM. Only re-runs "
+             "clean_interactions and the downstream helix/viz steps. "
+             "Requires 1_actor_results.json, 2_actor_nodes.json, and "
+             "3_interaction_results.json. Implies --skip-actors (and --skip-crawl).",
     )
     parser.add_argument(
         "--out-dir", default=None,
@@ -150,8 +152,19 @@ def main():
     else:
         run("1 actor extraction", [sys.executable, str(root / "feed_site.py")], out_dir)
 
-    # 2. Clean actors  --- ALWAYS RUNS
-    run("2 clean actors", [sys.executable, str(root / "clean_actors.py")], out_dir)
+    # 2. Clean actors. Skip when -i is set, because 2_actor_nodes.json must already
+    # exist (interactions can't have produced raw results without it).
+    if skip_interaction_llm:
+        nodes_file = out_dir / "2_actor_nodes.json"
+        if not nodes_file.exists():
+            sys.exit(
+                f"Error: --skip-interactions found raw interactions but no {nodes_file.name}.\n"
+                f"Expected {nodes_file} to exist already. Re-run with --skip-actors instead\n"
+                "to regenerate the cleaned actor nodes."
+            )
+        print("\n=== 2 clean actors (skipped, reusing 2_actor_nodes.json) ===")
+    else:
+        run("2 clean actors", [sys.executable, str(root / "clean_actors.py")], out_dir)
 
     # 3. Interaction extraction (LLM)
     if skip_interaction_llm:

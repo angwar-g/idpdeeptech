@@ -22,12 +22,17 @@ def main():
         description="Run the full PDF -> actor network pipeline.",
         formatter_class=argparse.RawDescriptionHelpFormatter,
         epilog=(
-            "Skip flags (any of these will also skip everything before it):\n"
-            "  -s  / --skip-actors        require 1_actor_results.json,        rerun clean_actors\n"
-            "  -i  / --skip-interactions  require 3_interaction_results.json,  rerun clean_interactions\n"
+            "Skip flags:\n"
+            "  -s  / --skip-actors        skip actor LLM, re-run clean_actors, continue normally.\n"
+            "                             Requires 1_actor_results.json on disk.\n"
+            "  -i  / --skip-interactions  skip everything through interactions LLM, re-run only\n"
+            "                             clean_interactions + helix + viz.\n"
+            "                             Requires 1_actor_results.json, 2_actor_nodes.json,\n"
+            "                             and 3_interaction_results.json on disk.\n"
             "\n"
-            "Cleaning is cheap and always re-runs. So if you Ctrl+C the LLM mid-extraction,\n"
-            "the partial raw file on disk is enough to resume with -s or -i."
+            "Cleaning is cheap. Both skips exist so that Ctrl+C during an LLM step doesn't\n"
+            "force you to re-do hours of work — the incremental save means partial raw\n"
+            "results are usable."
         ),
     )
     parser.add_argument("pdf", help="PDF filename inside pdf_input/, e.g. china25.pdf")
@@ -37,9 +42,10 @@ def main():
     )
     parser.add_argument(
         "--skip-interactions", "-i", action="store_true",
-        help="Skip feed_pdf AND interactions_pdf (both LLM steps). "
-             "Requires 1_actor_results.json AND 3_interaction_results.json. "
-             "Re-runs both cleaning steps. Implies --skip-actors.",
+        help="Skip actor LLM, clean_actors, AND interactions LLM. Only re-runs "
+             "clean_interactions and the downstream helix/viz steps. "
+             "Requires 1_actor_results.json, 2_actor_nodes.json, and "
+             "3_interaction_results.json. Implies --skip-actors.",
     )
     args = parser.parse_args()
 
@@ -87,8 +93,19 @@ def main():
     else:
         run_step("1 actor extraction", "feed_pdf.py", out_dir)
 
-    # 2. Clean actors  --- ALWAYS RUNS
-    run_step("2 clean actors", "clean_actors.py", out_dir)
+    # 2. Clean actors. Skip when -i is set, because 2_actor_nodes.json must already
+    # exist (interactions can't have produced raw results without it).
+    if skip_interaction_llm:
+        nodes_file = out_dir / "2_actor_nodes.json"
+        if not nodes_file.exists():
+            sys.exit(
+                f"Error: --skip-interactions found raw interactions but no {nodes_file.name}.\n"
+                f"Expected {nodes_file} to exist already. Re-run with --skip-actors instead\n"
+                "to regenerate the cleaned actor nodes."
+            )
+        print("\n=== 2 clean actors (skipped, reusing 2_actor_nodes.json) ===")
+    else:
+        run_step("2 clean actors", "clean_actors.py", out_dir)
 
     # 3. Interaction extraction (LLM)
     if skip_interaction_llm:
