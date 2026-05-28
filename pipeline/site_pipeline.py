@@ -21,6 +21,8 @@ Skip-flag implication chain (any of these will skip everything before it):
 
 Cleaning steps are cheap. -s lets you recover from a Ctrl+C of the actor LLM;
 -i lets you recover from a Ctrl+C of the interactions LLM.
+
+A run.log is written in the output directory and appended to on every run.
 """
 import argparse
 import re
@@ -28,6 +30,8 @@ import subprocess
 import sys
 from pathlib import Path
 from urllib.parse import urlparse
+
+from pipeline_logging import open_run_log, close_run_log, log_print, run_subprocess_logged
 
 
 def site_stem(url: str) -> str:
@@ -38,9 +42,9 @@ def site_stem(url: str) -> str:
     return host or "site"
 
 
-def run(label: str, cmd: list[str], cwd: Path) -> None:
-    print(f"\n=== {label} ===")
-    subprocess.run(cmd, cwd=cwd, check=True)
+def run(label: str, cmd: list[str], cwd: Path, log) -> None:
+    log_print(f"\n=== {label} ===", log)
+    run_subprocess_logged(cmd, cwd=cwd, log=log)
 
 
 def main():
@@ -124,78 +128,102 @@ def main():
                 "Run with only --skip-actors first to produce raw interactions, then retry."
             )
 
-    # 0. Crawl
-    if skip_crawl:
-        # Pick the most specific reason flag the user passed.
-        if args.skip_interactions:
-            reason = "--skip-interactions"
-        elif args.skip_actors:
-            reason = "--skip-actors"
-        else:
-            reason = "--skip-crawl"
-        print(f"\n=== 0 crawl site (skipped via {reason}, reusing {out_dir / 'crawl_output'}) ===")
-    else:
-        run(
-            "0 crawl site",
-            [
-                sys.executable, str(root / "crawl_site.py"),
-                args.url,
-                "--crawl", str(args.crawl),
-                "--max-pages", str(args.max_pages),
-            ],
-            out_dir,
-        )
-
-    # 1. Actor extraction (LLM)
-    if skip_actor_llm:
-        print("\n=== 1 actor extraction (skipped, reusing 1_actor_results.json) ===")
-    else:
-        run("1 actor extraction", [sys.executable, str(root / "feed_site.py")], out_dir)
-
-    # 2. Clean actors. Skip when -i is set, because 2_actor_nodes.json must already
-    # exist (interactions can't have produced raw results without it).
-    if skip_interaction_llm:
-        nodes_file = out_dir / "2_actor_nodes.json"
-        if not nodes_file.exists():
-            sys.exit(
-                f"Error: --skip-interactions found raw interactions but no {nodes_file.name}.\n"
-                f"Expected {nodes_file} to exist already. Re-run with --skip-actors instead\n"
-                "to regenerate the cleaned actor nodes."
-            )
-        print("\n=== 2 clean actors (skipped, reusing 2_actor_nodes.json) ===")
-    else:
-        run("2 clean actors", [sys.executable, str(root / "clean_actors.py")], out_dir)
-
-    # 3. Interaction extraction (LLM)
-    if skip_interaction_llm:
-        print("\n=== 3 interaction extraction (skipped, reusing 3_interaction_results.json) ===")
-    else:
-        run("3 interaction extraction", [sys.executable, str(root / "interactions_site.py")], out_dir)
-
-    # 4. Clean interactions  --- ALWAYS RUNS
-    run("4 clean interactions", [sys.executable, str(root / "clean_interactions.py")], out_dir)
-
-    # 5. Helix enrichment
-    run(
-        "5 helix enrichment",
-        [
-            sys.executable, str(root / "helix.py"),
-            "--actors", "2_actor_nodes.json",
-            "--interactions", "4_edges.json",
-            "--out-actors", "5_nodes.json",
-            "--out-interactions", "5_edges.json",
-        ],
-        out_dir,
+    skip_summary = (
+        " --skip-interactions" if skip_interaction_llm
+        else " --skip-actors" if args.skip_actors
+        else " --skip-crawl" if args.skip_crawl
+        else ""
+    )
+    log = open_run_log(
+        out_dir / "run.log",
+        header=f"site_pipeline.py {args.url}{skip_summary}",
     )
 
-    # 6. Network visualisation
-    run("6 network visualisation", [sys.executable, str(root / "network.py")], out_dir)
+    try:
+        # 0. Crawl
+        if skip_crawl:
+            if args.skip_interactions:
+                reason = "--skip-interactions"
+            elif args.skip_actors:
+                reason = "--skip-actors"
+            else:
+                reason = "--skip-crawl"
+            log_print(
+                f"\n=== 0 crawl site (skipped via {reason}, reusing {out_dir / 'crawl_output'}) ===",
+                log,
+            )
+        else:
+            run(
+                "0 crawl site",
+                [
+                    sys.executable, str(root / "crawl_site.py"),
+                    args.url,
+                    "--crawl", str(args.crawl),
+                    "--max-pages", str(args.max_pages),
+                ],
+                out_dir,
+                log,
+            )
 
-    html = out_dir / "quantum_network.html"
-    if html.exists():
-        html.rename(out_dir / "network.html")
+        # 1. Actor extraction (LLM)
+        if skip_actor_llm:
+            log_print("\n=== 1 actor extraction (skipped, reusing 1_actor_results.json) ===", log)
+        else:
+            run("1 actor extraction", [sys.executable, str(root / "feed_site.py")], out_dir, log)
 
-    print(f"\nDone. Outputs written to: {out_dir}")
+        # 2. Clean actors. Skip when -i is set, because 2_actor_nodes.json must already
+        # exist (interactions can't have produced raw results without it).
+        if skip_interaction_llm:
+            nodes_file = out_dir / "2_actor_nodes.json"
+            if not nodes_file.exists():
+                sys.exit(
+                    f"Error: --skip-interactions found raw interactions but no {nodes_file.name}.\n"
+                    f"Expected {nodes_file} to exist already. Re-run with --skip-actors instead\n"
+                    "to regenerate the cleaned actor nodes."
+                )
+            log_print("\n=== 2 clean actors (skipped, reusing 2_actor_nodes.json) ===", log)
+        else:
+            run("2 clean actors", [sys.executable, str(root / "clean_actors.py")], out_dir, log)
+
+        # 3. Interaction extraction (LLM)
+        if skip_interaction_llm:
+            log_print("\n=== 3 interaction extraction (skipped, reusing 3_interaction_results.json) ===", log)
+        else:
+            run("3 interaction extraction", [sys.executable, str(root / "interactions_site.py")], out_dir, log)
+
+        # 4. Clean interactions  --- ALWAYS RUNS
+        run("4 clean interactions", [sys.executable, str(root / "clean_interactions.py")], out_dir, log)
+
+        # 5. Helix enrichment
+        run(
+            "5 helix enrichment",
+            [
+                sys.executable, str(root / "helix.py"),
+                "--actors", "2_actor_nodes.json",
+                "--interactions", "4_edges.json",
+                "--out-actors", "5_nodes.json",
+                "--out-interactions", "5_edges.json",
+            ],
+            out_dir,
+            log,
+        )
+
+        # 6. Network visualisation
+        run("6 network visualisation", [sys.executable, str(root / "network.py")], out_dir, log)
+
+        html = out_dir / "quantum_network.html"
+        if html.exists():
+            html.rename(out_dir / "network.html")
+
+        log_print(f"\nDone. Outputs written to: {out_dir}", log)
+        log_print(f"Log: {out_dir / 'run.log'}", log)
+        close_run_log(log, status="OK")
+    except KeyboardInterrupt:
+        close_run_log(log, status="INTERRUPTED")
+        raise
+    except BaseException:
+        close_run_log(log, status="FAILED")
+        raise
 
 
 if __name__ == "__main__":

@@ -5,15 +5,17 @@ import subprocess
 import sys
 from pathlib import Path
 
+from pipeline_logging import open_run_log, close_run_log, log_print, run_subprocess_logged
+
 # feed - clean - inter - clean - helix - network
 
 
-def run_step(label, script, cwd):
-    print(f"\n=== {label} ===")
-    subprocess.run(
+def run_step(label, script, cwd, log):
+    log_print(f"\n=== {label} ===", log)
+    run_subprocess_logged(
         [sys.executable, str(Path(__file__).parent / script)],
         cwd=cwd,
-        check=True,
+        log=log,
     )
 
 
@@ -32,7 +34,9 @@ def main():
             "\n"
             "Cleaning is cheap. Both skips exist so that Ctrl+C during an LLM step doesn't\n"
             "force you to re-do hours of work — the incremental save means partial raw\n"
-            "results are usable."
+            "results are usable.\n"
+            "\n"
+            "A run.log is written in the output directory and appended to on every run."
         ),
     )
     parser.add_argument("pdf", help="PDF filename inside pdf_input/, e.g. china25.pdf")
@@ -68,7 +72,7 @@ def main():
 
     shutil.copy2(pdf_path, work_pdf_dir / pdf_path.name)
 
-    # Validate that required raw files exist for whatever LLM steps were skipped.
+    # Validate required raw files exist for whatever LLM steps were skipped.
     if skip_actor_llm:
         raw_actors = out_dir / "1_actor_results.json"
         if not raw_actors.exists():
@@ -87,63 +91,82 @@ def main():
                 "to produce raw interaction results, then retry."
             )
 
-    # 1. Actor extraction (LLM)
-    if skip_actor_llm:
-        print("\n=== 1 actor extraction (skipped, reusing 1_actor_results.json) ===")
-    else:
-        run_step("1 actor extraction", "feed_pdf.py", out_dir)
-
-    # 2. Clean actors. Skip when -i is set, because 2_actor_nodes.json must already
-    # exist (interactions can't have produced raw results without it).
-    if skip_interaction_llm:
-        nodes_file = out_dir / "2_actor_nodes.json"
-        if not nodes_file.exists():
-            sys.exit(
-                f"Error: --skip-interactions found raw interactions but no {nodes_file.name}.\n"
-                f"Expected {nodes_file} to exist already. Re-run with --skip-actors instead\n"
-                "to regenerate the cleaned actor nodes."
-            )
-        print("\n=== 2 clean actors (skipped, reusing 2_actor_nodes.json) ===")
-    else:
-        run_step("2 clean actors", "clean_actors.py", out_dir)
-
-    # 3. Interaction extraction (LLM)
-    if skip_interaction_llm:
-        print("\n=== 3 interaction extraction (skipped, reusing 3_interaction_results.json) ===")
-    else:
-        run_step("3 interaction extraction", "interactions_pdf.py", out_dir)
-
-    # 4. Clean interactions  --- ALWAYS RUNS
-    run_step("4 clean interactions", "clean_interactions.py", out_dir)
-
-    # 5. Helix enrichment
-    print("\n=== 5 helix enrichment ===")
-    subprocess.run(
-        [
-            sys.executable,
-            str(root / "helix.py"),
-            "--actors", "2_actor_nodes.json",
-            "--interactions", "4_edges.json",
-            "--out-actors", "5_nodes.json",
-            "--out-interactions", "5_edges.json",
-        ],
-        cwd=out_dir,
-        check=True,
+    skip_summary = (
+        " --skip-interactions" if skip_interaction_llm
+        else " --skip-actors" if args.skip_actors
+        else ""
+    )
+    log = open_run_log(
+        out_dir / "run.log",
+        header=f"pdf_pipeline.py {args.pdf}{skip_summary}",
     )
 
-    # 6. Network visualisation
-    print("\n=== 6 network visualisation ===")
-    subprocess.run(
-        [sys.executable, str(root / "network.py")],
-        cwd=out_dir,
-        check=True,
-    )
+    try:
+        # 1. Actor extraction (LLM)
+        if skip_actor_llm:
+            log_print("\n=== 1 actor extraction (skipped, reusing 1_actor_results.json) ===", log)
+        else:
+            run_step("1 actor extraction", "feed_pdf.py", out_dir, log)
 
-    html = out_dir / "quantum_network.html"
-    if html.exists():
-        html.rename(out_dir / "network.html")
+        # 2. Clean actors. Skip when -i is set, because 2_actor_nodes.json must already
+        # exist (interactions can't have produced raw results without it).
+        if skip_interaction_llm:
+            nodes_file = out_dir / "2_actor_nodes.json"
+            if not nodes_file.exists():
+                sys.exit(
+                    f"Error: --skip-interactions found raw interactions but no {nodes_file.name}.\n"
+                    f"Expected {nodes_file} to exist already. Re-run with --skip-actors instead\n"
+                    "to regenerate the cleaned actor nodes."
+                )
+            log_print("\n=== 2 clean actors (skipped, reusing 2_actor_nodes.json) ===", log)
+        else:
+            run_step("2 clean actors", "clean_actors.py", out_dir, log)
 
-    print(f"\nDone. Outputs written to: {out_dir}")
+        # 3. Interaction extraction (LLM)
+        if skip_interaction_llm:
+            log_print("\n=== 3 interaction extraction (skipped, reusing 3_interaction_results.json) ===", log)
+        else:
+            run_step("3 interaction extraction", "interactions_pdf.py", out_dir, log)
+
+        # 4. Clean interactions  --- ALWAYS RUNS
+        run_step("4 clean interactions", "clean_interactions.py", out_dir, log)
+
+        # 5. Helix enrichment
+        log_print("\n=== 5 helix enrichment ===", log)
+        run_subprocess_logged(
+            [
+                sys.executable,
+                str(root / "helix.py"),
+                "--actors", "2_actor_nodes.json",
+                "--interactions", "4_edges.json",
+                "--out-actors", "5_nodes.json",
+                "--out-interactions", "5_edges.json",
+            ],
+            cwd=out_dir,
+            log=log,
+        )
+
+        # 6. Network visualisation
+        log_print("\n=== 6 network visualisation ===", log)
+        run_subprocess_logged(
+            [sys.executable, str(root / "network.py")],
+            cwd=out_dir,
+            log=log,
+        )
+
+        html = out_dir / "quantum_network.html"
+        if html.exists():
+            html.rename(out_dir / "network.html")
+
+        log_print(f"\nDone. Outputs written to: {out_dir}", log)
+        log_print(f"Log: {out_dir / 'run.log'}", log)
+        close_run_log(log, status="OK")
+    except KeyboardInterrupt:
+        close_run_log(log, status="INTERRUPTED")
+        raise
+    except BaseException:
+        close_run_log(log, status="FAILED")
+        raise
 
 
 if __name__ == "__main__":

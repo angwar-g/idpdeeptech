@@ -166,3 +166,22 @@ The two LLM steps (1 and 3) are the slow ones. Both save incrementally after eac
 ## Notes on chunk skipping in interactions
 
 The interactions LLM only runs on chunks containing **at least 2 known actors**. Chunks with 0 or 1 known actor are silently skipped, which is why log lines may jump (e.g. "chunk 3/20" without seeing chunks 1–2). This is intentional — pairwise interactions need at least two actors in scope.
+
+---
+
+## Run logs
+
+Every `pdf_pipeline.py` and `site_pipeline.py` run writes a `run.log` file inside the run's output directory (`pdf_outputs/<stem>/run.log` or `site_outputs/<slug>/run.log`). It captures everything the terminal showed, including each subprocess's output, streamed live.
+
+The log is *appended* on every run (with a timestamped header per run), so re-running with `-s` or `-i` after a Ctrl+C keeps the original history.
+
+Useful when:
+- You disconnect from WSL or SSH and lose terminal scrollback — the log is still on disk.
+- You want to compare a current run against a previous one in the same directory.
+- A run fails partway through and you want to share or grep the output later.
+
+To follow a run live from another shell:
+
+```
+tail -f pdf_outputs/china25/run.log
+```
