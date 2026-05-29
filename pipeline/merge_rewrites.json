@@ -1,0 +1,30 @@
+{
+  "_comment": "Per-source actor rewrites applied BEFORE cross-document merging. Keys are source_document values exactly as they appear in 5_nodes.json. Each rewrite has a 'match' (case-insensitive regex on the full entity name) and 'replace' (the new entity name). Wildcards: use 'source_document' '*' to apply to every source.",
+  "rewrites": {
+    "japan25.pdf": [
+      {
+        "match": "^we$",
+        "replace": "Japan"
+      },
+      {
+        "match": "^our country$",
+        "replace": "Japan"
+      },
+      {
+        "match": "^(the )?government$",
+        "replace": "Japan Government"
+      },
+      {
+        "match": "^(the )?national government$",
+        "replace": "Japan Government"
+      }
+    ],
+    "china25.pdf": [
+      {
+        "match": "^(the )?state council$",
+        "replace": "China State Council"
+      }
+    ],
+    "*": []
+  }
+}

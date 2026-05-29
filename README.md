@@ -185,3 +185,49 @@ To follow a run live from another shell:
 ```
 tail -f pdf_outputs/china25/run.log
 ```
+
+---
+
+## Combining everything: `merge_all.py`
+
+After running individual pipelines, this script walks `pdf_outputs/*/` and `site_outputs/*/` (including the batch layout `*/website/`), dedupes actors across sources, applies document-relative rewrites, and produces one combined graph.
+
+```
+python3 merge_all.py                          # do the merge
+python3 merge_all.py --dry-run                # preview rewrites + merge counts, write nothing
+python3 merge_all.py --no-network             # skip the network.html step
+python3 merge_all.py --rewrites custom.json   # use a different rewrite map
+```
+
+**Output:** `merged_outputs/`
+- `combined_nodes.json` — one record per canonical actor across all sources. Each node lists `source_documents` and a full `mentions` array preserving every occurrence.
+- `combined_edges.json` — all edges with rewrites applied and actor keys repointed to the merged canonical IDs.
+- `merge_report.json` — diagnostics: which rewrites fired and how often, plus any cases where the same actor was classified to different helixes across sources.
+- `network.html` — combined visualisation.
+
+### Rewrite map (`merge_rewrites.json`)
+
+Auto-created on first run with a few starter patterns. Each rule has a source document and a regex match → replace. Apply before merging so document-relative names like "We", "the Government", "our country" get pinned to the right entity for that source.
+
+```json
+{
+  "rewrites": {
+    "japan25.pdf": [
+      {"match": "^we$", "replace": "Japan"},
+      {"match": "^(the )?government$", "replace": "Japan Government"}
+    ],
+    "china25.pdf": [
+      {"match": "^(the )?state council$", "replace": "China State Council"}
+    ],
+    "*": [
+      ...patterns that apply to every source
+    ]
+  }
+}
+```
+
+Match strings are **case-insensitive regexes**. The `"*"` source key applies to every source — use carefully. As you discover new ambiguity patterns, add them and re-run with `--dry-run` first to preview impact.
+
+### Helix conflicts
+
+When the same actor (e.g. "Tsinghua University") appears in two documents with different helix classifications, `merge_all.py` picks the more confident record (preferring `classification_needs_review = False`, then non-Unknown helix, then richer occurrence text) and flags the conflict in `merge_report.json` for review.

@@ -1,0 +1,337 @@
+
+========================================================================
+RUN STARTED  2026-05-29 00:18:23
+site_pipeline.py https://www.psiquantum.com --skip-crawl
+========================================================================
+
+=== 0 crawl site (skipped via --skip-crawl, reusing /home/lv/IDP/idpdeeptech/pipeline/site_outputs/psiquantum_com/crawl_output) ===
+
+=== 1 actor extraction ===
+
+========================================================================
+RUN FINISHED 2026-05-29 00:24:22  (INTERRUPTED)
+Elapsed:     5m 30s
+========================================================================
+
+========================================================================
+RUN STARTED  2026-05-29 00:25:08
+site_pipeline.py https://www.psiquantum.com --skip-crawl
+========================================================================
+
+=== 0 crawl site (skipped via --skip-crawl, reusing /home/lv/IDP/idpdeeptech/pipeline/site_outputs/psiquantum_com/crawl_output) ===
+
+=== 1 actor extraction ===
+Reading page (1/23): https://www.psiquantum.com/about
+Extracting: https://www.psiquantum.com/about (1/23), chunk 1/20
+Extracting: https://www.psiquantum.com/about (1/23), chunk 2/20
+Extracting: https://www.psiquantum.com/about (1/23), chunk 3/20
+Extracting: https://www.psiquantum.com/about (1/23), chunk 4/20
+Extracting: https://www.psiquantum.com/about (1/23), chunk 5/20
+Extracting: https://www.psiquantum.com/about (1/23), chunk 6/20
+Extracting: https://www.psiquantum.com/about (1/23), chunk 7/20
+Extracting: https://www.psiquantum.com/about (1/23), chunk 8/20
+Extracting: https://www.psiquantum.com/about (1/23), chunk 9/20
+Extracting: https://www.psiquantum.com/about (1/23), chunk 10/20
+Extracting: https://www.psiquantum.com/about (1/23), chunk 11/20
+Extracting: https://www.psiquantum.com/about (1/23), chunk 12/20
+Extracting: https://www.psiquantum.com/about (1/23), chunk 13/20
+Extracting: https://www.psiquantum.com/about (1/23), chunk 14/20
+Extracting: https://www.psiquantum.com/about (1/23), chunk 15/20
+Extracting: https://www.psiquantum.com/about (1/23), chunk 16/20
+Extracting: https://www.psiquantum.com/about (1/23), chunk 17/20
+
+[1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+Model call failed for https://www.psiquantum.com/about chunk 17: litellm.APIConnectionError: OllamaException - litellm.Timeout: Connection timed out. Timeout passed=600.0, time taken=652.762 seconds
+Extracting: https://www.psiquantum.com/about (1/23), chunk 18/20
+
+[1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+Model call failed for https://www.psiquantum.com/about chunk 18: litellm.APIConnectionError: OllamaException - litellm.Timeout: Connection timed out. Timeout passed=600.0, time taken=654.647 seconds
+Extracting: https://www.psiquantum.com/about (1/23), chunk 19/20
+Extracting: https://www.psiquantum.com/about (1/23), chunk 20/20
+Reading page (2/23): https://www.psiquantum.com/news-import/ncc-japan-partnership-announcement
+Extracting: https://www.psiquantum.com/news-import/ncc-japan-partnership-announcement (2/23), chunk 1/8
+Extracting: https://www.psiquantum.com/news-import/ncc-japan-partnership-announcement (2/23), chunk 2/8
+Extracting: https://www.psiquantum.com/news-import/ncc-japan-partnership-announcement (2/23), chunk 3/8
+Extracting: https://www.psiquantum.com/news-import/ncc-japan-partnership-announcement (2/23), chunk 4/8
+Extracting: https://www.psiquantum.com/news-import/ncc-japan-partnership-announcement (2/23), chunk 5/8
+Extracting: https://www.psiquantum.com/news-import/ncc-japan-partnership-announcement (2/23), chunk 6/8
+Extracting: https://www.psiquantum.com/news-import/ncc-japan-partnership-announcement (2/23), chunk 7/8
+Extracting: https://www.psiquantum.com/news-import/ncc-japan-partnership-announcement (2/23), chunk 8/8
+Reading page (3/23): https://www.psiquantum.com/news-import/open-access-circuit-designer
+Extracting: https://www.psiquantum.com/news-import/open-access-circuit-designer (3/23), chunk 1/10
+Extracting: https://www.psiquantum.com/news-import/open-access-circuit-designer (3/23), chunk 2/10
+Extracting: https://www.psiquantum.com/news-import/open-access-circuit-designer (3/23), chunk 3/10
+Extracting: https://www.psiquantum.com/news-import/open-access-circuit-designer (3/23), chunk 4/10
+Extracting: https://www.psiquantum.com/news-import/open-access-circuit-designer (3/23), chunk 5/10
+Extracting: https://www.psiquantum.com/news-import/open-access-circuit-designer (3/23), chunk 6/10
+Extracting: https://www.psiquantum.com/news-import/open-access-circuit-designer (3/23), chunk 7/10
+Extracting: https://www.psiquantum.com/news-import/open-access-circuit-designer (3/23), chunk 8/10
+Extracting: https://www.psiquantum.com/news-import/open-access-circuit-designer (3/23), chunk 9/10
+Extracting: https://www.psiquantum.com/news-import/open-access-circuit-designer (3/23), chunk 10/10
+Reading page (4/23): https://www.psiquantum.com/news-import
+Extracting: https://www.psiquantum.com/news-import (4/23), chunk 1/17
+Extracting: https://www.psiquantum.com/news-import (4/23), chunk 2/17
+Extracting: https://www.psiquantum.com/news-import (4/23), chunk 3/17
+Extracting: https://www.psiquantum.com/news-import (4/23), chunk 4/17
+Extracting: https://www.psiquantum.com/news-import (4/23), chunk 5/17
+Extracting: https://www.psiquantum.com/news-import (4/23), chunk 6/17
+Extracting: https://www.psiquantum.com/news-import (4/23), chunk 7/17
+Extracting: https://www.psiquantum.com/news-import (4/23), chunk 8/17
+Extracting: https://www.psiquantum.com/news-import (4/23), chunk 9/17
+Extracting: https://www.psiquantum.com/news-import (4/23), chunk 10/17
+Extracting: https://www.psiquantum.com/news-import (4/23), chunk 11/17
+Extracting: https://www.psiquantum.com/news-import (4/23), chunk 12/17
+Extracting: https://www.psiquantum.com/news-import (4/23), chunk 13/17
+Extracting: https://www.psiquantum.com/news-import (4/23), chunk 14/17
+Extracting: https://www.psiquantum.com/news-import (4/23), chunk 15/17
+Extracting: https://www.psiquantum.com/news-import (4/23), chunk 16/17
+Extracting: https://www.psiquantum.com/news-import (4/23), chunk 17/17
+Reading page (5/23): https://www.psiquantum.com/news-import/darpa-advances-psiquantum-to-second-phase-of-utility-scale-quantum-computing-program
+Extracting: https://www.psiquantum.com/news-import/darpa-advances-psiquantum-to-second-phase-of-utility-scale-quantum-computing-program (5/23), chunk 1/10
+Extracting: https://www.psiquantum.com/news-import/darpa-advances-psiquantum-to-second-phase-of-utility-scale-quantum-computing-program (5/23), chunk 2/10
+Extracting: https://www.psiquantum.com/news-import/darpa-advances-psiquantum-to-second-phase-of-utility-scale-quantum-computing-program (5/23), chunk 3/10
+Extracting: https://www.psiquantum.com/news-import/darpa-advances-psiquantum-to-second-phase-of-utility-scale-quantum-computing-program (5/23), chunk 4/10
+Extracting: https://www.psiquantum.com/news-import/darpa-advances-psiquantum-to-second-phase-of-utility-scale-quantum-computing-program (5/23), chunk 5/10
+Extracting: https://www.psiquantum.com/news-import/darpa-advances-psiquantum-to-second-phase-of-utility-scale-quantum-computing-program (5/23), chunk 6/10
+Extracting: https://www.psiquantum.com/news-import/darpa-advances-psiquantum-to-second-phase-of-utility-scale-quantum-computing-program (5/23), chunk 7/10
+Extracting: https://www.psiquantum.com/news-import/darpa-advances-psiquantum-to-second-phase-of-utility-scale-quantum-computing-program (5/23), chunk 8/10
+Extracting: https://www.psiquantum.com/news-import/darpa-advances-psiquantum-to-second-phase-of-utility-scale-quantum-computing-program (5/23), chunk 9/10
+Extracting: https://www.psiquantum.com/news-import/darpa-advances-psiquantum-to-second-phase-of-utility-scale-quantum-computing-program (5/23), chunk 10/10
+Reading page (6/23): https://www.psiquantum.com/news-import/darpa-final-phase
+Extracting: https://www.psiquantum.com/news-import/darpa-final-phase (6/23), chunk 1/8
+Extracting: https://www.psiquantum.com/news-import/darpa-final-phase (6/23), chunk 2/8
+Extracting: https://www.psiquantum.com/news-import/darpa-final-phase (6/23), chunk 3/8
+Extracting: https://www.psiquantum.com/news-import/darpa-final-phase (6/23), chunk 4/8
+Extracting: https://www.psiquantum.com/news-import/darpa-final-phase (6/23), chunk 5/8
+Extracting: https://www.psiquantum.com/news-import/darpa-final-phase (6/23), chunk 6/8
+Extracting: https://www.psiquantum.com/news-import/darpa-final-phase (6/23), chunk 7/8
+Extracting: https://www.psiquantum.com/news-import/darpa-final-phase (6/23), chunk 8/8
+Reading page (7/23): https://www.psiquantum.com/psiquantum-software
+Extracting: https://www.psiquantum.com/psiquantum-software (7/23), chunk 1/1
+Reading page (8/23): https://www.psiquantum.com/news-import/category/Company
+Extracting: https://www.psiquantum.com/news-import/category/Company (8/23), chunk 1/23
+Extracting: https://www.psiquantum.com/news-import/category/Company (8/23), chunk 2/23
+Extracting: https://www.psiquantum.com/news-import/category/Company (8/23), chunk 3/23
+Extracting: https://www.psiquantum.com/news-import/category/Company (8/23), chunk 4/23
+Extracting: https://www.psiquantum.com/news-import/category/Company (8/23), chunk 5/23
+Extracting: https://www.psiquantum.com/news-import/category/Company (8/23), chunk 6/23
+Extracting: https://www.psiquantum.com/news-import/category/Company (8/23), chunk 7/23
+Extracting: https://www.psiquantum.com/news-import/category/Company (8/23), chunk 8/23
+Extracting: https://www.psiquantum.com/news-import/category/Company (8/23), chunk 9/23
+Extracting: https://www.psiquantum.com/news-import/category/Company (8/23), chunk 10/23
+Extracting: https://www.psiquantum.com/news-import/category/Company (8/23), chunk 11/23
+Extracting: https://www.psiquantum.com/news-import/category/Company (8/23), chunk 12/23
+Extracting: https://www.psiquantum.com/news-import/category/Company (8/23), chunk 13/23
+Extracting: https://www.psiquantum.com/news-import/category/Company (8/23), chunk 14/23
+Extracting: https://www.psiquantum.com/news-import/category/Company (8/23), chunk 15/23
+Extracting: https://www.psiquantum.com/news-import/category/Company (8/23), chunk 16/23
+Extracting: https://www.psiquantum.com/news-import/category/Company (8/23), chunk 17/23
+Extracting: https://www.psiquantum.com/news-import/category/Company (8/23), chunk 18/23
+Extracting: https://www.psiquantum.com/news-import/category/Company (8/23), chunk 19/23
+Extracting: https://www.psiquantum.com/news-import/category/Company (8/23), chunk 20/23
+Extracting: https://www.psiquantum.com/news-import/category/Company (8/23), chunk 21/23
+Extracting: https://www.psiquantum.com/news-import/category/Company (8/23), chunk 22/23
+Extracting: https://www.psiquantum.com/news-import/category/Company (8/23), chunk 23/23
+Reading page (9/23): https://www.psiquantum.com/technology
+Extracting: https://www.psiquantum.com/technology (9/23), chunk 1/14
+Extracting: https://www.psiquantum.com/technology (9/23), chunk 2/14
+Extracting: https://www.psiquantum.com/technology (9/23), chunk 3/14
+Extracting: https://www.psiquantum.com/technology (9/23), chunk 4/14
+Extracting: https://www.psiquantum.com/technology (9/23), chunk 5/14
+Extracting: https://www.psiquantum.com/technology (9/23), chunk 6/14
+Extracting: https://www.psiquantum.com/technology (9/23), chunk 7/14
+Extracting: https://www.psiquantum.com/technology (9/23), chunk 8/14
+Extracting: https://www.psiquantum.com/technology (9/23), chunk 9/14
+Extracting: https://www.psiquantum.com/technology (9/23), chunk 10/14
+Extracting: https://www.psiquantum.com/technology (9/23), chunk 11/14
+Extracting: https://www.psiquantum.com/technology (9/23), chunk 12/14
+Extracting: https://www.psiquantum.com/technology (9/23), chunk 13/14
+Extracting: https://www.psiquantum.com/technology (9/23), chunk 14/14
+Reading page (10/23): https://www.psiquantum.com/news-import/us-department-of-commerce
+Extracting: https://www.psiquantum.com/news-import/us-department-of-commerce (10/23), chunk 1/12
+Extracting: https://www.psiquantum.com/news-import/us-department-of-commerce (10/23), chunk 2/12
+Extracting: https://www.psiquantum.com/news-import/us-department-of-commerce (10/23), chunk 3/12
+Extracting: https://www.psiquantum.com/news-import/us-department-of-commerce (10/23), chunk 4/12
+Extracting: https://www.psiquantum.com/news-import/us-department-of-commerce (10/23), chunk 5/12
+Extracting: https://www.psiquantum.com/news-import/us-department-of-commerce (10/23), chunk 6/12
+Extracting: https://www.psiquantum.com/news-import/us-department-of-commerce (10/23), chunk 7/12
+Extracting: https://www.psiquantum.com/news-import/us-department-of-commerce (10/23), chunk 8/12
+Extracting: https://www.psiquantum.com/news-import/us-department-of-commerce (10/23), chunk 9/12
+Extracting: https://www.psiquantum.com/news-import/us-department-of-commerce (10/23), chunk 10/12
+Extracting: https://www.psiquantum.com/news-import/us-department-of-commerce (10/23), chunk 11/12
+Extracting: https://www.psiquantum.com/news-import/us-department-of-commerce (10/23), chunk 12/12
+Reading page (11/23): https://www.psiquantum.com/news-import/psiquantum-appoints-victor-peng
+Extracting: https://www.psiquantum.com/news-import/psiquantum-appoints-victor-peng (11/23), chunk 1/11
+Extracting: https://www.psiquantum.com/news-import/psiquantum-appoints-victor-peng (11/23), chunk 2/11
+Extracting: https://www.psiquantum.com/news-import/psiquantum-appoints-victor-peng (11/23), chunk 3/11
+Extracting: https://www.psiquantum.com/news-import/psiquantum-appoints-victor-peng (11/23), chunk 4/11
+Extracting: https://www.psiquantum.com/news-import/psiquantum-appoints-victor-peng (11/23), chunk 5/11
+Extracting: https://www.psiquantum.com/news-import/psiquantum-appoints-victor-peng (11/23), chunk 6/11
+Extracting: https://www.psiquantum.com/news-import/psiquantum-appoints-victor-peng (11/23), chunk 7/11
+Extracting: https://www.psiquantum.com/news-import/psiquantum-appoints-victor-peng (11/23), chunk 8/11
+Extracting: https://www.psiquantum.com/news-import/psiquantum-appoints-victor-peng (11/23), chunk 9/11
+Extracting: https://www.psiquantum.com/news-import/psiquantum-appoints-victor-peng (11/23), chunk 10/11
+Extracting: https://www.psiquantum.com/news-import/psiquantum-appoints-victor-peng (11/23), chunk 11/11
+Reading page (12/23): https://www.psiquantum.com/news-import/psiquantum-breaks-ground-chicago
+Extracting: https://www.psiquantum.com/news-import/psiquantum-breaks-ground-chicago (12/23), chunk 1/13
+Extracting: https://www.psiquantum.com/news-import/psiquantum-breaks-ground-chicago (12/23), chunk 2/13
+Extracting: https://www.psiquantum.com/news-import/psiquantum-breaks-ground-chicago (12/23), chunk 3/13
+Extracting: https://www.psiquantum.com/news-import/psiquantum-breaks-ground-chicago (12/23), chunk 4/13
+Extracting: https://www.psiquantum.com/news-import/psiquantum-breaks-ground-chicago (12/23), chunk 5/13
+Extracting: https://www.psiquantum.com/news-import/psiquantum-breaks-ground-chicago (12/23), chunk 6/13
+Extracting: https://www.psiquantum.com/news-import/psiquantum-breaks-ground-chicago (12/23), chunk 7/13
+Extracting: https://www.psiquantum.com/news-import/psiquantum-breaks-ground-chicago (12/23), chunk 8/13
+Extracting: https://www.psiquantum.com/news-import/psiquantum-breaks-ground-chicago (12/23), chunk 9/13
+Extracting: https://www.psiquantum.com/news-import/psiquantum-breaks-ground-chicago (12/23), chunk 10/13
+Extracting: https://www.psiquantum.com/news-import/psiquantum-breaks-ground-chicago (12/23), chunk 11/13
+Extracting: https://www.psiquantum.com/news-import/psiquantum-breaks-ground-chicago (12/23), chunk 12/13
+Extracting: https://www.psiquantum.com/news-import/psiquantum-breaks-ground-chicago (12/23), chunk 13/13
+Reading page (13/23): https://www.psiquantum.com/research
+Extracting: https://www.psiquantum.com/research (13/23), chunk 1/1
+Reading page (14/23): https://www.psiquantum.com/applications
+Extracting: https://www.psiquantum.com/applications (14/23), chunk 1/1
+Reading page (15/23): https://www.psiquantum.com/news-import/new-government-advisory-board-members
+Extracting: https://www.psiquantum.com/news-import/new-government-advisory-board-members (15/23), chunk 1/10
+Extracting: https://www.psiquantum.com/news-import/new-government-advisory-board-members (15/23), chunk 2/10
+Extracting: https://www.psiquantum.com/news-import/new-government-advisory-board-members (15/23), chunk 3/10
+Extracting: https://www.psiquantum.com/news-import/new-government-advisory-board-members (15/23), chunk 4/10
+Extracting: https://www.psiquantum.com/news-import/new-government-advisory-board-members (15/23), chunk 5/10
+Extracting: https://www.psiquantum.com/news-import/new-government-advisory-board-members (15/23), chunk 6/10
+Extracting: https://www.psiquantum.com/news-import/new-government-advisory-board-members (15/23), chunk 7/10
+Extracting: https://www.psiquantum.com/news-import/new-government-advisory-board-members (15/23), chunk 8/10
+Extracting: https://www.psiquantum.com/news-import/new-government-advisory-board-members (15/23), chunk 9/10
+Extracting: https://www.psiquantum.com/news-import/new-government-advisory-board-members (15/23), chunk 10/10
+Reading page (16/23): https://www.psiquantum.com/news-import/omega
+Extracting: https://www.psiquantum.com/news-import/omega (16/23), chunk 1/12
+Extracting: https://www.psiquantum.com/news-import/omega (16/23), chunk 2/12
+Extracting: https://www.psiquantum.com/news-import/omega (16/23), chunk 3/12
+Extracting: https://www.psiquantum.com/news-import/omega (16/23), chunk 4/12
+Extracting: https://www.psiquantum.com/news-import/omega (16/23), chunk 5/12
+Extracting: https://www.psiquantum.com/news-import/omega (16/23), chunk 6/12
+Extracting: https://www.psiquantum.com/news-import/omega (16/23), chunk 7/12
+Extracting: https://www.psiquantum.com/news-import/omega (16/23), chunk 8/12
+Extracting: https://www.psiquantum.com/news-import/omega (16/23), chunk 9/12
+Extracting: https://www.psiquantum.com/news-import/omega (16/23), chunk 10/12
+Extracting: https://www.psiquantum.com/news-import/omega (16/23), chunk 11/12
+Extracting: https://www.psiquantum.com/news-import/omega (16/23), chunk 12/12
+Reading page (17/23): https://www.psiquantum.com/news-import/psiquantum-afrl-omega
+Extracting: https://www.psiquantum.com/news-import/psiquantum-afrl-omega (17/23), chunk 1/10
+Extracting: https://www.psiquantum.com/news-import/psiquantum-afrl-omega (17/23), chunk 2/10
+Extracting: https://www.psiquantum.com/news-import/psiquantum-afrl-omega (17/23), chunk 3/10
+Extracting: https://www.psiquantum.com/news-import/psiquantum-afrl-omega (17/23), chunk 4/10
+Extracting: https://www.psiquantum.com/news-import/psiquantum-afrl-omega (17/23), chunk 5/10
+Repaired malformed JSON.
+Extracting: https://www.psiquantum.com/news-import/psiquantum-afrl-omega (17/23), chunk 6/10
+Repaired malformed JSON.
+Extracting: https://www.psiquantum.com/news-import/psiquantum-afrl-omega (17/23), chunk 7/10
+Extracting: https://www.psiquantum.com/news-import/psiquantum-afrl-omega (17/23), chunk 8/10
+Extracting: https://www.psiquantum.com/news-import/psiquantum-afrl-omega (17/23), chunk 9/10
+Extracting: https://www.psiquantum.com/news-import/psiquantum-afrl-omega (17/23), chunk 10/10
+Reading page (18/23): https://www.psiquantum.com/news-import/construct-nvidia-cudaq
+Extracting: https://www.psiquantum.com/news-import/construct-nvidia-cudaq (18/23), chunk 1/9
+Extracting: https://www.psiquantum.com/news-import/construct-nvidia-cudaq (18/23), chunk 2/9
+Extracting: https://www.psiquantum.com/news-import/construct-nvidia-cudaq (18/23), chunk 3/9
+Extracting: https://www.psiquantum.com/news-import/construct-nvidia-cudaq (18/23), chunk 4/9
+Extracting: https://www.psiquantum.com/news-import/construct-nvidia-cudaq (18/23), chunk 5/9
+Extracting: https://www.psiquantum.com/news-import/construct-nvidia-cudaq (18/23), chunk 6/9
+Extracting: https://www.psiquantum.com/news-import/construct-nvidia-cudaq (18/23), chunk 7/9
+Extracting: https://www.psiquantum.com/news-import/construct-nvidia-cudaq (18/23), chunk 8/9
+Extracting: https://www.psiquantum.com/news-import/construct-nvidia-cudaq (18/23), chunk 9/9
+Reading page (19/23): https://www.psiquantum.com/news
+Extracting: https://www.psiquantum.com/news (19/23), chunk 1/15
+Extracting: https://www.psiquantum.com/news (19/23), chunk 2/15
+Extracting: https://www.psiquantum.com/news (19/23), chunk 3/15
+Extracting: https://www.psiquantum.com/news (19/23), chunk 4/15
+Extracting: https://www.psiquantum.com/news (19/23), chunk 5/15
+Extracting: https://www.psiquantum.com/news (19/23), chunk 6/15
+Extracting: https://www.psiquantum.com/news (19/23), chunk 7/15
+Extracting: https://www.psiquantum.com/news (19/23), chunk 8/15
+Extracting: https://www.psiquantum.com/news (19/23), chunk 9/15
+Extracting: https://www.psiquantum.com/news (19/23), chunk 10/15
+Extracting: https://www.psiquantum.com/news (19/23), chunk 11/15
+Extracting: https://www.psiquantum.com/news (19/23), chunk 12/15
+Extracting: https://www.psiquantum.com/news (19/23), chunk 13/15
+Extracting: https://www.psiquantum.com/news (19/23), chunk 14/15
+Extracting: https://www.psiquantum.com/news (19/23), chunk 15/15
+Reading page (20/23): https://www.psiquantum.com/news-import/psiquantum-announces-qref-and-bartiq-open-source-software-for-better-tools-libraries-and-datasets
+Extracting: https://www.psiquantum.com/news-import/psiquantum-announces-qref-and-bartiq-open-source-software-for-better-tools-libraries-and-datasets (20/23), chunk 1/9
+Extracting: https://www.psiquantum.com/news-import/psiquantum-announces-qref-and-bartiq-open-source-software-for-better-tools-libraries-and-datasets (20/23), chunk 2/9
+Extracting: https://www.psiquantum.com/news-import/psiquantum-announces-qref-and-bartiq-open-source-software-for-better-tools-libraries-and-datasets (20/23), chunk 3/9
+Extracting: https://www.psiquantum.com/news-import/psiquantum-announces-qref-and-bartiq-open-source-software-for-better-tools-libraries-and-datasets (20/23), chunk 4/9
+Extracting: https://www.psiquantum.com/news-import/psiquantum-announces-qref-and-bartiq-open-source-software-for-better-tools-libraries-and-datasets (20/23), chunk 5/9
+Extracting: https://www.psiquantum.com/news-import/psiquantum-announces-qref-and-bartiq-open-source-software-for-better-tools-libraries-and-datasets (20/23), chunk 6/9
+Extracting: https://www.psiquantum.com/news-import/psiquantum-announces-qref-and-bartiq-open-source-software-for-better-tools-libraries-and-datasets (20/23), chunk 7/9
+Extracting: https://www.psiquantum.com/news-import/psiquantum-announces-qref-and-bartiq-open-source-software-for-better-tools-libraries-and-datasets (20/23), chunk 8/9
+Extracting: https://www.psiquantum.com/news-import/psiquantum-announces-qref-and-bartiq-open-source-software-for-better-tools-libraries-and-datasets (20/23), chunk 9/9
+Reading page (21/23): https://www.psiquantum.com
+Extracting: https://www.psiquantum.com (21/23), chunk 1/10
+Extracting: https://www.psiquantum.com (21/23), chunk 2/10
+Extracting: https://www.psiquantum.com (21/23), chunk 3/10
+Extracting: https://www.psiquantum.com (21/23), chunk 4/10
+Extracting: https://www.psiquantum.com (21/23), chunk 5/10
+Extracting: https://www.psiquantum.com (21/23), chunk 6/10
+Extracting: https://www.psiquantum.com (21/23), chunk 7/10
+Extracting: https://www.psiquantum.com (21/23), chunk 8/10
+Extracting: https://www.psiquantum.com (21/23), chunk 9/10
+Extracting: https://www.psiquantum.com (21/23), chunk 10/10
+Reading page (22/23): https://www.psiquantum.com/featured-news/darpa-final-phase
+Extracting: https://www.psiquantum.com/featured-news/darpa-final-phase (22/23), chunk 1/10
+Extracting: https://www.psiquantum.com/featured-news/darpa-final-phase (22/23), chunk 2/10
+Extracting: https://www.psiquantum.com/featured-news/darpa-final-phase (22/23), chunk 3/10
+Extracting: https://www.psiquantum.com/featured-news/darpa-final-phase (22/23), chunk 4/10
+Extracting: https://www.psiquantum.com/featured-news/darpa-final-phase (22/23), chunk 5/10
+Extracting: https://www.psiquantum.com/featured-news/darpa-final-phase (22/23), chunk 6/10
+Extracting: https://www.psiquantum.com/featured-news/darpa-final-phase (22/23), chunk 7/10
+Extracting: https://www.psiquantum.com/featured-news/darpa-final-phase (22/23), chunk 8/10
+Extracting: https://www.psiquantum.com/featured-news/darpa-final-phase (22/23), chunk 9/10
+Extracting: https://www.psiquantum.com/featured-news/darpa-final-phase (22/23), chunk 10/10
+Reading page (23/23): http://www.psiquantum.com
+Extracting: http://www.psiquantum.com (23/23), chunk 1/10
+Extracting: http://www.psiquantum.com (23/23), chunk 2/10
+Extracting: http://www.psiquantum.com (23/23), chunk 3/10
+Extracting: http://www.psiquantum.com (23/23), chunk 4/10
+Extracting: http://www.psiquantum.com (23/23), chunk 5/10
+Extracting: http://www.psiquantum.com (23/23), chunk 6/10
+Extracting: http://www.psiquantum.com (23/23), chunk 7/10
+Extracting: http://www.psiquantum.com (23/23), chunk 8/10
+Extracting: http://www.psiquantum.com (23/23), chunk 9/10
+Extracting: http://www.psiquantum.com (23/23), chunk 10/10
+Saved 1_actor_results.json with 721 extracted records
+
+=== 2 clean actors ===
+Loaded 721 extracted records
+Saved 2_actor_nodes.json with 147 canonical actor nodes
+
+=== 3 interaction extraction ===
+Extracting interactions: https://www.psiquantum.com/about (1/23), chunk 3/20
+Extracting interactions: https://www.psiquantum.com/about (1/23), chunk 4/20
+Extracting interactions: https://www.psiquantum.com/about (1/23), chunk 5/20
+Extracting interactions: https://www.psiquantum.com/about (1/23), chunk 6/20
+Extracting interactions: https://www.psiquantum.com/about (1/23), chunk 7/20
+Extracting interactions: https://www.psiquantum.com/about (1/23), chunk 8/20
+Extracting interactions: https://www.psiquantum.com/about (1/23), chunk 9/20
+Extracting interactions: https://www.psiquantum.com/about (1/23), chunk 10/20
+Extracting interactions: https://www.psiquantum.com/about (1/23), chunk 11/20
+Extracting interactions: https://www.psiquantum.com/about (1/23), chunk 12/20
+Extracting interactions: https://www.psiquantum.com/about (1/23), chunk 13/20
+Extracting interactions: https://www.psiquantum.com/about (1/23), chunk 14/20
+
+========================================================================
+RUN STARTED  2026-05-29 14:51:55
+site_pipeline.py https://psiquantum.com --skip-actors
+========================================================================
+
+=== 0 crawl site (skipped via --skip-actors, reusing /home/lv/IDP/idpdeeptech/pipeline/site_outputs/psiquantum_com/crawl_output) ===
+
+=== 1 actor extraction (skipped, reusing 1_actor_results.json) ===
+
+=== 2 clean actors ===
+Loaded 721 extracted records
+Saved 2_actor_nodes.json with 147 canonical actor nodes
+
+=== 3 interaction extraction ===
+Extracting interactions: https://www.psiquantum.com/about (1/23), chunk 3/20

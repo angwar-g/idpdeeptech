@@ -24,6 +24,7 @@ Usage from the pipeline:
 
 from __future__ import annotations
 
+import os
 import subprocess
 import sys
 import time
@@ -116,15 +117,24 @@ def run_subprocess_logged(
     works (no waiting for the process to finish). Combines stderr into stdout
     so ordering is preserved. Returns the subprocess return code; raises
     CalledProcessError when check=True and the code is nonzero.
+
+    PYTHONUNBUFFERED=1 is injected into the child environment because Python's
+    default stdout is BLOCK-buffered when stdout is a pipe (not a TTY). Without
+    this, child print() calls accumulate ~4KB before reaching our reader, and
+    long extraction loops look frozen for minutes at a time.
     """
-    # Unbuffered child stdout so tqdm-style progress also flushes promptly.
+    # Force line-buffered stdout in the child, regardless of what the child does.
+    child_env = os.environ.copy()
+    child_env["PYTHONUNBUFFERED"] = "1"
+
     proc = subprocess.Popen(
         cmd,
         cwd=cwd,
         stdout=subprocess.PIPE,
         stderr=subprocess.STDOUT,
         text=True,
-        bufsize=1,  # line-buffered
+        bufsize=1,  # line-buffered on the parent side
+        env=child_env,
     )
 
     assert proc.stdout is not None  # for type checkers
