@@ -32,7 +32,14 @@ def main():
     )
     parser.add_argument(
         "--resume", action="store_true",
-        help="Skip PDFs whose pdf_outputs/<stem>/network.html already exists.",
+        help="(Default behavior, kept for explicitness.) Skip PDFs whose "
+             "pdf_outputs/<stem>/network.html already exists.",
+    )
+    parser.add_argument(
+        "--force", "-f", action="store_true",
+        help="Redo every PDF from scratch, clearing raw LLM outputs and progress "
+             "sidecars. Forwarded to each per-PDF pipeline run. Cannot combine "
+             "with --resume.",
     )
     parser.add_argument(
         "--workers", "-w", type=int, default=1,
@@ -42,6 +49,10 @@ def main():
              "a laptop, keep this at 1 unless you have a beefy GPU.",
     )
     args = parser.parse_args()
+
+    if args.resume and args.force:
+        sys.exit("Error: --resume and --force are mutually exclusive. "
+                 "--resume skips completed PDFs; --force redoes them.")
 
     root = Path(__file__).parent.resolve()
     pdf_dir = root / PDF_DIR
@@ -78,8 +89,11 @@ def main():
     plan: list[dict] = []
     for idx, pdf_path in enumerate(all_pdfs, start=1):
         out_dir = root / "pdf_outputs" / pdf_path.stem
-        if args.resume and (out_dir / "network.html").exists():
-            print(f"[{idx}/{total}] {pdf_path.name}: skipping (--resume, already done)")
+        # Default behavior: skip already-completed PDFs. --force overrides.
+        # --resume is now redundant (it's the default) but kept for explicitness.
+        already_done = (out_dir / "network.html").exists()
+        if already_done and not args.force:
+            print(f"[{idx}/{total}] {pdf_path.name}: skipping (already done; pass --force to redo)")
             skipped_existing.append(pdf_path.name)
             continue
         plan.append({
@@ -94,6 +108,8 @@ def main():
             str(root / "pdf_pipeline.py"),
             job["name"],
         ]
+        if args.force:
+            cmd.append("--force")
         try:
             subprocess.run(cmd, check=True)
             return job["name"], None

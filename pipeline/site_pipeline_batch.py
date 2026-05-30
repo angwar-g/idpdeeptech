@@ -78,7 +78,14 @@ def main():
     )
     parser.add_argument(
         "--resume", action="store_true",
-        help="Skip companies whose website/network.html already exists.",
+        help="(Default behavior, kept for explicitness.) Skip companies whose "
+             "website/network.html already exists.",
+    )
+    parser.add_argument(
+        "--force", "-f", action="store_true",
+        help="Redo every company from scratch, including the crawl and all LLM "
+             "steps. Forwarded to each per-company pipeline run. Cannot combine "
+             "with --resume.",
     )
     parser.add_argument(
         "--workers", "-w", type=int, default=1,
@@ -88,6 +95,10 @@ def main():
              "a laptop, keep this at 1 unless you have a beefy GPU.",
     )
     args = parser.parse_args()
+
+    if args.resume and args.force:
+        sys.exit("Error: --resume and --force are mutually exclusive. "
+                 "--resume skips completed companies; --force redoes them.")
 
     root = Path(__file__).parent.resolve()
     SITE_INPUT_DIR = root / "site_input"
@@ -160,8 +171,8 @@ def main():
             skipped_linkedin_in_website.append(name)
             continue
 
-        if args.resume and (out_dir / "network.html").exists():
-            print(f"[{idx}/{total}] {name}: skipping (--resume, already done)")
+        if (out_dir / "network.html").exists() and not args.force:
+            print(f"[{idx}/{total}] {name}: skipping (already done; pass --force to redo)")
             skipped_existing.append(name)
             continue
 
@@ -184,6 +195,8 @@ def main():
             "--max-pages", str(args.max_pages),
             "--out-dir", str(job["out_dir"]),
         ]
+        if args.force:
+            cmd.append("--force")
         try:
             subprocess.run(cmd, check=True)
             return job["name"], None

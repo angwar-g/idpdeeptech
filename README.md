@@ -13,6 +13,7 @@ python3 pdf_pipeline.py <pdf_filename>
 | `--skip-actors` | `-s` | Skip the actor LLM step. Re-runs `clean_actors` and continues normally. Requires `1_actor_results.json`. |
 | `--skip-interactions` | `-i` | Skip everything through the interactions LLM. Only re-runs `clean_interactions` + helix + viz. Requires `1_actor_results.json`, `2_actor_nodes.json`, and `3_interaction_results.json`. Implies `--skip-actors`. |
 | `--start-page N` | `-p N` | Force the active LLM step to start at page N (1-indexed). Goes to actor LLM by default, or to interactions LLM when `-s` is also set. Cannot combine with `-i`. |
+| `--force` | `-f` | Re-run even if `network.html` already exists. Without this, an existing run triggers an early exit to avoid accidentally redoing expensive work. |
 
 **Examples**
 
@@ -41,6 +42,7 @@ python3 site_pipeline.py <url>
 | `--skip-actors` | `-s` | Skip the actor LLM step. Re-runs `clean_actors` and continues normally. Requires `1_actor_results.json`. Implies `--skip-crawl`. |
 | `--skip-interactions` | `-i` | Skip everything through the interactions LLM. Only re-runs `clean_interactions` + helix + viz. Requires `1_actor_results.json`, `2_actor_nodes.json`, and `3_interaction_results.json`. Implies `--skip-actors` (and `--skip-crawl`). |
 | `--start-page N` | `-p N` | Force the active LLM step to start at URL ordinal N (1-indexed, in sorted crawl order). Goes to actor LLM by default, or to interactions LLM when `-s` is also set. Cannot combine with `-i`. |
+| `--force` | `-f` | Re-run even if `network.html` already exists. Without this, an existing run triggers an early exit to avoid accidentally redoing the crawl + LLM work. |
 | `--out-dir PATH` | | Explicit output directory. Overrides the auto-derived `site_outputs/<domain>/` path. Used internally by the batch driver — you typically don't need this for one-off runs. |
 
 **Examples**
@@ -114,21 +116,22 @@ Check the live model catalog at `https://developers.cloudflare.com/workers-ai/mo
 python3 pdf_pipeline_batch.py
 ```
 
-Runs `pdf_pipeline.py` for every `*.pdf` in `pdf_input/`.
+Runs `pdf_pipeline.py` for every `*.pdf` in `pdf_input/`. **Already-completed PDFs are skipped by default** (anything with an existing `pdf_outputs/<stem>/network.html`).
 
 | Flag | Shortcut | Description |
 |---|---|---|
 | `--only NAME ...` | | Restrict to specific PDFs (filename or stem). |
-| `--resume` | | Skip PDFs whose `pdf_outputs/<stem>/network.html` already exists. |
 | `--workers N` | `-w N` | Run N PDFs in parallel (default 1). |
+| `--force` | `-f` | Redo every queued PDF from scratch, clearing raw LLM outputs and progress sidecars. Forwarded to each per-PDF pipeline. Cannot combine with `--resume`. |
+| `--resume` | | (Default behavior, kept for explicitness.) Skip PDFs whose `network.html` already exists. |
 
 **Examples**
 
 ```
-python3 pdf_pipeline_batch.py
-python3 pdf_pipeline_batch.py --workers 4
-python3 pdf_pipeline_batch.py --only china25.pdf japan25.pdf
-python3 pdf_pipeline_batch.py --resume
+python3 pdf_pipeline_batch.py                            # all not-yet-done PDFs, sequential
+python3 pdf_pipeline_batch.py --workers 4                # 4 PDFs in parallel
+python3 pdf_pipeline_batch.py --only china25.pdf         # one specific PDF
+python3 pdf_pipeline_batch.py --workers 4 --force        # redo everything
 ```
 
 ---
@@ -144,7 +147,7 @@ Each worker runs an independent pipeline subprocess chain for one document. Work
 
 **Trade-off:** terminal output from parallel workers interleaves. Each document's clean trace is still in its own `<output_dir>/run.log` — so for clean per-document logs, read the log files after the fact rather than watching the terminal.
 
-**Crash recovery still works.** The progress sidecar mechanism is per-document, so a crash in one worker doesn't affect the others. `--resume` skips fully completed documents on the next batch invocation.
+**Crash recovery still works.** The progress sidecar mechanism is per-document, so a crash in one worker doesn't affect the others. Re-running the bare command skips already-completed documents (default behavior).
 
 ---
 
@@ -166,24 +169,27 @@ Reads `site_input/companies.json` by default. The JSON is shaped like:
 }
 ```
 
+**Already-completed companies are skipped by default** (anything with an existing `site_outputs/<slug>/website/network.html`).
+
 | Flag | Shortcut | Description |
 |---|---|---|
 | `config` (positional) | | Optional path to JSON file (default: `site_input/companies.json`). Bare filenames are looked up in `site_input/`. |
 | `--crawl N` | `-c N` | Crawl depth per company (default `2`). |
 | `--max-pages N` | | Max pages per company (default `10`). |
 | `--only NAME ...` | | Restrict to specific JSON keys (the human-readable names). Case- and punctuation-insensitive. |
-| `--resume` | | Skip any company whose `website/network.html` already exists. |
 | `--workers N` | `-w N` | Run N companies in parallel (default 1). |
+| `--force` | `-f` | Redo every queued company from scratch (re-crawl + full LLM). Forwarded to each per-company pipeline. Cannot combine with `--resume`. |
+| `--resume` | | (Default behavior, kept for explicitness.) Skip companies whose `website/network.html` already exists. |
 
 **Examples**
 
 ```
-python3 site_pipeline_batch.py
-python3 site_pipeline_batch.py --crawl 3 --max-pages 30
+python3 site_pipeline_batch.py                              # all not-yet-done, sequential
+python3 site_pipeline_batch.py --workers 4                  # 4 companies in parallel
 python3 site_pipeline_batch.py --only Psiquantum Quandela
 python3 site_pipeline_batch.py --only "D-Wave Quantum"
-python3 site_pipeline_batch.py --resume --workers 4
-python3 site_pipeline_batch.py myconfig.json    # use a different config in site_input/
+python3 site_pipeline_batch.py --workers 4 --force          # re-crawl + redo everything
+python3 site_pipeline_batch.py myconfig.json                # use a different config in site_input/
 ```
 
 `--only` matches against the **JSON keys** (the human-readable name on the left of each entry), not URLs or output folder slugs. The match is tolerant: case-insensitive, ignores spaces, dashes, and punctuation. So `Psiquantum`, `psiquantum`, and `PSI-QUANTUM` all match the JSON key `"Psiquantum"`. Multi-word names should be quoted: `--only "D-Wave Quantum"`.
@@ -198,7 +204,7 @@ LinkedIn is intentionally not crawled — corporate LinkedIn pages serve an auth
 - `Quantum Computing Inc.` → `quantum_computing_inc`
 - `1Qbit` → `1qbit`
 
-**Behavior on failure:** one company crashing does not stop the batch. Failures are appended to `site_outputs/batch_failures.log` and a summary prints at the end. Resume with `--resume` to skip already-completed companies.
+**Behavior on failure:** one company crashing does not stop the batch. Failures are appended to `site_outputs/batch_failures.log` and a summary prints at the end. Simply re-running the bare command picks up where it left off (default-skip).
 
 **Edge cases automatically skipped, with a summary at the end:**
 - Empty / missing `website_link`
@@ -219,7 +225,7 @@ LinkedIn is intentionally not crawled — corporate LinkedIn pages serve an auth
 | `5_edges.json` | Edges + functional-space classification | no |
 | `network.html` | Interactive pyvis visualisation | — |
 
-The two LLM steps (1 and 3) are the slow ones. Both save incrementally after each page (PDFs) or each URL (sites), so Ctrl+C or a mid-run crash keeps prior work on disk — exactly what `-s` and `-i` exist to recover from.
+The two LLM steps (1 and 3) are the slow ones. Both save incrementally after each page (PDFs) or each URL (sites), and write a progress sidecar — so a crash or Ctrl+C keeps prior work on disk, and just re-running the same command picks up where it stopped. See the Resuming after a crash section below.
 
 ---
 
@@ -227,35 +233,63 @@ The two LLM steps (1 and 3) are the slow ones. Both save incrementally after eac
 
 | Situation | Command |
 |---|---|
-| Ctrl+C'd the actor LLM partway, want to keep what was saved | `python3 pdf_pipeline.py same.pdf -s` (or `site_pipeline.py same_url -s`) |
-| Ctrl+C'd the interactions LLM partway | `python3 pdf_pipeline.py same.pdf -i` (or `site_pipeline.py same_url -i`) |
-| Batch crashed partway through, want to keep going | `python3 site_pipeline_batch.py config.json --resume` |
-| Want to tweak `clean_actors.py` and re-run from cleaning onwards | `python3 pdf_pipeline.py same.pdf -s` (or site equivalent) |
-| Want to tweak only `clean_interactions.py` and re-run from there | `python3 pdf_pipeline.py same.pdf -i` (or site equivalent) |
-| Want to re-crawl with different depth | rerun without `--skip-crawl` (wipes `crawl_output/`) |
+| Laptop crashed / Ctrl+C mid-extraction | Just re-run the same command. Auto-resume picks up at the page/URL where it stopped. |
+| Batch crashed partway through | `python3 pdf_pipeline_batch.py --workers 4` (or site equivalent) — default-skip handles it. |
+| Want to tweak `clean_actors.py` and re-run from cleaning onwards | `python3 pdf_pipeline.py same.pdf -s` |
+| Want to tweak only `clean_interactions.py` and re-run from there | `python3 pdf_pipeline.py same.pdf -i` |
+| Want to redo a single completed PDF from scratch | `python3 pdf_pipeline.py same.pdf --force` |
+| Want to redo every completed PDF from scratch | `python3 pdf_pipeline_batch.py --workers 4 --force` |
+| Want to re-crawl a site with different depth | `python3 site_pipeline.py same_url -c 3 --force` |
 | Want to re-run only the downstream stuff (helix + viz) | run `helix.py` and `network.py` directly in the output folder |
 
 ---
 
 ## Resuming after a crash
 
-The actor and interactions LLM scripts (`feed_pdf`, `feed_site`, `interactions_pdf`, `interactions_site`) both write a small progress sidecar alongside their output:
+The pipelines skip already-done work at three independent levels of granularity. You don't have to manage any of this — just re-run your command and everything composes correctly. This section explains *what* gets skipped *where* so you can predict behavior.
+
+### Level 1: batch driver skips completed documents
+
+`pdf_pipeline_batch.py` and `site_pipeline_batch.py` check `network.html` per document before queueing. If it exists, the whole document is skipped (and not handed to a worker at all). **This is the default**; `--force` overrides it.
+
+### Level 2: per-document pipeline guard
+
+`pdf_pipeline.py` and `site_pipeline.py` do the same check for their own document at startup: if `network.html` exists and you didn't pass `--force` or any skip flag (`-s`/`-i`), they exit immediately. This protects the standalone single-document scripts. `--force` bypasses it.
+
+### Level 3: per-page auto-resume inside the LLM steps
+
+`feed_pdf.py`, `feed_site.py`, `interactions_pdf.py`, and `interactions_site.py` each write a progress sidecar next to their output:
 
 ```
-1_actor_results.json       <- the actual data
+1_actor_results.json            <- the actual extracted data
 1_actor_results.progress.json   <- which (source, page) pairs are done
 ```
 
-**Auto-resume.** Just re-run with the same skip flag you'd normally use after a crash (`-s` to redo cleaning then continue interactions, or run the pipeline from scratch — both work). The script reads the sidecar, sees which pages were already fully processed, and skips them. If every expected page is already done, it prints "Nothing to do" and exits. No manual counting required.
+On startup, each script reads the sidecar and skips pages already marked done. The LLM only runs on missing pages. If every expected page is already covered, the script prints "Nothing to do" and exits.
 
-**Manual override: `-p N` / `--start-page N`.** Force a restart from page N (or URL ordinal N for sites), ignoring the sidecar. Useful when:
-- You changed the prompt and want to re-extract from page N onwards.
-- You suspect a page got partially processed and want to redo it cleanly.
-- You want to skip a known-problematic page entirely (use a higher N and then go back to it later).
+**Where this kicks in:** if your laptop dies mid-`feed_pdf.py` on page 7 of 20, the sidecar marks pages 1-6 as done. Next run resumes at page 7. Pages 1-6 are not re-extracted.
 
-The flag routes to whichever LLM step is active for this run: actor LLM by default, interactions LLM when `-s` is also passed. Combining `-p` with `-i` errors out — `-i` skips both LLMs, so there's nothing to start.
+**Backfill from old runs.** If the sidecar is missing but the raw data file exists (from runs made before sidecars existed, or after manually deleting a sidecar), the resume helper reconstructs the sidecar from the data file's `(source_document, page)` pairs on next startup. Old folders won't accidentally re-trigger hours of LLM extraction.
 
-**Force a complete redo.** Delete the progress sidecar (`rm 1_actor_results.progress.json`) and the script will re-process every page. The raw JSON is also written fresh from whatever incremental state was there.
+### How the three levels interact
+
+A typical overnight crash scenario: you ran `pdf_pipeline_batch.py --workers 4` last night on 12 PDFs. By morning, 7 finished, 1 crashed mid-extraction, 4 weren't started. You re-run the same command:
+
+- The 7 completed PDFs → Level 1 skips them (their `network.html` exists).
+- The 1 crashed PDF → Level 1 queues it (no `network.html`). The per-PDF pipeline runs `feed_pdf.py`, which Level 3 sees the partial sidecar and picks up at the page after the crash.
+- The 4 not-yet-started PDFs → Level 1 queues them, Level 3 starts at page 1 each.
+
+No flags needed. Just re-run.
+
+### Manual override: `-p N` / `--start-page N`
+
+If you want to force a restart at a specific page (e.g. after tweaking a prompt), pass `-p N`. This ignores the sidecar and starts at page N regardless of what's already done. Routes to the actor LLM by default, or to the interactions LLM when `-s` is also passed.
+
+### Force a complete redo
+
+Easiest way: `--force` on the pipeline (single or batch). This deletes the raw LLM data and progress sidecars before starting, so Level 3 sees empty state and processes every page.
+
+Manual alternative: `rm -rf pdf_outputs/<stem>/` then re-run. Wipes everything including the intermediate cleaned files.
 
 ---
 
