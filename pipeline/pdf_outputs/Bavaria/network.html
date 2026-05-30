@@ -1,0 +1,127 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+            <script src="lib/bindings/utils.js"></script>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/dist/vis-network.min.css" integrity="sha512-WgxfT5LWjfszlPHXRmBWHkV2eceiWTOBvrKCNbdgDYTHrT2AeLCGbF4sZlZw3UMN3WtL0tGUoIAKsu8mllg/XA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/vis-network.min.js" integrity="sha512-LnvoEWDFrqGHlHmDD2101OrLcbsfkrzoSpvtSQtxK3RMnRV0eOkhhBN2dXHKRrUU8p2DGRTk35n4O8nWSVe1mQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            
+        
+<center>
+<h1></h1>
+</center>
+
+<!-- <link rel="stylesheet" href="../node_modules/vis/dist/vis.min.css" type="text/css" />
+<script type="text/javascript" src="../node_modules/vis/dist/vis.js"> </script>-->
+        <link
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+          crossorigin="anonymous"
+        />
+        <script
+          src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+          crossorigin="anonymous"
+        ></script>
+
+
+        <center>
+          <h1></h1>
+        </center>
+        <style type="text/css">
+
+             #mynetwork {
+                 width: 100%;
+                 height: 850px;
+                 background-color: #ffffff;
+                 border: 1px solid lightgray;
+                 position: relative;
+                 float: left;
+             }
+
+             
+
+             
+
+             
+        </style>
+    </head>
+
+
+    <body>
+        <div class="card" style="width: 100%">
+            
+            
+            <div id="mynetwork" class="card-body"></div>
+        </div>
+
+        
+        
+
+        <script type="text/javascript">
+
+              // initialize global variables.
+              var edges;
+              var nodes;
+              var allNodes;
+              var allEdges;
+              var nodeColors;
+              var originalNodes;
+              var network;
+              var container;
+              var options, data;
+              var filter = {
+                  item : '',
+                  property : '',
+                  value : []
+              };
+
+              
+
+              
+
+              // This method is responsible for drawing the graph, returns the drawn network
+              function drawGraph() {
+                  var container = document.getElementById('mynetwork');
+
+                  
+
+                  // parsing and collecting nodes and edges from the python
+                  nodes = new vis.DataSet([{"category": "large enterprises", "color": "#F58518", "font": {"size": 18}, "helix": "Industry", "id": "airbus", "label": "Airbus", "shape": "dot", "size": 18, "title": "\u003cb\u003eAirbus\u003c/b\u003e\u003cbr\u003eHelix: Industry\u003cbr\u003eCategory: large enterprises\u003cbr\u003eReview: False"}, {"category": "large enterprises", "color": "#F58518", "font": {"size": 18}, "helix": "Industry", "id": "automobil und aerospace sektor", "label": "Automobil- und Aerospace-Sektor", "shape": "dot", "size": 18, "title": "\u003cb\u003eAutomobil- und Aerospace-Sektor\u003c/b\u003e\u003cbr\u003eHelix: Industry\u003cbr\u003eCategory: large enterprises\u003cbr\u003eReview: False"}, {"category": "country", "color": "#999999", "font": {"size": 18}, "helix": "Unknown", "id": "bavaria", "label": "Bavaria", "shape": "dot", "size": 18, "title": "\u003cb\u003eBavaria\u003c/b\u003e\u003cbr\u003eHelix: Unknown\u003cbr\u003eCategory: country\u003cbr\u003eReview: True"}, {"category": "research institutes", "color": "#4C78A8", "font": {"size": 18}, "helix": "Academia", "id": "bayerische akademie der wissenschaften", "label": "Bayerische Akademie der Wissenschaften", "shape": "dot", "size": 18, "title": "\u003cb\u003eBayerische Akademie der Wissenschaften\u003c/b\u003e\u003cbr\u003eHelix: Academia\u003cbr\u003eCategory: research institutes\u003cbr\u003eReview: False"}, {"category": "universities", "color": "#4C78A8", "font": {"size": 18}, "helix": "Academia", "id": "bayerische akteure", "label": "Bayerische Akteure", "shape": "dot", "size": 18, "title": "\u003cb\u003eBayerische Akteure\u003c/b\u003e\u003cbr\u003eHelix: Academia\u003cbr\u003eCategory: universities\u003cbr\u003eReview: False"}, {"category": "research institutes", "color": "#4C78A8", "font": {"size": 18}, "helix": "Academia", "id": "bayerische forschung", "label": "Bayerische Forschung", "shape": "dot", "size": 18, "title": "\u003cb\u003eBayerische Forschung\u003c/b\u003e\u003cbr\u003eHelix: Academia\u003cbr\u003eCategory: research institutes\u003cbr\u003eReview: False"}, {"category": "research institutes", "color": "#4C78A8", "font": {"size": 18}, "helix": "Academia", "id": "bayerische forschungslandschaft", "label": "Bayerische Forschungslandschaft", "shape": "dot", "size": 18, "title": "\u003cb\u003eBayerische Forschungslandschaft\u003c/b\u003e\u003cbr\u003eHelix: Academia\u003cbr\u003eCategory: research institutes\u003cbr\u003eReview: False"}, {"category": "sub-national government institutions", "color": "#54A24B", "font": {"size": 18}, "helix": "Government", "id": "bayerische landesregierung", "label": "Bayerische Landesregierung", "shape": "dot", "size": 18, "title": "\u003cb\u003eBayerische Landesregierung\u003c/b\u003e\u003cbr\u003eHelix: Government\u003cbr\u003eCategory: sub-national government institutions\u003cbr\u003eReview: False"}, {"category": "sub-national government institutions", "color": "#54A24B", "font": {"size": 18}, "helix": "Government", "id": "bayerische staatsregierung", "label": "Bayerische Staatsregierung", "shape": "dot", "size": 18, "title": "\u003cb\u003eBayerische Staatsregierung\u003c/b\u003e\u003cbr\u003eHelix: Government\u003cbr\u003eCategory: sub-national government institutions\u003cbr\u003eReview: False"}, {"category": "national government institutions", "color": "#54A24B", "font": {"size": 18}, "helix": "Government", "id": "bayerisches staatsministerium f r digitales", "label": "Bayerisches Staatsministerium f\u00fcr Digitales", "shape": "dot", "size": 18, "title": "\u003cb\u003eBayerisches Staatsministerium f\u00fcr Digitales\u003c/b\u003e\u003cbr\u003eHelix: Government\u003cbr\u003eCategory: national government institutions\u003cbr\u003eReview: False"}, {"category": "national government institutions", "color": "#54A24B", "font": {"size": 18}, "helix": "Government", "id": "bayerisches staatsministeriums f r wissenschaft und kunst", "label": "Bayerisches Staatsministeriums f\u00fcr Wissenschaft und Kunst", "shape": "dot", "size": 18, "title": "\u003cb\u003eBayerisches Staatsministeriums f\u00fcr Wissenschaft und Kunst\u003c/b\u003e\u003cbr\u003eHelix: Government\u003cbr\u003eCategory: national government institutions\u003cbr\u003eReview: False"}, {"category": "country", "color": "#999999", "font": {"size": 18}, "helix": "Unknown", "id": "bayern", "label": "Bayern", "shape": "dot", "size": 18, "title": "\u003cb\u003eBayern\u003c/b\u003e\u003cbr\u003eHelix: Unknown\u003cbr\u003eCategory: country\u003cbr\u003eReview: True"}, {"category": "business support institutions", "color": "#E45756", "font": {"size": 18}, "helix": "Intermediary", "id": "bayern innovativ gmbh", "label": "Bayern Innovativ GmbH", "shape": "dot", "size": 18, "title": "\u003cb\u003eBayern Innovativ GmbH\u003c/b\u003e\u003cbr\u003eHelix: Intermediary\u003cbr\u003eCategory: business support institutions\u003cbr\u003eReview: False"}, {"category": "large enterprises", "color": "#F58518", "font": {"size": 18}, "helix": "Industry", "id": "bmw", "label": "BMW", "shape": "dot", "size": 18, "title": "\u003cb\u003eBMW\u003c/b\u003e\u003cbr\u003eHelix: Industry\u003cbr\u003eCategory: large enterprises\u003cbr\u003eReview: False"}, {"category": "national government institutions", "color": "#54A24B", "font": {"size": 18}, "helix": "Government", "id": "bundes", "label": "Bundes", "shape": "dot", "size": 18, "title": "\u003cb\u003eBundes\u003c/b\u003e\u003cbr\u003eHelix: Government\u003cbr\u003eCategory: national government institutions\u003cbr\u003eReview: False"}, {"category": "small and medium-sized enterprises", "color": "#F58518", "font": {"size": 18}, "helix": "Industry", "id": "datenbanken", "label": "Datenbanken", "shape": "dot", "size": 18, "title": "\u003cb\u003eDatenbanken\u003c/b\u003e\u003cbr\u003eHelix: Industry\u003cbr\u003eCategory: small and medium-sized enterprises\u003cbr\u003eReview: False"}, {"category": "research institutes", "color": "#4C78A8", "font": {"size": 18}, "helix": "Academia", "id": "deutsches zentrum f r luft und raumfahrt e v", "label": "Deutsches Zentrum f\u00fcr Luft- und Raumfahrt e. V. (DLR)", "shape": "dot", "size": 18, "title": "\u003cb\u003eDeutsches Zentrum f\u00fcr Luft- und Raumfahrt e. V. (DLR)\u003c/b\u003e\u003cbr\u003eHelix: Academia\u003cbr\u003eCategory: research institutes\u003cbr\u003eReview: False"}, {"category": "large enterprises", "color": "#F58518", "font": {"size": 18}, "helix": "Industry", "id": "energieversorger", "label": "Energieversorger", "shape": "dot", "size": 18, "title": "\u003cb\u003eEnergieversorger\u003c/b\u003e\u003cbr\u003eHelix: Industry\u003cbr\u003eCategory: large enterprises\u003cbr\u003eReview: False"}, {"category": "supranational government institutions", "color": "#54A24B", "font": {"size": 18}, "helix": "Government", "id": "europa", "label": "Europa", "shape": "dot", "size": 18, "title": "\u003cb\u003eEuropa\u003c/b\u003e\u003cbr\u003eHelix: Government\u003cbr\u003eCategory: supranational government institutions\u003cbr\u003eReview: False"}, {"category": "research institutes", "color": "#4C78A8", "font": {"size": 18}, "helix": "Academia", "id": "forschungsinstitute", "label": "Forschungsinstitute", "shape": "dot", "size": 18, "title": "\u003cb\u003eForschungsinstitute\u003c/b\u003e\u003cbr\u003eHelix: Academia\u003cbr\u003eCategory: research institutes\u003cbr\u003eReview: False"}, {"category": "research institutes", "color": "#4C78A8", "font": {"size": 18}, "helix": "Academia", "id": "fraunhofer einrichtung f r mikrosysteme und festk rper technologien", "label": "Fraunhofer-Einrichtung f\u00fcr Mikrosysteme und Festk\u00f6rper-Technologien (EMFT)", "shape": "dot", "size": 18, "title": "\u003cb\u003eFraunhofer-Einrichtung f\u00fcr Mikrosysteme und Festk\u00f6rper-Technologien (EMFT)\u003c/b\u003e\u003cbr\u003eHelix: Academia\u003cbr\u003eCategory: research institutes\u003cbr\u003eReview: False"}, {"category": "research institutes", "color": "#4C78A8", "font": {"size": 18}, "helix": "Academia", "id": "fraunhofer gesellschaft", "label": "Fraunhofer-Gesellschaft", "shape": "dot", "size": 18, "title": "\u003cb\u003eFraunhofer-Gesellschaft\u003c/b\u003e\u003cbr\u003eHelix: Academia\u003cbr\u003eCategory: research institutes\u003cbr\u003eReview: False"}, {"category": "business support institutions", "color": "#E45756", "font": {"size": 18}, "helix": "Intermediary", "id": "gartner", "label": "Gartner", "shape": "dot", "size": 18, "title": "\u003cb\u003eGartner\u003c/b\u003e\u003cbr\u003eHelix: Intermediary\u003cbr\u003eCategory: business support institutions\u003cbr\u003eReview: False"}, {"category": "large enterprises", "color": "#F58518", "font": {"size": 18}, "helix": "Industry", "id": "google", "label": "Google", "shape": "dot", "size": 18, "title": "\u003cb\u003eGoogle\u003c/b\u003e\u003cbr\u003eHelix: Industry\u003cbr\u003eCategory: large enterprises\u003cbr\u003eReview: False"}, {"category": "research institutes", "color": "#4C78A8", "font": {"size": 18}, "helix": "Academia", "id": "h kagermann et al", "label": "H. Kagermann et. al. (acatech IMPULS)", "shape": "dot", "size": 18, "title": "\u003cb\u003eH. Kagermann et. al. (acatech IMPULS)\u003c/b\u003e\u003cbr\u003eHelix: Academia\u003cbr\u003eCategory: research institutes\u003cbr\u003eReview: False"}, {"category": "universities", "color": "#4C78A8", "font": {"size": 18}, "helix": "Academia", "id": "hochschulen", "label": "Hochschulen", "shape": "dot", "size": 18, "title": "\u003cb\u003eHochschulen\u003c/b\u003e\u003cbr\u003eHelix: Academia\u003cbr\u003eCategory: universities\u003cbr\u003eReview: False"}, {"category": "large enterprises", "color": "#F58518", "font": {"size": 18}, "helix": "Industry", "id": "ibm", "label": "IBM", "shape": "dot", "size": 18, "title": "\u003cb\u003eIBM\u003c/b\u003e\u003cbr\u003eHelix: Industry\u003cbr\u003eCategory: large enterprises\u003cbr\u003eReview: False"}, {"category": "large enterprises", "color": "#F58518", "font": {"size": 18}, "helix": "Industry", "id": "infineon", "label": "Infineon", "shape": "dot", "size": 18, "title": "\u003cb\u003eInfineon\u003c/b\u003e\u003cbr\u003eHelix: Industry\u003cbr\u003eCategory: large enterprises\u003cbr\u003eReview: False"}, {"category": "research institutes", "color": "#4C78A8", "font": {"size": 18}, "helix": "Academia", "id": "institute und forschung", "label": "Institute und Forschung", "shape": "dot", "size": 18, "title": "\u003cb\u003eInstitute und Forschung\u003c/b\u003e\u003cbr\u003eHelix: Academia\u003cbr\u003eCategory: research institutes\u003cbr\u003eReview: False"}, {"category": "universities", "color": "#4C78A8", "font": {"size": 18}, "helix": "Academia", "id": "lmu", "label": "LMU (Ludwig-Maximilians-Universit\u00e4t M\u00fcnchen)", "shape": "dot", "size": 18, "title": "\u003cb\u003eLMU (Ludwig-Maximilians-Universit\u00e4t M\u00fcnchen)\u003c/b\u003e\u003cbr\u003eHelix: Academia\u003cbr\u003eCategory: universities\u003cbr\u003eReview: False"}, {"category": "research institutes", "color": "#4C78A8", "font": {"size": 18}, "helix": "Academia", "id": "max planck gesellschaft", "label": "Max-Planck-Gesellschaft", "shape": "dot", "size": 18, "title": "\u003cb\u003eMax-Planck-Gesellschaft\u003c/b\u003e\u003cbr\u003eHelix: Academia\u003cbr\u003eCategory: research institutes\u003cbr\u003eReview: False"}, {"category": "small and medium-sized enterprises", "color": "#F58518", "font": {"size": 18}, "helix": "Industry", "id": "mikroelektronik", "label": "Mikroelektronik", "shape": "dot", "size": 18, "title": "\u003cb\u003eMikroelektronik\u003c/b\u003e\u003cbr\u003eHelix: Industry\u003cbr\u003eCategory: small and medium-sized enterprises\u003cbr\u003eReview: False"}, {"category": "universities", "color": "#4C78A8", "font": {"size": 18}, "helix": "Academia", "id": "mint f cher", "label": "MINT-F\u00e4cher", "shape": "dot", "size": 18, "title": "\u003cb\u003eMINT-F\u00e4cher\u003c/b\u003e\u003cbr\u003eHelix: Academia\u003cbr\u003eCategory: universities\u003cbr\u003eReview: False"}, {"category": "universities", "color": "#4C78A8", "font": {"size": 18}, "helix": "Academia", "id": "mobilit t", "label": "Mobilit\u00e4t", "shape": "dot", "size": 18, "title": "\u003cb\u003eMobilit\u00e4t\u003c/b\u003e\u003cbr\u003eHelix: Academia\u003cbr\u003eCategory: universities\u003cbr\u003eReview: False"}, {"category": "business support institutions", "color": "#E45756", "font": {"size": 18}, "helix": "Intermediary", "id": "munich quantum valley", "label": "Munich Quantum Valley", "shape": "dot", "size": 18, "title": "\u003cb\u003eMunich Quantum Valley\u003c/b\u003e\u003cbr\u003eHelix: Intermediary\u003cbr\u003eCategory: business support institutions\u003cbr\u003eReview: False"}, {"category": "small and medium-sized enterprises", "color": "#F58518", "font": {"size": 18}, "helix": "Industry", "id": "novarion qmware", "label": "Novarion/QMWare", "shape": "dot", "size": 18, "title": "\u003cb\u003eNovarion/QMWare\u003c/b\u003e\u003cbr\u003eHelix: Industry\u003cbr\u003eCategory: small and medium-sized enterprises\u003cbr\u003eReview: False"}, {"category": "business support institutions", "color": "#E45756", "font": {"size": 18}, "helix": "Intermediary", "id": "partnerschaften i netzwerke i technologietransfer", "label": "Partnerschaften I Netzwerke I Technologietransfer", "shape": "dot", "size": 18, "title": "\u003cb\u003ePartnerschaften I Netzwerke I Technologietransfer\u003c/b\u003e\u003cbr\u003eHelix: Intermediary\u003cbr\u003eCategory: business support institutions\u003cbr\u003eReview: False"}, {"category": "individual", "color": "#999999", "font": {"size": 18}, "helix": "Unknown", "id": "prof erwartungsmanagement", "label": "Prof. Erwartungsmanagement", "shape": "dot", "size": 18, "title": "\u003cb\u003eProf. Erwartungsmanagement\u003c/b\u003e\u003cbr\u003eHelix: Unknown\u003cbr\u003eCategory: individual\u003cbr\u003eReview: True"}, {"category": "research institutes", "color": "#4C78A8", "font": {"size": 18}, "helix": "Academia", "id": "qiskit", "label": "qiskit", "shape": "dot", "size": 18, "title": "\u003cb\u003eqiskit\u003c/b\u003e\u003cbr\u003eHelix: Academia\u003cbr\u003eCategory: research institutes\u003cbr\u003eReview: False"}, {"category": "research institutes", "color": "#4C78A8", "font": {"size": 18}, "helix": "Academia", "id": "qt zentrum", "label": "QT-Zentrum(en)", "shape": "dot", "size": 18, "title": "\u003cb\u003eQT-Zentrum(en)\u003c/b\u003e\u003cbr\u003eHelix: Academia\u003cbr\u003eCategory: research institutes\u003cbr\u003eReview: False"}, {"category": "technology", "color": "#999999", "font": {"size": 18}, "helix": "Unknown", "id": "quanten volume", "label": "Quanten-Volume", "shape": "dot", "size": 18, "title": "\u003cb\u003eQuanten-Volume\u003c/b\u003e\u003cbr\u003eHelix: Unknown\u003cbr\u003eCategory: technology\u003cbr\u003eReview: True"}, {"category": "technology", "color": "#999999", "font": {"size": 18}, "helix": "Unknown", "id": "quantenrepeaters", "label": "Quantenrepeaters", "shape": "dot", "size": 18, "title": "\u003cb\u003eQuantenrepeaters\u003c/b\u003e\u003cbr\u003eHelix: Unknown\u003cbr\u003eCategory: technology\u003cbr\u003eReview: True"}, {"category": "small and medium-sized enterprises", "color": "#F58518", "font": {"size": 18}, "helix": "Industry", "id": "quantensoft ware und algorithmenplattformen", "label": "Quantensoft-ware- und Algorithmenplattformen", "shape": "dot", "size": 18, "title": "\u003cb\u003eQuantensoft-ware- und Algorithmenplattformen\u003c/b\u003e\u003cbr\u003eHelix: Industry\u003cbr\u003eCategory: small and medium-sized enterprises\u003cbr\u003eReview: False"}, {"category": "universities", "color": "#4C78A8", "font": {"size": 18}, "helix": "Academia", "id": "quantentech", "label": "QuantenTech", "shape": "dot", "size": 18, "title": "\u003cb\u003eQuantenTech\u003c/b\u003e\u003cbr\u003eHelix: Academia\u003cbr\u003eCategory: universities\u003cbr\u003eReview: False"}, {"category": "small and medium-sized enterprises", "color": "#F58518", "font": {"size": 18}, "helix": "Industry", "id": "quantum business network ug", "label": "Quantum Business Network UG", "shape": "dot", "size": 18, "title": "\u003cb\u003eQuantum Business Network UG\u003c/b\u003e\u003cbr\u003eHelix: Industry\u003cbr\u003eCategory: small and medium-sized enterprises\u003cbr\u003eReview: False"}, {"category": "research institutes", "color": "#4C78A8", "font": {"size": 18}, "helix": "Academia", "id": "research institutes", "label": "Research Institutes", "shape": "dot", "size": 18, "title": "\u003cb\u003eResearch Institutes\u003c/b\u003e\u003cbr\u003eHelix: Academia\u003cbr\u003eCategory: research institutes\u003cbr\u003eReview: False"}, {"category": "large enterprises", "color": "#F58518", "font": {"size": 18}, "helix": "Industry", "id": "siemens", "label": "Siemens", "shape": "dot", "size": 18, "title": "\u003cb\u003eSiemens\u003c/b\u003e\u003cbr\u003eHelix: Industry\u003cbr\u003eCategory: large enterprises\u003cbr\u003eReview: False"}, {"category": "national government institutions", "color": "#54A24B", "font": {"size": 18}, "helix": "Government", "id": "staatsregierung", "label": "Staatsregierung", "shape": "dot", "size": 18, "title": "\u003cb\u003eStaatsregierung\u003c/b\u003e\u003cbr\u003eHelix: Government\u003cbr\u003eCategory: national government institutions\u003cbr\u003eReview: False"}, {"category": "small and medium-sized enterprises", "color": "#F58518", "font": {"size": 18}, "helix": "Industry", "id": "start ups", "label": "Start-ups", "shape": "dot", "size": 18, "title": "\u003cb\u003eStart-ups\u003c/b\u003e\u003cbr\u003eHelix: Industry\u003cbr\u003eCategory: small and medium-sized enterprises\u003cbr\u003eReview: False"}, {"category": "small and medium-sized enterprises", "color": "#F58518", "font": {"size": 18}, "helix": "Industry", "id": "terra quantum ag", "label": "Terra Quantum AG", "shape": "dot", "size": 18, "title": "\u003cb\u003eTerra Quantum AG\u003c/b\u003e\u003cbr\u003eHelix: Industry\u003cbr\u003eCategory: small and medium-sized enterprises\u003cbr\u003eReview: False"}, {"category": "business support institutions", "color": "#E45756", "font": {"size": 18}, "helix": "Intermediary", "id": "thinknet quantentechnologie", "label": "Thinknet Quantentechnologie", "shape": "dot", "size": 18, "title": "\u003cb\u003eThinknet Quantentechnologie\u003c/b\u003e\u003cbr\u003eHelix: Intermediary\u003cbr\u003eCategory: business support institutions\u003cbr\u003eReview: False"}, {"category": "universities", "color": "#4C78A8", "font": {"size": 18}, "helix": "Academia", "id": "tum", "label": "TUM (Technische Universit\u00e4t M\u00fcnchen)", "shape": "dot", "size": 18, "title": "\u003cb\u003eTUM (Technische Universit\u00e4t M\u00fcnchen)\u003c/b\u003e\u003cbr\u003eHelix: Academia\u003cbr\u003eCategory: universities\u003cbr\u003eReview: False"}, {"category": "universities", "color": "#4C78A8", "font": {"size": 18}, "helix": "Academia", "id": "universit t", "label": "Universit\u00e4t", "shape": "dot", "size": 18, "title": "\u003cb\u003eUniversit\u00e4t\u003c/b\u003e\u003cbr\u003eHelix: Academia\u003cbr\u003eCategory: universities\u003cbr\u003eReview: False"}, {"category": "universities", "color": "#4C78A8", "font": {"size": 18}, "helix": "Academia", "id": "universit t bayern", "label": "Universit\u00e4t Bayern", "shape": "dot", "size": 18, "title": "\u003cb\u003eUniversit\u00e4t Bayern\u003c/b\u003e\u003cbr\u003eHelix: Academia\u003cbr\u003eCategory: universities\u003cbr\u003eReview: False"}, {"category": "universities", "color": "#4C78A8", "font": {"size": 18}, "helix": "Academia", "id": "universit ten", "label": "Universit\u00e4ten", "shape": "dot", "size": 18, "title": "\u003cb\u003eUniversit\u00e4ten\u003c/b\u003e\u003cbr\u003eHelix: Academia\u003cbr\u003eCategory: universities\u003cbr\u003eReview: False"}, {"category": "universities", "color": "#4C78A8", "font": {"size": 18}, "helix": "Academia", "id": "universit ten und ingenieur studieng nge", "label": "Universit\u00e4ten und Ingenieur-Studieng\u00e4nge", "shape": "dot", "size": 18, "title": "\u003cb\u003eUniversit\u00e4ten und Ingenieur-Studieng\u00e4nge\u003c/b\u003e\u003cbr\u003eHelix: Academia\u003cbr\u003eCategory: universities\u003cbr\u003eReview: False"}, {"category": "universities", "color": "#4C78A8", "font": {"size": 18}, "helix": "Academia", "id": "universities", "label": "Universities", "shape": "dot", "size": 18, "title": "\u003cb\u003eUniversities\u003c/b\u003e\u003cbr\u003eHelix: Academia\u003cbr\u003eCategory: universities\u003cbr\u003eReview: False"}, {"category": "universities", "color": "#4C78A8", "font": {"size": 18}, "helix": "Academia", "id": "wirtschaft und wissenschaft", "label": "Wirtschaft und Wissenschaft", "shape": "dot", "size": 18, "title": "\u003cb\u003eWirtschaft und Wissenschaft\u003c/b\u003e\u003cbr\u003eHelix: Academia\u003cbr\u003eCategory: universities\u003cbr\u003eReview: False"}]);
+                  edges = new vis.DataSet([]);
+
+                  nodeColors = {};
+                  allNodes = nodes.get({ returnType: "Object" });
+                  for (nodeId in allNodes) {
+                    nodeColors[nodeId] = allNodes[nodeId].color;
+                  }
+                  allEdges = edges.get({ returnType: "Object" });
+                  // adding nodes and edges to the graph
+                  data = {nodes: nodes, edges: edges};
+
+                  var options = {"physics": {"barnesHut": {"gravitationalConstant": -8000, "centralGravity": 0.3, "springLength": 180, "springConstant": 0.04}, "minVelocity": 0.75}, "interaction": {"hover": true, "navigationButtons": true, "keyboard": true}};
+
+                  
+
+
+                  
+
+                  network = new vis.Network(container, data, options);
+
+                  
+
+                  
+
+                  
+
+
+                  
+
+                  return network;
+
+              }
+              drawGraph();
+        </script>
+    </body>
+</html>

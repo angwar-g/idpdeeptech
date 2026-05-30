@@ -28,6 +28,18 @@ Usage:
 from __future__ import annotations
 
 import os
+
+# Load .env BEFORE any imports that might read env vars at import time
+# (litellm doesn't currently, but this is defensive). python-dotenv walks
+# upward from the cwd to find .env, so this works regardless of which
+# directory the subprocess was launched in.
+try:
+    from dotenv import load_dotenv
+    load_dotenv()
+except ImportError:
+    # python-dotenv is optional. If missing, env vars must come from the shell.
+    pass
+
 from litellm import acompletion
 
 

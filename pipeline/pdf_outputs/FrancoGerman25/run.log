@@ -1,0 +1,302 @@
+
+========================================================================
+RUN STARTED  2026-05-31 00:44:45
+pdf_pipeline.py FrancoGerman25.pdf
+========================================================================
+
+[00:44:45 +0s] === 1 actor extraction ===
+[00:45:00 +15s] Reading PDF: FrancoGerman25.pdf
+[00:45:03 +16s] Extracting: FrancoGerman25.pdf, page 1/26, chunk 1/1
+[00:45:07 +19s] Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[00:45:23 +36s] Repaired malformed JSON.
+[00:45:23 +36s] Extracting: FrancoGerman25.pdf, page 2/26, chunk 1/2
+[00:45:25 +38s] Repaired malformed JSON.
+[00:45:25 +38s] Extracting: FrancoGerman25.pdf, page 2/26, chunk 2/2
+[00:45:28 +41s] Repaired malformed JSON.
+[00:45:28 +41s] Extracting: FrancoGerman25.pdf, page 3/26, chunk 1/2
+[00:45:31 +44s] Repaired malformed JSON.
+[00:45:31 +44s] Extracting: FrancoGerman25.pdf, page 3/26, chunk 2/2
+[00:45:34 +47s] Repaired malformed JSON.
+[00:45:34 +47s] Extracting: FrancoGerman25.pdf, page 4/26, chunk 1/2
+[00:45:40 +49s] Repaired malformed JSON.
+[00:45:40 +49s] Extracting: FrancoGerman25.pdf, page 4/26, chunk 2/2
+[00:45:45 +54s] Repaired malformed JSON.
+[00:45:45 +54s] Extracting: FrancoGerman25.pdf, page 5/26, chunk 1/2
+[00:45:48 +57s] Repaired malformed JSON.
+[00:45:48 +57s] Extracting: FrancoGerman25.pdf, page 5/26, chunk 2/2
+[00:45:51 +1m 0s] Repaired malformed JSON.
+[00:45:51 +1m 0s] Extracting: FrancoGerman25.pdf, page 6/26, chunk 1/1
+[00:45:54 +1m 3s] Repaired malformed JSON.
+[00:45:54 +1m 3s] Extracting: FrancoGerman25.pdf, page 7/26, chunk 1/2
+
+========================================================================
+RUN FINISHED 2026-05-31 00:46:09  (INTERRUPTED)
+Elapsed:     1m 19s
+========================================================================
+
+========================================================================
+RUN STARTED  2026-05-31 00:53:18
+pdf_pipeline.py FrancoGerman25.pdf
+========================================================================
+
+[00:53:18 +0s] === 1 actor extraction ===
+[00:53:20 +2s] Auto-resume: 6 (source, page) pairs already done, skipping them.
+[00:53:20 +2s] Reading PDF: FrancoGerman25.pdf
+[00:53:21 +2s] Skipping FrancoGerman25.pdf, page 1/26 (already done)
+[00:53:21 +2s] Skipping FrancoGerman25.pdf, page 2/26 (already done)
+[00:53:21 +2s] Skipping FrancoGerman25.pdf, page 3/26 (already done)
+[00:53:21 +2s] Skipping FrancoGerman25.pdf, page 4/26 (already done)
+[00:53:21 +2s] Skipping FrancoGerman25.pdf, page 5/26 (already done)
+[00:53:21 +2s] Skipping FrancoGerman25.pdf, page 6/26 (already done)
+[00:53:21 +2s] Extracting: FrancoGerman25.pdf, page 7/26, chunk 1/2
+
+[00:53:21 +2s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[00:53:21 +2s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[00:53:21 +2s] Model call failed on page 7 chunk 1: litellm.APIConnectionError: CloudflareException - {"errors":[{"message":"AiError: AiError: you have used up your daily free allocation of 10,000 neurons, please upgrade to Cloudflare's Workers Paid plan if you would like to continue usage. (e43f4ad9-e6bd-44ba-bbec-2cdedb82bcc1)","code":4006}],"success":false,"result":{},"messages":[]}
+[00:53:21 +2s] Extracting: FrancoGerman25.pdf, page 7/26, chunk 2/2
+
+[00:53:21 +2s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[00:53:21 +2s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[00:53:21 +2s] Model call failed on page 7 chunk 2: litellm.APIConnectionError: CloudflareException - {"errors":[{"message":"AiError: AiError: you have used up your daily free allocation of 10,000 neurons, please upgrade to Cloudflare's Workers Paid plan if you would like to continue usage. (7112d7e9-50a7-47ff-99f9-47c6802807e6)","code":4006}],"success":false,"result":{},"messages":[]}
+[00:53:21 +2s] Extracting: FrancoGerman25.pdf, page 8/26, chunk 1/3
+
+[00:53:21 +2s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[00:53:21 +2s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[00:53:21 +2s] Model call failed on page 8 chunk 1: litellm.APIConnectionError: CloudflareException - {"errors":[{"message":"AiError: AiError: you have used up your daily free allocation of 10,000 neurons, please upgrade to Cloudflare's Workers Paid plan if you would like to continue usage. (9fa556e5-d943-455c-a843-dfb3105a83a0)","code":4006}],"success":false,"result":{},"messages":[]}
+[00:53:21 +2s] Extracting: FrancoGerman25.pdf, page 8/26, chunk 2/3
+
+[00:53:21 +3s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[00:53:21 +3s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[00:53:21 +3s] Model call failed on page 8 chunk 2: litellm.APIConnectionError: CloudflareException - {"errors":[{"message":"AiError: AiError: you have used up your daily free allocation of 10,000 neurons, please upgrade to Cloudflare's Workers Paid plan if you would like to continue usage. (89790a6e-7b5e-4b99-b20e-6967edd87867)","code":4006}],"success":false,"result":{},"messages":[]}
+[00:53:21 +3s] Extracting: FrancoGerman25.pdf, page 8/26, chunk 3/3
+
+[00:53:21 +3s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[00:53:21 +3s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[00:53:21 +3s] Model call failed on page 8 chunk 3: litellm.APIConnectionError: CloudflareException - {"errors":[{"message":"AiError: AiError: you have used up your daily free allocation of 10,000 neurons, please upgrade to Cloudflare's Workers Paid plan if you would like to continue usage. (b3fffb78-626c-4715-be39-3d35269488a4)","code":4006}],"success":false,"result":{},"messages":[]}
+[00:53:21 +3s] Extracting: FrancoGerman25.pdf, page 9/26, chunk 1/1
+
+[00:53:21 +3s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[00:53:21 +3s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[00:53:21 +3s] Model call failed on page 9 chunk 1: litellm.APIConnectionError: CloudflareException - {"errors":[{"message":"AiError: AiError: you have used up your daily free allocation of 10,000 neurons, please upgrade to Cloudflare's Workers Paid plan if you would like to continue usage. (9ebd2292-47c5-4c1c-bd7e-bf95afda378c)","code":4006}],"success":false,"result":{},"messages":[]}
+[00:53:21 +3s] Extracting: FrancoGerman25.pdf, page 10/26, chunk 1/2
+
+[00:53:21 +3s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[00:53:21 +3s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[00:53:21 +3s] Model call failed on page 10 chunk 1: litellm.APIConnectionError: CloudflareException - {"errors":[{"message":"AiError: AiError: you have used up your daily free allocation of 10,000 neurons, please upgrade to Cloudflare's Workers Paid plan if you would like to continue usage. (b4df4814-83b2-4708-b352-3c90a549acf3)","code":4006}],"success":false,"result":{},"messages":[]}
+[00:53:21 +3s] Extracting: FrancoGerman25.pdf, page 10/26, chunk 2/2
+
+[00:53:21 +3s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[00:53:21 +3s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[00:53:21 +3s] Model call failed on page 10 chunk 2: litellm.APIConnectionError: CloudflareException - {"errors":[{"message":"AiError: AiError: you have used up your daily free allocation of 10,000 neurons, please upgrade to Cloudflare's Workers Paid plan if you would like to continue usage. (9f671c3a-da78-4d2f-a312-6855370fdc28)","code":4006}],"success":false,"result":{},"messages":[]}
+[00:53:21 +3s] Extracting: FrancoGerman25.pdf, page 11/26, chunk 1/3
+
+[00:53:21 +3s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[00:53:21 +3s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[00:53:21 +3s] Model call failed on page 11 chunk 1: litellm.APIConnectionError: CloudflareException - {"errors":[{"message":"AiError: AiError: you have used up your daily free allocation of 10,000 neurons, please upgrade to Cloudflare's Workers Paid plan if you would like to continue usage. (912c4929-4d80-4512-8122-1738d2bd52c7)","code":4006}],"success":false,"result":{},"messages":[]}
+[00:53:21 +3s] Extracting: FrancoGerman25.pdf, page 11/26, chunk 2/3
+
+[00:53:21 +3s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[00:53:21 +3s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[00:53:21 +3s] Model call failed on page 11 chunk 2: litellm.APIConnectionError: CloudflareException - {"errors":[{"message":"AiError: AiError: you have used up your daily free allocation of 10,000 neurons, please upgrade to Cloudflare's Workers Paid plan if you would like to continue usage. (0e9f1473-b06b-4c9c-afea-21fc77c82145)","code":4006}],"success":false,"result":{},"messages":[]}
+[00:53:21 +3s] Extracting: FrancoGerman25.pdf, page 11/26, chunk 3/3
+
+[00:53:21 +3s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[00:53:21 +3s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[00:53:21 +3s] Model call failed on page 11 chunk 3: litellm.APIConnectionError: CloudflareException - {"errors":[{"message":"AiError: AiError: you have used up your daily free allocation of 10,000 neurons, please upgrade to Cloudflare's Workers Paid plan if you would like to continue usage. (499cb94b-15f7-454b-8173-3068c36ae0f1)","code":4006}],"success":false,"result":{},"messages":[]}
+[00:53:21 +3s] Extracting: FrancoGerman25.pdf, page 12/26, chunk 1/2
+
+[00:53:21 +3s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[00:53:21 +3s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[00:53:21 +3s] Model call failed on page 12 chunk 1: litellm.APIConnectionError: CloudflareException - {"errors":[{"message":"AiError: AiError: you have used up your daily free allocation of 10,000 neurons, please upgrade to Cloudflare's Workers Paid plan if you would like to continue usage. (05bbd9e5-dda5-4f71-b1b3-899888defb99)","code":4006}],"success":false,"result":{},"messages":[]}
+[00:53:21 +3s] Extracting: FrancoGerman25.pdf, page 12/26, chunk 2/2
+
+[00:53:22 +3s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[00:53:22 +3s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[00:53:22 +3s] Model call failed on page 12 chunk 2: litellm.APIConnectionError: CloudflareException - {"errors":[{"message":"AiError: AiError: you have used up your daily free allocation of 10,000 neurons, please upgrade to Cloudflare's Workers Paid plan if you would like to continue usage. (105ef6bd-682c-427a-8153-fd913a06e1d9)","code":4006}],"success":false,"result":{},"messages":[]}
+[00:53:22 +3s] Extracting: FrancoGerman25.pdf, page 13/26, chunk 1/2
+
+[00:53:22 +3s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[00:53:22 +3s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[00:53:22 +3s] Model call failed on page 13 chunk 1: litellm.APIConnectionError: CloudflareException - {"errors":[{"message":"AiError: AiError: you have used up your daily free allocation of 10,000 neurons, please upgrade to Cloudflare's Workers Paid plan if you would like to continue usage. (58dfdffc-a8ad-4ce0-b46a-cc6372f4e36c)","code":4006}],"success":false,"result":{},"messages":[]}
+[00:53:22 +3s] Extracting: FrancoGerman25.pdf, page 13/26, chunk 2/2
+
+[00:53:22 +3s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[00:53:22 +3s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[00:53:22 +3s] Model call failed on page 13 chunk 2: litellm.APIConnectionError: CloudflareException - {"errors":[{"message":"AiError: AiError: you have used up your daily free allocation of 10,000 neurons, please upgrade to Cloudflare's Workers Paid plan if you would like to continue usage. (b0ad936d-ecf1-4cb2-a256-58495bc30e23)","code":4006}],"success":false,"result":{},"messages":[]}
+[00:53:22 +3s] Extracting: FrancoGerman25.pdf, page 14/26, chunk 1/1
+
+[00:53:22 +3s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[00:53:22 +3s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[00:53:22 +3s] Model call failed on page 14 chunk 1: litellm.APIConnectionError: CloudflareException - {"errors":[{"message":"AiError: AiError: you have used up your daily free allocation of 10,000 neurons, please upgrade to Cloudflare's Workers Paid plan if you would like to continue usage. (904ff3aa-5ce4-4414-9d5d-84b15deabf13)","code":4006}],"success":false,"result":{},"messages":[]}
+[00:53:22 +3s] Extracting: FrancoGerman25.pdf, page 15/26, chunk 1/3
+
+[00:53:22 +3s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[00:53:22 +3s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[00:53:22 +3s] Model call failed on page 15 chunk 1: litellm.APIConnectionError: CloudflareException - {"errors":[{"message":"AiError: AiError: you have used up your daily free allocation of 10,000 neurons, please upgrade to Cloudflare's Workers Paid plan if you would like to continue usage. (d8bb2eda-92f0-481e-a69c-febffce601cd)","code":4006}],"success":false,"result":{},"messages":[]}
+[00:53:22 +3s] Extracting: FrancoGerman25.pdf, page 15/26, chunk 2/3
+
+[00:53:22 +4s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[00:53:22 +4s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[00:53:22 +4s] Model call failed on page 15 chunk 2: litellm.APIConnectionError: CloudflareException - {"errors":[{"message":"AiError: AiError: you have used up your daily free allocation of 10,000 neurons, please upgrade to Cloudflare's Workers Paid plan if you would like to continue usage. (4ef8b625-5941-4416-a6a6-25c62ffa7c91)","code":4006}],"success":false,"result":{},"messages":[]}
+[00:53:22 +4s] Extracting: FrancoGerman25.pdf, page 15/26, chunk 3/3
+
+[00:53:22 +4s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[00:53:22 +4s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[00:53:22 +4s] Model call failed on page 15 chunk 3: litellm.APIConnectionError: CloudflareException - {"errors":[{"message":"AiError: AiError: you have used up your daily free allocation of 10,000 neurons, please upgrade to Cloudflare's Workers Paid plan if you would like to continue usage. (e03681be-3049-4d29-8b23-b03fb2de8029)","code":4006}],"success":false,"result":{},"messages":[]}
+[00:53:22 +4s] Extracting: FrancoGerman25.pdf, page 16/26, chunk 1/2
+
+[00:53:22 +4s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[00:53:22 +4s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[00:53:22 +4s] Model call failed on page 16 chunk 1: litellm.APIConnectionError: CloudflareException - {"errors":[{"message":"AiError: AiError: you have used up your daily free allocation of 10,000 neurons, please upgrade to Cloudflare's Workers Paid plan if you would like to continue usage. (4f62a869-dafb-4914-aae2-6c7c5dab8b8f)","code":4006}],"success":false,"result":{},"messages":[]}
+[00:53:22 +4s] Extracting: FrancoGerman25.pdf, page 16/26, chunk 2/2
+
+[00:53:22 +4s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[00:53:22 +4s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[00:53:22 +4s] Model call failed on page 16 chunk 2: litellm.APIConnectionError: CloudflareException - {"errors":[{"message":"AiError: AiError: you have used up your daily free allocation of 10,000 neurons, please upgrade to Cloudflare's Workers Paid plan if you would like to continue usage. (9017786c-0af7-48a1-a7e4-b03f9c2bdf36)","code":4006}],"success":false,"result":{},"messages":[]}
+[00:53:22 +4s] Extracting: FrancoGerman25.pdf, page 17/26, chunk 1/3
+
+[00:53:22 +4s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[00:53:22 +4s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[00:53:22 +4s] Model call failed on page 17 chunk 1: litellm.APIConnectionError: CloudflareException - {"errors":[{"message":"AiError: AiError: you have used up your daily free allocation of 10,000 neurons, please upgrade to Cloudflare's Workers Paid plan if you would like to continue usage. (ac37fefc-50c5-4d08-abee-350fbaf1055a)","code":4006}],"success":false,"result":{},"messages":[]}
+[00:53:22 +4s] Extracting: FrancoGerman25.pdf, page 17/26, chunk 2/3
+
+[00:53:22 +4s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[00:53:22 +4s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[00:53:22 +4s] Model call failed on page 17 chunk 2: litellm.APIConnectionError: CloudflareException - {"errors":[{"message":"AiError: AiError: you have used up your daily free allocation of 10,000 neurons, please upgrade to Cloudflare's Workers Paid plan if you would like to continue usage. (f41c1f55-2936-4af0-80fb-f4b57f63f53f)","code":4006}],"success":false,"result":{},"messages":[]}
+[00:53:22 +4s] Extracting: FrancoGerman25.pdf, page 17/26, chunk 3/3
+
+[00:53:22 +4s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[00:53:22 +4s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[00:53:22 +4s] Model call failed on page 17 chunk 3: litellm.APIConnectionError: CloudflareException - {"errors":[{"message":"AiError: AiError: you have used up your daily free allocation of 10,000 neurons, please upgrade to Cloudflare's Workers Paid plan if you would like to continue usage. (36c8051b-3569-446d-9058-09701a580b58)","code":4006}],"success":false,"result":{},"messages":[]}
+[00:53:22 +4s] Extracting: FrancoGerman25.pdf, page 18/26, chunk 1/1
+
+[00:53:23 +4s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[00:53:23 +4s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[00:53:23 +4s] Model call failed on page 18 chunk 1: litellm.APIConnectionError: CloudflareException - {"errors":[{"message":"AiError: AiError: you have used up your daily free allocation of 10,000 neurons, please upgrade to Cloudflare's Workers Paid plan if you would like to continue usage. (1f6f0b91-8fd9-4f07-b361-f05c20f4810a)","code":4006}],"success":false,"result":{},"messages":[]}
+[00:53:23 +4s] Extracting: FrancoGerman25.pdf, page 19/26, chunk 1/2
+
+[00:53:23 +4s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[00:53:23 +4s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[00:53:23 +4s] Model call failed on page 19 chunk 1: litellm.APIConnectionError: CloudflareException - {"errors":[{"message":"AiError: AiError: you have used up your daily free allocation of 10,000 neurons, please upgrade to Cloudflare's Workers Paid plan if you would like to continue usage. (4be60943-4478-4756-a9eb-aaf669109185)","code":4006}],"success":false,"result":{},"messages":[]}
+[00:53:23 +4s] Extracting: FrancoGerman25.pdf, page 19/26, chunk 2/2
+
+[00:53:23 +4s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[00:53:23 +4s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[00:53:23 +4s] Model call failed on page 19 chunk 2: litellm.APIConnectionError: CloudflareException - {"errors":[{"message":"AiError: AiError: you have used up your daily free allocation of 10,000 neurons, please upgrade to Cloudflare's Workers Paid plan if you would like to continue usage. (e9e6c6d8-b2ab-47ca-8c5f-7aed306142d3)","code":4006}],"success":false,"result":{},"messages":[]}
+[00:53:23 +4s] Extracting: FrancoGerman25.pdf, page 20/26, chunk 1/1
+
+[00:53:23 +5s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[00:53:23 +5s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[00:53:23 +5s] Model call failed on page 20 chunk 1: litellm.APIConnectionError: CloudflareException - {"errors":[{"message":"AiError: AiError: you have used up your daily free allocation of 10,000 neurons, please upgrade to Cloudflare's Workers Paid plan if you would like to continue usage. (0e1a2907-d773-4f3e-8fcc-f7e2d510c9e2)","code":4006}],"success":false,"result":{},"messages":[]}
+[00:53:23 +5s] Extracting: FrancoGerman25.pdf, page 21/26, chunk 1/2
+
+[00:53:23 +5s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[00:53:23 +5s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[00:53:23 +5s] Model call failed on page 21 chunk 1: litellm.APIConnectionError: CloudflareException - {"errors":[{"message":"AiError: AiError: you have used up your daily free allocation of 10,000 neurons, please upgrade to Cloudflare's Workers Paid plan if you would like to continue usage. (d1cb0f62-b36c-43d3-9037-bee2eaddf745)","code":4006}],"success":false,"result":{},"messages":[]}
+[00:53:23 +5s] Extracting: FrancoGerman25.pdf, page 21/26, chunk 2/2
+
+[00:53:23 +5s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[00:53:23 +5s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[00:53:23 +5s] Model call failed on page 21 chunk 2: litellm.APIConnectionError: CloudflareException - {"errors":[{"message":"AiError: AiError: you have used up your daily free allocation of 10,000 neurons, please upgrade to Cloudflare's Workers Paid plan if you would like to continue usage. (578da850-6797-4143-bd98-e127abd01ec1)","code":4006}],"success":false,"result":{},"messages":[]}
+[00:53:23 +5s] Extracting: FrancoGerman25.pdf, page 22/26, chunk 1/3
+
+[00:53:23 +5s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[00:53:23 +5s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[00:53:23 +5s] Model call failed on page 22 chunk 1: litellm.APIConnectionError: CloudflareException - {"errors":[{"message":"AiError: AiError: you have used up your daily free allocation of 10,000 neurons, please upgrade to Cloudflare's Workers Paid plan if you would like to continue usage. (ee0478fe-3498-4e46-ad65-b43f5b7bca2f)","code":4006}],"success":false,"result":{},"messages":[]}
+[00:53:23 +5s] Extracting: FrancoGerman25.pdf, page 22/26, chunk 2/3
+
+[00:53:23 +5s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[00:53:23 +5s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[00:53:23 +5s] Model call failed on page 22 chunk 2: litellm.APIConnectionError: CloudflareException - {"errors":[{"message":"AiError: AiError: you have used up your daily free allocation of 10,000 neurons, please upgrade to Cloudflare's Workers Paid plan if you would like to continue usage. (99ddf89e-1a0f-4ce3-894d-bf30a4799a6e)","code":4006}],"success":false,"result":{},"messages":[]}
+[00:53:23 +5s] Extracting: FrancoGerman25.pdf, page 22/26, chunk 3/3
+
+[00:53:23 +5s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[00:53:23 +5s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[00:53:23 +5s] Model call failed on page 22 chunk 3: litellm.APIConnectionError: CloudflareException - {"errors":[{"message":"AiError: AiError: you have used up your daily free allocation of 10,000 neurons, please upgrade to Cloudflare's Workers Paid plan if you would like to continue usage. (759ba554-21e3-4384-969b-19d2ab6ebddc)","code":4006}],"success":false,"result":{},"messages":[]}
+[00:53:23 +5s] Extracting: FrancoGerman25.pdf, page 23/26, chunk 1/1
+
+[00:53:24 +5s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[00:53:24 +5s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[00:53:24 +5s] Model call failed on page 23 chunk 1: litellm.APIConnectionError: CloudflareException - {"errors":[{"message":"AiError: AiError: you have used up your daily free allocation of 10,000 neurons, please upgrade to Cloudflare's Workers Paid plan if you would like to continue usage. (f2809d08-f950-4b73-850c-46aba6bdbc4b)","code":4006}],"success":false,"result":{},"messages":[]}
+[00:53:24 +5s] Extracting: FrancoGerman25.pdf, page 24/26, chunk 1/1
+
+[00:53:24 +5s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[00:53:24 +5s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[00:53:24 +5s] Model call failed on page 24 chunk 1: litellm.APIConnectionError: CloudflareException - {"errors":[{"message":"AiError: AiError: you have used up your daily free allocation of 10,000 neurons, please upgrade to Cloudflare's Workers Paid plan if you would like to continue usage. (e7c2204e-4c35-44a1-ae34-40072f507ac1)","code":4006}],"success":false,"result":{},"messages":[]}
+[00:53:24 +5s] Extracting: FrancoGerman25.pdf, page 25/26, chunk 1/3
+
+[00:53:24 +6s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[00:53:24 +6s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[00:53:24 +6s] Model call failed on page 25 chunk 1: litellm.APIConnectionError: CloudflareException - {"errors":[{"message":"AiError: AiError: you have used up your daily free allocation of 10,000 neurons, please upgrade to Cloudflare's Workers Paid plan if you would like to continue usage. (5a45c2cc-2f56-4126-bac8-ab2f447daa12)","code":4006}],"success":false,"result":{},"messages":[]}
+[00:53:24 +6s] Extracting: FrancoGerman25.pdf, page 25/26, chunk 2/3
+
+[00:53:24 +6s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[00:53:24 +6s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[00:53:24 +6s] Model call failed on page 25 chunk 2: litellm.APIConnectionError: CloudflareException - {"errors":[{"message":"AiError: AiError: you have used up your daily free allocation of 10,000 neurons, please upgrade to Cloudflare's Workers Paid plan if you would like to continue usage. (cc2777fc-0469-4b0f-b4d2-8675e1be6eaf)","code":4006}],"success":false,"result":{},"messages":[]}
+[00:53:24 +6s] Extracting: FrancoGerman25.pdf, page 25/26, chunk 3/3
+
+[00:53:24 +6s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[00:53:24 +6s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[00:53:24 +6s] Model call failed on page 25 chunk 3: litellm.APIConnectionError: CloudflareException - {"errors":[{"message":"AiError: AiError: you have used up your daily free allocation of 10,000 neurons, please upgrade to Cloudflare's Workers Paid plan if you would like to continue usage. (aa23d334-42e5-43b6-b6eb-14fb020cdf6c)","code":4006}],"success":false,"result":{},"messages":[]}
+[00:53:24 +6s] Extracting: FrancoGerman25.pdf, page 26/26, chunk 1/2
+
+[00:53:24 +6s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[00:53:24 +6s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[00:53:24 +6s] Model call failed on page 26 chunk 1: litellm.APIConnectionError: CloudflareException - {"errors":[{"message":"AiError: AiError: you have used up your daily free allocation of 10,000 neurons, please upgrade to Cloudflare's Workers Paid plan if you would like to continue usage. (aee893ed-36cf-47d2-8c55-049a2345d240)","code":4006}],"success":false,"result":{},"messages":[]}
+[00:53:24 +6s] Extracting: FrancoGerman25.pdf, page 26/26, chunk 2/2
+
+[00:53:24 +6s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[00:53:24 +6s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[00:53:24 +6s] Model call failed on page 26 chunk 2: litellm.APIConnectionError: CloudflareException - {"errors":[{"message":"AiError: AiError: you have used up your daily free allocation of 10,000 neurons, please upgrade to Cloudflare's Workers Paid plan if you would like to continue usage. (08666239-f8d1-415d-a485-322a331359a7)","code":4006}],"success":false,"result":{},"messages":[]}
+[00:53:24 +6s] Saved 1_actor_results.json with 22 clean actors
+
+[00:53:25 +6s] === 2 clean actors ===
+[00:53:25 +6s] Loaded 22 extracted records
+[00:53:25 +6s] Saved 2_actor_nodes.json with 14 canonical actor nodes
+
+[00:53:25 +6s] === 3 interaction extraction ===
+
+========================================================================
+RUN FINISHED 2026-05-31 00:53:27  (INTERRUPTED)
+Elapsed:     9s
+========================================================================
