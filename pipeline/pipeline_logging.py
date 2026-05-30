@@ -138,6 +138,58 @@ def log_print(message: str, log: TextIO) -> None:
         _write_stamped(line + "\n", log)
 
 
+def _is_noise_line(line: str, state: dict) -> bool:
+    """Return True if `line` is a known-cosmetic line we want to drop.
+
+    Categories filtered:
+      - litellm bedrock/sagemaker pre-load warnings (you don't use those providers)
+      - aiohttp SSL transport cleanup tracebacks from event-loop-closed teardown
+        (the actual response was already received when this fires)
+
+    `state` is a dict carried across calls so we can swallow multi-line tracebacks
+    once we've decided to drop the first line of one.
+    """
+    # Multi-line traceback suppression: once we see "Fatal error on SSL transport",
+    # drop everything until we see a line that looks like a new event (a stamped
+    # log line from our parent, or an = separator, or a blank line followed by
+    # something normal).
+    if state.get("in_ssl_cleanup"):
+        # Heuristic: cleanup tracebacks consist of indented code or stack frame
+        # references. Stop suppressing once we see a non-indented, non-trace line.
+        stripped = line.strip()
+        if not stripped:
+            return True  # eat blank lines inside the traceback
+        if (stripped.startswith("File ")
+                or stripped.startswith("Traceback")
+                or stripped.startswith("During handling")
+                or stripped.startswith("OSError:")
+                or stripped.startswith("RuntimeError:")
+                or stripped.startswith("self.")
+                or stripped.startswith("n = ")
+                or stripped.startswith("raise ")
+                or stripped.startswith("protocol:")
+                or stripped.startswith("transport:")
+                or line.startswith("    ")  # indented = stack frame body
+                or line.startswith("\t")):
+            return True
+        # Anything else means the traceback is over.
+        state["in_ssl_cleanup"] = False
+        # Fall through to evaluate this line normally.
+
+    # Single-line filters.
+    if "could not pre-load bedrock-runtime" in line:
+        return True
+    if "could not pre-load sagemaker-runtime" in line:
+        return True
+
+    # Start of multi-line SSL-cleanup traceback.
+    if "Fatal error on SSL transport" in line:
+        state["in_ssl_cleanup"] = True
+        return True
+
+    return False
+
+
 def run_subprocess_logged(
     cmd: list[str],
     cwd: Path,
@@ -155,6 +207,10 @@ def run_subprocess_logged(
     default stdout is BLOCK-buffered when stdout is a pipe (not a TTY). Without
     this, child print() calls accumulate ~4KB before reaching our reader, and
     long extraction loops look frozen for minutes at a time.
+
+    Known-cosmetic noise (litellm bedrock/sagemaker preload warnings and
+    aiohttp SSL-cleanup tracebacks that fire AFTER our response was received)
+    is filtered out via _is_noise_line, so logs stay readable.
     """
     child_env = os.environ.copy()
     child_env["PYTHONUNBUFFERED"] = "1"
@@ -171,8 +227,11 @@ def run_subprocess_logged(
 
     assert proc.stdout is not None  # for type checkers
 
+    filter_state: dict = {"in_ssl_cleanup": False}
     try:
         for line in proc.stdout:
+            if _is_noise_line(line, filter_state):
+                continue
             _write_stamped(line, log)
     finally:
         proc.stdout.close()

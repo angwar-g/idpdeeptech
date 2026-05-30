@@ -111,6 +111,11 @@ EVIDENCE_PATTERNS = {
         r"\bprovided risk capital\b",
         r"\bsupports?\b",
         r"\bprioriti[sz]es\b",
+        r"\bopen to\b",            # grant calls open to {actor}: institutional access relationship
+        r"\bgrant call",           # thematic/funding calls
+        r"\bthematic call",
+        r"\bhosted by\b",          # X hosted by Y: institutional hosting relationship
+        r"\bhosts?\b",
     ],
     "networking": [
         r"\bin collaboration with\b",
@@ -175,6 +180,24 @@ def normalize_name(name: str) -> str:
     name = re.sub(r"[^a-z0-9\s]", " ", name)
     name = re.sub(r"\s+", " ", name)
     return name.strip()
+
+
+def normalize_for_sentence_match(text: str) -> str:
+    """Like normalize_name but keeps parenthetical content.
+
+    Sentences often introduce entities as "Full Name (ABBR)". When checking
+    whether a canonical actor name appears in a sentence, we need both the
+    full form and the abbreviation to remain searchable. normalize_name strips
+    parentheticals (correct for canonical names), so we use this variant for
+    sentences.
+    """
+    text = normalize_text(text).lower()
+    # Replace parens with spaces so "X (Y)" -> "x y" -- preserving Y as a word.
+    text = re.sub(r"[()]", " ", text)
+    text = re.sub(r"\b(the|a|an)\b", " ", text)
+    text = re.sub(r"[^a-z0-9\s]", " ", text)
+    text = re.sub(r"\s+", " ", text)
+    return text.strip()
 
 
 def combined_text(edge: dict) -> str:
@@ -298,9 +321,41 @@ def actor_matches(actor_name, sentence, short_aliases):
 def actors_appear_in_sentence(edge: dict) -> bool:
     return relation_phrase_links_actors(edge)
 
+def _extract_abbreviation(actor: str) -> str:
+    """If actor is in the form 'Full Name (ABBR)', return the ABBR. Else ''."""
+    m = re.search(r"\(([^)]+)\)\s*$", actor.strip())
+    if not m:
+        return ""
+    abbr = m.group(1).strip()
+    # Heuristic: an abbreviation is short and mostly uppercase/digits/punctuation,
+    # not a long descriptive phrase. Avoid matching "(part of foo)" as an alias.
+    if len(abbr) > 12:
+        return ""
+    return abbr
+
+
 def actor_in_sentence(actor: str, sentence: str) -> bool:
+    # Also try matching by abbreviation if the actor name has one.
+    raw_actor = actor
+    abbr = _extract_abbreviation(raw_actor)
+
     actor = normalize_name(actor)
 
+    if actor and _actor_token_match(actor, sentence):
+        return True
+
+    if abbr:
+        # Match the abbreviation as-is (case-insensitive, word-boundary) against
+        # the *raw* token soup in the normalized sentence.
+        abbr_normalized = normalize_for_sentence_match(abbr)
+        if abbr_normalized and re.search(rf"\b{re.escape(abbr_normalized)}\b", sentence):
+            return True
+
+    return False
+
+
+def _actor_token_match(actor: str, sentence: str) -> bool:
+    """The original matching logic, factored out so we can try multiple actor forms."""
     if not actor:
         return False
 
@@ -324,7 +379,7 @@ def actor_in_sentence(actor: str, sentence: str) -> bool:
     return matches >= 2
 
 def relation_phrase_links_actors(edge: dict) -> bool:
-    sentence = normalize_name(edge.get("occurrence_sentence", ""))
+    sentence = normalize_for_sentence_match(edge.get("occurrence_sentence", ""))
     source = edge.get("source_actor", "")
     target = edge.get("target_actor", "")
 

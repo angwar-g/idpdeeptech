@@ -1,0 +1,411 @@
+
+========================================================================
+RUN STARTED  2026-05-30 21:05:12
+pdf_pipeline.py singapore25.pdf
+========================================================================
+
+[21:05:12 +0s] === 1 actor extraction ===
+[21:05:14 +3s] [92m21:05:14 - LiteLLM:WARNING[0m: common_utils.py:979 - litellm: could not pre-load bedrock-runtime response stream shape — Bedrock event-stream decoding will be unavailable. Error: No module named 'botocore'
+[21:05:14 +3s] [92m21:05:14 - LiteLLM:WARNING[0m: common_utils.py:24 - litellm: could not pre-load sagemaker-runtime response stream shape — SageMaker event-stream decoding will be unavailable. Error: No module named 'botocore'
+[21:05:15 +3s] Reading PDF: singapore25.pdf
+[21:05:15 +3s] Extracting: singapore25.pdf, page 1/6, chunk 1/1
+[21:05:20 +8s] Repaired malformed JSON.
+[21:05:20 +8s] Extracting: singapore25.pdf, page 2/6, chunk 1/1
+[21:05:23 +11s] Repaired malformed JSON.
+[21:05:23 +11s] Extracting: singapore25.pdf, page 3/6, chunk 1/2
+[21:05:27 +15s] Repaired malformed JSON.
+[21:05:27 +15s] Extracting: singapore25.pdf, page 3/6, chunk 2/2
+[21:05:30 +18s] Extracting: singapore25.pdf, page 4/6, chunk 1/2
+[21:05:34 +22s] Repaired malformed JSON.
+[21:05:34 +22s] Extracting: singapore25.pdf, page 4/6, chunk 2/2
+[21:05:37 +25s] Extracting: singapore25.pdf, page 5/6, chunk 1/1
+[21:05:39 +28s] Repaired malformed JSON.
+[21:05:39 +28s] Extracting: singapore25.pdf, page 6/6, chunk 1/1
+[21:05:41 +30s] Saved 1_actor_results.json with 16 clean actors
+[21:05:41 +30s] Fatal error on SSL transport
+[21:05:41 +30s] protocol: <asyncio.sslproto.SSLProtocol object at 0x71a7b7448700>
+[21:05:41 +30s] transport: <_SelectorSocketTransport closing fd=6>
+[21:05:41 +30s] Traceback (most recent call last):
+[21:05:41 +30s]   File "/usr/lib/python3.10/asyncio/selector_events.py", line 924, in write
+[21:05:41 +30s]     n = self._sock.send(data)
+[21:05:41 +30s] OSError: [Errno 9] Bad file descriptor
+
+[21:05:41 +30s] During handling of the above exception, another exception occurred:
+
+[21:05:41 +30s] Traceback (most recent call last):
+[21:05:41 +30s]   File "/usr/lib/python3.10/asyncio/sslproto.py", line 690, in _process_write_backlog
+[21:05:41 +30s]     self._transport.write(chunk)
+[21:05:41 +30s]   File "/usr/lib/python3.10/asyncio/selector_events.py", line 930, in write
+[21:05:41 +30s]     self._fatal_error(exc, 'Fatal write error on socket transport')
+[21:05:41 +30s]   File "/usr/lib/python3.10/asyncio/selector_events.py", line 725, in _fatal_error
+[21:05:41 +30s]     self._force_close(exc)
+[21:05:41 +30s]   File "/usr/lib/python3.10/asyncio/selector_events.py", line 737, in _force_close
+[21:05:41 +30s]     self._loop.call_soon(self._call_connection_lost, exc)
+[21:05:41 +30s]   File "/usr/lib/python3.10/asyncio/base_events.py", line 753, in call_soon
+[21:05:41 +30s]     self._check_closed()
+[21:05:41 +30s]   File "/usr/lib/python3.10/asyncio/base_events.py", line 515, in _check_closed
+[21:05:41 +30s]     raise RuntimeError('Event loop is closed')
+[21:05:41 +30s] RuntimeError: Event loop is closed
+
+[21:05:42 +30s] === 2 clean actors ===
+[21:05:42 +30s] Loaded 16 extracted records
+[21:05:42 +30s] Saved 2_actor_nodes.json with 11 canonical actor nodes
+
+[21:05:42 +30s] === 3 interaction extraction ===
+[21:05:46 +32s] [92m21:05:46 - LiteLLM:WARNING[0m: common_utils.py:979 - litellm: could not pre-load bedrock-runtime response stream shape — Bedrock event-stream decoding will be unavailable. Error: No module named 'botocore'
+[21:05:46 +32s] [92m21:05:46 - LiteLLM:WARNING[0m: common_utils.py:24 - litellm: could not pre-load sagemaker-runtime response stream shape — SageMaker event-stream decoding will be unavailable. Error: No module named 'botocore'
+[21:05:46 +32s] Processing interactions for: singapore25.pdf
+[21:05:46 +32s] Extracting interactions: singapore25.pdf, page 1/6, chunk 1/2
+[21:09:57 +4m 22s] Extracting interactions: singapore25.pdf, page 1/6, chunk 2/2
+[21:12:41 +6m 55s] Extracting interactions: singapore25.pdf, page 2/6, chunk 1/2
+[21:16:37 +10m 30s] Extracting interactions: singapore25.pdf, page 3/6, chunk 1/2
+[21:21:23 +14m 53s] Extracting interactions: singapore25.pdf, page 3/6, chunk 2/2
+[21:22:37 +16m 1s] Extracting interactions: singapore25.pdf, page 4/6, chunk 1/2
+[21:27:11 +20m 11s] Extracting interactions: singapore25.pdf, page 4/6, chunk 2/2
+[21:28:30 +21m 24s] Extracting interactions: singapore25.pdf, page 5/6, chunk 1/2
+[21:30:19 +23m 4s] Extracting interactions: singapore25.pdf, page 5/6, chunk 2/2
+[21:31:27 +24m 6s] Saved 3_interaction_results.json with 17 extracted interactions.
+
+[21:31:30 +24m 9s] === 4 clean interactions ===
+[21:31:30 +24m 9s] Saved 4_edges.json with 6 cleaned interactions.
+
+[21:31:30 +24m 9s] === 5 helix enrichment ===
+[21:31:30 +24m 9s] Wrote 5_nodes.json (11 actors)
+[21:31:30 +24m 9s] Wrote 5_edges.json (6 interactions)
+[21:31:30 +24m 9s] Actor helix counts: {'Academia': 4, 'Civil Society': 1, 'Government': 2, 'Industry': 1, 'Intermediary': 2, 'Unknown': 1}
+[21:31:30 +24m 9s] Functional-space counts: {'Intra-helix / Not classified': 3, 'Knowledge': 2, 'Unknown': 1}
+
+[21:31:30 +24m 9s] === 6 network visualisation ===
+[21:31:35 +24m 11s] Wrote quantum_network.html
+[21:31:35 +24m 11s] Nodes: 11
+[21:31:35 +24m 11s] Edges: 5
+
+[21:31:35 +24m 11s] Done. Outputs written to: /home/lv/IDP/idpdeeptech/pipeline/pdf_outputs/singapore25
+[21:31:35 +24m 11s] Log: /home/lv/IDP/idpdeeptech/pipeline/pdf_outputs/singapore25/run.log
+
+========================================================================
+RUN FINISHED 2026-05-30 21:31:35  (OK)
+Elapsed:     24m 11s
+========================================================================
+
+========================================================================
+RUN STARTED  2026-05-30 21:35:07
+pdf_pipeline.py singapore25.pdf
+========================================================================
+
+[21:35:07 +0s] === 1 actor extraction ===
+[21:35:11 +4s] [92m21:35:11 - LiteLLM:WARNING[0m: common_utils.py:979 - litellm: could not pre-load bedrock-runtime response stream shape — Bedrock event-stream decoding will be unavailable. Error: No module named 'botocore'
+[21:35:11 +4s] [92m21:35:11 - LiteLLM:WARNING[0m: common_utils.py:24 - litellm: could not pre-load sagemaker-runtime response stream shape — SageMaker event-stream decoding will be unavailable. Error: No module named 'botocore'
+[21:35:12 +5s] Auto-resume: 6 (source, page) pairs already done, skipping them.
+[21:35:12 +5s] Reading PDF: singapore25.pdf
+[21:35:12 +5s] All 6 pages/URLs already processed (per 1_actor_results.progress.json). Nothing to do.
+[21:35:12 +5s] Delete the progress sidecar to force a full re-run, or pass --start-page N.
+[21:35:12 +5s] Saved 1_actor_results.json with 16 clean actors
+
+[21:35:13 +6s] === 2 clean actors ===
+[21:35:13 +6s] Loaded 16 extracted records
+[21:35:13 +6s] Saved 2_actor_nodes.json with 11 canonical actor nodes
+
+[21:35:13 +6s] === 3 interaction extraction ===
+[21:35:14 +7s] [92m21:35:14 - LiteLLM:WARNING[0m: common_utils.py:979 - litellm: could not pre-load bedrock-runtime response stream shape — Bedrock event-stream decoding will be unavailable. Error: No module named 'botocore'
+[21:35:14 +7s] [92m21:35:14 - LiteLLM:WARNING[0m: common_utils.py:24 - litellm: could not pre-load sagemaker-runtime response stream shape — SageMaker event-stream decoding will be unavailable. Error: No module named 'botocore'
+[21:35:15 +8s] Auto-resume: 6 (source, page) pairs already done, skipping them.
+[21:35:15 +8s] Processing interactions for: singapore25.pdf
+[21:35:15 +8s] All 6 pages/URLs already processed (per 3_interaction_results.progress.json). Nothing to do.
+[21:35:15 +8s] Delete the progress sidecar to force a full re-run, or pass --start-page N.
+[21:35:15 +8s] Saved 3_interaction_results.json with 17 extracted interactions.
+
+[21:35:15 +8s] === 4 clean interactions ===
+[21:35:15 +8s] Saved 4_edges.json with 6 cleaned interactions.
+
+[21:35:15 +8s] === 5 helix enrichment ===
+[21:35:15 +8s] Wrote 5_nodes.json (11 actors)
+[21:35:15 +8s] Wrote 5_edges.json (6 interactions)
+[21:35:15 +8s] Actor helix counts: {'Academia': 4, 'Civil Society': 1, 'Government': 2, 'Industry': 1, 'Intermediary': 2, 'Unknown': 1}
+[21:35:15 +8s] Functional-space counts: {'Intra-helix / Not classified': 3, 'Knowledge': 2, 'Unknown': 1}
+
+[21:35:15 +8s] === 6 network visualisation ===
+[21:35:16 +9s] Wrote quantum_network.html
+[21:35:16 +9s] Nodes: 11
+[21:35:16 +9s] Edges: 5
+
+[21:35:16 +9s] Done. Outputs written to: /home/lv/IDP/idpdeeptech/pipeline/pdf_outputs/singapore25
+[21:35:16 +9s] Log: /home/lv/IDP/idpdeeptech/pipeline/pdf_outputs/singapore25/run.log
+
+========================================================================
+RUN FINISHED 2026-05-30 21:35:16  (OK)
+Elapsed:     9s
+========================================================================
+
+========================================================================
+RUN STARTED  2026-05-30 21:38:30
+pdf_pipeline.py singapore25.pdf
+========================================================================
+
+[21:38:30 +0s] === 1 actor extraction ===
+[21:38:32 +2s] [92m21:38:32 - LiteLLM:WARNING[0m: common_utils.py:979 - litellm: could not pre-load bedrock-runtime response stream shape — Bedrock event-stream decoding will be unavailable. Error: No module named 'botocore'
+[21:38:32 +2s] [92m21:38:32 - LiteLLM:WARNING[0m: common_utils.py:24 - litellm: could not pre-load sagemaker-runtime response stream shape — SageMaker event-stream decoding will be unavailable. Error: No module named 'botocore'
+[21:38:32 +2s] [pipeline_resume] Backfilled 1_actor_results.progress.json from existing 1_actor_results.json (6 (source, page) pairs). Run will resume from where the old data left off.
+[21:38:32 +2s] Auto-resume: 6 (source, page) pairs already done, skipping them.
+[21:38:32 +2s] Reading PDF: singapore25.pdf
+[21:38:32 +2s] All 6 pages/URLs already processed (per 1_actor_results.progress.json). Nothing to do.
+[21:38:32 +2s] Delete the progress sidecar to force a full re-run, or pass --start-page N.
+[21:38:32 +2s] Saved 1_actor_results.json with 16 clean actors
+
+[21:38:36 +2s] === 2 clean actors ===
+[21:38:36 +2s] Loaded 16 extracted records
+[21:38:36 +2s] Saved 2_actor_nodes.json with 11 canonical actor nodes
+
+[21:38:36 +2s] === 3 interaction extraction ===
+[21:38:37 +4s] [92m21:38:37 - LiteLLM:WARNING[0m: common_utils.py:979 - litellm: could not pre-load bedrock-runtime response stream shape — Bedrock event-stream decoding will be unavailable. Error: No module named 'botocore'
+[21:38:37 +4s] [92m21:38:37 - LiteLLM:WARNING[0m: common_utils.py:24 - litellm: could not pre-load sagemaker-runtime response stream shape — SageMaker event-stream decoding will be unavailable. Error: No module named 'botocore'
+[21:38:38 +4s] [pipeline_resume] Backfilled 3_interaction_results.progress.json from existing 3_interaction_results.json (4 (source, page) pairs). Run will resume from where the old data left off.
+[21:38:38 +4s] Auto-resume: 4 (source, page) pairs already done, skipping them.
+[21:38:38 +4s] Processing interactions for: singapore25.pdf
+[21:38:38 +4s] Skipping interactions: singapore25.pdf, page 1/6 (already done)
+[21:38:38 +4s] Skipping interactions: singapore25.pdf, page 2/6 (already done)
+[21:38:38 +4s] Skipping interactions: singapore25.pdf, page 3/6 (already done)
+[21:38:38 +4s] Extracting interactions: singapore25.pdf, page 4/6, chunk 1/2
+[21:46:03 +6m 54s] Extracting interactions: singapore25.pdf, page 4/6, chunk 2/2
+[21:47:35 +8m 17s] Skipping interactions: singapore25.pdf, page 5/6 (already done)
+[21:47:35 +8m 17s] Saved 3_interaction_results.json with 17 extracted interactions.
+
+[21:47:37 +8m 20s] === 4 clean interactions ===
+[21:47:37 +8m 20s] Saved 4_edges.json with 6 cleaned interactions.
+
+[21:47:37 +8m 20s] === 5 helix enrichment ===
+[21:47:37 +8m 20s] Wrote 5_nodes.json (11 actors)
+[21:47:37 +8m 20s] Wrote 5_edges.json (6 interactions)
+[21:47:37 +8m 20s] Actor helix counts: {'Academia': 4, 'Civil Society': 1, 'Government': 2, 'Industry': 1, 'Intermediary': 2, 'Unknown': 1}
+[21:47:37 +8m 20s] Functional-space counts: {'Intra-helix / Not classified': 3, 'Knowledge': 2, 'Unknown': 1}
+
+[21:47:38 +8m 20s] === 6 network visualisation ===
+[21:47:39 +8m 21s] Wrote quantum_network.html
+[21:47:39 +8m 21s] Nodes: 11
+[21:47:39 +8m 21s] Edges: 5
+
+[21:47:39 +8m 22s] Done. Outputs written to: /home/lv/IDP/idpdeeptech/pipeline/pdf_outputs/singapore25
+[21:47:39 +8m 22s] Log: /home/lv/IDP/idpdeeptech/pipeline/pdf_outputs/singapore25/run.log
+
+========================================================================
+RUN FINISHED 2026-05-30 21:47:39  (OK)
+Elapsed:     8m 22s
+========================================================================
+
+========================================================================
+RUN STARTED  2026-05-30 21:56:05
+pdf_pipeline.py singapore25.pdf
+========================================================================
+
+[21:56:05 +0s] === 1 actor extraction ===
+[21:56:07 +3s] [92m21:56:07 - LiteLLM:WARNING[0m: common_utils.py:979 - litellm: could not pre-load bedrock-runtime response stream shape — Bedrock event-stream decoding will be unavailable. Error: No module named 'botocore'
+[21:56:08 +3s] [92m21:56:08 - LiteLLM:WARNING[0m: common_utils.py:24 - litellm: could not pre-load sagemaker-runtime response stream shape — SageMaker event-stream decoding will be unavailable. Error: No module named 'botocore'
+[21:56:08 +3s] Reading PDF: singapore25.pdf
+[21:56:08 +3s] Extracting: singapore25.pdf, page 1/6, chunk 1/1
+[21:56:23 +15s] Repaired malformed JSON.
+[21:56:23 +15s] Extracting: singapore25.pdf, page 2/6, chunk 1/1
+[21:56:36 +29s] Repaired malformed JSON.
+[21:56:36 +29s] Extracting: singapore25.pdf, page 3/6, chunk 1/2
+[21:56:51 +40s] Repaired malformed JSON.
+[21:56:51 +40s] Extracting: singapore25.pdf, page 3/6, chunk 2/2
+[21:57:08 +57s] Repaired malformed JSON.
+[21:57:08 +57s] Extracting: singapore25.pdf, page 4/6, chunk 1/2
+[21:57:19 +1m 8s] Repaired malformed JSON.
+[21:57:19 +1m 8s] Extracting: singapore25.pdf, page 4/6, chunk 2/2
+[21:57:31 +1m 18s] Extracting: singapore25.pdf, page 5/6, chunk 1/1
+[21:57:42 +1m 29s] Repaired malformed JSON.
+[21:57:42 +1m 29s] Extracting: singapore25.pdf, page 6/6, chunk 1/1
+[21:57:49 +1m 35s] Saved 1_actor_results.json with 17 clean actors
+[21:57:49 +1m 35s] Fatal error on SSL transport
+[21:57:49 +1m 35s] protocol: <asyncio.sslproto.SSLProtocol object at 0x77ea65a2b730>
+[21:57:49 +1m 35s] transport: <_SelectorSocketTransport closing fd=6>
+[21:57:49 +1m 35s] Traceback (most recent call last):
+[21:57:49 +1m 35s]   File "/usr/lib/python3.10/asyncio/selector_events.py", line 924, in write
+[21:57:49 +1m 35s]     n = self._sock.send(data)
+[21:57:49 +1m 35s] OSError: [Errno 9] Bad file descriptor
+
+[21:57:49 +1m 35s] During handling of the above exception, another exception occurred:
+
+[21:57:49 +1m 35s] Traceback (most recent call last):
+[21:57:49 +1m 35s]   File "/usr/lib/python3.10/asyncio/sslproto.py", line 690, in _process_write_backlog
+[21:57:49 +1m 35s]     self._transport.write(chunk)
+[21:57:49 +1m 35s]   File "/usr/lib/python3.10/asyncio/selector_events.py", line 930, in write
+[21:57:49 +1m 35s]     self._fatal_error(exc, 'Fatal write error on socket transport')
+[21:57:49 +1m 35s]   File "/usr/lib/python3.10/asyncio/selector_events.py", line 725, in _fatal_error
+[21:57:49 +1m 35s]     self._force_close(exc)
+[21:57:49 +1m 35s]   File "/usr/lib/python3.10/asyncio/selector_events.py", line 737, in _force_close
+[21:57:49 +1m 35s]     self._loop.call_soon(self._call_connection_lost, exc)
+[21:57:49 +1m 35s]   File "/usr/lib/python3.10/asyncio/base_events.py", line 753, in call_soon
+[21:57:49 +1m 35s]     self._check_closed()
+[21:57:49 +1m 35s]   File "/usr/lib/python3.10/asyncio/base_events.py", line 515, in _check_closed
+[21:57:49 +1m 35s]     raise RuntimeError('Event loop is closed')
+[21:57:49 +1m 35s] RuntimeError: Event loop is closed
+
+[21:57:49 +1m 35s] === 2 clean actors ===
+[21:57:49 +1m 35s] Loaded 17 extracted records
+[21:57:49 +1m 35s] Saved 2_actor_nodes.json with 12 canonical actor nodes
+
+[21:57:49 +1m 35s] === 3 interaction extraction ===
+[21:57:51 +1m 37s] [92m21:57:51 - LiteLLM:WARNING[0m: common_utils.py:979 - litellm: could not pre-load bedrock-runtime response stream shape — Bedrock event-stream decoding will be unavailable. Error: No module named 'botocore'
+[21:57:51 +1m 37s] [92m21:57:51 - LiteLLM:WARNING[0m: common_utils.py:24 - litellm: could not pre-load sagemaker-runtime response stream shape — SageMaker event-stream decoding will be unavailable. Error: No module named 'botocore'
+[21:57:51 +1m 37s] Processing interactions for: singapore25.pdf
+[21:57:51 +1m 37s] Extracting interactions: singapore25.pdf, page 1/6, chunk 1/2
+[22:02:28 +5m 50s] Extracting interactions: singapore25.pdf, page 1/6, chunk 2/2
+[22:04:36 +7m 46s] Extracting interactions: singapore25.pdf, page 2/6, chunk 1/2
+[22:06:43 +9m 44s] Extracting interactions: singapore25.pdf, page 3/6, chunk 1/2
+[22:08:49 +11m 39s] Extracting interactions: singapore25.pdf, page 3/6, chunk 2/2
+[22:10:00 +12m 43s] Extracting interactions: singapore25.pdf, page 4/6, chunk 1/2
+[22:12:15 +14m 46s] Extracting interactions: singapore25.pdf, page 4/6, chunk 2/2
+[22:13:32 +15m 57s] Extracting interactions: singapore25.pdf, page 5/6, chunk 1/2
+[22:15:07 +17m 24s] Extracting interactions: singapore25.pdf, page 5/6, chunk 2/2
+[22:16:20 +18m 30s] Saved 3_interaction_results.json with 8 extracted interactions.
+
+[22:16:23 +18m 33s] === 4 clean interactions ===
+[22:16:23 +18m 34s] Saved 4_edges.json with 1 cleaned interactions.
+
+[22:16:23 +18m 34s] === 5 helix enrichment ===
+[22:16:23 +18m 34s] Wrote 5_nodes.json (12 actors)
+[22:16:23 +18m 34s] Wrote 5_edges.json (1 interactions)
+[22:16:23 +18m 34s] Actor helix counts: {'Academia': 3, 'Civil Society': 1, 'Government': 4, 'Industry': 1, 'Intermediary': 2, 'Unknown': 1}
+[22:16:23 +18m 34s] Functional-space counts: {'Intra-helix / Not classified': 1}
+
+[22:16:23 +18m 34s] === 6 network visualisation ===
+[22:16:24 +18m 35s] Wrote quantum_network.html
+[22:16:24 +18m 35s] Nodes: 12
+[22:16:24 +18m 35s] Edges: 1
+
+[22:16:24 +18m 35s] Done. Outputs written to: /home/lv/IDP/idpdeeptech/pipeline/pdf_outputs/singapore25
+[22:16:24 +18m 35s] Log: /home/lv/IDP/idpdeeptech/pipeline/pdf_outputs/singapore25/run.log
+
+========================================================================
+RUN FINISHED 2026-05-30 22:16:24  (OK)
+Elapsed:     18m 35s
+========================================================================
+
+========================================================================
+RUN STARTED  2026-05-30 22:27:30
+pdf_pipeline.py singapore25.pdf
+========================================================================
+
+[22:27:30 +0s] === 1 actor extraction ===
+[22:27:33 +3s] Reading PDF: singapore25.pdf
+[22:27:34 +3s] Extracting: singapore25.pdf, page 1/6, chunk 1/1
+[22:27:40 +10s] Repaired malformed JSON.
+[22:27:40 +10s] Extracting: singapore25.pdf, page 2/6, chunk 1/1
+[22:27:43 +13s] Repaired malformed JSON.
+[22:27:43 +13s] Extracting: singapore25.pdf, page 3/6, chunk 1/2
+[22:27:47 +17s] Repaired malformed JSON.
+[22:27:47 +17s] Extracting: singapore25.pdf, page 3/6, chunk 2/2
+[22:27:50 +20s] Repaired malformed JSON.
+[22:27:50 +20s] Extracting: singapore25.pdf, page 4/6, chunk 1/2
+[22:27:56 +23s] Repaired malformed JSON.
+[22:27:56 +23s] Extracting: singapore25.pdf, page 4/6, chunk 2/2
+[22:27:59 +25s] Extracting: singapore25.pdf, page 5/6, chunk 1/1
+[22:28:03 +29s] Repaired malformed JSON.
+[22:28:03 +29s] Extracting: singapore25.pdf, page 6/6, chunk 1/1
+[22:28:05 +31s] Saved 1_actor_results.json with 18 clean actors
+
+[22:28:05 +32s] === 2 clean actors ===
+[22:28:05 +32s] Loaded 18 extracted records
+[22:28:05 +32s] Saved 2_actor_nodes.json with 10 canonical actor nodes
+
+[22:28:05 +32s] === 3 interaction extraction ===
+[22:28:07 +34s] Processing interactions for: singapore25.pdf
+[22:28:07 +34s] Extracting interactions: singapore25.pdf, page 1/6, chunk 1/2
+[22:33:39 +5m 39s] Extracting interactions: singapore25.pdf, page 1/6, chunk 2/2
+[22:36:10 +7m 55s] Extracting interactions: singapore25.pdf, page 2/6, chunk 1/2
+[22:40:39 +12m 3s] Extracting interactions: singapore25.pdf, page 3/6, chunk 1/2
+[22:44:31 +15m 34s] Extracting interactions: singapore25.pdf, page 3/6, chunk 2/2
+[22:46:21 +17m 15s] Extracting interactions: singapore25.pdf, page 4/6, chunk 1/2
+[22:52:56 +23m 18s] Extracting interactions: singapore25.pdf, page 4/6, chunk 2/2
+[22:54:38 +24m 51s] Extracting interactions: singapore25.pdf, page 5/6, chunk 1/2
+[22:56:51 +26m 52s] Extracting interactions: singapore25.pdf, page 5/6, chunk 2/2
+[22:58:35 +28m 27s] Saved 3_interaction_results.json with 13 extracted interactions.
+
+[22:58:48 +28m 39s] === 4 clean interactions ===
+[22:58:48 +28m 40s] Saved 4_edges.json with 2 cleaned interactions.
+
+[22:58:48 +28m 40s] === 5 helix enrichment ===
+[22:58:48 +28m 40s] Wrote 5_nodes.json (10 actors)
+[22:58:48 +28m 40s] Wrote 5_edges.json (2 interactions)
+[22:58:48 +28m 40s] Actor helix counts: {'Academia': 3, 'Civil Society': 1, 'Government': 3, 'Intermediary': 2, 'Unknown': 1}
+[22:58:48 +28m 40s] Functional-space counts: {'Innovation': 1, 'Intra-helix / Not classified': 1}
+
+[22:58:48 +28m 40s] === 6 network visualisation ===
+[22:58:50 +28m 41s] Wrote quantum_network.html
+[22:58:50 +28m 41s] Nodes: 10
+[22:58:50 +28m 41s] Edges: 2
+
+[22:58:50 +28m 41s] Done. Outputs written to: /home/lv/IDP/idpdeeptech/pipeline/pdf_outputs/singapore25
+[22:58:50 +28m 41s] Log: /home/lv/IDP/idpdeeptech/pipeline/pdf_outputs/singapore25/run.log
+
+========================================================================
+RUN FINISHED 2026-05-30 22:58:50  (OK)
+Elapsed:     28m 41s
+========================================================================
+
+========================================================================
+RUN STARTED  2026-05-30 23:08:52
+pdf_pipeline.py singapore25.pdf --skip-interactions
+========================================================================
+
+[23:08:52 +0s] === 1 actor extraction (skipped, reusing 1_actor_results.json) ===
+
+[23:08:52 +0s] === 2 clean actors (skipped, reusing 2_actor_nodes.json) ===
+
+[23:08:52 +0s] === 3 interaction extraction (skipped, reusing 3_interaction_results.json) ===
+
+[23:08:52 +0s] === 4 clean interactions ===
+[23:08:52 +0s] Saved 4_edges.json with 3 cleaned interactions.
+
+[23:08:52 +0s] === 5 helix enrichment ===
+[23:08:52 +0s] Wrote 5_nodes.json (10 actors)
+[23:08:52 +0s] Wrote 5_edges.json (3 interactions)
+[23:08:52 +0s] Actor helix counts: {'Academia': 3, 'Civil Society': 1, 'Government': 3, 'Intermediary': 2, 'Unknown': 1}
+[23:08:52 +0s] Functional-space counts: {'Innovation': 1, 'Intra-helix / Not classified': 1, 'Knowledge': 1}
+
+[23:08:52 +0s] === 6 network visualisation ===
+[23:08:53 +1s] Wrote quantum_network.html
+[23:08:53 +1s] Nodes: 10
+[23:08:53 +1s] Edges: 3
+
+[23:08:54 +1s] Done. Outputs written to: /home/lv/IDP/idpdeeptech/pipeline/pdf_outputs/singapore25
+[23:08:54 +1s] Log: /home/lv/IDP/idpdeeptech/pipeline/pdf_outputs/singapore25/run.log
+
+========================================================================
+RUN FINISHED 2026-05-30 23:08:54  (OK)
+Elapsed:     1s
+========================================================================
+
+========================================================================
+RUN STARTED  2026-05-30 23:17:27
+pdf_pipeline.py singapore25.pdf --skip-interactions
+========================================================================
+
+[23:17:27 +0s] === 1 actor extraction (skipped, reusing 1_actor_results.json) ===
+
+[23:17:27 +0s] === 2 clean actors (skipped, reusing 2_actor_nodes.json) ===
+
+[23:17:27 +0s] === 3 interaction extraction (skipped, reusing 3_interaction_results.json) ===
+
+[23:17:27 +0s] === 4 clean interactions ===
+[23:17:27 +0s] Saved 4_edges.json with 7 cleaned interactions.
+
+[23:17:27 +0s] === 5 helix enrichment ===
+[23:17:27 +0s] Wrote 5_nodes.json (10 actors)
+[23:17:27 +0s] Wrote 5_edges.json (7 interactions)
+[23:17:27 +0s] Actor helix counts: {'Academia': 3, 'Civil Society': 1, 'Government': 3, 'Intermediary': 2, 'Unknown': 1}
+[23:17:27 +0s] Functional-space counts: {'Innovation': 1, 'Intra-helix / Not classified': 1, 'Knowledge': 5}
+
+[23:17:27 +0s] === 6 network visualisation ===
+[23:17:28 +1s] Wrote quantum_network.html
+[23:17:28 +1s] Nodes: 10
+[23:17:28 +1s] Edges: 6
+
+[23:17:28 +1s] Done. Outputs written to: /home/lv/IDP/idpdeeptech/pipeline/pdf_outputs/singapore25
+[23:17:28 +1s] Log: /home/lv/IDP/idpdeeptech/pipeline/pdf_outputs/singapore25/run.log
+
+========================================================================
+RUN FINISHED 2026-05-30 23:17:28  (OK)
+Elapsed:     1s
+========================================================================

@@ -301,6 +301,16 @@ async def extract_chunk(pdf_name: str, page_num: int, chunk: str) -> str:
     - Use "Null" where a field does not apply.
     - Return [] only if there are no named actors or actor-like mentions.
     - Return only JSON. No markdown. No explanation.
+
+    NAMING FORMAT (CRITICAL)
+    When an entity has both a full name and an abbreviation, always emit it as "Full Name (ABBR)" in the entity field, even if the current sentence only shows one of the two forms.
+    - If a previous sentence in the text introduced "National Research Foundation (NRF)" and a later sentence only says "NRF", emit "National Research Foundation (NRF)" — not just "NRF".
+    - If a previous sentence introduced "Agency for Science, Technology and Research (A*STAR)" and a later sentence says "A*STAR", emit "Agency for Science, Technology and Research (A*STAR)".
+    - Only use the abbreviation alone (e.g. "NRF") if the full form is genuinely not present anywhere in the text.
+    - Only use the full name alone if no abbreviation is given.
+    - Do not invent an abbreviation that the text does not contain.
+    - Do not invent a full name that the text does not contain.
+    This consistency is required so that the same organisation can be merged across multiple mentions.
     """
 
     return await complete(prompt)

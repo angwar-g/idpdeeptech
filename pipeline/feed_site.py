@@ -15,9 +15,9 @@ import asyncio
 import warnings
 from pathlib import Path
 
-from dotenv import load_dotenv # type: ignore
+from dotenv import load_dotenv
 from llm_client import complete
-from json_repair import repair_json # type: ignore
+from json_repair import repair_json
 
 from pipeline_resume import (
     load_progress, mark_done, should_skip_page, all_complete_message,
@@ -193,6 +193,14 @@ async def extract_chunk(source_url: str, chunk_idx: int, chunk: str) -> str:
     - Use "Null" where a field does not apply.
     - Return [] only if there are no named actors or actor-like mentions.
     - Return only JSON. No markdown. No explanation.
+
+    NAMING FORMAT (CRITICAL)
+    When an entity has both a full name and an abbreviation, always emit it as "Full Name (ABBR)" in the entity field, even if the current page or section only shows one of the two forms.
+    - If the site's About page introduced "National Research Foundation (NRF)" and a press release only says "NRF", emit "National Research Foundation (NRF)" — not just "NRF".
+    - Only use the abbreviation alone if the full form is genuinely not present anywhere in this page.
+    - Only use the full name alone if no abbreviation is given.
+    - Do not invent an abbreviation or a full name that the text does not contain.
+    This consistency is required so that the same organisation can be merged across multiple mentions.
     """
 
     return await complete(prompt)

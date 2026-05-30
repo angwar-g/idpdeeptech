@@ -110,9 +110,26 @@ def main():
             f"\n{network_html} already exists.\n"
             "This PDF appears to be fully processed. To avoid accidentally "
             "redoing expensive LLM work, the pipeline is exiting.\n\n"
-            "Pass --force / -f to re-run anyway, or --skip-actors / "
-            "--skip-interactions to re-run only parts of the pipeline.\n"
+            "Pass --force / -f to re-run from scratch (deletes raw LLM results "
+            "and progress sidecars), or --skip-actors / --skip-interactions to "
+            "re-run only parts of the pipeline.\n"
         )
+
+    # If --force was requested, clear the raw LLM outputs and their progress
+    # sidecars so the LLM extraction scripts truly start from scratch instead
+    # of auto-resuming "already done".
+    if args.force:
+        to_clear = [
+            out_dir / "1_actor_results.json",
+            out_dir / "1_actor_results.progress.json",
+            out_dir / "3_interaction_results.json",
+            out_dir / "3_interaction_results.progress.json",
+        ]
+        removed = [f.name for f in to_clear if f.exists()]
+        for f in to_clear:
+            f.unlink(missing_ok=True)
+        if removed:
+            print(f"--force: cleared previous LLM outputs and sidecars: {', '.join(removed)}")
 
     # Validate required raw files exist for whatever LLM steps were skipped.
     if skip_actor_llm:

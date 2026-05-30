@@ -139,9 +139,27 @@ def main():
             "This site appears to be fully processed. To avoid accidentally "
             "redoing expensive work (including a fresh crawl), the pipeline "
             "is exiting.\n\n"
-            "Pass --force / -f to re-run from scratch, or --skip-crawl / "
-            "--skip-actors / --skip-interactions to re-run only parts.\n"
+            "Pass --force / -f to re-run from scratch (deletes crawl, raw LLM "
+            "results, and progress sidecars), or --skip-crawl / --skip-actors / "
+            "--skip-interactions to re-run only parts.\n"
         )
+
+    # If --force was requested, clear raw LLM outputs and progress sidecars so
+    # the LLM extraction scripts truly start from scratch instead of resuming.
+    # We do NOT delete crawl_output here -- crawl_site.py wipes that itself
+    # when run from scratch, and we want --force to actually trigger a re-crawl.
+    if args.force:
+        to_clear = [
+            out_dir / "1_actor_results.json",
+            out_dir / "1_actor_results.progress.json",
+            out_dir / "3_interaction_results.json",
+            out_dir / "3_interaction_results.progress.json",
+        ]
+        removed = [f.name for f in to_clear if f.exists()]
+        for f in to_clear:
+            f.unlink(missing_ok=True)
+        if removed:
+            print(f"--force: cleared previous LLM outputs and sidecars: {', '.join(removed)}")
 
     # Validate required artifacts exist for whatever was skipped.
     if skip_crawl:
