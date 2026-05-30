@@ -63,13 +63,13 @@ async def complete(prompt: str, max_tokens: int | None = None) -> str:
 
     kwargs: dict = {
         "messages": [{"role": "user", "content": prompt}],
-        "temperature": temperature,
     }
 
     if provider == "ollama":
         # litellm uses model="ollama/<name>" and api_base.
         kwargs["model"] = f"ollama/{model_name}"
         kwargs["api_base"] = os.environ.get("OLLAMA_BASE_URL", "http://localhost:11434")
+        kwargs["temperature"] = temperature
         if max_tokens is not None:
             kwargs["num_predict"] = max_tokens
 
@@ -77,6 +77,11 @@ async def complete(prompt: str, max_tokens: int | None = None) -> str:
         # litellm supports Cloudflare via model="cloudflare/<slug>" once
         # CLOUDFLARE_ACCOUNT_ID and CLOUDFLARE_API_TOKEN are set in the env.
         # litellm reads those env vars automatically; we just pass the model.
+        #
+        # Note: Cloudflare Workers AI does NOT accept temperature for most
+        # text-generation models, and litellm rejects rather than silently
+        # dropping. So we don't pass it. (Behavior on those models is
+        # already low-randomness in practice for structured prompts.)
         account_id = os.environ.get("CLOUDFLARE_ACCOUNT_ID", "")
         api_token = os.environ.get("CLOUDFLARE_API_TOKEN", "")
         if not account_id or not api_token:
