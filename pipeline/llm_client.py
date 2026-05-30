@@ -74,22 +74,33 @@ async def complete(prompt: str, max_tokens: int | None = None) -> str:
             kwargs["num_predict"] = max_tokens
 
     elif provider == "cloudflare":
-        # litellm supports Cloudflare via model="cloudflare/<slug>" once
-        # CLOUDFLARE_ACCOUNT_ID and CLOUDFLARE_API_TOKEN are set in the env.
-        # litellm reads those env vars automatically; we just pass the model.
+        # litellm supports Cloudflare via model="cloudflare/<slug>".
+        #
+        # We pass api_key and api_base EXPLICITLY rather than relying on
+        # litellm's env-var auto-discovery: different litellm versions look
+        # for different env var names (CLOUDFLARE_API_KEY vs CLOUDFLARE_API_TOKEN
+        # vs CLOUDFLARE_ACCOUNT_ID), so passing them as kwargs is the only
+        # reliable way.
         #
         # Note: Cloudflare Workers AI does NOT accept temperature for most
         # text-generation models, and litellm rejects rather than silently
-        # dropping. So we don't pass it. (Behavior on those models is
-        # already low-randomness in practice for structured prompts.)
-        account_id = os.environ.get("CLOUDFLARE_ACCOUNT_ID", "")
-        api_token = os.environ.get("CLOUDFLARE_API_TOKEN", "")
+        # dropping. So we don't pass it.
+        account_id = os.environ.get("CLOUDFLARE_ACCOUNT_ID", "").strip()
+        # Accept either env-var name to avoid frustrating mismatches.
+        api_token = (
+            os.environ.get("CLOUDFLARE_API_TOKEN", "").strip()
+            or os.environ.get("CLOUDFLARE_API_KEY", "").strip()
+        )
         if not account_id or not api_token:
             raise RuntimeError(
                 "LLM_PROVIDER=cloudflare requires CLOUDFLARE_ACCOUNT_ID and "
-                "CLOUDFLARE_API_TOKEN in the environment."
+                "CLOUDFLARE_API_TOKEN (or CLOUDFLARE_API_KEY) in the environment."
             )
         kwargs["model"] = f"cloudflare/{model_name}"
+        kwargs["api_key"] = api_token
+        kwargs["api_base"] = (
+            f"https://api.cloudflare.com/client/v4/accounts/{account_id}/ai/run/"
+        )
         if max_tokens is not None:
             kwargs["max_tokens"] = max_tokens
 
