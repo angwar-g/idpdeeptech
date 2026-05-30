@@ -91,6 +91,12 @@ def main():
              "--skip-actors is also set. Cannot be combined with "
              "--skip-interactions (which skips both LLMs).",
     )
+    parser.add_argument(
+        "--force", "-f", action="store_true",
+        help="Re-run even if site_outputs/<domain>/network.html already exists. "
+             "Without this flag, an existing network.html triggers an early exit "
+             "to avoid accidentally redoing expensive work (and re-crawling).",
+    )
     args = parser.parse_args()
 
     # Implication chain: -i -> -s -> --skip-crawl.
@@ -119,6 +125,23 @@ def main():
         out_dir = root / "site_outputs" / stem
 
     out_dir.mkdir(parents=True, exist_ok=True)
+
+    # Guard against accidentally redoing a completed run.
+    # Skip flags (-s, -i) are explicit re-run intentions, so they bypass this.
+    network_html = out_dir / "network.html"
+    if (network_html.exists()
+            and not args.force
+            and not args.skip_crawl
+            and not args.skip_actors
+            and not args.skip_interactions):
+        sys.exit(
+            f"\n{network_html} already exists.\n"
+            "This site appears to be fully processed. To avoid accidentally "
+            "redoing expensive work (including a fresh crawl), the pipeline "
+            "is exiting.\n\n"
+            "Pass --force / -f to re-run from scratch, or --skip-crawl / "
+            "--skip-actors / --skip-interactions to re-run only parts.\n"
+        )
 
     # Validate required artifacts exist for whatever was skipped.
     if skip_crawl:

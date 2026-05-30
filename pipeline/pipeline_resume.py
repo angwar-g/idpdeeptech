@@ -22,10 +22,50 @@ def progress_path_for(data_path: Path) -> Path:
 
 
 def load_progress(data_path: Path) -> set[tuple[str, int]]:
-    """Read the (source, page) set already processed. Empty set if no sidecar."""
+    """Read the (source, page) set already processed.
+
+    If the sidecar is missing but the data file exists (e.g. from a run made
+    before sidecars were introduced, or a manually-deleted sidecar), backfill
+    the sidecar from the data file's (source_document, page) pairs and treat
+    those as 'done'. This avoids accidentally re-doing hours of LLM work just
+    because the sidecar file isn't there.
+
+    Returns empty set if neither file exists.
+    """
     sidecar = progress_path_for(data_path)
+
+    if not sidecar.exists() and data_path.exists():
+        # Backfill from the data file's records.
+        try:
+            records = json.loads(data_path.read_text(encoding="utf-8"))
+        except Exception:
+            return set()
+        if not isinstance(records, list):
+            return set()
+        done = set()
+        for rec in records:
+            if not isinstance(rec, dict):
+                continue
+            src = rec.get("source_document")
+            page = rec.get("page")
+            if src is None or page is None:
+                continue
+            try:
+                done.add((str(src), int(page)))
+            except (TypeError, ValueError):
+                continue
+        if done:
+            save_progress(data_path, done)
+            print(
+                f"[pipeline_resume] Backfilled {sidecar.name} from existing "
+                f"{data_path.name} ({len(done)} (source, page) pairs). "
+                "Run will resume from where the old data left off."
+            )
+        return done
+
     if not sidecar.exists():
         return set()
+
     try:
         raw = json.loads(sidecar.read_text(encoding="utf-8"))
     except Exception:

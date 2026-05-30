@@ -61,6 +61,13 @@ def main():
              "or to interactions LLM when --skip-actors is also set. "
              "Cannot be combined with --skip-interactions (which skips both LLMs).",
     )
+    parser.add_argument(
+        "--force", "-f", action="store_true",
+        help="Re-run even if pdf_outputs/<stem>/network.html already exists. "
+             "Without this flag, an existing network.html triggers an early exit "
+             "to avoid accidentally redoing expensive work. Use this when you "
+             "intentionally want to regenerate, e.g. after changing prompts.",
+    )
     args = parser.parse_args()
 
     # Implication: -i also implies -s.
@@ -91,6 +98,21 @@ def main():
     work_pdf_dir.mkdir(exist_ok=True)
 
     shutil.copy2(pdf_path, work_pdf_dir / pdf_path.name)
+
+    # Guard against accidentally redoing a completed run.
+    # The skip flags (-s, -i) are explicit re-run intentions, so they bypass this.
+    network_html = out_dir / "network.html"
+    if (network_html.exists()
+            and not args.force
+            and not args.skip_actors
+            and not args.skip_interactions):
+        sys.exit(
+            f"\n{network_html} already exists.\n"
+            "This PDF appears to be fully processed. To avoid accidentally "
+            "redoing expensive LLM work, the pipeline is exiting.\n\n"
+            "Pass --force / -f to re-run anyway, or --skip-actors / "
+            "--skip-interactions to re-run only parts of the pipeline.\n"
+        )
 
     # Validate required raw files exist for whatever LLM steps were skipped.
     if skip_actor_llm:

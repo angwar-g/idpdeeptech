@@ -9,7 +9,7 @@ from pathlib import Path
 
 from dotenv import load_dotenv
 import fitz  # PyMuPDF
-from litellm import acompletion
+from llm_client import complete
 from json_repair import repair_json
 
 from pipeline_resume import (
@@ -303,14 +303,7 @@ async def extract_chunk(pdf_name: str, page_num: int, chunk: str) -> str:
     - Return only JSON. No markdown. No explanation.
     """
 
-    response = await acompletion(
-        model="ollama/mistral",
-        api_base="http://localhost:11434",
-        messages=[{"role": "user", "content": prompt}],
-        temperature=0,
-    )
-
-    return response.choices[0].message.content  # type: ignore
+    return await complete(prompt)
 
 
 def parse_args():

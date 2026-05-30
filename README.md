@@ -77,13 +77,84 @@ Each flag is validated up front: if you ask to skip something but a required fil
 
 ---
 
+## Choosing the LLM provider
+
+All four extraction scripts route their LLM calls through `llm_client.py`, which switches between providers based on environment variables. The pipeline code is identical regardless of where inference runs — only the env vars change.
+
+### Ollama (local laptop, default)
+
+No setup beyond having Ollama running. Defaults:
+```
+LLM_PROVIDER=ollama          # or unset
+LLM_MODEL=mistral            # or any Ollama model name
+OLLAMA_BASE_URL=http://localhost:11434
+```
+
+### Cloudflare Workers AI (remote)
+
+Set in your shell or `.env`:
+```
+export LLM_PROVIDER=cloudflare
+export LLM_MODEL=@cf/meta/llama-3.1-8b-instruct
+export CLOUDFLARE_ACCOUNT_ID=...
+export CLOUDFLARE_API_TOKEN=...     # token with "Workers AI Read" permission
+```
+
+Same scripts, same commands. The pipeline doesn't know or care.
+
+Why Llama 3.1 8B? Comparable model size to local Mistral 7B (so prompts behave similarly), generally better at structured JSON output, cheap per call on Workers AI. Test against your existing Mistral output on one PDF before committing — switch to a bigger model only if you see real quality regressions.
+
+Check the live model catalog at `https://developers.cloudflare.com/workers-ai/models/`.
+
+---
+
+## PDF Pipeline Batch
+
+```
+python3 pdf_pipeline_batch.py
+```
+
+Runs `pdf_pipeline.py` for every `*.pdf` in `pdf_input/`.
+
+| Flag | Shortcut | Description |
+|---|---|---|
+| `--only NAME ...` | | Restrict to specific PDFs (filename or stem). |
+| `--resume` | | Skip PDFs whose `pdf_outputs/<stem>/network.html` already exists. |
+| `--workers N` | `-w N` | Run N PDFs in parallel (default 1). |
+
+**Examples**
+
+```
+python3 pdf_pipeline_batch.py
+python3 pdf_pipeline_batch.py --workers 4
+python3 pdf_pipeline_batch.py --only china25.pdf japan25.pdf
+python3 pdf_pipeline_batch.py --resume
+```
+
+---
+
+## Parallelism (`--workers N` in both batch scripts)
+
+Each worker runs an independent pipeline subprocess chain for one document. Workers don't share state — each writes to its own output folder, so there's no risk of race conditions on the progress sidecars or output JSONs.
+
+**When to use `--workers > 1`:**
+- Using Cloudflare or another remote LLM: yes, 4-8 workers are a free win.
+- Local Ollama on a laptop with a small GPU: no, you'll just queue requests at the single Ollama backend and gain nothing. Keep `--workers 1`.
+- Local Ollama on a server with a beefy GPU: yes, depending on GPU memory.
+
+**Trade-off:** terminal output from parallel workers interleaves. Each document's clean trace is still in its own `<output_dir>/run.log` — so for clean per-document logs, read the log files after the fact rather than watching the terminal.
+
+**Crash recovery still works.** The progress sidecar mechanism is per-document, so a crash in one worker doesn't affect the others. `--resume` skips fully completed documents on the next batch invocation.
+
+---
+
 ## Site Pipeline Batch (many companies)
 
 ```
-python3 site_pipeline_batch.py <config.json>
+python3 site_pipeline_batch.py
 ```
 
-Reads a JSON file shaped like:
+Reads `site_input/companies.json` by default. The JSON is shaped like:
 
 ```json
 {
@@ -95,32 +166,33 @@ Reads a JSON file shaped like:
 }
 ```
 
-**Input:** drop the config at `site_input/companies.json` (mirroring `pdf_input/`).
-
 | Flag | Shortcut | Description |
 |---|---|---|
+| `config` (positional) | | Optional path to JSON file (default: `site_input/companies.json`). Bare filenames are looked up in `site_input/`. |
 | `--crawl N` | `-c N` | Crawl depth per company (default `2`). |
 | `--max-pages N` | | Max pages per company (default `10`). |
-| `--only NAME ...` | | Restrict to specific company names. Case- and punctuation-insensitive. |
+| `--only NAME ...` | | Restrict to specific JSON keys (the human-readable names). Case- and punctuation-insensitive. |
 | `--resume` | | Skip any company whose `website/network.html` already exists. |
+| `--workers N` | `-w N` | Run N companies in parallel (default 1). |
 
 **Examples**
 
 ```
-python3 site_pipeline_batch.py companies.json
-python3 site_pipeline_batch.py companies.json --crawl 3 --max-pages 30
-python3 site_pipeline_batch.py companies.json --only Psiquantum Quandela
-python3 site_pipeline_batch.py companies.json --only "D-Wave Quantum"
-python3 site_pipeline_batch.py companies.json --resume
+python3 site_pipeline_batch.py
+python3 site_pipeline_batch.py --crawl 3 --max-pages 30
+python3 site_pipeline_batch.py --only Psiquantum Quandela
+python3 site_pipeline_batch.py --only "D-Wave Quantum"
+python3 site_pipeline_batch.py --resume --workers 4
+python3 site_pipeline_batch.py myconfig.json    # use a different config in site_input/
 ```
 
-Bare filenames are looked up in `site_input/` automatically. You can still pass an explicit path (`site_input/companies.json` or an absolute path) if you prefer.
+`--only` matches against the **JSON keys** (the human-readable name on the left of each entry), not URLs or output folder slugs. The match is tolerant: case-insensitive, ignores spaces, dashes, and punctuation. So `Psiquantum`, `psiquantum`, and `PSI-QUANTUM` all match the JSON key `"Psiquantum"`. Multi-word names should be quoted: `--only "D-Wave Quantum"`.
 
 **Output:** `site_outputs/<company_slug>/website/`
 
 LinkedIn is intentionally not crawled — corporate LinkedIn pages serve an auth wall to anonymous visitors, so a depth-0 fetch returns a login page rather than posts. The `linkedin/` slot is reserved for when this is wired up with proper authentication or an API.
 
-**Slug derivation from JSON keys:**
+**Slug derivation from JSON keys** (used for output folder name only — you never type it):
 - `Amazon Braket (Amazon)` → `amazon_braket` (parentheticals stripped)
 - `D-Wave Quantum` → `d_wave_quantum`
 - `Quantum Computing Inc.` → `quantum_computing_inc`

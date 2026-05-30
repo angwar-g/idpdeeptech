@@ -1,0 +1,60 @@
+# --- Secrets ---------------------------------------------------------------
+# Never commit the real .env (API tokens). Commit .env.example as a template.
+.env
+.env.local
+.env.*.local
+*.pem
+*.key
+
+# --- Pipeline outputs ------------------------------------------------------
+# Large generated artifacts. Re-derive by running the pipelines.
+# pdf_outputs/
+# site_outputs/
+# merged_outputs/
+# crawl_output/
+
+# Old / unused legacy folders, in case any are still around.
+# output/
+# outputs/
+
+# Per-run logs (already inside output dirs, but listed defensively)
+# run.log
+# *.progress.json
+# batch_failures.log
+
+# --- Python ----------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+build/
+dist/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# --- Editor / OS -----------------------------------------------------------
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# --- Jupyter ---------------------------------------------------------------
+.ipynb_checkpoints/
+
+# --- Inputs (keep PDFs/JSON configs tracked; ignore scratch) ---------------
+# pdf_input/ is intentionally NOT ignored — track the PDFs you process.
+# site_input/ is intentionally NOT ignored — track the company config.
+# But ignore any scratch / personal copies:
+pdf_input/_scratch/
+site_input/_scratch/

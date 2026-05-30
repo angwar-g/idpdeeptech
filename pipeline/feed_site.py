@@ -15,9 +15,9 @@ import asyncio
 import warnings
 from pathlib import Path
 
-from dotenv import load_dotenv
-from litellm import acompletion
-from json_repair import repair_json
+from dotenv import load_dotenv # type: ignore
+from llm_client import complete
+from json_repair import repair_json # type: ignore
 
 from pipeline_resume import (
     load_progress, mark_done, should_skip_page, all_complete_message,
@@ -195,14 +195,7 @@ async def extract_chunk(source_url: str, chunk_idx: int, chunk: str) -> str:
     - Return only JSON. No markdown. No explanation.
     """
 
-    response = await acompletion(
-        model="ollama/mistral",
-        api_base="http://localhost:11434",
-        messages=[{"role": "user", "content": prompt}],
-        temperature=0,
-    )
-
-    return response.choices[0].message.content  # type: ignore
+    return await complete(prompt)
 
 
 def parse_args():

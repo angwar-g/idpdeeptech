@@ -19,7 +19,7 @@ import warnings
 from pathlib import Path
 
 import fitz  # noqa: F401  (kept so the env mirrors interactions_pdf.py; harmless)
-from litellm import acompletion
+from llm_client import complete
 from json_repair import repair_json
 
 from pipeline_resume import (
@@ -323,15 +323,7 @@ async def extract_interactions_from_chunk(
     - Return only JSON. No markdown. No explanation.
     """
 
-    response = await acompletion(
-        model="ollama/mistral",
-        api_base="http://localhost:11434",
-        messages=[{"role": "user", "content": prompt}],
-        temperature=0,
-        num_predict=1500,
-    )
-
-    return response.choices[0].message.content  # type: ignore
+    return await complete(prompt, max_tokens=1500)
 
 
 def has_required_schema(edge: dict) -> bool:

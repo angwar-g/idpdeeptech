@@ -14,12 +14,13 @@ For each company, runs the website pipeline into site_outputs/<slug>/website/.
 LinkedIn is intentionally not processed yet (planned: site_outputs/<slug>/linkedin/).
 
 Usage:
-    python3 site_pipeline_batch.py companies.json                  # looks in site_input/
-    python3 site_pipeline_batch.py site_input/companies.json       # explicit path also works
-    python3 site_pipeline_batch.py /abs/path/to/companies.json     # absolute path also works
-    python3 site_pipeline_batch.py companies.json --crawl 3 --max-pages 30
-    python3 site_pipeline_batch.py companies.json --only Psiquantum Quandela
-    python3 site_pipeline_batch.py companies.json --resume
+    python3 site_pipeline_batch.py                                 # uses site_input/companies.json
+    python3 site_pipeline_batch.py myconfig.json                   # looks in site_input/
+    python3 site_pipeline_batch.py site_input/myconfig.json        # explicit path also works
+    python3 site_pipeline_batch.py /abs/path/to/myconfig.json      # absolute path also works
+    python3 site_pipeline_batch.py --crawl 3 --max-pages 30
+    python3 site_pipeline_batch.py --only Psiquantum Quandela
+    python3 site_pipeline_batch.py --resume --workers 4
 """
 import argparse
 import json
@@ -58,7 +59,10 @@ def main():
         formatter_class=argparse.RawDescriptionHelpFormatter,
         description=__doc__,
     )
-    parser.add_argument("config", help="Path to companies JSON file")
+    parser.add_argument(
+        "config", nargs="?", default="companies.json",
+        help="Path to companies JSON file (default: companies.json in site_input/).",
+    )
     parser.add_argument(
         "--crawl", "-c", type=int, default=2,
         help="Crawl depth passed to each site_pipeline run (default 2).",
@@ -75,6 +79,13 @@ def main():
     parser.add_argument(
         "--resume", action="store_true",
         help="Skip companies whose website/network.html already exists.",
+    )
+    parser.add_argument(
+        "--workers", "-w", type=int, default=1,
+        help="Number of companies to process in parallel (default 1, sequential). "
+             "Each worker runs an independent site_pipeline.py subprocess chain. "
+             "Cloudflare Workers AI can handle ~4-8 cheaply; with local Ollama on "
+             "a laptop, keep this at 1 unless you have a beefy GPU.",
     )
     args = parser.parse_args()
 
@@ -129,57 +140,105 @@ def main():
     failures_log = root / "site_outputs" / "batch_failures.log"
     failures_log.parent.mkdir(parents=True, exist_ok=True)
     with failures_log.open("a", encoding="utf-8") as f:
-        f.write(f"\n=== Batch run started {time.strftime('%Y-%m-%d %H:%M:%S')} ===\n")
+        f.write(f"\n=== Batch run started {time.strftime('%Y-%m-%d %H:%M:%S')} "
+                f"(workers={args.workers}) ===\n")
 
+    # Build the plan first (cheap dict/path operations), then run.
+    plan: list[dict] = []
     for idx, (name, links) in enumerate(companies.items(), start=1):
         slug = company_slug(name)
         website_url = (links or {}).get("website_link", "").strip()
         out_dir = root / "site_outputs" / slug / "website"
 
-        print(f"\n========== [{idx}/{total}] {name} (slug: {slug}) ==========")
-
-        # Skip rules in order of cheapness.
         if not website_url:
-            print(f"  Skipping: no website_link.")
+            print(f"[{idx}/{total}] {name}: skipping (no website_link)")
             skipped_no_website.append(name)
             continue
 
         if is_linkedin_url(website_url):
-            print(f"  Skipping: website_link is a LinkedIn URL ({website_url}). "
-                  "LinkedIn is not yet supported.")
+            print(f"[{idx}/{total}] {name}: skipping (website_link is a LinkedIn URL)")
             skipped_linkedin_in_website.append(name)
             continue
 
         if args.resume and (out_dir / "network.html").exists():
-            print(f"  Skipping (--resume): {out_dir / 'network.html'} already exists.")
+            print(f"[{idx}/{total}] {name}: skipping (--resume, already done)")
             skipped_existing.append(name)
             continue
 
         out_dir.mkdir(parents=True, exist_ok=True)
+        plan.append({
+            "idx": idx,
+            "name": name,
+            "slug": slug,
+            "url": website_url,
+            "out_dir": out_dir,
+        })
 
+    def run_one(job: dict) -> tuple[str, str | None]:
+        """Run site_pipeline.py for one company. Returns (name, error_or_None)."""
         cmd = [
             sys.executable,
             str(root / "site_pipeline.py"),
-            website_url,
+            job["url"],
             "--crawl", str(args.crawl),
             "--max-pages", str(args.max_pages),
-            "--out-dir", str(out_dir),
+            "--out-dir", str(job["out_dir"]),
         ]
-
         try:
             subprocess.run(cmd, check=True)
-            succeeded.append(name)
+            return job["name"], None
         except subprocess.CalledProcessError as e:
-            reason = f"site_pipeline exited with code {e.returncode}"
-            print(f"  FAILED: {reason}")
-            failed.append((name, reason))
-            with failures_log.open("a", encoding="utf-8") as f:
-                f.write(f"{name}\t{slug}\t{website_url}\t{reason}\n")
-            continue
-        except KeyboardInterrupt:
-            print("\nInterrupted by user. Stopping batch.")
-            failed.append((name, "KeyboardInterrupt"))
-            break
+            return job["name"], f"site_pipeline exited with code {e.returncode}"
+        except Exception as e:
+            return job["name"], f"unexpected error: {type(e).__name__}: {e}"
+
+    if not plan:
+        print("\nNothing to run (all companies skipped).")
+    elif args.workers <= 1:
+        print(f"\nRunning {len(plan)} company pipeline(s) sequentially...\n")
+        for job in plan:
+            print(f"\n========== [{job['idx']}/{total}] {job['name']} "
+                  f"(slug: {job['slug']}) ==========")
+            try:
+                name, err = run_one(job)
+            except KeyboardInterrupt:
+                print("\nInterrupted by user. Stopping batch.")
+                failed.append((job["name"], "KeyboardInterrupt"))
+                break
+            if err is None:
+                succeeded.append(name)
+            else:
+                print(f"  FAILED: {err}")
+                failed.append((name, err))
+                with failures_log.open("a", encoding="utf-8") as f:
+                    f.write(f"{name}\t{job['slug']}\t{job['url']}\t{err}\n")
+    else:
+        # Threads, not processes: each task is a subprocess.run() that itself
+        # forks a real OS process. Threads here just block waiting on pipes,
+        # so the GIL is a non-issue.
+        import concurrent.futures as cf
+        print(f"\nRunning {len(plan)} company pipeline(s) with {args.workers} workers...")
+        print("Note: parallel terminal output interleaves. Each company's clean "
+              "trace is in its own site_outputs/<slug>/website/run.log\n")
+
+        with cf.ThreadPoolExecutor(max_workers=args.workers) as pool:
+            future_to_job = {pool.submit(run_one, job): job for job in plan}
+            try:
+                for fut in cf.as_completed(future_to_job):
+                    job = future_to_job[fut]
+                    name, err = fut.result()
+                    tag = f"[{job['idx']}/{total}] {name}"
+                    if err is None:
+                        print(f"  DONE: {tag}")
+                        succeeded.append(name)
+                    else:
+                        print(f"  FAILED: {tag} -- {err}")
+                        failed.append((name, err))
+                        with failures_log.open("a", encoding="utf-8") as f:
+                            f.write(f"{name}\t{job['slug']}\t{job['url']}\t{err}\n")
+            except KeyboardInterrupt:
+                print("\nInterrupted by user. Stopping batch "
+                      "(in-flight workers will finish their current company).")
 
     # Summary.
     print("\n" + "=" * 60)
