@@ -12,6 +12,7 @@ python3 pdf_pipeline.py <pdf_filename>
 |---|---|---|
 | `--skip-actors` | `-s` | Skip the actor LLM step. Re-runs `clean_actors` and continues normally. Requires `1_actor_results.json`. |
 | `--skip-interactions` | `-i` | Skip everything through the interactions LLM. Only re-runs `clean_interactions` + helix + viz. Requires `1_actor_results.json`, `2_actor_nodes.json`, and `3_interaction_results.json`. Implies `--skip-actors`. |
+| `--start-page N` | `-p N` | Force the active LLM step to start at page N (1-indexed). Goes to actor LLM by default, or to interactions LLM when `-s` is also set. Cannot combine with `-i`. |
 
 **Examples**
 
@@ -39,6 +40,7 @@ python3 site_pipeline.py <url>
 | `--skip-crawl` | | Reuse existing `crawl_output/`. |
 | `--skip-actors` | `-s` | Skip the actor LLM step. Re-runs `clean_actors` and continues normally. Requires `1_actor_results.json`. Implies `--skip-crawl`. |
 | `--skip-interactions` | `-i` | Skip everything through the interactions LLM. Only re-runs `clean_interactions` + helix + viz. Requires `1_actor_results.json`, `2_actor_nodes.json`, and `3_interaction_results.json`. Implies `--skip-actors` (and `--skip-crawl`). |
+| `--start-page N` | `-p N` | Force the active LLM step to start at URL ordinal N (1-indexed, in sorted crawl order). Goes to actor LLM by default, or to interactions LLM when `-s` is also set. Cannot combine with `-i`. |
 | `--out-dir PATH` | | Explicit output directory. Overrides the auto-derived `site_outputs/<domain>/` path. Used internally by the batch driver — you typically don't need this for one-off runs. |
 
 **Examples**
@@ -160,6 +162,28 @@ The two LLM steps (1 and 3) are the slow ones. Both save incrementally after eac
 | Want to tweak only `clean_interactions.py` and re-run from there | `python3 pdf_pipeline.py same.pdf -i` (or site equivalent) |
 | Want to re-crawl with different depth | rerun without `--skip-crawl` (wipes `crawl_output/`) |
 | Want to re-run only the downstream stuff (helix + viz) | run `helix.py` and `network.py` directly in the output folder |
+
+---
+
+## Resuming after a crash
+
+The actor and interactions LLM scripts (`feed_pdf`, `feed_site`, `interactions_pdf`, `interactions_site`) both write a small progress sidecar alongside their output:
+
+```
+1_actor_results.json       <- the actual data
+1_actor_results.progress.json   <- which (source, page) pairs are done
+```
+
+**Auto-resume.** Just re-run with the same skip flag you'd normally use after a crash (`-s` to redo cleaning then continue interactions, or run the pipeline from scratch — both work). The script reads the sidecar, sees which pages were already fully processed, and skips them. If every expected page is already done, it prints "Nothing to do" and exits. No manual counting required.
+
+**Manual override: `-p N` / `--start-page N`.** Force a restart from page N (or URL ordinal N for sites), ignoring the sidecar. Useful when:
+- You changed the prompt and want to re-extract from page N onwards.
+- You suspect a page got partially processed and want to redo it cleanly.
+- You want to skip a known-problematic page entirely (use a higher N and then go back to it later).
+
+The flag routes to whichever LLM step is active for this run: actor LLM by default, interactions LLM when `-s` is also passed. Combining `-p` with `-i` errors out — `-i` skips both LLMs, so there's nothing to start.
+
+**Force a complete redo.** Delete the progress sidecar (`rm 1_actor_results.progress.json`) and the script will re-process every page. The raw JSON is also written fresh from whatever incremental state was there.
 
 ---
 

@@ -1,3 +1,4 @@
+import argparse
 import json
 import re
 import asyncio
@@ -7,6 +8,10 @@ import warnings
 import fitz  # type: ignore PyMuPDF
 from litellm import acompletion
 from json_repair import repair_json
+
+from pipeline_resume import (
+    load_progress, mark_done, should_skip_page, all_complete_message,
+)
 
 warnings.filterwarnings("ignore", message="Pydantic serializer warnings:*")
 warnings.filterwarnings("ignore", category=UserWarning, module="pydantic")
@@ -344,11 +349,40 @@ def save_edges(edges: list[dict]) -> None:
     )
 
 
+def parse_args():
+    parser = argparse.ArgumentParser(
+        description="Interaction extraction from PDF(s) in pdf_input/.",
+    )
+    parser.add_argument(
+        "--start-page", "-p", type=int, default=None,
+        help="Force start at this page number (1-indexed). Overrides auto-resume.",
+    )
+    return parser.parse_args()
+
+
 async def main():
+    args = parse_args()
+
     actors = json.loads(INPUT_JSON.read_text(encoding="utf-8"))
     short_aliases = build_short_aliases(actors)
 
-    all_interactions = []
+    # Auto-resume from progress sidecar.
+    done = load_progress(OUTPUT_EDGES_JSON)
+
+    if OUTPUT_EDGES_JSON.exists():
+        try:
+            all_interactions = json.loads(OUTPUT_EDGES_JSON.read_text(encoding="utf-8"))
+            if not isinstance(all_interactions, list):
+                all_interactions = []
+        except Exception:
+            all_interactions = []
+    else:
+        all_interactions = []
+
+    if args.start_page is not None:
+        print(f"--start-page {args.start_page}: skipping pages before {args.start_page} (ignoring sidecar).")
+    elif done:
+        print(f"Auto-resume: {len(done)} (source, page) pairs already done, skipping them.")
 
     for pdf_path in PDF_DIR.glob("*.pdf"):
         pdf_name = pdf_path.name
@@ -364,8 +398,20 @@ async def main():
         pages = extract_pdf_text(pdf_path)
         total_pages = len(pages)
 
+        # Quick "everything done" check.
+        expected = [(pdf_name, p["page"]) for p in pages]
+        msg = all_complete_message(OUTPUT_EDGES_JSON, done, expected)
+        if msg and args.start_page is None:
+            print(msg)
+            continue
+
         for page in pages:
             page_num = page["page"]
+
+            if should_skip_page(pdf_name, page_num, done, args.start_page):
+                print(f"Skipping interactions: {pdf_name}, page {page_num}/{total_pages} (already done)")
+                continue
+
             chunks = paragraph_chunks(page["text"], max_chars=1800, overlap_paragraphs=1)
             total_chunks = len(chunks)
 
@@ -414,8 +460,9 @@ async def main():
 
                 await asyncio.sleep(1)
 
-            # Incremental save after each page.
+            # Incremental save + progress sidecar after each fully processed page.
             save_edges(all_interactions)
+            mark_done(done, pdf_name, page_num, OUTPUT_EDGES_JSON)
 
     all_interactions = dedupe_edges(all_interactions)
 

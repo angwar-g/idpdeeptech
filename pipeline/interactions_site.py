@@ -11,6 +11,7 @@ Writes to 3_interaction_results.json so the existing clean_interactions.py
 picks it up without modification. Saves incrementally after each URL.
 """
 
+import argparse
 import json
 import re
 import asyncio
@@ -20,6 +21,10 @@ from pathlib import Path
 import fitz  # noqa: F401  (kept so the env mirrors interactions_pdf.py; harmless)
 from litellm import acompletion
 from json_repair import repair_json
+
+from pipeline_resume import (
+    load_progress, mark_done, should_skip_page, all_complete_message,
+)
 
 warnings.filterwarnings("ignore", message="Pydantic serializer warnings:*")
 warnings.filterwarnings("ignore", category=UserWarning, module="pydantic")
@@ -389,7 +394,21 @@ def save_edges(edges: list[dict]) -> None:
     )
 
 
+def parse_args():
+    parser = argparse.ArgumentParser(
+        description="Interaction extraction from crawled website pages.",
+    )
+    parser.add_argument(
+        "--start-page", "-p", type=int, default=None,
+        help="Force start at this URL ordinal (1-indexed, in sorted order). "
+             "Overrides auto-resume.",
+    )
+    return parser.parse_args()
+
+
 async def main():
+    args = parse_args()
+
     if not INPUT_JSON.exists():
         print(f"Missing {INPUT_JSON}. Run clean_actors.py first.")
         return
@@ -408,7 +427,19 @@ async def main():
         return
 
     valid_actor_keys = {normalize_name(name) for name in actor_names}
-    all_interactions: list[dict] = []
+
+    # Auto-resume from progress sidecar.
+    done = load_progress(OUTPUT_EDGES_JSON)
+
+    if OUTPUT_EDGES_JSON.exists():
+        try:
+            all_interactions = json.loads(OUTPUT_EDGES_JSON.read_text(encoding="utf-8"))
+            if not isinstance(all_interactions, list):
+                all_interactions = []
+        except Exception:
+            all_interactions = []
+    else:
+        all_interactions = []
 
     crawl_files = sorted(CRAWL_DIR.glob("*.json"))
     total_files = len(crawl_files)
@@ -417,17 +448,44 @@ async def main():
         print(f"No JSON files in {CRAWL_DIR}/. Nothing to do.")
         return
 
+    if args.start_page is not None:
+        print(f"--start-page {args.start_page}: skipping URLs before ordinal {args.start_page} (ignoring sidecar).")
+    elif done:
+        print(f"Auto-resume: {len(done)} (url, ordinal) pairs already done, skipping them.")
+
+    # Build url-at-ordinal map up front for the completeness check.
+    url_at_ordinal: dict[int, tuple[str, Path]] = {}
     for file_idx, crawl_file in enumerate(crawl_files, start=1):
+        try:
+            data = json.loads(crawl_file.read_text(encoding="utf-8"))
+        except Exception:
+            continue
+        url = data.get("url", crawl_file.stem)
+        url_at_ordinal[file_idx] = (url, crawl_file)
+
+    expected = [(url, idx) for idx, (url, _) in url_at_ordinal.items()]
+    msg = all_complete_message(OUTPUT_EDGES_JSON, done, expected)
+    if msg and args.start_page is None:
+        print(msg)
+        return
+
+    for file_idx in sorted(url_at_ordinal.keys()):
+        url, crawl_file = url_at_ordinal[file_idx]
+
+        if should_skip_page(url, file_idx, done, args.start_page):
+            print(f"Skipping interactions: {url} ({file_idx}/{total_files}) (already done)")
+            continue
+
         try:
             data = json.loads(crawl_file.read_text(encoding="utf-8"))
         except Exception as e:
             print(f"Skipping malformed crawl file {crawl_file.name}: {e}")
             continue
 
-        url = data.get("url", crawl_file.stem)
         markdown = data.get("markdown", "")
 
         if not markdown.strip():
+            mark_done(done, url, file_idx, OUTPUT_EDGES_JSON)
             continue
 
         chunks = paragraph_chunks(markdown, max_chars=1500, overlap_paragraphs=1)
@@ -478,8 +536,9 @@ async def main():
 
             await asyncio.sleep(1)
 
-        # Incremental save after each URL.
+        # Incremental save + progress sidecar.
         save_edges(all_interactions)
+        mark_done(done, url, file_idx, OUTPUT_EDGES_JSON)
 
     all_interactions = dedupe_edges(all_interactions)
 

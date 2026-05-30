@@ -83,12 +83,30 @@ def main():
              "When set, overrides the auto-derived site_outputs/<domain>/ path. "
              "Used by site_pipeline_batch.py to nest outputs under company/source folders.",
     )
+    parser.add_argument(
+        "--start-page", "-p", type=int, default=None,
+        help="Force the active LLM step to start at this URL ordinal "
+             "(1-indexed, in sorted crawl order), ignoring auto-resume. "
+             "Goes to actor LLM by default, or to interactions LLM when "
+             "--skip-actors is also set. Cannot be combined with "
+             "--skip-interactions (which skips both LLMs).",
+    )
     args = parser.parse_args()
 
     # Implication chain: -i -> -s -> --skip-crawl.
     skip_interaction_llm = args.skip_interactions
     skip_actor_llm = args.skip_actors or skip_interaction_llm
     skip_crawl = args.skip_crawl or skip_actor_llm
+
+    if args.start_page is not None and skip_interaction_llm:
+        sys.exit(
+            "Error: --start-page is incompatible with --skip-interactions.\n"
+            "When --skip-interactions is set, no LLM steps run, so there is\n"
+            "nothing to start at page N."
+        )
+
+    if args.start_page is not None and args.start_page < 1:
+        sys.exit("Error: --start-page must be 1 or greater.")
 
     root = Path(__file__).parent.resolve()
 
@@ -165,11 +183,21 @@ def main():
                 log,
             )
 
+        # Decide which LLM step gets --start-page (if set).
+        actor_cmd = [sys.executable, str(root / "feed_site.py")]
+        interaction_cmd = [sys.executable, str(root / "interactions_site.py")]
+        if args.start_page is not None:
+            sp_args = ["--start-page", str(args.start_page)]
+            if skip_actor_llm:
+                interaction_cmd.extend(sp_args)
+            else:
+                actor_cmd.extend(sp_args)
+
         # 1. Actor extraction (LLM)
         if skip_actor_llm:
             log_print("\n=== 1 actor extraction (skipped, reusing 1_actor_results.json) ===", log)
         else:
-            run("1 actor extraction", [sys.executable, str(root / "feed_site.py")], out_dir, log)
+            run("1 actor extraction", actor_cmd, out_dir, log)
 
         # 2. Clean actors. Skip when -i is set, because 2_actor_nodes.json must already
         # exist (interactions can't have produced raw results without it).
@@ -189,7 +217,7 @@ def main():
         if skip_interaction_llm:
             log_print("\n=== 3 interaction extraction (skipped, reusing 3_interaction_results.json) ===", log)
         else:
-            run("3 interaction extraction", [sys.executable, str(root / "interactions_site.py")], out_dir, log)
+            run("3 interaction extraction", interaction_cmd, out_dir, log)
 
         # 4. Clean interactions  --- ALWAYS RUNS
         run("4 clean interactions", [sys.executable, str(root / "clean_interactions.py")], out_dir, log)

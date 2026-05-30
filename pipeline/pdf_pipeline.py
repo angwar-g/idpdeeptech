@@ -10,10 +10,13 @@ from pipeline_logging import open_run_log, close_run_log, log_print, run_subproc
 # feed - clean - inter - clean - helix - network
 
 
-def run_step(label, script, cwd, log):
+def run_step(label, script, cwd, log, extra_args=None):
     log_print(f"\n=== {label} ===", log)
+    cmd = [sys.executable, str(Path(__file__).parent / script)]
+    if extra_args:
+        cmd.extend(extra_args)
     run_subprocess_logged(
-        [sys.executable, str(Path(__file__).parent / script)],
+        cmd,
         cwd=cwd,
         log=log,
     )
@@ -51,11 +54,28 @@ def main():
              "Requires 1_actor_results.json, 2_actor_nodes.json, and "
              "3_interaction_results.json. Implies --skip-actors.",
     )
+    parser.add_argument(
+        "--start-page", "-p", type=int, default=None,
+        help="Force the active LLM step to start at this page number "
+             "(1-indexed), ignoring auto-resume. Goes to actor LLM by default, "
+             "or to interactions LLM when --skip-actors is also set. "
+             "Cannot be combined with --skip-interactions (which skips both LLMs).",
+    )
     args = parser.parse_args()
 
     # Implication: -i also implies -s.
     skip_actor_llm = args.skip_actors or args.skip_interactions
     skip_interaction_llm = args.skip_interactions
+
+    if args.start_page is not None and skip_interaction_llm:
+        sys.exit(
+            "Error: --start-page is incompatible with --skip-interactions.\n"
+            "When --skip-interactions is set, no LLM steps run, so there is\n"
+            "nothing to start at page N."
+        )
+
+    if args.start_page is not None and args.start_page < 1:
+        sys.exit("Error: --start-page must be 1 or greater.")
 
     root = Path(__file__).parent.resolve()
     pdf_path = root / "pdf_input" / args.pdf
@@ -102,11 +122,21 @@ def main():
     )
 
     try:
+        # Decide which LLM step gets --start-page (if set).
+        # Default: actor LLM. With -s: interactions LLM (since actor LLM is skipped).
+        actor_extra = []
+        interaction_extra = []
+        if args.start_page is not None:
+            if skip_actor_llm:
+                interaction_extra = ["--start-page", str(args.start_page)]
+            else:
+                actor_extra = ["--start-page", str(args.start_page)]
+
         # 1. Actor extraction (LLM)
         if skip_actor_llm:
             log_print("\n=== 1 actor extraction (skipped, reusing 1_actor_results.json) ===", log)
         else:
-            run_step("1 actor extraction", "feed_pdf.py", out_dir, log)
+            run_step("1 actor extraction", "feed_pdf.py", out_dir, log, extra_args=actor_extra)
 
         # 2. Clean actors. Skip when -i is set, because 2_actor_nodes.json must already
         # exist (interactions can't have produced raw results without it).
@@ -126,7 +156,7 @@ def main():
         if skip_interaction_llm:
             log_print("\n=== 3 interaction extraction (skipped, reusing 3_interaction_results.json) ===", log)
         else:
-            run_step("3 interaction extraction", "interactions_pdf.py", out_dir, log)
+            run_step("3 interaction extraction", "interactions_pdf.py", out_dir, log, extra_args=interaction_extra)
 
         # 4. Clean interactions  --- ALWAYS RUNS
         run_step("4 clean interactions", "clean_interactions.py", out_dir, log)

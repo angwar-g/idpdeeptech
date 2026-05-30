@@ -98,11 +98,44 @@ def _format_elapsed(seconds: float) -> str:
     return f"{secs}s"
 
 
-def log_print(message: str, log: TextIO) -> None:
-    """Print to terminal AND log file."""
-    print(message)
-    log.write(message + "\n")
+def _stamp_prefix(start_monotonic: float | None) -> str:
+    """Build a '[HH:MM:SS +Hh Mm Ss] ' prefix for log lines."""
+    wall = time.strftime("%H:%M:%S")
+    if start_monotonic is None:
+        return f"[{wall}] "
+    elapsed = _format_elapsed(time.monotonic() - start_monotonic)
+    return f"[{wall} +{elapsed}] "
+
+
+def _write_stamped(line: str, log: TextIO) -> None:
+    """Write `line` to terminal and log file, prepending a timestamp prefix.
+
+    Empty / whitespace-only lines are passed through unstamped so blank-line
+    spacing between blocks is preserved. The line is expected to end with a
+    newline (or not, both work).
+    """
+    bare = line.rstrip("\n")
+    if not bare.strip():
+        # Preserve blank-line spacing cleanly, no prefix noise.
+        sys.stdout.write(line if line.endswith("\n") else line + "\n")
+        log.write(line if line.endswith("\n") else line + "\n")
+        sys.stdout.flush()
+        log.flush()
+        return
+
+    prefix = _stamp_prefix(getattr(log, "_run_start_monotonic", None))
+    stamped = prefix + bare + "\n"
+    sys.stdout.write(stamped)
+    log.write(stamped)
+    sys.stdout.flush()
     log.flush()
+
+
+def log_print(message: str, log: TextIO) -> None:
+    """Print to terminal AND log file with a timestamp prefix on each line."""
+    # Preserve any intentional internal newlines: stamp each non-empty line.
+    for line in message.split("\n"):
+        _write_stamped(line + "\n", log)
 
 
 def run_subprocess_logged(
@@ -111,19 +144,18 @@ def run_subprocess_logged(
     log: TextIO,
     check: bool = True,
 ) -> int:
-    """Run a subprocess, streaming its stdout/stderr to terminal AND log file.
+    """Run a subprocess, streaming stamped stdout/stderr to terminal AND log file.
 
-    Each line is forwarded as soon as the child flushes it, so live progress
-    works (no waiting for the process to finish). Combines stderr into stdout
-    so ordering is preserved. Returns the subprocess return code; raises
-    CalledProcessError when check=True and the code is nonzero.
+    Each line gets a [HH:MM:SS +Hh Mm Ss] prefix so a crashed run still tells
+    you when the last line landed and how long since the run began. Live
+    progress works (no waiting for the process to finish). stderr is combined
+    into stdout so ordering is preserved.
 
     PYTHONUNBUFFERED=1 is injected into the child environment because Python's
     default stdout is BLOCK-buffered when stdout is a pipe (not a TTY). Without
     this, child print() calls accumulate ~4KB before reaching our reader, and
     long extraction loops look frozen for minutes at a time.
     """
-    # Force line-buffered stdout in the child, regardless of what the child does.
     child_env = os.environ.copy()
     child_env["PYTHONUNBUFFERED"] = "1"
 
@@ -133,7 +165,7 @@ def run_subprocess_logged(
         stdout=subprocess.PIPE,
         stderr=subprocess.STDOUT,
         text=True,
-        bufsize=1,  # line-buffered on the parent side
+        bufsize=1,
         env=child_env,
     )
 
@@ -141,10 +173,7 @@ def run_subprocess_logged(
 
     try:
         for line in proc.stdout:
-            sys.stdout.write(line)
-            sys.stdout.flush()
-            log.write(line)
-            log.flush()
+            _write_stamped(line, log)
     finally:
         proc.stdout.close()
         returncode = proc.wait()

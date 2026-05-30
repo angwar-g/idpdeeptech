@@ -8,6 +8,7 @@ Writes to 1_actor_results.json so the existing clean_actors.py picks it up
 without modification. Saves incrementally after each URL.
 """
 
+import argparse
 import json
 import re
 import asyncio
@@ -17,6 +18,10 @@ from pathlib import Path
 from dotenv import load_dotenv
 from litellm import acompletion
 from json_repair import repair_json
+
+from pipeline_resume import (
+    load_progress, mark_done, should_skip_page, all_complete_message,
+)
 
 load_dotenv()
 
@@ -200,8 +205,21 @@ async def extract_chunk(source_url: str, chunk_idx: int, chunk: str) -> str:
     return response.choices[0].message.content  # type: ignore
 
 
+def parse_args():
+    parser = argparse.ArgumentParser(
+        description="Actor extraction from crawled website pages.",
+    )
+    parser.add_argument(
+        "--start-page", "-p", type=int, default=None,
+        help="Force start at this URL ordinal (1-indexed, in sorted order). "
+             "Overrides auto-resume; earlier URLs are skipped regardless of "
+             "the progress sidecar.",
+    )
+    return parser.parse_args()
+
+
 async def main():
-    all_results = []
+    args = parse_args()
 
     if not CRAWL_DIR.exists():
         print(f"No {CRAWL_DIR}/ directory found. Run crawl_site.py first.")
@@ -214,17 +232,58 @@ async def main():
         print(f"No JSON files in {CRAWL_DIR}/. Nothing to extract.")
         return
 
+    # Auto-resume.
+    done = load_progress(OUTPUT_JSON)
+
+    if OUTPUT_JSON.exists():
+        try:
+            all_results = json.loads(OUTPUT_JSON.read_text(encoding="utf-8"))
+            if not isinstance(all_results, list):
+                all_results = []
+        except Exception:
+            all_results = []
+    else:
+        all_results = []
+
+    if args.start_page is not None:
+        print(f"--start-page {args.start_page}: skipping URLs before ordinal {args.start_page} (ignoring sidecar).")
+    elif done:
+        print(f"Auto-resume: {len(done)} (url, ordinal) pairs already done, skipping them.")
+
+    # Build expected pairs (url, ordinal) for completeness check.
+    url_at_ordinal: dict[int, tuple[str, Path]] = {}
     for file_idx, crawl_file in enumerate(crawl_files, start=1):
+        try:
+            data = json.loads(crawl_file.read_text(encoding="utf-8"))
+        except Exception:
+            continue
+        url = data.get("url", crawl_file.stem)
+        url_at_ordinal[file_idx] = (url, crawl_file)
+
+    expected = [(url, idx) for idx, (url, _) in url_at_ordinal.items()]
+    msg = all_complete_message(OUTPUT_JSON, done, expected)
+    if msg and args.start_page is None:
+        print(msg)
+        return
+
+    for file_idx in sorted(url_at_ordinal.keys()):
+        url, crawl_file = url_at_ordinal[file_idx]
+
+        if should_skip_page(url, file_idx, done, args.start_page):
+            print(f"Skipping URL ({file_idx}/{total_files}): {url} (already done)")
+            continue
+
         try:
             data = json.loads(crawl_file.read_text(encoding="utf-8"))
         except Exception as e:
             print(f"Skipping malformed crawl file {crawl_file.name}: {e}")
             continue
 
-        url = data.get("url", crawl_file.stem)
         markdown = data.get("markdown", "")
 
         if not markdown.strip():
+            # Still mark as done so we don't reconsider it on next run.
+            mark_done(done, url, file_idx, OUTPUT_JSON)
             continue
 
         print(f"Reading page ({file_idx}/{total_files}): {url}")
@@ -270,11 +329,12 @@ async def main():
 
             all_results.extend(parsed)
 
-        # Incremental save after each URL so a crash keeps prior work.
+        # Incremental save + progress sidecar after each fully processed URL.
         OUTPUT_JSON.write_text(
             json.dumps(all_results, indent=2, ensure_ascii=False),
             encoding="utf-8",
         )
+        mark_done(done, url, file_idx, OUTPUT_JSON)
 
     # Final save.
     OUTPUT_JSON.write_text(

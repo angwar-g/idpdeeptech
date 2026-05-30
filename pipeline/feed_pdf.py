@@ -1,5 +1,6 @@
 # like feed.py but for PDFs (doesn't require a crawled output first)
 
+import argparse
 import json
 import re
 import asyncio
@@ -10,6 +11,10 @@ from dotenv import load_dotenv
 import fitz  # PyMuPDF
 from litellm import acompletion
 from json_repair import repair_json
+
+from pipeline_resume import (
+    load_progress, mark_done, should_skip_page, all_complete_message,
+)
 
 load_dotenv()
 
@@ -308,17 +313,60 @@ async def extract_chunk(pdf_name: str, page_num: int, chunk: str) -> str:
     return response.choices[0].message.content  # type: ignore
 
 
+def parse_args():
+    parser = argparse.ArgumentParser(
+        description="Actor extraction from PDF(s) in pdf_input/.",
+    )
+    parser.add_argument(
+        "--start-page", "-p", type=int, default=None,
+        help="Force start at this page number (1-indexed). Overrides auto-resume; "
+             "earlier pages are skipped regardless of whether they are in the "
+             "progress sidecar.",
+    )
+    return parser.parse_args()
+
+
 async def main():
-    all_results = []
+    args = parse_args()
+
+    # Auto-resume: load whatever was processed in a previous run.
+    done = load_progress(OUTPUT_JSON)
+
+    # Load existing results so we keep records from prior pages.
+    if OUTPUT_JSON.exists():
+        try:
+            all_results = json.loads(OUTPUT_JSON.read_text(encoding="utf-8"))
+            if not isinstance(all_results, list):
+                all_results = []
+        except Exception:
+            all_results = []
+    else:
+        all_results = []
+
+    if args.start_page is not None:
+        print(f"--start-page {args.start_page}: skipping pages before {args.start_page} (ignoring sidecar).")
+    elif done:
+        print(f"Auto-resume: {len(done)} (source, page) pairs already done, skipping them.")
 
     for pdf_path in PDF_DIR.glob("*.pdf"):
         print(f"Reading PDF: {pdf_path.name}")
         pages = extract_pdf_text(pdf_path)
         total_pages = len(pages)
 
+        # Quick "everything done" check for this PDF.
+        expected = [(pdf_path.name, p["page"]) for p in pages]
+        msg = all_complete_message(OUTPUT_JSON, done, expected)
+        if msg and args.start_page is None:
+            print(msg)
+            continue
+
         for page in pages:
             page_num = page["page"]
             text = page["text"]
+
+            if should_skip_page(pdf_path.name, page_num, done, args.start_page):
+                print(f"Skipping {pdf_path.name}, page {page_num}/{total_pages} (already done)")
+                continue
 
             chunks = paragraph_chunks(
                 text,
@@ -361,11 +409,12 @@ async def main():
 
                 all_results.extend(parsed)
 
-            # Incremental save after each page so a crash keeps prior work.
+            # Incremental save + progress sidecar after each fully processed page.
             OUTPUT_JSON.write_text(
                 json.dumps(all_results, indent=2, ensure_ascii=False),
                 encoding="utf-8",
             )
+            mark_done(done, pdf_path.name, page_num, OUTPUT_JSON)
 
     # Final save (idempotent if last page already wrote).
     OUTPUT_JSON.write_text(
