@@ -1,0 +1,44 @@
+{
+  "source_count": 4,
+  "sources": [
+    "pdf/china25",
+    "pdf/japan25",
+    "site/ibm_com",
+    "site/psiquantum_com"
+  ],
+  "input_node_records": 331,
+  "input_edge_records": 286,
+  "output_unique_actors": 326,
+  "output_unique_edges": 286,
+  "rewrites_applied": {
+    "japan25.pdf: ^(the )?government$ -> Japan Government": 1,
+    "japan25.pdf: ^we$ -> Japan": 1
+  },
+  "helix_conflicts": [
+    {
+      "entity": "Japan",
+      "canonical_actor_key": "japan",
+      "helixes": [
+        "Government",
+        "Unknown"
+      ],
+      "chosen_helix": "Government",
+      "source_documents": [
+        "japan25.pdf"
+      ]
+    },
+    {
+      "entity": "U.S.",
+      "canonical_actor_key": "u s",
+      "helixes": [
+        "Government",
+        "Unknown"
+      ],
+      "chosen_helix": "Government",
+      "source_documents": [
+        "https://www.psiquantum.com/news-import/us-department-of-commerce",
+        "japan25.pdf"
+      ]
+    }
+  ]
+}

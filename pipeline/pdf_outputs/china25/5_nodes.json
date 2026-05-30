@@ -40,19 +40,18 @@
     "status": "entity",
     "excluded_reason": "Null",
     "category": "research institutes",
-    "role_in_text": "mass produce dilution refrigeration",
+    "role_in_text": "part of the collaboration building Zuchongzhi 3.0, Origin Wukong, and Tianyan-504 superconducting quantum computers",
     "technology_area": "quantum computing",
-    "occurrence_sentence": "China has long relied on imports for dilution refrigerators, which are essential for superconducting quantum computers, but the Anhui Quantum Computing Engineering Research Center and QuantumCTek last year jointly announced that they will mass produce dilution refrigeration.",
+    "occurrence_sentence": "▪ Anhui Quantum Computing Engineering Research Center;",
     "source_document": "china25.pdf",
-    "page": 6,
+    "page": 5,
     "confidence": "high",
     "canonical_actor_key": "anhui quantum computing engineering research center",
     "aliases": [
       "Anhui Quantum Computing Engineering Research Center"
     ],
     "pages": [
-      5,
-      6
+      5
     ],
     "mentions": [
       {
@@ -61,23 +60,16 @@
         "role_in_text": "part of the collaboration building Zuchongzhi 3.0, Origin Wukong, and Tianyan-504 superconducting quantum computers",
         "occurrence_sentence": "▪ Anhui Quantum Computing Engineering Research Center;",
         "source_document": "china25.pdf"
-      },
-      {
-        "entity": "Anhui Quantum Computing Engineering Research Center",
-        "page": 6,
-        "role_in_text": "mass produce dilution refrigeration",
-        "occurrence_sentence": "China has long relied on imports for dilution refrigerators, which are essential for superconducting quantum computers, but the Anhui Quantum Computing Engineering Research Center and QuantumCTek last year jointly announced that they will mass produce dilution refrigeration.",
-        "source_document": "china25.pdf"
       }
     ],
-    "needs_review": false,
-    "review_reason": "",
+    "needs_review": true,
+    "review_reason": "list_fragment_context",
     "helix": "Academia",
     "sphere": "Single",
     "r_and_d": "R&D",
     "classification_rule_source": "category_rule",
-    "classification_needs_review": false,
-    "classification_review_reason": ""
+    "classification_needs_review": true,
+    "classification_review_reason": "list_fragment_context"
   },
   {
     "entity": "Baidu Quantum",
@@ -221,81 +213,6 @@
     "helix": "Industry",
     "sphere": "Single",
     "r_and_d": "Assessed",
-    "classification_rule_source": "category_rule",
-    "classification_needs_review": false,
-    "classification_review_reason": ""
-  },
-  {
-    "entity": "CAS Key Laboratory of Quantum Information",
-    "status": "entity",
-    "excluded_reason": "Null",
-    "category": "research institutes",
-    "role_in_text": "deputy director of the CAS Key Laboratory of Quantum Information",
-    "technology_area": "quantum computing",
-    "occurrence_sentence": "Professor Guo Guoping, cofounder of Origin Quantum Co. and deputy director of the CAS Key Laboratory of Quantum Information, has noted that Chinese suppliers developed 80 percent of Origin Wukong's hardware, chips, operating systems, and application software.",
-    "source_document": "china25.pdf",
-    "page": 6,
-    "confidence": "high",
-    "canonical_actor_key": "cas key laboratory of quantum information",
-    "aliases": [
-      "CAS Key Laboratory of Quantum Information"
-    ],
-    "pages": [
-      6
-    ],
-    "mentions": [
-      {
-        "entity": "CAS Key Laboratory of Quantum Information",
-        "page": 6,
-        "role_in_text": "deputy director of the CAS Key Laboratory of Quantum Information",
-        "occurrence_sentence": "Professor Guo Guoping, cofounder of Origin Quantum Co. and deputy director of the CAS Key Laboratory of Quantum Information, has noted that Chinese suppliers developed 80 percent of Origin Wukong's hardware, chips, operating systems, and application software.",
-        "source_document": "china25.pdf"
-      }
-    ],
-    "needs_review": false,
-    "review_reason": "",
-    "helix": "Academia",
-    "sphere": "Single",
-    "r_and_d": "R&D",
-    "classification_rule_source": "category_rule",
-    "classification_needs_review": false,
-    "classification_review_reason": ""
-  },
-  {
-    "entity": "CAS's innovation from Jiuzhang 2.0 (2021) to Jiuzhang 3.0 (2024)",
-    "status": "entity",
-    "excluded_reason": "not_specific",
-    "category": "research institutes",
-    "role_in_text": "highlights China's advances in trapped-ion quantum computing",
-    "technology_area": "quantum computing",
-    "occurrence_sentence": "CAS's innovation from Jiuzhang 2.0 (2021) to Jiuzhang 3.0 (2024) highlights China's advances in trapped-ion quantum computing.",
-    "source_document": "china25.pdf",
-    "page": 6,
-    "confidence": "high",
-    "canonical_actor_key": "cas s innovation from jiuzhang 2 0 to jiuzhang 3 0",
-    "aliases": [
-      "2021) to Jiuzhang 3.0 (2024",
-      "CAS innovation from Jiuzhang 2.0 (2021) to Jiuzhang 3.0 (2024)",
-      "CAS's innovation from Jiuzhang 2.0",
-      "CAS's innovation from Jiuzhang 2.0 (2021) to Jiuzhang 3.0 (2024)"
-    ],
-    "pages": [
-      6
-    ],
-    "mentions": [
-      {
-        "entity": "CAS's innovation from Jiuzhang 2.0 (2021) to Jiuzhang 3.0 (2024)",
-        "page": 6,
-        "role_in_text": "highlights China's advances in trapped-ion quantum computing",
-        "occurrence_sentence": "CAS's innovation from Jiuzhang 2.0 (2021) to Jiuzhang 3.0 (2024) highlights China's advances in trapped-ion quantum computing.",
-        "source_document": "china25.pdf"
-      }
-    ],
-    "needs_review": false,
-    "review_reason": "",
-    "helix": "Academia",
-    "sphere": "Single",
-    "r_and_d": "R&D",
     "classification_rule_source": "category_rule",
     "classification_needs_review": false,
     "classification_review_reason": ""
@@ -678,24 +595,22 @@
     "classification_review_reason": ""
   },
   {
-    "entity": "Origin Quantum Co.",
+    "entity": "Origin Quantum",
     "status": "entity",
     "excluded_reason": "Null",
-    "category": "large enterprises",
-    "role_in_text": "co-founder of Origin Quantum Co.",
+    "category": "small and medium-sized enterprises",
+    "role_in_text": "which developed China's first full-stack quantum computer in 2017.",
     "technology_area": "quantum computing",
-    "occurrence_sentence": "Professor Guo Guoping, cofounder of Origin Quantum Co. and deputy director of the CAS Key Laboratory of Quantum Information, has noted that Chinese suppliers developed 80 percent of Origin Wukong's hardware, chips, operating systems, and application software.",
+    "occurrence_sentence": "Similarly, Professor Guo Guangcan and one of his students founded Origin Quantum, which developed China's first full-stack quantum computer in 2017.",
     "source_document": "china25.pdf",
-    "page": 6,
+    "page": 4,
     "confidence": "high",
-    "canonical_actor_key": "origin quantum co",
+    "canonical_actor_key": "origin quantum",
     "aliases": [
-      "Origin Quantum",
-      "Origin Quantum Co."
+      "Origin Quantum"
     ],
     "pages": [
-      4,
-      6
+      4
     ],
     "mentions": [
       {
@@ -703,13 +618,6 @@
         "page": 4,
         "role_in_text": "which developed China's first full-stack quantum computer in 2017.",
         "occurrence_sentence": "Similarly, Professor Guo Guangcan and one of his students founded Origin Quantum, which developed China's first full-stack quantum computer in 2017.",
-        "source_document": "china25.pdf"
-      },
-      {
-        "entity": "Origin Quantum Co.",
-        "page": 6,
-        "role_in_text": "co-founder of Origin Quantum Co.",
-        "occurrence_sentence": "Professor Guo Guoping, cofounder of Origin Quantum Co. and deputy director of the CAS Key Laboratory of Quantum Information, has noted that Chinese suppliers developed 80 percent of Origin Wukong's hardware, chips, operating systems, and application software.",
         "source_document": "china25.pdf"
       }
     ],
@@ -1172,11 +1080,11 @@
     "status": "entity",
     "excluded_reason": "Null",
     "category": "large enterprises",
-    "role_in_text": "jointly announced that they will mass produce dilution refrigeration",
-    "technology_area": "quantum computing",
-    "occurrence_sentence": "China has long relied on imports for dilution refrigerators, which are essential for superconducting quantum computers, but the Anhui Quantum Computing Engineering Research Center and QuantumCTek last year jointly announced that they will mass produce dilution refrigeration.",
+    "role_in_text": "a key player in China's quantum communication industry, which went on to create QuantumCTek in 2009.",
+    "technology_area": "quantum communication",
+    "occurrence_sentence": "Understanding China's Quest for Quantum Advancement  |  4 team went on to create QuantumCTek, a key player in China's quantum communication industry, ",
     "source_document": "china25.pdf",
-    "page": 6,
+    "page": 4,
     "confidence": "high",
     "canonical_actor_key": "quantumctek",
     "aliases": [
@@ -1185,8 +1093,7 @@
     ],
     "pages": [
       4,
-      5,
-      6
+      5
     ],
     "mentions": [
       {
@@ -1201,13 +1108,6 @@
         "page": 5,
         "role_in_text": "quantum computing company",
         "occurrence_sentence": "QuantumCTek Co.",
-        "source_document": "china25.pdf"
-      },
-      {
-        "entity": "QuantumCTek",
-        "page": 6,
-        "role_in_text": "jointly announced that they will mass produce dilution refrigeration",
-        "occurrence_sentence": "China has long relied on imports for dilution refrigerators, which are essential for superconducting quantum computers, but the Anhui Quantum Computing Engineering Research Center and QuantumCTek last year jointly announced that they will mass produce dilution refrigeration.",
         "source_document": "china25.pdf"
       }
     ],
@@ -1334,28 +1234,20 @@
     "status": "entity",
     "excluded_reason": "Null",
     "category": "universities",
-    "role_in_text": "successful demonstration of the largest trapped-ion quantum simulator using 300 qubits",
-    "technology_area": "quantum computing",
-    "occurrence_sentence": "Researchers and industry have been using various approaches to create high-quality qubits, each with its own strengths and challenges. Photonic and trapped-ion quantum computers are two of the best possible approaches for developing utility-scale quantum computing and its commercialization. One important Chinese development in this regard is Tsinghua University's successful demonstration of the largest trapped-ion quantum simulator using 300 qubits.",
+    "role_in_text": "...",
+    "technology_area": "Null",
+    "occurrence_sentence": "Also, in 2017, the Beijing municipal government, in collaboration with Peking University, Tsinghua  University, CAS, and other institutions, established the Beijing Academy of Quantum Information Science (BAQIS).",
     "source_document": "china25.pdf",
-    "page": 6,
+    "page": 9,
     "confidence": "high",
     "canonical_actor_key": "tsinghua university",
     "aliases": [
       "Tsinghua University"
     ],
     "pages": [
-      6,
       9
     ],
     "mentions": [
-      {
-        "entity": "Tsinghua University",
-        "page": 6,
-        "role_in_text": "successful demonstration of the largest trapped-ion quantum simulator using 300 qubits",
-        "occurrence_sentence": "Researchers and industry have been using various approaches to create high-quality qubits, each with its own strengths and challenges. Photonic and trapped-ion quantum computers are two of the best possible approaches for developing utility-scale quantum computing and its commercialization. One important Chinese development in this regard is Tsinghua University's successful demonstration of the largest trapped-ion quantum simulator using 300 qubits.",
-        "source_document": "china25.pdf"
-      },
       {
         "entity": "Tsinghua University",
         "page": 9,
@@ -1410,79 +1302,6 @@
     "classification_review_reason": "list_fragment_context"
   },
   {
-    "entity": "Wuhan Institute of Quantum Technology",
-    "status": "entity",
-    "excluded_reason": "Null",
-    "category": "research institutes",
-    "role_in_text": "collaborated with CAS's Innovation Academy for Precision Measurement Science and Technology in developing Hanyuan-1 quantum computer",
-    "technology_area": "quantum computing",
-    "occurrence_sentence": "In October 2025, Hanyuan-1 quantum computer, a 100-qubits neutral-atom quantum computing system, began its first commercial deployment based on China's almost twenty years of research and engineering work. It was developed by CAS's Innovation Academy for Precision Measurement Science and Technology in Wuhan in collaboration with Wuhan University, Zhongke Kuyuan Technology Co., Wuhan Optics Valley Information Optoelectronic Innovation Center Co., Wuhan Institute of Quantum Technology, and Huazhong University of Science and Technology.",
-    "source_document": "china25.pdf",
-    "page": 6,
-    "confidence": "high",
-    "canonical_actor_key": "wuhan institute of quantum technology",
-    "aliases": [
-      "Wuhan Institute of Quantum Technology"
-    ],
-    "pages": [
-      6
-    ],
-    "mentions": [
-      {
-        "entity": "Wuhan Institute of Quantum Technology",
-        "page": 6,
-        "role_in_text": "collaborated with CAS's Innovation Academy for Precision Measurement Science and Technology in developing Hanyuan-1 quantum computer",
-        "occurrence_sentence": "In October 2025, Hanyuan-1 quantum computer, a 100-qubits neutral-atom quantum computing system, began its first commercial deployment based on China's almost twenty years of research and engineering work. It was developed by CAS's Innovation Academy for Precision Measurement Science and Technology in Wuhan in collaboration with Wuhan University, Zhongke Kuyuan Technology Co., Wuhan Optics Valley Information Optoelectronic Innovation Center Co., Wuhan Institute of Quantum Technology, and Huazhong University of Science and Technology.",
-        "source_document": "china25.pdf"
-      }
-    ],
-    "needs_review": false,
-    "review_reason": "",
-    "helix": "Academia",
-    "sphere": "Single",
-    "r_and_d": "R&D",
-    "classification_rule_source": "category_rule",
-    "classification_needs_review": false,
-    "classification_review_reason": ""
-  },
-  {
-    "entity": "Wuhan Optics Valley Information Optoelectronic Innovation Center Co.",
-    "status": "entity",
-    "excluded_reason": "Null",
-    "category": "large enterprises",
-    "role_in_text": "collaborated with CAS's Innovation Academy for Precision Measurement Science and Technology in developing Hanyuan-1 quantum computer",
-    "technology_area": "quantum computing",
-    "occurrence_sentence": "In October 2025, Hanyuan-1 quantum computer, a 100-qubits neutral-atom quantum computing system, began its first commercial deployment based on China's almost twenty years of research and engineering work. It was developed by CAS's Innovation Academy for Precision Measurement Science and Technology in Wuhan in collaboration with Wuhan University, Zhongke Kuyuan Technology Co., Wuhan Optics Valley Information Optoelectronic Innovation Center Co., Wuhan Institute of Quantum Technology, and Huazhong University of Science and Technology.",
-    "source_document": "china25.pdf",
-    "page": 6,
-    "confidence": "high",
-    "canonical_actor_key": "wuhan optics valley information optoelectronic innovation center co",
-    "aliases": [
-      "Wuhan Optics Valley Information Optoelectronic Innovation Center",
-      "Wuhan Optics Valley Information Optoelectronic Innovation Center Co."
-    ],
-    "pages": [
-      6
-    ],
-    "mentions": [
-      {
-        "entity": "Wuhan Optics Valley Information Optoelectronic Innovation Center Co.",
-        "page": 6,
-        "role_in_text": "collaborated with CAS's Innovation Academy for Precision Measurement Science and Technology in developing Hanyuan-1 quantum computer",
-        "occurrence_sentence": "In October 2025, Hanyuan-1 quantum computer, a 100-qubits neutral-atom quantum computing system, began its first commercial deployment based on China's almost twenty years of research and engineering work. It was developed by CAS's Innovation Academy for Precision Measurement Science and Technology in Wuhan in collaboration with Wuhan University, Zhongke Kuyuan Technology Co., Wuhan Optics Valley Information Optoelectronic Innovation Center Co., Wuhan Institute of Quantum Technology, and Huazhong University of Science and Technology.",
-        "source_document": "china25.pdf"
-      }
-    ],
-    "needs_review": false,
-    "review_reason": "",
-    "helix": "Industry",
-    "sphere": "Single",
-    "r_and_d": "Assessed",
-    "classification_rule_source": "category_rule",
-    "classification_needs_review": false,
-    "classification_review_reason": ""
-  },
-  {
     "entity": "Wuhan Quantum Technology Research Institute",
     "status": "entity",
     "excluded_reason": "Null",
@@ -1523,28 +1342,20 @@
     "status": "entity",
     "excluded_reason": "Null",
     "category": "universities",
-    "role_in_text": "collaborated with CAS's Innovation Academy for Precision Measurement Science and Technology in developing Hanyuan-1 quantum computer",
+    "role_in_text": "A team member",
     "technology_area": "quantum computing",
-    "occurrence_sentence": "In October 2025, Hanyuan-1 quantum computer, a 100-qubits neutral-atom quantum computing system, began its first commercial deployment based on China's almost twenty years of research and engineering work. It was developed by CAS's Innovation Academy for Precision Measurement Science and Technology in Wuhan in collaboration with Wuhan University, Zhongke Kuyuan Technology Co., Wuhan Optics Valley Information Optoelectronic Innovation Center Co., Wuhan Institute of Quantum Technology, and Huazhong University of Science and Technology.",
+    "occurrence_sentence": "Hideki Tomoshige and Phillip Singerman  |  7 A team from Wuhan University and the Wuhan Quantum Technology Research Institute has also developed an atomic quantum computing cloud platform to accelerate application development.",
     "source_document": "china25.pdf",
-    "page": 6,
+    "page": 7,
     "confidence": "high",
     "canonical_actor_key": "wuhan university",
     "aliases": [
       "Wuhan University"
     ],
     "pages": [
-      6,
       7
     ],
     "mentions": [
-      {
-        "entity": "Wuhan University",
-        "page": 6,
-        "role_in_text": "collaborated with CAS's Innovation Academy for Precision Measurement Science and Technology in developing Hanyuan-1 quantum computer",
-        "occurrence_sentence": "In October 2025, Hanyuan-1 quantum computer, a 100-qubits neutral-atom quantum computing system, began its first commercial deployment based on China's almost twenty years of research and engineering work. It was developed by CAS's Innovation Academy for Precision Measurement Science and Technology in Wuhan in collaboration with Wuhan University, Zhongke Kuyuan Technology Co., Wuhan Optics Valley Information Optoelectronic Innovation Center Co., Wuhan Institute of Quantum Technology, and Huazhong University of Science and Technology.",
-        "source_document": "china25.pdf"
-      },
       {
         "entity": "Wuhan University",
         "page": 7,
@@ -1597,42 +1408,5 @@
     "classification_rule_source": "unknown_category",
     "classification_needs_review": true,
     "classification_review_reason": "unmapped_category:individual; individual_requires_role_classification"
-  },
-  {
-    "entity": "Zhongke Kuyuan Technology Co.",
-    "status": "entity",
-    "excluded_reason": "Null",
-    "category": "small and medium-sized enterprises",
-    "role_in_text": "collaborated with CAS's Innovation Academy for Precision Measurement Science and Technology in developing Hanyuan-1 quantum computer",
-    "technology_area": "quantum computing",
-    "occurrence_sentence": "In October 2025, Hanyuan-1 quantum computer, a 100-qubits neutral-atom quantum computing system, began its first commercial deployment based on China's almost twenty years of research and engineering work. It was developed by CAS's Innovation Academy for Precision Measurement Science and Technology in Wuhan in collaboration with Wuhan University, Zhongke Kuyuan Technology Co., Wuhan Optics Valley Information Optoelectronic Innovation Center Co., Wuhan Institute of Quantum Technology, and Huazhong University of Science and Technology.",
-    "source_document": "china25.pdf",
-    "page": 6,
-    "confidence": "high",
-    "canonical_actor_key": "zhongke kuyuan technology co",
-    "aliases": [
-      "Zhongke Kuyuan Technology",
-      "Zhongke Kuyuan Technology Co."
-    ],
-    "pages": [
-      6
-    ],
-    "mentions": [
-      {
-        "entity": "Zhongke Kuyuan Technology Co.",
-        "page": 6,
-        "role_in_text": "collaborated with CAS's Innovation Academy for Precision Measurement Science and Technology in developing Hanyuan-1 quantum computer",
-        "occurrence_sentence": "In October 2025, Hanyuan-1 quantum computer, a 100-qubits neutral-atom quantum computing system, began its first commercial deployment based on China's almost twenty years of research and engineering work. It was developed by CAS's Innovation Academy for Precision Measurement Science and Technology in Wuhan in collaboration with Wuhan University, Zhongke Kuyuan Technology Co., Wuhan Optics Valley Information Optoelectronic Innovation Center Co., Wuhan Institute of Quantum Technology, and Huazhong University of Science and Technology.",
-        "source_document": "china25.pdf"
-      }
-    ],
-    "needs_review": false,
-    "review_reason": "",
-    "helix": "Industry",
-    "sphere": "Single",
-    "r_and_d": "Assessed",
-    "classification_rule_source": "category_rule",
-    "classification_needs_review": false,
-    "classification_review_reason": ""
   }
 ]

@@ -24,8 +24,32 @@
     "page": 2
   },
   {
+    "source_actor": "Professor Guo Guangcan",
+    "target_actor": "Origin Quantum",
+    "interaction_phrase": "founded",
+    "occurrence_sentence": "Professor Guo Guangcan and one of his students founded Origin Quantum, which developed China's first full-stack quantum computer in 2017.",
+    "source_document": "china25.pdf",
+    "page": 4
+  },
+  {
     "source_actor": "QuantumCTek",
-    "target_actor": "CAS Key Laboratory of Quantum Information",
+    "target_actor": "Tsinghua University",
+    "interaction_phrase": "spun off from",
+    "occurrence_sentence": "QuantumCTek and Origin Quantum both spun off from USTC, in 2009 and 2017, respectively.",
+    "source_document": "china25.pdf",
+    "page": 4
+  },
+  {
+    "source_actor": "QuantumCTek",
+    "target_actor": "USTC",
+    "interaction_phrase": "spun off from",
+    "occurrence_sentence": "QuantumCTek and Origin Quantum both spun off from USTC, in 2009 and 2017, respectively.",
+    "source_document": "china25.pdf",
+    "page": 4
+  },
+  {
+    "source_actor": "Origin Quantum",
+    "target_actor": "USTC",
     "interaction_phrase": "spun off from",
     "occurrence_sentence": "QuantumCTek and Origin Quantum both spun off from USTC, in 2009 and 2017, respectively.",
     "source_document": "china25.pdf",
@@ -35,7 +59,7 @@
     "source_actor": "USTC",
     "target_actor": "Shanghai Quantum Science Research Center",
     "interaction_phrase": "...",
-    "occurrence_sentence": "through collaboration between a group of research universities, research centers, and companies, including: ... Shanghai Quantum Science Research Center;",
+    "occurrence_sentence": "through collaboration between a group of research universities, research centers, and companies, including:",
     "source_document": "china25.pdf",
     "page": 5
   },
@@ -43,7 +67,7 @@
     "source_actor": "USTC",
     "target_actor": "Center for Excellence in Quantum Physics",
     "interaction_phrase": "...",
-    "occurrence_sentence": "through collaboration between a group of research universities, research centers, and companies, including: ... Center for Excellence in Quantum Physics;",
+    "occurrence_sentence": "through collaboration between a group of research universities, research centers, and companies, including:",
     "source_document": "china25.pdf",
     "page": 5
   },
@@ -51,7 +75,7 @@
     "source_actor": "USTC",
     "target_actor": "Anhui Quantum Computing Engineering Research Center",
     "interaction_phrase": "...",
-    "occurrence_sentence": "through collaboration between a group of research universities, research centers, and companies, including: ... Anhui Quantum Computing Engineering Research Center;",
+    "occurrence_sentence": "through collaboration between a group of research universities, research centers, and companies, including:",
     "source_document": "china25.pdf",
     "page": 5
   },
@@ -59,7 +83,7 @@
     "source_actor": "USTC",
     "target_actor": "China Telecom Quantum Group (CTQG)",
     "interaction_phrase": "...",
-    "occurrence_sentence": "through collaboration between a group of research universities, research centers, and companies, including: ... China Telecom Quantum Group (CTQG);",
+    "occurrence_sentence": "through collaboration between a group of research universities, research centers, and companies, including:",
     "source_document": "china25.pdf",
     "page": 5
   },
@@ -67,47 +91,87 @@
     "source_actor": "USTC",
     "target_actor": "Origin Quantum Computing Technology",
     "interaction_phrase": "...",
-    "occurrence_sentence": "through collaboration between a group of research universities, research centers, and companies, including: ... Origin Quantum Computing Technology;",
+    "occurrence_sentence": "through collaboration between a group of research universities, research centers, and companies, including:",
     "source_document": "china25.pdf",
     "page": 5
   },
   {
     "source_actor": "Shanghai Quantum Science Research Center",
-    "target_actor": "USTC",
+    "target_actor": "Center for Excellence in Quantum Physics",
     "interaction_phrase": "...",
-    "occurrence_sentence": "through collaboration between a group of research universities, research centers, and companies, including: ... USTC;",
+    "occurrence_sentence": "through collaboration between a group of research universities, research centers, and companies, including:",
+    "source_document": "china25.pdf",
+    "page": 5
+  },
+  {
+    "source_actor": "Shanghai Quantum Science Research Center",
+    "target_actor": "Anhui Quantum Computing Engineering Research Center",
+    "interaction_phrase": "...",
+    "occurrence_sentence": "through collaboration between a group of research universities, research centers, and companies, including:",
+    "source_document": "china25.pdf",
+    "page": 5
+  },
+  {
+    "source_actor": "Shanghai Quantum Science Research Center",
+    "target_actor": "China Telecom Quantum Group (CTQG)",
+    "interaction_phrase": "...",
+    "occurrence_sentence": "through collaboration between a group of research universities, research centers, and companies, including:",
+    "source_document": "china25.pdf",
+    "page": 5
+  },
+  {
+    "source_actor": "Shanghai Quantum Science Research Center",
+    "target_actor": "Origin Quantum Computing Technology",
+    "interaction_phrase": "...",
+    "occurrence_sentence": "through collaboration between a group of research universities, research centers, and companies, including:",
     "source_document": "china25.pdf",
     "page": 5
   },
   {
     "source_actor": "Center for Excellence in Quantum Physics",
-    "target_actor": "USTC",
+    "target_actor": "Anhui Quantum Computing Engineering Research Center",
     "interaction_phrase": "...",
-    "occurrence_sentence": "through collaboration between a group of research universities, research centers, and companies, including: ... USTC;",
+    "occurrence_sentence": "through collaboration between a group of research universities, research centers, and companies, including:",
+    "source_document": "china25.pdf",
+    "page": 5
+  },
+  {
+    "source_actor": "Center for Excellence in Quantum Physics",
+    "target_actor": "China Telecom Quantum Group (CTQG)",
+    "interaction_phrase": "...",
+    "occurrence_sentence": "through collaboration between a group of research universities, research centers, and companies, including:",
+    "source_document": "china25.pdf",
+    "page": 5
+  },
+  {
+    "source_actor": "Center for Excellence in Quantum Physics",
+    "target_actor": "Origin Quantum Computing Technology",
+    "interaction_phrase": "...",
+    "occurrence_sentence": "through collaboration between a group of research universities, research centers, and companies, including:",
     "source_document": "china25.pdf",
     "page": 5
   },
   {
     "source_actor": "Anhui Quantum Computing Engineering Research Center",
-    "target_actor": "USTC",
+    "target_actor": "China Telecom Quantum Group (CTQG)",
     "interaction_phrase": "...",
-    "occurrence_sentence": "through collaboration between a group of research universities, research centers, and companies, including: ... USTC;",
+    "occurrence_sentence": "through collaboration between a group of research universities, research centers, and companies, including:",
+    "source_document": "china25.pdf",
+    "page": 5
+  },
+  {
+    "source_actor": "Anhui Quantum Computing Engineering Research Center",
+    "target_actor": "Origin Quantum Computing Technology",
+    "interaction_phrase": "...",
+    "occurrence_sentence": "through collaboration between a group of research universities, research centers, and companies, including:",
     "source_document": "china25.pdf",
     "page": 5
   },
   {
     "source_actor": "China Telecom Quantum Group (CTQG)",
-    "target_actor": "USTC",
+    "target_actor": "Origin Quantum Computing Technology",
     "interaction_phrase": "...",
-    "occurrence_sentence": "through collaboration between a group of research universities, research centers, and companies, including: ... USTC;",
-    "source_document": "china25.pdf",
-    "page": 5
-  },
-  {
-    "source_actor": "Origin Quantum Computing Technology",
-    "target_actor": "USTC",
-    "interaction_phrase": "...",
-    "occurrence_sentence": "through collaboration between a group of research universities, research centers, and companies, including: ... USTC;",
+    "occurrence_sentence": "through collaboration between a group of research universities, research centers, and companies, including:",
     "source_document": "china25.pdf",
     "page": 5
   },
@@ -115,23 +179,31 @@
     "source_actor": "Origin Quantum Computing Technology",
     "target_actor": "China Telecom Quantum Group",
     "interaction_phrase": "China Telecom Quantum Group has emerged as a controlling shareholder of QuantumCTek in January 2025.",
-    "occurrence_sentence": "China Telecom Quantum Group has emerged as a strategic player in quantum computing in addition to quantum communication, after becoming the controlling shareholder of QuantumCTek in January 2025.",
-    "source_document": "china25.pdf",
-    "page": 5
-  },
-  {
-    "source_actor": "China Telecom Quantum Group",
-    "target_actor": "QuantumCTek",
-    "interaction_phrase": "China Telecom Quantum Group has emerged as a controlling shareholder of QuantumCTek in January 2025.",
-    "occurrence_sentence": "China Telecom Quantum Group has emerged as a strategic player in quantum computing in addition to quantum communication, after becoming the controlling shareholder of QuantumCTek in January 2025.",
+    "occurrence_sentence": "China Telecom Quantum Group has emerged as a controlling shareholder of QuantumCTek in January 2025.",
     "source_document": "china25.pdf",
     "page": 5
   },
   {
     "source_actor": "Anhui Quantum Computing Engineering Research Center",
+    "target_actor": "Chinese Academy of Sciences (CAS)",
+    "interaction_phrase": "Professor Guo Guoping, cofounder of Origin Quantum Co. and deputy director of the CAS Key Laboratory of Quantum Information, has noted that Chinese suppliers developed 80 percent of Origin Wukong's hardware, chips, operating systems, and application software.",
+    "occurrence_sentence": "Professor Guo Guoping, cofounder of Origin Quantum Co. and deputy director of the CAS Key Laboratory of Quantum Information, has noted that Chinese suppliers developed 80 percent of Origin Wukong's hardware, chips, operating systems, and application software.",
+    "source_document": "china25.pdf",
+    "page": 6
+  },
+  {
+    "source_actor": "Anhui Quantum Computing Engineering Research Center",
     "target_actor": "QuantumCTek",
-    "interaction_phrase": "jointly announced that they will mass produce dilution refrigeration.",
-    "occurrence_sentence": "Understanding China's Quest for Quantum Advancement  |  6 As another example of developing its indigenous supply chain, China has long relied on imports for dilution refrigerators, which are essential for superconducting quantum computers, but the Anhui Quantum Computing Engineering Research Center and QuantumCTek last year jointly announced that they will mass produce dilution refrigeration.",
+    "interaction_phrase": "As another example of developing its indigenous supply chain, China has long relied on imports for dilution refrigerators, which are essential for superconducting quantum computers, but the Anhui Quantum Computing Engineering Research Center and QuantumCTek last year jointly announced that they will mass produce dilution refrigeration.",
+    "occurrence_sentence": "As another example of developing its indigenous supply chain, China has long relied on imports for dilution refrigerators, which are essential for superconducting quantum computers, but the Anhui Quantum Computing Engineering Research Center and QuantumCTek last year jointly announced that they will mass produce dilution refrigeration.",
+    "source_document": "china25.pdf",
+    "page": 6
+  },
+  {
+    "source_actor": "Tsinghua University",
+    "target_actor": "Chinese Academy of Sciences (CAS)",
+    "interaction_phrase": "CAS's innovation from Jiuzhang 2.0 (2021) to Jiuzhang 3.0 (2024) highlights China's advances in trapped-ion quantum computing.",
+    "occurrence_sentence": "CAS's innovation from Jiuzhang 2.0 (2021) to Jiuzhang 3.0 (2024) highlights China's advances in trapped-ion quantum computing.",
     "source_document": "china25.pdf",
     "page": 6
   },
