@@ -18,9 +18,9 @@ import asyncio
 import warnings
 from pathlib import Path
 
-import fitz  # noqa: F401  (kept so the env mirrors interactions_pdf.py; harmless)
+import fitz  # type: ignore -> oqa: F401  (kept so the env mirrors interactions_pdf.py; harmless)
 from llm_client import complete
-from json_repair import repair_json
+from json_repair import repair_json # type: ignore
 
 from pipeline_resume import (
     load_progress, mark_done, should_skip_page, all_complete_message,
