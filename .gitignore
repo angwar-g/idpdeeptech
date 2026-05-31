@@ -6,22 +6,6 @@
 *.pem
 *.key
 
-# --- Pipeline outputs ------------------------------------------------------
-# Large generated artifacts. Re-derive by running the pipelines.
-# pdf_outputs/
-# site_outputs/
-# merged_outputs/
-# crawl_output/
-
-# Old / unused legacy folders, in case any are still around.
-# output/
-# outputs/
-
-# Per-run logs (already inside output dirs, but listed defensively)
-# run.log
-# *.progress.json
-# batch_failures.log
-
 # --- Python ----------------------------------------------------------------
 __pycache__/
 *.py[cod]
@@ -53,8 +37,6 @@ Thumbs.db
 .ipynb_checkpoints/
 
 # --- Inputs (keep PDFs/JSON configs tracked; ignore scratch) ---------------
-# pdf_input/ is intentionally NOT ignored — track the PDFs you process.
-# site_input/ is intentionally NOT ignored — track the company config.
-# But ignore any scratch / personal copies:
+# Any scratch / personal copies:
 pdf_input/_scratch/
 site_input/_scratch/
