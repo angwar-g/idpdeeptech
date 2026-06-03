@@ -1,0 +1,2135 @@
+
+========================================================================
+RUN STARTED  2026-06-01 16:21:10
+site_pipeline.py https://ionq.com/
+========================================================================
+
+[16:21:10 +0s] === 0 crawl site ===
+[16:21:11 +1s] Traceback (most recent call last):
+[16:21:11 +1s]   File "/content/drive/MyDrive/pipeline/crawl_site.py", line 15, in <module>
+[16:21:11 +1s]     from crawl4ai import AsyncWebCrawler, BrowserConfig, CrawlerRunConfig, CacheMode
+[16:21:11 +1s] ModuleNotFoundError: No module named 'crawl4ai'
+
+========================================================================
+RUN FINISHED 2026-06-01 16:21:11  (FAILED)
+Elapsed:     1s
+========================================================================
+
+========================================================================
+RUN STARTED  2026-06-01 16:28:58
+site_pipeline.py https://ionq.com/
+========================================================================
+
+[16:28:58 +0s] === 0 crawl site ===
+[16:28:58 +0s] Traceback (most recent call last):
+[16:28:58 +0s]   File "/content/drive/MyDrive/pipeline/crawl_site.py", line 15, in <module>
+[16:28:58 +0s]     from crawl4ai import AsyncWebCrawler, BrowserConfig, CrawlerRunConfig, CacheMode
+[16:28:58 +0s] ModuleNotFoundError: No module named 'crawl4ai'
+
+========================================================================
+RUN FINISHED 2026-06-01 16:28:58  (FAILED)
+Elapsed:     0s
+========================================================================
+
+========================================================================
+RUN STARTED  2026-06-01 16:31:49
+site_pipeline.py https://ionq.com/
+========================================================================
+
+[16:31:49 +0s] === 0 crawl site ===
+[16:31:52 +2s] Traceback (most recent call last):
+[16:31:52 +2s]   File "/content/drive/MyDrive/pipeline/crawl_site.py", line 101, in <module>
+[16:31:52 +2s]     main()
+[16:31:52 +2s]   File "/content/drive/MyDrive/pipeline/crawl_site.py", line 97, in main
+[16:31:52 +2s]     asyncio.run(crawl(args.url, args.crawl, args.max_pages))
+[16:31:52 +2s]   File "/usr/lib/python3.12/asyncio/runners.py", line 195, in run
+[16:31:52 +2s]     return runner.run(main)
+[16:31:52 +2s]            ^^^^^^^^^^^^^^^^
+[16:31:52 +2s]   File "/usr/lib/python3.12/asyncio/runners.py", line 118, in run
+[16:31:52 +2s]     return self._loop.run_until_complete(task)
+[16:31:52 +2s]            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[16:31:52 +2s]   File "/usr/lib/python3.12/asyncio/base_events.py", line 691, in run_until_complete
+[16:31:52 +2s]     return future.result()
+[16:31:52 +2s]            ^^^^^^^^^^^^^^^
+[16:31:52 +2s]   File "/content/drive/MyDrive/pipeline/crawl_site.py", line 57, in crawl
+[16:31:52 +2s]     async with AsyncWebCrawler(config=BrowserConfig(verbose=True)) as crawler:
+[16:31:52 +2s]                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[16:31:52 +2s]   File "/usr/local/lib/python3.12/dist-packages/crawl4ai/async_webcrawler.py", line 200, in __aenter__
+[16:31:52 +2s]     return await self.start()
+[16:31:52 +2s]            ^^^^^^^^^^^^^^^^^^
+[16:31:52 +2s]   File "/usr/local/lib/python3.12/dist-packages/crawl4ai/async_webcrawler.py", line 183, in start
+[16:31:52 +2s]     await self.crawler_strategy.__aenter__()
+[16:31:52 +2s]   File "/usr/local/lib/python3.12/dist-packages/crawl4ai/async_crawler_strategy.py", line 121, in __aenter__
+[16:31:52 +2s]     await self.start()
+[16:31:52 +2s]   File "/usr/local/lib/python3.12/dist-packages/crawl4ai/async_crawler_strategy.py", line 131, in start
+[16:31:52 +2s]     await self.browser_manager.start()
+[16:31:52 +2s]   File "/usr/local/lib/python3.12/dist-packages/crawl4ai/browser_manager.py", line 938, in start
+[16:31:52 +2s]     self.browser = await self.playwright.chromium.launch(**browser_args)
+[16:31:52 +2s]                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[16:31:52 +2s]   File "/usr/local/lib/python3.12/dist-packages/playwright/async_api/_generated.py", line 16307, in launch
+[16:31:52 +2s]     await self._impl_obj.launch(
+[16:31:52 +2s]   File "/usr/local/lib/python3.12/dist-packages/playwright/_impl/_browser_type.py", line 98, in launch
+[16:31:52 +2s]     await self._channel.send(
+[16:31:52 +2s]   File "/usr/local/lib/python3.12/dist-packages/playwright/_impl/_connection.py", line 69, in send
+[16:31:52 +2s]     return await self._connection.wrap_api_call(
+[16:31:52 +2s]            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[16:31:52 +2s]   File "/usr/local/lib/python3.12/dist-packages/playwright/_impl/_connection.py", line 559, in wrap_api_call
+[16:31:52 +2s]     raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+[16:31:52 +2s] playwright._impl._errors.Error: BrowserType.launch: Executable doesn't exist at /root/.cache/ms-playwright/chromium-1223/chrome-linux64/chrome
+[16:31:52 +2s] ╔════════════════════════════════════════════════════════════╗
+[16:31:52 +2s] ║ Looks like Playwright was just installed or updated.       ║
+[16:31:52 +2s] ║ Please run the following command to download new browsers: ║
+[16:31:52 +2s] ║                                                            ║
+[16:31:52 +2s] ║     playwright install                                     ║
+[16:31:52 +2s] ║                                                            ║
+[16:31:52 +2s] ║ <3 Playwright Team                                         ║
+[16:31:52 +2s] ╚════════════════════════════════════════════════════════════╝
+[16:31:52 +2s] Exception ignored in: <function BaseSubprocessTransport.__del__ at 0x7ec92379a840>
+[16:31:52 +2s] Traceback (most recent call last):
+[16:31:52 +2s]   File "/usr/lib/python3.12/asyncio/base_subprocess.py", line 126, in __del__
+[16:31:52 +2s]   File "/usr/lib/python3.12/asyncio/base_subprocess.py", line 104, in close
+[16:31:52 +2s]   File "/usr/lib/python3.12/asyncio/unix_events.py", line 767, in close
+[16:31:52 +2s]   File "/usr/lib/python3.12/asyncio/unix_events.py", line 753, in write_eof
+[16:31:52 +2s]   File "/usr/lib/python3.12/asyncio/base_events.py", line 799, in call_soon
+[16:31:52 +2s]   File "/usr/lib/python3.12/asyncio/base_events.py", line 545, in _check_closed
+[16:31:52 +2s] RuntimeError: Event loop is closed
+
+========================================================================
+RUN FINISHED 2026-06-01 16:31:52  (FAILED)
+Elapsed:     2s
+========================================================================
+
+========================================================================
+RUN STARTED  2026-06-01 16:33:01
+site_pipeline.py https://ionq.com/
+========================================================================
+
+[16:33:01 +0s] === 0 crawl site ===
+[16:33:03 +1s] Cleared existing crawl_output/
+[16:33:03 +2s] Traceback (most recent call last):
+[16:33:03 +2s]   File "/content/drive/MyDrive/pipeline/crawl_site.py", line 101, in <module>
+[16:33:03 +2s]     main()
+[16:33:03 +2s]   File "/content/drive/MyDrive/pipeline/crawl_site.py", line 97, in main
+[16:33:03 +2s]     asyncio.run(crawl(args.url, args.crawl, args.max_pages))
+[16:33:03 +2s]   File "/usr/lib/python3.12/asyncio/runners.py", line 195, in run
+[16:33:03 +2s]     return runner.run(main)
+[16:33:03 +2s]            ^^^^^^^^^^^^^^^^
+[16:33:03 +2s]   File "/usr/lib/python3.12/asyncio/runners.py", line 118, in run
+[16:33:03 +2s]     return self._loop.run_until_complete(task)
+[16:33:03 +2s]            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[16:33:03 +2s]   File "/usr/lib/python3.12/asyncio/base_events.py", line 691, in run_until_complete
+[16:33:03 +2s]     return future.result()
+[16:33:03 +2s]            ^^^^^^^^^^^^^^^
+[16:33:03 +2s]   File "/content/drive/MyDrive/pipeline/crawl_site.py", line 57, in crawl
+[16:33:03 +2s]     async with AsyncWebCrawler(config=BrowserConfig(verbose=True)) as crawler:
+[16:33:03 +2s]                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[16:33:03 +2s]   File "/usr/local/lib/python3.12/dist-packages/crawl4ai/async_webcrawler.py", line 200, in __aenter__
+[16:33:03 +2s]     return await self.start()
+[16:33:03 +2s]            ^^^^^^^^^^^^^^^^^^
+[16:33:03 +2s]   File "/usr/local/lib/python3.12/dist-packages/crawl4ai/async_webcrawler.py", line 183, in start
+[16:33:03 +2s]     await self.crawler_strategy.__aenter__()
+[16:33:03 +2s]   File "/usr/local/lib/python3.12/dist-packages/crawl4ai/async_crawler_strategy.py", line 121, in __aenter__
+[16:33:03 +2s]     await self.start()
+[16:33:03 +2s]   File "/usr/local/lib/python3.12/dist-packages/crawl4ai/async_crawler_strategy.py", line 131, in start
+[16:33:03 +2s]     await self.browser_manager.start()
+[16:33:03 +2s]   File "/usr/local/lib/python3.12/dist-packages/crawl4ai/browser_manager.py", line 938, in start
+[16:33:03 +2s]     self.browser = await self.playwright.chromium.launch(**browser_args)
+[16:33:03 +2s]                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[16:33:03 +2s]   File "/usr/local/lib/python3.12/dist-packages/playwright/async_api/_generated.py", line 16307, in launch
+[16:33:03 +2s]     await self._impl_obj.launch(
+[16:33:03 +2s]   File "/usr/local/lib/python3.12/dist-packages/playwright/_impl/_browser_type.py", line 98, in launch
+[16:33:03 +2s]     await self._channel.send(
+[16:33:03 +2s]   File "/usr/local/lib/python3.12/dist-packages/playwright/_impl/_connection.py", line 69, in send
+[16:33:03 +2s]     return await self._connection.wrap_api_call(
+[16:33:03 +2s]            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[16:33:03 +2s]   File "/usr/local/lib/python3.12/dist-packages/playwright/_impl/_connection.py", line 559, in wrap_api_call
+[16:33:03 +2s]     raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+[16:33:03 +2s] playwright._impl._errors.Error: BrowserType.launch: Executable doesn't exist at /root/.cache/ms-playwright/chromium-1223/chrome-linux64/chrome
+[16:33:03 +2s] ╔════════════════════════════════════════════════════════════╗
+[16:33:03 +2s] ║ Looks like Playwright was just installed or updated.       ║
+[16:33:03 +2s] ║ Please run the following command to download new browsers: ║
+[16:33:03 +2s] ║                                                            ║
+[16:33:03 +2s] ║     playwright install                                     ║
+[16:33:03 +2s] ║                                                            ║
+[16:33:03 +2s] ║ <3 Playwright Team                                         ║
+[16:33:03 +2s] ╚════════════════════════════════════════════════════════════╝
+[16:33:04 +2s] Exception ignored in: <function BaseSubprocessTransport.__del__ at 0x7967c5682840>
+[16:33:04 +2s] Traceback (most recent call last):
+[16:33:04 +2s]   File "/usr/lib/python3.12/asyncio/base_subprocess.py", line 126, in __del__
+[16:33:04 +2s]   File "/usr/lib/python3.12/asyncio/base_subprocess.py", line 104, in close
+[16:33:04 +2s]   File "/usr/lib/python3.12/asyncio/unix_events.py", line 767, in close
+[16:33:04 +2s]   File "/usr/lib/python3.12/asyncio/unix_events.py", line 753, in write_eof
+[16:33:04 +2s]   File "/usr/lib/python3.12/asyncio/base_events.py", line 799, in call_soon
+[16:33:04 +2s]   File "/usr/lib/python3.12/asyncio/base_events.py", line 545, in _check_closed
+[16:33:04 +2s] RuntimeError: Event loop is closed
+
+========================================================================
+RUN FINISHED 2026-06-01 16:33:04  (FAILED)
+Elapsed:     2s
+========================================================================
+
+========================================================================
+RUN STARTED  2026-06-01 16:34:05
+site_pipeline.py https://ionq.com/
+========================================================================
+
+[16:34:05 +0s] === 0 crawl site ===
+[16:34:07 +2s] Cleared existing crawl_output/
+[16:34:08 +3s] Traceback (most recent call last):
+[16:34:08 +3s]   File "/content/drive/MyDrive/pipeline/crawl_site.py", line 101, in <module>
+[16:34:08 +3s]     main()
+[16:34:08 +3s]   File "/content/drive/MyDrive/pipeline/crawl_site.py", line 97, in main
+[16:34:08 +3s]     asyncio.run(crawl(args.url, args.crawl, args.max_pages))
+[16:34:08 +3s]   File "/usr/lib/python3.12/asyncio/runners.py", line 195, in run
+[16:34:08 +3s]     return runner.run(main)
+[16:34:08 +3s]            ^^^^^^^^^^^^^^^^
+[16:34:08 +3s]   File "/usr/lib/python3.12/asyncio/runners.py", line 118, in run
+[16:34:08 +3s]     return self._loop.run_until_complete(task)
+[16:34:08 +3s]            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[16:34:08 +3s]   File "/usr/lib/python3.12/asyncio/base_events.py", line 691, in run_until_complete
+[16:34:08 +3s]     return future.result()
+[16:34:08 +3s]            ^^^^^^^^^^^^^^^
+[16:34:08 +3s]   File "/content/drive/MyDrive/pipeline/crawl_site.py", line 57, in crawl
+[16:34:08 +3s]     async with AsyncWebCrawler(config=BrowserConfig(verbose=True)) as crawler:
+[16:34:08 +3s]                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[16:34:08 +3s]   File "/usr/local/lib/python3.12/dist-packages/crawl4ai/async_webcrawler.py", line 200, in __aenter__
+[16:34:08 +3s]     return await self.start()
+[16:34:08 +3s]            ^^^^^^^^^^^^^^^^^^
+[16:34:08 +3s]   File "/usr/local/lib/python3.12/dist-packages/crawl4ai/async_webcrawler.py", line 183, in start
+[16:34:08 +3s]     await self.crawler_strategy.__aenter__()
+[16:34:08 +3s]   File "/usr/local/lib/python3.12/dist-packages/crawl4ai/async_crawler_strategy.py", line 121, in __aenter__
+[16:34:08 +3s]     await self.start()
+[16:34:08 +3s]   File "/usr/local/lib/python3.12/dist-packages/crawl4ai/async_crawler_strategy.py", line 131, in start
+[16:34:08 +3s]     await self.browser_manager.start()
+[16:34:08 +3s]   File "/usr/local/lib/python3.12/dist-packages/crawl4ai/browser_manager.py", line 938, in start
+[16:34:08 +3s]     self.browser = await self.playwright.chromium.launch(**browser_args)
+[16:34:08 +3s]                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[16:34:08 +3s]   File "/usr/local/lib/python3.12/dist-packages/playwright/async_api/_generated.py", line 16307, in launch
+[16:34:08 +3s]     await self._impl_obj.launch(
+[16:34:08 +3s]   File "/usr/local/lib/python3.12/dist-packages/playwright/_impl/_browser_type.py", line 98, in launch
+[16:34:08 +3s]     await self._channel.send(
+[16:34:08 +3s]   File "/usr/local/lib/python3.12/dist-packages/playwright/_impl/_connection.py", line 69, in send
+[16:34:08 +3s]     return await self._connection.wrap_api_call(
+[16:34:08 +3s]            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[16:34:08 +3s]   File "/usr/local/lib/python3.12/dist-packages/playwright/_impl/_connection.py", line 559, in wrap_api_call
+[16:34:08 +3s]     raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+[16:34:08 +3s] playwright._impl._errors.Error: BrowserType.launch: Executable doesn't exist at /root/.cache/ms-playwright/chromium-1223/chrome-linux64/chrome
+[16:34:08 +3s] ╔════════════════════════════════════════════════════════════╗
+[16:34:08 +3s] ║ Looks like Playwright was just installed or updated.       ║
+[16:34:08 +3s] ║ Please run the following command to download new browsers: ║
+[16:34:08 +3s] ║                                                            ║
+[16:34:08 +3s] ║     playwright install                                     ║
+[16:34:08 +3s] ║                                                            ║
+[16:34:08 +3s] ║ <3 Playwright Team                                         ║
+[16:34:08 +3s] ╚════════════════════════════════════════════════════════════╝
+[16:34:08 +3s] Exception ignored in: <function BaseSubprocessTransport.__del__ at 0x7aa77d4c6840>
+[16:34:08 +3s] Traceback (most recent call last):
+[16:34:08 +3s]   File "/usr/lib/python3.12/asyncio/base_subprocess.py", line 126, in __del__
+[16:34:08 +3s]   File "/usr/lib/python3.12/asyncio/base_subprocess.py", line 104, in close
+[16:34:08 +3s]   File "/usr/lib/python3.12/asyncio/unix_events.py", line 767, in close
+[16:34:08 +3s]   File "/usr/lib/python3.12/asyncio/unix_events.py", line 753, in write_eof
+[16:34:08 +3s]   File "/usr/lib/python3.12/asyncio/base_events.py", line 799, in call_soon
+[16:34:08 +3s]   File "/usr/lib/python3.12/asyncio/base_events.py", line 545, in _check_closed
+[16:34:08 +3s] RuntimeError: Event loop is closed
+
+========================================================================
+RUN FINISHED 2026-06-01 16:34:08  (FAILED)
+Elapsed:     4s
+========================================================================
+
+========================================================================
+RUN STARTED  2026-06-01 16:36:20
+site_pipeline.py https://ionq.com/
+========================================================================
+
+[16:36:20 +0s] === 0 crawl site ===
+[16:36:22 +1s] Cleared existing crawl_output/
+[16:36:22 +2s] Traceback (most recent call last):
+[16:36:22 +2s]   File "/content/drive/MyDrive/pipeline/crawl_site.py", line 101, in <module>
+[16:36:22 +2s]     main()
+[16:36:22 +2s]   File "/content/drive/MyDrive/pipeline/crawl_site.py", line 97, in main
+[16:36:22 +2s]     asyncio.run(crawl(args.url, args.crawl, args.max_pages))
+[16:36:22 +2s]   File "/usr/lib/python3.12/asyncio/runners.py", line 195, in run
+[16:36:22 +2s]     return runner.run(main)
+[16:36:22 +2s]            ^^^^^^^^^^^^^^^^
+[16:36:22 +2s]   File "/usr/lib/python3.12/asyncio/runners.py", line 118, in run
+[16:36:22 +2s]     return self._loop.run_until_complete(task)
+[16:36:22 +2s]            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[16:36:22 +2s]   File "/usr/lib/python3.12/asyncio/base_events.py", line 691, in run_until_complete
+[16:36:22 +2s]     return future.result()
+[16:36:22 +2s]            ^^^^^^^^^^^^^^^
+[16:36:22 +2s]   File "/content/drive/MyDrive/pipeline/crawl_site.py", line 57, in crawl
+[16:36:22 +2s]     async with AsyncWebCrawler(config=BrowserConfig(verbose=True)) as crawler:
+[16:36:22 +2s]                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[16:36:22 +2s]   File "/usr/local/lib/python3.12/dist-packages/crawl4ai/async_webcrawler.py", line 200, in __aenter__
+[16:36:22 +2s]     return await self.start()
+[16:36:22 +2s]            ^^^^^^^^^^^^^^^^^^
+[16:36:22 +2s]   File "/usr/local/lib/python3.12/dist-packages/crawl4ai/async_webcrawler.py", line 183, in start
+[16:36:22 +2s]     await self.crawler_strategy.__aenter__()
+[16:36:22 +2s]   File "/usr/local/lib/python3.12/dist-packages/crawl4ai/async_crawler_strategy.py", line 121, in __aenter__
+[16:36:22 +2s]     await self.start()
+[16:36:22 +2s]   File "/usr/local/lib/python3.12/dist-packages/crawl4ai/async_crawler_strategy.py", line 131, in start
+[16:36:22 +2s]     await self.browser_manager.start()
+[16:36:22 +2s]   File "/usr/local/lib/python3.12/dist-packages/crawl4ai/browser_manager.py", line 938, in start
+[16:36:22 +2s]     self.browser = await self.playwright.chromium.launch(**browser_args)
+[16:36:22 +2s]                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[16:36:22 +2s]   File "/usr/local/lib/python3.12/dist-packages/playwright/async_api/_generated.py", line 16307, in launch
+[16:36:22 +2s]     await self._impl_obj.launch(
+[16:36:22 +2s]   File "/usr/local/lib/python3.12/dist-packages/playwright/_impl/_browser_type.py", line 98, in launch
+[16:36:22 +2s]     await self._channel.send(
+[16:36:22 +2s]   File "/usr/local/lib/python3.12/dist-packages/playwright/_impl/_connection.py", line 69, in send
+[16:36:22 +2s]     return await self._connection.wrap_api_call(
+[16:36:22 +2s]            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[16:36:22 +2s]   File "/usr/local/lib/python3.12/dist-packages/playwright/_impl/_connection.py", line 559, in wrap_api_call
+[16:36:22 +2s]     raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+[16:36:22 +2s] playwright._impl._errors.TargetClosedError: BrowserType.launch: Target page, context or browser has been closed
+[16:36:22 +2s] Browser logs:
+
+[16:36:22 +2s] <launching> /root/.cache/ms-playwright/chromium-1223/chrome-linux64/chrome --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-edgeupdater --disable-extensions --disable-features=AvoidUnnecessaryBeforeUnloadCheckSync,BoundaryEventDispatchTracksNodeRemoval,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,Translate,AutoDeElevate,RenderDocument,OptimizationHints,msForceBrowserSignIn,msEdgeUpdateLaunchServicesPreferredVersion --enable-features=CDPScreenshotNewSurface --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --disable-infobars --disable-search-engine-choice-screen --disable-sync --enable-unsafe-swiftshader --headless --hide-scrollbars --mute-audio --blink-settings=primaryHoverType=2,availableHoverTypes=2,primaryPointerType=4,availablePointerTypes=4 --no-sandbox --disable-gpu --disable-gpu-compositing --disable-software-rasterizer --no-sandbox --disable-dev-shm-usage --no-first-run --no-default-browser-check --disable-infobars --window-position=0,0 --ignore-certificate-errors --ignore-certificate-errors-spki-list --disable-blink-features=AutomationControlled --window-position=400,0 --disable-renderer-backgrounding --disable-ipc-flooding-protection --force-color-profile=srgb --mute-audio --disable-background-timer-throttling --disable-features=OptimizationHints,MediaRouter,DialMediaRouteProvider --disable-component-update --disable-domain-reliability --window-size=1080,600 --user-data-dir=/tmp/playwright_chromiumdev_profile-JteGwh --remote-debugging-pipe --no-startup-window
+[16:36:22 +2s] <launched> pid=16445
+[16:36:22 +2s] [pid=16445][err] /root/.cache/ms-playwright/chromium-1223/chrome-linux64/chrome: error while loading shared libraries: libatk-1.0.so.0: cannot open shared object file: No such file or directory
+[16:36:22 +2s] Call log:
+[16:36:22 +2s]   - <launching> /root/.cache/ms-playwright/chromium-1223/chrome-linux64/chrome --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-edgeupdater --disable-extensions --disable-features=AvoidUnnecessaryBeforeUnloadCheckSync,BoundaryEventDispatchTracksNodeRemoval,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,Translate,AutoDeElevate,RenderDocument,OptimizationHints,msForceBrowserSignIn,msEdgeUpdateLaunchServicesPreferredVersion --enable-features=CDPScreenshotNewSurface --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --disable-infobars --disable-search-engine-choice-screen --disable-sync --enable-unsafe-swiftshader --headless --hide-scrollbars --mute-audio --blink-settings=primaryHoverType=2,availableHoverTypes=2,primaryPointerType=4,availablePointerTypes=4 --no-sandbox --disable-gpu --disable-gpu-compositing --disable-software-rasterizer --no-sandbox --disable-dev-shm-usage --no-first-run --no-default-browser-check --disable-infobars --window-position=0,0 --ignore-certificate-errors --ignore-certificate-errors-spki-list --disable-blink-features=AutomationControlled --window-position=400,0 --disable-renderer-backgrounding --disable-ipc-flooding-protection --force-color-profile=srgb --mute-audio --disable-background-timer-throttling --disable-features=OptimizationHints,MediaRouter,DialMediaRouteProvider --disable-component-update --disable-domain-reliability --window-size=1080,600 --user-data-dir=/tmp/playwright_chromiumdev_profile-JteGwh --remote-debugging-pipe --no-startup-window
+[16:36:22 +2s]   - <launched> pid=16445
+[16:36:22 +2s]   - [pid=16445][err] /root/.cache/ms-playwright/chromium-1223/chrome-linux64/chrome: error while loading shared libraries: libatk-1.0.so.0: cannot open shared object file: No such file or directory
+[16:36:22 +2s]   - [pid=16445] <gracefully close start>
+[16:36:22 +2s]   - [pid=16445] <kill>
+[16:36:22 +2s]   - [pid=16445] <will force kill>
+[16:36:22 +2s]   - [pid=16445] <process did exit: exitCode=127, signal=null>
+[16:36:22 +2s]   - [pid=16445] starting temporary directories cleanup
+[16:36:22 +2s]   - [pid=16445] finished temporary directories cleanup
+[16:36:22 +2s]   - [pid=16445] <gracefully close end>
+
+[16:36:23 +2s] Exception ignored in: <function BaseSubprocessTransport.__del__ at 0x7c954f936840>
+[16:36:23 +2s] Traceback (most recent call last):
+[16:36:23 +2s]   File "/usr/lib/python3.12/asyncio/base_subprocess.py", line 126, in __del__
+[16:36:23 +2s]   File "/usr/lib/python3.12/asyncio/base_subprocess.py", line 104, in close
+[16:36:23 +2s]   File "/usr/lib/python3.12/asyncio/unix_events.py", line 767, in close
+[16:36:23 +2s]   File "/usr/lib/python3.12/asyncio/unix_events.py", line 753, in write_eof
+[16:36:23 +2s]   File "/usr/lib/python3.12/asyncio/base_events.py", line 799, in call_soon
+[16:36:23 +2s]   File "/usr/lib/python3.12/asyncio/base_events.py", line 545, in _check_closed
+[16:36:23 +2s] RuntimeError: Event loop is closed
+
+========================================================================
+RUN FINISHED 2026-06-01 16:36:23  (FAILED)
+Elapsed:     2s
+========================================================================
+
+========================================================================
+RUN STARTED  2026-06-01 16:38:25
+site_pipeline.py https://ionq.com/
+========================================================================
+
+[16:38:25 +0s] === 0 crawl site ===
+[16:38:27 +1s] Cleared existing crawl_output/
+[16:38:28 +3s] [INIT].... → Crawl4AI 0.8.7 
+[16:38:32 +7s] [FETCH]... ↓ https://ionq.com/                                                                                    | ✓ | ⏱: 3.86s 
+[16:38:32 +7s] [SCRAPE].. ◆ https://ionq.com/                                                                                    | ✓ | ⏱: 0.29s 
+[16:38:32 +7s] [COMPLETE] ● https://ionq.com/                                                                                    | ✓ | ⏱: 4.22s 
+[16:38:41 +15s] [FETCH]... ↓ https://www.ionq.com/applications-services                                                           | ✓ | ⏱: 8.01s 
+[16:38:41 +16s] [SCRAPE].. ◆ https://www.ionq.com/applications-services                                                           | ✓ | ⏱: 0.32s 
+[16:38:41 +16s] [COMPLETE] ● https://www.ionq.com/applications-services                                                           | ✓ | ⏱: 8.47s 
+[16:38:52 +27s] [FETCH]... ↓ https://www.ionq.com/company                                                                         | ✓ | ⏱: 19.38s 
+[16:38:52 +27s] [SCRAPE].. ◆ https://www.ionq.com/company                                                                         | ✓ | ⏱: 0.37s 
+[16:38:52 +27s] [COMPLETE] ● https://www.ionq.com/company                                                                         | ✓ | ⏱: 19.91s 
+[16:38:53 +28s] [FETCH]... ↓ https://www.ionq.com/full-stack-platform                                                             | ✓ | ⏱: 20.62s 
+[16:38:54 +28s] [SCRAPE].. ◆ https://www.ionq.com/full-stack-platform                                                             | ✓ | ⏱: 0.37s 
+[16:38:54 +29s] [COMPLETE] ● https://www.ionq.com/full-stack-platform                                                             | ✓ | ⏱: 21.16s 
+[16:38:54 +29s] [FETCH]... ↓ https://ionq.com/privacy                                                                             | ✓ | ⏱: 21.53s 
+[16:38:54 +29s] [SCRAPE].. ◆ https://ionq.com/privacy                                                                             | ✓ | ⏱: 0.26s 
+[16:38:54 +29s] [COMPLETE] ● https://ionq.com/privacy                                                                             | ✓ | ⏱: 21.91s 
+[16:38:57 +32s] [FETCH]... ↓ https://www.ionq.com/                                                                                | ✓ | ⏱: 25.19s 
+[16:38:58 +33s] [SCRAPE].. ◆ https://www.ionq.com/                                                                                | ✓ | ⏱: 0.41s 
+[16:38:58 +33s] [COMPLETE] ● https://www.ionq.com/                                                                                | ✓ | ⏱: 25.72s 
+[16:38:59 +34s] [FETCH]... ↓ https://www.ionq.com/news                                                                            | ✓ | ⏱: 18.04s 
+[16:38:59 +34s] [SCRAPE].. ◆ https://www.ionq.com/news                                                                            | ✓ | ⏱: 0.21s 
+[16:38:59 +34s] [COMPLETE] ● https://www.ionq.com/news                                                                            | ✓ | ⏱: 18.32s 
+[16:39:02 +37s] [FETCH]... ↓ https://www.ionq.com/quantum-benchmarks                                                              | ✓ | ⏱: 9.60s 
+[16:39:02 +37s] [SCRAPE].. ◆ https://www.ionq.com/quantum-benchmarks                                                              | ✓ | ⏱: 0.22s 
+[16:39:02 +37s] [COMPLETE] ● https://www.ionq.com/quantum-benchmarks                                                              | ✓ | ⏱: 9.89s 
+[16:39:03 +38s] [FETCH]... ↓ https://www.ionq.com/quantum-systems/compare                                                         | ✓ | ⏱: 8.62s 
+[16:39:03 +38s] [SCRAPE].. ◆ https://www.ionq.com/quantum-systems/compare                                                         | ✓ | ⏱: 0.10s 
+[16:39:03 +38s] [COMPLETE] ● https://www.ionq.com/quantum-systems/compare                                                         | ✓ | ⏱: 8.78s 
+[16:39:03 +38s] [FETCH]... ↓ https://www.ionq.com/quantum-cloud                                                                   | ✓ | ⏱: 9.31s 
+[16:39:03 +38s] [SCRAPE].. ◆ https://www.ionq.com/quantum-cloud                                                                   | ✓ | ⏱: 0.11s 
+[16:39:03 +38s] [COMPLETE] ● https://www.ionq.com/quantum-cloud                                                                   | ✓ | ⏱: 9.45s 
+[16:39:03 +38s] Saved: crawl_output/23d8ef4027_ionq.com.json
+[16:39:03 +38s] Saved: crawl_output/eb63bf2062_www.ionq.com_applications-services.json
+[16:39:03 +38s] Saved: crawl_output/35e9dd0bbf_www.ionq.com_company.json
+[16:39:03 +38s] Saved: crawl_output/c37d31f9c5_www.ionq.com_full-stack-platform.json
+[16:39:03 +38s] Skipped: https://ionq.com/privacy
+[16:39:03 +38s] Saved: crawl_output/1d9fde8986_www.ionq.com.json
+[16:39:03 +38s] Saved: crawl_output/ba7b773a9a_www.ionq.com_news.json
+[16:39:03 +38s] Saved: crawl_output/eedc5f6a70_www.ionq.com_quantum-benchmarks.json
+[16:39:03 +38s] Saved: crawl_output/344f782307_www.ionq.com_quantum-systems_compare.json
+[16:39:03 +38s] Saved: crawl_output/d67142d4be_www.ionq.com_quantum-cloud.json
+
+[16:39:04 +39s] === 1 actor extraction ===
+[16:39:10 +45s] Reading page (1/9): https://www.ionq.com
+[16:39:10 +45s] Extracting: https://www.ionq.com (1/9), chunk 1/41
+
+[16:39:11 +45s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[16:39:11 +45s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[16:39:11 +45s] Model call failed for https://www.ionq.com chunk 1: litellm.APIConnectionError: OllamaException - {"error":"model 'mistral' not found"}
+[16:39:11 +45s] Extracting: https://www.ionq.com (1/9), chunk 2/41
+
+[16:39:11 +45s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[16:39:11 +45s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[16:39:11 +45s] Model call failed for https://www.ionq.com chunk 2: litellm.APIConnectionError: OllamaException - {"error":"model 'mistral' not found"}
+[16:39:11 +46s] Extracting: https://www.ionq.com (1/9), chunk 3/41
+
+[16:39:11 +46s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[16:39:11 +46s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[16:39:11 +46s] Model call failed for https://www.ionq.com chunk 3: litellm.APIConnectionError: OllamaException - {"error":"model 'mistral' not found"}
+[16:39:11 +46s] Extracting: https://www.ionq.com (1/9), chunk 4/41
+
+[16:39:11 +46s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[16:39:11 +46s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[16:39:11 +46s] Model call failed for https://www.ionq.com chunk 4: litellm.APIConnectionError: OllamaException - {"error":"model 'mistral' not found"}
+[16:39:11 +46s] Extracting: https://www.ionq.com (1/9), chunk 5/41
+
+[16:39:11 +46s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[16:39:11 +46s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[16:39:11 +46s] Model call failed for https://www.ionq.com chunk 5: litellm.APIConnectionError: OllamaException - {"error":"model 'mistral' not found"}
+[16:39:11 +46s] Extracting: https://www.ionq.com (1/9), chunk 6/41
+
+[16:39:11 +46s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[16:39:11 +46s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[16:39:11 +46s] Model call failed for https://www.ionq.com chunk 6: litellm.APIConnectionError: OllamaException - {"error":"model 'mistral' not found"}
+[16:39:11 +46s] Extracting: https://www.ionq.com (1/9), chunk 7/41
+
+[16:39:11 +46s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[16:39:11 +46s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[16:39:11 +46s] Model call failed for https://www.ionq.com chunk 7: litellm.APIConnectionError: OllamaException - {"error":"model 'mistral' not found"}
+[16:39:11 +46s] Extracting: https://www.ionq.com (1/9), chunk 8/41
+
+[16:39:11 +46s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[16:39:11 +46s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[16:39:11 +46s] Model call failed for https://www.ionq.com chunk 8: litellm.APIConnectionError: OllamaException - {"error":"model 'mistral' not found"}
+[16:39:11 +46s] Extracting: https://www.ionq.com (1/9), chunk 9/41
+
+[16:39:11 +46s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[16:39:11 +46s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[16:39:11 +46s] Model call failed for https://www.ionq.com chunk 9: litellm.APIConnectionError: OllamaException - {"error":"model 'mistral' not found"}
+[16:39:11 +46s] Extracting: https://www.ionq.com (1/9), chunk 10/41
+
+[16:39:11 +46s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[16:39:11 +46s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[16:39:11 +46s] Model call failed for https://www.ionq.com chunk 10: litellm.APIConnectionError: OllamaException - {"error":"model 'mistral' not found"}
+[16:39:11 +46s] Extracting: https://www.ionq.com (1/9), chunk 11/41
+
+[16:39:11 +46s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[16:39:11 +46s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[16:39:11 +46s] Model call failed for https://www.ionq.com chunk 11: litellm.APIConnectionError: OllamaException - {"error":"model 'mistral' not found"}
+[16:39:11 +46s] Extracting: https://www.ionq.com (1/9), chunk 12/41
+
+[16:39:11 +46s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[16:39:11 +46s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[16:39:11 +46s] Model call failed for https://www.ionq.com chunk 12: litellm.APIConnectionError: OllamaException - {"error":"model 'mistral' not found"}
+[16:39:11 +46s] Extracting: https://www.ionq.com (1/9), chunk 13/41
+
+[16:39:11 +46s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[16:39:11 +46s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[16:39:11 +46s] Model call failed for https://www.ionq.com chunk 13: litellm.APIConnectionError: OllamaException - {"error":"model 'mistral' not found"}
+[16:39:11 +46s] Extracting: https://www.ionq.com (1/9), chunk 14/41
+
+[16:39:11 +46s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[16:39:11 +46s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[16:39:11 +46s] Model call failed for https://www.ionq.com chunk 14: litellm.APIConnectionError: OllamaException - {"error":"model 'mistral' not found"}
+[16:39:11 +46s] Extracting: https://www.ionq.com (1/9), chunk 15/41
+
+[16:39:11 +46s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[16:39:11 +46s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[16:39:11 +46s] Model call failed for https://www.ionq.com chunk 15: litellm.APIConnectionError: OllamaException - {"error":"model 'mistral' not found"}
+[16:39:11 +46s] Extracting: https://www.ionq.com (1/9), chunk 16/41
+
+[16:39:11 +46s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[16:39:11 +46s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[16:39:11 +46s] Model call failed for https://www.ionq.com chunk 16: litellm.APIConnectionError: OllamaException - {"error":"model 'mistral' not found"}
+[16:39:11 +46s] Extracting: https://www.ionq.com (1/9), chunk 17/41
+
+[16:39:11 +46s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[16:39:11 +46s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[16:39:11 +46s] Model call failed for https://www.ionq.com chunk 17: litellm.APIConnectionError: OllamaException - {"error":"model 'mistral' not found"}
+[16:39:11 +46s] Extracting: https://www.ionq.com (1/9), chunk 18/41
+
+[16:39:11 +46s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[16:39:11 +46s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[16:39:11 +46s] Model call failed for https://www.ionq.com chunk 18: litellm.APIConnectionError: OllamaException - {"error":"model 'mistral' not found"}
+[16:39:11 +46s] Extracting: https://www.ionq.com (1/9), chunk 19/41
+
+[16:39:11 +46s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[16:39:11 +46s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[16:39:11 +46s] Model call failed for https://www.ionq.com chunk 19: litellm.APIConnectionError: OllamaException - {"error":"model 'mistral' not found"}
+[16:39:11 +46s] Extracting: https://www.ionq.com (1/9), chunk 20/41
+
+[16:39:11 +46s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[16:39:11 +46s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[16:39:11 +46s] Model call failed for https://www.ionq.com chunk 20: litellm.APIConnectionError: OllamaException - {"error":"model 'mistral' not found"}
+[16:39:11 +46s] Extracting: https://www.ionq.com (1/9), chunk 21/41
+
+[16:39:11 +46s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[16:39:11 +46s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[16:39:11 +46s] Model call failed for https://www.ionq.com chunk 21: litellm.APIConnectionError: OllamaException - {"error":"model 'mistral' not found"}
+[16:39:11 +46s] Extracting: https://www.ionq.com (1/9), chunk 22/41
+
+[16:39:11 +46s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[16:39:11 +46s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[16:39:11 +46s] Model call failed for https://www.ionq.com chunk 22: litellm.APIConnectionError: OllamaException - {"error":"model 'mistral' not found"}
+[16:39:11 +46s] Extracting: https://www.ionq.com (1/9), chunk 23/41
+
+[16:39:11 +46s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[16:39:11 +46s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[16:39:11 +46s] Model call failed for https://www.ionq.com chunk 23: litellm.APIConnectionError: OllamaException - {"error":"model 'mistral' not found"}
+[16:39:11 +46s] Extracting: https://www.ionq.com (1/9), chunk 24/41
+
+[16:39:11 +46s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[16:39:11 +46s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[16:39:11 +46s] Model call failed for https://www.ionq.com chunk 24: litellm.APIConnectionError: OllamaException - {"error":"model 'mistral' not found"}
+[16:39:11 +46s] Extracting: https://www.ionq.com (1/9), chunk 25/41
+
+[16:39:11 +46s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[16:39:11 +46s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[16:39:11 +46s] Model call failed for https://www.ionq.com chunk 25: litellm.APIConnectionError: OllamaException - {"error":"model 'mistral' not found"}
+[16:39:11 +46s] Extracting: https://www.ionq.com (1/9), chunk 26/41
+
+[16:39:11 +46s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[16:39:11 +46s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[16:39:11 +46s] Model call failed for https://www.ionq.com chunk 26: litellm.APIConnectionError: OllamaException - {"error":"model 'mistral' not found"}
+[16:39:11 +46s] Extracting: https://www.ionq.com (1/9), chunk 27/41
+
+[16:39:11 +46s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[16:39:11 +46s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[16:39:11 +46s] Model call failed for https://www.ionq.com chunk 27: litellm.APIConnectionError: OllamaException - {"error":"model 'mistral' not found"}
+[16:39:11 +46s] Extracting: https://www.ionq.com (1/9), chunk 28/41
+
+[16:39:11 +46s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[16:39:11 +46s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[16:39:11 +46s] Model call failed for https://www.ionq.com chunk 28: litellm.APIConnectionError: OllamaException - {"error":"model 'mistral' not found"}
+[16:39:11 +46s] Extracting: https://www.ionq.com (1/9), chunk 29/41
+
+[16:39:11 +46s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[16:39:11 +46s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[16:39:11 +46s] Model call failed for https://www.ionq.com chunk 29: litellm.APIConnectionError: OllamaException - {"error":"model 'mistral' not found"}
+[16:39:11 +46s] Extracting: https://www.ionq.com (1/9), chunk 30/41
+
+[16:39:11 +46s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[16:39:11 +46s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[16:39:11 +46s] Model call failed for https://www.ionq.com chunk 30: litellm.APIConnectionError: OllamaException - {"error":"model 'mistral' not found"}
+[16:39:11 +46s] Extracting: https://www.ionq.com (1/9), chunk 31/41
+
+[16:39:11 +46s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[16:39:11 +46s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[16:39:11 +46s] Model call failed for https://www.ionq.com chunk 31: litellm.APIConnectionError: OllamaException - {"error":"model 'mistral' not found"}
+[16:39:11 +46s] Extracting: https://www.ionq.com (1/9), chunk 32/41
+
+[16:39:11 +46s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[16:39:11 +46s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[16:39:11 +46s] Model call failed for https://www.ionq.com chunk 32: litellm.APIConnectionError: OllamaException - {"error":"model 'mistral' not found"}
+[16:39:11 +46s] Extracting: https://www.ionq.com (1/9), chunk 33/41
+
+[16:39:11 +46s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[16:39:11 +46s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[16:39:11 +46s] Model call failed for https://www.ionq.com chunk 33: litellm.APIConnectionError: OllamaException - {"error":"model 'mistral' not found"}
+[16:39:11 +46s] Extracting: https://www.ionq.com (1/9), chunk 34/41
+
+[16:39:11 +46s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[16:39:11 +46s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[16:39:11 +46s] Model call failed for https://www.ionq.com chunk 34: litellm.APIConnectionError: OllamaException - {"error":"model 'mistral' not found"}
+[16:39:11 +46s] Extracting: https://www.ionq.com (1/9), chunk 35/41
+
+[16:39:11 +46s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[16:39:11 +46s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[16:39:11 +46s] Model call failed for https://www.ionq.com chunk 35: litellm.APIConnectionError: OllamaException - {"error":"model 'mistral' not found"}
+[16:39:11 +46s] Extracting: https://www.ionq.com (1/9), chunk 36/41
+
+[16:39:11 +46s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[16:39:11 +46s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[16:39:11 +46s] Model call failed for https://www.ionq.com chunk 36: litellm.APIConnectionError: OllamaException - {"error":"model 'mistral' not found"}
+[16:39:11 +46s] Extracting: https://www.ionq.com (1/9), chunk 37/41
+
+[16:39:11 +46s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[16:39:11 +46s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[16:39:11 +46s] Model call failed for https://www.ionq.com chunk 37: litellm.APIConnectionError: OllamaException - {"error":"model 'mistral' not found"}
+[16:39:11 +46s] Extracting: https://www.ionq.com (1/9), chunk 38/41
+
+[16:39:11 +46s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[16:39:11 +46s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[16:39:11 +46s] Model call failed for https://www.ionq.com chunk 38: litellm.APIConnectionError: OllamaException - {"error":"model 'mistral' not found"}
+[16:39:11 +46s] Extracting: https://www.ionq.com (1/9), chunk 39/41
+
+[16:39:11 +46s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[16:39:11 +46s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[16:39:11 +46s] Model call failed for https://www.ionq.com chunk 39: litellm.APIConnectionError: OllamaException - {"error":"model 'mistral' not found"}
+[16:39:11 +46s] Extracting: https://www.ionq.com (1/9), chunk 40/41
+
+[16:39:11 +46s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[16:39:11 +46s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[16:39:11 +46s] Model call failed for https://www.ionq.com chunk 40: litellm.APIConnectionError: OllamaException - {"error":"model 'mistral' not found"}
+[16:39:11 +46s] Extracting: https://www.ionq.com (1/9), chunk 41/41
+
+[16:39:11 +46s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[16:39:11 +46s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[16:39:11 +46s] Model call failed for https://www.ionq.com chunk 41: litellm.APIConnectionError: OllamaException - {"error":"model 'mistral' not found"}
+[16:39:11 +46s] Reading page (2/9): https://ionq.com
+[16:39:11 +46s] Extracting: https://ionq.com (2/9), chunk 1/40
+
+[16:39:11 +46s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[16:39:11 +46s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[16:39:11 +46s] Model call failed for https://ionq.com chunk 1: litellm.APIConnectionError: OllamaException - {"error":"model 'mistral' not found"}
+[16:39:11 +46s] Extracting: https://ionq.com (2/9), chunk 2/40
+
+[16:39:11 +46s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[16:39:11 +46s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[16:39:11 +46s] Model call failed for https://ionq.com chunk 2: litellm.APIConnectionError: OllamaException - {"error":"model 'mistral' not found"}
+[16:39:11 +46s] Extracting: https://ionq.com (2/9), chunk 3/40
+
+[16:39:11 +46s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[16:39:11 +46s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[16:39:12 +46s] Model call failed for https://ionq.com chunk 3: litellm.APIConnectionError: OllamaException - {"error":"model 'mistral' not found"}
+[16:39:12 +46s] Extracting: https://ionq.com (2/9), chunk 4/40
+
+[16:39:12 +46s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[16:39:12 +46s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[16:39:12 +46s] Model call failed for https://ionq.com chunk 4: litellm.APIConnectionError: OllamaException - {"error":"model 'mistral' not found"}
+[16:39:12 +46s] Extracting: https://ionq.com (2/9), chunk 5/40
+
+[16:39:12 +46s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[16:39:12 +46s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[16:39:12 +46s] Model call failed for https://ionq.com chunk 5: litellm.APIConnectionError: OllamaException - {"error":"model 'mistral' not found"}
+[16:39:12 +46s] Extracting: https://ionq.com (2/9), chunk 6/40
+
+[16:39:12 +46s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[16:39:12 +46s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[16:39:12 +46s] Model call failed for https://ionq.com chunk 6: litellm.APIConnectionError: OllamaException - {"error":"model 'mistral' not found"}
+[16:39:12 +46s] Extracting: https://ionq.com (2/9), chunk 7/40
+
+[16:39:12 +46s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[16:39:12 +46s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[16:39:12 +46s] Model call failed for https://ionq.com chunk 7: litellm.APIConnectionError: OllamaException - {"error":"model 'mistral' not found"}
+[16:39:12 +46s] Extracting: https://ionq.com (2/9), chunk 8/40
+
+[16:39:12 +46s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[16:39:12 +46s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[16:39:12 +46s] Model call failed for https://ionq.com chunk 8: litellm.APIConnectionError: OllamaException - {"error":"model 'mistral' not found"}
+[16:39:12 +46s] Extracting: https://ionq.com (2/9), chunk 9/40
+
+[16:39:12 +46s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[16:39:12 +46s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[16:39:12 +46s] Model call failed for https://ionq.com chunk 9: litellm.APIConnectionError: OllamaException - {"error":"model 'mistral' not found"}
+[16:39:12 +46s] Extracting: https://ionq.com (2/9), chunk 10/40
+
+[16:39:12 +46s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[16:39:12 +46s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[16:39:12 +46s] Model call failed for https://ionq.com chunk 10: litellm.APIConnectionError: OllamaException - {"error":"model 'mistral' not found"}
+[16:39:12 +46s] Extracting: https://ionq.com (2/9), chunk 11/40
+
+[16:39:12 +46s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[16:39:12 +46s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[16:39:12 +46s] Model call failed for https://ionq.com chunk 11: litellm.APIConnectionError: OllamaException - {"error":"model 'mistral' not found"}
+[16:39:12 +46s] Extracting: https://ionq.com (2/9), chunk 12/40
+
+[16:39:12 +46s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[16:39:12 +46s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[16:39:12 +46s] Model call failed for https://ionq.com chunk 12: litellm.APIConnectionError: OllamaException - {"error":"model 'mistral' not found"}
+[16:39:12 +46s] Extracting: https://ionq.com (2/9), chunk 13/40
+
+[16:39:12 +46s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[16:39:12 +46s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[16:39:12 +46s] Model call failed for https://ionq.com chunk 13: litellm.APIConnectionError: OllamaException - {"error":"model 'mistral' not found"}
+[16:39:12 +46s] Extracting: https://ionq.com (2/9), chunk 14/40
+
+[16:39:12 +46s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[16:39:12 +46s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[16:39:12 +47s] Model call failed for https://ionq.com chunk 14: litellm.APIConnectionError: OllamaException - {"error":"model 'mistral' not found"}
+[16:39:12 +47s] Extracting: https://ionq.com (2/9), chunk 15/40
+
+[16:39:12 +47s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[16:39:12 +47s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[16:39:12 +47s] Model call failed for https://ionq.com chunk 15: litellm.APIConnectionError: OllamaException - {"error":"model 'mistral' not found"}
+[16:39:12 +47s] Extracting: https://ionq.com (2/9), chunk 16/40
+
+[16:39:12 +47s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[16:39:12 +47s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[16:39:12 +47s] Model call failed for https://ionq.com chunk 16: litellm.APIConnectionError: OllamaException - {"error":"model 'mistral' not found"}
+[16:39:12 +47s] Extracting: https://ionq.com (2/9), chunk 17/40
+
+[16:39:12 +47s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[16:39:12 +47s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[16:39:12 +47s] Model call failed for https://ionq.com chunk 17: litellm.APIConnectionError: OllamaException - {"error":"model 'mistral' not found"}
+[16:39:12 +47s] Extracting: https://ionq.com (2/9), chunk 18/40
+
+[16:39:12 +47s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[16:39:12 +47s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[16:39:12 +47s] Model call failed for https://ionq.com chunk 18: litellm.APIConnectionError: OllamaException - {"error":"model 'mistral' not found"}
+[16:39:12 +47s] Extracting: https://ionq.com (2/9), chunk 19/40
+
+[16:39:12 +47s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[16:39:12 +47s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[16:39:12 +47s] Model call failed for https://ionq.com chunk 19: litellm.APIConnectionError: OllamaException - {"error":"model 'mistral' not found"}
+[16:39:12 +47s] Extracting: https://ionq.com (2/9), chunk 20/40
+
+[16:39:12 +47s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[16:39:12 +47s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[16:39:12 +47s] Model call failed for https://ionq.com chunk 20: litellm.APIConnectionError: OllamaException - {"error":"model 'mistral' not found"}
+[16:39:12 +47s] Extracting: https://ionq.com (2/9), chunk 21/40
+
+[16:39:12 +47s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[16:39:12 +47s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[16:39:12 +47s] Model call failed for https://ionq.com chunk 21: litellm.APIConnectionError: OllamaException - {"error":"model 'mistral' not found"}
+[16:39:12 +47s] Extracting: https://ionq.com (2/9), chunk 22/40
+
+[16:39:12 +47s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[16:39:12 +47s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[16:39:12 +47s] Model call failed for https://ionq.com chunk 22: litellm.APIConnectionError: OllamaException - {"error":"model 'mistral' not found"}
+[16:39:12 +47s] Extracting: https://ionq.com (2/9), chunk 23/40
+
+[16:39:12 +47s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[16:39:12 +47s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[16:39:12 +47s] Model call failed for https://ionq.com chunk 23: litellm.APIConnectionError: OllamaException - {"error":"model 'mistral' not found"}
+[16:39:12 +47s] Extracting: https://ionq.com (2/9), chunk 24/40
+
+[16:39:12 +47s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[16:39:12 +47s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[16:39:12 +47s] Model call failed for https://ionq.com chunk 24: litellm.APIConnectionError: OllamaException - {"error":"model 'mistral' not found"}
+[16:39:12 +47s] Extracting: https://ionq.com (2/9), chunk 25/40
+
+[16:39:12 +47s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[16:39:12 +47s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[16:39:12 +47s] Model call failed for https://ionq.com chunk 25: litellm.APIConnectionError: OllamaException - {"error":"model 'mistral' not found"}
+[16:39:12 +47s] Extracting: https://ionq.com (2/9), chunk 26/40
+
+[16:39:12 +47s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[16:39:12 +47s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[16:39:12 +47s] Model call failed for https://ionq.com chunk 26: litellm.APIConnectionError: OllamaException - {"error":"model 'mistral' not found"}
+[16:39:12 +47s] Extracting: https://ionq.com (2/9), chunk 27/40
+
+[16:39:12 +47s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[16:39:12 +47s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[16:39:12 +47s] Model call failed for https://ionq.com chunk 27: litellm.APIConnectionError: OllamaException - {"error":"model 'mistral' not found"}
+[16:39:12 +47s] Extracting: https://ionq.com (2/9), chunk 28/40
+
+[16:39:12 +47s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[16:39:12 +47s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[16:39:12 +47s] Model call failed for https://ionq.com chunk 28: litellm.APIConnectionError: OllamaException - {"error":"model 'mistral' not found"}
+[16:39:12 +47s] Extracting: https://ionq.com (2/9), chunk 29/40
+
+[16:39:12 +47s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[16:39:12 +47s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[16:39:12 +47s] Model call failed for https://ionq.com chunk 29: litellm.APIConnectionError: OllamaException - {"error":"model 'mistral' not found"}
+[16:39:12 +47s] Extracting: https://ionq.com (2/9), chunk 30/40
+
+[16:39:12 +47s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[16:39:12 +47s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[16:39:12 +47s] Model call failed for https://ionq.com chunk 30: litellm.APIConnectionError: OllamaException - {"error":"model 'mistral' not found"}
+[16:39:12 +47s] Extracting: https://ionq.com (2/9), chunk 31/40
+
+[16:39:12 +47s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[16:39:12 +47s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[16:39:12 +47s] Model call failed for https://ionq.com chunk 31: litellm.APIConnectionError: OllamaException - {"error":"model 'mistral' not found"}
+[16:39:12 +47s] Extracting: https://ionq.com (2/9), chunk 32/40
+
+[16:39:12 +47s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[16:39:12 +47s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[16:39:12 +47s] Model call failed for https://ionq.com chunk 32: litellm.APIConnectionError: OllamaException - {"error":"model 'mistral' not found"}
+[16:39:12 +47s] Extracting: https://ionq.com (2/9), chunk 33/40
+
+[16:39:12 +47s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[16:39:12 +47s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[16:39:12 +47s] Model call failed for https://ionq.com chunk 33: litellm.APIConnectionError: OllamaException - {"error":"model 'mistral' not found"}
+[16:39:12 +47s] Extracting: https://ionq.com (2/9), chunk 34/40
+
+[16:39:12 +47s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[16:39:12 +47s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[16:39:12 +47s] Model call failed for https://ionq.com chunk 34: litellm.APIConnectionError: OllamaException - {"error":"model 'mistral' not found"}
+[16:39:12 +47s] Extracting: https://ionq.com (2/9), chunk 35/40
+
+[16:39:12 +47s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[16:39:12 +47s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[16:39:12 +47s] Model call failed for https://ionq.com chunk 35: litellm.APIConnectionError: OllamaException - {"error":"model 'mistral' not found"}
+[16:39:12 +47s] Extracting: https://ionq.com (2/9), chunk 36/40
+
+[16:39:12 +47s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[16:39:12 +47s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[16:39:12 +47s] Model call failed for https://ionq.com chunk 36: litellm.APIConnectionError: OllamaException - {"error":"model 'mistral' not found"}
+[16:39:12 +47s] Extracting: https://ionq.com (2/9), chunk 37/40
+
+[16:39:12 +47s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[16:39:12 +47s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[16:39:12 +47s] Model call failed for https://ionq.com chunk 37: litellm.APIConnectionError: OllamaException - {"error":"model 'mistral' not found"}
+[16:39:12 +47s] Extracting: https://ionq.com (2/9), chunk 38/40
+
+[16:39:12 +47s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[16:39:12 +47s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[16:39:12 +47s] Model call failed for https://ionq.com chunk 38: litellm.APIConnectionError: OllamaException - {"error":"model 'mistral' not found"}
+[16:39:12 +47s] Extracting: https://ionq.com (2/9), chunk 39/40
+
+[16:39:12 +47s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[16:39:12 +47s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[16:39:12 +47s] Model call failed for https://ionq.com chunk 39: litellm.APIConnectionError: OllamaException - {"error":"model 'mistral' not found"}
+[16:39:12 +47s] Extracting: https://ionq.com (2/9), chunk 40/40
+
+[16:39:12 +47s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[16:39:12 +47s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[16:39:12 +47s] Model call failed for https://ionq.com chunk 40: litellm.APIConnectionError: OllamaException - {"error":"model 'mistral' not found"}
+[16:39:12 +47s] Reading page (3/9): https://www.ionq.com/quantum-systems/compare
+[16:39:12 +47s] Extracting: https://www.ionq.com/quantum-systems/compare (3/9), chunk 1/13
+
+[16:39:12 +47s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[16:39:12 +47s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[16:39:12 +47s] Model call failed for https://www.ionq.com/quantum-systems/compare chunk 1: litellm.APIConnectionError: OllamaException - {"error":"model 'mistral' not found"}
+[16:39:12 +47s] Extracting: https://www.ionq.com/quantum-systems/compare (3/9), chunk 2/13
+
+[16:39:12 +47s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[16:39:12 +47s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[16:39:12 +47s] Model call failed for https://www.ionq.com/quantum-systems/compare chunk 2: litellm.APIConnectionError: OllamaException - {"error":"model 'mistral' not found"}
+[16:39:12 +47s] Extracting: https://www.ionq.com/quantum-systems/compare (3/9), chunk 3/13
+
+[16:39:12 +47s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[16:39:12 +47s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[16:39:12 +47s] Model call failed for https://www.ionq.com/quantum-systems/compare chunk 3: litellm.APIConnectionError: OllamaException - {"error":"model 'mistral' not found"}
+[16:39:12 +47s] Extracting: https://www.ionq.com/quantum-systems/compare (3/9), chunk 4/13
+
+[16:39:12 +47s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[16:39:12 +47s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[16:39:12 +47s] Model call failed for https://www.ionq.com/quantum-systems/compare chunk 4: litellm.APIConnectionError: OllamaException - {"error":"model 'mistral' not found"}
+[16:39:12 +47s] Extracting: https://www.ionq.com/quantum-systems/compare (3/9), chunk 5/13
+
+[16:39:12 +47s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[16:39:12 +47s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[16:39:12 +47s] Model call failed for https://www.ionq.com/quantum-systems/compare chunk 5: litellm.APIConnectionError: OllamaException - {"error":"model 'mistral' not found"}
+[16:39:12 +47s] Extracting: https://www.ionq.com/quantum-systems/compare (3/9), chunk 6/13
+
+[16:39:12 +47s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[16:39:12 +47s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[16:39:12 +47s] Model call failed for https://www.ionq.com/quantum-systems/compare chunk 6: litellm.APIConnectionError: OllamaException - {"error":"model 'mistral' not found"}
+[16:39:12 +47s] Extracting: https://www.ionq.com/quantum-systems/compare (3/9), chunk 7/13
+
+[16:39:12 +47s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[16:39:12 +47s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[16:39:12 +47s] Model call failed for https://www.ionq.com/quantum-systems/compare chunk 7: litellm.APIConnectionError: OllamaException - {"error":"model 'mistral' not found"}
+[16:39:12 +47s] Extracting: https://www.ionq.com/quantum-systems/compare (3/9), chunk 8/13
+
+[16:39:12 +47s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[16:39:12 +47s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[16:39:12 +47s] Model call failed for https://www.ionq.com/quantum-systems/compare chunk 8: litellm.APIConnectionError: OllamaException - {"error":"model 'mistral' not found"}
+[16:39:12 +47s] Extracting: https://www.ionq.com/quantum-systems/compare (3/9), chunk 9/13
+
+[16:39:12 +47s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[16:39:12 +47s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[16:39:12 +47s] Model call failed for https://www.ionq.com/quantum-systems/compare chunk 9: litellm.APIConnectionError: OllamaException - {"error":"model 'mistral' not found"}
+[16:39:12 +47s] Extracting: https://www.ionq.com/quantum-systems/compare (3/9), chunk 10/13
+
+[16:39:12 +47s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[16:39:12 +47s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[16:39:12 +47s] Model call failed for https://www.ionq.com/quantum-systems/compare chunk 10: litellm.APIConnectionError: OllamaException - {"error":"model 'mistral' not found"}
+[16:39:12 +47s] Extracting: https://www.ionq.com/quantum-systems/compare (3/9), chunk 11/13
+
+[16:39:12 +47s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[16:39:12 +47s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[16:39:12 +47s] Model call failed for https://www.ionq.com/quantum-systems/compare chunk 11: litellm.APIConnectionError: OllamaException - {"error":"model 'mistral' not found"}
+[16:39:12 +47s] Extracting: https://www.ionq.com/quantum-systems/compare (3/9), chunk 12/13
+
+[16:39:12 +47s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[16:39:12 +47s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[16:39:12 +47s] Model call failed for https://www.ionq.com/quantum-systems/compare chunk 12: litellm.APIConnectionError: OllamaException - {"error":"model 'mistral' not found"}
+[16:39:12 +47s] Extracting: https://www.ionq.com/quantum-systems/compare (3/9), chunk 13/13
+
+[16:39:12 +47s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[16:39:12 +47s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[16:39:12 +47s] Model call failed for https://www.ionq.com/quantum-systems/compare chunk 13: litellm.APIConnectionError: OllamaException - {"error":"model 'mistral' not found"}
+[16:39:12 +47s] Reading page (4/9): https://www.ionq.com/company
+[16:39:12 +47s] Extracting: https://www.ionq.com/company (4/9), chunk 1/17
+
+[16:39:12 +47s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[16:39:12 +47s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[16:39:12 +47s] Model call failed for https://www.ionq.com/company chunk 1: litellm.APIConnectionError: OllamaException - {"error":"model 'mistral' not found"}
+[16:39:12 +47s] Extracting: https://www.ionq.com/company (4/9), chunk 2/17
+
+[16:39:12 +47s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[16:39:12 +47s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[16:39:12 +47s] Model call failed for https://www.ionq.com/company chunk 2: litellm.APIConnectionError: OllamaException - {"error":"model 'mistral' not found"}
+[16:39:12 +47s] Extracting: https://www.ionq.com/company (4/9), chunk 3/17
+
+[16:39:12 +47s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[16:39:12 +47s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[16:39:13 +47s] Model call failed for https://www.ionq.com/company chunk 3: litellm.APIConnectionError: OllamaException - {"error":"model 'mistral' not found"}
+[16:39:13 +47s] Extracting: https://www.ionq.com/company (4/9), chunk 4/17
+
+[16:39:13 +47s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[16:39:13 +47s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[16:39:13 +47s] Model call failed for https://www.ionq.com/company chunk 4: litellm.APIConnectionError: OllamaException - {"error":"model 'mistral' not found"}
+[16:39:13 +47s] Extracting: https://www.ionq.com/company (4/9), chunk 5/17
+
+[16:39:13 +47s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[16:39:13 +47s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[16:39:13 +47s] Model call failed for https://www.ionq.com/company chunk 5: litellm.APIConnectionError: OllamaException - {"error":"model 'mistral' not found"}
+[16:39:13 +47s] Extracting: https://www.ionq.com/company (4/9), chunk 6/17
+
+[16:39:13 +47s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[16:39:13 +47s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[16:39:13 +47s] Model call failed for https://www.ionq.com/company chunk 6: litellm.APIConnectionError: OllamaException - {"error":"model 'mistral' not found"}
+[16:39:13 +47s] Extracting: https://www.ionq.com/company (4/9), chunk 7/17
+
+[16:39:13 +47s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[16:39:13 +47s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[16:39:13 +47s] Model call failed for https://www.ionq.com/company chunk 7: litellm.APIConnectionError: OllamaException - {"error":"model 'mistral' not found"}
+[16:39:13 +47s] Extracting: https://www.ionq.com/company (4/9), chunk 8/17
+
+[16:39:13 +47s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[16:39:13 +47s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[16:39:13 +47s] Model call failed for https://www.ionq.com/company chunk 8: litellm.APIConnectionError: OllamaException - {"error":"model 'mistral' not found"}
+[16:39:13 +47s] Extracting: https://www.ionq.com/company (4/9), chunk 9/17
+
+[16:39:13 +47s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[16:39:13 +47s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[16:39:13 +47s] Model call failed for https://www.ionq.com/company chunk 9: litellm.APIConnectionError: OllamaException - {"error":"model 'mistral' not found"}
+[16:39:13 +47s] Extracting: https://www.ionq.com/company (4/9), chunk 10/17
+
+[16:39:13 +47s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[16:39:13 +47s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[16:39:13 +47s] Model call failed for https://www.ionq.com/company chunk 10: litellm.APIConnectionError: OllamaException - {"error":"model 'mistral' not found"}
+[16:39:13 +47s] Extracting: https://www.ionq.com/company (4/9), chunk 11/17
+
+[16:39:13 +47s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[16:39:13 +47s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[16:39:13 +47s] Model call failed for https://www.ionq.com/company chunk 11: litellm.APIConnectionError: OllamaException - {"error":"model 'mistral' not found"}
+[16:39:13 +47s] Extracting: https://www.ionq.com/company (4/9), chunk 12/17
+
+[16:39:13 +47s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[16:39:13 +47s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[16:39:13 +47s] Model call failed for https://www.ionq.com/company chunk 12: litellm.APIConnectionError: OllamaException - {"error":"model 'mistral' not found"}
+[16:39:13 +47s] Extracting: https://www.ionq.com/company (4/9), chunk 13/17
+
+[16:39:13 +47s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[16:39:13 +47s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[16:39:13 +47s] Model call failed for https://www.ionq.com/company chunk 13: litellm.APIConnectionError: OllamaException - {"error":"model 'mistral' not found"}
+[16:39:13 +47s] Extracting: https://www.ionq.com/company (4/9), chunk 14/17
+
+[16:39:13 +47s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[16:39:13 +47s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[16:39:13 +48s] Model call failed for https://www.ionq.com/company chunk 14: litellm.APIConnectionError: OllamaException - {"error":"model 'mistral' not found"}
+[16:39:13 +48s] Extracting: https://www.ionq.com/company (4/9), chunk 15/17
+
+[16:39:13 +48s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[16:39:13 +48s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[16:39:13 +48s] Model call failed for https://www.ionq.com/company chunk 15: litellm.APIConnectionError: OllamaException - {"error":"model 'mistral' not found"}
+[16:39:13 +48s] Extracting: https://www.ionq.com/company (4/9), chunk 16/17
+
+[16:39:13 +48s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[16:39:13 +48s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[16:39:13 +48s] Model call failed for https://www.ionq.com/company chunk 16: litellm.APIConnectionError: OllamaException - {"error":"model 'mistral' not found"}
+[16:39:13 +48s] Extracting: https://www.ionq.com/company (4/9), chunk 17/17
+
+[16:39:13 +48s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[16:39:13 +48s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[16:39:13 +48s] Model call failed for https://www.ionq.com/company chunk 17: litellm.APIConnectionError: OllamaException - {"error":"model 'mistral' not found"}
+[16:39:13 +48s] Reading page (5/9): https://www.ionq.com/news
+[16:39:13 +48s] Extracting: https://www.ionq.com/news (5/9), chunk 1/15
+
+[16:39:13 +48s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[16:39:13 +48s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[16:39:13 +48s] Model call failed for https://www.ionq.com/news chunk 1: litellm.APIConnectionError: OllamaException - {"error":"model 'mistral' not found"}
+[16:39:13 +48s] Extracting: https://www.ionq.com/news (5/9), chunk 2/15
+
+[16:39:13 +48s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[16:39:13 +48s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[16:39:13 +48s] Model call failed for https://www.ionq.com/news chunk 2: litellm.APIConnectionError: OllamaException - {"error":"model 'mistral' not found"}
+[16:39:13 +48s] Extracting: https://www.ionq.com/news (5/9), chunk 3/15
+
+[16:39:13 +48s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[16:39:13 +48s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[16:39:13 +48s] Model call failed for https://www.ionq.com/news chunk 3: litellm.APIConnectionError: OllamaException - {"error":"model 'mistral' not found"}
+[16:39:13 +48s] Extracting: https://www.ionq.com/news (5/9), chunk 4/15
+
+[16:39:13 +48s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[16:39:13 +48s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[16:39:13 +48s] Model call failed for https://www.ionq.com/news chunk 4: litellm.APIConnectionError: OllamaException - {"error":"model 'mistral' not found"}
+[16:39:13 +48s] Extracting: https://www.ionq.com/news (5/9), chunk 5/15
+
+[16:39:13 +48s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[16:39:13 +48s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[16:39:13 +48s] Model call failed for https://www.ionq.com/news chunk 5: litellm.APIConnectionError: OllamaException - {"error":"model 'mistral' not found"}
+[16:39:13 +48s] Extracting: https://www.ionq.com/news (5/9), chunk 6/15
+
+[16:39:13 +48s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[16:39:13 +48s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[16:39:13 +48s] Model call failed for https://www.ionq.com/news chunk 6: litellm.APIConnectionError: OllamaException - {"error":"model 'mistral' not found"}
+[16:39:13 +48s] Extracting: https://www.ionq.com/news (5/9), chunk 7/15
+
+[16:39:13 +48s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[16:39:13 +48s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[16:39:13 +48s] Model call failed for https://www.ionq.com/news chunk 7: litellm.APIConnectionError: OllamaException - {"error":"model 'mistral' not found"}
+[16:39:13 +48s] Extracting: https://www.ionq.com/news (5/9), chunk 8/15
+
+[16:39:13 +48s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[16:39:13 +48s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[16:39:13 +48s] Model call failed for https://www.ionq.com/news chunk 8: litellm.APIConnectionError: OllamaException - {"error":"model 'mistral' not found"}
+[16:39:13 +48s] Extracting: https://www.ionq.com/news (5/9), chunk 9/15
+
+[16:39:13 +48s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[16:39:13 +48s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[16:39:13 +48s] Model call failed for https://www.ionq.com/news chunk 9: litellm.APIConnectionError: OllamaException - {"error":"model 'mistral' not found"}
+[16:39:13 +48s] Extracting: https://www.ionq.com/news (5/9), chunk 10/15
+
+[16:39:13 +48s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[16:39:13 +48s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[16:39:13 +48s] Model call failed for https://www.ionq.com/news chunk 10: litellm.APIConnectionError: OllamaException - {"error":"model 'mistral' not found"}
+[16:39:13 +48s] Extracting: https://www.ionq.com/news (5/9), chunk 11/15
+
+[16:39:13 +48s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[16:39:13 +48s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[16:39:13 +48s] Model call failed for https://www.ionq.com/news chunk 11: litellm.APIConnectionError: OllamaException - {"error":"model 'mistral' not found"}
+[16:39:13 +48s] Extracting: https://www.ionq.com/news (5/9), chunk 12/15
+
+[16:39:13 +48s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[16:39:13 +48s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[16:39:13 +48s] Model call failed for https://www.ionq.com/news chunk 12: litellm.APIConnectionError: OllamaException - {"error":"model 'mistral' not found"}
+[16:39:13 +48s] Extracting: https://www.ionq.com/news (5/9), chunk 13/15
+
+[16:39:13 +48s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[16:39:13 +48s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[16:39:13 +48s] Model call failed for https://www.ionq.com/news chunk 13: litellm.APIConnectionError: OllamaException - {"error":"model 'mistral' not found"}
+[16:39:13 +48s] Extracting: https://www.ionq.com/news (5/9), chunk 14/15
+
+[16:39:13 +48s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[16:39:13 +48s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[16:39:13 +48s] Model call failed for https://www.ionq.com/news chunk 14: litellm.APIConnectionError: OllamaException - {"error":"model 'mistral' not found"}
+[16:39:13 +48s] Extracting: https://www.ionq.com/news (5/9), chunk 15/15
+
+[16:39:13 +48s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[16:39:13 +48s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[16:39:13 +48s] Model call failed for https://www.ionq.com/news chunk 15: litellm.APIConnectionError: OllamaException - {"error":"model 'mistral' not found"}
+[16:39:13 +48s] Reading page (6/9): https://www.ionq.com/full-stack-platform
+[16:39:13 +48s] Extracting: https://www.ionq.com/full-stack-platform (6/9), chunk 1/11
+
+[16:39:13 +48s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[16:39:13 +48s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[16:39:13 +48s] Model call failed for https://www.ionq.com/full-stack-platform chunk 1: litellm.APIConnectionError: OllamaException - {"error":"model 'mistral' not found"}
+[16:39:13 +48s] Extracting: https://www.ionq.com/full-stack-platform (6/9), chunk 2/11
+
+[16:39:13 +48s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[16:39:13 +48s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[16:39:13 +48s] Model call failed for https://www.ionq.com/full-stack-platform chunk 2: litellm.APIConnectionError: OllamaException - {"error":"model 'mistral' not found"}
+[16:39:13 +48s] Extracting: https://www.ionq.com/full-stack-platform (6/9), chunk 3/11
+
+[16:39:13 +48s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[16:39:13 +48s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[16:39:13 +48s] Model call failed for https://www.ionq.com/full-stack-platform chunk 3: litellm.APIConnectionError: OllamaException - {"error":"model 'mistral' not found"}
+[16:39:13 +48s] Extracting: https://www.ionq.com/full-stack-platform (6/9), chunk 4/11
+
+[16:39:13 +48s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[16:39:13 +48s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[16:39:13 +48s] Model call failed for https://www.ionq.com/full-stack-platform chunk 4: litellm.APIConnectionError: OllamaException - {"error":"model 'mistral' not found"}
+[16:39:13 +48s] Extracting: https://www.ionq.com/full-stack-platform (6/9), chunk 5/11
+
+[16:39:13 +48s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[16:39:13 +48s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[16:39:13 +48s] Model call failed for https://www.ionq.com/full-stack-platform chunk 5: litellm.APIConnectionError: OllamaException - {"error":"model 'mistral' not found"}
+[16:39:13 +48s] Extracting: https://www.ionq.com/full-stack-platform (6/9), chunk 6/11
+
+[16:39:13 +48s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[16:39:13 +48s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[16:39:13 +48s] Model call failed for https://www.ionq.com/full-stack-platform chunk 6: litellm.APIConnectionError: OllamaException - {"error":"model 'mistral' not found"}
+[16:39:13 +48s] Extracting: https://www.ionq.com/full-stack-platform (6/9), chunk 7/11
+
+[16:39:13 +48s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[16:39:13 +48s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[16:39:13 +48s] Model call failed for https://www.ionq.com/full-stack-platform chunk 7: litellm.APIConnectionError: OllamaException - {"error":"model 'mistral' not found"}
+[16:39:13 +48s] Extracting: https://www.ionq.com/full-stack-platform (6/9), chunk 8/11
+
+[16:39:13 +48s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[16:39:13 +48s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[16:39:13 +48s] Model call failed for https://www.ionq.com/full-stack-platform chunk 8: litellm.APIConnectionError: OllamaException - {"error":"model 'mistral' not found"}
+[16:39:13 +48s] Extracting: https://www.ionq.com/full-stack-platform (6/9), chunk 9/11
+
+[16:39:13 +48s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[16:39:13 +48s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[16:39:13 +48s] Model call failed for https://www.ionq.com/full-stack-platform chunk 9: litellm.APIConnectionError: OllamaException - {"error":"model 'mistral' not found"}
+[16:39:13 +48s] Extracting: https://www.ionq.com/full-stack-platform (6/9), chunk 10/11
+
+[16:39:13 +48s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[16:39:13 +48s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[16:39:13 +48s] Model call failed for https://www.ionq.com/full-stack-platform chunk 10: litellm.APIConnectionError: OllamaException - {"error":"model 'mistral' not found"}
+[16:39:13 +48s] Extracting: https://www.ionq.com/full-stack-platform (6/9), chunk 11/11
+
+[16:39:13 +48s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[16:39:13 +48s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[16:39:13 +48s] Model call failed for https://www.ionq.com/full-stack-platform chunk 11: litellm.APIConnectionError: OllamaException - {"error":"model 'mistral' not found"}
+[16:39:13 +48s] Reading page (7/9): https://www.ionq.com/quantum-cloud
+[16:39:13 +48s] Extracting: https://www.ionq.com/quantum-cloud (7/9), chunk 1/16
+
+[16:39:13 +48s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[16:39:13 +48s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[16:39:13 +48s] Model call failed for https://www.ionq.com/quantum-cloud chunk 1: litellm.APIConnectionError: OllamaException - {"error":"model 'mistral' not found"}
+[16:39:13 +48s] Extracting: https://www.ionq.com/quantum-cloud (7/9), chunk 2/16
+
+[16:39:13 +48s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[16:39:13 +48s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[16:39:13 +48s] Model call failed for https://www.ionq.com/quantum-cloud chunk 2: litellm.APIConnectionError: OllamaException - {"error":"model 'mistral' not found"}
+[16:39:13 +48s] Extracting: https://www.ionq.com/quantum-cloud (7/9), chunk 3/16
+
+[16:39:13 +48s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[16:39:13 +48s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[16:39:13 +48s] Model call failed for https://www.ionq.com/quantum-cloud chunk 3: litellm.APIConnectionError: OllamaException - {"error":"model 'mistral' not found"}
+[16:39:13 +48s] Extracting: https://www.ionq.com/quantum-cloud (7/9), chunk 4/16
+
+[16:39:13 +48s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[16:39:13 +48s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[16:39:13 +48s] Model call failed for https://www.ionq.com/quantum-cloud chunk 4: litellm.APIConnectionError: OllamaException - {"error":"model 'mistral' not found"}
+[16:39:13 +48s] Extracting: https://www.ionq.com/quantum-cloud (7/9), chunk 5/16
+
+[16:39:13 +48s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[16:39:13 +48s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[16:39:13 +48s] Model call failed for https://www.ionq.com/quantum-cloud chunk 5: litellm.APIConnectionError: OllamaException - {"error":"model 'mistral' not found"}
+[16:39:13 +48s] Extracting: https://www.ionq.com/quantum-cloud (7/9), chunk 6/16
+
+[16:39:13 +48s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[16:39:13 +48s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[16:39:13 +48s] Model call failed for https://www.ionq.com/quantum-cloud chunk 6: litellm.APIConnectionError: OllamaException - {"error":"model 'mistral' not found"}
+[16:39:13 +48s] Extracting: https://www.ionq.com/quantum-cloud (7/9), chunk 7/16
+
+[16:39:13 +48s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[16:39:13 +48s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[16:39:13 +48s] Model call failed for https://www.ionq.com/quantum-cloud chunk 7: litellm.APIConnectionError: OllamaException - {"error":"model 'mistral' not found"}
+[16:39:13 +48s] Extracting: https://www.ionq.com/quantum-cloud (7/9), chunk 8/16
+
+[16:39:13 +48s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[16:39:13 +48s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[16:39:13 +48s] Model call failed for https://www.ionq.com/quantum-cloud chunk 8: litellm.APIConnectionError: OllamaException - {"error":"model 'mistral' not found"}
+[16:39:13 +48s] Extracting: https://www.ionq.com/quantum-cloud (7/9), chunk 9/16
+
+[16:39:13 +48s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[16:39:13 +48s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[16:39:13 +48s] Model call failed for https://www.ionq.com/quantum-cloud chunk 9: litellm.APIConnectionError: OllamaException - {"error":"model 'mistral' not found"}
+[16:39:13 +48s] Extracting: https://www.ionq.com/quantum-cloud (7/9), chunk 10/16
+
+[16:39:13 +48s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[16:39:13 +48s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[16:39:13 +48s] Model call failed for https://www.ionq.com/quantum-cloud chunk 10: litellm.APIConnectionError: OllamaException - {"error":"model 'mistral' not found"}
+[16:39:13 +48s] Extracting: https://www.ionq.com/quantum-cloud (7/9), chunk 11/16
+
+[16:39:13 +48s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[16:39:13 +48s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[16:39:14 +48s] Model call failed for https://www.ionq.com/quantum-cloud chunk 11: litellm.APIConnectionError: OllamaException - {"error":"model 'mistral' not found"}
+[16:39:14 +48s] Extracting: https://www.ionq.com/quantum-cloud (7/9), chunk 12/16
+
+[16:39:14 +48s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[16:39:14 +48s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[16:39:14 +48s] Model call failed for https://www.ionq.com/quantum-cloud chunk 12: litellm.APIConnectionError: OllamaException - {"error":"model 'mistral' not found"}
+[16:39:14 +48s] Extracting: https://www.ionq.com/quantum-cloud (7/9), chunk 13/16
+
+[16:39:14 +48s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[16:39:14 +48s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[16:39:14 +48s] Model call failed for https://www.ionq.com/quantum-cloud chunk 13: litellm.APIConnectionError: OllamaException - {"error":"model 'mistral' not found"}
+[16:39:14 +48s] Extracting: https://www.ionq.com/quantum-cloud (7/9), chunk 14/16
+
+[16:39:14 +48s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[16:39:14 +48s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[16:39:14 +48s] Model call failed for https://www.ionq.com/quantum-cloud chunk 14: litellm.APIConnectionError: OllamaException - {"error":"model 'mistral' not found"}
+[16:39:14 +48s] Extracting: https://www.ionq.com/quantum-cloud (7/9), chunk 15/16
+
+[16:39:14 +48s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[16:39:14 +48s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[16:39:14 +48s] Model call failed for https://www.ionq.com/quantum-cloud chunk 15: litellm.APIConnectionError: OllamaException - {"error":"model 'mistral' not found"}
+[16:39:14 +48s] Extracting: https://www.ionq.com/quantum-cloud (7/9), chunk 16/16
+
+[16:39:14 +48s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[16:39:14 +48s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[16:39:14 +48s] Model call failed for https://www.ionq.com/quantum-cloud chunk 16: litellm.APIConnectionError: OllamaException - {"error":"model 'mistral' not found"}
+[16:39:14 +48s] Reading page (8/9): https://www.ionq.com/applications-services
+[16:39:14 +48s] Extracting: https://www.ionq.com/applications-services (8/9), chunk 1/22
+
+[16:39:14 +48s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[16:39:14 +48s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[16:39:14 +48s] Model call failed for https://www.ionq.com/applications-services chunk 1: litellm.APIConnectionError: OllamaException - {"error":"model 'mistral' not found"}
+[16:39:14 +48s] Extracting: https://www.ionq.com/applications-services (8/9), chunk 2/22
+
+[16:39:14 +48s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[16:39:14 +48s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[16:39:14 +48s] Model call failed for https://www.ionq.com/applications-services chunk 2: litellm.APIConnectionError: OllamaException - {"error":"model 'mistral' not found"}
+[16:39:14 +48s] Extracting: https://www.ionq.com/applications-services (8/9), chunk 3/22
+
+[16:39:14 +48s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[16:39:14 +48s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[16:39:14 +48s] Model call failed for https://www.ionq.com/applications-services chunk 3: litellm.APIConnectionError: OllamaException - {"error":"model 'mistral' not found"}
+[16:39:14 +48s] Extracting: https://www.ionq.com/applications-services (8/9), chunk 4/22
+
+[16:39:14 +48s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[16:39:14 +48s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[16:39:14 +48s] Model call failed for https://www.ionq.com/applications-services chunk 4: litellm.APIConnectionError: OllamaException - {"error":"model 'mistral' not found"}
+[16:39:14 +48s] Extracting: https://www.ionq.com/applications-services (8/9), chunk 5/22
+
+[16:39:14 +48s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[16:39:14 +48s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[16:39:14 +49s] Model call failed for https://www.ionq.com/applications-services chunk 5: litellm.APIConnectionError: OllamaException - {"error":"model 'mistral' not found"}
+[16:39:14 +49s] Extracting: https://www.ionq.com/applications-services (8/9), chunk 6/22
+
+[16:39:14 +49s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[16:39:14 +49s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[16:39:14 +49s] Model call failed for https://www.ionq.com/applications-services chunk 6: litellm.APIConnectionError: OllamaException - {"error":"model 'mistral' not found"}
+[16:39:14 +49s] Extracting: https://www.ionq.com/applications-services (8/9), chunk 7/22
+
+[16:39:14 +49s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[16:39:14 +49s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[16:39:14 +49s] Model call failed for https://www.ionq.com/applications-services chunk 7: litellm.APIConnectionError: OllamaException - {"error":"model 'mistral' not found"}
+[16:39:14 +49s] Extracting: https://www.ionq.com/applications-services (8/9), chunk 8/22
+
+[16:39:14 +49s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[16:39:14 +49s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[16:39:14 +49s] Model call failed for https://www.ionq.com/applications-services chunk 8: litellm.APIConnectionError: OllamaException - {"error":"model 'mistral' not found"}
+[16:39:14 +49s] Extracting: https://www.ionq.com/applications-services (8/9), chunk 9/22
+
+[16:39:14 +49s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[16:39:14 +49s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[16:39:14 +49s] Model call failed for https://www.ionq.com/applications-services chunk 9: litellm.APIConnectionError: OllamaException - {"error":"model 'mistral' not found"}
+[16:39:14 +49s] Extracting: https://www.ionq.com/applications-services (8/9), chunk 10/22
+
+[16:39:14 +49s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[16:39:14 +49s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[16:39:14 +49s] Model call failed for https://www.ionq.com/applications-services chunk 10: litellm.APIConnectionError: OllamaException - {"error":"model 'mistral' not found"}
+[16:39:14 +49s] Extracting: https://www.ionq.com/applications-services (8/9), chunk 11/22
+
+[16:39:14 +49s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[16:39:14 +49s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[16:39:14 +49s] Model call failed for https://www.ionq.com/applications-services chunk 11: litellm.APIConnectionError: OllamaException - {"error":"model 'mistral' not found"}
+[16:39:14 +49s] Extracting: https://www.ionq.com/applications-services (8/9), chunk 12/22
+
+[16:39:14 +49s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[16:39:14 +49s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[16:39:14 +49s] Model call failed for https://www.ionq.com/applications-services chunk 12: litellm.APIConnectionError: OllamaException - {"error":"model 'mistral' not found"}
+[16:39:14 +49s] Extracting: https://www.ionq.com/applications-services (8/9), chunk 13/22
+
+[16:39:14 +49s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[16:39:14 +49s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[16:39:14 +49s] Model call failed for https://www.ionq.com/applications-services chunk 13: litellm.APIConnectionError: OllamaException - {"error":"model 'mistral' not found"}
+[16:39:14 +49s] Extracting: https://www.ionq.com/applications-services (8/9), chunk 14/22
+
+[16:39:14 +49s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[16:39:14 +49s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[16:39:14 +49s] Model call failed for https://www.ionq.com/applications-services chunk 14: litellm.APIConnectionError: OllamaException - {"error":"model 'mistral' not found"}
+[16:39:14 +49s] Extracting: https://www.ionq.com/applications-services (8/9), chunk 15/22
+
+[16:39:14 +49s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[16:39:14 +49s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[16:39:14 +49s] Model call failed for https://www.ionq.com/applications-services chunk 15: litellm.APIConnectionError: OllamaException - {"error":"model 'mistral' not found"}
+[16:39:14 +49s] Extracting: https://www.ionq.com/applications-services (8/9), chunk 16/22
+
+[16:39:14 +49s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[16:39:14 +49s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[16:39:14 +49s] Model call failed for https://www.ionq.com/applications-services chunk 16: litellm.APIConnectionError: OllamaException - {"error":"model 'mistral' not found"}
+[16:39:14 +49s] Extracting: https://www.ionq.com/applications-services (8/9), chunk 17/22
+
+[16:39:14 +49s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[16:39:14 +49s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[16:39:14 +49s] Model call failed for https://www.ionq.com/applications-services chunk 17: litellm.APIConnectionError: OllamaException - {"error":"model 'mistral' not found"}
+[16:39:14 +49s] Extracting: https://www.ionq.com/applications-services (8/9), chunk 18/22
+
+[16:39:14 +49s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[16:39:14 +49s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[16:39:14 +49s] Model call failed for https://www.ionq.com/applications-services chunk 18: litellm.APIConnectionError: OllamaException - {"error":"model 'mistral' not found"}
+[16:39:14 +49s] Extracting: https://www.ionq.com/applications-services (8/9), chunk 19/22
+
+[16:39:14 +49s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[16:39:14 +49s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[16:39:14 +49s] Model call failed for https://www.ionq.com/applications-services chunk 19: litellm.APIConnectionError: OllamaException - {"error":"model 'mistral' not found"}
+[16:39:14 +49s] Extracting: https://www.ionq.com/applications-services (8/9), chunk 20/22
+
+[16:39:14 +49s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[16:39:14 +49s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[16:39:14 +49s] Model call failed for https://www.ionq.com/applications-services chunk 20: litellm.APIConnectionError: OllamaException - {"error":"model 'mistral' not found"}
+[16:39:14 +49s] Extracting: https://www.ionq.com/applications-services (8/9), chunk 21/22
+
+[16:39:14 +49s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[16:39:14 +49s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[16:39:14 +49s] Model call failed for https://www.ionq.com/applications-services chunk 21: litellm.APIConnectionError: OllamaException - {"error":"model 'mistral' not found"}
+[16:39:14 +49s] Extracting: https://www.ionq.com/applications-services (8/9), chunk 22/22
+
+[16:39:14 +49s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[16:39:14 +49s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[16:39:14 +49s] Model call failed for https://www.ionq.com/applications-services chunk 22: litellm.APIConnectionError: OllamaException - {"error":"model 'mistral' not found"}
+[16:39:14 +49s] Reading page (9/9): https://www.ionq.com/quantum-benchmarks
+[16:39:14 +49s] Extracting: https://www.ionq.com/quantum-benchmarks (9/9), chunk 1/29
+
+[16:39:14 +49s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[16:39:14 +49s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[16:39:14 +49s] Model call failed for https://www.ionq.com/quantum-benchmarks chunk 1: litellm.APIConnectionError: OllamaException - {"error":"model 'mistral' not found"}
+[16:39:14 +49s] Extracting: https://www.ionq.com/quantum-benchmarks (9/9), chunk 2/29
+
+[16:39:14 +49s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[16:39:14 +49s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[16:39:14 +49s] Model call failed for https://www.ionq.com/quantum-benchmarks chunk 2: litellm.APIConnectionError: OllamaException - {"error":"model 'mistral' not found"}
+[16:39:14 +49s] Extracting: https://www.ionq.com/quantum-benchmarks (9/9), chunk 3/29
+
+[16:39:14 +49s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[16:39:14 +49s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[16:39:14 +49s] Model call failed for https://www.ionq.com/quantum-benchmarks chunk 3: litellm.APIConnectionError: OllamaException - {"error":"model 'mistral' not found"}
+[16:39:14 +49s] Extracting: https://www.ionq.com/quantum-benchmarks (9/9), chunk 4/29
+
+[16:39:14 +49s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[16:39:14 +49s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[16:39:14 +49s] Model call failed for https://www.ionq.com/quantum-benchmarks chunk 4: litellm.APIConnectionError: OllamaException - {"error":"model 'mistral' not found"}
+[16:39:14 +49s] Extracting: https://www.ionq.com/quantum-benchmarks (9/9), chunk 5/29
+
+[16:39:14 +49s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[16:39:14 +49s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[16:39:14 +49s] Model call failed for https://www.ionq.com/quantum-benchmarks chunk 5: litellm.APIConnectionError: OllamaException - {"error":"model 'mistral' not found"}
+[16:39:14 +49s] Extracting: https://www.ionq.com/quantum-benchmarks (9/9), chunk 6/29
+
+[16:39:14 +49s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[16:39:14 +49s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[16:39:14 +49s] Model call failed for https://www.ionq.com/quantum-benchmarks chunk 6: litellm.APIConnectionError: OllamaException - {"error":"model 'mistral' not found"}
+[16:39:14 +49s] Extracting: https://www.ionq.com/quantum-benchmarks (9/9), chunk 7/29
+
+[16:39:14 +49s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[16:39:14 +49s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[16:39:14 +49s] Model call failed for https://www.ionq.com/quantum-benchmarks chunk 7: litellm.APIConnectionError: OllamaException - {"error":"model 'mistral' not found"}
+[16:39:14 +49s] Extracting: https://www.ionq.com/quantum-benchmarks (9/9), chunk 8/29
+
+[16:39:14 +49s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[16:39:14 +49s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[16:39:14 +49s] Model call failed for https://www.ionq.com/quantum-benchmarks chunk 8: litellm.APIConnectionError: OllamaException - {"error":"model 'mistral' not found"}
+[16:39:14 +49s] Extracting: https://www.ionq.com/quantum-benchmarks (9/9), chunk 9/29
+
+[16:39:14 +49s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[16:39:14 +49s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[16:39:14 +49s] Model call failed for https://www.ionq.com/quantum-benchmarks chunk 9: litellm.APIConnectionError: OllamaException - {"error":"model 'mistral' not found"}
+[16:39:14 +49s] Extracting: https://www.ionq.com/quantum-benchmarks (9/9), chunk 10/29
+
+[16:39:14 +49s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[16:39:14 +49s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[16:39:14 +49s] Model call failed for https://www.ionq.com/quantum-benchmarks chunk 10: litellm.APIConnectionError: OllamaException - {"error":"model 'mistral' not found"}
+[16:39:14 +49s] Extracting: https://www.ionq.com/quantum-benchmarks (9/9), chunk 11/29
+
+[16:39:14 +49s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[16:39:14 +49s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[16:39:14 +49s] Model call failed for https://www.ionq.com/quantum-benchmarks chunk 11: litellm.APIConnectionError: OllamaException - {"error":"model 'mistral' not found"}
+[16:39:14 +49s] Extracting: https://www.ionq.com/quantum-benchmarks (9/9), chunk 12/29
+
+[16:39:14 +49s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[16:39:14 +49s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[16:39:14 +49s] Model call failed for https://www.ionq.com/quantum-benchmarks chunk 12: litellm.APIConnectionError: OllamaException - {"error":"model 'mistral' not found"}
+[16:39:14 +49s] Extracting: https://www.ionq.com/quantum-benchmarks (9/9), chunk 13/29
+
+[16:39:14 +49s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[16:39:14 +49s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[16:39:14 +49s] Model call failed for https://www.ionq.com/quantum-benchmarks chunk 13: litellm.APIConnectionError: OllamaException - {"error":"model 'mistral' not found"}
+[16:39:14 +49s] Extracting: https://www.ionq.com/quantum-benchmarks (9/9), chunk 14/29
+
+[16:39:14 +49s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[16:39:14 +49s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[16:39:14 +49s] Model call failed for https://www.ionq.com/quantum-benchmarks chunk 14: litellm.APIConnectionError: OllamaException - {"error":"model 'mistral' not found"}
+[16:39:14 +49s] Extracting: https://www.ionq.com/quantum-benchmarks (9/9), chunk 15/29
+
+[16:39:14 +49s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[16:39:14 +49s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[16:39:14 +49s] Model call failed for https://www.ionq.com/quantum-benchmarks chunk 15: litellm.APIConnectionError: OllamaException - {"error":"model 'mistral' not found"}
+[16:39:14 +49s] Extracting: https://www.ionq.com/quantum-benchmarks (9/9), chunk 16/29
+
+[16:39:14 +49s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[16:39:14 +49s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[16:39:14 +49s] Model call failed for https://www.ionq.com/quantum-benchmarks chunk 16: litellm.APIConnectionError: OllamaException - {"error":"model 'mistral' not found"}
+[16:39:14 +49s] Extracting: https://www.ionq.com/quantum-benchmarks (9/9), chunk 17/29
+
+[16:39:14 +49s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[16:39:14 +49s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[16:39:14 +49s] Model call failed for https://www.ionq.com/quantum-benchmarks chunk 17: litellm.APIConnectionError: OllamaException - {"error":"model 'mistral' not found"}
+[16:39:14 +49s] Extracting: https://www.ionq.com/quantum-benchmarks (9/9), chunk 18/29
+
+[16:39:14 +49s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[16:39:14 +49s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[16:39:14 +49s] Model call failed for https://www.ionq.com/quantum-benchmarks chunk 18: litellm.APIConnectionError: OllamaException - {"error":"model 'mistral' not found"}
+[16:39:14 +49s] Extracting: https://www.ionq.com/quantum-benchmarks (9/9), chunk 19/29
+
+[16:39:14 +49s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[16:39:14 +49s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[16:39:14 +49s] Model call failed for https://www.ionq.com/quantum-benchmarks chunk 19: litellm.APIConnectionError: OllamaException - {"error":"model 'mistral' not found"}
+[16:39:14 +49s] Extracting: https://www.ionq.com/quantum-benchmarks (9/9), chunk 20/29
+
+[16:39:14 +49s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[16:39:14 +49s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[16:39:14 +49s] Model call failed for https://www.ionq.com/quantum-benchmarks chunk 20: litellm.APIConnectionError: OllamaException - {"error":"model 'mistral' not found"}
+[16:39:14 +49s] Extracting: https://www.ionq.com/quantum-benchmarks (9/9), chunk 21/29
+
+[16:39:14 +49s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[16:39:14 +49s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[16:39:14 +49s] Model call failed for https://www.ionq.com/quantum-benchmarks chunk 21: litellm.APIConnectionError: OllamaException - {"error":"model 'mistral' not found"}
+[16:39:14 +49s] Extracting: https://www.ionq.com/quantum-benchmarks (9/9), chunk 22/29
+
+[16:39:14 +49s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[16:39:14 +49s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[16:39:14 +49s] Model call failed for https://www.ionq.com/quantum-benchmarks chunk 22: litellm.APIConnectionError: OllamaException - {"error":"model 'mistral' not found"}
+[16:39:14 +49s] Extracting: https://www.ionq.com/quantum-benchmarks (9/9), chunk 23/29
+
+[16:39:14 +49s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[16:39:14 +49s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[16:39:14 +49s] Model call failed for https://www.ionq.com/quantum-benchmarks chunk 23: litellm.APIConnectionError: OllamaException - {"error":"model 'mistral' not found"}
+[16:39:14 +49s] Extracting: https://www.ionq.com/quantum-benchmarks (9/9), chunk 24/29
+
+[16:39:14 +49s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[16:39:14 +49s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[16:39:14 +49s] Model call failed for https://www.ionq.com/quantum-benchmarks chunk 24: litellm.APIConnectionError: OllamaException - {"error":"model 'mistral' not found"}
+[16:39:14 +49s] Extracting: https://www.ionq.com/quantum-benchmarks (9/9), chunk 25/29
+
+[16:39:14 +49s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[16:39:14 +49s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[16:39:15 +49s] Model call failed for https://www.ionq.com/quantum-benchmarks chunk 25: litellm.APIConnectionError: OllamaException - {"error":"model 'mistral' not found"}
+[16:39:15 +49s] Extracting: https://www.ionq.com/quantum-benchmarks (9/9), chunk 26/29
+
+[16:39:15 +49s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[16:39:15 +49s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[16:39:15 +49s] Model call failed for https://www.ionq.com/quantum-benchmarks chunk 26: litellm.APIConnectionError: OllamaException - {"error":"model 'mistral' not found"}
+[16:39:15 +49s] Extracting: https://www.ionq.com/quantum-benchmarks (9/9), chunk 27/29
+
+[16:39:15 +49s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[16:39:15 +49s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[16:39:15 +49s] Model call failed for https://www.ionq.com/quantum-benchmarks chunk 27: litellm.APIConnectionError: OllamaException - {"error":"model 'mistral' not found"}
+[16:39:15 +49s] Extracting: https://www.ionq.com/quantum-benchmarks (9/9), chunk 28/29
+
+[16:39:15 +49s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[16:39:15 +49s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[16:39:15 +49s] Model call failed for https://www.ionq.com/quantum-benchmarks chunk 28: litellm.APIConnectionError: OllamaException - {"error":"model 'mistral' not found"}
+[16:39:15 +49s] Extracting: https://www.ionq.com/quantum-benchmarks (9/9), chunk 29/29
+
+[16:39:15 +49s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[16:39:15 +49s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[16:39:15 +49s] Model call failed for https://www.ionq.com/quantum-benchmarks chunk 29: litellm.APIConnectionError: OllamaException - {"error":"model 'mistral' not found"}
+[16:39:15 +49s] Saved 1_actor_results.json with 0 extracted records
+
+[16:39:15 +50s] === 2 clean actors ===
+[16:39:16 +51s] Loaded 0 extracted records
+[16:39:16 +51s] Saved 2_actor_nodes.json with 0 canonical actor nodes
+
+[16:39:16 +51s] === 3 interaction extraction ===
+[16:39:20 +55s] No valid actors found, skipping.
+
+[16:39:20 +55s] === 4 clean interactions ===
+[16:39:21 +56s] Traceback (most recent call last):
+[16:39:21 +56s]   File "/content/drive/MyDrive/pipeline/clean_interactions.py", line 536, in <module>
+[16:39:21 +56s]     main()
+[16:39:21 +56s]   File "/content/drive/MyDrive/pipeline/clean_interactions.py", line 502, in main
+[16:39:21 +56s]     raw_edges = json.loads(INPUT_JSON.read_text(encoding="utf-8"))
+[16:39:21 +56s]                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[16:39:21 +56s]   File "/usr/lib/python3.12/pathlib.py", line 1027, in read_text
+[16:39:21 +56s]     with self.open(mode='r', encoding=encoding, errors=errors) as f:
+[16:39:21 +56s]          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[16:39:21 +56s]   File "/usr/lib/python3.12/pathlib.py", line 1013, in open
+[16:39:21 +56s]     return io.open(self, mode, buffering, encoding, errors, newline)
+[16:39:21 +56s]            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[16:39:21 +56s] FileNotFoundError: [Errno 2] No such file or directory: '3_interaction_results.json'
+
+========================================================================
+RUN FINISHED 2026-06-01 16:39:21  (FAILED)
+Elapsed:     56s
+========================================================================
+
+========================================================================
+RUN STARTED  2026-06-01 16:42:23
+site_pipeline.py https://ionq.com/
+========================================================================
+
+[16:42:23 +0s] === 0 crawl site ===
+[16:42:24 +1s] Cleared existing crawl_output/
+[16:42:25 +2s] [INIT].... → Crawl4AI 0.8.7 
+[16:42:28 +5s] [FETCH]... ↓ https://ionq.com/                                                                                    | ✓ | ⏱: 3.49s 
+[16:42:29 +6s] [SCRAPE].. ◆ https://ionq.com/                                                                                    | ✓ | ⏱: 0.67s 
+[16:42:29 +6s] [COMPLETE] ● https://ionq.com/                                                                                    | ✓ | ⏱: 4.33s 
+[16:42:41 +19s] [FETCH]... ↓ https://www.ionq.com/applications-services                                                           | ✓ | ⏱: 11.94s 
+[16:42:42 +19s] [SCRAPE].. ◆ https://www.ionq.com/applications-services                                                           | ✓ | ⏱: 0.42s 
+[16:42:42 +19s] [COMPLETE] ● https://www.ionq.com/applications-services                                                           | ✓ | ⏱: 12.50s 
+[16:42:51 +28s] [FETCH]... ↓ https://ionq.com/privacy                                                                             | ✓ | ⏱: 21.44s 
+[16:42:51 +28s] [SCRAPE].. ◆ https://ionq.com/privacy                                                                             | ✓ | ⏱: 0.20s 
+[16:42:51 +28s] [COMPLETE] ● https://ionq.com/privacy                                                                             | ✓ | ⏱: 21.72s 
+[16:42:51 +28s] [FETCH]... ↓ https://www.ionq.com/full-stack-platform                                                             | ✓ | ⏱: 21.79s 
+[16:42:51 +28s] [SCRAPE].. ◆ https://www.ionq.com/full-stack-platform                                                             | ✓ | ⏱: 0.12s 
+[16:42:51 +29s] [COMPLETE] ● https://www.ionq.com/full-stack-platform                                                             | ✓ | ⏱: 22.01s 
+[16:42:53 +30s] [FETCH]... ↓ https://www.ionq.com/company                                                                         | ✓ | ⏱: 23.38s 
+[16:42:53 +30s] [SCRAPE].. ◆ https://www.ionq.com/company                                                                         | ✓ | ⏱: 0.17s 
+[16:42:53 +30s] [COMPLETE] ● https://www.ionq.com/company                                                                         | ✓ | ⏱: 23.64s 
+[16:42:55 +32s] [FETCH]... ↓ https://www.ionq.com/                                                                                | ✓ | ⏱: 25.88s 
+[16:42:56 +33s] [SCRAPE].. ◆ https://www.ionq.com/                                                                                | ✓ | ⏱: 0.51s 
+[16:42:56 +33s] [COMPLETE] ● https://www.ionq.com/                                                                                | ✓ | ⏱: 26.47s 
+[16:42:56 +33s] [FETCH]... ↓ https://www.ionq.com/news                                                                            | ✓ | ⏱: 13.78s 
+[16:42:56 +33s] [SCRAPE].. ◆ https://www.ionq.com/news                                                                            | ✓ | ⏱: 0.14s 
+[16:42:56 +33s] [COMPLETE] ● https://www.ionq.com/news                                                                            | ✓ | ⏱: 13.99s 
+[16:43:03 +40s] [FETCH]... ↓ https://www.ionq.com/quantum-benchmarks                                                              | ✓ | ⏱: 11.92s 
+[16:43:03 +40s] [SCRAPE].. ◆ https://www.ionq.com/quantum-benchmarks                                                              | ✓ | ⏱: 0.35s 
+[16:43:03 +40s] [COMPLETE] ● https://www.ionq.com/quantum-benchmarks                                                              | ✓ | ⏱: 12.35s 
+[16:43:03 +40s] [FETCH]... ↓ https://www.ionq.com/quantum-cloud                                                                   | ✓ | ⏱: 11.91s 
+[16:43:03 +41s] [SCRAPE].. ◆ https://www.ionq.com/quantum-cloud                                                                   | ✓ | ⏱: 0.14s 
+[16:43:03 +41s] [COMPLETE] ● https://www.ionq.com/quantum-cloud                                                                   | ✓ | ⏱: 12.13s 
+[16:43:04 +41s] [FETCH]... ↓ https://www.ionq.com/quantum-systems/compare                                                         | ✓ | ⏱: 10.72s 
+[16:43:04 +41s] [SCRAPE].. ◆ https://www.ionq.com/quantum-systems/compare                                                         | ✓ | ⏱: 0.19s 
+[16:43:04 +41s] [COMPLETE] ● https://www.ionq.com/quantum-systems/compare                                                         | ✓ | ⏱: 10.97s 
+[16:43:04 +41s] Saved: crawl_output/23d8ef4027_ionq.com.json
+[16:43:04 +41s] Saved: crawl_output/eb63bf2062_www.ionq.com_applications-services.json
+[16:43:04 +41s] Skipped: https://ionq.com/privacy
+[16:43:04 +41s] Saved: crawl_output/c37d31f9c5_www.ionq.com_full-stack-platform.json
+[16:43:04 +41s] Saved: crawl_output/35e9dd0bbf_www.ionq.com_company.json
+[16:43:04 +41s] Saved: crawl_output/1d9fde8986_www.ionq.com.json
+[16:43:04 +41s] Saved: crawl_output/ba7b773a9a_www.ionq.com_news.json
+[16:43:04 +41s] Saved: crawl_output/eedc5f6a70_www.ionq.com_quantum-benchmarks.json
+[16:43:04 +41s] Saved: crawl_output/d67142d4be_www.ionq.com_quantum-cloud.json
+[16:43:04 +41s] Saved: crawl_output/344f782307_www.ionq.com_quantum-systems_compare.json
+
+[16:43:05 +42s] === 1 actor extraction ===
+[16:43:08 +45s] Reading page (1/9): https://www.ionq.com
+[16:43:08 +45s] Extracting: https://www.ionq.com (1/9), chunk 1/41
+[16:43:16 +54s] Repaired malformed JSON.
+[16:43:16 +54s] Extracting: https://www.ionq.com (1/9), chunk 2/41
+[16:43:57 +1m 35s] Extracting: https://www.ionq.com (1/9), chunk 3/41
+[16:44:03 +1m 40s] Extracting: https://www.ionq.com (1/9), chunk 4/41
+[16:44:10 +1m 47s] Extracting: https://www.ionq.com (1/9), chunk 5/41
+[16:44:16 +1m 53s] Extracting: https://www.ionq.com (1/9), chunk 6/41
+[16:44:25 +2m 3s] Extracting: https://www.ionq.com (1/9), chunk 7/41
+[16:44:48 +2m 25s] Extracting: https://www.ionq.com (1/9), chunk 8/41
+[16:45:22 +2m 59s] Extracting: https://www.ionq.com (1/9), chunk 9/41
+[16:45:57 +3m 35s] Extracting: https://www.ionq.com (1/9), chunk 10/41
+[16:46:43 +4m 20s] Extracting: https://www.ionq.com (1/9), chunk 11/41
+[16:47:28 +5m 5s] Extracting: https://www.ionq.com (1/9), chunk 12/41
+[16:57:04 +14m 42s] Extracting: https://www.ionq.com (1/9), chunk 13/41
+
+[17:07:04 +24m 42s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[17:07:04 +24m 42s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[17:07:04 +24m 42s] Model call failed for https://www.ionq.com chunk 13: litellm.APIConnectionError: OllamaException - litellm.Timeout: Connection timed out. Timeout passed=600.0, time taken=600.101 seconds
+[17:07:04 +24m 42s] Extracting: https://www.ionq.com (1/9), chunk 14/41
+
+[17:17:05 +34m 42s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[17:17:05 +34m 42s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[17:17:05 +34m 42s] Model call failed for https://www.ionq.com chunk 14: litellm.APIConnectionError: OllamaException - litellm.Timeout: Connection timed out. Timeout passed=600.0, time taken=600.094 seconds
+[17:17:05 +34m 42s] Extracting: https://www.ionq.com (1/9), chunk 15/41
+[17:17:39 +35m 16s] Extracting: https://www.ionq.com (1/9), chunk 16/41
+
+[17:27:39 +45m 16s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[17:27:39 +45m 16s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[17:27:39 +45m 16s] Model call failed for https://www.ionq.com chunk 16: litellm.APIConnectionError: OllamaException - litellm.Timeout: Connection timed out. Timeout passed=600.0, time taken=600.102 seconds
+[17:27:39 +45m 16s] Extracting: https://www.ionq.com (1/9), chunk 17/41
+[17:28:13 +45m 50s] Extracting: https://www.ionq.com (1/9), chunk 18/41
+[17:29:22 +46m 59s] Extracting: https://www.ionq.com (1/9), chunk 19/41
+
+[17:39:22 +56m 59s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[17:39:22 +56m 59s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[17:39:22 +56m 59s] Model call failed for https://www.ionq.com chunk 19: litellm.APIConnectionError: OllamaException - litellm.Timeout: Connection timed out. Timeout passed=600.0, time taken=600.086 seconds
+[17:39:22 +56m 59s] Extracting: https://www.ionq.com (1/9), chunk 20/41
+[17:40:00 +57m 37s] Extracting: https://www.ionq.com (1/9), chunk 21/41
+[17:40:39 +58m 16s] Extracting: https://www.ionq.com (1/9), chunk 22/41
+[17:41:29 +59m 7s] Extracting: https://www.ionq.com (1/9), chunk 23/41
+[17:42:00 +59m 37s] Extracting: https://www.ionq.com (1/9), chunk 24/41
+
+[17:52:00 +1h 9m 37s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[17:52:00 +1h 9m 37s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[17:52:00 +1h 9m 37s] Model call failed for https://www.ionq.com chunk 24: litellm.APIConnectionError: OllamaException - litellm.Timeout: Connection timed out. Timeout passed=600.0, time taken=600.096 seconds
+[17:52:00 +1h 9m 37s] Extracting: https://www.ionq.com (1/9), chunk 25/41
+[17:52:37 +1h 10m 14s] Extracting: https://www.ionq.com (1/9), chunk 26/41
+[17:53:56 +1h 11m 33s] Extracting: https://www.ionq.com (1/9), chunk 27/41
+[17:54:19 +1h 11m 56s] Extracting: https://www.ionq.com (1/9), chunk 28/41
+[17:54:33 +1h 12m 10s] Extracting: https://www.ionq.com (1/9), chunk 29/41
+[17:54:52 +1h 12m 30s] Repaired malformed JSON.
+[17:54:52 +1h 12m 30s] Extracting: https://www.ionq.com (1/9), chunk 30/41
+[17:55:16 +1h 12m 54s] Extracting: https://www.ionq.com (1/9), chunk 31/41
+[17:55:35 +1h 13m 13s] Extracting: https://www.ionq.com (1/9), chunk 32/41
+[17:56:08 +1h 13m 46s] Extracting: https://www.ionq.com (1/9), chunk 33/41
+[17:56:35 +1h 14m 12s] Extracting: https://www.ionq.com (1/9), chunk 34/41
+[17:57:00 +1h 14m 37s] Extracting: https://www.ionq.com (1/9), chunk 35/41
+[17:57:21 +1h 14m 59s] Extracting: https://www.ionq.com (1/9), chunk 36/41
+[17:58:20 +1h 15m 57s] Repaired malformed JSON.
+[17:58:20 +1h 15m 57s] Extracting: https://www.ionq.com (1/9), chunk 37/41
+[17:59:00 +1h 16m 37s] Repaired malformed JSON.
+[17:59:00 +1h 16m 37s] Extracting: https://www.ionq.com (1/9), chunk 38/41
+[17:59:09 +1h 16m 46s] Extracting: https://www.ionq.com (1/9), chunk 39/41
+[17:59:16 +1h 16m 53s] Extracting: https://www.ionq.com (1/9), chunk 40/41
+[17:59:24 +1h 17m 1s] Extracting: https://www.ionq.com (1/9), chunk 41/41
+[17:59:33 +1h 17m 10s] Reading page (2/9): https://ionq.com
+[17:59:33 +1h 17m 10s] Extracting: https://ionq.com (2/9), chunk 1/40
+[17:59:40 +1h 17m 17s] Repaired malformed JSON.
+[17:59:40 +1h 17m 17s] Extracting: https://ionq.com (2/9), chunk 2/40
+[17:59:48 +1h 17m 26s] Extracting: https://ionq.com (2/9), chunk 3/40
+[17:59:55 +1h 17m 32s] Extracting: https://ionq.com (2/9), chunk 4/40
+[18:00:02 +1h 17m 40s] Extracting: https://ionq.com (2/9), chunk 5/40
+[18:00:10 +1h 17m 47s] Extracting: https://ionq.com (2/9), chunk 6/40
+[18:00:27 +1h 18m 5s] Extracting: https://ionq.com (2/9), chunk 7/40
+[18:00:59 +1h 18m 37s] Repaired malformed JSON.
+[18:00:59 +1h 18m 37s] Extracting: https://ionq.com (2/9), chunk 8/40
+[18:01:39 +1h 19m 16s] Extracting: https://ionq.com (2/9), chunk 9/40
+[18:02:15 +1h 19m 52s] Extracting: https://ionq.com (2/9), chunk 10/40
+[18:03:04 +1h 20m 41s] Extracting: https://ionq.com (2/9), chunk 11/40
+[18:03:38 +1h 21m 15s] Extracting: https://ionq.com (2/9), chunk 12/40
+[18:04:16 +1h 21m 53s] Extracting: https://ionq.com (2/9), chunk 13/40
+[18:04:55 +1h 22m 32s] Repaired malformed JSON.
+[18:04:55 +1h 22m 32s] Extracting: https://ionq.com (2/9), chunk 14/40
+[18:05:28 +1h 23m 5s] Extracting: https://ionq.com (2/9), chunk 15/40
+[18:06:02 +1h 23m 40s] Extracting: https://ionq.com (2/9), chunk 16/40
+[18:06:44 +1h 24m 21s] Repaired malformed JSON.
+[18:06:44 +1h 24m 21s] Extracting: https://ionq.com (2/9), chunk 17/40
+
+[18:16:44 +1h 34m 21s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[18:16:44 +1h 34m 21s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[18:16:44 +1h 34m 21s] Model call failed for https://ionq.com chunk 17: litellm.APIConnectionError: OllamaException - litellm.Timeout: Connection timed out. Timeout passed=600.0, time taken=600.101 seconds
+[18:16:44 +1h 34m 21s] Extracting: https://ionq.com (2/9), chunk 18/40
+[18:17:39 +1h 35m 17s] Extracting: https://ionq.com (2/9), chunk 19/40
+
+[18:27:40 +1h 45m 17s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[18:27:40 +1h 45m 17s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[18:27:40 +1h 45m 17s] Model call failed for https://ionq.com chunk 19: litellm.APIConnectionError: OllamaException - litellm.Timeout: Connection timed out. Timeout passed=600.0, time taken=600.102 seconds
+[18:27:40 +1h 45m 17s] Extracting: https://ionq.com (2/9), chunk 20/40
+[18:29:09 +1h 46m 46s] Extracting: https://ionq.com (2/9), chunk 21/40
+[18:29:56 +1h 47m 33s] Extracting: https://ionq.com (2/9), chunk 22/40
+[18:30:30 +1h 48m 7s] Extracting: https://ionq.com (2/9), chunk 23/40
+[18:31:00 +1h 48m 37s] Extracting: https://ionq.com (2/9), chunk 24/40
+[18:33:00 +1h 50m 37s] Extracting: https://ionq.com (2/9), chunk 25/40
+[18:34:03 +1h 51m 41s] Extracting: https://ionq.com (2/9), chunk 26/40
+[18:34:36 +1h 52m 13s] Extracting: https://ionq.com (2/9), chunk 27/40
+[18:34:57 +1h 52m 34s] Extracting: https://ionq.com (2/9), chunk 28/40
+[18:35:10 +1h 52m 48s] Extracting: https://ionq.com (2/9), chunk 29/40
+[18:35:29 +1h 53m 6s] Repaired malformed JSON.
+[18:35:29 +1h 53m 6s] Extracting: https://ionq.com (2/9), chunk 30/40
+[18:35:53 +1h 53m 30s] Extracting: https://ionq.com (2/9), chunk 31/40
+[18:36:11 +1h 53m 48s] Extracting: https://ionq.com (2/9), chunk 32/40
+[18:36:43 +1h 54m 21s] Extracting: https://ionq.com (2/9), chunk 33/40
+[18:37:09 +1h 54m 47s] Extracting: https://ionq.com (2/9), chunk 34/40
+[18:37:21 +1h 54m 58s] Extracting: https://ionq.com (2/9), chunk 35/40
+[18:37:29 +1h 55m 7s] Extracting: https://ionq.com (2/9), chunk 36/40
+[18:37:50 +1h 55m 28s] Extracting: https://ionq.com (2/9), chunk 37/40
+[18:38:18 +1h 55m 55s] Extracting: https://ionq.com (2/9), chunk 38/40
+[18:38:27 +1h 56m 4s] Extracting: https://ionq.com (2/9), chunk 39/40
+[18:38:34 +1h 56m 11s] Extracting: https://ionq.com (2/9), chunk 40/40
+[18:38:41 +1h 56m 18s] Reading page (3/9): https://www.ionq.com/quantum-systems/compare
+[18:38:41 +1h 56m 18s] Extracting: https://www.ionq.com/quantum-systems/compare (3/9), chunk 1/13
+[18:38:52 +1h 56m 29s] Repaired malformed JSON.
+[18:38:52 +1h 56m 29s] Extracting: https://www.ionq.com/quantum-systems/compare (3/9), chunk 2/13
+[18:38:59 +1h 56m 36s] Extracting: https://www.ionq.com/quantum-systems/compare (3/9), chunk 3/13
+[18:39:10 +1h 56m 47s] Extracting: https://www.ionq.com/quantum-systems/compare (3/9), chunk 4/13
+[18:39:18 +1h 56m 55s] Extracting: https://www.ionq.com/quantum-systems/compare (3/9), chunk 5/13
+[18:39:25 +1h 57m 3s] Extracting: https://www.ionq.com/quantum-systems/compare (3/9), chunk 6/13
+[18:39:52 +1h 57m 29s] Extracting: https://www.ionq.com/quantum-systems/compare (3/9), chunk 7/13
+[18:40:16 +1h 57m 53s] Extracting: https://www.ionq.com/quantum-systems/compare (3/9), chunk 8/13
+[18:40:33 +1h 58m 11s] Extracting: https://www.ionq.com/quantum-systems/compare (3/9), chunk 9/13
+[18:40:54 +1h 58m 31s] Extracting: https://www.ionq.com/quantum-systems/compare (3/9), chunk 10/13
+[18:41:04 +1h 58m 41s] Extracting: https://www.ionq.com/quantum-systems/compare (3/9), chunk 11/13
+[18:41:11 +1h 58m 48s] Extracting: https://www.ionq.com/quantum-systems/compare (3/9), chunk 12/13
+[18:41:20 +1h 58m 57s] Extracting: https://www.ionq.com/quantum-systems/compare (3/9), chunk 13/13
+[18:41:34 +1h 59m 11s] Reading page (4/9): https://www.ionq.com/company
+[18:41:34 +1h 59m 11s] Extracting: https://www.ionq.com/company (4/9), chunk 1/18
+[18:41:41 +1h 59m 19s] Extracting: https://www.ionq.com/company (4/9), chunk 2/18
+[18:41:50 +1h 59m 28s] Extracting: https://www.ionq.com/company (4/9), chunk 3/18
+[18:42:02 +1h 59m 39s] Extracting: https://www.ionq.com/company (4/9), chunk 4/18
+[18:42:14 +1h 59m 51s] Extracting: https://www.ionq.com/company (4/9), chunk 5/18
+[18:42:38 +2h 0m 15s] Extracting: https://www.ionq.com/company (4/9), chunk 6/18
+[18:43:04 +2h 0m 42s] Extracting: https://www.ionq.com/company (4/9), chunk 7/18
+[18:43:29 +2h 1m 7s] Extracting: https://www.ionq.com/company (4/9), chunk 8/18
+[18:45:03 +2h 2m 40s] Extracting: https://www.ionq.com/company (4/9), chunk 9/18
+[18:46:03 +2h 3m 41s] Extracting: https://www.ionq.com/company (4/9), chunk 10/18
+[18:47:44 +2h 5m 22s] Extracting: https://www.ionq.com/company (4/9), chunk 11/18
+[18:48:17 +2h 5m 54s] Extracting: https://www.ionq.com/company (4/9), chunk 12/18
+[18:48:58 +2h 6m 35s] Extracting: https://www.ionq.com/company (4/9), chunk 13/18
+[18:49:35 +2h 7m 13s] Extracting: https://www.ionq.com/company (4/9), chunk 14/18
+[18:49:41 +2h 7m 18s] Extracting: https://www.ionq.com/company (4/9), chunk 15/18
+[18:49:48 +2h 7m 26s] Extracting: https://www.ionq.com/company (4/9), chunk 16/18
+[18:49:56 +2h 7m 33s] Extracting: https://www.ionq.com/company (4/9), chunk 17/18
+[18:50:04 +2h 7m 41s] Extracting: https://www.ionq.com/company (4/9), chunk 18/18
+[18:50:18 +2h 7m 55s] Reading page (5/9): https://www.ionq.com/news
+[18:50:18 +2h 7m 55s] Extracting: https://www.ionq.com/news (5/9), chunk 1/15
+[18:50:28 +2h 8m 6s] Repaired malformed JSON.
+[18:50:28 +2h 8m 6s] Extracting: https://www.ionq.com/news (5/9), chunk 2/15
+[18:50:35 +2h 8m 13s] Extracting: https://www.ionq.com/news (5/9), chunk 3/15
+[18:50:47 +2h 8m 24s] Extracting: https://www.ionq.com/news (5/9), chunk 4/15
+[18:50:55 +2h 8m 32s] Extracting: https://www.ionq.com/news (5/9), chunk 5/15
+[18:51:13 +2h 8m 50s] Extracting: https://www.ionq.com/news (5/9), chunk 6/15
+[18:51:49 +2h 9m 26s] Extracting: https://www.ionq.com/news (5/9), chunk 7/15
+[18:52:24 +2h 10m 1s] Extracting: https://www.ionq.com/news (5/9), chunk 8/15
+[18:52:36 +2h 10m 13s] Extracting: https://www.ionq.com/news (5/9), chunk 9/15
+[18:52:58 +2h 10m 35s] Extracting: https://www.ionq.com/news (5/9), chunk 10/15
+[18:53:28 +2h 11m 6s] Repaired malformed JSON.
+[18:53:28 +2h 11m 6s] Extracting: https://www.ionq.com/news (5/9), chunk 11/15
+[18:53:52 +2h 11m 29s] Extracting: https://www.ionq.com/news (5/9), chunk 12/15
+[18:54:02 +2h 11m 40s] Repaired malformed JSON.
+[18:54:02 +2h 11m 40s] Extracting: https://www.ionq.com/news (5/9), chunk 13/15
+[18:54:10 +2h 11m 47s] Extracting: https://www.ionq.com/news (5/9), chunk 14/15
+[18:54:18 +2h 11m 56s] Extracting: https://www.ionq.com/news (5/9), chunk 15/15
+[18:54:29 +2h 12m 6s] Reading page (6/9): https://www.ionq.com/full-stack-platform
+[18:54:29 +2h 12m 6s] Extracting: https://www.ionq.com/full-stack-platform (6/9), chunk 1/11
+[18:54:36 +2h 12m 13s] Extracting: https://www.ionq.com/full-stack-platform (6/9), chunk 2/11
+[18:54:45 +2h 12m 22s] Extracting: https://www.ionq.com/full-stack-platform (6/9), chunk 3/11
+[18:54:52 +2h 12m 29s] Extracting: https://www.ionq.com/full-stack-platform (6/9), chunk 4/11
+[18:55:00 +2h 12m 37s] Extracting: https://www.ionq.com/full-stack-platform (6/9), chunk 5/11
+[18:55:13 +2h 12m 50s] Extracting: https://www.ionq.com/full-stack-platform (6/9), chunk 6/11
+[18:55:33 +2h 13m 11s] Extracting: https://www.ionq.com/full-stack-platform (6/9), chunk 7/11
+[18:55:54 +2h 13m 31s] Extracting: https://www.ionq.com/full-stack-platform (6/9), chunk 8/11
+[18:56:00 +2h 13m 38s] Extracting: https://www.ionq.com/full-stack-platform (6/9), chunk 9/11
+[18:56:08 +2h 13m 45s] Extracting: https://www.ionq.com/full-stack-platform (6/9), chunk 10/11
+[18:56:16 +2h 13m 54s] Extracting: https://www.ionq.com/full-stack-platform (6/9), chunk 11/11
+[18:56:31 +2h 14m 8s] Reading page (7/9): https://www.ionq.com/quantum-cloud
+[18:56:31 +2h 14m 8s] Extracting: https://www.ionq.com/quantum-cloud (7/9), chunk 1/16
+[18:56:43 +2h 14m 20s] Extracting: https://www.ionq.com/quantum-cloud (7/9), chunk 2/16
+[18:56:56 +2h 14m 33s] Extracting: https://www.ionq.com/quantum-cloud (7/9), chunk 3/16
+[18:57:08 +2h 14m 45s] Extracting: https://www.ionq.com/quantum-cloud (7/9), chunk 4/16
+[18:57:33 +2h 15m 11s] Extracting: https://www.ionq.com/quantum-cloud (7/9), chunk 5/16
+[18:57:46 +2h 15m 24s] Extracting: https://www.ionq.com/quantum-cloud (7/9), chunk 6/16
+[18:58:25 +2h 16m 3s] Extracting: https://www.ionq.com/quantum-cloud (7/9), chunk 7/16
+[18:59:18 +2h 16m 55s] Extracting: https://www.ionq.com/quantum-cloud (7/9), chunk 8/16
+[18:59:32 +2h 17m 10s] Extracting: https://www.ionq.com/quantum-cloud (7/9), chunk 9/16
+[18:59:46 +2h 17m 23s] Extracting: https://www.ionq.com/quantum-cloud (7/9), chunk 10/16
+[19:00:32 +2h 18m 9s] Extracting: https://www.ionq.com/quantum-cloud (7/9), chunk 11/16
+[19:00:55 +2h 18m 32s] Extracting: https://www.ionq.com/quantum-cloud (7/9), chunk 12/16
+[19:01:18 +2h 18m 55s] Extracting: https://www.ionq.com/quantum-cloud (7/9), chunk 13/16
+[19:01:25 +2h 19m 2s] Extracting: https://www.ionq.com/quantum-cloud (7/9), chunk 14/16
+[19:01:32 +2h 19m 10s] Extracting: https://www.ionq.com/quantum-cloud (7/9), chunk 15/16
+[19:01:41 +2h 19m 18s] Extracting: https://www.ionq.com/quantum-cloud (7/9), chunk 16/16
+[19:01:58 +2h 19m 35s] Reading page (8/9): https://www.ionq.com/applications-services
+[19:01:58 +2h 19m 35s] Extracting: https://www.ionq.com/applications-services (8/9), chunk 1/22
+[19:02:04 +2h 19m 41s] Repaired malformed JSON.
+[19:02:04 +2h 19m 41s] Extracting: https://www.ionq.com/applications-services (8/9), chunk 2/22
+[19:02:12 +2h 19m 49s] Extracting: https://www.ionq.com/applications-services (8/9), chunk 3/22
+[19:02:44 +2h 20m 21s] Extracting: https://www.ionq.com/applications-services (8/9), chunk 4/22
+[19:02:51 +2h 20m 29s] Extracting: https://www.ionq.com/applications-services (8/9), chunk 5/22
+[19:03:03 +2h 20m 40s] Extracting: https://www.ionq.com/applications-services (8/9), chunk 6/22
+[19:03:03 +2h 20m 40s] Unclosed client session
+[19:03:03 +2h 20m 40s] client_session: <aiohttp.client.ClientSession object at 0x781b5baf77a0>
+[19:03:07 +2h 20m 44s] Extracting: https://www.ionq.com/applications-services (8/9), chunk 7/22
+[19:03:19 +2h 20m 56s] Extracting: https://www.ionq.com/applications-services (8/9), chunk 8/22
+[19:03:27 +2h 21m 4s] Extracting: https://www.ionq.com/applications-services (8/9), chunk 9/22
+[19:03:34 +2h 21m 12s] Extracting: https://www.ionq.com/applications-services (8/9), chunk 10/22
+[19:04:13 +2h 21m 51s] Extracting: https://www.ionq.com/applications-services (8/9), chunk 11/22
+[19:04:31 +2h 22m 8s] Extracting: https://www.ionq.com/applications-services (8/9), chunk 12/22
+[19:04:59 +2h 22m 36s] Extracting: https://www.ionq.com/applications-services (8/9), chunk 13/22
+[19:05:35 +2h 23m 12s] Extracting: https://www.ionq.com/applications-services (8/9), chunk 14/22
+[19:06:10 +2h 23m 47s] Extracting: https://www.ionq.com/applications-services (8/9), chunk 15/22
+[19:06:40 +2h 24m 17s] Extracting: https://www.ionq.com/applications-services (8/9), chunk 16/22
+[19:06:50 +2h 24m 27s] Extracting: https://www.ionq.com/applications-services (8/9), chunk 17/22
+[19:06:58 +2h 24m 35s] Extracting: https://www.ionq.com/applications-services (8/9), chunk 18/22
+[19:07:18 +2h 24m 55s] Repaired malformed JSON.
+[19:07:18 +2h 24m 55s] Extracting: https://www.ionq.com/applications-services (8/9), chunk 19/22
+[19:07:30 +2h 25m 8s] Extracting: https://www.ionq.com/applications-services (8/9), chunk 20/22
+[19:07:38 +2h 25m 15s] Extracting: https://www.ionq.com/applications-services (8/9), chunk 21/22
+[19:07:46 +2h 25m 24s] Extracting: https://www.ionq.com/applications-services (8/9), chunk 22/22
+[19:07:58 +2h 25m 35s] Reading page (9/9): https://www.ionq.com/quantum-benchmarks
+[19:07:58 +2h 25m 35s] Extracting: https://www.ionq.com/quantum-benchmarks (9/9), chunk 1/30
+[19:08:08 +2h 25m 45s] Repaired malformed JSON.
+[19:08:08 +2h 25m 45s] Extracting: https://www.ionq.com/quantum-benchmarks (9/9), chunk 2/30
+[19:08:15 +2h 25m 53s] Extracting: https://www.ionq.com/quantum-benchmarks (9/9), chunk 3/30
+[19:08:27 +2h 26m 4s] Extracting: https://www.ionq.com/quantum-benchmarks (9/9), chunk 4/30
+[19:08:35 +2h 26m 12s] Extracting: https://www.ionq.com/quantum-benchmarks (9/9), chunk 5/30
+[19:08:40 +2h 26m 17s] Extracting: https://www.ionq.com/quantum-benchmarks (9/9), chunk 6/30
+[19:08:44 +2h 26m 21s] Extracting: https://www.ionq.com/quantum-benchmarks (9/9), chunk 7/30
+[19:08:48 +2h 26m 25s] Extracting: https://www.ionq.com/quantum-benchmarks (9/9), chunk 8/30
+[19:08:52 +2h 26m 29s] Extracting: https://www.ionq.com/quantum-benchmarks (9/9), chunk 9/30
+[19:08:56 +2h 26m 33s] Extracting: https://www.ionq.com/quantum-benchmarks (9/9), chunk 10/30
+[19:09:01 +2h 26m 38s] Extracting: https://www.ionq.com/quantum-benchmarks (9/9), chunk 11/30
+[19:09:05 +2h 26m 42s] Extracting: https://www.ionq.com/quantum-benchmarks (9/9), chunk 12/30
+[19:09:11 +2h 26m 49s] Extracting: https://www.ionq.com/quantum-benchmarks (9/9), chunk 13/30
+[19:09:20 +2h 26m 57s] Extracting: https://www.ionq.com/quantum-benchmarks (9/9), chunk 14/30
+[19:09:57 +2h 27m 34s] Extracting: https://www.ionq.com/quantum-benchmarks (9/9), chunk 15/30
+[19:10:42 +2h 28m 19s] Extracting: https://www.ionq.com/quantum-benchmarks (9/9), chunk 16/30
+[19:11:00 +2h 28m 37s] Extracting: https://www.ionq.com/quantum-benchmarks (9/9), chunk 17/30
+[19:11:26 +2h 29m 3s] Extracting: https://www.ionq.com/quantum-benchmarks (9/9), chunk 18/30
+[19:11:45 +2h 29m 22s] Extracting: https://www.ionq.com/quantum-benchmarks (9/9), chunk 19/30
+[19:12:25 +2h 30m 3s] Extracting: https://www.ionq.com/quantum-benchmarks (9/9), chunk 20/30
+[19:12:45 +2h 30m 22s] Extracting: https://www.ionq.com/quantum-benchmarks (9/9), chunk 21/30
+[19:13:10 +2h 30m 47s] Extracting: https://www.ionq.com/quantum-benchmarks (9/9), chunk 22/30
+[19:13:33 +2h 31m 11s] Repaired malformed JSON.
+[19:13:33 +2h 31m 11s] Extracting: https://www.ionq.com/quantum-benchmarks (9/9), chunk 23/30
+[19:13:47 +2h 31m 25s] Extracting: https://www.ionq.com/quantum-benchmarks (9/9), chunk 24/30
+[19:14:10 +2h 31m 47s] Extracting: https://www.ionq.com/quantum-benchmarks (9/9), chunk 25/30
+[19:14:50 +2h 32m 27s] Extracting: https://www.ionq.com/quantum-benchmarks (9/9), chunk 26/30
+[19:14:58 +2h 32m 36s] Extracting: https://www.ionq.com/quantum-benchmarks (9/9), chunk 27/30
+[19:15:06 +2h 32m 44s] Extracting: https://www.ionq.com/quantum-benchmarks (9/9), chunk 28/30
+[19:15:14 +2h 32m 51s] Extracting: https://www.ionq.com/quantum-benchmarks (9/9), chunk 29/30
+[19:15:22 +2h 33m 0s] Extracting: https://www.ionq.com/quantum-benchmarks (9/9), chunk 30/30
+[19:15:32 +2h 33m 9s] Saved 1_actor_results.json with 790 extracted records
+
+[19:15:32 +2h 33m 9s] === 2 clean actors ===
+[19:15:36 +2h 33m 13s] Loaded 790 extracted records
+[19:15:36 +2h 33m 13s] Saved 2_actor_nodes.json with 184 canonical actor nodes
+
+[19:15:36 +2h 33m 13s] === 3 interaction extraction ===
+[19:15:38 +2h 33m 16s] Extracting interactions: https://www.ionq.com (1/9), chunk 2/41
+[19:15:44 +2h 33m 21s] Extracting interactions: https://www.ionq.com (1/9), chunk 3/41
+[19:15:50 +2h 33m 27s] Extracting interactions: https://www.ionq.com (1/9), chunk 4/41
+[19:15:56 +2h 33m 34s] Extracting interactions: https://www.ionq.com (1/9), chunk 5/41
+[19:16:03 +2h 33m 40s] Extracting interactions: https://www.ionq.com (1/9), chunk 7/41
+[19:16:07 +2h 33m 44s] Extracting interactions: https://www.ionq.com (1/9), chunk 8/41
+[19:16:27 +2h 34m 4s] Extracting interactions: https://www.ionq.com (1/9), chunk 9/41
+[19:16:43 +2h 34m 20s] Extracting interactions: https://www.ionq.com (1/9), chunk 10/41
+[19:17:10 +2h 34m 48s] Extracting interactions: https://www.ionq.com (1/9), chunk 11/41
+[19:17:49 +2h 35m 27s] Extracting interactions: https://www.ionq.com (1/9), chunk 12/41
+[19:18:54 +2h 36m 31s] Extracting interactions: https://www.ionq.com (1/9), chunk 13/41
+[19:19:25 +2h 37m 2s] Extracting interactions: https://www.ionq.com (1/9), chunk 14/41
+[19:20:13 +2h 37m 51s] Extracting interactions: https://www.ionq.com (1/9), chunk 15/41
+[19:20:49 +2h 38m 26s] Extracting interactions: https://www.ionq.com (1/9), chunk 16/41
+[19:21:37 +2h 39m 15s] Extracting interactions: https://www.ionq.com (1/9), chunk 17/41
+[19:22:26 +2h 40m 3s] Extracting interactions: https://www.ionq.com (1/9), chunk 18/41
+[19:23:15 +2h 40m 52s] Extracting interactions: https://www.ionq.com (1/9), chunk 19/41
+[19:24:01 +2h 41m 38s] Extracting interactions: https://www.ionq.com (1/9), chunk 20/41
+[19:24:45 +2h 42m 23s] Extracting interactions: https://www.ionq.com (1/9), chunk 21/41
+[19:25:25 +2h 43m 2s] Extracting interactions: https://www.ionq.com (1/9), chunk 22/41
+[19:25:50 +2h 43m 27s] Extracting interactions: https://www.ionq.com (1/9), chunk 23/41
+[19:26:10 +2h 43m 48s] Extracting interactions: https://www.ionq.com (1/9), chunk 24/41
+[19:26:46 +2h 44m 23s] Extracting interactions: https://www.ionq.com (1/9), chunk 25/41
+[19:27:35 +2h 45m 12s] Extracting interactions: https://www.ionq.com (1/9), chunk 26/41
+[19:28:03 +2h 45m 41s] Extracting interactions: https://www.ionq.com (1/9), chunk 29/41
+[19:28:17 +2h 45m 55s] Extracting interactions: https://www.ionq.com (1/9), chunk 30/41
+[19:28:34 +2h 46m 11s] Extracting interactions: https://www.ionq.com (1/9), chunk 31/41
+[19:28:42 +2h 46m 20s] Extracting interactions: https://www.ionq.com (1/9), chunk 32/41
+[19:29:09 +2h 46m 47s] Extracting interactions: https://www.ionq.com (1/9), chunk 33/41
+[19:29:30 +2h 47m 8s] Extracting interactions: https://www.ionq.com (1/9), chunk 34/41
+[19:29:42 +2h 47m 19s] Extracting interactions: https://www.ionq.com (1/9), chunk 35/41
+[19:30:29 +2h 48m 7s] Extracting interactions: https://www.ionq.com (1/9), chunk 36/41
+[19:30:56 +2h 48m 34s] Extracting interactions: https://www.ionq.com (1/9), chunk 37/41
+[19:31:13 +2h 48m 51s] Extracting interactions: https://www.ionq.com (1/9), chunk 39/41
+[19:31:19 +2h 48m 57s] Extracting interactions: https://www.ionq.com (1/9), chunk 40/41
+[19:31:26 +2h 49m 3s] Extracting interactions: https://ionq.com (2/9), chunk 2/40
+[19:31:32 +2h 49m 9s] Extracting interactions: https://ionq.com (2/9), chunk 3/40
+[19:31:37 +2h 49m 14s] Extracting interactions: https://ionq.com (2/9), chunk 4/40
+[19:31:44 +2h 49m 21s] Extracting interactions: https://ionq.com (2/9), chunk 5/40
+[19:31:50 +2h 49m 27s] Extracting interactions: https://ionq.com (2/9), chunk 7/40
+[19:32:04 +2h 49m 41s] Extracting interactions: https://ionq.com (2/9), chunk 8/40
+[19:32:33 +2h 50m 10s] Extracting interactions: https://ionq.com (2/9), chunk 9/40
+[19:32:54 +2h 50m 31s] Extracting interactions: https://ionq.com (2/9), chunk 10/40
+[19:33:16 +2h 50m 54s] Extracting interactions: https://ionq.com (2/9), chunk 11/40
+[19:34:05 +2h 51m 42s] Extracting interactions: https://ionq.com (2/9), chunk 12/40
+[19:34:51 +2h 52m 28s] Extracting interactions: https://ionq.com (2/9), chunk 13/40
+[19:35:26 +2h 53m 3s] Extracting interactions: https://ionq.com (2/9), chunk 14/40
+[19:36:07 +2h 53m 44s] Extracting interactions: https://ionq.com (2/9), chunk 15/40
+[19:36:42 +2h 54m 20s] Extracting interactions: https://ionq.com (2/9), chunk 16/40
+[19:37:31 +2h 55m 9s] Extracting interactions: https://ionq.com (2/9), chunk 17/40
+[19:38:20 +2h 55m 57s] Extracting interactions: https://ionq.com (2/9), chunk 18/40
+[19:39:09 +2h 56m 46s] Extracting interactions: https://ionq.com (2/9), chunk 19/40
+[19:39:58 +2h 57m 35s] Extracting interactions: https://ionq.com (2/9), chunk 20/40
+[19:40:47 +2h 58m 24s] Extracting interactions: https://ionq.com (2/9), chunk 21/40
+[19:41:08 +2h 58m 45s] Extracting interactions: https://ionq.com (2/9), chunk 22/40
+[19:41:32 +2h 59m 10s] Extracting interactions: https://ionq.com (2/9), chunk 23/40
+[19:41:52 +2h 59m 29s] Extracting interactions: https://ionq.com (2/9), chunk 24/40
+[19:42:25 +3h 0m 2s] Extracting interactions: https://ionq.com (2/9), chunk 25/40
+[19:43:13 +3h 0m 51s] Extracting interactions: https://ionq.com (2/9), chunk 26/40
+[19:43:56 +3h 1m 33s] Extracting interactions: https://ionq.com (2/9), chunk 29/40
+[19:44:15 +3h 1m 52s] Extracting interactions: https://ionq.com (2/9), chunk 30/40
+[19:44:31 +3h 2m 8s] Extracting interactions: https://ionq.com (2/9), chunk 31/40
+[19:44:51 +3h 2m 28s] Extracting interactions: https://ionq.com (2/9), chunk 32/40
+[19:45:36 +3h 3m 13s] Extracting interactions: https://ionq.com (2/9), chunk 33/40
+[19:45:57 +3h 3m 34s] Extracting interactions: https://ionq.com (2/9), chunk 34/40
+[19:46:08 +3h 3m 45s] Extracting interactions: https://ionq.com (2/9), chunk 35/40
+[19:46:37 +3h 4m 14s] Extracting interactions: https://ionq.com (2/9), chunk 36/40
+[19:47:20 +3h 4m 57s] Extracting interactions: https://ionq.com (2/9), chunk 37/40
+[19:47:37 +3h 5m 14s] Extracting interactions: https://ionq.com (2/9), chunk 39/40
+[19:47:43 +3h 5m 20s] Extracting interactions: https://ionq.com (2/9), chunk 40/40
+[19:47:48 +3h 5m 26s] Extracting interactions: https://www.ionq.com/quantum-systems/compare (3/9), chunk 2/13
+[19:47:54 +3h 5m 32s] Extracting interactions: https://www.ionq.com/quantum-systems/compare (3/9), chunk 3/13
+[19:48:00 +3h 5m 38s] Extracting interactions: https://www.ionq.com/quantum-systems/compare (3/9), chunk 4/13
+[19:48:12 +3h 5m 50s] Extracting interactions: https://www.ionq.com/quantum-systems/compare (3/9), chunk 5/13
+[19:48:18 +3h 5m 55s] Extracting interactions: https://www.ionq.com/quantum-systems/compare (3/9), chunk 7/13
+[19:48:35 +3h 6m 12s] Extracting interactions: https://www.ionq.com/quantum-systems/compare (3/9), chunk 8/13
+[19:48:50 +3h 6m 27s] Extracting interactions: https://www.ionq.com/quantum-systems/compare (3/9), chunk 11/13
+[19:48:57 +3h 6m 34s] Extracting interactions: https://www.ionq.com/quantum-systems/compare (3/9), chunk 12/13
+[19:49:03 +3h 6m 40s] Extracting interactions: https://www.ionq.com/company (4/9), chunk 2/18
+[19:49:09 +3h 6m 46s] Extracting interactions: https://www.ionq.com/company (4/9), chunk 3/18
+[19:49:15 +3h 6m 52s] Extracting interactions: https://www.ionq.com/company (4/9), chunk 4/18
+[19:49:23 +3h 7m 1s] Extracting interactions: https://www.ionq.com/company (4/9), chunk 5/18
+[19:49:54 +3h 7m 31s] Extracting interactions: https://www.ionq.com/company (4/9), chunk 6/18
+[19:50:06 +3h 7m 44s] Extracting interactions: https://www.ionq.com/company (4/9), chunk 7/18
+[19:50:20 +3h 7m 57s] Extracting interactions: https://www.ionq.com/company (4/9), chunk 8/18
+[19:50:41 +3h 8m 18s] Extracting interactions: https://www.ionq.com/company (4/9), chunk 9/18
+[19:51:29 +3h 9m 6s] Extracting interactions: https://www.ionq.com/company (4/9), chunk 10/18
+[19:52:13 +3h 9m 51s] Extracting interactions: https://www.ionq.com/company (4/9), chunk 11/18
+[19:52:35 +3h 10m 13s] Extracting interactions: https://www.ionq.com/company (4/9), chunk 12/18
+[19:53:09 +3h 10m 46s] Extracting interactions: https://www.ionq.com/company (4/9), chunk 13/18
+[19:53:23 +3h 11m 1s] Extracting interactions: https://www.ionq.com/company (4/9), chunk 14/18
+[19:53:56 +3h 11m 34s] Extracting interactions: https://www.ionq.com/company (4/9), chunk 16/18
+[19:54:02 +3h 11m 40s] Extracting interactions: https://www.ionq.com/company (4/9), chunk 17/18
+[19:54:09 +3h 11m 46s] Extracting interactions: https://www.ionq.com/news (5/9), chunk 2/15
+[19:54:15 +3h 11m 52s] Extracting interactions: https://www.ionq.com/news (5/9), chunk 3/15
+[19:54:24 +3h 12m 1s] Extracting interactions: https://www.ionq.com/news (5/9), chunk 4/15
+[19:54:30 +3h 12m 7s] Extracting interactions: https://www.ionq.com/news (5/9), chunk 5/15
+[19:54:38 +3h 12m 15s] Extracting interactions: https://www.ionq.com/news (5/9), chunk 6/15
+[19:55:00 +3h 12m 38s] Extracting interactions: https://www.ionq.com/news (5/9), chunk 7/15
+[19:55:17 +3h 12m 54s] Extracting interactions: https://www.ionq.com/news (5/9), chunk 8/15
+[19:55:26 +3h 13m 3s] Extracting interactions: https://www.ionq.com/news (5/9), chunk 9/15
+[19:55:38 +3h 13m 15s] Extracting interactions: https://www.ionq.com/news (5/9), chunk 10/15
+[19:56:12 +3h 13m 49s] Extracting interactions: https://www.ionq.com/news (5/9), chunk 11/15
+[19:56:28 +3h 14m 6s] Extracting interactions: https://www.ionq.com/news (5/9), chunk 13/15
+[19:56:35 +3h 14m 12s] Extracting interactions: https://www.ionq.com/news (5/9), chunk 14/15
+[19:56:41 +3h 14m 18s] Extracting interactions: https://www.ionq.com/full-stack-platform (6/9), chunk 2/11
+[19:56:47 +3h 14m 24s] Extracting interactions: https://www.ionq.com/full-stack-platform (6/9), chunk 3/11
+[19:56:53 +3h 14m 30s] Extracting interactions: https://www.ionq.com/full-stack-platform (6/9), chunk 4/11
+[19:57:00 +3h 14m 37s] Extracting interactions: https://www.ionq.com/full-stack-platform (6/9), chunk 5/11
+[19:57:13 +3h 14m 51s] Extracting interactions: https://www.ionq.com/full-stack-platform (6/9), chunk 6/11
+[19:57:30 +3h 15m 7s] Extracting interactions: https://www.ionq.com/full-stack-platform (6/9), chunk 7/11
+[19:57:47 +3h 15m 24s] Extracting interactions: https://www.ionq.com/full-stack-platform (6/9), chunk 9/11
+[19:57:53 +3h 15m 30s] Extracting interactions: https://www.ionq.com/full-stack-platform (6/9), chunk 10/11
+[19:58:00 +3h 15m 37s] Extracting interactions: https://www.ionq.com/quantum-cloud (7/9), chunk 2/16
+[19:58:05 +3h 15m 43s] Extracting interactions: https://www.ionq.com/quantum-cloud (7/9), chunk 3/16
+[19:58:15 +3h 15m 52s] Extracting interactions: https://www.ionq.com/quantum-cloud (7/9), chunk 4/16
+[19:58:23 +3h 16m 0s] Extracting interactions: https://www.ionq.com/quantum-cloud (7/9), chunk 5/16
+[19:58:42 +3h 16m 20s] Extracting interactions: https://www.ionq.com/quantum-cloud (7/9), chunk 6/16
+[19:59:29 +3h 17m 6s] Extracting interactions: https://www.ionq.com/quantum-cloud (7/9), chunk 8/16
+[19:59:53 +3h 17m 30s] Extracting interactions: https://www.ionq.com/quantum-cloud (7/9), chunk 9/16
+[19:59:59 +3h 17m 36s] Extracting interactions: https://www.ionq.com/quantum-cloud (7/9), chunk 10/16
+[20:00:15 +3h 17m 52s] Extracting interactions: https://www.ionq.com/quantum-cloud (7/9), chunk 11/16
+[20:01:02 +3h 18m 39s] Extracting interactions: https://www.ionq.com/quantum-cloud (7/9), chunk 14/16
+[20:01:08 +3h 18m 45s] Extracting interactions: https://www.ionq.com/quantum-cloud (7/9), chunk 15/16
+[20:01:15 +3h 18m 52s] Extracting interactions: https://www.ionq.com/applications-services (8/9), chunk 2/22
+[20:01:24 +3h 19m 1s] Extracting interactions: https://www.ionq.com/applications-services (8/9), chunk 3/22
+[20:01:30 +3h 19m 7s] Extracting interactions: https://www.ionq.com/applications-services (8/9), chunk 4/22
+[20:01:41 +3h 19m 18s] Extracting interactions: https://www.ionq.com/applications-services (8/9), chunk 5/22
+[20:01:47 +3h 19m 24s] Extracting interactions: https://www.ionq.com/applications-services (8/9), chunk 6/22
+[20:02:17 +3h 19m 54s] Extracting interactions: https://www.ionq.com/applications-services (8/9), chunk 7/22
+[20:03:03 +3h 20m 40s] Extracting interactions: https://www.ionq.com/applications-services (8/9), chunk 8/22
+[20:03:09 +3h 20m 46s] Extracting interactions: https://www.ionq.com/applications-services (8/9), chunk 10/22
+[20:03:56 +3h 21m 33s] Extracting interactions: https://www.ionq.com/applications-services (8/9), chunk 11/22
+[20:04:42 +3h 22m 20s] Extracting interactions: https://www.ionq.com/applications-services (8/9), chunk 12/22
+[20:04:55 +3h 22m 32s] Extracting interactions: https://www.ionq.com/applications-services (8/9), chunk 13/22
+[20:05:28 +3h 23m 5s] Extracting interactions: https://www.ionq.com/applications-services (8/9), chunk 14/22
+[20:06:13 +3h 23m 50s] Extracting interactions: https://www.ionq.com/applications-services (8/9), chunk 15/22
+[20:06:51 +3h 24m 28s] Extracting interactions: https://www.ionq.com/applications-services (8/9), chunk 16/22
+[20:06:57 +3h 24m 34s] Extracting interactions: https://www.ionq.com/applications-services (8/9), chunk 17/22
+[20:07:20 +3h 24m 57s] Extracting interactions: https://www.ionq.com/applications-services (8/9), chunk 18/22
+[20:07:30 +3h 25m 7s] Extracting interactions: https://www.ionq.com/applications-services (8/9), chunk 20/22
+[20:07:36 +3h 25m 14s] Extracting interactions: https://www.ionq.com/applications-services (8/9), chunk 21/22
+[20:07:43 +3h 25m 20s] Extracting interactions: https://www.ionq.com/quantum-benchmarks (9/9), chunk 2/30
+[20:07:52 +3h 25m 30s] Extracting interactions: https://www.ionq.com/quantum-benchmarks (9/9), chunk 3/30
+[20:08:16 +3h 25m 53s] Extracting interactions: https://www.ionq.com/quantum-benchmarks (9/9), chunk 4/30
+[20:08:21 +3h 25m 58s] Extracting interactions: https://www.ionq.com/quantum-benchmarks (9/9), chunk 5/30
+[20:08:28 +3h 26m 5s] Extracting interactions: https://www.ionq.com/quantum-benchmarks (9/9), chunk 6/30
+[20:08:35 +3h 26m 12s] Extracting interactions: https://www.ionq.com/quantum-benchmarks (9/9), chunk 10/30
+[20:08:42 +3h 26m 19s] Extracting interactions: https://www.ionq.com/quantum-benchmarks (9/9), chunk 11/30
+[20:09:06 +3h 26m 43s] Extracting interactions: https://www.ionq.com/quantum-benchmarks (9/9), chunk 16/30
+[20:09:11 +3h 26m 48s] Extracting interactions: https://www.ionq.com/quantum-benchmarks (9/9), chunk 17/30
+[20:09:16 +3h 26m 53s] Extracting interactions: https://www.ionq.com/quantum-benchmarks (9/9), chunk 23/30
+[20:09:36 +3h 27m 13s] Extracting interactions: https://www.ionq.com/quantum-benchmarks (9/9), chunk 24/30
+[20:09:41 +3h 27m 18s] Extracting interactions: https://www.ionq.com/quantum-benchmarks (9/9), chunk 25/30
+[20:09:48 +3h 27m 25s] Extracting interactions: https://www.ionq.com/quantum-benchmarks (9/9), chunk 26/30
+[20:09:56 +3h 27m 33s] Extracting interactions: https://www.ionq.com/quantum-benchmarks (9/9), chunk 28/30
+[20:10:02 +3h 27m 39s] Extracting interactions: https://www.ionq.com/quantum-benchmarks (9/9), chunk 29/30
+[20:10:08 +3h 27m 46s] Saved 3_interaction_results.json with 516 extracted interactions.
+
+[20:10:09 +3h 27m 46s] === 4 clean interactions ===
+[20:10:09 +3h 27m 47s] Saved 4_edges.json with 112 cleaned interactions.
+
+[20:10:09 +3h 27m 47s] === 5 helix enrichment ===
+[20:10:10 +3h 27m 48s] Wrote 5_nodes.json (184 actors)
+[20:10:10 +3h 27m 48s] Wrote 5_edges.json (112 interactions)
+[20:10:10 +3h 27m 48s] Actor helix counts: {'Academia': 20, 'Civil Society': 10, 'Government': 11, 'Industry': 76, 'Intermediary': 13, 'Unknown': 54}
+[20:10:10 +3h 27m 48s] Functional-space counts: {'Consensus': 14, 'Innovation': 34, 'Intra-helix / Not classified': 53, 'Unknown': 11}
+
+[20:10:10 +3h 27m 48s] === 6 network visualisation ===
+[20:10:12 +3h 27m 50s] Wrote quantum_network.html
+[20:10:12 +3h 27m 50s] Nodes: 184
+[20:10:12 +3h 27m 50s] Edges: 54
+
+[20:10:12 +3h 27m 50s] Done. Outputs written to: /content/drive/MyDrive/pipeline/site_outputs/ionq/website
+[20:10:12 +3h 27m 50s] Log: /content/drive/MyDrive/pipeline/site_outputs/ionq/website/run.log
+
+========================================================================
+RUN FINISHED 2026-06-01 20:10:12  (OK)
+Elapsed:     3h 27m 50s
+========================================================================
