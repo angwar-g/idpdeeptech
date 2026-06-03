@@ -164,25 +164,42 @@ def main():
             "is exiting.\n\n"
             "Pass --force / -f to re-run from scratch (deletes crawl, raw LLM "
             "results, and progress sidecars), or --skip-crawl / --skip-actors / "
-            "--skip-interactions to re-run only parts.\n"
+            "--skip-interactions to re-run only parts. --force can be combined "
+            "with skip flags: --force --skip-actors re-does only the interactions "
+            "step, --force --skip-interactions re-does only cleaning/helix/viz.\n"
         )
 
-    # If --force was requested, clear raw LLM outputs and progress sidecars so
-    # the LLM extraction scripts truly start from scratch instead of resuming.
-    # We do NOT delete crawl_output here -- crawl_site.py wipes that itself
-    # when run from scratch, and we want --force to actually trigger a re-crawl.
+    # If --force was requested, clear raw outputs for whichever steps are about
+    # to RUN (not the ones being skipped). This means:
+    #   --force                    wipes crawl_output, both LLM outputs.
+    #   --force --skip-crawl       wipes both LLM outputs, keeps crawl.
+    #   --force --skip-actors      wipes only interactions output, keeps crawl
+    #                              and actor data.
+    #   --force --skip-interactions wipes nothing LLM-related (both steps are
+    #                               skipped), but the downstream cleaning/helix/
+    #                               viz still re-runs as normal.
+    # NOTE: We do NOT delete crawl_output ourselves — crawl_site.py wipes it
+    # when it runs, so as long as the crawl step isn't being skipped, --force
+    # naturally triggers a re-crawl.
     if args.force:
-        to_clear = [
-            out_dir / "1_actor_results.json",
-            out_dir / "1_actor_results.progress.json",
-            out_dir / "3_interaction_results.json",
-            out_dir / "3_interaction_results.progress.json",
-        ]
+        to_clear: list[Path] = []
+        if not skip_actor_llm:
+            to_clear += [
+                out_dir / "1_actor_results.json",
+                out_dir / "1_actor_results.progress.json",
+            ]
+        if not skip_interaction_llm:
+            to_clear += [
+                out_dir / "3_interaction_results.json",
+                out_dir / "3_interaction_results.progress.json",
+            ]
         removed = [f.name for f in to_clear if f.exists()]
         for f in to_clear:
             f.unlink(missing_ok=True)
         if removed:
-            print(f"--force: cleared previous LLM outputs and sidecars: {', '.join(removed)}")
+            print(f"--force: cleared {', '.join(removed)}")
+        elif not (skip_actor_llm or skip_interaction_llm):
+            print("--force: no raw LLM files to clear (already absent)")
 
     # Validate required artifacts exist for whatever was skipped.
     if skip_crawl:

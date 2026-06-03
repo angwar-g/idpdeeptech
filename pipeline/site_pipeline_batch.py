@@ -4,14 +4,15 @@
 Reads a JSON file shaped like:
     {
       "Psiquantum": {
-        "website_link": "https://www.psiquantum.com/",
-        "linkedin_link": "https://www.linkedin.com/company/psiquantum/"
+        "website_link": "https://www.psiquantum.com/"
       },
       ...
     }
 
-For each company, runs the website pipeline into site_outputs/<slug>/website/.
-LinkedIn is intentionally not processed yet (planned: site_outputs/<slug>/linkedin/).
+For each company, runs the website pipeline into site_outputs/<slug>/, where
+<slug> is derived from the URL (see site_pipeline.site_stem). Already-completed
+companies (those with an existing network.html) are skipped by default; pass
+--force to redo them.
 
 Usage:
     python3 site_pipeline_batch.py                                 # uses site_input/companies.json
@@ -20,7 +21,8 @@ Usage:
     python3 site_pipeline_batch.py /abs/path/to/myconfig.json      # absolute path also works
     python3 site_pipeline_batch.py --crawl 3 --max-pages 30
     python3 site_pipeline_batch.py --only Psiquantum Quandela
-    python3 site_pipeline_batch.py --resume --workers 4
+    python3 site_pipeline_batch.py --workers 4                     # 4 in parallel
+    python3 site_pipeline_batch.py --force                         # redo every company from scratch
 """
 import argparse
 import json

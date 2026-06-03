@@ -115,21 +115,29 @@ def main():
             "re-run only parts of the pipeline.\n"
         )
 
-    # If --force was requested, clear the raw LLM outputs and their progress
-    # sidecars so the LLM extraction scripts truly start from scratch instead
-    # of auto-resuming "already done".
+    # If --force was requested, clear the raw LLM outputs for whichever LLM
+    # steps are about to RUN (not the ones being skipped). This means
+    # --force on its own wipes everything LLM-related, while --force
+    # --skip-actors wipes only the interactions data, and so on.
     if args.force:
-        to_clear = [
-            out_dir / "1_actor_results.json",
-            out_dir / "1_actor_results.progress.json",
-            out_dir / "3_interaction_results.json",
-            out_dir / "3_interaction_results.progress.json",
-        ]
+        to_clear: list[Path] = []
+        if not skip_actor_llm:
+            to_clear += [
+                out_dir / "1_actor_results.json",
+                out_dir / "1_actor_results.progress.json",
+            ]
+        if not skip_interaction_llm:
+            to_clear += [
+                out_dir / "3_interaction_results.json",
+                out_dir / "3_interaction_results.progress.json",
+            ]
         removed = [f.name for f in to_clear if f.exists()]
         for f in to_clear:
             f.unlink(missing_ok=True)
         if removed:
-            print(f"--force: cleared previous LLM outputs and sidecars: {', '.join(removed)}")
+            print(f"--force: cleared {', '.join(removed)}")
+        elif not (skip_actor_llm or skip_interaction_llm):
+            print("--force: no raw LLM files to clear (already absent)")
 
     # Validate required raw files exist for whatever LLM steps were skipped.
     if skip_actor_llm:

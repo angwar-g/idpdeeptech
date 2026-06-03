@@ -2,13 +2,15 @@
 """Batch driver: run pdf_pipeline.py for every PDF in pdf_input/.
 
 Mirrors site_pipeline_batch.py. Walks pdf_input/ for *.pdf files, runs
-pdf_pipeline.py on each, with optional parallelism.
+pdf_pipeline.py on each, with optional parallelism. Already-completed PDFs
+(those with an existing pdf_outputs/<stem>/network.html) are skipped by
+default; pass --force to redo them.
 
 Usage:
-    python3 pdf_pipeline_batch.py                       # all PDFs in pdf_input/, sequential
+    python3 pdf_pipeline_batch.py                       # all not-yet-done PDFs, sequential
     python3 pdf_pipeline_batch.py --workers 4           # 4 in parallel
     python3 pdf_pipeline_batch.py --only china25.pdf japan25.pdf
-    python3 pdf_pipeline_batch.py --resume              # skip PDFs already done
+    python3 pdf_pipeline_batch.py --force               # redo every PDF from scratch
 """
 import argparse
 import subprocess
