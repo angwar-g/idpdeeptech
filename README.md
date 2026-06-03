@@ -13,11 +13,11 @@ Errors out cleanly if `network.html` already exists — pass a flag to override.
 
 | Flag | What |
 |---|---|
-| `-s`, `--skip-actors` | Keep `1_actor_results.json`. Re-run interactions onwards. |
+| `-s`, `--skip-actors` | Keep `1_actor_results.json`. Re-run interactions onwards (if missing). |
 | `-i`, `--skip-interactions` | Keep both LLM outputs. Re-run only cleaning + helix + viz. |
-| `--skip-crawl` *(site only)* | Keep `crawl_output/`. Re-run LLM steps + downstream. |
+| `--skip-crawl` *(site only)* | Keep `crawl_output/`. Re-run LLM steps (if missing) + downstream. |
 | `-f`, `--force` | Wipe outputs of the steps that will run, then run them. |
-| `-p N`, `--start-page N` | LLM step starts at page N. Ignores sidecar. Routes to actor LLM, or to interactions when `-s` is also set. |
+| `-p N`, `--start-page N` | LLM step starts at page N (ignores sidecar). Routes to actor LLM, or to interactions when `-s` is also set. |
 
 ### `--force` × skip combinations
 
@@ -37,12 +37,12 @@ python3 pdf_pipeline_batch.py --workers 4
 python3 site_pipeline_batch.py --workers 4
 ```
 
-Skips docs with existing `network.html` by default. Walks `pdf_input/` or reads `site_input/companies.json`.
+Skips docs with existing `network.html` by default. Walks `pdf_input/X.pdf` or reads `site_input/companies.json`.
 
 | Flag | What |
 |---|---|
 | `-w N`, `--workers N` | Process N docs in parallel. Use `1` for local Ollama (single GPU). |
-| `--only NAMES ...` | Restrict to specific PDFs (filename) or companies (JSON key). |
+| `--only NAMES ...` | Restrict to specific PDFs (filename) or companies (JSON's key). |
 | `-f`, `--force` | Queue and redo every doc, including completed ones. Forwards `--force` to each. |
 | `-c N`, `--crawl N` *(site)* | Crawl depth per company (default 2). |
 | `--max-pages N` *(site)* | Max pages crawled per company (default 10). |
@@ -55,7 +55,7 @@ Three levels, all automatic — no flag needed:
 
 1. Batch skips docs with `network.html`.
 2. Single pipeline errors out if `network.html` exists (unless `--force` or skip flag).
-3. LLM scripts read `*.progress.json` sidecars and skip pages already done.
+3. LLM scripts read `*.progress.json` sidecars and skip pages already done, unless when --force.
 
 So a crash + bare re-run picks up cleanly. The only time you need flags is when you want to *redo* something (force) or *avoid redoing* something (skip).
 
