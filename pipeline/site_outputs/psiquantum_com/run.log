@@ -1,18 +1,3 @@
-
-========================================================================
-RUN STARTED  2026-05-29 00:18:23
-site_pipeline.py https://www.psiquantum.com --skip-crawl
-========================================================================
-
-=== 0 crawl site (skipped via --skip-crawl, reusing /home/lv/IDP/idpdeeptech/pipeline/site_outputs/psiquantum_com/crawl_output) ===
-
-=== 1 actor extraction ===
-
-========================================================================
-RUN FINISHED 2026-05-29 00:24:22  (INTERRUPTED)
-Elapsed:     5m 30s
-========================================================================
-
 ========================================================================
 RUN STARTED  2026-05-29 00:25:08
 site_pipeline.py https://www.psiquantum.com --skip-crawl
@@ -38,18 +23,17 @@ Extracting: https://www.psiquantum.com/about (1/23), chunk 13/20
 Extracting: https://www.psiquantum.com/about (1/23), chunk 14/20
 Extracting: https://www.psiquantum.com/about (1/23), chunk 15/20
 Extracting: https://www.psiquantum.com/about (1/23), chunk 16/20
+
 Extracting: https://www.psiquantum.com/about (1/23), chunk 17/20
-
 [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
 LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
-
 Model call failed for https://www.psiquantum.com/about chunk 17: litellm.APIConnectionError: OllamaException - litellm.Timeout: Connection timed out. Timeout passed=600.0, time taken=652.762 seconds
-Extracting: https://www.psiquantum.com/about (1/23), chunk 18/20
 
+Extracting: https://www.psiquantum.com/about (1/23), chunk 18/20
 [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
 LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
-
 Model call failed for https://www.psiquantum.com/about chunk 18: litellm.APIConnectionError: OllamaException - litellm.Timeout: Connection timed out. Timeout passed=600.0, time taken=654.647 seconds
+
 Extracting: https://www.psiquantum.com/about (1/23), chunk 19/20
 Extracting: https://www.psiquantum.com/about (1/23), chunk 20/20
 Reading page (2/23): https://www.psiquantum.com/news-import/ncc-japan-partnership-announcement

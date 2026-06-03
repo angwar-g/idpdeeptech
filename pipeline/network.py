@@ -82,7 +82,16 @@ def main():
             ),
         )
 
-    net = Network(height="850px", width="100%", directed=True, notebook=False)
+    # cdn_resources='remote' makes the HTML load vis-network.js from a CDN
+    # rather than expecting a local lib/ folder next to the HTML. This keeps
+    # outputs small (one HTML file per run, no JS bundle alongside) and means
+    # the HTML works from anywhere on disk -- but it does require an internet
+    # connection to view the rendered graph. Switch to 'local' if you need
+    # offline-viewable outputs.
+    net = Network(
+        height="850px", width="100%", directed=True, notebook=False,
+        cdn_resources="remote",
+    )
     net.from_nx(G)
 
     for node in net.nodes:

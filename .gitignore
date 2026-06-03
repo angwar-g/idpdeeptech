@@ -6,6 +6,12 @@
 *.pem
 *.key
 
+# --- Pipeline outputs ------------------------------------------------------
+# pyvis 'local' mode dumps a vis-network bundle into lib/ next to every
+# network.html. With cdn_resources='remote' in network.py this shouldn't be
+# generated, but ignore defensively in case pyvis behaviour changes.
+lib/
+
 # --- Python ----------------------------------------------------------------
 __pycache__/
 *.py[cod]
