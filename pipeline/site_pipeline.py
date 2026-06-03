@@ -35,9 +35,33 @@ from pipeline_logging import open_run_log, close_run_log, log_print, run_subproc
 
 
 def site_stem(url: str) -> str:
-    """Derive an output folder name from a URL (e.g. https://www.psiquantum.com -> psiquantum_com)."""
+    """Derive an output folder name from a URL.
+
+    Strips www. and a trailing TLD segment when present so the result is a
+    short brand-ish slug. Both site_pipeline.py (single) and
+    site_pipeline_batch.py (batch) use this function, so the same URL always
+    maps to the same site_outputs/<slug>/ folder regardless of entry point.
+
+      https://ionq.com/              -> 'ionq'
+      https://www.psiquantum.com/    -> 'psiquantum'
+      https://q-ctrl.com/            -> 'q_ctrl'
+      https://aws.amazon.com/        -> 'aws_amazon'
+      https://global.fujitsu/...     -> 'global_fujitsu'   (no known TLD,
+                                                            keep both parts)
+    """
+    # Common TLDs we recognise. If the URL ends with one of these, strip it;
+    # otherwise leave the host intact (e.g. 'global.fujitsu' keeps both parts).
+    KNOWN_TLDS = {
+        "com", "org", "net", "io", "ai", "co", "tech", "us", "uk", "eu",
+        "de", "fr", "ca", "ch", "swiss", "es", "it", "nl", "se", "au", "jp",
+        "cn", "in", "br", "mx", "ru", "kr", "sg", "tw",
+    }
     host = urlparse(url).netloc or url
     host = host.replace("www.", "")
+    parts = host.split(".")
+    if len(parts) >= 2 and parts[-1].lower() in KNOWN_TLDS:
+        parts = parts[:-1]
+    host = "_".join(parts)
     host = re.sub(r"[^a-z0-9]+", "_", host.lower()).strip("_")
     return host or "site"
 
@@ -80,8 +104,8 @@ def main():
     parser.add_argument(
         "--out-dir", default=None,
         help="Explicit output directory (relative to script root, or absolute). "
-             "When set, overrides the auto-derived site_outputs/<domain>/ path. "
-             "Used by site_pipeline_batch.py to nest outputs under company/source folders.",
+             "When set, overrides the auto-derived site_outputs/<slug>/ path. "
+             "Used by site_pipeline_batch.py to nest outputs under per-company folders.",
     )
     parser.add_argument(
         "--start-page", "-p", type=int, default=None,
@@ -121,8 +145,7 @@ def main():
         if not out_dir.is_absolute():
             out_dir = root / args.out_dir
     else:
-        stem = site_stem(args.url)
-        out_dir = root / "site_outputs" / stem
+        out_dir = root / "site_outputs" / site_stem(args.url)
 
     out_dir.mkdir(parents=True, exist_ok=True)
 

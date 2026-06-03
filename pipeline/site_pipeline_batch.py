@@ -30,19 +30,9 @@ import sys
 import time
 from pathlib import Path
 
-
-def company_slug(name: str) -> str:
-    """Turn a company display name into a folder-safe slug.
-
-    'Amazon Braket (Amazon)'      -> 'amazon_braket'
-    'D-Wave Quantum'              -> 'd_wave_quantum'
-    'Quantum Computing Inc.'      -> 'quantum_computing_inc'
-    'Q-Ctrl'                      -> 'q_ctrl'
-    '1Qbit'                       -> '1qbit'
-    """
-    name = re.sub(r"\([^)]*\)", "", name)               # strip parentheticals
-    name = re.sub(r"[^a-zA-Z0-9]+", "_", name.lower())  # non-alnum -> underscore
-    return name.strip("_") or "unnamed"
+# Reuse the URL-based slug helper from the single pipeline. Both entry points
+# (single and batch) now produce the same folder for the same URL.
+from site_pipeline import site_stem
 
 
 def is_linkedin_url(url: str) -> bool:
@@ -157,9 +147,7 @@ def main():
     # Build the plan first (cheap dict/path operations), then run.
     plan: list[dict] = []
     for idx, (name, links) in enumerate(companies.items(), start=1):
-        slug = company_slug(name)
         website_url = (links or {}).get("website_link", "").strip()
-        out_dir = root / "site_outputs" / slug / "website"
 
         if not website_url:
             print(f"[{idx}/{total}] {name}: skipping (no website_link)")
@@ -170,6 +158,9 @@ def main():
             print(f"[{idx}/{total}] {name}: skipping (website_link is a LinkedIn URL)")
             skipped_linkedin_in_website.append(name)
             continue
+
+        slug = site_stem(website_url)
+        out_dir = root / "site_outputs" / slug
 
         if (out_dir / "network.html").exists() and not args.force:
             print(f"[{idx}/{total}] {name}: skipping (already done; pass --force to redo)")
