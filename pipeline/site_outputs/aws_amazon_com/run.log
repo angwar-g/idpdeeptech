@@ -1,0 +1,229 @@
+
+========================================================================
+RUN STARTED  2026-06-03 10:48:56
+site_pipeline.py https://aws.amazon.com/braket/
+========================================================================
+
+[10:48:56 +0s] === 0 crawl site ===
+[10:49:01 +5s] [INIT].... → Crawl4AI 0.8.6 
+[10:49:04 +8s] [FETCH]... ↓ https://aws.amazon.com/braket/                                                                       | ✓ | ⏱: 2.50s
+[10:49:04 +8s] [SCRAPE].. ◆ https://aws.amazon.com/braket/                                                                       | ✓ | ⏱: 0.11s
+[10:49:04 +8s] [COMPLETE] ● https://aws.amazon.com/braket/                                                                       | ✓ | ⏱: 2.65s
+[10:49:06 +11s] [FETCH]... ↓ https://aws.amazon.com/?nc2=h_home                                                                   | ✓ | ⏱: 2.50s
+[10:49:07 +11s] [SCRAPE].. ◆ https://aws.amazon.com/?nc2=h_home                                                                   | ✓ | ⏱: 0.31s
+[10:49:07 +11s] [COMPLETE] ● https://aws.amazon.com/?nc2=h_home                                                                   | ✓ | ⏱: 2.92s
+[10:49:07 +12s] [FETCH]... ↓ https://aws.amazon.com/legal/cookies/                                                                | ✓ | ⏱: 3.51s
+[10:49:08 +12s] [SCRAPE].. ◆ https://aws.amazon.com/legal/cookies/                                                                | ✓ | ⏱: 0.24s
+[10:49:08 +12s] [COMPLETE] ● https://aws.amazon.com/legal/cookies/                                                                | ✓ | ⏱: 3.90s
+[10:49:08 +12s] [FETCH]... ↓ https://aws.amazon.com/braket/                                                                       | ✓ | ⏱: 3.90s
+[10:49:08 +12s] [SCRAPE].. ◆ https://aws.amazon.com/braket/                                                                       | ✓ | ⏱: 0.21s
+[10:49:08 +13s] [COMPLETE] ● https://aws.amazon.com/braket/                                                                       | ✓ | ⏱: 4.17s
+[10:49:09 +13s] [FETCH]... ↓ https://aws.amazon.com/contact-us/?nc2=h_ut_cu                                                       | ✓ | ⏱: 4.80s
+[10:49:09 +13s] [SCRAPE].. ◆ https://aws.amazon.com/contact-us/?nc2=h_ut_cu                                                       | ✓ | ⏱: 0.19s
+[10:49:09 +13s] [COMPLETE] ● https://aws.amazon.com/contact-us/?nc2=h_ut_cu                                                       | ✓ | ⏱: 5.05s
+[10:49:09 +13s] [FETCH]... ↓ https://aws.amazon.com/braket/customers/                                                             | ✓ | ⏱: 5.06s
+[10:49:09 +14s] [SCRAPE].. ◆ https://aws.amazon.com/braket/customers/                                                             | ✓ | ⏱: 0.22s
+[10:49:09 +14s] [COMPLETE] ● https://aws.amazon.com/braket/customers/                                                             | ✓ | ⏱: 5.35s
+[10:49:10 +14s] [FETCH]... ↓ https://signin.aws.amazon.com/signup?request_type=register                                           | ✓ | ⏱: 5.84s
+[10:49:10 +14s] [SCRAPE].. ◆ https://signin.aws.amazon.com/signup?request_type=register                                           | ✓ | ⏱: 0.02s
+[10:49:10 +14s] [COMPLETE] ● https://signin.aws.amazon.com/signup?request_type=register                                           | ✓ | ⏱: 5.90s
+[10:49:10 +14s] [FETCH]... ↓ https://console.aws.amazon.com/console/home/?nc2=h_si&src=header-signin                              | ✓ | ⏱: 6.37s
+[10:49:10 +15s] [SCRAPE].. ◆ https://console.aws.amazon.com/console/home/?nc2=h_si&src=header-signin                              | ✓ | ⏱: 0.03s
+[10:49:10 +15s] [COMPLETE] ● https://console.aws.amazon.com/console/home/?nc2=h_si&src=header-signin                              | ✓ | ⏱: 6.43s
+[10:49:10 +15s] [FETCH]... ↓ https://aws.amazon.com/marketplace?nc2=h_utmp                                                        | ✓ | ⏱: 6.39s
+[10:49:11 +15s] [SCRAPE].. ◆ https://aws.amazon.com/marketplace?nc2=h_utmp                                                        | ✓ | ⏱: 0.24s
+[10:49:11 +15s] [COMPLETE] ● https://aws.amazon.com/marketplace?nc2=h_utmp                                                        | ✓ | ⏱: 6.67s
+[10:49:11 +15s] [FETCH]... ↓ https://aws.amazon.com/privacy/                                                                      | ✓ | ⏱: 7.07s
+[10:49:11 +16s] [SCRAPE].. ◆ https://aws.amazon.com/privacy/                                                                      | ✓ | ⏱: 0.16s
+[10:49:11 +16s] [COMPLETE] ● https://aws.amazon.com/privacy/                                                                      | ✓ | ⏱: 7.29s
+[10:49:11 +16s] Saved: crawl_output/4067e4944d_aws.amazon.com_braket.json
+[10:49:11 +16s] Saved: crawl_output/a1f4f0bae0_aws.amazon.com.json
+[10:49:11 +16s] Saved: crawl_output/fc5a6e2719_aws.amazon.com_legal_cookies.json
+[10:49:11 +16s] Duplicate skipped: https://aws.amazon.com/braket
+[10:49:11 +16s] Saved: crawl_output/c97452335c_aws.amazon.com_contact-us.json
+[10:49:11 +16s] Saved: crawl_output/5378d749d3_aws.amazon.com_braket_customers.json
+[10:49:11 +16s] Saved: crawl_output/b8416adab4_signin.aws.amazon.com_signup.json
+[10:49:11 +16s] Saved: crawl_output/1e91f64d41_console.aws.amazon.com_console_home.json
+[10:49:11 +16s] Saved: crawl_output/bcc0ca5f5d_aws.amazon.com_marketplace.json
+[10:49:11 +16s] Skipped: https://aws.amazon.com/privacy
+
+[10:49:13 +17s] === 1 actor extraction ===
+[10:49:19 +23s] Reading page (1/8): https://console.aws.amazon.com/console/home
+[10:49:19 +23s] Extracting: https://console.aws.amazon.com/console/home (1/8), chunk 1/2
+
+========================================================================
+RUN FINISHED 2026-06-03 10:49:20  (INTERRUPTED)
+Elapsed:     23s
+========================================================================
+
+========================================================================
+RUN STARTED  2026-06-03 10:54:47
+site_pipeline.py https://aws.amazon.com/braket/quantum-computers
+========================================================================
+
+[10:54:47 +0s] === 0 crawl site ===
+[10:54:48 +1s] Cleared existing crawl_output/
+[10:54:50 +3s] [INIT].... → Crawl4AI 0.8.6 
+[10:54:52 +5s] [FETCH]... ↓ https://aws.amazon.com/braket/quantum-computers                             
+[10:54:52 +5s] | ✓ | ⏱: 1.97s 
+[10:54:52 +5s] [SCRAPE].. ◆ https://aws.amazon.com/braket/quantum-computers                             
+[10:54:52 +5s] | ✓ | ⏱: 0.07s 
+[10:54:52 +5s] [COMPLETE] ● https://aws.amazon.com/braket/quantum-computers                             
+[10:54:52 +5s] | ✓ | ⏱: 2.09s 
+[10:54:54 +7s] [FETCH]... ↓ https://aws.amazon.com/?nc2=h_home                                          
+[10:54:54 +7s] | ✓ | ⏱: 1.49s 
+[10:54:54 +7s] [SCRAPE].. ◆ https://aws.amazon.com/?nc2=h_home                                          
+[10:54:54 +7s] | ✓ | ⏱: 0.18s 
+[10:54:54 +7s] [COMPLETE] ● https://aws.amazon.com/?nc2=h_home                                          
+[10:54:54 +7s] | ✓ | ⏱: 1.72s 
+[10:54:54 +7s] [FETCH]... ↓ https://aws.amazon.com/braket/quantum-computers/                            
+[10:54:54 +7s] | ✓ | ⏱: 1.54s 
+[10:54:54 +7s] [SCRAPE].. ◆ https://aws.amazon.com/braket/quantum-computers/                            
+[10:54:54 +7s] | ✓ | ⏱: 0.12s 
+[10:54:54 +7s] [COMPLETE] ● https://aws.amazon.com/braket/quantum-computers/                            
+[10:54:54 +7s] | ✓ | ⏱: 1.70s 
+[10:54:55 +8s] [FETCH]... ↓ https://aws.amazon.com/braket/                                              
+[10:54:55 +8s] | ✓ | ⏱: 2.26s 
+[10:54:55 +8s] [SCRAPE].. ◆ https://aws.amazon.com/braket/                                              
+[10:54:55 +8s] | ✓ | ⏱: 0.14s 
+[10:54:55 +8s] [COMPLETE] ● https://aws.amazon.com/braket/                                              
+[10:54:55 +8s] | ✓ | ⏱: 2.44s 
+[10:54:56 +9s] [FETCH]... ↓ https://aws.amazon.com/legal/cookies/                                       
+[10:54:56 +9s] | ✓ | ⏱: 2.90s 
+[10:54:56 +9s] [SCRAPE].. ◆ https://aws.amazon.com/legal/cookies/                                       
+[10:54:56 +9s] | ✓ | ⏱: 0.13s 
+[10:54:56 +9s] [COMPLETE] ● https://aws.amazon.com/legal/cookies/                                       
+[10:54:56 +9s] | ✓ | ⏱: 3.08s 
+[10:54:56 +9s] [FETCH]... ↓ https://aws.amazon.com/contact-us/?nc2=h_ut_cu                              
+[10:54:56 +9s] | ✓ | ⏱: 3.15s 
+[10:54:56 +9s] [SCRAPE].. ◆ https://aws.amazon.com/contact-us/?nc2=h_ut_cu                              
+[10:54:56 +9s] | ✓ | ⏱: 0.11s 
+[10:54:56 +9s] [COMPLETE] ● https://aws.amazon.com/contact-us/?nc2=h_ut_cu                              
+[10:54:56 +9s] | ✓ | ⏱: 3.31s 
+[10:54:56 +9s] [FETCH]... ↓ https://signin.aws.amazon.com/signup?request_type=register                  
+[10:54:56 +9s] | ✓ | ⏱: 3.68s 
+[10:54:56 +9s] [SCRAPE].. ◆ https://signin.aws.amazon.com/signup?request_type=register                  
+[10:54:56 +9s] | ✓ | ⏱: 0.03s 
+[10:54:56 +9s] [COMPLETE] ● https://signin.aws.amazon.com/signup?request_type=register                  
+[10:54:56 +9s] | ✓ | ⏱: 3.76s 
+[10:54:56 +9s] [FETCH]... ↓ https://aws.amazon.com/marketplace?nc2=h_utmp                               
+[10:54:56 +9s] | ✓ | ⏱: 3.45s 
+[10:54:56 +9s] [SCRAPE].. ◆ https://aws.amazon.com/marketplace?nc2=h_utmp                               
+[10:54:56 +9s] | ✓ | ⏱: 0.27s 
+[10:54:56 +9s] [COMPLETE] ● https://aws.amazon.com/marketplace?nc2=h_utmp                               
+[10:54:56 +9s] | ✓ | ⏱: 3.75s 
+[10:54:56 +10s] [FETCH]... ↓ https://console.aws.amazon.com/console/home/?nc2=h_si&src=header-signin     
+[10:54:56 +10s] | ✓ | ⏱: 4.22s 
+[10:54:57 +10s] [SCRAPE].. ◆ https://console.aws.amazon.com/console/home/?nc2=h_si&src=header-signin     
+[10:54:57 +10s] | ✓ | ⏱: 0.02s 
+[10:54:57 +10s] [COMPLETE] ● https://console.aws.amazon.com/console/home/?nc2=h_si&src=header-signin     
+[10:54:57 +10s] | ✓ | ⏱: 4.26s 
+[10:54:57 +10s] [FETCH]... ↓ https://aws.amazon.com/privacy/                                             
+[10:54:57 +10s] | ✓ | ⏱: 4.54s 
+[10:54:57 +10s] [SCRAPE].. ◆ https://aws.amazon.com/privacy/                                             
+[10:54:57 +10s] | ✓ | ⏱: 0.14s 
+[10:54:57 +10s] [COMPLETE] ● https://aws.amazon.com/privacy/                                             
+[10:54:57 +10s] | ✓ | ⏱: 4.72s 
+[10:54:57 +10s] Saved: crawl_output/89c04c01df_aws.amazon.com_braket_quantum-computers.json
+[10:54:57 +10s] Saved: crawl_output/a1f4f0bae0_aws.amazon.com.json
+[10:54:57 +10s] Duplicate skipped: https://aws.amazon.com/braket/quantum-computers
+[10:54:57 +10s] Saved: crawl_output/4067e4944d_aws.amazon.com_braket.json
+[10:54:57 +10s] Saved: crawl_output/fc5a6e2719_aws.amazon.com_legal_cookies.json
+[10:54:57 +10s] Saved: crawl_output/c97452335c_aws.amazon.com_contact-us.json
+[10:54:57 +10s] Saved: crawl_output/b8416adab4_signin.aws.amazon.com_signup.json
+[10:54:57 +10s] Saved: crawl_output/bcc0ca5f5d_aws.amazon.com_marketplace.json
+[10:54:57 +10s] Saved: crawl_output/1e91f64d41_console.aws.amazon.com_console_home.json
+[10:54:57 +10s] Skipped: https://aws.amazon.com/privacy
+
+[10:54:58 +11s] === 1 actor extraction ===
+
+========================================================================
+RUN FINISHED 2026-06-03 10:54:58  (INTERRUPTED)
+Elapsed:     12s
+========================================================================
+
+========================================================================
+RUN STARTED  2026-06-03 10:59:56
+site_pipeline.py https://aws.amazon.com/braket
+========================================================================
+
+[10:59:56 +0s] === 0 crawl site ===
+[10:59:58 +1s] Cleared existing crawl_output/
+[10:59:59 +3s] [INIT].... → Crawl4AI 0.8.6 
+[11:00:01 +5s] [FETCH]... ↓ https://aws.amazon.com/braket                                               
+[11:00:01 +5s] | ✓ | ⏱: 1.95s 
+[11:00:01 +5s] [SCRAPE].. ◆ https://aws.amazon.com/braket                                               
+[11:00:01 +5s] | ✓ | ⏱: 0.10s 
+[11:00:01 +5s] [COMPLETE] ● https://aws.amazon.com/braket                                               
+[11:00:01 +5s] | ✓ | ⏱: 2.09s 
+[11:00:03 +6s] [FETCH]... ↓ https://aws.amazon.com/?nc2=h_home                                          
+[11:00:03 +6s] | ✓ | ⏱: 1.52s 
+[11:00:03 +7s] [SCRAPE].. ◆ https://aws.amazon.com/?nc2=h_home                                          
+[11:00:03 +7s] | ✓ | ⏱: 0.17s 
+[11:00:03 +7s] [COMPLETE] ● https://aws.amazon.com/?nc2=h_home                                          
+[11:00:03 +7s] | ✓ | ⏱: 1.74s 
+[11:00:03 +7s] [FETCH]... ↓ https://aws.amazon.com/braket/                                              
+[11:00:03 +7s] | ✓ | ⏱: 1.62s 
+[11:00:03 +7s] [SCRAPE].. ◆ https://aws.amazon.com/braket/                                              
+[11:00:03 +7s] | ✓ | ⏱: 0.12s 
+[11:00:03 +7s] [COMPLETE] ● https://aws.amazon.com/braket/                                              
+[11:00:03 +7s] | ✓ | ⏱: 1.79s 
+[11:00:04 +8s] [FETCH]... ↓ https://aws.amazon.com/contact-us/?nc2=h_ut_cu                              
+[11:00:04 +8s] | ✓ | ⏱: 2.40s 
+[11:00:04 +8s] [SCRAPE].. ◆ https://aws.amazon.com/contact-us/?nc2=h_ut_cu                              
+[11:00:04 +8s] | ✓ | ⏱: 0.14s 
+[11:00:04 +8s] [COMPLETE] ● https://aws.amazon.com/contact-us/?nc2=h_ut_cu                              
+[11:00:04 +8s] | ✓ | ⏱: 2.57s 
+[11:00:04 +8s] [FETCH]... ↓ https://aws.amazon.com/legal/cookies/                                       
+[11:00:04 +8s] | ✓ | ⏱: 2.68s 
+[11:00:04 +8s] [SCRAPE].. ◆ https://aws.amazon.com/legal/cookies/                                       
+[11:00:04 +8s] | ✓ | ⏱: 0.10s 
+[11:00:04 +8s] [COMPLETE] ● https://aws.amazon.com/legal/cookies/                                       
+[11:00:04 +8s] | ✓ | ⏱: 2.84s 
+[11:00:04 +8s] [FETCH]... ↓ https://aws.amazon.com/marketplace?nc2=h_utmp                               
+[11:00:04 +8s] | ✓ | ⏱: 3.03s 
+[11:00:05 +9s] [SCRAPE].. ◆ https://aws.amazon.com/marketplace?nc2=h_utmp                               
+[11:00:05 +9s] | ✓ | ⏱: 0.29s 
+[11:00:05 +9s] [COMPLETE] ● https://aws.amazon.com/marketplace?nc2=h_utmp                               
+[11:00:05 +9s] | ✓ | ⏱: 3.36s 
+[11:00:05 +9s] [FETCH]... ↓ https://signin.aws.amazon.com/signup?request_type=register                  
+[11:00:05 +9s] | ✓ | ⏱: 3.67s 
+[11:00:05 +9s] [SCRAPE].. ◆ https://signin.aws.amazon.com/signup?request_type=register                  
+[11:00:05 +9s] | ✓ | ⏱: 0.02s 
+[11:00:05 +9s] [COMPLETE] ● https://signin.aws.amazon.com/signup?request_type=register                  
+[11:00:05 +9s] | ✓ | ⏱: 3.72s 
+[11:00:05 +9s] [FETCH]... ↓ https://console.aws.amazon.com/console/home/?nc2=h_si&src=header-signin     
+[11:00:05 +9s] | ✓ | ⏱: 3.80s 
+[11:00:05 +9s] [SCRAPE].. ◆ https://console.aws.amazon.com/console/home/?nc2=h_si&src=header-signin     
+[11:00:05 +9s] | ✓ | ⏱: 0.02s 
+[11:00:05 +9s] [COMPLETE] ● https://console.aws.amazon.com/console/home/?nc2=h_si&src=header-signin     
+[11:00:05 +9s] | ✓ | ⏱: 3.85s 
+[11:00:06 +9s] [FETCH]... ↓ https://aws.amazon.com/braket/customers/                                    
+[11:00:06 +9s] | ✓ | ⏱: 4.06s 
+[11:00:06 +9s] [SCRAPE].. ◆ https://aws.amazon.com/braket/customers/                                    
+[11:00:06 +9s] | ✓ | ⏱: 0.08s 
+[11:00:06 +9s] [COMPLETE] ● https://aws.amazon.com/braket/customers/                                    
+[11:00:06 +9s] | ✓ | ⏱: 4.17s 
+[11:00:06 +10s] [FETCH]... ↓ https://aws.amazon.com/privacy/                                             
+[11:00:06 +10s] | ✓ | ⏱: 4.50s 
+[11:00:06 +10s] [SCRAPE].. ◆ https://aws.amazon.com/privacy/                                             
+[11:00:06 +10s] | ✓ | ⏱: 0.14s 
+[11:00:06 +10s] [COMPLETE] ● https://aws.amazon.com/privacy/                                             
+[11:00:06 +10s] | ✓ | ⏱: 4.67s 
+[11:00:06 +10s] Saved: crawl_output/4067e4944d_aws.amazon.com_braket.json
+[11:00:06 +10s] Saved: crawl_output/a1f4f0bae0_aws.amazon.com.json
+[11:00:06 +10s] Duplicate skipped: https://aws.amazon.com/braket
+[11:00:06 +10s] Saved: crawl_output/c97452335c_aws.amazon.com_contact-us.json
+[11:00:06 +10s] Saved: crawl_output/fc5a6e2719_aws.amazon.com_legal_cookies.json
+[11:00:06 +10s] Saved: crawl_output/bcc0ca5f5d_aws.amazon.com_marketplace.json
+[11:00:06 +10s] Saved: crawl_output/b8416adab4_signin.aws.amazon.com_signup.json
+[11:00:06 +10s] Saved: crawl_output/1e91f64d41_console.aws.amazon.com_console_home.json
+[11:00:06 +10s] Saved: crawl_output/5378d749d3_aws.amazon.com_braket_customers.json
+[11:00:06 +10s] Skipped: https://aws.amazon.com/privacy
+
+[11:00:07 +10s] === 1 actor extraction ===
+
+========================================================================
+RUN FINISHED 2026-06-03 11:00:08  (INTERRUPTED)
+Elapsed:     12s
+========================================================================
