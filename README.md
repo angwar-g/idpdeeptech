@@ -9,7 +9,7 @@ python3 pdf_pipeline.py china25.pdf
 python3 site_pipeline.py https://www.psiquantum.com/
 ```
 
-Errors out cleanly if `network.html` already exists — pass a flag to override.
+Errors out cleanly if `network.html` already exists - pass a flag to override.
 
 | Flag | What |
 |---|---|
@@ -47,15 +47,16 @@ Skips docs with existing `network.html` by default. Walks `pdf_input/X.pdf` or r
 | `-c N`, `--crawl N` *(site)* | Crawl depth per company (default 2). |
 | `--max-pages N` *(site)* | Max pages crawled per company (default 10). |
 
-Skip flags (`-s`, `-i`, `--skip-crawl`) are **single-pipeline only** — not on the batch.
+Skip flags (`-s`, `-i`, `--skip-crawl`) are **single-pipeline only** - not on the batch.
 
 ## Auto-resume
 
-Three levels, all automatic — no flag needed:
+Three levels, all automatic - no flag needed:
 
 1. Batch skips docs with `network.html`.
 2. Single pipeline errors out if `network.html` exists (unless `--force` or skip flag).
 3. LLM scripts read `*.progress.json` sidecars and skip pages already done, unless when --force.
+4. *(Sites)* Crawl is skipped automatically if actor data (`1_actor_results.json` or its sidecar) exists - proof the crawl finished. `--force` overrides this and re-crawls.
 
 So a crash + bare re-run picks up cleanly. The only time you need flags is when you want to *redo* something (force) or *avoid redoing* something (skip).
 

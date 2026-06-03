@@ -126,7 +126,7 @@ def main():
     # Implication chain: -i -> -s -> --skip-crawl.
     skip_interaction_llm = args.skip_interactions
     skip_actor_llm = args.skip_actors or skip_interaction_llm
-    skip_crawl = args.skip_crawl or skip_actor_llm
+    # skip_crawl resolved below, after out_dir is known.
 
     if args.start_page is not None and skip_interaction_llm:
         sys.exit(
@@ -148,6 +148,22 @@ def main():
         out_dir = root / "site_outputs" / site_stem(args.url)
 
     out_dir.mkdir(parents=True, exist_ok=True)
+
+    # If the actor LLM has produced any output, the crawl must have finished
+    # cleanly (feed_site.py reads from crawl_output and would have errored
+    # otherwise). So an existing 1_actor_results.json -- even just a sidecar
+    # without the full data file -- is proof of a completed crawl. Skip the
+    # crawl in that case to avoid wiping a successful crawl on re-run.
+    # --force overrides this: it always re-crawls when the crawl step runs.
+    crawl_already_done = (
+        (out_dir / "1_actor_results.json").exists()
+        or (out_dir / "1_actor_results.progress.json").exists()
+    )
+    skip_crawl = (
+        args.skip_crawl
+        or skip_actor_llm
+        or (crawl_already_done and not args.force)
+    )
 
     # Guard against accidentally redoing a completed run.
     # Skip flags (-s, -i) are explicit re-run intentions, so they bypass this.
@@ -245,8 +261,10 @@ def main():
                 reason = "--skip-interactions"
             elif args.skip_actors:
                 reason = "--skip-actors"
-            else:
+            elif args.skip_crawl:
                 reason = "--skip-crawl"
+            else:
+                reason = "auto (actor data already exists; pass --force to re-crawl)"
             log_print(
                 f"\n=== 0 crawl site (skipped via {reason}, reusing {out_dir / 'crawl_output'}) ===",
                 log,
