@@ -227,3 +227,1364 @@ site_pipeline.py https://aws.amazon.com/braket
 RUN FINISHED 2026-06-03 11:00:08  (INTERRUPTED)
 Elapsed:     12s
 ========================================================================
+
+========================================================================
+RUN STARTED  2026-06-03 21:13:56
+site_pipeline.py https://aws.amazon.com/braket/ --skip-crawl
+========================================================================
+
+[21:13:57 +0s] === 0 crawl site (skipped via --skip-crawl, reusing /content/drive/MyDrive/pipeline/site_outputs/aws_amazon/crawl_output) ===
+
+[21:13:57 +0s] === 1 actor extraction ===
+[21:14:05 +8s] Reading page (1/8): https://console.aws.amazon.com/console/home
+[21:14:05 +8s] Extracting: https://console.aws.amazon.com/console/home (1/8), chunk 1/2
+
+[21:14:05 +9s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[21:14:05 +9s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[21:14:05 +9s] Model call failed for https://console.aws.amazon.com/console/home chunk 1: litellm.APIConnectionError: OllamaException - Cannot connect to host localhost:11434 ssl:<ssl.SSLContext object at 0x7f471335ee50> [Connect call failed ('127.0.0.1', 11434)]
+[21:14:05 +9s] Extracting: https://console.aws.amazon.com/console/home (1/8), chunk 2/2
+
+[21:14:05 +9s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[21:14:05 +9s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[21:14:05 +9s] Model call failed for https://console.aws.amazon.com/console/home chunk 2: litellm.APIConnectionError: OllamaException - Cannot connect to host localhost:11434 ssl:<ssl.SSLContext object at 0x7f471335ee50> [Connect call failed ('127.0.0.1', 11434)]
+[21:14:05 +9s] Reading page (2/8): https://aws.amazon.com/braket
+[21:14:05 +9s] Extracting: https://aws.amazon.com/braket (2/8), chunk 1/16
+
+[21:14:05 +9s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[21:14:05 +9s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[21:14:05 +9s] Model call failed for https://aws.amazon.com/braket chunk 1: litellm.APIConnectionError: OllamaException - Cannot connect to host localhost:11434 ssl:<ssl.SSLContext object at 0x7f471335ee50> [Connect call failed ('127.0.0.1', 11434)]
+[21:14:05 +9s] Extracting: https://aws.amazon.com/braket (2/8), chunk 2/16
+
+[21:14:05 +9s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[21:14:05 +9s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[21:14:05 +9s] Model call failed for https://aws.amazon.com/braket chunk 2: litellm.APIConnectionError: OllamaException - Cannot connect to host localhost:11434 ssl:<ssl.SSLContext object at 0x7f471335ee50> [Connect call failed ('127.0.0.1', 11434)]
+[21:14:05 +9s] Extracting: https://aws.amazon.com/braket (2/8), chunk 3/16
+
+[21:14:05 +9s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[21:14:05 +9s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[21:14:05 +9s] Model call failed for https://aws.amazon.com/braket chunk 3: litellm.APIConnectionError: OllamaException - Cannot connect to host localhost:11434 ssl:<ssl.SSLContext object at 0x7f471335ee50> [Connect call failed ('127.0.0.1', 11434)]
+[21:14:05 +9s] Extracting: https://aws.amazon.com/braket (2/8), chunk 4/16
+
+[21:14:05 +9s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[21:14:05 +9s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[21:14:05 +9s] Model call failed for https://aws.amazon.com/braket chunk 4: litellm.APIConnectionError: OllamaException - Cannot connect to host localhost:11434 ssl:<ssl.SSLContext object at 0x7f471335ee50> [Connect call failed ('127.0.0.1', 11434)]
+[21:14:05 +9s] Extracting: https://aws.amazon.com/braket (2/8), chunk 5/16
+
+[21:14:05 +9s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[21:14:05 +9s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[21:14:05 +9s] Model call failed for https://aws.amazon.com/braket chunk 5: litellm.APIConnectionError: OllamaException - Cannot connect to host localhost:11434 ssl:<ssl.SSLContext object at 0x7f471335ee50> [Connect call failed ('127.0.0.1', 11434)]
+[21:14:05 +9s] Extracting: https://aws.amazon.com/braket (2/8), chunk 6/16
+
+[21:14:05 +9s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[21:14:05 +9s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[21:14:05 +9s] Model call failed for https://aws.amazon.com/braket chunk 6: litellm.APIConnectionError: OllamaException - Cannot connect to host localhost:11434 ssl:<ssl.SSLContext object at 0x7f471335ee50> [Connect call failed ('127.0.0.1', 11434)]
+[21:14:05 +9s] Extracting: https://aws.amazon.com/braket (2/8), chunk 7/16
+
+[21:14:05 +9s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[21:14:05 +9s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[21:14:05 +9s] Model call failed for https://aws.amazon.com/braket chunk 7: litellm.APIConnectionError: OllamaException - Cannot connect to host localhost:11434 ssl:<ssl.SSLContext object at 0x7f471335ee50> [Connect call failed ('127.0.0.1', 11434)]
+[21:14:05 +9s] Extracting: https://aws.amazon.com/braket (2/8), chunk 8/16
+
+[21:14:05 +9s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[21:14:05 +9s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[21:14:05 +9s] Model call failed for https://aws.amazon.com/braket chunk 8: litellm.APIConnectionError: OllamaException - Cannot connect to host localhost:11434 ssl:<ssl.SSLContext object at 0x7f471335ee50> [Connect call failed ('127.0.0.1', 11434)]
+[21:14:05 +9s] Extracting: https://aws.amazon.com/braket (2/8), chunk 9/16
+
+[21:14:05 +9s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[21:14:05 +9s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[21:14:05 +9s] Model call failed for https://aws.amazon.com/braket chunk 9: litellm.APIConnectionError: OllamaException - Cannot connect to host localhost:11434 ssl:<ssl.SSLContext object at 0x7f471335ee50> [Connect call failed ('127.0.0.1', 11434)]
+[21:14:05 +9s] Extracting: https://aws.amazon.com/braket (2/8), chunk 10/16
+
+[21:14:05 +9s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[21:14:05 +9s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[21:14:05 +9s] Model call failed for https://aws.amazon.com/braket chunk 10: litellm.APIConnectionError: OllamaException - Cannot connect to host localhost:11434 ssl:<ssl.SSLContext object at 0x7f471335ee50> [Connect call failed ('127.0.0.1', 11434)]
+[21:14:05 +9s] Extracting: https://aws.amazon.com/braket (2/8), chunk 11/16
+
+[21:14:05 +9s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[21:14:05 +9s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[21:14:05 +9s] Model call failed for https://aws.amazon.com/braket chunk 11: litellm.APIConnectionError: OllamaException - Cannot connect to host localhost:11434 ssl:<ssl.SSLContext object at 0x7f471335ee50> [Connect call failed ('127.0.0.1', 11434)]
+[21:14:05 +9s] Extracting: https://aws.amazon.com/braket (2/8), chunk 12/16
+
+[21:14:05 +9s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[21:14:05 +9s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[21:14:05 +9s] Model call failed for https://aws.amazon.com/braket chunk 12: litellm.APIConnectionError: OllamaException - Cannot connect to host localhost:11434 ssl:<ssl.SSLContext object at 0x7f471335ee50> [Connect call failed ('127.0.0.1', 11434)]
+[21:14:05 +9s] Extracting: https://aws.amazon.com/braket (2/8), chunk 13/16
+
+[21:14:05 +9s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[21:14:05 +9s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[21:14:05 +9s] Model call failed for https://aws.amazon.com/braket chunk 13: litellm.APIConnectionError: OllamaException - Cannot connect to host localhost:11434 ssl:<ssl.SSLContext object at 0x7f471335ee50> [Connect call failed ('127.0.0.1', 11434)]
+[21:14:05 +9s] Extracting: https://aws.amazon.com/braket (2/8), chunk 14/16
+
+[21:14:05 +9s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[21:14:05 +9s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[21:14:05 +9s] Model call failed for https://aws.amazon.com/braket chunk 14: litellm.APIConnectionError: OllamaException - Cannot connect to host localhost:11434 ssl:<ssl.SSLContext object at 0x7f471335ee50> [Connect call failed ('127.0.0.1', 11434)]
+[21:14:05 +9s] Extracting: https://aws.amazon.com/braket (2/8), chunk 15/16
+
+[21:14:05 +9s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[21:14:05 +9s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[21:14:05 +9s] Model call failed for https://aws.amazon.com/braket chunk 15: litellm.APIConnectionError: OllamaException - Cannot connect to host localhost:11434 ssl:<ssl.SSLContext object at 0x7f471335ee50> [Connect call failed ('127.0.0.1', 11434)]
+[21:14:05 +9s] Extracting: https://aws.amazon.com/braket (2/8), chunk 16/16
+
+[21:14:05 +9s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[21:14:05 +9s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[21:14:05 +9s] Model call failed for https://aws.amazon.com/braket chunk 16: litellm.APIConnectionError: OllamaException - Cannot connect to host localhost:11434 ssl:<ssl.SSLContext object at 0x7f471335ee50> [Connect call failed ('127.0.0.1', 11434)]
+[21:14:05 +9s] Reading page (3/8): https://aws.amazon.com/braket/customers
+[21:14:05 +9s] Extracting: https://aws.amazon.com/braket/customers (3/8), chunk 1/33
+
+[21:14:05 +9s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[21:14:05 +9s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[21:14:05 +9s] Model call failed for https://aws.amazon.com/braket/customers chunk 1: litellm.APIConnectionError: OllamaException - Cannot connect to host localhost:11434 ssl:<ssl.SSLContext object at 0x7f471335ee50> [Connect call failed ('127.0.0.1', 11434)]
+[21:14:05 +9s] Extracting: https://aws.amazon.com/braket/customers (3/8), chunk 2/33
+
+[21:14:05 +9s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[21:14:05 +9s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[21:14:05 +9s] Model call failed for https://aws.amazon.com/braket/customers chunk 2: litellm.APIConnectionError: OllamaException - Cannot connect to host localhost:11434 ssl:<ssl.SSLContext object at 0x7f471335ee50> [Connect call failed ('127.0.0.1', 11434)]
+[21:14:05 +9s] Extracting: https://aws.amazon.com/braket/customers (3/8), chunk 3/33
+
+[21:14:05 +9s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[21:14:05 +9s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[21:14:05 +9s] Model call failed for https://aws.amazon.com/braket/customers chunk 3: litellm.APIConnectionError: OllamaException - Cannot connect to host localhost:11434 ssl:<ssl.SSLContext object at 0x7f471335ee50> [Connect call failed ('127.0.0.1', 11434)]
+[21:14:05 +9s] Extracting: https://aws.amazon.com/braket/customers (3/8), chunk 4/33
+
+[21:14:05 +9s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[21:14:05 +9s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[21:14:05 +9s] Model call failed for https://aws.amazon.com/braket/customers chunk 4: litellm.APIConnectionError: OllamaException - Cannot connect to host localhost:11434 ssl:<ssl.SSLContext object at 0x7f471335ee50> [Connect call failed ('127.0.0.1', 11434)]
+[21:14:05 +9s] Extracting: https://aws.amazon.com/braket/customers (3/8), chunk 5/33
+
+[21:14:05 +9s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[21:14:05 +9s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[21:14:05 +9s] Model call failed for https://aws.amazon.com/braket/customers chunk 5: litellm.APIConnectionError: OllamaException - Cannot connect to host localhost:11434 ssl:<ssl.SSLContext object at 0x7f471335ee50> [Connect call failed ('127.0.0.1', 11434)]
+[21:14:05 +9s] Extracting: https://aws.amazon.com/braket/customers (3/8), chunk 6/33
+
+[21:14:05 +9s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[21:14:05 +9s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[21:14:05 +9s] Model call failed for https://aws.amazon.com/braket/customers chunk 6: litellm.APIConnectionError: OllamaException - Cannot connect to host localhost:11434 ssl:<ssl.SSLContext object at 0x7f471335ee50> [Connect call failed ('127.0.0.1', 11434)]
+[21:14:05 +9s] Extracting: https://aws.amazon.com/braket/customers (3/8), chunk 7/33
+
+[21:14:05 +9s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[21:14:05 +9s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[21:14:05 +9s] Model call failed for https://aws.amazon.com/braket/customers chunk 7: litellm.APIConnectionError: OllamaException - Cannot connect to host localhost:11434 ssl:<ssl.SSLContext object at 0x7f471335ee50> [Connect call failed ('127.0.0.1', 11434)]
+[21:14:05 +9s] Extracting: https://aws.amazon.com/braket/customers (3/8), chunk 8/33
+
+[21:14:05 +9s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[21:14:05 +9s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[21:14:05 +9s] Model call failed for https://aws.amazon.com/braket/customers chunk 8: litellm.APIConnectionError: OllamaException - Cannot connect to host localhost:11434 ssl:<ssl.SSLContext object at 0x7f471335ee50> [Connect call failed ('127.0.0.1', 11434)]
+[21:14:05 +9s] Extracting: https://aws.amazon.com/braket/customers (3/8), chunk 9/33
+
+[21:14:05 +9s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[21:14:05 +9s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[21:14:05 +9s] Model call failed for https://aws.amazon.com/braket/customers chunk 9: litellm.APIConnectionError: OllamaException - Cannot connect to host localhost:11434 ssl:<ssl.SSLContext object at 0x7f471335ee50> [Connect call failed ('127.0.0.1', 11434)]
+[21:14:05 +9s] Extracting: https://aws.amazon.com/braket/customers (3/8), chunk 10/33
+
+[21:14:05 +9s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[21:14:05 +9s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[21:14:05 +9s] Model call failed for https://aws.amazon.com/braket/customers chunk 10: litellm.APIConnectionError: OllamaException - Cannot connect to host localhost:11434 ssl:<ssl.SSLContext object at 0x7f471335ee50> [Connect call failed ('127.0.0.1', 11434)]
+[21:14:05 +9s] Extracting: https://aws.amazon.com/braket/customers (3/8), chunk 11/33
+
+[21:14:05 +9s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[21:14:05 +9s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[21:14:05 +9s] Model call failed for https://aws.amazon.com/braket/customers chunk 11: litellm.APIConnectionError: OllamaException - Cannot connect to host localhost:11434 ssl:<ssl.SSLContext object at 0x7f471335ee50> [Connect call failed ('127.0.0.1', 11434)]
+[21:14:05 +9s] Extracting: https://aws.amazon.com/braket/customers (3/8), chunk 12/33
+
+[21:14:05 +9s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[21:14:05 +9s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[21:14:05 +9s] Model call failed for https://aws.amazon.com/braket/customers chunk 12: litellm.APIConnectionError: OllamaException - Cannot connect to host localhost:11434 ssl:<ssl.SSLContext object at 0x7f471335ee50> [Connect call failed ('127.0.0.1', 11434)]
+[21:14:05 +9s] Extracting: https://aws.amazon.com/braket/customers (3/8), chunk 13/33
+
+[21:14:05 +9s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[21:14:05 +9s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[21:14:05 +9s] Model call failed for https://aws.amazon.com/braket/customers chunk 13: litellm.APIConnectionError: OllamaException - Cannot connect to host localhost:11434 ssl:<ssl.SSLContext object at 0x7f471335ee50> [Connect call failed ('127.0.0.1', 11434)]
+[21:14:05 +9s] Extracting: https://aws.amazon.com/braket/customers (3/8), chunk 14/33
+
+[21:14:05 +9s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[21:14:05 +9s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[21:14:05 +9s] Model call failed for https://aws.amazon.com/braket/customers chunk 14: litellm.APIConnectionError: OllamaException - Cannot connect to host localhost:11434 ssl:<ssl.SSLContext object at 0x7f471335ee50> [Connect call failed ('127.0.0.1', 11434)]
+[21:14:05 +9s] Extracting: https://aws.amazon.com/braket/customers (3/8), chunk 15/33
+
+[21:14:05 +9s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[21:14:05 +9s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[21:14:05 +9s] Model call failed for https://aws.amazon.com/braket/customers chunk 15: litellm.APIConnectionError: OllamaException - Cannot connect to host localhost:11434 ssl:<ssl.SSLContext object at 0x7f471335ee50> [Connect call failed ('127.0.0.1', 11434)]
+[21:14:05 +9s] Extracting: https://aws.amazon.com/braket/customers (3/8), chunk 16/33
+
+[21:14:05 +9s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[21:14:05 +9s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[21:14:05 +9s] Model call failed for https://aws.amazon.com/braket/customers chunk 16: litellm.APIConnectionError: OllamaException - Cannot connect to host localhost:11434 ssl:<ssl.SSLContext object at 0x7f471335ee50> [Connect call failed ('127.0.0.1', 11434)]
+[21:14:05 +9s] Extracting: https://aws.amazon.com/braket/customers (3/8), chunk 17/33
+
+[21:14:05 +9s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[21:14:05 +9s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[21:14:05 +9s] Model call failed for https://aws.amazon.com/braket/customers chunk 17: litellm.APIConnectionError: OllamaException - Cannot connect to host localhost:11434 ssl:<ssl.SSLContext object at 0x7f471335ee50> [Connect call failed ('127.0.0.1', 11434)]
+[21:14:05 +9s] Extracting: https://aws.amazon.com/braket/customers (3/8), chunk 18/33
+
+[21:14:05 +9s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[21:14:05 +9s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[21:14:05 +9s] Model call failed for https://aws.amazon.com/braket/customers chunk 18: litellm.APIConnectionError: OllamaException - Cannot connect to host localhost:11434 ssl:<ssl.SSLContext object at 0x7f471335ee50> [Connect call failed ('127.0.0.1', 11434)]
+[21:14:05 +9s] Extracting: https://aws.amazon.com/braket/customers (3/8), chunk 19/33
+
+[21:14:06 +9s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[21:14:06 +9s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[21:14:06 +9s] Model call failed for https://aws.amazon.com/braket/customers chunk 19: litellm.APIConnectionError: OllamaException - Cannot connect to host localhost:11434 ssl:<ssl.SSLContext object at 0x7f471335ee50> [Connect call failed ('127.0.0.1', 11434)]
+[21:14:06 +9s] Extracting: https://aws.amazon.com/braket/customers (3/8), chunk 20/33
+
+[21:14:06 +9s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[21:14:06 +9s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[21:14:06 +9s] Model call failed for https://aws.amazon.com/braket/customers chunk 20: litellm.APIConnectionError: OllamaException - Cannot connect to host localhost:11434 ssl:<ssl.SSLContext object at 0x7f471335ee50> [Connect call failed ('127.0.0.1', 11434)]
+[21:14:06 +9s] Extracting: https://aws.amazon.com/braket/customers (3/8), chunk 21/33
+
+[21:14:06 +9s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[21:14:06 +9s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[21:14:06 +9s] Model call failed for https://aws.amazon.com/braket/customers chunk 21: litellm.APIConnectionError: OllamaException - Cannot connect to host localhost:11434 ssl:<ssl.SSLContext object at 0x7f471335ee50> [Connect call failed ('127.0.0.1', 11434)]
+[21:14:06 +9s] Extracting: https://aws.amazon.com/braket/customers (3/8), chunk 22/33
+
+[21:14:06 +9s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[21:14:06 +9s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[21:14:06 +9s] Model call failed for https://aws.amazon.com/braket/customers chunk 22: litellm.APIConnectionError: OllamaException - Cannot connect to host localhost:11434 ssl:<ssl.SSLContext object at 0x7f471335ee50> [Connect call failed ('127.0.0.1', 11434)]
+[21:14:06 +9s] Extracting: https://aws.amazon.com/braket/customers (3/8), chunk 23/33
+
+[21:14:06 +9s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[21:14:06 +9s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[21:14:06 +9s] Model call failed for https://aws.amazon.com/braket/customers chunk 23: litellm.APIConnectionError: OllamaException - Cannot connect to host localhost:11434 ssl:<ssl.SSLContext object at 0x7f471335ee50> [Connect call failed ('127.0.0.1', 11434)]
+[21:14:06 +9s] Extracting: https://aws.amazon.com/braket/customers (3/8), chunk 24/33
+
+[21:14:06 +9s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[21:14:06 +9s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[21:14:06 +9s] Model call failed for https://aws.amazon.com/braket/customers chunk 24: litellm.APIConnectionError: OllamaException - Cannot connect to host localhost:11434 ssl:<ssl.SSLContext object at 0x7f471335ee50> [Connect call failed ('127.0.0.1', 11434)]
+[21:14:06 +9s] Extracting: https://aws.amazon.com/braket/customers (3/8), chunk 25/33
+
+[21:14:06 +9s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[21:14:06 +9s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[21:14:06 +9s] Model call failed for https://aws.amazon.com/braket/customers chunk 25: litellm.APIConnectionError: OllamaException - Cannot connect to host localhost:11434 ssl:<ssl.SSLContext object at 0x7f471335ee50> [Connect call failed ('127.0.0.1', 11434)]
+[21:14:06 +9s] Extracting: https://aws.amazon.com/braket/customers (3/8), chunk 26/33
+
+[21:14:06 +9s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[21:14:06 +9s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[21:14:06 +9s] Model call failed for https://aws.amazon.com/braket/customers chunk 26: litellm.APIConnectionError: OllamaException - Cannot connect to host localhost:11434 ssl:<ssl.SSLContext object at 0x7f471335ee50> [Connect call failed ('127.0.0.1', 11434)]
+[21:14:06 +9s] Extracting: https://aws.amazon.com/braket/customers (3/8), chunk 27/33
+
+[21:14:06 +9s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[21:14:06 +9s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[21:14:06 +9s] Model call failed for https://aws.amazon.com/braket/customers chunk 27: litellm.APIConnectionError: OllamaException - Cannot connect to host localhost:11434 ssl:<ssl.SSLContext object at 0x7f471335ee50> [Connect call failed ('127.0.0.1', 11434)]
+[21:14:06 +9s] Extracting: https://aws.amazon.com/braket/customers (3/8), chunk 28/33
+
+[21:14:06 +9s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[21:14:06 +9s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[21:14:06 +9s] Model call failed for https://aws.amazon.com/braket/customers chunk 28: litellm.APIConnectionError: OllamaException - Cannot connect to host localhost:11434 ssl:<ssl.SSLContext object at 0x7f471335ee50> [Connect call failed ('127.0.0.1', 11434)]
+[21:14:06 +9s] Extracting: https://aws.amazon.com/braket/customers (3/8), chunk 29/33
+
+[21:14:06 +9s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[21:14:06 +9s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[21:14:06 +10s] Model call failed for https://aws.amazon.com/braket/customers chunk 29: litellm.APIConnectionError: OllamaException - Cannot connect to host localhost:11434 ssl:<ssl.SSLContext object at 0x7f471335ee50> [Connect call failed ('127.0.0.1', 11434)]
+[21:14:06 +10s] Extracting: https://aws.amazon.com/braket/customers (3/8), chunk 30/33
+
+[21:14:06 +10s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[21:14:06 +10s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[21:14:06 +10s] Model call failed for https://aws.amazon.com/braket/customers chunk 30: litellm.APIConnectionError: OllamaException - Cannot connect to host localhost:11434 ssl:<ssl.SSLContext object at 0x7f471335ee50> [Connect call failed ('127.0.0.1', 11434)]
+[21:14:06 +10s] Extracting: https://aws.amazon.com/braket/customers (3/8), chunk 31/33
+
+[21:14:06 +10s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[21:14:06 +10s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[21:14:06 +10s] Model call failed for https://aws.amazon.com/braket/customers chunk 31: litellm.APIConnectionError: OllamaException - Cannot connect to host localhost:11434 ssl:<ssl.SSLContext object at 0x7f471335ee50> [Connect call failed ('127.0.0.1', 11434)]
+[21:14:06 +10s] Extracting: https://aws.amazon.com/braket/customers (3/8), chunk 32/33
+
+[21:14:06 +10s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[21:14:06 +10s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[21:14:06 +10s] Model call failed for https://aws.amazon.com/braket/customers chunk 32: litellm.APIConnectionError: OllamaException - Cannot connect to host localhost:11434 ssl:<ssl.SSLContext object at 0x7f471335ee50> [Connect call failed ('127.0.0.1', 11434)]
+[21:14:06 +10s] Extracting: https://aws.amazon.com/braket/customers (3/8), chunk 33/33
+
+[21:14:06 +10s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[21:14:06 +10s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[21:14:06 +10s] Model call failed for https://aws.amazon.com/braket/customers chunk 33: litellm.APIConnectionError: OllamaException - Cannot connect to host localhost:11434 ssl:<ssl.SSLContext object at 0x7f471335ee50> [Connect call failed ('127.0.0.1', 11434)]
+[21:14:06 +10s] Reading page (4/8): https://aws.amazon.com/braket/quantum-computers
+[21:14:06 +10s] Extracting: https://aws.amazon.com/braket/quantum-computers (4/8), chunk 1/14
+
+[21:14:06 +10s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[21:14:06 +10s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[21:14:06 +10s] Model call failed for https://aws.amazon.com/braket/quantum-computers chunk 1: litellm.APIConnectionError: OllamaException - Cannot connect to host localhost:11434 ssl:<ssl.SSLContext object at 0x7f471335ee50> [Connect call failed ('127.0.0.1', 11434)]
+[21:14:06 +10s] Extracting: https://aws.amazon.com/braket/quantum-computers (4/8), chunk 2/14
+
+[21:14:06 +10s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[21:14:06 +10s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[21:14:06 +10s] Model call failed for https://aws.amazon.com/braket/quantum-computers chunk 2: litellm.APIConnectionError: OllamaException - Cannot connect to host localhost:11434 ssl:<ssl.SSLContext object at 0x7f471335ee50> [Connect call failed ('127.0.0.1', 11434)]
+[21:14:06 +10s] Extracting: https://aws.amazon.com/braket/quantum-computers (4/8), chunk 3/14
+
+[21:14:06 +10s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[21:14:06 +10s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[21:14:06 +10s] Model call failed for https://aws.amazon.com/braket/quantum-computers chunk 3: litellm.APIConnectionError: OllamaException - Cannot connect to host localhost:11434 ssl:<ssl.SSLContext object at 0x7f471335ee50> [Connect call failed ('127.0.0.1', 11434)]
+[21:14:06 +10s] Extracting: https://aws.amazon.com/braket/quantum-computers (4/8), chunk 4/14
+
+[21:14:06 +10s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[21:14:06 +10s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[21:14:06 +10s] Model call failed for https://aws.amazon.com/braket/quantum-computers chunk 4: litellm.APIConnectionError: OllamaException - Cannot connect to host localhost:11434 ssl:<ssl.SSLContext object at 0x7f471335ee50> [Connect call failed ('127.0.0.1', 11434)]
+[21:14:06 +10s] Extracting: https://aws.amazon.com/braket/quantum-computers (4/8), chunk 5/14
+
+[21:14:06 +10s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[21:14:06 +10s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[21:14:06 +10s] Model call failed for https://aws.amazon.com/braket/quantum-computers chunk 5: litellm.APIConnectionError: OllamaException - Cannot connect to host localhost:11434 ssl:<ssl.SSLContext object at 0x7f471335ee50> [Connect call failed ('127.0.0.1', 11434)]
+[21:14:06 +10s] Extracting: https://aws.amazon.com/braket/quantum-computers (4/8), chunk 6/14
+
+[21:14:06 +10s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[21:14:06 +10s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[21:14:06 +10s] Model call failed for https://aws.amazon.com/braket/quantum-computers chunk 6: litellm.APIConnectionError: OllamaException - Cannot connect to host localhost:11434 ssl:<ssl.SSLContext object at 0x7f471335ee50> [Connect call failed ('127.0.0.1', 11434)]
+[21:14:06 +10s] Extracting: https://aws.amazon.com/braket/quantum-computers (4/8), chunk 7/14
+
+[21:14:06 +10s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[21:14:06 +10s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[21:14:06 +10s] Model call failed for https://aws.amazon.com/braket/quantum-computers chunk 7: litellm.APIConnectionError: OllamaException - Cannot connect to host localhost:11434 ssl:<ssl.SSLContext object at 0x7f471335ee50> [Connect call failed ('127.0.0.1', 11434)]
+[21:14:06 +10s] Extracting: https://aws.amazon.com/braket/quantum-computers (4/8), chunk 8/14
+
+[21:14:06 +10s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[21:14:06 +10s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[21:14:06 +10s] Model call failed for https://aws.amazon.com/braket/quantum-computers chunk 8: litellm.APIConnectionError: OllamaException - Cannot connect to host localhost:11434 ssl:<ssl.SSLContext object at 0x7f471335ee50> [Connect call failed ('127.0.0.1', 11434)]
+[21:14:06 +10s] Extracting: https://aws.amazon.com/braket/quantum-computers (4/8), chunk 9/14
+
+[21:14:06 +10s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[21:14:06 +10s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[21:14:06 +10s] Model call failed for https://aws.amazon.com/braket/quantum-computers chunk 9: litellm.APIConnectionError: OllamaException - Cannot connect to host localhost:11434 ssl:<ssl.SSLContext object at 0x7f471335ee50> [Connect call failed ('127.0.0.1', 11434)]
+[21:14:06 +10s] Extracting: https://aws.amazon.com/braket/quantum-computers (4/8), chunk 10/14
+
+[21:14:06 +10s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[21:14:06 +10s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[21:14:06 +10s] Model call failed for https://aws.amazon.com/braket/quantum-computers chunk 10: litellm.APIConnectionError: OllamaException - Cannot connect to host localhost:11434 ssl:<ssl.SSLContext object at 0x7f471335ee50> [Connect call failed ('127.0.0.1', 11434)]
+[21:14:06 +10s] Extracting: https://aws.amazon.com/braket/quantum-computers (4/8), chunk 11/14
+
+[21:14:06 +10s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[21:14:06 +10s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[21:14:06 +10s] Model call failed for https://aws.amazon.com/braket/quantum-computers chunk 11: litellm.APIConnectionError: OllamaException - Cannot connect to host localhost:11434 ssl:<ssl.SSLContext object at 0x7f471335ee50> [Connect call failed ('127.0.0.1', 11434)]
+[21:14:06 +10s] Extracting: https://aws.amazon.com/braket/quantum-computers (4/8), chunk 12/14
+
+[21:14:06 +10s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[21:14:06 +10s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[21:14:06 +10s] Model call failed for https://aws.amazon.com/braket/quantum-computers chunk 12: litellm.APIConnectionError: OllamaException - Cannot connect to host localhost:11434 ssl:<ssl.SSLContext object at 0x7f471335ee50> [Connect call failed ('127.0.0.1', 11434)]
+[21:14:06 +10s] Extracting: https://aws.amazon.com/braket/quantum-computers (4/8), chunk 13/14
+
+[21:14:06 +10s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[21:14:06 +10s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[21:14:06 +10s] Model call failed for https://aws.amazon.com/braket/quantum-computers chunk 13: litellm.APIConnectionError: OllamaException - Cannot connect to host localhost:11434 ssl:<ssl.SSLContext object at 0x7f471335ee50> [Connect call failed ('127.0.0.1', 11434)]
+[21:14:06 +10s] Extracting: https://aws.amazon.com/braket/quantum-computers (4/8), chunk 14/14
+
+[21:14:06 +10s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[21:14:06 +10s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[21:14:06 +10s] Model call failed for https://aws.amazon.com/braket/quantum-computers chunk 14: litellm.APIConnectionError: OllamaException - Cannot connect to host localhost:11434 ssl:<ssl.SSLContext object at 0x7f471335ee50> [Connect call failed ('127.0.0.1', 11434)]
+[21:14:06 +10s] Reading page (5/8): https://aws.amazon.com
+[21:14:06 +10s] Extracting: https://aws.amazon.com (5/8), chunk 1/16
+
+[21:14:06 +10s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[21:14:06 +10s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[21:14:06 +10s] Model call failed for https://aws.amazon.com chunk 1: litellm.APIConnectionError: OllamaException - Cannot connect to host localhost:11434 ssl:<ssl.SSLContext object at 0x7f471335ee50> [Connect call failed ('127.0.0.1', 11434)]
+[21:14:06 +10s] Extracting: https://aws.amazon.com (5/8), chunk 2/16
+
+[21:14:06 +10s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[21:14:06 +10s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[21:14:06 +10s] Model call failed for https://aws.amazon.com chunk 2: litellm.APIConnectionError: OllamaException - Cannot connect to host localhost:11434 ssl:<ssl.SSLContext object at 0x7f471335ee50> [Connect call failed ('127.0.0.1', 11434)]
+[21:14:06 +10s] Extracting: https://aws.amazon.com (5/8), chunk 3/16
+
+[21:14:06 +10s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[21:14:06 +10s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[21:14:06 +10s] Model call failed for https://aws.amazon.com chunk 3: litellm.APIConnectionError: OllamaException - Cannot connect to host localhost:11434 ssl:<ssl.SSLContext object at 0x7f471335ee50> [Connect call failed ('127.0.0.1', 11434)]
+[21:14:06 +10s] Extracting: https://aws.amazon.com (5/8), chunk 4/16
+
+[21:14:06 +10s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[21:14:06 +10s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[21:14:07 +10s] Model call failed for https://aws.amazon.com chunk 4: litellm.APIConnectionError: OllamaException - Cannot connect to host localhost:11434 ssl:<ssl.SSLContext object at 0x7f471335ee50> [Connect call failed ('127.0.0.1', 11434)]
+[21:14:07 +10s] Extracting: https://aws.amazon.com (5/8), chunk 5/16
+
+[21:14:07 +10s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[21:14:07 +10s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[21:14:07 +10s] Model call failed for https://aws.amazon.com chunk 5: litellm.APIConnectionError: OllamaException - Cannot connect to host localhost:11434 ssl:<ssl.SSLContext object at 0x7f471335ee50> [Connect call failed ('127.0.0.1', 11434)]
+[21:14:07 +10s] Extracting: https://aws.amazon.com (5/8), chunk 6/16
+
+[21:14:07 +10s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[21:14:07 +10s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[21:14:07 +10s] Model call failed for https://aws.amazon.com chunk 6: litellm.APIConnectionError: OllamaException - Cannot connect to host localhost:11434 ssl:<ssl.SSLContext object at 0x7f471335ee50> [Connect call failed ('127.0.0.1', 11434)]
+[21:14:07 +10s] Extracting: https://aws.amazon.com (5/8), chunk 7/16
+
+[21:14:07 +10s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[21:14:07 +10s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[21:14:07 +10s] Model call failed for https://aws.amazon.com chunk 7: litellm.APIConnectionError: OllamaException - Cannot connect to host localhost:11434 ssl:<ssl.SSLContext object at 0x7f471335ee50> [Connect call failed ('127.0.0.1', 11434)]
+[21:14:07 +10s] Extracting: https://aws.amazon.com (5/8), chunk 8/16
+
+[21:14:07 +10s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[21:14:07 +10s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[21:14:07 +10s] Model call failed for https://aws.amazon.com chunk 8: litellm.APIConnectionError: OllamaException - Cannot connect to host localhost:11434 ssl:<ssl.SSLContext object at 0x7f471335ee50> [Connect call failed ('127.0.0.1', 11434)]
+[21:14:07 +10s] Extracting: https://aws.amazon.com (5/8), chunk 9/16
+
+[21:14:07 +10s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[21:14:07 +10s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[21:14:07 +11s] Model call failed for https://aws.amazon.com chunk 9: litellm.APIConnectionError: OllamaException - Cannot connect to host localhost:11434 ssl:<ssl.SSLContext object at 0x7f471335ee50> [Connect call failed ('127.0.0.1', 11434)]
+[21:14:07 +11s] Extracting: https://aws.amazon.com (5/8), chunk 10/16
+
+[21:14:07 +11s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[21:14:07 +11s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[21:14:07 +11s] Model call failed for https://aws.amazon.com chunk 10: litellm.APIConnectionError: OllamaException - Cannot connect to host localhost:11434 ssl:<ssl.SSLContext object at 0x7f471335ee50> [Connect call failed ('127.0.0.1', 11434)]
+[21:14:07 +11s] Extracting: https://aws.amazon.com (5/8), chunk 11/16
+
+[21:14:07 +11s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[21:14:07 +11s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[21:14:07 +11s] Model call failed for https://aws.amazon.com chunk 11: litellm.APIConnectionError: OllamaException - Cannot connect to host localhost:11434 ssl:<ssl.SSLContext object at 0x7f471335ee50> [Connect call failed ('127.0.0.1', 11434)]
+[21:14:07 +11s] Extracting: https://aws.amazon.com (5/8), chunk 12/16
+
+[21:14:07 +11s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[21:14:07 +11s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[21:14:07 +11s] Model call failed for https://aws.amazon.com chunk 12: litellm.APIConnectionError: OllamaException - Cannot connect to host localhost:11434 ssl:<ssl.SSLContext object at 0x7f471335ee50> [Connect call failed ('127.0.0.1', 11434)]
+[21:14:07 +11s] Extracting: https://aws.amazon.com (5/8), chunk 13/16
+
+[21:14:07 +11s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[21:14:07 +11s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[21:14:07 +11s] Model call failed for https://aws.amazon.com chunk 13: litellm.APIConnectionError: OllamaException - Cannot connect to host localhost:11434 ssl:<ssl.SSLContext object at 0x7f471335ee50> [Connect call failed ('127.0.0.1', 11434)]
+[21:14:07 +11s] Extracting: https://aws.amazon.com (5/8), chunk 14/16
+
+[21:14:07 +11s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[21:14:07 +11s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[21:14:07 +11s] Model call failed for https://aws.amazon.com chunk 14: litellm.APIConnectionError: OllamaException - Cannot connect to host localhost:11434 ssl:<ssl.SSLContext object at 0x7f471335ee50> [Connect call failed ('127.0.0.1', 11434)]
+[21:14:07 +11s] Extracting: https://aws.amazon.com (5/8), chunk 15/16
+
+[21:14:07 +11s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[21:14:07 +11s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[21:14:07 +11s] Model call failed for https://aws.amazon.com chunk 15: litellm.APIConnectionError: OllamaException - Cannot connect to host localhost:11434 ssl:<ssl.SSLContext object at 0x7f471335ee50> [Connect call failed ('127.0.0.1', 11434)]
+[21:14:07 +11s] Extracting: https://aws.amazon.com (5/8), chunk 16/16
+
+[21:14:07 +11s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[21:14:07 +11s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[21:14:07 +11s] Model call failed for https://aws.amazon.com chunk 16: litellm.APIConnectionError: OllamaException - Cannot connect to host localhost:11434 ssl:<ssl.SSLContext object at 0x7f471335ee50> [Connect call failed ('127.0.0.1', 11434)]
+[21:14:07 +11s] Reading page (6/8): https://signin.aws.amazon.com/signup
+[21:14:07 +11s] Extracting: https://signin.aws.amazon.com/signup (6/8), chunk 1/2
+
+[21:14:07 +11s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[21:14:07 +11s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[21:14:07 +11s] Model call failed for https://signin.aws.amazon.com/signup chunk 1: litellm.APIConnectionError: OllamaException - Cannot connect to host localhost:11434 ssl:<ssl.SSLContext object at 0x7f471335ee50> [Connect call failed ('127.0.0.1', 11434)]
+[21:14:07 +11s] Extracting: https://signin.aws.amazon.com/signup (6/8), chunk 2/2
+
+[21:14:07 +11s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[21:14:07 +11s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[21:14:07 +11s] Model call failed for https://signin.aws.amazon.com/signup chunk 2: litellm.APIConnectionError: OllamaException - Cannot connect to host localhost:11434 ssl:<ssl.SSLContext object at 0x7f471335ee50> [Connect call failed ('127.0.0.1', 11434)]
+[21:14:07 +11s] Reading page (7/8): https://aws.amazon.com/marketplace
+[21:14:07 +11s] Extracting: https://aws.amazon.com/marketplace (7/8), chunk 1/57
+
+[21:14:07 +11s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[21:14:07 +11s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[21:14:07 +11s] Model call failed for https://aws.amazon.com/marketplace chunk 1: litellm.APIConnectionError: OllamaException - Cannot connect to host localhost:11434 ssl:<ssl.SSLContext object at 0x7f471335ee50> [Connect call failed ('127.0.0.1', 11434)]
+[21:14:07 +11s] Extracting: https://aws.amazon.com/marketplace (7/8), chunk 2/57
+
+[21:14:07 +11s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[21:14:07 +11s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[21:14:07 +11s] Model call failed for https://aws.amazon.com/marketplace chunk 2: litellm.APIConnectionError: OllamaException - Cannot connect to host localhost:11434 ssl:<ssl.SSLContext object at 0x7f471335ee50> [Connect call failed ('127.0.0.1', 11434)]
+[21:14:07 +11s] Extracting: https://aws.amazon.com/marketplace (7/8), chunk 3/57
+
+[21:14:07 +11s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[21:14:07 +11s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[21:14:07 +11s] Model call failed for https://aws.amazon.com/marketplace chunk 3: litellm.APIConnectionError: OllamaException - Cannot connect to host localhost:11434 ssl:<ssl.SSLContext object at 0x7f471335ee50> [Connect call failed ('127.0.0.1', 11434)]
+[21:14:07 +11s] Extracting: https://aws.amazon.com/marketplace (7/8), chunk 4/57
+
+[21:14:07 +11s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[21:14:07 +11s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[21:14:07 +11s] Model call failed for https://aws.amazon.com/marketplace chunk 4: litellm.APIConnectionError: OllamaException - Cannot connect to host localhost:11434 ssl:<ssl.SSLContext object at 0x7f471335ee50> [Connect call failed ('127.0.0.1', 11434)]
+[21:14:07 +11s] Extracting: https://aws.amazon.com/marketplace (7/8), chunk 5/57
+
+[21:14:07 +11s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[21:14:07 +11s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[21:14:07 +11s] Model call failed for https://aws.amazon.com/marketplace chunk 5: litellm.APIConnectionError: OllamaException - Cannot connect to host localhost:11434 ssl:<ssl.SSLContext object at 0x7f471335ee50> [Connect call failed ('127.0.0.1', 11434)]
+[21:14:07 +11s] Extracting: https://aws.amazon.com/marketplace (7/8), chunk 6/57
+
+[21:14:07 +11s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[21:14:07 +11s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[21:14:07 +11s] Model call failed for https://aws.amazon.com/marketplace chunk 6: litellm.APIConnectionError: OllamaException - Cannot connect to host localhost:11434 ssl:<ssl.SSLContext object at 0x7f471335ee50> [Connect call failed ('127.0.0.1', 11434)]
+[21:14:07 +11s] Extracting: https://aws.amazon.com/marketplace (7/8), chunk 7/57
+
+[21:14:07 +11s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[21:14:07 +11s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[21:14:07 +11s] Model call failed for https://aws.amazon.com/marketplace chunk 7: litellm.APIConnectionError: OllamaException - Cannot connect to host localhost:11434 ssl:<ssl.SSLContext object at 0x7f471335ee50> [Connect call failed ('127.0.0.1', 11434)]
+[21:14:07 +11s] Extracting: https://aws.amazon.com/marketplace (7/8), chunk 8/57
+
+[21:14:07 +11s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[21:14:07 +11s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[21:14:07 +11s] Model call failed for https://aws.amazon.com/marketplace chunk 8: litellm.APIConnectionError: OllamaException - Cannot connect to host localhost:11434 ssl:<ssl.SSLContext object at 0x7f471335ee50> [Connect call failed ('127.0.0.1', 11434)]
+[21:14:07 +11s] Extracting: https://aws.amazon.com/marketplace (7/8), chunk 9/57
+
+[21:14:07 +11s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[21:14:07 +11s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[21:14:07 +11s] Model call failed for https://aws.amazon.com/marketplace chunk 9: litellm.APIConnectionError: OllamaException - Cannot connect to host localhost:11434 ssl:<ssl.SSLContext object at 0x7f471335ee50> [Connect call failed ('127.0.0.1', 11434)]
+[21:14:07 +11s] Extracting: https://aws.amazon.com/marketplace (7/8), chunk 10/57
+
+[21:14:07 +11s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[21:14:07 +11s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[21:14:07 +11s] Model call failed for https://aws.amazon.com/marketplace chunk 10: litellm.APIConnectionError: OllamaException - Cannot connect to host localhost:11434 ssl:<ssl.SSLContext object at 0x7f471335ee50> [Connect call failed ('127.0.0.1', 11434)]
+[21:14:07 +11s] Extracting: https://aws.amazon.com/marketplace (7/8), chunk 11/57
+
+[21:14:07 +11s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[21:14:07 +11s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[21:14:07 +11s] Model call failed for https://aws.amazon.com/marketplace chunk 11: litellm.APIConnectionError: OllamaException - Cannot connect to host localhost:11434 ssl:<ssl.SSLContext object at 0x7f471335ee50> [Connect call failed ('127.0.0.1', 11434)]
+[21:14:07 +11s] Extracting: https://aws.amazon.com/marketplace (7/8), chunk 12/57
+
+[21:14:07 +11s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[21:14:07 +11s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[21:14:08 +11s] Model call failed for https://aws.amazon.com/marketplace chunk 12: litellm.APIConnectionError: OllamaException - Cannot connect to host localhost:11434 ssl:<ssl.SSLContext object at 0x7f471335ee50> [Connect call failed ('127.0.0.1', 11434)]
+[21:14:08 +11s] Extracting: https://aws.amazon.com/marketplace (7/8), chunk 13/57
+
+[21:14:08 +11s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[21:14:08 +11s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[21:14:08 +11s] Model call failed for https://aws.amazon.com/marketplace chunk 13: litellm.APIConnectionError: OllamaException - Cannot connect to host localhost:11434 ssl:<ssl.SSLContext object at 0x7f471335ee50> [Connect call failed ('127.0.0.1', 11434)]
+[21:14:08 +11s] Extracting: https://aws.amazon.com/marketplace (7/8), chunk 14/57
+
+[21:14:08 +11s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[21:14:08 +11s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[21:14:08 +11s] Model call failed for https://aws.amazon.com/marketplace chunk 14: litellm.APIConnectionError: OllamaException - Cannot connect to host localhost:11434 ssl:<ssl.SSLContext object at 0x7f471335ee50> [Connect call failed ('127.0.0.1', 11434)]
+[21:14:08 +11s] Extracting: https://aws.amazon.com/marketplace (7/8), chunk 15/57
+
+[21:14:08 +11s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[21:14:08 +11s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[21:14:08 +11s] Model call failed for https://aws.amazon.com/marketplace chunk 15: litellm.APIConnectionError: OllamaException - Cannot connect to host localhost:11434 ssl:<ssl.SSLContext object at 0x7f471335ee50> [Connect call failed ('127.0.0.1', 11434)]
+[21:14:08 +11s] Extracting: https://aws.amazon.com/marketplace (7/8), chunk 16/57
+
+[21:14:08 +11s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[21:14:08 +11s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[21:14:08 +11s] Model call failed for https://aws.amazon.com/marketplace chunk 16: litellm.APIConnectionError: OllamaException - Cannot connect to host localhost:11434 ssl:<ssl.SSLContext object at 0x7f471335ee50> [Connect call failed ('127.0.0.1', 11434)]
+[21:14:08 +11s] Extracting: https://aws.amazon.com/marketplace (7/8), chunk 17/57
+
+[21:14:08 +11s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[21:14:08 +11s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[21:14:08 +11s] Model call failed for https://aws.amazon.com/marketplace chunk 17: litellm.APIConnectionError: OllamaException - Cannot connect to host localhost:11434 ssl:<ssl.SSLContext object at 0x7f471335ee50> [Connect call failed ('127.0.0.1', 11434)]
+[21:14:08 +11s] Extracting: https://aws.amazon.com/marketplace (7/8), chunk 18/57
+
+[21:14:08 +11s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[21:14:08 +11s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[21:14:08 +12s] Model call failed for https://aws.amazon.com/marketplace chunk 18: litellm.APIConnectionError: OllamaException - Cannot connect to host localhost:11434 ssl:<ssl.SSLContext object at 0x7f471335ee50> [Connect call failed ('127.0.0.1', 11434)]
+[21:14:08 +12s] Extracting: https://aws.amazon.com/marketplace (7/8), chunk 19/57
+
+[21:14:08 +12s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[21:14:08 +12s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[21:14:08 +12s] Model call failed for https://aws.amazon.com/marketplace chunk 19: litellm.APIConnectionError: OllamaException - Cannot connect to host localhost:11434 ssl:<ssl.SSLContext object at 0x7f471335ee50> [Connect call failed ('127.0.0.1', 11434)]
+[21:14:08 +12s] Extracting: https://aws.amazon.com/marketplace (7/8), chunk 20/57
+
+[21:14:08 +12s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[21:14:08 +12s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[21:14:08 +12s] Model call failed for https://aws.amazon.com/marketplace chunk 20: litellm.APIConnectionError: OllamaException - Cannot connect to host localhost:11434 ssl:<ssl.SSLContext object at 0x7f471335ee50> [Connect call failed ('127.0.0.1', 11434)]
+[21:14:08 +12s] Extracting: https://aws.amazon.com/marketplace (7/8), chunk 21/57
+
+[21:14:08 +12s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[21:14:08 +12s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[21:14:08 +12s] Model call failed for https://aws.amazon.com/marketplace chunk 21: litellm.APIConnectionError: OllamaException - Cannot connect to host localhost:11434 ssl:<ssl.SSLContext object at 0x7f471335ee50> [Connect call failed ('127.0.0.1', 11434)]
+[21:14:08 +12s] Extracting: https://aws.amazon.com/marketplace (7/8), chunk 22/57
+
+[21:14:08 +12s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[21:14:08 +12s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[21:14:08 +12s] Model call failed for https://aws.amazon.com/marketplace chunk 22: litellm.APIConnectionError: OllamaException - Cannot connect to host localhost:11434 ssl:<ssl.SSLContext object at 0x7f471335ee50> [Connect call failed ('127.0.0.1', 11434)]
+[21:14:08 +12s] Extracting: https://aws.amazon.com/marketplace (7/8), chunk 23/57
+
+[21:14:08 +12s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[21:14:08 +12s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[21:14:08 +12s] Model call failed for https://aws.amazon.com/marketplace chunk 23: litellm.APIConnectionError: OllamaException - Cannot connect to host localhost:11434 ssl:<ssl.SSLContext object at 0x7f471335ee50> [Connect call failed ('127.0.0.1', 11434)]
+[21:14:08 +12s] Extracting: https://aws.amazon.com/marketplace (7/8), chunk 24/57
+
+[21:14:08 +12s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[21:14:08 +12s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[21:14:08 +12s] Model call failed for https://aws.amazon.com/marketplace chunk 24: litellm.APIConnectionError: OllamaException - Cannot connect to host localhost:11434 ssl:<ssl.SSLContext object at 0x7f471335ee50> [Connect call failed ('127.0.0.1', 11434)]
+[21:14:08 +12s] Extracting: https://aws.amazon.com/marketplace (7/8), chunk 25/57
+
+[21:14:08 +12s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[21:14:08 +12s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[21:14:08 +12s] Model call failed for https://aws.amazon.com/marketplace chunk 25: litellm.APIConnectionError: OllamaException - Cannot connect to host localhost:11434 ssl:<ssl.SSLContext object at 0x7f471335ee50> [Connect call failed ('127.0.0.1', 11434)]
+[21:14:08 +12s] Extracting: https://aws.amazon.com/marketplace (7/8), chunk 26/57
+
+[21:14:08 +12s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[21:14:08 +12s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[21:14:08 +12s] Model call failed for https://aws.amazon.com/marketplace chunk 26: litellm.APIConnectionError: OllamaException - Cannot connect to host localhost:11434 ssl:<ssl.SSLContext object at 0x7f471335ee50> [Connect call failed ('127.0.0.1', 11434)]
+[21:14:08 +12s] Extracting: https://aws.amazon.com/marketplace (7/8), chunk 27/57
+
+[21:14:08 +12s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[21:14:08 +12s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[21:14:08 +12s] Model call failed for https://aws.amazon.com/marketplace chunk 27: litellm.APIConnectionError: OllamaException - Cannot connect to host localhost:11434 ssl:<ssl.SSLContext object at 0x7f471335ee50> [Connect call failed ('127.0.0.1', 11434)]
+[21:14:08 +12s] Extracting: https://aws.amazon.com/marketplace (7/8), chunk 28/57
+
+[21:14:08 +12s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[21:14:08 +12s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[21:14:08 +12s] Model call failed for https://aws.amazon.com/marketplace chunk 28: litellm.APIConnectionError: OllamaException - Cannot connect to host localhost:11434 ssl:<ssl.SSLContext object at 0x7f471335ee50> [Connect call failed ('127.0.0.1', 11434)]
+[21:14:08 +12s] Extracting: https://aws.amazon.com/marketplace (7/8), chunk 29/57
+
+[21:14:08 +12s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[21:14:08 +12s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[21:14:08 +12s] Model call failed for https://aws.amazon.com/marketplace chunk 29: litellm.APIConnectionError: OllamaException - Cannot connect to host localhost:11434 ssl:<ssl.SSLContext object at 0x7f471335ee50> [Connect call failed ('127.0.0.1', 11434)]
+[21:14:08 +12s] Extracting: https://aws.amazon.com/marketplace (7/8), chunk 30/57
+
+[21:14:08 +12s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[21:14:08 +12s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[21:14:08 +12s] Model call failed for https://aws.amazon.com/marketplace chunk 30: litellm.APIConnectionError: OllamaException - Cannot connect to host localhost:11434 ssl:<ssl.SSLContext object at 0x7f471335ee50> [Connect call failed ('127.0.0.1', 11434)]
+[21:14:08 +12s] Extracting: https://aws.amazon.com/marketplace (7/8), chunk 31/57
+
+[21:14:08 +12s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[21:14:08 +12s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[21:14:08 +12s] Model call failed for https://aws.amazon.com/marketplace chunk 31: litellm.APIConnectionError: OllamaException - Cannot connect to host localhost:11434 ssl:<ssl.SSLContext object at 0x7f471335ee50> [Connect call failed ('127.0.0.1', 11434)]
+[21:14:08 +12s] Extracting: https://aws.amazon.com/marketplace (7/8), chunk 32/57
+
+[21:14:08 +12s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[21:14:08 +12s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[21:14:08 +12s] Model call failed for https://aws.amazon.com/marketplace chunk 32: litellm.APIConnectionError: OllamaException - Cannot connect to host localhost:11434 ssl:<ssl.SSLContext object at 0x7f471335ee50> [Connect call failed ('127.0.0.1', 11434)]
+[21:14:08 +12s] Extracting: https://aws.amazon.com/marketplace (7/8), chunk 33/57
+
+[21:14:08 +12s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[21:14:08 +12s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[21:14:08 +12s] Model call failed for https://aws.amazon.com/marketplace chunk 33: litellm.APIConnectionError: OllamaException - Cannot connect to host localhost:11434 ssl:<ssl.SSLContext object at 0x7f471335ee50> [Connect call failed ('127.0.0.1', 11434)]
+[21:14:08 +12s] Extracting: https://aws.amazon.com/marketplace (7/8), chunk 34/57
+
+[21:14:08 +12s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[21:14:08 +12s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[21:14:08 +12s] Model call failed for https://aws.amazon.com/marketplace chunk 34: litellm.APIConnectionError: OllamaException - Cannot connect to host localhost:11434 ssl:<ssl.SSLContext object at 0x7f471335ee50> [Connect call failed ('127.0.0.1', 11434)]
+[21:14:08 +12s] Extracting: https://aws.amazon.com/marketplace (7/8), chunk 35/57
+
+[21:14:08 +12s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[21:14:08 +12s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[21:14:08 +12s] Model call failed for https://aws.amazon.com/marketplace chunk 35: litellm.APIConnectionError: OllamaException - Cannot connect to host localhost:11434 ssl:<ssl.SSLContext object at 0x7f471335ee50> [Connect call failed ('127.0.0.1', 11434)]
+[21:14:08 +12s] Extracting: https://aws.amazon.com/marketplace (7/8), chunk 36/57
+
+[21:14:08 +12s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[21:14:08 +12s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[21:14:08 +12s] Model call failed for https://aws.amazon.com/marketplace chunk 36: litellm.APIConnectionError: OllamaException - Cannot connect to host localhost:11434 ssl:<ssl.SSLContext object at 0x7f471335ee50> [Connect call failed ('127.0.0.1', 11434)]
+[21:14:08 +12s] Extracting: https://aws.amazon.com/marketplace (7/8), chunk 37/57
+
+[21:14:08 +12s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[21:14:08 +12s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[21:14:08 +12s] Model call failed for https://aws.amazon.com/marketplace chunk 37: litellm.APIConnectionError: OllamaException - Cannot connect to host localhost:11434 ssl:<ssl.SSLContext object at 0x7f471335ee50> [Connect call failed ('127.0.0.1', 11434)]
+[21:14:08 +12s] Extracting: https://aws.amazon.com/marketplace (7/8), chunk 38/57
+
+[21:14:08 +12s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[21:14:08 +12s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[21:14:08 +12s] Model call failed for https://aws.amazon.com/marketplace chunk 38: litellm.APIConnectionError: OllamaException - Cannot connect to host localhost:11434 ssl:<ssl.SSLContext object at 0x7f471335ee50> [Connect call failed ('127.0.0.1', 11434)]
+[21:14:08 +12s] Extracting: https://aws.amazon.com/marketplace (7/8), chunk 39/57
+
+[21:14:08 +12s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[21:14:08 +12s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[21:14:08 +12s] Model call failed for https://aws.amazon.com/marketplace chunk 39: litellm.APIConnectionError: OllamaException - Cannot connect to host localhost:11434 ssl:<ssl.SSLContext object at 0x7f471335ee50> [Connect call failed ('127.0.0.1', 11434)]
+[21:14:08 +12s] Extracting: https://aws.amazon.com/marketplace (7/8), chunk 40/57
+
+[21:14:08 +12s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[21:14:08 +12s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[21:14:08 +12s] Model call failed for https://aws.amazon.com/marketplace chunk 40: litellm.APIConnectionError: OllamaException - Cannot connect to host localhost:11434 ssl:<ssl.SSLContext object at 0x7f471335ee50> [Connect call failed ('127.0.0.1', 11434)]
+[21:14:08 +12s] Extracting: https://aws.amazon.com/marketplace (7/8), chunk 41/57
+
+[21:14:08 +12s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[21:14:08 +12s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[21:14:09 +12s] Model call failed for https://aws.amazon.com/marketplace chunk 41: litellm.APIConnectionError: OllamaException - Cannot connect to host localhost:11434 ssl:<ssl.SSLContext object at 0x7f471335ee50> [Connect call failed ('127.0.0.1', 11434)]
+[21:14:09 +12s] Extracting: https://aws.amazon.com/marketplace (7/8), chunk 42/57
+
+[21:14:09 +12s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[21:14:09 +12s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[21:14:09 +12s] Model call failed for https://aws.amazon.com/marketplace chunk 42: litellm.APIConnectionError: OllamaException - Cannot connect to host localhost:11434 ssl:<ssl.SSLContext object at 0x7f471335ee50> [Connect call failed ('127.0.0.1', 11434)]
+[21:14:09 +12s] Extracting: https://aws.amazon.com/marketplace (7/8), chunk 43/57
+
+[21:14:09 +12s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[21:14:09 +12s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[21:14:09 +12s] Model call failed for https://aws.amazon.com/marketplace chunk 43: litellm.APIConnectionError: OllamaException - Cannot connect to host localhost:11434 ssl:<ssl.SSLContext object at 0x7f471335ee50> [Connect call failed ('127.0.0.1', 11434)]
+[21:14:09 +12s] Extracting: https://aws.amazon.com/marketplace (7/8), chunk 44/57
+
+[21:14:09 +12s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[21:14:09 +12s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[21:14:09 +12s] Model call failed for https://aws.amazon.com/marketplace chunk 44: litellm.APIConnectionError: OllamaException - Cannot connect to host localhost:11434 ssl:<ssl.SSLContext object at 0x7f471335ee50> [Connect call failed ('127.0.0.1', 11434)]
+[21:14:09 +12s] Extracting: https://aws.amazon.com/marketplace (7/8), chunk 45/57
+
+[21:14:09 +12s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[21:14:09 +12s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[21:14:09 +12s] Model call failed for https://aws.amazon.com/marketplace chunk 45: litellm.APIConnectionError: OllamaException - Cannot connect to host localhost:11434 ssl:<ssl.SSLContext object at 0x7f471335ee50> [Connect call failed ('127.0.0.1', 11434)]
+[21:14:09 +12s] Extracting: https://aws.amazon.com/marketplace (7/8), chunk 46/57
+
+[21:14:09 +12s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[21:14:09 +12s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[21:14:09 +13s] Model call failed for https://aws.amazon.com/marketplace chunk 46: litellm.APIConnectionError: OllamaException - Cannot connect to host localhost:11434 ssl:<ssl.SSLContext object at 0x7f471335ee50> [Connect call failed ('127.0.0.1', 11434)]
+[21:14:09 +13s] Extracting: https://aws.amazon.com/marketplace (7/8), chunk 47/57
+
+[21:14:09 +13s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[21:14:09 +13s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[21:14:09 +13s] Model call failed for https://aws.amazon.com/marketplace chunk 47: litellm.APIConnectionError: OllamaException - Cannot connect to host localhost:11434 ssl:<ssl.SSLContext object at 0x7f471335ee50> [Connect call failed ('127.0.0.1', 11434)]
+[21:14:09 +13s] Extracting: https://aws.amazon.com/marketplace (7/8), chunk 48/57
+
+[21:14:09 +13s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[21:14:09 +13s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[21:14:09 +13s] Model call failed for https://aws.amazon.com/marketplace chunk 48: litellm.APIConnectionError: OllamaException - Cannot connect to host localhost:11434 ssl:<ssl.SSLContext object at 0x7f471335ee50> [Connect call failed ('127.0.0.1', 11434)]
+[21:14:09 +13s] Extracting: https://aws.amazon.com/marketplace (7/8), chunk 49/57
+
+[21:14:09 +13s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[21:14:09 +13s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[21:14:09 +13s] Model call failed for https://aws.amazon.com/marketplace chunk 49: litellm.APIConnectionError: OllamaException - Cannot connect to host localhost:11434 ssl:<ssl.SSLContext object at 0x7f471335ee50> [Connect call failed ('127.0.0.1', 11434)]
+[21:14:09 +13s] Extracting: https://aws.amazon.com/marketplace (7/8), chunk 50/57
+
+[21:14:09 +13s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[21:14:09 +13s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[21:14:09 +13s] Model call failed for https://aws.amazon.com/marketplace chunk 50: litellm.APIConnectionError: OllamaException - Cannot connect to host localhost:11434 ssl:<ssl.SSLContext object at 0x7f471335ee50> [Connect call failed ('127.0.0.1', 11434)]
+[21:14:09 +13s] Extracting: https://aws.amazon.com/marketplace (7/8), chunk 51/57
+
+[21:14:09 +13s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[21:14:09 +13s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[21:14:09 +13s] Model call failed for https://aws.amazon.com/marketplace chunk 51: litellm.APIConnectionError: OllamaException - Cannot connect to host localhost:11434 ssl:<ssl.SSLContext object at 0x7f471335ee50> [Connect call failed ('127.0.0.1', 11434)]
+[21:14:09 +13s] Extracting: https://aws.amazon.com/marketplace (7/8), chunk 52/57
+
+[21:14:09 +13s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[21:14:09 +13s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[21:14:09 +13s] Model call failed for https://aws.amazon.com/marketplace chunk 52: litellm.APIConnectionError: OllamaException - Cannot connect to host localhost:11434 ssl:<ssl.SSLContext object at 0x7f471335ee50> [Connect call failed ('127.0.0.1', 11434)]
+[21:14:09 +13s] Extracting: https://aws.amazon.com/marketplace (7/8), chunk 53/57
+
+[21:14:09 +13s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[21:14:09 +13s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[21:14:09 +13s] Model call failed for https://aws.amazon.com/marketplace chunk 53: litellm.APIConnectionError: OllamaException - Cannot connect to host localhost:11434 ssl:<ssl.SSLContext object at 0x7f471335ee50> [Connect call failed ('127.0.0.1', 11434)]
+[21:14:09 +13s] Extracting: https://aws.amazon.com/marketplace (7/8), chunk 54/57
+
+[21:14:09 +13s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[21:14:09 +13s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[21:14:09 +13s] Model call failed for https://aws.amazon.com/marketplace chunk 54: litellm.APIConnectionError: OllamaException - Cannot connect to host localhost:11434 ssl:<ssl.SSLContext object at 0x7f471335ee50> [Connect call failed ('127.0.0.1', 11434)]
+[21:14:09 +13s] Extracting: https://aws.amazon.com/marketplace (7/8), chunk 55/57
+
+[21:14:09 +13s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[21:14:09 +13s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[21:14:09 +13s] Model call failed for https://aws.amazon.com/marketplace chunk 55: litellm.APIConnectionError: OllamaException - Cannot connect to host localhost:11434 ssl:<ssl.SSLContext object at 0x7f471335ee50> [Connect call failed ('127.0.0.1', 11434)]
+[21:14:09 +13s] Extracting: https://aws.amazon.com/marketplace (7/8), chunk 56/57
+
+[21:14:09 +13s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[21:14:09 +13s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[21:14:09 +13s] Model call failed for https://aws.amazon.com/marketplace chunk 56: litellm.APIConnectionError: OllamaException - Cannot connect to host localhost:11434 ssl:<ssl.SSLContext object at 0x7f471335ee50> [Connect call failed ('127.0.0.1', 11434)]
+[21:14:09 +13s] Extracting: https://aws.amazon.com/marketplace (7/8), chunk 57/57
+
+[21:14:09 +13s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[21:14:09 +13s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[21:14:09 +13s] Model call failed for https://aws.amazon.com/marketplace chunk 57: litellm.APIConnectionError: OllamaException - Cannot connect to host localhost:11434 ssl:<ssl.SSLContext object at 0x7f471335ee50> [Connect call failed ('127.0.0.1', 11434)]
+[21:14:09 +13s] Reading page (8/8): https://aws.amazon.com/contact-us
+[21:14:09 +13s] Extracting: https://aws.amazon.com/contact-us (8/8), chunk 1/14
+
+[21:14:09 +13s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[21:14:09 +13s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[21:14:09 +13s] Model call failed for https://aws.amazon.com/contact-us chunk 1: litellm.APIConnectionError: OllamaException - Cannot connect to host localhost:11434 ssl:<ssl.SSLContext object at 0x7f471335ee50> [Connect call failed ('127.0.0.1', 11434)]
+[21:14:09 +13s] Extracting: https://aws.amazon.com/contact-us (8/8), chunk 2/14
+
+[21:14:09 +13s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[21:14:09 +13s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[21:14:09 +13s] Model call failed for https://aws.amazon.com/contact-us chunk 2: litellm.APIConnectionError: OllamaException - Cannot connect to host localhost:11434 ssl:<ssl.SSLContext object at 0x7f471335ee50> [Connect call failed ('127.0.0.1', 11434)]
+[21:14:09 +13s] Extracting: https://aws.amazon.com/contact-us (8/8), chunk 3/14
+
+[21:14:09 +13s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[21:14:09 +13s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[21:14:09 +13s] Model call failed for https://aws.amazon.com/contact-us chunk 3: litellm.APIConnectionError: OllamaException - Cannot connect to host localhost:11434 ssl:<ssl.SSLContext object at 0x7f471335ee50> [Connect call failed ('127.0.0.1', 11434)]
+[21:14:09 +13s] Extracting: https://aws.amazon.com/contact-us (8/8), chunk 4/14
+
+[21:14:09 +13s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[21:14:09 +13s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[21:14:09 +13s] Model call failed for https://aws.amazon.com/contact-us chunk 4: litellm.APIConnectionError: OllamaException - Cannot connect to host localhost:11434 ssl:<ssl.SSLContext object at 0x7f471335ee50> [Connect call failed ('127.0.0.1', 11434)]
+[21:14:09 +13s] Extracting: https://aws.amazon.com/contact-us (8/8), chunk 5/14
+
+[21:14:09 +13s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[21:14:09 +13s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[21:14:09 +13s] Model call failed for https://aws.amazon.com/contact-us chunk 5: litellm.APIConnectionError: OllamaException - Cannot connect to host localhost:11434 ssl:<ssl.SSLContext object at 0x7f471335ee50> [Connect call failed ('127.0.0.1', 11434)]
+[21:14:09 +13s] Extracting: https://aws.amazon.com/contact-us (8/8), chunk 6/14
+
+[21:14:09 +13s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[21:14:09 +13s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[21:14:09 +13s] Model call failed for https://aws.amazon.com/contact-us chunk 6: litellm.APIConnectionError: OllamaException - Cannot connect to host localhost:11434 ssl:<ssl.SSLContext object at 0x7f471335ee50> [Connect call failed ('127.0.0.1', 11434)]
+[21:14:09 +13s] Extracting: https://aws.amazon.com/contact-us (8/8), chunk 7/14
+
+[21:14:09 +13s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[21:14:09 +13s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[21:14:09 +13s] Model call failed for https://aws.amazon.com/contact-us chunk 7: litellm.APIConnectionError: OllamaException - Cannot connect to host localhost:11434 ssl:<ssl.SSLContext object at 0x7f471335ee50> [Connect call failed ('127.0.0.1', 11434)]
+[21:14:09 +13s] Extracting: https://aws.amazon.com/contact-us (8/8), chunk 8/14
+
+[21:14:09 +13s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[21:14:09 +13s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[21:14:09 +13s] Model call failed for https://aws.amazon.com/contact-us chunk 8: litellm.APIConnectionError: OllamaException - Cannot connect to host localhost:11434 ssl:<ssl.SSLContext object at 0x7f471335ee50> [Connect call failed ('127.0.0.1', 11434)]
+[21:14:09 +13s] Extracting: https://aws.amazon.com/contact-us (8/8), chunk 9/14
+
+[21:14:09 +13s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[21:14:09 +13s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[21:14:09 +13s] Model call failed for https://aws.amazon.com/contact-us chunk 9: litellm.APIConnectionError: OllamaException - Cannot connect to host localhost:11434 ssl:<ssl.SSLContext object at 0x7f471335ee50> [Connect call failed ('127.0.0.1', 11434)]
+[21:14:09 +13s] Extracting: https://aws.amazon.com/contact-us (8/8), chunk 10/14
+
+[21:14:09 +13s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[21:14:09 +13s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[21:14:09 +13s] Model call failed for https://aws.amazon.com/contact-us chunk 10: litellm.APIConnectionError: OllamaException - Cannot connect to host localhost:11434 ssl:<ssl.SSLContext object at 0x7f471335ee50> [Connect call failed ('127.0.0.1', 11434)]
+[21:14:09 +13s] Extracting: https://aws.amazon.com/contact-us (8/8), chunk 11/14
+
+[21:14:09 +13s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[21:14:09 +13s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[21:14:09 +13s] Model call failed for https://aws.amazon.com/contact-us chunk 11: litellm.APIConnectionError: OllamaException - Cannot connect to host localhost:11434 ssl:<ssl.SSLContext object at 0x7f471335ee50> [Connect call failed ('127.0.0.1', 11434)]
+[21:14:09 +13s] Extracting: https://aws.amazon.com/contact-us (8/8), chunk 12/14
+
+[21:14:09 +13s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[21:14:09 +13s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[21:14:10 +13s] Model call failed for https://aws.amazon.com/contact-us chunk 12: litellm.APIConnectionError: OllamaException - Cannot connect to host localhost:11434 ssl:<ssl.SSLContext object at 0x7f471335ee50> [Connect call failed ('127.0.0.1', 11434)]
+[21:14:10 +13s] Extracting: https://aws.amazon.com/contact-us (8/8), chunk 13/14
+
+[21:14:10 +13s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[21:14:10 +13s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[21:14:10 +13s] Model call failed for https://aws.amazon.com/contact-us chunk 13: litellm.APIConnectionError: OllamaException - Cannot connect to host localhost:11434 ssl:<ssl.SSLContext object at 0x7f471335ee50> [Connect call failed ('127.0.0.1', 11434)]
+[21:14:10 +13s] Extracting: https://aws.amazon.com/contact-us (8/8), chunk 14/14
+
+[21:14:10 +13s] [1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[21:14:10 +13s] LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+[21:14:10 +13s] Model call failed for https://aws.amazon.com/contact-us chunk 14: litellm.APIConnectionError: OllamaException - Cannot connect to host localhost:11434 ssl:<ssl.SSLContext object at 0x7f471335ee50> [Connect call failed ('127.0.0.1', 11434)]
+[21:14:10 +13s] Saved 1_actor_results.json with 0 extracted records
+
+[21:14:10 +14s] === 2 clean actors ===
+[21:14:11 +15s] Loaded 0 extracted records
+[21:14:11 +15s] Saved 2_actor_nodes.json with 0 canonical actor nodes
+
+[21:14:11 +15s] === 3 interaction extraction ===
+[21:14:14 +18s] No valid actors found, skipping.
+
+[21:14:15 +18s] === 4 clean interactions ===
+[21:14:15 +19s] Traceback (most recent call last):
+[21:14:15 +19s]   File "/content/drive/MyDrive/pipeline/clean_interactions.py", line 536, in <module>
+[21:14:15 +19s]     main()
+[21:14:15 +19s]   File "/content/drive/MyDrive/pipeline/clean_interactions.py", line 502, in main
+[21:14:15 +19s]     raw_edges = json.loads(INPUT_JSON.read_text(encoding="utf-8"))
+[21:14:15 +19s]                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[21:14:15 +19s]   File "/usr/lib/python3.12/pathlib.py", line 1027, in read_text
+[21:14:15 +19s]     with self.open(mode='r', encoding=encoding, errors=errors) as f:
+[21:14:15 +19s]          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[21:14:15 +19s]   File "/usr/lib/python3.12/pathlib.py", line 1013, in open
+[21:14:15 +19s]     return io.open(self, mode, buffering, encoding, errors, newline)
+[21:14:15 +19s]            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[21:14:15 +19s] FileNotFoundError: [Errno 2] No such file or directory: '3_interaction_results.json'
+
+========================================================================
+RUN FINISHED 2026-06-03 21:14:15  (FAILED)
+Elapsed:     19s
+========================================================================
+
+========================================================================
+RUN STARTED  2026-06-03 21:14:41
+site_pipeline.py https://aws.amazon.com/braket/ --skip-crawl
+========================================================================
+
+[21:14:41 +0s] === 0 crawl site (skipped via --skip-crawl, reusing /content/drive/MyDrive/pipeline/site_outputs/aws_amazon/crawl_output) ===
+
+[21:14:41 +0s] === 1 actor extraction ===
+[21:14:43 +3s] Auto-resume: 8 (url, ordinal) pairs already done, skipping them.
+[21:14:43 +3s] All 8 pages/URLs already processed (per 1_actor_results.progress.json). Nothing to do.
+[21:14:43 +3s] Delete the progress sidecar to force a full re-run, or pass --start-page N.
+
+[21:14:43 +3s] === 2 clean actors ===
+[21:14:43 +3s] Loaded 0 extracted records
+[21:14:43 +3s] Saved 2_actor_nodes.json with 0 canonical actor nodes
+
+[21:14:43 +3s] === 3 interaction extraction ===
+[21:14:46 +6s] No valid actors found, skipping.
+
+[21:14:47 +6s] === 4 clean interactions ===
+[21:14:47 +6s] Traceback (most recent call last):
+[21:14:47 +6s]   File "/content/drive/MyDrive/pipeline/clean_interactions.py", line 536, in <module>
+[21:14:47 +6s]     main()
+[21:14:47 +6s]   File "/content/drive/MyDrive/pipeline/clean_interactions.py", line 502, in main
+[21:14:47 +6s]     raw_edges = json.loads(INPUT_JSON.read_text(encoding="utf-8"))
+[21:14:47 +6s]                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[21:14:47 +6s]   File "/usr/lib/python3.12/pathlib.py", line 1027, in read_text
+[21:14:47 +6s]     with self.open(mode='r', encoding=encoding, errors=errors) as f:
+[21:14:47 +6s]          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[21:14:47 +6s]   File "/usr/lib/python3.12/pathlib.py", line 1013, in open
+[21:14:47 +6s]     return io.open(self, mode, buffering, encoding, errors, newline)
+[21:14:47 +6s]            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[21:14:47 +6s] FileNotFoundError: [Errno 2] No such file or directory: '3_interaction_results.json'
+
+========================================================================
+RUN FINISHED 2026-06-03 21:14:47  (FAILED)
+Elapsed:     6s
+========================================================================
+
+========================================================================
+RUN STARTED  2026-06-03 21:16:02
+site_pipeline.py https://aws.amazon.com/braket/ --skip-crawl
+========================================================================
+
+[21:16:02 +0s] === 0 crawl site (skipped via --skip-crawl, reusing /content/drive/MyDrive/pipeline/site_outputs/aws_amazon/crawl_output) ===
+
+[21:16:02 +0s] === 1 actor extraction ===
+[21:16:06 +3s] Reading page (1/8): https://console.aws.amazon.com/console/home
+[21:16:06 +3s] Extracting: https://console.aws.amazon.com/console/home (1/8), chunk 1/2
+[21:16:14 +12s] Extracting: https://console.aws.amazon.com/console/home (1/8), chunk 2/2
+[21:16:34 +32s] Reading page (2/8): https://aws.amazon.com/braket
+[21:16:34 +32s] Extracting: https://aws.amazon.com/braket (2/8), chunk 1/16
+[21:16:38 +36s] Extracting: https://aws.amazon.com/braket (2/8), chunk 2/16
+[21:16:43 +41s] Extracting: https://aws.amazon.com/braket (2/8), chunk 3/16
+[21:16:48 +45s] Extracting: https://aws.amazon.com/braket (2/8), chunk 4/16
+[21:16:52 +49s] Extracting: https://aws.amazon.com/braket (2/8), chunk 5/16
+[21:17:02 +59s] Repaired malformed JSON.
+[21:17:02 +59s] Extracting: https://aws.amazon.com/braket (2/8), chunk 6/16
+[21:17:09 +1m 6s] Extracting: https://aws.amazon.com/braket (2/8), chunk 7/16
+[21:17:15 +1m 13s] Extracting: https://aws.amazon.com/braket (2/8), chunk 8/16
+[21:17:45 +1m 43s] Extracting: https://aws.amazon.com/braket (2/8), chunk 9/16
+[21:18:22 +2m 19s] Extracting: https://aws.amazon.com/braket (2/8), chunk 10/16
+[21:18:54 +2m 51s] Extracting: https://aws.amazon.com/braket (2/8), chunk 11/16
+[21:19:08 +3m 6s] Extracting: https://aws.amazon.com/braket (2/8), chunk 12/16
+[21:19:36 +3m 33s] Extracting: https://aws.amazon.com/braket (2/8), chunk 13/16
+[21:20:11 +4m 8s] Extracting: https://aws.amazon.com/braket (2/8), chunk 14/16
+[21:20:43 +4m 41s] Extracting: https://aws.amazon.com/braket (2/8), chunk 15/16
+[21:20:48 +4m 46s] Extracting: https://aws.amazon.com/braket (2/8), chunk 16/16
+[21:21:05 +5m 3s] Repaired malformed JSON.
+[21:21:05 +5m 3s] Reading page (3/8): https://aws.amazon.com/braket/customers
+[21:21:05 +5m 3s] Extracting: https://aws.amazon.com/braket/customers (3/8), chunk 1/33
+[21:21:22 +5m 20s] Extracting: https://aws.amazon.com/braket/customers (3/8), chunk 2/33
+[21:21:32 +5m 30s] Extracting: https://aws.amazon.com/braket/customers (3/8), chunk 3/33
+[21:21:38 +5m 36s] Extracting: https://aws.amazon.com/braket/customers (3/8), chunk 4/33
+[21:21:43 +5m 40s] Extracting: https://aws.amazon.com/braket/customers (3/8), chunk 5/33
+[21:21:50 +5m 48s] Extracting: https://aws.amazon.com/braket/customers (3/8), chunk 6/33
+[21:22:11 +6m 8s] Extracting: https://aws.amazon.com/braket/customers (3/8), chunk 7/33
+[21:22:24 +6m 22s] Extracting: https://aws.amazon.com/braket/customers (3/8), chunk 8/33
+[21:22:57 +6m 55s] Repaired malformed JSON.
+[21:22:57 +6m 55s] Extracting: https://aws.amazon.com/braket/customers (3/8), chunk 9/33
+[21:23:40 +7m 38s] Extracting: https://aws.amazon.com/braket/customers (3/8), chunk 10/33
+[21:23:55 +7m 53s] Extracting: https://aws.amazon.com/braket/customers (3/8), chunk 11/33
+[21:24:21 +8m 18s] Extracting: https://aws.amazon.com/braket/customers (3/8), chunk 12/33
+[21:24:35 +8m 33s] Extracting: https://aws.amazon.com/braket/customers (3/8), chunk 13/33
+[21:25:12 +9m 10s] Extracting: https://aws.amazon.com/braket/customers (3/8), chunk 14/33
+[21:25:56 +9m 54s] Extracting: https://aws.amazon.com/braket/customers (3/8), chunk 15/33
+[21:26:10 +10m 7s] Extracting: https://aws.amazon.com/braket/customers (3/8), chunk 16/33
+[21:26:34 +10m 32s] Extracting: https://aws.amazon.com/braket/customers (3/8), chunk 17/33
+[21:26:49 +10m 47s] Extracting: https://aws.amazon.com/braket/customers (3/8), chunk 18/33
+[21:27:12 +11m 10s] Extracting: https://aws.amazon.com/braket/customers (3/8), chunk 19/33
+[21:27:31 +11m 29s] Extracting: https://aws.amazon.com/braket/customers (3/8), chunk 20/33
+[21:27:51 +11m 49s] Extracting: https://aws.amazon.com/braket/customers (3/8), chunk 21/33
+[21:28:12 +12m 10s] Extracting: https://aws.amazon.com/braket/customers (3/8), chunk 22/33
+[21:28:34 +12m 32s] Repaired malformed JSON.
+[21:28:34 +12m 32s] Extracting: https://aws.amazon.com/braket/customers (3/8), chunk 23/33
+[21:28:53 +12m 50s] Extracting: https://aws.amazon.com/braket/customers (3/8), chunk 24/33
+[21:29:06 +13m 4s] Extracting: https://aws.amazon.com/braket/customers (3/8), chunk 25/33
+[21:30:01 +13m 59s] Extracting: https://aws.amazon.com/braket/customers (3/8), chunk 26/33
+[21:30:21 +14m 18s] Extracting: https://aws.amazon.com/braket/customers (3/8), chunk 27/33
+[21:30:34 +14m 32s] Extracting: https://aws.amazon.com/braket/customers (3/8), chunk 28/33
+[21:30:42 +14m 40s] Extracting: https://aws.amazon.com/braket/customers (3/8), chunk 29/33
+[21:30:51 +14m 49s] Extracting: https://aws.amazon.com/braket/customers (3/8), chunk 30/33
+[21:31:06 +15m 4s] Extracting: https://aws.amazon.com/braket/customers (3/8), chunk 31/33
+[21:32:38 +16m 35s] Extracting: https://aws.amazon.com/braket/customers (3/8), chunk 32/33
+[21:32:42 +16m 40s] Extracting: https://aws.amazon.com/braket/customers (3/8), chunk 33/33
+[21:32:48 +16m 45s] Reading page (4/8): https://aws.amazon.com/braket/quantum-computers
+[21:32:48 +16m 45s] Extracting: https://aws.amazon.com/braket/quantum-computers (4/8), chunk 1/14
+[21:32:53 +16m 51s] Extracting: https://aws.amazon.com/braket/quantum-computers (4/8), chunk 2/14
+[21:33:01 +16m 59s] Extracting: https://aws.amazon.com/braket/quantum-computers (4/8), chunk 3/14
+[21:33:08 +17m 5s] Extracting: https://aws.amazon.com/braket/quantum-computers (4/8), chunk 4/14
+[21:33:12 +17m 10s] Extracting: https://aws.amazon.com/braket/quantum-computers (4/8), chunk 5/14
+[21:33:18 +17m 15s] Extracting: https://aws.amazon.com/braket/quantum-computers (4/8), chunk 6/14
+[21:33:32 +17m 30s] Extracting: https://aws.amazon.com/braket/quantum-computers (4/8), chunk 7/14
+[21:33:56 +17m 54s] Extracting: https://aws.amazon.com/braket/quantum-computers (4/8), chunk 8/14
+[21:34:16 +18m 14s] Extracting: https://aws.amazon.com/braket/quantum-computers (4/8), chunk 9/14
+[21:34:31 +18m 29s] Extracting: https://aws.amazon.com/braket/quantum-computers (4/8), chunk 10/14
+[21:34:36 +18m 34s] Extracting: https://aws.amazon.com/braket/quantum-computers (4/8), chunk 11/14
+[21:34:51 +18m 49s] Extracting: https://aws.amazon.com/braket/quantum-computers (4/8), chunk 12/14
+[21:35:44 +19m 41s] Extracting: https://aws.amazon.com/braket/quantum-computers (4/8), chunk 13/14
+[21:35:49 +19m 47s] Extracting: https://aws.amazon.com/braket/quantum-computers (4/8), chunk 14/14
+[21:36:08 +20m 6s] Repaired malformed JSON.
+[21:36:08 +20m 6s] Reading page (5/8): https://aws.amazon.com
+[21:36:08 +20m 6s] Extracting: https://aws.amazon.com (5/8), chunk 1/16
+[21:36:14 +20m 11s] Extracting: https://aws.amazon.com (5/8), chunk 2/16
+[21:36:19 +20m 17s] Extracting: https://aws.amazon.com (5/8), chunk 3/16
+[21:36:24 +20m 22s] Extracting: https://aws.amazon.com (5/8), chunk 4/16
+[21:36:30 +20m 28s] Extracting: https://aws.amazon.com (5/8), chunk 5/16
+[21:36:45 +20m 42s] Repaired malformed JSON.
+[21:36:45 +20m 42s] Extracting: https://aws.amazon.com (5/8), chunk 6/16
+[21:37:08 +21m 6s] Extracting: https://aws.amazon.com (5/8), chunk 7/16
+[21:37:45 +21m 42s] Extracting: https://aws.amazon.com (5/8), chunk 8/16
+[21:38:37 +22m 35s] Extracting: https://aws.amazon.com (5/8), chunk 9/16
+[21:39:19 +23m 16s] Extracting: https://aws.amazon.com (5/8), chunk 10/16
+[21:39:39 +23m 37s] Extracting: https://aws.amazon.com (5/8), chunk 11/16
+[21:41:35 +25m 32s] Extracting: https://aws.amazon.com (5/8), chunk 12/16
+[21:41:45 +25m 43s] Extracting: https://aws.amazon.com (5/8), chunk 13/16
+[21:42:00 +25m 57s] Extracting: https://aws.amazon.com (5/8), chunk 14/16
+[21:42:38 +26m 36s] Extracting: https://aws.amazon.com (5/8), chunk 15/16
+[21:42:50 +26m 47s] Extracting: https://aws.amazon.com (5/8), chunk 16/16
+[21:43:08 +27m 5s] Repaired malformed JSON.
+[21:43:08 +27m 5s] Reading page (6/8): https://signin.aws.amazon.com/signup
+[21:43:08 +27m 5s] Extracting: https://signin.aws.amazon.com/signup (6/8), chunk 1/2
+[21:43:13 +27m 11s] Extracting: https://signin.aws.amazon.com/signup (6/8), chunk 2/2
+[21:43:19 +27m 17s] Reading page (7/8): https://aws.amazon.com/marketplace
+[21:43:19 +27m 17s] Extracting: https://aws.amazon.com/marketplace (7/8), chunk 1/57
+[21:43:24 +27m 22s] Extracting: https://aws.amazon.com/marketplace (7/8), chunk 2/57
+[21:43:30 +27m 28s] Extracting: https://aws.amazon.com/marketplace (7/8), chunk 3/57
+[21:43:47 +27m 45s] Extracting: https://aws.amazon.com/marketplace (7/8), chunk 4/57
+[21:43:52 +27m 50s] Extracting: https://aws.amazon.com/marketplace (7/8), chunk 5/57
+[21:44:15 +28m 12s] Extracting: https://aws.amazon.com/marketplace (7/8), chunk 6/57
+[21:44:48 +28m 46s] Extracting: https://aws.amazon.com/marketplace (7/8), chunk 7/57
+[21:45:10 +29m 8s] Extracting: https://aws.amazon.com/marketplace (7/8), chunk 8/57
+[21:45:28 +29m 26s] Extracting: https://aws.amazon.com/marketplace (7/8), chunk 9/57
+[21:45:50 +29m 48s] Extracting: https://aws.amazon.com/marketplace (7/8), chunk 10/57
+[21:46:07 +30m 5s] Extracting: https://aws.amazon.com/marketplace (7/8), chunk 11/57
+[21:46:35 +30m 32s] Extracting: https://aws.amazon.com/marketplace (7/8), chunk 12/57
+[21:46:56 +30m 54s] Extracting: https://aws.amazon.com/marketplace (7/8), chunk 13/57
+[21:47:20 +31m 18s] Extracting: https://aws.amazon.com/marketplace (7/8), chunk 14/57
+[21:47:49 +31m 47s] Extracting: https://aws.amazon.com/marketplace (7/8), chunk 15/57
+[21:48:16 +32m 14s] Extracting: https://aws.amazon.com/marketplace (7/8), chunk 16/57
+[21:48:44 +32m 41s] Extracting: https://aws.amazon.com/marketplace (7/8), chunk 17/57
+[21:49:15 +33m 13s] Extracting: https://aws.amazon.com/marketplace (7/8), chunk 18/57
+[21:49:42 +33m 40s] Extracting: https://aws.amazon.com/marketplace (7/8), chunk 19/57
+[21:50:11 +34m 9s] Extracting: https://aws.amazon.com/marketplace (7/8), chunk 20/57
+[21:50:36 +34m 34s] Extracting: https://aws.amazon.com/marketplace (7/8), chunk 21/57
+[21:51:02 +35m 0s] Extracting: https://aws.amazon.com/marketplace (7/8), chunk 22/57
+[21:51:50 +35m 47s] Repaired malformed JSON.
+[21:51:50 +35m 47s] Extracting: https://aws.amazon.com/marketplace (7/8), chunk 23/57
+[21:52:06 +36m 4s] Extracting: https://aws.amazon.com/marketplace (7/8), chunk 24/57
+[21:52:20 +36m 18s] Extracting: https://aws.amazon.com/marketplace (7/8), chunk 25/57
+[21:52:34 +36m 32s] Extracting: https://aws.amazon.com/marketplace (7/8), chunk 26/57
+[21:52:59 +36m 56s] Extracting: https://aws.amazon.com/marketplace (7/8), chunk 27/57
+[21:53:25 +37m 23s] Extracting: https://aws.amazon.com/marketplace (7/8), chunk 28/57
+[21:53:41 +37m 38s] Extracting: https://aws.amazon.com/marketplace (7/8), chunk 29/57
+[21:54:01 +37m 58s] Extracting: https://aws.amazon.com/marketplace (7/8), chunk 30/57
+[21:54:37 +38m 35s] Repaired malformed JSON.
+[21:54:37 +38m 35s] Extracting: https://aws.amazon.com/marketplace (7/8), chunk 31/57
+[21:54:57 +38m 54s] Extracting: https://aws.amazon.com/marketplace (7/8), chunk 32/57
+[21:55:40 +39m 38s] Extracting: https://aws.amazon.com/marketplace (7/8), chunk 33/57
+[21:56:09 +40m 7s] Repaired malformed JSON.
+[21:56:09 +40m 7s] Extracting: https://aws.amazon.com/marketplace (7/8), chunk 34/57
+[21:56:14 +40m 12s] Extracting: https://aws.amazon.com/marketplace (7/8), chunk 35/57
+[21:57:00 +40m 58s] Extracting: https://aws.amazon.com/marketplace (7/8), chunk 36/57
+[21:58:06 +42m 4s] Extracting: https://aws.amazon.com/marketplace (7/8), chunk 37/57
+[21:58:38 +42m 36s] Extracting: https://aws.amazon.com/marketplace (7/8), chunk 38/57
+[21:58:50 +42m 48s] Extracting: https://aws.amazon.com/marketplace (7/8), chunk 39/57
+[21:59:33 +43m 30s] Extracting: https://aws.amazon.com/marketplace (7/8), chunk 40/57
+[22:00:16 +44m 14s] Extracting: https://aws.amazon.com/marketplace (7/8), chunk 41/57
+[22:00:32 +44m 30s] Extracting: https://aws.amazon.com/marketplace (7/8), chunk 42/57
+[22:00:49 +44m 47s] Extracting: https://aws.amazon.com/marketplace (7/8), chunk 43/57
+[22:01:41 +45m 39s] Extracting: https://aws.amazon.com/marketplace (7/8), chunk 44/57
+[22:02:16 +46m 14s] Repaired malformed JSON.
+[22:02:16 +46m 14s] Extracting: https://aws.amazon.com/marketplace (7/8), chunk 45/57
+[22:03:12 +47m 10s] Extracting: https://aws.amazon.com/marketplace (7/8), chunk 46/57
+[22:04:08 +48m 6s] Extracting: https://aws.amazon.com/marketplace (7/8), chunk 47/57
+[22:04:47 +48m 45s] Extracting: https://aws.amazon.com/marketplace (7/8), chunk 48/57
+[22:05:53 +49m 51s] Extracting: https://aws.amazon.com/marketplace (7/8), chunk 49/57
+[22:06:50 +50m 47s] Extracting: https://aws.amazon.com/marketplace (7/8), chunk 50/57
+[22:07:28 +51m 26s] Extracting: https://aws.amazon.com/marketplace (7/8), chunk 51/57
+[22:08:13 +52m 10s] Extracting: https://aws.amazon.com/marketplace (7/8), chunk 52/57
+[22:09:05 +53m 3s] Extracting: https://aws.amazon.com/marketplace (7/8), chunk 53/57
+[22:09:45 +53m 42s] Extracting: https://aws.amazon.com/marketplace (7/8), chunk 54/57
+[22:10:08 +54m 5s] Extracting: https://aws.amazon.com/marketplace (7/8), chunk 55/57
+[22:10:26 +54m 24s] Extracting: https://aws.amazon.com/marketplace (7/8), chunk 56/57
+[22:10:37 +54m 35s] Extracting: https://aws.amazon.com/marketplace (7/8), chunk 57/57
+[22:10:51 +54m 49s] Reading page (8/8): https://aws.amazon.com/contact-us
+[22:10:51 +54m 49s] Extracting: https://aws.amazon.com/contact-us (8/8), chunk 1/14
+[22:10:56 +54m 54s] Extracting: https://aws.amazon.com/contact-us (8/8), chunk 2/14
+[22:11:02 +55m 0s] Extracting: https://aws.amazon.com/contact-us (8/8), chunk 3/14
+[22:11:07 +55m 5s] Extracting: https://aws.amazon.com/contact-us (8/8), chunk 4/14
+[22:11:13 +55m 10s] Extracting: https://aws.amazon.com/contact-us (8/8), chunk 5/14
+[22:11:22 +55m 20s] Extracting: https://aws.amazon.com/contact-us (8/8), chunk 6/14
+[22:11:26 +55m 24s] Extracting: https://aws.amazon.com/contact-us (8/8), chunk 7/14
+[22:11:47 +55m 44s] Extracting: https://aws.amazon.com/contact-us (8/8), chunk 8/14
+[22:11:52 +55m 50s] Extracting: https://aws.amazon.com/contact-us (8/8), chunk 9/14
+[22:12:20 +56m 18s] Extracting: https://aws.amazon.com/contact-us (8/8), chunk 10/14
+[22:12:25 +56m 23s] Extracting: https://aws.amazon.com/contact-us (8/8), chunk 11/14
+[22:13:12 +57m 10s] Extracting: https://aws.amazon.com/contact-us (8/8), chunk 12/14
+[22:13:44 +57m 42s] Extracting: https://aws.amazon.com/contact-us (8/8), chunk 13/14
+[22:13:51 +57m 48s] Extracting: https://aws.amazon.com/contact-us (8/8), chunk 14/14
+[22:14:01 +57m 59s] Repaired malformed JSON.
+[22:14:02 +57m 59s] Saved 1_actor_results.json with 463 extracted records
+
+[22:14:02 +58m 0s] === 2 clean actors ===
+[22:14:04 +58m 2s] Loaded 463 extracted records
+[22:14:04 +58m 2s] Saved 2_actor_nodes.json with 129 canonical actor nodes
+
+[22:14:04 +58m 2s] === 3 interaction extraction ===
+[22:14:08 +58m 6s] Extracting interactions: https://console.aws.amazon.com/console/home (1/8), chunk 1/2
+[22:14:32 +58m 30s] Extracting interactions: https://console.aws.amazon.com/console/home (1/8), chunk 2/2
+[22:14:38 +58m 35s] Extracting interactions: https://aws.amazon.com/braket (2/8), chunk 2/16
+[22:14:44 +58m 42s] Extracting interactions: https://aws.amazon.com/braket (2/8), chunk 3/16
+[22:14:51 +58m 48s] Extracting interactions: https://aws.amazon.com/braket (2/8), chunk 4/16
+[22:14:58 +58m 56s] Extracting interactions: https://aws.amazon.com/braket (2/8), chunk 5/16
+[22:15:18 +59m 16s] Extracting interactions: https://aws.amazon.com/braket (2/8), chunk 6/16
+[22:15:25 +59m 22s] Extracting interactions: https://aws.amazon.com/braket (2/8), chunk 7/16
+[22:15:38 +59m 36s] Extracting interactions: https://aws.amazon.com/braket (2/8), chunk 8/16
+[22:15:56 +59m 53s] Extracting interactions: https://aws.amazon.com/braket (2/8), chunk 9/16
+[22:16:31 +1h 0m 28s] Extracting interactions: https://aws.amazon.com/braket (2/8), chunk 10/16
+[22:16:49 +1h 0m 46s] Extracting interactions: https://aws.amazon.com/braket (2/8), chunk 11/16
+[22:16:56 +1h 0m 54s] Extracting interactions: https://aws.amazon.com/braket (2/8), chunk 12/16
+[22:17:08 +1h 1m 5s] Extracting interactions: https://aws.amazon.com/braket (2/8), chunk 13/16
+[22:17:53 +1h 1m 51s] Extracting interactions: https://aws.amazon.com/braket (2/8), chunk 14/16
+[22:18:46 +1h 2m 44s] Extracting interactions: https://aws.amazon.com/braket (2/8), chunk 15/16
+[22:18:53 +1h 2m 51s] Extracting interactions: https://aws.amazon.com/braket (2/8), chunk 16/16
+[22:19:26 +1h 3m 23s] Extracting interactions: https://aws.amazon.com/braket/customers (3/8), chunk 2/33
+[22:19:32 +1h 3m 30s] Extracting interactions: https://aws.amazon.com/braket/customers (3/8), chunk 3/33
+[22:19:38 +1h 3m 36s] Extracting interactions: https://aws.amazon.com/braket/customers (3/8), chunk 4/33
+[22:19:48 +1h 3m 46s] Extracting interactions: https://aws.amazon.com/braket/customers (3/8), chunk 5/33
+[22:19:56 +1h 3m 54s] Extracting interactions: https://aws.amazon.com/braket/customers (3/8), chunk 6/33
+[22:20:14 +1h 4m 11s] Extracting interactions: https://aws.amazon.com/braket/customers (3/8), chunk 7/33
+[22:20:28 +1h 4m 26s] Extracting interactions: https://aws.amazon.com/braket/customers (3/8), chunk 8/33
+[22:20:42 +1h 4m 40s] Extracting interactions: https://aws.amazon.com/braket/customers (3/8), chunk 9/33
+[22:20:51 +1h 4m 49s] Extracting interactions: https://aws.amazon.com/braket/customers (3/8), chunk 10/33
+[22:21:06 +1h 5m 4s] Extracting interactions: https://aws.amazon.com/braket/customers (3/8), chunk 11/33
+[22:21:22 +1h 5m 19s] Extracting interactions: https://aws.amazon.com/braket/customers (3/8), chunk 12/33
+[22:21:32 +1h 5m 30s] Extracting interactions: https://aws.amazon.com/braket/customers (3/8), chunk 13/33
+[22:21:57 +1h 5m 55s] Extracting interactions: https://aws.amazon.com/braket/customers (3/8), chunk 14/33
+[22:22:42 +1h 6m 40s] Extracting interactions: https://aws.amazon.com/braket/customers (3/8), chunk 15/33
+[22:22:49 +1h 6m 47s] Extracting interactions: https://aws.amazon.com/braket/customers (3/8), chunk 16/33
+[22:23:01 +1h 6m 58s] Extracting interactions: https://aws.amazon.com/braket/customers (3/8), chunk 17/33
+[22:23:07 +1h 7m 5s] Extracting interactions: https://aws.amazon.com/braket/customers (3/8), chunk 18/33
+[22:23:19 +1h 7m 17s] Extracting interactions: https://aws.amazon.com/braket/customers (3/8), chunk 19/33
+[22:23:32 +1h 7m 29s] Extracting interactions: https://aws.amazon.com/braket/customers (3/8), chunk 20/33
+[22:23:47 +1h 7m 45s] Extracting interactions: https://aws.amazon.com/braket/customers (3/8), chunk 21/33
+[22:23:54 +1h 7m 51s] Extracting interactions: https://aws.amazon.com/braket/customers (3/8), chunk 22/33
+[22:24:02 +1h 8m 0s] Extracting interactions: https://aws.amazon.com/braket/customers (3/8), chunk 23/33
+[22:24:18 +1h 8m 16s] Extracting interactions: https://aws.amazon.com/braket/customers (3/8), chunk 24/33
+[22:24:29 +1h 8m 27s] Extracting interactions: https://aws.amazon.com/braket/customers (3/8), chunk 25/33
+[22:25:15 +1h 9m 13s] Extracting interactions: https://aws.amazon.com/braket/customers (3/8), chunk 26/33
+[22:25:32 +1h 9m 30s] Extracting interactions: https://aws.amazon.com/braket/customers (3/8), chunk 27/33
+[22:25:42 +1h 9m 39s] Extracting interactions: https://aws.amazon.com/braket/customers (3/8), chunk 28/33
+[22:25:57 +1h 9m 55s] Extracting interactions: https://aws.amazon.com/braket/customers (3/8), chunk 29/33
+[22:26:14 +1h 10m 11s] Extracting interactions: https://aws.amazon.com/braket/customers (3/8), chunk 30/33
+[22:26:44 +1h 10m 41s] Extracting interactions: https://aws.amazon.com/braket/customers (3/8), chunk 31/33
+[22:27:10 +1h 11m 7s] Extracting interactions: https://aws.amazon.com/braket/customers (3/8), chunk 32/33
+[22:27:16 +1h 11m 14s] Extracting interactions: https://aws.amazon.com/braket/customers (3/8), chunk 33/33
+[22:27:22 +1h 11m 20s] Extracting interactions: https://aws.amazon.com/braket/quantum-computers (4/8), chunk 2/14
+[22:27:29 +1h 11m 27s] Extracting interactions: https://aws.amazon.com/braket/quantum-computers (4/8), chunk 3/14
+[22:27:35 +1h 11m 33s] Extracting interactions: https://aws.amazon.com/braket/quantum-computers (4/8), chunk 4/14
+[22:27:43 +1h 11m 41s] Extracting interactions: https://aws.amazon.com/braket/quantum-computers (4/8), chunk 5/14
+[22:27:57 +1h 11m 55s] Extracting interactions: https://aws.amazon.com/braket/quantum-computers (4/8), chunk 6/14
+[22:28:10 +1h 12m 7s] Extracting interactions: https://aws.amazon.com/braket/quantum-computers (4/8), chunk 7/14
+[22:28:31 +1h 12m 28s] Extracting interactions: https://aws.amazon.com/braket/quantum-computers (4/8), chunk 8/14
+[22:28:46 +1h 12m 44s] Extracting interactions: https://aws.amazon.com/braket/quantum-computers (4/8), chunk 9/14
+[22:28:57 +1h 12m 54s] Extracting interactions: https://aws.amazon.com/braket/quantum-computers (4/8), chunk 10/14
+[22:29:03 +1h 13m 0s] Extracting interactions: https://aws.amazon.com/braket/quantum-computers (4/8), chunk 11/14
+[22:29:55 +1h 13m 53s] Extracting interactions: https://aws.amazon.com/braket/quantum-computers (4/8), chunk 12/14
+[22:30:48 +1h 14m 46s] Extracting interactions: https://aws.amazon.com/braket/quantum-computers (4/8), chunk 13/14
+[22:31:41 +1h 15m 38s] Extracting interactions: https://aws.amazon.com/braket/quantum-computers (4/8), chunk 14/14
+[22:31:46 +1h 15m 44s] Extracting interactions: https://aws.amazon.com (5/8), chunk 2/16
+[22:31:52 +1h 15m 50s] Extracting interactions: https://aws.amazon.com (5/8), chunk 3/16
+[22:31:58 +1h 15m 56s] Extracting interactions: https://aws.amazon.com (5/8), chunk 4/16
+[22:32:07 +1h 16m 5s] Extracting interactions: https://aws.amazon.com (5/8), chunk 5/16
+[22:32:14 +1h 16m 11s] Extracting interactions: https://aws.amazon.com (5/8), chunk 6/16
+[22:32:23 +1h 16m 21s] Extracting interactions: https://aws.amazon.com (5/8), chunk 7/16
+[22:32:52 +1h 16m 50s] Extracting interactions: https://aws.amazon.com (5/8), chunk 8/16
+[22:33:46 +1h 17m 44s] Extracting interactions: https://aws.amazon.com (5/8), chunk 9/16
+[22:34:11 +1h 18m 9s] Extracting interactions: https://aws.amazon.com (5/8), chunk 10/16
+[22:34:23 +1h 18m 21s] Extracting interactions: https://aws.amazon.com (5/8), chunk 12/16
+[22:34:29 +1h 18m 26s] Extracting interactions: https://aws.amazon.com (5/8), chunk 13/16
+[22:34:56 +1h 18m 54s] Extracting interactions: https://aws.amazon.com (5/8), chunk 14/16
+[22:35:22 +1h 19m 20s] Extracting interactions: https://aws.amazon.com (5/8), chunk 15/16
+[22:35:53 +1h 19m 50s] Extracting interactions: https://aws.amazon.com (5/8), chunk 16/16
+[22:36:31 +1h 20m 28s] Extracting interactions: https://signin.aws.amazon.com/signup (6/8), chunk 1/2
+[22:36:46 +1h 20m 43s] Extracting interactions: https://signin.aws.amazon.com/signup (6/8), chunk 2/2
+[22:36:56 +1h 20m 54s] Extracting interactions: https://aws.amazon.com/marketplace (7/8), chunk 2/57
+[22:37:02 +1h 21m 0s] Extracting interactions: https://aws.amazon.com/marketplace (7/8), chunk 3/57
+[22:37:08 +1h 21m 6s] Extracting interactions: https://aws.amazon.com/marketplace (7/8), chunk 4/57
+[22:37:17 +1h 21m 14s] Extracting interactions: https://aws.amazon.com/marketplace (7/8), chunk 5/57
+[22:37:39 +1h 21m 36s] Extracting interactions: https://aws.amazon.com/marketplace (7/8), chunk 6/57
+[22:37:53 +1h 21m 51s] Extracting interactions: https://aws.amazon.com/marketplace (7/8), chunk 7/57
+[22:38:01 +1h 21m 59s] Extracting interactions: https://aws.amazon.com/marketplace (7/8), chunk 8/57
+[22:38:15 +1h 22m 13s] Extracting interactions: https://aws.amazon.com/marketplace (7/8), chunk 9/57
+[22:38:22 +1h 22m 20s] Extracting interactions: https://aws.amazon.com/marketplace (7/8), chunk 10/57
+[22:38:42 +1h 22m 40s] Extracting interactions: https://aws.amazon.com/marketplace (7/8), chunk 11/57
+[22:38:56 +1h 22m 54s] Extracting interactions: https://aws.amazon.com/marketplace (7/8), chunk 12/57
+[22:39:13 +1h 23m 11s] Extracting interactions: https://aws.amazon.com/marketplace (7/8), chunk 13/57
+[22:39:31 +1h 23m 29s] Extracting interactions: https://aws.amazon.com/marketplace (7/8), chunk 14/57
+[22:39:55 +1h 23m 53s] Extracting interactions: https://aws.amazon.com/marketplace (7/8), chunk 15/57
+[22:40:19 +1h 24m 17s] Extracting interactions: https://aws.amazon.com/marketplace (7/8), chunk 16/57
+[22:40:33 +1h 24m 31s] Extracting interactions: https://aws.amazon.com/marketplace (7/8), chunk 17/57
+[22:40:48 +1h 24m 46s] Extracting interactions: https://aws.amazon.com/marketplace (7/8), chunk 18/57
+[22:41:17 +1h 25m 15s] Extracting interactions: https://aws.amazon.com/marketplace (7/8), chunk 19/57
+[22:41:41 +1h 25m 39s] Extracting interactions: https://aws.amazon.com/marketplace (7/8), chunk 20/57
+[22:42:00 +1h 25m 58s] Extracting interactions: https://aws.amazon.com/marketplace (7/8), chunk 21/57
+[22:42:24 +1h 26m 22s] Extracting interactions: https://aws.amazon.com/marketplace (7/8), chunk 22/57
+[22:42:51 +1h 26m 49s] Extracting interactions: https://aws.amazon.com/marketplace (7/8), chunk 23/57
+[22:43:10 +1h 27m 8s] Extracting interactions: https://aws.amazon.com/marketplace (7/8), chunk 25/57
+[22:43:23 +1h 27m 21s] Extracting interactions: https://aws.amazon.com/marketplace (7/8), chunk 26/57
+[22:43:50 +1h 27m 48s] Extracting interactions: https://aws.amazon.com/marketplace (7/8), chunk 27/57
+[22:44:16 +1h 28m 14s] Extracting interactions: https://aws.amazon.com/marketplace (7/8), chunk 28/57
+[22:44:25 +1h 28m 22s] Extracting interactions: https://aws.amazon.com/marketplace (7/8), chunk 29/57
+[22:44:36 +1h 28m 34s] Extracting interactions: https://aws.amazon.com/marketplace (7/8), chunk 30/57
+[22:44:49 +1h 28m 47s] Extracting interactions: https://aws.amazon.com/marketplace (7/8), chunk 31/57
+[22:45:08 +1h 29m 5s] Extracting interactions: https://aws.amazon.com/marketplace (7/8), chunk 32/57
+[22:46:03 +1h 30m 0s] Extracting interactions: https://aws.amazon.com/marketplace (7/8), chunk 38/57
+[22:46:13 +1h 30m 11s] Extracting interactions: https://aws.amazon.com/marketplace (7/8), chunk 39/57
+[22:46:22 +1h 30m 20s] Extracting interactions: https://aws.amazon.com/marketplace (7/8), chunk 40/57
+[22:46:53 +1h 30m 51s] Extracting interactions: https://aws.amazon.com/marketplace (7/8), chunk 41/57
+[22:47:39 +1h 31m 37s] Extracting interactions: https://aws.amazon.com/marketplace (7/8), chunk 42/57
+[22:47:54 +1h 31m 52s] Extracting interactions: https://aws.amazon.com/marketplace (7/8), chunk 43/57
+[22:48:06 +1h 32m 4s] Extracting interactions: https://aws.amazon.com/marketplace (7/8), chunk 44/57
+[22:48:20 +1h 32m 18s] Extracting interactions: https://aws.amazon.com/marketplace (7/8), chunk 45/57
+[22:48:31 +1h 32m 29s] Extracting interactions: https://aws.amazon.com/marketplace (7/8), chunk 46/57
+[22:49:27 +1h 33m 25s] Extracting interactions: https://aws.amazon.com/marketplace (7/8), chunk 47/57
+[22:50:23 +1h 34m 21s] Extracting interactions: https://aws.amazon.com/marketplace (7/8), chunk 48/57
+[22:50:42 +1h 34m 39s] Extracting interactions: https://aws.amazon.com/marketplace (7/8), chunk 49/57
+[22:51:37 +1h 35m 35s] Extracting interactions: https://aws.amazon.com/marketplace (7/8), chunk 50/57
+[22:52:33 +1h 36m 31s] Extracting interactions: https://aws.amazon.com/marketplace (7/8), chunk 51/57
+[22:52:45 +1h 36m 42s] Extracting interactions: https://aws.amazon.com/marketplace (7/8), chunk 52/57
+[22:53:40 +1h 37m 38s] Extracting interactions: https://aws.amazon.com/marketplace (7/8), chunk 53/57
+[22:53:47 +1h 37m 45s] Extracting interactions: https://aws.amazon.com/marketplace (7/8), chunk 54/57
+[22:54:02 +1h 38m 0s] Extracting interactions: https://aws.amazon.com/marketplace (7/8), chunk 55/57
+[22:54:26 +1h 38m 24s] Extracting interactions: https://aws.amazon.com/marketplace (7/8), chunk 56/57
+[22:54:35 +1h 38m 33s] Extracting interactions: https://aws.amazon.com/marketplace (7/8), chunk 57/57
+[22:55:06 +1h 39m 4s] Extracting interactions: https://aws.amazon.com/contact-us (8/8), chunk 2/14
+[22:55:15 +1h 39m 13s] Extracting interactions: https://aws.amazon.com/contact-us (8/8), chunk 3/14
+[22:55:21 +1h 39m 19s] Extracting interactions: https://aws.amazon.com/contact-us (8/8), chunk 4/14
+[22:55:30 +1h 39m 28s] Extracting interactions: https://aws.amazon.com/contact-us (8/8), chunk 5/14
+[22:55:36 +1h 39m 34s] Extracting interactions: https://aws.amazon.com/contact-us (8/8), chunk 6/14
+[22:55:46 +1h 39m 44s] Extracting interactions: https://aws.amazon.com/contact-us (8/8), chunk 7/14
+[22:56:04 +1h 40m 2s] Extracting interactions: https://aws.amazon.com/contact-us (8/8), chunk 9/14
+[22:56:21 +1h 40m 19s] Extracting interactions: https://aws.amazon.com/contact-us (8/8), chunk 10/14
+[22:56:35 +1h 40m 33s] Extracting interactions: https://aws.amazon.com/contact-us (8/8), chunk 11/14
+[22:57:04 +1h 41m 1s] Extracting interactions: https://aws.amazon.com/contact-us (8/8), chunk 12/14
+[22:57:28 +1h 41m 26s] Extracting interactions: https://aws.amazon.com/contact-us (8/8), chunk 13/14
+[22:57:35 +1h 41m 32s] Extracting interactions: https://aws.amazon.com/contact-us (8/8), chunk 14/14
+[22:58:13 +1h 42m 11s] Saved 3_interaction_results.json with 331 extracted interactions.
+
+[22:58:13 +1h 42m 11s] === 4 clean interactions ===
+[22:58:13 +1h 42m 11s] Saved 4_edges.json with 29 cleaned interactions.
+
+[22:58:13 +1h 42m 11s] === 5 helix enrichment ===
+[22:58:14 +1h 42m 12s] Wrote 5_nodes.json (129 actors)
+[22:58:14 +1h 42m 12s] Wrote 5_edges.json (29 interactions)
+[22:58:14 +1h 42m 12s] Actor helix counts: {'Academia': 9, 'Civil Society': 5, 'Government': 1, 'Industry': 87, 'Intermediary': 11, 'Unknown': 16}
+[22:58:14 +1h 42m 12s] Functional-space counts: {'Innovation': 8, 'Intra-helix / Not classified': 18, 'Public': 1, 'Unknown': 2}
+
+[22:58:14 +1h 42m 12s] === 6 network visualisation ===
+[22:58:16 +1h 42m 14s] Wrote quantum_network.html
+[22:58:16 +1h 42m 14s] Nodes: 129
+[22:58:16 +1h 42m 14s] Edges: 29
+
+[22:58:17 +1h 42m 14s] Done. Outputs written to: /content/drive/MyDrive/pipeline/site_outputs/aws_amazon
+[22:58:17 +1h 42m 14s] Log: /content/drive/MyDrive/pipeline/site_outputs/aws_amazon/run.log
+
+========================================================================
+RUN FINISHED 2026-06-03 22:58:17  (OK)
+Elapsed:     1h 42m 14s
+========================================================================
