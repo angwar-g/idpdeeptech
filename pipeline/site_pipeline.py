@@ -37,17 +37,29 @@ from pipeline_logging import open_run_log, close_run_log, log_print, run_subproc
 def site_stem(url: str) -> str:
     """Derive an output folder name from a URL.
 
-    Strips www. and a trailing TLD segment when present so the result is a
-    short brand-ish slug. Both site_pipeline.py (single) and
-    site_pipeline_batch.py (batch) use this function, so the same URL always
-    maps to the same site_outputs/<slug>/ folder regardless of entry point.
+    For company homepages (no meaningful path), uses just the host: strips
+    www. and the trailing TLD if recognised. Same as before.
 
       https://ionq.com/              -> 'ionq'
       https://www.psiquantum.com/    -> 'psiquantum'
       https://q-ctrl.com/            -> 'q_ctrl'
       https://aws.amazon.com/        -> 'aws_amazon'
-      https://global.fujitsu/...     -> 'global_fujitsu'   (no known TLD,
+      https://global.fujitsu/        -> 'global_fujitsu'   (no known TLD,
                                                             keep both parts)
+
+    For URLs with a meaningful path (news articles, blog posts, deep links),
+    appends a slugified version of the path so multiple articles on the same
+    domain land in separate folders.
+
+      https://thequantuminsider.com/2019/12/02/amazon-primed/
+          -> 'thequantuminsider_2019_12_02_amazon_primed'
+
+      https://www.ft.com/content/abc-123
+          -> 'ft_content_abc_123'
+
+    Both site_pipeline.py (single) and site_pipeline_batch.py (batch) use this
+    function, so the same URL always maps to the same site_outputs/<slug>/
+    folder regardless of entry point.
     """
     # Common TLDs we recognise. If the URL ends with one of these, strip it;
     # otherwise leave the host intact (e.g. 'global.fujitsu' keeps both parts).
@@ -56,14 +68,28 @@ def site_stem(url: str) -> str:
         "de", "fr", "ca", "ch", "swiss", "es", "it", "nl", "se", "au", "jp",
         "cn", "in", "br", "mx", "ru", "kr", "sg", "tw",
     }
-    host = urlparse(url).netloc or url
-    host = host.replace("www.", "")
+    parsed = urlparse(url)
+    host = (parsed.netloc or url).replace("www.", "")
     parts = host.split(".")
     if len(parts) >= 2 and parts[-1].lower() in KNOWN_TLDS:
         parts = parts[:-1]
-    host = "_".join(parts)
-    host = re.sub(r"[^a-z0-9]+", "_", host.lower()).strip("_")
-    return host or "site"
+    host_slug = "_".join(parts)
+    host_slug = re.sub(r"[^a-z0-9]+", "_", host_slug.lower()).strip("_")
+
+    # Path slug: empty for bare homepages so existing company outputs are
+    # unchanged. Non-empty paths get slugified and appended, capped to keep
+    # folder names reasonable.
+    path = parsed.path.strip("/")
+    if path:
+        path_slug = re.sub(r"[^a-z0-9]+", "_", path.lower()).strip("_")
+        # Cap at ~80 chars to keep paths sane on filesystems that limit them.
+        if len(path_slug) > 80:
+            path_slug = path_slug[:80].rstrip("_")
+        slug = f"{host_slug}_{path_slug}" if host_slug else path_slug
+    else:
+        slug = host_slug
+
+    return slug or "site"
 
 
 def run(label: str, cmd: list[str], cwd: Path, log) -> None:

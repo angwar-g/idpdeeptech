@@ -1,0 +1,20 @@
+
+========================================================================
+RUN STARTED  2026-06-04 21:02:50
+site_pipeline.py https://thequantuminsider.com/2019/07/30/quantum-basic/
+========================================================================
+
+[21:02:50 +0s] === 0 crawl site ===
+[21:02:54 +5s] [INIT].... → Crawl4AI 0.8.6 
+[21:02:58 +9s] [FETCH]... ↓ https://thequantuminsider.com/2019/07/30/quantum-basic/                                              | ✓ | ⏱: 3.91s 
+[21:02:58 +9s] [SCRAPE].. ◆ Error processing link: 'sosmed%20linkedin' does not appear to be an IPv4 or IPv6 address 
+[21:02:59 +9s] [SCRAPE].. ◆ https://thequantuminsider.com/2019/07/30/quantum-basic/                                              | ✓ | ⏱: 0.18s 
+[21:02:59 +9s] [COMPLETE] ● https://thequantuminsider.com/2019/07/30/quantum-basic/                                              | ✓ | ⏱: 4.13s 
+[21:02:59 +9s] Saved: crawl_output/227fe23f26_thequantuminsider.com_2019_07_30_quantum-basic.json
+
+[21:02:59 +9s] === 1 actor extraction ===
+
+========================================================================
+RUN FINISHED 2026-06-04 21:03:02  (INTERRUPTED)
+Elapsed:     12s
+========================================================================

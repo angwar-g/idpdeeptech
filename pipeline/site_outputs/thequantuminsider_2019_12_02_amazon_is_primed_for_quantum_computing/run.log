@@ -1,0 +1,17 @@
+
+========================================================================
+RUN STARTED  2026-06-04 21:03:26
+site_pipeline.py https://thequantuminsider.com/2019/12/02/amazon-is-primed-for-quantum-computing/
+========================================================================
+
+[21:03:26 +0s] === 0 crawl site ===
+[21:03:28 +2s] [INIT].... → Crawl4AI 0.8.6 
+[21:03:31 +5s] [FETCH]... ↓ https://thequantuminsider.com/2019/12/02/amazon-is-primed-for-quantum-computing/                     | ✓ | ⏱: 2.95s 
+[21:03:31 +5s] [SCRAPE].. ◆ Error processing link: 'sosmed%20linkedin' does not appear to be an IPv4 or IPv6 address 
+[21:03:31 +5s] [SCRAPE].. ◆ https://thequantuminsider.com/2019/12/02/amazon-is-primed-for-quantum-computing/                     | ✓ | ⏱: 0.15s 
+[21:03:31 +5s] [COMPLETE] ● https://thequantuminsider.com/2019/12/02/amazon-is-primed-for-quantum-computing/                     | ✓ | ⏱: 3.13s 
+[21:03:31 +5s] Saved: crawl_output/4517a31cbc_thequantuminsider.com_2019_12_02_amazon-is-primed-for-quantum-computing.json
+
+[21:03:32 +6s] === 1 actor extraction ===
+[21:03:36 +10s] Reading page (1/1): https://thequantuminsider.com/2019/12/02/amazon-is-primed-for-quantum-computing
+[21:03:36 +10s] Extracting: https://thequantuminsider.com/2019/12/02/amazon-is-primed-for-quantum-computing (1/1), chunk 1/1
