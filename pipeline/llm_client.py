@@ -4,6 +4,12 @@ Same interface for Ollama (local laptop dev) and Cloudflare Workers AI (remote).
 Provider chosen via env vars so no code changes are needed when moving between
 environments.
 
+Cloudflare calls go directly to the REST API instead of through litellm
+because litellm's Cloudflare adapter has bugs around response-shape handling
+(specifically: it crashes on tiktoken.encode(None) when the model returns
+content as null, which happens with larger prompts and certain newer models).
+We do still use litellm for Ollama.
+
 Environment variables:
     LLM_PROVIDER         "ollama" (default) or "cloudflare"
     LLM_MODEL            Override the default model for the chosen provider.
@@ -27,20 +33,19 @@ Usage:
 
 from __future__ import annotations
 
+import json
 import os
 
-# Load .env BEFORE any imports that might read env vars at import time
-# (litellm doesn't currently, but this is defensive). python-dotenv walks
-# upward from the cwd to find .env, so this works regardless of which
-# directory the subprocess was launched in.
+# Load .env BEFORE any imports that might read env vars at import time.
+# python-dotenv walks upward from the cwd to find .env, so this works
+# regardless of which directory the subprocess was launched in.
 try:
     from dotenv import load_dotenv
     load_dotenv()
 except ImportError:
-    # python-dotenv is optional. If missing, env vars must come from the shell.
     pass
 
-from litellm import acompletion
+import aiohttp
 
 
 def _provider() -> str:
@@ -64,6 +69,88 @@ def _temperature() -> float:
         return 0.0
 
 
+async def _complete_cloudflare(prompt: str, model: str, max_tokens: int | None) -> str:
+    """Call Cloudflare Workers AI directly. Bypasses litellm.
+
+    Cloudflare's REST shape is:
+        POST https://api.cloudflare.com/client/v4/accounts/{id}/ai/run/{model}
+        Body: { "messages": [...], "max_tokens": N }
+        Response: { "result": { "response": "..." }, "success": true, ... }
+        Errors:   { "errors": [{"code": N, "message": "..."}], "success": false }
+    """
+    account_id = os.environ.get("CLOUDFLARE_ACCOUNT_ID", "").strip()
+    api_token = (
+        os.environ.get("CLOUDFLARE_API_TOKEN", "").strip()
+        or os.environ.get("CLOUDFLARE_API_KEY", "").strip()
+    )
+    if not account_id or not api_token:
+        raise RuntimeError(
+            "LLM_PROVIDER=cloudflare requires CLOUDFLARE_ACCOUNT_ID and "
+            "CLOUDFLARE_API_TOKEN (or CLOUDFLARE_API_KEY) in the environment."
+        )
+
+    url = (
+        f"https://api.cloudflare.com/client/v4/accounts/{account_id}/ai/run/{model}"
+    )
+    headers = {
+        "Authorization": f"Bearer {api_token}",
+        "Content-Type": "application/json",
+    }
+    body: dict = {"messages": [{"role": "user", "content": prompt}]}
+    if max_tokens is not None:
+        body["max_tokens"] = max_tokens
+
+    async with aiohttp.ClientSession() as session:
+        async with session.post(url, headers=headers, json=body) as resp:
+            raw = await resp.text()
+            try:
+                data = json.loads(raw)
+            except json.JSONDecodeError:
+                raise RuntimeError(
+                    f"Cloudflare returned non-JSON (HTTP {resp.status}): {raw[:300]}"
+                )
+
+            if not data.get("success", False):
+                errors = data.get("errors", [])
+                msg = "; ".join(
+                    f"[{e.get('code', '?')}] {e.get('message', '')}" for e in errors
+                ) or raw[:300]
+                raise RuntimeError(f"Cloudflare API error: {msg}")
+
+            result = data.get("result", {}) or {}
+            # Workers AI text models put the response in result.response.
+            # Caveat: some newer models (e.g. Llama 3.3 70B) auto-parse the
+            # output when it looks like JSON and return result.response as a
+            # list/dict instead of a string. Older models always return a
+            # string. Downstream code expects a string, so we coerce here:
+            # if Cloudflare already parsed it for us, re-serialize back to
+            # JSON text so feed_pdf.py / interactions_pdf.py can json.loads()
+            # it normally.
+            response = result.get("response", "")
+            if response is None:
+                return ""
+            if isinstance(response, (list, dict)):
+                return json.dumps(response, ensure_ascii=False)
+            return str(response)
+
+
+async def _complete_ollama(prompt: str, model: str, max_tokens: int | None, temperature: float) -> str:
+    """Call Ollama via litellm (which works fine for Ollama)."""
+    from litellm import acompletion
+
+    kwargs: dict = {
+        "model": f"ollama/{model}",
+        "messages": [{"role": "user", "content": prompt}],
+        "api_base": os.environ.get("OLLAMA_BASE_URL", "http://localhost:11434"),
+        "temperature": temperature,
+    }
+    if max_tokens is not None:
+        kwargs["num_predict"] = max_tokens
+
+    response = await acompletion(**kwargs)
+    return response.choices[0].message.content  # type: ignore
+
+
 async def complete(prompt: str, max_tokens: int | None = None) -> str:
     """Send `prompt` to the configured LLM, return the response text.
 
@@ -73,53 +160,11 @@ async def complete(prompt: str, max_tokens: int | None = None) -> str:
     model_name = _model_for(provider)
     temperature = _temperature()
 
-    kwargs: dict = {
-        "messages": [{"role": "user", "content": prompt}],
-    }
-
-    if provider == "ollama":
-        # litellm uses model="ollama/<name>" and api_base.
-        kwargs["model"] = f"ollama/{model_name}"
-        kwargs["api_base"] = os.environ.get("OLLAMA_BASE_URL", "http://localhost:11434")
-        kwargs["temperature"] = temperature
-        if max_tokens is not None:
-            kwargs["num_predict"] = max_tokens
-
-    elif provider == "cloudflare":
-        # litellm supports Cloudflare via model="cloudflare/<slug>".
-        #
-        # We pass api_key and api_base EXPLICITLY rather than relying on
-        # litellm's env-var auto-discovery: different litellm versions look
-        # for different env var names (CLOUDFLARE_API_KEY vs CLOUDFLARE_API_TOKEN
-        # vs CLOUDFLARE_ACCOUNT_ID), so passing them as kwargs is the only
-        # reliable way.
-        #
-        # Note: Cloudflare Workers AI does NOT accept temperature for most
-        # text-generation models, and litellm rejects rather than silently
-        # dropping. So we don't pass it.
-        account_id = os.environ.get("CLOUDFLARE_ACCOUNT_ID", "").strip()
-        # Accept either env-var name to avoid frustrating mismatches.
-        api_token = (
-            os.environ.get("CLOUDFLARE_API_TOKEN", "").strip()
-            or os.environ.get("CLOUDFLARE_API_KEY", "").strip()
-        )
-        if not account_id or not api_token:
-            raise RuntimeError(
-                "LLM_PROVIDER=cloudflare requires CLOUDFLARE_ACCOUNT_ID and "
-                "CLOUDFLARE_API_TOKEN (or CLOUDFLARE_API_KEY) in the environment."
-            )
-        kwargs["model"] = f"cloudflare/{model_name}"
-        kwargs["api_key"] = api_token
-        kwargs["api_base"] = (
-            f"https://api.cloudflare.com/client/v4/accounts/{account_id}/ai/run/"
-        )
-        if max_tokens is not None:
-            kwargs["max_tokens"] = max_tokens
-
+    if provider == "cloudflare":
+        return await _complete_cloudflare(prompt, model_name, max_tokens)
+    elif provider == "ollama":
+        return await _complete_ollama(prompt, model_name, max_tokens, temperature)
     else:
         raise RuntimeError(
             f"Unknown LLM_PROVIDER={provider!r}. Expected 'ollama' or 'cloudflare'."
         )
-
-    response = await acompletion(**kwargs)
-    return response.choices[0].message.content  # type: ignore
