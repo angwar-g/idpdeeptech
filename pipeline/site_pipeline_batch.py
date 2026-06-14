@@ -56,12 +56,12 @@ def main():
         help="Path to companies JSON file (default: companies.json in site_input/).",
     )
     parser.add_argument(
-        "--crawl", "-c", type=int, default=2,
-        help="Crawl depth passed to each site_pipeline run (default 2).",
+        "--crawl", "-c", type=int, default=3,
+        help="Crawl depth passed to each site_pipeline run (default 3).",
     )
     parser.add_argument(
-        "--max-pages", type=int, default=10,
-        help="Max pages per company (default 10).",
+        "--max-pages", type=int, default=25,
+        help="Max pages per company (default 25).",
     )
     parser.add_argument(
         "--only", nargs="+", default=None,
@@ -120,6 +120,64 @@ def main():
 
     if not isinstance(companies, dict):
         sys.exit(f"Error: {config_path} must contain a JSON object keyed by company name.")
+
+    # Detect article/news batches so we can warn if the user is running them
+    # with company-style crawl settings. Two signals combined:
+    #   (a) filename hint: contains "news", "article", or "post"
+    #   (b) content heuristic: most URLs have deep paths (3+ segments), which
+    #       is typical of article URLs (/YYYY/MM/DD/title) but not company
+    #       homepages.
+    # Either signal alone is enough to suspect a news batch. The warning is
+    # advisory only -- the user can ignore it and continue, since they may
+    # have a legitimate reason (e.g. a config of deep-linked product pages).
+    name_lower = config_path.stem.lower()
+    looks_like_news_by_name = any(
+        tok in name_lower for tok in ("news", "article", "post")
+    )
+
+    deep_path_count = 0
+    sampled = 0
+    for entry in companies.values():
+        url = (entry or {}).get("website_link", "") if isinstance(entry, dict) else ""
+        if not url:
+            continue
+        sampled += 1
+        try:
+            from urllib.parse import urlparse as _urlparse
+            segments = [s for s in _urlparse(url).path.strip("/").split("/") if s]
+            if len(segments) >= 3:
+                deep_path_count += 1
+        except Exception:
+            pass
+    deep_path_ratio = (deep_path_count / sampled) if sampled else 0.0
+    looks_like_news_by_content = deep_path_ratio >= 0.5
+
+    if looks_like_news_by_name or looks_like_news_by_content:
+        signals = []
+        if looks_like_news_by_name:
+            signals.append(f"filename contains a news/article keyword ({config_path.name!r})")
+        if looks_like_news_by_content:
+            signals.append(
+                f"{deep_path_count}/{sampled} URLs have deep paths "
+                f"({deep_path_ratio:.0%}, typical of articles)"
+            )
+        intended = "--crawl 0 --max-pages 1"
+        actual = f"--crawl {args.crawl} --max-pages {args.max_pages}"
+        if actual.strip() != intended.strip():
+            print(
+                "\n" + "!" * 72 + "\n"
+                "WARNING: this looks like a news/article batch:\n"
+                + "\n".join(f"  - {s}" for s in signals) + "\n\n"
+                f"You are running with:  {actual}\n"
+                f"News batches usually want:  {intended}  (one page per article, no link-following)\n\n"
+                "Press Ctrl-C now to abort and re-run with the right flags, or wait 5 seconds to continue.\n"
+                + "!" * 72
+            )
+            try:
+                import time as _time
+                _time.sleep(5)
+            except KeyboardInterrupt:
+                sys.exit("Aborted by user.")
 
     # Optional filter.
     if args.only:

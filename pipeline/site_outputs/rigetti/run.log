@@ -1,0 +1,456 @@
+
+========================================================================
+RUN STARTED  2026-06-14 15:35:55
+site_pipeline.py https://www.rigetti.com/
+========================================================================
+
+[15:35:55 +0s | rigetti] === 0 crawl site ===
+[15:36:03 +8s | rigetti] [INIT].... → Crawl4AI 0.8.6 
+[15:36:10 +15s | rigetti] [FETCH]... ↓ https://www.rigetti.com/                                                                             | ✓ | ⏱: 6.36s 
+[15:36:10 +15s | rigetti] [SCRAPE].. ◆ https://www.rigetti.com/                                                                             | ✓ | ⏱: 0.53s 
+[15:36:10 +16s | rigetti] [COMPLETE] ● https://www.rigetti.com/                                                                             | ✓ | ⏱: 7.09s 
+[15:36:58 +1m 3s | rigetti] [FETCH]... ↓ https://www.rigetti.com/why-quantum                                                                  | ✓ | ⏱: 47.17s 
+[15:36:59 +1m 4s | rigetti] [SCRAPE].. ◆ https://www.rigetti.com/why-quantum                                                                  | ✓ | ⏱: 0.71s 
+[15:36:59 +1m 4s | rigetti] [COMPLETE] ● https://www.rigetti.com/why-quantum                                                                  | ✓ | ⏱: 48.23s 
+[15:36:59 +1m 4s | rigetti] [FETCH]... ↓ https://www.rigetti.com/get-quantum                                                                  | ✓ | ⏱: 48.04s 
+[15:36:59 +1m 4s | rigetti] [SCRAPE].. ◆ https://www.rigetti.com/get-quantum                                                                  | ✓ | ⏱: 0.18s 
+[15:36:59 +1m 4s | rigetti] [COMPLETE] ● https://www.rigetti.com/get-quantum                                                                  | ✓ | ⏱: 48.27s 
+[15:36:59 +1m 4s | rigetti] [FETCH]... ↓ https://www.rigetti.com/careers                                                                      | ✓ | ⏱: 48.31s 
+[15:36:59 +1m 5s | rigetti] [SCRAPE].. ◆ https://www.rigetti.com/careers                                                                      | ✓ | ⏱: 0.24s 
+[15:37:00 +1m 5s | rigetti] [COMPLETE] ● https://www.rigetti.com/careers                                                                      | ✓ | ⏱: 48.65s 
+[15:37:00 +1m 5s | rigetti] [FETCH]... ↓ https://www.rigetti.com/novera                                                                       | ✓ | ⏱: 48.67s 
+[15:37:00 +1m 5s | rigetti] [SCRAPE].. ◆ https://www.rigetti.com/novera                                                                       | ✓ | ⏱: 0.35s 
+[15:37:00 +1m 5s | rigetti] [COMPLETE] ● https://www.rigetti.com/novera                                                                       | ✓ | ⏱: 49.11s 
+[15:37:00 +1m 5s | rigetti] [FETCH]... ↓ https://www.rigetti.com/                                                                             | ✓ | ⏱: 49.52s 
+[15:37:00 +1m 5s | rigetti] [SCRAPE].. ◆ https://www.rigetti.com/                                                                             | ✓ | ⏱: 0.25s 
+[15:37:00 +1m 6s | rigetti] [COMPLETE] ● https://www.rigetti.com/                                                                             | ✓ | ⏱: 49.85s 
+[15:37:00 +1m 6s | rigetti] [FETCH]... ↓ https://www.rigetti.com/search                                                                       | ✓ | ⏱: 49.45s 
+[15:37:01 +1m 6s | rigetti] [SCRAPE].. ◆ https://www.rigetti.com/search                                                                       | ✓ | ⏱: 0.21s 
+[15:37:01 +1m 6s | rigetti] [COMPLETE] ● https://www.rigetti.com/search                                                                       | ✓ | ⏱: 49.70s 
+[15:37:01 +1m 6s | rigetti] [FETCH]... ↓ https://www.rigetti.com/about-rigetti-computing                                                      | ✓ | ⏱: 49.66s 
+[15:37:01 +1m 6s | rigetti] [SCRAPE].. ◆ https://www.rigetti.com/about-rigetti-computing                                                      | ✓ | ⏱: 0.31s 
+[15:37:01 +1m 6s | rigetti] [COMPLETE] ● https://www.rigetti.com/about-rigetti-computing                                                      | ✓ | ⏱: 50.01s 
+[15:37:01 +1m 6s | rigetti] [FETCH]... ↓ https://www.rigetti.com/what-we-build                                                                | ✓ | ⏱: 50.13s 
+[15:37:01 +1m 6s | rigetti] [SCRAPE].. ◆ https://www.rigetti.com/what-we-build                                                                | ✓ | ⏱: 0.34s 
+[15:37:01 +1m 7s | rigetti] [COMPLETE] ● https://www.rigetti.com/what-we-build                                                                | ✓ | ⏱: 50.51s 
+[15:37:01 +1m 7s | rigetti] [FETCH]... ↓ https://investors.rigetti.com/                                                                       | ✓ | ⏱: 50.92s 
+[15:37:01 +1m 7s | rigetti] [SCRAPE].. ◆ https://investors.rigetti.com/                                                                       | ✓ | ⏱: 0.07s 
+[15:37:01 +1m 7s | rigetti] [COMPLETE] ● https://investors.rigetti.com/                                                                       | ✓ | ⏱: 51.04s 
+[15:37:02 +1m 7s | rigetti] Saved: crawl_output/cec4720e21_www.rigetti.com.json
+[15:37:02 +1m 7s | rigetti] Saved: crawl_output/15f9093cc3_www.rigetti.com_why-quantum.json
+[15:37:02 +1m 7s | rigetti] Saved: crawl_output/f3aa75902f_www.rigetti.com_get-quantum.json
+[15:37:02 +1m 7s | rigetti] Saved: crawl_output/dcda808e2d_www.rigetti.com_careers.json
+[15:37:02 +1m 7s | rigetti] Saved: crawl_output/371647fdaa_www.rigetti.com_novera.json
+[15:37:02 +1m 7s | rigetti] Duplicate skipped: https://www.rigetti.com
+[15:37:02 +1m 7s | rigetti] Saved: crawl_output/9bf7111e84_www.rigetti.com_search.json
+[15:37:02 +1m 7s | rigetti] Saved: crawl_output/cf83bfcfeb_www.rigetti.com_about-rigetti-computing.json
+[15:37:02 +1m 7s | rigetti] Saved: crawl_output/5b5086b94b_www.rigetti.com_what-we-build.json
+[15:37:02 +1m 7s | rigetti] Saved: crawl_output/5c3e3a6f71_investors.rigetti.com.json
+
+[15:37:06 +1m 12s | rigetti] === 1 actor extraction ===
+[15:37:07 +1m 13s | rigetti] Reading page (1/9): https://www.rigetti.com/why-quantum
+[15:37:07 +1m 13s | rigetti] Extracting: https://www.rigetti.com/why-quantum (1/9), chunk 1/15
+[15:37:15 +1m 20s | rigetti] Repaired malformed JSON.
+[15:37:15 +1m 20s | rigetti] Extracting: https://www.rigetti.com/why-quantum (1/9), chunk 2/15
+[15:37:23 +1m 29s | rigetti] Repaired malformed JSON.
+[15:37:23 +1m 29s | rigetti] Extracting: https://www.rigetti.com/why-quantum (1/9), chunk 3/15
+[15:37:25 +1m 30s | rigetti] Extracting: https://www.rigetti.com/why-quantum (1/9), chunk 4/15
+[15:37:32 +1m 37s | rigetti] Repaired malformed JSON.
+[15:37:32 +1m 37s | rigetti] Extracting: https://www.rigetti.com/why-quantum (1/9), chunk 5/15
+[15:37:35 +1m 40s | rigetti] Extracting: https://www.rigetti.com/why-quantum (1/9), chunk 6/15
+[15:37:39 +1m 44s | rigetti] Extracting: https://www.rigetti.com/why-quantum (1/9), chunk 7/15
+[15:37:46 +1m 51s | rigetti] Repaired malformed JSON.
+[15:37:46 +1m 51s | rigetti] Extracting: https://www.rigetti.com/why-quantum (1/9), chunk 8/15
+[15:37:55 +2m 0s | rigetti] Repaired malformed JSON.
+[15:37:55 +2m 0s | rigetti] Extracting: https://www.rigetti.com/why-quantum (1/9), chunk 9/15
+[15:37:59 +2m 4s | rigetti] Extracting: https://www.rigetti.com/why-quantum (1/9), chunk 10/15
+[15:38:07 +2m 12s | rigetti] Extracting: https://www.rigetti.com/why-quantum (1/9), chunk 11/15
+[15:38:15 +2m 21s | rigetti] Repaired malformed JSON.
+[15:38:15 +2m 21s | rigetti] Extracting: https://www.rigetti.com/why-quantum (1/9), chunk 12/15
+[15:38:23 +2m 28s | rigetti] Repaired malformed JSON.
+[15:38:23 +2m 28s | rigetti] Extracting: https://www.rigetti.com/why-quantum (1/9), chunk 13/15
+[15:38:31 +2m 36s | rigetti] Repaired malformed JSON.
+[15:38:31 +2m 36s | rigetti] Extracting: https://www.rigetti.com/why-quantum (1/9), chunk 14/15
+[15:38:38 +2m 43s | rigetti] Repaired malformed JSON.
+[15:38:38 +2m 43s | rigetti] Extracting: https://www.rigetti.com/why-quantum (1/9), chunk 15/15
+[15:38:44 +2m 49s | rigetti] Repaired malformed JSON.
+[15:38:44 +2m 49s | rigetti] Reading page (2/9): https://www.rigetti.com/novera
+[15:38:44 +2m 49s | rigetti] Extracting: https://www.rigetti.com/novera (2/9), chunk 1/30
+[15:38:51 +2m 57s | rigetti] Repaired malformed JSON.
+[15:38:51 +2m 57s | rigetti] Extracting: https://www.rigetti.com/novera (2/9), chunk 2/30
+[15:39:01 +3m 6s | rigetti] Repaired malformed JSON.
+[15:39:01 +3m 6s | rigetti] Extracting: https://www.rigetti.com/novera (2/9), chunk 3/30
+[15:39:08 +3m 13s | rigetti] Repaired malformed JSON.
+[15:39:08 +3m 13s | rigetti] Extracting: https://www.rigetti.com/novera (2/9), chunk 4/30
+[15:39:15 +3m 20s | rigetti] Repaired malformed JSON.
+[15:39:15 +3m 20s | rigetti] Extracting: https://www.rigetti.com/novera (2/9), chunk 5/30
+[15:39:18 +3m 23s | rigetti] Extracting: https://www.rigetti.com/novera (2/9), chunk 6/30
+[15:39:20 +3m 25s | rigetti] Extracting: https://www.rigetti.com/novera (2/9), chunk 7/30
+[15:39:28 +3m 33s | rigetti] Repaired malformed JSON.
+[15:39:28 +3m 33s | rigetti] Extracting: https://www.rigetti.com/novera (2/9), chunk 8/30
+[15:39:37 +3m 42s | rigetti] Repaired malformed JSON.
+[15:39:37 +3m 42s | rigetti] Extracting: https://www.rigetti.com/novera (2/9), chunk 9/30
+[15:39:43 +3m 49s | rigetti] Extracting: https://www.rigetti.com/novera (2/9), chunk 10/30
+[15:39:50 +3m 55s | rigetti] Repaired malformed JSON.
+[15:39:50 +3m 55s | rigetti] Extracting: https://www.rigetti.com/novera (2/9), chunk 11/30
+[15:39:57 +4m 2s | rigetti] Repaired malformed JSON.
+[15:39:57 +4m 2s | rigetti] Extracting: https://www.rigetti.com/novera (2/9), chunk 12/30
+[15:40:05 +4m 10s | rigetti] Repaired malformed JSON.
+[15:40:05 +4m 10s | rigetti] Extracting: https://www.rigetti.com/novera (2/9), chunk 13/30
+[15:40:10 +4m 15s | rigetti] Extracting: https://www.rigetti.com/novera (2/9), chunk 14/30
+[15:40:16 +4m 21s | rigetti] Extracting: https://www.rigetti.com/novera (2/9), chunk 15/30
+[15:40:20 +4m 25s | rigetti] Extracting: https://www.rigetti.com/novera (2/9), chunk 16/30
+[15:40:26 +4m 31s | rigetti] Extracting: https://www.rigetti.com/novera (2/9), chunk 17/30
+[15:40:30 +4m 36s | rigetti] Extracting: https://www.rigetti.com/novera (2/9), chunk 18/30
+[15:40:37 +4m 43s | rigetti] Repaired malformed JSON.
+[15:40:37 +4m 43s | rigetti] Extracting: https://www.rigetti.com/novera (2/9), chunk 19/30
+[15:40:46 +4m 51s | rigetti] Repaired malformed JSON.
+[15:40:46 +4m 51s | rigetti] Extracting: https://www.rigetti.com/novera (2/9), chunk 20/30
+[15:40:53 +4m 58s | rigetti] Repaired malformed JSON.
+[15:40:53 +4m 58s | rigetti] Extracting: https://www.rigetti.com/novera (2/9), chunk 21/30
+[15:41:00 +5m 5s | rigetti] Repaired malformed JSON.
+[15:41:00 +5m 5s | rigetti] Extracting: https://www.rigetti.com/novera (2/9), chunk 22/30
+[15:41:08 +5m 14s | rigetti] Repaired malformed JSON.
+[15:41:08 +5m 14s | rigetti] Extracting: https://www.rigetti.com/novera (2/9), chunk 23/30
+[15:41:14 +5m 20s | rigetti] Repaired malformed JSON.
+[15:41:14 +5m 20s | rigetti] Extracting: https://www.rigetti.com/novera (2/9), chunk 24/30
+[15:41:22 +5m 27s | rigetti] Repaired malformed JSON.
+[15:41:22 +5m 27s | rigetti] Extracting: https://www.rigetti.com/novera (2/9), chunk 25/30
+[15:41:30 +5m 35s | rigetti] Repaired malformed JSON.
+[15:41:30 +5m 35s | rigetti] Extracting: https://www.rigetti.com/novera (2/9), chunk 26/30
+[15:41:37 +5m 43s | rigetti] Repaired malformed JSON.
+[15:41:37 +5m 43s | rigetti] Extracting: https://www.rigetti.com/novera (2/9), chunk 27/30
+[15:41:47 +5m 52s | rigetti] Repaired malformed JSON.
+[15:41:47 +5m 52s | rigetti] Extracting: https://www.rigetti.com/novera (2/9), chunk 28/30
+[15:41:53 +5m 58s | rigetti] Repaired malformed JSON.
+[15:41:53 +5m 58s | rigetti] Extracting: https://www.rigetti.com/novera (2/9), chunk 29/30
+[15:41:57 +6m 2s | rigetti] Extracting: https://www.rigetti.com/novera (2/9), chunk 30/30
+[15:42:05 +6m 11s | rigetti] Repaired malformed JSON.
+[15:42:05 +6m 11s | rigetti] Reading page (3/9): https://www.rigetti.com/what-we-build
+[15:42:05 +6m 11s | rigetti] Extracting: https://www.rigetti.com/what-we-build (3/9), chunk 1/37
+[15:42:08 +6m 13s | rigetti] Extracting: https://www.rigetti.com/what-we-build (3/9), chunk 2/37
+[15:42:16 +6m 21s | rigetti] Repaired malformed JSON.
+[15:42:16 +6m 21s | rigetti] Extracting: https://www.rigetti.com/what-we-build (3/9), chunk 3/37
+[15:42:18 +6m 23s | rigetti] Extracting: https://www.rigetti.com/what-we-build (3/9), chunk 4/37
+[15:42:25 +6m 30s | rigetti] Repaired malformed JSON.
+[15:42:25 +6m 30s | rigetti] Extracting: https://www.rigetti.com/what-we-build (3/9), chunk 5/37
+[15:42:28 +6m 33s | rigetti] Extracting: https://www.rigetti.com/what-we-build (3/9), chunk 6/37
+[15:42:30 +6m 35s | rigetti] Extracting: https://www.rigetti.com/what-we-build (3/9), chunk 7/37
+[15:42:37 +6m 42s | rigetti] Repaired malformed JSON.
+[15:42:37 +6m 42s | rigetti] Extracting: https://www.rigetti.com/what-we-build (3/9), chunk 8/37
+[15:42:44 +6m 49s | rigetti] Repaired malformed JSON.
+[15:42:44 +6m 49s | rigetti] Extracting: https://www.rigetti.com/what-we-build (3/9), chunk 9/37
+[15:42:48 +6m 53s | rigetti] Extracting: https://www.rigetti.com/what-we-build (3/9), chunk 10/37
+[15:42:55 +7m 0s | rigetti] Extracting: https://www.rigetti.com/what-we-build (3/9), chunk 11/37
+[15:43:00 +7m 5s | rigetti] Extracting: https://www.rigetti.com/what-we-build (3/9), chunk 12/37
+[15:43:10 +7m 15s | rigetti] Repaired malformed JSON.
+[15:43:10 +7m 15s | rigetti] Extracting: https://www.rigetti.com/what-we-build (3/9), chunk 13/37
+[15:43:16 +7m 21s | rigetti] Repaired malformed JSON.
+[15:43:16 +7m 21s | rigetti] Extracting: https://www.rigetti.com/what-we-build (3/9), chunk 14/37
+[15:43:21 +7m 26s | rigetti] Extracting: https://www.rigetti.com/what-we-build (3/9), chunk 15/37
+[15:43:25 +7m 30s | rigetti] Extracting: https://www.rigetti.com/what-we-build (3/9), chunk 16/37
+[15:43:29 +7m 35s | rigetti] Extracting: https://www.rigetti.com/what-we-build (3/9), chunk 17/37
+[15:43:35 +7m 40s | rigetti] Extracting: https://www.rigetti.com/what-we-build (3/9), chunk 18/37
+[15:43:41 +7m 46s | rigetti] Extracting: https://www.rigetti.com/what-we-build (3/9), chunk 19/37
+[15:43:49 +7m 54s | rigetti] Extracting: https://www.rigetti.com/what-we-build (3/9), chunk 20/37
+[15:43:55 +8m 0s | rigetti] Repaired malformed JSON.
+[15:43:55 +8m 0s | rigetti] Extracting: https://www.rigetti.com/what-we-build (3/9), chunk 21/37
+[15:44:03 +8m 8s | rigetti] Repaired malformed JSON.
+[15:44:03 +8m 8s | rigetti] Extracting: https://www.rigetti.com/what-we-build (3/9), chunk 22/37
+[15:44:10 +8m 15s | rigetti] Repaired malformed JSON.
+[15:44:10 +8m 15s | rigetti] Extracting: https://www.rigetti.com/what-we-build (3/9), chunk 23/37
+[15:44:18 +8m 23s | rigetti] Repaired malformed JSON.
+[15:44:18 +8m 23s | rigetti] Extracting: https://www.rigetti.com/what-we-build (3/9), chunk 24/37
+[15:44:23 +8m 28s | rigetti] Extracting: https://www.rigetti.com/what-we-build (3/9), chunk 25/37
+[15:44:28 +8m 33s | rigetti] Extracting: https://www.rigetti.com/what-we-build (3/9), chunk 26/37
+[15:44:32 +8m 37s | rigetti] Extracting: https://www.rigetti.com/what-we-build (3/9), chunk 27/37
+[15:44:36 +8m 42s | rigetti] Extracting: https://www.rigetti.com/what-we-build (3/9), chunk 28/37
+[15:44:41 +8m 46s | rigetti] Extracting: https://www.rigetti.com/what-we-build (3/9), chunk 29/37
+[15:44:50 +8m 55s | rigetti] Repaired malformed JSON.
+[15:44:50 +8m 55s | rigetti] Extracting: https://www.rigetti.com/what-we-build (3/9), chunk 30/37
+[15:45:00 +9m 6s | rigetti] Repaired malformed JSON.
+[15:45:00 +9m 6s | rigetti] Extracting: https://www.rigetti.com/what-we-build (3/9), chunk 31/37
+[15:45:05 +9m 10s | rigetti] Extracting: https://www.rigetti.com/what-we-build (3/9), chunk 32/37
+[15:45:11 +9m 16s | rigetti] Repaired malformed JSON.
+[15:45:11 +9m 16s | rigetti] Extracting: https://www.rigetti.com/what-we-build (3/9), chunk 33/37
+[15:45:16 +9m 21s | rigetti] Extracting: https://www.rigetti.com/what-we-build (3/9), chunk 34/37
+[15:45:26 +9m 31s | rigetti] Repaired malformed JSON.
+[15:45:26 +9m 31s | rigetti] Extracting: https://www.rigetti.com/what-we-build (3/9), chunk 35/37
+[15:45:34 +9m 39s | rigetti] Repaired malformed JSON.
+[15:45:34 +9m 39s | rigetti] Extracting: https://www.rigetti.com/what-we-build (3/9), chunk 36/37
+[15:45:37 +9m 43s | rigetti] Extracting: https://www.rigetti.com/what-we-build (3/9), chunk 37/37
+[15:45:45 +9m 50s | rigetti] Repaired malformed JSON.
+[15:45:45 +9m 50s | rigetti] Reading page (4/9): https://investors.rigetti.com
+[15:45:45 +9m 50s | rigetti] Extracting: https://investors.rigetti.com (4/9), chunk 1/7
+[15:45:51 +9m 56s | rigetti] Extracting: https://investors.rigetti.com (4/9), chunk 2/7
+[15:45:58 +10m 3s | rigetti] Extracting: https://investors.rigetti.com (4/9), chunk 3/7
+[15:46:08 +10m 13s | rigetti] Repaired malformed JSON.
+[15:46:08 +10m 13s | rigetti] Extracting: https://investors.rigetti.com (4/9), chunk 4/7
+[15:46:16 +10m 21s | rigetti] Repaired malformed JSON.
+[15:46:16 +10m 21s | rigetti] Extracting: https://investors.rigetti.com (4/9), chunk 5/7
+[15:46:26 +10m 32s | rigetti] Repaired malformed JSON.
+[15:46:26 +10m 32s | rigetti] Extracting: https://investors.rigetti.com (4/9), chunk 6/7
+[15:46:35 +10m 40s | rigetti] Repaired malformed JSON.
+[15:46:35 +10m 40s | rigetti] Extracting: https://investors.rigetti.com (4/9), chunk 7/7
+[15:46:42 +10m 48s | rigetti] Repaired malformed JSON.
+[15:46:42 +10m 48s | rigetti] Reading page (5/9): https://www.rigetti.com/search
+[15:46:42 +10m 48s | rigetti] Extracting: https://www.rigetti.com/search (5/9), chunk 1/11
+[15:46:44 +10m 49s | rigetti] Extracting: https://www.rigetti.com/search (5/9), chunk 2/11
+[15:46:50 +10m 55s | rigetti] Repaired malformed JSON.
+[15:46:50 +10m 55s | rigetti] Extracting: https://www.rigetti.com/search (5/9), chunk 3/11
+[15:46:52 +10m 57s | rigetti] Extracting: https://www.rigetti.com/search (5/9), chunk 4/11
+[15:46:58 +11m 3s | rigetti] Repaired malformed JSON.
+[15:46:58 +11m 3s | rigetti] Extracting: https://www.rigetti.com/search (5/9), chunk 5/11
+[15:47:00 +11m 5s | rigetti] Extracting: https://www.rigetti.com/search (5/9), chunk 6/11
+[15:47:02 +11m 7s | rigetti] Extracting: https://www.rigetti.com/search (5/9), chunk 7/11
+[15:47:15 +11m 20s | rigetti] Repaired malformed JSON.
+[15:47:15 +11m 20s | rigetti] Extracting: https://www.rigetti.com/search (5/9), chunk 8/11
+[15:47:23 +11m 28s | rigetti] Repaired malformed JSON.
+[15:47:23 +11m 28s | rigetti] Extracting: https://www.rigetti.com/search (5/9), chunk 9/11
+[15:47:31 +11m 36s | rigetti] Repaired malformed JSON.
+[15:47:31 +11m 36s | rigetti] Extracting: https://www.rigetti.com/search (5/9), chunk 10/11
+[15:47:39 +11m 44s | rigetti] Repaired malformed JSON.
+[15:47:39 +11m 44s | rigetti] Extracting: https://www.rigetti.com/search (5/9), chunk 11/11
+[15:47:47 +11m 52s | rigetti] Repaired malformed JSON.
+[15:47:47 +11m 52s | rigetti] Reading page (6/9): https://www.rigetti.com
+[15:47:47 +11m 52s | rigetti] Extracting: https://www.rigetti.com (6/9), chunk 1/13
+[15:47:53 +11m 58s | rigetti] Extracting: https://www.rigetti.com (6/9), chunk 2/13
+[15:47:56 +12m 1s | rigetti] Extracting: https://www.rigetti.com (6/9), chunk 3/13
+[15:48:00 +12m 6s | rigetti] Extracting: https://www.rigetti.com (6/9), chunk 4/13
+[15:48:04 +12m 9s | rigetti] Extracting: https://www.rigetti.com (6/9), chunk 5/13
+[15:48:09 +12m 14s | rigetti] Extracting: https://www.rigetti.com (6/9), chunk 6/13
+[15:48:16 +12m 21s | rigetti] Repaired malformed JSON.
+[15:48:16 +12m 21s | rigetti] Extracting: https://www.rigetti.com (6/9), chunk 7/13
+[15:48:25 +12m 31s | rigetti] Repaired malformed JSON.
+[15:48:25 +12m 31s | rigetti] Extracting: https://www.rigetti.com (6/9), chunk 8/13
+[15:48:33 +12m 38s | rigetti] Repaired malformed JSON.
+[15:48:33 +12m 38s | rigetti] Extracting: https://www.rigetti.com (6/9), chunk 9/13
+[15:48:43 +12m 48s | rigetti] Repaired malformed JSON.
+[15:48:43 +12m 48s | rigetti] Extracting: https://www.rigetti.com (6/9), chunk 10/13
+[15:48:51 +12m 56s | rigetti] Repaired malformed JSON.
+[15:48:51 +12m 56s | rigetti] Extracting: https://www.rigetti.com (6/9), chunk 11/13
+[15:48:57 +13m 2s | rigetti] Repaired malformed JSON.
+[15:48:57 +13m 2s | rigetti] Extracting: https://www.rigetti.com (6/9), chunk 12/13
+[15:49:00 +13m 5s | rigetti] Extracting: https://www.rigetti.com (6/9), chunk 13/13
+[15:49:06 +13m 11s | rigetti] Repaired malformed JSON.
+[15:49:06 +13m 11s | rigetti] Reading page (7/9): https://www.rigetti.com/about-rigetti-computing
+[15:49:06 +13m 11s | rigetti] Extracting: https://www.rigetti.com/about-rigetti-computing (7/9), chunk 1/26
+[15:49:13 +13m 19s | rigetti] Repaired malformed JSON.
+[15:49:13 +13m 19s | rigetti] Extracting: https://www.rigetti.com/about-rigetti-computing (7/9), chunk 2/26
+[15:49:19 +13m 25s | rigetti] Repaired malformed JSON.
+[15:49:19 +13m 25s | rigetti] Extracting: https://www.rigetti.com/about-rigetti-computing (7/9), chunk 3/26
+[15:49:21 +13m 26s | rigetti] Extracting: https://www.rigetti.com/about-rigetti-computing (7/9), chunk 4/26
+[15:49:29 +13m 34s | rigetti] Repaired malformed JSON.
+[15:49:29 +13m 34s | rigetti] Extracting: https://www.rigetti.com/about-rigetti-computing (7/9), chunk 5/26
+[15:49:31 +13m 36s | rigetti] Extracting: https://www.rigetti.com/about-rigetti-computing (7/9), chunk 6/26
+[15:49:32 +13m 38s | rigetti] Extracting: https://www.rigetti.com/about-rigetti-computing (7/9), chunk 7/26
+[15:49:39 +13m 44s | rigetti] Repaired malformed JSON.
+[15:49:39 +13m 44s | rigetti] Extracting: https://www.rigetti.com/about-rigetti-computing (7/9), chunk 8/26
+[15:49:45 +13m 50s | rigetti] Repaired malformed JSON.
+[15:49:45 +13m 50s | rigetti] Extracting: https://www.rigetti.com/about-rigetti-computing (7/9), chunk 9/26
+[15:49:51 +13m 57s | rigetti] Repaired malformed JSON.
+[15:49:51 +13m 57s | rigetti] Extracting: https://www.rigetti.com/about-rigetti-computing (7/9), chunk 10/26
+[15:49:58 +14m 3s | rigetti] Repaired malformed JSON.
+[15:49:58 +14m 3s | rigetti] Extracting: https://www.rigetti.com/about-rigetti-computing (7/9), chunk 11/26
+[15:50:04 +14m 10s | rigetti] Repaired malformed JSON.
+[15:50:04 +14m 10s | rigetti] Extracting: https://www.rigetti.com/about-rigetti-computing (7/9), chunk 12/26
+[15:50:11 +14m 16s | rigetti] Repaired malformed JSON.
+[15:50:11 +14m 16s | rigetti] Extracting: https://www.rigetti.com/about-rigetti-computing (7/9), chunk 13/26
+[15:50:20 +14m 25s | rigetti] Repaired malformed JSON.
+[15:50:20 +14m 25s | rigetti] Extracting: https://www.rigetti.com/about-rigetti-computing (7/9), chunk 14/26
+[15:50:29 +14m 34s | rigetti] Repaired malformed JSON.
+[15:50:29 +14m 34s | rigetti] Extracting: https://www.rigetti.com/about-rigetti-computing (7/9), chunk 15/26
+[15:50:37 +14m 42s | rigetti] Repaired malformed JSON.
+[15:50:37 +14m 42s | rigetti] Extracting: https://www.rigetti.com/about-rigetti-computing (7/9), chunk 16/26
+[15:50:45 +14m 50s | rigetti] Repaired malformed JSON.
+[15:50:45 +14m 50s | rigetti] Extracting: https://www.rigetti.com/about-rigetti-computing (7/9), chunk 17/26
+[15:50:52 +14m 57s | rigetti] Repaired malformed JSON.
+[15:50:52 +14m 57s | rigetti] Extracting: https://www.rigetti.com/about-rigetti-computing (7/9), chunk 18/26
+[15:51:01 +15m 7s | rigetti] Repaired malformed JSON.
+[15:51:01 +15m 7s | rigetti] Extracting: https://www.rigetti.com/about-rigetti-computing (7/9), chunk 19/26
+[15:51:07 +15m 13s | rigetti] Repaired malformed JSON.
+[15:51:07 +15m 13s | rigetti] Extracting: https://www.rigetti.com/about-rigetti-computing (7/9), chunk 20/26
+[15:51:15 +15m 20s | rigetti] Repaired malformed JSON.
+[15:51:15 +15m 20s | rigetti] Extracting: https://www.rigetti.com/about-rigetti-computing (7/9), chunk 21/26
+[15:51:21 +15m 26s | rigetti] Repaired malformed JSON.
+[15:51:21 +15m 26s | rigetti] Extracting: https://www.rigetti.com/about-rigetti-computing (7/9), chunk 22/26
+[15:51:28 +15m 33s | rigetti] Repaired malformed JSON.
+[15:51:28 +15m 33s | rigetti] Extracting: https://www.rigetti.com/about-rigetti-computing (7/9), chunk 23/26
+[15:51:35 +15m 40s | rigetti] Repaired malformed JSON.
+[15:51:35 +15m 40s | rigetti] Extracting: https://www.rigetti.com/about-rigetti-computing (7/9), chunk 24/26
+[15:51:44 +15m 49s | rigetti] Extracting: https://www.rigetti.com/about-rigetti-computing (7/9), chunk 25/26
+[15:51:48 +15m 53s | rigetti] Extracting: https://www.rigetti.com/about-rigetti-computing (7/9), chunk 26/26
+[15:51:55 +16m 0s | rigetti] Repaired malformed JSON.
+[15:51:55 +16m 0s | rigetti] Reading page (8/9): https://www.rigetti.com/careers
+[15:51:55 +16m 0s | rigetti] Extracting: https://www.rigetti.com/careers (8/9), chunk 1/18
+[15:52:01 +16m 6s | rigetti] Repaired malformed JSON.
+[15:52:01 +16m 6s | rigetti] Extracting: https://www.rigetti.com/careers (8/9), chunk 2/18
+[15:52:10 +16m 15s | rigetti] Repaired malformed JSON.
+[15:52:10 +16m 15s | rigetti] Extracting: https://www.rigetti.com/careers (8/9), chunk 3/18
+[15:52:12 +16m 17s | rigetti] Extracting: https://www.rigetti.com/careers (8/9), chunk 4/18
+[15:52:22 +16m 27s | rigetti] Repaired malformed JSON.
+[15:52:22 +16m 27s | rigetti] Extracting: https://www.rigetti.com/careers (8/9), chunk 5/18
+[15:52:24 +16m 29s | rigetti] Extracting: https://www.rigetti.com/careers (8/9), chunk 6/18
+[15:52:27 +16m 32s | rigetti] Extracting: https://www.rigetti.com/careers (8/9), chunk 7/18
+[15:52:36 +16m 41s | rigetti] Repaired malformed JSON.
+[15:52:36 +16m 41s | rigetti] Extracting: https://www.rigetti.com/careers (8/9), chunk 8/18
+[15:52:43 +16m 48s | rigetti] Repaired malformed JSON.
+[15:52:43 +16m 48s | rigetti] Extracting: https://www.rigetti.com/careers (8/9), chunk 9/18
+[15:52:52 +16m 58s | rigetti] Repaired malformed JSON.
+[15:52:52 +16m 58s | rigetti] Extracting: https://www.rigetti.com/careers (8/9), chunk 10/18
+[15:52:59 +17m 4s | rigetti] Repaired malformed JSON.
+[15:52:59 +17m 4s | rigetti] Extracting: https://www.rigetti.com/careers (8/9), chunk 11/18
+[15:53:05 +17m 10s | rigetti] Repaired malformed JSON.
+[15:53:05 +17m 10s | rigetti] Extracting: https://www.rigetti.com/careers (8/9), chunk 12/18
+[15:53:12 +17m 17s | rigetti] Repaired malformed JSON.
+[15:53:12 +17m 17s | rigetti] Extracting: https://www.rigetti.com/careers (8/9), chunk 13/18
+[15:53:18 +17m 24s | rigetti] Repaired malformed JSON.
+[15:53:18 +17m 24s | rigetti] Extracting: https://www.rigetti.com/careers (8/9), chunk 14/18
+[15:53:25 +17m 31s | rigetti] Repaired malformed JSON.
+[15:53:25 +17m 31s | rigetti] Extracting: https://www.rigetti.com/careers (8/9), chunk 15/18
+[15:53:33 +17m 38s | rigetti] Repaired malformed JSON.
+[15:53:33 +17m 38s | rigetti] Extracting: https://www.rigetti.com/careers (8/9), chunk 16/18
+[15:53:40 +17m 45s | rigetti] Repaired malformed JSON.
+[15:53:40 +17m 45s | rigetti] Extracting: https://www.rigetti.com/careers (8/9), chunk 17/18
+[15:53:46 +17m 51s | rigetti] Extracting: https://www.rigetti.com/careers (8/9), chunk 18/18
+[15:53:54 +17m 59s | rigetti] Repaired malformed JSON.
+[15:53:54 +17m 59s | rigetti] Reading page (9/9): https://www.rigetti.com/get-quantum
+[15:53:54 +17m 59s | rigetti] Extracting: https://www.rigetti.com/get-quantum (9/9), chunk 1/11
+[15:54:00 +18m 5s | rigetti] Repaired malformed JSON.
+[15:54:00 +18m 5s | rigetti] Extracting: https://www.rigetti.com/get-quantum (9/9), chunk 2/11
+[15:54:07 +18m 12s | rigetti] Repaired malformed JSON.
+[15:54:07 +18m 12s | rigetti] Extracting: https://www.rigetti.com/get-quantum (9/9), chunk 3/11
+[15:54:09 +18m 14s | rigetti] Extracting: https://www.rigetti.com/get-quantum (9/9), chunk 4/11
+[15:54:18 +18m 23s | rigetti] Repaired malformed JSON.
+[15:54:18 +18m 23s | rigetti] Extracting: https://www.rigetti.com/get-quantum (9/9), chunk 5/11
+[15:54:21 +18m 26s | rigetti] Extracting: https://www.rigetti.com/get-quantum (9/9), chunk 6/11
+[15:54:23 +18m 28s | rigetti] Extracting: https://www.rigetti.com/get-quantum (9/9), chunk 7/11
+[15:54:28 +18m 34s | rigetti] Repaired malformed JSON.
+[15:54:28 +18m 34s | rigetti] Extracting: https://www.rigetti.com/get-quantum (9/9), chunk 8/11
+[15:54:36 +18m 41s | rigetti] Repaired malformed JSON.
+[15:54:36 +18m 41s | rigetti] Extracting: https://www.rigetti.com/get-quantum (9/9), chunk 9/11
+[15:54:41 +18m 47s | rigetti] Repaired malformed JSON.
+[15:54:41 +18m 47s | rigetti] Extracting: https://www.rigetti.com/get-quantum (9/9), chunk 10/11
+[15:54:50 +18m 55s | rigetti] Repaired malformed JSON.
+[15:54:50 +18m 55s | rigetti] Extracting: https://www.rigetti.com/get-quantum (9/9), chunk 11/11
+[15:54:59 +19m 4s | rigetti] Repaired malformed JSON.
+[15:54:59 +19m 4s | rigetti] Saved 1_actor_results.json with 284 extracted records
+
+[15:54:59 +19m 4s | rigetti] === 2 clean actors ===
+[15:55:00 +19m 5s | rigetti] Loaded 284 extracted records
+[15:55:00 +19m 5s | rigetti] Saved 2_actor_nodes.json with 54 canonical actor nodes
+
+[15:55:00 +19m 5s | rigetti] === 3 interaction extraction ===
+[15:55:00 +19m 5s | rigetti] Extracting interactions: https://www.rigetti.com/why-quantum (1/9), chunk 1/15
+[15:55:11 +19m 16s | rigetti] Extracting interactions: https://www.rigetti.com/why-quantum (1/9), chunk 2/15
+[15:55:13 +19m 18s | rigetti] Extracting interactions: https://www.rigetti.com/why-quantum (1/9), chunk 3/15
+[15:55:18 +19m 23s | rigetti] Extracting interactions: https://www.rigetti.com/why-quantum (1/9), chunk 4/15
+[15:55:34 +19m 40s | rigetti] Extracting interactions: https://www.rigetti.com/why-quantum (1/9), chunk 7/15
+[15:55:36 +19m 41s | rigetti] Extracting interactions: https://www.rigetti.com/why-quantum (1/9), chunk 8/15
+[15:55:39 +19m 44s | rigetti] Extracting interactions: https://www.rigetti.com/why-quantum (1/9), chunk 11/15
+[15:55:48 +19m 53s | rigetti] Extracting interactions: https://www.rigetti.com/why-quantum (1/9), chunk 12/15
+[15:55:54 +19m 59s | rigetti] Extracting interactions: https://www.rigetti.com/why-quantum (1/9), chunk 13/15
+[15:55:59 +20m 4s | rigetti] Extracting interactions: https://www.rigetti.com/why-quantum (1/9), chunk 14/15
+[15:56:01 +20m 6s | rigetti] Extracting interactions: https://www.rigetti.com/why-quantum (1/9), chunk 15/15
+[15:56:04 +20m 9s | rigetti] Extracting interactions: https://www.rigetti.com/novera (2/9), chunk 1/30
+[15:56:11 +20m 17s | rigetti] Extracting interactions: https://www.rigetti.com/novera (2/9), chunk 2/30
+[15:56:23 +20m 28s | rigetti] Extracting interactions: https://www.rigetti.com/novera (2/9), chunk 3/30
+[15:56:28 +20m 33s | rigetti] Extracting interactions: https://www.rigetti.com/novera (2/9), chunk 4/30
+[15:56:45 +20m 50s | rigetti] Extracting interactions: https://www.rigetti.com/novera (2/9), chunk 7/30
+[15:56:47 +20m 52s | rigetti] Extracting interactions: https://www.rigetti.com/novera (2/9), chunk 8/30
+[15:56:49 +20m 54s | rigetti] Extracting interactions: https://www.rigetti.com/novera (2/9), chunk 10/30
+[15:56:54 +21m 0s | rigetti] Extracting interactions: https://www.rigetti.com/novera (2/9), chunk 11/30
+[15:57:01 +21m 6s | rigetti] Extracting interactions: https://www.rigetti.com/novera (2/9), chunk 12/30
+[15:57:05 +21m 10s | rigetti] Extracting interactions: https://www.rigetti.com/novera (2/9), chunk 20/30
+[15:57:10 +21m 16s | rigetti] Extracting interactions: https://www.rigetti.com/novera (2/9), chunk 21/30
+[15:57:12 +21m 17s | rigetti] Extracting interactions: https://www.rigetti.com/novera (2/9), chunk 22/30
+[15:57:17 +21m 23s | rigetti] Extracting interactions: https://www.rigetti.com/novera (2/9), chunk 23/30
+[15:57:23 +21m 28s | rigetti] Extracting interactions: https://www.rigetti.com/novera (2/9), chunk 24/30
+[15:57:33 +21m 39s | rigetti] Extracting interactions: https://www.rigetti.com/novera (2/9), chunk 25/30
+[15:57:46 +21m 51s | rigetti] Extracting interactions: https://www.rigetti.com/novera (2/9), chunk 26/30
+[15:57:55 +22m 0s | rigetti] Extracting interactions: https://www.rigetti.com/novera (2/9), chunk 27/30
+[15:58:05 +22m 10s | rigetti] Extracting interactions: https://www.rigetti.com/novera (2/9), chunk 28/30
+[15:58:13 +22m 18s | rigetti] Extracting interactions: https://www.rigetti.com/novera (2/9), chunk 30/30
+[15:58:16 +22m 21s | rigetti] Extracting interactions: https://www.rigetti.com/what-we-build (3/9), chunk 1/37
+[15:58:27 +22m 32s | rigetti] Extracting interactions: https://www.rigetti.com/what-we-build (3/9), chunk 2/37
+[15:58:37 +22m 42s | rigetti] Extracting interactions: https://www.rigetti.com/what-we-build (3/9), chunk 3/37
+[15:58:41 +22m 46s | rigetti] Extracting interactions: https://www.rigetti.com/what-we-build (3/9), chunk 4/37
+[15:58:56 +23m 1s | rigetti] Extracting interactions: https://www.rigetti.com/what-we-build (3/9), chunk 7/37
+[15:58:58 +23m 3s | rigetti] Extracting interactions: https://www.rigetti.com/what-we-build (3/9), chunk 8/37
+[15:59:00 +23m 5s | rigetti] Extracting interactions: https://www.rigetti.com/what-we-build (3/9), chunk 11/37
+[15:59:04 +23m 9s | rigetti] Extracting interactions: https://www.rigetti.com/what-we-build (3/9), chunk 12/37
+[15:59:11 +23m 16s | rigetti] Extracting interactions: https://www.rigetti.com/what-we-build (3/9), chunk 13/37
+[15:59:20 +23m 25s | rigetti] Extracting interactions: https://www.rigetti.com/what-we-build (3/9), chunk 14/37
+[15:59:24 +23m 29s | rigetti] Extracting interactions: https://www.rigetti.com/what-we-build (3/9), chunk 26/37
+[15:59:49 +23m 54s | rigetti] Extracting interactions: https://www.rigetti.com/what-we-build (3/9), chunk 27/37
+[15:59:57 +24m 2s | rigetti] Extracting interactions: https://www.rigetti.com/what-we-build (3/9), chunk 28/37
+[15:59:59 +24m 4s | rigetti] Extracting interactions: https://www.rigetti.com/what-we-build (3/9), chunk 29/37
+[16:00:01 +24m 6s | rigetti] Extracting interactions: https://www.rigetti.com/what-we-build (3/9), chunk 35/37
+[16:00:03 +24m 8s | rigetti] Extracting interactions: https://www.rigetti.com/what-we-build (3/9), chunk 37/37
+[16:00:08 +24m 13s | rigetti] Extracting interactions: https://investors.rigetti.com (4/9), chunk 3/7
+[16:00:11 +24m 16s | rigetti] Extracting interactions: https://investors.rigetti.com (4/9), chunk 4/7
+[16:00:17 +24m 22s | rigetti] Extracting interactions: https://investors.rigetti.com (4/9), chunk 5/7
+[16:00:24 +24m 30s | rigetti] Extracting interactions: https://investors.rigetti.com (4/9), chunk 6/7
+[16:00:30 +24m 35s | rigetti] Extracting interactions: https://investors.rigetti.com (4/9), chunk 7/7
+[16:00:39 +24m 44s | rigetti] Extracting interactions: https://www.rigetti.com/search (5/9), chunk 1/11
+[16:00:46 +24m 51s | rigetti] Extracting interactions: https://www.rigetti.com/search (5/9), chunk 2/11
+[16:00:56 +25m 2s | rigetti] Extracting interactions: https://www.rigetti.com/search (5/9), chunk 3/11
+[16:01:00 +25m 5s | rigetti] Extracting interactions: https://www.rigetti.com/search (5/9), chunk 4/11
+[16:01:09 +25m 14s | rigetti] Extracting interactions: https://www.rigetti.com/search (5/9), chunk 7/11
+[16:01:14 +25m 19s | rigetti] Extracting interactions: https://www.rigetti.com/search (5/9), chunk 8/11
+[16:01:16 +25m 21s | rigetti] Extracting interactions: https://www.rigetti.com/search (5/9), chunk 9/11
+[16:01:17 +25m 23s | rigetti] Extracting interactions: https://www.rigetti.com/search (5/9), chunk 10/11
+[16:01:19 +25m 24s | rigetti] Extracting interactions: https://www.rigetti.com/search (5/9), chunk 11/11
+[16:01:24 +25m 29s | rigetti] Extracting interactions: https://www.rigetti.com (6/9), chunk 7/13
+[16:01:30 +25m 35s | rigetti] Extracting interactions: https://www.rigetti.com (6/9), chunk 8/13
+[16:01:42 +25m 48s | rigetti] Extracting interactions: https://www.rigetti.com (6/9), chunk 9/13
+[16:01:45 +25m 50s | rigetti] Extracting interactions: https://www.rigetti.com (6/9), chunk 10/13
+[16:01:48 +25m 53s | rigetti] Extracting interactions: https://www.rigetti.com (6/9), chunk 11/13
+[16:01:52 +25m 57s | rigetti] Extracting interactions: https://www.rigetti.com (6/9), chunk 13/13
+[16:01:57 +26m 2s | rigetti] Extracting interactions: https://www.rigetti.com/about-rigetti-computing (7/9), chunk 1/26
+[16:02:05 +26m 11s | rigetti] Extracting interactions: https://www.rigetti.com/about-rigetti-computing (7/9), chunk 2/26
+[16:02:18 +26m 23s | rigetti] Extracting interactions: https://www.rigetti.com/about-rigetti-computing (7/9), chunk 3/26
+[16:02:21 +26m 26s | rigetti] Extracting interactions: https://www.rigetti.com/about-rigetti-computing (7/9), chunk 4/26
+[16:02:34 +26m 39s | rigetti] Extracting interactions: https://www.rigetti.com/about-rigetti-computing (7/9), chunk 7/26
+[16:02:38 +26m 44s | rigetti] Extracting interactions: https://www.rigetti.com/about-rigetti-computing (7/9), chunk 8/26
+[16:02:40 +26m 45s | rigetti] Extracting interactions: https://www.rigetti.com/about-rigetti-computing (7/9), chunk 9/26
+[16:02:44 +26m 49s | rigetti] Extracting interactions: https://www.rigetti.com/about-rigetti-computing (7/9), chunk 10/26
+[16:02:50 +26m 55s | rigetti] Extracting interactions: https://www.rigetti.com/about-rigetti-computing (7/9), chunk 11/26
+[16:03:03 +27m 9s | rigetti] Extracting interactions: https://www.rigetti.com/about-rigetti-computing (7/9), chunk 12/26
+[16:03:14 +27m 20s | rigetti] Extracting interactions: https://www.rigetti.com/about-rigetti-computing (7/9), chunk 13/26
+[16:03:27 +27m 32s | rigetti] Extracting interactions: https://www.rigetti.com/about-rigetti-computing (7/9), chunk 14/26
+[16:03:45 +27m 51s | rigetti] Extracting interactions: https://www.rigetti.com/about-rigetti-computing (7/9), chunk 15/26
+[16:04:04 +28m 9s | rigetti] Extracting interactions: https://www.rigetti.com/about-rigetti-computing (7/9), chunk 16/26
+[16:04:30 +28m 35s | rigetti] Extracting interactions: https://www.rigetti.com/about-rigetti-computing (7/9), chunk 17/26
+[16:04:56 +29m 2s | rigetti] Extracting interactions: https://www.rigetti.com/about-rigetti-computing (7/9), chunk 18/26
+[16:05:08 +29m 13s | rigetti] Extracting interactions: https://www.rigetti.com/about-rigetti-computing (7/9), chunk 19/26
+[16:05:13 +29m 19s | rigetti] Extracting interactions: https://www.rigetti.com/about-rigetti-computing (7/9), chunk 20/26
+[16:05:26 +29m 31s | rigetti] Extracting interactions: https://www.rigetti.com/about-rigetti-computing (7/9), chunk 21/26
+[16:05:34 +29m 39s | rigetti] Extracting interactions: https://www.rigetti.com/about-rigetti-computing (7/9), chunk 22/26
+[16:05:46 +29m 51s | rigetti] Extracting interactions: https://www.rigetti.com/about-rigetti-computing (7/9), chunk 23/26
+[16:06:00 +30m 5s | rigetti] Extracting interactions: https://www.rigetti.com/about-rigetti-computing (7/9), chunk 24/26
+[16:06:06 +30m 11s | rigetti] Extracting interactions: https://www.rigetti.com/about-rigetti-computing (7/9), chunk 26/26
+[16:06:13 +30m 18s | rigetti] Skipping malformed crawl file dcda808e2d_www.rigetti.com_careers.json: [Errno 2] No such file or directory: 'crawl_output/dcda808e2d_www.rigetti.com_careers.json'
+[16:06:13 +30m 18s | rigetti] Skipping malformed crawl file f3aa75902f_www.rigetti.com_get-quantum.json: [Errno 2] No such file or directory: 'crawl_output/f3aa75902f_www.rigetti.com_get-quantum.json'
+[16:06:13 +30m 18s | rigetti] Saved 3_interaction_results.json with 160 extracted interactions.
+
+[16:06:13 +30m 19s | rigetti] === 4 clean interactions ===
+[16:06:14 +30m 19s | rigetti] Saved 4_edges.json with 11 cleaned interactions.
+
+[16:06:14 +30m 19s | rigetti] === 5 helix enrichment ===
+[16:06:14 +30m 19s | rigetti] Traceback (most recent call last):
+[16:06:14 +30m 19s | rigetti]   File "/home/lv/IDP/idpdeeptech/pipeline/helix.py", line 411, in <module>
+[16:06:14 +30m 19s | rigetti]     main()
+[16:06:14 +30m 19s | rigetti]   File "/home/lv/IDP/idpdeeptech/pipeline/helix.py", line 382, in main
+[16:06:14 +30m 19s | rigetti]     actors_in = load_json(Path(args.actors))
+[16:06:14 +30m 19s | rigetti]   File "/home/lv/IDP/idpdeeptech/pipeline/helix.py", line 357, in load_json
+[16:06:14 +30m 19s | rigetti]     with path.open("r", encoding="utf-8") as f:
+[16:06:14 +30m 19s | rigetti]   File "/usr/lib/python3.10/pathlib.py", line 1119, in open
+[16:06:14 +30m 19s | rigetti]     return self._accessor.open(self, mode, buffering, encoding, errors,
+[16:06:14 +30m 19s | rigetti] FileNotFoundError: [Errno 2] No such file or directory: '2_actor_nodes.json'
+
+========================================================================
+RUN FINISHED 2026-06-14 16:06:14  (FAILED)
+Started:     2026-06-14 15:35:55
+Elapsed:     30m 19s
+========================================================================

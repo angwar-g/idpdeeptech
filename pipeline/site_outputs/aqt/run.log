@@ -1,0 +1,350 @@
+
+========================================================================
+RUN STARTED  2026-06-14 15:35:55
+site_pipeline.py https://www.aqt.eu/
+========================================================================
+
+[15:35:55 +0s | aqt] === 0 crawl site ===
+[15:36:03 +8s | aqt] [INIT].... → Crawl4AI 0.8.6 
+[15:36:10 +15s | aqt] [FETCH]... ↓ https://www.aqt.eu/                                                                                  | ✓ | ⏱: 6.94s 
+[15:36:11 +16s | aqt] [SCRAPE].. ◆ https://www.aqt.eu/                                                                                  | ✓ | ⏱: 0.82s 
+[15:36:12 +17s | aqt] [COMPLETE] ● https://www.aqt.eu/                                                                                  | ✓ | ⏱: 8.28s 
+[15:36:54 +59s | aqt] [FETCH]... ↓ https://www.aqt.eu/partnerships/                                                                     | ✓ | ⏱: 41.77s 
+[15:36:55 +1m 0s | aqt] [SCRAPE].. ◆ https://www.aqt.eu/partnerships/                                                                     | ✓ | ⏱: 0.79s 
+[15:36:55 +1m 0s | aqt] [COMPLETE] ● https://www.aqt.eu/partnerships/                                                                     | ✓ | ⏱: 43.06s 
+[15:37:25 +1m 30s | aqt] [ANTIBOT]. ℹ https://www.aqt.eu/solutions                       | Error: Proxy direct failed: Failed on navigating ACS-GOTO:
+[15:37:25 +1m 30s | aqt] Page.goto: Timeout 60000ms exceeded.
+[15:37:25 +1m 30s | aqt] Call log:
+[15:37:25 +1m 30s | aqt]   - navigating to "https://www.aqt.eu/solutions", waiting until "domcontentloaded"
+ 
+[15:37:25 +1m 30s | aqt] [ERROR]... × https://www.aqt.eu/solutions                       | Error: Unexpected error in _crawl_web at line 778 in _crawl_web 
+[15:37:25 +1m 30s | aqt] (../../../../../.local/lib/python3.10/site-packages/crawl4ai/async_crawler_strategy.py):
+[15:37:25 +1m 30s | aqt] Error: Failed on navigating ACS-GOTO:
+[15:37:25 +1m 30s | aqt] Page.goto: Timeout 60000ms exceeded.
+[15:37:25 +1m 30s | aqt] Call log:
+[15:37:25 +1m 30s | aqt]   - navigating to "https://www.aqt.eu/solutions", waiting until "domcontentloaded"
+
+
+[15:37:25 +1m 30s | aqt] Code context:
+[15:37:25 +1m 30s | aqt]  773                                   tag="GOTO",
+[15:37:25 +1m 30s | aqt]  774                                   params={"url": url},
+[15:37:25 +1m 30s | aqt]  775                               )
+[15:37:25 +1m 30s | aqt]  776                               response = None
+[15:37:25 +1m 30s | aqt]  777                           else:
+[15:37:25 +1m 30s | aqt]  778 →                             raise RuntimeError(f"Failed on navigating ACS-GOTO:\n{str(e)}")
+[15:37:25 +1m 30s | aqt]  779   
+[15:37:25 +1m 30s | aqt]  780                       # ──────────────────────────────────────────────────────────────
+[15:37:25 +1m 30s | aqt]  781                       # Walk the redirect chain.  Playwright returns only the last
+[15:37:25 +1m 30s | aqt]  782                       # hop, so we trace the `request.redirected_from` links until the
+[15:37:25 +1m 30s | aqt]  783                       # first response that differs from the final one and surface its 
+[15:37:25 +1m 31s | aqt] [ANTIBOT]. ℹ https://www.aqt.eu/solutions/                      | Error: Proxy direct failed: Failed on navigating ACS-GOTO:
+[15:37:25 +1m 31s | aqt] Page.goto: Timeout 60000ms exceeded.
+[15:37:25 +1m 31s | aqt] Call log:
+[15:37:25 +1m 31s | aqt]   - navigating to "https://www.aqt.eu/solutions/", waiting until "domcontentloaded"
+ 
+[15:37:25 +1m 31s | aqt] [ERROR]... × https://www.aqt.eu/solutions/                      | Error: Unexpected error in _crawl_web at line 778 in _crawl_web 
+[15:37:25 +1m 31s | aqt] (../../../../../.local/lib/python3.10/site-packages/crawl4ai/async_crawler_strategy.py):
+[15:37:25 +1m 31s | aqt] Error: Failed on navigating ACS-GOTO:
+[15:37:25 +1m 31s | aqt] Page.goto: Timeout 60000ms exceeded.
+[15:37:25 +1m 31s | aqt] Call log:
+[15:37:25 +1m 31s | aqt]   - navigating to "https://www.aqt.eu/solutions/", waiting until "domcontentloaded"
+
+
+[15:37:25 +1m 31s | aqt] Code context:
+[15:37:25 +1m 31s | aqt]  773                                   tag="GOTO",
+[15:37:25 +1m 31s | aqt]  774                                   params={"url": url},
+[15:37:25 +1m 31s | aqt]  775                               )
+[15:37:25 +1m 31s | aqt]  776                               response = None
+[15:37:25 +1m 31s | aqt]  777                           else:
+[15:37:25 +1m 31s | aqt]  778 →                             raise RuntimeError(f"Failed on navigating ACS-GOTO:\n{str(e)}")
+[15:37:25 +1m 31s | aqt]  779   
+[15:37:25 +1m 31s | aqt]  780                       # ──────────────────────────────────────────────────────────────
+[15:37:25 +1m 31s | aqt]  781                       # Walk the redirect chain.  Playwright returns only the last
+[15:37:25 +1m 31s | aqt]  782                       # hop, so we trace the `request.redirected_from` links until the
+[15:37:25 +1m 31s | aqt]  783                       # first response that differs from the final one and surface its 
+[15:37:25 +1m 31s | aqt] [ANTIBOT]. ℹ https://www.aqt.eu/career/                         | Error: Proxy direct failed: Failed on navigating ACS-GOTO:
+[15:37:25 +1m 31s | aqt] Page.goto: Timeout 60000ms exceeded.
+[15:37:25 +1m 31s | aqt] Call log:
+[15:37:25 +1m 31s | aqt]   - navigating to "https://www.aqt.eu/career/", waiting until "domcontentloaded"
+ 
+[15:37:25 +1m 31s | aqt] [ERROR]... × https://www.aqt.eu/career/                         | Error: Unexpected error in _crawl_web at line 778 in _crawl_web 
+[15:37:25 +1m 31s | aqt] (../../../../../.local/lib/python3.10/site-packages/crawl4ai/async_crawler_strategy.py):
+[15:37:25 +1m 31s | aqt] Error: Failed on navigating ACS-GOTO:
+[15:37:25 +1m 31s | aqt] Page.goto: Timeout 60000ms exceeded.
+[15:37:25 +1m 31s | aqt] Call log:
+[15:37:25 +1m 31s | aqt]   - navigating to "https://www.aqt.eu/career/", waiting until "domcontentloaded"
+
+
+[15:37:25 +1m 31s | aqt] Code context:
+[15:37:25 +1m 31s | aqt]  773                                   tag="GOTO",
+[15:37:25 +1m 31s | aqt]  774                                   params={"url": url},
+[15:37:25 +1m 31s | aqt]  775                               )
+[15:37:25 +1m 31s | aqt]  776                               response = None
+[15:37:25 +1m 31s | aqt]  777                           else:
+[15:37:25 +1m 31s | aqt]  778 →                             raise RuntimeError(f"Failed on navigating ACS-GOTO:\n{str(e)}")
+[15:37:25 +1m 31s | aqt]  779   
+[15:37:25 +1m 31s | aqt]  780                       # ──────────────────────────────────────────────────────────────
+[15:37:25 +1m 31s | aqt]  781                       # Walk the redirect chain.  Playwright returns only the last
+[15:37:25 +1m 31s | aqt]  782                       # hop, so we trace the `request.redirected_from` links until the
+[15:37:25 +1m 31s | aqt]  783                       # first response that differs from the final one and surface its 
+[15:37:26 +1m 31s | aqt] [ANTIBOT]. ℹ https://www.aqt.eu/products                        | Error: Proxy direct failed: Failed on navigating ACS-GOTO:
+[15:37:26 +1m 31s | aqt] Page.goto: Timeout 60000ms exceeded.
+[15:37:26 +1m 31s | aqt] Call log:
+[15:37:26 +1m 31s | aqt]   - navigating to "https://www.aqt.eu/products", waiting until "domcontentloaded"
+ 
+[15:37:26 +1m 31s | aqt] [ERROR]... × https://www.aqt.eu/products                        | Error: Unexpected error in _crawl_web at line 778 in _crawl_web 
+[15:37:26 +1m 31s | aqt] (../../../../../.local/lib/python3.10/site-packages/crawl4ai/async_crawler_strategy.py):
+[15:37:26 +1m 31s | aqt] Error: Failed on navigating ACS-GOTO:
+[15:37:26 +1m 31s | aqt] Page.goto: Timeout 60000ms exceeded.
+[15:37:26 +1m 31s | aqt] Call log:
+[15:37:26 +1m 31s | aqt]   - navigating to "https://www.aqt.eu/products", waiting until "domcontentloaded"
+
+
+[15:37:26 +1m 31s | aqt] Code context:
+[15:37:26 +1m 31s | aqt]  773                                   tag="GOTO",
+[15:37:26 +1m 31s | aqt]  774                                   params={"url": url},
+[15:37:26 +1m 31s | aqt]  775                               )
+[15:37:26 +1m 31s | aqt]  776                               response = None
+[15:37:26 +1m 31s | aqt]  777                           else:
+[15:37:26 +1m 31s | aqt]  778 →                             raise RuntimeError(f"Failed on navigating ACS-GOTO:\n{str(e)}")
+[15:37:26 +1m 31s | aqt]  779   
+[15:37:26 +1m 31s | aqt]  780                       # ──────────────────────────────────────────────────────────────
+[15:37:26 +1m 31s | aqt]  781                       # Walk the redirect chain.  Playwright returns only the last
+[15:37:26 +1m 31s | aqt]  782                       # hop, so we trace the `request.redirected_from` links until the
+[15:37:26 +1m 31s | aqt]  783                       # first response that differs from the final one and surface its 
+[15:37:26 +1m 31s | aqt] [ANTIBOT]. ℹ https://www.aqt.eu/contact/                        | Error: Proxy direct failed: Failed on navigating ACS-GOTO:
+[15:37:26 +1m 31s | aqt] Page.goto: Timeout 60000ms exceeded.
+[15:37:26 +1m 31s | aqt] Call log:
+[15:37:26 +1m 31s | aqt]   - navigating to "https://www.aqt.eu/contact/", waiting until "domcontentloaded"
+ 
+[15:37:26 +1m 31s | aqt] [ERROR]... × https://www.aqt.eu/contact/                        | Error: Unexpected error in _crawl_web at line 778 in _crawl_web 
+[15:37:26 +1m 31s | aqt] (../../../../../.local/lib/python3.10/site-packages/crawl4ai/async_crawler_strategy.py):
+[15:37:26 +1m 31s | aqt] Error: Failed on navigating ACS-GOTO:
+[15:37:26 +1m 31s | aqt] Page.goto: Timeout 60000ms exceeded.
+[15:37:26 +1m 31s | aqt] Call log:
+[15:37:26 +1m 31s | aqt]   - navigating to "https://www.aqt.eu/contact/", waiting until "domcontentloaded"
+
+
+[15:37:26 +1m 31s | aqt] Code context:
+[15:37:26 +1m 31s | aqt]  773                                   tag="GOTO",
+[15:37:26 +1m 31s | aqt]  774                                   params={"url": url},
+[15:37:26 +1m 31s | aqt]  775                               )
+[15:37:26 +1m 31s | aqt]  776                               response = None
+[15:37:26 +1m 31s | aqt]  777                           else:
+[15:37:26 +1m 31s | aqt]  778 →                             raise RuntimeError(f"Failed on navigating ACS-GOTO:\n{str(e)}")
+[15:37:26 +1m 31s | aqt]  779   
+[15:37:26 +1m 31s | aqt]  780                       # ──────────────────────────────────────────────────────────────
+[15:37:26 +1m 31s | aqt]  781                       # Walk the redirect chain.  Playwright returns only the last
+[15:37:26 +1m 31s | aqt]  782                       # hop, so we trace the `request.redirected_from` links until the
+[15:37:26 +1m 31s | aqt]  783                       # first response that differs from the final one and surface its 
+[15:37:26 +1m 31s | aqt] [ANTIBOT]. ℹ https://www.aqt.eu/                                | Error: Proxy direct failed: Failed on navigating ACS-GOTO:
+[15:37:26 +1m 31s | aqt] Page.goto: Timeout 60000ms exceeded.
+[15:37:26 +1m 31s | aqt] Call log:
+[15:37:26 +1m 31s | aqt]   - navigating to "https://www.aqt.eu/", waiting until "domcontentloaded"
+ 
+[15:37:26 +1m 31s | aqt] [ERROR]... × https://www.aqt.eu/                                | Error: Unexpected error in _crawl_web at line 778 in _crawl_web 
+[15:37:26 +1m 31s | aqt] (../../../../../.local/lib/python3.10/site-packages/crawl4ai/async_crawler_strategy.py):
+[15:37:26 +1m 31s | aqt] Error: Failed on navigating ACS-GOTO:
+[15:37:26 +1m 31s | aqt] Page.goto: Timeout 60000ms exceeded.
+[15:37:26 +1m 31s | aqt] Call log:
+[15:37:26 +1m 31s | aqt]   - navigating to "https://www.aqt.eu/", waiting until "domcontentloaded"
+
+
+[15:37:26 +1m 31s | aqt] Code context:
+[15:37:26 +1m 31s | aqt]  773                                   tag="GOTO",
+[15:37:26 +1m 31s | aqt]  774                                   params={"url": url},
+[15:37:26 +1m 31s | aqt]  775                               )
+[15:37:26 +1m 31s | aqt]  776                               response = None
+[15:37:26 +1m 31s | aqt]  777                           else:
+[15:37:26 +1m 31s | aqt]  778 →                             raise RuntimeError(f"Failed on navigating ACS-GOTO:\n{str(e)}")
+[15:37:26 +1m 31s | aqt]  779   
+[15:37:26 +1m 31s | aqt]  780                       # ──────────────────────────────────────────────────────────────
+[15:37:26 +1m 31s | aqt]  781                       # Walk the redirect chain.  Playwright returns only the last
+[15:37:26 +1m 31s | aqt]  782                       # hop, so we trace the `request.redirected_from` links until the
+[15:37:26 +1m 31s | aqt]  783                       # first response that differs from the final one and surface its 
+[15:37:26 +1m 31s | aqt] [ANTIBOT]. ℹ https://www.aqt.eu/about/                          | Error: Proxy direct failed: Failed on navigating ACS-GOTO:
+[15:37:26 +1m 31s | aqt] Page.goto: Timeout 60000ms exceeded.
+[15:37:26 +1m 31s | aqt] Call log:
+[15:37:26 +1m 31s | aqt]   - navigating to "https://www.aqt.eu/about/", waiting until "domcontentloaded"
+ 
+[15:37:26 +1m 31s | aqt] [ERROR]... × https://www.aqt.eu/about/                          | Error: Unexpected error in _crawl_web at line 778 in _crawl_web 
+[15:37:26 +1m 31s | aqt] (../../../../../.local/lib/python3.10/site-packages/crawl4ai/async_crawler_strategy.py):
+[15:37:26 +1m 31s | aqt] Error: Failed on navigating ACS-GOTO:
+[15:37:26 +1m 31s | aqt] Page.goto: Timeout 60000ms exceeded.
+[15:37:26 +1m 31s | aqt] Call log:
+[15:37:26 +1m 31s | aqt]   - navigating to "https://www.aqt.eu/about/", waiting until "domcontentloaded"
+
+
+[15:37:26 +1m 31s | aqt] Code context:
+[15:37:26 +1m 31s | aqt]  773                                   tag="GOTO",
+[15:37:26 +1m 31s | aqt]  774                                   params={"url": url},
+[15:37:26 +1m 31s | aqt]  775                               )
+[15:37:26 +1m 31s | aqt]  776                               response = None
+[15:37:26 +1m 31s | aqt]  777                           else:
+[15:37:26 +1m 31s | aqt]  778 →                             raise RuntimeError(f"Failed on navigating ACS-GOTO:\n{str(e)}")
+[15:37:26 +1m 31s | aqt]  779   
+[15:37:26 +1m 31s | aqt]  780                       # ──────────────────────────────────────────────────────────────
+[15:37:26 +1m 31s | aqt]  781                       # Walk the redirect chain.  Playwright returns only the last
+[15:37:26 +1m 31s | aqt]  782                       # hop, so we trace the `request.redirected_from` links until the
+[15:37:26 +1m 31s | aqt]  783                       # first response that differs from the final one and surface its 
+[15:37:26 +1m 31s | aqt] [ANTIBOT]. ℹ https://www.aqt.eu/products/                       | Error: Proxy direct failed: Failed on navigating ACS-GOTO:
+[15:37:26 +1m 31s | aqt] Page.goto: Timeout 60000ms exceeded.
+[15:37:26 +1m 31s | aqt] Call log:
+[15:37:26 +1m 31s | aqt]   - navigating to "https://www.aqt.eu/products/", waiting until "domcontentloaded"
+ 
+[15:37:26 +1m 31s | aqt] [ERROR]... × https://www.aqt.eu/products/                       | Error: Unexpected error in _crawl_web at line 778 in _crawl_web 
+[15:37:26 +1m 31s | aqt] (../../../../../.local/lib/python3.10/site-packages/crawl4ai/async_crawler_strategy.py):
+[15:37:26 +1m 31s | aqt] Error: Failed on navigating ACS-GOTO:
+[15:37:26 +1m 31s | aqt] Page.goto: Timeout 60000ms exceeded.
+[15:37:26 +1m 31s | aqt] Call log:
+[15:37:26 +1m 31s | aqt]   - navigating to "https://www.aqt.eu/products/", waiting until "domcontentloaded"
+
+
+[15:37:26 +1m 31s | aqt] Code context:
+[15:37:26 +1m 31s | aqt]  773                                   tag="GOTO",
+[15:37:26 +1m 31s | aqt]  774                                   params={"url": url},
+[15:37:26 +1m 31s | aqt]  775                               )
+[15:37:26 +1m 31s | aqt]  776                               response = None
+[15:37:26 +1m 31s | aqt]  777                           else:
+[15:37:26 +1m 31s | aqt]  778 →                             raise RuntimeError(f"Failed on navigating ACS-GOTO:\n{str(e)}")
+[15:37:26 +1m 31s | aqt]  779   
+[15:37:26 +1m 31s | aqt]  780                       # ──────────────────────────────────────────────────────────────
+[15:37:26 +1m 31s | aqt]  781                       # Walk the redirect chain.  Playwright returns only the last
+[15:37:26 +1m 31s | aqt]  782                       # hop, so we trace the `request.redirected_from` links until the
+[15:37:26 +1m 31s | aqt]  783                       # first response that differs from the final one and surface its 
+[15:37:26 +1m 31s | aqt] Saved: crawl_output/bc79403449_www.aqt.eu.json
+[15:37:26 +1m 31s | aqt] Saved: crawl_output/9c16dfcb3e_www.aqt.eu_partnerships.json
+[15:37:26 +1m 31s | aqt] Saved: crawl_output/e51c544e2f_www.aqt.eu_solutions.json
+[15:37:26 +1m 31s | aqt] Duplicate skipped: https://www.aqt.eu/solutions
+[15:37:26 +1m 31s | aqt] Saved: crawl_output/e9ce7217b2_www.aqt.eu_career.json
+[15:37:26 +1m 31s | aqt] Saved: crawl_output/11d1848788_www.aqt.eu_products.json
+[15:37:26 +1m 31s | aqt] Saved: crawl_output/dfacb8581d_www.aqt.eu_contact.json
+[15:37:26 +1m 31s | aqt] Duplicate skipped: https://www.aqt.eu
+[15:37:26 +1m 31s | aqt] Saved: crawl_output/410ab0d7ab_www.aqt.eu_about.json
+[15:37:26 +1m 31s | aqt] Duplicate skipped: https://www.aqt.eu/products
+
+[15:37:33 +1m 38s | aqt] === 1 actor extraction ===
+[15:37:33 +1m 38s | aqt] Reading page (1/7): https://www.aqt.eu/products
+[15:37:33 +1m 38s | aqt] Extracting: https://www.aqt.eu/products (1/7), chunk 1/1
+[15:37:35 +1m 40s | aqt] Reading page (2/7): https://www.aqt.eu/about
+[15:37:35 +1m 40s | aqt] Extracting: https://www.aqt.eu/about (2/7), chunk 1/1
+[15:37:38 +1m 43s | aqt] Reading page (3/7): https://www.aqt.eu/partnerships
+[15:37:38 +1m 43s | aqt] Extracting: https://www.aqt.eu/partnerships (3/7), chunk 1/12
+[15:37:44 +1m 49s | aqt] Repaired malformed JSON.
+[15:37:44 +1m 49s | aqt] Extracting: https://www.aqt.eu/partnerships (3/7), chunk 2/12
+[15:37:48 +1m 53s | aqt] Extracting: https://www.aqt.eu/partnerships (3/7), chunk 3/12
+[15:37:54 +1m 59s | aqt] Extracting: https://www.aqt.eu/partnerships (3/7), chunk 4/12
+[15:38:04 +2m 9s | aqt] Repaired malformed JSON.
+[15:38:04 +2m 9s | aqt] Extracting: https://www.aqt.eu/partnerships (3/7), chunk 5/12
+[15:38:13 +2m 19s | aqt] Repaired malformed JSON.
+[15:38:13 +2m 19s | aqt] Extracting: https://www.aqt.eu/partnerships (3/7), chunk 6/12
+[15:38:21 +2m 26s | aqt] Repaired malformed JSON.
+[15:38:21 +2m 26s | aqt] Extracting: https://www.aqt.eu/partnerships (3/7), chunk 7/12
+[15:38:29 +2m 34s | aqt] Repaired malformed JSON.
+[15:38:29 +2m 34s | aqt] Extracting: https://www.aqt.eu/partnerships (3/7), chunk 8/12
+[15:38:33 +2m 38s | aqt] Extracting: https://www.aqt.eu/partnerships (3/7), chunk 9/12
+[15:38:37 +2m 42s | aqt] Extracting: https://www.aqt.eu/partnerships (3/7), chunk 10/12
+[15:38:46 +2m 51s | aqt] Repaired malformed JSON.
+[15:38:46 +2m 51s | aqt] Extracting: https://www.aqt.eu/partnerships (3/7), chunk 11/12
+[15:38:55 +3m 0s | aqt] Repaired malformed JSON.
+[15:38:55 +3m 0s | aqt] Extracting: https://www.aqt.eu/partnerships (3/7), chunk 12/12
+[15:39:02 +3m 7s | aqt] Repaired malformed JSON.
+[15:39:02 +3m 7s | aqt] Reading page (4/7): https://www.aqt.eu
+[15:39:02 +3m 7s | aqt] Extracting: https://www.aqt.eu (4/7), chunk 1/22
+[15:39:10 +3m 15s | aqt] Repaired malformed JSON.
+[15:39:10 +3m 15s | aqt] Extracting: https://www.aqt.eu (4/7), chunk 2/22
+[15:39:13 +3m 19s | aqt] Extracting: https://www.aqt.eu (4/7), chunk 3/22
+[15:39:20 +3m 25s | aqt] Extracting: https://www.aqt.eu (4/7), chunk 4/22
+[15:39:28 +3m 33s | aqt] Repaired malformed JSON.
+[15:39:28 +3m 33s | aqt] Extracting: https://www.aqt.eu (4/7), chunk 5/22
+[15:39:35 +3m 40s | aqt] Repaired malformed JSON.
+[15:39:35 +3m 40s | aqt] Extracting: https://www.aqt.eu (4/7), chunk 6/22
+[15:39:40 +3m 45s | aqt] Extracting: https://www.aqt.eu (4/7), chunk 7/22
+[15:39:44 +3m 50s | aqt] Extracting: https://www.aqt.eu (4/7), chunk 8/22
+[15:39:52 +3m 57s | aqt] Repaired malformed JSON.
+[15:39:52 +3m 57s | aqt] Extracting: https://www.aqt.eu (4/7), chunk 9/22
+[15:39:59 +4m 4s | aqt] Repaired malformed JSON.
+[15:39:59 +4m 4s | aqt] Extracting: https://www.aqt.eu (4/7), chunk 10/22
+[15:40:08 +4m 13s | aqt] Repaired malformed JSON.
+[15:40:08 +4m 13s | aqt] Extracting: https://www.aqt.eu (4/7), chunk 11/22
+[15:40:16 +4m 21s | aqt] Repaired malformed JSON.
+[15:40:16 +4m 21s | aqt] Extracting: https://www.aqt.eu (4/7), chunk 12/22
+[15:40:22 +4m 27s | aqt] Repaired malformed JSON.
+[15:40:22 +4m 27s | aqt] Extracting: https://www.aqt.eu (4/7), chunk 13/22
+[15:40:30 +4m 35s | aqt] Repaired malformed JSON.
+[15:40:30 +4m 35s | aqt] Extracting: https://www.aqt.eu (4/7), chunk 14/22
+[15:40:37 +4m 42s | aqt] Repaired malformed JSON.
+[15:40:37 +4m 42s | aqt] Extracting: https://www.aqt.eu (4/7), chunk 15/22
+[15:40:45 +4m 50s | aqt] Repaired malformed JSON.
+[15:40:45 +4m 50s | aqt] Extracting: https://www.aqt.eu (4/7), chunk 16/22
+[15:40:54 +4m 59s | aqt] Repaired malformed JSON.
+[15:40:54 +4m 59s | aqt] Extracting: https://www.aqt.eu (4/7), chunk 17/22
+[15:40:59 +5m 4s | aqt] Extracting: https://www.aqt.eu (4/7), chunk 18/22
+[15:41:05 +5m 11s | aqt] Extracting: https://www.aqt.eu (4/7), chunk 19/22
+[15:41:10 +5m 15s | aqt] Extracting: https://www.aqt.eu (4/7), chunk 20/22
+[15:41:21 +5m 26s | aqt] Repaired malformed JSON.
+[15:41:21 +5m 26s | aqt] Extracting: https://www.aqt.eu (4/7), chunk 21/22
+[15:41:27 +5m 32s | aqt] Repaired malformed JSON.
+[15:41:27 +5m 32s | aqt] Extracting: https://www.aqt.eu (4/7), chunk 22/22
+[15:41:34 +5m 39s | aqt] Repaired malformed JSON.
+[15:41:34 +5m 39s | aqt] Reading page (5/7): https://www.aqt.eu/contact
+[15:41:34 +5m 39s | aqt] Extracting: https://www.aqt.eu/contact (5/7), chunk 1/1
+[15:41:36 +5m 41s | aqt] Reading page (6/7): https://www.aqt.eu/solutions
+[15:41:36 +5m 41s | aqt] Extracting: https://www.aqt.eu/solutions (6/7), chunk 1/1
+[15:41:38 +5m 43s | aqt] Reading page (7/7): https://www.aqt.eu/career
+[15:41:38 +5m 43s | aqt] Extracting: https://www.aqt.eu/career (7/7), chunk 1/1
+[15:41:40 +5m 45s | aqt] Saved 1_actor_results.json with 63 extracted records
+
+[15:41:40 +5m 45s | aqt] === 2 clean actors ===
+[15:41:40 +5m 45s | aqt] Loaded 63 extracted records
+[15:41:40 +5m 45s | aqt] Saved 2_actor_nodes.json with 15 canonical actor nodes
+
+[15:41:40 +5m 45s | aqt] === 3 interaction extraction ===
+[15:41:40 +5m 45s | aqt] Extracting interactions: https://www.aqt.eu/partnerships (3/7), chunk 1/12
+[15:41:45 +5m 50s | aqt] Extracting interactions: https://www.aqt.eu/partnerships (3/7), chunk 2/12
+[15:41:49 +5m 54s | aqt] Extracting interactions: https://www.aqt.eu/partnerships (3/7), chunk 4/12
+[15:41:50 +5m 56s | aqt] Extracting interactions: https://www.aqt.eu/partnerships (3/7), chunk 5/12
+[15:42:01 +6m 6s | aqt] Extracting interactions: https://www.aqt.eu/partnerships (3/7), chunk 6/12
+[15:42:04 +6m 9s | aqt] Extracting interactions: https://www.aqt.eu/partnerships (3/7), chunk 7/12
+[15:42:05 +6m 11s | aqt] Extracting interactions: https://www.aqt.eu/partnerships (3/7), chunk 10/12
+[15:42:10 +6m 15s | aqt] Extracting interactions: https://www.aqt.eu/partnerships (3/7), chunk 11/12
+[15:42:19 +6m 24s | aqt] Extracting interactions: https://www.aqt.eu/partnerships (3/7), chunk 12/12
+[15:42:27 +6m 32s | aqt] Extracting interactions: https://www.aqt.eu (4/7), chunk 1/22
+[15:42:31 +6m 36s | aqt] Extracting interactions: https://www.aqt.eu (4/7), chunk 2/22
+[15:42:34 +6m 39s | aqt] Extracting interactions: https://www.aqt.eu (4/7), chunk 4/22
+[15:42:40 +6m 46s | aqt] Extracting interactions: https://www.aqt.eu (4/7), chunk 5/22
+[15:42:45 +6m 50s | aqt] Extracting interactions: https://www.aqt.eu (4/7), chunk 10/22
+[15:42:54 +6m 59s | aqt] Extracting interactions: https://www.aqt.eu (4/7), chunk 11/22
+[15:43:07 +7m 12s | aqt] Extracting interactions: https://www.aqt.eu (4/7), chunk 12/22
+[15:43:14 +7m 19s | aqt] Extracting interactions: https://www.aqt.eu (4/7), chunk 13/22
+[15:43:19 +7m 24s | aqt] Extracting interactions: https://www.aqt.eu (4/7), chunk 14/22
+[15:43:28 +7m 33s | aqt] Extracting interactions: https://www.aqt.eu (4/7), chunk 15/22
+[15:43:30 +7m 35s | aqt] Extracting interactions: https://www.aqt.eu (4/7), chunk 18/22
+[15:43:37 +7m 42s | aqt] Extracting interactions: https://www.aqt.eu (4/7), chunk 19/22
+[15:43:41 +7m 46s | aqt] Extracting interactions: https://www.aqt.eu (4/7), chunk 20/22
+[15:43:48 +7m 54s | aqt] Extracting interactions: https://www.aqt.eu (4/7), chunk 21/22
+[15:43:50 +7m 55s | aqt] Extracting interactions: https://www.aqt.eu (4/7), chunk 22/22
+[15:44:02 +8m 7s | aqt] Saved 3_interaction_results.json with 41 extracted interactions.
+
+[15:44:02 +8m 7s | aqt] === 4 clean interactions ===
+[15:44:02 +8m 7s | aqt] Saved 4_edges.json with 0 cleaned interactions.
+
+[15:44:02 +8m 7s | aqt] === 5 helix enrichment ===
+[15:44:02 +8m 7s | aqt] Wrote 5_nodes.json (15 actors)
+[15:44:02 +8m 7s | aqt] Wrote 5_edges.json (0 interactions)
+[15:44:02 +8m 7s | aqt] Actor helix counts: {'Civil Society': 2, 'Government': 1, 'Industry': 7, 'Unknown': 5}
+[15:44:02 +8m 7s | aqt] Functional-space counts: {}
+
+[15:44:02 +8m 7s | aqt] === 6 network visualisation ===
+[15:44:03 +8m 9s | aqt] Wrote quantum_network.html
+[15:44:03 +8m 9s | aqt] Nodes: 14
+[15:44:03 +8m 9s | aqt] Edges: 0
+
+[15:44:03 +8m 9s | aqt] Done. Outputs written to: /home/lv/IDP/idpdeeptech/pipeline/site_outputs/aqt
+[15:44:03 +8m 9s | aqt] Log: /home/lv/IDP/idpdeeptech/pipeline/site_outputs/aqt/run.log
+
+========================================================================
+RUN FINISHED 2026-06-14 15:44:03  (OK)
+Started:     2026-06-14 15:35:55
+Elapsed:     8m 9s
+========================================================================

@@ -2,6 +2,31 @@
 
 Extracts actor/interaction graphs from PDFs and websites. Four entry points; all share the same cleaning, helix, and visualisation steps downstream.
 
+## Setup
+
+```bash
+pip install -r requirements.txt
+playwright install chromium       # browser engine used by crawl4ai
+cp .env.example .env              # edit to point at the used LLM
+```
+
+`.env` keys: `LLM_PROVIDER` (`cloudflare` or `ollama`), `LLM_MODEL`, and the matching credentials. For Cloudflare set `CLOUDFLARE_ACCOUNT_ID` and `CLOUDFLARE_API_TOKEN`. For Ollama, install Ollama separately (`curl -fsSL https://ollama.com/install.sh | sh`) and pull a model (`ollama pull mistral`).
+
+Quick check that the LLM side is wired up: `python3 test_llm.py` fires one short call and prints the round-trip time.
+
+## Layout
+
+```
+pdf_input/*.pdf                       site_input/companies.json
+       ↓                                       ↓
+pdf_pipeline.py    pdf_pipeline_batch.py   site_pipeline.py    site_pipeline_batch.py
+       ↓                                       ↓
+pdf_outputs/<stem>/                    site_outputs/<slug>/
+   network.html  +  5_nodes.json  +  5_edges.json  +  intermediates
+```
+
+Slugs for sites come from the URL: `https://ionq.com/` → `ionq`. Same in single and batch.
+
 ## Single document
 
 ```bash
@@ -44,8 +69,8 @@ Skips docs with existing `network.html` by default. Walks `pdf_input/X.pdf` or r
 | `-w N`, `--workers N` | Process N docs in parallel. Use `1` for local Ollama (single GPU). |
 | `--only NAMES ...` | Restrict to specific PDFs (filename) or companies (JSON's key). |
 | `-f`, `--force` | Queue and redo every doc, including completed ones. Forwards `--force` to each. |
-| `-c N`, `--crawl N` *(site)* | Crawl depth per company (default 2). |
-| `--max-pages N` *(site)* | Max pages crawled per company (default 10). |
+| `-c N`, `--crawl N` *(site)* | Crawl depth per company (default 3). |
+| `--max-pages N` *(site)* | Max pages crawled per company (default 25). |
 
 Skip flags (`-s`, `-i`, `--skip-crawl`) are **single-pipeline only** - not on the batch.
 

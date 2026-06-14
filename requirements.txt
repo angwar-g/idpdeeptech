@@ -1,0 +1,24 @@
+# Python dependencies for the deep-tech actor-network pipeline.
+# Install with: pip install -r requirements.txt
+#
+# Tested against Python 3.10+. Lower versions may work but are not exercised.
+
+# LLM clients
+aiohttp>=3.9.0          # direct Cloudflare Workers AI REST calls in llm_client.py
+litellm>=1.40.0         # used for the Ollama branch in llm_client.py
+
+# Web crawling
+crawl4ai>=0.4.0         # site crawler in crawl_site.py
+
+# Configuration / IO
+python-dotenv>=1.0.0    # loads .env in llm_client.py
+
+# PDF reading
+PyMuPDF>=1.24.0         # imported as `fitz` in feed_pdf.py and interactions_pdf.py
+
+# Graph + visualization
+networkx>=3.0           # graph object in network.py
+pyvis>=0.3.2            # interactive HTML output in network.py
+
+# JSON cleanup
+json_repair>=0.25.0     # recovers malformed LLM JSON output in feed_*/interactions_*

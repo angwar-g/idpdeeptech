@@ -85,12 +85,12 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("url", help="Seed URL to crawl")
     parser.add_argument(
-        "--crawl", "-c", type=int, default=2,
-        help="Max crawl depth (default 2)",
+        "--crawl", "-c", type=int, default=3,
+        help="Max crawl depth (default 3)",
     )
     parser.add_argument(
-        "--max-pages", type=int, default=10,
-        help="Max pages to crawl (default 10)",
+        "--max-pages", type=int, default=25,
+        help="Max pages to crawl (default 25)",
     )
     args = parser.parse_args()
 

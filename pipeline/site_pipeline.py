@@ -104,12 +104,12 @@ def main():
     )
     parser.add_argument("url", help="Seed URL to crawl, e.g. https://www.psiquantum.com")
     parser.add_argument(
-        "--crawl", "-c", type=int, default=2,
-        help="Crawl depth (default 2). Higher = follows more internal links.",
+        "--crawl", "-c", type=int, default=3,
+        help="Crawl depth (default 3). Higher = follows more internal links.",
     )
     parser.add_argument(
-        "--max-pages", type=int, default=10,
-        help="Max pages to crawl (default 10).",
+        "--max-pages", type=int, default=25,
+        help="Max pages to crawl (default 25).",
     )
     parser.add_argument(
         "--skip-crawl", action="store_true",
