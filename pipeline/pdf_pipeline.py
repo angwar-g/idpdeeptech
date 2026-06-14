@@ -166,6 +166,7 @@ def main():
     log = open_run_log(
         out_dir / "run.log",
         header=f"pdf_pipeline.py {args.pdf}{skip_summary}",
+        tag=stem,
     )
 
     try:

@@ -278,6 +278,7 @@ def main():
     log = open_run_log(
         out_dir / "run.log",
         header=f"site_pipeline.py {args.url}{skip_summary}",
+        tag=out_dir.name,
     )
 
     try:

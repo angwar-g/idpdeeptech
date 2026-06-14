@@ -32,33 +32,42 @@ from pathlib import Path
 from typing import TextIO
 
 
-def open_run_log(path: Path, header: str = "") -> TextIO:
+def open_run_log(path: Path, header: str = "", tag: str = "") -> TextIO:
     """Open a log file in append mode and stamp a header for this run.
 
     Returns the open file handle. Pair with close_run_log() (preferred) or
     just call .close() on the handle if you don't want a finish footer.
+
+    `tag` is a short identifier (e.g. PDF stem or company slug) that will be
+    prepended to every line written through log_print / run_subprocess_logged.
+    With parallel workers in the batch driver, multiple pipelines log to the
+    same terminal at once; the tag tells you which document each line belongs
+    to. Pass an empty string to skip tagging (default behavior).
     """
     path.parent.mkdir(parents=True, exist_ok=True)
     log = path.open("a", encoding="utf-8", buffering=1)  # line-buffered
 
     start_monotonic = time.monotonic()
-    timestamp = time.strftime("%Y-%m-%d %H:%M:%S")
+    start_wall = time.strftime("%Y-%m-%d %H:%M:%S")
     log.write("\n")
     log.write("=" * 72 + "\n")
-    log.write(f"RUN STARTED  {timestamp}\n")
+    log.write(f"RUN STARTED  {start_wall}\n")
     if header:
         log.write(f"{header}\n")
     log.write("=" * 72 + "\n")
     log.flush()
 
-    # Stash on the handle so close_run_log can compute elapsed without a
-    # second argument. Attribute access on file objects is fine.
+    # Stash on the handle so close_run_log can compute elapsed and print the
+    # start time without extra arguments. Attribute access on file objects is
+    # fine.
     log._run_start_monotonic = start_monotonic  # type: ignore[attr-defined]
+    log._run_start_wall = start_wall            # type: ignore[attr-defined]
+    log._run_tag = tag                          # type: ignore[attr-defined]
     return log
 
 
 def close_run_log(log: TextIO, status: str = "OK") -> None:
-    """Write a finish footer (timestamp + elapsed) to terminal and log, then close.
+    """Write a finish footer (start + end timestamps + elapsed) and close.
 
     status: short string shown in the footer ("OK", "FAILED", "INTERRUPTED", ...).
     """
@@ -66,6 +75,7 @@ def close_run_log(log: TextIO, status: str = "OK") -> None:
     end_wall = time.strftime("%Y-%m-%d %H:%M:%S")
 
     start_monotonic = getattr(log, "_run_start_monotonic", None)
+    start_wall = getattr(log, "_run_start_wall", None)
     elapsed_str = ""
     if start_monotonic is not None:
         elapsed_str = _format_elapsed(end_monotonic - start_monotonic)
@@ -75,6 +85,8 @@ def close_run_log(log: TextIO, status: str = "OK") -> None:
         "=" * 72,
         f"RUN FINISHED {end_wall}  ({status})",
     ]
+    if start_wall:
+        footer_lines.append(f"Started:     {start_wall}")
     if elapsed_str:
         footer_lines.append(f"Elapsed:     {elapsed_str}")
     footer_lines.append("=" * 72)
@@ -98,13 +110,26 @@ def _format_elapsed(seconds: float) -> str:
     return f"{secs}s"
 
 
-def _stamp_prefix(start_monotonic: float | None) -> str:
-    """Build a '[HH:MM:SS +Hh Mm Ss] ' prefix for log lines."""
+def _stamp_prefix(log: TextIO | None) -> str:
+    """Build a '[HH:MM:SS +Hh Mm Ss | docname] ' prefix for log lines.
+
+    docname comes from the `tag` argument to open_run_log. Skipped if empty
+    or if `log` is None. Used by both log_print and run_subprocess_logged so
+    every line written through the logging layer carries the same context.
+    """
     wall = time.strftime("%H:%M:%S")
+    start_monotonic = getattr(log, "_run_start_monotonic", None) if log else None
+    tag = getattr(log, "_run_tag", "") if log else ""
+
     if start_monotonic is None:
-        return f"[{wall}] "
-    elapsed = _format_elapsed(time.monotonic() - start_monotonic)
-    return f"[{wall} +{elapsed}] "
+        body = wall
+    else:
+        elapsed = _format_elapsed(time.monotonic() - start_monotonic)
+        body = f"{wall} +{elapsed}"
+
+    if tag:
+        body = f"{body} | {tag}"
+    return f"[{body}] "
 
 
 def _write_stamped(line: str, log: TextIO) -> None:
@@ -123,7 +148,7 @@ def _write_stamped(line: str, log: TextIO) -> None:
         log.flush()
         return
 
-    prefix = _stamp_prefix(getattr(log, "_run_start_monotonic", None))
+    prefix = _stamp_prefix(log)
     stamped = prefix + bare + "\n"
     sys.stdout.write(stamped)
     log.write(stamped)
