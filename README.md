@@ -70,7 +70,7 @@ Skips docs with existing `network.html` by default. Walks `pdf_input/X.pdf` or r
 | `--only NAMES ...` | Restrict to specific PDFs (filename) or companies (JSON's key). |
 | `-f`, `--force` | Queue and redo every doc, including completed ones. Forwards `--force` to each. |
 | `-c N`, `--crawl N` *(site)* | Crawl depth per company (default 3). |
-| `--max-pages N` *(site)* | Max pages crawled per company (default 25). |
+| `--max-pages N` *(site)* | Max pages crawled per company (default 20). |
 
 Skip flags (`-s`, `-i`, `--skip-crawl`) are **single-pipeline only** - not on the batch.
 

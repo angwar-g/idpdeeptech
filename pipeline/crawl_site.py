@@ -89,8 +89,8 @@ def main():
         help="Max crawl depth (default 3)",
     )
     parser.add_argument(
-        "--max-pages", type=int, default=25,
-        help="Max pages to crawl (default 25)",
+        "--max-pages", type=int, default=20,
+        help="Max pages to crawl (default 20)",
     )
     args = parser.parse_args()
 

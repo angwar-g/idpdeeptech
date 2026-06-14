@@ -82,9 +82,16 @@ def site_stem(url: str) -> str:
     path = parsed.path.strip("/")
     if path:
         path_slug = re.sub(r"[^a-z0-9]+", "_", path.lower()).strip("_")
-        # Cap at ~80 chars to keep paths sane on filesystems that limit them.
+                # Cap path component at ~80 chars to keep total folder paths sane on
+        # filesystems that limit them (Windows enforces MAX_PATH=260 on full
+        # absolute paths). When we truncate, append a short URL hash so two
+        # URLs that share a long prefix don't collapse to the same slug
+        # (e.g. .../very/long/.../articleA vs .../very/long/.../articleB).
         if len(path_slug) > 80:
-            path_slug = path_slug[:80].rstrip("_")
+            import hashlib
+            digest = hashlib.md5(url.encode()).hexdigest()[:8]
+            path_slug = path_slug[:71].rstrip("_") + "_" + digest
+            
         slug = f"{host_slug}_{path_slug}" if host_slug else path_slug
     else:
         slug = host_slug
@@ -108,8 +115,8 @@ def main():
         help="Crawl depth (default 3). Higher = follows more internal links.",
     )
     parser.add_argument(
-        "--max-pages", type=int, default=25,
-        help="Max pages to crawl (default 25).",
+        "--max-pages", type=int, default=20,
+        help="Max pages to crawl (default 20).",
     )
     parser.add_argument(
         "--skip-crawl", action="store_true",

@@ -82,6 +82,48 @@ def main():
     skipped_existing: list[str] = []
     failed: list[tuple[str, str]] = []
 
+    # Mirror all subsequent stdout/stderr to a batch log so we can review the
+    # full terminal output later. New file per run (timestamped).
+    batch_logs_dir = root / "pdf_outputs" / "batch_logs"
+    batch_logs_dir.mkdir(parents=True, exist_ok=True)
+    batch_log_path = batch_logs_dir / f"batch_{time.strftime('%Y%m%d_%H%M%S')}.log"
+
+    class _Tee:
+        def __init__(self, *streams):
+            self._streams = streams
+        def write(self, data):
+            for s in self._streams:
+                try:
+                    s.write(data)
+                    s.flush()
+                except Exception:
+                    pass
+        def flush(self):
+            for s in self._streams:
+                try:
+                    s.flush()
+                except Exception:
+                    pass
+
+    _batch_log_fh = batch_log_path.open("w", encoding="utf-8", buffering=1)
+    sys.stdout = _Tee(sys.__stdout__, _batch_log_fh)
+    sys.stderr = _Tee(sys.__stderr__, _batch_log_fh)
+
+    # Startup banner.
+    print()
+    print("=" * 72)
+    print(f"PDF BATCH RUN  {time.strftime('%Y-%m-%d %H:%M:%S')}")
+    print("=" * 72)
+    print(f"  PDF directory:  {pdf_dir}")
+    print(f"  Documents:      {total}")
+    print(f"  Workers:        {args.workers}")
+    print(f"  Force redo:     {args.force}")
+    if args.only:
+        print(f"  Filter --only:  {args.only}")
+    print(f"  Batch log:      {batch_log_path}")
+    print("=" * 72)
+    print()
+
     failures_log = root / "pdf_outputs" / "batch_failures.log"
     failures_log.parent.mkdir(parents=True, exist_ok=True)
     with failures_log.open("a", encoding="utf-8") as f:
