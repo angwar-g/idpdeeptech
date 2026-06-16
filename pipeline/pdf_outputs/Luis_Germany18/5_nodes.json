@@ -1,0 +1,1792 @@
+[
+  {
+    "entity": "Albert Einstein",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "individual",
+    "role_in_text": "scientist",
+    "technology_area": "quantum computing",
+    "occurrence_sentence": "This was first understood by Max Planck and Albert Einstein in the early twentieth century.",
+    "source_document": "Luis_Germany18.pdf",
+    "page": 4,
+    "confidence": "high",
+    "canonical_actor_key": "albert einstein",
+    "aliases": [
+      "Albert Einstein"
+    ],
+    "pages": [
+      4
+    ],
+    "mentions": [
+      {
+        "entity": "Albert Einstein",
+        "page": 4,
+        "role_in_text": "scientist",
+        "occurrence_sentence": "This was first understood by Max Planck and Albert Einstein in the early twentieth century.",
+        "source_document": "Luis_Germany18.pdf"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Unknown",
+    "sphere": "Unknown",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "unknown_category",
+    "classification_needs_review": true,
+    "classification_review_reason": "unmapped_category:individual; individual_requires_role_classification"
+  },
+  {
+    "entity": "Bundesministerium für Bildung und Forschung",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "national government institutions",
+    "role_in_text": "Publisher",
+    "technology_area": "deep tech general",
+    "occurrence_sentence": "Published by Bundesministerium für Bildung und Forschung / Federal Ministry of Education and Research (BMBF)",
+    "source_document": "Luis_Germany18.pdf",
+    "page": 50,
+    "confidence": "high",
+    "canonical_actor_key": "bundesministerium f r bildung und forschung",
+    "aliases": [
+      "BMBF",
+      "Bundesministerium für Bildung und Forschung",
+      "Bundesministerium für Bildung und Forschung (BMBF)"
+    ],
+    "pages": [
+      17,
+      18,
+      22,
+      50
+    ],
+    "mentions": [
+      {
+        "entity": "Bundesministerium für Bildung und Forschung (BMBF)",
+        "page": 17,
+        "role_in_text": "supporting collaborative R&D projects in quantum communication",
+        "occurrence_sentence": "Since 2011, the BMBF has been supporting a wide range of collaborative R&D projects in the field of quantum communication.",
+        "source_document": "Luis_Germany18.pdf"
+      },
+      {
+        "entity": "BMBF",
+        "page": 18,
+        "role_in_text": "provides support to German researchers in 18 of the",
+        "occurrence_sentence": "",
+        "source_document": "Luis_Germany18.pdf"
+      },
+      {
+        "entity": "BMBF",
+        "page": 22,
+        "role_in_text": "Working with scientists and industry to identify a 'grand challenge' in quantum communication.",
+        "occurrence_sentence": "The BMBF will therefore be working with scientists and industry in a process to identify a 'grand challenge' in this field:",
+        "source_document": "Luis_Germany18.pdf"
+      },
+      {
+        "entity": "Bundesministerium für Bildung und Forschung",
+        "page": 50,
+        "role_in_text": "Publisher",
+        "occurrence_sentence": "Published by Bundesministerium für Bildung und Forschung / Federal Ministry of Education and Research (BMBF)",
+        "source_document": "Luis_Germany18.pdf"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Government",
+    "sphere": "Single",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "Bundeswehr University Munich",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "universities",
+    "role_in_text": "signed a cooperation agreement with IBM",
+    "technology_area": "quantum computing",
+    "occurrence_sentence": "Bundeswehr University Munich has taken an initial step here by signing a cooperation agreement with IBM for the foundation of an IBM quantum hub at the CODE Cyber Defence research institute in Munich.",
+    "source_document": "Luis_Germany18.pdf",
+    "page": 27,
+    "confidence": "high",
+    "canonical_actor_key": "bundeswehr university munich",
+    "aliases": [
+      "Bundeswehr University Munich"
+    ],
+    "pages": [
+      27
+    ],
+    "mentions": [
+      {
+        "entity": "Bundeswehr University Munich",
+        "page": 27,
+        "role_in_text": "signed a cooperation agreement with IBM",
+        "occurrence_sentence": "Bundeswehr University Munich has taken an initial step here by signing a cooperation agreement with IBM for the foundation of an IBM quantum hub at the CODE Cyber Defence research institute in Munich.",
+        "source_document": "Luis_Germany18.pdf"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Academia",
+    "sphere": "Single",
+    "r_and_d": "R&D",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "CODE Research Institute",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "research institutes",
+    "role_in_text": "Planning to work with ZITiS to use a quantum computer.",
+    "technology_area": "quantum computing",
+    "occurrence_sentence": "ZITiS is planning to work with the CODE research",
+    "source_document": "Luis_Germany18.pdf",
+    "page": 26,
+    "canonical_actor_key": "code research institute",
+    "aliases": [
+      "CODE Research Institute"
+    ],
+    "pages": [
+      26
+    ],
+    "mentions": [
+      {
+        "entity": "CODE Research Institute",
+        "page": 26,
+        "role_in_text": "Planning to work with ZITiS to use a quantum computer.",
+        "occurrence_sentence": "ZITiS is planning to work with the CODE research",
+        "source_document": "Luis_Germany18.pdf"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Academia",
+    "sphere": "Single",
+    "r_and_d": "R&D",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "disabled people",
+    "status": "entity",
+    "excluded_reason": "generic_group",
+    "category": "user communities",
+    "role_in_text": "potential users of mobile MEG devices",
+    "technology_area": "quantum sensing",
+    "occurrence_sentence": "Diamond quantum sensors may make it possible to create miniature MEG devices that could be used for mobile applications, such as controlling equipment to help disabled people during their daily life.",
+    "source_document": "Luis_Germany18.pdf",
+    "page": 6,
+    "canonical_actor_key": "disabled people",
+    "aliases": [
+      "disabled people"
+    ],
+    "pages": [
+      6
+    ],
+    "mentions": [
+      {
+        "entity": "disabled people",
+        "page": 6,
+        "role_in_text": "potential users of mobile MEG devices",
+        "occurrence_sentence": "Diamond quantum sensors may make it possible to create miniature MEG devices that could be used for mobile applications, such as controlling equipment to help disabled people during their daily life.",
+        "source_document": "Luis_Germany18.pdf"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Civil Society",
+    "sphere": "Single",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "Europe",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "country",
+    "role_in_text": "policy, geopolitical, funding, strategic, or ecosystem actor",
+    "technology_area": "deep tech general",
+    "occurrence_sentence": "To work with our international partners to ensure the security and autonomy of Germany and Europe in this important future field",
+    "source_document": "Luis_Germany18.pdf",
+    "page": 9,
+    "confidence": "",
+    "canonical_actor_key": "europe",
+    "aliases": [
+      "Europe"
+    ],
+    "pages": [
+      9
+    ],
+    "mentions": [
+      {
+        "entity": "Europe",
+        "page": 9,
+        "role_in_text": "policy, geopolitical, funding, strategic, or ecosystem actor",
+        "occurrence_sentence": "To work with our international partners to ensure the security and autonomy of Germany and Europe in this important future field",
+        "source_document": "Luis_Germany18.pdf"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Unknown",
+    "sphere": "Unknown",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "unknown_category",
+    "classification_needs_review": true,
+    "classification_review_reason": "unmapped_category:country"
+  },
+  {
+    "entity": "European Commission",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "supranational government institutions",
+    "role_in_text": "commissioned a study",
+    "technology_area": "quantum computing",
+    "occurrence_sentence": "According to a study carried out on behalf of the European Commission, 2,455 authors for quantum physics publications in the period 2013-2015 came from the EU, while there were 1,913 from China and 1,564 from North America.",
+    "source_document": "Luis_Germany18.pdf",
+    "page": 8,
+    "confidence": "high",
+    "canonical_actor_key": "european commission",
+    "aliases": [
+      "European Commission"
+    ],
+    "pages": [
+      3,
+      7,
+      8
+    ],
+    "mentions": [
+      {
+        "entity": "European Commission",
+        "page": 3,
+        "role_in_text": "funding",
+        "occurrence_sentence": "The European Commission is funding several deep-tech initiatives.",
+        "source_document": "Luis_Germany18.pdf"
+      },
+      {
+        "entity": "European Commission",
+        "page": 7,
+        "role_in_text": "announced a “FET Flagship” project",
+        "occurrence_sentence": "In 2016, the European Commission announced a “FET Flagship” project based on the “Quantum Manifesto”2 drawn up by European scientists.",
+        "source_document": "Luis_Germany18.pdf"
+      },
+      {
+        "entity": "European Commission",
+        "page": 8,
+        "role_in_text": "commissioned a study",
+        "occurrence_sentence": "According to a study carried out on behalf of the European Commission, 2,455 authors for quantum physics publications in the period 2013-2015 came from the EU, while there were 1,913 from China and 1,564 from North America.",
+        "source_document": "Luis_Germany18.pdf"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Government",
+    "sphere": "Single",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "European Galileo navigation system",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "supranational government institutions",
+    "role_in_text": "time references for precision measurements",
+    "technology_area": "quantum sensing",
+    "occurrence_sentence": "Atomic clocks based on atomic quantum states have already been in use for decades as",
+    "source_document": "Luis_Germany18.pdf",
+    "page": 12,
+    "canonical_actor_key": "european galileo navigation system",
+    "aliases": [
+      "European Galileo navigation system"
+    ],
+    "pages": [
+      12
+    ],
+    "mentions": [
+      {
+        "entity": "European Galileo navigation system",
+        "page": 12,
+        "role_in_text": "time references for precision measurements",
+        "occurrence_sentence": "Atomic clocks based on atomic quantum states have already been in use for decades as",
+        "source_document": "Luis_Germany18.pdf"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Government",
+    "sphere": "Single",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "European Research Area Network (ERA-NET)",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "supranational government institutions",
+    "role_in_text": "Germany is a member of the ERA-NET programme “QuantERA”",
+    "technology_area": "quantum technologies",
+    "occurrence_sentence": "As part of its contribution to collaborative research in Europe, Germany is a member of the ERA-NET programme “QuantERA”.",
+    "source_document": "Luis_Germany18.pdf",
+    "page": 29,
+    "canonical_actor_key": "european research area network",
+    "aliases": [
+      "ERA-NET",
+      "European Research Area Network",
+      "European Research Area Network (ERA-NET)"
+    ],
+    "pages": [
+      29
+    ],
+    "mentions": [
+      {
+        "entity": "European Research Area Network (ERA-NET)",
+        "page": 29,
+        "role_in_text": "Germany is a member of the ERA-NET programme “QuantERA”",
+        "occurrence_sentence": "As part of its contribution to collaborative research in Europe, Germany is a member of the ERA-NET programme “QuantERA”.",
+        "source_document": "Luis_Germany18.pdf"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Government",
+    "sphere": "Single",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "European Union",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "country",
+    "role_in_text": "policy",
+    "technology_area": "deep tech general",
+    "occurrence_sentence": "The European Union is setting policies for deep-tech innovation.",
+    "source_document": "Luis_Germany18.pdf",
+    "page": 3,
+    "confidence": "high",
+    "canonical_actor_key": "european union",
+    "aliases": [
+      "European Union"
+    ],
+    "pages": [
+      3
+    ],
+    "mentions": [
+      {
+        "entity": "European Union",
+        "page": 3,
+        "role_in_text": "policy",
+        "occurrence_sentence": "The European Union is setting policies for deep-tech innovation.",
+        "source_document": "Luis_Germany18.pdf"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Unknown",
+    "sphere": "Unknown",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "unknown_category",
+    "classification_needs_review": true,
+    "classification_review_reason": "unmapped_category:country"
+  },
+  {
+    "entity": "EXIST",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "business support institutions",
+    "role_in_text": "offers various aspects of start-up support",
+    "technology_area": "deep tech general",
+    "occurrence_sentence": "Various aspects of start-up support, for example, are offered through “EXIST”23, the “High-Tech Gründerfonds”",
+    "source_document": "Luis_Germany18.pdf",
+    "page": 20,
+    "canonical_actor_key": "exist",
+    "aliases": [
+      "EXIST"
+    ],
+    "pages": [
+      20
+    ],
+    "mentions": [
+      {
+        "entity": "EXIST",
+        "page": 20,
+        "role_in_text": "offers various aspects of start-up support",
+        "occurrence_sentence": "Various aspects of start-up support, for example, are offered through “EXIST”23, the “High-Tech Gründerfonds”",
+        "source_document": "Luis_Germany18.pdf"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Intermediary",
+    "sphere": "Multi",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "Federal Government",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "national government institutions",
+    "role_in_text": "funding, innovation, and development in quantum technology",
+    "technology_area": "quantum computing | quantum communication | quantum cryptography",
+    "occurrence_sentence": "The Federal Government believes that it is particularly important to develop quantum-resistant cryptographic systems; these systems must be capable of resisting attacks from quantum computers as well as traditional techniques, while also able to work with existing communication protocols and networks.",
+    "source_document": "Luis_Germany18.pdf",
+    "page": 25,
+    "confidence": "high",
+    "canonical_actor_key": "federal government",
+    "aliases": [
+      "Federal Government"
+    ],
+    "pages": [
+      1,
+      7,
+      16,
+      17,
+      20,
+      21,
+      22,
+      25,
+      30,
+      32,
+      33
+    ],
+    "mentions": [
+      {
+        "entity": "Federal Government",
+        "page": 1,
+        "role_in_text": "Framework Programme",
+        "occurrence_sentence": "Quantum technologies – from basic research to market A Federal Government Framework Programme",
+        "source_document": "Luis_Germany18.pdf"
+      },
+      {
+        "entity": "Federal Government",
+        "page": 7,
+        "role_in_text": "defined goal",
+        "occurrence_sentence": "It is a defined goal of the Federal Government that German institutes and companies will be a part of shaping this transformation and pioneering the “second quantum revolution”.",
+        "source_document": "Luis_Germany18.pdf"
+      },
+      {
+        "entity": "Federal Government",
+        "page": 16,
+        "role_in_text": "promoting application-oriented research and establishing initiatives",
+        "occurrence_sentence": "The Federal Government will promote application-oriented research covering all stages, right through to engineering issues.",
+        "source_document": "Luis_Germany18.pdf"
+      },
+      {
+        "entity": "Federal Government",
+        "page": 16,
+        "role_in_text": "establishing a research portal for quantum technologies",
+        "occurrence_sentence": "The Federal Government will contribute here by commissioning an overview (“Who's who”) of the German scientific world of quantum technology, which will be published on the online portal, where it can be used to search for contacts and establish initial contact.",
+        "source_document": "Luis_Germany18.pdf"
+      },
+      {
+        "entity": "Federal Government",
+        "page": 17,
+        "role_in_text": "driving forward quantum technologies",
+        "occurrence_sentence": "The Federal Government will continue to drive these areas forward; the first applications in these fields could appear in the relatively short term.",
+        "source_document": "Luis_Germany18.pdf"
+      },
+      {
+        "entity": "Federal Government",
+        "page": 20,
+        "role_in_text": "supports innovation in business by creating framework conditions that promote innovation",
+        "occurrence_sentence": "The Federal Government supports innovation in business by creating framework conditions that promote innovation, in conjunction with a broad spectrum of funding opportunities: both market-oriented, sector specific programmes and those open to all kinds of technology in all sectors.",
+        "source_document": "Luis_Germany18.pdf"
+      },
+      {
+        "entity": "Federal Government",
+        "page": 21,
+        "role_in_text": "leading lighthouse projects",
+        "occurrence_sentence": "The Federal Government is taking up this proposal, and the BMBF will lead two initial lighthouse projects.",
+        "source_document": "Luis_Germany18.pdf"
+      },
+      {
+        "entity": "Federal Government",
+        "page": 22,
+        "role_in_text": "Implementing initiatives and funding research in quantum computing.",
+        "occurrence_sentence": "The Federal Government is implementing a three-pronged initiative to help with this:",
+        "source_document": "Luis_Germany18.pdf"
+      },
+      {
+        "entity": "Federal Government",
+        "page": 25,
+        "role_in_text": "funding, innovation, and development in quantum technology",
+        "occurrence_sentence": "The Federal Government believes that it is particularly important to develop quantum-resistant cryptographic systems; these systems must be capable of resisting attacks from quantum computers as well as traditional techniques, while also able to work with existing communication protocols and networks.",
+        "source_document": "Luis_Germany18.pdf"
+      },
+      {
+        "entity": "Federal Government",
+        "page": 30,
+        "role_in_text": "initiatives",
+        "occurrence_sentence": "Initiatives of the Federal Government",
+        "source_document": "Luis_Germany18.pdf"
+      },
+      {
+        "entity": "Federal Government",
+        "page": 30,
+        "role_in_text": "developing quantum technology initiatives",
+        "occurrence_sentence": "The Federal Government will therefore develop quantum technology initiatives oriented towards makers, such as open technology platforms for DIY enthusiasts and SMEs.",
+        "source_document": "Luis_Germany18.pdf"
+      },
+      {
+        "entity": "Federal Government",
+        "page": 32,
+        "role_in_text": "Initiatives of the Federal Government",
+        "occurrence_sentence": "Initiatives of the Federal Government",
+        "source_document": "Luis_Germany18.pdf"
+      },
+      {
+        "entity": "Federal Government",
+        "page": 33,
+        "role_in_text": "financing and scheduling resources for quantum technologies",
+        "occurrence_sentence": "The Federal Government will have scheduled resources of around 650 million euros for the period from 2018 to 2022.",
+        "source_document": "Luis_Germany18.pdf"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Government",
+    "sphere": "Single",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "Federal Office for Information Security (BSI)",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "national government institutions",
+    "role_in_text": "studying the effects quantum computers could have on contemporary IT security infrastructures",
+    "technology_area": "quantum cryptography",
+    "occurrence_sentence": "The Federal Office for Information Security (BSI) began studying the effects quantum computers could have on contemporary IT security infrastructures some years ago.",
+    "source_document": "Luis_Germany18.pdf",
+    "page": 47,
+    "confidence": "high",
+    "canonical_actor_key": "federal office for information security",
+    "aliases": [
+      "BSI",
+      "Federal Office for Information Security",
+      "Federal Office for Information Security (BSI)"
+    ],
+    "pages": [
+      47,
+      48
+    ],
+    "mentions": [
+      {
+        "entity": "Federal Office for Information Security (BSI)",
+        "page": 47,
+        "role_in_text": "studying the effects quantum computers could have on contemporary IT security infrastructures",
+        "occurrence_sentence": "The Federal Office for Information Security (BSI) began studying the effects quantum computers could have on contemporary IT security infrastructures some years ago.",
+        "source_document": "Luis_Germany18.pdf"
+      },
+      {
+        "entity": "Federal Office for Information Security (BSI)",
+        "page": 48,
+        "role_in_text": "funding the European projects “PQCrypto” and “SAFEcrypto”",
+        "occurrence_sentence": "the EU is currently funding the European projects “PQCrypto” – which numbers the BSI among its advisory board members – and “SA",
+        "source_document": "Luis_Germany18.pdf"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Government",
+    "sphere": "Single",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "Ferdinand-Braun-Institut, Leibniz-Institut für Höchstfrequenztechnik (FBH)",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "research institutes",
+    "role_in_text": "researching electronic and optical components, modules and systems based on compound semiconductors",
+    "technology_area": "photonics",
+    "occurrence_sentence": "The Ferdinand-Braun-Institut, Leibniz-Institut für Höchstfrequenztechnik (FBH) is researching electronic and optical components, modules and systems based on compound semiconductors, with a particular focus on high-frequency transmitters and light sources from the infra-red to UV range.",
+    "source_document": "Luis_Germany18.pdf",
+    "page": 42,
+    "confidence": "high",
+    "canonical_actor_key": "ferdinand braun institut leibniz institut f r h chstfrequenztechnik",
+    "aliases": [
+      "FBH",
+      "Ferdinand-Braun-Institut, Leibniz-Institut für Höchstfrequenztechnik",
+      "Ferdinand-Braun-Institut, Leibniz-Institut für Höchstfrequenztechnik (FBH)"
+    ],
+    "pages": [
+      42
+    ],
+    "mentions": [
+      {
+        "entity": "Ferdinand-Braun-Institut, Leibniz-Institut für Höchstfrequenztechnik (FBH)",
+        "page": 42,
+        "role_in_text": "researching electronic and optical components, modules and systems based on compound semiconductors",
+        "occurrence_sentence": "The Ferdinand-Braun-Institut, Leibniz-Institut für Höchstfrequenztechnik (FBH) is researching electronic and optical components, modules and systems based on compound semiconductors, with a particular focus on high-frequency transmitters and light sources from the infra-red to UV range.",
+        "source_document": "Luis_Germany18.pdf"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Academia",
+    "sphere": "Single",
+    "r_and_d": "R&D",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "Forschungszentrum Jülich (FZJ)",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "research institutes",
+    "role_in_text": "working on a dedicated extension to the Helmholtz Nano Facility (HNF) and developing a user infrastructure for quantum computing (JuNIQ)",
+    "technology_area": "quantum computing",
+    "occurrence_sentence": "the FZJ is working on a dedicated extension to the Helmholtz Nano Facility (HNF) and developing a user infrastructure for quantum computing (JuNIQ)",
+    "source_document": "Luis_Germany18.pdf",
+    "page": 40,
+    "confidence": "high",
+    "canonical_actor_key": "forschungszentrum j lich",
+    "aliases": [
+      "FZJ",
+      "Forschungszentrum Jülich",
+      "Forschungszentrum Jülich (FZJ)"
+    ],
+    "pages": [
+      40
+    ],
+    "mentions": [
+      {
+        "entity": "Forschungszentrum Jülich (FZJ)",
+        "page": 40,
+        "role_in_text": "working on a dedicated extension to the Helmholtz Nano Facility (HNF) and developing a user infrastructure for quantum computing (JuNIQ)",
+        "occurrence_sentence": "the FZJ is working on a dedicated extension to the Helmholtz Nano Facility (HNF) and developing a user infrastructure for quantum computing (JuNIQ)",
+        "source_document": "Luis_Germany18.pdf"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Academia",
+    "sphere": "Single",
+    "r_and_d": "R&D",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "Fraunhofer AISEC",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "research institutes",
+    "role_in_text": "bringing together competences to couple quantum communication technologies to traditional security architectures",
+    "technology_area": "quantum communication",
+    "occurrence_sentence": "Competences from the Fraunhofer AISEC and SIT will be brought together to couple quantum communication technologies to traditional security architectures.",
+    "source_document": "Luis_Germany18.pdf",
+    "page": 38,
+    "confidence": "high",
+    "canonical_actor_key": "fraunhofer aisec",
+    "aliases": [
+      "Fraunhofer AISEC"
+    ],
+    "pages": [
+      38
+    ],
+    "mentions": [
+      {
+        "entity": "Fraunhofer AISEC",
+        "page": 38,
+        "role_in_text": "bringing together competences to couple quantum communication technologies to traditional security architectures",
+        "occurrence_sentence": "Competences from the Fraunhofer AISEC and SIT will be brought together to couple quantum communication technologies to traditional security architectures.",
+        "source_document": "Luis_Germany18.pdf"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Academia",
+    "sphere": "Single",
+    "r_and_d": "R&D",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "Fraunhofer IAF",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "research institutes",
+    "role_in_text": "research",
+    "technology_area": "quantum sensing",
+    "occurrence_sentence": "Research at the Fraunhofer IAF in collaboration with the Fraunhofer IPM, IWM, IMM and CAP-UK is focusing intensively on solid state technologies that could facilitate widespread use of customised quantum sensors at room temperature and in variable environments.",
+    "source_document": "Luis_Germany18.pdf",
+    "page": 37,
+    "confidence": "high",
+    "canonical_actor_key": "fraunhofer iaf",
+    "aliases": [
+      "Fraunhofer IAF"
+    ],
+    "pages": [
+      37
+    ],
+    "mentions": [
+      {
+        "entity": "Fraunhofer IAF",
+        "page": 37,
+        "role_in_text": "research",
+        "occurrence_sentence": "Research at the Fraunhofer IAF in collaboration with the Fraunhofer IPM, IWM, IMM and CAP-UK is focusing intensively on solid state technologies that could facilitate widespread use of customised quantum sensors at room temperature and in variable environments.",
+        "source_document": "Luis_Germany18.pdf"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Academia",
+    "sphere": "Single",
+    "r_and_d": "R&D",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "Fraunhofer IOF",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "research institutes",
+    "role_in_text": "coordinates the QUILT flagship project",
+    "technology_area": "photonics",
+    "occurrence_sentence": "The central funding project in the prioritised strategic initiative is the “QUILT” flagship project (“Quantum Methods for Advanced Imaging Solutions”), coordinated by Fraunhofer IO",
+    "source_document": "Luis_Germany18.pdf",
+    "page": 35,
+    "canonical_actor_key": "fraunhofer iof",
+    "aliases": [
+      "Fraunhofer IOF"
+    ],
+    "pages": [
+      35
+    ],
+    "mentions": [
+      {
+        "entity": "Fraunhofer IOF",
+        "page": 35,
+        "role_in_text": "coordinates the QUILT flagship project",
+        "occurrence_sentence": "The central funding project in the prioritised strategic initiative is the “QUILT” flagship project (“Quantum Methods for Advanced Imaging Solutions”), coordinated by Fraunhofer IO",
+        "source_document": "Luis_Germany18.pdf"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Academia",
+    "sphere": "Single",
+    "r_and_d": "R&D",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "Fraunhofer IPM",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "research institutes",
+    "role_in_text": "research",
+    "technology_area": "quantum sensing",
+    "occurrence_sentence": "Research at the Fraunhofer IAF in collaboration with the Fraunhofer IPM, IWM, IMM and CAP",
+    "source_document": "Luis_Germany18.pdf",
+    "page": 37,
+    "canonical_actor_key": "fraunhofer ipm",
+    "aliases": [
+      "Fraunhofer IPM"
+    ],
+    "pages": [
+      37
+    ],
+    "mentions": [
+      {
+        "entity": "Fraunhofer IPM",
+        "page": 37,
+        "role_in_text": "research",
+        "occurrence_sentence": "Research at the Fraunhofer IAF in collaboration with the Fraunhofer IPM, IWM, IMM and CAP",
+        "source_document": "Luis_Germany18.pdf"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Academia",
+    "sphere": "Single",
+    "r_and_d": "R&D",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "Fraunhofer SIT",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "research institutes",
+    "role_in_text": "bringing together competences to couple quantum communication technologies to traditional security architectures",
+    "technology_area": "quantum communication",
+    "occurrence_sentence": "Competences from the Fraunhofer AISEC and SIT will be brought together to couple quantum communication technologies to traditional security architectures.",
+    "source_document": "Luis_Germany18.pdf",
+    "page": 38,
+    "canonical_actor_key": "fraunhofer sit",
+    "aliases": [
+      "Fraunhofer SIT"
+    ],
+    "pages": [
+      38
+    ],
+    "mentions": [
+      {
+        "entity": "Fraunhofer SIT",
+        "page": 38,
+        "role_in_text": "bringing together competences to couple quantum communication technologies to traditional security architectures",
+        "occurrence_sentence": "Competences from the Fraunhofer AISEC and SIT will be brought together to couple quantum communication technologies to traditional security architectures.",
+        "source_document": "Luis_Germany18.pdf"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Academia",
+    "sphere": "Single",
+    "r_and_d": "R&D",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "Fraunhofer Society",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "research institutes",
+    "role_in_text": "perceives quantum technologies to be an important opportunity for the future of Germany and Europe",
+    "technology_area": "deep tech general",
+    "occurrence_sentence": "The Fraunhofer Society perceives quantum technologies to be an important opportunity for the future of Germany and Europe as a key high-tech location.",
+    "source_document": "Luis_Germany18.pdf",
+    "page": 35,
+    "confidence": "high",
+    "canonical_actor_key": "fraunhofer society",
+    "aliases": [
+      "Fraunhofer Society"
+    ],
+    "pages": [
+      2,
+      35
+    ],
+    "mentions": [
+      {
+        "entity": "Fraunhofer Society",
+        "page": 2,
+        "role_in_text": "",
+        "occurrence_sentence": "",
+        "source_document": "Luis_Germany18.pdf"
+      },
+      {
+        "entity": "Fraunhofer Society",
+        "page": 35,
+        "role_in_text": "perceives quantum technologies to be an important opportunity for the future of Germany and Europe",
+        "occurrence_sentence": "The Fraunhofer Society perceives quantum technologies to be an important opportunity for the future of Germany and Europe as a key high-tech location.",
+        "source_document": "Luis_Germany18.pdf"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Academia",
+    "sphere": "Single",
+    "r_and_d": "R&D",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "German Aerospace Center (DLR)",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "research institutes",
+    "role_in_text": "Institute for satellite geodesy and inertial sensing, optical free radiation transfer of data",
+    "technology_area": "deep tech general",
+    "occurrence_sentence": "There are also key links into the planned activities at the German Aerospace Center (DLR) Institute for satellite geodesy and inertial sensing in Hanover, as well as in the field of optical free radiation transfer of data (DLR), time and frequency (PTB).",
+    "source_document": "Luis_Germany18.pdf",
+    "page": 46,
+    "confidence": "high",
+    "canonical_actor_key": "german aerospace center",
+    "aliases": [
+      "DLR",
+      "German Aerospace Center",
+      "German Aerospace Center (DLR)"
+    ],
+    "pages": [
+      23,
+      24,
+      46
+    ],
+    "mentions": [
+      {
+        "entity": "German Aerospace Center (DLR)",
+        "page": 23,
+        "role_in_text": "has decades of experience and proven competence in satellite development",
+        "occurrence_sentence": "The German Aerospace Center (DLR) has decades of experience and proven competence in satellite development.",
+        "source_document": "Luis_Germany18.pdf"
+      },
+      {
+        "entity": "German Aerospace Center (DLR)",
+        "page": 24,
+        "role_in_text": "Two new institutes and a Galileo centre of excellence could be set up at the DLR for this purpose.",
+        "occurrence_sentence": "Two new institutes and a Galileo centre of excellence could be set up at the DLR for this purpose.",
+        "source_document": "Luis_Germany18.pdf"
+      },
+      {
+        "entity": "German Aerospace Center (DLR)",
+        "page": 46,
+        "role_in_text": "Institute for satellite geodesy and inertial sensing, optical free radiation transfer of data",
+        "occurrence_sentence": "There are also key links into the planned activities at the German Aerospace Center (DLR) Institute for satellite geodesy and inertial sensing in Hanover, as well as in the field of optical free radiation transfer of data (DLR), time and frequency (PTB).",
+        "source_document": "Luis_Germany18.pdf"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Academia",
+    "sphere": "Single",
+    "r_and_d": "R&D",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "German Armed Forces",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "national government institutions",
+    "role_in_text": "funding, innovation, and development in quantum technology",
+    "technology_area": "quantum computing | quantum communication | quantum cryptography",
+    "occurrence_sentence": "The federal security agencies and German Armed Forces therefore consider active, needs",
+    "source_document": "Luis_Germany18.pdf",
+    "page": 25,
+    "canonical_actor_key": "german armed forces",
+    "aliases": [
+      "German Armed Forces"
+    ],
+    "pages": [
+      25
+    ],
+    "mentions": [
+      {
+        "entity": "German Armed Forces",
+        "page": 25,
+        "role_in_text": "funding, innovation, and development in quantum technology",
+        "occurrence_sentence": "The federal security agencies and German Armed Forces therefore consider active, needs",
+        "source_document": "Luis_Germany18.pdf"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Government",
+    "sphere": "Single",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "German Federal Government",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "national government institutions",
+    "role_in_text": "Initiatives of the Federal Government",
+    "technology_area": "quantum sensing",
+    "occurrence_sentence": "Initiatives of the Federal Government will cover in particular the fields of geodesy, metrology and sensor technology, developing quantum precision instruments suited for use in space and designing future Galileo satellites.",
+    "source_document": "Luis_Germany18.pdf",
+    "page": 24,
+    "confidence": "high",
+    "canonical_actor_key": "german federal government",
+    "aliases": [
+      "German Federal Government"
+    ],
+    "pages": [
+      24
+    ],
+    "mentions": [
+      {
+        "entity": "German Federal Government",
+        "page": 24,
+        "role_in_text": "Initiatives of the Federal Government",
+        "occurrence_sentence": "Initiatives of the Federal Government will cover in particular the fields of geodesy, metrology and sensor technology, developing quantum precision instruments suited for use in space and designing future Galileo satellites.",
+        "source_document": "Luis_Germany18.pdf"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Government",
+    "sphere": "Single",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "German Research Foundation (DFG)",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "national government institutions",
+    "role_in_text": "funding research directly related to quantum technologies",
+    "technology_area": "deep tech general",
+    "occurrence_sentence": "The German Research Foundation (DFG) began many years ago to fund research directly related to quantum technologies.",
+    "source_document": "Luis_Germany18.pdf",
+    "page": 34,
+    "confidence": "high",
+    "canonical_actor_key": "german research foundation",
+    "aliases": [
+      "DFG",
+      "German Research Foundation",
+      "German Research Foundation (DFG)"
+    ],
+    "pages": [
+      2,
+      8,
+      34
+    ],
+    "mentions": [
+      {
+        "entity": "German Research Foundation",
+        "page": 2,
+        "role_in_text": "R&D funding organisations",
+        "occurrence_sentence": "5.1 German Research Foundation",
+        "source_document": "Luis_Germany18.pdf"
+      },
+      {
+        "entity": "German Research Foundation",
+        "page": 8,
+        "role_in_text": "funding organisation",
+        "occurrence_sentence": "These organisations and institutes – the German Research Foundation, the Max Planck Society, the Helmholtz",
+        "source_document": "Luis_Germany18.pdf"
+      },
+      {
+        "entity": "German Research Foundation (DFG)",
+        "page": 34,
+        "role_in_text": "funding research directly related to quantum technologies",
+        "occurrence_sentence": "The German Research Foundation (DFG) began many years ago to fund research directly related to quantum technologies.",
+        "source_document": "Luis_Germany18.pdf"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Government",
+    "sphere": "Single",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "Germany",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "country",
+    "role_in_text": "policy, geopolitical, funding, strategic, or ecosystem actor",
+    "technology_area": "deep tech general",
+    "occurrence_sentence": "Germany has a strong position in quantum technologies, with significant expertise available in the research community, particularly in the field of quantum physics.",
+    "source_document": "Luis_Germany18.pdf",
+    "page": 9,
+    "confidence": "high",
+    "canonical_actor_key": "germany",
+    "aliases": [
+      "Germany"
+    ],
+    "pages": [
+      5,
+      9,
+      13,
+      14,
+      19
+    ],
+    "mentions": [
+      {
+        "entity": "Germany",
+        "page": 5,
+        "role_in_text": "policy, geopolitical, funding, strategic, or ecosystem actor",
+        "occurrence_sentence": "Quantum technologies – from basic research to market",
+        "source_document": "Luis_Germany18.pdf"
+      },
+      {
+        "entity": "Germany",
+        "page": 9,
+        "role_in_text": "policy, geopolitical, funding, strategic, or ecosystem actor",
+        "occurrence_sentence": "Germany has a strong position in quantum technologies, with significant expertise available in the research community, particularly in the field of quantum physics.",
+        "source_document": "Luis_Germany18.pdf"
+      },
+      {
+        "entity": "Germany",
+        "page": 13,
+        "role_in_text": "Country investing in quantum technology",
+        "occurrence_sentence": "Around 100 to 150 million euros are currently invested annually in Germany for laboratory equipment in the quantum technology field.",
+        "source_document": "Luis_Germany18.pdf"
+      },
+      {
+        "entity": "Germany",
+        "page": 14,
+        "role_in_text": "research focuses in Germany",
+        "occurrence_sentence": "Research focuses in Germany applications in the field of quantum technologies,",
+        "source_document": "Luis_Germany18.pdf"
+      },
+      {
+        "entity": "Germany",
+        "page": 19,
+        "role_in_text": "policy, geopolitical, funding, strategic, or ecosystem actor",
+        "occurrence_sentence": "Germany's share of this is estimated to be around 6 to 10%.",
+        "source_document": "Luis_Germany18.pdf"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Unknown",
+    "sphere": "Unknown",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "unknown_category",
+    "classification_needs_review": true,
+    "classification_review_reason": "unmapped_category:country"
+  },
+  {
+    "entity": "Helmholtz Association",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "research institutes",
+    "role_in_text": "research activities",
+    "technology_area": "deep tech general",
+    "occurrence_sentence": "The research activities at the Helmholtz Association have been designed to complement each other.",
+    "source_document": "Luis_Germany18.pdf",
+    "page": 39,
+    "confidence": "high",
+    "canonical_actor_key": "helmholtz association",
+    "aliases": [
+      "Helmholtz Association"
+    ],
+    "pages": [
+      39
+    ],
+    "mentions": [
+      {
+        "entity": "Helmholtz Association",
+        "page": 39,
+        "role_in_text": "research activities",
+        "occurrence_sentence": "The research activities at the Helmholtz Association have been designed to complement each other.",
+        "source_document": "Luis_Germany18.pdf"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Academia",
+    "sphere": "Single",
+    "r_and_d": "R&D",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "Humboldt University",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "universities",
+    "role_in_text": "Adding a quantum technologies programme to the Master's course in “Optical Sciences”",
+    "technology_area": "quantum computing",
+    "occurrence_sentence": "Quantum technologies – from basic research to market programme will be added to the existing Master's course in “Optical Sciences” at Humboldt University.",
+    "source_document": "Luis_Germany18.pdf",
+    "page": 43,
+    "confidence": "high",
+    "canonical_actor_key": "humboldt university",
+    "aliases": [
+      "Humboldt University"
+    ],
+    "pages": [
+      43
+    ],
+    "mentions": [
+      {
+        "entity": "Humboldt University",
+        "page": 43,
+        "role_in_text": "Adding a quantum technologies programme to the Master's course in “Optical Sciences”",
+        "occurrence_sentence": "Quantum technologies – from basic research to market programme will be added to the existing Master's course in “Optical Sciences” at Humboldt University.",
+        "source_document": "Luis_Germany18.pdf"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Academia",
+    "sphere": "Single",
+    "r_and_d": "R&D",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "IBM",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "large enterprises",
+    "role_in_text": "signed a cooperation agreement with Bundeswehr University Munich",
+    "technology_area": "quantum computing",
+    "occurrence_sentence": "Bundeswehr University Munich has taken an initial step here by signing a cooperation agreement with IBM for the foundation of an IBM quantum hub at the CODE Cyber Defence research institute in Munich.",
+    "source_document": "Luis_Germany18.pdf",
+    "page": 27,
+    "canonical_actor_key": "ibm",
+    "aliases": [
+      "IBM"
+    ],
+    "pages": [
+      27
+    ],
+    "mentions": [
+      {
+        "entity": "IBM",
+        "page": 27,
+        "role_in_text": "signed a cooperation agreement with Bundeswehr University Munich",
+        "occurrence_sentence": "Bundeswehr University Munich has taken an initial step here by signing a cooperation agreement with IBM for the foundation of an IBM quantum hub at the CODE Cyber Defence research institute in Munich.",
+        "source_document": "Luis_Germany18.pdf"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Industry",
+    "sphere": "Single",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "Institute for Physics at Humboldt University",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "universities",
+    "role_in_text": "working on quantum technologies and already have very close links with the FBH",
+    "source_document": "Luis_Germany18.pdf",
+    "page": 42,
+    "canonical_actor_key": "institute for physics at humboldt university",
+    "aliases": [
+      "Institute for Physics at Humboldt University"
+    ],
+    "pages": [
+      42
+    ],
+    "mentions": [
+      {
+        "entity": "Institute for Physics at Humboldt University",
+        "page": 42,
+        "role_in_text": "working on quantum technologies and already have very close links with the FBH",
+        "occurrence_sentence": "",
+        "source_document": "Luis_Germany18.pdf"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Academia",
+    "sphere": "Single",
+    "r_and_d": "R&D",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "Karlsruhe Institute of Technology (KIT)",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "research institutes",
+    "role_in_text": "formed an alliance with universities to found the “European Campus EUCOR”",
+    "technology_area": "quantum technology",
+    "occurrence_sentence": "Quantum technologies – from basic research to market KIT has formed an alliance with the universities of Basel, Freiburg and Strasbourg to found the “European Campus EUCOR”, where a pool of interdisciplinary competences in the field of quantum technology is to be established.",
+    "source_document": "Luis_Germany18.pdf",
+    "page": 41,
+    "confidence": "high",
+    "canonical_actor_key": "karlsruhe institute of technology",
+    "aliases": [
+      "KIT",
+      "Karlsruhe Institute of Technology",
+      "Karlsruhe Institute of Technology (KIT)"
+    ],
+    "pages": [
+      40,
+      41
+    ],
+    "mentions": [
+      {
+        "entity": "Karlsruhe Institute of Technology (KIT)",
+        "page": 40,
+        "role_in_text": "planning to found an Institute for Quantum Technologies housing a Quantum Hardware Foundry",
+        "occurrence_sentence": "KIT",
+        "source_document": "Luis_Germany18.pdf"
+      },
+      {
+        "entity": "Karlsruhe Institute of Technology (KIT)",
+        "page": 41,
+        "role_in_text": "formed an alliance with universities to found the “European Campus EUCOR”",
+        "occurrence_sentence": "Quantum technologies – from basic research to market KIT has formed an alliance with the universities of Basel, Freiburg and Strasbourg to found the “European Campus EUCOR”, where a pool of interdisciplinary competences in the field of quantum technology is to be established.",
+        "source_document": "Luis_Germany18.pdf"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Academia",
+    "sphere": "Single",
+    "r_and_d": "R&D",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "Leibniz Institute",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "research institutes",
+    "role_in_text": "partner in the internationally recognised Berlin Applied Mathematics",
+    "technology_area": "deep tech general",
+    "occurrence_sentence": "The Weierstrass Institute for Applied Analysis and Stochastics (",
+    "source_document": "Luis_Germany18.pdf",
+    "page": 44,
+    "canonical_actor_key": "leibniz institute",
+    "aliases": [
+      "Leibniz Institute"
+    ],
+    "pages": [
+      44
+    ],
+    "mentions": [
+      {
+        "entity": "Leibniz Institute",
+        "page": 44,
+        "role_in_text": "partner in the internationally recognised Berlin Applied Mathematics",
+        "occurrence_sentence": "The Weierstrass Institute for Applied Analysis and Stochastics (",
+        "source_document": "Luis_Germany18.pdf"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Academia",
+    "sphere": "Single",
+    "r_and_d": "R&D",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "Max Planck",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "individual",
+    "role_in_text": "scientist",
+    "technology_area": "quantum computing",
+    "occurrence_sentence": "This was first understood by Max Planck and Albert Einstein in the early twentieth century.",
+    "source_document": "Luis_Germany18.pdf",
+    "page": 4,
+    "confidence": "high",
+    "canonical_actor_key": "max planck",
+    "aliases": [
+      "Max Planck"
+    ],
+    "pages": [
+      4
+    ],
+    "mentions": [
+      {
+        "entity": "Max Planck",
+        "page": 4,
+        "role_in_text": "scientist",
+        "occurrence_sentence": "This was first understood by Max Planck and Albert Einstein in the early twentieth century.",
+        "source_document": "Luis_Germany18.pdf"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Unknown",
+    "sphere": "Unknown",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "unknown_category",
+    "classification_needs_review": true,
+    "classification_review_reason": "unmapped_category:individual; individual_requires_role_classification"
+  },
+  {
+    "entity": "Max Planck Society",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "research institutes",
+    "role_in_text": "non-university research organisations",
+    "technology_area": "deep tech general",
+    "occurrence_sentence": "5.2 Max Planck Society",
+    "source_document": "Luis_Germany18.pdf",
+    "page": 2,
+    "confidence": "high",
+    "canonical_actor_key": "max planck society",
+    "aliases": [
+      "MPG",
+      "Max Planck Society",
+      "Max Planck Society (MPG)"
+    ],
+    "pages": [
+      2,
+      34
+    ],
+    "mentions": [
+      {
+        "entity": "Max Planck Society",
+        "page": 2,
+        "role_in_text": "non-university research organisations",
+        "occurrence_sentence": "5.2 Max Planck Society",
+        "source_document": "Luis_Germany18.pdf"
+      },
+      {
+        "entity": "Max Planck Society (MPG)",
+        "page": 34,
+        "role_in_text": "early supporter of basic research on quantum technologies",
+        "occurrence_sentence": "The Max Planck Society (MPG) was an early supporter of basic research on quantum technologies, in the sense of the second quantum revolution.",
+        "source_document": "Luis_Germany18.pdf"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Academia",
+    "sphere": "Single",
+    "r_and_d": "R&D",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "National Initiative for Quantum Technologies – Fundamentals to Applications (QUTEGA)",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "program_or_initiative",
+    "role_in_text": "Provides expert papers on quantum technologies",
+    "technology_area": "quantum computing",
+    "occurrence_sentence": "Concept paper from the National Initiative for Quantum Technologies – Fundamentals to Applications (QUTEGA) http://www.qutega.de/en/home/",
+    "source_document": "Luis_Germany18.pdf",
+    "page": 10,
+    "confidence": "high",
+    "canonical_actor_key": "national initiative for quantum technologies fundamentals to applications",
+    "aliases": [
+      "National Initiative for Quantum Technologies – Fundamentals to Applications",
+      "National Initiative for Quantum Technologies – Fundamentals to Applications (QUTEGA)",
+      "QUTEGA"
+    ],
+    "pages": [
+      10
+    ],
+    "mentions": [
+      {
+        "entity": "National Initiative for Quantum Technologies – Fundamentals to Applications (QUTEGA)",
+        "page": 10,
+        "role_in_text": "Provides expert papers on quantum technologies",
+        "occurrence_sentence": "Concept paper from the National Initiative for Quantum Technologies – Fundamentals to Applications (QUTEGA) http://www.qutega.de/en/home/",
+        "source_document": "Luis_Germany18.pdf"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Unknown",
+    "sphere": "Unknown",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "unknown_category",
+    "classification_needs_review": true,
+    "classification_review_reason": "unmapped_category:program_or_initiative"
+  },
+  {
+    "entity": "parliament",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "national government institutions",
+    "role_in_text": "making decisions about the focuses, responsibilities, content, and financial structure of the quantum technologies programme",
+    "technology_area": "deep tech general",
+    "occurrence_sentence": "Federal Government and parliament will make decisions about its focuses, responsibilities, content and financial structure going forward from 2022 based on scientific and commercial developments in the field of quantum technologies",
+    "source_document": "Luis_Germany18.pdf",
+    "page": 33,
+    "canonical_actor_key": "parliament",
+    "aliases": [
+      "parliament"
+    ],
+    "pages": [
+      33
+    ],
+    "mentions": [
+      {
+        "entity": "parliament",
+        "page": 33,
+        "role_in_text": "making decisions about the focuses, responsibilities, content, and financial structure of the quantum technologies programme",
+        "occurrence_sentence": "Federal Government and parliament will make decisions about its focuses, responsibilities, content and financial structure going forward from 2022 based on scientific and commercial developments in the field of quantum technologies",
+        "source_document": "Luis_Germany18.pdf"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Government",
+    "sphere": "Single",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "Physikalisch-Technische Bundesanstalt (PTB)",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "national government institutions",
+    "role_in_text": "global leader in the field of electrical quantum standards",
+    "technology_area": "quantum metrology",
+    "occurrence_sentence": "The PTB is the only national metrology institute in the world with complete production lines for superconductor and semiconductor quantum standards and electrical quantum standards based on graphene layers.",
+    "source_document": "Luis_Germany18.pdf",
+    "page": 45,
+    "confidence": "high",
+    "canonical_actor_key": "physikalisch technische bundesanstalt",
+    "aliases": [
+      "National Metrology Institute of Germany",
+      "National Metrology Institute of Germany (PTB)",
+      "National Metrology Institute of Germany (Physikalisch-Technische Bundesanstalt)",
+      "PTB",
+      "Physikalisch-Technische Bundesanstalt",
+      "Physikalisch-Technische Bundesanstalt (PTB)"
+    ],
+    "pages": [
+      18,
+      28,
+      29,
+      45,
+      46
+    ],
+    "mentions": [
+      {
+        "entity": "National Metrology Institute of Germany (Physikalisch-Technische Bundesanstalt)",
+        "page": 18,
+        "role_in_text": "working together with industrial enterprises to research and develop a demonstrator for a compact, robust optical clock",
+        "occurrence_sentence": "as part of the pilot project “Optical single ion clocks for users”, the National Metrology Institute of Germany (Physikalisch-Technische Bundesanstalt) has been working together with industrial enterprises since 2017 to research and develop a demonstrator for a compact, robust optical clock that can be used to synchronise large communication networks.",
+        "source_document": "Luis_Germany18.pdf"
+      },
+      {
+        "entity": "National Metrology Institute of Germany (PTB)",
+        "page": 28,
+        "role_in_text": "collaborating intensively with leading international metrology institutes",
+        "occurrence_sentence": "The National Metrology Institute of Germany (PTB), is collaborating intensively with leading international metrology institutes in the fields of quantum metrology and sensing.",
+        "source_document": "Luis_Germany18.pdf"
+      },
+      {
+        "entity": "Physikalisch-Technische Bundesanstalt (PTB)",
+        "page": 29,
+        "role_in_text": "helping to drive the work forward internationally",
+        "occurrence_sentence": "The PTB is helping to drive this work forward internationally.",
+        "source_document": "Luis_Germany18.pdf"
+      },
+      {
+        "entity": "Physikalisch-Technische Bundesanstalt (PTB)",
+        "page": 45,
+        "role_in_text": "global leader in the field of electrical quantum standards",
+        "occurrence_sentence": "The PTB is the only national metrology institute in the world with complete production lines for superconductor and semiconductor quantum standards and electrical quantum standards based on graphene layers.",
+        "source_document": "Luis_Germany18.pdf"
+      },
+      {
+        "entity": "Physikalisch-Technische Bundesanstalt (PTB)",
+        "page": 45,
+        "role_in_text": "technology transfer projects in cooperation with and to support German SMEs",
+        "occurrence_sentence": "The PTB has been able to build on this foundation to establish its position as a",
+        "source_document": "Luis_Germany18.pdf"
+      },
+      {
+        "entity": "Physikalisch-Technische Bundesanstalt (PTB)",
+        "page": 46,
+        "role_in_text": "Time and frequency, superconductor thin layer technology, measurement techniques",
+        "occurrence_sentence": "",
+        "source_document": "Luis_Germany18.pdf"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Government",
+    "sphere": "Single",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "PTB",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "research institutes",
+    "role_in_text": "represents a significant strategic development partner",
+    "technology_area": "quantum sensing",
+    "occurrence_sentence": "The PTB in particular represents a significant strategic development partner, with unique features in the field of quantum metrology and sensing, as well as its sovereign tasks in the time and frequency transmission sector.",
+    "source_document": "Luis_Germany18.pdf",
+    "page": 23,
+    "canonical_actor_key": "ptb",
+    "aliases": [
+      "PTB"
+    ],
+    "pages": [
+      23
+    ],
+    "mentions": [
+      {
+        "entity": "PTB",
+        "page": 23,
+        "role_in_text": "represents a significant strategic development partner",
+        "occurrence_sentence": "The PTB in particular represents a significant strategic development partner, with unique features in the field of quantum metrology and sensing, as well as its sovereign tasks in the time and frequency transmission sector.",
+        "source_document": "Luis_Germany18.pdf"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Academia",
+    "sphere": "Single",
+    "r_and_d": "R&D",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "Technische Universität Darmstadt (TU Darmstadt)",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "universities",
+    "role_in_text": "carried out a study commissioned by the BSI",
+    "technology_area": "quantum cryptography",
+    "occurrence_sentence": "TU Darmstadt has carried out a study commissioned by the BSI on “The evaluation of lattice-based cryptographic procedures”.",
+    "source_document": "Luis_Germany18.pdf",
+    "page": 48,
+    "confidence": "high",
+    "canonical_actor_key": "technische universit t darmstadt",
+    "aliases": [
+      "TU Darmstadt",
+      "Technische Universität Darmstadt",
+      "Technische Universität Darmstadt (TU Darmstadt)"
+    ],
+    "pages": [
+      48
+    ],
+    "mentions": [
+      {
+        "entity": "Technische Universität Darmstadt (TU Darmstadt)",
+        "page": 48,
+        "role_in_text": "carried out a study commissioned by the BSI",
+        "occurrence_sentence": "TU Darmstadt has carried out a study commissioned by the BSI on “The evaluation of lattice-based cryptographic procedures”.",
+        "source_document": "Luis_Germany18.pdf"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Academia",
+    "sphere": "Single",
+    "r_and_d": "R&D",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "United Kingdom",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "country",
+    "role_in_text": "policy, geopolitical, funding, strategic, or ecosystem actor",
+    "technology_area": "deep tech general",
+    "occurrence_sentence": "Based on numbers from the United Kingdom, our current estimate is around 30,000 people worldwide and an annual research budget of over 1.5 billion.",
+    "source_document": "Luis_Germany18.pdf",
+    "page": 19,
+    "canonical_actor_key": "united kingdom",
+    "aliases": [
+      "United Kingdom"
+    ],
+    "pages": [
+      19
+    ],
+    "mentions": [
+      {
+        "entity": "United Kingdom",
+        "page": 19,
+        "role_in_text": "policy, geopolitical, funding, strategic, or ecosystem actor",
+        "occurrence_sentence": "Based on numbers from the United Kingdom, our current estimate is around 30,000 people worldwide and an annual research budget of over 1.5 billion.",
+        "source_document": "Luis_Germany18.pdf"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Unknown",
+    "sphere": "Unknown",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "unknown_category",
+    "classification_needs_review": true,
+    "classification_review_reason": "unmapped_category:country"
+  },
+  {
+    "entity": "University of Basel",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "universities",
+    "role_in_text": "formed an alliance with KIT to found the “European Campus EUCOR”",
+    "technology_area": "quantum technology",
+    "occurrence_sentence": "Quantum technologies –",
+    "source_document": "Luis_Germany18.pdf",
+    "page": 41,
+    "canonical_actor_key": "university of basel",
+    "aliases": [
+      "University of Basel"
+    ],
+    "pages": [
+      41
+    ],
+    "mentions": [
+      {
+        "entity": "University of Basel",
+        "page": 41,
+        "role_in_text": "formed an alliance with KIT to found the “European Campus EUCOR”",
+        "occurrence_sentence": "Quantum technologies –",
+        "source_document": "Luis_Germany18.pdf"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Academia",
+    "sphere": "Single",
+    "r_and_d": "R&D",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "ZITiS",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "research institutes",
+    "role_in_text": "Defines key fields of interest in telecommunications monitoring, digital forensics, crypto-analysis, and big data analysis.",
+    "technology_area": "quantum computing",
+    "occurrence_sentence": "ZITiS defines its key fields of interest as telecommuni­cations monitoring, digital forensics, crypto-analysis and big data analysis, all of which will be affected by progress in quantum computing.",
+    "source_document": "Luis_Germany18.pdf",
+    "page": 26,
+    "confidence": "high",
+    "canonical_actor_key": "zitis",
+    "aliases": [
+      "ZITiS"
+    ],
+    "pages": [
+      26
+    ],
+    "mentions": [
+      {
+        "entity": "ZITiS",
+        "page": 26,
+        "role_in_text": "Defines key fields of interest in telecommunications monitoring, digital forensics, crypto-analysis, and big data analysis.",
+        "occurrence_sentence": "ZITiS defines its key fields of interest as telecommuni­cations monitoring, digital forensics, crypto-analysis and big data analysis, all of which will be affected by progress in quantum computing.",
+        "source_document": "Luis_Germany18.pdf"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Academia",
+    "sphere": "Single",
+    "r_and_d": "R&D",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  }
+]

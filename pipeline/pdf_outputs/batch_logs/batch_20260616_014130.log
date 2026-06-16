@@ -1,0 +1,34 @@
+
+========================================================================
+PDF BATCH RUN  2026-06-16 01:41:30
+========================================================================
+  PDF directory:  /home/lv/IDP/idpdeeptech/pipeline/pdf_input
+  Documents:      53
+  Workers:        1
+  Force redo:     False
+  Batch log:      /home/lv/IDP/idpdeeptech/pipeline/pdf_outputs/batch_logs/batch_20260616_014130.log
+========================================================================
+
+[51/53] china25.pdf: skipping (already done; pass --force to redo)
+[52/53] japan25.pdf: skipping (already done; pass --force to redo)
+[53/53] singapore25.pdf: skipping (already done; pass --force to redo)
+
+Running 50 PDF(s) sequentially...
+
+
+========== [1/53] Austria24.pdf ==========
+
+Interrupted by user. Stopping batch.
+
+============================================================
+BATCH SUMMARY
+============================================================
+Total PDFs (after --only filter):  53
+Succeeded:                          0
+Skipped (already done):             3
+Failed:                             1
+
+Failures:
+  - Austria24.pdf: KeyboardInterrupt
+
+Full failure log: /home/lv/IDP/idpdeeptech/pipeline/pdf_outputs/batch_failures.log

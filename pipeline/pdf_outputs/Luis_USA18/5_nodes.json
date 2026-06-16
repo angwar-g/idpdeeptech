@@ -1,0 +1,490 @@
+[
+  {
+    "entity": "Chloe Kontos",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "individual",
+    "role_in_text": "Executive Director, National Science and Technology Council",
+    "technology_area": "deep tech general",
+    "occurrence_sentence": "Chloe Kontos, Executive Director, National Science and Technology Council",
+    "source_document": "Luis_USA18.pdf",
+    "page": 3,
+    "confidence": "high",
+    "canonical_actor_key": "chloe kontos",
+    "aliases": [
+      "Chloe Kontos"
+    ],
+    "pages": [
+      3
+    ],
+    "mentions": [
+      {
+        "entity": "Chloe Kontos",
+        "page": 3,
+        "role_in_text": "Executive Director, National Science and Technology Council",
+        "occurrence_sentence": "Chloe Kontos, Executive Director, National Science and Technology Council",
+        "source_document": "Luis_USA18.pdf"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Government",
+    "sphere": "Single",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "name_heuristic_government",
+    "classification_needs_review": true,
+    "classification_review_reason": "individual_requires_role_classification"
+  },
+  {
+    "entity": "Committee on Science",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "national government institutions",
+    "role_in_text": "Hosts the Subcommittee on Quantum Information Science",
+    "technology_area": "quantum information science",
+    "occurrence_sentence": "Product of the SUBCOMMITTEE ON QUANTUM INFORMATION SCIENCE under the COMMITTEE ON SCIENCE of the NATIONAL SCI",
+    "source_document": "Luis_USA18.pdf",
+    "page": 1,
+    "canonical_actor_key": "committee on science",
+    "aliases": [
+      "Committee on Science"
+    ],
+    "pages": [
+      1
+    ],
+    "mentions": [
+      {
+        "entity": "Committee on Science",
+        "page": 1,
+        "role_in_text": "Hosts the Subcommittee on Quantum Information Science",
+        "occurrence_sentence": "Product of the SUBCOMMITTEE ON QUANTUM INFORMATION SCIENCE under the COMMITTEE ON SCIENCE of the NATIONAL SCI",
+        "source_document": "Luis_USA18.pdf"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Government",
+    "sphere": "Single",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "David Wineland",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "individual",
+    "role_in_text": "Nobel-prize winning researcher",
+    "technology_area": "quantum computing",
+    "occurrence_sentence": "The first two-qubit gate proposal came from researchers in Europe, but was demonstrated in the Nobel-prize winning group of David Wineland at National Institute of Standards and Technology (NIST).",
+    "source_document": "Luis_USA18.pdf",
+    "page": 18,
+    "canonical_actor_key": "david wineland",
+    "aliases": [
+      "David Wineland"
+    ],
+    "pages": [
+      18
+    ],
+    "mentions": [
+      {
+        "entity": "David Wineland",
+        "page": 18,
+        "role_in_text": "Nobel-prize winning researcher",
+        "occurrence_sentence": "The first two-qubit gate proposal came from researchers in Europe, but was demonstrated in the Nobel-prize winning group of David Wineland at National Institute of Standards and Technology (NIST).",
+        "source_document": "Luis_USA18.pdf"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Academia",
+    "sphere": "Single",
+    "r_and_d": "R&D",
+    "classification_rule_source": "name_heuristic_research_institute",
+    "classification_needs_review": true,
+    "classification_review_reason": "individual_requires_role_classification"
+  },
+  {
+    "entity": "Department of Agriculture (USDA)",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "national government institutions",
+    "role_in_text": "acronym",
+    "technology_area": "unknown",
+    "occurrence_sentence": "USDA Department of Agriculture",
+    "source_document": "Luis_USA18.pdf",
+    "page": 4,
+    "confidence": "high",
+    "canonical_actor_key": "department of agriculture",
+    "aliases": [
+      "Department of Agriculture",
+      "Department of Agriculture (USDA)",
+      "USDA"
+    ],
+    "pages": [
+      4
+    ],
+    "mentions": [
+      {
+        "entity": "Department of Agriculture (USDA)",
+        "page": 4,
+        "role_in_text": "acronym",
+        "occurrence_sentence": "USDA Department of Agriculture",
+        "source_document": "Luis_USA18.pdf"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Government",
+    "sphere": "Single",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "Department of Defense (DOD)",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "national government institutions",
+    "role_in_text": "acronym",
+    "technology_area": "unknown",
+    "occurrence_sentence": "DOD Department of Defense",
+    "source_document": "Luis_USA18.pdf",
+    "page": 4,
+    "confidence": "high",
+    "canonical_actor_key": "department of defense",
+    "aliases": [
+      "DOD",
+      "Department of Defense",
+      "Department of Defense (DOD)"
+    ],
+    "pages": [
+      4,
+      11,
+      19
+    ],
+    "mentions": [
+      {
+        "entity": "Department of Defense (DOD)",
+        "page": 4,
+        "role_in_text": "acronym",
+        "occurrence_sentence": "DOD Department of Defense",
+        "source_document": "Luis_USA18.pdf"
+      },
+      {
+        "entity": "Department of Defense (DOD)",
+        "page": 11,
+        "role_in_text": "Provides National Defense Science and Engineering Graduate Fellowship Program and the Quantum Science and Engineering Program",
+        "occurrence_sentence": "the National Defense Science and Engineering Graduate Fellowship Program and the Quantum Science and Engineering Program at the Department of Defense (DOD",
+        "source_document": "Luis_USA18.pdf"
+      },
+      {
+        "entity": "Department of Defense (DOD)",
+        "page": 19,
+        "role_in_text": "conducting or funding research in quantum information science",
+        "occurrence_sentence": "S2. Quantum computing: from devices and algorithms for analog simulation of quantum systems in the laboratory to controlled digital quantum computers [DOD, DOE, NASA, NIST, NSF, NSA, ODNI",
+        "source_document": "Luis_USA18.pdf"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Government",
+    "sphere": "Single",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "Department of Energy (DOE)",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "national government institutions",
+    "role_in_text": "",
+    "source_document": "Luis_USA18.pdf",
+    "page": 4,
+    "canonical_actor_key": "department of energy",
+    "aliases": [
+      "DOE",
+      "Department of Energy",
+      "Department of Energy (DOE)"
+    ],
+    "pages": [
+      4
+    ],
+    "mentions": [
+      {
+        "entity": "Department of Energy (DOE)",
+        "page": 4,
+        "role_in_text": "",
+        "occurrence_sentence": "",
+        "source_document": "Luis_USA18.pdf"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Government",
+    "sphere": "Single",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "National Science Foundation (NSF)",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "national government institutions",
+    "role_in_text": "funding agency",
+    "technology_area": "deep tech general",
+    "occurrence_sentence": "One program that is expanding connections across sectors is the recently developed NSF-funded Quantum Information Science and Engineering Network, https://qisenet.uchicago.edu/, also known as “TRIPLETS.”",
+    "source_document": "Luis_USA18.pdf",
+    "page": 12,
+    "confidence": "high",
+    "canonical_actor_key": "national science foundation",
+    "aliases": [
+      "NSF",
+      "National Science Foundation",
+      "National Science Foundation (NSF)"
+    ],
+    "pages": [
+      11,
+      12
+    ],
+    "mentions": [
+      {
+        "entity": "National Science Foundation (NSF)",
+        "page": 11,
+        "role_in_text": "Provides Graduate Research Fellowship Program and the Accelerating Discovery Program",
+        "occurrence_sentence": "A number of agencies already have existing programs, such as the National Science Foundation's (NSF) Graduate Research Fellowship Program and the Accelerating Discovery Program;",
+        "source_document": "Luis_USA18.pdf"
+      },
+      {
+        "entity": "National Science Foundation (NSF)",
+        "page": 12,
+        "role_in_text": "funding agency",
+        "occurrence_sentence": "One program that is expanding connections across sectors is the recently developed NSF-funded Quantum Information Science and Engineering Network, https://qisenet.uchicago.edu/, also known as “TRIPLETS.”",
+        "source_document": "Luis_USA18.pdf"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Government",
+    "sphere": "Single",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "Oak Ridge's Center for Nanophase Materials Science",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "research institutes",
+    "source_document": "Luis_USA18.pdf",
+    "page": 14,
+    "canonical_actor_key": "oak ridge s center for nanophase materials science",
+    "aliases": [
+      "Oak Ridge's Center for Nanophase Materials Science"
+    ],
+    "pages": [
+      14
+    ],
+    "mentions": [
+      {
+        "entity": "Oak Ridge's Center for Nanophase Materials Science",
+        "page": 14,
+        "role_in_text": "",
+        "occurrence_sentence": "",
+        "source_document": "Luis_USA18.pdf"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Academia",
+    "sphere": "Single",
+    "r_and_d": "R&D",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "Subcommittee on Quantum Information Science (SCQIS)",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "national government institutions",
+    "role_in_text": "Government agencies to stay abreast of the defense and security implications of QIS technologies",
+    "technology_area": "deep tech general",
+    "occurrence_sentence": "Promote mechanisms, such as the Subcommittee on Quantum Information Science (SCQIS), for all Government agencies to stay abreast of the defense and security implications of QIS technologies and help balance the benefits of economic growth with new risks created by the technology",
+    "source_document": "Luis_USA18.pdf",
+    "page": 8,
+    "confidence": "high",
+    "canonical_actor_key": "subcommittee on quantum information science",
+    "aliases": [
+      "SCQIS",
+      "Subcommittee on Quantum Information Science",
+      "Subcommittee on Quantum Information Science (SCQIS)"
+    ],
+    "pages": [
+      1,
+      6,
+      8,
+      9
+    ],
+    "mentions": [
+      {
+        "entity": "Subcommittee on Quantum Information Science",
+        "page": 1,
+        "role_in_text": "Produced the document",
+        "occurrence_sentence": "Product of the SUBCOMMITTEE ON QUANTUM INFORMATION SCIENCE under the COMMITTEE ON SCIENCE of the NATIONAL SCIENCE & TECHNOLOGY COUNCIL",
+        "source_document": "Luis_USA18.pdf"
+      },
+      {
+        "entity": "Subcommittee on Quantum Information Science (SCQIS)",
+        "page": 6,
+        "role_in_text": "coordinates quantum information science efforts",
+        "occurrence_sentence": "These efforts will leverage existing programs and approaches, adapt to the changing and improving scientific and technical knowledge, reflect the best",
+        "source_document": "Luis_USA18.pdf"
+      },
+      {
+        "entity": "Subcommittee on Quantum Information Science (SCQIS)",
+        "page": 8,
+        "role_in_text": "Government agencies to stay abreast of the defense and security implications of QIS technologies",
+        "occurrence_sentence": "Promote mechanisms, such as the Subcommittee on Quantum Information Science (SCQIS), for all Government agencies to stay abreast of the defense and security implications of QIS technologies and help balance the benefits of economic growth with new risks created by the technology",
+        "source_document": "Luis_USA18.pdf"
+      },
+      {
+        "entity": "Subcommittee on Quantum Information Science (SCQIS)",
+        "page": 9,
+        "role_in_text": "established the SCQIS, which has identified four key challenges",
+        "occurrence_sentence": "Undersc",
+        "source_document": "Luis_USA18.pdf"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Government",
+    "sphere": "Single",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "Ted Wackler",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "individual",
+    "role_in_text": "Deputy Chief of Staff and Assistant Director, Office of Science and Technology Policy",
+    "technology_area": "deep tech general",
+    "occurrence_sentence": "Chair Ted Wackler, Deputy Chief of Staff and Assistant Director, Office of Science and Technology Policy",
+    "source_document": "Luis_USA18.pdf",
+    "page": 3,
+    "confidence": "high",
+    "canonical_actor_key": "ted wackler",
+    "aliases": [
+      "Ted Wackler"
+    ],
+    "pages": [
+      3
+    ],
+    "mentions": [
+      {
+        "entity": "Ted Wackler",
+        "page": 3,
+        "role_in_text": "Deputy Chief of Staff and Assistant Director, Office of Science and Technology Policy",
+        "occurrence_sentence": "Chair Ted Wackler, Deputy Chief of Staff and Assistant Director, Office of Science and Technology Policy",
+        "source_document": "Luis_USA18.pdf"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Industry",
+    "sphere": "Single",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "name_heuristic_industry",
+    "classification_needs_review": true,
+    "classification_review_reason": "individual_requires_role_classification"
+  },
+  {
+    "entity": "U.S. Quantum Consortium",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "business support institutions",
+    "role_in_text": "help determine which of the component technologies will have a sufficient economic base to encourage industrial development, can help develop industry engagement with post-quantum applications, and can also periodically track progress and tap external expertise to evaluate the effectiveness of investments being made",
+    "technology_area": "deep tech general",
+    "occurrence_sentence": "For example, the U.S. Quantum Consortium can help determine which of the component technologies will have a sufficient economic base to encourage industrial development, can help develop industry engagement with post-quantum applications, and can also periodically track progress and tap external expertise to evaluate the effectiveness of investments being made.",
+    "source_document": "Luis_USA18.pdf",
+    "page": 14,
+    "confidence": "high",
+    "canonical_actor_key": "u s quantum consortium",
+    "aliases": [
+      "U.S. Quantum Consortium"
+    ],
+    "pages": [
+      14
+    ],
+    "mentions": [
+      {
+        "entity": "U.S. Quantum Consortium",
+        "page": 14,
+        "role_in_text": "help determine which of the component technologies will have a sufficient economic base to encourage industrial development, can help develop industry engagement with post-quantum applications, and can also periodically track progress and tap external expertise to evaluate the effectiveness of investments being made",
+        "occurrence_sentence": "For example, the U.S. Quantum Consortium can help determine which of the component technologies will have a sufficient economic base to encourage industrial development, can help develop industry engagement with post-quantum applications, and can also periodically track progress and tap external expertise to evaluate the effectiveness of investments being made.",
+        "source_document": "Luis_USA18.pdf"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Intermediary",
+    "sphere": "Multi",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "United States",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "country",
+    "role_in_text": "policy, geopolitical, funding, strategic, or ecosystem actor",
+    "technology_area": "deep tech general",
+    "occurrence_sentence": "Following these recommendations, along with detailed planning and coordination made possible by the SCQIS as well as engagement with stakeholders, is crucial for the United States' future success.",
+    "source_document": "Luis_USA18.pdf",
+    "page": 7,
+    "canonical_actor_key": "united states",
+    "aliases": [
+      "United States"
+    ],
+    "pages": [
+      7,
+      17
+    ],
+    "mentions": [
+      {
+        "entity": "United States",
+        "page": 7,
+        "role_in_text": "policy, geopolitical, funding, strategic, or ecosystem actor",
+        "occurrence_sentence": "Following these recommendations, along with detailed planning and coordination made possible by the SCQIS as well as engagement with stakeholders, is crucial for the United States' future success.",
+        "source_document": "Luis_USA18.pdf"
+      },
+      {
+        "entity": "United States",
+        "page": 17,
+        "role_in_text": "attract and retain the best international and has access to international technologies, research facilities, and experts in QIS",
+        "occurrence_sentence": "Second, the Government will identify and prioritize strategic",
+        "source_document": "Luis_USA18.pdf"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Unknown",
+    "sphere": "Unknown",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "unknown_category",
+    "classification_needs_review": true,
+    "classification_review_reason": "unmapped_category:country"
+  }
+]

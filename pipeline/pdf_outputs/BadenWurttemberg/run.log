@@ -252,3 +252,68 @@ pdf_pipeline.py BadenWurttemberg.pdf
 RUN FINISHED 2026-05-31 00:53:17  (OK)
 Elapsed:     10s
 ========================================================================
+
+========================================================================
+RUN STARTED  2026-06-16 01:41:53
+pdf_pipeline.py BadenWurttemberg.pdf
+========================================================================
+
+[01:41:53 +0s | BadenWurttemberg] === 1 actor extraction ===
+[01:41:54 +0s | BadenWurttemberg] Auto-resume: 21 (source, page) pairs already done, skipping them.
+[01:41:54 +0s | BadenWurttemberg] Reading PDF: BadenWurttemberg.pdf
+[01:41:54 +0s | BadenWurttemberg] All 21 pages/URLs already processed (per 1_actor_results.progress.json). Nothing to do.
+[01:41:54 +0s | BadenWurttemberg] Delete the progress sidecar to force a full re-run, or pass --start-page N.
+[01:41:54 +0s | BadenWurttemberg] Saved 1_actor_results.json with 70 clean actors
+
+[01:41:54 +0s | BadenWurttemberg] === 2 clean actors ===
+[01:41:54 +1s | BadenWurttemberg] Loaded 70 extracted records
+[01:41:54 +1s | BadenWurttemberg] Saved 2_actor_nodes.json with 20 canonical actor nodes
+
+[01:41:54 +1s | BadenWurttemberg] === 3 interaction extraction ===
+[01:41:54 +1s | BadenWurttemberg] Processing interactions for: BadenWurttemberg.pdf
+[01:41:54 +1s | BadenWurttemberg] Extracting interactions: BadenWurttemberg.pdf, page 2/21, chunk 1/1
+[01:42:18 +22s | BadenWurttemberg] Extracting interactions: BadenWurttemberg.pdf, page 4/21, chunk 1/1
+[01:42:26 +30s | BadenWurttemberg] Extracting interactions: BadenWurttemberg.pdf, page 5/21, chunk 1/1
+[01:42:29 +34s | BadenWurttemberg] Extracting interactions: BadenWurttemberg.pdf, page 6/21, chunk 1/1
+[01:42:39 +43s | BadenWurttemberg] Extracting interactions: BadenWurttemberg.pdf, page 7/21, chunk 1/1
+[01:42:59 +1m 1s | BadenWurttemberg] Extracting interactions: BadenWurttemberg.pdf, page 8/21, chunk 1/2
+[01:43:36 +1m 36s | BadenWurttemberg] Extracting interactions: BadenWurttemberg.pdf, page 8/21, chunk 2/2
+[01:44:09 +2m 7s | BadenWurttemberg] Extracting interactions: BadenWurttemberg.pdf, page 9/21, chunk 3/3
+[01:44:12 +2m 10s | BadenWurttemberg] Extracting interactions: BadenWurttemberg.pdf, page 10/21, chunk 2/2
+[01:44:41 +2m 37s | BadenWurttemberg] Extracting interactions: BadenWurttemberg.pdf, page 11/21, chunk 1/1
+[01:44:51 +2m 46s | BadenWurttemberg] Extracting interactions: BadenWurttemberg.pdf, page 12/21, chunk 1/2
+[01:44:54 +2m 49s | BadenWurttemberg] Extracting interactions: BadenWurttemberg.pdf, page 12/21, chunk 2/2
+[01:45:02 +2m 57s | BadenWurttemberg] Extracting interactions: BadenWurttemberg.pdf, page 13/21, chunk 1/3
+[01:45:11 +3m 4s | BadenWurttemberg] Extracting interactions: BadenWurttemberg.pdf, page 13/21, chunk 3/3
+[01:45:15 +3m 8s | BadenWurttemberg] Extracting interactions: BadenWurttemberg.pdf, page 14/21, chunk 2/2
+[01:45:26 +3m 19s | BadenWurttemberg] Extracting interactions: BadenWurttemberg.pdf, page 16/21, chunk 1/2
+[01:45:33 +3m 26s | BadenWurttemberg] Extracting interactions: BadenWurttemberg.pdf, page 16/21, chunk 2/2
+[01:45:39 +3m 30s | BadenWurttemberg] Extracting interactions: BadenWurttemberg.pdf, page 18/21, chunk 1/2
+[01:45:47 +3m 38s | BadenWurttemberg] Extracting interactions: BadenWurttemberg.pdf, page 18/21, chunk 2/2
+[01:45:54 +3m 45s | BadenWurttemberg] Extracting interactions: BadenWurttemberg.pdf, page 19/21, chunk 2/2
+[01:46:27 +4m 16s | BadenWurttemberg] Extracting interactions: BadenWurttemberg.pdf, page 20/21, chunk 2/2
+[01:46:44 +4m 33s | BadenWurttemberg] Extracting interactions: BadenWurttemberg.pdf, page 21/21, chunk 1/1
+[01:46:45 +4m 34s | BadenWurttemberg] Saved 3_interaction_results.json with 66 extracted interactions.
+
+[01:46:45 +4m 34s | BadenWurttemberg] === 4 clean interactions ===
+[01:46:45 +4m 34s | BadenWurttemberg] Saved 4_edges.json with 10 cleaned interactions.
+
+[01:46:45 +4m 34s | BadenWurttemberg] === 5 helix enrichment ===
+[01:46:46 +4m 34s | BadenWurttemberg] Wrote 5_nodes.json (20 actors)
+[01:46:46 +4m 34s | BadenWurttemberg] Wrote 5_edges.json (10 interactions)
+[01:46:46 +4m 34s | BadenWurttemberg] Actor helix counts: {'Academia': 15, 'Civil Society': 1, 'Government': 3, 'Industry': 1}
+[01:46:46 +4m 34s | BadenWurttemberg] Functional-space counts: {'Intra-helix / Not classified': 4, 'Knowledge': 6}
+
+[01:46:46 +4m 34s | BadenWurttemberg] === 6 network visualisation ===
+[01:46:46 +4m 35s | BadenWurttemberg] Wrote quantum_network.html
+[01:46:46 +4m 35s | BadenWurttemberg] Nodes: 20
+[01:46:46 +4m 35s | BadenWurttemberg] Edges: 8
+
+[01:46:49 +4m 35s | BadenWurttemberg] Done. Outputs written to: /home/lv/IDP/idpdeeptech/pipeline/pdf_outputs/BadenWurttemberg
+[01:46:49 +4m 35s | BadenWurttemberg] Log: /home/lv/IDP/idpdeeptech/pipeline/pdf_outputs/BadenWurttemberg/run.log
+
+========================================================================
+RUN FINISHED 2026-06-16 01:46:49  (OK)
+Started:     2026-06-16 01:41:53
+Elapsed:     4m 35s
+========================================================================

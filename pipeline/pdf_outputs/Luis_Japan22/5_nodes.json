@@ -1,0 +1,1063 @@
+[
+  {
+    "entity": "Boston Consulting Group (BCG)",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "business support institutions",
+    "role_in_text": "Source of market projection data",
+    "technology_area": "quantum computing",
+    "occurrence_sentence": "The global market size for quantum computing-related industries in 2040 is projected to be between ¥10 trillion and ¥19 trillion for hardware, and between ¥40 trillion and ¥75 trillion for software. (Source: \"What Happens When \"If\" Turns to \"When\" in Quantum Computing?\" (BCG, July 21, 2021))",
+    "source_document": "Luis_Japan22.pdf",
+    "page": 11,
+    "confidence": "high",
+    "canonical_actor_key": "boston consulting group",
+    "aliases": [
+      "BCG",
+      "Boston Consulting Group",
+      "Boston Consulting Group (BCG)"
+    ],
+    "pages": [
+      11
+    ],
+    "mentions": [
+      {
+        "entity": "Boston Consulting Group (BCG)",
+        "page": 11,
+        "role_in_text": "Source of market projection data",
+        "occurrence_sentence": "The global market size for quantum computing-related industries in 2040 is projected to be between ¥10 trillion and ¥19 trillion for hardware, and between ¥40 trillion and ¥75 trillion for software. (Source: \"What Happens When \"If\" Turns to \"When\" in Quantum Computing?\" (BCG, July 21, 2021))",
+        "source_document": "Luis_Japan22.pdf"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Intermediary",
+    "sphere": "Multi",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "Google",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "large enterprises",
+    "role_in_text": "private companies accelerating quantum computer research, development, and commercialization",
+    "technology_area": "quantum computing",
+    "occurrence_sentence": "Since the formulation of the Quantum Technology Innovation Strategy in January 2020, overseas players, primarily private companies such as Google, have accelerated their efforts in quantum computer research, development, and commercialization, setting ambitious goals.",
+    "source_document": "Luis_Japan22.pdf",
+    "page": 6,
+    "confidence": "high",
+    "canonical_actor_key": "google",
+    "aliases": [
+      "Google"
+    ],
+    "pages": [
+      6
+    ],
+    "mentions": [
+      {
+        "entity": "Google",
+        "page": 6,
+        "role_in_text": "private companies accelerating quantum computer research, development, and commercialization",
+        "occurrence_sentence": "Since the formulation of the Quantum Technology Innovation Strategy in January 2020, overseas players, primarily private companies such as Google, have accelerated their efforts in quantum computer research, development, and commercialization, setting ambitious goals.",
+        "source_document": "Luis_Japan22.pdf"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Industry",
+    "sphere": "Single",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "government",
+    "status": "entity",
+    "excluded_reason": "generic_group",
+    "category": "national government institutions",
+    "role_in_text": "Early adopters",
+    "technology_area": "deep tech general",
+    "occurrence_sentence": "Supply of risk capital through government-affiliated funds and promotion of demand stimulation by early adopters (government procurement)",
+    "source_document": "Luis_Japan22.pdf",
+    "page": 37,
+    "confidence": "medium",
+    "canonical_actor_key": "government",
+    "aliases": [
+      "government"
+    ],
+    "pages": [
+      37
+    ],
+    "mentions": [
+      {
+        "entity": "government",
+        "page": 37,
+        "role_in_text": "Early adopters",
+        "occurrence_sentence": "Supply of risk capital through government-affiliated funds and promotion of demand stimulation by early adopters (government procurement)",
+        "source_document": "Luis_Japan22.pdf"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Government",
+    "sphere": "Single",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "government-affiliated funds",
+    "status": "entity",
+    "excluded_reason": "generic_group",
+    "category": "financial support institutions",
+    "role_in_text": "Supply of risk capital",
+    "technology_area": "deep tech general",
+    "occurrence_sentence": "Supply of risk capital through government-affiliated funds and promotion of demand stimulation by early adopters (government procurement)",
+    "source_document": "Luis_Japan22.pdf",
+    "page": 37,
+    "confidence": "medium",
+    "canonical_actor_key": "government affiliated funds",
+    "aliases": [
+      "government-affiliated funds"
+    ],
+    "pages": [
+      37
+    ],
+    "mentions": [
+      {
+        "entity": "government-affiliated funds",
+        "page": 37,
+        "role_in_text": "Supply of risk capital",
+        "occurrence_sentence": "Supply of risk capital through government-affiliated funds and promotion of demand stimulation by early adopters (government procurement)",
+        "source_document": "Luis_Japan22.pdf"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Intermediary",
+    "sphere": "Multi",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "Integrated Innovation Strategy Promotion Council",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "national government institutions",
+    "role_in_text": "promoting innovation strategy",
+    "technology_area": "deep tech general",
+    "occurrence_sentence": "Integrated Innovation Strategy Promotion Council",
+    "source_document": "Luis_Japan22.pdf",
+    "page": 1,
+    "confidence": "high",
+    "canonical_actor_key": "integrated innovation strategy promotion council",
+    "aliases": [
+      "Integrated Innovation Strategy Promotion Council"
+    ],
+    "pages": [
+      1
+    ],
+    "mentions": [
+      {
+        "entity": "Integrated Innovation Strategy Promotion Council",
+        "page": 1,
+        "role_in_text": "promoting innovation strategy",
+        "occurrence_sentence": "Integrated Innovation Strategy Promotion Council",
+        "source_document": "Luis_Japan22.pdf"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Government",
+    "sphere": "Single",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "International Electrotechnical Commission (IEC)",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "supranational government institutions",
+    "role_in_text": "Japan actively participates in de jure standards bodies",
+    "technology_area": "quantum communication",
+    "source_document": "Luis_Japan22.pdf",
+    "page": 33,
+    "canonical_actor_key": "international electrotechnical commission",
+    "aliases": [
+      "IEC",
+      "International Electrotechnical Commission",
+      "International Electrotechnical Commission (IEC)"
+    ],
+    "pages": [
+      33
+    ],
+    "mentions": [
+      {
+        "entity": "International Electrotechnical Commission (IEC)",
+        "page": 33,
+        "role_in_text": "Japan actively participates in de jure standards bodies",
+        "occurrence_sentence": "",
+        "source_document": "Luis_Japan22.pdf"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Government",
+    "sphere": "Single",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "International Telecommunication Union Telecommunication Standardization Sector (ITU-T)",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "supranational government institutions",
+    "role_in_text": "Japan actively participates in de jure standards bodies",
+    "technology_area": "quantum communication",
+    "occurrence_sentence": "Japan actively participates not only in de jure standards bodies such as the International Telecommunication Union Telecommunication Standardization Sector (ITU-T) and the International Electrotechnical Commission (IEC), but also in forums for discussing de facto standards like the Institute of Electrical and Electronics Engineers (IEEE).",
+    "source_document": "Luis_Japan22.pdf",
+    "page": 33,
+    "confidence": "high",
+    "canonical_actor_key": "international telecommunication union telecommunication standardization sector",
+    "aliases": [
+      "ITU-T",
+      "International Telecommunication Union Telecommunication Standardization Sector",
+      "International Telecommunication Union Telecommunication Standardization Sector (ITU-T)"
+    ],
+    "pages": [
+      33
+    ],
+    "mentions": [
+      {
+        "entity": "International Telecommunication Union Telecommunication Standardization Sector (ITU-T)",
+        "page": 33,
+        "role_in_text": "Japan actively participates in de jure standards bodies",
+        "occurrence_sentence": "Japan actively participates not only in de jure standards bodies such as the International Telecommunication Union Telecommunication Standardization Sector (ITU-T) and the International Electrotechnical Commission (IEC), but also in forums for discussing de facto standards like the Institute of Electrical and Electronics Engineers (IEEE).",
+        "source_document": "Luis_Japan22.pdf"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Government",
+    "sphere": "Single",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "Interuniversity Microelectronics Centre (IMEC)",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "research institutes",
+    "role_in_text": "possesses a world-leading research infrastructure for semiconductor manufacturing process technology and serves as a core",
+    "source_document": "Luis_Japan22.pdf",
+    "page": 18,
+    "canonical_actor_key": "interuniversity microelectronics centre",
+    "aliases": [
+      "IMEC",
+      "Interuniversity Microelectronics Centre",
+      "Interuniversity Microelectronics Centre (IMEC)"
+    ],
+    "pages": [
+      18
+    ],
+    "mentions": [
+      {
+        "entity": "Interuniversity Microelectronics Centre (IMEC)",
+        "page": 18,
+        "role_in_text": "possesses a world-leading research infrastructure for semiconductor manufacturing process technology and serves as a core",
+        "occurrence_sentence": "",
+        "source_document": "Luis_Japan22.pdf"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Academia",
+    "sphere": "Single",
+    "r_and_d": "R&D",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "IonQ",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "large enterprises",
+    "role_in_text": "private companies accelerating quantum computer research, development, and commercialization",
+    "technology_area": "quantum computing",
+    "occurrence_sentence": "Google (US) announced 1,000 logical qubits by 2029 (May 2021 announcement",
+    "source_document": "Luis_Japan22.pdf",
+    "page": 6,
+    "canonical_actor_key": "ionq",
+    "aliases": [
+      "IonQ"
+    ],
+    "pages": [
+      6
+    ],
+    "mentions": [
+      {
+        "entity": "IonQ",
+        "page": 6,
+        "role_in_text": "private companies accelerating quantum computer research, development, and commercialization",
+        "occurrence_sentence": "Google (US) announced 1,000 logical qubits by 2029 (May 2021 announcement",
+        "source_document": "Luis_Japan22.pdf"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Industry",
+    "sphere": "Single",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "Japan",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "country",
+    "role_in_text": "Japan's industries",
+    "technology_area": "deep tech general",
+    "occurrence_sentence": "This vision is formulated as a 'strategy for societal transformation through quantum technology'—a future societal vision and the strategy for achieving it—aimed at leveraging quantum technology to create growth opportunities for Japan's industries, solve societal challenges, and realize transformation across society as a whole.",
+    "source_document": "Luis_Japan22.pdf",
+    "page": 5,
+    "confidence": "high",
+    "canonical_actor_key": "japan",
+    "aliases": [
+      "Japan"
+    ],
+    "pages": [
+      2,
+      4,
+      5,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      17,
+      19,
+      20,
+      22,
+      23,
+      24,
+      30
+    ],
+    "mentions": [
+      {
+        "entity": "Japan",
+        "page": 2,
+        "role_in_text": "policy, geopolitical, funding, strategic, or ecosystem actor",
+        "occurrence_sentence": "creating growth opportunities for Japan's industries and solving societal challenges",
+        "source_document": "Luis_Japan22.pdf"
+      },
+      {
+        "entity": "Japan",
+        "page": 4,
+        "role_in_text": "possess advanced quantum technology domestically",
+        "occurrence_sentence": "It is vital for nations to possess advanced quantum technology domestically, including acquiring cutting-edge technologies to secure technical superiority and ensuring supply chains for critical components and materials.",
+        "source_document": "Luis_Japan22.pdf"
+      },
+      {
+        "entity": "Japan",
+        "page": 4,
+        "role_in_text": "create growth opportunities for Japan's industries",
+        "occurrence_sentence": "",
+        "source_document": "Luis_Japan22.pdf"
+      },
+      {
+        "entity": "Japan",
+        "page": 5,
+        "role_in_text": "Japan's industries",
+        "occurrence_sentence": "This vision is formulated as a 'strategy for societal transformation through quantum technology'—a future societal vision and the strategy for achieving it—aimed at leveraging quantum technology to create growth opportunities for Japan's industries, solve societal challenges, and realize transformation across society as a whole.",
+        "source_document": "Luis_Japan22.pdf"
+      },
+      {
+        "entity": "Japan",
+        "page": 5,
+        "role_in_text": "Japan",
+        "occurrence_sentence": "This vision was formulated with an eye toward the future society envisioned through quantum technology and the desired state to be achieved by 2030.",
+        "source_document": "Luis_Japan22.pdf"
+      },
+      {
+        "entity": "Japan",
+        "page": 7,
+        "role_in_text": "aims to reduce greenhouse gas emissions by 46% by fiscal year 2030",
+        "occurrence_sentence": "Japan aims to reduce greenhouse gas emissions by 46% by fiscal year 2030 (compared to fiscal year 2013 levels).",
+        "source_document": "Luis_Japan22.pdf"
+      },
+      {
+        "entity": "Japan",
+        "page": 8,
+        "role_in_text": "geopolitical actor",
+        "occurrence_sentence": "In recent years, the importance of economic security has grown significantly, driven not only by the global semiconductor shortage triggered by the COVID-19 pandemic but also by the emergence of geopolitical challenges.",
+        "source_document": "Luis_Japan22.pdf"
+      },
+      {
+        "entity": "Japan",
+        "page": 9,
+        "role_in_text": "policy, geopolitical, funding, strategic, or ecosystem actor",
+        "occurrence_sentence": "By integrating quantum technology into the entire socio-economic system and fusing it with conventional (classical) technology systems, (hybrid), creating growth opportunities for Japan's industries and solving societal challenges",
+        "source_document": "Luis_Japan22.pdf"
+      },
+      {
+        "entity": "Japan",
+        "page": 9,
+        "role_in_text": "policy, geopolitical, funding, strategic, or ecosystem actor",
+        "occurrence_sentence": "In light of changes in the environment surrounding quantum technology, Japan will integrate quantum technology into its socio-economic systems and leverage it to create growth opportunities for domestic industries and address societal challenges.",
+        "source_document": "Luis_Japan22.pdf"
+      },
+      {
+        "entity": "Japan",
+        "page": 10,
+        "role_in_text": "industries",
+        "occurrence_sentence": "for Japan's industries and solving societal challenges.",
+        "source_document": "Luis_Japan22.pdf"
+      },
+      {
+        "entity": "Japan",
+        "page": 11,
+        "role_in_text": "Policy and geopolitical actor",
+        "occurrence_sentence": "",
+        "source_document": "Luis_Japan22.pdf"
+      },
+      {
+        "entity": "Japan",
+        "page": 12,
+        "role_in_text": "Japan's industries",
+        "occurrence_sentence": "By leveraging quantum technology, we will achieve economic growth, including creating growth opportunities for Japan's industries such as a productivity revolution.",
+        "source_document": "Luis_Japan22.pdf"
+      },
+      {
+        "entity": "Japan",
+        "page": 12,
+        "role_in_text": "Japan",
+        "occurrence_sentence": "By developing next-generation environmental materials using quantum computers and achieving carbon neutrality and a circular economy through optimal energy mixes, Japan will realize a society where people and the environment coexist in harmony and develop sustainably through quantum technology.",
+        "source_document": "Luis_Japan22.pdf"
+      },
+      {
+        "entity": "Japan",
+        "page": 17,
+        "role_in_text": "developing a domestically produced, fully functional quantum computer",
+        "occurrence_sentence": "The significance of developing a domestically produced, fully functional quantum computer is immense, and we must proceed steadily.",
+        "source_document": "Luis_Japan22.pdf"
+      },
+      {
+        "entity": "Japan",
+        "page": 19,
+        "role_in_text": "strategic and ecosystem actor",
+        "occurrence_sentence": "Furthermore, it is expected that business strategies will be developed with a balanced approach, encompassing not only vertical integration but also horizontal division of labor that leverages Japan's strengths while anticipating collaboration with overseas partners.",
+        "source_document": "Luis_Japan22.pdf"
+      },
+      {
+        "entity": "Japan",
+        "page": 20,
+        "role_in_text": "Policy, geopolitical, funding, strategic, or ecosystem actor",
+        "occurrence_sentence": "Therefore, for the practical application and commercialization of quantum computers, it is necessary to secure commitment from private companies and establish a framework for collaboration between private companies and quantum technology experts.",
+        "source_document": "Luis_Japan22.pdf"
+      },
+      {
+        "entity": "Japan",
+        "page": 20,
+        "role_in_text": "Policy, geopolitical, funding, strategic, or ecosystem actor",
+        "occurrence_sentence": "These efforts will lead to future killer applications that significantly contribute to creating growth opportunities for Japan's industries and solving societal challenges.",
+        "source_document": "Luis_Japan22.pdf"
+      },
+      {
+        "entity": "Japan",
+        "page": 22,
+        "role_in_text": "Securing advanced quantum cryptography technologies and accelerating their societal implementation.",
+        "occurrence_sentence": "From an economic security perspective, it is essential for Japan to secure advanced quantum cryptography technologies and accelerate their societal implementation.",
+        "source_document": "Luis_Japan22.pdf"
+      },
+      {
+        "entity": "Japan",
+        "page": 22,
+        "role_in_text": "Expanding and enhancing the open testbed for quantum cryptography communication networks.",
+        "occurrence_sentence": "Therefore, we will expand and enhance the open testbed for quantum cryptography communication networks, broaden user participation in utilization demonstrations to advance commercialization, and explore future network development connecting cities, including the utilization of space assets such as satellites.",
+        "source_document": "Luis_Japan22.pdf"
+      },
+      {
+        "entity": "Japan",
+        "page": 23,
+        "role_in_text": "country where private companies have launched services utilizing quantum security technology",
+        "occurrence_sentence": "Within Japan, some private companies have already launched services utilizing quantum security technology, and it is anticipated that multiple providers will offer such services in the future.",
+        "source_document": "Luis_Japan22.pdf"
+      },
+      {
+        "entity": "Japan",
+        "page": 24,
+        "role_in_text": "holds strengths in quantum key distribution (QKD) network technology",
+        "occurrence_sentence": "While steadily advancing the practical demonstration, advancement, and overseas deployment of quantum key distribution (QKD) network technology—an area where Japan currently holds strengths—it is equally important to maintain a forward-looking perspective.",
+        "source_document": "Luis_Japan22.pdf"
+      },
+      {
+        "entity": "Japan",
+        "page": 30,
+        "role_in_text": "top researchers from Japan and abroad",
+        "occurrence_sentence": "Therefore, we will develop and strengthen an environment where top researchers from Japan and abroad can gather to advance world-class cutting-edge research, under a framework that provides a broad overview from both scientific and technological perspectives.",
+        "source_document": "Luis_Japan22.pdf"
+      },
+      {
+        "entity": "Japan",
+        "page": 30,
+        "role_in_text": "maintain and enhance Japan's overall cutting-edge scientific and technological capabilities",
+        "occurrence_sentence": "Specifically, we will deepen collaboration with domestic and international research institutions across industry, academia, and government to maintain and enhance Japan's overall cutting-edge scientific and technological capabilities.",
+        "source_document": "Luis_Japan22.pdf"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Industry",
+    "sphere": "Single",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "name_heuristic_industry",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "Keio University",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "universities",
+    "role_in_text": "member of the Quantum Innovation Initiative Council (QII Council)",
+    "technology_area": "quantum computing",
+    "occurrence_sentence": "Additionally, the Quantum Innovation Initiative Council (QII Council), a collaboration between the University of Tokyo, Keio University, IBM USA, IBM Japan",
+    "source_document": "Luis_Japan22.pdf",
+    "page": 36,
+    "canonical_actor_key": "keio university",
+    "aliases": [
+      "Keio University"
+    ],
+    "pages": [
+      36
+    ],
+    "mentions": [
+      {
+        "entity": "Keio University",
+        "page": 36,
+        "role_in_text": "member of the Quantum Innovation Initiative Council (QII Council)",
+        "occurrence_sentence": "Additionally, the Quantum Innovation Initiative Council (QII Council), a collaboration between the University of Tokyo, Keio University, IBM USA, IBM Japan",
+        "source_document": "Luis_Japan22.pdf"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Academia",
+    "sphere": "Single",
+    "r_and_d": "R&D",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "Quantum Innovation Hub (QIH)",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "business support institutions",
+    "role_in_text": "supporting initiatives",
+    "technology_area": "deep tech general",
+    "occurrence_sentence": "As initiatives supporting this, the Quantum Innovation Hub (QIH), the Quantum Technology-based New Industry Creation Council (Q-STAR),the Quantum Innovation Initiative Council (QII Council) which opens pathways for actual quantum computer utilization through industry-academia collaboration, and relevant ministries and agencies.",
+    "source_document": "Luis_Japan22.pdf",
+    "page": 16,
+    "confidence": "high",
+    "canonical_actor_key": "quantum innovation hub",
+    "aliases": [
+      "QIH",
+      "Quantum Innovation Hub",
+      "Quantum Innovation Hub (QIH)"
+    ],
+    "pages": [
+      3,
+      16
+    ],
+    "mentions": [
+      {
+        "entity": "Quantum Innovation Hub (QIH)",
+        "page": 3,
+        "role_in_text": "established eight Quantum Innovation Hubs (QIH)",
+        "occurrence_sentence": "To establish a hub for integrated industry-academia-government collaboration spanning fundamental research, technology demonstration, open innovation, intellectual property management, and human resource",
+        "source_document": "Luis_Japan22.pdf"
+      },
+      {
+        "entity": "Quantum Innovation Hub (QIH)",
+        "page": 16,
+        "role_in_text": "supporting initiatives",
+        "occurrence_sentence": "As initiatives supporting this, the Quantum Innovation Hub (QIH), the Quantum Technology-based New Industry Creation Council (Q-STAR),the Quantum Innovation Initiative Council (QII Council) which opens pathways for actual quantum computer utilization through industry-academia collaboration, and relevant ministries and agencies.",
+        "source_document": "Luis_Japan22.pdf"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Intermediary",
+    "sphere": "Multi",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "Quantum Technology-based New Industry Creation Council (Q-STAR)",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "business support institutions",
+    "role_in_text": "supporting initiatives",
+    "technology_area": "deep tech general",
+    "occurrence_sentence": "As initiatives supporting this, the Quantum Innovation Hub (QIH",
+    "source_document": "Luis_Japan22.pdf",
+    "page": 16,
+    "canonical_actor_key": "quantum technology based new industry creation council",
+    "aliases": [
+      "Q-STAR",
+      "Quantum Technology-based New Industry Creation Council",
+      "Quantum Technology-based New Industry Creation Council (Q-STAR)"
+    ],
+    "pages": [
+      16
+    ],
+    "mentions": [
+      {
+        "entity": "Quantum Technology-based New Industry Creation Council (Q-STAR)",
+        "page": 16,
+        "role_in_text": "supporting initiatives",
+        "occurrence_sentence": "As initiatives supporting this, the Quantum Innovation Hub (QIH",
+        "source_document": "Luis_Japan22.pdf"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Intermediary",
+    "sphere": "Multi",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "Quantum Technology Innovation Hubs",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "business support institutions",
+    "role_in_text": "Collaboration and cooperation frameworks",
+    "technology_area": "quantum computing",
+    "occurrence_sentence": "Establishing collaboration and cooperation frameworks between industry, quantum technology innovation hubs, and relevant government ministries (including forums for exchanging opinions, personnel exchanges, joint research, etc.)",
+    "source_document": "Luis_Japan22.pdf",
+    "page": 34,
+    "confidence": "high",
+    "canonical_actor_key": "quantum technology innovation hubs",
+    "aliases": [
+      "Quantum Technology Innovation Hubs"
+    ],
+    "pages": [
+      34
+    ],
+    "mentions": [
+      {
+        "entity": "Quantum Technology Innovation Hubs",
+        "page": 34,
+        "role_in_text": "Collaboration and cooperation frameworks",
+        "occurrence_sentence": "Establishing collaboration and cooperation frameworks between industry, quantum technology innovation hubs, and relevant government ministries (including forums for exchanging opinions, personnel exchanges, joint research, etc.)",
+        "source_document": "Luis_Japan22.pdf"
+      },
+      {
+        "entity": "Quantum Technology Innovation Hubs",
+        "page": 34,
+        "role_in_text": "Advancing research, development, and industrialization of quantum",
+        "occurrence_sentence": "In February 2021, eight Quantum Innovation Hubs (QIH) were established at   and   . Concurrently, within industry, the Quantum Technology",
+        "source_document": "Luis_Japan22.pdf"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Intermediary",
+    "sphere": "Multi",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "research institutions",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "research institutes",
+    "role_in_text": "provide technical support and information",
+    "technology_area": "quantum sensing",
+    "occurrence_sentence": "Therefore, universities and research institutions will actively provide technical support and information to potential vendor and user companies interested in quantum measurement and sensing technologies.",
+    "source_document": "Luis_Japan22.pdf",
+    "page": 25,
+    "confidence": "high",
+    "canonical_actor_key": "research institutions",
+    "aliases": [
+      "research institutions"
+    ],
+    "pages": [
+      21,
+      25,
+      31,
+      32
+    ],
+    "mentions": [
+      {
+        "entity": "research institutions",
+        "page": 21,
+        "role_in_text": "possessing advanced expertise in quantum information science",
+        "occurrence_sentence": "For the research and development of quantum applications, it is essential that universities and research institutions possessing advanced expertise in quantum information science",
+        "source_document": "Luis_Japan22.pdf"
+      },
+      {
+        "entity": "research institutions",
+        "page": 25,
+        "role_in_text": "provide technical support and information",
+        "occurrence_sentence": "Therefore, universities and research institutions will actively provide technical support and information to potential vendor and user companies interested in quantum measurement and sensing technologies.",
+        "source_document": "Luis_Japan22.pdf"
+      },
+      {
+        "entity": "research institutions",
+        "page": 31,
+        "role_in_text": "providing educational programs",
+        "occurrence_sentence": "It is becoming increasingly active. However, given the limited resources available to universities, research institutions, and other entities providing these programs, utilizing private sector entities to implement them is considered an effective",
+        "source_document": "Luis_Japan22.pdf"
+      },
+      {
+        "entity": "research institutions",
+        "page": 32,
+        "role_in_text": "research institutions",
+        "occurrence_sentence": "Therefore, universities, research institutions, and others are expected to actively expand positions, while industry is expected to actively accept them, thereby working together to enhance and expand their respective systems.",
+        "source_document": "Luis_Japan22.pdf"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Academia",
+    "sphere": "Single",
+    "r_and_d": "R&D",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "RIKEN",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "research institutes",
+    "role_in_text": "Quantum technology innovation hub",
+    "technology_area": "quantum computing",
+    "occurrence_sentence": "Fundamentally enhance the headquarters function representing Japan's quantum technology innovation hub (RIKEN)",
+    "source_document": "Luis_Japan22.pdf",
+    "page": 28,
+    "confidence": "high",
+    "canonical_actor_key": "riken",
+    "aliases": [
+      "RIKEN"
+    ],
+    "pages": [
+      1,
+      28
+    ],
+    "mentions": [
+      {
+        "entity": "RIKEN",
+        "page": 1,
+        "role_in_text": "research center",
+        "occurrence_sentence": "© RIKEN",
+        "source_document": "Luis_Japan22.pdf"
+      },
+      {
+        "entity": "RIKEN",
+        "page": 28,
+        "role_in_text": "Quantum technology innovation hub",
+        "occurrence_sentence": "Fundamentally enhance the headquarters function representing Japan's quantum technology innovation hub (RIKEN)",
+        "source_document": "Luis_Japan22.pdf"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Academia",
+    "sphere": "Single",
+    "r_and_d": "R&D",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "RIKEN Quantum Computer Research Center",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "research institutes",
+    "source_document": "Luis_Japan22.pdf",
+    "page": 1,
+    "canonical_actor_key": "riken quantum computer research center",
+    "aliases": [
+      "RIKEN Quantum Computer Research Center"
+    ],
+    "pages": [
+      1
+    ],
+    "mentions": [
+      {
+        "entity": "RIKEN Quantum Computer Research Center",
+        "page": 1,
+        "role_in_text": "",
+        "occurrence_sentence": "",
+        "source_document": "Luis_Japan22.pdf"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Academia",
+    "sphere": "Single",
+    "r_and_d": "R&D",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "startups",
+    "status": "entity",
+    "excluded_reason": "not_specific",
+    "category": "small and medium-sized enterprises",
+    "role_in_text": "Comprehensive startup ecosystem development including entrepreneur training, business commercialization support, investor matching, and leveraging government funds; discovery and support of new businesses through idea contests/pitch contests",
+    "technology_area": "deep tech general",
+    "occurrence_sentence": "Comprehensive startup ecosystem development including entrepreneur training, business commercialization support, investor matching, and leveraging government funds; discovery and support of new businesses through idea contests/pitch contests",
+    "source_document": "Luis_Japan22.pdf",
+    "page": 26,
+    "confidence": "medium",
+    "canonical_actor_key": "startups",
+    "aliases": [
+      "startups"
+    ],
+    "pages": [
+      26,
+      27
+    ],
+    "mentions": [
+      {
+        "entity": "startups",
+        "page": 26,
+        "role_in_text": "Comprehensive startup ecosystem development including entrepreneur training, business commercialization support, investor matching, and leveraging government funds; discovery and support of new businesses through idea contests/pitch contests",
+        "occurrence_sentence": "Comprehensive startup ecosystem development including entrepreneur training, business commercialization support, investor matching, and leveraging government funds; discovery and support of new businesses through idea contests/pitch contests",
+        "source_document": "Luis_Japan22.pdf"
+      },
+      {
+        "entity": "startups",
+        "page": 26,
+        "role_in_text": "Support for startup companies in utilizing quantum computers and conducting application R&D",
+        "occurrence_sentence": "",
+        "source_document": "Luis_Japan22.pdf"
+      },
+      {
+        "entity": "startups",
+        "page": 27,
+        "role_in_text": "procurement improvements for products and services",
+        "occurrence_sentence": "Procurement improvements for products and services from small and medium-sized enterprises, including startups (e.g., procurement that priorit",
+        "source_document": "Luis_Japan22.pdf"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Industry",
+    "sphere": "Single",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "universities",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "universities",
+    "role_in_text": "possessing advanced expertise in quantum information science",
+    "technology_area": "quantum computing",
+    "occurrence_sentence": "For the research and development of quantum applications, it is essential that universities and research institutions possessing advanced expertise in quantum information science, such as quantum algorithms, closely collaborate with various companies (software vendors, user companies) to develop applications (i.e., co-creation).",
+    "source_document": "Luis_Japan22.pdf",
+    "page": 21,
+    "confidence": "high",
+    "canonical_actor_key": "universities",
+    "aliases": [
+      "universities"
+    ],
+    "pages": [
+      21,
+      25,
+      31,
+      32
+    ],
+    "mentions": [
+      {
+        "entity": "universities",
+        "page": 21,
+        "role_in_text": "possessing advanced expertise in quantum information science",
+        "occurrence_sentence": "For the research and development of quantum applications, it is essential that universities and research institutions possessing advanced expertise in quantum information science, such as quantum algorithms, closely collaborate with various companies (software vendors, user companies) to develop applications (i.e., co-creation).",
+        "source_document": "Luis_Japan22.pdf"
+      },
+      {
+        "entity": "universities",
+        "page": 25,
+        "role_in_text": "provide technical support and information",
+        "occurrence_sentence": "Therefore, universities and research institutions will actively provide technical support and information to potential vendor and user companies interested in quantum measurement and sensing technologies.",
+        "source_document": "Luis_Japan22.pdf"
+      },
+      {
+        "entity": "universities",
+        "page": 31,
+        "role_in_text": "providing educational programs",
+        "occurrence_sentence": "It is becoming increasingly active. However, given the limited resources available to universities, research institutions, and other entities providing these programs, utilizing private sector entities to implement them is considered an effective approach for expanding educational programs to a broader audience in the future.",
+        "source_document": "Luis_Japan22.pdf"
+      },
+      {
+        "entity": "universities",
+        "page": 32,
+        "role_in_text": "faculty, and students",
+        "occurrence_sentence": "further exchanges among researchers, faculty, and students, and strengthen the development of research talent.",
+        "source_document": "Luis_Japan22.pdf"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Academia",
+    "sphere": "Single",
+    "r_and_d": "R&D",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "University of Tokyo",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "universities",
+    "role_in_text": "hosted the Quantum Innovation Initiative Council (QII Council)",
+    "technology_area": "quantum computing",
+    "occurrence_sentence": "In July of the same year, the Quantum Innovation Initiative Council (QII Council), based at the University of Tokyo, facilitated the first-ever introduction of an actual commercial quantum computer from overseas into Japan.",
+    "source_document": "Luis_Japan22.pdf",
+    "page": 3,
+    "confidence": "high",
+    "canonical_actor_key": "university of tokyo",
+    "aliases": [
+      "University of Tokyo"
+    ],
+    "pages": [
+      3,
+      28,
+      36
+    ],
+    "mentions": [
+      {
+        "entity": "University of Tokyo",
+        "page": 3,
+        "role_in_text": "hosted the Quantum Innovation Initiative Council (QII Council)",
+        "occurrence_sentence": "In July of the same year, the Quantum Innovation Initiative Council (QII Council), based at the University of Tokyo, facilitated the first-ever introduction of an actual commercial quantum computer from overseas into Japan.",
+        "source_document": "Luis_Japan22.pdf"
+      },
+      {
+        "entity": "University of Tokyo",
+        "page": 28,
+        "role_in_text": "Quantum Computer Utilization",
+        "occurrence_sentence": "Quantum Computer Utilization (University of Tokyo - Corporate Consortium)",
+        "source_document": "Luis_Japan22.pdf"
+      },
+      {
+        "entity": "University of Tokyo",
+        "page": 36,
+        "role_in_text": "member of the Quantum Innovation Initiative Council (QII Council)",
+        "occurrence_sentence": "Additionally, the Quantum Innovation Initiative Council (QII Council), a collaboration between the University of Tokyo, Keio University, IBM USA, IBM Japan, and industry partners, was established in July 2020.",
+        "source_document": "Luis_Japan22.pdf"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Academia",
+    "sphere": "Single",
+    "r_and_d": "R&D",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "users",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "user communities",
+    "role_in_text": "stakeholders including users, academia, and engineers",
+    "technology_area": "quantum cryptography",
+    "occurrence_sentence": "To promote the adoption of quantum cryptography, it is crucial to establish a framework enabling stakeholders—including users, academia, and engineers—to foster a shared",
+    "source_document": "Luis_Japan22.pdf",
+    "page": 24,
+    "canonical_actor_key": "users",
+    "aliases": [
+      "users"
+    ],
+    "pages": [
+      24
+    ],
+    "mentions": [
+      {
+        "entity": "users",
+        "page": 24,
+        "role_in_text": "stakeholders including users, academia, and engineers",
+        "occurrence_sentence": "To promote the adoption of quantum cryptography, it is crucial to establish a framework enabling stakeholders—including users, academia, and engineers—to foster a shared",
+        "source_document": "Luis_Japan22.pdf"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Civil Society",
+    "sphere": "Single",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "Yano Research Institute Ltd.",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "research institutes",
+    "role_in_text": "Provides market research on quantum technology",
+    "technology_area": "quantum computing",
+    "occurrence_sentence": "5 Source: Yano Research Institute Ltd., \"Current Status and Future Outlook of the Quantum Computer Market in 2021\" (September 2021), \"2022 Edition Quantum Technology Market: Current Status and Outlook\"",
+    "source_document": "Luis_Japan22.pdf",
+    "page": 15,
+    "canonical_actor_key": "yano research institute ltd",
+    "aliases": [
+      "Yano Research Institute Ltd."
+    ],
+    "pages": [
+      15
+    ],
+    "mentions": [
+      {
+        "entity": "Yano Research Institute Ltd.",
+        "page": 15,
+        "role_in_text": "Provides market research on quantum technology",
+        "occurrence_sentence": "5 Source: Yano Research Institute Ltd., \"Current Status and Future Outlook of the Quantum Computer Market in 2021\" (September 2021), \"2022 Edition Quantum Technology Market: Current Status and Outlook\"",
+        "source_document": "Luis_Japan22.pdf"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Academia",
+    "sphere": "Single",
+    "r_and_d": "R&D",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  }
+]

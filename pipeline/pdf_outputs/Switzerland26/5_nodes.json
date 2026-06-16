@@ -1,0 +1,789 @@
+[
+  {
+    "entity": "EIFO",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "financial support institutions",
+    "role_in_text": "launches the world's largest quantum technology fund",
+    "technology_area": "quantum computing",
+    "occurrence_sentence": "EIFO (2025) Denmark launches the world's largest quantum technology fund. https://www.eifo.dk/en/knowledge/news/denmark-launches-the-world-s-largest-quantum-technology-fund",
+    "source_document": "Switzerland26.pdf",
+    "page": 22,
+    "confidence": "high",
+    "canonical_actor_key": "eifo",
+    "aliases": [
+      "EIFO"
+    ],
+    "pages": [
+      22
+    ],
+    "mentions": [
+      {
+        "entity": "EIFO",
+        "page": 22,
+        "role_in_text": "launches the world's largest quantum technology fund",
+        "occurrence_sentence": "EIFO (2025) Denmark launches the world's largest quantum technology fund. https://www.eifo.dk/en/knowledge/news/denmark-launches-the-world-s-largest-quantum-technology-fund",
+        "source_document": "Switzerland26.pdf"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Intermediary",
+    "sphere": "Multi",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "European Union (EU)",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "supranational government institutions",
+    "role_in_text": "setting up large quantum key distribution networks",
+    "technology_area": "quantum communication",
+    "occurrence_sentence": "Unlike other countries or regions (EU, UK, Korea, China, Japan, Singapore, etc.) which are setting up large quantum key distribution networks, Switzerland has no such provision yet.",
+    "source_document": "Switzerland26.pdf",
+    "page": 12,
+    "confidence": "high",
+    "canonical_actor_key": "european union",
+    "aliases": [
+      "EU",
+      "European Union",
+      "European Union (EU)"
+    ],
+    "pages": [
+      9,
+      12,
+      16
+    ],
+    "mentions": [
+      {
+        "entity": "European Union (EU)",
+        "page": 9,
+        "role_in_text": "countries active in the Multilateral Dialogue on Quantum",
+        "occurrence_sentence": "This includes, at its core, EU countries and the countries active in the Multilateral Dialog",
+        "source_document": "Switzerland26.pdf"
+      },
+      {
+        "entity": "European Union (EU)",
+        "page": 12,
+        "role_in_text": "setting up large quantum key distribution networks",
+        "occurrence_sentence": "Unlike other countries or regions (EU, UK, Korea, China, Japan, Singapore, etc.) which are setting up large quantum key distribution networks, Switzerland has no such provision yet.",
+        "source_document": "Switzerland26.pdf"
+      },
+      {
+        "entity": "European Union (EU)",
+        "page": 16,
+        "role_in_text": "Integration of Swiss institutions into EU programs like Horizon Europe.",
+        "occurrence_sentence": "Maintain the highest level of collaboration with partners in Europe including the integration of Swiss institutions into EU programs like Horizon Europe.",
+        "source_document": "Switzerland26.pdf"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Government",
+    "sphere": "Single",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "Horizon Europe",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "supranational government institutions",
+    "role_in_text": "Swiss participation",
+    "technology_area": "quantum computing",
+    "occurrence_sentence": "Whilst the close ties within Europe, exemplified by the Swiss participation in Horizon Europe, are a salient feature, the field of quantum is an endeavor of global proportions.",
+    "source_document": "Switzerland26.pdf",
+    "page": 7,
+    "canonical_actor_key": "horizon europe",
+    "aliases": [
+      "Horizon Europe"
+    ],
+    "pages": [
+      7
+    ],
+    "mentions": [
+      {
+        "entity": "Horizon Europe",
+        "page": 7,
+        "role_in_text": "Swiss participation",
+        "occurrence_sentence": "Whilst the close ties within Europe, exemplified by the Swiss participation in Horizon Europe, are a salient feature, the field of quantum is an endeavor of global proportions.",
+        "source_document": "Switzerland26.pdf"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Government",
+    "sphere": "Single",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "NCCR Nanoscale Science",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "program_or_initiative",
+    "role_in_text": "focused on quantum topics",
+    "technology_area": "quantum computing",
+    "occurrence_sentence": "These include Nanoscale Science, Quantum Photonics, Quantum Science and Technology, and the ongoing NCCR SPIN.",
+    "source_document": "Switzerland26.pdf",
+    "page": 10,
+    "canonical_actor_key": "nccr nanoscale science",
+    "aliases": [
+      "NCCR Nanoscale Science"
+    ],
+    "pages": [
+      10
+    ],
+    "mentions": [
+      {
+        "entity": "NCCR Nanoscale Science",
+        "page": 10,
+        "role_in_text": "focused on quantum topics",
+        "occurrence_sentence": "These include Nanoscale Science, Quantum Photonics, Quantum Science and Technology, and the ongoing NCCR SPIN.",
+        "source_document": "Switzerland26.pdf"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Industry",
+    "sphere": "Single",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "name_heuristic_industry",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "OECD",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "supranational government institutions",
+    "role_in_text": "recommends the establishment of state-supported deep tech funds",
+    "technology_area": "deep tech general",
+    "occurrence_sentence": "In order to systematically address this financing gap in Switzerland, international organizations such as the OECD recommend, as a top priority, the establishment of state-supported deep tech funds that are designed for longer-term technology development.",
+    "source_document": "Switzerland26.pdf",
+    "page": 11,
+    "confidence": "high",
+    "canonical_actor_key": "oecd",
+    "aliases": [
+      "OECD"
+    ],
+    "pages": [
+      11
+    ],
+    "mentions": [
+      {
+        "entity": "OECD",
+        "page": 11,
+        "role_in_text": "recommends the establishment of state-supported deep tech funds",
+        "occurrence_sentence": "In order to systematically address this financing gap in Switzerland, international organizations such as the OECD recommend, as a top priority, the establishment of state-supported deep tech funds that are designed for longer-term technology development.",
+        "source_document": "Switzerland26.pdf"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Government",
+    "sphere": "Single",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "Paul Scherrer Institute (PSI)",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "research institutes",
+    "role_in_text": "hosts research facilities in combination with translational infrastructures, platforms and test environments",
+    "technology_area": "quantum computing",
+    "source_document": "Switzerland26.pdf",
+    "page": 10,
+    "canonical_actor_key": "paul scherrer institute",
+    "aliases": [
+      "PSI",
+      "Paul Scherrer Institute",
+      "Paul Scherrer Institute (PSI)"
+    ],
+    "pages": [
+      10
+    ],
+    "mentions": [
+      {
+        "entity": "Paul Scherrer Institute (PSI)",
+        "page": 10,
+        "role_in_text": "hosts research facilities in combination with translational infrastructures, platforms and test environments",
+        "occurrence_sentence": "",
+        "source_document": "Switzerland26.pdf"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Academia",
+    "sphere": "Single",
+    "r_and_d": "R&D",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "Swiss Academy of Sciences (SCNAT)",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "non-governmental and non-profit organizations",
+    "role_in_text": "hosts the Swiss Quantum Initiative",
+    "technology_area": "quantum computing",
+    "occurrence_sentence": "The Swiss Quantum Initiative (SQI) is the federal quantum initiative to strengthen Switzerland's leading position in the field of quantum science and technology. It was launched in 2022 and is hosted by the Swiss Academy of Sciences (SCNAT).",
+    "source_document": "Switzerland26.pdf",
+    "page": 23,
+    "confidence": "high",
+    "canonical_actor_key": "swiss academy of sciences",
+    "aliases": [
+      "SCNAT",
+      "Swiss Academy of Sciences",
+      "Swiss Academy of Sciences (SCNAT)"
+    ],
+    "pages": [
+      2,
+      5,
+      23
+    ],
+    "mentions": [
+      {
+        "entity": "Swiss Academy of Sciences (SCNAT)",
+        "page": 2,
+        "role_in_text": "Publisher and contact",
+        "occurrence_sentence": "Swiss Academy of Sciences (SCNAT) Platform Mathematics, Astronomy and Physics • Swiss Quantum Initiative",
+        "source_document": "Switzerland26.pdf"
+      },
+      {
+        "entity": "Swiss Academy of Sciences (SCNAT)",
+        "page": 5,
+        "role_in_text": "mandate for the Swiss Quantum Commission (SQC)",
+        "occurrence_sentence": "Part of these efforts includes the mandate for the SQC of the Swiss Academy of Sciences (SCNAT) to define a quantum",
+        "source_document": "Switzerland26.pdf"
+      },
+      {
+        "entity": "Swiss Academy of Sciences (SCNAT)",
+        "page": 23,
+        "role_in_text": "hosts the Swiss Quantum Initiative",
+        "occurrence_sentence": "The Swiss Quantum Initiative (SQI) is the federal quantum initiative to strengthen Switzerland's leading position in the field of quantum science and technology. It was launched in 2022 and is hosted by the Swiss Academy of Sciences (SCNAT).",
+        "source_document": "Switzerland26.pdf"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Civil Society",
+    "sphere": "Single",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "Swiss Federal Council",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "national government institutions",
+    "role_in_text": "launched the Swiss Quantum Initiative (SQI)",
+    "technology_area": "deep tech general",
+    "occurrence_sentence": "The SQI, launched by the Swiss Federal Council in May 2022, aims to further strengthen Switzerland's excellent position in quantum science and technology – from fundamental research to industrial application.",
+    "source_document": "Switzerland26.pdf",
+    "page": 5,
+    "confidence": "high",
+    "canonical_actor_key": "swiss federal council",
+    "aliases": [
+      "Swiss Federal Council"
+    ],
+    "pages": [
+      5
+    ],
+    "mentions": [
+      {
+        "entity": "Swiss Federal Council",
+        "page": 5,
+        "role_in_text": "launched the Swiss Quantum Initiative (SQI)",
+        "occurrence_sentence": "The SQI, launched by the Swiss Federal Council in May 2022, aims to further strengthen Switzerland's excellent position in quantum science and technology – from fundamental research to industrial application.",
+        "source_document": "Switzerland26.pdf"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Government",
+    "sphere": "Single",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "Swiss National Science Foundation (SNSF)",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "national government institutions",
+    "role_in_text": "supports the international exchange of researchers",
+    "technology_area": "quantum computing",
+    "occurrence_sentence": "Numerous bottom-up initiatives and schemes by the Swiss National Science Foundation (SNSF) support the international exchange of researchers, including several bilateral memoranda and agreements with other countries.",
+    "source_document": "Switzerland26.pdf",
+    "page": 7,
+    "confidence": "high",
+    "canonical_actor_key": "swiss national science foundation",
+    "aliases": [
+      "SNSF",
+      "Swiss National Science Foundation",
+      "Swiss National Science Foundation (SNSF)"
+    ],
+    "pages": [
+      7,
+      10
+    ],
+    "mentions": [
+      {
+        "entity": "Swiss National Science Foundation (SNSF)",
+        "page": 7,
+        "role_in_text": "supports the international exchange of researchers",
+        "occurrence_sentence": "Numerous bottom-up initiatives and schemes by the Swiss National Science Foundation (SNSF) support the international exchange of researchers, including several bilateral memoranda and agreements with other countries.",
+        "source_document": "Switzerland26.pdf"
+      },
+      {
+        "entity": "Swiss National Science Foundation",
+        "page": 10,
+        "role_in_text": "funded major NCCRs focused on quantum topics",
+        "occurrence_sentence": "Since 2001, the Swiss National Science Foundation has funded major NCCRs focused on quantum topics.",
+        "source_document": "Switzerland26.pdf"
+      },
+      {
+        "entity": "Swiss National Science Foundation (SNSF)",
+        "page": 10,
+        "role_in_text": "funded major NCCRs focused on quantum topics",
+        "occurrence_sentence": "Since 2001, the Swiss National Science Foundation has funded major NCCRs focused on quantum topics.",
+        "source_document": "Switzerland26.pdf"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Government",
+    "sphere": "Single",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "Swiss Quantum Commission (SQC)",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "national government institutions",
+    "role_in_text": "The SQC is thankful for the fruitful discussions and contributions from the Swiss quantum community to formulating this strategy",
+    "technology_area": "quantum computing | quantum communication | quantum sensing | quantum materials | quantum simulation | quantum cryptography | deep tech general",
+    "occurrence_sentence": "The SQC is thankful for the fruitful discussions and contributions from the Swiss quantum community to formulating this strategy, including five roundtable meetings over the past 2.5 years with industry, academia and policymakers as well as countless workshops and discussions.",
+    "source_document": "Switzerland26.pdf",
+    "page": 20,
+    "confidence": "high",
+    "canonical_actor_key": "swiss quantum commission",
+    "aliases": [
+      "SQC",
+      "Swiss Quantum Commission",
+      "Swiss Quantum Commission (SQC)"
+    ],
+    "pages": [
+      1,
+      2,
+      3,
+      9,
+      11,
+      13,
+      15,
+      17,
+      19,
+      20
+    ],
+    "mentions": [
+      {
+        "entity": "Swiss Quantum Commission (SQC)",
+        "page": 1,
+        "role_in_text": "Swiss Quantum Commission",
+        "occurrence_sentence": "Swiss Quantum Strategy by the Swiss Quantum Commission (SQC) as part of the Swiss Quantum Initiative (SQI)",
+        "source_document": "Switzerland26.pdf"
+      },
+      {
+        "entity": "Swiss Quantum Commission",
+        "page": 2,
+        "role_in_text": "Authors",
+        "occurrence_sentence": "SWISS QUANTUM COMMISSION Nicolas Gisin (UNIGE) • Esther Hänggi (HSLU) • Jonathan Home (ETHZ) • Patrick Maletinsky (UNIBAS) •",
+        "source_document": "Switzerland26.pdf"
+      },
+      {
+        "entity": "Swiss Quantum Commission (SQC)",
+        "page": 3,
+        "role_in_text": "Swiss Quantum Commission",
+        "occurrence_sentence": "Swiss Quantum Strategy by the Swiss Quantum Commission (SQC) as part of the Swiss Quantum Initiative (SQI)",
+        "source_document": "Switzerland26.pdf"
+      },
+      {
+        "entity": "Swiss Quantum Commission (SQC)",
+        "page": 9,
+        "role_in_text": "part of the Swiss Quantum Initiative (SQI)",
+        "occurrence_sentence": "by the Swiss Quantum Commission (SQC) as part of the Swiss Quantum Initiative (SQI)",
+        "source_document": "Switzerland26.pdf"
+      },
+      {
+        "entity": "Swiss Quantum Commission (SQC)",
+        "page": 11,
+        "role_in_text": "part of the Swiss Quantum Initiative (SQI)",
+        "occurrence_sentence": "by the Swiss Quantum Commission (SQC) as part of the Swiss Quantum Initiative (SQI)",
+        "source_document": "Switzerland26.pdf"
+      },
+      {
+        "entity": "Swiss Quantum Commission (SQC)",
+        "page": 13,
+        "role_in_text": "part of the Swiss Quantum Initiative (SQI)",
+        "occurrence_sentence": "by the Swiss Quantum Commission (SQC) as part of the Swiss Quantum Initiative (SQI)",
+        "source_document": "Switzerland26.pdf"
+      },
+      {
+        "entity": "Swiss Quantum Commission (SQC)",
+        "page": 15,
+        "role_in_text": "part of the Swiss Quantum Initiative (SQI)",
+        "occurrence_sentence": "by the Swiss Quantum Commission (SQC) as part of the Swiss Quantum Initiative (SQI)",
+        "source_document": "Switzerland26.pdf"
+      },
+      {
+        "entity": "Swiss Quantum Commission (SQC)",
+        "page": 17,
+        "role_in_text": "by the Swiss Quantum Commission (SQC) as part of the Swiss Quantum Initiative (SQI)",
+        "occurrence_sentence": "by the Swiss Quantum Commission (SQC) as part of the Swiss Quantum Initiative (SQI)",
+        "source_document": "Switzerland26.pdf"
+      },
+      {
+        "entity": "Swiss Quantum Commission (SQC)",
+        "page": 19,
+        "role_in_text": "part of the Swiss Quantum Initiative (SQI)",
+        "occurrence_sentence": "by the Swiss Quantum Commission (SQC) as part of the Swiss Quantum Initiative (SQI)",
+        "source_document": "Switzerland26.pdf"
+      },
+      {
+        "entity": "Swiss Quantum Commission (SQC)",
+        "page": 20,
+        "role_in_text": "The SQC is thankful for the fruitful discussions and contributions from the Swiss quantum community to formulating this strategy",
+        "occurrence_sentence": "The SQC is thankful for the fruitful discussions and contributions from the Swiss quantum community to formulating this strategy, including five roundtable meetings over the past 2.5 years with industry, academia and policymakers as well as countless workshops and discussions.",
+        "source_document": "Switzerland26.pdf"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Government",
+    "sphere": "Single",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "Swiss Quantum Initiative (SQI)",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "national government institutions",
+    "role_in_text": "Information gathered as part of the various SQI calls for ideas",
+    "source_document": "Switzerland26.pdf",
+    "page": 20,
+    "canonical_actor_key": "swiss quantum initiative",
+    "aliases": [
+      "SQI",
+      "Swiss Quantum Initiative",
+      "Swiss Quantum Initiative (SQI)"
+    ],
+    "pages": [
+      20
+    ],
+    "mentions": [
+      {
+        "entity": "Swiss Quantum Initiative (SQI)",
+        "page": 20,
+        "role_in_text": "Information gathered as part of the various SQI calls for ideas",
+        "occurrence_sentence": "",
+        "source_document": "Switzerland26.pdf"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Government",
+    "sphere": "Single",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "Swissnex",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "business support institutions",
+    "role_in_text": "Project Quantum",
+    "technology_area": "deep tech general",
+    "occurrence_sentence": "For a periodically updated overview including private organizations visit Project Quantum by Swissnex.",
+    "source_document": "Switzerland26.pdf",
+    "page": 8,
+    "confidence": "medium",
+    "canonical_actor_key": "swissnex",
+    "aliases": [
+      "Swissnex"
+    ],
+    "pages": [
+      8
+    ],
+    "mentions": [
+      {
+        "entity": "Swissnex",
+        "page": 8,
+        "role_in_text": "Project Quantum",
+        "occurrence_sentence": "For a periodically updated overview including private organizations visit Project Quantum by Swissnex.",
+        "source_document": "Switzerland26.pdf"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Intermediary",
+    "sphere": "Multi",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "Switzerland",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "country",
+    "role_in_text": "country leading in specific quantum domains",
+    "technology_area": "quantum sensing",
+    "occurrence_sentence": "In summary and looking ahead, Switzerland is uniquely positioned to lead in specific quantum domains – such as quantum sensing and precision instrumentation – by leveraging its research excellence, industrial strengths and high-quality engineering.",
+    "source_document": "Switzerland26.pdf",
+    "page": 19,
+    "confidence": "high",
+    "canonical_actor_key": "switzerland",
+    "aliases": [
+      "Switzerland"
+    ],
+    "pages": [
+      4,
+      6,
+      8,
+      9,
+      14,
+      15,
+      17,
+      18,
+      19
+    ],
+    "mentions": [
+      {
+        "entity": "Switzerland",
+        "page": 4,
+        "role_in_text": "an international hub for quantum",
+        "occurrence_sentence": "4.1 Switzerland: an international hub for quantum",
+        "source_document": "Switzerland26.pdf"
+      },
+      {
+        "entity": "Switzerland",
+        "page": 6,
+        "role_in_text": "an international hub for quantum science, education, and innovation",
+        "occurrence_sentence": "Switzerland - an international hub for quantum science, education, and innovation.",
+        "source_document": "Switzerland26.pdf"
+      },
+      {
+        "entity": "Switzerland",
+        "page": 6,
+        "role_in_text": "attracts leading quantum scientists, engineers, entrepreneurs, and investors",
+        "occurrence_sentence": "Being an international hub means Switzerland attracts leading quantum scientists, engineers, entrepreneurs, and investors from around the globe to",
+        "source_document": "Switzerland26.pdf"
+      },
+      {
+        "entity": "Switzerland",
+        "page": 8,
+        "role_in_text": "Swiss quantum landscape",
+        "occurrence_sentence": "Figure 2: Schematic of the Swiss quantum landscape",
+        "source_document": "Switzerland26.pdf"
+      },
+      {
+        "entity": "Switzerland",
+        "page": 9,
+        "role_in_text": "international hub for quantum",
+        "occurrence_sentence": "Switzerland: an international hub for quantum",
+        "source_document": "Switzerland26.pdf"
+      },
+      {
+        "entity": "Switzerland",
+        "page": 9,
+        "role_in_text": "relying on international openness and collaboration",
+        "occurrence_sentence": "Switzerland relies on international openness and collaboration for the success of its quantum ecosystem.",
+        "source_document": "Switzerland26.pdf"
+      },
+      {
+        "entity": "Switzerland",
+        "page": 9,
+        "role_in_text": "",
+        "occurrence_sentence": "",
+        "source_document": "Switzerland26.pdf"
+      },
+      {
+        "entity": "Switzerland",
+        "page": 9,
+        "role_in_text": "international hub for quantum",
+        "occurrence_sentence": "an international hub for quantum Switzerland relies on international openness and collaboration for the success of its quantum ecosystem.",
+        "source_document": "Switzerland26.pdf"
+      },
+      {
+        "entity": "Switzerland",
+        "page": 14,
+        "role_in_text": "Switzerland's position",
+        "occurrence_sentence": "To advance the field and further strengthen Switzerland's position, significant research and fundamental engineering efforts are needed, including scaling of systems and improvements in the precision of control.",
+        "source_document": "Switzerland26.pdf"
+      },
+      {
+        "entity": "Switzerland",
+        "page": 14,
+        "role_in_text": "Swiss theoretical physicists",
+        "occurrence_sentence": "Research, with key contributions from Swiss theoretical physicists, has shown that AI can in principle replicate much of the behavior of strongly interacting quantum systems, which are central to some of the most challenging unsolved problems in physics and chemistry.",
+        "source_document": "Switzerland26.pdf"
+      },
+      {
+        "entity": "Switzerland",
+        "page": 15,
+        "role_in_text": "Switzerland, with its longstanding heritage in precision measurement and instrument making, is well positioned to be a global leader in the field of quantum sensing",
+        "occurrence_sentence": "Switzerland, with its longstanding heritage in precision measurement and instrument making, is well positioned to be a global leader in the field of quantum sensing",
+        "source_document": "Switzerland26.pdf"
+      },
+      {
+        "entity": "Switzerland",
+        "page": 15,
+        "role_in_text": "Switzerland's economic backbone includes many successful SMEs that are ideally suited for adopting and scaling quantum sensing solutions.",
+        "occurrence_sentence": "Switzerland's economic backbone includes many successful SMEs that are ideally suited for adopting and scaling",
+        "source_document": "Switzerland26.pdf"
+      },
+      {
+        "entity": "Switzerland",
+        "page": 17,
+        "role_in_text": "Switzerland's long-term investments and achievements in quantum research have built a world-leading academic base that drives both discovery and innovation.",
+        "occurrence_sentence": "Switzerland's long-term investments and achievements in quantum research have built a world-leading academic base that drives both discovery and innovation.",
+        "source_document": "Switzerland26.pdf"
+      },
+      {
+        "entity": "Switzerland",
+        "page": 18,
+        "role_in_text": "Switzerland's quantum ecosystem",
+        "occurrence_sentence": "Switzerland's quantum ecosystem is particularly strong in research and spin-off activity but faces challenges in translating scientific excellence into scalable commercial success.",
+        "source_document": "Switzerland26.pdf"
+      },
+      {
+        "entity": "Switzerland",
+        "page": 18,
+        "role_in_text": "Switzerland",
+        "occurrence_sentence": "Further attract and work with international companies to continue and extend presence in quantum technologies in Switzerland.",
+        "source_document": "Switzerland26.pdf"
+      },
+      {
+        "entity": "Switzerland",
+        "page": 19,
+        "role_in_text": "country leading in specific quantum domains",
+        "occurrence_sentence": "In summary and looking ahead, Switzerland is uniquely positioned to lead in specific quantum domains – such as quantum sensing and precision instrumentation – by leveraging its research excellence, industrial strengths and high-quality engineering.",
+        "source_document": "Switzerland26.pdf"
+      },
+      {
+        "entity": "Switzerland",
+        "page": 19,
+        "role_in_text": "country ensuring strategic sovereignty in quantum",
+        "occurrence_sentence": "These public-private investments are a key contribution towards ensuring the strategic sovereignty of Switzerland in the field of quantum.",
+        "source_document": "Switzerland26.pdf"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Unknown",
+    "sphere": "Unknown",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "unknown_category",
+    "classification_needs_review": true,
+    "classification_review_reason": "unmapped_category:country"
+  },
+  {
+    "entity": "United Kingdom (UK)",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "country",
+    "role_in_text": "setting up large quantum key distribution networks",
+    "technology_area": "quantum communication",
+    "occurrence_sentence": "Unlike other countries or regions (EU, UK, Korea, China, Japan, Singapore, etc.) which are setting up large quantum key distribution networks, Switzerland has no such provision yet.",
+    "source_document": "Switzerland26.pdf",
+    "page": 12,
+    "canonical_actor_key": "united kingdom",
+    "aliases": [
+      "UK",
+      "United Kingdom",
+      "United Kingdom (UK)"
+    ],
+    "pages": [
+      12
+    ],
+    "mentions": [
+      {
+        "entity": "United Kingdom (UK)",
+        "page": 12,
+        "role_in_text": "setting up large quantum key distribution networks",
+        "occurrence_sentence": "Unlike other countries or regions (EU, UK, Korea, China, Japan, Singapore, etc.) which are setting up large quantum key distribution networks, Switzerland has no such provision yet.",
+        "source_document": "Switzerland26.pdf"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Unknown",
+    "sphere": "Unknown",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "unknown_category",
+    "classification_needs_review": true,
+    "classification_review_reason": "unmapped_category:country"
+  },
+  {
+    "entity": "World Intellectual Property Organization (WIPO)",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "supranational government institutions",
+    "role_in_text": "published the Global Innovation Index 2025",
+    "technology_area": "deep tech general",
+    "occurrence_sentence": "World Intellectual Property Organization (2025) Global Innovation Index 2025 (18th Edition).",
+    "source_document": "Switzerland26.pdf",
+    "page": 21,
+    "confidence": "high",
+    "canonical_actor_key": "world intellectual property organization",
+    "aliases": [
+      "WIPO",
+      "World Intellectual Property Organization",
+      "World Intellectual Property Organization (WIPO)"
+    ],
+    "pages": [
+      21
+    ],
+    "mentions": [
+      {
+        "entity": "World Intellectual Property Organization (WIPO)",
+        "page": 21,
+        "role_in_text": "published the Global Innovation Index 2025",
+        "occurrence_sentence": "World Intellectual Property Organization (2025) Global Innovation Index 2025 (18th Edition).",
+        "source_document": "Switzerland26.pdf"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Government",
+    "sphere": "Single",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  }
+]

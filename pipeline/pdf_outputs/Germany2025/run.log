@@ -22,3 +22,73 @@ pdf_pipeline.py Germany2025.pdf
 RUN FINISHED 2026-05-31 00:53:29  (INTERRUPTED)
 Elapsed:     2s
 ========================================================================
+
+========================================================================
+RUN STARTED  2026-06-16 01:52:48
+pdf_pipeline.py Germany2025.pdf
+========================================================================
+
+[01:52:48 +0s | Germany2025] === 1 actor extraction ===
+[01:52:48 +0s | Germany2025] Reading PDF: Germany2025.pdf
+[01:52:48 +0s | Germany2025] Extracting: Germany2025.pdf, page 1/13, chunk 1/1
+[01:52:50 +2s | Germany2025] Extracting: Germany2025.pdf, page 2/13, chunk 1/1
+[01:52:52 +4s | Germany2025] Extracting: Germany2025.pdf, page 3/13, chunk 1/1
+[01:52:54 +6s | Germany2025] Extracting: Germany2025.pdf, page 4/13, chunk 1/1
+[01:53:04 +14s | Germany2025] Repaired malformed JSON.
+[01:53:04 +14s | Germany2025] Extracting: Germany2025.pdf, page 5/13, chunk 1/1
+[01:53:11 +21s | Germany2025] Repaired malformed JSON.
+[01:53:11 +21s | Germany2025] Extracting: Germany2025.pdf, page 6/13, chunk 1/1
+[01:53:20 +30s | Germany2025] Repaired malformed JSON.
+[01:53:20 +30s | Germany2025] Extracting: Germany2025.pdf, page 7/13, chunk 1/1
+[01:53:29 +39s | Germany2025] Repaired malformed JSON.
+[01:53:29 +39s | Germany2025] Extracting: Germany2025.pdf, page 8/13, chunk 1/1
+[01:53:39 +47s | Germany2025] Repaired malformed JSON.
+[01:53:39 +47s | Germany2025] Extracting: Germany2025.pdf, page 9/13, chunk 1/2
+[01:53:46 +54s | Germany2025] Repaired malformed JSON.
+[01:53:46 +54s | Germany2025] Extracting: Germany2025.pdf, page 9/13, chunk 2/2
+[01:53:53 +1m 1s | Germany2025] Repaired malformed JSON.
+[01:53:53 +1m 1s | Germany2025] Extracting: Germany2025.pdf, page 10/13, chunk 1/1
+[01:54:01 +1m 9s | Germany2025] Repaired malformed JSON.
+[01:54:01 +1m 9s | Germany2025] Extracting: Germany2025.pdf, page 11/13, chunk 1/1
+[01:54:12 +1m 17s | Germany2025] Repaired malformed JSON.
+[01:54:12 +1m 17s | Germany2025] Extracting: Germany2025.pdf, page 12/13, chunk 1/1
+[01:54:15 +1m 21s | Germany2025] Saved 1_actor_results.json with 20 clean actors
+
+[01:54:15 +1m 21s | Germany2025] === 2 clean actors ===
+[01:54:15 +1m 21s | Germany2025] Loaded 20 extracted records
+[01:54:15 +1m 21s | Germany2025] Saved 2_actor_nodes.json with 8 canonical actor nodes
+
+[01:54:15 +1m 21s | Germany2025] === 3 interaction extraction ===
+[01:54:16 +1m 21s | Germany2025] Processing interactions for: Germany2025.pdf
+[01:54:16 +1m 21s | Germany2025] Extracting interactions: Germany2025.pdf, page 4/13, chunk 1/1
+[01:54:39 +1m 45s | Germany2025] Extracting interactions: Germany2025.pdf, page 5/13, chunk 1/1
+[01:54:49 +1m 52s | Germany2025] Extracting interactions: Germany2025.pdf, page 6/13, chunk 1/1
+[01:54:58 +2m 2s | Germany2025] Extracting interactions: Germany2025.pdf, page 7/13, chunk 1/1
+[01:55:04 +2m 8s | Germany2025] Extracting interactions: Germany2025.pdf, page 8/13, chunk 1/2
+[01:55:06 +2m 10s | Germany2025] Extracting interactions: Germany2025.pdf, page 9/13, chunk 2/3
+[01:55:10 +2m 13s | Germany2025] Extracting interactions: Germany2025.pdf, page 9/13, chunk 3/3
+[01:55:15 +2m 19s | Germany2025] Extracting interactions: Germany2025.pdf, page 11/13, chunk 1/2
+[01:55:26 +2m 28s | Germany2025] Saved 3_interaction_results.json with 15 extracted interactions.
+
+[01:55:26 +2m 28s | Germany2025] === 4 clean interactions ===
+[01:55:26 +2m 28s | Germany2025] Saved 4_edges.json with 1 cleaned interactions.
+
+[01:55:27 +2m 28s | Germany2025] === 5 helix enrichment ===
+[01:55:27 +2m 28s | Germany2025] Wrote 5_nodes.json (8 actors)
+[01:55:27 +2m 28s | Germany2025] Wrote 5_edges.json (1 interactions)
+[01:55:27 +2m 28s | Germany2025] Actor helix counts: {'Academia': 2, 'Civil Society': 1, 'Government': 3, 'Unknown': 2}
+[01:55:27 +2m 28s | Germany2025] Functional-space counts: {'Unknown': 1}
+
+[01:55:27 +2m 28s | Germany2025] === 6 network visualisation ===
+[01:55:27 +2m 28s | Germany2025] Wrote quantum_network.html
+[01:55:27 +2m 28s | Germany2025] Nodes: 8
+[01:55:27 +2m 28s | Germany2025] Edges: 1
+
+[01:55:27 +2m 28s | Germany2025] Done. Outputs written to: /home/lv/IDP/idpdeeptech/pipeline/pdf_outputs/Germany2025
+[01:55:27 +2m 28s | Germany2025] Log: /home/lv/IDP/idpdeeptech/pipeline/pdf_outputs/Germany2025/run.log
+
+========================================================================
+RUN FINISHED 2026-06-16 01:55:27  (OK)
+Started:     2026-06-16 01:52:48
+Elapsed:     2m 28s
+========================================================================

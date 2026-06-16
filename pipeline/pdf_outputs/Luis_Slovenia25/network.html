@@ -1,0 +1,321 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+            <script>function neighbourhoodHighlight(params) {
+  // console.log("in nieghbourhoodhighlight");
+  allNodes = nodes.get({ returnType: "Object" });
+  // originalNodes = JSON.parse(JSON.stringify(allNodes));
+  // if something is selected:
+  if (params.nodes.length > 0) {
+    highlightActive = true;
+    var i, j;
+    var selectedNode = params.nodes[0];
+    var degrees = 2;
+
+    // mark all nodes as hard to read.
+    for (let nodeId in allNodes) {
+      // nodeColors[nodeId] = allNodes[nodeId].color;
+      allNodes[nodeId].color = "rgba(200,200,200,0.5)";
+      if (allNodes[nodeId].hiddenLabel === undefined) {
+        allNodes[nodeId].hiddenLabel = allNodes[nodeId].label;
+        allNodes[nodeId].label = undefined;
+      }
+    }
+    var connectedNodes = network.getConnectedNodes(selectedNode);
+    var allConnectedNodes = [];
+
+    // get the second degree nodes
+    for (i = 1; i < degrees; i++) {
+      for (j = 0; j < connectedNodes.length; j++) {
+        allConnectedNodes = allConnectedNodes.concat(
+          network.getConnectedNodes(connectedNodes[j])
+        );
+      }
+    }
+
+    // all second degree nodes get a different color and their label back
+    for (i = 0; i < allConnectedNodes.length; i++) {
+      // allNodes[allConnectedNodes[i]].color = "pink";
+      allNodes[allConnectedNodes[i]].color = "rgba(150,150,150,0.75)";
+      if (allNodes[allConnectedNodes[i]].hiddenLabel !== undefined) {
+        allNodes[allConnectedNodes[i]].label =
+          allNodes[allConnectedNodes[i]].hiddenLabel;
+        allNodes[allConnectedNodes[i]].hiddenLabel = undefined;
+      }
+    }
+
+    // all first degree nodes get their own color and their label back
+    for (i = 0; i < connectedNodes.length; i++) {
+      // allNodes[connectedNodes[i]].color = undefined;
+      allNodes[connectedNodes[i]].color = nodeColors[connectedNodes[i]];
+      if (allNodes[connectedNodes[i]].hiddenLabel !== undefined) {
+        allNodes[connectedNodes[i]].label =
+          allNodes[connectedNodes[i]].hiddenLabel;
+        allNodes[connectedNodes[i]].hiddenLabel = undefined;
+      }
+    }
+
+    // the main node gets its own color and its label back.
+    // allNodes[selectedNode].color = undefined;
+    allNodes[selectedNode].color = nodeColors[selectedNode];
+    if (allNodes[selectedNode].hiddenLabel !== undefined) {
+      allNodes[selectedNode].label = allNodes[selectedNode].hiddenLabel;
+      allNodes[selectedNode].hiddenLabel = undefined;
+    }
+  } else if (highlightActive === true) {
+    // console.log("highlightActive was true");
+    // reset all nodes
+    for (let nodeId in allNodes) {
+      // allNodes[nodeId].color = "purple";
+      allNodes[nodeId].color = nodeColors[nodeId];
+      // delete allNodes[nodeId].color;
+      if (allNodes[nodeId].hiddenLabel !== undefined) {
+        allNodes[nodeId].label = allNodes[nodeId].hiddenLabel;
+        allNodes[nodeId].hiddenLabel = undefined;
+      }
+    }
+    highlightActive = false;
+  }
+
+  // transform the object into an array
+  var updateArray = [];
+  if (params.nodes.length > 0) {
+    for (let nodeId in allNodes) {
+      if (allNodes.hasOwnProperty(nodeId)) {
+        // console.log(allNodes[nodeId]);
+        updateArray.push(allNodes[nodeId]);
+      }
+    }
+    nodes.update(updateArray);
+  } else {
+    // console.log("Nothing was selected");
+    for (let nodeId in allNodes) {
+      if (allNodes.hasOwnProperty(nodeId)) {
+        // console.log(allNodes[nodeId]);
+        // allNodes[nodeId].color = {};
+        updateArray.push(allNodes[nodeId]);
+      }
+    }
+    nodes.update(updateArray);
+  }
+}
+
+function filterHighlight(params) {
+  allNodes = nodes.get({ returnType: "Object" });
+  // if something is selected:
+  if (params.nodes.length > 0) {
+    filterActive = true;
+    let selectedNodes = params.nodes;
+
+    // hiding all nodes and saving the label
+    for (let nodeId in allNodes) {
+      allNodes[nodeId].hidden = true;
+      if (allNodes[nodeId].savedLabel === undefined) {
+        allNodes[nodeId].savedLabel = allNodes[nodeId].label;
+        allNodes[nodeId].label = undefined;
+      }
+    }
+
+    for (let i=0; i < selectedNodes.length; i++) {
+      allNodes[selectedNodes[i]].hidden = false;
+      if (allNodes[selectedNodes[i]].savedLabel !== undefined) {
+        allNodes[selectedNodes[i]].label = allNodes[selectedNodes[i]].savedLabel;
+        allNodes[selectedNodes[i]].savedLabel = undefined;
+      }
+    }
+
+  } else if (filterActive === true) {
+    // reset all nodes
+    for (let nodeId in allNodes) {
+      allNodes[nodeId].hidden = false;
+      if (allNodes[nodeId].savedLabel !== undefined) {
+        allNodes[nodeId].label = allNodes[nodeId].savedLabel;
+        allNodes[nodeId].savedLabel = undefined;
+      }
+    }
+    filterActive = false;
+  }
+
+  // transform the object into an array
+  var updateArray = [];
+  if (params.nodes.length > 0) {
+    for (let nodeId in allNodes) {
+      if (allNodes.hasOwnProperty(nodeId)) {
+        updateArray.push(allNodes[nodeId]);
+      }
+    }
+    nodes.update(updateArray);
+  } else {
+    for (let nodeId in allNodes) {
+      if (allNodes.hasOwnProperty(nodeId)) {
+        updateArray.push(allNodes[nodeId]);
+      }
+    }
+    nodes.update(updateArray);
+  }
+}
+
+function selectNode(nodes) {
+  network.selectNodes(nodes);
+  neighbourhoodHighlight({ nodes: nodes });
+  return nodes;
+}
+
+function selectNodes(nodes) {
+  network.selectNodes(nodes);
+  filterHighlight({nodes: nodes});
+  return nodes;
+}
+
+function highlightFilter(filter) {
+  let selectedNodes = []
+  let selectedProp = filter['property']
+  if (filter['item'] === 'node') {
+    let allNodes = nodes.get({ returnType: "Object" });
+    for (let nodeId in allNodes) {
+      if (allNodes[nodeId][selectedProp] && filter['value'].includes((allNodes[nodeId][selectedProp]).toString())) {
+        selectedNodes.push(nodeId)
+      }
+    }
+  }
+  else if (filter['item'] === 'edge'){
+    let allEdges = edges.get({returnType: 'object'});
+    // check if the selected property exists for selected edge and select the nodes connected to the edge
+    for (let edge in allEdges) {
+      if (allEdges[edge][selectedProp] && filter['value'].includes((allEdges[edge][selectedProp]).toString())) {
+        selectedNodes.push(allEdges[edge]['from'])
+        selectedNodes.push(allEdges[edge]['to'])
+      }
+    }
+  }
+  selectNodes(selectedNodes)
+}</script>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/dist/vis-network.min.css" integrity="sha512-WgxfT5LWjfszlPHXRmBWHkV2eceiWTOBvrKCNbdgDYTHrT2AeLCGbF4sZlZw3UMN3WtL0tGUoIAKsu8mllg/XA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/vis-network.min.js" integrity="sha512-LnvoEWDFrqGHlHmDD2101OrLcbsfkrzoSpvtSQtxK3RMnRV0eOkhhBN2dXHKRrUU8p2DGRTk35n4O8nWSVe1mQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            
+            
+            
+            
+            
+            
+
+        
+<center>
+<h1></h1>
+</center>
+
+<!-- <link rel="stylesheet" href="../node_modules/vis/dist/vis.min.css" type="text/css" />
+<script type="text/javascript" src="../node_modules/vis/dist/vis.js"> </script>-->
+        <link
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+          crossorigin="anonymous"
+        />
+        <script
+          src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+          crossorigin="anonymous"
+        ></script>
+
+
+        <center>
+          <h1></h1>
+        </center>
+        <style type="text/css">
+
+             #mynetwork {
+                 width: 100%;
+                 height: 850px;
+                 background-color: #ffffff;
+                 border: 1px solid lightgray;
+                 position: relative;
+                 float: left;
+             }
+
+             
+
+             
+
+             
+        </style>
+    </head>
+
+
+    <body>
+        <div class="card" style="width: 100%">
+            
+            
+            <div id="mynetwork" class="card-body"></div>
+        </div>
+
+        
+        
+
+        <script type="text/javascript">
+
+              // initialize global variables.
+              var edges;
+              var nodes;
+              var allNodes;
+              var allEdges;
+              var nodeColors;
+              var originalNodes;
+              var network;
+              var container;
+              var options, data;
+              var filter = {
+                  item : '',
+                  property : '',
+                  value : []
+              };
+
+              
+
+              
+
+              // This method is responsible for drawing the graph, returns the drawn network
+              function drawGraph() {
+                  var container = document.getElementById('mynetwork');
+
+                  
+
+                  // parsing and collecting nodes and edges from the python
+                  nodes = new vis.DataSet([{"category": "national government institutions", "color": "#54A24B", "font": {"size": 18}, "helix": "Government", "id": "aris", "label": "ARIS", "shape": "dot", "size": 18, "title": "\u003cb\u003eARIS\u003c/b\u003e\u003cbr\u003eHelix: Government\u003cbr\u003eCategory: national government institutions\u003cbr\u003eReview: False"}, {"category": "national government institutions", "color": "#54A24B", "font": {"size": 18}, "helix": "Government", "id": "ministry of defense", "label": "Ministry of Defense", "shape": "dot", "size": 18, "title": "\u003cb\u003eMinistry of Defense\u003c/b\u003e\u003cbr\u003eHelix: Government\u003cbr\u003eCategory: national government institutions\u003cbr\u003eReview: False"}, {"category": "supranational government institutions", "color": "#54A24B", "font": {"size": 18}, "helix": "Government", "id": "european research council", "label": "European Research Council (ERC)", "shape": "dot", "size": 18, "title": "\u003cb\u003eEuropean Research Council (ERC)\u003c/b\u003e\u003cbr\u003eHelix: Government\u003cbr\u003eCategory: supranational government institutions\u003cbr\u003eReview: False"}, {"category": "small and medium-sized enterprises", "color": "#F58518", "font": {"size": 18}, "helix": "Industry", "id": "beyond semiconductor d o o", "label": "Beyond Semiconductor d.o.o.", "shape": "dot", "size": 18, "title": "\u003cb\u003eBeyond Semiconductor d.o.o.\u003c/b\u003e\u003cbr\u003eHelix: Industry\u003cbr\u003eCategory: small and medium-sized enterprises\u003cbr\u003eReview: False"}, {"category": "small and medium-sized enterprises", "color": "#F58518", "font": {"size": 18}, "helix": "Industry", "id": "atomql d o o", "label": "AtomQL d.o.o.", "shape": "dot", "size": 18, "title": "\u003cb\u003eAtomQL d.o.o.\u003c/b\u003e\u003cbr\u003eHelix: Industry\u003cbr\u003eCategory: small and medium-sized enterprises\u003cbr\u003eReview: False"}, {"category": "supranational government institutions", "color": "#54A24B", "font": {"size": 18}, "helix": "Government", "id": "european commission", "label": "European Commission (EC)", "shape": "dot", "size": 18, "title": "\u003cb\u003eEuropean Commission (EC)\u003c/b\u003e\u003cbr\u003eHelix: Government\u003cbr\u003eCategory: supranational government institutions\u003cbr\u003eReview: False"}, {"category": "supranational government institutions", "color": "#54A24B", "font": {"size": 18}, "helix": "Government", "id": "european union", "label": "European Union (EU)", "shape": "dot", "size": 18, "title": "\u003cb\u003eEuropean Union (EU)\u003c/b\u003e\u003cbr\u003eHelix: Government\u003cbr\u003eCategory: supranational government institutions\u003cbr\u003eReview: False"}, {"category": "supranational government institutions", "color": "#54A24B", "font": {"size": 18}, "helix": "Government", "id": "european defense agency", "label": "European Defense Agency (EDA)", "shape": "dot", "size": 18, "title": "\u003cb\u003eEuropean Defense Agency (EDA)\u003c/b\u003e\u003cbr\u003eHelix: Government\u003cbr\u003eCategory: supranational government institutions\u003cbr\u003eReview: False"}, {"category": "country", "color": "#B279A2", "font": {"size": 18}, "helix": "Civil Society", "id": "slovenia", "label": "Slovenia", "shape": "dot", "size": 18, "title": "\u003cb\u003eSlovenia\u003c/b\u003e\u003cbr\u003eHelix: Civil Society\u003cbr\u003eCategory: country\u003cbr\u003eReview: False"}, {"category": "supranational government institutions", "color": "#54A24B", "font": {"size": 18}, "helix": "Government", "id": "european high performance computing joint undertaking", "label": "European High Performance Computing Joint Undertaking (EuroHPC JU)", "shape": "dot", "size": 18, "title": "\u003cb\u003eEuropean High Performance Computing Joint Undertaking (EuroHPC JU)\u003c/b\u003e\u003cbr\u003eHelix: Government\u003cbr\u003eCategory: supranational government institutions\u003cbr\u003eReview: False"}, {"category": "financial support institutions", "color": "#E45756", "font": {"size": 18}, "helix": "Intermediary", "id": "european investment fund", "label": "European Investment Fund (EIF)", "shape": "dot", "size": 18, "title": "\u003cb\u003eEuropean Investment Fund (EIF)\u003c/b\u003e\u003cbr\u003eHelix: Intermediary\u003cbr\u003eCategory: financial support institutions\u003cbr\u003eReview: False"}, {"category": "financial support institutions", "color": "#E45756", "font": {"size": 18}, "helix": "Intermediary", "id": "sid bank", "label": "SID Bank", "shape": "dot", "size": 18, "title": "\u003cb\u003eSID Bank\u003c/b\u003e\u003cbr\u003eHelix: Intermediary\u003cbr\u003eCategory: financial support institutions\u003cbr\u003eReview: False"}, {"category": "research institutes", "color": "#4C78A8", "font": {"size": 18}, "helix": "Academia", "id": "jo ef stefan institute", "label": "Jo\u017eef Stefan Institute (IJS)", "shape": "dot", "size": 18, "title": "\u003cb\u003eJo\u017eef Stefan Institute (IJS)\u003c/b\u003e\u003cbr\u003eHelix: Academia\u003cbr\u003eCategory: research institutes\u003cbr\u003eReview: False"}, {"category": "universities", "color": "#4C78A8", "font": {"size": 18}, "helix": "Academia", "id": "university of ljubljana", "label": "University of Ljubljana (UL)", "shape": "dot", "size": 18, "title": "\u003cb\u003eUniversity of Ljubljana (UL)\u003c/b\u003e\u003cbr\u003eHelix: Academia\u003cbr\u003eCategory: universities\u003cbr\u003eReview: False"}, {"category": "supranational government institutions", "color": "#54A24B", "font": {"size": 18}, "helix": "Government", "id": "horizon europe", "label": "Horizon Europe", "shape": "dot", "size": 18, "title": "\u003cb\u003eHorizon Europe\u003c/b\u003e\u003cbr\u003eHelix: Government\u003cbr\u003eCategory: supranational government institutions\u003cbr\u003eReview: False"}, {"category": "business support institutions", "color": "#E45756", "font": {"size": 18}, "helix": "Intermediary", "id": "national contact point", "label": "National Contact Point (NCP)", "shape": "dot", "size": 18, "title": "\u003cb\u003eNational Contact Point (NCP)\u003c/b\u003e\u003cbr\u003eHelix: Intermediary\u003cbr\u003eCategory: business support institutions\u003cbr\u003eReview: False"}, {"category": "national government institutions", "color": "#54A24B", "font": {"size": 18}, "helix": "Government", "id": "ministry of digital transformation", "label": "Ministry of Digital Transformation (MDP)", "shape": "dot", "size": 18, "title": "\u003cb\u003eMinistry of Digital Transformation (MDP)\u003c/b\u003e\u003cbr\u003eHelix: Government\u003cbr\u003eCategory: national government institutions\u003cbr\u003eReview: False"}, {"category": "national government institutions", "color": "#54A24B", "font": {"size": 18}, "helix": "Government", "id": "ministry of public administration", "label": "Ministry of Public Administration (MGT\u0160)", "shape": "dot", "size": 18, "title": "\u003cb\u003eMinistry of Public Administration (MGT\u0160)\u003c/b\u003e\u003cbr\u003eHelix: Government\u003cbr\u003eCategory: national government institutions\u003cbr\u003eReview: False"}, {"category": "national government institutions", "color": "#54A24B", "font": {"size": 18}, "helix": "Government", "id": "office", "label": "Office", "shape": "dot", "size": 18, "title": "\u003cb\u003eOffice\u003c/b\u003e\u003cbr\u003eHelix: Government\u003cbr\u003eCategory: national government institutions\u003cbr\u003eReview: False"}, {"category": "supranational government institutions", "color": "#54A24B", "font": {"size": 18}, "helix": "Government", "id": "quantera", "label": "QuantERA", "shape": "dot", "size": 18, "title": "\u003cb\u003eQuantERA\u003c/b\u003e\u003cbr\u003eHelix: Government\u003cbr\u003eCategory: supranational government institutions\u003cbr\u003eReview: False"}, {"category": "supranational government institutions", "color": "#54A24B", "font": {"size": 18}, "helix": "Government", "id": "horizon 2020", "label": "Horizon 2020", "shape": "dot", "size": 18, "title": "\u003cb\u003eHorizon 2020\u003c/b\u003e\u003cbr\u003eHelix: Government\u003cbr\u003eCategory: supranational government institutions\u003cbr\u003eReview: False"}, {"category": "research institutes", "color": "#4C78A8", "font": {"size": 18}, "helix": "Academia", "id": "qutes", "label": "QUTES", "shape": "dot", "size": 18, "title": "\u003cb\u003eQUTES\u003c/b\u003e\u003cbr\u003eHelix: Academia\u003cbr\u003eCategory: research institutes\u003cbr\u003eReview: False"}, {"category": "user communities", "color": "#B279A2", "font": {"size": 18}, "helix": "Civil Society", "id": "slovenian quantum community", "label": "Slovenian quantum community", "shape": "dot", "size": 18, "title": "\u003cb\u003eSlovenian quantum community\u003c/b\u003e\u003cbr\u003eHelix: Civil Society\u003cbr\u003eCategory: user communities\u003cbr\u003eReview: False"}, {"category": "supranational government institutions", "color": "#54A24B", "font": {"size": 18}, "helix": "Government", "id": "north atlantic treaty organization", "label": "North Atlantic Treaty Organization (NATO)", "shape": "dot", "size": 18, "title": "\u003cb\u003eNorth Atlantic Treaty Organization (NATO)\u003c/b\u003e\u003cbr\u003eHelix: Government\u003cbr\u003eCategory: supranational government institutions\u003cbr\u003eReview: False"}, {"category": "business support institutions", "color": "#E45756", "font": {"size": 18}, "helix": "Intermediary", "id": "slovenian national supercomputing network", "label": "Slovenian National Supercomputing Network (SLING)", "shape": "dot", "size": 18, "title": "\u003cb\u003eSlovenian National Supercomputing Network (SLING)\u003c/b\u003e\u003cbr\u003eHelix: Intermediary\u003cbr\u003eCategory: business support institutions\u003cbr\u003eReview: False"}, {"category": "national government institutions", "color": "#54A24B", "font": {"size": 18}, "helix": "Government", "id": "office of the republic of slovenia for national security", "label": "Office of the Republic of Slovenia for National Security (UVTP)", "shape": "dot", "size": 18, "title": "\u003cb\u003eOffice of the Republic of Slovenia for National Security (UVTP)\u003c/b\u003e\u003cbr\u003eHelix: Government\u003cbr\u003eCategory: national government institutions\u003cbr\u003eReview: False"}, {"category": "individual", "color": "#999999", "font": {"size": 18}, "helix": "Unknown", "id": "anamarija lukenda", "label": "Anamarija Lukenda", "shape": "dot", "size": 18, "title": "\u003cb\u003eAnamarija Lukenda\u003c/b\u003e\u003cbr\u003eHelix: Unknown\u003cbr\u003eCategory: individual\u003cbr\u003eReview: True"}, {"category": "small and medium-sized enterprises", "color": "#F58518", "font": {"size": 18}, "helix": "Industry", "id": "arctur ra unalni ki in eniring d o o", "label": "ARCTUR ra\u010dunalni\u0161ki in\u017eeniring d.o.o.", "shape": "dot", "size": 18, "title": "\u003cb\u003eARCTUR ra\u010dunalni\u0161ki in\u017eeniring d.o.o.\u003c/b\u003e\u003cbr\u003eHelix: Industry\u003cbr\u003eCategory: small and medium-sized enterprises\u003cbr\u003eReview: False"}, {"category": "research institutes", "color": "#4C78A8", "font": {"size": 18}, "helix": "Academia", "id": "chemical institute", "label": "Chemical Institute", "shape": "dot", "size": 18, "title": "\u003cb\u003eChemical Institute\u003c/b\u003e\u003cbr\u003eHelix: Academia\u003cbr\u003eCategory: research institutes\u003cbr\u003eReview: False"}, {"category": "research institutes", "color": "#4C78A8", "font": {"size": 18}, "helix": "Academia", "id": "cineca", "label": "CINECA", "shape": "dot", "size": 18, "title": "\u003cb\u003eCINECA\u003c/b\u003e\u003cbr\u003eHelix: Academia\u003cbr\u003eCategory: research institutes\u003cbr\u003eReview: False"}, {"category": "small and medium-sized enterprises", "color": "#F58518", "font": {"size": 18}, "helix": "Industry", "id": "cosylab d d", "label": "Cosylab d.d.", "shape": "dot", "size": 18, "title": "\u003cb\u003eCosylab d.d.\u003c/b\u003e\u003cbr\u003eHelix: Industry\u003cbr\u003eCategory: small and medium-sized enterprises\u003cbr\u003eReview: False"}, {"category": "supranational government institutions", "color": "#54A24B", "font": {"size": 18}, "helix": "Government", "id": "eu secure connectivity program", "label": "EU Secure Connectivity Program", "shape": "dot", "size": 18, "title": "\u003cb\u003eEU Secure Connectivity Program\u003c/b\u003e\u003cbr\u003eHelix: Government\u003cbr\u003eCategory: supranational government institutions\u003cbr\u003eReview: False"}, {"category": "supranational government institutions", "color": "#54A24B", "font": {"size": 18}, "helix": "Government", "id": "european defence fund", "label": "European Defence Fund (EDF)", "shape": "dot", "size": 18, "title": "\u003cb\u003eEuropean Defence Fund (EDF)\u003c/b\u003e\u003cbr\u003eHelix: Government\u003cbr\u003eCategory: supranational government institutions\u003cbr\u003eReview: False"}, {"category": "supranational government institutions", "color": "#54A24B", "font": {"size": 18}, "helix": "Government", "id": "european innovation council", "label": "European Innovation Council (EIC)", "shape": "dot", "size": 18, "title": "\u003cb\u003eEuropean Innovation Council (EIC)\u003c/b\u003e\u003cbr\u003eHelix: Government\u003cbr\u003eCategory: supranational government institutions\u003cbr\u003eReview: False"}, {"category": "supranational government institutions", "color": "#54A24B", "font": {"size": 18}, "helix": "Government", "id": "european joint undertaking for chips", "label": "European Joint Undertaking for Chips (Chips JU)", "shape": "dot", "size": 18, "title": "\u003cb\u003eEuropean Joint Undertaking for Chips (Chips JU)\u003c/b\u003e\u003cbr\u003eHelix: Government\u003cbr\u003eCategory: supranational government institutions\u003cbr\u003eReview: False"}, {"category": "national government institutions", "color": "#54A24B", "font": {"size": 18}, "helix": "Government", "id": "government of the republic of slovenia", "label": "Government of the Republic of Slovenia", "shape": "dot", "size": 18, "title": "\u003cb\u003eGovernment of the Republic of Slovenia\u003c/b\u003e\u003cbr\u003eHelix: Government\u003cbr\u003eCategory: national government institutions\u003cbr\u003eReview: False"}, {"category": "national government institutions", "color": "#54A24B", "font": {"size": 18}, "helix": "Government", "id": "ministry of foreign affairs", "label": "Ministry of Foreign Affairs", "shape": "dot", "size": 18, "title": "\u003cb\u003eMinistry of Foreign Affairs\u003c/b\u003e\u003cbr\u003eHelix: Government\u003cbr\u003eCategory: national government institutions\u003cbr\u003eReview: False"}, {"category": "research institutes", "color": "#4C78A8", "font": {"size": 18}, "helix": "Academia", "id": "national science centre", "label": "National Science Centre (NCN)", "shape": "dot", "size": 18, "title": "\u003cb\u003eNational Science Centre (NCN)\u003c/b\u003e\u003cbr\u003eHelix: Academia\u003cbr\u003eCategory: research institutes\u003cbr\u003eReview: False"}, {"category": "supranational government institutions", "color": "#54A24B", "font": {"size": 18}, "helix": "Government", "id": "partnership for advanced computing in europe", "label": "Partnership for Advanced Computing in Europe (PRACE)", "shape": "dot", "size": 18, "title": "\u003cb\u003ePartnership for Advanced Computing in Europe (PRACE)\u003c/b\u003e\u003cbr\u003eHelix: Government\u003cbr\u003eCategory: supranational government institutions\u003cbr\u003eReview: False"}, {"category": "joint research centers", "color": "#E45756", "font": {"size": 18}, "helix": "Intermediary", "id": "quantum flagship", "label": "Quantum Flagship", "shape": "dot", "size": 18, "title": "\u003cb\u003eQuantum Flagship\u003c/b\u003e\u003cbr\u003eHelix: Intermediary\u003cbr\u003eCategory: joint research centers\u003cbr\u003eReview: False"}, {"category": "country", "color": "#999999", "font": {"size": 18}, "helix": "Unknown", "id": "republic of slovenia", "label": "Republic of Slovenia", "shape": "dot", "size": 18, "title": "\u003cb\u003eRepublic of Slovenia\u003c/b\u003e\u003cbr\u003eHelix: Unknown\u003cbr\u003eCategory: country\u003cbr\u003eReview: True"}, {"category": "supranational government institutions", "color": "#54A24B", "font": {"size": 18}, "helix": "Government", "id": "united nations general assembly", "label": "United Nations General Assembly", "shape": "dot", "size": 18, "title": "\u003cb\u003eUnited Nations General Assembly\u003c/b\u003e\u003cbr\u003eHelix: Government\u003cbr\u003eCategory: supranational government institutions\u003cbr\u003eReview: False"}, {"category": "national government institutions", "color": "#54A24B", "font": {"size": 18}, "helix": "Government", "id": "ursil", "label": "URSIL", "shape": "dot", "size": 18, "title": "\u003cb\u003eURSIL\u003c/b\u003e\u003cbr\u003eHelix: Government\u003cbr\u003eCategory: national government institutions\u003cbr\u003eReview: False"}]);
+                  edges = new vis.DataSet([{"arrows": "to", "color": "#2563EB", "from": "aris", "label": "collaborative_leadership", "title": "\u003cb\u003ecollaborative_leadership\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Intra-helix / Not classified\u003cbr\u003ePage: 29\u003cbr\u003ePhrase: financed in equal parts by ARIS and the Ministry of Defense", "to": "ministry of defense", "width": 2}, {"arrows": "to", "color": "#2563EB", "from": "aris", "label": "collaborative_leadership", "title": "\u003cb\u003ecollaborative_leadership\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Intra-helix / Not classified\u003cbr\u003ePage: 31\u003cbr\u003ePhrase: study visits to ERC project leaders", "to": "european research council", "width": 2}, {"arrows": "to", "color": "#6B7280", "from": "beyond semiconductor d o o", "label": "networking", "title": "\u003cb\u003enetworking\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Intra-helix / Not classified\u003cbr\u003ePage: 72\u003cbr\u003ePhrase: (partner)", "to": "atomql d o o", "width": 2}, {"arrows": "to", "color": "#6B7280", "from": "european commission", "label": "networking", "title": "\u003cb\u003enetworking\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Intra-helix / Not classified\u003cbr\u003ePage: 8\u003cbr\u003ePhrase: the EC\u0027s flagship initiative for QT (Quantum Flagship) prepared an SRIA for", "to": "european union", "width": 2}, {"arrows": "to", "color": "#6B7280", "from": "european defense agency", "label": "networking", "title": "\u003cb\u003enetworking\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Intra-helix / Not classified\u003cbr\u003ePage: 40\u003cbr\u003ePhrase: representatives from the Slovenian Armed Forces and the Ministry of Defense", "to": "ministry of defense", "width": 2}, {"arrows": "to", "color": "#6B7280", "from": "european defense agency", "label": "networking", "title": "\u003cb\u003enetworking\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Public\u003cbr\u003ePage: 40\u003cbr\u003ePhrase: representatives from Slovenian industry and research institutions", "to": "slovenia", "width": 2}, {"arrows": "to", "color": "#2563EB", "from": "european high performance computing joint undertaking", "label": "collaborative_leadership", "title": "\u003cb\u003ecollaborative_leadership\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Intra-helix / Not classified\u003cbr\u003ePage: 42\u003cbr\u003ePhrase: established under Horizon Europe", "to": "european union", "width": 2}, {"arrows": "to", "color": "#2563EB", "from": "european high performance computing joint undertaking", "label": "collaborative_leadership", "title": "\u003cb\u003ecollaborative_leadership\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Public\u003cbr\u003ePage: 46\u003cbr\u003ePhrase: EuroCC was established in Slovenia", "to": "slovenia", "width": 2}, {"arrows": "to", "color": "#6B7280", "from": "european investment fund", "label": "networking", "title": "\u003cb\u003enetworking\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Intra-helix / Not classified\u003cbr\u003ePage: 33\u003cbr\u003ePhrase: establish", "to": "sid bank", "width": 2}, {"arrows": "to", "color": "#2563EB", "from": "european research council", "label": "collaborative_leadership", "title": "\u003cb\u003ecollaborative_leadership\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Knowledge\u003cbr\u003ePage: 69\u003cbr\u003ePhrase: ERC", "to": "jo ef stefan institute", "width": 2}, {"arrows": "to", "color": "#2563EB", "from": "european research council", "label": "collaborative_leadership", "title": "\u003cb\u003ecollaborative_leadership\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Knowledge\u003cbr\u003ePage: 68\u003cbr\u003ePhrase: beneficiary", "to": "university of ljubljana", "width": 2}, {"arrows": "to", "color": "#6B7280", "from": "horizon europe", "label": "networking", "title": "\u003cb\u003enetworking\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Public\u003cbr\u003ePage: 34\u003cbr\u003ePhrase: Participation in international research projects of Slovenian applicants in Horizon Europe programs", "to": "slovenia", "width": 2}, {"arrows": "to", "color": "#2563EB", "from": "horizon europe", "label": "collaborative_leadership", "title": "\u003cb\u003ecollaborative_leadership\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Consensus\u003cbr\u003ePage: 37\u003cbr\u003ePhrase: Horizon Europe National Contact Points", "to": "national contact point", "width": 2}, {"arrows": "to", "color": "#2563EB", "from": "jo ef stefan institute", "label": "collaborative_leadership", "title": "\u003cb\u003ecollaborative_leadership\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Intra-helix / Not classified\u003cbr\u003ePage: 13\u003cbr\u003ePhrase: in collaboration with the UL FMF", "to": "university of ljubljana", "width": 2}, {"arrows": "to", "color": "#2563EB", "from": "jo ef stefan institute", "label": "collaborative_leadership", "title": "\u003cb\u003ecollaborative_leadership\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Public\u003cbr\u003ePage: 54\u003cbr\u003ePhrase: the Slovenian Quantum Science Hub (SQUASH) project", "to": "slovenia", "width": 2}, {"arrows": "to", "color": "#2563EB", "from": "jo ef stefan institute", "label": "collaborative_leadership", "title": "\u003cb\u003ecollaborative_leadership\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Knowledge\u003cbr\u003ePage: 54\u003cbr\u003ePhrase: the EC\u0027s MSCA COFUND 2023 public call", "to": "european commission", "width": 2}, {"arrows": "to", "color": "#6B7280", "from": "ministry of defense", "label": "networking", "title": "\u003cb\u003enetworking\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Knowledge\u003cbr\u003ePage: 27\u003cbr\u003ePhrase: the Ministry of Defense will participate in the CRP KVANTEH with the", "to": "jo ef stefan institute", "width": 2}, {"arrows": "to", "color": "#6B7280", "from": "ministry of digital transformation", "label": "networking", "title": "\u003cb\u003enetworking\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Intra-helix / Not classified\u003cbr\u003ePage: 45\u003cbr\u003ePhrase: Participating bodies: MDP, MGT\u0160, MO", "to": "ministry of public administration", "width": 2}, {"arrows": "to", "color": "#6B7280", "from": "ministry of public administration", "label": "networking", "title": "\u003cb\u003enetworking\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Intra-helix / Not classified\u003cbr\u003ePage: 51\u003cbr\u003ePhrase: cooperation of MGT\u0160, MO, MDP", "to": "ministry of digital transformation", "width": 2}, {"arrows": "to", "color": "#2563EB", "from": "office", "label": "collaborative_leadership", "title": "\u003cb\u003ecollaborative_leadership\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Intra-helix / Not classified\u003cbr\u003ePage: 25\u003cbr\u003ePhrase: in cooperation with ARIS", "to": "aris", "width": 2}, {"arrows": "to", "color": "#6B7280", "from": "quantera", "label": "networking", "title": "\u003cb\u003enetworking\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Public\u003cbr\u003ePage: 14\u003cbr\u003ePhrase: participating in the initiative", "to": "slovenia", "width": 2}, {"arrows": "to", "color": "#6B7280", "from": "quantera", "label": "networking", "title": "\u003cb\u003enetworking\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Intra-helix / Not classified\u003cbr\u003ePage: 21\u003cbr\u003ePhrase: strategic continuation and upgrade of the partnerships implemented under the Horizon 2020", "to": "horizon 2020", "width": 2}, {"arrows": "to", "color": "#6B7280", "from": "qutes", "label": "networking", "title": "\u003cb\u003enetworking\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Public\u003cbr\u003ePage: 59\u003cbr\u003ePhrase: other stakeholders in the Slovenian quantum ecosystem", "to": "slovenian quantum community", "width": 2}, {"arrows": "to", "color": "#2563EB", "from": "slovenia", "label": "collaborative_leadership", "title": "\u003cb\u003ecollaborative_leadership\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Public\u003cbr\u003ePage: 12\u003cbr\u003ePhrase: strategies that promote research and development in priority areas such as high-tech", "to": "european union", "width": 2}, {"arrows": "to", "color": "#2563EB", "from": "slovenia", "label": "collaborative_leadership", "title": "\u003cb\u003ecollaborative_leadership\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Public\u003cbr\u003ePage: 12\u003cbr\u003ePhrase: strategies that promote research and development in priority areas such as high-tech", "to": "north atlantic treaty organization", "width": 2}, {"arrows": "to", "color": "#6B7280", "from": "slovenia", "label": "networking", "title": "\u003cb\u003enetworking\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Public\u003cbr\u003ePage: 66\u003cbr\u003ePhrase: Co-financing of Slovenian participation in projects under EuroHPC JU calls for proposals", "to": "european high performance computing joint undertaking", "width": 2}, {"arrows": "to", "color": "#2563EB", "from": "slovenian national supercomputing network", "label": "collaborative_leadership", "title": "\u003cb\u003ecollaborative_leadership\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Public\u003cbr\u003ePage: 46\u003cbr\u003ePhrase: Public supercomputers in Slovenia participate in the Slovenian National Supercomputing Network (SLING)", "to": "slovenia", "width": 2}, {"arrows": "to", "color": "#2563EB", "from": "university of ljubljana", "label": "collaborative_leadership", "title": "\u003cb\u003ecollaborative_leadership\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Intra-helix / Not classified\u003cbr\u003ePage: 14\u003cbr\u003ePhrase: in collaboration with partners IJS", "to": "jo ef stefan institute", "width": 2}, {"arrows": "to", "color": "#2563EB", "from": "university of ljubljana", "label": "collaborative_leadership", "title": "\u003cb\u003ecollaborative_leadership\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Knowledge\u003cbr\u003ePage: 14\u003cbr\u003ePhrase: in collaboration with partners UVTP", "to": "office of the republic of slovenia for national security", "width": 2}]);
+
+                  nodeColors = {};
+                  allNodes = nodes.get({ returnType: "Object" });
+                  for (nodeId in allNodes) {
+                    nodeColors[nodeId] = allNodes[nodeId].color;
+                  }
+                  allEdges = edges.get({ returnType: "Object" });
+                  // adding nodes and edges to the graph
+                  data = {nodes: nodes, edges: edges};
+
+                  var options = {"physics": {"barnesHut": {"gravitationalConstant": -8000, "centralGravity": 0.3, "springLength": 180, "springConstant": 0.04}, "minVelocity": 0.75}, "interaction": {"hover": true, "navigationButtons": true, "keyboard": true}};
+
+                  
+
+
+                  
+
+                  network = new vis.Network(container, data, options);
+
+                  
+
+                  
+
+                  
+
+
+                  
+
+                  return network;
+
+              }
+              drawGraph();
+        </script>
+    </body>
+</html>

@@ -1,0 +1,105 @@
+
+========================================================================
+RUN STARTED  2026-06-16 03:17:16
+pdf_pipeline.py Nordic23.pdf
+========================================================================
+
+[03:17:16 +0s | Nordic23] === 1 actor extraction ===
+[03:17:17 +0s | Nordic23] Reading PDF: Nordic23.pdf
+[03:17:17 +0s | Nordic23] Extracting: Nordic23.pdf, page 1/17, chunk 1/2
+[03:17:24 +8s | Nordic23] Repaired malformed JSON.
+[03:17:24 +8s | Nordic23] Extracting: Nordic23.pdf, page 1/17, chunk 2/2
+[03:17:32 +13s | Nordic23] Repaired malformed JSON.
+[03:17:32 +13s | Nordic23] Extracting: Nordic23.pdf, page 2/17, chunk 1/2
+[03:17:39 +19s | Nordic23] Repaired malformed JSON.
+[03:17:39 +19s | Nordic23] Extracting: Nordic23.pdf, page 2/17, chunk 2/2
+[03:17:45 +26s | Nordic23] Repaired malformed JSON.
+[03:17:45 +26s | Nordic23] Extracting: Nordic23.pdf, page 3/17, chunk 1/1
+[03:17:53 +34s | Nordic23] Repaired malformed JSON.
+[03:17:53 +34s | Nordic23] Extracting: Nordic23.pdf, page 4/17, chunk 1/1
+[03:17:58 +39s | Nordic23] Repaired malformed JSON.
+[03:17:58 +39s | Nordic23] Extracting: Nordic23.pdf, page 5/17, chunk 1/1
+[03:18:07 +45s | Nordic23] Repaired malformed JSON.
+[03:18:07 +45s | Nordic23] Extracting: Nordic23.pdf, page 6/17, chunk 1/1
+[03:18:13 +50s | Nordic23] Repaired malformed JSON.
+[03:18:13 +50s | Nordic23] Extracting: Nordic23.pdf, page 7/17, chunk 1/1
+[03:18:19 +57s | Nordic23] Repaired malformed JSON.
+[03:18:19 +57s | Nordic23] Extracting: Nordic23.pdf, page 8/17, chunk 1/1
+[03:18:24 +1m 2s | Nordic23] Extracting: Nordic23.pdf, page 11/17, chunk 1/2
+[03:18:30 +1m 8s | Nordic23] Repaired malformed JSON.
+[03:18:30 +1m 8s | Nordic23] Extracting: Nordic23.pdf, page 11/17, chunk 2/2
+[03:18:35 +1m 13s | Nordic23] Repaired malformed JSON.
+[03:18:35 +1m 13s | Nordic23] Extracting: Nordic23.pdf, page 12/17, chunk 1/3
+[03:18:44 +1m 19s | Nordic23] Repaired malformed JSON.
+[03:18:44 +1m 19s | Nordic23] Extracting: Nordic23.pdf, page 12/17, chunk 2/3
+[03:18:49 +1m 24s | Nordic23] Repaired malformed JSON.
+[03:18:49 +1m 24s | Nordic23] Extracting: Nordic23.pdf, page 12/17, chunk 3/3
+[03:18:57 +1m 32s | Nordic23] Repaired malformed JSON.
+[03:18:57 +1m 32s | Nordic23] Extracting: Nordic23.pdf, page 13/17, chunk 1/2
+[03:19:04 +1m 39s | Nordic23] Repaired malformed JSON.
+[03:19:04 +1m 39s | Nordic23] Extracting: Nordic23.pdf, page 13/17, chunk 2/2
+[03:19:10 +1m 44s | Nordic23] Repaired malformed JSON.
+[03:19:10 +1m 44s | Nordic23] Extracting: Nordic23.pdf, page 14/17, chunk 1/3
+[03:19:13 +1m 48s | Nordic23] Extracting: Nordic23.pdf, page 14/17, chunk 2/3
+[03:19:22 +1m 54s | Nordic23] Repaired malformed JSON.
+[03:19:22 +1m 54s | Nordic23] Extracting: Nordic23.pdf, page 14/17, chunk 3/3
+[03:19:30 +2m 2s | Nordic23] Repaired malformed JSON.
+[03:19:30 +2m 2s | Nordic23] Extracting: Nordic23.pdf, page 15/17, chunk 1/1
+[03:19:36 +2m 8s | Nordic23] Repaired malformed JSON.
+[03:19:36 +2m 8s | Nordic23] Extracting: Nordic23.pdf, page 16/17, chunk 1/1
+[03:19:46 +2m 18s | Nordic23] Repaired malformed JSON.
+[03:19:46 +2m 18s | Nordic23] Extracting: Nordic23.pdf, page 17/17, chunk 1/1
+[03:19:56 +2m 25s | Nordic23] Repaired malformed JSON.
+[03:19:56 +2m 25s | Nordic23] Saved 1_actor_results.json with 54 clean actors
+
+[03:19:56 +2m 25s | Nordic23] === 2 clean actors ===
+[03:19:56 +2m 26s | Nordic23] Loaded 54 extracted records
+[03:19:56 +2m 26s | Nordic23] Saved 2_actor_nodes.json with 29 canonical actor nodes
+
+[03:19:56 +2m 26s | Nordic23] === 3 interaction extraction ===
+[03:19:57 +2m 26s | Nordic23] Processing interactions for: Nordic23.pdf
+[03:19:57 +2m 26s | Nordic23] Extracting interactions: Nordic23.pdf, page 1/17, chunk 1/2
+[03:20:08 +2m 37s | Nordic23] Extracting interactions: Nordic23.pdf, page 1/17, chunk 2/2
+[03:20:43 +3m 9s | Nordic23] Extracting interactions: Nordic23.pdf, page 2/17, chunk 1/2
+[03:20:50 +3m 16s | Nordic23] Extracting interactions: Nordic23.pdf, page 2/17, chunk 2/2
+[03:21:05 +3m 28s | Nordic23] Extracting interactions: Nordic23.pdf, page 3/17, chunk 1/1
+[03:21:08 +3m 31s | Nordic23] Extracting interactions: Nordic23.pdf, page 4/17, chunk 1/1
+[03:21:15 +3m 38s | Nordic23] Extracting interactions: Nordic23.pdf, page 5/17, chunk 1/1
+[03:21:18 +3m 41s | Nordic23] Extracting interactions: Nordic23.pdf, page 6/17, chunk 1/1
+[03:21:20 +3m 43s | Nordic23] Extracting interactions: Nordic23.pdf, page 7/17, chunk 1/1
+[03:21:21 +3m 44s | Nordic23] Extracting interactions: Nordic23.pdf, page 11/17, chunk 1/3
+[03:21:31 +3m 54s | Nordic23] Extracting interactions: Nordic23.pdf, page 11/17, chunk 2/3
+[03:21:46 +4m 7s | Nordic23] Extracting interactions: Nordic23.pdf, page 11/17, chunk 3/3
+[03:21:50 +4m 10s | Nordic23] Extracting interactions: Nordic23.pdf, page 12/17, chunk 1/3
+[03:21:51 +4m 11s | Nordic23] Extracting interactions: Nordic23.pdf, page 12/17, chunk 2/3
+[03:21:59 +4m 19s | Nordic23] Extracting interactions: Nordic23.pdf, page 12/17, chunk 3/3
+[03:22:02 +4m 22s | Nordic23] Extracting interactions: Nordic23.pdf, page 13/17, chunk 1/3
+[03:22:06 +4m 27s | Nordic23] Extracting interactions: Nordic23.pdf, page 13/17, chunk 2/3
+[03:22:15 +4m 33s | Nordic23] Extracting interactions: Nordic23.pdf, page 14/17, chunk 2/3
+[03:22:17 +4m 34s | Nordic23] Extracting interactions: Nordic23.pdf, page 14/17, chunk 3/3
+[03:22:18 +4m 36s | Nordic23] Extracting interactions: Nordic23.pdf, page 15/17, chunk 1/1
+[03:22:23 +4m 41s | Nordic23] Extracting interactions: Nordic23.pdf, page 17/17, chunk 2/2
+[03:22:56 +5m 11s | Nordic23] Saved 3_interaction_results.json with 45 extracted interactions.
+
+[03:22:56 +5m 11s | Nordic23] === 4 clean interactions ===
+[03:22:56 +5m 11s | Nordic23] Saved 4_edges.json with 9 cleaned interactions.
+
+[03:22:56 +5m 11s | Nordic23] === 5 helix enrichment ===
+[03:22:57 +5m 11s | Nordic23] Wrote 5_nodes.json (29 actors)
+[03:22:57 +5m 11s | Nordic23] Wrote 5_edges.json (9 interactions)
+[03:22:57 +5m 11s | Nordic23] Actor helix counts: {'Academia': 15, 'Government': 1, 'Industry': 8, 'Intermediary': 2, 'Unknown': 3}
+[03:22:57 +5m 11s | Nordic23] Functional-space counts: {'Innovation': 3, 'Intra-helix / Not classified': 3, 'Unknown': 3}
+
+[03:22:57 +5m 11s | Nordic23] === 6 network visualisation ===
+[03:22:57 +5m 11s | Nordic23] Wrote quantum_network.html
+[03:22:57 +5m 11s | Nordic23] Nodes: 29
+[03:22:57 +5m 11s | Nordic23] Edges: 7
+
+[03:22:57 +5m 11s | Nordic23] Done. Outputs written to: /home/lv/IDP/idpdeeptech/pipeline/pdf_outputs/Nordic23
+[03:22:57 +5m 11s | Nordic23] Log: /home/lv/IDP/idpdeeptech/pipeline/pdf_outputs/Nordic23/run.log
+
+========================================================================
+RUN FINISHED 2026-06-16 03:22:57  (OK)
+Started:     2026-06-16 03:17:16
+Elapsed:     5m 11s
+========================================================================

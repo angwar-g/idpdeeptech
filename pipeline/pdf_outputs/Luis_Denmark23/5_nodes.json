@@ -1,0 +1,1148 @@
+[
+  {
+    "entity": "China",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "country",
+    "role_in_text": "Quantum technology investment and competition",
+    "technology_area": "quantum computing",
+    "occurrence_sentence": "Quantum Research is subject to ever-increasing global competition. This is especially true between the largest players – the USA and China – who, over a number of years, have invested",
+    "source_document": "Luis_Denmark23.pdf",
+    "page": 17,
+    "canonical_actor_key": "china",
+    "aliases": [
+      "China"
+    ],
+    "pages": [
+      17
+    ],
+    "mentions": [
+      {
+        "entity": "China",
+        "page": 17,
+        "role_in_text": "Quantum technology investment and competition",
+        "occurrence_sentence": "Quantum Research is subject to ever-increasing global competition. This is especially true between the largest players – the USA and China – who, over a number of years, have invested",
+        "source_document": "Luis_Denmark23.pdf"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Industry",
+    "sphere": "Single",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "name_heuristic_industry",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "Danish e-Infrastructure Cooperation (DeiC)",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "national government institutions",
+    "role_in_text": "Implementing skills-building activities and providing access to quantum computers.",
+    "technology_area": "quantum computing",
+    "occurrence_sentence": "The government will, under the Danish e-Infrastructure Cooperation (DeiC) implement an intensified effort to give Danish researchers and students user access to as many test and technology platforms for a quantum computer as possible.",
+    "source_document": "Luis_Denmark23.pdf",
+    "page": 22,
+    "confidence": "high",
+    "canonical_actor_key": "danish e infrastructure cooperation",
+    "aliases": [
+      "Danish e-Infrastructure Cooperation",
+      "Danish e-Infrastructure Cooperation (DeiC)",
+      "DeiC"
+    ],
+    "pages": [
+      21,
+      22,
+      23
+    ],
+    "mentions": [
+      {
+        "entity": "Danish e-Infrastructure Cooperation (DeiC)",
+        "page": 21,
+        "role_in_text": "cooperation of Denmark's eight universities and the Danish Agency for Higher Education and Science",
+        "occurrence_sentence": "Furthermore, Denmark has established a national cooperation on digital research infrastructure by setting up Danish e-Infrastructure Cooperation (DeiC), which is a cooperation of Denmark's eight universities and the Danish Agency for Higher Education and Science.",
+        "source_document": "Luis_Denmark23.pdf"
+      },
+      {
+        "entity": "Danish e-Infrastructure Cooperation (DeiC)",
+        "page": 22,
+        "role_in_text": "Implementing skills-building activities and providing access to quantum computers.",
+        "occurrence_sentence": "The government will, under the Danish e-Infrastructure Cooperation (DeiC) implement an intensified effort to give Danish researchers and students user access to as many test and technology platforms for a quantum computer as possible.",
+        "source_document": "Luis_Denmark23.pdf"
+      },
+      {
+        "entity": "Danish e-Infrastructure Cooperation (DeiC)",
+        "page": 23,
+        "role_in_text": "project under the Danish e-Infrastructure Cooperation (DeiC) to attract a European Quantum Excellence Center for quantum software and algorithms",
+        "occurrence_sentence": "With the political agreement on the distribution of the research reserve for 2023, the government and a broad majority in the Danish parliament have started a project under the Danish e-Infrastructure Cooperation (DeiC) to attract a European Quantum Excellence Center for quantum software and algorithms.",
+        "source_document": "Luis_Denmark23.pdf"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Government",
+    "sphere": "Single",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "Danish National Research Foundation",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "financial support institutions",
+    "role_in_text": "main contributor",
+    "technology_area": "quantum computing",
+    "occurrence_sentence": "The main contributors have been the Danish National Research Foundation, the Innovation Fund Denmark, the Villum Foundation, the Carlsberg Foundation and, increasingly, the Novo Nordisk Foundation.",
+    "source_document": "Luis_Denmark23.pdf",
+    "page": 6,
+    "confidence": "high",
+    "canonical_actor_key": "danish national research foundation",
+    "aliases": [
+      "Danish National Research Foundation"
+    ],
+    "pages": [
+      6
+    ],
+    "mentions": [
+      {
+        "entity": "Danish National Research Foundation",
+        "page": 6,
+        "role_in_text": "main contributor",
+        "occurrence_sentence": "The main contributors have been the Danish National Research Foundation, the Innovation Fund Denmark, the Villum Foundation, the Carlsberg Foundation and, increasingly, the Novo Nordisk Foundation.",
+        "source_document": "Luis_Denmark23.pdf"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Intermediary",
+    "sphere": "Multi",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "Danish Parliament",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "national government institutions",
+    "role_in_text": "Agreed on the distribution of the research reserve for 2023.",
+    "technology_area": "quantum computing",
+    "occurrence_sentence": "With the political agreement on the distribution of the research reserve for",
+    "source_document": "Luis_Denmark23.pdf",
+    "page": 22,
+    "canonical_actor_key": "danish parliament",
+    "aliases": [
+      "Danish Parliament"
+    ],
+    "pages": [
+      22
+    ],
+    "mentions": [
+      {
+        "entity": "Danish Parliament",
+        "page": 22,
+        "role_in_text": "Agreed on the distribution of the research reserve for 2023.",
+        "occurrence_sentence": "With the political agreement on the distribution of the research reserve for",
+        "source_document": "Luis_Denmark23.pdf"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Government",
+    "sphere": "Single",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "Danish quantum companies",
+    "status": "entity",
+    "excluded_reason": "not_specific",
+    "category": "small and medium-sized enterprises",
+    "role_in_text": "receive proactive support from PET",
+    "technology_area": "quantum computing",
+    "occurrence_sentence": "Increased security in the Danish quantum ecosystem, the advisory efforts of the Police Intelligence Service's (PET) will be significantly enhanced.",
+    "source_document": "Luis_Denmark23.pdf",
+    "page": 43,
+    "canonical_actor_key": "danish quantum companies",
+    "aliases": [
+      "Danish quantum companies"
+    ],
+    "pages": [
+      43
+    ],
+    "mentions": [
+      {
+        "entity": "Danish quantum companies",
+        "page": 43,
+        "role_in_text": "receive proactive support from PET",
+        "occurrence_sentence": "Increased security in the Danish quantum ecosystem, the advisory efforts of the Police Intelligence Service's (PET) will be significantly enhanced.",
+        "source_document": "Luis_Denmark23.pdf"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Industry",
+    "sphere": "Single",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "Danske Bank",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "large enterprises",
+    "role_in_text": "participate in field experiments with quantum communication",
+    "technology_area": "quantum communication",
+    "occurrence_sentence": "Danske Bank and Energinet – participate in field experiments with quantum communication",
+    "source_document": "Luis_Denmark23.pdf",
+    "page": 38,
+    "confidence": "high",
+    "canonical_actor_key": "danske bank",
+    "aliases": [
+      "Danske Bank"
+    ],
+    "pages": [
+      38
+    ],
+    "mentions": [
+      {
+        "entity": "Danske Bank",
+        "page": 38,
+        "role_in_text": "participate in field experiments with quantum communication",
+        "occurrence_sentence": "Danske Bank and Energinet – participate in field experiments with quantum communication",
+        "source_document": "Luis_Denmark23.pdf"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Industry",
+    "sphere": "Single",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "Denmark",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "country",
+    "role_in_text": "country with strong higher education programs in quantum field",
+    "technology_area": "deep tech general",
+    "occurrence_sentence": "Denmark has strong higher education programs with relevance to the quantum field in particular within physics, chemistry, nanoscience, photonics, mathematics and computer science, but with intensified international competition for the best talents to research and develop quantum technology, there is a need to future-proof the talent base in Denmark by developing, attracting and retaining talent and skills.",
+    "source_document": "Luis_Denmark23.pdf",
+    "page": 40,
+    "confidence": "high",
+    "canonical_actor_key": "denmark",
+    "aliases": [
+      "Denmark"
+    ],
+    "pages": [
+      2,
+      3,
+      4,
+      10,
+      11,
+      12,
+      25,
+      28,
+      30,
+      32,
+      36,
+      37,
+      40,
+      42,
+      44,
+      45,
+      46
+    ],
+    "mentions": [
+      {
+        "entity": "Denmark",
+        "page": 2,
+        "role_in_text": "location",
+        "occurrence_sentence": "Børsgade 4 DK-1215 Copenhagen K",
+        "source_document": "Luis_Denmark23.pdf"
+      },
+      {
+        "entity": "Denmark",
+        "page": 3,
+        "role_in_text": "National Strategy for Quantum Technology",
+        "occurrence_sentence": "Part 1 of a National Strategy for Quantum Technology",
+        "source_document": "Luis_Denmark23.pdf"
+      },
+      {
+        "entity": "Denmark",
+        "page": 4,
+        "role_in_text": "Leading country in quantum research",
+        "occurrence_sentence": "Denmark is among the leading countries in quantum research and, as a result, we enjoy great international recognition.",
+        "source_document": "Luis_Denmark23.pdf"
+      },
+      {
+        "entity": "Denmark",
+        "page": 10,
+        "role_in_text": "Denmark aims to have one of the world's leading quantum research environments.",
+        "occurrence_sentence": "Denmark aims to have one of the world's leading quantum research environments and to have the ability to effectively translate research into new, usable technology.",
+        "source_document": "Luis_Denmark23.pdf"
+      },
+      {
+        "entity": "Denmark",
+        "page": 11,
+        "role_in_text": "International cooperation on research and innovation for the benefit of Denmark",
+        "occurrence_sentence": "International cooperation on research and innovation for the benefit of Denmark",
+        "source_document": "Luis_Denmark23.pdf"
+      },
+      {
+        "entity": "Denmark",
+        "page": 12,
+        "role_in_text": "Denmark",
+        "occurrence_sentence": "Denmark must continue to prioritise basic research and research infrastructure financially, if we are to maintain and develop a strong Danish research position.",
+        "source_document": "Luis_Denmark23.pdf"
+      },
+      {
+        "entity": "Denmark",
+        "page": 25,
+        "role_in_text": "National Strategy for Quantum Technology",
+        "occurrence_sentence": "SEPTEMBER 2023 National Strategy for Quantum Technology",
+        "source_document": "Luis_Denmark23.pdf"
+      },
+      {
+        "entity": "Denmark",
+        "page": 28,
+        "role_in_text": "Country at the forefront of quantum technology research",
+        "occurrence_sentence": "As of 2023, Denmark remains at the forefront of quantum technology research, enjoying widespread international recognition.",
+        "source_document": "Luis_Denmark23.pdf"
+      },
+      {
+        "entity": "Denmark",
+        "page": 30,
+        "role_in_text": "National Strategy for Quantum Technology",
+        "occurrence_sentence": "NATIONAL STRATEGY FOR QUANTUM TECHNOLOGY - PART 2",
+        "source_document": "Luis_Denmark23.pdf"
+      },
+      {
+        "entity": "Denmark",
+        "page": 32,
+        "role_in_text": "A small, open economy",
+        "occurrence_sentence": "The geopolitical situation with the war in Ukraine, increased rivalry between the US and China, and the technological race places new demands on a small, open economy like Denmark and emphasize that business and trade policy has increasingly become a matter of security policy.",
+        "source_document": "Luis_Denmark23.pdf"
+      },
+      {
+        "entity": "Denmark",
+        "page": 32,
+        "role_in_text": "A country whose IT infrastructure is vulnerable to attacks",
+        "occurrence_sentence": "This is a serious threat, as a large part of Danish IT infrastructure will thus be vulnerable to attacks.",
+        "source_document": "Luis_Denmark23.pdf"
+      },
+      {
+        "entity": "Denmark",
+        "page": 36,
+        "role_in_text": "aims to have one of the world's leading quantum research environments",
+        "occurrence_sentence": "Denmark aims to have one of the world's leading quantum research environments",
+        "source_document": "Luis_Denmark23.pdf"
+      },
+      {
+        "entity": "Denmark",
+        "page": 36,
+        "role_in_text": "must utilize the commercial potential of quantum technology for the benefit of Danish business and Denmark's security",
+        "occurrence_sentence": "Denmark must utilize the commercial potential of quantum technology for the",
+        "source_document": "Luis_Denmark23.pdf"
+      },
+      {
+        "entity": "Denmark",
+        "page": 37,
+        "role_in_text": "policy, geopolitical, funding, strategic, or ecosystem actor",
+        "occurrence_sentence": "More quantum talent in Denmark",
+        "source_document": "Luis_Denmark23.pdf"
+      },
+      {
+        "entity": "Denmark",
+        "page": 40,
+        "role_in_text": "country with strong higher education programs in quantum field",
+        "occurrence_sentence": "Denmark has strong higher education programs with relevance to the quantum field in particular within physics, chemistry, nanoscience, photonics, mathematics and computer science, but with intensified international competition for the best talents to research and develop quantum technology, there is a need to future-proof the talent base in Denmark by developing, attracting and retaining talent and skills.",
+        "source_document": "Luis_Denmark23.pdf"
+      },
+      {
+        "entity": "Denmark",
+        "page": 42,
+        "role_in_text": "Policy, geopolitical, funding, strategic, or ecosystem actor",
+        "occurrence_sentence": "Development, use of and protection against quantum technology in Denmark therefore requires that Danish authorities work to strengthen Denmark's critical digital infrastructure against the potential threats that result from quantum technology.",
+        "source_document": "Luis_Denmark23.pdf"
+      },
+      {
+        "entity": "Denmark",
+        "page": 42,
+        "role_in_text": "Policy, geopolitical, funding, strategic, or ecosystem actor",
+        "occurrence_sentence": "Denmark must be a safe, open and flexible country when it comes to developing quantum technology, where technological development and commercialisation is based on a secure foundation in close cooperation with like-minded international",
+        "source_document": "Luis_Denmark23.pdf"
+      },
+      {
+        "entity": "Denmark",
+        "page": 44,
+        "role_in_text": "Denmark must engage actively on the international stage.",
+        "occurrence_sentence": "Denmark must engage actively on the international stage.",
+        "source_document": "Luis_Denmark23.pdf"
+      },
+      {
+        "entity": "Denmark",
+        "page": 44,
+        "role_in_text": "Denmark's ability to attract talent and companies.",
+        "occurrence_sentence": "International cooperation must support Denmark's ability to attract talent and companies.",
+        "source_document": "Luis_Denmark23.pdf"
+      },
+      {
+        "entity": "Denmark",
+        "page": 45,
+        "role_in_text": "leading role in the development of quantum technology in Europe",
+        "occurrence_sentence": "Denmark in a leading role in the development of quantum technology in Europe",
+        "source_document": "Luis_Denmark23.pdf"
+      },
+      {
+        "entity": "Denmark",
+        "page": 46,
+        "role_in_text": "strategic actor in quantum technology",
+        "occurrence_sentence": "Denmark in a leading role in the development of quantum technology in Europe",
+        "source_document": "Luis_Denmark23.pdf"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Industry",
+    "sphere": "Single",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "name_heuristic_industry",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "Energinet",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "sub-national government institutions",
+    "role_in_text": "participate in field experiments with quantum communication",
+    "technology_area": "quantum communication",
+    "occurrence_sentence": "Danske Bank and Energinet – participate in field experiments with quantum communication",
+    "source_document": "Luis_Denmark23.pdf",
+    "page": 38,
+    "confidence": "high",
+    "canonical_actor_key": "energinet",
+    "aliases": [
+      "Energinet"
+    ],
+    "pages": [
+      38
+    ],
+    "mentions": [
+      {
+        "entity": "Energinet",
+        "page": 38,
+        "role_in_text": "participate in field experiments with quantum communication",
+        "occurrence_sentence": "Danske Bank and Energinet – participate in field experiments with quantum communication",
+        "source_document": "Luis_Denmark23.pdf"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Government",
+    "sphere": "Single",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "EUREKA",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "supranational government institutions",
+    "role_in_text": "cooperation partner",
+    "technology_area": "quantum computing",
+    "occurrence_sentence": "This may, for example, be EU partnerships that require co-financing or bilateral/multilateral calls for proposals, e.g. under EUREKA.",
+    "source_document": "Luis_Denmark23.pdf",
+    "page": 15,
+    "canonical_actor_key": "eureka",
+    "aliases": [
+      "EUREKA"
+    ],
+    "pages": [
+      15,
+      19
+    ],
+    "mentions": [
+      {
+        "entity": "EUREKA",
+        "page": 15,
+        "role_in_text": "cooperation partner",
+        "occurrence_sentence": "This may, for example, be EU partnerships that require co-financing or bilateral/multilateral calls for proposals, e.g. under EUREKA.",
+        "source_document": "Luis_Denmark23.pdf"
+      },
+      {
+        "entity": "EUREKA",
+        "page": 19,
+        "role_in_text": "network organization for countries outside of Europe",
+        "occurrence_sentence": "EUREKA is a network organization for countries outside of Europe, where national research and",
+        "source_document": "Luis_Denmark23.pdf"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Government",
+    "sphere": "Single",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "European Commission",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "supranational government institutions",
+    "role_in_text": "Regulatory and strategic actor in quantum research",
+    "technology_area": "quantum computing | quantum communication | quantum sensing | quantum materials | quantum",
+    "source_document": "Luis_Denmark23.pdf",
+    "page": 18,
+    "canonical_actor_key": "european commission",
+    "aliases": [
+      "European Commission"
+    ],
+    "pages": [
+      18
+    ],
+    "mentions": [
+      {
+        "entity": "European Commission",
+        "page": 18,
+        "role_in_text": "Regulatory and strategic actor in quantum research",
+        "occurrence_sentence": "",
+        "source_document": "Luis_Denmark23.pdf"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Government",
+    "sphere": "Single",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "European Quantum Excellence Center",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "research institutes",
+    "role_in_text": "to attract a European Quantum Excellence Center for quantum software and algorithms",
+    "technology_area": "",
+    "source_document": "Luis_Denmark23.pdf",
+    "page": 23,
+    "canonical_actor_key": "european quantum excellence center",
+    "aliases": [
+      "European Quantum Excellence Center"
+    ],
+    "pages": [
+      23
+    ],
+    "mentions": [
+      {
+        "entity": "European Quantum Excellence Center",
+        "page": 23,
+        "role_in_text": "to attract a European Quantum Excellence Center for quantum software and algorithms",
+        "occurrence_sentence": "",
+        "source_document": "Luis_Denmark23.pdf"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Academia",
+    "sphere": "Single",
+    "r_and_d": "R&D",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "European Space Agency (ESA)",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "supranational government institutions",
+    "role_in_text": "space programs",
+    "technology_area": "quantum sensing",
+    "occurrence_sentence": "Quantum technology is currently being introduced in several of the EU's space programs and the European Space Agency's (ESA's) space programs with a focus on i.a. providing better knowledge about climate change, access to secure communication and improved monitoring of traffic in space.",
+    "source_document": "Luis_Denmark23.pdf",
+    "page": 20,
+    "confidence": "high",
+    "canonical_actor_key": "european space agency",
+    "aliases": [
+      "ESA",
+      "European Space Agency",
+      "European Space Agency (ESA)"
+    ],
+    "pages": [
+      20
+    ],
+    "mentions": [
+      {
+        "entity": "European Space Agency (ESA)",
+        "page": 20,
+        "role_in_text": "space programs",
+        "occurrence_sentence": "Quantum technology is currently being introduced in several of the EU's space programs and the European Space Agency's (ESA's) space programs with a focus on i.a. providing better knowledge about climate change, access to secure communication and improved monitoring of traffic in space.",
+        "source_document": "Luis_Denmark23.pdf"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Government",
+    "sphere": "Single",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "European Union (EU)",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "supranational government institutions",
+    "role_in_text": "Funding and strategic actor in quantum research",
+    "technology_area": "quantum computing | quantum communication | quantum sensing | quantum materials | quantum simulation | quantum cryptography | deep tech general",
+    "occurrence_sentence": "The EU's framework programs for research and innovation have played a major role in Danish quantum research by securing grants for just over DKK 0.5 billion for quantum research during the period 2014-2020.",
+    "source_document": "Luis_Denmark23.pdf",
+    "page": 18,
+    "confidence": "high",
+    "canonical_actor_key": "european union",
+    "aliases": [
+      "EU",
+      "European Union",
+      "European Union (EU)"
+    ],
+    "pages": [
+      15,
+      18,
+      20,
+      34,
+      45
+    ],
+    "mentions": [
+      {
+        "entity": "European Union (EU)",
+        "page": 15,
+        "role_in_text": "cooperation partner",
+        "occurrence_sentence": "The strategic quantum program is to support Danish participation in EU cooperations and in global research and innovation cooperations with like-minded countries along the entire food chain.",
+        "source_document": "Luis_Denmark23.pdf"
+      },
+      {
+        "entity": "European Union (EU)",
+        "page": 18,
+        "role_in_text": "Funding and strategic actor in quantum research",
+        "occurrence_sentence": "The EU's framework programs for research and innovation have played a major role in Danish quantum research by securing grants for just over DKK 0.5 billion for quantum research during the period 2014-2020.",
+        "source_document": "Luis_Denmark23.pdf"
+      },
+      {
+        "entity": "European Union (EU)",
+        "page": 18,
+        "role_in_text": "Funding and strategic actor in quantum research",
+        "occurrence_sentence": "The EU's framework programs for research and innovation have played a major role in Danish quantum research by securing grants for just over DKK 0.5 billion for quantum research during the period 2014-2020.",
+        "source_document": "Luis_Denmark23.pdf"
+      },
+      {
+        "entity": "European Union (EU)",
+        "page": 20,
+        "role_in_text": "space programs",
+        "occurrence_sentence": "Quantum technology is currently being introduced in several of the EU's space programs and the European Space Agency's (ESA",
+        "source_document": "Luis_Denmark23.pdf"
+      },
+      {
+        "entity": "European Union (EU)",
+        "page": 34,
+        "role_in_text": "Increased attention in the EU",
+        "occurrence_sentence": "and the quantum agenda is receiving increased attention in the EU and NATO.",
+        "source_document": "Luis_Denmark23.pdf"
+      },
+      {
+        "entity": "European Union (EU)",
+        "page": 45,
+        "role_in_text": "strategic approach and level of ambition will play a decisive role",
+        "occurrence_sentence": "This calls for solutions across borders in Europe, and thus the EU's strategic approach and level of ambition will play a decisive role in the years ahead.",
+        "source_document": "Luis_Denmark23.pdf"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Government",
+    "sphere": "Single",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "Global Risk Institute",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "research institutes",
+    "role_in_text": "Source of the 2022 Quantum Threat Timeline Report",
+    "technology_area": "quantum computing",
+    "occurrence_sentence": "Source: 2022 Quantum Threat Timeline Report, Global Risk Institute",
+    "source_document": "Luis_Denmark23.pdf",
+    "page": 34,
+    "confidence": "high",
+    "canonical_actor_key": "global risk institute",
+    "aliases": [
+      "Global Risk Institute"
+    ],
+    "pages": [
+      34
+    ],
+    "mentions": [
+      {
+        "entity": "Global Risk Institute",
+        "page": 34,
+        "role_in_text": "Source of the 2022 Quantum Threat Timeline Report",
+        "occurrence_sentence": "Source: 2022 Quantum Threat Timeline Report, Global Risk Institute",
+        "source_document": "Luis_Denmark23.pdf"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Academia",
+    "sphere": "Single",
+    "r_and_d": "R&D",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "Innovation Fund Denmark",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "financial support institutions",
+    "role_in_text": "The government has given Innovation Fund Denmark the task of starting the program, and DKK 150 million have been allocated for disbursement through the program already in 2023.",
+    "technology_area": "quantum computing",
+    "occurrence_sentence": "The government has given Innovation Fund Denmark the task of starting the program, and DKK 150 million have been allocated for disbursement through the program already in 2023.",
+    "source_document": "Luis_Denmark23.pdf",
+    "page": 13,
+    "confidence": "high",
+    "canonical_actor_key": "innovation fund denmark",
+    "aliases": [
+      "Innovation Fund Denmark"
+    ],
+    "pages": [
+      6,
+      13
+    ],
+    "mentions": [
+      {
+        "entity": "Innovation Fund Denmark",
+        "page": 6,
+        "role_in_text": "main contributor",
+        "occurrence_sentence": "The main contributors have been the Danish National Research Foundation, the Innovation Fund Denmark, the Villum Foundation, the Carlsberg Foundation and, increasingly, the Novo Nordisk Foundation.",
+        "source_document": "Luis_Denmark23.pdf"
+      },
+      {
+        "entity": "Innovation Fund Denmark",
+        "page": 13,
+        "role_in_text": "The government has given Innovation Fund Denmark the task of starting the program, and DKK 150 million have been allocated for disbursement through the program already in 2023.",
+        "occurrence_sentence": "The government has given Innovation Fund Denmark the task of starting the program, and DKK 150 million have been allocated for disbursement through the program already in 2023.",
+        "source_document": "Luis_Denmark23.pdf"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Intermediary",
+    "sphere": "Multi",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "Ministry of Foreign Affairs",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "national government institutions",
+    "role_in_text": "participation in the inter-ministerial quantum secretariat",
+    "technology_area": "quantum technology",
+    "occurrence_sentence": "To support",
+    "source_document": "Luis_Denmark23.pdf",
+    "page": 9,
+    "canonical_actor_key": "ministry of foreign affairs",
+    "aliases": [
+      "Ministry of Foreign Affairs"
+    ],
+    "pages": [
+      9
+    ],
+    "mentions": [
+      {
+        "entity": "Ministry of Foreign Affairs",
+        "page": 9,
+        "role_in_text": "participation in the inter-ministerial quantum secretariat",
+        "occurrence_sentence": "To support",
+        "source_document": "Luis_Denmark23.pdf"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Government",
+    "sphere": "Single",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "National Forum for Quantum Technology",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "business support institutions",
+    "role_in_text": "A forum to bring together key players from research institutions, public and private foundations, startups and companies.",
+    "technology_area": "quantum computing",
+    "occurrence_sentence": "Therefore, the government will set up a National Forum for Quantum Technology, which brings together key players from research institutions, public and private foundations, startups and companies, etc.",
+    "source_document": "Luis_Denmark23.pdf",
+    "page": 16,
+    "confidence": "high",
+    "canonical_actor_key": "national forum for quantum technology",
+    "aliases": [
+      "National Forum for Quantum Technology"
+    ],
+    "pages": [
+      16
+    ],
+    "mentions": [
+      {
+        "entity": "National Forum for Quantum Technology",
+        "page": 16,
+        "role_in_text": "A forum to bring together key players from research institutions, public and private foundations, startups and companies.",
+        "occurrence_sentence": "Therefore, the government will set up a National Forum for Quantum Technology, which brings together key players from research institutions, public and private foundations, startups and companies, etc.",
+        "source_document": "Luis_Denmark23.pdf"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Intermediary",
+    "sphere": "Multi",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "Niels Bohr",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "individual",
+    "role_in_text": "Danish physicist who received the Nobel Prize in 1922",
+    "technology_area": "quantum computing",
+    "occurrence_sentence": "Reality may seem wonderful and mysterious when you think about the insight for which the Danish physicist Niels Bohr received the Nobel Prize in 1922.",
+    "source_document": "Luis_Denmark23.pdf",
+    "page": 4,
+    "confidence": "high",
+    "canonical_actor_key": "niels bohr",
+    "aliases": [
+      "Niels Bohr"
+    ],
+    "pages": [
+      4,
+      28
+    ],
+    "mentions": [
+      {
+        "entity": "Niels Bohr",
+        "page": 4,
+        "role_in_text": "Danish physicist who received the Nobel Prize in 1922",
+        "occurrence_sentence": "Reality may seem wonderful and mysterious when you think about the insight for which the Danish physicist Niels Bohr received the Nobel Prize in 1922.",
+        "source_document": "Luis_Denmark23.pdf"
+      },
+      {
+        "entity": "Niels Bohr",
+        "page": 4,
+        "role_in_text": "Danish physicist who received the Nobel Prize in 1922",
+        "occurrence_sentence": "Reality may seem wonderful and mysterious when you think about the insight for which the Danish physicist Niels Bohr received the Nobel Prize in 1922.",
+        "source_document": "Luis_Denmark23.pdf"
+      },
+      {
+        "entity": "Niels Bohr",
+        "page": 28,
+        "role_in_text": "Nobel Prize winner in Physics for work on atomic structure and quantum theory",
+        "occurrence_sentence": "In 1922, Niels Bohr was awarded the Nobel Prize in Physics for his groundbreaking work on atomic structure and quantum theory.",
+        "source_document": "Luis_Denmark23.pdf"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Unknown",
+    "sphere": "Unknown",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "unknown_category",
+    "classification_needs_review": true,
+    "classification_review_reason": "unmapped_category:individual; individual_requires_role_classification"
+  },
+  {
+    "entity": "Police Intelligence Service (PET)",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "national government institutions",
+    "role_in_text": "provide more proactive support to the Danish quantum companies and research institutions",
+    "technology_area": "quantum computing",
+    "occurrence_sentence": "Increased security in the Danish quantum ecosystem, the advisory efforts of the Police Intelligence Service's (PET) will be significantly enhanced.",
+    "source_document": "Luis_Denmark23.pdf",
+    "page": 43,
+    "confidence": "high",
+    "canonical_actor_key": "police intelligence service",
+    "aliases": [
+      "PET",
+      "Police Intelligence Service",
+      "Police Intelligence Service (PET)"
+    ],
+    "pages": [
+      43
+    ],
+    "mentions": [
+      {
+        "entity": "Police Intelligence Service (PET)",
+        "page": 43,
+        "role_in_text": "provide more proactive support to the Danish quantum companies and research institutions",
+        "occurrence_sentence": "Increased security in the Danish quantum ecosystem, the advisory efforts of the Police Intelligence Service's (PET) will be significantly enhanced.",
+        "source_document": "Luis_Denmark23.pdf"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Government",
+    "sphere": "Single",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "Sparrow Quantum",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "small and medium-sized enterprises",
+    "role_in_text": "develops quantum hardware",
+    "technology_area": "quantum computing",
+    "occurrence_sentence": "Sparrow Quantum uses single-photon sources to develop quantum hardware for use in scaling advanced applications in quantum information processing, secure communications, quantum computing and the quantum internet.",
+    "source_document": "Luis_Denmark23.pdf",
+    "page": 33,
+    "confidence": "high",
+    "canonical_actor_key": "sparrow quantum",
+    "aliases": [
+      "Sparrow Quantum"
+    ],
+    "pages": [
+      33
+    ],
+    "mentions": [
+      {
+        "entity": "Sparrow Quantum",
+        "page": 33,
+        "role_in_text": "develops quantum hardware",
+        "occurrence_sentence": "Sparrow Quantum uses single-photon sources to develop quantum hardware for use in scaling advanced applications in quantum information processing, secure communications, quantum computing and the quantum internet.",
+        "source_document": "Luis_Denmark23.pdf"
+      },
+      {
+        "entity": "Sparrow Quantum",
+        "page": 33,
+        "role_in_text": "develops quantum hardware",
+        "occurrence_sentence": "Sparrow Quantum uses single-photon sources to develop quantum hardware for use in scaling advanced applications in quantum information processing, secure communications, quantum computing and the quantum internet.",
+        "source_document": "Luis_Denmark23.pdf"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Industry",
+    "sphere": "Single",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "Technical University of Denmark (DTU)",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "universities",
+    "role_in_text": "existing research institutions",
+    "technology_area": "quantum technology",
+    "occurrence_sentence": "Quantum House Denmark will also support the exchange of knowledge between existing research institutions and stakeholders such as DTU, KU, NATO's Defense Innovation Accelerator for the North Atlantic (DIANA), Danish Quantum Community and others, and act as an important physical framework for the development of the Danish quantum industry consisting of start-ups, established",
+    "source_document": "Luis_Denmark23.pdf",
+    "page": 39,
+    "confidence": "high",
+    "canonical_actor_key": "technical university of denmark",
+    "aliases": [
+      "DTU",
+      "Technical University of Denmark",
+      "Technical University of Denmark (DTU)"
+    ],
+    "pages": [
+      5,
+      26,
+      39
+    ],
+    "mentions": [
+      {
+        "entity": "Technical University of Denmark (DTU)",
+        "page": 5,
+        "role_in_text": "Most of the Danish quantum research is currently taking place at the Technical University of Denmark (DTU)",
+        "occurrence_sentence": "",
+        "source_document": "Luis_Denmark23.pdf"
+      },
+      {
+        "entity": "Technical University of Denmark (DTU)",
+        "page": 26,
+        "role_in_text": "photo credit",
+        "occurrence_sentence": "Page 6 Photo: DTU Nanolab",
+        "source_document": "Luis_Denmark23.pdf"
+      },
+      {
+        "entity": "Technical University of Denmark (DTU)",
+        "page": 39,
+        "role_in_text": "existing research institutions",
+        "occurrence_sentence": "Quantum House Denmark will also support the exchange of knowledge between existing research institutions and stakeholders such as DTU, KU, NATO's Defense Innovation Accelerator for the North Atlantic (DIANA), Danish Quantum Community and others, and act as an important physical framework for the development of the Danish quantum industry consisting of start-ups, established",
+        "source_document": "Luis_Denmark23.pdf"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Academia",
+    "sphere": "Single",
+    "r_and_d": "R&D",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "University of Copenhagen (KU)",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "universities",
+    "role_in_text": "Most of the Danish quantum research is currently taking place at the University of Copenhagen (KU)",
+    "technology_area": "quantum computing",
+    "occurrence_sentence": "Most of the Danish quantum research is currently taking place at the University of Copenhagen (KU), the Technical University of Denmark (DTU) and Aarhus University (AU), but activities are also emerging at the University of Southern Denmark (SDU) and Aalborg University (AAU).",
+    "source_document": "Luis_Denmark23.pdf",
+    "page": 5,
+    "confidence": "high",
+    "canonical_actor_key": "university of copenhagen",
+    "aliases": [
+      "KU",
+      "University of Copenhagen",
+      "University of Copenhagen (KU)"
+    ],
+    "pages": [
+      5,
+      39
+    ],
+    "mentions": [
+      {
+        "entity": "University of Copenhagen (KU)",
+        "page": 5,
+        "role_in_text": "Most of the Danish quantum research is currently taking place at the University of Copenhagen (KU)",
+        "occurrence_sentence": "Most of the Danish quantum research is currently taking place at the University of Copenhagen (KU), the Technical University of Denmark (DTU) and Aarhus University (AU), but activities are also emerging at the University of Southern Denmark (SDU) and Aalborg University (AAU).",
+        "source_document": "Luis_Denmark23.pdf"
+      },
+      {
+        "entity": "University of Copenhagen (KU)",
+        "page": 39,
+        "role_in_text": "existing research institutions",
+        "occurrence_sentence": "Quantum House Denmark will also support the exchange of knowledge",
+        "source_document": "Luis_Denmark23.pdf"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Academia",
+    "sphere": "Single",
+    "r_and_d": "R&D",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "USA",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "country",
+    "role_in_text": "Quantum technology investment and competition",
+    "technology_area": "quantum computing",
+    "occurrence_sentence": "Quantum Research is subject to ever-increasing global competition. This is especially true between the largest players – the USA and China – who, over a number of years, have invested in quantum technology as a matter of security and defense policy with great commercial potential.",
+    "source_document": "Luis_Denmark23.pdf",
+    "page": 17,
+    "confidence": "high",
+    "canonical_actor_key": "usa",
+    "aliases": [
+      "USA"
+    ],
+    "pages": [
+      17
+    ],
+    "mentions": [
+      {
+        "entity": "USA",
+        "page": 17,
+        "role_in_text": "Quantum technology investment and competition",
+        "occurrence_sentence": "Quantum Research is subject to ever-increasing global competition. This is especially true between the largest players – the USA and China – who, over a number of years, have invested in quantum technology as a matter of security and defense policy with great commercial potential.",
+        "source_document": "Luis_Denmark23.pdf"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Industry",
+    "sphere": "Single",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "name_heuristic_industry",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "Zybersafe",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "small and medium-sized enterprises",
+    "role_in_text": "participates in a field trial with quantum key distribution (QKD)",
+    "technology_area": "quantum cryptography",
+    "occurrence_sentence": "Zybersafe is participating in a field trial with quantum key distribution (QKD), and Cryptomathic and Dencrypt deliver products that support cyber",
+    "source_document": "Luis_Denmark23.pdf",
+    "page": 33,
+    "canonical_actor_key": "zybersafe",
+    "aliases": [
+      "Zybersafe"
+    ],
+    "pages": [
+      33
+    ],
+    "mentions": [
+      {
+        "entity": "Zybersafe",
+        "page": 33,
+        "role_in_text": "participates in a field trial with quantum key distribution (QKD)",
+        "occurrence_sentence": "Zybersafe is participating in a field trial with quantum key distribution (QKD), and Cryptomathic and Dencrypt deliver products that support cyber",
+        "source_document": "Luis_Denmark23.pdf"
+      },
+      {
+        "entity": "Zybersafe",
+        "page": 33,
+        "role_in_text": "participating in a field trial with quantum key distribution (QKD)",
+        "occurrence_sentence": "Zybersafe is participating in a field trial with quantum key distribution (QKD), and Cryptomathic and Dencrypt deliver products that support cyber",
+        "source_document": "Luis_Denmark23.pdf"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Industry",
+    "sphere": "Single",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  }
+]

@@ -347,3 +347,112 @@ pdf_pipeline.py Austria24.pdf
 RUN FINISHED 2026-05-31 00:53:17  (OK)
 Elapsed:     10s
 ========================================================================
+
+========================================================================
+RUN STARTED  2026-06-16 01:41:31
+pdf_pipeline.py Austria24.pdf
+========================================================================
+
+[01:41:31 +0s | Austria24] === 1 actor extraction ===
+[01:41:31 +1s | Austria24] Auto-resume: 32 (source, page) pairs already done, skipping them.
+[01:41:31 +1s | Austria24] Reading PDF: Austria24.pdf
+[01:41:32 +1s | Austria24] All 32 pages/URLs already processed (per 1_actor_results.progress.json). Nothing to do.
+[01:41:32 +1s | Austria24] Delete the progress sidecar to force a full re-run, or pass --start-page N.
+[01:41:32 +1s | Austria24] Saved 1_actor_results.json with 92 clean actors
+
+[01:41:32 +1s | Austria24] === 2 clean actors ===
+[01:41:32 +1s | Austria24] Loaded 92 extracted records
+[01:41:32 +1s | Austria24] Saved 2_actor_nodes.json with 37 canonical actor nodes
+
+[01:41:32 +1s | Austria24] === 3 interaction extraction ===
+[01:41:32 +2s | Austria24] Processing interactions for: Austria24.pdf
+[01:41:32 +2s | Austria24] Extracting interactions: Austria24.pdf, page 1/32, chunk 1/1
+[01:41:35 +5s | Austria24] Extracting interactions: Austria24.pdf, page 2/32, chunk 1/1
+[01:41:39 +9s | Austria24] Extracting interactions: Austria24.pdf, page 3/32, chunk 1/1
+[01:41:42 +11s | Austria24] Extracting interactions: Austria24.pdf, page 4/32, chunk 1/1
+
+========================================================================
+RUN FINISHED 2026-06-16 01:41:50  (INTERRUPTED)
+Started:     2026-06-16 01:41:31
+Elapsed:     19s
+========================================================================
+
+========================================================================
+RUN STARTED  2026-06-16 01:41:53
+pdf_pipeline.py Austria24.pdf
+========================================================================
+
+[01:41:53 +0s | Austria24] === 1 actor extraction ===
+[01:41:54 +0s | Austria24] Auto-resume: 32 (source, page) pairs already done, skipping them.
+[01:41:54 +0s | Austria24] Reading PDF: Austria24.pdf
+[01:41:54 +1s | Austria24] All 32 pages/URLs already processed (per 1_actor_results.progress.json). Nothing to do.
+[01:41:54 +1s | Austria24] Delete the progress sidecar to force a full re-run, or pass --start-page N.
+[01:41:54 +1s | Austria24] Saved 1_actor_results.json with 92 clean actors
+
+[01:41:54 +1s | Austria24] === 2 clean actors ===
+[01:41:54 +1s | Austria24] Loaded 92 extracted records
+[01:41:54 +1s | Austria24] Saved 2_actor_nodes.json with 37 canonical actor nodes
+
+[01:41:54 +1s | Austria24] === 3 interaction extraction ===
+[01:41:54 +1s | Austria24] Auto-resume: 3 (source, page) pairs already done, skipping them.
+[01:41:54 +1s | Austria24] Processing interactions for: Austria24.pdf
+[01:41:55 +1s | Austria24] Skipping interactions: Austria24.pdf, page 1/32 (already done)
+[01:41:55 +1s | Austria24] Skipping interactions: Austria24.pdf, page 2/32 (already done)
+[01:41:55 +1s | Austria24] Skipping interactions: Austria24.pdf, page 3/32 (already done)
+[01:41:55 +1s | Austria24] Extracting interactions: Austria24.pdf, page 4/32, chunk 1/1
+[01:42:10 +17s | Austria24] Extracting interactions: Austria24.pdf, page 5/32, chunk 1/1
+[01:42:23 +28s | Austria24] Extracting interactions: Austria24.pdf, page 6/32, chunk 1/1
+[01:42:27 +31s | Austria24] Extracting interactions: Austria24.pdf, page 7/32, chunk 1/1
+[01:42:36 +41s | Austria24] Extracting interactions: Austria24.pdf, page 8/32, chunk 1/1
+[01:42:58 +1m 0s | Austria24] Extracting interactions: Austria24.pdf, page 9/32, chunk 1/1
+[01:43:38 +1m 38s | Austria24] Extracting interactions: Austria24.pdf, page 10/32, chunk 1/1
+[01:44:05 +2m 2s | Austria24] Extracting interactions: Austria24.pdf, page 11/32, chunk 1/1
+[01:44:28 +2m 26s | Austria24] Extracting interactions: Austria24.pdf, page 12/32, chunk 1/1
+[01:45:07 +3m 1s | Austria24] Extracting interactions: Austria24.pdf, page 13/32, chunk 1/1
+[01:45:23 +3m 16s | Austria24] Extracting interactions: Austria24.pdf, page 14/32, chunk 1/2
+[01:45:32 +3m 25s | Austria24] Extracting interactions: Austria24.pdf, page 14/32, chunk 2/2
+[01:45:43 +3m 34s | Austria24] Extracting interactions: Austria24.pdf, page 15/32, chunk 1/2
+[01:45:51 +3m 42s | Austria24] Extracting interactions: Austria24.pdf, page 15/32, chunk 2/2
+[01:46:26 +4m 15s | Austria24] Extracting interactions: Austria24.pdf, page 16/32, chunk 1/1
+[01:46:35 +4m 24s | Austria24] Extracting interactions: Austria24.pdf, page 17/32, chunk 1/1
+[01:46:57 +4m 44s | Austria24] Extracting interactions: Austria24.pdf, page 18/32, chunk 1/2
+[01:47:02 +4m 49s | Austria24] Extracting interactions: Austria24.pdf, page 18/32, chunk 2/2
+[01:47:29 +5m 14s | Austria24] Extracting interactions: Austria24.pdf, page 19/32, chunk 1/1
+[01:47:55 +5m 39s | Austria24] Extracting interactions: Austria24.pdf, page 20/32, chunk 1/1
+[01:48:04 +5m 49s | Austria24] Extracting interactions: Austria24.pdf, page 21/32, chunk 1/1
+[01:48:36 +6m 19s | Austria24] Extracting interactions: Austria24.pdf, page 22/32, chunk 1/1
+[01:48:44 +6m 27s | Austria24] Extracting interactions: Austria24.pdf, page 23/32, chunk 1/2
+[01:48:50 +6m 33s | Austria24] Extracting interactions: Austria24.pdf, page 23/32, chunk 2/2
+[01:48:57 +6m 40s | Austria24] Extracting interactions: Austria24.pdf, page 24/32, chunk 1/1
+[01:49:20 +7m 1s | Austria24] Extracting interactions: Austria24.pdf, page 25/32, chunk 2/2
+[01:49:24 +7m 5s | Austria24] Extracting interactions: Austria24.pdf, page 26/32, chunk 1/1
+[01:49:28 +7m 9s | Austria24] Extracting interactions: Austria24.pdf, page 27/32, chunk 1/1
+[01:49:41 +7m 21s | Austria24] Extracting interactions: Austria24.pdf, page 28/32, chunk 1/1
+[01:50:16 +7m 53s | Austria24] Extracting interactions: Austria24.pdf, page 29/32, chunk 1/1
+[01:50:29 +8m 7s | Austria24] Extracting interactions: Austria24.pdf, page 30/32, chunk 1/2
+[01:50:37 +8m 15s | Austria24] Extracting interactions: Austria24.pdf, page 30/32, chunk 2/2
+[01:50:53 +8m 30s | Austria24] Extracting interactions: Austria24.pdf, page 32/32, chunk 1/1
+[01:50:56 +8m 33s | Austria24] Saved 3_interaction_results.json with 151 extracted interactions.
+
+[01:50:56 +8m 33s | Austria24] === 4 clean interactions ===
+[01:50:56 +8m 33s | Austria24] Saved 4_edges.json with 33 cleaned interactions.
+
+[01:50:56 +8m 33s | Austria24] === 5 helix enrichment ===
+[01:50:56 +8m 33s | Austria24] Wrote 5_nodes.json (37 actors)
+[01:50:56 +8m 33s | Austria24] Wrote 5_edges.json (33 interactions)
+[01:50:56 +8m 33s | Austria24] Actor helix counts: {'Academia': 12, 'Government': 9, 'Industry': 7, 'Intermediary': 3, 'Unknown': 6}
+[01:50:56 +8m 33s | Austria24] Functional-space counts: {'Consensus': 3, 'Innovation': 2, 'Intra-helix / Not classified': 12, 'Knowledge': 7, 'Unknown': 9}
+
+[01:50:56 +8m 33s | Austria24] === 6 network visualisation ===
+[01:50:57 +8m 33s | Austria24] Wrote quantum_network.html
+[01:50:57 +8m 33s | Austria24] Nodes: 37
+[01:50:57 +8m 33s | Austria24] Edges: 23
+
+[01:50:57 +8m 33s | Austria24] Done. Outputs written to: /home/lv/IDP/idpdeeptech/pipeline/pdf_outputs/Austria24
+[01:50:57 +8m 33s | Austria24] Log: /home/lv/IDP/idpdeeptech/pipeline/pdf_outputs/Austria24/run.log
+
+========================================================================
+RUN FINISHED 2026-06-16 01:50:57  (OK)
+Started:     2026-06-16 01:41:53
+Elapsed:     8m 33s
+========================================================================

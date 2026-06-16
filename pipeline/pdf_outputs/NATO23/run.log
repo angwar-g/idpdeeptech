@@ -1,0 +1,87 @@
+
+========================================================================
+RUN STARTED  2026-06-16 03:16:28
+pdf_pipeline.py NATO23.pdf
+========================================================================
+
+[03:16:28 +0s | NATO23] === 1 actor extraction ===
+[03:16:28 +0s | NATO23] Reading PDF: NATO23.pdf
+[03:16:28 +0s | NATO23] Extracting: NATO23.pdf, page 1/24, chunk 1/1
+[03:16:33 +5s | NATO23] Extracting: NATO23.pdf, page 2/24, chunk 1/1
+[03:16:34 +6s | NATO23] Extracting: NATO23.pdf, page 3/24, chunk 1/1
+[03:16:42 +14s | NATO23] Repaired malformed JSON.
+[03:16:42 +14s | NATO23] Extracting: NATO23.pdf, page 4/24, chunk 1/1
+[03:16:51 +23s | NATO23] Extracting: NATO23.pdf, page 5/24, chunk 1/1
+[03:16:59 +28s | NATO23] Repaired malformed JSON.
+[03:16:59 +28s | NATO23] Extracting: NATO23.pdf, page 7/24, chunk 1/1
+[03:17:07 +36s | NATO23] Repaired malformed JSON.
+[03:17:07 +36s | NATO23] Extracting: NATO23.pdf, page 8/24, chunk 1/1
+[03:17:13 +42s | NATO23] Repaired malformed JSON.
+[03:17:13 +42s | NATO23] Extracting: NATO23.pdf, page 9/24, chunk 1/2
+[03:17:18 +47s | NATO23] Repaired malformed JSON.
+[03:17:18 +47s | NATO23] Extracting: NATO23.pdf, page 9/24, chunk 2/2
+[03:17:26 +55s | NATO23] Repaired malformed JSON.
+[03:17:26 +55s | NATO23] Extracting: NATO23.pdf, page 10/24, chunk 1/1
+[03:17:35 +1m 1s | NATO23] Repaired malformed JSON.
+[03:17:35 +1m 1s | NATO23] Extracting: NATO23.pdf, page 11/24, chunk 1/1
+[03:17:41 +1m 7s | NATO23] Repaired malformed JSON.
+[03:17:41 +1m 7s | NATO23] Extracting: NATO23.pdf, page 12/24, chunk 1/1
+[03:17:42 +1m 8s | NATO23] Extracting: NATO23.pdf, page 13/24, chunk 1/1
+[03:17:46 +1m 12s | NATO23] Extracting: NATO23.pdf, page 14/24, chunk 1/1
+[03:17:53 +1m 19s | NATO23] Repaired malformed JSON.
+[03:17:53 +1m 19s | NATO23] Extracting: NATO23.pdf, page 15/24, chunk 1/1
+[03:17:58 +1m 24s | NATO23] Repaired malformed JSON.
+[03:17:58 +1m 24s | NATO23] Extracting: NATO23.pdf, page 16/24, chunk 1/1
+[03:17:59 +1m 25s | NATO23] Extracting: NATO23.pdf, page 17/24, chunk 1/1
+[03:18:03 +1m 29s | NATO23] Extracting: NATO23.pdf, page 18/24, chunk 1/1
+[03:18:12 +1m 35s | NATO23] Repaired malformed JSON.
+[03:18:12 +1m 35s | NATO23] Extracting: NATO23.pdf, page 19/24, chunk 1/1
+[03:18:20 +1m 43s | NATO23] Repaired malformed JSON.
+[03:18:20 +1m 43s | NATO23] Extracting: NATO23.pdf, page 20/24, chunk 1/1
+[03:18:25 +1m 48s | NATO23] Repaired malformed JSON.
+[03:18:25 +1m 48s | NATO23] Extracting: NATO23.pdf, page 21/24, chunk 1/1
+[03:18:32 +1m 56s | NATO23] Repaired malformed JSON.
+[03:18:32 +1m 56s | NATO23] Extracting: NATO23.pdf, page 22/24, chunk 1/1
+[03:18:42 +2m 2s | NATO23] Repaired malformed JSON.
+[03:18:42 +2m 2s | NATO23] Extracting: NATO23.pdf, page 23/24, chunk 1/1
+[03:18:50 +2m 10s | NATO23] Repaired malformed JSON.
+[03:18:50 +2m 10s | NATO23] Extracting: NATO23.pdf, page 24/24, chunk 1/1
+[03:18:51 +2m 12s | NATO23] Saved 1_actor_results.json with 37 clean actors
+
+[03:18:51 +2m 12s | NATO23] === 2 clean actors ===
+[03:18:51 +2m 12s | NATO23] Loaded 37 extracted records
+[03:18:51 +2m 12s | NATO23] Saved 2_actor_nodes.json with 18 canonical actor nodes
+
+[03:18:51 +2m 12s | NATO23] === 3 interaction extraction ===
+[03:18:52 +2m 12s | NATO23] Processing interactions for: NATO23.pdf
+[03:18:52 +2m 12s | NATO23] Extracting interactions: NATO23.pdf, page 3/24, chunk 1/1
+[03:18:55 +2m 15s | NATO23] Extracting interactions: NATO23.pdf, page 9/24, chunk 1/2
+[03:19:02 +2m 22s | NATO23] Extracting interactions: NATO23.pdf, page 9/24, chunk 2/2
+[03:19:08 +2m 28s | NATO23] Extracting interactions: NATO23.pdf, page 11/24, chunk 1/1
+[03:19:11 +2m 31s | NATO23] Extracting interactions: NATO23.pdf, page 19/24, chunk 1/1
+[03:19:22 +2m 39s | NATO23] Extracting interactions: NATO23.pdf, page 21/24, chunk 1/1
+[03:19:33 +2m 50s | NATO23] Extracting interactions: NATO23.pdf, page 22/24, chunk 1/1
+[03:19:40 +2m 57s | NATO23] Saved 3_interaction_results.json with 9 extracted interactions.
+
+[03:19:40 +2m 57s | NATO23] === 4 clean interactions ===
+[03:19:40 +2m 57s | NATO23] Saved 4_edges.json with 1 cleaned interactions.
+
+[03:19:40 +2m 57s | NATO23] === 5 helix enrichment ===
+[03:19:40 +2m 57s | NATO23] Wrote 5_nodes.json (18 actors)
+[03:19:40 +2m 57s | NATO23] Wrote 5_edges.json (1 interactions)
+[03:19:40 +2m 57s | NATO23] Actor helix counts: {'Academia': 14, 'Government': 3, 'Unknown': 1}
+[03:19:40 +2m 57s | NATO23] Functional-space counts: {'Intra-helix / Not classified': 1}
+
+[03:19:40 +2m 57s | NATO23] === 6 network visualisation ===
+[03:19:40 +2m 58s | NATO23] Wrote quantum_network.html
+[03:19:40 +2m 58s | NATO23] Nodes: 18
+[03:19:40 +2m 58s | NATO23] Edges: 1
+
+[03:19:40 +2m 58s | NATO23] Done. Outputs written to: /home/lv/IDP/idpdeeptech/pipeline/pdf_outputs/NATO23
+[03:19:40 +2m 58s | NATO23] Log: /home/lv/IDP/idpdeeptech/pipeline/pdf_outputs/NATO23/run.log
+
+========================================================================
+RUN FINISHED 2026-06-16 03:19:40  (OK)
+Started:     2026-06-16 03:16:28
+Elapsed:     2m 58s
+========================================================================

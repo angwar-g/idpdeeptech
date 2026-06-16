@@ -1,0 +1,64 @@
+
+========================================================================
+RUN STARTED  2026-06-16 03:30:18
+pdf_pipeline.py Taiwan25.pdf
+========================================================================
+
+[03:30:18 +0s | Taiwan25] === 1 actor extraction ===
+[03:30:18 +0s | Taiwan25] Reading PDF: Taiwan25.pdf
+[03:30:19 +0s | Taiwan25] Extracting: Taiwan25.pdf, page 1/11, chunk 1/1
+[03:30:27 +6s | Taiwan25] Repaired malformed JSON.
+[03:30:27 +6s | Taiwan25] Extracting: Taiwan25.pdf, page 2/11, chunk 1/1
+[03:30:32 +11s | Taiwan25] Extracting: Taiwan25.pdf, page 3/11, chunk 1/1
+[03:30:40 +19s | Taiwan25] Repaired malformed JSON.
+[03:30:40 +19s | Taiwan25] Extracting: Taiwan25.pdf, page 4/11, chunk 1/1
+[03:30:46 +25s | Taiwan25] Repaired malformed JSON.
+[03:30:46 +25s | Taiwan25] Extracting: Taiwan25.pdf, page 5/11, chunk 1/1
+[03:30:51 +30s | Taiwan25] Repaired malformed JSON.
+[03:30:51 +30s | Taiwan25] Extracting: Taiwan25.pdf, page 6/11, chunk 1/1
+[03:31:02 +37s | Taiwan25] Repaired malformed JSON.
+[03:31:02 +37s | Taiwan25] Extracting: Taiwan25.pdf, page 7/11, chunk 1/1
+[03:31:10 +45s | Taiwan25] Repaired malformed JSON.
+[03:31:10 +45s | Taiwan25] Extracting: Taiwan25.pdf, page 8/11, chunk 1/1
+[03:31:13 +49s | Taiwan25] Extracting: Taiwan25.pdf, page 9/11, chunk 1/1
+[03:31:19 +55s | Taiwan25] Extracting: Taiwan25.pdf, page 10/11, chunk 1/1
+[03:31:25 +1m 1s | Taiwan25] Repaired malformed JSON.
+[03:31:25 +1m 1s | Taiwan25] Extracting: Taiwan25.pdf, page 11/11, chunk 1/1
+[03:31:29 +1m 4s | Taiwan25] Saved 1_actor_results.json with 19 clean actors
+
+[03:31:29 +1m 5s | Taiwan25] === 2 clean actors ===
+[03:31:29 +1m 5s | Taiwan25] Loaded 19 extracted records
+[03:31:29 +1m 5s | Taiwan25] Saved 2_actor_nodes.json with 12 canonical actor nodes
+
+[03:31:29 +1m 5s | Taiwan25] === 3 interaction extraction ===
+[03:31:29 +1m 5s | Taiwan25] Processing interactions for: Taiwan25.pdf
+[03:31:29 +1m 5s | Taiwan25] Extracting interactions: Taiwan25.pdf, page 1/11, chunk 1/1
+[03:31:37 +1m 10s | Taiwan25] Extracting interactions: Taiwan25.pdf, page 3/11, chunk 1/1
+[03:31:43 +1m 16s | Taiwan25] Extracting interactions: Taiwan25.pdf, page 4/11, chunk 1/1
+[03:31:49 +1m 22s | Taiwan25] Extracting interactions: Taiwan25.pdf, page 5/11, chunk 1/1
+[03:31:55 +1m 28s | Taiwan25] Extracting interactions: Taiwan25.pdf, page 6/11, chunk 1/1
+[03:32:00 +1m 33s | Taiwan25] Extracting interactions: Taiwan25.pdf, page 7/11, chunk 1/1
+[03:32:05 +1m 38s | Taiwan25] Saved 3_interaction_results.json with 8 extracted interactions.
+
+[03:32:05 +1m 38s | Taiwan25] === 4 clean interactions ===
+[03:32:05 +1m 38s | Taiwan25] Saved 4_edges.json with 2 cleaned interactions.
+
+[03:32:05 +1m 38s | Taiwan25] === 5 helix enrichment ===
+[03:32:05 +1m 38s | Taiwan25] Wrote 5_nodes.json (12 actors)
+[03:32:05 +1m 38s | Taiwan25] Wrote 5_edges.json (2 interactions)
+[03:32:05 +1m 38s | Taiwan25] Actor helix counts: {'Academia': 5, 'Civil Society': 1, 'Government': 1, 'Industry': 3, 'Unknown': 2}
+[03:32:05 +1m 38s | Taiwan25] Functional-space counts: {'Innovation': 1, 'Intra-helix / Not classified': 1}
+
+[03:32:05 +1m 38s | Taiwan25] === 6 network visualisation ===
+[03:32:06 +1m 39s | Taiwan25] Wrote quantum_network.html
+[03:32:06 +1m 39s | Taiwan25] Nodes: 12
+[03:32:06 +1m 39s | Taiwan25] Edges: 2
+
+[03:32:06 +1m 39s | Taiwan25] Done. Outputs written to: /home/lv/IDP/idpdeeptech/pipeline/pdf_outputs/Taiwan25
+[03:32:06 +1m 39s | Taiwan25] Log: /home/lv/IDP/idpdeeptech/pipeline/pdf_outputs/Taiwan25/run.log
+
+========================================================================
+RUN FINISHED 2026-06-16 03:32:06  (OK)
+Started:     2026-06-16 03:30:18
+Elapsed:     1m 39s
+========================================================================

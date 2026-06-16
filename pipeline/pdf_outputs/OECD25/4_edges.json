@@ -1,0 +1,102 @@
+[
+  {
+    "interaction_phrase": "led by members of the Parliament",
+    "occurrence_sentence": "The Forteza report was commissioned by the French Prime Minister and led by members of the Parliament.",
+    "page": 13,
+    "source_actor": "French Prime Minister",
+    "source_document": "OECD25.pdf",
+    "target_actor": "Parliament",
+    "relation_label": "collaborative_leadership",
+    "relation_label_confidence": "high"
+  },
+  {
+    "interaction_phrase": "have organised several workshops",
+    "occurrence_sentence": "Since 2014, the National Science Foundation and the Department of Energy have organised several workshops on specific topics on quantum technologies, inviting academia, industry and policymakers.",
+    "page": 13,
+    "source_actor": "National Science Foundation",
+    "source_document": "OECD25.pdf",
+    "target_actor": "Department of Energy",
+    "relation_label": "collaborative_leadership",
+    "relation_label_confidence": "high"
+  },
+  {
+    "source_actor": "OECD",
+    "target_actor": "European Union (EU)",
+    "interaction_phrase": "OECD Fundstat infrastructure provides a decentralised database and a set of analytical",
+    "occurrence_sentence": "However, the OECD Fundstat infrastructure provides a decentralised database and a set of analytical tools capable of estimating quantum-specific R&D funding allocations at a project level for 19 OECD Member countries and the EU-EC programme, representing a weighted average percentage of 58% of total Government Budget Allocations for R&D (GBARD) in 2021.",
+    "source_document": "OECD25.pdf",
+    "page": 16,
+    "relation_label": "technology_transfer",
+    "relation_label_confidence": "high"
+  },
+  {
+    "interaction_phrase": "partnered with",
+    "occurrence_sentence": "For instance, one of the KPIs used by the United Kingdom for its national strategy is the number of countries that universities in the United Kingdom have partnered with.",
+    "page": 18,
+    "source_actor": "United Kingdom",
+    "source_document": "OECD25.pdf",
+    "target_actor": "universities",
+    "relation_label": "networking",
+    "relation_label_confidence": "high"
+  },
+  {
+    "interaction_phrase": "has allocated around USD 40 million from 2012‑2027 to establish and support",
+    "occurrence_sentence": "The Danish National Research Foundation has allocated around USD 40 million from 2012‑2027 to establish and support three Quantum Research Centres of Excellence.",
+    "page": 23,
+    "source_actor": "Danish National Research Foundation",
+    "source_document": "OECD25.pdf",
+    "target_actor": "Quantum Research Centres of Excellence",
+    "relation_label": "collaborative_leadership",
+    "relation_label_confidence": "high"
+  },
+  {
+    "interaction_phrase": "supported the Dodd-Walls Center",
+    "occurrence_sentence": "For instance, New Zealand's Tertiary Education Commission has supported the Dodd-Walls Center with around USD 45 million between 2021 and 2028 to weave international partnerships and strengthen domestic expertise in photonic and quantum technologies.",
+    "page": 25,
+    "source_actor": "New Zealand's Tertiary Education Commission",
+    "source_document": "OECD25.pdf",
+    "target_actor": "Dodd-Walls Center",
+    "relation_label": "networking",
+    "relation_label_confidence": "high"
+  },
+  {
+    "source_actor": "University of Twente",
+    "target_actor": "Centre for Quantum Nanotechnology Twente",
+    "interaction_phrase": "was established in 2020 at the University of Twente",
+    "occurrence_sentence": "More recently, the Centre for Quantum Nanotechnology Twente was established in 2020 at the University of Twente, specialising in quantum photonics and materials research.",
+    "source_document": "OECD25.pdf",
+    "page": 28,
+    "relation_label": "collaborative_leadership",
+    "relation_label_confidence": "high"
+  },
+  {
+    "source_actor": "European Union",
+    "target_actor": "France",
+    "interaction_phrase": "host and operate six quantum computers across multiple European sites",
+    "occurrence_sentence": "Quantum Spain, France's Hybrid HPC-quantum programme and other European initiatives have also received support from the European Union's EuroHPC Joint Undertaking (European Commission, DG CONNECT, 2021-ongoing), which has allocated USD 106 million to host and operate six quantum computers across multiple European sites.",
+    "source_document": "OECD25.pdf",
+    "page": 28,
+    "relation_label": "collaborative_leadership",
+    "relation_label_confidence": "high"
+  },
+  {
+    "interaction_phrase": "collaboration between government, academia and the private sector",
+    "occurrence_sentence": "The Israel Innovation Authority introduced a Quantum Technologies Consortium (2023-2026) supported with around USD 35 million to develop two quantum processor technologies (trapped ions and superconductors) alongside quantum software development. The consortium structure encourages active collaboration between government, academia and the private sector to foster innovative solutions in quantum technology.",
+    "page": 35,
+    "source_actor": "Israel Innovation Authority",
+    "source_document": "OECD25.pdf",
+    "target_actor": "universities",
+    "relation_label": "networking",
+    "relation_label_confidence": "medium"
+  },
+  {
+    "interaction_phrase": "acquired a database on government funding announcements in quantum technologies from",
+    "occurrence_sentence": "The database was developed in two main stages. First, the OECD Secretariat acquired a database on government funding announcements in quantum technologies from The Quantum Insider (https://thequantuminsider.com/), a market intelligence company.",
+    "page": 42,
+    "source_actor": "OECD Secretariat",
+    "source_document": "OECD25.pdf",
+    "target_actor": "Quantum Insider",
+    "relation_label": "technology_transfer",
+    "relation_label_confidence": "high"
+  }
+]

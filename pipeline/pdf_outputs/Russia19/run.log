@@ -1,0 +1,64 @@
+
+========================================================================
+RUN STARTED  2026-06-16 03:21:49
+pdf_pipeline.py Russia19.pdf
+========================================================================
+
+[03:21:49 +0s | Russia19] === 1 actor extraction ===
+[03:21:49 +0s | Russia19] Reading PDF: Russia19.pdf
+[03:21:49 +0s | Russia19] Extracting: Russia19.pdf, page 1/8, chunk 1/1
+[03:21:57 +8s | Russia19] Repaired malformed JSON.
+[03:21:57 +8s | Russia19] Extracting: Russia19.pdf, page 2/8, chunk 1/1
+[03:22:02 +14s | Russia19] Repaired malformed JSON.
+[03:22:02 +14s | Russia19] Extracting: Russia19.pdf, page 3/8, chunk 1/1
+[03:22:13 +21s | Russia19] Repaired malformed JSON.
+[03:22:13 +21s | Russia19] Extracting: Russia19.pdf, page 4/8, chunk 1/1
+[03:22:21 +29s | Russia19] Repaired malformed JSON.
+[03:22:21 +29s | Russia19] Extracting: Russia19.pdf, page 5/8, chunk 1/1
+[03:22:27 +35s | Russia19] Repaired malformed JSON.
+[03:22:27 +35s | Russia19] Extracting: Russia19.pdf, page 6/8, chunk 1/1
+[03:22:34 +42s | Russia19] Repaired malformed JSON.
+[03:22:34 +42s | Russia19] Extracting: Russia19.pdf, page 7/8, chunk 1/1
+[03:22:39 +47s | Russia19] Repaired malformed JSON.
+[03:22:39 +47s | Russia19] Extracting: Russia19.pdf, page 8/8, chunk 1/1
+[03:22:51 +56s | Russia19] Repaired malformed JSON.
+[03:22:51 +56s | Russia19] Saved 1_actor_results.json with 16 clean actors
+
+[03:22:51 +57s | Russia19] === 2 clean actors ===
+[03:22:51 +57s | Russia19] Loaded 16 extracted records
+[03:22:51 +57s | Russia19] Saved 2_actor_nodes.json with 10 canonical actor nodes
+
+[03:22:51 +57s | Russia19] === 3 interaction extraction ===
+[03:22:51 +57s | Russia19] Processing interactions for: Russia19.pdf
+[03:22:51 +57s | Russia19] Extracting interactions: Russia19.pdf, page 1/8, chunk 1/1
+[03:22:56 +1m 1s | Russia19] Extracting interactions: Russia19.pdf, page 2/8, chunk 1/1
+[03:23:16 +1m 22s | Russia19] Extracting interactions: Russia19.pdf, page 3/8, chunk 1/1
+[03:23:28 +1m 30s | Russia19] Extracting interactions: Russia19.pdf, page 4/8, chunk 1/1
+[03:23:35 +1m 38s | Russia19] Extracting interactions: Russia19.pdf, page 5/8, chunk 1/1
+[03:24:09 +2m 8s | Russia19] Extracting interactions: Russia19.pdf, page 6/8, chunk 1/1
+[03:24:13 +2m 13s | Russia19] Extracting interactions: Russia19.pdf, page 7/8, chunk 1/1
+[03:24:20 +2m 19s | Russia19] Extracting interactions: Russia19.pdf, page 8/8, chunk 1/1
+[03:24:28 +2m 27s | Russia19] Saved 3_interaction_results.json with 10 extracted interactions.
+
+[03:24:28 +2m 27s | Russia19] === 4 clean interactions ===
+[03:24:28 +2m 27s | Russia19] Saved 4_edges.json with 1 cleaned interactions.
+
+[03:24:28 +2m 27s | Russia19] === 5 helix enrichment ===
+[03:24:28 +2m 27s | Russia19] Wrote 5_nodes.json (10 actors)
+[03:24:28 +2m 27s | Russia19] Wrote 5_edges.json (1 interactions)
+[03:24:28 +2m 27s | Russia19] Actor helix counts: {'Academia': 5, 'Civil Society': 1, 'Industry': 1, 'Intermediary': 2, 'Unknown': 1}
+[03:24:28 +2m 27s | Russia19] Functional-space counts: {'Innovation': 1}
+
+[03:24:28 +2m 27s | Russia19] === 6 network visualisation ===
+[03:24:28 +2m 28s | Russia19] Wrote quantum_network.html
+[03:24:28 +2m 28s | Russia19] Nodes: 10
+[03:24:28 +2m 28s | Russia19] Edges: 1
+
+[03:24:28 +2m 28s | Russia19] Done. Outputs written to: /home/lv/IDP/idpdeeptech/pipeline/pdf_outputs/Russia19
+[03:24:28 +2m 28s | Russia19] Log: /home/lv/IDP/idpdeeptech/pipeline/pdf_outputs/Russia19/run.log
+
+========================================================================
+RUN FINISHED 2026-06-16 03:24:28  (OK)
+Started:     2026-06-16 03:21:49
+Elapsed:     2m 28s
+========================================================================

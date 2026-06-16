@@ -457,3 +457,96 @@ pdf_pipeline.py Bavaria.pdf
 RUN FINISHED 2026-05-31 00:53:18  (OK)
 Elapsed:     11s
 ========================================================================
+
+========================================================================
+RUN STARTED  2026-06-16 01:41:53
+pdf_pipeline.py Bavaria.pdf
+========================================================================
+
+[01:41:53 +0s | Bavaria] === 1 actor extraction ===
+[01:41:54 +0s | Bavaria] Auto-resume: 38 (source, page) pairs already done, skipping them.
+[01:41:54 +0s | Bavaria] Reading PDF: Bavaria.pdf
+[01:41:54 +0s | Bavaria] All 38 pages/URLs already processed (per 1_actor_results.progress.json). Nothing to do.
+[01:41:54 +0s | Bavaria] Delete the progress sidecar to force a full re-run, or pass --start-page N.
+[01:41:54 +0s | Bavaria] Saved 1_actor_results.json with 107 clean actors
+
+[01:41:54 +1s | Bavaria] === 2 clean actors ===
+[01:41:54 +1s | Bavaria] Loaded 107 extracted records
+[01:41:54 +1s | Bavaria] Saved 2_actor_nodes.json with 58 canonical actor nodes
+
+[01:41:54 +1s | Bavaria] === 3 interaction extraction ===
+[01:41:54 +1s | Bavaria] Processing interactions for: Bavaria.pdf
+[01:41:55 +1s | Bavaria] Extracting interactions: Bavaria.pdf, page 1/38, chunk 1/1
+[01:42:00 +7s | Bavaria] Extracting interactions: Bavaria.pdf, page 2/38, chunk 1/1
+[01:42:03 +10s | Bavaria] Extracting interactions: Bavaria.pdf, page 3/38, chunk 1/1
+[01:42:18 +22s | Bavaria] Extracting interactions: Bavaria.pdf, page 4/38, chunk 1/1
+[01:42:25 +29s | Bavaria] Extracting interactions: Bavaria.pdf, page 5/38, chunk 1/1
+[01:42:33 +38s | Bavaria] Extracting interactions: Bavaria.pdf, page 6/38, chunk 1/1
+[01:42:37 +41s | Bavaria] Extracting interactions: Bavaria.pdf, page 7/38, chunk 1/1
+[01:42:48 +50s | Bavaria] Extracting interactions: Bavaria.pdf, page 8/38, chunk 1/1
+[01:42:53 +55s | Bavaria] Extracting interactions: Bavaria.pdf, page 9/38, chunk 1/1
+[01:43:00 +1m 2s | Bavaria] Extracting interactions: Bavaria.pdf, page 10/38, chunk 1/1
+[01:43:04 +1m 7s | Bavaria] Extracting interactions: Bavaria.pdf, page 11/38, chunk 1/2
+[01:43:22 +1m 22s | Bavaria] Extracting interactions: Bavaria.pdf, page 11/38, chunk 2/2
+[01:43:36 +1m 36s | Bavaria] Extracting interactions: Bavaria.pdf, page 12/38, chunk 1/2
+[01:43:45 +1m 45s | Bavaria] Extracting interactions: Bavaria.pdf, page 12/38, chunk 2/2
+[01:43:51 +1m 51s | Bavaria] Extracting interactions: Bavaria.pdf, page 13/38, chunk 1/2
+[01:43:56 +1m 54s | Bavaria] Extracting interactions: Bavaria.pdf, page 13/38, chunk 2/2
+[01:44:02 +2m 0s | Bavaria] Extracting interactions: Bavaria.pdf, page 14/38, chunk 1/1
+[01:44:07 +2m 5s | Bavaria] Extracting interactions: Bavaria.pdf, page 15/38, chunk 1/1
+[01:44:09 +2m 6s | Bavaria] Extracting interactions: Bavaria.pdf, page 16/38, chunk 1/1
+[01:44:17 +2m 15s | Bavaria] Extracting interactions: Bavaria.pdf, page 17/38, chunk 1/1
+[01:44:23 +2m 20s | Bavaria] Extracting interactions: Bavaria.pdf, page 18/38, chunk 1/1
+[01:44:36 +2m 32s | Bavaria] Extracting interactions: Bavaria.pdf, page 19/38, chunk 1/1
+[01:44:37 +2m 33s | Bavaria] Extracting interactions: Bavaria.pdf, page 20/38, chunk 1/2
+[01:44:56 +2m 51s | Bavaria] Extracting interactions: Bavaria.pdf, page 20/38, chunk 2/2
+[01:45:33 +3m 26s | Bavaria] Extracting interactions: Bavaria.pdf, page 21/38, chunk 1/2
+[01:45:40 +3m 31s | Bavaria] Extracting interactions: Bavaria.pdf, page 21/38, chunk 2/2
+[01:46:01 +3m 52s | Bavaria] Extracting interactions: Bavaria.pdf, page 22/38, chunk 1/1
+[01:46:08 +3m 59s | Bavaria] Extracting interactions: Bavaria.pdf, page 23/38, chunk 1/1
+[01:46:34 +4m 23s | Bavaria] Extracting interactions: Bavaria.pdf, page 24/38, chunk 1/1
+[01:46:44 +4m 33s | Bavaria] Extracting interactions: Bavaria.pdf, page 25/38, chunk 1/1
+[01:47:03 +4m 49s | Bavaria] Extracting interactions: Bavaria.pdf, page 26/38, chunk 1/2
+[01:47:15 +5m 2s | Bavaria] Extracting interactions: Bavaria.pdf, page 26/38, chunk 2/2
+[01:47:24 +5m 9s | Bavaria] Extracting interactions: Bavaria.pdf, page 27/38, chunk 1/1
+[01:47:28 +5m 12s | Bavaria] Extracting interactions: Bavaria.pdf, page 28/38, chunk 1/2
+[01:47:30 +5m 14s | Bavaria] Extracting interactions: Bavaria.pdf, page 28/38, chunk 2/2
+[01:47:44 +5m 28s | Bavaria] Extracting interactions: Bavaria.pdf, page 29/38, chunk 1/1
+[01:48:13 +5m 58s | Bavaria] Extracting interactions: Bavaria.pdf, page 30/38, chunk 1/2
+[01:48:18 +6m 3s | Bavaria] Extracting interactions: Bavaria.pdf, page 30/38, chunk 2/2
+[01:48:21 +6m 6s | Bavaria] Extracting interactions: Bavaria.pdf, page 31/38, chunk 1/1
+[01:48:33 +6m 17s | Bavaria] Extracting interactions: Bavaria.pdf, page 32/38, chunk 1/2
+[01:48:41 +6m 25s | Bavaria] Extracting interactions: Bavaria.pdf, page 32/38, chunk 2/2
+[01:48:47 +6m 30s | Bavaria] Extracting interactions: Bavaria.pdf, page 33/38, chunk 1/1
+[01:48:49 +6m 33s | Bavaria] Extracting interactions: Bavaria.pdf, page 34/38, chunk 1/1
+[01:48:54 +6m 37s | Bavaria] Extracting interactions: Bavaria.pdf, page 35/38, chunk 1/2
+[01:48:58 +6m 42s | Bavaria] Extracting interactions: Bavaria.pdf, page 35/38, chunk 2/2
+[01:49:07 +6m 48s | Bavaria] Extracting interactions: Bavaria.pdf, page 36/38, chunk 1/2
+[01:49:10 +6m 51s | Bavaria] Extracting interactions: Bavaria.pdf, page 36/38, chunk 2/2
+[01:49:31 +7m 12s | Bavaria] Extracting interactions: Bavaria.pdf, page 37/38, chunk 1/2
+[01:50:06 +7m 46s | Bavaria] Extracting interactions: Bavaria.pdf, page 37/38, chunk 2/2
+[01:50:25 +8m 3s | Bavaria] Extracting interactions: Bavaria.pdf, page 38/38, chunk 1/1
+[01:50:41 +8m 18s | Bavaria] Saved 3_interaction_results.json with 133 extracted interactions.
+
+[01:50:41 +8m 18s | Bavaria] === 4 clean interactions ===
+[01:50:41 +8m 19s | Bavaria] Saved 4_edges.json with 1 cleaned interactions.
+
+[01:50:41 +8m 19s | Bavaria] === 5 helix enrichment ===
+[01:50:41 +8m 19s | Bavaria] Wrote 5_nodes.json (58 actors)
+[01:50:41 +8m 19s | Bavaria] Wrote 5_edges.json (1 interactions)
+[01:50:41 +8m 19s | Bavaria] Actor helix counts: {'Academia': 26, 'Government': 7, 'Industry': 15, 'Intermediary': 5, 'Unknown': 5}
+[01:50:41 +8m 19s | Bavaria] Functional-space counts: {'Innovation': 1}
+
+[01:50:41 +8m 19s | Bavaria] === 6 network visualisation ===
+[01:50:41 +8m 19s | Bavaria] Wrote quantum_network.html
+[01:50:41 +8m 19s | Bavaria] Nodes: 58
+[01:50:41 +8m 19s | Bavaria] Edges: 1
+
+[01:50:41 +8m 19s | Bavaria] Done. Outputs written to: /home/lv/IDP/idpdeeptech/pipeline/pdf_outputs/Bavaria
+[01:50:41 +8m 19s | Bavaria] Log: /home/lv/IDP/idpdeeptech/pipeline/pdf_outputs/Bavaria/run.log
+
+========================================================================
+RUN FINISHED 2026-06-16 01:50:41  (OK)
+Started:     2026-06-16 01:41:53
+Elapsed:     8m 19s
+========================================================================

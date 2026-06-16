@@ -22,3 +22,79 @@ pdf_pipeline.py GlobalQuantumStrategies26.pdf
 RUN FINISHED 2026-05-31 00:53:29  (INTERRUPTED)
 Elapsed:     2s
 ========================================================================
+
+========================================================================
+RUN STARTED  2026-06-16 01:55:27
+pdf_pipeline.py GlobalQuantumStrategies26.pdf
+========================================================================
+
+[01:55:27 +0s | GlobalQuantumStrategies26] === 1 actor extraction ===
+[01:55:27 +0s | GlobalQuantumStrategies26] Reading PDF: GlobalQuantumStrategies26.pdf
+[01:55:27 +0s | GlobalQuantumStrategies26] Extracting: GlobalQuantumStrategies26.pdf, page 1/12, chunk 1/1
+[01:55:36 +9s | GlobalQuantumStrategies26] Repaired malformed JSON.
+[01:55:36 +9s | GlobalQuantumStrategies26] Extracting: GlobalQuantumStrategies26.pdf, page 2/12, chunk 1/1
+[01:55:41 +14s | GlobalQuantumStrategies26] Repaired malformed JSON.
+[01:55:41 +14s | GlobalQuantumStrategies26] Extracting: GlobalQuantumStrategies26.pdf, page 3/12, chunk 1/1
+[01:55:49 +22s | GlobalQuantumStrategies26] Repaired malformed JSON.
+[01:55:49 +22s | GlobalQuantumStrategies26] Extracting: GlobalQuantumStrategies26.pdf, page 4/12, chunk 1/1
+[01:55:57 +28s | GlobalQuantumStrategies26] Repaired malformed JSON.
+[01:55:57 +28s | GlobalQuantumStrategies26] Extracting: GlobalQuantumStrategies26.pdf, page 5/12, chunk 1/1
+[01:56:05 +36s | GlobalQuantumStrategies26] Repaired malformed JSON.
+[01:56:05 +36s | GlobalQuantumStrategies26] Extracting: GlobalQuantumStrategies26.pdf, page 6/12, chunk 1/1
+[01:56:11 +42s | GlobalQuantumStrategies26] Repaired malformed JSON.
+[01:56:11 +42s | GlobalQuantumStrategies26] Extracting: GlobalQuantumStrategies26.pdf, page 7/12, chunk 1/1
+[01:56:18 +49s | GlobalQuantumStrategies26] Repaired malformed JSON.
+[01:56:18 +49s | GlobalQuantumStrategies26] Extracting: GlobalQuantumStrategies26.pdf, page 8/12, chunk 1/1
+[01:56:28 +57s | GlobalQuantumStrategies26] Repaired malformed JSON.
+[01:56:28 +57s | GlobalQuantumStrategies26] Extracting: GlobalQuantumStrategies26.pdf, page 9/12, chunk 1/1
+[01:56:38 +1m 7s | GlobalQuantumStrategies26] Repaired malformed JSON.
+[01:56:38 +1m 7s | GlobalQuantumStrategies26] Extracting: GlobalQuantumStrategies26.pdf, page 10/12, chunk 1/1
+[01:56:44 +1m 14s | GlobalQuantumStrategies26] Repaired malformed JSON.
+[01:56:44 +1m 14s | GlobalQuantumStrategies26] Extracting: GlobalQuantumStrategies26.pdf, page 11/12, chunk 1/1
+[01:56:50 +1m 19s | GlobalQuantumStrategies26] Repaired malformed JSON.
+[01:56:50 +1m 19s | GlobalQuantumStrategies26] Extracting: GlobalQuantumStrategies26.pdf, page 12/12, chunk 1/1
+[01:56:57 +1m 27s | GlobalQuantumStrategies26] Repaired malformed JSON.
+[01:56:57 +1m 27s | GlobalQuantumStrategies26] Saved 1_actor_results.json with 24 clean actors
+
+[01:56:58 +1m 27s | GlobalQuantumStrategies26] === 2 clean actors ===
+[01:56:58 +1m 27s | GlobalQuantumStrategies26] Loaded 24 extracted records
+[01:56:58 +1m 27s | GlobalQuantumStrategies26] Saved 2_actor_nodes.json with 17 canonical actor nodes
+
+[01:56:58 +1m 27s | GlobalQuantumStrategies26] === 3 interaction extraction ===
+[01:56:58 +1m 27s | GlobalQuantumStrategies26] Processing interactions for: GlobalQuantumStrategies26.pdf
+[01:56:58 +1m 27s | GlobalQuantumStrategies26] Extracting interactions: GlobalQuantumStrategies26.pdf, page 1/12, chunk 1/1
+[01:57:05 +1m 32s | GlobalQuantumStrategies26] Extracting interactions: GlobalQuantumStrategies26.pdf, page 2/12, chunk 1/1
+[01:57:11 +1m 38s | GlobalQuantumStrategies26] Extracting interactions: GlobalQuantumStrategies26.pdf, page 3/12, chunk 1/1
+[01:57:15 +1m 42s | GlobalQuantumStrategies26] Extracting interactions: GlobalQuantumStrategies26.pdf, page 4/12, chunk 1/1
+[01:57:25 +1m 52s | GlobalQuantumStrategies26] Extracting interactions: GlobalQuantumStrategies26.pdf, page 5/12, chunk 1/1
+[01:57:29 +1m 56s | GlobalQuantumStrategies26] Extracting interactions: GlobalQuantumStrategies26.pdf, page 6/12, chunk 1/1
+[01:57:36 +2m 1s | GlobalQuantumStrategies26] Extracting interactions: GlobalQuantumStrategies26.pdf, page 7/12, chunk 1/1
+[01:57:51 +2m 16s | GlobalQuantumStrategies26] Extracting interactions: GlobalQuantumStrategies26.pdf, page 8/12, chunk 1/1
+[01:58:14 +2m 37s | GlobalQuantumStrategies26] Extracting interactions: GlobalQuantumStrategies26.pdf, page 9/12, chunk 1/1
+[01:58:35 +2m 58s | GlobalQuantumStrategies26] Extracting interactions: GlobalQuantumStrategies26.pdf, page 10/12, chunk 1/1
+[01:58:46 +3m 7s | GlobalQuantumStrategies26] Extracting interactions: GlobalQuantumStrategies26.pdf, page 11/12, chunk 1/1
+[01:58:56 +3m 17s | GlobalQuantumStrategies26] Extracting interactions: GlobalQuantumStrategies26.pdf, page 12/12, chunk 1/1
+[01:59:00 +3m 21s | GlobalQuantumStrategies26] Saved 3_interaction_results.json with 17 extracted interactions.
+
+[01:59:00 +3m 22s | GlobalQuantumStrategies26] === 4 clean interactions ===
+[01:59:00 +3m 22s | GlobalQuantumStrategies26] Saved 4_edges.json with 1 cleaned interactions.
+
+[01:59:00 +3m 22s | GlobalQuantumStrategies26] === 5 helix enrichment ===
+[01:59:00 +3m 22s | GlobalQuantumStrategies26] Wrote 5_nodes.json (17 actors)
+[01:59:00 +3m 22s | GlobalQuantumStrategies26] Wrote 5_edges.json (1 interactions)
+[01:59:00 +3m 22s | GlobalQuantumStrategies26] Actor helix counts: {'Academia': 3, 'Civil Society': 1, 'Government': 3, 'Industry': 1, 'Intermediary': 5, 'Unknown': 4}
+[01:59:00 +3m 22s | GlobalQuantumStrategies26] Functional-space counts: {'Unknown': 1}
+
+[01:59:00 +3m 22s | GlobalQuantumStrategies26] === 6 network visualisation ===
+[01:59:01 +3m 22s | GlobalQuantumStrategies26] Wrote quantum_network.html
+[01:59:01 +3m 22s | GlobalQuantumStrategies26] Nodes: 17
+[01:59:01 +3m 22s | GlobalQuantumStrategies26] Edges: 1
+
+[01:59:01 +3m 22s | GlobalQuantumStrategies26] Done. Outputs written to: /home/lv/IDP/idpdeeptech/pipeline/pdf_outputs/GlobalQuantumStrategies26
+[01:59:01 +3m 22s | GlobalQuantumStrategies26] Log: /home/lv/IDP/idpdeeptech/pipeline/pdf_outputs/GlobalQuantumStrategies26/run.log
+
+========================================================================
+RUN FINISHED 2026-06-16 01:59:01  (OK)
+Started:     2026-06-16 01:55:27
+Elapsed:     3m 22s
+========================================================================

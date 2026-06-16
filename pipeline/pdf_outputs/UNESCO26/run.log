@@ -1,0 +1,124 @@
+
+========================================================================
+RUN STARTED  2026-06-16 03:34:16
+pdf_pipeline.py UNESCO26.pdf
+========================================================================
+
+[03:34:16 +0s | UNESCO26] === 1 actor extraction ===
+[03:34:17 +0s | UNESCO26] Reading PDF: UNESCO26.pdf
+[03:34:17 +0s | UNESCO26] Extracting: UNESCO26.pdf, page 1/27, chunk 1/1
+[03:34:22 +5s | UNESCO26] Extracting: UNESCO26.pdf, page 2/27, chunk 1/2
+[03:34:25 +9s | UNESCO26] Extracting: UNESCO26.pdf, page 2/27, chunk 2/2
+[03:34:34 +15s | UNESCO26] Repaired malformed JSON.
+[03:34:34 +15s | UNESCO26] Extracting: UNESCO26.pdf, page 3/27, chunk 1/1
+[03:34:43 +23s | UNESCO26] Repaired malformed JSON.
+[03:34:43 +23s | UNESCO26] Extracting: UNESCO26.pdf, page 4/27, chunk 1/1
+[03:34:46 +26s | UNESCO26] Extracting: UNESCO26.pdf, page 5/27, chunk 1/1
+[03:34:52 +32s | UNESCO26] Repaired malformed JSON.
+[03:34:52 +32s | UNESCO26] Extracting: UNESCO26.pdf, page 6/27, chunk 1/1
+[03:34:57 +37s | UNESCO26] Repaired malformed JSON.
+[03:34:57 +37s | UNESCO26] Extracting: UNESCO26.pdf, page 7/27, chunk 1/1
+[03:35:03 +43s | UNESCO26] Extracting: UNESCO26.pdf, page 8/27, chunk 1/1
+[03:35:12 +50s | UNESCO26] Repaired malformed JSON.
+[03:35:12 +50s | UNESCO26] Extracting: UNESCO26.pdf, page 9/27, chunk 1/1
+[03:35:21 +59s | UNESCO26] Repaired malformed JSON.
+[03:35:21 +59s | UNESCO26] Extracting: UNESCO26.pdf, page 10/27, chunk 1/1
+[03:35:27 +1m 5s | UNESCO26] Repaired malformed JSON.
+[03:35:27 +1m 5s | UNESCO26] Extracting: UNESCO26.pdf, page 11/27, chunk 1/1
+[03:35:32 +1m 10s | UNESCO26] Repaired malformed JSON.
+[03:35:32 +1m 10s | UNESCO26] Extracting: UNESCO26.pdf, page 12/27, chunk 1/1
+[03:35:38 +1m 15s | UNESCO26] Repaired malformed JSON.
+[03:35:38 +1m 15s | UNESCO26] Extracting: UNESCO26.pdf, page 13/27, chunk 1/1
+[03:35:49 +1m 23s | UNESCO26] Repaired malformed JSON.
+[03:35:49 +1m 23s | UNESCO26] Extracting: UNESCO26.pdf, page 14/27, chunk 1/1
+[03:35:55 +1m 29s | UNESCO26] Repaired malformed JSON.
+[03:35:55 +1m 29s | UNESCO26] Extracting: UNESCO26.pdf, page 15/27, chunk 1/1
+[03:36:02 +1m 37s | UNESCO26] Repaired malformed JSON.
+[03:36:02 +1m 37s | UNESCO26] Extracting: UNESCO26.pdf, page 16/27, chunk 1/1
+[03:36:08 +1m 43s | UNESCO26] Repaired malformed JSON.
+[03:36:08 +1m 43s | UNESCO26] Extracting: UNESCO26.pdf, page 17/27, chunk 1/1
+[03:36:14 +1m 48s | UNESCO26] Repaired malformed JSON.
+[03:36:14 +1m 48s | UNESCO26] Extracting: UNESCO26.pdf, page 18/27, chunk 1/1
+[03:36:23 +1m 54s | UNESCO26] Repaired malformed JSON.
+[03:36:23 +1m 54s | UNESCO26] Extracting: UNESCO26.pdf, page 19/27, chunk 1/1
+[03:36:28 +2m 0s | UNESCO26] Repaired malformed JSON.
+[03:36:28 +2m 0s | UNESCO26] Extracting: UNESCO26.pdf, page 20/27, chunk 1/1
+[03:36:34 +2m 6s | UNESCO26] Repaired malformed JSON.
+[03:36:34 +2m 6s | UNESCO26] Extracting: UNESCO26.pdf, page 21/27, chunk 1/1
+[03:36:40 +2m 11s | UNESCO26] Repaired malformed JSON.
+[03:36:40 +2m 11s | UNESCO26] Extracting: UNESCO26.pdf, page 22/27, chunk 1/1
+[03:36:45 +2m 17s | UNESCO26] Repaired malformed JSON.
+[03:36:45 +2m 17s | UNESCO26] Extracting: UNESCO26.pdf, page 23/27, chunk 1/1
+[03:36:53 +2m 22s | UNESCO26] Repaired malformed JSON.
+[03:36:53 +2m 22s | UNESCO26] Extracting: UNESCO26.pdf, page 24/27, chunk 1/1
+[03:37:01 +2m 30s | UNESCO26] Repaired malformed JSON.
+[03:37:01 +2m 30s | UNESCO26] Extracting: UNESCO26.pdf, page 25/27, chunk 1/1
+[03:37:07 +2m 36s | UNESCO26] Repaired malformed JSON.
+[03:37:07 +2m 36s | UNESCO26] Extracting: UNESCO26.pdf, page 26/27, chunk 1/1
+[03:37:16 +2m 45s | UNESCO26] Repaired malformed JSON.
+[03:37:16 +2m 45s | UNESCO26] Extracting: UNESCO26.pdf, page 27/27, chunk 1/1
+[03:37:24 +2m 52s | UNESCO26] Repaired malformed JSON.
+[03:37:24 +2m 52s | UNESCO26] Saved 1_actor_results.json with 54 clean actors
+
+[03:37:24 +2m 52s | UNESCO26] === 2 clean actors ===
+[03:37:24 +2m 53s | UNESCO26] Loaded 54 extracted records
+[03:37:24 +2m 53s | UNESCO26] Saved 2_actor_nodes.json with 11 canonical actor nodes
+
+[03:37:24 +2m 53s | UNESCO26] === 3 interaction extraction ===
+[03:37:24 +2m 53s | UNESCO26] Processing interactions for: UNESCO26.pdf
+[03:37:24 +2m 53s | UNESCO26] Extracting interactions: UNESCO26.pdf, page 1/27, chunk 1/1
+[03:37:30 +2m 56s | UNESCO26] Extracting interactions: UNESCO26.pdf, page 2/27, chunk 1/2
+[03:37:36 +3m 2s | UNESCO26] Extracting interactions: UNESCO26.pdf, page 2/27, chunk 2/2
+[03:37:48 +3m 14s | UNESCO26] Extracting interactions: UNESCO26.pdf, page 3/27, chunk 1/1
+[03:37:57 +3m 23s | UNESCO26] Extracting interactions: UNESCO26.pdf, page 4/27, chunk 1/1
+[03:37:59 +3m 25s | UNESCO26] Extracting interactions: UNESCO26.pdf, page 5/27, chunk 1/1
+[03:38:13 +3m 36s | UNESCO26] Extracting interactions: UNESCO26.pdf, page 6/27, chunk 2/3
+[03:38:22 +3m 45s | UNESCO26] Extracting interactions: UNESCO26.pdf, page 6/27, chunk 3/3
+[03:38:34 +3m 57s | UNESCO26] Extracting interactions: UNESCO26.pdf, page 7/27, chunk 1/1
+[03:38:51 +4m 11s | UNESCO26] Extracting interactions: UNESCO26.pdf, page 8/27, chunk 1/1
+[03:38:59 +4m 19s | UNESCO26] Extracting interactions: UNESCO26.pdf, page 9/27, chunk 1/1
+[03:39:06 +4m 26s | UNESCO26] Extracting interactions: UNESCO26.pdf, page 10/27, chunk 1/1
+[03:39:13 +4m 30s | UNESCO26] Extracting interactions: UNESCO26.pdf, page 11/27, chunk 1/1
+[03:39:34 +4m 51s | UNESCO26] Extracting interactions: UNESCO26.pdf, page 12/27, chunk 1/1
+[03:39:40 +4m 57s | UNESCO26] Extracting interactions: UNESCO26.pdf, page 13/27, chunk 1/1
+[03:39:44 +5m 1s | UNESCO26] Extracting interactions: UNESCO26.pdf, page 14/27, chunk 1/1
+[03:40:01 +5m 16s | UNESCO26] Extracting interactions: UNESCO26.pdf, page 15/27, chunk 1/1
+[03:40:12 +5m 26s | UNESCO26] Extracting interactions: UNESCO26.pdf, page 16/27, chunk 1/1
+[03:40:17 +5m 31s | UNESCO26] Extracting interactions: UNESCO26.pdf, page 17/27, chunk 1/1
+[03:40:35 +5m 46s | UNESCO26] Extracting interactions: UNESCO26.pdf, page 18/27, chunk 1/2
+[03:40:38 +5m 49s | UNESCO26] Extracting interactions: UNESCO26.pdf, page 18/27, chunk 2/2
+[03:40:44 +5m 55s | UNESCO26] Extracting interactions: UNESCO26.pdf, page 19/27, chunk 1/1
+[03:40:52 +6m 3s | UNESCO26] Extracting interactions: UNESCO26.pdf, page 20/27, chunk 2/2
+[03:40:59 +6m 8s | UNESCO26] Extracting interactions: UNESCO26.pdf, page 21/27, chunk 1/1
+[03:41:10 +6m 18s | UNESCO26] Extracting interactions: UNESCO26.pdf, page 22/27, chunk 2/2
+[03:41:29 +6m 38s | UNESCO26] Extracting interactions: UNESCO26.pdf, page 23/27, chunk 1/2
+[03:41:41 +6m 46s | UNESCO26] Extracting interactions: UNESCO26.pdf, page 23/27, chunk 2/2
+[03:41:54 +6m 59s | UNESCO26] Extracting interactions: UNESCO26.pdf, page 24/27, chunk 1/2
+[03:42:01 +7m 6s | UNESCO26] Extracting interactions: UNESCO26.pdf, page 24/27, chunk 2/2
+[03:42:15 +7m 18s | UNESCO26] Extracting interactions: UNESCO26.pdf, page 25/27, chunk 1/1
+[03:42:20 +7m 23s | UNESCO26] Extracting interactions: UNESCO26.pdf, page 26/27, chunk 1/1
+[03:42:28 +7m 31s | UNESCO26] Extracting interactions: UNESCO26.pdf, page 27/27, chunk 1/1
+[03:42:36 +7m 38s | UNESCO26] Saved 3_interaction_results.json with 93 extracted interactions.
+
+[03:42:36 +7m 38s | UNESCO26] === 4 clean interactions ===
+[03:42:36 +7m 38s | UNESCO26] Saved 4_edges.json with 24 cleaned interactions.
+
+[03:42:36 +7m 38s | UNESCO26] === 5 helix enrichment ===
+[03:42:36 +7m 38s | UNESCO26] Wrote 5_nodes.json (11 actors)
+[03:42:36 +7m 38s | UNESCO26] Wrote 5_edges.json (24 interactions)
+[03:42:36 +7m 38s | UNESCO26] Actor helix counts: {'Academia': 1, 'Civil Society': 2, 'Government': 2, 'Industry': 1, 'Unknown': 5}
+[03:42:36 +7m 38s | UNESCO26] Functional-space counts: {'Unknown': 24}
+
+[03:42:36 +7m 38s | UNESCO26] === 6 network visualisation ===
+[03:42:36 +7m 39s | UNESCO26] Wrote quantum_network.html
+[03:42:36 +7m 39s | UNESCO26] Nodes: 11
+[03:42:36 +7m 39s | UNESCO26] Edges: 12
+
+[03:42:36 +7m 39s | UNESCO26] Done. Outputs written to: /home/lv/IDP/idpdeeptech/pipeline/pdf_outputs/UNESCO26
+[03:42:36 +7m 39s | UNESCO26] Log: /home/lv/IDP/idpdeeptech/pipeline/pdf_outputs/UNESCO26/run.log
+
+========================================================================
+RUN FINISHED 2026-06-16 03:42:36  (OK)
+Started:     2026-06-16 03:34:16
+Elapsed:     7m 39s
+========================================================================

@@ -1,0 +1,76 @@
+
+========================================================================
+PDF BATCH RUN  2026-06-16 01:41:53
+========================================================================
+  PDF directory:  /home/lv/IDP/idpdeeptech/pipeline/pdf_input
+  Documents:      53
+  Workers:        4
+  Force redo:     False
+  Batch log:      /home/lv/IDP/idpdeeptech/pipeline/pdf_outputs/batch_logs/batch_20260616_014153.log
+========================================================================
+
+[51/53] china25.pdf: skipping (already done; pass --force to redo)
+[52/53] japan25.pdf: skipping (already done; pass --force to redo)
+[53/53] singapore25.pdf: skipping (already done; pass --force to redo)
+
+Running 50 PDF(s) with 4 workers...
+Note: parallel terminal output interleaves. Each PDF's clean trace is in its own pdf_outputs/<stem>/run.log
+
+  DONE: [2/53] BadenWurttemberg.pdf
+  DONE: [4/53] Canada25.pdf
+  DONE: [3/53] Bavaria.pdf
+  DONE: [1/53] Austria24.pdf
+  DONE: [7/53] France23.pdf
+  DONE: [9/53] Germany2025.pdf
+  DONE: [6/53] Europe25.pdf
+  DONE: [10/53] GlobalQuantumStrategies26.pdf
+  DONE: [5/53] Europe23.pdf
+  DONE: [8/53] FrancoGerman25.pdf
+  DONE: [12/53] Luis_Australia23.pdf
+  DONE: [13/53] Luis_Canada22.pdf
+  DONE: [14/53] Luis_Czechia25.pdf
+  DONE: [15/53] Luis_Denmark23.pdf
+  DONE: [17/53] Luis_France21.pdf
+  DONE: [16/53] Luis_Finland25.pdf
+  DONE: [11/53] India25.pdf
+  DONE: [18/53] Luis_Germany18.pdf
+  DONE: [20/53] Luis_Ireland23.pdf
+  DONE: [19/53] Luis_Germany23.pdf
+  DONE: [23/53] Luis_Japan23.pdf
+  DONE: [24/53] Luis_Japan24.pdf
+  DONE: [22/53] Luis_Japan22.pdf
+  DONE: [21/53] Luis_Italy25.pdf
+  DONE: [25/53] Luis_Korea23.pdf
+  DONE: [26/53] Luis_Netherlands19.pdf
+  DONE: [27/53] Luis_Slovenia25.pdf
+  DONE: [31/53] Luis_USA20.pdf
+  DONE: [29/53] Luis_UK23.pdf
+  DONE: [33/53] Luxembourg25.pdf
+  DONE: [30/53] Luis_USA18.pdf
+  DONE: [28/53] Luis_Spain25.pdf
+  DONE: [34/53] NATO23.pdf
+  DONE: [37/53] Portugal25.pdf
+  DONE: [35/53] Nordic23.pdf
+  DONE: [38/53] Russia19.pdf
+  DONE: [39/53] SaudiArabia19.pdf
+  DONE: [32/53] Luis_USA22.pdf
+  DONE: [42/53] Taiwan25.pdf
+  DONE: [43/53] TexasBill25.pdf
+  DONE: [36/53] OECD25.pdf
+  DONE: [41/53] Switzerland26.pdf
+  DONE: [45/53] UAE25.pdf
+  DONE: [46/53] UK24.pdf
+  DONE: [47/53] UNESCO26.pdf
+  DONE: [40/53] SouthAfrica21.pdf
+  DONE: [44/53] Turkey.pdf
+  DONE: [49/53] USA26.pdf
+  DONE: [50/53] WEF25.pdf
+  DONE: [48/53] USA24.pdf
+
+============================================================
+BATCH SUMMARY
+============================================================
+Total PDFs (after --only filter):  53
+Succeeded:                          50
+Skipped (already done):             3
+Failed:                             0

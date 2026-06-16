@@ -1,0 +1,54 @@
+
+========================================================================
+RUN STARTED  2026-06-16 03:15:26
+pdf_pipeline.py Luxembourg25.pdf
+========================================================================
+
+[03:15:26 +0s | Luxembourg25] === 1 actor extraction ===
+[03:15:26 +0s | Luxembourg25] Reading PDF: Luxembourg25.pdf
+[03:15:26 +0s | Luxembourg25] Extracting: Luxembourg25.pdf, page 1/9, chunk 1/1
+[03:15:32 +6s | Luxembourg25] Extracting: Luxembourg25.pdf, page 2/9, chunk 1/1
+[03:15:37 +11s | Luxembourg25] Extracting: Luxembourg25.pdf, page 3/9, chunk 1/1
+[03:15:40 +14s | Luxembourg25] Extracting: Luxembourg25.pdf, page 4/9, chunk 1/1
+[03:15:49 +20s | Luxembourg25] Repaired malformed JSON.
+[03:15:49 +20s | Luxembourg25] Extracting: Luxembourg25.pdf, page 5/9, chunk 1/1
+[03:15:55 +26s | Luxembourg25] Extracting: Luxembourg25.pdf, page 6/9, chunk 1/1
+[03:16:01 +32s | Luxembourg25] Extracting: Luxembourg25.pdf, page 7/9, chunk 1/1
+[03:16:04 +35s | Luxembourg25] Extracting: Luxembourg25.pdf, page 8/9, chunk 1/1
+[03:16:09 +40s | Luxembourg25] Repaired malformed JSON.
+[03:16:09 +40s | Luxembourg25] Extracting: Luxembourg25.pdf, page 9/9, chunk 1/1
+[03:16:18 +49s | Luxembourg25] Repaired malformed JSON.
+[03:16:18 +49s | Luxembourg25] Saved 1_actor_results.json with 15 clean actors
+
+[03:16:18 +49s | Luxembourg25] === 2 clean actors ===
+[03:16:18 +49s | Luxembourg25] Loaded 15 extracted records
+[03:16:18 +49s | Luxembourg25] Saved 2_actor_nodes.json with 2 canonical actor nodes
+
+[03:16:18 +49s | Luxembourg25] === 3 interaction extraction ===
+[03:16:18 +49s | Luxembourg25] Processing interactions for: Luxembourg25.pdf
+[03:16:18 +49s | Luxembourg25] Extracting interactions: Luxembourg25.pdf, page 2/9, chunk 1/1
+[03:16:24 +52s | Luxembourg25] Extracting interactions: Luxembourg25.pdf, page 5/9, chunk 1/1
+[03:16:27 +55s | Luxembourg25] Saved 3_interaction_results.json with 2 extracted interactions.
+
+[03:16:27 +55s | Luxembourg25] === 4 clean interactions ===
+[03:16:28 +55s | Luxembourg25] Saved 4_edges.json with 0 cleaned interactions.
+
+[03:16:28 +55s | Luxembourg25] === 5 helix enrichment ===
+[03:16:28 +55s | Luxembourg25] Wrote 5_nodes.json (2 actors)
+[03:16:28 +55s | Luxembourg25] Wrote 5_edges.json (0 interactions)
+[03:16:28 +55s | Luxembourg25] Actor helix counts: {'Government': 1, 'Unknown': 1}
+[03:16:28 +55s | Luxembourg25] Functional-space counts: {}
+
+[03:16:28 +55s | Luxembourg25] === 6 network visualisation ===
+[03:16:28 +56s | Luxembourg25] Wrote quantum_network.html
+[03:16:28 +56s | Luxembourg25] Nodes: 2
+[03:16:28 +56s | Luxembourg25] Edges: 0
+
+[03:16:28 +56s | Luxembourg25] Done. Outputs written to: /home/lv/IDP/idpdeeptech/pipeline/pdf_outputs/Luxembourg25
+[03:16:28 +56s | Luxembourg25] Log: /home/lv/IDP/idpdeeptech/pipeline/pdf_outputs/Luxembourg25/run.log
+
+========================================================================
+RUN FINISHED 2026-06-16 03:16:28  (OK)
+Started:     2026-06-16 03:15:26
+Elapsed:     56s
+========================================================================

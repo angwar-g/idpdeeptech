@@ -1,0 +1,65 @@
+
+========================================================================
+RUN STARTED  2026-06-16 03:19:40
+pdf_pipeline.py Portugal25.pdf
+========================================================================
+
+[03:19:40 +0s | Portugal25] === 1 actor extraction ===
+[03:19:41 +0s | Portugal25] Reading PDF: Portugal25.pdf
+[03:19:41 +0s | Portugal25] Extracting: Portugal25.pdf, page 1/11, chunk 1/1
+[03:19:45 +4s | Portugal25] Extracting: Portugal25.pdf, page 2/11, chunk 1/1
+[03:19:53 +10s | Portugal25] Repaired malformed JSON.
+[03:19:53 +10s | Portugal25] Extracting: Portugal25.pdf, page 3/11, chunk 1/1
+[03:20:00 +16s | Portugal25] Repaired malformed JSON.
+[03:20:00 +16s | Portugal25] Extracting: Portugal25.pdf, page 4/11, chunk 1/1
+[03:20:05 +22s | Portugal25] Extracting: Portugal25.pdf, page 5/11, chunk 1/1
+[03:20:11 +27s | Portugal25] Repaired malformed JSON.
+[03:20:11 +27s | Portugal25] Extracting: Portugal25.pdf, page 6/11, chunk 1/1
+[03:20:19 +35s | Portugal25] Repaired malformed JSON.
+[03:20:19 +35s | Portugal25] Extracting: Portugal25.pdf, page 7/11, chunk 1/1
+[03:20:28 +42s | Portugal25] Repaired malformed JSON.
+[03:20:28 +42s | Portugal25] Extracting: Portugal25.pdf, page 8/11, chunk 1/1
+[03:20:34 +48s | Portugal25] Repaired malformed JSON.
+[03:20:34 +48s | Portugal25] Extracting: Portugal25.pdf, page 9/11, chunk 1/1
+[03:20:43 +57s | Portugal25] Repaired malformed JSON.
+[03:20:43 +57s | Portugal25] Extracting: Portugal25.pdf, page 10/11, chunk 1/1
+[03:20:48 +1m 1s | Portugal25] Extracting: Portugal25.pdf, page 11/11, chunk 1/1
+[03:20:54 +1m 7s | Portugal25] Saved 1_actor_results.json with 20 clean actors
+
+[03:20:54 +1m 7s | Portugal25] === 2 clean actors ===
+[03:20:54 +1m 7s | Portugal25] Loaded 20 extracted records
+[03:20:54 +1m 7s | Portugal25] Saved 2_actor_nodes.json with 7 canonical actor nodes
+
+[03:20:54 +1m 7s | Portugal25] === 3 interaction extraction ===
+[03:20:54 +1m 7s | Portugal25] Processing interactions for: Portugal25.pdf
+[03:20:54 +1m 7s | Portugal25] Extracting interactions: Portugal25.pdf, page 2/11, chunk 1/1
+[03:21:05 +1m 16s | Portugal25] Extracting interactions: Portugal25.pdf, page 3/11, chunk 1/1
+[03:21:17 +1m 28s | Portugal25] Extracting interactions: Portugal25.pdf, page 5/11, chunk 1/1
+[03:21:21 +1m 32s | Portugal25] Extracting interactions: Portugal25.pdf, page 6/11, chunk 1/1
+[03:21:29 +1m 40s | Portugal25] Extracting interactions: Portugal25.pdf, page 7/11, chunk 1/1
+[03:21:39 +1m 47s | Portugal25] Extracting interactions: Portugal25.pdf, page 8/11, chunk 1/1
+[03:21:42 +1m 50s | Portugal25] Extracting interactions: Portugal25.pdf, page 9/11, chunk 1/1
+[03:21:48 +1m 56s | Portugal25] Saved 3_interaction_results.json with 16 extracted interactions.
+
+[03:21:48 +1m 56s | Portugal25] === 4 clean interactions ===
+[03:21:48 +1m 56s | Portugal25] Saved 4_edges.json with 7 cleaned interactions.
+
+[03:21:48 +1m 56s | Portugal25] === 5 helix enrichment ===
+[03:21:48 +1m 56s | Portugal25] Wrote 5_nodes.json (7 actors)
+[03:21:48 +1m 56s | Portugal25] Wrote 5_edges.json (7 interactions)
+[03:21:48 +1m 56s | Portugal25] Actor helix counts: {'Academia': 1, 'Government': 3, 'Industry': 2, 'Unknown': 1}
+[03:21:48 +1m 56s | Portugal25] Functional-space counts: {'Unknown': 7}
+
+[03:21:48 +1m 56s | Portugal25] === 6 network visualisation ===
+[03:21:49 +1m 57s | Portugal25] Wrote quantum_network.html
+[03:21:49 +1m 57s | Portugal25] Nodes: 7
+[03:21:49 +1m 57s | Portugal25] Edges: 4
+
+[03:21:49 +1m 57s | Portugal25] Done. Outputs written to: /home/lv/IDP/idpdeeptech/pipeline/pdf_outputs/Portugal25
+[03:21:49 +1m 57s | Portugal25] Log: /home/lv/IDP/idpdeeptech/pipeline/pdf_outputs/Portugal25/run.log
+
+========================================================================
+RUN FINISHED 2026-06-16 03:21:49  (OK)
+Started:     2026-06-16 03:19:40
+Elapsed:     1m 57s
+========================================================================

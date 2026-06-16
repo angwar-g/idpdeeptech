@@ -1,0 +1,1435 @@
+[
+  {
+    "entity": "Agence Nationale de la Recherche (ANR)",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "national government institutions",
+    "role_in_text": "organisation",
+    "technology_area": "quantum computing",
+    "occurrence_sentence": "Elisabeth Giacobino Agence Nationale de la Recherche (ANR)  QuantERA is the leading European network of public Re- search Funding Organisations for Quantum Technologies (QT).",
+    "source_document": "Europe23.pdf",
+    "page": 7,
+    "canonical_actor_key": "agence nationale de la recherche",
+    "aliases": [
+      "ANR",
+      "Agence Nationale de la Recherche",
+      "Agence Nationale de la Recherche (ANR)",
+      "Elisabeth Giacobino",
+      "Elisabeth Giacobino (ANR)"
+    ],
+    "pages": [
+      7
+    ],
+    "mentions": [
+      {
+        "entity": "Elisabeth Giacobino (ANR)",
+        "page": 7,
+        "role_in_text": "speaker",
+        "occurrence_sentence": "Elisabeth Giacobino Agence Nationale de la Recherche (ANR)  QuantERA is the leading European network of public Re- search Funding Organisations for Quantum Technologies (QT).",
+        "source_document": "Europe23.pdf"
+      },
+      {
+        "entity": "Agence Nationale de la Recherche (ANR)",
+        "page": 7,
+        "role_in_text": "organisation",
+        "occurrence_sentence": "Elisabeth Giacobino Agence Nationale de la Recherche (ANR)  QuantERA is the leading European network of public Re- search Funding Organisations for Quantum Technologies (QT).",
+        "source_document": "Europe23.pdf"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Government",
+    "sphere": "Single",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "Austria",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "country",
+    "role_in_text": "country",
+    "technology_area": "quantum computing",
+    "occurrence_sentence": "Austria",
+    "source_document": "Europe23.pdf",
+    "page": 11,
+    "confidence": "high",
+    "canonical_actor_key": "austria",
+    "aliases": [
+      "Austria"
+    ],
+    "pages": [
+      11
+    ],
+    "mentions": [
+      {
+        "entity": "Austria",
+        "page": 11,
+        "role_in_text": "country",
+        "occurrence_sentence": "Austria",
+        "source_document": "Europe23.pdf"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Unknown",
+    "sphere": "Unknown",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "unknown_category",
+    "classification_needs_review": true,
+    "classification_review_reason": "unmapped_category:country"
+  },
+  {
+    "entity": "Centre for the Development of Industrial Technology (CDTI)",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "national government institutions",
+    "role_in_text": "funds specifically industrial partners",
+    "technology_area": "deep tech general",
+    "occurrence_sentence": "At the national level, AEI funds QT through national open calls and the Centre for the Development of Industrial Technology (CDTI) funds specifically industrial partners.",
+    "source_document": "Europe23.pdf",
+    "page": 81,
+    "canonical_actor_key": "centre for the development of industrial technology",
+    "aliases": [
+      "CDTI",
+      "Centre for the Development of Industrial Technology",
+      "Centre for the Development of Industrial Technology (CDTI)"
+    ],
+    "pages": [
+      81
+    ],
+    "mentions": [
+      {
+        "entity": "Centre for the Development of Industrial Technology (CDTI)",
+        "page": 81,
+        "role_in_text": "funds specifically industrial partners",
+        "occurrence_sentence": "At the national level, AEI funds QT through national open calls and the Centre for the Development of Industrial Technology (CDTI) funds specifically industrial partners.",
+        "source_document": "Europe23.pdf"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Government",
+    "sphere": "Single",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "CERN",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "research institutes",
+    "role_in_text": "research",
+    "technology_area": "quantum computing",
+    "occurrence_sentence": "CERN is a research organization that operates the Large Hadron Collider.",
+    "source_document": "Europe23.pdf",
+    "page": 4,
+    "confidence": "high",
+    "canonical_actor_key": "cern",
+    "aliases": [
+      "CERN"
+    ],
+    "pages": [
+      4
+    ],
+    "mentions": [
+      {
+        "entity": "CERN",
+        "page": 4,
+        "role_in_text": "research",
+        "occurrence_sentence": "CERN is a research organization that operates the Large Hadron Collider.",
+        "source_document": "Europe23.pdf"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Academia",
+    "sphere": "Single",
+    "r_and_d": "R&D",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "European Commission",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "supranational government institutions",
+    "role_in_text": "Commission",
+    "technology_area": "other",
+    "occurrence_sentence": "https://digital-strategy.ec.europa.eu/en/library/quantum-technologies-and-advent-quantum-internet-european-union-brochure",
+    "source_document": "Europe23.pdf",
+    "page": 8,
+    "confidence": "high",
+    "canonical_actor_key": "european commission",
+    "aliases": [
+      "European Commission"
+    ],
+    "pages": [
+      8,
+      97,
+      99
+    ],
+    "mentions": [
+      {
+        "entity": "European Commission",
+        "page": 8,
+        "role_in_text": "Commission",
+        "occurrence_sentence": "https://digital-strategy.ec.europa.eu/en/library/quantum-technologies-and-advent-quantum-internet-european-union-brochure",
+        "source_document": "Europe23.pdf"
+      },
+      {
+        "entity": "European Commission",
+        "page": 97,
+        "role_in_text": "policy maker",
+        "occurrence_sentence": "The European Commission has been instrumental in shaping the quantum technologies public policies in Europe.",
+        "source_document": "Europe23.pdf"
+      },
+      {
+        "entity": "European Commission",
+        "page": 99,
+        "role_in_text": "policy maker",
+        "occurrence_sentence": "The European Commission is leading the development of quantum technologies in Europe.",
+        "source_document": "Europe23.pdf"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Government",
+    "sphere": "Single",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "European Union",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "supranational government institutions",
+    "role_in_text": "Union",
+    "technology_area": "other",
+    "occurrence_sentence": "https://digital-strategy.ec.europa.eu/en/library/quantum-technologies-and-advent-quantum-internet-european-union-brochure",
+    "source_document": "Europe23.pdf",
+    "page": 8,
+    "confidence": "high",
+    "canonical_actor_key": "european union",
+    "aliases": [
+      "EU",
+      "European Union",
+      "European Union (EU)"
+    ],
+    "pages": [
+      8,
+      95
+    ],
+    "mentions": [
+      {
+        "entity": "European Union",
+        "page": 8,
+        "role_in_text": "Union",
+        "occurrence_sentence": "https://digital-strategy.ec.europa.eu/en/library/quantum-technologies-and-advent-quantum-internet-european-union-brochure",
+        "source_document": "Europe23.pdf"
+      },
+      {
+        "entity": "European Union (EU)",
+        "page": 95,
+        "role_in_text": "policy actor",
+        "occurrence_sentence": "Quantum Technologies Public Policies in Europe",
+        "source_document": "Europe23.pdf"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Government",
+    "sphere": "Single",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "European University Institute (EUI)",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "universities",
+    "role_in_text": "research",
+    "technology_area": "deep tech general",
+    "occurrence_sentence": "The European University Institute (EUI) is a research university located in Florence, Italy.",
+    "source_document": "Europe23.pdf",
+    "page": 4,
+    "confidence": "high",
+    "canonical_actor_key": "european university institute",
+    "aliases": [
+      "EUI",
+      "European University Institute",
+      "European University Institute (EUI)"
+    ],
+    "pages": [
+      4
+    ],
+    "mentions": [
+      {
+        "entity": "European University Institute (EUI)",
+        "page": 4,
+        "role_in_text": "research",
+        "occurrence_sentence": "The European University Institute (EUI) is a research university located in Florence, Italy.",
+        "source_document": "Europe23.pdf"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Academia",
+    "sphere": "Single",
+    "r_and_d": "R&D",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "FWF, FFG",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "financial support institutions",
+    "role_in_text": "FWF, FFG",
+    "technology_area": "quantum computing",
+    "occurrence_sentence": "FWF, FFG",
+    "source_document": "Europe23.pdf",
+    "page": 11,
+    "canonical_actor_key": "fwf ffg",
+    "aliases": [
+      "FWF, FFG"
+    ],
+    "pages": [
+      11
+    ],
+    "mentions": [
+      {
+        "entity": "FWF, FFG",
+        "page": 11,
+        "role_in_text": "FWF, FFG",
+        "occurrence_sentence": "FWF, FFG",
+        "source_document": "Europe23.pdf"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Intermediary",
+    "sphere": "Multi",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "Innosuisse",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "national government institutions",
+    "role_in_text": "funding agency",
+    "technology_area": "deep tech general",
+    "occurrence_sentence": "Besides this, the Swiss Quantum community is mainly supported through bottom-up funding schemes provided by the SNSF and Innosuisse.",
+    "source_document": "Europe23.pdf",
+    "page": 86,
+    "confidence": "high",
+    "canonical_actor_key": "innosuisse",
+    "aliases": [
+      "Innosuisse"
+    ],
+    "pages": [
+      86,
+      88
+    ],
+    "mentions": [
+      {
+        "entity": "Innosuisse",
+        "page": 86,
+        "role_in_text": "funding agency",
+        "occurrence_sentence": "Besides this, the Swiss Quantum community is mainly supported through bottom-up funding schemes provided by the SNSF and Innosuisse.",
+        "source_document": "Europe23.pdf"
+      },
+      {
+        "entity": "Innosuisse",
+        "page": 88,
+        "role_in_text": "Swiss innovation agency funding application-oriented research and development",
+        "occurrence_sentence": "Innosuisse, is the Swiss innovation agency funding application-oriented research and development.",
+        "source_document": "Europe23.pdf"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Government",
+    "sphere": "Single",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "Institut d'Optique (IO)",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "research institutes",
+    "role_in_text": "institution",
+    "technology_area": "quantum computing",
+    "occurrence_sentence": "Alain Aspect, Institut d'Optique",
+    "source_document": "Europe23.pdf",
+    "page": 10,
+    "confidence": "high",
+    "canonical_actor_key": "institut d optique",
+    "aliases": [
+      "IO",
+      "Institut d'Optique",
+      "Institut d'Optique (IO)"
+    ],
+    "pages": [
+      10
+    ],
+    "mentions": [
+      {
+        "entity": "Institut d'Optique (IO)",
+        "page": 10,
+        "role_in_text": "institution",
+        "occurrence_sentence": "Alain Aspect, Institut d'Optique",
+        "source_document": "Europe23.pdf"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Academia",
+    "sphere": "Single",
+    "r_and_d": "R&D",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "Jozef Stefan Institute",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "research institutes",
+    "role_in_text": "established QUTES",
+    "technology_area": "deep tech general",
+    "occurrence_sentence": "QUTES is an initiative of the Slovenian quantum technology community. It was established by Jozef Stefan Institute and Faculty of Mathematics and Physics, University of Ljubljana in 2016.",
+    "source_document": "Europe23.pdf",
+    "page": 79,
+    "confidence": "high",
+    "canonical_actor_key": "jozef stefan institute",
+    "aliases": [
+      "Jozef Stefan Institute"
+    ],
+    "pages": [
+      79
+    ],
+    "mentions": [
+      {
+        "entity": "Jozef Stefan Institute",
+        "page": 79,
+        "role_in_text": "established QUTES",
+        "occurrence_sentence": "QUTES is an initiative of the Slovenian quantum technology community. It was established by Jozef Stefan Institute and Faculty of Mathematics and Physics, University of Ljubljana in 2016.",
+        "source_document": "Europe23.pdf"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Academia",
+    "sphere": "Single",
+    "r_and_d": "R&D",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "LuxQuanta",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "small and medium-sized enterprises",
+    "role_in_text": "aiming at creating autonomous QKD devices",
+    "technology_area": "quantum cryptography",
+    "occurrence_sentence": "LuxQuanta and Quside aiming at creating autonomous QKD devices.",
+    "source_document": "Europe23.pdf",
+    "page": 83,
+    "canonical_actor_key": "luxquanta",
+    "aliases": [
+      "LuxQuanta"
+    ],
+    "pages": [
+      83
+    ],
+    "mentions": [
+      {
+        "entity": "LuxQuanta",
+        "page": 83,
+        "role_in_text": "aiming at creating autonomous QKD devices",
+        "occurrence_sentence": "LuxQuanta and Quside aiming at creating autonomous QKD devices.",
+        "source_document": "Europe23.pdf"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Industry",
+    "sphere": "Single",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "National Centre of Competence in Research (NCCR)",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "research institutes",
+    "role_in_text": "National Centre of Competence in Research (NCCR) initiative",
+    "technology_area": "quantum computing",
+    "occurrence_sentence": "Within the National Centre of Competence in Research (NCCR) initiative, 44 research groups in Switzerland were part of the NCCR QSIT.",
+    "source_document": "Europe23.pdf",
+    "page": 88,
+    "canonical_actor_key": "national centre of competence in research",
+    "aliases": [
+      "NCCR",
+      "National Centre of Competence in Research",
+      "National Centre of Competence in Research (NCCR)"
+    ],
+    "pages": [
+      88
+    ],
+    "mentions": [
+      {
+        "entity": "National Centre of Competence in Research (NCCR)",
+        "page": 88,
+        "role_in_text": "National Centre of Competence in Research (NCCR) initiative",
+        "occurrence_sentence": "Within the National Centre of Competence in Research (NCCR) initiative, 44 research groups in Switzerland were part of the NCCR QSIT.",
+        "source_document": "Europe23.pdf"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Academia",
+    "sphere": "Single",
+    "r_and_d": "R&D",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "National Physical Laboratory (NPL)",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "research institutes",
+    "role_in_text": "providing skills training and hosting PhD studentships",
+    "technology_area": "deep tech general",
+    "occurrence_sentence": "National Physical Laboratory (NPL) skills programme support training and skills in QT through their STEM Futures programme",
+    "source_document": "Europe23.pdf",
+    "page": 94,
+    "canonical_actor_key": "national physical laboratory",
+    "aliases": [
+      "NPL",
+      "National Physical Laboratory",
+      "National Physical Laboratory (NPL)"
+    ],
+    "pages": [
+      94
+    ],
+    "mentions": [
+      {
+        "entity": "National Physical Laboratory (NPL)",
+        "page": 94,
+        "role_in_text": "providing skills training and hosting PhD studentships",
+        "occurrence_sentence": "National Physical Laboratory (NPL) skills programme support training and skills in QT through their STEM Futures programme",
+        "source_document": "Europe23.pdf"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Academia",
+    "sphere": "Single",
+    "r_and_d": "R&D",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "Qilimanjaro Quantum Tech",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "small and medium-sized enterprises",
+    "role_in_text": "spin-off aimed at the development of quantum computers based on circuits of superconductors",
+    "technology_area": "quantum computing",
+    "occurrence_sentence": "Qilimanjaro Quantum Tech, a spin-off aimed at the development of quantum computers based on circuits of superconductors.",
+    "source_document": "Europe23.pdf",
+    "page": 83,
+    "confidence": "high",
+    "canonical_actor_key": "qilimanjaro quantum tech",
+    "aliases": [
+      "Qilimanjaro Quantum Tech"
+    ],
+    "pages": [
+      83
+    ],
+    "mentions": [
+      {
+        "entity": "Qilimanjaro Quantum Tech",
+        "page": 83,
+        "role_in_text": "spin-off aimed at the development of quantum computers based on circuits of superconductors",
+        "occurrence_sentence": "Qilimanjaro Quantum Tech, a spin-off aimed at the development of quantum computers based on circuits of superconductors.",
+        "source_document": "Europe23.pdf"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Industry",
+    "sphere": "Single",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "QuantERA",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "supranational government institutions",
+    "role_in_text": "QuantERA is a genuine European success story, managing a joint research program of the European Union, its member states and several associated countries.",
+    "technology_area": "quantum computing",
+    "occurrence_sentence": "QuantERA is a genuine European success story, managing a joint research program of the European Union, its member states and several associated countries.",
+    "source_document": "Europe23.pdf",
+    "page": 6,
+    "confidence": "high",
+    "canonical_actor_key": "quantera",
+    "aliases": [
+      "QuantERA",
+      "QuantERA (QuantERA)"
+    ],
+    "pages": [
+      6,
+      9,
+      98
+    ],
+    "mentions": [
+      {
+        "entity": "QuantERA",
+        "page": 6,
+        "role_in_text": "QuantERA is a genuine European success story, managing a joint research program of the European Union, its member states and several associated countries.",
+        "occurrence_sentence": "QuantERA is a genuine European success story, managing a joint research program of the European Union, its member states and several associated countries.",
+        "source_document": "Europe23.pdf"
+      },
+      {
+        "entity": "QuantERA",
+        "page": 9,
+        "role_in_text": "first programme designed to accelerate the development of QT in Europe",
+        "occurrence_sentence": "QuantERA is the first programme designed to accelerate the development of QT in Europe.",
+        "source_document": "Europe23.pdf"
+      },
+      {
+        "entity": "QuantERA (QuantERA)",
+        "page": 98,
+        "role_in_text": "QuantERA partners",
+        "occurrence_sentence": "This report was prepared by Watse Castelein (AEI), Sylwia Kostka (NCN) and Justyna Mitan-Piłat  (NCN) in collaboration with all QuantERA partners with the support of the Quantum Community Network.",
+        "source_document": "Europe23.pdf"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Government",
+    "sphere": "Single",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "QuantERA Consortium",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "business support institutions",
+    "role_in_text": "Research Funders for Quantum Technologies",
+    "technology_area": "deep tech general",
+    "occurrence_sentence": "QuantERA Consortium – Research Funders for Quantum Technologies",
+    "source_document": "Europe23.pdf",
+    "page": 96,
+    "confidence": "high",
+    "canonical_actor_key": "quantera consortium",
+    "aliases": [
+      "QuantERA Consortium"
+    ],
+    "pages": [
+      96
+    ],
+    "mentions": [
+      {
+        "entity": "QuantERA Consortium",
+        "page": 96,
+        "role_in_text": "Research Funders for Quantum Technologies",
+        "occurrence_sentence": "QuantERA Consortium – Research Funders for Quantum Technologies",
+        "source_document": "Europe23.pdf"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Intermediary",
+    "sphere": "Multi",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "QuantERA in figures",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "universities",
+    "role_in_text": "Quantum Technologies in Europe",
+    "technology_area": "quantum computing",
+    "occurrence_sentence": "Quantum Technologies in Europe | 9",
+    "source_document": "Europe23.pdf",
+    "page": 5,
+    "confidence": "high",
+    "canonical_actor_key": "quantera in figures",
+    "aliases": [
+      "QuantERA in figures"
+    ],
+    "pages": [
+      5
+    ],
+    "mentions": [
+      {
+        "entity": "QuantERA in figures",
+        "page": 5,
+        "role_in_text": "Quantum Technologies in Europe",
+        "occurrence_sentence": "Quantum Technologies in Europe | 9",
+        "source_document": "Europe23.pdf"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Academia",
+    "sphere": "Single",
+    "r_and_d": "R&D",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "QuantERA network",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "universities",
+    "role_in_text": "Quantum Technologies in Europe",
+    "technology_area": "quantum computing",
+    "occurrence_sentence": "Quantum Technologies in Europe | 9",
+    "source_document": "Europe23.pdf",
+    "page": 5,
+    "confidence": "high",
+    "canonical_actor_key": "quantera network",
+    "aliases": [
+      "QuantERA network"
+    ],
+    "pages": [
+      5,
+      11
+    ],
+    "mentions": [
+      {
+        "entity": "QuantERA network",
+        "page": 5,
+        "role_in_text": "Quantum Technologies in Europe",
+        "occurrence_sentence": "Quantum Technologies in Europe | 9",
+        "source_document": "Europe23.pdf"
+      },
+      {
+        "entity": "QuantERA network",
+        "page": 11,
+        "role_in_text": "network",
+        "occurrence_sentence": "QuantERA network",
+        "source_document": "Europe23.pdf"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Academia",
+    "sphere": "Single",
+    "r_and_d": "R&D",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "Quantum Community Network",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "business support institutions",
+    "role_in_text": "support",
+    "technology_area": "quantum computing",
+    "occurrence_sentence": "This report was prepared by Watse Castelein (AEI), Sylwia Kostka (NCN) and Justyna Mitan-Piłat  (NCN) in collaboration",
+    "source_document": "Europe23.pdf",
+    "page": 98,
+    "canonical_actor_key": "quantum community network",
+    "aliases": [
+      "QCN",
+      "Quantum Community Network",
+      "Quantum Community Network (QCN)"
+    ],
+    "pages": [
+      91,
+      98
+    ],
+    "mentions": [
+      {
+        "entity": "Quantum Community Network (QCN)",
+        "page": 91,
+        "role_in_text": "Türkiye is represented in the Quantum Community Network (QCN)",
+        "occurrence_sentence": "Türkiye is represented in the Quantum Community Network (QCN) and contributes to and participates in the Horizon Europe programme.",
+        "source_document": "Europe23.pdf"
+      },
+      {
+        "entity": "Quantum Community Network",
+        "page": 98,
+        "role_in_text": "support",
+        "occurrence_sentence": "This report was prepared by Watse Castelein (AEI), Sylwia Kostka (NCN) and Justyna Mitan-Piłat  (NCN) in collaboration",
+        "source_document": "Europe23.pdf"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Intermediary",
+    "sphere": "Multi",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "Quantum Technologies",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "research institutes",
+    "role_in_text": "Public Policies in Europe",
+    "technology_area": "quantum computing",
+    "occurrence_sentence": "Quantum Technologies Public Policies in Europe",
+    "source_document": "Europe23.pdf",
+    "page": 1,
+    "confidence": "high",
+    "canonical_actor_key": "quantum technologies",
+    "aliases": [
+      "Quantum Technologies"
+    ],
+    "pages": [
+      1
+    ],
+    "mentions": [
+      {
+        "entity": "Quantum Technologies",
+        "page": 1,
+        "role_in_text": "Public Policies in Europe",
+        "occurrence_sentence": "Quantum Technologies Public Policies in Europe",
+        "source_document": "Europe23.pdf"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Academia",
+    "sphere": "Single",
+    "r_and_d": "R&D",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "QUTE Center",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "business support institutions",
+    "role_in_text": "founded to increase Slovakia's competitiveness and excellence in research and innovation in QT",
+    "technology_area": "quantum computing",
+    "occurrence_sentence": "In 2020 QUTE Center was founded to increase Slovakia's competitiveness and excellence in research and innovation in QT.",
+    "source_document": "Europe23.pdf",
+    "page": 78,
+    "canonical_actor_key": "qute center",
+    "aliases": [
+      "QUTE Center"
+    ],
+    "pages": [
+      78
+    ],
+    "mentions": [
+      {
+        "entity": "QUTE Center",
+        "page": 78,
+        "role_in_text": "founded to increase Slovakia's competitiveness and excellence in research and innovation in QT",
+        "occurrence_sentence": "In 2020 QUTE Center was founded to increase Slovakia's competitiveness and excellence in research and innovation in QT.",
+        "source_document": "Europe23.pdf"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Intermediary",
+    "sphere": "Multi",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "Slovak Academy of Sciences (SAS)",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "research institutes",
+    "role_in_text": "active partner in the QUTE Center",
+    "technology_area": "quantum computing",
+    "occurrence_sentence": "SAS is an active partner in the QUTE Center and will also continue participation in QuantERA.",
+    "source_document": "Europe23.pdf",
+    "page": 78,
+    "confidence": "high",
+    "canonical_actor_key": "slovak academy of sciences",
+    "aliases": [
+      "SAS",
+      "Slovak Academy of Sciences",
+      "Slovak Academy of Sciences (SAS)"
+    ],
+    "pages": [
+      78
+    ],
+    "mentions": [
+      {
+        "entity": "Slovak Academy of Sciences (SAS)",
+        "page": 78,
+        "role_in_text": "active partner in the QUTE Center",
+        "occurrence_sentence": "SAS is an active partner in the QUTE Center and will also continue participation in QuantERA.",
+        "source_document": "Europe23.pdf"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Academia",
+    "sphere": "Single",
+    "r_and_d": "R&D",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "Slovak National Center for Quantum Technologies (QUTE)",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "research institutes",
+    "role_in_text": "developing the national strategic research agenda in quantum",
+    "technology_area": "quantum computing",
+    "occurrence_sentence": "The national strategic research agenda in quantum is developed through the mission of QUTE98 - Slovak National Center for Quantum Technologies.",
+    "source_document": "Europe23.pdf",
+    "page": 77,
+    "confidence": "high",
+    "canonical_actor_key": "slovak national center for quantum technologies",
+    "aliases": [
+      "QUTE",
+      "Slovak National Center for Quantum Technologies",
+      "Slovak National Center for Quantum Technologies (QUTE)"
+    ],
+    "pages": [
+      77
+    ],
+    "mentions": [
+      {
+        "entity": "Slovak National Center for Quantum Technologies (QUTE)",
+        "page": 77,
+        "role_in_text": "developing the national strategic research agenda in quantum",
+        "occurrence_sentence": "The national strategic research agenda in quantum is developed through the mission of QUTE98 - Slovak National Center for Quantum Technologies.",
+        "source_document": "Europe23.pdf"
+      },
+      {
+        "entity": "Slovak National Center for Quantum Technologies (QUTE)",
+        "page": 77,
+        "role_in_text": "creating optimal conditions to increase Slovakia's competitiveness and excellence in research and innovation in QT",
+        "occurrence_sentence": "QUTE Center started to create optimal conditions to increase Slovakia's competitiveness and excellence in research and innovation in QT.",
+        "source_document": "Europe23.pdf"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Academia",
+    "sphere": "Single",
+    "r_and_d": "R&D",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "Slovenian Ministry",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "national government institutions",
+    "role_in_text": "finances projects",
+    "technology_area": "quantum communication",
+    "occurrence_sentence": "Within QuantERA 2021 Call Slovenian Ministry finances 4 projects in an amount of €0.6 M.",
+    "source_document": "Europe23.pdf",
+    "page": 80,
+    "confidence": "high",
+    "canonical_actor_key": "slovenian ministry",
+    "aliases": [
+      "Slovenian Ministry"
+    ],
+    "pages": [
+      80
+    ],
+    "mentions": [
+      {
+        "entity": "Slovenian Ministry",
+        "page": 80,
+        "role_in_text": "finances projects",
+        "occurrence_sentence": "Within QuantERA 2021 Call Slovenian Ministry finances 4 projects in an amount of €0.6 M.",
+        "source_document": "Europe23.pdf"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Government",
+    "sphere": "Single",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "Slovenian National Research Agency",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "national government institutions",
+    "role_in_text": "published a call for new research programme funding",
+    "technology_area": "quantum technology",
+    "occurrence_sentence": "In 2021, the Slovenian National Research Agency published a call for new research programme funding where they prioritised at least one new research programme to be from the QT field.",
+    "source_document": "Europe23.pdf",
+    "page": 80,
+    "canonical_actor_key": "slovenian national research agency",
+    "aliases": [
+      "Slovenian National Research Agency"
+    ],
+    "pages": [
+      80
+    ],
+    "mentions": [
+      {
+        "entity": "Slovenian National Research Agency",
+        "page": 80,
+        "role_in_text": "published a call for new research programme funding",
+        "occurrence_sentence": "In 2021, the Slovenian National Research Agency published a call for new research programme funding where they prioritised at least one new research programme to be from the QT field.",
+        "source_document": "Europe23.pdf"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Government",
+    "sphere": "Single",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "State Research Agency (AEI)",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "national government institutions",
+    "role_in_text": "responsible for elaborating and implementing government policies on scientific research, technological development and innovation",
+    "technology_area": "deep tech general",
+    "occurrence_sentence": "The State Research Agency (AEI) is responsible for elaborating and implementing government policies on scientific research, technological development and innovation in all sectors, as well as for coordinating state-owned research institutions.",
+    "source_document": "Europe23.pdf",
+    "page": 82,
+    "confidence": "high",
+    "canonical_actor_key": "state research agency",
+    "aliases": [
+      "AEI",
+      "State Research Agency",
+      "State Research Agency (AEI)"
+    ],
+    "pages": [
+      81,
+      82
+    ],
+    "mentions": [
+      {
+        "entity": "State Research Agency (AEI)",
+        "page": 81,
+        "role_in_text": "funds QT through national open calls",
+        "occurrence_sentence": "At the national level, AEI funds QT through national open calls and the Centre for the Development of Industrial Technology (CDTI) funds specifically industrial partners.",
+        "source_document": "Europe23.pdf"
+      },
+      {
+        "entity": "State Research Agency (AEI)",
+        "page": 82,
+        "role_in_text": "responsible for elaborating and implementing government policies on scientific research, technological development and innovation",
+        "occurrence_sentence": "The State Research Agency (AEI) is responsible for elaborating and implementing government policies on scientific research, technological development and innovation in all sectors, as well as for coordinating state-owned research institutions.",
+        "source_document": "Europe23.pdf"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Government",
+    "sphere": "Single",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "Swedish Research Council (VR)",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "national government institutions",
+    "role_in_text": "supports QT development",
+    "technology_area": "quantum computing",
+    "occurrence_sentence": "The QT field is supported in Sweden mainly through the activities of VR.",
+    "source_document": "Europe23.pdf",
+    "page": 85,
+    "confidence": "high",
+    "canonical_actor_key": "swedish research council",
+    "aliases": [
+      "Swedish Research Council",
+      "Swedish Research Council (VR)",
+      "VR"
+    ],
+    "pages": [
+      84,
+      85
+    ],
+    "mentions": [
+      {
+        "entity": "Swedish Research Council (VR)",
+        "page": 84,
+        "role_in_text": "is Sweden is the largest governmental research",
+        "occurrence_sentence": "",
+        "source_document": "Europe23.pdf"
+      },
+      {
+        "entity": "Swedish Research Council (VR)",
+        "page": 85,
+        "role_in_text": "supports QT development",
+        "occurrence_sentence": "The QT field is supported in Sweden mainly through the activities of VR.",
+        "source_document": "Europe23.pdf"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Government",
+    "sphere": "Single",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "Swiss National Science Foundation (SNSF)",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "national government institutions",
+    "role_in_text": "funding agency",
+    "technology_area": "deep tech general",
+    "occurrence_sentence": "This is the main funding scheme of the Swiss National Science Foundation (SNSF) and includes national projects as well as bi/multilateral ones (Weave/Lead-Agency scheme).",
+    "source_document": "Europe23.pdf",
+    "page": 87,
+    "confidence": "high",
+    "canonical_actor_key": "swiss national science foundation",
+    "aliases": [
+      "SNSF",
+      "Swiss National Science Foundation",
+      "Swiss National Science Foundation (SNSF)"
+    ],
+    "pages": [
+      86,
+      87
+    ],
+    "mentions": [
+      {
+        "entity": "Swiss National Science Foundation (SNSF)",
+        "page": 86,
+        "role_in_text": "funding agency",
+        "occurrence_sentence": "The Swiss National Science Foundation (SNSF), mandated by the federal government, supports basic science in all academic disciplines.",
+        "source_document": "Europe23.pdf"
+      },
+      {
+        "entity": "Swiss National Science Foundation (SNSF)",
+        "page": 87,
+        "role_in_text": "funding agency",
+        "occurrence_sentence": "This is the main funding scheme of the Swiss National Science Foundation (SNSF) and includes national projects as well as bi/multilateral ones (Weave/Lead-Agency scheme).",
+        "source_document": "Europe23.pdf"
+      },
+      {
+        "entity": "Swiss National Science Foundation (SNSF)",
+        "page": 87,
+        "role_in_text": "funding agency",
+        "occurrence_sentence": "Part of this funding is dedicated to QT The National Centres of Competence in Research (NCCR) promote long-term research networks in areas of strategic importance for Swiss science, the Swiss",
+        "source_document": "Europe23.pdf"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Government",
+    "sphere": "Single",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "Sylwia Kostka",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "individual",
+    "role_in_text": "On behalf of the QuantERA network, we are proud to share with you the Quantum Technologies Public Policies Report.",
+    "technology_area": "quantum computing",
+    "occurrence_sentence": "On behalf of the QuantERA network, we are proud to share with you the Quantum Technologies Public Policies Report.",
+    "source_document": "Europe23.pdf",
+    "page": 6,
+    "canonical_actor_key": "sylwia kostka",
+    "aliases": [
+      "Sylwia Kostka"
+    ],
+    "pages": [
+      6
+    ],
+    "mentions": [
+      {
+        "entity": "Sylwia Kostka",
+        "page": 6,
+        "role_in_text": "On behalf of the QuantERA network, we are proud to share with you the Quantum Technologies Public Policies Report.",
+        "occurrence_sentence": "On behalf of the QuantERA network, we are proud to share with you the Quantum Technologies Public Policies Report.",
+        "source_document": "Europe23.pdf"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Unknown",
+    "sphere": "Unknown",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "unknown_category",
+    "classification_needs_review": true,
+    "classification_review_reason": "unmapped_category:individual; individual_requires_role_classification"
+  },
+  {
+    "entity": "TÜBİTAK",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "national government institutions",
+    "role_in_text": "organizes workshops, online courses, summer schools, and yearly activities for World Quantum Day",
+    "technology_area": "quantum computing",
+    "occurrence_sentence": "TÜBİTAK has organised several national workshops related to quantum computing.",
+    "source_document": "Europe23.pdf",
+    "page": 90,
+    "confidence": "high",
+    "canonical_actor_key": "t bi tak",
+    "aliases": [
+      "TÜBİTAK"
+    ],
+    "pages": [
+      90
+    ],
+    "mentions": [
+      {
+        "entity": "TÜBİTAK",
+        "page": 90,
+        "role_in_text": "organizes workshops, online courses, summer schools, and yearly activities for World Quantum Day",
+        "occurrence_sentence": "TÜBİTAK has organised several national workshops related to quantum computing.",
+        "source_document": "Europe23.pdf"
+      },
+      {
+        "entity": "TÜBİTAK",
+        "page": 90,
+        "role_in_text": "has established a division related to QT",
+        "occurrence_sentence": "TÜBİTAK Informatics and Information Security Research Center (BILGEM), one of the major public research centres in Türkiye, has established a division related to QT, which is expected to contribute to relevant research areas including quantum computing",
+        "source_document": "Europe23.pdf"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Government",
+    "sphere": "Single",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "TÜBİTAK BİLGEM",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "research institutes",
+    "role_in_text": "TÜBİTAK BİLGEM is a member of ETSI QKD ISG and Quantum Industry Consortium (QuIC).",
+    "technology_area": "quantum cryptography",
+    "occurrence_sentence": "Moreover, TÜBİTAK BİLGEM is a member of",
+    "source_document": "Europe23.pdf",
+    "page": 91,
+    "canonical_actor_key": "t bi tak bi lgem",
+    "aliases": [
+      "TÜBİTAK BİLGEM"
+    ],
+    "pages": [
+      91
+    ],
+    "mentions": [
+      {
+        "entity": "TÜBİTAK BİLGEM",
+        "page": 91,
+        "role_in_text": "TÜBİTAK BİLGEM is a member of ETSI QKD ISG and Quantum Industry Consortium (QuIC).",
+        "occurrence_sentence": "Moreover, TÜBİTAK BİLGEM is a member of",
+        "source_document": "Europe23.pdf"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Academia",
+    "sphere": "Single",
+    "r_and_d": "R&D",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "UEFISCDI",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "national government institutions",
+    "role_in_text": "administrates programmes with instruments dedicated to various research and development activities",
+    "technology_area": "deep tech general",
+    "occurrence_sentence": "In 2022, the 4th National RDI Plan was approved and UEFISCDI administrates (partially or totally) 7 programmes with instruments dedicated to:",
+    "source_document": "Europe23.pdf",
+    "page": 76,
+    "confidence": "high",
+    "canonical_actor_key": "uefiscdi",
+    "aliases": [
+      "UEFISCDI"
+    ],
+    "pages": [
+      76
+    ],
+    "mentions": [
+      {
+        "entity": "UEFISCDI",
+        "page": 76,
+        "role_in_text": "administrates programmes with instruments dedicated to various research and development activities",
+        "occurrence_sentence": "In 2022, the 4th National RDI Plan was approved and UEFISCDI administrates (partially or totally) 7 programmes with instruments dedicated to:",
+        "source_document": "Europe23.pdf"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Government",
+    "sphere": "Single",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "University of Amsterdam / CWI (UvA/CWI)",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "research institutes",
+    "role_in_text": "",
+    "source_document": "Europe23.pdf",
+    "page": 10,
+    "canonical_actor_key": "university of amsterdam cwi",
+    "aliases": [
+      "University of Amsterdam / CWI",
+      "University of Amsterdam / CWI (UvA/CWI)",
+      "UvA/CWI"
+    ],
+    "pages": [
+      10
+    ],
+    "mentions": [
+      {
+        "entity": "University of Amsterdam / CWI (UvA/CWI)",
+        "page": 10,
+        "role_in_text": "",
+        "occurrence_sentence": "",
+        "source_document": "Europe23.pdf"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Academia",
+    "sphere": "Single",
+    "r_and_d": "R&D",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "University of Stuttgart (USTUTT)",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "universities",
+    "role_in_text": "institution",
+    "technology_area": "quantum computing",
+    "occurrence_sentence": "Stefanie Barz, University of Stuttgart",
+    "source_document": "Europe23.pdf",
+    "page": 10,
+    "confidence": "high",
+    "canonical_actor_key": "university of stuttgart",
+    "aliases": [
+      "USTUTT",
+      "University of Stuttgart",
+      "University of Stuttgart (USTUTT)"
+    ],
+    "pages": [
+      10
+    ],
+    "mentions": [
+      {
+        "entity": "University of Stuttgart (USTUTT)",
+        "page": 10,
+        "role_in_text": "institution",
+        "occurrence_sentence": "Stefanie Barz, University of Stuttgart",
+        "source_document": "Europe23.pdf"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Academia",
+    "sphere": "Single",
+    "r_and_d": "R&D",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "Wallenberg Centre for Quantum Technology (WACQT)",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "research institutes",
+    "role_in_text": "a 12-year SEK 1 B (€88,5 M) research programme that aims to take Swedish research and industry to the forefront of QT",
+    "technology_area": "quantum computing | quantum communication | quantum sensing",
+    "occurrence_sentence": "Currently, the most important Swedish research programme is the Wallenberg Centre for Quantum Technology (WACQT) – a 12-year SEK 1 B (€88,5 M) research programme that aims to take Swedish research and industry to the forefront of QT.",
+    "source_document": "Europe23.pdf",
+    "page": 84,
+    "confidence": "high",
+    "canonical_actor_key": "wallenberg centre for quantum technology",
+    "aliases": [
+      "WACQT",
+      "Wallenberg Centre for Quantum Technology",
+      "Wallenberg Centre for Quantum Technology (WACQT)"
+    ],
+    "pages": [
+      84
+    ],
+    "mentions": [
+      {
+        "entity": "Wallenberg Centre for Quantum Technology (WACQT)",
+        "page": 84,
+        "role_in_text": "a 12-year SEK 1 B (€88,5 M) research programme that aims to take Swedish research and industry to the forefront of QT",
+        "occurrence_sentence": "Currently, the most important Swedish research programme is the Wallenberg Centre for Quantum Technology (WACQT) – a 12-year SEK 1 B (€88,5 M) research programme that aims to take Swedish research and industry to the forefront of QT.",
+        "source_document": "Europe23.pdf"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Academia",
+    "sphere": "Single",
+    "r_and_d": "R&D",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  }
+]

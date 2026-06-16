@@ -1,0 +1,251 @@
+[
+  {
+    "entity": "America",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "country",
+    "role_in_text": "policy, geopolitical, funding, strategic, or ecosystem actor",
+    "technology_area": "deep tech general",
+    "occurrence_sentence": "A STRATEGIC VISION FOR AMERICA'S QUANTUM NETWORKS",
+    "source_document": "Luis_USA20.pdf",
+    "page": 2,
+    "confidence": "high",
+    "canonical_actor_key": "america",
+    "aliases": [
+      "America"
+    ],
+    "pages": [
+      2
+    ],
+    "mentions": [
+      {
+        "entity": "America",
+        "page": 2,
+        "role_in_text": "policy, geopolitical, funding, strategic, or ecosystem actor",
+        "occurrence_sentence": "A STRATEGIC VISION FOR AMERICA'S QUANTUM NETWORKS",
+        "source_document": "Luis_USA20.pdf"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Unknown",
+    "sphere": "Unknown",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "unknown_category",
+    "classification_needs_review": true,
+    "classification_review_reason": "unmapped_category:country"
+  },
+  {
+    "entity": "National Quantum Coordination Office (NQCO)",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "national government institutions",
+    "role_in_text": "coordinates quantum information science research and development across the Federal Government",
+    "technology_area": "quantum computing",
+    "occurrence_sentence": "Established by the National Quantum Initiative Act of 2018 to reside within the White House Office of Science and Technology Policy, the National Quantum Coordination Office coordinates quantum information science research and development across the Federal Government.",
+    "source_document": "Luis_USA20.pdf",
+    "page": 4,
+    "confidence": "high",
+    "canonical_actor_key": "national quantum coordination office",
+    "aliases": [
+      "NQCO",
+      "National Quantum Coordination Office",
+      "National Quantum Coordination Office (NQCO)"
+    ],
+    "pages": [
+      1,
+      2,
+      4
+    ],
+    "mentions": [
+      {
+        "entity": "National Quantum Coordination Office",
+        "page": 1,
+        "role_in_text": "Producer of the document",
+        "occurrence_sentence": "Product of THE WHITE HOUSE NATIONAL QUANTUM COORDINATION OFFICE",
+        "source_document": "Luis_USA20.pdf"
+      },
+      {
+        "entity": "National Quantum Coordination Office (NQCO)",
+        "page": 2,
+        "role_in_text": "established to unify Federal R&D activities across government",
+        "occurrence_sentence": "Over the past year, as called for by the NQIA, The White House established the National Quantum Coordination Office to unify Federal R&D activities across government, and the National Quantum Initiative Advisory Committee to ensure",
+        "source_document": "Luis_USA20.pdf"
+      },
+      {
+        "entity": "National Quantum Coordination Office (NQCO)",
+        "page": 2,
+        "role_in_text": "unify Federal R&D activities across government",
+        "occurrence_sentence": "The White House established the National Quantum Coordination Office to unify Federal R&D activities across government",
+        "source_document": "Luis_USA20.pdf"
+      },
+      {
+        "entity": "National Quantum Coordination Office (NQCO)",
+        "page": 4,
+        "role_in_text": "coordinates quantum information science research and development across the Federal Government",
+        "occurrence_sentence": "Established by the National Quantum Initiative Act of 2018 to reside within the White House Office of Science and Technology Policy, the National Quantum Coordination Office coordinates quantum information science research and development across the Federal Government.",
+        "source_document": "Luis_USA20.pdf"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Government",
+    "sphere": "Single",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "National Quantum Initiative",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "national government institutions",
+    "role_in_text": "coordination mechanisms",
+    "technology_area": "quantum computing | quantum communication | quantum sensing | quantum materials | quantum simulation | quantum cryptography | deep tech general",
+    "occurrence_sentence": "This includes both the strong support of federal agencies performing the research and development and also a dedication to using the new technologies and scientific discoveries to enhance the execution of agency missions.",
+    "source_document": "Luis_USA20.pdf",
+    "page": 3,
+    "confidence": "high",
+    "canonical_actor_key": "national quantum initiative",
+    "aliases": [
+      "National Quantum Initiative"
+    ],
+    "pages": [
+      3
+    ],
+    "mentions": [
+      {
+        "entity": "National Quantum Initiative",
+        "page": 3,
+        "role_in_text": "coordination mechanisms",
+        "occurrence_sentence": "This includes both the strong support of federal agencies performing the research and development and also a dedication to using the new technologies and scientific discoveries to enhance the execution of agency missions.",
+        "source_document": "Luis_USA20.pdf"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Government",
+    "sphere": "Single",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "Subcommittee on Quantum Information Science (SCQIS)",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "national government institutions",
+    "role_in_text": "coordinates Federal research and development",
+    "technology_area": "quantum computing",
+    "occurrence_sentence": "The NSTC Subcommittee on Quantum Information Science (SCQIS) coordinates Federal research and development (R&D) in quantum",
+    "source_document": "Luis_USA20.pdf",
+    "page": 4,
+    "canonical_actor_key": "subcommittee on quantum information science",
+    "aliases": [
+      "SCQIS",
+      "Subcommittee on Quantum Information Science",
+      "Subcommittee on Quantum Information Science (SCQIS)"
+    ],
+    "pages": [
+      4
+    ],
+    "mentions": [
+      {
+        "entity": "Subcommittee on Quantum Information Science (SCQIS)",
+        "page": 4,
+        "role_in_text": "coordinates Federal research and development",
+        "occurrence_sentence": "The NSTC Subcommittee on Quantum Information Science (SCQIS) coordinates Federal research and development (R&D) in quantum",
+        "source_document": "Luis_USA20.pdf"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Government",
+    "sphere": "Single",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "White House",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "national government institutions",
+    "role_in_text": "Host of the summit",
+    "technology_area": "quantum computing",
+    "occurrence_sentence": "SUMMARY OF THE 2018 WHITE HOUSE SUMMIT ON ADVANCING AMERICAN LEADERSHIP IN QUANTUM INFORMATION SCIENCE",
+    "source_document": "Luis_USA20.pdf",
+    "page": 1,
+    "confidence": "high",
+    "canonical_actor_key": "white house",
+    "aliases": [
+      "White House"
+    ],
+    "pages": [
+      1
+    ],
+    "mentions": [
+      {
+        "entity": "White House",
+        "page": 1,
+        "role_in_text": "Host of the summit",
+        "occurrence_sentence": "SUMMARY OF THE 2018 WHITE HOUSE SUMMIT ON ADVANCING AMERICAN LEADERSHIP IN QUANTUM INFORMATION SCIENCE",
+        "source_document": "Luis_USA20.pdf"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Government",
+    "sphere": "Single",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "White House National Quantum Coordination Office",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "national government institutions",
+    "role_in_text": "released A Strategic Vision for America's Quantum Networks",
+    "technology_area": "quantum computing",
+    "occurrence_sentence": "The White House National Quantum Coordination Office has released  A Strategic Vision for America's Quantum Networks.",
+    "source_document": "Luis_USA20.pdf",
+    "page": 2,
+    "confidence": "high",
+    "canonical_actor_key": "white house national quantum coordination office",
+    "aliases": [
+      "White House National Quantum Coordination Office"
+    ],
+    "pages": [
+      2
+    ],
+    "mentions": [
+      {
+        "entity": "White House National Quantum Coordination Office",
+        "page": 2,
+        "role_in_text": "released A Strategic Vision for America's Quantum Networks",
+        "occurrence_sentence": "The White House National Quantum Coordination Office has released A Strategic Vision for America's Quantum Networks.",
+        "source_document": "Luis_USA20.pdf"
+      },
+      {
+        "entity": "White House National Quantum Coordination Office",
+        "page": 2,
+        "role_in_text": "released A Strategic Vision for America's Quantum Networks",
+        "occurrence_sentence": "The White House National Quantum Coordination Office has released  A Strategic Vision for America's Quantum Networks.",
+        "source_document": "Luis_USA20.pdf"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Government",
+    "sphere": "Single",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  }
+]

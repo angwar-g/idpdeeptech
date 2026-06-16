@@ -1,0 +1,63 @@
+
+========================================================================
+RUN STARTED  2026-06-16 03:32:28
+pdf_pipeline.py UAE25.pdf
+========================================================================
+
+[03:32:28 +0s | UAE25] === 1 actor extraction ===
+[03:32:28 +0s | UAE25] Reading PDF: UAE25.pdf
+[03:32:28 +0s | UAE25] Extracting: UAE25.pdf, page 1/11, chunk 1/1
+[03:32:32 +4s | UAE25] Extracting: UAE25.pdf, page 2/11, chunk 1/1
+[03:32:38 +10s | UAE25] Repaired malformed JSON.
+[03:32:38 +10s | UAE25] Extracting: UAE25.pdf, page 3/11, chunk 1/1
+[03:32:49 +17s | UAE25] Extracting: UAE25.pdf, page 4/11, chunk 1/1
+[03:32:56 +24s | UAE25] Repaired malformed JSON.
+[03:32:56 +24s | UAE25] Extracting: UAE25.pdf, page 5/11, chunk 1/1
+[03:33:02 +31s | UAE25] Extracting: UAE25.pdf, page 6/11, chunk 1/1
+[03:33:08 +37s | UAE25] Extracting: UAE25.pdf, page 7/11, chunk 1/1
+[03:33:09 +38s | UAE25] Extracting: UAE25.pdf, page 8/11, chunk 1/1
+[03:33:14 +43s | UAE25] Repaired malformed JSON.
+[03:33:14 +43s | UAE25] Extracting: UAE25.pdf, page 9/11, chunk 1/1
+[03:33:23 +49s | UAE25] Repaired malformed JSON.
+[03:33:23 +49s | UAE25] Extracting: UAE25.pdf, page 10/11, chunk 1/1
+[03:33:30 +56s | UAE25] Repaired malformed JSON.
+[03:33:30 +56s | UAE25] Extracting: UAE25.pdf, page 11/11, chunk 1/1
+[03:33:38 +1m 4s | UAE25] Repaired malformed JSON.
+[03:33:38 +1m 4s | UAE25] Saved 1_actor_results.json with 19 clean actors
+
+[03:33:38 +1m 4s | UAE25] === 2 clean actors ===
+[03:33:38 +1m 4s | UAE25] Loaded 19 extracted records
+[03:33:38 +1m 4s | UAE25] Saved 2_actor_nodes.json with 9 canonical actor nodes
+
+[03:33:38 +1m 4s | UAE25] === 3 interaction extraction ===
+[03:33:38 +1m 4s | UAE25] Processing interactions for: UAE25.pdf
+[03:33:38 +1m 4s | UAE25] Extracting interactions: UAE25.pdf, page 2/11, chunk 1/1
+[03:33:44 +1m 10s | UAE25] Extracting interactions: UAE25.pdf, page 4/11, chunk 1/1
+[03:33:51 +1m 17s | UAE25] Extracting interactions: UAE25.pdf, page 5/11, chunk 1/1
+[03:33:57 +1m 20s | UAE25] Extracting interactions: UAE25.pdf, page 6/11, chunk 1/1
+[03:34:04 +1m 27s | UAE25] Extracting interactions: UAE25.pdf, page 10/11, chunk 1/1
+[03:34:09 +1m 32s | UAE25] Extracting interactions: UAE25.pdf, page 11/11, chunk 1/1
+[03:34:16 +1m 39s | UAE25] Saved 3_interaction_results.json with 8 extracted interactions.
+
+[03:34:16 +1m 39s | UAE25] === 4 clean interactions ===
+[03:34:16 +1m 39s | UAE25] Saved 4_edges.json with 0 cleaned interactions.
+
+[03:34:16 +1m 39s | UAE25] === 5 helix enrichment ===
+[03:34:16 +1m 39s | UAE25] Wrote 5_nodes.json (9 actors)
+[03:34:16 +1m 39s | UAE25] Wrote 5_edges.json (0 interactions)
+[03:34:16 +1m 39s | UAE25] Actor helix counts: {'Academia': 2, 'Government': 3, 'Industry': 2, 'Intermediary': 1, 'Unknown': 1}
+[03:34:16 +1m 39s | UAE25] Functional-space counts: {}
+
+[03:34:16 +1m 39s | UAE25] === 6 network visualisation ===
+[03:34:16 +1m 39s | UAE25] Wrote quantum_network.html
+[03:34:16 +1m 39s | UAE25] Nodes: 9
+[03:34:16 +1m 39s | UAE25] Edges: 0
+
+[03:34:16 +1m 39s | UAE25] Done. Outputs written to: /home/lv/IDP/idpdeeptech/pipeline/pdf_outputs/UAE25
+[03:34:16 +1m 39s | UAE25] Log: /home/lv/IDP/idpdeeptech/pipeline/pdf_outputs/UAE25/run.log
+
+========================================================================
+RUN FINISHED 2026-06-16 03:34:16  (OK)
+Started:     2026-06-16 03:32:28
+Elapsed:     1m 39s
+========================================================================

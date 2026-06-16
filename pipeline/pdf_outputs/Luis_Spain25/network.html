@@ -1,0 +1,321 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+            <script>function neighbourhoodHighlight(params) {
+  // console.log("in nieghbourhoodhighlight");
+  allNodes = nodes.get({ returnType: "Object" });
+  // originalNodes = JSON.parse(JSON.stringify(allNodes));
+  // if something is selected:
+  if (params.nodes.length > 0) {
+    highlightActive = true;
+    var i, j;
+    var selectedNode = params.nodes[0];
+    var degrees = 2;
+
+    // mark all nodes as hard to read.
+    for (let nodeId in allNodes) {
+      // nodeColors[nodeId] = allNodes[nodeId].color;
+      allNodes[nodeId].color = "rgba(200,200,200,0.5)";
+      if (allNodes[nodeId].hiddenLabel === undefined) {
+        allNodes[nodeId].hiddenLabel = allNodes[nodeId].label;
+        allNodes[nodeId].label = undefined;
+      }
+    }
+    var connectedNodes = network.getConnectedNodes(selectedNode);
+    var allConnectedNodes = [];
+
+    // get the second degree nodes
+    for (i = 1; i < degrees; i++) {
+      for (j = 0; j < connectedNodes.length; j++) {
+        allConnectedNodes = allConnectedNodes.concat(
+          network.getConnectedNodes(connectedNodes[j])
+        );
+      }
+    }
+
+    // all second degree nodes get a different color and their label back
+    for (i = 0; i < allConnectedNodes.length; i++) {
+      // allNodes[allConnectedNodes[i]].color = "pink";
+      allNodes[allConnectedNodes[i]].color = "rgba(150,150,150,0.75)";
+      if (allNodes[allConnectedNodes[i]].hiddenLabel !== undefined) {
+        allNodes[allConnectedNodes[i]].label =
+          allNodes[allConnectedNodes[i]].hiddenLabel;
+        allNodes[allConnectedNodes[i]].hiddenLabel = undefined;
+      }
+    }
+
+    // all first degree nodes get their own color and their label back
+    for (i = 0; i < connectedNodes.length; i++) {
+      // allNodes[connectedNodes[i]].color = undefined;
+      allNodes[connectedNodes[i]].color = nodeColors[connectedNodes[i]];
+      if (allNodes[connectedNodes[i]].hiddenLabel !== undefined) {
+        allNodes[connectedNodes[i]].label =
+          allNodes[connectedNodes[i]].hiddenLabel;
+        allNodes[connectedNodes[i]].hiddenLabel = undefined;
+      }
+    }
+
+    // the main node gets its own color and its label back.
+    // allNodes[selectedNode].color = undefined;
+    allNodes[selectedNode].color = nodeColors[selectedNode];
+    if (allNodes[selectedNode].hiddenLabel !== undefined) {
+      allNodes[selectedNode].label = allNodes[selectedNode].hiddenLabel;
+      allNodes[selectedNode].hiddenLabel = undefined;
+    }
+  } else if (highlightActive === true) {
+    // console.log("highlightActive was true");
+    // reset all nodes
+    for (let nodeId in allNodes) {
+      // allNodes[nodeId].color = "purple";
+      allNodes[nodeId].color = nodeColors[nodeId];
+      // delete allNodes[nodeId].color;
+      if (allNodes[nodeId].hiddenLabel !== undefined) {
+        allNodes[nodeId].label = allNodes[nodeId].hiddenLabel;
+        allNodes[nodeId].hiddenLabel = undefined;
+      }
+    }
+    highlightActive = false;
+  }
+
+  // transform the object into an array
+  var updateArray = [];
+  if (params.nodes.length > 0) {
+    for (let nodeId in allNodes) {
+      if (allNodes.hasOwnProperty(nodeId)) {
+        // console.log(allNodes[nodeId]);
+        updateArray.push(allNodes[nodeId]);
+      }
+    }
+    nodes.update(updateArray);
+  } else {
+    // console.log("Nothing was selected");
+    for (let nodeId in allNodes) {
+      if (allNodes.hasOwnProperty(nodeId)) {
+        // console.log(allNodes[nodeId]);
+        // allNodes[nodeId].color = {};
+        updateArray.push(allNodes[nodeId]);
+      }
+    }
+    nodes.update(updateArray);
+  }
+}
+
+function filterHighlight(params) {
+  allNodes = nodes.get({ returnType: "Object" });
+  // if something is selected:
+  if (params.nodes.length > 0) {
+    filterActive = true;
+    let selectedNodes = params.nodes;
+
+    // hiding all nodes and saving the label
+    for (let nodeId in allNodes) {
+      allNodes[nodeId].hidden = true;
+      if (allNodes[nodeId].savedLabel === undefined) {
+        allNodes[nodeId].savedLabel = allNodes[nodeId].label;
+        allNodes[nodeId].label = undefined;
+      }
+    }
+
+    for (let i=0; i < selectedNodes.length; i++) {
+      allNodes[selectedNodes[i]].hidden = false;
+      if (allNodes[selectedNodes[i]].savedLabel !== undefined) {
+        allNodes[selectedNodes[i]].label = allNodes[selectedNodes[i]].savedLabel;
+        allNodes[selectedNodes[i]].savedLabel = undefined;
+      }
+    }
+
+  } else if (filterActive === true) {
+    // reset all nodes
+    for (let nodeId in allNodes) {
+      allNodes[nodeId].hidden = false;
+      if (allNodes[nodeId].savedLabel !== undefined) {
+        allNodes[nodeId].label = allNodes[nodeId].savedLabel;
+        allNodes[nodeId].savedLabel = undefined;
+      }
+    }
+    filterActive = false;
+  }
+
+  // transform the object into an array
+  var updateArray = [];
+  if (params.nodes.length > 0) {
+    for (let nodeId in allNodes) {
+      if (allNodes.hasOwnProperty(nodeId)) {
+        updateArray.push(allNodes[nodeId]);
+      }
+    }
+    nodes.update(updateArray);
+  } else {
+    for (let nodeId in allNodes) {
+      if (allNodes.hasOwnProperty(nodeId)) {
+        updateArray.push(allNodes[nodeId]);
+      }
+    }
+    nodes.update(updateArray);
+  }
+}
+
+function selectNode(nodes) {
+  network.selectNodes(nodes);
+  neighbourhoodHighlight({ nodes: nodes });
+  return nodes;
+}
+
+function selectNodes(nodes) {
+  network.selectNodes(nodes);
+  filterHighlight({nodes: nodes});
+  return nodes;
+}
+
+function highlightFilter(filter) {
+  let selectedNodes = []
+  let selectedProp = filter['property']
+  if (filter['item'] === 'node') {
+    let allNodes = nodes.get({ returnType: "Object" });
+    for (let nodeId in allNodes) {
+      if (allNodes[nodeId][selectedProp] && filter['value'].includes((allNodes[nodeId][selectedProp]).toString())) {
+        selectedNodes.push(nodeId)
+      }
+    }
+  }
+  else if (filter['item'] === 'edge'){
+    let allEdges = edges.get({returnType: 'object'});
+    // check if the selected property exists for selected edge and select the nodes connected to the edge
+    for (let edge in allEdges) {
+      if (allEdges[edge][selectedProp] && filter['value'].includes((allEdges[edge][selectedProp]).toString())) {
+        selectedNodes.push(allEdges[edge]['from'])
+        selectedNodes.push(allEdges[edge]['to'])
+      }
+    }
+  }
+  selectNodes(selectedNodes)
+}</script>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/dist/vis-network.min.css" integrity="sha512-WgxfT5LWjfszlPHXRmBWHkV2eceiWTOBvrKCNbdgDYTHrT2AeLCGbF4sZlZw3UMN3WtL0tGUoIAKsu8mllg/XA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/vis-network.min.js" integrity="sha512-LnvoEWDFrqGHlHmDD2101OrLcbsfkrzoSpvtSQtxK3RMnRV0eOkhhBN2dXHKRrUU8p2DGRTk35n4O8nWSVe1mQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            
+            
+            
+            
+            
+            
+
+        
+<center>
+<h1></h1>
+</center>
+
+<!-- <link rel="stylesheet" href="../node_modules/vis/dist/vis.min.css" type="text/css" />
+<script type="text/javascript" src="../node_modules/vis/dist/vis.js"> </script>-->
+        <link
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+          crossorigin="anonymous"
+        />
+        <script
+          src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+          crossorigin="anonymous"
+        ></script>
+
+
+        <center>
+          <h1></h1>
+        </center>
+        <style type="text/css">
+
+             #mynetwork {
+                 width: 100%;
+                 height: 850px;
+                 background-color: #ffffff;
+                 border: 1px solid lightgray;
+                 position: relative;
+                 float: left;
+             }
+
+             
+
+             
+
+             
+        </style>
+    </head>
+
+
+    <body>
+        <div class="card" style="width: 100%">
+            
+            
+            <div id="mynetwork" class="card-body"></div>
+        </div>
+
+        
+        
+
+        <script type="text/javascript">
+
+              // initialize global variables.
+              var edges;
+              var nodes;
+              var allNodes;
+              var allEdges;
+              var nodeColors;
+              var originalNodes;
+              var network;
+              var container;
+              var options, data;
+              var filter = {
+                  item : '',
+                  property : '',
+                  value : []
+              };
+
+              
+
+              
+
+              // This method is responsible for drawing the graph, returns the drawn network
+              function drawGraph() {
+                  var container = document.getElementById('mynetwork');
+
+                  
+
+                  // parsing and collecting nodes and edges from the python
+                  nodes = new vis.DataSet([{"category": "sub-national government institutions", "color": "#54A24B", "font": {"size": 18}, "helix": "Government", "id": "autonomous communities", "label": "Autonomous Communities", "shape": "dot", "size": 18, "title": "\u003cb\u003eAutonomous Communities\u003c/b\u003e\u003cbr\u003eHelix: Government\u003cbr\u003eCategory: sub-national government institutions\u003cbr\u003eReview: False"}, {"category": "sub-national government institutions", "color": "#54A24B", "font": {"size": 18}, "helix": "Government", "id": "local authorities", "label": "Local Authorities", "shape": "dot", "size": 18, "title": "\u003cb\u003eLocal Authorities\u003c/b\u003e\u003cbr\u003eHelix: Government\u003cbr\u003eCategory: sub-national government institutions\u003cbr\u003eReview: False"}, {"category": "country", "color": "#999999", "font": {"size": 18}, "helix": "Unknown", "id": "spain", "label": "Spain", "shape": "dot", "size": 18, "title": "\u003cb\u003eSpain\u003c/b\u003e\u003cbr\u003eHelix: Unknown\u003cbr\u003eCategory: country\u003cbr\u003eReview: True"}, {"category": "national government institutions", "color": "#54A24B", "font": {"size": 18}, "helix": "Government", "id": "state", "label": "State", "shape": "dot", "size": 18, "title": "\u003cb\u003eState\u003c/b\u003e\u003cbr\u003eHelix: Government\u003cbr\u003eCategory: national government institutions\u003cbr\u003eReview: False"}, {"category": "universities", "color": "#4C78A8", "font": {"size": 18}, "helix": "Academia", "id": "universities", "label": "universities", "shape": "dot", "size": 18, "title": "\u003cb\u003euniversities\u003c/b\u003e\u003cbr\u003eHelix: Academia\u003cbr\u003eCategory: universities\u003cbr\u003eReview: False"}, {"category": "supranational government institutions", "color": "#54A24B", "font": {"size": 18}, "helix": "Government", "id": "european commission", "label": "European Commission", "shape": "dot", "size": 18, "title": "\u003cb\u003eEuropean Commission\u003c/b\u003e\u003cbr\u003eHelix: Government\u003cbr\u003eCategory: supranational government institutions\u003cbr\u003eReview: False"}, {"category": "supranational government institutions", "color": "#54A24B", "font": {"size": 18}, "helix": "Government", "id": "european union agency for cybersecurity", "label": "European Union Agency for Cybersecurity (ENISA)", "shape": "dot", "size": 18, "title": "\u003cb\u003eEuropean Union Agency for Cybersecurity (ENISA)\u003c/b\u003e\u003cbr\u003eHelix: Government\u003cbr\u003eCategory: supranational government institutions\u003cbr\u003eReview: False"}, {"category": "supranational government institutions", "color": "#54A24B", "font": {"size": 18}, "helix": "Government", "id": "european union", "label": "European Union", "shape": "dot", "size": 18, "title": "\u003cb\u003eEuropean Union\u003c/b\u003e\u003cbr\u003eHelix: Government\u003cbr\u003eCategory: supranational government institutions\u003cbr\u003eReview: False"}, {"category": "country", "color": "#999999", "font": {"size": 18}, "helix": "Unknown", "id": "united states", "label": "United States", "shape": "dot", "size": 18, "title": "\u003cb\u003eUnited States\u003c/b\u003e\u003cbr\u003eHelix: Unknown\u003cbr\u003eCategory: country\u003cbr\u003eReview: True"}, {"category": "country", "color": "#999999", "font": {"size": 18}, "helix": "Unknown", "id": "china", "label": "China", "shape": "dot", "size": 18, "title": "\u003cb\u003eChina\u003c/b\u003e\u003cbr\u003eHelix: Unknown\u003cbr\u003eCategory: country\u003cbr\u003eReview: True"}, {"category": "business support institutions", "color": "#E45756", "font": {"size": 18}, "helix": "Intermediary", "id": "galician quantum technologies hub", "label": "Galician Quantum Technologies Hub", "shape": "dot", "size": 18, "title": "\u003cb\u003eGalician Quantum Technologies Hub\u003c/b\u003e\u003cbr\u003eHelix: Intermediary\u003cbr\u003eCategory: business support institutions\u003cbr\u003eReview: False"}, {"category": "research institutes", "color": "#4C78A8", "font": {"size": 18}, "helix": "Academia", "id": "galician supercomputing centre", "label": "Galician Supercomputing Centre (CES-GA)", "shape": "dot", "size": 18, "title": "\u003cb\u003eGalician Supercomputing Centre (CES-GA)\u003c/b\u003e\u003cbr\u003eHelix: Academia\u003cbr\u003eCategory: research institutes\u003cbr\u003eReview: False"}, {"category": "national government institutions", "color": "#54A24B", "font": {"size": 18}, "helix": "Government", "id": "ministry of defence", "label": "Ministry of Defence", "shape": "dot", "size": 18, "title": "\u003cb\u003eMinistry of Defence\u003c/b\u003e\u003cbr\u003eHelix: Government\u003cbr\u003eCategory: national government institutions\u003cbr\u003eReview: False"}, {"category": "national government institutions", "color": "#54A24B", "font": {"size": 18}, "helix": "Government", "id": "instituto nacional de t cnica aeroespacial", "label": "Instituto Nacional de T\u00e9cnica Aeroespacial (INTA)", "shape": "dot", "size": 18, "title": "\u003cb\u003eInstituto Nacional de T\u00e9cnica Aeroespacial (INTA)\u003c/b\u003e\u003cbr\u003eHelix: Government\u003cbr\u003eCategory: national government institutions\u003cbr\u003eReview: False"}, {"category": "national government institutions", "color": "#54A24B", "font": {"size": 18}, "helix": "Government", "id": "national cryptology centre", "label": "National Cryptology Centre (CCN)", "shape": "dot", "size": 18, "title": "\u003cb\u003eNational Cryptology Centre (CCN)\u003c/b\u003e\u003cbr\u003eHelix: Government\u003cbr\u003eCategory: national government institutions\u003cbr\u003eReview: False"}, {"category": "business support institutions", "color": "#E45756", "font": {"size": 18}, "helix": "Intermediary", "id": "quantum spain", "label": "Quantum Spain", "shape": "dot", "size": 18, "title": "\u003cb\u003eQuantum Spain\u003c/b\u003e\u003cbr\u003eHelix: Intermediary\u003cbr\u003eCategory: business support institutions\u003cbr\u003eReview: False"}, {"category": "national government institutions", "color": "#54A24B", "font": {"size": 18}, "helix": "Government", "id": "spanish national research council", "label": "Spanish National Research Council (CSIC)", "shape": "dot", "size": 18, "title": "\u003cb\u003eSpanish National Research Council (CSIC)\u003c/b\u003e\u003cbr\u003eHelix: Government\u003cbr\u003eCategory: national government institutions\u003cbr\u003eReview: False"}, {"category": "research institutes", "color": "#4C78A8", "font": {"size": 18}, "helix": "Academia", "id": "barcelona supercomputing centre national supercomputing centre", "label": "Barcelona Supercomputing Centre \u2013 National Supercomputing Centre (BSC-CNS)", "shape": "dot", "size": 18, "title": "\u003cb\u003eBarcelona Supercomputing Centre \u2013 National Supercomputing Centre (BSC-CNS)\u003c/b\u003e\u003cbr\u003eHelix: Academia\u003cbr\u003eCategory: research institutes\u003cbr\u003eReview: False"}, {"category": "national government institutions", "color": "#54A24B", "font": {"size": 18}, "helix": "Government", "id": "spanish society for technological transformation", "label": "Spanish Society for Technological Transformation (SETT)", "shape": "dot", "size": 18, "title": "\u003cb\u003eSpanish Society for Technological Transformation (SETT)\u003c/b\u003e\u003cbr\u003eHelix: Government\u003cbr\u003eCategory: national government institutions\u003cbr\u003eReview: False"}, {"category": "research institutes", "color": "#4C78A8", "font": {"size": 18}, "helix": "Academia", "id": "centro de supercomputaci n de galicia", "label": "Centro de Supercomputaci\u00f3n de Galicia (CESGA)", "shape": "dot", "size": 18, "title": "\u003cb\u003eCentro de Supercomputaci\u00f3n de Galicia (CESGA)\u003c/b\u003e\u003cbr\u003eHelix: Academia\u003cbr\u003eCategory: research institutes\u003cbr\u003eReview: False"}, {"category": "national government institutions", "color": "#54A24B", "font": {"size": 18}, "helix": "Government", "id": "spanish government", "label": "Spanish Government", "shape": "dot", "size": 18, "title": "\u003cb\u003eSpanish Government\u003c/b\u003e\u003cbr\u003eHelix: Government\u003cbr\u003eCategory: national government institutions\u003cbr\u003eReview: False"}, {"category": "research institutes", "color": "#4C78A8", "font": {"size": 18}, "helix": "Academia", "id": "micronanofabs", "label": "Micronanofabs", "shape": "dot", "size": 18, "title": "\u003cb\u003eMicronanofabs\u003c/b\u003e\u003cbr\u003eHelix: Academia\u003cbr\u003eCategory: research institutes\u003cbr\u003eReview: False"}, {"category": "research institutes", "color": "#4C78A8", "font": {"size": 18}, "helix": "Academia", "id": "spanish supercomputing network", "label": "Spanish Supercomputing Network (RES)", "shape": "dot", "size": 18, "title": "\u003cb\u003eSpanish Supercomputing Network (RES)\u003c/b\u003e\u003cbr\u003eHelix: Academia\u003cbr\u003eCategory: research institutes\u003cbr\u003eReview: False"}, {"category": "national government institutions", "color": "#54A24B", "font": {"size": 18}, "helix": "Government", "id": "state research agency", "label": "State Research Agency", "shape": "dot", "size": 18, "title": "\u003cb\u003eState Research Agency\u003c/b\u003e\u003cbr\u003eHelix: Government\u003cbr\u003eCategory: national government institutions\u003cbr\u003eReview: False"}, {"category": "individual", "color": "#999999", "font": {"size": 18}, "helix": "Unknown", "id": "achard jacques", "label": "Achard, Jacques", "shape": "dot", "size": 18, "title": "\u003cb\u003eAchard, Jacques\u003c/b\u003e\u003cbr\u003eHelix: Unknown\u003cbr\u003eCategory: individual\u003cbr\u003eReview: True"}, {"category": "business support institutions", "color": "#E45756", "font": {"size": 18}, "helix": "Intermediary", "id": "ametic quantum technologies working group", "label": "AMETIC Quantum Technologies Working Group", "shape": "dot", "size": 18, "title": "\u003cb\u003eAMETIC Quantum Technologies Working Group\u003c/b\u003e\u003cbr\u003eHelix: Intermediary\u003cbr\u003eCategory: business support institutions\u003cbr\u003eReview: False"}, {"category": "sub-national government institutions", "color": "#54A24B", "font": {"size": 18}, "helix": "Government", "id": "andalusian digital agency", "label": "Andalusian Digital Agency (ADA)", "shape": "dot", "size": 18, "title": "\u003cb\u003eAndalusian Digital Agency (ADA)\u003c/b\u003e\u003cbr\u003eHelix: Government\u003cbr\u003eCategory: sub-national government institutions\u003cbr\u003eReview: False"}, {"category": "sub-national government institutions", "color": "#54A24B", "font": {"size": 18}, "helix": "Government", "id": "basque government", "label": "Basque Government", "shape": "dot", "size": 18, "title": "\u003cb\u003eBasque Government\u003c/b\u003e\u003cbr\u003eHelix: Government\u003cbr\u003eCategory: sub-national government institutions\u003cbr\u003eReview: False"}, {"category": "research institutes", "color": "#4C78A8", "font": {"size": 18}, "helix": "Academia", "id": "canary islands institute of astrophysics", "label": "Canary Islands Institute of Astrophysics (IAC)", "shape": "dot", "size": 18, "title": "\u003cb\u003eCanary Islands Institute of Astrophysics (IAC)\u003c/b\u003e\u003cbr\u003eHelix: Academia\u003cbr\u003eCategory: research institutes\u003cbr\u003eReview: False"}, {"category": "national government institutions", "color": "#54A24B", "font": {"size": 18}, "helix": "Government", "id": "centro para el desarrollo tecnol gico industrial", "label": "Centro para el Desarrollo Tecnol\u00f3gico Industrial (CDTI)", "shape": "dot", "size": 18, "title": "\u003cb\u003eCentro para el Desarrollo Tecnol\u00f3gico Industrial (CDTI)\u003c/b\u003e\u003cbr\u003eHelix: Government\u003cbr\u003eCategory: national government institutions\u003cbr\u003eReview: False"}, {"category": "supranational government institutions", "color": "#54A24B", "font": {"size": 18}, "helix": "Government", "id": "chips joint undertaking", "label": "Chips Joint Undertaking (Chips JU)", "shape": "dot", "size": 18, "title": "\u003cb\u003eChips Joint Undertaking (Chips JU)\u003c/b\u003e\u003cbr\u003eHelix: Government\u003cbr\u003eCategory: supranational government institutions\u003cbr\u003eReview: False"}, {"category": "supranational government institutions", "color": "#54A24B", "font": {"size": 18}, "helix": "Government", "id": "council of europe", "label": "Council of Europe", "shape": "dot", "size": 18, "title": "\u003cb\u003eCouncil of Europe\u003c/b\u003e\u003cbr\u003eHelix: Government\u003cbr\u003eCategory: supranational government institutions\u003cbr\u003eReview: False"}, {"category": "business support institutions", "color": "#E45756", "font": {"size": 18}, "helix": "Intermediary", "id": "defence innovation accelerator for the north atlantic", "label": "Defence Innovation Accelerator for the North Atlantic (DIANA)", "shape": "dot", "size": 18, "title": "\u003cb\u003eDefence Innovation Accelerator for the North Atlantic (DIANA)\u003c/b\u003e\u003cbr\u003eHelix: Intermediary\u003cbr\u003eCategory: business support institutions\u003cbr\u003eReview: False"}, {"category": "individual", "color": "#999999", "font": {"size": 18}, "helix": "Unknown", "id": "diana morant ripoll", "label": "Diana Morant Ripoll", "shape": "dot", "size": 18, "title": "\u003cb\u003eDiana Morant Ripoll\u003c/b\u003e\u003cbr\u003eHelix: Unknown\u003cbr\u003eCategory: individual\u003cbr\u003eReview: True"}, {"category": "supranational government institutions", "color": "#54A24B", "font": {"size": 18}, "helix": "Government", "id": "eurohpc joint undertaking", "label": "EuroHPC Joint Undertaking", "shape": "dot", "size": 18, "title": "\u003cb\u003eEuroHPC Joint Undertaking\u003c/b\u003e\u003cbr\u003eHelix: Government\u003cbr\u003eCategory: supranational government institutions\u003cbr\u003eReview: False"}, {"category": "country", "color": "#999999", "font": {"size": 18}, "helix": "Unknown", "id": "europe", "label": "Europe", "shape": "dot", "size": 18, "title": "\u003cb\u003eEurope\u003c/b\u003e\u003cbr\u003eHelix: Unknown\u003cbr\u003eCategory: country\u003cbr\u003eReview: True"}, {"category": "supranational government institutions", "color": "#54A24B", "font": {"size": 18}, "helix": "Government", "id": "european cooperation for space standardisation", "label": "European Cooperation for Space Standardisation (ECSS)", "shape": "dot", "size": 18, "title": "\u003cb\u003eEuropean Cooperation for Space Standardisation (ECSS)\u003c/b\u003e\u003cbr\u003eHelix: Government\u003cbr\u003eCategory: supranational government institutions\u003cbr\u003eReview: False"}, {"category": "supranational government institutions", "color": "#54A24B", "font": {"size": 18}, "helix": "Government", "id": "european defence agency", "label": "European Defence Agency", "shape": "dot", "size": 18, "title": "\u003cb\u003eEuropean Defence Agency\u003c/b\u003e\u003cbr\u003eHelix: Government\u003cbr\u003eCategory: supranational government institutions\u003cbr\u003eReview: False"}, {"category": "supranational government institutions", "color": "#54A24B", "font": {"size": 18}, "helix": "Government", "id": "european defence fund", "label": "European Defence Fund", "shape": "dot", "size": 18, "title": "\u003cb\u003eEuropean Defence Fund\u003c/b\u003e\u003cbr\u003eHelix: Government\u003cbr\u003eCategory: supranational government institutions\u003cbr\u003eReview: False"}, {"category": "supranational government institutions", "color": "#54A24B", "font": {"size": 18}, "helix": "Government", "id": "european innovation council", "label": "European Innovation Council (EIC)", "shape": "dot", "size": 18, "title": "\u003cb\u003eEuropean Innovation Council (EIC)\u003c/b\u003e\u003cbr\u003eHelix: Government\u003cbr\u003eCategory: supranational government institutions\u003cbr\u003eReview: False"}, {"category": "financial support institutions", "color": "#E45756", "font": {"size": 18}, "helix": "Intermediary", "id": "european innovation council fund", "label": "European Innovation Council Fund", "shape": "dot", "size": 18, "title": "\u003cb\u003eEuropean Innovation Council Fund\u003c/b\u003e\u003cbr\u003eHelix: Intermediary\u003cbr\u003eCategory: financial support institutions\u003cbr\u003eReview: False"}, {"category": "supranational government institutions", "color": "#54A24B", "font": {"size": 18}, "helix": "Government", "id": "european parliamentary research service", "label": "European Parliamentary Research Service", "shape": "dot", "size": 18, "title": "\u003cb\u003eEuropean Parliamentary Research Service\u003c/b\u003e\u003cbr\u003eHelix: Government\u003cbr\u003eCategory: supranational government institutions\u003cbr\u003eReview: False"}, {"category": "financial support institutions", "color": "#E45756", "font": {"size": 18}, "helix": "Intermediary", "id": "european regional development fund", "label": "European Regional Development Fund (ERDF)", "shape": "dot", "size": 18, "title": "\u003cb\u003eEuropean Regional Development Fund (ERDF)\u003c/b\u003e\u003cbr\u003eHelix: Intermediary\u003cbr\u003eCategory: financial support institutions\u003cbr\u003eReview: False"}, {"category": "research institutes", "color": "#4C78A8", "font": {"size": 18}, "helix": "Academia", "id": "euroquic", "label": "EuroQuIC", "shape": "dot", "size": 18, "title": "\u003cb\u003eEuroQuIC\u003c/b\u003e\u003cbr\u003eHelix: Academia\u003cbr\u003eCategory: research institutes\u003cbr\u003eReview: False"}, {"category": "individual", "color": "#999999", "font": {"size": 18}, "helix": "Unknown", "id": "feli sa mart n bravo", "label": "Feli-sa Mart\u00edn Bravo", "shape": "dot", "size": 18, "title": "\u003cb\u003eFeli-sa Mart\u00edn Bravo\u003c/b\u003e\u003cbr\u003eHelix: Unknown\u003cbr\u003eCategory: individual\u003cbr\u003eReview: True"}, {"category": "individual", "color": "#999999", "font": {"size": 18}, "helix": "Unknown", "id": "filippi", "label": "Filippi", "shape": "dot", "size": 18, "title": "\u003cb\u003eFilippi\u003c/b\u003e\u003cbr\u003eHelix: Unknown\u003cbr\u003eCategory: individual\u003cbr\u003eReview: True"}, {"category": "media and cultural institutions", "color": "#B279A2", "font": {"size": 18}, "helix": "Civil Society", "id": "fortune business insights", "label": "Fortune Business Insights", "shape": "dot", "size": 18, "title": "\u003cb\u003eFortune Business Insights\u003c/b\u003e\u003cbr\u003eHelix: Civil Society\u003cbr\u003eCategory: media and cultural institutions\u003cbr\u003eReview: False"}, {"category": "national government institutions", "color": "#54A24B", "font": {"size": 18}, "helix": "Government", "id": "government of spain", "label": "Government of Spain", "shape": "dot", "size": 18, "title": "\u003cb\u003eGovernment of Spain\u003c/b\u003e\u003cbr\u003eHelix: Government\u003cbr\u003eCategory: national government institutions\u003cbr\u003eReview: False"}, {"category": "research institutes", "color": "#4C78A8", "font": {"size": 18}, "helix": "Academia", "id": "ieee", "label": "IEEE", "shape": "dot", "size": 18, "title": "\u003cb\u003eIEEE\u003c/b\u003e\u003cbr\u003eHelix: Academia\u003cbr\u003eCategory: research institutes\u003cbr\u003eReview: False"}, {"category": "national government institutions", "color": "#54A24B", "font": {"size": 18}, "helix": "Government", "id": "incibe", "label": "INCIBE", "shape": "dot", "size": 18, "title": "\u003cb\u003eINCIBE\u003c/b\u003e\u003cbr\u003eHelix: Government\u003cbr\u003eCategory: national government institutions\u003cbr\u003eReview: False"}, {"category": "research institutes", "color": "#4C78A8", "font": {"size": 18}, "helix": "Academia", "id": "institute of photonic sciences", "label": "Institute of Photonic Sciences (ICFO)", "shape": "dot", "size": 18, "title": "\u003cb\u003eInstitute of Photonic Sciences (ICFO)\u003c/b\u003e\u003cbr\u003eHelix: Academia\u003cbr\u003eCategory: research institutes\u003cbr\u003eReview: False"}, {"category": "sub-national government institutions", "color": "#54A24B", "font": {"size": 18}, "helix": "Government", "id": "la rioja", "label": "La Rioja", "shape": "dot", "size": 18, "title": "\u003cb\u003eLa Rioja\u003c/b\u003e\u003cbr\u003eHelix: Government\u003cbr\u003eCategory: sub-national government institutions\u003cbr\u003eReview: False"}, {"category": "individual", "color": "#999999", "font": {"size": 18}, "helix": "Unknown", "id": "mario draghi", "label": "Mario Draghi", "shape": "dot", "size": 18, "title": "\u003cb\u003eMario Draghi\u003c/b\u003e\u003cbr\u003eHelix: Unknown\u003cbr\u003eCategory: individual\u003cbr\u003eReview: True"}, {"category": "research institutes", "color": "#4C78A8", "font": {"size": 18}, "helix": "Academia", "id": "mckinsey", "label": "McKinsey", "shape": "dot", "size": 18, "title": "\u003cb\u003eMcKinsey\u003c/b\u003e\u003cbr\u003eHelix: Academia\u003cbr\u003eCategory: research institutes\u003cbr\u003eReview: False"}, {"category": "research institutes", "color": "#4C78A8", "font": {"size": 18}, "helix": "Academia", "id": "national microelectronics centre", "label": "National Microelectronics Centre (IMB-CNM-CSIC)", "shape": "dot", "size": 18, "title": "\u003cb\u003eNational Microelectronics Centre (IMB-CNM-CSIC)\u003c/b\u003e\u003cbr\u003eHelix: Academia\u003cbr\u003eCategory: research institutes\u003cbr\u003eReview: False"}, {"category": "supranational government institutions", "color": "#54A24B", "font": {"size": 18}, "helix": "Government", "id": "nato", "label": "NATO", "shape": "dot", "size": 18, "title": "\u003cb\u003eNATO\u003c/b\u003e\u003cbr\u003eHelix: Government\u003cbr\u003eCategory: supranational government institutions\u003cbr\u003eReview: False"}, {"category": "national government institutions", "color": "#54A24B", "font": {"size": 18}, "helix": "Government", "id": "quantum technologies council of spain", "label": "Quantum Technologies Council of Spain", "shape": "dot", "size": 18, "title": "\u003cb\u003eQuantum Technologies Council of Spain\u003c/b\u003e\u003cbr\u003eHelix: Government\u003cbr\u003eCategory: national government institutions\u003cbr\u003eReview: False"}, {"category": "national government institutions", "color": "#54A24B", "font": {"size": 18}, "helix": "Government", "id": "red es", "label": "Red.es", "shape": "dot", "size": 18, "title": "\u003cb\u003eRed.es\u003c/b\u003e\u003cbr\u003eHelix: Government\u003cbr\u003eCategory: national government institutions\u003cbr\u003eReview: False"}, {"category": "sub-national government institutions", "color": "#54A24B", "font": {"size": 18}, "helix": "Government", "id": "regional government of andalusia", "label": "Regional Government of Andalusia", "shape": "dot", "size": 18, "title": "\u003cb\u003eRegional Government of Andalusia\u003c/b\u003e\u003cbr\u003eHelix: Government\u003cbr\u003eCategory: sub-national government institutions\u003cbr\u003eReview: False"}, {"category": "research institutes", "color": "#4C78A8", "font": {"size": 18}, "helix": "Academia", "id": "research institutions", "label": "research institutions", "shape": "dot", "size": 18, "title": "\u003cb\u003eresearch institutions\u003c/b\u003e\u003cbr\u003eHelix: Academia\u003cbr\u003eCategory: research institutes\u003cbr\u003eReview: False"}, {"category": "individual", "color": "#999999", "font": {"size": 18}, "helix": "Unknown", "id": "sauli niinist", "label": "Sauli Niinist\u00f6", "shape": "dot", "size": 18, "title": "\u003cb\u003eSauli Niinist\u00f6\u003c/b\u003e\u003cbr\u003eHelix: Unknown\u003cbr\u003eCategory: individual\u003cbr\u003eReview: True"}, {"category": "individual", "color": "#999999", "font": {"size": 18}, "helix": "Unknown", "id": "scar l pez gueda", "label": "\u00d3scar L\u00f3pez \u00c1gueda", "shape": "dot", "size": 18, "title": "\u003cb\u003e\u00d3scar L\u00f3pez \u00c1gueda\u003c/b\u003e\u003cbr\u003eHelix: Unknown\u003cbr\u003eCategory: individual\u003cbr\u003eReview: True"}, {"category": "large enterprises", "color": "#F58518", "font": {"size": 18}, "helix": "Industry", "id": "spanish insurance companies", "label": "SPANISH INSURANCE COMPANIES", "shape": "dot", "size": 18, "title": "\u003cb\u003eSPANISH INSURANCE COMPANIES\u003c/b\u003e\u003cbr\u003eHelix: Industry\u003cbr\u003eCategory: large enterprises\u003cbr\u003eReview: False"}, {"category": "research institutes", "color": "#4C78A8", "font": {"size": 18}, "helix": "Academia", "id": "spanish metrology centre", "label": "Spanish Metrology Centre", "shape": "dot", "size": 18, "title": "\u003cb\u003eSpanish Metrology Centre\u003c/b\u003e\u003cbr\u003eHelix: Academia\u003cbr\u003eCategory: research institutes\u003cbr\u003eReview: False"}, {"category": "business support institutions", "color": "#E45756", "font": {"size": 18}, "helix": "Intermediary", "id": "techrioja", "label": "TECHRIOJA", "shape": "dot", "size": 18, "title": "\u003cb\u003eTECHRIOJA\u003c/b\u003e\u003cbr\u003eHelix: Intermediary\u003cbr\u003eCategory: business support institutions\u003cbr\u003eReview: False"}, {"category": "universities", "color": "#4C78A8", "font": {"size": 18}, "helix": "Academia", "id": "university of vienna", "label": "University of Vienna", "shape": "dot", "size": 18, "title": "\u003cb\u003eUniversity of Vienna\u003c/b\u003e\u003cbr\u003eHelix: Academia\u003cbr\u003eCategory: universities\u003cbr\u003eReview: False"}, {"category": "business support institutions", "color": "#E45756", "font": {"size": 18}, "helix": "Intermediary", "id": "vall mediterroney de la ci ncia i les tecnologies qu ntiques", "label": "Vall Mediterroney de la Ci\u00e8ncia i les Tecnologies Qu\u00e1ntiques (QuantumCAT)", "shape": "dot", "size": 18, "title": "\u003cb\u003eVall Mediterroney de la Ci\u00e8ncia i les Tecnologies Qu\u00e1ntiques (QuantumCAT)\u003c/b\u003e\u003cbr\u003eHelix: Intermediary\u003cbr\u003eCategory: business support institutions\u003cbr\u003eReview: False"}, {"category": "supranational government institutions", "color": "#54A24B", "font": {"size": 18}, "helix": "Government", "id": "world economic forum", "label": "World Economic Forum", "shape": "dot", "size": 18, "title": "\u003cb\u003eWorld Economic Forum\u003c/b\u003e\u003cbr\u003eHelix: Government\u003cbr\u003eCategory: supranational government institutions\u003cbr\u003eReview: False"}]);
+                  edges = new vis.DataSet([{"arrows": "to", "color": "#2563EB", "from": "autonomous communities", "label": "collaborative_leadership", "title": "\u003cb\u003ecollaborative_leadership\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Intra-helix / Not classified\u003cbr\u003ePage: 50\u003cbr\u003ePhrase: coordination of efforts between the Autonomous Communities and Local Authorities", "to": "local authorities", "width": 2}, {"arrows": "to", "color": "#2563EB", "from": "autonomous communities", "label": "collaborative_leadership", "title": "\u003cb\u003ecollaborative_leadership\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Unknown\u003cbr\u003ePage: 38\u003cbr\u003ePhrase: in Spain", "to": "spain", "width": 2}, {"arrows": "to", "color": "#2563EB", "from": "autonomous communities", "label": "collaborative_leadership", "title": "\u003cb\u003ecollaborative_leadership\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Intra-helix / Not classified\u003cbr\u003ePage: 50\u003cbr\u003ePhrase: coordination of efforts between the Autonomous Communities and Local Authorities, the private", "to": "state", "width": 2}, {"arrows": "to", "color": "#6B7280", "from": "autonomous communities", "label": "networking", "title": "\u003cb\u003enetworking\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Knowledge\u003cbr\u003ePage: 91\u003cbr\u003ePhrase: active participation", "to": "universities", "width": 2}, {"arrows": "to", "color": "#6B7280", "from": "european commission", "label": "networking", "title": "\u003cb\u003enetworking\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Intra-helix / Not classified\u003cbr\u003ePage: 95\u003cbr\u003ePhrase: contributing, together with", "to": "european union agency for cybersecurity", "width": 2}, {"arrows": "to", "color": "#D97706", "from": "european union", "label": "technology_transfer", "title": "\u003cb\u003etechnology_transfer\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Unknown\u003cbr\u003ePage: 54\u003cbr\u003ePhrase: a similar level of patent development", "to": "united states", "width": 2}, {"arrows": "to", "color": "#D97706", "from": "european union", "label": "technology_transfer", "title": "\u003cb\u003etechnology_transfer\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Unknown\u003cbr\u003ePage: 54\u003cbr\u003ePhrase: a similar level of patent development", "to": "china", "width": 2}, {"arrows": "to", "color": "#D97706", "from": "european union", "label": "technology_transfer", "title": "\u003cb\u003etechnology_transfer\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Knowledge\u003cbr\u003ePage: 54\u003cbr\u003ePhrase: patents registered by European universities", "to": "universities", "width": 2}, {"arrows": "to", "color": "#D97706", "from": "galician quantum technologies hub", "label": "technology_transfer", "title": "\u003cb\u003etechnology_transfer\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Innovation\u003cbr\u003ePage: 40\u003cbr\u003ePhrase: the launch of the Qmio quantum computer at the Galician Supercomputing Centre", "to": "galician supercomputing centre", "width": 2}, {"arrows": "to", "color": "#2563EB", "from": "local authorities", "label": "collaborative_leadership", "title": "\u003cb\u003ecollaborative_leadership\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Unknown\u003cbr\u003ePage: 38\u003cbr\u003ePhrase: in Spain", "to": "spain", "width": 2}, {"arrows": "to", "color": "#2563EB", "from": "local authorities", "label": "collaborative_leadership", "title": "\u003cb\u003ecollaborative_leadership\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Intra-helix / Not classified\u003cbr\u003ePage: 50\u003cbr\u003ePhrase: coordination of efforts between the Autonomous Communities and Local Authorities, the private", "to": "state", "width": 2}, {"arrows": "to", "color": "#D97706", "from": "ministry of defence", "label": "technology_transfer", "title": "\u003cb\u003etechnology_transfer\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Intra-helix / Not classified\u003cbr\u003ePage: 34\u003cbr\u003ePhrase: under the Ministry of Defence", "to": "instituto nacional de t cnica aeroespacial", "width": 2}, {"arrows": "to", "color": "#6B7280", "from": "national cryptology centre", "label": "networking", "title": "\u003cb\u003enetworking\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Intra-helix / Not classified\u003cbr\u003ePage: 95\u003cbr\u003ePhrase: contributing, together with", "to": "european commission", "width": 2}, {"arrows": "to", "color": "#6B7280", "from": "national cryptology centre", "label": "networking", "title": "\u003cb\u003enetworking\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Intra-helix / Not classified\u003cbr\u003ePage: 95\u003cbr\u003ePhrase: contributing, together with", "to": "european union agency for cybersecurity", "width": 2}, {"arrows": "to", "color": "#2563EB", "from": "quantum spain", "label": "collaborative_leadership", "title": "\u003cb\u003ecollaborative_leadership\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Consensus\u003cbr\u003ePage: 63\u003cbr\u003ePhrase: brings together 27 research institutions from 14 autonomous communities, including the CSIC", "to": "spanish national research council", "width": 2}, {"arrows": "to", "color": "#2563EB", "from": "quantum spain", "label": "collaborative_leadership", "title": "\u003cb\u003ecollaborative_leadership\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Innovation\u003cbr\u003ePage: 63\u003cbr\u003ePhrase: brings together 27 research institutions from 14 autonomous communities, including the BSC-CNS", "to": "barcelona supercomputing centre national supercomputing centre", "width": 2}, {"arrows": "to", "color": "#2563EB", "from": "quantum spain", "label": "collaborative_leadership", "title": "\u003cb\u003ecollaborative_leadership\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Innovation\u003cbr\u003ePage: 63\u003cbr\u003ePhrase: brings together 27 research institutions from 14 autonomous communities, including the CSIC,", "to": "universities", "width": 2}, {"arrows": "to", "color": "#2563EB", "from": "quantum spain", "label": "collaborative_leadership", "title": "\u003cb\u003ecollaborative_leadership\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Consensus\u003cbr\u003ePage: 63\u003cbr\u003ePhrase: brings together 27 research institutions from 14 autonomous communities", "to": "autonomous communities", "width": 2}, {"arrows": "to", "color": "#2563EB", "from": "spain", "label": "collaborative_leadership", "title": "\u003cb\u003ecollaborative_leadership\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Unknown\u003cbr\u003ePage: 66\u003cbr\u003ePhrase: funded by the European Commission", "to": "european commission", "width": 2}, {"arrows": "to", "color": "#2563EB", "from": "spain", "label": "collaborative_leadership", "title": "\u003cb\u003ecollaborative_leadership\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Unknown\u003cbr\u003ePage: 58\u003cbr\u003ePhrase: financing opportunities offered by the Spanish Society for Technological Transformation (SETT)", "to": "spanish society for technological transformation", "width": 2}, {"arrows": "to", "color": "#6B7280", "from": "spain", "label": "networking", "title": "\u003cb\u003enetworking\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Unknown\u003cbr\u003ePage: 69\u003cbr\u003ePhrase: links between CESGA and the University of Vigo", "to": "centro de supercomputaci n de galicia", "width": 2}, {"arrows": "to", "color": "#6B7280", "from": "spain", "label": "networking", "title": "\u003cb\u003enetworking\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Unknown\u003cbr\u003ePage: 69\u003cbr\u003ePhrase: extension of the MadQCI quantum ring to the INTA facilities", "to": "instituto nacional de t cnica aeroespacial", "width": 2}, {"arrows": "to", "color": "#2563EB", "from": "spanish government", "label": "collaborative_leadership", "title": "\u003cb\u003ecollaborative_leadership\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Consensus\u003cbr\u003ePage: 63\u003cbr\u003ePhrase: launched its first national programme in 2022 with the creation of the", "to": "quantum spain", "width": 2}, {"arrows": "to", "color": "#2563EB", "from": "spanish government", "label": "collaborative_leadership", "title": "\u003cb\u003ecollaborative_leadership\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Unknown\u003cbr\u003ePage: 80\u003cbr\u003ePhrase: launched the Digital Rights Programme", "to": "spain", "width": 2}, {"arrows": "to", "color": "#6B7280", "from": "spanish government", "label": "networking", "title": "\u003cb\u003enetworking\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Intra-helix / Not classified\u003cbr\u003ePage: 91\u003cbr\u003ePhrase: strategic partner", "to": "autonomous communities", "width": 2}, {"arrows": "to", "color": "#6B7280", "from": "spanish government", "label": "networking", "title": "\u003cb\u003enetworking\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Knowledge\u003cbr\u003ePage: 91\u003cbr\u003ePhrase: active participation", "to": "universities", "width": 2}, {"arrows": "to", "color": "#2563EB", "from": "spanish national research council", "label": "collaborative_leadership", "title": "\u003cb\u003ecollaborative_leadership\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Unknown\u003cbr\u003ePage: 32\u003cbr\u003ePhrase: inter-university master\u0027s degree in quantum technologies in Spain", "to": "spain", "width": 2}, {"arrows": "to", "color": "#2563EB", "from": "spanish national research council", "label": "collaborative_leadership", "title": "\u003cb\u003ecollaborative_leadership\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Knowledge\u003cbr\u003ePage: 32\u003cbr\u003ePhrase: in collaboration with nine other universities", "to": "universities", "width": 2}, {"arrows": "to", "color": "#6B7280", "from": "spanish national research council", "label": "networking", "title": "\u003cb\u003enetworking\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Intra-helix / Not classified\u003cbr\u003ePage: 66\u003cbr\u003ePhrase: multiple academic entities from six autonomous communities", "to": "autonomous communities", "width": 2}, {"arrows": "to", "color": "#6B7280", "from": "spanish national research council", "label": "networking", "title": "\u003cb\u003enetworking\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Knowledge\u003cbr\u003ePage: 86\u003cbr\u003ePhrase: especially the CSIC\u0027s National Microelectronics Centre in Barcelona (IMB-CNM-CSIC)", "to": "micronanofabs", "width": 2}, {"arrows": "to", "color": "#2563EB", "from": "spanish supercomputing network", "label": "collaborative_leadership", "title": "\u003cb\u003ecollaborative_leadership\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Intra-helix / Not classified\u003cbr\u003ePage: 33\u003cbr\u003ePhrase: coordinated by", "to": "barcelona supercomputing centre national supercomputing centre", "width": 2}, {"arrows": "to", "color": "#6B7280", "from": "state", "label": "networking", "title": "\u003cb\u003enetworking\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Intra-helix / Not classified\u003cbr\u003ePage: 88\u003cbr\u003ePhrase: The State Research Agency (AEI) will continue with its aid programmes", "to": "state research agency", "width": 2}]);
+
+                  nodeColors = {};
+                  allNodes = nodes.get({ returnType: "Object" });
+                  for (nodeId in allNodes) {
+                    nodeColors[nodeId] = allNodes[nodeId].color;
+                  }
+                  allEdges = edges.get({ returnType: "Object" });
+                  // adding nodes and edges to the graph
+                  data = {nodes: nodes, edges: edges};
+
+                  var options = {"physics": {"barnesHut": {"gravitationalConstant": -8000, "centralGravity": 0.3, "springLength": 180, "springConstant": 0.04}, "minVelocity": 0.75}, "interaction": {"hover": true, "navigationButtons": true, "keyboard": true}};
+
+                  
+
+
+                  
+
+                  network = new vis.Network(container, data, options);
+
+                  
+
+                  
+
+                  
+
+
+                  
+
+                  return network;
+
+              }
+              drawGraph();
+        </script>
+    </body>
+</html>

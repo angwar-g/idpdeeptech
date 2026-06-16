@@ -1,0 +1,654 @@
+[
+  {
+    "entity": "Australia",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "country",
+    "role_in_text": "international partner",
+    "technology_area": "quantum computing",
+    "occurrence_sentence": "Since 2021, additional quantum MoUs or partnerships have been announced with several countries, including Australia, Canada, Denmark, South Korea, and Germany [20",
+    "source_document": "GlobalQuantumStrategies26.pdf",
+    "page": 8,
+    "canonical_actor_key": "australia",
+    "aliases": [
+      "Australia"
+    ],
+    "pages": [
+      8
+    ],
+    "mentions": [
+      {
+        "entity": "Australia",
+        "page": 8,
+        "role_in_text": "international partner",
+        "occurrence_sentence": "Since 2021, additional quantum MoUs or partnerships have been announced with several countries, including Australia, Canada, Denmark, South Korea, and Germany [20",
+        "source_document": "GlobalQuantumStrategies26.pdf"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Unknown",
+    "sphere": "Unknown",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "unknown_category",
+    "classification_needs_review": true,
+    "classification_review_reason": "unmapped_category:country"
+  },
+  {
+    "entity": "Brendan Kar ch",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "individual",
+    "role_in_text": "author",
+    "technology_area": "quantum computing",
+    "occurrence_sentence": "Brendan Kar ch",
+    "source_document": "GlobalQuantumStrategies26.pdf",
+    "page": 1,
+    "confidence": "high",
+    "canonical_actor_key": "brendan kar ch",
+    "aliases": [
+      "Brendan Kar ch"
+    ],
+    "pages": [
+      1
+    ],
+    "mentions": [
+      {
+        "entity": "Brendan Kar ch",
+        "page": 1,
+        "role_in_text": "author",
+        "occurrence_sentence": "Brendan Kar ch",
+        "source_document": "GlobalQuantumStrategies26.pdf"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Unknown",
+    "sphere": "Unknown",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "unknown_category",
+    "classification_needs_review": true,
+    "classification_review_reason": "unmapped_category:individual; individual_requires_role_classification"
+  },
+  {
+    "entity": "Canada",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "country",
+    "role_in_text": "country with a quantum strategy",
+    "technology_area": "quantum computing",
+    "occurrence_sentence": "These priorities suggest that an overarching Swiss Quantum Strategy, if developed, may entail a “lighter touch” system of support for ongoing research and innovation, similar to the Canadian model",
+    "source_document": "GlobalQuantumStrategies26.pdf",
+    "page": 10,
+    "canonical_actor_key": "canada",
+    "aliases": [
+      "Canada"
+    ],
+    "pages": [
+      1,
+      10,
+      11
+    ],
+    "mentions": [
+      {
+        "entity": "Canada",
+        "page": 1,
+        "role_in_text": "",
+        "occurrence_sentence": "",
+        "source_document": "GlobalQuantumStrategies26.pdf"
+      },
+      {
+        "entity": "Canada",
+        "page": 10,
+        "role_in_text": "country with a quantum strategy",
+        "occurrence_sentence": "These priorities suggest that an overarching Swiss Quantum Strategy, if developed, may entail a “lighter touch” system of support for ongoing research and innovation, similar to the Canadian model",
+        "source_document": "GlobalQuantumStrategies26.pdf"
+      },
+      {
+        "entity": "Canada",
+        "page": 11,
+        "role_in_text": "has a national quantum strategy",
+        "occurrence_sentence": "2. Canada's National Quantum Strategy. https://ised-isde.canada.ca/site/national-quantum-strategy/en/canadas-national-quantum-strategy (2",
+        "source_document": "GlobalQuantumStrategies26.pdf"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Unknown",
+    "sphere": "Unknown",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "unknown_category",
+    "classification_needs_review": true,
+    "classification_review_reason": "unmapped_category:country"
+  },
+  {
+    "entity": "Canada First Research Excellence Fund (CFREF)",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "financial support institutions",
+    "role_in_text": "Major funders for research and development of quantum technologies",
+    "technology_area": "deep tech general",
+    "occurrence_sentence": "Major funders for research and development of quantum technologies include the Canada First Research Excellence Fund (CFREF) and Natural Sciences and Engineering Research Council (NSERC).",
+    "source_document": "GlobalQuantumStrategies26.pdf",
+    "page": 3,
+    "confidence": "high",
+    "canonical_actor_key": "canada first research excellence fund",
+    "aliases": [
+      "CFREF",
+      "Canada First Research Excellence Fund",
+      "Canada First Research Excellence Fund (CFREF)"
+    ],
+    "pages": [
+      3
+    ],
+    "mentions": [
+      {
+        "entity": "Canada First Research Excellence Fund (CFREF)",
+        "page": 3,
+        "role_in_text": "Major funders for research and development of quantum technologies",
+        "occurrence_sentence": "Major funders for research and development of quantum technologies include the Canada First Research Excellence Fund (CFREF) and Natural Sciences and Engineering Research Council (NSERC).",
+        "source_document": "GlobalQuantumStrategies26.pdf"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Intermediary",
+    "sphere": "Multi",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "House of Quantum",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "business support institutions",
+    "role_in_text": "supporting research, startup space, and facilities",
+    "technology_area": "quantum computing | quantum communication | quantum sensing",
+    "occurrence_sentence": "This center was designed to support research, startup space, and facilities and programs that inspire interaction and collaboration among quantum players.",
+    "source_document": "GlobalQuantumStrategies26.pdf",
+    "page": 6,
+    "canonical_actor_key": "house of quantum",
+    "aliases": [
+      "House of Quantum"
+    ],
+    "pages": [
+      6
+    ],
+    "mentions": [
+      {
+        "entity": "House of Quantum",
+        "page": 6,
+        "role_in_text": "supporting research, startup space, and facilities",
+        "occurrence_sentence": "This center was designed to support research, startup space, and facilities and programs that inspire interaction and collaboration among quantum players.",
+        "source_document": "GlobalQuantumStrategies26.pdf"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Intermediary",
+    "sphere": "Multi",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "Invest in Denmark",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "national government institutions",
+    "role_in_text": "information provider",
+    "technology_area": "quantum technology",
+    "occurrence_sentence": "13. New Danish NATO Center for Quantum Technology. https://investindk.com/ins",
+    "source_document": "GlobalQuantumStrategies26.pdf",
+    "page": 12,
+    "canonical_actor_key": "invest in denmark",
+    "aliases": [
+      "Invest in Denmark"
+    ],
+    "pages": [
+      12
+    ],
+    "mentions": [
+      {
+        "entity": "Invest in Denmark",
+        "page": 12,
+        "role_in_text": "information provider",
+        "occurrence_sentence": "13. New Danish NATO Center for Quantum Technology. https://investindk.com/ins",
+        "source_document": "GlobalQuantumStrategies26.pdf"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Government",
+    "sphere": "Single",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "Mitacs",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "research institutes",
+    "role_in_text": "receiving CAD 40 million for internship and professional development training in quantum",
+    "technology_area": "quantum computing",
+    "occurrence_sentence": "Strategy is also providing CAD 40 million (CHF 25 million) to Mitacs for internship and professional development training in quantum [6",
+    "source_document": "GlobalQuantumStrategies26.pdf",
+    "page": 4,
+    "canonical_actor_key": "mitacs",
+    "aliases": [
+      "Mitacs"
+    ],
+    "pages": [
+      4
+    ],
+    "mentions": [
+      {
+        "entity": "Mitacs",
+        "page": 4,
+        "role_in_text": "receiving CAD 40 million for internship and professional development training in quantum",
+        "occurrence_sentence": "Strategy is also providing CAD 40 million (CHF 25 million) to Mitacs for internship and professional development training in quantum [6",
+        "source_document": "GlobalQuantumStrategies26.pdf"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Academia",
+    "sphere": "Single",
+    "r_and_d": "R&D",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "National Physical Laboratory",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "research institutes",
+    "role_in_text": "hosts the Quantum Metrology Lab",
+    "technology_area": "quantum computing",
+    "occurrence_sentence": "Since 2014, the UK has funded a network of four Quantum Research Hubs at universities and institutions, such as the Quantum Metrology Lab at the National Physical Laboratory and the National Quantum Computing Centre (NQQC), focused on building a scalable device.",
+    "source_document": "GlobalQuantumStrategies26.pdf",
+    "page": 7,
+    "confidence": "high",
+    "canonical_actor_key": "national physical laboratory",
+    "aliases": [
+      "National Physical Laboratory"
+    ],
+    "pages": [
+      7
+    ],
+    "mentions": [
+      {
+        "entity": "National Physical Laboratory",
+        "page": 7,
+        "role_in_text": "hosts the Quantum Metrology Lab",
+        "occurrence_sentence": "Since 2014, the UK has funded a network of four Quantum Research Hubs at universities and institutions, such as the Quantum Metrology Lab at the National Physical Laboratory and the National Quantum Computing Centre (NQQC), focused on building a scalable device.",
+        "source_document": "GlobalQuantumStrategies26.pdf"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Academia",
+    "sphere": "Single",
+    "r_and_d": "R&D",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "National Quantum Computing Centre (NQQC)",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "research institutes",
+    "role_in_text": "focused on building a scalable device",
+    "technology_area": "quantum computing",
+    "occurrence_sentence": "Since 2014, the UK has funded a network of four Quantum",
+    "source_document": "GlobalQuantumStrategies26.pdf",
+    "page": 7,
+    "canonical_actor_key": "national quantum computing centre",
+    "aliases": [
+      "NQQC",
+      "National Quantum Computing Centre",
+      "National Quantum Computing Centre (NQQC)"
+    ],
+    "pages": [
+      7
+    ],
+    "mentions": [
+      {
+        "entity": "National Quantum Computing Centre (NQQC)",
+        "page": 7,
+        "role_in_text": "focused on building a scalable device",
+        "occurrence_sentence": "Since 2014, the UK has funded a network of four Quantum",
+        "source_document": "GlobalQuantumStrategies26.pdf"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Academia",
+    "sphere": "Single",
+    "r_and_d": "R&D",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "Novo Nordisk",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "large enterprises",
+    "role_in_text": "major corporate foundation",
+    "technology_area": "quantum computing",
+    "occurrence_sentence": "In Denmark specifically, government investment is exceeded by a single huge corporate foundation—Novo Nordisk—which exerts major influence to steer quantum technologies toward use cases in biopharma and the life sciences.",
+    "source_document": "GlobalQuantumStrategies26.pdf",
+    "page": 9,
+    "confidence": "high",
+    "canonical_actor_key": "novo nordisk",
+    "aliases": [
+      "Novo Nordisk"
+    ],
+    "pages": [
+      5,
+      9
+    ],
+    "mentions": [
+      {
+        "entity": "Novo Nordisk",
+        "page": 5,
+        "role_in_text": "funding a national test center",
+        "occurrence_sentence": "Closely connected will be a national test center, funded through Novo Nordisk.",
+        "source_document": "GlobalQuantumStrategies26.pdf"
+      },
+      {
+        "entity": "Novo Nordisk",
+        "page": 9,
+        "role_in_text": "major corporate foundation",
+        "occurrence_sentence": "In Denmark specifically, government investment is exceeded by a single huge corporate foundation—Novo Nordisk—which exerts major influence to steer quantum technologies toward use cases in biopharma and the life sciences.",
+        "source_document": "GlobalQuantumStrategies26.pdf"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Industry",
+    "sphere": "Single",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "Novonordisk Foundation",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "non-governmental and non-profit organizations",
+    "role_in_text": "funding",
+    "technology_area": "quantum sensing",
+    "occurrence_sentence": "12. Researchers Aim to Advance Quantum Sensing to Transform Disease Diagnosis and Prevention. https://novonordiskfonden.dk/en/news/researchers-aim-to-advance-quantum-sensing-to-transform-disease-diagnosis-and-prevention/ (2024)",
+    "source_document": "GlobalQuantumStrategies26.pdf",
+    "page": 12,
+    "confidence": "high",
+    "canonical_actor_key": "novonordisk foundation",
+    "aliases": [
+      "Novonordisk Foundation"
+    ],
+    "pages": [
+      12
+    ],
+    "mentions": [
+      {
+        "entity": "Novonordisk Foundation",
+        "page": 12,
+        "role_in_text": "funding",
+        "occurrence_sentence": "12. Researchers Aim to Advance Quantum Sensing to Transform Disease Diagnosis and Prevention. https://novonordiskfonden.dk/en/news/researchers-aim-to-advance-quantum-sensing-to-transform-disease-diagnosis-and-prevention/ (2024)",
+        "source_document": "GlobalQuantumStrategies26.pdf"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Civil Society",
+    "sphere": "Single",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "OECD",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "supranational government institutions",
+    "role_in_text": "organization that provides characteristics of national science, technology, and innovation strategies",
+    "technology_area": "deep tech general",
+    "occurrence_sentence": "According to the OECD, national science, technology, and innovation strategies generally incorporate the following characteristics:",
+    "source_document": "GlobalQuantumStrategies26.pdf",
+    "page": 2,
+    "confidence": "high",
+    "canonical_actor_key": "oecd",
+    "aliases": [
+      "OECD"
+    ],
+    "pages": [
+      2,
+      11
+    ],
+    "mentions": [
+      {
+        "entity": "OECD",
+        "page": 2,
+        "role_in_text": "organization that provides characteristics of national science, technology, and innovation strategies",
+        "occurrence_sentence": "According to the OECD, national science, technology, and innovation strategies generally incorporate the following characteristics:",
+        "source_document": "GlobalQuantumStrategies26.pdf"
+      },
+      {
+        "entity": "OECD",
+        "page": 11,
+        "role_in_text": "provides a reference for national strategies for STI",
+        "occurrence_sentence": "1. OECD National Strategies for STI. https://doi.org/10.1787/sti_in_outlook-2016-8-en (2016)",
+        "source_document": "GlobalQuantumStrategies26.pdf"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Government",
+    "sphere": "Single",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "Quantum Delta Netherlands (QDNL)",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "business support institutions",
+    "role_in_text": "developing technology catalyst programs and action lines",
+    "technology_area": "quantum computing | quantum communication | quantum sensing",
+    "occurrence_sentence": "QDNL has developed three specific technology catalyst programs in quantum computing and simulation, quantum networking, and quantum sensing.",
+    "source_document": "GlobalQuantumStrategies26.pdf",
+    "page": 6,
+    "confidence": "high",
+    "canonical_actor_key": "quantum delta netherlands",
+    "aliases": [
+      "QDNL",
+      "Quantum Delta Netherlands",
+      "Quantum Delta Netherlands (QDNL)"
+    ],
+    "pages": [
+      6
+    ],
+    "mentions": [
+      {
+        "entity": "Quantum Delta Netherlands (QDNL)",
+        "page": 6,
+        "role_in_text": "developing technology catalyst programs and action lines",
+        "occurrence_sentence": "QDNL has developed three specific technology catalyst programs in quantum computing and simulation, quantum networking, and quantum sensing.",
+        "source_document": "GlobalQuantumStrategies26.pdf"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Intermediary",
+    "sphere": "Multi",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "Quantum House Denmark",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "business support institutions",
+    "role_in_text": "physical hub providing lab and office space, business development guidance, and networks",
+    "technology_area": "deep tech general",
+    "occurrence_sentence": "Denmark pledges to establish a Quantum House Denmark with approximately DKK 16 million (CHF 2 million) yearly funding.",
+    "source_document": "GlobalQuantumStrategies26.pdf",
+    "page": 5,
+    "confidence": "high",
+    "canonical_actor_key": "quantum house denmark",
+    "aliases": [
+      "Quantum House Denmark"
+    ],
+    "pages": [
+      5
+    ],
+    "mentions": [
+      {
+        "entity": "Quantum House Denmark",
+        "page": 5,
+        "role_in_text": "physical hub providing lab and office space, business development guidance, and networks",
+        "occurrence_sentence": "Denmark pledges to establish a Quantum House Denmark with approximately DKK 16 million (CHF 2 million) yearly funding.",
+        "source_document": "GlobalQuantumStrategies26.pdf"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Intermediary",
+    "sphere": "Multi",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "Swissnex",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "business support institutions",
+    "role_in_text": "affiliation",
+    "technology_area": "quantum computing",
+    "occurrence_sentence": "Swissnex, B oston, MA, USA",
+    "source_document": "GlobalQuantumStrategies26.pdf",
+    "page": 1,
+    "confidence": "high",
+    "canonical_actor_key": "swissnex",
+    "aliases": [
+      "Swissnex"
+    ],
+    "pages": [
+      1
+    ],
+    "mentions": [
+      {
+        "entity": "Swissnex",
+        "page": 1,
+        "role_in_text": "affiliation",
+        "occurrence_sentence": "Swissnex, B oston, MA, USA",
+        "source_document": "GlobalQuantumStrategies26.pdf"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Intermediary",
+    "sphere": "Multi",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "Switzerland",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "country",
+    "role_in_text": "country with a quantum strategy",
+    "technology_area": "quantum computing",
+    "occurrence_sentence": "These priorities suggest that an overarching Swiss Quantum Strategy, if developed, may entail a “lighter touch” system of support for ongoing research and innovation, similar to the Canadian model, rather than a more centralized program as in the Dutch case.",
+    "source_document": "GlobalQuantumStrategies26.pdf",
+    "page": 10,
+    "confidence": "high",
+    "canonical_actor_key": "switzerland",
+    "aliases": [
+      "Switzerland"
+    ],
+    "pages": [
+      2,
+      10
+    ],
+    "mentions": [
+      {
+        "entity": "Switzerland",
+        "page": 2,
+        "role_in_text": "country that has launched a Swiss National Quantum Initiative (NQI) but has yet to create or deploy a national quantum strategy",
+        "occurrence_sentence": "Switzerland, while recently launching a Swiss National Quantum Initiative (NQI), has yet to create or deploy a national quantum strategy.",
+        "source_document": "GlobalQuantumStrategies26.pdf"
+      },
+      {
+        "entity": "Switzerland",
+        "page": 10,
+        "role_in_text": "country with a quantum strategy",
+        "occurrence_sentence": "These priorities suggest that an overarching Swiss Quantum Strategy, if developed, may entail a “lighter touch” system of support for ongoing research and innovation, similar to the Canadian model, rather than a more centralized program as in the Dutch case.",
+        "source_document": "GlobalQuantumStrategies26.pdf"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Unknown",
+    "sphere": "Unknown",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "unknown_category",
+    "classification_needs_review": true,
+    "classification_review_reason": "unmapped_category:country"
+  },
+  {
+    "entity": "USA",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "country",
+    "role_in_text": "international partner",
+    "technology_area": "quantum computing",
+    "occurrence_sentence": "The UK has made notable advances in international partnerships. The government signed its first major joint statement for bilateral cooperation with the USA in 2021.",
+    "source_document": "GlobalQuantumStrategies26.pdf",
+    "page": 8,
+    "confidence": "high",
+    "canonical_actor_key": "usa",
+    "aliases": [
+      "USA"
+    ],
+    "pages": [
+      8
+    ],
+    "mentions": [
+      {
+        "entity": "USA",
+        "page": 8,
+        "role_in_text": "international partner",
+        "occurrence_sentence": "The UK has made notable advances in international partnerships. The government signed its first major joint statement for bilateral cooperation with the USA in 2021.",
+        "source_document": "GlobalQuantumStrategies26.pdf"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Government",
+    "sphere": "Single",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "name_heuristic_government",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  }
+]

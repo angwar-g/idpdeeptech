@@ -1,0 +1,61 @@
+
+========================================================================
+RUN STARTED  2026-06-16 03:12:36
+pdf_pipeline.py Luis_USA20.pdf
+========================================================================
+
+[03:12:36 +0s | Luis_USA20] === 1 actor extraction ===
+[03:12:36 +0s | Luis_USA20] Reading PDF: Luis_USA20.pdf
+[03:12:36 +0s | Luis_USA20] Extracting: Luis_USA20.pdf, page 1/4, chunk 1/1
+[03:12:43 +7s | Luis_USA20] Repaired malformed JSON.
+[03:12:43 +7s | Luis_USA20] Extracting: Luis_USA20.pdf, page 2/4, chunk 1/3
+[03:12:51 +12s | Luis_USA20] Extracting: Luis_USA20.pdf, page 2/4, chunk 2/3
+[03:12:56 +18s | Luis_USA20] Repaired malformed JSON.
+[03:12:56 +18s | Luis_USA20] Extracting: Luis_USA20.pdf, page 2/4, chunk 3/3
+[03:13:04 +25s | Luis_USA20] Repaired malformed JSON.
+[03:13:04 +25s | Luis_USA20] Extracting: Luis_USA20.pdf, page 3/4, chunk 1/2
+[03:13:07 +28s | Luis_USA20] Extracting: Luis_USA20.pdf, page 3/4, chunk 2/2
+[03:13:16 +37s | Luis_USA20] Repaired malformed JSON.
+[03:13:16 +37s | Luis_USA20] Extracting: Luis_USA20.pdf, page 4/4, chunk 1/2
+[03:13:21 +42s | Luis_USA20] Repaired malformed JSON.
+[03:13:21 +42s | Luis_USA20] Extracting: Luis_USA20.pdf, page 4/4, chunk 2/2
+[03:13:30 +48s | Luis_USA20] Repaired malformed JSON.
+[03:13:30 +48s | Luis_USA20] Saved 1_actor_results.json with 13 clean actors
+
+[03:13:30 +48s | Luis_USA20] === 2 clean actors ===
+[03:13:30 +48s | Luis_USA20] Loaded 13 extracted records
+[03:13:30 +48s | Luis_USA20] Saved 2_actor_nodes.json with 6 canonical actor nodes
+
+[03:13:30 +48s | Luis_USA20] === 3 interaction extraction ===
+[03:13:30 +48s | Luis_USA20] Processing interactions for: Luis_USA20.pdf
+[03:13:30 +48s | Luis_USA20] Extracting interactions: Luis_USA20.pdf, page 1/4, chunk 1/1
+[03:13:34 +52s | Luis_USA20] Extracting interactions: Luis_USA20.pdf, page 2/4, chunk 2/3
+[03:13:50 +1m 8s | Luis_USA20] Extracting interactions: Luis_USA20.pdf, page 2/4, chunk 3/3
+[03:14:13 +1m 28s | Luis_USA20] Extracting interactions: Luis_USA20.pdf, page 3/4, chunk 2/2
+[03:14:19 +1m 35s | Luis_USA20] Extracting interactions: Luis_USA20.pdf, page 4/4, chunk 1/3
+[03:14:27 +1m 42s | Luis_USA20] Extracting interactions: Luis_USA20.pdf, page 4/4, chunk 2/3
+[03:14:32 +1m 47s | Luis_USA20] Extracting interactions: Luis_USA20.pdf, page 4/4, chunk 3/3
+[03:14:43 +1m 55s | Luis_USA20] Saved 3_interaction_results.json with 19 extracted interactions.
+
+[03:14:43 +1m 55s | Luis_USA20] === 4 clean interactions ===
+[03:14:43 +1m 55s | Luis_USA20] Saved 4_edges.json with 11 cleaned interactions.
+
+[03:14:43 +1m 55s | Luis_USA20] === 5 helix enrichment ===
+[03:14:43 +1m 55s | Luis_USA20] Wrote 5_nodes.json (6 actors)
+[03:14:43 +1m 55s | Luis_USA20] Wrote 5_edges.json (11 interactions)
+[03:14:43 +1m 55s | Luis_USA20] Actor helix counts: {'Government': 5, 'Unknown': 1}
+[03:14:43 +1m 55s | Luis_USA20] Functional-space counts: {'Intra-helix / Not classified': 10, 'Unknown': 1}
+
+[03:14:43 +1m 55s | Luis_USA20] === 6 network visualisation ===
+[03:14:43 +1m 55s | Luis_USA20] Wrote quantum_network.html
+[03:14:43 +1m 55s | Luis_USA20] Nodes: 6
+[03:14:43 +1m 55s | Luis_USA20] Edges: 7
+
+[03:14:43 +1m 55s | Luis_USA20] Done. Outputs written to: /home/lv/IDP/idpdeeptech/pipeline/pdf_outputs/Luis_USA20
+[03:14:43 +1m 55s | Luis_USA20] Log: /home/lv/IDP/idpdeeptech/pipeline/pdf_outputs/Luis_USA20/run.log
+
+========================================================================
+RUN FINISHED 2026-06-16 03:14:43  (OK)
+Started:     2026-06-16 03:12:36
+Elapsed:     1m 55s
+========================================================================

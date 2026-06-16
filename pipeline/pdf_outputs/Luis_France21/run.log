@@ -1,0 +1,100 @@
+
+========================================================================
+RUN STARTED  2026-06-16 02:17:12
+pdf_pipeline.py Luis_France21.pdf
+========================================================================
+
+[02:17:12 +0s | Luis_France21] === 1 actor extraction ===
+[02:17:13 +0s | Luis_France21] Reading PDF: Luis_France21.pdf
+[02:17:13 +0s | Luis_France21] Extracting: Luis_France21.pdf, page 1/26, chunk 1/1
+[02:17:16 +4s | Luis_France21] Extracting: Luis_France21.pdf, page 2/26, chunk 1/1
+[02:17:20 +7s | Luis_France21] Extracting: Luis_France21.pdf, page 3/26, chunk 1/1
+[02:17:29 +14s | Luis_France21] Repaired malformed JSON.
+[02:17:29 +14s | Luis_France21] Extracting: Luis_France21.pdf, page 4/26, chunk 1/1
+[02:17:36 +21s | Luis_France21] Repaired malformed JSON.
+[02:17:36 +21s | Luis_France21] Extracting: Luis_France21.pdf, page 5/26, chunk 1/1
+[02:17:43 +28s | Luis_France21] Repaired malformed JSON.
+[02:17:43 +28s | Luis_France21] Extracting: Luis_France21.pdf, page 6/26, chunk 1/1
+[02:17:52 +37s | Luis_France21] Repaired malformed JSON.
+[02:17:52 +37s | Luis_France21] Extracting: Luis_France21.pdf, page 7/26, chunk 1/1
+[02:18:01 +44s | Luis_France21] Repaired malformed JSON.
+[02:18:01 +44s | Luis_France21] Extracting: Luis_France21.pdf, page 8/26, chunk 1/1
+[02:18:09 +51s | Luis_France21] Repaired malformed JSON.
+[02:18:09 +51s | Luis_France21] Extracting: Luis_France21.pdf, page 9/26, chunk 1/1
+[02:18:17 +59s | Luis_France21] Repaired malformed JSON.
+[02:18:17 +59s | Luis_France21] Extracting: Luis_France21.pdf, page 10/26, chunk 1/1
+[02:18:23 +1m 6s | Luis_France21] Repaired malformed JSON.
+[02:18:23 +1m 6s | Luis_France21] Extracting: Luis_France21.pdf, page 11/26, chunk 1/1
+[02:18:32 +1m 15s | Luis_France21] Repaired malformed JSON.
+[02:18:32 +1m 15s | Luis_France21] Extracting: Luis_France21.pdf, page 12/26, chunk 1/1
+[02:18:39 +1m 19s | Luis_France21] Extracting: Luis_France21.pdf, page 13/26, chunk 1/1
+[02:18:45 +1m 25s | Luis_France21] Repaired malformed JSON.
+[02:18:45 +1m 25s | Luis_France21] Extracting: Luis_France21.pdf, page 14/26, chunk 1/1
+[02:18:54 +1m 34s | Luis_France21] Repaired malformed JSON.
+[02:18:54 +1m 34s | Luis_France21] Extracting: Luis_France21.pdf, page 15/26, chunk 1/1
+[02:18:59 +1m 39s | Luis_France21] Extracting: Luis_France21.pdf, page 16/26, chunk 1/1
+[02:19:05 +1m 45s | Luis_France21] Extracting: Luis_France21.pdf, page 17/26, chunk 1/1
+[02:19:16 +1m 53s | Luis_France21] Repaired malformed JSON.
+[02:19:16 +1m 53s | Luis_France21] Extracting: Luis_France21.pdf, page 18/26, chunk 1/1
+[02:19:22 +1m 59s | Luis_France21] Repaired malformed JSON.
+[02:19:22 +1m 59s | Luis_France21] Extracting: Luis_France21.pdf, page 19/26, chunk 1/1
+[02:19:30 +2m 7s | Luis_France21] Repaired malformed JSON.
+[02:19:30 +2m 7s | Luis_France21] Extracting: Luis_France21.pdf, page 20/26, chunk 1/1
+[02:19:39 +2m 16s | Luis_France21] Repaired malformed JSON.
+[02:19:39 +2m 16s | Luis_France21] Extracting: Luis_France21.pdf, page 21/26, chunk 1/1
+[02:19:46 +2m 21s | Luis_France21] Repaired malformed JSON.
+[02:19:46 +2m 21s | Luis_France21] Extracting: Luis_France21.pdf, page 22/26, chunk 1/1
+[02:19:54 +2m 28s | Luis_France21] Repaired malformed JSON.
+[02:19:54 +2m 28s | Luis_France21] Extracting: Luis_France21.pdf, page 23/26, chunk 1/1
+[02:20:01 +2m 36s | Luis_France21] Repaired malformed JSON.
+[02:20:01 +2m 36s | Luis_France21] Extracting: Luis_France21.pdf, page 24/26, chunk 1/1
+[02:20:09 +2m 44s | Luis_France21] Repaired malformed JSON.
+[02:20:09 +2m 44s | Luis_France21] Extracting: Luis_France21.pdf, page 25/26, chunk 1/1
+[02:20:15 +2m 50s | Luis_France21] Repaired malformed JSON.
+[02:20:15 +2m 50s | Luis_France21] Extracting: Luis_France21.pdf, page 26/26, chunk 1/1
+[02:20:24 +2m 56s | Luis_France21] Repaired malformed JSON.
+[02:20:24 +2m 56s | Luis_France21] Saved 1_actor_results.json with 51 clean actors
+
+[02:20:24 +2m 56s | Luis_France21] === 2 clean actors ===
+[02:20:24 +2m 56s | Luis_France21] Loaded 51 extracted records
+[02:20:24 +2m 56s | Luis_France21] Saved 2_actor_nodes.json with 22 canonical actor nodes
+
+[02:20:24 +2m 56s | Luis_France21] === 3 interaction extraction ===
+[02:20:24 +2m 56s | Luis_France21] Processing interactions for: Luis_France21.pdf
+[02:20:24 +2m 56s | Luis_France21] Extracting interactions: Luis_France21.pdf, page 3/26, chunk 1/1
+[02:20:33 +3m 6s | Luis_France21] Extracting interactions: Luis_France21.pdf, page 4/26, chunk 1/1
+[02:20:38 +3m 11s | Luis_France21] Extracting interactions: Luis_France21.pdf, page 5/26, chunk 1/1
+[02:20:45 +3m 17s | Luis_France21] Extracting interactions: Luis_France21.pdf, page 6/26, chunk 1/1
+[02:20:48 +3m 20s | Luis_France21] Extracting interactions: Luis_France21.pdf, page 10/26, chunk 1/1
+[02:20:58 +3m 27s | Luis_France21] Extracting interactions: Luis_France21.pdf, page 14/26, chunk 1/1
+[02:21:07 +3m 37s | Luis_France21] Extracting interactions: Luis_France21.pdf, page 18/26, chunk 1/1
+[02:21:12 +3m 41s | Luis_France21] Extracting interactions: Luis_France21.pdf, page 20/26, chunk 1/1
+[02:21:16 +3m 46s | Luis_France21] Extracting interactions: Luis_France21.pdf, page 21/26, chunk 1/1
+[02:21:44 +4m 11s | Luis_France21] Extracting interactions: Luis_France21.pdf, page 22/26, chunk 1/1
+[02:21:47 +4m 14s | Luis_France21] Extracting interactions: Luis_France21.pdf, page 23/26, chunk 1/1
+[02:22:02 +4m 29s | Luis_France21] Extracting interactions: Luis_France21.pdf, page 24/26, chunk 1/1
+[02:22:08 +4m 33s | Luis_France21] Extracting interactions: Luis_France21.pdf, page 26/26, chunk 1/1
+[02:22:20 +4m 44s | Luis_France21] Saved 3_interaction_results.json with 22 extracted interactions.
+
+[02:22:20 +4m 44s | Luis_France21] === 4 clean interactions ===
+[02:22:20 +4m 44s | Luis_France21] Saved 4_edges.json with 6 cleaned interactions.
+
+[02:22:20 +4m 44s | Luis_France21] === 5 helix enrichment ===
+[02:22:20 +4m 44s | Luis_France21] Wrote 5_nodes.json (22 actors)
+[02:22:20 +4m 44s | Luis_France21] Wrote 5_edges.json (6 interactions)
+[02:22:20 +4m 44s | Luis_France21] Actor helix counts: {'Academia': 2, 'Government': 7, 'Industry': 4, 'Intermediary': 3, 'Unknown': 6}
+[02:22:20 +4m 44s | Luis_France21] Functional-space counts: {'Consensus': 1, 'Innovation': 1, 'Intra-helix / Not classified': 3, 'Unknown': 1}
+
+[02:22:20 +4m 44s | Luis_France21] === 6 network visualisation ===
+[02:22:20 +4m 44s | Luis_France21] Wrote quantum_network.html
+[02:22:20 +4m 44s | Luis_France21] Nodes: 22
+[02:22:20 +4m 44s | Luis_France21] Edges: 6
+
+[02:22:20 +4m 45s | Luis_France21] Done. Outputs written to: /home/lv/IDP/idpdeeptech/pipeline/pdf_outputs/Luis_France21
+[02:22:20 +4m 45s | Luis_France21] Log: /home/lv/IDP/idpdeeptech/pipeline/pdf_outputs/Luis_France21/run.log
+
+========================================================================
+RUN FINISHED 2026-06-16 02:22:20  (OK)
+Started:     2026-06-16 02:17:12
+Elapsed:     4m 45s
+========================================================================

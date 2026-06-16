@@ -1,0 +1,41 @@
+
+========================================================================
+RUN STARTED  2026-06-16 03:32:06
+pdf_pipeline.py TexasBill25.pdf
+========================================================================
+
+[03:32:06 +0s | TexasBill25] === 1 actor extraction ===
+[03:32:06 +0s | TexasBill25] Reading PDF: TexasBill25.pdf
+[03:32:06 +0s | TexasBill25] Saved 1_actor_results.json with 0 clean actors
+
+[03:32:06 +0s | TexasBill25] === 2 clean actors ===
+[03:32:06 +0s | TexasBill25] Loaded 0 extracted records
+[03:32:06 +0s | TexasBill25] Saved 2_actor_nodes.json with 0 canonical actor nodes
+
+[03:32:06 +0s | TexasBill25] === 3 interaction extraction ===
+[03:32:06 +1s | TexasBill25] Processing interactions for: TexasBill25.pdf
+[03:32:06 +1s | TexasBill25] No valid actors found for TexasBill25.pdf, skipping.
+[03:32:06 +1s | TexasBill25] Saved 3_interaction_results.json with 0 extracted interactions.
+
+[03:32:06 +1s | TexasBill25] === 4 clean interactions ===
+[03:32:06 +1s | TexasBill25] Saved 4_edges.json with 0 cleaned interactions.
+
+[03:32:06 +1s | TexasBill25] === 5 helix enrichment ===
+[03:32:06 +1s | TexasBill25] Wrote 5_nodes.json (0 actors)
+[03:32:06 +1s | TexasBill25] Wrote 5_edges.json (0 interactions)
+[03:32:06 +1s | TexasBill25] Actor helix counts: {}
+[03:32:06 +1s | TexasBill25] Functional-space counts: {}
+
+[03:32:06 +1s | TexasBill25] === 6 network visualisation ===
+[03:32:07 +1s | TexasBill25] Wrote quantum_network.html
+[03:32:07 +1s | TexasBill25] Nodes: 0
+[03:32:07 +1s | TexasBill25] Edges: 0
+
+[03:32:07 +1s | TexasBill25] Done. Outputs written to: /home/lv/IDP/idpdeeptech/pipeline/pdf_outputs/TexasBill25
+[03:32:07 +1s | TexasBill25] Log: /home/lv/IDP/idpdeeptech/pipeline/pdf_outputs/TexasBill25/run.log
+
+========================================================================
+RUN FINISHED 2026-06-16 03:32:07  (OK)
+Started:     2026-06-16 03:32:06
+Elapsed:     1s
+========================================================================

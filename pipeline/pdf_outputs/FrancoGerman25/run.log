@@ -300,3 +300,80 @@ pdf_pipeline.py FrancoGerman25.pdf
 RUN FINISHED 2026-05-31 00:53:27  (INTERRUPTED)
 Elapsed:     9s
 ========================================================================
+
+========================================================================
+RUN STARTED  2026-06-16 01:50:57
+pdf_pipeline.py FrancoGerman25.pdf
+========================================================================
+
+[01:50:57 +0s | FrancoGerman25] === 1 actor extraction ===
+[01:50:57 +0s | FrancoGerman25] Auto-resume: 26 (source, page) pairs already done, skipping them.
+[01:50:57 +0s | FrancoGerman25] Reading PDF: FrancoGerman25.pdf
+[01:50:57 +0s | FrancoGerman25] All 26 pages/URLs already processed (per 1_actor_results.progress.json). Nothing to do.
+[01:50:57 +0s | FrancoGerman25] Delete the progress sidecar to force a full re-run, or pass --start-page N.
+[01:50:57 +0s | FrancoGerman25] Saved 1_actor_results.json with 22 clean actors
+
+[01:50:57 +0s | FrancoGerman25] === 2 clean actors ===
+[01:50:57 +0s | FrancoGerman25] Loaded 22 extracted records
+[01:50:57 +0s | FrancoGerman25] Saved 2_actor_nodes.json with 14 canonical actor nodes
+
+[01:50:57 +0s | FrancoGerman25] === 3 interaction extraction ===
+[01:50:57 +0s | FrancoGerman25] Processing interactions for: FrancoGerman25.pdf
+[01:50:57 +1s | FrancoGerman25] Extracting interactions: FrancoGerman25.pdf, page 1/26, chunk 1/1
+[01:51:10 +13s | FrancoGerman25] Extracting interactions: FrancoGerman25.pdf, page 2/26, chunk 2/2
+[01:51:45 +46s | FrancoGerman25] Extracting interactions: FrancoGerman25.pdf, page 3/26, chunk 1/2
+[01:51:48 +50s | FrancoGerman25] Extracting interactions: FrancoGerman25.pdf, page 3/26, chunk 2/2
+[01:52:08 +1m 8s | FrancoGerman25] Extracting interactions: FrancoGerman25.pdf, page 4/26, chunk 2/3
+[01:52:33 +1m 31s | FrancoGerman25] Extracting interactions: FrancoGerman25.pdf, page 4/26, chunk 3/3
+[01:53:10 +2m 6s | FrancoGerman25] Extracting interactions: FrancoGerman25.pdf, page 5/26, chunk 2/3
+[01:53:45 +2m 39s | FrancoGerman25] Extracting interactions: FrancoGerman25.pdf, page 5/26, chunk 3/3
+[01:54:18 +3m 10s | FrancoGerman25] Extracting interactions: FrancoGerman25.pdf, page 6/26, chunk 1/2
+[01:54:26 +3m 18s | FrancoGerman25] Extracting interactions: FrancoGerman25.pdf, page 6/26, chunk 2/2
+[01:54:29 +3m 21s | FrancoGerman25] Extracting interactions: FrancoGerman25.pdf, page 7/26, chunk 2/2
+[01:54:54 +3m 44s | FrancoGerman25] Extracting interactions: FrancoGerman25.pdf, page 8/26, chunk 1/3
+[01:54:59 +3m 49s | FrancoGerman25] Extracting interactions: FrancoGerman25.pdf, page 8/26, chunk 2/3
+[01:55:13 +4m 2s | FrancoGerman25] Extracting interactions: FrancoGerman25.pdf, page 9/26, chunk 2/2
+[01:55:19 +4m 7s | FrancoGerman25] Extracting interactions: FrancoGerman25.pdf, page 10/26, chunk 2/2
+[01:55:29 +4m 16s | FrancoGerman25] Extracting interactions: FrancoGerman25.pdf, page 11/26, chunk 2/3
+[01:55:36 +4m 24s | FrancoGerman25] Extracting interactions: FrancoGerman25.pdf, page 11/26, chunk 3/3
+[01:55:46 +4m 33s | FrancoGerman25] Extracting interactions: FrancoGerman25.pdf, page 12/26, chunk 1/2
+[01:56:02 +4m 48s | FrancoGerman25] Extracting interactions: FrancoGerman25.pdf, page 12/26, chunk 2/2
+[01:56:09 +4m 55s | FrancoGerman25] Extracting interactions: FrancoGerman25.pdf, page 13/26, chunk 2/2
+[01:56:34 +5m 18s | FrancoGerman25] Extracting interactions: FrancoGerman25.pdf, page 15/26, chunk 2/3
+[01:57:01 +5m 43s | FrancoGerman25] Extracting interactions: FrancoGerman25.pdf, page 15/26, chunk 3/3
+[01:57:35 +6m 14s | FrancoGerman25] Extracting interactions: FrancoGerman25.pdf, page 16/26, chunk 3/3
+[01:57:42 +6m 22s | FrancoGerman25] Extracting interactions: FrancoGerman25.pdf, page 17/26, chunk 2/4
+[01:57:54 +6m 33s | FrancoGerman25] Extracting interactions: FrancoGerman25.pdf, page 17/26, chunk 3/4
+[01:58:17 +6m 55s | FrancoGerman25] Extracting interactions: FrancoGerman25.pdf, page 17/26, chunk 4/4
+[01:58:52 +7m 28s | FrancoGerman25] Extracting interactions: FrancoGerman25.pdf, page 19/26, chunk 2/2
+[01:59:15 +7m 51s | FrancoGerman25] Extracting interactions: FrancoGerman25.pdf, page 20/26, chunk 1/1
+[01:59:26 +8m 0s | FrancoGerman25] Extracting interactions: FrancoGerman25.pdf, page 21/26, chunk 1/2
+[01:59:48 +8m 22s | FrancoGerman25] Extracting interactions: FrancoGerman25.pdf, page 21/26, chunk 2/2
+[02:00:13 +8m 45s | FrancoGerman25] Extracting interactions: FrancoGerman25.pdf, page 24/26, chunk 2/2
+[02:00:26 +8m 56s | FrancoGerman25] Extracting interactions: FrancoGerman25.pdf, page 25/26, chunk 2/3
+[02:00:31 +9m 0s | FrancoGerman25] Extracting interactions: FrancoGerman25.pdf, page 25/26, chunk 3/3
+[02:00:51 +9m 20s | FrancoGerman25] Extracting interactions: FrancoGerman25.pdf, page 26/26, chunk 2/2
+[02:01:04 +9m 31s | FrancoGerman25] Saved 3_interaction_results.json with 100 extracted interactions.
+
+[02:01:04 +9m 31s | FrancoGerman25] === 4 clean interactions ===
+[02:01:04 +9m 31s | FrancoGerman25] Saved 4_edges.json with 24 cleaned interactions.
+
+[02:01:04 +9m 31s | FrancoGerman25] === 5 helix enrichment ===
+[02:01:04 +9m 31s | FrancoGerman25] Wrote 5_nodes.json (14 actors)
+[02:01:04 +9m 31s | FrancoGerman25] Wrote 5_edges.json (24 interactions)
+[02:01:04 +9m 31s | FrancoGerman25] Actor helix counts: {'Government': 4, 'Industry': 2, 'Intermediary': 7, 'Unknown': 1}
+[02:01:04 +9m 31s | FrancoGerman25] Functional-space counts: {'Consensus': 2, 'Intra-helix / Not classified': 5, 'Unknown': 17}
+
+[02:01:04 +9m 31s | FrancoGerman25] === 6 network visualisation ===
+[02:01:04 +9m 31s | FrancoGerman25] Wrote quantum_network.html
+[02:01:04 +9m 31s | FrancoGerman25] Nodes: 14
+[02:01:04 +9m 31s | FrancoGerman25] Edges: 11
+
+[02:01:04 +9m 31s | FrancoGerman25] Done. Outputs written to: /home/lv/IDP/idpdeeptech/pipeline/pdf_outputs/FrancoGerman25
+[02:01:04 +9m 31s | FrancoGerman25] Log: /home/lv/IDP/idpdeeptech/pipeline/pdf_outputs/FrancoGerman25/run.log
+
+========================================================================
+RUN FINISHED 2026-06-16 02:01:04  (OK)
+Started:     2026-06-16 01:50:57
+Elapsed:     9m 31s
+========================================================================

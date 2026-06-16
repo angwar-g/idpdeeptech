@@ -1,0 +1,82 @@
+[
+  {
+    "interaction_phrase": "HSBC and Banco Sabadell (among others) are piloting quantum-secure infrastructure to mitigate",
+    "occurrence_sentence": "HSBC and Banco Sabadell (among others) are piloting quantum-secure infrastructure to mitigate future cyber threats.",
+    "page": 4,
+    "source_actor": "HSBC",
+    "source_document": "WEF25.pdf",
+    "target_actor": "Banco Sabadell",
+    "relation_label": "technology_transfer",
+    "relation_label_confidence": "high"
+  },
+  {
+    "interaction_phrase": "Gökhan Özdinç, Executive Vice President, Technology, Data and Process Management, Yapı Kredi",
+    "occurrence_sentence": "\"Risk management is one of the most critical components of banking. We applied our model to a real-life scenario covering 4,297 out of a network of over 600,000 corporate clients. An analysis that would traditionally take years to compute was completed in just seven seconds thanks to the technology we developed. Our goal is to carry our clients into the future with a more robust financial infrastructure and to establish a model that will shape the industry.\" – Gökhan Özdinç, Executive Vice President, Technology, Data and Process Management, Yapı Kredi.",
+    "page": 9,
+    "source_actor": "Yapı Kredi",
+    "source_document": "WEF25.pdf",
+    "target_actor": "Gökhan Özdinç",
+    "relation_label": "technology_transfer",
+    "relation_label_confidence": "high"
+  },
+  {
+    "interaction_phrase": "in collaboration with",
+    "occurrence_sentence": "Banco Sabadell, in collaboration with Accenture and QuSecure, recently completed a four-month project exploring the adoption of PQC technologies.",
+    "page": 17,
+    "source_actor": "Banco Sabadell",
+    "source_document": "WEF25.pdf",
+    "target_actor": "Accenture",
+    "relation_label": "networking",
+    "relation_label_confidence": "high"
+  },
+  {
+    "interaction_phrase": "implementing NIST PQC standards",
+    "occurrence_sentence": "Accenture's quantum security expertise and test labs provided a roadmap for implementing NIST PQC standards, while QuSecure demonstrated how encryption agility in the network layer can protect enterprises without disrupting existing systems.",
+    "page": 17,
+    "source_actor": "Accenture",
+    "source_document": "WEF25.pdf",
+    "target_actor": "National Institute of Standard Technology (NIST)",
+    "relation_label": "networking",
+    "relation_label_confidence": "high"
+  },
+  {
+    "interaction_phrase": "the World Economic Forum's Quantum Economy Network and the Financial Conduct Authority's",
+    "occurrence_sentence": "Collaborative initiatives such as the World Economic Forum's Quantum Economy Network and the Financial Conduct Authority's (FCA) Emerging Technology Research Hub are helping to shape cross-industry standards and best practices for quantum governance and security.",
+    "page": 19,
+    "source_actor": "World Economic Forum",
+    "source_document": "WEF25.pdf",
+    "target_actor": "Financial Conduct Authority (FCA)",
+    "relation_label": "networking",
+    "relation_label_confidence": "high"
+  },
+  {
+    "interaction_phrase": "collaboration between Toshiba Europe, HSBC and British Telecom (BT)",
+    "occurrence_sentence": "More established organizations are also taking note. For instance, a collaboration between Toshiba Europe, HSBC and British Telecom (BT) aims to expand the capabilities of QKD networks.",
+    "page": 20,
+    "source_actor": "European Union (EU)",
+    "source_document": "WEF25.pdf",
+    "target_actor": "HSBC",
+    "relation_label": "networking",
+    "relation_label_confidence": "medium"
+  },
+  {
+    "interaction_phrase": "collaboration involving the Monetary Authority of Singapore (MAS), several banks – DBS,",
+    "occurrence_sentence": "Quantum security collaboration involving the Monetary Authority of Singapore (MAS), several banks – DBS, HSBC, Oversea-Chinese Banking Corporation (OCBC), United Overseas Bank (UOB) – and technology providers SPTel and SpeQtral, with a study on QKD for financial services applications.",
+    "page": 25,
+    "source_actor": "Monetary Authority of Singapore (MAS)",
+    "source_document": "WEF25.pdf",
+    "target_actor": "HSBC",
+    "relation_label": "networking",
+    "relation_label_confidence": "high"
+  },
+  {
+    "source_actor": "Banco Sabadell",
+    "target_actor": "Accenture",
+    "interaction_phrase": "Collaborates with",
+    "occurrence_sentence": "Accenture Newsroom. (2024). Banco Sabadell Collaborates with Accenture and QuSecure to Advance Quantum Safe Infrastructure.",
+    "source_document": "WEF25.pdf",
+    "page": 30,
+    "relation_label": "technology_transfer",
+    "relation_label_confidence": "high"
+  }
+]

@@ -1,0 +1,100 @@
+[
+  {
+    "entity": "European Union (EU)",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "supranational government institutions",
+    "role_in_text": "Strong engagement and alignment with the EU Q-Strategy",
+    "technology_area": "quantum computing",
+    "occurrence_sentence": "Strong engagement and alignment with the EU Q-Strategy",
+    "source_document": "Luxembourg25.pdf",
+    "page": 5,
+    "confidence": "high",
+    "canonical_actor_key": "european union",
+    "aliases": [
+      "EU",
+      "European Union",
+      "European Union (EU)"
+    ],
+    "pages": [
+      5
+    ],
+    "mentions": [
+      {
+        "entity": "European Union (EU)",
+        "page": 5,
+        "role_in_text": "Strong engagement and alignment with the EU Q-Strategy",
+        "occurrence_sentence": "Strong engagement and alignment with the EU Q-Strategy",
+        "source_document": "Luxembourg25.pdf"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Government",
+    "sphere": "Single",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "Luxembourg",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "country",
+    "role_in_text": "strategic actor",
+    "technology_area": "quantum communication | quantum cryptography",
+    "occurrence_sentence": "Strengthen Luxembourg's position as a trusted global center for data-driven innovation",
+    "source_document": "Luxembourg25.pdf",
+    "page": 7,
+    "confidence": "high",
+    "canonical_actor_key": "luxembourg",
+    "aliases": [
+      "Luxembourg"
+    ],
+    "pages": [
+      2,
+      3,
+      5,
+      7
+    ],
+    "mentions": [
+      {
+        "entity": "Luxembourg",
+        "page": 2,
+        "role_in_text": "Luxembourg as a digital Trust Center in the EU",
+        "occurrence_sentence": "Luxembourg as a digital Trust Center in the EU",
+        "source_document": "Luxembourg25.pdf"
+      },
+      {
+        "entity": "Luxembourg",
+        "page": 3,
+        "role_in_text": "Strengthening Luxembourg's position as a European digital hub",
+        "occurrence_sentence": "Strengthening Luxembourg's position as a European digital hub",
+        "source_document": "Luxembourg25.pdf"
+      },
+      {
+        "entity": "Luxembourg",
+        "page": 5,
+        "role_in_text": "Quantum vision and roadmap for Luxembourg",
+        "occurrence_sentence": "Quantum vision and roadmap for Luxembourg",
+        "source_document": "Luxembourg25.pdf"
+      },
+      {
+        "entity": "Luxembourg",
+        "page": 7,
+        "role_in_text": "strategic actor",
+        "occurrence_sentence": "Strengthen Luxembourg's position as a trusted global center for data-driven innovation",
+        "source_document": "Luxembourg25.pdf"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Unknown",
+    "sphere": "Unknown",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "unknown_category",
+    "classification_needs_review": true,
+    "classification_review_reason": "unmapped_category:country"
+  }
+]
