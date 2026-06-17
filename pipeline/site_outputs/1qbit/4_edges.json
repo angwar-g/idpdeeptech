@@ -1,0 +1,32 @@
+[
+  {
+    "interaction_phrase": "has been invited to participate in DARPA's QBI program",
+    "occurrence_sentence": "1QBit has been invited to participate in DARPA's QBI program, guiding quantum computing towards utility scale compute with our collaborators",
+    "page": 2,
+    "source_actor": "1QBit",
+    "source_document": "https://1qbit.com/home/topqad-news",
+    "target_actor": "DARPA",
+    "relation_label": "networking",
+    "relation_label_confidence": "high"
+  },
+  {
+    "source_actor": "Pooya Ronagh",
+    "target_actor": "1QBit",
+    "interaction_phrase": "1QBit's CTO",
+    "occurrence_sentence": "\"TopQAD is helping 1QBit to work efficiently with our consortium. Its automation allows us to easily analyze fault-tolerant quantum circuits and obtain detailed and concrete resource estimation,\" says Pooya Ronagh, 1QBit's CTO.",
+    "source_document": "https://1qbit.com/home/topqad-news",
+    "page": 5,
+    "relation_label": "networking",
+    "relation_label_confidence": "high"
+  },
+  {
+    "source_actor": "1QBit",
+    "target_actor": "DARPA",
+    "interaction_phrase": "participate in DARPA's QBI program",
+    "occurrence_sentence": "1QBit has been invited to participate in DARPA's QBI program, guiding quantum computing towards utility scale compute with our collaborators",
+    "source_document": "https://1qbit.com",
+    "page": 3,
+    "relation_label": "networking",
+    "relation_label_confidence": "high"
+  }
+]

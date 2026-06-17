@@ -1,0 +1,321 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+            <script>function neighbourhoodHighlight(params) {
+  // console.log("in nieghbourhoodhighlight");
+  allNodes = nodes.get({ returnType: "Object" });
+  // originalNodes = JSON.parse(JSON.stringify(allNodes));
+  // if something is selected:
+  if (params.nodes.length > 0) {
+    highlightActive = true;
+    var i, j;
+    var selectedNode = params.nodes[0];
+    var degrees = 2;
+
+    // mark all nodes as hard to read.
+    for (let nodeId in allNodes) {
+      // nodeColors[nodeId] = allNodes[nodeId].color;
+      allNodes[nodeId].color = "rgba(200,200,200,0.5)";
+      if (allNodes[nodeId].hiddenLabel === undefined) {
+        allNodes[nodeId].hiddenLabel = allNodes[nodeId].label;
+        allNodes[nodeId].label = undefined;
+      }
+    }
+    var connectedNodes = network.getConnectedNodes(selectedNode);
+    var allConnectedNodes = [];
+
+    // get the second degree nodes
+    for (i = 1; i < degrees; i++) {
+      for (j = 0; j < connectedNodes.length; j++) {
+        allConnectedNodes = allConnectedNodes.concat(
+          network.getConnectedNodes(connectedNodes[j])
+        );
+      }
+    }
+
+    // all second degree nodes get a different color and their label back
+    for (i = 0; i < allConnectedNodes.length; i++) {
+      // allNodes[allConnectedNodes[i]].color = "pink";
+      allNodes[allConnectedNodes[i]].color = "rgba(150,150,150,0.75)";
+      if (allNodes[allConnectedNodes[i]].hiddenLabel !== undefined) {
+        allNodes[allConnectedNodes[i]].label =
+          allNodes[allConnectedNodes[i]].hiddenLabel;
+        allNodes[allConnectedNodes[i]].hiddenLabel = undefined;
+      }
+    }
+
+    // all first degree nodes get their own color and their label back
+    for (i = 0; i < connectedNodes.length; i++) {
+      // allNodes[connectedNodes[i]].color = undefined;
+      allNodes[connectedNodes[i]].color = nodeColors[connectedNodes[i]];
+      if (allNodes[connectedNodes[i]].hiddenLabel !== undefined) {
+        allNodes[connectedNodes[i]].label =
+          allNodes[connectedNodes[i]].hiddenLabel;
+        allNodes[connectedNodes[i]].hiddenLabel = undefined;
+      }
+    }
+
+    // the main node gets its own color and its label back.
+    // allNodes[selectedNode].color = undefined;
+    allNodes[selectedNode].color = nodeColors[selectedNode];
+    if (allNodes[selectedNode].hiddenLabel !== undefined) {
+      allNodes[selectedNode].label = allNodes[selectedNode].hiddenLabel;
+      allNodes[selectedNode].hiddenLabel = undefined;
+    }
+  } else if (highlightActive === true) {
+    // console.log("highlightActive was true");
+    // reset all nodes
+    for (let nodeId in allNodes) {
+      // allNodes[nodeId].color = "purple";
+      allNodes[nodeId].color = nodeColors[nodeId];
+      // delete allNodes[nodeId].color;
+      if (allNodes[nodeId].hiddenLabel !== undefined) {
+        allNodes[nodeId].label = allNodes[nodeId].hiddenLabel;
+        allNodes[nodeId].hiddenLabel = undefined;
+      }
+    }
+    highlightActive = false;
+  }
+
+  // transform the object into an array
+  var updateArray = [];
+  if (params.nodes.length > 0) {
+    for (let nodeId in allNodes) {
+      if (allNodes.hasOwnProperty(nodeId)) {
+        // console.log(allNodes[nodeId]);
+        updateArray.push(allNodes[nodeId]);
+      }
+    }
+    nodes.update(updateArray);
+  } else {
+    // console.log("Nothing was selected");
+    for (let nodeId in allNodes) {
+      if (allNodes.hasOwnProperty(nodeId)) {
+        // console.log(allNodes[nodeId]);
+        // allNodes[nodeId].color = {};
+        updateArray.push(allNodes[nodeId]);
+      }
+    }
+    nodes.update(updateArray);
+  }
+}
+
+function filterHighlight(params) {
+  allNodes = nodes.get({ returnType: "Object" });
+  // if something is selected:
+  if (params.nodes.length > 0) {
+    filterActive = true;
+    let selectedNodes = params.nodes;
+
+    // hiding all nodes and saving the label
+    for (let nodeId in allNodes) {
+      allNodes[nodeId].hidden = true;
+      if (allNodes[nodeId].savedLabel === undefined) {
+        allNodes[nodeId].savedLabel = allNodes[nodeId].label;
+        allNodes[nodeId].label = undefined;
+      }
+    }
+
+    for (let i=0; i < selectedNodes.length; i++) {
+      allNodes[selectedNodes[i]].hidden = false;
+      if (allNodes[selectedNodes[i]].savedLabel !== undefined) {
+        allNodes[selectedNodes[i]].label = allNodes[selectedNodes[i]].savedLabel;
+        allNodes[selectedNodes[i]].savedLabel = undefined;
+      }
+    }
+
+  } else if (filterActive === true) {
+    // reset all nodes
+    for (let nodeId in allNodes) {
+      allNodes[nodeId].hidden = false;
+      if (allNodes[nodeId].savedLabel !== undefined) {
+        allNodes[nodeId].label = allNodes[nodeId].savedLabel;
+        allNodes[nodeId].savedLabel = undefined;
+      }
+    }
+    filterActive = false;
+  }
+
+  // transform the object into an array
+  var updateArray = [];
+  if (params.nodes.length > 0) {
+    for (let nodeId in allNodes) {
+      if (allNodes.hasOwnProperty(nodeId)) {
+        updateArray.push(allNodes[nodeId]);
+      }
+    }
+    nodes.update(updateArray);
+  } else {
+    for (let nodeId in allNodes) {
+      if (allNodes.hasOwnProperty(nodeId)) {
+        updateArray.push(allNodes[nodeId]);
+      }
+    }
+    nodes.update(updateArray);
+  }
+}
+
+function selectNode(nodes) {
+  network.selectNodes(nodes);
+  neighbourhoodHighlight({ nodes: nodes });
+  return nodes;
+}
+
+function selectNodes(nodes) {
+  network.selectNodes(nodes);
+  filterHighlight({nodes: nodes});
+  return nodes;
+}
+
+function highlightFilter(filter) {
+  let selectedNodes = []
+  let selectedProp = filter['property']
+  if (filter['item'] === 'node') {
+    let allNodes = nodes.get({ returnType: "Object" });
+    for (let nodeId in allNodes) {
+      if (allNodes[nodeId][selectedProp] && filter['value'].includes((allNodes[nodeId][selectedProp]).toString())) {
+        selectedNodes.push(nodeId)
+      }
+    }
+  }
+  else if (filter['item'] === 'edge'){
+    let allEdges = edges.get({returnType: 'object'});
+    // check if the selected property exists for selected edge and select the nodes connected to the edge
+    for (let edge in allEdges) {
+      if (allEdges[edge][selectedProp] && filter['value'].includes((allEdges[edge][selectedProp]).toString())) {
+        selectedNodes.push(allEdges[edge]['from'])
+        selectedNodes.push(allEdges[edge]['to'])
+      }
+    }
+  }
+  selectNodes(selectedNodes)
+}</script>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/dist/vis-network.min.css" integrity="sha512-WgxfT5LWjfszlPHXRmBWHkV2eceiWTOBvrKCNbdgDYTHrT2AeLCGbF4sZlZw3UMN3WtL0tGUoIAKsu8mllg/XA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/vis-network.min.js" integrity="sha512-LnvoEWDFrqGHlHmDD2101OrLcbsfkrzoSpvtSQtxK3RMnRV0eOkhhBN2dXHKRrUU8p2DGRTk35n4O8nWSVe1mQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            
+            
+            
+            
+            
+            
+
+        
+<center>
+<h1></h1>
+</center>
+
+<!-- <link rel="stylesheet" href="../node_modules/vis/dist/vis.min.css" type="text/css" />
+<script type="text/javascript" src="../node_modules/vis/dist/vis.js"> </script>-->
+        <link
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+          crossorigin="anonymous"
+        />
+        <script
+          src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+          crossorigin="anonymous"
+        ></script>
+
+
+        <center>
+          <h1></h1>
+        </center>
+        <style type="text/css">
+
+             #mynetwork {
+                 width: 100%;
+                 height: 850px;
+                 background-color: #ffffff;
+                 border: 1px solid lightgray;
+                 position: relative;
+                 float: left;
+             }
+
+             
+
+             
+
+             
+        </style>
+    </head>
+
+
+    <body>
+        <div class="card" style="width: 100%">
+            
+            
+            <div id="mynetwork" class="card-body"></div>
+        </div>
+
+        
+        
+
+        <script type="text/javascript">
+
+              // initialize global variables.
+              var edges;
+              var nodes;
+              var allNodes;
+              var allEdges;
+              var nodeColors;
+              var originalNodes;
+              var network;
+              var container;
+              var options, data;
+              var filter = {
+                  item : '',
+                  property : '',
+                  value : []
+              };
+
+              
+
+              
+
+              // This method is responsible for drawing the graph, returns the drawn network
+              function drawGraph() {
+                  var container = document.getElementById('mynetwork');
+
+                  
+
+                  // parsing and collecting nodes and edges from the python
+                  nodes = new vis.DataSet([{"category": "national government institutions", "color": "#54A24B", "font": {"size": 18}, "helix": "Government", "id": "dlr quantum computing initiative", "label": "DLR Quantum Computing Initiative (DLR QCI)", "shape": "dot", "size": 18, "title": "\u003cb\u003eDLR Quantum Computing Initiative (DLR QCI)\u003c/b\u003e\u003cbr\u003eHelix: Government\u003cbr\u003eCategory: national government institutions\u003cbr\u003eReview: False"}, {"category": "national government institutions", "color": "#54A24B", "font": {"size": 18}, "helix": "Government", "id": "german aerospace center", "label": "German Aerospace Center (DLR)", "shape": "dot", "size": 18, "title": "\u003cb\u003eGerman Aerospace Center (DLR)\u003c/b\u003e\u003cbr\u003eHelix: Government\u003cbr\u003eCategory: national government institutions\u003cbr\u003eReview: False"}, {"category": "large enterprises", "color": "#F58518", "font": {"size": 18}, "helix": "Industry", "id": "eviden", "label": "Eviden", "shape": "dot", "size": 18, "title": "\u003cb\u003eEviden\u003c/b\u003e\u003cbr\u003eHelix: Industry\u003cbr\u003eCategory: large enterprises\u003cbr\u003eReview: False"}, {"category": "research institutes", "color": "#4C78A8", "font": {"size": 18}, "helix": "Academia", "id": "forschungszentrum j lich", "label": "Forschungszentrum J\u00fclich (FZJ)", "shape": "dot", "size": 18, "title": "\u003cb\u003eForschungszentrum J\u00fclich (FZJ)\u003c/b\u003e\u003cbr\u003eHelix: Academia\u003cbr\u003eCategory: research institutes\u003cbr\u003eReview: False"}, {"category": "research institutes", "color": "#4C78A8", "font": {"size": 18}, "helix": "Academia", "id": "commissariat l nergie atomique et aux nergies alternatives", "label": "Commissariat \u00e0 l\u0027\u00e9nergie atomique et aux \u00e9nergies alternatives (CEA)", "shape": "dot", "size": 18, "title": "\u003cb\u003eCommissariat \u00e0 l\u0027\u00e9nergie atomique et aux \u00e9nergies alternatives (CEA)\u003c/b\u003e\u003cbr\u003eHelix: Academia\u003cbr\u003eCategory: research institutes\u003cbr\u003eReview: False"}, {"category": "joint research centers", "color": "#E45756", "font": {"size": 18}, "helix": "Intermediary", "id": "qsolid", "label": "QSolid", "shape": "dot", "size": 18, "title": "\u003cb\u003eQSolid\u003c/b\u003e\u003cbr\u003eHelix: Intermediary\u003cbr\u003eCategory: joint research centers\u003cbr\u003eReview: False"}, {"category": "research institutes", "color": "#4C78A8", "font": {"size": 18}, "helix": "Academia", "id": "j lich supercomputing centre", "label": "J\u00fclich Supercomputing Centre (JSC)", "shape": "dot", "size": 18, "title": "\u003cb\u003eJ\u00fclich Supercomputing Centre (JSC)\u003c/b\u003e\u003cbr\u003eHelix: Academia\u003cbr\u003eCategory: research institutes\u003cbr\u003eReview: False"}, {"category": "individual", "color": "#999999", "font": {"size": 18}, "helix": "Unknown", "id": "frank wilhelm mauch", "label": "Frank Wilhelm-Mauch", "shape": "dot", "size": 18, "title": "\u003cb\u003eFrank Wilhelm-Mauch\u003c/b\u003e\u003cbr\u003eHelix: Unknown\u003cbr\u003eCategory: individual\u003cbr\u003eReview: True"}, {"category": "individual", "color": "#999999", "font": {"size": 18}, "helix": "Unknown", "id": "kristel michielsen", "label": "Kristel Michielsen", "shape": "dot", "size": 18, "title": "\u003cb\u003eKristel Michielsen\u003c/b\u003e\u003cbr\u003eHelix: Unknown\u003cbr\u003eCategory: individual\u003cbr\u003eReview: True"}, {"category": "large enterprises", "color": "#F58518", "font": {"size": 18}, "helix": "Industry", "id": "parityqc", "label": "ParityQC", "shape": "dot", "size": 18, "title": "\u003cb\u003eParityQC\u003c/b\u003e\u003cbr\u003eHelix: Industry\u003cbr\u003eCategory: large enterprises\u003cbr\u003eReview: False"}, {"category": "technology", "color": "#999999", "font": {"size": 18}, "helix": "Unknown", "id": "parityqc architecture", "label": "ParityQC Architecture", "shape": "dot", "size": 18, "title": "\u003cb\u003eParityQC Architecture\u003c/b\u003e\u003cbr\u003eHelix: Unknown\u003cbr\u003eCategory: technology\u003cbr\u003eReview: True"}, {"category": "country", "color": "#999999", "font": {"size": 18}, "helix": "Unknown", "id": "austria", "label": "Austria", "shape": "dot", "size": 18, "title": "\u003cb\u003eAustria\u003c/b\u003e\u003cbr\u003eHelix: Unknown\u003cbr\u003eCategory: country\u003cbr\u003eReview: True"}, {"category": "country", "color": "#999999", "font": {"size": 18}, "helix": "Unknown", "id": "germany", "label": "Germany", "shape": "dot", "size": 18, "title": "\u003cb\u003eGermany\u003c/b\u003e\u003cbr\u003eHelix: Unknown\u003cbr\u003eCategory: country\u003cbr\u003eReview: True"}, {"category": "research institutes", "color": "#4C78A8", "font": {"size": 18}, "helix": "Academia", "id": "juniq", "label": "JUNIQ", "shape": "dot", "size": 18, "title": "\u003cb\u003eJUNIQ\u003c/b\u003e\u003cbr\u003eHelix: Academia\u003cbr\u003eCategory: research institutes\u003cbr\u003eReview: False"}, {"category": "large enterprises", "color": "#F58518", "font": {"size": 18}, "helix": "Industry", "id": "nxp", "label": "NXP", "shape": "dot", "size": 18, "title": "\u003cb\u003eNXP\u003c/b\u003e\u003cbr\u003eHelix: Industry\u003cbr\u003eCategory: large enterprises\u003cbr\u003eReview: False"}, {"category": "small and medium-sized enterprises", "color": "#F58518", "font": {"size": 18}, "helix": "Industry", "id": "qruise", "label": "Qruise", "shape": "dot", "size": 18, "title": "\u003cb\u003eQruise\u003c/b\u003e\u003cbr\u003eHelix: Industry\u003cbr\u003eCategory: small and medium-sized enterprises\u003cbr\u003eReview: False"}, {"category": "large enterprises", "color": "#F58518", "font": {"size": 18}, "helix": "Industry", "id": "qudora", "label": "QUDORA", "shape": "dot", "size": 18, "title": "\u003cb\u003eQUDORA\u003c/b\u003e\u003cbr\u003eHelix: Industry\u003cbr\u003eCategory: large enterprises\u003cbr\u003eReview: False"}, {"category": "large enterprises", "color": "#F58518", "font": {"size": 18}, "helix": "Industry", "id": "amazon web services", "label": "Amazon Web Services (AWS)", "shape": "dot", "size": 18, "title": "\u003cb\u003eAmazon Web Services (AWS)\u003c/b\u003e\u003cbr\u003eHelix: Industry\u003cbr\u003eCategory: large enterprises\u003cbr\u003eReview: False"}, {"category": "individual", "color": "#999999", "font": {"size": 18}, "helix": "Unknown", "id": "anette messinger", "label": "Anette Messinger", "shape": "dot", "size": 18, "title": "\u003cb\u003eAnette Messinger\u003c/b\u003e\u003cbr\u003eHelix: Unknown\u003cbr\u003eCategory: individual\u003cbr\u003eReview: True"}, {"category": "individual", "color": "#999999", "font": {"size": 18}, "helix": "Unknown", "id": "anton flir", "label": "Anton Flir", "shape": "dot", "size": 18, "title": "\u003cb\u003eAnton Flir\u003c/b\u003e\u003cbr\u003eHelix: Unknown\u003cbr\u003eCategory: individual\u003cbr\u003eReview: True"}, {"category": "individual", "color": "#999999", "font": {"size": 18}, "helix": "Unknown", "id": "bruno lebret", "label": "Bruno Lebret", "shape": "dot", "size": 18, "title": "\u003cb\u003eBruno Lebret\u003c/b\u003e\u003cbr\u003eHelix: Unknown\u003cbr\u003eCategory: individual\u003cbr\u003eReview: True"}, {"category": "research institutes", "color": "#4C78A8", "font": {"size": 18}, "helix": "Academia", "id": "centre national de la recherche scientifique", "label": "Centre National de la Recherche Scientifique (CNRS)", "shape": "dot", "size": 18, "title": "\u003cb\u003eCentre National de la Recherche Scientifique (CNRS)\u003c/b\u003e\u003cbr\u003eHelix: Academia\u003cbr\u003eCategory: research institutes\u003cbr\u003eReview: False"}, {"category": "individual", "color": "#999999", "font": {"size": 18}, "helix": "Unknown", "id": "christophe goeller", "label": "Christophe Goeller", "shape": "dot", "size": 18, "title": "\u003cb\u003eChristophe Goeller\u003c/b\u003e\u003cbr\u003eHelix: Unknown\u003cbr\u003eCategory: individual\u003cbr\u003eReview: True"}, {"category": "research institutes", "color": "#4C78A8", "font": {"size": 18}, "helix": "Academia", "id": "cineca", "label": "CINECA", "shape": "dot", "size": 18, "title": "\u003cb\u003eCINECA\u003c/b\u003e\u003cbr\u003eHelix: Academia\u003cbr\u003eCategory: research institutes\u003cbr\u003eReview: False"}, {"category": "research institutes", "color": "#4C78A8", "font": {"size": 18}, "helix": "Academia", "id": "consiglio nazionale delle ricerche", "label": "Consiglio Nazionale delle Ricerche (CNR)", "shape": "dot", "size": 18, "title": "\u003cb\u003eConsiglio Nazionale delle Ricerche (CNR)\u003c/b\u003e\u003cbr\u003eHelix: Academia\u003cbr\u003eCategory: research institutes\u003cbr\u003eReview: False"}, {"category": "small and medium-sized enterprises", "color": "#F58518", "font": {"size": 18}, "helix": "Industry", "id": "eleqtron", "label": "Eleqtron", "shape": "dot", "size": 18, "title": "\u003cb\u003eEleqtron\u003c/b\u003e\u003cbr\u003eHelix: Industry\u003cbr\u003eCategory: small and medium-sized enterprises\u003cbr\u003eReview: False"}, {"category": "supranational government institutions", "color": "#54A24B", "font": {"size": 18}, "helix": "Government", "id": "eu", "label": "EU", "shape": "dot", "size": 18, "title": "\u003cb\u003eEU\u003c/b\u003e\u003cbr\u003eHelix: Government\u003cbr\u003eCategory: supranational government institutions\u003cbr\u003eReview: False"}, {"category": "business support institutions", "color": "#E45756", "font": {"size": 18}, "helix": "Intermediary", "id": "eurice gmbh", "label": "EURICE GmbH", "shape": "dot", "size": 18, "title": "\u003cb\u003eEURICE GmbH\u003c/b\u003e\u003cbr\u003eHelix: Intermediary\u003cbr\u003eCategory: business support institutions\u003cbr\u003eReview: False"}, {"category": "individual", "color": "#999999", "font": {"size": 18}, "helix": "Unknown", "id": "florian dreier", "label": "Florian Dreier", "shape": "dot", "size": 18, "title": "\u003cb\u003eFlorian Dreier\u003c/b\u003e\u003cbr\u003eHelix: Unknown\u003cbr\u003eCategory: individual\u003cbr\u003eReview: True"}, {"category": "universities", "color": "#4C78A8", "font": {"size": 18}, "helix": "Academia", "id": "freie universit t berlin", "label": "Freie Universit\u00e4t Berlin", "shape": "dot", "size": 18, "title": "\u003cb\u003eFreie Universit\u00e4t Berlin\u003c/b\u003e\u003cbr\u003eHelix: Academia\u003cbr\u003eCategory: universities\u003cbr\u003eReview: False"}, {"category": "individual", "color": "#999999", "font": {"size": 18}, "helix": "Unknown", "id": "herbert gartner", "label": "Herbert Gartner", "shape": "dot", "size": 18, "title": "\u003cb\u003eHerbert Gartner\u003c/b\u003e\u003cbr\u003eHelix: Unknown\u003cbr\u003eCategory: individual\u003cbr\u003eReview: True"}, {"category": "large enterprises", "color": "#F58518", "font": {"size": 18}, "helix": "Industry", "id": "ibm", "label": "IBM", "shape": "dot", "size": 18, "title": "\u003cb\u003eIBM\u003c/b\u003e\u003cbr\u003eHelix: Industry\u003cbr\u003eCategory: large enterprises\u003cbr\u003eReview: False"}, {"category": "large enterprises", "color": "#F58518", "font": {"size": 18}, "helix": "Industry", "id": "ibm quantum", "label": "IBM Quantum", "shape": "dot", "size": 18, "title": "\u003cb\u003eIBM Quantum\u003c/b\u003e\u003cbr\u003eHelix: Industry\u003cbr\u003eCategory: large enterprises\u003cbr\u003eReview: False"}, {"category": "individual", "color": "#999999", "font": {"size": 18}, "helix": "Unknown", "id": "jaroslav kysela", "label": "Jaroslav Kysela", "shape": "dot", "size": 18, "title": "\u003cb\u003eJaroslav Kysela\u003c/b\u003e\u003cbr\u003eHelix: Unknown\u003cbr\u003eCategory: individual\u003cbr\u003eReview: True"}, {"category": "individual", "color": "#999999", "font": {"size": 18}, "helix": "Unknown", "id": "katharina ludwig", "label": "Katharina Ludwig", "shape": "dot", "size": 18, "title": "\u003cb\u003eKatharina Ludwig\u003c/b\u003e\u003cbr\u003eHelix: Unknown\u003cbr\u003eCategory: individual\u003cbr\u003eReview: True"}, {"category": "individual", "color": "#999999", "font": {"size": 18}, "helix": "Unknown", "id": "konstantin tiurev", "label": "Konstantin Tiurev", "shape": "dot", "size": 18, "title": "\u003cb\u003eKonstantin Tiurev\u003c/b\u003e\u003cbr\u003eHelix: Unknown\u003cbr\u003eCategory: individual\u003cbr\u003eReview: True"}, {"category": "individual", "color": "#999999", "font": {"size": 18}, "helix": "Unknown", "id": "leo stenzel", "label": "Leo Stenzel", "shape": "dot", "size": 18, "title": "\u003cb\u003eLeo Stenzel\u003c/b\u003e\u003cbr\u003eHelix: Unknown\u003cbr\u003eCategory: individual\u003cbr\u003eReview: True"}, {"category": "small and medium-sized enterprises", "color": "#F58518", "font": {"size": 18}, "helix": "Industry", "id": "long story short design", "label": "Long Story Short Design", "shape": "dot", "size": 18, "title": "\u003cb\u003eLong Story Short Design\u003c/b\u003e\u003cbr\u003eHelix: Industry\u003cbr\u003eCategory: small and medium-sized enterprises\u003cbr\u003eReview: False"}, {"category": "individual", "color": "#999999", "font": {"size": 18}, "helix": "Unknown", "id": "magdalena hauser", "label": "Magdalena Hauser", "shape": "dot", "size": 18, "title": "\u003cb\u003eMagdalena Hauser\u003c/b\u003e\u003cbr\u003eHelix: Unknown\u003cbr\u003eCategory: individual\u003cbr\u003eReview: True"}, {"category": "national government institutions", "color": "#54A24B", "font": {"size": 18}, "helix": "Government", "id": "national research foundation", "label": "National Research Foundation (NRF)", "shape": "dot", "size": 18, "title": "\u003cb\u003eNational Research Foundation (NRF)\u003c/b\u003e\u003cbr\u003eHelix: Government\u003cbr\u003eCategory: national government institutions\u003cbr\u003eReview: False"}, {"category": "large enterprises", "color": "#F58518", "font": {"size": 18}, "helix": "Industry", "id": "parity quantum computing france sas", "label": "Parity Quantum Computing France SAS", "shape": "dot", "size": 18, "title": "\u003cb\u003eParity Quantum Computing France SAS\u003c/b\u003e\u003cbr\u003eHelix: Industry\u003cbr\u003eCategory: large enterprises\u003cbr\u003eReview: False"}, {"category": "large enterprises", "color": "#F58518", "font": {"size": 18}, "helix": "Industry", "id": "parity quantum computing gmbh", "label": "Parity Quantum Computing GmbH", "shape": "dot", "size": 18, "title": "\u003cb\u003eParity Quantum Computing GmbH\u003c/b\u003e\u003cbr\u003eHelix: Industry\u003cbr\u003eCategory: large enterprises\u003cbr\u003eReview: False"}, {"category": "large enterprises", "color": "#F58518", "font": {"size": 18}, "helix": "Industry", "id": "parity quantum computing uk ltd", "label": "Parity Quantum Computing UK Ltd", "shape": "dot", "size": 18, "title": "\u003cb\u003eParity Quantum Computing UK Ltd\u003c/b\u003e\u003cbr\u003eHelix: Industry\u003cbr\u003eCategory: large enterprises\u003cbr\u003eReview: False"}, {"category": "small and medium-sized enterprises", "color": "#F58518", "font": {"size": 18}, "helix": "Industry", "id": "quantum brilliance", "label": "Quantum Brilliance", "shape": "dot", "size": 18, "title": "\u003cb\u003eQuantum Brilliance\u003c/b\u003e\u003cbr\u003eHelix: Industry\u003cbr\u003eCategory: small and medium-sized enterprises\u003cbr\u003eReview: False"}, {"category": "universities", "color": "#4C78A8", "font": {"size": 18}, "helix": "Academia", "id": "technische universit t berlin", "label": "Technische Universit\u00e4t Berlin", "shape": "dot", "size": 18, "title": "\u003cb\u003eTechnische Universit\u00e4t Berlin\u003c/b\u003e\u003cbr\u003eHelix: Academia\u003cbr\u003eCategory: universities\u003cbr\u003eReview: False"}, {"category": "individual", "color": "#999999", "font": {"size": 18}, "helix": "Unknown", "id": "thorsten strohmaier", "label": "Thorsten Strohmaier", "shape": "dot", "size": 18, "title": "\u003cb\u003eThorsten Strohmaier\u003c/b\u003e\u003cbr\u003eHelix: Unknown\u003cbr\u003eCategory: individual\u003cbr\u003eReview: True"}, {"category": "universities", "color": "#4C78A8", "font": {"size": 18}, "helix": "Academia", "id": "university of innsbruck", "label": "University of Innsbruck", "shape": "dot", "size": 18, "title": "\u003cb\u003eUniversity of Innsbruck\u003c/b\u003e\u003cbr\u003eHelix: Academia\u003cbr\u003eCategory: universities\u003cbr\u003eReview: False"}, {"category": "individual", "color": "#F58518", "font": {"size": 18}, "helix": "Industry", "id": "wolfgang lechner", "label": "Wolfgang Lechner", "shape": "dot", "size": 18, "title": "\u003cb\u003eWolfgang Lechner\u003c/b\u003e\u003cbr\u003eHelix: Industry\u003cbr\u003eCategory: individual\u003cbr\u003eReview: True"}]);
+                  edges = new vis.DataSet([{"arrows": "to", "color": "#D97706", "from": "dlr quantum computing initiative", "label": "technology_transfer", "title": "\u003cb\u003etechnology_transfer\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Intra-helix / Not classified\u003cbr\u003ePage: 5\u003cbr\u003ePhrase: DLR Quantum Computing Initiative", "to": "german aerospace center", "width": 2}, {"arrows": "to", "color": "#6B7280", "from": "eviden", "label": "networking", "title": "\u003cb\u003enetworking\u003c/b\u003e\u003cbr\u003eConfidence: medium\u003cbr\u003eFunctional space: Innovation\u003cbr\u003ePage: 3\u003cbr\u003ePhrase: supplied the necessary software components, while Forschungszentrum J\u00fclich carried out the professional", "to": "forschungszentrum j lich", "width": 2}, {"arrows": "to", "color": "#6B7280", "from": "forschungszentrum j lich", "label": "networking", "title": "\u003cb\u003enetworking\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Intra-helix / Not classified\u003cbr\u003ePage: 4\u003cbr\u003ePhrase: jointly inaugurated", "to": "commissariat l nergie atomique et aux nergies alternatives", "width": 2}, {"arrows": "to", "color": "#D97706", "from": "forschungszentrum j lich", "label": "technology_transfer", "title": "\u003cb\u003etechnology_transfer\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Innovation\u003cbr\u003ePage: 3\u003cbr\u003ePhrase: together with their partners from the QSolid consortium", "to": "qsolid", "width": 2}, {"arrows": "to", "color": "#D97706", "from": "forschungszentrum j lich", "label": "technology_transfer", "title": "\u003cb\u003etechnology_transfer\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Intra-helix / Not classified\u003cbr\u003ePage: 3\u003cbr\u003ePhrase: into the J\u00fclich Supercomputing Centre\u0027s infrastructure", "to": "j lich supercomputing centre", "width": 2}, {"arrows": "to", "color": "#2563EB", "from": "frank wilhelm mauch", "label": "collaborative_leadership", "title": "\u003cb\u003ecollaborative_leadership\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Unknown\u003cbr\u003ePage: 4\u003cbr\u003ePhrase: coordinator of", "to": "qsolid", "width": 2}, {"arrows": "to", "color": "#2563EB", "from": "german aerospace center", "label": "collaborative_leadership", "title": "\u003cb\u003ecollaborative_leadership\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Intra-helix / Not classified\u003cbr\u003ePage: 3\u003cbr\u003ePhrase: in cooperation with various DLR institutes", "to": "dlr quantum computing initiative", "width": 2}, {"arrows": "to", "color": "#2563EB", "from": "kristel michielsen", "label": "collaborative_leadership", "title": "\u003cb\u003ecollaborative_leadership\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Unknown\u003cbr\u003ePage: 6\u003cbr\u003ePhrase: Director of the J\u00fclich Supercomputing Centre", "to": "j lich supercomputing centre", "width": 2}, {"arrows": "to", "color": "#2563EB", "from": "parityqc", "label": "collaborative_leadership", "title": "\u003cb\u003ecollaborative_leadership\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Unknown\u003cbr\u003ePage: 4\u003cbr\u003ePhrase: the ParityQC Architecture", "to": "parityqc architecture", "width": 2}, {"arrows": "to", "color": "#6B7280", "from": "parityqc", "label": "networking", "title": "\u003cb\u003enetworking\u003c/b\u003e\u003cbr\u003eConfidence: medium\u003cbr\u003eFunctional space: Unknown\u003cbr\u003ePage: 7\u003cbr\u003ePhrase: Cross-site collaboration between Hamburg and Innsbruck", "to": "austria", "width": 2}, {"arrows": "to", "color": "#6B7280", "from": "parityqc", "label": "networking", "title": "\u003cb\u003enetworking\u003c/b\u003e\u003cbr\u003eConfidence: medium\u003cbr\u003eFunctional space: Unknown\u003cbr\u003ePage: 7\u003cbr\u003ePhrase: Cross-site collaboration between Hamburg and Innsbruck", "to": "germany", "width": 2}, {"arrows": "to", "color": "#2563EB", "from": "parityqc", "label": "collaborative_leadership", "title": "\u003cb\u003ecollaborative_leadership\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Innovation\u003cbr\u003ePage: 5\u003cbr\u003ePhrase: coordinating the testing and integration of the quantum software stack within JUNIQ", "to": "juniq", "width": 2}, {"arrows": "to", "color": "#2563EB", "from": "parityqc", "label": "collaborative_leadership", "title": "\u003cb\u003ecollaborative_leadership\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Consensus\u003cbr\u003ePage: 4\u003cbr\u003ePhrase: engaged with partners such as the German Aerospace Center (DLR)", "to": "german aerospace center", "width": 2}, {"arrows": "to", "color": "#2563EB", "from": "parityqc", "label": "collaborative_leadership", "title": "\u003cb\u003ecollaborative_leadership\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Intra-helix / Not classified\u003cbr\u003ePage: 4\u003cbr\u003ePhrase: engaged with partners such as NXP Semiconductors", "to": "nxp", "width": 2}, {"arrows": "to", "color": "#D97706", "from": "parityqc architecture", "label": "technology_transfer", "title": "\u003cb\u003etechnology_transfer\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Unknown\u003cbr\u003ePage: 5\u003cbr\u003ePhrase: ParityQC Architecture", "to": "parityqc", "width": 2}, {"arrows": "to", "color": "#6B7280", "from": "qruise", "label": "networking", "title": "\u003cb\u003enetworking\u003c/b\u003e\u003cbr\u003eConfidence: medium\u003cbr\u003eFunctional space: Innovation\u003cbr\u003ePage: 3\u003cbr\u003ePhrase: supplied the necessary software components, while Forschungszentrum J\u00fclich carried out the professional", "to": "forschungszentrum j lich", "width": 2}, {"arrows": "to", "color": "#D97706", "from": "qsolid", "label": "technology_transfer", "title": "\u003cb\u003etechnology_transfer\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Innovation\u003cbr\u003ePage: 2\u003cbr\u003ePhrase: integrated the prototype of a quantum computer into the J\u00fclich Supercomputing Centre\u0027s", "to": "j lich supercomputing centre", "width": 2}, {"arrows": "to", "color": "#6B7280", "from": "qudora", "label": "networking", "title": "\u003cb\u003enetworking\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Intra-helix / Not classified\u003cbr\u003ePage: 9\u003cbr\u003ePhrase: Partner to Optimize Quantum Algorithms for Trapped-Ion Systems", "to": "parityqc", "width": 2}, {"arrows": "to", "color": "#2563EB", "from": "qudora", "label": "collaborative_leadership", "title": "\u003cb\u003ecollaborative_leadership\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Consensus\u003cbr\u003ePage: 4\u003cbr\u003ePhrase: engaged with partners such as the German Aerospace Center (DLR)", "to": "german aerospace center", "width": 2}, {"arrows": "to", "color": "#2563EB", "from": "qudora", "label": "collaborative_leadership", "title": "\u003cb\u003ecollaborative_leadership\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Intra-helix / Not classified\u003cbr\u003ePage: 4\u003cbr\u003ePhrase: engaged with partners such as NXP Semiconductors", "to": "nxp", "width": 2}]);
+
+                  nodeColors = {};
+                  allNodes = nodes.get({ returnType: "Object" });
+                  for (nodeId in allNodes) {
+                    nodeColors[nodeId] = allNodes[nodeId].color;
+                  }
+                  allEdges = edges.get({ returnType: "Object" });
+                  // adding nodes and edges to the graph
+                  data = {nodes: nodes, edges: edges};
+
+                  var options = {"physics": {"barnesHut": {"gravitationalConstant": -8000, "centralGravity": 0.3, "springLength": 180, "springConstant": 0.04}, "minVelocity": 0.75}, "interaction": {"hover": true, "navigationButtons": true, "keyboard": true}};
+
+                  
+
+
+                  
+
+                  network = new vis.Network(container, data, options);
+
+                  
+
+                  
+
+                  
+
+
+                  
+
+                  return network;
+
+              }
+              drawGraph();
+        </script>
+    </body>
+</html>

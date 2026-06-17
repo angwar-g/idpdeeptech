@@ -325,3 +325,621 @@ RUN FINISHED 2026-06-14 16:04:24  (FAILED)
 Started:     2026-06-14 15:35:55
 Elapsed:     28m 29s
 ========================================================================
+
+========================================================================
+RUN STARTED  2026-06-16 18:12:57
+site_pipeline.py https://1qbit.com/
+========================================================================
+
+[18:12:57 +0s | 1qbit] === 0 crawl site ===
+[18:12:59 +2s | 1qbit] Cleared existing crawl_output/
+[18:13:01 +4s | 1qbit] [INIT].... → Crawl4AI 0.8.6 
+[18:13:06 +7s | 1qbit] [FETCH]... ↓ https://1qbit.com/                                                                                   | ✓ | ⏱: 2.33s 
+[18:13:06 +7s | 1qbit] [SCRAPE].. ◆ https://1qbit.com/                                                                                   | ✓ | ⏱: 0.04s 
+[18:13:06 +7s | 1qbit] [COMPLETE] ● https://1qbit.com/                                                                                   | ✓ | ⏱: 2.39s 
+[18:13:07 +8s | 1qbit] [FETCH]... ↓ https://1qbit.com/wp-content/uploads/2023/04/1QBit_timeline-3.png                                    | ✓ | ⏱: 0.97s 
+[18:13:07 +8s | 1qbit] [SCRAPE].. ◆ https://1qbit.com/wp-content/uploads/2023/04/1QBit_timeline-3.png                                    | ✓ | ⏱: 0.00s 
+[18:13:07 +8s | 1qbit] [COMPLETE] ● https://1qbit.com/wp-content/uploads/2023/04/1QBit_timeline-3.png                                    | ✗ | ⏱: 0.98s 
+[18:13:07 +8s | 1qbit] [FETCH]... ↓ https://1qbit.com/                                                                                   | ✓ | ⏱: 1.57s 
+[18:13:07 +8s | 1qbit] [SCRAPE].. ◆ https://1qbit.com/                                                                                   | ✓ | ⏱: 0.04s 
+[18:13:07 +8s | 1qbit] [COMPLETE] ● https://1qbit.com/                                                                                   | ✓ | ⏱: 1.64s 
+[18:13:09 +10s | 1qbit] [FETCH]... ↓ https://1qbit.com/services/                                                                          | ✓ | ⏱: 2.91s 
+[18:13:09 +10s | 1qbit] [SCRAPE].. ◆ https://1qbit.com/services/                                                                          | ✓ | ⏱: 0.07s 
+[18:13:09 +10s | 1qbit] [COMPLETE] ● https://1qbit.com/services/                                                                          | ✓ | ⏱: 3.02s 
+[18:13:09 +10s | 1qbit] [FETCH]... ↓ https://1qbit.com/careers/current-openings/                                                          | ✓ | ⏱: 3.10s 
+[18:13:09 +10s | 1qbit] [SCRAPE].. ◆ https://1qbit.com/careers/current-openings/                                                          | ✓ | ⏱: 0.05s 
+[18:13:09 +10s | 1qbit] [COMPLETE] ● https://1qbit.com/careers/current-openings/                                                          | ✓ | ⏱: 3.19s 
+[18:13:09 +10s | 1qbit] [FETCH]... ↓ https://1qbit.com/our-thinking/research-papers/                                                      | ✓ | ⏱: 3.24s 
+[18:13:09 +10s | 1qbit] [SCRAPE].. ◆ https://1qbit.com/our-thinking/research-papers/                                                      | ✓ | ⏱: 0.08s 
+[18:13:09 +10s | 1qbit] [COMPLETE] ● https://1qbit.com/our-thinking/research-papers/                                                      | ✓ | ⏱: 3.36s 
+[18:13:09 +10s | 1qbit] [FETCH]... ↓ https://1qbit.com/careers/                                                                           | ✓ | ⏱: 3.38s 
+[18:13:10 +10s | 1qbit] [SCRAPE].. ◆ https://1qbit.com/careers/                                                                           | ✓ | ⏱: 0.12s 
+[18:13:10 +10s | 1qbit] [COMPLETE] ● https://1qbit.com/careers/                                                                           | ✓ | ⏱: 3.54s 
+[18:13:10 +11s | 1qbit] [FETCH]... ↓ https://1qbit.com/contact-us/                                                                        | ✓ | ⏱: 3.60s 
+[18:13:10 +11s | 1qbit] [SCRAPE].. ◆ https://1qbit.com/contact-us/                                                                        | ✓ | ⏱: 0.06s 
+[18:13:10 +11s | 1qbit] [COMPLETE] ● https://1qbit.com/contact-us/                                                                        | ✓ | ⏱: 3.70s 
+[18:13:11 +11s | 1qbit] [FETCH]... ↓ https://1qbit.com/home/topqad-news/                                                                  | ✓ | ⏱: 4.53s 
+[18:13:11 +11s | 1qbit] [SCRAPE].. ◆ https://1qbit.com/home/topqad-news/                                                                  | ✓ | ⏱: 0.03s 
+[18:13:11 +11s | 1qbit] [COMPLETE] ● https://1qbit.com/home/topqad-news/                                                                  | ✓ | ⏱: 4.59s 
+[18:13:11 +12s | 1qbit] [FETCH]... ↓ https://1qbit.com/life-at-1qbit/                                                                     | ✓ | ⏱: 4.62s 
+[18:13:11 +12s | 1qbit] [SCRAPE].. ◆ https://1qbit.com/life-at-1qbit/                                                                     | ✓ | ⏱: 0.04s 
+[18:13:11 +12s | 1qbit] [COMPLETE] ● https://1qbit.com/life-at-1qbit/                                                                     | ✓ | ⏱: 4.69s 
+[18:13:11 +12s | 1qbit] [FETCH]... ↓ https://1qbit.com/privacy-policy                                                                     | ✓ | ⏱: 4.89s 
+[18:13:11 +12s | 1qbit] [SCRAPE].. ◆ https://1qbit.com/privacy-policy                                                                     | ✓ | ⏱: 0.03s 
+[18:13:11 +12s | 1qbit] [COMPLETE] ● https://1qbit.com/privacy-policy                                                                     | ✓ | ⏱: 4.94s 
+[18:13:11 +12s | 1qbit] [FETCH]... ↓ https://1qbit.com/terms-of-use                                                                       | ✓ | ⏱: 5.00s 
+[18:13:11 +12s | 1qbit] [SCRAPE].. ◆ https://1qbit.com/terms-of-use                                                                       | ✓ | ⏱: 0.05s 
+[18:13:11 +12s | 1qbit] [COMPLETE] ● https://1qbit.com/terms-of-use                                                                       | ✓ | ⏱: 5.07s 
+[18:13:12 +13s | 1qbit] [FETCH]... ↓ https://1qbit.com/careers/current-openings/job-description-qec-scientist                             | ✓ | ⏱: 1.32s 
+[18:13:12 +13s | 1qbit] [SCRAPE].. ◆ https://1qbit.com/careers/current-openings/job-description-qec-scientist                             | ✓ | ⏱: 0.04s 
+[18:13:12 +13s | 1qbit] [COMPLETE] ● https://1qbit.com/careers/current-openings/job-description-qec-scientist                             | ✓ | ⏱: 1.39s 
+[18:13:14 +15s | 1qbit] [FETCH]... ↓ https://1qbit.com/privacy-policy/                                                                    | ✓ | ⏱: 2.90s 
+[18:13:14 +15s | 1qbit] [SCRAPE].. ◆ https://1qbit.com/privacy-policy/                                                                    | ✓ | ⏱: 0.05s 
+[18:13:14 +15s | 1qbit] [COMPLETE] ● https://1qbit.com/privacy-policy/                                                                    | ✓ | ⏱: 2.97s 
+[18:13:14 +15s | 1qbit] [FETCH]... ↓ https://1qbit.com/research/variationally-scheduled-quantum-simulation/                               | ✓ | ⏱: 3.01s 
+[18:13:14 +15s | 1qbit] [SCRAPE].. ◆ https://1qbit.com/research/variationally-scheduled-quantum-simulation/                               | ✓ | ⏱: 0.04s 
+[18:13:14 +15s | 1qbit] [COMPLETE] ● https://1qbit.com/research/variationally-scheduled-quantum-simulation/                               | ✓ | ⏱: 3.08s 
+[18:13:14 +15s | 1qbit] [FETCH]... ↓ https://1qbit.com/research/quantum-algorithms-for-solving-dynamic-programming-problems/              | ✓ | ⏱: 3.07s 
+[18:13:14 +15s | 1qbit] [SCRAPE].. ◆ https://1qbit.com/research/quantum-algorithms-for-solving-dynamic-programming-problems/              | ✓ | ⏱: 0.04s 
+[18:13:14 +15s | 1qbit] [COMPLETE] ● https://1qbit.com/research/quantum-algorithms-for-solving-dynamic-programming-problems/              | ✓ | ⏱: 3.13s 
+[18:13:15 +15s | 1qbit] [FETCH]... ↓ https://1qbit.com/terms-of-use/                                                                      | ✓ | ⏱: 3.17s 
+[18:13:15 +15s | 1qbit] [SCRAPE].. ◆ https://1qbit.com/terms-of-use/                                                                      | ✓ | ⏱: 0.05s 
+[18:13:15 +15s | 1qbit] [COMPLETE] ● https://1qbit.com/terms-of-use/                                                                      | ✓ | ⏱: 3.25s 
+[18:13:15 +16s | 1qbit] [FETCH]... ↓ https://1qbit.com/research/efficient-and-accurat...-demonstrated-on-a-trapped-ion-quantum-computer/  | ✓ | ⏱: 3.29s 
+[18:13:15 +16s | 1qbit] [SCRAPE].. ◆ https://1qbit.com/research/efficient-and-accurat...-demonstrated-on-a-trapped-ion-quantum-computer/  | ✓ | ⏱: 0.05s 
+[18:13:15 +16s | 1qbit] [COMPLETE] ● https://1qbit.com/research/efficient-and-accurat...-demonstrated-on-a-trapped-ion-quantum-computer/  | ✓ | ⏱: 3.36s 
+[18:13:15 +16s | 1qbit] [FETCH]... ↓ https://1qbit.com/research/neural-error-mitigation-of-near-term-quantum-simulations/                 | ✓ | ⏱: 3.35s 
+[18:13:15 +16s | 1qbit] [SCRAPE].. ◆ https://1qbit.com/research/neural-error-mitigation-of-near-term-quantum-simulations/                 | ✓ | ⏱: 0.03s 
+[18:13:15 +16s | 1qbit] [COMPLETE] ● https://1qbit.com/research/neural-error-mitigation-of-near-term-quantum-simulations/                 | ✓ | ⏱: 3.40s 
+[18:13:15 +16s | 1qbit] [FETCH]... ↓ https://1qbit.com/research/scaling-overhead-of-locality-reduction-in-binary-optimization-problems/   | ✓ | ⏱: 4.05s 
+[18:13:15 +16s | 1qbit] [SCRAPE].. ◆ https://1qbit.com/research/scaling-overhead-of-locality-reduction-in-binary-optimization-problems/   | ✓ | ⏱: 0.04s 
+[18:13:15 +16s | 1qbit] [COMPLETE] ● https://1qbit.com/research/scaling-overhead-of-locality-reduction-in-binary-optimization-problems/   | ✓ | ⏱: 4.11s 
+[18:13:17 +18s | 1qbit] [FETCH]... ↓ https://1qbit.com/research/quantum-annealing-app...ing-problem-in-synthetic-aperture-radar-imaging/  | ✓ | ⏱: 5.33s 
+[18:13:17 +18s | 1qbit] [SCRAPE].. ◆ https://1qbit.com/research/quantum-annealing-app...ing-problem-in-synthetic-aperture-radar-imaging/  | ✓ | ⏱: 0.04s 
+[18:13:17 +18s | 1qbit] [COMPLETE] ● https://1qbit.com/research/quantum-annealing-app...ing-problem-in-synthetic-aperture-radar-imaging/  | ✓ | ⏱: 5.40s 
+[18:13:17 +18s | 1qbit] [FETCH]... ↓ https://1qbit.com/our-thinking/research-papers/page/4/                                               | ✓ | ⏱: 5.42s 
+[18:13:17 +18s | 1qbit] [SCRAPE].. ◆ https://1qbit.com/our-thinking/research-papers/page/4/                                               | ✓ | ⏱: 0.06s 
+[18:13:17 +18s | 1qbit] [COMPLETE] ● https://1qbit.com/our-thinking/research-papers/page/4/                                               | ✓ | ⏱: 5.50s 
+[18:13:17 +18s | 1qbit] [FETCH]... ↓ https://1qbit.com/research/quantum-multiple-kernel-learning/                                         | ✓ | ⏱: 5.51s 
+[18:13:17 +18s | 1qbit] [SCRAPE].. ◆ https://1qbit.com/research/quantum-multiple-kernel-learning/                                         | ✓ | ⏱: 0.06s 
+[18:13:17 +18s | 1qbit] [COMPLETE] ● https://1qbit.com/research/quantum-multiple-kernel-learning/                                         | ✓ | ⏱: 5.62s 
+[18:13:17 +18s | 1qbit] [FETCH]... ↓ https://1qbit.com/research/scaling-electronic-st...-frozen-natural-orbital-based-method-increments/  | ✓ | ⏱: 5.66s 
+[18:13:17 +18s | 1qbit] [SCRAPE].. ◆ https://1qbit.com/research/scaling-electronic-st...-frozen-natural-orbital-based-method-increments/  | ✓ | ⏱: 0.06s 
+[18:13:17 +18s | 1qbit] [COMPLETE] ● https://1qbit.com/research/scaling-electronic-st...-frozen-natural-orbital-based-method-increments/  | ✓ | ⏱: 5.74s 
+[18:13:17 +18s | 1qbit] [FETCH]... ↓ https://1qbit.com/research/benchmark-study-of-qu...atorial-optimization-unitary-versus-dissipative/  | ✓ | ⏱: 5.81s 
+[18:13:17 +18s | 1qbit] [SCRAPE].. ◆ https://1qbit.com/research/benchmark-study-of-qu...atorial-optimization-unitary-versus-dissipative/  | ✓ | ⏱: 0.05s 
+[18:13:17 +18s | 1qbit] [COMPLETE] ● https://1qbit.com/research/benchmark-study-of-qu...atorial-optimization-unitary-versus-dissipative/  | ✓ | ⏱: 5.89s 
+[18:13:17 +18s | 1qbit] [FETCH]... ↓ https://1qbit.com/our-thinking/research-papers/page/3/                                               | ✓ | ⏱: 5.88s 
+[18:13:17 +18s | 1qbit] [SCRAPE].. ◆ https://1qbit.com/our-thinking/research-papers/page/3/                                               | ✓ | ⏱: 0.05s 
+[18:13:17 +18s | 1qbit] [COMPLETE] ● https://1qbit.com/our-thinking/research-papers/page/3/                                               | ✓ | ⏱: 5.95s 
+[18:13:18 +19s | 1qbit] [FETCH]... ↓ https://1qbit.com/our-thinking/research-papers/page/2/                                               | ✓ | ⏱: 6.38s 
+[18:13:18 +19s | 1qbit] [SCRAPE].. ◆ https://1qbit.com/our-thinking/research-papers/page/2/                                               | ✓ | ⏱: 0.05s 
+[18:13:18 +19s | 1qbit] [COMPLETE] ● https://1qbit.com/our-thinking/research-papers/page/2/                                               | ✓ | ⏱: 6.45s 
+[18:13:18 +19s | 1qbit] [FETCH]... ↓ https://1qbit.com/research/finding-the-ground-st...f-spin-hamiltonians-with-reinforcement-learning/  | ✓ | ⏱: 6.49s 
+[18:13:18 +19s | 1qbit] [SCRAPE].. ◆ https://1qbit.com/research/finding-the-ground-st...f-spin-hamiltonians-with-reinforcement-learning/  | ✓ | ⏱: 0.04s 
+[18:13:18 +19s | 1qbit] [COMPLETE] ● https://1qbit.com/research/finding-the-ground-st...f-spin-hamiltonians-with-reinforcement-learning/  | ✓ | ⏱: 6.55s 
+[18:13:18 +19s | 1qbit] Saved: crawl_output/de168e2a79_1qbit.com.json
+[18:13:18 +19s | 1qbit] Saved: crawl_output/b4c6852a63_1qbit.com_wp-content_uploads_2023_04_1QBit_timeline-3.png.json
+[18:13:18 +19s | 1qbit] Duplicate skipped: https://1qbit.com
+[18:13:18 +19s | 1qbit] Saved: crawl_output/5665ec3d02_1qbit.com_services.json
+[18:13:18 +19s | 1qbit] Saved: crawl_output/1f7033b3ed_1qbit.com_careers_current-openings.json
+[18:13:18 +19s | 1qbit] Saved: crawl_output/94f60bbfc0_1qbit.com_our-thinking_research-papers.json
+[18:13:18 +19s | 1qbit] Saved: crawl_output/45cf1d7b3d_1qbit.com_careers.json
+[18:13:18 +19s | 1qbit] Saved: crawl_output/892417da8e_1qbit.com_contact-us.json
+[18:13:18 +19s | 1qbit] Saved: crawl_output/d74e9397a8_1qbit.com_home_topqad-news.json
+[18:13:18 +19s | 1qbit] Saved: crawl_output/36f6064ef7_1qbit.com_life-at-1qbit.json
+[18:13:18 +19s | 1qbit] Skipped: https://1qbit.com/privacy-policy
+[18:13:18 +19s | 1qbit] Skipped: https://1qbit.com/terms-of-use
+[18:13:18 +19s | 1qbit] Saved: crawl_output/1a7ff5e2ad_1qbit.com_careers_current-openings_job-description-qec-scientist.json
+[18:13:18 +19s | 1qbit] Duplicate skipped: https://1qbit.com/privacy-policy
+[18:13:18 +19s | 1qbit] Saved: crawl_output/e767109598_1qbit.com_research_variationally-scheduled-quantum-simulation.json
+[18:13:18 +19s | 1qbit] Saved: crawl_output/d329f6f31b_1qbit.com_research_quantum-algorithms-for-solving-dynamic-programming-problems.json
+[18:13:18 +19s | 1qbit] Duplicate skipped: https://1qbit.com/terms-of-use
+[18:13:18 +19s | 1qbit] Saved: crawl_output/fc9701ed72_1qbit.com_research_efficient-and-accurate-electronic-structure-simulation-demonstrated-on-a-trapped-ion-quantum-computer.json
+[18:13:18 +19s | 1qbit] Saved: crawl_output/c720694d31_1qbit.com_research_neural-error-mitigation-of-near-term-quantum-simulations.json
+[18:13:18 +19s | 1qbit] Saved: crawl_output/487583620d_1qbit.com_research_scaling-overhead-of-locality-reduction-in-binary-optimization-problems.json
+[18:13:18 +19s | 1qbit] Saved: crawl_output/b5b6298ae2_1qbit.com_research_quantum-annealing-approaches-to-the-phase-unwrapping-problem-in-synthetic-aperture-radar-imaging.json
+[18:13:18 +19s | 1qbit] Saved: crawl_output/f10b548fac_1qbit.com_our-thinking_research-papers_page_4.json
+[18:13:18 +19s | 1qbit] Saved: crawl_output/ec7176fa29_1qbit.com_research_quantum-multiple-kernel-learning.json
+[18:13:18 +19s | 1qbit] Saved: crawl_output/ed0953bb04_1qbit.com_research_scaling-electronic-structure-calculations-quantum-computers-frozen-natural-orbital-based-method-increments.json
+[18:13:18 +19s | 1qbit] Saved: crawl_output/a977b42b07_1qbit.com_research_benchmark-study-of-quantum-algorithms-for-combinatorial-optimization-unitary-versus-dissipative.json
+[18:13:18 +19s | 1qbit] Saved: crawl_output/653bca9f9f_1qbit.com_our-thinking_research-papers_page_3.json
+[18:13:18 +19s | 1qbit] Saved: crawl_output/4ea011c9b7_1qbit.com_our-thinking_research-papers_page_2.json
+[18:13:18 +19s | 1qbit] Saved: crawl_output/3adb8a152e_1qbit.com_research_finding-the-ground-state-of-spin-hamiltonians-with-reinforcement-learning.json
+
+[18:13:19 +19s | 1qbit] === 1 actor extraction ===
+[18:13:19 +20s | 1qbit] Reading page (1/23): https://1qbit.com/careers/current-openings/job-description-qec-scientist
+[18:13:19 +20s | 1qbit] Extracting: https://1qbit.com/careers/current-openings/job-description-qec-scientist (1/23), chunk 1/7
+[18:13:27 +28s | 1qbit] Repaired malformed JSON.
+[18:13:27 +28s | 1qbit] Extracting: https://1qbit.com/careers/current-openings/job-description-qec-scientist (1/23), chunk 2/7
+[18:13:35 +35s | 1qbit] Repaired malformed JSON.
+[18:13:35 +35s | 1qbit] Extracting: https://1qbit.com/careers/current-openings/job-description-qec-scientist (1/23), chunk 3/7
+[18:13:46 +45s | 1qbit] Repaired malformed JSON.
+[18:13:46 +45s | 1qbit] Extracting: https://1qbit.com/careers/current-openings/job-description-qec-scientist (1/23), chunk 4/7
+[18:13:51 +50s | 1qbit] Extracting: https://1qbit.com/careers/current-openings/job-description-qec-scientist (1/23), chunk 5/7
+[18:14:01 +1m 0s | 1qbit] Repaired malformed JSON.
+[18:14:01 +1m 0s | 1qbit] Extracting: https://1qbit.com/careers/current-openings/job-description-qec-scientist (1/23), chunk 6/7
+[18:14:09 +1m 8s | 1qbit] Repaired malformed JSON.
+[18:14:09 +1m 8s | 1qbit] Extracting: https://1qbit.com/careers/current-openings/job-description-qec-scientist (1/23), chunk 7/7
+[18:14:17 +1m 14s | 1qbit] Repaired malformed JSON.
+[18:14:17 +1m 14s | 1qbit] Reading page (2/23): https://1qbit.com/careers/current-openings
+[18:14:17 +1m 14s | 1qbit] Extracting: https://1qbit.com/careers/current-openings (2/23), chunk 1/5
+[18:14:28 +1m 25s | 1qbit] Repaired malformed JSON.
+[18:14:28 +1m 25s | 1qbit] Extracting: https://1qbit.com/careers/current-openings (2/23), chunk 2/5
+[18:14:35 +1m 32s | 1qbit] Repaired malformed JSON.
+[18:14:35 +1m 32s | 1qbit] Extracting: https://1qbit.com/careers/current-openings (2/23), chunk 3/5
+[18:14:39 +1m 36s | 1qbit] Extracting: https://1qbit.com/careers/current-openings (2/23), chunk 4/5
+[18:14:43 +1m 40s | 1qbit] Extracting: https://1qbit.com/careers/current-openings (2/23), chunk 5/5
+[18:14:50 +1m 45s | 1qbit] Reading page (3/23): https://1qbit.com/life-at-1qbit
+[18:14:50 +1m 45s | 1qbit] Extracting: https://1qbit.com/life-at-1qbit (3/23), chunk 1/5
+[18:14:59 +1m 54s | 1qbit] Repaired malformed JSON.
+[18:14:59 +1m 54s | 1qbit] Extracting: https://1qbit.com/life-at-1qbit (3/23), chunk 2/5
+[18:15:06 +2m 2s | 1qbit] Repaired malformed JSON.
+[18:15:06 +2m 2s | 1qbit] Extracting: https://1qbit.com/life-at-1qbit (3/23), chunk 3/5
+[18:15:14 +2m 9s | 1qbit] Repaired malformed JSON.
+[18:15:14 +2m 9s | 1qbit] Extracting: https://1qbit.com/life-at-1qbit (3/23), chunk 4/5
+[18:15:22 +2m 15s | 1qbit] Repaired malformed JSON.
+[18:15:22 +2m 15s | 1qbit] Extracting: https://1qbit.com/life-at-1qbit (3/23), chunk 5/5
+[18:15:29 +2m 22s | 1qbit] Repaired malformed JSON.
+[18:15:29 +2m 22s | 1qbit] Reading page (4/23): https://1qbit.com/research/finding-the-ground-state-of-spin-hamiltonians-with-reinforcement-learning
+[18:15:29 +2m 22s | 1qbit] Extracting: https://1qbit.com/research/finding-the-ground-state-of-spin-hamiltonians-with-reinforcement-learning (4/23), chunk 1/9
+[18:15:34 +2m 27s | 1qbit] Extracting: https://1qbit.com/research/finding-the-ground-state-of-spin-hamiltonians-with-reinforcement-learning (4/23), chunk 2/9
+[18:15:38 +2m 31s | 1qbit] Extracting: https://1qbit.com/research/finding-the-ground-state-of-spin-hamiltonians-with-reinforcement-learning (4/23), chunk 3/9
+[18:15:45 +2m 38s | 1qbit] Repaired malformed JSON.
+[18:15:45 +2m 38s | 1qbit] Extracting: https://1qbit.com/research/finding-the-ground-state-of-spin-hamiltonians-with-reinforcement-learning (4/23), chunk 4/9
+[18:15:53 +2m 46s | 1qbit] Repaired malformed JSON.
+[18:15:53 +2m 46s | 1qbit] Extracting: https://1qbit.com/research/finding-the-ground-state-of-spin-hamiltonians-with-reinforcement-learning (4/23), chunk 5/9
+[18:15:58 +2m 52s | 1qbit] Repaired malformed JSON.
+[18:15:58 +2m 52s | 1qbit] Extracting: https://1qbit.com/research/finding-the-ground-state-of-spin-hamiltonians-with-reinforcement-learning (4/23), chunk 6/9
+[18:16:08 +3m 1s | 1qbit] Repaired malformed JSON.
+[18:16:08 +3m 1s | 1qbit] Extracting: https://1qbit.com/research/finding-the-ground-state-of-spin-hamiltonians-with-reinforcement-learning (4/23), chunk 7/9
+[18:16:20 +3m 10s | 1qbit] Repaired malformed JSON.
+[18:16:20 +3m 10s | 1qbit] Extracting: https://1qbit.com/research/finding-the-ground-state-of-spin-hamiltonians-with-reinforcement-learning (4/23), chunk 8/9
+[18:16:26 +3m 16s | 1qbit] Repaired malformed JSON.
+[18:16:26 +3m 16s | 1qbit] Extracting: https://1qbit.com/research/finding-the-ground-state-of-spin-hamiltonians-with-reinforcement-learning (4/23), chunk 9/9
+[18:16:32 +3m 22s | 1qbit] Repaired malformed JSON.
+[18:16:32 +3m 22s | 1qbit] Reading page (5/23): https://1qbit.com/careers
+[18:16:32 +3m 22s | 1qbit] Extracting: https://1qbit.com/careers (5/23), chunk 1/11
+[18:16:38 +3m 28s | 1qbit] Repaired malformed JSON.
+[18:16:38 +3m 28s | 1qbit] Extracting: https://1qbit.com/careers (5/23), chunk 2/11
+[18:16:50 +3m 39s | 1qbit] Repaired malformed JSON.
+[18:16:50 +3m 39s | 1qbit] Extracting: https://1qbit.com/careers (5/23), chunk 3/11
+[18:16:57 +3m 45s | 1qbit] Repaired malformed JSON.
+[18:16:57 +3m 45s | 1qbit] Extracting: https://1qbit.com/careers (5/23), chunk 4/11
+[18:17:02 +3m 50s | 1qbit] Extracting: https://1qbit.com/careers (5/23), chunk 5/11
+[18:17:10 +3m 58s | 1qbit] Repaired malformed JSON.
+[18:17:10 +3m 58s | 1qbit] Extracting: https://1qbit.com/careers (5/23), chunk 6/11
+[18:17:15 +4m 3s | 1qbit] Extracting: https://1qbit.com/careers (5/23), chunk 7/11
+[18:17:18 +4m 6s | 1qbit] Extracting: https://1qbit.com/careers (5/23), chunk 8/11
+[18:17:24 +4m 10s | 1qbit] Extracting: https://1qbit.com/careers (5/23), chunk 9/11
+[18:17:33 +4m 19s | 1qbit] Repaired malformed JSON.
+[18:17:33 +4m 19s | 1qbit] Extracting: https://1qbit.com/careers (5/23), chunk 10/11
+[18:17:40 +4m 26s | 1qbit] Repaired malformed JSON.
+[18:17:40 +4m 26s | 1qbit] Extracting: https://1qbit.com/careers (5/23), chunk 11/11
+[18:17:44 +4m 30s | 1qbit] Reading page (6/23): https://1qbit.com/research/scaling-overhead-of-locality-reduction-in-binary-optimization-problems
+[18:17:44 +4m 30s | 1qbit] Extracting: https://1qbit.com/research/scaling-overhead-of-locality-reduction-in-binary-optimization-problems (6/23), chunk 1/9
+[18:17:50 +4m 36s | 1qbit] Extracting: https://1qbit.com/research/scaling-overhead-of-locality-reduction-in-binary-optimization-problems (6/23), chunk 2/9
+[18:17:55 +4m 40s | 1qbit] Extracting: https://1qbit.com/research/scaling-overhead-of-locality-reduction-in-binary-optimization-problems (6/23), chunk 3/9
+[18:18:04 +4m 49s | 1qbit] Repaired malformed JSON.
+[18:18:04 +4m 49s | 1qbit] Extracting: https://1qbit.com/research/scaling-overhead-of-locality-reduction-in-binary-optimization-problems (6/23), chunk 4/9
+[18:18:14 +4m 57s | 1qbit] Repaired malformed JSON.
+[18:18:14 +4m 57s | 1qbit] Extracting: https://1qbit.com/research/scaling-overhead-of-locality-reduction-in-binary-optimization-problems (6/23), chunk 5/9
+[18:18:24 +5m 7s | 1qbit] Repaired malformed JSON.
+[18:18:24 +5m 7s | 1qbit] Extracting: https://1qbit.com/research/scaling-overhead-of-locality-reduction-in-binary-optimization-problems (6/23), chunk 6/9
+[18:18:34 +5m 17s | 1qbit] Repaired malformed JSON.
+[18:18:34 +5m 17s | 1qbit] Extracting: https://1qbit.com/research/scaling-overhead-of-locality-reduction-in-binary-optimization-problems (6/23), chunk 7/9
+[18:18:39 +5m 22s | 1qbit] Repaired malformed JSON.
+[18:18:39 +5m 22s | 1qbit] Extracting: https://1qbit.com/research/scaling-overhead-of-locality-reduction-in-binary-optimization-problems (6/23), chunk 8/9
+[18:18:48 +5m 32s | 1qbit] Repaired malformed JSON.
+[18:18:48 +5m 32s | 1qbit] Extracting: https://1qbit.com/research/scaling-overhead-of-locality-reduction-in-binary-optimization-problems (6/23), chunk 9/9
+[18:18:54 +5m 37s | 1qbit] Reading page (7/23): https://1qbit.com/our-thinking/research-papers/page/2
+[18:18:54 +5m 37s | 1qbit] Extracting: https://1qbit.com/our-thinking/research-papers/page/2 (7/23), chunk 1/9
+[18:18:59 +5m 42s | 1qbit] Extracting: https://1qbit.com/our-thinking/research-papers/page/2 (7/23), chunk 2/9
+[18:19:09 +5m 52s | 1qbit] Repaired malformed JSON.
+[18:19:09 +5m 52s | 1qbit] Extracting: https://1qbit.com/our-thinking/research-papers/page/2 (7/23), chunk 3/9
+[18:19:20 +6m 1s | 1qbit] Repaired malformed JSON.
+[18:19:20 +6m 1s | 1qbit] Extracting: https://1qbit.com/our-thinking/research-papers/page/2 (7/23), chunk 4/9
+[18:19:27 +6m 8s | 1qbit] Repaired malformed JSON.
+[18:19:27 +6m 8s | 1qbit] Extracting: https://1qbit.com/our-thinking/research-papers/page/2 (7/23), chunk 5/9
+[18:19:35 +6m 16s | 1qbit] Repaired malformed JSON.
+[18:19:35 +6m 16s | 1qbit] Extracting: https://1qbit.com/our-thinking/research-papers/page/2 (7/23), chunk 6/9
+[18:19:44 +6m 25s | 1qbit] Repaired malformed JSON.
+[18:19:44 +6m 25s | 1qbit] Extracting: https://1qbit.com/our-thinking/research-papers/page/2 (7/23), chunk 7/9
+[18:19:54 +6m 34s | 1qbit] Repaired malformed JSON.
+[18:19:54 +6m 34s | 1qbit] Extracting: https://1qbit.com/our-thinking/research-papers/page/2 (7/23), chunk 8/9
+[18:19:59 +6m 39s | 1qbit] Repaired malformed JSON.
+[18:19:59 +6m 39s | 1qbit] Extracting: https://1qbit.com/our-thinking/research-papers/page/2 (7/23), chunk 9/9
+[18:20:04 +6m 44s | 1qbit] Reading page (8/23): https://1qbit.com/services
+[18:20:04 +6m 44s | 1qbit] Extracting: https://1qbit.com/services (8/23), chunk 1/3
+[18:20:11 +6m 51s | 1qbit] Repaired malformed JSON.
+[18:20:11 +6m 51s | 1qbit] Extracting: https://1qbit.com/services (8/23), chunk 2/3
+[18:20:20 +7m 0s | 1qbit] Repaired malformed JSON.
+[18:20:20 +7m 0s | 1qbit] Extracting: https://1qbit.com/services (8/23), chunk 3/3
+[18:20:28 +7m 6s | 1qbit] Repaired malformed JSON.
+[18:20:28 +7m 6s | 1qbit] Reading page (9/23): https://1qbit.com/our-thinking/research-papers/page/3
+[18:20:28 +7m 6s | 1qbit] Extracting: https://1qbit.com/our-thinking/research-papers/page/3 (9/23), chunk 1/9
+[18:20:33 +7m 11s | 1qbit] Extracting: https://1qbit.com/our-thinking/research-papers/page/3 (9/23), chunk 2/9
+[18:20:41 +7m 19s | 1qbit] Repaired malformed JSON.
+[18:20:41 +7m 19s | 1qbit] Extracting: https://1qbit.com/our-thinking/research-papers/page/3 (9/23), chunk 3/9
+[18:20:49 +7m 27s | 1qbit] Repaired malformed JSON.
+[18:20:49 +7m 27s | 1qbit] Extracting: https://1qbit.com/our-thinking/research-papers/page/3 (9/23), chunk 4/9
+[18:20:58 +7m 36s | 1qbit] Repaired malformed JSON.
+[18:20:58 +7m 36s | 1qbit] Extracting: https://1qbit.com/our-thinking/research-papers/page/3 (9/23), chunk 5/9
+[18:21:08 +7m 44s | 1qbit] Repaired malformed JSON.
+[18:21:08 +7m 44s | 1qbit] Extracting: https://1qbit.com/our-thinking/research-papers/page/3 (9/23), chunk 6/9
+[18:21:15 +7m 51s | 1qbit] Repaired malformed JSON.
+[18:21:15 +7m 51s | 1qbit] Extracting: https://1qbit.com/our-thinking/research-papers/page/3 (9/23), chunk 7/9
+[18:21:23 +8m 0s | 1qbit] Repaired malformed JSON.
+[18:21:23 +8m 0s | 1qbit] Extracting: https://1qbit.com/our-thinking/research-papers/page/3 (9/23), chunk 8/9
+[18:21:30 +8m 6s | 1qbit] Repaired malformed JSON.
+[18:21:30 +8m 6s | 1qbit] Extracting: https://1qbit.com/our-thinking/research-papers/page/3 (9/23), chunk 9/9
+[18:21:37 +8m 11s | 1qbit] Reading page (10/23): https://1qbit.com/contact-us
+[18:21:37 +8m 11s | 1qbit] Extracting: https://1qbit.com/contact-us (10/23), chunk 1/3
+[18:21:47 +8m 22s | 1qbit] Repaired malformed JSON.
+[18:21:47 +8m 22s | 1qbit] Extracting: https://1qbit.com/contact-us (10/23), chunk 2/3
+[18:21:51 +8m 25s | 1qbit] Extracting: https://1qbit.com/contact-us (10/23), chunk 3/3
+[18:21:55 +8m 30s | 1qbit] Reading page (11/23): https://1qbit.com/our-thinking/research-papers
+[18:21:55 +8m 30s | 1qbit] Extracting: https://1qbit.com/our-thinking/research-papers (11/23), chunk 1/10
+[18:22:04 +8m 38s | 1qbit] Repaired malformed JSON.
+[18:22:04 +8m 38s | 1qbit] Extracting: https://1qbit.com/our-thinking/research-papers (11/23), chunk 2/10
+[18:22:13 +8m 45s | 1qbit] Repaired malformed JSON.
+[18:22:13 +8m 45s | 1qbit] Extracting: https://1qbit.com/our-thinking/research-papers (11/23), chunk 3/10
+[18:22:21 +8m 54s | 1qbit] Repaired malformed JSON.
+[18:22:21 +8m 54s | 1qbit] Extracting: https://1qbit.com/our-thinking/research-papers (11/23), chunk 4/10
+[18:22:27 +9m 0s | 1qbit] Repaired malformed JSON.
+[18:22:27 +9m 0s | 1qbit] Extracting: https://1qbit.com/our-thinking/research-papers (11/23), chunk 5/10
+[18:22:35 +9m 7s | 1qbit] Repaired malformed JSON.
+[18:22:35 +9m 7s | 1qbit] Extracting: https://1qbit.com/our-thinking/research-papers (11/23), chunk 6/10
+[18:22:45 +9m 16s | 1qbit] Repaired malformed JSON.
+[18:22:45 +9m 16s | 1qbit] Extracting: https://1qbit.com/our-thinking/research-papers (11/23), chunk 7/10
+[18:23:04 +9m 35s | 1qbit] Repaired malformed JSON.
+[18:23:04 +9m 35s | 1qbit] Extracting: https://1qbit.com/our-thinking/research-papers (11/23), chunk 8/10
+[18:23:13 +9m 43s | 1qbit] Repaired malformed JSON.
+[18:23:13 +9m 43s | 1qbit] Extracting: https://1qbit.com/our-thinking/research-papers (11/23), chunk 9/10
+[18:23:21 +9m 49s | 1qbit] Extracting: https://1qbit.com/our-thinking/research-papers (11/23), chunk 10/10
+[18:23:25 +9m 53s | 1qbit] Reading page (12/23): https://1qbit.com/research/benchmark-study-of-quantum-algorithms-for-combinatorial-optimization-unitary-versus-dissipative
+[18:23:25 +9m 53s | 1qbit] Extracting: https://1qbit.com/research/benchmark-study-of-quantum-algorithms-for-combinatorial-optimization-unitary-versus-dissipative (12/23), chunk 1/9
+[18:23:30 +9m 58s | 1qbit] Extracting: https://1qbit.com/research/benchmark-study-of-quantum-algorithms-for-combinatorial-optimization-unitary-versus-dissipative (12/23), chunk 2/9
+[18:23:37 +10m 5s | 1qbit] Repaired malformed JSON.
+[18:23:37 +10m 5s | 1qbit] Extracting: https://1qbit.com/research/benchmark-study-of-quantum-algorithms-for-combinatorial-optimization-unitary-versus-dissipative (12/23), chunk 3/9
+[18:23:43 +10m 11s | 1qbit] Repaired malformed JSON.
+[18:23:43 +10m 11s | 1qbit] Extracting: https://1qbit.com/research/benchmark-study-of-quantum-algorithms-for-combinatorial-optimization-unitary-versus-dissipative (12/23), chunk 4/9
+[18:23:53 +10m 18s | 1qbit] Repaired malformed JSON.
+[18:23:53 +10m 18s | 1qbit] Extracting: https://1qbit.com/research/benchmark-study-of-quantum-algorithms-for-combinatorial-optimization-unitary-versus-dissipative (12/23), chunk 5/9
+[18:23:59 +10m 24s | 1qbit] Repaired malformed JSON.
+[18:23:59 +10m 24s | 1qbit] Extracting: https://1qbit.com/research/benchmark-study-of-quantum-algorithms-for-combinatorial-optimization-unitary-versus-dissipative (12/23), chunk 6/9
+[18:24:06 +10m 32s | 1qbit] Repaired malformed JSON.
+[18:24:06 +10m 32s | 1qbit] Extracting: https://1qbit.com/research/benchmark-study-of-quantum-algorithms-for-combinatorial-optimization-unitary-versus-dissipative (12/23), chunk 7/9
+[18:24:14 +10m 40s | 1qbit] Repaired malformed JSON.
+[18:24:14 +10m 40s | 1qbit] Extracting: https://1qbit.com/research/benchmark-study-of-quantum-algorithms-for-combinatorial-optimization-unitary-versus-dissipative (12/23), chunk 8/9
+[18:24:22 +10m 48s | 1qbit] Repaired malformed JSON.
+[18:24:22 +10m 48s | 1qbit] Extracting: https://1qbit.com/research/benchmark-study-of-quantum-algorithms-for-combinatorial-optimization-unitary-versus-dissipative (12/23), chunk 9/9
+[18:24:30 +10m 53s | 1qbit] Reading page (13/23): https://1qbit.com/wp-content/uploads/2023/04/1QBit_timeline-3.png
+[18:24:30 +10m 53s | 1qbit] Extracting: https://1qbit.com/wp-content/uploads/2023/04/1QBit_timeline-3.png (13/23), chunk 1/1
+[18:24:33 +10m 57s | 1qbit] Reading page (14/23): https://1qbit.com/research/quantum-annealing-approaches-to-the-phase-unwrapping-problem-in-synthetic-aperture-radar-imaging
+[18:24:33 +10m 57s | 1qbit] Extracting: https://1qbit.com/research/quantum-annealing-approaches-to-the-phase-unwrapping-problem-in-synthetic-aperture-radar-imaging (14/23), chunk 1/9
+[18:24:38 +11m 2s | 1qbit] Extracting: https://1qbit.com/research/quantum-annealing-approaches-to-the-phase-unwrapping-problem-in-synthetic-aperture-radar-imaging (14/23), chunk 2/9
+[18:24:47 +11m 11s | 1qbit] Repaired malformed JSON.
+[18:24:47 +11m 11s | 1qbit] Extracting: https://1qbit.com/research/quantum-annealing-approaches-to-the-phase-unwrapping-problem-in-synthetic-aperture-radar-imaging (14/23), chunk 3/9
+[18:24:55 +11m 19s | 1qbit] Repaired malformed JSON.
+[18:24:55 +11m 19s | 1qbit] Extracting: https://1qbit.com/research/quantum-annealing-approaches-to-the-phase-unwrapping-problem-in-synthetic-aperture-radar-imaging (14/23), chunk 4/9
+[18:25:05 +11m 27s | 1qbit] Repaired malformed JSON.
+[18:25:05 +11m 27s | 1qbit] Extracting: https://1qbit.com/research/quantum-annealing-approaches-to-the-phase-unwrapping-problem-in-synthetic-aperture-radar-imaging (14/23), chunk 5/9
+[18:25:11 +11m 33s | 1qbit] Repaired malformed JSON.
+[18:25:11 +11m 33s | 1qbit] Extracting: https://1qbit.com/research/quantum-annealing-approaches-to-the-phase-unwrapping-problem-in-synthetic-aperture-radar-imaging (14/23), chunk 6/9
+[18:25:17 +11m 39s | 1qbit] Repaired malformed JSON.
+[18:25:17 +11m 39s | 1qbit] Extracting: https://1qbit.com/research/quantum-annealing-approaches-to-the-phase-unwrapping-problem-in-synthetic-aperture-radar-imaging (14/23), chunk 7/9
+[18:25:25 +11m 47s | 1qbit] Repaired malformed JSON.
+[18:25:25 +11m 47s | 1qbit] Extracting: https://1qbit.com/research/quantum-annealing-approaches-to-the-phase-unwrapping-problem-in-synthetic-aperture-radar-imaging (14/23), chunk 8/9
+[18:25:36 +11m 56s | 1qbit] Repaired malformed JSON.
+[18:25:36 +11m 56s | 1qbit] Extracting: https://1qbit.com/research/quantum-annealing-approaches-to-the-phase-unwrapping-problem-in-synthetic-aperture-radar-imaging (14/23), chunk 9/9
+[18:25:41 +12m 1s | 1qbit] Reading page (15/23): https://1qbit.com/research/neural-error-mitigation-of-near-term-quantum-simulations
+[18:25:41 +12m 1s | 1qbit] Extracting: https://1qbit.com/research/neural-error-mitigation-of-near-term-quantum-simulations (15/23), chunk 1/8
+[18:25:49 +12m 9s | 1qbit] Repaired malformed JSON.
+[18:25:49 +12m 9s | 1qbit] Extracting: https://1qbit.com/research/neural-error-mitigation-of-near-term-quantum-simulations (15/23), chunk 2/8
+[18:25:56 +12m 15s | 1qbit] Repaired malformed JSON.
+[18:25:56 +12m 15s | 1qbit] Extracting: https://1qbit.com/research/neural-error-mitigation-of-near-term-quantum-simulations (15/23), chunk 3/8
+[18:26:17 +12m 35s | 1qbit] Repaired malformed JSON.
+[18:26:17 +12m 35s | 1qbit] Extracting: https://1qbit.com/research/neural-error-mitigation-of-near-term-quantum-simulations (15/23), chunk 4/8
+[18:26:22 +12m 40s | 1qbit] Repaired malformed JSON.
+[18:26:22 +12m 40s | 1qbit] Extracting: https://1qbit.com/research/neural-error-mitigation-of-near-term-quantum-simulations (15/23), chunk 5/8
+[18:26:40 +12m 58s | 1qbit] Repaired malformed JSON.
+[18:26:40 +12m 58s | 1qbit] Extracting: https://1qbit.com/research/neural-error-mitigation-of-near-term-quantum-simulations (15/23), chunk 6/8
+[18:26:52 +13m 7s | 1qbit] Repaired malformed JSON.
+[18:26:52 +13m 7s | 1qbit] Extracting: https://1qbit.com/research/neural-error-mitigation-of-near-term-quantum-simulations (15/23), chunk 7/8
+[18:26:58 +13m 12s | 1qbit] Repaired malformed JSON.
+[18:26:58 +13m 12s | 1qbit] Extracting: https://1qbit.com/research/neural-error-mitigation-of-near-term-quantum-simulations (15/23), chunk 8/8
+[18:27:06 +13m 21s | 1qbit] Repaired malformed JSON.
+[18:27:06 +13m 21s | 1qbit] Reading page (16/23): https://1qbit.com/research/quantum-algorithms-for-solving-dynamic-programming-problems
+[18:27:06 +13m 21s | 1qbit] Extracting: https://1qbit.com/research/quantum-algorithms-for-solving-dynamic-programming-problems (16/23), chunk 1/8
+[18:27:16 +13m 31s | 1qbit] Repaired malformed JSON.
+[18:27:16 +13m 31s | 1qbit] Extracting: https://1qbit.com/research/quantum-algorithms-for-solving-dynamic-programming-problems (16/23), chunk 2/8
+[18:27:23 +13m 38s | 1qbit] Extracting: https://1qbit.com/research/quantum-algorithms-for-solving-dynamic-programming-problems (16/23), chunk 3/8
+[18:27:29 +13m 44s | 1qbit] Repaired malformed JSON.
+[18:27:29 +13m 44s | 1qbit] Extracting: https://1qbit.com/research/quantum-algorithms-for-solving-dynamic-programming-problems (16/23), chunk 4/8
+[18:27:39 +13m 51s | 1qbit] Repaired malformed JSON.
+[18:27:39 +13m 51s | 1qbit] Extracting: https://1qbit.com/research/quantum-algorithms-for-solving-dynamic-programming-problems (16/23), chunk 5/8
+[18:27:48 +14m 0s | 1qbit] Repaired malformed JSON.
+[18:27:48 +14m 0s | 1qbit] Extracting: https://1qbit.com/research/quantum-algorithms-for-solving-dynamic-programming-problems (16/23), chunk 6/8
+[18:27:55 +14m 6s | 1qbit] Repaired malformed JSON.
+[18:27:55 +14m 6s | 1qbit] Extracting: https://1qbit.com/research/quantum-algorithms-for-solving-dynamic-programming-problems (16/23), chunk 7/8
+[18:28:03 +14m 15s | 1qbit] Repaired malformed JSON.
+[18:28:03 +14m 15s | 1qbit] Extracting: https://1qbit.com/research/quantum-algorithms-for-solving-dynamic-programming-problems (16/23), chunk 8/8
+[18:28:12 +14m 22s | 1qbit] Reading page (17/23): https://1qbit.com/home/topqad-news
+[18:28:12 +14m 22s | 1qbit] Extracting: https://1qbit.com/home/topqad-news (17/23), chunk 1/5
+[18:28:19 +14m 28s | 1qbit] Repaired malformed JSON.
+[18:28:19 +14m 28s | 1qbit] Extracting: https://1qbit.com/home/topqad-news (17/23), chunk 2/5
+[18:28:24 +14m 34s | 1qbit] Repaired malformed JSON.
+[18:28:24 +14m 34s | 1qbit] Extracting: https://1qbit.com/home/topqad-news (17/23), chunk 3/5
+[18:28:30 +14m 40s | 1qbit] Repaired malformed JSON.
+[18:28:30 +14m 40s | 1qbit] Extracting: https://1qbit.com/home/topqad-news (17/23), chunk 4/5
+[18:28:38 +14m 47s | 1qbit] Repaired malformed JSON.
+[18:28:38 +14m 47s | 1qbit] Extracting: https://1qbit.com/home/topqad-news (17/23), chunk 5/5
+[18:28:49 +14m 55s | 1qbit] Repaired malformed JSON.
+[18:28:49 +14m 55s | 1qbit] Reading page (18/23): https://1qbit.com
+[18:28:49 +14m 55s | 1qbit] Extracting: https://1qbit.com (18/23), chunk 1/3
+[18:28:57 +15m 4s | 1qbit] Repaired malformed JSON.
+[18:28:57 +15m 4s | 1qbit] Extracting: https://1qbit.com (18/23), chunk 2/3
+[18:29:05 +15m 12s | 1qbit] Extracting: https://1qbit.com (18/23), chunk 3/3
+[18:29:13 +15m 20s | 1qbit] Repaired malformed JSON.
+[18:29:13 +15m 20s | 1qbit] Reading page (19/23): https://1qbit.com/research/variationally-scheduled-quantum-simulation
+[18:29:13 +15m 20s | 1qbit] Extracting: https://1qbit.com/research/variationally-scheduled-quantum-simulation (19/23), chunk 1/8
+[18:29:24 +15m 28s | 1qbit] Repaired malformed JSON.
+[18:29:24 +15m 28s | 1qbit] Extracting: https://1qbit.com/research/variationally-scheduled-quantum-simulation (19/23), chunk 2/8
+[18:29:31 +15m 35s | 1qbit] Repaired malformed JSON.
+[18:29:31 +15m 35s | 1qbit] Extracting: https://1qbit.com/research/variationally-scheduled-quantum-simulation (19/23), chunk 3/8
+[18:29:36 +15m 40s | 1qbit] Repaired malformed JSON.
+[18:29:36 +15m 40s | 1qbit] Extracting: https://1qbit.com/research/variationally-scheduled-quantum-simulation (19/23), chunk 4/8
+[18:29:43 +15m 47s | 1qbit] Repaired malformed JSON.
+[18:29:43 +15m 47s | 1qbit] Extracting: https://1qbit.com/research/variationally-scheduled-quantum-simulation (19/23), chunk 5/8
+[18:29:49 +15m 53s | 1qbit] Repaired malformed JSON.
+[18:29:49 +15m 53s | 1qbit] Extracting: https://1qbit.com/research/variationally-scheduled-quantum-simulation (19/23), chunk 6/8
+[18:29:59 +16m 1s | 1qbit] Repaired malformed JSON.
+[18:29:59 +16m 1s | 1qbit] Extracting: https://1qbit.com/research/variationally-scheduled-quantum-simulation (19/23), chunk 7/8
+[18:30:07 +16m 9s | 1qbit] Repaired malformed JSON.
+[18:30:07 +16m 9s | 1qbit] Extracting: https://1qbit.com/research/variationally-scheduled-quantum-simulation (19/23), chunk 8/8
+[18:30:11 +16m 12s | 1qbit] Reading page (20/23): https://1qbit.com/research/quantum-multiple-kernel-learning
+[18:30:11 +16m 12s | 1qbit] Extracting: https://1qbit.com/research/quantum-multiple-kernel-learning (20/23), chunk 1/8
+[18:30:19 +16m 20s | 1qbit] Repaired malformed JSON.
+[18:30:19 +16m 20s | 1qbit] Extracting: https://1qbit.com/research/quantum-multiple-kernel-learning (20/23), chunk 2/8
+[18:30:25 +16m 26s | 1qbit] Repaired malformed JSON.
+[18:30:25 +16m 26s | 1qbit] Extracting: https://1qbit.com/research/quantum-multiple-kernel-learning (20/23), chunk 3/8
+[18:30:34 +16m 33s | 1qbit] Repaired malformed JSON.
+[18:30:34 +16m 33s | 1qbit] Extracting: https://1qbit.com/research/quantum-multiple-kernel-learning (20/23), chunk 4/8
+[18:30:41 +16m 40s | 1qbit] Repaired malformed JSON.
+[18:30:41 +16m 40s | 1qbit] Extracting: https://1qbit.com/research/quantum-multiple-kernel-learning (20/23), chunk 5/8
+[18:30:49 +16m 48s | 1qbit] Repaired malformed JSON.
+[18:30:49 +16m 48s | 1qbit] Extracting: https://1qbit.com/research/quantum-multiple-kernel-learning (20/23), chunk 6/8
+[18:30:58 +16m 57s | 1qbit] Repaired malformed JSON.
+[18:30:58 +16m 57s | 1qbit] Extracting: https://1qbit.com/research/quantum-multiple-kernel-learning (20/23), chunk 7/8
+[18:31:07 +17m 4s | 1qbit] Repaired malformed JSON.
+[18:31:07 +17m 4s | 1qbit] Extracting: https://1qbit.com/research/quantum-multiple-kernel-learning (20/23), chunk 8/8
+[18:31:12 +17m 8s | 1qbit] Reading page (21/23): https://1qbit.com/research/scaling-electronic-structure-calculations-quantum-computers-frozen-natural-orbital-based-method-increments
+[18:31:12 +17m 8s | 1qbit] Extracting: https://1qbit.com/research/scaling-electronic-structure-calculations-quantum-computers-frozen-natural-orbital-based-method-increments (21/23), chunk 1/8
+[18:31:16 +17m 13s | 1qbit] Extracting: https://1qbit.com/research/scaling-electronic-structure-calculations-quantum-computers-frozen-natural-orbital-based-method-increments (21/23), chunk 2/8
+[18:31:26 +17m 22s | 1qbit] Repaired malformed JSON.
+[18:31:26 +17m 22s | 1qbit] Extracting: https://1qbit.com/research/scaling-electronic-structure-calculations-quantum-computers-frozen-natural-orbital-based-method-increments (21/23), chunk 3/8
+[18:31:33 +17m 30s | 1qbit] Repaired malformed JSON.
+[18:31:33 +17m 30s | 1qbit] Extracting: https://1qbit.com/research/scaling-electronic-structure-calculations-quantum-computers-frozen-natural-orbital-based-method-increments (21/23), chunk 4/8
+[18:31:42 +17m 36s | 1qbit] Repaired malformed JSON.
+[18:31:42 +17m 36s | 1qbit] Extracting: https://1qbit.com/research/scaling-electronic-structure-calculations-quantum-computers-frozen-natural-orbital-based-method-increments (21/23), chunk 5/8
+[18:31:47 +17m 42s | 1qbit] Repaired malformed JSON.
+[18:31:47 +17m 42s | 1qbit] Extracting: https://1qbit.com/research/scaling-electronic-structure-calculations-quantum-computers-frozen-natural-orbital-based-method-increments (21/23), chunk 6/8
+[18:31:53 +17m 48s | 1qbit] Repaired malformed JSON.
+[18:31:53 +17m 48s | 1qbit] Extracting: https://1qbit.com/research/scaling-electronic-structure-calculations-quantum-computers-frozen-natural-orbital-based-method-increments (21/23), chunk 7/8
+[18:32:02 +17m 56s | 1qbit] Repaired malformed JSON.
+[18:32:02 +17m 56s | 1qbit] Extracting: https://1qbit.com/research/scaling-electronic-structure-calculations-quantum-computers-frozen-natural-orbital-based-method-increments (21/23), chunk 8/8
+[18:32:06 +18m 0s | 1qbit] Reading page (22/23): https://1qbit.com/our-thinking/research-papers/page/4
+[18:32:06 +18m 0s | 1qbit] Extracting: https://1qbit.com/our-thinking/research-papers/page/4 (22/23), chunk 1/8
+[18:32:13 +18m 6s | 1qbit] Extracting: https://1qbit.com/our-thinking/research-papers/page/4 (22/23), chunk 2/8
+[18:32:22 +18m 14s | 1qbit] Repaired malformed JSON.
+[18:32:22 +18m 14s | 1qbit] Extracting: https://1qbit.com/our-thinking/research-papers/page/4 (22/23), chunk 3/8
+[18:32:27 +18m 19s | 1qbit] Repaired malformed JSON.
+[18:32:27 +18m 19s | 1qbit] Extracting: https://1qbit.com/our-thinking/research-papers/page/4 (22/23), chunk 4/8
+[18:32:44 +18m 36s | 1qbit] Repaired malformed JSON.
+[18:32:44 +18m 36s | 1qbit] Extracting: https://1qbit.com/our-thinking/research-papers/page/4 (22/23), chunk 5/8
+[18:32:53 +18m 43s | 1qbit] Repaired malformed JSON.
+[18:32:53 +18m 43s | 1qbit] Extracting: https://1qbit.com/our-thinking/research-papers/page/4 (22/23), chunk 6/8
+[18:33:00 +18m 50s | 1qbit] Repaired malformed JSON.
+[18:33:00 +18m 50s | 1qbit] Extracting: https://1qbit.com/our-thinking/research-papers/page/4 (22/23), chunk 7/8
+[18:33:08 +18m 58s | 1qbit] Repaired malformed JSON.
+[18:33:08 +18m 58s | 1qbit] Extracting: https://1qbit.com/our-thinking/research-papers/page/4 (22/23), chunk 8/8
+[18:33:14 +19m 5s | 1qbit] Repaired malformed JSON.
+[18:33:14 +19m 5s | 1qbit] Reading page (23/23): https://1qbit.com/research/efficient-and-accurate-electronic-structure-simulation-demonstrated-on-a-trapped-ion-quantum-computer
+[18:33:14 +19m 5s | 1qbit] Extracting: https://1qbit.com/research/efficient-and-accurate-electronic-structure-simulation-demonstrated-on-a-trapped-ion-quantum-computer (23/23), chunk 1/8
+[18:33:18 +19m 8s | 1qbit] Extracting: https://1qbit.com/research/efficient-and-accurate-electronic-structure-simulation-demonstrated-on-a-trapped-ion-quantum-computer (23/23), chunk 2/8
+[18:33:26 +19m 14s | 1qbit] Extracting: https://1qbit.com/research/efficient-and-accurate-electronic-structure-simulation-demonstrated-on-a-trapped-ion-quantum-computer (23/23), chunk 3/8
+[18:33:35 +19m 23s | 1qbit] Repaired malformed JSON.
+[18:33:35 +19m 23s | 1qbit] Extracting: https://1qbit.com/research/efficient-and-accurate-electronic-structure-simulation-demonstrated-on-a-trapped-ion-quantum-computer (23/23), chunk 4/8
+[18:33:44 +19m 32s | 1qbit] Repaired malformed JSON.
+[18:33:44 +19m 32s | 1qbit] Extracting: https://1qbit.com/research/efficient-and-accurate-electronic-structure-simulation-demonstrated-on-a-trapped-ion-quantum-computer (23/23), chunk 5/8
+[18:33:51 +19m 38s | 1qbit] Repaired malformed JSON.
+[18:33:51 +19m 38s | 1qbit] Extracting: https://1qbit.com/research/efficient-and-accurate-electronic-structure-simulation-demonstrated-on-a-trapped-ion-quantum-computer (23/23), chunk 6/8
+[18:34:02 +19m 47s | 1qbit] Repaired malformed JSON.
+[18:34:02 +19m 47s | 1qbit] Extracting: https://1qbit.com/research/efficient-and-accurate-electronic-structure-simulation-demonstrated-on-a-trapped-ion-quantum-computer (23/23), chunk 7/8
+[18:34:09 +19m 54s | 1qbit] Repaired malformed JSON.
+[18:34:09 +19m 54s | 1qbit] Extracting: https://1qbit.com/research/efficient-and-accurate-electronic-structure-simulation-demonstrated-on-a-trapped-ion-quantum-computer (23/23), chunk 8/8
+[18:34:18 +20m 3s | 1qbit] Repaired malformed JSON.
+[18:34:18 +20m 3s | 1qbit] Saved 1_actor_results.json with 316 extracted records
+
+[18:34:18 +20m 4s | 1qbit] === 2 clean actors ===
+[18:34:20 +20m 5s | 1qbit] Loaded 316 extracted records
+[18:34:20 +20m 5s | 1qbit] Saved 2_actor_nodes.json with 66 canonical actor nodes
+
+[18:34:20 +20m 5s | 1qbit] === 3 interaction extraction ===
+[18:34:21 +20m 6s | 1qbit] Extracting interactions: https://1qbit.com/careers/current-openings/job-description-qec-scientist (1/23), chunk 2/7
+[18:34:25 +20m 10s | 1qbit] Extracting interactions: https://1qbit.com/careers/current-openings/job-description-qec-scientist (1/23), chunk 3/7
+[18:34:32 +20m 15s | 1qbit] Extracting interactions: https://1qbit.com/careers/current-openings/job-description-qec-scientist (1/23), chunk 6/7
+[18:34:35 +20m 18s | 1qbit] Extracting interactions: https://1qbit.com/careers/current-openings (2/23), chunk 3/5
+[18:34:44 +20m 27s | 1qbit] Extracting interactions: https://1qbit.com/careers/current-openings (2/23), chunk 4/5
+[18:34:48 +20m 31s | 1qbit] Extracting interactions: https://1qbit.com/life-at-1qbit (3/23), chunk 4/5
+[18:34:51 +20m 34s | 1qbit] Extracting interactions: https://1qbit.com/life-at-1qbit (3/23), chunk 5/5
+[18:34:54 +20m 37s | 1qbit] Extracting interactions: https://1qbit.com/research/finding-the-ground-state-of-spin-hamiltonians-with-reinforcement-learning (4/23), chunk 3/9
+[18:35:01 +20m 44s | 1qbit] Extracting interactions: https://1qbit.com/research/finding-the-ground-state-of-spin-hamiltonians-with-reinforcement-learning (4/23), chunk 4/9
+[18:35:10 +20m 51s | 1qbit] Extracting interactions: https://1qbit.com/research/finding-the-ground-state-of-spin-hamiltonians-with-reinforcement-learning (4/23), chunk 5/9
+[18:35:36 +21m 17s | 1qbit] Extracting interactions: https://1qbit.com/research/finding-the-ground-state-of-spin-hamiltonians-with-reinforcement-learning (4/23), chunk 6/9
+[18:36:18 +21m 53s | 1qbit] Extracting interactions: https://1qbit.com/research/finding-the-ground-state-of-spin-hamiltonians-with-reinforcement-learning (4/23), chunk 7/9
+[18:36:52 +22m 24s | 1qbit] Extracting interactions: https://1qbit.com/research/finding-the-ground-state-of-spin-hamiltonians-with-reinforcement-learning (4/23), chunk 8/9
+[18:37:27 +22m 57s | 1qbit] Extracting interactions: https://1qbit.com/research/finding-the-ground-state-of-spin-hamiltonians-with-reinforcement-learning (4/23), chunk 9/9
+[18:37:49 +23m 20s | 1qbit] Extracting interactions: https://1qbit.com/careers (5/23), chunk 3/11
+[18:37:53 +23m 24s | 1qbit] Extracting interactions: https://1qbit.com/careers (5/23), chunk 4/11
+[18:37:56 +23m 26s | 1qbit] Extracting interactions: https://1qbit.com/careers (5/23), chunk 5/11
+[18:38:00 +23m 30s | 1qbit] Extracting interactions: https://1qbit.com/careers (5/23), chunk 9/11
+[18:38:04 +23m 34s | 1qbit] Extracting interactions: https://1qbit.com/careers (5/23), chunk 10/11
+[18:38:07 +23m 37s | 1qbit] Extracting interactions: https://1qbit.com/research/scaling-overhead-of-locality-reduction-in-binary-optimization-problems (6/23), chunk 3/9
+[18:38:18 +23m 45s | 1qbit] Extracting interactions: https://1qbit.com/research/scaling-overhead-of-locality-reduction-in-binary-optimization-problems (6/23), chunk 4/9
+[18:38:32 +23m 59s | 1qbit] Extracting interactions: https://1qbit.com/research/scaling-overhead-of-locality-reduction-in-binary-optimization-problems (6/23), chunk 5/9
+[18:39:02 +24m 29s | 1qbit] Extracting interactions: https://1qbit.com/research/scaling-overhead-of-locality-reduction-in-binary-optimization-problems (6/23), chunk 6/9
+[18:39:36 +25m 0s | 1qbit] Extracting interactions: https://1qbit.com/research/scaling-overhead-of-locality-reduction-in-binary-optimization-problems (6/23), chunk 7/9
+[18:40:18 +25m 37s | 1qbit] Extracting interactions: https://1qbit.com/research/scaling-overhead-of-locality-reduction-in-binary-optimization-problems (6/23), chunk 8/9
+[18:40:52 +26m 12s | 1qbit] Extracting interactions: https://1qbit.com/our-thinking/research-papers/page/2 (7/23), chunk 2/9
+[18:41:04 +26m 23s | 1qbit] Extracting interactions: https://1qbit.com/our-thinking/research-papers/page/2 (7/23), chunk 3/9
+[18:41:20 +26m 39s | 1qbit] Extracting interactions: https://1qbit.com/our-thinking/research-papers/page/2 (7/23), chunk 4/9
+[18:41:30 +26m 46s | 1qbit] Extracting interactions: https://1qbit.com/our-thinking/research-papers/page/2 (7/23), chunk 5/9
+[18:42:07 +27m 23s | 1qbit] Extracting interactions: https://1qbit.com/our-thinking/research-papers/page/2 (7/23), chunk 6/9
+[18:42:49 +28m 3s | 1qbit] Extracting interactions: https://1qbit.com/our-thinking/research-papers/page/2 (7/23), chunk 7/9
+[18:43:06 +28m 19s | 1qbit] Extracting interactions: https://1qbit.com/our-thinking/research-papers/page/2 (7/23), chunk 8/9
+[18:43:19 +28m 33s | 1qbit] Extracting interactions: https://1qbit.com/our-thinking/research-papers/page/3 (9/23), chunk 2/9
+[18:43:40 +28m 52s | 1qbit] Extracting interactions: https://1qbit.com/our-thinking/research-papers/page/3 (9/23), chunk 3/9
+[18:44:09 +29m 21s | 1qbit] Extracting interactions: https://1qbit.com/our-thinking/research-papers/page/3 (9/23), chunk 4/9
+[18:44:43 +29m 53s | 1qbit] Extracting interactions: https://1qbit.com/our-thinking/research-papers/page/3 (9/23), chunk 5/9
+[18:45:06 +30m 13s | 1qbit] Extracting interactions: https://1qbit.com/our-thinking/research-papers/page/3 (9/23), chunk 6/9
+[18:45:18 +30m 25s | 1qbit] Extracting interactions: https://1qbit.com/our-thinking/research-papers/page/3 (9/23), chunk 7/9
+[18:45:30 +30m 36s | 1qbit] Extracting interactions: https://1qbit.com/our-thinking/research-papers/page/3 (9/23), chunk 8/9
+[18:45:34 +30m 40s | 1qbit] Extracting interactions: https://1qbit.com/contact-us (10/23), chunk 2/3
+[18:45:36 +30m 42s | 1qbit] Extracting interactions: https://1qbit.com/contact-us (10/23), chunk 3/3
+[18:45:38 +30m 44s | 1qbit] Extracting interactions: https://1qbit.com/our-thinking/research-papers (11/23), chunk 2/10
+[18:46:12 +31m 17s | 1qbit] Extracting interactions: https://1qbit.com/our-thinking/research-papers (11/23), chunk 3/10
+[18:46:51 +31m 54s | 1qbit] Extracting interactions: https://1qbit.com/our-thinking/research-papers (11/23), chunk 4/10
+[18:47:27 +32m 28s | 1qbit] Extracting interactions: https://1qbit.com/our-thinking/research-papers (11/23), chunk 5/10
+[18:48:02 +33m 2s | 1qbit] Extracting interactions: https://1qbit.com/our-thinking/research-papers (11/23), chunk 6/10
+[18:48:37 +33m 37s | 1qbit] Extracting interactions: https://1qbit.com/our-thinking/research-papers (11/23), chunk 7/10
+[18:49:13 +34m 11s | 1qbit] Extracting interactions: https://1qbit.com/our-thinking/research-papers (11/23), chunk 8/10
+[18:49:25 +34m 23s | 1qbit] Extracting interactions: https://1qbit.com/our-thinking/research-papers (11/23), chunk 9/10
+[18:49:31 +34m 29s | 1qbit] Extracting interactions: https://1qbit.com/research/benchmark-study-of-quantum-algorithms-for-combinatorial-optimization-unitary-versus-dissipative (12/23), chunk 3/9
+[18:50:01 +34m 57s | 1qbit] Extracting interactions: https://1qbit.com/research/benchmark-study-of-quantum-algorithms-for-combinatorial-optimization-unitary-versus-dissipative (12/23), chunk 4/9
+[18:50:35 +35m 30s | 1qbit] Extracting interactions: https://1qbit.com/research/benchmark-study-of-quantum-algorithms-for-combinatorial-optimization-unitary-versus-dissipative (12/23), chunk 5/9
+[18:51:10 +36m 5s | 1qbit] Extracting interactions: https://1qbit.com/research/benchmark-study-of-quantum-algorithms-for-combinatorial-optimization-unitary-versus-dissipative (12/23), chunk 6/9
+[18:51:48 +36m 41s | 1qbit] Extracting interactions: https://1qbit.com/research/benchmark-study-of-quantum-algorithms-for-combinatorial-optimization-unitary-versus-dissipative (12/23), chunk 7/9
+[18:52:22 +37m 12s | 1qbit] Extracting interactions: https://1qbit.com/research/benchmark-study-of-quantum-algorithms-for-combinatorial-optimization-unitary-versus-dissipative (12/23), chunk 8/9
+[18:52:58 +37m 47s | 1qbit] Extracting interactions: https://1qbit.com/research/quantum-annealing-approaches-to-the-phase-unwrapping-problem-in-synthetic-aperture-radar-imaging (14/23), chunk 3/9
+[18:53:25 +38m 11s | 1qbit] Extracting interactions: https://1qbit.com/research/quantum-annealing-approaches-to-the-phase-unwrapping-problem-in-synthetic-aperture-radar-imaging (14/23), chunk 4/9
+[18:54:02 +38m 46s | 1qbit] Extracting interactions: https://1qbit.com/research/quantum-annealing-approaches-to-the-phase-unwrapping-problem-in-synthetic-aperture-radar-imaging (14/23), chunk 5/9
+[18:54:38 +39m 19s | 1qbit] Extracting interactions: https://1qbit.com/research/quantum-annealing-approaches-to-the-phase-unwrapping-problem-in-synthetic-aperture-radar-imaging (14/23), chunk 6/9
+[21:29:17 +44m 20s | 1qbit] Model call failed on https://1qbit.com/research/quantum-annealing-approaches-to-the-phase-unwrapping-problem-in-synthetic-aperture-radar-imaging, chunk 6: 
+[21:29:17 +44m 20s | 1qbit] Extracting interactions: https://1qbit.com/research/quantum-annealing-approaches-to-the-phase-unwrapping-problem-in-synthetic-aperture-radar-imaging (14/23), chunk 7/9
+
+========================================================================
+RUN FINISHED 2026-06-16 21:29:20  (INTERRUPTED)
+Started:     2026-06-16 18:12:57
+Elapsed:     44m 23s
+========================================================================
+
+========================================================================
+RUN STARTED  2026-06-16 21:29:24
+site_pipeline.py https://1qbit.com/
+========================================================================
+
+[21:29:24 +0s | 1qbit] === 0 crawl site (skipped via auto (actor data already exists; pass --force to re-crawl), reusing /home/lv/IDP/idpdeeptech/pipeline/site_outputs/1qbit/crawl_output) ===
+
+[21:29:24 +0s | 1qbit] === 1 actor extraction ===
+[21:29:24 +0s | 1qbit] Auto-resume: 23 (url, ordinal) pairs already done, skipping them.
+[21:29:24 +1s | 1qbit] All 23 pages/URLs already processed (per 1_actor_results.progress.json). Nothing to do.
+[21:29:24 +1s | 1qbit] Delete the progress sidecar to force a full re-run, or pass --start-page N.
+
+[21:29:24 +1s | 1qbit] === 2 clean actors ===
+[21:29:25 +2s | 1qbit] Loaded 316 extracted records
+[21:29:25 +2s | 1qbit] Saved 2_actor_nodes.json with 66 canonical actor nodes
+
+[21:29:25 +2s | 1qbit] === 3 interaction extraction ===
+[21:29:25 +2s | 1qbit] Auto-resume: 13 (url, ordinal) pairs already done, skipping them.
+[21:29:25 +2s | 1qbit] Skipping interactions: https://1qbit.com/careers/current-openings/job-description-qec-scientist (1/23) (already done)
+[21:29:25 +2s | 1qbit] Skipping interactions: https://1qbit.com/careers/current-openings (2/23) (already done)
+[21:29:25 +2s | 1qbit] Skipping interactions: https://1qbit.com/life-at-1qbit (3/23) (already done)
+[21:29:25 +2s | 1qbit] Skipping interactions: https://1qbit.com/research/finding-the-ground-state-of-spin-hamiltonians-with-reinforcement-learning (4/23) (already done)
+[21:29:25 +2s | 1qbit] Skipping interactions: https://1qbit.com/careers (5/23) (already done)
+[21:29:25 +2s | 1qbit] Skipping interactions: https://1qbit.com/research/scaling-overhead-of-locality-reduction-in-binary-optimization-problems (6/23) (already done)
+[21:29:25 +2s | 1qbit] Skipping interactions: https://1qbit.com/our-thinking/research-papers/page/2 (7/23) (already done)
+[21:29:25 +2s | 1qbit] Skipping interactions: https://1qbit.com/services (8/23) (already done)
+[21:29:25 +2s | 1qbit] Skipping interactions: https://1qbit.com/our-thinking/research-papers/page/3 (9/23) (already done)
+[21:29:25 +2s | 1qbit] Skipping interactions: https://1qbit.com/contact-us (10/23) (already done)
+[21:29:25 +2s | 1qbit] Skipping interactions: https://1qbit.com/our-thinking/research-papers (11/23) (already done)
+[21:29:25 +2s | 1qbit] Skipping interactions: https://1qbit.com/research/benchmark-study-of-quantum-algorithms-for-combinatorial-optimization-unitary-versus-dissipative (12/23) (already done)
+[21:29:25 +2s | 1qbit] Skipping interactions: https://1qbit.com/wp-content/uploads/2023/04/1QBit_timeline-3.png (13/23) (already done)
+[21:29:25 +2s | 1qbit] Extracting interactions: https://1qbit.com/research/quantum-annealing-approaches-to-the-phase-unwrapping-problem-in-synthetic-aperture-radar-imaging (14/23), chunk 3/9
+[21:29:53 +27s | 1qbit] Extracting interactions: https://1qbit.com/research/quantum-annealing-approaches-to-the-phase-unwrapping-problem-in-synthetic-aperture-radar-imaging (14/23), chunk 4/9
+[21:30:35 +1m 6s | 1qbit] Extracting interactions: https://1qbit.com/research/quantum-annealing-approaches-to-the-phase-unwrapping-problem-in-synthetic-aperture-radar-imaging (14/23), chunk 5/9
+[21:31:12 +1m 41s | 1qbit] Extracting interactions: https://1qbit.com/research/quantum-annealing-approaches-to-the-phase-unwrapping-problem-in-synthetic-aperture-radar-imaging (14/23), chunk 6/9
+[21:31:51 +2m 18s | 1qbit] Extracting interactions: https://1qbit.com/research/quantum-annealing-approaches-to-the-phase-unwrapping-problem-in-synthetic-aperture-radar-imaging (14/23), chunk 7/9
+[21:32:27 +2m 51s | 1qbit] Extracting interactions: https://1qbit.com/research/quantum-annealing-approaches-to-the-phase-unwrapping-problem-in-synthetic-aperture-radar-imaging (14/23), chunk 8/9
+[21:33:05 +3m 26s | 1qbit] Extracting interactions: https://1qbit.com/research/neural-error-mitigation-of-near-term-quantum-simulations (15/23), chunk 2/8
+[21:33:30 +3m 49s | 1qbit] Extracting interactions: https://1qbit.com/research/neural-error-mitigation-of-near-term-quantum-simulations (15/23), chunk 3/8
+[21:33:55 +4m 11s | 1qbit] Extracting interactions: https://1qbit.com/research/neural-error-mitigation-of-near-term-quantum-simulations (15/23), chunk 4/8
+[21:34:32 +4m 45s | 1qbit] Extracting interactions: https://1qbit.com/research/neural-error-mitigation-of-near-term-quantum-simulations (15/23), chunk 5/8
+[21:35:14 +5m 25s | 1qbit] Extracting interactions: https://1qbit.com/research/neural-error-mitigation-of-near-term-quantum-simulations (15/23), chunk 6/8
+[21:35:49 +5m 58s | 1qbit] Extracting interactions: https://1qbit.com/research/neural-error-mitigation-of-near-term-quantum-simulations (15/23), chunk 7/8
+[21:36:27 +6m 33s | 1qbit] Extracting interactions: https://1qbit.com/research/quantum-algorithms-for-solving-dynamic-programming-problems (16/23), chunk 3/8
+[21:36:50 +6m 54s | 1qbit] Extracting interactions: https://1qbit.com/research/quantum-algorithms-for-solving-dynamic-programming-problems (16/23), chunk 4/8
+[21:37:28 +7m 30s | 1qbit] Extracting interactions: https://1qbit.com/research/quantum-algorithms-for-solving-dynamic-programming-problems (16/23), chunk 5/8
+[21:38:08 +8m 8s | 1qbit] Extracting interactions: https://1qbit.com/research/quantum-algorithms-for-solving-dynamic-programming-problems (16/23), chunk 6/8
+[21:38:49 +8m 47s | 1qbit] Extracting interactions: https://1qbit.com/research/quantum-algorithms-for-solving-dynamic-programming-problems (16/23), chunk 7/8
+[21:39:22 +9m 17s | 1qbit] Extracting interactions: https://1qbit.com/home/topqad-news (17/23), chunk 2/5
+[21:39:28 +9m 23s | 1qbit] Extracting interactions: https://1qbit.com/home/topqad-news (17/23), chunk 3/5
+[21:39:41 +9m 34s | 1qbit] Extracting interactions: https://1qbit.com/home/topqad-news (17/23), chunk 4/5
+[21:39:58 +9m 51s | 1qbit] Extracting interactions: https://1qbit.com/home/topqad-news (17/23), chunk 5/5
+[21:40:10 +10m 1s | 1qbit] Extracting interactions: https://1qbit.com (18/23), chunk 2/3
+[21:40:14 +10m 5s | 1qbit] Extracting interactions: https://1qbit.com (18/23), chunk 3/3
+[21:40:18 +10m 9s | 1qbit] Extracting interactions: https://1qbit.com/research/variationally-scheduled-quantum-simulation (19/23), chunk 2/8
+[21:40:28 +10m 18s | 1qbit] Extracting interactions: https://1qbit.com/research/variationally-scheduled-quantum-simulation (19/23), chunk 3/8
+[21:40:47 +10m 35s | 1qbit] Extracting interactions: https://1qbit.com/research/variationally-scheduled-quantum-simulation (19/23), chunk 4/8
+[21:41:32 +11m 18s | 1qbit] Extracting interactions: https://1qbit.com/research/variationally-scheduled-quantum-simulation (19/23), chunk 5/8
+[21:42:11 +11m 55s | 1qbit] Extracting interactions: https://1qbit.com/research/variationally-scheduled-quantum-simulation (19/23), chunk 6/8
+[21:42:50 +12m 32s | 1qbit] Extracting interactions: https://1qbit.com/research/variationally-scheduled-quantum-simulation (19/23), chunk 7/8
+[21:43:28 +13m 7s | 1qbit] Extracting interactions: https://1qbit.com/research/quantum-multiple-kernel-learning (20/23), chunk 2/8
+[21:43:38 +13m 15s | 1qbit] Extracting interactions: https://1qbit.com/research/quantum-multiple-kernel-learning (20/23), chunk 3/8
+[21:44:01 +13m 38s | 1qbit] Extracting interactions: https://1qbit.com/research/quantum-multiple-kernel-learning (20/23), chunk 4/8
+[21:44:37 +14m 11s | 1qbit] Extracting interactions: https://1qbit.com/research/quantum-multiple-kernel-learning (20/23), chunk 5/8
+[21:45:16 +14m 48s | 1qbit] Extracting interactions: https://1qbit.com/research/quantum-multiple-kernel-learning (20/23), chunk 6/8
+[21:45:59 +15m 24s | 1qbit] Extracting interactions: https://1qbit.com/research/quantum-multiple-kernel-learning (20/23), chunk 7/8
+[21:46:37 +16m 0s | 1qbit] Extracting interactions: https://1qbit.com/research/scaling-electronic-structure-calculations-quantum-computers-frozen-natural-orbital-based-method-increments (21/23), chunk 3/8
+[21:47:15 +16m 35s | 1qbit] Extracting interactions: https://1qbit.com/research/scaling-electronic-structure-calculations-quantum-computers-frozen-natural-orbital-based-method-increments (21/23), chunk 4/8
+[21:47:56 +17m 13s | 1qbit] Extracting interactions: https://1qbit.com/research/scaling-electronic-structure-calculations-quantum-computers-frozen-natural-orbital-based-method-increments (21/23), chunk 5/8
+[21:48:34 +17m 48s | 1qbit] Extracting interactions: https://1qbit.com/research/scaling-electronic-structure-calculations-quantum-computers-frozen-natural-orbital-based-method-increments (21/23), chunk 6/8
+[21:49:14 +18m 25s | 1qbit] Extracting interactions: https://1qbit.com/research/scaling-electronic-structure-calculations-quantum-computers-frozen-natural-orbital-based-method-increments (21/23), chunk 7/8
+[21:49:51 +18m 59s | 1qbit] Extracting interactions: https://1qbit.com/our-thinking/research-papers/page/4 (22/23), chunk 2/8
+[21:50:04 +19m 9s | 1qbit] Extracting interactions: https://1qbit.com/our-thinking/research-papers/page/4 (22/23), chunk 3/8
+[21:50:20 +19m 25s | 1qbit] Extracting interactions: https://1qbit.com/our-thinking/research-papers/page/4 (22/23), chunk 4/8
+[21:50:48 +19m 49s | 1qbit] Extracting interactions: https://1qbit.com/our-thinking/research-papers/page/4 (22/23), chunk 5/8
+[21:51:00 +20m 2s | 1qbit] Extracting interactions: https://1qbit.com/our-thinking/research-papers/page/4 (22/23), chunk 6/8
+[21:51:25 +20m 23s | 1qbit] Extracting interactions: https://1qbit.com/our-thinking/research-papers/page/4 (22/23), chunk 7/8
+[21:51:45 +20m 43s | 1qbit] Extracting interactions: https://1qbit.com/our-thinking/research-papers/page/4 (22/23), chunk 8/8
+[21:51:53 +20m 48s | 1qbit] Extracting interactions: https://1qbit.com/research/efficient-and-accurate-electronic-structure-simulation-demonstrated-on-a-trapped-ion-quantum-computer (23/23), chunk 3/8
+[21:52:32 +21m 25s | 1qbit] Extracting interactions: https://1qbit.com/research/efficient-and-accurate-electronic-structure-simulation-demonstrated-on-a-trapped-ion-quantum-computer (23/23), chunk 4/8
+[21:53:09 +21m 59s | 1qbit] Extracting interactions: https://1qbit.com/research/efficient-and-accurate-electronic-structure-simulation-demonstrated-on-a-trapped-ion-quantum-computer (23/23), chunk 5/8
+[21:53:50 +22m 37s | 1qbit] Extracting interactions: https://1qbit.com/research/efficient-and-accurate-electronic-structure-simulation-demonstrated-on-a-trapped-ion-quantum-computer (23/23), chunk 6/8
+[21:54:27 +23m 11s | 1qbit] Extracting interactions: https://1qbit.com/research/efficient-and-accurate-electronic-structure-simulation-demonstrated-on-a-trapped-ion-quantum-computer (23/23), chunk 7/8
+[21:55:04 +23m 45s | 1qbit] Extracting interactions: https://1qbit.com/research/efficient-and-accurate-electronic-structure-simulation-demonstrated-on-a-trapped-ion-quantum-computer (23/23), chunk 8/8
+[21:55:14 +23m 55s | 1qbit] Saved 3_interaction_results.json with 541 extracted interactions.
+
+[21:55:14 +23m 56s | 1qbit] === 4 clean interactions ===
+[21:55:14 +23m 56s | 1qbit] Saved 4_edges.json with 3 cleaned interactions.
+
+[21:55:14 +23m 56s | 1qbit] === 5 helix enrichment ===
+[21:55:14 +23m 56s | 1qbit] Wrote 5_nodes.json (66 actors)
+[21:55:14 +23m 56s | 1qbit] Wrote 5_edges.json (3 interactions)
+[21:55:14 +23m 56s | 1qbit] Actor helix counts: {'Civil Society': 4, 'Government': 1, 'Industry': 8, 'Unknown': 53}
+[21:55:14 +23m 56s | 1qbit] Functional-space counts: {'Consensus': 2, 'Unknown': 1}
+
+[21:55:14 +23m 56s | 1qbit] === 6 network visualisation ===
+[21:55:15 +23m 57s | 1qbit] Wrote quantum_network.html
+[21:55:15 +23m 57s | 1qbit] Nodes: 66
+[21:55:15 +23m 57s | 1qbit] Edges: 2
+
+[21:55:15 +23m 57s | 1qbit] Done. Outputs written to: /home/lv/IDP/idpdeeptech/pipeline/site_outputs/1qbit
+[21:55:15 +23m 57s | 1qbit] Log: /home/lv/IDP/idpdeeptech/pipeline/site_outputs/1qbit/run.log
+
+========================================================================
+RUN FINISHED 2026-06-16 21:55:15  (OK)
+Started:     2026-06-16 21:29:24
+Elapsed:     23m 57s
+========================================================================

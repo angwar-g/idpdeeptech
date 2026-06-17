@@ -1,0 +1,321 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+            <script>function neighbourhoodHighlight(params) {
+  // console.log("in nieghbourhoodhighlight");
+  allNodes = nodes.get({ returnType: "Object" });
+  // originalNodes = JSON.parse(JSON.stringify(allNodes));
+  // if something is selected:
+  if (params.nodes.length > 0) {
+    highlightActive = true;
+    var i, j;
+    var selectedNode = params.nodes[0];
+    var degrees = 2;
+
+    // mark all nodes as hard to read.
+    for (let nodeId in allNodes) {
+      // nodeColors[nodeId] = allNodes[nodeId].color;
+      allNodes[nodeId].color = "rgba(200,200,200,0.5)";
+      if (allNodes[nodeId].hiddenLabel === undefined) {
+        allNodes[nodeId].hiddenLabel = allNodes[nodeId].label;
+        allNodes[nodeId].label = undefined;
+      }
+    }
+    var connectedNodes = network.getConnectedNodes(selectedNode);
+    var allConnectedNodes = [];
+
+    // get the second degree nodes
+    for (i = 1; i < degrees; i++) {
+      for (j = 0; j < connectedNodes.length; j++) {
+        allConnectedNodes = allConnectedNodes.concat(
+          network.getConnectedNodes(connectedNodes[j])
+        );
+      }
+    }
+
+    // all second degree nodes get a different color and their label back
+    for (i = 0; i < allConnectedNodes.length; i++) {
+      // allNodes[allConnectedNodes[i]].color = "pink";
+      allNodes[allConnectedNodes[i]].color = "rgba(150,150,150,0.75)";
+      if (allNodes[allConnectedNodes[i]].hiddenLabel !== undefined) {
+        allNodes[allConnectedNodes[i]].label =
+          allNodes[allConnectedNodes[i]].hiddenLabel;
+        allNodes[allConnectedNodes[i]].hiddenLabel = undefined;
+      }
+    }
+
+    // all first degree nodes get their own color and their label back
+    for (i = 0; i < connectedNodes.length; i++) {
+      // allNodes[connectedNodes[i]].color = undefined;
+      allNodes[connectedNodes[i]].color = nodeColors[connectedNodes[i]];
+      if (allNodes[connectedNodes[i]].hiddenLabel !== undefined) {
+        allNodes[connectedNodes[i]].label =
+          allNodes[connectedNodes[i]].hiddenLabel;
+        allNodes[connectedNodes[i]].hiddenLabel = undefined;
+      }
+    }
+
+    // the main node gets its own color and its label back.
+    // allNodes[selectedNode].color = undefined;
+    allNodes[selectedNode].color = nodeColors[selectedNode];
+    if (allNodes[selectedNode].hiddenLabel !== undefined) {
+      allNodes[selectedNode].label = allNodes[selectedNode].hiddenLabel;
+      allNodes[selectedNode].hiddenLabel = undefined;
+    }
+  } else if (highlightActive === true) {
+    // console.log("highlightActive was true");
+    // reset all nodes
+    for (let nodeId in allNodes) {
+      // allNodes[nodeId].color = "purple";
+      allNodes[nodeId].color = nodeColors[nodeId];
+      // delete allNodes[nodeId].color;
+      if (allNodes[nodeId].hiddenLabel !== undefined) {
+        allNodes[nodeId].label = allNodes[nodeId].hiddenLabel;
+        allNodes[nodeId].hiddenLabel = undefined;
+      }
+    }
+    highlightActive = false;
+  }
+
+  // transform the object into an array
+  var updateArray = [];
+  if (params.nodes.length > 0) {
+    for (let nodeId in allNodes) {
+      if (allNodes.hasOwnProperty(nodeId)) {
+        // console.log(allNodes[nodeId]);
+        updateArray.push(allNodes[nodeId]);
+      }
+    }
+    nodes.update(updateArray);
+  } else {
+    // console.log("Nothing was selected");
+    for (let nodeId in allNodes) {
+      if (allNodes.hasOwnProperty(nodeId)) {
+        // console.log(allNodes[nodeId]);
+        // allNodes[nodeId].color = {};
+        updateArray.push(allNodes[nodeId]);
+      }
+    }
+    nodes.update(updateArray);
+  }
+}
+
+function filterHighlight(params) {
+  allNodes = nodes.get({ returnType: "Object" });
+  // if something is selected:
+  if (params.nodes.length > 0) {
+    filterActive = true;
+    let selectedNodes = params.nodes;
+
+    // hiding all nodes and saving the label
+    for (let nodeId in allNodes) {
+      allNodes[nodeId].hidden = true;
+      if (allNodes[nodeId].savedLabel === undefined) {
+        allNodes[nodeId].savedLabel = allNodes[nodeId].label;
+        allNodes[nodeId].label = undefined;
+      }
+    }
+
+    for (let i=0; i < selectedNodes.length; i++) {
+      allNodes[selectedNodes[i]].hidden = false;
+      if (allNodes[selectedNodes[i]].savedLabel !== undefined) {
+        allNodes[selectedNodes[i]].label = allNodes[selectedNodes[i]].savedLabel;
+        allNodes[selectedNodes[i]].savedLabel = undefined;
+      }
+    }
+
+  } else if (filterActive === true) {
+    // reset all nodes
+    for (let nodeId in allNodes) {
+      allNodes[nodeId].hidden = false;
+      if (allNodes[nodeId].savedLabel !== undefined) {
+        allNodes[nodeId].label = allNodes[nodeId].savedLabel;
+        allNodes[nodeId].savedLabel = undefined;
+      }
+    }
+    filterActive = false;
+  }
+
+  // transform the object into an array
+  var updateArray = [];
+  if (params.nodes.length > 0) {
+    for (let nodeId in allNodes) {
+      if (allNodes.hasOwnProperty(nodeId)) {
+        updateArray.push(allNodes[nodeId]);
+      }
+    }
+    nodes.update(updateArray);
+  } else {
+    for (let nodeId in allNodes) {
+      if (allNodes.hasOwnProperty(nodeId)) {
+        updateArray.push(allNodes[nodeId]);
+      }
+    }
+    nodes.update(updateArray);
+  }
+}
+
+function selectNode(nodes) {
+  network.selectNodes(nodes);
+  neighbourhoodHighlight({ nodes: nodes });
+  return nodes;
+}
+
+function selectNodes(nodes) {
+  network.selectNodes(nodes);
+  filterHighlight({nodes: nodes});
+  return nodes;
+}
+
+function highlightFilter(filter) {
+  let selectedNodes = []
+  let selectedProp = filter['property']
+  if (filter['item'] === 'node') {
+    let allNodes = nodes.get({ returnType: "Object" });
+    for (let nodeId in allNodes) {
+      if (allNodes[nodeId][selectedProp] && filter['value'].includes((allNodes[nodeId][selectedProp]).toString())) {
+        selectedNodes.push(nodeId)
+      }
+    }
+  }
+  else if (filter['item'] === 'edge'){
+    let allEdges = edges.get({returnType: 'object'});
+    // check if the selected property exists for selected edge and select the nodes connected to the edge
+    for (let edge in allEdges) {
+      if (allEdges[edge][selectedProp] && filter['value'].includes((allEdges[edge][selectedProp]).toString())) {
+        selectedNodes.push(allEdges[edge]['from'])
+        selectedNodes.push(allEdges[edge]['to'])
+      }
+    }
+  }
+  selectNodes(selectedNodes)
+}</script>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/dist/vis-network.min.css" integrity="sha512-WgxfT5LWjfszlPHXRmBWHkV2eceiWTOBvrKCNbdgDYTHrT2AeLCGbF4sZlZw3UMN3WtL0tGUoIAKsu8mllg/XA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/vis-network.min.js" integrity="sha512-LnvoEWDFrqGHlHmDD2101OrLcbsfkrzoSpvtSQtxK3RMnRV0eOkhhBN2dXHKRrUU8p2DGRTk35n4O8nWSVe1mQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            
+            
+            
+            
+            
+            
+
+        
+<center>
+<h1></h1>
+</center>
+
+<!-- <link rel="stylesheet" href="../node_modules/vis/dist/vis.min.css" type="text/css" />
+<script type="text/javascript" src="../node_modules/vis/dist/vis.js"> </script>-->
+        <link
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+          crossorigin="anonymous"
+        />
+        <script
+          src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+          crossorigin="anonymous"
+        ></script>
+
+
+        <center>
+          <h1></h1>
+        </center>
+        <style type="text/css">
+
+             #mynetwork {
+                 width: 100%;
+                 height: 850px;
+                 background-color: #ffffff;
+                 border: 1px solid lightgray;
+                 position: relative;
+                 float: left;
+             }
+
+             
+
+             
+
+             
+        </style>
+    </head>
+
+
+    <body>
+        <div class="card" style="width: 100%">
+            
+            
+            <div id="mynetwork" class="card-body"></div>
+        </div>
+
+        
+        
+
+        <script type="text/javascript">
+
+              // initialize global variables.
+              var edges;
+              var nodes;
+              var allNodes;
+              var allEdges;
+              var nodeColors;
+              var originalNodes;
+              var network;
+              var container;
+              var options, data;
+              var filter = {
+                  item : '',
+                  property : '',
+                  value : []
+              };
+
+              
+
+              
+
+              // This method is responsible for drawing the graph, returns the drawn network
+              function drawGraph() {
+                  var container = document.getElementById('mynetwork');
+
+                  
+
+                  // parsing and collecting nodes and edges from the python
+                  nodes = new vis.DataSet([{"category": "large enterprises", "color": "#F58518", "font": {"size": 18}, "helix": "Industry", "id": "fujitsu", "label": "Fujitsu", "shape": "dot", "size": 18, "title": "\u003cb\u003eFujitsu\u003c/b\u003e\u003cbr\u003eHelix: Industry\u003cbr\u003eCategory: large enterprises\u003cbr\u003eReview: False"}, {"category": "universities", "color": "#4C78A8", "font": {"size": 18}, "helix": "Academia", "id": "university of osaka", "label": "University of Osaka", "shape": "dot", "size": 18, "title": "\u003cb\u003eUniversity of Osaka\u003c/b\u003e\u003cbr\u003eHelix: Academia\u003cbr\u003eCategory: universities\u003cbr\u003eReview: False"}, {"category": "technology", "color": "#999999", "font": {"size": 18}, "helix": "Unknown", "id": "qulacs", "label": "Qulacs", "shape": "dot", "size": 18, "title": "\u003cb\u003eQulacs\u003c/b\u003e\u003cbr\u003eHelix: Unknown\u003cbr\u003eCategory: technology\u003cbr\u003eReview: True"}, {"category": "universities", "color": "#4C78A8", "font": {"size": 18}, "helix": "Academia", "id": "osaka university", "label": "Osaka University", "shape": "dot", "size": 18, "title": "\u003cb\u003eOsaka University\u003c/b\u003e\u003cbr\u003eHelix: Academia\u003cbr\u003eCategory: universities\u003cbr\u003eReview: False"}, {"category": "large enterprises", "color": "#F58518", "font": {"size": 18}, "helix": "Industry", "id": "qunasys", "label": "QunaSys", "shape": "dot", "size": 18, "title": "\u003cb\u003eQunaSys\u003c/b\u003e\u003cbr\u003eHelix: Industry\u003cbr\u003eCategory: large enterprises\u003cbr\u003eReview: False"}, {"category": "research institutes", "color": "#4C78A8", "font": {"size": 18}, "helix": "Academia", "id": "hon hai research institute", "label": "Hon Hai Research Institute", "shape": "dot", "size": 18, "title": "\u003cb\u003eHon Hai Research Institute\u003c/b\u003e\u003cbr\u003eHelix: Academia\u003cbr\u003eCategory: research institutes\u003cbr\u003eReview: False"}, {"category": "media and cultural institutions", "color": "#B279A2", "font": {"size": 18}, "helix": "Civil Society", "id": "physical review research", "label": "Physical Review Research", "shape": "dot", "size": 18, "title": "\u003cb\u003ePhysical Review Research\u003c/b\u003e\u003cbr\u003eHelix: Civil Society\u003cbr\u003eCategory: media and cultural institutions\u003cbr\u003eReview: False"}, {"category": "large enterprises", "color": "#F58518", "font": {"size": 18}, "helix": "Industry", "id": "cortex discovery", "label": "Cortex Discovery", "shape": "dot", "size": 18, "title": "\u003cb\u003eCortex Discovery\u003c/b\u003e\u003cbr\u003eHelix: Industry\u003cbr\u003eCategory: large enterprises\u003cbr\u003eReview: False"}, {"category": "supranational government institutions", "color": "#54A24B", "font": {"size": 18}, "helix": "Government", "id": "european union", "label": "European Union", "shape": "dot", "size": 18, "title": "\u003cb\u003eEuropean Union\u003c/b\u003e\u003cbr\u003eHelix: Government\u003cbr\u003eCategory: supranational government institutions\u003cbr\u003eReview: False"}, {"category": "small and medium-sized enterprises", "color": "#F58518", "font": {"size": 18}, "helix": "Industry", "id": "1qbit", "label": "1QBit", "shape": "dot", "size": 18, "title": "\u003cb\u003e1QBit\u003c/b\u003e\u003cbr\u003eHelix: Industry\u003cbr\u003eCategory: small and medium-sized enterprises\u003cbr\u003eReview: False"}, {"category": "large enterprises", "color": "#F58518", "font": {"size": 18}, "helix": "Industry", "id": "qunasys europe", "label": "QunaSys Europe (QunaSys Denmark ApS)", "shape": "dot", "size": 18, "title": "\u003cb\u003eQunaSys Europe (QunaSys Denmark ApS)\u003c/b\u003e\u003cbr\u003eHelix: Industry\u003cbr\u003eCategory: large enterprises\u003cbr\u003eReview: False"}, {"category": "business support institutions", "color": "#E45756", "font": {"size": 18}, "helix": "Intermediary", "id": "q neko", "label": "Q-Neko", "shape": "dot", "size": 18, "title": "\u003cb\u003eQ-Neko\u003c/b\u003e\u003cbr\u003eHelix: Intermediary\u003cbr\u003eCategory: business support institutions\u003cbr\u003eReview: False"}, {"category": "large enterprises", "color": "#F58518", "font": {"size": 18}, "helix": "Industry", "id": "qunasys inc", "label": "QunaSys Inc.", "shape": "dot", "size": 18, "title": "\u003cb\u003eQunaSys Inc.\u003c/b\u003e\u003cbr\u003eHelix: Industry\u003cbr\u003eCategory: large enterprises\u003cbr\u003eReview: False"}, {"category": "large enterprises", "color": "#F58518", "font": {"size": 18}, "helix": "Industry", "id": "softbank corp", "label": "SoftBank Corp.", "shape": "dot", "size": 18, "title": "\u003cb\u003eSoftBank Corp.\u003c/b\u003e\u003cbr\u003eHelix: Industry\u003cbr\u003eCategory: large enterprises\u003cbr\u003eReview: False"}, {"category": "individual", "color": "#F58518", "font": {"size": 18}, "helix": "Industry", "id": "tennin yan", "label": "Tennin Yan", "shape": "dot", "size": 18, "title": "\u003cb\u003eTennin Yan\u003c/b\u003e\u003cbr\u003eHelix: Industry\u003cbr\u003eCategory: individual\u003cbr\u003eReview: True"}, {"category": "individual", "color": "#F58518", "font": {"size": 18}, "helix": "Industry", "id": "prof keisuke fujii", "label": "Prof. Keisuke Fujii", "shape": "dot", "size": 18, "title": "\u003cb\u003eProf. Keisuke Fujii\u003c/b\u003e\u003cbr\u003eHelix: Industry\u003cbr\u003eCategory: individual\u003cbr\u003eReview: True"}, {"category": "individual", "color": "#999999", "font": {"size": 18}, "helix": "Unknown", "id": "adam weso owski", "label": "Adam Weso\u0142owski", "shape": "dot", "size": 18, "title": "\u003cb\u003eAdam Weso\u0142owski\u003c/b\u003e\u003cbr\u003eHelix: Unknown\u003cbr\u003eCategory: individual\u003cbr\u003eReview: True"}, {"category": "individual", "color": "#999999", "font": {"size": 18}, "helix": "Unknown", "id": "akahoshi", "label": "Akahoshi", "shape": "dot", "size": 18, "title": "\u003cb\u003eAkahoshi\u003c/b\u003e\u003cbr\u003eHelix: Unknown\u003cbr\u003eCategory: individual\u003cbr\u003eReview: True"}, {"category": "individual", "color": "#999999", "font": {"size": 18}, "helix": "Unknown", "id": "akahoshi et al", "label": "Akahoshi et al.", "shape": "dot", "size": 18, "title": "\u003cb\u003eAkahoshi et al.\u003c/b\u003e\u003cbr\u003eHelix: Unknown\u003cbr\u003eCategory: individual\u003cbr\u003eReview: True"}, {"category": "individual", "color": "#999999", "font": {"size": 18}, "helix": "Unknown", "id": "ali h z kavaki", "label": "Ali H. Z. Kavaki", "shape": "dot", "size": 18, "title": "\u003cb\u003eAli H. Z. Kavaki\u003c/b\u003e\u003cbr\u003eHelix: Unknown\u003cbr\u003eCategory: individual\u003cbr\u003eReview: True"}, {"category": "large enterprises", "color": "#F58518", "font": {"size": 18}, "helix": "Industry", "id": "boston consulting group", "label": "Boston Consulting Group (BCG)", "shape": "dot", "size": 18, "title": "\u003cb\u003eBoston Consulting Group (BCG)\u003c/b\u003e\u003cbr\u003eHelix: Industry\u003cbr\u003eCategory: large enterprises\u003cbr\u003eReview: False"}, {"category": "individual", "color": "#999999", "font": {"size": 18}, "helix": "Unknown", "id": "ceo", "label": "CEO", "shape": "dot", "size": 18, "title": "\u003cb\u003eCEO\u003c/b\u003e\u003cbr\u003eHelix: Unknown\u003cbr\u003eCategory: individual\u003cbr\u003eReview: True"}, {"category": "individual", "color": "#999999", "font": {"size": 18}, "helix": "Unknown", "id": "chung m z", "label": "Chung, M.-Z.", "shape": "dot", "size": 18, "title": "\u003cb\u003eChung, M.-Z.\u003c/b\u003e\u003cbr\u003eHelix: Unknown\u003cbr\u003eCategory: individual\u003cbr\u003eReview: True"}, {"category": "large enterprises", "color": "#F58518", "font": {"size": 18}, "helix": "Industry", "id": "deloitte", "label": "Deloitte", "shape": "dot", "size": 18, "title": "\u003cb\u003eDeloitte\u003c/b\u003e\u003cbr\u003eHelix: Industry\u003cbr\u003eCategory: large enterprises\u003cbr\u003eReview: False"}, {"category": "large enterprises", "color": "#F58518", "font": {"size": 18}, "helix": "Industry", "id": "eneos corporation", "label": "ENEOS Corporation", "shape": "dot", "size": 18, "title": "\u003cb\u003eENEOS Corporation\u003c/b\u003e\u003cbr\u003eHelix: Industry\u003cbr\u003eCategory: large enterprises\u003cbr\u003eReview: False"}, {"category": "corporate labs", "color": "#F58518", "font": {"size": 18}, "helix": "Industry", "id": "fujitsu laboratories", "label": "Fujitsu Laboratories", "shape": "dot", "size": 18, "title": "\u003cb\u003eFujitsu Laboratories\u003c/b\u003e\u003cbr\u003eHelix: Industry\u003cbr\u003eCategory: corporate labs\u003cbr\u003eReview: False"}, {"category": "large enterprises", "color": "#F58518", "font": {"size": 18}, "helix": "Industry", "id": "google ai quantum", "label": "Google AI Quantum", "shape": "dot", "size": 18, "title": "\u003cb\u003eGoogle AI Quantum\u003c/b\u003e\u003cbr\u003eHelix: Industry\u003cbr\u003eCategory: large enterprises\u003cbr\u003eReview: False"}, {"category": "corporate labs", "color": "#F58518", "font": {"size": 18}, "helix": "Industry", "id": "google quantum ai", "label": "Google Quantum AI", "shape": "dot", "size": 18, "title": "\u003cb\u003eGoogle Quantum AI\u003c/b\u003e\u003cbr\u003eHelix: Industry\u003cbr\u003eCategory: corporate labs\u003cbr\u003eReview: False"}, {"category": "individual", "color": "#999999", "font": {"size": 18}, "helix": "Unknown", "id": "hayato higuchi", "label": "Hayato Higuchi", "shape": "dot", "size": 18, "title": "\u003cb\u003eHayato Higuchi\u003c/b\u003e\u003cbr\u003eHelix: Unknown\u003cbr\u003eCategory: individual\u003cbr\u003eReview: True"}, {"category": "individual", "color": "#999999", "font": {"size": 18}, "helix": "Unknown", "id": "hiromu abe", "label": "Hiromu Abe", "shape": "dot", "size": 18, "title": "\u003cb\u003eHiromu Abe\u003c/b\u003e\u003cbr\u003eHelix: Unknown\u003cbr\u003eCategory: individual\u003cbr\u003eReview: True"}, {"category": "individual", "color": "#999999", "font": {"size": 18}, "helix": "Unknown", "id": "hokuto iwakiri", "label": "Hokuto Iwakiri", "shape": "dot", "size": 18, "title": "\u003cb\u003eHokuto Iwakiri\u003c/b\u003e\u003cbr\u003eHelix: Unknown\u003cbr\u003eCategory: individual\u003cbr\u003eReview: True"}, {"category": "individual", "color": "#999999", "font": {"size": 18}, "helix": "Unknown", "id": "hubert okadome valencia", "label": "Hubert Okadome Valencia", "shape": "dot", "size": 18, "title": "\u003cb\u003eHubert Okadome Valencia\u003c/b\u003e\u003cbr\u003eHelix: Unknown\u003cbr\u003eCategory: individual\u003cbr\u003eReview: True"}, {"category": "large enterprises", "color": "#F58518", "font": {"size": 18}, "helix": "Industry", "id": "ibm", "label": "IBM", "shape": "dot", "size": 18, "title": "\u003cb\u003eIBM\u003c/b\u003e\u003cbr\u003eHelix: Industry\u003cbr\u003eCategory: large enterprises\u003cbr\u003eReview: False"}, {"category": "financial support institutions", "color": "#E45756", "font": {"size": 18}, "helix": "Intermediary", "id": "innovation fund denmark", "label": "Innovation Fund Denmark", "shape": "dot", "size": 18, "title": "\u003cb\u003eInnovation Fund Denmark\u003c/b\u003e\u003cbr\u003eHelix: Intermediary\u003cbr\u003eCategory: financial support institutions\u003cbr\u003eReview: False"}, {"category": "large enterprises", "color": "#F58518", "font": {"size": 18}, "helix": "Industry", "id": "ionq", "label": "IonQ", "shape": "dot", "size": 18, "title": "\u003cb\u003eIonQ\u003c/b\u003e\u003cbr\u003eHelix: Industry\u003cbr\u003eCategory: large enterprises\u003cbr\u003eReview: False"}, {"category": "individual", "color": "#999999", "font": {"size": 18}, "helix": "Unknown", "id": "james pegg", "label": "James Pegg", "shape": "dot", "size": 18, "title": "\u003cb\u003eJames Pegg\u003c/b\u003e\u003cbr\u003eHelix: Unknown\u003cbr\u003eCategory: individual\u003cbr\u003eReview: True"}, {"category": "large enterprises", "color": "#F58518", "font": {"size": 18}, "helix": "Industry", "id": "jsr corporation", "label": "JSR Corporation", "shape": "dot", "size": 18, "title": "\u003cb\u003eJSR Corporation\u003c/b\u003e\u003cbr\u003eHelix: Industry\u003cbr\u003eCategory: large enterprises\u003cbr\u003eReview: False"}, {"category": "individual", "color": "#999999", "font": {"size": 18}, "helix": "Unknown", "id": "kazumasa ueno", "label": "Kazumasa Ueno", "shape": "dot", "size": 18, "title": "\u003cb\u003eKazumasa Ueno\u003c/b\u003e\u003cbr\u003eHelix: Unknown\u003cbr\u003eCategory: individual\u003cbr\u003eReview: True"}, {"category": "individual", "color": "#999999", "font": {"size": 18}, "helix": "Unknown", "id": "keita kanno", "label": "Keita Kanno", "shape": "dot", "size": 18, "title": "\u003cb\u003eKeita Kanno\u003c/b\u003e\u003cbr\u003eHelix: Unknown\u003cbr\u003eCategory: individual\u003cbr\u003eReview: True"}, {"category": "universities", "color": "#4C78A8", "font": {"size": 18}, "helix": "Academia", "id": "kyoto university", "label": "Kyoto University", "shape": "dot", "size": 18, "title": "\u003cb\u003eKyoto University\u003c/b\u003e\u003cbr\u003eHelix: Academia\u003cbr\u003eCategory: universities\u003cbr\u003eReview: False"}, {"category": "individual", "color": "#999999", "font": {"size": 18}, "helix": "Unknown", "id": "m e s morales", "label": "M. E. S. Morales", "shape": "dot", "size": 18, "title": "\u003cb\u003eM. E. S. Morales\u003c/b\u003e\u003cbr\u003eHelix: Unknown\u003cbr\u003eCategory: individual\u003cbr\u003eReview: True"}, {"category": "individual", "color": "#999999", "font": {"size": 18}, "helix": "Unknown", "id": "mathias mikkelsen", "label": "Mathias Mikkelsen", "shape": "dot", "size": 18, "title": "\u003cb\u003eMathias Mikkelsen\u003c/b\u003e\u003cbr\u003eHelix: Unknown\u003cbr\u003eCategory: individual\u003cbr\u003eReview: True"}, {"category": "individual", "color": "#999999", "font": {"size": 18}, "helix": "Unknown", "id": "ming zhi chung", "label": "Ming-Zhi Chung", "shape": "dot", "size": 18, "title": "\u003cb\u003eMing-Zhi Chung\u003c/b\u003e\u003cbr\u003eHelix: Unknown\u003cbr\u003eCategory: individual\u003cbr\u003eReview: True"}, {"category": "research institutes", "color": "#4C78A8", "font": {"size": 18}, "helix": "Academia", "id": "prof keisuke fujii s group", "label": "Prof. Keisuke Fujii\u0027s group", "shape": "dot", "size": 18, "title": "\u003cb\u003eProf. Keisuke Fujii\u0027s group\u003c/b\u003e\u003cbr\u003eHelix: Academia\u003cbr\u003eCategory: research institutes\u003cbr\u003eReview: False"}, {"category": "research institutes", "color": "#4C78A8", "font": {"size": 18}, "helix": "Academia", "id": "qparc", "label": "QPARC", "shape": "dot", "size": 18, "title": "\u003cb\u003eQPARC\u003c/b\u003e\u003cbr\u003eHelix: Academia\u003cbr\u003eCategory: research institutes\u003cbr\u003eReview: False"}, {"category": "large enterprises", "color": "#F58518", "font": {"size": 18}, "helix": "Industry", "id": "qunasis", "label": "Qunasis", "shape": "dot", "size": 18, "title": "\u003cb\u003eQunasis\u003c/b\u003e\u003cbr\u003eHelix: Industry\u003cbr\u003eCategory: large enterprises\u003cbr\u003eReview: False"}, {"category": "large enterprises", "color": "#F58518", "font": {"size": 18}, "helix": "Industry", "id": "repsol", "label": "Repsol", "shape": "dot", "size": 18, "title": "\u003cb\u003eRepsol\u003c/b\u003e\u003cbr\u003eHelix: Industry\u003cbr\u003eCategory: large enterprises\u003cbr\u003eReview: False"}, {"category": "individual", "color": "#999999", "font": {"size": 18}, "helix": "Unknown", "id": "ronin wu", "label": "Ronin Wu", "shape": "dot", "size": 18, "title": "\u003cb\u003eRonin Wu\u003c/b\u003e\u003cbr\u003eHelix: Unknown\u003cbr\u003eCategory: individual\u003cbr\u003eReview: True"}, {"category": "joint research centers", "color": "#E45756", "font": {"size": 18}, "helix": "Intermediary", "id": "sdqs", "label": "SDQs", "shape": "dot", "size": 18, "title": "\u003cb\u003eSDQs\u003c/b\u003e\u003cbr\u003eHelix: Intermediary\u003cbr\u003eCategory: joint research centers\u003cbr\u003eReview: False"}, {"category": "individual", "color": "#999999", "font": {"size": 18}, "helix": "Unknown", "id": "shoichiro tsutsui", "label": "Shoichiro Tsutsui", "shape": "dot", "size": 18, "title": "\u003cb\u003eShoichiro Tsutsui\u003c/b\u003e\u003cbr\u003eHelix: Unknown\u003cbr\u003eCategory: individual\u003cbr\u003eReview: True"}, {"category": "individual", "color": "#999999", "font": {"size": 18}, "helix": "Unknown", "id": "shota kanasugi", "label": "Shota Kanasugi", "shape": "dot", "size": 18, "title": "\u003cb\u003eShota Kanasugi\u003c/b\u003e\u003cbr\u003eHelix: Unknown\u003cbr\u003eCategory: individual\u003cbr\u003eReview: True"}, {"category": "individual", "color": "#999999", "font": {"size": 18}, "helix": "Unknown", "id": "tomoyo matsuoka", "label": "Tomoyo Matsuoka", "shape": "dot", "size": 18, "title": "\u003cb\u003eTomoyo Matsuoka\u003c/b\u003e\u003cbr\u003eHelix: Unknown\u003cbr\u003eCategory: individual\u003cbr\u003eReview: True"}, {"category": "individual", "color": "#999999", "font": {"size": 18}, "helix": "Unknown", "id": "toshio", "label": "Toshio", "shape": "dot", "size": 18, "title": "\u003cb\u003eToshio\u003c/b\u003e\u003cbr\u003eHelix: Unknown\u003cbr\u003eCategory: individual\u003cbr\u003eReview: True"}, {"category": "individual", "color": "#999999", "font": {"size": 18}, "helix": "Unknown", "id": "toshio akahoshi fujii et al", "label": "Toshio, Akahoshi, Fujii et al.", "shape": "dot", "size": 18, "title": "\u003cb\u003eToshio, Akahoshi, Fujii et al.\u003c/b\u003e\u003cbr\u003eHelix: Unknown\u003cbr\u003eCategory: individual\u003cbr\u003eReview: True"}, {"category": "universities", "color": "#4C78A8", "font": {"size": 18}, "helix": "Academia", "id": "universities", "label": "universities", "shape": "dot", "size": 18, "title": "\u003cb\u003euniversities\u003c/b\u003e\u003cbr\u003eHelix: Academia\u003cbr\u003eCategory: universities\u003cbr\u003eReview: False"}, {"category": "individual", "color": "#999999", "font": {"size": 18}, "helix": "Unknown", "id": "yohei ibe", "label": "Yohei Ibe", "shape": "dot", "size": 18, "title": "\u003cb\u003eYohei Ibe\u003c/b\u003e\u003cbr\u003eHelix: Unknown\u003cbr\u003eCategory: individual\u003cbr\u003eReview: True"}, {"category": "individual", "color": "#999999", "font": {"size": 18}, "helix": "Unknown", "id": "yoshihiro ochi", "label": "Yoshihiro Ochi", "shape": "dot", "size": 18, "title": "\u003cb\u003eYoshihiro Ochi\u003c/b\u003e\u003cbr\u003eHelix: Unknown\u003cbr\u003eCategory: individual\u003cbr\u003eReview: True"}, {"category": "individual", "color": "#999999", "font": {"size": 18}, "helix": "Unknown", "id": "yuki ito", "label": "Yuki Ito", "shape": "dot", "size": 18, "title": "\u003cb\u003eYuki Ito\u003c/b\u003e\u003cbr\u003eHelix: Unknown\u003cbr\u003eCategory: individual\u003cbr\u003eReview: True"}, {"category": "individual", "color": "#999999", "font": {"size": 18}, "helix": "Unknown", "id": "yutaka hirano", "label": "Yutaka Hirano", "shape": "dot", "size": 18, "title": "\u003cb\u003eYutaka Hirano\u003c/b\u003e\u003cbr\u003eHelix: Unknown\u003cbr\u003eCategory: individual\u003cbr\u003eReview: True"}, {"category": "individual", "color": "#999999", "font": {"size": 18}, "helix": "Unknown", "id": "yuya o nakagawa", "label": "Yuya O. Nakagawa", "shape": "dot", "size": 18, "title": "\u003cb\u003eYuya O. Nakagawa\u003c/b\u003e\u003cbr\u003eHelix: Unknown\u003cbr\u003eCategory: individual\u003cbr\u003eReview: True"}, {"category": "large enterprises", "color": "#F58518", "font": {"size": 18}, "helix": "Industry", "id": "zeon", "label": "ZEON", "shape": "dot", "size": 18, "title": "\u003cb\u003eZEON\u003c/b\u003e\u003cbr\u003eHelix: Industry\u003cbr\u003eCategory: large enterprises\u003cbr\u003eReview: False"}]);
+                  edges = new vis.DataSet([{"arrows": "to", "color": "#2563EB", "from": "fujitsu", "label": "collaborative_leadership", "title": "\u003cb\u003ecollaborative_leadership\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Innovation\u003cbr\u003ePage: 9\u003cbr\u003ePhrase: Fujitsu and The University of Osaka", "to": "university of osaka", "width": 2}, {"arrows": "to", "color": "#D97706", "from": "qulacs", "label": "technology_transfer", "title": "\u003cb\u003etechnology_transfer\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Unknown\u003cbr\u003ePage: 7\u003cbr\u003ePhrase: Originally developed by the [ Fujii Laboratory at Osaka University ]", "to": "osaka university", "width": 2}, {"arrows": "to", "color": "#2563EB", "from": "qunasys", "label": "collaborative_leadership", "title": "\u003cb\u003ecollaborative_leadership\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Innovation\u003cbr\u003ePage: 7\u003cbr\u003ePhrase: joint research paper", "to": "hon hai research institute", "width": 2}, {"arrows": "to", "color": "#2563EB", "from": "qunasys", "label": "collaborative_leadership", "title": "\u003cb\u003ecollaborative_leadership\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Public\u003cbr\u003ePage: 7\u003cbr\u003ePhrase: joint research paper", "to": "physical review research", "width": 2}, {"arrows": "to", "color": "#6B7280", "from": "qunasys", "label": "networking", "title": "\u003cb\u003enetworking\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Intra-helix / Not classified\u003cbr\u003ePage: 8\u003cbr\u003ePhrase: the QuEnAIS Consortium, comprising Cortex Discovery, Fraunhofer ITWM\u0027s High Performance Computing (HPC)", "to": "cortex discovery", "width": 2}, {"arrows": "to", "color": "#2563EB", "from": "qunasys", "label": "collaborative_leadership", "title": "\u003cb\u003ecollaborative_leadership\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Consensus\u003cbr\u003ePage: 12\u003cbr\u003ePhrase: participation in the **FULL-MAP** project", "to": "european union", "width": 2}, {"arrows": "to", "color": "#D97706", "from": "qunasys", "label": "technology_transfer", "title": "\u003cb\u003etechnology_transfer\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Unknown\u003cbr\u003ePage: 7\u003cbr\u003ePhrase: maintained and further extended by QunaSys", "to": "qulacs", "width": 2}, {"arrows": "to", "color": "#6B7280", "from": "qunasys", "label": "networking", "title": "\u003cb\u003enetworking\u003c/b\u003e\u003cbr\u003eConfidence: medium\u003cbr\u003eFunctional space: Intra-helix / Not classified\u003cbr\u003ePage: 4\u003cbr\u003ePhrase: a collaboration between QunaSys, 1QBit, Qolab, and HPE Quantum", "to": "1qbit", "width": 2}, {"arrows": "to", "color": "#6B7280", "from": "qunasys europe", "label": "networking", "title": "\u003cb\u003enetworking\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Innovation\u003cbr\u003ePage: 5\u003cbr\u003ePhrase: are participating in", "to": "q neko", "width": 2}, {"arrows": "to", "color": "#2563EB", "from": "qunasys inc", "label": "collaborative_leadership", "title": "\u003cb\u003ecollaborative_leadership\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Intra-helix / Not classified\u003cbr\u003ePage: 3\u003cbr\u003ePhrase: hereinafter \"QunaSys\"", "to": "qunasys", "width": 2}, {"arrows": "to", "color": "#6B7280", "from": "qunasys inc", "label": "networking", "title": "\u003cb\u003enetworking\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Innovation\u003cbr\u003ePage: 5\u003cbr\u003ePhrase: are participating in", "to": "q neko", "width": 2}, {"arrows": "to", "color": "#6B7280", "from": "qunasys inc", "label": "networking", "title": "\u003cb\u003enetworking\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Intra-helix / Not classified\u003cbr\u003ePage: 6\u003cbr\u003ePhrase: jointly published", "to": "softbank corp", "width": 2}, {"arrows": "to", "color": "#2563EB", "from": "tennin yan", "label": "collaborative_leadership", "title": "\u003cb\u003ecollaborative_leadership\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Intra-helix / Not classified\u003cbr\u003ePage: 3\u003cbr\u003ePhrase: an encounter with", "to": "prof keisuke fujii", "width": 2}, {"arrows": "to", "color": "#2563EB", "from": "tennin yan", "label": "collaborative_leadership", "title": "\u003cb\u003ecollaborative_leadership\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Intra-helix / Not classified\u003cbr\u003ePage: 5\u003cbr\u003ePhrase: Co-founded QunaSys with Tennin Yan", "to": "qunasys", "width": 2}]);
+
+                  nodeColors = {};
+                  allNodes = nodes.get({ returnType: "Object" });
+                  for (nodeId in allNodes) {
+                    nodeColors[nodeId] = allNodes[nodeId].color;
+                  }
+                  allEdges = edges.get({ returnType: "Object" });
+                  // adding nodes and edges to the graph
+                  data = {nodes: nodes, edges: edges};
+
+                  var options = {"physics": {"barnesHut": {"gravitationalConstant": -8000, "centralGravity": 0.3, "springLength": 180, "springConstant": 0.04}, "minVelocity": 0.75}, "interaction": {"hover": true, "navigationButtons": true, "keyboard": true}};
+
+                  
+
+
+                  
+
+                  network = new vis.Network(container, data, options);
+
+                  
+
+                  
+
+                  
+
+
+                  
+
+                  return network;
+
+              }
+              drawGraph();
+        </script>
+    </body>
+</html>

@@ -1,0 +1,321 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+            <script>function neighbourhoodHighlight(params) {
+  // console.log("in nieghbourhoodhighlight");
+  allNodes = nodes.get({ returnType: "Object" });
+  // originalNodes = JSON.parse(JSON.stringify(allNodes));
+  // if something is selected:
+  if (params.nodes.length > 0) {
+    highlightActive = true;
+    var i, j;
+    var selectedNode = params.nodes[0];
+    var degrees = 2;
+
+    // mark all nodes as hard to read.
+    for (let nodeId in allNodes) {
+      // nodeColors[nodeId] = allNodes[nodeId].color;
+      allNodes[nodeId].color = "rgba(200,200,200,0.5)";
+      if (allNodes[nodeId].hiddenLabel === undefined) {
+        allNodes[nodeId].hiddenLabel = allNodes[nodeId].label;
+        allNodes[nodeId].label = undefined;
+      }
+    }
+    var connectedNodes = network.getConnectedNodes(selectedNode);
+    var allConnectedNodes = [];
+
+    // get the second degree nodes
+    for (i = 1; i < degrees; i++) {
+      for (j = 0; j < connectedNodes.length; j++) {
+        allConnectedNodes = allConnectedNodes.concat(
+          network.getConnectedNodes(connectedNodes[j])
+        );
+      }
+    }
+
+    // all second degree nodes get a different color and their label back
+    for (i = 0; i < allConnectedNodes.length; i++) {
+      // allNodes[allConnectedNodes[i]].color = "pink";
+      allNodes[allConnectedNodes[i]].color = "rgba(150,150,150,0.75)";
+      if (allNodes[allConnectedNodes[i]].hiddenLabel !== undefined) {
+        allNodes[allConnectedNodes[i]].label =
+          allNodes[allConnectedNodes[i]].hiddenLabel;
+        allNodes[allConnectedNodes[i]].hiddenLabel = undefined;
+      }
+    }
+
+    // all first degree nodes get their own color and their label back
+    for (i = 0; i < connectedNodes.length; i++) {
+      // allNodes[connectedNodes[i]].color = undefined;
+      allNodes[connectedNodes[i]].color = nodeColors[connectedNodes[i]];
+      if (allNodes[connectedNodes[i]].hiddenLabel !== undefined) {
+        allNodes[connectedNodes[i]].label =
+          allNodes[connectedNodes[i]].hiddenLabel;
+        allNodes[connectedNodes[i]].hiddenLabel = undefined;
+      }
+    }
+
+    // the main node gets its own color and its label back.
+    // allNodes[selectedNode].color = undefined;
+    allNodes[selectedNode].color = nodeColors[selectedNode];
+    if (allNodes[selectedNode].hiddenLabel !== undefined) {
+      allNodes[selectedNode].label = allNodes[selectedNode].hiddenLabel;
+      allNodes[selectedNode].hiddenLabel = undefined;
+    }
+  } else if (highlightActive === true) {
+    // console.log("highlightActive was true");
+    // reset all nodes
+    for (let nodeId in allNodes) {
+      // allNodes[nodeId].color = "purple";
+      allNodes[nodeId].color = nodeColors[nodeId];
+      // delete allNodes[nodeId].color;
+      if (allNodes[nodeId].hiddenLabel !== undefined) {
+        allNodes[nodeId].label = allNodes[nodeId].hiddenLabel;
+        allNodes[nodeId].hiddenLabel = undefined;
+      }
+    }
+    highlightActive = false;
+  }
+
+  // transform the object into an array
+  var updateArray = [];
+  if (params.nodes.length > 0) {
+    for (let nodeId in allNodes) {
+      if (allNodes.hasOwnProperty(nodeId)) {
+        // console.log(allNodes[nodeId]);
+        updateArray.push(allNodes[nodeId]);
+      }
+    }
+    nodes.update(updateArray);
+  } else {
+    // console.log("Nothing was selected");
+    for (let nodeId in allNodes) {
+      if (allNodes.hasOwnProperty(nodeId)) {
+        // console.log(allNodes[nodeId]);
+        // allNodes[nodeId].color = {};
+        updateArray.push(allNodes[nodeId]);
+      }
+    }
+    nodes.update(updateArray);
+  }
+}
+
+function filterHighlight(params) {
+  allNodes = nodes.get({ returnType: "Object" });
+  // if something is selected:
+  if (params.nodes.length > 0) {
+    filterActive = true;
+    let selectedNodes = params.nodes;
+
+    // hiding all nodes and saving the label
+    for (let nodeId in allNodes) {
+      allNodes[nodeId].hidden = true;
+      if (allNodes[nodeId].savedLabel === undefined) {
+        allNodes[nodeId].savedLabel = allNodes[nodeId].label;
+        allNodes[nodeId].label = undefined;
+      }
+    }
+
+    for (let i=0; i < selectedNodes.length; i++) {
+      allNodes[selectedNodes[i]].hidden = false;
+      if (allNodes[selectedNodes[i]].savedLabel !== undefined) {
+        allNodes[selectedNodes[i]].label = allNodes[selectedNodes[i]].savedLabel;
+        allNodes[selectedNodes[i]].savedLabel = undefined;
+      }
+    }
+
+  } else if (filterActive === true) {
+    // reset all nodes
+    for (let nodeId in allNodes) {
+      allNodes[nodeId].hidden = false;
+      if (allNodes[nodeId].savedLabel !== undefined) {
+        allNodes[nodeId].label = allNodes[nodeId].savedLabel;
+        allNodes[nodeId].savedLabel = undefined;
+      }
+    }
+    filterActive = false;
+  }
+
+  // transform the object into an array
+  var updateArray = [];
+  if (params.nodes.length > 0) {
+    for (let nodeId in allNodes) {
+      if (allNodes.hasOwnProperty(nodeId)) {
+        updateArray.push(allNodes[nodeId]);
+      }
+    }
+    nodes.update(updateArray);
+  } else {
+    for (let nodeId in allNodes) {
+      if (allNodes.hasOwnProperty(nodeId)) {
+        updateArray.push(allNodes[nodeId]);
+      }
+    }
+    nodes.update(updateArray);
+  }
+}
+
+function selectNode(nodes) {
+  network.selectNodes(nodes);
+  neighbourhoodHighlight({ nodes: nodes });
+  return nodes;
+}
+
+function selectNodes(nodes) {
+  network.selectNodes(nodes);
+  filterHighlight({nodes: nodes});
+  return nodes;
+}
+
+function highlightFilter(filter) {
+  let selectedNodes = []
+  let selectedProp = filter['property']
+  if (filter['item'] === 'node') {
+    let allNodes = nodes.get({ returnType: "Object" });
+    for (let nodeId in allNodes) {
+      if (allNodes[nodeId][selectedProp] && filter['value'].includes((allNodes[nodeId][selectedProp]).toString())) {
+        selectedNodes.push(nodeId)
+      }
+    }
+  }
+  else if (filter['item'] === 'edge'){
+    let allEdges = edges.get({returnType: 'object'});
+    // check if the selected property exists for selected edge and select the nodes connected to the edge
+    for (let edge in allEdges) {
+      if (allEdges[edge][selectedProp] && filter['value'].includes((allEdges[edge][selectedProp]).toString())) {
+        selectedNodes.push(allEdges[edge]['from'])
+        selectedNodes.push(allEdges[edge]['to'])
+      }
+    }
+  }
+  selectNodes(selectedNodes)
+}</script>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/dist/vis-network.min.css" integrity="sha512-WgxfT5LWjfszlPHXRmBWHkV2eceiWTOBvrKCNbdgDYTHrT2AeLCGbF4sZlZw3UMN3WtL0tGUoIAKsu8mllg/XA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/vis-network.min.js" integrity="sha512-LnvoEWDFrqGHlHmDD2101OrLcbsfkrzoSpvtSQtxK3RMnRV0eOkhhBN2dXHKRrUU8p2DGRTk35n4O8nWSVe1mQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            
+            
+            
+            
+            
+            
+
+        
+<center>
+<h1></h1>
+</center>
+
+<!-- <link rel="stylesheet" href="../node_modules/vis/dist/vis.min.css" type="text/css" />
+<script type="text/javascript" src="../node_modules/vis/dist/vis.js"> </script>-->
+        <link
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+          crossorigin="anonymous"
+        />
+        <script
+          src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+          crossorigin="anonymous"
+        ></script>
+
+
+        <center>
+          <h1></h1>
+        </center>
+        <style type="text/css">
+
+             #mynetwork {
+                 width: 100%;
+                 height: 850px;
+                 background-color: #ffffff;
+                 border: 1px solid lightgray;
+                 position: relative;
+                 float: left;
+             }
+
+             
+
+             
+
+             
+        </style>
+    </head>
+
+
+    <body>
+        <div class="card" style="width: 100%">
+            
+            
+            <div id="mynetwork" class="card-body"></div>
+        </div>
+
+        
+        
+
+        <script type="text/javascript">
+
+              // initialize global variables.
+              var edges;
+              var nodes;
+              var allNodes;
+              var allEdges;
+              var nodeColors;
+              var originalNodes;
+              var network;
+              var container;
+              var options, data;
+              var filter = {
+                  item : '',
+                  property : '',
+                  value : []
+              };
+
+              
+
+              
+
+              // This method is responsible for drawing the graph, returns the drawn network
+              function drawGraph() {
+                  var container = document.getElementById('mynetwork');
+
+                  
+
+                  // parsing and collecting nodes and edges from the python
+                  nodes = new vis.DataSet([{"category": "large enterprises", "color": "#F58518", "font": {"size": 18}, "helix": "Industry", "id": "bt", "label": "BT", "shape": "dot", "size": 18, "title": "\u003cb\u003eBT\u003c/b\u003e\u003cbr\u003eHelix: Industry\u003cbr\u003eCategory: large enterprises\u003cbr\u003eReview: False"}, {"category": "large enterprises", "color": "#F58518", "font": {"size": 18}, "helix": "Industry", "id": "kets", "label": "KETS", "shape": "dot", "size": 18, "title": "\u003cb\u003eKETS\u003c/b\u003e\u003cbr\u003eHelix: Industry\u003cbr\u003eCategory: large enterprises\u003cbr\u003eReview: False"}, {"category": "national government institutions", "color": "#54A24B", "font": {"size": 18}, "helix": "Government", "id": "cisa", "label": "CISA", "shape": "dot", "size": 18, "title": "\u003cb\u003eCISA\u003c/b\u003e\u003cbr\u003eHelix: Government\u003cbr\u003eCategory: national government institutions\u003cbr\u003eReview: False"}, {"category": "country", "color": "#999999", "font": {"size": 18}, "helix": "Unknown", "id": "us", "label": "US", "shape": "dot", "size": 18, "title": "\u003cb\u003eUS\u003c/b\u003e\u003cbr\u003eHelix: Unknown\u003cbr\u003eCategory: country\u003cbr\u003eReview: True"}, {"category": "supranational government institutions", "color": "#54A24B", "font": {"size": 18}, "helix": "Government", "id": "etsi", "label": "ETSI", "shape": "dot", "size": 18, "title": "\u003cb\u003eETSI\u003c/b\u003e\u003cbr\u003eHelix: Government\u003cbr\u003eCategory: supranational government institutions\u003cbr\u003eReview: False"}, {"category": "national government institutions", "color": "#54A24B", "font": {"size": 18}, "helix": "Government", "id": "innovate uk", "label": "Innovate UK", "shape": "dot", "size": 18, "title": "\u003cb\u003eInnovate UK\u003c/b\u003e\u003cbr\u003eHelix: Government\u003cbr\u003eCategory: national government institutions\u003cbr\u003eReview: False"}, {"category": "large enterprises", "color": "#F58518", "font": {"size": 18}, "helix": "Industry", "id": "cryptonext security", "label": "Cryptonext Security", "shape": "dot", "size": 18, "title": "\u003cb\u003eCryptonext Security\u003c/b\u003e\u003cbr\u003eHelix: Industry\u003cbr\u003eCategory: large enterprises\u003cbr\u003eReview: False"}, {"category": "large enterprises", "color": "#F58518", "font": {"size": 18}, "helix": "Industry", "id": "airbus", "label": "Airbus", "shape": "dot", "size": 18, "title": "\u003cb\u003eAirbus\u003c/b\u003e\u003cbr\u003eHelix: Industry\u003cbr\u003eCategory: large enterprises\u003cbr\u003eReview: False"}, {"category": "small and medium-sized enterprises", "color": "#F58518", "font": {"size": 18}, "helix": "Industry", "id": "kets quantum security", "label": "KETS Quantum Security", "shape": "dot", "size": 18, "title": "\u003cb\u003eKETS Quantum Security\u003c/b\u003e\u003cbr\u003eHelix: Industry\u003cbr\u003eCategory: small and medium-sized enterprises\u003cbr\u003eReview: False"}, {"category": "large enterprises", "color": "#F58518", "font": {"size": 18}, "helix": "Industry", "id": "thales", "label": "Thales", "shape": "dot", "size": 18, "title": "\u003cb\u003eThales\u003c/b\u003e\u003cbr\u003eHelix: Industry\u003cbr\u003eCategory: large enterprises\u003cbr\u003eReview: False"}, {"category": "individual", "color": "#999999", "font": {"size": 18}, "helix": "Unknown", "id": "admin", "label": "admin", "shape": "dot", "size": 18, "title": "\u003cb\u003eadmin\u003c/b\u003e\u003cbr\u003eHelix: Unknown\u003cbr\u003eCategory: individual\u003cbr\u003eReview: True"}, {"category": "large enterprises", "color": "#F58518", "font": {"size": 18}, "helix": "Industry", "id": "barclays", "label": "Barclays", "shape": "dot", "size": 18, "title": "\u003cb\u003eBarclays\u003c/b\u003e\u003cbr\u003eHelix: Industry\u003cbr\u003eCategory: large enterprises\u003cbr\u003eReview: False"}, {"category": "media and cultural institutions", "color": "#B279A2", "font": {"size": 18}, "helix": "Civil Society", "id": "bbc", "label": "BBC", "shape": "dot", "size": 18, "title": "\u003cb\u003eBBC\u003c/b\u003e\u003cbr\u003eHelix: Civil Society\u003cbr\u003eCategory: media and cultural institutions\u003cbr\u003eReview: False"}, {"category": "individual", "color": "#999999", "font": {"size": 18}, "helix": "Unknown", "id": "charles shaw", "label": "Charles Shaw", "shape": "dot", "size": 18, "title": "\u003cb\u003eCharles Shaw\u003c/b\u003e\u003cbr\u003eHelix: Unknown\u003cbr\u003eCategory: individual\u003cbr\u003eReview: True"}, {"category": "entrepreneurial scientist", "color": "#E45756", "font": {"size": 18}, "helix": "Intermediary", "id": "chris erven", "label": "Chris Erven", "shape": "dot", "size": 18, "title": "\u003cb\u003eChris Erven\u003c/b\u003e\u003cbr\u003eHelix: Intermediary\u003cbr\u003eCategory: entrepreneurial scientist\u003cbr\u003eReview: False"}, {"category": "business support institutions", "color": "#E45756", "font": {"size": 18}, "helix": "Intermediary", "id": "creative destruction lab", "label": "Creative Destruction Lab", "shape": "dot", "size": 18, "title": "\u003cb\u003eCreative Destruction Lab\u003c/b\u003e\u003cbr\u003eHelix: Intermediary\u003cbr\u003eCategory: business support institutions\u003cbr\u003eReview: False"}, {"category": "individual", "color": "#999999", "font": {"size": 18}, "helix": "Unknown", "id": "dr peter shor", "label": "Dr. Peter Shor", "shape": "dot", "size": 18, "title": "\u003cb\u003eDr. Peter Shor\u003c/b\u003e\u003cbr\u003eHelix: Unknown\u003cbr\u003eCategory: individual\u003cbr\u003eReview: True"}, {"category": "small and medium-sized enterprises", "color": "#F58518", "font": {"size": 18}, "helix": "Industry", "id": "evolutionq", "label": "evolutionQ", "shape": "dot", "size": 18, "title": "\u003cb\u003eevolutionQ\u003c/b\u003e\u003cbr\u003eHelix: Industry\u003cbr\u003eCategory: small and medium-sized enterprises\u003cbr\u003eReview: False"}, {"category": "research institutes", "color": "#4C78A8", "font": {"size": 18}, "helix": "Academia", "id": "fact based insight", "label": "Fact Based Insight", "shape": "dot", "size": 18, "title": "\u003cb\u003eFact Based Insight\u003c/b\u003e\u003cbr\u003eHelix: Academia\u003cbr\u003eCategory: research institutes\u003cbr\u003eReview: False"}, {"category": "national government institutions", "color": "#54A24B", "font": {"size": 18}, "helix": "Government", "id": "gchq", "label": "GCHQ", "shape": "dot", "size": 18, "title": "\u003cb\u003eGCHQ\u003c/b\u003e\u003cbr\u003eHelix: Government\u003cbr\u003eCategory: national government institutions\u003cbr\u003eReview: False"}, {"category": "research institutes", "color": "#4C78A8", "font": {"size": 18}, "helix": "Academia", "id": "institute for quantum computing", "label": "Institute for Quantum Computing", "shape": "dot", "size": 18, "title": "\u003cb\u003eInstitute for Quantum Computing\u003c/b\u003e\u003cbr\u003eHelix: Academia\u003cbr\u003eCategory: research institutes\u003cbr\u003eReview: False"}, {"category": "large enterprises", "color": "#F58518", "font": {"size": 18}, "helix": "Industry", "id": "intel", "label": "Intel", "shape": "dot", "size": 18, "title": "\u003cb\u003eIntel\u003c/b\u003e\u003cbr\u003eHelix: Industry\u003cbr\u003eCategory: large enterprises\u003cbr\u003eReview: False"}, {"category": "large enterprises", "color": "#F58518", "font": {"size": 18}, "helix": "Industry", "id": "kets quantum", "label": "KETS Quantum", "shape": "dot", "size": 18, "title": "\u003cb\u003eKETS Quantum\u003c/b\u003e\u003cbr\u003eHelix: Industry\u003cbr\u003eCategory: large enterprises\u003cbr\u003eReview: False"}, {"category": "individual", "color": "#999999", "font": {"size": 18}, "helix": "Unknown", "id": "lisa matthews", "label": "Lisa Matthews", "shape": "dot", "size": 18, "title": "\u003cb\u003eLisa Matthews\u003c/b\u003e\u003cbr\u003eHelix: Unknown\u003cbr\u003eCategory: individual\u003cbr\u003eReview: True"}, {"category": "research institutes", "color": "#4C78A8", "font": {"size": 18}, "helix": "Academia", "id": "national physical laboratory", "label": "National Physical Laboratory (NPL)", "shape": "dot", "size": 18, "title": "\u003cb\u003eNational Physical Laboratory (NPL)\u003c/b\u003e\u003cbr\u003eHelix: Academia\u003cbr\u003eCategory: research institutes\u003cbr\u003eReview: False"}, {"category": "supranational government institutions", "color": "#54A24B", "font": {"size": 18}, "helix": "Government", "id": "nato", "label": "NATO", "shape": "dot", "size": 18, "title": "\u003cb\u003eNATO\u003c/b\u003e\u003cbr\u003eHelix: Government\u003cbr\u003eCategory: supranational government institutions\u003cbr\u003eReview: False"}, {"category": "national government institutions", "color": "#54A24B", "font": {"size": 18}, "helix": "Government", "id": "ncsc", "label": "NCSC", "shape": "dot", "size": 18, "title": "\u003cb\u003eNCSC\u003c/b\u003e\u003cbr\u003eHelix: Government\u003cbr\u003eCategory: national government institutions\u003cbr\u003eReview: False"}, {"category": "large enterprises", "color": "#F58518", "font": {"size": 18}, "helix": "Industry", "id": "netflix", "label": "Netflix", "shape": "dot", "size": 18, "title": "\u003cb\u003eNetflix\u003c/b\u003e\u003cbr\u003eHelix: Industry\u003cbr\u003eCategory: large enterprises\u003cbr\u003eReview: False"}, {"category": "national government institutions", "color": "#54A24B", "font": {"size": 18}, "helix": "Government", "id": "nist", "label": "NIST", "shape": "dot", "size": 18, "title": "\u003cb\u003eNIST\u003c/b\u003e\u003cbr\u003eHelix: Government\u003cbr\u003eCategory: national government institutions\u003cbr\u003eReview: True"}, {"category": "large enterprises", "color": "#F58518", "font": {"size": 18}, "helix": "Industry", "id": "nokia", "label": "Nokia", "shape": "dot", "size": 18, "title": "\u003cb\u003eNokia\u003c/b\u003e\u003cbr\u003eHelix: Industry\u003cbr\u003eCategory: large enterprises\u003cbr\u003eReview: False"}, {"category": "individual", "color": "#999999", "font": {"size": 18}, "helix": "Unknown", "id": "patrick buckle", "label": "Patrick Buckle", "shape": "dot", "size": 18, "title": "\u003cb\u003ePatrick Buckle\u003c/b\u003e\u003cbr\u003eHelix: Unknown\u003cbr\u003eCategory: individual\u003cbr\u003eReview: True"}, {"category": "individual", "color": "#999999", "font": {"size": 18}, "helix": "Unknown", "id": "peter shor", "label": "Peter Shor", "shape": "dot", "size": 18, "title": "\u003cb\u003ePeter Shor\u003c/b\u003e\u003cbr\u003eHelix: Unknown\u003cbr\u003eCategory: individual\u003cbr\u003eReview: True"}, {"category": "individual", "color": "#4C78A8", "font": {"size": 18}, "helix": "Academia", "id": "prof michele mosca", "label": "Prof. Michele Mosca", "shape": "dot", "size": 18, "title": "\u003cb\u003eProf. Michele Mosca\u003c/b\u003e\u003cbr\u003eHelix: Academia\u003cbr\u003eCategory: individual\u003cbr\u003eReview: True"}, {"category": "financial support institutions", "color": "#E45756", "font": {"size": 18}, "helix": "Intermediary", "id": "quantonation", "label": "Quantonation", "shape": "dot", "size": 18, "title": "\u003cb\u003eQuantonation\u003c/b\u003e\u003cbr\u003eHelix: Intermediary\u003cbr\u003eCategory: financial support institutions\u003cbr\u003eReview: False"}, {"category": "small and medium-sized enterprises", "color": "#F58518", "font": {"size": 18}, "helix": "Industry", "id": "regetti", "label": "Regetti", "shape": "dot", "size": 18, "title": "\u003cb\u003eRegetti\u003c/b\u003e\u003cbr\u003eHelix: Industry\u003cbr\u003eCategory: small and medium-sized enterprises\u003cbr\u003eReview: False"}, {"category": "large enterprises", "color": "#F58518", "font": {"size": 18}, "helix": "Industry", "id": "rigetti", "label": "Rigetti", "shape": "dot", "size": 18, "title": "\u003cb\u003eRigetti\u003c/b\u003e\u003cbr\u003eHelix: Industry\u003cbr\u003eCategory: large enterprises\u003cbr\u003eReview: False"}, {"category": "universities", "color": "#4C78A8", "font": {"size": 18}, "helix": "Academia", "id": "rotman school of management", "label": "Rotman School of Management", "shape": "dot", "size": 18, "title": "\u003cb\u003eRotman School of Management\u003c/b\u003e\u003cbr\u003eHelix: Academia\u003cbr\u003eCategory: universities\u003cbr\u003eReview: False"}, {"category": "large enterprises", "color": "#F58518", "font": {"size": 18}, "helix": "Industry", "id": "sony", "label": "Sony", "shape": "dot", "size": 18, "title": "\u003cb\u003eSony\u003c/b\u003e\u003cbr\u003eHelix: Industry\u003cbr\u003eCategory: large enterprises\u003cbr\u003eReview: False"}, {"category": "country", "color": "#999999", "font": {"size": 18}, "helix": "Unknown", "id": "uk", "label": "UK", "shape": "dot", "size": 18, "title": "\u003cb\u003eUK\u003c/b\u003e\u003cbr\u003eHelix: Unknown\u003cbr\u003eCategory: country\u003cbr\u003eReview: True"}, {"category": "universities", "color": "#4C78A8", "font": {"size": 18}, "helix": "Academia", "id": "university of bristol", "label": "University of Bristol", "shape": "dot", "size": 18, "title": "\u003cb\u003eUniversity of Bristol\u003c/b\u003e\u003cbr\u003eHelix: Academia\u003cbr\u003eCategory: universities\u003cbr\u003eReview: False"}, {"category": "national government institutions", "color": "#54A24B", "font": {"size": 18}, "helix": "Government", "id": "us national security agency", "label": "US National Security Agency (NSA)", "shape": "dot", "size": 18, "title": "\u003cb\u003eUS National Security Agency (NSA)\u003c/b\u003e\u003cbr\u003eHelix: Government\u003cbr\u003eCategory: national government institutions\u003cbr\u003eReview: False"}, {"category": "supranational government institutions", "color": "#54A24B", "font": {"size": 18}, "helix": "Government", "id": "world economic forum", "label": "World Economic Forum", "shape": "dot", "size": 18, "title": "\u003cb\u003eWorld Economic Forum\u003c/b\u003e\u003cbr\u003eHelix: Government\u003cbr\u003eCategory: supranational government institutions\u003cbr\u003eReview: False"}, {"category": "large enterprises", "color": "#F58518", "font": {"size": 18}, "helix": "Industry", "id": "xbox", "label": "Xbox", "shape": "dot", "size": 18, "title": "\u003cb\u003eXbox\u003c/b\u003e\u003cbr\u003eHelix: Industry\u003cbr\u003eCategory: large enterprises\u003cbr\u003eReview: False"}, {"category": "individual", "color": "#999999", "font": {"size": 18}, "helix": "Unknown", "id": "yuval noah harari", "label": "Yuval Noah Harari", "shape": "dot", "size": 18, "title": "\u003cb\u003eYuval Noah Harari\u003c/b\u003e\u003cbr\u003eHelix: Unknown\u003cbr\u003eCategory: individual\u003cbr\u003eReview: True"}]);
+                  edges = new vis.DataSet([{"arrows": "to", "color": "#2563EB", "from": "bt", "label": "collaborative_leadership", "title": "\u003cb\u003ecollaborative_leadership\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Intra-helix / Not classified\u003cbr\u003ePage: 8\u003cbr\u003ePhrase: admitted into the UK Telecom Infra Project Ecosystem Acceleration Centre (TEAC), based", "to": "kets", "width": 2}, {"arrows": "to", "color": "#D97706", "from": "cisa", "label": "technology_transfer", "title": "\u003cb\u003etechnology_transfer\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Unknown\u003cbr\u003ePage: 9\u003cbr\u003ePhrase: CISA in the US", "to": "us", "width": 2}, {"arrows": "to", "color": "#6B7280", "from": "kets", "label": "networking", "title": "\u003cb\u003enetworking\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Consensus\u003cbr\u003ePage: 6\u003cbr\u003ePhrase: engaging with ETSI\u0027s and ITU-T\u0027s critical quantum encryption standardisation push", "to": "etsi", "width": 2}, {"arrows": "to", "color": "#2563EB", "from": "kets", "label": "collaborative_leadership", "title": "\u003cb\u003ecollaborative_leadership\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Consensus\u003cbr\u003ePage: 3\u003cbr\u003ePhrase: won a \u00a31.7m contract funded by Innovate UK", "to": "innovate uk", "width": 2}, {"arrows": "to", "color": "#2563EB", "from": "kets", "label": "collaborative_leadership", "title": "\u003cb\u003ecollaborative_leadership\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Intra-helix / Not classified\u003cbr\u003ePage: 10\u003cbr\u003ePhrase: working together", "to": "cryptonext security", "width": 2}, {"arrows": "to", "color": "#2563EB", "from": "kets", "label": "collaborative_leadership", "title": "\u003cb\u003ecollaborative_leadership\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Intra-helix / Not classified\u003cbr\u003ePage: 4\u003cbr\u003ePhrase: worked with Airbus", "to": "airbus", "width": 2}, {"arrows": "to", "color": "#2563EB", "from": "kets quantum security", "label": "collaborative_leadership", "title": "\u003cb\u003ecollaborative_leadership\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Consensus\u003cbr\u003ePage: 7\u003cbr\u003ePhrase: funded by", "to": "innovate uk", "width": 2}, {"arrows": "to", "color": "#2563EB", "from": "kets quantum security", "label": "collaborative_leadership", "title": "\u003cb\u003ecollaborative_leadership\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Intra-helix / Not classified\u003cbr\u003ePage: 11\u003cbr\u003ePhrase: KETS and CryptoNext Security announce partnership", "to": "cryptonext security", "width": 2}, {"arrows": "to", "color": "#2563EB", "from": "kets quantum security", "label": "collaborative_leadership", "title": "\u003cb\u003ecollaborative_leadership\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Intra-helix / Not classified\u003cbr\u003ePage: 8\u003cbr\u003ePhrase: one of eight winners of a major start up initiative run by", "to": "thales", "width": 2}]);
+
+                  nodeColors = {};
+                  allNodes = nodes.get({ returnType: "Object" });
+                  for (nodeId in allNodes) {
+                    nodeColors[nodeId] = allNodes[nodeId].color;
+                  }
+                  allEdges = edges.get({ returnType: "Object" });
+                  // adding nodes and edges to the graph
+                  data = {nodes: nodes, edges: edges};
+
+                  var options = {"physics": {"barnesHut": {"gravitationalConstant": -8000, "centralGravity": 0.3, "springLength": 180, "springConstant": 0.04}, "minVelocity": 0.75}, "interaction": {"hover": true, "navigationButtons": true, "keyboard": true}};
+
+                  
+
+
+                  
+
+                  network = new vis.Network(container, data, options);
+
+                  
+
+                  
+
+                  
+
+
+                  
+
+                  return network;
+
+              }
+              drawGraph();
+        </script>
+    </body>
+</html>

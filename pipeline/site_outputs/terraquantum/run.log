@@ -1,0 +1,45 @@
+
+========================================================================
+RUN STARTED  2026-06-17 15:25:46
+site_pipeline.py https://terraquantum.swiss/
+========================================================================
+
+[15:25:46 +0s | terraquantum] === 0 crawl site ===
+[15:25:49 +2s | terraquantum] [INIT].... → Crawl4AI 0.8.6 
+[15:25:50 +3s | terraquantum] [FETCH]... ↓ https://terraquantum.swiss/                                                                          | ✓ | ⏱: 0.88s 
+[15:25:50 +3s | terraquantum] [SCRAPE].. ◆ https://terraquantum.swiss/                                                                          | ✓ | ⏱: 0.00s 
+[15:25:50 +3s | terraquantum] [COMPLETE] ● https://terraquantum.swiss/                                                                          | ✗ | ⏱: 0.89s 
+[15:25:50 +3s | terraquantum] Saved: crawl_output/454bd6034a_terraquantum.swiss.json
+
+[15:25:50 +4s | terraquantum] === 1 actor extraction ===
+[15:25:50 +4s | terraquantum] Saved 1_actor_results.json with 0 extracted records
+
+[15:25:50 +4s | terraquantum] === 2 clean actors ===
+[15:25:50 +4s | terraquantum] Loaded 0 extracted records
+[15:25:50 +4s | terraquantum] Saved 2_actor_nodes.json with 0 canonical actor nodes
+
+[15:25:50 +4s | terraquantum] === 3 interaction extraction ===
+[15:25:50 +4s | terraquantum] No valid actors found, skipping.
+
+[15:25:50 +4s | terraquantum] === 4 clean interactions ===
+[15:25:50 +4s | terraquantum] No input (3_interaction_results.json missing -- upstream produced no edges). Wrote empty 4_edges.json.
+
+[15:25:50 +4s | terraquantum] === 5 helix enrichment ===
+[15:25:50 +4s | terraquantum] Wrote 5_nodes.json (0 actors)
+[15:25:50 +4s | terraquantum] Wrote 5_edges.json (0 interactions)
+[15:25:50 +4s | terraquantum] Actor helix counts: {}
+[15:25:50 +4s | terraquantum] Functional-space counts: {}
+
+[15:25:50 +4s | terraquantum] === 6 network visualisation ===
+[15:25:51 +5s | terraquantum] Wrote quantum_network.html
+[15:25:51 +5s | terraquantum] Nodes: 0
+[15:25:51 +5s | terraquantum] Edges: 0
+
+[15:25:51 +5s | terraquantum] Done. Outputs written to: /home/lv/IDP/idpdeeptech/pipeline/site_outputs/terraquantum
+[15:25:51 +5s | terraquantum] Log: /home/lv/IDP/idpdeeptech/pipeline/site_outputs/terraquantum/run.log
+
+========================================================================
+RUN FINISHED 2026-06-17 15:25:51  (OK)
+Started:     2026-06-17 15:25:46
+Elapsed:     5s
+========================================================================

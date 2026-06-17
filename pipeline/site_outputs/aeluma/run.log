@@ -1,0 +1,421 @@
+
+========================================================================
+RUN STARTED  2026-06-17 18:26:10
+site_pipeline.py https://www.aeluma.com/
+========================================================================
+
+[18:26:10 +0s | aeluma] === 0 crawl site ===
+[18:26:13 +2s | aeluma] [INIT].... → Crawl4AI 0.8.6 
+[18:26:15 +4s | aeluma] [FETCH]... ↓ https://www.aeluma.com/                                                                              | ✓ | ⏱: 1.95s 
+[18:26:15 +4s | aeluma] [SCRAPE].. ◆ https://www.aeluma.com/                                                                              | ✓ | ⏱: 0.01s 
+[18:26:15 +4s | aeluma] [COMPLETE] ● https://www.aeluma.com/                                                                              | ✓ | ⏱: 1.97s 
+[18:26:16 +5s | aeluma] [FETCH]... ↓ https://www.aeluma.com/                                                                              | ✓ | ⏱: 0.98s 
+[18:26:16 +5s | aeluma] [SCRAPE].. ◆ https://www.aeluma.com/                                                                              | ✓ | ⏱: 0.01s 
+[18:26:16 +5s | aeluma] [COMPLETE] ● https://www.aeluma.com/                                                                              | ✓ | ⏱: 1.01s 
+[18:26:16 +6s | aeluma] [FETCH]... ↓ https://www.aeluma.com/news-media                                                                    | ✓ | ⏱: 1.13s 
+[18:26:16 +6s | aeluma] [SCRAPE].. ◆ https://www.aeluma.com/news-media                                                                    | ✓ | ⏱: 0.02s 
+[18:26:16 +6s | aeluma] [COMPLETE] ● https://www.aeluma.com/news-media                                                                    | ✓ | ⏱: 1.17s 
+[18:26:16 +6s | aeluma] [FETCH]... ↓ https://www.aeluma.com/technology                                                                    | ✓ | ⏱: 1.29s 
+[18:26:16 +6s | aeluma] [SCRAPE].. ◆ https://www.aeluma.com/technology                                                                    | ✓ | ⏱: 0.01s 
+[18:26:16 +6s | aeluma] [COMPLETE] ● https://www.aeluma.com/technology                                                                    | ✓ | ⏱: 1.31s 
+[18:26:17 +7s | aeluma] [FETCH]... ↓ https://www.aeluma.com/investors/ir-calendar                                                         | ✓ | ⏱: 2.07s 
+[18:26:17 +7s | aeluma] [SCRAPE].. ◆ https://www.aeluma.com/investors/ir-calendar                                                         | ✓ | ⏱: 0.03s 
+[18:26:17 +7s | aeluma] [COMPLETE] ● https://www.aeluma.com/investors/ir-calendar                                                         | ✓ | ⏱: 2.12s 
+[18:26:17 +7s | aeluma] [FETCH]... ↓ https://www.aeluma.com/investors/company-information                                                 | ✓ | ⏱: 2.58s 
+[18:26:18 +7s | aeluma] [SCRAPE].. ◆ https://www.aeluma.com/investors/company-information                                                 | ✓ | ⏱: 0.03s 
+[18:26:18 +7s | aeluma] [COMPLETE] ● https://www.aeluma.com/investors/company-information                                                 | ✓ | ⏱: 2.63s 
+[18:26:18 +7s | aeluma] [FETCH]... ↓ https://www.aeluma.com/about/board-of-directors                                                      | ✓ | ⏱: 2.64s 
+[18:26:18 +7s | aeluma] [SCRAPE].. ◆ https://www.aeluma.com/about/board-of-directors                                                      | ✓ | ⏱: 0.02s 
+[18:26:18 +7s | aeluma] [COMPLETE] ● https://www.aeluma.com/about/board-of-directors                                                      | ✓ | ⏱: 2.68s 
+[18:26:18 +8s | aeluma] [FETCH]... ↓ https://www.aeluma.com/about/management-team                                                         | ✓ | ⏱: 2.71s 
+[18:26:18 +8s | aeluma] [SCRAPE].. ◆ https://www.aeluma.com/about/management-team                                                         | ✓ | ⏱: 0.03s 
+[18:26:18 +8s | aeluma] [COMPLETE] ● https://www.aeluma.com/about/management-team                                                         | ✓ | ⏱: 2.76s 
+[18:26:18 +8s | aeluma] [FETCH]... ↓ https://www.aeluma.com/investors                                                                     | ✓ | ⏱: 2.76s 
+[18:26:18 +8s | aeluma] [SCRAPE].. ◆ https://www.aeluma.com/investors                                                                     | ✓ | ⏱: 0.06s 
+[18:26:18 +8s | aeluma] [COMPLETE] ● https://www.aeluma.com/investors                                                                     | ✓ | ⏱: 2.86s 
+[18:26:18 +8s | aeluma] [FETCH]... ↓ https://www.aeluma.com/investors/corporate-governance                                                | ✓ | ⏱: 2.86s 
+[18:26:18 +8s | aeluma] [SCRAPE].. ◆ https://www.aeluma.com/investors/corporate-governance                                                | ✓ | ⏱: 0.08s 
+[18:26:18 +8s | aeluma] [COMPLETE] ● https://www.aeluma.com/investors/corporate-governance                                                | ✓ | ⏱: 2.98s 
+[18:26:18 +8s | aeluma] [FETCH]... ↓ https://www.aeluma.com/news-media/press-releases                                                     | ✓ | ⏱: 3.26s 
+[18:26:18 +8s | aeluma] [SCRAPE].. ◆ https://www.aeluma.com/news-media/press-releases                                                     | ✓ | ⏱: 0.04s 
+[18:26:18 +8s | aeluma] [COMPLETE] ● https://www.aeluma.com/news-media/press-releases                                                     | ✓ | ⏱: 3.31s 
+[18:26:18 +8s | aeluma] [FETCH]... ↓ https://www.aeluma.com/about                                                                         | ✓ | ⏱: 3.33s 
+[18:26:18 +8s | aeluma] [SCRAPE].. ◆ https://www.aeluma.com/about                                                                         | ✓ | ⏱: 0.02s 
+[18:26:18 +8s | aeluma] [COMPLETE] ● https://www.aeluma.com/about                                                                         | ✓ | ⏱: 3.37s 
+[18:26:18 +8s | aeluma] [FETCH]... ↓ https://www.aeluma.com/news-media/in-the-news                                                        | ✓ | ⏱: 3.39s 
+[18:26:18 +8s | aeluma] [SCRAPE].. ◆ https://www.aeluma.com/news-media/in-the-news                                                        | ✓ | ⏱: 0.02s 
+[18:26:18 +8s | aeluma] [COMPLETE] ● https://www.aeluma.com/news-media/in-the-news                                                        | ✓ | ⏱: 3.42s 
+[18:26:18 +8s | aeluma] [FETCH]... ↓ https://www.aeluma.com/careers                                                                       | ✓ | ⏱: 3.43s 
+[18:26:18 +8s | aeluma] [SCRAPE].. ◆ https://www.aeluma.com/careers                                                                       | ✓ | ⏱: 0.01s 
+[18:26:18 +8s | aeluma] [COMPLETE] ● https://www.aeluma.com/careers                                                                       | ✓ | ⏱: 3.45s 
+[18:26:18 +8s | aeluma] [FETCH]... ↓ https://www.aeluma.com/investors/financial-information                                               | ✓ | ⏱: 3.46s 
+[18:26:18 +8s | aeluma] [SCRAPE].. ◆ https://www.aeluma.com/investors/financial-information                                               | ✓ | ⏱: 0.02s 
+[18:26:18 +8s | aeluma] [COMPLETE] ● https://www.aeluma.com/investors/financial-information                                               | ✓ | ⏱: 3.49s 
+[18:26:18 +8s | aeluma] [FETCH]... ↓ https://www.aeluma.com/news-media/blog                                                               | ✓ | ⏱: 3.50s 
+[18:26:18 +8s | aeluma] [SCRAPE].. ◆ https://www.aeluma.com/news-media/blog                                                               | ✓ | ⏱: 0.01s 
+[18:26:18 +8s | aeluma] [COMPLETE] ● https://www.aeluma.com/news-media/blog                                                               | ✓ | ⏱: 3.52s 
+[18:26:18 +8s | aeluma] [FETCH]... ↓ https://www.aeluma.com/about/certification-compliance                                                | ✓ | ⏱: 3.60s 
+[18:26:19 +8s | aeluma] [SCRAPE].. ◆ https://www.aeluma.com/about/certification-compliance                                                | ✓ | ⏱: 0.02s 
+[18:26:19 +8s | aeluma] [COMPLETE] ● https://www.aeluma.com/about/certification-compliance                                                | ✓ | ⏱: 3.63s 
+[18:26:19 +8s | aeluma] [FETCH]... ↓ https://www.aeluma.com/investors/sec-filings                                                         | ✓ | ⏱: 3.63s 
+[18:26:19 +8s | aeluma] [SCRAPE].. ◆ https://www.aeluma.com/investors/sec-filings                                                         | ✓ | ⏱: 0.03s 
+[18:26:19 +8s | aeluma] [COMPLETE] ● https://www.aeluma.com/investors/sec-filings                                                         | ✓ | ⏱: 3.67s 
+[18:26:19 +8s | aeluma] [FETCH]... ↓ https://www.aeluma.com/contact                                                                       | ✓ | ⏱: 3.67s 
+[18:26:19 +8s | aeluma] [SCRAPE].. ◆ https://www.aeluma.com/contact                                                                       | ✓ | ⏱: 0.01s 
+[18:26:19 +8s | aeluma] [COMPLETE] ● https://www.aeluma.com/contact                                                                       | ✓ | ⏱: 3.70s 
+[18:26:19 +9s | aeluma] [FETCH]... ↓ https://www.aeluma.com/investors/stock-data                                                          | ✓ | ⏱: 4.31s 
+[18:26:19 +9s | aeluma] [SCRAPE].. ◆ https://www.aeluma.com/investors/stock-data                                                          | ✓ | ⏱: 0.02s 
+[18:26:19 +9s | aeluma] [COMPLETE] ● https://www.aeluma.com/investors/stock-data                                                          | ✓ | ⏱: 4.34s 
+[18:26:19 +9s | aeluma] Saved: crawl_output/0d14b66909_www.aeluma.com.json
+[18:26:19 +9s | aeluma] Duplicate skipped: https://www.aeluma.com
+[18:26:19 +9s | aeluma] Saved: crawl_output/3d2ed71c02_www.aeluma.com_news-media.json
+[18:26:19 +9s | aeluma] Saved: crawl_output/87399fb250_www.aeluma.com_technology.json
+[18:26:19 +9s | aeluma] Saved: crawl_output/9c4c1bf344_www.aeluma.com_investors_ir-calendar.json
+[18:26:19 +9s | aeluma] Saved: crawl_output/f5c4e269b9_www.aeluma.com_investors_company-information.json
+[18:26:19 +9s | aeluma] Saved: crawl_output/c11092f636_www.aeluma.com_about_board-of-directors.json
+[18:26:19 +9s | aeluma] Saved: crawl_output/ed3efe8b1f_www.aeluma.com_about_management-team.json
+[18:26:19 +9s | aeluma] Saved: crawl_output/c5e6ffc24c_www.aeluma.com_investors.json
+[18:26:19 +9s | aeluma] Saved: crawl_output/770a2ac25c_www.aeluma.com_investors_corporate-governance.json
+[18:26:19 +9s | aeluma] Saved: crawl_output/ed2e7c1ec5_www.aeluma.com_news-media_press-releases.json
+[18:26:19 +9s | aeluma] Saved: crawl_output/60d5e9d677_www.aeluma.com_about.json
+[18:26:19 +9s | aeluma] Saved: crawl_output/809fc5a8f2_www.aeluma.com_news-media_in-the-news.json
+[18:26:19 +9s | aeluma] Saved: crawl_output/0c5ed2da7f_www.aeluma.com_careers.json
+[18:26:19 +9s | aeluma] Saved: crawl_output/fcf5f25219_www.aeluma.com_investors_financial-information.json
+[18:26:19 +9s | aeluma] Saved: crawl_output/7f26e4f475_www.aeluma.com_news-media_blog.json
+[18:26:19 +9s | aeluma] Saved: crawl_output/beec449360_www.aeluma.com_about_certification-compliance.json
+[18:26:19 +9s | aeluma] Saved: crawl_output/8aa359da78_www.aeluma.com_investors_sec-filings.json
+[18:26:19 +9s | aeluma] Saved: crawl_output/cabde1eaab_www.aeluma.com_contact.json
+[18:26:19 +9s | aeluma] Saved: crawl_output/787ac5adf8_www.aeluma.com_investors_stock-data.json
+
+[18:26:20 +9s | aeluma] === 1 actor extraction ===
+[18:26:20 +10s | aeluma] Reading page (1/19): https://www.aeluma.com/careers
+[18:26:20 +10s | aeluma] Extracting: https://www.aeluma.com/careers (1/19), chunk 1/11
+[18:26:25 +15s | aeluma] Extracting: https://www.aeluma.com/careers (1/19), chunk 2/11
+[18:26:30 +20s | aeluma] Extracting: https://www.aeluma.com/careers (1/19), chunk 3/11
+[18:26:35 +25s | aeluma] Extracting: https://www.aeluma.com/careers (1/19), chunk 4/11
+[18:26:42 +32s | aeluma] Extracting: https://www.aeluma.com/careers (1/19), chunk 5/11
+[18:26:52 +41s | aeluma] Repaired malformed JSON.
+[18:26:52 +41s | aeluma] Extracting: https://www.aeluma.com/careers (1/19), chunk 6/11
+[18:26:59 +49s | aeluma] Repaired malformed JSON.
+[18:26:59 +49s | aeluma] Extracting: https://www.aeluma.com/careers (1/19), chunk 7/11
+[18:27:07 +57s | aeluma] Repaired malformed JSON.
+[18:27:07 +57s | aeluma] Extracting: https://www.aeluma.com/careers (1/19), chunk 8/11
+[18:27:17 +1m 6s | aeluma] Repaired malformed JSON.
+[18:27:17 +1m 6s | aeluma] Extracting: https://www.aeluma.com/careers (1/19), chunk 9/11
+[18:27:22 +1m 12s | aeluma] Extracting: https://www.aeluma.com/careers (1/19), chunk 10/11
+[18:27:30 +1m 19s | aeluma] Repaired malformed JSON.
+[18:27:30 +1m 19s | aeluma] Extracting: https://www.aeluma.com/careers (1/19), chunk 11/11
+[18:27:35 +1m 25s | aeluma] Reading page (2/19): https://www.aeluma.com
+[18:27:35 +1m 25s | aeluma] Extracting: https://www.aeluma.com (2/19), chunk 1/6
+[18:27:40 +1m 30s | aeluma] Extracting: https://www.aeluma.com (2/19), chunk 2/6
+[18:27:44 +1m 34s | aeluma] Extracting: https://www.aeluma.com (2/19), chunk 3/6
+[18:27:52 +1m 42s | aeluma] Repaired malformed JSON.
+[18:27:52 +1m 42s | aeluma] Extracting: https://www.aeluma.com (2/19), chunk 4/6
+[18:27:58 +1m 48s | aeluma] Repaired malformed JSON.
+[18:27:58 +1m 48s | aeluma] Extracting: https://www.aeluma.com (2/19), chunk 5/6
+[18:28:06 +1m 56s | aeluma] Extracting: https://www.aeluma.com (2/19), chunk 6/6
+[18:28:10 +2m 0s | aeluma] Reading page (3/19): https://www.aeluma.com/news-media
+[18:28:10 +2m 0s | aeluma] Extracting: https://www.aeluma.com/news-media (3/19), chunk 1/6
+[18:28:14 +2m 4s | aeluma] Extracting: https://www.aeluma.com/news-media (3/19), chunk 2/6
+[18:28:19 +2m 9s | aeluma] Extracting: https://www.aeluma.com/news-media (3/19), chunk 3/6
+[18:28:25 +2m 15s | aeluma] Extracting: https://www.aeluma.com/news-media (3/19), chunk 4/6
+[18:28:31 +2m 21s | aeluma] Repaired malformed JSON.
+[18:28:31 +2m 21s | aeluma] Extracting: https://www.aeluma.com/news-media (3/19), chunk 5/6
+[18:28:38 +2m 28s | aeluma] Repaired malformed JSON.
+[18:28:38 +2m 28s | aeluma] Extracting: https://www.aeluma.com/news-media (3/19), chunk 6/6
+[18:28:42 +2m 31s | aeluma] Reading page (4/19): https://www.aeluma.com/about
+[18:28:42 +2m 31s | aeluma] Extracting: https://www.aeluma.com/about (4/19), chunk 1/7
+[18:28:46 +2m 36s | aeluma] Extracting: https://www.aeluma.com/about (4/19), chunk 2/7
+[18:28:53 +2m 42s | aeluma] Extracting: https://www.aeluma.com/about (4/19), chunk 3/7
+[18:28:57 +2m 47s | aeluma] Extracting: https://www.aeluma.com/about (4/19), chunk 4/7
+[18:29:03 +2m 53s | aeluma] Extracting: https://www.aeluma.com/about (4/19), chunk 5/7
+[18:29:09 +2m 59s | aeluma] Extracting: https://www.aeluma.com/about (4/19), chunk 6/7
+[18:29:18 +3m 7s | aeluma] Repaired malformed JSON.
+[18:29:18 +3m 7s | aeluma] Extracting: https://www.aeluma.com/about (4/19), chunk 7/7
+[18:29:22 +3m 12s | aeluma] Reading page (5/19): https://www.aeluma.com/investors/corporate-governance
+[18:29:22 +3m 12s | aeluma] Extracting: https://www.aeluma.com/investors/corporate-governance (5/19), chunk 1/13
+[18:29:27 +3m 17s | aeluma] Extracting: https://www.aeluma.com/investors/corporate-governance (5/19), chunk 2/13
+[18:29:33 +3m 23s | aeluma] Extracting: https://www.aeluma.com/investors/corporate-governance (5/19), chunk 3/13
+[18:29:37 +3m 27s | aeluma] Extracting: https://www.aeluma.com/investors/corporate-governance (5/19), chunk 4/13
+[18:29:41 +3m 30s | aeluma] Extracting: https://www.aeluma.com/investors/corporate-governance (5/19), chunk 5/13
+[18:29:45 +3m 35s | aeluma] Extracting: https://www.aeluma.com/investors/corporate-governance (5/19), chunk 6/13
+[18:29:54 +3m 44s | aeluma] Repaired malformed JSON.
+[18:29:54 +3m 44s | aeluma] Extracting: https://www.aeluma.com/investors/corporate-governance (5/19), chunk 7/13
+[18:30:04 +3m 53s | aeluma] Repaired malformed JSON.
+[18:30:04 +3m 53s | aeluma] Extracting: https://www.aeluma.com/investors/corporate-governance (5/19), chunk 8/13
+[18:30:11 +4m 1s | aeluma] Repaired malformed JSON.
+[18:30:11 +4m 1s | aeluma] Extracting: https://www.aeluma.com/investors/corporate-governance (5/19), chunk 9/13
+[18:30:20 +4m 10s | aeluma] Repaired malformed JSON.
+[18:30:20 +4m 10s | aeluma] Extracting: https://www.aeluma.com/investors/corporate-governance (5/19), chunk 10/13
+[18:30:30 +4m 20s | aeluma] Repaired malformed JSON.
+[18:30:30 +4m 20s | aeluma] Extracting: https://www.aeluma.com/investors/corporate-governance (5/19), chunk 11/13
+[18:30:40 +4m 29s | aeluma] Repaired malformed JSON.
+[18:30:40 +4m 29s | aeluma] Extracting: https://www.aeluma.com/investors/corporate-governance (5/19), chunk 12/13
+[18:30:51 +4m 41s | aeluma] Repaired malformed JSON.
+[18:30:51 +4m 41s | aeluma] Extracting: https://www.aeluma.com/investors/corporate-governance (5/19), chunk 13/13
+[18:30:55 +4m 45s | aeluma] Reading page (6/19): https://www.aeluma.com/investors/stock-data
+[18:30:55 +4m 45s | aeluma] Extracting: https://www.aeluma.com/investors/stock-data (6/19), chunk 1/7
+[18:30:59 +4m 49s | aeluma] Extracting: https://www.aeluma.com/investors/stock-data (6/19), chunk 2/7
+[18:31:05 +4m 55s | aeluma] Extracting: https://www.aeluma.com/investors/stock-data (6/19), chunk 3/7
+[18:31:10 +5m 0s | aeluma] Extracting: https://www.aeluma.com/investors/stock-data (6/19), chunk 4/7
+[18:31:15 +5m 5s | aeluma] Extracting: https://www.aeluma.com/investors/stock-data (6/19), chunk 5/7
+[18:31:20 +5m 10s | aeluma] Extracting: https://www.aeluma.com/investors/stock-data (6/19), chunk 6/7
+[18:31:25 +5m 15s | aeluma] Extracting: https://www.aeluma.com/investors/stock-data (6/19), chunk 7/7
+[18:31:34 +5m 24s | aeluma] Repaired malformed JSON.
+[18:31:34 +5m 24s | aeluma] Reading page (7/19): https://www.aeluma.com/news-media/blog
+[18:31:34 +5m 24s | aeluma] Extracting: https://www.aeluma.com/news-media/blog (7/19), chunk 1/6
+[18:31:40 +5m 30s | aeluma] Extracting: https://www.aeluma.com/news-media/blog (7/19), chunk 2/6
+[18:31:44 +5m 34s | aeluma] Extracting: https://www.aeluma.com/news-media/blog (7/19), chunk 3/6
+[18:31:48 +5m 38s | aeluma] Extracting: https://www.aeluma.com/news-media/blog (7/19), chunk 4/6
+[18:31:57 +5m 47s | aeluma] Repaired malformed JSON.
+[18:31:57 +5m 47s | aeluma] Extracting: https://www.aeluma.com/news-media/blog (7/19), chunk 5/6
+[18:32:07 +5m 57s | aeluma] Repaired malformed JSON.
+[18:32:07 +5m 57s | aeluma] Extracting: https://www.aeluma.com/news-media/blog (7/19), chunk 6/6
+[18:32:13 +6m 3s | aeluma] Reading page (8/19): https://www.aeluma.com/news-media/in-the-news
+[18:32:13 +6m 3s | aeluma] Extracting: https://www.aeluma.com/news-media/in-the-news (8/19), chunk 1/6
+[18:32:20 +6m 10s | aeluma] Extracting: https://www.aeluma.com/news-media/in-the-news (8/19), chunk 2/6
+[18:32:24 +6m 14s | aeluma] Extracting: https://www.aeluma.com/news-media/in-the-news (8/19), chunk 3/6
+[18:32:29 +6m 19s | aeluma] Extracting: https://www.aeluma.com/news-media/in-the-news (8/19), chunk 4/6
+[18:32:37 +6m 26s | aeluma] Repaired malformed JSON.
+[18:32:37 +6m 26s | aeluma] Extracting: https://www.aeluma.com/news-media/in-the-news (8/19), chunk 5/6
+[18:32:45 +6m 35s | aeluma] Repaired malformed JSON.
+[18:32:45 +6m 35s | aeluma] Extracting: https://www.aeluma.com/news-media/in-the-news (8/19), chunk 6/6
+[18:32:51 +6m 41s | aeluma] Reading page (9/19): https://www.aeluma.com/technology
+[18:32:51 +6m 41s | aeluma] Extracting: https://www.aeluma.com/technology (9/19), chunk 1/5
+[18:32:56 +6m 45s | aeluma] Extracting: https://www.aeluma.com/technology (9/19), chunk 2/5
+[18:33:00 +6m 50s | aeluma] Extracting: https://www.aeluma.com/technology (9/19), chunk 3/5
+[18:33:07 +6m 57s | aeluma] Repaired malformed JSON.
+[18:33:07 +6m 57s | aeluma] Extracting: https://www.aeluma.com/technology (9/19), chunk 4/5
+[18:33:14 +7m 3s | aeluma] Repaired malformed JSON.
+[18:33:14 +7m 3s | aeluma] Extracting: https://www.aeluma.com/technology (9/19), chunk 5/5
+[18:33:22 +7m 12s | aeluma] Reading page (10/19): https://www.aeluma.com/investors/sec-filings
+[18:33:22 +7m 12s | aeluma] Extracting: https://www.aeluma.com/investors/sec-filings (10/19), chunk 1/9
+[18:33:27 +7m 17s | aeluma] Extracting: https://www.aeluma.com/investors/sec-filings (10/19), chunk 2/9
+[18:33:34 +7m 24s | aeluma] Extracting: https://www.aeluma.com/investors/sec-filings (10/19), chunk 3/9
+[18:33:39 +7m 28s | aeluma] Extracting: https://www.aeluma.com/investors/sec-filings (10/19), chunk 4/9
+[18:33:43 +7m 33s | aeluma] Extracting: https://www.aeluma.com/investors/sec-filings (10/19), chunk 5/9
+[18:33:47 +7m 37s | aeluma] Extracting: https://www.aeluma.com/investors/sec-filings (10/19), chunk 6/9
+[18:33:56 +7m 45s | aeluma] Extracting: https://www.aeluma.com/investors/sec-filings (10/19), chunk 7/9
+[18:33:59 +7m 49s | aeluma] Extracting: https://www.aeluma.com/investors/sec-filings (10/19), chunk 8/9
+[18:34:06 +7m 56s | aeluma] Repaired malformed JSON.
+[18:34:06 +7m 56s | aeluma] Extracting: https://www.aeluma.com/investors/sec-filings (10/19), chunk 9/9
+[18:34:13 +8m 3s | aeluma] Reading page (11/19): https://www.aeluma.com/investors/ir-calendar
+[18:34:13 +8m 3s | aeluma] Extracting: https://www.aeluma.com/investors/ir-calendar (11/19), chunk 1/7
+[18:34:16 +8m 6s | aeluma] Extracting: https://www.aeluma.com/investors/ir-calendar (11/19), chunk 2/7
+[18:34:24 +8m 14s | aeluma] Extracting: https://www.aeluma.com/investors/ir-calendar (11/19), chunk 3/7
+[18:34:29 +8m 19s | aeluma] Extracting: https://www.aeluma.com/investors/ir-calendar (11/19), chunk 4/7
+[18:34:33 +8m 23s | aeluma] Extracting: https://www.aeluma.com/investors/ir-calendar (11/19), chunk 5/7
+[18:34:39 +8m 29s | aeluma] Repaired malformed JSON.
+[18:34:39 +8m 29s | aeluma] Extracting: https://www.aeluma.com/investors/ir-calendar (11/19), chunk 6/7
+[18:34:45 +8m 35s | aeluma] Repaired malformed JSON.
+[18:34:45 +8m 35s | aeluma] Extracting: https://www.aeluma.com/investors/ir-calendar (11/19), chunk 7/7
+[18:34:49 +8m 39s | aeluma] Reading page (12/19): https://www.aeluma.com/about/certification-compliance
+[18:34:49 +8m 39s | aeluma] Extracting: https://www.aeluma.com/about/certification-compliance (12/19), chunk 1/5
+[18:34:54 +8m 44s | aeluma] Extracting: https://www.aeluma.com/about/certification-compliance (12/19), chunk 2/5
+[18:34:59 +8m 49s | aeluma] Extracting: https://www.aeluma.com/about/certification-compliance (12/19), chunk 3/5
+[18:35:04 +8m 54s | aeluma] Extracting: https://www.aeluma.com/about/certification-compliance (12/19), chunk 4/5
+[18:35:12 +9m 2s | aeluma] Repaired malformed JSON.
+[18:35:12 +9m 2s | aeluma] Extracting: https://www.aeluma.com/about/certification-compliance (12/19), chunk 5/5
+[18:35:16 +9m 6s | aeluma] Reading page (13/19): https://www.aeluma.com/about/board-of-directors
+[18:35:16 +9m 6s | aeluma] Extracting: https://www.aeluma.com/about/board-of-directors (13/19), chunk 1/9
+[18:35:21 +9m 11s | aeluma] Extracting: https://www.aeluma.com/about/board-of-directors (13/19), chunk 2/9
+[18:35:28 +9m 18s | aeluma] Extracting: https://www.aeluma.com/about/board-of-directors (13/19), chunk 3/9
+[18:35:31 +9m 21s | aeluma] Extracting: https://www.aeluma.com/about/board-of-directors (13/19), chunk 4/9
+[18:35:40 +9m 30s | aeluma] Repaired malformed JSON.
+[18:35:40 +9m 30s | aeluma] Extracting: https://www.aeluma.com/about/board-of-directors (13/19), chunk 5/9
+[18:35:45 +9m 35s | aeluma] Repaired malformed JSON.
+[18:35:45 +9m 35s | aeluma] Extracting: https://www.aeluma.com/about/board-of-directors (13/19), chunk 6/9
+[18:35:55 +9m 44s | aeluma] Repaired malformed JSON.
+[18:35:55 +9m 44s | aeluma] Extracting: https://www.aeluma.com/about/board-of-directors (13/19), chunk 7/9
+[18:36:03 +9m 53s | aeluma] Repaired malformed JSON.
+[18:36:03 +9m 53s | aeluma] Extracting: https://www.aeluma.com/about/board-of-directors (13/19), chunk 8/9
+[18:36:12 +10m 1s | aeluma] Repaired malformed JSON.
+[18:36:12 +10m 1s | aeluma] Extracting: https://www.aeluma.com/about/board-of-directors (13/19), chunk 9/9
+[18:36:18 +10m 8s | aeluma] Repaired malformed JSON.
+[18:36:18 +10m 8s | aeluma] Reading page (14/19): https://www.aeluma.com/investors
+[18:36:18 +10m 8s | aeluma] Extracting: https://www.aeluma.com/investors (14/19), chunk 1/9
+[18:36:23 +10m 12s | aeluma] Extracting: https://www.aeluma.com/investors (14/19), chunk 2/9
+[18:36:30 +10m 20s | aeluma] Extracting: https://www.aeluma.com/investors (14/19), chunk 3/9
+[18:36:36 +10m 26s | aeluma] Extracting: https://www.aeluma.com/investors (14/19), chunk 4/9
+[18:36:42 +10m 32s | aeluma] Extracting: https://www.aeluma.com/investors (14/19), chunk 5/9
+[18:36:50 +10m 40s | aeluma] Repaired malformed JSON.
+[18:36:50 +10m 40s | aeluma] Extracting: https://www.aeluma.com/investors (14/19), chunk 6/9
+[18:37:00 +10m 50s | aeluma] Repaired malformed JSON.
+[18:37:00 +10m 50s | aeluma] Extracting: https://www.aeluma.com/investors (14/19), chunk 7/9
+[18:37:06 +10m 56s | aeluma] Extracting: https://www.aeluma.com/investors (14/19), chunk 8/9
+[18:37:12 +11m 1s | aeluma] Repaired malformed JSON.
+[18:37:12 +11m 1s | aeluma] Extracting: https://www.aeluma.com/investors (14/19), chunk 9/9
+[18:37:19 +11m 9s | aeluma] Reading page (15/19): https://www.aeluma.com/contact
+[18:37:19 +11m 9s | aeluma] Extracting: https://www.aeluma.com/contact (15/19), chunk 1/3
+[18:37:23 +11m 13s | aeluma] Extracting: https://www.aeluma.com/contact (15/19), chunk 2/3
+[18:37:27 +11m 17s | aeluma] Extracting: https://www.aeluma.com/contact (15/19), chunk 3/3
+[18:37:33 +11m 23s | aeluma] Reading page (16/19): https://www.aeluma.com/news-media/press-releases
+[18:37:33 +11m 23s | aeluma] Extracting: https://www.aeluma.com/news-media/press-releases (16/19), chunk 1/7
+[18:37:36 +11m 26s | aeluma] Extracting: https://www.aeluma.com/news-media/press-releases (16/19), chunk 2/7
+[18:37:42 +11m 31s | aeluma] Extracting: https://www.aeluma.com/news-media/press-releases (16/19), chunk 3/7
+[18:37:48 +11m 38s | aeluma] Extracting: https://www.aeluma.com/news-media/press-releases (16/19), chunk 4/7
+[18:37:56 +11m 46s | aeluma] Repaired malformed JSON.
+[18:37:56 +11m 46s | aeluma] Extracting: https://www.aeluma.com/news-media/press-releases (16/19), chunk 5/7
+[18:38:03 +11m 53s | aeluma] Repaired malformed JSON.
+[18:38:03 +11m 53s | aeluma] Extracting: https://www.aeluma.com/news-media/press-releases (16/19), chunk 6/7
+[18:38:10 +12m 0s | aeluma] Repaired malformed JSON.
+[18:38:10 +12m 0s | aeluma] Extracting: https://www.aeluma.com/news-media/press-releases (16/19), chunk 7/7
+[18:38:14 +12m 4s | aeluma] Reading page (17/19): https://www.aeluma.com/about/management-team
+[18:38:14 +12m 4s | aeluma] Extracting: https://www.aeluma.com/about/management-team (17/19), chunk 1/10
+[18:38:20 +12m 10s | aeluma] Extracting: https://www.aeluma.com/about/management-team (17/19), chunk 2/10
+[18:38:26 +12m 16s | aeluma] Extracting: https://www.aeluma.com/about/management-team (17/19), chunk 3/10
+[18:38:31 +12m 21s | aeluma] Extracting: https://www.aeluma.com/about/management-team (17/19), chunk 4/10
+[18:38:37 +12m 27s | aeluma] Repaired malformed JSON.
+[18:38:37 +12m 27s | aeluma] Extracting: https://www.aeluma.com/about/management-team (17/19), chunk 5/10
+[18:38:45 +12m 35s | aeluma] Repaired malformed JSON.
+[18:38:45 +12m 35s | aeluma] Extracting: https://www.aeluma.com/about/management-team (17/19), chunk 6/10
+[18:38:52 +12m 42s | aeluma] Repaired malformed JSON.
+[18:38:52 +12m 42s | aeluma] Extracting: https://www.aeluma.com/about/management-team (17/19), chunk 7/10
+[18:38:58 +12m 48s | aeluma] Repaired malformed JSON.
+[18:38:58 +12m 48s | aeluma] Extracting: https://www.aeluma.com/about/management-team (17/19), chunk 8/10
+[18:39:05 +12m 55s | aeluma] Repaired malformed JSON.
+[18:39:05 +12m 55s | aeluma] Extracting: https://www.aeluma.com/about/management-team (17/19), chunk 9/10
+[18:39:14 +13m 4s | aeluma] Repaired malformed JSON.
+[18:39:14 +13m 4s | aeluma] Extracting: https://www.aeluma.com/about/management-team (17/19), chunk 10/10
+[18:39:19 +13m 9s | aeluma] Reading page (18/19): https://www.aeluma.com/investors/company-information
+[18:39:19 +13m 9s | aeluma] Extracting: https://www.aeluma.com/investors/company-information (18/19), chunk 1/7
+[18:39:23 +13m 13s | aeluma] Extracting: https://www.aeluma.com/investors/company-information (18/19), chunk 2/7
+[18:39:29 +13m 19s | aeluma] Extracting: https://www.aeluma.com/investors/company-information (18/19), chunk 3/7
+[18:39:35 +13m 25s | aeluma] Extracting: https://www.aeluma.com/investors/company-information (18/19), chunk 4/7
+[18:39:39 +13m 29s | aeluma] Extracting: https://www.aeluma.com/investors/company-information (18/19), chunk 5/7
+[18:39:43 +13m 32s | aeluma] Extracting: https://www.aeluma.com/investors/company-information (18/19), chunk 6/7
+[18:39:50 +13m 39s | aeluma] Repaired malformed JSON.
+[18:39:50 +13m 39s | aeluma] Extracting: https://www.aeluma.com/investors/company-information (18/19), chunk 7/7
+[18:39:56 +13m 46s | aeluma] Reading page (19/19): https://www.aeluma.com/investors/financial-information
+[18:39:56 +13m 46s | aeluma] Extracting: https://www.aeluma.com/investors/financial-information (19/19), chunk 1/9
+[18:40:01 +13m 51s | aeluma] Extracting: https://www.aeluma.com/investors/financial-information (19/19), chunk 2/9
+[18:40:07 +13m 57s | aeluma] Extracting: https://www.aeluma.com/investors/financial-information (19/19), chunk 3/9
+[18:40:11 +14m 1s | aeluma] Extracting: https://www.aeluma.com/investors/financial-information (19/19), chunk 4/9
+[18:40:15 +14m 5s | aeluma] Extracting: https://www.aeluma.com/investors/financial-information (19/19), chunk 5/9
+[18:40:20 +14m 10s | aeluma] Extracting: https://www.aeluma.com/investors/financial-information (19/19), chunk 6/9
+[18:40:27 +14m 17s | aeluma] Extracting: https://www.aeluma.com/investors/financial-information (19/19), chunk 7/9
+[18:40:35 +14m 25s | aeluma] Repaired malformed JSON.
+[18:40:35 +14m 25s | aeluma] Extracting: https://www.aeluma.com/investors/financial-information (19/19), chunk 8/9
+[18:40:38 +14m 28s | aeluma] Extracting: https://www.aeluma.com/investors/financial-information (19/19), chunk 9/9
+[18:40:44 +14m 34s | aeluma] Saved 1_actor_results.json with 205 extracted records
+
+[18:40:45 +14m 35s | aeluma] === 2 clean actors ===
+[18:40:45 +14m 35s | aeluma] Loaded 205 extracted records
+[18:40:45 +14m 35s | aeluma] Saved 2_actor_nodes.json with 34 canonical actor nodes
+
+[18:40:45 +14m 35s | aeluma] === 3 interaction extraction ===
+[18:40:46 +14m 36s | aeluma] Extracting interactions: https://www.aeluma.com/careers (1/19), chunk 1/11
+[18:40:50 +14m 40s | aeluma] Extracting interactions: https://www.aeluma.com/careers (1/19), chunk 2/11
+[18:40:53 +14m 43s | aeluma] Extracting interactions: https://www.aeluma.com/careers (1/19), chunk 11/11
+[18:40:54 +14m 44s | aeluma] Extracting interactions: https://www.aeluma.com (2/19), chunk 1/6
+[18:40:57 +14m 46s | aeluma] Extracting interactions: https://www.aeluma.com (2/19), chunk 2/6
+[18:41:01 +14m 51s | aeluma] Extracting interactions: https://www.aeluma.com (2/19), chunk 3/6
+[18:41:05 +14m 55s | aeluma] Extracting interactions: https://www.aeluma.com (2/19), chunk 4/6
+[18:41:12 +15m 2s | aeluma] Extracting interactions: https://www.aeluma.com (2/19), chunk 5/6
+[18:41:15 +15m 5s | aeluma] Extracting interactions: https://www.aeluma.com (2/19), chunk 6/6
+[18:41:17 +15m 7s | aeluma] Extracting interactions: https://www.aeluma.com/news-media (3/19), chunk 1/6
+[18:41:19 +15m 9s | aeluma] Extracting interactions: https://www.aeluma.com/news-media (3/19), chunk 2/6
+[18:41:21 +15m 10s | aeluma] Extracting interactions: https://www.aeluma.com/news-media (3/19), chunk 3/6
+[18:41:25 +15m 15s | aeluma] Extracting interactions: https://www.aeluma.com/news-media (3/19), chunk 4/6
+[18:41:30 +15m 20s | aeluma] Extracting interactions: https://www.aeluma.com/news-media (3/19), chunk 6/6
+[18:41:32 +15m 22s | aeluma] Extracting interactions: https://www.aeluma.com/about (4/19), chunk 1/7
+[18:41:33 +15m 23s | aeluma] Extracting interactions: https://www.aeluma.com/about (4/19), chunk 2/7
+[18:41:36 +15m 26s | aeluma] Extracting interactions: https://www.aeluma.com/about (4/19), chunk 7/7
+[18:41:40 +15m 29s | aeluma] Extracting interactions: https://www.aeluma.com/investors/corporate-governance (5/19), chunk 1/13
+[18:41:41 +15m 31s | aeluma] Extracting interactions: https://www.aeluma.com/investors/corporate-governance (5/19), chunk 2/13
+[18:41:48 +15m 38s | aeluma] Extracting interactions: https://www.aeluma.com/investors/corporate-governance (5/19), chunk 6/13
+[18:41:50 +15m 40s | aeluma] Extracting interactions: https://www.aeluma.com/investors/corporate-governance (5/19), chunk 7/13
+[18:42:00 +15m 50s | aeluma] Extracting interactions: https://www.aeluma.com/investors/corporate-governance (5/19), chunk 8/13
+[18:42:14 +16m 4s | aeluma] Extracting interactions: https://www.aeluma.com/investors/corporate-governance (5/19), chunk 9/13
+[18:42:45 +16m 34s | aeluma] Extracting interactions: https://www.aeluma.com/investors/corporate-governance (5/19), chunk 10/13
+[18:43:16 +17m 6s | aeluma] Extracting interactions: https://www.aeluma.com/investors/corporate-governance (5/19), chunk 11/13
+[18:43:46 +17m 36s | aeluma] Extracting interactions: https://www.aeluma.com/investors/corporate-governance (5/19), chunk 12/13
+[18:43:55 +17m 44s | aeluma] Extracting interactions: https://www.aeluma.com/investors/corporate-governance (5/19), chunk 13/13
+[18:43:56 +17m 46s | aeluma] Extracting interactions: https://www.aeluma.com/investors/stock-data (6/19), chunk 1/7
+[18:43:59 +17m 49s | aeluma] Extracting interactions: https://www.aeluma.com/investors/stock-data (6/19), chunk 2/7
+[18:44:00 +17m 50s | aeluma] Extracting interactions: https://www.aeluma.com/investors/stock-data (6/19), chunk 7/7
+[18:44:03 +17m 53s | aeluma] Extracting interactions: https://www.aeluma.com/news-media/blog (7/19), chunk 1/6
+[18:44:05 +17m 55s | aeluma] Extracting interactions: https://www.aeluma.com/news-media/blog (7/19), chunk 2/6
+[18:44:07 +17m 57s | aeluma] Extracting interactions: https://www.aeluma.com/news-media/blog (7/19), chunk 4/6
+[18:44:13 +18m 2s | aeluma] Extracting interactions: https://www.aeluma.com/news-media/blog (7/19), chunk 5/6
+[18:44:16 +18m 6s | aeluma] Extracting interactions: https://www.aeluma.com/news-media/blog (7/19), chunk 6/6
+[18:44:18 +18m 8s | aeluma] Extracting interactions: https://www.aeluma.com/news-media/in-the-news (8/19), chunk 1/6
+[18:44:19 +18m 9s | aeluma] Extracting interactions: https://www.aeluma.com/news-media/in-the-news (8/19), chunk 2/6
+[18:44:23 +18m 13s | aeluma] Extracting interactions: https://www.aeluma.com/news-media/in-the-news (8/19), chunk 4/6
+[18:44:27 +18m 17s | aeluma] Extracting interactions: https://www.aeluma.com/news-media/in-the-news (8/19), chunk 5/6
+[18:44:31 +18m 21s | aeluma] Extracting interactions: https://www.aeluma.com/news-media/in-the-news (8/19), chunk 6/6
+[18:44:34 +18m 24s | aeluma] Extracting interactions: https://www.aeluma.com/technology (9/19), chunk 1/5
+[18:44:35 +18m 25s | aeluma] Extracting interactions: https://www.aeluma.com/technology (9/19), chunk 2/5
+[18:44:37 +18m 27s | aeluma] Extracting interactions: https://www.aeluma.com/technology (9/19), chunk 5/5
+[18:44:38 +18m 28s | aeluma] Extracting interactions: https://www.aeluma.com/investors/sec-filings (10/19), chunk 1/9
+[18:44:40 +18m 30s | aeluma] Extracting interactions: https://www.aeluma.com/investors/sec-filings (10/19), chunk 2/9
+[18:44:42 +18m 31s | aeluma] Extracting interactions: https://www.aeluma.com/investors/sec-filings (10/19), chunk 9/9
+[18:44:44 +18m 34s | aeluma] Extracting interactions: https://www.aeluma.com/investors/ir-calendar (11/19), chunk 1/7
+[18:44:47 +18m 37s | aeluma] Extracting interactions: https://www.aeluma.com/investors/ir-calendar (11/19), chunk 2/7
+[18:44:49 +18m 38s | aeluma] Extracting interactions: https://www.aeluma.com/investors/ir-calendar (11/19), chunk 5/7
+[18:44:54 +18m 44s | aeluma] Extracting interactions: https://www.aeluma.com/investors/ir-calendar (11/19), chunk 6/7
+[18:45:00 +18m 50s | aeluma] Extracting interactions: https://www.aeluma.com/investors/ir-calendar (11/19), chunk 7/7
+[18:45:01 +18m 51s | aeluma] Extracting interactions: https://www.aeluma.com/about/certification-compliance (12/19), chunk 1/5
+[18:45:03 +18m 53s | aeluma] Extracting interactions: https://www.aeluma.com/about/certification-compliance (12/19), chunk 2/5
+[18:45:05 +18m 55s | aeluma] Extracting interactions: https://www.aeluma.com/about/certification-compliance (12/19), chunk 5/5
+[18:45:07 +18m 57s | aeluma] Extracting interactions: https://www.aeluma.com/about/board-of-directors (13/19), chunk 1/9
+[18:45:09 +18m 59s | aeluma] Extracting interactions: https://www.aeluma.com/about/board-of-directors (13/19), chunk 2/9
+[18:45:10 +19m 0s | aeluma] Extracting interactions: https://www.aeluma.com/about/board-of-directors (13/19), chunk 4/9
+[18:45:35 +19m 25s | aeluma] Extracting interactions: https://www.aeluma.com/about/board-of-directors (13/19), chunk 5/9
+[18:46:00 +19m 50s | aeluma] Extracting interactions: https://www.aeluma.com/about/board-of-directors (13/19), chunk 6/9
+[18:46:36 +20m 25s | aeluma] Extracting interactions: https://www.aeluma.com/about/board-of-directors (13/19), chunk 7/9
+[18:46:56 +20m 46s | aeluma] Extracting interactions: https://www.aeluma.com/about/board-of-directors (13/19), chunk 8/9
+[18:47:07 +20m 57s | aeluma] Extracting interactions: https://www.aeluma.com/about/board-of-directors (13/19), chunk 9/9
+[18:47:12 +21m 2s | aeluma] Extracting interactions: https://www.aeluma.com/investors (14/19), chunk 1/9
+[18:47:13 +21m 3s | aeluma] Extracting interactions: https://www.aeluma.com/investors (14/19), chunk 2/9
+[18:47:15 +21m 5s | aeluma] Extracting interactions: https://www.aeluma.com/investors (14/19), chunk 5/9
+[18:47:18 +21m 8s | aeluma] Extracting interactions: https://www.aeluma.com/investors (14/19), chunk 6/9
+[18:47:22 +21m 12s | aeluma] Extracting interactions: https://www.aeluma.com/investors (14/19), chunk 9/9
+[18:47:24 +21m 14s | aeluma] Extracting interactions: https://www.aeluma.com/contact (15/19), chunk 1/3
+[18:47:26 +21m 16s | aeluma] Extracting interactions: https://www.aeluma.com/contact (15/19), chunk 2/3
+[18:47:30 +21m 20s | aeluma] Extracting interactions: https://www.aeluma.com/contact (15/19), chunk 3/3
+[18:47:34 +21m 24s | aeluma] Extracting interactions: https://www.aeluma.com/news-media/press-releases (16/19), chunk 1/7
+[18:47:36 +21m 26s | aeluma] Extracting interactions: https://www.aeluma.com/news-media/press-releases (16/19), chunk 2/7
+[18:47:38 +21m 28s | aeluma] Extracting interactions: https://www.aeluma.com/news-media/press-releases (16/19), chunk 4/7
+[18:47:41 +21m 31s | aeluma] Extracting interactions: https://www.aeluma.com/news-media/press-releases (16/19), chunk 5/7
+[18:47:46 +21m 36s | aeluma] Extracting interactions: https://www.aeluma.com/news-media/press-releases (16/19), chunk 7/7
+[18:47:48 +21m 38s | aeluma] Extracting interactions: https://www.aeluma.com/about/management-team (17/19), chunk 1/10
+[18:47:49 +21m 39s | aeluma] Extracting interactions: https://www.aeluma.com/about/management-team (17/19), chunk 2/10
+[18:47:51 +21m 41s | aeluma] Extracting interactions: https://www.aeluma.com/about/management-team (17/19), chunk 4/10
+[18:48:03 +21m 52s | aeluma] Extracting interactions: https://www.aeluma.com/about/management-team (17/19), chunk 5/10
+[18:48:24 +22m 14s | aeluma] Extracting interactions: https://www.aeluma.com/about/management-team (17/19), chunk 6/10
+[18:48:42 +22m 31s | aeluma] Extracting interactions: https://www.aeluma.com/about/management-team (17/19), chunk 7/10
+[18:48:58 +22m 48s | aeluma] Extracting interactions: https://www.aeluma.com/about/management-team (17/19), chunk 8/10
+[18:49:08 +22m 58s | aeluma] Extracting interactions: https://www.aeluma.com/about/management-team (17/19), chunk 9/10
+[18:49:20 +23m 10s | aeluma] Extracting interactions: https://www.aeluma.com/about/management-team (17/19), chunk 10/10
+[18:49:21 +23m 11s | aeluma] Extracting interactions: https://www.aeluma.com/investors/company-information (18/19), chunk 1/7
+[18:49:23 +23m 13s | aeluma] Extracting interactions: https://www.aeluma.com/investors/company-information (18/19), chunk 2/7
+[18:49:28 +23m 18s | aeluma] Extracting interactions: https://www.aeluma.com/investors/company-information (18/19), chunk 6/7
+[18:49:36 +23m 26s | aeluma] Extracting interactions: https://www.aeluma.com/investors/company-information (18/19), chunk 7/7
+[18:49:41 +23m 31s | aeluma] Extracting interactions: https://www.aeluma.com/investors/financial-information (19/19), chunk 1/9
+[18:49:43 +23m 33s | aeluma] Extracting interactions: https://www.aeluma.com/investors/financial-information (19/19), chunk 2/9
+[18:49:45 +23m 35s | aeluma] Extracting interactions: https://www.aeluma.com/investors/financial-information (19/19), chunk 9/9
+[18:49:47 +23m 37s | aeluma] Saved 3_interaction_results.json with 90 extracted interactions.
+
+[18:49:48 +23m 38s | aeluma] === 4 clean interactions ===
+[18:49:48 +23m 38s | aeluma] Saved 4_edges.json with 9 cleaned interactions.
+
+[18:49:48 +23m 38s | aeluma] === 5 helix enrichment ===
+[18:49:48 +23m 38s | aeluma] Wrote 5_nodes.json (34 actors)
+[18:49:48 +23m 38s | aeluma] Wrote 5_edges.json (9 interactions)
+[18:49:48 +23m 38s | aeluma] Actor helix counts: {'Academia': 4, 'Civil Society': 2, 'Government': 2, 'Industry': 16, 'Intermediary': 5, 'Unknown': 5}
+[18:49:48 +23m 38s | aeluma] Functional-space counts: {'Innovation': 1, 'Intra-helix / Not classified': 7, 'Public': 1}
+
+[18:49:48 +23m 38s | aeluma] === 6 network visualisation ===
+[18:49:48 +23m 38s | aeluma] Wrote quantum_network.html
+[18:49:48 +23m 38s | aeluma] Nodes: 34
+[18:49:48 +23m 38s | aeluma] Edges: 4
+
+[18:49:48 +23m 38s | aeluma] Done. Outputs written to: /home/lv/IDP/idpdeeptech/pipeline/site_outputs/aeluma
+[18:49:48 +23m 38s | aeluma] Log: /home/lv/IDP/idpdeeptech/pipeline/site_outputs/aeluma/run.log
+
+========================================================================
+RUN FINISHED 2026-06-17 18:49:48  (OK)
+Started:     2026-06-17 18:26:10
+Elapsed:     23m 38s
+========================================================================

@@ -1,0 +1,51 @@
+
+========================================================================
+SITE BATCH RUN  2026-06-16 17:12:59
+========================================================================
+  Config file:    /home/lv/IDP/idpdeeptech/pipeline/site_input/companies.json
+  Documents:      81
+  Workers:        4
+  Crawl depth:    3
+  Max pages:      20
+  Force redo:     False
+  Batch log:      /home/lv/IDP/idpdeeptech/pipeline/site_outputs/batch_logs/batch_20260616_171259.log
+========================================================================
+
+[1/81] Amazon Braket: skipping (already done; pass --force to redo)
+[3/81] Ibm: skipping (already done; pass --force to redo)
+[4/81] Ionq: skipping (already done; pass --force to redo)
+[40/81] Psiquantum: skipping (already done; pass --force to redo)
+
+Running 77 company pipeline(s) with 4 workers...
+Note: parallel terminal output interleaves. Each company's clean trace is in its own site_outputs/<slug>/website/run.log
+
+  DONE: [7/81] Quantum Computing Inc.
+  DONE: [5/81] Google Quantum Ai
+  DONE: [2/81] D-Wave Systems
+
+Interrupted by user. Stopping batch (in-flight workers will finish their current company).
+Traceback (most recent call last):
+  File "/home/lv/IDP/idpdeeptech/pipeline/site_pipeline_batch.py", line 379, in <module>
+    main()
+  File "/home/lv/IDP/idpdeeptech/pipeline/site_pipeline_batch.py", line 336, in main
+    with cf.ThreadPoolExecutor(max_workers=args.workers) as pool:
+  File "/usr/lib/python3.10/concurrent/futures/_base.py", line 649, in __exit__
+    self.shutdown(wait=True)
+  File "/usr/lib/python3.10/concurrent/futures/thread.py", line 235, in shutdown
+    t.join()
+  File "/usr/lib/python3.10/threading.py", line 1096, in join
+    self._wait_for_tstate_lock()
+  File "/usr/lib/python3.10/threading.py", line 1116, in _wait_for_tstate_lock
+    if lock.acquire(block, timeout):
+KeyboardInterrupt
+Exception ignored in: <module 'threading' from '/usr/lib/python3.10/threading.py'>
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1537, in _shutdown
+    atexit_call()
+  File "/usr/lib/python3.10/concurrent/futures/thread.py", line 31, in _python_exit
+    t.join()
+  File "/usr/lib/python3.10/threading.py", line 1096, in join
+    self._wait_for_tstate_lock()
+  File "/usr/lib/python3.10/threading.py", line 1116, in _wait_for_tstate_lock
+    if lock.acquire(block, timeout):
+KeyboardInterrupt: 

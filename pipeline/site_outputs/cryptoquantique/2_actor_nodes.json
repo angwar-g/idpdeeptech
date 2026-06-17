@@ -1,0 +1,3328 @@
+[
+  {
+    "entity": "AIS",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "national government institutions",
+    "role_in_text": "Validated against NIST SP800-90B, AIS31, and SP800-22 statistical test suites",
+    "technology_area": "deep tech general",
+    "source_document": "https://www.cryptoquantique.com/products/true-random-number-generator-trng-ip",
+    "page": 6,
+    "canonical_actor_key": "ais",
+    "aliases": [
+      "AIS"
+    ],
+    "pages": [
+      6
+    ],
+    "mentions": [
+      {
+        "entity": "AIS",
+        "page": 6,
+        "role_in_text": "Validated against NIST SP800-90B, AIS31, and SP800-22 statistical test suites",
+        "occurrence_sentence": "",
+        "source_document": "https://www.cryptoquantique.com/products/true-random-number-generator-trng-ip"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": ""
+  },
+  {
+    "entity": "AWS",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "large enterprises",
+    "role_in_text": "cloud services provider",
+    "technology_area": "deep tech general",
+    "occurrence_sentence": "Back in September 2021, cloud services provider AWS published a much less formal [Ten security golden rules for Industrial IoT solutions](https://aws.amazon.com/blogs/iot/ten-security-golden-rules-for-industrial-iot-solutions/).",
+    "source_document": "https://www.cryptoquantique.com/industry-4-0",
+    "page": 11,
+    "confidence": "high",
+    "canonical_actor_key": "aws",
+    "aliases": [
+      "AWS",
+      "Amazon Web Services",
+      "Amazon Web Services (AWS)"
+    ],
+    "pages": [
+      4,
+      5,
+      6,
+      7,
+      8,
+      11,
+      12
+    ],
+    "mentions": [
+      {
+        "entity": "AWS",
+        "page": 7,
+        "role_in_text": "Cloud service provider compatible with QuarkLink.",
+        "occurrence_sentence": "Supports Any Cloud. Compatible with AWS, Azure, private MQTT brokers, or your own infrastructure",
+        "source_document": "https://www.cryptoquantique.com/products/quarklink-provisioning"
+      },
+      {
+        "entity": "AWS",
+        "page": 11,
+        "role_in_text": "cloud services provider",
+        "occurrence_sentence": "Back in September 2021, cloud services provider AWS published a much less formal [Ten security golden rules for Industrial IoT solutions](https://aws.amazon.com/blogs/iot/ten-security-golden-rules-for-industrial-iot-solutions/).",
+        "source_document": "https://www.cryptoquantique.com/industry-4-0"
+      },
+      {
+        "entity": "AWS",
+        "page": 12,
+        "role_in_text": "cloud services provider",
+        "occurrence_sentence": "Back in September 2021, cloud services provider AWS published a much less formal [Ten security golden rules for Industrial IoT solutions](https://aws.amazon.com/blogs/iot/ten-security-golden-rules-for-industrial-iot-solutions/).",
+        "source_document": "https://www.cryptoquantique.com/industry-4-0"
+      },
+      {
+        "entity": "Amazon Web Services (AWS)",
+        "page": 8,
+        "role_in_text": "IoT hub",
+        "occurrence_sentence": "QuarkLink™ securely connects devices to all major IoT hubs, including AWS, Azure, and other MQTT or message brokers, and is equally able to work with private clouds or other services.",
+        "source_document": "https://www.cryptoquantique.com/products/quarklink"
+      },
+      {
+        "entity": "AWS",
+        "page": 4,
+        "role_in_text": "cloud platform",
+        "occurrence_sentence": "Provision and connect devices to AWS, Azure, or MQTT brokers with secure mutual authentication.",
+        "source_document": "https://www.cryptoquantique.com/products/quarklink-ota"
+      },
+      {
+        "entity": "AWS",
+        "page": 5,
+        "role_in_text": "cloud platform",
+        "occurrence_sentence": "Provision and connect devices to AWS, Azure, or MQTT brokers with secure mutual authentication.",
+        "source_document": "https://www.cryptoquantique.com/products/quarklink-ota"
+      },
+      {
+        "entity": "AWS",
+        "page": 6,
+        "role_in_text": "cloud service provider",
+        "occurrence_sentence": "Works with AWS, Azure, private brokers, and custom IoT backends",
+        "source_document": "https://www.cryptoquantique.com/products/quarklink-ota"
+      },
+      {
+        "entity": "AWS",
+        "page": 8,
+        "role_in_text": "Cloud Integrations",
+        "occurrence_sentence": "AWS IoT, Azure IoT Hub, custom MQTT brokers, private clouds",
+        "source_document": "https://www.cryptoquantique.com/products/quarklink-ota"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": ""
+  },
+  {
+    "entity": "AWS IoT",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "large enterprises",
+    "role_in_text": "cloud platform supported by QuarkLink™",
+    "technology_area": "deep tech general",
+    "occurrence_sentence": "Out-of-the-box onboarding for AWS IoT, Azure IoT Hub, MQTT brokers, and private platforms.",
+    "source_document": "https://www.cryptoquantique.com/products/quarklink-ota",
+    "page": 7,
+    "canonical_actor_key": "aws iot",
+    "aliases": [
+      "AWS IoT"
+    ],
+    "pages": [
+      7
+    ],
+    "mentions": [
+      {
+        "entity": "AWS IoT",
+        "page": 7,
+        "role_in_text": "cloud platform supported by QuarkLink™",
+        "occurrence_sentence": "Out-of-the-box onboarding for AWS IoT, Azure IoT Hub, MQTT brokers, and private platforms.",
+        "source_document": "https://www.cryptoquantique.com/products/quarklink-ota"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": ""
+  },
+  {
+    "entity": "Azure",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "large enterprises",
+    "role_in_text": "cloud platform",
+    "technology_area": "deep tech general",
+    "occurrence_sentence": "Provision and connect devices to AWS, Azure, or MQTT brokers with secure mutual authentication.",
+    "source_document": "https://www.cryptoquantique.com/products/quarklink-ota",
+    "page": 4,
+    "confidence": "high",
+    "canonical_actor_key": "azure",
+    "aliases": [
+      "Azure",
+      "Microsoft Azure",
+      "Microsoft Azure (Azure)"
+    ],
+    "pages": [
+      4,
+      5,
+      6,
+      8
+    ],
+    "mentions": [
+      {
+        "entity": "Microsoft Azure (Azure)",
+        "page": 8,
+        "role_in_text": "IoT hub",
+        "occurrence_sentence": "QuarkLink™ securely connects devices to all major IoT hubs, including AWS, Azure, and other MQTT or message brokers, and is equally able to work with private clouds",
+        "source_document": "https://www.cryptoquantique.com/products/quarklink"
+      },
+      {
+        "entity": "Azure",
+        "page": 4,
+        "role_in_text": "cloud platform",
+        "occurrence_sentence": "Provision and connect devices to AWS, Azure, or MQTT brokers with secure mutual authentication.",
+        "source_document": "https://www.cryptoquantique.com/products/quarklink-ota"
+      },
+      {
+        "entity": "Azure",
+        "page": 5,
+        "role_in_text": "cloud platform",
+        "occurrence_sentence": "Provision and connect devices to AWS, Azure, or MQTT brokers with secure mutual authentication.",
+        "source_document": "https://www.cryptoquantique.com/products/quarklink-ota"
+      },
+      {
+        "entity": "Azure",
+        "page": 6,
+        "role_in_text": "cloud service provider",
+        "occurrence_sentence": "Works with AWS, Azure, private brokers, and custom IoT backends",
+        "source_document": "https://www.cryptoquantique.com/products/quarklink-ota"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": ""
+  },
+  {
+    "entity": "cetome",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "research institutes",
+    "role_in_text": "leading cybersecurity consultancy",
+    "technology_area": "quantum cryptography",
+    "occurrence_sentence": "QuarkLink™ has been independently evaluated by leading cybersecurity consultancy cetome, with findings confirming that it significantly supports CRA compliance.",
+    "source_document": "https://www.cryptoquantique.com/products/quarklink-provisioning",
+    "page": 8,
+    "confidence": "high",
+    "canonical_actor_key": "cetome",
+    "aliases": [
+      "Cetome",
+      "cetome"
+    ],
+    "pages": [
+      4,
+      5,
+      8,
+      9,
+      10
+    ],
+    "mentions": [
+      {
+        "entity": "cetome",
+        "page": 8,
+        "role_in_text": "leading cybersecurity consultancy",
+        "occurrence_sentence": "QuarkLink™ has been independently evaluated by leading cybersecurity consultancy cetome, with findings confirming that it significantly supports CRA compliance.",
+        "source_document": "https://www.cryptoquantique.com/products/quarklink-provisioning"
+      },
+      {
+        "entity": "cetome",
+        "page": 9,
+        "role_in_text": "leading cybersecurity consultancy",
+        "occurrence_sentence": "QuarkLink™ has been independently evaluated by leading cybersecurity consultancy cetome, with findings confirming that it significantly supports CRA compliance.",
+        "source_document": "https://www.cryptoquantique.com/products/quarklink-provisioning"
+      },
+      {
+        "entity": "cetome",
+        "page": 8,
+        "role_in_text": "leading cybersecurity consultancy",
+        "occurrence_sentence": "QuarkLink™ has been independently evaluated by leading cybersecurity consultancy cetome, with findings confirming that it significantly supports CRA compliance.",
+        "source_document": "https://www.cryptoquantique.com/products/quarklink-fleet-management"
+      },
+      {
+        "entity": "cetome",
+        "page": 9,
+        "role_in_text": "leading cybersecurity consultancy",
+        "occurrence_sentence": "QuarkLink™ has been independently evaluated by leading cybersecurity consultancy cetome, with findings confirming that it significantly supports CRA compliance.",
+        "source_document": "https://www.cryptoquantique.com/products/quarklink-fleet-management"
+      },
+      {
+        "entity": "Cetome",
+        "page": 9,
+        "role_in_text": "Leading cybersecurity consultancy",
+        "occurrence_sentence": "QuarkLink™ has been independently evaluated by leading cybersecurity consultancy cetome, with findings confirming that it significantly supports CRA compliance.",
+        "source_document": "https://www.cryptoquantique.com/products/quarklink"
+      },
+      {
+        "entity": "cetome",
+        "page": 10,
+        "role_in_text": "leading cybersecurity consultancy",
+        "occurrence_sentence": "QuarkLink™ has been independently evaluated by leading cybersecurity consultancy cetome, with findings confirming that it significantly supports CRA compliance.",
+        "source_document": "https://www.cryptoquantique.com/products/quarklink"
+      },
+      {
+        "entity": "Cetome",
+        "page": 4,
+        "role_in_text": "cybersecurity advisory firm",
+        "occurrence_sentence": "Crypto Quantique commissioned Cetome, a respected cybersecurity advisory firm, to independently assess how QuarkLink™ supports CRA compliance.",
+        "source_document": "https://www.cryptoquantique.com/accelerating-cra-compliance-with-quarklink"
+      },
+      {
+        "entity": "Cetome",
+        "page": 5,
+        "role_in_text": "Cybersecurity advisory firm conducting independent assessment",
+        "occurrence_sentence": "Crypto Quantique commissioned cetome, a respected cybersecurity advisory firm, to independently assess how QuarkLink™ supports CRA compliance.",
+        "source_document": "https://www.cryptoquantique.com/accelerating-cra-compliance-with-quarklink"
+      },
+      {
+        "entity": "cetome",
+        "page": 8,
+        "role_in_text": "leading cybersecurity consultancy",
+        "occurrence_sentence": "QuarkLink™ has been independently evaluated by leading cybersecurity consultancy cetome, with findings confirming that it significantly supports CRA compliance.",
+        "source_document": "https://www.cryptoquantique.com/products/quarklink-ota"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": ""
+  },
+  {
+    "entity": "Connectivity Standards Alliance",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "business support institutions",
+    "role_in_text": "launched IoT Device Security Specification 1.0",
+    "technology_area": "deep tech general",
+    "occurrence_sentence": "The Connectivity Standards Alliance, an industry group promoting open standards for the IoT, launched an IoT Device Security Specification 1.0 in March 2024.",
+    "source_document": "https://www.cryptoquantique.com/industry-4-0",
+    "page": 10,
+    "confidence": "high",
+    "canonical_actor_key": "connectivity standards alliance",
+    "aliases": [
+      "Connectivity Standards Alliance"
+    ],
+    "pages": [
+      9,
+      10
+    ],
+    "mentions": [
+      {
+        "entity": "Connectivity Standards Alliance",
+        "page": 9,
+        "role_in_text": "launched an IoT Device Security Specification 1.0",
+        "occurrence_sentence": "The Connectivity Standards Alliance, an industry group promoting open standards for the IoT, launched an IoT Device Security Specification 1.0 in March 2024.",
+        "source_document": "https://www.cryptoquantique.com/industry-4-0"
+      },
+      {
+        "entity": "Connectivity Standards Alliance",
+        "page": 10,
+        "role_in_text": "launched IoT Device Security Specification 1.0",
+        "occurrence_sentence": "The Connectivity Standards Alliance, an industry group promoting open standards for the IoT, launched an IoT Device Security Specification 1.0 in March 2024.",
+        "source_document": "https://www.cryptoquantique.com/industry-4-0"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": ""
+  },
+  {
+    "entity": "CRA",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "national government institutions",
+    "role_in_text": "Certification authority for audits",
+    "technology_area": "quantum cryptography",
+    "occurrence_sentence": "Enable [certificate-based device logs and evidence for CRA or ISO audits",
+    "source_document": "https://www.cryptoquantique.com/products/quarklink-fleet-management",
+    "page": 6,
+    "canonical_actor_key": "cra",
+    "aliases": [
+      "CRA"
+    ],
+    "pages": [
+      6
+    ],
+    "mentions": [
+      {
+        "entity": "CRA",
+        "page": 6,
+        "role_in_text": "Certification authority for audits",
+        "occurrence_sentence": "Enable [certificate-based device logs and evidence for CRA or ISO audits",
+        "source_document": "https://www.cryptoquantique.com/products/quarklink-fleet-management"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": ""
+  },
+  {
+    "entity": "Crypto-Posture",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "large enterprises",
+    "role_in_text": "provider of CRA compliance resources",
+    "technology_area": "quantum cryptography",
+    "occurrence_sentence": "This 7-page independent report outlines how QuarkLink™ maps to each CRA requirement — including [remaining steps for compliance",
+    "source_document": "https://www.cryptoquantique.com/accelerating-cra-compliance-with-quarklink",
+    "page": 6,
+    "canonical_actor_key": "crypto posture",
+    "aliases": [
+      "Crypto-Posture"
+    ],
+    "pages": [
+      6
+    ],
+    "mentions": [
+      {
+        "entity": "Crypto-Posture",
+        "page": 6,
+        "role_in_text": "provider of CRA compliance resources",
+        "occurrence_sentence": "This 7-page independent report outlines how QuarkLink™ maps to each CRA requirement — including [remaining steps for compliance",
+        "source_document": "https://www.cryptoquantique.com/accelerating-cra-compliance-with-quarklink"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": ""
+  },
+  {
+    "entity": "CryptoQuantique",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "large enterprises",
+    "role_in_text": "Provider of QuarkLink technology",
+    "technology_area": "quantum cryptography",
+    "occurrence_sentence": "QuarkLink provides secure boot, certificate management, and OTA update features which are key to building secure-by-design products ready for CE Marking and CRA compliance. [Download QuarkLink CRA Assessment](https://www.cryptoquantique.com/)",
+    "source_document": "https://www.cryptoquantique.com/products/quarklink-ota",
+    "page": 9,
+    "confidence": "high",
+    "canonical_actor_key": "cryptoquantique",
+    "aliases": [
+      "Crypto Quantique",
+      "CryptoQuantique"
+    ],
+    "pages": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      21
+    ],
+    "mentions": [
+      {
+        "entity": "Crypto Quantique",
+        "page": 1,
+        "role_in_text": "provider of QuarkLink provisioning",
+        "occurrence_sentence": "Close",
+        "source_document": "https://www.cryptoquantique.com/products/quarklink-provisioning"
+      },
+      {
+        "entity": "Crypto Quantique",
+        "page": 2,
+        "role_in_text": "provider of security and cryptographic solutions",
+        "occurrence_sentence": "Crypto Quantique",
+        "source_document": "https://www.cryptoquantique.com/products/quarklink-provisioning"
+      },
+      {
+        "entity": "CryptoQuantique",
+        "page": 3,
+        "role_in_text": "Provider of security IP, cryptographic IP, and device software solutions.",
+        "occurrence_sentence": "Products",
+        "source_document": "https://www.cryptoquantique.com/products/quarklink-provisioning"
+      },
+      {
+        "entity": "CryptoQuantique",
+        "page": 4,
+        "role_in_text": "Company providing QuarkLink™ provisioning and secure boot solutions.",
+        "occurrence_sentence": "CryptoQuantique",
+        "source_document": "https://www.cryptoquantique.com/products/quarklink-provisioning"
+      },
+      {
+        "entity": "CryptoQuantique",
+        "page": 6,
+        "role_in_text": "Provider of QuarkLink provisioning solution",
+        "occurrence_sentence": "source_document: \"https://www.cryptoquantique.com/products/quarklink-provisioning\"",
+        "source_document": "https://www.cryptoquantique.com/products/quarklink-provisioning"
+      },
+      {
+        "entity": "Crypto Quantique",
+        "page": 10,
+        "role_in_text": "provider of QuarkLink and related products",
+        "occurrence_sentence": "QuarkLink provides secure boot, certificate management, and OTA update features which are key to building secure-by-design products ready for CE Marking and CRA compliance.",
+        "source_document": "https://www.cryptoquantique.com/products/quarklink-provisioning"
+      },
+      {
+        "entity": "Crypto Quantique",
+        "page": 11,
+        "role_in_text": "provider of QuarkLink™ and related products",
+        "occurrence_sentence": "QuarkLink Ignite™ is a completely free version of our SaaS product that allows you to experience the full power of QuarkLink™",
+        "source_document": "https://www.cryptoquantique.com/products/quarklink-provisioning"
+      },
+      {
+        "entity": "Crypto Quantique",
+        "page": 12,
+        "role_in_text": "company",
+        "occurrence_sentence": "© 2026 Crypto Quantique",
+        "source_document": "https://www.cryptoquantique.com/products/quarklink-provisioning"
+      },
+      {
+        "entity": "Crypto Quantique",
+        "page": 1,
+        "role_in_text": "company",
+        "occurrence_sentence": "Crypto Quantique",
+        "source_document": "https://www.cryptoquantique.com"
+      },
+      {
+        "entity": "Crypto Quantique",
+        "page": 2,
+        "role_in_text": "Provider of security and cryptographic solutions",
+        "occurrence_sentence": "Crypto Quantique",
+        "source_document": "https://www.cryptoquantique.com"
+      },
+      {
+        "entity": "CryptoQuantique",
+        "page": 3,
+        "role_in_text": "provider of security IP, cryptographic IP, and device software solutions",
+        "occurrence_sentence": "Products",
+        "source_document": "https://www.cryptoquantique.com"
+      },
+      {
+        "entity": "CryptoQuantique",
+        "page": 4,
+        "role_in_text": "Company providing security solutions",
+        "occurrence_sentence": "source_document: \"https://www.cryptoquantique.com\"",
+        "source_document": "https://www.cryptoquantique.com"
+      },
+      {
+        "entity": "CryptoQuantique",
+        "page": 7,
+        "role_in_text": "Provider of security solutions for SoC design",
+        "occurrence_sentence": "source_document: \"https://www.cryptoquantique.com\"",
+        "source_document": "https://www.cryptoquantique.com"
+      },
+      {
+        "entity": "Crypto Quantique",
+        "page": 9,
+        "role_in_text": "provides security IP solutions",
+        "occurrence_sentence": "Siemens selected Crypto Quantique IP to meet the architectural requirements of their next-generation silicon lifecycle management platform.",
+        "source_document": "https://www.cryptoquantique.com"
+      },
+      {
+        "entity": "Crypto Quantique",
+        "page": 10,
+        "role_in_text": "Provider of security IP architecture and related products",
+        "occurrence_sentence": "Crypto Quantique Logo",
+        "source_document": "https://www.cryptoquantique.com"
+      },
+      {
+        "entity": "Crypto Quantique",
+        "page": 11,
+        "role_in_text": "company",
+        "occurrence_sentence": "© 2026 Crypto Quantique",
+        "source_document": "https://www.cryptoquantique.com"
+      },
+      {
+        "entity": "Crypto Quantique",
+        "page": 1,
+        "role_in_text": "Provider of true random number generator (TRNG) IP",
+        "occurrence_sentence": "https://www.cryptoquantique.com/products/true-random-number-generator-trng-ip/",
+        "source_document": "https://www.cryptoquantique.com/products/true-random-number-generator-trng-ip"
+      },
+      {
+        "entity": "Crypto Quantique",
+        "page": 2,
+        "role_in_text": "Provider of security and cryptographic IP products",
+        "occurrence_sentence": "Crypto Quantique Logo",
+        "source_document": "https://www.cryptoquantique.com/products/true-random-number-generator-trng-ip"
+      },
+      {
+        "entity": "CryptoQuantique",
+        "page": 3,
+        "role_in_text": "Provider of security IP and cryptographic solutions",
+        "occurrence_sentence": "Products",
+        "source_document": "https://www.cryptoquantique.com/products/true-random-number-generator-trng-ip"
+      },
+      {
+        "entity": "Crypto Quantique",
+        "page": 4,
+        "role_in_text": "Provider of TRNG IP",
+        "occurrence_sentence": "Crypto Quantique's TRNG IP delivers NIST- and BSI-compliant entropy for secure embedded and SoC designs.",
+        "source_document": "https://www.cryptoquantique.com/products/true-random-number-generator-trng-ip"
+      },
+      {
+        "entity": "Crypto Quantique",
+        "page": 5,
+        "role_in_text": "Provider of TRNG IP",
+        "occurrence_sentence": "Crypto Quantique's TRNG IP delivers NIST- and BSI-compliant entropy for secure embedded and SoC designs.",
+        "source_document": "https://www.cryptoquantique.com/products/true-random-number-generator-trng-ip"
+      },
+      {
+        "entity": "Crypto Quantique",
+        "page": 8,
+        "role_in_text": "provider of true random number generator (TRNG) IP",
+        "occurrence_sentence": "Talk to Crypto Quantique experts today to learn more or start your evaluation.",
+        "source_document": "https://www.cryptoquantique.com/products/true-random-number-generator-trng-ip"
+      },
+      {
+        "entity": "Crypto Quantique",
+        "page": 9,
+        "role_in_text": "provider of quantum and deep-tech products",
+        "occurrence_sentence": "Talk to Crypto Quantique experts today to learn more or start your evaluation.",
+        "source_document": "https://www.cryptoquantique.com/products/true-random-number-generator-trng-ip"
+      },
+      {
+        "entity": "Crypto Quantique",
+        "page": 10,
+        "role_in_text": "provider of quantum and deep-tech products",
+        "occurrence_sentence": "[Crypto Quantique Logo](https://www.cryptoquantique.com/wp-content/uploads/2021/04/cryptoq-logo-stacked.svg)",
+        "source_document": "https://www.cryptoquantique.com/products/true-random-number-generator-trng-ip"
+      },
+      {
+        "entity": "Crypto Quantique",
+        "page": 11,
+        "role_in_text": "company",
+        "occurrence_sentence": "© 2026 Crypto Quantique",
+        "source_document": "https://www.cryptoquantique.com/products/true-random-number-generator-trng-ip"
+      },
+      {
+        "entity": "Crypto Quantique",
+        "page": 1,
+        "role_in_text": "provider of QuarkLink Fleet Management",
+        "occurrence_sentence": "https://www.cryptoquantique.com/products/quarklink-fleet-management/",
+        "source_document": "https://www.cryptoquantique.com/products/quarklink-fleet-management"
+      },
+      {
+        "entity": "Crypto Quantique",
+        "page": 2,
+        "role_in_text": "provider of security IP and cryptographic IP",
+        "occurrence_sentence": "Crypto Quantique",
+        "source_document": "https://www.cryptoquantique.com/products/quarklink-fleet-management"
+      },
+      {
+        "entity": "CryptoQuantique",
+        "page": 3,
+        "role_in_text": "provider of security IP, cryptographic IP, and device software",
+        "occurrence_sentence": "* Products",
+        "source_document": "https://www.cryptoquantique.com/products/quarklink-fleet-management"
+      },
+      {
+        "entity": "CryptoQuantique",
+        "page": 4,
+        "role_in_text": "Provider of QuarkLink™ fleet management solutions",
+        "occurrence_sentence": "QuarkLink™ – Fleet & Certificate Management",
+        "source_document": "https://www.cryptoquantique.com/products/quarklink-fleet-management"
+      },
+      {
+        "entity": "CryptoQuantique",
+        "page": 6,
+        "role_in_text": "Provider of QuarkLink fleet management solutions",
+        "occurrence_sentence": "https://www.cryptoquantique.com/products/quarklink-fleet-management",
+        "source_document": "https://www.cryptoquantique.com/products/quarklink-fleet-management"
+      },
+      {
+        "entity": "Crypto Quantique",
+        "page": 10,
+        "role_in_text": "Provider of QuarkLink and related products",
+        "occurrence_sentence": "QuarkLink provides secure boot, certificate management, and OTA update features which are key to building secure-by-design products ready for CE Marking and CRA compliance.",
+        "source_document": "https://www.cryptoquantique.com/products/quarklink-fleet-management"
+      },
+      {
+        "entity": "Crypto Quantique",
+        "page": 11,
+        "role_in_text": "Provider of QuarkLink Ignite™ and other products",
+        "occurrence_sentence": "QuarkLink Ignite™ is a completely free version of our SaaS product that allows you to experience the full power of QuarkLink™",
+        "source_document": "https://www.cryptoquantique.com/products/quarklink-fleet-management"
+      },
+      {
+        "entity": "Crypto Quantique",
+        "page": 12,
+        "role_in_text": "company",
+        "occurrence_sentence": "© 2026 Crypto Quantique",
+        "source_document": "https://www.cryptoquantique.com/products/quarklink-fleet-management"
+      },
+      {
+        "entity": "Crypto Quantique",
+        "page": 1,
+        "role_in_text": "provider of quantum-safe digital identity solutions",
+        "occurrence_sentence": "Crypto Quantique",
+        "source_document": "https://www.cryptoquantique.com/products/qdid"
+      },
+      {
+        "entity": "Crypto Quantique",
+        "page": 2,
+        "role_in_text": "Provider of security and cryptographic IP products",
+        "occurrence_sentence": "Crypto Quantique Logo",
+        "source_document": "https://www.cryptoquantique.com/products/qdid"
+      },
+      {
+        "entity": "CryptoQuantique",
+        "page": 3,
+        "role_in_text": "Provider of security IP, cryptographic IP, and device software solutions",
+        "occurrence_sentence": "Products * [Security IP](https://www.cryptoquantique.com/products/qdid/)",
+        "source_document": "https://www.cryptoquantique.com/products/qdid"
+      },
+      {
+        "entity": "CryptoQuantique",
+        "page": 4,
+        "role_in_text": "Provider of quantum and deep-tech solutions",
+        "occurrence_sentence": "Accelerating CRA Compliance with QuarkLink](https://www.cryptoquantique.com/accelerating-cra-compliance-with-quarklink/)",
+        "source_document": "https://www.cryptoquantique.com/products/qdid"
+      },
+      {
+        "entity": "CryptoQuantique",
+        "page": 5,
+        "role_in_text": "Provider of QDID™ PUF IP technology",
+        "occurrence_sentence": "Our patented PUF design generates a unique identity based on quantum tunnelling current variations through the gate terminal in any standard CMOS process.",
+        "source_document": "https://www.cryptoquantique.com/products/qdid"
+      },
+      {
+        "entity": "Crypto Quantique",
+        "page": 8,
+        "role_in_text": "experts",
+        "occurrence_sentence": "Talk to Crypto Quantique experts today to learn more or start your evaluation.",
+        "source_document": "https://www.cryptoquantique.com/products/qdid"
+      },
+      {
+        "entity": "Crypto Quantique",
+        "page": 9,
+        "role_in_text": "experts",
+        "occurrence_sentence": "Talk to Crypto Quantique experts today to learn more or start your evaluation.",
+        "source_document": "https://www.cryptoquantique.com/products/qdid"
+      },
+      {
+        "entity": "Crypto Quantique",
+        "page": 10,
+        "role_in_text": "Provider of quantum and deep-tech products",
+        "occurrence_sentence": "[QDID IP Product Brief](https://www.cryptoquantique.com/) [Download Silicon IP Products Brochure](https://www.cryptoquantique.com/) [Contact sales](https://www.cryptoquantique.com/home-page-v2/)",
+        "source_document": "https://www.cryptoquantique.com/products/qdid"
+      },
+      {
+        "entity": "Crypto Quantique",
+        "page": 11,
+        "role_in_text": "company",
+        "occurrence_sentence": "© 2026 Crypto Quantique",
+        "source_document": "https://www.cryptoquantique.com/products/qdid"
+      },
+      {
+        "entity": "Crypto Quantique",
+        "page": 1,
+        "role_in_text": "company",
+        "occurrence_sentence": "Crypto Quantique",
+        "source_document": "https://www.cryptoquantique.com/industry-4-0"
+      },
+      {
+        "entity": "Crypto Quantique",
+        "page": 2,
+        "role_in_text": "provider of security IP, cryptographic IP, and device software",
+        "occurrence_sentence": "Crypto Quantique",
+        "source_document": "https://www.cryptoquantique.com/industry-4-0"
+      },
+      {
+        "entity": "CryptoQuantique",
+        "page": 3,
+        "role_in_text": "Provider of security IP, cryptographic IP, and device software solutions.",
+        "occurrence_sentence": "Products",
+        "source_document": "https://www.cryptoquantique.com/industry-4-0"
+      },
+      {
+        "entity": "Crypto Quantique",
+        "page": 16,
+        "role_in_text": "Provider of cybersecurity solutions for IIoT",
+        "occurrence_sentence": "[![Crypto Quantique Logo](https://www.cryptoquantique.com/wp-content/uploads/2021/04/cryptoq-logo-stacked.svg)](https://www.cryptoquantique.com)",
+        "source_document": "https://www.cryptoquantique.com/industry-4-0"
+      },
+      {
+        "entity": "Crypto Quantique",
+        "page": 17,
+        "role_in_text": "Provider of cryptographic services and products",
+        "occurrence_sentence": "Cryptographic services: Comprehensive endpoint security requires proper implementation of cryptography across transport protocols, storage, and applications",
+        "source_document": "https://www.cryptoquantique.com/industry-4-0"
+      },
+      {
+        "entity": "Crypto Quantique",
+        "page": 18,
+        "role_in_text": "company",
+        "occurrence_sentence": "© 2026 Crypto Quantique",
+        "source_document": "https://www.cryptoquantique.com/industry-4-0"
+      },
+      {
+        "entity": "CryptoQuantique",
+        "page": 21,
+        "role_in_text": "Null",
+        "occurrence_sentence": "https://www.cryptoquantique.com/industry-4-0",
+        "source_document": "https://www.cryptoquantique.com/industry-4-0"
+      },
+      {
+        "entity": "Crypto Quantique",
+        "page": 1,
+        "role_in_text": "company",
+        "occurrence_sentence": "Crypto Quantique",
+        "source_document": "https://www.cryptoquantique.com/products/quarklink"
+      },
+      {
+        "entity": "Crypto Quantique",
+        "page": 2,
+        "role_in_text": "Provider of security and cryptographic IP products",
+        "occurrence_sentence": "Crypto Quantique",
+        "source_document": "https://www.cryptoquantique.com/products/quarklink"
+      },
+      {
+        "entity": "CryptoQuantique",
+        "page": 3,
+        "role_in_text": "Provider of quantum and deep-tech products and solutions",
+        "occurrence_sentence": "Products",
+        "source_document": "https://www.cryptoquantique.com/products/quarklink"
+      },
+      {
+        "entity": "CryptoQuantique",
+        "page": 4,
+        "role_in_text": "Provider of QuarkLink™, a device SDK and cloud platform",
+        "occurrence_sentence": "QuarkLink™ is a device SDK and cloud platform that lets teams building embedded software for connected devices reduce time, cost and risk of implementing security by design.",
+        "source_document": "https://www.cryptoquantique.com/products/quarklink"
+      },
+      {
+        "entity": "CryptoQuantique",
+        "page": 5,
+        "role_in_text": "provider of QuarkLink™",
+        "occurrence_sentence": "QuarkLink™ is a device SDK and cloud platform that lets teams building embedded software for connected devices reduce time, cost and risk of implementing security by design.",
+        "source_document": "https://www.cryptoquantique.com/products/quarklink"
+      },
+      {
+        "entity": "CryptoQuantique",
+        "page": 9,
+        "role_in_text": "Provider of QuarkLink™",
+        "occurrence_sentence": "source_document: \"https://www.cryptoquantique.com/products/quarklink\"",
+        "source_document": "https://www.cryptoquantique.com/products/quarklink"
+      },
+      {
+        "entity": "Crypto Quantique",
+        "page": 12,
+        "role_in_text": "Provider of QuarkLink™ and related products",
+        "occurrence_sentence": "QuarkLink Ignite™ is a completely free version of our SaaS product that allows you to experience the full power of QuarkLink™",
+        "source_document": "https://www.cryptoquantique.com/products/quarklink"
+      },
+      {
+        "entity": "Crypto Quantique",
+        "page": 13,
+        "role_in_text": "company",
+        "occurrence_sentence": "© 2026 Crypto Quantique",
+        "source_document": "https://www.cryptoquantique.com/products/quarklink"
+      },
+      {
+        "entity": "Crypto Quantique",
+        "page": 1,
+        "role_in_text": "Provider of fault-injection detection IP",
+        "occurrence_sentence": "Crypto Quantique",
+        "source_document": "https://www.cryptoquantique.com/products/fault-injection-detection-ip"
+      },
+      {
+        "entity": "Crypto Quantique",
+        "page": 2,
+        "role_in_text": "provider of security IP and cryptographic solutions",
+        "occurrence_sentence": "Close",
+        "source_document": "https://www.cryptoquantique.com/products/fault-injection-detection-ip"
+      },
+      {
+        "entity": "CryptoQuantique",
+        "page": 3,
+        "role_in_text": "Provider of security IP, cryptographic IP, and device software solutions.",
+        "occurrence_sentence": "* [Security IP](https://www.cryptoquantique.com/products/fault-injection-detection-ip/)",
+        "source_document": "https://www.cryptoquantique.com/products/fault-injection-detection-ip"
+      },
+      {
+        "entity": "Crypto Quantique",
+        "page": 4,
+        "role_in_text": "Provider of Fault Injection Detection IP",
+        "occurrence_sentence": "Crypto Quantique's Fault Injection Detection IP provides SoC designers with hardware-level defences against glitch-based attacks.",
+        "source_document": "https://www.cryptoquantique.com/products/fault-injection-detection-ip"
+      },
+      {
+        "entity": "Crypto Quantique",
+        "page": 5,
+        "role_in_text": "Provider of Fault Injection Detection IP",
+        "occurrence_sentence": "Crypto Quantique's Fault Injection Detection IP provides SoC designers with hardware-level defences against glitch-based attacks.",
+        "source_document": "https://www.cryptoquantique.com/products/fault-injection-detection-ip"
+      },
+      {
+        "entity": "Crypto Quantique",
+        "page": 6,
+        "role_in_text": "Provider of fault-injection detection IP",
+        "occurrence_sentence": "Use standalone or alongside other Crypto Quantique security IPs like Secure Element or QRoot Lite",
+        "source_document": "https://www.cryptoquantique.com/products/fault-injection-detection-ip"
+      },
+      {
+        "entity": "Crypto Quantique",
+        "page": 8,
+        "role_in_text": "experts",
+        "occurrence_sentence": "Want to protect your hardware security blocks from fault injection and glitch attacks? Talk to Crypto Quantique experts today to learn more or start your evaluation.",
+        "source_document": "https://www.cryptoquantique.com/products/fault-injection-detection-ip"
+      },
+      {
+        "entity": "Crypto Quantique",
+        "page": 9,
+        "role_in_text": "Provider of fault injection detection IP and related products",
+        "occurrence_sentence": "Talk to Crypto Quantique experts today to learn more or start your evaluation.",
+        "source_document": "https://www.cryptoquantique.com/products/fault-injection-detection-ip"
+      },
+      {
+        "entity": "Crypto Quantique",
+        "page": 10,
+        "role_in_text": "Provider of Silicon IP Products",
+        "occurrence_sentence": "Crypto Quantique Logo",
+        "source_document": "https://www.cryptoquantique.com/products/fault-injection-detection-ip"
+      },
+      {
+        "entity": "Crypto Quantique",
+        "page": 11,
+        "role_in_text": "company",
+        "occurrence_sentence": "© 2026 Crypto Quantique",
+        "source_document": "https://www.cryptoquantique.com/products/fault-injection-detection-ip"
+      },
+      {
+        "entity": "Crypto Quantique",
+        "page": 1,
+        "role_in_text": "provider of Agile Secure Element IP",
+        "occurrence_sentence": "Crypto Quantique",
+        "source_document": "https://www.cryptoquantique.com/products/agile-secure-element-ip"
+      },
+      {
+        "entity": "Crypto Quantique",
+        "page": 2,
+        "role_in_text": "provider of security IP and cryptographic solutions",
+        "occurrence_sentence": "Crypto Quantique",
+        "source_document": "https://www.cryptoquantique.com/products/agile-secure-element-ip"
+      },
+      {
+        "entity": "CryptoQuantique",
+        "page": 3,
+        "role_in_text": "Provider of security IP, cryptographic IP, and device software solutions.",
+        "occurrence_sentence": "Products",
+        "source_document": "https://www.cryptoquantique.com/products/agile-secure-element-ip"
+      },
+      {
+        "entity": "Crypto Quantique",
+        "page": 4,
+        "role_in_text": "Provider of Agile Secure Element IP",
+        "occurrence_sentence": "Crypto Quantique's Agile Secure Element IP is a pre-integrated, configurable security subsystem for embedding trust at the heart of your silicon.",
+        "source_document": "https://www.cryptoquantique.com/products/agile-secure-element-ip"
+      },
+      {
+        "entity": "Crypto Quantique",
+        "page": 5,
+        "role_in_text": "Provider of Agile Secure Element IP",
+        "occurrence_sentence": "Crypto Quantique's Agile Secure Element IP is a pre-integrated, configurable security subsystem for embedding trust at the heart of your silicon.",
+        "source_document": "https://www.cryptoquantique.com/products/agile-secure-element-ip"
+      },
+      {
+        "entity": "CryptoQuantique",
+        "page": 7,
+        "role_in_text": "Provider of Agile Secure Element IP",
+        "occurrence_sentence": "Looking to integrate a pre-certified secure element IP into your next SoC?",
+        "source_document": "https://www.cryptoquantique.com/products/agile-secure-element-ip"
+      },
+      {
+        "entity": "Crypto Quantique",
+        "page": 8,
+        "role_in_text": "experts",
+        "occurrence_sentence": "Talk to Crypto Quantique experts today to learn more or start your evaluation.",
+        "source_document": "https://www.cryptoquantique.com/products/agile-secure-element-ip"
+      },
+      {
+        "entity": "Crypto Quantique",
+        "page": 9,
+        "role_in_text": "provider of quantum and deep-tech products",
+        "occurrence_sentence": "Talk to Crypto Quantique experts today to learn more or start your evaluation.",
+        "source_document": "https://www.cryptoquantique.com/products/agile-secure-element-ip"
+      },
+      {
+        "entity": "Crypto Quantique",
+        "page": 10,
+        "role_in_text": "Provider of quantum and deep-tech products",
+        "occurrence_sentence": "[![Crypto Quantique Logo](https://www.cryptoquantique.com/wp-content/uploads/2021/04/cryptoq-logo-stacked.svg)](https://www.cryptoquantique.com)",
+        "source_document": "https://www.cryptoquantique.com/products/agile-secure-element-ip"
+      },
+      {
+        "entity": "Crypto Quantique",
+        "page": 11,
+        "role_in_text": "company",
+        "occurrence_sentence": "© 2026 Crypto Quantique",
+        "source_document": "https://www.cryptoquantique.com/products/agile-secure-element-ip"
+      },
+      {
+        "entity": "Crypto Quantique",
+        "page": 1,
+        "role_in_text": "company",
+        "occurrence_sentence": "Crypto Quantique",
+        "source_document": "https://www.cryptoquantique.com/automotive"
+      },
+      {
+        "entity": "Crypto Quantique",
+        "page": 2,
+        "role_in_text": "Provider of security and cryptographic solutions",
+        "occurrence_sentence": "Crypto Quantique Logo",
+        "source_document": "https://www.cryptoquantique.com/automotive"
+      },
+      {
+        "entity": "CryptoQuantique",
+        "page": 3,
+        "role_in_text": "Provider of security IP, cryptographic IP, and device software solutions.",
+        "occurrence_sentence": "Products",
+        "source_document": "https://www.cryptoquantique.com/automotive"
+      },
+      {
+        "entity": "CryptoQuantique",
+        "page": 4,
+        "role_in_text": "Provider of security solutions for automotive industry",
+        "occurrence_sentence": "ing CRA Compliance with QuarkLink](https://www.cryptoquantique.com/accelerating-cra-compliance-with-quarklink/)",
+        "source_document": "https://www.cryptoquantique.com/automotive"
+      },
+      {
+        "entity": "Crypto Quantique",
+        "page": 11,
+        "role_in_text": "Provider of automotive cybersecurity solutions",
+        "occurrence_sentence": "There are similar calls to use strong cryptographic functions to protect the integrity of software providers that are providing software updates, and to prevent the extraction of cryptographic keys.",
+        "source_document": "https://www.cryptoquantique.com/automotive"
+      },
+      {
+        "entity": "Crypto Quantique",
+        "page": 12,
+        "role_in_text": "Provider of automotive cybersecurity solutions",
+        "occurrence_sentence": "### Read our automotive cybersecurity whitepaper",
+        "source_document": "https://www.cryptoquantique.com/automotive"
+      },
+      {
+        "entity": "Crypto Quantique",
+        "page": 13,
+        "role_in_text": "company",
+        "occurrence_sentence": "© 2026 Crypto Quantique",
+        "source_document": "https://www.cryptoquantique.com/automotive"
+      },
+      {
+        "entity": "CryptoQuantique",
+        "page": 16,
+        "role_in_text": "Null",
+        "occurrence_sentence": "https://www.cryptoquantique.com/automotive",
+        "source_document": "https://www.cryptoquantique.com/automotive"
+      },
+      {
+        "entity": "Crypto Quantique",
+        "page": 1,
+        "role_in_text": "provider of qRoot Lite product",
+        "occurrence_sentence": "https://www.cryptoquantique.com/products/qroot-lite/",
+        "source_document": "https://www.cryptoquantique.com/products/qroot-lite"
+      },
+      {
+        "entity": "Crypto Quantique",
+        "page": 2,
+        "role_in_text": "Provider of security and cryptographic IP solutions",
+        "occurrence_sentence": "Crypto Quantique",
+        "source_document": "https://www.cryptoquantique.com/products/qroot-lite"
+      },
+      {
+        "entity": "CryptoQuantique",
+        "page": 3,
+        "role_in_text": "Provider of quantum and deep-tech products and solutions",
+        "occurrence_sentence": "Products",
+        "source_document": "https://www.cryptoquantique.com/products/qroot-lite"
+      },
+      {
+        "entity": "CryptoQuantique",
+        "page": 4,
+        "role_in_text": "Provider of QRoot Lite™ IP and related services",
+        "occurrence_sentence": "QRoot Lite™ is a silicon IP solution designed specifically for resource-constrained MCUs and IoT devices.",
+        "source_document": "https://www.cryptoquantique.com/products/qroot-lite"
+      },
+      {
+        "entity": "CryptoQuantique",
+        "page": 6,
+        "role_in_text": "Provider of QRoot Lite™ security IP block",
+        "occurrence_sentence": "Minimize silicon area and cost with a lightweight security IP block optimized for constrained microcontrollers and low-end SoCs",
+        "source_document": "https://www.cryptoquantique.com/products/qroot-lite"
+      },
+      {
+        "entity": "CryptoQuantique",
+        "page": 8,
+        "role_in_text": "Provider of QRoot Lite™ product",
+        "occurrence_sentence": "Safely store cryptographic keys and sensitive data by cryptographically binding storage to the device identity and its verified state.",
+        "source_document": "https://www.cryptoquantique.com/products/qroot-lite"
+      },
+      {
+        "entity": "CryptoQuantique",
+        "page": 10,
+        "role_in_text": "Provider of Q-Root Lite™",
+        "occurrence_sentence": "Authenticate the integrity and authenticity of your devices throughout their lifecycle and across the supply chain using verifiable attestation and secure identity features.",
+        "source_document": "https://www.cryptoquantique.com/products/qroot-lite"
+      },
+      {
+        "entity": "Crypto Quantique",
+        "page": 11,
+        "role_in_text": "provider of QRoot Lite™",
+        "occurrence_sentence": "Talk to Crypto Quantique experts today to learn more or start your evaluation.",
+        "source_document": "https://www.cryptoquantique.com/products/qroot-lite"
+      },
+      {
+        "entity": "Crypto Quantique",
+        "page": 12,
+        "role_in_text": "experts",
+        "occurrence_sentence": "Talk to Crypto Quantique experts today to learn more or start your evaluation.",
+        "source_document": "https://www.cryptoquantique.com/products/qroot-lite"
+      },
+      {
+        "entity": "Crypto Quantique",
+        "page": 13,
+        "role_in_text": "Company providing quantum and deep-tech products",
+        "occurrence_sentence": "[QRoot Lite IP Product Brief](https://www.cryptoquantique.com/) [Download Silicon IP Products Brochure](https://www.cryptoquantique.com/) [Contact sales](https://www.cryptoquantique.com/home-page-v2/)",
+        "source_document": "https://www.cryptoquantique.com/products/qroot-lite"
+      },
+      {
+        "entity": "Crypto Quantique",
+        "page": 14,
+        "role_in_text": "company",
+        "occurrence_sentence": "© 2026 Crypto Quantique",
+        "source_document": "https://www.cryptoquantique.com/products/qroot-lite"
+      },
+      {
+        "entity": "Crypto Quantique",
+        "page": 1,
+        "role_in_text": "Provider of chiplet security solutions",
+        "occurrence_sentence": "Crypto Quantique",
+        "source_document": "https://www.cryptoquantique.com/solutions/chiplet-security"
+      },
+      {
+        "entity": "Crypto Quantique",
+        "page": 2,
+        "role_in_text": "Provider of chiplet security solutions",
+        "occurrence_sentence": "Crypto Quantique",
+        "source_document": "https://www.cryptoquantique.com/solutions/chiplet-security"
+      },
+      {
+        "entity": "CryptoQuantique",
+        "page": 3,
+        "role_in_text": "Provider of security IP, cryptographic IP, and device software solutions.",
+        "occurrence_sentence": "Products * [Security IP](https://www.cryptoquantique.com/solutions/chiplet-security/)",
+        "source_document": "https://www.cryptoquantique.com/solutions/chiplet-security"
+      },
+      {
+        "entity": "Crypto Quantique",
+        "page": 4,
+        "role_in_text": "provider of hardware-anchored security IP",
+        "occurrence_sentence": "Crypto Quantique delivers hardware-anchored security IP purpose-built for heterogeneous chiplet integration, ensuring identity, attestation, and lifecycle management, without impacting performance or power budgets.",
+        "source_document": "https://www.cryptoquantique.com/solutions/chiplet-security"
+      },
+      {
+        "entity": "Crypto Quantique",
+        "page": 5,
+        "role_in_text": "delivers hardware-anchored security IP",
+        "occurrence_sentence": "Crypto Quantique delivers hardware-anchored security IP purpose-built for heterogeneous chiplet integration, ensuring identity, attestation, and lifecycle management, without impacting performance or power budgets.",
+        "source_document": "https://www.cryptoquantique.com/solutions/chiplet-security"
+      },
+      {
+        "entity": "CryptoQuantique",
+        "page": 7,
+        "role_in_text": "Provider of chiplet security solutions",
+        "occurrence_sentence": "We embed hardware-anchored identity directly into silicon using PUF-based Root of Trust IP.",
+        "source_document": "https://www.cryptoquantique.com/solutions/chiplet-security"
+      },
+      {
+        "entity": "CryptoQuantique",
+        "page": 8,
+        "role_in_text": "Provider of chiplet security solutions",
+        "occurrence_sentence": "Our IP is low-area, low-power, and designed to integrate without distorting architectural intent.",
+        "source_document": "https://www.cryptoquantique.com/solutions/chiplet-security"
+      },
+      {
+        "entity": "Crypto Quantique",
+        "page": 9,
+        "role_in_text": "provider of security solutions for chiplet systems",
+        "occurrence_sentence": "Our team can help you architect security around your chiplet system.",
+        "source_document": "https://www.cryptoquantique.com/solutions/chiplet-security"
+      },
+      {
+        "entity": "Crypto Quantique",
+        "page": 10,
+        "role_in_text": "provider of security solutions",
+        "occurrence_sentence": "[![Crypto Quantique Logo](https://www.cryptoquantique.com/wp-content/uploads/2021/04/cryptoq-logo-stacked.svg)](https://www.cryptoquantique.com)",
+        "source_document": "https://www.cryptoquantique.com/solutions/chiplet-security"
+      },
+      {
+        "entity": "Crypto Quantique",
+        "page": 11,
+        "role_in_text": "company",
+        "occurrence_sentence": "© 2026 Crypto Quantique",
+        "source_document": "https://www.cryptoquantique.com/solutions/chiplet-security"
+      },
+      {
+        "entity": "Crypto Quantique",
+        "page": 1,
+        "role_in_text": "company",
+        "occurrence_sentence": "Crypto Quantique",
+        "source_document": "https://www.cryptoquantique.com/wurth-cordelia"
+      },
+      {
+        "entity": "Crypto Quantique",
+        "page": 2,
+        "role_in_text": "provider of security IP and cryptographic solutions",
+        "occurrence_sentence": "Crypto Quantique",
+        "source_document": "https://www.cryptoquantique.com/wurth-cordelia"
+      },
+      {
+        "entity": "CryptoQuantique",
+        "page": 3,
+        "role_in_text": "Provider of security IP, cryptographic IP, and device software solutions.",
+        "occurrence_sentence": "Products",
+        "source_document": "https://www.cryptoquantique.com/wurth-cordelia"
+      },
+      {
+        "entity": "CryptoQuantique",
+        "page": 4,
+        "role_in_text": "Provider of QuarkLink IoT security platform",
+        "occurrence_sentence": "Accelerate time to market with Würth Cordelia-I and QuarkLink IoT security platform",
+        "source_document": "https://www.cryptoquantique.com/wurth-cordelia"
+      },
+      {
+        "entity": "Crypto Quantique",
+        "page": 5,
+        "role_in_text": "Provider of QuarkLink IoT security platform",
+        "occurrence_sentence": "Cordelia-I is ready-to-run with Crypto Quantique's QuarkLink chip-to-cloud IoT security platform.",
+        "source_document": "https://www.cryptoquantique.com/wurth-cordelia"
+      },
+      {
+        "entity": "Crypto Quantique",
+        "page": 6,
+        "role_in_text": "Provider of QuarkLink chip-to-cloud IoT security platform",
+        "occurrence_sentence": "Cordelia-I is ready-to-run with Crypto Quantique's QuarkLink chip-to-cloud IoT security platform.",
+        "source_document": "https://www.cryptoquantique.com/wurth-cordelia"
+      },
+      {
+        "entity": "Crypto Quantique",
+        "page": 7,
+        "role_in_text": "Company providing quantum and deep-tech solutions",
+        "occurrence_sentence": "[![Crypto Quantique Logo](https://www.cryptoquantique.com/wp-content/uploads/2021/04/cryptoq-logo-stacked.svg)](https://www.cryptoquantique.com)",
+        "source_document": "https://www.cryptoquantique.com/wurth-cordelia"
+      },
+      {
+        "entity": "Crypto Quantique",
+        "page": 8,
+        "role_in_text": "company",
+        "occurrence_sentence": "© 2026 Crypto Quantique",
+        "source_document": "https://www.cryptoquantique.com/wurth-cordelia"
+      },
+      {
+        "entity": "Crypto Quantique",
+        "page": 1,
+        "role_in_text": "company",
+        "occurrence_sentence": "Crypto Quantique",
+        "source_document": "https://www.cryptoquantique.com/medical"
+      },
+      {
+        "entity": "Crypto Quantique",
+        "page": 2,
+        "role_in_text": "Provider of security and cryptographic solutions",
+        "occurrence_sentence": "Crypto Quantique",
+        "source_document": "https://www.cryptoquantique.com/medical"
+      },
+      {
+        "entity": "CryptoQuantique",
+        "page": 3,
+        "role_in_text": "provider of security IP, cryptographic IP, and device software solutions",
+        "occurrence_sentence": "CryptoQuantique offers a range of security IP, cryptographic IP, and device software solutions.",
+        "source_document": "https://www.cryptoquantique.com/medical"
+      },
+      {
+        "entity": "CryptoQuantique",
+        "page": 4,
+        "role_in_text": "Provider of quantum cryptography solutions",
+        "occurrence_sentence": "ompliance with QuarkLink](https://www.cryptoquantique.com/accelerating-cra-compliance-with-quarklink/)",
+        "source_document": "https://www.cryptoquantique.com/medical"
+      },
+      {
+        "entity": "Crypto Quantique",
+        "page": 15,
+        "role_in_text": "provider of IoMT cybersecurity solutions",
+        "occurrence_sentence": "### Read our IoMT cybersecurity whitepaper",
+        "source_document": "https://www.cryptoquantique.com/medical"
+      },
+      {
+        "entity": "Crypto Quantique",
+        "page": 16,
+        "role_in_text": "company",
+        "occurrence_sentence": "© 2026 Crypto Quantique",
+        "source_document": "https://www.cryptoquantique.com/medical"
+      },
+      {
+        "entity": "Crypto Quantique",
+        "page": 1,
+        "role_in_text": "Provider of cryptographic cores IP",
+        "occurrence_sentence": "Crypto Quantique",
+        "source_document": "https://www.cryptoquantique.com/products/cryptographic-cores-ip"
+      },
+      {
+        "entity": "Crypto Quantique",
+        "page": 2,
+        "role_in_text": "provider of cryptographic cores IP",
+        "occurrence_sentence": "Crypto Quantique Logo",
+        "source_document": "https://www.cryptoquantique.com/products/cryptographic-cores-ip"
+      },
+      {
+        "entity": "CryptoQuantique",
+        "page": 3,
+        "role_in_text": "Provider of cryptographic cores and security solutions",
+        "occurrence_sentence": "CryptoQuantique offers a range of products including Security IP, Cryptographic IP, and Device Software.",
+        "source_document": "https://www.cryptoquantique.com/products/cryptographic-cores-ip"
+      },
+      {
+        "entity": "Crypto Quantique",
+        "page": 4,
+        "role_in_text": "Provider of cryptographic cores IP",
+        "occurrence_sentence": "Crypto Quantique's Cryptographic Cores IP portfolio delivers secure, high-performance implementations of symmetric, asymmetric, and post-quantum algorithms.",
+        "source_document": "https://www.cryptoquantique.com/products/cryptographic-cores-ip"
+      },
+      {
+        "entity": "Crypto Quantique",
+        "page": 5,
+        "role_in_text": "Provider of cryptographic cores IP",
+        "occurrence_sentence": "Crypto Quantique's Cryptographic Cores IP portfolio delivers secure, high-performance implementations of symmetric, asymmetric, and post-quantum algorithms.",
+        "source_document": "https://www.cryptoquantique.com/products/cryptographic-cores-ip"
+      },
+      {
+        "entity": "Crypto Quantique",
+        "page": 7,
+        "role_in_text": "provider of cryptographic cores and IP",
+        "occurrence_sentence": "Talk to Crypto Quantique experts today to learn more or start your evaluation.",
+        "source_document": "https://www.cryptoquantique.com/products/cryptographic-cores-ip"
+      },
+      {
+        "entity": "Crypto Quantique",
+        "page": 8,
+        "role_in_text": "provider of cryptographic cores IP and related products",
+        "occurrence_sentence": "Talk to Crypto Quantique experts today to learn more or start your evaluation.",
+        "source_document": "https://www.cryptoquantique.com/products/cryptographic-cores-ip"
+      },
+      {
+        "entity": "Crypto Quantique",
+        "page": 9,
+        "role_in_text": "provider of cryptographic cores IP",
+        "occurrence_sentence": "[Crypto Quantique Logo](https://www.cryptoquantique.com/wp-content/uploads/2021/04/cryptoq-logo-stacked.svg)",
+        "source_document": "https://www.cryptoquantique.com/products/cryptographic-cores-ip"
+      },
+      {
+        "entity": "Crypto Quantique",
+        "page": 10,
+        "role_in_text": "company",
+        "occurrence_sentence": "© 2026 Crypto Quantique",
+        "source_document": "https://www.cryptoquantique.com/products/cryptographic-cores-ip"
+      },
+      {
+        "entity": "Crypto Quantique",
+        "page": 1,
+        "role_in_text": "Company providing solutions for accelerating CRA compliance with QuarkLink",
+        "occurrence_sentence": "Crypto Quantique",
+        "source_document": "https://www.cryptoquantique.com/accelerating-cra-compliance-with-quarklink"
+      },
+      {
+        "entity": "Crypto Quantique",
+        "page": 2,
+        "role_in_text": "company",
+        "occurrence_sentence": "Crypto Quantique",
+        "source_document": "https://www.cryptoquantique.com/accelerating-cra-compliance-with-quarklink"
+      },
+      {
+        "entity": "CryptoQuantique",
+        "page": 3,
+        "role_in_text": "Provider of security IP, cryptographic IP, and device software solutions.",
+        "occurrence_sentence": "Products * [Security IP](https://www.cryptoquantique.com/accelerating-cra-compliance-with-quarklink/)",
+        "source_document": "https://www.cryptoquantique.com/accelerating-cra-compliance-with-quarklink"
+      },
+      {
+        "entity": "Crypto Quantique",
+        "page": 4,
+        "role_in_text": "developer of QuarkLink™",
+        "occurrence_sentence": "QuarkLink™ helps embedded software teams deliver secure-by-design products that align with the EU's Cyber Resilience Act. Now backed by an independent third-party assessment.",
+        "source_document": "https://www.cryptoquantique.com/accelerating-cra-compliance-with-quarklink"
+      },
+      {
+        "entity": "Crypto Quantique",
+        "page": 5,
+        "role_in_text": "Company providing QuarkLink™ for CRA compliance",
+        "occurrence_sentence": "Crypto Quantique commissioned cetome, a respected cybersecurity advisory firm, to independently assess how QuarkLink™ supports CRA compliance.",
+        "source_document": "https://www.cryptoquantique.com/accelerating-cra-compliance-with-quarklink"
+      },
+      {
+        "entity": "CryptoQuantique",
+        "page": 6,
+        "role_in_text": "provider of QuarkLink™",
+        "occurrence_sentence": "source_document: \"https://www.cryptoquantique.com/accelerating-cra-compliance-with-quarklink\"",
+        "source_document": "https://www.cryptoquantique.com/accelerating-cra-compliance-with-quarklink"
+      },
+      {
+        "entity": "Crypto Quantique",
+        "page": 7,
+        "role_in_text": "developer of QuarkLink™",
+        "occurrence_sentence": "QuarkLink™ simplifies security across the lifecycle, from first boot through OTA updates, helping developers focus on innovation while accelerating compliance.",
+        "source_document": "https://www.cryptoquantique.com/accelerating-cra-compliance-with-quarklink"
+      },
+      {
+        "entity": "Crypto Quantique",
+        "page": 8,
+        "role_in_text": "Provider of QuarkLink CRA Assessment and various IP products",
+        "occurrence_sentence": "[Download QuarkLink CRA Assessment](https://www.cryptoquantique.com/)",
+        "source_document": "https://www.cryptoquantique.com/accelerating-cra-compliance-with-quarklink"
+      },
+      {
+        "entity": "Crypto Quantique",
+        "page": 9,
+        "role_in_text": "company",
+        "occurrence_sentence": "© 2026 Crypto Quantique",
+        "source_document": "https://www.cryptoquantique.com/accelerating-cra-compliance-with-quarklink"
+      },
+      {
+        "entity": "Crypto Quantique",
+        "page": 1,
+        "role_in_text": "Provider of QuarkLink OTA product",
+        "occurrence_sentence": "Crypto Quantique",
+        "source_document": "https://www.cryptoquantique.com/products/quarklink-ota"
+      },
+      {
+        "entity": "Crypto Quantique",
+        "page": 2,
+        "role_in_text": "Provider of security and cryptographic IP products",
+        "occurrence_sentence": "Crypto Quantique",
+        "source_document": "https://www.cryptoquantique.com/products/quarklink-ota"
+      },
+      {
+        "entity": "CryptoQuantique",
+        "page": 3,
+        "role_in_text": "Provider of security IP, cryptographic IP, and device software solutions.",
+        "occurrence_sentence": "* [Security IP](https://www.cryptoquantique.com/products/quarklink-ota/)",
+        "source_document": "https://www.cryptoquantique.com/products/quarklink-ota"
+      },
+      {
+        "entity": "CryptoQuantique",
+        "page": 7,
+        "role_in_text": "developer of QuarkLink™",
+        "occurrence_sentence": "QuarkLink™ manages code signing keys and automates signing during build or release processes.",
+        "source_document": "https://www.cryptoquantique.com/products/quarklink-ota"
+      },
+      {
+        "entity": "CryptoQuantique",
+        "page": 9,
+        "role_in_text": "Provider of QuarkLink technology",
+        "occurrence_sentence": "QuarkLink provides secure boot, certificate management, and OTA update features which are key to building secure-by-design products ready for CE Marking and CRA compliance. [Download QuarkLink CRA Assessment](https://www.cryptoquantique.com/)",
+        "source_document": "https://www.cryptoquantique.com/products/quarklink-ota"
+      },
+      {
+        "entity": "Crypto Quantique",
+        "page": 10,
+        "role_in_text": "Provider of QuarkLink and related technologies",
+        "occurrence_sentence": "QuarkLink provides secure boot, certificate management, and OTA update features which are key to building secure-by-design products ready for CE Marking and CRA compliance.",
+        "source_document": "https://www.cryptoquantique.com/products/quarklink-ota"
+      },
+      {
+        "entity": "Crypto Quantique",
+        "page": 11,
+        "role_in_text": "Provider of QuarkLink Ignite™ and other products",
+        "occurrence_sentence": "QuarkLink Ignite™ is a completely free version of our SaaS product that allows you to experience the full power of QuarkLink™",
+        "source_document": "https://www.cryptoquantique.com/products/quarklink-ota"
+      },
+      {
+        "entity": "Crypto Quantique",
+        "page": 12,
+        "role_in_text": "company",
+        "occurrence_sentence": "© 2026 Crypto Quantique",
+        "source_document": "https://www.cryptoquantique.com/products/quarklink-ota"
+      },
+      {
+        "entity": "Crypto Quantique",
+        "page": 1,
+        "role_in_text": "provider of medical device solutions",
+        "occurrence_sentence": "Crypto Quantique",
+        "source_document": "https://www.cryptoquantique.com/medical-device-solution"
+      },
+      {
+        "entity": "Crypto Quantique",
+        "page": 2,
+        "role_in_text": "provider of security IP and cryptographic solutions",
+        "occurrence_sentence": "Close",
+        "source_document": "https://www.cryptoquantique.com/medical-device-solution"
+      },
+      {
+        "entity": "CryptoQuantique",
+        "page": 3,
+        "role_in_text": "Provider of medical device solutions and security IP",
+        "occurrence_sentence": "CryptoQuantique provides medical device solutions and security IP.",
+        "source_document": "https://www.cryptoquantique.com/medical-device-solution"
+      },
+      {
+        "entity": "CryptoQuantique",
+        "page": 4,
+        "role_in_text": "Provider of QuarkLink security solution",
+        "occurrence_sentence": "QuarkLink is a cross platform security solution that lets you cut development time, reduce costs, and ensure compliance—without the need for specialised security expertise.",
+        "source_document": "https://www.cryptoquantique.com/medical-device-solution"
+      },
+      {
+        "entity": "Crypto Quantique",
+        "page": 8,
+        "role_in_text": "Provider of medical device solutions",
+        "occurrence_sentence": "[Crypto Quantique Logo](https://www.cryptoquantique.com/wp-content/uploads/2021/04/cryptoq-logo-stacked.svg)",
+        "source_document": "https://www.cryptoquantique.com/medical-device-solution"
+      },
+      {
+        "entity": "Crypto Quantique",
+        "page": 9,
+        "role_in_text": "Company",
+        "occurrence_sentence": "© 2026 Crypto Quantique",
+        "source_document": "https://www.cryptoquantique.com/medical-device-solution"
+      },
+      {
+        "entity": "Crypto Quantique",
+        "page": 1,
+        "role_in_text": "provider of digital PUF IP",
+        "occurrence_sentence": "Crypto Quantique",
+        "source_document": "https://www.cryptoquantique.com/products/digital-puf-ip"
+      },
+      {
+        "entity": "Crypto Quantique",
+        "page": 2,
+        "role_in_text": "provider of security and cryptographic IP products",
+        "occurrence_sentence": "Crypto Quantique",
+        "source_document": "https://www.cryptoquantique.com/products/digital-puf-ip"
+      },
+      {
+        "entity": "CryptoQuantique",
+        "page": 3,
+        "role_in_text": "provider of security IP, cryptographic IP, and device software solutions",
+        "occurrence_sentence": "Products * [Security IP](https://www.cryptoquantique.com/products/digital-puf-ip/)",
+        "source_document": "https://www.cryptoquantique.com/products/digital-puf-ip"
+      },
+      {
+        "entity": "CryptoQuantique",
+        "page": 4,
+        "role_in_text": "Provider of digital PUF IP and related services",
+        "occurrence_sentence": "https://www.cryptoquantique.com/products/digital-puf-ip",
+        "source_document": "https://www.cryptoquantique.com/products/digital-puf-ip"
+      },
+      {
+        "entity": "CryptoQuantique",
+        "page": 5,
+        "role_in_text": "Provider of Digital PUF IP",
+        "occurrence_sentence": "Generate unclonable 128 or 256-bit seeds with a compact, logic-based PUF that drops into any SoC. Digital PUF IP adds true hardware identity for secure boot, key generation, and device authentication with minimal silicon overhead.",
+        "source_document": "https://www.cryptoquantique.com/products/digital-puf-ip"
+      },
+      {
+        "entity": "CryptoQuantique",
+        "page": 6,
+        "role_in_text": "Developer of Digital PUF IP",
+        "occurrence_sentence": "Generate unclonable 128 or 256-bit seeds with a compact, logic-based PUF that drops into any SoC. Digital PUF IP adds true hardware identity for secure boot, key generation, and device authentication with minimal silicon overhead.",
+        "source_document": "https://www.cryptoquantique.com/products/digital-puf-ip"
+      },
+      {
+        "entity": "CryptoQuantique",
+        "page": 9,
+        "role_in_text": "Provider of Digital PUF IP",
+        "occurrence_sentence": "Talk to us about evaluation RTL, reference fuzz-extractor code, and integration support.",
+        "source_document": "https://www.cryptoquantique.com/products/digital-puf-ip"
+      },
+      {
+        "entity": "Crypto Quantique",
+        "page": 10,
+        "role_in_text": "Provider of Digital PUF IP and other related products",
+        "occurrence_sentence": "Talk to us about evaluation RTL, reference fuzz-extractor code, and integration support.",
+        "source_document": "https://www.cryptoquantique.com/products/digital-puf-ip"
+      },
+      {
+        "entity": "Crypto Quantique",
+        "page": 11,
+        "role_in_text": "Provider of digital PUF IP and other silicon IP products",
+        "occurrence_sentence": "[Digital PUF IP Product Brief](https://www.cryptoquantique.com/) [ Silicon IP Products Brochure](https://www.cryptoquantique.com/) [Contact sales](https://www.cryptoquantique.com/home-page-v2/)",
+        "source_document": "https://www.cryptoquantique.com/products/digital-puf-ip"
+      },
+      {
+        "entity": "Crypto Quantique",
+        "page": 12,
+        "role_in_text": "company",
+        "occurrence_sentence": "© 2026 Crypto Quantique",
+        "source_document": "https://www.cryptoquantique.com/products/digital-puf-ip"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": ""
+  },
+  {
+    "entity": "Derek Yu",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "individual",
+    "role_in_text": "individual",
+    "technology_area": "quantum cryptography",
+    "occurrence_sentence": "\"We had keys stored on laptops and had problems accessing devices\" — Derek Yu",
+    "source_document": "https://www.cryptoquantique.com/medical-device-solution",
+    "page": 7,
+    "confidence": "",
+    "canonical_actor_key": "derek yu",
+    "aliases": [
+      "Derek Yu"
+    ],
+    "pages": [
+      7
+    ],
+    "mentions": [
+      {
+        "entity": "Derek Yu",
+        "page": 7,
+        "role_in_text": "individual",
+        "occurrence_sentence": "\"We had keys stored on laptops and had problems accessing devices\" — Derek Yu",
+        "source_document": "https://www.cryptoquantique.com/medical-device-solution"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": ""
+  },
+  {
+    "entity": "Digital Twin Consortium",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "non-governmental and non-profit organizations",
+    "role_in_text": "Merged with the Industry IoT Consortium",
+    "technology_area": "deep tech general",
+    "occurrence_sentence": "The Industry Io",
+    "source_document": "https://www.cryptoquantique.com/industry-4-0",
+    "page": 13,
+    "canonical_actor_key": "digital twin consortium",
+    "aliases": [
+      "Digital Twin Consortium"
+    ],
+    "pages": [
+      13,
+      14
+    ],
+    "mentions": [
+      {
+        "entity": "Digital Twin Consortium",
+        "page": 13,
+        "role_in_text": "Merged with the Industry IoT Consortium",
+        "occurrence_sentence": "The Industry Io",
+        "source_document": "https://www.cryptoquantique.com/industry-4-0"
+      },
+      {
+        "entity": "Digital Twin Consortium",
+        "page": 14,
+        "role_in_text": "Merged with the Industry IoT Consortium",
+        "occurrence_sentence": "The Industry Io",
+        "source_document": "https://www.cryptoquantique.com/industry-4-0"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": ""
+  },
+  {
+    "entity": "Director of Security Engineering",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "individual",
+    "role_in_text": "Director of Security Engineering, Medical Device Maker",
+    "technology_area": "deep tech general",
+    "occurrence_sentence": "\"Implementing security features can take 15-25% of our project time.\" – Director of Security Engineering, Medical Device Maker",
+    "source_document": "https://www.cryptoquantique.com/medical-device-solution",
+    "page": 5,
+    "confidence": "high",
+    "canonical_actor_key": "director of security engineering",
+    "aliases": [
+      "Director of Security Engineering"
+    ],
+    "pages": [
+      5,
+      6
+    ],
+    "mentions": [
+      {
+        "entity": "Director of Security Engineering",
+        "page": 5,
+        "role_in_text": "Director of Security Engineering, Medical Device Maker",
+        "occurrence_sentence": "\"Implementing security features can take 15-25% of our project time.\" – Director of Security Engineering, Medical Device Maker",
+        "source_document": "https://www.cryptoquantique.com/medical-device-solution"
+      },
+      {
+        "entity": "Director of Security Engineering",
+        "page": 6,
+        "role_in_text": "Director of Security Engineering, Medical Device Maker",
+        "occurrence_sentence": "\"Implementing security features can take 15-25% of our project time.\" – Director of Security Engineering, Medical Device Maker",
+        "source_document": "https://www.cryptoquantique.com/medical-device-solution"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": ""
+  },
+  {
+    "entity": "European Union",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "supranational government institutions",
+    "role_in_text": "Regulatory body for medical devices",
+    "technology_area": "deep tech general",
+    "occurrence_sentence": "Medical device makers already must comply with multiple standards, and slightly differently drawn regulations in different countries and regions. Here are some which are relevant to IoMT devices and deployments.",
+    "source_document": "https://www.cryptoquantique.com/medical",
+    "page": 7,
+    "confidence": "high",
+    "canonical_actor_key": "european union",
+    "aliases": [
+      "EU",
+      "European Union",
+      "European Union (EU)"
+    ],
+    "pages": [
+      6,
+      7,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      17,
+      19
+    ],
+    "mentions": [
+      {
+        "entity": "European Union",
+        "page": 13,
+        "role_in_text": "Co-funded by the Horizon Programme",
+        "occurrence_sentence": "![Co-funded by the Horizon Programme of the European Union](https://www.cryptoquantique.com/wp-content/themes/cryptoq-wp/images/co-funded-h2020-logo.png)",
+        "source_document": "https://www.cryptoquantique.com/products/quarklink-provisioning"
+      },
+      {
+        "entity": "European Union",
+        "page": 12,
+        "role_in_text": "Co-funded by the Horizon Programme",
+        "occurrence_sentence": "![Co-funded by the Horizon Programme of the European Union](https://www.cryptoquantique.com/wp-content/themes/cryptoq-wp/images/co-funded-h2020-logo.png)",
+        "source_document": "https://www.cryptoquantique.com"
+      },
+      {
+        "entity": "European Union",
+        "page": 12,
+        "role_in_text": "Co-funded by the Horizon Programme",
+        "occurrence_sentence": "![Co-funded by the Horizon Programme of the European Union](https://www.cryptoquantique.com/wp-content/themes/cryptoq-wp/images/co-funded-h2020-logo.png)",
+        "source_document": "https://www.cryptoquantique.com/products/true-random-number-generator-trng-ip"
+      },
+      {
+        "entity": "European Union",
+        "page": 13,
+        "role_in_text": "Co-funded by the Horizon Programme",
+        "occurrence_sentence": "![Co-funded by the Horizon Programme of the European Union](https://www.cryptoquantique.com/wp-content/themes/cryptoq-wp/images/co-funded-h2020-logo.png)",
+        "source_document": "https://www.cryptoquantique.com/products/quarklink-fleet-management"
+      },
+      {
+        "entity": "European Union",
+        "page": 12,
+        "role_in_text": "Co-funded by the Horizon Programme",
+        "occurrence_sentence": "![Co-funded by the Horizon Programme of the European Union](https://www.cryptoquantique.com/wp-content/themes/cryptoq-wp/images/co-funded-h2020-logo.png)",
+        "source_document": "https://www.cryptoquantique.com/products/qdid"
+      },
+      {
+        "entity": "European Union",
+        "page": 19,
+        "role_in_text": "Co-funded by the Horizon Programme",
+        "occurrence_sentence": "![Co-funded by the Horizon Programme of the European Union](https://www.cryptoquantique.com/wp-content/themes/cryptoq-wp/images/co-funded-h2020-logo.png)",
+        "source_document": "https://www.cryptoquantique.com/industry-4-0"
+      },
+      {
+        "entity": "European Union",
+        "page": 14,
+        "role_in_text": "Co-funded by the Horizon Programme",
+        "occurrence_sentence": "![Co-funded by the Horizon Programme of the European Union](https://www.cryptoquantique.com/wp-content/themes/cryptoq-wp/images/co-funded-h2020-logo.png)",
+        "source_document": "https://www.cryptoquantique.com/products/quarklink"
+      },
+      {
+        "entity": "European Union",
+        "page": 12,
+        "role_in_text": "Co-funded by the Horizon Programme",
+        "occurrence_sentence": "![Co-funded by the Horizon Programme of the European Union](https://www.cryptoquantique.com/wp-content/themes/cryptoq-wp/images/co-funded-h2020-logo.png)",
+        "source_document": "https://www.cryptoquantique.com/products/fault-injection-detection-ip"
+      },
+      {
+        "entity": "European Union",
+        "page": 12,
+        "role_in_text": "Co-funded by the Horizon Programme",
+        "occurrence_sentence": "![Co-funded by the Horizon Programme of the European Union](https://www.cryptoquantique.com/wp-content/themes/cryptoq-wp/images/co-funded-h2020-logo.png)",
+        "source_document": "https://www.cryptoquantique.com/products/agile-secure-element-ip"
+      },
+      {
+        "entity": "European Union",
+        "page": 14,
+        "role_in_text": "Co-funded by the Horizon Programme",
+        "occurrence_sentence": "![Co-funded by the Horizon Programme of the European Union](https://www.cryptoquantique.com/wp-content/themes/cryptoq-wp/images/co-funded-h2020-logo.png)",
+        "source_document": "https://www.cryptoquantique.com/automotive"
+      },
+      {
+        "entity": "European Union",
+        "page": 15,
+        "role_in_text": "Co-funded by the Horizon Programme",
+        "occurrence_sentence": "![Co-funded by the Horizon Programme of the European Union](https://www.cryptoquantique.com/wp-content/themes/cryptoq-wp/images/co-funded-h2020-logo.png)",
+        "source_document": "https://www.cryptoquantique.com/products/qroot-lite"
+      },
+      {
+        "entity": "European Union (EU)",
+        "page": 6,
+        "role_in_text": "Regulatory body governing medical devices",
+        "occurrence_sentence": "Here are some which are relevant to IoMT devices and deployments. ### European Union (EU)",
+        "source_document": "https://www.cryptoquantique.com/medical"
+      },
+      {
+        "entity": "European Union",
+        "page": 7,
+        "role_in_text": "Regulatory body for medical devices",
+        "occurrence_sentence": "Medical device makers already must comply with multiple standards, and slightly differently drawn regulations in different countries and regions. Here are some which are relevant to IoMT devices and deployments.",
+        "source_document": "https://www.cryptoquantique.com/medical"
+      },
+      {
+        "entity": "European Union",
+        "page": 17,
+        "role_in_text": "Co-funded by the Horizon Programme",
+        "occurrence_sentence": "![Co-funded by the Horizon Programme of the European Union](https://www.cryptoquantique.com/wp-content/themes/cryptoq-wp/images/co-funded-h2020-logo.png)",
+        "source_document": "https://www.cryptoquantique.com/medical"
+      },
+      {
+        "entity": "European Union",
+        "page": 11,
+        "role_in_text": "Co-funded by the Horizon Programme",
+        "occurrence_sentence": "![Co-funded by the Horizon Programme of the European Union](https://www.cryptoquantique.com/wp-content/themes/cryptoq-wp/images/co-funded-h2020-logo.png)",
+        "source_document": "https://www.cryptoquantique.com/products/cryptographic-cores-ip"
+      },
+      {
+        "entity": "European Union",
+        "page": 10,
+        "role_in_text": "Co-funded by the Horizon Programme",
+        "occurrence_sentence": "![Co-funded by the Horizon Programme of the European Union](https://www.cryptoquantique.com/wp-content/themes/cryptoq-wp/images/co-funded-h2020-logo.png)",
+        "source_document": "https://www.cryptoquantique.com/accelerating-cra-compliance-with-quarklink"
+      },
+      {
+        "entity": "European Union",
+        "page": 11,
+        "role_in_text": "Co-funded by the Horizon Programme",
+        "occurrence_sentence": "![Co-funded by the Horizon Programme of the European Union](https://www.cryptoquantique.com/wp-content/themes/cryptoq-wp/images/co-funded-h2020-logo.png)",
+        "source_document": "https://www.cryptoquantique.com/accelerating-cra-compliance-with-quarklink"
+      },
+      {
+        "entity": "European Union",
+        "page": 13,
+        "role_in_text": "Co-funded by the Horizon Programme",
+        "occurrence_sentence": "![Co-funded by the Horizon Programme of the European Union](https://www.cryptoquantique.com/wp-content/themes/cryptoq-wp/images/co-funded-h2020-logo.png)",
+        "source_document": "https://www.cryptoquantique.com/products/quarklink-ota"
+      },
+      {
+        "entity": "European Union",
+        "page": 14,
+        "role_in_text": "Co-funded by the Horizon Programme",
+        "occurrence_sentence": "![Co-funded by the Horizon Programme of the European Union](https://www.cryptoquantique.com/wp-content/themes/cryptoq-wp/images/co-funded-h2020-logo.png)",
+        "source_document": "https://www.cryptoquantique.com/products/quarklink-ota"
+      },
+      {
+        "entity": "European Union",
+        "page": 10,
+        "role_in_text": "Co-funded by the Horizon Programme",
+        "occurrence_sentence": "![Co-funded by the Horizon Programme of the European Union](https://www.cryptoquantique.com/wp-content/themes/cryptoq-wp/images/co-funded-h2020-logo.png)",
+        "source_document": "https://www.cryptoquantique.com/medical-device-solution"
+      },
+      {
+        "entity": "European Union",
+        "page": 11,
+        "role_in_text": "Co-funded by the Horizon Programme",
+        "occurrence_sentence": "![Co-funded by the Horizon Programme of the European Union](https://www.cryptoquantique.com/wp-content/themes/cryptoq-wp/images/co-funded-h2020-logo.png)",
+        "source_document": "https://www.cryptoquantique.com/medical-device-solution"
+      },
+      {
+        "entity": "European Union",
+        "page": 13,
+        "role_in_text": "Co-funded by the Horizon Programme",
+        "occurrence_sentence": "![Co-funded by the Horizon Programme of the European Union](https://www.cryptoquantique.com/wp-content/themes/cryptoq-wp/images/co-funded-h2020-logo.png)",
+        "source_document": "https://www.cryptoquantique.com/products/digital-puf-ip"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": ""
+  },
+  {
+    "entity": "GitHub",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "large enterprises",
+    "role_in_text": "CLI supports GitHub",
+    "technology_area": "deep tech general",
+    "occurrence_sentence": "CLI supports GitHub, GitLab, Jenkins, and other modern DevOps pipelines",
+    "source_document": "https://www.cryptoquantique.com/products/quarklink-provisioning",
+    "page": 8,
+    "canonical_actor_key": "github",
+    "aliases": [
+      "GitHub",
+      "Github"
+    ],
+    "pages": [
+      1,
+      2,
+      8
+    ],
+    "mentions": [
+      {
+        "entity": "GitHub",
+        "page": 8,
+        "role_in_text": "CLI supports GitHub",
+        "occurrence_sentence": "CLI supports GitHub, GitLab, Jenkins, and other modern DevOps pipelines",
+        "source_document": "https://www.cryptoquantique.com/products/quarklink-provisioning"
+      },
+      {
+        "entity": "Github",
+        "page": 2,
+        "role_in_text": "Platform for code hosting and version control",
+        "occurrence_sentence": "Github",
+        "source_document": "https://www.cryptoquantique.com"
+      },
+      {
+        "entity": "Github",
+        "page": 2,
+        "role_in_text": "Platform for code hosting and version control",
+        "occurrence_sentence": "Github",
+        "source_document": "https://www.cryptoquantique.com/products/true-random-number-generator-trng-ip"
+      },
+      {
+        "entity": "Github",
+        "page": 2,
+        "role_in_text": "platform for code hosting",
+        "occurrence_sentence": "Github",
+        "source_document": "https://www.cryptoquantique.com/products/quarklink-fleet-management"
+      },
+      {
+        "entity": "Github",
+        "page": 2,
+        "role_in_text": "Platform for code hosting and version control",
+        "occurrence_sentence": "Github",
+        "source_document": "https://www.cryptoquantique.com/products/qdid"
+      },
+      {
+        "entity": "Github",
+        "page": 2,
+        "role_in_text": "platform for code hosting and version control",
+        "occurrence_sentence": "Github",
+        "source_document": "https://www.cryptoquantique.com/industry-4-0"
+      },
+      {
+        "entity": "Github",
+        "page": 2,
+        "role_in_text": "platform for code hosting",
+        "occurrence_sentence": "Github",
+        "source_document": "https://www.cryptoquantique.com/products/agile-secure-element-ip"
+      },
+      {
+        "entity": "Github",
+        "page": 2,
+        "role_in_text": "Platform for code hosting and collaboration",
+        "occurrence_sentence": "Github",
+        "source_document": "https://www.cryptoquantique.com/automotive"
+      },
+      {
+        "entity": "Github",
+        "page": 2,
+        "role_in_text": "Platform for code hosting",
+        "occurrence_sentence": "Github",
+        "source_document": "https://www.cryptoquantique.com/products/qroot-lite"
+      },
+      {
+        "entity": "Github",
+        "page": 2,
+        "role_in_text": "Platform for code hosting and version control",
+        "occurrence_sentence": "Github",
+        "source_document": "https://www.cryptoquantique.com/solutions/chiplet-security"
+      },
+      {
+        "entity": "Github",
+        "page": 2,
+        "role_in_text": "Platform for code hosting and version control",
+        "occurrence_sentence": "Github",
+        "source_document": "https://www.cryptoquantique.com/medical"
+      },
+      {
+        "entity": "Github",
+        "page": 1,
+        "role_in_text": "Platform for code hosting",
+        "occurrence_sentence": "Github",
+        "source_document": "https://www.cryptoquantique.com/products/cryptographic-cores-ip"
+      },
+      {
+        "entity": "Github",
+        "page": 2,
+        "role_in_text": "platform for code hosting",
+        "occurrence_sentence": "Github",
+        "source_document": "https://www.cryptoquantique.com/products/cryptographic-cores-ip"
+      },
+      {
+        "entity": "Github",
+        "page": 2,
+        "role_in_text": "platform",
+        "occurrence_sentence": "Github",
+        "source_document": "https://www.cryptoquantique.com/accelerating-cra-compliance-with-quarklink"
+      },
+      {
+        "entity": "Github",
+        "page": 2,
+        "role_in_text": "platform for code hosting and version control",
+        "occurrence_sentence": "Github",
+        "source_document": "https://www.cryptoquantique.com/medical-device-solution"
+      },
+      {
+        "entity": "Github",
+        "page": 1,
+        "role_in_text": "platform for code repository",
+        "occurrence_sentence": "Github",
+        "source_document": "https://www.cryptoquantique.com/products/digital-puf-ip"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": ""
+  },
+  {
+    "entity": "GlobalFoundries (GF)",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "large enterprises",
+    "role_in_text": "fab",
+    "technology_area": "semiconductors",
+    "occurrence_sentence": "QDID™ PUF IP has been verified on major fabs (TSMC, GF, UMC) across Bulk CMOS, FDSOI, FinFET process technologies (",
+    "source_document": "https://www.cryptoquantique.com/products/qdid",
+    "page": 6,
+    "canonical_actor_key": "globalfoundries",
+    "aliases": [
+      "GF",
+      "GlobalFoundries",
+      "GlobalFoundries (GF)"
+    ],
+    "pages": [
+      6,
+      7
+    ],
+    "mentions": [
+      {
+        "entity": "GlobalFoundries (GF)",
+        "page": 6,
+        "role_in_text": "fab",
+        "occurrence_sentence": "QDID™ PUF IP has been verified on major fabs (TSMC, GF, UMC) across Bulk CMOS, FDSOI, FinFET process technologies (",
+        "source_document": "https://www.cryptoquantique.com/products/qdid"
+      },
+      {
+        "entity": "GlobalFoundries (GF)",
+        "page": 7,
+        "role_in_text": "fabrication",
+        "occurrence_sentence": "QDID™ PUF IP has been verified on major fabs (TSMC, GF, UMC) across Bulk CMOS, FDSOI, Fin",
+        "source_document": "https://www.cryptoquantique.com/products/qdid"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": ""
+  },
+  {
+    "entity": "Industry IoT Consortium (IIC)",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "non-governmental and non-profit organizations",
+    "role_in_text": "Produced guidance for endpoint security in IIoT applications",
+    "technology_area": "deep tech general",
+    "occurrence_sentence": "The Industry IoT Consortium (IIC), another body which is trying to accelerate the uptake of the IIoT and which has just merged with the Digital Twin Consortium, has produced its own guidance for endpoint security in IIoT applications.",
+    "source_document": "https://www.cryptoquantique.com/industry-4-0",
+    "page": 13,
+    "confidence": "high",
+    "canonical_actor_key": "industry iot consortium",
+    "aliases": [
+      "IIC",
+      "Industry IoT Consortium",
+      "Industry IoT Consortium (IIC)"
+    ],
+    "pages": [
+      13,
+      14
+    ],
+    "mentions": [
+      {
+        "entity": "Industry IoT Consortium (IIC)",
+        "page": 13,
+        "role_in_text": "Produced guidance for endpoint security in IIoT applications",
+        "occurrence_sentence": "The Industry IoT Consortium (IIC), another body which is trying to accelerate the uptake of the IIoT and which has just merged with the Digital Twin Consortium, has produced its own guidance for endpoint security in IIoT applications.",
+        "source_document": "https://www.cryptoquantique.com/industry-4-0"
+      },
+      {
+        "entity": "Industry IoT Consortium (IIC)",
+        "page": 14,
+        "role_in_text": "Produced guidance for endpoint security in IIoT applications",
+        "occurrence_sentence": "The Industry IoT Consortium (IIC), another body which is trying to accelerate the uptake of the IIoT and which has just merged with the Digital Twin Consortium, has produced its own guidance for endpoint security in IIoT applications.",
+        "source_document": "https://www.cryptoquantique.com/industry-4-0"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": ""
+  },
+  {
+    "entity": "International Medical Device Regulators Forum",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "supranational government institutions",
+    "role_in_text": "Published a guide on medical device cybersecurity.",
+    "technology_area": "deep tech general",
+    "occurrence_sentence": "International Medical Device Regulators Forum * A consortium of medical device regulation bodies, which published “[Principles and Practices for Medical Device Cybersecurity",
+    "source_document": "https://www.cryptoquantique.com/medical",
+    "page": 13,
+    "canonical_actor_key": "international medical device regulators forum",
+    "aliases": [
+      "International Medical Device Regulators Forum"
+    ],
+    "pages": [
+      13
+    ],
+    "mentions": [
+      {
+        "entity": "International Medical Device Regulators Forum",
+        "page": 13,
+        "role_in_text": "Published a guide on medical device cybersecurity.",
+        "occurrence_sentence": "International Medical Device Regulators Forum * A consortium of medical device regulation bodies, which published “[Principles and Practices for Medical Device Cybersecurity",
+        "source_document": "https://www.cryptoquantique.com/medical"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": ""
+  },
+  {
+    "entity": "IoT Security Foundation",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "business support institutions",
+    "role_in_text": "IoT Security Foundation",
+    "technology_area": "semiconductors",
+    "occurrence_sentence": "![IoT Security Foundation Logo",
+    "source_document": "https://www.cryptoquantique.com",
+    "page": 12,
+    "canonical_actor_key": "iot security foundation",
+    "aliases": [
+      "IoT Security Foundation"
+    ],
+    "pages": [
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      17,
+      19
+    ],
+    "mentions": [
+      {
+        "entity": "IoT Security Foundation",
+        "page": 13,
+        "role_in_text": "IoT Security Foundation",
+        "occurrence_sentence": "![IoT Security Foundation Logo",
+        "source_document": "https://www.cryptoquantique.com/products/quarklink-provisioning"
+      },
+      {
+        "entity": "IoT Security Foundation",
+        "page": 12,
+        "role_in_text": "IoT Security Foundation",
+        "occurrence_sentence": "![IoT Security Foundation Logo",
+        "source_document": "https://www.cryptoquantique.com"
+      },
+      {
+        "entity": "IoT Security Foundation",
+        "page": 12,
+        "role_in_text": "IoT Security Foundation",
+        "occurrence_sentence": "![IoT Security Foundation Logo",
+        "source_document": "https://www.cryptoquantique.com/products/true-random-number-generator-trng-ip"
+      },
+      {
+        "entity": "IoT Security Foundation",
+        "page": 13,
+        "role_in_text": "IoT Security Foundation",
+        "occurrence_sentence": "![IoT Security Foundation Logo",
+        "source_document": "https://www.cryptoquantique.com/products/quarklink-fleet-management"
+      },
+      {
+        "entity": "IoT Security Foundation",
+        "page": 12,
+        "role_in_text": "IoT Security Foundation",
+        "occurrence_sentence": "![IoT Security Foundation Logo",
+        "source_document": "https://www.cryptoquantique.com/products/qdid"
+      },
+      {
+        "entity": "IoT Security Foundation",
+        "page": 19,
+        "role_in_text": "IoT Security Foundation",
+        "occurrence_sentence": "![IoT Security Foundation Logo",
+        "source_document": "https://www.cryptoquantique.com/industry-4-0"
+      },
+      {
+        "entity": "IoT Security Foundation",
+        "page": 14,
+        "role_in_text": "IoT Security Foundation",
+        "occurrence_sentence": "![IoT Security Foundation Logo",
+        "source_document": "https://www.cryptoquantique.com/products/quarklink"
+      },
+      {
+        "entity": "IoT Security Foundation",
+        "page": 12,
+        "role_in_text": "IoT Security Foundation",
+        "occurrence_sentence": "![IoT Security Foundation Logo",
+        "source_document": "https://www.cryptoquantique.com/products/fault-injection-detection-ip"
+      },
+      {
+        "entity": "IoT Security Foundation",
+        "page": 12,
+        "role_in_text": "IoT Security Foundation",
+        "occurrence_sentence": "![IoT Security Foundation Logo",
+        "source_document": "https://www.cryptoquantique.com/products/agile-secure-element-ip"
+      },
+      {
+        "entity": "IoT Security Foundation",
+        "page": 14,
+        "role_in_text": "IoT Security Foundation",
+        "occurrence_sentence": "![IoT Security Foundation Logo",
+        "source_document": "https://www.cryptoquantique.com/automotive"
+      },
+      {
+        "entity": "IoT Security Foundation",
+        "page": 15,
+        "role_in_text": "IoT Security Foundation",
+        "occurrence_sentence": "![IoT Security Foundation Logo",
+        "source_document": "https://www.cryptoquantique.com/products/qroot-lite"
+      },
+      {
+        "entity": "IoT Security Foundation",
+        "page": 17,
+        "role_in_text": "IoT Security Foundation",
+        "occurrence_sentence": "![IoT Security Foundation Logo",
+        "source_document": "https://www.cryptoquantique.com/medical"
+      },
+      {
+        "entity": "IoT Security Foundation",
+        "page": 11,
+        "role_in_text": "IoT Security Foundation",
+        "occurrence_sentence": "![IoT Security Foundation Logo",
+        "source_document": "https://www.cryptoquantique.com/products/cryptographic-cores-ip"
+      },
+      {
+        "entity": "IoT Security Foundation",
+        "page": 10,
+        "role_in_text": "IoT Security Foundation",
+        "occurrence_sentence": "![IoT Security Foundation Logo",
+        "source_document": "https://www.cryptoquantique.com/accelerating-cra-compliance-with-quarklink"
+      },
+      {
+        "entity": "IoT Security Foundation",
+        "page": 11,
+        "role_in_text": "IoT Security Foundation",
+        "occurrence_sentence": "![IoT Security Foundation Logo",
+        "source_document": "https://www.cryptoquantique.com/accelerating-cra-compliance-with-quarklink"
+      },
+      {
+        "entity": "IoT Security Foundation",
+        "page": 13,
+        "role_in_text": "IoT Security Foundation",
+        "occurrence_sentence": "![IoT Security Foundation Logo",
+        "source_document": "https://www.cryptoquantique.com/products/quarklink-ota"
+      },
+      {
+        "entity": "IoT Security Foundation",
+        "page": 14,
+        "role_in_text": "IoT Security Foundation",
+        "occurrence_sentence": "![IoT Security Foundation Logo",
+        "source_document": "https://www.cryptoquantique.com/products/quarklink-ota"
+      },
+      {
+        "entity": "IoT Security Foundation",
+        "page": 10,
+        "role_in_text": "IoT Security Foundation",
+        "occurrence_sentence": "![IoT Security Foundation Logo",
+        "source_document": "https://www.cryptoquantique.com/medical-device-solution"
+      },
+      {
+        "entity": "IoT Security Foundation",
+        "page": 11,
+        "role_in_text": "IoT Security Foundation",
+        "occurrence_sentence": "![IoT Security Foundation Logo",
+        "source_document": "https://www.cryptoquantique.com/medical-device-solution"
+      },
+      {
+        "entity": "IoT Security Foundation",
+        "page": 13,
+        "role_in_text": "IoT Security Foundation",
+        "occurrence_sentence": "![IoT Security Foundation Logo",
+        "source_document": "https://www.cryptoquantique.com/products/digital-puf-ip"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": ""
+  },
+  {
+    "entity": "King Abdulaziz University",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "universities",
+    "role_in_text": "academics at King Abdulaziz University",
+    "technology_area": "deep tech general",
+    "occurrence_sentence": "A 2022 paper entitled [Authentication in the Internet of Medical Things: Taxonomy, Review, and Open Issues",
+    "source_document": "https://www.cryptoquantique.com/medical",
+    "page": 14,
+    "canonical_actor_key": "king abdulaziz university",
+    "aliases": [
+      "King Abdulaziz University"
+    ],
+    "pages": [
+      14
+    ],
+    "mentions": [
+      {
+        "entity": "King Abdulaziz University",
+        "page": 14,
+        "role_in_text": "academics at King Abdulaziz University",
+        "occurrence_sentence": "A 2022 paper entitled [Authentication in the Internet of Medical Things: Taxonomy, Review, and Open Issues",
+        "source_document": "https://www.cryptoquantique.com/medical"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": ""
+  },
+  {
+    "entity": "McKinsey",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "large enterprises",
+    "role_in_text": "forecasting market values and surveying IoT buyers and providers",
+    "technology_area": "deep tech general",
+    "occurrence_sentence": "It forecasts that the total available market for IoT equipment could be $500 billion by 2030, with $120 billion of that being spent by the manufacturing and industrial sector. If all cybersecurity concerns are successfully addressed, McKinsey says the IIoT sector could be worth $145 billion instead.",
+    "source_document": "https://www.cryptoquantique.com/industry-4-0",
+    "page": 6,
+    "confidence": "high",
+    "canonical_actor_key": "mckinsey",
+    "aliases": [
+      "McKinsey"
+    ],
+    "pages": [
+      4,
+      5,
+      6
+    ],
+    "mentions": [
+      {
+        "entity": "McKinsey",
+        "page": 4,
+        "role_in_text": "Consultancy",
+        "occurrence_sentence": "Consultancy McKinsey argues that this sort of concern about cybersecurity is holding back the development of the IoT and that if they were fully addressed, companies would spend between 20 and 40% more on it.",
+        "source_document": "https://www.cryptoquantique.com/industry-4-0"
+      },
+      {
+        "entity": "McKinsey",
+        "page": 5,
+        "role_in_text": "Consultancy",
+        "occurrence_sentence": "Consultancy McKinsey argues that this sort of concern about cybersecurity is holding back the development of the IoT and that if they were fully addressed, companies would spend between 20 and 40% more on it.",
+        "source_document": "https://www.cryptoquantique.com/industry-4-0"
+      },
+      {
+        "entity": "McKinsey",
+        "page": 6,
+        "role_in_text": "forecasting market values and surveying IoT buyers and providers",
+        "occurrence_sentence": "It forecasts that the total available market for IoT equipment could be $500 billion by 2030, with $120 billion of that being spent by the manufacturing and industrial sector. If all cybersecurity concerns are successfully addressed, McKinsey says the IIoT sector could be worth $145 billion instead.",
+        "source_document": "https://www.cryptoquantique.com/industry-4-0"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": ""
+  },
+  {
+    "entity": "National Highway Traffic Safety Administration (NHTSA)",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "national government institutions",
+    "role_in_text": "published a document on cybersecurity best practices",
+    "technology_area": "deep tech general",
+    "occurrence_sentence": "The US Department of Transportation's National Highway Traffic Safety Administration has published a document entitled [Cybersecurity Best Practices for the Safety of Modern Vehicles",
+    "source_document": "https://www.cryptoquantique.com/automotive",
+    "page": 8,
+    "canonical_actor_key": "national highway traffic safety administration",
+    "aliases": [
+      "NHTSA",
+      "National Highway Traffic Safety Administration",
+      "National Highway Traffic Safety Administration (NHTSA)"
+    ],
+    "pages": [
+      8
+    ],
+    "mentions": [
+      {
+        "entity": "National Highway Traffic Safety Administration (NHTSA)",
+        "page": 8,
+        "role_in_text": "published a document on cybersecurity best practices",
+        "occurrence_sentence": "The US Department of Transportation's National Highway Traffic Safety Administration has published a document entitled [Cybersecurity Best Practices for the Safety of Modern Vehicles",
+        "source_document": "https://www.cryptoquantique.com/automotive"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": ""
+  },
+  {
+    "entity": "NHS Acute Care Trust",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "sub-national government institutions",
+    "role_in_text": "Head of IT",
+    "technology_area": "quantum cryptography",
+    "occurrence_sentence": "\"A patch management error caught us out and caused a massive problem with encryption software\" — Head of IT, NHS Acute Care Trust",
+    "source_document": "https://www.cryptoquantique.com/medical-device-solution",
+    "page": 7,
+    "confidence": "high",
+    "canonical_actor_key": "nhs acute care trust",
+    "aliases": [
+      "NHS Acute Care Trust"
+    ],
+    "pages": [
+      7
+    ],
+    "mentions": [
+      {
+        "entity": "NHS Acute Care Trust",
+        "page": 7,
+        "role_in_text": "Head of IT",
+        "occurrence_sentence": "\"A patch management error caught us out and caused a massive problem with encryption software\" — Head of IT, NHS Acute Care Trust",
+        "source_document": "https://www.cryptoquantique.com/medical-device-solution"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": ""
+  },
+  {
+    "entity": "NIST",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "national government institutions",
+    "role_in_text": "published a guide",
+    "technology_area": "deep tech general",
+    "occurrence_sentence": "NIST's [_Guide to Operational Technology Security_](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-82r3.pdf) _,_ published in September 2023, _“_ provides an overview of OT and typical system topologies, identifies common threats and vulnerabilities to these systems, and provides recommended security countermeasures to mitigate the associated risks.",
+    "source_document": "https://www.cryptoquantique.com/industry-4-0",
+    "page": 7,
+    "confidence": "high",
+    "canonical_actor_key": "nist",
+    "aliases": [
+      "NIST"
+    ],
+    "pages": [
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "mentions": [
+      {
+        "entity": "NIST",
+        "page": 4,
+        "role_in_text": "Standard compliance",
+        "occurrence_sentence": "Crypto Quantique's TRNG IP delivers NIST- and BSI-compliant entropy for secure embedded and SoC designs.",
+        "source_document": "https://www.cryptoquantique.com/products/true-random-number-generator-trng-ip"
+      },
+      {
+        "entity": "NIST",
+        "page": 5,
+        "role_in_text": "Standard compliance authority",
+        "occurrence_sentence": "Crypto Quantique's TRNG IP delivers NIST- and BSI-compliant entropy for secure embedded and SoC designs.",
+        "source_document": "https://www.cryptoquantique.com/products/true-random-number-generator-trng-ip"
+      },
+      {
+        "entity": "NIST",
+        "page": 6,
+        "role_in_text": "Validated against NIST SP800-90B, AIS31, and SP800-22 statistical test suites",
+        "occurrence_sentence": "Validated against NIST SP800-90B, AIS31, and SP800-22 statistical test suites",
+        "source_document": "https://www.cryptoquantique.com/products/true-random-number-generator-trng-ip"
+      },
+      {
+        "entity": "NIST",
+        "page": 6,
+        "role_in_text": "publishing a guide to operational technology security",
+        "occurrence_sentence": "",
+        "source_document": "https://www.cryptoquantique.com/industry-4-0"
+      },
+      {
+        "entity": "NIST",
+        "page": 7,
+        "role_in_text": "published a guide",
+        "occurrence_sentence": "NIST's [_Guide to Operational Technology Security_](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-82r3.pdf) _,_ published in September 2023, _“_ provides an overview of OT and typical system topologies, identifies common threats and vulnerabilities to these systems, and provides recommended security countermeasures to mitigate the associated risks.",
+        "source_document": "https://www.cryptoquantique.com/industry-4-0"
+      },
+      {
+        "entity": "NIST",
+        "page": 8,
+        "role_in_text": "Approves lightweight algorithms like Ascon",
+        "occurrence_sentence": "Choose from configurable cryptographic primitives, such as SHA-2 and NIST-approved lightweight algorithms like Ascon, tailored to your performance and security requirements.",
+        "source_document": "https://www.cryptoquantique.com/products/qroot-lite"
+      },
+      {
+        "entity": "NIST",
+        "page": 6,
+        "role_in_text": "NIST SP800-232 finalist",
+        "occurrence_sentence": "Authenticated encryption and hashing based on the NIST SP800-232 finalist.",
+        "source_document": "https://www.cryptoquantique.com/products/cryptographic-cores-ip"
+      },
+      {
+        "entity": "NIST",
+        "page": 6,
+        "role_in_text": "Validates entropy and health tests",
+        "occurrence_sentence": "NIST-validated entropy and health tests simplify certification and audit.",
+        "source_document": "https://www.cryptoquantique.com/products/digital-puf-ip"
+      },
+      {
+        "entity": "NIST",
+        "page": 7,
+        "role_in_text": "Validates randomness standards",
+        "occurrence_sentence": "Randomness validated against NIST SP800, including CQ's PUF-appropriate [TurRiNG test suite",
+        "source_document": "https://www.cryptoquantique.com/products/digital-puf-ip"
+      },
+      {
+        "entity": "NIST",
+        "page": 9,
+        "role_in_text": "Validation of output randomness",
+        "occurrence_sentence": "Output randomness validated to NIST SP 800-22 and AIS31",
+        "source_document": "https://www.cryptoquantique.com/products/digital-puf-ip"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": ""
+  },
+  {
+    "entity": "NVIDIA",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "large enterprises",
+    "role_in_text": "hardware supplier",
+    "technology_area": "semiconductors",
+    "occurrence_sentence": "Choose from common Linux distributions including Yocto, Debian, Ubuntu, Raspberry Pi OS, and popular hardware suppliers like NVIDIA, NXP, Renesas, ST Micro, and Microchip.",
+    "source_document": "https://www.cryptoquantique.com/products/quarklink",
+    "page": 6,
+    "confidence": "high",
+    "canonical_actor_key": "nvidia",
+    "aliases": [
+      "NVIDIA"
+    ],
+    "pages": [
+      6,
+      7
+    ],
+    "mentions": [
+      {
+        "entity": "NVIDIA",
+        "page": 6,
+        "role_in_text": "hardware supplier",
+        "occurrence_sentence": "Choose from common Linux distributions including Yocto, Debian, Ubuntu, Raspberry Pi OS, and popular hardware suppliers like NVIDIA, NXP, Renesas, ST Micro, and Microchip.",
+        "source_document": "https://www.cryptoquantique.com/products/quarklink"
+      },
+      {
+        "entity": "NVIDIA",
+        "page": 7,
+        "role_in_text": "hardware supplier",
+        "occurrence_sentence": "Choose from common Linux distributions including Yocto, Debian, Ubuntu, Raspberry Pi OS, and popular hardware suppliers like NVIDIA, NXP, Renesas, ST Micro, and Microchip.",
+        "source_document": "https://www.cryptoquantique.com/products/quarklink"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": ""
+  },
+  {
+    "entity": "NXP",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "large enterprises",
+    "role_in_text": "hardware supplier",
+    "technology_area": "semiconductors",
+    "occurrence_sentence": "Choose from common Linux distributions including Yocto, Debian, Ubuntu, Raspberry Pi OS, and popular hardware suppliers like NVIDIA, NXP, Renesas, ST Micro, and Microchip",
+    "source_document": "https://www.cryptoquantique.com/products/quarklink",
+    "page": 6,
+    "canonical_actor_key": "nxp",
+    "aliases": [
+      "NXP"
+    ],
+    "pages": [
+      6,
+      7,
+      10,
+      11
+    ],
+    "mentions": [
+      {
+        "entity": "NXP",
+        "page": 6,
+        "role_in_text": "hardware supplier",
+        "occurrence_sentence": "Choose from common Linux distributions including Yocto, Debian, Ubuntu, Raspberry Pi OS, and popular hardware suppliers like NVIDIA, NXP, Renesas, ST Micro, and Microchip",
+        "source_document": "https://www.cryptoquantique.com/products/quarklink"
+      },
+      {
+        "entity": "NXP",
+        "page": 7,
+        "role_in_text": "hardware supplier",
+        "occurrence_sentence": "Choose from common Linux distributions including Yocto, Debian, Ubuntu, Raspberry Pi OS, and popular hardware suppliers like NVIDIA, NXP, Renesas, ST Micro, and Microchip",
+        "source_document": "https://www.cryptoquantique.com/products/quarklink"
+      },
+      {
+        "entity": "NXP",
+        "page": 10,
+        "role_in_text": "device manufacturer",
+        "occurrence_sentence": "We currently have integration guides for devices from NXP, Renesas, Microchip, ST, etc.",
+        "source_document": "https://www.cryptoquantique.com/products/quarklink"
+      },
+      {
+        "entity": "NXP",
+        "page": 11,
+        "role_in_text": "We currently have integration guides for devices from NXP, Renesas, Microchip, ST, etc.",
+        "occurrence_sentence": "We currently have integration guides for devices from NXP, Renesas, Microchip, ST, etc.",
+        "source_document": "https://www.cryptoquantique.com/products/quarklink"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": ""
+  },
+  {
+    "entity": "Quarklink",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "large enterprises",
+    "role_in_text": "Security IP provider",
+    "technology_area": "quantum cryptography",
+    "occurrence_sentence": "Unbundled security IP designed around your boot flow, memory architecture, trust boundaries, and gate-count constraints.",
+    "source_document": "https://www.cryptoquantique.com",
+    "page": 4,
+    "confidence": "high",
+    "canonical_actor_key": "quarklink",
+    "aliases": [
+      "QuarkLink",
+      "Quarklink"
+    ],
+    "pages": [
+      3,
+      4
+    ],
+    "mentions": [
+      {
+        "entity": "Quarklink",
+        "page": 4,
+        "role_in_text": "Security IP provider",
+        "occurrence_sentence": "Unbundled security IP designed around your boot flow, memory architecture, trust boundaries, and gate-count constraints.",
+        "source_document": "https://www.cryptoquantique.com"
+      },
+      {
+        "entity": "QuarkLink",
+        "page": 3,
+        "role_in_text": "product name",
+        "occurrence_sentence": "* [Secure Device Management Platform",
+        "source_document": "https://www.cryptoquantique.com/products/quarklink-fleet-management"
+      },
+      {
+        "entity": "QuarkLink",
+        "page": 4,
+        "role_in_text": "Product of CryptoQuantique",
+        "occurrence_sentence": "Accelerating CRA Compliance with QuarkLink",
+        "source_document": "https://www.cryptoquantique.com/products/qdid"
+      },
+      {
+        "entity": "QuarkLink",
+        "page": 3,
+        "role_in_text": "Secure Device Management Platform",
+        "occurrence_sentence": "[Secure Device Management Platform",
+        "source_document": "https://www.cryptoquantique.com/industry-4-0"
+      },
+      {
+        "entity": "QuarkLink",
+        "page": 3,
+        "role_in_text": "Secure Device Management Platform",
+        "occurrence_sentence": "* [Secure Device Management Platform",
+        "source_document": "https://www.cryptoquantique.com/products/fault-injection-detection-ip"
+      },
+      {
+        "entity": "QuarkLink",
+        "page": 4,
+        "role_in_text": "Related product or service",
+        "occurrence_sentence": "[Accelerating CRA Compliance with QuarkLink",
+        "source_document": "https://www.cryptoquantique.com/products/fault-injection-detection-ip"
+      },
+      {
+        "entity": "QuarkLink",
+        "page": 3,
+        "role_in_text": "Secure Device Management Platform",
+        "occurrence_sentence": "Secure Device Management Platform",
+        "source_document": "https://www.cryptoquantique.com/automotive"
+      },
+      {
+        "entity": "QuarkLink",
+        "page": 4,
+        "role_in_text": "Technology mentioned in the context of automotive security",
+        "occurrence_sentence": "ing CRA Compliance with QuarkLink",
+        "source_document": "https://www.cryptoquantique.com/automotive"
+      },
+      {
+        "entity": "QuarkLink",
+        "page": 4,
+        "role_in_text": "technology associated with Crypto Quantique",
+        "occurrence_sentence": "Accelerating CRA Compliance with QuarkLink",
+        "source_document": "https://www.cryptoquantique.com/solutions/chiplet-security"
+      },
+      {
+        "entity": "QuarkLink",
+        "page": 3,
+        "role_in_text": "secure device management platform",
+        "occurrence_sentence": "Secure Device Management Platform",
+        "source_document": "https://www.cryptoquantique.com/medical"
+      },
+      {
+        "entity": "QuarkLink",
+        "page": 4,
+        "role_in_text": "Technology solution",
+        "occurrence_sentence": "ompliance with QuarkLink",
+        "source_document": "https://www.cryptoquantique.com/medical"
+      },
+      {
+        "entity": "QuarkLink",
+        "page": 3,
+        "role_in_text": "Secure Device Management Platform",
+        "occurrence_sentence": "Secure Device Management Platform",
+        "source_document": "https://www.cryptoquantique.com/products/cryptographic-cores-ip"
+      },
+      {
+        "entity": "QuarkLink",
+        "page": 4,
+        "role_in_text": "Related to accelerating CRA compliance",
+        "occurrence_sentence": "[Accelerating CRA Compliance with QuarkLink",
+        "source_document": "https://www.cryptoquantique.com/products/cryptographic-cores-ip"
+      },
+      {
+        "entity": "QuarkLink",
+        "page": 3,
+        "role_in_text": "secure device management platform",
+        "occurrence_sentence": "* [Secure Device Management Platform",
+        "source_document": "https://www.cryptoquantique.com/products/digital-puf-ip"
+      },
+      {
+        "entity": "QuarkLink",
+        "page": 4,
+        "role_in_text": "Technology associated with CryptoQuantique",
+        "occurrence_sentence": "[Accelerating CRA Compliance with QuarkLink",
+        "source_document": "https://www.cryptoquantique.com/products/digital-puf-ip"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": ""
+  },
+  {
+    "entity": "SAE International",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "research institutes",
+    "role_in_text": "organization",
+    "technology_area": "deep tech general",
+    "occurrence_sentence": "SAE International's J3061_202112 _Cybersecurity Guidebook for Cyber-Physical Vehicle Systems_ is a handbook of best practices for establishing and maintaining cybersecurity",
+    "source_document": "https://www.cryptoquantique.com/automotive",
+    "page": 6,
+    "canonical_actor_key": "sae international",
+    "aliases": [
+      "SAE International"
+    ],
+    "pages": [
+      5,
+      6
+    ],
+    "mentions": [
+      {
+        "entity": "SAE International",
+        "page": 5,
+        "role_in_text": "SAE International's J3061_202112 Cybersecurity Guidebook for Cyber-Physical Vehicle Systems",
+        "occurrence_sentence": "SAE International's J3061_202112 Cyber",
+        "source_document": "https://www.cryptoquantique.com/automotive"
+      },
+      {
+        "entity": "SAE International",
+        "page": 6,
+        "role_in_text": "organization",
+        "occurrence_sentence": "SAE International's J3061_202112 _Cybersecurity Guidebook for Cyber-Physical Vehicle Systems_ is a handbook of best practices for establishing and maintaining cybersecurity",
+        "source_document": "https://www.cryptoquantique.com/automotive"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": ""
+  },
+  {
+    "entity": "Siemens",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "large enterprises",
+    "role_in_text": "selected Crypto Quantique IP to meet the architectural requirements of their next-generation silicon lifecycle management platform",
+    "technology_area": "semiconductors",
+    "occurrence_sentence": "Siemens selected Crypto Quantique IP to meet the architectural requirements of their next-generation silicon lifecycle management platform.",
+    "source_document": "https://www.cryptoquantique.com",
+    "page": 8,
+    "confidence": "high",
+    "canonical_actor_key": "siemens",
+    "aliases": [
+      "Siemens"
+    ],
+    "pages": [
+      5,
+      6,
+      8,
+      9
+    ],
+    "mentions": [
+      {
+        "entity": "Siemens",
+        "page": 5,
+        "role_in_text": "partner",
+        "occurrence_sentence": "![Siemens Logo",
+        "source_document": "https://www.cryptoquantique.com"
+      },
+      {
+        "entity": "Siemens",
+        "page": 6,
+        "role_in_text": "partner",
+        "occurrence_sentence": "![Siemens Logo",
+        "source_document": "https://www.cryptoquantique.com"
+      },
+      {
+        "entity": "Siemens",
+        "page": 8,
+        "role_in_text": "selected Crypto Quantique IP to meet the architectural requirements of their next-generation silicon lifecycle management platform",
+        "occurrence_sentence": "Siemens selected Crypto Quantique IP to meet the architectural requirements of their next-generation silicon lifecycle management platform.",
+        "source_document": "https://www.cryptoquantique.com"
+      },
+      {
+        "entity": "Siemens",
+        "page": 9,
+        "role_in_text": "selected Crypto Quantique IP to meet the architectural requirements of their next-generation silicon lifecycle management platform",
+        "occurrence_sentence": "Siemens selected Crypto Quantique IP to meet the architectural requirements of their next-generation silicon lifecycle management platform.",
+        "source_document": "https://www.cryptoquantique.com"
+      },
+      {
+        "entity": "Siemens",
+        "page": 6,
+        "role_in_text": "partner",
+        "occurrence_sentence": "![Siemens Logo",
+        "source_document": "https://www.cryptoquantique.com/solutions/chiplet-security"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": ""
+  },
+  {
+    "entity": "Trusted Computing Group",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "research institutes",
+    "role_in_text": "specification provider",
+    "technology_area": "semiconductors",
+    "occurrence_sentence": "QRoot Lite™ fully aligns with the Trusted Computing Group's MARS specification, providing standard attestation and measurement reporting (PCR/TSR).",
+    "source_document": "https://www.cryptoquantique.com/products/qroot-lite",
+    "page": 7,
+    "confidence": "high",
+    "canonical_actor_key": "trusted computing group",
+    "aliases": [
+      "TCG",
+      "Trust Computing Group",
+      "Trust Computing Group (TCG)",
+      "Trusted Computing Group"
+    ],
+    "pages": [
+      7,
+      10
+    ],
+    "mentions": [
+      {
+        "entity": "Trusted Computing Group",
+        "page": 7,
+        "role_in_text": "specification provider",
+        "occurrence_sentence": "QRoot Lite™ fully aligns with the Trusted Computing Group's MARS specification, providing standard attestation and measurement reporting (PCR/TSR).",
+        "source_document": "https://www.cryptoquantique.com/products/qroot-lite"
+      },
+      {
+        "entity": "Trust Computing Group (TCG)",
+        "page": 10,
+        "role_in_text": "Provider of MARS command set",
+        "occurrence_sentence": "Firmware API compliant with TCG MARS command set (CBOR serialized)",
+        "source_document": "https://www.cryptoquantique.com/products/qroot-lite"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": ""
+  },
+  {
+    "entity": "TSMC",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "large enterprises",
+    "role_in_text": "fab",
+    "technology_area": "semiconductors",
+    "occurrence_sentence": "QDID™ PUF IP has been verified on major fabs (TSMC, GF, UMC) across Bulk CMOS, FDSOI, FinFET process technologies (55nm down to 12nm)",
+    "source_document": "https://www.cryptoquantique.com/products/qdid",
+    "page": 6,
+    "confidence": "high",
+    "canonical_actor_key": "tsmc",
+    "aliases": [
+      "TSMC"
+    ],
+    "pages": [
+      6,
+      7
+    ],
+    "mentions": [
+      {
+        "entity": "TSMC",
+        "page": 6,
+        "role_in_text": "fab",
+        "occurrence_sentence": "QDID™ PUF IP has been verified on major fabs (TSMC, GF, UMC) across Bulk CMOS, FDSOI, FinFET process technologies (55nm down to 12nm)",
+        "source_document": "https://www.cryptoquantique.com/products/qdid"
+      },
+      {
+        "entity": "TSMC",
+        "page": 7,
+        "role_in_text": "fabrication",
+        "occurrence_sentence": "QDID™ PUF IP has been verified on major fabs (TSMC, GF, UMC) across Bulk CMOS, FDSOI, FinFET process technologies (55nm down to 12nm)",
+        "source_document": "https://www.cryptoquantique.com/products/qdid"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": ""
+  },
+  {
+    "entity": "United Nations Economic Commission for Europe (UNECE)",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "supranational government institutions",
+    "role_in_text": "Regulatory body",
+    "technology_area": "deep tech general",
+    "occurrence_sentence": "The United Nations Economic Commission for Europe (UNECE) working party #29 (WP.29) has also put forward regulations [R155",
+    "source_document": "https://www.cryptoquantique.com/automotive",
+    "page": 9,
+    "canonical_actor_key": "united nations economic commission for europe",
+    "aliases": [
+      "UNECE",
+      "United Nations Economic Commission for Europe",
+      "United Nations Economic Commission for Europe (UNECE)"
+    ],
+    "pages": [
+      9,
+      10,
+      11
+    ],
+    "mentions": [
+      {
+        "entity": "United Nations Economic Commission for Europe (UNECE)",
+        "page": 9,
+        "role_in_text": "Regulatory body",
+        "occurrence_sentence": "The United Nations Economic Commission for Europe (UNECE) working party #29 (WP.29) has also put forward regulations [R155",
+        "source_document": "https://www.cryptoquantique.com/automotive"
+      },
+      {
+        "entity": "UNECE",
+        "page": 10,
+        "role_in_text": "Regulatory body",
+        "occurrence_sentence": "UNECE Regulation [R156",
+        "source_document": "https://www.cryptoquantique.com/automotive"
+      },
+      {
+        "entity": "UNECE",
+        "page": 11,
+        "role_in_text": "Regulatory body for software updates and management systems",
+        "occurrence_sentence": "UNECE Regulation [R156",
+        "source_document": "https://www.cryptoquantique.com/automotive"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": ""
+  },
+  {
+    "entity": "United States",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "country",
+    "role_in_text": "one of the three most popular baseline definitions of IoT cybersecurity",
+    "technology_area": "deep tech general",
+    "occurrence_sentence": "It's an effort to consolidate requirements from the three most popular baseline definitions of IoT cybersecurity from the United States, Singapore",
+    "source_document": "https://www.cryptoquantique.com/industry-4-0",
+    "page": 10,
+    "canonical_actor_key": "united states",
+    "aliases": [
+      "United States"
+    ],
+    "pages": [
+      10
+    ],
+    "mentions": [
+      {
+        "entity": "United States",
+        "page": 10,
+        "role_in_text": "one of the three most popular baseline definitions of IoT cybersecurity",
+        "occurrence_sentence": "It's an effort to consolidate requirements from the three most popular baseline definitions of IoT cybersecurity from the United States, Singapore",
+        "source_document": "https://www.cryptoquantique.com/industry-4-0"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": ""
+  },
+  {
+    "entity": "US Department of Transportation",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "national government institutions",
+    "role_in_text": "publisher of cybersecurity best practices",
+    "technology_area": "deep tech general",
+    "occurrence_sentence": "The US Department of Transportation's National Highway Traffic Safety Administration has published a document entitled Cybersecurity Best Practices for the Safety of Modern Vehicles",
+    "source_document": "https://www.cryptoquantique.com/automotive",
+    "page": 7,
+    "canonical_actor_key": "us department of transportation",
+    "aliases": [
+      "US Department of Transportation"
+    ],
+    "pages": [
+      7
+    ],
+    "mentions": [
+      {
+        "entity": "US Department of Transportation",
+        "page": 7,
+        "role_in_text": "publisher of cybersecurity best practices",
+        "occurrence_sentence": "The US Department of Transportation's National Highway Traffic Safety Administration has published a document entitled Cybersecurity Best Practices for the Safety of Modern Vehicles",
+        "source_document": "https://www.cryptoquantique.com/automotive"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": ""
+  },
+  {
+    "entity": "VP Engineering",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "individual",
+    "role_in_text": "VP Engineering, Medical Devices",
+    "technology_area": "deep tech general",
+    "occurrence_sentence": "> “Implementing secure boot is complex, it elevates the design complexity, it requires significant effort to verify multiple use cases.” – VP Engineering, Medical Devices",
+    "source_document": "https://www.cryptoquantique.com/products/quarklink",
+    "page": 11,
+    "confidence": "medium",
+    "canonical_actor_key": "vp engineering",
+    "aliases": [
+      "VP Engineering"
+    ],
+    "pages": [
+      5,
+      6,
+      11
+    ],
+    "mentions": [
+      {
+        "entity": "VP Engineering",
+        "page": 11,
+        "role_in_text": "VP Engineering, Medical Devices",
+        "occurrence_sentence": "> “Implementing secure boot is complex, it elevates the design complexity, it requires significant effort to verify multiple use cases.” – VP Engineering, Medical Devices",
+        "source_document": "https://www.cryptoquantique.com/products/quarklink"
+      },
+      {
+        "entity": "VP Engineering",
+        "page": 5,
+        "role_in_text": "VP Engineering, Medical Device Maker",
+        "occurrence_sentence": "\"Implementing secure boot in house using only open source and device libraries is complex; it elevates the design complexity.\" — VP Engineering, Medical Device Maker",
+        "source_document": "https://www.cryptoquantique.com/medical-device-solution"
+      },
+      {
+        "entity": "VP Engineering",
+        "page": 6,
+        "role_in_text": "VP Engineering, Medical Device Maker",
+        "occurrence_sentence": "\"Implementing secure boot in house using only open source and device libraries is complex; it elevates the design complexity.\" — VP Engineering, Medical Device Maker",
+        "source_document": "https://www.cryptoquantique.com/medical-device-solution"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": ""
+  },
+  {
+    "entity": "Würth",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "large enterprises",
+    "role_in_text": "Manufacturer of Cordelia-I radio module",
+    "technology_area": "semiconductors",
+    "occurrence_sentence": "Würth's Cordelia-I radio module connects to your embedded project via a simple UART interface to give you instant wireless connectivity.",
+    "source_document": "https://www.cryptoquantique.com/wurth-cordelia",
+    "page": 5,
+    "confidence": "high",
+    "canonical_actor_key": "w rth",
+    "aliases": [
+      "Würth"
+    ],
+    "pages": [
+      5,
+      6
+    ],
+    "mentions": [
+      {
+        "entity": "Würth",
+        "page": 5,
+        "role_in_text": "Manufacturer of Cordelia-I radio module",
+        "occurrence_sentence": "Würth's Cordelia-I radio module connects to your embedded project via a simple UART interface to give you instant wireless connectivity.",
+        "source_document": "https://www.cryptoquantique.com/wurth-cordelia"
+      },
+      {
+        "entity": "Würth",
+        "page": 6,
+        "role_in_text": "Manufacturer of Cordelia-I radio module",
+        "occurrence_sentence": "Würth's Cordelia-I radio module connects to your embedded project via a simple UART interface to give you instant wireless connectivity.",
+        "source_document": "https://www.cryptoquantique.com/wurth-cordelia"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": ""
+  },
+  {
+    "entity": "Würth Cordelia",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "large enterprises",
+    "role_in_text": "Provider of Würth Cordelia-I",
+    "technology_area": "semiconductors",
+    "occurrence_sentence": "Accelerate time to market with Würth Cordelia-I and QuarkLink IoT security platform",
+    "source_document": "https://www.cryptoquantique.com/wurth-cordelia",
+    "page": 4,
+    "canonical_actor_key": "w rth cordelia",
+    "aliases": [
+      "Würth Cordelia"
+    ],
+    "pages": [
+      4
+    ],
+    "mentions": [
+      {
+        "entity": "Würth Cordelia",
+        "page": 4,
+        "role_in_text": "Provider of Würth Cordelia-I",
+        "occurrence_sentence": "Accelerate time to market with Würth Cordelia-I and QuarkLink IoT security platform",
+        "source_document": "https://www.cryptoquantique.com/wurth-cordelia"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": ""
+  },
+  {
+    "entity": "Wurth",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "large enterprises",
+    "role_in_text": "Provider of radio module fast connectivity",
+    "technology_area": "semiconductors",
+    "occurrence_sentence": "Wurth provides radio module fast connectivity.",
+    "source_document": "https://www.cryptoquantique.com/medical-device-solution",
+    "page": 3,
+    "confidence": "high",
+    "canonical_actor_key": "wurth",
+    "aliases": [
+      "Wurth"
+    ],
+    "pages": [
+      3
+    ],
+    "mentions": [
+      {
+        "entity": "Wurth",
+        "page": 3,
+        "role_in_text": "Provider of radio module fast connectivity",
+        "occurrence_sentence": "Wurth provides radio module fast connectivity.",
+        "source_document": "https://www.cryptoquantique.com/medical-device-solution"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": ""
+  },
+  {
+    "entity": "Wurth Cordelia",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "large enterprises",
+    "role_in_text": "Product line or brand of CryptoQuantique.",
+    "technology_area": "semiconductors",
+    "occurrence_sentence": "Security IP",
+    "source_document": "https://www.cryptoquantique.com/wurth-cordelia",
+    "page": 3,
+    "confidence": "high",
+    "canonical_actor_key": "wurth cordelia",
+    "aliases": [
+      "Wurth Cordelia"
+    ],
+    "pages": [
+      3
+    ],
+    "mentions": [
+      {
+        "entity": "Wurth Cordelia",
+        "page": 3,
+        "role_in_text": "Product line or brand of CryptoQuantique.",
+        "occurrence_sentence": "Security IP",
+        "source_document": "https://www.cryptoquantique.com/wurth-cordelia"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": ""
+  },
+  {
+    "entity": "Wurth Elektronik",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "large enterprises",
+    "role_in_text": "partner",
+    "technology_area": "semiconductors",
+    "occurrence_sentence": "![Wurth Logo](https://www.cryptoquantique.com/wp-content/uploads/2026/02/Wurth-Logo-Black.png)",
+    "source_document": "https://www.cryptoquantique.com",
+    "page": 5,
+    "confidence": "high",
+    "canonical_actor_key": "wurth elektronik",
+    "aliases": [
+      "Wurth Elektronik"
+    ],
+    "pages": [
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "mentions": [
+      {
+        "entity": "Wurth Elektronik",
+        "page": 3,
+        "role_in_text": "Provider of radio module fast connectivity solutions.",
+        "occurrence_sentence": "Radio Module Fast Connectivity",
+        "source_document": "https://www.cryptoquantique.com/products/quarklink-provisioning"
+      },
+      {
+        "entity": "Wurth Elektronik",
+        "page": 4,
+        "role_in_text": "Partner in radio module fast connectivity.",
+        "occurrence_sentence": "Radio Module Fast Connectivity (https://www.cryptoquantique.com/wurth-cordelia/)",
+        "source_document": "https://www.cryptoquantique.com/products/quarklink-provisioning"
+      },
+      {
+        "entity": "Wurth Elektronik",
+        "page": 3,
+        "role_in_text": "partner for radio module fast connectivity",
+        "occurrence_sentence": "Radio Module Fast Connectivity",
+        "source_document": "https://www.cryptoquantique.com"
+      },
+      {
+        "entity": "Wurth Elektronik",
+        "page": 5,
+        "role_in_text": "partner",
+        "occurrence_sentence": "![Wurth Logo](https://www.cryptoquantique.com/wp-content/uploads/2026/02/Wurth-Logo-Black.png)",
+        "source_document": "https://www.cryptoquantique.com"
+      },
+      {
+        "entity": "Wurth Elektronik",
+        "page": 6,
+        "role_in_text": "partner",
+        "occurrence_sentence": "![Wurth Logo](https://www.cryptoquantique.com/wp-content/uploads/2026/02/Wurth-Logo-Black.png)",
+        "source_document": "https://www.cryptoquantique.com"
+      },
+      {
+        "entity": "Wurth Elektronik",
+        "page": 3,
+        "role_in_text": "Provider of radio module fast connectivity",
+        "occurrence_sentence": "Radio Module Fast Connectivity",
+        "source_document": "https://www.cryptoquantique.com/products/true-random-number-generator-trng-ip"
+      },
+      {
+        "entity": "Wurth Elektronik",
+        "page": 3,
+        "role_in_text": "Partner for radio module fast connectivity",
+        "occurrence_sentence": "[Radio Module Fast Connectivity",
+        "source_document": "https://www.cryptoquantique.com/products/qdid"
+      },
+      {
+        "entity": "Wurth Elektronik",
+        "page": 3,
+        "role_in_text": "Partner in radio module fast connectivity",
+        "occurrence_sentence": "Radio Module Fast Connectivity",
+        "source_document": "https://www.cryptoquantique.com/products/quarklink"
+      },
+      {
+        "entity": "Wurth Elektronik",
+        "page": 3,
+        "role_in_text": "Provider of radio module fast connectivity solutions.",
+        "occurrence_sentence": "Radio Module Fast Connectivity",
+        "source_document": "https://www.cryptoquantique.com/products/agile-secure-element-ip"
+      },
+      {
+        "entity": "Wurth Elektronik",
+        "page": 3,
+        "role_in_text": "Provider of radio module fast connectivity",
+        "occurrence_sentence": "Radio Module Fast Connectivity",
+        "source_document": "https://www.cryptoquantique.com/products/qroot-lite"
+      },
+      {
+        "entity": "Wurth Elektronik",
+        "page": 4,
+        "role_in_text": "Mentioned in the context of radio module fast connectivity",
+        "occurrence_sentence": "Radio Module Fast Connectivity",
+        "source_document": "https://www.cryptoquantique.com/products/qroot-lite"
+      },
+      {
+        "entity": "Wurth Elektronik",
+        "page": 3,
+        "role_in_text": "Provider of radio module fast connectivity solutions.",
+        "occurrence_sentence": "* [Radio Module Fast Connectivity",
+        "source_document": "https://www.cryptoquantique.com/solutions/chiplet-security"
+      },
+      {
+        "entity": "Wurth Elektronik",
+        "page": 5,
+        "role_in_text": "partner",
+        "occurrence_sentence": "![Wurth Logo",
+        "source_document": "https://www.cryptoquantique.com/solutions/chiplet-security"
+      },
+      {
+        "entity": "Wurth Elektronik",
+        "page": 6,
+        "role_in_text": "partner",
+        "occurrence_sentence": "![Wurth Logo](https://www.cryptoquantique.com/wp-content/uploads/2026/02/Wurth-Logo-Black.png)",
+        "source_document": "https://www.cryptoquantique.com/solutions/chiplet-security"
+      },
+      {
+        "entity": "Wurth Elektronik",
+        "page": 2,
+        "role_in_text": "partner or related entity",
+        "occurrence_sentence": "https://www.cryptoquantique.com/wurth-cordelia",
+        "source_document": "https://www.cryptoquantique.com/wurth-cordelia"
+      },
+      {
+        "entity": "Wurth Elektronik",
+        "page": 3,
+        "role_in_text": "Partner in radio module fast connectivity.",
+        "occurrence_sentence": "* [Radio Module Fast Connectivity",
+        "source_document": "https://www.cryptoquantique.com/accelerating-cra-compliance-with-quarklink"
+      },
+      {
+        "entity": "Wurth Elektronik",
+        "page": 3,
+        "role_in_text": "Partner for radio module fast connectivity.",
+        "occurrence_sentence": "* [Radio Module Fast Connectivity",
+        "source_document": "https://www.cryptoquantique.com/products/quarklink-ota"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": ""
+  }
+]

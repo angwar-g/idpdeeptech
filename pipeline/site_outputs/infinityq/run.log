@@ -1,0 +1,116 @@
+
+========================================================================
+RUN STARTED  2026-06-17 02:17:00
+site_pipeline.py https://www.infinityq.tech/
+========================================================================
+
+[02:17:00 +0s | infinityq] === 0 crawl site ===
+[02:17:01 +2s | infinityq] [INIT].... → Crawl4AI 0.8.6 
+[02:17:02 +2s | infinityq] [FETCH]... ↓ https://www.infinityq.tech/                                                                          | ✓ | ⏱: 0.84s 
+[02:17:02 +2s | infinityq] [SCRAPE].. ◆ https://www.infinityq.tech/                                                                          | ✓ | ⏱: 0.00s 
+[02:17:02 +2s | infinityq] [COMPLETE] ● https://www.infinityq.tech/                                                                          | ✓ | ⏱: 0.85s 
+[02:17:02 +2s | infinityq] Saved: crawl_output/4ac4306bd4_www.infinityq.tech.json
+
+[02:17:02 +3s | infinityq] === 1 actor extraction ===
+[02:17:03 +3s | infinityq] Reading page (1/1): https://www.infinityq.tech
+[02:17:03 +3s | infinityq] Extracting: https://www.infinityq.tech (1/1), chunk 1/1
+[02:17:04 +4s | infinityq] Saved 1_actor_results.json with 0 extracted records
+
+[02:17:04 +4s | infinityq] === 2 clean actors ===
+[02:17:04 +4s | infinityq] Loaded 0 extracted records
+[02:17:04 +4s | infinityq] Saved 2_actor_nodes.json with 0 canonical actor nodes
+
+[02:17:04 +4s | infinityq] === 3 interaction extraction ===
+[02:17:05 +5s | infinityq] No valid actors found, skipping.
+
+[02:17:05 +5s | infinityq] === 4 clean interactions ===
+[02:17:05 +5s | infinityq] Traceback (most recent call last):
+[02:17:05 +5s | infinityq]   File "/home/lv/IDP/idpdeeptech/pipeline/clean_interactions.py", line 536, in <module>
+[02:17:05 +5s | infinityq]     main()
+[02:17:05 +5s | infinityq]   File "/home/lv/IDP/idpdeeptech/pipeline/clean_interactions.py", line 502, in main
+[02:17:05 +5s | infinityq]     raw_edges = json.loads(INPUT_JSON.read_text(encoding="utf-8"))
+[02:17:05 +5s | infinityq]   File "/usr/lib/python3.10/pathlib.py", line 1134, in read_text
+[02:17:05 +5s | infinityq]     with self.open(mode='r', encoding=encoding, errors=errors) as f:
+[02:17:05 +5s | infinityq]   File "/usr/lib/python3.10/pathlib.py", line 1119, in open
+[02:17:05 +5s | infinityq]     return self._accessor.open(self, mode, buffering, encoding, errors,
+[02:17:05 +5s | infinityq] FileNotFoundError: [Errno 2] No such file or directory: '3_interaction_results.json'
+
+========================================================================
+RUN FINISHED 2026-06-17 02:17:05  (FAILED)
+Started:     2026-06-17 02:17:00
+Elapsed:     5s
+========================================================================
+
+========================================================================
+RUN STARTED  2026-06-17 08:57:05
+site_pipeline.py https://www.infinityq.tech/
+========================================================================
+
+[08:57:05 +0s | infinityq] === 0 crawl site (skipped via auto (actor data already exists; pass --force to re-crawl), reusing /home/lv/IDP/idpdeeptech/pipeline/site_outputs/infinityq/crawl_output) ===
+
+[08:57:05 +0s | infinityq] === 1 actor extraction ===
+[08:57:05 +1s | infinityq] Auto-resume: 1 (url, ordinal) pairs already done, skipping them.
+[08:57:05 +1s | infinityq] All 1 pages/URLs already processed (per 1_actor_results.progress.json). Nothing to do.
+[08:57:05 +1s | infinityq] Delete the progress sidecar to force a full re-run, or pass --start-page N.
+
+[08:57:06 +1s | infinityq] === 2 clean actors ===
+[08:57:06 +1s | infinityq] Loaded 0 extracted records
+[08:57:06 +1s | infinityq] Saved 2_actor_nodes.json with 0 canonical actor nodes
+
+[08:57:06 +1s | infinityq] === 3 interaction extraction ===
+[08:57:06 +1s | infinityq] No valid actors found, skipping.
+
+[08:57:06 +2s | infinityq] === 4 clean interactions ===
+[08:57:07 +2s | infinityq] Traceback (most recent call last):
+[08:57:07 +2s | infinityq]   File "/home/lv/IDP/idpdeeptech/pipeline/clean_interactions.py", line 536, in <module>
+[08:57:07 +2s | infinityq]     main()
+[08:57:07 +2s | infinityq]   File "/home/lv/IDP/idpdeeptech/pipeline/clean_interactions.py", line 502, in main
+[08:57:07 +2s | infinityq]     raw_edges = json.loads(INPUT_JSON.read_text(encoding="utf-8"))
+[08:57:07 +2s | infinityq]   File "/usr/lib/python3.10/pathlib.py", line 1134, in read_text
+[08:57:07 +2s | infinityq]     with self.open(mode='r', encoding=encoding, errors=errors) as f:
+[08:57:07 +2s | infinityq]   File "/usr/lib/python3.10/pathlib.py", line 1119, in open
+[08:57:07 +2s | infinityq]     return self._accessor.open(self, mode, buffering, encoding, errors,
+[08:57:07 +2s | infinityq] FileNotFoundError: [Errno 2] No such file or directory: '3_interaction_results.json'
+
+========================================================================
+RUN FINISHED 2026-06-17 08:57:07  (FAILED)
+Started:     2026-06-17 08:57:05
+Elapsed:     2s
+========================================================================
+
+========================================================================
+RUN STARTED  2026-06-17 09:09:29
+site_pipeline.py https://www.infinityq.tech/
+========================================================================
+
+[09:09:29 +0s | infinityq] === 0 crawl site (skipped via auto (actor data already exists; pass --force to re-crawl), reusing /home/lv/IDP/idpdeeptech/pipeline/site_outputs/infinityq/crawl_output) ===
+
+[09:09:29 +0s | infinityq] === 1 actor extraction ===
+[09:09:30 +0s | infinityq] Auto-resume: 1 (url, ordinal) pairs already done, skipping them.
+[09:09:30 +0s | infinityq] All 1 pages/URLs already processed (per 1_actor_results.progress.json). Nothing to do.
+[09:09:30 +0s | infinityq] Delete the progress sidecar to force a full re-run, or pass --start-page N.
+
+[09:09:30 +0s | infinityq] === 2 clean actors ===
+[09:09:30 +1s | infinityq] Loaded 0 extracted records
+[09:09:30 +1s | infinityq] Saved 2_actor_nodes.json with 0 canonical actor nodes
+
+[09:09:30 +1s | infinityq] === 3 interaction extraction ===
+[09:09:30 +1s | infinityq] No valid actors found, skipping.
+
+[09:09:30 +1s | infinityq] === 4 clean interactions ===
+[09:09:30 +1s | infinityq] Traceback (most recent call last):
+[09:09:30 +1s | infinityq]   File "/home/lv/IDP/idpdeeptech/pipeline/clean_interactions.py", line 536, in <module>
+[09:09:30 +1s | infinityq]     main()
+[09:09:30 +1s | infinityq]   File "/home/lv/IDP/idpdeeptech/pipeline/clean_interactions.py", line 502, in main
+[09:09:30 +1s | infinityq]     raw_edges = json.loads(INPUT_JSON.read_text(encoding="utf-8"))
+[09:09:30 +1s | infinityq]   File "/usr/lib/python3.10/pathlib.py", line 1134, in read_text
+[09:09:30 +1s | infinityq]     with self.open(mode='r', encoding=encoding, errors=errors) as f:
+[09:09:30 +1s | infinityq]   File "/usr/lib/python3.10/pathlib.py", line 1119, in open
+[09:09:30 +1s | infinityq]     return self._accessor.open(self, mode, buffering, encoding, errors,
+[09:09:30 +1s | infinityq] FileNotFoundError: [Errno 2] No such file or directory: '3_interaction_results.json'
+
+========================================================================
+RUN FINISHED 2026-06-17 09:09:30  (FAILED)
+Started:     2026-06-17 09:09:29
+Elapsed:     1s
+========================================================================

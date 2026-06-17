@@ -1,0 +1,321 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+            <script>function neighbourhoodHighlight(params) {
+  // console.log("in nieghbourhoodhighlight");
+  allNodes = nodes.get({ returnType: "Object" });
+  // originalNodes = JSON.parse(JSON.stringify(allNodes));
+  // if something is selected:
+  if (params.nodes.length > 0) {
+    highlightActive = true;
+    var i, j;
+    var selectedNode = params.nodes[0];
+    var degrees = 2;
+
+    // mark all nodes as hard to read.
+    for (let nodeId in allNodes) {
+      // nodeColors[nodeId] = allNodes[nodeId].color;
+      allNodes[nodeId].color = "rgba(200,200,200,0.5)";
+      if (allNodes[nodeId].hiddenLabel === undefined) {
+        allNodes[nodeId].hiddenLabel = allNodes[nodeId].label;
+        allNodes[nodeId].label = undefined;
+      }
+    }
+    var connectedNodes = network.getConnectedNodes(selectedNode);
+    var allConnectedNodes = [];
+
+    // get the second degree nodes
+    for (i = 1; i < degrees; i++) {
+      for (j = 0; j < connectedNodes.length; j++) {
+        allConnectedNodes = allConnectedNodes.concat(
+          network.getConnectedNodes(connectedNodes[j])
+        );
+      }
+    }
+
+    // all second degree nodes get a different color and their label back
+    for (i = 0; i < allConnectedNodes.length; i++) {
+      // allNodes[allConnectedNodes[i]].color = "pink";
+      allNodes[allConnectedNodes[i]].color = "rgba(150,150,150,0.75)";
+      if (allNodes[allConnectedNodes[i]].hiddenLabel !== undefined) {
+        allNodes[allConnectedNodes[i]].label =
+          allNodes[allConnectedNodes[i]].hiddenLabel;
+        allNodes[allConnectedNodes[i]].hiddenLabel = undefined;
+      }
+    }
+
+    // all first degree nodes get their own color and their label back
+    for (i = 0; i < connectedNodes.length; i++) {
+      // allNodes[connectedNodes[i]].color = undefined;
+      allNodes[connectedNodes[i]].color = nodeColors[connectedNodes[i]];
+      if (allNodes[connectedNodes[i]].hiddenLabel !== undefined) {
+        allNodes[connectedNodes[i]].label =
+          allNodes[connectedNodes[i]].hiddenLabel;
+        allNodes[connectedNodes[i]].hiddenLabel = undefined;
+      }
+    }
+
+    // the main node gets its own color and its label back.
+    // allNodes[selectedNode].color = undefined;
+    allNodes[selectedNode].color = nodeColors[selectedNode];
+    if (allNodes[selectedNode].hiddenLabel !== undefined) {
+      allNodes[selectedNode].label = allNodes[selectedNode].hiddenLabel;
+      allNodes[selectedNode].hiddenLabel = undefined;
+    }
+  } else if (highlightActive === true) {
+    // console.log("highlightActive was true");
+    // reset all nodes
+    for (let nodeId in allNodes) {
+      // allNodes[nodeId].color = "purple";
+      allNodes[nodeId].color = nodeColors[nodeId];
+      // delete allNodes[nodeId].color;
+      if (allNodes[nodeId].hiddenLabel !== undefined) {
+        allNodes[nodeId].label = allNodes[nodeId].hiddenLabel;
+        allNodes[nodeId].hiddenLabel = undefined;
+      }
+    }
+    highlightActive = false;
+  }
+
+  // transform the object into an array
+  var updateArray = [];
+  if (params.nodes.length > 0) {
+    for (let nodeId in allNodes) {
+      if (allNodes.hasOwnProperty(nodeId)) {
+        // console.log(allNodes[nodeId]);
+        updateArray.push(allNodes[nodeId]);
+      }
+    }
+    nodes.update(updateArray);
+  } else {
+    // console.log("Nothing was selected");
+    for (let nodeId in allNodes) {
+      if (allNodes.hasOwnProperty(nodeId)) {
+        // console.log(allNodes[nodeId]);
+        // allNodes[nodeId].color = {};
+        updateArray.push(allNodes[nodeId]);
+      }
+    }
+    nodes.update(updateArray);
+  }
+}
+
+function filterHighlight(params) {
+  allNodes = nodes.get({ returnType: "Object" });
+  // if something is selected:
+  if (params.nodes.length > 0) {
+    filterActive = true;
+    let selectedNodes = params.nodes;
+
+    // hiding all nodes and saving the label
+    for (let nodeId in allNodes) {
+      allNodes[nodeId].hidden = true;
+      if (allNodes[nodeId].savedLabel === undefined) {
+        allNodes[nodeId].savedLabel = allNodes[nodeId].label;
+        allNodes[nodeId].label = undefined;
+      }
+    }
+
+    for (let i=0; i < selectedNodes.length; i++) {
+      allNodes[selectedNodes[i]].hidden = false;
+      if (allNodes[selectedNodes[i]].savedLabel !== undefined) {
+        allNodes[selectedNodes[i]].label = allNodes[selectedNodes[i]].savedLabel;
+        allNodes[selectedNodes[i]].savedLabel = undefined;
+      }
+    }
+
+  } else if (filterActive === true) {
+    // reset all nodes
+    for (let nodeId in allNodes) {
+      allNodes[nodeId].hidden = false;
+      if (allNodes[nodeId].savedLabel !== undefined) {
+        allNodes[nodeId].label = allNodes[nodeId].savedLabel;
+        allNodes[nodeId].savedLabel = undefined;
+      }
+    }
+    filterActive = false;
+  }
+
+  // transform the object into an array
+  var updateArray = [];
+  if (params.nodes.length > 0) {
+    for (let nodeId in allNodes) {
+      if (allNodes.hasOwnProperty(nodeId)) {
+        updateArray.push(allNodes[nodeId]);
+      }
+    }
+    nodes.update(updateArray);
+  } else {
+    for (let nodeId in allNodes) {
+      if (allNodes.hasOwnProperty(nodeId)) {
+        updateArray.push(allNodes[nodeId]);
+      }
+    }
+    nodes.update(updateArray);
+  }
+}
+
+function selectNode(nodes) {
+  network.selectNodes(nodes);
+  neighbourhoodHighlight({ nodes: nodes });
+  return nodes;
+}
+
+function selectNodes(nodes) {
+  network.selectNodes(nodes);
+  filterHighlight({nodes: nodes});
+  return nodes;
+}
+
+function highlightFilter(filter) {
+  let selectedNodes = []
+  let selectedProp = filter['property']
+  if (filter['item'] === 'node') {
+    let allNodes = nodes.get({ returnType: "Object" });
+    for (let nodeId in allNodes) {
+      if (allNodes[nodeId][selectedProp] && filter['value'].includes((allNodes[nodeId][selectedProp]).toString())) {
+        selectedNodes.push(nodeId)
+      }
+    }
+  }
+  else if (filter['item'] === 'edge'){
+    let allEdges = edges.get({returnType: 'object'});
+    // check if the selected property exists for selected edge and select the nodes connected to the edge
+    for (let edge in allEdges) {
+      if (allEdges[edge][selectedProp] && filter['value'].includes((allEdges[edge][selectedProp]).toString())) {
+        selectedNodes.push(allEdges[edge]['from'])
+        selectedNodes.push(allEdges[edge]['to'])
+      }
+    }
+  }
+  selectNodes(selectedNodes)
+}</script>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/dist/vis-network.min.css" integrity="sha512-WgxfT5LWjfszlPHXRmBWHkV2eceiWTOBvrKCNbdgDYTHrT2AeLCGbF4sZlZw3UMN3WtL0tGUoIAKsu8mllg/XA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/vis-network.min.js" integrity="sha512-LnvoEWDFrqGHlHmDD2101OrLcbsfkrzoSpvtSQtxK3RMnRV0eOkhhBN2dXHKRrUU8p2DGRTk35n4O8nWSVe1mQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            
+            
+            
+            
+            
+            
+
+        
+<center>
+<h1></h1>
+</center>
+
+<!-- <link rel="stylesheet" href="../node_modules/vis/dist/vis.min.css" type="text/css" />
+<script type="text/javascript" src="../node_modules/vis/dist/vis.js"> </script>-->
+        <link
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+          crossorigin="anonymous"
+        />
+        <script
+          src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+          crossorigin="anonymous"
+        ></script>
+
+
+        <center>
+          <h1></h1>
+        </center>
+        <style type="text/css">
+
+             #mynetwork {
+                 width: 100%;
+                 height: 850px;
+                 background-color: #ffffff;
+                 border: 1px solid lightgray;
+                 position: relative;
+                 float: left;
+             }
+
+             
+
+             
+
+             
+        </style>
+    </head>
+
+
+    <body>
+        <div class="card" style="width: 100%">
+            
+            
+            <div id="mynetwork" class="card-body"></div>
+        </div>
+
+        
+        
+
+        <script type="text/javascript">
+
+              // initialize global variables.
+              var edges;
+              var nodes;
+              var allNodes;
+              var allEdges;
+              var nodeColors;
+              var originalNodes;
+              var network;
+              var container;
+              var options, data;
+              var filter = {
+                  item : '',
+                  property : '',
+                  value : []
+              };
+
+              
+
+              
+
+              // This method is responsible for drawing the graph, returns the drawn network
+              function drawGraph() {
+                  var container = document.getElementById('mynetwork');
+
+                  
+
+                  // parsing and collecting nodes and edges from the python
+                  nodes = new vis.DataSet([{"category": "individual", "color": "#999999", "font": {"size": 18}, "helix": "Unknown", "id": "anastasiia", "label": "Anastasiia", "shape": "dot", "size": 18, "title": "\u003cb\u003eAnastasiia\u003c/b\u003e\u003cbr\u003eHelix: Unknown\u003cbr\u003eCategory: individual\u003cbr\u003eReview: True"}, {"category": "research institutes", "color": "#4C78A8", "font": {"size": 18}, "helix": "Academia", "id": "nord quantique", "label": "Nord Quantique", "shape": "dot", "size": 18, "title": "\u003cb\u003eNord Quantique\u003c/b\u003e\u003cbr\u003eHelix: Academia\u003cbr\u003eCategory: research institutes\u003cbr\u003eReview: False"}, {"category": "country", "color": "#999999", "font": {"size": 18}, "helix": "Unknown", "id": "canada", "label": "Canada", "shape": "dot", "size": 18, "title": "\u003cb\u003eCanada\u003c/b\u003e\u003cbr\u003eHelix: Unknown\u003cbr\u003eCategory: country\u003cbr\u003eReview: True"}, {"category": "national government institutions", "color": "#54A24B", "font": {"size": 18}, "helix": "Government", "id": "darpa", "label": "DARPA", "shape": "dot", "size": 18, "title": "\u003cb\u003eDARPA\u003c/b\u003e\u003cbr\u003eHelix: Government\u003cbr\u003eCategory: national government institutions\u003cbr\u003eReview: False"}, {"category": "individual", "color": "#999999", "font": {"size": 18}, "helix": "Unknown", "id": "chlo archambault", "label": "Chlo\u00e9 Archambault", "shape": "dot", "size": 18, "title": "\u003cb\u003eChlo\u00e9 Archambault\u003c/b\u003e\u003cbr\u003eHelix: Unknown\u003cbr\u003eCategory: individual\u003cbr\u003eReview: True"}, {"category": "financial support institutions", "color": "#E45756", "font": {"size": 18}, "helix": "Intermediary", "id": "quantacet", "label": "Quantacet", "shape": "dot", "size": 18, "title": "\u003cb\u003eQuantacet\u003c/b\u003e\u003cbr\u003eHelix: Intermediary\u003cbr\u003eCategory: financial support institutions\u003cbr\u003eReview: False"}, {"category": "national government institutions", "color": "#54A24B", "font": {"size": 18}, "helix": "Government", "id": "government of canada", "label": "government of Canada", "shape": "dot", "size": 18, "title": "\u003cb\u003egovernment of Canada\u003c/b\u003e\u003cbr\u003eHelix: Government\u003cbr\u003eCategory: national government institutions\u003cbr\u003eReview: False"}, {"category": "individual", "color": "#999999", "font": {"size": 18}, "helix": "Unknown", "id": "julien", "label": "Julien", "shape": "dot", "size": 18, "title": "\u003cb\u003eJulien\u003c/b\u003e\u003cbr\u003eHelix: Unknown\u003cbr\u003eCategory: individual\u003cbr\u003eReview: True"}, {"category": "individual", "color": "#F58518", "font": {"size": 18}, "helix": "Industry", "id": "julien camirand lemyre", "label": "Julien Camirand Lemyre", "shape": "dot", "size": 18, "title": "\u003cb\u003eJulien Camirand Lemyre\u003c/b\u003e\u003cbr\u003eHelix: Industry\u003cbr\u003eCategory: individual\u003cbr\u003eReview: True"}, {"category": "universities", "color": "#4C78A8", "font": {"size": 18}, "helix": "Academia", "id": "universit de sherbrooke", "label": "Universit\u00e9 de Sherbrooke", "shape": "dot", "size": 18, "title": "\u003cb\u003eUniversit\u00e9 de Sherbrooke\u003c/b\u003e\u003cbr\u003eHelix: Academia\u003cbr\u003eCategory: universities\u003cbr\u003eReview: False"}, {"category": "individual", "color": "#999999", "font": {"size": 18}, "helix": "Unknown", "id": "tammy furlong", "label": "Tammy Furlong", "shape": "dot", "size": 18, "title": "\u003cb\u003eTammy Furlong\u003c/b\u003e\u003cbr\u003eHelix: Unknown\u003cbr\u003eCategory: individual\u003cbr\u003eReview: True"}, {"category": "universities", "color": "#4C78A8", "font": {"size": 18}, "helix": "Academia", "id": "university of sherbrooke", "label": "University of Sherbrooke", "shape": "dot", "size": 18, "title": "\u003cb\u003eUniversity of Sherbrooke\u003c/b\u003e\u003cbr\u003eHelix: Academia\u003cbr\u003eCategory: universities\u003cbr\u003eReview: False"}, {"category": "research institutes", "color": "#4C78A8", "font": {"size": 18}, "helix": "Academia", "id": "institut quantique", "label": "Institut quantique", "shape": "dot", "size": 18, "title": "\u003cb\u003eInstitut quantique\u003c/b\u003e\u003cbr\u003eHelix: Academia\u003cbr\u003eCategory: research institutes\u003cbr\u003eReview: False"}, {"category": "individual", "color": "#F58518", "font": {"size": 18}, "helix": "Industry", "id": "tobi day hamilton", "label": "Tobi Day-Hamilton", "shape": "dot", "size": 18, "title": "\u003cb\u003eTobi Day-Hamilton\u003c/b\u003e\u003cbr\u003eHelix: Industry\u003cbr\u003eCategory: individual\u003cbr\u003eReview: True"}, {"category": "individual", "color": "#999999", "font": {"size": 18}, "helix": "Unknown", "id": "angela olano", "label": "Angela Olano", "shape": "dot", "size": 18, "title": "\u003cb\u003eAngela Olano\u003c/b\u003e\u003cbr\u003eHelix: Unknown\u003cbr\u003eCategory: individual\u003cbr\u003eReview: True"}, {"category": "business support institutions", "color": "#E45756", "font": {"size": 18}, "helix": "Intermediary", "id": "sherbrooke s quantum innovation zone", "label": "Sherbrooke\u0027s Quantum Innovation Zone", "shape": "dot", "size": 18, "title": "\u003cb\u003eSherbrooke\u0027s Quantum Innovation Zone\u003c/b\u003e\u003cbr\u003eHelix: Intermediary\u003cbr\u003eCategory: business support institutions\u003cbr\u003eReview: False"}, {"category": "research institutes", "color": "#4C78A8", "font": {"size": 18}, "helix": "Academia", "id": "quantum theory", "label": "Quantum Theory", "shape": "dot", "size": 18, "title": "\u003cb\u003eQuantum Theory\u003c/b\u003e\u003cbr\u003eHelix: Academia\u003cbr\u003eCategory: research institutes\u003cbr\u003eReview: False"}, {"category": "research institutes", "color": "#4C78A8", "font": {"size": 18}, "helix": "Academia", "id": "em design", "label": "EM Design", "shape": "dot", "size": 18, "title": "\u003cb\u003eEM Design\u003c/b\u003e\u003cbr\u003eHelix: Academia\u003cbr\u003eCategory: research institutes\u003cbr\u003eReview: False"}, {"category": "research institutes", "color": "#4C78A8", "font": {"size": 18}, "helix": "Academia", "id": "quipe th orique quantique", "label": "\u00e9quipe Th\u00e9orique Quantique", "shape": "dot", "size": 18, "title": "\u003cb\u003e\u00e9quipe Th\u00e9orique Quantique\u003c/b\u003e\u003cbr\u003eHelix: Academia\u003cbr\u003eCategory: research institutes\u003cbr\u003eReview: False"}, {"category": "research institutes", "color": "#4C78A8", "font": {"size": 18}, "helix": "Academia", "id": "quipe design em", "label": "\u00e9quipe Design EM", "shape": "dot", "size": 18, "title": "\u003cb\u003e\u00e9quipe Design EM\u003c/b\u003e\u003cbr\u003eHelix: Academia\u003cbr\u003eCategory: research institutes\u003cbr\u003eReview: False"}, {"category": "individual", "color": "#999999", "font": {"size": 18}, "helix": "Unknown", "id": "responsable de l acquisition de talents", "label": "Responsable de l\u0027acquisition de talents", "shape": "dot", "size": 18, "title": "\u003cb\u003eResponsable de l\u0027acquisition de talents\u003c/b\u003e\u003cbr\u003eHelix: Unknown\u003cbr\u003eCategory: individual\u003cbr\u003eReview: True"}, {"category": "individual", "color": "#999999", "font": {"size": 18}, "helix": "Unknown", "id": "bohdan", "label": "Bohdan", "shape": "dot", "size": 18, "title": "\u003cb\u003eBohdan\u003c/b\u003e\u003cbr\u003eHelix: Unknown\u003cbr\u003eCategory: individual\u003cbr\u003eReview: True"}, {"category": "individual", "color": "#54A24B", "font": {"size": 18}, "helix": "Government", "id": "bohdan kulchytskyy", "label": "Bohdan Kulchytskyy", "shape": "dot", "size": 18, "title": "\u003cb\u003eBohdan Kulchytskyy\u003c/b\u003e\u003cbr\u003eHelix: Government\u003cbr\u003eCategory: individual\u003cbr\u003eReview: True"}, {"category": "vocational training institutions", "color": "#4C78A8", "font": {"size": 18}, "helix": "Academia", "id": "c gep", "label": "C\u00e9gep", "shape": "dot", "size": 18, "title": "\u003cb\u003eC\u00e9gep\u003c/b\u003e\u003cbr\u003eHelix: Academia\u003cbr\u003eCategory: vocational training institutions\u003cbr\u003eReview: False"}, {"category": "media and cultural institutions", "color": "#B279A2", "font": {"size": 18}, "helix": "Civil Society", "id": "cbc", "label": "CBC", "shape": "dot", "size": 18, "title": "\u003cb\u003eCBC\u003c/b\u003e\u003cbr\u003eHelix: Civil Society\u003cbr\u003eCategory: media and cultural institutions\u003cbr\u003eReview: False"}, {"category": "vocational training institutions", "color": "#4C78A8", "font": {"size": 18}, "helix": "Academia", "id": "cegep", "label": "Cegep", "shape": "dot", "size": 18, "title": "\u003cb\u003eCegep\u003c/b\u003e\u003cbr\u003eHelix: Academia\u003cbr\u003eCategory: vocational training institutions\u003cbr\u003eReview: False"}, {"category": "individual", "color": "#999999", "font": {"size": 18}, "helix": "Unknown", "id": "chef d quipe design", "label": "Chef d\u0027\u00e9quipe \u2013 Design", "shape": "dot", "size": 18, "title": "\u003cb\u003eChef d\u0027\u00e9quipe \u2013 Design\u003c/b\u003e\u003cbr\u003eHelix: Unknown\u003cbr\u003eCategory: individual\u003cbr\u003eReview: True"}, {"category": "individual", "color": "#999999", "font": {"size": 18}, "helix": "Unknown", "id": "chef d quipe hardware", "label": "Chef d\u0027\u00e9quipe Hardware", "shape": "dot", "size": 18, "title": "\u003cb\u003eChef d\u0027\u00e9quipe Hardware\u003c/b\u003e\u003cbr\u003eHelix: Unknown\u003cbr\u003eCategory: individual\u003cbr\u003eReview: True"}, {"category": "individual", "color": "#999999", "font": {"size": 18}, "helix": "Unknown", "id": "chef de l quipe d architecture quantique", "label": "Chef de l\u0027\u00e9quipe d\u0027architecture quantique", "shape": "dot", "size": 18, "title": "\u003cb\u003eChef de l\u0027\u00e9quipe d\u0027architecture quantique\u003c/b\u003e\u003cbr\u003eHelix: Unknown\u003cbr\u003eCategory: individual\u003cbr\u003eReview: True"}, {"category": "individual", "color": "#999999", "font": {"size": 18}, "helix": "Unknown", "id": "chief technological officer", "label": "Chief Technological Officer (CTO)", "shape": "dot", "size": 18, "title": "\u003cb\u003eChief Technological Officer (CTO)\u003c/b\u003e\u003cbr\u003eHelix: Unknown\u003cbr\u003eCategory: individual\u003cbr\u003eReview: True"}, {"category": "individual", "color": "#999999", "font": {"size": 18}, "helix": "Unknown", "id": "cindy regal", "label": "Cindy Regal", "shape": "dot", "size": 18, "title": "\u003cb\u003eCindy Regal\u003c/b\u003e\u003cbr\u003eHelix: Unknown\u003cbr\u003eCategory: individual\u003cbr\u003eReview: True"}, {"category": "individual", "color": "#999999", "font": {"size": 18}, "helix": "Unknown", "id": "coordonnateur rice de projet", "label": "coordonnateur.rice de projet", "shape": "dot", "size": 18, "title": "\u003cb\u003ecoordonnateur.rice de projet\u003c/b\u003e\u003cbr\u003eHelix: Unknown\u003cbr\u003eCategory: individual\u003cbr\u003eReview: True"}, {"category": "individual", "color": "#999999", "font": {"size": 18}, "helix": "Unknown", "id": "corey rae mcrae", "label": "Corey Rae McRae", "shape": "dot", "size": 18, "title": "\u003cb\u003eCorey Rae McRae\u003c/b\u003e\u003cbr\u003eHelix: Unknown\u003cbr\u003eCategory: individual\u003cbr\u003eReview: True"}, {"category": "individual", "color": "#999999", "font": {"size": 18}, "helix": "Unknown", "id": "dany", "label": "Dany", "shape": "dot", "size": 18, "title": "\u003cb\u003eDany\u003c/b\u003e\u003cbr\u003eHelix: Unknown\u003cbr\u003eCategory: individual\u003cbr\u003eReview: True"}, {"category": "national government institutions", "color": "#54A24B", "font": {"size": 18}, "helix": "Government", "id": "defence investment agency", "label": "Defence Investment Agency", "shape": "dot", "size": 18, "title": "\u003cb\u003eDefence Investment Agency\u003c/b\u003e\u003cbr\u003eHelix: Government\u003cbr\u003eCategory: national government institutions\u003cbr\u003eReview: False"}, {"category": "individual", "color": "#999999", "font": {"size": 18}, "helix": "Unknown", "id": "design team lead", "label": "Design Team Lead", "shape": "dot", "size": 18, "title": "\u003cb\u003eDesign Team Lead\u003c/b\u003e\u003cbr\u003eHelix: Unknown\u003cbr\u003eCategory: individual\u003cbr\u003eReview: True"}, {"category": "individual", "color": "#999999", "font": {"size": 18}, "helix": "Unknown", "id": "directeur trice des ressources humaines", "label": "Directeur\u00b7trice des ressources humaines", "shape": "dot", "size": 18, "title": "\u003cb\u003eDirecteur\u00b7trice des ressources humaines\u003c/b\u003e\u003cbr\u003eHelix: Unknown\u003cbr\u003eCategory: individual\u003cbr\u003eReview: True"}, {"category": "individual", "color": "#999999", "font": {"size": 18}, "helix": "Unknown", "id": "directeurs des op rations", "label": "Directeurs des op\u00e9rations", "shape": "dot", "size": 18, "title": "\u003cb\u003eDirecteurs des op\u00e9rations\u003c/b\u003e\u003cbr\u003eHelix: Unknown\u003cbr\u003eCategory: individual\u003cbr\u003eReview: True"}, {"category": "individual", "color": "#999999", "font": {"size": 18}, "helix": "Unknown", "id": "director of hr", "label": "Director of HR", "shape": "dot", "size": 18, "title": "\u003cb\u003eDirector of HR\u003c/b\u003e\u003cbr\u003eHelix: Unknown\u003cbr\u003eCategory: individual\u003cbr\u003eReview: True"}, {"category": "individual", "color": "#999999", "font": {"size": 18}, "helix": "Unknown", "id": "director of operations", "label": "Director of Operations", "shape": "dot", "size": 18, "title": "\u003cb\u003eDirector of Operations\u003c/b\u003e\u003cbr\u003eHelix: Unknown\u003cbr\u003eCategory: individual\u003cbr\u003eReview: True"}, {"category": "individual", "color": "#999999", "font": {"size": 18}, "helix": "Unknown", "id": "elizabeth girard", "label": "Elizabeth Girard", "shape": "dot", "size": 18, "title": "\u003cb\u003eElizabeth Girard\u003c/b\u003e\u003cbr\u003eHelix: Unknown\u003cbr\u003eCategory: individual\u003cbr\u003eReview: True"}, {"category": "individual", "color": "#999999", "font": {"size": 18}, "helix": "Unknown", "id": "evan solomon", "label": "Evan Solomon", "shape": "dot", "size": 18, "title": "\u003cb\u003eEvan Solomon\u003c/b\u003e\u003cbr\u003eHelix: Unknown\u003cbr\u003eCategory: individual\u003cbr\u003eReview: True"}, {"category": "national government institutions", "color": "#54A24B", "font": {"size": 18}, "helix": "Government", "id": "federal economic development agency for southern ontario", "label": "Federal Economic Development Agency for Southern Ontario", "shape": "dot", "size": 18, "title": "\u003cb\u003eFederal Economic Development Agency for Southern Ontario\u003c/b\u003e\u003cbr\u003eHelix: Government\u003cbr\u003eCategory: national government institutions\u003cbr\u003eReview: False"}, {"category": "individual", "color": "#999999", "font": {"size": 18}, "helix": "Unknown", "id": "gestionnaire du programme technique", "label": "Gestionnaire du programme technique", "shape": "dot", "size": 18, "title": "\u003cb\u003eGestionnaire du programme technique\u003c/b\u003e\u003cbr\u003eHelix: Unknown\u003cbr\u003eCategory: individual\u003cbr\u003eReview: True"}, {"category": "individual", "color": "#999999", "font": {"size": 18}, "helix": "Unknown", "id": "guillaume duclos cianci", "label": "Guillaume Duclos-Cianci", "shape": "dot", "size": 18, "title": "\u003cb\u003eGuillaume Duclos-Cianci\u003c/b\u003e\u003cbr\u003eHelix: Unknown\u003cbr\u003eCategory: individual\u003cbr\u003eReview: True"}, {"category": "individual", "color": "#999999", "font": {"size": 18}, "helix": "Unknown", "id": "head of quantum hardware", "label": "Head of Quantum Hardware", "shape": "dot", "size": 18, "title": "\u003cb\u003eHead of Quantum Hardware\u003c/b\u003e\u003cbr\u003eHelix: Unknown\u003cbr\u003eCategory: individual\u003cbr\u003eReview: True"}, {"category": "individual", "color": "#999999", "font": {"size": 18}, "helix": "Unknown", "id": "head of talent acquisition", "label": "Head of talent acquisition", "shape": "dot", "size": 18, "title": "\u003cb\u003eHead of talent acquisition\u003c/b\u003e\u003cbr\u003eHelix: Unknown\u003cbr\u003eCategory: individual\u003cbr\u003eReview: True"}, {"category": "national government", "color": "#999999", "font": {"size": 18}, "helix": "Unknown", "id": "innovation sciences et d veloppement conomique canada", "label": "Innovation, Sciences et D\u00e9veloppement \u00e9conomique Canada (ISDE)", "shape": "dot", "size": 18, "title": "\u003cb\u003eInnovation, Sciences et D\u00e9veloppement \u00e9conomique Canada (ISDE)\u003c/b\u003e\u003cbr\u003eHelix: Unknown\u003cbr\u003eCategory: national government\u003cbr\u003eReview: True"}, {"category": "individual", "color": "#54A24B", "font": {"size": 18}, "helix": "Government", "id": "konrad lehnert", "label": "Konrad Lehnert", "shape": "dot", "size": 18, "title": "\u003cb\u003eKonrad Lehnert\u003c/b\u003e\u003cbr\u003eHelix: Government\u003cbr\u003eCategory: individual\u003cbr\u003eReview: True"}, {"category": "individual", "color": "#999999", "font": {"size": 18}, "helix": "Unknown", "id": "l int grateur trice de donn es", "label": "L\u0027int\u00e9grateur\u00b7trice de donn\u00e9es", "shape": "dot", "size": 18, "title": "\u003cb\u003eL\u0027int\u00e9grateur\u00b7trice de donn\u00e9es\u003c/b\u003e\u003cbr\u003eHelix: Unknown\u003cbr\u003eCategory: individual\u003cbr\u003eReview: True"}, {"category": "individual", "color": "#999999", "font": {"size": 18}, "helix": "Unknown", "id": "marie eve boulanger", "label": "Marie-Eve Boulanger", "shape": "dot", "size": 18, "title": "\u003cb\u003eMarie-Eve Boulanger\u003c/b\u003e\u003cbr\u003eHelix: Unknown\u003cbr\u003eCategory: individual\u003cbr\u003eReview: True"}, {"category": "individual", "color": "#999999", "font": {"size": 18}, "helix": "Unknown", "id": "matthew hamer", "label": "Matthew Hamer", "shape": "dot", "size": 18, "title": "\u003cb\u003eMatthew Hamer\u003c/b\u003e\u003cbr\u003eHelix: Unknown\u003cbr\u003eCategory: individual\u003cbr\u003eReview: True"}, {"category": "individual", "color": "#999999", "font": {"size": 18}, "helix": "Unknown", "id": "matthieu nannini", "label": "Matthieu Nannini", "shape": "dot", "size": 18, "title": "\u003cb\u003eMatthieu Nannini\u003c/b\u003e\u003cbr\u003eHelix: Unknown\u003cbr\u003eCategory: individual\u003cbr\u003eReview: True"}, {"category": "individual", "color": "#999999", "font": {"size": 18}, "helix": "Unknown", "id": "monsieur lachance quirion", "label": "Monsieur Lachance-Quirion", "shape": "dot", "size": 18, "title": "\u003cb\u003eMonsieur Lachance-Quirion\u003c/b\u003e\u003cbr\u003eHelix: Unknown\u003cbr\u003eCategory: individual\u003cbr\u003eReview: True"}, {"category": "national government institutions", "color": "#54A24B", "font": {"size": 18}, "helix": "Government", "id": "national research council", "label": "National Research Council (NRC)", "shape": "dot", "size": 18, "title": "\u003cb\u003eNational Research Council (NRC)\u003c/b\u003e\u003cbr\u003eHelix: Government\u003cbr\u003eCategory: national government institutions\u003cbr\u003eReview: False"}, {"category": "individual", "color": "#999999", "font": {"size": 18}, "helix": "Unknown", "id": "nicholas frattini", "label": "Nicholas Frattini", "shape": "dot", "size": 18, "title": "\u003cb\u003eNicholas Frattini\u003c/b\u003e\u003cbr\u003eHelix: Unknown\u003cbr\u003eCategory: individual\u003cbr\u003eReview: True"}, {"category": "individual", "color": "#999999", "font": {"size": 18}, "helix": "Unknown", "id": "pascal lemieux", "label": "Pascal Lemieux", "shape": "dot", "size": 18, "title": "\u003cb\u003ePascal Lemieux\u003c/b\u003e\u003cbr\u003eHelix: Unknown\u003cbr\u003eCategory: individual\u003cbr\u003eReview: True"}, {"category": "individual", "color": "#999999", "font": {"size": 18}, "helix": "Unknown", "id": "peter howitt", "label": "Peter Howitt", "shape": "dot", "size": 18, "title": "\u003cb\u003ePeter Howitt\u003c/b\u003e\u003cbr\u003eHelix: Unknown\u003cbr\u003eCategory: individual\u003cbr\u003eReview: True"}, {"category": "individual", "color": "#999999", "font": {"size": 18}, "helix": "Unknown", "id": "philippe aghion", "label": "Philippe Aghion", "shape": "dot", "size": 18, "title": "\u003cb\u003ePhilippe Aghion\u003c/b\u003e\u003cbr\u003eHelix: Unknown\u003cbr\u003eCategory: individual\u003cbr\u003eReview: True"}, {"category": "individual", "color": "#999999", "font": {"size": 18}, "helix": "Unknown", "id": "philippe st jean", "label": "Philippe St-Jean", "shape": "dot", "size": 18, "title": "\u003cb\u003ePhilippe St-Jean\u003c/b\u003e\u003cbr\u003eHelix: Unknown\u003cbr\u003eCategory: individual\u003cbr\u003eReview: True"}, {"category": "individual", "color": "#999999", "font": {"size": 18}, "helix": "Unknown", "id": "pratishtha gupta", "label": "Pratishtha Gupta", "shape": "dot", "size": 18, "title": "\u003cb\u003ePratishtha Gupta\u003c/b\u003e\u003cbr\u003eHelix: Unknown\u003cbr\u003eCategory: individual\u003cbr\u003eReview: True"}, {"category": "individual", "color": "#999999", "font": {"size": 18}, "helix": "Unknown", "id": "project manager", "label": "Project Manager", "shape": "dot", "size": 18, "title": "\u003cb\u003eProject Manager\u003c/b\u003e\u003cbr\u003eHelix: Unknown\u003cbr\u003eCategory: individual\u003cbr\u003eReview: True"}, {"category": "generic_group", "color": "#999999", "font": {"size": 18}, "helix": "Unknown", "id": "quantum architecture team", "label": "Quantum Architecture Team", "shape": "dot", "size": 18, "title": "\u003cb\u003eQuantum Architecture Team\u003c/b\u003e\u003cbr\u003eHelix: Unknown\u003cbr\u003eCategory: generic_group\u003cbr\u003eReview: True"}, {"category": "corporate labs", "color": "#F58518", "font": {"size": 18}, "helix": "Industry", "id": "quantum hardware", "label": "Quantum Hardware", "shape": "dot", "size": 18, "title": "\u003cb\u003eQuantum Hardware\u003c/b\u003e\u003cbr\u003eHelix: Industry\u003cbr\u003eCategory: corporate labs\u003cbr\u003eReview: False"}, {"category": "corporate labs", "color": "#F58518", "font": {"size": 18}, "helix": "Industry", "id": "quantum hardware department", "label": "Quantum Hardware Department", "shape": "dot", "size": 18, "title": "\u003cb\u003eQuantum Hardware Department\u003c/b\u003e\u003cbr\u003eHelix: Industry\u003cbr\u003eCategory: corporate labs\u003cbr\u003eReview: False"}, {"category": "corporate labs", "color": "#F58518", "font": {"size": 18}, "helix": "Industry", "id": "quantum hardware team", "label": "Quantum Hardware Team", "shape": "dot", "size": 18, "title": "\u003cb\u003eQuantum Hardware Team\u003c/b\u003e\u003cbr\u003eHelix: Industry\u003cbr\u003eCategory: corporate labs\u003cbr\u003eReview: False"}, {"category": "individual", "color": "#999999", "font": {"size": 18}, "helix": "Unknown", "id": "quantum hardware team lead", "label": "Quantum Hardware Team Lead", "shape": "dot", "size": 18, "title": "\u003cb\u003eQuantum Hardware Team Lead\u003c/b\u003e\u003cbr\u003eHelix: Unknown\u003cbr\u003eCategory: individual\u003cbr\u003eReview: True"}, {"category": "business support institutions", "color": "#E45756", "font": {"size": 18}, "helix": "Intermediary", "id": "quantum innovation zone", "label": "Quantum Innovation Zone", "shape": "dot", "size": 18, "title": "\u003cb\u003eQuantum Innovation Zone\u003c/b\u003e\u003cbr\u003eHelix: Intermediary\u003cbr\u003eCategory: business support institutions\u003cbr\u003eReview: False"}, {"category": "corporate labs", "color": "#F58518", "font": {"size": 18}, "helix": "Industry", "id": "quipe quantum hardware", "label": "\u00e9quipe Quantum Hardware", "shape": "dot", "size": 18, "title": "\u003cb\u003e\u00e9quipe Quantum Hardware\u003c/b\u003e\u003cbr\u003eHelix: Industry\u003cbr\u003eCategory: corporate labs\u003cbr\u003eReview: False"}, {"category": "research institutes", "color": "#4C78A8", "font": {"size": 18}, "helix": "Academia", "id": "quipe th orie et simulations", "label": "\u00c9quipe Th\u00e9orie et simulations", "shape": "dot", "size": 18, "title": "\u003cb\u003e\u00c9quipe Th\u00e9orie et simulations\u003c/b\u003e\u003cbr\u003eHelix: Academia\u003cbr\u003eCategory: research institutes\u003cbr\u003eReview: False"}, {"category": "individual", "color": "#999999", "font": {"size": 18}, "helix": "Unknown", "id": "responsable du programme", "label": "responsable du programme", "shape": "dot", "size": 18, "title": "\u003cb\u003eresponsable du programme\u003c/b\u003e\u003cbr\u003eHelix: Unknown\u003cbr\u003eCategory: individual\u003cbr\u003eReview: True"}, {"category": "business support institutions", "color": "#E45756", "font": {"size": 18}, "helix": "Intermediary", "id": "sherbrooke s vibrant quantum innovation zone", "label": "Sherbrooke\u0027s vibrant Quantum Innovation Zone", "shape": "dot", "size": 18, "title": "\u003cb\u003eSherbrooke\u0027s vibrant Quantum Innovation Zone\u003c/b\u003e\u003cbr\u003eHelix: Intermediary\u003cbr\u003eCategory: business support institutions\u003cbr\u003eReview: False"}, {"category": "individual", "color": "#999999", "font": {"size": 18}, "helix": "Unknown", "id": "software team lead", "label": "Software team lead", "shape": "dot", "size": 18, "title": "\u003cb\u003eSoftware team lead\u003c/b\u003e\u003cbr\u003eHelix: Unknown\u003cbr\u003eCategory: individual\u003cbr\u003eReview: True"}, {"category": "small and medium-sized enterprises", "color": "#F58518", "font": {"size": 18}, "helix": "Industry", "id": "start up", "label": "start-up", "shape": "dot", "size": 18, "title": "\u003cb\u003estart-up\u003c/b\u003e\u003cbr\u003eHelix: Industry\u003cbr\u003eCategory: small and medium-sized enterprises\u003cbr\u003eReview: False"}, {"category": "universities", "color": "#4C78A8", "font": {"size": 18}, "helix": "Academia", "id": "universit de yale", "label": "Universit\u00e9 de Yale", "shape": "dot", "size": 18, "title": "\u003cb\u003eUniversit\u00e9 de Yale\u003c/b\u003e\u003cbr\u003eHelix: Academia\u003cbr\u003eCategory: universities\u003cbr\u003eReview: False"}, {"category": "universities", "color": "#4C78A8", "font": {"size": 18}, "helix": "Academia", "id": "universit laval", "label": "Universit\u00e9 Laval", "shape": "dot", "size": 18, "title": "\u003cb\u003eUniversit\u00e9 Laval\u003c/b\u003e\u003cbr\u003eHelix: Academia\u003cbr\u003eCategory: universities\u003cbr\u003eReview: False"}, {"category": "business support institutions", "color": "#E45756", "font": {"size": 18}, "helix": "Intermediary", "id": "zone d innovation quantique", "label": "Zone d\u0027innovation quantique", "shape": "dot", "size": 18, "title": "\u003cb\u003eZone d\u0027innovation quantique\u003c/b\u003e\u003cbr\u003eHelix: Intermediary\u003cbr\u003eCategory: business support institutions\u003cbr\u003eReview: False"}, {"category": "business support institutions", "color": "#E45756", "font": {"size": 18}, "helix": "Intermediary", "id": "zone d innovation quantique de sherbrooke", "label": "Zone d\u0027innovation quantique de Sherbrooke", "shape": "dot", "size": 18, "title": "\u003cb\u003eZone d\u0027innovation quantique de Sherbrooke\u003c/b\u003e\u003cbr\u003eHelix: Intermediary\u003cbr\u003eCategory: business support institutions\u003cbr\u003eReview: False"}]);
+                  edges = new vis.DataSet([{"arrows": "to", "color": "#6B7280", "from": "anastasiia", "label": "networking", "title": "\u003cb\u003enetworking\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Unknown\u003cbr\u003ePage: 12\u003cbr\u003ePhrase: se joindre \u00e0 Nord Quantique", "to": "nord quantique", "width": 2}, {"arrows": "to", "color": "#6B7280", "from": "canada", "label": "networking", "title": "\u003cb\u003enetworking\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Unknown\u003cbr\u003ePage: 6\u003cbr\u003ePhrase: Participation in major international programs \u2014including U.S. initiatives like [DARPA\u0027s QBI]", "to": "darpa", "width": 2}, {"arrows": "to", "color": "#6B7280", "from": "chlo archambault", "label": "networking", "title": "\u003cb\u003enetworking\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Unknown\u003cbr\u003ePage: 4\u003cbr\u003ePhrase: Partner at Quantacet", "to": "quantacet", "width": 2}, {"arrows": "to", "color": "#2563EB", "from": "government of canada", "label": "collaborative_leadership", "title": "\u003cb\u003ecollaborative_leadership\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Unknown\u003cbr\u003ePage: 8\u003cbr\u003ePhrase: support of the country\u0027s quantum industry", "to": "canada", "width": 2}, {"arrows": "to", "color": "#6B7280", "from": "julien", "label": "networking", "title": "\u003cb\u003enetworking\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Unknown\u003cbr\u003ePage: 6\u003cbr\u003ePhrase: CEO and Co-Founder at Nord Quantique", "to": "nord quantique", "width": 2}, {"arrows": "to", "color": "#6B7280", "from": "julien camirand lemyre", "label": "networking", "title": "\u003cb\u003enetworking\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Innovation\u003cbr\u003ePage: 5\u003cbr\u003ePhrase: CEO and Co-founder of Nord Quantique", "to": "nord quantique", "width": 2}, {"arrows": "to", "color": "#6B7280", "from": "nord quantique", "label": "networking", "title": "\u003cb\u003enetworking\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Intra-helix / Not classified\u003cbr\u003ePage: 7\u003cbr\u003ePhrase: the company continues to see the University as well as IQ as", "to": "universit de sherbrooke", "width": 2}, {"arrows": "to", "color": "#6B7280", "from": "nord quantique", "label": "networking", "title": "\u003cb\u003enetworking\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Knowledge\u003cbr\u003ePage: 7\u003cbr\u003ePhrase: participate to the phase B of the Quantum Benchmarking Initiative", "to": "darpa", "width": 2}, {"arrows": "to", "color": "#2563EB", "from": "nord quantique", "label": "collaborative_leadership", "title": "\u003cb\u003ecollaborative_leadership\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Unknown\u003cbr\u003ePage: 4\u003cbr\u003ePhrase: appointed ... as Chief Financial Officer", "to": "tammy furlong", "width": 2}, {"arrows": "to", "color": "#D97706", "from": "nord quantique", "label": "technology_transfer", "title": "\u003cb\u003etechnology_transfer\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Intra-helix / Not classified\u003cbr\u003ePage: 6\u003cbr\u003ePhrase: spun off from", "to": "university of sherbrooke", "width": 2}, {"arrows": "to", "color": "#D97706", "from": "nord quantique", "label": "technology_transfer", "title": "\u003cb\u003etechnology_transfer\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Intra-helix / Not classified\u003cbr\u003ePage: 6\u003cbr\u003ePhrase: The infrastructure, research environment, and broader ecosystem at IQ supported the company\u0027s", "to": "institut quantique", "width": 2}, {"arrows": "to", "color": "#2563EB", "from": "nord quantique", "label": "collaborative_leadership", "title": "\u003cb\u003ecollaborative_leadership\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Innovation\u003cbr\u003ePage: 5\u003cbr\u003ePhrase: appointed ... as Chief Communications Officer", "to": "tobi day hamilton", "width": 2}, {"arrows": "to", "color": "#2563EB", "from": "nord quantique", "label": "collaborative_leadership", "title": "\u003cb\u003ecollaborative_leadership\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Unknown\u003cbr\u003ePage: 5\u003cbr\u003ePhrase: appointed ... as Vice President, Marketing", "to": "angela olano", "width": 2}, {"arrows": "to", "color": "#2563EB", "from": "nord quantique", "label": "collaborative_leadership", "title": "\u003cb\u003ecollaborative_leadership\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Innovation\u003cbr\u003ePage: 6\u003cbr\u003ePhrase: begins its hardware operations in Sherbrooke\u0027s Quantum Innovation Zone", "to": "sherbrooke s quantum innovation zone", "width": 2}, {"arrows": "to", "color": "#6B7280", "from": "quantum theory", "label": "networking", "title": "\u003cb\u003enetworking\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Intra-helix / Not classified\u003cbr\u003ePage: 92\u003cbr\u003ePhrase: in close collaboration with", "to": "em design", "width": 2}, {"arrows": "to", "color": "#6B7280", "from": "quipe th orique quantique", "label": "networking", "title": "\u003cb\u003enetworking\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Intra-helix / Not classified\u003cbr\u003ePage: 102\u003cbr\u003ePhrase: En collaboration \u00e9troite avec l\u0027\u00e9quipe Th\u00e9orique Quantique, l\u0027\u00e9quipe Design EM", "to": "quipe design em", "width": 2}, {"arrows": "to", "color": "#6B7280", "from": "responsable de l acquisition de talents", "label": "networking", "title": "\u003cb\u003enetworking\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Unknown\u003cbr\u003ePage: 108\u003cbr\u003ePhrase: En collaboration avec le\u00b7la Responsable de l\u0027acquisition de talents", "to": "nord quantique", "width": 2}]);
+
+                  nodeColors = {};
+                  allNodes = nodes.get({ returnType: "Object" });
+                  for (nodeId in allNodes) {
+                    nodeColors[nodeId] = allNodes[nodeId].color;
+                  }
+                  allEdges = edges.get({ returnType: "Object" });
+                  // adding nodes and edges to the graph
+                  data = {nodes: nodes, edges: edges};
+
+                  var options = {"physics": {"barnesHut": {"gravitationalConstant": -8000, "centralGravity": 0.3, "springLength": 180, "springConstant": 0.04}, "minVelocity": 0.75}, "interaction": {"hover": true, "navigationButtons": true, "keyboard": true}};
+
+                  
+
+
+                  
+
+                  network = new vis.Network(container, data, options);
+
+                  
+
+                  
+
+                  
+
+
+                  
+
+                  return network;
+
+              }
+              drawGraph();
+        </script>
+    </body>
+</html>

@@ -1,0 +1,889 @@
+
+========================================================================
+RUN STARTED  2026-06-17 11:49:06
+site_pipeline.py https://www.quintessencelabs.com/
+========================================================================
+
+[11:49:06 +0s | quintessencelabs] === 0 crawl site ===
+[11:49:08 +2s | quintessencelabs] [INIT].... → Crawl4AI 0.8.6 
+[11:49:10 +4s | quintessencelabs] [FETCH]... ↓ https://www.quintessencelabs.com/                                                                    | ✓ | ⏱: 1.74s 
+[11:49:10 +4s | quintessencelabs] [SCRAPE].. ◆ https://www.quintessencelabs.com/                                                                    | ✓ | ⏱: 0.15s 
+[11:49:10 +4s | quintessencelabs] [COMPLETE] ● https://www.quintessencelabs.com/                                                                    | ✓ | ⏱: 1.92s 
+[11:49:12 +6s | quintessencelabs] [FETCH]... ↓ https://www.quintessencelabs.com/                                                                    | ✓ | ⏱: 1.44s 
+[11:49:12 +6s | quintessencelabs] [SCRAPE].. ◆ https://www.quintessencelabs.com/                                                                    | ✓ | ⏱: 0.16s 
+[11:49:12 +6s | quintessencelabs] [COMPLETE] ● https://www.quintessencelabs.com/                                                                    | ✓ | ⏱: 1.64s 
+[11:49:13 +8s | quintessencelabs] [FETCH]... ↓ https://www.quintessencelabs.com/products                                                            | ✓ | ⏱: 2.89s 
+[11:49:14 +8s | quintessencelabs] [SCRAPE].. ◆ https://www.quintessencelabs.com/products                                                            | ✓ | ⏱: 0.24s 
+[11:49:14 +8s | quintessencelabs] [COMPLETE] ● https://www.quintessencelabs.com/products                                                            | ✓ | ⏱: 3.15s 
+[11:49:14 +8s | quintessencelabs] [FETCH]... ↓ https://www.quintessencelabs.com/start-here                                                          | ✓ | ⏱: 3.55s 
+[11:49:14 +8s | quintessencelabs] [SCRAPE].. ◆ https://www.quintessencelabs.com/start-here                                                          | ✓ | ⏱: 0.14s 
+[11:49:14 +8s | quintessencelabs] [COMPLETE] ● https://www.quintessencelabs.com/start-here                                                          | ✓ | ⏱: 3.72s 
+[11:49:14 +8s | quintessencelabs] [FETCH]... ↓ https://www.quintessencelabs.com/careers                                                             | ✓ | ⏱: 3.77s 
+[11:49:14 +9s | quintessencelabs] [SCRAPE].. ◆ https://www.quintessencelabs.com/careers                                                             | ✓ | ⏱: 0.12s 
+[11:49:15 +9s | quintessencelabs] [COMPLETE] ● https://www.quintessencelabs.com/careers                                                             | ✓ | ⏱: 3.93s 
+[11:49:15 +9s | quintessencelabs] [FETCH]... ↓ https://www.quintessencelabs.com/compliance-and-certifications                                       | ✓ | ⏱: 4.03s 
+[11:49:15 +9s | quintessencelabs] [SCRAPE].. ◆ https://www.quintessencelabs.com/compliance-and-certifications                                       | ✓ | ⏱: 0.15s 
+[11:49:15 +9s | quintessencelabs] [COMPLETE] ● https://www.quintessencelabs.com/compliance-and-certifications                                       | ✓ | ⏱: 4.22s 
+[11:49:15 +9s | quintessencelabs] [FETCH]... ↓ https://www.quintessencelabs.com/support                                                             | ✓ | ⏱: 4.26s 
+[11:49:15 +9s | quintessencelabs] [SCRAPE].. ◆ https://www.quintessencelabs.com/support                                                             | ✓ | ⏱: 0.11s 
+[11:49:15 +9s | quintessencelabs] [COMPLETE] ● https://www.quintessencelabs.com/support                                                             | ✓ | ⏱: 4.39s 
+[11:49:15 +9s | quintessencelabs] [FETCH]... ↓ https://www.quintessencelabs.com/our-technology                                                      | ✓ | ⏱: 4.73s 
+[11:49:16 +10s | quintessencelabs] [SCRAPE].. ◆ https://www.quintessencelabs.com/our-technology                                                      | ✓ | ⏱: 0.18s 
+[11:49:16 +10s | quintessencelabs] [COMPLETE] ● https://www.quintessencelabs.com/our-technology                                                      | ✓ | ⏱: 4.94s 
+[11:49:16 +10s | quintessencelabs] [FETCH]... ↓ https://www.quintessencelabs.com/blog                                                                | ✓ | ⏱: 5.15s 
+[11:49:16 +10s | quintessencelabs] [SCRAPE].. ◆ https://www.quintessencelabs.com/blog                                                                | ✓ | ⏱: 0.12s 
+[11:49:16 +10s | quintessencelabs] [COMPLETE] ● https://www.quintessencelabs.com/blog                                                                | ✓ | ⏱: 5.30s 
+[11:49:16 +10s | quintessencelabs] [FETCH]... ↓ https://www.quintessencelabs.com/contact                                                             | ✓ | ⏱: 5.39s 
+[11:49:16 +10s | quintessencelabs] [SCRAPE].. ◆ https://www.quintessencelabs.com/contact                                                             | ✓ | ⏱: 0.15s 
+[11:49:16 +10s | quintessencelabs] [COMPLETE] ● https://www.quintessencelabs.com/contact                                                             | ✓ | ⏱: 5.57s 
+[11:49:16 +10s | quintessencelabs] [FETCH]... ↓ https://www.quintessencelabs.com/resources                                                           | ✓ | ⏱: 5.74s 
+[11:49:16 +11s | quintessencelabs] [SCRAPE].. ◆ https://www.quintessencelabs.com/resources                                                           | ✓ | ⏱: 0.17s 
+[11:49:17 +11s | quintessencelabs] [COMPLETE] ● https://www.quintessencelabs.com/resources                                                           | ✓ | ⏱: 5.98s 
+[11:49:17 +11s | quintessencelabs] [FETCH]... ↓ https://www.quintessencelabs.com/quantum-101                                                         | ✓ | ⏱: 6.05s 
+[11:49:17 +11s | quintessencelabs] [SCRAPE].. ◆ https://www.quintessencelabs.com/quantum-101                                                         | ✓ | ⏱: 0.20s 
+[11:49:17 +11s | quintessencelabs] [COMPLETE] ● https://www.quintessencelabs.com/quantum-101                                                         | ✓ | ⏱: 6.27s 
+[11:49:17 +11s | quintessencelabs] [FETCH]... ↓ https://www.quintessencelabs.com/leadership                                                          | ✓ | ⏱: 6.50s 
+[11:49:17 +11s | quintessencelabs] [SCRAPE].. ◆ https://www.quintessencelabs.com/leadership                                                          | ✓ | ⏱: 0.15s 
+[11:49:17 +11s | quintessencelabs] [COMPLETE] ● https://www.quintessencelabs.com/leadership                                                          | ✓ | ⏱: 6.68s 
+[11:49:17 +11s | quintessencelabs] [FETCH]... ↓ https://www.quintessencelabs.com/about-us                                                            | ✓ | ⏱: 6.69s 
+[11:49:17 +12s | quintessencelabs] [SCRAPE].. ◆ https://www.quintessencelabs.com/about-us                                                            | ✓ | ⏱: 0.19s 
+[11:49:18 +12s | quintessencelabs] [COMPLETE] ● https://www.quintessencelabs.com/about-us                                                            | ✓ | ⏱: 6.92s 
+[11:49:18 +12s | quintessencelabs] [FETCH]... ↓ https://www.quintessencelabs.com/why-now                                                             | ✓ | ⏱: 7.14s 
+[11:49:18 +12s | quintessencelabs] [SCRAPE].. ◆ https://www.quintessencelabs.com/why-now                                                             | ✓ | ⏱: 0.15s 
+[11:49:18 +12s | quintessencelabs] [COMPLETE] ● https://www.quintessencelabs.com/why-now                                                             | ✓ | ⏱: 7.32s 
+[11:49:18 +12s | quintessencelabs] [FETCH]... ↓ https://www.quintessencelabs.com/awards                                                              | ✓ | ⏱: 7.47s 
+[11:49:18 +12s | quintessencelabs] [SCRAPE].. ◆ https://www.quintessencelabs.com/awards                                                              | ✓ | ⏱: 0.17s 
+[11:49:18 +12s | quintessencelabs] [COMPLETE] ● https://www.quintessencelabs.com/awards                                                              | ✓ | ⏱: 7.67s 
+[11:49:18 +12s | quintessencelabs] [FETCH]... ↓ https://www.quintessencelabs.com/faqs                                                                | ✓ | ⏱: 7.73s 
+[11:49:19 +13s | quintessencelabs] [SCRAPE].. ◆ https://www.quintessencelabs.com/faqs                                                                | ✓ | ⏱: 0.20s 
+[11:49:19 +13s | quintessencelabs] [COMPLETE] ● https://www.quintessencelabs.com/faqs                                                                | ✓ | ⏱: 7.96s 
+[11:49:19 +13s | quintessencelabs] [FETCH]... ↓ https://www.quintessencelabs.com/events                                                              | ✓ | ⏱: 8.03s 
+[11:49:19 +13s | quintessencelabs] [SCRAPE].. ◆ https://www.quintessencelabs.com/events                                                              | ✓ | ⏱: 0.14s 
+[11:49:19 +13s | quintessencelabs] [COMPLETE] ● https://www.quintessencelabs.com/events                                                              | ✓ | ⏱: 8.19s 
+[11:49:19 +13s | quintessencelabs] [FETCH]... ↓ https://www.quintessencelabs.com/news                                                                | ✓ | ⏱: 8.16s 
+[11:49:19 +13s | quintessencelabs] [SCRAPE].. ◆ https://www.quintessencelabs.com/news                                                                | ✓ | ⏱: 0.09s 
+[11:49:19 +13s | quintessencelabs] [COMPLETE] ● https://www.quintessencelabs.com/news                                                                | ✓ | ⏱: 8.29s 
+[11:49:19 +13s | quintessencelabs] [FETCH]... ↓ https://www.quintessencelabs.com/why-us                                                              | ✓ | ⏱: 8.31s 
+[11:49:19 +13s | quintessencelabs] [SCRAPE].. ◆ https://www.quintessencelabs.com/why-us                                                              | ✓ | ⏱: 0.18s 
+[11:49:19 +13s | quintessencelabs] [COMPLETE] ● https://www.quintessencelabs.com/why-us                                                              | ✓ | ⏱: 8.52s 
+[11:49:19 +13s | quintessencelabs] Saved: crawl_output/fbfd7e9a25_www.quintessencelabs.com.json
+[11:49:19 +13s | quintessencelabs] Duplicate skipped: https://www.quintessencelabs.com
+[11:49:19 +13s | quintessencelabs] Saved: crawl_output/7871dbbfc4_www.quintessencelabs.com_products.json
+[11:49:19 +13s | quintessencelabs] Saved: crawl_output/0c64b3e262_www.quintessencelabs.com_start-here.json
+[11:49:19 +13s | quintessencelabs] Saved: crawl_output/f72c9186d1_www.quintessencelabs.com_careers.json
+[11:49:19 +13s | quintessencelabs] Saved: crawl_output/9f07653616_www.quintessencelabs.com_compliance-and-certifications.json
+[11:49:19 +13s | quintessencelabs] Saved: crawl_output/0ba133c91c_www.quintessencelabs.com_support.json
+[11:49:19 +13s | quintessencelabs] Saved: crawl_output/73c937e92a_www.quintessencelabs.com_our-technology.json
+[11:49:19 +13s | quintessencelabs] Saved: crawl_output/0b17b2fd6a_www.quintessencelabs.com_blog.json
+[11:49:19 +13s | quintessencelabs] Saved: crawl_output/477b612caa_www.quintessencelabs.com_contact.json
+[11:49:19 +13s | quintessencelabs] Saved: crawl_output/bbb1a22f2f_www.quintessencelabs.com_resources.json
+[11:49:19 +13s | quintessencelabs] Saved: crawl_output/dbbdcad522_www.quintessencelabs.com_quantum-101.json
+[11:49:19 +13s | quintessencelabs] Saved: crawl_output/6dd392ae0e_www.quintessencelabs.com_leadership.json
+[11:49:19 +13s | quintessencelabs] Saved: crawl_output/573fb9696f_www.quintessencelabs.com_about-us.json
+[11:49:19 +13s | quintessencelabs] Saved: crawl_output/d79b80025b_www.quintessencelabs.com_why-now.json
+[11:49:19 +13s | quintessencelabs] Saved: crawl_output/9b7d437ad8_www.quintessencelabs.com_awards.json
+[11:49:19 +13s | quintessencelabs] Saved: crawl_output/a0487d5e85_www.quintessencelabs.com_faqs.json
+[11:49:19 +13s | quintessencelabs] Saved: crawl_output/3eaff90cac_www.quintessencelabs.com_events.json
+[11:49:19 +13s | quintessencelabs] Saved: crawl_output/3b5ff8b2a1_www.quintessencelabs.com_news.json
+[11:49:19 +13s | quintessencelabs] Saved: crawl_output/9a6f0de451_www.quintessencelabs.com_why-us.json
+
+[11:49:20 +14s | quintessencelabs] === 1 actor extraction ===
+[11:49:20 +14s | quintessencelabs] Reading page (1/19): https://www.quintessencelabs.com/blog
+[11:49:20 +14s | quintessencelabs] Extracting: https://www.quintessencelabs.com/blog (1/19), chunk 1/15
+[11:49:23 +17s | quintessencelabs] Extracting: https://www.quintessencelabs.com/blog (1/19), chunk 2/15
+[11:49:30 +24s | quintessencelabs] Extracting: https://www.quintessencelabs.com/blog (1/19), chunk 3/15
+[11:49:35 +29s | quintessencelabs] Extracting: https://www.quintessencelabs.com/blog (1/19), chunk 4/15
+[11:49:39 +33s | quintessencelabs] Extracting: https://www.quintessencelabs.com/blog (1/19), chunk 5/15
+[11:49:44 +38s | quintessencelabs] Extracting: https://www.quintessencelabs.com/blog (1/19), chunk 6/15
+[11:49:50 +44s | quintessencelabs] Extracting: https://www.quintessencelabs.com/blog (1/19), chunk 7/15
+[11:49:58 +52s | quintessencelabs] Repaired malformed JSON.
+[11:49:58 +52s | quintessencelabs] Extracting: https://www.quintessencelabs.com/blog (1/19), chunk 8/15
+[11:50:07 +1m 1s | quintessencelabs] Repaired malformed JSON.
+[11:50:07 +1m 1s | quintessencelabs] Extracting: https://www.quintessencelabs.com/blog (1/19), chunk 9/15
+[11:50:13 +1m 7s | quintessencelabs] Extracting: https://www.quintessencelabs.com/blog (1/19), chunk 10/15
+[11:50:17 +1m 11s | quintessencelabs] Extracting: https://www.quintessencelabs.com/blog (1/19), chunk 11/15
+[11:50:25 +1m 19s | quintessencelabs] Extracting: https://www.quintessencelabs.com/blog (1/19), chunk 12/15
+[11:50:32 +1m 26s | quintessencelabs] Repaired malformed JSON.
+[11:50:32 +1m 26s | quintessencelabs] Extracting: https://www.quintessencelabs.com/blog (1/19), chunk 13/15
+[11:50:36 +1m 30s | quintessencelabs] Extracting: https://www.quintessencelabs.com/blog (1/19), chunk 14/15
+[11:50:40 +1m 34s | quintessencelabs] Extracting: https://www.quintessencelabs.com/blog (1/19), chunk 15/15
+[11:50:43 +1m 37s | quintessencelabs] Reading page (2/19): https://www.quintessencelabs.com/support
+[11:50:43 +1m 37s | quintessencelabs] Extracting: https://www.quintessencelabs.com/support (2/19), chunk 1/11
+[11:50:47 +1m 41s | quintessencelabs] Extracting: https://www.quintessencelabs.com/support (2/19), chunk 2/11
+[11:50:54 +1m 48s | quintessencelabs] Extracting: https://www.quintessencelabs.com/support (2/19), chunk 3/11
+[11:51:02 +1m 56s | quintessencelabs] Repaired malformed JSON.
+[11:51:02 +1m 56s | quintessencelabs] Extracting: https://www.quintessencelabs.com/support (2/19), chunk 4/11
+[11:51:07 +2m 1s | quintessencelabs] Repaired malformed JSON.
+[11:51:07 +2m 1s | quintessencelabs] Extracting: https://www.quintessencelabs.com/support (2/19), chunk 5/11
+[11:51:11 +2m 5s | quintessencelabs] Extracting: https://www.quintessencelabs.com/support (2/19), chunk 6/11
+[11:51:18 +2m 12s | quintessencelabs] Extracting: https://www.quintessencelabs.com/support (2/19), chunk 7/11
+[11:51:24 +2m 18s | quintessencelabs] Extracting: https://www.quintessencelabs.com/support (2/19), chunk 8/11
+[11:51:30 +2m 24s | quintessencelabs] Extracting: https://www.quintessencelabs.com/support (2/19), chunk 9/11
+[11:51:33 +2m 27s | quintessencelabs] Extracting: https://www.quintessencelabs.com/support (2/19), chunk 10/11
+[11:51:37 +2m 31s | quintessencelabs] Extracting: https://www.quintessencelabs.com/support (2/19), chunk 11/11
+[11:51:41 +2m 35s | quintessencelabs] Reading page (3/19): https://www.quintessencelabs.com/start-here
+[11:51:41 +2m 35s | quintessencelabs] Extracting: https://www.quintessencelabs.com/start-here (3/19), chunk 1/17
+[11:51:45 +2m 39s | quintessencelabs] Extracting: https://www.quintessencelabs.com/start-here (3/19), chunk 2/17
+[11:51:50 +2m 44s | quintessencelabs] Extracting: https://www.quintessencelabs.com/start-here (3/19), chunk 3/17
+[11:51:56 +2m 50s | quintessencelabs] Repaired malformed JSON.
+[11:51:56 +2m 50s | quintessencelabs] Extracting: https://www.quintessencelabs.com/start-here (3/19), chunk 4/17
+[11:52:00 +2m 54s | quintessencelabs] Extracting: https://www.quintessencelabs.com/start-here (3/19), chunk 5/17
+[11:52:04 +2m 58s | quintessencelabs] Extracting: https://www.quintessencelabs.com/start-here (3/19), chunk 6/17
+[11:52:12 +3m 6s | quintessencelabs] Repaired malformed JSON.
+[11:52:12 +3m 6s | quintessencelabs] Extracting: https://www.quintessencelabs.com/start-here (3/19), chunk 7/17
+[11:52:21 +3m 15s | quintessencelabs] Repaired malformed JSON.
+[11:52:21 +3m 15s | quintessencelabs] Extracting: https://www.quintessencelabs.com/start-here (3/19), chunk 8/17
+[11:52:26 +3m 20s | quintessencelabs] Extracting: https://www.quintessencelabs.com/start-here (3/19), chunk 9/17
+[11:52:27 +3m 21s | quintessencelabs] Extracting: https://www.quintessencelabs.com/start-here (3/19), chunk 10/17
+[11:52:35 +3m 29s | quintessencelabs] Repaired malformed JSON.
+[11:52:35 +3m 29s | quintessencelabs] Extracting: https://www.quintessencelabs.com/start-here (3/19), chunk 11/17
+[11:52:41 +3m 35s | quintessencelabs] Repaired malformed JSON.
+[11:52:41 +3m 35s | quintessencelabs] Extracting: https://www.quintessencelabs.com/start-here (3/19), chunk 12/17
+[11:52:46 +3m 40s | quintessencelabs] Extracting: https://www.quintessencelabs.com/start-here (3/19), chunk 13/17
+[11:52:50 +3m 44s | quintessencelabs] Extracting: https://www.quintessencelabs.com/start-here (3/19), chunk 14/17
+[11:52:54 +3m 48s | quintessencelabs] Extracting: https://www.quintessencelabs.com/start-here (3/19), chunk 15/17
+[11:52:58 +3m 52s | quintessencelabs] Extracting: https://www.quintessencelabs.com/start-here (3/19), chunk 16/17
+[11:53:02 +3m 56s | quintessencelabs] Extracting: https://www.quintessencelabs.com/start-here (3/19), chunk 17/17
+[11:53:06 +4m 0s | quintessencelabs] Reading page (4/19): https://www.quintessencelabs.com/news
+[11:53:06 +4m 0s | quintessencelabs] Extracting: https://www.quintessencelabs.com/news (4/19), chunk 1/14
+[11:53:10 +4m 4s | quintessencelabs] Extracting: https://www.quintessencelabs.com/news (4/19), chunk 2/14
+[11:53:15 +4m 9s | quintessencelabs] Extracting: https://www.quintessencelabs.com/news (4/19), chunk 3/14
+[11:53:24 +4m 18s | quintessencelabs] Extracting: https://www.quintessencelabs.com/news (4/19), chunk 4/14
+[11:53:29 +4m 23s | quintessencelabs] Repaired malformed JSON.
+[11:53:29 +4m 23s | quintessencelabs] Extracting: https://www.quintessencelabs.com/news (4/19), chunk 5/14
+[11:53:34 +4m 28s | quintessencelabs] Extracting: https://www.quintessencelabs.com/news (4/19), chunk 6/14
+[11:53:41 +4m 35s | quintessencelabs] Extracting: https://www.quintessencelabs.com/news (4/19), chunk 7/14
+[11:53:46 +4m 40s | quintessencelabs] Repaired malformed JSON.
+[11:53:46 +4m 40s | quintessencelabs] Extracting: https://www.quintessencelabs.com/news (4/19), chunk 8/14
+[11:53:52 +4m 46s | quintessencelabs] Repaired malformed JSON.
+[11:53:52 +4m 46s | quintessencelabs] Extracting: https://www.quintessencelabs.com/news (4/19), chunk 9/14
+[11:53:58 +4m 52s | quintessencelabs] Repaired malformed JSON.
+[11:53:58 +4m 52s | quintessencelabs] Extracting: https://www.quintessencelabs.com/news (4/19), chunk 10/14
+[11:54:05 +4m 59s | quintessencelabs] Repaired malformed JSON.
+[11:54:05 +4m 59s | quintessencelabs] Extracting: https://www.quintessencelabs.com/news (4/19), chunk 11/14
+[11:54:13 +5m 7s | quintessencelabs] Repaired malformed JSON.
+[11:54:13 +5m 7s | quintessencelabs] Extracting: https://www.quintessencelabs.com/news (4/19), chunk 12/14
+[11:54:18 +5m 12s | quintessencelabs] Extracting: https://www.quintessencelabs.com/news (4/19), chunk 13/14
+[11:54:21 +5m 15s | quintessencelabs] Extracting: https://www.quintessencelabs.com/news (4/19), chunk 14/14
+[11:54:25 +5m 19s | quintessencelabs] Reading page (5/19): https://www.quintessencelabs.com/events
+[11:54:25 +5m 19s | quintessencelabs] Extracting: https://www.quintessencelabs.com/events (5/19), chunk 1/18
+[11:54:28 +5m 22s | quintessencelabs] Extracting: https://www.quintessencelabs.com/events (5/19), chunk 2/18
+[11:54:34 +5m 28s | quintessencelabs] Extracting: https://www.quintessencelabs.com/events (5/19), chunk 3/18
+[11:54:41 +5m 35s | quintessencelabs] Repaired malformed JSON.
+[11:54:41 +5m 35s | quintessencelabs] Extracting: https://www.quintessencelabs.com/events (5/19), chunk 4/18
+[11:54:45 +5m 39s | quintessencelabs] Extracting: https://www.quintessencelabs.com/events (5/19), chunk 5/18
+[11:54:49 +5m 43s | quintessencelabs] Extracting: https://www.quintessencelabs.com/events (5/19), chunk 6/18
+[11:54:57 +5m 51s | quintessencelabs] Repaired malformed JSON.
+[11:54:57 +5m 51s | quintessencelabs] Extracting: https://www.quintessencelabs.com/events (5/19), chunk 7/18
+[11:55:03 +5m 57s | quintessencelabs] Repaired malformed JSON.
+[11:55:03 +5m 57s | quintessencelabs] Extracting: https://www.quintessencelabs.com/events (5/19), chunk 8/18
+[11:55:12 +6m 6s | quintessencelabs] Repaired malformed JSON.
+[11:55:12 +6m 6s | quintessencelabs] Extracting: https://www.quintessencelabs.com/events (5/19), chunk 9/18
+[11:55:17 +6m 11s | quintessencelabs] Repaired malformed JSON.
+[11:55:17 +6m 11s | quintessencelabs] Extracting: https://www.quintessencelabs.com/events (5/19), chunk 10/18
+[11:55:24 +6m 18s | quintessencelabs] Repaired malformed JSON.
+[11:55:24 +6m 18s | quintessencelabs] Extracting: https://www.quintessencelabs.com/events (5/19), chunk 11/18
+[11:55:31 +6m 25s | quintessencelabs] Repaired malformed JSON.
+[11:55:31 +6m 25s | quintessencelabs] Extracting: https://www.quintessencelabs.com/events (5/19), chunk 12/18
+[11:55:37 +6m 31s | quintessencelabs] Repaired malformed JSON.
+[11:55:37 +6m 31s | quintessencelabs] Extracting: https://www.quintessencelabs.com/events (5/19), chunk 13/18
+[11:55:43 +6m 37s | quintessencelabs] Repaired malformed JSON.
+[11:55:43 +6m 37s | quintessencelabs] Extracting: https://www.quintessencelabs.com/events (5/19), chunk 14/18
+[11:55:51 +6m 45s | quintessencelabs] Repaired malformed JSON.
+[11:55:51 +6m 45s | quintessencelabs] Extracting: https://www.quintessencelabs.com/events (5/19), chunk 15/18
+[11:55:59 +6m 53s | quintessencelabs] Repaired malformed JSON.
+[11:55:59 +6m 53s | quintessencelabs] Extracting: https://www.quintessencelabs.com/events (5/19), chunk 16/18
+[11:56:02 +6m 57s | quintessencelabs] Extracting: https://www.quintessencelabs.com/events (5/19), chunk 17/18
+[11:56:08 +7m 2s | quintessencelabs] Repaired malformed JSON.
+[11:56:08 +7m 2s | quintessencelabs] Extracting: https://www.quintessencelabs.com/events (5/19), chunk 18/18
+[11:56:11 +7m 6s | quintessencelabs] Reading page (6/19): https://www.quintessencelabs.com/contact
+[11:56:11 +7m 6s | quintessencelabs] Extracting: https://www.quintessencelabs.com/contact (6/19), chunk 1/15
+[11:56:15 +7m 9s | quintessencelabs] Extracting: https://www.quintessencelabs.com/contact (6/19), chunk 2/15
+[11:56:21 +7m 15s | quintessencelabs] Extracting: https://www.quintessencelabs.com/contact (6/19), chunk 3/15
+[11:56:30 +7m 24s | quintessencelabs] Extracting: https://www.quintessencelabs.com/contact (6/19), chunk 4/15
+[11:56:36 +7m 30s | quintessencelabs] Repaired malformed JSON.
+[11:56:36 +7m 30s | quintessencelabs] Extracting: https://www.quintessencelabs.com/contact (6/19), chunk 5/15
+[11:56:42 +7m 36s | quintessencelabs] Extracting: https://www.quintessencelabs.com/contact (6/19), chunk 6/15
+[11:56:50 +7m 44s | quintessencelabs] Repaired malformed JSON.
+[11:56:50 +7m 44s | quintessencelabs] Extracting: https://www.quintessencelabs.com/contact (6/19), chunk 7/15
+[11:56:56 +7m 50s | quintessencelabs] Extracting: https://www.quintessencelabs.com/contact (6/19), chunk 8/15
+[11:57:02 +7m 56s | quintessencelabs] Repaired malformed JSON.
+[11:57:02 +7m 56s | quintessencelabs] Extracting: https://www.quintessencelabs.com/contact (6/19), chunk 9/15
+[11:57:09 +8m 3s | quintessencelabs] Repaired malformed JSON.
+[11:57:09 +8m 3s | quintessencelabs] Extracting: https://www.quintessencelabs.com/contact (6/19), chunk 10/15
+[11:57:15 +8m 9s | quintessencelabs] Extracting: https://www.quintessencelabs.com/contact (6/19), chunk 11/15
+[11:57:21 +8m 15s | quintessencelabs] Repaired malformed JSON.
+[11:57:21 +8m 15s | quintessencelabs] Extracting: https://www.quintessencelabs.com/contact (6/19), chunk 12/15
+[11:57:25 +8m 19s | quintessencelabs] Extracting: https://www.quintessencelabs.com/contact (6/19), chunk 13/15
+[11:57:32 +8m 26s | quintessencelabs] Extracting: https://www.quintessencelabs.com/contact (6/19), chunk 14/15
+[11:57:36 +8m 30s | quintessencelabs] Extracting: https://www.quintessencelabs.com/contact (6/19), chunk 15/15
+[11:57:40 +8m 34s | quintessencelabs] Reading page (7/19): https://www.quintessencelabs.com/about-us
+[11:57:40 +8m 34s | quintessencelabs] Extracting: https://www.quintessencelabs.com/about-us (7/19), chunk 1/18
+[11:57:43 +8m 37s | quintessencelabs] Extracting: https://www.quintessencelabs.com/about-us (7/19), chunk 2/18
+[11:57:49 +8m 43s | quintessencelabs] Extracting: https://www.quintessencelabs.com/about-us (7/19), chunk 3/18
+[11:57:55 +8m 49s | quintessencelabs] Extracting: https://www.quintessencelabs.com/about-us (7/19), chunk 4/18
+[11:58:02 +8m 56s | quintessencelabs] Extracting: https://www.quintessencelabs.com/about-us (7/19), chunk 5/18
+[11:58:06 +9m 0s | quintessencelabs] Extracting: https://www.quintessencelabs.com/about-us (7/19), chunk 6/18
+[11:58:12 +9m 6s | quintessencelabs] Repaired malformed JSON.
+[11:58:12 +9m 6s | quintessencelabs] Extracting: https://www.quintessencelabs.com/about-us (7/19), chunk 7/18
+[11:58:19 +9m 13s | quintessencelabs] Extracting: https://www.quintessencelabs.com/about-us (7/19), chunk 8/18
+[11:58:25 +9m 19s | quintessencelabs] Repaired malformed JSON.
+[11:58:25 +9m 19s | quintessencelabs] Extracting: https://www.quintessencelabs.com/about-us (7/19), chunk 9/18
+[11:58:31 +9m 25s | quintessencelabs] Repaired malformed JSON.
+[11:58:31 +9m 25s | quintessencelabs] Extracting: https://www.quintessencelabs.com/about-us (7/19), chunk 10/18
+[11:58:37 +9m 31s | quintessencelabs] Repaired malformed JSON.
+[11:58:37 +9m 31s | quintessencelabs] Extracting: https://www.quintessencelabs.com/about-us (7/19), chunk 11/18
+[11:58:43 +9m 37s | quintessencelabs] Repaired malformed JSON.
+[11:58:43 +9m 37s | quintessencelabs] Extracting: https://www.quintessencelabs.com/about-us (7/19), chunk 12/18
+[11:58:50 +9m 44s | quintessencelabs] Repaired malformed JSON.
+[11:58:50 +9m 44s | quintessencelabs] Extracting: https://www.quintessencelabs.com/about-us (7/19), chunk 13/18
+[11:58:57 +9m 51s | quintessencelabs] Repaired malformed JSON.
+[11:58:57 +9m 51s | quintessencelabs] Extracting: https://www.quintessencelabs.com/about-us (7/19), chunk 14/18
+[11:59:05 +9m 59s | quintessencelabs] Repaired malformed JSON.
+[11:59:05 +9m 59s | quintessencelabs] Extracting: https://www.quintessencelabs.com/about-us (7/19), chunk 15/18
+[11:59:12 +10m 6s | quintessencelabs] Repaired malformed JSON.
+[11:59:12 +10m 6s | quintessencelabs] Extracting: https://www.quintessencelabs.com/about-us (7/19), chunk 16/18
+[11:59:17 +10m 11s | quintessencelabs] Extracting: https://www.quintessencelabs.com/about-us (7/19), chunk 17/18
+[11:59:22 +10m 16s | quintessencelabs] Extracting: https://www.quintessencelabs.com/about-us (7/19), chunk 18/18
+[11:59:26 +10m 20s | quintessencelabs] Reading page (8/19): https://www.quintessencelabs.com/leadership
+[11:59:26 +10m 20s | quintessencelabs] Extracting: https://www.quintessencelabs.com/leadership (8/19), chunk 1/15
+[11:59:30 +10m 24s | quintessencelabs] Extracting: https://www.quintessencelabs.com/leadership (8/19), chunk 2/15
+[11:59:36 +10m 30s | quintessencelabs] Extracting: https://www.quintessencelabs.com/leadership (8/19), chunk 3/15
+[11:59:43 +10m 37s | quintessencelabs] Extracting: https://www.quintessencelabs.com/leadership (8/19), chunk 4/15
+[11:59:47 +10m 41s | quintessencelabs] Extracting: https://www.quintessencelabs.com/leadership (8/19), chunk 5/15
+[11:59:51 +10m 45s | quintessencelabs] Extracting: https://www.quintessencelabs.com/leadership (8/19), chunk 6/15
+[11:59:59 +10m 53s | quintessencelabs] Extracting: https://www.quintessencelabs.com/leadership (8/19), chunk 7/15
+[12:00:05 +10m 59s | quintessencelabs] Repaired malformed JSON.
+[12:00:05 +10m 59s | quintessencelabs] Extracting: https://www.quintessencelabs.com/leadership (8/19), chunk 8/15
+[12:00:14 +11m 8s | quintessencelabs] Repaired malformed JSON.
+[12:00:14 +11m 8s | quintessencelabs] Extracting: https://www.quintessencelabs.com/leadership (8/19), chunk 9/15
+[12:00:20 +11m 14s | quintessencelabs] Repaired malformed JSON.
+[12:00:20 +11m 14s | quintessencelabs] Extracting: https://www.quintessencelabs.com/leadership (8/19), chunk 10/15
+[12:00:26 +11m 20s | quintessencelabs] Repaired malformed JSON.
+[12:00:26 +11m 20s | quintessencelabs] Extracting: https://www.quintessencelabs.com/leadership (8/19), chunk 11/15
+[12:00:32 +11m 26s | quintessencelabs] Repaired malformed JSON.
+[12:00:32 +11m 26s | quintessencelabs] Extracting: https://www.quintessencelabs.com/leadership (8/19), chunk 12/15
+[12:00:37 +11m 31s | quintessencelabs] Repaired malformed JSON.
+[12:00:37 +11m 31s | quintessencelabs] Extracting: https://www.quintessencelabs.com/leadership (8/19), chunk 13/15
+[12:00:42 +11m 36s | quintessencelabs] Extracting: https://www.quintessencelabs.com/leadership (8/19), chunk 14/15
+[12:00:46 +11m 40s | quintessencelabs] Extracting: https://www.quintessencelabs.com/leadership (8/19), chunk 15/15
+[12:00:49 +11m 43s | quintessencelabs] Reading page (9/19): https://www.quintessencelabs.com/our-technology
+[12:00:49 +11m 43s | quintessencelabs] Extracting: https://www.quintessencelabs.com/our-technology (9/19), chunk 1/19
+[12:00:53 +11m 47s | quintessencelabs] Extracting: https://www.quintessencelabs.com/our-technology (9/19), chunk 2/19
+[12:01:01 +11m 55s | quintessencelabs] Extracting: https://www.quintessencelabs.com/our-technology (9/19), chunk 3/19
+[12:01:06 +12m 0s | quintessencelabs] Extracting: https://www.quintessencelabs.com/our-technology (9/19), chunk 4/19
+[12:01:11 +12m 5s | quintessencelabs] Extracting: https://www.quintessencelabs.com/our-technology (9/19), chunk 5/19
+[12:01:15 +12m 9s | quintessencelabs] Extracting: https://www.quintessencelabs.com/our-technology (9/19), chunk 6/19
+[12:01:21 +12m 15s | quintessencelabs] Repaired malformed JSON.
+[12:01:21 +12m 15s | quintessencelabs] Extracting: https://www.quintessencelabs.com/our-technology (9/19), chunk 7/19
+[12:01:27 +12m 21s | quintessencelabs] Repaired malformed JSON.
+[12:01:27 +12m 21s | quintessencelabs] Extracting: https://www.quintessencelabs.com/our-technology (9/19), chunk 8/19
+[12:01:33 +12m 27s | quintessencelabs] Repaired malformed JSON.
+[12:01:33 +12m 27s | quintessencelabs] Extracting: https://www.quintessencelabs.com/our-technology (9/19), chunk 9/19
+[12:01:40 +12m 34s | quintessencelabs] Repaired malformed JSON.
+[12:01:40 +12m 34s | quintessencelabs] Extracting: https://www.quintessencelabs.com/our-technology (9/19), chunk 10/19
+[12:01:45 +12m 39s | quintessencelabs] Extracting: https://www.quintessencelabs.com/our-technology (9/19), chunk 11/19
+[12:01:51 +12m 45s | quintessencelabs] Extracting: https://www.quintessencelabs.com/our-technology (9/19), chunk 12/19
+[12:02:00 +12m 54s | quintessencelabs] Repaired malformed JSON.
+[12:02:00 +12m 54s | quintessencelabs] Extracting: https://www.quintessencelabs.com/our-technology (9/19), chunk 13/19
+[12:02:06 +13m 0s | quintessencelabs] Repaired malformed JSON.
+[12:02:06 +13m 0s | quintessencelabs] Extracting: https://www.quintessencelabs.com/our-technology (9/19), chunk 14/19
+[12:02:14 +13m 8s | quintessencelabs] Repaired malformed JSON.
+[12:02:14 +13m 8s | quintessencelabs] Extracting: https://www.quintessencelabs.com/our-technology (9/19), chunk 15/19
+[12:02:20 +13m 14s | quintessencelabs] Repaired malformed JSON.
+[12:02:20 +13m 14s | quintessencelabs] Extracting: https://www.quintessencelabs.com/our-technology (9/19), chunk 16/19
+[12:02:25 +13m 19s | quintessencelabs] Extracting: https://www.quintessencelabs.com/our-technology (9/19), chunk 17/19
+[12:02:29 +13m 23s | quintessencelabs] Extracting: https://www.quintessencelabs.com/our-technology (9/19), chunk 18/19
+[12:02:33 +13m 27s | quintessencelabs] Extracting: https://www.quintessencelabs.com/our-technology (9/19), chunk 19/19
+[12:02:37 +13m 31s | quintessencelabs] Reading page (10/19): https://www.quintessencelabs.com/products
+[12:02:37 +13m 31s | quintessencelabs] Extracting: https://www.quintessencelabs.com/products (10/19), chunk 1/20
+[12:02:41 +13m 35s | quintessencelabs] Extracting: https://www.quintessencelabs.com/products (10/19), chunk 2/20
+[12:02:47 +13m 41s | quintessencelabs] Extracting: https://www.quintessencelabs.com/products (10/19), chunk 3/20
+[12:02:53 +13m 47s | quintessencelabs] Extracting: https://www.quintessencelabs.com/products (10/19), chunk 4/20
+[12:02:57 +13m 51s | quintessencelabs] Extracting: https://www.quintessencelabs.com/products (10/19), chunk 5/20
+[12:03:03 +13m 57s | quintessencelabs] Extracting: https://www.quintessencelabs.com/products (10/19), chunk 6/20
+[12:03:10 +14m 4s | quintessencelabs] Repaired malformed JSON.
+[12:03:10 +14m 4s | quintessencelabs] Extracting: https://www.quintessencelabs.com/products (10/19), chunk 7/20
+[12:03:16 +14m 10s | quintessencelabs] Repaired malformed JSON.
+[12:03:16 +14m 10s | quintessencelabs] Extracting: https://www.quintessencelabs.com/products (10/19), chunk 8/20
+[12:03:22 +14m 16s | quintessencelabs] Repaired malformed JSON.
+[12:03:22 +14m 16s | quintessencelabs] Extracting: https://www.quintessencelabs.com/products (10/19), chunk 9/20
+[12:03:25 +14m 19s | quintessencelabs] Extracting: https://www.quintessencelabs.com/products (10/19), chunk 10/20
+[12:03:32 +14m 26s | quintessencelabs] Extracting: https://www.quintessencelabs.com/products (10/19), chunk 11/20
+[12:03:40 +14m 34s | quintessencelabs] Repaired malformed JSON.
+[12:03:40 +14m 34s | quintessencelabs] Extracting: https://www.quintessencelabs.com/products (10/19), chunk 12/20
+[12:03:46 +14m 40s | quintessencelabs] Repaired malformed JSON.
+[12:03:46 +14m 40s | quintessencelabs] Extracting: https://www.quintessencelabs.com/products (10/19), chunk 13/20
+[12:03:50 +14m 44s | quintessencelabs] Extracting: https://www.quintessencelabs.com/products (10/19), chunk 14/20
+[12:03:57 +14m 52s | quintessencelabs] Extracting: https://www.quintessencelabs.com/products (10/19), chunk 15/20
+[12:04:05 +14m 59s | quintessencelabs] Extracting: https://www.quintessencelabs.com/products (10/19), chunk 16/20
+[12:04:11 +15m 5s | quintessencelabs] Extracting: https://www.quintessencelabs.com/products (10/19), chunk 17/20
+[12:04:18 +15m 12s | quintessencelabs] Repaired malformed JSON.
+[12:04:18 +15m 12s | quintessencelabs] Extracting: https://www.quintessencelabs.com/products (10/19), chunk 18/20
+[12:04:21 +15m 15s | quintessencelabs] Extracting: https://www.quintessencelabs.com/products (10/19), chunk 19/20
+[12:04:25 +15m 19s | quintessencelabs] Extracting: https://www.quintessencelabs.com/products (10/19), chunk 20/20
+[12:04:29 +15m 23s | quintessencelabs] Reading page (11/19): https://www.quintessencelabs.com/why-us
+[12:04:29 +15m 23s | quintessencelabs] Extracting: https://www.quintessencelabs.com/why-us (11/19), chunk 1/28
+[12:04:33 +15m 27s | quintessencelabs] Extracting: https://www.quintessencelabs.com/why-us (11/19), chunk 2/28
+[12:04:39 +15m 33s | quintessencelabs] Extracting: https://www.quintessencelabs.com/why-us (11/19), chunk 3/28
+[12:04:45 +15m 39s | quintessencelabs] Repaired malformed JSON.
+[12:04:45 +15m 39s | quintessencelabs] Extracting: https://www.quintessencelabs.com/why-us (11/19), chunk 4/28
+[12:04:50 +15m 44s | quintessencelabs] Extracting: https://www.quintessencelabs.com/why-us (11/19), chunk 5/28
+[12:04:54 +15m 48s | quintessencelabs] Extracting: https://www.quintessencelabs.com/why-us (11/19), chunk 6/28
+[12:05:01 +15m 56s | quintessencelabs] Extracting: https://www.quintessencelabs.com/why-us (11/19), chunk 7/28
+[12:05:08 +16m 2s | quintessencelabs] Extracting: https://www.quintessencelabs.com/why-us (11/19), chunk 8/28
+[12:05:13 +16m 7s | quintessencelabs] Extracting: https://www.quintessencelabs.com/why-us (11/19), chunk 9/28
+[12:05:18 +16m 12s | quintessencelabs] Repaired malformed JSON.
+[12:05:18 +16m 12s | quintessencelabs] Extracting: https://www.quintessencelabs.com/why-us (11/19), chunk 10/28
+[12:05:25 +16m 19s | quintessencelabs] Repaired malformed JSON.
+[12:05:25 +16m 19s | quintessencelabs] Extracting: https://www.quintessencelabs.com/why-us (11/19), chunk 11/28
+[12:05:31 +16m 25s | quintessencelabs] Repaired malformed JSON.
+[12:05:31 +16m 25s | quintessencelabs] Extracting: https://www.quintessencelabs.com/why-us (11/19), chunk 12/28
+[12:05:37 +16m 31s | quintessencelabs] Repaired malformed JSON.
+[12:05:37 +16m 31s | quintessencelabs] Extracting: https://www.quintessencelabs.com/why-us (11/19), chunk 13/28
+[12:05:45 +16m 39s | quintessencelabs] Repaired malformed JSON.
+[12:05:45 +16m 39s | quintessencelabs] Extracting: https://www.quintessencelabs.com/why-us (11/19), chunk 14/28
+[12:05:52 +16m 46s | quintessencelabs] Repaired malformed JSON.
+[12:05:52 +16m 46s | quintessencelabs] Extracting: https://www.quintessencelabs.com/why-us (11/19), chunk 15/28
+[12:05:59 +16m 53s | quintessencelabs] Repaired malformed JSON.
+[12:05:59 +16m 53s | quintessencelabs] Extracting: https://www.quintessencelabs.com/why-us (11/19), chunk 16/28
+[12:06:06 +17m 0s | quintessencelabs] Repaired malformed JSON.
+[12:06:06 +17m 0s | quintessencelabs] Extracting: https://www.quintessencelabs.com/why-us (11/19), chunk 17/28
+[12:06:12 +17m 7s | quintessencelabs] Repaired malformed JSON.
+[12:06:12 +17m 7s | quintessencelabs] Extracting: https://www.quintessencelabs.com/why-us (11/19), chunk 18/28
+[12:06:19 +17m 14s | quintessencelabs] Repaired malformed JSON.
+[12:06:19 +17m 14s | quintessencelabs] Extracting: https://www.quintessencelabs.com/why-us (11/19), chunk 19/28
+[12:06:27 +17m 21s | quintessencelabs] Repaired malformed JSON.
+[12:06:27 +17m 21s | quintessencelabs] Extracting: https://www.quintessencelabs.com/why-us (11/19), chunk 20/28
+[12:06:33 +17m 27s | quintessencelabs] Repaired malformed JSON.
+[12:06:33 +17m 27s | quintessencelabs] Extracting: https://www.quintessencelabs.com/why-us (11/19), chunk 21/28
+[12:06:41 +17m 35s | quintessencelabs] Repaired malformed JSON.
+[12:06:41 +17m 35s | quintessencelabs] Extracting: https://www.quintessencelabs.com/why-us (11/19), chunk 22/28
+[12:06:48 +17m 42s | quintessencelabs] Repaired malformed JSON.
+[12:06:48 +17m 42s | quintessencelabs] Extracting: https://www.quintessencelabs.com/why-us (11/19), chunk 23/28
+[12:06:54 +17m 48s | quintessencelabs] Repaired malformed JSON.
+[12:06:54 +17m 48s | quintessencelabs] Extracting: https://www.quintessencelabs.com/why-us (11/19), chunk 24/28
+[12:07:01 +17m 55s | quintessencelabs] Repaired malformed JSON.
+[12:07:01 +17m 55s | quintessencelabs] Extracting: https://www.quintessencelabs.com/why-us (11/19), chunk 25/28
+[12:07:08 +18m 2s | quintessencelabs] Extracting: https://www.quintessencelabs.com/why-us (11/19), chunk 26/28
+[12:07:12 +18m 6s | quintessencelabs] Extracting: https://www.quintessencelabs.com/why-us (11/19), chunk 27/28
+[12:07:16 +18m 10s | quintessencelabs] Extracting: https://www.quintessencelabs.com/why-us (11/19), chunk 28/28
+[12:07:21 +18m 15s | quintessencelabs] Reading page (12/19): https://www.quintessencelabs.com/awards
+[12:07:21 +18m 15s | quintessencelabs] Extracting: https://www.quintessencelabs.com/awards (12/19), chunk 1/16
+[12:07:27 +18m 21s | quintessencelabs] Extracting: https://www.quintessencelabs.com/awards (12/19), chunk 2/16
+[12:07:33 +18m 27s | quintessencelabs] Extracting: https://www.quintessencelabs.com/awards (12/19), chunk 3/16
+[12:07:39 +18m 34s | quintessencelabs] Repaired malformed JSON.
+[12:07:39 +18m 34s | quintessencelabs] Extracting: https://www.quintessencelabs.com/awards (12/19), chunk 4/16
+[12:07:44 +18m 38s | quintessencelabs] Extracting: https://www.quintessencelabs.com/awards (12/19), chunk 5/16
+[12:07:48 +18m 42s | quintessencelabs] Extracting: https://www.quintessencelabs.com/awards (12/19), chunk 6/16
+[12:07:57 +18m 51s | quintessencelabs] Repaired malformed JSON.
+[12:07:57 +18m 51s | quintessencelabs] Extracting: https://www.quintessencelabs.com/awards (12/19), chunk 7/16
+[12:08:04 +18m 58s | quintessencelabs] Repaired malformed JSON.
+[12:08:04 +18m 58s | quintessencelabs] Extracting: https://www.quintessencelabs.com/awards (12/19), chunk 8/16
+[12:08:10 +19m 4s | quintessencelabs] Repaired malformed JSON.
+[12:08:10 +19m 4s | quintessencelabs] Extracting: https://www.quintessencelabs.com/awards (12/19), chunk 9/16
+[12:08:16 +19m 10s | quintessencelabs] Repaired malformed JSON.
+[12:08:16 +19m 10s | quintessencelabs] Extracting: https://www.quintessencelabs.com/awards (12/19), chunk 10/16
+[12:08:23 +19m 17s | quintessencelabs] Repaired malformed JSON.
+[12:08:23 +19m 17s | quintessencelabs] Extracting: https://www.quintessencelabs.com/awards (12/19), chunk 11/16
+[12:08:30 +19m 24s | quintessencelabs] Repaired malformed JSON.
+[12:08:30 +19m 24s | quintessencelabs] Extracting: https://www.quintessencelabs.com/awards (12/19), chunk 12/16
+[12:08:37 +19m 31s | quintessencelabs] Repaired malformed JSON.
+[12:08:37 +19m 31s | quintessencelabs] Extracting: https://www.quintessencelabs.com/awards (12/19), chunk 13/16
+[12:08:42 +19m 36s | quintessencelabs] Extracting: https://www.quintessencelabs.com/awards (12/19), chunk 14/16
+[12:08:46 +19m 40s | quintessencelabs] Extracting: https://www.quintessencelabs.com/awards (12/19), chunk 15/16
+[12:08:50 +19m 44s | quintessencelabs] Extracting: https://www.quintessencelabs.com/awards (12/19), chunk 16/16
+[12:08:55 +19m 49s | quintessencelabs] Reading page (13/19): https://www.quintessencelabs.com/compliance-and-certifications
+[12:08:55 +19m 49s | quintessencelabs] Extracting: https://www.quintessencelabs.com/compliance-and-certifications (13/19), chunk 1/17
+[12:09:01 +19m 55s | quintessencelabs] Extracting: https://www.quintessencelabs.com/compliance-and-certifications (13/19), chunk 2/17
+[12:09:07 +20m 1s | quintessencelabs] Extracting: https://www.quintessencelabs.com/compliance-and-certifications (13/19), chunk 3/17
+[12:09:14 +20m 8s | quintessencelabs] Repaired malformed JSON.
+[12:09:14 +20m 8s | quintessencelabs] Extracting: https://www.quintessencelabs.com/compliance-and-certifications (13/19), chunk 4/17
+[12:09:18 +20m 12s | quintessencelabs] Extracting: https://www.quintessencelabs.com/compliance-and-certifications (13/19), chunk 5/17
+[12:09:22 +20m 16s | quintessencelabs] Extracting: https://www.quintessencelabs.com/compliance-and-certifications (13/19), chunk 6/17
+[12:09:28 +20m 22s | quintessencelabs] Repaired malformed JSON.
+[12:09:28 +20m 22s | quintessencelabs] Extracting: https://www.quintessencelabs.com/compliance-and-certifications (13/19), chunk 7/17
+[12:09:35 +20m 29s | quintessencelabs] Repaired malformed JSON.
+[12:09:35 +20m 29s | quintessencelabs] Extracting: https://www.quintessencelabs.com/compliance-and-certifications (13/19), chunk 8/17
+[12:09:42 +20m 36s | quintessencelabs] Repaired malformed JSON.
+[12:09:42 +20m 36s | quintessencelabs] Extracting: https://www.quintessencelabs.com/compliance-and-certifications (13/19), chunk 9/17
+[12:09:48 +20m 42s | quintessencelabs] Repaired malformed JSON.
+[12:09:48 +20m 42s | quintessencelabs] Extracting: https://www.quintessencelabs.com/compliance-and-certifications (13/19), chunk 10/17
+[12:09:55 +20m 49s | quintessencelabs] Repaired malformed JSON.
+[12:09:55 +20m 49s | quintessencelabs] Extracting: https://www.quintessencelabs.com/compliance-and-certifications (13/19), chunk 11/17
+[12:10:00 +20m 54s | quintessencelabs] Repaired malformed JSON.
+[12:10:00 +20m 54s | quintessencelabs] Extracting: https://www.quintessencelabs.com/compliance-and-certifications (13/19), chunk 12/17
+[12:10:09 +21m 3s | quintessencelabs] Repaired malformed JSON.
+[12:10:09 +21m 3s | quintessencelabs] Extracting: https://www.quintessencelabs.com/compliance-and-certifications (13/19), chunk 13/17
+[12:10:16 +21m 10s | quintessencelabs] Repaired malformed JSON.
+[12:10:16 +21m 10s | quintessencelabs] Extracting: https://www.quintessencelabs.com/compliance-and-certifications (13/19), chunk 14/17
+[12:10:23 +21m 17s | quintessencelabs] Repaired malformed JSON.
+[12:10:23 +21m 17s | quintessencelabs] Extracting: https://www.quintessencelabs.com/compliance-and-certifications (13/19), chunk 15/17
+[12:10:28 +21m 22s | quintessencelabs] Extracting: https://www.quintessencelabs.com/compliance-and-certifications (13/19), chunk 16/17
+[12:10:32 +21m 26s | quintessencelabs] Extracting: https://www.quintessencelabs.com/compliance-and-certifications (13/19), chunk 17/17
+[12:10:37 +21m 31s | quintessencelabs] Reading page (14/19): https://www.quintessencelabs.com/faqs
+[12:10:37 +21m 31s | quintessencelabs] Extracting: https://www.quintessencelabs.com/faqs (14/19), chunk 1/27
+[12:10:40 +21m 34s | quintessencelabs] Extracting: https://www.quintessencelabs.com/faqs (14/19), chunk 2/27
+[12:10:46 +21m 40s | quintessencelabs] Extracting: https://www.quintessencelabs.com/faqs (14/19), chunk 3/27
+[12:10:52 +21m 46s | quintessencelabs] Repaired malformed JSON.
+[12:10:52 +21m 46s | quintessencelabs] Extracting: https://www.quintessencelabs.com/faqs (14/19), chunk 4/27
+[12:10:58 +21m 52s | quintessencelabs] Extracting: https://www.quintessencelabs.com/faqs (14/19), chunk 5/27
+[12:11:01 +21m 55s | quintessencelabs] Extracting: https://www.quintessencelabs.com/faqs (14/19), chunk 6/27
+[12:11:07 +22m 1s | quintessencelabs] Repaired malformed JSON.
+[12:11:07 +22m 1s | quintessencelabs] Extracting: https://www.quintessencelabs.com/faqs (14/19), chunk 7/27
+[12:11:13 +22m 7s | quintessencelabs] Repaired malformed JSON.
+[12:11:13 +22m 7s | quintessencelabs] Extracting: https://www.quintessencelabs.com/faqs (14/19), chunk 8/27
+[12:11:19 +22m 13s | quintessencelabs] Extracting: https://www.quintessencelabs.com/faqs (14/19), chunk 9/27
+[12:11:24 +22m 18s | quintessencelabs] Repaired malformed JSON.
+[12:11:24 +22m 18s | quintessencelabs] Extracting: https://www.quintessencelabs.com/faqs (14/19), chunk 10/27
+[12:11:31 +22m 25s | quintessencelabs] Repaired malformed JSON.
+[12:11:31 +22m 25s | quintessencelabs] Extracting: https://www.quintessencelabs.com/faqs (14/19), chunk 11/27
+[12:11:38 +22m 32s | quintessencelabs] Extracting: https://www.quintessencelabs.com/faqs (14/19), chunk 12/27
+[12:11:45 +22m 39s | quintessencelabs] Extracting: https://www.quintessencelabs.com/faqs (14/19), chunk 13/27
+[12:11:54 +22m 48s | quintessencelabs] Repaired malformed JSON.
+[12:11:54 +22m 48s | quintessencelabs] Extracting: https://www.quintessencelabs.com/faqs (14/19), chunk 14/27
+[12:12:01 +22m 55s | quintessencelabs] Repaired malformed JSON.
+[12:12:01 +22m 55s | quintessencelabs] Extracting: https://www.quintessencelabs.com/faqs (14/19), chunk 15/27
+[12:12:06 +23m 0s | quintessencelabs] Repaired malformed JSON.
+[12:12:06 +23m 0s | quintessencelabs] Extracting: https://www.quintessencelabs.com/faqs (14/19), chunk 16/27
+[12:12:16 +23m 10s | quintessencelabs] Repaired malformed JSON.
+[12:12:16 +23m 10s | quintessencelabs] Extracting: https://www.quintessencelabs.com/faqs (14/19), chunk 17/27
+[12:12:25 +23m 19s | quintessencelabs] Repaired malformed JSON.
+[12:12:25 +23m 19s | quintessencelabs] Extracting: https://www.quintessencelabs.com/faqs (14/19), chunk 18/27
+[12:12:32 +23m 26s | quintessencelabs] Repaired malformed JSON.
+[12:12:32 +23m 26s | quintessencelabs] Extracting: https://www.quintessencelabs.com/faqs (14/19), chunk 19/27
+[12:12:38 +23m 32s | quintessencelabs] Repaired malformed JSON.
+[12:12:38 +23m 32s | quintessencelabs] Extracting: https://www.quintessencelabs.com/faqs (14/19), chunk 20/27
+[12:12:46 +23m 40s | quintessencelabs] Repaired malformed JSON.
+[12:12:46 +23m 40s | quintessencelabs] Extracting: https://www.quintessencelabs.com/faqs (14/19), chunk 21/27
+[12:12:55 +23m 49s | quintessencelabs] Repaired malformed JSON.
+[12:12:55 +23m 49s | quintessencelabs] Extracting: https://www.quintessencelabs.com/faqs (14/19), chunk 22/27
+[12:13:02 +23m 57s | quintessencelabs] Repaired malformed JSON.
+[12:13:02 +23m 57s | quintessencelabs] Extracting: https://www.quintessencelabs.com/faqs (14/19), chunk 23/27
+[12:13:08 +24m 2s | quintessencelabs] Repaired malformed JSON.
+[12:13:08 +24m 2s | quintessencelabs] Extracting: https://www.quintessencelabs.com/faqs (14/19), chunk 24/27
+[12:13:15 +24m 9s | quintessencelabs] Repaired malformed JSON.
+[12:13:15 +24m 9s | quintessencelabs] Extracting: https://www.quintessencelabs.com/faqs (14/19), chunk 25/27
+[12:13:19 +24m 14s | quintessencelabs] Extracting: https://www.quintessencelabs.com/faqs (14/19), chunk 26/27
+[12:13:25 +24m 19s | quintessencelabs] Extracting: https://www.quintessencelabs.com/faqs (14/19), chunk 27/27
+[12:13:28 +24m 22s | quintessencelabs] Reading page (15/19): https://www.quintessencelabs.com/resources
+[12:13:28 +24m 22s | quintessencelabs] Extracting: https://www.quintessencelabs.com/resources (15/19), chunk 1/16
+[12:13:32 +24m 26s | quintessencelabs] Extracting: https://www.quintessencelabs.com/resources (15/19), chunk 2/16
+[12:13:38 +24m 32s | quintessencelabs] Extracting: https://www.quintessencelabs.com/resources (15/19), chunk 3/16
+[12:13:47 +24m 41s | quintessencelabs] Extracting: https://www.quintessencelabs.com/resources (15/19), chunk 4/16
+[12:13:54 +24m 48s | quintessencelabs] Extracting: https://www.quintessencelabs.com/resources (15/19), chunk 5/16
+[12:13:58 +24m 52s | quintessencelabs] Extracting: https://www.quintessencelabs.com/resources (15/19), chunk 6/16
+[12:14:03 +24m 57s | quintessencelabs] Extracting: https://www.quintessencelabs.com/resources (15/19), chunk 7/16
+[12:14:09 +25m 3s | quintessencelabs] Repaired malformed JSON.
+[12:14:09 +25m 3s | quintessencelabs] Extracting: https://www.quintessencelabs.com/resources (15/19), chunk 8/16
+[12:14:15 +25m 9s | quintessencelabs] Repaired malformed JSON.
+[12:14:15 +25m 9s | quintessencelabs] Extracting: https://www.quintessencelabs.com/resources (15/19), chunk 9/16
+[12:14:21 +25m 15s | quintessencelabs] Repaired malformed JSON.
+[12:14:21 +25m 15s | quintessencelabs] Extracting: https://www.quintessencelabs.com/resources (15/19), chunk 10/16
+[12:14:26 +25m 21s | quintessencelabs] Repaired malformed JSON.
+[12:14:26 +25m 21s | quintessencelabs] Extracting: https://www.quintessencelabs.com/resources (15/19), chunk 11/16
+[12:14:35 +25m 29s | quintessencelabs] Repaired malformed JSON.
+[12:14:35 +25m 29s | quintessencelabs] Extracting: https://www.quintessencelabs.com/resources (15/19), chunk 12/16
+[12:14:40 +25m 34s | quintessencelabs] Extracting: https://www.quintessencelabs.com/resources (15/19), chunk 13/16
+[12:14:44 +25m 38s | quintessencelabs] Extracting: https://www.quintessencelabs.com/resources (15/19), chunk 14/16
+[12:14:50 +25m 44s | quintessencelabs] Extracting: https://www.quintessencelabs.com/resources (15/19), chunk 15/16
+[12:14:53 +25m 47s | quintessencelabs] Extracting: https://www.quintessencelabs.com/resources (15/19), chunk 16/16
+[12:14:57 +25m 52s | quintessencelabs] Reading page (16/19): https://www.quintessencelabs.com/why-now
+[12:14:57 +25m 52s | quintessencelabs] Extracting: https://www.quintessencelabs.com/why-now (16/19), chunk 1/13
+[12:15:02 +25m 56s | quintessencelabs] Extracting: https://www.quintessencelabs.com/why-now (16/19), chunk 2/13
+[12:15:11 +26m 5s | quintessencelabs] Extracting: https://www.quintessencelabs.com/why-now (16/19), chunk 3/13
+[12:15:19 +26m 13s | quintessencelabs] Repaired malformed JSON.
+[12:15:19 +26m 13s | quintessencelabs] Extracting: https://www.quintessencelabs.com/why-now (16/19), chunk 4/13
+[12:15:24 +26m 18s | quintessencelabs] Extracting: https://www.quintessencelabs.com/why-now (16/19), chunk 5/13
+[12:15:28 +26m 22s | quintessencelabs] Extracting: https://www.quintessencelabs.com/why-now (16/19), chunk 6/13
+[12:15:33 +26m 27s | quintessencelabs] Extracting: https://www.quintessencelabs.com/why-now (16/19), chunk 7/13
+[12:15:39 +26m 33s | quintessencelabs] Extracting: https://www.quintessencelabs.com/why-now (16/19), chunk 8/13
+[12:15:43 +26m 37s | quintessencelabs] Extracting: https://www.quintessencelabs.com/why-now (16/19), chunk 9/13
+[12:15:46 +26m 40s | quintessencelabs] Extracting: https://www.quintessencelabs.com/why-now (16/19), chunk 10/13
+[12:15:52 +26m 46s | quintessencelabs] Extracting: https://www.quintessencelabs.com/why-now (16/19), chunk 11/13
+[12:15:56 +26m 50s | quintessencelabs] Extracting: https://www.quintessencelabs.com/why-now (16/19), chunk 12/13
+[12:16:01 +26m 55s | quintessencelabs] Extracting: https://www.quintessencelabs.com/why-now (16/19), chunk 13/13
+[12:16:07 +27m 1s | quintessencelabs] Reading page (17/19): https://www.quintessencelabs.com/quantum-101
+[12:16:07 +27m 1s | quintessencelabs] Extracting: https://www.quintessencelabs.com/quantum-101 (17/19), chunk 1/29
+[12:16:13 +27m 7s | quintessencelabs] Extracting: https://www.quintessencelabs.com/quantum-101 (17/19), chunk 2/29
+[12:16:20 +27m 14s | quintessencelabs] Extracting: https://www.quintessencelabs.com/quantum-101 (17/19), chunk 3/29
+[12:16:28 +27m 22s | quintessencelabs] Repaired malformed JSON.
+[12:16:28 +27m 22s | quintessencelabs] Extracting: https://www.quintessencelabs.com/quantum-101 (17/19), chunk 4/29
+[12:16:37 +27m 31s | quintessencelabs] Repaired malformed JSON.
+[12:16:37 +27m 31s | quintessencelabs] Extracting: https://www.quintessencelabs.com/quantum-101 (17/19), chunk 5/29
+[12:16:45 +27m 39s | quintessencelabs] Extracting: https://www.quintessencelabs.com/quantum-101 (17/19), chunk 6/29
+[12:16:51 +27m 45s | quintessencelabs] Repaired malformed JSON.
+[12:16:51 +27m 45s | quintessencelabs] Extracting: https://www.quintessencelabs.com/quantum-101 (17/19), chunk 7/29
+[12:16:56 +27m 50s | quintessencelabs] Extracting: https://www.quintessencelabs.com/quantum-101 (17/19), chunk 8/29
+[12:17:03 +27m 57s | quintessencelabs] Repaired malformed JSON.
+[12:17:03 +27m 57s | quintessencelabs] Extracting: https://www.quintessencelabs.com/quantum-101 (17/19), chunk 9/29
+[12:17:09 +28m 3s | quintessencelabs] Repaired malformed JSON.
+[12:17:09 +28m 3s | quintessencelabs] Extracting: https://www.quintessencelabs.com/quantum-101 (17/19), chunk 10/29
+[12:17:15 +28m 9s | quintessencelabs] Extracting: https://www.quintessencelabs.com/quantum-101 (17/19), chunk 11/29
+[12:17:22 +28m 17s | quintessencelabs] Repaired malformed JSON.
+[12:17:22 +28m 17s | quintessencelabs] Extracting: https://www.quintessencelabs.com/quantum-101 (17/19), chunk 12/29
+[12:17:29 +28m 23s | quintessencelabs] Repaired malformed JSON.
+[12:17:29 +28m 23s | quintessencelabs] Extracting: https://www.quintessencelabs.com/quantum-101 (17/19), chunk 13/29
+[12:17:36 +28m 30s | quintessencelabs] Repaired malformed JSON.
+[12:17:36 +28m 30s | quintessencelabs] Extracting: https://www.quintessencelabs.com/quantum-101 (17/19), chunk 14/29
+[12:17:43 +28m 37s | quintessencelabs] Repaired malformed JSON.
+[12:17:43 +28m 37s | quintessencelabs] Extracting: https://www.quintessencelabs.com/quantum-101 (17/19), chunk 15/29
+[12:17:49 +28m 43s | quintessencelabs] Repaired malformed JSON.
+[12:17:49 +28m 43s | quintessencelabs] Extracting: https://www.quintessencelabs.com/quantum-101 (17/19), chunk 16/29
+[12:17:57 +28m 51s | quintessencelabs] Repaired malformed JSON.
+[12:17:57 +28m 51s | quintessencelabs] Extracting: https://www.quintessencelabs.com/quantum-101 (17/19), chunk 17/29
+[12:18:04 +28m 58s | quintessencelabs] Repaired malformed JSON.
+[12:18:04 +28m 58s | quintessencelabs] Extracting: https://www.quintessencelabs.com/quantum-101 (17/19), chunk 18/29
+[12:18:11 +29m 6s | quintessencelabs] Repaired malformed JSON.
+[12:18:11 +29m 6s | quintessencelabs] Extracting: https://www.quintessencelabs.com/quantum-101 (17/19), chunk 19/29
+[12:18:19 +29m 13s | quintessencelabs] Repaired malformed JSON.
+[12:18:19 +29m 13s | quintessencelabs] Extracting: https://www.quintessencelabs.com/quantum-101 (17/19), chunk 20/29
+[12:18:25 +29m 19s | quintessencelabs] Repaired malformed JSON.
+[12:18:25 +29m 19s | quintessencelabs] Extracting: https://www.quintessencelabs.com/quantum-101 (17/19), chunk 21/29
+[12:18:32 +29m 26s | quintessencelabs] Repaired malformed JSON.
+[12:18:32 +29m 26s | quintessencelabs] Extracting: https://www.quintessencelabs.com/quantum-101 (17/19), chunk 22/29
+[12:18:41 +29m 35s | quintessencelabs] Repaired malformed JSON.
+[12:18:41 +29m 35s | quintessencelabs] Extracting: https://www.quintessencelabs.com/quantum-101 (17/19), chunk 23/29
+[12:18:47 +29m 41s | quintessencelabs] Repaired malformed JSON.
+[12:18:47 +29m 41s | quintessencelabs] Extracting: https://www.quintessencelabs.com/quantum-101 (17/19), chunk 24/29
+[12:18:55 +29m 49s | quintessencelabs] Repaired malformed JSON.
+[12:18:55 +29m 49s | quintessencelabs] Extracting: https://www.quintessencelabs.com/quantum-101 (17/19), chunk 25/29
+[12:19:00 +29m 54s | quintessencelabs] Repaired malformed JSON.
+[12:19:00 +29m 54s | quintessencelabs] Extracting: https://www.quintessencelabs.com/quantum-101 (17/19), chunk 26/29
+[12:19:07 +30m 2s | quintessencelabs] Repaired malformed JSON.
+[12:19:07 +30m 2s | quintessencelabs] Extracting: https://www.quintessencelabs.com/quantum-101 (17/19), chunk 27/29
+[12:19:14 +30m 8s | quintessencelabs] Extracting: https://www.quintessencelabs.com/quantum-101 (17/19), chunk 28/29
+[12:19:22 +30m 16s | quintessencelabs] Repaired malformed JSON.
+[12:19:22 +30m 16s | quintessencelabs] Extracting: https://www.quintessencelabs.com/quantum-101 (17/19), chunk 29/29
+[12:19:27 +30m 21s | quintessencelabs] Reading page (18/19): https://www.quintessencelabs.com/careers
+[12:19:27 +30m 21s | quintessencelabs] Extracting: https://www.quintessencelabs.com/careers (18/19), chunk 1/12
+[12:19:33 +30m 27s | quintessencelabs] Extracting: https://www.quintessencelabs.com/careers (18/19), chunk 2/12
+[12:19:39 +30m 33s | quintessencelabs] Repaired malformed JSON.
+[12:19:39 +30m 33s | quintessencelabs] Extracting: https://www.quintessencelabs.com/careers (18/19), chunk 3/12
+[12:19:47 +30m 41s | quintessencelabs] Extracting: https://www.quintessencelabs.com/careers (18/19), chunk 4/12
+[12:19:54 +30m 48s | quintessencelabs] Repaired malformed JSON.
+[12:19:54 +30m 48s | quintessencelabs] Extracting: https://www.quintessencelabs.com/careers (18/19), chunk 5/12
+[12:19:59 +30m 53s | quintessencelabs] Extracting: https://www.quintessencelabs.com/careers (18/19), chunk 6/12
+[12:20:05 +30m 59s | quintessencelabs] Repaired malformed JSON.
+[12:20:05 +30m 59s | quintessencelabs] Extracting: https://www.quintessencelabs.com/careers (18/19), chunk 7/12
+[12:20:11 +31m 5s | quintessencelabs] Repaired malformed JSON.
+[12:20:11 +31m 5s | quintessencelabs] Extracting: https://www.quintessencelabs.com/careers (18/19), chunk 8/12
+[12:20:15 +31m 9s | quintessencelabs] Extracting: https://www.quintessencelabs.com/careers (18/19), chunk 9/12
+[12:20:20 +31m 14s | quintessencelabs] Extracting: https://www.quintessencelabs.com/careers (18/19), chunk 10/12
+[12:20:24 +31m 18s | quintessencelabs] Extracting: https://www.quintessencelabs.com/careers (18/19), chunk 11/12
+[12:20:27 +31m 22s | quintessencelabs] Extracting: https://www.quintessencelabs.com/careers (18/19), chunk 12/12
+[12:20:32 +31m 26s | quintessencelabs] Reading page (19/19): https://www.quintessencelabs.com
+[12:20:32 +31m 26s | quintessencelabs] Extracting: https://www.quintessencelabs.com (19/19), chunk 1/22
+[12:20:37 +31m 31s | quintessencelabs] Repaired malformed JSON.
+[12:20:37 +31m 31s | quintessencelabs] Extracting: https://www.quintessencelabs.com (19/19), chunk 2/22
+[12:20:42 +31m 36s | quintessencelabs] Extracting: https://www.quintessencelabs.com (19/19), chunk 3/22
+[12:20:49 +31m 43s | quintessencelabs] Repaired malformed JSON.
+[12:20:49 +31m 43s | quintessencelabs] Extracting: https://www.quintessencelabs.com (19/19), chunk 4/22
+[12:20:52 +31m 46s | quintessencelabs] Extracting: https://www.quintessencelabs.com (19/19), chunk 5/22
+[12:20:56 +31m 50s | quintessencelabs] Extracting: https://www.quintessencelabs.com (19/19), chunk 6/22
+[12:21:02 +31m 56s | quintessencelabs] Extracting: https://www.quintessencelabs.com (19/19), chunk 7/22
+[12:21:08 +32m 2s | quintessencelabs] Extracting: https://www.quintessencelabs.com (19/19), chunk 8/22
+[12:21:14 +32m 8s | quintessencelabs] Extracting: https://www.quintessencelabs.com (19/19), chunk 9/22
+[12:21:19 +32m 13s | quintessencelabs] Extracting: https://www.quintessencelabs.com (19/19), chunk 10/22
+[12:21:30 +32m 24s | quintessencelabs] Repaired malformed JSON.
+[12:21:30 +32m 24s | quintessencelabs] Extracting: https://www.quintessencelabs.com (19/19), chunk 11/22
+[12:21:38 +32m 32s | quintessencelabs] Repaired malformed JSON.
+[12:21:38 +32m 32s | quintessencelabs] Extracting: https://www.quintessencelabs.com (19/19), chunk 12/22
+[12:21:43 +32m 37s | quintessencelabs] Repaired malformed JSON.
+[12:21:43 +32m 37s | quintessencelabs] Extracting: https://www.quintessencelabs.com (19/19), chunk 13/22
+[12:21:48 +32m 42s | quintessencelabs] Extracting: https://www.quintessencelabs.com (19/19), chunk 14/22
+[12:21:53 +32m 47s | quintessencelabs] Extracting: https://www.quintessencelabs.com (19/19), chunk 15/22
+[12:21:59 +32m 53s | quintessencelabs] Extracting: https://www.quintessencelabs.com (19/19), chunk 16/22
+[12:22:05 +32m 59s | quintessencelabs] Repaired malformed JSON.
+[12:22:05 +32m 59s | quintessencelabs] Extracting: https://www.quintessencelabs.com (19/19), chunk 17/22
+[12:22:11 +33m 5s | quintessencelabs] Repaired malformed JSON.
+[12:22:11 +33m 5s | quintessencelabs] Extracting: https://www.quintessencelabs.com (19/19), chunk 18/22
+[12:22:18 +33m 12s | quintessencelabs] Repaired malformed JSON.
+[12:22:18 +33m 12s | quintessencelabs] Extracting: https://www.quintessencelabs.com (19/19), chunk 19/22
+[12:22:22 +33m 16s | quintessencelabs] Extracting: https://www.quintessencelabs.com (19/19), chunk 20/22
+[12:22:25 +33m 19s | quintessencelabs] Extracting: https://www.quintessencelabs.com (19/19), chunk 21/22
+[12:22:30 +33m 24s | quintessencelabs] Extracting: https://www.quintessencelabs.com (19/19), chunk 22/22
+[12:22:34 +33m 28s | quintessencelabs] Saved 1_actor_results.json with 543 extracted records
+
+[12:22:34 +33m 29s | quintessencelabs] === 2 clean actors ===
+[12:22:38 +33m 32s | quintessencelabs] Loaded 543 extracted records
+[12:22:38 +33m 32s | quintessencelabs] Saved 2_actor_nodes.json with 65 canonical actor nodes
+
+[12:22:38 +33m 32s | quintessencelabs] === 3 interaction extraction ===
+[12:22:39 +33m 33s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/blog (1/19), chunk 1/15
+[12:22:40 +33m 34s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/blog (1/19), chunk 2/15
+[12:22:44 +33m 38s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/blog (1/19), chunk 3/15
+[12:22:47 +33m 41s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/blog (1/19), chunk 5/15
+[12:22:49 +33m 43s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/blog (1/19), chunk 6/15
+[12:22:52 +33m 46s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/blog (1/19), chunk 7/15
+[12:22:56 +33m 50s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/blog (1/19), chunk 8/15
+[12:22:59 +33m 53s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/blog (1/19), chunk 9/15
+[12:23:02 +33m 56s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/blog (1/19), chunk 10/15
+[12:23:04 +33m 58s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/blog (1/19), chunk 12/15
+[12:23:10 +34m 4s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/blog (1/19), chunk 13/15
+[12:23:15 +34m 9s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/support (2/19), chunk 1/11
+[12:23:17 +34m 11s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/support (2/19), chunk 2/11
+[12:23:20 +34m 14s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/support (2/19), chunk 3/11
+[12:23:24 +34m 18s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/support (2/19), chunk 5/11
+[12:23:25 +34m 19s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/support (2/19), chunk 6/11
+[12:23:28 +34m 22s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/support (2/19), chunk 7/11
+[12:23:31 +34m 25s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/support (2/19), chunk 8/11
+[12:23:34 +34m 28s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/support (2/19), chunk 9/11
+[12:23:38 +34m 32s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/start-here (3/19), chunk 1/17
+[12:23:40 +34m 34s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/start-here (3/19), chunk 2/17
+[12:23:44 +34m 38s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/start-here (3/19), chunk 3/17
+[12:23:47 +34m 41s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/start-here (3/19), chunk 5/17
+[12:23:48 +34m 42s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/start-here (3/19), chunk 6/17
+[12:23:51 +34m 45s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/start-here (3/19), chunk 7/17
+[12:23:55 +34m 49s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/start-here (3/19), chunk 8/17
+[12:23:56 +34m 50s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/start-here (3/19), chunk 9/17
+[12:24:03 +34m 57s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/start-here (3/19), chunk 13/17
+[12:24:07 +35m 1s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/start-here (3/19), chunk 14/17
+[12:24:11 +35m 5s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/start-here (3/19), chunk 15/17
+[12:24:15 +35m 9s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/news (4/19), chunk 1/14
+[12:24:17 +35m 11s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/news (4/19), chunk 2/14
+[12:24:20 +35m 14s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/news (4/19), chunk 3/14
+[12:24:24 +35m 18s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/news (4/19), chunk 5/14
+[12:24:25 +35m 19s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/news (4/19), chunk 6/14
+[12:24:28 +35m 22s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/news (4/19), chunk 7/14
+[12:24:34 +35m 28s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/news (4/19), chunk 8/14
+[12:24:39 +35m 34s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/news (4/19), chunk 9/14
+[12:24:46 +35m 40s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/news (4/19), chunk 10/14
+[12:24:53 +35m 47s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/news (4/19), chunk 11/14
+[12:24:56 +35m 50s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/news (4/19), chunk 12/14
+[12:25:00 +35m 54s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/events (5/19), chunk 1/18
+[12:25:01 +35m 55s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/events (5/19), chunk 2/18
+[12:25:05 +35m 59s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/events (5/19), chunk 3/18
+[12:25:08 +36m 2s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/events (5/19), chunk 5/18
+[12:25:09 +36m 3s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/events (5/19), chunk 6/18
+[12:25:12 +36m 6s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/events (5/19), chunk 7/18
+[12:25:18 +36m 12s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/events (5/19), chunk 8/18
+[12:25:32 +36m 26s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/events (5/19), chunk 9/18
+[12:25:36 +36m 30s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/events (5/19), chunk 10/18
+[12:25:43 +36m 37s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/events (5/19), chunk 11/18
+[12:25:50 +36m 44s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/events (5/19), chunk 13/18
+[12:25:56 +36m 50s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/events (5/19), chunk 14/18
+[12:26:02 +36m 56s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/events (5/19), chunk 15/18
+[12:26:05 +36m 59s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/events (5/19), chunk 16/18
+[12:26:08 +37m 2s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/contact (6/19), chunk 1/15
+[12:26:09 +37m 3s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/contact (6/19), chunk 2/15
+[12:26:13 +37m 7s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/contact (6/19), chunk 3/15
+[12:26:17 +37m 11s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/contact (6/19), chunk 5/15
+[12:26:18 +37m 12s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/contact (6/19), chunk 6/15
+[12:26:22 +37m 16s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/contact (6/19), chunk 7/15
+[12:26:26 +37m 20s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/contact (6/19), chunk 8/15
+[12:26:40 +37m 34s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/contact (6/19), chunk 11/15
+[12:26:45 +37m 39s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/contact (6/19), chunk 12/15
+[12:26:48 +37m 42s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/contact (6/19), chunk 13/15
+[12:26:52 +37m 46s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/about-us (7/19), chunk 1/18
+[12:26:53 +37m 47s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/about-us (7/19), chunk 2/18
+[12:26:56 +37m 50s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/about-us (7/19), chunk 3/18
+[12:26:59 +37m 53s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/about-us (7/19), chunk 5/18
+[12:27:00 +37m 55s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/about-us (7/19), chunk 6/18
+[12:27:03 +37m 57s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/about-us (7/19), chunk 7/18
+[12:27:06 +38m 0s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/about-us (7/19), chunk 8/18
+[12:27:13 +38m 7s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/about-us (7/19), chunk 9/18
+[12:27:16 +38m 10s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/about-us (7/19), chunk 10/18
+[12:27:22 +38m 16s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/about-us (7/19), chunk 11/18
+[12:27:27 +38m 21s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/about-us (7/19), chunk 12/18
+[12:27:30 +38m 24s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/about-us (7/19), chunk 13/18
+[12:27:31 +38m 26s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/about-us (7/19), chunk 14/18
+[12:27:36 +38m 30s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/about-us (7/19), chunk 15/18
+[12:27:39 +38m 33s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/about-us (7/19), chunk 16/18
+[12:27:43 +38m 38s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/leadership (8/19), chunk 1/15
+[12:27:45 +38m 39s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/leadership (8/19), chunk 2/15
+[12:27:49 +38m 43s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/leadership (8/19), chunk 3/15
+[12:27:53 +38m 47s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/leadership (8/19), chunk 5/15
+[12:27:55 +38m 49s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/leadership (8/19), chunk 6/15
+[12:27:58 +38m 52s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/leadership (8/19), chunk 7/15
+[12:28:18 +39m 12s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/leadership (8/19), chunk 8/15
+[12:28:38 +39m 33s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/leadership (8/19), chunk 9/15
+[12:28:44 +39m 38s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/leadership (8/19), chunk 10/15
+[12:28:56 +39m 50s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/leadership (8/19), chunk 11/15
+[12:29:06 +40m 0s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/leadership (8/19), chunk 12/15
+[12:29:17 +40m 11s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/leadership (8/19), chunk 13/15
+[12:29:20 +40m 14s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/our-technology (9/19), chunk 1/19
+[12:29:22 +40m 16s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/our-technology (9/19), chunk 2/19
+[12:29:25 +40m 19s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/our-technology (9/19), chunk 3/19
+[12:29:28 +40m 22s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/our-technology (9/19), chunk 5/19
+[12:29:31 +40m 25s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/our-technology (9/19), chunk 6/19
+[12:29:34 +40m 28s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/our-technology (9/19), chunk 7/19
+[12:29:37 +40m 32s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/our-technology (9/19), chunk 8/19
+[12:29:50 +40m 44s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/our-technology (9/19), chunk 11/19
+[12:29:55 +40m 49s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/our-technology (9/19), chunk 12/19
+[12:30:04 +40m 58s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/our-technology (9/19), chunk 13/19
+[12:30:07 +41m 1s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/our-technology (9/19), chunk 14/19
+[12:30:09 +41m 3s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/our-technology (9/19), chunk 15/19
+[12:30:13 +41m 7s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/our-technology (9/19), chunk 16/19
+[12:30:19 +41m 13s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/our-technology (9/19), chunk 17/19
+[12:30:22 +41m 16s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/products (10/19), chunk 1/20
+[12:30:24 +41m 18s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/products (10/19), chunk 2/20
+[12:30:28 +41m 22s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/products (10/19), chunk 3/20
+[12:30:31 +41m 25s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/products (10/19), chunk 5/20
+[12:30:32 +41m 26s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/products (10/19), chunk 6/20
+[12:30:37 +41m 31s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/products (10/19), chunk 7/20
+[12:30:41 +41m 35s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/products (10/19), chunk 8/20
+[12:30:45 +41m 39s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/products (10/19), chunk 9/20
+[12:30:52 +41m 47s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/products (10/19), chunk 10/20
+[12:31:00 +41m 54s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/products (10/19), chunk 11/20
+[12:31:06 +42m 0s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/products (10/19), chunk 12/20
+[12:31:13 +42m 7s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/products (10/19), chunk 15/20
+[12:31:17 +42m 11s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/products (10/19), chunk 16/20
+[12:31:22 +42m 16s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/products (10/19), chunk 17/20
+[12:31:27 +42m 21s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/products (10/19), chunk 18/20
+[12:31:32 +42m 26s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/why-us (11/19), chunk 1/28
+[12:31:33 +42m 27s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/why-us (11/19), chunk 2/28
+[12:31:36 +42m 30s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/why-us (11/19), chunk 3/28
+[12:31:39 +42m 33s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/why-us (11/19), chunk 5/28
+[12:31:41 +42m 35s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/why-us (11/19), chunk 6/28
+[12:31:44 +42m 38s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/why-us (11/19), chunk 7/28
+[12:31:47 +42m 41s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/why-us (11/19), chunk 8/28
+[12:31:58 +42m 52s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/why-us (11/19), chunk 9/28
+[12:32:15 +43m 9s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/why-us (11/19), chunk 10/28
+[12:32:20 +43m 14s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/why-us (11/19), chunk 11/28
+[12:32:33 +43m 27s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/why-us (11/19), chunk 12/28
+[12:32:53 +43m 48s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/why-us (11/19), chunk 13/28
+[12:32:59 +43m 53s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/why-us (11/19), chunk 14/28
+[12:33:08 +44m 2s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/why-us (11/19), chunk 15/28
+[12:33:17 +44m 11s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/why-us (11/19), chunk 16/28
+[12:33:20 +44m 14s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/why-us (11/19), chunk 18/28
+[12:33:21 +44m 15s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/why-us (11/19), chunk 19/28
+[12:33:27 +44m 21s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/why-us (11/19), chunk 20/28
+[12:33:32 +44m 26s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/why-us (11/19), chunk 21/28
+[12:33:38 +44m 32s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/why-us (11/19), chunk 22/28
+[12:33:46 +44m 40s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/why-us (11/19), chunk 23/28
+[12:33:51 +44m 45s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/why-us (11/19), chunk 24/28
+[12:33:54 +44m 49s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/why-us (11/19), chunk 25/28
+[12:33:59 +44m 53s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/why-us (11/19), chunk 26/28
+[12:34:02 +44m 56s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/awards (12/19), chunk 1/16
+[12:34:04 +44m 58s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/awards (12/19), chunk 2/16
+[12:34:08 +45m 2s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/awards (12/19), chunk 3/16
+[12:34:11 +45m 5s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/awards (12/19), chunk 5/16
+[12:34:13 +45m 7s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/awards (12/19), chunk 6/16
+[12:34:16 +45m 10s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/awards (12/19), chunk 7/16
+[12:34:21 +45m 15s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/awards (12/19), chunk 8/16
+[12:34:29 +45m 23s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/awards (12/19), chunk 9/16
+[12:34:43 +45m 37s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/awards (12/19), chunk 10/16
+[12:34:59 +45m 53s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/awards (12/19), chunk 11/16
+[12:35:13 +46m 7s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/awards (12/19), chunk 12/16
+[12:35:19 +46m 13s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/awards (12/19), chunk 13/16
+[12:35:20 +46m 14s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/awards (12/19), chunk 14/16
+[12:35:24 +46m 18s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/compliance-and-certifications (13/19), chunk 1/17
+[12:35:26 +46m 20s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/compliance-and-certifications (13/19), chunk 2/17
+[12:35:29 +46m 23s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/compliance-and-certifications (13/19), chunk 3/17
+[12:35:33 +46m 27s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/compliance-and-certifications (13/19), chunk 5/17
+[12:35:34 +46m 28s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/compliance-and-certifications (13/19), chunk 6/17
+[12:35:38 +46m 32s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/compliance-and-certifications (13/19), chunk 7/17
+[12:35:42 +46m 36s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/compliance-and-certifications (13/19), chunk 8/17
+[12:35:49 +46m 43s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/compliance-and-certifications (13/19), chunk 9/17
+[12:35:55 +46m 50s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/compliance-and-certifications (13/19), chunk 10/17
+[12:35:59 +46m 53s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/compliance-and-certifications (13/19), chunk 11/17
+[12:36:10 +47m 5s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/compliance-and-certifications (13/19), chunk 12/17
+[12:36:19 +47m 13s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/compliance-and-certifications (13/19), chunk 13/17
+[12:36:24 +47m 19s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/compliance-and-certifications (13/19), chunk 14/17
+[12:36:28 +47m 22s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/compliance-and-certifications (13/19), chunk 15/17
+[12:36:32 +47m 26s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/faqs (14/19), chunk 1/27
+[12:36:34 +47m 28s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/faqs (14/19), chunk 2/27
+[12:36:37 +47m 31s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/faqs (14/19), chunk 3/27
+[12:36:40 +47m 34s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/faqs (14/19), chunk 5/27
+[12:36:44 +47m 38s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/faqs (14/19), chunk 6/27
+[12:36:48 +47m 42s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/faqs (14/19), chunk 7/27
+[12:36:53 +47m 47s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/faqs (14/19), chunk 8/27
+[12:36:56 +47m 50s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/faqs (14/19), chunk 10/27
+[12:37:07 +48m 1s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/faqs (14/19), chunk 17/27
+[12:37:15 +48m 9s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/faqs (14/19), chunk 18/27
+[12:37:21 +48m 15s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/faqs (14/19), chunk 19/27
+[12:37:25 +48m 19s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/faqs (14/19), chunk 20/27
+[12:37:30 +48m 24s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/faqs (14/19), chunk 21/27
+[12:37:35 +48m 29s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/faqs (14/19), chunk 22/27
+[12:37:41 +48m 35s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/faqs (14/19), chunk 23/27
+[12:37:44 +48m 38s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/faqs (14/19), chunk 24/27
+[12:37:49 +48m 43s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/faqs (14/19), chunk 25/27
+[12:37:55 +48m 49s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/resources (15/19), chunk 1/16
+[12:37:57 +48m 51s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/resources (15/19), chunk 2/16
+[12:38:01 +48m 55s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/resources (15/19), chunk 3/16
+[12:38:04 +48m 58s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/resources (15/19), chunk 5/16
+[12:38:05 +48m 59s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/resources (15/19), chunk 6/16
+[12:38:08 +49m 2s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/resources (15/19), chunk 7/16
+[12:38:19 +49m 13s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/resources (15/19), chunk 8/16
+[12:38:28 +49m 22s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/resources (15/19), chunk 9/16
+[12:38:34 +49m 28s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/resources (15/19), chunk 10/16
+[12:38:44 +49m 38s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/resources (15/19), chunk 11/16
+[12:38:51 +49m 45s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/resources (15/19), chunk 12/16
+[12:38:55 +49m 49s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/resources (15/19), chunk 13/16
+[12:38:59 +49m 53s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/resources (15/19), chunk 14/16
+[12:39:04 +49m 58s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/why-now (16/19), chunk 1/13
+[12:39:05 +49m 59s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/why-now (16/19), chunk 2/13
+[12:39:08 +50m 2s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/why-now (16/19), chunk 3/13
+[12:39:12 +50m 6s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/why-now (16/19), chunk 5/13
+[12:39:13 +50m 7s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/why-now (16/19), chunk 6/13
+[12:39:16 +50m 10s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/why-now (16/19), chunk 7/13
+[12:39:19 +50m 13s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/why-now (16/19), chunk 9/13
+[12:39:24 +50m 18s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/why-now (16/19), chunk 10/13
+[12:39:25 +50m 19s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/why-now (16/19), chunk 11/13
+[12:39:29 +50m 23s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/quantum-101 (17/19), chunk 1/29
+[12:39:31 +50m 26s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/quantum-101 (17/19), chunk 2/29
+[12:39:37 +50m 31s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/quantum-101 (17/19), chunk 3/29
+[12:39:40 +50m 34s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/quantum-101 (17/19), chunk 5/29
+[12:39:42 +50m 36s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/quantum-101 (17/19), chunk 6/29
+[12:39:45 +50m 39s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/quantum-101 (17/19), chunk 7/29
+[12:39:49 +50m 43s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/quantum-101 (17/19), chunk 8/29
+[12:39:54 +50m 48s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/quantum-101 (17/19), chunk 9/29
+[12:39:58 +50m 52s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/quantum-101 (17/19), chunk 14/29
+[12:39:59 +50m 53s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/quantum-101 (17/19), chunk 15/29
+[12:40:01 +50m 55s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/quantum-101 (17/19), chunk 16/29
+[12:40:12 +51m 6s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/quantum-101 (17/19), chunk 17/29
+[12:40:26 +51m 20s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/quantum-101 (17/19), chunk 18/29
+[12:40:37 +51m 31s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/quantum-101 (17/19), chunk 19/29
+[12:40:39 +51m 33s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/quantum-101 (17/19), chunk 22/29
+[12:40:46 +51m 40s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/quantum-101 (17/19), chunk 25/29
+[12:40:55 +51m 49s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/quantum-101 (17/19), chunk 26/29
+[12:40:58 +51m 52s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/quantum-101 (17/19), chunk 27/29
+[12:41:04 +51m 58s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/careers (18/19), chunk 1/12
+[12:41:06 +52m 0s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/careers (18/19), chunk 2/12
+[12:41:09 +52m 3s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/careers (18/19), chunk 3/12
+[12:41:12 +52m 6s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/careers (18/19), chunk 5/12
+[12:41:13 +52m 7s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/careers (18/19), chunk 6/12
+[12:41:18 +52m 12s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/careers (18/19), chunk 7/12
+[12:41:22 +52m 16s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/careers (18/19), chunk 8/12
+[12:41:27 +52m 21s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/careers (18/19), chunk 9/12
+[12:41:28 +52m 22s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com/careers (18/19), chunk 10/12
+[12:41:33 +52m 27s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com (19/19), chunk 1/22
+[12:41:34 +52m 28s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com (19/19), chunk 2/22
+[12:41:38 +52m 32s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com (19/19), chunk 3/22
+[12:41:44 +52m 38s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com (19/19), chunk 5/22
+[12:41:46 +52m 40s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com (19/19), chunk 6/22
+[12:41:49 +52m 43s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com (19/19), chunk 7/22
+[12:41:53 +52m 47s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com (19/19), chunk 9/22
+[12:41:58 +52m 52s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com (19/19), chunk 10/22
+[12:42:03 +52m 57s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com (19/19), chunk 13/22
+[12:42:04 +52m 58s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com (19/19), chunk 15/22
+[12:42:08 +53m 2s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com (19/19), chunk 16/22
+[12:42:11 +53m 5s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com (19/19), chunk 17/22
+[12:42:27 +53m 21s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com (19/19), chunk 18/22
+[12:42:32 +53m 26s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com (19/19), chunk 19/22
+[12:42:34 +53m 29s | quintessencelabs] Extracting interactions: https://www.quintessencelabs.com (19/19), chunk 20/22
+[12:42:38 +53m 32s | quintessencelabs] Saved 3_interaction_results.json with 307 extracted interactions.
+
+[12:42:38 +53m 32s | quintessencelabs] === 4 clean interactions ===
+[12:42:38 +53m 32s | quintessencelabs] Saved 4_edges.json with 9 cleaned interactions.
+
+[12:42:38 +53m 32s | quintessencelabs] === 5 helix enrichment ===
+[12:42:38 +53m 32s | quintessencelabs] Wrote 5_nodes.json (65 actors)
+[12:42:38 +53m 32s | quintessencelabs] Wrote 5_edges.json (9 interactions)
+[12:42:38 +53m 32s | quintessencelabs] Actor helix counts: {'Academia': 6, 'Civil Society': 6, 'Government': 8, 'Industry': 24, 'Intermediary': 6, 'Unknown': 15}
+[12:42:38 +53m 32s | quintessencelabs] Functional-space counts: {'Innovation': 5, 'Intra-helix / Not classified': 2, 'Unknown': 2}
+
+[12:42:38 +53m 32s | quintessencelabs] === 6 network visualisation ===
+[12:42:38 +53m 33s | quintessencelabs] Wrote quantum_network.html
+[12:42:38 +53m 33s | quintessencelabs] Nodes: 65
+[12:42:38 +53m 33s | quintessencelabs] Edges: 5
+
+[12:42:39 +53m 33s | quintessencelabs] Done. Outputs written to: /home/lv/IDP/idpdeeptech/pipeline/site_outputs/quintessencelabs
+[12:42:39 +53m 33s | quintessencelabs] Log: /home/lv/IDP/idpdeeptech/pipeline/site_outputs/quintessencelabs/run.log
+
+========================================================================
+RUN FINISHED 2026-06-17 12:42:39  (OK)
+Started:     2026-06-17 11:49:06
+Elapsed:     53m 33s
+========================================================================

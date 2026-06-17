@@ -1,0 +1,321 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+            <script>function neighbourhoodHighlight(params) {
+  // console.log("in nieghbourhoodhighlight");
+  allNodes = nodes.get({ returnType: "Object" });
+  // originalNodes = JSON.parse(JSON.stringify(allNodes));
+  // if something is selected:
+  if (params.nodes.length > 0) {
+    highlightActive = true;
+    var i, j;
+    var selectedNode = params.nodes[0];
+    var degrees = 2;
+
+    // mark all nodes as hard to read.
+    for (let nodeId in allNodes) {
+      // nodeColors[nodeId] = allNodes[nodeId].color;
+      allNodes[nodeId].color = "rgba(200,200,200,0.5)";
+      if (allNodes[nodeId].hiddenLabel === undefined) {
+        allNodes[nodeId].hiddenLabel = allNodes[nodeId].label;
+        allNodes[nodeId].label = undefined;
+      }
+    }
+    var connectedNodes = network.getConnectedNodes(selectedNode);
+    var allConnectedNodes = [];
+
+    // get the second degree nodes
+    for (i = 1; i < degrees; i++) {
+      for (j = 0; j < connectedNodes.length; j++) {
+        allConnectedNodes = allConnectedNodes.concat(
+          network.getConnectedNodes(connectedNodes[j])
+        );
+      }
+    }
+
+    // all second degree nodes get a different color and their label back
+    for (i = 0; i < allConnectedNodes.length; i++) {
+      // allNodes[allConnectedNodes[i]].color = "pink";
+      allNodes[allConnectedNodes[i]].color = "rgba(150,150,150,0.75)";
+      if (allNodes[allConnectedNodes[i]].hiddenLabel !== undefined) {
+        allNodes[allConnectedNodes[i]].label =
+          allNodes[allConnectedNodes[i]].hiddenLabel;
+        allNodes[allConnectedNodes[i]].hiddenLabel = undefined;
+      }
+    }
+
+    // all first degree nodes get their own color and their label back
+    for (i = 0; i < connectedNodes.length; i++) {
+      // allNodes[connectedNodes[i]].color = undefined;
+      allNodes[connectedNodes[i]].color = nodeColors[connectedNodes[i]];
+      if (allNodes[connectedNodes[i]].hiddenLabel !== undefined) {
+        allNodes[connectedNodes[i]].label =
+          allNodes[connectedNodes[i]].hiddenLabel;
+        allNodes[connectedNodes[i]].hiddenLabel = undefined;
+      }
+    }
+
+    // the main node gets its own color and its label back.
+    // allNodes[selectedNode].color = undefined;
+    allNodes[selectedNode].color = nodeColors[selectedNode];
+    if (allNodes[selectedNode].hiddenLabel !== undefined) {
+      allNodes[selectedNode].label = allNodes[selectedNode].hiddenLabel;
+      allNodes[selectedNode].hiddenLabel = undefined;
+    }
+  } else if (highlightActive === true) {
+    // console.log("highlightActive was true");
+    // reset all nodes
+    for (let nodeId in allNodes) {
+      // allNodes[nodeId].color = "purple";
+      allNodes[nodeId].color = nodeColors[nodeId];
+      // delete allNodes[nodeId].color;
+      if (allNodes[nodeId].hiddenLabel !== undefined) {
+        allNodes[nodeId].label = allNodes[nodeId].hiddenLabel;
+        allNodes[nodeId].hiddenLabel = undefined;
+      }
+    }
+    highlightActive = false;
+  }
+
+  // transform the object into an array
+  var updateArray = [];
+  if (params.nodes.length > 0) {
+    for (let nodeId in allNodes) {
+      if (allNodes.hasOwnProperty(nodeId)) {
+        // console.log(allNodes[nodeId]);
+        updateArray.push(allNodes[nodeId]);
+      }
+    }
+    nodes.update(updateArray);
+  } else {
+    // console.log("Nothing was selected");
+    for (let nodeId in allNodes) {
+      if (allNodes.hasOwnProperty(nodeId)) {
+        // console.log(allNodes[nodeId]);
+        // allNodes[nodeId].color = {};
+        updateArray.push(allNodes[nodeId]);
+      }
+    }
+    nodes.update(updateArray);
+  }
+}
+
+function filterHighlight(params) {
+  allNodes = nodes.get({ returnType: "Object" });
+  // if something is selected:
+  if (params.nodes.length > 0) {
+    filterActive = true;
+    let selectedNodes = params.nodes;
+
+    // hiding all nodes and saving the label
+    for (let nodeId in allNodes) {
+      allNodes[nodeId].hidden = true;
+      if (allNodes[nodeId].savedLabel === undefined) {
+        allNodes[nodeId].savedLabel = allNodes[nodeId].label;
+        allNodes[nodeId].label = undefined;
+      }
+    }
+
+    for (let i=0; i < selectedNodes.length; i++) {
+      allNodes[selectedNodes[i]].hidden = false;
+      if (allNodes[selectedNodes[i]].savedLabel !== undefined) {
+        allNodes[selectedNodes[i]].label = allNodes[selectedNodes[i]].savedLabel;
+        allNodes[selectedNodes[i]].savedLabel = undefined;
+      }
+    }
+
+  } else if (filterActive === true) {
+    // reset all nodes
+    for (let nodeId in allNodes) {
+      allNodes[nodeId].hidden = false;
+      if (allNodes[nodeId].savedLabel !== undefined) {
+        allNodes[nodeId].label = allNodes[nodeId].savedLabel;
+        allNodes[nodeId].savedLabel = undefined;
+      }
+    }
+    filterActive = false;
+  }
+
+  // transform the object into an array
+  var updateArray = [];
+  if (params.nodes.length > 0) {
+    for (let nodeId in allNodes) {
+      if (allNodes.hasOwnProperty(nodeId)) {
+        updateArray.push(allNodes[nodeId]);
+      }
+    }
+    nodes.update(updateArray);
+  } else {
+    for (let nodeId in allNodes) {
+      if (allNodes.hasOwnProperty(nodeId)) {
+        updateArray.push(allNodes[nodeId]);
+      }
+    }
+    nodes.update(updateArray);
+  }
+}
+
+function selectNode(nodes) {
+  network.selectNodes(nodes);
+  neighbourhoodHighlight({ nodes: nodes });
+  return nodes;
+}
+
+function selectNodes(nodes) {
+  network.selectNodes(nodes);
+  filterHighlight({nodes: nodes});
+  return nodes;
+}
+
+function highlightFilter(filter) {
+  let selectedNodes = []
+  let selectedProp = filter['property']
+  if (filter['item'] === 'node') {
+    let allNodes = nodes.get({ returnType: "Object" });
+    for (let nodeId in allNodes) {
+      if (allNodes[nodeId][selectedProp] && filter['value'].includes((allNodes[nodeId][selectedProp]).toString())) {
+        selectedNodes.push(nodeId)
+      }
+    }
+  }
+  else if (filter['item'] === 'edge'){
+    let allEdges = edges.get({returnType: 'object'});
+    // check if the selected property exists for selected edge and select the nodes connected to the edge
+    for (let edge in allEdges) {
+      if (allEdges[edge][selectedProp] && filter['value'].includes((allEdges[edge][selectedProp]).toString())) {
+        selectedNodes.push(allEdges[edge]['from'])
+        selectedNodes.push(allEdges[edge]['to'])
+      }
+    }
+  }
+  selectNodes(selectedNodes)
+}</script>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/dist/vis-network.min.css" integrity="sha512-WgxfT5LWjfszlPHXRmBWHkV2eceiWTOBvrKCNbdgDYTHrT2AeLCGbF4sZlZw3UMN3WtL0tGUoIAKsu8mllg/XA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/vis-network.min.js" integrity="sha512-LnvoEWDFrqGHlHmDD2101OrLcbsfkrzoSpvtSQtxK3RMnRV0eOkhhBN2dXHKRrUU8p2DGRTk35n4O8nWSVe1mQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            
+            
+            
+            
+            
+            
+
+        
+<center>
+<h1></h1>
+</center>
+
+<!-- <link rel="stylesheet" href="../node_modules/vis/dist/vis.min.css" type="text/css" />
+<script type="text/javascript" src="../node_modules/vis/dist/vis.js"> </script>-->
+        <link
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+          crossorigin="anonymous"
+        />
+        <script
+          src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+          crossorigin="anonymous"
+        ></script>
+
+
+        <center>
+          <h1></h1>
+        </center>
+        <style type="text/css">
+
+             #mynetwork {
+                 width: 100%;
+                 height: 850px;
+                 background-color: #ffffff;
+                 border: 1px solid lightgray;
+                 position: relative;
+                 float: left;
+             }
+
+             
+
+             
+
+             
+        </style>
+    </head>
+
+
+    <body>
+        <div class="card" style="width: 100%">
+            
+            
+            <div id="mynetwork" class="card-body"></div>
+        </div>
+
+        
+        
+
+        <script type="text/javascript">
+
+              // initialize global variables.
+              var edges;
+              var nodes;
+              var allNodes;
+              var allEdges;
+              var nodeColors;
+              var originalNodes;
+              var network;
+              var container;
+              var options, data;
+              var filter = {
+                  item : '',
+                  property : '',
+                  value : []
+              };
+
+              
+
+              
+
+              // This method is responsible for drawing the graph, returns the drawn network
+              function drawGraph() {
+                  var container = document.getElementById('mynetwork');
+
+                  
+
+                  // parsing and collecting nodes and edges from the python
+                  nodes = new vis.DataSet([{"category": "large enterprises", "color": "#F58518", "font": {"size": 18}, "helix": "Industry", "id": "azure", "label": "Azure", "shape": "dot", "size": 18, "title": "\u003cb\u003eAzure\u003c/b\u003e\u003cbr\u003eHelix: Industry\u003cbr\u003eCategory: large enterprises\u003cbr\u003eReview: False"}, {"category": "large enterprises", "color": "#F58518", "font": {"size": 18}, "helix": "Industry", "id": "microsoft marketplace", "label": "Microsoft Marketplace", "shape": "dot", "size": 18, "title": "\u003cb\u003eMicrosoft Marketplace\u003c/b\u003e\u003cbr\u003eHelix: Industry\u003cbr\u003eCategory: large enterprises\u003cbr\u003eReview: False"}, {"category": "large enterprises", "color": "#F58518", "font": {"size": 18}, "helix": "Industry", "id": "microsoft", "label": "Microsoft", "shape": "dot", "size": 18, "title": "\u003cb\u003eMicrosoft\u003c/b\u003e\u003cbr\u003eHelix: Industry\u003cbr\u003eCategory: large enterprises\u003cbr\u003eReview: False"}, {"category": "universities", "color": "#4C78A8", "font": {"size": 18}, "helix": "Academia", "id": "bildungseinrichtungen", "label": "Bildungseinrichtungen", "shape": "dot", "size": 18, "title": "\u003cb\u003eBildungseinrichtungen\u003c/b\u003e\u003cbr\u003eHelix: Academia\u003cbr\u003eCategory: universities\u003cbr\u003eReview: False"}, {"category": "large enterprises", "color": "#F58518", "font": {"size": 18}, "helix": "Industry", "id": "microsoft 365", "label": "Microsoft 365", "shape": "dot", "size": 18, "title": "\u003cb\u003eMicrosoft 365\u003c/b\u003e\u003cbr\u003eHelix: Industry\u003cbr\u003eCategory: large enterprises\u003cbr\u003eReview: False"}, {"category": "large enterprises", "color": "#F58518", "font": {"size": 18}, "helix": "Industry", "id": "bing", "label": "Bing", "shape": "dot", "size": 18, "title": "\u003cb\u003eBing\u003c/b\u003e\u003cbr\u003eHelix: Industry\u003cbr\u003eCategory: large enterprises\u003cbr\u003eReview: False"}, {"category": "user communities", "color": "#B279A2", "font": {"size": 18}, "helix": "Civil Society", "id": "users", "label": "users", "shape": "dot", "size": 18, "title": "\u003cb\u003eusers\u003c/b\u003e\u003cbr\u003eHelix: Civil Society\u003cbr\u003eCategory: user communities\u003cbr\u003eReview: False"}, {"category": "large enterprises", "color": "#F58518", "font": {"size": 18}, "helix": "Industry", "id": "microsoft developer", "label": "Microsoft Developer", "shape": "dot", "size": 18, "title": "\u003cb\u003eMicrosoft Developer\u003c/b\u003e\u003cbr\u003eHelix: Industry\u003cbr\u003eCategory: large enterprises\u003cbr\u003eReview: False"}, {"category": "large enterprises", "color": "#F58518", "font": {"size": 18}, "helix": "Industry", "id": "microsoft learn", "label": "Microsoft Learn", "shape": "dot", "size": 18, "title": "\u003cb\u003eMicrosoft Learn\u003c/b\u003e\u003cbr\u003eHelix: Industry\u003cbr\u003eCategory: large enterprises\u003cbr\u003eReview: False"}, {"category": "large enterprises", "color": "#F58518", "font": {"size": 18}, "helix": "Industry", "id": "xbox", "label": "Xbox", "shape": "dot", "size": 18, "title": "\u003cb\u003eXbox\u003c/b\u003e\u003cbr\u003eHelix: Industry\u003cbr\u003eCategory: large enterprises\u003cbr\u003eReview: False"}, {"category": "large enterprises", "color": "#F58518", "font": {"size": 18}, "helix": "Industry", "id": "azure copilot", "label": "Azure Copilot", "shape": "dot", "size": 18, "title": "\u003cb\u003eAzure Copilot\u003c/b\u003e\u003cbr\u003eHelix: Industry\u003cbr\u003eCategory: large enterprises\u003cbr\u003eReview: False"}, {"category": "large enterprises", "color": "#F58518", "font": {"size": 18}, "helix": "Industry", "id": "windows", "label": "Windows", "shape": "dot", "size": 18, "title": "\u003cb\u003eWindows\u003c/b\u003e\u003cbr\u003eHelix: Industry\u003cbr\u003eCategory: large enterprises\u003cbr\u003eReview: False"}, {"category": "large enterprises", "color": "#F58518", "font": {"size": 18}, "helix": "Industry", "id": "microsoft store", "label": "Microsoft Store", "shape": "dot", "size": 18, "title": "\u003cb\u003eMicrosoft Store\u003c/b\u003e\u003cbr\u003eHelix: Industry\u003cbr\u003eCategory: large enterprises\u003cbr\u003eReview: False"}, {"category": "large enterprises", "color": "#F58518", "font": {"size": 18}, "helix": "Industry", "id": "onedrive", "label": "OneDrive", "shape": "dot", "size": 18, "title": "\u003cb\u003eOneDrive\u003c/b\u003e\u003cbr\u003eHelix: Industry\u003cbr\u003eCategory: large enterprises\u003cbr\u003eReview: False"}, {"category": "large enterprises", "color": "#F58518", "font": {"size": 18}, "helix": "Industry", "id": "microsoft affiliates", "label": "Microsoft affiliates", "shape": "dot", "size": 18, "title": "\u003cb\u003eMicrosoft affiliates\u003c/b\u003e\u003cbr\u003eHelix: Industry\u003cbr\u003eCategory: large enterprises\u003cbr\u003eReview: False"}, {"category": "large enterprises", "color": "#F58518", "font": {"size": 18}, "helix": "Industry", "id": "linkedin", "label": "LinkedIn", "shape": "dot", "size": 18, "title": "\u003cb\u003eLinkedIn\u003c/b\u003e\u003cbr\u003eHelix: Industry\u003cbr\u003eCategory: large enterprises\u003cbr\u003eReview: False"}, {"category": "large enterprises", "color": "#F58518", "font": {"size": 18}, "helix": "Industry", "id": "xandr", "label": "Xandr", "shape": "dot", "size": 18, "title": "\u003cb\u003eXandr\u003c/b\u003e\u003cbr\u003eHelix: Industry\u003cbr\u003eCategory: large enterprises\u003cbr\u003eReview: False"}, {"category": "large enterprises", "color": "#F58518", "font": {"size": 18}, "helix": "Industry", "id": "office", "label": "Office", "shape": "dot", "size": 18, "title": "\u003cb\u003eOffice\u003c/b\u003e\u003cbr\u003eHelix: Industry\u003cbr\u003eCategory: large enterprises\u003cbr\u003eReview: False"}, {"category": "technology", "color": "#999999", "font": {"size": 18}, "helix": "Unknown", "id": "outlook", "label": "Outlook", "shape": "dot", "size": 18, "title": "\u003cb\u003eOutlook\u003c/b\u003e\u003cbr\u003eHelix: Unknown\u003cbr\u003eCategory: technology\u003cbr\u003eReview: True"}, {"category": "large enterprises", "color": "#F58518", "font": {"size": 18}, "helix": "Industry", "id": "microsoft teams", "label": "Microsoft Teams", "shape": "dot", "size": 18, "title": "\u003cb\u003eMicrosoft Teams\u003c/b\u003e\u003cbr\u003eHelix: Industry\u003cbr\u003eCategory: large enterprises\u003cbr\u003eReview: False"}, {"category": "small and medium-sized enterprises", "color": "#F58518", "font": {"size": 18}, "helix": "Industry", "id": "kleinunternehmen", "label": "Kleinunternehmen", "shape": "dot", "size": 18, "title": "\u003cb\u003eKleinunternehmen\u003c/b\u003e\u003cbr\u003eHelix: Industry\u003cbr\u003eCategory: small and medium-sized enterprises\u003cbr\u003eReview: False"}, {"category": "large enterprises", "color": "#F58518", "font": {"size": 18}, "helix": "Industry", "id": "microsoft edge", "label": "Microsoft Edge", "shape": "dot", "size": 18, "title": "\u003cb\u003eMicrosoft Edge\u003c/b\u003e\u003cbr\u003eHelix: Industry\u003cbr\u003eCategory: large enterprises\u003cbr\u003eReview: False"}, {"category": "large enterprises", "color": "#F58518", "font": {"size": 18}, "helix": "Industry", "id": "microsoft developer network", "label": "Microsoft Developer Network (MSDN)", "shape": "dot", "size": 18, "title": "\u003cb\u003eMicrosoft Developer Network (MSDN)\u003c/b\u003e\u003cbr\u003eHelix: Industry\u003cbr\u003eCategory: large enterprises\u003cbr\u003eReview: False"}, {"category": "technology", "color": "#999999", "font": {"size": 18}, "helix": "Unknown", "id": "microsoft entra id", "label": "Microsoft Entra ID", "shape": "dot", "size": 18, "title": "\u003cb\u003eMicrosoft Entra ID\u003c/b\u003e\u003cbr\u003eHelix: Unknown\u003cbr\u003eCategory: technology\u003cbr\u003eReview: True"}, {"category": "large enterprises", "color": "#F58518", "font": {"size": 18}, "helix": "Industry", "id": "facebook", "label": "Facebook", "shape": "dot", "size": 18, "title": "\u003cb\u003eFacebook\u003c/b\u003e\u003cbr\u003eHelix: Industry\u003cbr\u003eCategory: large enterprises\u003cbr\u003eReview: False"}, {"category": "large enterprises", "color": "#F58518", "font": {"size": 18}, "helix": "Industry", "id": "icloud", "label": "iCloud", "shape": "dot", "size": 18, "title": "\u003cb\u003eiCloud\u003c/b\u003e\u003cbr\u003eHelix: Industry\u003cbr\u003eCategory: large enterprises\u003cbr\u003eReview: False"}, {"category": "technology", "color": "#999999", "font": {"size": 18}, "helix": "Unknown", "id": "xbox series x", "label": "Xbox Series X", "shape": "dot", "size": 18, "title": "\u003cb\u003eXbox Series X\u003c/b\u003e\u003cbr\u003eHelix: Unknown\u003cbr\u003eCategory: technology\u003cbr\u003eReview: True"}, {"category": "large enterprises", "color": "#F58518", "font": {"size": 18}, "helix": "Industry", "id": "x", "label": "X", "shape": "dot", "size": 18, "title": "\u003cb\u003eX\u003c/b\u003e\u003cbr\u003eHelix: Industry\u003cbr\u003eCategory: large enterprises\u003cbr\u003eReview: False"}, {"category": "large enterprises", "color": "#F58518", "font": {"size": 18}, "helix": "Industry", "id": "accenture", "label": "Accenture", "shape": "dot", "size": 18, "title": "\u003cb\u003eAccenture\u003c/b\u003e\u003cbr\u003eHelix: Industry\u003cbr\u003eCategory: large enterprises\u003cbr\u003eReview: False"}, {"category": "large enterprises", "color": "#F58518", "font": {"size": 18}, "helix": "Industry", "id": "adjust", "label": "Adjust", "shape": "dot", "size": 18, "title": "\u003cb\u003eAdjust\u003c/b\u003e\u003cbr\u003eHelix: Industry\u003cbr\u003eCategory: large enterprises\u003cbr\u003eReview: False"}, {"category": "large enterprises", "color": "#F58518", "font": {"size": 18}, "helix": "Industry", "id": "adobe", "label": "Adobe", "shape": "dot", "size": 18, "title": "\u003cb\u003eAdobe\u003c/b\u003e\u003cbr\u003eHelix: Industry\u003cbr\u003eCategory: large enterprises\u003cbr\u003eReview: False"}, {"category": "large enterprises", "color": "#F58518", "font": {"size": 18}, "helix": "Industry", "id": "adobe inc", "label": "ADOBE INC.", "shape": "dot", "size": 18, "title": "\u003cb\u003eADOBE INC.\u003c/b\u003e\u003cbr\u003eHelix: Industry\u003cbr\u003eCategory: large enterprises\u003cbr\u003eReview: False"}, {"category": "large enterprises", "color": "#F58518", "font": {"size": 18}, "helix": "Industry", "id": "apple", "label": "Apple", "shape": "dot", "size": 18, "title": "\u003cb\u003eApple\u003c/b\u003e\u003cbr\u003eHelix: Industry\u003cbr\u003eCategory: large enterprises\u003cbr\u003eReview: False"}, {"category": "large enterprises", "color": "#F58518", "font": {"size": 18}, "helix": "Industry", "id": "audi", "label": "Audi", "shape": "dot", "size": 18, "title": "\u003cb\u003eAudi\u003c/b\u003e\u003cbr\u003eHelix: Industry\u003cbr\u003eCategory: large enterprises\u003cbr\u003eReview: False"}, {"category": "large enterprises", "color": "#F58518", "font": {"size": 18}, "helix": "Industry", "id": "audi ag", "label": "Audi AG", "shape": "dot", "size": 18, "title": "\u003cb\u003eAudi AG\u003c/b\u003e\u003cbr\u003eHelix: Industry\u003cbr\u003eCategory: large enterprises\u003cbr\u003eReview: False"}, {"category": "large enterprises", "color": "#F58518", "font": {"size": 18}, "helix": "Industry", "id": "call of duty", "label": "Call of Duty", "shape": "dot", "size": 18, "title": "\u003cb\u003eCall of Duty\u003c/b\u003e\u003cbr\u003eHelix: Industry\u003cbr\u003eCategory: large enterprises\u003cbr\u003eReview: False"}, {"category": "large enterprises", "color": "#F58518", "font": {"size": 18}, "helix": "Industry", "id": "carvana", "label": "CARVANA", "shape": "dot", "size": 18, "title": "\u003cb\u003eCARVANA\u003c/b\u003e\u003cbr\u003eHelix: Industry\u003cbr\u003eCategory: large enterprises\u003cbr\u003eReview: False"}, {"category": "other", "color": "#999999", "font": {"size": 18}, "helix": "Unknown", "id": "daa", "label": "DAA (Digital Advertising Alliance)", "shape": "dot", "size": 18, "title": "\u003cb\u003eDAA (Digital Advertising Alliance)\u003c/b\u003e\u003cbr\u003eHelix: Unknown\u003cbr\u003eCategory: other\u003cbr\u003eReview: True"}, {"category": "large enterprises", "color": "#F58518", "font": {"size": 18}, "helix": "Industry", "id": "deutsche telekom ag", "label": "Deutsche Telekom AG", "shape": "dot", "size": 18, "title": "\u003cb\u003eDeutsche Telekom AG\u003c/b\u003e\u003cbr\u003eHelix: Industry\u003cbr\u003eCategory: large enterprises\u003cbr\u003eReview: False"}, {"category": "country", "color": "#999999", "font": {"size": 18}, "helix": "Unknown", "id": "deutschland", "label": "Deutschland", "shape": "dot", "size": 18, "title": "\u003cb\u003eDeutschland\u003c/b\u003e\u003cbr\u003eHelix: Unknown\u003cbr\u003eCategory: country\u003cbr\u003eReview: True"}, {"category": "supranational government institutions", "color": "#54A24B", "font": {"size": 18}, "helix": "Government", "id": "european commission", "label": "European Commission", "shape": "dot", "size": 18, "title": "\u003cb\u003eEuropean Commission\u003c/b\u003e\u003cbr\u003eHelix: Government\u003cbr\u003eCategory: supranational government institutions\u003cbr\u003eReview: False"}, {"category": "large enterprises", "color": "#F58518", "font": {"size": 18}, "helix": "Industry", "id": "github", "label": "GitHub", "shape": "dot", "size": 18, "title": "\u003cb\u003eGitHub\u003c/b\u003e\u003cbr\u003eHelix: Industry\u003cbr\u003eCategory: large enterprises\u003cbr\u003eReview: False"}, {"category": "large enterprises", "color": "#F58518", "font": {"size": 18}, "helix": "Industry", "id": "google", "label": "Google", "shape": "dot", "size": 18, "title": "\u003cb\u003eGoogle\u003c/b\u003e\u003cbr\u003eHelix: Industry\u003cbr\u003eCategory: large enterprises\u003cbr\u003eReview: False"}, {"category": "large enterprises", "color": "#F58518", "font": {"size": 18}, "helix": "Industry", "id": "intel", "label": "Intel", "shape": "dot", "size": 18, "title": "\u003cb\u003eIntel\u003c/b\u003e\u003cbr\u003eHelix: Industry\u003cbr\u003eCategory: large enterprises\u003cbr\u003eReview: False"}, {"category": "large enterprises", "color": "#F58518", "font": {"size": 18}, "helix": "Industry", "id": "internet explorer", "label": "Internet Explorer", "shape": "dot", "size": 18, "title": "\u003cb\u003eInternet Explorer\u003c/b\u003e\u003cbr\u003eHelix: Industry\u003cbr\u003eCategory: large enterprises\u003cbr\u003eReview: False"}, {"category": "national government institutions", "color": "#54A24B", "font": {"size": 18}, "helix": "Government", "id": "japanese personal information protection commission", "label": "Japanese Personal Information Protection Commission", "shape": "dot", "size": 18, "title": "\u003cb\u003eJapanese Personal Information Protection Commission\u003c/b\u003e\u003cbr\u003eHelix: Government\u003cbr\u003eCategory: national government institutions\u003cbr\u003eReview: False"}, {"category": "small and medium-sized enterprises", "color": "#F58518", "font": {"size": 18}, "helix": "Industry", "id": "kleine und mittelst ndische unternehmen", "label": "kleine und mittelst\u00e4ndische Unternehmen", "shape": "dot", "size": 18, "title": "\u003cb\u003ekleine und mittelst\u00e4ndische Unternehmen\u003c/b\u003e\u003cbr\u003eHelix: Industry\u003cbr\u003eCategory: small and medium-sized enterprises\u003cbr\u003eReview: False"}, {"category": "country", "color": "#999999", "font": {"size": 18}, "helix": "Unknown", "id": "luxemburg", "label": "Luxemburg", "shape": "dot", "size": 18, "title": "\u003cb\u003eLuxemburg\u003c/b\u003e\u003cbr\u003eHelix: Unknown\u003cbr\u003eCategory: country\u003cbr\u003eReview: True"}, {"category": "individual", "color": "#999999", "font": {"size": 18}, "helix": "Unknown", "id": "makayla lysiak", "label": "Makayla Lysiak", "shape": "dot", "size": 18, "title": "\u003cb\u003eMakayla Lysiak\u003c/b\u003e\u003cbr\u003eHelix: Unknown\u003cbr\u003eCategory: individual\u003cbr\u003eReview: True"}, {"category": "large enterprises", "color": "#F58518", "font": {"size": 18}, "helix": "Industry", "id": "microsoft bing", "label": "Microsoft Bing", "shape": "dot", "size": 18, "title": "\u003cb\u003eMicrosoft Bing\u003c/b\u003e\u003cbr\u003eHelix: Industry\u003cbr\u003eCategory: large enterprises\u003cbr\u003eReview: False"}, {"category": "event", "color": "#999999", "font": {"size": 18}, "helix": "Unknown", "id": "microsoft build", "label": "Microsoft Build", "shape": "dot", "size": 18, "title": "\u003cb\u003eMicrosoft Build\u003c/b\u003e\u003cbr\u003eHelix: Unknown\u003cbr\u003eCategory: event\u003cbr\u003eReview: True"}, {"category": "large enterprises", "color": "#F58518", "font": {"size": 18}, "helix": "Industry", "id": "microsoft corp", "label": "Microsoft Corp.", "shape": "dot", "size": 18, "title": "\u003cb\u003eMicrosoft Corp.\u003c/b\u003e\u003cbr\u003eHelix: Industry\u003cbr\u003eCategory: large enterprises\u003cbr\u003eReview: False"}, {"category": "large enterprises", "color": "#F58518", "font": {"size": 18}, "helix": "Industry", "id": "microsoft corporation", "label": "Microsoft Corporation", "shape": "dot", "size": 18, "title": "\u003cb\u003eMicrosoft Corporation\u003c/b\u003e\u003cbr\u003eHelix: Industry\u003cbr\u003eCategory: large enterprises\u003cbr\u003eReview: False"}, {"category": "large enterprises", "color": "#F58518", "font": {"size": 18}, "helix": "Industry", "id": "microsoft designer", "label": "Microsoft Designer", "shape": "dot", "size": 18, "title": "\u003cb\u003eMicrosoft Designer\u003c/b\u003e\u003cbr\u003eHelix: Industry\u003cbr\u003eCategory: large enterprises\u003cbr\u003eReview: False"}, {"category": "technology", "color": "#999999", "font": {"size": 18}, "helix": "Unknown", "id": "microsoft fabric", "label": "Microsoft Fabric", "shape": "dot", "size": 18, "title": "\u003cb\u003eMicrosoft Fabric\u003c/b\u003e\u003cbr\u003eHelix: Unknown\u003cbr\u003eCategory: technology\u003cbr\u003eReview: True"}, {"category": "large enterprises", "color": "#F58518", "font": {"size": 18}, "helix": "Industry", "id": "microsoft family safety", "label": "Microsoft Family Safety", "shape": "dot", "size": 18, "title": "\u003cb\u003eMicrosoft Family Safety\u003c/b\u003e\u003cbr\u003eHelix: Industry\u003cbr\u003eCategory: large enterprises\u003cbr\u003eReview: False"}, {"category": "large enterprises", "color": "#F58518", "font": {"size": 18}, "helix": "Industry", "id": "microsoft foundry", "label": "Microsoft Foundry", "shape": "dot", "size": 18, "title": "\u003cb\u003eMicrosoft Foundry\u003c/b\u003e\u003cbr\u003eHelix: Industry\u003cbr\u003eCategory: large enterprises\u003cbr\u003eReview: False"}, {"category": "large enterprises", "color": "#F58518", "font": {"size": 18}, "helix": "Industry", "id": "microsoft ireland operations limited", "label": "Microsoft Ireland Operations Limited", "shape": "dot", "size": 18, "title": "\u003cb\u003eMicrosoft Ireland Operations Limited\u003c/b\u003e\u003cbr\u003eHelix: Industry\u003cbr\u003eCategory: large enterprises\u003cbr\u003eReview: False"}, {"category": "large enterprises", "color": "#F58518", "font": {"size": 18}, "helix": "Industry", "id": "microsoft loop", "label": "Microsoft Loop", "shape": "dot", "size": 18, "title": "\u003cb\u003eMicrosoft Loop\u003c/b\u003e\u003cbr\u003eHelix: Industry\u003cbr\u003eCategory: large enterprises\u003cbr\u003eReview: False"}, {"category": "large enterprises", "color": "#F58518", "font": {"size": 18}, "helix": "Industry", "id": "microsoft onedrive", "label": "Microsoft OneDrive", "shape": "dot", "size": 18, "title": "\u003cb\u003eMicrosoft OneDrive\u003c/b\u003e\u003cbr\u003eHelix: Industry\u003cbr\u003eCategory: large enterprises\u003cbr\u003eReview: False"}, {"category": "large enterprises", "color": "#F58518", "font": {"size": 18}, "helix": "Industry", "id": "microsoft places", "label": "Microsoft Places", "shape": "dot", "size": 18, "title": "\u003cb\u003eMicrosoft Places\u003c/b\u003e\u003cbr\u003eHelix: Industry\u003cbr\u003eCategory: large enterprises\u003cbr\u003eReview: False"}, {"category": "large enterprises", "color": "#F58518", "font": {"size": 18}, "helix": "Industry", "id": "microsoft start", "label": "Microsoft Start", "shape": "dot", "size": 18, "title": "\u003cb\u003eMicrosoft Start\u003c/b\u003e\u003cbr\u003eHelix: Industry\u003cbr\u003eCategory: large enterprises\u003cbr\u003eReview: False"}, {"category": "large enterprises", "color": "#F58518", "font": {"size": 18}, "helix": "Industry", "id": "microsoft word", "label": "Microsoft Word", "shape": "dot", "size": 18, "title": "\u003cb\u003eMicrosoft Word\u003c/b\u003e\u003cbr\u003eHelix: Industry\u003cbr\u003eCategory: large enterprises\u003cbr\u003eReview: False"}, {"category": "large enterprises", "color": "#F58518", "font": {"size": 18}, "helix": "Industry", "id": "nestle", "label": "Nestle", "shape": "dot", "size": 18, "title": "\u003cb\u003eNestle\u003c/b\u003e\u003cbr\u003eHelix: Industry\u003cbr\u003eCategory: large enterprises\u003cbr\u003eReview: False"}, {"category": "large enterprises", "color": "#F58518", "font": {"size": 18}, "helix": "Industry", "id": "red hat", "label": "Red Hat", "shape": "dot", "size": 18, "title": "\u003cb\u003eRed Hat\u003c/b\u003e\u003cbr\u003eHelix: Industry\u003cbr\u003eCategory: large enterprises\u003cbr\u003eReview: False"}, {"category": "large enterprises", "color": "#F58518", "font": {"size": 18}, "helix": "Industry", "id": "samsung", "label": "Samsung", "shape": "dot", "size": 18, "title": "\u003cb\u003eSamsung\u003c/b\u003e\u003cbr\u003eHelix: Industry\u003cbr\u003eCategory: large enterprises\u003cbr\u003eReview: False"}, {"category": "large enterprises", "color": "#F58518", "font": {"size": 18}, "helix": "Industry", "id": "sap", "label": "SAP", "shape": "dot", "size": 18, "title": "\u003cb\u003eSAP\u003c/b\u003e\u003cbr\u003eHelix: Industry\u003cbr\u003eCategory: large enterprises\u003cbr\u003eReview: False"}, {"category": "large enterprises", "color": "#F58518", "font": {"size": 18}, "helix": "Industry", "id": "snapdragon", "label": "Snapdragon", "shape": "dot", "size": 18, "title": "\u003cb\u003eSnapdragon\u003c/b\u003e\u003cbr\u003eHelix: Industry\u003cbr\u003eCategory: large enterprises\u003cbr\u003eReview: False"}, {"category": "large enterprises", "color": "#F58518", "font": {"size": 18}, "helix": "Industry", "id": "swiftkey", "label": "SwiftKey", "shape": "dot", "size": 18, "title": "\u003cb\u003eSwiftKey\u003c/b\u003e\u003cbr\u003eHelix: Industry\u003cbr\u003eCategory: large enterprises\u003cbr\u003eReview: False"}, {"category": "large enterprises", "color": "#F58518", "font": {"size": 18}, "helix": "Industry", "id": "toyota inc", "label": "Toyota Inc", "shape": "dot", "size": 18, "title": "\u003cb\u003eToyota Inc\u003c/b\u003e\u003cbr\u003eHelix: Industry\u003cbr\u003eCategory: large enterprises\u003cbr\u003eReview: False"}, {"category": "large enterprises", "color": "#F58518", "font": {"size": 18}, "helix": "Industry", "id": "trade desk", "label": "Trade Desk", "shape": "dot", "size": 18, "title": "\u003cb\u003eTrade Desk\u003c/b\u003e\u003cbr\u003eHelix: Industry\u003cbr\u003eCategory: large enterprises\u003cbr\u003eReview: False"}, {"category": "national government institutions", "color": "#54A24B", "font": {"size": 18}, "helix": "Government", "id": "u s department of commerce", "label": "U.S. Department of Commerce", "shape": "dot", "size": 18, "title": "\u003cb\u003eU.S. Department of Commerce\u003c/b\u003e\u003cbr\u003eHelix: Government\u003cbr\u003eCategory: national government institutions\u003cbr\u003eReview: False"}, {"category": "other", "color": "#999999", "font": {"size": 18}, "helix": "Unknown", "id": "ubuntu", "label": "Ubuntu", "shape": "dot", "size": 18, "title": "\u003cb\u003eUbuntu\u003c/b\u003e\u003cbr\u003eHelix: Unknown\u003cbr\u003eCategory: other\u003cbr\u003eReview: True"}, {"category": "individual", "color": "#F58518", "font": {"size": 18}, "helix": "Industry", "id": "waltons", "label": "Waltons", "shape": "dot", "size": 18, "title": "\u003cb\u003eWaltons\u003c/b\u003e\u003cbr\u003eHelix: Industry\u003cbr\u003eCategory: individual\u003cbr\u003eReview: True"}, {"category": "large enterprises", "color": "#F58518", "font": {"size": 18}, "helix": "Industry", "id": "yahoo", "label": "Yahoo", "shape": "dot", "size": 18, "title": "\u003cb\u003eYahoo\u003c/b\u003e\u003cbr\u003eHelix: Industry\u003cbr\u003eCategory: large enterprises\u003cbr\u003eReview: False"}]);
+                  edges = new vis.DataSet([{"arrows": "to", "color": "#6B7280", "from": "azure", "label": "networking", "title": "\u003cb\u003enetworking\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Intra-helix / Not classified\u003cbr\u003ePage: 52\u003cbr\u003ePhrase: Microsoft Marketplace", "to": "microsoft marketplace", "width": 2}, {"arrows": "to", "color": "#2563EB", "from": "azure", "label": "collaborative_leadership", "title": "\u003cb\u003ecollaborative_leadership\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Intra-helix / Not classified\u003cbr\u003ePage: 136\u003cbr\u003ePhrase: from Microsoft", "to": "microsoft", "width": 2}, {"arrows": "to", "color": "#2563EB", "from": "bildungseinrichtungen", "label": "collaborative_leadership", "title": "\u003cb\u003ecollaborative_leadership\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Innovation\u003cbr\u003ePage: 8\u003cbr\u003ePhrase: F\u00fcr Bildungseinrichtungen", "to": "microsoft 365", "width": 2}, {"arrows": "to", "color": "#2563EB", "from": "bing", "label": "collaborative_leadership", "title": "\u003cb\u003ecollaborative_leadership\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Public\u003cbr\u003ePage: 177\u003cbr\u003ePhrase: supports users by reviewing and summarizing search results from across the web", "to": "users", "width": 2}, {"arrows": "to", "color": "#6B7280", "from": "microsoft", "label": "networking", "title": "\u003cb\u003enetworking\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Intra-helix / Not classified\u003cbr\u003ePage: 258\u003cbr\u003ePhrase: operated and maintained by Microsoft", "to": "azure", "width": 2}, {"arrows": "to", "color": "#2563EB", "from": "microsoft", "label": "collaborative_leadership", "title": "\u003cb\u003ecollaborative_leadership\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Intra-helix / Not classified\u003cbr\u003ePage: 6\u003cbr\u003ePhrase: [Microsoft Developer](https://developer.microsoft.com/en-us/)", "to": "microsoft developer", "width": 2}, {"arrows": "to", "color": "#2563EB", "from": "microsoft", "label": "collaborative_leadership", "title": "\u003cb\u003ecollaborative_leadership\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Intra-helix / Not classified\u003cbr\u003ePage: 6\u003cbr\u003ePhrase: [Microsoft Learn](https://learn.microsoft.com/)", "to": "microsoft learn", "width": 2}, {"arrows": "to", "color": "#6B7280", "from": "microsoft", "label": "networking", "title": "\u003cb\u003enetworking\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Intra-helix / Not classified\u003cbr\u003ePage: 53\u003cbr\u003ePhrase: [Microsoft Marketplace]", "to": "microsoft marketplace", "width": 2}, {"arrows": "to", "color": "#2563EB", "from": "microsoft", "label": "collaborative_leadership", "title": "\u003cb\u003ecollaborative_leadership\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Intra-helix / Not classified\u003cbr\u003ePage: 271\u003cbr\u003ePhrase: Microsoft family group", "to": "xbox", "width": 2}, {"arrows": "to", "color": "#2563EB", "from": "microsoft", "label": "collaborative_leadership", "title": "\u003cb\u003ecollaborative_leadership\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Intra-helix / Not classified\u003cbr\u003ePage: 75\u003cbr\u003ePhrase: sign in to Microsoft products, such as Microsoft 365", "to": "microsoft 365", "width": 2}, {"arrows": "to", "color": "#2563EB", "from": "microsoft", "label": "collaborative_leadership", "title": "\u003cb\u003ecollaborative_leadership\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Intra-helix / Not classified\u003cbr\u003ePage: 5\u003cbr\u003ePhrase: Copilot", "to": "azure copilot", "width": 2}, {"arrows": "to", "color": "#D97706", "from": "microsoft", "label": "technology_transfer", "title": "\u003cb\u003etechnology_transfer\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Intra-helix / Not classified\u003cbr\u003ePage: 206\u003cbr\u003ePhrase: Windows diagnostic data", "to": "windows", "width": 2}, {"arrows": "to", "color": "#2563EB", "from": "microsoft", "label": "collaborative_leadership", "title": "\u003cb\u003ecollaborative_leadership\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Intra-helix / Not classified\u003cbr\u003ePage: 26\u003cbr\u003ePhrase: im Microsoft Store", "to": "microsoft store", "width": 2}, {"arrows": "to", "color": "#2563EB", "from": "microsoft", "label": "collaborative_leadership", "title": "\u003cb\u003ecollaborative_leadership\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Intra-helix / Not classified\u003cbr\u003ePage: 13\u003cbr\u003ePhrase: submit a search query to", "to": "bing", "width": 2}, {"arrows": "to", "color": "#2563EB", "from": "microsoft", "label": "collaborative_leadership", "title": "\u003cb\u003ecollaborative_leadership\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Intra-helix / Not classified\u003cbr\u003ePage: 164\u003cbr\u003ePhrase: your work or school Microsoft account", "to": "onedrive", "width": 2}, {"arrows": "to", "color": "#6B7280", "from": "microsoft", "label": "networking", "title": "\u003cb\u003enetworking\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Intra-helix / Not classified\u003cbr\u003ePage: 52\u003cbr\u003ePhrase: Microsoft affiliates and partners", "to": "microsoft affiliates", "width": 2}, {"arrows": "to", "color": "#6B7280", "from": "microsoft", "label": "networking", "title": "\u003cb\u003enetworking\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Intra-helix / Not classified\u003cbr\u003ePage: 59\u003cbr\u003ePhrase: such as LinkedIn", "to": "linkedin", "width": 2}, {"arrows": "to", "color": "#6B7280", "from": "microsoft", "label": "networking", "title": "\u003cb\u003enetworking\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Intra-helix / Not classified\u003cbr\u003ePage: 121\u003cbr\u003ePhrase: partners with", "to": "xandr", "width": 2}, {"arrows": "to", "color": "#2563EB", "from": "microsoft", "label": "collaborative_leadership", "title": "\u003cb\u003ecollaborative_leadership\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Public\u003cbr\u003ePage: 215\u003cbr\u003ePhrase: connecting the customer to a live Microsoft agent", "to": "users", "width": 2}, {"arrows": "to", "color": "#2563EB", "from": "microsoft", "label": "collaborative_leadership", "title": "\u003cb\u003ecollaborative_leadership\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Intra-helix / Not classified\u003cbr\u003ePage: 75\u003cbr\u003ePhrase: sign in to Microsoft products, such as Office 365", "to": "office", "width": 2}, {"arrows": "to", "color": "#2563EB", "from": "microsoft 365", "label": "collaborative_leadership", "title": "\u003cb\u003ecollaborative_leadership\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Intra-helix / Not classified\u003cbr\u003ePage: 164\u003cbr\u003ePhrase: your organization\u0027s use of Microsoft 365 or Office 365", "to": "onedrive", "width": 2}, {"arrows": "to", "color": "#2563EB", "from": "microsoft 365", "label": "collaborative_leadership", "title": "\u003cb\u003ecollaborative_leadership\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Unknown\u003cbr\u003ePage: 2\u003cbr\u003ePhrase: Microsoft 365", "to": "outlook", "width": 2}, {"arrows": "to", "color": "#2563EB", "from": "microsoft 365", "label": "collaborative_leadership", "title": "\u003cb\u003ecollaborative_leadership\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Intra-helix / Not classified\u003cbr\u003ePage: 2\u003cbr\u003ePhrase: Microsoft 365", "to": "microsoft teams", "width": 2}, {"arrows": "to", "color": "#2563EB", "from": "microsoft 365", "label": "collaborative_leadership", "title": "\u003cb\u003ecollaborative_leadership\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Intra-helix / Not classified\u003cbr\u003ePage: 132\u003cbr\u003ePhrase: Microsoft 365 and Office 365", "to": "office", "width": 2}, {"arrows": "to", "color": "#2563EB", "from": "microsoft 365", "label": "collaborative_leadership", "title": "\u003cb\u003ecollaborative_leadership\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Intra-helix / Not classified\u003cbr\u003ePage: 1\u003cbr\u003ePhrase: Microsoft 365", "to": "windows", "width": 2}, {"arrows": "to", "color": "#2563EB", "from": "microsoft 365", "label": "collaborative_leadership", "title": "\u003cb\u003ecollaborative_leadership\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Intra-helix / Not classified\u003cbr\u003ePage: 2\u003cbr\u003ePhrase: Microsoft 365-Administratoren", "to": "kleinunternehmen", "width": 2}, {"arrows": "to", "color": "#2563EB", "from": "microsoft 365", "label": "collaborative_leadership", "title": "\u003cb\u003ecollaborative_leadership\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Intra-helix / Not classified\u003cbr\u003ePage: 148\u003cbr\u003ePhrase: syncs some of your customized settings to Microsoft servers", "to": "microsoft", "width": 2}, {"arrows": "to", "color": "#2563EB", "from": "microsoft 365", "label": "collaborative_leadership", "title": "\u003cb\u003ecollaborative_leadership\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Intra-helix / Not classified\u003cbr\u003ePage: 2\u003cbr\u003ePhrase: Microsoft 365", "to": "microsoft edge", "width": 2}, {"arrows": "to", "color": "#2563EB", "from": "microsoft 365", "label": "collaborative_leadership", "title": "\u003cb\u003ecollaborative_leadership\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Intra-helix / Not classified\u003cbr\u003ePage: 132\u003cbr\u003ePhrase: Microsoft 365 and Office 365, Microsoft Azure", "to": "azure", "width": 2}, {"arrows": "to", "color": "#2563EB", "from": "microsoft 365", "label": "collaborative_leadership", "title": "\u003cb\u003ecollaborative_leadership\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Intra-helix / Not classified\u003cbr\u003ePage: 198\u003cbr\u003ePhrase: Microsoft Edge Legacy, some Microsoft Store apps, and Microsoft 365 apps", "to": "microsoft store", "width": 2}, {"arrows": "to", "color": "#2563EB", "from": "microsoft developer", "label": "collaborative_leadership", "title": "\u003cb\u003ecollaborative_leadership\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Intra-helix / Not classified\u003cbr\u003ePage: 23\u003cbr\u003ePhrase: Support for AI marketplace apps", "to": "azure", "width": 2}, {"arrows": "to", "color": "#2563EB", "from": "microsoft developer", "label": "collaborative_leadership", "title": "\u003cb\u003ecollaborative_leadership\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Intra-helix / Not classified\u003cbr\u003ePage: 23\u003cbr\u003ePhrase: Support for AI marketplace apps", "to": "microsoft learn", "width": 2}, {"arrows": "to", "color": "#2563EB", "from": "microsoft developer", "label": "collaborative_leadership", "title": "\u003cb\u003ecollaborative_leadership\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Intra-helix / Not classified\u003cbr\u003ePage: 23\u003cbr\u003ePhrase: Support for AI marketplace apps", "to": "microsoft marketplace", "width": 2}, {"arrows": "to", "color": "#6B7280", "from": "microsoft developer network", "label": "networking", "title": "\u003cb\u003enetworking\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Intra-helix / Not classified\u003cbr\u003ePage: 45\u003cbr\u003ePhrase: Microsoft Developer Network (MSDN) public profile", "to": "microsoft", "width": 2}, {"arrows": "to", "color": "#2563EB", "from": "microsoft edge", "label": "collaborative_leadership", "title": "\u003cb\u003ecollaborative_leadership\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Intra-helix / Not classified\u003cbr\u003ePage: 184\u003cbr\u003ePhrase: signed into Microsoft Edge with your Microsoft personal account", "to": "microsoft", "width": 2}, {"arrows": "to", "color": "#2563EB", "from": "microsoft edge", "label": "collaborative_leadership", "title": "\u003cb\u003ecollaborative_leadership\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Intra-helix / Not classified\u003cbr\u003ePage: 184\u003cbr\u003ePhrase: Windows device set up", "to": "windows", "width": 2}, {"arrows": "to", "color": "#2563EB", "from": "microsoft entra id", "label": "collaborative_leadership", "title": "\u003cb\u003ecollaborative_leadership\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Unknown\u003cbr\u003ePage: 76\u003cbr\u003ePhrase: sign in to Microsoft products, such as Microsoft 365", "to": "microsoft 365", "width": 2}, {"arrows": "to", "color": "#2563EB", "from": "microsoft entra id", "label": "collaborative_leadership", "title": "\u003cb\u003ecollaborative_leadership\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Unknown\u003cbr\u003ePage: 76\u003cbr\u003ePhrase: sign in to Microsoft products, such as Office 365", "to": "office", "width": 2}, {"arrows": "to", "color": "#2563EB", "from": "microsoft entra id", "label": "collaborative_leadership", "title": "\u003cb\u003ecollaborative_leadership\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Unknown\u003cbr\u003ePage: 202\u003cbr\u003ePhrase: uses Microsoft Entra ID to manage the account it provides to you", "to": "windows", "width": 2}, {"arrows": "to", "color": "#2563EB", "from": "microsoft learn", "label": "collaborative_leadership", "title": "\u003cb\u003ecollaborative_leadership\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Intra-helix / Not classified\u003cbr\u003ePage: 6\u003cbr\u003ePhrase: Microsoft Learn", "to": "microsoft", "width": 2}, {"arrows": "to", "color": "#2563EB", "from": "microsoft learn", "label": "collaborative_leadership", "title": "\u003cb\u003ecollaborative_leadership\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Intra-helix / Not classified\u003cbr\u003ePage: 6\u003cbr\u003ePhrase: Support f\u00fcr KI-Apps im Marketplace", "to": "microsoft marketplace", "width": 2}, {"arrows": "to", "color": "#2563EB", "from": "microsoft learn", "label": "collaborative_leadership", "title": "\u003cb\u003ecollaborative_leadership\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Intra-helix / Not classified\u003cbr\u003ePage: 5\u003cbr\u003ePhrase: Azure", "to": "azure", "width": 2}, {"arrows": "to", "color": "#2563EB", "from": "microsoft learn", "label": "collaborative_leadership", "title": "\u003cb\u003ecollaborative_leadership\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Intra-helix / Not classified\u003cbr\u003ePage: 5\u003cbr\u003ePhrase: Microsoft Developer", "to": "microsoft developer", "width": 2}, {"arrows": "to", "color": "#2563EB", "from": "microsoft marketplace", "label": "collaborative_leadership", "title": "\u003cb\u003ecollaborative_leadership\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Intra-helix / Not classified\u003cbr\u003ePage: 10\u003cbr\u003ePhrase: Support f\u00fcr KI-Apps im Marketplace", "to": "microsoft learn", "width": 2}, {"arrows": "to", "color": "#2563EB", "from": "microsoft marketplace", "label": "collaborative_leadership", "title": "\u003cb\u003ecollaborative_leadership\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Intra-helix / Not classified\u003cbr\u003ePage: 22\u003cbr\u003ePhrase: Support f\u00fcr KI-Apps im Marketplace", "to": "microsoft", "width": 2}, {"arrows": "to", "color": "#2563EB", "from": "microsoft store", "label": "collaborative_leadership", "title": "\u003cb\u003ecollaborative_leadership\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Intra-helix / Not classified\u003cbr\u003ePage: 36\u003cbr\u003ePhrase: Microsoft Store-Vertrieb und -Support", "to": "microsoft", "width": 2}, {"arrows": "to", "color": "#2563EB", "from": "microsoft store", "label": "collaborative_leadership", "title": "\u003cb\u003ecollaborative_leadership\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Intra-helix / Not classified\u003cbr\u003ePage: 36\u003cbr\u003ePhrase: Microsoft-Konto", "to": "microsoft 365", "width": 2}, {"arrows": "to", "color": "#2563EB", "from": "microsoft teams", "label": "collaborative_leadership", "title": "\u003cb\u003ecollaborative_leadership\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Intra-helix / Not classified\u003cbr\u003ePage: 1\u003cbr\u003ePhrase: Microsoft Teams", "to": "onedrive", "width": 2}, {"arrows": "to", "color": "#2563EB", "from": "microsoft teams", "label": "collaborative_leadership", "title": "\u003cb\u003ecollaborative_leadership\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Intra-helix / Not classified\u003cbr\u003ePage: 1\u003cbr\u003ePhrase: Microsoft Teams", "to": "windows", "width": 2}, {"arrows": "to", "color": "#2563EB", "from": "microsoft teams", "label": "collaborative_leadership", "title": "\u003cb\u003ecollaborative_leadership\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Intra-helix / Not classified\u003cbr\u003ePage: 2\u003cbr\u003ePhrase: Microsoft Teams", "to": "microsoft 365", "width": 2}, {"arrows": "to", "color": "#2563EB", "from": "microsoft teams", "label": "collaborative_leadership", "title": "\u003cb\u003ecollaborative_leadership\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Intra-helix / Not classified\u003cbr\u003ePage: 7\u003cbr\u003ePhrase: Microsoft Teams", "to": "microsoft", "width": 2}, {"arrows": "to", "color": "#2563EB", "from": "office", "label": "collaborative_leadership", "title": "\u003cb\u003ecollaborative_leadership\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Intra-helix / Not classified\u003cbr\u003ePage: 132\u003cbr\u003ePhrase: Microsoft 365 and Office 365, Microsoft Azure", "to": "azure", "width": 2}, {"arrows": "to", "color": "#2563EB", "from": "office", "label": "collaborative_leadership", "title": "\u003cb\u003ecollaborative_leadership\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Intra-helix / Not classified\u003cbr\u003ePage: 135\u003cbr\u003ePhrase: Office 365", "to": "microsoft", "width": 2}, {"arrows": "to", "color": "#2563EB", "from": "onedrive", "label": "collaborative_leadership", "title": "\u003cb\u003ecollaborative_leadership\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Intra-helix / Not classified\u003cbr\u003ePage: 1\u003cbr\u003ePhrase: OneDrive", "to": "windows", "width": 2}, {"arrows": "to", "color": "#2563EB", "from": "onedrive", "label": "collaborative_leadership", "title": "\u003cb\u003ecollaborative_leadership\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Intra-helix / Not classified\u003cbr\u003ePage: 165\u003cbr\u003ePhrase: your organization\u0027s use of Microsoft 365", "to": "microsoft 365", "width": 2}, {"arrows": "to", "color": "#2563EB", "from": "onedrive", "label": "collaborative_leadership", "title": "\u003cb\u003ecollaborative_leadership\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Intra-helix / Not classified\u003cbr\u003ePage: 7\u003cbr\u003ePhrase: OneDrive", "to": "microsoft", "width": 2}, {"arrows": "to", "color": "#6B7280", "from": "onedrive", "label": "networking", "title": "\u003cb\u003enetworking\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Intra-helix / Not classified\u003cbr\u003ePage: 166\u003cbr\u003ePhrase: share content to a social network like Facebook", "to": "facebook", "width": 2}, {"arrows": "to", "color": "#2563EB", "from": "onedrive", "label": "collaborative_leadership", "title": "\u003cb\u003ecollaborative_leadership\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Intra-helix / Not classified\u003cbr\u003ePage: 165\u003cbr\u003ePhrase: your organization\u0027s use of Office 365", "to": "office", "width": 2}, {"arrows": "to", "color": "#2563EB", "from": "onedrive", "label": "collaborative_leadership", "title": "\u003cb\u003ecollaborative_leadership\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Intra-helix / Not classified\u003cbr\u003ePage: 252\u003cbr\u003ePhrase: synced to your device from OneDrive, iCloud", "to": "icloud", "width": 2}, {"arrows": "to", "color": "#2563EB", "from": "outlook", "label": "collaborative_leadership", "title": "\u003cb\u003ecollaborative_leadership\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Unknown\u003cbr\u003ePage: 2\u003cbr\u003ePhrase: Outlook", "to": "microsoft 365", "width": 2}, {"arrows": "to", "color": "#2563EB", "from": "outlook", "label": "collaborative_leadership", "title": "\u003cb\u003ecollaborative_leadership\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Unknown\u003cbr\u003ePage: 1\u003cbr\u003ePhrase: Outlook", "to": "microsoft teams", "width": 2}, {"arrows": "to", "color": "#2563EB", "from": "outlook", "label": "collaborative_leadership", "title": "\u003cb\u003ecollaborative_leadership\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Unknown\u003cbr\u003ePage: 1\u003cbr\u003ePhrase: Outlook", "to": "onedrive", "width": 2}, {"arrows": "to", "color": "#2563EB", "from": "outlook", "label": "collaborative_leadership", "title": "\u003cb\u003ecollaborative_leadership\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Unknown\u003cbr\u003ePage: 1\u003cbr\u003ePhrase: Outlook", "to": "windows", "width": 2}, {"arrows": "to", "color": "#2563EB", "from": "outlook", "label": "collaborative_leadership", "title": "\u003cb\u003ecollaborative_leadership\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Unknown\u003cbr\u003ePage: 7\u003cbr\u003ePhrase: Outlook", "to": "microsoft", "width": 2}, {"arrows": "to", "color": "#2563EB", "from": "users", "label": "collaborative_leadership", "title": "\u003cb\u003ecollaborative_leadership\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Public\u003cbr\u003ePage: 214\u003cbr\u003ePhrase: connecting the customer to a live Microsoft agent", "to": "microsoft", "width": 2}, {"arrows": "to", "color": "#2563EB", "from": "users", "label": "collaborative_leadership", "title": "\u003cb\u003ecollaborative_leadership\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Public\u003cbr\u003ePage: 89\u003cbr\u003ePhrase: enter a prompt via text or voice", "to": "xbox", "width": 2}, {"arrows": "to", "color": "#2563EB", "from": "windows", "label": "collaborative_leadership", "title": "\u003cb\u003ecollaborative_leadership\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Intra-helix / Not classified\u003cbr\u003ePage: 2\u003cbr\u003ePhrase: Windows", "to": "microsoft 365", "width": 2}, {"arrows": "to", "color": "#2563EB", "from": "windows", "label": "collaborative_leadership", "title": "\u003cb\u003ecollaborative_leadership\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Intra-helix / Not classified\u003cbr\u003ePage: 195\u003cbr\u003ePhrase: centralized management tools provided by Microsoft", "to": "microsoft", "width": 2}, {"arrows": "to", "color": "#D97706", "from": "windows", "label": "technology_transfer", "title": "\u003cb\u003etechnology_transfer\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Intra-helix / Not classified\u003cbr\u003ePage: 132\u003cbr\u003ePhrase: Windows Server, SQL Server, Visual Studio, System Center, Azure Stack", "to": "azure", "width": 2}, {"arrows": "to", "color": "#2563EB", "from": "xbox", "label": "collaborative_leadership", "title": "\u003cb\u003ecollaborative_leadership\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Intra-helix / Not classified\u003cbr\u003ePage: 2\u003cbr\u003ePhrase: Xbox", "to": "microsoft 365", "width": 2}, {"arrows": "to", "color": "#2563EB", "from": "xbox", "label": "collaborative_leadership", "title": "\u003cb\u003ecollaborative_leadership\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Intra-helix / Not classified\u003cbr\u003ePage: 270\u003cbr\u003ePhrase: Microsoft family group", "to": "microsoft", "width": 2}, {"arrows": "to", "color": "#2563EB", "from": "xbox series x", "label": "collaborative_leadership", "title": "\u003cb\u003ecollaborative_leadership\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Unknown\u003cbr\u003ePage: 35\u003cbr\u003ePhrase: direkt auf deiner Xbox Series X-Konsole oder online unter der offiziellen Xbox", "to": "xbox", "width": 2}, {"arrows": "to", "color": "#2563EB", "from": "xbox series x", "label": "collaborative_leadership", "title": "\u003cb\u003ecollaborative_leadership\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Unknown\u003cbr\u003ePage: 35\u003cbr\u003ePhrase: direkt auf deiner Xbox Series X-Konsole oder online unter der offiziellen Xbox", "to": "x", "width": 2}]);
+
+                  nodeColors = {};
+                  allNodes = nodes.get({ returnType: "Object" });
+                  for (nodeId in allNodes) {
+                    nodeColors[nodeId] = allNodes[nodeId].color;
+                  }
+                  allEdges = edges.get({ returnType: "Object" });
+                  // adding nodes and edges to the graph
+                  data = {nodes: nodes, edges: edges};
+
+                  var options = {"physics": {"barnesHut": {"gravitationalConstant": -8000, "centralGravity": 0.3, "springLength": 180, "springConstant": 0.04}, "minVelocity": 0.75}, "interaction": {"hover": true, "navigationButtons": true, "keyboard": true}};
+
+                  
+
+
+                  
+
+                  network = new vis.Network(container, data, options);
+
+                  
+
+                  
+
+                  
+
+
+                  
+
+                  return network;
+
+              }
+              drawGraph();
+        </script>
+    </body>
+</html>

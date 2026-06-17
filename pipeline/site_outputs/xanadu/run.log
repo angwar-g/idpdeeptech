@@ -1,0 +1,45 @@
+
+========================================================================
+RUN STARTED  2026-06-17 17:29:39
+site_pipeline.py https://www.xanadu.ai/
+========================================================================
+
+[17:29:39 +0s | xanadu] === 0 crawl site ===
+[17:29:44 +5s | xanadu] [INIT].... → Crawl4AI 0.8.6 
+[17:29:45 +6s | xanadu] [FETCH]... ↓ https://www.xanadu.ai/                                                                               | ✓ | ⏱: 1.64s 
+[17:29:45 +6s | xanadu] [SCRAPE].. ◆ https://www.xanadu.ai/                                                                               | ✓ | ⏱: 0.01s 
+[17:29:45 +6s | xanadu] [COMPLETE] ● https://www.xanadu.ai/                                                                               | ✓ | ⏱: 1.67s 
+[17:29:45 +6s | xanadu] Saved: crawl_output/c1174211e2_www.xanadu.ai.json
+
+[17:29:46 +7s | xanadu] === 1 actor extraction ===
+[17:29:46 +7s | xanadu] Saved 1_actor_results.json with 0 extracted records
+
+[17:29:46 +7s | xanadu] === 2 clean actors ===
+[17:29:46 +7s | xanadu] Loaded 0 extracted records
+[17:29:46 +7s | xanadu] Saved 2_actor_nodes.json with 0 canonical actor nodes
+
+[17:29:46 +7s | xanadu] === 3 interaction extraction ===
+[17:29:47 +8s | xanadu] No valid actors found, skipping.
+
+[17:29:47 +8s | xanadu] === 4 clean interactions ===
+[17:29:47 +8s | xanadu] No input (3_interaction_results.json missing -- upstream produced no edges). Wrote empty 4_edges.json.
+
+[17:29:47 +8s | xanadu] === 5 helix enrichment ===
+[17:29:47 +8s | xanadu] Wrote 5_nodes.json (0 actors)
+[17:29:47 +8s | xanadu] Wrote 5_edges.json (0 interactions)
+[17:29:47 +8s | xanadu] Actor helix counts: {}
+[17:29:47 +8s | xanadu] Functional-space counts: {}
+
+[17:29:47 +8s | xanadu] === 6 network visualisation ===
+[17:29:48 +9s | xanadu] Wrote quantum_network.html
+[17:29:48 +9s | xanadu] Nodes: 0
+[17:29:48 +9s | xanadu] Edges: 0
+
+[17:29:48 +9s | xanadu] Done. Outputs written to: /home/lv/IDP/idpdeeptech/pipeline/site_outputs/xanadu
+[17:29:48 +9s | xanadu] Log: /home/lv/IDP/idpdeeptech/pipeline/site_outputs/xanadu/run.log
+
+========================================================================
+RUN FINISHED 2026-06-17 17:29:48  (OK)
+Started:     2026-06-17 17:29:39
+Elapsed:     9s
+========================================================================

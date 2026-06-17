@@ -1,0 +1,321 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+            <script>function neighbourhoodHighlight(params) {
+  // console.log("in nieghbourhoodhighlight");
+  allNodes = nodes.get({ returnType: "Object" });
+  // originalNodes = JSON.parse(JSON.stringify(allNodes));
+  // if something is selected:
+  if (params.nodes.length > 0) {
+    highlightActive = true;
+    var i, j;
+    var selectedNode = params.nodes[0];
+    var degrees = 2;
+
+    // mark all nodes as hard to read.
+    for (let nodeId in allNodes) {
+      // nodeColors[nodeId] = allNodes[nodeId].color;
+      allNodes[nodeId].color = "rgba(200,200,200,0.5)";
+      if (allNodes[nodeId].hiddenLabel === undefined) {
+        allNodes[nodeId].hiddenLabel = allNodes[nodeId].label;
+        allNodes[nodeId].label = undefined;
+      }
+    }
+    var connectedNodes = network.getConnectedNodes(selectedNode);
+    var allConnectedNodes = [];
+
+    // get the second degree nodes
+    for (i = 1; i < degrees; i++) {
+      for (j = 0; j < connectedNodes.length; j++) {
+        allConnectedNodes = allConnectedNodes.concat(
+          network.getConnectedNodes(connectedNodes[j])
+        );
+      }
+    }
+
+    // all second degree nodes get a different color and their label back
+    for (i = 0; i < allConnectedNodes.length; i++) {
+      // allNodes[allConnectedNodes[i]].color = "pink";
+      allNodes[allConnectedNodes[i]].color = "rgba(150,150,150,0.75)";
+      if (allNodes[allConnectedNodes[i]].hiddenLabel !== undefined) {
+        allNodes[allConnectedNodes[i]].label =
+          allNodes[allConnectedNodes[i]].hiddenLabel;
+        allNodes[allConnectedNodes[i]].hiddenLabel = undefined;
+      }
+    }
+
+    // all first degree nodes get their own color and their label back
+    for (i = 0; i < connectedNodes.length; i++) {
+      // allNodes[connectedNodes[i]].color = undefined;
+      allNodes[connectedNodes[i]].color = nodeColors[connectedNodes[i]];
+      if (allNodes[connectedNodes[i]].hiddenLabel !== undefined) {
+        allNodes[connectedNodes[i]].label =
+          allNodes[connectedNodes[i]].hiddenLabel;
+        allNodes[connectedNodes[i]].hiddenLabel = undefined;
+      }
+    }
+
+    // the main node gets its own color and its label back.
+    // allNodes[selectedNode].color = undefined;
+    allNodes[selectedNode].color = nodeColors[selectedNode];
+    if (allNodes[selectedNode].hiddenLabel !== undefined) {
+      allNodes[selectedNode].label = allNodes[selectedNode].hiddenLabel;
+      allNodes[selectedNode].hiddenLabel = undefined;
+    }
+  } else if (highlightActive === true) {
+    // console.log("highlightActive was true");
+    // reset all nodes
+    for (let nodeId in allNodes) {
+      // allNodes[nodeId].color = "purple";
+      allNodes[nodeId].color = nodeColors[nodeId];
+      // delete allNodes[nodeId].color;
+      if (allNodes[nodeId].hiddenLabel !== undefined) {
+        allNodes[nodeId].label = allNodes[nodeId].hiddenLabel;
+        allNodes[nodeId].hiddenLabel = undefined;
+      }
+    }
+    highlightActive = false;
+  }
+
+  // transform the object into an array
+  var updateArray = [];
+  if (params.nodes.length > 0) {
+    for (let nodeId in allNodes) {
+      if (allNodes.hasOwnProperty(nodeId)) {
+        // console.log(allNodes[nodeId]);
+        updateArray.push(allNodes[nodeId]);
+      }
+    }
+    nodes.update(updateArray);
+  } else {
+    // console.log("Nothing was selected");
+    for (let nodeId in allNodes) {
+      if (allNodes.hasOwnProperty(nodeId)) {
+        // console.log(allNodes[nodeId]);
+        // allNodes[nodeId].color = {};
+        updateArray.push(allNodes[nodeId]);
+      }
+    }
+    nodes.update(updateArray);
+  }
+}
+
+function filterHighlight(params) {
+  allNodes = nodes.get({ returnType: "Object" });
+  // if something is selected:
+  if (params.nodes.length > 0) {
+    filterActive = true;
+    let selectedNodes = params.nodes;
+
+    // hiding all nodes and saving the label
+    for (let nodeId in allNodes) {
+      allNodes[nodeId].hidden = true;
+      if (allNodes[nodeId].savedLabel === undefined) {
+        allNodes[nodeId].savedLabel = allNodes[nodeId].label;
+        allNodes[nodeId].label = undefined;
+      }
+    }
+
+    for (let i=0; i < selectedNodes.length; i++) {
+      allNodes[selectedNodes[i]].hidden = false;
+      if (allNodes[selectedNodes[i]].savedLabel !== undefined) {
+        allNodes[selectedNodes[i]].label = allNodes[selectedNodes[i]].savedLabel;
+        allNodes[selectedNodes[i]].savedLabel = undefined;
+      }
+    }
+
+  } else if (filterActive === true) {
+    // reset all nodes
+    for (let nodeId in allNodes) {
+      allNodes[nodeId].hidden = false;
+      if (allNodes[nodeId].savedLabel !== undefined) {
+        allNodes[nodeId].label = allNodes[nodeId].savedLabel;
+        allNodes[nodeId].savedLabel = undefined;
+      }
+    }
+    filterActive = false;
+  }
+
+  // transform the object into an array
+  var updateArray = [];
+  if (params.nodes.length > 0) {
+    for (let nodeId in allNodes) {
+      if (allNodes.hasOwnProperty(nodeId)) {
+        updateArray.push(allNodes[nodeId]);
+      }
+    }
+    nodes.update(updateArray);
+  } else {
+    for (let nodeId in allNodes) {
+      if (allNodes.hasOwnProperty(nodeId)) {
+        updateArray.push(allNodes[nodeId]);
+      }
+    }
+    nodes.update(updateArray);
+  }
+}
+
+function selectNode(nodes) {
+  network.selectNodes(nodes);
+  neighbourhoodHighlight({ nodes: nodes });
+  return nodes;
+}
+
+function selectNodes(nodes) {
+  network.selectNodes(nodes);
+  filterHighlight({nodes: nodes});
+  return nodes;
+}
+
+function highlightFilter(filter) {
+  let selectedNodes = []
+  let selectedProp = filter['property']
+  if (filter['item'] === 'node') {
+    let allNodes = nodes.get({ returnType: "Object" });
+    for (let nodeId in allNodes) {
+      if (allNodes[nodeId][selectedProp] && filter['value'].includes((allNodes[nodeId][selectedProp]).toString())) {
+        selectedNodes.push(nodeId)
+      }
+    }
+  }
+  else if (filter['item'] === 'edge'){
+    let allEdges = edges.get({returnType: 'object'});
+    // check if the selected property exists for selected edge and select the nodes connected to the edge
+    for (let edge in allEdges) {
+      if (allEdges[edge][selectedProp] && filter['value'].includes((allEdges[edge][selectedProp]).toString())) {
+        selectedNodes.push(allEdges[edge]['from'])
+        selectedNodes.push(allEdges[edge]['to'])
+      }
+    }
+  }
+  selectNodes(selectedNodes)
+}</script>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/dist/vis-network.min.css" integrity="sha512-WgxfT5LWjfszlPHXRmBWHkV2eceiWTOBvrKCNbdgDYTHrT2AeLCGbF4sZlZw3UMN3WtL0tGUoIAKsu8mllg/XA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/vis-network.min.js" integrity="sha512-LnvoEWDFrqGHlHmDD2101OrLcbsfkrzoSpvtSQtxK3RMnRV0eOkhhBN2dXHKRrUU8p2DGRTk35n4O8nWSVe1mQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            
+            
+            
+            
+            
+            
+
+        
+<center>
+<h1></h1>
+</center>
+
+<!-- <link rel="stylesheet" href="../node_modules/vis/dist/vis.min.css" type="text/css" />
+<script type="text/javascript" src="../node_modules/vis/dist/vis.js"> </script>-->
+        <link
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+          crossorigin="anonymous"
+        />
+        <script
+          src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+          crossorigin="anonymous"
+        ></script>
+
+
+        <center>
+          <h1></h1>
+        </center>
+        <style type="text/css">
+
+             #mynetwork {
+                 width: 100%;
+                 height: 850px;
+                 background-color: #ffffff;
+                 border: 1px solid lightgray;
+                 position: relative;
+                 float: left;
+             }
+
+             
+
+             
+
+             
+        </style>
+    </head>
+
+
+    <body>
+        <div class="card" style="width: 100%">
+            
+            
+            <div id="mynetwork" class="card-body"></div>
+        </div>
+
+        
+        
+
+        <script type="text/javascript">
+
+              // initialize global variables.
+              var edges;
+              var nodes;
+              var allNodes;
+              var allEdges;
+              var nodeColors;
+              var originalNodes;
+              var network;
+              var container;
+              var options, data;
+              var filter = {
+                  item : '',
+                  property : '',
+                  value : []
+              };
+
+              
+
+              
+
+              // This method is responsible for drawing the graph, returns the drawn network
+              function drawGraph() {
+                  var container = document.getElementById('mynetwork');
+
+                  
+
+                  // parsing and collecting nodes and edges from the python
+                  nodes = new vis.DataSet([{"category": "research institutes", "color": "#4C78A8", "font": {"size": 18}, "helix": "Academia", "id": "cnrs", "label": "CNRS", "shape": "dot", "size": 18, "title": "\u003cb\u003eCNRS\u003c/b\u003e\u003cbr\u003eHelix: Academia\u003cbr\u003eCategory: research institutes\u003cbr\u003eReview: False"}, {"category": "large enterprises", "color": "#F58518", "font": {"size": 18}, "helix": "Industry", "id": "welinq", "label": "Welinq", "shape": "dot", "size": 18, "title": "\u003cb\u003eWelinq\u003c/b\u003e\u003cbr\u003eHelix: Industry\u003cbr\u003eCategory: large enterprises\u003cbr\u003eReview: False"}, {"category": "large enterprises", "color": "#F58518", "font": {"size": 18}, "helix": "Industry", "id": "edf", "label": "EDF", "shape": "dot", "size": 18, "title": "\u003cb\u003eEDF\u003c/b\u003e\u003cbr\u003eHelix: Industry\u003cbr\u003eCategory: large enterprises\u003cbr\u003eReview: False"}, {"category": "large enterprises", "color": "#F58518", "font": {"size": 18}, "helix": "Industry", "id": "pasqal", "label": "Pasqal", "shape": "dot", "size": 18, "title": "\u003cb\u003ePasqal\u003c/b\u003e\u003cbr\u003eHelix: Industry\u003cbr\u003eCategory: large enterprises\u003cbr\u003eReview: False"}, {"category": "large enterprises", "color": "#F58518", "font": {"size": 18}, "helix": "Industry", "id": "quandela", "label": "Quandela", "shape": "dot", "size": 18, "title": "\u003cb\u003eQuandela\u003c/b\u003e\u003cbr\u003eHelix: Industry\u003cbr\u003eCategory: large enterprises\u003cbr\u003eReview: False"}, {"category": "individual", "color": "#F58518", "font": {"size": 18}, "helix": "Industry", "id": "eleni diamanti", "label": "Eleni Diamanti", "shape": "dot", "size": 18, "title": "\u003cb\u003eEleni Diamanti\u003c/b\u003e\u003cbr\u003eHelix: Industry\u003cbr\u003eCategory: individual\u003cbr\u003eReview: True"}, {"category": "supranational government institutions", "color": "#54A24B", "font": {"size": 18}, "helix": "Government", "id": "european union", "label": "European Union", "shape": "dot", "size": 18, "title": "\u003cb\u003eEuropean Union\u003c/b\u003e\u003cbr\u003eHelix: Government\u003cbr\u003eCategory: supranational government institutions\u003cbr\u003eReview: False"}, {"category": "business support institutions", "color": "#E45756", "font": {"size": 18}, "helix": "Intermediary", "id": "quantum internet alliance", "label": "Quantum Internet Alliance (QIA)", "shape": "dot", "size": 18, "title": "\u003cb\u003eQuantum Internet Alliance (QIA)\u003c/b\u003e\u003cbr\u003eHelix: Intermediary\u003cbr\u003eCategory: business support institutions\u003cbr\u003eReview: False"}, {"category": "research institutes", "color": "#4C78A8", "font": {"size": 18}, "helix": "Academia", "id": "institut d optique", "label": "Institut d\u0027Optique", "shape": "dot", "size": 18, "title": "\u003cb\u003eInstitut d\u0027Optique\u003c/b\u003e\u003cbr\u003eHelix: Academia\u003cbr\u003eCategory: research institutes\u003cbr\u003eReview: False"}, {"category": "research institutes", "color": "#4C78A8", "font": {"size": 18}, "helix": "Academia", "id": "institute of physics slovak academy of sciences", "label": "Institute of Physics, Slovak Academy of Sciences (IP SAS)", "shape": "dot", "size": 18, "title": "\u003cb\u003eInstitute of Physics, Slovak Academy of Sciences (IP SAS)\u003c/b\u003e\u003cbr\u003eHelix: Academia\u003cbr\u003eCategory: research institutes\u003cbr\u003eReview: False"}, {"category": "large enterprises", "color": "#F58518", "font": {"size": 18}, "helix": "Industry", "id": "skqci", "label": "SkQCI", "shape": "dot", "size": 18, "title": "\u003cb\u003eSkQCI\u003c/b\u003e\u003cbr\u003eHelix: Industry\u003cbr\u003eCategory: large enterprises\u003cbr\u003eReview: False"}, {"category": "individual", "color": "#999999", "font": {"size": 18}, "helix": "Unknown", "id": "jean lautier gaud", "label": "Jean Lautier-Gaud", "shape": "dot", "size": 18, "title": "\u003cb\u003eJean Lautier-Gaud\u003c/b\u003e\u003cbr\u003eHelix: Unknown\u003cbr\u003eCategory: individual\u003cbr\u003eReview: True"}, {"category": "entrepreneurial scientist", "color": "#E45756", "font": {"size": 18}, "helix": "Intermediary", "id": "julien laurat", "label": "Julien Laurat", "shape": "dot", "size": 18, "title": "\u003cb\u003eJulien Laurat\u003c/b\u003e\u003cbr\u003eHelix: Intermediary\u003cbr\u003eCategory: entrepreneurial scientist\u003cbr\u003eReview: False"}, {"category": "large enterprises", "color": "#F58518", "font": {"size": 18}, "helix": "Industry", "id": "ovhcloud", "label": "OVHcloud", "shape": "dot", "size": 18, "title": "\u003cb\u003eOVHcloud\u003c/b\u003e\u003cbr\u003eHelix: Industry\u003cbr\u003eCategory: large enterprises\u003cbr\u003eReview: False"}, {"category": "country", "color": "#F58518", "font": {"size": 18}, "helix": "Industry", "id": "france", "label": "France", "shape": "dot", "size": 18, "title": "\u003cb\u003eFrance\u003c/b\u003e\u003cbr\u003eHelix: Industry\u003cbr\u003eCategory: country\u003cbr\u003eReview: False"}, {"category": "individual", "color": "#999999", "font": {"size": 18}, "helix": "Unknown", "id": "prof pascale senellart", "label": "Prof. Pascale Senellart", "shape": "dot", "size": 18, "title": "\u003cb\u003eProf. Pascale Senellart\u003c/b\u003e\u003cbr\u003eHelix: Unknown\u003cbr\u003eCategory: individual\u003cbr\u003eReview: True"}, {"category": "large enterprises", "color": "#F58518", "font": {"size": 18}, "helix": "Industry", "id": "qphox", "label": "Qphox", "shape": "dot", "size": 18, "title": "\u003cb\u003eQphox\u003c/b\u003e\u003cbr\u003eHelix: Industry\u003cbr\u003eCategory: large enterprises\u003cbr\u003eReview: False"}, {"category": "universities", "color": "#4C78A8", "font": {"size": 18}, "helix": "Academia", "id": "sorbonne universit", "label": "Sorbonne Universit\u00e9", "shape": "dot", "size": 18, "title": "\u003cb\u003eSorbonne Universit\u00e9\u003c/b\u003e\u003cbr\u003eHelix: Academia\u003cbr\u003eCategory: universities\u003cbr\u003eReview: False"}, {"category": "research institutes", "color": "#4C78A8", "font": {"size": 18}, "helix": "Academia", "id": "slovak national center for quantum technologies", "label": "Slovak National Center for Quantum Technologies (QUTE.sk)", "shape": "dot", "size": 18, "title": "\u003cb\u003eSlovak National Center for Quantum Technologies (QUTE.sk)\u003c/b\u003e\u003cbr\u003eHelix: Academia\u003cbr\u003eCategory: research institutes\u003cbr\u003eReview: False"}, {"category": "entrepreneurial scientist", "color": "#E45756", "font": {"size": 18}, "helix": "Intermediary", "id": "tom darras", "label": "Tom Darras", "shape": "dot", "size": 18, "title": "\u003cb\u003eTom Darras\u003c/b\u003e\u003cbr\u003eHelix: Intermediary\u003cbr\u003eCategory: entrepreneurial scientist\u003cbr\u003eReview: False"}, {"category": "corporate labs", "color": "#F58518", "font": {"size": 18}, "helix": "Industry", "id": "welinq s algorithm team", "label": "Welinq\u0027s algorithm team", "shape": "dot", "size": 18, "title": "\u003cb\u003eWelinq\u0027s algorithm team\u003c/b\u003e\u003cbr\u003eHelix: Industry\u003cbr\u003eCategory: corporate labs\u003cbr\u003eReview: False"}, {"category": "individual", "color": "#999999", "font": {"size": 18}, "helix": "Unknown", "id": "adrien bensemhoun", "label": "Adrien Bensemhoun", "shape": "dot", "size": 18, "title": "\u003cb\u003eAdrien Bensemhoun\u003c/b\u003e\u003cbr\u003eHelix: Unknown\u003cbr\u003eCategory: individual\u003cbr\u003eReview: True"}, {"category": "non-governmental and non-profit organizations", "color": "#B279A2", "font": {"size": 18}, "helix": "Civil Society", "id": "american physical society", "label": "American Physical Society", "shape": "dot", "size": 18, "title": "\u003cb\u003eAmerican Physical Society\u003c/b\u003e\u003cbr\u003eHelix: Civil Society\u003cbr\u003eCategory: non-governmental and non-profit organizations\u003cbr\u003eReview: False"}, {"category": "individual", "color": "#999999", "font": {"size": 18}, "helix": "Unknown", "id": "charles alca d", "label": "Charles Alca\u00efd\u00e9", "shape": "dot", "size": 18, "title": "\u003cb\u003eCharles Alca\u00efd\u00e9\u003c/b\u003e\u003cbr\u003eHelix: Unknown\u003cbr\u003eCategory: individual\u003cbr\u003eReview: True"}, {"category": "supranational government institutions", "color": "#54A24B", "font": {"size": 18}, "helix": "Government", "id": "european innovation council", "label": "European Innovation Council", "shape": "dot", "size": 18, "title": "\u003cb\u003eEuropean Innovation Council\u003c/b\u003e\u003cbr\u003eHelix: Government\u003cbr\u003eCategory: supranational government institutions\u003cbr\u003eReview: False"}, {"category": "individual", "color": "#999999", "font": {"size": 18}, "helix": "Unknown", "id": "ferhat loubar", "label": "Ferhat Loubar", "shape": "dot", "size": 18, "title": "\u003cb\u003eFerhat Loubar\u003c/b\u003e\u003cbr\u003eHelix: Unknown\u003cbr\u003eCategory: individual\u003cbr\u003eReview: True"}, {"category": "national government institutions", "color": "#54A24B", "font": {"size": 18}, "helix": "Government", "id": "france 2030", "label": "France 2030", "shape": "dot", "size": 18, "title": "\u003cb\u003eFrance 2030\u003c/b\u003e\u003cbr\u003eHelix: Government\u003cbr\u003eCategory: national government institutions\u003cbr\u003eReview: False"}, {"category": "individual", "color": "#999999", "font": {"size": 18}, "helix": "Unknown", "id": "gonz lez ruiz", "label": "Gonz\u00e1lez Ruiz", "shape": "dot", "size": 18, "title": "\u003cb\u003eGonz\u00e1lez Ruiz\u003c/b\u003e\u003cbr\u003eHelix: Unknown\u003cbr\u003eCategory: individual\u003cbr\u003eReview: True"}, {"category": "universities", "color": "#4C78A8", "font": {"size": 18}, "helix": "Academia", "id": "institut d optique universit paris saclay", "label": "Institut d\u0027Optique-Universit\u00e9 Paris-Saclay", "shape": "dot", "size": 18, "title": "\u003cb\u003eInstitut d\u0027Optique-Universit\u00e9 Paris-Saclay\u003c/b\u003e\u003cbr\u003eHelix: Academia\u003cbr\u003eCategory: universities\u003cbr\u003eReview: False"}, {"category": "small and medium-sized enterprises", "color": "#F58518", "font": {"size": 18}, "helix": "Industry", "id": "iqm", "label": "IQM", "shape": "dot", "size": 18, "title": "\u003cb\u003eIQM\u003c/b\u003e\u003cbr\u003eHelix: Industry\u003cbr\u003eCategory: small and medium-sized enterprises\u003cbr\u003eReview: False"}, {"category": "non-governmental and non-profit organizations", "color": "#B279A2", "font": {"size": 18}, "helix": "Civil Society", "id": "japan society for the promotion of science", "label": "Japan Society for the Promotion of Science", "shape": "dot", "size": 18, "title": "\u003cb\u003eJapan Society for the Promotion of Science\u003c/b\u003e\u003cbr\u003eHelix: Civil Society\u003cbr\u003eCategory: non-governmental and non-profit organizations\u003cbr\u003eReview: False"}, {"category": "research institutes", "color": "#4C78A8", "font": {"size": 18}, "helix": "Academia", "id": "national institute of informatics", "label": "National Institute of Informatics", "shape": "dot", "size": 18, "title": "\u003cb\u003eNational Institute of Informatics\u003c/b\u003e\u003cbr\u003eHelix: Academia\u003cbr\u003eCategory: research institutes\u003cbr\u003eReview: False"}, {"category": "universities", "color": "#4C78A8", "font": {"size": 18}, "helix": "Academia", "id": "oist graduate university", "label": "OIST Graduate University", "shape": "dot", "size": 18, "title": "\u003cb\u003eOIST Graduate University\u003c/b\u003e\u003cbr\u003eHelix: Academia\u003cbr\u003eCategory: universities\u003cbr\u003eReview: False"}, {"category": "individual", "color": "#999999", "font": {"size": 18}, "helix": "Unknown", "id": "prof alain aspect", "label": "Prof. Alain Aspect", "shape": "dot", "size": 18, "title": "\u003cb\u003eProf. Alain Aspect\u003c/b\u003e\u003cbr\u003eHelix: Unknown\u003cbr\u003eCategory: individual\u003cbr\u003eReview: True"}, {"category": "individual", "color": "#999999", "font": {"size": 18}, "helix": "Unknown", "id": "prof artur ekert", "label": "Prof. Artur Ekert", "shape": "dot", "size": 18, "title": "\u003cb\u003eProf. Artur Ekert\u003c/b\u003e\u003cbr\u003eHelix: Unknown\u003cbr\u003eCategory: individual\u003cbr\u003eReview: True"}, {"category": "individual", "color": "#B279A2", "font": {"size": 18}, "helix": "Civil Society", "id": "prof kae nemoto", "label": "Prof. Kae Nemoto", "shape": "dot", "size": 18, "title": "\u003cb\u003eProf. Kae Nemoto\u003c/b\u003e\u003cbr\u003eHelix: Civil Society\u003cbr\u003eCategory: individual\u003cbr\u003eReview: True"}, {"category": "individual", "color": "#999999", "font": {"size": 18}, "helix": "Unknown", "id": "prof peter zoller", "label": "Prof. Peter Zoller", "shape": "dot", "size": 18, "title": "\u003cb\u003eProf. Peter Zoller\u003c/b\u003e\u003cbr\u003eHelix: Unknown\u003cbr\u003eCategory: individual\u003cbr\u003eReview: True"}, {"category": "individual", "color": "#4C78A8", "font": {"size": 18}, "helix": "Academia", "id": "professor artur ekert", "label": "Professor Artur Ekert", "shape": "dot", "size": 18, "title": "\u003cb\u003eProfessor Artur Ekert\u003c/b\u003e\u003cbr\u003eHelix: Academia\u003cbr\u003eCategory: individual\u003cbr\u003eReview: True"}, {"category": "non-government", "color": "#B279A2", "font": {"size": 18}, "helix": "Civil Society", "id": "royal society", "label": "Royal Society", "shape": "dot", "size": 18, "title": "\u003cb\u003eRoyal Society\u003c/b\u003e\u003cbr\u003eHelix: Civil Society\u003cbr\u003eCategory: non-government\u003cbr\u003eReview: False"}, {"category": "individual", "color": "#999999", "font": {"size": 18}, "helix": "Unknown", "id": "s siddardha chelluri", "label": "S. Siddardha Chelluri", "shape": "dot", "size": 18, "title": "\u003cb\u003eS. Siddardha Chelluri\u003c/b\u003e\u003cbr\u003eHelix: Unknown\u003cbr\u003eCategory: individual\u003cbr\u003eReview: True"}, {"category": "individual", "color": "#999999", "font": {"size": 18}, "helix": "Unknown", "id": "simon f cherolle", "label": "Simon F\u00e9cherolle", "shape": "dot", "size": 18, "title": "\u003cb\u003eSimon F\u00e9cherolle\u003c/b\u003e\u003cbr\u003eHelix: Unknown\u003cbr\u003eCategory: individual\u003cbr\u003eReview: True"}, {"category": "individual", "color": "#999999", "font": {"size": 18}, "helix": "Unknown", "id": "thomas nieddu", "label": "Thomas Nieddu", "shape": "dot", "size": 18, "title": "\u003cb\u003eThomas Nieddu\u003c/b\u003e\u003cbr\u003eHelix: Unknown\u003cbr\u003eCategory: individual\u003cbr\u003eReview: True"}, {"category": "universities", "color": "#4C78A8", "font": {"size": 18}, "helix": "Academia", "id": "university of oxford", "label": "University of Oxford", "shape": "dot", "size": 18, "title": "\u003cb\u003eUniversity of Oxford\u003c/b\u003e\u003cbr\u003eHelix: Academia\u003cbr\u003eCategory: universities\u003cbr\u003eReview: False"}, {"category": "large enterprises", "color": "#F58518", "font": {"size": 18}, "helix": "Industry", "id": "webflow inc", "label": "Webflow Inc.", "shape": "dot", "size": 18, "title": "\u003cb\u003eWebflow Inc.\u003c/b\u003e\u003cbr\u003eHelix: Industry\u003cbr\u003eCategory: large enterprises\u003cbr\u003eReview: False"}]);
+                  edges = new vis.DataSet([{"arrows": "to", "color": "#2563EB", "from": "cnrs", "label": "collaborative_leadership", "title": "\u003cb\u003ecollaborative_leadership\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Innovation\u003cbr\u003ePage: 5\u003cbr\u003ePhrase: spin-off", "to": "welinq", "width": 2}, {"arrows": "to", "color": "#2563EB", "from": "edf", "label": "collaborative_leadership", "title": "\u003cb\u003ecollaborative_leadership\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Intra-helix / Not classified\u003cbr\u003ePage: 3\u003cbr\u003ePhrase: joined by key players in the quantum ecosystem: Pasqal", "to": "pasqal", "width": 2}, {"arrows": "to", "color": "#2563EB", "from": "edf", "label": "collaborative_leadership", "title": "\u003cb\u003ecollaborative_leadership\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Intra-helix / Not classified\u003cbr\u003ePage: 3\u003cbr\u003ePhrase: joined by key players in the quantum ecosystem: Quandela", "to": "quandela", "width": 2}, {"arrows": "to", "color": "#2563EB", "from": "eleni diamanti", "label": "collaborative_leadership", "title": "\u003cb\u003ecollaborative_leadership\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Intra-helix / Not classified\u003cbr\u003ePage: 5\u003cbr\u003ePhrase: founded in 2022 by Dr. Eleni Diamanti", "to": "welinq", "width": 2}, {"arrows": "to", "color": "#2563EB", "from": "european union", "label": "collaborative_leadership", "title": "\u003cb\u003ecollaborative_leadership\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Consensus\u003cbr\u003ePage: 6\u003cbr\u003ePhrase: supports large-scale initiatives", "to": "quantum internet alliance", "width": 2}, {"arrows": "to", "color": "#2563EB", "from": "institut d optique", "label": "collaborative_leadership", "title": "\u003cb\u003ecollaborative_leadership\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Innovation\u003cbr\u003ePage: 6\u003cbr\u003ePhrase: founded", "to": "pasqal", "width": 2}, {"arrows": "to", "color": "#2563EB", "from": "institute of physics slovak academy of sciences", "label": "collaborative_leadership", "title": "\u003cb\u003ecollaborative_leadership\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Innovation\u003cbr\u003ePage: 4\u003cbr\u003ePhrase: Led by", "to": "skqci", "width": 2}, {"arrows": "to", "color": "#2563EB", "from": "jean lautier gaud", "label": "collaborative_leadership", "title": "\u003cb\u003ecollaborative_leadership\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Unknown\u003cbr\u003ePage: 5\u003cbr\u003ePhrase: founded in 2022 by Jean Lautier-Gaud", "to": "welinq", "width": 2}, {"arrows": "to", "color": "#2563EB", "from": "julien laurat", "label": "collaborative_leadership", "title": "\u003cb\u003ecollaborative_leadership\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Innovation\u003cbr\u003ePage: 5\u003cbr\u003ePhrase: founded in 2022 by Prof. Julien Laurat", "to": "welinq", "width": 2}, {"arrows": "to", "color": "#6B7280", "from": "ovhcloud", "label": "networking", "title": "\u003cb\u003enetworking\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Intra-helix / Not classified\u003cbr\u003ePage: 12\u003cbr\u003ePhrase: Partner on Networked Quantum Computing Architectures", "to": "welinq", "width": 2}, {"arrows": "to", "color": "#D97706", "from": "pasqal", "label": "technology_transfer", "title": "\u003cb\u003etechnology_transfer\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Intra-helix / Not classified\u003cbr\u003ePage: 8\u003cbr\u003ePhrase: Pasqal\u2013Welinq partnership", "to": "welinq", "width": 2}, {"arrows": "to", "color": "#2563EB", "from": "pasqal", "label": "collaborative_leadership", "title": "\u003cb\u003ecollaborative_leadership\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Innovation\u003cbr\u003ePage: 5\u003cbr\u003ePhrase: founded in 2019, out of the Institut d\u0027Optique", "to": "institut d optique", "width": 2}, {"arrows": "to", "color": "#2563EB", "from": "pasqal", "label": "collaborative_leadership", "title": "\u003cb\u003ecollaborative_leadership\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Intra-helix / Not classified\u003cbr\u003ePage: 5\u003cbr\u003ePhrase: operating two quantum manufacturing facilities in France", "to": "france", "width": 2}, {"arrows": "to", "color": "#2563EB", "from": "prof pascale senellart", "label": "collaborative_leadership", "title": "\u003cb\u003ecollaborative_leadership\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Unknown\u003cbr\u003ePage: 6\u003cbr\u003ePhrase: Founded in 2017 by Prof. Pascale Senellart", "to": "quandela", "width": 2}, {"arrows": "to", "color": "#6B7280", "from": "qphox", "label": "networking", "title": "\u003cb\u003enetworking\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Innovation\u003cbr\u003ePage: 3\u003cbr\u003ePhrase: working on bringing these technologies together with our world-leading partners", "to": "sorbonne universit", "width": 2}, {"arrows": "to", "color": "#6B7280", "from": "qphox", "label": "networking", "title": "\u003cb\u003enetworking\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Intra-helix / Not classified\u003cbr\u003ePage: 3\u003cbr\u003ePhrase: working on bringing these technologies together with our world-leading partners", "to": "welinq", "width": 2}, {"arrows": "to", "color": "#6B7280", "from": "quandela", "label": "networking", "title": "\u003cb\u003enetworking\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Intra-helix / Not classified\u003cbr\u003ePage: 5\u003cbr\u003ePhrase: this partnership", "to": "welinq", "width": 2}, {"arrows": "to", "color": "#2563EB", "from": "slovak national center for quantum technologies", "label": "collaborative_leadership", "title": "\u003cb\u003ecollaborative_leadership\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Innovation\u003cbr\u003ePage: 4\u003cbr\u003ePhrase: with the support of", "to": "skqci", "width": 2}, {"arrows": "to", "color": "#2563EB", "from": "sorbonne universit", "label": "collaborative_leadership", "title": "\u003cb\u003ecollaborative_leadership\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Innovation\u003cbr\u003ePage: 5\u003cbr\u003ePhrase: spin-off", "to": "welinq", "width": 2}, {"arrows": "to", "color": "#2563EB", "from": "tom darras", "label": "collaborative_leadership", "title": "\u003cb\u003ecollaborative_leadership\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Innovation\u003cbr\u003ePage: 5\u003cbr\u003ePhrase: founded in 2022 by Tom Darras", "to": "welinq", "width": 2}, {"arrows": "to", "color": "#6B7280", "from": "welinq", "label": "networking", "title": "\u003cb\u003enetworking\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Intra-helix / Not classified\u003cbr\u003ePage: 9\u003cbr\u003ePhrase: Welinq and OVHCloud Partner", "to": "ovhcloud", "width": 2}, {"arrows": "to", "color": "#2563EB", "from": "welinq", "label": "collaborative_leadership", "title": "\u003cb\u003ecollaborative_leadership\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Intra-helix / Not classified\u003cbr\u003ePage: 3\u003cbr\u003ePhrase: bilateral industrial partnership", "to": "pasqal", "width": 2}, {"arrows": "to", "color": "#2563EB", "from": "welinq", "label": "collaborative_leadership", "title": "\u003cb\u003ecollaborative_leadership\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Innovation\u003cbr\u003ePage: 5\u003cbr\u003ePhrase: spin-out from Sorbonne Universit\u00e9", "to": "sorbonne universit", "width": 2}, {"arrows": "to", "color": "#2563EB", "from": "welinq", "label": "collaborative_leadership", "title": "\u003cb\u003ecollaborative_leadership\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Innovation\u003cbr\u003ePage: 5\u003cbr\u003ePhrase: spin-out from CNRS", "to": "cnrs", "width": 2}, {"arrows": "to", "color": "#2563EB", "from": "welinq", "label": "collaborative_leadership", "title": "\u003cb\u003ecollaborative_leadership\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Intra-helix / Not classified\u003cbr\u003ePage: 3\u003cbr\u003ePhrase: Paris, France", "to": "france", "width": 2}, {"arrows": "to", "color": "#2563EB", "from": "welinq", "label": "collaborative_leadership", "title": "\u003cb\u003ecollaborative_leadership\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Intra-helix / Not classified\u003cbr\u003ePage: 5\u003cbr\u003ePhrase: a key member", "to": "quandela", "width": 2}, {"arrows": "to", "color": "#6B7280", "from": "welinq", "label": "networking", "title": "\u003cb\u003enetworking\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Intra-helix / Not classified\u003cbr\u003ePage: 3\u003cbr\u003ePhrase: deepen our collaboration", "to": "qphox", "width": 2}, {"arrows": "to", "color": "#D97706", "from": "welinq", "label": "technology_transfer", "title": "\u003cb\u003etechnology_transfer\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Innovation\u003cbr\u003ePage: 3\u003cbr\u003ePhrase: the sale of QDrive, its commercial record-breaking quantum memory to the Institute", "to": "institute of physics slovak academy of sciences", "width": 2}, {"arrows": "to", "color": "#6B7280", "from": "welinq", "label": "networking", "title": "\u003cb\u003enetworking\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Innovation\u003cbr\u003ePage: 5\u003cbr\u003ePhrase: research supported by the Quantum Internet Alliance", "to": "quantum internet alliance", "width": 2}, {"arrows": "to", "color": "#2563EB", "from": "welinq", "label": "collaborative_leadership", "title": "\u003cb\u003ecollaborative_leadership\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Intra-helix / Not classified\u003cbr\u003ePage: 5\u003cbr\u003ePhrase: a federating initiative led by Welinq and EDF", "to": "edf", "width": 2}, {"arrows": "to", "color": "#2563EB", "from": "welinq", "label": "collaborative_leadership", "title": "\u003cb\u003ecollaborative_leadership\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Intra-helix / Not classified\u003cbr\u003ePage: 7\u003cbr\u003ePhrase: commercial delivery", "to": "skqci", "width": 2}, {"arrows": "to", "color": "#2563EB", "from": "welinq", "label": "collaborative_leadership", "title": "\u003cb\u003ecollaborative_leadership\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Consensus\u003cbr\u003ePage: 3\u003cbr\u003ePhrase: support from the European Union", "to": "european union", "width": 2}, {"arrows": "to", "color": "#D97706", "from": "welinq s algorithm team", "label": "technology_transfer", "title": "\u003cb\u003etechnology_transfer\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Intra-helix / Not classified\u003cbr\u003ePage: 3\u003cbr\u003ePhrase: developed by Welinq\u0027s algorithm team", "to": "welinq", "width": 2}]);
+
+                  nodeColors = {};
+                  allNodes = nodes.get({ returnType: "Object" });
+                  for (nodeId in allNodes) {
+                    nodeColors[nodeId] = allNodes[nodeId].color;
+                  }
+                  allEdges = edges.get({ returnType: "Object" });
+                  // adding nodes and edges to the graph
+                  data = {nodes: nodes, edges: edges};
+
+                  var options = {"physics": {"barnesHut": {"gravitationalConstant": -8000, "centralGravity": 0.3, "springLength": 180, "springConstant": 0.04}, "minVelocity": 0.75}, "interaction": {"hover": true, "navigationButtons": true, "keyboard": true}};
+
+                  
+
+
+                  
+
+                  network = new vis.Network(container, data, options);
+
+                  
+
+                  
+
+                  
+
+
+                  
+
+                  return network;
+
+              }
+              drawGraph();
+        </script>
+    </body>
+</html>

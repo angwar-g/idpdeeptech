@@ -1,0 +1,66 @@
+
+========================================================================
+SITE BATCH RUN  2026-06-17 09:09:29
+========================================================================
+  Config file:    /home/lv/IDP/idpdeeptech/pipeline/site_input/companies.json
+  Documents:      81
+  Workers:        4
+  Crawl depth:    3
+  Max pages:      20
+  Force redo:     False
+  Batch log:      /home/lv/IDP/idpdeeptech/pipeline/site_outputs/batch_logs/batch_20260617_090929.log
+========================================================================
+
+[1/81] Amazon Braket: skipping (already done; pass --force to redo)
+[2/81] D-Wave Systems: skipping (already done; pass --force to redo)
+[3/81] Ibm: skipping (already done; pass --force to redo)
+[4/81] Ionq: skipping (already done; pass --force to redo)
+[5/81] Google Quantum Ai: skipping (already done; pass --force to redo)
+[6/81] Microsoft: skipping (already done; pass --force to redo)
+[7/81] Quantum Computing Inc.: skipping (already done; pass --force to redo)
+[8/81] Rigetti Computing: skipping (already done; pass --force to redo)
+[9/81] 1Qbit: skipping (already done; pass --force to redo)
+[10/81] Alice & Bob: skipping (already done; pass --force to redo)
+[11/81] Alpine Quantum Technologies (Aqt): skipping (already done; pass --force to redo)
+[12/81] Anyon Systems: skipping (already done; pass --force to redo)
+[13/81] Atom Computing: skipping (already done; pass --force to redo)
+[14/81] Bluequbit: skipping (already done; pass --force to redo)
+[15/81] Bosonq Psi: skipping (already done; pass --force to redo)
+[16/81] Classiq: skipping (already done; pass --force to redo)
+[17/81] Crypto Quantique: skipping (already done; pass --force to redo)
+[18/81] Delft Circuits: skipping (already done; pass --force to redo)
+[19/81] Diraq: skipping (already done; pass --force to redo)
+[20/81] Eeroq: skipping (already done; pass --force to redo)
+[21/81] Eleqtron: skipping (already done; pass --force to redo)
+[22/81] Evolutionq: skipping (already done; pass --force to redo)
+[23/81] Horizon Quantum Computing: skipping (already done; pass --force to redo)
+[24/81] Hqs Quantum Simulations: skipping (already done; pass --force to redo)
+[26/81] Infleqtion: skipping (already done; pass --force to redo)
+[27/81] Iqm: skipping (already done; pass --force to redo)
+[28/81] Kets Quantum Security: skipping (already done; pass --force to redo)
+[29/81] Kiutra: skipping (already done; pass --force to redo)
+[30/81] Multiverse Computing: skipping (already done; pass --force to redo)
+[32/81] Orca Computing: skipping (already done; pass --force to redo)
+[33/81] Oxford Quantum Circuits (Oqc): skipping (already done; pass --force to redo)
+[34/81] Parityqc: skipping (already done; pass --force to redo)
+[35/81] Pasqal: skipping (already done; pass --force to redo)
+[36/81] Photonic Inc.: skipping (already done; pass --force to redo)
+[37/81] Pqshield: skipping (already done; pass --force to redo)
+[38/81] Proteinqure: skipping (already done; pass --force to redo)
+[39/81] Qaisec: skipping (already done; pass --force to redo)
+[40/81] Psiquantum: skipping (already done; pass --force to redo)
+[41/81] Q-Ctrl: skipping (already done; pass --force to redo)
+[42/81] Qc Ware: skipping (already done; pass --force to redo)
+[43/81] Qruise: skipping (already done; pass --force to redo)
+[44/81] Qsimulate: skipping (already done; pass --force to redo)
+[46/81] Quantfi: skipping (already done; pass --force to redo)
+[47/81] Quantistry: skipping (already done; pass --force to redo)
+
+Running 37 company pipeline(s) with 4 workers...
+Note: parallel terminal output interleaves. Each company's clean trace is in its own site_outputs/<slug>/website/run.log
+
+  FAILED: [25/81] Infinityq -- site_pipeline exited with code 1
+  FAILED: [31/81] Nord Quantique -- site_pipeline exited with code 1
+  DONE: [49/81] Quantum Brilliance
+  DONE: [48/81] Quantum Base
+  DONE: [51/81] Quantum Dice

@@ -1,0 +1,688 @@
+
+========================================================================
+RUN STARTED  2026-06-17 14:09:22
+site_pipeline.py https://www.spinquanta.com/
+========================================================================
+
+[14:09:22 +0s | spinquanta] === 0 crawl site ===
+[14:09:26 +4s | spinquanta] [INIT].... → Crawl4AI 0.8.6 
+[14:09:29 +7s | spinquanta] [FETCH]... ↓ https://www.spinquanta.com/                                                                          | ✓ | ⏱: 2.72s 
+[14:09:29 +7s | spinquanta] [SCRAPE].. ◆ https://www.spinquanta.com/                                                                          | ✓ | ⏱: 0.05s 
+[14:09:29 +7s | spinquanta] [COMPLETE] ● https://www.spinquanta.com/                                                                          | ✓ | ⏱: 2.80s 
+[14:09:29 +7s | spinquanta] Invalid URL: javasciprt:void(0), error: Missing scheme or netloc
+[14:09:30 +8s | spinquanta] [FETCH]... ↓ https://www.spinquanta.com/                                                                          | ✓ | ⏱: 1.62s 
+[14:09:31 +8s | spinquanta] [SCRAPE].. ◆ https://www.spinquanta.com/                                                                          | ✓ | ⏱: 0.06s 
+[14:09:31 +8s | spinquanta] [COMPLETE] ● https://www.spinquanta.com/                                                                          | ✓ | ⏱: 1.71s 
+[14:09:32 +9s | spinquanta] [FETCH]... ↓ https://www.spinquanta.com/private-policy                                                            | ✓ | ⏱: 2.31s 
+[14:09:32 +10s | spinquanta] [SCRAPE].. ◆ https://www.spinquanta.com/private-policy                                                            | ✓ | ⏱: 0.06s 
+[14:09:32 +10s | spinquanta] [COMPLETE] ● https://www.spinquanta.com/private-policy                                                            | ✓ | ⏱: 2.40s 
+[14:09:32 +10s | spinquanta] [FETCH]... ↓ https://www.spinquanta.com/about-us                                                                  | ✓ | ⏱: 2.43s 
+[14:09:32 +10s | spinquanta] [SCRAPE].. ◆ https://www.spinquanta.com/about-us                                                                  | ✓ | ⏱: 0.07s 
+[14:09:32 +10s | spinquanta] [COMPLETE] ● https://www.spinquanta.com/about-us                                                                  | ✓ | ⏱: 2.52s 
+[14:09:32 +10s | spinquanta] [FETCH]... ↓ https://www.spinquanta.com/term                                                                      | ✓ | ⏱: 2.57s 
+[14:09:32 +10s | spinquanta] [SCRAPE].. ◆ https://www.spinquanta.com/term                                                                      | ✓ | ⏱: 0.04s 
+[14:09:32 +10s | spinquanta] [COMPLETE] ● https://www.spinquanta.com/term                                                                      | ✓ | ⏱: 2.64s 
+[14:09:32 +10s | spinquanta] [FETCH]... ↓ https://www.spinquanta.com/products/quantum-computing-software                                       | ✓ | ⏱: 2.67s 
+[14:09:32 +10s | spinquanta] [SCRAPE].. ◆ https://www.spinquanta.com/products/quantum-computing-software                                       | ✓ | ⏱: 0.05s 
+[14:09:32 +10s | spinquanta] [COMPLETE] ● https://www.spinquanta.com/products/quantum-computing-software                                       | ✓ | ⏱: 2.75s 
+[14:09:32 +10s | spinquanta] [FETCH]... ↓ https://www.spinquanta.com/news/media-coverage                                                       | ✓ | ⏱: 2.80s 
+[14:09:32 +10s | spinquanta] [SCRAPE].. ◆ https://www.spinquanta.com/news/media-coverage                                                       | ✓ | ⏱: 0.07s 
+[14:09:32 +10s | spinquanta] [COMPLETE] ● https://www.spinquanta.com/news/media-coverage                                                       | ✓ | ⏱: 2.94s 
+[14:09:32 +10s | spinquanta] [FETCH]... ↓ https://www.spinquanta.com/products/superconducting-quantum-products                                 | ✓ | ⏱: 2.92s 
+[14:09:32 +10s | spinquanta] [SCRAPE].. ◆ https://www.spinquanta.com/products/superconducting-quantum-products                                 | ✓ | ⏱: 0.05s 
+[14:09:32 +10s | spinquanta] [COMPLETE] ● https://www.spinquanta.com/products/superconducting-quantum-products                                 | ✓ | ⏱: 3.01s 
+[14:09:32 +10s | spinquanta] [FETCH]... ↓ https://www.spinquanta.com/products/nmr-quantum-products                                             | ✓ | ⏱: 2.98s 
+[14:09:32 +10s | spinquanta] [SCRAPE].. ◆ https://www.spinquanta.com/products/nmr-quantum-products                                             | ✓ | ⏱: 0.06s 
+[14:09:32 +10s | spinquanta] [COMPLETE] ● https://www.spinquanta.com/products/nmr-quantum-products                                             | ✓ | ⏱: 3.08s 
+[14:09:33 +11s | spinquanta] [FETCH]... ↓ https://www.spinquanta.com/contact-us                                                                | ✓ | ⏱: 3.49s 
+[14:09:33 +11s | spinquanta] [SCRAPE].. ◆ https://www.spinquanta.com/contact-us                                                                | ✓ | ⏱: 0.16s 
+[14:09:33 +11s | spinquanta] [COMPLETE] ● https://www.spinquanta.com/contact-us                                                                | ✓ | ⏱: 3.68s 
+[14:09:33 +11s | spinquanta] [FETCH]... ↓ https://www.spinquanta.com/news-detail/spinq-qua...s-showcased-in-europe-and-southeast-asia20260605  | ✓ | ⏱: 4.27s 
+[14:09:34 +11s | spinquanta] [SCRAPE].. ◆ https://www.spinquanta.com/news-detail/spinq-qua...s-showcased-in-europe-and-southeast-asia20260605  | ✓ | ⏱: 0.10s 
+[14:09:34 +12s | spinquanta] [COMPLETE] ● https://www.spinquanta.com/news-detail/spinq-qua...s-showcased-in-europe-and-southeast-asia20260605  | ✓ | ⏱: 4.41s 
+[14:09:34 +12s | spinquanta] [FETCH]... ↓ https://www.spinquanta.com/news-detail/spinq-and...int-research-on-quantum-error-correction20260423  | ✓ | ⏱: 4.40s 
+[14:09:34 +12s | spinquanta] [SCRAPE].. ◆ https://www.spinquanta.com/news-detail/spinq-and...int-research-on-quantum-error-correction20260423  | ✓ | ⏱: 0.11s 
+[14:09:34 +12s | spinquanta] [COMPLETE] ● https://www.spinquanta.com/news-detail/spinq-and...int-research-on-quantum-error-correction20260423  | ✓ | ⏱: 4.55s 
+[14:09:34 +12s | spinquanta] [FETCH]... ↓ https://www.spinquanta.com/news/blog                                                                 | ✓ | ⏱: 4.79s 
+[14:09:34 +12s | spinquanta] [SCRAPE].. ◆ https://www.spinquanta.com/news/blog                                                                 | ✓ | ⏱: 0.09s 
+[14:09:34 +12s | spinquanta] [COMPLETE] ● https://www.spinquanta.com/news/blog                                                                 | ✓ | ⏱: 4.96s 
+[14:09:34 +12s | spinquanta] [FETCH]... ↓ https://www.spinquanta.com/news-detail/spinq-and...lished-in-quantum-information-processing20260525  | ✓ | ⏱: 4.97s 
+[14:09:34 +12s | spinquanta] [SCRAPE].. ◆ https://www.spinquanta.com/news-detail/spinq-and...lished-in-quantum-information-processing20260525  | ✓ | ⏱: 0.05s 
+[14:09:34 +12s | spinquanta] [COMPLETE] ● https://www.spinquanta.com/news-detail/spinq-and...lished-in-quantum-information-processing20260525  | ✓ | ⏱: 5.03s 
+[14:09:34 +12s | spinquanta] [FETCH]... ↓ https://www.spinquanta.com/quantum-computing-solutions/biomedince                                    | ✓ | ⏱: 5.04s 
+[14:09:34 +12s | spinquanta] [SCRAPE].. ◆ https://www.spinquanta.com/quantum-computing-solutions/biomedince                                    | ✓ | ⏱: 0.15s 
+[14:09:34 +12s | spinquanta] [COMPLETE] ● https://www.spinquanta.com/quantum-computing-solutions/biomedince                                    | ✓ | ⏱: 5.22s 
+[14:09:34 +12s | spinquanta] [FETCH]... ↓ https://www.spinquanta.com/news/press-release                                                        | ✓ | ⏱: 5.22s 
+[14:09:34 +12s | spinquanta] [SCRAPE].. ◆ https://www.spinquanta.com/news/press-release                                                        | ✓ | ⏱: 0.07s 
+[14:09:35 +12s | spinquanta] [COMPLETE] ● https://www.spinquanta.com/news/press-release                                                        | ✓ | ⏱: 5.34s 
+[14:09:35 +12s | spinquanta] [FETCH]... ↓ https://www.spinquanta.com/quantum-computing-solutions/artificial-intelligence                       | ✓ | ⏱: 5.32s 
+[14:09:35 +13s | spinquanta] [SCRAPE].. ◆ https://www.spinquanta.com/quantum-computing-solutions/artificial-intelligence                       | ✓ | ⏱: 0.13s 
+[14:09:35 +13s | spinquanta] [COMPLETE] ● https://www.spinquanta.com/quantum-computing-solutions/artificial-intelligence                       | ✓ | ⏱: 5.47s 
+[14:09:35 +13s | spinquanta] [FETCH]... ↓ https://www.spinquanta.com/news                                                                      | ✓ | ⏱: 5.48s 
+[14:09:35 +13s | spinquanta] [SCRAPE].. ◆ https://www.spinquanta.com/news                                                                      | ✓ | ⏱: 0.06s 
+[14:09:35 +13s | spinquanta] [COMPLETE] ● https://www.spinquanta.com/news                                                                      | ✓ | ⏱: 5.59s 
+[14:09:35 +13s | spinquanta] [FETCH]... ↓ https://www.spinquanta.com/quantum-computing-solutions/finance                                       | ✓ | ⏱: 5.58s 
+[14:09:35 +13s | spinquanta] [SCRAPE].. ◆ https://www.spinquanta.com/quantum-computing-solutions/finance                                       | ✓ | ⏱: 0.10s 
+[14:09:35 +13s | spinquanta] [COMPLETE] ● https://www.spinquanta.com/quantum-computing-solutions/finance                                       | ✓ | ⏱: 5.70s 
+[14:09:35 +13s | spinquanta] [FETCH]... ↓ https://www.spinquanta.com/quantum-computing-solutions/education                                     | ✓ | ⏱: 5.74s 
+[14:09:35 +13s | spinquanta] [SCRAPE].. ◆ https://www.spinquanta.com/quantum-computing-solutions/education                                     | ✓ | ⏱: 0.16s 
+[14:09:35 +13s | spinquanta] [COMPLETE] ● https://www.spinquanta.com/quantum-computing-solutions/education                                     | ✓ | ⏱: 5.93s 
+[14:09:35 +13s | spinquanta] Invalid URL: javasciprt:void(0), error: Missing scheme or netloc
+[14:09:35 +13s | spinquanta] Invalid URL: javasciprt:void(0), error: Missing scheme or netloc
+[14:09:35 +13s | spinquanta] Invalid URL: javasciprt:void(0), error: Missing scheme or netloc
+[14:09:35 +13s | spinquanta] Invalid URL: javasciprt:void(0), error: Missing scheme or netloc
+[14:09:35 +13s | spinquanta] Invalid URL: javasciprt:void(0), error: Missing scheme or netloc
+[14:09:35 +13s | spinquanta] Invalid URL: javasciprt:void(0), error: Missing scheme or netloc
+[14:09:35 +13s | spinquanta] Invalid URL: javasciprt:void(0), error: Missing scheme or netloc
+[14:09:35 +13s | spinquanta] Invalid URL: javasciprt:void(0), error: Missing scheme or netloc
+[14:09:35 +13s | spinquanta] Invalid URL: javasciprt:void(0), error: Missing scheme or netloc
+[14:09:35 +13s | spinquanta] Invalid URL: javasciprt:void(0), error: Missing scheme or netloc
+[14:09:35 +13s | spinquanta] Invalid URL: javasciprt:void(0), error: Missing scheme or netloc
+[14:09:35 +13s | spinquanta] Invalid URL: javasciprt:void(0), error: Missing scheme or netloc
+[14:09:35 +13s | spinquanta] Invalid URL: javasciprt:void(0), error: Missing scheme or netloc
+[14:09:35 +13s | spinquanta] Invalid URL: javasciprt:void(0), error: Missing scheme or netloc
+[14:09:35 +13s | spinquanta] Invalid URL: javasciprt:void(0), error: Missing scheme or netloc
+[14:09:35 +13s | spinquanta] Invalid URL: javasciprt:void(0), error: Missing scheme or netloc
+[14:09:35 +13s | spinquanta] Invalid URL: javasciprt:void(0), error: Missing scheme or netloc
+[14:09:35 +13s | spinquanta] Invalid URL: javasciprt:void(0), error: Missing scheme or netloc
+[14:09:35 +13s | spinquanta] Saved: crawl_output/8367d4013d_www.spinquanta.com.json
+[14:09:35 +13s | spinquanta] Duplicate skipped: https://www.spinquanta.com
+[14:09:35 +13s | spinquanta] Saved: crawl_output/b98948feec_www.spinquanta.com_private-policy.json
+[14:09:35 +13s | spinquanta] Saved: crawl_output/ef8473ccae_www.spinquanta.com_about-us.json
+[14:09:35 +13s | spinquanta] Saved: crawl_output/ff310d233d_www.spinquanta.com_term.json
+[14:09:35 +13s | spinquanta] Saved: crawl_output/7ddc42f2e9_www.spinquanta.com_products_quantum-computing-software.json
+[14:09:35 +13s | spinquanta] Saved: crawl_output/155ecd183c_www.spinquanta.com_news_media-coverage.json
+[14:09:35 +13s | spinquanta] Saved: crawl_output/8918716066_www.spinquanta.com_products_superconducting-quantum-products.json
+[14:09:35 +13s | spinquanta] Saved: crawl_output/d6673cb869_www.spinquanta.com_products_nmr-quantum-products.json
+[14:09:35 +13s | spinquanta] Saved: crawl_output/57fe138220_www.spinquanta.com_contact-us.json
+[14:09:35 +13s | spinquanta] Saved: crawl_output/e9b0fae0dd_www.spinquanta.com_news-detail_spinq-quantum-computing-products-showcased-in-europe-and-southeast-asia20260605.json
+[14:09:35 +13s | spinquanta] Saved: crawl_output/fbc36fb8a1_www.spinquanta.com_news-detail_spinq-and-hkust-joint-research-on-quantum-error-correction20260423.json
+[14:09:35 +13s | spinquanta] Saved: crawl_output/58427e2387_www.spinquanta.com_news_blog.json
+[14:09:35 +13s | spinquanta] Saved: crawl_output/efd3f367ec_www.spinquanta.com_news-detail_spinq-and-hubei-university-joint-quantum-algorithm-research-published-in-quantum-information-processing20260525.json
+[14:09:35 +13s | spinquanta] Saved: crawl_output/532c749e1c_www.spinquanta.com_quantum-computing-solutions_biomedince.json
+[14:09:35 +13s | spinquanta] Saved: crawl_output/efd39686f5_www.spinquanta.com_news_press-release.json
+[14:09:35 +13s | spinquanta] Saved: crawl_output/dbde816ce3_www.spinquanta.com_quantum-computing-solutions_artificial-intelligence.json
+[14:09:35 +13s | spinquanta] Saved: crawl_output/4426d56127_www.spinquanta.com_news.json
+[14:09:35 +13s | spinquanta] Saved: crawl_output/42d79166e0_www.spinquanta.com_quantum-computing-solutions_finance.json
+[14:09:35 +13s | spinquanta] Saved: crawl_output/281f4517a0_www.spinquanta.com_quantum-computing-solutions_education.json
+
+[14:09:36 +14s | spinquanta] === 1 actor extraction ===
+[14:09:36 +14s | spinquanta] Reading page (1/19): https://www.spinquanta.com/news/media-coverage
+[14:09:36 +14s | spinquanta] Extracting: https://www.spinquanta.com/news/media-coverage (1/19), chunk 1/6
+[14:09:41 +19s | spinquanta] Extracting: https://www.spinquanta.com/news/media-coverage (1/19), chunk 2/6
+[14:09:49 +26s | spinquanta] Repaired malformed JSON.
+[14:09:49 +26s | spinquanta] Extracting: https://www.spinquanta.com/news/media-coverage (1/19), chunk 3/6
+[14:09:56 +34s | spinquanta] Repaired malformed JSON.
+[14:09:56 +34s | spinquanta] Extracting: https://www.spinquanta.com/news/media-coverage (1/19), chunk 4/6
+[14:10:00 +38s | spinquanta] Extracting: https://www.spinquanta.com/news/media-coverage (1/19), chunk 5/6
+[14:10:04 +42s | spinquanta] Extracting: https://www.spinquanta.com/news/media-coverage (1/19), chunk 6/6
+[14:10:10 +48s | spinquanta] Repaired malformed JSON.
+[14:10:10 +48s | spinquanta] Reading page (2/19): https://www.spinquanta.com/quantum-computing-solutions/education
+[14:10:10 +48s | spinquanta] Extracting: https://www.spinquanta.com/quantum-computing-solutions/education (2/19), chunk 1/27
+[14:10:11 +49s | spinquanta] Extracting: https://www.spinquanta.com/quantum-computing-solutions/education (2/19), chunk 2/27
+[14:10:18 +56s | spinquanta] Repaired malformed JSON.
+[14:10:18 +56s | spinquanta] Extracting: https://www.spinquanta.com/quantum-computing-solutions/education (2/19), chunk 3/27
+[14:10:25 +1m 3s | spinquanta] Repaired malformed JSON.
+[14:10:25 +1m 3s | spinquanta] Extracting: https://www.spinquanta.com/quantum-computing-solutions/education (2/19), chunk 4/27
+[14:10:27 +1m 5s | spinquanta] Extracting: https://www.spinquanta.com/quantum-computing-solutions/education (2/19), chunk 5/27
+[14:10:34 +1m 12s | spinquanta] Repaired malformed JSON.
+[14:10:34 +1m 12s | spinquanta] Extracting: https://www.spinquanta.com/quantum-computing-solutions/education (2/19), chunk 6/27
+[14:10:38 +1m 16s | spinquanta] Extracting: https://www.spinquanta.com/quantum-computing-solutions/education (2/19), chunk 7/27
+[14:10:43 +1m 21s | spinquanta] Extracting: https://www.spinquanta.com/quantum-computing-solutions/education (2/19), chunk 8/27
+[14:10:51 +1m 29s | spinquanta] Repaired malformed JSON.
+[14:10:51 +1m 29s | spinquanta] Extracting: https://www.spinquanta.com/quantum-computing-solutions/education (2/19), chunk 9/27
+[14:10:58 +1m 36s | spinquanta] Repaired malformed JSON.
+[14:10:58 +1m 36s | spinquanta] Extracting: https://www.spinquanta.com/quantum-computing-solutions/education (2/19), chunk 10/27
+[14:11:06 +1m 44s | spinquanta] Repaired malformed JSON.
+[14:11:06 +1m 44s | spinquanta] Extracting: https://www.spinquanta.com/quantum-computing-solutions/education (2/19), chunk 11/27
+[14:11:13 +1m 51s | spinquanta] Repaired malformed JSON.
+[14:11:13 +1m 51s | spinquanta] Extracting: https://www.spinquanta.com/quantum-computing-solutions/education (2/19), chunk 12/27
+[14:11:20 +1m 58s | spinquanta] Repaired malformed JSON.
+[14:11:20 +1m 58s | spinquanta] Extracting: https://www.spinquanta.com/quantum-computing-solutions/education (2/19), chunk 13/27
+[14:11:27 +2m 5s | spinquanta] Repaired malformed JSON.
+[14:11:27 +2m 5s | spinquanta] Extracting: https://www.spinquanta.com/quantum-computing-solutions/education (2/19), chunk 14/27
+[14:11:35 +2m 13s | spinquanta] Repaired malformed JSON.
+[14:11:35 +2m 13s | spinquanta] Extracting: https://www.spinquanta.com/quantum-computing-solutions/education (2/19), chunk 15/27
+[14:11:39 +2m 17s | spinquanta] Extracting: https://www.spinquanta.com/quantum-computing-solutions/education (2/19), chunk 16/27
+[14:11:45 +2m 23s | spinquanta] Extracting: https://www.spinquanta.com/quantum-computing-solutions/education (2/19), chunk 17/27
+[14:11:51 +2m 29s | spinquanta] Repaired malformed JSON.
+[14:11:51 +2m 29s | spinquanta] Extracting: https://www.spinquanta.com/quantum-computing-solutions/education (2/19), chunk 18/27
+[14:12:00 +2m 38s | spinquanta] Repaired malformed JSON.
+[14:12:00 +2m 38s | spinquanta] Extracting: https://www.spinquanta.com/quantum-computing-solutions/education (2/19), chunk 19/27
+[14:12:08 +2m 46s | spinquanta] Repaired malformed JSON.
+[14:12:08 +2m 46s | spinquanta] Extracting: https://www.spinquanta.com/quantum-computing-solutions/education (2/19), chunk 20/27
+[14:12:15 +2m 53s | spinquanta] Repaired malformed JSON.
+[14:12:15 +2m 53s | spinquanta] Extracting: https://www.spinquanta.com/quantum-computing-solutions/education (2/19), chunk 21/27
+[14:12:17 +2m 55s | spinquanta] Extracting: https://www.spinquanta.com/quantum-computing-solutions/education (2/19), chunk 22/27
+[14:12:18 +2m 56s | spinquanta] Extracting: https://www.spinquanta.com/quantum-computing-solutions/education (2/19), chunk 23/27
+[14:12:25 +3m 3s | spinquanta] Repaired malformed JSON.
+[14:12:25 +3m 3s | spinquanta] Extracting: https://www.spinquanta.com/quantum-computing-solutions/education (2/19), chunk 24/27
+[14:12:32 +3m 10s | spinquanta] Repaired malformed JSON.
+[14:12:32 +3m 10s | spinquanta] Extracting: https://www.spinquanta.com/quantum-computing-solutions/education (2/19), chunk 25/27
+[14:12:36 +3m 14s | spinquanta] Extracting: https://www.spinquanta.com/quantum-computing-solutions/education (2/19), chunk 26/27
+[14:12:40 +3m 17s | spinquanta] Extracting: https://www.spinquanta.com/quantum-computing-solutions/education (2/19), chunk 27/27
+[14:12:44 +3m 22s | spinquanta] Reading page (3/19): https://www.spinquanta.com/quantum-computing-solutions/finance
+[14:12:44 +3m 22s | spinquanta] Extracting: https://www.spinquanta.com/quantum-computing-solutions/finance (3/19), chunk 1/16
+[14:12:50 +3m 27s | spinquanta] Extracting: https://www.spinquanta.com/quantum-computing-solutions/finance (3/19), chunk 2/16
+[14:12:54 +3m 31s | spinquanta] Extracting: https://www.spinquanta.com/quantum-computing-solutions/finance (3/19), chunk 3/16
+[14:13:01 +3m 38s | spinquanta] Repaired malformed JSON.
+[14:13:01 +3m 38s | spinquanta] Extracting: https://www.spinquanta.com/quantum-computing-solutions/finance (3/19), chunk 4/16
+[14:13:06 +3m 44s | spinquanta] Repaired malformed JSON.
+[14:13:06 +3m 44s | spinquanta] Extracting: https://www.spinquanta.com/quantum-computing-solutions/finance (3/19), chunk 5/16
+[14:13:12 +3m 50s | spinquanta] Extracting: https://www.spinquanta.com/quantum-computing-solutions/finance (3/19), chunk 6/16
+[14:13:25 +4m 2s | spinquanta] Repaired malformed JSON.
+[14:13:25 +4m 2s | spinquanta] Extracting: https://www.spinquanta.com/quantum-computing-solutions/finance (3/19), chunk 7/16
+[14:13:38 +4m 16s | spinquanta] Repaired malformed JSON.
+[14:13:38 +4m 16s | spinquanta] Extracting: https://www.spinquanta.com/quantum-computing-solutions/finance (3/19), chunk 8/16
+[14:13:56 +4m 33s | spinquanta] Repaired malformed JSON.
+[14:13:56 +4m 33s | spinquanta] Extracting: https://www.spinquanta.com/quantum-computing-solutions/finance (3/19), chunk 9/16
+[14:14:02 +4m 40s | spinquanta] Repaired malformed JSON.
+[14:14:02 +4m 40s | spinquanta] Extracting: https://www.spinquanta.com/quantum-computing-solutions/finance (3/19), chunk 10/16
+[14:14:03 +4m 41s | spinquanta] Extracting: https://www.spinquanta.com/quantum-computing-solutions/finance (3/19), chunk 11/16
+[14:14:10 +4m 48s | spinquanta] Repaired malformed JSON.
+[14:14:10 +4m 48s | spinquanta] Extracting: https://www.spinquanta.com/quantum-computing-solutions/finance (3/19), chunk 12/16
+[14:14:12 +4m 50s | spinquanta] Extracting: https://www.spinquanta.com/quantum-computing-solutions/finance (3/19), chunk 13/16
+[14:14:18 +4m 56s | spinquanta] Repaired malformed JSON.
+[14:14:18 +4m 56s | spinquanta] Extracting: https://www.spinquanta.com/quantum-computing-solutions/finance (3/19), chunk 14/16
+[14:14:24 +5m 2s | spinquanta] Extracting: https://www.spinquanta.com/quantum-computing-solutions/finance (3/19), chunk 15/16
+[14:14:29 +5m 7s | spinquanta] Extracting: https://www.spinquanta.com/quantum-computing-solutions/finance (3/19), chunk 16/16
+[14:14:33 +5m 11s | spinquanta] Reading page (4/19): https://www.spinquanta.com/news
+[14:14:33 +5m 11s | spinquanta] Extracting: https://www.spinquanta.com/news (4/19), chunk 1/14
+[14:14:38 +5m 16s | spinquanta] Extracting: https://www.spinquanta.com/news (4/19), chunk 2/14
+[14:14:44 +5m 22s | spinquanta] Repaired malformed JSON.
+[14:14:44 +5m 22s | spinquanta] Extracting: https://www.spinquanta.com/news (4/19), chunk 3/14
+[14:14:51 +5m 29s | spinquanta] Repaired malformed JSON.
+[14:14:51 +5m 29s | spinquanta] Extracting: https://www.spinquanta.com/news (4/19), chunk 4/14
+[14:14:57 +5m 35s | spinquanta] Repaired malformed JSON.
+[14:14:57 +5m 35s | spinquanta] Extracting: https://www.spinquanta.com/news (4/19), chunk 5/14
+[14:15:05 +5m 43s | spinquanta] Extracting: https://www.spinquanta.com/news (4/19), chunk 6/14
+[14:15:11 +5m 49s | spinquanta] Repaired malformed JSON.
+[14:15:11 +5m 49s | spinquanta] Extracting: https://www.spinquanta.com/news (4/19), chunk 7/14
+[14:15:19 +5m 57s | spinquanta] Repaired malformed JSON.
+[14:15:19 +5m 57s | spinquanta] Extracting: https://www.spinquanta.com/news (4/19), chunk 8/14
+[14:15:30 +6m 8s | spinquanta] Repaired malformed JSON.
+[14:15:30 +6m 8s | spinquanta] Extracting: https://www.spinquanta.com/news (4/19), chunk 9/14
+[14:15:44 +6m 22s | spinquanta] Repaired malformed JSON.
+[14:15:44 +6m 22s | spinquanta] Extracting: https://www.spinquanta.com/news (4/19), chunk 10/14
+[14:15:50 +6m 28s | spinquanta] Repaired malformed JSON.
+[14:15:50 +6m 28s | spinquanta] Extracting: https://www.spinquanta.com/news (4/19), chunk 11/14
+[14:15:55 +6m 33s | spinquanta] Extracting: https://www.spinquanta.com/news (4/19), chunk 12/14
+[14:15:59 +6m 37s | spinquanta] Extracting: https://www.spinquanta.com/news (4/19), chunk 13/14
+[14:16:06 +6m 44s | spinquanta] Repaired malformed JSON.
+[14:16:06 +6m 44s | spinquanta] Extracting: https://www.spinquanta.com/news (4/19), chunk 14/14
+[14:16:10 +6m 48s | spinquanta] Reading page (5/19): https://www.spinquanta.com/quantum-computing-solutions/biomedince
+[14:16:10 +6m 48s | spinquanta] Extracting: https://www.spinquanta.com/quantum-computing-solutions/biomedince (5/19), chunk 1/15
+[14:16:15 +6m 53s | spinquanta] Extracting: https://www.spinquanta.com/quantum-computing-solutions/biomedince (5/19), chunk 2/15
+[14:16:26 +7m 4s | spinquanta] Repaired malformed JSON.
+[14:16:26 +7m 4s | spinquanta] Extracting: https://www.spinquanta.com/quantum-computing-solutions/biomedince (5/19), chunk 3/15
+
+========================================================================
+RUN STARTED  2026-06-17 14:30:51
+site_pipeline.py https://www.spinquanta.com/
+========================================================================
+
+[14:30:51 +0s | spinquanta] === 0 crawl site (skipped via auto (actor data already exists; pass --force to re-crawl), reusing /home/lv/IDP/idpdeeptech/pipeline/site_outputs/spinquanta/crawl_output) ===
+
+[14:30:51 +0s | spinquanta] === 1 actor extraction ===
+[14:30:51 +0s | spinquanta] Auto-resume: 4 (url, ordinal) pairs already done, skipping them.
+[14:30:51 +0s | spinquanta] Skipping URL (1/19): https://www.spinquanta.com/news/media-coverage (already done)
+[14:30:51 +0s | spinquanta] Skipping URL (2/19): https://www.spinquanta.com/quantum-computing-solutions/education (already done)
+[14:30:51 +0s | spinquanta] Skipping URL (3/19): https://www.spinquanta.com/quantum-computing-solutions/finance (already done)
+[14:30:51 +0s | spinquanta] Skipping URL (4/19): https://www.spinquanta.com/news (already done)
+[14:30:51 +0s | spinquanta] Reading page (5/19): https://www.spinquanta.com/quantum-computing-solutions/biomedince
+[14:30:51 +0s | spinquanta] Extracting: https://www.spinquanta.com/quantum-computing-solutions/biomedince (5/19), chunk 1/15
+[14:30:56 +5s | spinquanta] Extracting: https://www.spinquanta.com/quantum-computing-solutions/biomedince (5/19), chunk 2/15
+[14:31:03 +12s | spinquanta] Repaired malformed JSON.
+[14:31:03 +12s | spinquanta] Extracting: https://www.spinquanta.com/quantum-computing-solutions/biomedince (5/19), chunk 3/15
+[14:31:11 +20s | spinquanta] Repaired malformed JSON.
+[14:31:11 +20s | spinquanta] Extracting: https://www.spinquanta.com/quantum-computing-solutions/biomedince (5/19), chunk 4/15
+[14:31:15 +24s | spinquanta] Extracting: https://www.spinquanta.com/quantum-computing-solutions/biomedince (5/19), chunk 5/15
+[14:31:18 +27s | spinquanta] Extracting: https://www.spinquanta.com/quantum-computing-solutions/biomedince (5/19), chunk 6/15
+[14:31:24 +33s | spinquanta] Repaired malformed JSON.
+[14:31:24 +33s | spinquanta] Extracting: https://www.spinquanta.com/quantum-computing-solutions/biomedince (5/19), chunk 7/15
+[14:31:31 +41s | spinquanta] Repaired malformed JSON.
+[14:31:31 +41s | spinquanta] Extracting: https://www.spinquanta.com/quantum-computing-solutions/biomedince (5/19), chunk 8/15
+[14:31:38 +47s | spinquanta] Repaired malformed JSON.
+[14:31:38 +47s | spinquanta] Extracting: https://www.spinquanta.com/quantum-computing-solutions/biomedince (5/19), chunk 9/15
+[14:31:40 +49s | spinquanta] Extracting: https://www.spinquanta.com/quantum-computing-solutions/biomedince (5/19), chunk 10/15
+[14:31:41 +51s | spinquanta] Extracting: https://www.spinquanta.com/quantum-computing-solutions/biomedince (5/19), chunk 11/15
+[14:31:43 +52s | spinquanta] Extracting: https://www.spinquanta.com/quantum-computing-solutions/biomedince (5/19), chunk 12/15
+[14:31:51 +1m 0s | spinquanta] Repaired malformed JSON.
+[14:31:51 +1m 0s | spinquanta] Extracting: https://www.spinquanta.com/quantum-computing-solutions/biomedince (5/19), chunk 13/15
+[14:31:57 +1m 6s | spinquanta] Extracting: https://www.spinquanta.com/quantum-computing-solutions/biomedince (5/19), chunk 14/15
+[14:32:02 +1m 11s | spinquanta] Extracting: https://www.spinquanta.com/quantum-computing-solutions/biomedince (5/19), chunk 15/15
+[14:32:07 +1m 16s | spinquanta] Reading page (6/19): https://www.spinquanta.com/contact-us
+[14:32:07 +1m 16s | spinquanta] Extracting: https://www.spinquanta.com/contact-us (6/19), chunk 1/11
+[14:32:11 +1m 21s | spinquanta] Extracting: https://www.spinquanta.com/contact-us (6/19), chunk 2/11
+[14:32:18 +1m 27s | spinquanta] Repaired malformed JSON.
+[14:32:18 +1m 27s | spinquanta] Extracting: https://www.spinquanta.com/contact-us (6/19), chunk 3/11
+[14:32:25 +1m 34s | spinquanta] Repaired malformed JSON.
+[14:32:25 +1m 34s | spinquanta] Extracting: https://www.spinquanta.com/contact-us (6/19), chunk 4/11
+[14:32:33 +1m 42s | spinquanta] Repaired malformed JSON.
+[14:32:33 +1m 42s | spinquanta] Extracting: https://www.spinquanta.com/contact-us (6/19), chunk 5/11
+[14:32:41 +1m 50s | spinquanta] Repaired malformed JSON.
+[14:32:41 +1m 50s | spinquanta] Extracting: https://www.spinquanta.com/contact-us (6/19), chunk 6/11
+[14:32:47 +1m 56s | spinquanta] Repaired malformed JSON.
+[14:32:47 +1m 56s | spinquanta] Extracting: https://www.spinquanta.com/contact-us (6/19), chunk 7/11
+[14:32:57 +2m 6s | spinquanta] Repaired malformed JSON.
+[14:32:57 +2m 6s | spinquanta] Extracting: https://www.spinquanta.com/contact-us (6/19), chunk 8/11
+[14:32:59 +2m 8s | spinquanta] Extracting: https://www.spinquanta.com/contact-us (6/19), chunk 9/11
+[14:33:06 +2m 15s | spinquanta] Repaired malformed JSON.
+[14:33:06 +2m 15s | spinquanta] Extracting: https://www.spinquanta.com/contact-us (6/19), chunk 10/11
+[14:33:11 +2m 20s | spinquanta] Extracting: https://www.spinquanta.com/contact-us (6/19), chunk 11/11
+[14:33:15 +2m 24s | spinquanta] Reading page (7/19): https://www.spinquanta.com/news/blog
+[14:33:15 +2m 24s | spinquanta] Extracting: https://www.spinquanta.com/news/blog (7/19), chunk 1/11
+[14:33:19 +2m 29s | spinquanta] Extracting: https://www.spinquanta.com/news/blog (7/19), chunk 2/11
+[14:33:24 +2m 34s | spinquanta] Extracting: https://www.spinquanta.com/news/blog (7/19), chunk 3/11
+[14:33:29 +2m 38s | spinquanta] Extracting: https://www.spinquanta.com/news/blog (7/19), chunk 4/11
+[14:33:36 +2m 46s | spinquanta] Repaired malformed JSON.
+[14:33:36 +2m 46s | spinquanta] Extracting: https://www.spinquanta.com/news/blog (7/19), chunk 5/11
+[14:33:43 +2m 53s | spinquanta] Repaired malformed JSON.
+[14:33:43 +2m 53s | spinquanta] Extracting: https://www.spinquanta.com/news/blog (7/19), chunk 6/11
+[14:33:50 +2m 59s | spinquanta] Repaired malformed JSON.
+[14:33:50 +2m 59s | spinquanta] Extracting: https://www.spinquanta.com/news/blog (7/19), chunk 7/11
+[14:33:58 +3m 7s | spinquanta] Repaired malformed JSON.
+[14:33:58 +3m 7s | spinquanta] Extracting: https://www.spinquanta.com/news/blog (7/19), chunk 8/11
+[14:34:05 +3m 15s | spinquanta] Extracting: https://www.spinquanta.com/news/blog (7/19), chunk 9/11
+[14:34:09 +3m 19s | spinquanta] Extracting: https://www.spinquanta.com/news/blog (7/19), chunk 10/11
+[14:34:15 +3m 24s | spinquanta] Extracting: https://www.spinquanta.com/news/blog (7/19), chunk 11/11
+[14:34:19 +3m 28s | spinquanta] Reading page (8/19): https://www.spinquanta.com/products/quantum-computing-software
+[14:34:19 +3m 28s | spinquanta] Extracting: https://www.spinquanta.com/products/quantum-computing-software (8/19), chunk 1/7
+[14:34:23 +3m 32s | spinquanta] Extracting: https://www.spinquanta.com/products/quantum-computing-software (8/19), chunk 2/7
+[14:34:28 +3m 37s | spinquanta] Extracting: https://www.spinquanta.com/products/quantum-computing-software (8/19), chunk 3/7
+[14:34:33 +3m 42s | spinquanta] Repaired malformed JSON.
+[14:34:33 +3m 42s | spinquanta] Extracting: https://www.spinquanta.com/products/quantum-computing-software (8/19), chunk 4/7
+[14:34:41 +3m 50s | spinquanta] Repaired malformed JSON.
+[14:34:41 +3m 50s | spinquanta] Extracting: https://www.spinquanta.com/products/quantum-computing-software (8/19), chunk 5/7
+[14:34:46 +3m 56s | spinquanta] Extracting: https://www.spinquanta.com/products/quantum-computing-software (8/19), chunk 6/7
+[14:34:50 +3m 59s | spinquanta] Extracting: https://www.spinquanta.com/products/quantum-computing-software (8/19), chunk 7/7
+[14:34:54 +4m 3s | spinquanta] Reading page (9/19): https://www.spinquanta.com
+[14:34:54 +4m 3s | spinquanta] Extracting: https://www.spinquanta.com (9/19), chunk 1/10
+[14:35:00 +4m 9s | spinquanta] Extracting: https://www.spinquanta.com (9/19), chunk 2/10
+[14:35:04 +4m 14s | spinquanta] Extracting: https://www.spinquanta.com (9/19), chunk 3/10
+[14:35:10 +4m 19s | spinquanta] Extracting: https://www.spinquanta.com (9/19), chunk 4/10
+[14:35:18 +4m 27s | spinquanta] Repaired malformed JSON.
+[14:35:18 +4m 27s | spinquanta] Extracting: https://www.spinquanta.com (9/19), chunk 5/10
+[14:35:25 +4m 34s | spinquanta] Repaired malformed JSON.
+[14:35:25 +4m 34s | spinquanta] Extracting: https://www.spinquanta.com (9/19), chunk 6/10
+[14:35:35 +4m 44s | spinquanta] Repaired malformed JSON.
+[14:35:35 +4m 44s | spinquanta] Extracting: https://www.spinquanta.com (9/19), chunk 7/10
+[14:35:41 +4m 50s | spinquanta] Repaired malformed JSON.
+[14:35:41 +4m 50s | spinquanta] Extracting: https://www.spinquanta.com (9/19), chunk 8/10
+[14:35:49 +4m 58s | spinquanta] Repaired malformed JSON.
+[14:35:49 +4m 58s | spinquanta] Extracting: https://www.spinquanta.com (9/19), chunk 9/10
+[14:35:56 +5m 5s | spinquanta] Extracting: https://www.spinquanta.com (9/19), chunk 10/10
+[14:35:59 +5m 9s | spinquanta] Reading page (10/19): https://www.spinquanta.com/products/superconducting-quantum-products
+[14:35:59 +5m 9s | spinquanta] Extracting: https://www.spinquanta.com/products/superconducting-quantum-products (10/19), chunk 1/8
+[14:36:05 +5m 14s | spinquanta] Extracting: https://www.spinquanta.com/products/superconducting-quantum-products (10/19), chunk 2/8
+[14:36:10 +5m 19s | spinquanta] Extracting: https://www.spinquanta.com/products/superconducting-quantum-products (10/19), chunk 3/8
+[14:36:18 +5m 27s | spinquanta] Repaired malformed JSON.
+[14:36:18 +5m 27s | spinquanta] Extracting: https://www.spinquanta.com/products/superconducting-quantum-products (10/19), chunk 4/8
+[14:36:21 +5m 31s | spinquanta] Extracting: https://www.spinquanta.com/products/superconducting-quantum-products (10/19), chunk 5/8
+[14:36:28 +5m 37s | spinquanta] Extracting: https://www.spinquanta.com/products/superconducting-quantum-products (10/19), chunk 6/8
+[14:36:33 +5m 42s | spinquanta] Extracting: https://www.spinquanta.com/products/superconducting-quantum-products (10/19), chunk 7/8
+[14:36:37 +5m 46s | spinquanta] Extracting: https://www.spinquanta.com/products/superconducting-quantum-products (10/19), chunk 8/8
+[14:36:41 +5m 50s | spinquanta] Reading page (11/19): https://www.spinquanta.com/private-policy
+[14:36:41 +5m 50s | spinquanta] Extracting: https://www.spinquanta.com/private-policy (11/19), chunk 1/14
+[14:36:46 +5m 55s | spinquanta] Extracting: https://www.spinquanta.com/private-policy (11/19), chunk 2/14
+[14:36:50 +5m 59s | spinquanta] Extracting: https://www.spinquanta.com/private-policy (11/19), chunk 3/14
+[14:36:55 +6m 4s | spinquanta] Extracting: https://www.spinquanta.com/private-policy (11/19), chunk 4/14
+[14:36:59 +6m 9s | spinquanta] Extracting: https://www.spinquanta.com/private-policy (11/19), chunk 5/14
+[14:37:05 +6m 14s | spinquanta] Extracting: https://www.spinquanta.com/private-policy (11/19), chunk 6/14
+[14:37:09 +6m 19s | spinquanta] Extracting: https://www.spinquanta.com/private-policy (11/19), chunk 7/14
+[14:37:16 +6m 26s | spinquanta] Repaired malformed JSON.
+[14:37:16 +6m 26s | spinquanta] Extracting: https://www.spinquanta.com/private-policy (11/19), chunk 8/14
+[14:37:24 +6m 34s | spinquanta] Repaired malformed JSON.
+[14:37:24 +6m 34s | spinquanta] Extracting: https://www.spinquanta.com/private-policy (11/19), chunk 9/14
+[14:37:32 +6m 42s | spinquanta] Extracting: https://www.spinquanta.com/private-policy (11/19), chunk 10/14
+[14:37:40 +6m 49s | spinquanta] Repaired malformed JSON.
+[14:37:40 +6m 49s | spinquanta] Extracting: https://www.spinquanta.com/private-policy (11/19), chunk 11/14
+[14:37:46 +6m 55s | spinquanta] Repaired malformed JSON.
+[14:37:46 +6m 55s | spinquanta] Extracting: https://www.spinquanta.com/private-policy (11/19), chunk 12/14
+[14:37:50 +6m 59s | spinquanta] Extracting: https://www.spinquanta.com/private-policy (11/19), chunk 13/14
+[14:37:55 +7m 4s | spinquanta] Extracting: https://www.spinquanta.com/private-policy (11/19), chunk 14/14
+[14:38:00 +7m 9s | spinquanta] Reading page (12/19): https://www.spinquanta.com/products/nmr-quantum-products
+[14:38:00 +7m 9s | spinquanta] Extracting: https://www.spinquanta.com/products/nmr-quantum-products (12/19), chunk 1/7
+[14:38:05 +7m 14s | spinquanta] Extracting: https://www.spinquanta.com/products/nmr-quantum-products (12/19), chunk 2/7
+[14:38:09 +7m 18s | spinquanta] Extracting: https://www.spinquanta.com/products/nmr-quantum-products (12/19), chunk 3/7
+[14:38:16 +7m 25s | spinquanta] Repaired malformed JSON.
+[14:38:16 +7m 25s | spinquanta] Extracting: https://www.spinquanta.com/products/nmr-quantum-products (12/19), chunk 4/7
+[14:38:22 +7m 31s | spinquanta] Repaired malformed JSON.
+[14:38:22 +7m 31s | spinquanta] Extracting: https://www.spinquanta.com/products/nmr-quantum-products (12/19), chunk 5/7
+[14:38:30 +7m 40s | spinquanta] Repaired malformed JSON.
+[14:38:30 +7m 40s | spinquanta] Extracting: https://www.spinquanta.com/products/nmr-quantum-products (12/19), chunk 6/7
+[14:38:35 +7m 45s | spinquanta] Extracting: https://www.spinquanta.com/products/nmr-quantum-products (12/19), chunk 7/7
+[14:38:39 +7m 48s | spinquanta] Reading page (13/19): https://www.spinquanta.com/quantum-computing-solutions/artificial-intelligence
+[14:38:39 +7m 48s | spinquanta] Extracting: https://www.spinquanta.com/quantum-computing-solutions/artificial-intelligence (13/19), chunk 1/16
+[14:38:43 +7m 52s | spinquanta] Extracting: https://www.spinquanta.com/quantum-computing-solutions/artificial-intelligence (13/19), chunk 2/16
+[14:38:47 +7m 56s | spinquanta] Extracting: https://www.spinquanta.com/quantum-computing-solutions/artificial-intelligence (13/19), chunk 3/16
+[14:38:55 +8m 5s | spinquanta] Repaired malformed JSON.
+[14:38:55 +8m 5s | spinquanta] Extracting: https://www.spinquanta.com/quantum-computing-solutions/artificial-intelligence (13/19), chunk 4/16
+[14:39:01 +8m 10s | spinquanta] Repaired malformed JSON.
+[14:39:01 +8m 10s | spinquanta] Extracting: https://www.spinquanta.com/quantum-computing-solutions/artificial-intelligence (13/19), chunk 5/16
+[14:39:07 +8m 16s | spinquanta] Extracting: https://www.spinquanta.com/quantum-computing-solutions/artificial-intelligence (13/19), chunk 6/16
+[14:39:17 +8m 26s | spinquanta] Repaired malformed JSON.
+[14:39:17 +8m 26s | spinquanta] Extracting: https://www.spinquanta.com/quantum-computing-solutions/artificial-intelligence (13/19), chunk 7/16
+[14:39:25 +8m 34s | spinquanta] Repaired malformed JSON.
+[14:39:25 +8m 34s | spinquanta] Extracting: https://www.spinquanta.com/quantum-computing-solutions/artificial-intelligence (13/19), chunk 8/16
+[14:39:35 +8m 44s | spinquanta] Repaired malformed JSON.
+[14:39:35 +8m 44s | spinquanta] Extracting: https://www.spinquanta.com/quantum-computing-solutions/artificial-intelligence (13/19), chunk 9/16
+[14:39:42 +8m 51s | spinquanta] Repaired malformed JSON.
+[14:39:42 +8m 51s | spinquanta] Extracting: https://www.spinquanta.com/quantum-computing-solutions/artificial-intelligence (13/19), chunk 10/16
+[14:39:43 +8m 53s | spinquanta] Extracting: https://www.spinquanta.com/quantum-computing-solutions/artificial-intelligence (13/19), chunk 11/16
+[14:39:46 +8m 55s | spinquanta] Extracting: https://www.spinquanta.com/quantum-computing-solutions/artificial-intelligence (13/19), chunk 12/16
+[14:39:47 +8m 56s | spinquanta] Extracting: https://www.spinquanta.com/quantum-computing-solutions/artificial-intelligence (13/19), chunk 13/16
+[14:39:54 +9m 3s | spinquanta] Repaired malformed JSON.
+[14:39:54 +9m 3s | spinquanta] Extracting: https://www.spinquanta.com/quantum-computing-solutions/artificial-intelligence (13/19), chunk 14/16
+[14:39:58 +9m 8s | spinquanta] Extracting: https://www.spinquanta.com/quantum-computing-solutions/artificial-intelligence (13/19), chunk 15/16
+[14:40:02 +9m 12s | spinquanta] Extracting: https://www.spinquanta.com/quantum-computing-solutions/artificial-intelligence (13/19), chunk 16/16
+[14:40:07 +9m 16s | spinquanta] Reading page (14/19): https://www.spinquanta.com/news-detail/spinq-quantum-computing-products-showcased-in-europe-and-southeast-asia20260605
+[14:40:07 +9m 16s | spinquanta] Extracting: https://www.spinquanta.com/news-detail/spinq-quantum-computing-products-showcased-in-europe-and-southeast-asia20260605 (14/19), chunk 1/10
+[14:40:15 +9m 24s | spinquanta] Extracting: https://www.spinquanta.com/news-detail/spinq-quantum-computing-products-showcased-in-europe-and-southeast-asia20260605 (14/19), chunk 2/10
+[14:40:21 +9m 31s | spinquanta] Repaired malformed JSON.
+[14:40:21 +9m 31s | spinquanta] Extracting: https://www.spinquanta.com/news-detail/spinq-quantum-computing-products-showcased-in-europe-and-southeast-asia20260605 (14/19), chunk 3/10
+[14:40:28 +9m 37s | spinquanta] Repaired malformed JSON.
+[14:40:28 +9m 37s | spinquanta] Extracting: https://www.spinquanta.com/news-detail/spinq-quantum-computing-products-showcased-in-europe-and-southeast-asia20260605 (14/19), chunk 4/10
+[14:40:35 +9m 44s | spinquanta] Repaired malformed JSON.
+[14:40:35 +9m 44s | spinquanta] Extracting: https://www.spinquanta.com/news-detail/spinq-quantum-computing-products-showcased-in-europe-and-southeast-asia20260605 (14/19), chunk 5/10
+[14:40:43 +9m 53s | spinquanta] Repaired malformed JSON.
+[14:40:43 +9m 53s | spinquanta] Extracting: https://www.spinquanta.com/news-detail/spinq-quantum-computing-products-showcased-in-europe-and-southeast-asia20260605 (14/19), chunk 6/10
+[14:40:51 +10m 1s | spinquanta] Repaired malformed JSON.
+[14:40:51 +10m 1s | spinquanta] Extracting: https://www.spinquanta.com/news-detail/spinq-quantum-computing-products-showcased-in-europe-and-southeast-asia20260605 (14/19), chunk 7/10
+[14:41:01 +10m 10s | spinquanta] Repaired malformed JSON.
+[14:41:01 +10m 10s | spinquanta] Extracting: https://www.spinquanta.com/news-detail/spinq-quantum-computing-products-showcased-in-europe-and-southeast-asia20260605 (14/19), chunk 8/10
+[14:41:11 +10m 20s | spinquanta] Repaired malformed JSON.
+[14:41:11 +10m 20s | spinquanta] Extracting: https://www.spinquanta.com/news-detail/spinq-quantum-computing-products-showcased-in-europe-and-southeast-asia20260605 (14/19), chunk 9/10
+[14:41:15 +10m 24s | spinquanta] Extracting: https://www.spinquanta.com/news-detail/spinq-quantum-computing-products-showcased-in-europe-and-southeast-asia20260605 (14/19), chunk 10/10
+[14:41:24 +10m 33s | spinquanta] Repaired malformed JSON.
+[14:41:24 +10m 33s | spinquanta] Reading page (15/19): https://www.spinquanta.com/about-us
+[14:41:24 +10m 33s | spinquanta] Extracting: https://www.spinquanta.com/about-us (15/19), chunk 1/10
+[14:41:28 +10m 37s | spinquanta] Extracting: https://www.spinquanta.com/about-us (15/19), chunk 2/10
+[14:41:35 +10m 44s | spinquanta] Repaired malformed JSON.
+[14:41:35 +10m 44s | spinquanta] Extracting: https://www.spinquanta.com/about-us (15/19), chunk 3/10
+[14:41:41 +10m 51s | spinquanta] Repaired malformed JSON.
+[14:41:41 +10m 51s | spinquanta] Extracting: https://www.spinquanta.com/about-us (15/19), chunk 4/10
+[14:41:50 +10m 59s | spinquanta] Repaired malformed JSON.
+[14:41:50 +10m 59s | spinquanta] Extracting: https://www.spinquanta.com/about-us (15/19), chunk 5/10
+[14:41:57 +11m 6s | spinquanta] Repaired malformed JSON.
+[14:41:57 +11m 6s | spinquanta] Extracting: https://www.spinquanta.com/about-us (15/19), chunk 6/10
+[14:42:04 +11m 13s | spinquanta] Repaired malformed JSON.
+[14:42:04 +11m 13s | spinquanta] Extracting: https://www.spinquanta.com/about-us (15/19), chunk 7/10
+[14:42:11 +11m 20s | spinquanta] Repaired malformed JSON.
+[14:42:11 +11m 20s | spinquanta] Extracting: https://www.spinquanta.com/about-us (15/19), chunk 8/10
+[14:42:18 +11m 27s | spinquanta] Repaired malformed JSON.
+[14:42:18 +11m 27s | spinquanta] Extracting: https://www.spinquanta.com/about-us (15/19), chunk 9/10
+[14:42:22 +11m 31s | spinquanta] Extracting: https://www.spinquanta.com/about-us (15/19), chunk 10/10
+[14:42:28 +11m 37s | spinquanta] Reading page (16/19): https://www.spinquanta.com/news/press-release
+[14:42:28 +11m 37s | spinquanta] Extracting: https://www.spinquanta.com/news/press-release (16/19), chunk 1/14
+[14:42:34 +11m 43s | spinquanta] Extracting: https://www.spinquanta.com/news/press-release (16/19), chunk 2/14
+[14:42:40 +11m 49s | spinquanta] Repaired malformed JSON.
+[14:42:40 +11m 49s | spinquanta] Extracting: https://www.spinquanta.com/news/press-release (16/19), chunk 3/14
+[14:42:47 +11m 56s | spinquanta] Repaired malformed JSON.
+[14:42:47 +11m 56s | spinquanta] Extracting: https://www.spinquanta.com/news/press-release (16/19), chunk 4/14
+[14:42:53 +12m 2s | spinquanta] Repaired malformed JSON.
+[14:42:53 +12m 2s | spinquanta] Extracting: https://www.spinquanta.com/news/press-release (16/19), chunk 5/14
+[14:43:01 +12m 10s | spinquanta] Repaired malformed JSON.
+[14:43:01 +12m 10s | spinquanta] Extracting: https://www.spinquanta.com/news/press-release (16/19), chunk 6/14
+[14:43:09 +12m 18s | spinquanta] Repaired malformed JSON.
+[14:43:09 +12m 18s | spinquanta] Extracting: https://www.spinquanta.com/news/press-release (16/19), chunk 7/14
+[14:43:14 +12m 24s | spinquanta] Repaired malformed JSON.
+[14:43:14 +12m 24s | spinquanta] Extracting: https://www.spinquanta.com/news/press-release (16/19), chunk 8/14
+[14:43:23 +12m 32s | spinquanta] Repaired malformed JSON.
+[14:43:23 +12m 32s | spinquanta] Extracting: https://www.spinquanta.com/news/press-release (16/19), chunk 9/14
+[14:43:29 +12m 39s | spinquanta] Repaired malformed JSON.
+[14:43:29 +12m 39s | spinquanta] Extracting: https://www.spinquanta.com/news/press-release (16/19), chunk 10/14
+[14:43:38 +12m 47s | spinquanta] Repaired malformed JSON.
+[14:43:38 +12m 47s | spinquanta] Extracting: https://www.spinquanta.com/news/press-release (16/19), chunk 11/14
+[14:43:44 +12m 53s | spinquanta] Repaired malformed JSON.
+[14:43:44 +12m 53s | spinquanta] Extracting: https://www.spinquanta.com/news/press-release (16/19), chunk 12/14
+[14:43:51 +13m 0s | spinquanta] Repaired malformed JSON.
+[14:43:51 +13m 0s | spinquanta] Extracting: https://www.spinquanta.com/news/press-release (16/19), chunk 13/14
+[14:43:57 +13m 6s | spinquanta] Repaired malformed JSON.
+[14:43:57 +13m 6s | spinquanta] Extracting: https://www.spinquanta.com/news/press-release (16/19), chunk 14/14
+[14:44:02 +13m 11s | spinquanta] Reading page (17/19): https://www.spinquanta.com/news-detail/spinq-and-hubei-university-joint-quantum-algorithm-research-published-in-quantum-information-processing20260525
+[14:44:02 +13m 11s | spinquanta] Extracting: https://www.spinquanta.com/news-detail/spinq-and-hubei-university-joint-quantum-algorithm-research-published-in-quantum-information-processing20260525 (17/19), chunk 1/10
+[14:44:08 +13m 17s | spinquanta] Repaired malformed JSON.
+[14:44:08 +13m 17s | spinquanta] Extracting: https://www.spinquanta.com/news-detail/spinq-and-hubei-university-joint-quantum-algorithm-research-published-in-quantum-information-processing20260525 (17/19), chunk 2/10
+[14:44:13 +13m 23s | spinquanta] Repaired malformed JSON.
+[14:44:13 +13m 23s | spinquanta] Extracting: https://www.spinquanta.com/news-detail/spinq-and-hubei-university-joint-quantum-algorithm-research-published-in-quantum-information-processing20260525 (17/19), chunk 3/10
+[14:44:21 +13m 30s | spinquanta] Repaired malformed JSON.
+[14:44:21 +13m 30s | spinquanta] Extracting: https://www.spinquanta.com/news-detail/spinq-and-hubei-university-joint-quantum-algorithm-research-published-in-quantum-information-processing20260525 (17/19), chunk 4/10
+[14:44:30 +13m 39s | spinquanta] Repaired malformed JSON.
+[14:44:30 +13m 39s | spinquanta] Extracting: https://www.spinquanta.com/news-detail/spinq-and-hubei-university-joint-quantum-algorithm-research-published-in-quantum-information-processing20260525 (17/19), chunk 5/10
+[14:44:35 +13m 45s | spinquanta] Repaired malformed JSON.
+[14:44:35 +13m 45s | spinquanta] Extracting: https://www.spinquanta.com/news-detail/spinq-and-hubei-university-joint-quantum-algorithm-research-published-in-quantum-information-processing20260525 (17/19), chunk 6/10
+[14:44:44 +13m 53s | spinquanta] Repaired malformed JSON.
+[14:44:44 +13m 53s | spinquanta] Extracting: https://www.spinquanta.com/news-detail/spinq-and-hubei-university-joint-quantum-algorithm-research-published-in-quantum-information-processing20260525 (17/19), chunk 7/10
+[14:44:52 +14m 1s | spinquanta] Repaired malformed JSON.
+[14:44:52 +14m 1s | spinquanta] Extracting: https://www.spinquanta.com/news-detail/spinq-and-hubei-university-joint-quantum-algorithm-research-published-in-quantum-information-processing20260525 (17/19), chunk 8/10
+[14:44:58 +14m 7s | spinquanta] Repaired malformed JSON.
+[14:44:58 +14m 7s | spinquanta] Extracting: https://www.spinquanta.com/news-detail/spinq-and-hubei-university-joint-quantum-algorithm-research-published-in-quantum-information-processing20260525 (17/19), chunk 9/10
+[14:45:07 +14m 16s | spinquanta] Repaired malformed JSON.
+[14:45:07 +14m 16s | spinquanta] Extracting: https://www.spinquanta.com/news-detail/spinq-and-hubei-university-joint-quantum-algorithm-research-published-in-quantum-information-processing20260525 (17/19), chunk 10/10
+[14:45:14 +14m 23s | spinquanta] Repaired malformed JSON.
+[14:45:14 +14m 23s | spinquanta] Reading page (18/19): https://www.spinquanta.com/news-detail/spinq-and-hkust-joint-research-on-quantum-error-correction20260423
+[14:45:14 +14m 23s | spinquanta] Extracting: https://www.spinquanta.com/news-detail/spinq-and-hkust-joint-research-on-quantum-error-correction20260423 (18/19), chunk 1/10
+[14:45:20 +14m 29s | spinquanta] Repaired malformed JSON.
+[14:45:20 +14m 29s | spinquanta] Extracting: https://www.spinquanta.com/news-detail/spinq-and-hkust-joint-research-on-quantum-error-correction20260423 (18/19), chunk 2/10
+[14:45:26 +14m 36s | spinquanta] Repaired malformed JSON.
+[14:45:26 +14m 36s | spinquanta] Extracting: https://www.spinquanta.com/news-detail/spinq-and-hkust-joint-research-on-quantum-error-correction20260423 (18/19), chunk 3/10
+[14:45:33 +14m 43s | spinquanta] Repaired malformed JSON.
+[14:45:33 +14m 43s | spinquanta] Extracting: https://www.spinquanta.com/news-detail/spinq-and-hkust-joint-research-on-quantum-error-correction20260423 (18/19), chunk 4/10
+[14:45:41 +14m 51s | spinquanta] Repaired malformed JSON.
+[14:45:41 +14m 51s | spinquanta] Extracting: https://www.spinquanta.com/news-detail/spinq-and-hkust-joint-research-on-quantum-error-correction20260423 (18/19), chunk 5/10
+[14:45:48 +14m 57s | spinquanta] Repaired malformed JSON.
+[14:45:48 +14m 57s | spinquanta] Extracting: https://www.spinquanta.com/news-detail/spinq-and-hkust-joint-research-on-quantum-error-correction20260423 (18/19), chunk 6/10
+[14:45:54 +15m 3s | spinquanta] Repaired malformed JSON.
+[14:45:54 +15m 3s | spinquanta] Extracting: https://www.spinquanta.com/news-detail/spinq-and-hkust-joint-research-on-quantum-error-correction20260423 (18/19), chunk 7/10
+[14:45:59 +15m 8s | spinquanta] Repaired malformed JSON.
+[14:45:59 +15m 8s | spinquanta] Extracting: https://www.spinquanta.com/news-detail/spinq-and-hkust-joint-research-on-quantum-error-correction20260423 (18/19), chunk 8/10
+[14:46:06 +15m 15s | spinquanta] Repaired malformed JSON.
+[14:46:06 +15m 15s | spinquanta] Extracting: https://www.spinquanta.com/news-detail/spinq-and-hkust-joint-research-on-quantum-error-correction20260423 (18/19), chunk 9/10
+[14:46:14 +15m 23s | spinquanta] Repaired malformed JSON.
+[14:46:14 +15m 23s | spinquanta] Extracting: https://www.spinquanta.com/news-detail/spinq-and-hkust-joint-research-on-quantum-error-correction20260423 (18/19), chunk 10/10
+[14:46:23 +15m 32s | spinquanta] Repaired malformed JSON.
+[14:46:23 +15m 32s | spinquanta] Reading page (19/19): https://www.spinquanta.com/term
+[14:46:23 +15m 32s | spinquanta] Extracting: https://www.spinquanta.com/term (19/19), chunk 1/10
+[14:46:27 +15m 37s | spinquanta] Extracting: https://www.spinquanta.com/term (19/19), chunk 2/10
+[14:46:31 +15m 40s | spinquanta] Extracting: https://www.spinquanta.com/term (19/19), chunk 3/10
+[14:46:35 +15m 45s | spinquanta] Extracting: https://www.spinquanta.com/term (19/19), chunk 4/10
+[14:46:39 +15m 49s | spinquanta] Extracting: https://www.spinquanta.com/term (19/19), chunk 5/10
+[14:46:47 +15m 56s | spinquanta] Repaired malformed JSON.
+[14:46:47 +15m 56s | spinquanta] Extracting: https://www.spinquanta.com/term (19/19), chunk 6/10
+[14:46:51 +16m 0s | spinquanta] Extracting: https://www.spinquanta.com/term (19/19), chunk 7/10
+[14:46:59 +16m 8s | spinquanta] Repaired malformed JSON.
+[14:46:59 +16m 8s | spinquanta] Extracting: https://www.spinquanta.com/term (19/19), chunk 8/10
+[14:47:05 +16m 14s | spinquanta] Extracting: https://www.spinquanta.com/term (19/19), chunk 9/10
+[14:47:09 +16m 19s | spinquanta] Extracting: https://www.spinquanta.com/term (19/19), chunk 10/10
+[14:47:16 +16m 26s | spinquanta] Saved 1_actor_results.json with 374 extracted records
+
+[14:47:16 +16m 26s | spinquanta] === 2 clean actors ===
+[14:47:17 +16m 26s | spinquanta] Loaded 374 extracted records
+[14:47:17 +16m 26s | spinquanta] Saved 2_actor_nodes.json with 49 canonical actor nodes
+
+[14:47:17 +16m 26s | spinquanta] === 3 interaction extraction ===
+[14:47:17 +16m 27s | spinquanta] Extracting interactions: https://www.spinquanta.com/news/media-coverage (1/19), chunk 1/6
+[14:47:19 +16m 28s | spinquanta] Extracting interactions: https://www.spinquanta.com/news/media-coverage (1/19), chunk 2/6
+[14:47:21 +16m 30s | spinquanta] Extracting interactions: https://www.spinquanta.com/news/media-coverage (1/19), chunk 3/6
+[14:47:22 +16m 31s | spinquanta] Extracting interactions: https://www.spinquanta.com/news/media-coverage (1/19), chunk 4/6
+[14:47:24 +16m 33s | spinquanta] Extracting interactions: https://www.spinquanta.com/news/media-coverage (1/19), chunk 5/6
+[14:47:39 +16m 49s | spinquanta] Extracting interactions: https://www.spinquanta.com/news/media-coverage (1/19), chunk 6/6
+[14:47:55 +17m 4s | spinquanta] Extracting interactions: https://www.spinquanta.com/quantum-computing-solutions/education (2/19), chunk 3/27
+[14:48:11 +17m 20s | spinquanta] Extracting interactions: https://www.spinquanta.com/quantum-computing-solutions/education (2/19), chunk 4/27
+[14:48:13 +17m 22s | spinquanta] Extracting interactions: https://www.spinquanta.com/quantum-computing-solutions/education (2/19), chunk 5/27
+[14:48:16 +17m 25s | spinquanta] Extracting interactions: https://www.spinquanta.com/quantum-computing-solutions/education (2/19), chunk 6/27
+[14:48:22 +17m 31s | spinquanta] Extracting interactions: https://www.spinquanta.com/quantum-computing-solutions/education (2/19), chunk 7/27
+[14:48:23 +17m 33s | spinquanta] Extracting interactions: https://www.spinquanta.com/quantum-computing-solutions/education (2/19), chunk 8/27
+[14:48:33 +17m 42s | spinquanta] Extracting interactions: https://www.spinquanta.com/quantum-computing-solutions/education (2/19), chunk 9/27
+[14:48:42 +17m 51s | spinquanta] Extracting interactions: https://www.spinquanta.com/quantum-computing-solutions/education (2/19), chunk 10/27
+[14:48:55 +18m 5s | spinquanta] Extracting interactions: https://www.spinquanta.com/quantum-computing-solutions/education (2/19), chunk 11/27
+[14:49:11 +18m 20s | spinquanta] Extracting interactions: https://www.spinquanta.com/quantum-computing-solutions/education (2/19), chunk 12/27
+[14:49:23 +18m 32s | spinquanta] Extracting interactions: https://www.spinquanta.com/quantum-computing-solutions/education (2/19), chunk 13/27
+[14:49:33 +18m 42s | spinquanta] Extracting interactions: https://www.spinquanta.com/quantum-computing-solutions/education (2/19), chunk 14/27
+[14:49:44 +18m 53s | spinquanta] Extracting interactions: https://www.spinquanta.com/quantum-computing-solutions/education (2/19), chunk 17/27
+[14:49:46 +18m 55s | spinquanta] Extracting interactions: https://www.spinquanta.com/quantum-computing-solutions/education (2/19), chunk 18/27
+[14:49:48 +18m 57s | spinquanta] Extracting interactions: https://www.spinquanta.com/quantum-computing-solutions/education (2/19), chunk 19/27
+[14:49:51 +19m 0s | spinquanta] Extracting interactions: https://www.spinquanta.com/quantum-computing-solutions/education (2/19), chunk 20/27
+[14:49:53 +19m 2s | spinquanta] Extracting interactions: https://www.spinquanta.com/quantum-computing-solutions/education (2/19), chunk 25/27
+[14:49:56 +19m 6s | spinquanta] Extracting interactions: https://www.spinquanta.com/quantum-computing-solutions/education (2/19), chunk 26/27
+[14:50:19 +19m 28s | spinquanta] Extracting interactions: https://www.spinquanta.com/quantum-computing-solutions/education (2/19), chunk 27/27
+[14:50:38 +19m 48s | spinquanta] Extracting interactions: https://www.spinquanta.com/quantum-computing-solutions/finance (3/19), chunk 2/16
+[14:50:43 +19m 52s | spinquanta] Extracting interactions: https://www.spinquanta.com/quantum-computing-solutions/finance (3/19), chunk 3/16
+[14:50:52 +20m 1s | spinquanta] Extracting interactions: https://www.spinquanta.com/quantum-computing-solutions/finance (3/19), chunk 4/16
+[14:50:57 +20m 7s | spinquanta] Extracting interactions: https://www.spinquanta.com/quantum-computing-solutions/finance (3/19), chunk 5/16
+[14:51:04 +20m 13s | spinquanta] Extracting interactions: https://www.spinquanta.com/quantum-computing-solutions/finance (3/19), chunk 6/16
+[14:51:05 +20m 14s | spinquanta] Extracting interactions: https://www.spinquanta.com/quantum-computing-solutions/finance (3/19), chunk 7/16
+[14:51:07 +20m 16s | spinquanta] Extracting interactions: https://www.spinquanta.com/quantum-computing-solutions/finance (3/19), chunk 8/16
+[14:51:08 +20m 18s | spinquanta] Extracting interactions: https://www.spinquanta.com/quantum-computing-solutions/finance (3/19), chunk 9/16
+[14:51:10 +20m 20s | spinquanta] Extracting interactions: https://www.spinquanta.com/quantum-computing-solutions/finance (3/19), chunk 14/16
+[14:51:14 +20m 24s | spinquanta] Extracting interactions: https://www.spinquanta.com/quantum-computing-solutions/finance (3/19), chunk 15/16
+[14:51:24 +20m 33s | spinquanta] Extracting interactions: https://www.spinquanta.com/quantum-computing-solutions/finance (3/19), chunk 16/16
+[14:51:46 +20m 55s | spinquanta] Extracting interactions: https://www.spinquanta.com/news (4/19), chunk 2/14
+[14:51:51 +21m 0s | spinquanta] Extracting interactions: https://www.spinquanta.com/news (4/19), chunk 3/14
+[14:51:58 +21m 7s | spinquanta] Extracting interactions: https://www.spinquanta.com/news (4/19), chunk 4/14
+[14:52:02 +21m 11s | spinquanta] Extracting interactions: https://www.spinquanta.com/news (4/19), chunk 6/14
+[14:52:07 +21m 16s | spinquanta] Extracting interactions: https://www.spinquanta.com/news (4/19), chunk 7/14
+[14:52:12 +21m 22s | spinquanta] Extracting interactions: https://www.spinquanta.com/news (4/19), chunk 8/14
+[14:52:19 +21m 29s | spinquanta] Extracting interactions: https://www.spinquanta.com/news (4/19), chunk 9/14
+[14:52:24 +21m 34s | spinquanta] Extracting interactions: https://www.spinquanta.com/news (4/19), chunk 10/14
+[14:52:26 +21m 35s | spinquanta] Extracting interactions: https://www.spinquanta.com/news (4/19), chunk 11/14
+[14:52:28 +21m 37s | spinquanta] Extracting interactions: https://www.spinquanta.com/news (4/19), chunk 12/14
+[14:52:35 +21m 45s | spinquanta] Extracting interactions: https://www.spinquanta.com/news (4/19), chunk 13/14
+[14:52:50 +21m 59s | spinquanta] Extracting interactions: https://www.spinquanta.com/news (4/19), chunk 14/14
+[14:53:17 +22m 27s | spinquanta] Extracting interactions: https://www.spinquanta.com/quantum-computing-solutions/biomedince (5/19), chunk 2/15
+[14:53:21 +22m 30s | spinquanta] Extracting interactions: https://www.spinquanta.com/quantum-computing-solutions/biomedince (5/19), chunk 3/15
+[14:53:24 +22m 33s | spinquanta] Extracting interactions: https://www.spinquanta.com/quantum-computing-solutions/biomedince (5/19), chunk 4/15
+[14:53:28 +22m 37s | spinquanta] Extracting interactions: https://www.spinquanta.com/quantum-computing-solutions/biomedince (5/19), chunk 5/15
+[14:53:35 +22m 44s | spinquanta] Extracting interactions: https://www.spinquanta.com/quantum-computing-solutions/biomedince (5/19), chunk 6/15
+[14:53:36 +22m 45s | spinquanta] Extracting interactions: https://www.spinquanta.com/quantum-computing-solutions/biomedince (5/19), chunk 7/15
+[14:53:38 +22m 47s | spinquanta] Extracting interactions: https://www.spinquanta.com/quantum-computing-solutions/biomedince (5/19), chunk 8/15
+[14:53:39 +22m 48s | spinquanta] Extracting interactions: https://www.spinquanta.com/quantum-computing-solutions/biomedince (5/19), chunk 13/15
+[14:53:41 +22m 50s | spinquanta] Extracting interactions: https://www.spinquanta.com/quantum-computing-solutions/biomedince (5/19), chunk 14/15
+[14:54:06 +23m 15s | spinquanta] Extracting interactions: https://www.spinquanta.com/quantum-computing-solutions/biomedince (5/19), chunk 15/15
+[14:54:31 +23m 41s | spinquanta] Extracting interactions: https://www.spinquanta.com/contact-us (6/19), chunk 2/11
+[14:54:33 +23m 42s | spinquanta] Extracting interactions: https://www.spinquanta.com/contact-us (6/19), chunk 3/11
+[14:54:35 +23m 44s | spinquanta] Extracting interactions: https://www.spinquanta.com/contact-us (6/19), chunk 4/11
+[14:54:37 +23m 46s | spinquanta] Extracting interactions: https://www.spinquanta.com/contact-us (6/19), chunk 5/11
+[14:54:39 +23m 48s | spinquanta] Extracting interactions: https://www.spinquanta.com/contact-us (6/19), chunk 9/11
+[14:54:45 +23m 55s | spinquanta] Extracting interactions: https://www.spinquanta.com/contact-us (6/19), chunk 10/11
+[14:54:57 +24m 7s | spinquanta] Extracting interactions: https://www.spinquanta.com/contact-us (6/19), chunk 11/11
+[14:55:18 +24m 27s | spinquanta] Extracting interactions: https://www.spinquanta.com/news/blog (7/19), chunk 2/11
+[14:55:20 +24m 29s | spinquanta] Extracting interactions: https://www.spinquanta.com/news/blog (7/19), chunk 3/11
+[14:55:21 +24m 31s | spinquanta] Extracting interactions: https://www.spinquanta.com/news/blog (7/19), chunk 7/11
+[14:55:23 +24m 32s | spinquanta] Extracting interactions: https://www.spinquanta.com/news/blog (7/19), chunk 8/11
+[14:55:27 +24m 36s | spinquanta] Extracting interactions: https://www.spinquanta.com/news/blog (7/19), chunk 9/11
+[14:55:34 +24m 43s | spinquanta] Extracting interactions: https://www.spinquanta.com/news/blog (7/19), chunk 10/11
+[14:55:47 +24m 56s | spinquanta] Extracting interactions: https://www.spinquanta.com/news/blog (7/19), chunk 11/11
+[14:56:03 +25m 12s | spinquanta] Extracting interactions: https://www.spinquanta.com/products/quantum-computing-software (8/19), chunk 2/7
+[14:56:06 +25m 15s | spinquanta] Extracting interactions: https://www.spinquanta.com/products/quantum-computing-software (8/19), chunk 3/7
+[14:56:10 +25m 19s | spinquanta] Extracting interactions: https://www.spinquanta.com/products/quantum-computing-software (8/19), chunk 4/7
+[14:56:13 +25m 23s | spinquanta] Extracting interactions: https://www.spinquanta.com/products/quantum-computing-software (8/19), chunk 5/7
+[14:56:29 +25m 38s | spinquanta] Extracting interactions: https://www.spinquanta.com/products/quantum-computing-software (8/19), chunk 6/7
+[14:56:39 +25m 49s | spinquanta] Extracting interactions: https://www.spinquanta.com/products/quantum-computing-software (8/19), chunk 7/7
+[14:56:55 +26m 4s | spinquanta] Extracting interactions: https://www.spinquanta.com (9/19), chunk 2/10
+[14:56:57 +26m 6s | spinquanta] Extracting interactions: https://www.spinquanta.com (9/19), chunk 3/10
+[14:57:02 +26m 11s | spinquanta] Extracting interactions: https://www.spinquanta.com (9/19), chunk 5/10
+[14:57:10 +26m 19s | spinquanta] Extracting interactions: https://www.spinquanta.com (9/19), chunk 6/10
+[14:57:17 +26m 26s | spinquanta] Extracting interactions: https://www.spinquanta.com (9/19), chunk 8/10
+[14:57:24 +26m 33s | spinquanta] Extracting interactions: https://www.spinquanta.com (9/19), chunk 9/10
+[14:57:33 +26m 42s | spinquanta] Extracting interactions: https://www.spinquanta.com (9/19), chunk 10/10
+[14:57:49 +26m 58s | spinquanta] Extracting interactions: https://www.spinquanta.com/products/superconducting-quantum-products (10/19), chunk 2/8
+[14:57:58 +27m 7s | spinquanta] Extracting interactions: https://www.spinquanta.com/products/superconducting-quantum-products (10/19), chunk 3/8
+[14:58:04 +27m 13s | spinquanta] Extracting interactions: https://www.spinquanta.com/products/superconducting-quantum-products (10/19), chunk 6/8
+[14:58:15 +27m 24s | spinquanta] Extracting interactions: https://www.spinquanta.com/products/superconducting-quantum-products (10/19), chunk 7/8
+[14:58:28 +27m 38s | spinquanta] Extracting interactions: https://www.spinquanta.com/products/superconducting-quantum-products (10/19), chunk 8/8
+[14:58:49 +27m 58s | spinquanta] Extracting interactions: https://www.spinquanta.com/private-policy (11/19), chunk 1/14
+[14:58:51 +28m 0s | spinquanta] Extracting interactions: https://www.spinquanta.com/private-policy (11/19), chunk 2/14
+[14:58:57 +28m 6s | spinquanta] Extracting interactions: https://www.spinquanta.com/private-policy (11/19), chunk 3/14
+[14:59:04 +28m 13s | spinquanta] Extracting interactions: https://www.spinquanta.com/private-policy (11/19), chunk 12/14
+[14:59:06 +28m 15s | spinquanta] Extracting interactions: https://www.spinquanta.com/private-policy (11/19), chunk 13/14
+[14:59:18 +28m 27s | spinquanta] Extracting interactions: https://www.spinquanta.com/private-policy (11/19), chunk 14/14
+[14:59:32 +28m 41s | spinquanta] Extracting interactions: https://www.spinquanta.com/products/nmr-quantum-products (12/19), chunk 2/7
+[14:59:39 +28m 48s | spinquanta] Extracting interactions: https://www.spinquanta.com/products/nmr-quantum-products (12/19), chunk 3/7
+[14:59:46 +28m 55s | spinquanta] Extracting interactions: https://www.spinquanta.com/products/nmr-quantum-products (12/19), chunk 5/7
+[14:59:54 +29m 3s | spinquanta] Extracting interactions: https://www.spinquanta.com/products/nmr-quantum-products (12/19), chunk 6/7
+[15:00:08 +29m 17s | spinquanta] Extracting interactions: https://www.spinquanta.com/products/nmr-quantum-products (12/19), chunk 7/7
+[15:00:26 +29m 35s | spinquanta] Extracting interactions: https://www.spinquanta.com/quantum-computing-solutions/artificial-intelligence (13/19), chunk 2/16
+[15:00:28 +29m 37s | spinquanta] Extracting interactions: https://www.spinquanta.com/quantum-computing-solutions/artificial-intelligence (13/19), chunk 3/16
+[15:00:38 +29m 48s | spinquanta] Extracting interactions: https://www.spinquanta.com/quantum-computing-solutions/artificial-intelligence (13/19), chunk 4/16
+[15:00:46 +29m 55s | spinquanta] Extracting interactions: https://www.spinquanta.com/quantum-computing-solutions/artificial-intelligence (13/19), chunk 5/16
+[15:00:51 +30m 1s | spinquanta] Extracting interactions: https://www.spinquanta.com/quantum-computing-solutions/artificial-intelligence (13/19), chunk 6/16
+[15:00:53 +30m 2s | spinquanta] Extracting interactions: https://www.spinquanta.com/quantum-computing-solutions/artificial-intelligence (13/19), chunk 7/16
+[15:00:54 +30m 4s | spinquanta] Extracting interactions: https://www.spinquanta.com/quantum-computing-solutions/artificial-intelligence (13/19), chunk 8/16
+[15:00:56 +30m 5s | spinquanta] Extracting interactions: https://www.spinquanta.com/quantum-computing-solutions/artificial-intelligence (13/19), chunk 9/16
+[15:00:58 +30m 8s | spinquanta] Extracting interactions: https://www.spinquanta.com/quantum-computing-solutions/artificial-intelligence (13/19), chunk 14/16
+[15:01:00 +30m 9s | spinquanta] Extracting interactions: https://www.spinquanta.com/quantum-computing-solutions/artificial-intelligence (13/19), chunk 15/16
+[15:01:12 +30m 21s | spinquanta] Extracting interactions: https://www.spinquanta.com/quantum-computing-solutions/artificial-intelligence (13/19), chunk 16/16
+[15:01:43 +30m 52s | spinquanta] Extracting interactions: https://www.spinquanta.com/news-detail/spinq-quantum-computing-products-showcased-in-europe-and-southeast-asia20260605 (14/19), chunk 2/10
+[15:01:53 +31m 2s | spinquanta] Extracting interactions: https://www.spinquanta.com/news-detail/spinq-quantum-computing-products-showcased-in-europe-and-southeast-asia20260605 (14/19), chunk 3/10
+[15:02:06 +31m 16s | spinquanta] Extracting interactions: https://www.spinquanta.com/news-detail/spinq-quantum-computing-products-showcased-in-europe-and-southeast-asia20260605 (14/19), chunk 4/10
+[15:02:16 +31m 25s | spinquanta] Extracting interactions: https://www.spinquanta.com/news-detail/spinq-quantum-computing-products-showcased-in-europe-and-southeast-asia20260605 (14/19), chunk 5/10
+[15:02:45 +31m 54s | spinquanta] Extracting interactions: https://www.spinquanta.com/news-detail/spinq-quantum-computing-products-showcased-in-europe-and-southeast-asia20260605 (14/19), chunk 6/10
+[15:02:59 +32m 9s | spinquanta] Extracting interactions: https://www.spinquanta.com/news-detail/spinq-quantum-computing-products-showcased-in-europe-and-southeast-asia20260605 (14/19), chunk 7/10
+[15:03:09 +32m 18s | spinquanta] Extracting interactions: https://www.spinquanta.com/news-detail/spinq-quantum-computing-products-showcased-in-europe-and-southeast-asia20260605 (14/19), chunk 8/10
+[15:03:21 +32m 30s | spinquanta] Extracting interactions: https://www.spinquanta.com/news-detail/spinq-quantum-computing-products-showcased-in-europe-and-southeast-asia20260605 (14/19), chunk 9/10
+[15:03:41 +32m 50s | spinquanta] Extracting interactions: https://www.spinquanta.com/about-us (15/19), chunk 2/10
+[15:03:46 +32m 55s | spinquanta] Extracting interactions: https://www.spinquanta.com/about-us (15/19), chunk 3/10
+[15:03:52 +33m 1s | spinquanta] Extracting interactions: https://www.spinquanta.com/about-us (15/19), chunk 7/10
+[15:04:01 +33m 10s | spinquanta] Extracting interactions: https://www.spinquanta.com/about-us (15/19), chunk 8/10
+[15:04:13 +33m 22s | spinquanta] Extracting interactions: https://www.spinquanta.com/about-us (15/19), chunk 9/10
+[15:04:29 +33m 38s | spinquanta] Extracting interactions: https://www.spinquanta.com/about-us (15/19), chunk 10/10
+[15:04:45 +33m 55s | spinquanta] Extracting interactions: https://www.spinquanta.com/news/press-release (16/19), chunk 2/14
+[15:04:49 +33m 58s | spinquanta] Extracting interactions: https://www.spinquanta.com/news/press-release (16/19), chunk 3/14
+[15:04:57 +34m 6s | spinquanta] Extracting interactions: https://www.spinquanta.com/news/press-release (16/19), chunk 4/14
+[15:05:01 +34m 10s | spinquanta] Extracting interactions: https://www.spinquanta.com/news/press-release (16/19), chunk 6/14
+[15:05:04 +34m 14s | spinquanta] Extracting interactions: https://www.spinquanta.com/news/press-release (16/19), chunk 7/14
+[15:05:12 +34m 21s | spinquanta] Extracting interactions: https://www.spinquanta.com/news/press-release (16/19), chunk 8/14
+[15:05:20 +34m 30s | spinquanta] Extracting interactions: https://www.spinquanta.com/news/press-release (16/19), chunk 9/14
+[15:05:26 +34m 35s | spinquanta] Extracting interactions: https://www.spinquanta.com/news/press-release (16/19), chunk 10/14
+[15:05:27 +34m 37s | spinquanta] Extracting interactions: https://www.spinquanta.com/news/press-release (16/19), chunk 11/14
+[15:05:29 +34m 38s | spinquanta] Extracting interactions: https://www.spinquanta.com/news/press-release (16/19), chunk 12/14
+[15:05:34 +34m 43s | spinquanta] Extracting interactions: https://www.spinquanta.com/news/press-release (16/19), chunk 13/14
+[15:06:04 +35m 13s | spinquanta] Extracting interactions: https://www.spinquanta.com/news/press-release (16/19), chunk 14/14
+[15:06:05 +35m 15s | spinquanta] Extracting interactions: https://www.spinquanta.com/news-detail/spinq-and-hubei-university-joint-quantum-algorithm-research-published-in-quantum-information-processing20260525 (17/19), chunk 2/10
+[15:06:14 +35m 23s | spinquanta] Extracting interactions: https://www.spinquanta.com/news-detail/spinq-and-hubei-university-joint-quantum-algorithm-research-published-in-quantum-information-processing20260525 (17/19), chunk 3/10
+[15:06:26 +35m 35s | spinquanta] Extracting interactions: https://www.spinquanta.com/news-detail/spinq-and-hubei-university-joint-quantum-algorithm-research-published-in-quantum-information-processing20260525 (17/19), chunk 4/10
+[15:06:43 +35m 52s | spinquanta] Extracting interactions: https://www.spinquanta.com/news-detail/spinq-and-hubei-university-joint-quantum-algorithm-research-published-in-quantum-information-processing20260525 (17/19), chunk 5/10
+[15:06:57 +36m 6s | spinquanta] Extracting interactions: https://www.spinquanta.com/news-detail/spinq-and-hubei-university-joint-quantum-algorithm-research-published-in-quantum-information-processing20260525 (17/19), chunk 6/10
+[15:07:02 +36m 12s | spinquanta] Extracting interactions: https://www.spinquanta.com/news-detail/spinq-and-hubei-university-joint-quantum-algorithm-research-published-in-quantum-information-processing20260525 (17/19), chunk 7/10
+[15:07:12 +36m 21s | spinquanta] Extracting interactions: https://www.spinquanta.com/news-detail/spinq-and-hubei-university-joint-quantum-algorithm-research-published-in-quantum-information-processing20260525 (17/19), chunk 8/10
+[15:07:26 +36m 36s | spinquanta] Extracting interactions: https://www.spinquanta.com/news-detail/spinq-and-hubei-university-joint-quantum-algorithm-research-published-in-quantum-information-processing20260525 (17/19), chunk 9/10
+[15:07:47 +36m 56s | spinquanta] Extracting interactions: https://www.spinquanta.com/news-detail/spinq-and-hkust-joint-research-on-quantum-error-correction20260423 (18/19), chunk 2/10
+[15:07:55 +37m 5s | spinquanta] Extracting interactions: https://www.spinquanta.com/news-detail/spinq-and-hkust-joint-research-on-quantum-error-correction20260423 (18/19), chunk 3/10
+[15:08:04 +37m 13s | spinquanta] Extracting interactions: https://www.spinquanta.com/news-detail/spinq-and-hkust-joint-research-on-quantum-error-correction20260423 (18/19), chunk 4/10
+[15:08:08 +37m 17s | spinquanta] Extracting interactions: https://www.spinquanta.com/news-detail/spinq-and-hkust-joint-research-on-quantum-error-correction20260423 (18/19), chunk 5/10
+[15:08:16 +37m 25s | spinquanta] Extracting interactions: https://www.spinquanta.com/news-detail/spinq-and-hkust-joint-research-on-quantum-error-correction20260423 (18/19), chunk 6/10
+[15:08:18 +37m 27s | spinquanta] Extracting interactions: https://www.spinquanta.com/news-detail/spinq-and-hkust-joint-research-on-quantum-error-correction20260423 (18/19), chunk 7/10
+[15:08:26 +37m 35s | spinquanta] Extracting interactions: https://www.spinquanta.com/news-detail/spinq-and-hkust-joint-research-on-quantum-error-correction20260423 (18/19), chunk 8/10
+[15:08:36 +37m 45s | spinquanta] Extracting interactions: https://www.spinquanta.com/news-detail/spinq-and-hkust-joint-research-on-quantum-error-correction20260423 (18/19), chunk 9/10
+[15:08:37 +37m 47s | spinquanta] Extracting interactions: https://www.spinquanta.com/term (19/19), chunk 1/10
+[15:08:39 +37m 48s | spinquanta] Extracting interactions: https://www.spinquanta.com/term (19/19), chunk 2/10
+[15:08:40 +37m 50s | spinquanta] Extracting interactions: https://www.spinquanta.com/term (19/19), chunk 7/10
+[15:08:44 +37m 53s | spinquanta] Extracting interactions: https://www.spinquanta.com/term (19/19), chunk 8/10
+[15:08:46 +37m 56s | spinquanta] Extracting interactions: https://www.spinquanta.com/term (19/19), chunk 9/10
+[15:09:08 +38m 17s | spinquanta] Extracting interactions: https://www.spinquanta.com/term (19/19), chunk 10/10
+[15:09:40 +38m 50s | spinquanta] Saved 3_interaction_results.json with 304 extracted interactions.
+
+[15:09:41 +38m 50s | spinquanta] === 4 clean interactions ===
+[15:09:41 +38m 50s | spinquanta] Saved 4_edges.json with 30 cleaned interactions.
+
+[15:09:41 +38m 50s | spinquanta] === 5 helix enrichment ===
+[15:09:41 +38m 50s | spinquanta] Wrote 5_nodes.json (49 actors)
+[15:09:41 +38m 50s | spinquanta] Wrote 5_edges.json (30 interactions)
+[15:09:41 +38m 50s | spinquanta] Actor helix counts: {'Academia': 15, 'Civil Society': 1, 'Industry': 12, 'Intermediary': 1, 'Unknown': 20}
+[15:09:41 +38m 50s | spinquanta] Functional-space counts: {'Innovation': 7, 'Intra-helix / Not classified': 23}
+
+[15:09:41 +38m 50s | spinquanta] === 6 network visualisation ===
+[15:09:42 +38m 51s | spinquanta] Wrote quantum_network.html
+[15:09:42 +38m 51s | spinquanta] Nodes: 49
+[15:09:42 +38m 51s | spinquanta] Edges: 11
+
+[15:09:42 +38m 51s | spinquanta] Done. Outputs written to: /home/lv/IDP/idpdeeptech/pipeline/site_outputs/spinquanta
+[15:09:42 +38m 51s | spinquanta] Log: /home/lv/IDP/idpdeeptech/pipeline/site_outputs/spinquanta/run.log
+
+========================================================================
+RUN FINISHED 2026-06-17 15:09:42  (OK)
+Started:     2026-06-17 14:30:51
+Elapsed:     38m 51s
+========================================================================

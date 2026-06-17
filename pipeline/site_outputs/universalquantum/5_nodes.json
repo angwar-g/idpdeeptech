@@ -1,0 +1,2865 @@
+[
+  {
+    "entity": "Airbus",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "large enterprises",
+    "role_in_text": "Null",
+    "technology_area": "other",
+    "occurrence_sentence": "Ich entwickle Marketingstrateg",
+    "source_document": "https://universalquantum.com/de/wer-wir-sind",
+    "page": 6,
+    "canonical_actor_key": "airbus",
+    "aliases": [
+      "Airbus"
+    ],
+    "pages": [
+      6
+    ],
+    "mentions": [
+      {
+        "entity": "Airbus",
+        "page": 6,
+        "role_in_text": "Null",
+        "occurrence_sentence": "Ich entwickle Marketingstrateg",
+        "source_document": "https://universalquantum.com/de/wer-wir-sind"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Industry",
+    "sphere": "Single",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "Amin Abolghasemi",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "individual",
+    "role_in_text": "Mechanical Engineer",
+    "technology_area": "quantum computing",
+    "occurrence_sentence": "![Amin Abolghasemi",
+    "source_document": "https://universalquantum.com/who-we-are",
+    "page": 5,
+    "canonical_actor_key": "amin abolghasemi",
+    "aliases": [
+      "Amin Abolghasemi"
+    ],
+    "pages": [
+      5
+    ],
+    "mentions": [
+      {
+        "entity": "Amin Abolghasemi",
+        "page": 5,
+        "role_in_text": "Mechanical Engineer",
+        "occurrence_sentence": "![Amin Abolghasemi",
+        "source_document": "https://universalquantum.com/who-we-are"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Unknown",
+    "sphere": "Unknown",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "unknown_category",
+    "classification_needs_review": true,
+    "classification_review_reason": "unmapped_category:individual; individual_requires_role_classification"
+  },
+  {
+    "entity": "Cathy Darling",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "individual",
+    "role_in_text": "Software Engineer",
+    "technology_area": "quantum computing",
+    "occurrence_sentence": "Mehr als nur Code Cathy Darling  Software Engineer",
+    "source_document": "https://universalquantum.com/de/hier-arbeiten",
+    "page": 6,
+    "confidence": "high",
+    "canonical_actor_key": "cathy darling",
+    "aliases": [
+      "Cathy Darling"
+    ],
+    "pages": [
+      6
+    ],
+    "mentions": [
+      {
+        "entity": "Cathy Darling",
+        "page": 6,
+        "role_in_text": "Software Engineer",
+        "occurrence_sentence": "Mehr als nur Code Cathy Darling  Software Engineer",
+        "source_document": "https://universalquantum.com/de/hier-arbeiten"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Unknown",
+    "sphere": "Unknown",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "unknown_category",
+    "classification_needs_review": true,
+    "classification_review_reason": "unmapped_category:individual; individual_requires_role_classification"
+  },
+  {
+    "entity": "DLR (German Aerospace Center)",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "national government institutions",
+    "role_in_text": "partner",
+    "technology_area": "quantum computing",
+    "occurrence_sentence": "The company's systems are already in deployment with DLR, the German Aerospace Center, and Universal Quantum is working with the Open Quantum Institute on applications including research in women's health.",
+    "source_document": "https://universalquantum.com/knowledge-hub/universal-quantum-selected-for-tech-nation-fifty-2026",
+    "page": 5,
+    "confidence": "high",
+    "canonical_actor_key": "dlr",
+    "aliases": [
+      "DLR",
+      "DLR (German Aerospace Center)",
+      "German Aerospace Center",
+      "German Aerospace Center (DLR)"
+    ],
+    "pages": [
+      3,
+      4,
+      5
+    ],
+    "mentions": [
+      {
+        "entity": "DLR (German Aerospace Center)",
+        "page": 5,
+        "role_in_text": "partner",
+        "occurrence_sentence": "The company's systems are already in deployment with DLR, the German Aerospace Center, and Universal Quantum is working with the Open Quantum Institute on applications including research in women's health.",
+        "source_document": "https://universalquantum.com/knowledge-hub/universal-quantum-selected-for-tech-nation-fifty-2026"
+      },
+      {
+        "entity": "German Aerospace Center (DLR)",
+        "page": 3,
+        "role_in_text": "partner",
+        "occurrence_sentence": "Read about our work with The German Aerospace Center (DLR) [here](https://universalquantum.com/knowledge-hub/development-of-a-scalable-user-friendly-quantum-processor-with-ion-trap-technology-for-dlr-qci).",
+        "source_document": "https://universalquantum.com/what-we-do"
+      },
+      {
+        "entity": "German Aerospace Center (DLR)",
+        "page": 4,
+        "role_in_text": "partner",
+        "occurrence_sentence": "Read about our work with The German Aerospace Center (DLR) [here",
+        "source_document": "https://universalquantum.com/what-we-do"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Government",
+    "sphere": "Single",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "European Commission",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "supranational government institutions",
+    "role_in_text": "provides adequacy of the protection of Personal Data in non-EU countries",
+    "technology_area": "unknown",
+    "occurrence_sentence": "We may transfer your Personal Data to countries that have been deemed to provide an adequate level of protection for Personal Data by the European Commission.",
+    "source_document": "https://universalquantum.com/de/node/13",
+    "page": 17,
+    "confidence": "high",
+    "canonical_actor_key": "european commission",
+    "aliases": [
+      "European Commission"
+    ],
+    "pages": [
+      17,
+      18,
+      19
+    ],
+    "mentions": [
+      {
+        "entity": "European Commission",
+        "page": 17,
+        "role_in_text": "provides adequacy of the protection of Personal Data in non-EU countries",
+        "occurrence_sentence": "We may transfer your Personal Data to countries that have been deemed to provide an adequate level of protection for Personal Data by the European Commission.",
+        "source_document": "https://universalquantum.com/de/node/13"
+      },
+      {
+        "entity": "European Commission",
+        "page": 18,
+        "role_in_text": "Provides adequacy of protection for Personal Data in non-EU countries",
+        "occurrence_sentence": "We may transfer your Personal Data to countries that have been deemed to provide an adequate level of protection for Personal Data by the European Commission.",
+        "source_document": "https://universalquantum.com/de/node/13"
+      },
+      {
+        "entity": "European Commission",
+        "page": 18,
+        "role_in_text": "Approves specific contracts for the transfer of Personal Data to third countries",
+        "occurrence_sentence": "Where we use service providers outside Europe, we may use specific contracts approved by the European Commission, which give Personal Data the same protection it has in Europe.",
+        "source_document": "https://universalquantum.com/de/node/13"
+      },
+      {
+        "entity": "European Commission",
+        "page": 19,
+        "role_in_text": "Provides model contracts for the transfer of Personal Data to third countries.",
+        "occurrence_sentence": "For further details, see [European Commission: Model contracts for the transfer of Personal Data to third countries.",
+        "source_document": "https://universalquantum.com/de/node/13"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Government",
+    "sphere": "Single",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "Freeke Heijman",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "innovation organizer",
+    "role_in_text": "Senior European Advisor",
+    "technology_area": "quantum computing",
+    "occurrence_sentence": "Her appointment strengthens Universal Quantum's engagement across the European quantum ecosystem at a moment when sovereign capability, cross border collaboration, and decisive policy action are central to securing the continent's role in the next phase of quantum computing.",
+    "source_document": "https://universalquantum.com/knowledge-hub/universal-quantum-appoints-Freeke-Heijman-as-senior-european-advisor",
+    "page": 5,
+    "confidence": "high",
+    "canonical_actor_key": "freeke heijman",
+    "aliases": [
+      "Freeke Heijman"
+    ],
+    "pages": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "mentions": [
+      {
+        "entity": "Freeke Heijman",
+        "page": 3,
+        "role_in_text": "Senior European Advisor",
+        "occurrence_sentence": "Universal Quantum, the UK based company building the world's most scalable quantum computers, today announced the appointment of Freeke Heijman as Senior European Advisor.",
+        "source_document": "https://universalquantum.com/de/node/181"
+      },
+      {
+        "entity": "Freeke Heijman",
+        "page": 4,
+        "role_in_text": "Senior European Advisor",
+        "occurrence_sentence": "Universal Quantum, the UK based company building the world's most scalable quantum computers, today announced the appointment of Freeke Heijman as Senior European Advisor.",
+        "source_document": "https://universalquantum.com/de/node/181"
+      },
+      {
+        "entity": "Freeke Heijman",
+        "page": 5,
+        "role_in_text": "Senior European Advisor",
+        "occurrence_sentence": "Universal Quantum appoints Freeke Heijman as senior European advisor",
+        "source_document": "https://universalquantum.com/de/node/181"
+      },
+      {
+        "entity": "Freeke Heijman",
+        "page": 5,
+        "role_in_text": "Senior European Advisor",
+        "occurrence_sentence": "Universal Quantum, the UK based company building the world's most scalable quantum computers, today announced the appointment of Freeke Heijman",
+        "source_document": "https://universalquantum.com/knowledge-hub/podcast/%C2%A32B-and-what-actually-matters"
+      },
+      {
+        "entity": "Freeke Heijman",
+        "page": 2,
+        "role_in_text": "Senior European Advisor",
+        "occurrence_sentence": "Universal Quantum, the UK based company building the world's most scalable quantum computers, today announced the appointment of Freeke Heijman as Senior European Advisor.",
+        "source_document": "https://universalquantum.com/knowledge-hub"
+      },
+      {
+        "entity": "Freeke Heijman",
+        "page": 3,
+        "role_in_text": "Senior European Advisor",
+        "occurrence_sentence": "Universal Quantum, the UK based company building the world's most scalable quantum computers, today announced the appointment of Freeke Heijman as Senior European Advisor.",
+        "source_document": "https://universalquantum.com/knowledge-hub"
+      },
+      {
+        "entity": "Freeke Heijman",
+        "page": 4,
+        "role_in_text": "Senior European Advisor",
+        "occurrence_sentence": "Universal Quantum appoints Freeke Heijman as senior European advisor",
+        "source_document": "https://universalquantum.com/knowledge-hub"
+      },
+      {
+        "entity": "Freeke Heijman",
+        "page": 3,
+        "role_in_text": "Senior European Advisor",
+        "occurrence_sentence": "Universal Quantum, the UK based company building the world's most scalable quantum computers, today announced the appointment of Freeke Heijman as Senior European Advisor.",
+        "source_document": "https://universalquantum.com/de/wissenszentrum/neuigkeiten-und-blog"
+      },
+      {
+        "entity": "Freeke Heijman",
+        "page": 4,
+        "role_in_text": "Senior European Advisor",
+        "occurrence_sentence": "Universal Quantum, the UK based company building the world's most scalable quantum computers, today announced the appointment of Freeke Heijman as Senior European Advisor.",
+        "source_document": "https://universalquantum.com/de/wissenszentrum/neuigkeiten-und-blog"
+      },
+      {
+        "entity": "Freeke Heijman",
+        "page": 5,
+        "role_in_text": "Senior European Advisor",
+        "occurrence_sentence": "Universal Quantum appoints Freeke Heijman as senior European advisor",
+        "source_document": "https://universalquantum.com/de/wissenszentrum/neuigkeiten-und-blog"
+      },
+      {
+        "entity": "Freeke Heijman",
+        "page": 6,
+        "role_in_text": "appointed as Senior European Advisor",
+        "occurrence_sentence": "Universal Quantum appoints Freeke Heijman as Senior European Advisor",
+        "source_document": "https://universalquantum.com/knowledge-hub/universal-quantum-selected-for-tech-nation-fifty-2026"
+      },
+      {
+        "entity": "Freeke Heijman",
+        "page": 7,
+        "role_in_text": "Senior European Advisor",
+        "occurrence_sentence": "Universal Quantum appoints Freeke Heijman as senior European advisor",
+        "source_document": "https://universalquantum.com/knowledge-hub/universal-quantum-selected-for-tech-nation-fifty-2026"
+      },
+      {
+        "entity": "Freeke Heijman",
+        "page": 1,
+        "role_in_text": "appointed as senior European advisor",
+        "occurrence_sentence": "Universal Quantum appoints Freeke Heijman as senior European advisor",
+        "source_document": "https://universalquantum.com/knowledge-hub/universal-quantum-appoints-Freeke-Heijman-as-senior-european-advisor"
+      },
+      {
+        "entity": "Freeke Heijman",
+        "page": 2,
+        "role_in_text": "senior european advisor",
+        "occurrence_sentence": "Universal Quantum appoints Freeke Heijman as senior european advisor",
+        "source_document": "https://universalquantum.com/knowledge-hub/universal-quantum-appoints-Freeke-Heijman-as-senior-european-advisor"
+      },
+      {
+        "entity": "Freeke Heijman",
+        "page": 3,
+        "role_in_text": "Senior European Advisor",
+        "occurrence_sentence": "Universal Quantum, the UK based company building the world's most scalable quantum computers, today",
+        "source_document": "https://universalquantum.com/knowledge-hub/universal-quantum-appoints-Freeke-Heijman-as-senior-european-advisor"
+      },
+      {
+        "entity": "Freeke Heijman",
+        "page": 4,
+        "role_in_text": "Senior European Advisor",
+        "occurrence_sentence": "Universal Quantum, the UK based company building the world's most scalable quantum computers, today",
+        "source_document": "https://universalquantum.com/knowledge-hub/universal-quantum-appoints-Freeke-Heijman-as-senior-european-advisor"
+      },
+      {
+        "entity": "Freeke Heijman",
+        "page": 5,
+        "role_in_text": "Senior European Advisor",
+        "occurrence_sentence": "Her appointment strengthens Universal Quantum's engagement across the European quantum ecosystem at a moment when sovereign capability, cross border collaboration, and decisive policy action are central to securing the continent's role in the next phase of quantum computing.",
+        "source_document": "https://universalquantum.com/knowledge-hub/universal-quantum-appoints-Freeke-Heijman-as-senior-european-advisor"
+      },
+      {
+        "entity": "Freeke Heijman",
+        "page": 6,
+        "role_in_text": "Senior European Advisor at Universal Quantum",
+        "occurrence_sentence": "Universal Quantum appoints Freeke Heijman as senior European advisor",
+        "source_document": "https://universalquantum.com/knowledge-hub/universal-quantum-appoints-Freeke-Heijman-as-senior-european-advisor"
+      },
+      {
+        "entity": "Freeke Heijman",
+        "page": 3,
+        "role_in_text": "Senior European Advisor",
+        "occurrence_sentence": "Universal Quantum, the UK based company building the world's most scalable quantum computers, today announced the appointment of Freeke Heijman as Senior European Advisor.",
+        "source_document": "https://universalquantum.com/de/node/180"
+      },
+      {
+        "entity": "Freeke Heijman",
+        "page": 4,
+        "role_in_text": "Senior European Advisor",
+        "occurrence_sentence": "Universal Quantum, the UK based company building the world's most scalable quantum computers, today announced the appointment of Freeke Heijman as Senior European Advisor.",
+        "source_document": "https://universalquantum.com/de/node/180"
+      },
+      {
+        "entity": "Freeke Heijman",
+        "page": 3,
+        "role_in_text": "Senior European Advisor",
+        "occurrence_sentence": "Universal Quantum, the UK based company building the world's most scalable quantum computers, today announced the appointment",
+        "source_document": "https://universalquantum.com/knowledge-hub/podcast/the-quantum-rivalry-of-schr%C3%B6dinger-and-eisenberg"
+      },
+      {
+        "entity": "Freeke Heijman",
+        "page": 4,
+        "role_in_text": "Senior European Advisor",
+        "occurrence_sentence": "Universal Quantum, the UK based company building the world's most scalable quantum computers, today announced the appointment of",
+        "source_document": "https://universalquantum.com/knowledge-hub/podcast/the-quantum-rivalry-of-schr%C3%B6dinger-and-eisenberg"
+      },
+      {
+        "entity": "Freeke Heijman",
+        "page": 3,
+        "role_in_text": "Senior European Advisor",
+        "occurrence_sentence": "Universal Quantum, the UK based company building the world's most scalable quantum computers, today announced the appointment of Freeke Heijman as Senior European Advisor.",
+        "source_document": "https://universalquantum.com/de/wissenszentrum"
+      },
+      {
+        "entity": "Freeke Heijman",
+        "page": 4,
+        "role_in_text": "Senior European Advisor",
+        "occurrence_sentence": "Universal Quantum, the UK based company building the world's most scalable quantum computers, today announced the appointment of Freeke Heijman as Senior European Advisor.",
+        "source_document": "https://universalquantum.com/de/wissenszentrum"
+      },
+      {
+        "entity": "Freeke Heijman",
+        "page": 5,
+        "role_in_text": "Senior European Advisor",
+        "occurrence_sentence": "Universal Quantum appoints Freeke Heijman as senior European advisor",
+        "source_document": "https://universalquantum.com/de/wissenszentrum"
+      },
+      {
+        "entity": "Freeke Heijman",
+        "page": 4,
+        "role_in_text": "Senior European Advisor",
+        "occurrence_sentence": "Universal Quantum, the UK based company building the world's most scalable quantum computers, today announced the appointment of Freeke Heijman as",
+        "source_document": "https://universalquantum.com/knowledge-hub/podcast/the-wiring-problem-in-large-scale-quantum-computers"
+      },
+      {
+        "entity": "Freeke Heijman",
+        "page": 5,
+        "role_in_text": "Senior European Advisor",
+        "occurrence_sentence": "Universal Quantum, the UK based company building the world's most scalable quantum computers, today announced the appointment of Freeke Heijman as",
+        "source_document": "https://universalquantum.com/knowledge-hub/podcast/the-wiring-problem-in-large-scale-quantum-computers"
+      },
+      {
+        "entity": "Freeke Heijman",
+        "page": 4,
+        "role_in_text": "appointed as Senior European Advisor",
+        "occurrence_sentence": "Universal Quantum appoints Freeke Heijman as Senior European Advisor",
+        "source_document": "https://universalquantum.com"
+      },
+      {
+        "entity": "Freeke Heijman",
+        "page": 5,
+        "role_in_text": "Senior European Advisor",
+        "occurrence_sentence": "Universal Quantum, the UK based company building the world's most scalable quantum computers, today announced the appointment of Freeke Heijman as Senior European Advisor.",
+        "source_document": "https://universalquantum.com"
+      },
+      {
+        "entity": "Freeke Heijman",
+        "page": 2,
+        "role_in_text": "Senior European Advisor",
+        "occurrence_sentence": "Universal Quantum, the UK based company building the world's most scalable quantum computers, today announced the appointment of Freeke Heijman as Senior European Advisor.",
+        "source_document": "https://universalquantum.com/knowledge-hub/news-blog"
+      },
+      {
+        "entity": "Freeke Heijman",
+        "page": 3,
+        "role_in_text": "Senior European Advisor",
+        "occurrence_sentence": "Universal Quantum, the UK based company building the world's most scalable quantum computers, today announced the appointment of Freeke Heijman as Senior European Advisor.",
+        "source_document": "https://universalquantum.com/knowledge-hub/news-blog"
+      },
+      {
+        "entity": "Freeke Heijman",
+        "page": 4,
+        "role_in_text": "Senior European Advisor",
+        "occurrence_sentence": "Universal Quantum appoints Freeke Heijman as senior European advisor",
+        "source_document": "https://universalquantum.com/knowledge-hub/news-blog"
+      },
+      {
+        "entity": "Freeke Heijman",
+        "page": 4,
+        "role_in_text": "Senior European Advisor",
+        "occurrence_sentence": "Universal Quantum, the UK based company building the world's most scalable quantum computers, today announced the appointment of Freeke Heijman as Senior European Advisor.",
+        "source_document": "https://universalquantum.com/de"
+      },
+      {
+        "entity": "Freeke Heijman",
+        "page": 5,
+        "role_in_text": "Senior European Advisor",
+        "occurrence_sentence": "Universal Quantum, the UK based company building the world's most scalable quantum computers, today announced the appointment of Freeke Heijman as Senior European Advisor.",
+        "source_document": "https://universalquantum.com/de"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Intermediary",
+    "sphere": "Multi",
+    "r_and_d": "Non-R&D",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "Germany",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "country",
+    "role_in_text": "Location",
+    "technology_area": "unknown",
+    "occurrence_sentence": "Location: Germany, Hamburg, Hamburg",
+    "source_document": "https://universalquantum.com/de/hier-arbeiten",
+    "page": 8,
+    "confidence": "high",
+    "canonical_actor_key": "germany",
+    "aliases": [
+      "Germany"
+    ],
+    "pages": [
+      8,
+      9
+    ],
+    "mentions": [
+      {
+        "entity": "Germany",
+        "page": 8,
+        "role_in_text": "Location",
+        "occurrence_sentence": "Location: Germany, Hamburg, Hamburg",
+        "source_document": "https://universalquantum.com/de/hier-arbeiten"
+      },
+      {
+        "entity": "Germany",
+        "page": 9,
+        "role_in_text": "Location",
+        "occurrence_sentence": "Location: Germany, Hamburg, Hamburg",
+        "source_document": "https://universalquantum.com/de/hier-arbeiten"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Unknown",
+    "sphere": "Unknown",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "unknown_category",
+    "classification_needs_review": true,
+    "classification_review_reason": "unmapped_category:country"
+  },
+  {
+    "entity": "Hoxton Ventures",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "financial support institutions",
+    "role_in_text": "investor",
+    "technology_area": "deep tech general",
+    "occurrence_sentence": "![Hoxton Ventures](https://universalquantum.com/sites/default/files/2025-03/Hoxton%20Ventures%20logo.png)",
+    "source_document": "https://universalquantum.com/de/wer-wir-sind",
+    "page": 14,
+    "confidence": "high",
+    "canonical_actor_key": "hoxton ventures",
+    "aliases": [
+      "Hoxton Ventures"
+    ],
+    "pages": [
+      14
+    ],
+    "mentions": [
+      {
+        "entity": "Hoxton Ventures",
+        "page": 14,
+        "role_in_text": "investor",
+        "occurrence_sentence": "![Hoxton Ventures](https://universalquantum.com/sites/default/files/2025-03/Hoxton%20Ventures%20logo.png)",
+        "source_document": "https://universalquantum.com/de/wer-wir-sind"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Intermediary",
+    "sphere": "Multi",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "Ilan Elson",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "individual",
+    "role_in_text": "Vizepräsident, Betrieb",
+    "technology_area": "quantum computing",
+    "occurrence_sentence": "Ich bin Generalist und liebe es, mit engagierten Menschen zusammenzuarbeiten, um Weltklasse-Organisationen aufzubauen. Mein Werdegang umfasst biomedizinische Forschung, Unternehmensberatung und Technologie-Start-ups. Bei UQ unterstütze ich die Teams die für Personal, Finanzen, Vertrieb, Marketing und den generellen operativen Betrieb verantwortlich sind.",
+    "source_document": "https://universalquantum.com/de/wer-wir-sind",
+    "page": 6,
+    "confidence": "high",
+    "canonical_actor_key": "ilan elson",
+    "aliases": [
+      "Ilan Elson"
+    ],
+    "pages": [
+      5,
+      6,
+      7
+    ],
+    "mentions": [
+      {
+        "entity": "Ilan Elson",
+        "page": 6,
+        "role_in_text": "VP, Operations",
+        "occurrence_sentence": "VP, Operations  ### Ilan Elson",
+        "source_document": "https://universalquantum.com/who-we-are"
+      },
+      {
+        "entity": "Ilan Elson",
+        "page": 5,
+        "role_in_text": "VP of Operations",
+        "occurrence_sentence": "Beyond good intentions Ilan Elson  VP of Operations",
+        "source_document": "https://universalquantum.com/working-here"
+      },
+      {
+        "entity": "Ilan Elson",
+        "page": 6,
+        "role_in_text": "VP of Operations",
+        "occurrence_sentence": "Beyond good intentions Ilan Elson  VP of Operations",
+        "source_document": "https://universalquantum.com/working-here"
+      },
+      {
+        "entity": "Ilan Elson",
+        "page": 6,
+        "role_in_text": "Vizepräsident, Betrieb",
+        "occurrence_sentence": "Ich bin Generalist und liebe es, mit engagierten Menschen zusammenzuarbeiten, um Weltklasse-Organisationen aufzubauen. Mein Werdegang umfasst biomedizinische Forschung, Unternehmensberatung und Technologie-Start-ups. Bei UQ unterstütze ich die Teams die für Personal, Finanzen, Vertrieb, Marketing und den generellen operativen Betrieb verantwortlich sind.",
+        "source_document": "https://universalquantum.com/de/wer-wir-sind"
+      },
+      {
+        "entity": "Ilan Elson",
+        "page": 7,
+        "role_in_text": "Vizepräsident, Betrieb",
+        "occurrence_sentence": "### Ilan Elson\nVizepräsident, Betrieb",
+        "source_document": "https://universalquantum.com/de/wer-wir-sind"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Unknown",
+    "sphere": "Unknown",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "unknown_category",
+    "classification_needs_review": true,
+    "classification_review_reason": "unmapped_category:individual; individual_requires_role_classification"
+  },
+  {
+    "entity": "Information Commissioner's Office",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "national government institutions",
+    "role_in_text": "data protection supervisory authority",
+    "technology_area": "unknown",
+    "occurrence_sentence": "If you feel that your complaint has not been adequately resolved, please note that the GDPR gives you the right to contact your local data protection supervisory authority, which for the UK, is the Information Commissioner's Office.",
+    "source_document": "https://universalquantum.com/de/node/13",
+    "page": 9,
+    "confidence": "high",
+    "canonical_actor_key": "information commissioner s office",
+    "aliases": [
+      "Information Commissioner's Office"
+    ],
+    "pages": [
+      8,
+      9
+    ],
+    "mentions": [
+      {
+        "entity": "Information Commissioner's Office",
+        "page": 8,
+        "role_in_text": "data protection supervisory authority",
+        "occurrence_sentence": "the GDPR gives you the right to contact your local data protection supervisory authority, which for the UK, is the Information Commissioner's Office.",
+        "source_document": "https://universalquantum.com/de/node/13"
+      },
+      {
+        "entity": "Information Commissioner's Office",
+        "page": 9,
+        "role_in_text": "data protection supervisory authority",
+        "occurrence_sentence": "If you feel that your complaint has not been adequately resolved, please note that the GDPR gives you the right to contact your local data protection supervisory authority, which for the UK, is the Information Commissioner's Office.",
+        "source_document": "https://universalquantum.com/de/node/13"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Government",
+    "sphere": "Single",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "Japan",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "country",
+    "role_in_text": "Location",
+    "technology_area": "unknown",
+    "occurrence_sentence": "Location: Japan, Tokyo, Tokyo",
+    "source_document": "https://universalquantum.com/de/hier-arbeiten",
+    "page": 8,
+    "confidence": "high",
+    "canonical_actor_key": "japan",
+    "aliases": [
+      "Japan"
+    ],
+    "pages": [
+      8,
+      9
+    ],
+    "mentions": [
+      {
+        "entity": "Japan",
+        "page": 8,
+        "role_in_text": "Location",
+        "occurrence_sentence": "Location: Japan, Tokyo, Tokyo",
+        "source_document": "https://universalquantum.com/de/hier-arbeiten"
+      },
+      {
+        "entity": "Japan",
+        "page": 9,
+        "role_in_text": "",
+        "occurrence_sentence": "",
+        "source_document": "https://universalquantum.com/de/hier-arbeiten"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Unknown",
+    "sphere": "Unknown",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "unknown_category",
+    "classification_needs_review": true,
+    "classification_review_reason": "unmapped_category:country"
+  },
+  {
+    "entity": "Kanyin Ilori",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "individual",
+    "role_in_text": "Head of Marketing",
+    "technology_area": "quantum computing",
+    "occurrence_sentence": "Head of Marketing  ### Kanyin Ilori",
+    "source_document": "https://universalquantum.com/who-we-are",
+    "page": 6,
+    "confidence": "high",
+    "canonical_actor_key": "kanyin ilori",
+    "aliases": [
+      "Kanyin Ilori"
+    ],
+    "pages": [
+      6,
+      7,
+      8
+    ],
+    "mentions": [
+      {
+        "entity": "Kanyin Ilori",
+        "page": 6,
+        "role_in_text": "Head of Marketing",
+        "occurrence_sentence": "Head of Marketing  ### Kanyin Ilori",
+        "source_document": "https://universalquantum.com/who-we-are"
+      },
+      {
+        "entity": "Kanyin Ilori",
+        "page": 7,
+        "role_in_text": "Leiter Marketing",
+        "occurrence_sentence": "### Kanyin Ilori\nLeiter Marketing",
+        "source_document": "https://universalquantum.com/de/wer-wir-sind"
+      },
+      {
+        "entity": "Kanyin Ilori",
+        "page": 8,
+        "role_in_text": "Leiter Marketing",
+        "occurrence_sentence": "### Kanyin Ilori\nLeiter Marketing",
+        "source_document": "https://universalquantum.com/de/wer-wir-sind"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Unknown",
+    "sphere": "Unknown",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "unknown_category",
+    "classification_needs_review": true,
+    "classification_review_reason": "unmapped_category:individual; individual_requires_role_classification"
+  },
+  {
+    "entity": "LinkedIn",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "business support institutions",
+    "role_in_text": "Social media platform for professional networking",
+    "technology_area": "deep tech general",
+    "occurrence_sentence": "Hier finden Sie ein Verzeichnis technischer Ressourcen, die veröffentlicht wurden, um weitere Forschungen voranzutreiben. * [LinkedIn",
+    "source_document": "https://universalquantum.com/de/wissenszentrum",
+    "page": 6,
+    "canonical_actor_key": "linkedin",
+    "aliases": [
+      "LinkedIn"
+    ],
+    "pages": [
+      1,
+      2,
+      5,
+      6,
+      10
+    ],
+    "mentions": [
+      {
+        "entity": "LinkedIn",
+        "page": 2,
+        "role_in_text": "Social media platform",
+        "occurrence_sentence": "* [LinkedIn",
+        "source_document": "https://universalquantum.com/knowledge-hub/technical-resources"
+      },
+      {
+        "entity": "LinkedIn",
+        "page": 1,
+        "role_in_text": "Social media platform",
+        "occurrence_sentence": "* [LinkedIn",
+        "source_document": "https://universalquantum.com/contact-us"
+      },
+      {
+        "entity": "LinkedIn",
+        "page": 2,
+        "role_in_text": "social media platform",
+        "occurrence_sentence": "[LinkedIn",
+        "source_document": "https://universalquantum.com/de/node/181"
+      },
+      {
+        "entity": "LinkedIn",
+        "page": 2,
+        "role_in_text": "Social media platform.",
+        "occurrence_sentence": "* [LinkedIn",
+        "source_document": "https://universalquantum.com/who-we-are"
+      },
+      {
+        "entity": "LinkedIn",
+        "page": 2,
+        "role_in_text": "social media platform",
+        "occurrence_sentence": "* [LinkedIn",
+        "source_document": "https://universalquantum.com/knowledge-hub/podcast/%C2%A32B-and-what-actually-matters"
+      },
+      {
+        "entity": "LinkedIn",
+        "page": 5,
+        "role_in_text": "Social media platform for professional networking",
+        "occurrence_sentence": "Here, you can find a directory of technical resources, published to help drive further research.  * [LinkedIn",
+        "source_document": "https://universalquantum.com/knowledge-hub"
+      },
+      {
+        "entity": "LinkedIn",
+        "page": 2,
+        "role_in_text": "social media platform",
+        "occurrence_sentence": "* [LinkedIn",
+        "source_document": "https://universalquantum.com/de/wissenszentrum/neuigkeiten-und-blog"
+      },
+      {
+        "entity": "LinkedIn",
+        "page": 6,
+        "role_in_text": "social media platform",
+        "occurrence_sentence": "[LinkedIn",
+        "source_document": "https://universalquantum.com/de/wissenszentrum/neuigkeiten-und-blog"
+      },
+      {
+        "entity": "LinkedIn",
+        "page": 2,
+        "role_in_text": "social media platform",
+        "occurrence_sentence": "* [LinkedIn",
+        "source_document": "https://universalquantum.com/de/node/180"
+      },
+      {
+        "entity": "LinkedIn",
+        "page": 2,
+        "role_in_text": "social media platform",
+        "occurrence_sentence": "* [LinkedIn",
+        "source_document": "https://universalquantum.com/knowledge-hub/podcast/the-quantum-rivalry-of-schr%C3%B6dinger-and-eisenberg"
+      },
+      {
+        "entity": "LinkedIn",
+        "page": 6,
+        "role_in_text": "Social media platform for professional networking",
+        "occurrence_sentence": "Hier finden Sie ein Verzeichnis technischer Ressourcen, die veröffentlicht wurden, um weitere Forschungen voranzutreiben. * [LinkedIn",
+        "source_document": "https://universalquantum.com/de/wissenszentrum"
+      },
+      {
+        "entity": "LinkedIn",
+        "page": 2,
+        "role_in_text": "social media platform",
+        "occurrence_sentence": "* [LinkedIn",
+        "source_document": "https://universalquantum.com/voices-of-uq/everything-is-quantum"
+      },
+      {
+        "entity": "LinkedIn",
+        "page": 6,
+        "role_in_text": "Social media platform mentioned.",
+        "occurrence_sentence": "* [LinkedIn",
+        "source_document": "https://universalquantum.com/voices-of-uq/everything-is-quantum"
+      },
+      {
+        "entity": "LinkedIn",
+        "page": 2,
+        "role_in_text": "Social media platform",
+        "occurrence_sentence": "* [LinkedIn",
+        "source_document": "https://universalquantum.com/knowledge-hub/podcast/the-wiring-problem-in-large-scale-quantum-computers"
+      },
+      {
+        "entity": "LinkedIn",
+        "page": 1,
+        "role_in_text": "social media platform",
+        "occurrence_sentence": "* [LinkedIn",
+        "source_document": "https://universalquantum.com/knowledge-hub/news-blog"
+      },
+      {
+        "entity": "LinkedIn",
+        "page": 5,
+        "role_in_text": "social media platform",
+        "occurrence_sentence": "* [LinkedIn",
+        "source_document": "https://universalquantum.com/knowledge-hub/news-blog"
+      },
+      {
+        "entity": "LinkedIn",
+        "page": 10,
+        "role_in_text": "social media platform",
+        "occurrence_sentence": "[LinkedIn",
+        "source_document": "https://universalquantum.com/de/hier-arbeiten"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Intermediary",
+    "sphere": "Multi",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "Luc Gerardin",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "individual",
+    "role_in_text": "Head of Business Development",
+    "technology_area": "deep tech general",
+    "occurrence_sentence": "### Luc Gerardin Head of Business Development",
+    "source_document": "https://universalquantum.com/who-we-are",
+    "page": 7,
+    "confidence": "high",
+    "canonical_actor_key": "luc gerardin",
+    "aliases": [
+      "Luc Gerardin"
+    ],
+    "pages": [
+      5,
+      7,
+      8,
+      9
+    ],
+    "mentions": [
+      {
+        "entity": "Luc Gerardin",
+        "page": 7,
+        "role_in_text": "Head of Business Development",
+        "occurrence_sentence": "### Luc Gerardin Head of Business Development",
+        "source_document": "https://universalquantum.com/who-we-are"
+      },
+      {
+        "entity": "Luc Gerardin",
+        "page": 5,
+        "role_in_text": "Global Head of Business Development",
+        "occurrence_sentence": "Luc Gerardin, Global Head of Business Development, Universal",
+        "source_document": "https://universalquantum.com/knowledge-hub/universal-quantum-appoints-Freeke-Heijman-as-senior-european-advisor"
+      },
+      {
+        "entity": "Luc Gerardin",
+        "page": 5,
+        "role_in_text": "Global Head of Business Development",
+        "occurrence_sentence": "Luc Gerardin, Global Head of Business Development, Universal Quantum, commented:",
+        "source_document": "https://universalquantum.com/de/node/180"
+      },
+      {
+        "entity": "Luc Gerardin",
+        "page": 8,
+        "role_in_text": "Leiter Geschäftsentwicklung",
+        "occurrence_sentence": "### Luc Gerardin\nLeiter Geschäftsentwicklung",
+        "source_document": "https://universalquantum.com/de/wer-wir-sind"
+      },
+      {
+        "entity": "Luc Gerardin",
+        "page": 9,
+        "role_in_text": "Leiter Geschäftsentwicklung",
+        "occurrence_sentence": "### Luc Gerardin Leiter Geschäftsentwicklung",
+        "source_document": "https://universalquantum.com/de/wer-wir-sind"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Unknown",
+    "sphere": "Unknown",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "unknown_category",
+    "classification_needs_review": true,
+    "classification_review_reason": "unmapped_category:individual; individual_requires_role_classification"
+  },
+  {
+    "entity": "Mailchimp",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "large enterprises",
+    "role_in_text": "marketing platform",
+    "technology_area": "other",
+    "occurrence_sentence": "We use Mailchimp as our marketing platform.",
+    "source_document": "https://universalquantum.com/de/node/13",
+    "page": 8,
+    "confidence": "high",
+    "canonical_actor_key": "mailchimp",
+    "aliases": [
+      "Mailchimp"
+    ],
+    "pages": [
+      8,
+      9
+    ],
+    "mentions": [
+      {
+        "entity": "Mailchimp",
+        "page": 8,
+        "role_in_text": "marketing platform",
+        "occurrence_sentence": "We use Mailchimp as our marketing platform.",
+        "source_document": "https://universalquantum.com/de/node/13"
+      },
+      {
+        "entity": "Mailchimp",
+        "page": 9,
+        "role_in_text": "marketing platform",
+        "occurrence_sentence": "We use Mailchimp as our marketing platform.",
+        "source_document": "https://universalquantum.com/de/node/13"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Industry",
+    "sphere": "Single",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "Mary Garcia",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "individual",
+    "role_in_text": "Software Engineer",
+    "technology_area": "quantum computing",
+    "occurrence_sentence": "Stage dreams to quantum breakthroughs  Mary Garcia  Software Engineer",
+    "source_document": "https://universalquantum.com/working-here",
+    "page": 5,
+    "confidence": "high",
+    "canonical_actor_key": "mary garcia",
+    "aliases": [
+      "Mary Garcia"
+    ],
+    "pages": [
+      5,
+      6
+    ],
+    "mentions": [
+      {
+        "entity": "Mary Garcia",
+        "page": 5,
+        "role_in_text": "Software Engineer",
+        "occurrence_sentence": "Stage dreams to quantum breakthroughs  Mary Garcia  Software Engineer",
+        "source_document": "https://universalquantum.com/working-here"
+      },
+      {
+        "entity": "Mary Garcia",
+        "page": 6,
+        "role_in_text": "Software Engineer",
+        "occurrence_sentence": "Stage dreams to quantum breakthroughs  Mary Garcia  Software Engineer",
+        "source_document": "https://universalquantum.com/working-here"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Unknown",
+    "sphere": "Unknown",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "unknown_category",
+    "classification_needs_review": true,
+    "classification_review_reason": "unmapped_category:individual; individual_requires_role_classification"
+  },
+  {
+    "entity": "Nauta Capital",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "financial support institutions",
+    "role_in_text": "investor",
+    "technology_area": "deep tech general",
+    "occurrence_sentence": "![Nauta Capital",
+    "source_document": "https://universalquantum.com/de/wer-wir-sind",
+    "page": 14,
+    "canonical_actor_key": "nauta capital",
+    "aliases": [
+      "Nauta Capital"
+    ],
+    "pages": [
+      14
+    ],
+    "mentions": [
+      {
+        "entity": "Nauta Capital",
+        "page": 14,
+        "role_in_text": "investor",
+        "occurrence_sentence": "![Nauta Capital",
+        "source_document": "https://universalquantum.com/de/wer-wir-sind"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Intermediary",
+    "sphere": "Multi",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "Oliver Blume",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "individual",
+    "role_in_text": "Geschäftsführer, Deutschland",
+    "technology_area": "deep tech general",
+    "occurrence_sentence": "### Oliver Blume Geschäftsführer, Deutschland",
+    "source_document": "https://universalquantum.com/de/wer-wir-sind",
+    "page": 9,
+    "confidence": "high",
+    "canonical_actor_key": "oliver blume",
+    "aliases": [
+      "Oliver Blume"
+    ],
+    "pages": [
+      9,
+      10
+    ],
+    "mentions": [
+      {
+        "entity": "Oliver Blume",
+        "page": 9,
+        "role_in_text": "Geschäftsführer, Deutschland",
+        "occurrence_sentence": "### Oliver Blume Geschäftsführer, Deutschland",
+        "source_document": "https://universalquantum.com/de/wer-wir-sind"
+      },
+      {
+        "entity": "Oliver Blume",
+        "page": 10,
+        "role_in_text": "Geschäftsführer, Deutschland",
+        "occurrence_sentence": "### Oliver Blume Geschäftsführer, Deutschland",
+        "source_document": "https://universalquantum.com/de/wer-wir-sind"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Unknown",
+    "sphere": "Unknown",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "unknown_category",
+    "classification_needs_review": true,
+    "classification_review_reason": "unmapped_category:individual; individual_requires_role_classification"
+  },
+  {
+    "entity": "Open Quantum Institute",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "research institutes",
+    "role_in_text": "partner",
+    "technology_area": "quantum computing",
+    "occurrence_sentence": "The company's systems are already in deployment with DLR, the German Aerospace Center, and Universal Quantum is working with the Open Quantum Institute on applications including",
+    "source_document": "https://universalquantum.com/knowledge-hub/universal-quantum-selected-for-tech-nation-fifty-2026",
+    "page": 5,
+    "canonical_actor_key": "open quantum institute",
+    "aliases": [
+      "Open Quantum Institute"
+    ],
+    "pages": [
+      5
+    ],
+    "mentions": [
+      {
+        "entity": "Open Quantum Institute",
+        "page": 5,
+        "role_in_text": "partner",
+        "occurrence_sentence": "The company's systems are already in deployment with DLR, the German Aerospace Center, and Universal Quantum is working with the Open Quantum Institute on applications including",
+        "source_document": "https://universalquantum.com/knowledge-hub/universal-quantum-selected-for-tech-nation-fifty-2026"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Academia",
+    "sphere": "Single",
+    "r_and_d": "R&D",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "Parul Aggarwal",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "individual",
+    "role_in_text": "Ph.D. holder, postdoc, working at UQ",
+    "technology_area": "quantum computing",
+    "occurrence_sentence": "My life is just like that: the road less travelled. Growing up, I was raised in a very protective environment at home. So when I decided to pursue my Ph.D. outside of India, my parents were quite worried - but at the same time wanted me to have the best of opportunities.",
+    "source_document": "https://universalquantum.com/voices-of-uq/everything-is-quantum",
+    "page": 5,
+    "confidence": "high",
+    "canonical_actor_key": "parul aggarwal",
+    "aliases": [
+      "Parul Aggarwal"
+    ],
+    "pages": [
+      3,
+      4,
+      5,
+      6
+    ],
+    "mentions": [
+      {
+        "entity": "Parul Aggarwal",
+        "page": 3,
+        "role_in_text": "Quantum Engineer",
+        "occurrence_sentence": "Parul Aggarwal Quantum Engineer",
+        "source_document": "https://universalquantum.com/voices-of-uq/everything-is-quantum"
+      },
+      {
+        "entity": "Parul Aggarwal",
+        "page": 4,
+        "role_in_text": "Quantum Engineer",
+        "occurrence_sentence": "Parul Aggarwal Quantum Engineer",
+        "source_document": "https://universalquantum.com/voices-of-uq/everything-is-quantum"
+      },
+      {
+        "entity": "Parul Aggarwal",
+        "page": 5,
+        "role_in_text": "Ph.D. holder, postdoc, working at UQ",
+        "occurrence_sentence": "My life is just like that: the road less travelled. Growing up, I was raised in a very protective environment at home. So when I decided to pursue my Ph.D. outside of India, my parents were quite worried - but at the same time wanted me to have the best of opportunities.",
+        "source_document": "https://universalquantum.com/voices-of-uq/everything-is-quantum"
+      },
+      {
+        "entity": "Parul Aggarwal",
+        "page": 6,
+        "role_in_text": "Quanteningenieur",
+        "occurrence_sentence": "Alles ist Quantum Parul Aggarwal  Quanteningenieur",
+        "source_document": "https://universalquantum.com/de/hier-arbeiten"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Unknown",
+    "sphere": "Unknown",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "unknown_category",
+    "classification_needs_review": true,
+    "classification_review_reason": "unmapped_category:individual; individual_requires_role_classification"
+  },
+  {
+    "entity": "Raman Chaddha",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "individual",
+    "role_in_text": "Quantum Physics Teacher",
+    "technology_area": "quantum computing",
+    "occurrence_sentence": "I really liked her and went to her one day and asked - How can I do a PhD in Quantum Physics? She told me that you can't do a Ph.D. in Quantum mechanics per se, but all physics research fields use quantum mechanics principles.",
+    "source_document": "https://universalquantum.com/voices-of-uq/everything-is-quantum",
+    "page": 3,
+    "canonical_actor_key": "raman chaddha",
+    "aliases": [
+      "Raman Chaddha"
+    ],
+    "pages": [
+      3,
+      4
+    ],
+    "mentions": [
+      {
+        "entity": "Raman Chaddha",
+        "page": 3,
+        "role_in_text": "Quantum Physics Teacher",
+        "occurrence_sentence": "I really liked her and went to her one day and asked - How can I do a PhD in Quantum Physics? She told me that you can't do a Ph.D. in Quantum mechanics per se, but all physics research fields use quantum mechanics principles.",
+        "source_document": "https://universalquantum.com/voices-of-uq/everything-is-quantum"
+      },
+      {
+        "entity": "Raman Chaddha",
+        "page": 4,
+        "role_in_text": "Quantum Physics Teacher",
+        "occurrence_sentence": "I really liked her and went to her one day and asked - How can I do a PhD in Quantum Physics? She told me that you can't do a Ph.D. in Quantum mechanics per se, but all physics research fields use quantum mechanics principles.",
+        "source_document": "https://universalquantum.com/voices-of-uq/everything-is-quantum"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Unknown",
+    "sphere": "Unknown",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "unknown_category",
+    "classification_needs_review": true,
+    "classification_review_reason": "unmapped_category:individual; individual_requires_role_classification"
+  },
+  {
+    "entity": "Samantha Edmondson",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "individual",
+    "role_in_text": "Leiter Personal",
+    "technology_area": "unknown",
+    "occurrence_sentence": "### Samantha Edmondson Leiter Personal",
+    "source_document": "https://universalquantum.com/de/wer-wir-sind",
+    "page": 10,
+    "confidence": "high",
+    "canonical_actor_key": "samantha edmondson",
+    "aliases": [
+      "Samantha Edmondson"
+    ],
+    "pages": [
+      10,
+      11
+    ],
+    "mentions": [
+      {
+        "entity": "Samantha Edmondson",
+        "page": 10,
+        "role_in_text": "Leiter Personal",
+        "occurrence_sentence": "### Samantha Edmondson Leiter Personal",
+        "source_document": "https://universalquantum.com/de/wer-wir-sind"
+      },
+      {
+        "entity": "Samantha Edmondson",
+        "page": 11,
+        "role_in_text": "Leiter Personal",
+        "occurrence_sentence": "### Samantha Edmondson Leiter Personal",
+        "source_document": "https://universalquantum.com/de/wer-wir-sind"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Unknown",
+    "sphere": "Unknown",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "unknown_category",
+    "classification_needs_review": true,
+    "classification_review_reason": "unmapped_category:individual; individual_requires_role_classification"
+  },
+  {
+    "entity": "Schrödinger",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "individual",
+    "role_in_text": "Subject of a podcast episode",
+    "technology_area": "quantum computing",
+    "occurrence_sentence": "Podcast: The Quantum Rivalry of Schrödinger & Heisenberg Explore the fascinating parallels between heated rivalries in sports and the intense debates in quantum physics, focusing on Schrödinger and Heisenberg.",
+    "source_document": "https://universalquantum.com",
+    "page": 3,
+    "canonical_actor_key": "schr dinger",
+    "aliases": [
+      "Schrödinger"
+    ],
+    "pages": [
+      3
+    ],
+    "mentions": [
+      {
+        "entity": "Schrödinger",
+        "page": 3,
+        "role_in_text": "Subject of a podcast episode",
+        "occurrence_sentence": "Podcast: The Quantum Rivalry of Schrödinger & Heisenberg Explore the fascinating parallels between heated rivalries in sports and the intense debates in quantum physics, focusing on Schrödinger and Heisenberg.",
+        "source_document": "https://universalquantum.com"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Unknown",
+    "sphere": "Unknown",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "unknown_category",
+    "classification_needs_review": true,
+    "classification_review_reason": "unmapped_category:individual; individual_requires_role_classification"
+  },
+  {
+    "entity": "Sebastian Weidt",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "entrepreneurial scientist",
+    "role_in_text": "CEO & Co-Founder",
+    "technology_area": "quantum computing",
+    "occurrence_sentence": "I have over 15 years' experience developing quantum computers, co-created the first blueprint for a million qubit, trapped ion device, and am a Professor of Quantum Computing and Entrepreneurship. Outside work it's all about family, and I love sailing and skiing. ### Sebastian Weidt",
+    "source_document": "https://universalquantum.com/who-we-are",
+    "page": 8,
+    "confidence": "high",
+    "canonical_actor_key": "sebastian weidt",
+    "aliases": [
+      "Sebastian Weidt"
+    ],
+    "pages": [
+      3,
+      4,
+      5,
+      8,
+      11,
+      12
+    ],
+    "mentions": [
+      {
+        "entity": "Sebastian Weidt",
+        "page": 3,
+        "role_in_text": "Founder and CEO of Universal Quantum.",
+        "occurrence_sentence": "Universal Quantum was founded by Sebastian Weidt, Professor of Quantum Computing and Entrepreneurship",
+        "source_document": "https://universalquantum.com/who-we-are"
+      },
+      {
+        "entity": "Sebastian Weidt",
+        "page": 4,
+        "role_in_text": "Founder and CEO of Universal Quantum",
+        "occurrence_sentence": "Universal Quantum was founded by Sebastian Weidt, Professor of Quantum Computing and Entrepreneurship, and Winfried Hensinger, Professor of Quantum Technologies: long-standing friends and collaborators at the University of Sussex.",
+        "source_document": "https://universalquantum.com/who-we-are"
+      },
+      {
+        "entity": "Sebastian Weidt",
+        "page": 8,
+        "role_in_text": "CEO & Co-Founder",
+        "occurrence_sentence": "I have over 15 years' experience developing quantum computers, co-created the first blueprint for a million qubit, trapped ion device, and am a Professor of Quantum Computing and Entrepreneurship. Outside work it's all about family, and I love sailing and skiing. ### Sebastian Weidt",
+        "source_document": "https://universalquantum.com/who-we-are"
+      },
+      {
+        "entity": "Sebastian Weidt",
+        "page": 4,
+        "role_in_text": "Co-founder and CEO of Universal Quantum.",
+        "occurrence_sentence": "Universal Quantum wurde von Sebastian Weidt, Professor für",
+        "source_document": "https://universalquantum.com/de/wer-wir-sind"
+      },
+      {
+        "entity": "Sebastian Weidt",
+        "page": 5,
+        "role_in_text": "Founder and CEO of Universal Quantum",
+        "occurrence_sentence": "Universal Quantum wurde von Sebastian Weidt, Professor für Quantencomputing und Unternehmertum, und Winfried Hensinger, Professor für Quantentechnologien, gegründet: langjährige Freunde und Kollegen an der University of Sussex.",
+        "source_document": "https://universalquantum.com/de/wer-wir-sind"
+      },
+      {
+        "entity": "Sebastian Weidt",
+        "page": 11,
+        "role_in_text": "CEO und Mitgründer",
+        "occurrence_sentence": "### Sebastian Weidt CEO und Mitgründer",
+        "source_document": "https://universalquantum.com/de/wer-wir-sind"
+      },
+      {
+        "entity": "Sebastian Weidt",
+        "page": 12,
+        "role_in_text": "CEO und Mitgründer",
+        "occurrence_sentence": "### Sebastian Weidt CEO und Mitgründer",
+        "source_document": "https://universalquantum.com/de/wer-wir-sind"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Intermediary",
+    "sphere": "Multi",
+    "r_and_d": "R&D",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "Tech Nation",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "business support institutions",
+    "role_in_text": "programme supporting high growth scaleups",
+    "technology_area": "deep tech general",
+    "occurrence_sentence": "Universal Quantum has been selected to join Tech Nation's Future Fifty 2026 cohort, the UK's flagship programme supporting high growth scaleups.",
+    "source_document": "https://universalquantum.com/knowledge-hub/universal-quantum-selected-for-tech-nation-fifty-2026",
+    "page": 3,
+    "confidence": "high",
+    "canonical_actor_key": "tech nation",
+    "aliases": [
+      "Tech Nation"
+    ],
+    "pages": [
+      1,
+      3,
+      4,
+      5,
+      7
+    ],
+    "mentions": [
+      {
+        "entity": "Tech Nation",
+        "page": 1,
+        "role_in_text": "selected for Tech Nation Fifty 2026",
+        "occurrence_sentence": "Universal Quantum selected for Tech Nation Fifty 2026",
+        "source_document": "https://universalquantum.com/knowledge-hub/universal-quantum-selected-for-tech-nation-fifty-2026"
+      },
+      {
+        "entity": "Tech Nation",
+        "page": 3,
+        "role_in_text": "programme supporting high growth scaleups",
+        "occurrence_sentence": "Universal Quantum has been selected to join Tech Nation's Future Fifty 2026 cohort, the UK's flagship programme supporting high growth scaleups.",
+        "source_document": "https://universalquantum.com/knowledge-hub/universal-quantum-selected-for-tech-nation-fifty-2026"
+      },
+      {
+        "entity": "Tech Nation",
+        "page": 4,
+        "role_in_text": "programme supporting high growth scaleups",
+        "occurrence_sentence": "Universal Quantum has been selected to join Tech Nation's Future Fifty 2026 cohort, the UK's flagship programme supporting high growth scaleups.",
+        "source_document": "https://universalquantum.com/knowledge-hub/universal-quantum-selected-for-tech-nation-fifty-2026"
+      },
+      {
+        "entity": "Tech Nation",
+        "page": 7,
+        "role_in_text": "Program",
+        "occurrence_sentence": "Universal Quantum has been selected to join Tech Nation's Future Fifty 2026 cohort, the UK's flagship programme supporting high growth scaleups.",
+        "source_document": "https://universalquantum.com/knowledge-hub/universal-quantum-appoints-Freeke-Heijman-as-senior-european-advisor"
+      },
+      {
+        "entity": "Tech Nation",
+        "page": 7,
+        "role_in_text": "programme supporting high growth scaleups",
+        "occurrence_sentence": "Universal Quantum has been selected to join Tech Nation's Future Fifty 2026 cohort, the UK's flagship programme supporting high growth scaleups.",
+        "source_document": "https://universalquantum.com/de/node/180"
+      },
+      {
+        "entity": "Tech Nation",
+        "page": 5,
+        "role_in_text": "Program",
+        "occurrence_sentence": "Universal Quantum has been selected to join Tech Nation's Future Fifty 2026 cohort",
+        "source_document": "https://universalquantum.com/knowledge-hub/podcast/the-quantum-rivalry-of-schr%C3%B6dinger-and-eisenberg"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Intermediary",
+    "sphere": "Multi",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "UK government",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "national government institutions",
+    "role_in_text": "funding and strategic direction",
+    "technology_area": "quantum computing | quantum communication | quantum sensing | quantum materials | quantum simulation | quantum cryptography | deep tech general",
+    "occurrence_sentence": "This episode explores the UK government's £2 billion commitment to quantum technologies, and what it signals about the next phase of the field.",
+    "source_document": "https://universalquantum.com/knowledge-hub/podcast/%C2%A32B-and-what-actually-matters",
+    "page": 4,
+    "confidence": "high",
+    "canonical_actor_key": "uk government",
+    "aliases": [
+      "UK government"
+    ],
+    "pages": [
+      3,
+      4,
+      6
+    ],
+    "mentions": [
+      {
+        "entity": "UK government",
+        "page": 3,
+        "role_in_text": "Funding provider",
+        "occurrence_sentence": "This episode explores the UK government's £2 billion commitment to quantum technologies, and what it signals about the next phase of the field.",
+        "source_document": "https://universalquantum.com/knowledge-hub/podcast/%C2%A32B-and-what-actually-matters"
+      },
+      {
+        "entity": "UK government",
+        "page": 4,
+        "role_in_text": "funding and strategic direction",
+        "occurrence_sentence": "This episode explores the UK government's £2 billion commitment to quantum technologies, and what it signals about the next phase of the field.",
+        "source_document": "https://universalquantum.com/knowledge-hub/podcast/%C2%A32B-and-what-actually-matters"
+      },
+      {
+        "entity": "UK government",
+        "page": 6,
+        "role_in_text": "Funding provider",
+        "occurrence_sentence": "This episode explores the UK government's recent £2 billion quantum funding announcement",
+        "source_document": "https://universalquantum.com/de"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Government",
+    "sphere": "Single",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "United Kingdom",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "country",
+    "role_in_text": "Location",
+    "technology_area": "unknown",
+    "occurrence_sentence": "Location: United Kingdom, England, Haywards Heath",
+    "source_document": "https://universalquantum.com/de/hier-arbeiten",
+    "page": 9,
+    "confidence": "high",
+    "canonical_actor_key": "united kingdom",
+    "aliases": [
+      "United Kingdom"
+    ],
+    "pages": [
+      8,
+      9
+    ],
+    "mentions": [
+      {
+        "entity": "United Kingdom",
+        "page": 8,
+        "role_in_text": "Location",
+        "occurrence_sentence": "",
+        "source_document": "https://universalquantum.com/de/hier-arbeiten"
+      },
+      {
+        "entity": "United Kingdom",
+        "page": 9,
+        "role_in_text": "Location",
+        "occurrence_sentence": "Location: United Kingdom, England, Haywards Heath",
+        "source_document": "https://universalquantum.com/de/hier-arbeiten"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Unknown",
+    "sphere": "Unknown",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "unknown_category",
+    "classification_needs_review": true,
+    "classification_review_reason": "unmapped_category:country"
+  },
+  {
+    "entity": "Universal Quantum",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "large enterprises",
+    "role_in_text": "Company",
+    "technology_area": "quantum computing",
+    "occurrence_sentence": "Her appointment strengthens Universal Quantum's engagement across the European quantum ecosystem at a moment when sovereign capability, cross border collaboration, and decisive policy action are central to securing the continent's role in the next phase of quantum computing.",
+    "source_document": "https://universalquantum.com/de/node/180",
+    "page": 5,
+    "confidence": "high",
+    "canonical_actor_key": "universal quantum",
+    "aliases": [
+      "UQ",
+      "Universal Quantum",
+      "Universal Quantum (UQ)"
+    ],
+    "pages": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      10,
+      16,
+      21
+    ],
+    "mentions": [
+      {
+        "entity": "Universal Quantum",
+        "page": 1,
+        "role_in_text": "The company providing the technical resources.",
+        "occurrence_sentence": "https://universalquantum.com/knowledge-hub/technical-resources",
+        "source_document": "https://universalquantum.com/knowledge-hub/technical-resources"
+      },
+      {
+        "entity": "Universal Quantum",
+        "page": 3,
+        "role_in_text": "Founder and driver of quantum computing research",
+        "occurrence_sentence": "Universal Quantum was founded on ground-breaking research which includes a practical blueprint for a scalable trapped ion quantum computer with millions of qubits.",
+        "source_document": "https://universalquantum.com/knowledge-hub/technical-resources"
+      },
+      {
+        "entity": "Universal Quantum",
+        "page": 4,
+        "role_in_text": "provider of technical resources",
+        "occurrence_sentence": "Resources",
+        "source_document": "https://universalquantum.com/knowledge-hub/technical-resources"
+      },
+      {
+        "entity": "Universal Quantum",
+        "page": 5,
+        "role_in_text": "provider of technical resources",
+        "occurrence_sentence": "https://universalquantum.com/sites/default/files/2025-02/1_17.pdf)",
+        "source_document": "https://universalquantum.com/knowledge-hub/technical-resources"
+      },
+      {
+        "entity": "Universal Quantum",
+        "page": 2,
+        "role_in_text": "company",
+        "occurrence_sentence": "Universal Quantum",
+        "source_document": "https://universalquantum.com/contact-us"
+      },
+      {
+        "entity": "Universal Quantum",
+        "page": 7,
+        "role_in_text": "provider of services related to personal data",
+        "occurrence_sentence": "We will provide to you, or a third party you have chosen, your Personal Data in a structured, commonly used, machine-readable format.",
+        "source_document": "https://universalquantum.com/de/node/13"
+      },
+      {
+        "entity": "Universal Quantum",
+        "page": 10,
+        "role_in_text": "website owner",
+        "occurrence_sentence": "https://universalquantum.com/de/node/13",
+        "source_document": "https://universalquantum.com/de/node/13"
+      },
+      {
+        "entity": "Universal Quantum",
+        "page": 16,
+        "role_in_text": "website owner",
+        "occurrence_sentence": "We may collect information using “cookies”. Cookies are small data files stored on the hard drive of your computer or mobile device by a website.",
+        "source_document": "https://universalquantum.com/de/node/13"
+      },
+      {
+        "entity": "Universal Quantum",
+        "page": 16,
+        "role_in_text": "website owner",
+        "occurrence_sentence": "We may use both session cookies (which expire once you close your web browser) and persistent cookies (which stay on your computer or mobile device until you delete them) to provide you with a more personal and interactive experience on our Site.",
+        "source_document": "https://universalquantum.com/de/node/13"
+      },
+      {
+        "entity": "Universal Quantum",
+        "page": 21,
+        "role_in_text": "company",
+        "occurrence_sentence": "In relation to actual or prospective corporate events (e.g., investments into Universal Quantum, or the sale, transfer or merger of all or part of our business, assets or shares), we may need to share certain personal data with prospective counterparties and their advisers.",
+        "source_document": "https://universalquantum.com/de/node/13"
+      },
+      {
+        "entity": "Universal Quantum",
+        "page": 1,
+        "role_in_text": "The company that the text is about",
+        "occurrence_sentence": "Universal Quantum",
+        "source_document": "https://universalquantum.com/de/node/181"
+      },
+      {
+        "entity": "Universal Quantum",
+        "page": 4,
+        "role_in_text": "UK based company building the world's most scalable quantum computers",
+        "occurrence_sentence": "Universal Quantum, the UK based company building the world's most scalable quantum computers, today announced the appointment of Freeke Heijman as Senior European Advisor.",
+        "source_document": "https://universalquantum.com/de/node/181"
+      },
+      {
+        "entity": "Universal Quantum",
+        "page": 5,
+        "role_in_text": "Company",
+        "occurrence_sentence": "Universal Quantum selected for Tech Nation Future Fifty 2026",
+        "source_document": "https://universalquantum.com/de/node/181"
+      },
+      {
+        "entity": "Universal Quantum",
+        "page": 4,
+        "role_in_text": "UK based company building scalable quantum computers",
+        "occurrence_sentence": "Universal Quantum, the UK based company building the world's most scalable quantum computers",
+        "source_document": "https://universalquantum.com/knowledge-hub/podcast/%C2%A32B-and-what-actually-matters"
+      },
+      {
+        "entity": "Universal Quantum",
+        "page": 5,
+        "role_in_text": "UK based company building the world's most scalable quantum computers",
+        "occurrence_sentence": "Universal Quantum, the UK based company building the world's most scalable quantum computers, today announced the appointment of Freeke Heijman as Senior European Advisor.",
+        "source_document": "https://universalquantum.com/knowledge-hub/podcast/%C2%A32B-and-what-actually-matters"
+      },
+      {
+        "entity": "Universal Quantum",
+        "page": 3,
+        "role_in_text": "UK based company building the world's most scalable quantum computers",
+        "occurrence_sentence": "Universal Quantum, the UK based company building the world's most scalable quantum computers, today announced the appointment of Freeke Heijman as Senior European Advisor.",
+        "source_document": "https://universalquantum.com/knowledge-hub"
+      },
+      {
+        "entity": "Universal Quantum",
+        "page": 4,
+        "role_in_text": "Hosting the knowledge hub",
+        "occurrence_sentence": "source_document: \"https://universalquantum.com/knowledge-hub\"",
+        "source_document": "https://universalquantum.com/knowledge-hub"
+      },
+      {
+        "entity": "Universal Quantum",
+        "page": 5,
+        "role_in_text": "Founder and main subject of the text",
+        "occurrence_sentence": "Universal Quantum was founded on ground-breaking research which includes a practical blueprint for a scalable trapped ion quantum computer with millions of qubits.",
+        "source_document": "https://universalquantum.com/knowledge-hub"
+      },
+      {
+        "entity": "Universal Quantum",
+        "page": 1,
+        "role_in_text": "The company that owns the website",
+        "occurrence_sentence": "https://universalquantum.com/de/wissenszentrum/neuigkeiten-und-blog",
+        "source_document": "https://universalquantum.com/de/wissenszentrum/neuigkeiten-und-blog"
+      },
+      {
+        "entity": "Universal Quantum",
+        "page": 3,
+        "role_in_text": "UK based company building the world's most scalable quantum computers",
+        "occurrence_sentence": "Universal Quantum, the UK based company building the world's most scalable quantum computers, today announced the appointment of Freeke Heijman as Senior European Advisor.",
+        "source_document": "https://universalquantum.com/de/wissenszentrum/neuigkeiten-und-blog"
+      },
+      {
+        "entity": "Universal Quantum",
+        "page": 4,
+        "role_in_text": "UK based company building the world's most scalable quantum computers",
+        "occurrence_sentence": "Universal Quantum, the UK based company building the world's most scalable quantum computers, today announced the appointment of Freeke Heijman as Senior European Advisor.",
+        "source_document": "https://universalquantum.com/de/wissenszentrum/neuigkeiten-und-blog"
+      },
+      {
+        "entity": "Universal Quantum",
+        "page": 5,
+        "role_in_text": "Company",
+        "occurrence_sentence": "Universal Quantum appoints Freeke Heijman as senior European advisor",
+        "source_document": "https://universalquantum.com/de/wissenszentrum/neuigkeiten-und-blog"
+      },
+      {
+        "entity": "Universal Quantum",
+        "page": 6,
+        "role_in_text": "company",
+        "occurrence_sentence": "Wir freuen uns, unsere Arbeit und das Potenzial des Quantencomputings mit allen Interessierten zu teilen.",
+        "source_document": "https://universalquantum.com/de/wissenszentrum/neuigkeiten-und-blog"
+      },
+      {
+        "entity": "Universal Quantum",
+        "page": 1,
+        "role_in_text": "selected for Tech Nation Fifty 2026",
+        "occurrence_sentence": "Universal Quantum selected for Tech Nation Fifty 2026",
+        "source_document": "https://universalquantum.com/knowledge-hub/universal-quantum-selected-for-tech-nation-fifty-2026"
+      },
+      {
+        "entity": "Universal Quantum",
+        "page": 4,
+        "role_in_text": "building scalable quantum computing infrastructure",
+        "occurrence_sentence": "Universal Quantum has been selected to join Tech Nation's Future Fifty 2026 cohort, the UK's flagship programme supporting high growth scaleups",
+        "source_document": "https://universalquantum.com/knowledge-hub/universal-quantum-selected-for-tech-nation-fifty-2026"
+      },
+      {
+        "entity": "Universal Quantum",
+        "page": 6,
+        "role_in_text": "building utility scale quantum computers",
+        "occurrence_sentence": "We are building utility scale quantum computers based on a robust, modular and practical blueprint, in partnership with leading organisations and investors across the field.",
+        "source_document": "https://universalquantum.com/knowledge-hub/universal-quantum-selected-for-tech-nation-fifty-2026"
+      },
+      {
+        "entity": "Universal Quantum",
+        "page": 1,
+        "role_in_text": "appoints Freeke Heijman as senior European advisor",
+        "occurrence_sentence": "Universal Quantum appoints Freeke Heijman as senior European advisor",
+        "source_document": "https://universalquantum.com/knowledge-hub/universal-quantum-appoints-Freeke-Heijman-as-senior-european-advisor"
+      },
+      {
+        "entity": "Universal Quantum",
+        "page": 3,
+        "role_in_text": "UK based company building the world's most scalable quantum computers",
+        "occurrence_sentence": "Universal Quantum, the UK based company building the world's most scalable quantum computers, today announced the appointment of Freeke Heijman as Senior European Advisor.",
+        "source_document": "https://universalquantum.com/knowledge-hub/universal-quantum-appoints-Freeke-Heijman-as-senior-european-advisor"
+      },
+      {
+        "entity": "Universal Quantum",
+        "page": 4,
+        "role_in_text": "UK based company building the world's most scalable quantum computers",
+        "occurrence_sentence": "Universal Quantum, the UK based company building the world's most scalable quantum computers, today announced the appointment of Freeke Heijman as Senior European Advisor.",
+        "source_document": "https://universalquantum.com/knowledge-hub/universal-quantum-appoints-Freeke-Heijman-as-senior-european-advisor"
+      },
+      {
+        "entity": "Universal Quantum",
+        "page": 6,
+        "role_in_text": "Company building utility-scale quantum computers",
+        "occurrence_sentence": "And working closely with a team with such extraordinary depth of expertise and drive is something I genuinely can't wait for",
+        "source_document": "https://universalquantum.com/knowledge-hub/universal-quantum-appoints-Freeke-Heijman-as-senior-european-advisor"
+      },
+      {
+        "entity": "Universal Quantum",
+        "page": 7,
+        "role_in_text": "Company",
+        "occurrence_sentence": "Universal Quantum has been selected to join Tech Nation's Future Fifty 2026 cohort, the UK's flagship programme supporting high growth scaleups.",
+        "source_document": "https://universalquantum.com/knowledge-hub/universal-quantum-appoints-Freeke-Heijman-as-senior-european-advisor"
+      },
+      {
+        "entity": "Universal Quantum",
+        "page": 1,
+        "role_in_text": "company",
+        "occurrence_sentence": "https://universalquantum.com/de/node/180",
+        "source_document": "https://universalquantum.com/de/node/180"
+      },
+      {
+        "entity": "Universal Quantum",
+        "page": 3,
+        "role_in_text": "UK based company building the world's most scalable quantum computers",
+        "occurrence_sentence": "Universal Quantum, the UK based company building the world's most scalable quantum computers, today announced the appointment of Freeke Heijman as Senior European Advisor.",
+        "source_document": "https://universalquantum.com/de/node/180"
+      },
+      {
+        "entity": "Universal Quantum",
+        "page": 4,
+        "role_in_text": "UK based company building the world's most scalable quantum computers",
+        "occurrence_sentence": "Universal Quantum, the UK based company building the world's most scalable quantum computers, today announced the appointment of Freeke Heijman as Senior European Advisor.",
+        "source_document": "https://universalquantum.com/de/node/180"
+      },
+      {
+        "entity": "Universal Quantum",
+        "page": 5,
+        "role_in_text": "Company",
+        "occurrence_sentence": "Her appointment strengthens Universal Quantum's engagement across the European quantum ecosystem at a moment when sovereign capability, cross border collaboration, and decisive policy action are central to securing the continent's role in the next phase of quantum computing.",
+        "source_document": "https://universalquantum.com/de/node/180"
+      },
+      {
+        "entity": "Universal Quantum",
+        "page": 6,
+        "role_in_text": "A company building utility-scale quantum computers.",
+        "occurrence_sentence": "And working closely with a team with such extraordinary depth of expertise and drive is something I genuinely can't wait fo_ r",
+        "source_document": "https://universalquantum.com/de/node/180"
+      },
+      {
+        "entity": "Universal Quantum",
+        "page": 6,
+        "role_in_text": "A company building utility-scale quantum computers.",
+        "occurrence_sentence": "Freeke's appointment reflects Universal Quantum's growing role in aligning quantum innovation with European strategic priorities, sovereign capability, and the long term partnerships needed to deliver utility scale quantum computing.",
+        "source_document": "https://universalquantum.com/de/node/180"
+      },
+      {
+        "entity": "Universal Quantum",
+        "page": 7,
+        "role_in_text": "selected for Tech Nation Future Fifty 2026",
+        "occurrence_sentence": "Universal Quantum has been selected to join Tech Nation's Future Fifty 2026 cohort, the UK's flagship programme supporting high growth scaleups.",
+        "source_document": "https://universalquantum.com/de/node/180"
+      },
+      {
+        "entity": "Universal Quantum",
+        "page": 1,
+        "role_in_text": "website owner",
+        "occurrence_sentence": "source_document: \"https://universalquantum.com/knowledge-hub/podcast/the-quantum-rivalry-of-schr%C3%B6dinger-and-eisenberg\"",
+        "source_document": "https://universalquantum.com/knowledge-hub/podcast/the-quantum-rivalry-of-schr%C3%B6dinger-and-eisenberg"
+      },
+      {
+        "entity": "Universal Quantum",
+        "page": 4,
+        "role_in_text": "UK based company building the world's most scalable quantum computers",
+        "occurrence_sentence": "Universal Quantum, the UK based company building the world's most scalable quantum computers, today announced the appointment of Freeke Heijman as Senior European Advisor.",
+        "source_document": "https://universalquantum.com/knowledge-hub/podcast/the-quantum-rivalry-of-schr%C3%B6dinger-and-eisenberg"
+      },
+      {
+        "entity": "Universal Quantum",
+        "page": 5,
+        "role_in_text": "Company",
+        "occurrence_sentence": "Universal Quantum selected for Tech Nation Future Fifty 2026",
+        "source_document": "https://universalquantum.com/knowledge-hub/podcast/the-quantum-rivalry-of-schr%C3%B6dinger-and-eisenberg"
+      },
+      {
+        "entity": "Universal Quantum",
+        "page": 4,
+        "role_in_text": "UK based company building the world's most scalable quantum computers",
+        "occurrence_sentence": "Universal Quantum, the UK based company building the world's most scalable quantum computers, today announced the appointment of Freeke Heijman as Senior European Advisor.",
+        "source_document": "https://universalquantum.com/de/wissenszentrum"
+      },
+      {
+        "entity": "Universal Quantum",
+        "page": 5,
+        "role_in_text": "Company",
+        "occurrence_sentence": "Universal Quantum appoints Freeke Heijman as senior European advisor",
+        "source_document": "https://universalquantum.com/de/wissenszentrum"
+      },
+      {
+        "entity": "Universal Quantum",
+        "page": 6,
+        "role_in_text": "Founder and developer of quantum computing technology",
+        "occurrence_sentence": "Universal Quantum wurde auf der Grundlage bahnbrechender Forschungsergebnisse gegründet, zu denen auch ein praktischer Entwurf für einen skalierbaren Quantencomputer mit gefangenen Ionen und Millionen von Qubits gehört.",
+        "source_document": "https://universalquantum.com/de/wissenszentrum"
+      },
+      {
+        "entity": "Universal Quantum",
+        "page": 7,
+        "role_in_text": "Founder and developer of quantum computing technology",
+        "occurrence_sentence": "Universal Quantum wurde auf der Grundlage bahnbrechender Forschungsergebnisse gegründet, zu denen auch ein praktischer Entwurf für einen skalierbaren Quantencomputer mit gefangenen Ionen und Millionen von Qubits gehört.",
+        "source_document": "https://universalquantum.com/de/wissenszentrum"
+      },
+      {
+        "entity": "Universal Quantum",
+        "page": 1,
+        "role_in_text": "Company",
+        "occurrence_sentence": "Universal Quantum",
+        "source_document": "https://universalquantum.com/voices-of-uq/everything-is-quantum"
+      },
+      {
+        "entity": "Universal Quantum (UQ)",
+        "page": 5,
+        "role_in_text": "Employer of Parul Aggarwal",
+        "occurrence_sentence": "",
+        "source_document": "https://universalquantum.com/voices-of-uq/everything-is-quantum"
+      },
+      {
+        "entity": "Universal Quantum",
+        "page": 1,
+        "role_in_text": "The company that hosts the podcast.",
+        "occurrence_sentence": "https://universalquantum.com/knowledge-hub/podcast/the-wiring-problem-in-large-scale-quantum-computers",
+        "source_document": "https://universalquantum.com/knowledge-hub/podcast/the-wiring-problem-in-large-scale-quantum-computers"
+      },
+      {
+        "entity": "Universal Quantum",
+        "page": 4,
+        "role_in_text": "UK based company building the world's most scalable quantum computers",
+        "occurrence_sentence": "Universal Quantum, the UK based company building the world's most scalable quantum computers, today announced the appointment of Freeke Heijman as Senior European Advisor.",
+        "source_document": "https://universalquantum.com/knowledge-hub/podcast/the-wiring-problem-in-large-scale-quantum-computers"
+      },
+      {
+        "entity": "Universal Quantum",
+        "page": 5,
+        "role_in_text": "UK based company building the world's most scalable quantum computers",
+        "occurrence_sentence": "Universal Quantum, the UK based company building the world's most scalable quantum computers, today announced the appointment of Freeke Heijman as Senior European Advisor.",
+        "source_document": "https://universalquantum.com/knowledge-hub/podcast/the-wiring-problem-in-large-scale-quantum-computers"
+      },
+      {
+        "entity": "Universal Quantum",
+        "page": 3,
+        "role_in_text": "Building utility-scale quantum computers",
+        "occurrence_sentence": "We're building utility-scale quantum computers, based on a robust, modular and practical blueprint, in partnership with the leading organisations and investors in the field.",
+        "source_document": "https://universalquantum.com"
+      },
+      {
+        "entity": "Universal Quantum",
+        "page": 4,
+        "role_in_text": "building utility-scale quantum computers",
+        "occurrence_sentence": "We're building utility-scale quantum computers, based on a robust, modular and practical blueprint, in partnership with the leading organisations and investors in the field.",
+        "source_document": "https://universalquantum.com"
+      },
+      {
+        "entity": "Universal Quantum",
+        "page": 5,
+        "role_in_text": "UK based company building the world's most scalable quantum computers",
+        "occurrence_sentence": "Universal Quantum, the UK based company building the world's most scalable quantum computers, today announced the appointment of Freeke Heijman as Senior European Advisor.",
+        "source_document": "https://universalquantum.com"
+      },
+      {
+        "entity": "Universal Quantum",
+        "page": 1,
+        "role_in_text": "The website belongs to this company.",
+        "occurrence_sentence": "https://universalquantum.com/de/wissenszentrum/technische-ressourcen",
+        "source_document": "https://universalquantum.com/de/wissenszentrum/technische-ressourcen"
+      },
+      {
+        "entity": "Universal Quantum",
+        "page": 3,
+        "role_in_text": "Founder and developer of quantum computing technology",
+        "occurrence_sentence": "Universal Quantum wurde auf der Grundlage bahnbrechender Forschungsergebnisse gegründet, zu denen ein Bauplan einesskalierbaren Quantencomputer mit Millionen auf Ionen basierenden Qubits gehört.",
+        "source_document": "https://universalquantum.com/de/wissenszentrum/technische-ressourcen"
+      },
+      {
+        "entity": "Universal Quantum",
+        "page": 4,
+        "role_in_text": "provider of technical resources and academic papers",
+        "occurrence_sentence": "Resources",
+        "source_document": "https://universalquantum.com/de/wissenszentrum/technische-ressourcen"
+      },
+      {
+        "entity": "Universal Quantum",
+        "page": 5,
+        "role_in_text": "provider of academic papers on quantum computing",
+        "occurrence_sentence": "source_document: \"https://universalquantum.com/de/wissenszentrum/technische-ressourcen\"",
+        "source_document": "https://universalquantum.com/de/wissenszentrum/technische-ressourcen"
+      },
+      {
+        "entity": "Universal Quantum",
+        "page": 3,
+        "role_in_text": "The company described in the text",
+        "occurrence_sentence": "source_document: \"https://universalquantum.com/working-here\"",
+        "source_document": "https://universalquantum.com/working-here"
+      },
+      {
+        "entity": "Universal Quantum",
+        "page": 4,
+        "role_in_text": "The company that the text is about.",
+        "occurrence_sentence": "Close",
+        "source_document": "https://universalquantum.com/working-here"
+      },
+      {
+        "entity": "Universal Quantum",
+        "page": 3,
+        "role_in_text": "UK based company building the world's most scalable quantum computers",
+        "occurrence_sentence": "Universal Quantum, the UK based company building the world's most scalable quantum computers, today announced the appointment of Freeke Heijman as Senior European Advisor.",
+        "source_document": "https://universalquantum.com/knowledge-hub/news-blog"
+      },
+      {
+        "entity": "Universal Quantum",
+        "page": 4,
+        "role_in_text": "Company",
+        "occurrence_sentence": "Universal Quantum appoints Freeke Heijman as senior European advisor",
+        "source_document": "https://universalquantum.com/knowledge-hub/news-blog"
+      },
+      {
+        "entity": "Universal Quantum",
+        "page": 5,
+        "role_in_text": "company",
+        "occurrence_sentence": "We're excited to share our work and the potential of quantum computing with all audiences.",
+        "source_document": "https://universalquantum.com/knowledge-hub/news-blog"
+      },
+      {
+        "entity": "Universal Quantum",
+        "page": 3,
+        "role_in_text": "building scalable quantum computers",
+        "occurrence_sentence": "Genau das leistet Universal Quantum.",
+        "source_document": "https://universalquantum.com/de"
+      },
+      {
+        "entity": "Universal Quantum",
+        "page": 4,
+        "role_in_text": "UK based company building the world's most scalable quantum computers",
+        "occurrence_sentence": "Universal Quantum, the UK based company building the world's most scalable quantum computers, today announced the appointment of Freeke Heijman as Senior European Advisor.",
+        "source_document": "https://universalquantum.com/de"
+      },
+      {
+        "entity": "Universal Quantum",
+        "page": 5,
+        "role_in_text": "UK based company building the world's most scalable quantum computers",
+        "occurrence_sentence": "Universal Quantum, the UK based company building the world's most scalable quantum computers, today announced the appointment of Freeke Heijman as Senior European Advisor.",
+        "source_document": "https://universalquantum.com/de"
+      },
+      {
+        "entity": "Universal Quantum",
+        "page": 1,
+        "role_in_text": "The company itself",
+        "occurrence_sentence": "Universal Quantum",
+        "source_document": "https://universalquantum.com/de/hier-arbeiten"
+      },
+      {
+        "entity": "Universal Quantum",
+        "page": 4,
+        "role_in_text": "The company that owns the website.",
+        "occurrence_sentence": "Wir haben eine Mission.",
+        "source_document": "https://universalquantum.com/de/hier-arbeiten"
+      },
+      {
+        "entity": "Universal Quantum",
+        "page": 5,
+        "role_in_text": "The company that the text is about",
+        "occurrence_sentence": "https://universalquantum.com/de/hier-arbeiten",
+        "source_document": "https://universalquantum.com/de/hier-arbeiten"
+      },
+      {
+        "entity": "Universal Quantum",
+        "page": 1,
+        "role_in_text": "The company itself",
+        "occurrence_sentence": "Universal Quantum",
+        "source_document": "https://universalquantum.com/de/wer-wir-sind"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Industry",
+    "sphere": "Single",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "Universal Quantum Deutschland GmbH",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "large enterprises",
+    "role_in_text": "company",
+    "source_document": "https://universalquantum.com/contact-us",
+    "page": 2,
+    "canonical_actor_key": "universal quantum deutschland gmbh",
+    "aliases": [
+      "Universal Quantum Deutschland GmbH"
+    ],
+    "pages": [
+      2
+    ],
+    "mentions": [
+      {
+        "entity": "Universal Quantum Deutschland GmbH",
+        "page": 2,
+        "role_in_text": "company",
+        "occurrence_sentence": "",
+        "source_document": "https://universalquantum.com/contact-us"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Industry",
+    "sphere": "Single",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "Universal Quantum Ltd.",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "large enterprises",
+    "role_in_text": "Company",
+    "technology_area": "quantum computing",
+    "occurrence_sentence": "Wir sind ein Team aus weltweit führenden Wissenschaftlern, Ingenieuren und Fachkräften, die gemeinsam daran arbeiten, nützliche Quantencomputer zu bauen, die der Menschheit die Möglichkeit geben, ihre komplexesten Herausforderungen zu lösen.",
+    "source_document": "https://universalquantum.com/de/wer-wir-sind",
+    "page": 3,
+    "confidence": "high",
+    "canonical_actor_key": "universal quantum ltd",
+    "aliases": [
+      "Universal Quantum Ltd",
+      "Universal Quantum Ltd."
+    ],
+    "pages": [
+      1,
+      2,
+      3,
+      5,
+      6,
+      7,
+      8,
+      10,
+      22,
+      23
+    ],
+    "mentions": [
+      {
+        "entity": "Universal Quantum Ltd.",
+        "page": 2,
+        "role_in_text": "Founder of ground-breaking research in quantum computing",
+        "occurrence_sentence": "Universal Quantum was founded on ground-breaking research which includes a practical blueprint for a scalable trapped ion quantum computer with millions of qubits.",
+        "source_document": "https://universalquantum.com/knowledge-hub/technical-resources"
+      },
+      {
+        "entity": "Universal Quantum Ltd.",
+        "page": 6,
+        "role_in_text": "company",
+        "occurrence_sentence": "© 2026 Universal Quantum Ltd.",
+        "source_document": "https://universalquantum.com/knowledge-hub/technical-resources"
+      },
+      {
+        "entity": "Universal Quantum Ltd.",
+        "page": 1,
+        "role_in_text": "Company",
+        "occurrence_sentence": "© 2026 Universal Quantum Ltd.",
+        "source_document": "https://universalquantum.com/contact-us"
+      },
+      {
+        "entity": "Universal Quantum Ltd.",
+        "page": 2,
+        "role_in_text": "company",
+        "occurrence_sentence": "© 2026 Universal Quantum Ltd.",
+        "source_document": "https://universalquantum.com/contact-us"
+      },
+      {
+        "entity": "Universal Quantum Ltd.",
+        "page": 2,
+        "role_in_text": "Company",
+        "occurrence_sentence": "© 2026 Universal Quantum Ltd.",
+        "source_document": "https://universalquantum.com/de/node/13"
+      },
+      {
+        "entity": "Universal Quantum Ltd.",
+        "page": 3,
+        "role_in_text": "Privacy policy owner",
+        "occurrence_sentence": "© 2026 Universal Quantum Ltd.",
+        "source_document": "https://universalquantum.com/de/node/13"
+      },
+      {
+        "entity": "Universal Quantum Ltd",
+        "page": 22,
+        "role_in_text": "Company providing privacy policy",
+        "occurrence_sentence": "Universal Quantum Ltd",
+        "source_document": "https://universalquantum.com/de/node/13"
+      },
+      {
+        "entity": "Universal Quantum Ltd",
+        "page": 23,
+        "role_in_text": "Company",
+        "occurrence_sentence": "### **Universal Quantum Ltd**",
+        "source_document": "https://universalquantum.com/de/node/13"
+      },
+      {
+        "entity": "Universal Quantum Ltd.",
+        "page": 2,
+        "role_in_text": "company",
+        "occurrence_sentence": "© 2026 Universal Quantum Ltd.",
+        "source_document": "https://universalquantum.com/de/node/181"
+      },
+      {
+        "entity": "Universal Quantum Ltd.",
+        "page": 3,
+        "role_in_text": "UK based company building the world's most scalable quantum computers",
+        "occurrence_sentence": "Universal Quantum, the UK based company building the world's most scalable quantum computers, today announced the appointment of Freeke Heijman as Senior European Advisor.",
+        "source_document": "https://universalquantum.com/de/node/181"
+      },
+      {
+        "entity": "Universal Quantum Ltd.",
+        "page": 6,
+        "role_in_text": "Company",
+        "occurrence_sentence": "© 2026 Universal Quantum Ltd.",
+        "source_document": "https://universalquantum.com/de/node/181"
+      },
+      {
+        "entity": "Universal Quantum Ltd.",
+        "page": 1,
+        "role_in_text": "The company itself",
+        "occurrence_sentence": "© 2026 Universal Quantum Ltd.",
+        "source_document": "https://universalquantum.com/who-we-are"
+      },
+      {
+        "entity": "Universal Quantum Ltd.",
+        "page": 2,
+        "role_in_text": "Company working on building useful quantum computers.",
+        "occurrence_sentence": "We started Universal Quantum to meet this challenge - because we believe that by doing so, we can help solve the most difficult problems faced by humanity.",
+        "source_document": "https://universalquantum.com/who-we-are"
+      },
+      {
+        "entity": "Universal Quantum Ltd.",
+        "page": 2,
+        "role_in_text": "company",
+        "occurrence_sentence": "© 2026 Universal Quantum Ltd.",
+        "source_document": "https://universalquantum.com/knowledge-hub/podcast/%C2%A32B-and-what-actually-matters"
+      },
+      {
+        "entity": "Universal Quantum Ltd.",
+        "page": 3,
+        "role_in_text": "Publisher of the podcast",
+        "occurrence_sentence": "© 2026 Universal Quantum Ltd.",
+        "source_document": "https://universalquantum.com/knowledge-hub/podcast/%C2%A32B-and-what-actually-matters"
+      },
+      {
+        "entity": "Universal Quantum Ltd.",
+        "page": 6,
+        "role_in_text": "company",
+        "occurrence_sentence": "© 2026 Universal Quantum Ltd.",
+        "source_document": "https://universalquantum.com/knowledge-hub/podcast/%C2%A32B-and-what-actually-matters"
+      },
+      {
+        "entity": "Universal Quantum Ltd.",
+        "page": 1,
+        "role_in_text": "Company",
+        "occurrence_sentence": "© 2026 Universal Quantum Ltd.",
+        "source_document": "https://universalquantum.com/knowledge-hub"
+      },
+      {
+        "entity": "Universal Quantum Ltd.",
+        "page": 2,
+        "role_in_text": "UK based company building the world's most scalable quantum computers",
+        "occurrence_sentence": "Universal Quantum, the UK based company building the world's most scalable quantum computers, today announced the appointment of Freeke Heijman as Senior European Advisor.",
+        "source_document": "https://universalquantum.com/knowledge-hub"
+      },
+      {
+        "entity": "Universal Quantum Ltd.",
+        "page": 6,
+        "role_in_text": "Founder and operator of the website",
+        "occurrence_sentence": "Universal Quantum was founded on ground-breaking research which includes a practical blueprint for a scalable trapped ion quantum computer with millions of qubits.",
+        "source_document": "https://universalquantum.com/knowledge-hub"
+      },
+      {
+        "entity": "Universal Quantum Ltd.",
+        "page": 2,
+        "role_in_text": "company",
+        "occurrence_sentence": "© 2026 Universal Quantum Ltd.",
+        "source_document": "https://universalquantum.com/de/wissenszentrum/neuigkeiten-und-blog"
+      },
+      {
+        "entity": "Universal Quantum Ltd.",
+        "page": 7,
+        "role_in_text": "Company",
+        "occurrence_sentence": "© 2026 Universal Quantum Ltd.",
+        "source_document": "https://universalquantum.com/de/wissenszentrum/neuigkeiten-und-blog"
+      },
+      {
+        "entity": "Universal Quantum Ltd.",
+        "page": 2,
+        "role_in_text": "company",
+        "occurrence_sentence": "© 2026 Universal Quantum Ltd.",
+        "source_document": "https://universalquantum.com/knowledge-hub/universal-quantum-selected-for-tech-nation-fifty-2026"
+      },
+      {
+        "entity": "Universal Quantum Ltd.",
+        "page": 7,
+        "role_in_text": "Company",
+        "occurrence_sentence": "© 2026 Universal Quantum Ltd.",
+        "source_document": "https://universalquantum.com/knowledge-hub/universal-quantum-selected-for-tech-nation-fifty-2026"
+      },
+      {
+        "entity": "Universal Quantum Ltd.",
+        "page": 2,
+        "role_in_text": "company",
+        "occurrence_sentence": "© 2026 Universal Quantum Ltd.",
+        "source_document": "https://universalquantum.com/knowledge-hub/universal-quantum-appoints-Freeke-Heijman-as-senior-european-advisor"
+      },
+      {
+        "entity": "Universal Quantum Ltd.",
+        "page": 8,
+        "role_in_text": "company",
+        "occurrence_sentence": "© 2026 Universal Quantum Ltd.",
+        "source_document": "https://universalquantum.com/knowledge-hub/universal-quantum-appoints-Freeke-Heijman-as-senior-european-advisor"
+      },
+      {
+        "entity": "Universal Quantum Ltd.",
+        "page": 1,
+        "role_in_text": "Company",
+        "occurrence_sentence": "© 2026 Universal Quantum Ltd.",
+        "source_document": "https://universalquantum.com/what-we-do"
+      },
+      {
+        "entity": "Universal Quantum Ltd.",
+        "page": 2,
+        "role_in_text": "The company building quantum computers.",
+        "occurrence_sentence": "We're building quantum computers that empower humanity to solve its most complex challenges.",
+        "source_document": "https://universalquantum.com/what-we-do"
+      },
+      {
+        "entity": "Universal Quantum Ltd.",
+        "page": 5,
+        "role_in_text": "Company providing quantum computing solutions",
+        "occurrence_sentence": "Together with our growing ecosystem, we are solving scale for the full quantum stack.",
+        "source_document": "https://universalquantum.com/what-we-do"
+      },
+      {
+        "entity": "Universal Quantum Ltd.",
+        "page": 2,
+        "role_in_text": "company",
+        "occurrence_sentence": "© 2026 Universal Quantum Ltd.",
+        "source_document": "https://universalquantum.com/de/node/180"
+      },
+      {
+        "entity": "Universal Quantum Ltd.",
+        "page": 8,
+        "role_in_text": "The company mentioned in the text.",
+        "occurrence_sentence": "© 2026 Universal Quantum Ltd.",
+        "source_document": "https://universalquantum.com/de/node/180"
+      },
+      {
+        "entity": "Universal Quantum Ltd.",
+        "page": 2,
+        "role_in_text": "company",
+        "occurrence_sentence": "© 2026 Universal Quantum Ltd.",
+        "source_document": "https://universalquantum.com/knowledge-hub/podcast/the-quantum-rivalry-of-schr%C3%B6dinger-and-eisenberg"
+      },
+      {
+        "entity": "Universal Quantum Ltd.",
+        "page": 3,
+        "role_in_text": "UK based company building the world's most scalable quantum computers",
+        "occurrence_sentence": "Universal Quantum, the UK based company building the world's most scalable quantum computers, today announced the appointment of Freeke Heijman as Senior European Advisor.",
+        "source_document": "https://universalquantum.com/knowledge-hub/podcast/the-quantum-rivalry-of-schr%C3%B6dinger-and-eisenberg"
+      },
+      {
+        "entity": "Universal Quantum Ltd.",
+        "page": 6,
+        "role_in_text": "Company mentioned in the footer",
+        "occurrence_sentence": "© 2026 Universal Quantum Ltd.",
+        "source_document": "https://universalquantum.com/knowledge-hub/podcast/the-quantum-rivalry-of-schr%C3%B6dinger-and-eisenberg"
+      },
+      {
+        "entity": "Universal Quantum Ltd.",
+        "page": 2,
+        "role_in_text": "Company",
+        "occurrence_sentence": "© 2026 Universal Quantum Ltd.",
+        "source_document": "https://universalquantum.com/de/wissenszentrum"
+      },
+      {
+        "entity": "Universal Quantum Ltd.",
+        "page": 3,
+        "role_in_text": "UK based company building the world's most scalable quantum computers",
+        "occurrence_sentence": "Universal Quantum, the UK based company building the world's most scalable quantum computers, today announced the appointment of Freeke Heijman as Senior European Advisor.",
+        "source_document": "https://universalquantum.com/de/wissenszentrum"
+      },
+      {
+        "entity": "Universal Quantum Ltd.",
+        "page": 2,
+        "role_in_text": "company",
+        "occurrence_sentence": "© 2026 Universal Quantum Ltd.",
+        "source_document": "https://universalquantum.com/voices-of-uq/everything-is-quantum"
+      },
+      {
+        "entity": "Universal Quantum Ltd.",
+        "page": 6,
+        "role_in_text": "The company the speaker is working for.",
+        "occurrence_sentence": "© 2026 Universal Quantum Ltd.",
+        "source_document": "https://universalquantum.com/voices-of-uq/everything-is-quantum"
+      },
+      {
+        "entity": "Universal Quantum Ltd.",
+        "page": 2,
+        "role_in_text": "Company",
+        "occurrence_sentence": "© 2026 Universal Quantum Ltd.",
+        "source_document": "https://universalquantum.com/knowledge-hub/podcast/the-wiring-problem-in-large-scale-quantum-computers"
+      },
+      {
+        "entity": "Universal Quantum Ltd.",
+        "page": 3,
+        "role_in_text": "Publisher of the podcast",
+        "occurrence_sentence": "© 2026 Universal Quantum Ltd.",
+        "source_document": "https://universalquantum.com/knowledge-hub/podcast/the-wiring-problem-in-large-scale-quantum-computers"
+      },
+      {
+        "entity": "Universal Quantum Ltd.",
+        "page": 6,
+        "role_in_text": "Company mentioned in the footer",
+        "occurrence_sentence": "© 2026 Universal Quantum Ltd.",
+        "source_document": "https://universalquantum.com/knowledge-hub/podcast/the-wiring-problem-in-large-scale-quantum-computers"
+      },
+      {
+        "entity": "Universal Quantum Ltd.",
+        "page": 1,
+        "role_in_text": "company",
+        "occurrence_sentence": "© 2026 Universal Quantum Ltd.",
+        "source_document": "https://universalquantum.com"
+      },
+      {
+        "entity": "Universal Quantum Ltd.",
+        "page": 2,
+        "role_in_text": "Company that builds scalable quantum computers.",
+        "occurrence_sentence": "Solve scale. Change world. Quantum computers have the potential to overcome some of humanity's greatest challenges. To realise this potential, we need to build machines that scale. This is what Universal Quantum does.",
+        "source_document": "https://universalquantum.com"
+      },
+      {
+        "entity": "Universal Quantum Ltd.",
+        "page": 6,
+        "role_in_text": "company",
+        "occurrence_sentence": "© 2026 Universal Quantum Ltd.",
+        "source_document": "https://universalquantum.com"
+      },
+      {
+        "entity": "Universal Quantum Ltd.",
+        "page": 2,
+        "role_in_text": "Founder and developer of quantum computing technology",
+        "occurrence_sentence": "Universal Quantum wurde auf der Grundlage bahnbrechender Forschungsergebnisse gegründet, zu denen ein Bauplan eines skalierbaren Quantencomputer mit Millionen auf Ionen basierenden Qubits gehört.",
+        "source_document": "https://universalquantum.com/de/wissenszentrum/technische-ressourcen"
+      },
+      {
+        "entity": "Universal Quantum Ltd.",
+        "page": 6,
+        "role_in_text": "company",
+        "occurrence_sentence": "© 2026 Universal Quantum Ltd.",
+        "source_document": "https://universalquantum.com/de/wissenszentrum/technische-ressourcen"
+      },
+      {
+        "entity": "Universal Quantum Ltd.",
+        "page": 1,
+        "role_in_text": "Company",
+        "occurrence_sentence": "© 2026 Universal Quantum Ltd.",
+        "source_document": "https://universalquantum.com/working-here"
+      },
+      {
+        "entity": "Universal Quantum Ltd.",
+        "page": 2,
+        "role_in_text": "Company",
+        "occurrence_sentence": "© 2026 Universal Quantum Ltd.",
+        "source_document": "https://universalquantum.com/working-here"
+      },
+      {
+        "entity": "Universal Quantum Ltd.",
+        "page": 7,
+        "role_in_text": "company",
+        "occurrence_sentence": "© 2026 Universal Quantum Ltd.",
+        "source_document": "https://universalquantum.com/working-here"
+      },
+      {
+        "entity": "Universal Quantum Ltd.",
+        "page": 1,
+        "role_in_text": "company",
+        "occurrence_sentence": "© 2026 Universal Quantum Ltd.",
+        "source_document": "https://universalquantum.com/knowledge-hub/news-blog"
+      },
+      {
+        "entity": "Universal Quantum Ltd.",
+        "page": 2,
+        "role_in_text": "UK based company building the world's most scalable quantum computers",
+        "occurrence_sentence": "Universal Quantum, the UK based company building the world's most scalable quantum computers, today announced the appointment of Freeke Heijman as Senior European Advisor.",
+        "source_document": "https://universalquantum.com/knowledge-hub/news-blog"
+      },
+      {
+        "entity": "Universal Quantum Ltd.",
+        "page": 6,
+        "role_in_text": "company",
+        "occurrence_sentence": "© 2026 Universal Quantum Ltd.",
+        "source_document": "https://universalquantum.com/knowledge-hub/news-blog"
+      },
+      {
+        "entity": "Universal Quantum Ltd.",
+        "page": 2,
+        "role_in_text": "developer of scalable quantum computers",
+        "occurrence_sentence": "Solve scale. Change world Quantencomputer haben das Potenzial, einige der größten Herausforderungen der Menschheit zu lösen. Um dieses Potenzial auszuschöpfen, müssen wir skalierbare Maschinen bauen. Genau das leistet Universal Quantum.",
+        "source_document": "https://universalquantum.com/de"
+      },
+      {
+        "entity": "Universal Quantum Ltd.",
+        "page": 6,
+        "role_in_text": "Publisher of the text",
+        "occurrence_sentence": "© 2026 Universal Quantum Ltd.",
+        "source_document": "https://universalquantum.com/de"
+      },
+      {
+        "entity": "Universal Quantum Ltd.",
+        "page": 2,
+        "role_in_text": "company",
+        "occurrence_sentence": "© 2026 Universal Quantum Ltd.",
+        "source_document": "https://universalquantum.com/de/hier-arbeiten"
+      },
+      {
+        "entity": "Universal Quantum Ltd.",
+        "page": 3,
+        "role_in_text": "Company",
+        "occurrence_sentence": "© 2026 Universal Quantum Ltd.",
+        "source_document": "https://universalquantum.com/de/hier-arbeiten"
+      },
+      {
+        "entity": "Universal Quantum Ltd.",
+        "page": 10,
+        "role_in_text": "company",
+        "occurrence_sentence": "© 2026 Universal Quantum Ltd.",
+        "source_document": "https://universalquantum.com/de/hier-arbeiten"
+      },
+      {
+        "entity": "Universal Quantum Ltd.",
+        "page": 2,
+        "role_in_text": "company",
+        "occurrence_sentence": "© 2026 Universal Quantum Ltd.",
+        "source_document": "https://universalquantum.com/de/wer-wir-sind"
+      },
+      {
+        "entity": "Universal Quantum Ltd.",
+        "page": 3,
+        "role_in_text": "Company",
+        "occurrence_sentence": "Wir sind ein Team aus weltweit führenden Wissenschaftlern, Ingenieuren und Fachkräften, die gemeinsam daran arbeiten, nützliche Quantencomputer zu bauen, die der Menschheit die Möglichkeit geben, ihre komplexesten Herausforderungen zu lösen.",
+        "source_document": "https://universalquantum.com/de/wer-wir-sind"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Industry",
+    "sphere": "Single",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "Universal Quantum Technologies Limited",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "large enterprises",
+    "role_in_text": "Controller of your Personal Data",
+    "technology_area": "quantum computing",
+    "occurrence_sentence": "We, Universal Quantum Technologies Limited, are the Controller (for the purposes of the GDPR) of your Personal Data (referred to as either “Universal Quantum”, “we”, “us” or “our” in this Privacy Policy).",
+    "source_document": "https://universalquantum.com/de/node/13",
+    "page": 4,
+    "confidence": "high",
+    "canonical_actor_key": "universal quantum technologies limited",
+    "aliases": [
+      "Universal Quantum Technologies Limited"
+    ],
+    "pages": [
+      4,
+      5
+    ],
+    "mentions": [
+      {
+        "entity": "Universal Quantum Technologies Limited",
+        "page": 4,
+        "role_in_text": "Controller of your Personal Data",
+        "occurrence_sentence": "We, Universal Quantum Technologies Limited, are the Controller (for the purposes of the GDPR) of your Personal Data (referred to as either “Universal Quantum”, “we”, “us” or “our” in this Privacy Policy).",
+        "source_document": "https://universalquantum.com/de/node/13"
+      },
+      {
+        "entity": "Universal Quantum Technologies Limited",
+        "page": 5,
+        "role_in_text": "Controller of your Personal Data",
+        "occurrence_sentence": "We, Universal Quantum Technologies Limited, are the Controller (for the purposes of the GDPR) of your Personal Data (referred to as either “Universal Quantum”, “we”, “us” or “our” in this Privacy Policy).",
+        "source_document": "https://universalquantum.com/de/node/13"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Industry",
+    "sphere": "Single",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "University of Sussex",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "universities",
+    "role_in_text": "Sebastian Weidt and Winfried Hensinger were collaborators at the University of Sussex.",
+    "technology_area": "quantum computing",
+    "occurrence_sentence": "Universal Quantum was founded by Sebastian Weidt, Professor of Quantum Computing and Entrepreneurship, and Winfried Hensinger, Professor of Quantum Technologies: long-standing friends and collaborators at the University of Sussex.",
+    "source_document": "https://universalquantum.com/who-we-are",
+    "page": 3,
+    "confidence": "high",
+    "canonical_actor_key": "university of sussex",
+    "aliases": [
+      "University of Sussex"
+    ],
+    "pages": [
+      3,
+      4,
+      13
+    ],
+    "mentions": [
+      {
+        "entity": "University of Sussex",
+        "page": 3,
+        "role_in_text": "Sebastian Weidt and Winfried Hensinger were collaborators at the University of Sussex.",
+        "occurrence_sentence": "Universal Quantum was founded by Sebastian Weidt, Professor of Quantum Computing and Entrepreneurship, and Winfried Hensinger, Professor of Quantum Technologies: long-standing friends and collaborators at the University of Sussex.",
+        "source_document": "https://universalquantum.com/who-we-are"
+      },
+      {
+        "entity": "University of Sussex",
+        "page": 4,
+        "role_in_text": "Sebastian Weidt and Winfried Hensinger were colleagues at the University of Sussex.",
+        "occurrence_sentence": "Universal Quantum wurde von Sebastian Weidt, Professor für Quantencomputing und Unternehmertum, und Winfried Hensinger, Professor für Quantentechnologien, gegründet: langjährige Freunde und Kollegen an der University of Sussex.",
+        "source_document": "https://universalquantum.com/de/wer-wir-sind"
+      },
+      {
+        "entity": "University of Sussex",
+        "page": 13,
+        "role_in_text": "Partner",
+        "occurrence_sentence": "Wir möchten uns außerdem bei der University of Sussex bedanken, die seit der Gründung von Universal Quantum ein wichtiger Partner ist.",
+        "source_document": "https://universalquantum.com/de/wer-wir-sind"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Academia",
+    "sphere": "Single",
+    "r_and_d": "R&D",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "Werner Heisenberg",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "individual",
+    "role_in_text": "Titan of quantum physics",
+    "technology_area": "quantum computing",
+    "occurrence_sentence": "We shine a light on the rivalry between Werner Heisenberg and Erwin Schrödinger, two titans of quantum physics.",
+    "source_document": "https://universalquantum.com/knowledge-hub/podcast/the-wiring-problem-in-large-scale-quantum-computers",
+    "page": 3,
+    "canonical_actor_key": "werner heisenberg",
+    "aliases": [
+      "Werner Heisenberg"
+    ],
+    "pages": [
+      3
+    ],
+    "mentions": [
+      {
+        "entity": "Werner Heisenberg",
+        "page": 3,
+        "role_in_text": "Titan of quantum physics",
+        "occurrence_sentence": "We shine a light on the rivalry between Werner Heisenberg and Erwin Schrödinger, two titans of quantum physics.",
+        "source_document": "https://universalquantum.com/knowledge-hub/podcast/the-wiring-problem-in-large-scale-quantum-computers"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Unknown",
+    "sphere": "Unknown",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "unknown_category",
+    "classification_needs_review": true,
+    "classification_review_reason": "unmapped_category:individual; individual_requires_role_classification"
+  },
+  {
+    "entity": "Winfried Hensinger",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "entrepreneurial scientist",
+    "role_in_text": "Chefwissenschaftler, Mitbegründer und Vorsitzender",
+    "technology_area": "quantum computing",
+    "occurrence_sentence": "### Winfried Hensinger Chefwissenschaftler, Mitbegründer und Vorsitzender",
+    "source_document": "https://universalquantum.com/de/wer-wir-sind",
+    "page": 12,
+    "confidence": "high",
+    "canonical_actor_key": "winfried hensinger",
+    "aliases": [
+      "Winfried Hensinger"
+    ],
+    "pages": [
+      4,
+      5,
+      8,
+      12
+    ],
+    "mentions": [
+      {
+        "entity": "Winfried Hensinger",
+        "page": 4,
+        "role_in_text": "Founder of Universal Quantum",
+        "occurrence_sentence": "Universal Quantum was founded by Sebastian Weidt, Professor of Quantum Computing and Entrepreneurship, and Winfried Hensinger, Professor",
+        "source_document": "https://universalquantum.com/who-we-are"
+      },
+      {
+        "entity": "Winfried Hensinger",
+        "page": 8,
+        "role_in_text": "Chief Scientist, Co-Founder & Chairman",
+        "occurrence_sentence": "Over",
+        "source_document": "https://universalquantum.com/who-we-are"
+      },
+      {
+        "entity": "Winfried Hensinger",
+        "page": 5,
+        "role_in_text": "Founder of Universal Quantum",
+        "occurrence_sentence": "Universal Quantum wurde von Sebastian Weidt, Professor für Quantencomputing und Unternehmert",
+        "source_document": "https://universalquantum.com/de/wer-wir-sind"
+      },
+      {
+        "entity": "Winfried Hensinger",
+        "page": 12,
+        "role_in_text": "Chefwissenschaftler, Mitbegründer und Vorsitzender",
+        "occurrence_sentence": "### Winfried Hensinger Chefwissenschaftler, Mitbegründer und Vorsitzender",
+        "source_document": "https://universalquantum.com/de/wer-wir-sind"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Intermediary",
+    "sphere": "Multi",
+    "r_and_d": "R&D",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "Zak Romaszko",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "individual",
+    "role_in_text": "Leiter Quantenchips",
+    "technology_area": "quantum computing",
+    "occurrence_sentence": "Ich mag alle Formen von Wettkampfspielen – am liebsten solche, in denen ich gut bin. ### Zak Romaszko Leiter Quantenchips",
+    "source_document": "https://universalquantum.com/de/wer-wir-sind",
+    "page": 13,
+    "confidence": "high",
+    "canonical_actor_key": "zak romaszko",
+    "aliases": [
+      "Zak Romaszko"
+    ],
+    "pages": [
+      13
+    ],
+    "mentions": [
+      {
+        "entity": "Zak Romaszko",
+        "page": 13,
+        "role_in_text": "Leiter Quantenchips",
+        "occurrence_sentence": "Ich mag alle Formen von Wettkampfspielen – am liebsten solche, in denen ich gut bin. ### Zak Romaszko Leiter Quantenchips",
+        "source_document": "https://universalquantum.com/de/wer-wir-sind"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Unknown",
+    "sphere": "Unknown",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "unknown_category",
+    "classification_needs_review": true,
+    "classification_review_reason": "unmapped_category:individual; individual_requires_role_classification"
+  }
+]

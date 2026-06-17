@@ -1,0 +1,80 @@
+
+========================================================================
+SITE BATCH RUN  2026-06-17 10:22:29
+========================================================================
+  Config file:    /home/lv/IDP/idpdeeptech/pipeline/site_input/companies.json
+  Documents:      80
+  Workers:        4
+  Crawl depth:    3
+  Max pages:      20
+  Force redo:     False
+  Batch log:      /home/lv/IDP/idpdeeptech/pipeline/site_outputs/batch_logs/batch_20260617_102229.log
+========================================================================
+
+[1/80] Amazon Braket: skipping (already done; pass --force to redo)
+[2/80] D-Wave Systems: skipping (already done; pass --force to redo)
+[3/80] Ibm: skipping (already done; pass --force to redo)
+[4/80] Ionq: skipping (already done; pass --force to redo)
+[5/80] Google Quantum Ai: skipping (already done; pass --force to redo)
+[6/80] Microsoft: skipping (already done; pass --force to redo)
+[7/80] Quantum Computing Inc.: skipping (already done; pass --force to redo)
+[8/80] Rigetti Computing: skipping (already done; pass --force to redo)
+[9/80] 1Qbit: skipping (already done; pass --force to redo)
+[10/80] Alice & Bob: skipping (already done; pass --force to redo)
+[11/80] Alpine Quantum Technologies (Aqt): skipping (already done; pass --force to redo)
+[12/80] Anyon Systems: skipping (already done; pass --force to redo)
+[13/80] Atom Computing: skipping (already done; pass --force to redo)
+[14/80] Bluequbit: skipping (already done; pass --force to redo)
+[15/80] Bosonq Psi: skipping (already done; pass --force to redo)
+[16/80] Classiq: skipping (already done; pass --force to redo)
+[17/80] Crypto Quantique: skipping (already done; pass --force to redo)
+[18/80] Delft Circuits: skipping (already done; pass --force to redo)
+[19/80] Diraq: skipping (already done; pass --force to redo)
+[20/80] Eeroq: skipping (already done; pass --force to redo)
+[21/80] Eleqtron: skipping (already done; pass --force to redo)
+[22/80] Evolutionq: skipping (already done; pass --force to redo)
+[23/80] Horizon Quantum Computing: skipping (already done; pass --force to redo)
+[24/80] Hqs Quantum Simulations: skipping (already done; pass --force to redo)
+[25/80] Infleqtion: skipping (already done; pass --force to redo)
+[26/80] Iqm: skipping (already done; pass --force to redo)
+[27/80] Kets Quantum Security: skipping (already done; pass --force to redo)
+[28/80] Kiutra: skipping (already done; pass --force to redo)
+[29/80] Multiverse Computing: skipping (already done; pass --force to redo)
+[31/80] Orca Computing: skipping (already done; pass --force to redo)
+[32/80] Oxford Quantum Circuits (Oqc): skipping (already done; pass --force to redo)
+[33/80] Parityqc: skipping (already done; pass --force to redo)
+[34/80] Pasqal: skipping (already done; pass --force to redo)
+[35/80] Photonic Inc.: skipping (already done; pass --force to redo)
+[36/80] Pqshield: skipping (already done; pass --force to redo)
+[37/80] Proteinqure: skipping (already done; pass --force to redo)
+[38/80] Qaisec: skipping (already done; pass --force to redo)
+[39/80] Psiquantum: skipping (already done; pass --force to redo)
+[40/80] Q-Ctrl: skipping (already done; pass --force to redo)
+[41/80] Qc Ware: skipping (already done; pass --force to redo)
+[42/80] Qruise: skipping (already done; pass --force to redo)
+[43/80] Qsimulate: skipping (already done; pass --force to redo)
+[45/80] Quantfi: skipping (already done; pass --force to redo)
+[46/80] Quantistry: skipping (already done; pass --force to redo)
+[47/80] Quantum Base: skipping (already done; pass --force to redo)
+[48/80] Quantum Brilliance: skipping (already done; pass --force to redo)
+[50/80] Quantum Dice: skipping (already done; pass --force to redo)
+
+Running 33 company pipeline(s) with 4 workers...
+Note: parallel terminal output interleaves. Each company's clean trace is in its own site_outputs/<slug>/website/run.log
+
+  DONE: [49/80] Quantum Circuits
+  DONE: [44/80] Quandela
+  DONE: [30/80] Nord Quantique
+  DONE: [52/80] Quantum Motion
+  DONE: [55/80] Qubit Engineering
+  DONE: [53/80] Quantum-South
+  DONE: [51/80] Quantum Machines
+  DONE: [54/80] Quantware
+  DONE: [56/80] Qubit Pharmaceuticals
+  DONE: [57/80] Quera Computing
+  DONE: [58/80] Quintessencelabs
+  DONE: [59/80] Quix Quantum
+  DONE: [60/80] Qunasys
+  DONE: [61/80] Qunnect
+  DONE: [64/80] Scalinq
+  DONE: [62/80] Qnu Labs

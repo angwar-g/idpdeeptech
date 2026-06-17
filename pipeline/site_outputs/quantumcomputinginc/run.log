@@ -33,3 +33,327 @@ RUN FINISHED 2026-06-14 15:35:53  (INTERRUPTED)
 Started:     2026-06-14 15:35:35
 Elapsed:     18s
 ========================================================================
+
+========================================================================
+RUN STARTED  2026-06-16 17:12:59
+site_pipeline.py https://quantumcomputinginc.com/
+========================================================================
+
+[17:12:59 +0s | quantumcomputinginc] === 0 crawl site ===
+[17:13:01 +2s | quantumcomputinginc] Cleared existing crawl_output/
+[17:13:03 +3s | quantumcomputinginc] [INIT].... → Crawl4AI 0.8.6 
+[17:13:05 +6s | quantumcomputinginc] [FETCH]... ↓ https://quantumcomputinginc.com/                                                                     | ✓ | ⏱: 2.32s 
+[17:13:05 +6s | quantumcomputinginc] [SCRAPE].. ◆ https://quantumcomputinginc.com/                                                                     | ✓ | ⏱: 0.04s 
+[17:13:05 +6s | quantumcomputinginc] [COMPLETE] ● https://quantumcomputinginc.com/                                                                     | ✓ | ⏱: 2.39s 
+[17:13:11 +11s | quantumcomputinginc] [FETCH]... ↓ https://quantumcomputinginc.com/                                                                     | ✓ | ⏱: 4.88s 
+[17:13:11 +11s | quantumcomputinginc] [SCRAPE].. ◆ https://quantumcomputinginc.com/                                                                     | ✓ | ⏱: 0.33s 
+[17:13:11 +11s | quantumcomputinginc] [COMPLETE] ● https://quantumcomputinginc.com/                                                                     | ✓ | ⏱: 5.45s 
+[17:13:14 +14s | quantumcomputinginc] [FETCH]... ↓ https://quantumcomputinginc.com/news/press-relea...nces-attendance-at-upcoming-investor-conferences  | ✓ | ⏱: 8.19s 
+[17:13:16 +15s | quantumcomputinginc] [SCRAPE].. ◆ https://quantumcomputinginc.com/news/press-relea...nces-attendance-at-upcoming-investor-conferences  | ✓ | ⏱: 0.21s 
+[17:13:16 +15s | quantumcomputinginc] [COMPLETE] ● https://quantumcomputinginc.com/news/press-relea...nces-attendance-at-upcoming-investor-conferences  | ✓ | ⏱: 8.55s 
+[17:13:17 +15s | quantumcomputinginc] [FETCH]... ↓ https://quantumcomputinginc.com/news                                                                 | ✓ | ⏱: 9.05s 
+[17:13:17 +15s | quantumcomputinginc] [SCRAPE].. ◆ https://quantumcomputinginc.com/news                                                                 | ✓ | ⏱: 0.13s 
+[17:13:17 +16s | quantumcomputinginc] [COMPLETE] ● https://quantumcomputinginc.com/news                                                                 | ✓ | ⏱: 9.37s 
+[17:13:18 +17s | quantumcomputinginc] [FETCH]... ↓ https://quantumcomputinginc.com/contact                                                              | ✓ | ⏱: 10.72s 
+[17:13:18 +17s | quantumcomputinginc] [SCRAPE].. ◆ https://quantumcomputinginc.com/contact                                                              | ✓ | ⏱: 0.20s 
+[17:13:19 +17s | quantumcomputinginc] [COMPLETE] ● https://quantumcomputinginc.com/contact                                                              | ✓ | ⏱: 11.09s 
+[17:13:20 +18s | quantumcomputinginc] [FETCH]... ↓ https://quantumcomputinginc.com/learn                                                                | ✓ | ⏱: 12.25s 
+[17:13:20 +19s | quantumcomputinginc] [SCRAPE].. ◆ https://quantumcomputinginc.com/learn                                                                | ✓ | ⏱: 0.08s 
+[17:13:20 +19s | quantumcomputinginc] [COMPLETE] ● https://quantumcomputinginc.com/learn                                                                | ✓ | ⏱: 12.44s 
+[17:13:21 +20s | quantumcomputinginc] [FETCH]... ↓ https://quantumcomputinginc.com/accessibility-statement                                              | ✓ | ⏱: 13.27s 
+[17:13:21 +20s | quantumcomputinginc] [SCRAPE].. ◆ https://quantumcomputinginc.com/accessibility-statement                                              | ✓ | ⏱: 0.05s 
+[17:13:21 +20s | quantumcomputinginc] [COMPLETE] ● https://quantumcomputinginc.com/accessibility-statement                                              | ✓ | ⏱: 13.37s 
+[17:13:21 +20s | quantumcomputinginc] [FETCH]... ↓ https://quantumcomputinginc.com/terms-and-conditions                                                 | ✓ | ⏱: 13.95s 
+[17:13:22 +20s | quantumcomputinginc] [SCRAPE].. ◆ https://quantumcomputinginc.com/terms-and-conditions                                                 | ✓ | ⏱: 0.14s 
+[17:13:22 +20s | quantumcomputinginc] [COMPLETE] ● https://quantumcomputinginc.com/terms-and-conditions                                                 | ✓ | ⏱: 14.15s 
+[17:13:22 +21s | quantumcomputinginc] [FETCH]... ↓ https://quantumcomputinginc.com/learn/research-and-publications                                      | ✓ | ⏱: 14.99s 
+[17:13:23 +21s | quantumcomputinginc] [SCRAPE].. ◆ https://quantumcomputinginc.com/learn/research-and-publications                                      | ✓ | ⏱: 0.08s 
+[17:13:23 +21s | quantumcomputinginc] [COMPLETE] ● https://quantumcomputinginc.com/learn/research-and-publications                                      | ✓ | ⏱: 15.13s 
+[17:13:24 +22s | quantumcomputinginc] [FETCH]... ↓ https://quantumcomputinginc.com/technology                                                           | ✓ | ⏱: 15.96s 
+[17:13:24 +22s | quantumcomputinginc] [SCRAPE].. ◆ https://quantumcomputinginc.com/technology                                                           | ✓ | ⏱: 0.09s 
+[17:13:24 +22s | quantumcomputinginc] [COMPLETE] ● https://quantumcomputinginc.com/technology                                                           | ✓ | ⏱: 16.11s 
+[17:13:24 +23s | quantumcomputinginc] [FETCH]... ↓ https://quantumcomputinginc.com/foundry                                                              | ✓ | ⏱: 16.40s 
+[17:13:24 +23s | quantumcomputinginc] [SCRAPE].. ◆ https://quantumcomputinginc.com/foundry                                                              | ✓ | ⏱: 0.07s 
+[17:13:24 +23s | quantumcomputinginc] [COMPLETE] ● https://quantumcomputinginc.com/foundry                                                              | ✓ | ⏱: 16.57s 
+[17:13:24 +23s | quantumcomputinginc] [FETCH]... ↓ https://quantumcomputinginc.com/products                                                             | ✓ | ⏱: 16.88s 
+[17:13:25 +23s | quantumcomputinginc] [SCRAPE].. ◆ https://quantumcomputinginc.com/products                                                             | ✓ | ⏱: 0.09s 
+[17:13:25 +23s | quantumcomputinginc] [COMPLETE] ● https://quantumcomputinginc.com/products                                                             | ✓ | ⏱: 17.02s 
+[17:13:25 +24s | quantumcomputinginc] [FETCH]... ↓ https://quantumcomputinginc.com/investor-relations                                                   | ✓ | ⏱: 17.54s 
+[17:13:25 +24s | quantumcomputinginc] [SCRAPE].. ◆ https://quantumcomputinginc.com/investor-relations                                                   | ✓ | ⏱: 0.08s 
+[17:13:25 +24s | quantumcomputinginc] [COMPLETE] ● https://quantumcomputinginc.com/investor-relations                                                   | ✓ | ⏱: 17.68s 
+[17:13:25 +24s | quantumcomputinginc] [FETCH]... ↓ https://quantumcomputinginc.com/company                                                              | ✓ | ⏱: 17.85s 
+[17:13:26 +24s | quantumcomputinginc] [SCRAPE].. ◆ https://quantumcomputinginc.com/company                                                              | ✓ | ⏱: 0.16s 
+[17:13:26 +24s | quantumcomputinginc] [COMPLETE] ● https://quantumcomputinginc.com/company                                                              | ✓ | ⏱: 18.06s 
+[17:13:26 +25s | quantumcomputinginc] [FETCH]... ↓ https://quantumcomputinginc.com/cookie-policy                                                        | ✓ | ⏱: 18.51s 
+[17:13:26 +25s | quantumcomputinginc] [SCRAPE].. ◆ https://quantumcomputinginc.com/cookie-policy                                                        | ✓ | ⏱: 0.06s 
+[17:13:26 +25s | quantumcomputinginc] [COMPLETE] ● https://quantumcomputinginc.com/cookie-policy                                                        | ✓ | ⏱: 18.62s 
+[17:13:27 +26s | quantumcomputinginc] [FETCH]... ↓ https://quantumcomputinginc.com/company/subsidiaries                                                 | ✓ | ⏱: 19.55s 
+[17:13:27 +26s | quantumcomputinginc] [SCRAPE].. ◆ https://quantumcomputinginc.com/company/subsidiaries                                                 | ✓ | ⏱: 0.08s 
+[17:13:27 +26s | quantumcomputinginc] [COMPLETE] ● https://quantumcomputinginc.com/company/subsidiaries                                                 | ✓ | ⏱: 19.68s 
+[17:13:28 +27s | quantumcomputinginc] [FETCH]... ↓ https://quantumcomputinginc.com/terms-of-use                                                         | ✓ | ⏱: 20.71s 
+[17:13:28 +27s | quantumcomputinginc] [SCRAPE].. ◆ https://quantumcomputinginc.com/terms-of-use                                                         | ✓ | ⏱: 0.25s 
+[17:13:29 +27s | quantumcomputinginc] [COMPLETE] ● https://quantumcomputinginc.com/terms-of-use                                                         | ✓ | ⏱: 21.02s 
+[17:13:29 +28s | quantumcomputinginc] [FETCH]... ↓ https://quantumcomputinginc.com/privacy-policy                                                       | ✓ | ⏱: 21.67s 
+[17:13:29 +28s | quantumcomputinginc] [SCRAPE].. ◆ https://quantumcomputinginc.com/privacy-policy                                                       | ✓ | ⏱: 0.15s 
+[17:13:29 +28s | quantumcomputinginc] [COMPLETE] ● https://quantumcomputinginc.com/privacy-policy                                                       | ✓ | ⏱: 21.91s 
+[17:13:30 +28s | quantumcomputinginc] [FETCH]... ↓ https://quantumcomputinginc.com/company/careers                                                      | ✓ | ⏱: 21.99s 
+[17:13:30 +28s | quantumcomputinginc] [SCRAPE].. ◆ https://quantumcomputinginc.com/company/careers                                                      | ✓ | ⏱: 0.13s 
+[17:13:30 +28s | quantumcomputinginc] [COMPLETE] ● https://quantumcomputinginc.com/company/careers                                                      | ✓ | ⏱: 22.22s 
+[17:13:30 +29s | quantumcomputinginc] [FETCH]... ↓ https://quantumcomputinginc.com/forward-looking-statements                                           | ✓ | ⏱: 22.59s 
+[17:13:30 +29s | quantumcomputinginc] [SCRAPE].. ◆ https://quantumcomputinginc.com/forward-looking-statements                                           | ✓ | ⏱: 0.07s 
+[17:13:30 +29s | quantumcomputinginc] [COMPLETE] ● https://quantumcomputinginc.com/forward-looking-statements                                           | ✓ | ⏱: 22.77s 
+[17:13:30 +29s | quantumcomputinginc] Saved: crawl_output/ce18b793a7_quantumcomputinginc.com.json
+[17:13:30 +29s | quantumcomputinginc] Duplicate skipped: https://quantumcomputinginc.com
+[17:13:30 +29s | quantumcomputinginc] Saved: crawl_output/1c2f4bfc85_quantumcomputinginc.com_news_press-releases_2026_quantum-computing-inc.-announces-attendance-at-upcoming-investor-conferences.json
+[17:13:30 +29s | quantumcomputinginc] Saved: crawl_output/868388878f_quantumcomputinginc.com_news.json
+[17:13:30 +29s | quantumcomputinginc] Saved: crawl_output/073fcf6eb7_quantumcomputinginc.com_contact.json
+[17:13:30 +29s | quantumcomputinginc] Saved: crawl_output/9f1bae4986_quantumcomputinginc.com_learn.json
+[17:13:30 +29s | quantumcomputinginc] Saved: crawl_output/b9d5f41902_quantumcomputinginc.com_accessibility-statement.json
+[17:13:30 +29s | quantumcomputinginc] Skipped: https://quantumcomputinginc.com/terms-and-conditions
+[17:13:30 +29s | quantumcomputinginc] Saved: crawl_output/bb774af382_quantumcomputinginc.com_learn_research-and-publications.json
+[17:13:30 +29s | quantumcomputinginc] Saved: crawl_output/78dbc0fb01_quantumcomputinginc.com_technology.json
+[17:13:30 +29s | quantumcomputinginc] Saved: crawl_output/22adb7413d_quantumcomputinginc.com_foundry.json
+[17:13:30 +29s | quantumcomputinginc] Saved: crawl_output/f479186d1c_quantumcomputinginc.com_products.json
+[17:13:30 +29s | quantumcomputinginc] Saved: crawl_output/50ce237b3e_quantumcomputinginc.com_investor-relations.json
+[17:13:30 +29s | quantumcomputinginc] Saved: crawl_output/9dbb82ce75_quantumcomputinginc.com_company.json
+[17:13:30 +29s | quantumcomputinginc] Saved: crawl_output/4575467d64_quantumcomputinginc.com_cookie-policy.json
+[17:13:30 +29s | quantumcomputinginc] Saved: crawl_output/ba99fda8a9_quantumcomputinginc.com_company_subsidiaries.json
+[17:13:30 +29s | quantumcomputinginc] Skipped: https://quantumcomputinginc.com/terms-of-use
+[17:13:30 +29s | quantumcomputinginc] Skipped: https://quantumcomputinginc.com/privacy-policy
+[17:13:30 +29s | quantumcomputinginc] Saved: crawl_output/865a78787d_quantumcomputinginc.com_company_careers.json
+[17:13:30 +29s | quantumcomputinginc] Saved: crawl_output/0243387097_quantumcomputinginc.com_forward-looking-statements.json
+
+[17:13:34 +33s | quantumcomputinginc] === 1 actor extraction ===
+[17:13:36 +34s | quantumcomputinginc] Reading page (1/16): https://quantumcomputinginc.com/forward-looking-statements
+[17:13:36 +34s | quantumcomputinginc] Extracting: https://quantumcomputinginc.com/forward-looking-statements (1/16), chunk 1/3
+[17:13:43 +42s | quantumcomputinginc] Repaired malformed JSON.
+[17:13:43 +42s | quantumcomputinginc] Extracting: https://quantumcomputinginc.com/forward-looking-statements (1/16), chunk 2/3
+[17:13:52 +48s | quantumcomputinginc] Repaired malformed JSON.
+[17:13:52 +48s | quantumcomputinginc] Extracting: https://quantumcomputinginc.com/forward-looking-statements (1/16), chunk 3/3
+[17:13:59 +56s | quantumcomputinginc] Repaired malformed JSON.
+[17:13:59 +56s | quantumcomputinginc] Reading page (2/16): https://quantumcomputinginc.com/contact
+[17:13:59 +56s | quantumcomputinginc] Extracting: https://quantumcomputinginc.com/contact (2/16), chunk 1/2
+[17:14:03 +59s | quantumcomputinginc] Extracting: https://quantumcomputinginc.com/contact (2/16), chunk 2/2
+[17:14:08 +1m 5s | quantumcomputinginc] Reading page (3/16): https://quantumcomputinginc.com/news/press-releases/2026/quantum-computing-inc.-announces-attendance-at-upcoming-investor-conferences
+[17:14:08 +1m 5s | quantumcomputinginc] Extracting: https://quantumcomputinginc.com/news/press-releases/2026/quantum-computing-inc.-announces-attendance-at-upcoming-investor-conferences (3/16), chunk 1/8
+[17:14:13 +1m 9s | quantumcomputinginc] Extracting: https://quantumcomputinginc.com/news/press-releases/2026/quantum-computing-inc.-announces-attendance-at-upcoming-investor-conferences (3/16), chunk 2/8
+[17:14:20 +1m 17s | quantumcomputinginc] Repaired malformed JSON.
+[17:14:20 +1m 17s | quantumcomputinginc] Extracting: https://quantumcomputinginc.com/news/press-releases/2026/quantum-computing-inc.-announces-attendance-at-upcoming-investor-conferences (3/16), chunk 3/8
+[17:14:30 +1m 25s | quantumcomputinginc] Repaired malformed JSON.
+[17:14:30 +1m 25s | quantumcomputinginc] Extracting: https://quantumcomputinginc.com/news/press-releases/2026/quantum-computing-inc.-announces-attendance-at-upcoming-investor-conferences (3/16), chunk 4/8
+[17:14:37 +1m 31s | quantumcomputinginc] Repaired malformed JSON.
+[17:14:37 +1m 31s | quantumcomputinginc] Extracting: https://quantumcomputinginc.com/news/press-releases/2026/quantum-computing-inc.-announces-attendance-at-upcoming-investor-conferences (3/16), chunk 5/8
+[17:14:41 +1m 35s | quantumcomputinginc] Extracting: https://quantumcomputinginc.com/news/press-releases/2026/quantum-computing-inc.-announces-attendance-at-upcoming-investor-conferences (3/16), chunk 6/8
+[17:14:45 +1m 39s | quantumcomputinginc] Extracting: https://quantumcomputinginc.com/news/press-releases/2026/quantum-computing-inc.-announces-attendance-at-upcoming-investor-conferences (3/16), chunk 7/8
+[17:14:50 +1m 44s | quantumcomputinginc] Extracting: https://quantumcomputinginc.com/news/press-releases/2026/quantum-computing-inc.-announces-attendance-at-upcoming-investor-conferences (3/16), chunk 8/8
+[17:14:54 +1m 48s | quantumcomputinginc] Reading page (4/16): https://quantumcomputinginc.com/foundry
+[17:14:54 +1m 48s | quantumcomputinginc] Extracting: https://quantumcomputinginc.com/foundry (4/16), chunk 1/7
+[17:15:02 +1m 54s | quantumcomputinginc] Extracting: https://quantumcomputinginc.com/foundry (4/16), chunk 2/7
+[17:15:08 +2m 0s | quantumcomputinginc] Repaired malformed JSON.
+[17:15:08 +2m 0s | quantumcomputinginc] Extracting: https://quantumcomputinginc.com/foundry (4/16), chunk 3/7
+[17:15:12 +2m 4s | quantumcomputinginc] Extracting: https://quantumcomputinginc.com/foundry (4/16), chunk 4/7
+[17:15:18 +2m 10s | quantumcomputinginc] Extracting: https://quantumcomputinginc.com/foundry (4/16), chunk 5/7
+[17:15:22 +2m 14s | quantumcomputinginc] Extracting: https://quantumcomputinginc.com/foundry (4/16), chunk 6/7
+[17:15:26 +2m 18s | quantumcomputinginc] Extracting: https://quantumcomputinginc.com/foundry (4/16), chunk 7/7
+[17:15:29 +2m 21s | quantumcomputinginc] Reading page (5/16): https://quantumcomputinginc.com/cookie-policy
+[17:15:29 +2m 21s | quantumcomputinginc] Extracting: https://quantumcomputinginc.com/cookie-policy (5/16), chunk 1/5
+[17:15:37 +2m 27s | quantumcomputinginc] Extracting: https://quantumcomputinginc.com/cookie-policy (5/16), chunk 2/5
+[17:15:44 +2m 33s | quantumcomputinginc] Repaired malformed JSON.
+[17:15:44 +2m 33s | quantumcomputinginc] Extracting: https://quantumcomputinginc.com/cookie-policy (5/16), chunk 3/5
+[17:15:50 +2m 39s | quantumcomputinginc] Repaired malformed JSON.
+[17:15:50 +2m 39s | quantumcomputinginc] Extracting: https://quantumcomputinginc.com/cookie-policy (5/16), chunk 4/5
+[17:15:53 +2m 43s | quantumcomputinginc] Extracting: https://quantumcomputinginc.com/cookie-policy (5/16), chunk 5/5
+[17:15:57 +2m 47s | quantumcomputinginc] Reading page (6/16): https://quantumcomputinginc.com/investor-relations
+[17:15:57 +2m 47s | quantumcomputinginc] Extracting: https://quantumcomputinginc.com/investor-relations (6/16), chunk 1/10
+[17:16:02 +2m 51s | quantumcomputinginc] Extracting: https://quantumcomputinginc.com/investor-relations (6/16), chunk 2/10
+[17:16:10 +2m 58s | quantumcomputinginc] Repaired malformed JSON.
+[17:16:10 +2m 58s | quantumcomputinginc] Extracting: https://quantumcomputinginc.com/investor-relations (6/16), chunk 3/10
+[17:16:18 +3m 6s | quantumcomputinginc] Repaired malformed JSON.
+[17:16:18 +3m 6s | quantumcomputinginc] Extracting: https://quantumcomputinginc.com/investor-relations (6/16), chunk 4/10
+[17:16:24 +3m 11s | quantumcomputinginc] Repaired malformed JSON.
+[17:16:24 +3m 11s | quantumcomputinginc] Extracting: https://quantumcomputinginc.com/investor-relations (6/16), chunk 5/10
+[17:16:30 +3m 18s | quantumcomputinginc] Repaired malformed JSON.
+[17:16:30 +3m 18s | quantumcomputinginc] Extracting: https://quantumcomputinginc.com/investor-relations (6/16), chunk 6/10
+[17:16:35 +3m 22s | quantumcomputinginc] Extracting: https://quantumcomputinginc.com/investor-relations (6/16), chunk 7/10
+[17:16:45 +3m 31s | quantumcomputinginc] Repaired malformed JSON.
+[17:16:45 +3m 31s | quantumcomputinginc] Extracting: https://quantumcomputinginc.com/investor-relations (6/16), chunk 8/10
+[17:16:53 +3m 38s | quantumcomputinginc] Repaired malformed JSON.
+[17:16:53 +3m 38s | quantumcomputinginc] Extracting: https://quantumcomputinginc.com/investor-relations (6/16), chunk 9/10
+[17:17:00 +3m 45s | quantumcomputinginc] Repaired malformed JSON.
+[17:17:00 +3m 45s | quantumcomputinginc] Extracting: https://quantumcomputinginc.com/investor-relations (6/16), chunk 10/10
+[17:17:06 +3m 51s | quantumcomputinginc] Repaired malformed JSON.
+[17:17:06 +3m 51s | quantumcomputinginc] Reading page (7/16): https://quantumcomputinginc.com/technology
+[17:17:06 +3m 51s | quantumcomputinginc] Extracting: https://quantumcomputinginc.com/technology (7/16), chunk 1/6
+[17:17:09 +3m 55s | quantumcomputinginc] Extracting: https://quantumcomputinginc.com/technology (7/16), chunk 2/6
+[17:17:14 +3m 59s | quantumcomputinginc] Extracting: https://quantumcomputinginc.com/technology (7/16), chunk 3/6
+[17:17:22 +4m 5s | quantumcomputinginc] Extracting: https://quantumcomputinginc.com/technology (7/16), chunk 4/6
+[17:17:26 +4m 9s | quantumcomputinginc] Extracting: https://quantumcomputinginc.com/technology (7/16), chunk 5/6
+[17:17:32 +4m 15s | quantumcomputinginc] Extracting: https://quantumcomputinginc.com/technology (7/16), chunk 6/6
+[17:17:36 +4m 19s | quantumcomputinginc] Reading page (8/16): https://quantumcomputinginc.com/company/careers
+[17:17:36 +4m 19s | quantumcomputinginc] Extracting: https://quantumcomputinginc.com/company/careers (8/16), chunk 1/7
+[17:17:41 +4m 23s | quantumcomputinginc] Extracting: https://quantumcomputinginc.com/company/careers (8/16), chunk 2/7
+[17:17:47 +4m 30s | quantumcomputinginc] Repaired malformed JSON.
+[17:17:47 +4m 30s | quantumcomputinginc] Extracting: https://quantumcomputinginc.com/company/careers (8/16), chunk 3/7
+[17:17:54 +4m 35s | quantumcomputinginc] Extracting: https://quantumcomputinginc.com/company/careers (8/16), chunk 4/7
+[17:17:59 +4m 40s | quantumcomputinginc] Extracting: https://quantumcomputinginc.com/company/careers (8/16), chunk 5/7
+[17:18:04 +4m 45s | quantumcomputinginc] Extracting: https://quantumcomputinginc.com/company/careers (8/16), chunk 6/7
+[17:18:08 +4m 49s | quantumcomputinginc] Extracting: https://quantumcomputinginc.com/company/careers (8/16), chunk 7/7
+[17:18:14 +4m 54s | quantumcomputinginc] Reading page (9/16): https://quantumcomputinginc.com/news
+[17:18:14 +4m 54s | quantumcomputinginc] Extracting: https://quantumcomputinginc.com/news (9/16), chunk 1/8
+[17:18:17 +4m 58s | quantumcomputinginc] Extracting: https://quantumcomputinginc.com/news (9/16), chunk 2/8
+[17:18:27 +5m 6s | quantumcomputinginc] Repaired malformed JSON.
+[17:18:27 +5m 6s | quantumcomputinginc] Extracting: https://quantumcomputinginc.com/news (9/16), chunk 3/8
+[17:18:36 +5m 15s | quantumcomputinginc] Repaired malformed JSON.
+[17:18:36 +5m 15s | quantumcomputinginc] Extracting: https://quantumcomputinginc.com/news (9/16), chunk 4/8
+[17:18:44 +5m 23s | quantumcomputinginc] Repaired malformed JSON.
+[17:18:44 +5m 23s | quantumcomputinginc] Extracting: https://quantumcomputinginc.com/news (9/16), chunk 5/8
+[17:18:51 +5m 30s | quantumcomputinginc] Repaired malformed JSON.
+[17:18:51 +5m 30s | quantumcomputinginc] Extracting: https://quantumcomputinginc.com/news (9/16), chunk 6/8
+[17:19:01 +5m 38s | quantumcomputinginc] Repaired malformed JSON.
+[17:19:01 +5m 38s | quantumcomputinginc] Extracting: https://quantumcomputinginc.com/news (9/16), chunk 7/8
+[17:19:09 +5m 46s | quantumcomputinginc] Repaired malformed JSON.
+[17:19:09 +5m 46s | quantumcomputinginc] Extracting: https://quantumcomputinginc.com/news (9/16), chunk 8/8
+[17:19:19 +5m 55s | quantumcomputinginc] Repaired malformed JSON.
+[17:19:19 +5m 55s | quantumcomputinginc] Reading page (10/16): https://quantumcomputinginc.com/company
+[17:19:19 +5m 55s | quantumcomputinginc] Extracting: https://quantumcomputinginc.com/company (10/16), chunk 1/15
+[17:19:23 +5m 59s | quantumcomputinginc] Extracting: https://quantumcomputinginc.com/company (10/16), chunk 2/15
+[17:19:31 +6m 8s | quantumcomputinginc] Repaired malformed JSON.
+[17:19:31 +6m 8s | quantumcomputinginc] Extracting: https://quantumcomputinginc.com/company (10/16), chunk 3/15
+[17:19:38 +6m 15s | quantumcomputinginc] Repaired malformed JSON.
+[17:19:38 +6m 15s | quantumcomputinginc] Extracting: https://quantumcomputinginc.com/company (10/16), chunk 4/15
+[17:19:44 +6m 21s | quantumcomputinginc] Repaired malformed JSON.
+[17:19:44 +6m 21s | quantumcomputinginc] Extracting: https://quantumcomputinginc.com/company (10/16), chunk 5/15
+[17:19:52 +6m 29s | quantumcomputinginc] Repaired malformed JSON.
+[17:19:52 +6m 29s | quantumcomputinginc] Extracting: https://quantumcomputinginc.com/company (10/16), chunk 6/15
+[17:20:02 +6m 38s | quantumcomputinginc] Repaired malformed JSON.
+[17:20:02 +6m 38s | quantumcomputinginc] Extracting: https://quantumcomputinginc.com/company (10/16), chunk 7/15
+[17:20:09 +6m 45s | quantumcomputinginc] Repaired malformed JSON.
+[17:20:09 +6m 45s | quantumcomputinginc] Extracting: https://quantumcomputinginc.com/company (10/16), chunk 8/15
+[17:20:16 +6m 52s | quantumcomputinginc] Repaired malformed JSON.
+[17:20:16 +6m 52s | quantumcomputinginc] Extracting: https://quantumcomputinginc.com/company (10/16), chunk 9/15
+[17:20:24 +7m 0s | quantumcomputinginc] Repaired malformed JSON.
+[17:20:24 +7m 0s | quantumcomputinginc] Extracting: https://quantumcomputinginc.com/company (10/16), chunk 10/15
+[17:20:32 +7m 8s | quantumcomputinginc] Repaired malformed JSON.
+[17:20:32 +7m 8s | quantumcomputinginc] Extracting: https://quantumcomputinginc.com/company (10/16), chunk 11/15
+[17:20:40 +7m 14s | quantumcomputinginc] Repaired malformed JSON.
+[17:20:40 +7m 14s | quantumcomputinginc] Extracting: https://quantumcomputinginc.com/company (10/16), chunk 12/15
+[17:20:46 +7m 20s | quantumcomputinginc] Repaired malformed JSON.
+[17:20:46 +7m 20s | quantumcomputinginc] Extracting: https://quantumcomputinginc.com/company (10/16), chunk 13/15
+[17:20:54 +7m 28s | quantumcomputinginc] Repaired malformed JSON.
+[17:20:54 +7m 28s | quantumcomputinginc] Extracting: https://quantumcomputinginc.com/company (10/16), chunk 14/15
+[17:21:00 +7m 34s | quantumcomputinginc] Repaired malformed JSON.
+[17:21:00 +7m 34s | quantumcomputinginc] Extracting: https://quantumcomputinginc.com/company (10/16), chunk 15/15
+[17:21:07 +7m 41s | quantumcomputinginc] Repaired malformed JSON.
+[17:21:07 +7m 41s | quantumcomputinginc] Reading page (11/16): https://quantumcomputinginc.com/learn
+[17:21:07 +7m 41s | quantumcomputinginc] Extracting: https://quantumcomputinginc.com/learn (11/16), chunk 1/4
+[17:21:10 +7m 44s | quantumcomputinginc] Extracting: https://quantumcomputinginc.com/learn (11/16), chunk 2/4
+[17:21:16 +7m 48s | quantumcomputinginc] Extracting: https://quantumcomputinginc.com/learn (11/16), chunk 3/4
+[17:21:21 +7m 53s | quantumcomputinginc] Extracting: https://quantumcomputinginc.com/learn (11/16), chunk 4/4
+[17:21:29 +8m 1s | quantumcomputinginc] Repaired malformed JSON.
+[17:21:29 +8m 1s | quantumcomputinginc] Reading page (12/16): https://quantumcomputinginc.com/accessibility-statement
+[17:21:29 +8m 1s | quantumcomputinginc] Extracting: https://quantumcomputinginc.com/accessibility-statement (12/16), chunk 1/3
+[17:21:35 +8m 7s | quantumcomputinginc] Extracting: https://quantumcomputinginc.com/accessibility-statement (12/16), chunk 2/3
+[17:21:43 +8m 15s | quantumcomputinginc] Extracting: https://quantumcomputinginc.com/accessibility-statement (12/16), chunk 3/3
+[17:21:49 +8m 19s | quantumcomputinginc] Reading page (13/16): https://quantumcomputinginc.com/company/subsidiaries
+[17:21:49 +8m 19s | quantumcomputinginc] Extracting: https://quantumcomputinginc.com/company/subsidiaries (13/16), chunk 1/5
+[17:21:52 +8m 23s | quantumcomputinginc] Extracting: https://quantumcomputinginc.com/company/subsidiaries (13/16), chunk 2/5
+[17:22:01 +8m 31s | quantumcomputinginc] Repaired malformed JSON.
+[17:22:01 +8m 31s | quantumcomputinginc] Extracting: https://quantumcomputinginc.com/company/subsidiaries (13/16), chunk 3/5
+[17:22:10 +8m 40s | quantumcomputinginc] Repaired malformed JSON.
+[17:22:10 +8m 40s | quantumcomputinginc] Extracting: https://quantumcomputinginc.com/company/subsidiaries (13/16), chunk 4/5
+[17:22:19 +8m 49s | quantumcomputinginc] Repaired malformed JSON.
+[17:22:19 +8m 49s | quantumcomputinginc] Extracting: https://quantumcomputinginc.com/company/subsidiaries (13/16), chunk 5/5
+[17:22:30 +8m 58s | quantumcomputinginc] Repaired malformed JSON.
+[17:22:30 +8m 58s | quantumcomputinginc] Reading page (14/16): https://quantumcomputinginc.com/learn/research-and-publications
+[17:22:30 +8m 58s | quantumcomputinginc] Extracting: https://quantumcomputinginc.com/learn/research-and-publications (14/16), chunk 1/5
+[17:22:34 +9m 2s | quantumcomputinginc] Extracting: https://quantumcomputinginc.com/learn/research-and-publications (14/16), chunk 2/5
+[17:22:39 +9m 7s | quantumcomputinginc] Extracting: https://quantumcomputinginc.com/learn/research-and-publications (14/16), chunk 3/5
+[17:22:49 +9m 18s | quantumcomputinginc] Repaired malformed JSON.
+[17:22:49 +9m 18s | quantumcomputinginc] Extracting: https://quantumcomputinginc.com/learn/research-and-publications (14/16), chunk 4/5
+[17:22:59 +9m 25s | quantumcomputinginc] Repaired malformed JSON.
+[17:22:59 +9m 25s | quantumcomputinginc] Extracting: https://quantumcomputinginc.com/learn/research-and-publications (14/16), chunk 5/5
+[17:23:03 +9m 29s | quantumcomputinginc] Reading page (15/16): https://quantumcomputinginc.com
+[17:23:03 +9m 29s | quantumcomputinginc] Extracting: https://quantumcomputinginc.com (15/16), chunk 1/6
+[17:23:10 +9m 36s | quantumcomputinginc] Repaired malformed JSON.
+[17:23:10 +9m 36s | quantumcomputinginc] Extracting: https://quantumcomputinginc.com (15/16), chunk 2/6
+[17:23:17 +9m 43s | quantumcomputinginc] Repaired malformed JSON.
+[17:23:17 +9m 43s | quantumcomputinginc] Extracting: https://quantumcomputinginc.com (15/16), chunk 3/6
+[17:23:25 +9m 51s | quantumcomputinginc] Repaired malformed JSON.
+[17:23:25 +9m 51s | quantumcomputinginc] Extracting: https://quantumcomputinginc.com (15/16), chunk 4/6
+[17:23:29 +9m 55s | quantumcomputinginc] Extracting: https://quantumcomputinginc.com (15/16), chunk 5/6
+[17:23:38 +10m 1s | quantumcomputinginc] Extracting: https://quantumcomputinginc.com (15/16), chunk 6/6
+[17:23:41 +10m 5s | quantumcomputinginc] Reading page (16/16): https://quantumcomputinginc.com/products
+[17:23:41 +10m 5s | quantumcomputinginc] Extracting: https://quantumcomputinginc.com/products (16/16), chunk 1/4
+[17:23:45 +10m 8s | quantumcomputinginc] Extracting: https://quantumcomputinginc.com/products (16/16), chunk 2/4
+[17:23:48 +10m 12s | quantumcomputinginc] Extracting: https://quantumcomputinginc.com/products (16/16), chunk 3/4
+[17:23:55 +10m 18s | quantumcomputinginc] Extracting: https://quantumcomputinginc.com/products (16/16), chunk 4/4
+[17:24:03 +10m 27s | quantumcomputinginc] Repaired malformed JSON.
+[17:24:03 +10m 27s | quantumcomputinginc] Saved 1_actor_results.json with 153 extracted records
+
+[17:24:03 +10m 27s | quantumcomputinginc] === 2 clean actors ===
+[17:24:03 +10m 27s | quantumcomputinginc] Loaded 153 extracted records
+[17:24:03 +10m 27s | quantumcomputinginc] Saved 2_actor_nodes.json with 31 canonical actor nodes
+
+[17:24:03 +10m 27s | quantumcomputinginc] === 3 interaction extraction ===
+[17:24:06 +10m 27s | quantumcomputinginc] Extracting interactions: https://quantumcomputinginc.com/news/press-releases/2026/quantum-computing-inc.-announces-attendance-at-upcoming-investor-conferences (3/16), chunk 2/8
+[17:24:15 +10m 36s | quantumcomputinginc] Extracting interactions: https://quantumcomputinginc.com/news/press-releases/2026/quantum-computing-inc.-announces-attendance-at-upcoming-investor-conferences (3/16), chunk 3/8
+[17:24:25 +10m 46s | quantumcomputinginc] Extracting interactions: https://quantumcomputinginc.com/cookie-policy (5/16), chunk 1/5
+[17:24:28 +10m 49s | quantumcomputinginc] Extracting interactions: https://quantumcomputinginc.com/cookie-policy (5/16), chunk 2/5
+[17:24:34 +10m 55s | quantumcomputinginc] Extracting interactions: https://quantumcomputinginc.com/cookie-policy (5/16), chunk 3/5
+[17:24:44 +11m 3s | quantumcomputinginc] Extracting interactions: https://quantumcomputinginc.com/cookie-policy (5/16), chunk 4/5
+[17:24:49 +11m 7s | quantumcomputinginc] Extracting interactions: https://quantumcomputinginc.com/investor-relations (6/16), chunk 2/10
+[17:24:51 +11m 10s | quantumcomputinginc] Extracting interactions: https://quantumcomputinginc.com/investor-relations (6/16), chunk 3/10
+[17:24:54 +11m 13s | quantumcomputinginc] Extracting interactions: https://quantumcomputinginc.com/investor-relations (6/16), chunk 8/10
+[17:25:00 +11m 18s | quantumcomputinginc] Extracting interactions: https://quantumcomputinginc.com/investor-relations (6/16), chunk 9/10
+[17:25:07 +11m 26s | quantumcomputinginc] Extracting interactions: https://quantumcomputinginc.com/investor-relations (6/16), chunk 10/10
+[17:25:12 +11m 31s | quantumcomputinginc] Extracting interactions: https://quantumcomputinginc.com/news (9/16), chunk 5/8
+[17:25:16 +11m 32s | quantumcomputinginc] Extracting interactions: https://quantumcomputinginc.com/news (9/16), chunk 6/8
+[17:25:23 +11m 39s | quantumcomputinginc] Extracting interactions: https://quantumcomputinginc.com/news (9/16), chunk 7/8
+[17:25:32 +11m 48s | quantumcomputinginc] Extracting interactions: https://quantumcomputinginc.com/news (9/16), chunk 8/8
+[17:25:35 +11m 51s | quantumcomputinginc] Extracting interactions: https://quantumcomputinginc.com/company (10/16), chunk 2/15
+[17:25:40 +11m 56s | quantumcomputinginc] Extracting interactions: https://quantumcomputinginc.com/company (10/16), chunk 3/15
+[17:25:44 +12m 0s | quantumcomputinginc] Extracting interactions: https://quantumcomputinginc.com/company (10/16), chunk 4/15
+[17:25:54 +12m 8s | quantumcomputinginc] Extracting interactions: https://quantumcomputinginc.com/company (10/16), chunk 5/15
+[17:26:14 +12m 28s | quantumcomputinginc] Extracting interactions: https://quantumcomputinginc.com/company (10/16), chunk 6/15
+[17:26:28 +12m 40s | quantumcomputinginc] Extracting interactions: https://quantumcomputinginc.com/company (10/16), chunk 7/15
+[17:26:32 +12m 43s | quantumcomputinginc] Extracting interactions: https://quantumcomputinginc.com/company (10/16), chunk 8/15
+[17:26:40 +12m 52s | quantumcomputinginc] Extracting interactions: https://quantumcomputinginc.com/company (10/16), chunk 9/15
+[17:26:47 +12m 59s | quantumcomputinginc] Extracting interactions: https://quantumcomputinginc.com/company (10/16), chunk 10/15
+[17:27:11 +13m 21s | quantumcomputinginc] Extracting interactions: https://quantumcomputinginc.com/company (10/16), chunk 11/15
+[17:27:30 +13m 39s | quantumcomputinginc] Extracting interactions: https://quantumcomputinginc.com/company (10/16), chunk 12/15
+[17:27:46 +13m 53s | quantumcomputinginc] Extracting interactions: https://quantumcomputinginc.com/company (10/16), chunk 13/15
+[17:27:59 +14m 6s | quantumcomputinginc] Extracting interactions: https://quantumcomputinginc.com/company (10/16), chunk 14/15
+[17:28:32 +14m 36s | quantumcomputinginc] Extracting interactions: https://quantumcomputinginc.com/company (10/16), chunk 15/15
+[17:28:55 +14m 57s | quantumcomputinginc] Extracting interactions: https://quantumcomputinginc.com/company/subsidiaries (13/16), chunk 2/5
+[17:28:59 +15m 1s | quantumcomputinginc] Extracting interactions: https://quantumcomputinginc.com/company/subsidiaries (13/16), chunk 3/5
+[17:29:06 +15m 8s | quantumcomputinginc] Extracting interactions: https://quantumcomputinginc.com/company/subsidiaries (13/16), chunk 4/5
+[17:29:12 +15m 14s | quantumcomputinginc] Extracting interactions: https://quantumcomputinginc.com/company/subsidiaries (13/16), chunk 5/5
+[17:29:18 +15m 17s | quantumcomputinginc] Extracting interactions: https://quantumcomputinginc.com/learn/research-and-publications (14/16), chunk 3/5
+[17:29:22 +15m 21s | quantumcomputinginc] Extracting interactions: https://quantumcomputinginc.com/learn/research-and-publications (14/16), chunk 4/5
+[17:29:28 +15m 28s | quantumcomputinginc] Extracting interactions: https://quantumcomputinginc.com (15/16), chunk 1/6
+[17:29:39 +15m 39s | quantumcomputinginc] Extracting interactions: https://quantumcomputinginc.com (15/16), chunk 2/6
+[17:29:53 +15m 50s | quantumcomputinginc] Extracting interactions: https://quantumcomputinginc.com (15/16), chunk 3/6
+[17:29:57 +15m 54s | quantumcomputinginc] Saved 3_interaction_results.json with 87 extracted interactions.
+
+[17:29:57 +15m 54s | quantumcomputinginc] === 4 clean interactions ===
+[17:29:57 +15m 54s | quantumcomputinginc] Saved 4_edges.json with 18 cleaned interactions.
+
+[17:29:57 +15m 54s | quantumcomputinginc] === 5 helix enrichment ===
+[17:29:57 +15m 54s | quantumcomputinginc] Wrote 5_nodes.json (31 actors)
+[17:29:57 +15m 54s | quantumcomputinginc] Wrote 5_edges.json (18 interactions)
+[17:29:57 +15m 54s | quantumcomputinginc] Actor helix counts: {'Academia': 5, 'Civil Society': 2, 'Government': 2, 'Industry': 16, 'Intermediary': 3, 'Unknown': 3}
+[17:29:57 +15m 54s | quantumcomputinginc] Functional-space counts: {'Innovation': 6, 'Intra-helix / Not classified': 12}
+
+[17:29:57 +15m 54s | quantumcomputinginc] === 6 network visualisation ===
+[17:29:58 +15m 55s | quantumcomputinginc] Wrote quantum_network.html
+[17:29:58 +15m 55s | quantumcomputinginc] Nodes: 31
+[17:29:58 +15m 55s | quantumcomputinginc] Edges: 8
+
+[17:29:58 +15m 55s | quantumcomputinginc] Done. Outputs written to: /home/lv/IDP/idpdeeptech/pipeline/site_outputs/quantumcomputinginc
+[17:29:58 +15m 55s | quantumcomputinginc] Log: /home/lv/IDP/idpdeeptech/pipeline/site_outputs/quantumcomputinginc/run.log
+
+========================================================================
+RUN FINISHED 2026-06-16 17:29:58  (OK)
+Started:     2026-06-16 17:12:59
+Elapsed:     15m 55s
+========================================================================

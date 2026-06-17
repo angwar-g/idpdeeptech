@@ -499,6 +499,18 @@ def clean_phrase(text: str) -> str:
     return text
 
 def main():
+    # Handle the case where step 3 produced no input -- typically because the
+    # actor extraction found nothing (dead domain, paywall, JS-only site, etc).
+    # interactions_pdf.py / interactions_site.py prints "No valid actors found,
+    # skipping." and exits without writing 3_interaction_results.json. We
+    # should write an empty 4_edges.json and exit cleanly so downstream steps
+    # (helix, network viz) still run and produce a (possibly empty) graph.
+    if not INPUT_JSON.exists():
+        OUTPUT_JSON.write_text("[]\n", encoding="utf-8")
+        print(f"No input ({INPUT_JSON.name} missing -- upstream produced no edges). "
+              f"Wrote empty {OUTPUT_JSON}.")
+        return
+
     raw_edges = json.loads(INPUT_JSON.read_text(encoding="utf-8"))
 
     cleaned = []

@@ -1,0 +1,182 @@
+[
+  {
+    "source_actor": "Triple Alpha",
+    "target_actor": "Helium",
+    "interaction_phrase": "Helium-compatible",
+    "occurrence_sentence": "Triple Alpha's compiler supports a wide subset of C code, translating functions into [Helium-compatible](https://www.horizonquantum.com/product/programming-languages) quantum subroutines.",
+    "source_document": "https://www.horizonquantum.com/product/core-capabilities/subroutines",
+    "page": 4,
+    "relation_label": "collaborative_leadership",
+    "relation_label_confidence": "high"
+  },
+  {
+    "source_actor": "Triple Alpha",
+    "target_actor": "Helium",
+    "interaction_phrase": "Helium-compatible",
+    "occurrence_sentence": "Triple Alpha's compiler supports a wide subset of C code, translating functions into Helium-compatible quantum subroutines.",
+    "source_document": "https://www.horizonquantum.com/product/core-capabilities/subroutines",
+    "page": 5,
+    "relation_label": "collaborative_leadership",
+    "relation_label_confidence": "high"
+  },
+  {
+    "source_actor": "Horizon Quantum",
+    "target_actor": "Triple Alpha",
+    "interaction_phrase": "supported by Triple Alpha",
+    "occurrence_sentence": "Horizon Quantum seamlessly integrates quantum hardware into its software infrastructure. Explore the growing number of systems supported by Triple Alpha.",
+    "source_document": "https://www.horizonquantum.com/technology/quantum-systems-and-integration/quantum-processors-supported-by-triple-alpha",
+    "page": 4,
+    "relation_label": "technology_transfer",
+    "relation_label_confidence": "high"
+  },
+  {
+    "source_actor": "Horizon Quantum",
+    "target_actor": "Triple Alpha",
+    "interaction_phrase": "supported by Triple Alpha",
+    "occurrence_sentence": "Horizon Quantum seamlessly integrates quantum hardware into its software infrastructure. Explore the growing number of systems supported by Triple Alpha.",
+    "source_document": "https://www.horizonquantum.com/technology/quantum-systems-and-integration/quantum-processors-supported-by-triple-alpha",
+    "page": 5,
+    "relation_label": "technology_transfer",
+    "relation_label_confidence": "high"
+  },
+  {
+    "source_actor": "Triple Alpha",
+    "target_actor": "Horizon Quantum",
+    "interaction_phrase": "Horizon Quantum's deployment infrastructure",
+    "occurrence_sentence": "Triple Alpha lets programmers write in a hardware provider's framework of choice, such as OpenQASM or Quil, and customize their code to the target processor's connectivity constraints while still taking advantage of Horizon Quantum's deployment infrastructure.",
+    "source_document": "https://www.horizonquantum.com/technology/software-infrastructure/development-infrastructure",
+    "page": 8,
+    "relation_label": "technology_transfer",
+    "relation_label_confidence": "high"
+  },
+  {
+    "interaction_phrase": "Horizon Quantum's deployment infrastructure",
+    "occurrence_sentence": "Triple Alpha lets programmers write in a hardware provider's framework of choice, such as OpenQASM or Quil, and customize their code to the target processor's connectivity constraints while still taking advantage of Horizon Quantum's deployment infrastructure.",
+    "page": 9,
+    "source_actor": "Triple Alpha",
+    "source_document": "https://www.horizonquantum.com/technology/software-infrastructure/development-infrastructure",
+    "target_actor": "Horizon Quantum",
+    "relation_label": "technology_transfer",
+    "relation_label_confidence": "high"
+  },
+  {
+    "interaction_phrase": "Horizon Quantum",
+    "occurrence_sentence": "Horizon Quantum is building software infrastructure to bridge the gap between today's quantum hardware and tomorrow's applications—equipping developers, researchers, and enterprises with the quantum software tools needed to solve real-world problems.",
+    "page": 4,
+    "source_actor": "Horizon Quantum",
+    "source_document": "https://www.horizonquantum.com",
+    "target_actor": "Horizon",
+    "relation_label": "technology_transfer",
+    "relation_label_confidence": "high"
+  },
+  {
+    "interaction_phrase": "integrates with a diverse array of quantum systems, enabling Triple Alpha users",
+    "occurrence_sentence": "Horizon Quantum's software infrastructure integrates with a diverse array of quantum systems, enabling Triple Alpha users to develop applications across a broad range of hardware.",
+    "page": 4,
+    "source_actor": "Horizon Quantum",
+    "source_document": "https://www.horizonquantum.com/technology/quantum-systems-and-integration",
+    "target_actor": "Triple Alpha",
+    "relation_label": "technology_transfer",
+    "relation_label_confidence": "high"
+  },
+  {
+    "source_actor": "Horizon Quantum",
+    "target_actor": "Triple Alpha",
+    "interaction_phrase": "integrates with a diverse array of quantum systems, enabling Triple Alpha users",
+    "occurrence_sentence": "Horizon Quantum's software infrastructure integrates with a diverse array of quantum systems, enabling Triple Alpha users to develop applications across a broad range of hardware.",
+    "source_document": "https://www.horizonquantum.com/technology/quantum-systems-and-integration",
+    "page": 5,
+    "relation_label": "technology_transfer",
+    "relation_label_confidence": "high"
+  },
+  {
+    "source_actor": "Horizon Quantum",
+    "target_actor": "Triple Alpha",
+    "interaction_phrase": "seamlessly integrates quantum hardware into Triple Alpha",
+    "occurrence_sentence": "Horizon Quantum seamlessly integrates quantum hardware into Triple Alpha, giving developers direct access to a growing network of backends.",
+    "source_document": "https://www.horizonquantum.com/technology/quantum-systems-and-integration",
+    "page": 5,
+    "relation_label": "networking",
+    "relation_label_confidence": "high"
+  },
+  {
+    "interaction_phrase": "supported by Horizon Quantum's underlying execution infrastructure",
+    "occurrence_sentence": "Beyond higher-level programming tools, Triple Alpha gives developers access to advanced capabilities supported by Horizon Quantum's underlying execution infrastructure.",
+    "page": 4,
+    "source_actor": "Triple Alpha",
+    "source_document": "https://www.horizonquantum.com/product/advanced-capabilities",
+    "target_actor": "Horizon Quantum",
+    "relation_label": "technology_transfer",
+    "relation_label_confidence": "high"
+  },
+  {
+    "source_actor": "Triple Alpha",
+    "target_actor": "Horizon Quantum",
+    "interaction_phrase": "supported by Horizon Quantum's underlying execution infrastructure",
+    "occurrence_sentence": "Beyond higher-level programming tools, Triple Alpha gives developers access to advanced capabilities supported by Horizon Quantum's underlying execution infrastructure.",
+    "source_document": "https://www.horizonquantum.com/product/advanced-capabilities",
+    "page": 5,
+    "relation_label": "technology_transfer",
+    "relation_label_confidence": "high"
+  },
+  {
+    "interaction_phrase": "Horizon Quantum's deployment infrastructure",
+    "occurrence_sentence": "Horizon Quantum's deployment infrastructure enables seamless quantum processing within real-world applications.",
+    "page": 5,
+    "source_actor": "Horizon Quantum",
+    "source_document": "https://www.horizonquantum.com/technology/software-infrastructure/deployment-infrastructure",
+    "target_actor": "Horizon",
+    "relation_label": "technology_transfer",
+    "relation_label_confidence": "high"
+  },
+  {
+    "source_actor": "Triple Alpha",
+    "target_actor": "Horizon Quantum",
+    "interaction_phrase": "Leveraging Horizon Quantum's deployment infrastructure",
+    "occurrence_sentence": "Leveraging Horizon Quantum's deployment infrastructure, Triple Alpha empowers developers to embed quantum functionality directly into other applications—whether through Python scripts, web interfaces, and even Excel macros—making it easy to call and interact with quantum programs from familiar environments.",
+    "source_document": "https://www.horizonquantum.com/technology/software-infrastructure/deployment-infrastructure",
+    "page": 9,
+    "relation_label": "technology_transfer",
+    "relation_label_confidence": "high"
+  },
+  {
+    "source_actor": "Horizon",
+    "target_actor": "Horizon Quantum",
+    "interaction_phrase": "Horizon Quantum's deployment infrastructure",
+    "occurrence_sentence": "Leveraging Horizon Quantum's deployment infrastructure, Triple Alpha empowers developers to embed quantum functionality directly into other applications—whether through Python scripts, web interfaces, and even Excel macros—making it easy to call and interact with quantum programs from familiar environments.",
+    "source_document": "https://www.horizonquantum.com/technology/software-infrastructure/deployment-infrastructure",
+    "page": 9,
+    "relation_label": "technology_transfer",
+    "relation_label_confidence": "high"
+  },
+  {
+    "source_actor": "Triple Alpha",
+    "target_actor": "Horizon Quantum",
+    "interaction_phrase": "Leveraging Horizon Quantum's deployment infrastructure",
+    "occurrence_sentence": "Leveraging Horizon Quantum's deployment infrastructure, Triple Alpha empowers developers to embed quantum functionality directly into other applications—whether through Python scripts, web interfaces, and even Excel macros—making it easy to call and interact with quantum programs from familiar environments.",
+    "source_document": "https://www.horizonquantum.com/technology/software-infrastructure/deployment-infrastructure",
+    "page": 10,
+    "relation_label": "technology_transfer",
+    "relation_label_confidence": "high"
+  },
+  {
+    "interaction_phrase": "connects developers to Horizon Quantum's software infrastructure",
+    "occurrence_sentence": "Triple Alpha connects developers to Horizon Quantum's software infrastructure, empowering them to build portable, hardware-agnostic applications.",
+    "page": 4,
+    "source_actor": "Triple Alpha",
+    "source_document": "https://www.horizonquantum.com/triple-alpha",
+    "target_actor": "Horizon Quantum",
+    "relation_label": "technology_transfer",
+    "relation_label_confidence": "high"
+  },
+  {
+    "source_actor": "Triple Alpha",
+    "target_actor": "Horizon Quantum",
+    "interaction_phrase": "connects developers to Horizon Quantum's software infrastructure",
+    "occurrence_sentence": "Triple Alpha connects developers to Horizon Quantum's software infrastructure, empowering them to build portable, hardware-agnostic applications.",
+    "source_document": "https://www.horizonquantum.com/triple-alpha",
+    "page": 5,
+    "relation_label": "technology_transfer",
+    "relation_label_confidence": "high"
+  }
+]

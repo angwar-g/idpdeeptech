@@ -1,0 +1,365 @@
+
+========================================================================
+RUN STARTED  2026-06-16 21:47:30
+site_pipeline.py https://anyonsys.com/
+========================================================================
+
+[21:47:30 +0s | anyonsys] === 0 crawl site ===
+[21:47:33 +3s | anyonsys] [INIT].... → Crawl4AI 0.8.6 
+[21:47:35 +4s | anyonsys] [FETCH]... ↓ https://anyonsys.com/                                                                                | ✓ | ⏱: 1.44s 
+[21:47:35 +4s | anyonsys] [SCRAPE].. ◆ https://anyonsys.com/                                                                                | ✓ | ⏱: 0.03s 
+[21:47:35 +4s | anyonsys] [COMPLETE] ● https://anyonsys.com/                                                                                | ✓ | ⏱: 1.48s 
+[21:47:35 +5s | anyonsys] [FETCH]... ↓ https://anyonsys.com/en                                                                              | ✓ | ⏱: 0.70s 
+[21:47:36 +5s | anyonsys] [SCRAPE].. ◆ https://anyonsys.com/en                                                                              | ✓ | ⏱: 0.04s 
+[21:47:36 +5s | anyonsys] [COMPLETE] ● https://anyonsys.com/en                                                                              | ✓ | ⏱: 0.76s 
+[21:47:36 +5s | anyonsys] [FETCH]... ↓ https://anyonsys.com/en/company/partners                                                             | ✓ | ⏱: 0.82s 
+[21:47:36 +5s | anyonsys] [SCRAPE].. ◆ https://anyonsys.com/en/company/partners                                                             | ✓ | ⏱: 0.02s 
+[21:47:36 +5s | anyonsys] [COMPLETE] ● https://anyonsys.com/en/company/partners                                                             | ✓ | ⏱: 0.86s 
+[21:47:36 +6s | anyonsys] [FETCH]... ↓ https://anyonsys.com/en/markets/hpc                                                                  | ✓ | ⏱: 1.02s 
+[21:47:36 +6s | anyonsys] [SCRAPE].. ◆ https://anyonsys.com/en/markets/hpc                                                                  | ✓ | ⏱: 0.02s 
+[21:47:36 +6s | anyonsys] [COMPLETE] ● https://anyonsys.com/en/markets/hpc                                                                  | ✓ | ⏱: 1.06s 
+[21:47:36 +6s | anyonsys] [FETCH]... ↓ https://anyonsys.com/en/markets/research                                                             | ✓ | ⏱: 1.15s 
+[21:47:36 +6s | anyonsys] [SCRAPE].. ◆ https://anyonsys.com/en/markets/research                                                             | ✓ | ⏱: 0.02s 
+[21:47:36 +6s | anyonsys] [COMPLETE] ● https://anyonsys.com/en/markets/research                                                             | ✓ | ⏱: 1.19s 
+[21:47:36 +6s | anyonsys] [FETCH]... ↓ https://anyonsys.com/en/markets/defence                                                              | ✓ | ⏱: 1.24s 
+[21:47:36 +6s | anyonsys] [SCRAPE].. ◆ https://anyonsys.com/en/markets/defence                                                              | ✓ | ⏱: 0.02s 
+[21:47:36 +6s | anyonsys] [COMPLETE] ● https://anyonsys.com/en/markets/defence                                                              | ✓ | ⏱: 1.29s 
+[21:47:36 +6s | anyonsys] [FETCH]... ↓ https://anyonsys.com/en/news                                                                         | ✓ | ⏱: 1.29s 
+[21:47:36 +6s | anyonsys] [SCRAPE].. ◆ https://anyonsys.com/en/news                                                                         | ✓ | ⏱: 0.03s 
+[21:47:36 +6s | anyonsys] [COMPLETE] ● https://anyonsys.com/en/news                                                                         | ✓ | ⏱: 1.35s 
+[21:47:36 +6s | anyonsys] [FETCH]... ↓ https://anyonsys.com/en/markets/government                                                           | ✓ | ⏱: 1.39s 
+[21:47:36 +6s | anyonsys] [SCRAPE].. ◆ https://anyonsys.com/en/markets/government                                                           | ✓ | ⏱: 0.03s 
+[21:47:36 +6s | anyonsys] [COMPLETE] ● https://anyonsys.com/en/markets/government                                                           | ✓ | ⏱: 1.45s 
+[21:47:36 +6s | anyonsys] [FETCH]... ↓ https://anyonsys.com/en/contact                                                                      | ✓ | ⏱: 1.49s 
+[21:47:37 +6s | anyonsys] [SCRAPE].. ◆ https://anyonsys.com/en/contact                                                                      | ✓ | ⏱: 0.03s 
+[21:47:37 +6s | anyonsys] [COMPLETE] ● https://anyonsys.com/en/contact                                                                      | ✓ | ⏱: 1.55s 
+[21:47:37 +6s | anyonsys] [FETCH]... ↓ https://anyonsys.com/en/company/about                                                                | ✓ | ⏱: 1.71s 
+[21:47:37 +6s | anyonsys] [SCRAPE].. ◆ https://anyonsys.com/en/company/about                                                                | ✓ | ⏱: 0.02s 
+[21:47:37 +6s | anyonsys] [COMPLETE] ● https://anyonsys.com/en/company/about                                                                | ✓ | ⏱: 1.75s 
+[21:47:37 +6s | anyonsys] [FETCH]... ↓ https://anyonsys.com/en/privacy                                                                      | ✓ | ⏱: 1.80s 
+[21:47:37 +6s | anyonsys] [SCRAPE].. ◆ https://anyonsys.com/en/privacy                                                                      | ✓ | ⏱: 0.05s 
+[21:47:37 +6s | anyonsys] [COMPLETE] ● https://anyonsys.com/en/privacy                                                                      | ✓ | ⏱: 1.87s 
+[21:47:37 +6s | anyonsys] [FETCH]... ↓ https://anyonsys.com/en/technology                                                                   | ✓ | ⏱: 1.89s 
+[21:47:37 +6s | anyonsys] [SCRAPE].. ◆ https://anyonsys.com/en/technology                                                                   | ✓ | ⏱: 0.02s 
+[21:47:37 +6s | anyonsys] [COMPLETE] ● https://anyonsys.com/en/technology                                                                   | ✓ | ⏱: 1.93s 
+[21:47:37 +6s | anyonsys] [FETCH]... ↓ https://anyonsys.com/en/careers/jobs                                                                 | ✓ | ⏱: 1.93s 
+[21:47:37 +6s | anyonsys] [SCRAPE].. ◆ https://anyonsys.com/en/careers/jobs                                                                 | ✓ | ⏱: 0.03s 
+[21:47:37 +6s | anyonsys] [COMPLETE] ● https://anyonsys.com/en/careers/jobs                                                                 | ✓ | ⏱: 1.97s 
+[21:47:37 +7s | anyonsys] [FETCH]... ↓ https://anyonsys.com/en/products                                                                     | ✓ | ⏱: 2.00s 
+[21:47:37 +7s | anyonsys] [SCRAPE].. ◆ https://anyonsys.com/en/products                                                                     | ✓ | ⏱: 0.02s 
+[21:47:37 +7s | anyonsys] [COMPLETE] ● https://anyonsys.com/en/products                                                                     | ✓ | ⏱: 2.04s 
+[21:47:41 +7s | anyonsys] [FETCH]... ↓ https://anyonsys.com/en/careers/experience                                                           | ✓ | ⏱: 0.73s 
+[21:47:41 +7s | anyonsys] [SCRAPE].. ◆ https://anyonsys.com/en/careers/experience                                                           | ✓ | ⏱: 0.03s 
+[21:47:41 +7s | anyonsys] [COMPLETE] ● https://anyonsys.com/en/careers/experience                                                           | ✓ | ⏱: 0.78s 
+[21:47:41 +7s | anyonsys] [FETCH]... ↓ https://anyonsys.com/en/markets/telecom                                                              | ✓ | ⏱: 0.64s 
+[21:47:41 +7s | anyonsys] [SCRAPE].. ◆ https://anyonsys.com/en/markets/telecom                                                              | ✓ | ⏱: 0.03s 
+[21:47:41 +7s | anyonsys] [COMPLETE] ● https://anyonsys.com/en/markets/telecom                                                              | ✓ | ⏱: 0.69s 
+[21:47:41 +8s | anyonsys] [FETCH]... ↓ https://anyonsys.com/en/markets/industrial-rd                                                        | ✓ | ⏱: 0.75s 
+[21:47:41 +8s | anyonsys] [SCRAPE].. ◆ https://anyonsys.com/en/markets/industrial-rd                                                        | ✓ | ⏱: 0.04s 
+[21:47:41 +8s | anyonsys] [COMPLETE] ● https://anyonsys.com/en/markets/industrial-rd                                                        | ✓ | ⏱: 0.81s 
+[21:47:42 +8s | anyonsys] [FETCH]... ↓ https://anyonsys.com/en/markets/data-centres                                                         | ✓ | ⏱: 0.75s 
+[21:47:42 +8s | anyonsys] [SCRAPE].. ◆ https://anyonsys.com/en/markets/data-centres                                                         | ✓ | ⏱: 0.01s 
+[21:47:42 +8s | anyonsys] [COMPLETE] ● https://anyonsys.com/en/markets/data-centres                                                         | ✓ | ⏱: 0.78s 
+[21:47:42 +8s | anyonsys] Saved: crawl_output/3af73d6f32_anyonsys.com.json
+[21:47:42 +8s | anyonsys] Saved: crawl_output/f605222ebf_anyonsys.com_en.json
+[21:47:42 +8s | anyonsys] Saved: crawl_output/29203727d2_anyonsys.com_en_company_partners.json
+[21:47:42 +8s | anyonsys] Saved: crawl_output/ffe25d972d_anyonsys.com_en_markets_hpc.json
+[21:47:42 +8s | anyonsys] Saved: crawl_output/12b9649b6f_anyonsys.com_en_markets_research.json
+[21:47:42 +8s | anyonsys] Saved: crawl_output/d66b494006_anyonsys.com_en_markets_defence.json
+[21:47:42 +8s | anyonsys] Saved: crawl_output/3e6fb30154_anyonsys.com_en_news.json
+[21:47:42 +8s | anyonsys] Saved: crawl_output/1ee80a4d6b_anyonsys.com_en_markets_government.json
+[21:47:42 +8s | anyonsys] Saved: crawl_output/dc9655f6d8_anyonsys.com_en_contact.json
+[21:47:42 +8s | anyonsys] Saved: crawl_output/3c640cea46_anyonsys.com_en_company_about.json
+[21:47:42 +8s | anyonsys] Skipped: https://anyonsys.com/en/privacy
+[21:47:42 +8s | anyonsys] Saved: crawl_output/02f3665f55_anyonsys.com_en_technology.json
+[21:47:42 +8s | anyonsys] Saved: crawl_output/4da2037c26_anyonsys.com_en_careers_jobs.json
+[21:47:42 +8s | anyonsys] Saved: crawl_output/261b4980d7_anyonsys.com_en_products.json
+[21:47:42 +8s | anyonsys] Saved: crawl_output/d3e65c66b9_anyonsys.com_en_careers_experience.json
+[21:47:42 +8s | anyonsys] Saved: crawl_output/7ccde13a2c_anyonsys.com_en_markets_telecom.json
+[21:47:42 +8s | anyonsys] Saved: crawl_output/03e4490d87_anyonsys.com_en_markets_industrial-rd.json
+[21:47:42 +8s | anyonsys] Saved: crawl_output/537b39b238_anyonsys.com_en_markets_data-centres.json
+
+[21:47:43 +9s | anyonsys] === 1 actor extraction ===
+[21:47:43 +9s | anyonsys] Reading page (1/17): https://anyonsys.com/en/technology
+[21:47:43 +9s | anyonsys] Extracting: https://anyonsys.com/en/technology (1/17), chunk 1/7
+[21:47:51 +17s | anyonsys] Extracting: https://anyonsys.com/en/technology (1/17), chunk 2/7
+[21:47:55 +21s | anyonsys] Extracting: https://anyonsys.com/en/technology (1/17), chunk 3/7
+[21:48:02 +28s | anyonsys] Extracting: https://anyonsys.com/en/technology (1/17), chunk 4/7
+[21:48:09 +35s | anyonsys] Extracting: https://anyonsys.com/en/technology (1/17), chunk 5/7
+[21:48:19 +43s | anyonsys] Repaired malformed JSON.
+[21:48:19 +43s | anyonsys] Extracting: https://anyonsys.com/en/technology (1/17), chunk 6/7
+[21:48:27 +50s | anyonsys] Repaired malformed JSON.
+[21:48:27 +50s | anyonsys] Extracting: https://anyonsys.com/en/technology (1/17), chunk 7/7
+[21:48:33 +56s | anyonsys] Repaired malformed JSON.
+[21:48:33 +56s | anyonsys] Reading page (2/17): https://anyonsys.com/en/markets/industrial-rd
+[21:48:33 +56s | anyonsys] Extracting: https://anyonsys.com/en/markets/industrial-rd (2/17), chunk 1/4
+[21:48:39 +1m 3s | anyonsys] Repaired malformed JSON.
+[21:48:39 +1m 3s | anyonsys] Extracting: https://anyonsys.com/en/markets/industrial-rd (2/17), chunk 2/4
+[21:48:47 +1m 11s | anyonsys] Repaired malformed JSON.
+[21:48:47 +1m 11s | anyonsys] Extracting: https://anyonsys.com/en/markets/industrial-rd (2/17), chunk 3/4
+[21:48:56 +1m 16s | anyonsys] Repaired malformed JSON.
+[21:48:56 +1m 16s | anyonsys] Extracting: https://anyonsys.com/en/markets/industrial-rd (2/17), chunk 4/4
+[21:49:05 +1m 25s | anyonsys] Repaired malformed JSON.
+[21:49:05 +1m 25s | anyonsys] Reading page (3/17): https://anyonsys.com/en/markets/research
+[21:49:05 +1m 25s | anyonsys] Extracting: https://anyonsys.com/en/markets/research (3/17), chunk 1/4
+[21:49:12 +1m 32s | anyonsys] Repaired malformed JSON.
+[21:49:12 +1m 32s | anyonsys] Extracting: https://anyonsys.com/en/markets/research (3/17), chunk 2/4
+[21:49:20 +1m 40s | anyonsys] Repaired malformed JSON.
+[21:49:20 +1m 40s | anyonsys] Extracting: https://anyonsys.com/en/markets/research (3/17), chunk 3/4
+[21:49:31 +1m 48s | anyonsys] Repaired malformed JSON.
+[21:49:31 +1m 48s | anyonsys] Extracting: https://anyonsys.com/en/markets/research (3/17), chunk 4/4
+[21:49:38 +1m 55s | anyonsys] Repaired malformed JSON.
+[21:49:38 +1m 55s | anyonsys] Reading page (4/17): https://anyonsys.com/en/markets/government
+[21:49:38 +1m 55s | anyonsys] Extracting: https://anyonsys.com/en/markets/government (4/17), chunk 1/4
+[21:49:45 +2m 2s | anyonsys] Repaired malformed JSON.
+[21:49:45 +2m 2s | anyonsys] Extracting: https://anyonsys.com/en/markets/government (4/17), chunk 2/4
+[21:49:54 +2m 11s | anyonsys] Repaired malformed JSON.
+[21:49:54 +2m 11s | anyonsys] Extracting: https://anyonsys.com/en/markets/government (4/17), chunk 3/4
+[21:50:06 +2m 20s | anyonsys] Repaired malformed JSON.
+[21:50:06 +2m 20s | anyonsys] Extracting: https://anyonsys.com/en/markets/government (4/17), chunk 4/4
+[21:50:13 +2m 27s | anyonsys] Repaired malformed JSON.
+[21:50:13 +2m 27s | anyonsys] Reading page (5/17): https://anyonsys.com/en/products
+[21:50:13 +2m 27s | anyonsys] Extracting: https://anyonsys.com/en/products (5/17), chunk 1/7
+[21:50:21 +2m 35s | anyonsys] Extracting: https://anyonsys.com/en/products (5/17), chunk 2/7
+[21:50:27 +2m 41s | anyonsys] Extracting: https://anyonsys.com/en/products (5/17), chunk 3/7
+[21:50:41 +2m 52s | anyonsys] Repaired malformed JSON.
+[21:50:41 +2m 52s | anyonsys] Extracting: https://anyonsys.com/en/products (5/17), chunk 4/7
+[21:50:45 +2m 56s | anyonsys] Extracting: https://anyonsys.com/en/products (5/17), chunk 5/7
+[21:50:54 +3m 5s | anyonsys] Repaired malformed JSON.
+[21:50:54 +3m 5s | anyonsys] Extracting: https://anyonsys.com/en/products (5/17), chunk 6/7
+[21:51:02 +3m 13s | anyonsys] Repaired malformed JSON.
+[21:51:02 +3m 13s | anyonsys] Extracting: https://anyonsys.com/en/products (5/17), chunk 7/7
+[21:51:14 +3m 21s | anyonsys] Repaired malformed JSON.
+[21:51:14 +3m 21s | anyonsys] Reading page (6/17): https://anyonsys.com/en/company/partners
+[21:51:14 +3m 21s | anyonsys] Extracting: https://anyonsys.com/en/company/partners (6/17), chunk 1/7
+[21:51:21 +3m 29s | anyonsys] Extracting: https://anyonsys.com/en/company/partners (6/17), chunk 2/7
+[21:51:27 +3m 35s | anyonsys] Repaired malformed JSON.
+[21:51:27 +3m 35s | anyonsys] Extracting: https://anyonsys.com/en/company/partners (6/17), chunk 3/7
+[21:51:34 +3m 42s | anyonsys] Repaired malformed JSON.
+[21:51:34 +3m 42s | anyonsys] Extracting: https://anyonsys.com/en/company/partners (6/17), chunk 4/7
+[21:51:43 +3m 51s | anyonsys] Repaired malformed JSON.
+[21:51:43 +3m 51s | anyonsys] Extracting: https://anyonsys.com/en/company/partners (6/17), chunk 5/7
+[21:51:55 +4m 0s | anyonsys] Repaired malformed JSON.
+[21:51:55 +4m 0s | anyonsys] Extracting: https://anyonsys.com/en/company/partners (6/17), chunk 6/7
+[21:52:06 +4m 11s | anyonsys] Repaired malformed JSON.
+[21:52:06 +4m 11s | anyonsys] Extracting: https://anyonsys.com/en/company/partners (6/17), chunk 7/7
+[21:52:13 +4m 18s | anyonsys] Repaired malformed JSON.
+[21:52:13 +4m 18s | anyonsys] Reading page (7/17): https://anyonsys.com
+[21:52:13 +4m 18s | anyonsys] Extracting: https://anyonsys.com (7/17), chunk 1/6
+[21:52:20 +4m 25s | anyonsys] Extracting: https://anyonsys.com (7/17), chunk 2/6
+[21:52:32 +4m 34s | anyonsys] Repaired malformed JSON.
+[21:52:32 +4m 34s | anyonsys] Extracting: https://anyonsys.com (7/17), chunk 3/6
+[21:52:39 +4m 41s | anyonsys] Repaired malformed JSON.
+[21:52:39 +4m 41s | anyonsys] Extracting: https://anyonsys.com (7/17), chunk 4/6
+[21:52:46 +4m 48s | anyonsys] Repaired malformed JSON.
+[21:52:46 +4m 48s | anyonsys] Extracting: https://anyonsys.com (7/17), chunk 5/6
+[21:52:56 +4m 58s | anyonsys] Repaired malformed JSON.
+[21:52:56 +4m 58s | anyonsys] Extracting: https://anyonsys.com (7/17), chunk 6/6
+[21:53:07 +5m 6s | anyonsys] Repaired malformed JSON.
+[21:53:07 +5m 6s | anyonsys] Reading page (8/17): https://anyonsys.com/en/company/about
+[21:53:07 +5m 6s | anyonsys] Extracting: https://anyonsys.com/en/company/about (8/17), chunk 1/6
+[21:53:15 +5m 14s | anyonsys] Extracting: https://anyonsys.com/en/company/about (8/17), chunk 2/6
+[21:53:24 +5m 23s | anyonsys] Repaired malformed JSON.
+[21:53:24 +5m 23s | anyonsys] Extracting: https://anyonsys.com/en/company/about (8/17), chunk 3/6
+[21:53:32 +5m 31s | anyonsys] Repaired malformed JSON.
+[21:53:32 +5m 31s | anyonsys] Extracting: https://anyonsys.com/en/company/about (8/17), chunk 4/6
+[21:53:42 +5m 38s | anyonsys] Repaired malformed JSON.
+[21:53:42 +5m 38s | anyonsys] Extracting: https://anyonsys.com/en/company/about (8/17), chunk 5/6
+[21:53:51 +5m 47s | anyonsys] Repaired malformed JSON.
+[21:53:51 +5m 47s | anyonsys] Extracting: https://anyonsys.com/en/company/about (8/17), chunk 6/6
+[21:53:57 +5m 53s | anyonsys] Reading page (9/17): https://anyonsys.com/en/news
+[21:53:57 +5m 53s | anyonsys] Extracting: https://anyonsys.com/en/news (9/17), chunk 1/5
+[21:54:03 +6m 0s | anyonsys] Repaired malformed JSON.
+[21:54:03 +6m 0s | anyonsys] Extracting: https://anyonsys.com/en/news (9/17), chunk 2/5
+[21:54:15 +6m 9s | anyonsys] Repaired malformed JSON.
+[21:54:15 +6m 9s | anyonsys] Extracting: https://anyonsys.com/en/news (9/17), chunk 3/5
+[21:54:23 +6m 17s | anyonsys] Repaired malformed JSON.
+[21:54:23 +6m 17s | anyonsys] Extracting: https://anyonsys.com/en/news (9/17), chunk 4/5
+[21:54:31 +6m 24s | anyonsys] Repaired malformed JSON.
+[21:54:31 +6m 24s | anyonsys] Extracting: https://anyonsys.com/en/news (9/17), chunk 5/5
+[21:54:41 +6m 35s | anyonsys] Repaired malformed JSON.
+[21:54:41 +6m 35s | anyonsys] Reading page (10/17): https://anyonsys.com/en/careers/jobs
+[21:54:41 +6m 35s | anyonsys] Extracting: https://anyonsys.com/en/careers/jobs (10/17), chunk 1/5
+[21:54:53 +6m 44s | anyonsys] Extracting: https://anyonsys.com/en/careers/jobs (10/17), chunk 2/5
+[21:54:57 +6m 48s | anyonsys] Extracting: https://anyonsys.com/en/careers/jobs (10/17), chunk 3/5
+[21:55:05 +6m 55s | anyonsys] Repaired malformed JSON.
+[21:55:05 +6m 55s | anyonsys] Extracting: https://anyonsys.com/en/careers/jobs (10/17), chunk 4/5
+[21:55:12 +7m 3s | anyonsys] Repaired malformed JSON.
+[21:55:12 +7m 3s | anyonsys] Extracting: https://anyonsys.com/en/careers/jobs (10/17), chunk 5/5
+[21:55:24 +7m 11s | anyonsys] Repaired malformed JSON.
+[21:55:24 +7m 11s | anyonsys] Reading page (11/17): https://anyonsys.com/en/markets/data-centres
+[21:55:24 +7m 11s | anyonsys] Extracting: https://anyonsys.com/en/markets/data-centres (11/17), chunk 1/4
+[21:55:27 +7m 15s | anyonsys] Extracting: https://anyonsys.com/en/markets/data-centres (11/17), chunk 2/4
+[21:55:35 +7m 23s | anyonsys] Repaired malformed JSON.
+[21:55:35 +7m 23s | anyonsys] Extracting: https://anyonsys.com/en/markets/data-centres (11/17), chunk 3/4
+[21:55:44 +7m 32s | anyonsys] Repaired malformed JSON.
+[21:55:44 +7m 32s | anyonsys] Extracting: https://anyonsys.com/en/markets/data-centres (11/17), chunk 4/4
+[21:55:52 +7m 39s | anyonsys] Repaired malformed JSON.
+[21:55:52 +7m 39s | anyonsys] Reading page (12/17): https://anyonsys.com/en/markets/telecom
+[21:55:52 +7m 39s | anyonsys] Extracting: https://anyonsys.com/en/markets/telecom (12/17), chunk 1/5
+[21:56:00 +7m 45s | anyonsys] Extracting: https://anyonsys.com/en/markets/telecom (12/17), chunk 2/5
+[21:56:07 +7m 52s | anyonsys] Repaired malformed JSON.
+[21:56:07 +7m 52s | anyonsys] Extracting: https://anyonsys.com/en/markets/telecom (12/17), chunk 3/5
+[21:56:16 +8m 1s | anyonsys] Repaired malformed JSON.
+[21:56:16 +8m 1s | anyonsys] Extracting: https://anyonsys.com/en/markets/telecom (12/17), chunk 4/5
+[21:56:23 +8m 8s | anyonsys] Repaired malformed JSON.
+[21:56:23 +8m 8s | anyonsys] Extracting: https://anyonsys.com/en/markets/telecom (12/17), chunk 5/5
+[21:56:35 +8m 17s | anyonsys] Repaired malformed JSON.
+[21:56:35 +8m 17s | anyonsys] Reading page (13/17): https://anyonsys.com/en/careers/experience
+[21:56:35 +8m 17s | anyonsys] Extracting: https://anyonsys.com/en/careers/experience (13/17), chunk 1/5
+[21:56:42 +8m 24s | anyonsys] Extracting: https://anyonsys.com/en/careers/experience (13/17), chunk 2/5
+[21:56:48 +8m 30s | anyonsys] Extracting: https://anyonsys.com/en/careers/experience (13/17), chunk 3/5
+[21:56:53 +8m 35s | anyonsys] Extracting: https://anyonsys.com/en/careers/experience (13/17), chunk 4/5
+[21:57:00 +8m 42s | anyonsys] Repaired malformed JSON.
+[21:57:00 +8m 42s | anyonsys] Extracting: https://anyonsys.com/en/careers/experience (13/17), chunk 5/5
+[21:57:12 +8m 51s | anyonsys] Repaired malformed JSON.
+[21:57:12 +8m 51s | anyonsys] Reading page (14/17): https://anyonsys.com/en/markets/defence
+[21:57:12 +8m 51s | anyonsys] Extracting: https://anyonsys.com/en/markets/defence (14/17), chunk 1/4
+[21:57:20 +8m 59s | anyonsys] Repaired malformed JSON.
+[21:57:20 +8m 59s | anyonsys] Extracting: https://anyonsys.com/en/markets/defence (14/17), chunk 2/4
+[21:57:27 +9m 6s | anyonsys] Repaired malformed JSON.
+[21:57:27 +9m 6s | anyonsys] Extracting: https://anyonsys.com/en/markets/defence (14/17), chunk 3/4
+[21:57:37 +9m 16s | anyonsys] Repaired malformed JSON.
+[21:57:37 +9m 16s | anyonsys] Extracting: https://anyonsys.com/en/markets/defence (14/17), chunk 4/4
+[21:57:50 +9m 26s | anyonsys] Repaired malformed JSON.
+[21:57:50 +9m 26s | anyonsys] Reading page (15/17): https://anyonsys.com/en/contact
+[21:57:50 +9m 26s | anyonsys] Extracting: https://anyonsys.com/en/contact (15/17), chunk 1/3
+[21:57:59 +9m 35s | anyonsys] Repaired malformed JSON.
+[21:57:59 +9m 35s | anyonsys] Extracting: https://anyonsys.com/en/contact (15/17), chunk 2/3
+[21:58:05 +9m 41s | anyonsys] Repaired malformed JSON.
+[21:58:05 +9m 41s | anyonsys] Extracting: https://anyonsys.com/en/contact (15/17), chunk 3/3
+[21:58:14 +9m 50s | anyonsys] Repaired malformed JSON.
+[21:58:14 +9m 50s | anyonsys] Reading page (16/17): https://anyonsys.com/en
+[21:58:14 +9m 50s | anyonsys] Extracting: https://anyonsys.com/en (16/17), chunk 1/6
+[21:58:26 +9m 59s | anyonsys] Extracting: https://anyonsys.com/en (16/17), chunk 2/6
+[21:58:33 +10m 6s | anyonsys] Repaired malformed JSON.
+[21:58:33 +10m 6s | anyonsys] Extracting: https://anyonsys.com/en (16/17), chunk 3/6
+[21:58:43 +10m 16s | anyonsys] Repaired malformed JSON.
+[21:58:43 +10m 16s | anyonsys] Extracting: https://anyonsys.com/en (16/17), chunk 4/6
+[21:58:50 +10m 23s | anyonsys] Repaired malformed JSON.
+[21:58:50 +10m 23s | anyonsys] Extracting: https://anyonsys.com/en (16/17), chunk 5/6
+[21:59:02 +10m 32s | anyonsys] Repaired malformed JSON.
+[21:59:02 +10m 32s | anyonsys] Extracting: https://anyonsys.com/en (16/17), chunk 6/6
+[21:59:11 +10m 41s | anyonsys] Reading page (17/17): https://anyonsys.com/en/markets/hpc
+[21:59:11 +10m 41s | anyonsys] Extracting: https://anyonsys.com/en/markets/hpc (17/17), chunk 1/4
+[21:59:16 +10m 46s | anyonsys] Repaired malformed JSON.
+[21:59:16 +10m 46s | anyonsys] Extracting: https://anyonsys.com/en/markets/hpc (17/17), chunk 2/4
+[21:59:24 +10m 54s | anyonsys] Repaired malformed JSON.
+[21:59:24 +10m 54s | anyonsys] Extracting: https://anyonsys.com/en/markets/hpc (17/17), chunk 3/4
+[21:59:43 +11m 10s | anyonsys] Repaired malformed JSON.
+[21:59:43 +11m 10s | anyonsys] Extracting: https://anyonsys.com/en/markets/hpc (17/17), chunk 4/4
+[21:59:49 +11m 16s | anyonsys] Repaired malformed JSON.
+[21:59:49 +11m 16s | anyonsys] Saved 1_actor_results.json with 205 extracted records
+
+[21:59:49 +11m 16s | anyonsys] === 2 clean actors ===
+[21:59:49 +11m 16s | anyonsys] Loaded 205 extracted records
+[21:59:49 +11m 16s | anyonsys] Saved 2_actor_nodes.json with 17 canonical actor nodes
+
+[21:59:49 +11m 16s | anyonsys] === 3 interaction extraction ===
+[21:59:49 +11m 16s | anyonsys] Extracting interactions: https://anyonsys.com/en/technology (1/17), chunk 1/7
+[21:59:57 +11m 24s | anyonsys] Extracting interactions: https://anyonsys.com/en/technology (1/17), chunk 4/7
+[22:00:01 +11m 28s | anyonsys] Extracting interactions: https://anyonsys.com/en/technology (1/17), chunk 5/7
+[22:00:15 +11m 39s | anyonsys] Extracting interactions: https://anyonsys.com/en/technology (1/17), chunk 6/7
+[22:00:36 +12m 0s | anyonsys] Extracting interactions: https://anyonsys.com/en/technology (1/17), chunk 7/7
+[22:00:51 +12m 13s | anyonsys] Extracting interactions: https://anyonsys.com/en/markets/industrial-rd (2/17), chunk 1/4
+[22:00:57 +12m 18s | anyonsys] Extracting interactions: https://anyonsys.com/en/markets/industrial-rd (2/17), chunk 2/4
+[22:01:04 +12m 25s | anyonsys] Extracting interactions: https://anyonsys.com/en/markets/industrial-rd (2/17), chunk 3/4
+[22:01:11 +12m 33s | anyonsys] Extracting interactions: https://anyonsys.com/en/markets/industrial-rd (2/17), chunk 4/4
+[22:01:32 +12m 50s | anyonsys] Extracting interactions: https://anyonsys.com/en/markets/research (3/17), chunk 1/4
+[22:01:46 +13m 4s | anyonsys] Extracting interactions: https://anyonsys.com/en/markets/research (3/17), chunk 2/4
+[22:02:01 +13m 16s | anyonsys] Extracting interactions: https://anyonsys.com/en/markets/research (3/17), chunk 3/4
+[22:02:12 +13m 27s | anyonsys] Extracting interactions: https://anyonsys.com/en/markets/research (3/17), chunk 4/4
+[22:02:23 +13m 38s | anyonsys] Extracting interactions: https://anyonsys.com/en/markets/government (4/17), chunk 1/4
+[22:02:30 +13m 42s | anyonsys] Extracting interactions: https://anyonsys.com/en/markets/government (4/17), chunk 2/4
+[22:02:34 +13m 46s | anyonsys] Extracting interactions: https://anyonsys.com/en/markets/government (4/17), chunk 3/4
+[22:02:47 +13m 59s | anyonsys] Extracting interactions: https://anyonsys.com/en/markets/government (4/17), chunk 4/4
+[22:03:07 +14m 16s | anyonsys] Extracting interactions: https://anyonsys.com/en/products (5/17), chunk 1/7
+[22:03:13 +14m 22s | anyonsys] Extracting interactions: https://anyonsys.com/en/products (5/17), chunk 2/7
+[22:03:19 +14m 28s | anyonsys] Extracting interactions: https://anyonsys.com/en/products (5/17), chunk 3/7
+[22:03:32 +14m 41s | anyonsys] Extracting interactions: https://anyonsys.com/en/products (5/17), chunk 4/7
+[22:03:41 +14m 47s | anyonsys] Extracting interactions: https://anyonsys.com/en/products (5/17), chunk 5/7
+[22:03:52 +14m 57s | anyonsys] Extracting interactions: https://anyonsys.com/en/products (5/17), chunk 6/7
+[22:04:12 +15m 17s | anyonsys] Extracting interactions: https://anyonsys.com/en/products (5/17), chunk 7/7
+[22:04:30 +15m 32s | anyonsys] Extracting interactions: https://anyonsys.com/en/company/partners (6/17), chunk 1/7
+[22:04:32 +15m 34s | anyonsys] Extracting interactions: https://anyonsys.com/en/company/partners (6/17), chunk 2/7
+[22:04:45 +15m 47s | anyonsys] Extracting interactions: https://anyonsys.com/en/company/partners (6/17), chunk 3/7
+[22:05:03 +16m 2s | anyonsys] Extracting interactions: https://anyonsys.com/en/company/partners (6/17), chunk 4/7
+[22:05:13 +16m 12s | anyonsys] Extracting interactions: https://anyonsys.com/en/company/partners (6/17), chunk 5/7
+[22:05:19 +16m 18s | anyonsys] Extracting interactions: https://anyonsys.com/en/company/partners (6/17), chunk 6/7
+[22:05:34 +16m 30s | anyonsys] Extracting interactions: https://anyonsys.com/en/company/partners (6/17), chunk 7/7
+[22:05:48 +16m 44s | anyonsys] Extracting interactions: https://anyonsys.com (7/17), chunk 1/6
+[22:05:54 +16m 50s | anyonsys] Extracting interactions: https://anyonsys.com (7/17), chunk 2/6
+[22:06:11 +17m 4s | anyonsys] Extracting interactions: https://anyonsys.com (7/17), chunk 3/6
+[22:06:33 +17m 26s | anyonsys] Extracting interactions: https://anyonsys.com (7/17), chunk 4/6
+[22:06:50 +17m 39s | anyonsys] Extracting interactions: https://anyonsys.com (7/17), chunk 5/6
+[22:07:04 +17m 53s | anyonsys] Extracting interactions: https://anyonsys.com (7/17), chunk 6/6
+[22:07:18 +18m 4s | anyonsys] Extracting interactions: https://anyonsys.com/en/company/about (8/17), chunk 1/6
+[22:07:20 +18m 6s | anyonsys] Extracting interactions: https://anyonsys.com/en/company/about (8/17), chunk 2/6
+[22:07:29 +18m 16s | anyonsys] Extracting interactions: https://anyonsys.com/en/company/about (8/17), chunk 3/6
+[22:07:45 +18m 31s | anyonsys] Extracting interactions: https://anyonsys.com/en/company/about (8/17), chunk 4/6
+[22:07:55 +18m 38s | anyonsys] Extracting interactions: https://anyonsys.com/en/company/about (8/17), chunk 5/6
+[22:08:04 +18m 47s | anyonsys] Extracting interactions: https://anyonsys.com/en/company/about (8/17), chunk 6/6
+[22:08:16 +18m 59s | anyonsys] Extracting interactions: https://anyonsys.com/en/news (9/17), chunk 1/5
+[22:08:30 +19m 9s | anyonsys] Extracting interactions: https://anyonsys.com/en/news (9/17), chunk 2/5
+[22:08:47 +19m 26s | anyonsys] Extracting interactions: https://anyonsys.com/en/news (9/17), chunk 3/5
+[22:08:54 +19m 34s | anyonsys] Extracting interactions: https://anyonsys.com/en/news (9/17), chunk 4/5
+[22:09:05 +19m 41s | anyonsys] Extracting interactions: https://anyonsys.com/en/news (9/17), chunk 5/5
+[22:09:17 +19m 54s | anyonsys] Extracting interactions: https://anyonsys.com/en/careers/jobs (10/17), chunk 1/5
+[22:09:19 +19m 56s | anyonsys] Extracting interactions: https://anyonsys.com/en/careers/jobs (10/17), chunk 2/5
+[22:09:23 +19m 59s | anyonsys] Extracting interactions: https://anyonsys.com/en/careers/jobs (10/17), chunk 3/5
+[22:09:27 +20m 3s | anyonsys] Extracting interactions: https://anyonsys.com/en/careers/jobs (10/17), chunk 4/5
+[22:09:40 +20m 13s | anyonsys] Extracting interactions: https://anyonsys.com/en/careers/jobs (10/17), chunk 5/5
+[22:09:53 +20m 27s | anyonsys] Extracting interactions: https://anyonsys.com/en/markets/data-centres (11/17), chunk 1/4
+[22:10:01 +20m 35s | anyonsys] Extracting interactions: https://anyonsys.com/en/markets/data-centres (11/17), chunk 2/4
+[22:10:08 +20m 41s | anyonsys] Extracting interactions: https://anyonsys.com/en/markets/data-centres (11/17), chunk 3/4
+[22:10:22 +20m 52s | anyonsys] Extracting interactions: https://anyonsys.com/en/markets/data-centres (11/17), chunk 4/4
+[22:10:36 +21m 6s | anyonsys] Extracting interactions: https://anyonsys.com/en/markets/telecom (12/17), chunk 1/5
+[22:10:38 +21m 8s | anyonsys] Extracting interactions: https://anyonsys.com/en/markets/telecom (12/17), chunk 2/5
+[22:10:52 +21m 19s | anyonsys] Extracting interactions: https://anyonsys.com/en/markets/telecom (12/17), chunk 3/5
+[22:11:01 +21m 28s | anyonsys] Extracting interactions: https://anyonsys.com/en/markets/telecom (12/17), chunk 4/5
+[22:11:16 +21m 43s | anyonsys] Extracting interactions: https://anyonsys.com/en/markets/telecom (12/17), chunk 5/5
+[22:11:32 +21m 55s | anyonsys] Extracting interactions: https://anyonsys.com/en/careers/experience (13/17), chunk 1/5
+[22:11:33 +21m 57s | anyonsys] Extracting interactions: https://anyonsys.com/en/careers/experience (13/17), chunk 2/5
+[22:11:39 +22m 3s | anyonsys] Extracting interactions: https://anyonsys.com/en/careers/experience (13/17), chunk 4/5
+[22:12:00 +22m 20s | anyonsys] Extracting interactions: https://anyonsys.com/en/careers/experience (13/17), chunk 5/5
+[22:12:14 +22m 35s | anyonsys] Extracting interactions: https://anyonsys.com/en/markets/defence (14/17), chunk 1/4
+[22:12:22 +22m 42s | anyonsys] Extracting interactions: https://anyonsys.com/en/markets/defence (14/17), chunk 2/4
+[22:12:26 +22m 47s | anyonsys] Extracting interactions: https://anyonsys.com/en/markets/defence (14/17), chunk 3/4
+[22:12:41 +22m 58s | anyonsys] Extracting interactions: https://anyonsys.com/en/markets/defence (14/17), chunk 4/4
+[22:12:55 +23m 12s | anyonsys] Extracting interactions: https://anyonsys.com/en/contact (15/17), chunk 1/3
+[22:12:59 +23m 16s | anyonsys] Extracting interactions: https://anyonsys.com/en/contact (15/17), chunk 2/3
+[22:13:11 +23m 25s | anyonsys] Extracting interactions: https://anyonsys.com/en/contact (15/17), chunk 3/3
+[22:13:24 +23m 38s | anyonsys] Extracting interactions: https://anyonsys.com/en (16/17), chunk 1/6
+[22:13:29 +23m 43s | anyonsys] Extracting interactions: https://anyonsys.com/en (16/17), chunk 2/6
+[22:13:47 +23m 58s | anyonsys] Extracting interactions: https://anyonsys.com/en (16/17), chunk 3/6
+[22:14:05 +24m 16s | anyonsys] Extracting interactions: https://anyonsys.com/en (16/17), chunk 4/6
+[22:14:14 +24m 25s | anyonsys] Extracting interactions: https://anyonsys.com/en (16/17), chunk 5/6
+[22:14:31 +24m 39s | anyonsys] Extracting interactions: https://anyonsys.com/en (16/17), chunk 6/6
+[22:14:42 +24m 50s | anyonsys] Extracting interactions: https://anyonsys.com/en/markets/hpc (17/17), chunk 1/4
+[22:15:07 +25m 12s | anyonsys] Extracting interactions: https://anyonsys.com/en/markets/hpc (17/17), chunk 2/4
+[22:15:30 +25m 32s | anyonsys] Extracting interactions: https://anyonsys.com/en/markets/hpc (17/17), chunk 3/4
+[22:15:45 +25m 47s | anyonsys] Extracting interactions: https://anyonsys.com/en/markets/hpc (17/17), chunk 4/4
+[22:15:58 +26m 1s | anyonsys] Saved 3_interaction_results.json with 298 extracted interactions.
+
+[22:15:59 +26m 1s | anyonsys] === 4 clean interactions ===
+[22:15:59 +26m 1s | anyonsys] Saved 4_edges.json with 28 cleaned interactions.
+
+[22:15:59 +26m 1s | anyonsys] === 5 helix enrichment ===
+[22:15:59 +26m 1s | anyonsys] Wrote 5_nodes.json (17 actors)
+[22:15:59 +26m 1s | anyonsys] Wrote 5_edges.json (28 interactions)
+[22:15:59 +26m 1s | anyonsys] Actor helix counts: {'Academia': 3, 'Government': 2, 'Industry': 6, 'Unknown': 6}
+[22:15:59 +26m 1s | anyonsys] Functional-space counts: {'Consensus': 2, 'Innovation': 6, 'Intra-helix / Not classified': 11, 'Unknown': 9}
+
+[22:15:59 +26m 1s | anyonsys] === 6 network visualisation ===
+[22:16:00 +26m 2s | anyonsys] Wrote quantum_network.html
+[22:16:00 +26m 2s | anyonsys] Nodes: 17
+[22:16:00 +26m 2s | anyonsys] Edges: 12
+
+[22:16:00 +26m 2s | anyonsys] Done. Outputs written to: /home/lv/IDP/idpdeeptech/pipeline/site_outputs/anyonsys
+[22:16:00 +26m 2s | anyonsys] Log: /home/lv/IDP/idpdeeptech/pipeline/site_outputs/anyonsys/run.log
+
+========================================================================
+RUN FINISHED 2026-06-16 22:16:00  (OK)
+Started:     2026-06-16 21:47:30
+Elapsed:     26m 2s
+========================================================================

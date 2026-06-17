@@ -1,0 +1,737 @@
+
+========================================================================
+RUN STARTED  2026-06-17 00:44:25
+site_pipeline.py https://diraq.com/
+========================================================================
+
+[00:44:25 +0s | diraq] === 0 crawl site ===
+[00:44:28 +2s | diraq] [INIT].... → Crawl4AI 0.8.6 
+[00:44:33 +5s | diraq] [FETCH]... ↓ https://diraq.com/                                                                                   | ✓ | ⏱: 2.82s 
+[00:44:33 +5s | diraq] [SCRAPE].. ◆ https://diraq.com/                                                                                   | ✓ | ⏱: 0.05s 
+[00:44:33 +5s | diraq] [COMPLETE] ● https://diraq.com/                                                                                   | ✓ | ⏱: 2.90s 
+[00:44:34 +6s | diraq] [FETCH]... ↓ https://www.diraq.com/                                                                               | ✓ | ⏱: 1.10s 
+[00:44:34 +6s | diraq] [SCRAPE].. ◆ https://www.diraq.com/                                                                               | ✓ | ⏱: 0.05s 
+[00:44:34 +6s | diraq] [COMPLETE] ● https://www.diraq.com/                                                                               | ✓ | ⏱: 1.17s 
+[00:44:37 +9s | diraq] [FETCH]... ↓ https://www.diraq.com/publications                                                                   | ✓ | ⏱: 3.31s 
+[00:44:37 +9s | diraq] [SCRAPE].. ◆ https://www.diraq.com/publications                                                                   | ✓ | ⏱: 0.13s 
+[00:44:37 +9s | diraq] [COMPLETE] ● https://www.diraq.com/publications                                                                   | ✓ | ⏱: 3.49s 
+[00:44:37 +9s | diraq] [FETCH]... ↓ https://www.diraq.com/technology                                                                     | ✓ | ⏱: 3.72s 
+[00:44:37 +9s | diraq] [SCRAPE].. ◆ https://www.diraq.com/technology                                                                     | ✓ | ⏱: 0.08s 
+[00:44:37 +9s | diraq] [COMPLETE] ● https://www.diraq.com/technology                                                                     | ✓ | ⏱: 3.84s 
+[00:44:38 +10s | diraq] [FETCH]... ↓ https://www.diraq.com/contact                                                                        | ✓ | ⏱: 4.11s 
+[00:44:38 +10s | diraq] [SCRAPE].. ◆ https://www.diraq.com/contact                                                                        | ✓ | ⏱: 0.06s 
+[00:44:38 +10s | diraq] [COMPLETE] ● https://www.diraq.com/contact                                                                        | ✓ | ⏱: 4.20s 
+[00:44:38 +10s | diraq] [FETCH]... ↓ https://www.diraq.com/terms-and-conditions                                                           | ✓ | ⏱: 4.31s 
+[00:44:38 +10s | diraq] [SCRAPE].. ◆ https://www.diraq.com/terms-and-conditions                                                           | ✓ | ⏱: 0.04s 
+[00:44:38 +10s | diraq] [COMPLETE] ● https://www.diraq.com/terms-and-conditions                                                           | ✓ | ⏱: 4.40s 
+[00:44:38 +10s | diraq] [FETCH]... ↓ https://www.diraq.com/team                                                                           | ✓ | ⏱: 4.42s 
+[00:44:38 +10s | diraq] [SCRAPE].. ◆ https://www.diraq.com/team                                                                           | ✓ | ⏱: 0.15s 
+[00:44:38 +10s | diraq] [COMPLETE] ● https://www.diraq.com/team                                                                           | ✓ | ⏱: 4.61s 
+[00:44:38 +10s | diraq] [FETCH]... ↓ https://www.diraq.com/privacy-policy                                                                 | ✓ | ⏱: 4.62s 
+[00:44:38 +10s | diraq] [SCRAPE].. ◆ https://www.diraq.com/privacy-policy                                                                 | ✓ | ⏱: 0.07s 
+[00:44:38 +10s | diraq] [COMPLETE] ● https://www.diraq.com/privacy-policy                                                                 | ✓ | ⏱: 4.73s 
+[00:44:38 +10s | diraq] [FETCH]... ↓ https://www.diraq.com/research-papers/spin-qubit-control-with-a-milli-kelvin-cmos-chip               | ✓ | ⏱: 4.75s 
+[00:44:38 +10s | diraq] [SCRAPE].. ◆ https://www.diraq.com/research-papers/spin-qubit-control-with-a-milli-kelvin-cmos-chip               | ✓ | ⏱: 0.04s 
+[00:44:38 +10s | diraq] [COMPLETE] ● https://www.diraq.com/research-papers/spin-qubit-control-with-a-milli-kelvin-cmos-chip               | ✓ | ⏱: 4.83s 
+[00:44:38 +10s | diraq] [FETCH]... ↓ https://www.diraq.com/research-papers?category=NATURE+PHYSICS                                        | ✓ | ⏱: 4.85s 
+[00:44:38 +10s | diraq] [SCRAPE].. ◆ https://www.diraq.com/research-papers?category=NATURE+PHYSICS                                        | ✓ | ⏱: 0.05s 
+[00:44:38 +10s | diraq] [COMPLETE] ● https://www.diraq.com/research-papers?category=NATURE+PHYSICS                                        | ✓ | ⏱: 4.93s 
+[00:44:38 +10s | diraq] [FETCH]... ↓ https://www.diraq.com/cart                                                                           | ✓ | ⏱: 4.94s 
+[00:44:38 +10s | diraq] [SCRAPE].. ◆ https://www.diraq.com/cart                                                                           | ✓ | ⏱: 0.03s 
+[00:44:38 +10s | diraq] [COMPLETE] ● https://www.diraq.com/cart                                                                           | ✓ | ⏱: 5.01s 
+[00:44:39 +11s | diraq] [FETCH]... ↓ https://www.diraq.com/newsdesk                                                                       | ✓ | ⏱: 5.20s 
+[00:44:39 +11s | diraq] [SCRAPE].. ◆ https://www.diraq.com/newsdesk                                                                       | ✓ | ⏱: 0.09s 
+[00:44:39 +11s | diraq] [COMPLETE] ● https://www.diraq.com/newsdesk                                                                       | ✓ | ⏱: 5.32s 
+[00:44:39 +11s | diraq] [FETCH]... ↓ https://www.diraq.com/research-papers?category=NATURE+COMMUNICATIONS                                 | ✓ | ⏱: 5.37s 
+[00:44:39 +11s | diraq] [SCRAPE].. ◆ https://www.diraq.com/research-papers?category=NATURE+COMMUNICATIONS                                 | ✓ | ⏱: 0.05s 
+[00:44:39 +11s | diraq] [COMPLETE] ● https://www.diraq.com/research-papers?category=NATURE+COMMUNICATIONS                                 | ✓ | ⏱: 5.45s 
+[00:44:39 +11s | diraq] [FETCH]... ↓ https://www.diraq.com/research-papers?category=NATURE                                                | ✓ | ⏱: 5.50s 
+[00:44:39 +11s | diraq] [SCRAPE].. ◆ https://www.diraq.com/research-papers?category=NATURE                                                | ✓ | ⏱: 0.04s 
+[00:44:39 +11s | diraq] [COMPLETE] ● https://www.diraq.com/research-papers?category=NATURE                                                | ✓ | ⏱: 5.56s 
+[00:44:40 +12s | diraq] [FETCH]... ↓ https://www.diraq.com/newsdesk/one-dollar-per-qubit-the-number-that-changes-everything               | ✓ | ⏱: 1.22s 
+[00:44:40 +12s | diraq] [SCRAPE].. ◆ https://www.diraq.com/newsdesk/one-dollar-per-qubit-the-number-that-changes-everything               | ✓ | ⏱: 0.03s 
+[00:44:40 +12s | diraq] [COMPLETE] ● https://www.diraq.com/newsdesk/one-dollar-per-qubit-the-number-that-changes-everything               | ✓ | ⏱: 1.27s 
+[00:44:42 +14s | diraq] [FETCH]... ↓ https://www.diraq.com/research-papers/assessment...fidelity-two-qubit-gates-in-silicon-quantum-dots  | ✓ | ⏱: 2.35s 
+[00:44:42 +14s | diraq] [SCRAPE].. ◆ https://www.diraq.com/research-papers/assessment...fidelity-two-qubit-gates-in-silicon-quantum-dots  | ✓ | ⏱: 0.04s 
+[00:44:42 +14s | diraq] [COMPLETE] ● https://www.diraq.com/research-papers/assessment...fidelity-two-qubit-gates-in-silicon-quantum-dots  | ✓ | ⏱: 2.42s 
+[00:44:42 +14s | diraq] [FETCH]... ↓ https://www.diraq.com/research-papers/a-two-qubit-logic-gate-in-silicon                              | ✓ | ⏱: 2.48s 
+[00:44:42 +14s | diraq] [SCRAPE].. ◆ https://www.diraq.com/research-papers/a-two-qubit-logic-gate-in-silicon                              | ✓ | ⏱: 0.05s 
+[00:44:42 +14s | diraq] [COMPLETE] ● https://www.diraq.com/research-papers/a-two-qubit-logic-gate-in-silicon                              | ✓ | ⏱: 2.57s 
+[00:44:42 +14s | diraq] [FETCH]... ↓ https://www.diraq.com/research-papers                                                                | ✓ | ⏱: 2.77s 
+[00:44:42 +14s | diraq] [SCRAPE].. ◆ https://www.diraq.com/research-papers                                                                | ✓ | ⏱: 0.13s 
+[00:44:42 +14s | diraq] [COMPLETE] ● https://www.diraq.com/research-papers                                                                | ✓ | ⏱: 2.93s 
+[00:44:42 +14s | diraq] [FETCH]... ↓ https://www.diraq.com/research-papers/industry-c...icon-spin-qubit-unit-cells-exceeding-99-fidelity  | ✓ | ⏱: 3.17s 
+[00:44:43 +14s | diraq] [SCRAPE].. ◆ https://www.diraq.com/research-papers/industry-c...icon-spin-qubit-unit-cells-exceeding-99-fidelity  | ✓ | ⏱: 0.03s 
+[00:44:43 +15s | diraq] [COMPLETE] ● https://www.diraq.com/research-papers/industry-c...icon-spin-qubit-unit-cells-exceeding-99-fidelity  | ✓ | ⏱: 3.23s 
+[00:44:43 +15s | diraq] [FETCH]... ↓ https://www.diraq.com/research-papers/a-singlet-triplet-hole-spin-qubit-in-mos-silicon               | ✓ | ⏱: 3.29s 
+[00:44:43 +15s | diraq] [SCRAPE].. ◆ https://www.diraq.com/research-papers/a-singlet-triplet-hole-spin-qubit-in-mos-silicon               | ✓ | ⏱: 0.03s 
+[00:44:43 +15s | diraq] [COMPLETE] ● https://www.diraq.com/research-papers/a-singlet-triplet-hole-spin-qubit-in-mos-silicon               | ✓ | ⏱: 3.35s 
+[00:44:43 +15s | diraq] [FETCH]... ↓ https://www.diraq.com/research-papers/category/NATURE                                                | ✓ | ⏱: 3.51s 
+[00:44:43 +15s | diraq] [SCRAPE].. ◆ https://www.diraq.com/research-papers/category/NATURE                                                | ✓ | ⏱: 0.06s 
+[00:44:43 +15s | diraq] [COMPLETE] ● https://www.diraq.com/research-papers/category/NATURE                                                | ✓ | ⏱: 3.59s 
+[00:44:43 +15s | diraq] [FETCH]... ↓ https://www.diraq.com/newsdesk?category=MEDIA+RELEASE                                                | ✓ | ⏱: 3.89s 
+[00:44:43 +15s | diraq] [SCRAPE].. ◆ https://www.diraq.com/newsdesk?category=MEDIA+RELEASE                                                | ✓ | ⏱: 0.09s 
+[00:44:43 +15s | diraq] [COMPLETE] ● https://www.diraq.com/newsdesk?category=MEDIA+RELEASE                                                | ✓ | ⏱: 4.01s 
+[00:44:44 +16s | diraq] [FETCH]... ↓ https://www.diraq.com/newsdesk?category=THOUGHT+LEADERSHIP                                           | ✓ | ⏱: 4.41s 
+[00:44:44 +16s | diraq] [SCRAPE].. ◆ https://www.diraq.com/newsdesk?category=THOUGHT+LEADERSHIP                                           | ✓ | ⏱: 0.63s 
+[00:44:44 +16s | diraq] [COMPLETE] ● https://www.diraq.com/newsdesk?category=THOUGHT+LEADERSHIP                                           | ✓ | ⏱: 5.08s 
+[00:44:45 +16s | diraq] [FETCH]... ↓ https://www.diraq.com/research-papers/category/NATURE+COMMUNICATIONS                                 | ✓ | ⏱: 5.20s 
+[00:44:45 +17s | diraq] [SCRAPE].. ◆ https://www.diraq.com/research-papers/category/NATURE+COMMUNICATIONS                                 | ✓ | ⏱: 0.07s 
+[00:44:45 +17s | diraq] [COMPLETE] ● https://www.diraq.com/research-papers/category/NATURE+COMMUNICATIONS                                 | ✓ | ⏱: 5.31s 
+[00:44:45 +17s | diraq] [FETCH]... ↓ https://www.diraq.com/research-papers/bell-inequality-violation-in-gate-defined-quantum-dots         | ✓ | ⏱: 5.31s 
+[00:44:45 +17s | diraq] [SCRAPE].. ◆ https://www.diraq.com/research-papers/bell-inequality-violation-in-gate-defined-quantum-dots         | ✓ | ⏱: 0.04s 
+[00:44:45 +17s | diraq] [COMPLETE] ● https://www.diraq.com/research-papers/bell-inequality-violation-in-gate-defined-quantum-dots         | ✓ | ⏱: 5.38s 
+[00:44:45 +17s | diraq] [FETCH]... ↓ https://www.diraq.com/research-papers/high-fidel...eration-and-algorithmic-initialization-above-1-k  | ✓ | ⏱: 5.61s 
+[00:44:45 +17s | diraq] [SCRAPE].. ◆ https://www.diraq.com/research-papers/high-fidel...eration-and-algorithmic-initialization-above-1-k  | ✓ | ⏱: 0.05s 
+[00:44:45 +17s | diraq] [COMPLETE] ● https://www.diraq.com/research-papers/high-fidel...eration-and-algorithmic-initialization-above-1-k  | ✓ | ⏱: 5.70s 
+[00:44:45 +17s | diraq] [FETCH]... ↓ https://www.diraq.com/research-papers/entangling...degenerate-spin-qubits-dressed-by-a-global-field  | ✓ | ⏱: 5.80s 
+[00:44:45 +17s | diraq] [SCRAPE].. ◆ https://www.diraq.com/research-papers/entangling...degenerate-spin-qubits-dressed-by-a-global-field  | ✓ | ⏱: 0.04s 
+[00:44:45 +17s | diraq] [COMPLETE] ● https://www.diraq.com/research-papers/entangling...degenerate-spin-qubits-dressed-by-a-global-field  | ✓ | ⏱: 5.86s 
+[00:44:45 +17s | diraq] [FETCH]... ↓ https://www.diraq.com/newsdesk?category=TECHNICAL+BLOG                                               | ✓ | ⏱: 5.93s 
+[00:44:45 +17s | diraq] [SCRAPE].. ◆ https://www.diraq.com/newsdesk?category=TECHNICAL+BLOG                                               | ✓ | ⏱: 0.08s 
+[00:44:45 +17s | diraq] [COMPLETE] ● https://www.diraq.com/newsdesk?category=TECHNICAL+BLOG                                               | ✓ | ⏱: 6.04s 
+[00:44:45 +17s | diraq] [FETCH]... ↓ https://www.diraq.com/research-papers/category/NATURE+PHYSICS                                        | ✓ | ⏱: 6.15s 
+[00:44:46 +17s | diraq] [SCRAPE].. ◆ https://www.diraq.com/research-papers/category/NATURE+PHYSICS                                        | ✓ | ⏱: 0.03s 
+[00:44:46 +17s | diraq] [COMPLETE] ● https://www.diraq.com/research-papers/category/NATURE+PHYSICS                                        | ✓ | ⏱: 6.21s 
+[00:44:46 +18s | diraq] [FETCH]... ↓ https://www.diraq.com/research-papers/bounds-to-...ubit-variability-for-scalable-cmos-architectures  | ✓ | ⏱: 6.39s 
+[00:44:46 +18s | diraq] [SCRAPE].. ◆ https://www.diraq.com/research-papers/bounds-to-...ubit-variability-for-scalable-cmos-architectures  | ✓ | ⏱: 0.04s 
+[00:44:46 +18s | diraq] [COMPLETE] ● https://www.diraq.com/research-papers/bounds-to-...ubit-variability-for-scalable-cmos-architectures  | ✓ | ⏱: 6.47s 
+[00:44:46 +18s | diraq] [FETCH]... ↓ https://www.diraq.com/newsdesk?sort=alphabetical_desc                                                | ✓ | ⏱: 7.03s 
+[00:44:46 +18s | diraq] [SCRAPE].. ◆ https://www.diraq.com/newsdesk?sort=alphabetical_desc                                                | ✓ | ⏱: 0.11s 
+[00:44:47 +18s | diraq] [COMPLETE] ● https://www.diraq.com/newsdesk?sort=alphabetical_desc                                                | ✓ | ⏱: 7.18s 
+[00:44:47 +19s | diraq] [FETCH]... ↓ https://www.diraq.com/newsdesk?sort=date_asc                                                         | ✓ | ⏱: 7.23s 
+[00:44:47 +19s | diraq] [SCRAPE].. ◆ https://www.diraq.com/newsdesk?sort=date_asc                                                         | ✓ | ⏱: 0.11s 
+[00:44:47 +19s | diraq] [COMPLETE] ● https://www.diraq.com/newsdesk?sort=date_asc                                                         | ✓ | ⏱: 7.38s 
+[00:44:47 +19s | diraq] [FETCH]... ↓ https://www.diraq.com/newsdesk?sort=date_desc                                                        | ✓ | ⏱: 7.50s 
+[00:44:47 +19s | diraq] [SCRAPE].. ◆ https://www.diraq.com/newsdesk?sort=date_desc                                                        | ✓ | ⏱: 0.11s 
+[00:44:47 +19s | diraq] [COMPLETE] ● https://www.diraq.com/newsdesk?sort=date_desc                                                        | ✓ | ⏱: 7.64s 
+[00:44:47 +19s | diraq] [FETCH]... ↓ https://www.diraq.com/research-papers/navigating...in-donor-qudit-with-electric-and-magnetic-fields  | ✓ | ⏱: 6.84s 
+[00:44:47 +19s | diraq] [SCRAPE].. ◆ https://www.diraq.com/research-papers/navigating...in-donor-qudit-with-electric-and-magnetic-fields  | ✓ | ⏱: 0.04s 
+[00:44:47 +19s | diraq] [COMPLETE] ● https://www.diraq.com/research-papers/navigating...in-donor-qudit-with-electric-and-magnetic-fields  | ✓ | ⏱: 6.91s 
+[00:44:47 +19s | diraq] [FETCH]... ↓ https://www.diraq.com/research-papers/on-demand-electrical-control-of-spin-qubits-7j9hw-3mgma        | ✓ | ⏱: 5.57s 
+[00:44:47 +19s | diraq] [SCRAPE].. ◆ https://www.diraq.com/research-papers/on-demand-electrical-control-of-spin-qubits-7j9hw-3mgma        | ✓ | ⏱: 0.04s 
+[00:44:47 +19s | diraq] [COMPLETE] ● https://www.diraq.com/research-papers/on-demand-electrical-control-of-spin-qubits-7j9hw-3mgma        | ✓ | ⏱: 5.65s 
+[00:44:47 +19s | diraq] [FETCH]... ↓ https://www.diraq.com/newsdesk?sort=alphabetical_asc                                                 | ✓ | ⏱: 8.07s 
+[00:44:48 +19s | diraq] [SCRAPE].. ◆ https://www.diraq.com/newsdesk?sort=alphabetical_asc                                                 | ✓ | ⏱: 0.10s 
+[00:44:48 +20s | diraq] [COMPLETE] ● https://www.diraq.com/newsdesk?sort=alphabetical_asc                                                 | ✓ | ⏱: 8.20s 
+[00:44:48 +20s | diraq] [FETCH]... ↓ https://www.diraq.com/research-papers/precision-...with-holes-on-a-natural-silicon-foundry-platform  | ✓ | ⏱: 5.66s 
+[00:44:48 +20s | diraq] [SCRAPE].. ◆ https://www.diraq.com/research-papers/precision-...with-holes-on-a-natural-silicon-foundry-platform  | ✓ | ⏱: 0.04s 
+[00:44:48 +20s | diraq] [COMPLETE] ● https://www.diraq.com/research-papers/precision-...with-holes-on-a-natural-silicon-foundry-platform  | ✓ | ⏱: 5.73s 
+[00:44:48 +20s | diraq] [FETCH]... ↓ https://www.diraq.com/research-papers/scalable-q...urce-on-commercial-22-nm-cmos-process-technology  | ✓ | ⏱: 5.64s 
+[00:44:48 +20s | diraq] [SCRAPE].. ◆ https://www.diraq.com/research-papers/scalable-q...urce-on-commercial-22-nm-cmos-process-technology  | ✓ | ⏱: 0.04s 
+[00:44:48 +20s | diraq] [COMPLETE] ● https://www.diraq.com/research-papers/scalable-q...urce-on-commercial-22-nm-cmos-process-technology  | ✓ | ⏱: 5.71s 
+[00:44:48 +20s | diraq] [FETCH]... ↓ https://www.diraq.com/research-papers/schrdinger-cat-states-of-a-nuclear-spin-qudit-in-silicon       | ✓ | ⏱: 5.43s 
+[00:44:48 +20s | diraq] [SCRAPE].. ◆ https://www.diraq.com/research-papers/schrdinger-cat-states-of-a-nuclear-spin-qudit-in-silicon       | ✓ | ⏱: 0.04s 
+[00:44:48 +20s | diraq] [COMPLETE] ● https://www.diraq.com/research-papers/schrdinger-cat-states-of-a-nuclear-spin-qudit-in-silicon       | ✓ | ⏱: 5.51s 
+[00:44:48 +20s | diraq] [FETCH]... ↓ https://www.diraq.com/research-papers/tag/INDUSTRY+FIRST                                             | ✓ | ⏱: 5.64s 
+[00:44:48 +20s | diraq] [SCRAPE].. ◆ https://www.diraq.com/research-papers/tag/INDUSTRY+FIRST                                             | ✓ | ⏱: 0.07s 
+[00:44:49 +20s | diraq] [COMPLETE] ● https://www.diraq.com/research-papers/tag/INDUSTRY+FIRST                                             | ✓ | ⏱: 5.75s 
+[00:44:49 +21s | diraq] [FETCH]... ↓ https://www.diraq.com/research-papers/tomography...s-in-exchange-coupled-donor-electron-spin-qubits  | ✓ | ⏱: 5.36s 
+[00:44:49 +21s | diraq] [SCRAPE].. ◆ https://www.diraq.com/research-papers/tomography...s-in-exchange-coupled-donor-electron-spin-qubits  | ✓ | ⏱: 0.04s 
+[00:44:49 +21s | diraq] [COMPLETE] ● https://www.diraq.com/research-papers/tomography...s-in-exchange-coupled-donor-electron-spin-qubits  | ✓ | ⏱: 5.43s 
+[00:44:49 +21s | diraq] [FETCH]... ↓ https://www.diraq.com/research-papers/tag/QUBIT+CONTROL                                              | ✓ | ⏱: 5.71s 
+[00:44:49 +21s | diraq] [SCRAPE].. ◆ https://www.diraq.com/research-papers/tag/QUBIT+CONTROL                                              | ✓ | ⏱: 0.07s 
+[00:44:49 +21s | diraq] [COMPLETE] ● https://www.diraq.com/research-papers/tag/QUBIT+CONTROL                                              | ✓ | ⏱: 5.81s 
+[00:44:49 +21s | diraq] [FETCH]... ↓ https://www.diraq.com/research-papers?sort=alphabetical_asc                                          | ✓ | ⏱: 4.56s 
+[00:44:49 +21s | diraq] [SCRAPE].. ◆ https://www.diraq.com/research-papers?sort=alphabetical_asc                                          | ✓ | ⏱: 0.12s 
+[00:44:49 +21s | diraq] [COMPLETE] ● https://www.diraq.com/research-papers?sort=alphabetical_asc                                          | ✓ | ⏱: 4.72s 
+[00:44:50 +22s | diraq] [FETCH]... ↓ https://www.diraq.com/research-papers?sort=alphabetical_desc                                         | ✓ | ⏱: 4.90s 
+[00:44:50 +22s | diraq] [SCRAPE].. ◆ https://www.diraq.com/research-papers?sort=alphabetical_desc                                         | ✓ | ⏱: 0.08s 
+[00:44:50 +22s | diraq] [COMPLETE] ● https://www.diraq.com/research-papers?sort=alphabetical_desc                                         | ✓ | ⏱: 5.01s 
+[00:44:50 +22s | diraq] [FETCH]... ↓ https://www.diraq.com/research-papers?author=6836707771bb350e6ef84d07                                | ✓ | ⏱: 5.46s 
+[00:44:50 +22s | diraq] [SCRAPE].. ◆ https://www.diraq.com/research-papers?author=6836707771bb350e6ef84d07                                | ✓ | ⏱: 0.07s 
+[00:44:50 +22s | diraq] [COMPLETE] ● https://www.diraq.com/research-papers?author=6836707771bb350e6ef84d07                                | ✓ | ⏱: 5.55s 
+[00:44:50 +22s | diraq] [FETCH]... ↓ https://www.diraq.com/research-papers?sort=date_asc                                                  | ✓ | ⏱: 5.03s 
+[00:44:50 +22s | diraq] [SCRAPE].. ◆ https://www.diraq.com/research-papers?sort=date_asc                                                  | ✓ | ⏱: 0.06s 
+[00:44:50 +22s | diraq] [COMPLETE] ● https://www.diraq.com/research-papers?sort=date_asc                                                  | ✓ | ⏱: 5.11s 
+[00:44:50 +22s | diraq] [FETCH]... ↓ https://www.diraq.com/research-papers?sort=date_desc                                                 | ✓ | ⏱: 4.90s 
+[00:44:50 +22s | diraq] [SCRAPE].. ◆ https://www.diraq.com/research-papers?sort=date_desc                                                 | ✓ | ⏱: 0.06s 
+[00:44:50 +22s | diraq] [COMPLETE] ● https://www.diraq.com/research-papers?sort=date_desc                                                 | ✓ | ⏱: 4.97s 
+[00:44:50 +22s | diraq] Saved: crawl_output/b9ef3193fe_diraq.com.json
+[00:44:50 +22s | diraq] Saved: crawl_output/f703a71ed8_www.diraq.com.json
+[00:44:50 +22s | diraq] Saved: crawl_output/b2bfa2333f_www.diraq.com_publications.json
+[00:44:50 +22s | diraq] Saved: crawl_output/82424282c5_www.diraq.com_technology.json
+[00:44:50 +22s | diraq] Saved: crawl_output/430b0aa615_www.diraq.com_contact.json
+[00:44:50 +22s | diraq] Skipped: https://www.diraq.com/terms-and-conditions
+[00:44:50 +22s | diraq] Saved: crawl_output/73c6182286_www.diraq.com_team.json
+[00:44:50 +22s | diraq] Skipped: https://www.diraq.com/privacy-policy
+[00:44:50 +22s | diraq] Saved: crawl_output/82415c7752_www.diraq.com_research-papers_spin-qubit-control-with-a-milli-kelvin-cmos-chip.json
+[00:44:50 +22s | diraq] Saved: crawl_output/9ba030c5fe_www.diraq.com_research-papers.json
+[00:44:50 +22s | diraq] Skipped: https://www.diraq.com/cart
+[00:44:50 +22s | diraq] Saved: crawl_output/7c1fb6c03f_www.diraq.com_newsdesk.json
+[00:44:50 +22s | diraq] Duplicate skipped: https://www.diraq.com/research-papers
+[00:44:50 +22s | diraq] Duplicate skipped: https://www.diraq.com/research-papers
+[00:44:50 +22s | diraq] Saved: crawl_output/5337082a6f_www.diraq.com_newsdesk_one-dollar-per-qubit-the-number-that-changes-everything.json
+[00:44:50 +22s | diraq] Saved: crawl_output/c4bf6ae6c0_www.diraq.com_research-papers_assessment-of-the-errors-of-high-fidelity-two-qubit-gates-in-silicon-quantum-dots.json
+[00:44:50 +22s | diraq] Saved: crawl_output/bc1bbfffa9_www.diraq.com_research-papers_a-two-qubit-logic-gate-in-silicon.json
+[00:44:50 +22s | diraq] Duplicate skipped: https://www.diraq.com/research-papers
+[00:44:50 +22s | diraq] Saved: crawl_output/b594fb5e09_www.diraq.com_research-papers_industry-compatible-silicon-spin-qubit-unit-cells-exceeding-99-fidelity.json
+[00:44:50 +22s | diraq] Saved: crawl_output/4ca06d4dba_www.diraq.com_research-papers_a-singlet-triplet-hole-spin-qubit-in-mos-silicon.json
+[00:44:50 +22s | diraq] Saved: crawl_output/b05c785f3f_www.diraq.com_research-papers_category_NATURE.json
+[00:44:50 +22s | diraq] Duplicate skipped: https://www.diraq.com/newsdesk
+[00:44:50 +22s | diraq] Duplicate skipped: https://www.diraq.com/newsdesk
+[00:44:50 +22s | diraq] Saved: crawl_output/e0b3a6c625_www.diraq.com_research-papers_category_NATURE+COMMUNICATIONS.json
+[00:44:50 +22s | diraq] Saved: crawl_output/a7141d5e89_www.diraq.com_research-papers_bell-inequality-violation-in-gate-defined-quantum-dots.json
+[00:44:50 +22s | diraq] Saved: crawl_output/fd20c93f93_www.diraq.com_research-papers_high-fidelity-spin-qubit-operation-and-algorithmic-initialization-above-1-k.json
+[00:44:50 +22s | diraq] Saved: crawl_output/751d741e54_www.diraq.com_research-papers_entangling-gates-on-degenerate-spin-qubits-dressed-by-a-global-field.json
+[00:44:50 +22s | diraq] Duplicate skipped: https://www.diraq.com/newsdesk
+[00:44:50 +22s | diraq] Saved: crawl_output/ebf7d3a03a_www.diraq.com_research-papers_category_NATURE+PHYSICS.json
+[00:44:50 +22s | diraq] Saved: crawl_output/4b83725ac6_www.diraq.com_research-papers_bounds-to-electron-spin-qubit-variability-for-scalable-cmos-architectures.json
+[00:44:50 +22s | diraq] Duplicate skipped: https://www.diraq.com/newsdesk
+[00:44:50 +22s | diraq] Duplicate skipped: https://www.diraq.com/newsdesk
+[00:44:50 +22s | diraq] Duplicate skipped: https://www.diraq.com/newsdesk
+[00:44:50 +22s | diraq] Saved: crawl_output/44c72367f3_www.diraq.com_research-papers_navigating-the-16-dimensional-hilbert-space-of-a-high-spin-donor-qudit-with-electric-and-magnetic-fields.json
+[00:44:50 +22s | diraq] Saved: crawl_output/d22b24224e_www.diraq.com_research-papers_on-demand-electrical-control-of-spin-qubits-7j9hw-3mgma.json
+[00:44:50 +22s | diraq] Duplicate skipped: https://www.diraq.com/newsdesk
+[00:44:50 +22s | diraq] Saved: crawl_output/1cb9c73fd7_www.diraq.com_research-papers_precision-high-speed-quantum-logic-with-holes-on-a-natural-silicon-foundry-platform.json
+[00:44:50 +22s | diraq] Saved: crawl_output/1d19bdea0f_www.diraq.com_research-papers_scalable-quantum-current-source-on-commercial-22-nm-cmos-process-technology.json
+[00:44:50 +22s | diraq] Saved: crawl_output/bd13e8d92b_www.diraq.com_research-papers_schrdinger-cat-states-of-a-nuclear-spin-qudit-in-silicon.json
+[00:44:50 +22s | diraq] Saved: crawl_output/3d42b2d33c_www.diraq.com_research-papers_tag_INDUSTRY+FIRST.json
+[00:44:50 +22s | diraq] Saved: crawl_output/359f0fd0e6_www.diraq.com_research-papers_tomography-of-entangling-two-qubit-logic-operations-in-exchange-coupled-donor-electron-spin-qubits.json
+[00:44:50 +22s | diraq] Saved: crawl_output/1ee73952b7_www.diraq.com_research-papers_tag_QUBIT+CONTROL.json
+[00:44:50 +22s | diraq] Duplicate skipped: https://www.diraq.com/research-papers
+[00:44:50 +22s | diraq] Duplicate skipped: https://www.diraq.com/research-papers
+[00:44:50 +22s | diraq] Duplicate skipped: https://www.diraq.com/research-papers
+[00:44:50 +22s | diraq] Duplicate skipped: https://www.diraq.com/research-papers
+[00:44:50 +22s | diraq] Duplicate skipped: https://www.diraq.com/research-papers
+
+[00:44:51 +23s | diraq] === 1 actor extraction ===
+[00:44:51 +23s | diraq] Reading page (1/29): https://www.diraq.com/research-papers/precision-high-speed-quantum-logic-with-holes-on-a-natural-silicon-foundry-platform
+[00:44:51 +23s | diraq] Extracting: https://www.diraq.com/research-papers/precision-high-speed-quantum-logic-with-holes-on-a-natural-silicon-foundry-platform (1/29), chunk 1/4
+[00:44:58 +30s | diraq] Repaired malformed JSON.
+[00:44:58 +30s | diraq] Extracting: https://www.diraq.com/research-papers/precision-high-speed-quantum-logic-with-holes-on-a-natural-silicon-foundry-platform (1/29), chunk 2/4
+[00:45:10 +39s | diraq] Repaired malformed JSON.
+[00:45:10 +39s | diraq] Extracting: https://www.diraq.com/research-papers/precision-high-speed-quantum-logic-with-holes-on-a-natural-silicon-foundry-platform (1/29), chunk 3/4
+[00:45:17 +47s | diraq] Repaired malformed JSON.
+[00:45:17 +47s | diraq] Extracting: https://www.diraq.com/research-papers/precision-high-speed-quantum-logic-with-holes-on-a-natural-silicon-foundry-platform (1/29), chunk 4/4
+[00:45:22 +51s | diraq] Reading page (2/29): https://www.diraq.com/research-papers/scalable-quantum-current-source-on-commercial-22-nm-cmos-process-technology
+[00:45:22 +51s | diraq] Extracting: https://www.diraq.com/research-papers/scalable-quantum-current-source-on-commercial-22-nm-cmos-process-technology (2/29), chunk 1/5
+[00:45:27 +56s | diraq] Extracting: https://www.diraq.com/research-papers/scalable-quantum-current-source-on-commercial-22-nm-cmos-process-technology (2/29), chunk 2/5
+[00:45:33 +1m 3s | diraq] Repaired malformed JSON.
+[00:45:33 +1m 3s | diraq] Extracting: https://www.diraq.com/research-papers/scalable-quantum-current-source-on-commercial-22-nm-cmos-process-technology (2/29), chunk 3/5
+[00:45:46 +1m 12s | diraq] Repaired malformed JSON.
+[00:45:46 +1m 12s | diraq] Extracting: https://www.diraq.com/research-papers/scalable-quantum-current-source-on-commercial-22-nm-cmos-process-technology (2/29), chunk 4/5
+[00:45:52 +1m 19s | diraq] Repaired malformed JSON.
+[00:45:52 +1m 19s | diraq] Extracting: https://www.diraq.com/research-papers/scalable-quantum-current-source-on-commercial-22-nm-cmos-process-technology (2/29), chunk 5/5
+[00:46:01 +1m 27s | diraq] Repaired malformed JSON.
+[00:46:01 +1m 27s | diraq] Reading page (3/29): https://www.diraq.com/research-papers/tag/QUBIT+CONTROL
+[00:46:01 +1m 27s | diraq] Extracting: https://www.diraq.com/research-papers/tag/QUBIT+CONTROL (3/29), chunk 1/11
+[00:46:08 +1m 35s | diraq] Extracting: https://www.diraq.com/research-papers/tag/QUBIT+CONTROL (3/29), chunk 2/11
+[00:46:13 +1m 40s | diraq] Extracting: https://www.diraq.com/research-papers/tag/QUBIT+CONTROL (3/29), chunk 3/11
+[00:46:24 +1m 48s | diraq] Repaired malformed JSON.
+[00:46:24 +1m 48s | diraq] Extracting: https://www.diraq.com/research-papers/tag/QUBIT+CONTROL (3/29), chunk 4/11
+[00:46:28 +1m 52s | diraq] Extracting: https://www.diraq.com/research-papers/tag/QUBIT+CONTROL (3/29), chunk 5/11
+[00:46:33 +1m 57s | diraq] Extracting: https://www.diraq.com/research-papers/tag/QUBIT+CONTROL (3/29), chunk 6/11
+[00:46:39 +2m 3s | diraq] Extracting: https://www.diraq.com/research-papers/tag/QUBIT+CONTROL (3/29), chunk 7/11
+[00:46:45 +2m 9s | diraq] Repaired malformed JSON.
+[00:46:45 +2m 9s | diraq] Extracting: https://www.diraq.com/research-papers/tag/QUBIT+CONTROL (3/29), chunk 8/11
+[00:46:57 +2m 18s | diraq] Repaired malformed JSON.
+[00:46:57 +2m 18s | diraq] Extracting: https://www.diraq.com/research-papers/tag/QUBIT+CONTROL (3/29), chunk 9/11
+[00:47:03 +2m 25s | diraq] Repaired malformed JSON.
+[00:47:03 +2m 25s | diraq] Extracting: https://www.diraq.com/research-papers/tag/QUBIT+CONTROL (3/29), chunk 10/11
+[00:47:09 +2m 30s | diraq] Repaired malformed JSON.
+[00:47:09 +2m 30s | diraq] Extracting: https://www.diraq.com/research-papers/tag/QUBIT+CONTROL (3/29), chunk 11/11
+[00:47:15 +2m 36s | diraq] Repaired malformed JSON.
+[00:47:15 +2m 36s | diraq] Reading page (4/29): https://www.diraq.com/research-papers/tomography-of-entangling-two-qubit-logic-operations-in-exchange-coupled-donor-electron-spin-qubits
+[00:47:15 +2m 36s | diraq] Extracting: https://www.diraq.com/research-papers/tomography-of-entangling-two-qubit-logic-operations-in-exchange-coupled-donor-electron-spin-qubits (4/29), chunk 1/4
+[00:47:21 +2m 42s | diraq] Repaired malformed JSON.
+[00:47:21 +2m 42s | diraq] Extracting: https://www.diraq.com/research-papers/tomography-of-entangling-two-qubit-logic-operations-in-exchange-coupled-donor-electron-spin-qubits (4/29), chunk 2/4
+[00:47:31 +2m 50s | diraq] Repaired malformed JSON.
+[00:47:31 +2m 50s | diraq] Extracting: https://www.diraq.com/research-papers/tomography-of-entangling-two-qubit-logic-operations-in-exchange-coupled-donor-electron-spin-qubits (4/29), chunk 3/4
+[00:47:39 +2m 58s | diraq] Repaired malformed JSON.
+[00:47:39 +2m 58s | diraq] Extracting: https://www.diraq.com/research-papers/tomography-of-entangling-two-qubit-logic-operations-in-exchange-coupled-donor-electron-spin-qubits (4/29), chunk 4/4
+[00:47:48 +3m 6s | diraq] Repaired malformed JSON.
+[00:47:48 +3m 6s | diraq] Reading page (5/29): https://www.diraq.com/research-papers/tag/INDUSTRY+FIRST
+[00:47:48 +3m 6s | diraq] Extracting: https://www.diraq.com/research-papers/tag/INDUSTRY+FIRST (5/29), chunk 1/9
+[00:47:57 +3m 15s | diraq] Extracting: https://www.diraq.com/research-papers/tag/INDUSTRY+FIRST (5/29), chunk 2/9
+[00:48:06 +3m 22s | diraq] Repaired malformed JSON.
+[00:48:06 +3m 22s | diraq] Extracting: https://www.diraq.com/research-papers/tag/INDUSTRY+FIRST (5/29), chunk 3/9
+[00:48:12 +3m 27s | diraq] Repaired malformed JSON.
+[00:48:12 +3m 27s | diraq] Extracting: https://www.diraq.com/research-papers/tag/INDUSTRY+FIRST (5/29), chunk 4/9
+[00:48:18 +3m 34s | diraq] Extracting: https://www.diraq.com/research-papers/tag/INDUSTRY+FIRST (5/29), chunk 5/9
+[00:48:24 +3m 39s | diraq] Repaired malformed JSON.
+[00:48:24 +3m 39s | diraq] Extracting: https://www.diraq.com/research-papers/tag/INDUSTRY+FIRST (5/29), chunk 6/9
+[00:48:32 +3m 48s | diraq] Repaired malformed JSON.
+[00:48:32 +3m 48s | diraq] Extracting: https://www.diraq.com/research-papers/tag/INDUSTRY+FIRST (5/29), chunk 7/9
+[00:48:43 +3m 55s | diraq] Repaired malformed JSON.
+[00:48:43 +3m 55s | diraq] Extracting: https://www.diraq.com/research-papers/tag/INDUSTRY+FIRST (5/29), chunk 8/9
+[00:48:50 +4m 3s | diraq] Repaired malformed JSON.
+[00:48:50 +4m 3s | diraq] Extracting: https://www.diraq.com/research-papers/tag/INDUSTRY+FIRST (5/29), chunk 9/9
+[00:48:56 +4m 9s | diraq] Repaired malformed JSON.
+[00:48:56 +4m 9s | diraq] Reading page (6/29): https://www.diraq.com/contact
+[00:48:56 +4m 9s | diraq] Extracting: https://www.diraq.com/contact (6/29), chunk 1/3
+[00:48:59 +4m 12s | diraq] Extracting: https://www.diraq.com/contact (6/29), chunk 2/3
+[00:49:05 +4m 18s | diraq] Repaired malformed JSON.
+[00:49:05 +4m 18s | diraq] Extracting: https://www.diraq.com/contact (6/29), chunk 3/3
+[00:49:17 +4m 27s | diraq] Repaired malformed JSON.
+[00:49:17 +4m 27s | diraq] Reading page (7/29): https://www.diraq.com/research-papers/navigating-the-16-dimensional-hilbert-space-of-a-high-spin-donor-qudit-with-electric-and-magnetic-fields
+[00:49:17 +4m 27s | diraq] Extracting: https://www.diraq.com/research-papers/navigating-the-16-dimensional-hilbert-space-of-a-high-spin-donor-qudit-with-electric-and-magnetic-fields (7/29), chunk 1/4
+[00:49:24 +4m 34s | diraq] Repaired malformed JSON.
+[00:49:24 +4m 34s | diraq] Extracting: https://www.diraq.com/research-papers/navigating-the-16-dimensional-hilbert-space-of-a-high-spin-donor-qudit-with-electric-and-magnetic-fields (7/29), chunk 2/4
+[00:49:33 +4m 43s | diraq] Repaired malformed JSON.
+[00:49:33 +4m 43s | diraq] Extracting: https://www.diraq.com/research-papers/navigating-the-16-dimensional-hilbert-space-of-a-high-spin-donor-qudit-with-electric-and-magnetic-fields (7/29), chunk 3/4
+[00:49:38 +4m 48s | diraq] Repaired malformed JSON.
+[00:49:38 +4m 48s | diraq] Extracting: https://www.diraq.com/research-papers/navigating-the-16-dimensional-hilbert-space-of-a-high-spin-donor-qudit-with-electric-and-magnetic-fields (7/29), chunk 4/4
+[00:49:48 +4m 55s | diraq] Repaired malformed JSON.
+[00:49:48 +4m 55s | diraq] Reading page (8/29): https://www.diraq.com/research-papers/bounds-to-electron-spin-qubit-variability-for-scalable-cmos-architectures
+[00:49:48 +4m 55s | diraq] Extracting: https://www.diraq.com/research-papers/bounds-to-electron-spin-qubit-variability-for-scalable-cmos-architectures (8/29), chunk 1/4
+[00:49:54 +5m 1s | diraq] Repaired malformed JSON.
+[00:49:54 +5m 1s | diraq] Extracting: https://www.diraq.com/research-papers/bounds-to-electron-spin-qubit-variability-for-scalable-cmos-architectures (8/29), chunk 2/4
+[00:49:59 +5m 6s | diraq] Repaired malformed JSON.
+[00:49:59 +5m 6s | diraq] Extracting: https://www.diraq.com/research-papers/bounds-to-electron-spin-qubit-variability-for-scalable-cmos-architectures (8/29), chunk 3/4
+[00:50:06 +5m 14s | diraq] Repaired malformed JSON.
+[00:50:06 +5m 14s | diraq] Extracting: https://www.diraq.com/research-papers/bounds-to-electron-spin-qubit-variability-for-scalable-cmos-architectures (8/29), chunk 4/4
+[00:50:13 +5m 21s | diraq] Reading page (9/29): https://www.diraq.com/research-papers/a-singlet-triplet-hole-spin-qubit-in-mos-silicon
+[00:50:13 +5m 21s | diraq] Extracting: https://www.diraq.com/research-papers/a-singlet-triplet-hole-spin-qubit-in-mos-silicon (9/29), chunk 1/4
+[00:50:23 +5m 28s | diraq] Extracting: https://www.diraq.com/research-papers/a-singlet-triplet-hole-spin-qubit-in-mos-silicon (9/29), chunk 2/4
+[00:50:30 +5m 35s | diraq] Repaired malformed JSON.
+[00:50:30 +5m 35s | diraq] Extracting: https://www.diraq.com/research-papers/a-singlet-triplet-hole-spin-qubit-in-mos-silicon (9/29), chunk 3/4
+[00:50:37 +5m 42s | diraq] Repaired malformed JSON.
+[00:50:37 +5m 42s | diraq] Extracting: https://www.diraq.com/research-papers/a-singlet-triplet-hole-spin-qubit-in-mos-silicon (9/29), chunk 4/4
+[00:50:43 +5m 48s | diraq] Repaired malformed JSON.
+[00:50:43 +5m 48s | diraq] Reading page (10/29): https://www.diraq.com/newsdesk/one-dollar-per-qubit-the-number-that-changes-everything
+[00:50:43 +5m 48s | diraq] Extracting: https://www.diraq.com/newsdesk/one-dollar-per-qubit-the-number-that-changes-everything (10/29), chunk 1/9
+[00:50:47 +5m 52s | diraq] Extracting: https://www.diraq.com/newsdesk/one-dollar-per-qubit-the-number-that-changes-everything (10/29), chunk 2/9
+[00:50:53 +5m 58s | diraq] Extracting: https://www.diraq.com/newsdesk/one-dollar-per-qubit-the-number-that-changes-everything (10/29), chunk 3/9
+[00:51:01 +6m 3s | diraq] Repaired malformed JSON.
+[00:51:01 +6m 3s | diraq] Extracting: https://www.diraq.com/newsdesk/one-dollar-per-qubit-the-number-that-changes-everything (10/29), chunk 4/9
+[00:51:12 +6m 14s | diraq] Repaired malformed JSON.
+[00:51:12 +6m 14s | diraq] Extracting: https://www.diraq.com/newsdesk/one-dollar-per-qubit-the-number-that-changes-everything (10/29), chunk 5/9
+[00:51:18 +6m 20s | diraq] Repaired malformed JSON.
+[00:51:18 +6m 20s | diraq] Extracting: https://www.diraq.com/newsdesk/one-dollar-per-qubit-the-number-that-changes-everything (10/29), chunk 6/9
+[00:51:22 +6m 24s | diraq] Extracting: https://www.diraq.com/newsdesk/one-dollar-per-qubit-the-number-that-changes-everything (10/29), chunk 7/9
+[00:51:32 +6m 31s | diraq] Repaired malformed JSON.
+[00:51:32 +6m 31s | diraq] Extracting: https://www.diraq.com/newsdesk/one-dollar-per-qubit-the-number-that-changes-everything (10/29), chunk 8/9
+[00:51:40 +6m 39s | diraq] Extracting: https://www.diraq.com/newsdesk/one-dollar-per-qubit-the-number-that-changes-everything (10/29), chunk 9/9
+[00:51:48 +6m 47s | diraq] Repaired malformed JSON.
+[00:51:48 +6m 47s | diraq] Reading page (11/29): https://www.diraq.com/team
+[00:51:48 +6m 47s | diraq] Extracting: https://www.diraq.com/team (11/29), chunk 1/14
+[00:51:53 +6m 52s | diraq] Extracting: https://www.diraq.com/team (11/29), chunk 2/14
+[00:52:01 +7m 0s | diraq] Repaired malformed JSON.
+[00:52:01 +7m 0s | diraq] Extracting: https://www.diraq.com/team (11/29), chunk 3/14
+[00:52:11 +7m 7s | diraq] Repaired malformed JSON.
+[00:52:11 +7m 7s | diraq] Extracting: https://www.diraq.com/team (11/29), chunk 4/14
+[00:52:19 +7m 16s | diraq] Repaired malformed JSON.
+[00:52:19 +7m 16s | diraq] Extracting: https://www.diraq.com/team (11/29), chunk 5/14
+[00:52:25 +7m 22s | diraq] Repaired malformed JSON.
+[00:52:25 +7m 22s | diraq] Extracting: https://www.diraq.com/team (11/29), chunk 6/14
+[00:52:32 +7m 28s | diraq] Repaired malformed JSON.
+[00:52:32 +7m 28s | diraq] Extracting: https://www.diraq.com/team (11/29), chunk 7/14
+[00:52:42 +7m 36s | diraq] Repaired malformed JSON.
+[00:52:42 +7m 36s | diraq] Extracting: https://www.diraq.com/team (11/29), chunk 8/14
+[00:52:49 +7m 43s | diraq] Repaired malformed JSON.
+[00:52:49 +7m 43s | diraq] Extracting: https://www.diraq.com/team (11/29), chunk 9/14
+[00:52:54 +7m 48s | diraq] Repaired malformed JSON.
+[00:52:54 +7m 48s | diraq] Extracting: https://www.diraq.com/team (11/29), chunk 10/14
+[00:53:01 +7m 55s | diraq] Repaired malformed JSON.
+[00:53:01 +7m 55s | diraq] Extracting: https://www.diraq.com/team (11/29), chunk 11/14
+[00:53:09 +8m 3s | diraq] Repaired malformed JSON.
+[00:53:09 +8m 3s | diraq] Extracting: https://www.diraq.com/team (11/29), chunk 12/14
+[00:53:18 +8m 10s | diraq] Repaired malformed JSON.
+[00:53:18 +8m 10s | diraq] Extracting: https://www.diraq.com/team (11/29), chunk 13/14
+[00:53:27 +8m 18s | diraq] Repaired malformed JSON.
+[00:53:27 +8m 18s | diraq] Extracting: https://www.diraq.com/team (11/29), chunk 14/14
+[00:53:34 +8m 25s | diraq] Repaired malformed JSON.
+[00:53:34 +8m 26s | diraq] Reading page (12/29): https://www.diraq.com/research-papers/entangling-gates-on-degenerate-spin-qubits-dressed-by-a-global-field
+[00:53:34 +8m 26s | diraq] Extracting: https://www.diraq.com/research-papers/entangling-gates-on-degenerate-spin-qubits-dressed-by-a-global-field (12/29), chunk 1/4
+[00:53:42 +8m 33s | diraq] Extracting: https://www.diraq.com/research-papers/entangling-gates-on-degenerate-spin-qubits-dressed-by-a-global-field (12/29), chunk 2/4
+[00:53:53 +8m 42s | diraq] Repaired malformed JSON.
+[00:53:53 +8m 42s | diraq] Extracting: https://www.diraq.com/research-papers/entangling-gates-on-degenerate-spin-qubits-dressed-by-a-global-field (12/29), chunk 3/4
+[00:54:00 +8m 49s | diraq] Repaired malformed JSON.
+[00:54:00 +8m 49s | diraq] Extracting: https://www.diraq.com/research-papers/entangling-gates-on-degenerate-spin-qubits-dressed-by-a-global-field (12/29), chunk 4/4
+[00:54:09 +8m 58s | diraq] Repaired malformed JSON.
+[00:54:09 +8m 58s | diraq] Reading page (13/29): https://www.diraq.com/newsdesk
+[00:54:09 +8m 58s | diraq] Extracting: https://www.diraq.com/newsdesk (13/29), chunk 1/15
+[00:54:15 +9m 4s | diraq] Extracting: https://www.diraq.com/newsdesk (13/29), chunk 2/15
+[00:54:22 +9m 10s | diraq] Extracting: https://www.diraq.com/newsdesk (13/29), chunk 3/15
+[00:54:33 +9m 19s | diraq] Repaired malformed JSON.
+[00:54:33 +9m 19s | diraq] Extracting: https://www.diraq.com/newsdesk (13/29), chunk 4/15
+[00:54:39 +9m 25s | diraq] Repaired malformed JSON.
+[00:54:39 +9m 25s | diraq] Extracting: https://www.diraq.com/newsdesk (13/29), chunk 5/15
+[00:54:45 +9m 31s | diraq] Repaired malformed JSON.
+[00:54:45 +9m 31s | diraq] Extracting: https://www.diraq.com/newsdesk (13/29), chunk 6/15
+[00:54:53 +9m 39s | diraq] Repaired malformed JSON.
+[00:54:53 +9m 39s | diraq] Extracting: https://www.diraq.com/newsdesk (13/29), chunk 7/15
+[00:55:04 +9m 47s | diraq] Repaired malformed JSON.
+[00:55:04 +9m 47s | diraq] Extracting: https://www.diraq.com/newsdesk (13/29), chunk 8/15
+[00:55:10 +9m 54s | diraq] Repaired malformed JSON.
+[00:55:10 +9m 54s | diraq] Extracting: https://www.diraq.com/newsdesk (13/29), chunk 9/15
+[00:55:18 +10m 1s | diraq] Repaired malformed JSON.
+[00:55:18 +10m 1s | diraq] Extracting: https://www.diraq.com/newsdesk (13/29), chunk 10/15
+[00:55:25 +10m 8s | diraq] Repaired malformed JSON.
+[00:55:25 +10m 8s | diraq] Extracting: https://www.diraq.com/newsdesk (13/29), chunk 11/15
+[00:55:32 +10m 15s | diraq] Repaired malformed JSON.
+[00:55:32 +10m 15s | diraq] Extracting: https://www.diraq.com/newsdesk (13/29), chunk 12/15
+[00:55:41 +10m 22s | diraq] Repaired malformed JSON.
+[00:55:41 +10m 22s | diraq] Extracting: https://www.diraq.com/newsdesk (13/29), chunk 13/15
+[00:55:47 +10m 28s | diraq] Repaired malformed JSON.
+[00:55:47 +10m 28s | diraq] Extracting: https://www.diraq.com/newsdesk (13/29), chunk 14/15
+[00:55:55 +10m 36s | diraq] Repaired malformed JSON.
+[00:55:55 +10m 36s | diraq] Extracting: https://www.diraq.com/newsdesk (13/29), chunk 15/15
+[00:56:00 +10m 41s | diraq] Repaired malformed JSON.
+[00:56:00 +10m 41s | diraq] Reading page (14/29): https://www.diraq.com/research-papers/spin-qubit-control-with-a-milli-kelvin-cmos-chip
+[00:56:00 +10m 41s | diraq] Extracting: https://www.diraq.com/research-papers/spin-qubit-control-with-a-milli-kelvin-cmos-chip (14/29), chunk 1/5
+[00:56:08 +10m 48s | diraq] Extracting: https://www.diraq.com/research-papers/spin-qubit-control-with-a-milli-kelvin-cmos-chip (14/29), chunk 2/5
+[00:56:16 +10m 54s | diraq] Repaired malformed JSON.
+[00:56:16 +10m 54s | diraq] Extracting: https://www.diraq.com/research-papers/spin-qubit-control-with-a-milli-kelvin-cmos-chip (14/29), chunk 3/5
+[00:56:22 +11m 0s | diraq] Repaired malformed JSON.
+[00:56:22 +11m 0s | diraq] Extracting: https://www.diraq.com/research-papers/spin-qubit-control-with-a-milli-kelvin-cmos-chip (14/29), chunk 4/5
+[00:56:29 +11m 7s | diraq] Repaired malformed JSON.
+[00:56:29 +11m 7s | diraq] Extracting: https://www.diraq.com/research-papers/spin-qubit-control-with-a-milli-kelvin-cmos-chip (14/29), chunk 5/5
+[00:56:34 +11m 12s | diraq] Repaired malformed JSON.
+[00:56:34 +11m 12s | diraq] Reading page (15/29): https://www.diraq.com/technology
+[00:56:34 +11m 12s | diraq] Extracting: https://www.diraq.com/technology (15/29), chunk 1/5
+[00:56:38 +11m 16s | diraq] Extracting: https://www.diraq.com/technology (15/29), chunk 2/5
+[00:56:46 +11m 21s | diraq] Extracting: https://www.diraq.com/technology (15/29), chunk 3/5
+[00:56:49 +11m 25s | diraq] Extracting: https://www.diraq.com/technology (15/29), chunk 4/5
+[00:56:54 +11m 29s | diraq] Extracting: https://www.diraq.com/technology (15/29), chunk 5/5
+[00:57:01 +11m 37s | diraq] Repaired malformed JSON.
+[00:57:01 +11m 37s | diraq] Reading page (16/29): https://www.diraq.com/research-papers
+[00:57:01 +11m 37s | diraq] Extracting: https://www.diraq.com/research-papers (16/29), chunk 1/5
+[00:57:06 +11m 41s | diraq] Extracting: https://www.diraq.com/research-papers (16/29), chunk 2/5
+[00:57:12 +11m 48s | diraq] Extracting: https://www.diraq.com/research-papers (16/29), chunk 3/5
+[00:57:22 +11m 55s | diraq] Repaired malformed JSON.
+[00:57:22 +11m 55s | diraq] Extracting: https://www.diraq.com/research-papers (16/29), chunk 4/5
+[00:57:30 +12m 3s | diraq] Repaired malformed JSON.
+[00:57:30 +12m 3s | diraq] Extracting: https://www.diraq.com/research-papers (16/29), chunk 5/5
+[00:57:39 +12m 12s | diraq] Repaired malformed JSON.
+[00:57:39 +12m 12s | diraq] Reading page (17/29): https://www.diraq.com/research-papers/bell-inequality-violation-in-gate-defined-quantum-dots
+[00:57:39 +12m 12s | diraq] Extracting: https://www.diraq.com/research-papers/bell-inequality-violation-in-gate-defined-quantum-dots (17/29), chunk 1/4
+[00:57:44 +12m 17s | diraq] Extracting: https://www.diraq.com/research-papers/bell-inequality-violation-in-gate-defined-quantum-dots (17/29), chunk 2/4
+[00:57:51 +12m 24s | diraq] Repaired malformed JSON.
+[00:57:51 +12m 24s | diraq] Extracting: https://www.diraq.com/research-papers/bell-inequality-violation-in-gate-defined-quantum-dots (17/29), chunk 3/4
+[00:57:57 +12m 30s | diraq] Repaired malformed JSON.
+[00:57:57 +12m 30s | diraq] Extracting: https://www.diraq.com/research-papers/bell-inequality-violation-in-gate-defined-quantum-dots (17/29), chunk 4/4
+[00:58:01 +12m 34s | diraq] Reading page (18/29): https://www.diraq.com/research-papers/category/NATURE
+[00:58:01 +12m 34s | diraq] Extracting: https://www.diraq.com/research-papers/category/NATURE (18/29), chunk 1/6
+[00:58:05 +12m 39s | diraq] Extracting: https://www.diraq.com/research-papers/category/NATURE (18/29), chunk 2/6
+[00:58:14 +12m 44s | diraq] Extracting: https://www.diraq.com/research-papers/category/NATURE (18/29), chunk 3/6
+[00:58:20 +12m 51s | diraq] Extracting: https://www.diraq.com/research-papers/category/NATURE (18/29), chunk 4/6
+[00:58:27 +12m 57s | diraq] Repaired malformed JSON.
+[00:58:27 +12m 57s | diraq] Extracting: https://www.diraq.com/research-papers/category/NATURE (18/29), chunk 5/6
+[00:58:33 +13m 3s | diraq] Repaired malformed JSON.
+[00:58:33 +13m 3s | diraq] Extracting: https://www.diraq.com/research-papers/category/NATURE (18/29), chunk 6/6
+[00:58:39 +13m 9s | diraq] Repaired malformed JSON.
+[00:58:39 +13m 9s | diraq] Reading page (19/29): https://www.diraq.com/publications
+[00:58:39 +13m 9s | diraq] Extracting: https://www.diraq.com/publications (19/29), chunk 1/9
+[00:58:42 +13m 12s | diraq] Extracting: https://www.diraq.com/publications (19/29), chunk 2/9
+[00:58:50 +13m 18s | diraq] Extracting: https://www.diraq.com/publications (19/29), chunk 3/9
+[00:58:56 +13m 25s | diraq] Repaired malformed JSON.
+[00:58:56 +13m 25s | diraq] Extracting: https://www.diraq.com/publications (19/29), chunk 4/9
+[00:59:05 +13m 34s | diraq] Repaired malformed JSON.
+[00:59:05 +13m 34s | diraq] Extracting: https://www.diraq.com/publications (19/29), chunk 5/9
+[00:59:13 +13m 41s | diraq] Repaired malformed JSON.
+[00:59:13 +13m 41s | diraq] Extracting: https://www.diraq.com/publications (19/29), chunk 6/9
+[00:59:24 +13m 50s | diraq] Repaired malformed JSON.
+[00:59:24 +13m 50s | diraq] Extracting: https://www.diraq.com/publications (19/29), chunk 7/9
+[00:59:32 +13m 58s | diraq] Repaired malformed JSON.
+[00:59:32 +13m 58s | diraq] Extracting: https://www.diraq.com/publications (19/29), chunk 8/9
+[00:59:40 +14m 6s | diraq] Repaired malformed JSON.
+[00:59:40 +14m 6s | diraq] Extracting: https://www.diraq.com/publications (19/29), chunk 9/9
+[00:59:47 +14m 13s | diraq] Repaired malformed JSON.
+[00:59:47 +14m 13s | diraq] Reading page (20/29): https://www.diraq.com/research-papers/industry-compatible-silicon-spin-qubit-unit-cells-exceeding-99-fidelity
+[00:59:47 +14m 13s | diraq] Extracting: https://www.diraq.com/research-papers/industry-compatible-silicon-spin-qubit-unit-cells-exceeding-99-fidelity (20/29), chunk 1/5
+[00:59:57 +14m 20s | diraq] Repaired malformed JSON.
+[00:59:57 +14m 20s | diraq] Extracting: https://www.diraq.com/research-papers/industry-compatible-silicon-spin-qubit-unit-cells-exceeding-99-fidelity (20/29), chunk 2/5
+[01:00:03 +14m 26s | diraq] Repaired malformed JSON.
+[01:00:03 +14m 26s | diraq] Extracting: https://www.diraq.com/research-papers/industry-compatible-silicon-spin-qubit-unit-cells-exceeding-99-fidelity (20/29), chunk 3/5
+[01:00:09 +14m 32s | diraq] Repaired malformed JSON.
+[01:00:09 +14m 32s | diraq] Extracting: https://www.diraq.com/research-papers/industry-compatible-silicon-spin-qubit-unit-cells-exceeding-99-fidelity (20/29), chunk 4/5
+[01:00:16 +14m 40s | diraq] Repaired malformed JSON.
+[01:00:16 +14m 40s | diraq] Extracting: https://www.diraq.com/research-papers/industry-compatible-silicon-spin-qubit-unit-cells-exceeding-99-fidelity (20/29), chunk 5/5
+[01:00:25 +14m 49s | diraq] Repaired malformed JSON.
+[01:00:25 +14m 49s | diraq] Reading page (21/29): https://diraq.com
+[01:00:25 +14m 49s | diraq] Extracting: https://diraq.com (21/29), chunk 1/7
+[01:00:30 +14m 51s | diraq] Extracting: https://diraq.com (21/29), chunk 2/7
+[01:00:34 +14m 55s | diraq] Extracting: https://diraq.com (21/29), chunk 3/7
+[01:00:41 +15m 3s | diraq] Extracting: https://diraq.com (21/29), chunk 4/7
+[01:00:46 +15m 8s | diraq] Extracting: https://diraq.com (21/29), chunk 5/7
+[01:00:52 +15m 13s | diraq] Repaired malformed JSON.
+[01:00:52 +15m 13s | diraq] Extracting: https://diraq.com (21/29), chunk 6/7
+[01:01:03 +15m 22s | diraq] Repaired malformed JSON.
+[01:01:03 +15m 22s | diraq] Extracting: https://diraq.com (21/29), chunk 7/7
+[01:01:12 +15m 31s | diraq] Repaired malformed JSON.
+[01:01:12 +15m 31s | diraq] Reading page (22/29): https://www.diraq.com/research-papers/a-two-qubit-logic-gate-in-silicon
+[01:01:12 +15m 31s | diraq] Extracting: https://www.diraq.com/research-papers/a-two-qubit-logic-gate-in-silicon (22/29), chunk 1/7
+[01:01:17 +15m 37s | diraq] Repaired malformed JSON.
+[01:01:17 +15m 37s | diraq] Extracting: https://www.diraq.com/research-papers/a-two-qubit-logic-gate-in-silicon (22/29), chunk 2/7
+[01:01:23 +15m 43s | diraq] Repaired malformed JSON.
+[01:01:23 +15m 43s | diraq] Extracting: https://www.diraq.com/research-papers/a-two-qubit-logic-gate-in-silicon (22/29), chunk 3/7
+[01:01:30 +15m 50s | diraq] Repaired malformed JSON.
+[01:01:30 +15m 50s | diraq] Extracting: https://www.diraq.com/research-papers/a-two-qubit-logic-gate-in-silicon (22/29), chunk 4/7
+[01:01:39 +15m 56s | diraq] Repaired malformed JSON.
+[01:01:39 +15m 56s | diraq] Extracting: https://www.diraq.com/research-papers/a-two-qubit-logic-gate-in-silicon (22/29), chunk 5/7
+[01:01:46 +16m 3s | diraq] Repaired malformed JSON.
+[01:01:46 +16m 3s | diraq] Extracting: https://www.diraq.com/research-papers/a-two-qubit-logic-gate-in-silicon (22/29), chunk 6/7
+[01:01:52 +16m 9s | diraq] Repaired malformed JSON.
+[01:01:52 +16m 9s | diraq] Extracting: https://www.diraq.com/research-papers/a-two-qubit-logic-gate-in-silicon (22/29), chunk 7/7
+[01:01:57 +16m 14s | diraq] Reading page (23/29): https://www.diraq.com/research-papers/schrdinger-cat-states-of-a-nuclear-spin-qudit-in-silicon
+[01:01:57 +16m 14s | diraq] Extracting: https://www.diraq.com/research-papers/schrdinger-cat-states-of-a-nuclear-spin-qudit-in-silicon (23/29), chunk 1/5
+[01:02:03 +16m 20s | diraq] Repaired malformed JSON.
+[01:02:03 +16m 20s | diraq] Extracting: https://www.diraq.com/research-papers/schrdinger-cat-states-of-a-nuclear-spin-qudit-in-silicon (23/29), chunk 2/5
+[01:02:12 +16m 27s | diraq] Repaired malformed JSON.
+[01:02:12 +16m 27s | diraq] Extracting: https://www.diraq.com/research-papers/schrdinger-cat-states-of-a-nuclear-spin-qudit-in-silicon (23/29), chunk 3/5
+[01:02:19 +16m 34s | diraq] Repaired malformed JSON.
+[01:02:19 +16m 34s | diraq] Extracting: https://www.diraq.com/research-papers/schrdinger-cat-states-of-a-nuclear-spin-qudit-in-silicon (23/29), chunk 4/5
+[01:02:28 +16m 43s | diraq] Repaired malformed JSON.
+[01:02:28 +16m 43s | diraq] Extracting: https://www.diraq.com/research-papers/schrdinger-cat-states-of-a-nuclear-spin-qudit-in-silicon (23/29), chunk 5/5
+[01:02:34 +16m 50s | diraq] Repaired malformed JSON.
+[01:02:35 +16m 50s | diraq] Reading page (24/29): https://www.diraq.com/research-papers/assessment-of-the-errors-of-high-fidelity-two-qubit-gates-in-silicon-quantum-dots
+[01:02:35 +16m 50s | diraq] Extracting: https://www.diraq.com/research-papers/assessment-of-the-errors-of-high-fidelity-two-qubit-gates-in-silicon-quantum-dots (24/29), chunk 1/4
+[01:02:42 +16m 57s | diraq] Repaired malformed JSON.
+[01:02:42 +16m 57s | diraq] Extracting: https://www.diraq.com/research-papers/assessment-of-the-errors-of-high-fidelity-two-qubit-gates-in-silicon-quantum-dots (24/29), chunk 2/4
+[01:02:52 +17m 5s | diraq] Repaired malformed JSON.
+[01:02:52 +17m 5s | diraq] Extracting: https://www.diraq.com/research-papers/assessment-of-the-errors-of-high-fidelity-two-qubit-gates-in-silicon-quantum-dots (24/29), chunk 3/4
+[01:02:59 +17m 12s | diraq] Repaired malformed JSON.
+[01:02:59 +17m 12s | diraq] Extracting: https://www.diraq.com/research-papers/assessment-of-the-errors-of-high-fidelity-two-qubit-gates-in-silicon-quantum-dots (24/29), chunk 4/4
+[01:03:05 +17m 18s | diraq] Repaired malformed JSON.
+[01:03:05 +17m 18s | diraq] Reading page (25/29): https://www.diraq.com/research-papers/on-demand-electrical-control-of-spin-qubits-7j9hw-3mgma
+[01:03:05 +17m 18s | diraq] Extracting: https://www.diraq.com/research-papers/on-demand-electrical-control-of-spin-qubits-7j9hw-3mgma (25/29), chunk 1/6
+[01:03:12 +17m 25s | diraq] Extracting: https://www.diraq.com/research-papers/on-demand-electrical-control-of-spin-qubits-7j9hw-3mgma (25/29), chunk 2/6
+[01:03:22 +17m 33s | diraq] Repaired malformed JSON.
+[01:03:22 +17m 33s | diraq] Extracting: https://www.diraq.com/research-papers/on-demand-electrical-control-of-spin-qubits-7j9hw-3mgma (25/29), chunk 3/6
+[01:03:29 +17m 40s | diraq] Repaired malformed JSON.
+[01:03:29 +17m 40s | diraq] Extracting: https://www.diraq.com/research-papers/on-demand-electrical-control-of-spin-qubits-7j9hw-3mgma (25/29), chunk 4/6
+[01:03:33 +17m 44s | diraq] Extracting: https://www.diraq.com/research-papers/on-demand-electrical-control-of-spin-qubits-7j9hw-3mgma (25/29), chunk 5/6
+[01:03:38 +17m 49s | diraq] Extracting: https://www.diraq.com/research-papers/on-demand-electrical-control-of-spin-qubits-7j9hw-3mgma (25/29), chunk 6/6
+[01:03:45 +17m 55s | diraq] Repaired malformed JSON.
+[01:03:45 +17m 55s | diraq] Reading page (26/29): https://www.diraq.com/research-papers/category/NATURE+COMMUNICATIONS
+[01:03:45 +17m 55s | diraq] Extracting: https://www.diraq.com/research-papers/category/NATURE+COMMUNICATIONS (26/29), chunk 1/10
+[01:03:55 +18m 3s | diraq] Repaired malformed JSON.
+[01:03:55 +18m 3s | diraq] Extracting: https://www.diraq.com/research-papers/category/NATURE+COMMUNICATIONS (26/29), chunk 2/10
+[01:04:04 +18m 13s | diraq] Repaired malformed JSON.
+[01:04:04 +18m 13s | diraq] Extracting: https://www.diraq.com/research-papers/category/NATURE+COMMUNICATIONS (26/29), chunk 3/10
+[01:04:13 +18m 22s | diraq] Repaired malformed JSON.
+[01:04:13 +18m 22s | diraq] Extracting: https://www.diraq.com/research-papers/category/NATURE+COMMUNICATIONS (26/29), chunk 4/10
+[01:04:17 +18m 25s | diraq] Extracting: https://www.diraq.com/research-papers/category/NATURE+COMMUNICATIONS (26/29), chunk 5/10
+[01:04:23 +18m 31s | diraq] Extracting: https://www.diraq.com/research-papers/category/NATURE+COMMUNICATIONS (26/29), chunk 6/10
+[01:04:35 +18m 41s | diraq] Repaired malformed JSON.
+[01:04:35 +18m 41s | diraq] Extracting: https://www.diraq.com/research-papers/category/NATURE+COMMUNICATIONS (26/29), chunk 7/10
+[01:04:45 +18m 51s | diraq] Repaired malformed JSON.
+[01:04:45 +18m 51s | diraq] Extracting: https://www.diraq.com/research-papers/category/NATURE+COMMUNICATIONS (26/29), chunk 8/10
+[01:04:51 +18m 57s | diraq] Repaired malformed JSON.
+[01:04:51 +18m 57s | diraq] Extracting: https://www.diraq.com/research-papers/category/NATURE+COMMUNICATIONS (26/29), chunk 9/10
+[01:04:59 +19m 5s | diraq] Repaired malformed JSON.
+[01:04:59 +19m 5s | diraq] Extracting: https://www.diraq.com/research-papers/category/NATURE+COMMUNICATIONS (26/29), chunk 10/10
+[01:05:08 +19m 12s | diraq] Repaired malformed JSON.
+[01:05:08 +19m 12s | diraq] Reading page (27/29): https://www.diraq.com/research-papers/category/NATURE+PHYSICS
+[01:05:08 +19m 12s | diraq] Extracting: https://www.diraq.com/research-papers/category/NATURE+PHYSICS (27/29), chunk 1/5
+[01:05:13 +19m 17s | diraq] Extracting: https://www.diraq.com/research-papers/category/NATURE+PHYSICS (27/29), chunk 2/5
+[01:05:21 +19m 25s | diraq] Extracting: https://www.diraq.com/research-papers/category/NATURE+PHYSICS (27/29), chunk 3/5
+[01:05:27 +19m 31s | diraq] Extracting: https://www.diraq.com/research-papers/category/NATURE+PHYSICS (27/29), chunk 4/5
+[01:05:35 +19m 39s | diraq] Extracting: https://www.diraq.com/research-papers/category/NATURE+PHYSICS (27/29), chunk 5/5
+[01:05:46 +19m 48s | diraq] Repaired malformed JSON.
+[01:05:46 +19m 48s | diraq] Reading page (28/29): https://www.diraq.com
+[01:05:46 +19m 48s | diraq] Extracting: https://www.diraq.com (28/29), chunk 1/7
+[01:05:52 +19m 53s | diraq] Extracting: https://www.diraq.com (28/29), chunk 2/7
+[01:05:55 +19m 57s | diraq] Extracting: https://www.diraq.com (28/29), chunk 3/7
+[01:06:02 +20m 4s | diraq] Extracting: https://www.diraq.com (28/29), chunk 4/7
+[01:06:09 +20m 11s | diraq] Extracting: https://www.diraq.com (28/29), chunk 5/7
+[01:06:18 +20m 17s | diraq] Repaired malformed JSON.
+[01:06:18 +20m 17s | diraq] Extracting: https://www.diraq.com (28/29), chunk 6/7
+[01:06:27 +20m 26s | diraq] Repaired malformed JSON.
+[01:06:27 +20m 26s | diraq] Extracting: https://www.diraq.com (28/29), chunk 7/7
+[01:06:35 +20m 35s | diraq] Repaired malformed JSON.
+[01:06:35 +20m 35s | diraq] Reading page (29/29): https://www.diraq.com/research-papers/high-fidelity-spin-qubit-operation-and-algorithmic-initialization-above-1-k
+[01:06:35 +20m 35s | diraq] Extracting: https://www.diraq.com/research-papers/high-fidelity-spin-qubit-operation-and-algorithmic-initialization-above-1-k (29/29), chunk 1/6
+[01:06:41 +20m 41s | diraq] Extracting: https://www.diraq.com/research-papers/high-fidelity-spin-qubit-operation-and-algorithmic-initialization-above-1-k (29/29), chunk 2/6
+[01:06:49 +20m 48s | diraq] Repaired malformed JSON.
+[01:06:49 +20m 48s | diraq] Extracting: https://www.diraq.com/research-papers/high-fidelity-spin-qubit-operation-and-algorithmic-initialization-above-1-k (29/29), chunk 3/6
+[01:06:54 +20m 54s | diraq] Repaired malformed JSON.
+[01:06:54 +20m 54s | diraq] Extracting: https://www.diraq.com/research-papers/high-fidelity-spin-qubit-operation-and-algorithmic-initialization-above-1-k (29/29), chunk 4/6
+[01:07:05 +21m 1s | diraq] Repaired malformed JSON.
+[01:07:05 +21m 1s | diraq] Extracting: https://www.diraq.com/research-papers/high-fidelity-spin-qubit-operation-and-algorithmic-initialization-above-1-k (29/29), chunk 5/6
+[01:07:10 +21m 7s | diraq] Repaired malformed JSON.
+[01:07:10 +21m 7s | diraq] Extracting: https://www.diraq.com/research-papers/high-fidelity-spin-qubit-operation-and-algorithmic-initialization-above-1-k (29/29), chunk 6/6
+[01:07:18 +21m 14s | diraq] Repaired malformed JSON.
+[01:07:18 +21m 14s | diraq] Saved 1_actor_results.json with 354 extracted records
+
+[01:07:18 +21m 14s | diraq] === 2 clean actors ===
+[01:07:19 +21m 15s | diraq] Loaded 354 extracted records
+[01:07:19 +21m 15s | diraq] Saved 2_actor_nodes.json with 75 canonical actor nodes
+
+[01:07:19 +21m 15s | diraq] === 3 interaction extraction ===
+[01:07:19 +21m 15s | diraq] Extracting interactions: https://www.diraq.com/research-papers/precision-high-speed-quantum-logic-with-holes-on-a-natural-silicon-foundry-platform (1/29), chunk 1/4
+[01:07:24 +21m 20s | diraq] Extracting interactions: https://www.diraq.com/research-papers/precision-high-speed-quantum-logic-with-holes-on-a-natural-silicon-foundry-platform (1/29), chunk 2/4
+[01:07:57 +21m 51s | diraq] Extracting interactions: https://www.diraq.com/research-papers/precision-high-speed-quantum-logic-with-holes-on-a-natural-silicon-foundry-platform (1/29), chunk 3/4
+[01:08:27 +22m 19s | diraq] Extracting interactions: https://www.diraq.com/research-papers/precision-high-speed-quantum-logic-with-holes-on-a-natural-silicon-foundry-platform (1/29), chunk 4/4
+[01:08:28 +22m 20s | diraq] Extracting interactions: https://www.diraq.com/research-papers/scalable-quantum-current-source-on-commercial-22-nm-cmos-process-technology (2/29), chunk 1/5
+[01:08:32 +22m 23s | diraq] Extracting interactions: https://www.diraq.com/research-papers/scalable-quantum-current-source-on-commercial-22-nm-cmos-process-technology (2/29), chunk 2/5
+[01:09:05 +22m 55s | diraq] Extracting interactions: https://www.diraq.com/research-papers/scalable-quantum-current-source-on-commercial-22-nm-cmos-process-technology (2/29), chunk 3/5
+[01:09:43 +23m 30s | diraq] Extracting interactions: https://www.diraq.com/research-papers/scalable-quantum-current-source-on-commercial-22-nm-cmos-process-technology (2/29), chunk 4/5
+[01:09:46 +23m 33s | diraq] Extracting interactions: https://www.diraq.com/research-papers/scalable-quantum-current-source-on-commercial-22-nm-cmos-process-technology (2/29), chunk 5/5
+[01:09:47 +23m 34s | diraq] Extracting interactions: https://www.diraq.com/research-papers/tag/QUBIT+CONTROL (3/29), chunk 1/11
+[01:09:50 +23m 36s | diraq] Extracting interactions: https://www.diraq.com/research-papers/tag/QUBIT+CONTROL (3/29), chunk 2/11
+[01:09:51 +23m 38s | diraq] Extracting interactions: https://www.diraq.com/research-papers/tag/QUBIT+CONTROL (3/29), chunk 3/11
+[01:09:52 +23m 39s | diraq] Extracting interactions: https://www.diraq.com/research-papers/tag/QUBIT+CONTROL (3/29), chunk 7/11
+[01:10:01 +23m 45s | diraq] Extracting interactions: https://www.diraq.com/research-papers/tag/QUBIT+CONTROL (3/29), chunk 8/11
+[01:10:15 +23m 59s | diraq] Extracting interactions: https://www.diraq.com/research-papers/tag/QUBIT+CONTROL (3/29), chunk 9/11
+[01:10:36 +24m 17s | diraq] Extracting interactions: https://www.diraq.com/research-papers/tag/QUBIT+CONTROL (3/29), chunk 10/11
+[01:10:47 +24m 28s | diraq] Extracting interactions: https://www.diraq.com/research-papers/tag/QUBIT+CONTROL (3/29), chunk 11/11
+[01:10:51 +24m 33s | diraq] Extracting interactions: https://www.diraq.com/research-papers/tomography-of-entangling-two-qubit-logic-operations-in-exchange-coupled-donor-electron-spin-qubits (4/29), chunk 1/4
+[01:10:55 +24m 37s | diraq] Extracting interactions: https://www.diraq.com/research-papers/tomography-of-entangling-two-qubit-logic-operations-in-exchange-coupled-donor-electron-spin-qubits (4/29), chunk 2/4
+[01:11:26 +25m 5s | diraq] Extracting interactions: https://www.diraq.com/research-papers/tomography-of-entangling-two-qubit-logic-operations-in-exchange-coupled-donor-electron-spin-qubits (4/29), chunk 3/4
+[01:11:35 +25m 14s | diraq] Extracting interactions: https://www.diraq.com/research-papers/tomography-of-entangling-two-qubit-logic-operations-in-exchange-coupled-donor-electron-spin-qubits (4/29), chunk 4/4
+[01:11:36 +25m 15s | diraq] Extracting interactions: https://www.diraq.com/research-papers/tag/INDUSTRY+FIRST (5/29), chunk 1/9
+[01:11:38 +25m 17s | diraq] Extracting interactions: https://www.diraq.com/research-papers/tag/INDUSTRY+FIRST (5/29), chunk 2/9
+[01:11:42 +25m 18s | diraq] Extracting interactions: https://www.diraq.com/research-papers/tag/INDUSTRY+FIRST (5/29), chunk 3/9
+[01:11:46 +25m 22s | diraq] Extracting interactions: https://www.diraq.com/research-papers/tag/INDUSTRY+FIRST (5/29), chunk 5/9
+[01:11:49 +25m 25s | diraq] Extracting interactions: https://www.diraq.com/research-papers/tag/INDUSTRY+FIRST (5/29), chunk 6/9
+[01:12:02 +25m 38s | diraq] Extracting interactions: https://www.diraq.com/research-papers/tag/INDUSTRY+FIRST (5/29), chunk 7/9
+[01:12:13 +25m 49s | diraq] Extracting interactions: https://www.diraq.com/research-papers/tag/INDUSTRY+FIRST (5/29), chunk 8/9
+[01:12:27 +26m 0s | diraq] Extracting interactions: https://www.diraq.com/research-papers/tag/INDUSTRY+FIRST (5/29), chunk 9/9
+[01:12:38 +26m 11s | diraq] Extracting interactions: https://www.diraq.com/contact (6/29), chunk 2/3
+[01:12:46 +26m 19s | diraq] Extracting interactions: https://www.diraq.com/contact (6/29), chunk 3/3
+[01:12:47 +26m 20s | diraq] Extracting interactions: https://www.diraq.com/research-papers/navigating-the-16-dimensional-hilbert-space-of-a-high-spin-donor-qudit-with-electric-and-magnetic-fields (7/29), chunk 1/4
+[01:12:53 +26m 23s | diraq] Extracting interactions: https://www.diraq.com/research-papers/navigating-the-16-dimensional-hilbert-space-of-a-high-spin-donor-qudit-with-electric-and-magnetic-fields (7/29), chunk 2/4
+[01:13:14 +26m 44s | diraq] Extracting interactions: https://www.diraq.com/research-papers/navigating-the-16-dimensional-hilbert-space-of-a-high-spin-donor-qudit-with-electric-and-magnetic-fields (7/29), chunk 3/4
+[01:13:29 +26m 56s | diraq] Extracting interactions: https://www.diraq.com/research-papers/navigating-the-16-dimensional-hilbert-space-of-a-high-spin-donor-qudit-with-electric-and-magnetic-fields (7/29), chunk 4/4
+[01:13:38 +27m 5s | diraq] Extracting interactions: https://www.diraq.com/research-papers/bounds-to-electron-spin-qubit-variability-for-scalable-cmos-architectures (8/29), chunk 1/4
+[01:13:41 +27m 8s | diraq] Extracting interactions: https://www.diraq.com/research-papers/bounds-to-electron-spin-qubit-variability-for-scalable-cmos-architectures (8/29), chunk 2/4
+[01:14:05 +27m 29s | diraq] Extracting interactions: https://www.diraq.com/research-papers/bounds-to-electron-spin-qubit-variability-for-scalable-cmos-architectures (8/29), chunk 3/4
+[01:14:38 +27m 59s | diraq] Extracting interactions: https://www.diraq.com/research-papers/bounds-to-electron-spin-qubit-variability-for-scalable-cmos-architectures (8/29), chunk 4/4
+[01:14:40 +28m 1s | diraq] Extracting interactions: https://www.diraq.com/research-papers/a-singlet-triplet-hole-spin-qubit-in-mos-silicon (9/29), chunk 1/4
+[01:14:48 +28m 8s | diraq] Extracting interactions: https://www.diraq.com/research-papers/a-singlet-triplet-hole-spin-qubit-in-mos-silicon (9/29), chunk 2/4
+[01:15:21 +28m 38s | diraq] Extracting interactions: https://www.diraq.com/research-papers/a-singlet-triplet-hole-spin-qubit-in-mos-silicon (9/29), chunk 3/4
+[01:15:55 +29m 9s | diraq] Extracting interactions: https://www.diraq.com/research-papers/a-singlet-triplet-hole-spin-qubit-in-mos-silicon (9/29), chunk 4/4
+[01:15:58 +29m 12s | diraq] Extracting interactions: https://www.diraq.com/newsdesk/one-dollar-per-qubit-the-number-that-changes-everything (10/29), chunk 1/9
+[01:16:01 +29m 15s | diraq] Extracting interactions: https://www.diraq.com/newsdesk/one-dollar-per-qubit-the-number-that-changes-everything (10/29), chunk 2/9
+[01:16:06 +29m 20s | diraq] Extracting interactions: https://www.diraq.com/newsdesk/one-dollar-per-qubit-the-number-that-changes-everything (10/29), chunk 3/9
+[01:16:10 +29m 24s | diraq] Extracting interactions: https://www.diraq.com/newsdesk/one-dollar-per-qubit-the-number-that-changes-everything (10/29), chunk 4/9
+[01:16:14 +29m 28s | diraq] Extracting interactions: https://www.diraq.com/newsdesk/one-dollar-per-qubit-the-number-that-changes-everything (10/29), chunk 9/9
+[01:16:20 +29m 34s | diraq] Extracting interactions: https://www.diraq.com/team (11/29), chunk 2/14
+[01:16:30 +29m 41s | diraq] Extracting interactions: https://www.diraq.com/team (11/29), chunk 3/14
+[01:16:35 +29m 47s | diraq] Extracting interactions: https://www.diraq.com/team (11/29), chunk 4/14
+[01:16:41 +29m 52s | diraq] Extracting interactions: https://www.diraq.com/team (11/29), chunk 5/14
+[01:16:49 +30m 0s | diraq] Extracting interactions: https://www.diraq.com/team (11/29), chunk 6/14
+[01:16:53 +30m 4s | diraq] Extracting interactions: https://www.diraq.com/team (11/29), chunk 7/14
+[01:17:02 +30m 10s | diraq] Extracting interactions: https://www.diraq.com/team (11/29), chunk 8/14
+[01:17:09 +30m 17s | diraq] Extracting interactions: https://www.diraq.com/team (11/29), chunk 9/14
+[01:17:13 +30m 21s | diraq] Extracting interactions: https://www.diraq.com/team (11/29), chunk 10/14
+[01:17:23 +30m 31s | diraq] Extracting interactions: https://www.diraq.com/team (11/29), chunk 11/14
+[01:17:32 +30m 40s | diraq] Extracting interactions: https://www.diraq.com/team (11/29), chunk 12/14
+[01:17:44 +30m 50s | diraq] Extracting interactions: https://www.diraq.com/team (11/29), chunk 13/14
+[01:17:52 +30m 57s | diraq] Extracting interactions: https://www.diraq.com/team (11/29), chunk 14/14
+[01:17:55 +31m 1s | diraq] Extracting interactions: https://www.diraq.com/research-papers/entangling-gates-on-degenerate-spin-qubits-dressed-by-a-global-field (12/29), chunk 1/4
+[01:17:59 +31m 5s | diraq] Extracting interactions: https://www.diraq.com/research-papers/entangling-gates-on-degenerate-spin-qubits-dressed-by-a-global-field (12/29), chunk 2/4
+[01:18:27 +31m 29s | diraq] Extracting interactions: https://www.diraq.com/research-papers/entangling-gates-on-degenerate-spin-qubits-dressed-by-a-global-field (12/29), chunk 3/4
+[01:18:58 +31m 57s | diraq] Extracting interactions: https://www.diraq.com/research-papers/entangling-gates-on-degenerate-spin-qubits-dressed-by-a-global-field (12/29), chunk 4/4
+[01:18:59 +31m 59s | diraq] Extracting interactions: https://www.diraq.com/newsdesk (13/29), chunk 3/15
+[01:19:03 +32m 3s | diraq] Extracting interactions: https://www.diraq.com/newsdesk (13/29), chunk 4/15
+[01:19:07 +32m 7s | diraq] Extracting interactions: https://www.diraq.com/newsdesk (13/29), chunk 5/15
+[01:19:11 +32m 11s | diraq] Extracting interactions: https://www.diraq.com/newsdesk (13/29), chunk 6/15
+[01:19:15 +32m 15s | diraq] Extracting interactions: https://www.diraq.com/newsdesk (13/29), chunk 7/15
+[01:19:21 +32m 21s | diraq] Extracting interactions: https://www.diraq.com/newsdesk (13/29), chunk 8/15
+[01:19:31 +32m 30s | diraq] Extracting interactions: https://www.diraq.com/newsdesk (13/29), chunk 9/15
+[01:19:41 +32m 38s | diraq] Extracting interactions: https://www.diraq.com/newsdesk (13/29), chunk 10/15
+[01:19:50 +32m 47s | diraq] Extracting interactions: https://www.diraq.com/newsdesk (13/29), chunk 11/15
+[01:19:56 +32m 53s | diraq] Extracting interactions: https://www.diraq.com/newsdesk (13/29), chunk 12/15
+[01:20:07 +33m 4s | diraq] Extracting interactions: https://www.diraq.com/newsdesk (13/29), chunk 13/15
+[01:20:14 +33m 11s | diraq] Extracting interactions: https://www.diraq.com/newsdesk (13/29), chunk 14/15
+[01:20:19 +33m 16s | diraq] Extracting interactions: https://www.diraq.com/newsdesk (13/29), chunk 15/15
+[01:20:22 +33m 19s | diraq] Extracting interactions: https://www.diraq.com/research-papers/spin-qubit-control-with-a-milli-kelvin-cmos-chip (14/29), chunk 1/5
+[01:20:27 +33m 24s | diraq] Extracting interactions: https://www.diraq.com/research-papers/spin-qubit-control-with-a-milli-kelvin-cmos-chip (14/29), chunk 2/5
+[01:21:02 +33m 57s | diraq] Extracting interactions: https://www.diraq.com/research-papers/spin-qubit-control-with-a-milli-kelvin-cmos-chip (14/29), chunk 3/5
+[01:21:35 +34m 27s | diraq] Extracting interactions: https://www.diraq.com/research-papers/spin-qubit-control-with-a-milli-kelvin-cmos-chip (14/29), chunk 4/5
+[01:21:36 +34m 29s | diraq] Extracting interactions: https://www.diraq.com/research-papers/spin-qubit-control-with-a-milli-kelvin-cmos-chip (14/29), chunk 5/5
+[01:21:39 +34m 32s | diraq] Extracting interactions: https://www.diraq.com/technology (15/29), chunk 5/5
+[01:21:41 +34m 33s | diraq] Extracting interactions: https://www.diraq.com/research-papers (16/29), chunk 1/5
+[01:21:44 +34m 36s | diraq] Extracting interactions: https://www.diraq.com/research-papers (16/29), chunk 2/5
+[01:21:45 +34m 38s | diraq] Extracting interactions: https://www.diraq.com/research-papers (16/29), chunk 3/5
+[01:21:56 +34m 47s | diraq] Extracting interactions: https://www.diraq.com/research-papers (16/29), chunk 4/5
+[01:22:04 +34m 55s | diraq] Extracting interactions: https://www.diraq.com/research-papers (16/29), chunk 5/5
+[01:22:06 +34m 56s | diraq] Extracting interactions: https://www.diraq.com/research-papers/bell-inequality-violation-in-gate-defined-quantum-dots (17/29), chunk 1/4
+[01:22:10 +35m 1s | diraq] Extracting interactions: https://www.diraq.com/research-papers/bell-inequality-violation-in-gate-defined-quantum-dots (17/29), chunk 2/4
+[01:22:28 +35m 16s | diraq] Extracting interactions: https://www.diraq.com/research-papers/bell-inequality-violation-in-gate-defined-quantum-dots (17/29), chunk 3/4
+[01:23:03 +35m 49s | diraq] Extracting interactions: https://www.diraq.com/research-papers/bell-inequality-violation-in-gate-defined-quantum-dots (17/29), chunk 4/4
+[01:23:05 +35m 51s | diraq] Extracting interactions: https://www.diraq.com/research-papers/category/NATURE (18/29), chunk 1/6
+[01:23:07 +35m 52s | diraq] Extracting interactions: https://www.diraq.com/research-papers/category/NATURE (18/29), chunk 2/6
+[01:23:09 +35m 55s | diraq] Extracting interactions: https://www.diraq.com/research-papers/category/NATURE (18/29), chunk 3/6
+[01:23:16 +36m 1s | diraq] Extracting interactions: https://www.diraq.com/research-papers/category/NATURE (18/29), chunk 4/6
+[01:23:19 +36m 5s | diraq] Extracting interactions: https://www.diraq.com/research-papers/category/NATURE (18/29), chunk 5/6
+[01:23:32 +36m 17s | diraq] Extracting interactions: https://www.diraq.com/research-papers/category/NATURE (18/29), chunk 6/6
+[01:23:40 +36m 23s | diraq] Extracting interactions: https://www.diraq.com/publications (19/29), chunk 3/9
+[01:23:41 +36m 24s | diraq] Extracting interactions: https://www.diraq.com/publications (19/29), chunk 4/9
+[01:23:43 +36m 26s | diraq] Extracting interactions: https://www.diraq.com/publications (19/29), chunk 5/9
+[01:24:00 +36m 43s | diraq] Extracting interactions: https://www.diraq.com/publications (19/29), chunk 6/9
+[01:24:01 +36m 44s | diraq] Extracting interactions: https://www.diraq.com/publications (19/29), chunk 7/9
+[01:24:06 +36m 49s | diraq] Extracting interactions: https://www.diraq.com/publications (19/29), chunk 8/9
+[01:24:10 +36m 51s | diraq] Extracting interactions: https://www.diraq.com/publications (19/29), chunk 9/9
+[01:24:13 +36m 54s | diraq] Extracting interactions: https://www.diraq.com/research-papers/industry-compatible-silicon-spin-qubit-unit-cells-exceeding-99-fidelity (20/29), chunk 1/5
+[01:24:20 +37m 0s | diraq] Extracting interactions: https://www.diraq.com/research-papers/industry-compatible-silicon-spin-qubit-unit-cells-exceeding-99-fidelity (20/29), chunk 2/5
+[01:24:35 +37m 16s | diraq] Extracting interactions: https://www.diraq.com/research-papers/industry-compatible-silicon-spin-qubit-unit-cells-exceeding-99-fidelity (20/29), chunk 3/5
+[01:25:12 +37m 50s | diraq] Extracting interactions: https://www.diraq.com/research-papers/industry-compatible-silicon-spin-qubit-unit-cells-exceeding-99-fidelity (20/29), chunk 4/5
+[01:25:45 +38m 21s | diraq] Extracting interactions: https://www.diraq.com/research-papers/industry-compatible-silicon-spin-qubit-unit-cells-exceeding-99-fidelity (20/29), chunk 5/5
+[01:25:47 +38m 23s | diraq] Extracting interactions: https://diraq.com (21/29), chunk 3/7
+[01:25:55 +38m 28s | diraq] Extracting interactions: https://diraq.com (21/29), chunk 4/7
+[01:26:09 +38m 42s | diraq] Extracting interactions: https://diraq.com (21/29), chunk 5/7
+[01:26:23 +38m 56s | diraq] Extracting interactions: https://diraq.com (21/29), chunk 6/7
+[01:26:52 +39m 23s | diraq] Extracting interactions: https://diraq.com (21/29), chunk 7/7
+[01:26:54 +39m 25s | diraq] Extracting interactions: https://www.diraq.com/research-papers/a-two-qubit-logic-gate-in-silicon (22/29), chunk 1/7
+[01:26:59 +39m 30s | diraq] Extracting interactions: https://www.diraq.com/research-papers/a-two-qubit-logic-gate-in-silicon (22/29), chunk 2/7
+[01:27:11 +39m 40s | diraq] Extracting interactions: https://www.diraq.com/research-papers/a-two-qubit-logic-gate-in-silicon (22/29), chunk 3/7
+[01:27:20 +39m 49s | diraq] Extracting interactions: https://www.diraq.com/research-papers/a-two-qubit-logic-gate-in-silicon (22/29), chunk 6/7
+[01:27:26 +39m 55s | diraq] Extracting interactions: https://www.diraq.com/research-papers/a-two-qubit-logic-gate-in-silicon (22/29), chunk 7/7
+[01:27:28 +39m 57s | diraq] Extracting interactions: https://www.diraq.com/research-papers/schrdinger-cat-states-of-a-nuclear-spin-qudit-in-silicon (23/29), chunk 1/5
+[01:27:37 +40m 4s | diraq] Extracting interactions: https://www.diraq.com/research-papers/schrdinger-cat-states-of-a-nuclear-spin-qudit-in-silicon (23/29), chunk 2/5
+[01:28:17 +40m 41s | diraq] Extracting interactions: https://www.diraq.com/research-papers/schrdinger-cat-states-of-a-nuclear-spin-qudit-in-silicon (23/29), chunk 3/5
+[01:28:22 +40m 46s | diraq] Extracting interactions: https://www.diraq.com/research-papers/schrdinger-cat-states-of-a-nuclear-spin-qudit-in-silicon (23/29), chunk 4/5
+[01:28:30 +40m 54s | diraq] Extracting interactions: https://www.diraq.com/research-papers/schrdinger-cat-states-of-a-nuclear-spin-qudit-in-silicon (23/29), chunk 5/5
+[01:28:32 +40m 56s | diraq] Extracting interactions: https://www.diraq.com/research-papers/assessment-of-the-errors-of-high-fidelity-two-qubit-gates-in-silicon-quantum-dots (24/29), chunk 1/4
+[01:28:38 +41m 2s | diraq] Extracting interactions: https://www.diraq.com/research-papers/assessment-of-the-errors-of-high-fidelity-two-qubit-gates-in-silicon-quantum-dots (24/29), chunk 2/4
+[01:29:13 +41m 35s | diraq] Extracting interactions: https://www.diraq.com/research-papers/assessment-of-the-errors-of-high-fidelity-two-qubit-gates-in-silicon-quantum-dots (24/29), chunk 3/4
+[01:29:40 +42m 2s | diraq] Extracting interactions: https://www.diraq.com/research-papers/assessment-of-the-errors-of-high-fidelity-two-qubit-gates-in-silicon-quantum-dots (24/29), chunk 4/4
+[01:29:43 +42m 5s | diraq] Extracting interactions: https://www.diraq.com/research-papers/on-demand-electrical-control-of-spin-qubits-7j9hw-3mgma (25/29), chunk 1/6
+[01:29:46 +42m 8s | diraq] Extracting interactions: https://www.diraq.com/research-papers/on-demand-electrical-control-of-spin-qubits-7j9hw-3mgma (25/29), chunk 2/6
+[01:29:56 +42m 16s | diraq] Extracting interactions: https://www.diraq.com/research-papers/on-demand-electrical-control-of-spin-qubits-7j9hw-3mgma (25/29), chunk 3/6
+[01:30:30 +42m 48s | diraq] Extracting interactions: https://www.diraq.com/research-papers/on-demand-electrical-control-of-spin-qubits-7j9hw-3mgma (25/29), chunk 5/6
+[01:30:37 +42m 54s | diraq] Extracting interactions: https://www.diraq.com/research-papers/on-demand-electrical-control-of-spin-qubits-7j9hw-3mgma (25/29), chunk 6/6
+[01:30:38 +42m 56s | diraq] Extracting interactions: https://www.diraq.com/research-papers/category/NATURE+COMMUNICATIONS (26/29), chunk 1/10
+[01:30:40 +42m 57s | diraq] Extracting interactions: https://www.diraq.com/research-papers/category/NATURE+COMMUNICATIONS (26/29), chunk 2/10
+[01:30:41 +42m 59s | diraq] Extracting interactions: https://www.diraq.com/research-papers/category/NATURE+COMMUNICATIONS (26/29), chunk 3/10
+[01:30:43 +43m 0s | diraq] Extracting interactions: https://www.diraq.com/research-papers/category/NATURE+COMMUNICATIONS (26/29), chunk 5/10
+[01:30:58 +43m 15s | diraq] Extracting interactions: https://www.diraq.com/research-papers/category/NATURE+COMMUNICATIONS (26/29), chunk 6/10
+[01:31:19 +43m 36s | diraq] Extracting interactions: https://www.diraq.com/research-papers/category/NATURE+COMMUNICATIONS (26/29), chunk 7/10
+[01:31:39 +43m 54s | diraq] Extracting interactions: https://www.diraq.com/research-papers/category/NATURE+COMMUNICATIONS (26/29), chunk 8/10
+[01:32:02 +44m 17s | diraq] Extracting interactions: https://www.diraq.com/research-papers/category/NATURE+COMMUNICATIONS (26/29), chunk 9/10
+[01:32:20 +44m 32s | diraq] Extracting interactions: https://www.diraq.com/research-papers/category/NATURE+COMMUNICATIONS (26/29), chunk 10/10
+[01:32:25 +44m 38s | diraq] Extracting interactions: https://www.diraq.com/research-papers/category/NATURE+PHYSICS (27/29), chunk 1/5
+[01:32:27 +44m 40s | diraq] Extracting interactions: https://www.diraq.com/research-papers/category/NATURE+PHYSICS (27/29), chunk 2/5
+[01:32:29 +44m 41s | diraq] Extracting interactions: https://www.diraq.com/research-papers/category/NATURE+PHYSICS (27/29), chunk 3/5
+[01:32:44 +44m 54s | diraq] Extracting interactions: https://www.diraq.com/research-papers/category/NATURE+PHYSICS (27/29), chunk 4/5
+[01:32:56 +45m 6s | diraq] Extracting interactions: https://www.diraq.com/research-papers/category/NATURE+PHYSICS (27/29), chunk 5/5
+[01:32:57 +45m 8s | diraq] Extracting interactions: https://www.diraq.com (28/29), chunk 3/7
+[01:33:02 +45m 12s | diraq] Extracting interactions: https://www.diraq.com (28/29), chunk 4/7
+[01:33:15 +45m 25s | diraq] Extracting interactions: https://www.diraq.com (28/29), chunk 5/7
+[01:33:20 +45m 28s | diraq] Extracting interactions: https://www.diraq.com (28/29), chunk 6/7
+[01:33:33 +45m 41s | diraq] Extracting interactions: https://www.diraq.com (28/29), chunk 7/7
+[01:33:36 +45m 44s | diraq] Extracting interactions: https://www.diraq.com/research-papers/high-fidelity-spin-qubit-operation-and-algorithmic-initialization-above-1-k (29/29), chunk 1/6
+[01:33:39 +45m 47s | diraq] Extracting interactions: https://www.diraq.com/research-papers/high-fidelity-spin-qubit-operation-and-algorithmic-initialization-above-1-k (29/29), chunk 2/6
+[01:33:43 +45m 51s | diraq] Extracting interactions: https://www.diraq.com/research-papers/high-fidelity-spin-qubit-operation-and-algorithmic-initialization-above-1-k (29/29), chunk 3/6
+[01:34:21 +46m 26s | diraq] Extracting interactions: https://www.diraq.com/research-papers/high-fidelity-spin-qubit-operation-and-algorithmic-initialization-above-1-k (29/29), chunk 4/6
+[01:34:55 +46m 58s | diraq] Extracting interactions: https://www.diraq.com/research-papers/high-fidelity-spin-qubit-operation-and-algorithmic-initialization-above-1-k (29/29), chunk 5/6
+[01:34:58 +47m 1s | diraq] Extracting interactions: https://www.diraq.com/research-papers/high-fidelity-spin-qubit-operation-and-algorithmic-initialization-above-1-k (29/29), chunk 6/6
+[01:34:59 +47m 2s | diraq] Saved 3_interaction_results.json with 357 extracted interactions.
+
+[01:35:00 +47m 2s | diraq] === 4 clean interactions ===
+[01:35:00 +47m 2s | diraq] Saved 4_edges.json with 2 cleaned interactions.
+
+[01:35:00 +47m 2s | diraq] === 5 helix enrichment ===
+[01:35:00 +47m 2s | diraq] Wrote 5_nodes.json (75 actors)
+[01:35:00 +47m 2s | diraq] Wrote 5_edges.json (2 interactions)
+[01:35:00 +47m 2s | diraq] Actor helix counts: {'Academia': 6, 'Civil Society': 9, 'Government': 2, 'Industry': 7, 'Intermediary': 4, 'Unknown': 47}
+[01:35:00 +47m 2s | diraq] Functional-space counts: {'Innovation': 2}
+
+[01:35:00 +47m 2s | diraq] === 6 network visualisation ===
+[01:35:03 +47m 3s | diraq] Wrote quantum_network.html
+[01:35:03 +47m 3s | diraq] Nodes: 75
+[01:35:03 +47m 3s | diraq] Edges: 1
+
+[01:35:03 +47m 3s | diraq] Done. Outputs written to: /home/lv/IDP/idpdeeptech/pipeline/site_outputs/diraq
+[01:35:03 +47m 3s | diraq] Log: /home/lv/IDP/idpdeeptech/pipeline/site_outputs/diraq/run.log
+
+========================================================================
+RUN FINISHED 2026-06-17 01:35:03  (OK)
+Started:     2026-06-17 00:44:25
+Elapsed:     47m 3s
+========================================================================

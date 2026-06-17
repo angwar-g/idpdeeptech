@@ -1,0 +1,2674 @@
+[
+  {
+    "source_actor": "Cloudflare",
+    "target_actor": "Calendly",
+    "interaction_phrase": "sets this cookie",
+    "occurrence_sentence": "Calendly sets this cookie to track users across sessions to optimize user experience by maintaining session consistency and providing personalized services",
+    "source_document": "https://alice-bob.com/engineering",
+    "page": 1
+  },
+  {
+    "source_actor": "Cloudflare",
+    "target_actor": "Google",
+    "interaction_phrase": "set by Cloudflare",
+    "occurrence_sentence": "This cookie, set by Cloudflare, is used to support Cloudflare Bot Management.",
+    "source_document": "https://alice-bob.com/engineering",
+    "page": 1
+  },
+  {
+    "source_actor": "Google",
+    "target_actor": "LinkedIn",
+    "interaction_phrase": "set this cookie",
+    "occurrence_sentence": "Linkedin set this cookie for storing visitor's consent regarding using cookies for non-essential purposes.",
+    "source_document": "https://alice-bob.com/engineering",
+    "page": 2
+  },
+  {
+    "interaction_phrase": "sets the lidc cookie",
+    "occurrence_sentence": "LinkedIn sets the lidc cookie to facilitate data center selection.",
+    "page": 3,
+    "source_actor": "WordPress",
+    "source_document": "https://alice-bob.com/engineering",
+    "target_actor": "LinkedIn"
+  },
+  {
+    "interaction_phrase": "sets this cookie",
+    "occurrence_sentence": "YouTube sets this cookie to store the user's video preferences using embedded YouTube videos.",
+    "page": 3,
+    "source_actor": "WordPress",
+    "source_document": "https://alice-bob.com/engineering",
+    "target_actor": "YouTube"
+  },
+  {
+    "interaction_phrase": "sets this cookie",
+    "occurrence_sentence": "YouTube sets this cookie to store the user's video preferences using embedded YouTube videos.",
+    "page": 3,
+    "source_actor": "LinkedIn",
+    "source_document": "https://alice-bob.com/engineering",
+    "target_actor": "YouTube"
+  },
+  {
+    "interaction_phrase": "sets this cookie",
+    "occurrence_sentence": "YouTube sets this cookie to store the last search result entry that was clicked by the user.",
+    "page": 3,
+    "source_actor": "WordPress",
+    "source_document": "https://alice-bob.com/engineering",
+    "target_actor": "YouTube"
+  },
+  {
+    "interaction_phrase": "sets this cookie",
+    "occurrence_sentence": "YouTube sets this cookie to store the last search result entry that was clicked by the user.",
+    "page": 3,
+    "source_actor": "LinkedIn",
+    "source_document": "https://alice-bob.com/engineering",
+    "target_actor": "YouTube"
+  },
+  {
+    "interaction_phrase": "is used by YouTube",
+    "occurrence_sentence": "The yt-remote-session-app cookie is used by YouTube to store user preferences and information about the interface of the embedded YouTube video player.",
+    "page": 3,
+    "source_actor": "WordPress",
+    "source_document": "https://alice-bob.com/engineering",
+    "target_actor": "YouTube"
+  },
+  {
+    "interaction_phrase": "is used by YouTube",
+    "occurrence_sentence": "The yt-remote-session-app cookie is used by YouTube to store user preferences and information about the interface of the embedded YouTube video player.",
+    "page": 3,
+    "source_actor": "LinkedIn",
+    "source_document": "https://alice-bob.com/engineering",
+    "target_actor": "YouTube"
+  },
+  {
+    "interaction_phrase": "is used to store the user's video player preferences",
+    "occurrence_sentence": "The yt-remote-cast-installed cookie is used to store the user's video player preferences using embedded YouTube video.",
+    "page": 3,
+    "source_actor": "WordPress",
+    "source_document": "https://alice-bob.com/engineering",
+    "target_actor": "YouTube"
+  },
+  {
+    "interaction_phrase": "is used to store the user's video player preferences",
+    "occurrence_sentence": "The yt-remote-cast-installed cookie is used to store the user's video player preferences using embedded YouTube video.",
+    "page": 3,
+    "source_actor": "LinkedIn",
+    "source_document": "https://alice-bob.com/engineering",
+    "target_actor": "YouTube"
+  },
+  {
+    "interaction_phrase": "sets this cookie",
+    "occurrence_sentence": "Google Analytics sets this cookie to store and count page views.",
+    "page": 4,
+    "source_actor": "YouTube",
+    "source_document": "https://alice-bob.com/engineering",
+    "target_actor": "Google Analytics"
+  },
+  {
+    "interaction_phrase": "sets this cookie",
+    "occurrence_sentence": "Google Analytics sets this cookie to calculate visitor, session and campaign data and track site usage for the site's analytics report.",
+    "page": 4,
+    "source_actor": "Google Analytics",
+    "source_document": "https://alice-bob.com/engineering",
+    "target_actor": "YouTube"
+  },
+  {
+    "source_actor": "Google Analytics",
+    "target_actor": "Google",
+    "interaction_phrase": "Google Analytics sets this cookie",
+    "occurrence_sentence": "Google Analytics sets this cookie to calculate visitor, session and campaign data and track site usage for the site's analytics report.",
+    "source_document": "https://alice-bob.com/engineering",
+    "page": 5
+  },
+  {
+    "source_actor": "Alice-Bob",
+    "target_actor": "Alice",
+    "interaction_phrase": "Alice & Bob chip",
+    "occurrence_sentence": "From Electronic Design Automation to Machine Learning, our researchers design the best Alice & Bob chip.",
+    "source_document": "https://alice-bob.com/engineering",
+    "page": 11
+  },
+  {
+    "source_actor": "Alice-Bob",
+    "target_actor": "Bob",
+    "interaction_phrase": "Alice & Bob chip",
+    "occurrence_sentence": "From Electronic Design Automation to Machine Learning, our researchers design the best Alice & Bob chip.",
+    "source_document": "https://alice-bob.com/engineering",
+    "page": 11
+  },
+  {
+    "source_actor": "Alice-Bob",
+    "target_actor": "Alice",
+    "interaction_phrase": "Alice & Bob's standards",
+    "occurrence_sentence": "Advanced lithography and precision instruments enable the refinement to Alice & Bob's standards.",
+    "source_document": "https://alice-bob.com/engineering",
+    "page": 11
+  },
+  {
+    "source_actor": "Alice-Bob",
+    "target_actor": "Bob",
+    "interaction_phrase": "Alice & Bob's standards",
+    "occurrence_sentence": "Advanced lithography and precision instruments enable the refinement to Alice & Bob's standards.",
+    "source_document": "https://alice-bob.com/engineering",
+    "page": 11
+  },
+  {
+    "source_actor": "Alice-Bob",
+    "target_actor": "Alice",
+    "interaction_phrase": "Alice & Bob chip",
+    "occurrence_sentence": "From Electronic Design Automation to Machine Learning, our researchers design the best Alice & Bob chip.",
+    "source_document": "https://alice-bob.com/engineering",
+    "page": 12
+  },
+  {
+    "source_actor": "Alice-Bob",
+    "target_actor": "Bob",
+    "interaction_phrase": "Alice & Bob chip",
+    "occurrence_sentence": "From Electronic Design Automation to Machine Learning, our researchers design the best Alice & Bob chip.",
+    "source_document": "https://alice-bob.com/engineering",
+    "page": 12
+  },
+  {
+    "source_actor": "Alice-Bob",
+    "target_actor": "Alice",
+    "interaction_phrase": "Alice & Bob's standards",
+    "occurrence_sentence": "Advanced lithography and precision instruments enable the refinement to Alice & Bob's standards.",
+    "source_document": "https://alice-bob.com/engineering",
+    "page": 12
+  },
+  {
+    "source_actor": "Alice-Bob",
+    "target_actor": "Bob",
+    "interaction_phrase": "Alice & Bob's standards",
+    "occurrence_sentence": "Advanced lithography and precision instruments enable the refinement to Alice & Bob's standards.",
+    "source_document": "https://alice-bob.com/engineering",
+    "page": 12
+  },
+  {
+    "source_actor": "Alice-Bob",
+    "target_actor": "Helium",
+    "interaction_phrase": "Helium",
+    "occurrence_sentence": "![Helium](https://alice-bob.com/wp-content/uploads/2024/02/helium-zoomed-10x-scaled.jpg)",
+    "source_document": "https://alice-bob.com/engineering",
+    "page": 12
+  },
+  {
+    "interaction_phrase": "work with many partners such as Bluefors",
+    "occurrence_sentence": "Our engineers work with many partners such as Bluefors and QM to co-develop our systems.",
+    "page": 13,
+    "source_actor": "Alice-Bob",
+    "source_document": "https://alice-bob.com/engineering",
+    "target_actor": "Bluefors"
+  },
+  {
+    "interaction_phrase": "work with many partners such as QM",
+    "occurrence_sentence": "Our engineers work with many partners such as Bluefors and QM to co-develop our systems.",
+    "page": 13,
+    "source_actor": "Alice-Bob",
+    "source_document": "https://alice-bob.com/engineering",
+    "target_actor": "QM"
+  },
+  {
+    "source_actor": "Alice-Bob",
+    "target_actor": "Bluefors",
+    "interaction_phrase": "work with many partners such as Bluefors",
+    "occurrence_sentence": "Our engineers work with many partners such as Bluefors and QM to co-develop our systems.",
+    "source_document": "https://alice-bob.com/engineering",
+    "page": 14
+  },
+  {
+    "source_actor": "Alice-Bob",
+    "target_actor": "QM",
+    "interaction_phrase": "work with many partners such as QM",
+    "occurrence_sentence": "Our engineers work with many partners such as Bluefors and QM to co-develop our systems.",
+    "source_document": "https://alice-bob.com/engineering",
+    "page": 14
+  },
+  {
+    "source_actor": "Alice",
+    "target_actor": "Alice-Bob",
+    "interaction_phrase": "ALICE & BOB",
+    "occurrence_sentence": "©2026, ALICE & BOB. ALL RIGHTS RESERVED.",
+    "source_document": "https://alice-bob.com/engineering",
+    "page": 17
+  },
+  {
+    "source_actor": "Bob",
+    "target_actor": "Alice-Bob",
+    "interaction_phrase": "ALICE & BOB",
+    "occurrence_sentence": "©2026, ALICE & BOB. ALL RIGHTS RESERVED.",
+    "source_document": "https://alice-bob.com/engineering",
+    "page": 17
+  },
+  {
+    "source_actor": "Cloudflare",
+    "target_actor": "Calendly",
+    "interaction_phrase": "sets this cookie",
+    "occurrence_sentence": "Calendly sets this cookie to track users across sessions to optimize user experience by maintaining session consistency and providing personalized services",
+    "source_document": "https://alice-bob.com/blog/not-all-logical-qubits-are-created-equal-heres-how-to-benchmark-them",
+    "page": 1
+  },
+  {
+    "source_actor": "Cloudflare",
+    "target_actor": "Google",
+    "interaction_phrase": "sets this cookie",
+    "occurrence_sentence": "Google Recaptcha service sets this cookie to identify bots to protect the website against malicious spam attacks.",
+    "source_document": "https://alice-bob.com/blog/not-all-logical-qubits-are-created-equal-heres-how-to-benchmark-them",
+    "page": 1
+  },
+  {
+    "source_actor": "Google",
+    "target_actor": "LinkedIn",
+    "interaction_phrase": "set this cookie",
+    "occurrence_sentence": "Linkedin set this cookie for storing visitor's consent regarding using cookies for non-essential purposes.",
+    "source_document": "https://alice-bob.com/blog/not-all-logical-qubits-are-created-equal-heres-how-to-benchmark-them",
+    "page": 2
+  },
+  {
+    "source_actor": "LinkedIn",
+    "target_actor": "Google",
+    "interaction_phrase": "sets the lidc cookie",
+    "occurrence_sentence": "LinkedIn sets the lidc cookie to facilitate data center selection.",
+    "source_document": "https://alice-bob.com/blog/not-all-logical-qubits-are-created-equal-heres-how-to-benchmark-them",
+    "page": 2
+  },
+  {
+    "interaction_phrase": "sets this cookie",
+    "occurrence_sentence": "Google Analytics sets this cookie to store and count page views.",
+    "page": 4,
+    "source_actor": "YouTube",
+    "source_document": "https://alice-bob.com/blog/not-all-logical-qubits-are-created-equal-heres-how-to-benchmark-them",
+    "target_actor": "Google Analytics"
+  },
+  {
+    "source_actor": "Google Analytics",
+    "target_actor": "Google",
+    "interaction_phrase": "Google Analytics sets this cookie",
+    "occurrence_sentence": "Google Analytics sets this cookie to calculate visitor, session and campaign data and track site usage for the site's analytics report.",
+    "source_document": "https://alice-bob.com/blog/not-all-logical-qubits-are-created-equal-heres-how-to-benchmark-them",
+    "page": 5
+  },
+  {
+    "source_actor": "Alice-Bob",
+    "target_actor": "Alice",
+    "interaction_phrase": "Alice & Bob",
+    "occurrence_sentence": "Alice & Bob has been building toward fault-tolerant quantum computing (FTQC) since day one.",
+    "source_document": "https://alice-bob.com/blog/not-all-logical-qubits-are-created-equal-heres-how-to-benchmark-them",
+    "page": 9
+  },
+  {
+    "source_actor": "Alice-Bob",
+    "target_actor": "Bob",
+    "interaction_phrase": "Alice & Bob",
+    "occurrence_sentence": "Alice & Bob has been building toward fault-tolerant quantum computing (FTQC) since day one.",
+    "source_document": "https://alice-bob.com/blog/not-all-logical-qubits-are-created-equal-heres-how-to-benchmark-them",
+    "page": 9
+  },
+  {
+    "source_actor": "Alice-Bob",
+    "target_actor": "Google",
+    "interaction_phrase": "we were among the first to comment and lay out a set of criteria the result satisfied",
+    "occurrence_sentence": "When Google announced its Willow chip and first logical qubit demonstration in 2024 [1], we were among the first to comment and lay out a set of criteria the result satisfied.",
+    "source_document": "https://alice-bob.com/blog/not-all-logical-qubits-are-created-equal-heres-how-to-benchmark-them",
+    "page": 10
+  },
+  {
+    "source_actor": "Alice-Bob",
+    "target_actor": "Google Quantum AI",
+    "interaction_phrase": "Google Quantum AI demonstrated this with their surface code",
+    "occurrence_sentence": "The point of error correction is that your logical qubit should be better than the hardware it is built from. The error-correction layer should not introduce more errors than it catches.",
+    "source_document": "https://alice-bob.com/blog/not-all-logical-qubits-are-created-equal-heres-how-to-benchmark-them",
+    "page": 11
+  },
+  {
+    "interaction_phrase": "an active co-developer of the infrastructure",
+    "occurrence_sentence": "This makes the HPC community not just an end user of quantum, but an active co-developer of the infrastructure that will make it work.",
+    "page": 12,
+    "source_actor": "Google Quantum AI",
+    "source_document": "https://alice-bob.com/blog/not-all-logical-qubits-are-created-equal-heres-how-to-benchmark-them",
+    "target_actor": "HPC community"
+  },
+  {
+    "source_actor": "Alice-Bob",
+    "target_actor": "NVIDIA",
+    "interaction_phrase": "Uses NVIDIA CUDA-Q",
+    "occurrence_sentence": "How Alice & Bob Uses NVIDIA CUDA-Q to Accelerate Quantum Error Correction Research",
+    "source_document": "https://alice-bob.com/blog/not-all-logical-qubits-are-created-equal-heres-how-to-benchmark-them",
+    "page": 16
+  },
+  {
+    "interaction_phrase": "ALICE & BOB",
+    "occurrence_sentence": "©2026, ALICE & BOB. ALL RIGHTS RESERVED.",
+    "page": 17,
+    "source_actor": "Alice",
+    "source_document": "https://alice-bob.com/blog/not-all-logical-qubits-are-created-equal-heres-how-to-benchmark-them",
+    "target_actor": "Alice-Bob"
+  },
+  {
+    "interaction_phrase": "ALICE & BOB",
+    "occurrence_sentence": "©2026, ALICE & BOB. ALL RIGHTS RESERVED.",
+    "page": 17,
+    "source_actor": "Bob",
+    "source_document": "https://alice-bob.com/blog/not-all-logical-qubits-are-created-equal-heres-how-to-benchmark-them",
+    "target_actor": "Alice-Bob"
+  },
+  {
+    "interaction_phrase": "sets this cookie",
+    "occurrence_sentence": "Calendly sets this cookie to track users across sessions to optimize user experience by maintaining session consistency and providing personalized services",
+    "page": 1,
+    "source_actor": "Cloudflare",
+    "source_document": "https://alice-bob.com/blog/beyond-moore-harnessing-quantum-for-the-next-era-of-hpc",
+    "target_actor": "Calendly"
+  },
+  {
+    "interaction_phrase": "set by Cloudflare",
+    "occurrence_sentence": "This cookie, set by Cloudflare, is used to support Cloudflare Bot Management.",
+    "page": 1,
+    "source_actor": "Google",
+    "source_document": "https://alice-bob.com/blog/beyond-moore-harnessing-quantum-for-the-next-era-of-hpc",
+    "target_actor": "Cloudflare"
+  },
+  {
+    "source_actor": "Google",
+    "target_actor": "LinkedIn",
+    "interaction_phrase": "set this cookie",
+    "occurrence_sentence": "Linkedin set this cookie for storing visitor's consent regarding using cookies for non-essential purposes.",
+    "source_document": "https://alice-bob.com/blog/beyond-moore-harnessing-quantum-for-the-next-era-of-hpc",
+    "page": 2
+  },
+  {
+    "source_actor": "Google",
+    "target_actor": "LinkedIn",
+    "interaction_phrase": "sets the lidc cookie",
+    "occurrence_sentence": "LinkedIn sets the lidc cookie to facilitate data center selection.",
+    "source_document": "https://alice-bob.com/blog/beyond-moore-harnessing-quantum-for-the-next-era-of-hpc",
+    "page": 2
+  },
+  {
+    "source_actor": "YouTube",
+    "target_actor": "Google Analytics",
+    "interaction_phrase": "sets this cookie",
+    "occurrence_sentence": "Google Analytics sets this cookie to store and count page views.",
+    "source_document": "https://alice-bob.com/blog/beyond-moore-harnessing-quantum-for-the-next-era-of-hpc",
+    "page": 4
+  },
+  {
+    "interaction_phrase": "together with Hyperion Research, we published a report",
+    "occurrence_sentence": "This is why, together with Hyperion Research, we published a report to explore what's next: early fault-tolerant quantum computers (eFTQC).",
+    "page": 10,
+    "source_actor": "Alice-Bob",
+    "source_document": "https://alice-bob.com/blog/beyond-moore-harnessing-quantum-for-the-next-era-of-hpc",
+    "target_actor": "Hyperion Research"
+  },
+  {
+    "interaction_phrase": "adopted new waves of technology, from vector processors to GPUs, parallel computing and TPUs, to build ever larger and more capable supercomputers",
+    "occurrence_sentence": "The HPC community has long adopted new waves of technology, from vector processors to GPUs, parallel computing and TPUs, to build ever larger and more capable supercomputers.",
+    "page": 10,
+    "source_actor": "Alice-Bob",
+    "source_document": "https://alice-bob.com/blog/beyond-moore-harnessing-quantum-for-the-next-era-of-hpc",
+    "target_actor": "HPC community"
+  },
+  {
+    "source_actor": "Alice-Bob",
+    "target_actor": "Hyperion Research",
+    "interaction_phrase": "together with Hyperion Research",
+    "occurrence_sentence": "This is why, together with Hyperion Research, we published a report to explore what's next: early fault-tolerant quantum computers (eFTQC).",
+    "source_document": "https://alice-bob.com/blog/beyond-moore-harnessing-quantum-for-the-next-era-of-hpc",
+    "page": 11
+  },
+  {
+    "source_actor": "Alice-Bob",
+    "target_actor": "HPC community",
+    "interaction_phrase": "for the HPC community",
+    "occurrence_sentence": "eFTQC QPUs will not make large-scale data analysis or near-term AI training faster, and algorithms like Grover's search, which provide only quadratic speedups, are unlikely to offset the slower operation speeds of quantum hardware. eFTQC will be a powerful tool for the HPC community, but its strengths are domain-specific and need to be well understood, which involves co-designing applications with HPC specialists, domain experts and quantum hardware vendors.",
+    "source_document": "https://alice-bob.com/blog/beyond-moore-harnessing-quantum-for-the-next-era-of-hpc",
+    "page": 11
+  },
+  {
+    "interaction_phrase": "At major U.S. DOE facilities such as Los Alamos, NERSC, and other leadership computing centers",
+    "occurrence_sentence": "At major U.S. DOE facilities such as Los Alamos, NERSC, and other leadership computing centers, these fields represent between 13 and 54 percent of current computational workloads.",
+    "page": 13,
+    "source_actor": "HPC community",
+    "source_document": "https://alice-bob.com/blog/beyond-moore-harnessing-quantum-for-the-next-era-of-hpc",
+    "target_actor": "National Energy Research Scientific Computing Center (NERSC)"
+  },
+  {
+    "interaction_phrase": "Preskill noted",
+    "occurrence_sentence": "In his _Megaquop_ paper at Q2B 2024, Preskill noted that the concrete end-user value of such machines needs to be better defined.",
+    "page": 15,
+    "source_actor": "Alice-Bob",
+    "source_document": "https://alice-bob.com/blog/beyond-moore-harnessing-quantum-for-the-next-era-of-hpc",
+    "target_actor": "Preskill"
+  },
+  {
+    "interaction_phrase": "well suited for HPC integration",
+    "occurrence_sentence": "Alice & Bob's Graphene QPU will be well suited for HPC integration.",
+    "page": 16,
+    "source_actor": "Alice-Bob",
+    "source_document": "https://alice-bob.com/blog/beyond-moore-harnessing-quantum-for-the-next-era-of-hpc",
+    "target_actor": "HPC community"
+  },
+  {
+    "interaction_phrase": "the concrete end-user value of such machines needs to be better defined",
+    "occurrence_sentence": "In his _Megaquop_ paper at Q2B 2024, Preskill noted that the concrete end-user value of such machines needs to be better defined.",
+    "page": 16,
+    "source_actor": "Preskill",
+    "source_document": "https://alice-bob.com/blog/beyond-moore-harnessing-quantum-for-the-next-era-of-hpc",
+    "target_actor": "HPC community"
+  },
+  {
+    "source_actor": "Hyperion Research",
+    "target_actor": "HPC community",
+    "interaction_phrase": "HPC User Forum from Hyperion Research",
+    "occurrence_sentence": "Industry events like the HPC User Forum from Hyperion Research and major supercomputing conferences (SC, ISC) have proven to be invaluable platforms for sharing ideas and learning from each other.",
+    "source_document": "https://alice-bob.com/blog/beyond-moore-harnessing-quantum-for-the-next-era-of-hpc",
+    "page": 17
+  },
+  {
+    "source_actor": "Alice-Bob",
+    "target_actor": "Victor Kerros",
+    "interaction_phrase": "victor.kerros@alice-bob.com",
+    "occurrence_sentence": "Our inbox is open—get in touch: victor.kerros@alice-bob.com juliette.peyronnet@alice-bob.com",
+    "source_document": "https://alice-bob.com/blog/beyond-moore-harnessing-quantum-for-the-next-era-of-hpc",
+    "page": 17
+  },
+  {
+    "source_actor": "Alice-Bob",
+    "target_actor": "Hyperion Research",
+    "interaction_phrase": "HPC User Forum from Hyperion Research",
+    "occurrence_sentence": "Industry events like the HPC User Forum from Hyperion Research and major supercomputing conferences (SC, ISC) have proven to be invaluable platforms for sharing ideas and learning from each other.",
+    "source_document": "https://alice-bob.com/blog/beyond-moore-harnessing-quantum-for-the-next-era-of-hpc",
+    "page": 18
+  },
+  {
+    "source_actor": "Alice-Bob",
+    "target_actor": "Victor Kerros",
+    "interaction_phrase": "victor.kerros@alice-bob.com",
+    "occurrence_sentence": "Our inbox is open—get in touch: victor.kerros@alice-bob.com juliette.peyronnet@alice-bob.com",
+    "source_document": "https://alice-bob.com/blog/beyond-moore-harnessing-quantum-for-the-next-era-of-hpc",
+    "page": 18
+  },
+  {
+    "source_actor": "Alice",
+    "target_actor": "Alice-Bob",
+    "interaction_phrase": "ALICE & BOB",
+    "occurrence_sentence": "©2026, ALICE & BOB. ALL RIGHTS RESERVED.",
+    "source_document": "https://alice-bob.com/blog/beyond-moore-harnessing-quantum-for-the-next-era-of-hpc",
+    "page": 21
+  },
+  {
+    "source_actor": "Bob",
+    "target_actor": "Alice-Bob",
+    "interaction_phrase": "ALICE & BOB",
+    "occurrence_sentence": "©2026, ALICE & BOB. ALL RIGHTS RESERVED.",
+    "source_document": "https://alice-bob.com/blog/beyond-moore-harnessing-quantum-for-the-next-era-of-hpc",
+    "page": 21
+  },
+  {
+    "source_actor": "Alice-Bob",
+    "target_actor": "NVIDIA",
+    "interaction_phrase": "Uses NVIDIA CUDA-Q",
+    "occurrence_sentence": "How Alice & Bob Uses NVIDIA CUDA-Q to Accelerate Quantum Error Correction Research",
+    "source_document": "https://alice-bob.com/blog",
+    "page": 5
+  },
+  {
+    "source_actor": "Alice-Bob",
+    "target_actor": "NVIDIA",
+    "interaction_phrase": "Uses NVIDIA CUDA-Q",
+    "occurrence_sentence": "How Alice & Bob Uses NVIDIA CUDA-Q to Accelerate Quantum Error Correction Research",
+    "source_document": "https://alice-bob.com/blog",
+    "page": 6
+  },
+  {
+    "source_actor": "Alice",
+    "target_actor": "Alice-Bob",
+    "interaction_phrase": "ALICE & BOB",
+    "occurrence_sentence": "©2026, ALICE & BOB. ALL RIGHTS RESERVED.",
+    "source_document": "https://alice-bob.com/blog",
+    "page": 7
+  },
+  {
+    "source_actor": "Bob",
+    "target_actor": "Alice-Bob",
+    "interaction_phrase": "ALICE & BOB",
+    "occurrence_sentence": "©2026, ALICE & BOB. ALL RIGHTS RESERVED.",
+    "source_document": "https://alice-bob.com/blog",
+    "page": 7
+  },
+  {
+    "source_actor": "Cloudflare",
+    "target_actor": "Calendly",
+    "interaction_phrase": "sets this cookie",
+    "occurrence_sentence": "Calendly sets this cookie to track users across sessions to optimize user experience by maintaining session consistency and providing personalized services",
+    "source_document": "https://alice-bob.com/blog/alice-bob-2030-roadmap-to-useful-quantum-computers",
+    "page": 1
+  },
+  {
+    "source_actor": "Google",
+    "target_actor": "Cloudflare",
+    "interaction_phrase": "sets this cookie",
+    "occurrence_sentence": "Google Recaptcha service sets this cookie to identify bots to protect the website against malicious spam attacks.",
+    "source_document": "https://alice-bob.com/blog/alice-bob-2030-roadmap-to-useful-quantum-computers",
+    "page": 1
+  },
+  {
+    "interaction_phrase": "sets this cookie",
+    "occurrence_sentence": "Google Analytics sets this cookie to store and count page views.",
+    "page": 4,
+    "source_actor": "YouTube",
+    "source_document": "https://alice-bob.com/blog/alice-bob-2030-roadmap-to-useful-quantum-computers",
+    "target_actor": "Google Analytics"
+  },
+  {
+    "interaction_phrase": "sets this cookie",
+    "occurrence_sentence": "Google Analytics sets this cookie to calculate visitor, session and campaign data and track site usage for the site's analytics report.",
+    "page": 5,
+    "source_actor": "Google Analytics",
+    "source_document": "https://alice-bob.com/blog/alice-bob-2030-roadmap-to-useful-quantum-computers",
+    "target_actor": "Google"
+  },
+  {
+    "source_actor": "Alice",
+    "target_actor": "Alice-Bob",
+    "interaction_phrase": "When Théau and I started Alice & Bob",
+    "occurrence_sentence": "When Théau and I started Alice & Bob in 2020, quantum computing was already progressing rapidly.",
+    "source_document": "https://alice-bob.com/blog/alice-bob-2030-roadmap-to-useful-quantum-computers",
+    "page": 9
+  },
+  {
+    "source_actor": "Théau",
+    "target_actor": "Alice-Bob",
+    "interaction_phrase": "When Théau and I started Alice & Bob",
+    "occurrence_sentence": "When Théau and I started Alice & Bob in 2020, quantum computing was already progressing rapidly.",
+    "source_document": "https://alice-bob.com/blog/alice-bob-2030-roadmap-to-useful-quantum-computers",
+    "page": 9
+  },
+  {
+    "source_actor": "Alice",
+    "target_actor": "Alice-Bob",
+    "interaction_phrase": "When Théau and I started Alice & Bob",
+    "occurrence_sentence": "When Théau and I started Alice & Bob in 2020, quantum computing was already progressing rapidly.",
+    "source_document": "https://alice-bob.com/blog/alice-bob-2030-roadmap-to-useful-quantum-computers",
+    "page": 10
+  },
+  {
+    "source_actor": "Théau",
+    "target_actor": "Alice-Bob",
+    "interaction_phrase": "When Théau and I started Alice & Bob",
+    "occurrence_sentence": "When Théau and I started Alice & Bob in 2020, quantum computing was already progressing rapidly.",
+    "source_document": "https://alice-bob.com/blog/alice-bob-2030-roadmap-to-useful-quantum-computers",
+    "page": 10
+  },
+  {
+    "source_actor": "Alice-Bob",
+    "target_actor": "Google Cloud",
+    "interaction_phrase": "was launched on Google Cloud",
+    "occurrence_sentence": "Boson 4 was launched on Google Cloud for everyone to access and test earlier this year, marking an important product milestone.",
+    "source_document": "https://alice-bob.com/blog/alice-bob-2030-roadmap-to-useful-quantum-computers",
+    "page": 10
+  },
+  {
+    "source_actor": "Alice-Bob",
+    "target_actor": "Google Cloud",
+    "interaction_phrase": "was launched on Google Cloud",
+    "occurrence_sentence": "On Boson 4, our single-qubit device, we set a world record for bit-flip protection , 7 minutes, far beyond the tens of millisecond of other superconducting quantum systems. [Boson 4](https://alice-bob.com/products/quantum-cloud-felis/boson-4/) was launched on Google Cloud for everyone to access and test earlier this year, marking an important product milestone.",
+    "source_document": "https://alice-bob.com/blog/alice-bob-2030-roadmap-to-useful-quantum-computers",
+    "page": 11
+  },
+  {
+    "source_actor": "Alice-Bob",
+    "target_actor": "Shor",
+    "interaction_phrase": "run Shor's algorithm",
+    "occurrence_sentence": "For example, we've shown that a quantum computer using cat qubits could run Shor's algorithm with up to [60 times fewer qubits than other approaches](https://doi.org/10.1103/PhysRevLett.131.040602), and 200 times fewer when employing [advanced error correction schemes](https://arxiv.org/abs/2401.09541).",
+    "source_document": "https://alice-bob.com/blog/alice-bob-2030-roadmap-to-useful-quantum-computers",
+    "page": 11
+  },
+  {
+    "interaction_phrase": "Alice & Bob",
+    "occurrence_sentence": "The full roadmap (available for download) goes into the specifics of the technical milestones and challenges Alice & Bob is addressing.",
+    "page": 13,
+    "source_actor": "Alice-Bob",
+    "source_document": "https://alice-bob.com/blog/alice-bob-2030-roadmap-to-useful-quantum-computers",
+    "target_actor": "Alice"
+  },
+  {
+    "interaction_phrase": "Alice & Bob",
+    "occurrence_sentence": "The full roadmap (available for download) goes into the specifics of the technical milestones and challenges Alice & Bob is addressing.",
+    "page": 13,
+    "source_actor": "Alice-Bob",
+    "source_document": "https://alice-bob.com/blog/alice-bob-2030-roadmap-to-useful-quantum-computers",
+    "target_actor": "Bob"
+  },
+  {
+    "interaction_phrase": "Alice & Bob",
+    "occurrence_sentence": "The full roadmap (available for download) goes into the specifics of the technical milestones and challenges Alice & Bob is addressing.",
+    "page": 14,
+    "source_actor": "Alice-Bob",
+    "source_document": "https://alice-bob.com/blog/alice-bob-2030-roadmap-to-useful-quantum-computers",
+    "target_actor": "Alice"
+  },
+  {
+    "interaction_phrase": "Alice & Bob",
+    "occurrence_sentence": "The full roadmap (available for download) goes into the specifics of the technical milestones and challenges Alice & Bob is addressing.",
+    "page": 14,
+    "source_actor": "Alice-Bob",
+    "source_document": "https://alice-bob.com/blog/alice-bob-2030-roadmap-to-useful-quantum-computers",
+    "target_actor": "Bob"
+  },
+  {
+    "interaction_phrase": "narrated by Christopher Bishop",
+    "occurrence_sentence": "The whitepaper is designed to help anyone, regardless of their background, grasp the most crucial aspects of quantum computing, as well as understand the cat qubit and why hardware efficiency is so critical.",
+    "page": 15,
+    "source_actor": "Christopher Bishop",
+    "source_document": "https://alice-bob.com/blog/alice-bob-2030-roadmap-to-useful-quantum-computers",
+    "target_actor": "Lescanne"
+  },
+  {
+    "source_actor": "Christopher Bishop",
+    "target_actor": "Raphaël Lescanne",
+    "interaction_phrase": "narrated by Christopher Bishop",
+    "occurrence_sentence": "To make it even more accessible, the full whitepaper is available both in a fully illustrated, printable version and as an audiobook narrated by Christopher Bishop.",
+    "source_document": "https://alice-bob.com/blog/alice-bob-2030-roadmap-to-useful-quantum-computers",
+    "page": 16
+  },
+  {
+    "source_actor": "Alice-Bob",
+    "target_actor": "NVIDIA",
+    "interaction_phrase": "Uses NVIDIA CUDA-Q",
+    "occurrence_sentence": "How Alice & Bob Uses NVIDIA CUDA-Q to Accelerate Quantum Error Correction Research",
+    "source_document": "https://alice-bob.com/blog/alice-bob-2030-roadmap-to-useful-quantum-computers",
+    "page": 18
+  },
+  {
+    "source_actor": "Alice",
+    "target_actor": "Alice-Bob",
+    "interaction_phrase": "ALICE & BOB",
+    "occurrence_sentence": "©2026, ALICE & BOB. ALL RIGHTS RESERVED.",
+    "source_document": "https://alice-bob.com/blog/alice-bob-2030-roadmap-to-useful-quantum-computers",
+    "page": 19
+  },
+  {
+    "source_actor": "Bob",
+    "target_actor": "Alice-Bob",
+    "interaction_phrase": "ALICE & BOB",
+    "occurrence_sentence": "©2026, ALICE & BOB. ALL RIGHTS RESERVED.",
+    "source_document": "https://alice-bob.com/blog/alice-bob-2030-roadmap-to-useful-quantum-computers",
+    "page": 19
+  },
+  {
+    "source_actor": "Cloudflare",
+    "target_actor": "Calendly",
+    "interaction_phrase": "sets this cookie",
+    "occurrence_sentence": "Calendly sets this cookie to track users across sessions to optimize user experience by maintaining session consistency and providing personalized services",
+    "source_document": "https://alice-bob.com/blog/this-is-not-a-product-launch",
+    "page": 1
+  },
+  {
+    "source_actor": "Cloudflare",
+    "target_actor": "Google",
+    "interaction_phrase": "sets this cookie",
+    "occurrence_sentence": "Google Recaptcha service sets this cookie to identify bots to protect the website against malicious spam attacks.",
+    "source_document": "https://alice-bob.com/blog/this-is-not-a-product-launch",
+    "page": 1
+  },
+  {
+    "source_actor": "Google",
+    "target_actor": "LinkedIn",
+    "interaction_phrase": "set this cookie",
+    "occurrence_sentence": "Linkedin set this cookie for storing visitor's consent regarding using cookies for non-essential purposes.",
+    "source_document": "https://alice-bob.com/blog/this-is-not-a-product-launch",
+    "page": 2
+  },
+  {
+    "interaction_phrase": "sets the lidc cookie",
+    "occurrence_sentence": "LinkedIn sets the lidc cookie to facilitate data center selection.",
+    "page": 3,
+    "source_actor": "WordPress",
+    "source_document": "https://alice-bob.com/blog/this-is-not-a-product-launch",
+    "target_actor": "LinkedIn"
+  },
+  {
+    "interaction_phrase": "sets this cookie",
+    "occurrence_sentence": "YouTube sets this cookie to store the user's video preferences using embedded YouTube videos.",
+    "page": 3,
+    "source_actor": "WordPress",
+    "source_document": "https://alice-bob.com/blog/this-is-not-a-product-launch",
+    "target_actor": "YouTube"
+  },
+  {
+    "interaction_phrase": "sets this cookie",
+    "occurrence_sentence": "WordPress multilingual plugin sets this cookie to store the current language/language settings.",
+    "page": 3,
+    "source_actor": "YouTube",
+    "source_document": "https://alice-bob.com/blog/this-is-not-a-product-launch",
+    "target_actor": "WordPress"
+  },
+  {
+    "interaction_phrase": "sets this cookie",
+    "occurrence_sentence": "The cookie ytidb::LAST_RESULT_ENTRY_KEY is used by YouTube to store the last search result entry that was clicked by the user.",
+    "page": 3,
+    "source_actor": "YouTube",
+    "source_document": "https://alice-bob.com/blog/this-is-not-a-product-launch",
+    "target_actor": "WordPress"
+  },
+  {
+    "interaction_phrase": "sets this cookie",
+    "occurrence_sentence": "The yt-remote-session-app cookie is used by YouTube to store user preferences and information about the interface of the embedded YouTube video player.",
+    "page": 3,
+    "source_actor": "YouTube",
+    "source_document": "https://alice-bob.com/blog/this-is-not-a-product-launch",
+    "target_actor": "WordPress"
+  },
+  {
+    "interaction_phrase": "sets this cookie",
+    "occurrence_sentence": "The yt-remote-cast-installed cookie is used to store the user's video player preferences using embedded YouTube video.",
+    "page": 3,
+    "source_actor": "YouTube",
+    "source_document": "https://alice-bob.com/blog/this-is-not-a-product-launch",
+    "target_actor": "WordPress"
+  },
+  {
+    "interaction_phrase": "sets this cookie",
+    "occurrence_sentence": "Google Analytics sets this cookie to store and count page views.",
+    "page": 4,
+    "source_actor": "YouTube",
+    "source_document": "https://alice-bob.com/blog/this-is-not-a-product-launch",
+    "target_actor": "Google Analytics"
+  },
+  {
+    "interaction_phrase": "Google Analytics sets this cookie",
+    "occurrence_sentence": "Google Analytics sets this cookie to calculate visitor, session and campaign data and track site usage for the site's analytics report.",
+    "page": 5,
+    "source_actor": "Google Analytics",
+    "source_document": "https://alice-bob.com/blog/this-is-not-a-product-launch",
+    "target_actor": "Google"
+  },
+  {
+    "interaction_phrase": "Helium is available for research partnerships. Contact us: partnership@alice-bob.com",
+    "occurrence_sentence": "If you're a national lab, an HPC center, or a research team working on quantum error correction, we'd like to talk. Helium is available for research partnerships. Contact us: partnership@alice-bob.com",
+    "page": 11,
+    "source_actor": "Alice-Bob",
+    "source_document": "https://alice-bob.com/blog/this-is-not-a-product-launch",
+    "target_actor": "Helium"
+  },
+  {
+    "source_actor": "Helium",
+    "target_actor": "Alice-Bob",
+    "interaction_phrase": "joint research, shared authorship of results, the ability to shape the error-correction program alongside us",
+    "occurrence_sentence": "We're offering co-design: joint research, shared authorship of results, the ability to shape the error-correction program alongside us.",
+    "source_document": "https://alice-bob.com/blog/this-is-not-a-product-launch",
+    "page": 12
+  },
+  {
+    "source_actor": "Helium",
+    "target_actor": "Alice-Bob",
+    "interaction_phrase": "Contact us: partnership@alice-bob.com",
+    "occurrence_sentence": "Helium is available for research partnerships. Contact us: partnership@alice-bob.com",
+    "source_document": "https://alice-bob.com/blog/this-is-not-a-product-launch",
+    "page": 12
+  },
+  {
+    "source_actor": "Alice",
+    "target_actor": "Alice-Bob",
+    "interaction_phrase": "ALICE & BOB",
+    "occurrence_sentence": "©2026, ALICE & BOB. ALL RIGHTS RESERVED.",
+    "source_document": "https://alice-bob.com/blog/this-is-not-a-product-launch",
+    "page": 14
+  },
+  {
+    "source_actor": "Bob",
+    "target_actor": "Alice-Bob",
+    "interaction_phrase": "ALICE & BOB",
+    "occurrence_sentence": "©2026, ALICE & BOB. ALL RIGHTS RESERVED.",
+    "source_document": "https://alice-bob.com/blog/this-is-not-a-product-launch",
+    "page": 14
+  },
+  {
+    "source_actor": "Cloudflare",
+    "target_actor": "Calendly",
+    "interaction_phrase": "sets this cookie",
+    "occurrence_sentence": "Calendly sets this cookie to track users across sessions to optimize user experience by maintaining session consistency and providing personalized services",
+    "source_document": "https://alice-bob.com/blog/who-are-alice-and-bob-the-story-behind-our-name",
+    "page": 1
+  },
+  {
+    "source_actor": "Cloudflare",
+    "target_actor": "Google",
+    "interaction_phrase": "set by Cloudflare",
+    "occurrence_sentence": "This cookie, set by Cloudflare, is used to support Cloudflare Bot Management.",
+    "source_document": "https://alice-bob.com/blog/who-are-alice-and-bob-the-story-behind-our-name",
+    "page": 1
+  },
+  {
+    "source_actor": "Google",
+    "target_actor": "LinkedIn",
+    "interaction_phrase": "set this cookie",
+    "occurrence_sentence": "Linkedin set this cookie for storing visitor's consent regarding using cookies for non-essential purposes.",
+    "source_document": "https://alice-bob.com/blog/who-are-alice-and-bob-the-story-behind-our-name",
+    "page": 2
+  },
+  {
+    "source_actor": "Google",
+    "target_actor": "LinkedIn",
+    "interaction_phrase": "sets the lidc cookie",
+    "occurrence_sentence": "LinkedIn sets the lidc cookie to facilitate data center selection.",
+    "source_document": "https://alice-bob.com/blog/who-are-alice-and-bob-the-story-behind-our-name",
+    "page": 2
+  },
+  {
+    "interaction_phrase": "sets this cookie",
+    "occurrence_sentence": "Google Analytics sets this cookie to store and count page views.",
+    "page": 4,
+    "source_actor": "YouTube",
+    "source_document": "https://alice-bob.com/blog/who-are-alice-and-bob-the-story-behind-our-name",
+    "target_actor": "Google Analytics"
+  },
+  {
+    "interaction_phrase": "sets this cookie",
+    "occurrence_sentence": "Google Analytics sets this cookie to calculate visitor, session and campaign data and track site usage for the site's analytics report.",
+    "page": 4,
+    "source_actor": "Google Analytics",
+    "source_document": "https://alice-bob.com/blog/who-are-alice-and-bob-the-story-behind-our-name",
+    "target_actor": "YouTube"
+  },
+  {
+    "interaction_phrase": "Shamir, Rivest, and Adleman",
+    "occurrence_sentence": "They were first popularized in a paper about RSA encryption by Shamir, Rivest, and Adleman, the main cryptographic system still used today around the world to keep communication secure.",
+    "page": 9,
+    "source_actor": "Rivest",
+    "source_document": "https://alice-bob.com/blog/who-are-alice-and-bob-the-story-behind-our-name",
+    "target_actor": "Shamir"
+  },
+  {
+    "interaction_phrase": "popularized in a paper about RSA encryption",
+    "occurrence_sentence": "They were first popularized in a paper about RSA encryption by Shamir, Rivest, and Adleman, the main cryptographic system still used today around the world to keep communication secure.",
+    "page": 10,
+    "source_actor": "Rivest",
+    "source_document": "https://alice-bob.com/blog/who-are-alice-and-bob-the-story-behind-our-name",
+    "target_actor": "Alice-Bob"
+  },
+  {
+    "interaction_phrase": "popularized in a paper about RSA encryption",
+    "occurrence_sentence": "They were first popularized in a paper about RSA encryption by Shamir, Rivest, and Adleman, the main cryptographic system still used today around the world to keep communication secure.",
+    "page": 10,
+    "source_actor": "Shamir",
+    "source_document": "https://alice-bob.com/blog/who-are-alice-and-bob-the-story-behind-our-name",
+    "target_actor": "Alice-Bob"
+  },
+  {
+    "interaction_phrase": "Alice sends Bob",
+    "occurrence_sentence": "In the first quantum key distribution protocol (BB84), Alice sends Bob single photons, each encoded in different quantum states.",
+    "page": 11,
+    "source_actor": "Alice",
+    "source_document": "https://alice-bob.com/blog/who-are-alice-and-bob-the-story-behind-our-name",
+    "target_actor": "Bob"
+  },
+  {
+    "interaction_phrase": "Alice sends Bob",
+    "occurrence_sentence": "In the first quantum key distribution protocol (BB84), Alice sends Bob single photons, each encoded in different quantum states.",
+    "page": 12,
+    "source_actor": "Alice",
+    "source_document": "https://alice-bob.com/blog/who-are-alice-and-bob-the-story-behind-our-name",
+    "target_actor": "Bob"
+  },
+  {
+    "interaction_phrase": "Alice & Bob is a reference to the rise of quantum information and algorithms like Shor's, and an ode to cryptography and computer science where it all started.",
+    "occurrence_sentence": "As you can see if you've got up to here, Alice & Bob is a reference to the rise of quantum information and algorithms like Shor's, and an ode to cryptography and computer science where it all started.",
+    "page": 12,
+    "source_actor": "Alice-Bob",
+    "source_document": "https://alice-bob.com/blog/who-are-alice-and-bob-the-story-behind-our-name",
+    "target_actor": "Alice"
+  },
+  {
+    "interaction_phrase": "Alice & Bob is a reference to the rise of quantum information and algorithms like Shor's, and an ode to cryptography and computer science where it all started.",
+    "occurrence_sentence": "As you can see if you've got up to here, Alice & Bob is a reference to the rise of quantum information and algorithms like Shor's, and an ode to cryptography and computer science where it all started.",
+    "page": 12,
+    "source_actor": "Alice-Bob",
+    "source_document": "https://alice-bob.com/blog/who-are-alice-and-bob-the-story-behind-our-name",
+    "target_actor": "Bob"
+  },
+  {
+    "interaction_phrase": "Alice & Bob",
+    "occurrence_sentence": "As you can see if you've got up to here, Alice & Bob is a reference to the rise of quantum information and algorithms like Shor's, and an ode to cryptography and computer science where it all started.",
+    "page": 13,
+    "source_actor": "Alice-Bob",
+    "source_document": "https://alice-bob.com/blog/who-are-alice-and-bob-the-story-behind-our-name",
+    "target_actor": "Alice"
+  },
+  {
+    "interaction_phrase": "Alice & Bob",
+    "occurrence_sentence": "As you can see if you've got up to here, Alice & Bob is a reference to the rise of quantum information and algorithms like Shor's, and an ode to cryptography and computer science where it all started.",
+    "page": 13,
+    "source_actor": "Alice-Bob",
+    "source_document": "https://alice-bob.com/blog/who-are-alice-and-bob-the-story-behind-our-name",
+    "target_actor": "Bob"
+  },
+  {
+    "interaction_phrase": "algorithms like Shor's",
+    "occurrence_sentence": "As you can see if you've got up to here, Alice & Bob is a reference to the rise of quantum information and algorithms like Shor's, and an ode to cryptography and computer science where it all started.",
+    "page": 13,
+    "source_actor": "Alice-Bob",
+    "source_document": "https://alice-bob.com/blog/who-are-alice-and-bob-the-story-behind-our-name",
+    "target_actor": "Shor"
+  },
+  {
+    "interaction_phrase": "Alice and Bob",
+    "occurrence_sentence": "Alice and Bob began their life as personas in a story to explain a key innovation in cryptography, since then they have become staple members of science folklore.",
+    "page": 13,
+    "source_actor": "Alice",
+    "source_document": "https://alice-bob.com/blog/who-are-alice-and-bob-the-story-behind-our-name",
+    "target_actor": "Bob"
+  },
+  {
+    "source_actor": "Alice-Bob",
+    "target_actor": "Sopra Steria",
+    "interaction_phrase": "In Conversation with Alice & Bob and Sopra Steria",
+    "occurrence_sentence": "Preparing for the Quantum Era: In Conversation with Alice & Bob and Sopra Steria",
+    "source_document": "https://alice-bob.com/blog/who-are-alice-and-bob-the-story-behind-our-name",
+    "page": 15
+  },
+  {
+    "interaction_phrase": "ALICE & BOB",
+    "occurrence_sentence": "©2026, ALICE & BOB. ALL RIGHTS RESERVED.",
+    "page": 16,
+    "source_actor": "Alice",
+    "source_document": "https://alice-bob.com/blog/who-are-alice-and-bob-the-story-behind-our-name",
+    "target_actor": "Alice-Bob"
+  },
+  {
+    "interaction_phrase": "ALICE & BOB",
+    "occurrence_sentence": "©2026, ALICE & BOB. ALL RIGHTS RESERVED.",
+    "page": 16,
+    "source_actor": "Bob",
+    "source_document": "https://alice-bob.com/blog/who-are-alice-and-bob-the-story-behind-our-name",
+    "target_actor": "Alice-Bob"
+  },
+  {
+    "source_actor": "Cloudflare",
+    "target_actor": "Calendly",
+    "interaction_phrase": "sets this cookie",
+    "occurrence_sentence": "Calendly sets this cookie to track users across sessions to optimize user experience by maintaining session consistency and providing personalized services",
+    "source_document": "https://alice-bob.com/roadmap",
+    "page": 1
+  },
+  {
+    "source_actor": "Cloudflare",
+    "target_actor": "Google",
+    "interaction_phrase": "set by Cloudflare",
+    "occurrence_sentence": "This cookie, set by Cloudflare, is used to support Cloudflare Bot Management.",
+    "source_document": "https://alice-bob.com/roadmap",
+    "page": 1
+  },
+  {
+    "interaction_phrase": "set this cookie",
+    "occurrence_sentence": "Linkedin set this cookie for storing visitor's consent regarding using cookies for non-essential purposes.",
+    "page": 2,
+    "source_actor": "Google",
+    "source_document": "https://alice-bob.com/roadmap",
+    "target_actor": "LinkedIn"
+  },
+  {
+    "interaction_phrase": "sets the lidc cookie",
+    "occurrence_sentence": "LinkedIn sets the lidc cookie to facilitate data center selection.",
+    "page": 2,
+    "source_actor": "Google",
+    "source_document": "https://alice-bob.com/roadmap",
+    "target_actor": "LinkedIn"
+  },
+  {
+    "interaction_phrase": "sets this cookie",
+    "occurrence_sentence": "Google Analytics sets this cookie to store and count page views.",
+    "page": 4,
+    "source_actor": "YouTube",
+    "source_document": "https://alice-bob.com/roadmap",
+    "target_actor": "Google Analytics"
+  },
+  {
+    "interaction_phrase": "sets this cookie",
+    "occurrence_sentence": "Google Analytics sets this cookie to calculate visitor, session and campaign data and track site usage for the site's analytics report.",
+    "page": 4,
+    "source_actor": "Google Analytics",
+    "source_document": "https://alice-bob.com/roadmap",
+    "target_actor": "YouTube"
+  },
+  {
+    "source_actor": "Alice-Bob",
+    "target_actor": "Christopher Bishop",
+    "interaction_phrase": "narrated by Christopher Bishop",
+    "occurrence_sentence": "Learn about quantum computing and the cat qubit in words and images accessible to anyone. Audiobook narrated by Christopher Bishop",
+    "source_document": "https://alice-bob.com/roadmap",
+    "page": 10
+  },
+  {
+    "source_actor": "Alice-Bob",
+    "target_actor": "Alice",
+    "interaction_phrase": "Alice & Bob's detailed plan",
+    "occurrence_sentence": "How will we make it happen? Alice & Bob's detailed plan to build a useful quantum computer by 2030.",
+    "source_document": "https://alice-bob.com/roadmap",
+    "page": 11
+  },
+  {
+    "source_actor": "Alice-Bob",
+    "target_actor": "Bob",
+    "interaction_phrase": "Alice & Bob's detailed plan",
+    "occurrence_sentence": "How will we make it happen? Alice & Bob's detailed plan to build a useful quantum computer by 2030.",
+    "source_document": "https://alice-bob.com/roadmap",
+    "page": 11
+  },
+  {
+    "interaction_phrase": "Alice & Bob",
+    "occurrence_sentence": "How will we make it happen? Alice & Bob's detailed plan to build a useful quantum computer by 2030.",
+    "page": 12,
+    "source_actor": "Alice",
+    "source_document": "https://alice-bob.com/roadmap",
+    "target_actor": "Alice-Bob"
+  },
+  {
+    "interaction_phrase": "Alice & Bob",
+    "occurrence_sentence": "How will we make it happen? Alice & Bob's detailed plan to build a useful quantum computer by 2030.",
+    "page": 12,
+    "source_actor": "Bob",
+    "source_document": "https://alice-bob.com/roadmap",
+    "target_actor": "Alice-Bob"
+  },
+  {
+    "source_actor": "Alice",
+    "target_actor": "Alice-Bob",
+    "interaction_phrase": "ALICE & BOB",
+    "occurrence_sentence": "©2026, ALICE & BOB. ALL RIGHTS RESERVED.",
+    "source_document": "https://alice-bob.com/roadmap",
+    "page": 13
+  },
+  {
+    "source_actor": "Bob",
+    "target_actor": "Alice-Bob",
+    "interaction_phrase": "ALICE & BOB",
+    "occurrence_sentence": "©2026, ALICE & BOB. ALL RIGHTS RESERVED.",
+    "source_document": "https://alice-bob.com/roadmap",
+    "page": 13
+  },
+  {
+    "source_actor": "Cloudflare",
+    "target_actor": "Calendly",
+    "interaction_phrase": "sets this cookie",
+    "occurrence_sentence": "Calendly sets this cookie to track users across sessions to optimize user experience by maintaining session consistency and providing personalized services",
+    "source_document": "https://alice-bob.com/publications",
+    "page": 1
+  },
+  {
+    "source_actor": "Google",
+    "target_actor": "Cloudflare",
+    "interaction_phrase": "sets this cookie",
+    "occurrence_sentence": "Google Recaptcha service sets this cookie to identify bots to protect the website against malicious spam attacks.",
+    "source_document": "https://alice-bob.com/publications",
+    "page": 1
+  },
+  {
+    "source_actor": "Google",
+    "target_actor": "LinkedIn",
+    "interaction_phrase": "set this cookie",
+    "occurrence_sentence": "Linkedin set this cookie for storing visitor's consent regarding using cookies for non-essential purposes.",
+    "source_document": "https://alice-bob.com/publications",
+    "page": 2
+  },
+  {
+    "source_actor": "Google",
+    "target_actor": "LinkedIn",
+    "interaction_phrase": "sets the lidc cookie",
+    "occurrence_sentence": "LinkedIn sets the lidc cookie to facilitate data center selection.",
+    "source_document": "https://alice-bob.com/publications",
+    "page": 2
+  },
+  {
+    "source_actor": "YouTube",
+    "target_actor": "Google Analytics",
+    "interaction_phrase": "sets this cookie",
+    "occurrence_sentence": "Google Analytics sets this cookie to store and count page views.",
+    "source_document": "https://alice-bob.com/publications",
+    "page": 4
+  },
+  {
+    "source_actor": "Google Analytics",
+    "target_actor": "YouTube",
+    "interaction_phrase": "sets this cookie",
+    "occurrence_sentence": "Google Analytics sets this cookie to calculate visitor, session and campaign data and track site usage for the site's analytics report.",
+    "source_document": "https://alice-bob.com/publications",
+    "page": 4
+  },
+  {
+    "source_actor": "Google Analytics",
+    "target_actor": "Google",
+    "interaction_phrase": "Google Analytics sets this cookie",
+    "occurrence_sentence": "Google Analytics sets this cookie to calculate visitor, session and campaign data and track site usage for the site's analytics report.",
+    "source_document": "https://alice-bob.com/publications",
+    "page": 5
+  },
+  {
+    "source_actor": "Ulysse Réglade",
+    "target_actor": "Alice-Bob",
+    "interaction_phrase": "Ulysse Réglade Quantum control of a cat-qubit with bit-flip times exceeding ten seconds 2023-07",
+    "occurrence_sentence": "* [ Ulysse Réglade Quantum control of a cat-qubit with bit-flip times exceeding ten seconds 2023-07 * Experimental work ]",
+    "source_document": "https://alice-bob.com/publications",
+    "page": 9
+  },
+  {
+    "source_actor": "Elie Gouzien",
+    "target_actor": "Alice-Bob",
+    "interaction_phrase": "Elie Gouzien Performance Analysis of a Repetition Cat Code Architecture: Computing 256-bit Elliptic Curve Logarithm in 9 Hours with 126 133 Cat Qubits 2023-02",
+    "occurrence_sentence": "* [ Elie Gouzien Performance Analysis of a Repetition Cat Code Architecture: Computing 256-bit Elliptic Curve Logarithm in 9 Hours with 126 133 Cat Qubits 2023-02 * Theoretical work ]",
+    "source_document": "https://alice-bob.com/publications",
+    "page": 9
+  },
+  {
+    "source_actor": "Jérémie Guillaud",
+    "target_actor": "Alice-Bob",
+    "interaction_phrase": "Jérémie Guillaud Repetition cat qubit for fault-tolerant quantum computation 2019-12",
+    "occurrence_sentence": "* [ Jérémie Guillaud Repetition cat qubit for fault-tolerant quantum computation 2019-12 * Theoretical work ]",
+    "source_document": "https://alice-bob.com/publications",
+    "page": 9
+  },
+  {
+    "source_actor": "Lescanne",
+    "target_actor": "Alice-Bob",
+    "interaction_phrase": "Lescanne, Peronnin Exponential supression of bit-flips in a qubit encoded in an oscillator 2020-03",
+    "occurrence_sentence": "* [ Lescanne, Peronnin Exponential supression of bit-flips in a qubit encoded in an oscillator 2020-03 * Experimental work ]",
+    "source_document": "https://alice-bob.com/publications",
+    "page": 9
+  },
+  {
+    "source_actor": "Alice",
+    "target_actor": "Alice-Bob",
+    "interaction_phrase": "ALICE & BOB",
+    "occurrence_sentence": "©2026, ALICE & BOB. ALL RIGHTS RESERVED.",
+    "source_document": "https://alice-bob.com/publications",
+    "page": 14
+  },
+  {
+    "source_actor": "Bob",
+    "target_actor": "Alice-Bob",
+    "interaction_phrase": "ALICE & BOB",
+    "occurrence_sentence": "©2026, ALICE & BOB. ALL RIGHTS RESERVED.",
+    "source_document": "https://alice-bob.com/publications",
+    "page": 14
+  },
+  {
+    "source_actor": "Alice",
+    "target_actor": "Alice-Bob",
+    "interaction_phrase": "QPU Designers from Alice & Bob",
+    "occurrence_sentence": "QPU Designers from Alice & Bob developing new cat qubit chips",
+    "source_document": "https://alice-bob.com/join-us",
+    "page": 3
+  },
+  {
+    "source_actor": "Bob",
+    "target_actor": "Alice-Bob",
+    "interaction_phrase": "QPU Designers from Alice & Bob",
+    "occurrence_sentence": "QPU Designers from Alice & Bob developing new cat qubit chips",
+    "source_document": "https://alice-bob.com/join-us",
+    "page": 3
+  },
+  {
+    "source_actor": "Alice-Bob",
+    "target_actor": "Alice",
+    "interaction_phrase": "QPU Designers from Alice & Bob",
+    "occurrence_sentence": "QPU Designers from Alice & Bob developing new cat qubit chips",
+    "source_document": "https://alice-bob.com/join-us",
+    "page": 4
+  },
+  {
+    "source_actor": "Alice-Bob",
+    "target_actor": "Bob",
+    "interaction_phrase": "QPU Designers from Alice & Bob",
+    "occurrence_sentence": "QPU Designers from Alice & Bob developing new cat qubit chips",
+    "source_document": "https://alice-bob.com/join-us",
+    "page": 4
+  },
+  {
+    "source_actor": "Alice-Bob",
+    "target_actor": "Lever",
+    "interaction_phrase": "jobs.lever.co/alice-bob",
+    "occurrence_sentence": "* #### [ Staff Software Engineer PULSE ](https://jobs.lever.co/alice-bob/e262c334-4efe-4e8b-ade7-c65cee935728)",
+    "source_document": "https://alice-bob.com/join-us",
+    "page": 4
+  },
+  {
+    "interaction_phrase": "LinkedIn, academic articles, and YouTube",
+    "occurrence_sentence": "You can prepare for the interview using materials available online, such as our website, LinkedIn, academic articles, and YouTube.",
+    "page": 7,
+    "source_actor": "LinkedIn",
+    "source_document": "https://alice-bob.com/join-us",
+    "target_actor": "YouTube"
+  },
+  {
+    "source_actor": "Alice-Bob",
+    "target_actor": "LinkedIn",
+    "interaction_phrase": "our website, LinkedIn",
+    "occurrence_sentence": "You can prepare for the interview using materials available online, such as our website, LinkedIn, academic articles, and YouTube.",
+    "source_document": "https://alice-bob.com/join-us",
+    "page": 8
+  },
+  {
+    "source_actor": "Alice-Bob",
+    "target_actor": "YouTube",
+    "interaction_phrase": "our website, LinkedIn, academic articles, and YouTube",
+    "occurrence_sentence": "You can prepare for the interview using materials available online, such as our website, LinkedIn, academic articles, and YouTube.",
+    "source_document": "https://alice-bob.com/join-us",
+    "page": 8
+  },
+  {
+    "source_actor": "Alice-Bob",
+    "target_actor": "Europe",
+    "interaction_phrase": "right to work in Europe",
+    "occurrence_sentence": "Can I send my application if I don't have the right to work in Europe?",
+    "source_document": "https://alice-bob.com/join-us",
+    "page": 8
+  },
+  {
+    "source_actor": "Alice-Bob",
+    "target_actor": "Alice",
+    "interaction_phrase": "Alice & Bob",
+    "occurrence_sentence": "By clicking on Subscribe, I accept to receive marketing emails from Alice & Bob.",
+    "source_document": "https://alice-bob.com/join-us",
+    "page": 10
+  },
+  {
+    "source_actor": "Alice-Bob",
+    "target_actor": "Bob",
+    "interaction_phrase": "Alice & Bob",
+    "occurrence_sentence": "By clicking on Subscribe, I accept to receive marketing emails from Alice & Bob.",
+    "source_document": "https://alice-bob.com/join-us",
+    "page": 10
+  },
+  {
+    "source_actor": "Alice",
+    "target_actor": "Bob",
+    "interaction_phrase": "Alice & Bob",
+    "occurrence_sentence": "Building the first universal quantum computer",
+    "source_document": "https://alice-bob.com",
+    "page": 3
+  },
+  {
+    "source_actor": "Alice",
+    "target_actor": "Bob",
+    "interaction_phrase": "Alice & Bob",
+    "occurrence_sentence": "Alice & Bob 2030 Roadmap",
+    "source_document": "https://alice-bob.com",
+    "page": 3
+  },
+  {
+    "source_actor": "Alice-Bob",
+    "target_actor": "Alice",
+    "interaction_phrase": "Alice & Bob",
+    "occurrence_sentence": "[ Alice & Bob 2030 Roadmap  ](https://alice-bob.com/blog/alice-bob-2030-roadmap-to-useful-quantum-computers/)",
+    "source_document": "https://alice-bob.com",
+    "page": 4
+  },
+  {
+    "source_actor": "Alice-Bob",
+    "target_actor": "Bob",
+    "interaction_phrase": "Alice & Bob",
+    "occurrence_sentence": "[ Alice & Bob 2030 Roadmap  ](https://alice-bob.com/blog/alice-bob-2030-roadmap-to-useful-quantum-computers/)",
+    "source_document": "https://alice-bob.com",
+    "page": 4
+  },
+  {
+    "source_actor": "Alice-Bob",
+    "target_actor": "Helium",
+    "interaction_phrase": "Helium - our first error-corrected system",
+    "occurrence_sentence": "Helium - our first error-corrected system",
+    "source_document": "https://alice-bob.com",
+    "page": 5
+  },
+  {
+    "source_actor": "Alice",
+    "target_actor": "Bob",
+    "interaction_phrase": "Alice & Bob",
+    "occurrence_sentence": "Alice & Bob 2030 Roadmap",
+    "source_document": "https://alice-bob.com",
+    "page": 5
+  },
+  {
+    "source_actor": "Alice-Bob",
+    "target_actor": "Helium",
+    "interaction_phrase": "Helium - our first error-corrected system",
+    "occurrence_sentence": "// COMING SOON Helium - our first error-corrected system",
+    "source_document": "https://alice-bob.com",
+    "page": 6
+  },
+  {
+    "source_actor": "Alice-Bob",
+    "target_actor": "NVIDIA",
+    "interaction_phrase": "Uses NVIDIA CUDA-Q",
+    "occurrence_sentence": "How Alice & Bob Uses NVIDIA CUDA-Q to Accelerate Quantum Error Correction Research",
+    "source_document": "https://alice-bob.com",
+    "page": 10
+  },
+  {
+    "source_actor": "Alice-Bob",
+    "target_actor": "Alice",
+    "interaction_phrase": "Alice & Bob",
+    "occurrence_sentence": "#### [ Alice & Bob Talks at March Meeting 2026",
+    "source_document": "https://alice-bob.com",
+    "page": 11
+  },
+  {
+    "source_actor": "Alice-Bob",
+    "target_actor": "Bob",
+    "interaction_phrase": "Alice & Bob",
+    "occurrence_sentence": "#### [ Alice & Bob Talks at March Meeting 2026",
+    "source_document": "https://alice-bob.com",
+    "page": 11
+  },
+  {
+    "source_actor": "Alice",
+    "target_actor": "Alice-Bob",
+    "interaction_phrase": "marketing emails from Alice & Bob",
+    "occurrence_sentence": "By clicking on Subscribe, I accept to receive marketing emails from Alice & Bob.",
+    "source_document": "https://alice-bob.com",
+    "page": 12
+  },
+  {
+    "source_actor": "Bob",
+    "target_actor": "Alice-Bob",
+    "interaction_phrase": "marketing emails from Alice & Bob",
+    "occurrence_sentence": "By clicking on Subscribe, I accept to receive marketing emails from Alice & Bob.",
+    "source_document": "https://alice-bob.com",
+    "page": 12
+  },
+  {
+    "source_actor": "Cloudflare",
+    "target_actor": "Calendly",
+    "interaction_phrase": "sets this cookie",
+    "occurrence_sentence": "Calendly sets this cookie to track users across sessions to optimize user experience by maintaining session consistency and providing personalized services",
+    "source_document": "https://alice-bob.com/science",
+    "page": 1
+  },
+  {
+    "source_actor": "Cloudflare",
+    "target_actor": "Google",
+    "interaction_phrase": "set by Cloudflare",
+    "occurrence_sentence": "This cookie, set by Cloudflare, is used to support Cloudflare Bot Management.",
+    "source_document": "https://alice-bob.com/science",
+    "page": 1
+  },
+  {
+    "interaction_phrase": "set this cookie",
+    "occurrence_sentence": "Linkedin set this cookie for storing visitor's consent regarding using cookies for non-essential purposes.",
+    "page": 2,
+    "source_actor": "Google",
+    "source_document": "https://alice-bob.com/science",
+    "target_actor": "LinkedIn"
+  },
+  {
+    "interaction_phrase": "sets the lidc cookie",
+    "occurrence_sentence": "LinkedIn sets the lidc cookie to facilitate data center selection.",
+    "page": 2,
+    "source_actor": "Google",
+    "source_document": "https://alice-bob.com/science",
+    "target_actor": "LinkedIn"
+  },
+  {
+    "source_actor": "YouTube",
+    "target_actor": "Google Analytics",
+    "interaction_phrase": "sets this cookie",
+    "occurrence_sentence": "Google Analytics sets this cookie to store and count page views.",
+    "source_document": "https://alice-bob.com/science",
+    "page": 4
+  },
+  {
+    "source_actor": "Google Analytics",
+    "target_actor": "YouTube",
+    "interaction_phrase": "sets this cookie",
+    "occurrence_sentence": "Google Analytics sets this cookie to calculate visitor, session and campaign data and track site usage for the site's analytics report.",
+    "source_document": "https://alice-bob.com/science",
+    "page": 4
+  },
+  {
+    "source_actor": "Alice",
+    "target_actor": "Bob",
+    "interaction_phrase": "Alice & Bob",
+    "occurrence_sentence": "![Alice & Bob quantum computing researcher](https://alice-bob.com/wp-content/uploads/bf-advanced-images/3094/ALICE-BOB-SCIENCE-TOP-DESKTOP-QUANTUM-COMPUTING-scaled-e1715774581725-1920x0.jpg)",
+    "source_document": "https://alice-bob.com/science",
+    "page": 9
+  },
+  {
+    "source_actor": "Ulysse Réglade",
+    "target_actor": "Alice-Bob",
+    "interaction_phrase": "Ulysse Réglade Quantum control of a cat-qubit with bit-flip times exceeding ten seconds",
+    "occurrence_sentence": "Ulysse Réglade Quantum control of a cat-qubit with bit-flip times exceeding ten seconds 2023-07",
+    "source_document": "https://alice-bob.com/science",
+    "page": 10
+  },
+  {
+    "source_actor": "Alice-Bob",
+    "target_actor": "Ulysse Réglade",
+    "interaction_phrase": "Ulysse Réglade Quantum control of a cat-qubit with bit-flip times exceeding ten seconds 2023-07",
+    "occurrence_sentence": "[ Ulysse Réglade Quantum control of a cat-qubit with bit-flip times exceeding ten seconds 2023-07 * Experimental work ](https://arxiv.org/abs/2307.06617)",
+    "source_document": "https://alice-bob.com/science",
+    "page": 11
+  },
+  {
+    "source_actor": "Alice-Bob",
+    "target_actor": "Elie Gouzien",
+    "interaction_phrase": "Elie Gouzien Performance Analysis of a Repetition Cat Code Architecture: Computing 256-bit Elliptic Curve Logarithm in 9 Hours with 126 133 Cat Qubits 2023-02",
+    "occurrence_sentence": "[ Elie Gouzien Performance Analysis of a Repetition Cat Code Architecture: Computing 256-bit Elliptic Curve Logarithm in 9 Hours with 126 133 Cat Qubits 2023-02 * Theoretical work ](https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.131.040602)",
+    "source_document": "https://alice-bob.com/science",
+    "page": 11
+  },
+  {
+    "source_actor": "Alice-Bob",
+    "target_actor": "Jérémie Guillaud",
+    "interaction_phrase": "Jérémie Guillaud Repetition cat qubit for fault-tolerant quantum computation 2019-12",
+    "occurrence_sentence": "[ Jérémie Guillaud Repetition cat qubit for fault-tolerant quantum computation 2019-12 * Theoretical work ](https://arxiv.org/abs/2307.06617)",
+    "source_document": "https://alice-bob.com/science",
+    "page": 11
+  },
+  {
+    "source_actor": "Jérémie Guillaud",
+    "target_actor": "Alice-Bob",
+    "interaction_phrase": "Repetition cat qubit for fault-tolerant quantum computation",
+    "occurrence_sentence": "Jérémie Guillaud Repetition cat qubit for fault-tolerant quantum computation 2019-12",
+    "source_document": "https://alice-bob.com/science",
+    "page": 12
+  },
+  {
+    "source_actor": "Lescanne",
+    "target_actor": "Alice-Bob",
+    "interaction_phrase": "Exponential supression of bit-flips in a qubit encoded in an oscillator",
+    "occurrence_sentence": "Lescanne, Peronnin Exponential supression of bit-flips in a qubit encoded in an oscillator 2020-03",
+    "source_document": "https://alice-bob.com/science",
+    "page": 12
+  },
+  {
+    "source_actor": "Alice",
+    "target_actor": "Alice-Bob",
+    "interaction_phrase": "Alice & Bob",
+    "occurrence_sentence": "©2026, ALICE & BOB. ALL RIGHTS RESERVED.",
+    "source_document": "https://alice-bob.com/science",
+    "page": 13
+  },
+  {
+    "source_actor": "Bob",
+    "target_actor": "Alice-Bob",
+    "interaction_phrase": "Alice & Bob",
+    "occurrence_sentence": "©2026, ALICE & BOB. ALL RIGHTS RESERVED.",
+    "source_document": "https://alice-bob.com/science",
+    "page": 13
+  },
+  {
+    "source_actor": "Cloudflare",
+    "target_actor": "Calendly",
+    "interaction_phrase": "sets this cookie",
+    "occurrence_sentence": "Calendly sets this cookie to track users across sessions to optimize user experience by maintaining session consistency and providing personalized services",
+    "source_document": "https://alice-bob.com/newsroom",
+    "page": 1
+  },
+  {
+    "source_actor": "Cloudflare",
+    "target_actor": "Google",
+    "interaction_phrase": "sets this cookie",
+    "occurrence_sentence": "Google Recaptcha service sets this cookie to identify bots to protect the website against malicious spam attacks.",
+    "source_document": "https://alice-bob.com/newsroom",
+    "page": 1
+  },
+  {
+    "interaction_phrase": "set this cookie",
+    "occurrence_sentence": "Linkedin set this cookie for storing visitor's consent regarding using cookies for non-essential purposes.",
+    "page": 2,
+    "source_actor": "Google",
+    "source_document": "https://alice-bob.com/newsroom",
+    "target_actor": "LinkedIn"
+  },
+  {
+    "interaction_phrase": "sets the lidc cookie",
+    "occurrence_sentence": "LinkedIn sets the lidc cookie to facilitate data center selection.",
+    "page": 3,
+    "source_actor": "WordPress",
+    "source_document": "https://alice-bob.com/newsroom",
+    "target_actor": "LinkedIn"
+  },
+  {
+    "interaction_phrase": "sets this cookie",
+    "occurrence_sentence": "YouTube sets this cookie to store the user's video preferences using embedded YouTube videos.",
+    "page": 3,
+    "source_actor": "WordPress",
+    "source_document": "https://alice-bob.com/newsroom",
+    "target_actor": "YouTube"
+  },
+  {
+    "interaction_phrase": "sets this cookie",
+    "occurrence_sentence": "YouTube sets this cookie to store the user's video preferences using embedded YouTube videos.",
+    "page": 3,
+    "source_actor": "LinkedIn",
+    "source_document": "https://alice-bob.com/newsroom",
+    "target_actor": "YouTube"
+  },
+  {
+    "interaction_phrase": "is used by YouTube",
+    "occurrence_sentence": "The cookie ytidb::LAST_RESULT_ENTRY_KEY is used by YouTube to store the last search result entry that was clicked by the user.",
+    "page": 3,
+    "source_actor": "LinkedIn",
+    "source_document": "https://alice-bob.com/newsroom",
+    "target_actor": "YouTube"
+  },
+  {
+    "interaction_phrase": "is used by YouTube",
+    "occurrence_sentence": "The yt-remote-session-app cookie is used by YouTube to store user preferences and information about the interface of the embedded YouTube video player.",
+    "page": 3,
+    "source_actor": "WordPress",
+    "source_document": "https://alice-bob.com/newsroom",
+    "target_actor": "YouTube"
+  },
+  {
+    "interaction_phrase": "is used to store the user's video player preferences",
+    "occurrence_sentence": "The yt-remote-cast-installed cookie is used to store the user's video player preferences using embedded YouTube video.",
+    "page": 3,
+    "source_actor": "WordPress",
+    "source_document": "https://alice-bob.com/newsroom",
+    "target_actor": "YouTube"
+  },
+  {
+    "interaction_phrase": "is used by YouTube",
+    "occurrence_sentence": "The yt-remote-session-app cookie is used by YouTube to store user preferences and information about the interface of the embedded YouTube video player.",
+    "page": 3,
+    "source_actor": "LinkedIn",
+    "source_document": "https://alice-bob.com/newsroom",
+    "target_actor": "YouTube"
+  },
+  {
+    "interaction_phrase": "is used to store the user's video player preferences",
+    "occurrence_sentence": "The yt-remote-cast-installed cookie is used to store the user's video player preferences using embedded YouTube video.",
+    "page": 3,
+    "source_actor": "LinkedIn",
+    "source_document": "https://alice-bob.com/newsroom",
+    "target_actor": "YouTube"
+  },
+  {
+    "interaction_phrase": "sets this cookie",
+    "occurrence_sentence": "Google Analytics sets this cookie to store and count page views.",
+    "page": 4,
+    "source_actor": "YouTube",
+    "source_document": "https://alice-bob.com/newsroom",
+    "target_actor": "Google Analytics"
+  },
+  {
+    "interaction_phrase": "sets this cookie",
+    "occurrence_sentence": "Google Analytics sets this cookie to calculate visitor, session and campaign data and track site usage for the site's analytics report.",
+    "page": 4,
+    "source_actor": "Google Analytics",
+    "source_document": "https://alice-bob.com/newsroom",
+    "target_actor": "YouTube"
+  },
+  {
+    "source_actor": "Google Analytics",
+    "target_actor": "Google",
+    "interaction_phrase": "Google Analytics sets this cookie",
+    "occurrence_sentence": "Google Analytics sets this cookie to calculate visitor, session and campaign data and track site usage for the site's analytics report.",
+    "source_document": "https://alice-bob.com/newsroom",
+    "page": 5
+  },
+  {
+    "source_actor": "Alice-Bob",
+    "target_actor": "Alice",
+    "interaction_phrase": "CEO of Alice & Bob",
+    "occurrence_sentence": "CEO of Alice & Bob Responds to President Macron's Strengthened Plan Quantique",
+    "source_document": "https://alice-bob.com/newsroom",
+    "page": 10
+  },
+  {
+    "source_actor": "Alice-Bob",
+    "target_actor": "Bob",
+    "interaction_phrase": "CEO of Alice & Bob",
+    "occurrence_sentence": "CEO of Alice & Bob Responds to President Macron's Strengthened Plan Quantique",
+    "source_document": "https://alice-bob.com/newsroom",
+    "page": 10
+  },
+  {
+    "source_actor": "Alice-Bob",
+    "target_actor": "Alice",
+    "interaction_phrase": "Alice & Bob",
+    "occurrence_sentence": "Alice & Bob announces Series B Extension",
+    "source_document": "https://alice-bob.com/newsroom",
+    "page": 10
+  },
+  {
+    "source_actor": "Alice-Bob",
+    "target_actor": "Bob",
+    "interaction_phrase": "Alice & Bob",
+    "occurrence_sentence": "Alice & Bob announces Series B Extension",
+    "source_document": "https://alice-bob.com/newsroom",
+    "page": 10
+  },
+  {
+    "source_actor": "Alice-Bob",
+    "target_actor": "Alice",
+    "interaction_phrase": "Alice & Bob",
+    "occurrence_sentence": "EU SUPREME Quantum Manufacturing Project Kicks Off in Helsinki with Alice & Bob as Consortium Partner",
+    "source_document": "https://alice-bob.com/newsroom",
+    "page": 10
+  },
+  {
+    "source_actor": "Alice-Bob",
+    "target_actor": "Bob",
+    "interaction_phrase": "Alice & Bob",
+    "occurrence_sentence": "EU SUPREME Quantum Manufacturing Project Kicks Off in Helsinki with Alice & Bob as Consortium Partner",
+    "source_document": "https://alice-bob.com/newsroom",
+    "page": 10
+  },
+  {
+    "source_actor": "Alice & Bob",
+    "target_actor": "NVIDIA",
+    "interaction_phrase": "with NVIDIA CUDA-Q",
+    "occurrence_sentence": "Alice & Bob Accelerates Quantum Error Correction with NVIDIA CUDA-Q",
+    "source_document": "https://alice-bob.com/newsroom",
+    "page": 11
+  },
+  {
+    "source_actor": "Theau Peronnin",
+    "target_actor": "Alice & Bob",
+    "interaction_phrase": "CEO of Alice & Bob",
+    "occurrence_sentence": "CEO of Alice & Bob Responds to President Macron's Strengthened Plan Quantique",
+    "source_document": "https://alice-bob.com/newsroom",
+    "page": 11
+  },
+  {
+    "source_actor": "Alice & Bob",
+    "target_actor": "NVIDIA",
+    "interaction_phrase": "with NVIDIA CUDA-Q",
+    "occurrence_sentence": "Alice & Bob Accelerates Quantum Error Correction with NVIDIA CUDA-Q",
+    "source_document": "https://alice-bob.com/newsroom",
+    "page": 12
+  },
+  {
+    "source_actor": "Alice",
+    "target_actor": "Bob",
+    "interaction_phrase": "ALICE & BOB",
+    "occurrence_sentence": "©2026, ALICE & BOB. ALL RIGHTS RESERVED.",
+    "source_document": "https://alice-bob.com/newsroom",
+    "page": 13
+  },
+  {
+    "interaction_phrase": "sets this cookie",
+    "occurrence_sentence": "Calendly sets this cookie to track users across sessions to optimize user experience by maintaining session consistency and providing personalized services",
+    "page": 1,
+    "source_actor": "Cloudflare",
+    "source_document": "https://alice-bob.com/glossary",
+    "target_actor": "Calendly"
+  },
+  {
+    "interaction_phrase": "sets this cookie",
+    "occurrence_sentence": "Google Recaptcha service sets this cookie to identify bots to protect the website against malicious spam attacks.",
+    "page": 1,
+    "source_actor": "Google",
+    "source_document": "https://alice-bob.com/glossary",
+    "target_actor": "Cloudflare"
+  },
+  {
+    "source_actor": "LinkedIn",
+    "target_actor": "Google",
+    "interaction_phrase": "Google recaptcha service",
+    "occurrence_sentence": "Google Recaptcha service sets this cookie to identify bots to protect the website against malicious spam attacks.",
+    "source_document": "https://alice-bob.com/glossary",
+    "page": 2
+  },
+  {
+    "source_actor": "LinkedIn",
+    "target_actor": "Google",
+    "interaction_phrase": "Google recaptcha service",
+    "occurrence_sentence": "This cookie is set by the Google recaptcha service to identify bots to protect the website against malicious spam attacks.",
+    "source_document": "https://alice-bob.com/glossary",
+    "page": 2
+  },
+  {
+    "interaction_phrase": "sets this cookie",
+    "occurrence_sentence": "WordPress multilingual plugin sets this cookie to store the current language/language settings.",
+    "page": 3,
+    "source_actor": "WordPress",
+    "source_document": "https://alice-bob.com/glossary",
+    "target_actor": "LinkedIn"
+  },
+  {
+    "interaction_phrase": "sets the lidc cookie",
+    "occurrence_sentence": "LinkedIn sets the lidc cookie to facilitate data center selection.",
+    "page": 3,
+    "source_actor": "YouTube",
+    "source_document": "https://alice-bob.com/glossary",
+    "target_actor": "LinkedIn"
+  },
+  {
+    "interaction_phrase": "sets this cookie",
+    "occurrence_sentence": "YouTube sets this cookie to store the user's video preferences using embedded YouTube videos.",
+    "page": 3,
+    "source_actor": "YouTube",
+    "source_document": "https://alice-bob.com/glossary",
+    "target_actor": "WordPress"
+  },
+  {
+    "interaction_phrase": "sets this cookie",
+    "occurrence_sentence": "Google Analytics sets this cookie to store and count page views.",
+    "page": 4,
+    "source_actor": "YouTube",
+    "source_document": "https://alice-bob.com/glossary",
+    "target_actor": "Google Analytics"
+  },
+  {
+    "interaction_phrase": "Google Analytics sets this cookie",
+    "occurrence_sentence": "Google Analytics sets this cookie to calculate visitor, session and campaign data and track site usage for the site's analytics report.",
+    "page": 5,
+    "source_actor": "Google Analytics",
+    "source_document": "https://alice-bob.com/glossary",
+    "target_actor": "Google"
+  },
+  {
+    "source_actor": "Alice",
+    "target_actor": "Alice-Bob",
+    "interaction_phrase": "ALICE & BOB",
+    "occurrence_sentence": "©2026, ALICE & BOB. ALL RIGHTS RESERVED.",
+    "source_document": "https://alice-bob.com/glossary",
+    "page": 15
+  },
+  {
+    "source_actor": "Bob",
+    "target_actor": "Alice-Bob",
+    "interaction_phrase": "ALICE & BOB",
+    "occurrence_sentence": "©2026, ALICE & BOB. ALL RIGHTS RESERVED.",
+    "source_document": "https://alice-bob.com/glossary",
+    "page": 15
+  },
+  {
+    "source_actor": "Alice-Bob",
+    "target_actor": "Alice",
+    "interaction_phrase": "Alice & Bob",
+    "occurrence_sentence": "By clicking on Subscribe, I accept to receive marketing emails from Alice & Bob.",
+    "source_document": "https://alice-bob.com/glossary",
+    "page": 16
+  },
+  {
+    "source_actor": "Alice-Bob",
+    "target_actor": "Bob",
+    "interaction_phrase": "Alice & Bob",
+    "occurrence_sentence": "By clicking on Subscribe, I accept to receive marketing emails from Alice & Bob.",
+    "source_document": "https://alice-bob.com/glossary",
+    "page": 16
+  },
+  {
+    "interaction_phrase": "sets this cookie",
+    "occurrence_sentence": "Calendly sets this cookie to track users across sessions to optimize user experience by maintaining session consistency and providing personalized services",
+    "page": 1,
+    "source_actor": "Cloudflare",
+    "source_document": "https://alice-bob.com/platform",
+    "target_actor": "Calendly"
+  },
+  {
+    "interaction_phrase": "sets this cookie",
+    "occurrence_sentence": "Google Recaptcha service sets this cookie to identify bots to protect the website against malicious spam attacks.",
+    "page": 1,
+    "source_actor": "Cloudflare",
+    "source_document": "https://alice-bob.com/platform",
+    "target_actor": "Google"
+  },
+  {
+    "source_actor": "Google",
+    "target_actor": "LinkedIn",
+    "interaction_phrase": "set this cookie",
+    "occurrence_sentence": "Linkedin set this cookie for storing visitor's consent regarding using cookies for non-essential purposes.",
+    "source_document": "https://alice-bob.com/platform",
+    "page": 2
+  },
+  {
+    "interaction_phrase": "sets this cookie",
+    "occurrence_sentence": "Google Analytics sets this cookie to store and count page views.",
+    "page": 4,
+    "source_actor": "YouTube",
+    "source_document": "https://alice-bob.com/platform",
+    "target_actor": "Google Analytics"
+  },
+  {
+    "interaction_phrase": "sets this cookie",
+    "occurrence_sentence": "Google Analytics sets this cookie to calculate visitor, session and campaign data and track site usage for the site's analytics report.",
+    "page": 4,
+    "source_actor": "Google Analytics",
+    "source_document": "https://alice-bob.com/platform",
+    "target_actor": "YouTube"
+  },
+  {
+    "source_actor": "Google Analytics",
+    "target_actor": "Google",
+    "interaction_phrase": "Google Analytics sets this cookie",
+    "occurrence_sentence": "Google Analytics sets this cookie to calculate visitor, session and campaign data and track site usage for the site's analytics report.",
+    "source_document": "https://alice-bob.com/platform",
+    "page": 5
+  },
+  {
+    "source_actor": "Helium",
+    "target_actor": "Alice-Bob",
+    "interaction_phrase": "host a Helium system",
+    "occurrence_sentence": "In this high-level guide we detail main components and requirements to host a Helium system.",
+    "source_document": "https://alice-bob.com/platform",
+    "page": 14
+  },
+  {
+    "source_actor": "Helium",
+    "target_actor": "Alice-Bob",
+    "interaction_phrase": "thoroughly tested in Alice & Bob labs",
+    "occurrence_sentence": "Helium is a compact and upgradeable system that has been thoroughly tested in Alice & Bob labs.",
+    "source_document": "https://alice-bob.com/platform",
+    "page": 14
+  },
+  {
+    "source_actor": "Helium",
+    "target_actor": "Alice-Bob",
+    "interaction_phrase": "thoroughly tested in Alice & Bob labs",
+    "occurrence_sentence": "Helium is a compact and upgradeable system that has been thoroughly tested in Alice & Bob labs.",
+    "source_document": "https://alice-bob.com/platform",
+    "page": 15
+  },
+  {
+    "source_actor": "Helium",
+    "target_actor": "Alice-Bob",
+    "interaction_phrase": "collaborate with our error-correction teams",
+    "occurrence_sentence": "Conduct experiments on 18 noise-biased cat qubits and collaborate with our error-correction teams.",
+    "source_document": "https://alice-bob.com/platform",
+    "page": 15
+  },
+  {
+    "source_actor": "Helium",
+    "target_actor": "Alice-Bob",
+    "interaction_phrase": "Research, test, optimize error correction codes alongside our scientists",
+    "occurrence_sentence": "Research, test, optimize error correction codes alongside our scientists.",
+    "source_document": "https://alice-bob.com/platform",
+    "page": 15
+  },
+  {
+    "source_actor": "Alice",
+    "target_actor": "Alice-Bob",
+    "interaction_phrase": "ALICE & BOB",
+    "occurrence_sentence": "©2026, ALICE & BOB. ALL RIGHTS RESERVED.",
+    "source_document": "https://alice-bob.com/platform",
+    "page": 18
+  },
+  {
+    "source_actor": "Bob",
+    "target_actor": "Alice-Bob",
+    "interaction_phrase": "ALICE & BOB",
+    "occurrence_sentence": "©2026, ALICE & BOB. ALL RIGHTS RESERVED.",
+    "source_document": "https://alice-bob.com/platform",
+    "page": 18
+  },
+  {
+    "source_actor": "Cloudflare",
+    "target_actor": "Calendly",
+    "interaction_phrase": "sets this cookie",
+    "occurrence_sentence": "Calendly sets this cookie to track users across sessions to optimize user experience by maintaining session consistency and providing personalized services",
+    "source_document": "https://alice-bob.com/newsroom/alice-bob-100m-series-b-fundraising-press-release",
+    "page": 1
+  },
+  {
+    "source_actor": "Cloudflare",
+    "target_actor": "Google",
+    "interaction_phrase": "set by Cloudflare",
+    "occurrence_sentence": "This cookie, set by Cloudflare, is used to support Cloudflare Bot Management.",
+    "source_document": "https://alice-bob.com/newsroom/alice-bob-100m-series-b-fundraising-press-release",
+    "page": 1
+  },
+  {
+    "source_actor": "Google",
+    "target_actor": "LinkedIn",
+    "interaction_phrase": "set this cookie",
+    "occurrence_sentence": "Linkedin set this cookie for storing visitor's consent regarding using cookies for non-essential purposes.",
+    "source_document": "https://alice-bob.com/newsroom/alice-bob-100m-series-b-fundraising-press-release",
+    "page": 2
+  },
+  {
+    "source_actor": "Google",
+    "target_actor": "LinkedIn",
+    "interaction_phrase": "sets the lidc cookie",
+    "occurrence_sentence": "LinkedIn sets the lidc cookie to facilitate data center selection.",
+    "source_document": "https://alice-bob.com/newsroom/alice-bob-100m-series-b-fundraising-press-release",
+    "page": 2
+  },
+  {
+    "source_actor": "YouTube",
+    "target_actor": "Google Analytics",
+    "interaction_phrase": "sets this cookie",
+    "occurrence_sentence": "Google Analytics sets this cookie to store and count page views.",
+    "source_document": "https://alice-bob.com/newsroom/alice-bob-100m-series-b-fundraising-press-release",
+    "page": 4
+  },
+  {
+    "source_actor": "Google Analytics",
+    "target_actor": "Google",
+    "interaction_phrase": "Google Analytics sets this cookie",
+    "occurrence_sentence": "Google Analytics sets this cookie to calculate visitor, session and campaign data and track site usage for the site's analytics report. The cookie stores information anonymously and assigns a randomly generated number to recognise unique visitors.",
+    "source_document": "https://alice-bob.com/newsroom/alice-bob-100m-series-b-fundraising-press-release",
+    "page": 5
+  },
+  {
+    "interaction_phrase": "led by Future French Champions",
+    "occurrence_sentence": "Alice & Bob Closes €100M Series B Led by Future French Champions (FFC), AVP and Bpifrance to Advance Towards a Useful Quantum Computer",
+    "page": 9,
+    "source_actor": "Alice-Bob",
+    "source_document": "https://alice-bob.com/newsroom/alice-bob-100m-series-b-fundraising-press-release",
+    "target_actor": "Future French Champions"
+  },
+  {
+    "interaction_phrase": "led by ... AVP",
+    "occurrence_sentence": "Alice & Bob Closes €100M Series B Led by Future French Champions (FFC), AVP and Bpifrance to Advance Towards a Useful Quantum Computer",
+    "page": 9,
+    "source_actor": "Alice-Bob",
+    "source_document": "https://alice-bob.com/newsroom/alice-bob-100m-series-b-fundraising-press-release",
+    "target_actor": "AVP"
+  },
+  {
+    "interaction_phrase": "led by ... Bpifrance",
+    "occurrence_sentence": "Alice & Bob Closes €100M Series B Led by Future French Champions (FFC), AVP and Bpifrance to Advance Towards a Useful Quantum Computer",
+    "page": 9,
+    "source_actor": "Alice-Bob",
+    "source_document": "https://alice-bob.com/newsroom/alice-bob-100m-series-b-fundraising-press-release",
+    "target_actor": "Bpifrance"
+  },
+  {
+    "interaction_phrase": "led by Future French Champions",
+    "occurrence_sentence": "Alice & Bob, a global frontrunner in the race for fault-tolerant quantum computing, today announced a raise of €100 million in its Series B funding round, led by Future French Champions (FFC), AVP (AXA Venture Partners) and Bpifrance.",
+    "page": 9,
+    "source_actor": "Alice-Bob",
+    "source_document": "https://alice-bob.com/newsroom/alice-bob-100m-series-b-fundraising-press-release",
+    "target_actor": "Future French Champions"
+  },
+  {
+    "interaction_phrase": "led by ... AVP",
+    "occurrence_sentence": "Alice & Bob, a global frontrunner in the race for fault-tolerant quantum computing, today announced a raise of €100 million in its Series B funding round, led by Future French Champions (FFC), AVP (AXA Venture Partners) and Bpifrance.",
+    "page": 9,
+    "source_actor": "Alice-Bob",
+    "source_document": "https://alice-bob.com/newsroom/alice-bob-100m-series-b-fundraising-press-release",
+    "target_actor": "AVP"
+  },
+  {
+    "interaction_phrase": "led by ... Bpifrance",
+    "occurrence_sentence": "Alice & Bob, a global frontrunner in the race for fault-tolerant quantum computing, today announced a raise of €100 million in its Series B funding round, led by Future French Champions (FFC), AVP (AXA Venture Partners) and Bpifrance.",
+    "page": 9,
+    "source_actor": "Alice-Bob",
+    "source_document": "https://alice-bob.com/newsroom/alice-bob-100m-series-b-fundraising-press-release",
+    "target_actor": "Bpifrance"
+  },
+  {
+    "interaction_phrase": "Alice & Bob founders: Théau Peronnin and Raphael Lescanne",
+    "occurrence_sentence": "Alice & Bob founders: Théau Peronnin and Raphael Lescanne",
+    "page": 9,
+    "source_actor": "Alice-Bob",
+    "source_document": "https://alice-bob.com/newsroom/alice-bob-100m-series-b-fundraising-press-release",
+    "target_actor": "Raphaël Lescanne"
+  },
+  {
+    "interaction_phrase": "FFC is a partnership between QIA and Bpifrance",
+    "occurrence_sentence": "FFC is a partnership between QIA and Bpifrance.",
+    "page": 9,
+    "source_actor": "Future French Champions",
+    "source_document": "https://alice-bob.com/newsroom/alice-bob-100m-series-b-fundraising-press-release",
+    "target_actor": "Bpifrance"
+  },
+  {
+    "source_actor": "Future French Champions",
+    "target_actor": "Alice-Bob",
+    "interaction_phrase": "led by Future French Champions",
+    "occurrence_sentence": "Alice & Bob, a global frontrunner in the race for fault-tolerant quantum computing, today announced a raise of €100 million in its Series B funding round, led by Future French Champions (FFC), AVP (AXA Venture Partners) and Bpifrance.",
+    "source_document": "https://alice-bob.com/newsroom/alice-bob-100m-series-b-fundraising-press-release",
+    "page": 10
+  },
+  {
+    "source_actor": "AVP",
+    "target_actor": "Alice-Bob",
+    "interaction_phrase": "led by AVP",
+    "occurrence_sentence": "Alice & Bob, a global frontrunner in the race for fault-tolerant quantum computing, today announced a raise of €100 million in its Series B funding round, led by Future French Champions (FFC), AVP (AXA Venture Partners) and Bpifrance.",
+    "source_document": "https://alice-bob.com/newsroom/alice-bob-100m-series-b-fundraising-press-release",
+    "page": 10
+  },
+  {
+    "source_actor": "Bpifrance",
+    "target_actor": "Alice-Bob",
+    "interaction_phrase": "led by Bpifrance",
+    "occurrence_sentence": "Alice & Bob, a global frontrunner in the race for fault-tolerant quantum computing, today announced a raise of €100 million in its Series B funding round, led by Future French Champions (FFC), AVP (AXA Venture Partners) and Bpifrance.",
+    "source_document": "https://alice-bob.com/newsroom/alice-bob-100m-series-b-fundraising-press-release",
+    "page": 10
+  },
+  {
+    "source_actor": "Elaia Partners",
+    "target_actor": "Alice-Bob",
+    "interaction_phrase": "returned for the Series B round",
+    "occurrence_sentence": "All Series A investors, Elaia Partners, Breega, Supernova Invest and Bpifrance, returned for the Series B round, joined by new institutional investors, FFC, AVP, and the EIC (European Innovation Council), reflecting broad market confidence in Alice & Bob's approach and future impact.",
+    "source_document": "https://alice-bob.com/newsroom/alice-bob-100m-series-b-fundraising-press-release",
+    "page": 10
+  },
+  {
+    "source_actor": "Bpifrance",
+    "target_actor": "Alice-Bob",
+    "interaction_phrase": "returned for the Series B round",
+    "occurrence_sentence": "All Series A investors, Elaia Partners, Breega, Supernova Invest and Bpifrance, returned for the Series B round, joined by new institutional investors, FFC, AVP, and the EIC (European Innovation Council), reflecting broad market confidence in Alice & Bob's approach and future impact.",
+    "source_document": "https://alice-bob.com/newsroom/alice-bob-100m-series-b-fundraising-press-release",
+    "page": 10
+  },
+  {
+    "source_actor": "Future French Champions",
+    "target_actor": "Alice-Bob",
+    "interaction_phrase": "joined by new institutional investors, FFC",
+    "occurrence_sentence": "All Series A investors, Elaia Partners, Breega, Supernova Invest and Bpifrance, returned for the Series B round, joined by new institutional investors, FFC, AVP, and the EIC (European Innovation Council), reflecting broad market confidence in Alice & Bob's approach and future impact.",
+    "source_document": "https://alice-bob.com/newsroom/alice-bob-100m-series-b-fundraising-press-release",
+    "page": 10
+  },
+  {
+    "source_actor": "AVP",
+    "target_actor": "Alice-Bob",
+    "interaction_phrase": "joined by new institutional investors, AVP",
+    "occurrence_sentence": "All Series A investors, Elaia Partners, Breega, Supernova Invest and Bpifrance, returned for the Series B round, joined by new institutional investors, FFC, AVP, and the EIC (European Innovation Council), reflecting broad market confidence in Alice & Bob's approach and future impact.",
+    "source_document": "https://alice-bob.com/newsroom/alice-bob-100m-series-b-fundraising-press-release",
+    "page": 10
+  },
+  {
+    "source_actor": "Raphaël Lescanne",
+    "target_actor": "Alice-Bob",
+    "interaction_phrase": "Alice & Bob founders",
+    "occurrence_sentence": "Alice & Bob founders: Théau Peronnin and Raphael Lescanne",
+    "source_document": "https://alice-bob.com/newsroom/alice-bob-100m-series-b-fundraising-press-release",
+    "page": 10
+  },
+  {
+    "source_actor": "Alice-Bob",
+    "target_actor": "Elaia Partners",
+    "interaction_phrase": "All Series A investors, Elaia Partners, Breega, Supernova Invest and Bpifrance, returned for the Series B round",
+    "occurrence_sentence": "All Series A investors, Elaia Partners, Breega, Supernova Invest and Bpifrance, returned for the Series B round, joined by new institutional investors, FFC, AVP, and the EIC (European Innovation Council), reflecting broad market confidence in Alice & Bob's approach and future impact.",
+    "source_document": "https://alice-bob.com/newsroom/alice-bob-100m-series-b-fundraising-press-release",
+    "page": 11
+  },
+  {
+    "source_actor": "Alice-Bob",
+    "target_actor": "Bpifrance",
+    "interaction_phrase": "All Series A investors, Elaia Partners, Breega, Supernova Invest and Bpifrance, returned for the Series B round",
+    "occurrence_sentence": "All Series A investors, Elaia Partners, Breega, Supernova Invest and Bpifrance, returned for the Series B round, joined by new institutional investors, FFC, AVP, and the EIC (European Innovation Council), reflecting broad market confidence in Alice & Bob's approach and future impact.",
+    "source_document": "https://alice-bob.com/newsroom/alice-bob-100m-series-b-fundraising-press-release",
+    "page": 11
+  },
+  {
+    "source_actor": "Alice-Bob",
+    "target_actor": "Future French Champions",
+    "interaction_phrase": "joined by new institutional investors, FFC, AVP, and the EIC (European Innovation Council)",
+    "occurrence_sentence": "All Series A investors, Elaia Partners, Breega, Supernova Invest and Bpifrance, returned for the Series B round, joined by new institutional investors, FFC, AVP, and the EIC (European Innovation Council), reflecting broad market confidence in Alice & Bob's approach and future impact.",
+    "source_document": "https://alice-bob.com/newsroom/alice-bob-100m-series-b-fundraising-press-release",
+    "page": 11
+  },
+  {
+    "source_actor": "Alice-Bob",
+    "target_actor": "AVP",
+    "interaction_phrase": "joined by new institutional investors, FFC, AVP, and the EIC (European Innovation Council)",
+    "occurrence_sentence": "All Series A investors, Elaia Partners, Breega, Supernova Invest and Bpifrance, returned for the Series B round, joined by new institutional investors, FFC, AVP, and the EIC (European Innovation Council), reflecting broad market confidence in Alice & Bob's approach and future impact.",
+    "source_document": "https://alice-bob.com/newsroom/alice-bob-100m-series-b-fundraising-press-release",
+    "page": 11
+  },
+  {
+    "source_actor": "Future French Champions",
+    "target_actor": "Alice-Bob",
+    "interaction_phrase": "investing in Alice & Bob",
+    "occurrence_sentence": "In investing in Alice & Bob, Future French Champions recognizes the company as a French leader in quantum computing.",
+    "source_document": "https://alice-bob.com/newsroom/alice-bob-100m-series-b-fundraising-press-release",
+    "page": 12
+  },
+  {
+    "source_actor": "AVP",
+    "target_actor": "Alice-Bob",
+    "interaction_phrase": "support the company",
+    "occurrence_sentence": "AVP is therefore proud to support the company in their mission to reduce the hardware requirements for building a practical, large-scale quantum computer.",
+    "source_document": "https://alice-bob.com/newsroom/alice-bob-100m-series-b-fundraising-press-release",
+    "page": 12
+  },
+  {
+    "source_actor": "Bpifrance",
+    "target_actor": "Alice-Bob",
+    "interaction_phrase": "contribute to the groundbreaking work",
+    "occurrence_sentence": "We are thrilled to once again contribute to the groundbreaking work that Alice & Bob is doing to scale quantum computers for real-world applications.",
+    "source_document": "https://alice-bob.com/newsroom/alice-bob-100m-series-b-fundraising-press-release",
+    "page": 12
+  },
+  {
+    "source_actor": "Elaia",
+    "target_actor": "Alice-Bob",
+    "interaction_phrase": "stand behind the company",
+    "occurrence_sentence": "Since Alice & Bob's inception, Elaia Partners has been proud to stand behind the company as it strives to achieve energy, and hardware-efficient fault-tolerant quantum computers using cat qubits.",
+    "source_document": "https://alice-bob.com/newsroom/alice-bob-100m-series-b-fundraising-press-release",
+    "page": 12
+  },
+  {
+    "interaction_phrase": "support the company",
+    "occurrence_sentence": "AVP is therefore proud to support the company in their mission to reduce the hardware requirements for building a practical, large-scale quantum computer.",
+    "page": 13,
+    "source_actor": "AVP",
+    "source_document": "https://alice-bob.com/newsroom/alice-bob-100m-series-b-fundraising-press-release",
+    "target_actor": "Alice-Bob"
+  },
+  {
+    "interaction_phrase": "contribute to the groundbreaking work",
+    "occurrence_sentence": "We are thrilled to once again contribute to the groundbreaking work that Alice & Bob is doing to scale quantum computers for real-world applications.",
+    "page": 13,
+    "source_actor": "Bpifrance",
+    "source_document": "https://alice-bob.com/newsroom/alice-bob-100m-series-b-fundraising-press-release",
+    "target_actor": "Alice-Bob"
+  },
+  {
+    "interaction_phrase": "stand behind the company",
+    "occurrence_sentence": "Since Alice & Bob's inception, Elaia Partners has been proud to stand behind the company as it strives to achieve energy, and hardware-efficient fault-tolerant quantum computers using cat qubits.",
+    "page": 13,
+    "source_actor": "Elaia Partners",
+    "source_document": "https://alice-bob.com/newsroom/alice-bob-100m-series-b-fundraising-press-release",
+    "target_actor": "Alice-Bob"
+  },
+  {
+    "source_actor": "Future French Champions",
+    "target_actor": "Bpifrance",
+    "interaction_phrase": "the partnership between QIA and Bpifrance",
+    "occurrence_sentence": "Future French Champions is the partnership between QIA and Bpifrance, initiated in 2014.",
+    "source_document": "https://alice-bob.com/newsroom/alice-bob-100m-series-b-fundraising-press-release",
+    "page": 14
+  },
+  {
+    "source_actor": "Alice-Bob",
+    "target_actor": "Google",
+    "interaction_phrase": "Alice & Bob cat qubit is available for anyone to test through cloud access",
+    "occurrence_sentence": "Alice & Bob cat qubit is available for anyone to test through cloud access.",
+    "source_document": "https://alice-bob.com/newsroom/alice-bob-100m-series-b-fundraising-press-release",
+    "page": 14
+  },
+  {
+    "source_actor": "Alice-Bob",
+    "target_actor": "LinkedIn",
+    "interaction_phrase": "Follow Alice & Bob on LinkedIn",
+    "occurrence_sentence": "Follow Alice & Bob on LinkedIn, X or YouTube, visit their website www.alice-bob.com, or join The Cat Tree on Slack to learn more.",
+    "source_document": "https://alice-bob.com/newsroom/alice-bob-100m-series-b-fundraising-press-release",
+    "page": 14
+  },
+  {
+    "source_actor": "Alice-Bob",
+    "target_actor": "YouTube",
+    "interaction_phrase": "Follow Alice & Bob on YouTube",
+    "occurrence_sentence": "Follow Alice & Bob on LinkedIn, X or YouTube, visit their website www.alice-bob.com, or join The Cat Tree on Slack to learn more.",
+    "source_document": "https://alice-bob.com/newsroom/alice-bob-100m-series-b-fundraising-press-release",
+    "page": 14
+  },
+  {
+    "source_actor": "Future French Champions",
+    "target_actor": "Bpifrance",
+    "interaction_phrase": "the partnership between QIA and Bpifrance",
+    "occurrence_sentence": "Future French Champions is the partnership between QIA and Bpifrance, initiated in 2014.",
+    "source_document": "https://alice-bob.com/newsroom/alice-bob-100m-series-b-fundraising-press-release",
+    "page": 15
+  },
+  {
+    "source_actor": "Bpifrance Investissement",
+    "target_actor": "Bpifrance",
+    "interaction_phrase": "handles Bpifrance's equity investments",
+    "occurrence_sentence": "Bpifrance Investissement is the management company that handles Bpifrance's equity investments.",
+    "source_document": "https://alice-bob.com/newsroom/alice-bob-100m-series-b-fundraising-press-release",
+    "page": 16
+  },
+  {
+    "source_actor": "Future French Champions",
+    "target_actor": "Alice & Bob",
+    "interaction_phrase": "led by Future French Champions",
+    "occurrence_sentence": "Alice & Bob Closes €100M Series B Led by Future French Champions (FFC), AVP and Bpifrance to Advance Towards a Useful Quantum Computer",
+    "source_document": "https://alice-bob.com/newsroom/alice-bob-100m-series-b-fundraising-press-release",
+    "page": 17
+  },
+  {
+    "source_actor": "AVP",
+    "target_actor": "Alice & Bob",
+    "interaction_phrase": "led by AVP",
+    "occurrence_sentence": "Alice & Bob Closes €100M Series B Led by Future French Champions (FFC), AVP and Bpifrance to Advance Towards a Useful Quantum Computer",
+    "source_document": "https://alice-bob.com/newsroom/alice-bob-100m-series-b-fundraising-press-release",
+    "page": 17
+  },
+  {
+    "source_actor": "Bpifrance",
+    "target_actor": "Alice & Bob",
+    "interaction_phrase": "led by Bpifrance",
+    "occurrence_sentence": "Alice & Bob Closes €100M Series B Led by Future French Champions (FFC), AVP and Bpifrance to Advance Towards a Useful Quantum Computer",
+    "source_document": "https://alice-bob.com/newsroom/alice-bob-100m-series-b-fundraising-press-release",
+    "page": 17
+  },
+  {
+    "source_actor": "Bpifrance",
+    "target_actor": "Alice & Bob",
+    "interaction_phrase": "Led by Future French Champions (FFC), AVP and Bpifrance",
+    "occurrence_sentence": "Alice & Bob Closes €100M Series B Led by Future French Champions (FFC), AVP and Bpifrance to Advance Towards a Useful Quantum Computer",
+    "source_document": "https://alice-bob.com/newsroom/alice-bob-100m-series-b-fundraising-press-release",
+    "page": 18
+  },
+  {
+    "source_actor": "Alice",
+    "target_actor": "Alice-Bob",
+    "interaction_phrase": "ALICE & BOB",
+    "occurrence_sentence": "©2026, ALICE & BOB. ALL RIGHTS RESERVED.",
+    "source_document": "https://alice-bob.com/newsroom/alice-bob-100m-series-b-fundraising-press-release",
+    "page": 19
+  },
+  {
+    "source_actor": "Bob",
+    "target_actor": "Alice-Bob",
+    "interaction_phrase": "ALICE & BOB",
+    "occurrence_sentence": "©2026, ALICE & BOB. ALL RIGHTS RESERVED.",
+    "source_document": "https://alice-bob.com/newsroom/alice-bob-100m-series-b-fundraising-press-release",
+    "page": 19
+  },
+  {
+    "source_actor": "Cloudflare",
+    "target_actor": "Calendly",
+    "interaction_phrase": "sets this cookie",
+    "occurrence_sentence": "Calendly sets this cookie to track users across sessions to optimize user experience by maintaining session consistency and providing personalized services",
+    "source_document": "https://alice-bob.com/blog/scaling-the-cats-quantum-engineering-at-infrastructure-scale",
+    "page": 1
+  },
+  {
+    "source_actor": "Google",
+    "target_actor": "Calendly",
+    "interaction_phrase": "sets this cookie",
+    "occurrence_sentence": "Google Recaptcha service sets this cookie to identify bots to protect the website against malicious spam attacks.",
+    "source_document": "https://alice-bob.com/blog/scaling-the-cats-quantum-engineering-at-infrastructure-scale",
+    "page": 1
+  },
+  {
+    "interaction_phrase": "set this cookie",
+    "occurrence_sentence": "Linkedin set this cookie for storing visitor's consent regarding using cookies for non-essential purposes.",
+    "page": 2,
+    "source_actor": "Google",
+    "source_document": "https://alice-bob.com/blog/scaling-the-cats-quantum-engineering-at-infrastructure-scale",
+    "target_actor": "LinkedIn"
+  },
+  {
+    "interaction_phrase": "sets the lidc cookie",
+    "occurrence_sentence": "LinkedIn sets the lidc cookie to facilitate data center selection.",
+    "page": 2,
+    "source_actor": "Google",
+    "source_document": "https://alice-bob.com/blog/scaling-the-cats-quantum-engineering-at-infrastructure-scale",
+    "target_actor": "LinkedIn"
+  },
+  {
+    "source_actor": "YouTube",
+    "target_actor": "Google Analytics",
+    "interaction_phrase": "sets this cookie",
+    "occurrence_sentence": "Google Analytics sets this cookie to store and count page views.",
+    "source_document": "https://alice-bob.com/blog/scaling-the-cats-quantum-engineering-at-infrastructure-scale",
+    "page": 4
+  },
+  {
+    "source_actor": "Google Analytics",
+    "target_actor": "YouTube",
+    "interaction_phrase": "sets this cookie",
+    "occurrence_sentence": "Google Analytics sets this cookie to calculate visitor, session and campaign data and track site usage for the site's analytics report. The cookie stores information anonymously and assigns a randomly generated number to recognise unique visitors.",
+    "source_document": "https://alice-bob.com/blog/scaling-the-cats-quantum-engineering-at-infrastructure-scale",
+    "page": 4
+  },
+  {
+    "interaction_phrase": "Google Analytics sets this cookie",
+    "occurrence_sentence": "Google Analytics sets this cookie to calculate visitor, session and campaign data and track site usage for the site's analytics report.",
+    "page": 5,
+    "source_actor": "Google Analytics",
+    "source_document": "https://alice-bob.com/blog/scaling-the-cats-quantum-engineering-at-infrastructure-scale",
+    "target_actor": "Google"
+  },
+  {
+    "interaction_phrase": "one of the largest quantum engineering labs in Europe",
+    "occurrence_sentence": "Today we are taking you inside our new facility, one of the largest quantum engineering labs in Europe.",
+    "page": 9,
+    "source_actor": "Alice-Bob",
+    "source_document": "https://alice-bob.com/blog/scaling-the-cats-quantum-engineering-at-infrastructure-scale",
+    "target_actor": "Europe"
+  },
+  {
+    "interaction_phrase": "check it out on Google Maps",
+    "occurrence_sentence": "For this next phase, we are expanding. We have built production infrastructure, on a pre-industrial scale. What does that look like you may ask? In this new facility, we can house not three, but twenty dilution refrigerators.",
+    "page": 9,
+    "source_actor": "Alice-Bob",
+    "source_document": "https://alice-bob.com/blog/scaling-the-cats-quantum-engineering-at-infrastructure-scale",
+    "target_actor": "Google"
+  },
+  {
+    "interaction_phrase": "one of the largest quantum engineering labs in Europe",
+    "occurrence_sentence": "Today we are taking you inside our new facility, one of the largest quantum engineering labs in Europe.",
+    "page": 10,
+    "source_actor": "Alice-Bob",
+    "source_document": "https://alice-bob.com/blog/scaling-the-cats-quantum-engineering-at-infrastructure-scale",
+    "target_actor": "Europe"
+  },
+  {
+    "interaction_phrase": "check it out on Google Maps",
+    "occurrence_sentence": "For this next phase, we are expanding. We have built production infrastructure, on a pre-industrial scale. What does that look like you may ask? In this new facility, we can house not three, but twenty dilution refrigerators.",
+    "page": 10,
+    "source_actor": "Alice-Bob",
+    "source_document": "https://alice-bob.com/blog/scaling-the-cats-quantum-engineering-at-infrastructure-scale",
+    "target_actor": "Google"
+  },
+  {
+    "source_actor": "Alice-Bob",
+    "target_actor": "Alice",
+    "interaction_phrase": "Alice & Bob",
+    "occurrence_sentence": "That being said, do stay tuned as the merry month of June might hold some announcements in store for Alice & Bob.",
+    "source_document": "https://alice-bob.com/blog/scaling-the-cats-quantum-engineering-at-infrastructure-scale",
+    "page": 13
+  },
+  {
+    "source_actor": "Alice-Bob",
+    "target_actor": "Bob",
+    "interaction_phrase": "Alice & Bob",
+    "occurrence_sentence": "That being said, do stay tuned as the merry month of June might hold some announcements in store for Alice & Bob.",
+    "source_document": "https://alice-bob.com/blog/scaling-the-cats-quantum-engineering-at-infrastructure-scale",
+    "page": 13
+  },
+  {
+    "source_actor": "Alice-Bob",
+    "target_actor": "NVIDIA",
+    "interaction_phrase": "Uses NVIDIA CUDA-Q",
+    "occurrence_sentence": "How Alice & Bob Uses NVIDIA CUDA-Q to Accelerate Quantum Error Correction Research",
+    "source_document": "https://alice-bob.com/blog/scaling-the-cats-quantum-engineering-at-infrastructure-scale",
+    "page": 15
+  },
+  {
+    "source_actor": "Alice",
+    "target_actor": "Alice-Bob",
+    "interaction_phrase": "ALICE & BOB",
+    "occurrence_sentence": "©2026, ALICE & BOB. ALL RIGHTS RESERVED.",
+    "source_document": "https://alice-bob.com/blog/scaling-the-cats-quantum-engineering-at-infrastructure-scale",
+    "page": 16
+  },
+  {
+    "source_actor": "Bob",
+    "target_actor": "Alice-Bob",
+    "interaction_phrase": "ALICE & BOB",
+    "occurrence_sentence": "©2026, ALICE & BOB. ALL RIGHTS RESERVED.",
+    "source_document": "https://alice-bob.com/blog/scaling-the-cats-quantum-engineering-at-infrastructure-scale",
+    "page": 16
+  },
+  {
+    "source_actor": "Cloudflare",
+    "target_actor": "Calendly",
+    "interaction_phrase": "sets this cookie",
+    "occurrence_sentence": "Calendly sets this cookie to track users across sessions to optimize user experience by maintaining session consistency and providing personalized services",
+    "source_document": "https://alice-bob.com/thats-us",
+    "page": 1
+  },
+  {
+    "source_actor": "Google",
+    "target_actor": "Cloudflare",
+    "interaction_phrase": "sets this cookie",
+    "occurrence_sentence": "Google Recaptcha service sets this cookie to identify bots to protect the website against malicious spam attacks.",
+    "source_document": "https://alice-bob.com/thats-us",
+    "page": 1
+  },
+  {
+    "source_actor": "Google",
+    "target_actor": "LinkedIn",
+    "interaction_phrase": "set this cookie",
+    "occurrence_sentence": "Linkedin set this cookie for storing visitor's consent regarding using cookies for non-essential purposes.",
+    "source_document": "https://alice-bob.com/thats-us",
+    "page": 2
+  },
+  {
+    "interaction_phrase": "sets this cookie",
+    "occurrence_sentence": "Google Analytics sets this cookie to store and count page views.",
+    "page": 4,
+    "source_actor": "YouTube",
+    "source_document": "https://alice-bob.com/thats-us",
+    "target_actor": "Google Analytics"
+  },
+  {
+    "interaction_phrase": "sets this cookie",
+    "occurrence_sentence": "Google Analytics sets this cookie to calculate visitor, session and campaign data and track site usage for the site's analytics report.",
+    "page": 4,
+    "source_actor": "Google Analytics",
+    "source_document": "https://alice-bob.com/thats-us",
+    "target_actor": "YouTube"
+  },
+  {
+    "interaction_phrase": "Google Analytics sets this cookie",
+    "occurrence_sentence": "Google Analytics sets this cookie to calculate visitor, session and campaign data and track site usage for the site's analytics report.",
+    "page": 5,
+    "source_actor": "Google Analytics",
+    "source_document": "https://alice-bob.com/thats-us",
+    "target_actor": "Google"
+  },
+  {
+    "source_actor": "Raphaël Lescanne",
+    "target_actor": "Alice-Bob",
+    "interaction_phrase": "Alice & Bob is born",
+    "occurrence_sentence": "March Alice & Bob is born Nature Physics publishes Raphaël Lescanne's work on cat qubits, a new type of quantum bit inherently protected from a whole class of errors: \"bit-flips\".",
+    "source_document": "https://alice-bob.com/thats-us",
+    "page": 9
+  },
+  {
+    "source_actor": "Raphaël Lescanne",
+    "target_actor": "Alice-Bob",
+    "interaction_phrase": "start Alice & Bob",
+    "occurrence_sentence": "Raphaël's fellow PhD student, Théau, convinces him to start Alice & Bob and, together, to bring cat qubits from the lab to industry.",
+    "source_document": "https://alice-bob.com/thats-us",
+    "page": 10
+  },
+  {
+    "source_actor": "Théau",
+    "target_actor": "Alice-Bob",
+    "interaction_phrase": "start Alice & Bob",
+    "occurrence_sentence": "Raphaël's fellow PhD student, Théau, convinces him to start Alice & Bob and, together, to bring cat qubits from the lab to industry.",
+    "source_document": "https://alice-bob.com/thats-us",
+    "page": 10
+  },
+  {
+    "interaction_phrase": "to start Alice & Bob",
+    "occurrence_sentence": "Raphaël's fellow PhD student, Théau, convinces him to start Alice & Bob and, together, to bring cat qubits from the lab to industry.",
+    "page": 11,
+    "source_actor": "Théau",
+    "source_document": "https://alice-bob.com/thats-us",
+    "target_actor": "Alice-Bob"
+  },
+  {
+    "interaction_phrase": "Alice & Bob",
+    "occurrence_sentence": "Raphaël's fellow PhD student, Théau, convinces him to start Alice & Bob and, together, to bring cat qubits from the lab to industry.",
+    "page": 11,
+    "source_actor": "Alice",
+    "source_document": "https://alice-bob.com/thats-us",
+    "target_actor": "Alice-Bob"
+  },
+  {
+    "interaction_phrase": "Alice & Bob",
+    "occurrence_sentence": "Raphaël's fellow PhD student, Théau, convinces him to start Alice & Bob and, together, to bring cat qubits from the lab to industry.",
+    "page": 11,
+    "source_actor": "Bob",
+    "source_document": "https://alice-bob.com/thats-us",
+    "target_actor": "Alice-Bob"
+  },
+  {
+    "interaction_phrase": "new partners, Equinix",
+    "occurrence_sentence": "The following month, the first notebook to emulate a cat-qubit-based quantum system is distributed by Alice & Bob's new partners, Equinix and OVH Cloud.",
+    "page": 12,
+    "source_actor": "Alice-Bob",
+    "source_document": "https://alice-bob.com/thats-us",
+    "target_actor": "Equinix"
+  },
+  {
+    "source_actor": "Alice-Bob",
+    "target_actor": "Equinix",
+    "interaction_phrase": "new partners",
+    "occurrence_sentence": "The following month, the first notebook to emulate a cat-qubit-based quantum system is distributed by Alice & Bob's new partners, Equinix and OVH Cloud.",
+    "source_document": "https://alice-bob.com/thats-us",
+    "page": 13
+  },
+  {
+    "source_actor": "Philippe Campagne-Ibarcq",
+    "target_actor": "Inria",
+    "interaction_phrase": "Inria",
+    "occurrence_sentence": "Philippe Campagne-Ibarcq Inria",
+    "source_document": "https://alice-bob.com/thats-us",
+    "page": 16
+  },
+  {
+    "source_actor": "Philippe Campagne-Ibarcq",
+    "target_actor": "Inria",
+    "interaction_phrase": "Inria",
+    "occurrence_sentence": "Philippe Campagne-Ibarcq Inria",
+    "source_document": "https://alice-bob.com/thats-us",
+    "page": 17
+  },
+  {
+    "source_actor": "Emmanuel Flurin",
+    "target_actor": "CEA",
+    "interaction_phrase": "CEA",
+    "occurrence_sentence": "Emmanuel Flurin CEA",
+    "source_document": "https://alice-bob.com/thats-us",
+    "page": 17
+  },
+  {
+    "source_actor": "Future French Champions",
+    "target_actor": "Bpifrance",
+    "interaction_phrase": "Backed by",
+    "occurrence_sentence": "Backed by forward-thinking investors",
+    "source_document": "https://alice-bob.com/thats-us",
+    "page": 18
+  },
+  {
+    "source_actor": "Future French Champions",
+    "target_actor": "Elaia",
+    "interaction_phrase": "Backed by",
+    "occurrence_sentence": "Backed by forward-thinking investors",
+    "source_document": "https://alice-bob.com/thats-us",
+    "page": 18
+  },
+  {
+    "source_actor": "Future French Champions",
+    "target_actor": "European Innovation Council",
+    "interaction_phrase": "Backed by",
+    "occurrence_sentence": "Backed by forward-thinking investors",
+    "source_document": "https://alice-bob.com/thats-us",
+    "page": 18
+  },
+  {
+    "source_actor": "Alice-Bob",
+    "target_actor": "Future French Champions",
+    "interaction_phrase": "Future French Champions",
+    "occurrence_sentence": "Backed by forward-thinking investors",
+    "source_document": "https://alice-bob.com/thats-us",
+    "page": 19
+  },
+  {
+    "source_actor": "Alice-Bob",
+    "target_actor": "Bpifrance",
+    "interaction_phrase": "Bpifrance",
+    "occurrence_sentence": "Backed by forward-thinking investors",
+    "source_document": "https://alice-bob.com/thats-us",
+    "page": 19
+  },
+  {
+    "source_actor": "Alice-Bob",
+    "target_actor": "Elaia",
+    "interaction_phrase": "Elaia",
+    "occurrence_sentence": "Backed by forward-thinking investors",
+    "source_document": "https://alice-bob.com/thats-us",
+    "page": 19
+  },
+  {
+    "source_actor": "Alice-Bob",
+    "target_actor": "European Innovation Council",
+    "interaction_phrase": "European Innovation Council",
+    "occurrence_sentence": "Backed by forward-thinking investors",
+    "source_document": "https://alice-bob.com/thats-us",
+    "page": 19
+  },
+  {
+    "source_actor": "Alice",
+    "target_actor": "Alice-Bob",
+    "interaction_phrase": "ALICE & BOB",
+    "occurrence_sentence": "©2026, ALICE & BOB. ALL RIGHTS RESERVED.",
+    "source_document": "https://alice-bob.com/thats-us",
+    "page": 20
+  },
+  {
+    "source_actor": "Bob",
+    "target_actor": "Alice-Bob",
+    "interaction_phrase": "ALICE & BOB",
+    "occurrence_sentence": "©2026, ALICE & BOB. ALL RIGHTS RESERVED.",
+    "source_document": "https://alice-bob.com/thats-us",
+    "page": 20
+  },
+  {
+    "source_actor": "Cloudflare",
+    "target_actor": "Calendly",
+    "interaction_phrase": "sets this cookie",
+    "occurrence_sentence": "Calendly sets this cookie to track users across sessions to optimize user experience by maintaining session consistency and providing personalized services",
+    "source_document": "https://alice-bob.com/hpc-report",
+    "page": 1
+  },
+  {
+    "source_actor": "Google",
+    "target_actor": "Cloudflare",
+    "interaction_phrase": "sets this cookie",
+    "occurrence_sentence": "Google Recaptcha service sets this cookie to identify bots to protect the website against malicious spam attacks.",
+    "source_document": "https://alice-bob.com/hpc-report",
+    "page": 1
+  },
+  {
+    "interaction_phrase": "sets this cookie",
+    "occurrence_sentence": "WordPress multilingual plugin sets this cookie to store the current language/language settings.",
+    "page": 3,
+    "source_actor": "WordPress",
+    "source_document": "https://alice-bob.com/hpc-report",
+    "target_actor": "LinkedIn"
+  },
+  {
+    "interaction_phrase": "sets this cookie",
+    "occurrence_sentence": "YouTube sets this cookie to store the user's video preferences using embedded YouTube videos.",
+    "page": 3,
+    "source_actor": "YouTube",
+    "source_document": "https://alice-bob.com/hpc-report",
+    "target_actor": "WordPress"
+  },
+  {
+    "interaction_phrase": "is used by YouTube",
+    "occurrence_sentence": "The cookie ytidb::LAST_RESULT_ENTRY_KEY is used by YouTube to store the last search result entry that was clicked by the user.",
+    "page": 3,
+    "source_actor": "YouTube",
+    "source_document": "https://alice-bob.com/hpc-report",
+    "target_actor": "WordPress"
+  },
+  {
+    "interaction_phrase": "is used by YouTube",
+    "occurrence_sentence": "The yt-remote-session-app cookie is used by YouTube to store user preferences and information about the interface of the embedded YouTube video player.",
+    "page": 3,
+    "source_actor": "YouTube",
+    "source_document": "https://alice-bob.com/hpc-report",
+    "target_actor": "WordPress"
+  },
+  {
+    "interaction_phrase": "is used to store",
+    "occurrence_sentence": "The yt-remote-cast-installed cookie is used to store the user's video player preferences using embedded YouTube video.",
+    "page": 3,
+    "source_actor": "YouTube",
+    "source_document": "https://alice-bob.com/hpc-report",
+    "target_actor": "WordPress"
+  },
+  {
+    "interaction_phrase": "sets this cookie",
+    "occurrence_sentence": "Google Analytics sets this cookie to store and count page views.",
+    "page": 4,
+    "source_actor": "YouTube",
+    "source_document": "https://alice-bob.com/hpc-report",
+    "target_actor": "Google Analytics"
+  },
+  {
+    "source_actor": "Alice",
+    "target_actor": "Alice-Bob",
+    "interaction_phrase": "ALICE & BOB",
+    "occurrence_sentence": "©2026, ALICE & BOB. ALL RIGHTS RESERVED.",
+    "source_document": "https://alice-bob.com/hpc-report",
+    "page": 12
+  },
+  {
+    "source_actor": "Bob",
+    "target_actor": "Alice-Bob",
+    "interaction_phrase": "ALICE & BOB",
+    "occurrence_sentence": "©2026, ALICE & BOB. ALL RIGHTS RESERVED.",
+    "source_document": "https://alice-bob.com/hpc-report",
+    "page": 12
+  }
+]

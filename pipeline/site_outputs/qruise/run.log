@@ -1,0 +1,553 @@
+
+========================================================================
+RUN STARTED  2026-06-17 05:31:46
+site_pipeline.py https://www.qruise.com/
+========================================================================
+
+[05:31:46 +0s | qruise] === 0 crawl site ===
+[05:31:48 +2s | qruise] [INIT].... → Crawl4AI 0.8.6 
+[05:31:49 +3s | qruise] [FETCH]... ↓ https://www.qruise.com/                                                                              | ✓ | ⏱: 0.70s 
+[05:31:49 +3s | qruise] [SCRAPE].. ◆ https://www.qruise.com/                                                                              | ✓ | ⏱: 0.02s 
+[05:31:49 +3s | qruise] [COMPLETE] ● https://www.qruise.com/                                                                              | ✓ | ⏱: 0.74s 
+[05:31:50 +4s | qruise] [FETCH]... ↓ https://newsletter.qruise.com/subscribe                                                              | ✓ | ⏱: 1.06s 
+[05:31:50 +4s | qruise] [SCRAPE].. ◆ https://newsletter.qruise.com/subscribe                                                              | ✓ | ⏱: 0.01s 
+[05:31:50 +4s | qruise] [COMPLETE] ● https://newsletter.qruise.com/subscribe                                                              | ✓ | ⏱: 1.09s 
+[05:31:51 +5s | qruise] [FETCH]... ↓ https://docs.qruise.com/                                                                             | ✓ | ⏱: 2.17s 
+[05:31:51 +5s | qruise] [SCRAPE].. ◆ https://docs.qruise.com/                                                                             | ✓ | ⏱: 0.05s 
+[05:31:51 +5s | qruise] [COMPLETE] ● https://docs.qruise.com/                                                                             | ✓ | ⏱: 2.23s 
+[05:31:53 +7s | qruise] [FETCH]... ↓ https://www.qruise.com/                                                                              | ✓ | ⏱: 3.80s 
+[05:31:53 +7s | qruise] [SCRAPE].. ◆ https://www.qruise.com/                                                                              | ✓ | ⏱: 0.05s 
+[05:31:53 +7s | qruise] [COMPLETE] ● https://www.qruise.com/                                                                              | ✓ | ⏱: 3.87s 
+[05:31:53 +7s | qruise] [FETCH]... ↓ https://www.qruise.com/news-and-events/news/2025-07-product-update                                   | ✓ | ⏱: 4.20s 
+[05:31:53 +8s | qruise] [SCRAPE].. ◆ https://www.qruise.com/news-and-events/news/2025-07-product-update                                   | ✓ | ⏱: 0.14s 
+[05:31:53 +8s | qruise] [COMPLETE] ● https://www.qruise.com/news-and-events/news/2025-07-product-update                                   | ✓ | ⏱: 4.37s 
+[05:31:53 +8s | qruise] [FETCH]... ↓ https://www.qruise.com/news-and-events/news/qruise-and-qblox-partnership                             | ✓ | ⏱: 4.40s 
+[05:31:53 +8s | qruise] [SCRAPE].. ◆ https://www.qruise.com/news-and-events/news/qruise-and-qblox-partnership                             | ✓ | ⏱: 0.01s 
+[05:31:53 +8s | qruise] [COMPLETE] ● https://www.qruise.com/news-and-events/news/qruise-and-qblox-partnership                             | ✓ | ⏱: 4.42s 
+[05:31:54 +8s | qruise] [FETCH]... ↓ https://www.qruise.com/industries/quantum-sensing                                                    | ✓ | ⏱: 4.50s 
+[05:31:54 +8s | qruise] [SCRAPE].. ◆ https://www.qruise.com/industries/quantum-sensing                                                    | ✓ | ⏱: 0.01s 
+[05:31:54 +8s | qruise] [COMPLETE] ● https://www.qruise.com/industries/quantum-sensing                                                    | ✓ | ⏱: 4.51s 
+[05:31:54 +8s | qruise] [FETCH]... ↓ https://www.qruise.com/news-and-events/news/open-architecture-quantum-testbed                        | ✓ | ⏱: 4.82s 
+[05:31:54 +8s | qruise] [SCRAPE].. ◆ https://www.qruise.com/news-and-events/news/open-architecture-quantum-testbed                        | ✓ | ⏱: 0.01s 
+[05:31:54 +8s | qruise] [COMPLETE] ● https://www.qruise.com/news-and-events/news/open-architecture-quantum-testbed                        | ✓ | ⏱: 4.84s 
+[05:31:54 +8s | qruise] [FETCH]... ↓ https://www.qruise.com/company/research-projects                                                     | ✓ | ⏱: 5.11s 
+[05:31:54 +8s | qruise] [SCRAPE].. ◆ https://www.qruise.com/company/research-projects                                                     | ✓ | ⏱: 0.05s 
+[05:31:54 +8s | qruise] [COMPLETE] ● https://www.qruise.com/company/research-projects                                                     | ✓ | ⏱: 5.18s 
+[05:31:54 +8s | qruise] [FETCH]... ↓ https://www.qruise.com/contact                                                                       | ✓ | ⏱: 5.21s 
+[05:31:54 +8s | qruise] [SCRAPE].. ◆ https://www.qruise.com/contact                                                                       | ✓ | ⏱: 0.02s 
+[05:31:54 +8s | qruise] [COMPLETE] ● https://www.qruise.com/contact                                                                       | ✓ | ⏱: 5.24s 
+[05:31:55 +9s | qruise] [FETCH]... ↓ https://www.qruise.com/news-and-events/news/qruise-extends-nv-centre-bring-up-goethe-university      | ✓ | ⏱: 5.46s 
+[05:31:55 +9s | qruise] [SCRAPE].. ◆ https://www.qruise.com/news-and-events/news/qruise-extends-nv-centre-bring-up-goethe-university      | ✓ | ⏱: 0.02s 
+[05:31:55 +9s | qruise] [COMPLETE] ● https://www.qruise.com/news-and-events/news/qruise-extends-nv-centre-bring-up-goethe-university      | ✓ | ⏱: 5.49s 
+[05:31:55 +9s | qruise] [FETCH]... ↓ https://www.qruise.com/news-and-events/news/2025-10-product-update                                   | ✓ | ⏱: 5.64s 
+[05:31:55 +9s | qruise] [SCRAPE].. ◆ https://www.qruise.com/news-and-events/news/2025-10-product-update                                   | ✓ | ⏱: 0.02s 
+[05:31:55 +9s | qruise] [COMPLETE] ● https://www.qruise.com/news-and-events/news/2025-10-product-update                                   | ✓ | ⏱: 5.67s 
+[05:31:55 +9s | qruise] [FETCH]... ↓ https://www.qruise.com/news-and-events/news/qruiseos-at-iqcc                                         | ✓ | ⏱: 5.81s 
+[05:31:55 +9s | qruise] [SCRAPE].. ◆ https://www.qruise.com/news-and-events/news/qruiseos-at-iqcc                                         | ✓ | ⏱: 0.02s 
+[05:31:55 +9s | qruise] [COMPLETE] ● https://www.qruise.com/news-and-events/news/qruiseos-at-iqcc                                         | ✓ | ⏱: 5.85s 
+[05:31:55 +9s | qruise] [FETCH]... ↓ https://www.qruise.com/news-and-events/news/resonance-for-MR-launch                                  | ✓ | ⏱: 6.04s 
+[05:31:55 +9s | qruise] [SCRAPE].. ◆ https://www.qruise.com/news-and-events/news/resonance-for-MR-launch                                  | ✓ | ⏱: 0.02s 
+[05:31:55 +9s | qruise] [COMPLETE] ● https://www.qruise.com/news-and-events/news/resonance-for-MR-launch                                  | ✓ | ⏱: 6.07s 
+[05:31:55 +9s | qruise] [FETCH]... ↓ https://www.qruise.com/news-and-events/news/2025-01-product-update                                   | ✓ | ⏱: 6.19s 
+[05:31:55 +9s | qruise] [SCRAPE].. ◆ https://www.qruise.com/news-and-events/news/2025-01-product-update                                   | ✓ | ⏱: 0.02s 
+[05:31:55 +9s | qruise] [COMPLETE] ● https://www.qruise.com/news-and-events/news/2025-01-product-update                                   | ✓ | ⏱: 6.22s 
+[05:31:55 +9s | qruise] [FETCH]... ↓ https://www.qruise.com/news-and-events/news/2026-01-product-update                                   | ✓ | ⏱: 6.24s 
+[05:31:55 +9s | qruise] [SCRAPE].. ◆ https://www.qruise.com/news-and-events/news/2026-01-product-update                                   | ✓ | ⏱: 0.01s 
+[05:31:55 +10s | qruise] [COMPLETE] ● https://www.qruise.com/news-and-events/news/2026-01-product-update                                   | ✓ | ⏱: 6.27s 
+[05:31:55 +10s | qruise] [FETCH]... ↓ https://www.qruise.com/company/partners                                                              | ✓ | ⏱: 6.30s 
+[05:31:55 +10s | qruise] [SCRAPE].. ◆ https://www.qruise.com/company/partners                                                              | ✓ | ⏱: 0.02s 
+[05:31:55 +10s | qruise] [COMPLETE] ● https://www.qruise.com/company/partners                                                              | ✓ | ⏱: 6.34s 
+[05:31:56 +10s | qruise] [FETCH]... ↓ https://www.qruise.com/news-and-events/news/2025-wrapup                                              | ✓ | ⏱: 6.48s 
+[05:31:56 +10s | qruise] [SCRAPE].. ◆ https://www.qruise.com/news-and-events/news/2025-wrapup                                              | ✓ | ⏱: 0.02s 
+[05:31:56 +10s | qruise] [COMPLETE] ● https://www.qruise.com/news-and-events/news/2025-wrapup                                              | ✓ | ⏱: 6.51s 
+[05:31:56 +10s | qruise] [FETCH]... ↓ https://www.qruise.com/industries/qc                                                                 | ✓ | ⏱: 6.57s 
+[05:31:56 +10s | qruise] [SCRAPE].. ◆ https://www.qruise.com/industries/qc                                                                 | ✓ | ⏱: 0.01s 
+[05:31:56 +10s | qruise] [COMPLETE] ● https://www.qruise.com/industries/qc                                                                 | ✓ | ⏱: 6.59s 
+[05:31:56 +10s | qruise] [FETCH]... ↓ https://www.qruise.com/industries/mri                                                                | ✓ | ⏱: 6.64s 
+[05:31:56 +10s | qruise] [SCRAPE].. ◆ https://www.qruise.com/industries/mri                                                                | ✓ | ⏱: 0.01s 
+[05:31:56 +10s | qruise] [COMPLETE] ● https://www.qruise.com/industries/mri                                                                | ✓ | ⏱: 6.66s 
+[05:31:56 +10s | qruise] Saved: crawl_output/55e7c0d65e_www.qruise.com.json
+[05:31:56 +10s | qruise] Saved: crawl_output/5ede3ee0e4_newsletter.qruise.com_subscribe.json
+[05:31:56 +10s | qruise] Saved: crawl_output/08fd0c8188_docs.qruise.com.json
+[05:31:56 +10s | qruise] Duplicate skipped: https://www.qruise.com
+[05:31:56 +10s | qruise] Saved: crawl_output/074984f28b_www.qruise.com_news-and-events_news_2025-07-product-update.json
+[05:31:56 +10s | qruise] Saved: crawl_output/542989308b_www.qruise.com_news-and-events_news_qruise-and-qblox-partnership.json
+[05:31:56 +10s | qruise] Saved: crawl_output/9883bc4840_www.qruise.com_industries_quantum-sensing.json
+[05:31:56 +10s | qruise] Saved: crawl_output/bf7167e783_www.qruise.com_news-and-events_news_open-architecture-quantum-testbed.json
+[05:31:56 +10s | qruise] Saved: crawl_output/f16691e5cd_www.qruise.com_company_research-projects.json
+[05:31:56 +10s | qruise] Saved: crawl_output/5b50350a04_www.qruise.com_contact.json
+[05:31:56 +10s | qruise] Saved: crawl_output/f6cde20ba7_www.qruise.com_news-and-events_news_qruise-extends-nv-centre-bring-up-goethe-university.json
+[05:31:56 +10s | qruise] Saved: crawl_output/e3edcc00a8_www.qruise.com_news-and-events_news_2025-10-product-update.json
+[05:31:56 +10s | qruise] Saved: crawl_output/913020083c_www.qruise.com_news-and-events_news_qruiseos-at-iqcc.json
+[05:31:56 +10s | qruise] Saved: crawl_output/2e65e6f0b4_www.qruise.com_news-and-events_news_resonance-for-MR-launch.json
+[05:31:56 +10s | qruise] Saved: crawl_output/1b16445cb8_www.qruise.com_news-and-events_news_2025-01-product-update.json
+[05:31:56 +10s | qruise] Saved: crawl_output/f82148bc1a_www.qruise.com_news-and-events_news_2026-01-product-update.json
+[05:31:56 +10s | qruise] Saved: crawl_output/1dfadbce9f_www.qruise.com_company_partners.json
+[05:31:56 +10s | qruise] Saved: crawl_output/d726ebe364_www.qruise.com_news-and-events_news_2025-wrapup.json
+[05:31:56 +10s | qruise] Saved: crawl_output/acf6f4b35e_www.qruise.com_industries_qc.json
+[05:31:56 +10s | qruise] Saved: crawl_output/f121818c99_www.qruise.com_industries_mri.json
+
+[05:31:57 +11s | qruise] === 1 actor extraction ===
+[05:31:57 +11s | qruise] Reading page (1/19): https://www.qruise.com/news-and-events/news/2025-07-product-update
+[05:31:57 +11s | qruise] Extracting: https://www.qruise.com/news-and-events/news/2025-07-product-update (1/19), chunk 1/15
+[05:32:02 +16s | qruise] Extracting: https://www.qruise.com/news-and-events/news/2025-07-product-update (1/19), chunk 2/15
+[05:32:12 +22s | qruise] Extracting: https://www.qruise.com/news-and-events/news/2025-07-product-update (1/19), chunk 3/15
+[05:32:17 +27s | qruise] Extracting: https://www.qruise.com/news-and-events/news/2025-07-product-update (1/19), chunk 4/15
+[05:32:23 +33s | qruise] Repaired malformed JSON.
+[05:32:23 +33s | qruise] Extracting: https://www.qruise.com/news-and-events/news/2025-07-product-update (1/19), chunk 5/15
+[05:32:27 +37s | qruise] Extracting: https://www.qruise.com/news-and-events/news/2025-07-product-update (1/19), chunk 6/15
+[05:32:34 +44s | qruise] Repaired malformed JSON.
+[05:32:34 +44s | qruise] Extracting: https://www.qruise.com/news-and-events/news/2025-07-product-update (1/19), chunk 7/15
+[05:32:39 +49s | qruise] Repaired malformed JSON.
+[05:32:39 +49s | qruise] Extracting: https://www.qruise.com/news-and-events/news/2025-07-product-update (1/19), chunk 8/15
+[05:32:49 +56s | qruise] Repaired malformed JSON.
+[05:32:49 +56s | qruise] Extracting: https://www.qruise.com/news-and-events/news/2025-07-product-update (1/19), chunk 9/15
+[05:32:56 +1m 3s | qruise] Repaired malformed JSON.
+[05:32:56 +1m 3s | qruise] Extracting: https://www.qruise.com/news-and-events/news/2025-07-product-update (1/19), chunk 10/15
+[05:33:04 +1m 11s | qruise] Repaired malformed JSON.
+[05:33:04 +1m 11s | qruise] Extracting: https://www.qruise.com/news-and-events/news/2025-07-product-update (1/19), chunk 11/15
+[05:33:10 +1m 17s | qruise] Extracting: https://www.qruise.com/news-and-events/news/2025-07-product-update (1/19), chunk 12/15
+[05:33:16 +1m 23s | qruise] Extracting: https://www.qruise.com/news-and-events/news/2025-07-product-update (1/19), chunk 13/15
+[05:33:25 +1m 29s | qruise] Extracting: https://www.qruise.com/news-and-events/news/2025-07-product-update (1/19), chunk 14/15
+[05:33:29 +1m 33s | qruise] Extracting: https://www.qruise.com/news-and-events/news/2025-07-product-update (1/19), chunk 15/15
+[05:33:36 +1m 40s | qruise] Repaired malformed JSON.
+[05:33:36 +1m 40s | qruise] Reading page (2/19): https://docs.qruise.com
+[05:33:36 +1m 40s | qruise] Extracting: https://docs.qruise.com (2/19), chunk 1/12
+[05:33:40 +1m 44s | qruise] Extracting: https://docs.qruise.com (2/19), chunk 2/12
+[05:33:42 +1m 46s | qruise] Extracting: https://docs.qruise.com (2/19), chunk 3/12
+[05:33:48 +1m 52s | qruise] Repaired malformed JSON.
+[05:33:48 +1m 52s | qruise] Extracting: https://docs.qruise.com (2/19), chunk 4/12
+[05:33:49 +1m 54s | qruise] Extracting: https://docs.qruise.com (2/19), chunk 5/12
+[05:33:51 +1m 55s | qruise] Extracting: https://docs.qruise.com (2/19), chunk 6/12
+[05:33:54 +1m 58s | qruise] Extracting: https://docs.qruise.com (2/19), chunk 7/12
+[05:34:00 +2m 1s | qruise] Extracting: https://docs.qruise.com (2/19), chunk 8/12
+[05:34:01 +2m 2s | qruise] Extracting: https://docs.qruise.com (2/19), chunk 9/12
+[05:34:03 +2m 5s | qruise] Extracting: https://docs.qruise.com (2/19), chunk 10/12
+[05:34:10 +2m 12s | qruise] Repaired malformed JSON.
+[05:34:10 +2m 12s | qruise] Extracting: https://docs.qruise.com (2/19), chunk 11/12
+[05:34:14 +2m 15s | qruise] Extracting: https://docs.qruise.com (2/19), chunk 12/12
+[05:34:22 +2m 24s | qruise] Repaired malformed JSON.
+[05:34:22 +2m 24s | qruise] Reading page (3/19): https://www.qruise.com/news-and-events/news/2025-01-product-update
+[05:34:22 +2m 24s | qruise] Extracting: https://www.qruise.com/news-and-events/news/2025-01-product-update (3/19), chunk 1/12
+[05:34:27 +2m 28s | qruise] Extracting: https://www.qruise.com/news-and-events/news/2025-01-product-update (3/19), chunk 2/12
+[05:34:36 +2m 34s | qruise] Repaired malformed JSON.
+[05:34:36 +2m 34s | qruise] Extracting: https://www.qruise.com/news-and-events/news/2025-01-product-update (3/19), chunk 3/12
+[05:34:42 +2m 40s | qruise] Extracting: https://www.qruise.com/news-and-events/news/2025-01-product-update (3/19), chunk 4/12
+[05:34:49 +2m 47s | qruise] Repaired malformed JSON.
+[05:34:49 +2m 47s | qruise] Extracting: https://www.qruise.com/news-and-events/news/2025-01-product-update (3/19), chunk 5/12
+[05:34:54 +2m 53s | qruise] Repaired malformed JSON.
+[05:34:54 +2m 53s | qruise] Extracting: https://www.qruise.com/news-and-events/news/2025-01-product-update (3/19), chunk 6/12
+[05:35:01 +2m 59s | qruise] Repaired malformed JSON.
+[05:35:01 +2m 59s | qruise] Extracting: https://www.qruise.com/news-and-events/news/2025-01-product-update (3/19), chunk 7/12
+[05:35:11 +3m 6s | qruise] Repaired malformed JSON.
+[05:35:11 +3m 6s | qruise] Extracting: https://www.qruise.com/news-and-events/news/2025-01-product-update (3/19), chunk 8/12
+[05:35:18 +3m 13s | qruise] Repaired malformed JSON.
+[05:35:18 +3m 13s | qruise] Extracting: https://www.qruise.com/news-and-events/news/2025-01-product-update (3/19), chunk 9/12
+[05:35:24 +3m 19s | qruise] Repaired malformed JSON.
+[05:35:24 +3m 19s | qruise] Extracting: https://www.qruise.com/news-and-events/news/2025-01-product-update (3/19), chunk 10/12
+[05:35:28 +3m 23s | qruise] Extracting: https://www.qruise.com/news-and-events/news/2025-01-product-update (3/19), chunk 11/12
+[05:35:31 +3m 27s | qruise] Extracting: https://www.qruise.com/news-and-events/news/2025-01-product-update (3/19), chunk 12/12
+[05:35:40 +3m 35s | qruise] Repaired malformed JSON.
+[05:35:40 +3m 35s | qruise] Reading page (4/19): https://www.qruise.com/company/partners
+[05:35:40 +3m 35s | qruise] Extracting: https://www.qruise.com/company/partners (4/19), chunk 1/8
+[05:35:45 +3m 38s | qruise] Extracting: https://www.qruise.com/company/partners (4/19), chunk 2/8
+[05:35:52 +3m 44s | qruise] Repaired malformed JSON.
+[05:35:52 +3m 44s | qruise] Extracting: https://www.qruise.com/company/partners (4/19), chunk 3/8
+[05:36:00 +3m 52s | qruise] Repaired malformed JSON.
+[05:36:00 +3m 52s | qruise] Extracting: https://www.qruise.com/company/partners (4/19), chunk 4/8
+[05:36:08 +4m 0s | qruise] Repaired malformed JSON.
+[05:36:08 +4m 0s | qruise] Extracting: https://www.qruise.com/company/partners (4/19), chunk 5/8
+[05:36:15 +4m 7s | qruise] Repaired malformed JSON.
+[05:36:15 +4m 7s | qruise] Extracting: https://www.qruise.com/company/partners (4/19), chunk 6/8
+[05:36:23 +4m 15s | qruise] Repaired malformed JSON.
+[05:36:23 +4m 15s | qruise] Extracting: https://www.qruise.com/company/partners (4/19), chunk 7/8
+[05:36:28 +4m 21s | qruise] Repaired malformed JSON.
+[05:36:28 +4m 21s | qruise] Extracting: https://www.qruise.com/company/partners (4/19), chunk 8/8
+[05:36:38 +4m 26s | qruise] Repaired malformed JSON.
+[05:36:38 +4m 26s | qruise] Reading page (5/19): https://www.qruise.com/news-and-events/news/resonance-for-MR-launch
+[05:36:38 +4m 26s | qruise] Extracting: https://www.qruise.com/news-and-events/news/resonance-for-MR-launch (5/19), chunk 1/7
+[05:36:43 +4m 31s | qruise] Repaired malformed JSON.
+[05:36:43 +4m 31s | qruise] Extracting: https://www.qruise.com/news-and-events/news/resonance-for-MR-launch (5/19), chunk 2/7
+[05:36:49 +4m 38s | qruise] Repaired malformed JSON.
+[05:36:49 +4m 38s | qruise] Extracting: https://www.qruise.com/news-and-events/news/resonance-for-MR-launch (5/19), chunk 3/7
+[05:36:58 +4m 46s | qruise] Repaired malformed JSON.
+[05:36:58 +4m 46s | qruise] Extracting: https://www.qruise.com/news-and-events/news/resonance-for-MR-launch (5/19), chunk 4/7
+[05:37:05 +4m 53s | qruise] Repaired malformed JSON.
+[05:37:05 +4m 53s | qruise] Extracting: https://www.qruise.com/news-and-events/news/resonance-for-MR-launch (5/19), chunk 5/7
+[05:37:15 +5m 0s | qruise] Repaired malformed JSON.
+[05:37:15 +5m 0s | qruise] Extracting: https://www.qruise.com/news-and-events/news/resonance-for-MR-launch (5/19), chunk 6/7
+[05:37:23 +5m 8s | qruise] Repaired malformed JSON.
+[05:37:23 +5m 8s | qruise] Extracting: https://www.qruise.com/news-and-events/news/resonance-for-MR-launch (5/19), chunk 7/7
+[05:37:30 +5m 15s | qruise] Repaired malformed JSON.
+[05:37:30 +5m 15s | qruise] Reading page (6/19): https://www.qruise.com/news-and-events/news/qruise-and-qblox-partnership
+[05:37:30 +5m 15s | qruise] Extracting: https://www.qruise.com/news-and-events/news/qruise-and-qblox-partnership (6/19), chunk 1/6
+[05:37:37 +5m 22s | qruise] Extracting: https://www.qruise.com/news-and-events/news/qruise-and-qblox-partnership (6/19), chunk 2/6
+[05:37:48 +5m 30s | qruise] Repaired malformed JSON.
+[05:37:48 +5m 30s | qruise] Extracting: https://www.qruise.com/news-and-events/news/qruise-and-qblox-partnership (6/19), chunk 3/6
+[05:37:55 +5m 38s | qruise] Repaired malformed JSON.
+[05:37:55 +5m 38s | qruise] Extracting: https://www.qruise.com/news-and-events/news/qruise-and-qblox-partnership (6/19), chunk 4/6
+[05:38:02 +5m 44s | qruise] Repaired malformed JSON.
+[05:38:02 +5m 44s | qruise] Extracting: https://www.qruise.com/news-and-events/news/qruise-and-qblox-partnership (6/19), chunk 5/6
+[05:38:08 +5m 50s | qruise] Repaired malformed JSON.
+[05:38:08 +5m 50s | qruise] Extracting: https://www.qruise.com/news-and-events/news/qruise-and-qblox-partnership (6/19), chunk 6/6
+[05:38:16 +5m 58s | qruise] Repaired malformed JSON.
+[05:38:16 +5m 58s | qruise] Reading page (7/19): https://www.qruise.com
+[05:38:16 +5m 58s | qruise] Extracting: https://www.qruise.com (7/19), chunk 1/11
+[05:38:17 +6m 0s | qruise] Extracting: https://www.qruise.com (7/19), chunk 2/11
+[05:38:27 +6m 6s | qruise] Repaired malformed JSON.
+[05:38:27 +6m 6s | qruise] Extracting: https://www.qruise.com (7/19), chunk 3/11
+[05:38:35 +6m 14s | qruise] Repaired malformed JSON.
+[05:38:35 +6m 14s | qruise] Extracting: https://www.qruise.com (7/19), chunk 4/11
+[05:38:43 +6m 23s | qruise] Repaired malformed JSON.
+[05:38:43 +6m 23s | qruise] Extracting: https://www.qruise.com (7/19), chunk 5/11
+[05:38:50 +6m 29s | qruise] Repaired malformed JSON.
+[05:38:50 +6m 29s | qruise] Extracting: https://www.qruise.com (7/19), chunk 6/11
+[05:38:57 +6m 36s | qruise] Repaired malformed JSON.
+[05:38:57 +6m 36s | qruise] Extracting: https://www.qruise.com (7/19), chunk 7/11
+[05:39:04 +6m 44s | qruise] Repaired malformed JSON.
+[05:39:04 +6m 44s | qruise] Extracting: https://www.qruise.com (7/19), chunk 8/11
+[05:39:15 +6m 50s | qruise] Repaired malformed JSON.
+[05:39:15 +6m 50s | qruise] Extracting: https://www.qruise.com (7/19), chunk 9/11
+[05:39:24 +6m 59s | qruise] Repaired malformed JSON.
+[05:39:24 +6m 59s | qruise] Extracting: https://www.qruise.com (7/19), chunk 10/11
+[05:39:33 +7m 8s | qruise] Repaired malformed JSON.
+[05:39:33 +7m 8s | qruise] Extracting: https://www.qruise.com (7/19), chunk 11/11
+[05:39:41 +7m 16s | qruise] Repaired malformed JSON.
+[05:39:41 +7m 16s | qruise] Reading page (8/19): https://www.qruise.com/contact
+[05:39:41 +7m 16s | qruise] Extracting: https://www.qruise.com/contact (8/19), chunk 1/4
+[05:39:42 +7m 17s | qruise] Extracting: https://www.qruise.com/contact (8/19), chunk 2/4
+[05:39:54 +7m 26s | qruise] Repaired malformed JSON.
+[05:39:54 +7m 26s | qruise] Extracting: https://www.qruise.com/contact (8/19), chunk 3/4
+[05:39:59 +7m 32s | qruise] Repaired malformed JSON.
+[05:39:59 +7m 32s | qruise] Extracting: https://www.qruise.com/contact (8/19), chunk 4/4
+[05:40:07 +7m 39s | qruise] Repaired malformed JSON.
+[05:40:07 +7m 39s | qruise] Reading page (9/19): https://newsletter.qruise.com/subscribe
+[05:40:07 +7m 39s | qruise] Extracting: https://newsletter.qruise.com/subscribe (9/19), chunk 1/1
+[05:40:08 +7m 40s | qruise] Reading page (10/19): https://www.qruise.com/news-and-events/news/qruiseos-at-iqcc
+[05:40:08 +7m 40s | qruise] Extracting: https://www.qruise.com/news-and-events/news/qruiseos-at-iqcc (10/19), chunk 1/8
+[05:40:10 +7m 42s | qruise] Extracting: https://www.qruise.com/news-and-events/news/qruiseos-at-iqcc (10/19), chunk 2/8
+[05:40:18 +7m 50s | qruise] Repaired malformed JSON.
+[05:40:18 +7m 50s | qruise] Extracting: https://www.qruise.com/news-and-events/news/qruiseos-at-iqcc (10/19), chunk 3/8
+[05:40:28 +7m 57s | qruise] Repaired malformed JSON.
+[05:40:28 +7m 57s | qruise] Extracting: https://www.qruise.com/news-and-events/news/qruiseos-at-iqcc (10/19), chunk 4/8
+[05:40:34 +8m 3s | qruise] Repaired malformed JSON.
+[05:40:34 +8m 3s | qruise] Extracting: https://www.qruise.com/news-and-events/news/qruiseos-at-iqcc (10/19), chunk 5/8
+[05:40:43 +8m 12s | qruise] Repaired malformed JSON.
+[05:40:43 +8m 12s | qruise] Extracting: https://www.qruise.com/news-and-events/news/qruiseos-at-iqcc (10/19), chunk 6/8
+[05:40:49 +8m 19s | qruise] Repaired malformed JSON.
+[05:40:49 +8m 19s | qruise] Extracting: https://www.qruise.com/news-and-events/news/qruiseos-at-iqcc (10/19), chunk 7/8
+[05:40:58 +8m 25s | qruise] Repaired malformed JSON.
+[05:40:58 +8m 25s | qruise] Extracting: https://www.qruise.com/news-and-events/news/qruiseos-at-iqcc (10/19), chunk 8/8
+[05:41:03 +8m 30s | qruise] Repaired malformed JSON.
+[05:41:03 +8m 30s | qruise] Reading page (11/19): https://www.qruise.com/industries/quantum-sensing
+[05:41:03 +8m 30s | qruise] Extracting: https://www.qruise.com/industries/quantum-sensing (11/19), chunk 1/4
+[05:41:08 +8m 34s | qruise] Extracting: https://www.qruise.com/industries/quantum-sensing (11/19), chunk 2/4
+[05:41:13 +8m 40s | qruise] Extracting: https://www.qruise.com/industries/quantum-sensing (11/19), chunk 3/4
+[05:41:20 +8m 46s | qruise] Extracting: https://www.qruise.com/industries/quantum-sensing (11/19), chunk 4/4
+[05:41:28 +8m 54s | qruise] Repaired malformed JSON.
+[05:41:28 +8m 54s | qruise] Reading page (12/19): https://www.qruise.com/industries/qc
+[05:41:28 +8m 54s | qruise] Extracting: https://www.qruise.com/industries/qc (12/19), chunk 1/5
+[05:41:29 +8m 56s | qruise] Extracting: https://www.qruise.com/industries/qc (12/19), chunk 2/5
+[05:41:39 +9m 2s | qruise] Extracting: https://www.qruise.com/industries/qc (12/19), chunk 3/5
+[05:41:44 +9m 7s | qruise] Extracting: https://www.qruise.com/industries/qc (12/19), chunk 4/5
+[05:41:48 +9m 11s | qruise] Extracting: https://www.qruise.com/industries/qc (12/19), chunk 5/5
+[05:41:56 +9m 19s | qruise] Repaired malformed JSON.
+[05:41:56 +9m 19s | qruise] Reading page (13/19): https://www.qruise.com/news-and-events/news/open-architecture-quantum-testbed
+[05:41:56 +9m 19s | qruise] Extracting: https://www.qruise.com/news-and-events/news/open-architecture-quantum-testbed (13/19), chunk 1/7
+[05:42:01 +9m 25s | qruise] Repaired malformed JSON.
+[05:42:01 +9m 25s | qruise] Extracting: https://www.qruise.com/news-and-events/news/open-architecture-quantum-testbed (13/19), chunk 2/7
+[05:42:13 +9m 34s | qruise] Repaired malformed JSON.
+[05:42:13 +9m 34s | qruise] Extracting: https://www.qruise.com/news-and-events/news/open-architecture-quantum-testbed (13/19), chunk 3/7
+[05:42:22 +9m 42s | qruise] Repaired malformed JSON.
+[05:42:22 +9m 42s | qruise] Extracting: https://www.qruise.com/news-and-events/news/open-architecture-quantum-testbed (13/19), chunk 4/7
+[05:42:29 +9m 49s | qruise] Repaired malformed JSON.
+[05:42:29 +9m 49s | qruise] Extracting: https://www.qruise.com/news-and-events/news/open-architecture-quantum-testbed (13/19), chunk 5/7
+[05:42:36 +9m 56s | qruise] Repaired malformed JSON.
+[05:42:36 +9m 56s | qruise] Extracting: https://www.qruise.com/news-and-events/news/open-architecture-quantum-testbed (13/19), chunk 6/7
+[05:42:40 +10m 1s | qruise] Extracting: https://www.qruise.com/news-and-events/news/open-architecture-quantum-testbed (13/19), chunk 7/7
+[05:42:51 +10m 8s | qruise] Repaired malformed JSON.
+[05:42:51 +10m 8s | qruise] Reading page (14/19): https://www.qruise.com/news-and-events/news/2025-wrapup
+[05:42:51 +10m 8s | qruise] Extracting: https://www.qruise.com/news-and-events/news/2025-wrapup (14/19), chunk 1/12
+[05:42:57 +10m 14s | qruise] Repaired malformed JSON.
+[05:42:57 +10m 14s | qruise] Extracting: https://www.qruise.com/news-and-events/news/2025-wrapup (14/19), chunk 2/12
+[05:43:03 +10m 20s | qruise] Repaired malformed JSON.
+[05:43:03 +10m 20s | qruise] Extracting: https://www.qruise.com/news-and-events/news/2025-wrapup (14/19), chunk 3/12
+[05:43:08 +10m 25s | qruise] Extracting: https://www.qruise.com/news-and-events/news/2025-wrapup (14/19), chunk 4/12
+[05:43:20 +10m 34s | qruise] Repaired malformed JSON.
+[05:43:20 +10m 34s | qruise] Extracting: https://www.qruise.com/news-and-events/news/2025-wrapup (14/19), chunk 5/12
+[05:43:27 +10m 41s | qruise] Repaired malformed JSON.
+[05:43:27 +10m 41s | qruise] Extracting: https://www.qruise.com/news-and-events/news/2025-wrapup (14/19), chunk 6/12
+[05:43:34 +10m 48s | qruise] Repaired malformed JSON.
+[05:43:34 +10m 48s | qruise] Extracting: https://www.qruise.com/news-and-events/news/2025-wrapup (14/19), chunk 7/12
+[05:43:39 +10m 54s | qruise] Repaired malformed JSON.
+[05:43:39 +10m 54s | qruise] Extracting: https://www.qruise.com/news-and-events/news/2025-wrapup (14/19), chunk 8/12
+[05:43:45 +10m 59s | qruise] Repaired malformed JSON.
+[05:43:45 +10m 59s | qruise] Extracting: https://www.qruise.com/news-and-events/news/2025-wrapup (14/19), chunk 9/12
+[05:43:57 +11m 8s | qruise] Repaired malformed JSON.
+[05:43:57 +11m 8s | qruise] Extracting: https://www.qruise.com/news-and-events/news/2025-wrapup (14/19), chunk 10/12
+[05:44:03 +11m 14s | qruise] Repaired malformed JSON.
+[05:44:03 +11m 14s | qruise] Extracting: https://www.qruise.com/news-and-events/news/2025-wrapup (14/19), chunk 11/12
+[05:44:10 +11m 21s | qruise] Repaired malformed JSON.
+[05:44:10 +11m 21s | qruise] Extracting: https://www.qruise.com/news-and-events/news/2025-wrapup (14/19), chunk 12/12
+[05:44:18 +11m 29s | qruise] Repaired malformed JSON.
+[05:44:18 +11m 29s | qruise] Reading page (15/19): https://www.qruise.com/news-and-events/news/2025-10-product-update
+[05:44:18 +11m 29s | qruise] Extracting: https://www.qruise.com/news-and-events/news/2025-10-product-update (15/19), chunk 1/10
+[05:44:21 +11m 32s | qruise] Extracting: https://www.qruise.com/news-and-events/news/2025-10-product-update (15/19), chunk 2/10
+[05:44:32 +11m 41s | qruise] Repaired malformed JSON.
+[05:44:32 +11m 41s | qruise] Extracting: https://www.qruise.com/news-and-events/news/2025-10-product-update (15/19), chunk 3/10
+[05:44:38 +11m 47s | qruise] Repaired malformed JSON.
+[05:44:38 +11m 47s | qruise] Extracting: https://www.qruise.com/news-and-events/news/2025-10-product-update (15/19), chunk 4/10
+[05:44:44 +11m 53s | qruise] Repaired malformed JSON.
+[05:44:44 +11m 53s | qruise] Extracting: https://www.qruise.com/news-and-events/news/2025-10-product-update (15/19), chunk 5/10
+[05:44:50 +11m 58s | qruise] Repaired malformed JSON.
+[05:44:50 +11m 58s | qruise] Extracting: https://www.qruise.com/news-and-events/news/2025-10-product-update (15/19), chunk 6/10
+[05:44:58 +12m 7s | qruise] Repaired malformed JSON.
+[05:44:58 +12m 7s | qruise] Extracting: https://www.qruise.com/news-and-events/news/2025-10-product-update (15/19), chunk 7/10
+[05:45:06 +12m 11s | qruise] Extracting: https://www.qruise.com/news-and-events/news/2025-10-product-update (15/19), chunk 8/10
+[05:45:11 +12m 16s | qruise] Repaired malformed JSON.
+[05:45:11 +12m 16s | qruise] Extracting: https://www.qruise.com/news-and-events/news/2025-10-product-update (15/19), chunk 9/10
+[05:45:18 +12m 23s | qruise] Repaired malformed JSON.
+[05:45:18 +12m 23s | qruise] Extracting: https://www.qruise.com/news-and-events/news/2025-10-product-update (15/19), chunk 10/10
+[05:45:25 +12m 30s | qruise] Repaired malformed JSON.
+[05:45:25 +12m 30s | qruise] Reading page (16/19): https://www.qruise.com/industries/mri
+[05:45:25 +12m 30s | qruise] Extracting: https://www.qruise.com/industries/mri (16/19), chunk 1/5
+[05:45:26 +12m 32s | qruise] Extracting: https://www.qruise.com/industries/mri (16/19), chunk 2/5
+[05:45:30 +12m 36s | qruise] Extracting: https://www.qruise.com/industries/mri (16/19), chunk 3/5
+[05:45:40 +12m 42s | qruise] Repaired malformed JSON.
+[05:45:40 +12m 42s | qruise] Extracting: https://www.qruise.com/industries/mri (16/19), chunk 4/5
+[05:45:48 +12m 50s | qruise] Repaired malformed JSON.
+[05:45:48 +12m 50s | qruise] Extracting: https://www.qruise.com/industries/mri (16/19), chunk 5/5
+[05:45:56 +12m 58s | qruise] Repaired malformed JSON.
+[05:45:56 +12m 58s | qruise] Reading page (17/19): https://www.qruise.com/company/research-projects
+[05:45:56 +12m 58s | qruise] Extracting: https://www.qruise.com/company/research-projects (17/19), chunk 1/26
+[05:46:04 +13m 6s | qruise] Repaired malformed JSON.
+[05:46:04 +13m 6s | qruise] Extracting: https://www.qruise.com/company/research-projects (17/19), chunk 2/26
+[05:46:09 +13m 11s | qruise] Repaired malformed JSON.
+[05:46:09 +13m 11s | qruise] Extracting: https://www.qruise.com/company/research-projects (17/19), chunk 3/26
+[05:46:19 +13m 19s | qruise] Repaired malformed JSON.
+[05:46:19 +13m 19s | qruise] Extracting: https://www.qruise.com/company/research-projects (17/19), chunk 4/26
+[05:46:26 +13m 25s | qruise] Repaired malformed JSON.
+[05:46:26 +13m 25s | qruise] Extracting: https://www.qruise.com/company/research-projects (17/19), chunk 5/26
+[05:46:33 +13m 32s | qruise] Repaired malformed JSON.
+[05:46:33 +13m 32s | qruise] Extracting: https://www.qruise.com/company/research-projects (17/19), chunk 6/26
+[05:46:39 +13m 39s | qruise] Repaired malformed JSON.
+[05:46:39 +13m 39s | qruise] Extracting: https://www.qruise.com/company/research-projects (17/19), chunk 7/26
+[05:46:44 +13m 44s | qruise] Repaired malformed JSON.
+[05:46:44 +13m 44s | qruise] Extracting: https://www.qruise.com/company/research-projects (17/19), chunk 8/26
+[05:46:52 +13m 49s | qruise] Repaired malformed JSON.
+[05:46:52 +13m 49s | qruise] Extracting: https://www.qruise.com/company/research-projects (17/19), chunk 9/26
+[05:47:00 +13m 56s | qruise] Repaired malformed JSON.
+[05:47:00 +13m 56s | qruise] Extracting: https://www.qruise.com/company/research-projects (17/19), chunk 10/26
+[05:47:08 +14m 4s | qruise] Repaired malformed JSON.
+[05:47:08 +14m 4s | qruise] Extracting: https://www.qruise.com/company/research-projects (17/19), chunk 11/26
+[05:47:16 +14m 12s | qruise] Repaired malformed JSON.
+[05:47:16 +14m 12s | qruise] Extracting: https://www.qruise.com/company/research-projects (17/19), chunk 12/26
+[05:47:26 +14m 19s | qruise] Repaired malformed JSON.
+[05:47:26 +14m 19s | qruise] Extracting: https://www.qruise.com/company/research-projects (17/19), chunk 13/26
+[05:47:32 +14m 25s | qruise] Repaired malformed JSON.
+[05:47:32 +14m 25s | qruise] Extracting: https://www.qruise.com/company/research-projects (17/19), chunk 14/26
+[05:47:38 +14m 31s | qruise] Repaired malformed JSON.
+[05:47:38 +14m 31s | qruise] Extracting: https://www.qruise.com/company/research-projects (17/19), chunk 15/26
+[05:47:44 +14m 37s | qruise] Repaired malformed JSON.
+[05:47:44 +14m 37s | qruise] Extracting: https://www.qruise.com/company/research-projects (17/19), chunk 16/26
+[05:47:51 +14m 44s | qruise] Repaired malformed JSON.
+[05:47:51 +14m 44s | qruise] Extracting: https://www.qruise.com/company/research-projects (17/19), chunk 17/26
+[05:47:58 +14m 51s | qruise] Repaired malformed JSON.
+[05:47:58 +14m 51s | qruise] Extracting: https://www.qruise.com/company/research-projects (17/19), chunk 18/26
+[05:48:08 +14m 58s | qruise] Repaired malformed JSON.
+[05:48:08 +14m 58s | qruise] Extracting: https://www.qruise.com/company/research-projects (17/19), chunk 19/26
+[05:48:13 +15m 3s | qruise] Repaired malformed JSON.
+[05:48:13 +15m 3s | qruise] Extracting: https://www.qruise.com/company/research-projects (17/19), chunk 20/26
+[05:48:18 +15m 8s | qruise] Repaired malformed JSON.
+[05:48:18 +15m 8s | qruise] Extracting: https://www.qruise.com/company/research-projects (17/19), chunk 21/26
+[05:48:25 +15m 14s | qruise] Repaired malformed JSON.
+[05:48:25 +15m 14s | qruise] Extracting: https://www.qruise.com/company/research-projects (17/19), chunk 22/26
+[05:48:30 +15m 20s | qruise] Repaired malformed JSON.
+[05:48:30 +15m 20s | qruise] Extracting: https://www.qruise.com/company/research-projects (17/19), chunk 23/26
+[05:48:40 +15m 26s | qruise] Repaired malformed JSON.
+[05:48:40 +15m 26s | qruise] Extracting: https://www.qruise.com/company/research-projects (17/19), chunk 24/26
+[05:48:46 +15m 32s | qruise] Repaired malformed JSON.
+[05:48:46 +15m 32s | qruise] Extracting: https://www.qruise.com/company/research-projects (17/19), chunk 25/26
+[05:48:51 +15m 38s | qruise] Repaired malformed JSON.
+[05:48:51 +15m 38s | qruise] Extracting: https://www.qruise.com/company/research-projects (17/19), chunk 26/26
+[05:48:57 +15m 44s | qruise] Repaired malformed JSON.
+[05:48:57 +15m 44s | qruise] Reading page (18/19): https://www.qruise.com/news-and-events/news/qruise-extends-nv-centre-bring-up-goethe-university
+[05:48:57 +15m 44s | qruise] Extracting: https://www.qruise.com/news-and-events/news/qruise-extends-nv-centre-bring-up-goethe-university (18/19), chunk 1/8
+[05:49:04 +15m 51s | qruise] Repaired malformed JSON.
+[05:49:04 +15m 51s | qruise] Extracting: https://www.qruise.com/news-and-events/news/qruise-extends-nv-centre-bring-up-goethe-university (18/19), chunk 2/8
+[05:49:13 +15m 57s | qruise] Repaired malformed JSON.
+[05:49:13 +15m 57s | qruise] Extracting: https://www.qruise.com/news-and-events/news/qruise-extends-nv-centre-bring-up-goethe-university (18/19), chunk 3/8
+[05:49:21 +16m 4s | qruise] Repaired malformed JSON.
+[05:49:21 +16m 4s | qruise] Extracting: https://www.qruise.com/news-and-events/news/qruise-extends-nv-centre-bring-up-goethe-university (18/19), chunk 4/8
+[05:49:26 +16m 9s | qruise] Repaired malformed JSON.
+[05:49:26 +16m 9s | qruise] Extracting: https://www.qruise.com/news-and-events/news/qruise-extends-nv-centre-bring-up-goethe-university (18/19), chunk 5/8
+[05:49:34 +16m 17s | qruise] Repaired malformed JSON.
+[05:49:34 +16m 17s | qruise] Extracting: https://www.qruise.com/news-and-events/news/qruise-extends-nv-centre-bring-up-goethe-university (18/19), chunk 6/8
+[05:49:40 +16m 23s | qruise] Repaired malformed JSON.
+[05:49:40 +16m 23s | qruise] Extracting: https://www.qruise.com/news-and-events/news/qruise-extends-nv-centre-bring-up-goethe-university (18/19), chunk 7/8
+[05:49:50 +16m 30s | qruise] Repaired malformed JSON.
+[05:49:50 +16m 30s | qruise] Extracting: https://www.qruise.com/news-and-events/news/qruise-extends-nv-centre-bring-up-goethe-university (18/19), chunk 8/8
+[05:49:55 +16m 36s | qruise] Repaired malformed JSON.
+[05:49:55 +16m 36s | qruise] Reading page (19/19): https://www.qruise.com/news-and-events/news/2026-01-product-update
+[05:49:55 +16m 36s | qruise] Extracting: https://www.qruise.com/news-and-events/news/2026-01-product-update (19/19), chunk 1/7
+[05:49:57 +16m 37s | qruise] Extracting: https://www.qruise.com/news-and-events/news/2026-01-product-update (19/19), chunk 2/7
+[05:50:03 +16m 43s | qruise] Repaired malformed JSON.
+[05:50:03 +16m 43s | qruise] Extracting: https://www.qruise.com/news-and-events/news/2026-01-product-update (19/19), chunk 3/7
+[05:50:10 +16m 51s | qruise] Repaired malformed JSON.
+[05:50:10 +16m 51s | qruise] Extracting: https://www.qruise.com/news-and-events/news/2026-01-product-update (19/19), chunk 4/7
+[05:50:16 +16m 57s | qruise] Repaired malformed JSON.
+[05:50:16 +16m 57s | qruise] Extracting: https://www.qruise.com/news-and-events/news/2026-01-product-update (19/19), chunk 5/7
+[05:50:31 +17m 8s | qruise] Repaired malformed JSON.
+[05:50:31 +17m 8s | qruise] Extracting: https://www.qruise.com/news-and-events/news/2026-01-product-update (19/19), chunk 6/7
+[05:50:37 +17m 14s | qruise] Extracting: https://www.qruise.com/news-and-events/news/2026-01-product-update (19/19), chunk 7/7
+[05:50:45 +17m 22s | qruise] Repaired malformed JSON.
+[05:50:45 +17m 22s | qruise] Saved 1_actor_results.json with 276 extracted records
+
+[05:50:45 +17m 22s | qruise] === 2 clean actors ===
+[05:50:46 +17m 23s | qruise] Loaded 276 extracted records
+[05:50:46 +17m 23s | qruise] Saved 2_actor_nodes.json with 59 canonical actor nodes
+
+[05:50:46 +17m 23s | qruise] === 3 interaction extraction ===
+[05:50:46 +17m 23s | qruise] Extracting interactions: https://www.qruise.com/news-and-events/news/2025-07-product-update (1/19), chunk 1/15
+[05:50:55 +17m 32s | qruise] Extracting interactions: https://www.qruise.com/news-and-events/news/2025-07-product-update (1/19), chunk 2/15
+[05:51:04 +17m 39s | qruise] Extracting interactions: https://www.qruise.com/news-and-events/news/2025-07-product-update (1/19), chunk 3/15
+[05:51:08 +17m 43s | qruise] Extracting interactions: https://www.qruise.com/news-and-events/news/2025-07-product-update (1/19), chunk 4/15
+[05:51:12 +17m 47s | qruise] Extracting interactions: https://www.qruise.com/news-and-events/news/2025-07-product-update (1/19), chunk 6/15
+[05:51:18 +17m 53s | qruise] Extracting interactions: https://www.qruise.com/news-and-events/news/2025-07-product-update (1/19), chunk 7/15
+[05:51:23 +17m 58s | qruise] Extracting interactions: https://www.qruise.com/news-and-events/news/2025-07-product-update (1/19), chunk 8/15
+[05:51:35 +18m 7s | qruise] Extracting interactions: https://www.qruise.com/news-and-events/news/2025-07-product-update (1/19), chunk 9/15
+[05:51:44 +18m 16s | qruise] Extracting interactions: https://www.qruise.com/news-and-events/news/2025-07-product-update (1/19), chunk 10/15
+[05:51:47 +18m 19s | qruise] Extracting interactions: https://www.qruise.com/news-and-events/news/2025-07-product-update (1/19), chunk 13/15
+[05:51:52 +18m 24s | qruise] Extracting interactions: https://www.qruise.com/news-and-events/news/2025-07-product-update (1/19), chunk 14/15
+[05:51:57 +18m 29s | qruise] Extracting interactions: https://www.qruise.com/news-and-events/news/2025-07-product-update (1/19), chunk 15/15
+[05:52:01 +18m 33s | qruise] Extracting interactions: https://docs.qruise.com (2/19), chunk 1/12
+[05:52:03 +18m 34s | qruise] Extracting interactions: https://docs.qruise.com (2/19), chunk 2/12
+[05:52:04 +18m 36s | qruise] Extracting interactions: https://docs.qruise.com (2/19), chunk 5/12
+[05:52:09 +18m 38s | qruise] Extracting interactions: https://docs.qruise.com (2/19), chunk 6/12
+[05:52:11 +18m 40s | qruise] Extracting interactions: https://docs.qruise.com (2/19), chunk 9/12
+[05:52:13 +18m 41s | qruise] Extracting interactions: https://docs.qruise.com (2/19), chunk 10/12
+[05:52:14 +18m 43s | qruise] Extracting interactions: https://docs.qruise.com (2/19), chunk 11/12
+[05:52:15 +18m 44s | qruise] Extracting interactions: https://docs.qruise.com (2/19), chunk 12/12
+[05:52:19 +18m 48s | qruise] Extracting interactions: https://www.qruise.com/news-and-events/news/2025-01-product-update (3/19), chunk 2/12
+[05:52:24 +18m 52s | qruise] Extracting interactions: https://www.qruise.com/news-and-events/news/2025-01-product-update (3/19), chunk 3/12
+[05:52:30 +18m 58s | qruise] Extracting interactions: https://www.qruise.com/news-and-events/news/2025-01-product-update (3/19), chunk 4/12
+[05:52:34 +19m 3s | qruise] Extracting interactions: https://www.qruise.com/news-and-events/news/2025-01-product-update (3/19), chunk 5/12
+[05:52:38 +19m 6s | qruise] Extracting interactions: https://www.qruise.com/news-and-events/news/2025-01-product-update (3/19), chunk 6/12
+[05:52:50 +19m 16s | qruise] Extracting interactions: https://www.qruise.com/news-and-events/news/2025-01-product-update (3/19), chunk 7/12
+[05:53:02 +19m 28s | qruise] Extracting interactions: https://www.qruise.com/news-and-events/news/2025-01-product-update (3/19), chunk 8/12
+[05:53:06 +19m 32s | qruise] Extracting interactions: https://www.qruise.com/news-and-events/news/2025-01-product-update (3/19), chunk 10/12
+[05:53:11 +19m 37s | qruise] Extracting interactions: https://www.qruise.com/news-and-events/news/2025-01-product-update (3/19), chunk 11/12
+[05:53:15 +19m 41s | qruise] Extracting interactions: https://www.qruise.com/news-and-events/news/2025-01-product-update (3/19), chunk 12/12
+[05:53:23 +19m 46s | qruise] Extracting interactions: https://www.qruise.com/company/partners (4/19), chunk 2/8
+[05:53:31 +19m 54s | qruise] Extracting interactions: https://www.qruise.com/company/partners (4/19), chunk 3/8
+[05:53:38 +20m 1s | qruise] Extracting interactions: https://www.qruise.com/company/partners (4/19), chunk 4/8
+[05:53:44 +20m 7s | qruise] Extracting interactions: https://www.qruise.com/company/partners (4/19), chunk 5/8
+[05:54:02 +20m 21s | qruise] Extracting interactions: https://www.qruise.com/company/partners (4/19), chunk 6/8
+[05:54:03 +20m 23s | qruise] Extracting interactions: https://www.qruise.com/company/partners (4/19), chunk 7/8
+[05:54:05 +20m 25s | qruise] Extracting interactions: https://www.qruise.com/company/partners (4/19), chunk 8/8
+[05:54:10 +20m 29s | qruise] Extracting interactions: https://www.qruise.com/news-and-events/news/resonance-for-MR-launch (5/19), chunk 1/7
+[05:54:15 +20m 35s | qruise] Extracting interactions: https://www.qruise.com/news-and-events/news/resonance-for-MR-launch (5/19), chunk 2/7
+[05:54:35 +20m 52s | qruise] Extracting interactions: https://www.qruise.com/news-and-events/news/resonance-for-MR-launch (5/19), chunk 3/7
+[05:54:43 +21m 0s | qruise] Extracting interactions: https://www.qruise.com/news-and-events/news/resonance-for-MR-launch (5/19), chunk 4/7
+[05:54:49 +21m 6s | qruise] Extracting interactions: https://www.qruise.com/news-and-events/news/resonance-for-MR-launch (5/19), chunk 5/7
+[05:54:55 +21m 12s | qruise] Extracting interactions: https://www.qruise.com/news-and-events/news/resonance-for-MR-launch (5/19), chunk 6/7
+[05:54:58 +21m 15s | qruise] Extracting interactions: https://www.qruise.com/news-and-events/news/resonance-for-MR-launch (5/19), chunk 7/7
+[05:55:08 +21m 22s | qruise] Extracting interactions: https://www.qruise.com/news-and-events/news/qruise-and-qblox-partnership (6/19), chunk 1/6
+[05:55:13 +21m 26s | qruise] Extracting interactions: https://www.qruise.com/news-and-events/news/qruise-and-qblox-partnership (6/19), chunk 2/6
+[05:55:23 +21m 37s | qruise] Extracting interactions: https://www.qruise.com/news-and-events/news/qruise-and-qblox-partnership (6/19), chunk 3/6
+[05:55:41 +21m 52s | qruise] Extracting interactions: https://www.qruise.com/news-and-events/news/qruise-and-qblox-partnership (6/19), chunk 4/6
+[05:55:50 +22m 0s | qruise] Extracting interactions: https://www.qruise.com/news-and-events/news/qruise-and-qblox-partnership (6/19), chunk 5/6
+[05:55:53 +22m 3s | qruise] Extracting interactions: https://www.qruise.com/news-and-events/news/qruise-and-qblox-partnership (6/19), chunk 6/6
+[05:55:58 +22m 8s | qruise] Extracting interactions: https://www.qruise.com (7/19), chunk 2/11
+[05:56:02 +22m 13s | qruise] Extracting interactions: https://www.qruise.com (7/19), chunk 3/11
+[05:56:29 +22m 37s | qruise] Extracting interactions: https://www.qruise.com (7/19), chunk 4/11
+[05:56:37 +22m 44s | qruise] Extracting interactions: https://www.qruise.com (7/19), chunk 5/11
+[05:56:43 +22m 50s | qruise] Extracting interactions: https://www.qruise.com (7/19), chunk 6/11
+[05:56:58 +23m 2s | qruise] Extracting interactions: https://www.qruise.com (7/19), chunk 7/11
+[05:57:04 +23m 8s | qruise] Extracting interactions: https://www.qruise.com (7/19), chunk 8/11
+[05:57:19 +23m 23s | qruise] Extracting interactions: https://www.qruise.com (7/19), chunk 9/11
+[05:57:31 +23m 33s | qruise] Extracting interactions: https://www.qruise.com (7/19), chunk 10/11
+[05:57:38 +23m 39s | qruise] Extracting interactions: https://www.qruise.com (7/19), chunk 11/11
+[05:57:41 +23m 43s | qruise] Extracting interactions: https://www.qruise.com/contact (8/19), chunk 2/4
+[05:57:48 +23m 49s | qruise] Extracting interactions: https://www.qruise.com/contact (8/19), chunk 3/4
+[05:57:56 +23m 57s | qruise] Extracting interactions: https://www.qruise.com/contact (8/19), chunk 4/4
+[05:58:00 +24m 1s | qruise] Extracting interactions: https://www.qruise.com/news-and-events/news/qruiseos-at-iqcc (10/19), chunk 2/8
+[05:58:29 +24m 26s | qruise] Extracting interactions: https://www.qruise.com/news-and-events/news/qruiseos-at-iqcc (10/19), chunk 3/8
+[05:58:44 +24m 41s | qruise] Extracting interactions: https://www.qruise.com/news-and-events/news/qruiseos-at-iqcc (10/19), chunk 4/8
+[05:59:04 +24m 58s | qruise] Extracting interactions: https://www.qruise.com/news-and-events/news/qruiseos-at-iqcc (10/19), chunk 5/8
+[05:59:24 +25m 18s | qruise] Extracting interactions: https://www.qruise.com/news-and-events/news/qruiseos-at-iqcc (10/19), chunk 6/8
+[05:59:39 +25m 30s | qruise] Extracting interactions: https://www.qruise.com/news-and-events/news/qruiseos-at-iqcc (10/19), chunk 7/8
+[05:59:43 +25m 34s | qruise] Extracting interactions: https://www.qruise.com/news-and-events/news/qruiseos-at-iqcc (10/19), chunk 8/8
+[05:59:49 +25m 40s | qruise] Extracting interactions: https://www.qruise.com/industries/quantum-sensing (11/19), chunk 4/4
+[05:59:55 +25m 46s | qruise] Extracting interactions: https://www.qruise.com/industries/qc (12/19), chunk 3/5
+[06:00:01 +25m 51s | qruise] Extracting interactions: https://www.qruise.com/industries/qc (12/19), chunk 4/5
+[06:00:11 +25m 59s | qruise] Extracting interactions: https://www.qruise.com/industries/qc (12/19), chunk 5/5
+[06:00:16 +26m 3s | qruise] Extracting interactions: https://www.qruise.com/news-and-events/news/open-architecture-quantum-testbed (13/19), chunk 1/7
+[06:00:19 +26m 7s | qruise] Extracting interactions: https://www.qruise.com/news-and-events/news/open-architecture-quantum-testbed (13/19), chunk 2/7
+[06:00:31 +26m 19s | qruise] Extracting interactions: https://www.qruise.com/news-and-events/news/open-architecture-quantum-testbed (13/19), chunk 3/7
+[06:01:04 +26m 49s | qruise] Extracting interactions: https://www.qruise.com/news-and-events/news/open-architecture-quantum-testbed (13/19), chunk 4/7
+[06:01:23 +27m 5s | qruise] Extracting interactions: https://www.qruise.com/news-and-events/news/open-architecture-quantum-testbed (13/19), chunk 5/7
+[06:01:27 +27m 8s | qruise] Extracting interactions: https://www.qruise.com/news-and-events/news/open-architecture-quantum-testbed (13/19), chunk 6/7
+[06:01:29 +27m 11s | qruise] Extracting interactions: https://www.qruise.com/news-and-events/news/open-architecture-quantum-testbed (13/19), chunk 7/7
+[06:01:35 +27m 17s | qruise] Extracting interactions: https://www.qruise.com/news-and-events/news/2025-wrapup (14/19), chunk 1/12
+[06:01:41 +27m 23s | qruise] Extracting interactions: https://www.qruise.com/news-and-events/news/2025-wrapup (14/19), chunk 2/12
+[06:01:52 +27m 31s | qruise] Extracting interactions: https://www.qruise.com/news-and-events/news/2025-wrapup (14/19), chunk 3/12
+[06:02:00 +27m 38s | qruise] Extracting interactions: https://www.qruise.com/news-and-events/news/2025-wrapup (14/19), chunk 4/12
+[06:02:10 +27m 49s | qruise] Extracting interactions: https://www.qruise.com/news-and-events/news/2025-wrapup (14/19), chunk 5/12
+[06:02:19 +27m 58s | qruise] Extracting interactions: https://www.qruise.com/news-and-events/news/2025-wrapup (14/19), chunk 6/12
+[06:02:29 +28m 5s | qruise] Extracting interactions: https://www.qruise.com/news-and-events/news/2025-wrapup (14/19), chunk 7/12
+[06:02:39 +28m 15s | qruise] Extracting interactions: https://www.qruise.com/news-and-events/news/2025-wrapup (14/19), chunk 8/12
+[06:02:50 +28m 26s | qruise] Extracting interactions: https://www.qruise.com/news-and-events/news/2025-wrapup (14/19), chunk 11/12
+[06:02:53 +28m 28s | qruise] Extracting interactions: https://www.qruise.com/news-and-events/news/2025-wrapup (14/19), chunk 12/12
+[06:03:01 +28m 34s | qruise] Extracting interactions: https://www.qruise.com/news-and-events/news/2025-10-product-update (15/19), chunk 2/10
+[06:03:07 +28m 39s | qruise] Extracting interactions: https://www.qruise.com/news-and-events/news/2025-10-product-update (15/19), chunk 3/10
+[06:03:14 +28m 46s | qruise] Extracting interactions: https://www.qruise.com/news-and-events/news/2025-10-product-update (15/19), chunk 4/10
+[06:03:19 +28m 52s | qruise] Extracting interactions: https://www.qruise.com/news-and-events/news/2025-10-product-update (15/19), chunk 5/10
+[06:03:41 +29m 11s | qruise] Extracting interactions: https://www.qruise.com/news-and-events/news/2025-10-product-update (15/19), chunk 6/10
+[06:03:45 +29m 14s | qruise] Extracting interactions: https://www.qruise.com/news-and-events/news/2025-10-product-update (15/19), chunk 8/10
+[06:03:51 +29m 20s | qruise] Extracting interactions: https://www.qruise.com/news-and-events/news/2025-10-product-update (15/19), chunk 9/10
+[06:03:56 +29m 25s | qruise] Extracting interactions: https://www.qruise.com/news-and-events/news/2025-10-product-update (15/19), chunk 10/10
+[06:03:59 +29m 29s | qruise] Extracting interactions: https://www.qruise.com/industries/mri (16/19), chunk 3/5
+[06:04:05 +29m 34s | qruise] Extracting interactions: https://www.qruise.com/industries/mri (16/19), chunk 4/5
+[06:04:29 +29m 55s | qruise] Extracting interactions: https://www.qruise.com/industries/mri (16/19), chunk 5/5
+[06:04:34 +30m 0s | qruise] Extracting interactions: https://www.qruise.com/company/research-projects (17/19), chunk 1/26
+[06:04:38 +30m 4s | qruise] Extracting interactions: https://www.qruise.com/company/research-projects (17/19), chunk 21/26
+[06:04:49 +30m 12s | qruise] Extracting interactions: https://www.qruise.com/company/research-projects (17/19), chunk 22/26
+[06:04:53 +30m 16s | qruise] Extracting interactions: https://www.qruise.com/company/research-projects (17/19), chunk 25/26
+[06:05:01 +30m 24s | qruise] Extracting interactions: https://www.qruise.com/company/research-projects (17/19), chunk 26/26
+[06:05:07 +30m 30s | qruise] Extracting interactions: https://www.qruise.com/news-and-events/news/qruise-extends-nv-centre-bring-up-goethe-university (18/19), chunk 1/8
+[06:05:11 +30m 35s | qruise] Extracting interactions: https://www.qruise.com/news-and-events/news/qruise-extends-nv-centre-bring-up-goethe-university (18/19), chunk 2/8
+[06:05:37 +30m 57s | qruise] Extracting interactions: https://www.qruise.com/news-and-events/news/qruise-extends-nv-centre-bring-up-goethe-university (18/19), chunk 3/8
+[06:06:01 +31m 18s | qruise] Extracting interactions: https://www.qruise.com/news-and-events/news/qruise-extends-nv-centre-bring-up-goethe-university (18/19), chunk 4/8
+[06:06:15 +31m 32s | qruise] Extracting interactions: https://www.qruise.com/news-and-events/news/qruise-extends-nv-centre-bring-up-goethe-university (18/19), chunk 5/8
+[06:06:23 +31m 39s | qruise] Extracting interactions: https://www.qruise.com/news-and-events/news/qruise-extends-nv-centre-bring-up-goethe-university (18/19), chunk 6/8
+[06:06:28 +31m 45s | qruise] Extracting interactions: https://www.qruise.com/news-and-events/news/qruise-extends-nv-centre-bring-up-goethe-university (18/19), chunk 7/8
+[06:06:36 +31m 50s | qruise] Extracting interactions: https://www.qruise.com/news-and-events/news/qruise-extends-nv-centre-bring-up-goethe-university (18/19), chunk 8/8
+[06:06:40 +31m 54s | qruise] Extracting interactions: https://www.qruise.com/news-and-events/news/2026-01-product-update (19/19), chunk 2/7
+[06:06:46 +32m 0s | qruise] Extracting interactions: https://www.qruise.com/news-and-events/news/2026-01-product-update (19/19), chunk 3/7
+[06:06:49 +32m 3s | qruise] Extracting interactions: https://www.qruise.com/news-and-events/news/2026-01-product-update (19/19), chunk 6/7
+[06:06:50 +32m 4s | qruise] Extracting interactions: https://www.qruise.com/news-and-events/news/2026-01-product-update (19/19), chunk 7/7
+[06:06:55 +32m 9s | qruise] Saved 3_interaction_results.json with 243 extracted interactions.
+
+[06:06:55 +32m 9s | qruise] === 4 clean interactions ===
+[06:06:55 +32m 9s | qruise] Saved 4_edges.json with 40 cleaned interactions.
+
+[06:06:55 +32m 9s | qruise] === 5 helix enrichment ===
+[06:06:55 +32m 9s | qruise] Wrote 5_nodes.json (59 actors)
+[06:06:55 +32m 9s | qruise] Wrote 5_edges.json (40 interactions)
+[06:06:55 +32m 9s | qruise] Actor helix counts: {'Academia': 27, 'Government': 3, 'Industry': 20, 'Intermediary': 2, 'Unknown': 7}
+[06:06:55 +32m 9s | qruise] Functional-space counts: {'Consensus': 2, 'Innovation': 11, 'Intra-helix / Not classified': 24, 'Unknown': 3}
+
+[06:06:55 +32m 9s | qruise] === 6 network visualisation ===
+[06:06:56 +32m 10s | qruise] Wrote quantum_network.html
+[06:06:56 +32m 10s | qruise] Nodes: 59
+[06:06:56 +32m 10s | qruise] Edges: 15
+
+[06:06:56 +32m 10s | qruise] Done. Outputs written to: /home/lv/IDP/idpdeeptech/pipeline/site_outputs/qruise
+[06:06:56 +32m 10s | qruise] Log: /home/lv/IDP/idpdeeptech/pipeline/site_outputs/qruise/run.log
+
+========================================================================
+RUN FINISHED 2026-06-17 06:06:56  (OK)
+Started:     2026-06-17 05:31:46
+Elapsed:     32m 10s
+========================================================================

@@ -1,0 +1,759 @@
+[
+  {
+    "entity": "Bulgaria",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "country",
+    "role_in_text": "Country where the banking industry experience is based",
+    "technology_area": "quantum cryptography",
+    "occurrence_sentence": "Finance experts have more than 20 years experience in the banking industry, providing custom and secure banking solutions for most of the banks in Bulgaria.",
+    "source_document": "https://qaisec.eu/index.php/finance-and-telecom",
+    "page": 3,
+    "canonical_actor_key": "bulgaria",
+    "aliases": [
+      "Bulgaria"
+    ],
+    "pages": [
+      2,
+      3
+    ],
+    "mentions": [
+      {
+        "entity": "Bulgaria",
+        "page": 2,
+        "role_in_text": "country where the banking solutions are provided",
+        "occurrence_sentence": "Finance experts have more than 20 years experience in the banking industry, providing",
+        "source_document": "https://qaisec.eu/index.php/finance-and-telecom"
+      },
+      {
+        "entity": "Bulgaria",
+        "page": 3,
+        "role_in_text": "Country where the banking industry experience is based",
+        "occurrence_sentence": "Finance experts have more than 20 years experience in the banking industry, providing custom and secure banking solutions for most of the banks in Bulgaria.",
+        "source_document": "https://qaisec.eu/index.php/finance-and-telecom"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Unknown",
+    "sphere": "Unknown",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "unknown_category",
+    "classification_needs_review": true,
+    "classification_review_reason": "unmapped_category:country"
+  },
+  {
+    "entity": "citizens",
+    "status": "entity",
+    "excluded_reason": "not_specific",
+    "category": "user communities",
+    "role_in_text": "legal representation and actions in society",
+    "technology_area": "unknown",
+    "occurrence_sentence": "PKI is in the digital basis of both legal representation of citizens and entities and their actions in the society.",
+    "source_document": "https://qaisec.eu/index.php/sequre",
+    "page": 5,
+    "confidence": "medium",
+    "canonical_actor_key": "citizens",
+    "aliases": [
+      "citizens"
+    ],
+    "pages": [
+      5
+    ],
+    "mentions": [
+      {
+        "entity": "citizens",
+        "page": 5,
+        "role_in_text": "legal representation and actions in society",
+        "occurrence_sentence": "PKI is in the digital basis of both legal representation of citizens and entities and their actions in the society.",
+        "source_document": "https://qaisec.eu/index.php/sequre"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Civil Society",
+    "sphere": "Single",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "Colibri",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "technology",
+    "role_in_text": "technology",
+    "technology_area": "AI",
+    "occurrence_sentence": "© 2026 Qaisec. Created for free using WordPress and [Colibri](https://colibriwp.com)",
+    "source_document": "https://qaisec.eu/index.php/contact",
+    "page": 4,
+    "confidence": "high",
+    "canonical_actor_key": "colibri",
+    "aliases": [
+      "Colibri"
+    ],
+    "pages": [
+      4
+    ],
+    "mentions": [
+      {
+        "entity": "Colibri",
+        "page": 4,
+        "role_in_text": "technology",
+        "occurrence_sentence": "© 2026 Qaisec. Created for free using WordPress and [Colibri](https://colibriwp.com)",
+        "source_document": "https://qaisec.eu/index.php/contact"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Industry",
+    "sphere": "Single",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "name_heuristic_industry",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "Google",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "large enterprises",
+    "role_in_text": "Mentioned in the context of quantum technology.",
+    "technology_area": "quantum computing",
+    "occurrence_sentence": "![",
+    "source_document": "https://qaisec.eu/index.php/info",
+    "page": 3,
+    "canonical_actor_key": "google",
+    "aliases": [
+      "Google"
+    ],
+    "pages": [
+      3
+    ],
+    "mentions": [
+      {
+        "entity": "Google",
+        "page": 3,
+        "role_in_text": "Mentioned in the context of quantum technology.",
+        "occurrence_sentence": "![",
+        "source_document": "https://qaisec.eu/index.php/info"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Industry",
+    "sphere": "Single",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "IBM",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "large enterprises",
+    "role_in_text": "announced the expansion of its roadmap for achieving large-scale, practical quantum computing",
+    "technology_area": "quantum computing",
+    "occurrence_sentence": "May 10, 2022 IBM announced the expansion of its roadmap for achieving large-scale, practical quantum computing.",
+    "source_document": "https://qaisec.eu/index.php/sequre",
+    "page": 3,
+    "confidence": "high",
+    "canonical_actor_key": "ibm",
+    "aliases": [
+      "IBM"
+    ],
+    "pages": [
+      2,
+      3,
+      4
+    ],
+    "mentions": [
+      {
+        "entity": "IBM",
+        "page": 2,
+        "role_in_text": "announced the expansion of its roadmap for achieving large-scale, practical quantum computing",
+        "occurrence_sentence": "IBM announced the expansion of its roadmap for achieving large-scale, practical quantum computing.",
+        "source_document": "https://qaisec.eu/index.php/sequre"
+      },
+      {
+        "entity": "IBM",
+        "page": 2,
+        "role_in_text": "announced the 433-qubit processor, IBM Osprey",
+        "occurrence_sentence": "IBM announced the 433-qubit processor, IBM Osprey",
+        "source_document": "https://qaisec.eu/index.php/sequre"
+      },
+      {
+        "entity": "IBM",
+        "page": 3,
+        "role_in_text": "announced the expansion of its roadmap for achieving large-scale, practical quantum computing",
+        "occurrence_sentence": "May 10, 2022 IBM announced the expansion of its roadmap for achieving large-scale, practical quantum computing.",
+        "source_document": "https://qaisec.eu/index.php/sequre"
+      },
+      {
+        "entity": "IBM",
+        "page": 3,
+        "role_in_text": "announced the 433-qubit processor, IBM Osprey",
+        "occurrence_sentence": "Nov 9, 2022 IBM announced the 433-qubit processor, IBM Osprey",
+        "source_document": "https://qaisec.eu/index.php/sequre"
+      },
+      {
+        "entity": "IBM",
+        "page": 4,
+        "role_in_text": "IBM's 2025 goal: a 4,000+ qubit processor",
+        "occurrence_sentence": "IBM's 2025 goal: a 4,000+ qubit processor",
+        "source_document": "https://qaisec.eu/index.php/sequre"
+      },
+      {
+        "entity": "IBM",
+        "page": 4,
+        "role_in_text": "Read full details on IBM blog",
+        "occurrence_sentence": "Read full details on IBM blog: [https://www.research.ibm.com/blog/ibm-quantum-roadmap-2025",
+        "source_document": "https://qaisec.eu/index.php/sequre"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Industry",
+    "sphere": "Single",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "ID Quantique",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "large enterprises",
+    "role_in_text": "Technological partner providing Quantum Random Number Generation (QRNG)",
+    "technology_area": "quantum cryptography",
+    "occurrence_sentence": "Apply QRNG from technological partner (ID Quantique) to generate true source of entropy, improving the quality of seed content for key generation  (Patented technology)",
+    "source_document": "https://qaisec.eu/index.php/sequre",
+    "page": 8,
+    "canonical_actor_key": "id quantique",
+    "aliases": [
+      "ID Quantique"
+    ],
+    "pages": [
+      8
+    ],
+    "mentions": [
+      {
+        "entity": "ID Quantique",
+        "page": 8,
+        "role_in_text": "Technological partner providing Quantum Random Number Generation (QRNG)",
+        "occurrence_sentence": "Apply QRNG from technological partner (ID Quantique) to generate true source of entropy, improving the quality of seed content for key generation  (Patented technology)",
+        "source_document": "https://qaisec.eu/index.php/sequre"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Industry",
+    "sphere": "Single",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "KETS",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "small and medium-sized enterprises",
+    "role_in_text": "Chris Erven is the CEO of KETS",
+    "technology_area": "quantum cryptography",
+    "occurrence_sentence": "Chris Erven, CEO of KETS",
+    "source_document": "https://qaisec.eu/index.php/sequre",
+    "page": 7,
+    "confidence": "high",
+    "canonical_actor_key": "kets",
+    "aliases": [
+      "KETS"
+    ],
+    "pages": [
+      6,
+      7
+    ],
+    "mentions": [
+      {
+        "entity": "KETS",
+        "page": 6,
+        "role_in_text": "Chris Erven is the CEO of KETS",
+        "occurrence_sentence": "Chris Erven, CEO of KETS 06/2021 “In today's world, we",
+        "source_document": "https://qaisec.eu/index.php/sequre"
+      },
+      {
+        "entity": "KETS",
+        "page": 7,
+        "role_in_text": "Chris Erven is the CEO of KETS",
+        "occurrence_sentence": "Chris Erven, CEO of KETS",
+        "source_document": "https://qaisec.eu/index.php/sequre"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Industry",
+    "sphere": "Single",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "Max Planck Institute",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "research institutes",
+    "role_in_text": "scientist",
+    "technology_area": "quantum computing",
+    "occurrence_sentence": "He has worked as a scientist at a Max Planck Institute and has been involved in a number of projects in quantum computing.",
+    "source_document": "https://qaisec.eu/index.php/our-team",
+    "page": 4,
+    "confidence": "high",
+    "canonical_actor_key": "max planck institute",
+    "aliases": [
+      "Max Planck Institute"
+    ],
+    "pages": [
+      4
+    ],
+    "mentions": [
+      {
+        "entity": "Max Planck Institute",
+        "page": 4,
+        "role_in_text": "scientist",
+        "occurrence_sentence": "He has worked as a scientist at a Max Planck Institute and has been involved in a number of projects in quantum computing.",
+        "source_document": "https://qaisec.eu/index.php/our-team"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Academia",
+    "sphere": "Single",
+    "r_and_d": "R&D",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "Qaisec",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "large enterprises",
+    "role_in_text": "provider of custom and secure banking solutions",
+    "technology_area": "quantum cryptography",
+    "occurrence_sentence": "Finance experts have more than 20 years experience in the banking industry, providing custom and secure banking solutions for most of the banks in Bulgaria. Today we can harness this experience coupled with the technological innovation of quantum encryption in order to secure your bank's networks and data.",
+    "source_document": "https://qaisec.eu/index.php/finance-and-telecom",
+    "page": 2,
+    "confidence": "high",
+    "canonical_actor_key": "qaisec",
+    "aliases": [
+      "QAISEC",
+      "Qaisec"
+    ],
+    "pages": [
+      1,
+      2,
+      3,
+      4,
+      8
+    ],
+    "mentions": [
+      {
+        "entity": "Qaisec",
+        "page": 1,
+        "role_in_text": "Company",
+        "occurrence_sentence": "Qaisec",
+        "source_document": "https://qaisec.eu/index.php/our-team"
+      },
+      {
+        "entity": "Qaisec",
+        "page": 2,
+        "role_in_text": "Qaisec",
+        "occurrence_sentence": "Qaisec",
+        "source_document": "https://qaisec.eu/index.php/our-team"
+      },
+      {
+        "entity": "Qaisec",
+        "page": 1,
+        "role_in_text": "Company",
+        "occurrence_sentence": "[Qaisec](https://qaisec.eu/)",
+        "source_document": "https://qaisec.eu/index.php/sequre"
+      },
+      {
+        "entity": "QAISEC",
+        "page": 8,
+        "role_in_text": "Developer of SeQure Key Exchange (SKE) and Quantum control protocol (QCP)",
+        "occurrence_sentence": "Key management and distribution system – developed by QAISEC unique system for keys distribution and key agreement.",
+        "source_document": "https://qaisec.eu/index.php/sequre"
+      },
+      {
+        "entity": "Qaisec",
+        "page": 1,
+        "role_in_text": "company",
+        "occurrence_sentence": "Qaisec",
+        "source_document": "https://qaisec.eu/index.php/contact"
+      },
+      {
+        "entity": "QAISEC",
+        "page": 2,
+        "role_in_text": "AI R&D",
+        "occurrence_sentence": "QAISEC is focused towards AI in several directions",
+        "source_document": "https://qaisec.eu/index.php/contact"
+      },
+      {
+        "entity": "QAISEC",
+        "page": 3,
+        "role_in_text": "AI R&D and development of novel neural network architectures",
+        "occurrence_sentence": "QAISEC is focused towards AI in several directions",
+        "source_document": "https://qaisec.eu/index.php/contact"
+      },
+      {
+        "entity": "Qaisec",
+        "page": 4,
+        "role_in_text": "company",
+        "occurrence_sentence": "© 2026 Qaisec. Created for free using WordPress and [Colibri](https://colibriwp.com)",
+        "source_document": "https://qaisec.eu/index.php/contact"
+      },
+      {
+        "entity": "Qaisec",
+        "page": 1,
+        "role_in_text": "Company",
+        "occurrence_sentence": "[Qaisec](https://qaisec.eu/)",
+        "source_document": "https://qaisec.eu/index.php/finance-and-telecom"
+      },
+      {
+        "entity": "Qaisec",
+        "page": 2,
+        "role_in_text": "provider of custom and secure banking solutions",
+        "occurrence_sentence": "Finance experts have more than 20 years experience in the banking industry, providing custom and secure banking solutions for most of the banks in Bulgaria. Today we can harness this experience coupled with the technological innovation of quantum encryption in order to secure your bank's networks and data.",
+        "source_document": "https://qaisec.eu/index.php/finance-and-telecom"
+      },
+      {
+        "entity": "Qaisec",
+        "page": 3,
+        "role_in_text": "Provider of quantum encryption solutions in finance and telecom",
+        "occurrence_sentence": "© 2026 Qaisec.",
+        "source_document": "https://qaisec.eu/index.php/finance-and-telecom"
+      },
+      {
+        "entity": "Qaisec",
+        "page": 4,
+        "role_in_text": "Provider of quantum encryption solutions",
+        "occurrence_sentence": "Secure your state, corporate digital network with the state of the art solutions for quantum encryption.",
+        "source_document": "https://qaisec.eu/index.php/finance-and-telecom"
+      },
+      {
+        "entity": "Qaisec",
+        "page": 1,
+        "role_in_text": "Company",
+        "occurrence_sentence": "Qaisec",
+        "source_document": "https://qaisec.eu"
+      },
+      {
+        "entity": "Qaisec",
+        "page": 1,
+        "role_in_text": "company",
+        "occurrence_sentence": "[Qaisec](https://qaisec.eu/)",
+        "source_document": "https://qaisec.eu/index.php/info"
+      },
+      {
+        "entity": "Qaisec",
+        "page": 2,
+        "role_in_text": "Company focusing on quantum and AI technologies",
+        "occurrence_sentence": "At QAISEC we know that there is no mathematical proof for any algorithm to be provably quantum secure and history of science has thaught us that what is considered secure today fails tomorrow.",
+        "source_document": "https://qaisec.eu/index.php/info"
+      },
+      {
+        "entity": "QAISEC",
+        "page": 3,
+        "role_in_text": "Company focusing on quantum encryption and security.",
+        "occurrence_sentence": "At QAISEC we know that there is no mathematical proof for any algorithm to be provably quantum secure and history of science has thaught us that what is considered secure today fails tomorrow.",
+        "source_document": "https://qaisec.eu/index.php/info"
+      },
+      {
+        "entity": "Qaisec",
+        "page": 1,
+        "role_in_text": "Company",
+        "occurrence_sentence": "[Qaisec](https://qaisec.eu/)",
+        "source_document": "https://qaisec.eu/index.php/security"
+      },
+      {
+        "entity": "Qaisec",
+        "page": 2,
+        "role_in_text": "provider of quantum encrypted cloud services",
+        "occurrence_sentence": "We offer development and management of quantum encrypted cloud services.",
+        "source_document": "https://qaisec.eu/index.php/security"
+      },
+      {
+        "entity": "Qaisec",
+        "page": 3,
+        "role_in_text": "Provider of quantum encrypted cloud services and quantum encryption solutions.",
+        "occurrence_sentence": "We offer development and management of quantum encrypted cloud services.",
+        "source_document": "https://qaisec.eu/index.php/security"
+      },
+      {
+        "entity": "Qaisec",
+        "page": 3,
+        "role_in_text": "Provider of quantum encrypted cloud services and quantum encryption solutions.",
+        "occurrence_sentence": "We formulate a tailored solution for the specific needs and we offer quantum safety as a service and quantum encryption as a service.",
+        "source_document": "https://qaisec.eu/index.php/security"
+      },
+      {
+        "entity": "Qaisec",
+        "page": 4,
+        "role_in_text": "provides security analysis and solutions",
+        "occurrence_sentence": "We provide an in-depth security analysis of any state digital network and database and formulate a solution that would protect them against quantum computer security threats.",
+        "source_document": "https://qaisec.eu/index.php/security"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Industry",
+    "sphere": "Single",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "SeQure",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "program_or_initiative",
+    "role_in_text": "SeQure",
+    "technology_area": "deep tech general",
+    "occurrence_sentence": "SeQure",
+    "source_document": "https://qaisec.eu/index.php/our-team",
+    "page": 2,
+    "confidence": "high",
+    "canonical_actor_key": "sequre",
+    "aliases": [
+      "SeQure"
+    ],
+    "pages": [
+      1,
+      2
+    ],
+    "mentions": [
+      {
+        "entity": "SeQure",
+        "page": 2,
+        "role_in_text": "SeQure",
+        "occurrence_sentence": "SeQure",
+        "source_document": "https://qaisec.eu/index.php/our-team"
+      },
+      {
+        "entity": "SeQure",
+        "page": 1,
+        "role_in_text": "program",
+        "occurrence_sentence": "SeQure",
+        "source_document": "https://qaisec.eu/index.php/contact"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Unknown",
+    "sphere": "Unknown",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "unknown_category",
+    "classification_needs_review": true,
+    "classification_review_reason": "unmapped_category:program_or_initiative"
+  },
+  {
+    "entity": "Svetoslav Sotirov",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "individual",
+    "role_in_text": "CEO",
+    "technology_area": "AI",
+    "occurrence_sentence": "Svetoslav Sotirov CEO An expert in system analysis, design and development of software systems with over twenty-five years of experience in fin-tech, exclusively banking.",
+    "source_document": "https://qaisec.eu/index.php/our-team",
+    "page": 3,
+    "confidence": "high",
+    "canonical_actor_key": "svetoslav sotirov",
+    "aliases": [
+      "Svetoslav Sotirov"
+    ],
+    "pages": [
+      3
+    ],
+    "mentions": [
+      {
+        "entity": "Svetoslav Sotirov",
+        "page": 3,
+        "role_in_text": "CEO",
+        "occurrence_sentence": "Svetoslav Sotirov CEO An expert in system analysis, design and development of software systems with over twenty-five years of experience in fin-tech, exclusively banking.",
+        "source_document": "https://qaisec.eu/index.php/our-team"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Unknown",
+    "sphere": "Unknown",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "unknown_category",
+    "classification_needs_review": true,
+    "classification_review_reason": "unmapped_category:individual; individual_requires_role_classification"
+  },
+  {
+    "entity": "Technical University, Sofia",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "universities",
+    "role_in_text": "Graduated",
+    "technology_area": "unknown",
+    "occurrence_sentence": "Graduated TUES of the Technical University, Sofia.",
+    "source_document": "https://qaisec.eu/index.php/our-team",
+    "page": 3,
+    "confidence": "high",
+    "canonical_actor_key": "technical university sofia",
+    "aliases": [
+      "Technical University, Sofia"
+    ],
+    "pages": [
+      2,
+      3
+    ],
+    "mentions": [
+      {
+        "entity": "Technical University, Sofia",
+        "page": 2,
+        "role_in_text": "",
+        "occurrence_sentence": "",
+        "source_document": "https://qaisec.eu/index.php/our-team"
+      },
+      {
+        "entity": "Technical University, Sofia",
+        "page": 3,
+        "role_in_text": "Graduated",
+        "occurrence_sentence": "Graduated TUES of the Technical University, Sofia.",
+        "source_document": "https://qaisec.eu/index.php/our-team"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Academia",
+    "sphere": "Single",
+    "r_and_d": "R&D",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "University of Toronto",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "universities",
+    "role_in_text": "specialised",
+    "technology_area": "unknown",
+    "occurrence_sentence": "Studied cryptography under Laszlo Czirmas, specialised at the University of Toronto and held a Visiting Fellow position at the Pittsburgh Centre for Philosophy of Science.",
+    "source_document": "https://qaisec.eu/index.php/our-team",
+    "page": 4,
+    "canonical_actor_key": "university of toronto",
+    "aliases": [
+      "University of Toronto"
+    ],
+    "pages": [
+      4
+    ],
+    "mentions": [
+      {
+        "entity": "University of Toronto",
+        "page": 4,
+        "role_in_text": "specialised",
+        "occurrence_sentence": "Studied cryptography under Laszlo Czirmas, specialised at the University of Toronto and held a Visiting Fellow position at the Pittsburgh Centre for Philosophy of Science.",
+        "source_document": "https://qaisec.eu/index.php/our-team"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Academia",
+    "sphere": "Single",
+    "r_and_d": "R&D",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "University of Waterloo",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "universities",
+    "role_in_text": "Michele Mosca is affiliated with the University of Waterloo",
+    "technology_area": "quantum computing",
+    "occurrence_sentence": "Michele Mosca, University of Waterloo 07/2020 “It's a systematic threat to the global economy, and it's real enough that you definitely have to plan it for now”",
+    "source_document": "https://qaisec.eu/index.php/sequre",
+    "page": 6,
+    "confidence": "high",
+    "canonical_actor_key": "university of waterloo",
+    "aliases": [
+      "University of Waterloo"
+    ],
+    "pages": [
+      6,
+      7
+    ],
+    "mentions": [
+      {
+        "entity": "University of Waterloo",
+        "page": 6,
+        "role_in_text": "Michele Mosca is affiliated with the University of Waterloo",
+        "occurrence_sentence": "Michele Mosca, University of Waterloo 07/2020 “It's a systematic threat to the global economy, and it's real enough that you definitely have to plan it for now”",
+        "source_document": "https://qaisec.eu/index.php/sequre"
+      },
+      {
+        "entity": "University of Waterloo",
+        "page": 7,
+        "role_in_text": "Michele Mosca is affiliated with this university",
+        "occurrence_sentence": "Michele Mosca, University of Waterloo",
+        "source_document": "https://qaisec.eu/index.php/sequre"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Academia",
+    "sphere": "Single",
+    "r_and_d": "R&D",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "WordPress",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "other",
+    "role_in_text": "Website creation tool",
+    "technology_area": "other",
+    "occurrence_sentence": "© 2026 Qaisec. Created for free using WordPress and [Colibri",
+    "source_document": "https://qaisec.eu/index.php/contact",
+    "page": 3,
+    "canonical_actor_key": "wordpress",
+    "aliases": [
+      "WordPress"
+    ],
+    "pages": [
+      3
+    ],
+    "mentions": [
+      {
+        "entity": "WordPress",
+        "page": 3,
+        "role_in_text": "Website creation tool",
+        "occurrence_sentence": "© 2026 Qaisec. Created for free using WordPress and [Colibri",
+        "source_document": "https://qaisec.eu/index.php/contact"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Unknown",
+    "sphere": "Unknown",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "unknown_category",
+    "classification_needs_review": true,
+    "classification_review_reason": "unmapped_category:other"
+  }
+]

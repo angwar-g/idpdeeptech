@@ -1,0 +1,541 @@
+
+========================================================================
+RUN STARTED  2026-06-17 06:06:56
+site_pipeline.py https://qsimulate.com/
+========================================================================
+
+[06:06:56 +0s | qsimulate] === 0 crawl site ===
+[06:06:58 +2s | qsimulate] [INIT].... → Crawl4AI 0.8.6 
+[06:07:00 +4s | qsimulate] [FETCH]... ↓ https://qsimulate.com/                                                                               | ✓ | ⏱: 2.05s 
+[06:07:00 +4s | qsimulate] [SCRAPE].. ◆ https://qsimulate.com/                                                                               | ✓ | ⏱: 0.01s 
+[06:07:00 +4s | qsimulate] [COMPLETE] ● https://qsimulate.com/                                                                               | ✓ | ⏱: 2.07s 
+[06:07:02 +6s | qsimulate] [FETCH]... ↓ https://qsimulate.com/files/policies/fcoi_policy.pdf                                                 | ✓ | ⏱: 1.51s 
+[06:07:02 +6s | qsimulate] [SCRAPE].. ◆ https://qsimulate.com/files/policies/fcoi_policy.pdf                                                 | ✓ | ⏱: 0.00s 
+[06:07:02 +6s | qsimulate] [COMPLETE] ● https://qsimulate.com/files/policies/fcoi_policy.pdf                                                 | ✗ | ⏱: 1.51s 
+[06:07:03 +7s | qsimulate] [FETCH]... ↓ https://qsimulate.com/                                                                               | ✓ | ⏱: 2.82s 
+[06:07:03 +7s | qsimulate] [SCRAPE].. ◆ https://qsimulate.com/                                                                               | ✓ | ⏱: 0.02s 
+[06:07:03 +7s | qsimulate] [COMPLETE] ● https://qsimulate.com/                                                                               | ✓ | ⏱: 2.86s 
+[06:07:03 +7s | qsimulate] [FETCH]... ↓ https://qsimulate.com/technology                                                                     | ✓ | ⏱: 2.55s 
+[06:07:03 +7s | qsimulate] [SCRAPE].. ◆ https://qsimulate.com/technology                                                                     | ✓ | ⏱: 0.01s 
+[06:07:03 +7s | qsimulate] [COMPLETE] ● https://qsimulate.com/technology                                                                     | ✓ | ⏱: 2.56s 
+[06:07:03 +7s | qsimulate] [FETCH]... ↓ https://qsimulate.com/careers                                                                        | ✓ | ⏱: 2.82s 
+[06:07:03 +7s | qsimulate] [SCRAPE].. ◆ https://qsimulate.com/careers                                                                        | ✓ | ⏱: 0.01s 
+[06:07:03 +7s | qsimulate] [COMPLETE] ● https://qsimulate.com/careers                                                                        | ✓ | ⏱: 2.84s 
+[06:07:03 +8s | qsimulate] [FETCH]... ↓ https://qsimulate.com/news/1/QSimulate_Japan_Moves_to_a_New_Office_in_HiRAKU_GATE                    | ✓ | ⏱: 2.88s 
+[06:07:03 +8s | qsimulate] [SCRAPE].. ◆ https://qsimulate.com/news/1/QSimulate_Japan_Moves_to_a_New_Office_in_HiRAKU_GATE                    | ✓ | ⏱: 0.01s 
+[06:07:03 +8s | qsimulate] [COMPLETE] ● https://qsimulate.com/news/1/QSimulate_Japan_Moves_to_a_New_Office_in_HiRAKU_GATE                    | ✓ | ⏱: 2.90s 
+[06:07:04 +8s | qsimulate] [FETCH]... ↓ https://qsimulate.com/news/1/QUELO_2.3.1_Released!                                                   | ✓ | ⏱: 3.72s 
+[06:07:04 +8s | qsimulate] [SCRAPE].. ◆ https://qsimulate.com/news/1/QUELO_2.3.1_Released!                                                   | ✓ | ⏱: 0.01s 
+[06:07:04 +8s | qsimulate] [COMPLETE] ● https://qsimulate.com/news/1/QUELO_2.3.1_Released!                                                   | ✓ | ⏱: 3.73s 
+[06:07:04 +9s | qsimulate] [FETCH]... ↓ https://qsimulate.com/news                                                                           | ✓ | ⏱: 3.88s 
+[06:07:04 +9s | qsimulate] [SCRAPE].. ◆ https://qsimulate.com/news                                                                           | ✓ | ⏱: 0.01s 
+[06:07:04 +9s | qsimulate] [COMPLETE] ● https://qsimulate.com/news                                                                           | ✓ | ⏱: 3.89s 
+[06:07:05 +9s | qsimulate] [FETCH]... ↓ https://qsimulate.com/about-us                                                                       | ✓ | ⏱: 4.05s 
+[06:07:05 +9s | qsimulate] [SCRAPE].. ◆ https://qsimulate.com/about-us                                                                       | ✓ | ⏱: 0.01s 
+[06:07:05 +9s | qsimulate] [COMPLETE] ● https://qsimulate.com/about-us                                                                       | ✓ | ⏱: 4.07s 
+[06:07:05 +9s | qsimulate] [FETCH]... ↓ https://qsimulate.com/news/1/DOE_Supports_a_Join...ject_Between_QSimulate,_Caltech,_IBM,_and_Others  | ✓ | ⏱: 4.19s 
+[06:07:05 +9s | qsimulate] [SCRAPE].. ◆ https://qsimulate.com/news/1/DOE_Supports_a_Join...ject_Between_QSimulate,_Caltech,_IBM,_and_Others  | ✓ | ⏱: 0.01s 
+[06:07:05 +9s | qsimulate] [COMPLETE] ● https://qsimulate.com/news/1/DOE_Supports_a_Join...ject_Between_QSimulate,_Caltech,_IBM,_and_Others  | ✓ | ⏱: 4.21s 
+[06:07:08 +9s | qsimulate] [FETCH]... ↓ https://qsimulate.com/products                                                                       | ✓ | ⏱: 4.35s 
+[06:07:08 +9s | qsimulate] [SCRAPE].. ◆ https://qsimulate.com/products                                                                       | ✓ | ⏱: 0.01s 
+[06:07:08 +9s | qsimulate] [COMPLETE] ● https://qsimulate.com/products                                                                       | ✓ | ⏱: 4.37s 
+[06:07:08 +9s | qsimulate] [FETCH]... ↓ https://qsimulate.com/home                                                                           | ✓ | ⏱: 4.40s 
+[06:07:08 +9s | qsimulate] [SCRAPE].. ◆ https://qsimulate.com/home                                                                           | ✓ | ⏱: 0.02s 
+[06:07:08 +9s | qsimulate] [COMPLETE] ● https://qsimulate.com/home                                                                           | ✓ | ⏱: 4.43s 
+[06:07:08 +9s | qsimulate] [FETCH]... ↓ https://qsimulate.com/privacy                                                                        | ✓ | ⏱: 4.55s 
+[06:07:08 +9s | qsimulate] [SCRAPE].. ◆ https://qsimulate.com/privacy                                                                        | ✓ | ⏱: 0.01s 
+[06:07:08 +9s | qsimulate] [COMPLETE] ● https://qsimulate.com/privacy                                                                        | ✓ | ⏱: 4.57s 
+[06:07:09 +9s | qsimulate] [FETCH]... ↓ https://qsimulate.com/terms                                                                          | ✓ | ⏱: 4.61s 
+[06:07:09 +9s | qsimulate] [SCRAPE].. ◆ https://qsimulate.com/terms                                                                          | ✓ | ⏱: 0.01s 
+[06:07:09 +9s | qsimulate] [COMPLETE] ● https://qsimulate.com/terms                                                                          | ✓ | ⏱: 4.64s 
+[06:07:09 +9s | qsimulate] [FETCH]... ↓ https://qsimulate.com/cookies                                                                        | ✓ | ⏱: 4.76s 
+[06:07:09 +9s | qsimulate] [SCRAPE].. ◆ https://qsimulate.com/cookies                                                                        | ✓ | ⏱: 0.01s 
+[06:07:09 +9s | qsimulate] [COMPLETE] ● https://qsimulate.com/cookies                                                                        | ✓ | ⏱: 4.77s 
+[06:07:09 +10s | qsimulate] [FETCH]... ↓ https://qsimulate.com/other                                                                          | ✓ | ⏱: 4.90s 
+[06:07:09 +10s | qsimulate] [SCRAPE].. ◆ https://qsimulate.com/other                                                                          | ✓ | ⏱: 0.01s 
+[06:07:09 +10s | qsimulate] [COMPLETE] ● https://qsimulate.com/other                                                                          | ✓ | ⏱: 4.91s 
+[06:07:11 +12s | qsimulate] [FETCH]... ↓ http://qsimulate.com/                                                                                | ✓ | ⏱: 2.24s 
+[06:07:11 +12s | qsimulate] [SCRAPE].. ◆ http://qsimulate.com/                                                                                | ✓ | ⏱: 0.02s 
+[06:07:11 +12s | qsimulate] [COMPLETE] ● http://qsimulate.com/                                                                                | ✓ | ⏱: 2.28s 
+[06:07:12 +12s | qsimulate] [FETCH]... ↓ https://qsimulate.com/news/4/                                                                        | ✓ | ⏱: 2.51s 
+[06:07:12 +12s | qsimulate] [SCRAPE].. ◆ https://qsimulate.com/news/4/                                                                        | ✓ | ⏱: 0.01s 
+[06:07:12 +12s | qsimulate] [COMPLETE] ● https://qsimulate.com/news/4/                                                                        | ✓ | ⏱: 2.52s 
+[06:07:12 +13s | qsimulate] [FETCH]... ↓ https://qsimulate.com/news/QSimulate's_Physics-F...Discovery_Was_Highlighted_in_Drug_Discovery_News  | ✓ | ⏱: 2.94s 
+[06:07:12 +13s | qsimulate] [SCRAPE].. ◆ https://qsimulate.com/news/QSimulate's_Physics-F...Discovery_Was_Highlighted_in_Drug_Discovery_News  | ✓ | ⏱: 0.01s 
+[06:07:12 +13s | qsimulate] [COMPLETE] ● https://qsimulate.com/news/QSimulate's_Physics-F...Discovery_Was_Highlighted_in_Drug_Discovery_News  | ✓ | ⏱: 2.96s 
+[06:07:13 +13s | qsimulate] [FETCH]... ↓ https://qsimulate.com/news/5/                                                                        | ✓ | ⏱: 3.47s 
+[06:07:13 +13s | qsimulate] [SCRAPE].. ◆ https://qsimulate.com/news/5/                                                                        | ✓ | ⏱: 0.01s 
+[06:07:13 +13s | qsimulate] [COMPLETE] ● https://qsimulate.com/news/5/                                                                        | ✓ | ⏱: 3.49s 
+[06:07:13 +14s | qsimulate] [FETCH]... ↓ https://qsimulate.com/news/3/                                                                        | ✓ | ⏱: 4.00s 
+[06:07:13 +14s | qsimulate] [SCRAPE].. ◆ https://qsimulate.com/news/3/                                                                        | ✓ | ⏱: 0.01s 
+[06:07:13 +14s | qsimulate] [COMPLETE] ● https://qsimulate.com/news/3/                                                                        | ✓ | ⏱: 4.01s 
+[06:07:13 +14s | qsimulate] [FETCH]... ↓ https://qsimulate.com/news/0/                                                                        | ✓ | ⏱: 4.25s 
+[06:07:13 +14s | qsimulate] [SCRAPE].. ◆ https://qsimulate.com/news/0/                                                                        | ✓ | ⏱: 0.01s 
+[06:07:13 +14s | qsimulate] [COMPLETE] ● https://qsimulate.com/news/0/                                                                        | ✓ | ⏱: 4.26s 
+[06:07:14 +14s | qsimulate] [FETCH]... ↓ https://qsimulate.com/news/2/                                                                        | ✓ | ⏱: 4.40s 
+[06:07:14 +14s | qsimulate] [SCRAPE].. ◆ https://qsimulate.com/news/2/                                                                        | ✓ | ⏱: 0.01s 
+[06:07:14 +14s | qsimulate] [COMPLETE] ● https://qsimulate.com/news/2/                                                                        | ✓ | ⏱: 4.42s 
+[06:07:14 +15s | qsimulate] [FETCH]... ↓ https://qsimulate.com/products/quantumfp                                                             | ✓ | ⏱: 4.61s 
+[06:07:14 +15s | qsimulate] [SCRAPE].. ◆ https://qsimulate.com/products/quantumfp                                                             | ✓ | ⏱: 0.01s 
+[06:07:14 +15s | qsimulate] [COMPLETE] ● https://qsimulate.com/products/quantumfp                                                             | ✓ | ⏱: 4.64s 
+[06:07:14 +15s | qsimulate] [FETCH]... ↓ https://qsimulate.com/careers/senior_full_stack_developer                                            | ✓ | ⏱: 5.01s 
+[06:07:14 +15s | qsimulate] [SCRAPE].. ◆ https://qsimulate.com/careers/senior_full_stack_developer                                            | ✓ | ⏱: 0.01s 
+[06:07:14 +15s | qsimulate] [COMPLETE] ● https://qsimulate.com/careers/senior_full_stack_developer                                            | ✓ | ⏱: 5.04s 
+[06:07:14 +15s | qsimulate] [FETCH]... ↓ https://qsimulate.com/products/protclean                                                             | ✓ | ⏱: 5.13s 
+[06:07:14 +15s | qsimulate] [SCRAPE].. ◆ https://qsimulate.com/products/protclean                                                             | ✓ | ⏱: 0.01s 
+[06:07:14 +15s | qsimulate] [COMPLETE] ● https://qsimulate.com/products/protclean                                                             | ✓ | ⏱: 5.15s 
+[06:07:15 +15s | qsimulate] [FETCH]... ↓ https://qsimulate.com/careers/senior_sales_executive                                                 | ✓ | ⏱: 5.54s 
+[06:07:15 +16s | qsimulate] [SCRAPE].. ◆ https://qsimulate.com/careers/senior_sales_executive                                                 | ✓ | ⏱: 0.02s 
+[06:07:15 +16s | qsimulate] [COMPLETE] ● https://qsimulate.com/careers/senior_sales_executive                                                 | ✓ | ⏱: 5.57s 
+[06:07:15 +16s | qsimulate] [FETCH]... ↓ https://qsimulate.com/products/quaipa                                                                | ✓ | ⏱: 5.58s 
+[06:07:15 +16s | qsimulate] [SCRAPE].. ◆ https://qsimulate.com/products/quaipa                                                                | ✓ | ⏱: 0.01s 
+[06:07:15 +16s | qsimulate] [COMPLETE] ● https://qsimulate.com/products/quaipa                                                                | ✓ | ⏱: 5.60s 
+[06:07:15 +16s | qsimulate] [FETCH]... ↓ https://qsimulate.com/academic                                                                       | ✓ | ⏱: 5.92s 
+[06:07:15 +16s | qsimulate] [SCRAPE].. ◆ https://qsimulate.com/academic                                                                       | ✓ | ⏱: 0.01s 
+[06:07:15 +16s | qsimulate] [COMPLETE] ● https://qsimulate.com/academic                                                                       | ✓ | ⏱: 5.93s 
+[06:07:15 +16s | qsimulate] [FETCH]... ↓ https://qsimulate.com/news/QSimulate_Japan_Moves_to_a_New_Office_in_HiRAKU_GATE                      | ✓ | ⏱: 6.12s 
+[06:07:15 +16s | qsimulate] [SCRAPE].. ◆ https://qsimulate.com/news/QSimulate_Japan_Moves_to_a_New_Office_in_HiRAKU_GATE                      | ✓ | ⏱: 0.01s 
+[06:07:15 +16s | qsimulate] [COMPLETE] ● https://qsimulate.com/news/QSimulate_Japan_Moves_to_a_New_Office_in_HiRAKU_GATE                      | ✓ | ⏱: 6.13s 
+[06:07:15 +16s | qsimulate] [FETCH]... ↓ https://qsimulate.com/materials                                                                      | ✓ | ⏱: 6.26s 
+[06:07:15 +16s | qsimulate] [SCRAPE].. ◆ https://qsimulate.com/materials                                                                      | ✓ | ⏱: 0.01s 
+[06:07:15 +16s | qsimulate] [COMPLETE] ● https://qsimulate.com/materials                                                                      | ✓ | ⏱: 6.28s 
+[06:07:15 +16s | qsimulate] [FETCH]... ↓ https://qsimulate.com/news/QUELO_2.3.1_Released!                                                     | ✓ | ⏱: 6.28s 
+[06:07:16 +16s | qsimulate] [SCRAPE].. ◆ https://qsimulate.com/news/QUELO_2.3.1_Released!                                                     | ✓ | ⏱: 0.01s 
+[06:07:16 +16s | qsimulate] [COMPLETE] ● https://qsimulate.com/news/QUELO_2.3.1_Released!                                                     | ✓ | ⏱: 6.30s 
+[06:07:16 +17s | qsimulate] [FETCH]... ↓ https://qsimulate.com/news/QSimulate_Opened_a_New_Office_in_Bedford,_New_Hampshire                   | ✓ | ⏱: 6.66s 
+[06:07:16 +17s | qsimulate] [SCRAPE].. ◆ https://qsimulate.com/news/QSimulate_Opened_a_New_Office_in_Bedford,_New_Hampshire                   | ✓ | ⏱: 0.01s 
+[06:07:16 +17s | qsimulate] [COMPLETE] ● https://qsimulate.com/news/QSimulate_Opened_a_New_Office_in_Bedford,_New_Hampshire                   | ✓ | ⏱: 6.68s 
+[06:07:16 +17s | qsimulate] [FETCH]... ↓ https://qsimulate.com/news/1/                                                                        | ✓ | ⏱: 7.00s 
+[06:07:16 +17s | qsimulate] [SCRAPE].. ◆ https://qsimulate.com/news/1/                                                                        | ✓ | ⏱: 0.01s 
+[06:07:16 +17s | qsimulate] [COMPLETE] ● https://qsimulate.com/news/1/                                                                        | ✓ | ⏱: 7.02s 
+[06:07:17 +17s | qsimulate] [FETCH]... ↓ https://qsimulate.com/news/DOE_Supports_a_Joint_Project_Between_QSimulate,_Caltech,_IBM,_and_Others  | ✓ | ⏱: 7.55s 
+[06:07:17 +17s | qsimulate] [SCRAPE].. ◆ https://qsimulate.com/news/DOE_Supports_a_Joint_Project_Between_QSimulate,_Caltech,_IBM,_and_Others  | ✓ | ⏱: 0.01s 
+[06:07:17 +17s | qsimulate] [COMPLETE] ● https://qsimulate.com/news/DOE_Supports_a_Joint_Project_Between_QSimulate,_Caltech,_IBM,_and_Others  | ✓ | ⏱: 7.56s 
+[06:07:17 +18s | qsimulate] [FETCH]... ↓ https://qsimulate.com/news/QSimulate_Highlighted_in_a_C&EN_Article                                   | ✓ | ⏱: 7.83s 
+[06:07:17 +18s | qsimulate] [SCRAPE].. ◆ https://qsimulate.com/news/QSimulate_Highlighted_in_a_C&EN_Article                                   | ✓ | ⏱: 0.01s 
+[06:07:17 +18s | qsimulate] [COMPLETE] ● https://qsimulate.com/news/QSimulate_Highlighted_in_a_C&EN_Article                                   | ✓ | ⏱: 7.84s 
+[06:07:17 +18s | qsimulate] [FETCH]... ↓ https://qsimulate.com/products/quelo                                                                 | ✓ | ⏱: 5.94s 
+[06:07:17 +18s | qsimulate] [SCRAPE].. ◆ https://qsimulate.com/products/quelo                                                                 | ✓ | ⏱: 0.02s 
+[06:07:17 +18s | qsimulate] [COMPLETE] ● https://qsimulate.com/products/quelo                                                                 | ✓ | ⏱: 5.97s 
+[06:07:17 +18s | qsimulate] [FETCH]... ↓ https://qsimulate.com/products/quelo-2-3-1-released                                                  | ✓ | ⏱: 5.49s 
+[06:07:17 +18s | qsimulate] [SCRAPE].. ◆ https://qsimulate.com/products/quelo-2-3-1-released                                                  | ✓ | ⏱: 0.01s 
+[06:07:17 +18s | qsimulate] [COMPLETE] ● https://qsimulate.com/products/quelo-2-3-1-released                                                  | ✓ | ⏱: 5.51s 
+[06:07:17 +18s | qsimulate] [FETCH]... ↓ https://qsimulate.com/products/quvalent                                                              | ✓ | ⏱: 5.20s 
+[06:07:17 +18s | qsimulate] [SCRAPE].. ◆ https://qsimulate.com/products/quvalent                                                              | ✓ | ⏱: 0.01s 
+[06:07:17 +18s | qsimulate] [COMPLETE] ● https://qsimulate.com/products/quvalent                                                              | ✓ | ⏱: 5.22s 
+[06:07:17 +18s | qsimulate] Saved: crawl_output/afeef90fa8_qsimulate.com.json
+[06:07:17 +18s | qsimulate] Saved: crawl_output/86d43e929c_qsimulate.com_files_policies_fcoi_policy.pdf.json
+[06:07:17 +18s | qsimulate] Duplicate skipped: https://qsimulate.com
+[06:07:17 +18s | qsimulate] Saved: crawl_output/6cdce393ce_qsimulate.com_technology.json
+[06:07:17 +18s | qsimulate] Saved: crawl_output/6fab6ed37f_qsimulate.com_careers.json
+[06:07:17 +18s | qsimulate] Saved: crawl_output/07329824ae_qsimulate.com_news_1_QSimulate_Japan_Moves_to_a_New_Office_in_HiRAKU_GATE.json
+[06:07:17 +18s | qsimulate] Saved: crawl_output/d2079d249a_qsimulate.com_news_1_QUELO_2.3.1_Released!.json
+[06:07:17 +18s | qsimulate] Saved: crawl_output/07f9d52283_qsimulate.com_news.json
+[06:07:17 +18s | qsimulate] Saved: crawl_output/4cf330435f_qsimulate.com_about-us.json
+[06:07:17 +18s | qsimulate] Saved: crawl_output/47b8622672_qsimulate.com_news_1_DOE_Supports_a_Joint_Project_Between_QSimulate,_Caltech,_IBM,_and_Others.json
+[06:07:17 +18s | qsimulate] Saved: crawl_output/51ec2e3d4f_qsimulate.com_products.json
+[06:07:17 +18s | qsimulate] Saved: crawl_output/f6ba71672f_qsimulate.com_home.json
+[06:07:17 +18s | qsimulate] Skipped: https://qsimulate.com/privacy
+[06:07:17 +18s | qsimulate] Skipped: https://qsimulate.com/terms
+[06:07:17 +18s | qsimulate] Saved: crawl_output/a21fc3740e_qsimulate.com_cookies.json
+[06:07:17 +18s | qsimulate] Saved: crawl_output/2305bc71d8_qsimulate.com_other.json
+[06:07:17 +18s | qsimulate] Saved: crawl_output/19694e2875_qsimulate.com.json
+[06:07:17 +18s | qsimulate] Saved: crawl_output/2887a815c9_qsimulate.com_news_4.json
+[06:07:17 +18s | qsimulate] Saved: crawl_output/f39154513a_qsimulate.com_news_QSimulate's_Physics-First_Approach_for_Drug_Discovery_Was_Highlighted_in_Drug_Discovery_News.json
+[06:07:17 +18s | qsimulate] Saved: crawl_output/f1e1a88bb9_qsimulate.com_news_5.json
+[06:07:17 +18s | qsimulate] Saved: crawl_output/9ddc5d3673_qsimulate.com_news_3.json
+[06:07:17 +18s | qsimulate] Saved: crawl_output/39751f269f_qsimulate.com_news_0.json
+[06:07:17 +18s | qsimulate] Saved: crawl_output/132a01ba96_qsimulate.com_news_2.json
+[06:07:17 +18s | qsimulate] Saved: crawl_output/0b120b617b_qsimulate.com_products_quantumfp.json
+[06:07:17 +18s | qsimulate] Saved: crawl_output/0dbfbc8deb_qsimulate.com_careers_senior_full_stack_developer.json
+[06:07:17 +18s | qsimulate] Saved: crawl_output/66063bc2ee_qsimulate.com_products_protclean.json
+[06:07:17 +18s | qsimulate] Saved: crawl_output/0d6ea0ac3f_qsimulate.com_careers_senior_sales_executive.json
+[06:07:17 +18s | qsimulate] Saved: crawl_output/ee48e564d6_qsimulate.com_products_quaipa.json
+[06:07:17 +18s | qsimulate] Saved: crawl_output/05f6ff2941_qsimulate.com_academic.json
+[06:07:17 +18s | qsimulate] Saved: crawl_output/96da01afc0_qsimulate.com_news_QSimulate_Japan_Moves_to_a_New_Office_in_HiRAKU_GATE.json
+[06:07:17 +18s | qsimulate] Saved: crawl_output/a0f4ea99db_qsimulate.com_materials.json
+[06:07:17 +18s | qsimulate] Saved: crawl_output/75c94138be_qsimulate.com_news_QUELO_2.3.1_Released!.json
+[06:07:17 +18s | qsimulate] Saved: crawl_output/ede55f9d37_qsimulate.com_news_QSimulate_Opened_a_New_Office_in_Bedford,_New_Hampshire.json
+[06:07:17 +18s | qsimulate] Saved: crawl_output/02ef286829_qsimulate.com_news_1.json
+[06:07:17 +18s | qsimulate] Saved: crawl_output/a7e2e68524_qsimulate.com_news_DOE_Supports_a_Joint_Project_Between_QSimulate,_Caltech,_IBM,_and_Others.json
+[06:07:17 +18s | qsimulate] Saved: crawl_output/9d87187033_qsimulate.com_news_QSimulate_Highlighted_in_a_C&EN_Article.json
+[06:07:17 +18s | qsimulate] Saved: crawl_output/b5be7780e7_qsimulate.com_products_quelo.json
+[06:07:17 +18s | qsimulate] Saved: crawl_output/f17e71b6b0_qsimulate.com_products_quelo-2-3-1-released.json
+[06:07:17 +18s | qsimulate] Saved: crawl_output/7f5ab0d8bc_qsimulate.com_products_quvalent.json
+
+[06:07:18 +18s | qsimulate] === 1 actor extraction ===
+[06:07:18 +19s | qsimulate] Reading page (1/36): https://qsimulate.com/news/1
+[06:07:18 +19s | qsimulate] Extracting: https://qsimulate.com/news/1 (1/36), chunk 1/4
+[06:07:22 +23s | qsimulate] Extracting: https://qsimulate.com/news/1 (1/36), chunk 2/4
+[06:07:29 +30s | qsimulate] Repaired malformed JSON.
+[06:07:29 +30s | qsimulate] Extracting: https://qsimulate.com/news/1 (1/36), chunk 3/4
+[06:07:35 +36s | qsimulate] Repaired malformed JSON.
+[06:07:35 +36s | qsimulate] Extracting: https://qsimulate.com/news/1 (1/36), chunk 4/4
+[06:07:40 +40s | qsimulate] Reading page (2/36): https://qsimulate.com/academic
+[06:07:40 +40s | qsimulate] Extracting: https://qsimulate.com/academic (2/36), chunk 1/5
+[06:07:48 +47s | qsimulate] Extracting: https://qsimulate.com/academic (2/36), chunk 2/5
+[06:07:53 +52s | qsimulate] Repaired malformed JSON.
+[06:07:53 +52s | qsimulate] Extracting: https://qsimulate.com/academic (2/36), chunk 3/5
+[06:07:59 +58s | qsimulate] Repaired malformed JSON.
+[06:07:59 +58s | qsimulate] Extracting: https://qsimulate.com/academic (2/36), chunk 4/5
+[06:08:07 +1m 5s | qsimulate] Repaired malformed JSON.
+[06:08:07 +1m 5s | qsimulate] Extracting: https://qsimulate.com/academic (2/36), chunk 5/5
+[06:08:10 +1m 9s | qsimulate] Reading page (3/36): https://qsimulate.com/news/1/QSimulate_Japan_Moves_to_a_New_Office_in_HiRAKU_GATE
+[06:08:10 +1m 9s | qsimulate] Extracting: https://qsimulate.com/news/1/QSimulate_Japan_Moves_to_a_New_Office_in_HiRAKU_GATE (3/36), chunk 1/2
+[06:08:21 +1m 16s | qsimulate] Repaired malformed JSON.
+[06:08:21 +1m 16s | qsimulate] Extracting: https://qsimulate.com/news/1/QSimulate_Japan_Moves_to_a_New_Office_in_HiRAKU_GATE (3/36), chunk 2/2
+[06:08:26 +1m 22s | qsimulate] Repaired malformed JSON.
+[06:08:26 +1m 22s | qsimulate] Reading page (4/36): https://qsimulate.com/news
+[06:08:26 +1m 22s | qsimulate] Extracting: https://qsimulate.com/news (4/36), chunk 1/4
+[06:08:30 +1m 25s | qsimulate] Extracting: https://qsimulate.com/news (4/36), chunk 2/4
+[06:08:37 +1m 32s | qsimulate] Repaired malformed JSON.
+[06:08:37 +1m 32s | qsimulate] Extracting: https://qsimulate.com/news (4/36), chunk 3/4
+[06:08:43 +1m 39s | qsimulate] Repaired malformed JSON.
+[06:08:43 +1m 39s | qsimulate] Extracting: https://qsimulate.com/news (4/36), chunk 4/4
+[06:08:46 +1m 42s | qsimulate] Reading page (5/36): https://qsimulate.com/products/quantumfp
+[06:08:46 +1m 42s | qsimulate] Extracting: https://qsimulate.com/products/quantumfp (5/36), chunk 1/5
+[06:08:50 +1m 45s | qsimulate] Extracting: https://qsimulate.com/products/quantumfp (5/36), chunk 2/5
+[06:08:55 +1m 48s | qsimulate] Extracting: https://qsimulate.com/products/quantumfp (5/36), chunk 3/5
+[06:09:00 +1m 53s | qsimulate] Repaired malformed JSON.
+[06:09:00 +1m 53s | qsimulate] Extracting: https://qsimulate.com/products/quantumfp (5/36), chunk 4/5
+[06:09:05 +1m 58s | qsimulate] Extracting: https://qsimulate.com/products/quantumfp (5/36), chunk 5/5
+[06:09:12 +2m 5s | qsimulate] Reading page (6/36): https://qsimulate.com/careers/senior_sales_executive
+[06:09:12 +2m 5s | qsimulate] Extracting: https://qsimulate.com/careers/senior_sales_executive (6/36), chunk 1/5
+[06:09:18 +2m 11s | qsimulate] Extracting: https://qsimulate.com/careers/senior_sales_executive (6/36), chunk 2/5
+[06:09:30 +2m 19s | qsimulate] Repaired malformed JSON.
+[06:09:30 +2m 19s | qsimulate] Extracting: https://qsimulate.com/careers/senior_sales_executive (6/36), chunk 3/5
+[06:09:33 +2m 23s | qsimulate] Extracting: https://qsimulate.com/careers/senior_sales_executive (6/36), chunk 4/5
+[06:09:37 +2m 26s | qsimulate] Extracting: https://qsimulate.com/careers/senior_sales_executive (6/36), chunk 5/5
+[06:09:41 +2m 30s | qsimulate] Reading page (7/36): https://qsimulate.com/careers/senior_full_stack_developer
+[06:09:41 +2m 30s | qsimulate] Extracting: https://qsimulate.com/careers/senior_full_stack_developer (7/36), chunk 1/6
+[06:09:46 +2m 35s | qsimulate] Extracting: https://qsimulate.com/careers/senior_full_stack_developer (7/36), chunk 2/6
+[06:09:51 +2m 40s | qsimulate] Repaired malformed JSON.
+[06:09:51 +2m 40s | qsimulate] Extracting: https://qsimulate.com/careers/senior_full_stack_developer (7/36), chunk 3/6
+[06:09:58 +2m 48s | qsimulate] Repaired malformed JSON.
+[06:09:58 +2m 48s | qsimulate] Extracting: https://qsimulate.com/careers/senior_full_stack_developer (7/36), chunk 4/6
+[06:10:10 +2m 56s | qsimulate] Extracting: https://qsimulate.com/careers/senior_full_stack_developer (7/36), chunk 5/6
+[06:10:16 +3m 2s | qsimulate] Repaired malformed JSON.
+[06:10:16 +3m 2s | qsimulate] Extracting: https://qsimulate.com/careers/senior_full_stack_developer (7/36), chunk 6/6
+[06:10:21 +3m 7s | qsimulate] Reading page (8/36): https://qsimulate.com/news/2
+[06:10:21 +3m 7s | qsimulate] Extracting: https://qsimulate.com/news/2 (8/36), chunk 1/5
+[06:10:24 +3m 11s | qsimulate] Extracting: https://qsimulate.com/news/2 (8/36), chunk 2/5
+[06:10:30 +3m 16s | qsimulate] Repaired malformed JSON.
+[06:10:30 +3m 16s | qsimulate] Extracting: https://qsimulate.com/news/2 (8/36), chunk 3/5
+[06:10:35 +3m 22s | qsimulate] Repaired malformed JSON.
+[06:10:35 +3m 22s | qsimulate] Extracting: https://qsimulate.com/news/2 (8/36), chunk 4/5
+[06:10:47 +3m 31s | qsimulate] Extracting: https://qsimulate.com/news/2 (8/36), chunk 5/5
+[06:10:50 +3m 34s | qsimulate] Reading page (9/36): http://qsimulate.com
+[06:10:50 +3m 34s | qsimulate] Extracting: http://qsimulate.com (9/36), chunk 1/7
+[06:10:54 +3m 38s | qsimulate] Extracting: http://qsimulate.com (9/36), chunk 2/7
+[06:11:01 +3m 45s | qsimulate] Repaired malformed JSON.
+[06:11:01 +3m 45s | qsimulate] Extracting: http://qsimulate.com (9/36), chunk 3/7
+[06:11:10 +3m 54s | qsimulate] Repaired malformed JSON.
+[06:11:10 +3m 54s | qsimulate] Extracting: http://qsimulate.com (9/36), chunk 4/7
+[06:11:17 +4m 1s | qsimulate] Repaired malformed JSON.
+[06:11:17 +4m 1s | qsimulate] Extracting: http://qsimulate.com (9/36), chunk 5/7
+[06:11:23 +4m 7s | qsimulate] Repaired malformed JSON.
+[06:11:23 +4m 7s | qsimulate] Extracting: http://qsimulate.com (9/36), chunk 6/7
+[06:11:35 +4m 15s | qsimulate] Repaired malformed JSON.
+[06:11:35 +4m 15s | qsimulate] Extracting: http://qsimulate.com (9/36), chunk 7/7
+[06:11:39 +4m 19s | qsimulate] Reading page (10/36): https://qsimulate.com/other
+[06:11:39 +4m 19s | qsimulate] Extracting: https://qsimulate.com/other (10/36), chunk 1/4
+[06:11:41 +4m 21s | qsimulate] Extracting: https://qsimulate.com/other (10/36), chunk 2/4
+[06:11:45 +4m 25s | qsimulate] Extracting: https://qsimulate.com/other (10/36), chunk 3/4
+[06:11:49 +4m 29s | qsimulate] Extracting: https://qsimulate.com/other (10/36), chunk 4/4
+[06:11:53 +4m 33s | qsimulate] Reading page (11/36): https://qsimulate.com/news/4
+[06:11:53 +4m 33s | qsimulate] Extracting: https://qsimulate.com/news/4 (11/36), chunk 1/5
+[06:11:57 +4m 37s | qsimulate] Extracting: https://qsimulate.com/news/4 (11/36), chunk 2/5
+[06:12:02 +4m 42s | qsimulate] Extracting: https://qsimulate.com/news/4 (11/36), chunk 3/5
+[06:12:03 +4m 45s | qsimulate] Extracting: https://qsimulate.com/news/4 (11/36), chunk 4/5
+[06:12:07 +4m 49s | qsimulate] Extracting: https://qsimulate.com/news/4 (11/36), chunk 5/5
+[06:12:10 +4m 52s | qsimulate] Reading page (12/36): https://qsimulate.com/news/0
+[06:12:10 +4m 52s | qsimulate] Extracting: https://qsimulate.com/news/0 (12/36), chunk 1/2
+[06:12:16 +4m 58s | qsimulate] Extracting: https://qsimulate.com/news/0 (12/36), chunk 2/2
+[06:12:21 +5m 3s | qsimulate] Reading page (13/36): https://qsimulate.com/news/1/DOE_Supports_a_Joint_Project_Between_QSimulate,_Caltech,_IBM,_and_Others
+[06:12:21 +5m 3s | qsimulate] Extracting: https://qsimulate.com/news/1/DOE_Supports_a_Joint_Project_Between_QSimulate,_Caltech,_IBM,_and_Others (13/36), chunk 1/2
+[06:12:31 +5m 12s | qsimulate] Repaired malformed JSON.
+[06:12:31 +5m 12s | qsimulate] Extracting: https://qsimulate.com/news/1/DOE_Supports_a_Joint_Project_Between_QSimulate,_Caltech,_IBM,_and_Others (13/36), chunk 2/2
+[06:12:39 +5m 19s | qsimulate] Repaired malformed JSON.
+[06:12:39 +5m 19s | qsimulate] Reading page (14/36): https://qsimulate.com/about-us
+[06:12:39 +5m 19s | qsimulate] Extracting: https://qsimulate.com/about-us (14/36), chunk 1/6
+[06:12:44 +5m 24s | qsimulate] Extracting: https://qsimulate.com/about-us (14/36), chunk 2/6
+[06:12:50 +5m 30s | qsimulate] Repaired malformed JSON.
+[06:12:50 +5m 30s | qsimulate] Extracting: https://qsimulate.com/about-us (14/36), chunk 3/6
+[06:12:56 +5m 37s | qsimulate] Repaired malformed JSON.
+[06:12:56 +5m 37s | qsimulate] Extracting: https://qsimulate.com/about-us (14/36), chunk 4/6
+[06:13:02 +5m 42s | qsimulate] Repaired malformed JSON.
+[06:13:02 +5m 42s | qsimulate] Extracting: https://qsimulate.com/about-us (14/36), chunk 5/6
+[06:13:10 +5m 48s | qsimulate] Repaired malformed JSON.
+[06:13:10 +5m 48s | qsimulate] Extracting: https://qsimulate.com/about-us (14/36), chunk 6/6
+[06:13:16 +5m 54s | qsimulate] Reading page (15/36): https://qsimulate.com/products
+[06:13:16 +5m 54s | qsimulate] Extracting: https://qsimulate.com/products (15/36), chunk 1/4
+[06:13:20 +5m 58s | qsimulate] Extracting: https://qsimulate.com/products (15/36), chunk 2/4
+[06:13:26 +6m 4s | qsimulate] Extracting: https://qsimulate.com/products (15/36), chunk 3/4
+[06:13:33 +6m 11s | qsimulate] Extracting: https://qsimulate.com/products (15/36), chunk 4/4
+[06:13:37 +6m 15s | qsimulate] Reading page (16/36): https://qsimulate.com/products/protclean
+[06:13:37 +6m 15s | qsimulate] Extracting: https://qsimulate.com/products/protclean (16/36), chunk 1/4
+[06:13:45 +6m 21s | qsimulate] Extracting: https://qsimulate.com/products/protclean (16/36), chunk 2/4
+[06:13:53 +6m 29s | qsimulate] Repaired malformed JSON.
+[06:13:53 +6m 29s | qsimulate] Extracting: https://qsimulate.com/products/protclean (16/36), chunk 3/4
+[06:13:58 +6m 34s | qsimulate] Repaired malformed JSON.
+[06:13:58 +6m 34s | qsimulate] Extracting: https://qsimulate.com/products/protclean (16/36), chunk 4/4
+[06:14:10 +6m 46s | qsimulate] Reading page (17/36): https://qsimulate.com/technology
+[06:14:10 +6m 46s | qsimulate] Extracting: https://qsimulate.com/technology (17/36), chunk 1/4
+[06:14:12 +6m 48s | qsimulate] Extracting: https://qsimulate.com/technology (17/36), chunk 2/4
+[06:14:23 +6m 56s | qsimulate] Repaired malformed JSON.
+[06:14:23 +6m 56s | qsimulate] Extracting: https://qsimulate.com/technology (17/36), chunk 3/4
+[06:14:30 +7m 4s | qsimulate] Repaired malformed JSON.
+[06:14:30 +7m 4s | qsimulate] Extracting: https://qsimulate.com/technology (17/36), chunk 4/4
+[06:14:36 +7m 10s | qsimulate] Repaired malformed JSON.
+[06:14:36 +7m 10s | qsimulate] Reading page (18/36): https://qsimulate.com/careers
+[06:14:36 +7m 10s | qsimulate] Extracting: https://qsimulate.com/careers (18/36), chunk 1/4
+[06:14:41 +7m 15s | qsimulate] Extracting: https://qsimulate.com/careers (18/36), chunk 2/4
+[06:14:44 +7m 18s | qsimulate] Extracting: https://qsimulate.com/careers (18/36), chunk 3/4
+[06:14:53 +7m 24s | qsimulate] Repaired malformed JSON.
+[06:14:53 +7m 24s | qsimulate] Extracting: https://qsimulate.com/careers (18/36), chunk 4/4
+[06:14:56 +7m 28s | qsimulate] Reading page (19/36): https://qsimulate.com/news/QUELO_2.3.1_Released!
+[06:14:56 +7m 28s | qsimulate] Extracting: https://qsimulate.com/news/QUELO_2.3.1_Released! (19/36), chunk 1/3
+[06:15:01 +7m 32s | qsimulate] Extracting: https://qsimulate.com/news/QUELO_2.3.1_Released! (19/36), chunk 2/3
+[06:15:05 +7m 36s | qsimulate] Extracting: https://qsimulate.com/news/QUELO_2.3.1_Released! (19/36), chunk 3/3
+[06:15:11 +7m 42s | qsimulate] Reading page (20/36): https://qsimulate.com/products/quvalent
+[06:15:11 +7m 42s | qsimulate] Extracting: https://qsimulate.com/products/quvalent (20/36), chunk 1/5
+[06:15:14 +7m 45s | qsimulate] Extracting: https://qsimulate.com/products/quvalent (20/36), chunk 2/5
+[06:15:18 +7m 50s | qsimulate] Extracting: https://qsimulate.com/products/quvalent (20/36), chunk 3/5
+[06:15:27 +7m 56s | qsimulate] Extracting: https://qsimulate.com/products/quvalent (20/36), chunk 4/5
+[06:15:32 +8m 1s | qsimulate] Extracting: https://qsimulate.com/products/quvalent (20/36), chunk 5/5
+[06:15:36 +8m 5s | qsimulate] Reading page (22/36): https://qsimulate.com/news/QSimulate_Japan_Moves_to_a_New_Office_in_HiRAKU_GATE
+[06:15:36 +8m 5s | qsimulate] Extracting: https://qsimulate.com/news/QSimulate_Japan_Moves_to_a_New_Office_in_HiRAKU_GATE (22/36), chunk 1/2
+[06:15:44 +8m 14s | qsimulate] Repaired malformed JSON.
+[06:15:44 +8m 14s | qsimulate] Extracting: https://qsimulate.com/news/QSimulate_Japan_Moves_to_a_New_Office_in_HiRAKU_GATE (22/36), chunk 2/2
+[06:15:50 +8m 20s | qsimulate] Repaired malformed JSON.
+[06:15:50 +8m 20s | qsimulate] Reading page (23/36): https://qsimulate.com/news/QSimulate_Highlighted_in_a_C&EN_Article
+[06:15:50 +8m 20s | qsimulate] Extracting: https://qsimulate.com/news/QSimulate_Highlighted_in_a_C&EN_Article (23/36), chunk 1/3
+[06:15:56 +8m 26s | qsimulate] Repaired malformed JSON.
+[06:15:56 +8m 26s | qsimulate] Extracting: https://qsimulate.com/news/QSimulate_Highlighted_in_a_C&EN_Article (23/36), chunk 2/3
+[06:16:06 +8m 33s | qsimulate] Repaired malformed JSON.
+[06:16:06 +8m 33s | qsimulate] Extracting: https://qsimulate.com/news/QSimulate_Highlighted_in_a_C&EN_Article (23/36), chunk 3/3
+[06:16:11 +8m 38s | qsimulate] Repaired malformed JSON.
+[06:16:11 +8m 38s | qsimulate] Reading page (24/36): https://qsimulate.com/news/3
+[06:16:11 +8m 38s | qsimulate] Extracting: https://qsimulate.com/news/3 (24/36), chunk 1/5
+[06:16:15 +8m 42s | qsimulate] Extracting: https://qsimulate.com/news/3 (24/36), chunk 2/5
+[06:16:23 +8m 50s | qsimulate] Repaired malformed JSON.
+[06:16:23 +8m 50s | qsimulate] Extracting: https://qsimulate.com/news/3 (24/36), chunk 3/5
+[06:16:29 +8m 56s | qsimulate] Repaired malformed JSON.
+[06:16:29 +8m 56s | qsimulate] Extracting: https://qsimulate.com/news/3 (24/36), chunk 4/5
+[06:16:32 +8m 59s | qsimulate] Extracting: https://qsimulate.com/news/3 (24/36), chunk 5/5
+[06:16:38 +9m 3s | qsimulate] Reading page (25/36): https://qsimulate.com/materials
+[06:16:38 +9m 3s | qsimulate] Extracting: https://qsimulate.com/materials (25/36), chunk 1/5
+[06:16:42 +9m 6s | qsimulate] Extracting: https://qsimulate.com/materials (25/36), chunk 2/5
+[06:16:45 +9m 10s | qsimulate] Extracting: https://qsimulate.com/materials (25/36), chunk 3/5
+[06:16:49 +9m 14s | qsimulate] Extracting: https://qsimulate.com/materials (25/36), chunk 4/5
+[06:16:56 +9m 21s | qsimulate] Repaired malformed JSON.
+[06:16:56 +9m 21s | qsimulate] Extracting: https://qsimulate.com/materials (25/36), chunk 5/5
+[06:17:03 +9m 28s | qsimulate] Repaired malformed JSON.
+[06:17:03 +9m 28s | qsimulate] Reading page (26/36): https://qsimulate.com/cookies
+[06:17:03 +9m 28s | qsimulate] Extracting: https://qsimulate.com/cookies (26/36), chunk 1/7
+[06:17:04 +9m 29s | qsimulate] Extracting: https://qsimulate.com/cookies (26/36), chunk 2/7
+[06:17:14 +9m 37s | qsimulate] Extracting: https://qsimulate.com/cookies (26/36), chunk 3/7
+[06:17:19 +9m 42s | qsimulate] Extracting: https://qsimulate.com/cookies (26/36), chunk 4/7
+[06:17:26 +9m 49s | qsimulate] Repaired malformed JSON.
+[06:17:26 +9m 49s | qsimulate] Extracting: https://qsimulate.com/cookies (26/36), chunk 5/7
+[06:17:31 +9m 53s | qsimulate] Extracting: https://qsimulate.com/cookies (26/36), chunk 6/7
+[06:17:36 +9m 59s | qsimulate] Extracting: https://qsimulate.com/cookies (26/36), chunk 7/7
+[06:17:39 +10m 2s | qsimulate] Reading page (27/36): https://qsimulate.com/news/DOE_Supports_a_Joint_Project_Between_QSimulate,_Caltech,_IBM,_and_Others
+[06:17:39 +10m 2s | qsimulate] Extracting: https://qsimulate.com/news/DOE_Supports_a_Joint_Project_Between_QSimulate,_Caltech,_IBM,_and_Others (27/36), chunk 1/2
+[06:17:50 +10m 10s | qsimulate] Repaired malformed JSON.
+[06:17:50 +10m 10s | qsimulate] Extracting: https://qsimulate.com/news/DOE_Supports_a_Joint_Project_Between_QSimulate,_Caltech,_IBM,_and_Others (27/36), chunk 2/2
+[06:17:56 +10m 16s | qsimulate] Repaired malformed JSON.
+[06:17:56 +10m 16s | qsimulate] Reading page (28/36): https://qsimulate.com
+[06:17:56 +10m 16s | qsimulate] Extracting: https://qsimulate.com (28/36), chunk 1/7
+[06:18:00 +10m 20s | qsimulate] Extracting: https://qsimulate.com (28/36), chunk 2/7
+[06:18:05 +10m 25s | qsimulate] Repaired malformed JSON.
+[06:18:05 +10m 25s | qsimulate] Extracting: https://qsimulate.com (28/36), chunk 3/7
+[06:18:12 +10m 32s | qsimulate] Repaired malformed JSON.
+[06:18:12 +10m 32s | qsimulate] Extracting: https://qsimulate.com (28/36), chunk 4/7
+[06:18:22 +10m 41s | qsimulate] Repaired malformed JSON.
+[06:18:22 +10m 41s | qsimulate] Extracting: https://qsimulate.com (28/36), chunk 5/7
+[06:18:30 +10m 49s | qsimulate] Repaired malformed JSON.
+[06:18:30 +10m 49s | qsimulate] Extracting: https://qsimulate.com (28/36), chunk 6/7
+[06:18:37 +10m 55s | qsimulate] Repaired malformed JSON.
+[06:18:37 +10m 55s | qsimulate] Extracting: https://qsimulate.com (28/36), chunk 7/7
+[06:18:40 +10m 58s | qsimulate] Reading page (29/36): https://qsimulate.com/products/quelo
+[06:18:40 +10m 58s | qsimulate] Extracting: https://qsimulate.com/products/quelo (29/36), chunk 1/6
+[06:18:44 +11m 2s | qsimulate] Extracting: https://qsimulate.com/products/quelo (29/36), chunk 2/6
+[06:18:49 +11m 7s | qsimulate] Repaired malformed JSON.
+[06:18:49 +11m 7s | qsimulate] Extracting: https://qsimulate.com/products/quelo (29/36), chunk 3/6
+[06:18:56 +11m 14s | qsimulate] Repaired malformed JSON.
+[06:18:56 +11m 14s | qsimulate] Extracting: https://qsimulate.com/products/quelo (29/36), chunk 4/6
+[06:19:04 +11m 22s | qsimulate] Repaired malformed JSON.
+[06:19:04 +11m 22s | qsimulate] Extracting: https://qsimulate.com/products/quelo (29/36), chunk 5/6
+[06:19:09 +11m 27s | qsimulate] Extracting: https://qsimulate.com/products/quelo (29/36), chunk 6/6
+[06:19:12 +11m 30s | qsimulate] Reading page (30/36): https://qsimulate.com/news/1/QUELO_2.3.1_Released!
+[06:19:12 +11m 30s | qsimulate] Extracting: https://qsimulate.com/news/1/QUELO_2.3.1_Released! (30/36), chunk 1/3
+[06:19:17 +11m 35s | qsimulate] Extracting: https://qsimulate.com/news/1/QUELO_2.3.1_Released! (30/36), chunk 2/3
+[06:19:21 +11m 39s | qsimulate] Extracting: https://qsimulate.com/news/1/QUELO_2.3.1_Released! (30/36), chunk 3/3
+[06:19:26 +11m 44s | qsimulate] Reading page (31/36): https://qsimulate.com/news/QSimulate_Opened_a_New_Office_in_Bedford,_New_Hampshire
+[06:19:26 +11m 44s | qsimulate] Extracting: https://qsimulate.com/news/QSimulate_Opened_a_New_Office_in_Bedford,_New_Hampshire (31/36), chunk 1/2
+[06:19:34 +11m 50s | qsimulate] Repaired malformed JSON.
+[06:19:34 +11m 50s | qsimulate] Extracting: https://qsimulate.com/news/QSimulate_Opened_a_New_Office_in_Bedford,_New_Hampshire (31/36), chunk 2/2
+[06:19:41 +11m 57s | qsimulate] Repaired malformed JSON.
+[06:19:41 +11m 57s | qsimulate] Reading page (32/36): https://qsimulate.com/products/quaipa
+[06:19:41 +11m 57s | qsimulate] Extracting: https://qsimulate.com/products/quaipa (32/36), chunk 1/4
+[06:19:45 +12m 1s | qsimulate] Extracting: https://qsimulate.com/products/quaipa (32/36), chunk 2/4
+[06:19:49 +12m 6s | qsimulate] Extracting: https://qsimulate.com/products/quaipa (32/36), chunk 3/4
+[06:19:56 +12m 12s | qsimulate] Repaired malformed JSON.
+[06:19:56 +12m 12s | qsimulate] Extracting: https://qsimulate.com/products/quaipa (32/36), chunk 4/4
+[06:20:00 +12m 16s | qsimulate] Reading page (33/36): https://qsimulate.com/products/quelo-2-3-1-released
+[06:20:00 +12m 16s | qsimulate] Extracting: https://qsimulate.com/products/quelo-2-3-1-released (33/36), chunk 1/5
+[06:20:05 +12m 21s | qsimulate] Extracting: https://qsimulate.com/products/quelo-2-3-1-released (33/36), chunk 2/5
+[06:20:10 +12m 26s | qsimulate] Extracting: https://qsimulate.com/products/quelo-2-3-1-released (33/36), chunk 3/5
+[06:20:17 +12m 33s | qsimulate] Repaired malformed JSON.
+[06:20:17 +12m 33s | qsimulate] Extracting: https://qsimulate.com/products/quelo-2-3-1-released (33/36), chunk 4/5
+[06:20:22 +12m 38s | qsimulate] Extracting: https://qsimulate.com/products/quelo-2-3-1-released (33/36), chunk 5/5
+[06:20:28 +12m 44s | qsimulate] Repaired malformed JSON.
+[06:20:28 +12m 44s | qsimulate] Reading page (34/36): https://qsimulate.com/news/5
+[06:20:28 +12m 44s | qsimulate] Extracting: https://qsimulate.com/news/5 (34/36), chunk 1/4
+[06:20:32 +12m 48s | qsimulate] Extracting: https://qsimulate.com/news/5 (34/36), chunk 2/4
+[06:20:38 +12m 54s | qsimulate] Repaired malformed JSON.
+[06:20:38 +12m 54s | qsimulate] Extracting: https://qsimulate.com/news/5 (34/36), chunk 3/4
+[06:20:45 +13m 1s | qsimulate] Repaired malformed JSON.
+[06:20:45 +13m 1s | qsimulate] Extracting: https://qsimulate.com/news/5 (34/36), chunk 4/4
+[06:20:52 +13m 8s | qsimulate] Reading page (35/36): https://qsimulate.com/news/QSimulate's_Physics-First_Approach_for_Drug_Discovery_Was_Highlighted_in_Drug_Discovery_News
+[06:20:52 +13m 8s | qsimulate] Extracting: https://qsimulate.com/news/QSimulate's_Physics-First_Approach_for_Drug_Discovery_Was_Highlighted_in_Drug_Discovery_News (35/36), chunk 1/4
+[06:21:00 +13m 16s | qsimulate] Repaired malformed JSON.
+[06:21:00 +13m 16s | qsimulate] Extracting: https://qsimulate.com/news/QSimulate's_Physics-First_Approach_for_Drug_Discovery_Was_Highlighted_in_Drug_Discovery_News (35/36), chunk 2/4
+[06:21:09 +13m 23s | qsimulate] Repaired malformed JSON.
+[06:21:09 +13m 23s | qsimulate] Extracting: https://qsimulate.com/news/QSimulate's_Physics-First_Approach_for_Drug_Discovery_Was_Highlighted_in_Drug_Discovery_News (35/36), chunk 3/4
+[06:21:18 +13m 32s | qsimulate] Repaired malformed JSON.
+[06:21:18 +13m 32s | qsimulate] Extracting: https://qsimulate.com/news/QSimulate's_Physics-First_Approach_for_Drug_Discovery_Was_Highlighted_in_Drug_Discovery_News (35/36), chunk 4/4
+[06:21:25 +13m 39s | qsimulate] Repaired malformed JSON.
+[06:21:25 +13m 39s | qsimulate] Reading page (36/36): https://qsimulate.com/home
+[06:21:25 +13m 39s | qsimulate] Extracting: https://qsimulate.com/home (36/36), chunk 1/7
+[06:21:29 +13m 43s | qsimulate] Extracting: https://qsimulate.com/home (36/36), chunk 2/7
+[06:21:34 +13m 48s | qsimulate] Repaired malformed JSON.
+[06:21:34 +13m 48s | qsimulate] Extracting: https://qsimulate.com/home (36/36), chunk 3/7
+[06:21:41 +13m 54s | qsimulate] Repaired malformed JSON.
+[06:21:41 +13m 54s | qsimulate] Extracting: https://qsimulate.com/home (36/36), chunk 4/7
+[06:21:48 +14m 1s | qsimulate] Repaired malformed JSON.
+[06:21:48 +14m 1s | qsimulate] Extracting: https://qsimulate.com/home (36/36), chunk 5/7
+[06:21:56 +14m 9s | qsimulate] Repaired malformed JSON.
+[06:21:56 +14m 9s | qsimulate] Extracting: https://qsimulate.com/home (36/36), chunk 6/7
+[06:22:03 +14m 16s | qsimulate] Repaired malformed JSON.
+[06:22:03 +14m 16s | qsimulate] Extracting: https://qsimulate.com/home (36/36), chunk 7/7
+[06:22:06 +14m 19s | qsimulate] Saved 1_actor_results.json with 247 extracted records
+
+[06:22:06 +14m 19s | qsimulate] === 2 clean actors ===
+[06:22:07 +14m 20s | qsimulate] Loaded 247 extracted records
+[06:22:07 +14m 20s | qsimulate] Saved 2_actor_nodes.json with 26 canonical actor nodes
+
+[06:22:07 +14m 20s | qsimulate] === 3 interaction extraction ===
+[06:22:07 +14m 20s | qsimulate] Extracting interactions: https://qsimulate.com/news/1 (1/36), chunk 2/4
+[06:22:12 +14m 25s | qsimulate] Extracting interactions: https://qsimulate.com/news/1 (1/36), chunk 3/4
+[06:22:19 +14m 30s | qsimulate] Extracting interactions: https://qsimulate.com/news/1 (1/36), chunk 4/4
+[06:22:23 +14m 34s | qsimulate] Extracting interactions: https://qsimulate.com/academic (2/36), chunk 2/5
+[06:22:29 +14m 40s | qsimulate] Extracting interactions: https://qsimulate.com/academic (2/36), chunk 3/5
+[06:22:36 +14m 47s | qsimulate] Extracting interactions: https://qsimulate.com/academic (2/36), chunk 4/5
+[06:22:41 +14m 52s | qsimulate] Extracting interactions: https://qsimulate.com/academic (2/36), chunk 5/5
+[06:22:44 +14m 55s | qsimulate] Extracting interactions: https://qsimulate.com/news/1/QSimulate_Japan_Moves_to_a_New_Office_in_HiRAKU_GATE (3/36), chunk 1/2
+[06:22:54 +15m 3s | qsimulate] Extracting interactions: https://qsimulate.com/news/1/QSimulate_Japan_Moves_to_a_New_Office_in_HiRAKU_GATE (3/36), chunk 2/2
+[06:23:00 +15m 8s | qsimulate] Extracting interactions: https://qsimulate.com/news (4/36), chunk 2/4
+[06:23:07 +15m 16s | qsimulate] Extracting interactions: https://qsimulate.com/news (4/36), chunk 3/4
+[06:23:14 +15m 23s | qsimulate] Extracting interactions: https://qsimulate.com/news (4/36), chunk 4/4
+[06:23:18 +15m 27s | qsimulate] Extracting interactions: https://qsimulate.com/products/quantumfp (5/36), chunk 4/5
+[06:23:27 +15m 33s | qsimulate] Extracting interactions: https://qsimulate.com/products/quantumfp (5/36), chunk 5/5
+[06:23:30 +15m 37s | qsimulate] Extracting interactions: https://qsimulate.com/careers/senior_sales_executive (6/36), chunk 4/5
+[06:23:35 +15m 42s | qsimulate] Extracting interactions: https://qsimulate.com/careers/senior_sales_executive (6/36), chunk 5/5
+[06:23:38 +15m 45s | qsimulate] Extracting interactions: https://qsimulate.com/careers/senior_full_stack_developer (7/36), chunk 5/6
+[06:23:43 +15m 50s | qsimulate] Extracting interactions: https://qsimulate.com/careers/senior_full_stack_developer (7/36), chunk 6/6
+[06:23:46 +15m 52s | qsimulate] Extracting interactions: https://qsimulate.com/news/2 (8/36), chunk 2/5
+[06:23:59 +16m 3s | qsimulate] Extracting interactions: https://qsimulate.com/news/2 (8/36), chunk 3/5
+[06:24:08 +16m 12s | qsimulate] Extracting interactions: https://qsimulate.com/news/2 (8/36), chunk 4/5
+[06:24:11 +16m 15s | qsimulate] Extracting interactions: https://qsimulate.com/news/2 (8/36), chunk 5/5
+[06:24:15 +16m 19s | qsimulate] Extracting interactions: http://qsimulate.com (9/36), chunk 2/7
+[06:24:25 +16m 29s | qsimulate] Extracting interactions: http://qsimulate.com (9/36), chunk 3/7
+[06:24:35 +16m 37s | qsimulate] Extracting interactions: http://qsimulate.com (9/36), chunk 4/7
+[06:24:42 +16m 43s | qsimulate] Extracting interactions: http://qsimulate.com (9/36), chunk 5/7
+[06:24:48 +16m 49s | qsimulate] Extracting interactions: http://qsimulate.com (9/36), chunk 6/7
+[06:24:53 +16m 55s | qsimulate] Extracting interactions: https://qsimulate.com/other (10/36), chunk 4/4
+[06:24:57 +16m 58s | qsimulate] Extracting interactions: https://qsimulate.com/news/4 (11/36), chunk 2/5
+[06:25:02 +17m 3s | qsimulate] Extracting interactions: https://qsimulate.com/news/4 (11/36), chunk 4/5
+[06:25:05 +17m 6s | qsimulate] Extracting interactions: https://qsimulate.com/news/0 (12/36), chunk 1/2
+[06:25:11 +17m 10s | qsimulate] Extracting interactions: https://qsimulate.com/news/0 (12/36), chunk 2/2
+[06:25:13 +17m 13s | qsimulate] Extracting interactions: https://qsimulate.com/news/1/DOE_Supports_a_Joint_Project_Between_QSimulate,_Caltech,_IBM,_and_Others (13/36), chunk 1/2
+[06:25:23 +17m 22s | qsimulate] Extracting interactions: https://qsimulate.com/news/1/DOE_Supports_a_Joint_Project_Between_QSimulate,_Caltech,_IBM,_and_Others (13/36), chunk 2/2
+[06:25:28 +17m 28s | qsimulate] Extracting interactions: https://qsimulate.com/about-us (14/36), chunk 2/6
+[06:25:34 +17m 33s | qsimulate] Extracting interactions: https://qsimulate.com/about-us (14/36), chunk 3/6
+[06:25:43 +17m 40s | qsimulate] Extracting interactions: https://qsimulate.com/about-us (14/36), chunk 4/6
+[06:25:45 +17m 42s | qsimulate] Extracting interactions: https://qsimulate.com/about-us (14/36), chunk 5/6
+[06:25:48 +17m 45s | qsimulate] Extracting interactions: https://qsimulate.com/about-us (14/36), chunk 6/6
+[06:25:51 +17m 48s | qsimulate] Extracting interactions: https://qsimulate.com/products (15/36), chunk 2/4
+[06:25:54 +17m 51s | qsimulate] Extracting interactions: https://qsimulate.com/products (15/36), chunk 3/4
+[06:25:58 +17m 55s | qsimulate] Extracting interactions: https://qsimulate.com/products (15/36), chunk 4/4
+[06:26:01 +17m 58s | qsimulate] Extracting interactions: https://qsimulate.com/products/protclean (16/36), chunk 3/4
+[06:26:07 +18m 4s | qsimulate] Extracting interactions: https://qsimulate.com/products/protclean (16/36), chunk 4/4
+[06:26:10 +18m 7s | qsimulate] Extracting interactions: https://qsimulate.com/technology (17/36), chunk 3/4
+[06:26:19 +18m 14s | qsimulate] Extracting interactions: https://qsimulate.com/technology (17/36), chunk 4/4
+[06:26:27 +18m 22s | qsimulate] Extracting interactions: https://qsimulate.com/careers (18/36), chunk 3/4
+[06:26:31 +18m 26s | qsimulate] Extracting interactions: https://qsimulate.com/careers (18/36), chunk 4/4
+[06:26:36 +18m 30s | qsimulate] Extracting interactions: https://qsimulate.com/news/QUELO_2.3.1_Released! (19/36), chunk 2/3
+[06:26:39 +18m 34s | qsimulate] Extracting interactions: https://qsimulate.com/products/quvalent (20/36), chunk 4/5
+[06:26:45 +18m 40s | qsimulate] Extracting interactions: https://qsimulate.com/news/QSimulate_Japan_Moves_to_a_New_Office_in_HiRAKU_GATE (22/36), chunk 1/2
+[06:26:53 +18m 46s | qsimulate] Extracting interactions: https://qsimulate.com/news/QSimulate_Japan_Moves_to_a_New_Office_in_HiRAKU_GATE (22/36), chunk 2/2
+[06:27:00 +18m 53s | qsimulate] Extracting interactions: https://qsimulate.com/news/QSimulate_Highlighted_in_a_C&EN_Article (23/36), chunk 2/3
+[06:27:03 +18m 56s | qsimulate] Extracting interactions: https://qsimulate.com/news/3 (24/36), chunk 2/5
+[06:27:19 +19m 12s | qsimulate] Extracting interactions: https://qsimulate.com/news/3 (24/36), chunk 3/5
+[06:27:33 +19m 26s | qsimulate] Extracting interactions: https://qsimulate.com/news/3 (24/36), chunk 4/5
+[06:27:36 +19m 29s | qsimulate] Extracting interactions: https://qsimulate.com/materials (25/36), chunk 4/5
+[06:27:44 +19m 34s | qsimulate] Extracting interactions: https://qsimulate.com/materials (25/36), chunk 5/5
+[06:27:51 +19m 41s | qsimulate] Extracting interactions: https://qsimulate.com/cookies (26/36), chunk 6/7
+[06:27:54 +19m 44s | qsimulate] Extracting interactions: https://qsimulate.com/cookies (26/36), chunk 7/7
+[06:27:57 +19m 47s | qsimulate] Extracting interactions: https://qsimulate.com/news/DOE_Supports_a_Joint_Project_Between_QSimulate,_Caltech,_IBM,_and_Others (27/36), chunk 1/2
+[06:28:03 +19m 53s | qsimulate] Extracting interactions: https://qsimulate.com/news/DOE_Supports_a_Joint_Project_Between_QSimulate,_Caltech,_IBM,_and_Others (27/36), chunk 2/2
+[06:28:07 +19m 56s | qsimulate] Extracting interactions: https://qsimulate.com (28/36), chunk 2/7
+[06:28:13 +20m 3s | qsimulate] Extracting interactions: https://qsimulate.com (28/36), chunk 3/7
+[06:28:24 +20m 11s | qsimulate] Extracting interactions: https://qsimulate.com (28/36), chunk 4/7
+[06:28:30 +20m 17s | qsimulate] Extracting interactions: https://qsimulate.com (28/36), chunk 5/7
+[06:28:35 +20m 22s | qsimulate] Extracting interactions: https://qsimulate.com (28/36), chunk 6/7
+[06:28:41 +20m 28s | qsimulate] Extracting interactions: https://qsimulate.com/products/quelo (29/36), chunk 2/6
+[06:28:48 +20m 35s | qsimulate] Extracting interactions: https://qsimulate.com/products/quelo (29/36), chunk 3/6
+[06:28:58 +20m 42s | qsimulate] Extracting interactions: https://qsimulate.com/products/quelo (29/36), chunk 4/6
+[06:29:03 +20m 47s | qsimulate] Extracting interactions: https://qsimulate.com/products/quelo (29/36), chunk 5/6
+[06:29:09 +20m 54s | qsimulate] Extracting interactions: https://qsimulate.com/news/1/QUELO_2.3.1_Released! (30/36), chunk 2/3
+[06:29:12 +20m 57s | qsimulate] Extracting interactions: https://qsimulate.com/news/QSimulate_Opened_a_New_Office_in_Bedford,_New_Hampshire (31/36), chunk 2/2
+[06:29:16 +21m 0s | qsimulate] Extracting interactions: https://qsimulate.com/products/quaipa (32/36), chunk 3/4
+[06:29:20 +21m 5s | qsimulate] Extracting interactions: https://qsimulate.com/products/quaipa (32/36), chunk 4/4
+[06:29:24 +21m 9s | qsimulate] Extracting interactions: https://qsimulate.com/products/quelo-2-3-1-released (33/36), chunk 4/5
+[06:29:32 +21m 16s | qsimulate] Extracting interactions: https://qsimulate.com/products/quelo-2-3-1-released (33/36), chunk 5/5
+[06:29:38 +21m 22s | qsimulate] Extracting interactions: https://qsimulate.com/news/5 (34/36), chunk 2/4
+[06:29:47 +21m 29s | qsimulate] Extracting interactions: https://qsimulate.com/news/5 (34/36), chunk 3/4
+[06:29:53 +21m 35s | qsimulate] Extracting interactions: https://qsimulate.com/news/5 (34/36), chunk 4/4
+[06:29:55 +21m 36s | qsimulate] Extracting interactions: https://qsimulate.com/news/QSimulate's_Physics-First_Approach_for_Drug_Discovery_Was_Highlighted_in_Drug_Discovery_News (35/36), chunk 2/4
+[06:29:59 +21m 40s | qsimulate] Extracting interactions: https://qsimulate.com/news/QSimulate's_Physics-First_Approach_for_Drug_Discovery_Was_Highlighted_in_Drug_Discovery_News (35/36), chunk 3/4
+[06:30:07 +21m 48s | qsimulate] Extracting interactions: https://qsimulate.com/news/QSimulate's_Physics-First_Approach_for_Drug_Discovery_Was_Highlighted_in_Drug_Discovery_News (35/36), chunk 4/4
+[06:30:12 +21m 53s | qsimulate] Extracting interactions: https://qsimulate.com/home (36/36), chunk 2/7
+[06:30:22 +22m 1s | qsimulate] Extracting interactions: https://qsimulate.com/home (36/36), chunk 3/7
+[06:30:34 +22m 12s | qsimulate] Extracting interactions: https://qsimulate.com/home (36/36), chunk 4/7
+[06:30:40 +22m 19s | qsimulate] Extracting interactions: https://qsimulate.com/home (36/36), chunk 5/7
+[06:30:43 +22m 22s | qsimulate] Extracting interactions: https://qsimulate.com/home (36/36), chunk 6/7
+[06:30:47 +22m 26s | qsimulate] Saved 3_interaction_results.json with 139 extracted interactions.
+
+[06:30:48 +22m 26s | qsimulate] === 4 clean interactions ===
+[06:30:48 +22m 26s | qsimulate] Saved 4_edges.json with 22 cleaned interactions.
+
+[06:30:48 +22m 26s | qsimulate] === 5 helix enrichment ===
+[06:30:48 +22m 26s | qsimulate] Wrote 5_nodes.json (26 actors)
+[06:30:48 +22m 26s | qsimulate] Wrote 5_edges.json (22 interactions)
+[06:30:48 +22m 26s | qsimulate] Actor helix counts: {'Academia': 4, 'Civil Society': 2, 'Government': 1, 'Industry': 11, 'Intermediary': 1, 'Unknown': 7}
+[06:30:48 +22m 26s | qsimulate] Functional-space counts: {'Consensus': 2, 'Innovation': 16, 'Intra-helix / Not classified': 4}
+
+[06:30:48 +22m 26s | qsimulate] === 6 network visualisation ===
+[06:30:48 +22m 27s | qsimulate] Wrote quantum_network.html
+[06:30:48 +22m 27s | qsimulate] Nodes: 26
+[06:30:48 +22m 27s | qsimulate] Edges: 6
+
+[06:30:48 +22m 27s | qsimulate] Done. Outputs written to: /home/lv/IDP/idpdeeptech/pipeline/site_outputs/qsimulate
+[06:30:48 +22m 27s | qsimulate] Log: /home/lv/IDP/idpdeeptech/pipeline/site_outputs/qsimulate/run.log
+
+========================================================================
+RUN FINISHED 2026-06-17 06:30:48  (OK)
+Started:     2026-06-17 06:06:56
+Elapsed:     22m 27s
+========================================================================

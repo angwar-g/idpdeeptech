@@ -1,0 +1,795 @@
+
+========================================================================
+RUN STARTED  2026-06-17 14:35:03
+site_pipeline.py http://www.sqc.com.au/
+========================================================================
+
+[14:35:03 +0s | sqc_com] === 0 crawl site ===
+[14:35:05 +2s | sqc_com] [INIT].... → Crawl4AI 0.8.6 
+[14:35:06 +3s | sqc_com] [FETCH]... ↓ http://www.sqc.com.au/                                                                               | ✓ | ⏱: 0.95s 
+[14:35:06 +3s | sqc_com] [SCRAPE].. ◆ http://www.sqc.com.au/                                                                               | ✓ | ⏱: 0.03s 
+[14:35:06 +3s | sqc_com] [COMPLETE] ● http://www.sqc.com.au/                                                                               | ✓ | ⏱: 1.00s 
+[14:35:07 +4s | sqc_com] [FETCH]... ↓ https://www.sqc.com.au/                                                                              | ✓ | ⏱: 0.57s 
+[14:35:07 +4s | sqc_com] [SCRAPE].. ◆ https://www.sqc.com.au/                                                                              | ✓ | ⏱: 0.04s 
+[14:35:07 +4s | sqc_com] [COMPLETE] ● https://www.sqc.com.au/                                                                              | ✓ | ⏱: 0.63s 
+[14:35:07 +4s | sqc_com] [FETCH]... ↓ https://www.sqc.com.au/privacy-policy                                                                | ✓ | ⏱: 0.65s 
+[14:35:07 +4s | sqc_com] [SCRAPE].. ◆ https://www.sqc.com.au/privacy-policy                                                                | ✓ | ⏱: 0.04s 
+[14:35:07 +4s | sqc_com] [COMPLETE] ● https://www.sqc.com.au/privacy-policy                                                                | ✓ | ⏱: 0.70s 
+[14:35:07 +4s | sqc_com] [FETCH]... ↓ https://www.sqc.com.au/terms-conditions                                                              | ✓ | ⏱: 0.75s 
+[14:35:07 +5s | sqc_com] [SCRAPE].. ◆ https://www.sqc.com.au/terms-conditions                                                              | ✓ | ⏱: 0.04s 
+[14:35:07 +5s | sqc_com] [COMPLETE] ● https://www.sqc.com.au/terms-conditions                                                              | ✓ | ⏱: 0.81s 
+[14:35:07 +5s | sqc_com] [FETCH]... ↓ https://www.sqc.com.au/qubits                                                                        | ✓ | ⏱: 0.82s 
+[14:35:07 +5s | sqc_com] [SCRAPE].. ◆ https://www.sqc.com.au/qubits                                                                        | ✓ | ⏱: 0.07s 
+[14:35:07 +5s | sqc_com] [COMPLETE] ● https://www.sqc.com.au/qubits                                                                        | ✓ | ⏱: 0.91s 
+[14:35:07 +5s | sqc_com] [FETCH]... ↓ https://www.sqc.com.au/news                                                                          | ✓ | ⏱: 0.92s 
+[14:35:08 +5s | sqc_com] [SCRAPE].. ◆ https://www.sqc.com.au/news                                                                          | ✓ | ⏱: 0.10s 
+[14:35:08 +5s | sqc_com] [COMPLETE] ● https://www.sqc.com.au/news                                                                          | ✓ | ⏱: 1.05s 
+[14:35:08 +5s | sqc_com] [FETCH]... ↓ https://www.sqc.com.au/career                                                                        | ✓ | ⏱: 1.11s 
+[14:35:08 +5s | sqc_com] [SCRAPE].. ◆ https://www.sqc.com.au/career                                                                        | ✓ | ⏱: 0.06s 
+[14:35:08 +5s | sqc_com] [COMPLETE] ● https://www.sqc.com.au/career                                                                        | ✓ | ⏱: 1.19s 
+[14:35:08 +5s | sqc_com] [FETCH]... ↓ https://www.sqc.com.au/news/nrfc-investment                                                          | ✓ | ⏱: 1.27s 
+[14:35:08 +5s | sqc_com] [SCRAPE].. ◆ https://www.sqc.com.au/news/nrfc-investment                                                          | ✓ | ⏱: 0.07s 
+[14:35:08 +5s | sqc_com] [COMPLETE] ● https://www.sqc.com.au/news/nrfc-investment                                                          | ✓ | ⏱: 1.36s 
+[14:35:08 +5s | sqc_com] [FETCH]... ↓ https://www.sqc.com.au/technology                                                                    | ✓ | ⏱: 1.39s 
+[14:35:08 +5s | sqc_com] [SCRAPE].. ◆ https://www.sqc.com.au/technology                                                                    | ✓ | ⏱: 0.05s 
+[14:35:08 +5s | sqc_com] [COMPLETE] ● https://www.sqc.com.au/technology                                                                    | ✓ | ⏱: 1.46s 
+[14:35:08 +5s | sqc_com] [FETCH]... ↓ https://www.sqc.com.au/news/sqc-x-amd                                                                | ✓ | ⏱: 1.47s 
+[14:35:08 +5s | sqc_com] [SCRAPE].. ◆ https://www.sqc.com.au/news/sqc-x-amd                                                                | ✓ | ⏱: 0.04s 
+[14:35:08 +5s | sqc_com] [COMPLETE] ● https://www.sqc.com.au/news/sqc-x-amd                                                                | ✓ | ⏱: 1.52s 
+[14:35:08 +5s | sqc_com] [FETCH]... ↓ https://www.sqc.com.au/products                                                                      | ✓ | ⏱: 1.53s 
+[14:35:08 +5s | sqc_com] [SCRAPE].. ◆ https://www.sqc.com.au/products                                                                      | ✓ | ⏱: 0.03s 
+[14:35:08 +5s | sqc_com] [COMPLETE] ● https://www.sqc.com.au/products                                                                      | ✓ | ⏱: 1.57s 
+[14:35:08 +5s | sqc_com] [FETCH]... ↓ https://www.sqc.com.au/news/firgun-ventures-sqc-investment                                           | ✓ | ⏱: 1.57s 
+[14:35:08 +5s | sqc_com] [SCRAPE].. ◆ https://www.sqc.com.au/news/firgun-ventures-sqc-investment                                           | ✓ | ⏱: 0.04s 
+[14:35:08 +5s | sqc_com] [COMPLETE] ● https://www.sqc.com.au/news/firgun-ventures-sqc-investment                                           | ✓ | ⏱: 1.62s 
+[14:35:08 +5s | sqc_com] [FETCH]... ↓ https://www.sqc.com.au/about                                                                         | ✓ | ⏱: 1.62s 
+[14:35:08 +5s | sqc_com] [SCRAPE].. ◆ https://www.sqc.com.au/about                                                                         | ✓ | ⏱: 0.06s 
+[14:35:08 +5s | sqc_com] [COMPLETE] ● https://www.sqc.com.au/about                                                                         | ✓ | ⏱: 1.69s 
+[14:35:08 +5s | sqc_com] [FETCH]... ↓ https://www.sqc.com.au/contact                                                                       | ✓ | ⏱: 1.74s 
+[14:35:08 +5s | sqc_com] [SCRAPE].. ◆ https://www.sqc.com.au/contact                                                                       | ✓ | ⏱: 0.02s 
+[14:35:08 +6s | sqc_com] [COMPLETE] ● https://www.sqc.com.au/contact                                                                       | ✓ | ⏱: 1.77s 
+[14:35:09 +6s | sqc_com] [FETCH]... ↓ https://www.sqc.com.au/career/6437242                                                                | ✓ | ⏱: 0.81s 
+[14:35:09 +6s | sqc_com] [SCRAPE].. ◆ https://www.sqc.com.au/career/6437242                                                                | ✓ | ⏱: 0.03s 
+[14:35:09 +6s | sqc_com] [COMPLETE] ● https://www.sqc.com.au/career/6437242                                                                | ✓ | ⏱: 0.87s 
+[14:35:10 +7s | sqc_com] [FETCH]... ↓ https://www.sqc.com.au/career/7282360                                                                | ✓ | ⏱: 0.85s 
+[14:35:10 +7s | sqc_com] [SCRAPE].. ◆ https://www.sqc.com.au/career/7282360                                                                | ✓ | ⏱: 0.04s 
+[14:35:10 +7s | sqc_com] [COMPLETE] ● https://www.sqc.com.au/career/7282360                                                                | ✓ | ⏱: 0.91s 
+[14:35:10 +7s | sqc_com] [FETCH]... ↓ https://www.sqc.com.au/news/darpa-qbi-stage-b                                                        | ✓ | ⏱: 0.92s 
+[14:35:10 +7s | sqc_com] [SCRAPE].. ◆ https://www.sqc.com.au/news/darpa-qbi-stage-b                                                        | ✓ | ⏱: 0.05s 
+[14:35:10 +7s | sqc_com] [COMPLETE] ● https://www.sqc.com.au/news/darpa-qbi-stage-b                                                        | ✓ | ⏱: 0.99s 
+[14:35:10 +7s | sqc_com] [FETCH]... ↓ https://www.sqc.com.au/news/sqc-establishes-leadership-in-silicon-modality                           | ✓ | ⏱: 1.09s 
+[14:35:10 +7s | sqc_com] [SCRAPE].. ◆ https://www.sqc.com.au/news/sqc-establishes-leadership-in-silicon-modality                           | ✓ | ⏱: 0.07s 
+[14:35:10 +7s | sqc_com] [COMPLETE] ● https://www.sqc.com.au/news/sqc-establishes-leadership-in-silicon-modality                           | ✓ | ⏱: 1.18s 
+[14:35:10 +7s | sqc_com] [FETCH]... ↓ https://www.sqc.com.au/career/7325927                                                                | ✓ | ⏱: 1.40s 
+[14:35:10 +7s | sqc_com] [SCRAPE].. ◆ https://www.sqc.com.au/career/7325927                                                                | ✓ | ⏱: 0.06s 
+[14:35:10 +7s | sqc_com] [COMPLETE] ● https://www.sqc.com.au/career/7325927                                                                | ✓ | ⏱: 1.49s 
+[14:35:10 +7s | sqc_com] [FETCH]... ↓ https://www.sqc.com.au/news/silicon-quantum-comp...-up-to-deliver-quantum-enhanced-machine-learning  | ✓ | ⏱: 1.53s 
+[14:35:10 +7s | sqc_com] [SCRAPE].. ◆ https://www.sqc.com.au/news/silicon-quantum-comp...-up-to-deliver-quantum-enhanced-machine-learning  | ✓ | ⏱: 0.06s 
+[14:35:10 +8s | sqc_com] [COMPLETE] ● https://www.sqc.com.au/news/silicon-quantum-comp...-up-to-deliver-quantum-enhanced-machine-learning  | ✓ | ⏱: 1.62s 
+[14:35:10 +8s | sqc_com] [FETCH]... ↓ https://www.sqc.com.au/career/7769662                                                                | ✓ | ⏱: 1.65s 
+[14:35:10 +8s | sqc_com] [SCRAPE].. ◆ https://www.sqc.com.au/career/7769662                                                                | ✓ | ⏱: 0.07s 
+[14:35:10 +8s | sqc_com] [COMPLETE] ● https://www.sqc.com.au/career/7769662                                                                | ✓ | ⏱: 1.74s 
+[14:35:10 +8s | sqc_com] [FETCH]... ↓ https://www.sqc.com.au/news/scalable-cooling-bluefors-x-sqc                                          | ✓ | ⏱: 1.75s 
+[14:35:11 +8s | sqc_com] [SCRAPE].. ◆ https://www.sqc.com.au/news/scalable-cooling-bluefors-x-sqc                                          | ✓ | ⏱: 0.07s 
+[14:35:11 +8s | sqc_com] [COMPLETE] ● https://www.sqc.com.au/news/scalable-cooling-bluefors-x-sqc                                          | ✓ | ⏱: 1.85s 
+[14:35:11 +8s | sqc_com] [FETCH]... ↓ https://www.sqc.com.au/news/michelletca                                                              | ✓ | ⏱: 1.87s 
+[14:35:11 +8s | sqc_com] [SCRAPE].. ◆ https://www.sqc.com.au/news/michelletca                                                              | ✓ | ⏱: 0.07s 
+[14:35:11 +8s | sqc_com] [COMPLETE] ● https://www.sqc.com.au/news/michelletca                                                              | ✓ | ⏱: 1.96s 
+[14:35:11 +8s | sqc_com] [FETCH]... ↓ https://www.sqc.com.au/news/silicon-quantum-computing-awarded-darpa-qbi-contract                     | ✓ | ⏱: 2.02s 
+[14:35:11 +8s | sqc_com] [SCRAPE].. ◆ https://www.sqc.com.au/news/silicon-quantum-computing-awarded-darpa-qbi-contract                     | ✓ | ⏱: 0.06s 
+[14:35:11 +8s | sqc_com] [COMPLETE] ● https://www.sqc.com.au/news/silicon-quantum-computing-awarded-darpa-qbi-contract                     | ✓ | ⏱: 2.11s 
+[14:35:11 +8s | sqc_com] [FETCH]... ↓ https://www.sqc.com.au/career/7709888                                                                | ✓ | ⏱: 2.13s 
+[14:35:11 +8s | sqc_com] [SCRAPE].. ◆ https://www.sqc.com.au/career/7709888                                                                | ✓ | ⏱: 0.07s 
+[14:35:11 +8s | sqc_com] [COMPLETE] ● https://www.sqc.com.au/career/7709888                                                                | ✓ | ⏱: 2.23s 
+[14:35:11 +8s | sqc_com] [FETCH]... ↓ https://www.sqc.com.au/career/7568506                                                                | ✓ | ⏱: 2.30s 
+[14:35:11 +8s | sqc_com] [SCRAPE].. ◆ https://www.sqc.com.au/career/7568506                                                                | ✓ | ⏱: 0.06s 
+[14:35:11 +8s | sqc_com] [COMPLETE] ● https://www.sqc.com.au/career/7568506                                                                | ✓ | ⏱: 2.39s 
+[14:35:11 +8s | sqc_com] [FETCH]... ↓ https://www.sqc.com.au/career/7282362                                                                | ✓ | ⏱: 2.42s 
+[14:35:11 +8s | sqc_com] [SCRAPE].. ◆ https://www.sqc.com.au/career/7282362                                                                | ✓ | ⏱: 0.06s 
+[14:35:11 +8s | sqc_com] [COMPLETE] ● https://www.sqc.com.au/career/7282362                                                                | ✓ | ⏱: 2.51s 
+[14:35:11 +8s | sqc_com] [FETCH]... ↓ https://www.sqc.com.au/career/6499053                                                                | ✓ | ⏱: 2.59s 
+[14:35:11 +9s | sqc_com] [SCRAPE].. ◆ https://www.sqc.com.au/career/6499053                                                                | ✓ | ⏱: 0.06s 
+[14:35:11 +9s | sqc_com] [COMPLETE] ● https://www.sqc.com.au/career/6499053                                                                | ✓ | ⏱: 2.67s 
+[14:35:11 +9s | sqc_com] [FETCH]... ↓ https://www.sqc.com.au/news/skywater-and-sqc-advancing-hybrid-quantum-classical-computing            | ✓ | ⏱: 2.70s 
+[14:35:11 +9s | sqc_com] [SCRAPE].. ◆ https://www.sqc.com.au/news/skywater-and-sqc-advancing-hybrid-quantum-classical-computing            | ✓ | ⏱: 0.07s 
+[14:35:11 +9s | sqc_com] [COMPLETE] ● https://www.sqc.com.au/news/skywater-and-sqc-advancing-hybrid-quantum-classical-computing            | ✓ | ⏱: 2.80s 
+[14:35:12 +9s | sqc_com] [FETCH]... ↓ https://www.sqc.com.au/career/7811203                                                                | ✓ | ⏱: 2.81s 
+[14:35:12 +9s | sqc_com] [SCRAPE].. ◆ https://www.sqc.com.au/career/7811203                                                                | ✓ | ⏱: 0.06s 
+[14:35:12 +9s | sqc_com] [COMPLETE] ● https://www.sqc.com.au/career/7811203                                                                | ✓ | ⏱: 2.89s 
+[14:35:12 +9s | sqc_com] [FETCH]... ↓ https://www.sqc.com.au/news/sqc-announces-record-qubit-read-out-fidelities-at-high-temperatures      | ✓ | ⏱: 2.89s 
+[14:35:12 +9s | sqc_com] [SCRAPE].. ◆ https://www.sqc.com.au/news/sqc-announces-record-qubit-read-out-fidelities-at-high-temperatures      | ✓ | ⏱: 0.04s 
+[14:35:12 +9s | sqc_com] [COMPLETE] ● https://www.sqc.com.au/news/sqc-announces-record-qubit-read-out-fidelities-at-high-temperatures      | ✓ | ⏱: 2.96s 
+[14:35:12 +9s | sqc_com] [FETCH]... ↓ https://www.sqc.com.au/news/helgoland                                                                | ✓ | ⏱: 2.97s 
+[14:35:12 +9s | sqc_com] [SCRAPE].. ◆ https://www.sqc.com.au/news/helgoland                                                                | ✓ | ⏱: 0.04s 
+[14:35:12 +9s | sqc_com] [COMPLETE] ● https://www.sqc.com.au/news/helgoland                                                                | ✓ | ⏱: 3.03s 
+[14:35:12 +9s | sqc_com] [FETCH]... ↓ https://www.sqc.com.au/career/7896943                                                                | ✓ | ⏱: 3.05s 
+[14:35:12 +9s | sqc_com] [SCRAPE].. ◆ https://www.sqc.com.au/career/7896943                                                                | ✓ | ⏱: 0.06s 
+[14:35:12 +9s | sqc_com] [COMPLETE] ● https://www.sqc.com.au/career/7896943                                                                | ✓ | ⏱: 3.12s 
+[14:35:12 +9s | sqc_com] [FETCH]... ↓ http://privacyofficer@sqc.com.au/                                                                    | ✓ | ⏱: 3.50s 
+[14:35:12 +9s | sqc_com] [SCRAPE].. ◆ http://privacyofficer@sqc.com.au/                                                                    | ✓ | ⏱: 0.08s 
+[14:35:12 +9s | sqc_com] [COMPLETE] ● http://privacyofficer@sqc.com.au/                                                                    | ✓ | ⏱: 3.60s 
+[14:35:12 +9s | sqc_com] [FETCH]... ↓ https://www.sqc.com.au/news/sqc-launches-quantum-twins                                               | ✓ | ⏱: 2.75s 
+[14:35:12 +9s | sqc_com] [SCRAPE].. ◆ https://www.sqc.com.au/news/sqc-launches-quantum-twins                                               | ✓ | ⏱: 0.07s 
+[14:35:12 +9s | sqc_com] [COMPLETE] ● https://www.sqc.com.au/news/sqc-launches-quantum-twins                                               | ✓ | ⏱: 2.85s 
+[14:35:12 +9s | sqc_com] [FETCH]... ↓ https://www.sqc.com.au/news/sqcbloomberg                                                             | ✓ | ⏱: 2.15s 
+[14:35:12 +9s | sqc_com] [SCRAPE].. ◆ https://www.sqc.com.au/news/sqcbloomberg                                                             | ✓ | ⏱: 0.05s 
+[14:35:12 +9s | sqc_com] [COMPLETE] ● https://www.sqc.com.au/news/sqcbloomberg                                                             | ✓ | ⏱: 2.22s 
+[14:35:12 +9s | sqc_com] [FETCH]... ↓ https://www.sqc.com.au/news/sqc-x-nvidia                                                             | ✓ | ⏱: 2.49s 
+[14:35:12 +9s | sqc_com] [SCRAPE].. ◆ https://www.sqc.com.au/news/sqc-x-nvidia                                                             | ✓ | ⏱: 0.04s 
+[14:35:12 +9s | sqc_com] [COMPLETE] ● https://www.sqc.com.au/news/sqc-x-nvidia                                                             | ✓ | ⏱: 2.55s 
+[14:35:12 +9s | sqc_com] [FETCH]... ↓ https://www.sqc.com.au/news/telstra-and-sqc-explore-smarter-network-prediction                       | ✓ | ⏱: 2.21s 
+[14:35:12 +9s | sqc_com] [SCRAPE].. ◆ https://www.sqc.com.au/news/telstra-and-sqc-explore-smarter-network-prediction                       | ✓ | ⏱: 0.04s 
+[14:35:12 +9s | sqc_com] [COMPLETE] ● https://www.sqc.com.au/news/telstra-and-sqc-explore-smarter-network-prediction                       | ✓ | ⏱: 2.26s 
+[14:35:12 +10s | sqc_com] [FETCH]... ↓ https://www.sqc.com.au/news/the-superposition-guys-podcast---with-michelle-simmons                   | ✓ | ⏱: 1.98s 
+[14:35:12 +10s | sqc_com] [SCRAPE].. ◆ https://www.sqc.com.au/news/the-superposition-guys-podcast---with-michelle-simmons                   | ✓ | ⏱: 0.04s 
+[14:35:12 +10s | sqc_com] [COMPLETE] ● https://www.sqc.com.au/news/the-superposition-guys-podcast---with-michelle-simmons                   | ✓ | ⏱: 2.04s 
+[14:35:12 +10s | sqc_com] Saved: crawl_output/ffb968f69f_www.sqc.com.au.json
+[14:35:12 +10s | sqc_com] Saved: crawl_output/d91a1b19dc_www.sqc.com.au.json
+[14:35:12 +10s | sqc_com] Skipped: https://www.sqc.com.au/privacy-policy
+[14:35:12 +10s | sqc_com] Skipped: https://www.sqc.com.au/terms-conditions
+[14:35:12 +10s | sqc_com] Saved: crawl_output/82a38ddac7_www.sqc.com.au_qubits.json
+[14:35:12 +10s | sqc_com] Saved: crawl_output/8c5587b491_www.sqc.com.au_news.json
+[14:35:12 +10s | sqc_com] Saved: crawl_output/c97fa86371_www.sqc.com.au_career.json
+[14:35:12 +10s | sqc_com] Saved: crawl_output/2e002228ac_www.sqc.com.au_news_nrfc-investment.json
+[14:35:12 +10s | sqc_com] Saved: crawl_output/c875829287_www.sqc.com.au_technology.json
+[14:35:12 +10s | sqc_com] Saved: crawl_output/951aee75a1_www.sqc.com.au_news_sqc-x-amd.json
+[14:35:12 +10s | sqc_com] Saved: crawl_output/c98f10b8c3_www.sqc.com.au_products.json
+[14:35:12 +10s | sqc_com] Saved: crawl_output/4c5dd5b33d_www.sqc.com.au_news_firgun-ventures-sqc-investment.json
+[14:35:12 +10s | sqc_com] Saved: crawl_output/9bc12677f9_www.sqc.com.au_about.json
+[14:35:12 +10s | sqc_com] Saved: crawl_output/676549fbab_www.sqc.com.au_contact.json
+[14:35:12 +10s | sqc_com] Saved: crawl_output/1f22996793_www.sqc.com.au_career_6437242.json
+[14:35:12 +10s | sqc_com] Saved: crawl_output/9c0a79d4cf_www.sqc.com.au_career_7282360.json
+[14:35:12 +10s | sqc_com] Saved: crawl_output/d6a630996a_www.sqc.com.au_news_darpa-qbi-stage-b.json
+[14:35:12 +10s | sqc_com] Saved: crawl_output/591251c35f_www.sqc.com.au_news_sqc-establishes-leadership-in-silicon-modality.json
+[14:35:12 +10s | sqc_com] Saved: crawl_output/236b538440_www.sqc.com.au_career_7325927.json
+[14:35:12 +10s | sqc_com] Saved: crawl_output/513b85e671_www.sqc.com.au_news_silicon-quantum-computing-and-australian-defence-partner-up-to-deliver-quantum-enhanced-machine-learning.json
+[14:35:12 +10s | sqc_com] Saved: crawl_output/59ab101d7f_www.sqc.com.au_career_7769662.json
+[14:35:12 +10s | sqc_com] Saved: crawl_output/7fe93aa642_www.sqc.com.au_news_scalable-cooling-bluefors-x-sqc.json
+[14:35:12 +10s | sqc_com] Saved: crawl_output/feb182c531_www.sqc.com.au_news_michelletca.json
+[14:35:12 +10s | sqc_com] Saved: crawl_output/314aac933e_www.sqc.com.au_news_silicon-quantum-computing-awarded-darpa-qbi-contract.json
+[14:35:12 +10s | sqc_com] Saved: crawl_output/15b35d188a_www.sqc.com.au_career_7709888.json
+[14:35:12 +10s | sqc_com] Saved: crawl_output/d26e34d49d_www.sqc.com.au_career_7568506.json
+[14:35:12 +10s | sqc_com] Saved: crawl_output/a1b3197321_www.sqc.com.au_career_7282362.json
+[14:35:12 +10s | sqc_com] Saved: crawl_output/54fb0cc110_www.sqc.com.au_career_6499053.json
+[14:35:12 +10s | sqc_com] Saved: crawl_output/e357bf9ed3_www.sqc.com.au_news_skywater-and-sqc-advancing-hybrid-quantum-classical-computing.json
+[14:35:12 +10s | sqc_com] Saved: crawl_output/a463ecf19d_www.sqc.com.au_career_7811203.json
+[14:35:12 +10s | sqc_com] Saved: crawl_output/8015f5ea22_www.sqc.com.au_news_sqc-announces-record-qubit-read-out-fidelities-at-high-temperatures.json
+[14:35:12 +10s | sqc_com] Saved: crawl_output/751c971749_www.sqc.com.au_news_helgoland.json
+[14:35:12 +10s | sqc_com] Saved: crawl_output/ca2c06fb80_www.sqc.com.au_career_7896943.json
+[14:35:12 +10s | sqc_com] Skipped: http://privacyofficer@sqc.com.au
+[14:35:12 +10s | sqc_com] Saved: crawl_output/f999d1c8f7_www.sqc.com.au_news_sqc-launches-quantum-twins.json
+[14:35:12 +10s | sqc_com] Saved: crawl_output/3f4fa79458_www.sqc.com.au_news_sqcbloomberg.json
+[14:35:12 +10s | sqc_com] Saved: crawl_output/fce6f02096_www.sqc.com.au_news_sqc-x-nvidia.json
+[14:35:12 +10s | sqc_com] Saved: crawl_output/e55c151914_www.sqc.com.au_news_telstra-and-sqc-explore-smarter-network-prediction.json
+[14:35:12 +10s | sqc_com] Saved: crawl_output/ffdad3c3dc_www.sqc.com.au_news_the-superposition-guys-podcast---with-michelle-simmons.json
+
+[14:35:13 +10s | sqc_com] === 1 actor extraction ===
+[14:35:13 +10s | sqc_com] Reading page (1/36): https://www.sqc.com.au/career/7709888
+[14:35:13 +10s | sqc_com] Extracting: https://www.sqc.com.au/career/7709888 (1/36), chunk 1/7
+[14:35:17 +15s | sqc_com] Extracting: https://www.sqc.com.au/career/7709888 (1/36), chunk 2/7
+[14:35:25 +22s | sqc_com] Repaired malformed JSON.
+[14:35:25 +22s | sqc_com] Extracting: https://www.sqc.com.au/career/7709888 (1/36), chunk 3/7
+[14:35:34 +31s | sqc_com] Repaired malformed JSON.
+[14:35:34 +31s | sqc_com] Extracting: https://www.sqc.com.au/career/7709888 (1/36), chunk 4/7
+[14:35:41 +38s | sqc_com] Repaired malformed JSON.
+[14:35:41 +38s | sqc_com] Extracting: https://www.sqc.com.au/career/7709888 (1/36), chunk 5/7
+[14:35:47 +44s | sqc_com] Repaired malformed JSON.
+[14:35:47 +44s | sqc_com] Extracting: https://www.sqc.com.au/career/7709888 (1/36), chunk 6/7
+[14:35:56 +53s | sqc_com] Repaired malformed JSON.
+[14:35:56 +53s | sqc_com] Extracting: https://www.sqc.com.au/career/7709888 (1/36), chunk 7/7
+[14:36:00 +57s | sqc_com] Reading page (2/36): https://www.sqc.com.au/career/6437242
+[14:36:00 +57s | sqc_com] Extracting: https://www.sqc.com.au/career/6437242 (2/36), chunk 1/6
+[14:36:05 +1m 2s | sqc_com] Extracting: https://www.sqc.com.au/career/6437242 (2/36), chunk 2/6
+[14:36:15 +1m 12s | sqc_com] Repaired malformed JSON.
+[14:36:15 +1m 12s | sqc_com] Extracting: https://www.sqc.com.au/career/6437242 (2/36), chunk 3/6
+[14:36:21 +1m 19s | sqc_com] Repaired malformed JSON.
+[14:36:21 +1m 19s | sqc_com] Extracting: https://www.sqc.com.au/career/6437242 (2/36), chunk 4/6
+[14:36:31 +1m 28s | sqc_com] Repaired malformed JSON.
+[14:36:31 +1m 28s | sqc_com] Extracting: https://www.sqc.com.au/career/6437242 (2/36), chunk 5/6
+[14:36:38 +1m 35s | sqc_com] Repaired malformed JSON.
+[14:36:38 +1m 35s | sqc_com] Extracting: https://www.sqc.com.au/career/6437242 (2/36), chunk 6/6
+[14:36:41 +1m 38s | sqc_com] Reading page (3/36): https://www.sqc.com.au/career/7325927
+[14:36:41 +1m 38s | sqc_com] Extracting: https://www.sqc.com.au/career/7325927 (3/36), chunk 1/7
+[14:36:45 +1m 43s | sqc_com] Extracting: https://www.sqc.com.au/career/7325927 (3/36), chunk 2/7
+[14:36:53 +1m 50s | sqc_com] Repaired malformed JSON.
+[14:36:53 +1m 50s | sqc_com] Extracting: https://www.sqc.com.au/career/7325927 (3/36), chunk 3/7
+[14:37:01 +1m 58s | sqc_com] Repaired malformed JSON.
+[14:37:01 +1m 58s | sqc_com] Extracting: https://www.sqc.com.au/career/7325927 (3/36), chunk 4/7
+[14:37:05 +2m 2s | sqc_com] Extracting: https://www.sqc.com.au/career/7325927 (3/36), chunk 5/7
+[14:37:10 +2m 7s | sqc_com] Extracting: https://www.sqc.com.au/career/7325927 (3/36), chunk 6/7
+[14:37:15 +2m 12s | sqc_com] Extracting: https://www.sqc.com.au/career/7325927 (3/36), chunk 7/7
+[14:37:19 +2m 16s | sqc_com] Reading page (4/36): https://www.sqc.com.au/news/nrfc-investment
+[14:37:19 +2m 16s | sqc_com] Extracting: https://www.sqc.com.au/news/nrfc-investment (4/36), chunk 1/7
+[14:37:24 +2m 21s | sqc_com] Extracting: https://www.sqc.com.au/news/nrfc-investment (4/36), chunk 2/7
+[14:37:30 +2m 27s | sqc_com] Extracting: https://www.sqc.com.au/news/nrfc-investment (4/36), chunk 3/7
+[14:37:37 +2m 35s | sqc_com] Repaired malformed JSON.
+[14:37:37 +2m 35s | sqc_com] Extracting: https://www.sqc.com.au/news/nrfc-investment (4/36), chunk 4/7
+[14:37:45 +2m 42s | sqc_com] Repaired malformed JSON.
+[14:37:45 +2m 42s | sqc_com] Extracting: https://www.sqc.com.au/news/nrfc-investment (4/36), chunk 5/7
+[14:37:51 +2m 48s | sqc_com] Repaired malformed JSON.
+[14:37:51 +2m 48s | sqc_com] Extracting: https://www.sqc.com.au/news/nrfc-investment (4/36), chunk 6/7
+[14:37:58 +2m 55s | sqc_com] Repaired malformed JSON.
+[14:37:58 +2m 55s | sqc_com] Extracting: https://www.sqc.com.au/news/nrfc-investment (4/36), chunk 7/7
+[14:38:05 +3m 2s | sqc_com] Repaired malformed JSON.
+[14:38:05 +3m 2s | sqc_com] Reading page (5/36): https://www.sqc.com.au/news/silicon-quantum-computing-awarded-darpa-qbi-contract
+[14:38:05 +3m 2s | sqc_com] Extracting: https://www.sqc.com.au/news/silicon-quantum-computing-awarded-darpa-qbi-contract (5/36), chunk 1/6
+[14:38:13 +3m 10s | sqc_com] Repaired malformed JSON.
+[14:38:13 +3m 10s | sqc_com] Extracting: https://www.sqc.com.au/news/silicon-quantum-computing-awarded-darpa-qbi-contract (5/36), chunk 2/6
+[14:38:19 +3m 16s | sqc_com] Repaired malformed JSON.
+[14:38:19 +3m 16s | sqc_com] Extracting: https://www.sqc.com.au/news/silicon-quantum-computing-awarded-darpa-qbi-contract (5/36), chunk 3/6
+[14:38:28 +3m 25s | sqc_com] Repaired malformed JSON.
+[14:38:28 +3m 25s | sqc_com] Extracting: https://www.sqc.com.au/news/silicon-quantum-computing-awarded-darpa-qbi-contract (5/36), chunk 4/6
+[14:38:37 +3m 35s | sqc_com] Repaired malformed JSON.
+[14:38:37 +3m 35s | sqc_com] Extracting: https://www.sqc.com.au/news/silicon-quantum-computing-awarded-darpa-qbi-contract (5/36), chunk 5/6
+[14:38:44 +3m 41s | sqc_com] Repaired malformed JSON.
+[14:38:44 +3m 41s | sqc_com] Extracting: https://www.sqc.com.au/news/silicon-quantum-computing-awarded-darpa-qbi-contract (5/36), chunk 6/6
+[14:38:53 +3m 50s | sqc_com] Repaired malformed JSON.
+[14:38:53 +3m 50s | sqc_com] Reading page (6/36): https://www.sqc.com.au/news/sqcbloomberg
+[14:38:53 +3m 50s | sqc_com] Extracting: https://www.sqc.com.au/news/sqcbloomberg (6/36), chunk 1/4
+[14:38:59 +3m 56s | sqc_com] Repaired malformed JSON.
+[14:38:59 +3m 56s | sqc_com] Extracting: https://www.sqc.com.au/news/sqcbloomberg (6/36), chunk 2/4
+[14:39:08 +4m 5s | sqc_com] Repaired malformed JSON.
+[14:39:08 +4m 5s | sqc_com] Extracting: https://www.sqc.com.au/news/sqcbloomberg (6/36), chunk 3/4
+[14:39:15 +4m 12s | sqc_com] Repaired malformed JSON.
+[14:39:15 +4m 12s | sqc_com] Extracting: https://www.sqc.com.au/news/sqcbloomberg (6/36), chunk 4/4
+[14:39:21 +4m 18s | sqc_com] Repaired malformed JSON.
+[14:39:21 +4m 18s | sqc_com] Reading page (7/36): https://www.sqc.com.au/news/firgun-ventures-sqc-investment
+[14:39:21 +4m 18s | sqc_com] Extracting: https://www.sqc.com.au/news/firgun-ventures-sqc-investment (7/36), chunk 1/6
+[14:39:28 +4m 25s | sqc_com] Repaired malformed JSON.
+[14:39:28 +4m 25s | sqc_com] Extracting: https://www.sqc.com.au/news/firgun-ventures-sqc-investment (7/36), chunk 2/6
+[14:39:34 +4m 31s | sqc_com] Repaired malformed JSON.
+[14:39:34 +4m 31s | sqc_com] Extracting: https://www.sqc.com.au/news/firgun-ventures-sqc-investment (7/36), chunk 3/6
+[14:39:40 +4m 38s | sqc_com] Repaired malformed JSON.
+[14:39:40 +4m 38s | sqc_com] Extracting: https://www.sqc.com.au/news/firgun-ventures-sqc-investment (7/36), chunk 4/6
+[14:39:46 +4m 43s | sqc_com] Repaired malformed JSON.
+[14:39:46 +4m 43s | sqc_com] Extracting: https://www.sqc.com.au/news/firgun-ventures-sqc-investment (7/36), chunk 5/6
+[14:39:55 +4m 52s | sqc_com] Repaired malformed JSON.
+[14:39:55 +4m 52s | sqc_com] Extracting: https://www.sqc.com.au/news/firgun-ventures-sqc-investment (7/36), chunk 6/6
+[14:40:02 +4m 59s | sqc_com] Repaired malformed JSON.
+[14:40:02 +4m 59s | sqc_com] Reading page (8/36): https://www.sqc.com.au/news/silicon-quantum-computing-and-australian-defence-partner-up-to-deliver-quantum-enhanced-machine-learning
+[14:40:02 +4m 59s | sqc_com] Extracting: https://www.sqc.com.au/news/silicon-quantum-computing-and-australian-defence-partner-up-to-deliver-quantum-enhanced-machine-learning (8/36), chunk 1/5
+[14:40:09 +5m 6s | sqc_com] Repaired malformed JSON.
+[14:40:09 +5m 6s | sqc_com] Extracting: https://www.sqc.com.au/news/silicon-quantum-computing-and-australian-defence-partner-up-to-deliver-quantum-enhanced-machine-learning (8/36), chunk 2/5
+[14:40:15 +5m 12s | sqc_com] Repaired malformed JSON.
+[14:40:15 +5m 12s | sqc_com] Extracting: https://www.sqc.com.au/news/silicon-quantum-computing-and-australian-defence-partner-up-to-deliver-quantum-enhanced-machine-learning (8/36), chunk 3/5
+[14:40:24 +5m 22s | sqc_com] Repaired malformed JSON.
+[14:40:24 +5m 22s | sqc_com] Extracting: https://www.sqc.com.au/news/silicon-quantum-computing-and-australian-defence-partner-up-to-deliver-quantum-enhanced-machine-learning (8/36), chunk 4/5
+[14:40:34 +5m 31s | sqc_com] Repaired malformed JSON.
+[14:40:34 +5m 31s | sqc_com] Extracting: https://www.sqc.com.au/news/silicon-quantum-computing-and-australian-defence-partner-up-to-deliver-quantum-enhanced-machine-learning (8/36), chunk 5/5
+[14:40:41 +5m 38s | sqc_com] Repaired malformed JSON.
+[14:40:41 +5m 38s | sqc_com] Reading page (9/36): https://www.sqc.com.au/career/6499053
+[14:40:41 +5m 38s | sqc_com] Extracting: https://www.sqc.com.au/career/6499053 (9/36), chunk 1/5
+[14:40:46 +5m 43s | sqc_com] Extracting: https://www.sqc.com.au/career/6499053 (9/36), chunk 2/5
+[14:40:52 +5m 49s | sqc_com] Repaired malformed JSON.
+[14:40:52 +5m 49s | sqc_com] Extracting: https://www.sqc.com.au/career/6499053 (9/36), chunk 3/5
+[14:40:58 +5m 56s | sqc_com] Repaired malformed JSON.
+[14:40:58 +5m 56s | sqc_com] Extracting: https://www.sqc.com.au/career/6499053 (9/36), chunk 4/5
+[14:41:04 +6m 2s | sqc_com] Repaired malformed JSON.
+[14:41:04 +6m 2s | sqc_com] Extracting: https://www.sqc.com.au/career/6499053 (9/36), chunk 5/5
+[14:41:10 +6m 7s | sqc_com] Reading page (10/36): https://www.sqc.com.au/news/sqc-establishes-leadership-in-silicon-modality
+[14:41:10 +6m 7s | sqc_com] Extracting: https://www.sqc.com.au/news/sqc-establishes-leadership-in-silicon-modality (10/36), chunk 1/6
+[14:41:15 +6m 12s | sqc_com] Extracting: https://www.sqc.com.au/news/sqc-establishes-leadership-in-silicon-modality (10/36), chunk 2/6
+[14:41:20 +6m 17s | sqc_com] Extracting: https://www.sqc.com.au/news/sqc-establishes-leadership-in-silicon-modality (10/36), chunk 3/6
+[14:41:28 +6m 25s | sqc_com] Repaired malformed JSON.
+[14:41:28 +6m 25s | sqc_com] Extracting: https://www.sqc.com.au/news/sqc-establishes-leadership-in-silicon-modality (10/36), chunk 4/6
+[14:41:34 +6m 31s | sqc_com] Repaired malformed JSON.
+[14:41:34 +6m 31s | sqc_com] Extracting: https://www.sqc.com.au/news/sqc-establishes-leadership-in-silicon-modality (10/36), chunk 5/6
+[14:41:43 +6m 40s | sqc_com] Repaired malformed JSON.
+[14:41:43 +6m 40s | sqc_com] Extracting: https://www.sqc.com.au/news/sqc-establishes-leadership-in-silicon-modality (10/36), chunk 6/6
+[14:41:49 +6m 46s | sqc_com] Repaired malformed JSON.
+[14:41:49 +6m 46s | sqc_com] Reading page (11/36): https://www.sqc.com.au/career/7769662
+[14:41:49 +6m 46s | sqc_com] Extracting: https://www.sqc.com.au/career/7769662 (11/36), chunk 1/7
+[14:41:54 +6m 52s | sqc_com] Extracting: https://www.sqc.com.au/career/7769662 (11/36), chunk 2/7
+[14:42:02 +6m 59s | sqc_com] Repaired malformed JSON.
+[14:42:02 +6m 59s | sqc_com] Extracting: https://www.sqc.com.au/career/7769662 (11/36), chunk 3/7
+[14:42:09 +7m 6s | sqc_com] Repaired malformed JSON.
+[14:42:09 +7m 6s | sqc_com] Extracting: https://www.sqc.com.au/career/7769662 (11/36), chunk 4/7
+[14:42:17 +7m 14s | sqc_com] Repaired malformed JSON.
+[14:42:17 +7m 14s | sqc_com] Extracting: https://www.sqc.com.au/career/7769662 (11/36), chunk 5/7
+[14:42:25 +7m 22s | sqc_com] Repaired malformed JSON.
+[14:42:25 +7m 22s | sqc_com] Extracting: https://www.sqc.com.au/career/7769662 (11/36), chunk 6/7
+[14:42:30 +7m 27s | sqc_com] Repaired malformed JSON.
+[14:42:30 +7m 27s | sqc_com] Extracting: https://www.sqc.com.au/career/7769662 (11/36), chunk 7/7
+[14:42:37 +7m 34s | sqc_com] Repaired malformed JSON.
+[14:42:37 +7m 34s | sqc_com] Reading page (12/36): https://www.sqc.com.au/contact
+[14:42:37 +7m 34s | sqc_com] Extracting: https://www.sqc.com.au/contact (12/36), chunk 1/2
+[14:42:45 +7m 42s | sqc_com] Repaired malformed JSON.
+[14:42:45 +7m 42s | sqc_com] Extracting: https://www.sqc.com.au/contact (12/36), chunk 2/2
+[14:42:50 +7m 47s | sqc_com] Reading page (13/36): https://www.sqc.com.au/news/helgoland
+[14:42:50 +7m 47s | sqc_com] Extracting: https://www.sqc.com.au/news/helgoland (13/36), chunk 1/4
+[14:42:56 +7m 53s | sqc_com] Extracting: https://www.sqc.com.au/news/helgoland (13/36), chunk 2/4
+[14:43:02 +7m 59s | sqc_com] Repaired malformed JSON.
+[14:43:02 +7m 59s | sqc_com] Extracting: https://www.sqc.com.au/news/helgoland (13/36), chunk 3/4
+[14:43:08 +8m 6s | sqc_com] Repaired malformed JSON.
+[14:43:08 +8m 6s | sqc_com] Extracting: https://www.sqc.com.au/news/helgoland (13/36), chunk 4/4
+[14:43:18 +8m 15s | sqc_com] Repaired malformed JSON.
+[14:43:18 +8m 15s | sqc_com] Reading page (14/36): https://www.sqc.com.au/news/scalable-cooling-bluefors-x-sqc
+[14:43:18 +8m 15s | sqc_com] Extracting: https://www.sqc.com.au/news/scalable-cooling-bluefors-x-sqc (14/36), chunk 1/6
+[14:43:24 +8m 21s | sqc_com] Repaired malformed JSON.
+[14:43:24 +8m 21s | sqc_com] Extracting: https://www.sqc.com.au/news/scalable-cooling-bluefors-x-sqc (14/36), chunk 2/6
+[14:43:32 +8m 29s | sqc_com] Repaired malformed JSON.
+[14:43:32 +8m 29s | sqc_com] Extracting: https://www.sqc.com.au/news/scalable-cooling-bluefors-x-sqc (14/36), chunk 3/6
+[14:43:39 +8m 36s | sqc_com] Repaired malformed JSON.
+[14:43:39 +8m 36s | sqc_com] Extracting: https://www.sqc.com.au/news/scalable-cooling-bluefors-x-sqc (14/36), chunk 4/6
+[14:43:46 +8m 43s | sqc_com] Repaired malformed JSON.
+[14:43:46 +8m 43s | sqc_com] Extracting: https://www.sqc.com.au/news/scalable-cooling-bluefors-x-sqc (14/36), chunk 5/6
+[14:43:54 +8m 52s | sqc_com] Repaired malformed JSON.
+[14:43:54 +8m 52s | sqc_com] Extracting: https://www.sqc.com.au/news/scalable-cooling-bluefors-x-sqc (14/36), chunk 6/6
+[14:44:06 +9m 3s | sqc_com] Repaired malformed JSON.
+[14:44:06 +9m 3s | sqc_com] Reading page (15/36): https://www.sqc.com.au/news/sqc-announces-record-qubit-read-out-fidelities-at-high-temperatures
+[14:44:06 +9m 3s | sqc_com] Extracting: https://www.sqc.com.au/news/sqc-announces-record-qubit-read-out-fidelities-at-high-temperatures (15/36), chunk 1/5
+[14:44:11 +9m 9s | sqc_com] Extracting: https://www.sqc.com.au/news/sqc-announces-record-qubit-read-out-fidelities-at-high-temperatures (15/36), chunk 2/5
+[14:44:20 +9m 17s | sqc_com] Repaired malformed JSON.
+[14:44:20 +9m 17s | sqc_com] Extracting: https://www.sqc.com.au/news/sqc-announces-record-qubit-read-out-fidelities-at-high-temperatures (15/36), chunk 3/5
+[14:44:30 +9m 27s | sqc_com] Repaired malformed JSON.
+[14:44:30 +9m 27s | sqc_com] Extracting: https://www.sqc.com.au/news/sqc-announces-record-qubit-read-out-fidelities-at-high-temperatures (15/36), chunk 4/5
+[14:44:39 +9m 36s | sqc_com] Repaired malformed JSON.
+[14:44:39 +9m 36s | sqc_com] Extracting: https://www.sqc.com.au/news/sqc-announces-record-qubit-read-out-fidelities-at-high-temperatures (15/36), chunk 5/5
+[14:44:47 +9m 44s | sqc_com] Repaired malformed JSON.
+[14:44:47 +9m 44s | sqc_com] Reading page (16/36): https://www.sqc.com.au/qubits
+[14:44:47 +9m 44s | sqc_com] Extracting: https://www.sqc.com.au/qubits (16/36), chunk 1/4
+[14:44:56 +9m 54s | sqc_com] Repaired malformed JSON.
+[14:44:56 +9m 54s | sqc_com] Extracting: https://www.sqc.com.au/qubits (16/36), chunk 2/4
+[14:45:02 +9m 59s | sqc_com] Extracting: https://www.sqc.com.au/qubits (16/36), chunk 3/4
+[14:45:06 +10m 3s | sqc_com] Extracting: https://www.sqc.com.au/qubits (16/36), chunk 4/4
+[14:45:10 +10m 7s | sqc_com] Reading page (17/36): https://www.sqc.com.au/news
+[14:45:10 +10m 7s | sqc_com] Extracting: https://www.sqc.com.au/news (17/36), chunk 1/12
+[14:45:18 +10m 15s | sqc_com] Extracting: https://www.sqc.com.au/news (17/36), chunk 2/12
+[14:45:25 +10m 22s | sqc_com] Repaired malformed JSON.
+[14:45:25 +10m 22s | sqc_com] Extracting: https://www.sqc.com.au/news (17/36), chunk 3/12
+[14:45:34 +10m 31s | sqc_com] Repaired malformed JSON.
+[14:45:34 +10m 31s | sqc_com] Extracting: https://www.sqc.com.au/news (17/36), chunk 4/12
+[14:45:43 +10m 41s | sqc_com] Repaired malformed JSON.
+[14:45:43 +10m 41s | sqc_com] Extracting: https://www.sqc.com.au/news (17/36), chunk 5/12
+[14:45:51 +10m 48s | sqc_com] Repaired malformed JSON.
+[14:45:51 +10m 48s | sqc_com] Extracting: https://www.sqc.com.au/news (17/36), chunk 6/12
+[14:45:59 +10m 57s | sqc_com] Repaired malformed JSON.
+[14:45:59 +10m 57s | sqc_com] Extracting: https://www.sqc.com.au/news (17/36), chunk 7/12
+[14:46:08 +11m 5s | sqc_com] Repaired malformed JSON.
+[14:46:08 +11m 5s | sqc_com] Extracting: https://www.sqc.com.au/news (17/36), chunk 8/12
+[14:46:17 +11m 14s | sqc_com] Repaired malformed JSON.
+[14:46:17 +11m 14s | sqc_com] Extracting: https://www.sqc.com.au/news (17/36), chunk 9/12
+[14:46:25 +11m 23s | sqc_com] Repaired malformed JSON.
+[14:46:25 +11m 23s | sqc_com] Extracting: https://www.sqc.com.au/news (17/36), chunk 10/12
+[14:46:32 +11m 29s | sqc_com] Repaired malformed JSON.
+[14:46:32 +11m 29s | sqc_com] Extracting: https://www.sqc.com.au/news (17/36), chunk 11/12
+[14:46:40 +11m 37s | sqc_com] Repaired malformed JSON.
+[14:46:40 +11m 37s | sqc_com] Extracting: https://www.sqc.com.au/news (17/36), chunk 12/12
+[14:46:46 +11m 43s | sqc_com] Reading page (18/36): https://www.sqc.com.au/news/sqc-x-amd
+[14:46:46 +11m 43s | sqc_com] Extracting: https://www.sqc.com.au/news/sqc-x-amd (18/36), chunk 1/7
+[14:46:53 +11m 51s | sqc_com] Repaired malformed JSON.
+[14:46:53 +11m 51s | sqc_com] Extracting: https://www.sqc.com.au/news/sqc-x-amd (18/36), chunk 2/7
+[14:47:02 +11m 59s | sqc_com] Repaired malformed JSON.
+[14:47:02 +11m 59s | sqc_com] Extracting: https://www.sqc.com.au/news/sqc-x-amd (18/36), chunk 3/7
+[14:47:09 +12m 6s | sqc_com] Repaired malformed JSON.
+[14:47:09 +12m 6s | sqc_com] Extracting: https://www.sqc.com.au/news/sqc-x-amd (18/36), chunk 4/7
+[14:47:17 +12m 14s | sqc_com] Repaired malformed JSON.
+[14:47:17 +12m 14s | sqc_com] Extracting: https://www.sqc.com.au/news/sqc-x-amd (18/36), chunk 5/7
+[14:47:23 +12m 20s | sqc_com] Extracting: https://www.sqc.com.au/news/sqc-x-amd (18/36), chunk 6/7
+[14:47:30 +12m 27s | sqc_com] Repaired malformed JSON.
+[14:47:30 +12m 27s | sqc_com] Extracting: https://www.sqc.com.au/news/sqc-x-amd (18/36), chunk 7/7
+[14:47:39 +12m 36s | sqc_com] Repaired malformed JSON.
+[14:47:39 +12m 36s | sqc_com] Reading page (19/36): https://www.sqc.com.au/about
+[14:47:39 +12m 36s | sqc_com] Extracting: https://www.sqc.com.au/about (19/36), chunk 1/11
+[14:47:44 +12m 41s | sqc_com] Extracting: https://www.sqc.com.au/about (19/36), chunk 2/11
+[14:47:51 +12m 48s | sqc_com] Repaired malformed JSON.
+[14:47:51 +12m 48s | sqc_com] Extracting: https://www.sqc.com.au/about (19/36), chunk 3/11
+[14:47:58 +12m 55s | sqc_com] Extracting: https://www.sqc.com.au/about (19/36), chunk 4/11
+[14:48:05 +13m 2s | sqc_com] Repaired malformed JSON.
+[14:48:05 +13m 2s | sqc_com] Extracting: https://www.sqc.com.au/about (19/36), chunk 5/11
+[14:48:11 +13m 9s | sqc_com] Repaired malformed JSON.
+[14:48:11 +13m 9s | sqc_com] Extracting: https://www.sqc.com.au/about (19/36), chunk 6/11
+[14:48:19 +13m 16s | sqc_com] Repaired malformed JSON.
+[14:48:19 +13m 16s | sqc_com] Extracting: https://www.sqc.com.au/about (19/36), chunk 7/11
+[14:48:26 +13m 24s | sqc_com] Repaired malformed JSON.
+[14:48:26 +13m 24s | sqc_com] Extracting: https://www.sqc.com.au/about (19/36), chunk 8/11
+[14:48:34 +13m 31s | sqc_com] Repaired malformed JSON.
+[14:48:34 +13m 31s | sqc_com] Extracting: https://www.sqc.com.au/about (19/36), chunk 9/11
+[14:48:43 +13m 40s | sqc_com] Repaired malformed JSON.
+[14:48:43 +13m 40s | sqc_com] Extracting: https://www.sqc.com.au/about (19/36), chunk 10/11
+[14:48:53 +13m 51s | sqc_com] Repaired malformed JSON.
+[14:48:53 +13m 51s | sqc_com] Extracting: https://www.sqc.com.au/about (19/36), chunk 11/11
+[14:49:00 +13m 57s | sqc_com] Repaired malformed JSON.
+[14:49:00 +13m 57s | sqc_com] Reading page (20/36): https://www.sqc.com.au/career/7282360
+[14:49:00 +13m 57s | sqc_com] Extracting: https://www.sqc.com.au/career/7282360 (20/36), chunk 1/6
+[14:49:04 +14m 1s | sqc_com] Extracting: https://www.sqc.com.au/career/7282360 (20/36), chunk 2/6
+[14:49:10 +14m 7s | sqc_com] Repaired malformed JSON.
+[14:49:10 +14m 7s | sqc_com] Extracting: https://www.sqc.com.au/career/7282360 (20/36), chunk 3/6
+[14:49:17 +14m 14s | sqc_com] Repaired malformed JSON.
+[14:49:17 +14m 14s | sqc_com] Extracting: https://www.sqc.com.au/career/7282360 (20/36), chunk 4/6
+[14:49:23 +14m 20s | sqc_com] Repaired malformed JSON.
+[14:49:23 +14m 20s | sqc_com] Extracting: https://www.sqc.com.au/career/7282360 (20/36), chunk 5/6
+[14:49:27 +14m 24s | sqc_com] Extracting: https://www.sqc.com.au/career/7282360 (20/36), chunk 6/6
+[14:49:31 +14m 28s | sqc_com] Reading page (21/36): https://www.sqc.com.au/career/7282362
+[14:49:31 +14m 28s | sqc_com] Extracting: https://www.sqc.com.au/career/7282362 (21/36), chunk 1/7
+[14:49:34 +14m 32s | sqc_com] Extracting: https://www.sqc.com.au/career/7282362 (21/36), chunk 2/7
+[14:49:40 +14m 37s | sqc_com] Repaired malformed JSON.
+[14:49:40 +14m 37s | sqc_com] Extracting: https://www.sqc.com.au/career/7282362 (21/36), chunk 3/7
+[14:49:46 +14m 43s | sqc_com] Repaired malformed JSON.
+[14:49:46 +14m 43s | sqc_com] Extracting: https://www.sqc.com.au/career/7282362 (21/36), chunk 4/7
+[14:49:53 +14m 50s | sqc_com] Repaired malformed JSON.
+[14:49:53 +14m 50s | sqc_com] Extracting: https://www.sqc.com.au/career/7282362 (21/36), chunk 5/7
+[14:50:02 +14m 59s | sqc_com] Repaired malformed JSON.
+[14:50:02 +14m 59s | sqc_com] Extracting: https://www.sqc.com.au/career/7282362 (21/36), chunk 6/7
+[14:50:06 +15m 3s | sqc_com] Extracting: https://www.sqc.com.au/career/7282362 (21/36), chunk 7/7
+[14:50:13 +15m 11s | sqc_com] Repaired malformed JSON.
+[14:50:13 +15m 11s | sqc_com] Reading page (22/36): https://www.sqc.com.au/career/7811203
+[14:50:13 +15m 11s | sqc_com] Extracting: https://www.sqc.com.au/career/7811203 (22/36), chunk 1/6
+[14:50:17 +15m 15s | sqc_com] Extracting: https://www.sqc.com.au/career/7811203 (22/36), chunk 2/6
+[14:50:25 +15m 22s | sqc_com] Repaired malformed JSON.
+[14:50:25 +15m 22s | sqc_com] Extracting: https://www.sqc.com.au/career/7811203 (22/36), chunk 3/6
+[14:50:31 +15m 28s | sqc_com] Repaired malformed JSON.
+[14:50:31 +15m 28s | sqc_com] Extracting: https://www.sqc.com.au/career/7811203 (22/36), chunk 4/6
+[14:50:39 +15m 36s | sqc_com] Repaired malformed JSON.
+[14:50:39 +15m 36s | sqc_com] Extracting: https://www.sqc.com.au/career/7811203 (22/36), chunk 5/6
+[14:50:47 +15m 44s | sqc_com] Repaired malformed JSON.
+[14:50:47 +15m 44s | sqc_com] Extracting: https://www.sqc.com.au/career/7811203 (22/36), chunk 6/6
+[14:50:58 +15m 55s | sqc_com] Repaired malformed JSON.
+[14:50:58 +15m 55s | sqc_com] Reading page (23/36): https://www.sqc.com.au/technology
+[14:50:58 +15m 55s | sqc_com] Extracting: https://www.sqc.com.au/technology (23/36), chunk 1/6
+[14:51:02 +15m 59s | sqc_com] Extracting: https://www.sqc.com.au/technology (23/36), chunk 2/6
+[14:51:07 +16m 4s | sqc_com] Extracting: https://www.sqc.com.au/technology (23/36), chunk 3/6
+[14:51:12 +16m 10s | sqc_com] Repaired malformed JSON.
+[14:51:12 +16m 10s | sqc_com] Extracting: https://www.sqc.com.au/technology (23/36), chunk 4/6
+[14:51:17 +16m 14s | sqc_com] Extracting: https://www.sqc.com.au/technology (23/36), chunk 5/6
+[14:51:22 +16m 20s | sqc_com] Repaired malformed JSON.
+[14:51:22 +16m 20s | sqc_com] Extracting: https://www.sqc.com.au/technology (23/36), chunk 6/6
+[14:51:29 +16m 26s | sqc_com] Repaired malformed JSON.
+[14:51:29 +16m 26s | sqc_com] Reading page (24/36): https://www.sqc.com.au/career
+[14:51:29 +16m 26s | sqc_com] Extracting: https://www.sqc.com.au/career (24/36), chunk 1/4
+[14:51:32 +16m 29s | sqc_com] Extracting: https://www.sqc.com.au/career (24/36), chunk 2/4
+[14:51:38 +16m 36s | sqc_com] Extracting: https://www.sqc.com.au/career (24/36), chunk 3/4
+[14:51:45 +16m 43s | sqc_com] Repaired malformed JSON.
+[14:51:45 +16m 43s | sqc_com] Extracting: https://www.sqc.com.au/career (24/36), chunk 4/4
+[14:51:49 +16m 46s | sqc_com] Reading page (25/36): https://www.sqc.com.au/products
+[14:51:49 +16m 46s | sqc_com] Extracting: https://www.sqc.com.au/products (25/36), chunk 1/4
+[14:51:55 +16m 52s | sqc_com] Extracting: https://www.sqc.com.au/products (25/36), chunk 2/4
+[14:51:59 +16m 56s | sqc_com] Extracting: https://www.sqc.com.au/products (25/36), chunk 3/4
+[14:52:07 +17m 4s | sqc_com] Repaired malformed JSON.
+[14:52:07 +17m 4s | sqc_com] Extracting: https://www.sqc.com.au/products (25/36), chunk 4/4
+[14:52:11 +17m 9s | sqc_com] Reading page (26/36): https://www.sqc.com.au/career/7896943
+[14:52:11 +17m 9s | sqc_com] Extracting: https://www.sqc.com.au/career/7896943 (26/36), chunk 1/7
+[14:52:16 +17m 13s | sqc_com] Extracting: https://www.sqc.com.au/career/7896943 (26/36), chunk 2/7
+[14:52:22 +17m 19s | sqc_com] Repaired malformed JSON.
+[14:52:22 +17m 19s | sqc_com] Extracting: https://www.sqc.com.au/career/7896943 (26/36), chunk 3/7
+[14:52:31 +17m 28s | sqc_com] Repaired malformed JSON.
+[14:52:31 +17m 28s | sqc_com] Extracting: https://www.sqc.com.au/career/7896943 (26/36), chunk 4/7
+[14:52:37 +17m 35s | sqc_com] Extracting: https://www.sqc.com.au/career/7896943 (26/36), chunk 5/7
+[14:52:43 +17m 40s | sqc_com] Repaired malformed JSON.
+[14:52:43 +17m 40s | sqc_com] Extracting: https://www.sqc.com.au/career/7896943 (26/36), chunk 6/7
+[14:52:49 +17m 46s | sqc_com] Repaired malformed JSON.
+[14:52:49 +17m 46s | sqc_com] Extracting: https://www.sqc.com.au/career/7896943 (26/36), chunk 7/7
+[14:52:55 +17m 52s | sqc_com] Repaired malformed JSON.
+[14:52:55 +17m 52s | sqc_com] Reading page (27/36): https://www.sqc.com.au/career/7568506
+[14:52:55 +17m 52s | sqc_com] Extracting: https://www.sqc.com.au/career/7568506 (27/36), chunk 1/7
+[14:53:01 +17m 58s | sqc_com] Extracting: https://www.sqc.com.au/career/7568506 (27/36), chunk 2/7
+[14:53:07 +18m 4s | sqc_com] Repaired malformed JSON.
+[14:53:07 +18m 4s | sqc_com] Extracting: https://www.sqc.com.au/career/7568506 (27/36), chunk 3/7
+[14:53:16 +18m 13s | sqc_com] Repaired malformed JSON.
+[14:53:16 +18m 13s | sqc_com] Extracting: https://www.sqc.com.au/career/7568506 (27/36), chunk 4/7
+[14:53:25 +18m 22s | sqc_com] Repaired malformed JSON.
+[14:53:25 +18m 22s | sqc_com] Extracting: https://www.sqc.com.au/career/7568506 (27/36), chunk 5/7
+[14:53:33 +18m 30s | sqc_com] Repaired malformed JSON.
+[14:53:33 +18m 30s | sqc_com] Extracting: https://www.sqc.com.au/career/7568506 (27/36), chunk 6/7
+[14:53:37 +18m 35s | sqc_com] Extracting: https://www.sqc.com.au/career/7568506 (27/36), chunk 7/7
+[14:53:41 +18m 38s | sqc_com] Reading page (28/36): https://www.sqc.com.au/news/darpa-qbi-stage-b
+[14:53:41 +18m 38s | sqc_com] Extracting: https://www.sqc.com.au/news/darpa-qbi-stage-b (28/36), chunk 1/5
+[14:53:48 +18m 45s | sqc_com] Repaired malformed JSON.
+[14:53:48 +18m 45s | sqc_com] Extracting: https://www.sqc.com.au/news/darpa-qbi-stage-b (28/36), chunk 2/5
+[14:53:56 +18m 53s | sqc_com] Repaired malformed JSON.
+[14:53:56 +18m 53s | sqc_com] Extracting: https://www.sqc.com.au/news/darpa-qbi-stage-b (28/36), chunk 3/5
+[14:54:04 +19m 1s | sqc_com] Repaired malformed JSON.
+[14:54:04 +19m 1s | sqc_com] Extracting: https://www.sqc.com.au/news/darpa-qbi-stage-b (28/36), chunk 4/5
+[14:54:13 +19m 11s | sqc_com] Repaired malformed JSON.
+[14:54:13 +19m 11s | sqc_com] Extracting: https://www.sqc.com.au/news/darpa-qbi-stage-b (28/36), chunk 5/5
+[14:54:19 +19m 17s | sqc_com] Repaired malformed JSON.
+[14:54:19 +19m 17s | sqc_com] Reading page (29/36): https://www.sqc.com.au
+[14:54:19 +19m 17s | sqc_com] Extracting: https://www.sqc.com.au (29/36), chunk 1/5
+[14:54:25 +19m 22s | sqc_com] Extracting: https://www.sqc.com.au (29/36), chunk 2/5
+[14:54:30 +19m 27s | sqc_com] Extracting: https://www.sqc.com.au (29/36), chunk 3/5
+[14:54:36 +19m 34s | sqc_com] Extracting: https://www.sqc.com.au (29/36), chunk 4/5
+[14:54:44 +19m 41s | sqc_com] Repaired malformed JSON.
+[14:54:44 +19m 41s | sqc_com] Extracting: https://www.sqc.com.au (29/36), chunk 5/5
+[14:54:50 +19m 48s | sqc_com] Repaired malformed JSON.
+[14:54:50 +19m 48s | sqc_com] Reading page (30/36): https://www.sqc.com.au/news/skywater-and-sqc-advancing-hybrid-quantum-classical-computing
+[14:54:50 +19m 48s | sqc_com] Extracting: https://www.sqc.com.au/news/skywater-and-sqc-advancing-hybrid-quantum-classical-computing (30/36), chunk 1/7
+[14:54:57 +19m 54s | sqc_com] Repaired malformed JSON.
+[14:54:57 +19m 54s | sqc_com] Extracting: https://www.sqc.com.au/news/skywater-and-sqc-advancing-hybrid-quantum-classical-computing (30/36), chunk 2/7
+[14:55:04 +20m 1s | sqc_com] Repaired malformed JSON.
+[14:55:04 +20m 1s | sqc_com] Extracting: https://www.sqc.com.au/news/skywater-and-sqc-advancing-hybrid-quantum-classical-computing (30/36), chunk 3/7
+[14:55:10 +20m 8s | sqc_com] Repaired malformed JSON.
+[14:55:10 +20m 8s | sqc_com] Extracting: https://www.sqc.com.au/news/skywater-and-sqc-advancing-hybrid-quantum-classical-computing (30/36), chunk 4/7
+[14:55:17 +20m 15s | sqc_com] Repaired malformed JSON.
+[14:55:17 +20m 15s | sqc_com] Extracting: https://www.sqc.com.au/news/skywater-and-sqc-advancing-hybrid-quantum-classical-computing (30/36), chunk 5/7
+[14:55:25 +20m 22s | sqc_com] Repaired malformed JSON.
+[14:55:25 +20m 22s | sqc_com] Extracting: https://www.sqc.com.au/news/skywater-and-sqc-advancing-hybrid-quantum-classical-computing (30/36), chunk 6/7
+[14:55:34 +20m 31s | sqc_com] Repaired malformed JSON.
+[14:55:34 +20m 31s | sqc_com] Extracting: https://www.sqc.com.au/news/skywater-and-sqc-advancing-hybrid-quantum-classical-computing (30/36), chunk 7/7
+[14:55:41 +20m 39s | sqc_com] Repaired malformed JSON.
+[14:55:41 +20m 39s | sqc_com] Reading page (31/36): https://www.sqc.com.au/news/telstra-and-sqc-explore-smarter-network-prediction
+[14:55:41 +20m 39s | sqc_com] Extracting: https://www.sqc.com.au/news/telstra-and-sqc-explore-smarter-network-prediction (31/36), chunk 1/8
+[14:55:52 +20m 49s | sqc_com] Repaired malformed JSON.
+[14:55:52 +20m 49s | sqc_com] Extracting: https://www.sqc.com.au/news/telstra-and-sqc-explore-smarter-network-prediction (31/36), chunk 2/8
+[14:56:00 +20m 57s | sqc_com] Repaired malformed JSON.
+[14:56:00 +20m 57s | sqc_com] Extracting: https://www.sqc.com.au/news/telstra-and-sqc-explore-smarter-network-prediction (31/36), chunk 3/8
+[14:56:07 +21m 4s | sqc_com] Repaired malformed JSON.
+[14:56:07 +21m 4s | sqc_com] Extracting: https://www.sqc.com.au/news/telstra-and-sqc-explore-smarter-network-prediction (31/36), chunk 4/8
+[14:56:13 +21m 10s | sqc_com] Repaired malformed JSON.
+[14:56:13 +21m 10s | sqc_com] Extracting: https://www.sqc.com.au/news/telstra-and-sqc-explore-smarter-network-prediction (31/36), chunk 5/8
+[14:56:19 +21m 16s | sqc_com] Repaired malformed JSON.
+[14:56:19 +21m 16s | sqc_com] Extracting: https://www.sqc.com.au/news/telstra-and-sqc-explore-smarter-network-prediction (31/36), chunk 6/8
+[14:56:28 +21m 25s | sqc_com] Repaired malformed JSON.
+[14:56:28 +21m 25s | sqc_com] Extracting: https://www.sqc.com.au/news/telstra-and-sqc-explore-smarter-network-prediction (31/36), chunk 7/8
+[14:56:36 +21m 33s | sqc_com] Repaired malformed JSON.
+[14:56:36 +21m 33s | sqc_com] Extracting: https://www.sqc.com.au/news/telstra-and-sqc-explore-smarter-network-prediction (31/36), chunk 8/8
+[14:56:44 +21m 41s | sqc_com] Repaired malformed JSON.
+[14:56:44 +21m 41s | sqc_com] Reading page (32/36): https://www.sqc.com.au/news/sqc-launches-quantum-twins
+[14:56:44 +21m 41s | sqc_com] Extracting: https://www.sqc.com.au/news/sqc-launches-quantum-twins (32/36), chunk 1/6
+[14:56:51 +21m 48s | sqc_com] Extracting: https://www.sqc.com.au/news/sqc-launches-quantum-twins (32/36), chunk 2/6
+[14:56:56 +21m 53s | sqc_com] Extracting: https://www.sqc.com.au/news/sqc-launches-quantum-twins (32/36), chunk 3/6
+[14:57:05 +22m 2s | sqc_com] Repaired malformed JSON.
+[14:57:05 +22m 2s | sqc_com] Extracting: https://www.sqc.com.au/news/sqc-launches-quantum-twins (32/36), chunk 4/6
+[14:57:15 +22m 12s | sqc_com] Repaired malformed JSON.
+[14:57:15 +22m 12s | sqc_com] Extracting: https://www.sqc.com.au/news/sqc-launches-quantum-twins (32/36), chunk 5/6
+[14:57:24 +22m 21s | sqc_com] Repaired malformed JSON.
+[14:57:24 +22m 21s | sqc_com] Extracting: https://www.sqc.com.au/news/sqc-launches-quantum-twins (32/36), chunk 6/6
+[14:57:30 +22m 28s | sqc_com] Repaired malformed JSON.
+[14:57:30 +22m 28s | sqc_com] Reading page (33/36): https://www.sqc.com.au/news/sqc-x-nvidia
+[14:57:30 +22m 28s | sqc_com] Extracting: https://www.sqc.com.au/news/sqc-x-nvidia (33/36), chunk 1/6
+[14:57:38 +22m 35s | sqc_com] Repaired malformed JSON.
+[14:57:38 +22m 35s | sqc_com] Extracting: https://www.sqc.com.au/news/sqc-x-nvidia (33/36), chunk 2/6
+[14:57:43 +22m 41s | sqc_com] Repaired malformed JSON.
+[14:57:43 +22m 41s | sqc_com] Extracting: https://www.sqc.com.au/news/sqc-x-nvidia (33/36), chunk 3/6
+[14:57:51 +22m 48s | sqc_com] Repaired malformed JSON.
+[14:57:51 +22m 48s | sqc_com] Extracting: https://www.sqc.com.au/news/sqc-x-nvidia (33/36), chunk 4/6
+[14:58:01 +22m 58s | sqc_com] Repaired malformed JSON.
+[14:58:01 +22m 58s | sqc_com] Extracting: https://www.sqc.com.au/news/sqc-x-nvidia (33/36), chunk 5/6
+[14:58:06 +23m 3s | sqc_com] Repaired malformed JSON.
+[14:58:06 +23m 3s | sqc_com] Extracting: https://www.sqc.com.au/news/sqc-x-nvidia (33/36), chunk 6/6
+[14:58:15 +23m 12s | sqc_com] Repaired malformed JSON.
+[14:58:15 +23m 12s | sqc_com] Reading page (34/36): https://www.sqc.com.au/news/michelletca
+[14:58:15 +23m 12s | sqc_com] Extracting: https://www.sqc.com.au/news/michelletca (34/36), chunk 1/4
+[14:58:24 +23m 21s | sqc_com] Repaired malformed JSON.
+[14:58:24 +23m 21s | sqc_com] Extracting: https://www.sqc.com.au/news/michelletca (34/36), chunk 2/4
+[14:58:33 +23m 30s | sqc_com] Repaired malformed JSON.
+[14:58:33 +23m 30s | sqc_com] Extracting: https://www.sqc.com.au/news/michelletca (34/36), chunk 3/4
+[14:58:41 +23m 38s | sqc_com] Repaired malformed JSON.
+[14:58:41 +23m 38s | sqc_com] Extracting: https://www.sqc.com.au/news/michelletca (34/36), chunk 4/4
+[14:58:50 +23m 47s | sqc_com] Repaired malformed JSON.
+[14:58:50 +23m 47s | sqc_com] Reading page (35/36): http://www.sqc.com.au
+[14:58:50 +23m 47s | sqc_com] Extracting: http://www.sqc.com.au (35/36), chunk 1/5
+[14:58:55 +23m 53s | sqc_com] Extracting: http://www.sqc.com.au (35/36), chunk 2/5
+[14:58:59 +23m 56s | sqc_com] Extracting: http://www.sqc.com.au (35/36), chunk 3/5
+[14:59:05 +24m 3s | sqc_com] Repaired malformed JSON.
+[14:59:05 +24m 3s | sqc_com] Extracting: http://www.sqc.com.au (35/36), chunk 4/5
+[14:59:13 +24m 10s | sqc_com] Repaired malformed JSON.
+[14:59:13 +24m 10s | sqc_com] Extracting: http://www.sqc.com.au (35/36), chunk 5/5
+[14:59:20 +24m 17s | sqc_com] Repaired malformed JSON.
+[14:59:20 +24m 17s | sqc_com] Reading page (36/36): https://www.sqc.com.au/news/the-superposition-guys-podcast---with-michelle-simmons
+[14:59:20 +24m 17s | sqc_com] Extracting: https://www.sqc.com.au/news/the-superposition-guys-podcast---with-michelle-simmons (36/36), chunk 1/4
+[14:59:30 +24m 27s | sqc_com] Extracting: https://www.sqc.com.au/news/the-superposition-guys-podcast---with-michelle-simmons (36/36), chunk 2/4
+[14:59:38 +24m 36s | sqc_com] Repaired malformed JSON.
+[14:59:38 +24m 36s | sqc_com] Extracting: https://www.sqc.com.au/news/the-superposition-guys-podcast---with-michelle-simmons (36/36), chunk 3/4
+[14:59:46 +24m 44s | sqc_com] Repaired malformed JSON.
+[14:59:46 +24m 44s | sqc_com] Extracting: https://www.sqc.com.au/news/the-superposition-guys-podcast---with-michelle-simmons (36/36), chunk 4/4
+[14:59:55 +24m 52s | sqc_com] Repaired malformed JSON.
+[14:59:55 +24m 52s | sqc_com] Saved 1_actor_results.json with 396 extracted records
+
+[14:59:55 +24m 52s | sqc_com] === 2 clean actors ===
+[14:59:56 +24m 53s | sqc_com] Loaded 396 extracted records
+[14:59:56 +24m 53s | sqc_com] Saved 2_actor_nodes.json with 53 canonical actor nodes
+
+[14:59:56 +24m 53s | sqc_com] === 3 interaction extraction ===
+[14:59:56 +24m 53s | sqc_com] Extracting interactions: https://www.sqc.com.au/career/7709888 (1/36), chunk 1/7
+[14:59:59 +24m 56s | sqc_com] Extracting interactions: https://www.sqc.com.au/career/7709888 (1/36), chunk 2/7
+[15:00:06 +25m 3s | sqc_com] Extracting interactions: https://www.sqc.com.au/career/7709888 (1/36), chunk 3/7
+[15:00:15 +25m 12s | sqc_com] Extracting interactions: https://www.sqc.com.au/career/7709888 (1/36), chunk 4/7
+[15:00:36 +25m 33s | sqc_com] Extracting interactions: https://www.sqc.com.au/career/7709888 (1/36), chunk 7/7
+[15:00:40 +25m 37s | sqc_com] Extracting interactions: https://www.sqc.com.au/career/6437242 (2/36), chunk 1/6
+[15:00:44 +25m 41s | sqc_com] Extracting interactions: https://www.sqc.com.au/career/6437242 (2/36), chunk 2/6
+[15:00:52 +25m 49s | sqc_com] Extracting interactions: https://www.sqc.com.au/career/6437242 (2/36), chunk 3/6
+[15:01:02 +25m 59s | sqc_com] Extracting interactions: https://www.sqc.com.au/career/6437242 (2/36), chunk 4/6
+[15:01:05 +26m 2s | sqc_com] Extracting interactions: https://www.sqc.com.au/career/6437242 (2/36), chunk 5/6
+[15:01:08 +26m 6s | sqc_com] Extracting interactions: https://www.sqc.com.au/career/6437242 (2/36), chunk 6/6
+[15:01:10 +26m 7s | sqc_com] Extracting interactions: https://www.sqc.com.au/career/7325927 (3/36), chunk 1/7
+[15:01:14 +26m 11s | sqc_com] Extracting interactions: https://www.sqc.com.au/career/7325927 (3/36), chunk 2/7
+[15:01:21 +26m 18s | sqc_com] Extracting interactions: https://www.sqc.com.au/career/7325927 (3/36), chunk 3/7
+[15:01:28 +26m 25s | sqc_com] Extracting interactions: https://www.sqc.com.au/career/7325927 (3/36), chunk 7/7
+[15:01:32 +26m 29s | sqc_com] Extracting interactions: https://www.sqc.com.au/news/nrfc-investment (4/36), chunk 1/7
+[15:01:37 +26m 35s | sqc_com] Extracting interactions: https://www.sqc.com.au/news/nrfc-investment (4/36), chunk 2/7
+[15:01:44 +26m 42s | sqc_com] Extracting interactions: https://www.sqc.com.au/news/nrfc-investment (4/36), chunk 3/7
+[15:01:50 +26m 47s | sqc_com] Extracting interactions: https://www.sqc.com.au/news/nrfc-investment (4/36), chunk 4/7
+[15:02:07 +27m 4s | sqc_com] Extracting interactions: https://www.sqc.com.au/news/nrfc-investment (4/36), chunk 5/7
+[15:02:42 +27m 39s | sqc_com] Extracting interactions: https://www.sqc.com.au/news/nrfc-investment (4/36), chunk 6/7
+[15:03:06 +28m 3s | sqc_com] Extracting interactions: https://www.sqc.com.au/news/nrfc-investment (4/36), chunk 7/7
+[15:03:16 +28m 13s | sqc_com] Extracting interactions: https://www.sqc.com.au/news/silicon-quantum-computing-awarded-darpa-qbi-contract (5/36), chunk 1/6
+[15:03:19 +28m 17s | sqc_com] Extracting interactions: https://www.sqc.com.au/news/silicon-quantum-computing-awarded-darpa-qbi-contract (5/36), chunk 2/6
+[15:03:25 +28m 22s | sqc_com] Extracting interactions: https://www.sqc.com.au/news/silicon-quantum-computing-awarded-darpa-qbi-contract (5/36), chunk 3/6
+[15:03:38 +28m 35s | sqc_com] Extracting interactions: https://www.sqc.com.au/news/silicon-quantum-computing-awarded-darpa-qbi-contract (5/36), chunk 4/6
+[15:04:01 +28m 59s | sqc_com] Extracting interactions: https://www.sqc.com.au/news/silicon-quantum-computing-awarded-darpa-qbi-contract (5/36), chunk 5/6
+[15:04:18 +29m 16s | sqc_com] Extracting interactions: https://www.sqc.com.au/news/silicon-quantum-computing-awarded-darpa-qbi-contract (5/36), chunk 6/6
+[15:04:27 +29m 25s | sqc_com] Extracting interactions: https://www.sqc.com.au/news/sqcbloomberg (6/36), chunk 1/4
+[15:04:33 +29m 30s | sqc_com] Extracting interactions: https://www.sqc.com.au/news/sqcbloomberg (6/36), chunk 2/4
+[15:04:42 +29m 39s | sqc_com] Extracting interactions: https://www.sqc.com.au/news/sqcbloomberg (6/36), chunk 3/4
+[15:04:48 +29m 45s | sqc_com] Extracting interactions: https://www.sqc.com.au/news/sqcbloomberg (6/36), chunk 4/4
+[15:04:55 +29m 53s | sqc_com] Extracting interactions: https://www.sqc.com.au/news/firgun-ventures-sqc-investment (7/36), chunk 1/6
+[15:04:59 +29m 56s | sqc_com] Extracting interactions: https://www.sqc.com.au/news/firgun-ventures-sqc-investment (7/36), chunk 2/6
+[15:05:04 +30m 1s | sqc_com] Extracting interactions: https://www.sqc.com.au/news/firgun-ventures-sqc-investment (7/36), chunk 3/6
+[15:05:15 +30m 13s | sqc_com] Extracting interactions: https://www.sqc.com.au/news/firgun-ventures-sqc-investment (7/36), chunk 4/6
+[15:05:31 +30m 28s | sqc_com] Extracting interactions: https://www.sqc.com.au/news/firgun-ventures-sqc-investment (7/36), chunk 5/6
+[15:06:03 +31m 0s | sqc_com] Extracting interactions: https://www.sqc.com.au/news/firgun-ventures-sqc-investment (7/36), chunk 6/6
+[15:06:11 +31m 8s | sqc_com] Extracting interactions: https://www.sqc.com.au/news/silicon-quantum-computing-and-australian-defence-partner-up-to-deliver-quantum-enhanced-machine-learning (8/36), chunk 1/5
+[15:06:15 +31m 12s | sqc_com] Extracting interactions: https://www.sqc.com.au/news/silicon-quantum-computing-and-australian-defence-partner-up-to-deliver-quantum-enhanced-machine-learning (8/36), chunk 2/5
+[15:06:26 +31m 23s | sqc_com] Extracting interactions: https://www.sqc.com.au/news/silicon-quantum-computing-and-australian-defence-partner-up-to-deliver-quantum-enhanced-machine-learning (8/36), chunk 3/5
+[15:06:44 +31m 41s | sqc_com] Extracting interactions: https://www.sqc.com.au/news/silicon-quantum-computing-and-australian-defence-partner-up-to-deliver-quantum-enhanced-machine-learning (8/36), chunk 4/5
+[15:07:05 +32m 2s | sqc_com] Extracting interactions: https://www.sqc.com.au/news/silicon-quantum-computing-and-australian-defence-partner-up-to-deliver-quantum-enhanced-machine-learning (8/36), chunk 5/5
+[15:07:20 +32m 18s | sqc_com] Extracting interactions: https://www.sqc.com.au/career/6499053 (9/36), chunk 1/5
+[15:07:25 +32m 22s | sqc_com] Extracting interactions: https://www.sqc.com.au/career/6499053 (9/36), chunk 2/5
+[15:07:32 +32m 29s | sqc_com] Extracting interactions: https://www.sqc.com.au/career/6499053 (9/36), chunk 3/5
+[15:07:38 +32m 35s | sqc_com] Extracting interactions: https://www.sqc.com.au/career/6499053 (9/36), chunk 4/5
+[15:07:41 +32m 38s | sqc_com] Extracting interactions: https://www.sqc.com.au/career/6499053 (9/36), chunk 5/5
+[15:07:44 +32m 41s | sqc_com] Extracting interactions: https://www.sqc.com.au/news/sqc-establishes-leadership-in-silicon-modality (10/36), chunk 1/6
+[15:07:48 +32m 45s | sqc_com] Extracting interactions: https://www.sqc.com.au/news/sqc-establishes-leadership-in-silicon-modality (10/36), chunk 2/6
+[15:07:52 +32m 49s | sqc_com] Extracting interactions: https://www.sqc.com.au/news/sqc-establishes-leadership-in-silicon-modality (10/36), chunk 3/6
+[15:07:59 +32m 56s | sqc_com] Extracting interactions: https://www.sqc.com.au/news/sqc-establishes-leadership-in-silicon-modality (10/36), chunk 4/6
+[15:08:15 +33m 12s | sqc_com] Extracting interactions: https://www.sqc.com.au/news/sqc-establishes-leadership-in-silicon-modality (10/36), chunk 5/6
+[15:08:34 +33m 31s | sqc_com] Extracting interactions: https://www.sqc.com.au/news/sqc-establishes-leadership-in-silicon-modality (10/36), chunk 6/6
+[15:08:42 +33m 39s | sqc_com] Extracting interactions: https://www.sqc.com.au/career/7769662 (11/36), chunk 1/7
+[15:08:48 +33m 45s | sqc_com] Extracting interactions: https://www.sqc.com.au/career/7769662 (11/36), chunk 2/7
+[15:08:58 +33m 55s | sqc_com] Extracting interactions: https://www.sqc.com.au/career/7769662 (11/36), chunk 3/7
+[15:09:05 +34m 2s | sqc_com] Extracting interactions: https://www.sqc.com.au/career/7769662 (11/36), chunk 6/7
+[15:09:15 +34m 12s | sqc_com] Extracting interactions: https://www.sqc.com.au/career/7769662 (11/36), chunk 7/7
+[15:09:22 +34m 20s | sqc_com] Extracting interactions: https://www.sqc.com.au/contact (12/36), chunk 1/2
+[15:09:27 +34m 25s | sqc_com] Extracting interactions: https://www.sqc.com.au/contact (12/36), chunk 2/2
+[15:09:32 +34m 29s | sqc_com] Extracting interactions: https://www.sqc.com.au/news/helgoland (13/36), chunk 1/4
+[15:09:34 +34m 31s | sqc_com] Extracting interactions: https://www.sqc.com.au/news/helgoland (13/36), chunk 2/4
+[15:09:40 +34m 37s | sqc_com] Extracting interactions: https://www.sqc.com.au/news/helgoland (13/36), chunk 3/4
+[15:09:47 +34m 45s | sqc_com] Extracting interactions: https://www.sqc.com.au/news/helgoland (13/36), chunk 4/4
+[15:09:56 +34m 53s | sqc_com] Extracting interactions: https://www.sqc.com.au/news/scalable-cooling-bluefors-x-sqc (14/36), chunk 1/6
+[15:09:59 +34m 56s | sqc_com] Extracting interactions: https://www.sqc.com.au/news/scalable-cooling-bluefors-x-sqc (14/36), chunk 2/6
+[15:10:04 +35m 1s | sqc_com] Extracting interactions: https://www.sqc.com.au/news/scalable-cooling-bluefors-x-sqc (14/36), chunk 3/6
+[15:10:11 +35m 8s | sqc_com] Extracting interactions: https://www.sqc.com.au/news/scalable-cooling-bluefors-x-sqc (14/36), chunk 4/6
+[15:10:19 +35m 16s | sqc_com] Extracting interactions: https://www.sqc.com.au/news/scalable-cooling-bluefors-x-sqc (14/36), chunk 5/6
+[15:10:28 +35m 26s | sqc_com] Extracting interactions: https://www.sqc.com.au/news/scalable-cooling-bluefors-x-sqc (14/36), chunk 6/6
+[15:10:37 +35m 34s | sqc_com] Extracting interactions: https://www.sqc.com.au/news/sqc-announces-record-qubit-read-out-fidelities-at-high-temperatures (15/36), chunk 1/5
+[15:10:41 +35m 38s | sqc_com] Extracting interactions: https://www.sqc.com.au/news/sqc-announces-record-qubit-read-out-fidelities-at-high-temperatures (15/36), chunk 2/5
+[15:10:45 +35m 43s | sqc_com] Extracting interactions: https://www.sqc.com.au/news/sqc-announces-record-qubit-read-out-fidelities-at-high-temperatures (15/36), chunk 4/5
+[15:11:16 +36m 13s | sqc_com] Extracting interactions: https://www.sqc.com.au/news/sqc-announces-record-qubit-read-out-fidelities-at-high-temperatures (15/36), chunk 5/5
+[15:11:42 +36m 39s | sqc_com] Extracting interactions: https://www.sqc.com.au/qubits (16/36), chunk 1/4
+[15:11:46 +36m 43s | sqc_com] Extracting interactions: https://www.sqc.com.au/qubits (16/36), chunk 2/4
+[15:11:47 +36m 45s | sqc_com] Extracting interactions: https://www.sqc.com.au/qubits (16/36), chunk 4/4
+[15:11:50 +36m 47s | sqc_com] Extracting interactions: https://www.sqc.com.au/news (17/36), chunk 1/12
+[15:11:54 +36m 51s | sqc_com] Extracting interactions: https://www.sqc.com.au/news (17/36), chunk 2/12
+[15:12:02 +36m 59s | sqc_com] Extracting interactions: https://www.sqc.com.au/news (17/36), chunk 3/12
+[15:12:21 +37m 18s | sqc_com] Extracting interactions: https://www.sqc.com.au/news (17/36), chunk 4/12
+[15:12:38 +37m 36s | sqc_com] Extracting interactions: https://www.sqc.com.au/news (17/36), chunk 5/12
+[15:12:47 +37m 45s | sqc_com] Extracting interactions: https://www.sqc.com.au/news (17/36), chunk 6/12
+[15:12:57 +37m 54s | sqc_com] Extracting interactions: https://www.sqc.com.au/news (17/36), chunk 7/12
+[15:13:05 +38m 2s | sqc_com] Extracting interactions: https://www.sqc.com.au/news (17/36), chunk 8/12
+[15:13:10 +38m 7s | sqc_com] Extracting interactions: https://www.sqc.com.au/news (17/36), chunk 9/12
+[15:13:13 +38m 10s | sqc_com] Extracting interactions: https://www.sqc.com.au/news (17/36), chunk 10/12
+[15:13:18 +38m 15s | sqc_com] Extracting interactions: https://www.sqc.com.au/news (17/36), chunk 11/12
+[15:13:23 +38m 20s | sqc_com] Extracting interactions: https://www.sqc.com.au/news (17/36), chunk 12/12
+[15:13:28 +38m 26s | sqc_com] Extracting interactions: https://www.sqc.com.au/news/sqc-x-amd (18/36), chunk 1/7
+[15:13:31 +38m 29s | sqc_com] Extracting interactions: https://www.sqc.com.au/news/sqc-x-amd (18/36), chunk 2/7
+[15:13:35 +38m 32s | sqc_com] Extracting interactions: https://www.sqc.com.au/news/sqc-x-amd (18/36), chunk 3/7
+[15:13:48 +38m 46s | sqc_com] Extracting interactions: https://www.sqc.com.au/news/sqc-x-amd (18/36), chunk 4/7
+[15:13:59 +38m 57s | sqc_com] Extracting interactions: https://www.sqc.com.au/news/sqc-x-amd (18/36), chunk 5/7
+[15:14:04 +39m 1s | sqc_com] Extracting interactions: https://www.sqc.com.au/news/sqc-x-amd (18/36), chunk 6/7
+[15:14:11 +39m 8s | sqc_com] Extracting interactions: https://www.sqc.com.au/news/sqc-x-amd (18/36), chunk 7/7
+[15:14:17 +39m 14s | sqc_com] Extracting interactions: https://www.sqc.com.au/about (19/36), chunk 1/11
+[15:14:20 +39m 17s | sqc_com] Extracting interactions: https://www.sqc.com.au/about (19/36), chunk 2/11
+[15:14:27 +39m 24s | sqc_com] Extracting interactions: https://www.sqc.com.au/about (19/36), chunk 3/11
+[15:14:33 +39m 31s | sqc_com] Extracting interactions: https://www.sqc.com.au/about (19/36), chunk 4/11
+[15:14:41 +39m 39s | sqc_com] Extracting interactions: https://www.sqc.com.au/about (19/36), chunk 5/11
+[15:14:49 +39m 46s | sqc_com] Extracting interactions: https://www.sqc.com.au/about (19/36), chunk 6/11
+[15:15:16 +40m 14s | sqc_com] Extracting interactions: https://www.sqc.com.au/about (19/36), chunk 7/11
+[15:15:37 +40m 34s | sqc_com] Extracting interactions: https://www.sqc.com.au/about (19/36), chunk 8/11
+[15:15:57 +40m 54s | sqc_com] Extracting interactions: https://www.sqc.com.au/about (19/36), chunk 9/11
+[15:16:07 +41m 5s | sqc_com] Extracting interactions: https://www.sqc.com.au/about (19/36), chunk 10/11
+[15:16:21 +41m 19s | sqc_com] Extracting interactions: https://www.sqc.com.au/about (19/36), chunk 11/11
+[15:16:26 +41m 23s | sqc_com] Extracting interactions: https://www.sqc.com.au/career/7282360 (20/36), chunk 1/6
+[15:16:30 +41m 28s | sqc_com] Extracting interactions: https://www.sqc.com.au/career/7282360 (20/36), chunk 2/6
+[15:16:38 +41m 35s | sqc_com] Extracting interactions: https://www.sqc.com.au/career/7282360 (20/36), chunk 3/6
+[15:16:44 +41m 42s | sqc_com] Extracting interactions: https://www.sqc.com.au/career/7282360 (20/36), chunk 6/6
+[15:16:48 +41m 46s | sqc_com] Extracting interactions: https://www.sqc.com.au/career/7282362 (21/36), chunk 1/7
+[15:16:54 +41m 51s | sqc_com] Extracting interactions: https://www.sqc.com.au/career/7282362 (21/36), chunk 2/7
+[15:16:59 +41m 56s | sqc_com] Extracting interactions: https://www.sqc.com.au/career/7282362 (21/36), chunk 3/7
+[15:17:04 +42m 2s | sqc_com] Extracting interactions: https://www.sqc.com.au/career/7282362 (21/36), chunk 7/7
+[15:17:09 +42m 6s | sqc_com] Extracting interactions: https://www.sqc.com.au/career/7811203 (22/36), chunk 1/6
+[15:17:13 +42m 10s | sqc_com] Extracting interactions: https://www.sqc.com.au/career/7811203 (22/36), chunk 2/6
+[15:17:17 +42m 14s | sqc_com] Extracting interactions: https://www.sqc.com.au/career/7811203 (22/36), chunk 3/6
+[15:17:20 +42m 17s | sqc_com] Extracting interactions: https://www.sqc.com.au/career/7811203 (22/36), chunk 5/6
+[15:17:28 +42m 26s | sqc_com] Extracting interactions: https://www.sqc.com.au/career/7811203 (22/36), chunk 6/6
+[15:17:38 +42m 35s | sqc_com] Extracting interactions: https://www.sqc.com.au/technology (23/36), chunk 1/6
+[15:17:39 +42m 36s | sqc_com] Extracting interactions: https://www.sqc.com.au/technology (23/36), chunk 2/6
+[15:17:42 +42m 39s | sqc_com] Extracting interactions: https://www.sqc.com.au/technology (23/36), chunk 6/6
+[15:17:47 +42m 44s | sqc_com] Extracting interactions: https://www.sqc.com.au/career (24/36), chunk 1/4
+[15:17:50 +42m 47s | sqc_com] Extracting interactions: https://www.sqc.com.au/career (24/36), chunk 2/4
+[15:17:55 +42m 52s | sqc_com] Extracting interactions: https://www.sqc.com.au/career (24/36), chunk 3/4
+[15:17:58 +42m 56s | sqc_com] Extracting interactions: https://www.sqc.com.au/career (24/36), chunk 4/4
+[15:18:02 +42m 59s | sqc_com] Extracting interactions: https://www.sqc.com.au/products (25/36), chunk 1/4
+[15:18:04 +43m 1s | sqc_com] Extracting interactions: https://www.sqc.com.au/products (25/36), chunk 2/4
+[15:18:07 +43m 4s | sqc_com] Extracting interactions: https://www.sqc.com.au/products (25/36), chunk 4/4
+[15:18:10 +43m 7s | sqc_com] Extracting interactions: https://www.sqc.com.au/career/7896943 (26/36), chunk 1/7
+[15:18:13 +43m 10s | sqc_com] Extracting interactions: https://www.sqc.com.au/career/7896943 (26/36), chunk 2/7
+[15:18:19 +43m 17s | sqc_com] Extracting interactions: https://www.sqc.com.au/career/7896943 (26/36), chunk 6/7
+[15:18:25 +43m 23s | sqc_com] Extracting interactions: https://www.sqc.com.au/career/7896943 (26/36), chunk 7/7
+[15:18:29 +43m 26s | sqc_com] Extracting interactions: https://www.sqc.com.au/career/7568506 (27/36), chunk 1/7
+[15:18:32 +43m 29s | sqc_com] Extracting interactions: https://www.sqc.com.au/career/7568506 (27/36), chunk 2/7
+[15:18:44 +43m 41s | sqc_com] Extracting interactions: https://www.sqc.com.au/career/7568506 (27/36), chunk 3/7
+[15:18:53 +43m 51s | sqc_com] Extracting interactions: https://www.sqc.com.au/career/7568506 (27/36), chunk 4/7
+[15:18:57 +43m 54s | sqc_com] Extracting interactions: https://www.sqc.com.au/career/7568506 (27/36), chunk 7/7
+[15:19:02 +43m 59s | sqc_com] Extracting interactions: https://www.sqc.com.au/news/darpa-qbi-stage-b (28/36), chunk 1/5
+[15:19:06 +44m 4s | sqc_com] Extracting interactions: https://www.sqc.com.au/news/darpa-qbi-stage-b (28/36), chunk 2/5
+[15:19:16 +44m 14s | sqc_com] Extracting interactions: https://www.sqc.com.au/news/darpa-qbi-stage-b (28/36), chunk 3/5
+[15:19:27 +44m 24s | sqc_com] Extracting interactions: https://www.sqc.com.au/news/darpa-qbi-stage-b (28/36), chunk 4/5
+[15:19:42 +44m 40s | sqc_com] Extracting interactions: https://www.sqc.com.au/news/darpa-qbi-stage-b (28/36), chunk 5/5
+[15:19:48 +44m 46s | sqc_com] Extracting interactions: https://www.sqc.com.au (29/36), chunk 1/5
+[15:19:51 +44m 48s | sqc_com] Extracting interactions: https://www.sqc.com.au (29/36), chunk 2/5
+[15:19:55 +44m 52s | sqc_com] Extracting interactions: https://www.sqc.com.au (29/36), chunk 3/5
+[15:19:58 +44m 55s | sqc_com] Extracting interactions: https://www.sqc.com.au (29/36), chunk 4/5
+[15:20:05 +45m 3s | sqc_com] Extracting interactions: https://www.sqc.com.au (29/36), chunk 5/5
+[15:20:11 +45m 9s | sqc_com] Extracting interactions: https://www.sqc.com.au/news/skywater-and-sqc-advancing-hybrid-quantum-classical-computing (30/36), chunk 1/7
+[15:20:16 +45m 13s | sqc_com] Extracting interactions: https://www.sqc.com.au/news/skywater-and-sqc-advancing-hybrid-quantum-classical-computing (30/36), chunk 2/7
+[15:20:22 +45m 19s | sqc_com] Extracting interactions: https://www.sqc.com.au/news/skywater-and-sqc-advancing-hybrid-quantum-classical-computing (30/36), chunk 3/7
+[15:20:32 +45m 29s | sqc_com] Extracting interactions: https://www.sqc.com.au/news/skywater-and-sqc-advancing-hybrid-quantum-classical-computing (30/36), chunk 4/7
+[15:20:50 +45m 47s | sqc_com] Extracting interactions: https://www.sqc.com.au/news/skywater-and-sqc-advancing-hybrid-quantum-classical-computing (30/36), chunk 5/7
+[15:21:04 +46m 1s | sqc_com] Extracting interactions: https://www.sqc.com.au/news/skywater-and-sqc-advancing-hybrid-quantum-classical-computing (30/36), chunk 6/7
+[15:21:08 +46m 5s | sqc_com] Extracting interactions: https://www.sqc.com.au/news/skywater-and-sqc-advancing-hybrid-quantum-classical-computing (30/36), chunk 7/7
+[15:21:12 +46m 9s | sqc_com] Extracting interactions: https://www.sqc.com.au/news/telstra-and-sqc-explore-smarter-network-prediction (31/36), chunk 1/8
+[15:21:16 +46m 14s | sqc_com] Extracting interactions: https://www.sqc.com.au/news/telstra-and-sqc-explore-smarter-network-prediction (31/36), chunk 2/8
+[15:21:20 +46m 17s | sqc_com] Extracting interactions: https://www.sqc.com.au/news/telstra-and-sqc-explore-smarter-network-prediction (31/36), chunk 3/8
+[15:21:26 +46m 23s | sqc_com] Extracting interactions: https://www.sqc.com.au/news/telstra-and-sqc-explore-smarter-network-prediction (31/36), chunk 4/8
+[15:21:39 +46m 36s | sqc_com] Extracting interactions: https://www.sqc.com.au/news/telstra-and-sqc-explore-smarter-network-prediction (31/36), chunk 5/8
+[15:21:58 +46m 56s | sqc_com] Extracting interactions: https://www.sqc.com.au/news/telstra-and-sqc-explore-smarter-network-prediction (31/36), chunk 6/8
+[15:22:12 +47m 9s | sqc_com] Extracting interactions: https://www.sqc.com.au/news/telstra-and-sqc-explore-smarter-network-prediction (31/36), chunk 7/8
+[15:22:20 +47m 17s | sqc_com] Extracting interactions: https://www.sqc.com.au/news/telstra-and-sqc-explore-smarter-network-prediction (31/36), chunk 8/8
+[15:22:30 +47m 27s | sqc_com] Extracting interactions: https://www.sqc.com.au/news/sqc-launches-quantum-twins (32/36), chunk 1/6
+[15:22:33 +47m 30s | sqc_com] Extracting interactions: https://www.sqc.com.au/news/sqc-launches-quantum-twins (32/36), chunk 2/6
+[15:22:38 +47m 35s | sqc_com] Extracting interactions: https://www.sqc.com.au/news/sqc-launches-quantum-twins (32/36), chunk 3/6
+[15:22:42 +47m 39s | sqc_com] Extracting interactions: https://www.sqc.com.au/news/sqc-launches-quantum-twins (32/36), chunk 4/6
+[15:22:57 +47m 54s | sqc_com] Extracting interactions: https://www.sqc.com.au/news/sqc-launches-quantum-twins (32/36), chunk 5/6
+[15:23:09 +48m 6s | sqc_com] Extracting interactions: https://www.sqc.com.au/news/sqc-launches-quantum-twins (32/36), chunk 6/6
+[15:23:15 +48m 12s | sqc_com] Extracting interactions: https://www.sqc.com.au/news/sqc-x-nvidia (33/36), chunk 1/6
+[15:23:22 +48m 19s | sqc_com] Extracting interactions: https://www.sqc.com.au/news/sqc-x-nvidia (33/36), chunk 2/6
+[15:23:28 +48m 25s | sqc_com] Extracting interactions: https://www.sqc.com.au/news/sqc-x-nvidia (33/36), chunk 3/6
+[15:23:35 +48m 33s | sqc_com] Extracting interactions: https://www.sqc.com.au/news/sqc-x-nvidia (33/36), chunk 4/6
+[15:23:50 +48m 48s | sqc_com] Extracting interactions: https://www.sqc.com.au/news/sqc-x-nvidia (33/36), chunk 5/6
+[15:24:04 +49m 1s | sqc_com] Extracting interactions: https://www.sqc.com.au/news/sqc-x-nvidia (33/36), chunk 6/6
+[15:24:08 +49m 5s | sqc_com] Extracting interactions: https://www.sqc.com.au/news/michelletca (34/36), chunk 1/4
+[15:24:16 +49m 14s | sqc_com] Extracting interactions: https://www.sqc.com.au/news/michelletca (34/36), chunk 2/4
+[15:24:22 +49m 19s | sqc_com] Extracting interactions: https://www.sqc.com.au/news/michelletca (34/36), chunk 3/4
+[15:24:42 +49m 39s | sqc_com] Extracting interactions: https://www.sqc.com.au/news/michelletca (34/36), chunk 4/4
+[15:24:58 +49m 55s | sqc_com] Extracting interactions: http://www.sqc.com.au (35/36), chunk 1/5
+[15:25:02 +50m 0s | sqc_com] Extracting interactions: http://www.sqc.com.au (35/36), chunk 2/5
+[15:25:06 +50m 3s | sqc_com] Extracting interactions: http://www.sqc.com.au (35/36), chunk 3/5
+[15:25:12 +50m 9s | sqc_com] Extracting interactions: http://www.sqc.com.au (35/36), chunk 4/5
+[15:25:18 +50m 15s | sqc_com] Extracting interactions: http://www.sqc.com.au (35/36), chunk 5/5
+[15:25:26 +50m 23s | sqc_com] Extracting interactions: https://www.sqc.com.au/news/the-superposition-guys-podcast---with-michelle-simmons (36/36), chunk 2/4
+[15:25:33 +50m 30s | sqc_com] Extracting interactions: https://www.sqc.com.au/news/the-superposition-guys-podcast---with-michelle-simmons (36/36), chunk 3/4
+[15:25:39 +50m 36s | sqc_com] Extracting interactions: https://www.sqc.com.au/news/the-superposition-guys-podcast---with-michelle-simmons (36/36), chunk 4/4
+[15:25:45 +50m 42s | sqc_com] Saved 3_interaction_results.json with 430 extracted interactions.
+
+[15:25:45 +50m 42s | sqc_com] === 4 clean interactions ===
+[15:25:45 +50m 42s | sqc_com] Saved 4_edges.json with 79 cleaned interactions.
+
+[15:25:45 +50m 42s | sqc_com] === 5 helix enrichment ===
+[15:25:45 +50m 42s | sqc_com] Wrote 5_nodes.json (53 actors)
+[15:25:45 +50m 42s | sqc_com] Wrote 5_edges.json (79 interactions)
+[15:25:45 +50m 42s | sqc_com] Actor helix counts: {'Academia': 5, 'Civil Society': 5, 'Government': 6, 'Industry': 16, 'Intermediary': 4, 'Unknown': 17}
+[15:25:45 +50m 42s | sqc_com] Functional-space counts: {'Consensus': 16, 'Innovation': 26, 'Intra-helix / Not classified': 17, 'Knowledge': 13, 'Public': 1, 'Unknown': 6}
+
+[15:25:45 +50m 42s | sqc_com] === 6 network visualisation ===
+[15:25:46 +50m 43s | sqc_com] Wrote quantum_network.html
+[15:25:46 +50m 43s | sqc_com] Nodes: 53
+[15:25:46 +50m 43s | sqc_com] Edges: 32
+
+[15:25:46 +50m 43s | sqc_com] Done. Outputs written to: /home/lv/IDP/idpdeeptech/pipeline/site_outputs/sqc_com
+[15:25:46 +50m 43s | sqc_com] Log: /home/lv/IDP/idpdeeptech/pipeline/site_outputs/sqc_com/run.log
+
+========================================================================
+RUN FINISHED 2026-06-17 15:25:46  (OK)
+Started:     2026-06-17 14:35:03
+Elapsed:     50m 43s
+========================================================================

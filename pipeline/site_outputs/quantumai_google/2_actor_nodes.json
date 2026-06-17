@@ -1,0 +1,3124 @@
+[
+  {
+    "entity": "Alpine Quantum Technologies",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "large enterprises",
+    "role_in_text": "provider of quantum hardware",
+    "technology_area": "quantum computing",
+    "occurrence_sentence": "Cirq's interface with Alpine Quantum Technologies hardware.",
+    "source_document": "https://quantumai.google/cirq/hardware",
+    "page": 8,
+    "confidence": "high",
+    "canonical_actor_key": "alpine quantum technologies",
+    "aliases": [
+      "Alpine Quantum Technologies"
+    ],
+    "pages": [
+      8
+    ],
+    "mentions": [
+      {
+        "entity": "Alpine Quantum Technologies",
+        "page": 8,
+        "role_in_text": "provider of quantum hardware",
+        "occurrence_sentence": "Cirq's interface with Alpine Quantum Technologies hardware.",
+        "source_document": "https://quantumai.google/cirq/hardware"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": ""
+  },
+  {
+    "entity": "AQT",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "large enterprises",
+    "role_in_text": "Quantum hardware provider",
+    "technology_area": "quantum computing",
+    "occurrence_sentence": "Getting started with IonQ on AQT hardware",
+    "source_document": "https://quantumai.google/cirq/hardware",
+    "page": 9,
+    "confidence": "high",
+    "canonical_actor_key": "aqt",
+    "aliases": [
+      "AQT"
+    ],
+    "pages": [
+      4,
+      5,
+      9
+    ],
+    "mentions": [
+      {
+        "entity": "AQT",
+        "page": 4,
+        "role_in_text": "AQT hardware",
+        "occurrence_sentence": "AQT hardware",
+        "source_document": "https://quantumai.google/cirq/hardware"
+      },
+      {
+        "entity": "AQT",
+        "page": 5,
+        "role_in_text": "AQT hardware",
+        "occurrence_sentence": "AQT hardware",
+        "source_document": "https://quantumai.google/cirq/hardware"
+      },
+      {
+        "entity": "AQT",
+        "page": 9,
+        "role_in_text": "Quantum hardware provider",
+        "occurrence_sentence": "Getting started with IonQ on AQT hardware",
+        "source_document": "https://quantumai.google/cirq/hardware"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": ""
+  },
+  {
+    "entity": "Azure Quantum",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "large enterprises",
+    "role_in_text": "Azure Quantum",
+    "technology_area": "quantum computing",
+    "occurrence_sentence": "Azure Quantum",
+    "source_document": "https://quantumai.google/cirq/hardware",
+    "page": 5,
+    "confidence": "high",
+    "canonical_actor_key": "azure quantum",
+    "aliases": [
+      "Azure Quantum"
+    ],
+    "pages": [
+      4,
+      5
+    ],
+    "mentions": [
+      {
+        "entity": "Azure Quantum",
+        "page": 4,
+        "role_in_text": "Azure Quantum",
+        "occurrence_sentence": "Azure Quantum",
+        "source_document": "https://quantumai.google/cirq/hardware"
+      },
+      {
+        "entity": "Azure Quantum",
+        "page": 5,
+        "role_in_text": "Azure Quantum",
+        "occurrence_sentence": "Azure Quantum",
+        "source_document": "https://quantumai.google/cirq/hardware"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": ""
+  },
+  {
+    "entity": "Cirq",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "research institutes",
+    "role_in_text": "A library for writing, manipulating, and optimizing quantum circuits and running them against quantum computers and simulators.",
+    "technology_area": "quantum computing",
+    "occurrence_sentence": "This can be a bit tedious, because the above assumes that Python path has been set using `source dev_tools/pypath`. A more convenient way to run checks is via the scripts in the [check/",
+    "source_document": "https://quantumai.google/cirq/dev/development",
+    "page": 11,
+    "canonical_actor_key": "cirq",
+    "aliases": [
+      "Cirq"
+    ],
+    "pages": [
+      4,
+      5,
+      6,
+      8,
+      9,
+      11,
+      14,
+      15,
+      42,
+      47,
+      77,
+      94,
+      143,
+      144
+    ],
+    "mentions": [
+      {
+        "entity": "Cirq",
+        "page": 5,
+        "role_in_text": "quantum computing framework",
+        "occurrence_sentence": "* [ Cirq ](https://quantumai.google/cirq)",
+        "source_document": "https://quantumai.google/cirq/build"
+      },
+      {
+        "entity": "Cirq",
+        "page": 4,
+        "role_in_text": "Quantum computing framework",
+        "occurrence_sentence": "import cirq",
+        "source_document": "https://quantumai.google/qsim"
+      },
+      {
+        "entity": "Cirq",
+        "page": 5,
+        "role_in_text": "python framework for writing, simulating, and executing quantum programs",
+        "occurrence_sentence": "Cirq is a python framework for writing, simulating, and executing quantum programs.",
+        "source_document": "https://quantumai.google/qsim"
+      },
+      {
+        "entity": "Cirq",
+        "page": 6,
+        "role_in_text": "A quantum computing framework",
+        "occurrence_sentence": "Fork the Cirq repo (Fork button in upper right corner of [repo page](https://github.com/quantumlib/Cirq)).",
+        "source_document": "https://quantumai.google/cirq/dev/development"
+      },
+      {
+        "entity": "Cirq",
+        "page": 9,
+        "role_in_text": "development tool",
+        "occurrence_sentence": "6. (**OPTIONAL**) include your development copy of Cirq and its subpackages in your Python path.",
+        "source_document": "https://quantumai.google/cirq/dev/development"
+      },
+      {
+        "entity": "Cirq",
+        "page": 9,
+        "role_in_text": "development tool",
+        "occurrence_sentence": "If you want to pip install Cirq in an editable fashion, you'll have to install it per module, e.g.:",
+        "source_document": "https://quantumai.google/cirq/dev/development"
+      },
+      {
+        "entity": "Cirq",
+        "page": 11,
+        "role_in_text": "A library for writing, manipulating, and optimizing quantum circuits and running them against quantum computers and simulators.",
+        "occurrence_sentence": "This can be a bit tedious, because the above assumes that Python path has been set using `source dev_tools/pypath`. A more convenient way to run checks is via the scripts in the [check/",
+        "source_document": "https://quantumai.google/cirq/dev/development"
+      },
+      {
+        "entity": "Cirq",
+        "page": 15,
+        "role_in_text": "A modular design framework",
+        "occurrence_sentence": "Cirq follows a modular design.",
+        "source_document": "https://quantumai.google/cirq/dev/development"
+      },
+      {
+        "entity": "Cirq",
+        "page": 14,
+        "role_in_text": "Quantum computing library",
+        "occurrence_sentence": "thon/cirq/PeriodicValue)",
+        "source_document": "https://quantumai.google/reference/python/cirq/all_symbols"
+      },
+      {
+        "entity": "Cirq",
+        "page": 42,
+        "role_in_text": "Quantum computing framework",
+        "occurrence_sentence": "ted) * [quartic_paired_acquaintance_strategy](https://quantumai.google/reference/python/cirq/contrib/acquaintance/quartic_paired_acquaintance_strategy)",
+        "source_document": "https://quantumai.google/reference/python/cirq/all_symbols"
+      },
+      {
+        "entity": "Cirq",
+        "page": 47,
+        "role_in_text": "A software library for writing, manipulating, and optimizing quantum circuits, and running them against quantum computers and simulators.",
+        "occurrence_sentence": "graph_device/uniform_graph_device)",
+        "source_document": "https://quantumai.google/reference/python/cirq/all_symbols"
+      },
+      {
+        "entity": "Cirq",
+        "page": 77,
+        "role_in_text": "part of the URL and the context of the document",
+        "occurrence_sentence": "https://quantumai.google/reference/python/cirq/all_symbols",
+        "source_document": "https://quantumai.google/reference/python/cirq/all_symbols"
+      },
+      {
+        "entity": "Cirq",
+        "page": 94,
+        "role_in_text": "Quantum computing framework",
+        "occurrence_sentence": "https://quantumai.google/reference/python/cirq_google/serialization/arg_func_langs/clifford_tableau_arg_to_proto",
+        "source_document": "https://quantumai.google/reference/python/cirq/all_symbols"
+      },
+      {
+        "entity": "Cirq",
+        "page": 143,
+        "role_in_text": "A library or framework for quantum computing",
+        "occurrence_sentence": "ntrib/circuit_to_latex_using_qcircuit)",
+        "source_document": "https://quantumai.google/reference/python/cirq/all_symbols"
+      },
+      {
+        "entity": "Cirq",
+        "page": 144,
+        "role_in_text": "quantum computing library",
+        "occurrence_sentence": "t_diagram_info`",
+        "source_document": "https://quantumai.google/reference/python/cirq/all_symbols"
+      },
+      {
+        "entity": "Cirq",
+        "page": 5,
+        "role_in_text": "quantum computing framework",
+        "occurrence_sentence": "* [ Cirq ](https://quantumai.google/cirq)",
+        "source_document": "https://quantumai.google/cirq/simulate"
+      },
+      {
+        "entity": "Cirq",
+        "page": 6,
+        "role_in_text": "quantum computing framework",
+        "occurrence_sentence": "* [ Cirq ](https://quantumai.google/cirq)",
+        "source_document": "https://quantumai.google/cirq/simulate"
+      },
+      {
+        "entity": "Cirq",
+        "page": 8,
+        "role_in_text": "quantum computing framework",
+        "occurrence_sentence": "* [ Cirq ](https://quantumai.google/cirq)",
+        "source_document": "https://quantumai.google/cirq/experiments"
+      },
+      {
+        "entity": "Cirq",
+        "page": 9,
+        "role_in_text": "Quantum computing framework",
+        "occurrence_sentence": "* [ Cirq",
+        "source_document": "https://quantumai.google/cirq/experiments"
+      },
+      {
+        "entity": "Cirq",
+        "page": 6,
+        "role_in_text": "software library",
+        "occurrence_sentence": "Install dependencies of features in [`cirq.contrib`",
+        "source_document": "https://quantumai.google/cirq/start/install"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": ""
+  },
+  {
+    "entity": "Cirq-core",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "other",
+    "role_in_text": "A module within Cirq",
+    "technology_area": "quantum computing",
+    "occurrence_sentence": "See, for example, the files `cirq-core/requirements.txt`",
+    "source_document": "https://quantumai.google/cirq/dev/development",
+    "page": 15,
+    "confidence": "medium",
+    "canonical_actor_key": "cirq core",
+    "aliases": [
+      "Cirq-core"
+    ],
+    "pages": [
+      15
+    ],
+    "mentions": [
+      {
+        "entity": "Cirq-core",
+        "page": 15,
+        "role_in_text": "A module within Cirq",
+        "occurrence_sentence": "See, for example, the files `cirq-core/requirements.txt`",
+        "source_document": "https://quantumai.google/cirq/dev/development"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": ""
+  },
+  {
+    "entity": "Cirq Google",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "other",
+    "role_in_text": "Quantum computing framework",
+    "technology_area": "quantum computing",
+    "occurrence_sentence": "https://quantumai.google/reference/python/cirq_google/serialization/arg_func_langs/clifford_tableau_arg_to_proto",
+    "source_document": "https://quantumai.google/reference/python/cirq/all_symbols",
+    "page": 94,
+    "canonical_actor_key": "cirq google",
+    "aliases": [
+      "Cirq Google"
+    ],
+    "pages": [
+      94
+    ],
+    "mentions": [
+      {
+        "entity": "Cirq Google",
+        "page": 94,
+        "role_in_text": "Quantum computing framework",
+        "occurrence_sentence": "https://quantumai.google/reference/python/cirq_google/serialization/arg_func_langs/clifford_tableau_arg_to_proto",
+        "source_document": "https://quantumai.google/reference/python/cirq/all_symbols"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": ""
+  },
+  {
+    "entity": "Coursera",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "business support institutions",
+    "role_in_text": "platform offering a course on quantum error correction",
+    "technology_area": "quantum computing",
+    "occurrence_sentence": "Get a free introduction into the world of quantum error correction with our new Coursera course, designed for everyone from curious undergrads to seasoned software engineers.",
+    "source_document": "https://quantumai.google/resources",
+    "page": 4,
+    "confidence": "high",
+    "canonical_actor_key": "coursera",
+    "aliases": [
+      "Coursera"
+    ],
+    "pages": [
+      4,
+      5
+    ],
+    "mentions": [
+      {
+        "entity": "Coursera",
+        "page": 4,
+        "role_in_text": "platform offering a course on quantum error correction",
+        "occurrence_sentence": "Get a free introduction into the world of quantum error correction with our new Coursera course, designed for everyone from curious undergrads to seasoned software engineers.",
+        "source_document": "https://quantumai.google/resources"
+      },
+      {
+        "entity": "Coursera",
+        "page": 5,
+        "role_in_text": "provider of quantum error correction course",
+        "occurrence_sentence": "Get a free introduction into the world of quantum error correction with our new Coursera course, designed for everyone from curious undergrads to seasoned software engineers.",
+        "source_document": "https://quantumai.google/resources"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": ""
+  },
+  {
+    "entity": "GitHub",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "other",
+    "role_in_text": "repository hosting service",
+    "technology_area": "other",
+    "occurrence_sentence": "The simplest way to get a local copy of Cirq that you can edit is by cloning Cirq's GitHub repository:",
+    "source_document": "https://quantumai.google/cirq/dev/development",
+    "page": 5,
+    "confidence": "high",
+    "canonical_actor_key": "github",
+    "aliases": [
+      "GitHub"
+    ],
+    "pages": [
+      1,
+      5,
+      6
+    ],
+    "mentions": [
+      {
+        "entity": "GitHub",
+        "page": 5,
+        "role_in_text": "repository hosting service",
+        "occurrence_sentence": "The simplest way to get a local copy of Cirq that you can edit is by cloning Cirq's GitHub repository:",
+        "source_document": "https://quantumai.google/cirq/dev/development"
+      },
+      {
+        "entity": "GitHub",
+        "page": 6,
+        "role_in_text": "A platform for hosting and collaborating on code repositories",
+        "occurrence_sentence": "Fork the Cirq repo (Fork button in upper right corner of [repo page",
+        "source_document": "https://quantumai.google/cirq/dev/development"
+      },
+      {
+        "entity": "GitHub",
+        "page": 1,
+        "role_in_text": "Hosting the Qualtran repository",
+        "occurrence_sentence": "[ open_in_new GitHub ](https://github.com/quantumlib/qualtran)",
+        "source_document": "https://quantumai.google/qualtran"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": ""
+  },
+  {
+    "entity": "Google",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "large enterprises",
+    "role_in_text": "Company",
+    "technology_area": "quantum computing",
+    "occurrence_sentence": "https://www.google.com/about/careers/applications/jobs/results/?company=Google&employment_type=FULL_TIME&employment_type=PART_TIME&location=California,%20USA&location=Munich,%20Germany&location=Seattle,%20WA,%20USA&location=Zurich,%20Switzerland&q=quantum&sort_by=relevance&src=Online%2FGoogle%20Website%2FQuantum_AI&utm_campaign=Quantum_AI&utm_medium=Google%20Website&utm_source=online",
+    "source_document": "https://quantumai.google",
+    "page": 2,
+    "confidence": "high",
+    "canonical_actor_key": "google",
+    "aliases": [
+      "Google"
+    ],
+    "pages": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      44,
+      46,
+      48,
+      49,
+      56,
+      57,
+      58,
+      59,
+      61,
+      62,
+      65,
+      66,
+      70,
+      71,
+      72,
+      73,
+      75,
+      78,
+      79,
+      80,
+      81,
+      82,
+      87,
+      88,
+      89,
+      90,
+      92,
+      93,
+      95,
+      96,
+      97,
+      98,
+      105,
+      106,
+      110,
+      127,
+      145,
+      173,
+      176,
+      177,
+      178
+    ],
+    "mentions": [
+      {
+        "entity": "Google",
+        "page": 1,
+        "role_in_text": "Provider of quantum computing resources and information",
+        "occurrence_sentence": "Google Quantum AI",
+        "source_document": "https://quantumai.google/cirq/transform"
+      },
+      {
+        "entity": "Google",
+        "page": 1,
+        "role_in_text": "Provider of quantum computing resources and information",
+        "occurrence_sentence": "Google Quantum AI",
+        "source_document": "https://quantumai.google/cirq/transform"
+      },
+      {
+        "entity": "Google",
+        "page": 1,
+        "role_in_text": "",
+        "occurrence_sentence": "",
+        "source_document": "https://quantumai.google/cirq/transform"
+      },
+      {
+        "entity": "Google",
+        "page": 2,
+        "role_in_text": "provider of quantum computing resources and information",
+        "occurrence_sentence": "Sign in",
+        "source_document": "https://quantumai.google/cirq/transform"
+      },
+      {
+        "entity": "Google",
+        "page": 3,
+        "role_in_text": "provider of quantum AI technologies",
+        "occurrence_sentence": "Google Quantum AI",
+        "source_document": "https://quantumai.google/cirq/transform"
+      },
+      {
+        "entity": "Google",
+        "page": 3,
+        "role_in_text": "provider of quantum AI technologies",
+        "occurrence_sentence": "Google Quantum AI",
+        "source_document": "https://quantumai.google/cirq/transform"
+      },
+      {
+        "entity": "Google",
+        "page": 4,
+        "role_in_text": "provider of quantum AI resources and tools",
+        "occurrence_sentence": "https://quantumai.google/cirq/transform",
+        "source_document": "https://quantumai.google/cirq/transform"
+      },
+      {
+        "entity": "Google",
+        "page": 5,
+        "role_in_text": "Provider of quantum AI services",
+        "occurrence_sentence": "* [ Google Quantum AI ](https://quantumai.google/)",
+        "source_document": "https://quantumai.google/cirq/transform"
+      },
+      {
+        "entity": "Google",
+        "page": 6,
+        "role_in_text": "developer of quantum AI tools",
+        "occurrence_sentence": "source_document: \"https://quantumai.google/cirq/transform\"",
+        "source_document": "https://quantumai.google/cirq/transform"
+      },
+      {
+        "entity": "Google",
+        "page": 7,
+        "role_in_text": "developer of quantum AI technologies",
+        "occurrence_sentence": "Google Developers",
+        "source_document": "https://quantumai.google/cirq/transform"
+      },
+      {
+        "entity": "Google",
+        "page": 7,
+        "role_in_text": "developer of quantum AI technologies",
+        "occurrence_sentence": "[ About Google ]",
+        "source_document": "https://quantumai.google/cirq/transform"
+      },
+      {
+        "entity": "Google",
+        "page": 1,
+        "role_in_text": "provider of quantum computing resources and information",
+        "occurrence_sentence": "Learn",
+        "source_document": "https://quantumai.google/lab"
+      },
+      {
+        "entity": "Google",
+        "page": 2,
+        "role_in_text": "provider of quantum AI services and research",
+        "occurrence_sentence": "Google Quantum AI",
+        "source_document": "https://quantumai.google/lab"
+      },
+      {
+        "entity": "Google",
+        "page": 3,
+        "role_in_text": "Google Quantum AI campus",
+        "occurrence_sentence": "Welcome to the Google Quantum AI campus",
+        "source_document": "https://quantumai.google/lab"
+      },
+      {
+        "entity": "Google",
+        "page": 4,
+        "role_in_text": "Google's Quantum AI campus",
+        "occurrence_sentence": "Santa Barbara is home to Google's Quantum AI campus, where we bring together our quantum data center, fabrication facility, and cutting-edge research.",
+        "source_document": "https://quantumai.google/lab"
+      },
+      {
+        "entity": "Google",
+        "page": 5,
+        "role_in_text": "owner of the Quantum AI campus",
+        "occurrence_sentence": "Santa Barbara is home to Google's Quantum AI campus, where we bring together our quantum data center, fabrication facility, and cutting-edge research.",
+        "source_document": "https://quantumai.google/lab"
+      },
+      {
+        "entity": "Google",
+        "page": 5,
+        "role_in_text": "owner of the Quantum AI campus",
+        "occurrence_sentence": "Our Santa Barbara facility is a critical hub for our quantum computing research and development.",
+        "source_document": "https://quantumai.google/lab"
+      },
+      {
+        "entity": "Google",
+        "page": 6,
+        "role_in_text": "developer of quantum systems and computing",
+        "occurrence_sentence": "As new devices emerge from our fab, they are tested and deployed in our research lab.",
+        "source_document": "https://quantumai.google/lab"
+      },
+      {
+        "entity": "Google",
+        "page": 6,
+        "role_in_text": "developer of quantum systems and computing",
+        "occurrence_sentence": "Take a deep dive into our comprehensive approach to quantum computing.",
+        "source_document": "https://quantumai.google/lab"
+      },
+      {
+        "entity": "Google",
+        "page": 7,
+        "role_in_text": "developer of quantum AI lab",
+        "occurrence_sentence": "[ ![Google Developers](https://www.gstatic.com/devrel-devsite/prod/v20cdb2337f656fc22df509b6d5402b3836a1b55334a8eea3301423a87970c4d5/quantum/images/lockup-google-for-developers.svg) ](https://developers.google.com/)",
+        "source_document": "https://quantumai.google/lab"
+      },
+      {
+        "entity": "Google",
+        "page": 1,
+        "role_in_text": "provider of quantum computing resources and information",
+        "occurrence_sentence": "Google Quantum AI",
+        "source_document": "https://quantumai.google/cirq/build"
+      },
+      {
+        "entity": "Google",
+        "page": 1,
+        "role_in_text": "provider of quantum computing resources and information",
+        "occurrence_sentence": "https://quantumai.google/",
+        "source_document": "https://quantumai.google/cirq/build"
+      },
+      {
+        "entity": "Google",
+        "page": 1,
+        "role_in_text": "",
+        "occurrence_sentence": "",
+        "source_document": "https://quantumai.google/cirq/build"
+      },
+      {
+        "entity": "Google",
+        "page": 2,
+        "role_in_text": "provider of quantum AI resources",
+        "occurrence_sentence": "Sign in",
+        "source_document": "https://quantumai.google/cirq/build"
+      },
+      {
+        "entity": "Google",
+        "page": 3,
+        "role_in_text": "Provider of quantum computing resources and information",
+        "occurrence_sentence": "Google Quantum AI",
+        "source_document": "https://quantumai.google/cirq/build"
+      },
+      {
+        "entity": "Google",
+        "page": 4,
+        "role_in_text": "provider of quantum computing resources and information",
+        "occurrence_sentence": "https://quantumai.google/research)",
+        "source_document": "https://quantumai.google/cirq/build"
+      },
+      {
+        "entity": "Google",
+        "page": 7,
+        "role_in_text": "developer of Cirq",
+        "occurrence_sentence": "At the core of Cirq is the ability to construct quantum circuits. These are the methods and data structures necessary to do so.",
+        "source_document": "https://quantumai.google/cirq/build"
+      },
+      {
+        "entity": "Google",
+        "page": 7,
+        "role_in_text": "developer of Cirq",
+        "occurrence_sentence": "The core data structures that compose a circuit and how to use them.",
+        "source_document": "https://quantumai.google/cirq/build"
+      },
+      {
+        "entity": "Google",
+        "page": 8,
+        "role_in_text": "developer of quantum AI tools",
+        "occurrence_sentence": "External tools for circuit construction. Except as otherwise noted, the content of this page is licensed under the [Creative Commons Attribution 4.0 License",
+        "source_document": "https://quantumai.google/cirq/build"
+      },
+      {
+        "entity": "Google",
+        "page": 9,
+        "role_in_text": "developer of quantum AI tools",
+        "occurrence_sentence": "[ ![Google Developers](https://www.gstatic.com/devrel-devsite/prod/v20cdb2337f656fc22df509b6d5402b3836a1b55334a8eea3301423a87970c4d5/quantum/images/lockup-google-for-developers.svg) ](https://developers.google.com/)",
+        "source_document": "https://quantumai.google/cirq/build"
+      },
+      {
+        "entity": "Google",
+        "page": 1,
+        "role_in_text": "provider of quantum computing resources and information",
+        "occurrence_sentence": "Learn",
+        "source_document": "https://quantumai.google"
+      },
+      {
+        "entity": "Google",
+        "page": 2,
+        "role_in_text": "Company",
+        "occurrence_sentence": "https://www.google.com/about/careers/applications/jobs/results/?company=Google&employment_type=FULL_TIME&employment_type=PART_TIME&location=California,%20USA&location=Munich,%20Germany&location=Seattle,%20WA,%20USA&location=Zurich,%20Switzerland&q=quantum&sort_by=relevance&src=Online%2FGoogle%20Website%2FQuantum_AI&utm_campaign=Quantum_AI&utm_medium=Google%20Website&utm_source=online",
+        "source_document": "https://quantumai.google"
+      },
+      {
+        "entity": "Google",
+        "page": 3,
+        "role_in_text": "provider of quantum computing resources and tools",
+        "occurrence_sentence": "Google Quantum AI",
+        "source_document": "https://quantumai.google"
+      },
+      {
+        "entity": "Google",
+        "page": 5,
+        "role_in_text": "developer of quantum computing technologies",
+        "occurrence_sentence": "Google Quantum AI's latest state-of-the-art quantum chip, is a big step towards developing a large-scale, error-corrected quantum computer.",
+        "source_document": "https://quantumai.google"
+      },
+      {
+        "entity": "Google",
+        "page": 6,
+        "role_in_text": "Publisher of the blog post and source of the quantum AI team.",
+        "occurrence_sentence": "[ open_in_new Blog post ](https://blog.google/technology/research/google-willow-quantum-chip/)",
+        "source_document": "https://quantumai.google"
+      },
+      {
+        "entity": "Google",
+        "page": 7,
+        "role_in_text": "Publisher of the blog posts and resources",
+        "occurrence_sentence": "View published research, blog posts, and educational resources from the Quantum AI team.",
+        "source_document": "https://quantumai.google"
+      },
+      {
+        "entity": "Google",
+        "page": 7,
+        "role_in_text": "Publisher of the blog posts and resources",
+        "occurrence_sentence": "[ Recent Post Building superconducting and neutral atom quantum computers",
+        "source_document": "https://quantumai.google"
+      },
+      {
+        "entity": "Google",
+        "page": 8,
+        "role_in_text": "owner of the website",
+        "occurrence_sentence": "Recent post Building superconducting and neutral atom quantum computers",
+        "source_document": "https://quantumai.google"
+      },
+      {
+        "entity": "Google",
+        "page": 8,
+        "role_in_text": "owner of the website",
+        "occurrence_sentence": "Call for Proposals Willow Early Access Program",
+        "source_document": "https://quantumai.google"
+      },
+      {
+        "entity": "Google",
+        "page": 8,
+        "role_in_text": "",
+        "occurrence_sentence": "",
+        "source_document": "https://quantumai.google"
+      },
+      {
+        "entity": "Google",
+        "page": 9,
+        "role_in_text": "developer of quantum AI technologies",
+        "occurrence_sentence": "google/static/site-assets/images/marketing/cards/discover-sycamore.jpg) ![](https://quantumai.google/static/site-assets/images/marketing/cards/discover-sycamore-mobile.jpg) Resources Our focused and responsible approach to quantum computing",
+        "source_document": "https://quantumai.google"
+      },
+      {
+        "entity": "Google",
+        "page": 9,
+        "role_in_text": "developer of quantum AI technologies",
+        "occurrence_sentence": "google/static/site-assets/images/marketing/cards/discover-quantum-journey.jpeg) ![",
+        "source_document": "https://quantumai.google"
+      },
+      {
+        "entity": "Google",
+        "page": 10,
+        "role_in_text": "developer of quantum AI",
+        "occurrence_sentence": "Google Developers",
+        "source_document": "https://quantumai.google"
+      },
+      {
+        "entity": "Google",
+        "page": 1,
+        "role_in_text": "provider of quantum computing resources and information",
+        "occurrence_sentence": "Google Quantum AI",
+        "source_document": "https://quantumai.google/qsim"
+      },
+      {
+        "entity": "Google",
+        "page": 2,
+        "role_in_text": "provider of quantum AI services",
+        "occurrence_sentence": "Quantum circuit simulator qsim.",
+        "source_document": "https://quantumai.google/qsim"
+      },
+      {
+        "entity": "Google",
+        "page": 3,
+        "role_in_text": "provider of quantum computing resources",
+        "occurrence_sentence": "Quantum circuit simulator qsim.",
+        "source_document": "https://quantumai.google/qsim"
+      },
+      {
+        "entity": "Google",
+        "page": 3,
+        "role_in_text": "provider of quantum computing resources",
+        "occurrence_sentence": "[ ![Google Quantum AI",
+        "source_document": "https://quantumai.google/qsim"
+      },
+      {
+        "entity": "Google",
+        "page": 5,
+        "role_in_text": "provider of quantum simulation tools and cloud services",
+        "occurrence_sentence": "Learn how to simulate up to 38 qubits on Google Cloud's Compute Engine.",
+        "source_document": "https://quantumai.google/qsim"
+      },
+      {
+        "entity": "Google",
+        "page": 6,
+        "role_in_text": "developer of qsim",
+        "occurrence_sentence": "qsim is a full state-vector simulator written in C++.",
+        "source_document": "https://quantumai.google/qsim"
+      },
+      {
+        "entity": "Google",
+        "page": 6,
+        "role_in_text": "developer of qsim",
+        "occurrence_sentence": "To help researchers and developers develop quantum algorithms today, we have made updates to qsim that make it more performant and intuitive, and more \"hardware-like\".",
+        "source_document": "https://quantumai.google/qsim"
+      },
+      {
+        "entity": "Google",
+        "page": 7,
+        "role_in_text": "developer of qsim",
+        "occurrence_sentence": "To help researchers and developers develop quantum algorithms today, we have made updates to qsim that make it more performant and intuitive, and more 'hardware-like'.",
+        "source_document": "https://quantumai.google/qsim"
+      },
+      {
+        "entity": "Google",
+        "page": 9,
+        "role_in_text": "developer of QSim",
+        "occurrence_sentence": "https://quantumai.google/qsim",
+        "source_document": "https://quantumai.google/qsim"
+      },
+      {
+        "entity": "Google",
+        "page": 1,
+        "role_in_text": "developer of quantum computing tools",
+        "occurrence_sentence": "Google Quantum AI",
+        "source_document": "https://quantumai.google/cirq/dev/development"
+      },
+      {
+        "entity": "Google",
+        "page": 1,
+        "role_in_text": "developer of quantum computing tools",
+        "occurrence_sentence": "Google Quantum AI",
+        "source_document": "https://quantumai.google/cirq/dev/development"
+      },
+      {
+        "entity": "Google",
+        "page": 1,
+        "role_in_text": "",
+        "occurrence_sentence": "",
+        "source_document": "https://quantumai.google/cirq/dev/development"
+      },
+      {
+        "entity": "Google",
+        "page": 2,
+        "role_in_text": "provider of quantum AI technologies",
+        "occurrence_sentence": "Sign in",
+        "source_document": "https://quantumai.google/cirq/dev/development"
+      },
+      {
+        "entity": "Google",
+        "page": 2,
+        "role_in_text": "provider of quantum AI technologies",
+        "occurrence_sentence": "[ ![Google Quantum AI",
+        "source_document": "https://quantumai.google/cirq/dev/development"
+      },
+      {
+        "entity": "Google",
+        "page": 3,
+        "role_in_text": "Quantum AI",
+        "occurrence_sentence": "[ ![Google Quantum AI",
+        "source_document": "https://quantumai.google/cirq/dev/development"
+      },
+      {
+        "entity": "Google",
+        "page": 4,
+        "role_in_text": "company",
+        "occurrence_sentence": "https://www.google.com/about/careers/applications/jobs/results/?company=Google&employment_type=FULL_TIME&employment_type=PART_TIME&location=California,%20USA&location=Munich,%20Germany&location=Seattle,%20WA,%20USA&location=Zurich,%20Switzerland&q=quantum&sort_by=relevance&src=Online%2FGoogle%20Website%2FQuantum_AI&utm_campaign=Quantum_AI&utm_medium=Google%20Website&utm_source=online",
+        "source_document": "https://quantumai.google/cirq/dev/development"
+      },
+      {
+        "entity": "Google",
+        "page": 10,
+        "role_in_text": "developer of Cirq",
+        "occurrence_sentence": "Note that `pip install -e .` will install the `cirq` metapackage only, and your code changes won't get picked up!",
+        "source_document": "https://quantumai.google/cirq/dev/development"
+      },
+      {
+        "entity": "Google",
+        "page": 10,
+        "role_in_text": "developer of Protocol Buffers",
+        "occurrence_sentence": "[Protocol buffers",
+        "source_document": "https://quantumai.google/cirq/dev/development"
+      },
+      {
+        "entity": "Google",
+        "page": 13,
+        "role_in_text": "provider of the Cirq framework",
+        "occurrence_sentence": "Cirq uses [Google style doc strings",
+        "source_document": "https://quantumai.google/cirq/dev/development"
+      },
+      {
+        "entity": "Google",
+        "page": 16,
+        "role_in_text": "developer of Cirq",
+        "occurrence_sentence": "Last updated 2026-03-20 UTC.",
+        "source_document": "https://quantumai.google/cirq/dev/development"
+      },
+      {
+        "entity": "Google",
+        "page": 17,
+        "role_in_text": "developer of quantum AI tools",
+        "occurrence_sentence": "![Google Developers](https://www.gstatic.com/devrel-devsite/prod/v20cdb2337f656fc22df509b6d5402b3836a1b55334a8eea3301423a87970c4d5/quantum/images/lockup-google-for-developers.svg)",
+        "source_document": "https://quantumai.google/cirq/dev/development"
+      },
+      {
+        "entity": "Google",
+        "page": 1,
+        "role_in_text": "provider of quantum computing resources",
+        "occurrence_sentence": "[ ![Google Quantum AI](https://www.gstatic.com/devrel-devsite/prod/v20cdb2337f656fc22df509b6d5402b3836a1b55334a8eea3301423a87970c4d5/quantum/images/lockup.svg) ](https://quantumai.google/)",
+        "source_document": "https://quantumai.google/quantumcomputer"
+      },
+      {
+        "entity": "Google",
+        "page": 2,
+        "role_in_text": "provider of quantum computing resources and information",
+        "occurrence_sentence": "Sign in [ ![Google Quantum AI",
+        "source_document": "https://quantumai.google/quantumcomputer"
+      },
+      {
+        "entity": "Google",
+        "page": 4,
+        "role_in_text": "developer of quantum AI and quantum computing systems",
+        "occurrence_sentence": "Quantum AI's approach to co-developing hardware and software components is paving the way towards an end-state quantum computer.",
+        "source_document": "https://quantumai.google/quantumcomputer"
+      },
+      {
+        "entity": "Google",
+        "page": 5,
+        "role_in_text": "developer of quantum computing technologies",
+        "occurrence_sentence": "We believe this integrated methodology supports the acceleration of advancements in both the capabilities of quantum systems and the potential applications they can power.",
+        "source_document": "https://quantumai.google/quantumcomputer"
+      },
+      {
+        "entity": "Google",
+        "page": 5,
+        "role_in_text": "developer of quantum computing technologies",
+        "occurrence_sentence": "Our hardware focuses on superconducting qubits, which require specialized cryogenic environments and custom control electronics.",
+        "source_document": "https://quantumai.google/quantumcomputer"
+      },
+      {
+        "entity": "Google",
+        "page": 6,
+        "role_in_text": "developer of quantum computing technologies",
+        "occurrence_sentence": "We believe this full-system approach is crucial to building quantum computers capable of tackling meaningful research and the development of long-term applications.",
+        "source_document": "https://quantumai.google/quantumcomputer"
+      },
+      {
+        "entity": "Google",
+        "page": 6,
+        "role_in_text": "developer of quantum computing technologies",
+        "occurrence_sentence": "We're looking for extraordinary people to join us on this transformative journey and become part of our diverse collective shaping the future of quantum computing.",
+        "source_document": "https://quantumai.google/quantumcomputer"
+      },
+      {
+        "entity": "Google",
+        "page": 7,
+        "role_in_text": "company",
+        "occurrence_sentence": "Explore open roles",
+        "source_document": "https://quantumai.google/quantumcomputer"
+      },
+      {
+        "entity": "Google",
+        "page": 7,
+        "role_in_text": "company",
+        "occurrence_sentence": "https://www.google.com/about/careers/applications/jobs/results/?company=Google&employment_type=FULL_TIME&employment_type=PART_TIME&hl=en_US&jlo=en_US&location=California,%20USA&location=Munich,%20Germany&location=Seattle,%20WA,%20USA&location=Zurich,%20Switzerland&q=quantum&",
+        "source_document": "https://quantumai.google/quantumcomputer"
+      },
+      {
+        "entity": "Google",
+        "page": 8,
+        "role_in_text": "Developer of quantum computing technology",
+        "occurrence_sentence": "[ ![Google Developers](https://www.gstatic.com/devrel-devsite/prod/v20cdb2337f656fc22df509b6d5402b3836a1b55334a8eea3301423a87970c4d5/quantum/images/lockup-google-for-developers.svg) ](https://developers.google.com/)",
+        "source_document": "https://quantumai.google/quantumcomputer"
+      },
+      {
+        "entity": "Google",
+        "page": 1,
+        "role_in_text": "provider of quantum computing resources and information",
+        "occurrence_sentence": "Learn",
+        "source_document": "https://quantumai.google/roadmap"
+      },
+      {
+        "entity": "Google",
+        "page": 2,
+        "role_in_text": "provider of quantum AI services and information",
+        "occurrence_sentence": "https://quantumai.google/research",
+        "source_document": "https://quantumai.google/roadmap"
+      },
+      {
+        "entity": "Google",
+        "page": 2,
+        "role_in_text": "provider of quantum AI services and information",
+        "occurrence_sentence": "https://www.google.com/about/careers/applications/jobs/results/?company=Google&employment_type=FULL_TIME&employment_type=PART_TIME&location=California,%20USA&location=Munich,%20Germany&location=Seattle,%20WA,%20USA&location=Zurich,%20Sw",
+        "source_document": "https://quantumai.google/roadmap"
+      },
+      {
+        "entity": "Google",
+        "page": 3,
+        "role_in_text": "provider of quantum computing resources and information",
+        "occurrence_sentence": "Google Quantum AI",
+        "source_document": "https://quantumai.google/roadmap"
+      },
+      {
+        "entity": "Google",
+        "page": 4,
+        "role_in_text": "developer of quantum AI roadmap",
+        "occurrence_sentence": "![Google Developers](https://www.gstatic.com/devrel-devsite/prod/v20cdb2337f656fc22df509b6d5402b3836a1b55334a8eea3301423a87970c4d5/quantum/images/lockup-google-for-developers.svg)",
+        "source_document": "https://quantumai.google/roadmap"
+      },
+      {
+        "entity": "Google",
+        "page": 1,
+        "role_in_text": "provider of quantum computing software",
+        "occurrence_sentence": "Learn",
+        "source_document": "https://quantumai.google/software"
+      },
+      {
+        "entity": "Google",
+        "page": 2,
+        "role_in_text": "provider of quantum AI software and research",
+        "occurrence_sentence": "Google Quantum AI",
+        "source_document": "https://quantumai.google/software"
+      },
+      {
+        "entity": "Google",
+        "page": 5,
+        "role_in_text": "Provider of quantum software stack",
+        "occurrence_sentence": "Our software stack includes open-source frameworks, simulators, device interfaces, and utility libraries.",
+        "source_document": "https://quantumai.google/software"
+      },
+      {
+        "entity": "Google",
+        "page": 6,
+        "role_in_text": "developer of quantum computing software and libraries",
+        "occurrence_sentence": "We're looking for talented people to join our team to push the state of the art in quantum computing.",
+        "source_document": "https://quantumai.google/software"
+      },
+      {
+        "entity": "Google",
+        "page": 6,
+        "role_in_text": "developer of quantum computing software and libraries",
+        "occurrence_sentence": "[ open_in_new Join us",
+        "source_document": "https://quantumai.google/software"
+      },
+      {
+        "entity": "Google",
+        "page": 7,
+        "role_in_text": "company",
+        "occurrence_sentence": "Join us",
+        "source_document": "https://quantumai.google/software"
+      },
+      {
+        "entity": "Google",
+        "page": 7,
+        "role_in_text": "company",
+        "occurrence_sentence": "About Google",
+        "source_document": "https://quantumai.google/software"
+      },
+      {
+        "entity": "Google",
+        "page": 8,
+        "role_in_text": "developer of quantum software",
+        "occurrence_sentence": "![Google Developers](https://www.gstatic.com/devrel-devsite/prod/v20cdb2337f656fc22df509b6d5402b3836a1b55334a8eea3301423a87970c4d5/quantum/images/lockup-google-for-developers.svg)",
+        "source_document": "https://quantumai.google/software"
+      },
+      {
+        "entity": "Google",
+        "page": 1,
+        "role_in_text": "provider of quantum computing resources and information",
+        "occurrence_sentence": "Google Quantum AI",
+        "source_document": "https://quantumai.google/cirq/hardware"
+      },
+      {
+        "entity": "Google",
+        "page": 1,
+        "role_in_text": "provider of quantum computing resources and information",
+        "occurrence_sentence": "https://quantumai.google/",
+        "source_document": "https://quantumai.google/cirq/hardware"
+      },
+      {
+        "entity": "Google",
+        "page": 1,
+        "role_in_text": "",
+        "occurrence_sentence": "",
+        "source_document": "https://quantumai.google/cirq/hardware"
+      },
+      {
+        "entity": "Google",
+        "page": 2,
+        "role_in_text": "provider of quantum computing resources and information",
+        "occurrence_sentence": "Sign in",
+        "source_document": "https://quantumai.google/cirq/hardware"
+      },
+      {
+        "entity": "Google",
+        "page": 3,
+        "role_in_text": "provider of quantum AI services",
+        "occurrence_sentence": "Google Quantum AI",
+        "source_document": "https://quantumai.google/cirq/hardware"
+      },
+      {
+        "entity": "Google",
+        "page": 6,
+        "role_in_text": "provider of quantum computing resources and information",
+        "occurrence_sentence": "Google Quantum AI",
+        "source_document": "https://quantumai.google/cirq/hardware"
+      },
+      {
+        "entity": "Google",
+        "page": 7,
+        "role_in_text": "provider of quantum hardware and services",
+        "occurrence_sentence": "* [ Google Quantum AI",
+        "source_document": "https://quantumai.google/cirq/hardware"
+      },
+      {
+        "entity": "Google",
+        "page": 10,
+        "role_in_text": "provider of quantum AI hardware and software",
+        "occurrence_sentence": "Sampler objects to run on Pasqal hardware.",
+        "source_document": "https://quantumai.google/cirq/hardware"
+      },
+      {
+        "entity": "Google",
+        "page": 11,
+        "role_in_text": "developer of quantum technologies",
+        "occurrence_sentence": "Google Developers",
+        "source_document": "https://quantumai.google/cirq/hardware"
+      },
+      {
+        "entity": "Google",
+        "page": 1,
+        "role_in_text": "Provider of the Qualtran tool",
+        "occurrence_sentence": "Qualtran combines a set of abstractions for representing quantum programs, a Python library of quantum algorithms written using those abstractions, and facilities for analyzing the algorithms.",
+        "source_document": "https://quantumai.google/qualtran"
+      },
+      {
+        "entity": "Google",
+        "page": 2,
+        "role_in_text": "provider of the Qualtran tool",
+        "occurrence_sentence": "source_document: \"https://quantumai.google/qualtran\"",
+        "source_document": "https://quantumai.google/qualtran"
+      },
+      {
+        "entity": "Google",
+        "page": 3,
+        "role_in_text": "provider of quantum AI resources",
+        "occurrence_sentence": "https://quantumai.google/qualtran",
+        "source_document": "https://quantumai.google/qualtran"
+      },
+      {
+        "entity": "Google",
+        "page": 4,
+        "role_in_text": "developer of Qualtran",
+        "occurrence_sentence": "[ ![Google Developers](https://www.gstatic.com/devrel-devsite/prod/v20cdb2337f656fc22df509b6d5402b3836a1b55334a8eea3301423a87970c4d5/quantum/images/lockup-google-for-developers.svg) ](https://developers.google.com/)",
+        "source_document": "https://quantumai.google/qualtran"
+      },
+      {
+        "entity": "Google",
+        "page": 1,
+        "role_in_text": "provider of quantum computing resources",
+        "occurrence_sentence": "[ ![Google Quantum AI](https://www.gstatic.com/devrel-devsite/prod/v20cdb2337f656fc22df509b6d5402b3836a1b55334a8eea3301423a87970c4d5/quantum/images/lockup.svg) ](https://quantumai.google/)",
+        "source_document": "https://quantumai.google/resources"
+      },
+      {
+        "entity": "Google",
+        "page": 2,
+        "role_in_text": "provider of quantum AI resources and careers",
+        "occurrence_sentence": "Software  * [ Open Source Tools  ](https://quantumai.google/software)  * [ Cirq Documentation  ](https://quantumai.google/cirq)",
+        "source_document": "https://quantumai.google/resources"
+      },
+      {
+        "entity": "Google",
+        "page": 2,
+        "role_in_text": "provider of quantum AI resources and careers",
+        "occurrence_sentence": "[ Research",
+        "source_document": "https://quantumai.google/resources"
+      },
+      {
+        "entity": "Google",
+        "page": 3,
+        "role_in_text": "provider of quantum computing resources and information",
+        "occurrence_sentence": "Google Quantum AI",
+        "source_document": "https://quantumai.google/resources"
+      },
+      {
+        "entity": "Google",
+        "page": 7,
+        "role_in_text": "provider of quantum AI resources",
+        "occurrence_sentence": "Explore helpful how-to videos from our Quantum AI team on programming quantum computers, scientific breakthroughs, and new tools to use for your next quantum project.",
+        "source_document": "https://quantumai.google/resources"
+      },
+      {
+        "entity": "Google",
+        "page": 8,
+        "role_in_text": "provider of quantum AI resources",
+        "occurrence_sentence": "https://quantumai.google/resources",
+        "source_document": "https://quantumai.google/resources"
+      },
+      {
+        "entity": "Google",
+        "page": 1,
+        "role_in_text": "provider of quantum computing resources and information",
+        "occurrence_sentence": "[ ![Google Quantum AI](https://www.gstatic.com/devrel-devsite/prod/v20cdb2337f656fc22df509b6d5402b3836a1b55334a8eea3301423a87970c4d5/quantum/images/lockup.svg) ](https://quantumai.google/)",
+        "source_document": "https://quantumai.google/whatisqc"
+      },
+      {
+        "entity": "Google",
+        "page": 2,
+        "role_in_text": "Provider of quantum AI services and research",
+        "occurrence_sentence": "https://quantumai.google/whatisqc",
+        "source_document": "https://quantumai.google/whatisqc"
+      },
+      {
+        "entity": "Google",
+        "page": 2,
+        "role_in_text": "Provider of quantum AI services and research",
+        "occurrence_sentence": "https://www.google.com/about/careers/applications/jobs/results/?company=Google&employment_type=FULL_TIME&employment_type=PART_TIME&location=California,%20USA&location=Munich,%20Germany&location=Seattle,%20WA,%20USA&location=Zur",
+        "source_document": "https://quantumai.google/whatisqc"
+      },
+      {
+        "entity": "Google",
+        "page": 3,
+        "role_in_text": "provider of quantum computing resources and information",
+        "occurrence_sentence": "* [ What is quantum computing?  ](https://quantumai.google/whatisqc)",
+        "source_document": "https://quantumai.google/whatisqc"
+      },
+      {
+        "entity": "Google",
+        "page": 6,
+        "role_in_text": "developer of quantum computing technologies",
+        "occurrence_sentence": "Today's quantum processors are powerful enough to accomplish some contrived tasks more efficiently than the fastest classical supercomputers.",
+        "source_document": "https://quantumai.google/whatisqc"
+      },
+      {
+        "entity": "Google",
+        "page": 7,
+        "role_in_text": "developer of quantum computing technologies",
+        "occurrence_sentence": "We've developed a framework based on a circuit's 'effective quantum volume' to evaluate the computational cost of quantum circuits that can be run on today's noisy devices.",
+        "source_document": "https://quantumai.google/whatisqc"
+      },
+      {
+        "entity": "Google",
+        "page": 8,
+        "role_in_text": "provider of quantum computing information",
+        "occurrence_sentence": "Learn about our quantum systems",
+        "source_document": "https://quantumai.google/whatisqc"
+      },
+      {
+        "entity": "Google",
+        "page": 1,
+        "role_in_text": "provider of quantum computing resources and information",
+        "occurrence_sentence": "Google Quantum AI",
+        "source_document": "https://quantumai.google/reference/python/cirq/all_symbols"
+      },
+      {
+        "entity": "Google",
+        "page": 1,
+        "role_in_text": "provider of quantum computing resources and information",
+        "occurrence_sentence": "Google Quantum AI",
+        "source_document": "https://quantumai.google/reference/python/cirq/all_symbols"
+      },
+      {
+        "entity": "Google",
+        "page": 1,
+        "role_in_text": "",
+        "occurrence_sentence": "",
+        "source_document": "https://quantumai.google/reference/python/cirq/all_symbols"
+      },
+      {
+        "entity": "Google",
+        "page": 2,
+        "role_in_text": "provider of quantum AI resources",
+        "occurrence_sentence": "Sign in",
+        "source_document": "https://quantumai.google/reference/python/cirq/all_symbols"
+      },
+      {
+        "entity": "Google",
+        "page": 2,
+        "role_in_text": "provider of quantum AI resources",
+        "occurrence_sentence": "[ Research",
+        "source_document": "https://quantumai.google/reference/python/cirq/all_symbols"
+      },
+      {
+        "entity": "Google",
+        "page": 3,
+        "role_in_text": "provider of quantum AI resources",
+        "occurrence_sentence": "[ ![Google Quantum AI](https://www.gstatic.com/devrel-devsite/prod/v20cdb2337f656fc22df509b6d5402b3836a1b55334a8eea3301423a87970c4d5/quantum/images/lockup.svg) ](https://quantumai.google/)",
+        "source_document": "https://quantumai.google/reference/python/cirq/all_symbols"
+      },
+      {
+        "entity": "Google",
+        "page": 4,
+        "role_in_text": "Company",
+        "occurrence_sentence": "https://quantumai.google/research)",
+        "source_document": "https://quantumai.google/reference/python/cirq/all_symbols"
+      },
+      {
+        "entity": "Google",
+        "page": 4,
+        "role_in_text": "Company",
+        "occurrence_sentence": "https://www.google.com/about/careers/applications/jobs/results/?company=Google&employment_type=FULL_TIME&employment_type=PART_TIME&location=California,%20USA&location=Munich,%20Germany&location=Seattle,%20WA,%20USA&location=Zurich,%20Switzerland&q=quantum&sort",
+        "source_document": "https://quantumai.google/reference/python/cirq/all_symbols"
+      },
+      {
+        "entity": "Google",
+        "page": 9,
+        "role_in_text": "provider of quantum computing resources and documentation",
+        "occurrence_sentence": "google/reference/python/cirq/DeviceMetadata",
+        "source_document": "https://quantumai.google/reference/python/cirq/all_symbols"
+      },
+      {
+        "entity": "Google",
+        "page": 15,
+        "role_in_text": "provider of quantum computing resources and documentation",
+        "occurrence_sentence": "https://quantumai.google/reference/python/cirq/all_symbols",
+        "source_document": "https://quantumai.google/reference/python/cirq/all_symbols"
+      },
+      {
+        "entity": "Google",
+        "page": 44,
+        "role_in_text": "source of the document",
+        "occurrence_sentence": "https://quantumai.google/reference/python/cirq/all_symbols",
+        "source_document": "https://quantumai.google/reference/python/cirq/all_symbols"
+      },
+      {
+        "entity": "Google",
+        "page": 46,
+        "role_in_text": "source of the document",
+        "occurrence_sentence": "https://quantumai.google/reference/python/cirq/all_symbols",
+        "source_document": "https://quantumai.google/reference/python/cirq/all_symbols"
+      },
+      {
+        "entity": "Google",
+        "page": 48,
+        "role_in_text": "provider of quantum AI reference documentation",
+        "occurrence_sentence": "cirq/contrib/qcircuit/qcircuit_diagram_info/fallback_qcircuit_diagram_info)",
+        "source_document": "https://quantumai.google/reference/python/cirq/all_symbols"
+      },
+      {
+        "entity": "Google",
+        "page": 49,
+        "role_in_text": "provider of quantum computing resources and documentation",
+        "occurrence_sentence": "tumai.google/reference/python/cirq/contrib/quirk/quirk_gate/ccx_to_quirk_op",
+        "source_document": "https://quantumai.google/reference/python/cirq/all_symbols"
+      },
+      {
+        "entity": "Google",
+        "page": 56,
+        "role_in_text": "source of the document",
+        "occurrence_sentence": "ai.google/reference/python/cirq/testing/consistent_protocols/assert_eigen_shifts_is_consistent_with_eigen_components)",
+        "source_document": "https://quantumai.google/reference/python/cirq/all_symbols"
+      },
+      {
+        "entity": "Google",
+        "page": 57,
+        "role_in_text": "provider of quantum AI reference documentation",
+        "occurrence_sentence": "https://quantumai.google/reference/python/cirq/all_symbols",
+        "source_document": "https://quantumai.google/reference/python/cirq/all_symbols"
+      },
+      {
+        "entity": "Google",
+        "page": 58,
+        "role_in_text": "provider of quantum computing resources",
+        "occurrence_sentence": "i.google/reference/python/cirq_aqt",
+        "source_document": "https://quantumai.google/reference/python/cirq/all_symbols"
+      },
+      {
+        "entity": "Google",
+        "page": 59,
+        "role_in_text": "provider of quantum computing resources and documentation",
+        "occurrence_sentence": "https://quantumai.google/reference/python/cirq/all_symbols",
+        "source_document": "https://quantumai.google/reference/python/cirq/all_symbols"
+      },
+      {
+        "entity": "Google",
+        "page": 61,
+        "role_in_text": "provider of quantum computing resources and documentation",
+        "occurrence_sentence": "https://quantumai.google/reference/python/cirq_google/api/v2/device_pb2/DeviceSpecification",
+        "source_document": "https://quantumai.google/reference/python/cirq/all_symbols"
+      },
+      {
+        "entity": "Google",
+        "page": 62,
+        "role_in_text": "provider of quantum computing resources",
+        "occurrence_sentence": "https://quantumai.google/reference/python/cirq_google/api/v2/device_pb2/GateSpecification/PhysicalZPow",
+        "source_document": "https://quantumai.google/reference/python/cirq/all_symbols"
+      },
+      {
+        "entity": "Google",
+        "page": 65,
+        "role_in_text": "provider of quantum computing resources and documentation",
+        "occurrence_sentence": "https://quantumai.google/reference/python/cirq_google/api/v2/ndarrays_pb2/BitArray",
+        "source_document": "https://quantumai.google/reference/python/cirq/all_symbols"
+      },
+      {
+        "entity": "Google",
+        "page": 66,
+        "role_in_text": "provider of quantum computing resources and documentation",
+        "occurrence_sentence": "https://quantumai.google/reference/python/cirq_google/api/v2/program_pb2/ArgMapping",
+        "source_document": "https://quantumai.google/reference/python/cirq/all_symbols"
+      },
+      {
+        "entity": "Google",
+        "page": 70,
+        "role_in_text": "provider of quantum computing resources",
+        "occurrence_sentence": "https://quantumai.google/reference/python/cirq_google/api/v2/program_pb2/RepeatedInt64",
+        "source_document": "https://quantumai.google/reference/python/cirq/all_symbols"
+      },
+      {
+        "entity": "Google",
+        "page": 71,
+        "role_in_text": "provider of quantum computing resources and documentation",
+        "occurrence_sentence": "le/reference/python/cirq_google/api/v2/result_pb2)",
+        "source_document": "https://quantumai.google/reference/python/cirq/all_symbols"
+      },
+      {
+        "entity": "Google",
+        "page": 72,
+        "role_in_text": "provider of quantum computing resources and documentation",
+        "occurrence_sentence": "https://quantumai.google/reference/python/cirq_google/api/v2/run_context_pb2/DeviceParametersDiff/GenericValue",
+        "source_document": "https://quantumai.google/reference/python/cirq/all_symbols"
+      },
+      {
+        "entity": "Google",
+        "page": 73,
+        "role_in_text": "provider of quantum computing resources and APIs",
+        "occurrence_sentence": "https://quantumai.google/reference/python/cirq_google/api/v2/sweeps/metadata_from_proto",
+        "source_document": "https://quantumai.google/reference/python/cirq/all_symbols"
+      },
+      {
+        "entity": "Google",
+        "page": 75,
+        "role_in_text": "provider of quantum computing resources",
+        "occurrence_sentence": "rRequest](https://quantumai.google/reference/python/cirq_google/cloud/quantum/GetQuantumProcessorRequest)",
+        "source_document": "https://quantumai.google/reference/python/cirq/all_symbols"
+      },
+      {
+        "entity": "Google",
+        "page": 78,
+        "role_in_text": "provider of quantum computing resources",
+        "occurrence_sentence": "antumProcessor/Health)",
+        "source_document": "https://quantumai.google/reference/python/cirq/all_symbols"
+      },
+      {
+        "entity": "Google",
+        "page": 79,
+        "role_in_text": "provider of quantum computing resources and services",
+        "occurrence_sentence": "https://quantumai.google/reference/python/cirq_google/cloud/quantum/QuantumTimeSlot/ReservationConfig",
+        "source_document": "https://quantumai.google/reference/python/cirq/all_symbols"
+      },
+      {
+        "entity": "Google",
+        "page": 80,
+        "role_in_text": "provider of quantum computing resources and tools",
+        "occurrence_sentence": "https://quantumai.google/reference/python/cirq_google/devices",
+        "source_document": "https://quantumai.google/reference/python/cirq/all_symbols"
+      },
+      {
+        "entity": "Google",
+        "page": 81,
+        "role_in_text": "provider of quantum computing resources",
+        "occurrence_sentence": "https://quantumai.google/reference/python/cirq_google/engine/AbstractLocalJob",
+        "source_document": "https://quantumai.google/reference/python/cirq/all_symbols"
+      },
+      {
+        "entity": "Google",
+        "page": 82,
+        "role_in_text": "provider of quantum computing resources and tools",
+        "occurrence_sentence": "ogle/engine/ProcessorSampler)",
+        "source_document": "https://quantumai.google/reference/python/cirq/all_symbols"
+      },
+      {
+        "entity": "Google",
+        "page": 87,
+        "role_in_text": "provider of quantum computing resources and documentation",
+        "occurrence_sentence": "hon/cirq_google/engine/simulated_local_engine",
+        "source_document": "https://quantumai.google/reference/python/cirq/all_symbols"
+      },
+      {
+        "entity": "Google",
+        "page": 88,
+        "role_in_text": "provider of quantum computing resources and documentation",
+        "occurrence_sentence": "https://quantumai.google/reference/python/cirq/all_symbols",
+        "source_document": "https://quantumai.google/reference/python/cirq/all_symbols"
+      },
+      {
+        "entity": "Google",
+        "page": 89,
+        "role_in_text": "provider of quantum computing resources and documentation",
+        "occurrence_sentence": "https://quantumai.google/reference/python/cirq/all_symbols",
+        "source_document": "https://quantumai.google/reference/python/cirq/all_symbols"
+      },
+      {
+        "entity": "Google",
+        "page": 90,
+        "role_in_text": "provider of quantum computing resources and documentation",
+        "occurrence_sentence": "https://quantumai.google/reference/python/cirq/all_symbols",
+        "source_document": "https://quantumai.google/reference/python/cirq/all_symbols"
+      },
+      {
+        "entity": "Google",
+        "page": 92,
+        "role_in_text": "provider of quantum computing resources and documentation",
+        "occurrence_sentence": "nalGate)\n    * [InternalTag](https://quantumai.google/reference/python/cirq_google/ops/InternalTag)",
+        "source_document": "https://quantumai.google/reference/python/cirq/all_symbols"
+      },
+      {
+        "entity": "Google",
+        "page": 93,
+        "role_in_text": "provider of quantum computing resources and documentation",
+        "occurrence_sentence": "https://quantumai.google/reference/python/cirq/all_symbols",
+        "source_document": "https://quantumai.google/reference/python/cirq/all_symbols"
+      },
+      {
+        "entity": "Google",
+        "page": 95,
+        "role_in_text": "provider of quantum computing resources and tools",
+        "occurrence_sentence": "https://quantumai.google/reference/python/cirq/all_symbols",
+        "source_document": "https://quantumai.google/reference/python/cirq/all_symbols"
+      },
+      {
+        "entity": "Google",
+        "page": 96,
+        "role_in_text": "Provider of quantum computing resources and documentation",
+        "occurrence_sentence": "ceParameter](https://quantumai.google/reference/python/cirq_google/study/DeviceParameter)",
+        "source_document": "https://quantumai.google/reference/python/cirq/all_symbols"
+      },
+      {
+        "entity": "Google",
+        "page": 97,
+        "role_in_text": "provider of quantum computing resources and documentation",
+        "occurrence_sentence": "known_2q_op_to_sycamore_operations)",
+        "source_document": "https://quantumai.google/reference/python/cirq/all_symbols"
+      },
+      {
+        "entity": "Google",
+        "page": 98,
+        "role_in_text": "provider of quantum computing resources and documentation",
+        "occurrence_sentence": "tumai.google/reference/python/cirq_google/workflow/BitstringsMeasurement",
+        "source_document": "https://quantumai.google/reference/python/cirq/all_symbols"
+      },
+      {
+        "entity": "Google",
+        "page": 105,
+        "role_in_text": "provider of quantum computing resources and tools",
+        "occurrence_sentence": "Google Quantum AI",
+        "source_document": "https://quantumai.google/reference/python/cirq/all_symbols"
+      },
+      {
+        "entity": "Google",
+        "page": 106,
+        "role_in_text": "provider of quantum AI services",
+        "occurrence_sentence": "* [ Google Quantum AI ](https://quantumai.google/)",
+        "source_document": "https://quantumai.google/reference/python/cirq/all_symbols"
+      },
+      {
+        "entity": "Google",
+        "page": 110,
+        "role_in_text": "provider of quantum computing resources",
+        "occurrence_sentence": "uantumai.google/reference/python/cirq/CliffordSimulatorStepResult",
+        "source_document": "https://quantumai.google/reference/python/cirq/all_symbols"
+      },
+      {
+        "entity": "Google",
+        "page": 127,
+        "role_in_text": "source of the documentation",
+        "occurrence_sentence": "https://quantumai.google/reference/python/cirq/all_symbols",
+        "source_document": "https://quantumai.google/reference/python/cirq/all_symbols"
+      },
+      {
+        "entity": "Google",
+        "page": 145,
+        "role_in_text": "provider of the quantum computing reference",
+        "occurrence_sentence": "https://quantumai.google/reference/python/cirq/all_symbols",
+        "source_document": "https://quantumai.google/reference/python/cirq/all_symbols"
+      },
+      {
+        "entity": "Google",
+        "page": 173,
+        "role_in_text": "provider of the quantum computing reference documentation",
+        "occurrence_sentence": "ogle/reference/python/cirq/testing/FakePrinter",
+        "source_document": "https://quantumai.google/reference/python/cirq/all_symbols"
+      },
+      {
+        "entity": "Google",
+        "page": 176,
+        "role_in_text": "provider of the quantum AI reference documentation",
+        "occurrence_sentence": "https://quantumai.google/reference/python/cirq/all_symbols",
+        "source_document": "https://quantumai.google/reference/python/cirq/all_symbols"
+      },
+      {
+        "entity": "Google",
+        "page": 177,
+        "role_in_text": "developer of quantum AI",
+        "occurrence_sentence": "For details, see the [Google Developers Site Policies](https://developers.google.com/site-policies).",
+        "source_document": "https://quantumai.google/reference/python/cirq/all_symbols"
+      },
+      {
+        "entity": "Google",
+        "page": 177,
+        "role_in_text": "developer of quantum AI",
+        "occurrence_sentence": "[ About Google",
+        "source_document": "https://quantumai.google/reference/python/cirq/all_symbols"
+      },
+      {
+        "entity": "Google",
+        "page": 178,
+        "role_in_text": "developer of quantum AI tools",
+        "occurrence_sentence": "![Google Developers](https://www.gstatic.com/devrel-devsite/prod/v20cdb2337f656fc22df509b6d5402b3836a1b55334a8eea3301423a87970c4d5/quantum/images/lockup-google-for-developers.svg)",
+        "source_document": "https://quantumai.google/reference/python/cirq/all_symbols"
+      },
+      {
+        "entity": "Google",
+        "page": 1,
+        "role_in_text": "Provider of quantum computing resources and information",
+        "occurrence_sentence": "Google Quantum AI",
+        "source_document": "https://quantumai.google/cirq/simulate"
+      },
+      {
+        "entity": "Google",
+        "page": 1,
+        "role_in_text": "Provider of quantum computing resources and information",
+        "occurrence_sentence": "Google Quantum AI",
+        "source_document": "https://quantumai.google/cirq/simulate"
+      },
+      {
+        "entity": "Google",
+        "page": 1,
+        "role_in_text": "",
+        "occurrence_sentence": "",
+        "source_document": "https://quantumai.google/cirq/simulate"
+      },
+      {
+        "entity": "Google",
+        "page": 2,
+        "role_in_text": "provider of quantum AI services",
+        "occurrence_sentence": "Sign in",
+        "source_document": "https://quantumai.google/cirq/simulate"
+      },
+      {
+        "entity": "Google",
+        "page": 3,
+        "role_in_text": "Provider of quantum computing resources and information",
+        "occurrence_sentence": "Google Quantum AI",
+        "source_document": "https://quantumai.google/cirq/simulate"
+      },
+      {
+        "entity": "Google",
+        "page": 4,
+        "role_in_text": "provider of quantum computing resources and information",
+        "occurrence_sentence": "https://quantumai.google/research)",
+        "source_document": "https://quantumai.google/cirq/simulate"
+      },
+      {
+        "entity": "Google",
+        "page": 4,
+        "role_in_text": "provider of quantum computing resources and information",
+        "occurrence_sentence": "* [ Careers",
+        "source_document": "https://quantumai.google/cirq/simulate"
+      },
+      {
+        "entity": "Google",
+        "page": 5,
+        "role_in_text": "provider of quantum computing resources and tools",
+        "occurrence_sentence": "* [ Google Quantum AI ](https://quantumai.google/)",
+        "source_document": "https://quantumai.google/cirq/simulate"
+      },
+      {
+        "entity": "Google",
+        "page": 7,
+        "role_in_text": "provider of quantum computing resources",
+        "occurrence_sentence": "Compute the effects of a quantum circuit, by simulating a quantum computer with a classical one.",
+        "source_document": "https://quantumai.google/cirq/simulate"
+      },
+      {
+        "entity": "Google",
+        "page": 7,
+        "role_in_text": "provider of quantum computing resources",
+        "occurrence_sentence": "Simulate a perfectly noiseless quantum computer.",
+        "source_document": "https://quantumai.google/cirq/simulate"
+      },
+      {
+        "entity": "Google",
+        "page": 8,
+        "role_in_text": "developer of quantum AI tools",
+        "occurrence_sentence": "For details, see the [Google Developers Site Policies](https://developers.google.com/site-policies).",
+        "source_document": "https://quantumai.google/cirq/simulate"
+      },
+      {
+        "entity": "Google",
+        "page": 9,
+        "role_in_text": "developer of quantum AI tools",
+        "occurrence_sentence": "![Google Developers](https://www.gstatic.com/devrel-devsite/prod/v20cdb2337f656fc22df509b6d5402b3836a1b55334a8eea3301423a87970c4d5/quantum/images/lockup-google-for-developers.svg)",
+        "source_document": "https://quantumai.google/cirq/simulate"
+      },
+      {
+        "entity": "Google",
+        "page": 1,
+        "role_in_text": "provider of quantum computing resources and information",
+        "occurrence_sentence": "Google Quantum AI",
+        "source_document": "https://quantumai.google/cirq/noise"
+      },
+      {
+        "entity": "Google",
+        "page": 1,
+        "role_in_text": "provider of quantum computing resources and information",
+        "occurrence_sentence": "Google Quantum AI",
+        "source_document": "https://quantumai.google/cirq/noise"
+      },
+      {
+        "entity": "Google",
+        "page": 1,
+        "role_in_text": "",
+        "occurrence_sentence": "",
+        "source_document": "https://quantumai.google/cirq/noise"
+      },
+      {
+        "entity": "Google",
+        "page": 2,
+        "role_in_text": "provider of quantum AI services",
+        "occurrence_sentence": "Sign in",
+        "source_document": "https://quantumai.google/cirq/noise"
+      },
+      {
+        "entity": "Google",
+        "page": 2,
+        "role_in_text": "provider of quantum AI services",
+        "occurrence_sentence": "[ ![Google Quantum AI",
+        "source_document": "https://quantumai.google/cirq/noise"
+      },
+      {
+        "entity": "Google",
+        "page": 3,
+        "role_in_text": "provider of quantum AI resources",
+        "occurrence_sentence": "Google Quantum AI",
+        "source_document": "https://quantumai.google/cirq/noise"
+      },
+      {
+        "entity": "Google",
+        "page": 3,
+        "role_in_text": "provider of quantum AI resources",
+        "occurrence_sentence": "https://quantumai.google/cirq/noise",
+        "source_document": "https://quantumai.google/cirq/noise"
+      },
+      {
+        "entity": "Google",
+        "page": 4,
+        "role_in_text": "Company",
+        "occurrence_sentence": "https://www.google.com/about/careers/applications/jobs/results/?company=Google&employment_type=FULL_TIME&employment_type=PART_TIME&location=California,%20USA&location=Munich,%20Germany&location=Seattle,%20WA,%20USA&location=Zurich,%20Switzerland&q=quantum&sort_by=relevance&src=Online%2FGoogle%20Website%2FQuantum_AI&utm_campaign=Quantum_AI&utm_medium=Google%20Website&utm_source=online",
+        "source_document": "https://quantumai.google/cirq/noise"
+      },
+      {
+        "entity": "Google",
+        "page": 5,
+        "role_in_text": "provider of quantum AI tools and documentation",
+        "occurrence_sentence": "* [ Google Quantum AI ](https://quantumai.google/)",
+        "source_document": "https://quantumai.google/cirq/noise"
+      },
+      {
+        "entity": "Google",
+        "page": 6,
+        "role_in_text": "developer of Cirq and Google Quantum AI",
+        "occurrence_sentence": "* [ Google Quantum AI ](https://quantumai.google/)",
+        "source_document": "https://quantumai.google/cirq/noise"
+      },
+      {
+        "entity": "Google",
+        "page": 7,
+        "role_in_text": "developer of Cirq and provider of quantum computing resources",
+        "occurrence_sentence": "Running circuits on quantum hardware devices means dealing with the noise those devices introduce to the computation. Cirq provides the following ways of managing that noise, to improve the quality of the measured results.",
+        "source_document": "https://quantumai.google/cirq/noise"
+      },
+      {
+        "entity": "Google",
+        "page": 8,
+        "role_in_text": "provider of quantum AI services",
+        "occurrence_sentence": "Google Developers",
+        "source_document": "https://quantumai.google/cirq/noise"
+      },
+      {
+        "entity": "Google",
+        "page": 8,
+        "role_in_text": "provider of quantum AI services",
+        "occurrence_sentence": "About Google",
+        "source_document": "https://quantumai.google/cirq/noise"
+      },
+      {
+        "entity": "Google",
+        "page": 1,
+        "role_in_text": "provider of quantum computing resources and information",
+        "occurrence_sentence": "Google Quantum AI",
+        "source_document": "https://quantumai.google/openfermion"
+      },
+      {
+        "entity": "Google",
+        "page": 2,
+        "role_in_text": "provider of quantum AI services",
+        "occurrence_sentence": "Sign in",
+        "source_document": "https://quantumai.google/openfermion"
+      },
+      {
+        "entity": "Google",
+        "page": 3,
+        "role_in_text": "Provider of the OpenFermion library and quantum computing resources",
+        "occurrence_sentence": "OpenFermion is a library for compiling and analyzing quantum algorithms to simulate fermionic systems, including quantum chemistry.",
+        "source_document": "https://quantumai.google/openfermion"
+      },
+      {
+        "entity": "Google",
+        "page": 5,
+        "role_in_text": "provider of the OpenFermion library",
+        "occurrence_sentence": "OpenFermion is a library for compiling and analyzing quantum algorithms to simulate fermionic systems, including quantum chemistry. The package provides everything from efficient data structures for representing fermionic operators to fermionic circuit primitives for execution on quantum devices.",
+        "source_document": "https://quantumai.google/openfermion"
+      },
+      {
+        "entity": "Google",
+        "page": 6,
+        "role_in_text": "developer and host of OpenFermion",
+        "occurrence_sentence": "OpenFermion is a library for compiling and analyzing quantum algorithms to simulate fermionic systems, including quantum chemistry.",
+        "source_document": "https://quantumai.google/openfermion"
+      },
+      {
+        "entity": "Google",
+        "page": 6,
+        "role_in_text": "developer and host of OpenFermion",
+        "occurrence_sentence": "Announcing Openfermion, an open source platform for translating problems in chemistry and materials science into quantum circuits that can be executed on existing platforms.",
+        "source_document": "https://quantumai.google/openfermion"
+      },
+      {
+        "entity": "Google",
+        "page": 1,
+        "role_in_text": "provider of quantum computing research and resources",
+        "occurrence_sentence": "Learn",
+        "source_document": "https://quantumai.google/research"
+      },
+      {
+        "entity": "Google",
+        "page": 2,
+        "role_in_text": "Company",
+        "occurrence_sentence": "https://www.google.com/about/careers/applications/jobs/results/?company=Google&employment_type=FULL_TIME&employment_type=PART_TIME&location=California,%20USA&location=Munich,%20Germany&location=Seattle,%20WA,%20USA&location=Zurich,%20Switzerland&q=quantum&sort_by=relevance&src=Online%2FGoogle%20Website%2FQuantum_AI&utm_campaign=Quantum_AI&utm_medium=Google%20Website&utm_source=online",
+        "source_document": "https://quantumai.google/research"
+      },
+      {
+        "entity": "Google",
+        "page": 3,
+        "role_in_text": "provider of quantum computing resources and research",
+        "occurrence_sentence": "Google Quantum AI",
+        "source_document": "https://quantumai.google/research"
+      },
+      {
+        "entity": "Google",
+        "page": 4,
+        "role_in_text": "owner of the website",
+        "occurrence_sentence": "Publishing our work allows us to share ideas and work collaboratively to advance the field of quantum computing.",
+        "source_document": "https://quantumai.google/research"
+      },
+      {
+        "entity": "Google",
+        "page": 1,
+        "role_in_text": "provider of quantum computing resources and information",
+        "occurrence_sentence": "Learn  * [ What is quantum computing?  ](https://quantumai.google/whatisqc)",
+        "source_document": "https://quantumai.google/willowearlyaccess"
+      },
+      {
+        "entity": "Google",
+        "page": 2,
+        "role_in_text": "provider of quantum AI services",
+        "occurrence_sentence": "https://quantumai.google/willowearlyaccess",
+        "source_document": "https://quantumai.google/willowearlyaccess"
+      },
+      {
+        "entity": "Google",
+        "page": 2,
+        "role_in_text": "provider of quantum AI services",
+        "occurrence_sentence": "https://www.google.com/about/careers/applications/jobs/results/?company=Google&employment_type=FULL_TIME&employment_type=PART_TIME&location=California,%20USA&location=Munich,%20Germany&location=Seattle,%20WA,%20USA&location=Zurich,%20",
+        "source_document": "https://quantumai.google/willowearlyaccess"
+      },
+      {
+        "entity": "Google",
+        "page": 4,
+        "role_in_text": "provider of the Willow quantum processor",
+        "occurrence_sentence": "Propose an experiment to run on Google's Willow quantum processor.",
+        "source_document": "https://quantumai.google/willowearlyaccess"
+      },
+      {
+        "entity": "Google",
+        "page": 4,
+        "role_in_text": "provider of the Willow quantum processor",
+        "occurrence_sentence": "Upload your proposal to our intake form.",
+        "source_document": "https://quantumai.google/willowearlyaccess"
+      },
+      {
+        "entity": "Google",
+        "page": 5,
+        "role_in_text": "Provider of the Willow Access Program",
+        "occurrence_sentence": "source_document: \"https://quantumai.google/willowearlyaccess\"",
+        "source_document": "https://quantumai.google/willowearlyaccess"
+      },
+      {
+        "entity": "Google",
+        "page": 6,
+        "role_in_text": "provider of the Willow Access Program",
+        "occurrence_sentence": "Follow this page to stay updated on the Willow Access Program.",
+        "source_document": "https://quantumai.google/willowearlyaccess"
+      },
+      {
+        "entity": "Google",
+        "page": 6,
+        "role_in_text": "owner of the website",
+        "occurrence_sentence": "https://developers.google.com/",
+        "source_document": "https://quantumai.google/willowearlyaccess"
+      },
+      {
+        "entity": "Google",
+        "page": 1,
+        "role_in_text": "provider of quantum computing resources and information",
+        "occurrence_sentence": "Google Quantum AI",
+        "source_document": "https://quantumai.google/cirq/experiments"
+      },
+      {
+        "entity": "Google",
+        "page": 1,
+        "role_in_text": "provider of quantum computing resources and information",
+        "occurrence_sentence": "Google Quantum AI",
+        "source_document": "https://quantumai.google/cirq/experiments"
+      },
+      {
+        "entity": "Google",
+        "page": 2,
+        "role_in_text": "provider of quantum AI services",
+        "occurrence_sentence": "Sign in",
+        "source_document": "https://quantumai.google/cirq/experiments"
+      },
+      {
+        "entity": "Google",
+        "page": 3,
+        "role_in_text": "provider of quantum AI resources",
+        "occurrence_sentence": "Google Quantum AI",
+        "source_document": "https://quantumai.google/cirq/experiments"
+      },
+      {
+        "entity": "Google",
+        "page": 4,
+        "role_in_text": "provider of quantum AI research and experiments",
+        "occurrence_sentence": "https://quantumai.google/research)",
+        "source_document": "https://quantumai.google/cirq/experiments"
+      },
+      {
+        "entity": "Google",
+        "page": 4,
+        "role_in_text": "provider of quantum AI research and experiments",
+        "occurrence_sentence": "* [ Careers",
+        "source_document": "https://quantumai.google/cirq/experiments"
+      },
+      {
+        "entity": "Google",
+        "page": 7,
+        "role_in_text": "Provider of the quantum computing resources and experiments",
+        "occurrence_sentence": "https://quantumai.google/cirq/experiments",
+        "source_document": "https://quantumai.google/cirq/experiments"
+      },
+      {
+        "entity": "Google",
+        "page": 13,
+        "role_in_text": "owner of the website",
+        "occurrence_sentence": "https://quantumai.google/cirq/experiments",
+        "source_document": "https://quantumai.google/cirq/experiments"
+      },
+      {
+        "entity": "Google",
+        "page": 14,
+        "role_in_text": "owner of the website",
+        "occurrence_sentence": "https://quantumai.google/cirq/experiments",
+        "source_document": "https://quantumai.google/cirq/experiments"
+      },
+      {
+        "entity": "Google",
+        "page": 14,
+        "role_in_text": "owner of the website",
+        "occurrence_sentence": "https://developers.google.com/",
+        "source_document": "https://quantumai.google/cirq/experiments"
+      },
+      {
+        "entity": "Google",
+        "page": 15,
+        "role_in_text": "developer of quantum AI tools",
+        "occurrence_sentence": "[ ![Google Developers](https://www.gstatic.com/devrel-devsite/prod/v20cdb2337f656fc22df509b6d5402b3836a1b55334a8eea3301423a87970c4d5/quantum/images/lockup-google-for-developers.svg) ](https://developers.google.com/)",
+        "source_document": "https://quantumai.google/cirq/experiments"
+      },
+      {
+        "entity": "Google",
+        "page": 1,
+        "role_in_text": "provider of quantum computing resources and information",
+        "occurrence_sentence": "Google Quantum AI",
+        "source_document": "https://quantumai.google/cirq"
+      },
+      {
+        "entity": "Google",
+        "page": 2,
+        "role_in_text": "provider of quantum AI technologies",
+        "occurrence_sentence": "Sign in",
+        "source_document": "https://quantumai.google/cirq"
+      },
+      {
+        "entity": "Google",
+        "page": 2,
+        "role_in_text": "provider of quantum AI technologies",
+        "occurrence_sentence": "Sign in",
+        "source_document": "https://quantumai.google/cirq"
+      },
+      {
+        "entity": "Google",
+        "page": 2,
+        "role_in_text": "provider of quantum AI technologies",
+        "occurrence_sentence": "",
+        "source_document": "https://quantumai.google/cirq"
+      },
+      {
+        "entity": "Google",
+        "page": 3,
+        "role_in_text": "provider of quantum AI services",
+        "occurrence_sentence": "Google Quantum AI",
+        "source_document": "https://quantumai.google/cirq"
+      },
+      {
+        "entity": "Google",
+        "page": 4,
+        "role_in_text": "developer of Cirq",
+        "occurrence_sentence": "Cirq is a Python software library for writing, manipulating, and optimizing quantum circuits, and then running them on quantum computers and quantum simulators.",
+        "source_document": "https://quantumai.google/cirq"
+      },
+      {
+        "entity": "Google",
+        "page": 6,
+        "role_in_text": "Provider of Cirq, a quantum computing framework.",
+        "occurrence_sentence": "source_document: \"https://quantumai.google/cirq\"",
+        "source_document": "https://quantumai.google/cirq"
+      },
+      {
+        "entity": "Google",
+        "page": 7,
+        "role_in_text": "provider of quantum processors and quantum computing resources",
+        "occurrence_sentence": "Cirq is used to run experiments on Google's quantum processors.",
+        "source_document": "https://quantumai.google/cirq"
+      },
+      {
+        "entity": "Google",
+        "page": 8,
+        "role_in_text": "provider of quantum processors and simulation tools",
+        "occurrence_sentence": "Cirq is used to run experiments on Google's quantum processors.",
+        "source_document": "https://quantumai.google/cirq"
+      },
+      {
+        "entity": "Google",
+        "page": 9,
+        "role_in_text": "provider of quantum computing resources",
+        "occurrence_sentence": "https://quantumai.google/cirq",
+        "source_document": "https://quantumai.google/cirq"
+      },
+      {
+        "entity": "Google",
+        "page": 1,
+        "role_in_text": "provider of quantum computing resources and information",
+        "occurrence_sentence": "Google Quantum AI",
+        "source_document": "https://quantumai.google/cirq/start/install"
+      },
+      {
+        "entity": "Google",
+        "page": 2,
+        "role_in_text": "provider of quantum AI technologies",
+        "occurrence_sentence": "Sign in",
+        "source_document": "https://quantumai.google/cirq/start/install"
+      },
+      {
+        "entity": "Google",
+        "page": 2,
+        "role_in_text": "provider of quantum AI technologies",
+        "occurrence_sentence": "[ ![Google Quantum AI",
+        "source_document": "https://quantumai.google/cirq/start/install"
+      },
+      {
+        "entity": "Google",
+        "page": 3,
+        "role_in_text": "provider of quantum computing resources and information",
+        "occurrence_sentence": "Google Quantum AI",
+        "source_document": "https://quantumai.google/cirq/start/install"
+      },
+      {
+        "entity": "Google",
+        "page": 4,
+        "role_in_text": "provider of quantum computing resources and tools",
+        "occurrence_sentence": "https://quantumai.google/research)",
+        "source_document": "https://quantumai.google/cirq/start/install"
+      },
+      {
+        "entity": "Google",
+        "page": 4,
+        "role_in_text": "provider of quantum computing resources and tools",
+        "occurrence_sentence": "* [ Careers",
+        "source_document": "https://quantumai.google/cirq/start/install"
+      },
+      {
+        "entity": "Google",
+        "page": 5,
+        "role_in_text": "developer of Cirq",
+        "occurrence_sentence": "* [ Google Quantum AI ](https://quantumai.google/)",
+        "source_document": "https://quantumai.google/cirq/start/install"
+      },
+      {
+        "entity": "Google",
+        "page": 12,
+        "role_in_text": "provider of quantum computing resources and tools",
+        "occurrence_sentence": "See [Installing Python 3 on Windows",
+        "source_document": "https://quantumai.google/cirq/start/install"
+      },
+      {
+        "entity": "Google",
+        "page": 16,
+        "role_in_text": "developer of quantum AI tools",
+        "occurrence_sentence": "For details, see the [Google Developers Site Policies](https://developers.google.com/site-policies).",
+        "source_document": "https://quantumai.google/cirq/start/install"
+      },
+      {
+        "entity": "Google",
+        "page": 17,
+        "role_in_text": "Developer of quantum computing tools",
+        "occurrence_sentence": "[ ![Google Developers](https://www.gstatic.com/devrel-devsite/prod/v20cdb2337f656fc22df509b6d5402b3836a1b55334a8eea3301423a87970c4d5/quantum/images/lockup-google-for-developers.svg) ](https://developers.google.com/)",
+        "source_document": "https://quantumai.google/cirq/start/install"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": ""
+  },
+  {
+    "entity": "Google Developers",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "large enterprises",
+    "role_in_text": "developer community",
+    "technology_area": "quantum computing",
+    "occurrence_sentence": "[ ![Google Developers",
+    "source_document": "https://quantumai.google/roadmap",
+    "page": 3,
+    "canonical_actor_key": "google developers",
+    "aliases": [
+      "Google Developers"
+    ],
+    "pages": [
+      3,
+      4,
+      7,
+      8,
+      9
+    ],
+    "mentions": [
+      {
+        "entity": "Google Developers",
+        "page": 3,
+        "role_in_text": "developer community",
+        "occurrence_sentence": "[ ![Google Developers",
+        "source_document": "https://quantumai.google/roadmap"
+      },
+      {
+        "entity": "Google Developers",
+        "page": 7,
+        "role_in_text": "developer community",
+        "occurrence_sentence": "",
+        "source_document": "https://quantumai.google/software"
+      },
+      {
+        "entity": "Google Developers",
+        "page": 3,
+        "role_in_text": "developer community",
+        "occurrence_sentence": "[ ![Google Developers",
+        "source_document": "https://quantumai.google/qualtran"
+      },
+      {
+        "entity": "Google Developers",
+        "page": 8,
+        "role_in_text": "developer community",
+        "occurrence_sentence": "[ ![Google Developers",
+        "source_document": "https://quantumai.google/resources"
+      },
+      {
+        "entity": "Google Developers",
+        "page": 8,
+        "role_in_text": "developer community",
+        "occurrence_sentence": "[ ![Google Developers",
+        "source_document": "https://quantumai.google/whatisqc"
+      },
+      {
+        "entity": "Google Developers",
+        "page": 4,
+        "role_in_text": "link to Google Developers",
+        "occurrence_sentence": "[ ![Google Developers",
+        "source_document": "https://quantumai.google/research"
+      },
+      {
+        "entity": "Google Developers",
+        "page": 9,
+        "role_in_text": "developer community",
+        "occurrence_sentence": "[ ![Google Developers",
+        "source_document": "https://quantumai.google/cirq"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": ""
+  },
+  {
+    "entity": "Google Quantum AI",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "large enterprises",
+    "role_in_text": "developer of quantum computing technologies",
+    "technology_area": "quantum computing",
+    "occurrence_sentence": "Quantum AI's approach to co-developing hardware and software components is paving the way towards an end-state quantum computer.",
+    "source_document": "https://quantumai.google/quantumcomputer",
+    "page": 3,
+    "confidence": "high",
+    "canonical_actor_key": "google quantum ai",
+    "aliases": [
+      "Google Quantum AI"
+    ],
+    "pages": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      8,
+      9
+    ],
+    "mentions": [
+      {
+        "entity": "Google Quantum AI",
+        "page": 2,
+        "role_in_text": "Google's quantum computing lab",
+        "occurrence_sentence": "[ ![Google Quantum AI",
+        "source_document": "https://quantumai.google/cirq/transform"
+      },
+      {
+        "entity": "Google Quantum AI",
+        "page": 3,
+        "role_in_text": "Google Quantum AI campus",
+        "occurrence_sentence": "Welcome to the Google Quantum AI campus",
+        "source_document": "https://quantumai.google/lab"
+      },
+      {
+        "entity": "Google Quantum AI",
+        "page": 5,
+        "role_in_text": "provider of quantum computing resources and tools",
+        "occurrence_sentence": "* [ Google Quantum AI ](https://quantumai.google/)",
+        "source_document": "https://quantumai.google/cirq/build"
+      },
+      {
+        "entity": "Google Quantum AI",
+        "page": 4,
+        "role_in_text": "Developing quantum computing technologies",
+        "occurrence_sentence": "Google Quantum AI's latest state-of-the-art quantum chip, is a big step towards developing a large-scale, error-corrected quantum computer.",
+        "source_document": "https://quantumai.google"
+      },
+      {
+        "entity": "Google Quantum AI",
+        "page": 5,
+        "role_in_text": "developer of quantum computing technologies",
+        "occurrence_sentence": "Willow, Google Quantum AI's latest state-of-the-art quantum chip, is a big step towards developing a large-scale, error-corrected quantum computer.",
+        "source_document": "https://quantumai.google"
+      },
+      {
+        "entity": "Google Quantum AI",
+        "page": 4,
+        "role_in_text": "Provider of quantum computing resources and tools",
+        "occurrence_sentence": "Google Quantum AI",
+        "source_document": "https://quantumai.google/qsim"
+      },
+      {
+        "entity": "Google Quantum AI",
+        "page": 8,
+        "role_in_text": "developer of qsim",
+        "occurrence_sentence": "The integration between qsim and the NVIDIA cuQuantum SDK will enable qsim users to make the most of GPUs when developing quantum algorithms and applications.",
+        "source_document": "https://quantumai.google/qsim"
+      },
+      {
+        "entity": "Google Quantum AI",
+        "page": 3,
+        "role_in_text": "developer of quantum computing technologies",
+        "occurrence_sentence": "Quantum AI's approach to co-developing hardware and software components is paving the way towards an end-state quantum computer.",
+        "source_document": "https://quantumai.google/quantumcomputer"
+      },
+      {
+        "entity": "Google Quantum AI",
+        "page": 3,
+        "role_in_text": "provider of quantum computing resources and tools",
+        "occurrence_sentence": "* [ Google Quantum AI ](https://quantumai.google/)",
+        "source_document": "https://quantumai.google/software"
+      },
+      {
+        "entity": "Google Quantum AI",
+        "page": 4,
+        "role_in_text": "provider of quantum computing resources and education",
+        "occurrence_sentence": "We've curated resources to help you on your quantum education journey—from K-12 students and educators to researchers and PhD candidates; we have resources and tools for all groups.",
+        "source_document": "https://quantumai.google/resources"
+      },
+      {
+        "entity": "Google Quantum AI",
+        "page": 5,
+        "role_in_text": "team providing quantum computing resources",
+        "occurrence_sentence": "From understanding the basics of quantum computing to learning about our latest research and hardware updates, explore helpful tools and resources made by the Quantum AI team",
+        "source_document": "https://quantumai.google/resources"
+      },
+      {
+        "entity": "Google Quantum AI",
+        "page": 3,
+        "role_in_text": "provider of quantum computing resources and information",
+        "occurrence_sentence": "* [ Google Quantum AI ](https://quantumai.google/)",
+        "source_document": "https://quantumai.google/whatisqc"
+      },
+      {
+        "entity": "Google Quantum AI",
+        "page": 4,
+        "role_in_text": "exploring potential applications for cleaner fertilization, more efficient batteries, pharmaceutical discoveries, and more",
+        "occurrence_sentence": "Google Quantum AI is exploring potential applications for cleaner fertilization, more efficient batteries, pharmaceutical discoveries, and more.",
+        "source_document": "https://quantumai.google/whatisqc"
+      },
+      {
+        "entity": "Google Quantum AI",
+        "page": 5,
+        "role_in_text": "Exploring potential applications for cleaner fertilization, more efficient batteries, pharmaceutical discoveries, and more.",
+        "occurrence_sentence": "Google Quantum AI is exploring potential applications for cleaner fertilization, more efficient batteries, pharmaceutical discoveries, and more.",
+        "source_document": "https://quantumai.google/whatisqc"
+      },
+      {
+        "entity": "Google Quantum AI",
+        "page": 6,
+        "role_in_text": "provider of quantum computing resources and tools",
+        "occurrence_sentence": "* [ Google Quantum AI ](https://quantumai.google/)",
+        "source_document": "https://quantumai.google/cirq/simulate"
+      },
+      {
+        "entity": "Google Quantum AI",
+        "page": 5,
+        "role_in_text": "provider of quantum AI tools and documentation",
+        "occurrence_sentence": "* [ Google Quantum AI",
+        "source_document": "https://quantumai.google/cirq/noise"
+      },
+      {
+        "entity": "Google Quantum AI",
+        "page": 6,
+        "role_in_text": "developer of Cirq",
+        "occurrence_sentence": "* [ Google Quantum AI",
+        "source_document": "https://quantumai.google/cirq/noise"
+      },
+      {
+        "entity": "Google Quantum AI",
+        "page": 3,
+        "role_in_text": "Division of Google focusing on quantum AI research",
+        "occurrence_sentence": "[ ![Google Quantum AI",
+        "source_document": "https://quantumai.google/openfermion"
+      },
+      {
+        "entity": "Google Quantum AI",
+        "page": 4,
+        "role_in_text": "Google Quantum AI is the lab or initiative mentioned in the text.",
+        "occurrence_sentence": "* [ Google Quantum AI ](https://quantumai.google/)",
+        "source_document": "https://quantumai.google/openfermion"
+      },
+      {
+        "entity": "Google Quantum AI",
+        "page": 3,
+        "role_in_text": "research and development in quantum computing",
+        "occurrence_sentence": "Google Quantum AI",
+        "source_document": "https://quantumai.google/research"
+      },
+      {
+        "entity": "Google Quantum AI",
+        "page": 3,
+        "role_in_text": "Identifying research partners for Willow quantum processor",
+        "occurrence_sentence": "Google Quantum AI is identifying a select cohort of research partners to drive high-impact projects on our state-of-the-art Willow quantum processor.",
+        "source_document": "https://quantumai.google/willowearlyaccess"
+      },
+      {
+        "entity": "Google Quantum AI",
+        "page": 5,
+        "role_in_text": "Provider of the Willow Access Program",
+        "occurrence_sentence": "source_document: \"https://quantumai.google/willowearlyaccess\"",
+        "source_document": "https://quantumai.google/willowearlyaccess"
+      },
+      {
+        "entity": "Google Quantum AI",
+        "page": 8,
+        "role_in_text": "provider of quantum computing resources and tools",
+        "occurrence_sentence": "* [ Google Quantum AI ](https://quantumai.google/)",
+        "source_document": "https://quantumai.google/cirq/experiments"
+      },
+      {
+        "entity": "Google Quantum AI",
+        "page": 9,
+        "role_in_text": "Quantum AI lab",
+        "occurrence_sentence": "* [ Google Quantum AI ](https://quantumai.google/)",
+        "source_document": "https://quantumai.google/cirq/experiments"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": ""
+  },
+  {
+    "entity": "Google Quantum AI team",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "corporate labs",
+    "role_in_text": "team",
+    "technology_area": "quantum computing",
+    "occurrence_sentence": "From understanding the basics of quantum computing to learning about our latest research and hardware updates, explore helpful tools and resources made by the Quantum AI team",
+    "source_document": "https://quantumai.google/resources",
+    "page": 6,
+    "confidence": "high",
+    "canonical_actor_key": "google quantum ai team",
+    "aliases": [
+      "Google Quantum AI team"
+    ],
+    "pages": [
+      6
+    ],
+    "mentions": [
+      {
+        "entity": "Google Quantum AI team",
+        "page": 6,
+        "role_in_text": "team",
+        "occurrence_sentence": "From understanding the basics of quantum computing to learning about our latest research and hardware updates, explore helpful tools and resources made by the Quantum AI team",
+        "source_document": "https://quantumai.google/resources"
+      },
+      {
+        "entity": "Google Quantum AI team",
+        "page": 6,
+        "role_in_text": "team",
+        "occurrence_sentence": "Our lab is home to our hardware, software and research teams - starting from space, you'll work your way down to campus and ultimately dive into the inner workings of our cryostat.",
+        "source_document": "https://quantumai.google/resources"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": ""
+  },
+  {
+    "entity": "Honeywell",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "large enterprises",
+    "source_document": "https://quantumai.google/cirq/hardware",
+    "page": 4,
+    "canonical_actor_key": "honeywell",
+    "aliases": [
+      "Honeywell"
+    ],
+    "pages": [
+      4,
+      5
+    ],
+    "mentions": [
+      {
+        "entity": "Honeywell",
+        "page": 4,
+        "role_in_text": "",
+        "occurrence_sentence": "",
+        "source_document": "https://quantumai.google/cirq/hardware"
+      },
+      {
+        "entity": "Honeywell",
+        "page": 5,
+        "role_in_text": "",
+        "occurrence_sentence": "",
+        "source_document": "https://quantumai.google/cirq/hardware"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": ""
+  },
+  {
+    "entity": "IonQ",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "large enterprises",
+    "role_in_text": "IonQAPIDevice",
+    "technology_area": "quantum computing",
+    "occurrence_sentence": "cirq_ionq.ionq_devices * [IonQAPIDevice](https://quantumai.google/reference/python/cirq_ionq/ionq_devices/IonQAPIDevice)",
+    "source_document": "https://quantumai.google/reference/python/cirq/all_symbols",
+    "page": 99,
+    "confidence": "high",
+    "canonical_actor_key": "ionq",
+    "aliases": [
+      "IonQ"
+    ],
+    "pages": [
+      9,
+      99,
+      100,
+      101,
+      102
+    ],
+    "mentions": [
+      {
+        "entity": "IonQ",
+        "page": 9,
+        "role_in_text": "Quantum hardware provider",
+        "occurrence_sentence": "How to run your first circuit on an IonQ device.",
+        "source_document": "https://quantumai.google/cirq/hardware"
+      },
+      {
+        "entity": "IonQ",
+        "page": 99,
+        "role_in_text": "IonQAPIDevice",
+        "occurrence_sentence": "cirq_ionq.ionq_devices * [IonQAPIDevice](https://quantumai.google/reference/python/cirq_ionq/ionq_devices/IonQAPIDevice)",
+        "source_document": "https://quantumai.google/reference/python/cirq/all_symbols"
+      },
+      {
+        "entity": "IonQ",
+        "page": 99,
+        "role_in_text": "IonQException",
+        "occurrence_sentence": "cirq_ionq.ionq_exceptions * [IonQException",
+        "source_document": "https://quantumai.google/reference/python/cirq/all_symbols"
+      },
+      {
+        "entity": "IonQ",
+        "page": 100,
+        "role_in_text": "IonQ is mentioned in the context of quantum computing technologies and devices.",
+        "occurrence_sentence": "cirq_ionq.ionq_devices * [Overview](https://quantumai.google/reference/python/cirq_ionq/ionq_devices) * [IonQAPIDevice](https://quantumai.google/reference/python/cirq_ionq/ionq_devices/IonQAPIDevice)",
+        "source_document": "https://quantumai.google/reference/python/cirq/all_symbols"
+      },
+      {
+        "entity": "IonQ",
+        "page": 101,
+        "role_in_text": "IonQUnsuccessfulJobException, IonQTargetGateset, AriaNativeGateset, ForteNativeGateset, IonqNativeGatesetBase",
+        "occurrence_sentence": "onQUnsuccessfulJobException",
+        "source_document": "https://quantumai.google/reference/python/cirq/all_symbols"
+      },
+      {
+        "entity": "IonQ",
+        "page": 102,
+        "role_in_text": "IonQ Native Gateset",
+        "occurrence_sentence": "ative_target_gateset * [Overview",
+        "source_document": "https://quantumai.google/reference/python/cirq/all_symbols"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": ""
+  },
+  {
+    "entity": "Microsoft Azure Quantum",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "large enterprises",
+    "role_in_text": "provider of quantum services",
+    "technology_area": "quantum computing",
+    "occurrence_sentence": "Cirq's interface with Microsoft Azure Quantum services.",
+    "source_document": "https://quantumai.google/cirq/hardware",
+    "page": 8,
+    "confidence": "high",
+    "canonical_actor_key": "microsoft azure quantum",
+    "aliases": [
+      "Microsoft Azure Quantum"
+    ],
+    "pages": [
+      8
+    ],
+    "mentions": [
+      {
+        "entity": "Microsoft Azure Quantum",
+        "page": 8,
+        "role_in_text": "provider of quantum services",
+        "occurrence_sentence": "Cirq's interface with Microsoft Azure Quantum services.",
+        "source_document": "https://quantumai.google/cirq/hardware"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": ""
+  },
+  {
+    "entity": "Nature",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "media and cultural institutions",
+    "role_in_text": "Publisher of the research paper.",
+    "technology_area": "quantum computing",
+    "occurrence_sentence": "[ open_in_new Paper",
+    "source_document": "https://quantumai.google",
+    "page": 6,
+    "canonical_actor_key": "nature",
+    "aliases": [
+      "Nature"
+    ],
+    "pages": [
+      6
+    ],
+    "mentions": [
+      {
+        "entity": "Nature",
+        "page": 6,
+        "role_in_text": "Publisher of the research paper.",
+        "occurrence_sentence": "[ open_in_new Paper",
+        "source_document": "https://quantumai.google"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": ""
+  },
+  {
+    "entity": "NVIDIA",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "large enterprises",
+    "role_in_text": "provider of cuQuantum SDK",
+    "technology_area": "quantum computing",
+    "occurrence_sentence": "The integration between qsim and the NVIDIA cuQuantum SDK will enable qsim users to make the most of GPUs when developing quantum algorithms and applications.",
+    "source_document": "https://quantumai.google/qsim",
+    "page": 8,
+    "confidence": "high",
+    "canonical_actor_key": "nvidia",
+    "aliases": [
+      "NVIDIA"
+    ],
+    "pages": [
+      7,
+      8,
+      9
+    ],
+    "mentions": [
+      {
+        "entity": "NVIDIA",
+        "page": 7,
+        "role_in_text": "provider of cuQuantum SDK",
+        "occurrence_sentence": "The integration between qsim and the NVIDIA cuQuantum SDK will enable qsim users to make the most of GPUs when developing quantum algorithms and applications.",
+        "source_document": "https://quantumai.google/qsim"
+      },
+      {
+        "entity": "NVIDIA",
+        "page": 8,
+        "role_in_text": "provider of cuQuantum SDK",
+        "occurrence_sentence": "The integration between qsim and the NVIDIA cuQuantum SDK will enable qsim users to make the most of GPUs when developing quantum algorithms and applications.",
+        "source_document": "https://quantumai.google/qsim"
+      },
+      {
+        "entity": "NVIDIA",
+        "page": 9,
+        "role_in_text": "provider of cuQuantum SDK",
+        "occurrence_sentence": "https://opensource.googleblog.com/2021/11/qsim%20integrates%20with%20NVIDIA%20cuQuantum%20SDK%20to%20accelerate%20quantum%20circuit%20simulations%20on%20NVIDIA",
+        "source_document": "https://quantumai.google/qsim"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": ""
+  },
+  {
+    "entity": "OpenFermion",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "open source tools",
+    "role_in_text": "OpenFermion is an open-source chemistry package for quantum computers.",
+    "technology_area": "quantum computing",
+    "occurrence_sentence": "* [ OpenFermion ](https://quantumai.google/openfermion)",
+    "source_document": "https://quantumai.google/openfermion",
+    "page": 4,
+    "confidence": "high",
+    "canonical_actor_key": "openfermion",
+    "aliases": [
+      "OpenFermion"
+    ],
+    "pages": [
+      4,
+      5
+    ],
+    "mentions": [
+      {
+        "entity": "OpenFermion",
+        "page": 4,
+        "role_in_text": "OpenFermion is an open-source chemistry package for quantum computers.",
+        "occurrence_sentence": "* [ OpenFermion ](https://quantumai.google/openfermion)",
+        "source_document": "https://quantumai.google/openfermion"
+      },
+      {
+        "entity": "OpenFermion",
+        "page": 5,
+        "role_in_text": "library for compiling and analyzing quantum algorithms",
+        "occurrence_sentence": "OpenFermion is a library for compiling and analyzing quantum algorithms to simulate fermionic systems, including quantum chemistry.",
+        "source_document": "https://quantumai.google/openfermion"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": ""
+  },
+  {
+    "entity": "Oracle",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "large enterprises",
+    "role_in_text": "Owner of the Java trademark",
+    "technology_area": "other",
+    "occurrence_sentence": "Java is a registered trademark of Oracle and/or its affiliates.",
+    "source_document": "https://quantumai.google/cirq/transform",
+    "page": 5,
+    "confidence": "high",
+    "canonical_actor_key": "oracle",
+    "aliases": [
+      "Oracle"
+    ],
+    "pages": [
+      5,
+      6,
+      7,
+      8,
+      13,
+      16,
+      176
+    ],
+    "mentions": [
+      {
+        "entity": "Oracle",
+        "page": 5,
+        "role_in_text": "Owner of the Java trademark",
+        "occurrence_sentence": "Java is a registered trademark of Oracle and/or its affiliates.",
+        "source_document": "https://quantumai.google/cirq/transform"
+      },
+      {
+        "entity": "Oracle",
+        "page": 6,
+        "role_in_text": "owner of Java trademark",
+        "occurrence_sentence": "Java is a registered trademark of Oracle and/or its affiliates.",
+        "source_document": "https://quantumai.google/cirq/transform"
+      },
+      {
+        "entity": "Oracle",
+        "page": 16,
+        "role_in_text": "owner of Java trademark",
+        "occurrence_sentence": "Java is a registered trademark of Oracle and/or its affiliates.",
+        "source_document": "https://quantumai.google/cirq/dev/development"
+      },
+      {
+        "entity": "Oracle",
+        "page": 176,
+        "role_in_text": "owner of the Java trademark",
+        "occurrence_sentence": "Java is a registered trademark of Oracle and/or its affiliates.",
+        "source_document": "https://quantumai.google/reference/python/cirq/all_symbols"
+      },
+      {
+        "entity": "Oracle",
+        "page": 8,
+        "role_in_text": "trademark holder",
+        "occurrence_sentence": "Java is a registered trademark of Oracle and/or its affiliates.",
+        "source_document": "https://quantumai.google/cirq/simulate"
+      },
+      {
+        "entity": "Oracle",
+        "page": 7,
+        "role_in_text": "owner of the Java trademark",
+        "occurrence_sentence": "Java is a registered trademark of Oracle and/or its affiliates.",
+        "source_document": "https://quantumai.google/cirq/noise"
+      },
+      {
+        "entity": "Oracle",
+        "page": 13,
+        "role_in_text": "trademark owner",
+        "occurrence_sentence": "Java is a registered trademark of Oracle and/or its affiliates.",
+        "source_document": "https://quantumai.google/cirq/experiments"
+      },
+      {
+        "entity": "Oracle",
+        "page": 16,
+        "role_in_text": "owner of Java trademark",
+        "occurrence_sentence": "Java is a registered trademark of Oracle and/or its affiliates.",
+        "source_document": "https://quantumai.google/cirq/start/install"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": ""
+  },
+  {
+    "entity": "Pasqal",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "small and medium-sized enterprises",
+    "role_in_text": "provider of quantum hardware",
+    "technology_area": "quantum computing",
+    "occurrence_sentence": "Sampler objects to run on Pasqal hardware.",
+    "source_document": "https://quantumai.google/cirq/hardware",
+    "page": 10,
+    "confidence": "high",
+    "canonical_actor_key": "pasqal",
+    "aliases": [
+      "Pasqal"
+    ],
+    "pages": [
+      6,
+      10,
+      103
+    ],
+    "mentions": [
+      {
+        "entity": "Pasqal",
+        "page": 6,
+        "role_in_text": "provider of quantum devices and samplers",
+        "occurrence_sentence": "Pasqal sampler",
+        "source_document": "https://quantumai.google/cirq/hardware"
+      },
+      {
+        "entity": "Pasqal",
+        "page": 10,
+        "role_in_text": "provider of quantum hardware",
+        "occurrence_sentence": "Sampler objects to run on Pasqal hardware.",
+        "source_document": "https://quantumai.google/cirq/hardware"
+      },
+      {
+        "entity": "Pasqal",
+        "page": 103,
+        "role_in_text": "PasqalDevice, PasqalVirtualDevice, PasqalGateset, PasqalNoiseModel, ThreeDQubit, TwoDQubit, PasqalSampler",
+        "occurrence_sentence": "cirq_pasqal.pasqal_device * [Overview",
+        "source_document": "https://quantumai.google/reference/python/cirq/all_symbols"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": ""
+  },
+  {
+    "entity": "Pennylane",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "large enterprises",
+    "role_in_text": "platform for using Qualtran",
+    "technology_area": "quantum computing",
+    "occurrence_sentence": "Try out using Qualtran with Pennylane",
+    "source_document": "https://quantumai.google/qualtran",
+    "page": 2,
+    "confidence": "high",
+    "canonical_actor_key": "pennylane",
+    "aliases": [
+      "Pennylane"
+    ],
+    "pages": [
+      2
+    ],
+    "mentions": [
+      {
+        "entity": "Pennylane",
+        "page": 2,
+        "role_in_text": "platform for using Qualtran",
+        "occurrence_sentence": "Try out using Qualtran with Pennylane",
+        "source_document": "https://quantumai.google/qualtran"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": ""
+  },
+  {
+    "entity": "Psi4",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "other",
+    "role_in_text": "plugin",
+    "technology_area": "quantum computing",
+    "occurrence_sentence": "Currently supported plugins are to open source codes [Psi4](https://github.com/quantumlib/OpenFermion-Psi4), [Pyscf](https://github.com/quantumlib/OpenFermion-PySCF), and [Dirac](https://github.com/bsenjean/Openfermion-Dirac).",
+    "source_document": "https://quantumai.google/openfermion",
+    "page": 8,
+    "confidence": "medium",
+    "canonical_actor_key": "psi4",
+    "aliases": [
+      "Psi4"
+    ],
+    "pages": [
+      7,
+      8
+    ],
+    "mentions": [
+      {
+        "entity": "Psi4",
+        "page": 7,
+        "role_in_text": "open source code",
+        "occurrence_sentence": "Currently supported plugins are to open source codes Psi4, Pyscf, and Dirac.",
+        "source_document": "https://quantumai.google/openfermion"
+      },
+      {
+        "entity": "Psi4",
+        "page": 8,
+        "role_in_text": "plugin",
+        "occurrence_sentence": "Currently supported plugins are to open source codes [Psi4](https://github.com/quantumlib/OpenFermion-Psi4), [Pyscf](https://github.com/quantumlib/OpenFermion-PySCF), and [Dirac](https://github.com/bsenjean/Openfermion-Dirac).",
+        "source_document": "https://quantumai.google/openfermion"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": ""
+  },
+  {
+    "entity": "Pyscf",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "other",
+    "role_in_text": "open source code",
+    "technology_area": "quantum simulation",
+    "occurrence_sentence": "Currently supported plugins are to open source codes Psi4, Pyscf, and Dirac.",
+    "source_document": "https://quantumai.google/openfermion",
+    "page": 7,
+    "confidence": "medium",
+    "canonical_actor_key": "pyscf",
+    "aliases": [
+      "Pyscf"
+    ],
+    "pages": [
+      7,
+      8
+    ],
+    "mentions": [
+      {
+        "entity": "Pyscf",
+        "page": 7,
+        "role_in_text": "open source code",
+        "occurrence_sentence": "Currently supported plugins are to open source codes Psi4, Pyscf, and Dirac.",
+        "source_document": "https://quantumai.google/openfermion"
+      },
+      {
+        "entity": "Pyscf",
+        "page": 8,
+        "role_in_text": "plugin",
+        "occurrence_sentence": "Currently supported plugins are to open source codes [Psi4",
+        "source_document": "https://quantumai.google/openfermion"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": ""
+  },
+  {
+    "entity": "qsimcirq",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "open source tools",
+    "source_document": "https://quantumai.google/qsim",
+    "page": 4,
+    "canonical_actor_key": "qsimcirq",
+    "aliases": [
+      "qsimcirq"
+    ],
+    "pages": [
+      4
+    ],
+    "mentions": [
+      {
+        "entity": "qsimcirq",
+        "page": 4,
+        "role_in_text": "",
+        "occurrence_sentence": "",
+        "source_document": "https://quantumai.google/qsim"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": ""
+  },
+  {
+    "entity": "QuantumAI",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "large enterprises",
+    "role_in_text": "part of the URL and the context of the document",
+    "technology_area": "quantum computing",
+    "occurrence_sentence": "https://quantumai.google/reference/python/cirq/all_symbols",
+    "source_document": "https://quantumai.google/reference/python/cirq/all_symbols",
+    "page": 77,
+    "confidence": "high",
+    "canonical_actor_key": "quantumai",
+    "aliases": [
+      "QuantumAI"
+    ],
+    "pages": [
+      77
+    ],
+    "mentions": [
+      {
+        "entity": "QuantumAI",
+        "page": 77,
+        "role_in_text": "part of the URL and the context of the document",
+        "occurrence_sentence": "https://quantumai.google/reference/python/cirq/all_symbols",
+        "source_document": "https://quantumai.google/reference/python/cirq/all_symbols"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": ""
+  },
+  {
+    "entity": "Quirk",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "other",
+    "role_in_text": "A tool or platform related to quantum computing",
+    "technology_area": "quantum computing",
+    "occurrence_sentence": " * [`cirq.contrib.quirk`",
+    "source_document": "https://quantumai.google/reference/python/cirq/all_symbols",
+    "page": 143,
+    "canonical_actor_key": "quirk",
+    "aliases": [
+      "Quirk"
+    ],
+    "pages": [
+      143
+    ],
+    "mentions": [
+      {
+        "entity": "Quirk",
+        "page": 143,
+        "role_in_text": "A tool or platform related to quantum computing",
+        "occurrence_sentence": " * [`cirq.contrib.quirk`",
+        "source_document": "https://quantumai.google/reference/python/cirq/all_symbols"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": ""
+  },
+  {
+    "entity": "t|ket>",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "other",
+    "role_in_text": "technology used for mapping QAOA to a generic device",
+    "technology_area": "quantum computing",
+    "occurrence_sentence": "Use t|ket> to map QAOA to a generic device.",
+    "source_document": "https://quantumai.google/cirq/experiments",
+    "page": 11,
+    "confidence": "medium",
+    "canonical_actor_key": "t ket",
+    "aliases": [
+      "t|ket>"
+    ],
+    "pages": [
+      11
+    ],
+    "mentions": [
+      {
+        "entity": "t|ket>",
+        "page": 11,
+        "role_in_text": "technology used for mapping QAOA to a generic device",
+        "occurrence_sentence": "Use t|ket> to map QAOA to a generic device.",
+        "source_document": "https://quantumai.google/cirq/experiments"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": ""
+  },
+  {
+    "entity": "tket",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "other",
+    "role_in_text": "technology",
+    "technology_area": "quantum computing",
+    "occurrence_sentence": "Routing with tket",
+    "source_document": "https://quantumai.google/cirq/experiments",
+    "page": 5,
+    "confidence": "medium",
+    "canonical_actor_key": "tket",
+    "aliases": [
+      "tket"
+    ],
+    "pages": [
+      5
+    ],
+    "mentions": [
+      {
+        "entity": "tket",
+        "page": 5,
+        "role_in_text": "technology",
+        "occurrence_sentence": "Routing with tket",
+        "source_document": "https://quantumai.google/cirq/experiments"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": ""
+  }
+]

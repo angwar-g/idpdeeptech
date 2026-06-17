@@ -1,0 +1,474 @@
+
+========================================================================
+RUN STARTED  2026-06-17 03:34:24
+site_pipeline.py https://oqc.tech/
+========================================================================
+
+[03:34:24 +0s | oqc] === 0 crawl site ===
+[03:34:25 +1s | oqc] [INIT].... → Crawl4AI 0.8.6 
+[03:34:26 +2s | oqc] [FETCH]... ↓ https://oqc.tech/                                                                                    | ✓ | ⏱: 0.89s 
+[03:34:26 +2s | oqc] [SCRAPE].. ◆ https://oqc.tech/                                                                                    | ✓ | ⏱: 0.05s 
+[03:34:26 +2s | oqc] [COMPLETE] ● https://oqc.tech/                                                                                    | ✓ | ⏱: 0.95s 
+[03:34:27 +3s | oqc] [FETCH]... ↓ https://oqc.tech/                                                                                    | ✓ | ⏱: 0.87s 
+[03:34:27 +3s | oqc] [SCRAPE].. ◆ https://oqc.tech/                                                                                    | ✓ | ⏱: 0.05s 
+[03:34:27 +3s | oqc] [COMPLETE] ● https://oqc.tech/                                                                                    | ✓ | ⏱: 0.95s 
+[03:34:27 +3s | oqc] [FETCH]... ↓ https://oqc.tech/company/senior-leadership/                                                          | ✓ | ⏱: 0.93s 
+[03:34:27 +3s | oqc] [SCRAPE].. ◆ https://oqc.tech/company/senior-leadership/                                                          | ✓ | ⏱: 0.04s 
+[03:34:27 +3s | oqc] [COMPLETE] ● https://oqc.tech/company/senior-leadership/                                                          | ✓ | ⏱: 1.00s 
+[03:34:28 +4s | oqc] [FETCH]... ↓ https://oqc.tech/access/deployments/                                                                 | ✓ | ⏱: 1.32s 
+[03:34:28 +4s | oqc] [SCRAPE].. ◆ https://oqc.tech/access/deployments/                                                                 | ✓ | ⏱: 0.05s 
+[03:34:28 +4s | oqc] [COMPLETE] ● https://oqc.tech/access/deployments/                                                                 | ✓ | ⏱: 1.39s 
+[03:34:28 +4s | oqc] [FETCH]... ↓ https://oqc.tech/company/newsroom/                                                                   | ✓ | ⏱: 1.45s 
+[03:34:28 +4s | oqc] [SCRAPE].. ◆ https://oqc.tech/company/newsroom/                                                                   | ✓ | ⏱: 0.08s 
+[03:34:28 +4s | oqc] [COMPLETE] ● https://oqc.tech/company/newsroom/                                                                   | ✓ | ⏱: 1.56s 
+[03:34:28 +4s | oqc] [FETCH]... ↓ https://oqc.tech/tech/                                                                               | ✓ | ⏱: 1.76s 
+[03:34:28 +4s | oqc] [SCRAPE].. ◆ https://oqc.tech/tech/                                                                               | ✓ | ⏱: 0.04s 
+[03:34:28 +4s | oqc] [COMPLETE] ● https://oqc.tech/tech/                                                                               | ✓ | ⏱: 1.82s 
+[03:34:28 +4s | oqc] [FETCH]... ↓ https://oqc.tech/tech/applications/                                                                  | ✓ | ⏱: 1.91s 
+[03:34:28 +4s | oqc] [SCRAPE].. ◆ https://oqc.tech/tech/applications/                                                                  | ✓ | ⏱: 0.08s 
+[03:34:28 +4s | oqc] [COMPLETE] ● https://oqc.tech/tech/applications/                                                                  | ✓ | ⏱: 2.02s 
+[03:34:29 +5s | oqc] [FETCH]... ↓ https://oqc.tech/company/series-c-fundraise                                                          | ✓ | ⏱: 2.20s 
+[03:34:29 +5s | oqc] [SCRAPE].. ◆ https://oqc.tech/company/series-c-fundraise                                                          | ✓ | ⏱: 0.10s 
+[03:34:29 +5s | oqc] [COMPLETE] ● https://oqc.tech/company/series-c-fundraise                                                          | ✓ | ⏱: 2.33s 
+[03:34:29 +5s | oqc] [FETCH]... ↓ https://oqc.tech/company/                                                                            | ✓ | ⏱: 2.50s 
+[03:34:29 +5s | oqc] [SCRAPE].. ◆ https://oqc.tech/company/                                                                            | ✓ | ⏱: 0.08s 
+[03:34:29 +5s | oqc] [COMPLETE] ● https://oqc.tech/company/                                                                            | ✓ | ⏱: 2.60s 
+[03:34:29 +5s | oqc] [FETCH]... ↓ https://oqc.tech/access/                                                                             | ✓ | ⏱: 2.76s 
+[03:34:29 +5s | oqc] [SCRAPE].. ◆ https://oqc.tech/access/                                                                             | ✓ | ⏱: 0.06s 
+[03:34:29 +5s | oqc] [COMPLETE] ● https://oqc.tech/access/                                                                             | ✓ | ⏱: 2.86s 
+[03:34:29 +5s | oqc] [FETCH]... ↓ https://oqc.tech/applications                                                                        | ✓ | ⏱: 2.94s 
+[03:34:29 +5s | oqc] [SCRAPE].. ◆ https://oqc.tech/applications                                                                        | ✓ | ⏱: 0.07s 
+[03:34:29 +5s | oqc] [COMPLETE] ● https://oqc.tech/applications                                                                        | ✓ | ⏱: 3.04s 
+[03:34:30 +6s | oqc] [FETCH]... ↓ https://oqc.tech/tech/research-development                                                           | ✓ | ⏱: 3.28s 
+[03:34:30 +6s | oqc] [SCRAPE].. ◆ https://oqc.tech/tech/research-development                                                           | ✓ | ⏱: 0.07s 
+[03:34:30 +6s | oqc] [COMPLETE] ● https://oqc.tech/tech/research-development                                                           | ✓ | ⏱: 3.37s 
+[03:34:30 +6s | oqc] [FETCH]... ↓ https://oqc.tech/get-in-touch/                                                                       | ✓ | ⏱: 3.59s 
+[03:34:30 +6s | oqc] [SCRAPE].. ◆ https://oqc.tech/get-in-touch/                                                                       | ✓ | ⏱: 0.04s 
+[03:34:30 +6s | oqc] [COMPLETE] ● https://oqc.tech/get-in-touch/                                                                       | ✓ | ⏱: 3.65s 
+[03:34:30 +6s | oqc] [FETCH]... ↓ https://oqc.tech/company/resources/                                                                  | ✓ | ⏱: 3.69s 
+[03:34:30 +6s | oqc] [SCRAPE].. ◆ https://oqc.tech/company/resources/                                                                  | ✓ | ⏱: 0.08s 
+[03:34:30 +6s | oqc] [COMPLETE] ● https://oqc.tech/company/resources/                                                                  | ✓ | ⏱: 3.80s 
+[03:34:30 +6s | oqc] [FETCH]... ↓ https://oqc.tech/access/direct-access/                                                               | ✓ | ⏱: 3.94s 
+[03:34:30 +6s | oqc] [SCRAPE].. ◆ https://oqc.tech/access/direct-access/                                                               | ✓ | ⏱: 0.07s 
+[03:34:30 +6s | oqc] [COMPLETE] ● https://oqc.tech/access/direct-access/                                                               | ✓ | ⏱: 4.04s 
+[03:34:31 +7s | oqc] [FETCH]... ↓ https://oqc.tech/tech/technical-roadmap                                                              | ✓ | ⏱: 4.21s 
+[03:34:31 +7s | oqc] [SCRAPE].. ◆ https://oqc.tech/tech/technical-roadmap                                                              | ✓ | ⏱: 0.10s 
+[03:34:31 +7s | oqc] [COMPLETE] ● https://oqc.tech/tech/technical-roadmap                                                              | ✓ | ⏱: 4.34s 
+[03:34:31 +7s | oqc] [FETCH]... ↓ https://oqc.tech/access/oqc-cloud/                                                                   | ✓ | ⏱: 4.54s 
+[03:34:31 +7s | oqc] [SCRAPE].. ◆ https://oqc.tech/access/oqc-cloud/                                                                   | ✓ | ⏱: 0.06s 
+[03:34:31 +7s | oqc] [COMPLETE] ● https://oqc.tech/access/oqc-cloud/                                                                   | ✓ | ⏱: 4.62s 
+[03:34:31 +7s | oqc] [FETCH]... ↓ https://oqc.tech/company/careers-at-oqc/                                                             | ✓ | ⏱: 4.67s 
+[03:34:31 +7s | oqc] [SCRAPE].. ◆ https://oqc.tech/company/careers-at-oqc/                                                             | ✓ | ⏱: 0.07s 
+[03:34:31 +7s | oqc] [COMPLETE] ● https://oqc.tech/company/careers-at-oqc/                                                             | ✓ | ⏱: 4.77s 
+[03:34:31 +7s | oqc] [FETCH]... ↓ https://oqc.tech/tech/devices/                                                                       | ✓ | ⏱: 5.03s 
+[03:34:32 +7s | oqc] [SCRAPE].. ◆ https://oqc.tech/tech/devices/                                                                       | ✓ | ⏱: 0.05s 
+[03:34:32 +7s | oqc] [COMPLETE] ● https://oqc.tech/tech/devices/                                                                       | ✓ | ⏱: 5.10s 
+[03:34:32 +7s | oqc] [FETCH]... ↓ https://oqc.tech/tech/devices                                                                        | ✓ | ⏱: 5.11s 
+[03:34:32 +8s | oqc] [SCRAPE].. ◆ https://oqc.tech/tech/devices                                                                        | ✓ | ⏱: 0.04s 
+[03:34:32 +8s | oqc] [COMPLETE] ● https://oqc.tech/tech/devices                                                                        | ✓ | ⏱: 5.18s 
+[03:34:32 +8s | oqc] Saved: crawl_output/43353085c3_oqc.tech.json
+[03:34:32 +8s | oqc] Duplicate skipped: https://oqc.tech
+[03:34:32 +8s | oqc] Saved: crawl_output/c82c8c6ef5_oqc.tech_company_senior-leadership.json
+[03:34:32 +8s | oqc] Saved: crawl_output/cc0ed0316f_oqc.tech_access_deployments.json
+[03:34:32 +8s | oqc] Saved: crawl_output/193a3d0115_oqc.tech_company_newsroom.json
+[03:34:32 +8s | oqc] Saved: crawl_output/a1059eb090_oqc.tech_tech.json
+[03:34:32 +8s | oqc] Saved: crawl_output/b754ab9166_oqc.tech_tech_applications.json
+[03:34:32 +8s | oqc] Saved: crawl_output/e53f944105_oqc.tech_company_series-c-fundraise.json
+[03:34:32 +8s | oqc] Saved: crawl_output/5cfd72ea5f_oqc.tech_company.json
+[03:34:32 +8s | oqc] Saved: crawl_output/630f224e4c_oqc.tech_access.json
+[03:34:32 +8s | oqc] Saved: crawl_output/67dbd3c9f6_oqc.tech_applications.json
+[03:34:32 +8s | oqc] Saved: crawl_output/819956305e_oqc.tech_tech_research-development.json
+[03:34:32 +8s | oqc] Saved: crawl_output/f22cefcbdb_oqc.tech_get-in-touch.json
+[03:34:32 +8s | oqc] Saved: crawl_output/2fabbbe9c4_oqc.tech_company_resources.json
+[03:34:32 +8s | oqc] Saved: crawl_output/92a3a6fa0d_oqc.tech_access_direct-access.json
+[03:34:32 +8s | oqc] Saved: crawl_output/631f8291cb_oqc.tech_tech_technical-roadmap.json
+[03:34:32 +8s | oqc] Saved: crawl_output/5257d86e84_oqc.tech_access_oqc-cloud.json
+[03:34:32 +8s | oqc] Saved: crawl_output/e02569b49a_oqc.tech_company_careers-at-oqc.json
+[03:34:32 +8s | oqc] Saved: crawl_output/e60c0d73c5_oqc.tech_tech_devices.json
+[03:34:32 +8s | oqc] Duplicate skipped: https://oqc.tech/tech/devices
+
+[03:34:32 +8s | oqc] === 1 actor extraction ===
+[03:34:32 +8s | oqc] Reading page (1/18): https://oqc.tech/company/newsroom
+[03:34:32 +8s | oqc] Extracting: https://oqc.tech/company/newsroom (1/18), chunk 1/7
+[03:34:38 +14s | oqc] Extracting: https://oqc.tech/company/newsroom (1/18), chunk 2/7
+[03:34:46 +22s | oqc] Repaired malformed JSON.
+[03:34:46 +22s | oqc] Extracting: https://oqc.tech/company/newsroom (1/18), chunk 3/7
+[03:34:55 +28s | oqc] Repaired malformed JSON.
+[03:34:55 +28s | oqc] Extracting: https://oqc.tech/company/newsroom (1/18), chunk 4/7
+[03:35:01 +35s | oqc] Repaired malformed JSON.
+[03:35:01 +35s | oqc] Extracting: https://oqc.tech/company/newsroom (1/18), chunk 5/7
+[03:35:08 +41s | oqc] Repaired malformed JSON.
+[03:35:08 +41s | oqc] Extracting: https://oqc.tech/company/newsroom (1/18), chunk 6/7
+[03:35:14 +47s | oqc] Extracting: https://oqc.tech/company/newsroom (1/18), chunk 7/7
+[03:35:20 +53s | oqc] Reading page (2/18): https://oqc.tech/company/resources
+[03:35:20 +53s | oqc] Extracting: https://oqc.tech/company/resources (2/18), chunk 1/10
+[03:35:24 +57s | oqc] Extracting: https://oqc.tech/company/resources (2/18), chunk 2/10
+[03:35:32 +1m 2s | oqc] Extracting: https://oqc.tech/company/resources (2/18), chunk 3/10
+[03:35:39 +1m 9s | oqc] Repaired malformed JSON.
+[03:35:39 +1m 9s | oqc] Extracting: https://oqc.tech/company/resources (2/18), chunk 4/10
+[03:35:44 +1m 14s | oqc] Extracting: https://oqc.tech/company/resources (2/18), chunk 5/10
+[03:35:50 +1m 20s | oqc] Repaired malformed JSON.
+[03:35:50 +1m 20s | oqc] Extracting: https://oqc.tech/company/resources (2/18), chunk 6/10
+[03:35:56 +1m 26s | oqc] Repaired malformed JSON.
+[03:35:56 +1m 26s | oqc] Extracting: https://oqc.tech/company/resources (2/18), chunk 7/10
+[03:35:59 +1m 29s | oqc] Extracting: https://oqc.tech/company/resources (2/18), chunk 8/10
+[03:36:08 +1m 35s | oqc] Repaired malformed JSON.
+[03:36:08 +1m 35s | oqc] Extracting: https://oqc.tech/company/resources (2/18), chunk 9/10
+[03:36:14 +1m 42s | oqc] Repaired malformed JSON.
+[03:36:14 +1m 42s | oqc] Extracting: https://oqc.tech/company/resources (2/18), chunk 10/10
+[03:36:18 +1m 45s | oqc] Reading page (3/18): https://oqc.tech
+[03:36:18 +1m 45s | oqc] Extracting: https://oqc.tech (3/18), chunk 1/9
+[03:36:23 +1m 51s | oqc] Extracting: https://oqc.tech (3/18), chunk 2/9
+[03:36:28 +1m 55s | oqc] Extracting: https://oqc.tech (3/18), chunk 3/9
+[03:36:31 +1m 59s | oqc] Extracting: https://oqc.tech (3/18), chunk 4/9
+[03:36:41 +2m 6s | oqc] Repaired malformed JSON.
+[03:36:41 +2m 6s | oqc] Extracting: https://oqc.tech (3/18), chunk 5/9
+[03:36:48 +2m 12s | oqc] Repaired malformed JSON.
+[03:36:48 +2m 12s | oqc] Extracting: https://oqc.tech (3/18), chunk 6/9
+[03:36:54 +2m 18s | oqc] Repaired malformed JSON.
+[03:36:54 +2m 18s | oqc] Extracting: https://oqc.tech (3/18), chunk 7/9
+[03:37:04 +2m 28s | oqc] Repaired malformed JSON.
+[03:37:04 +2m 28s | oqc] Extracting: https://oqc.tech (3/18), chunk 8/9
+[03:37:08 +2m 32s | oqc] Extracting: https://oqc.tech (3/18), chunk 9/9
+[03:37:15 +2m 36s | oqc] Reading page (4/18): https://oqc.tech/access/oqc-cloud
+[03:37:15 +2m 36s | oqc] Extracting: https://oqc.tech/access/oqc-cloud (4/18), chunk 1/7
+[03:37:18 +2m 39s | oqc] Extracting: https://oqc.tech/access/oqc-cloud (4/18), chunk 2/7
+[03:37:24 +2m 46s | oqc] Repaired malformed JSON.
+[03:37:24 +2m 46s | oqc] Extracting: https://oqc.tech/access/oqc-cloud (4/18), chunk 3/7
+[03:37:31 +2m 53s | oqc] Repaired malformed JSON.
+[03:37:31 +2m 53s | oqc] Extracting: https://oqc.tech/access/oqc-cloud (4/18), chunk 4/7
+[03:37:36 +2m 58s | oqc] Repaired malformed JSON.
+[03:37:36 +2m 58s | oqc] Extracting: https://oqc.tech/access/oqc-cloud (4/18), chunk 5/7
+[03:37:42 +3m 4s | oqc] Repaired malformed JSON.
+[03:37:42 +3m 4s | oqc] Extracting: https://oqc.tech/access/oqc-cloud (4/18), chunk 6/7
+[03:37:50 +3m 8s | oqc] Extracting: https://oqc.tech/access/oqc-cloud (4/18), chunk 7/7
+[03:37:53 +3m 12s | oqc] Reading page (5/18): https://oqc.tech/company
+[03:37:53 +3m 12s | oqc] Extracting: https://oqc.tech/company (5/18), chunk 1/6
+[03:37:57 +3m 16s | oqc] Extracting: https://oqc.tech/company (5/18), chunk 2/6
+[03:38:05 +3m 23s | oqc] Repaired malformed JSON.
+[03:38:05 +3m 23s | oqc] Extracting: https://oqc.tech/company (5/18), chunk 3/6
+[03:38:12 +3m 30s | oqc] Repaired malformed JSON.
+[03:38:12 +3m 30s | oqc] Extracting: https://oqc.tech/company (5/18), chunk 4/6
+[03:38:17 +3m 35s | oqc] Repaired malformed JSON.
+[03:38:17 +3m 35s | oqc] Extracting: https://oqc.tech/company (5/18), chunk 5/6
+[03:38:20 +3m 38s | oqc] Extracting: https://oqc.tech/company (5/18), chunk 6/6
+[03:38:28 +3m 44s | oqc] Reading page (6/18): https://oqc.tech/access
+[03:38:28 +3m 44s | oqc] Extracting: https://oqc.tech/access (6/18), chunk 1/5
+[03:38:32 +3m 47s | oqc] Extracting: https://oqc.tech/access (6/18), chunk 2/5
+[03:38:38 +3m 54s | oqc] Repaired malformed JSON.
+[03:38:38 +3m 54s | oqc] Extracting: https://oqc.tech/access (6/18), chunk 3/5
+[03:38:43 +3m 59s | oqc] Repaired malformed JSON.
+[03:38:43 +3m 59s | oqc] Extracting: https://oqc.tech/access (6/18), chunk 4/5
+[03:38:48 +4m 4s | oqc] Extracting: https://oqc.tech/access (6/18), chunk 5/5
+[03:38:55 +4m 11s | oqc] Repaired malformed JSON.
+[03:38:55 +4m 11s | oqc] Reading page (7/18): https://oqc.tech/tech/technical-roadmap
+[03:38:55 +4m 11s | oqc] Extracting: https://oqc.tech/tech/technical-roadmap (7/18), chunk 1/13
+[03:39:01 +4m 14s | oqc] Extracting: https://oqc.tech/tech/technical-roadmap (7/18), chunk 2/13
+[03:39:08 +4m 21s | oqc] Repaired malformed JSON.
+[03:39:08 +4m 21s | oqc] Extracting: https://oqc.tech/tech/technical-roadmap (7/18), chunk 3/13
+[03:39:13 +4m 26s | oqc] Repaired malformed JSON.
+[03:39:13 +4m 26s | oqc] Extracting: https://oqc.tech/tech/technical-roadmap (7/18), chunk 4/13
+[03:39:18 +4m 30s | oqc] Extracting: https://oqc.tech/tech/technical-roadmap (7/18), chunk 5/13
+[03:39:23 +4m 35s | oqc] Extracting: https://oqc.tech/tech/technical-roadmap (7/18), chunk 6/13
+[03:39:29 +4m 41s | oqc] Repaired malformed JSON.
+[03:39:29 +4m 41s | oqc] Extracting: https://oqc.tech/tech/technical-roadmap (7/18), chunk 7/13
+[03:39:38 +4m 48s | oqc] Repaired malformed JSON.
+[03:39:38 +4m 48s | oqc] Extracting: https://oqc.tech/tech/technical-roadmap (7/18), chunk 8/13
+[03:39:44 +4m 54s | oqc] Extracting: https://oqc.tech/tech/technical-roadmap (7/18), chunk 9/13
+[03:39:50 +4m 59s | oqc] Extracting: https://oqc.tech/tech/technical-roadmap (7/18), chunk 10/13
+[03:39:54 +5m 4s | oqc] Extracting: https://oqc.tech/tech/technical-roadmap (7/18), chunk 11/13
+[03:40:00 +5m 10s | oqc] Repaired malformed JSON.
+[03:40:00 +5m 10s | oqc] Extracting: https://oqc.tech/tech/technical-roadmap (7/18), chunk 12/13
+[03:40:04 +5m 14s | oqc] Extracting: https://oqc.tech/tech/technical-roadmap (7/18), chunk 13/13
+[03:40:15 +5m 22s | oqc] Reading page (8/18): https://oqc.tech/applications
+[03:40:15 +5m 22s | oqc] Extracting: https://oqc.tech/applications (8/18), chunk 1/5
+[03:40:20 +5m 26s | oqc] Extracting: https://oqc.tech/applications (8/18), chunk 2/5
+[03:40:24 +5m 30s | oqc] Extracting: https://oqc.tech/applications (8/18), chunk 3/5
+[03:40:29 +5m 35s | oqc] Repaired malformed JSON.
+[03:40:29 +5m 35s | oqc] Extracting: https://oqc.tech/applications (8/18), chunk 4/5
+[03:40:34 +5m 41s | oqc] Extracting: https://oqc.tech/applications (8/18), chunk 5/5
+[03:40:38 +5m 45s | oqc] Reading page (9/18): https://oqc.tech/tech/research-development
+[03:40:38 +5m 45s | oqc] Extracting: https://oqc.tech/tech/research-development (9/18), chunk 1/8
+[03:40:44 +5m 48s | oqc] Extracting: https://oqc.tech/tech/research-development (9/18), chunk 2/8
+[03:40:50 +5m 54s | oqc] Repaired malformed JSON.
+[03:40:50 +5m 54s | oqc] Extracting: https://oqc.tech/tech/research-development (9/18), chunk 3/8
+[03:40:57 +6m 0s | oqc] Repaired malformed JSON.
+[03:40:57 +6m 0s | oqc] Extracting: https://oqc.tech/tech/research-development (9/18), chunk 4/8
+[03:41:04 +6m 8s | oqc] Repaired malformed JSON.
+[03:41:04 +6m 8s | oqc] Extracting: https://oqc.tech/tech/research-development (9/18), chunk 5/8
+[03:41:09 +6m 13s | oqc] Repaired malformed JSON.
+[03:41:09 +6m 13s | oqc] Extracting: https://oqc.tech/tech/research-development (9/18), chunk 6/8
+[03:41:16 +6m 20s | oqc] Extracting: https://oqc.tech/tech/research-development (9/18), chunk 7/8
+[03:41:24 +6m 25s | oqc] Extracting: https://oqc.tech/tech/research-development (9/18), chunk 8/8
+[03:41:28 +6m 29s | oqc] Reading page (10/18): https://oqc.tech/access/direct-access
+[03:41:28 +6m 29s | oqc] Extracting: https://oqc.tech/access/direct-access (10/18), chunk 1/8
+[03:41:31 +6m 33s | oqc] Extracting: https://oqc.tech/access/direct-access (10/18), chunk 2/8
+[03:41:35 +6m 37s | oqc] Extracting: https://oqc.tech/access/direct-access (10/18), chunk 3/8
+[03:41:43 +6m 45s | oqc] Repaired malformed JSON.
+[03:41:43 +6m 45s | oqc] Extracting: https://oqc.tech/access/direct-access (10/18), chunk 4/8
+[03:41:49 +6m 50s | oqc] Repaired malformed JSON.
+[03:41:49 +6m 50s | oqc] Extracting: https://oqc.tech/access/direct-access (10/18), chunk 5/8
+[03:41:57 +6m 56s | oqc] Repaired malformed JSON.
+[03:41:57 +6m 56s | oqc] Extracting: https://oqc.tech/access/direct-access (10/18), chunk 6/8
+[03:42:04 +7m 2s | oqc] Repaired malformed JSON.
+[03:42:04 +7m 2s | oqc] Extracting: https://oqc.tech/access/direct-access (10/18), chunk 7/8
+[03:42:13 +7m 12s | oqc] Repaired malformed JSON.
+[03:42:13 +7m 12s | oqc] Extracting: https://oqc.tech/access/direct-access (10/18), chunk 8/8
+[03:42:18 +7m 16s | oqc] Reading page (11/18): https://oqc.tech/tech
+[03:42:18 +7m 16s | oqc] Extracting: https://oqc.tech/tech (11/18), chunk 1/7
+[03:42:24 +7m 22s | oqc] Extracting: https://oqc.tech/tech (11/18), chunk 2/7
+[03:42:36 +7m 30s | oqc] Repaired malformed JSON.
+[03:42:36 +7m 30s | oqc] Extracting: https://oqc.tech/tech (11/18), chunk 3/7
+[03:42:43 +7m 38s | oqc] Repaired malformed JSON.
+[03:42:43 +7m 38s | oqc] Extracting: https://oqc.tech/tech (11/18), chunk 4/7
+[03:42:51 +7m 46s | oqc] Repaired malformed JSON.
+[03:42:51 +7m 46s | oqc] Extracting: https://oqc.tech/tech (11/18), chunk 5/7
+[03:42:57 +7m 52s | oqc] Repaired malformed JSON.
+[03:42:57 +7m 52s | oqc] Extracting: https://oqc.tech/tech (11/18), chunk 6/7
+[03:43:00 +7m 55s | oqc] Extracting: https://oqc.tech/tech (11/18), chunk 7/7
+[03:43:07 +7m 59s | oqc] Reading page (12/18): https://oqc.tech/tech/applications
+[03:43:07 +7m 59s | oqc] Extracting: https://oqc.tech/tech/applications (12/18), chunk 1/5
+[03:43:14 +8m 6s | oqc] Extracting: https://oqc.tech/tech/applications (12/18), chunk 2/5
+[03:43:17 +8m 9s | oqc] Extracting: https://oqc.tech/tech/applications (12/18), chunk 3/5
+[03:43:25 +8m 17s | oqc] Extracting: https://oqc.tech/tech/applications (12/18), chunk 4/5
+[03:43:31 +8m 23s | oqc] Extracting: https://oqc.tech/tech/applications (12/18), chunk 5/5
+[03:43:35 +8m 27s | oqc] Reading page (13/18): https://oqc.tech/company/senior-leadership
+[03:43:35 +8m 27s | oqc] Extracting: https://oqc.tech/company/senior-leadership (13/18), chunk 1/11
+[03:43:43 +8m 32s | oqc] Extracting: https://oqc.tech/company/senior-leadership (13/18), chunk 2/11
+[03:43:49 +8m 38s | oqc] Repaired malformed JSON.
+[03:43:49 +8m 38s | oqc] Extracting: https://oqc.tech/company/senior-leadership (13/18), chunk 3/11
+[03:43:57 +8m 45s | oqc] Repaired malformed JSON.
+[03:43:57 +8m 45s | oqc] Extracting: https://oqc.tech/company/senior-leadership (13/18), chunk 4/11
+[03:44:03 +8m 52s | oqc] Repaired malformed JSON.
+[03:44:03 +8m 52s | oqc] Extracting: https://oqc.tech/company/senior-leadership (13/18), chunk 5/11
+[03:44:11 +9m 0s | oqc] Repaired malformed JSON.
+[03:44:11 +9m 0s | oqc] Extracting: https://oqc.tech/company/senior-leadership (13/18), chunk 6/11
+[03:44:21 +9m 7s | oqc] Repaired malformed JSON.
+[03:44:21 +9m 7s | oqc] Extracting: https://oqc.tech/company/senior-leadership (13/18), chunk 7/11
+[03:44:28 +9m 14s | oqc] Repaired malformed JSON.
+[03:44:28 +9m 14s | oqc] Extracting: https://oqc.tech/company/senior-leadership (13/18), chunk 8/11
+[03:44:33 +9m 19s | oqc] Repaired malformed JSON.
+[03:44:33 +9m 19s | oqc] Extracting: https://oqc.tech/company/senior-leadership (13/18), chunk 9/11
+[03:44:38 +9m 24s | oqc] Repaired malformed JSON.
+[03:44:38 +9m 24s | oqc] Extracting: https://oqc.tech/company/senior-leadership (13/18), chunk 10/11
+[03:44:43 +9m 29s | oqc] Extracting: https://oqc.tech/company/senior-leadership (13/18), chunk 11/11
+[03:44:51 +9m 34s | oqc] Reading page (14/18): https://oqc.tech/access/deployments
+[03:44:51 +9m 34s | oqc] Extracting: https://oqc.tech/access/deployments (14/18), chunk 1/10
+[03:44:57 +9m 40s | oqc] Extracting: https://oqc.tech/access/deployments (14/18), chunk 2/10
+[03:45:04 +9m 47s | oqc] Repaired malformed JSON.
+[03:45:04 +9m 47s | oqc] Extracting: https://oqc.tech/access/deployments (14/18), chunk 3/10
+[03:45:13 +9m 56s | oqc] Repaired malformed JSON.
+[03:45:13 +9m 56s | oqc] Extracting: https://oqc.tech/access/deployments (14/18), chunk 4/10
+[03:45:22 +10m 4s | oqc] Repaired malformed JSON.
+[03:45:22 +10m 4s | oqc] Extracting: https://oqc.tech/access/deployments (14/18), chunk 5/10
+[03:45:31 +10m 11s | oqc] Repaired malformed JSON.
+[03:45:31 +10m 11s | oqc] Extracting: https://oqc.tech/access/deployments (14/18), chunk 6/10
+[03:45:40 +10m 19s | oqc] Repaired malformed JSON.
+[03:45:40 +10m 19s | oqc] Extracting: https://oqc.tech/access/deployments (14/18), chunk 7/10
+[03:45:47 +10m 26s | oqc] Repaired malformed JSON.
+[03:45:47 +10m 26s | oqc] Extracting: https://oqc.tech/access/deployments (14/18), chunk 8/10
+[03:45:55 +10m 35s | oqc] Repaired malformed JSON.
+[03:45:55 +10m 35s | oqc] Extracting: https://oqc.tech/access/deployments (14/18), chunk 9/10
+[03:46:02 +10m 39s | oqc] Extracting: https://oqc.tech/access/deployments (14/18), chunk 10/10
+[03:46:06 +10m 43s | oqc] Reading page (15/18): https://oqc.tech/company/careers-at-oqc
+[03:46:06 +10m 43s | oqc] Extracting: https://oqc.tech/company/careers-at-oqc (15/18), chunk 1/7
+[03:46:11 +10m 47s | oqc] Extracting: https://oqc.tech/company/careers-at-oqc (15/18), chunk 2/7
+[03:46:14 +10m 51s | oqc] Extracting: https://oqc.tech/company/careers-at-oqc (15/18), chunk 3/7
+[03:46:21 +10m 57s | oqc] Repaired malformed JSON.
+[03:46:21 +10m 57s | oqc] Extracting: https://oqc.tech/company/careers-at-oqc (15/18), chunk 4/7
+[03:46:28 +11m 4s | oqc] Repaired malformed JSON.
+[03:46:28 +11m 4s | oqc] Extracting: https://oqc.tech/company/careers-at-oqc (15/18), chunk 5/7
+[03:46:31 +11m 8s | oqc] Extracting: https://oqc.tech/company/careers-at-oqc (15/18), chunk 6/7
+[03:46:40 +11m 13s | oqc] Repaired malformed JSON.
+[03:46:40 +11m 13s | oqc] Extracting: https://oqc.tech/company/careers-at-oqc (15/18), chunk 7/7
+[03:46:44 +11m 18s | oqc] Reading page (16/18): https://oqc.tech/company/series-c-fundraise
+[03:46:44 +11m 18s | oqc] Extracting: https://oqc.tech/company/series-c-fundraise (16/18), chunk 1/11
+[03:46:48 +11m 22s | oqc] Extracting: https://oqc.tech/company/series-c-fundraise (16/18), chunk 2/11
+[03:46:54 +11m 27s | oqc] Repaired malformed JSON.
+[03:46:54 +11m 27s | oqc] Extracting: https://oqc.tech/company/series-c-fundraise (16/18), chunk 3/11
+[03:47:00 +11m 33s | oqc] Repaired malformed JSON.
+[03:47:00 +11m 33s | oqc] Extracting: https://oqc.tech/company/series-c-fundraise (16/18), chunk 4/11
+[03:47:07 +11m 40s | oqc] Repaired malformed JSON.
+[03:47:07 +11m 40s | oqc] Extracting: https://oqc.tech/company/series-c-fundraise (16/18), chunk 5/11
+[03:47:15 +11m 46s | oqc] Repaired malformed JSON.
+[03:47:15 +11m 46s | oqc] Extracting: https://oqc.tech/company/series-c-fundraise (16/18), chunk 6/11
+[03:47:21 +11m 51s | oqc] Repaired malformed JSON.
+[03:47:21 +11m 51s | oqc] Extracting: https://oqc.tech/company/series-c-fundraise (16/18), chunk 7/11
+[03:47:27 +11m 57s | oqc] Repaired malformed JSON.
+[03:47:27 +11m 57s | oqc] Extracting: https://oqc.tech/company/series-c-fundraise (16/18), chunk 8/11
+[03:47:33 +12m 3s | oqc] Repaired malformed JSON.
+[03:47:33 +12m 3s | oqc] Extracting: https://oqc.tech/company/series-c-fundraise (16/18), chunk 9/11
+[03:47:39 +12m 9s | oqc] Repaired malformed JSON.
+[03:47:39 +12m 9s | oqc] Extracting: https://oqc.tech/company/series-c-fundraise (16/18), chunk 10/11
+[03:47:44 +12m 15s | oqc] Extracting: https://oqc.tech/company/series-c-fundraise (16/18), chunk 11/11
+[03:47:52 +12m 19s | oqc] Reading page (17/18): https://oqc.tech/tech/devices
+[03:47:52 +12m 19s | oqc] Extracting: https://oqc.tech/tech/devices (17/18), chunk 1/7
+[03:47:55 +12m 22s | oqc] Extracting: https://oqc.tech/tech/devices (17/18), chunk 2/7
+[03:48:00 +12m 27s | oqc] Repaired malformed JSON.
+[03:48:00 +12m 27s | oqc] Extracting: https://oqc.tech/tech/devices (17/18), chunk 3/7
+[03:48:07 +12m 34s | oqc] Repaired malformed JSON.
+[03:48:07 +12m 34s | oqc] Extracting: https://oqc.tech/tech/devices (17/18), chunk 4/7
+[03:48:14 +12m 41s | oqc] Repaired malformed JSON.
+[03:48:14 +12m 41s | oqc] Extracting: https://oqc.tech/tech/devices (17/18), chunk 5/7
+[03:48:18 +12m 45s | oqc] Extracting: https://oqc.tech/tech/devices (17/18), chunk 6/7
+[03:48:26 +12m 50s | oqc] Extracting: https://oqc.tech/tech/devices (17/18), chunk 7/7
+[03:48:30 +12m 54s | oqc] Reading page (18/18): https://oqc.tech/get-in-touch
+[03:48:30 +12m 54s | oqc] Extracting: https://oqc.tech/get-in-touch (18/18), chunk 1/4
+[03:48:34 +12m 58s | oqc] Extracting: https://oqc.tech/get-in-touch (18/18), chunk 2/4
+[03:48:41 +13m 4s | oqc] Repaired malformed JSON.
+[03:48:41 +13m 4s | oqc] Extracting: https://oqc.tech/get-in-touch (18/18), chunk 3/4
+[03:48:48 +13m 12s | oqc] Repaired malformed JSON.
+[03:48:48 +13m 12s | oqc] Extracting: https://oqc.tech/get-in-touch (18/18), chunk 4/4
+[03:48:52 +13m 16s | oqc] Saved 1_actor_results.json with 234 extracted records
+
+[03:48:52 +13m 16s | oqc] === 2 clean actors ===
+[03:48:52 +13m 16s | oqc] Loaded 234 extracted records
+[03:48:52 +13m 16s | oqc] Saved 2_actor_nodes.json with 42 canonical actor nodes
+
+[03:48:52 +13m 16s | oqc] === 3 interaction extraction ===
+[03:48:53 +13m 16s | oqc] Extracting interactions: https://oqc.tech/company/newsroom (1/18), chunk 1/7
+[03:48:54 +13m 18s | oqc] Extracting interactions: https://oqc.tech/company/newsroom (1/18), chunk 2/7
+[03:49:05 +13m 26s | oqc] Extracting interactions: https://oqc.tech/company/newsroom (1/18), chunk 3/7
+[03:49:22 +13m 43s | oqc] Extracting interactions: https://oqc.tech/company/newsroom (1/18), chunk 4/7
+[03:49:38 +13m 56s | oqc] Extracting interactions: https://oqc.tech/company/newsroom (1/18), chunk 5/7
+[03:49:44 +14m 1s | oqc] Extracting interactions: https://oqc.tech/company/newsroom (1/18), chunk 6/7
+[03:49:45 +14m 3s | oqc] Extracting interactions: https://oqc.tech/company/newsroom (1/18), chunk 7/7
+[03:49:46 +14m 4s | oqc] Extracting interactions: https://oqc.tech/company/resources (2/18), chunk 1/10
+[03:49:48 +14m 5s | oqc] Extracting interactions: https://oqc.tech/company/resources (2/18), chunk 2/10
+[03:49:51 +14m 8s | oqc] Extracting interactions: https://oqc.tech/company/resources (2/18), chunk 3/10
+[03:49:56 +14m 13s | oqc] Extracting interactions: https://oqc.tech/company/resources (2/18), chunk 4/10
+[03:49:59 +14m 16s | oqc] Extracting interactions: https://oqc.tech/company/resources (2/18), chunk 5/10
+[03:50:02 +14m 19s | oqc] Extracting interactions: https://oqc.tech/company/resources (2/18), chunk 6/10
+[03:50:05 +14m 23s | oqc] Extracting interactions: https://oqc.tech/company/resources (2/18), chunk 8/10
+[03:50:10 +14m 25s | oqc] Extracting interactions: https://oqc.tech/company/resources (2/18), chunk 9/10
+[03:50:12 +14m 26s | oqc] Extracting interactions: https://oqc.tech/company/resources (2/18), chunk 10/10
+[03:50:13 +14m 27s | oqc] Extracting interactions: https://oqc.tech (3/18), chunk 1/9
+[03:50:14 +14m 29s | oqc] Extracting interactions: https://oqc.tech (3/18), chunk 6/9
+[03:50:21 +14m 35s | oqc] Extracting interactions: https://oqc.tech (3/18), chunk 7/9
+[03:50:31 +14m 46s | oqc] Extracting interactions: https://oqc.tech (3/18), chunk 8/9
+[03:50:33 +14m 47s | oqc] Extracting interactions: https://oqc.tech (3/18), chunk 9/9
+[03:50:37 +14m 51s | oqc] Extracting interactions: https://oqc.tech/access/oqc-cloud (4/18), chunk 1/7
+[03:50:38 +14m 53s | oqc] Extracting interactions: https://oqc.tech/access/oqc-cloud (4/18), chunk 2/7
+[03:50:41 +14m 56s | oqc] Extracting interactions: https://oqc.tech/access/oqc-cloud (4/18), chunk 3/7
+[03:50:51 +15m 2s | oqc] Extracting interactions: https://oqc.tech/access/oqc-cloud (4/18), chunk 4/7
+[03:50:55 +15m 6s | oqc] Extracting interactions: https://oqc.tech/access/oqc-cloud (4/18), chunk 5/7
+[03:50:57 +15m 8s | oqc] Extracting interactions: https://oqc.tech/access/oqc-cloud (4/18), chunk 6/7
+[03:50:58 +15m 9s | oqc] Extracting interactions: https://oqc.tech/access/oqc-cloud (4/18), chunk 7/7
+[03:50:59 +15m 11s | oqc] Extracting interactions: https://oqc.tech/company (5/18), chunk 1/6
+[03:51:01 +15m 12s | oqc] Extracting interactions: https://oqc.tech/company (5/18), chunk 2/6
+[03:51:04 +15m 15s | oqc] Extracting interactions: https://oqc.tech/company (5/18), chunk 3/6
+[03:51:08 +15m 19s | oqc] Extracting interactions: https://oqc.tech/company (5/18), chunk 4/6
+[03:51:11 +15m 22s | oqc] Extracting interactions: https://oqc.tech/company (5/18), chunk 5/6
+[03:51:12 +15m 24s | oqc] Extracting interactions: https://oqc.tech/company (5/18), chunk 6/6
+[03:51:14 +15m 25s | oqc] Extracting interactions: https://oqc.tech/access (6/18), chunk 1/5
+[03:51:16 +15m 27s | oqc] Extracting interactions: https://oqc.tech/access (6/18), chunk 2/5
+[03:51:22 +15m 31s | oqc] Extracting interactions: https://oqc.tech/access (6/18), chunk 3/5
+[03:51:26 +15m 34s | oqc] Extracting interactions: https://oqc.tech/access (6/18), chunk 4/5
+[03:51:27 +15m 36s | oqc] Extracting interactions: https://oqc.tech/access (6/18), chunk 5/5
+[03:51:30 +15m 38s | oqc] Extracting interactions: https://oqc.tech/tech/technical-roadmap (7/18), chunk 1/13
+[03:51:31 +15m 40s | oqc] Extracting interactions: https://oqc.tech/tech/technical-roadmap (7/18), chunk 2/13
+[03:51:33 +15m 41s | oqc] Extracting interactions: https://oqc.tech/tech/technical-roadmap (7/18), chunk 3/13
+[03:51:41 +15m 49s | oqc] Extracting interactions: https://oqc.tech/tech/technical-roadmap (7/18), chunk 4/13
+[03:51:50 +15m 58s | oqc] Extracting interactions: https://oqc.tech/tech/technical-roadmap (7/18), chunk 11/13
+[03:51:52 +16m 0s | oqc] Extracting interactions: https://oqc.tech/tech/technical-roadmap (7/18), chunk 12/13
+[03:51:53 +16m 2s | oqc] Extracting interactions: https://oqc.tech/tech/technical-roadmap (7/18), chunk 13/13
+[03:51:55 +16m 3s | oqc] Extracting interactions: https://oqc.tech/applications (8/18), chunk 1/5
+[03:51:57 +16m 5s | oqc] Extracting interactions: https://oqc.tech/applications (8/18), chunk 3/5
+[03:52:00 +16m 8s | oqc] Extracting interactions: https://oqc.tech/applications (8/18), chunk 4/5
+[03:52:01 +16m 10s | oqc] Extracting interactions: https://oqc.tech/applications (8/18), chunk 5/5
+[03:52:03 +16m 11s | oqc] Extracting interactions: https://oqc.tech/tech/research-development (9/18), chunk 1/8
+[03:52:04 +16m 12s | oqc] Extracting interactions: https://oqc.tech/tech/research-development (9/18), chunk 2/8
+[03:52:14 +16m 19s | oqc] Extracting interactions: https://oqc.tech/tech/research-development (9/18), chunk 3/8
+[03:52:22 +16m 26s | oqc] Extracting interactions: https://oqc.tech/tech/research-development (9/18), chunk 4/8
+[03:52:29 +16m 33s | oqc] Extracting interactions: https://oqc.tech/tech/research-development (9/18), chunk 5/8
+[03:52:33 +16m 38s | oqc] Extracting interactions: https://oqc.tech/tech/research-development (9/18), chunk 6/8
+[03:52:35 +16m 40s | oqc] Extracting interactions: https://oqc.tech/tech/research-development (9/18), chunk 7/8
+[03:52:37 +16m 41s | oqc] Extracting interactions: https://oqc.tech/tech/research-development (9/18), chunk 8/8
+[03:52:38 +16m 42s | oqc] Extracting interactions: https://oqc.tech/access/direct-access (10/18), chunk 1/8
+[03:52:39 +16m 44s | oqc] Extracting interactions: https://oqc.tech/access/direct-access (10/18), chunk 3/8
+[03:52:43 +16m 48s | oqc] Extracting interactions: https://oqc.tech/access/direct-access (10/18), chunk 4/8
+[03:52:49 +16m 56s | oqc] Extracting interactions: https://oqc.tech/access/direct-access (10/18), chunk 5/8
+[03:52:57 +17m 3s | oqc] Extracting interactions: https://oqc.tech/access/direct-access (10/18), chunk 6/8
+[03:53:05 +17m 11s | oqc] Extracting interactions: https://oqc.tech/access/direct-access (10/18), chunk 7/8
+[03:53:07 +17m 13s | oqc] Extracting interactions: https://oqc.tech/access/direct-access (10/18), chunk 8/8
+[03:53:11 +17m 17s | oqc] Extracting interactions: https://oqc.tech/tech (11/18), chunk 1/7
+[03:53:12 +17m 18s | oqc] Extracting interactions: https://oqc.tech/tech (11/18), chunk 2/7
+[03:53:17 +17m 22s | oqc] Extracting interactions: https://oqc.tech/tech (11/18), chunk 3/7
+[03:53:26 +17m 31s | oqc] Extracting interactions: https://oqc.tech/tech (11/18), chunk 4/7
+[03:53:34 +17m 39s | oqc] Extracting interactions: https://oqc.tech/tech (11/18), chunk 5/7
+[03:53:35 +17m 40s | oqc] Extracting interactions: https://oqc.tech/tech (11/18), chunk 6/7
+[03:53:37 +17m 42s | oqc] Extracting interactions: https://oqc.tech/tech (11/18), chunk 7/7
+[03:53:38 +17m 43s | oqc] Extracting interactions: https://oqc.tech/tech/applications (12/18), chunk 1/5
+[03:53:42 +17m 47s | oqc] Extracting interactions: https://oqc.tech/tech/applications (12/18), chunk 3/5
+[03:53:47 +17m 52s | oqc] Extracting interactions: https://oqc.tech/tech/applications (12/18), chunk 4/5
+[03:53:49 +17m 53s | oqc] Extracting interactions: https://oqc.tech/tech/applications (12/18), chunk 5/5
+[03:53:50 +17m 55s | oqc] Extracting interactions: https://oqc.tech/company/senior-leadership (13/18), chunk 1/11
+[03:53:52 +17m 56s | oqc] Extracting interactions: https://oqc.tech/company/senior-leadership (13/18), chunk 2/11
+[03:53:59 +18m 4s | oqc] Extracting interactions: https://oqc.tech/company/senior-leadership (13/18), chunk 3/11
+[03:54:12 +18m 16s | oqc] Extracting interactions: https://oqc.tech/company/senior-leadership (13/18), chunk 4/11
+[03:54:19 +18m 24s | oqc] Extracting interactions: https://oqc.tech/company/senior-leadership (13/18), chunk 5/11
+[03:54:31 +18m 33s | oqc] Extracting interactions: https://oqc.tech/company/senior-leadership (13/18), chunk 6/11
+[03:54:45 +18m 47s | oqc] Extracting interactions: https://oqc.tech/company/senior-leadership (13/18), chunk 7/11
+[03:55:17 +19m 18s | oqc] Extracting interactions: https://oqc.tech/company/senior-leadership (13/18), chunk 8/11
+[03:55:26 +19m 27s | oqc] Extracting interactions: https://oqc.tech/company/senior-leadership (13/18), chunk 9/11
+[03:55:33 +19m 32s | oqc] Extracting interactions: https://oqc.tech/company/senior-leadership (13/18), chunk 10/11
+[03:55:35 +19m 34s | oqc] Extracting interactions: https://oqc.tech/company/senior-leadership (13/18), chunk 11/11
+[03:55:36 +19m 35s | oqc] Extracting interactions: https://oqc.tech/access/deployments (14/18), chunk 1/10
+[03:55:38 +19m 37s | oqc] Extracting interactions: https://oqc.tech/access/deployments (14/18), chunk 3/10
+[03:55:44 +19m 42s | oqc] Extracting interactions: https://oqc.tech/access/deployments (14/18), chunk 4/10
+[03:55:52 +19m 50s | oqc] Extracting interactions: https://oqc.tech/access/deployments (14/18), chunk 5/10
+[03:55:58 +19m 57s | oqc] Extracting interactions: https://oqc.tech/access/deployments (14/18), chunk 6/10
+[03:56:10 +20m 6s | oqc] Extracting interactions: https://oqc.tech/access/deployments (14/18), chunk 7/10
+[03:56:21 +20m 18s | oqc] Extracting interactions: https://oqc.tech/access/deployments (14/18), chunk 8/10
+[03:56:27 +20m 23s | oqc] Extracting interactions: https://oqc.tech/access/deployments (14/18), chunk 9/10
+[03:56:29 +20m 25s | oqc] Extracting interactions: https://oqc.tech/access/deployments (14/18), chunk 10/10
+[03:56:30 +20m 26s | oqc] Extracting interactions: https://oqc.tech/company/careers-at-oqc (15/18), chunk 1/7
+[03:56:32 +20m 28s | oqc] Extracting interactions: https://oqc.tech/company/careers-at-oqc (15/18), chunk 5/7
+[03:56:36 +20m 32s | oqc] Extracting interactions: https://oqc.tech/company/careers-at-oqc (15/18), chunk 6/7
+[03:56:38 +20m 34s | oqc] Extracting interactions: https://oqc.tech/company/careers-at-oqc (15/18), chunk 7/7
+[03:56:43 +20m 37s | oqc] Extracting interactions: https://oqc.tech/company/series-c-fundraise (16/18), chunk 1/11
+[03:56:44 +20m 38s | oqc] Extracting interactions: https://oqc.tech/company/series-c-fundraise (16/18), chunk 2/11
+[03:56:48 +20m 42s | oqc] Extracting interactions: https://oqc.tech/company/series-c-fundraise (16/18), chunk 3/11
+[03:56:57 +20m 51s | oqc] Extracting interactions: https://oqc.tech/company/series-c-fundraise (16/18), chunk 4/11
+[03:57:08 +21m 2s | oqc] Extracting interactions: https://oqc.tech/company/series-c-fundraise (16/18), chunk 5/11
+[03:57:28 +21m 20s | oqc] Extracting interactions: https://oqc.tech/company/series-c-fundraise (16/18), chunk 6/11
+[03:57:43 +21m 34s | oqc] Extracting interactions: https://oqc.tech/company/series-c-fundraise (16/18), chunk 7/11
+[03:57:52 +21m 41s | oqc] Extracting interactions: https://oqc.tech/company/series-c-fundraise (16/18), chunk 8/11
+[03:58:02 +21m 51s | oqc] Extracting interactions: https://oqc.tech/company/series-c-fundraise (16/18), chunk 9/11
+[03:58:08 +21m 57s | oqc] Extracting interactions: https://oqc.tech/company/series-c-fundraise (16/18), chunk 10/11
+[03:58:10 +21m 59s | oqc] Extracting interactions: https://oqc.tech/company/series-c-fundraise (16/18), chunk 11/11
+[03:58:13 +22m 2s | oqc] Extracting interactions: https://oqc.tech/tech/devices (17/18), chunk 1/7
+[03:58:14 +22m 3s | oqc] Extracting interactions: https://oqc.tech/tech/devices (17/18), chunk 2/7
+[03:58:20 +22m 9s | oqc] Extracting interactions: https://oqc.tech/tech/devices (17/18), chunk 3/7
+[03:58:28 +22m 14s | oqc] Extracting interactions: https://oqc.tech/tech/devices (17/18), chunk 4/7
+[03:58:38 +22m 24s | oqc] Extracting interactions: https://oqc.tech/tech/devices (17/18), chunk 5/7
+[03:58:41 +22m 27s | oqc] Extracting interactions: https://oqc.tech/tech/devices (17/18), chunk 6/7
+[03:58:42 +22m 29s | oqc] Extracting interactions: https://oqc.tech/tech/devices (17/18), chunk 7/7
+[03:58:44 +22m 30s | oqc] Extracting interactions: https://oqc.tech/get-in-touch (18/18), chunk 1/4
+[03:58:45 +22m 32s | oqc] Extracting interactions: https://oqc.tech/get-in-touch (18/18), chunk 2/4
+[03:58:56 +22m 42s | oqc] Extracting interactions: https://oqc.tech/get-in-touch (18/18), chunk 3/4
+[03:59:09 +22m 52s | oqc] Extracting interactions: https://oqc.tech/get-in-touch (18/18), chunk 4/4
+[03:59:11 +22m 55s | oqc] Saved 3_interaction_results.json with 162 extracted interactions.
+
+[03:59:11 +22m 55s | oqc] === 4 clean interactions ===
+[03:59:11 +22m 55s | oqc] Saved 4_edges.json with 36 cleaned interactions.
+
+[03:59:11 +22m 55s | oqc] === 5 helix enrichment ===
+[03:59:11 +22m 55s | oqc] Wrote 5_nodes.json (42 actors)
+[03:59:11 +22m 55s | oqc] Wrote 5_edges.json (36 interactions)
+[03:59:11 +22m 55s | oqc] Actor helix counts: {'Academia': 6, 'Civil Society': 3, 'Government': 2, 'Industry': 16, 'Intermediary': 6, 'Unknown': 9}
+[03:59:11 +22m 55s | oqc] Functional-space counts: {'Innovation': 11, 'Intra-helix / Not classified': 16, 'Unknown': 9}
+
+[03:59:11 +22m 55s | oqc] === 6 network visualisation ===
+[03:59:12 +22m 55s | oqc] Wrote quantum_network.html
+[03:59:12 +22m 55s | oqc] Nodes: 42
+[03:59:12 +22m 55s | oqc] Edges: 20
+
+[03:59:12 +22m 55s | oqc] Done. Outputs written to: /home/lv/IDP/idpdeeptech/pipeline/site_outputs/oqc
+[03:59:12 +22m 55s | oqc] Log: /home/lv/IDP/idpdeeptech/pipeline/site_outputs/oqc/run.log
+
+========================================================================
+RUN FINISHED 2026-06-17 03:59:12  (OK)
+Started:     2026-06-17 03:34:24
+Elapsed:     22m 55s
+========================================================================

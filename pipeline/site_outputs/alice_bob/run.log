@@ -359,3 +359,814 @@ RUN FINISHED 2026-06-14 16:00:37  (OK)
 Started:     2026-06-14 15:35:55
 Elapsed:     24m 42s
 ========================================================================
+
+========================================================================
+RUN STARTED  2026-06-16 18:16:28
+site_pipeline.py https://alice-bob.com/
+========================================================================
+
+[18:16:28 +0s | alice_bob] === 0 crawl site ===
+[18:16:29 +1s | alice_bob] Cleared existing crawl_output/
+[18:16:30 +2s | alice_bob] [INIT].... → Crawl4AI 0.8.6 
+[18:16:32 +4s | alice_bob] [FETCH]... ↓ https://alice-bob.com/                                                                               | ✓ | ⏱: 1.36s 
+[18:16:32 +4s | alice_bob] [SCRAPE].. ◆ https://alice-bob.com/                                                                               | ✓ | ⏱: 0.16s 
+[18:16:32 +4s | alice_bob] [COMPLETE] ● https://alice-bob.com/                                                                               | ✓ | ⏱: 1.56s 
+[18:16:34 +6s | alice_bob] [FETCH]... ↓ https://alice-bob.com/                                                                               | ✓ | ⏱: 1.83s 
+[18:16:34 +6s | alice_bob] [SCRAPE].. ◆ https://alice-bob.com/                                                                               | ✓ | ⏱: 0.19s 
+[18:16:34 +6s | alice_bob] [COMPLETE] ● https://alice-bob.com/                                                                               | ✓ | ⏱: 2.07s 
+[18:16:35 +7s | alice_bob] [FETCH]... ↓ https://alice-bob.com/blog/                                                                          | ✓ | ⏱: 2.61s 
+[18:16:35 +7s | alice_bob] [SCRAPE].. ◆ https://alice-bob.com/blog/                                                                          | ✓ | ⏱: 0.13s 
+[18:16:35 +7s | alice_bob] [COMPLETE] ● https://alice-bob.com/blog/                                                                          | ✓ | ⏱: 2.79s 
+[18:16:35 +7s | alice_bob] [FETCH]... ↓ https://alice-bob.com/join-us/                                                                       | ✓ | ⏱: 2.93s 
+[18:16:35 +7s | alice_bob] [SCRAPE].. ◆ https://alice-bob.com/join-us/                                                                       | ✓ | ⏱: 0.27s 
+[18:16:35 +7s | alice_bob] [COMPLETE] ● https://alice-bob.com/join-us/                                                                       | ✓ | ⏱: 3.27s 
+[18:16:36 +8s | alice_bob] [FETCH]... ↓ https://alice-bob.com/science/                                                                       | ✓ | ⏱: 3.68s 
+[18:16:36 +8s | alice_bob] [SCRAPE].. ◆ https://alice-bob.com/science/                                                                       | ✓ | ⏱: 0.23s 
+[18:16:36 +8s | alice_bob] [COMPLETE] ● https://alice-bob.com/science/                                                                       | ✓ | ⏱: 3.98s 
+[18:16:36 +8s | alice_bob] [FETCH]... ↓ https://alice-bob.com/thats-us/                                                                      | ✓ | ⏱: 4.18s 
+[18:16:37 +9s | alice_bob] [SCRAPE].. ◆ https://alice-bob.com/thats-us/                                                                      | ✓ | ⏱: 0.42s 
+[18:16:37 +9s | alice_bob] [COMPLETE] ● https://alice-bob.com/thats-us/                                                                      | ✓ | ⏱: 4.65s 
+[18:16:37 +9s | alice_bob] [FETCH]... ↓ https://alice-bob.com/platform/                                                                      | ✓ | ⏱: 4.60s 
+[18:16:37 +9s | alice_bob] [SCRAPE].. ◆ https://alice-bob.com/platform/                                                                      | ✓ | ⏱: 0.36s 
+[18:16:37 +9s | alice_bob] [COMPLETE] ● https://alice-bob.com/platform/                                                                      | ✓ | ⏱: 5.01s 
+[18:16:37 +9s | alice_bob] [FETCH]... ↓ https://alice-bob.com/roadmap/                                                                       | ✓ | ⏱: 5.14s 
+[18:16:37 +9s | alice_bob] [SCRAPE].. ◆ https://alice-bob.com/roadmap/                                                                       | ✓ | ⏱: 0.17s 
+[18:16:37 +9s | alice_bob] [COMPLETE] ● https://alice-bob.com/roadmap/                                                                       | ✓ | ⏱: 5.36s 
+[18:16:37 +10s | alice_bob] [FETCH]... ↓ https://alice-bob.com/engineering/                                                                   | ✓ | ⏱: 5.50s 
+[18:16:38 +10s | alice_bob] [SCRAPE].. ◆ https://alice-bob.com/engineering/                                                                   | ✓ | ⏱: 0.49s 
+[18:16:38 +10s | alice_bob] [COMPLETE] ● https://alice-bob.com/engineering/                                                                   | ✓ | ⏱: 6.06s 
+[18:16:38 +10s | alice_bob] [FETCH]... ↓ https://alice-bob.com/newsroom/alice-bob-100m-series-b-fundraising-press-release/                    | ✓ | ⏱: 6.21s 
+[18:16:38 +10s | alice_bob] [SCRAPE].. ◆ https://alice-bob.com/newsroom/alice-bob-100m-series-b-fundraising-press-release/                    | ✓ | ⏱: 0.19s 
+[18:16:38 +11s | alice_bob] [COMPLETE] ● https://alice-bob.com/newsroom/alice-bob-100m-series-b-fundraising-press-release/                    | ✓ | ⏱: 6.47s 
+[18:16:38 +11s | alice_bob] [FETCH]... ↓ https://alice-bob.com/blog/who-are-alice-and-bob-the-story-behind-our-name/                          | ✓ | ⏱: 6.51s 
+[18:16:39 +11s | alice_bob] [SCRAPE].. ◆ https://alice-bob.com/blog/who-are-alice-and-bob-the-story-behind-our-name/                          | ✓ | ⏱: 0.24s 
+[18:16:39 +11s | alice_bob] [COMPLETE] ● https://alice-bob.com/blog/who-are-alice-and-bob-the-story-behind-our-name/                          | ✓ | ⏱: 6.82s 
+[18:16:39 +11s | alice_bob] [FETCH]... ↓ https://alice-bob.com/blog/not-all-logical-qubits-are-created-equal-heres-how-to-benchmark-them/     | ✓ | ⏱: 6.79s 
+[18:16:39 +11s | alice_bob] [SCRAPE].. ◆ https://alice-bob.com/blog/not-all-logical-qubits-are-created-equal-heres-how-to-benchmark-them/     | ✓ | ⏱: 0.33s 
+[18:16:39 +11s | alice_bob] [COMPLETE] ● https://alice-bob.com/blog/not-all-logical-qubits-are-created-equal-heres-how-to-benchmark-them/     | ✓ | ⏱: 7.22s 
+[18:16:40 +12s | alice_bob] [FETCH]... ↓ https://alice-bob.com/publications/                                                                  | ✓ | ⏱: 7.64s 
+[18:16:40 +12s | alice_bob] [SCRAPE].. ◆ https://alice-bob.com/publications/                                                                  | ✓ | ⏱: 0.21s 
+[18:16:40 +12s | alice_bob] [COMPLETE] ● https://alice-bob.com/publications/                                                                  | ✓ | ⏱: 7.90s 
+[18:16:40 +12s | alice_bob] [FETCH]... ↓ https://alice-bob.com/hpc-report/                                                                    | ✓ | ⏱: 7.87s 
+[18:16:40 +12s | alice_bob] [SCRAPE].. ◆ https://alice-bob.com/hpc-report/                                                                    | ✓ | ⏱: 0.21s 
+[18:16:40 +12s | alice_bob] [COMPLETE] ● https://alice-bob.com/hpc-report/                                                                    | ✓ | ⏱: 8.14s 
+[18:16:40 +12s | alice_bob] [FETCH]... ↓ https://alice-bob.com/glossary/                                                                      | ✓ | ⏱: 8.14s 
+[18:16:40 +12s | alice_bob] [SCRAPE].. ◆ https://alice-bob.com/glossary/                                                                      | ✓ | ⏱: 0.23s 
+[18:16:40 +12s | alice_bob] [COMPLETE] ● https://alice-bob.com/glossary/                                                                      | ✓ | ⏱: 8.41s 
+[18:16:41 +13s | alice_bob] [FETCH]... ↓ https://alice-bob.com/newsroom/                                                                      | ✓ | ⏱: 8.57s 
+[18:16:41 +13s | alice_bob] [SCRAPE].. ◆ https://alice-bob.com/newsroom/                                                                      | ✓ | ⏱: 0.21s 
+[18:16:41 +13s | alice_bob] [COMPLETE] ● https://alice-bob.com/newsroom/                                                                      | ✓ | ⏱: 8.82s 
+[18:16:41 +13s | alice_bob] [FETCH]... ↓ https://alice-bob.com/blog/beyond-moore-harnessing-quantum-for-the-next-era-of-hpc/                  | ✓ | ⏱: 8.81s 
+[18:16:41 +13s | alice_bob] [SCRAPE].. ◆ https://alice-bob.com/blog/beyond-moore-harnessing-quantum-for-the-next-era-of-hpc/                  | ✓ | ⏱: 0.15s 
+[18:16:41 +13s | alice_bob] [COMPLETE] ● https://alice-bob.com/blog/beyond-moore-harnessing-quantum-for-the-next-era-of-hpc/                  | ✓ | ⏱: 9.01s 
+[18:16:41 +13s | alice_bob] [FETCH]... ↓ https://alice-bob.com/blog/this-is-not-a-product-launch/                                             | ✓ | ⏱: 8.98s 
+[18:16:41 +13s | alice_bob] [SCRAPE].. ◆ https://alice-bob.com/blog/this-is-not-a-product-launch/                                             | ✓ | ⏱: 0.16s 
+[18:16:41 +13s | alice_bob] [COMPLETE] ● https://alice-bob.com/blog/this-is-not-a-product-launch/                                             | ✓ | ⏱: 9.19s 
+[18:16:41 +13s | alice_bob] [FETCH]... ↓ https://alice-bob.com/blog/alice-bob-2030-roadmap-to-useful-quantum-computers/                       | ✓ | ⏱: 9.34s 
+[18:16:41 +14s | alice_bob] [SCRAPE].. ◆ https://alice-bob.com/blog/alice-bob-2030-roadmap-to-useful-quantum-computers/                       | ✓ | ⏱: 0.16s 
+[18:16:42 +14s | alice_bob] [COMPLETE] ● https://alice-bob.com/blog/alice-bob-2030-roadmap-to-useful-quantum-computers/                       | ✓ | ⏱: 9.54s 
+[18:16:42 +14s | alice_bob] [FETCH]... ↓ https://alice-bob.com/blog/scaling-the-cats-quantum-engineering-at-infrastructure-scale/             | ✓ | ⏱: 9.49s 
+[18:16:42 +14s | alice_bob] [SCRAPE].. ◆ https://alice-bob.com/blog/scaling-the-cats-quantum-engineering-at-infrastructure-scale/             | ✓ | ⏱: 0.19s 
+[18:16:42 +14s | alice_bob] [COMPLETE] ● https://alice-bob.com/blog/scaling-the-cats-quantum-engineering-at-infrastructure-scale/             | ✓ | ⏱: 9.74s 
+[18:16:42 +14s | alice_bob] Saved: crawl_output/8d94a1d7da_alice-bob.com.json
+[18:16:42 +14s | alice_bob] Duplicate skipped: https://alice-bob.com
+[18:16:42 +14s | alice_bob] Saved: crawl_output/31e27cdf56_alice-bob.com_blog.json
+[18:16:42 +14s | alice_bob] Saved: crawl_output/772a13a4f1_alice-bob.com_join-us.json
+[18:16:42 +14s | alice_bob] Saved: crawl_output/98644346a4_alice-bob.com_science.json
+[18:16:42 +14s | alice_bob] Saved: crawl_output/d9b2c590ed_alice-bob.com_thats-us.json
+[18:16:42 +14s | alice_bob] Saved: crawl_output/cb4dc4c6ea_alice-bob.com_platform.json
+[18:16:42 +14s | alice_bob] Saved: crawl_output/46c7ffa254_alice-bob.com_roadmap.json
+[18:16:42 +14s | alice_bob] Saved: crawl_output/0645aef715_alice-bob.com_engineering.json
+[18:16:42 +14s | alice_bob] Saved: crawl_output/d2248bcb96_alice-bob.com_newsroom_alice-bob-100m-series-b-fundraising-press-release.json
+[18:16:42 +14s | alice_bob] Saved: crawl_output/40b2f20fa3_alice-bob.com_blog_who-are-alice-and-bob-the-story-behind-our-name.json
+[18:16:42 +14s | alice_bob] Saved: crawl_output/23ef26d800_alice-bob.com_blog_not-all-logical-qubits-are-created-equal-heres-how-to-benchmark-them.json
+[18:16:42 +14s | alice_bob] Saved: crawl_output/53f8f270b8_alice-bob.com_publications.json
+[18:16:42 +14s | alice_bob] Saved: crawl_output/eaebb5b746_alice-bob.com_hpc-report.json
+[18:16:42 +14s | alice_bob] Saved: crawl_output/c6e03ddf4f_alice-bob.com_glossary.json
+[18:16:42 +14s | alice_bob] Saved: crawl_output/b50a1a8271_alice-bob.com_newsroom.json
+[18:16:42 +14s | alice_bob] Saved: crawl_output/29e0ed741b_alice-bob.com_blog_beyond-moore-harnessing-quantum-for-the-next-era-of-hpc.json
+[18:16:42 +14s | alice_bob] Saved: crawl_output/37fb9cb23b_alice-bob.com_blog_this-is-not-a-product-launch.json
+[18:16:42 +14s | alice_bob] Saved: crawl_output/32b21fafee_alice-bob.com_blog_alice-bob-2030-roadmap-to-useful-quantum-computers.json
+[18:16:42 +14s | alice_bob] Saved: crawl_output/d83447daa8_alice-bob.com_blog_scaling-the-cats-quantum-engineering-at-infrastructure-scale.json
+
+[18:16:42 +15s | alice_bob] === 1 actor extraction ===
+[18:16:43 +15s | alice_bob] Reading page (1/19): https://alice-bob.com/engineering
+[18:16:43 +15s | alice_bob] Extracting: https://alice-bob.com/engineering (1/19), chunk 1/17
+[18:16:51 +21s | alice_bob] Repaired malformed JSON.
+[18:16:51 +21s | alice_bob] Extracting: https://alice-bob.com/engineering (1/19), chunk 2/17
+[18:16:56 +26s | alice_bob] Extracting: https://alice-bob.com/engineering (1/19), chunk 3/17
+[18:16:58 +28s | alice_bob] Extracting: https://alice-bob.com/engineering (1/19), chunk 4/17
+[18:17:04 +34s | alice_bob] Repaired malformed JSON.
+[18:17:04 +34s | alice_bob] Extracting: https://alice-bob.com/engineering (1/19), chunk 5/17
+[18:17:06 +36s | alice_bob] Extracting: https://alice-bob.com/engineering (1/19), chunk 6/17
+[18:17:07 +37s | alice_bob] Extracting: https://alice-bob.com/engineering (1/19), chunk 7/17
+[18:17:09 +39s | alice_bob] Extracting: https://alice-bob.com/engineering (1/19), chunk 8/17
+[18:17:14 +44s | alice_bob] Extracting: https://alice-bob.com/engineering (1/19), chunk 9/17
+[18:17:19 +49s | alice_bob] Extracting: https://alice-bob.com/engineering (1/19), chunk 10/17
+[18:17:22 +50s | alice_bob] Extracting: https://alice-bob.com/engineering (1/19), chunk 11/17
+[18:17:30 +58s | alice_bob] Extracting: https://alice-bob.com/engineering (1/19), chunk 12/17
+[18:17:38 +1m 6s | alice_bob] Repaired malformed JSON.
+[18:17:38 +1m 6s | alice_bob] Extracting: https://alice-bob.com/engineering (1/19), chunk 13/17
+[18:17:45 +1m 13s | alice_bob] Repaired malformed JSON.
+[18:17:45 +1m 13s | alice_bob] Extracting: https://alice-bob.com/engineering (1/19), chunk 14/17
+[18:17:54 +1m 21s | alice_bob] Extracting: https://alice-bob.com/engineering (1/19), chunk 15/17
+[18:17:59 +1m 27s | alice_bob] Extracting: https://alice-bob.com/engineering (1/19), chunk 16/17
+[18:18:05 +1m 33s | alice_bob] Extracting: https://alice-bob.com/engineering (1/19), chunk 17/17
+[18:18:19 +1m 44s | alice_bob] Repaired malformed JSON.
+[18:18:19 +1m 44s | alice_bob] Reading page (2/19): https://alice-bob.com/blog/not-all-logical-qubits-are-created-equal-heres-how-to-benchmark-them
+[18:18:19 +1m 44s | alice_bob] Extracting: https://alice-bob.com/blog/not-all-logical-qubits-are-created-equal-heres-how-to-benchmark-them (2/19), chunk 1/17
+[18:18:25 +1m 50s | alice_bob] Repaired malformed JSON.
+[18:18:25 +1m 50s | alice_bob] Extracting: https://alice-bob.com/blog/not-all-logical-qubits-are-created-equal-heres-how-to-benchmark-them (2/19), chunk 2/17
+[18:18:34 +1m 59s | alice_bob] Repaired malformed JSON.
+[18:18:34 +1m 59s | alice_bob] Extracting: https://alice-bob.com/blog/not-all-logical-qubits-are-created-equal-heres-how-to-benchmark-them (2/19), chunk 3/17
+[18:18:43 +2m 8s | alice_bob] Repaired malformed JSON.
+[18:18:43 +2m 8s | alice_bob] Extracting: https://alice-bob.com/blog/not-all-logical-qubits-are-created-equal-heres-how-to-benchmark-them (2/19), chunk 4/17
+[18:18:48 +2m 13s | alice_bob] Repaired malformed JSON.
+[18:18:48 +2m 13s | alice_bob] Extracting: https://alice-bob.com/blog/not-all-logical-qubits-are-created-equal-heres-how-to-benchmark-them (2/19), chunk 5/17
+[18:18:56 +2m 21s | alice_bob] Repaired malformed JSON.
+[18:18:56 +2m 21s | alice_bob] Extracting: https://alice-bob.com/blog/not-all-logical-qubits-are-created-equal-heres-how-to-benchmark-them (2/19), chunk 6/17
+[18:19:00 +2m 25s | alice_bob] Extracting: https://alice-bob.com/blog/not-all-logical-qubits-are-created-equal-heres-how-to-benchmark-them (2/19), chunk 7/17
+[18:19:05 +2m 30s | alice_bob] Extracting: https://alice-bob.com/blog/not-all-logical-qubits-are-created-equal-heres-how-to-benchmark-them (2/19), chunk 8/17
+[18:19:11 +2m 36s | alice_bob] Repaired malformed JSON.
+[18:19:11 +2m 36s | alice_bob] Extracting: https://alice-bob.com/blog/not-all-logical-qubits-are-created-equal-heres-how-to-benchmark-them (2/19), chunk 9/17
+[18:19:19 +2m 42s | alice_bob] Extracting: https://alice-bob.com/blog/not-all-logical-qubits-are-created-equal-heres-how-to-benchmark-them (2/19), chunk 10/17
+[18:19:26 +2m 49s | alice_bob] Repaired malformed JSON.
+[18:19:26 +2m 49s | alice_bob] Extracting: https://alice-bob.com/blog/not-all-logical-qubits-are-created-equal-heres-how-to-benchmark-them (2/19), chunk 11/17
+[18:19:35 +2m 58s | alice_bob] Repaired malformed JSON.
+[18:19:35 +2m 58s | alice_bob] Extracting: https://alice-bob.com/blog/not-all-logical-qubits-are-created-equal-heres-how-to-benchmark-them (2/19), chunk 12/17
+[18:19:44 +3m 6s | alice_bob] Repaired malformed JSON.
+[18:19:44 +3m 6s | alice_bob] Extracting: https://alice-bob.com/blog/not-all-logical-qubits-are-created-equal-heres-how-to-benchmark-them (2/19), chunk 13/17
+[18:19:49 +3m 12s | alice_bob] Extracting: https://alice-bob.com/blog/not-all-logical-qubits-are-created-equal-heres-how-to-benchmark-them (2/19), chunk 14/17
+[18:19:57 +3m 19s | alice_bob] Extracting: https://alice-bob.com/blog/not-all-logical-qubits-are-created-equal-heres-how-to-benchmark-them (2/19), chunk 15/17
+[18:20:01 +3m 23s | alice_bob] Extracting: https://alice-bob.com/blog/not-all-logical-qubits-are-created-equal-heres-how-to-benchmark-them (2/19), chunk 16/17
+[18:20:07 +3m 29s | alice_bob] Repaired malformed JSON.
+[18:20:07 +3m 29s | alice_bob] Extracting: https://alice-bob.com/blog/not-all-logical-qubits-are-created-equal-heres-how-to-benchmark-them (2/19), chunk 17/17
+[18:20:12 +3m 33s | alice_bob] Reading page (3/19): https://alice-bob.com/blog/beyond-moore-harnessing-quantum-for-the-next-era-of-hpc
+[18:20:12 +3m 33s | alice_bob] Extracting: https://alice-bob.com/blog/beyond-moore-harnessing-quantum-for-the-next-era-of-hpc (3/19), chunk 1/21
+[18:20:20 +3m 41s | alice_bob] Repaired malformed JSON.
+[18:20:20 +3m 41s | alice_bob] Extracting: https://alice-bob.com/blog/beyond-moore-harnessing-quantum-for-the-next-era-of-hpc (3/19), chunk 2/21
+[18:20:28 +3m 47s | alice_bob] Repaired malformed JSON.
+[18:20:28 +3m 47s | alice_bob] Extracting: https://alice-bob.com/blog/beyond-moore-harnessing-quantum-for-the-next-era-of-hpc (3/19), chunk 3/21
+[18:20:35 +3m 54s | alice_bob] Repaired malformed JSON.
+[18:20:35 +3m 54s | alice_bob] Extracting: https://alice-bob.com/blog/beyond-moore-harnessing-quantum-for-the-next-era-of-hpc (3/19), chunk 4/21
+[18:20:41 +4m 1s | alice_bob] Repaired malformed JSON.
+[18:20:41 +4m 1s | alice_bob] Extracting: https://alice-bob.com/blog/beyond-moore-harnessing-quantum-for-the-next-era-of-hpc (3/19), chunk 5/21
+[18:20:47 +4m 7s | alice_bob] Repaired malformed JSON.
+[18:20:47 +4m 7s | alice_bob] Extracting: https://alice-bob.com/blog/beyond-moore-harnessing-quantum-for-the-next-era-of-hpc (3/19), chunk 6/21
+[18:20:49 +4m 8s | alice_bob] Extracting: https://alice-bob.com/blog/beyond-moore-harnessing-quantum-for-the-next-era-of-hpc (3/19), chunk 7/21
+[18:20:51 +4m 11s | alice_bob] Extracting: https://alice-bob.com/blog/beyond-moore-harnessing-quantum-for-the-next-era-of-hpc (3/19), chunk 8/21
+[18:20:56 +4m 16s | alice_bob] Repaired malformed JSON.
+[18:20:56 +4m 16s | alice_bob] Extracting: https://alice-bob.com/blog/beyond-moore-harnessing-quantum-for-the-next-era-of-hpc (3/19), chunk 9/21
+[18:21:03 +4m 21s | alice_bob] Extracting: https://alice-bob.com/blog/beyond-moore-harnessing-quantum-for-the-next-era-of-hpc (3/19), chunk 10/21
+[18:21:20 +4m 39s | alice_bob] Repaired malformed JSON.
+[18:21:20 +4m 39s | alice_bob] Extracting: https://alice-bob.com/blog/beyond-moore-harnessing-quantum-for-the-next-era-of-hpc (3/19), chunk 11/21
+[18:21:26 +4m 44s | alice_bob] Repaired malformed JSON.
+[18:21:26 +4m 44s | alice_bob] Extracting: https://alice-bob.com/blog/beyond-moore-harnessing-quantum-for-the-next-era-of-hpc (3/19), chunk 12/21
+[18:21:37 +4m 53s | alice_bob] Repaired malformed JSON.
+[18:21:37 +4m 53s | alice_bob] Extracting: https://alice-bob.com/blog/beyond-moore-harnessing-quantum-for-the-next-era-of-hpc (3/19), chunk 13/21
+[18:21:44 +5m 0s | alice_bob] Repaired malformed JSON.
+[18:21:44 +5m 0s | alice_bob] Extracting: https://alice-bob.com/blog/beyond-moore-harnessing-quantum-for-the-next-era-of-hpc (3/19), chunk 14/21
+[18:21:50 +5m 7s | alice_bob] Repaired malformed JSON.
+[18:21:50 +5m 7s | alice_bob] Extracting: https://alice-bob.com/blog/beyond-moore-harnessing-quantum-for-the-next-era-of-hpc (3/19), chunk 15/21
+[18:21:57 +5m 14s | alice_bob] Repaired malformed JSON.
+[18:21:57 +5m 14s | alice_bob] Extracting: https://alice-bob.com/blog/beyond-moore-harnessing-quantum-for-the-next-era-of-hpc (3/19), chunk 16/21
+[18:22:05 +5m 22s | alice_bob] Repaired malformed JSON.
+[18:22:05 +5m 22s | alice_bob] Extracting: https://alice-bob.com/blog/beyond-moore-harnessing-quantum-for-the-next-era-of-hpc (3/19), chunk 17/21
+[18:22:15 +5m 30s | alice_bob] Repaired malformed JSON.
+[18:22:15 +5m 30s | alice_bob] Extracting: https://alice-bob.com/blog/beyond-moore-harnessing-quantum-for-the-next-era-of-hpc (3/19), chunk 18/21
+[18:22:22 +5m 37s | alice_bob] Repaired malformed JSON.
+[18:22:22 +5m 37s | alice_bob] Extracting: https://alice-bob.com/blog/beyond-moore-harnessing-quantum-for-the-next-era-of-hpc (3/19), chunk 19/21
+[18:22:27 +5m 41s | alice_bob] Extracting: https://alice-bob.com/blog/beyond-moore-harnessing-quantum-for-the-next-era-of-hpc (3/19), chunk 20/21
+[18:22:31 +5m 45s | alice_bob] Extracting: https://alice-bob.com/blog/beyond-moore-harnessing-quantum-for-the-next-era-of-hpc (3/19), chunk 21/21
+[18:22:34 +5m 49s | alice_bob] Reading page (4/19): https://alice-bob.com/blog
+[18:22:34 +5m 49s | alice_bob] Extracting: https://alice-bob.com/blog (4/19), chunk 1/8
+[18:22:36 +5m 50s | alice_bob] Extracting: https://alice-bob.com/blog (4/19), chunk 2/8
+[18:22:40 +5m 54s | alice_bob] Extracting: https://alice-bob.com/blog (4/19), chunk 3/8
+[18:22:45 +5m 58s | alice_bob] Extracting: https://alice-bob.com/blog (4/19), chunk 4/8
+[18:22:52 +6m 4s | alice_bob] Extracting: https://alice-bob.com/blog (4/19), chunk 5/8
+[18:22:59 +6m 11s | alice_bob] Extracting: https://alice-bob.com/blog (4/19), chunk 6/8
+[18:23:06 +6m 18s | alice_bob] Repaired malformed JSON.
+[18:23:06 +6m 18s | alice_bob] Extracting: https://alice-bob.com/blog (4/19), chunk 7/8
+[18:23:10 +6m 22s | alice_bob] Extracting: https://alice-bob.com/blog (4/19), chunk 8/8
+[18:23:15 +6m 27s | alice_bob] Reading page (5/19): https://alice-bob.com/blog/alice-bob-2030-roadmap-to-useful-quantum-computers
+[18:23:15 +6m 27s | alice_bob] Extracting: https://alice-bob.com/blog/alice-bob-2030-roadmap-to-useful-quantum-computers (5/19), chunk 1/19
+[18:23:31 +6m 40s | alice_bob] Extracting: https://alice-bob.com/blog/alice-bob-2030-roadmap-to-useful-quantum-computers (5/19), chunk 2/19
+[18:23:37 +6m 47s | alice_bob] Repaired malformed JSON.
+[18:23:37 +6m 47s | alice_bob] Extracting: https://alice-bob.com/blog/alice-bob-2030-roadmap-to-useful-quantum-computers (5/19), chunk 3/19
+[18:23:40 +6m 50s | alice_bob] Extracting: https://alice-bob.com/blog/alice-bob-2030-roadmap-to-useful-quantum-computers (5/19), chunk 4/19
+[18:23:46 +6m 56s | alice_bob] Repaired malformed JSON.
+[18:23:46 +6m 56s | alice_bob] Extracting: https://alice-bob.com/blog/alice-bob-2030-roadmap-to-useful-quantum-computers (5/19), chunk 5/19
+[18:23:56 +7m 4s | alice_bob] Repaired malformed JSON.
+[18:23:56 +7m 4s | alice_bob] Extracting: https://alice-bob.com/blog/alice-bob-2030-roadmap-to-useful-quantum-computers (5/19), chunk 6/19
+[18:23:59 +7m 6s | alice_bob] Extracting: https://alice-bob.com/blog/alice-bob-2030-roadmap-to-useful-quantum-computers (5/19), chunk 7/19
+[18:24:00 +7m 8s | alice_bob] Extracting: https://alice-bob.com/blog/alice-bob-2030-roadmap-to-useful-quantum-computers (5/19), chunk 8/19
+[18:24:08 +7m 16s | alice_bob] Repaired malformed JSON.
+[18:24:08 +7m 16s | alice_bob] Extracting: https://alice-bob.com/blog/alice-bob-2030-roadmap-to-useful-quantum-computers (5/19), chunk 9/19
+[18:24:15 +7m 22s | alice_bob] Repaired malformed JSON.
+[18:24:15 +7m 22s | alice_bob] Extracting: https://alice-bob.com/blog/alice-bob-2030-roadmap-to-useful-quantum-computers (5/19), chunk 10/19
+[18:24:24 +7m 31s | alice_bob] Repaired malformed JSON.
+[18:24:24 +7m 31s | alice_bob] Extracting: https://alice-bob.com/blog/alice-bob-2030-roadmap-to-useful-quantum-computers (5/19), chunk 11/19
+[18:24:34 +7m 39s | alice_bob] Repaired malformed JSON.
+[18:24:34 +7m 39s | alice_bob] Extracting: https://alice-bob.com/blog/alice-bob-2030-roadmap-to-useful-quantum-computers (5/19), chunk 12/19
+[18:24:42 +7m 47s | alice_bob] Extracting: https://alice-bob.com/blog/alice-bob-2030-roadmap-to-useful-quantum-computers (5/19), chunk 13/19
+[18:24:46 +7m 51s | alice_bob] Extracting: https://alice-bob.com/blog/alice-bob-2030-roadmap-to-useful-quantum-computers (5/19), chunk 14/19
+[18:24:52 +7m 58s | alice_bob] Extracting: https://alice-bob.com/blog/alice-bob-2030-roadmap-to-useful-quantum-computers (5/19), chunk 15/19
+[18:24:58 +8m 3s | alice_bob] Repaired malformed JSON.
+[18:24:58 +8m 3s | alice_bob] Extracting: https://alice-bob.com/blog/alice-bob-2030-roadmap-to-useful-quantum-computers (5/19), chunk 16/19
+[18:25:06 +8m 10s | alice_bob] Repaired malformed JSON.
+[18:25:06 +8m 10s | alice_bob] Extracting: https://alice-bob.com/blog/alice-bob-2030-roadmap-to-useful-quantum-computers (5/19), chunk 17/19
+[18:25:11 +8m 15s | alice_bob] Extracting: https://alice-bob.com/blog/alice-bob-2030-roadmap-to-useful-quantum-computers (5/19), chunk 18/19
+[18:25:17 +8m 21s | alice_bob] Repaired malformed JSON.
+[18:25:17 +8m 21s | alice_bob] Extracting: https://alice-bob.com/blog/alice-bob-2030-roadmap-to-useful-quantum-computers (5/19), chunk 19/19
+[18:25:22 +8m 26s | alice_bob] Reading page (6/19): https://alice-bob.com/blog/this-is-not-a-product-launch
+[18:25:22 +8m 26s | alice_bob] Extracting: https://alice-bob.com/blog/this-is-not-a-product-launch (6/19), chunk 1/14
+[18:25:24 +8m 27s | alice_bob] Extracting: https://alice-bob.com/blog/this-is-not-a-product-launch (6/19), chunk 2/14
+[18:25:30 +8m 33s | alice_bob] Extracting: https://alice-bob.com/blog/this-is-not-a-product-launch (6/19), chunk 3/14
+[18:25:41 +8m 42s | alice_bob] Repaired malformed JSON.
+[18:25:41 +8m 42s | alice_bob] Extracting: https://alice-bob.com/blog/this-is-not-a-product-launch (6/19), chunk 4/14
+[18:25:46 +8m 48s | alice_bob] Repaired malformed JSON.
+[18:25:46 +8m 48s | alice_bob] Extracting: https://alice-bob.com/blog/this-is-not-a-product-launch (6/19), chunk 5/14
+[18:25:52 +8m 54s | alice_bob] Repaired malformed JSON.
+[18:25:52 +8m 54s | alice_bob] Extracting: https://alice-bob.com/blog/this-is-not-a-product-launch (6/19), chunk 6/14
+[18:25:54 +8m 55s | alice_bob] Extracting: https://alice-bob.com/blog/this-is-not-a-product-launch (6/19), chunk 7/14
+[18:25:58 +8m 59s | alice_bob] Extracting: https://alice-bob.com/blog/this-is-not-a-product-launch (6/19), chunk 8/14
+[18:26:03 +9m 5s | alice_bob] Extracting: https://alice-bob.com/blog/this-is-not-a-product-launch (6/19), chunk 9/14
+[18:26:14 +9m 13s | alice_bob] Repaired malformed JSON.
+[18:26:14 +9m 13s | alice_bob] Extracting: https://alice-bob.com/blog/this-is-not-a-product-launch (6/19), chunk 10/14
+[18:26:21 +9m 20s | alice_bob] Repaired malformed JSON.
+[18:26:21 +9m 20s | alice_bob] Extracting: https://alice-bob.com/blog/this-is-not-a-product-launch (6/19), chunk 11/14
+[18:26:27 +9m 26s | alice_bob] Repaired malformed JSON.
+[18:26:27 +9m 26s | alice_bob] Extracting: https://alice-bob.com/blog/this-is-not-a-product-launch (6/19), chunk 12/14
+[18:26:37 +9m 36s | alice_bob] Repaired malformed JSON.
+[18:26:37 +9m 36s | alice_bob] Extracting: https://alice-bob.com/blog/this-is-not-a-product-launch (6/19), chunk 13/14
+[18:26:40 +9m 39s | alice_bob] Extracting: https://alice-bob.com/blog/this-is-not-a-product-launch (6/19), chunk 14/14
+[18:26:48 +9m 44s | alice_bob] Reading page (7/19): https://alice-bob.com/blog/who-are-alice-and-bob-the-story-behind-our-name
+[18:26:48 +9m 44s | alice_bob] Extracting: https://alice-bob.com/blog/who-are-alice-and-bob-the-story-behind-our-name (7/19), chunk 1/16
+[18:27:09 +10m 6s | alice_bob] Repaired malformed JSON.
+[18:27:09 +10m 6s | alice_bob] Extracting: https://alice-bob.com/blog/who-are-alice-and-bob-the-story-behind-our-name (7/19), chunk 2/16
+[18:27:15 +10m 12s | alice_bob] Repaired malformed JSON.
+[18:27:15 +10m 12s | alice_bob] Extracting: https://alice-bob.com/blog/who-are-alice-and-bob-the-story-behind-our-name (7/19), chunk 3/16
+[18:27:25 +10m 22s | alice_bob] Repaired malformed JSON.
+[18:27:25 +10m 22s | alice_bob] Extracting: https://alice-bob.com/blog/who-are-alice-and-bob-the-story-behind-our-name (7/19), chunk 4/16
+[18:27:36 +10m 30s | alice_bob] Repaired malformed JSON.
+[18:27:36 +10m 30s | alice_bob] Extracting: https://alice-bob.com/blog/who-are-alice-and-bob-the-story-behind-our-name (7/19), chunk 5/16
+[18:27:38 +10m 32s | alice_bob] Extracting: https://alice-bob.com/blog/who-are-alice-and-bob-the-story-behind-our-name (7/19), chunk 6/16
+[18:27:40 +10m 34s | alice_bob] Extracting: https://alice-bob.com/blog/who-are-alice-and-bob-the-story-behind-our-name (7/19), chunk 7/16
+[18:27:46 +10m 39s | alice_bob] Extracting: https://alice-bob.com/blog/who-are-alice-and-bob-the-story-behind-our-name (7/19), chunk 8/16
+[18:27:51 +10m 45s | alice_bob] Extracting: https://alice-bob.com/blog/who-are-alice-and-bob-the-story-behind-our-name (7/19), chunk 9/16
+[18:27:59 +10m 52s | alice_bob] Repaired malformed JSON.
+[18:27:59 +10m 52s | alice_bob] Extracting: https://alice-bob.com/blog/who-are-alice-and-bob-the-story-behind-our-name (7/19), chunk 10/16
+[18:28:05 +10m 59s | alice_bob] Repaired malformed JSON.
+[18:28:05 +10m 59s | alice_bob] Extracting: https://alice-bob.com/blog/who-are-alice-and-bob-the-story-behind-our-name (7/19), chunk 11/16
+[18:28:14 +11m 5s | alice_bob] Repaired malformed JSON.
+[18:28:14 +11m 5s | alice_bob] Extracting: https://alice-bob.com/blog/who-are-alice-and-bob-the-story-behind-our-name (7/19), chunk 12/16
+[18:28:21 +11m 12s | alice_bob] Repaired malformed JSON.
+[18:28:21 +11m 12s | alice_bob] Extracting: https://alice-bob.com/blog/who-are-alice-and-bob-the-story-behind-our-name (7/19), chunk 13/16
+[18:28:26 +11m 17s | alice_bob] Extracting: https://alice-bob.com/blog/who-are-alice-and-bob-the-story-behind-our-name (7/19), chunk 14/16
+[18:28:37 +11m 28s | alice_bob] Repaired malformed JSON.
+[18:28:37 +11m 28s | alice_bob] Extracting: https://alice-bob.com/blog/who-are-alice-and-bob-the-story-behind-our-name (7/19), chunk 15/16
+[18:28:48 +11m 37s | alice_bob] Repaired malformed JSON.
+[18:28:48 +11m 37s | alice_bob] Extracting: https://alice-bob.com/blog/who-are-alice-and-bob-the-story-behind-our-name (7/19), chunk 16/16
+[18:28:57 +11m 45s | alice_bob] Repaired malformed JSON.
+[18:28:57 +11m 45s | alice_bob] Reading page (8/19): https://alice-bob.com/roadmap
+[18:28:57 +11m 45s | alice_bob] Extracting: https://alice-bob.com/roadmap (8/19), chunk 1/13
+[18:28:59 +11m 48s | alice_bob] Extracting: https://alice-bob.com/roadmap (8/19), chunk 2/13
+[18:29:06 +11m 54s | alice_bob] Extracting: https://alice-bob.com/roadmap (8/19), chunk 3/13
+[18:29:07 +11m 56s | alice_bob] Extracting: https://alice-bob.com/roadmap (8/19), chunk 4/13
+[18:29:19 +12m 5s | alice_bob] Extracting: https://alice-bob.com/roadmap (8/19), chunk 5/13
+[18:29:21 +12m 7s | alice_bob] Extracting: https://alice-bob.com/roadmap (8/19), chunk 6/13
+[18:29:23 +12m 9s | alice_bob] Extracting: https://alice-bob.com/roadmap (8/19), chunk 7/13
+[18:29:24 +12m 10s | alice_bob] Extracting: https://alice-bob.com/roadmap (8/19), chunk 8/13
+[18:29:29 +12m 15s | alice_bob] Extracting: https://alice-bob.com/roadmap (8/19), chunk 9/13
+[18:29:36 +12m 22s | alice_bob] Extracting: https://alice-bob.com/roadmap (8/19), chunk 10/13
+[18:29:41 +12m 27s | alice_bob] Extracting: https://alice-bob.com/roadmap (8/19), chunk 11/13
+[18:29:47 +12m 33s | alice_bob] Extracting: https://alice-bob.com/roadmap (8/19), chunk 12/13
+[18:29:54 +12m 38s | alice_bob] Extracting: https://alice-bob.com/roadmap (8/19), chunk 13/13
+[18:30:04 +12m 48s | alice_bob] Reading page (9/19): https://alice-bob.com/publications
+[18:30:04 +12m 48s | alice_bob] Extracting: https://alice-bob.com/publications (9/19), chunk 1/14
+[18:30:07 +12m 50s | alice_bob] Extracting: https://alice-bob.com/publications (9/19), chunk 2/14
+[18:30:12 +12m 56s | alice_bob] Extracting: https://alice-bob.com/publications (9/19), chunk 3/14
+[18:30:19 +13m 2s | alice_bob] Repaired malformed JSON.
+[18:30:19 +13m 2s | alice_bob] Extracting: https://alice-bob.com/publications (9/19), chunk 4/14
+[18:30:29 +13m 10s | alice_bob] Extracting: https://alice-bob.com/publications (9/19), chunk 5/14
+[18:30:35 +13m 16s | alice_bob] Repaired malformed JSON.
+[18:30:35 +13m 16s | alice_bob] Extracting: https://alice-bob.com/publications (9/19), chunk 6/14
+[18:30:36 +13m 17s | alice_bob] Extracting: https://alice-bob.com/publications (9/19), chunk 7/14
+[18:30:38 +13m 19s | alice_bob] Extracting: https://alice-bob.com/publications (9/19), chunk 8/14
+[18:30:42 +13m 23s | alice_bob] Extracting: https://alice-bob.com/publications (9/19), chunk 9/14
+[18:30:51 +13m 32s | alice_bob] Repaired malformed JSON.
+[18:30:51 +13m 32s | alice_bob] Extracting: https://alice-bob.com/publications (9/19), chunk 10/14
+[18:30:59 +13m 40s | alice_bob] Repaired malformed JSON.
+[18:30:59 +13m 40s | alice_bob] Extracting: https://alice-bob.com/publications (9/19), chunk 11/14
+[18:31:08 +13m 47s | alice_bob] Repaired malformed JSON.
+[18:31:08 +13m 47s | alice_bob] Extracting: https://alice-bob.com/publications (9/19), chunk 12/14
+[18:31:18 +13m 57s | alice_bob] Repaired malformed JSON.
+[18:31:18 +13m 57s | alice_bob] Extracting: https://alice-bob.com/publications (9/19), chunk 13/14
+[18:31:27 +14m 6s | alice_bob] Repaired malformed JSON.
+[18:31:27 +14m 6s | alice_bob] Extracting: https://alice-bob.com/publications (9/19), chunk 14/14
+[18:31:39 +14m 15s | alice_bob] Repaired malformed JSON.
+[18:31:39 +14m 15s | alice_bob] Reading page (10/19): https://alice-bob.com/join-us
+[18:31:39 +14m 15s | alice_bob] Extracting: https://alice-bob.com/join-us (10/19), chunk 1/10
+[18:31:43 +14m 19s | alice_bob] Extracting: https://alice-bob.com/join-us (10/19), chunk 2/10
+[18:31:45 +14m 21s | alice_bob] Extracting: https://alice-bob.com/join-us (10/19), chunk 3/10
+[18:31:51 +14m 27s | alice_bob] Extracting: https://alice-bob.com/join-us (10/19), chunk 4/10
+[18:31:57 +14m 33s | alice_bob] Repaired malformed JSON.
+[18:31:57 +14m 33s | alice_bob] Extracting: https://alice-bob.com/join-us (10/19), chunk 5/10
+[18:32:03 +14m 40s | alice_bob] Extracting: https://alice-bob.com/join-us (10/19), chunk 6/10
+[18:32:07 +14m 43s | alice_bob] Extracting: https://alice-bob.com/join-us (10/19), chunk 7/10
+[18:32:17 +14m 51s | alice_bob] Repaired malformed JSON.
+[18:32:17 +14m 51s | alice_bob] Extracting: https://alice-bob.com/join-us (10/19), chunk 8/10
+[18:32:23 +14m 57s | alice_bob] Repaired malformed JSON.
+[18:32:23 +14m 57s | alice_bob] Extracting: https://alice-bob.com/join-us (10/19), chunk 9/10
+[18:32:27 +15m 1s | alice_bob] Extracting: https://alice-bob.com/join-us (10/19), chunk 10/10
+[18:32:49 +15m 20s | alice_bob] Reading page (11/19): https://alice-bob.com
+[18:32:49 +15m 20s | alice_bob] Extracting: https://alice-bob.com (11/19), chunk 1/12
+[18:32:54 +15m 26s | alice_bob] Extracting: https://alice-bob.com (11/19), chunk 2/12
+[18:32:55 +15m 27s | alice_bob] Extracting: https://alice-bob.com (11/19), chunk 3/12
+[18:32:59 +15m 31s | alice_bob] Extracting: https://alice-bob.com (11/19), chunk 4/12
+[18:33:03 +15m 35s | alice_bob] Extracting: https://alice-bob.com (11/19), chunk 5/12
+[18:33:08 +15m 40s | alice_bob] Repaired malformed JSON.
+[18:33:08 +15m 40s | alice_bob] Extracting: https://alice-bob.com (11/19), chunk 6/12
+[18:33:16 +15m 48s | alice_bob] Repaired malformed JSON.
+[18:33:16 +15m 48s | alice_bob] Extracting: https://alice-bob.com (11/19), chunk 7/12
+[18:33:24 +15m 54s | alice_bob] Repaired malformed JSON.
+[18:33:24 +15m 54s | alice_bob] Extracting: https://alice-bob.com (11/19), chunk 8/12
+[18:33:31 +16m 1s | alice_bob] Repaired malformed JSON.
+[18:33:31 +16m 1s | alice_bob] Extracting: https://alice-bob.com (11/19), chunk 9/12
+[18:33:36 +16m 6s | alice_bob] Repaired malformed JSON.
+[18:33:36 +16m 6s | alice_bob] Extracting: https://alice-bob.com (11/19), chunk 10/12
+[18:33:44 +16m 13s | alice_bob] Repaired malformed JSON.
+[18:33:44 +16m 13s | alice_bob] Extracting: https://alice-bob.com (11/19), chunk 11/12
+[18:33:50 +16m 20s | alice_bob] Extracting: https://alice-bob.com (11/19), chunk 12/12
+[18:33:57 +16m 24s | alice_bob] Reading page (12/19): https://alice-bob.com/science
+[18:33:57 +16m 24s | alice_bob] Extracting: https://alice-bob.com/science (12/19), chunk 1/13
+[18:33:59 +16m 26s | alice_bob] Extracting: https://alice-bob.com/science (12/19), chunk 2/13
+[18:34:03 +16m 31s | alice_bob] Extracting: https://alice-bob.com/science (12/19), chunk 3/13
+[18:34:05 +16m 32s | alice_bob] Extracting: https://alice-bob.com/science (12/19), chunk 4/13
+[18:34:07 +16m 34s | alice_bob] Extracting: https://alice-bob.com/science (12/19), chunk 5/13
+[18:34:14 +16m 41s | alice_bob] Repaired malformed JSON.
+[18:34:14 +16m 41s | alice_bob] Extracting: https://alice-bob.com/science (12/19), chunk 6/13
+[18:34:15 +16m 42s | alice_bob] Extracting: https://alice-bob.com/science (12/19), chunk 7/13
+[18:34:20 +16m 48s | alice_bob] Extracting: https://alice-bob.com/science (12/19), chunk 8/13
+[18:34:26 +16m 53s | alice_bob] Extracting: https://alice-bob.com/science (12/19), chunk 9/13
+[18:34:33 +16m 58s | alice_bob] Extracting: https://alice-bob.com/science (12/19), chunk 10/13
+[18:34:40 +17m 5s | alice_bob] Extracting: https://alice-bob.com/science (12/19), chunk 11/13
+[18:34:47 +17m 12s | alice_bob] Repaired malformed JSON.
+[18:34:47 +17m 12s | alice_bob] Extracting: https://alice-bob.com/science (12/19), chunk 12/13
+[18:34:53 +17m 18s | alice_bob] Repaired malformed JSON.
+[18:34:53 +17m 18s | alice_bob] Extracting: https://alice-bob.com/science (12/19), chunk 13/13
+[18:35:00 +17m 25s | alice_bob] Reading page (13/19): https://alice-bob.com/newsroom
+[18:35:00 +17m 25s | alice_bob] Extracting: https://alice-bob.com/newsroom (13/19), chunk 1/14
+[18:35:11 +17m 33s | alice_bob] Repaired malformed JSON.
+[18:35:11 +17m 33s | alice_bob] Extracting: https://alice-bob.com/newsroom (13/19), chunk 2/14
+[18:35:17 +17m 39s | alice_bob] Extracting: https://alice-bob.com/newsroom (13/19), chunk 3/14
+[18:35:24 +17m 46s | alice_bob] Repaired malformed JSON.
+[18:35:24 +17m 46s | alice_bob] Extracting: https://alice-bob.com/newsroom (13/19), chunk 4/14
+[18:35:31 +17m 53s | alice_bob] Extracting: https://alice-bob.com/newsroom (13/19), chunk 5/14
+[18:35:43 +18m 3s | alice_bob] Repaired malformed JSON.
+[18:35:43 +18m 3s | alice_bob] Extracting: https://alice-bob.com/newsroom (13/19), chunk 6/14
+[18:35:45 +18m 4s | alice_bob] Extracting: https://alice-bob.com/newsroom (13/19), chunk 7/14
+[18:35:47 +18m 7s | alice_bob] Extracting: https://alice-bob.com/newsroom (13/19), chunk 8/14
+[18:35:52 +18m 12s | alice_bob] Extracting: https://alice-bob.com/newsroom (13/19), chunk 9/14
+[18:35:56 +18m 15s | alice_bob] Extracting: https://alice-bob.com/newsroom (13/19), chunk 10/14
+[18:36:03 +18m 22s | alice_bob] Repaired malformed JSON.
+[18:36:03 +18m 22s | alice_bob] Extracting: https://alice-bob.com/newsroom (13/19), chunk 11/14
+[18:36:09 +18m 29s | alice_bob] Repaired malformed JSON.
+[18:36:09 +18m 29s | alice_bob] Extracting: https://alice-bob.com/newsroom (13/19), chunk 12/14
+[18:36:18 +18m 35s | alice_bob] Repaired malformed JSON.
+[18:36:18 +18m 35s | alice_bob] Extracting: https://alice-bob.com/newsroom (13/19), chunk 13/14
+[18:36:22 +18m 39s | alice_bob] Extracting: https://alice-bob.com/newsroom (13/19), chunk 14/14
+[18:36:26 +18m 44s | alice_bob] Reading page (14/19): https://alice-bob.com/glossary
+[18:36:26 +18m 44s | alice_bob] Extracting: https://alice-bob.com/glossary (14/19), chunk 1/16
+[18:36:35 +18m 52s | alice_bob] Repaired malformed JSON.
+[18:36:35 +18m 52s | alice_bob] Extracting: https://alice-bob.com/glossary (14/19), chunk 2/16
+[18:36:43 +19m 0s | alice_bob] Extracting: https://alice-bob.com/glossary (14/19), chunk 3/16
+[18:36:54 +19m 8s | alice_bob] Repaired malformed JSON.
+[18:36:54 +19m 8s | alice_bob] Extracting: https://alice-bob.com/glossary (14/19), chunk 4/16
+[18:37:01 +19m 15s | alice_bob] Repaired malformed JSON.
+[18:37:01 +19m 15s | alice_bob] Extracting: https://alice-bob.com/glossary (14/19), chunk 5/16
+[18:37:08 +19m 22s | alice_bob] Repaired malformed JSON.
+[18:37:08 +19m 22s | alice_bob] Extracting: https://alice-bob.com/glossary (14/19), chunk 6/16
+[18:37:13 +19m 27s | alice_bob] Extracting: https://alice-bob.com/glossary (14/19), chunk 7/16
+[18:37:20 +19m 34s | alice_bob] Extracting: https://alice-bob.com/glossary (14/19), chunk 8/16
+[18:37:28 +19m 40s | alice_bob] Extracting: https://alice-bob.com/glossary (14/19), chunk 9/16
+[18:37:34 +19m 46s | alice_bob] Extracting: https://alice-bob.com/glossary (14/19), chunk 10/16
+[18:37:40 +19m 52s | alice_bob] Extracting: https://alice-bob.com/glossary (14/19), chunk 11/16
+[18:37:41 +19m 53s | alice_bob] Extracting: https://alice-bob.com/glossary (14/19), chunk 12/16
+[18:37:47 +19m 59s | alice_bob] Repaired malformed JSON.
+[18:37:47 +19m 59s | alice_bob] Extracting: https://alice-bob.com/glossary (14/19), chunk 13/16
+[18:37:52 +20m 4s | alice_bob] Extracting: https://alice-bob.com/glossary (14/19), chunk 14/16
+[18:37:57 +20m 9s | alice_bob] Extracting: https://alice-bob.com/glossary (14/19), chunk 15/16
+[18:38:01 +20m 13s | alice_bob] Extracting: https://alice-bob.com/glossary (14/19), chunk 16/16
+[18:38:05 +20m 17s | alice_bob] Reading page (15/19): https://alice-bob.com/platform
+[18:38:05 +20m 17s | alice_bob] Extracting: https://alice-bob.com/platform (15/19), chunk 1/18
+[18:38:07 +20m 19s | alice_bob] Extracting: https://alice-bob.com/platform (15/19), chunk 2/18
+[18:38:20 +20m 28s | alice_bob] Repaired malformed JSON.
+[18:38:20 +20m 28s | alice_bob] Extracting: https://alice-bob.com/platform (15/19), chunk 3/18
+[18:38:30 +20m 38s | alice_bob] Repaired malformed JSON.
+[18:38:30 +20m 38s | alice_bob] Extracting: https://alice-bob.com/platform (15/19), chunk 4/18
+[18:38:36 +20m 44s | alice_bob] Repaired malformed JSON.
+[18:38:36 +20m 44s | alice_bob] Extracting: https://alice-bob.com/platform (15/19), chunk 5/18
+[18:38:44 +20m 53s | alice_bob] Repaired malformed JSON.
+[18:38:44 +20m 53s | alice_bob] Extracting: https://alice-bob.com/platform (15/19), chunk 6/18
+[18:38:47 +20m 55s | alice_bob] Extracting: https://alice-bob.com/platform (15/19), chunk 7/18
+[18:38:48 +20m 57s | alice_bob] Extracting: https://alice-bob.com/platform (15/19), chunk 8/18
+[18:38:54 +21m 3s | alice_bob] Extracting: https://alice-bob.com/platform (15/19), chunk 9/18
+[18:39:00 +21m 9s | alice_bob] Extracting: https://alice-bob.com/platform (15/19), chunk 10/18
+[18:39:07 +21m 12s | alice_bob] Extracting: https://alice-bob.com/platform (15/19), chunk 11/18
+[18:39:14 +21m 20s | alice_bob] Extracting: https://alice-bob.com/platform (15/19), chunk 12/18
+[18:39:16 +21m 21s | alice_bob] Extracting: https://alice-bob.com/platform (15/19), chunk 13/18
+[18:39:17 +21m 23s | alice_bob] Extracting: https://alice-bob.com/platform (15/19), chunk 14/18
+[18:39:21 +21m 26s | alice_bob] Extracting: https://alice-bob.com/platform (15/19), chunk 15/18
+[18:39:27 +21m 32s | alice_bob] Repaired malformed JSON.
+[18:39:27 +21m 32s | alice_bob] Extracting: https://alice-bob.com/platform (15/19), chunk 16/18
+[18:39:32 +21m 38s | alice_bob] Extracting: https://alice-bob.com/platform (15/19), chunk 17/18
+[18:39:42 +21m 45s | alice_bob] Repaired malformed JSON.
+[18:39:42 +21m 45s | alice_bob] Extracting: https://alice-bob.com/platform (15/19), chunk 18/18
+[18:39:49 +21m 53s | alice_bob] Repaired malformed JSON.
+[18:39:49 +21m 53s | alice_bob] Reading page (16/19): https://alice-bob.com/newsroom/alice-bob-100m-series-b-fundraising-press-release
+[18:39:49 +21m 53s | alice_bob] Extracting: https://alice-bob.com/newsroom/alice-bob-100m-series-b-fundraising-press-release (16/19), chunk 1/19
+[18:39:52 +21m 55s | alice_bob] Extracting: https://alice-bob.com/newsroom/alice-bob-100m-series-b-fundraising-press-release (16/19), chunk 2/19
+[18:39:59 +22m 2s | alice_bob] Repaired malformed JSON.
+[18:39:59 +22m 2s | alice_bob] Extracting: https://alice-bob.com/newsroom/alice-bob-100m-series-b-fundraising-press-release (16/19), chunk 3/19
+[18:40:00 +22m 4s | alice_bob] Extracting: https://alice-bob.com/newsroom/alice-bob-100m-series-b-fundraising-press-release (16/19), chunk 4/19
+[18:40:06 +22m 9s | alice_bob] Repaired malformed JSON.
+[18:40:06 +22m 9s | alice_bob] Extracting: https://alice-bob.com/newsroom/alice-bob-100m-series-b-fundraising-press-release (16/19), chunk 5/19
+[18:40:17 +22m 18s | alice_bob] Repaired malformed JSON.
+[18:40:17 +22m 18s | alice_bob] Extracting: https://alice-bob.com/newsroom/alice-bob-100m-series-b-fundraising-press-release (16/19), chunk 6/19
+[18:40:20 +22m 21s | alice_bob] Extracting: https://alice-bob.com/newsroom/alice-bob-100m-series-b-fundraising-press-release (16/19), chunk 7/19
+[18:40:22 +22m 23s | alice_bob] Extracting: https://alice-bob.com/newsroom/alice-bob-100m-series-b-fundraising-press-release (16/19), chunk 8/19
+[18:40:27 +22m 28s | alice_bob] Extracting: https://alice-bob.com/newsroom/alice-bob-100m-series-b-fundraising-press-release (16/19), chunk 9/19
+[18:40:35 +22m 36s | alice_bob] Repaired malformed JSON.
+[18:40:35 +22m 36s | alice_bob] Extracting: https://alice-bob.com/newsroom/alice-bob-100m-series-b-fundraising-press-release (16/19), chunk 10/19
+[18:40:43 +22m 45s | alice_bob] Repaired malformed JSON.
+[18:40:43 +22m 45s | alice_bob] Extracting: https://alice-bob.com/newsroom/alice-bob-100m-series-b-fundraising-press-release (16/19), chunk 11/19
+[18:40:52 +22m 53s | alice_bob] Repaired malformed JSON.
+[18:40:52 +22m 53s | alice_bob] Extracting: https://alice-bob.com/newsroom/alice-bob-100m-series-b-fundraising-press-release (16/19), chunk 12/19
+[18:41:00 +23m 1s | alice_bob] Repaired malformed JSON.
+[18:41:00 +23m 1s | alice_bob] Extracting: https://alice-bob.com/newsroom/alice-bob-100m-series-b-fundraising-press-release (16/19), chunk 13/19
+[18:41:07 +23m 8s | alice_bob] Repaired malformed JSON.
+[18:41:07 +23m 8s | alice_bob] Extracting: https://alice-bob.com/newsroom/alice-bob-100m-series-b-fundraising-press-release (16/19), chunk 14/19
+[18:41:14 +23m 15s | alice_bob] Repaired malformed JSON.
+[18:41:14 +23m 15s | alice_bob] Extracting: https://alice-bob.com/newsroom/alice-bob-100m-series-b-fundraising-press-release (16/19), chunk 15/19
+[18:41:21 +23m 22s | alice_bob] Repaired malformed JSON.
+[18:41:21 +23m 22s | alice_bob] Extracting: https://alice-bob.com/newsroom/alice-bob-100m-series-b-fundraising-press-release (16/19), chunk 16/19
+[18:41:33 +23m 30s | alice_bob] Repaired malformed JSON.
+[18:41:33 +23m 30s | alice_bob] Extracting: https://alice-bob.com/newsroom/alice-bob-100m-series-b-fundraising-press-release (16/19), chunk 17/19
+[18:41:42 +23m 39s | alice_bob] Repaired malformed JSON.
+[18:41:42 +23m 39s | alice_bob] Extracting: https://alice-bob.com/newsroom/alice-bob-100m-series-b-fundraising-press-release (16/19), chunk 18/19
+[18:41:49 +23m 47s | alice_bob] Repaired malformed JSON.
+[18:41:49 +23m 47s | alice_bob] Extracting: https://alice-bob.com/newsroom/alice-bob-100m-series-b-fundraising-press-release (16/19), chunk 19/19
+[18:41:54 +23m 52s | alice_bob] Repaired malformed JSON.
+[18:41:55 +23m 52s | alice_bob] Reading page (17/19): https://alice-bob.com/blog/scaling-the-cats-quantum-engineering-at-infrastructure-scale
+[18:41:55 +23m 52s | alice_bob] Extracting: https://alice-bob.com/blog/scaling-the-cats-quantum-engineering-at-infrastructure-scale (17/19), chunk 1/16
+[18:42:00 +23m 58s | alice_bob] Repaired malformed JSON.
+[18:42:00 +23m 58s | alice_bob] Extracting: https://alice-bob.com/blog/scaling-the-cats-quantum-engineering-at-infrastructure-scale (17/19), chunk 2/16
+[18:42:06 +24m 3s | alice_bob] Repaired malformed JSON.
+[18:42:06 +24m 3s | alice_bob] Extracting: https://alice-bob.com/blog/scaling-the-cats-quantum-engineering-at-infrastructure-scale (17/19), chunk 3/16
+[18:42:11 +24m 8s | alice_bob] Repaired malformed JSON.
+[18:42:11 +24m 8s | alice_bob] Extracting: https://alice-bob.com/blog/scaling-the-cats-quantum-engineering-at-infrastructure-scale (17/19), chunk 4/16
+[18:42:18 +24m 16s | alice_bob] Repaired malformed JSON.
+[18:42:18 +24m 16s | alice_bob] Extracting: https://alice-bob.com/blog/scaling-the-cats-quantum-engineering-at-infrastructure-scale (17/19), chunk 5/16
+[18:42:26 +24m 23s | alice_bob] Repaired malformed JSON.
+[18:42:26 +24m 23s | alice_bob] Extracting: https://alice-bob.com/blog/scaling-the-cats-quantum-engineering-at-infrastructure-scale (17/19), chunk 6/16
+[18:42:28 +24m 25s | alice_bob] Extracting: https://alice-bob.com/blog/scaling-the-cats-quantum-engineering-at-infrastructure-scale (17/19), chunk 7/16
+[18:42:30 +24m 27s | alice_bob] Extracting: https://alice-bob.com/blog/scaling-the-cats-quantum-engineering-at-infrastructure-scale (17/19), chunk 8/16
+[18:42:36 +24m 34s | alice_bob] Repaired malformed JSON.
+[18:42:36 +24m 34s | alice_bob] Extracting: https://alice-bob.com/blog/scaling-the-cats-quantum-engineering-at-infrastructure-scale (17/19), chunk 9/16
+[18:42:40 +24m 37s | alice_bob] Extracting: https://alice-bob.com/blog/scaling-the-cats-quantum-engineering-at-infrastructure-scale (17/19), chunk 10/16
+[18:42:50 +24m 46s | alice_bob] Repaired malformed JSON.
+[18:42:50 +24m 46s | alice_bob] Extracting: https://alice-bob.com/blog/scaling-the-cats-quantum-engineering-at-infrastructure-scale (17/19), chunk 11/16
+[18:42:57 +24m 52s | alice_bob] Repaired malformed JSON.
+[18:42:57 +24m 52s | alice_bob] Extracting: https://alice-bob.com/blog/scaling-the-cats-quantum-engineering-at-infrastructure-scale (17/19), chunk 12/16
+[18:43:05 +25m 1s | alice_bob] Repaired malformed JSON.
+[18:43:05 +25m 1s | alice_bob] Extracting: https://alice-bob.com/blog/scaling-the-cats-quantum-engineering-at-infrastructure-scale (17/19), chunk 13/16
+[18:43:09 +25m 5s | alice_bob] Extracting: https://alice-bob.com/blog/scaling-the-cats-quantum-engineering-at-infrastructure-scale (17/19), chunk 14/16
+[18:43:14 +25m 10s | alice_bob] Extracting: https://alice-bob.com/blog/scaling-the-cats-quantum-engineering-at-infrastructure-scale (17/19), chunk 15/16
+[18:43:22 +25m 17s | alice_bob] Repaired malformed JSON.
+[18:43:22 +25m 17s | alice_bob] Extracting: https://alice-bob.com/blog/scaling-the-cats-quantum-engineering-at-infrastructure-scale (17/19), chunk 16/16
+[18:43:28 +25m 24s | alice_bob] Repaired malformed JSON.
+[18:43:28 +25m 24s | alice_bob] Reading page (18/19): https://alice-bob.com/thats-us
+[18:43:28 +25m 24s | alice_bob] Extracting: https://alice-bob.com/thats-us (18/19), chunk 1/20
+[18:43:29 +25m 25s | alice_bob] Extracting: https://alice-bob.com/thats-us (18/19), chunk 2/20
+[18:43:40 +25m 33s | alice_bob] Extracting: https://alice-bob.com/thats-us (18/19), chunk 3/20
+[18:43:49 +25m 43s | alice_bob] Repaired malformed JSON.
+[18:43:49 +25m 43s | alice_bob] Extracting: https://alice-bob.com/thats-us (18/19), chunk 4/20
+[18:43:55 +25m 49s | alice_bob] Extracting: https://alice-bob.com/thats-us (18/19), chunk 5/20
+[18:44:03 +25m 57s | alice_bob] Repaired malformed JSON.
+[18:44:03 +25m 57s | alice_bob] Extracting: https://alice-bob.com/thats-us (18/19), chunk 6/20
+[18:44:06 +26m 0s | alice_bob] Extracting: https://alice-bob.com/thats-us (18/19), chunk 7/20
+[18:44:08 +26m 2s | alice_bob] Extracting: https://alice-bob.com/thats-us (18/19), chunk 8/20
+[18:44:15 +26m 7s | alice_bob] Extracting: https://alice-bob.com/thats-us (18/19), chunk 9/20
+[18:44:24 +26m 16s | alice_bob] Repaired malformed JSON.
+[18:44:24 +26m 16s | alice_bob] Extracting: https://alice-bob.com/thats-us (18/19), chunk 10/20
+[18:44:31 +26m 23s | alice_bob] Repaired malformed JSON.
+[18:44:31 +26m 23s | alice_bob] Extracting: https://alice-bob.com/thats-us (18/19), chunk 11/20
+[18:44:37 +26m 29s | alice_bob] Repaired malformed JSON.
+[18:44:37 +26m 29s | alice_bob] Extracting: https://alice-bob.com/thats-us (18/19), chunk 12/20
+[18:44:47 +26m 36s | alice_bob] Repaired malformed JSON.
+[18:44:47 +26m 36s | alice_bob] Extracting: https://alice-bob.com/thats-us (18/19), chunk 13/20
+[18:44:56 +26m 45s | alice_bob] Repaired malformed JSON.
+[18:44:56 +26m 45s | alice_bob] Extracting: https://alice-bob.com/thats-us (18/19), chunk 14/20
+[18:45:06 +26m 55s | alice_bob] Extracting: https://alice-bob.com/thats-us (18/19), chunk 15/20
+[18:45:13 +27m 2s | alice_bob] Extracting: https://alice-bob.com/thats-us (18/19), chunk 16/20
+[18:45:21 +27m 9s | alice_bob] Repaired malformed JSON.
+[18:45:21 +27m 9s | alice_bob] Extracting: https://alice-bob.com/thats-us (18/19), chunk 17/20
+[18:45:29 +27m 17s | alice_bob] Repaired malformed JSON.
+[18:45:29 +27m 17s | alice_bob] Extracting: https://alice-bob.com/thats-us (18/19), chunk 18/20
+[18:45:36 +27m 24s | alice_bob] Repaired malformed JSON.
+[18:45:36 +27m 24s | alice_bob] Extracting: https://alice-bob.com/thats-us (18/19), chunk 19/20
+[18:45:44 +27m 32s | alice_bob] Repaired malformed JSON.
+[18:45:44 +27m 32s | alice_bob] Extracting: https://alice-bob.com/thats-us (18/19), chunk 20/20
+[18:45:55 +27m 41s | alice_bob] Repaired malformed JSON.
+[18:45:55 +27m 42s | alice_bob] Reading page (19/19): https://alice-bob.com/hpc-report
+[18:45:55 +27m 42s | alice_bob] Extracting: https://alice-bob.com/hpc-report (19/19), chunk 1/12
+[18:46:03 +27m 49s | alice_bob] Repaired malformed JSON.
+[18:46:03 +27m 49s | alice_bob] Extracting: https://alice-bob.com/hpc-report (19/19), chunk 2/12
+[18:46:09 +27m 56s | alice_bob] Extracting: https://alice-bob.com/hpc-report (19/19), chunk 3/12
+[18:46:11 +27m 58s | alice_bob] Extracting: https://alice-bob.com/hpc-report (19/19), chunk 4/12
+[18:46:17 +28m 4s | alice_bob] Repaired malformed JSON.
+[18:46:17 +28m 4s | alice_bob] Extracting: https://alice-bob.com/hpc-report (19/19), chunk 5/12
+[18:46:28 +28m 13s | alice_bob] Repaired malformed JSON.
+[18:46:28 +28m 13s | alice_bob] Extracting: https://alice-bob.com/hpc-report (19/19), chunk 6/12
+[18:46:29 +28m 14s | alice_bob] Extracting: https://alice-bob.com/hpc-report (19/19), chunk 7/12
+[18:46:32 +28m 17s | alice_bob] Extracting: https://alice-bob.com/hpc-report (19/19), chunk 8/12
+[18:46:38 +28m 23s | alice_bob] Extracting: https://alice-bob.com/hpc-report (19/19), chunk 9/12
+[18:46:42 +28m 27s | alice_bob] Extracting: https://alice-bob.com/hpc-report (19/19), chunk 10/12
+[18:46:49 +28m 34s | alice_bob] Repaired malformed JSON.
+[18:46:49 +28m 34s | alice_bob] Extracting: https://alice-bob.com/hpc-report (19/19), chunk 11/12
+[18:46:56 +28m 41s | alice_bob] Repaired malformed JSON.
+[18:46:56 +28m 41s | alice_bob] Extracting: https://alice-bob.com/hpc-report (19/19), chunk 12/12
+[18:47:06 +28m 49s | alice_bob] Saved 1_actor_results.json with 435 extracted records
+
+[18:47:06 +28m 49s | alice_bob] === 2 clean actors ===
+[18:47:07 +28m 50s | alice_bob] Loaded 435 extracted records
+[18:47:07 +28m 50s | alice_bob] Saved 2_actor_nodes.json with 65 canonical actor nodes
+
+[18:47:07 +28m 50s | alice_bob] === 3 interaction extraction ===
+[18:47:08 +28m 51s | alice_bob] Extracting interactions: https://alice-bob.com/engineering (1/19), chunk 1/17
+[18:47:16 +29m 0s | alice_bob] Extracting interactions: https://alice-bob.com/engineering (1/19), chunk 2/17
+[18:47:19 +29m 3s | alice_bob] Extracting interactions: https://alice-bob.com/engineering (1/19), chunk 3/17
+[18:47:42 +29m 24s | alice_bob] Extracting interactions: https://alice-bob.com/engineering (1/19), chunk 4/17
+[18:47:47 +29m 28s | alice_bob] Extracting interactions: https://alice-bob.com/engineering (1/19), chunk 5/17
+[18:47:56 +29m 38s | alice_bob] Extracting interactions: https://alice-bob.com/engineering (1/19), chunk 11/17
+[18:48:07 +29m 48s | alice_bob] Extracting interactions: https://alice-bob.com/engineering (1/19), chunk 12/17
+[18:48:23 +30m 5s | alice_bob] Extracting interactions: https://alice-bob.com/engineering (1/19), chunk 13/17
+[18:48:31 +30m 12s | alice_bob] Extracting interactions: https://alice-bob.com/engineering (1/19), chunk 14/17
+[18:48:36 +30m 17s | alice_bob] Extracting interactions: https://alice-bob.com/engineering (1/19), chunk 17/17
+[18:48:40 +30m 22s | alice_bob] Extracting interactions: https://alice-bob.com/blog/not-all-logical-qubits-are-created-equal-heres-how-to-benchmark-them (2/19), chunk 1/17
+[18:48:48 +30m 28s | alice_bob] Extracting interactions: https://alice-bob.com/blog/not-all-logical-qubits-are-created-equal-heres-how-to-benchmark-them (2/19), chunk 2/17
+[18:48:54 +30m 34s | alice_bob] Extracting interactions: https://alice-bob.com/blog/not-all-logical-qubits-are-created-equal-heres-how-to-benchmark-them (2/19), chunk 3/17
+[18:48:55 +30m 35s | alice_bob] Extracting interactions: https://alice-bob.com/blog/not-all-logical-qubits-are-created-equal-heres-how-to-benchmark-them (2/19), chunk 4/17
+[18:49:00 +30m 40s | alice_bob] Extracting interactions: https://alice-bob.com/blog/not-all-logical-qubits-are-created-equal-heres-how-to-benchmark-them (2/19), chunk 5/17
+[18:49:16 +30m 56s | alice_bob] Extracting interactions: https://alice-bob.com/blog/not-all-logical-qubits-are-created-equal-heres-how-to-benchmark-them (2/19), chunk 9/17
+[18:49:22 +31m 2s | alice_bob] Extracting interactions: https://alice-bob.com/blog/not-all-logical-qubits-are-created-equal-heres-how-to-benchmark-them (2/19), chunk 10/17
+[18:49:27 +31m 7s | alice_bob] Extracting interactions: https://alice-bob.com/blog/not-all-logical-qubits-are-created-equal-heres-how-to-benchmark-them (2/19), chunk 11/17
+[18:49:33 +31m 13s | alice_bob] Extracting interactions: https://alice-bob.com/blog/not-all-logical-qubits-are-created-equal-heres-how-to-benchmark-them (2/19), chunk 12/17
+[18:49:40 +31m 20s | alice_bob] Extracting interactions: https://alice-bob.com/blog/not-all-logical-qubits-are-created-equal-heres-how-to-benchmark-them (2/19), chunk 16/17
+[18:49:46 +31m 26s | alice_bob] Extracting interactions: https://alice-bob.com/blog/not-all-logical-qubits-are-created-equal-heres-how-to-benchmark-them (2/19), chunk 17/17
+[18:49:51 +31m 31s | alice_bob] Extracting interactions: https://alice-bob.com/blog/beyond-moore-harnessing-quantum-for-the-next-era-of-hpc (3/19), chunk 1/21
+[18:49:59 +31m 37s | alice_bob] Extracting interactions: https://alice-bob.com/blog/beyond-moore-harnessing-quantum-for-the-next-era-of-hpc (3/19), chunk 2/21
+[18:50:07 +31m 45s | alice_bob] Extracting interactions: https://alice-bob.com/blog/beyond-moore-harnessing-quantum-for-the-next-era-of-hpc (3/19), chunk 3/21
+[18:50:09 +31m 47s | alice_bob] Extracting interactions: https://alice-bob.com/blog/beyond-moore-harnessing-quantum-for-the-next-era-of-hpc (3/19), chunk 4/21
+[18:50:14 +31m 52s | alice_bob] Extracting interactions: https://alice-bob.com/blog/beyond-moore-harnessing-quantum-for-the-next-era-of-hpc (3/19), chunk 5/21
+[18:50:15 +31m 53s | alice_bob] Extracting interactions: https://alice-bob.com/blog/beyond-moore-harnessing-quantum-for-the-next-era-of-hpc (3/19), chunk 10/21
+[18:50:24 +32m 2s | alice_bob] Extracting interactions: https://alice-bob.com/blog/beyond-moore-harnessing-quantum-for-the-next-era-of-hpc (3/19), chunk 11/21
+[18:50:35 +32m 11s | alice_bob] Extracting interactions: https://alice-bob.com/blog/beyond-moore-harnessing-quantum-for-the-next-era-of-hpc (3/19), chunk 12/21
+[18:50:40 +32m 16s | alice_bob] Extracting interactions: https://alice-bob.com/blog/beyond-moore-harnessing-quantum-for-the-next-era-of-hpc (3/19), chunk 13/21
+[18:50:47 +32m 23s | alice_bob] Extracting interactions: https://alice-bob.com/blog/beyond-moore-harnessing-quantum-for-the-next-era-of-hpc (3/19), chunk 14/21
+[18:50:53 +32m 30s | alice_bob] Extracting interactions: https://alice-bob.com/blog/beyond-moore-harnessing-quantum-for-the-next-era-of-hpc (3/19), chunk 15/21
+[18:50:57 +32m 34s | alice_bob] Extracting interactions: https://alice-bob.com/blog/beyond-moore-harnessing-quantum-for-the-next-era-of-hpc (3/19), chunk 16/21
+[18:51:03 +32m 40s | alice_bob] Extracting interactions: https://alice-bob.com/blog/beyond-moore-harnessing-quantum-for-the-next-era-of-hpc (3/19), chunk 17/21
+[18:51:15 +32m 52s | alice_bob] Extracting interactions: https://alice-bob.com/blog/beyond-moore-harnessing-quantum-for-the-next-era-of-hpc (3/19), chunk 18/21
+[18:51:25 +32m 59s | alice_bob] Extracting interactions: https://alice-bob.com/blog/beyond-moore-harnessing-quantum-for-the-next-era-of-hpc (3/19), chunk 20/21
+[18:51:27 +33m 2s | alice_bob] Extracting interactions: https://alice-bob.com/blog/beyond-moore-harnessing-quantum-for-the-next-era-of-hpc (3/19), chunk 21/21
+[18:51:33 +33m 7s | alice_bob] Extracting interactions: https://alice-bob.com/blog (4/19), chunk 3/8
+[18:51:35 +33m 9s | alice_bob] Extracting interactions: https://alice-bob.com/blog (4/19), chunk 4/8
+[18:51:36 +33m 11s | alice_bob] Extracting interactions: https://alice-bob.com/blog (4/19), chunk 5/8
+[18:51:40 +33m 14s | alice_bob] Extracting interactions: https://alice-bob.com/blog (4/19), chunk 6/8
+[18:51:44 +33m 19s | alice_bob] Extracting interactions: https://alice-bob.com/blog (4/19), chunk 7/8
+[18:51:49 +33m 23s | alice_bob] Extracting interactions: https://alice-bob.com/blog (4/19), chunk 8/8
+[18:51:56 +33m 28s | alice_bob] Extracting interactions: https://alice-bob.com/blog/alice-bob-2030-roadmap-to-useful-quantum-computers (5/19), chunk 1/19
+[18:52:03 +33m 36s | alice_bob] Extracting interactions: https://alice-bob.com/blog/alice-bob-2030-roadmap-to-useful-quantum-computers (5/19), chunk 2/19
+[18:52:05 +33m 37s | alice_bob] Extracting interactions: https://alice-bob.com/blog/alice-bob-2030-roadmap-to-useful-quantum-computers (5/19), chunk 3/19
+[18:52:07 +33m 39s | alice_bob] Extracting interactions: https://alice-bob.com/blog/alice-bob-2030-roadmap-to-useful-quantum-computers (5/19), chunk 4/19
+[18:52:14 +33m 47s | alice_bob] Extracting interactions: https://alice-bob.com/blog/alice-bob-2030-roadmap-to-useful-quantum-computers (5/19), chunk 5/19
+[18:52:26 +33m 56s | alice_bob] Extracting interactions: https://alice-bob.com/blog/alice-bob-2030-roadmap-to-useful-quantum-computers (5/19), chunk 9/19
+[18:52:35 +34m 6s | alice_bob] Extracting interactions: https://alice-bob.com/blog/alice-bob-2030-roadmap-to-useful-quantum-computers (5/19), chunk 10/19
+[18:52:46 +34m 16s | alice_bob] Extracting interactions: https://alice-bob.com/blog/alice-bob-2030-roadmap-to-useful-quantum-computers (5/19), chunk 11/19
+[18:52:55 +34m 25s | alice_bob] Extracting interactions: https://alice-bob.com/blog/alice-bob-2030-roadmap-to-useful-quantum-computers (5/19), chunk 13/19
+[18:53:03 +34m 31s | alice_bob] Extracting interactions: https://alice-bob.com/blog/alice-bob-2030-roadmap-to-useful-quantum-computers (5/19), chunk 14/19
+[18:53:11 +34m 39s | alice_bob] Extracting interactions: https://alice-bob.com/blog/alice-bob-2030-roadmap-to-useful-quantum-computers (5/19), chunk 15/19
+[18:53:17 +34m 44s | alice_bob] Extracting interactions: https://alice-bob.com/blog/alice-bob-2030-roadmap-to-useful-quantum-computers (5/19), chunk 16/19
+[18:53:21 +34m 48s | alice_bob] Extracting interactions: https://alice-bob.com/blog/alice-bob-2030-roadmap-to-useful-quantum-computers (5/19), chunk 17/19
+[18:53:22 +34m 50s | alice_bob] Extracting interactions: https://alice-bob.com/blog/alice-bob-2030-roadmap-to-useful-quantum-computers (5/19), chunk 18/19
+[18:53:27 +34m 55s | alice_bob] Extracting interactions: https://alice-bob.com/blog/alice-bob-2030-roadmap-to-useful-quantum-computers (5/19), chunk 19/19
+[18:53:37 +35m 3s | alice_bob] Extracting interactions: https://alice-bob.com/blog/this-is-not-a-product-launch (6/19), chunk 1/14
+[18:53:42 +35m 8s | alice_bob] Extracting interactions: https://alice-bob.com/blog/this-is-not-a-product-launch (6/19), chunk 2/14
+[18:53:46 +35m 11s | alice_bob] Extracting interactions: https://alice-bob.com/blog/this-is-not-a-product-launch (6/19), chunk 3/14
+[18:54:02 +35m 27s | alice_bob] Extracting interactions: https://alice-bob.com/blog/this-is-not-a-product-launch (6/19), chunk 4/14
+[18:54:12 +35m 35s | alice_bob] Extracting interactions: https://alice-bob.com/blog/this-is-not-a-product-launch (6/19), chunk 5/14
+[18:54:21 +35m 44s | alice_bob] Extracting interactions: https://alice-bob.com/blog/this-is-not-a-product-launch (6/19), chunk 11/14
+[18:54:24 +35m 47s | alice_bob] Extracting interactions: https://alice-bob.com/blog/this-is-not-a-product-launch (6/19), chunk 12/14
+[18:54:33 +35m 56s | alice_bob] Extracting interactions: https://alice-bob.com/blog/this-is-not-a-product-launch (6/19), chunk 13/14
+[18:54:34 +35m 58s | alice_bob] Extracting interactions: https://alice-bob.com/blog/this-is-not-a-product-launch (6/19), chunk 14/14
+[18:54:41 +36m 4s | alice_bob] Extracting interactions: https://alice-bob.com/blog/who-are-alice-and-bob-the-story-behind-our-name (7/19), chunk 1/16
+[18:54:50 +36m 11s | alice_bob] Extracting interactions: https://alice-bob.com/blog/who-are-alice-and-bob-the-story-behind-our-name (7/19), chunk 2/16
+[18:54:55 +36m 16s | alice_bob] Extracting interactions: https://alice-bob.com/blog/who-are-alice-and-bob-the-story-behind-our-name (7/19), chunk 3/16
+[18:54:57 +36m 18s | alice_bob] Extracting interactions: https://alice-bob.com/blog/who-are-alice-and-bob-the-story-behind-our-name (7/19), chunk 4/16
+[18:55:03 +36m 24s | alice_bob] Extracting interactions: https://alice-bob.com/blog/who-are-alice-and-bob-the-story-behind-our-name (7/19), chunk 5/16
+[18:55:04 +36m 25s | alice_bob] Extracting interactions: https://alice-bob.com/blog/who-are-alice-and-bob-the-story-behind-our-name (7/19), chunk 9/16
+
+========================================================================
+RUN FINISHED 2026-06-16 21:29:20  (INTERRUPTED)
+Started:     2026-06-16 18:16:28
+Elapsed:     41m 5s
+========================================================================
+
+========================================================================
+RUN STARTED  2026-06-16 21:29:24
+site_pipeline.py https://alice-bob.com/
+========================================================================
+
+[21:29:24 +0s | alice_bob] === 0 crawl site (skipped via auto (actor data already exists; pass --force to re-crawl), reusing /home/lv/IDP/idpdeeptech/pipeline/site_outputs/alice_bob/crawl_output) ===
+
+[21:29:24 +0s | alice_bob] === 1 actor extraction ===
+[21:29:24 +0s | alice_bob] Auto-resume: 19 (url, ordinal) pairs already done, skipping them.
+[21:29:24 +0s | alice_bob] All 19 pages/URLs already processed (per 1_actor_results.progress.json). Nothing to do.
+[21:29:24 +0s | alice_bob] Delete the progress sidecar to force a full re-run, or pass --start-page N.
+
+[21:29:24 +1s | alice_bob] === 2 clean actors ===
+[21:29:25 +1s | alice_bob] Loaded 435 extracted records
+[21:29:25 +1s | alice_bob] Saved 2_actor_nodes.json with 65 canonical actor nodes
+
+[21:29:25 +1s | alice_bob] === 3 interaction extraction ===
+[21:29:25 +2s | alice_bob] Auto-resume: 6 (url, ordinal) pairs already done, skipping them.
+[21:29:25 +2s | alice_bob] Skipping interactions: https://alice-bob.com/engineering (1/19) (already done)
+[21:29:25 +2s | alice_bob] Skipping interactions: https://alice-bob.com/blog/not-all-logical-qubits-are-created-equal-heres-how-to-benchmark-them (2/19) (already done)
+[21:29:25 +2s | alice_bob] Skipping interactions: https://alice-bob.com/blog/beyond-moore-harnessing-quantum-for-the-next-era-of-hpc (3/19) (already done)
+[21:29:25 +2s | alice_bob] Skipping interactions: https://alice-bob.com/blog (4/19) (already done)
+[21:29:25 +2s | alice_bob] Skipping interactions: https://alice-bob.com/blog/alice-bob-2030-roadmap-to-useful-quantum-computers (5/19) (already done)
+[21:29:25 +2s | alice_bob] Skipping interactions: https://alice-bob.com/blog/this-is-not-a-product-launch (6/19) (already done)
+[21:29:25 +2s | alice_bob] Extracting interactions: https://alice-bob.com/blog/who-are-alice-and-bob-the-story-behind-our-name (7/19), chunk 1/16
+[21:29:31 +8s | alice_bob] Extracting interactions: https://alice-bob.com/blog/who-are-alice-and-bob-the-story-behind-our-name (7/19), chunk 2/16
+[21:29:37 +13s | alice_bob] Extracting interactions: https://alice-bob.com/blog/who-are-alice-and-bob-the-story-behind-our-name (7/19), chunk 3/16
+[21:29:38 +14s | alice_bob] Extracting interactions: https://alice-bob.com/blog/who-are-alice-and-bob-the-story-behind-our-name (7/19), chunk 4/16
+[21:29:46 +19s | alice_bob] Extracting interactions: https://alice-bob.com/blog/who-are-alice-and-bob-the-story-behind-our-name (7/19), chunk 5/16
+[21:29:47 +21s | alice_bob] Extracting interactions: https://alice-bob.com/blog/who-are-alice-and-bob-the-story-behind-our-name (7/19), chunk 9/16
+[21:29:55 +29s | alice_bob] Extracting interactions: https://alice-bob.com/blog/who-are-alice-and-bob-the-story-behind-our-name (7/19), chunk 10/16
+[21:30:03 +37s | alice_bob] Extracting interactions: https://alice-bob.com/blog/who-are-alice-and-bob-the-story-behind-our-name (7/19), chunk 11/16
+[21:30:08 +42s | alice_bob] Extracting interactions: https://alice-bob.com/blog/who-are-alice-and-bob-the-story-behind-our-name (7/19), chunk 12/16
+[21:30:22 +54s | alice_bob] Extracting interactions: https://alice-bob.com/blog/who-are-alice-and-bob-the-story-behind-our-name (7/19), chunk 13/16
+[21:30:36 +1m 8s | alice_bob] Extracting interactions: https://alice-bob.com/blog/who-are-alice-and-bob-the-story-behind-our-name (7/19), chunk 15/16
+[21:30:44 +1m 15s | alice_bob] Extracting interactions: https://alice-bob.com/blog/who-are-alice-and-bob-the-story-behind-our-name (7/19), chunk 16/16
+[21:30:53 +1m 22s | alice_bob] Extracting interactions: https://alice-bob.com/roadmap (8/19), chunk 1/13
+[21:31:02 +1m 31s | alice_bob] Extracting interactions: https://alice-bob.com/roadmap (8/19), chunk 2/13
+[21:31:10 +1m 39s | alice_bob] Extracting interactions: https://alice-bob.com/roadmap (8/19), chunk 3/13
+[21:31:11 +1m 40s | alice_bob] Extracting interactions: https://alice-bob.com/roadmap (8/19), chunk 4/13
+[21:31:17 +1m 46s | alice_bob] Extracting interactions: https://alice-bob.com/roadmap (8/19), chunk 5/13
+[21:31:19 +1m 48s | alice_bob] Extracting interactions: https://alice-bob.com/roadmap (8/19), chunk 9/13
+[21:31:20 +1m 49s | alice_bob] Extracting interactions: https://alice-bob.com/roadmap (8/19), chunk 10/13
+[21:31:28 +1m 54s | alice_bob] Extracting interactions: https://alice-bob.com/roadmap (8/19), chunk 11/13
+[21:31:35 +2m 2s | alice_bob] Extracting interactions: https://alice-bob.com/roadmap (8/19), chunk 12/13
+[21:31:42 +2m 9s | alice_bob] Extracting interactions: https://alice-bob.com/roadmap (8/19), chunk 13/13
+[21:31:47 +2m 13s | alice_bob] Extracting interactions: https://alice-bob.com/publications (9/19), chunk 1/14
+[21:31:54 +2m 20s | alice_bob] Extracting interactions: https://alice-bob.com/publications (9/19), chunk 2/14
+[21:32:03 +2m 27s | alice_bob] Extracting interactions: https://alice-bob.com/publications (9/19), chunk 3/14
+[21:32:05 +2m 29s | alice_bob] Extracting interactions: https://alice-bob.com/publications (9/19), chunk 4/14
+[21:32:09 +2m 33s | alice_bob] Extracting interactions: https://alice-bob.com/publications (9/19), chunk 5/14
+[21:32:18 +2m 42s | alice_bob] Extracting interactions: https://alice-bob.com/publications (9/19), chunk 9/14
+[21:32:37 +2m 59s | alice_bob] Extracting interactions: https://alice-bob.com/publications (9/19), chunk 10/14
+[21:32:44 +3m 5s | alice_bob] Extracting interactions: https://alice-bob.com/publications (9/19), chunk 11/14
+[21:32:47 +3m 9s | alice_bob] Extracting interactions: https://alice-bob.com/publications (9/19), chunk 12/14
+[21:32:49 +3m 10s | alice_bob] Extracting interactions: https://alice-bob.com/publications (9/19), chunk 13/14
+[21:32:50 +3m 12s | alice_bob] Extracting interactions: https://alice-bob.com/publications (9/19), chunk 14/14
+[21:32:55 +3m 16s | alice_bob] Extracting interactions: https://alice-bob.com/join-us (10/19), chunk 3/10
+[21:33:00 +3m 21s | alice_bob] Extracting interactions: https://alice-bob.com/join-us (10/19), chunk 4/10
+[21:33:06 +3m 28s | alice_bob] Extracting interactions: https://alice-bob.com/join-us (10/19), chunk 6/10
+[21:33:08 +3m 29s | alice_bob] Extracting interactions: https://alice-bob.com/join-us (10/19), chunk 7/10
+[21:33:16 +3m 35s | alice_bob] Extracting interactions: https://alice-bob.com/join-us (10/19), chunk 8/10
+[21:33:25 +3m 44s | alice_bob] Extracting interactions: https://alice-bob.com/join-us (10/19), chunk 9/10
+[21:33:26 +3m 45s | alice_bob] Extracting interactions: https://alice-bob.com/join-us (10/19), chunk 10/10
+[21:33:33 +3m 51s | alice_bob] Extracting interactions: https://alice-bob.com (11/19), chunk 3/12
+[21:33:37 +3m 56s | alice_bob] Extracting interactions: https://alice-bob.com (11/19), chunk 4/12
+[21:33:44 +4m 3s | alice_bob] Extracting interactions: https://alice-bob.com (11/19), chunk 5/12
+[21:33:52 +4m 8s | alice_bob] Extracting interactions: https://alice-bob.com (11/19), chunk 6/12
+[21:33:56 +4m 12s | alice_bob] Extracting interactions: https://alice-bob.com (11/19), chunk 8/12
+[21:34:00 +4m 16s | alice_bob] Extracting interactions: https://alice-bob.com (11/19), chunk 10/12
+[21:34:04 +4m 20s | alice_bob] Extracting interactions: https://alice-bob.com (11/19), chunk 11/12
+[21:34:09 +4m 26s | alice_bob] Extracting interactions: https://alice-bob.com (11/19), chunk 12/12
+[21:34:14 +4m 31s | alice_bob] Extracting interactions: https://alice-bob.com/science (12/19), chunk 1/13
+[21:34:25 +4m 39s | alice_bob] Extracting interactions: https://alice-bob.com/science (12/19), chunk 2/13
+[21:34:30 +4m 43s | alice_bob] Extracting interactions: https://alice-bob.com/science (12/19), chunk 3/13
+[21:34:45 +4m 59s | alice_bob] Extracting interactions: https://alice-bob.com/science (12/19), chunk 4/13
+[21:34:51 +5m 5s | alice_bob] Extracting interactions: https://alice-bob.com/science (12/19), chunk 5/13
+[21:34:53 +5m 6s | alice_bob] Extracting interactions: https://alice-bob.com/science (12/19), chunk 9/13
+[21:35:00 +5m 12s | alice_bob] Extracting interactions: https://alice-bob.com/science (12/19), chunk 10/13
+[21:35:08 +5m 20s | alice_bob] Extracting interactions: https://alice-bob.com/science (12/19), chunk 11/13
+[21:35:22 +5m 33s | alice_bob] Extracting interactions: https://alice-bob.com/science (12/19), chunk 12/13
+[21:35:32 +5m 41s | alice_bob] Extracting interactions: https://alice-bob.com/science (12/19), chunk 13/13
+[21:35:37 +5m 45s | alice_bob] Extracting interactions: https://alice-bob.com/newsroom (13/19), chunk 1/14
+[21:35:41 +5m 50s | alice_bob] Extracting interactions: https://alice-bob.com/newsroom (13/19), chunk 2/14
+[21:35:45 +5m 54s | alice_bob] Extracting interactions: https://alice-bob.com/newsroom (13/19), chunk 3/14
+[21:36:10 +6m 16s | alice_bob] Extracting interactions: https://alice-bob.com/newsroom (13/19), chunk 4/14
+[21:36:15 +6m 22s | alice_bob] Extracting interactions: https://alice-bob.com/newsroom (13/19), chunk 5/14
+[21:36:31 +6m 37s | alice_bob] Extracting interactions: https://alice-bob.com/newsroom (13/19), chunk 9/14
+[21:36:33 +6m 39s | alice_bob] Extracting interactions: https://alice-bob.com/newsroom (13/19), chunk 10/14
+[21:36:48 +6m 53s | alice_bob] Extracting interactions: https://alice-bob.com/newsroom (13/19), chunk 11/14
+[21:36:56 +7m 0s | alice_bob] Extracting interactions: https://alice-bob.com/newsroom (13/19), chunk 12/14
+[21:37:02 +7m 6s | alice_bob] Extracting interactions: https://alice-bob.com/newsroom (13/19), chunk 13/14
+[21:37:05 +7m 9s | alice_bob] Extracting interactions: https://alice-bob.com/newsroom (13/19), chunk 14/14
+[21:37:10 +7m 14s | alice_bob] Extracting interactions: https://alice-bob.com/glossary (14/19), chunk 1/16
+[21:37:18 +7m 20s | alice_bob] Extracting interactions: https://alice-bob.com/glossary (14/19), chunk 2/16
+[21:37:29 +7m 31s | alice_bob] Extracting interactions: https://alice-bob.com/glossary (14/19), chunk 3/16
+[21:37:39 +7m 41s | alice_bob] Extracting interactions: https://alice-bob.com/glossary (14/19), chunk 4/16
+[21:37:46 +7m 48s | alice_bob] Extracting interactions: https://alice-bob.com/glossary (14/19), chunk 5/16
+[21:38:00 +8m 0s | alice_bob] Extracting interactions: https://alice-bob.com/glossary (14/19), chunk 9/16
+[21:38:02 +8m 1s | alice_bob] Extracting interactions: https://alice-bob.com/glossary (14/19), chunk 10/16
+[21:38:03 +8m 3s | alice_bob] Extracting interactions: https://alice-bob.com/glossary (14/19), chunk 15/16
+[21:38:10 +8m 10s | alice_bob] Extracting interactions: https://alice-bob.com/glossary (14/19), chunk 16/16
+[21:38:14 +8m 14s | alice_bob] Extracting interactions: https://alice-bob.com/platform (15/19), chunk 1/18
+[21:38:19 +8m 19s | alice_bob] Extracting interactions: https://alice-bob.com/platform (15/19), chunk 2/18
+[21:38:24 +8m 22s | alice_bob] Extracting interactions: https://alice-bob.com/platform (15/19), chunk 3/18
+[21:38:26 +8m 24s | alice_bob] Extracting interactions: https://alice-bob.com/platform (15/19), chunk 4/18
+[21:38:32 +8m 29s | alice_bob] Extracting interactions: https://alice-bob.com/platform (15/19), chunk 5/18
+[21:38:44 +8m 42s | alice_bob] Extracting interactions: https://alice-bob.com/platform (15/19), chunk 9/18
+[21:38:46 +8m 43s | alice_bob] Extracting interactions: https://alice-bob.com/platform (15/19), chunk 14/18
+[21:38:52 +8m 49s | alice_bob] Extracting interactions: https://alice-bob.com/platform (15/19), chunk 15/18
+[21:39:01 +8m 56s | alice_bob] Extracting interactions: https://alice-bob.com/platform (15/19), chunk 18/18
+[21:39:07 +9m 2s | alice_bob] Extracting interactions: https://alice-bob.com/newsroom/alice-bob-100m-series-b-fundraising-press-release (16/19), chunk 1/19
+[21:39:12 +9m 7s | alice_bob] Extracting interactions: https://alice-bob.com/newsroom/alice-bob-100m-series-b-fundraising-press-release (16/19), chunk 2/19
+[21:39:17 +9m 12s | alice_bob] Extracting interactions: https://alice-bob.com/newsroom/alice-bob-100m-series-b-fundraising-press-release (16/19), chunk 3/19
+[21:39:19 +9m 14s | alice_bob] Extracting interactions: https://alice-bob.com/newsroom/alice-bob-100m-series-b-fundraising-press-release (16/19), chunk 4/19
+[21:39:27 +9m 22s | alice_bob] Extracting interactions: https://alice-bob.com/newsroom/alice-bob-100m-series-b-fundraising-press-release (16/19), chunk 5/19
+[21:39:44 +9m 37s | alice_bob] Extracting interactions: https://alice-bob.com/newsroom/alice-bob-100m-series-b-fundraising-press-release (16/19), chunk 9/19
+[21:40:13 +10m 3s | alice_bob] Extracting interactions: https://alice-bob.com/newsroom/alice-bob-100m-series-b-fundraising-press-release (16/19), chunk 10/19
+[21:40:50 +10m 38s | alice_bob] Extracting interactions: https://alice-bob.com/newsroom/alice-bob-100m-series-b-fundraising-press-release (16/19), chunk 11/19
+[21:41:11 +10m 59s | alice_bob] Extracting interactions: https://alice-bob.com/newsroom/alice-bob-100m-series-b-fundraising-press-release (16/19), chunk 12/19
+[21:41:28 +11m 14s | alice_bob] Extracting interactions: https://alice-bob.com/newsroom/alice-bob-100m-series-b-fundraising-press-release (16/19), chunk 13/19
+[21:41:42 +11m 28s | alice_bob] Extracting interactions: https://alice-bob.com/newsroom/alice-bob-100m-series-b-fundraising-press-release (16/19), chunk 14/19
+[21:42:01 +11m 45s | alice_bob] Extracting interactions: https://alice-bob.com/newsroom/alice-bob-100m-series-b-fundraising-press-release (16/19), chunk 15/19
+[21:42:11 +11m 55s | alice_bob] Extracting interactions: https://alice-bob.com/newsroom/alice-bob-100m-series-b-fundraising-press-release (16/19), chunk 16/19
+[21:42:51 +12m 32s | alice_bob] Extracting interactions: https://alice-bob.com/newsroom/alice-bob-100m-series-b-fundraising-press-release (16/19), chunk 17/19
+[21:43:29 +13m 8s | alice_bob] Extracting interactions: https://alice-bob.com/newsroom/alice-bob-100m-series-b-fundraising-press-release (16/19), chunk 18/19
+[21:43:36 +13m 13s | alice_bob] Extracting interactions: https://alice-bob.com/newsroom/alice-bob-100m-series-b-fundraising-press-release (16/19), chunk 19/19
+[21:43:43 +13m 20s | alice_bob] Extracting interactions: https://alice-bob.com/blog/scaling-the-cats-quantum-engineering-at-infrastructure-scale (17/19), chunk 1/16
+[21:43:51 +13m 28s | alice_bob] Extracting interactions: https://alice-bob.com/blog/scaling-the-cats-quantum-engineering-at-infrastructure-scale (17/19), chunk 2/16
+[21:43:57 +13m 34s | alice_bob] Extracting interactions: https://alice-bob.com/blog/scaling-the-cats-quantum-engineering-at-infrastructure-scale (17/19), chunk 3/16
+[21:43:59 +13m 35s | alice_bob] Extracting interactions: https://alice-bob.com/blog/scaling-the-cats-quantum-engineering-at-infrastructure-scale (17/19), chunk 4/16
+[21:44:04 +13m 41s | alice_bob] Extracting interactions: https://alice-bob.com/blog/scaling-the-cats-quantum-engineering-at-infrastructure-scale (17/19), chunk 5/16
+[21:44:20 +13m 54s | alice_bob] Extracting interactions: https://alice-bob.com/blog/scaling-the-cats-quantum-engineering-at-infrastructure-scale (17/19), chunk 9/16
+[21:44:27 +14m 1s | alice_bob] Extracting interactions: https://alice-bob.com/blog/scaling-the-cats-quantum-engineering-at-infrastructure-scale (17/19), chunk 10/16
+[21:44:34 +14m 8s | alice_bob] Extracting interactions: https://alice-bob.com/blog/scaling-the-cats-quantum-engineering-at-infrastructure-scale (17/19), chunk 11/16
+[21:44:37 +14m 11s | alice_bob] Extracting interactions: https://alice-bob.com/blog/scaling-the-cats-quantum-engineering-at-infrastructure-scale (17/19), chunk 12/16
+[21:44:45 +14m 16s | alice_bob] Extracting interactions: https://alice-bob.com/blog/scaling-the-cats-quantum-engineering-at-infrastructure-scale (17/19), chunk 13/16
+[21:44:51 +14m 22s | alice_bob] Extracting interactions: https://alice-bob.com/blog/scaling-the-cats-quantum-engineering-at-infrastructure-scale (17/19), chunk 15/16
+[21:44:54 +14m 26s | alice_bob] Extracting interactions: https://alice-bob.com/blog/scaling-the-cats-quantum-engineering-at-infrastructure-scale (17/19), chunk 16/16
+[21:44:59 +14m 31s | alice_bob] Extracting interactions: https://alice-bob.com/thats-us (18/19), chunk 1/20
+[21:45:04 +14m 35s | alice_bob] Extracting interactions: https://alice-bob.com/thats-us (18/19), chunk 2/20
+[21:45:07 +14m 39s | alice_bob] Extracting interactions: https://alice-bob.com/thats-us (18/19), chunk 3/20
+[21:45:09 +14m 41s | alice_bob] Extracting interactions: https://alice-bob.com/thats-us (18/19), chunk 4/20
+[21:45:14 +14m 46s | alice_bob] Extracting interactions: https://alice-bob.com/thats-us (18/19), chunk 5/20
+[21:45:29 +14m 58s | alice_bob] Extracting interactions: https://alice-bob.com/thats-us (18/19), chunk 9/20
+[21:45:33 +15m 2s | alice_bob] Extracting interactions: https://alice-bob.com/thats-us (18/19), chunk 10/20
+[21:45:39 +15m 8s | alice_bob] Extracting interactions: https://alice-bob.com/thats-us (18/19), chunk 11/20
+[21:45:49 +15m 18s | alice_bob] Extracting interactions: https://alice-bob.com/thats-us (18/19), chunk 12/20
+[21:45:59 +15m 25s | alice_bob] Extracting interactions: https://alice-bob.com/thats-us (18/19), chunk 13/20
+[21:46:06 +15m 31s | alice_bob] Extracting interactions: https://alice-bob.com/thats-us (18/19), chunk 14/20
+[21:46:08 +15m 33s | alice_bob] Extracting interactions: https://alice-bob.com/thats-us (18/19), chunk 15/20
+[21:46:09 +15m 35s | alice_bob] Extracting interactions: https://alice-bob.com/thats-us (18/19), chunk 16/20
+[21:46:13 +15m 38s | alice_bob] Extracting interactions: https://alice-bob.com/thats-us (18/19), chunk 17/20
+[21:46:19 +15m 44s | alice_bob] Extracting interactions: https://alice-bob.com/thats-us (18/19), chunk 18/20
+[21:46:26 +15m 52s | alice_bob] Extracting interactions: https://alice-bob.com/thats-us (18/19), chunk 19/20
+[21:46:38 +16m 1s | alice_bob] Extracting interactions: https://alice-bob.com/thats-us (18/19), chunk 20/20
+[21:46:45 +16m 7s | alice_bob] Extracting interactions: https://alice-bob.com/hpc-report (19/19), chunk 1/12
+[21:46:52 +16m 15s | alice_bob] Extracting interactions: https://alice-bob.com/hpc-report (19/19), chunk 2/12
+[21:46:55 +16m 17s | alice_bob] Extracting interactions: https://alice-bob.com/hpc-report (19/19), chunk 3/12
+[21:47:15 +16m 35s | alice_bob] Extracting interactions: https://alice-bob.com/hpc-report (19/19), chunk 4/12
+[21:47:21 +16m 41s | alice_bob] Extracting interactions: https://alice-bob.com/hpc-report (19/19), chunk 5/12
+[21:47:23 +16m 43s | alice_bob] Extracting interactions: https://alice-bob.com/hpc-report (19/19), chunk 12/12
+[21:47:28 +16m 48s | alice_bob] Saved 3_interaction_results.json with 334 extracted interactions.
+
+[21:47:29 +16m 49s | alice_bob] === 4 clean interactions ===
+[21:47:29 +16m 49s | alice_bob] Saved 4_edges.json with 34 cleaned interactions.
+
+[21:47:29 +16m 49s | alice_bob] === 5 helix enrichment ===
+[21:47:29 +16m 49s | alice_bob] Wrote 5_nodes.json (65 actors)
+[21:47:29 +16m 49s | alice_bob] Wrote 5_edges.json (34 interactions)
+[21:47:29 +16m 49s | alice_bob] Actor helix counts: {'Academia': 9, 'Civil Society': 2, 'Government': 1, 'Industry': 22, 'Intermediary': 7, 'Unknown': 24}
+[21:47:29 +16m 49s | alice_bob] Functional-space counts: {'Innovation': 25, 'Intra-helix / Not classified': 7, 'Unknown': 2}
+
+[21:47:29 +16m 49s | alice_bob] === 6 network visualisation ===
+[21:47:30 +16m 50s | alice_bob] Wrote quantum_network.html
+[21:47:30 +16m 50s | alice_bob] Nodes: 65
+[21:47:30 +16m 50s | alice_bob] Edges: 19
+
+[21:47:30 +16m 50s | alice_bob] Done. Outputs written to: /home/lv/IDP/idpdeeptech/pipeline/site_outputs/alice_bob
+[21:47:30 +16m 50s | alice_bob] Log: /home/lv/IDP/idpdeeptech/pipeline/site_outputs/alice_bob/run.log
+
+========================================================================
+RUN FINISHED 2026-06-16 21:47:30  (OK)
+Started:     2026-06-16 21:29:24
+Elapsed:     16m 50s
+========================================================================

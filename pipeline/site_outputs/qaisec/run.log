@@ -1,0 +1,153 @@
+
+========================================================================
+RUN STARTED  2026-06-17 04:49:24
+site_pipeline.py https://qaisec.eu/
+========================================================================
+
+[04:49:24 +0s | qaisec] === 0 crawl site ===
+[04:49:26 +2s | qaisec] [INIT].... → Crawl4AI 0.8.6 
+[04:49:28 +4s | qaisec] [FETCH]... ↓ https://qaisec.eu/                                                                                   | ✓ | ⏱: 2.40s 
+[04:49:28 +4s | qaisec] [SCRAPE].. ◆ https://qaisec.eu/                                                                                   | ✓ | ⏱: 0.01s 
+[04:49:28 +4s | qaisec] [COMPLETE] ● https://qaisec.eu/                                                                                   | ✓ | ⏱: 2.42s 
+[04:49:29 +5s | qaisec] [FETCH]... ↓ https://qaisec.eu/index.php/our-team/                                                                | ✓ | ⏱: 0.80s 
+[04:49:29 +5s | qaisec] [SCRAPE].. ◆ https://qaisec.eu/index.php/our-team/                                                                | ✓ | ⏱: 0.02s 
+[04:49:29 +5s | qaisec] [COMPLETE] ● https://qaisec.eu/index.php/our-team/                                                                | ✓ | ⏱: 0.84s 
+[04:49:31 +6s | qaisec] [FETCH]... ↓ https://qaisec.eu/index.php/sequre/                                                                  | ✓ | ⏱: 2.26s 
+[04:49:31 +7s | qaisec] [SCRAPE].. ◆ https://qaisec.eu/index.php/sequre/                                                                  | ✓ | ⏱: 0.04s 
+[04:49:31 +7s | qaisec] [COMPLETE] ● https://qaisec.eu/index.php/sequre/                                                                  | ✓ | ⏱: 2.32s 
+[04:49:35 +11s | qaisec] [FETCH]... ↓ https://qaisec.eu/                                                                                   | ✓ | ⏱: 6.51s 
+[04:49:35 +11s | qaisec] [SCRAPE].. ◆ https://qaisec.eu/                                                                                   | ✓ | ⏱: 0.02s 
+[04:49:35 +11s | qaisec] [COMPLETE] ● https://qaisec.eu/                                                                                   | ✓ | ⏱: 6.55s 
+[04:49:35 +11s | qaisec] [FETCH]... ↓ https://qaisec.eu/index.php/security/                                                                | ✓ | ⏱: 6.48s 
+[04:49:35 +11s | qaisec] [SCRAPE].. ◆ https://qaisec.eu/index.php/security/                                                                | ✓ | ⏱: 0.02s 
+[04:49:35 +11s | qaisec] [COMPLETE] ● https://qaisec.eu/index.php/security/                                                                | ✓ | ⏱: 6.51s 
+[04:49:35 +11s | qaisec] [FETCH]... ↓ https://qaisec.eu/index.php/info/                                                                    | ✓ | ⏱: 6.64s 
+[04:49:35 +11s | qaisec] [SCRAPE].. ◆ https://qaisec.eu/index.php/info/                                                                    | ✓ | ⏱: 0.01s 
+[04:49:35 +11s | qaisec] [COMPLETE] ● https://qaisec.eu/index.php/info/                                                                    | ✓ | ⏱: 6.67s 
+[04:49:35 +11s | qaisec] [FETCH]... ↓ https://qaisec.eu/index.php/contact/                                                                 | ✓ | ⏱: 6.67s 
+[04:49:35 +11s | qaisec] [SCRAPE].. ◆ https://qaisec.eu/index.php/contact/                                                                 | ✓ | ⏱: 0.01s 
+[04:49:35 +11s | qaisec] [COMPLETE] ● https://qaisec.eu/index.php/contact/                                                                 | ✓ | ⏱: 6.69s 
+[04:49:35 +11s | qaisec] [FETCH]... ↓ https://qaisec.eu/index.php/finance-and-telecom/                                                     | ✓ | ⏱: 6.71s 
+[04:49:35 +11s | qaisec] [SCRAPE].. ◆ https://qaisec.eu/index.php/finance-and-telecom/                                                     | ✓ | ⏱: 0.01s 
+[04:49:35 +11s | qaisec] [COMPLETE] ● https://qaisec.eu/index.php/finance-and-telecom/                                                     | ✓ | ⏱: 6.74s 
+[04:49:35 +11s | qaisec] Saved: crawl_output/bf0564a555_qaisec.eu.json
+[04:49:35 +11s | qaisec] Saved: crawl_output/31e84e8a05_qaisec.eu_index.php_our-team.json
+[04:49:35 +11s | qaisec] Saved: crawl_output/44221d3ca8_qaisec.eu_index.php_sequre.json
+[04:49:35 +11s | qaisec] Duplicate skipped: https://qaisec.eu
+[04:49:35 +11s | qaisec] Saved: crawl_output/ffa082f456_qaisec.eu_index.php_security.json
+[04:49:35 +11s | qaisec] Saved: crawl_output/eea87dabca_qaisec.eu_index.php_info.json
+[04:49:35 +11s | qaisec] Saved: crawl_output/69b39a82c8_qaisec.eu_index.php_contact.json
+[04:49:35 +11s | qaisec] Saved: crawl_output/9212233ce4_qaisec.eu_index.php_finance-and-telecom.json
+
+[04:49:35 +11s | qaisec] === 1 actor extraction ===
+[04:49:35 +11s | qaisec] Reading page (1/7): https://qaisec.eu/index.php/our-team
+[04:49:35 +11s | qaisec] Extracting: https://qaisec.eu/index.php/our-team (1/7), chunk 1/4
+[04:49:40 +15s | qaisec] Extracting: https://qaisec.eu/index.php/our-team (1/7), chunk 2/4
+[04:49:49 +22s | qaisec] Repaired malformed JSON.
+[04:49:49 +22s | qaisec] Extracting: https://qaisec.eu/index.php/our-team (1/7), chunk 3/4
+[04:49:54 +27s | qaisec] Repaired malformed JSON.
+[04:49:54 +27s | qaisec] Extracting: https://qaisec.eu/index.php/our-team (1/7), chunk 4/4
+[04:50:03 +36s | qaisec] Repaired malformed JSON.
+[04:50:03 +36s | qaisec] Reading page (2/7): https://qaisec.eu/index.php/sequre
+[04:50:03 +36s | qaisec] Extracting: https://qaisec.eu/index.php/sequre (2/7), chunk 1/8
+[04:50:06 +39s | qaisec] Extracting: https://qaisec.eu/index.php/sequre (2/7), chunk 2/8
+[04:50:13 +47s | qaisec] Repaired malformed JSON.
+[04:50:13 +47s | qaisec] Extracting: https://qaisec.eu/index.php/sequre (2/7), chunk 3/8
+[04:50:24 +54s | qaisec] Repaired malformed JSON.
+[04:50:24 +54s | qaisec] Extracting: https://qaisec.eu/index.php/sequre (2/7), chunk 4/8
+[04:50:32 +1m 3s | qaisec] Repaired malformed JSON.
+[04:50:32 +1m 3s | qaisec] Extracting: https://qaisec.eu/index.php/sequre (2/7), chunk 5/8
+[04:50:39 +1m 10s | qaisec] Repaired malformed JSON.
+[04:50:39 +1m 10s | qaisec] Extracting: https://qaisec.eu/index.php/sequre (2/7), chunk 6/8
+[04:50:44 +1m 15s | qaisec] Repaired malformed JSON.
+[04:50:44 +1m 15s | qaisec] Extracting: https://qaisec.eu/index.php/sequre (2/7), chunk 7/8
+[04:50:49 +1m 20s | qaisec] Repaired malformed JSON.
+[04:50:49 +1m 20s | qaisec] Extracting: https://qaisec.eu/index.php/sequre (2/7), chunk 8/8
+[04:51:00 +1m 27s | qaisec] Repaired malformed JSON.
+[04:51:00 +1m 27s | qaisec] Reading page (3/7): https://qaisec.eu/index.php/contact
+[04:51:00 +1m 27s | qaisec] Extracting: https://qaisec.eu/index.php/contact (3/7), chunk 1/4
+[04:51:06 +1m 34s | qaisec] Repaired malformed JSON.
+[04:51:06 +1m 34s | qaisec] Extracting: https://qaisec.eu/index.php/contact (3/7), chunk 2/4
+[04:51:10 +1m 37s | qaisec] Extracting: https://qaisec.eu/index.php/contact (3/7), chunk 3/4
+[04:51:18 +1m 45s | qaisec] Repaired malformed JSON.
+[04:51:18 +1m 45s | qaisec] Extracting: https://qaisec.eu/index.php/contact (3/7), chunk 4/4
+[04:51:23 +1m 51s | qaisec] Reading page (4/7): https://qaisec.eu/index.php/finance-and-telecom
+[04:51:23 +1m 51s | qaisec] Extracting: https://qaisec.eu/index.php/finance-and-telecom (4/7), chunk 1/4
+[04:51:27 +1m 55s | qaisec] Extracting: https://qaisec.eu/index.php/finance-and-telecom (4/7), chunk 2/4
+[04:51:37 +2m 2s | qaisec] Repaired malformed JSON.
+[04:51:37 +2m 2s | qaisec] Extracting: https://qaisec.eu/index.php/finance-and-telecom (4/7), chunk 3/4
+[04:51:42 +2m 7s | qaisec] Repaired malformed JSON.
+[04:51:42 +2m 7s | qaisec] Extracting: https://qaisec.eu/index.php/finance-and-telecom (4/7), chunk 4/4
+[04:51:45 +2m 10s | qaisec] Reading page (5/7): https://qaisec.eu
+[04:51:45 +2m 10s | qaisec] Extracting: https://qaisec.eu (5/7), chunk 1/1
+[04:51:50 +2m 15s | qaisec] Repaired malformed JSON.
+[04:51:50 +2m 15s | qaisec] Reading page (6/7): https://qaisec.eu/index.php/info
+[04:51:50 +2m 15s | qaisec] Extracting: https://qaisec.eu/index.php/info (6/7), chunk 1/3
+[04:51:54 +2m 19s | qaisec] Extracting: https://qaisec.eu/index.php/info (6/7), chunk 2/3
+[04:51:58 +2m 23s | qaisec] Extracting: https://qaisec.eu/index.php/info (6/7), chunk 3/3
+[04:52:10 +2m 32s | qaisec] Repaired malformed JSON.
+[04:52:10 +2m 32s | qaisec] Reading page (7/7): https://qaisec.eu/index.php/security
+[04:52:10 +2m 32s | qaisec] Extracting: https://qaisec.eu/index.php/security (7/7), chunk 1/4
+[04:52:14 +2m 36s | qaisec] Extracting: https://qaisec.eu/index.php/security (7/7), chunk 2/4
+[04:52:20 +2m 42s | qaisec] Repaired malformed JSON.
+[04:52:20 +2m 42s | qaisec] Extracting: https://qaisec.eu/index.php/security (7/7), chunk 3/4
+[04:52:28 +2m 50s | qaisec] Repaired malformed JSON.
+[04:52:28 +2m 50s | qaisec] Extracting: https://qaisec.eu/index.php/security (7/7), chunk 4/4
+[04:52:33 +2m 55s | qaisec] Repaired malformed JSON.
+[04:52:33 +2m 55s | qaisec] Saved 1_actor_results.json with 53 extracted records
+
+[04:52:33 +2m 55s | qaisec] === 2 clean actors ===
+[04:52:33 +2m 55s | qaisec] Loaded 53 extracted records
+[04:52:33 +2m 55s | qaisec] Saved 2_actor_nodes.json with 15 canonical actor nodes
+
+[04:52:33 +2m 55s | qaisec] === 3 interaction extraction ===
+[04:52:33 +2m 56s | qaisec] Extracting interactions: https://qaisec.eu/index.php/our-team (1/7), chunk 1/4
+[04:52:35 +2m 57s | qaisec] Extracting interactions: https://qaisec.eu/index.php/our-team (1/7), chunk 2/4
+[04:52:46 +3m 5s | qaisec] Extracting interactions: https://qaisec.eu/index.php/our-team (1/7), chunk 3/4
+[04:53:03 +3m 22s | qaisec] Extracting interactions: https://qaisec.eu/index.php/our-team (1/7), chunk 4/4
+[04:53:15 +3m 34s | qaisec] Extracting interactions: https://qaisec.eu/index.php/sequre (2/7), chunk 1/8
+[04:53:19 +3m 35s | qaisec] Extracting interactions: https://qaisec.eu/index.php/sequre (2/7), chunk 2/8
+[04:53:28 +3m 44s | qaisec] Extracting interactions: https://qaisec.eu/index.php/sequre (2/7), chunk 3/8
+[04:53:32 +3m 48s | qaisec] Extracting interactions: https://qaisec.eu/index.php/sequre (2/7), chunk 4/8
+[04:53:34 +3m 51s | qaisec] Extracting interactions: https://qaisec.eu/index.php/sequre (2/7), chunk 6/8
+[04:53:36 +3m 52s | qaisec] Extracting interactions: https://qaisec.eu/index.php/sequre (2/7), chunk 7/8
+[04:53:40 +3m 57s | qaisec] Extracting interactions: https://qaisec.eu/index.php/sequre (2/7), chunk 8/8
+[04:53:46 +4m 2s | qaisec] Extracting interactions: https://qaisec.eu/index.php/contact (3/7), chunk 1/4
+[04:53:50 +4m 6s | qaisec] Extracting interactions: https://qaisec.eu/index.php/contact (3/7), chunk 2/4
+[04:53:54 +4m 8s | qaisec] Extracting interactions: https://qaisec.eu/index.php/contact (3/7), chunk 3/4
+[04:54:00 +4m 14s | qaisec] Extracting interactions: https://qaisec.eu/index.php/contact (3/7), chunk 4/4
+[04:54:05 +4m 19s | qaisec] Extracting interactions: https://qaisec.eu/index.php/finance-and-telecom (4/7), chunk 1/4
+[04:54:07 +4m 20s | qaisec] Extracting interactions: https://qaisec.eu/index.php/finance-and-telecom (4/7), chunk 2/4
+[04:54:10 +4m 23s | qaisec] Extracting interactions: https://qaisec.eu/index.php/finance-and-telecom (4/7), chunk 3/4
+[04:54:13 +4m 26s | qaisec] Extracting interactions: https://qaisec.eu/index.php/finance-and-telecom (4/7), chunk 4/4
+[04:54:18 +4m 32s | qaisec] Extracting interactions: https://qaisec.eu (5/7), chunk 1/1
+[04:54:23 +4m 37s | qaisec] Extracting interactions: https://qaisec.eu/index.php/info (6/7), chunk 1/3
+[04:54:25 +4m 38s | qaisec] Extracting interactions: https://qaisec.eu/index.php/info (6/7), chunk 2/3
+[04:54:34 +4m 45s | qaisec] Extracting interactions: https://qaisec.eu/index.php/info (6/7), chunk 3/3
+[04:54:39 +4m 50s | qaisec] Extracting interactions: https://qaisec.eu/index.php/security (7/7), chunk 1/4
+[04:54:41 +4m 51s | qaisec] Extracting interactions: https://qaisec.eu/index.php/security (7/7), chunk 2/4
+[04:54:43 +4m 53s | qaisec] Extracting interactions: https://qaisec.eu/index.php/security (7/7), chunk 4/4
+[04:54:47 +4m 58s | qaisec] Saved 3_interaction_results.json with 31 extracted interactions.
+
+[04:54:47 +4m 58s | qaisec] === 4 clean interactions ===
+[04:54:47 +4m 58s | qaisec] Saved 4_edges.json with 16 cleaned interactions.
+
+[04:54:47 +4m 58s | qaisec] === 5 helix enrichment ===
+[04:54:47 +4m 58s | qaisec] Wrote 5_nodes.json (15 actors)
+[04:54:47 +4m 58s | qaisec] Wrote 5_edges.json (16 interactions)
+[04:54:47 +4m 58s | qaisec] Actor helix counts: {'Academia': 4, 'Civil Society': 1, 'Industry': 6, 'Unknown': 4}
+[04:54:47 +4m 58s | qaisec] Functional-space counts: {'Intra-helix / Not classified': 8, 'Unknown': 8}
+
+[04:54:47 +4m 58s | qaisec] === 6 network visualisation ===
+[04:54:48 +4m 59s | qaisec] Wrote quantum_network.html
+[04:54:48 +4m 59s | qaisec] Nodes: 15
+[04:54:48 +4m 59s | qaisec] Edges: 2
+
+[04:54:48 +4m 59s | qaisec] Done. Outputs written to: /home/lv/IDP/idpdeeptech/pipeline/site_outputs/qaisec
+[04:54:48 +4m 59s | qaisec] Log: /home/lv/IDP/idpdeeptech/pipeline/site_outputs/qaisec/run.log
+
+========================================================================
+RUN FINISHED 2026-06-17 04:54:48  (OK)
+Started:     2026-06-17 04:49:24
+Elapsed:     4m 59s
+========================================================================

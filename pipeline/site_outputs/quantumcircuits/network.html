@@ -1,0 +1,321 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+            <script>function neighbourhoodHighlight(params) {
+  // console.log("in nieghbourhoodhighlight");
+  allNodes = nodes.get({ returnType: "Object" });
+  // originalNodes = JSON.parse(JSON.stringify(allNodes));
+  // if something is selected:
+  if (params.nodes.length > 0) {
+    highlightActive = true;
+    var i, j;
+    var selectedNode = params.nodes[0];
+    var degrees = 2;
+
+    // mark all nodes as hard to read.
+    for (let nodeId in allNodes) {
+      // nodeColors[nodeId] = allNodes[nodeId].color;
+      allNodes[nodeId].color = "rgba(200,200,200,0.5)";
+      if (allNodes[nodeId].hiddenLabel === undefined) {
+        allNodes[nodeId].hiddenLabel = allNodes[nodeId].label;
+        allNodes[nodeId].label = undefined;
+      }
+    }
+    var connectedNodes = network.getConnectedNodes(selectedNode);
+    var allConnectedNodes = [];
+
+    // get the second degree nodes
+    for (i = 1; i < degrees; i++) {
+      for (j = 0; j < connectedNodes.length; j++) {
+        allConnectedNodes = allConnectedNodes.concat(
+          network.getConnectedNodes(connectedNodes[j])
+        );
+      }
+    }
+
+    // all second degree nodes get a different color and their label back
+    for (i = 0; i < allConnectedNodes.length; i++) {
+      // allNodes[allConnectedNodes[i]].color = "pink";
+      allNodes[allConnectedNodes[i]].color = "rgba(150,150,150,0.75)";
+      if (allNodes[allConnectedNodes[i]].hiddenLabel !== undefined) {
+        allNodes[allConnectedNodes[i]].label =
+          allNodes[allConnectedNodes[i]].hiddenLabel;
+        allNodes[allConnectedNodes[i]].hiddenLabel = undefined;
+      }
+    }
+
+    // all first degree nodes get their own color and their label back
+    for (i = 0; i < connectedNodes.length; i++) {
+      // allNodes[connectedNodes[i]].color = undefined;
+      allNodes[connectedNodes[i]].color = nodeColors[connectedNodes[i]];
+      if (allNodes[connectedNodes[i]].hiddenLabel !== undefined) {
+        allNodes[connectedNodes[i]].label =
+          allNodes[connectedNodes[i]].hiddenLabel;
+        allNodes[connectedNodes[i]].hiddenLabel = undefined;
+      }
+    }
+
+    // the main node gets its own color and its label back.
+    // allNodes[selectedNode].color = undefined;
+    allNodes[selectedNode].color = nodeColors[selectedNode];
+    if (allNodes[selectedNode].hiddenLabel !== undefined) {
+      allNodes[selectedNode].label = allNodes[selectedNode].hiddenLabel;
+      allNodes[selectedNode].hiddenLabel = undefined;
+    }
+  } else if (highlightActive === true) {
+    // console.log("highlightActive was true");
+    // reset all nodes
+    for (let nodeId in allNodes) {
+      // allNodes[nodeId].color = "purple";
+      allNodes[nodeId].color = nodeColors[nodeId];
+      // delete allNodes[nodeId].color;
+      if (allNodes[nodeId].hiddenLabel !== undefined) {
+        allNodes[nodeId].label = allNodes[nodeId].hiddenLabel;
+        allNodes[nodeId].hiddenLabel = undefined;
+      }
+    }
+    highlightActive = false;
+  }
+
+  // transform the object into an array
+  var updateArray = [];
+  if (params.nodes.length > 0) {
+    for (let nodeId in allNodes) {
+      if (allNodes.hasOwnProperty(nodeId)) {
+        // console.log(allNodes[nodeId]);
+        updateArray.push(allNodes[nodeId]);
+      }
+    }
+    nodes.update(updateArray);
+  } else {
+    // console.log("Nothing was selected");
+    for (let nodeId in allNodes) {
+      if (allNodes.hasOwnProperty(nodeId)) {
+        // console.log(allNodes[nodeId]);
+        // allNodes[nodeId].color = {};
+        updateArray.push(allNodes[nodeId]);
+      }
+    }
+    nodes.update(updateArray);
+  }
+}
+
+function filterHighlight(params) {
+  allNodes = nodes.get({ returnType: "Object" });
+  // if something is selected:
+  if (params.nodes.length > 0) {
+    filterActive = true;
+    let selectedNodes = params.nodes;
+
+    // hiding all nodes and saving the label
+    for (let nodeId in allNodes) {
+      allNodes[nodeId].hidden = true;
+      if (allNodes[nodeId].savedLabel === undefined) {
+        allNodes[nodeId].savedLabel = allNodes[nodeId].label;
+        allNodes[nodeId].label = undefined;
+      }
+    }
+
+    for (let i=0; i < selectedNodes.length; i++) {
+      allNodes[selectedNodes[i]].hidden = false;
+      if (allNodes[selectedNodes[i]].savedLabel !== undefined) {
+        allNodes[selectedNodes[i]].label = allNodes[selectedNodes[i]].savedLabel;
+        allNodes[selectedNodes[i]].savedLabel = undefined;
+      }
+    }
+
+  } else if (filterActive === true) {
+    // reset all nodes
+    for (let nodeId in allNodes) {
+      allNodes[nodeId].hidden = false;
+      if (allNodes[nodeId].savedLabel !== undefined) {
+        allNodes[nodeId].label = allNodes[nodeId].savedLabel;
+        allNodes[nodeId].savedLabel = undefined;
+      }
+    }
+    filterActive = false;
+  }
+
+  // transform the object into an array
+  var updateArray = [];
+  if (params.nodes.length > 0) {
+    for (let nodeId in allNodes) {
+      if (allNodes.hasOwnProperty(nodeId)) {
+        updateArray.push(allNodes[nodeId]);
+      }
+    }
+    nodes.update(updateArray);
+  } else {
+    for (let nodeId in allNodes) {
+      if (allNodes.hasOwnProperty(nodeId)) {
+        updateArray.push(allNodes[nodeId]);
+      }
+    }
+    nodes.update(updateArray);
+  }
+}
+
+function selectNode(nodes) {
+  network.selectNodes(nodes);
+  neighbourhoodHighlight({ nodes: nodes });
+  return nodes;
+}
+
+function selectNodes(nodes) {
+  network.selectNodes(nodes);
+  filterHighlight({nodes: nodes});
+  return nodes;
+}
+
+function highlightFilter(filter) {
+  let selectedNodes = []
+  let selectedProp = filter['property']
+  if (filter['item'] === 'node') {
+    let allNodes = nodes.get({ returnType: "Object" });
+    for (let nodeId in allNodes) {
+      if (allNodes[nodeId][selectedProp] && filter['value'].includes((allNodes[nodeId][selectedProp]).toString())) {
+        selectedNodes.push(nodeId)
+      }
+    }
+  }
+  else if (filter['item'] === 'edge'){
+    let allEdges = edges.get({returnType: 'object'});
+    // check if the selected property exists for selected edge and select the nodes connected to the edge
+    for (let edge in allEdges) {
+      if (allEdges[edge][selectedProp] && filter['value'].includes((allEdges[edge][selectedProp]).toString())) {
+        selectedNodes.push(allEdges[edge]['from'])
+        selectedNodes.push(allEdges[edge]['to'])
+      }
+    }
+  }
+  selectNodes(selectedNodes)
+}</script>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/dist/vis-network.min.css" integrity="sha512-WgxfT5LWjfszlPHXRmBWHkV2eceiWTOBvrKCNbdgDYTHrT2AeLCGbF4sZlZw3UMN3WtL0tGUoIAKsu8mllg/XA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/vis-network.min.js" integrity="sha512-LnvoEWDFrqGHlHmDD2101OrLcbsfkrzoSpvtSQtxK3RMnRV0eOkhhBN2dXHKRrUU8p2DGRTk35n4O8nWSVe1mQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            
+            
+            
+            
+            
+            
+
+        
+<center>
+<h1></h1>
+</center>
+
+<!-- <link rel="stylesheet" href="../node_modules/vis/dist/vis.min.css" type="text/css" />
+<script type="text/javascript" src="../node_modules/vis/dist/vis.js"> </script>-->
+        <link
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+          crossorigin="anonymous"
+        />
+        <script
+          src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+          crossorigin="anonymous"
+        ></script>
+
+
+        <center>
+          <h1></h1>
+        </center>
+        <style type="text/css">
+
+             #mynetwork {
+                 width: 100%;
+                 height: 850px;
+                 background-color: #ffffff;
+                 border: 1px solid lightgray;
+                 position: relative;
+                 float: left;
+             }
+
+             
+
+             
+
+             
+        </style>
+    </head>
+
+
+    <body>
+        <div class="card" style="width: 100%">
+            
+            
+            <div id="mynetwork" class="card-body"></div>
+        </div>
+
+        
+        
+
+        <script type="text/javascript">
+
+              // initialize global variables.
+              var edges;
+              var nodes;
+              var allNodes;
+              var allEdges;
+              var nodeColors;
+              var originalNodes;
+              var network;
+              var container;
+              var options, data;
+              var filter = {
+                  item : '',
+                  property : '',
+                  value : []
+              };
+
+              
+
+              
+
+              // This method is responsible for drawing the graph, returns the drawn network
+              function drawGraph() {
+                  var container = document.getElementById('mynetwork');
+
+                  
+
+                  // parsing and collecting nodes and edges from the python
+                  nodes = new vis.DataSet([{"category": "small and medium-sized enterprises", "color": "#F58518", "font": {"size": 18}, "helix": "Industry", "id": "algorithmiq", "label": "Algorithmiq", "shape": "dot", "size": 18, "title": "\u003cb\u003eAlgorithmiq\u003c/b\u003e\u003cbr\u003eHelix: Industry\u003cbr\u003eCategory: small and medium-sized enterprises\u003cbr\u003eReview: False"}, {"category": "large enterprises", "color": "#F58518", "font": {"size": 18}, "helix": "Industry", "id": "quantum circuits inc", "label": "Quantum Circuits, Inc.", "shape": "dot", "size": 18, "title": "\u003cb\u003eQuantum Circuits, Inc.\u003c/b\u003e\u003cbr\u003eHelix: Industry\u003cbr\u003eCategory: large enterprises\u003cbr\u003eReview: False"}, {"category": "large enterprises", "color": "#F58518", "font": {"size": 18}, "helix": "Industry", "id": "quantum circuits", "label": "quantum circuits", "shape": "dot", "size": 18, "title": "\u003cb\u003equantum circuits\u003c/b\u003e\u003cbr\u003eHelix: Industry\u003cbr\u003eCategory: large enterprises\u003cbr\u003eReview: False"}, {"category": "large enterprises", "color": "#F58518", "font": {"size": 18}, "helix": "Industry", "id": "aqumen seeker", "label": "Aqumen Seeker", "shape": "dot", "size": 18, "title": "\u003cb\u003eAqumen Seeker\u003c/b\u003e\u003cbr\u003eHelix: Industry\u003cbr\u003eCategory: large enterprises\u003cbr\u003eReview: False"}, {"category": "individual", "color": "#999999", "font": {"size": 18}, "helix": "Unknown", "id": "andrei petrenko", "label": "Andrei Petrenko", "shape": "dot", "size": 18, "title": "\u003cb\u003eAndrei Petrenko\u003c/b\u003e\u003cbr\u003eHelix: Unknown\u003cbr\u003eCategory: individual\u003cbr\u003eReview: True"}, {"category": "large enterprises", "color": "#F58518", "font": {"size": 18}, "helix": "Industry", "id": "basf", "label": "BASF", "shape": "dot", "size": 18, "title": "\u003cb\u003eBASF\u003c/b\u003e\u003cbr\u003eHelix: Industry\u003cbr\u003eCategory: large enterprises\u003cbr\u003eReview: False"}, {"category": "large enterprises", "color": "#F58518", "font": {"size": 18}, "helix": "Industry", "id": "d wave", "label": "D-Wave", "shape": "dot", "size": 18, "title": "\u003cb\u003eD-Wave\u003c/b\u003e\u003cbr\u003eHelix: Industry\u003cbr\u003eCategory: large enterprises\u003cbr\u003eReview: False"}, {"category": "individual", "color": "#999999", "font": {"size": 18}, "helix": "Unknown", "id": "bill coughran", "label": "Bill Coughran", "shape": "dot", "size": 18, "title": "\u003cb\u003eBill Coughran\u003c/b\u003e\u003cbr\u003eHelix: Unknown\u003cbr\u003eCategory: individual\u003cbr\u003eReview: True"}, {"category": "individual", "color": "#999999", "font": {"size": 18}, "helix": "Unknown", "id": "brendan dickinson", "label": "Brendan Dickinson", "shape": "dot", "size": 18, "title": "\u003cb\u003eBrendan Dickinson\u003c/b\u003e\u003cbr\u003eHelix: Unknown\u003cbr\u003eCategory: individual\u003cbr\u003eReview: True"}, {"category": "individual", "color": "#999999", "font": {"size": 18}, "helix": "Unknown", "id": "stephen knight", "label": "Stephen Knight", "shape": "dot", "size": 18, "title": "\u003cb\u003eStephen Knight\u003c/b\u003e\u003cbr\u003eHelix: Unknown\u003cbr\u003eCategory: individual\u003cbr\u003eReview: True"}, {"category": "financial support institutions", "color": "#E45756", "font": {"size": 18}, "helix": "Intermediary", "id": "hither creek ventures", "label": "Hither Creek Ventures", "shape": "dot", "size": 18, "title": "\u003cb\u003eHither Creek Ventures\u003c/b\u003e\u003cbr\u003eHelix: Intermediary\u003cbr\u003eCategory: financial support institutions\u003cbr\u003eReview: False"}, {"category": "large enterprises", "color": "#F58518", "font": {"size": 18}, "helix": "Industry", "id": "dla piper", "label": "DLA Piper", "shape": "dot", "size": 18, "title": "\u003cb\u003eDLA Piper\u003c/b\u003e\u003cbr\u003eHelix: Industry\u003cbr\u003eCategory: large enterprises\u003cbr\u003eReview: False"}, {"category": "individual", "color": "#999999", "font": {"size": 18}, "helix": "Unknown", "id": "guillermo garc a p rez", "label": "Guillermo Garc\u00eda-P\u00e9rez", "shape": "dot", "size": 18, "title": "\u003cb\u003eGuillermo Garc\u00eda-P\u00e9rez\u003c/b\u003e\u003cbr\u003eHelix: Unknown\u003cbr\u003eCategory: individual\u003cbr\u003eReview: True"}, {"category": "individual", "color": "#999999", "font": {"size": 18}, "helix": "Unknown", "id": "harvey moseley", "label": "Harvey Moseley", "shape": "dot", "size": 18, "title": "\u003cb\u003eHarvey Moseley\u003c/b\u003e\u003cbr\u003eHelix: Unknown\u003cbr\u003eCategory: individual\u003cbr\u003eReview: True"}, {"category": "individual", "color": "#999999", "font": {"size": 18}, "helix": "Unknown", "id": "jensen huang", "label": "Jensen Huang", "shape": "dot", "size": 18, "title": "\u003cb\u003eJensen Huang\u003c/b\u003e\u003cbr\u003eHelix: Unknown\u003cbr\u003eCategory: individual\u003cbr\u003eReview: True"}, {"category": "large enterprises", "color": "#F58518", "font": {"size": 18}, "helix": "Industry", "id": "nvidia", "label": "NVIDIA", "shape": "dot", "size": 18, "title": "\u003cb\u003eNVIDIA\u003c/b\u003e\u003cbr\u003eHelix: Industry\u003cbr\u003eCategory: large enterprises\u003cbr\u003eReview: False"}, {"category": "universities", "color": "#4C78A8", "font": {"size": 18}, "helix": "Academia", "id": "yale university", "label": "Yale University", "shape": "dot", "size": 18, "title": "\u003cb\u003eYale University\u003c/b\u003e\u003cbr\u003eHelix: Academia\u003cbr\u003eCategory: universities\u003cbr\u003eReview: False"}, {"category": "business support institutions", "color": "#E45756", "font": {"size": 18}, "helix": "Intermediary", "id": "nordtech consortium", "label": "NORDTECH Consortium", "shape": "dot", "size": 18, "title": "\u003cb\u003eNORDTECH Consortium\u003c/b\u003e\u003cbr\u003eHelix: Intermediary\u003cbr\u003eCategory: business support institutions\u003cbr\u003eReview: False"}, {"category": "individual", "color": "#F58518", "font": {"size": 18}, "helix": "Industry", "id": "ray smets", "label": "Ray Smets", "shape": "dot", "size": 18, "title": "\u003cb\u003eRay Smets\u003c/b\u003e\u003cbr\u003eHelix: Industry\u003cbr\u003eCategory: individual\u003cbr\u003eReview: True"}, {"category": "entrepreneurial scientist", "color": "#E45756", "font": {"size": 18}, "helix": "Intermediary", "id": "rob schoelkopf", "label": "Rob Schoelkopf", "shape": "dot", "size": 18, "title": "\u003cb\u003eRob Schoelkopf\u003c/b\u003e\u003cbr\u003eHelix: Intermediary\u003cbr\u003eCategory: entrepreneurial scientist\u003cbr\u003eReview: False"}, {"category": "large enterprises", "color": "#F58518", "font": {"size": 18}, "helix": "Industry", "id": "supermicro", "label": "Supermicro", "shape": "dot", "size": 18, "title": "\u003cb\u003eSupermicro\u003c/b\u003e\u003cbr\u003eHelix: Industry\u003cbr\u003eCategory: large enterprises\u003cbr\u003eReview: False"}, {"category": "other", "color": "#F58518", "font": {"size": 18}, "helix": "Industry", "id": "aqumen", "label": "Aqumen", "shape": "dot", "size": 18, "title": "\u003cb\u003eAqumen\u003c/b\u003e\u003cbr\u003eHelix: Industry\u003cbr\u003eCategory: other\u003cbr\u003eReview: False"}, {"category": "business support institutions", "color": "#E45756", "font": {"size": 18}, "helix": "Intermediary", "id": "northeast regional defense technology hub", "label": "Northeast Regional Defense Technology Hub (NORDTECH)", "shape": "dot", "size": 18, "title": "\u003cb\u003eNortheast Regional Defense Technology Hub (NORDTECH)\u003c/b\u003e\u003cbr\u003eHelix: Intermediary\u003cbr\u003eCategory: business support institutions\u003cbr\u003eReview: False"}, {"category": "large enterprises", "color": "#F58518", "font": {"size": 18}, "helix": "Industry", "id": "quantum circuits incorporated", "label": "Quantum Circuits Incorporated", "shape": "dot", "size": 18, "title": "\u003cb\u003eQuantum Circuits Incorporated\u003c/b\u003e\u003cbr\u003eHelix: Industry\u003cbr\u003eCategory: large enterprises\u003cbr\u003eReview: False"}, {"category": "universities", "color": "#4C78A8", "font": {"size": 18}, "helix": "Academia", "id": "yale", "label": "Yale", "shape": "dot", "size": 18, "title": "\u003cb\u003eYale\u003c/b\u003e\u003cbr\u003eHelix: Academia\u003cbr\u003eCategory: universities\u003cbr\u003eReview: False"}, {"category": "individual", "color": "#999999", "font": {"size": 18}, "helix": "Unknown", "id": "sabrina maniscalco", "label": "Sabrina Maniscalco", "shape": "dot", "size": 18, "title": "\u003cb\u003eSabrina Maniscalco\u003c/b\u003e\u003cbr\u003eHelix: Unknown\u003cbr\u003eCategory: individual\u003cbr\u003eReview: True"}, {"category": "non-governmental and non-profit organizations", "color": "#B279A2", "font": {"size": 18}, "helix": "Civil Society", "id": "aicpa", "label": "AICPA", "shape": "dot", "size": 18, "title": "\u003cb\u003eAICPA\u003c/b\u003e\u003cbr\u003eHelix: Civil Society\u003cbr\u003eCategory: non-governmental and non-profit organizations\u003cbr\u003eReview: False"}, {"category": "individual", "color": "#999999", "font": {"size": 18}, "helix": "Unknown", "id": "alex", "label": "Alex", "shape": "dot", "size": 18, "title": "\u003cb\u003eAlex\u003c/b\u003e\u003cbr\u003eHelix: Unknown\u003cbr\u003eCategory: individual\u003cbr\u003eReview: True"}, {"category": "individual", "color": "#999999", "font": {"size": 18}, "helix": "Unknown", "id": "andrei", "label": "Andrei", "shape": "dot", "size": 18, "title": "\u003cb\u003eAndrei\u003c/b\u003e\u003cbr\u003eHelix: Unknown\u003cbr\u003eCategory: individual\u003cbr\u003eReview: True"}, {"category": "technology", "color": "#F58518", "font": {"size": 18}, "helix": "Industry", "id": "aqumen cloud service", "label": "Aqumen Cloud Service (ACS)", "shape": "dot", "size": 18, "title": "\u003cb\u003eAqumen Cloud Service (ACS)\u003c/b\u003e\u003cbr\u003eHelix: Industry\u003cbr\u003eCategory: technology\u003cbr\u003eReview: False"}, {"category": "country", "color": "#999999", "font": {"size": 18}, "helix": "Unknown", "id": "california", "label": "California", "shape": "dot", "size": 18, "title": "\u003cb\u003eCalifornia\u003c/b\u003e\u003cbr\u003eHelix: Unknown\u003cbr\u003eCategory: country\u003cbr\u003eReview: True"}, {"category": "large enterprises", "color": "#F58518", "font": {"size": 18}, "helix": "Industry", "id": "cloudflare", "label": "CloudFlare", "shape": "dot", "size": 18, "title": "\u003cb\u003eCloudFlare\u003c/b\u003e\u003cbr\u003eHelix: Industry\u003cbr\u003eCategory: large enterprises\u003cbr\u003eReview: False"}, {"category": "country", "color": "#999999", "font": {"size": 18}, "helix": "Unknown", "id": "colorado", "label": "Colorado", "shape": "dot", "size": 18, "title": "\u003cb\u003eColorado\u003c/b\u003e\u003cbr\u003eHelix: Unknown\u003cbr\u003eCategory: country\u003cbr\u003eReview: True"}, {"category": "large enterprises", "color": "#F58518", "font": {"size": 18}, "helix": "Industry", "id": "complianz", "label": "Complianz", "shape": "dot", "size": 18, "title": "\u003cb\u003eComplianz\u003c/b\u003e\u003cbr\u003eHelix: Industry\u003cbr\u003eCategory: large enterprises\u003cbr\u003eReview: False"}, {"category": "other", "color": "#999999", "font": {"size": 18}, "helix": "Unknown", "id": "cookiedatabase", "label": "CookieDatabase", "shape": "dot", "size": 18, "title": "\u003cb\u003eCookieDatabase\u003c/b\u003e\u003cbr\u003eHelix: Unknown\u003cbr\u003eCategory: other\u003cbr\u003eReview: True"}, {"category": "other", "color": "#999999", "font": {"size": 18}, "helix": "Unknown", "id": "cookiedatabase org", "label": "cookiedatabase.org", "shape": "dot", "size": 18, "title": "\u003cb\u003ecookiedatabase.org\u003c/b\u003e\u003cbr\u003eHelix: Unknown\u003cbr\u003eCategory: other\u003cbr\u003eReview: True"}, {"category": "individual", "color": "#999999", "font": {"size": 18}, "helix": "Unknown", "id": "craig", "label": "Craig", "shape": "dot", "size": 18, "title": "\u003cb\u003eCraig\u003c/b\u003e\u003cbr\u003eHelix: Unknown\u003cbr\u003eCategory: individual\u003cbr\u003eReview: True"}, {"category": "other", "color": "#999999", "font": {"size": 18}, "helix": "Unknown", "id": "d wave github", "label": "D-Wave GitHub", "shape": "dot", "size": 18, "title": "\u003cb\u003eD-Wave GitHub\u003c/b\u003e\u003cbr\u003eHelix: Unknown\u003cbr\u003eCategory: other\u003cbr\u003eReview: True"}, {"category": "large enterprises", "color": "#F58518", "font": {"size": 18}, "helix": "Industry", "id": "d wave japan", "label": "D-Wave Japan", "shape": "dot", "size": 18, "title": "\u003cb\u003eD-Wave Japan\u003c/b\u003e\u003cbr\u003eHelix: Industry\u003cbr\u003eCategory: large enterprises\u003cbr\u003eReview: False"}, {"category": "large enterprises", "color": "#F58518", "font": {"size": 18}, "helix": "Industry", "id": "d wave quantum", "label": "D-Wave Quantum", "shape": "dot", "size": 18, "title": "\u003cb\u003eD-Wave Quantum\u003c/b\u003e\u003cbr\u003eHelix: Industry\u003cbr\u003eCategory: large enterprises\u003cbr\u003eReview: False"}, {"category": "large enterprises", "color": "#F58518", "font": {"size": 18}, "helix": "Industry", "id": "d wave quantum inc", "label": "D-Wave Quantum Inc.", "shape": "dot", "size": 18, "title": "\u003cb\u003eD-Wave Quantum Inc.\u003c/b\u003e\u003cbr\u003eHelix: Industry\u003cbr\u003eCategory: large enterprises\u003cbr\u003eReview: False"}, {"category": "large enterprises", "color": "#F58518", "font": {"size": 18}, "helix": "Industry", "id": "d wave systems", "label": "D-Wave Systems", "shape": "dot", "size": 18, "title": "\u003cb\u003eD-Wave Systems\u003c/b\u003e\u003cbr\u003eHelix: Industry\u003cbr\u003eCategory: large enterprises\u003cbr\u003eReview: False"}, {"category": "national government institutions", "color": "#54A24B", "font": {"size": 18}, "helix": "Government", "id": "department of commerce", "label": "Department of Commerce", "shape": "dot", "size": 18, "title": "\u003cb\u003eDepartment of Commerce\u003c/b\u003e\u003cbr\u003eHelix: Government\u003cbr\u003eCategory: national government institutions\u003cbr\u003eReview: False"}, {"category": "financial support institutions", "color": "#E45756", "font": {"size": 18}, "helix": "Intermediary", "id": "dpcm capital inc", "label": "DPCM Capital, Inc.", "shape": "dot", "size": 18, "title": "\u003cb\u003eDPCM Capital, Inc.\u003c/b\u003e\u003cbr\u003eHelix: Intermediary\u003cbr\u003eCategory: financial support institutions\u003cbr\u003eReview: False"}, {"category": "individual", "color": "#F58518", "font": {"size": 18}, "helix": "Industry", "id": "dr rob schoelkopf", "label": "Dr. Rob Schoelkopf", "shape": "dot", "size": 18, "title": "\u003cb\u003eDr. Rob Schoelkopf\u003c/b\u003e\u003cbr\u003eHelix: Industry\u003cbr\u003eCategory: individual\u003cbr\u003eReview: True"}, {"category": "large enterprises", "color": "#F58518", "font": {"size": 18}, "helix": "Industry", "id": "facebook", "label": "Facebook", "shape": "dot", "size": 18, "title": "\u003cb\u003eFacebook\u003c/b\u003e\u003cbr\u003eHelix: Industry\u003cbr\u003eCategory: large enterprises\u003cbr\u003eReview: False"}, {"category": "financial support institutions", "color": "#E45756", "font": {"size": 18}, "helix": "Intermediary", "id": "fitz gate ventures", "label": "Fitz Gate Ventures", "shape": "dot", "size": 18, "title": "\u003cb\u003eFitz Gate Ventures\u003c/b\u003e\u003cbr\u003eHelix: Intermediary\u003cbr\u003eCategory: financial support institutions\u003cbr\u003eReview: False"}, {"category": "large enterprises", "color": "#F58518", "font": {"size": 18}, "helix": "Industry", "id": "ford otosan", "label": "Ford Otosan", "shape": "dot", "size": 18, "title": "\u003cb\u003eFord Otosan\u003c/b\u003e\u003cbr\u003eHelix: Industry\u003cbr\u003eCategory: large enterprises\u003cbr\u003eReview: False"}, {"category": "large enterprises", "color": "#F58518", "font": {"size": 18}, "helix": "Industry", "id": "google", "label": "Google", "shape": "dot", "size": 18, "title": "\u003cb\u003eGoogle\u003c/b\u003e\u003cbr\u003eHelix: Industry\u003cbr\u003eCategory: large enterprises\u003cbr\u003eReview: False"}, {"category": "other", "color": "#999999", "font": {"size": 18}, "helix": "Unknown", "id": "google analytics", "label": "Google Analytics", "shape": "dot", "size": 18, "title": "\u003cb\u003eGoogle Analytics\u003c/b\u003e\u003cbr\u003eHelix: Unknown\u003cbr\u003eCategory: other\u003cbr\u003eReview: True"}, {"category": "individual", "color": "#54A24B", "font": {"size": 18}, "helix": "Government", "id": "guillermo", "label": "Guillermo", "shape": "dot", "size": 18, "title": "\u003cb\u003eGuillermo\u003c/b\u003e\u003cbr\u003eHelix: Government\u003cbr\u003eCategory: individual\u003cbr\u003eReview: True"}, {"category": "individual", "color": "#F58518", "font": {"size": 18}, "helix": "Industry", "id": "heather west", "label": "Heather West", "shape": "dot", "size": 18, "title": "\u003cb\u003eHeather West\u003c/b\u003e\u003cbr\u003eHelix: Industry\u003cbr\u003eCategory: individual\u003cbr\u003eReview: True"}, {"category": "media and cultural institutions", "color": "#B279A2", "font": {"size": 18}, "helix": "Civil Society", "id": "idc", "label": "IDC", "shape": "dot", "size": 18, "title": "\u003cb\u003eIDC\u003c/b\u003e\u003cbr\u003eHelix: Civil Society\u003cbr\u003eCategory: media and cultural institutions\u003cbr\u003eReview: False"}, {"category": "country", "color": "#999999", "font": {"size": 18}, "helix": "Unknown", "id": "indonesia", "label": "Indonesia", "shape": "dot", "size": 18, "title": "\u003cb\u003eIndonesia\u003c/b\u003e\u003cbr\u003eHelix: Unknown\u003cbr\u003eCategory: country\u003cbr\u003eReview: True"}, {"category": "media and cultural institutions", "color": "#B279A2", "font": {"size": 18}, "helix": "Civil Society", "id": "iot world today", "label": "IoT World Today", "shape": "dot", "size": 18, "title": "\u003cb\u003eIoT World Today\u003c/b\u003e\u003cbr\u003eHelix: Civil Society\u003cbr\u003eCategory: media and cultural institutions\u003cbr\u003eReview: False"}, {"category": "individual", "color": "#999999", "font": {"size": 18}, "helix": "Unknown", "id": "kelly", "label": "Kelly", "shape": "dot", "size": 18, "title": "\u003cb\u003eKelly\u003c/b\u003e\u003cbr\u003eHelix: Unknown\u003cbr\u003eCategory: individual\u003cbr\u003eReview: True"}, {"category": "individual", "color": "#999999", "font": {"size": 18}, "helix": "Unknown", "id": "mana", "label": "Mana", "shape": "dot", "size": 18, "title": "\u003cb\u003eMana\u003c/b\u003e\u003cbr\u003eHelix: Unknown\u003cbr\u003eCategory: individual\u003cbr\u003eReview: True"}, {"category": "individual", "color": "#999999", "font": {"size": 18}, "helix": "Unknown", "id": "marc gabay", "label": "Marc Gabay", "shape": "dot", "size": 18, "title": "\u003cb\u003eMarc Gabay\u003c/b\u003e\u003cbr\u003eHelix: Unknown\u003cbr\u003eCategory: individual\u003cbr\u003eReview: True"}, {"category": "individual", "color": "#999999", "font": {"size": 18}, "helix": "Unknown", "id": "marcela", "label": "Marcela", "shape": "dot", "size": 18, "title": "\u003cb\u003eMarcela\u003c/b\u003e\u003cbr\u003eHelix: Unknown\u003cbr\u003eCategory: individual\u003cbr\u003eReview: True"}, {"category": "individual", "color": "#999999", "font": {"size": 18}, "helix": "Unknown", "id": "mather", "label": "Mather", "shape": "dot", "size": 18, "title": "\u003cb\u003eMather\u003c/b\u003e\u003cbr\u003eHelix: Unknown\u003cbr\u003eCategory: individual\u003cbr\u003eReview: True"}, {"category": "individual", "color": "#999999", "font": {"size": 18}, "helix": "Unknown", "id": "michel devoret", "label": "Michel Devoret", "shape": "dot", "size": 18, "title": "\u003cb\u003eMichel Devoret\u003c/b\u003e\u003cbr\u003eHelix: Unknown\u003cbr\u003eCategory: individual\u003cbr\u003eReview: True"}, {"category": "individual", "color": "#F58518", "font": {"size": 18}, "helix": "Industry", "id": "mowaffak", "label": "Mowaffak", "shape": "dot", "size": 18, "title": "\u003cb\u003eMowaffak\u003c/b\u003e\u003cbr\u003eHelix: Industry\u003cbr\u003eCategory: individual\u003cbr\u003eReview: True"}, {"category": "individual", "color": "#F58518", "font": {"size": 18}, "helix": "Industry", "id": "mowaffak midani", "label": "Mowaffak Midani", "shape": "dot", "size": 18, "title": "\u003cb\u003eMowaffak Midani\u003c/b\u003e\u003cbr\u003eHelix: Industry\u003cbr\u003eCategory: individual\u003cbr\u003eReview: True"}, {"category": "large enterprises", "color": "#F58518", "font": {"size": 18}, "helix": "Industry", "id": "napatech a s", "label": "Napatech A/S", "shape": "dot", "size": 18, "title": "\u003cb\u003eNapatech A/S\u003c/b\u003e\u003cbr\u003eHelix: Industry\u003cbr\u003eCategory: large enterprises\u003cbr\u003eReview: False"}, {"category": "research institutes", "color": "#4C78A8", "font": {"size": 18}, "helix": "Academia", "id": "national academy of sciences", "label": "National Academy of Sciences", "shape": "dot", "size": 18, "title": "\u003cb\u003eNational Academy of Sciences\u003c/b\u003e\u003cbr\u003eHelix: Academia\u003cbr\u003eCategory: research institutes\u003cbr\u003eReview: False"}, {"category": "media and cultural institutions", "color": "#B279A2", "font": {"size": 18}, "helix": "Civil Society", "id": "nature physics", "label": "Nature Physics", "shape": "dot", "size": 18, "title": "\u003cb\u003eNature Physics\u003c/b\u003e\u003cbr\u003eHelix: Civil Society\u003cbr\u003eCategory: media and cultural institutions\u003cbr\u003eReview: False"}, {"category": "individual", "color": "#F58518", "font": {"size": 18}, "helix": "Industry", "id": "neil", "label": "Neil", "shape": "dot", "size": 18, "title": "\u003cb\u003eNeil\u003c/b\u003e\u003cbr\u003eHelix: Industry\u003cbr\u003eCategory: individual\u003cbr\u003eReview: True"}, {"category": "large enterprises", "color": "#F58518", "font": {"size": 18}, "helix": "Industry", "id": "ntt docomo", "label": "NTT DOCOMO", "shape": "dot", "size": 18, "title": "\u003cb\u003eNTT DOCOMO\u003c/b\u003e\u003cbr\u003eHelix: Industry\u003cbr\u003eCategory: large enterprises\u003cbr\u003eReview: False"}, {"category": "large enterprises", "color": "#F58518", "font": {"size": 18}, "helix": "Industry", "id": "onit", "label": "Onit", "shape": "dot", "size": 18, "title": "\u003cb\u003eOnit\u003c/b\u003e\u003cbr\u003eHelix: Industry\u003cbr\u003eCategory: large enterprises\u003cbr\u003eReview: False"}, {"category": "large enterprises", "color": "#F58518", "font": {"size": 18}, "helix": "Industry", "id": "pattison food group", "label": "Pattison Food Group", "shape": "dot", "size": 18, "title": "\u003cb\u003ePattison Food Group\u003c/b\u003e\u003cbr\u003eHelix: Industry\u003cbr\u003eCategory: large enterprises\u003cbr\u003eReview: False"}, {"category": "small and medium-sized enterprises", "color": "#F58518", "font": {"size": 18}, "helix": "Industry", "id": "qc ware", "label": "QC Ware", "shape": "dot", "size": 18, "title": "\u003cb\u003eQC Ware\u003c/b\u003e\u003cbr\u003eHelix: Industry\u003cbr\u003eCategory: small and medium-sized enterprises\u003cbr\u003eReview: False"}, {"category": "large enterprises", "color": "#F58518", "font": {"size": 18}, "helix": "Industry", "id": "qci quantum circuits inc", "label": "QCI Quantum Circuits Inc", "shape": "dot", "size": 18, "title": "\u003cb\u003eQCI Quantum Circuits Inc\u003c/b\u003e\u003cbr\u003eHelix: Industry\u003cbr\u003eCategory: large enterprises\u003cbr\u003eReview: False"}, {"category": "technology", "color": "#999999", "font": {"size": 18}, "helix": "Unknown", "id": "qiskit", "label": "Qiskit", "shape": "dot", "size": 18, "title": "\u003cb\u003eQiskit\u003c/b\u003e\u003cbr\u003eHelix: Unknown\u003cbr\u003eCategory: technology\u003cbr\u003eReview: True"}, {"category": "large enterprises", "color": "#F58518", "font": {"size": 18}, "helix": "Industry", "id": "quantinuum", "label": "Quantinuum", "shape": "dot", "size": 18, "title": "\u003cb\u003eQuantinuum\u003c/b\u003e\u003cbr\u003eHelix: Industry\u003cbr\u003eCategory: large enterprises\u003cbr\u003eReview: False"}, {"category": "research institutes", "color": "#4C78A8", "font": {"size": 18}, "helix": "Academia", "id": "quantum consortium", "label": "Quantum Consortium", "shape": "dot", "size": 18, "title": "\u003cb\u003eQuantum Consortium\u003c/b\u003e\u003cbr\u003eHelix: Academia\u003cbr\u003eCategory: research institutes\u003cbr\u003eReview: False"}, {"category": "individual", "color": "#999999", "font": {"size": 18}, "helix": "Unknown", "id": "ray", "label": "Ray", "shape": "dot", "size": 18, "title": "\u003cb\u003eRay\u003c/b\u003e\u003cbr\u003eHelix: Unknown\u003cbr\u003eCategory: individual\u003cbr\u003eReview: True"}, {"category": "individual", "color": "#999999", "font": {"size": 18}, "helix": "Unknown", "id": "scott aaronson", "label": "Scott Aaronson", "shape": "dot", "size": 18, "title": "\u003cb\u003eScott Aaronson\u003c/b\u003e\u003cbr\u003eHelix: Unknown\u003cbr\u003eCategory: individual\u003cbr\u003eReview: True"}, {"category": "individual", "color": "#999999", "font": {"size": 18}, "helix": "Unknown", "id": "sean", "label": "Sean", "shape": "dot", "size": 18, "title": "\u003cb\u003eSean\u003c/b\u003e\u003cbr\u003eHelix: Unknown\u003cbr\u003eCategory: individual\u003cbr\u003eReview: True"}, {"category": "individual", "color": "#999999", "font": {"size": 18}, "helix": "Unknown", "id": "sean weinberg", "label": "Sean Weinberg", "shape": "dot", "size": 18, "title": "\u003cb\u003eSean Weinberg\u003c/b\u003e\u003cbr\u003eHelix: Unknown\u003cbr\u003eCategory: individual\u003cbr\u003eReview: True"}, {"category": "individual", "color": "#999999", "font": {"size": 18}, "helix": "Unknown", "id": "sebastian hassinger", "label": "Sebastian Hassinger", "shape": "dot", "size": 18, "title": "\u003cb\u003eSebastian Hassinger\u003c/b\u003e\u003cbr\u003eHelix: Unknown\u003cbr\u003eCategory: individual\u003cbr\u003eReview: True"}, {"category": "small and medium-sized enterprises", "color": "#F58518", "font": {"size": 18}, "helix": "Industry", "id": "sl corporation", "label": "SL Corporation", "shape": "dot", "size": 18, "title": "\u003cb\u003eSL Corporation\u003c/b\u003e\u003cbr\u003eHelix: Industry\u003cbr\u003eCategory: small and medium-sized enterprises\u003cbr\u003eReview: False"}, {"category": "individual", "color": "#999999", "font": {"size": 18}, "helix": "Unknown", "id": "stephen", "label": "Stephen", "shape": "dot", "size": 18, "title": "\u003cb\u003eStephen\u003c/b\u003e\u003cbr\u003eHelix: Unknown\u003cbr\u003eCategory: individual\u003cbr\u003eReview: True"}, {"category": "individual", "color": "#999999", "font": {"size": 18}, "helix": "Unknown", "id": "stephen horton", "label": "Stephen Horton", "shape": "dot", "size": 18, "title": "\u003cb\u003eStephen Horton\u003c/b\u003e\u003cbr\u003eHelix: Unknown\u003cbr\u003eCategory: individual\u003cbr\u003eReview: True"}, {"category": "large enterprises", "color": "#F58518", "font": {"size": 18}, "helix": "Industry", "id": "thermo electron", "label": "Thermo Electron", "shape": "dot", "size": 18, "title": "\u003cb\u003eThermo Electron\u003c/b\u003e\u003cbr\u003eHelix: Industry\u003cbr\u003eCategory: large enterprises\u003cbr\u003eReview: False"}, {"category": "individual", "color": "#999999", "font": {"size": 18}, "helix": "Unknown", "id": "tim costa", "label": "Tim Costa", "shape": "dot", "size": 18, "title": "\u003cb\u003eTim Costa\u003c/b\u003e\u003cbr\u003eHelix: Unknown\u003cbr\u003eCategory: individual\u003cbr\u003eReview: True"}, {"category": "individual", "color": "#999999", "font": {"size": 18}, "helix": "Unknown", "id": "tom lubinski", "label": "Tom Lubinski", "shape": "dot", "size": 18, "title": "\u003cb\u003eTom Lubinski\u003c/b\u003e\u003cbr\u003eHelix: Unknown\u003cbr\u003eCategory: individual\u003cbr\u003eReview: True"}, {"category": "individual", "color": "#F58518", "font": {"size": 18}, "helix": "Industry", "id": "trevor", "label": "Trevor", "shape": "dot", "size": 18, "title": "\u003cb\u003eTrevor\u003c/b\u003e\u003cbr\u003eHelix: Industry\u003cbr\u003eCategory: individual\u003cbr\u003eReview: True"}, {"category": "large enterprises", "color": "#F58518", "font": {"size": 18}, "helix": "Industry", "id": "tusimple", "label": "TuSimple", "shape": "dot", "size": 18, "title": "\u003cb\u003eTuSimple\u003c/b\u003e\u003cbr\u003eHelix: Industry\u003cbr\u003eCategory: large enterprises\u003cbr\u003eReview: False"}, {"category": "country", "color": "#F58518", "font": {"size": 18}, "helix": "Industry", "id": "united states", "label": "United States", "shape": "dot", "size": 18, "title": "\u003cb\u003eUnited States\u003c/b\u003e\u003cbr\u003eHelix: Industry\u003cbr\u003eCategory: country\u003cbr\u003eReview: False"}, {"category": "universities", "color": "#4C78A8", "font": {"size": 18}, "helix": "Academia", "id": "university federico ii of napoli", "label": "University Federico II of Napoli", "shape": "dot", "size": 18, "title": "\u003cb\u003eUniversity Federico II of Napoli\u003c/b\u003e\u003cbr\u003eHelix: Academia\u003cbr\u003eCategory: universities\u003cbr\u003eReview: False"}, {"category": "universities", "color": "#4C78A8", "font": {"size": 18}, "helix": "Academia", "id": "university paris sud xi", "label": "University Paris-Sud XI", "shape": "dot", "size": 18, "title": "\u003cb\u003eUniversity Paris-Sud XI\u003c/b\u003e\u003cbr\u003eHelix: Academia\u003cbr\u003eCategory: universities\u003cbr\u003eReview: False"}, {"category": "large enterprises", "color": "#F58518", "font": {"size": 18}, "helix": "Industry", "id": "vimeo", "label": "Vimeo", "shape": "dot", "size": 18, "title": "\u003cb\u003eVimeo\u003c/b\u003e\u003cbr\u003eHelix: Industry\u003cbr\u003eCategory: large enterprises\u003cbr\u003eReview: False"}, {"category": "other", "color": "#999999", "font": {"size": 18}, "helix": "Unknown", "id": "wordpress", "label": "WordPress", "shape": "dot", "size": 18, "title": "\u003cb\u003eWordPress\u003c/b\u003e\u003cbr\u003eHelix: Unknown\u003cbr\u003eCategory: other\u003cbr\u003eReview: True"}, {"category": "large enterprises", "color": "#F58518", "font": {"size": 18}, "helix": "Industry", "id": "youtube", "label": "YouTube", "shape": "dot", "size": 18, "title": "\u003cb\u003eYouTube\u003c/b\u003e\u003cbr\u003eHelix: Industry\u003cbr\u003eCategory: large enterprises\u003cbr\u003eReview: False"}]);
+                  edges = new vis.DataSet([{"arrows": "to", "color": "#6B7280", "from": "algorithmiq", "label": "networking", "title": "\u003cb\u003enetworking\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Intra-helix / Not classified\u003cbr\u003ePage: 3\u003cbr\u003ePhrase: in partnership with Quantum Circuits", "to": "quantum circuits inc", "width": 2}, {"arrows": "to", "color": "#2563EB", "from": "algorithmiq", "label": "collaborative_leadership", "title": "\u003cb\u003ecollaborative_leadership\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Intra-helix / Not classified\u003cbr\u003ePage: 4\u003cbr\u003ePhrase: partnership with Quantum Circuits", "to": "quantum circuits", "width": 2}, {"arrows": "to", "color": "#2563EB", "from": "algorithmiq", "label": "collaborative_leadership", "title": "\u003cb\u003ecollaborative_leadership\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Intra-helix / Not classified\u003cbr\u003ePage: 3\u003cbr\u003ePhrase: utilizing the full-stack quantum computing system Aqumen Seeker", "to": "aqumen seeker", "width": 2}, {"arrows": "to", "color": "#2563EB", "from": "andrei petrenko", "label": "collaborative_leadership", "title": "\u003cb\u003ecollaborative_leadership\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Unknown\u003cbr\u003ePage: 3\u003cbr\u003ePhrase: Head of Product", "to": "quantum circuits", "width": 2}, {"arrows": "to", "color": "#D97706", "from": "basf", "label": "technology_transfer", "title": "\u003cb\u003etechnology_transfer\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Intra-helix / Not classified\u003cbr\u003ePage: 16\u003cbr\u003ePhrase: Announce Completion of Proof-of-Concept Project", "to": "d wave", "width": 2}, {"arrows": "to", "color": "#6B7280", "from": "bill coughran", "label": "networking", "title": "\u003cb\u003enetworking\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Unknown\u003cbr\u003ePage: 5\u003cbr\u003ePhrase: a board consisting of", "to": "brendan dickinson", "width": 2}, {"arrows": "to", "color": "#6B7280", "from": "bill coughran", "label": "networking", "title": "\u003cb\u003enetworking\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Unknown\u003cbr\u003ePage: 5\u003cbr\u003ePhrase: a board consisting of", "to": "stephen knight", "width": 2}, {"arrows": "to", "color": "#6B7280", "from": "bill coughran", "label": "networking", "title": "\u003cb\u003enetworking\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Unknown\u003cbr\u003ePage: 5\u003cbr\u003ePhrase: a board consisting of", "to": "hither creek ventures", "width": 2}, {"arrows": "to", "color": "#6B7280", "from": "d wave", "label": "networking", "title": "\u003cb\u003enetworking\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Intra-helix / Not classified\u003cbr\u003ePage: 3\u003cbr\u003ePhrase: to be acquired by D-Wave", "to": "quantum circuits", "width": 2}, {"arrows": "to", "color": "#2563EB", "from": "dla piper", "label": "collaborative_leadership", "title": "\u003cb\u003ecollaborative_leadership\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Intra-helix / Not classified\u003cbr\u003ePage: 7\u003cbr\u003ePhrase: served as legal counsel to", "to": "quantum circuits", "width": 2}, {"arrows": "to", "color": "#2563EB", "from": "guillermo garc a p rez", "label": "collaborative_leadership", "title": "\u003cb\u003ecollaborative_leadership\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Unknown\u003cbr\u003ePage: 6\u003cbr\u003ePhrase: co-founded by", "to": "algorithmiq", "width": 2}, {"arrows": "to", "color": "#D97706", "from": "harvey moseley", "label": "technology_transfer", "title": "\u003cb\u003etechnology_transfer\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Unknown\u003cbr\u003ePage: 4\u003cbr\u003ePhrase: VP of Quantum Hardware Engineering at", "to": "quantum circuits inc", "width": 2}, {"arrows": "to", "color": "#D97706", "from": "harvey moseley", "label": "technology_transfer", "title": "\u003cb\u003etechnology_transfer\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Unknown\u003cbr\u003ePage: 5\u003cbr\u003ePhrase: VP of Quantum Hardware Engineering at Quantum Circuits", "to": "quantum circuits", "width": 2}, {"arrows": "to", "color": "#2563EB", "from": "jensen huang", "label": "collaborative_leadership", "title": "\u003cb\u003ecollaborative_leadership\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Unknown\u003cbr\u003ePage: 6\u003cbr\u003ePhrase: CEO Jensen Huang", "to": "nvidia", "width": 2}, {"arrows": "to", "color": "#2563EB", "from": "quantum circuits", "label": "collaborative_leadership", "title": "\u003cb\u003ecollaborative_leadership\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Intra-helix / Not classified\u003cbr\u003ePage: 5\u003cbr\u003ePhrase: launch of Aqumen Seeker", "to": "aqumen seeker", "width": 2}, {"arrows": "to", "color": "#2563EB", "from": "quantum circuits", "label": "collaborative_leadership", "title": "\u003cb\u003ecollaborative_leadership\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Innovation\u003cbr\u003ePage: 5\u003cbr\u003ePhrase: Founded in 2015 by superconducting qubit pioneers out of Yale University", "to": "yale university", "width": 2}, {"arrows": "to", "color": "#6B7280", "from": "quantum circuits", "label": "networking", "title": "\u003cb\u003enetworking\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Innovation\u003cbr\u003ePage: 4\u003cbr\u003ePhrase: Joins the", "to": "nordtech consortium", "width": 2}, {"arrows": "to", "color": "#6B7280", "from": "quantum circuits", "label": "networking", "title": "\u003cb\u003enetworking\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Intra-helix / Not classified\u003cbr\u003ePage: 4\u003cbr\u003ePhrase: participation in a joint effort", "to": "nvidia", "width": 2}, {"arrows": "to", "color": "#2563EB", "from": "quantum circuits", "label": "collaborative_leadership", "title": "\u003cb\u003ecollaborative_leadership\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Unknown\u003cbr\u003ePage: 5\u003cbr\u003ePhrase: announced today by CEO Jensen Huang", "to": "jensen huang", "width": 2}, {"arrows": "to", "color": "#6B7280", "from": "quantum circuits", "label": "networking", "title": "\u003cb\u003enetworking\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Intra-helix / Not classified\u003cbr\u003ePage: 4\u003cbr\u003ePhrase: President and CEO of Quantum Circuits", "to": "ray smets", "width": 2}, {"arrows": "to", "color": "#2563EB", "from": "quantum circuits", "label": "collaborative_leadership", "title": "\u003cb\u003ecollaborative_leadership\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Innovation\u003cbr\u003ePage: 6\u003cbr\u003ePhrase: founded by quantum physicists, including leading quantum expert and Yale professor", "to": "rob schoelkopf", "width": 2}, {"arrows": "to", "color": "#6B7280", "from": "quantum circuits", "label": "networking", "title": "\u003cb\u003enetworking\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Intra-helix / Not classified\u003cbr\u003ePage: 4\u003cbr\u003ePhrase: entered into an agreement to be acquired by", "to": "d wave", "width": 2}, {"arrows": "to", "color": "#6B7280", "from": "quantum circuits", "label": "networking", "title": "\u003cb\u003enetworking\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Intra-helix / Not classified\u003cbr\u003ePage: 4\u003cbr\u003ePhrase: participation in a joint effort", "to": "supermicro", "width": 2}, {"arrows": "to", "color": "#2563EB", "from": "quantum circuits inc", "label": "collaborative_leadership", "title": "\u003cb\u003ecollaborative_leadership\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Intra-helix / Not classified\u003cbr\u003ePage: 4\u003cbr\u003ePhrase: its partner", "to": "algorithmiq", "width": 2}, {"arrows": "to", "color": "#2563EB", "from": "quantum circuits inc", "label": "collaborative_leadership", "title": "\u003cb\u003ecollaborative_leadership\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Innovation\u003cbr\u003ePage: 4\u003cbr\u003ePhrase: Founded in 2015 by superconducting qubit pioneers out of", "to": "yale university", "width": 2}, {"arrows": "to", "color": "#2563EB", "from": "quantum circuits inc", "label": "collaborative_leadership", "title": "\u003cb\u003ecollaborative_leadership\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Intra-helix / Not classified\u003cbr\u003ePage: 4\u003cbr\u003ePhrase: work with NVIDIA technology", "to": "nvidia", "width": 2}, {"arrows": "to", "color": "#2563EB", "from": "quantum circuits inc", "label": "collaborative_leadership", "title": "\u003cb\u003ecollaborative_leadership\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Intra-helix / Not classified\u003cbr\u003ePage: 3\u003cbr\u003ePhrase: at the heart lies the inclusion of Quantum Circuits\u0027 augmented data support,", "to": "aqumen seeker", "width": 2}, {"arrows": "to", "color": "#2563EB", "from": "quantum circuits inc", "label": "collaborative_leadership", "title": "\u003cb\u003ecollaborative_leadership\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Intra-helix / Not classified\u003cbr\u003ePage: 3\u003cbr\u003ePhrase: integrating NVIDIA CUDA-Q programming capabilities into its Aqumen software suite", "to": "aqumen", "width": 2}, {"arrows": "to", "color": "#2563EB", "from": "quantum circuits inc", "label": "collaborative_leadership", "title": "\u003cb\u003ecollaborative_leadership\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Innovation\u003cbr\u003ePage: 4\u003cbr\u003ePhrase: has joined", "to": "northeast regional defense technology hub", "width": 2}, {"arrows": "to", "color": "#6B7280", "from": "quantum circuits inc", "label": "networking", "title": "\u003cb\u003enetworking\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Intra-helix / Not classified\u003cbr\u003ePage: 1\u003cbr\u003ePhrase: together are in a unique position", "to": "d wave", "width": 2}, {"arrows": "to", "color": "#D97706", "from": "quantum circuits inc", "label": "technology_transfer", "title": "\u003cb\u003etechnology_transfer\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Intra-helix / Not classified\u003cbr\u003ePage: 3\u003cbr\u003ePhrase: developed by Quantum Circuits", "to": "quantum circuits", "width": 2}, {"arrows": "to", "color": "#6B7280", "from": "quantum circuits incorporated", "label": "networking", "title": "\u003cb\u003enetworking\u003c/b\u003e\u003cbr\u003eConfidence: medium\u003cbr\u003eFunctional space: Intra-helix / Not classified\u003cbr\u003ePage: 4\u003cbr\u003ePhrase: collaboration between hardware and software companies", "to": "algorithmiq", "width": 2}, {"arrows": "to", "color": "#6B7280", "from": "ray smets", "label": "networking", "title": "\u003cb\u003enetworking\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Intra-helix / Not classified\u003cbr\u003ePage: 5\u003cbr\u003ePhrase: President and CEO", "to": "quantum circuits", "width": 2}, {"arrows": "to", "color": "#2563EB", "from": "rob schoelkopf", "label": "collaborative_leadership", "title": "\u003cb\u003ecollaborative_leadership\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Innovation\u003cbr\u003ePage: 6\u003cbr\u003ePhrase: founded by", "to": "quantum circuits", "width": 2}, {"arrows": "to", "color": "#2563EB", "from": "rob schoelkopf", "label": "collaborative_leadership", "title": "\u003cb\u003ecollaborative_leadership\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Innovation\u003cbr\u003ePage: 6\u003cbr\u003ePhrase: Yale professor", "to": "yale", "width": 2}, {"arrows": "to", "color": "#2563EB", "from": "sabrina maniscalco", "label": "collaborative_leadership", "title": "\u003cb\u003ecollaborative_leadership\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Unknown\u003cbr\u003ePage: 6\u003cbr\u003ePhrase: co-founded by", "to": "algorithmiq", "width": 2}, {"arrows": "to", "color": "#2563EB", "from": "yale", "label": "collaborative_leadership", "title": "\u003cb\u003ecollaborative_leadership\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Innovation\u003cbr\u003ePage: 5\u003cbr\u003ePhrase: including leading quantum expert and Yale professor Rob Schoelkopf", "to": "quantum circuits", "width": 2}, {"arrows": "to", "color": "#2563EB", "from": "yale", "label": "collaborative_leadership", "title": "\u003cb\u003ecollaborative_leadership\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Innovation\u003cbr\u003ePage: 6\u003cbr\u003ePhrase: Yale professor", "to": "rob schoelkopf", "width": 2}, {"arrows": "to", "color": "#2563EB", "from": "yale university", "label": "collaborative_leadership", "title": "\u003cb\u003ecollaborative_leadership\u003c/b\u003e\u003cbr\u003eConfidence: high\u003cbr\u003eFunctional space: Innovation\u003cbr\u003ePage: 3\u003cbr\u003ePhrase: founded", "to": "quantum circuits", "width": 2}]);
+
+                  nodeColors = {};
+                  allNodes = nodes.get({ returnType: "Object" });
+                  for (nodeId in allNodes) {
+                    nodeColors[nodeId] = allNodes[nodeId].color;
+                  }
+                  allEdges = edges.get({ returnType: "Object" });
+                  // adding nodes and edges to the graph
+                  data = {nodes: nodes, edges: edges};
+
+                  var options = {"physics": {"barnesHut": {"gravitationalConstant": -8000, "centralGravity": 0.3, "springLength": 180, "springConstant": 0.04}, "minVelocity": 0.75}, "interaction": {"hover": true, "navigationButtons": true, "keyboard": true}};
+
+                  
+
+
+                  
+
+                  network = new vis.Network(container, data, options);
+
+                  
+
+                  
+
+                  
+
+
+                  
+
+                  return network;
+
+              }
+              drawGraph();
+        </script>
+    </body>
+</html>

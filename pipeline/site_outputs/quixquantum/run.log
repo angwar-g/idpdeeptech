@@ -1,0 +1,540 @@
+
+========================================================================
+RUN STARTED  2026-06-17 12:13:54
+site_pipeline.py https://www.quixquantum.com/
+========================================================================
+
+[12:13:54 +0s | quixquantum] === 0 crawl site ===
+[12:13:56 +2s | quixquantum] [INIT].... → Crawl4AI 0.8.6 
+[12:13:58 +4s | quixquantum] [FETCH]... ↓ https://www.quixquantum.com/                                                                         | ✓ | ⏱: 1.50s 
+[12:13:58 +4s | quixquantum] [SCRAPE].. ◆ https://www.quixquantum.com/                                                                         | ✓ | ⏱: 0.11s 
+[12:13:58 +4s | quixquantum] [COMPLETE] ● https://www.quixquantum.com/                                                                         | ✓ | ⏱: 1.64s 
+[12:13:59 +5s | quixquantum] [FETCH]... ↓ https://www.quixquantum.com/                                                                         | ✓ | ⏱: 1.36s 
+[12:13:59 +6s | quixquantum] [SCRAPE].. ◆ https://www.quixquantum.com/                                                                         | ✓ | ⏱: 0.12s 
+[12:13:59 +6s | quixquantum] [COMPLETE] ● https://www.quixquantum.com/                                                                         | ✓ | ⏱: 1.51s 
+[12:13:59 +6s | quixquantum] [FETCH]... ↓ https://www.quixquantum.com/disclaimer                                                               | ✓ | ⏱: 1.43s 
+[12:13:59 +6s | quixquantum] [SCRAPE].. ◆ https://www.quixquantum.com/disclaimer                                                               | ✓ | ⏱: 0.04s 
+[12:14:00 +6s | quixquantum] [COMPLETE] ● https://www.quixquantum.com/disclaimer                                                               | ✓ | ⏱: 1.51s 
+[12:14:00 +6s | quixquantum] [FETCH]... ↓ https://www.quixquantum.com/events                                                                   | ✓ | ⏱: 1.88s 
+[12:14:00 +6s | quixquantum] [SCRAPE].. ◆ https://www.quixquantum.com/events                                                                   | ✓ | ⏱: 0.03s 
+[12:14:00 +6s | quixquantum] [COMPLETE] ● https://www.quixquantum.com/events                                                                   | ✓ | ⏱: 1.94s 
+[12:14:00 +6s | quixquantum] [FETCH]... ↓ https://www.quixquantum.com/news/quix-quantum-ph...nal-scientific-heritage-at-rijksmuseum-boerhaave  | ✓ | ⏱: 2.12s 
+[12:14:00 +6s | quixquantum] [SCRAPE].. ◆ https://www.quixquantum.com/news/quix-quantum-ph...nal-scientific-heritage-at-rijksmuseum-boerhaave  | ✓ | ⏱: 0.06s 
+[12:14:00 +7s | quixquantum] [COMPLETE] ● https://www.quixquantum.com/news/quix-quantum-ph...nal-scientific-heritage-at-rijksmuseum-boerhaave  | ✓ | ⏱: 2.20s 
+[12:14:00 +7s | quixquantum] [FETCH]... ↓ https://www.quixquantum.com/products/quantum-photonic-processor                                      | ✓ | ⏱: 2.31s 
+[12:14:00 +7s | quixquantum] [SCRAPE].. ◆ https://www.quixquantum.com/products/quantum-photonic-processor                                      | ✓ | ⏱: 0.04s 
+[12:14:00 +7s | quixquantum] [COMPLETE] ● https://www.quixquantum.com/products/quantum-photonic-processor                                      | ✓ | ⏱: 2.38s 
+[12:14:01 +7s | quixquantum] [FETCH]... ↓ https://www.quixquantum.com/news/quix-quantum-in...omponent-for-universal-photonic-quantum-computer  | ✓ | ⏱: 2.50s 
+[12:14:01 +7s | quixquantum] [SCRAPE].. ◆ https://www.quixquantum.com/news/quix-quantum-in...omponent-for-universal-photonic-quantum-computer  | ✓ | ⏱: 0.06s 
+[12:14:01 +7s | quixquantum] [COMPLETE] ● https://www.quixquantum.com/news/quix-quantum-in...omponent-for-universal-photonic-quantum-computer  | ✓ | ⏱: 2.59s 
+[12:14:01 +7s | quixquantum] [FETCH]... ↓ https://www.quixquantum.com/news/quix-quantum-ap...icer-to-drive-global-growth-and-market-expansion  | ✓ | ⏱: 2.60s 
+[12:14:01 +7s | quixquantum] [SCRAPE].. ◆ https://www.quixquantum.com/news/quix-quantum-ap...icer-to-drive-global-growth-and-market-expansion  | ✓ | ⏱: 0.05s 
+[12:14:01 +7s | quixquantum] [COMPLETE] ● https://www.quixquantum.com/news/quix-quantum-ap...icer-to-drive-global-growth-and-market-expansion  | ✓ | ⏱: 2.69s 
+[12:14:01 +8s | quixquantum] [FETCH]... ↓ https://www.quixquantum.com/news                                                                     | ✓ | ⏱: 3.32s 
+[12:14:01 +8s | quixquantum] [SCRAPE].. ◆ https://www.quixquantum.com/news                                                                     | ✓ | ⏱: 0.07s 
+[12:14:01 +8s | quixquantum] [COMPLETE] ● https://www.quixquantum.com/news                                                                     | ✓ | ⏱: 3.41s 
+[12:14:02 +8s | quixquantum] [FETCH]... ↓ https://www.quixquantum.com/about                                                                    | ✓ | ⏱: 3.45s 
+[12:14:02 +8s | quixquantum] [SCRAPE].. ◆ https://www.quixquantum.com/about                                                                    | ✓ | ⏱: 0.05s 
+[12:14:02 +8s | quixquantum] [COMPLETE] ● https://www.quixquantum.com/about                                                                    | ✓ | ⏱: 3.53s 
+[12:14:02 +8s | quixquantum] [FETCH]... ↓ https://www.quixquantum.com/news/quix-quantum-in...sembly-control-unit-for-scalable-quantum-systems  | ✓ | ⏱: 3.65s 
+[12:14:02 +8s | quixquantum] [SCRAPE].. ◆ https://www.quixquantum.com/news/quix-quantum-in...sembly-control-unit-for-scalable-quantum-systems  | ✓ | ⏱: 0.05s 
+[12:14:02 +8s | quixquantum] [COMPLETE] ● https://www.quixquantum.com/news/quix-quantum-in...sembly-control-unit-for-scalable-quantum-systems  | ✓ | ⏱: 3.73s 
+[12:14:02 +8s | quixquantum] [FETCH]... ↓ https://www.quixquantum.com/careers                                                                  | ✓ | ⏱: 3.74s 
+[12:14:02 +8s | quixquantum] [SCRAPE].. ◆ https://www.quixquantum.com/careers                                                                  | ✓ | ⏱: 0.02s 
+[12:14:02 +8s | quixquantum] [COMPLETE] ● https://www.quixquantum.com/careers                                                                  | ✓ | ⏱: 3.78s 
+[12:14:02 +8s | quixquantum] [FETCH]... ↓ https://www.quixquantum.com/contact                                                                  | ✓ | ⏱: 3.80s 
+[12:14:02 +8s | quixquantum] [SCRAPE].. ◆ https://www.quixquantum.com/contact                                                                  | ✓ | ⏱: 0.03s 
+[12:14:02 +8s | quixquantum] [COMPLETE] ● https://www.quixquantum.com/contact                                                                  | ✓ | ⏱: 3.84s 
+[12:14:02 +8s | quixquantum] [FETCH]... ↓ https://www.quixquantum.com/products/universal-quantum-computer                                      | ✓ | ⏱: 3.81s 
+[12:14:02 +8s | quixquantum] [SCRAPE].. ◆ https://www.quixquantum.com/products/universal-quantum-computer                                      | ✓ | ⏱: 0.03s 
+[12:14:02 +8s | quixquantum] [COMPLETE] ● https://www.quixquantum.com/products/universal-quantum-computer                                      | ✓ | ⏱: 3.86s 
+[12:14:02 +8s | quixquantum] [FETCH]... ↓ https://www.quixquantum.com/news/quix-quantum-jo...uantum-ecosystem-in-baden-wurttemberg-and-europe  | ✓ | ⏱: 3.92s 
+[12:14:02 +8s | quixquantum] [SCRAPE].. ◆ https://www.quixquantum.com/news/quix-quantum-jo...uantum-ecosystem-in-baden-wurttemberg-and-europe  | ✓ | ⏱: 0.03s 
+[12:14:02 +8s | quixquantum] [COMPLETE] ● https://www.quixquantum.com/news/quix-quantum-jo...uantum-ecosystem-in-baden-wurttemberg-and-europe  | ✓ | ⏱: 3.97s 
+[12:14:02 +8s | quixquantum] [FETCH]... ↓ https://www.quixquantum.com/news/quix-quantum-de...ion-in-photonic-quantum-computing-for-first-time  | ✓ | ⏱: 3.98s 
+[12:14:02 +8s | quixquantum] [SCRAPE].. ◆ https://www.quixquantum.com/news/quix-quantum-de...ion-in-photonic-quantum-computing-for-first-time  | ✓ | ⏱: 0.03s 
+[12:14:02 +8s | quixquantum] [COMPLETE] ● https://www.quixquantum.com/news/quix-quantum-de...ion-in-photonic-quantum-computing-for-first-time  | ✓ | ⏱: 4.03s 
+[12:14:02 +8s | quixquantum] [FETCH]... ↓ https://www.quixquantum.com/privacy-statement                                                        | ✓ | ⏱: 4.06s 
+[12:14:02 +8s | quixquantum] [SCRAPE].. ◆ https://www.quixquantum.com/privacy-statement                                                        | ✓ | ⏱: 0.04s 
+[12:14:02 +8s | quixquantum] [COMPLETE] ● https://www.quixquantum.com/privacy-statement                                                        | ✓ | ⏱: 4.11s 
+[12:14:02 +8s | quixquantum] [FETCH]... ↓ https://www.quixquantum.com/news/quix-quantum-becomes-a-member-of-the-arena2036-research-campus      | ✓ | ⏱: 4.12s 
+[12:14:02 +8s | quixquantum] [SCRAPE].. ◆ https://www.quixquantum.com/news/quix-quantum-becomes-a-member-of-the-arena2036-research-campus      | ✓ | ⏱: 0.04s 
+[12:14:02 +9s | quixquantum] [COMPLETE] ● https://www.quixquantum.com/news/quix-quantum-becomes-a-member-of-the-arena2036-research-campus      | ✓ | ⏱: 4.18s 
+[12:14:02 +9s | quixquantum] [FETCH]... ↓ https://www.quixquantum.com/products/special-purpose-photonic-quantum-computer                       | ✓ | ⏱: 4.18s 
+[12:14:02 +9s | quixquantum] [SCRAPE].. ◆ https://www.quixquantum.com/products/special-purpose-photonic-quantum-computer                       | ✓ | ⏱: 0.04s 
+[12:14:02 +9s | quixquantum] [COMPLETE] ● https://www.quixquantum.com/products/special-purpose-photonic-quantum-computer                       | ✓ | ⏱: 4.25s 
+[12:14:04 +11s | quixquantum] [FETCH]... ↓ https://cloud.quixquantum.com/login                                                                  | ✓ | ⏱: 6.55s 
+[12:14:04 +11s | quixquantum] [SCRAPE].. ◆ https://cloud.quixquantum.com/login                                                                  | ✓ | ⏱: 0.00s 
+[12:14:04 +11s | quixquantum] [COMPLETE] ● https://cloud.quixquantum.com/login                                                                  | ✓ | ⏱: 6.56s 
+[12:14:04 +11s | quixquantum] Saved: crawl_output/54f01ac4cd_www.quixquantum.com.json
+[12:14:04 +11s | quixquantum] Duplicate skipped: https://www.quixquantum.com
+[12:14:04 +11s | quixquantum] Saved: crawl_output/57c7d10f65_www.quixquantum.com_disclaimer.json
+[12:14:04 +11s | quixquantum] Saved: crawl_output/3602f314f4_www.quixquantum.com_events.json
+[12:14:04 +11s | quixquantum] Saved: crawl_output/1e9c5c9d36_www.quixquantum.com_news_quix-quantum-photonic-quantum-chip-joins-national-scientific-heritage-at-rijksmuseum-boerhaave.json
+[12:14:04 +11s | quixquantum] Saved: crawl_output/6277e71a37_www.quixquantum.com_products_quantum-photonic-processor.json
+[12:14:04 +11s | quixquantum] Saved: crawl_output/790309d58d_www.quixquantum.com_news_quix-quantum-installs-real-time-control-component-for-universal-photonic-quantum-computer.json
+[12:14:04 +11s | quixquantum] Saved: crawl_output/2f700e15e4_www.quixquantum.com_news_quix-quantum-appoints-robin-wittland-as-chief-commercial-officer-to-drive-global-growth-and-market-expansion.json
+[12:14:04 +11s | quixquantum] Saved: crawl_output/774137fb33_www.quixquantum.com_news.json
+[12:14:04 +11s | quixquantum] Saved: crawl_output/f4e4a7550d_www.quixquantum.com_about.json
+[12:14:04 +11s | quixquantum] Saved: crawl_output/42234d7c65_www.quixquantum.com_news_quix-quantum-introduces-pacu-a-photonic-assembly-control-unit-for-scalable-quantum-systems.json
+[12:14:04 +11s | quixquantum] Saved: crawl_output/e2bf9e7eb2_www.quixquantum.com_careers.json
+[12:14:04 +11s | quixquantum] Saved: crawl_output/3eb05eac65_www.quixquantum.com_contact.json
+[12:14:04 +11s | quixquantum] Saved: crawl_output/32899bb838_www.quixquantum.com_products_universal-quantum-computer.json
+[12:14:04 +11s | quixquantum] Saved: crawl_output/29fedece97_www.quixquantum.com_news_quix-quantum-joins-quantumbw-and-photonics-bw-to-strengthen-the-photonic-quantum-ecosystem-in-baden-wurttemberg-and-europe.json
+[12:14:04 +11s | quixquantum] Saved: crawl_output/da68b894ed_www.quixquantum.com_news_quix-quantum-demonstrates-below-threshold-error-mitigation-in-photonic-quantum-computing-for-first-time.json
+[12:14:04 +11s | quixquantum] Skipped: https://www.quixquantum.com/privacy-statement
+[12:14:04 +11s | quixquantum] Saved: crawl_output/e2b66c1b6f_www.quixquantum.com_news_quix-quantum-becomes-a-member-of-the-arena2036-research-campus.json
+[12:14:04 +11s | quixquantum] Saved: crawl_output/04b04b24df_www.quixquantum.com_products_special-purpose-photonic-quantum-computer.json
+[12:14:04 +11s | quixquantum] Saved: crawl_output/f4f06eb37b_cloud.quixquantum.com_login.json
+
+[12:14:05 +11s | quixquantum] === 1 actor extraction ===
+[12:14:05 +11s | quixquantum] Reading page (1/18): https://www.quixquantum.com/products/special-purpose-photonic-quantum-computer
+[12:14:05 +11s | quixquantum] Extracting: https://www.quixquantum.com/products/special-purpose-photonic-quantum-computer (1/18), chunk 1/6
+[12:14:11 +17s | quixquantum] Repaired malformed JSON.
+[12:14:11 +17s | quixquantum] Extracting: https://www.quixquantum.com/products/special-purpose-photonic-quantum-computer (1/18), chunk 2/6
+[12:14:18 +24s | quixquantum] Repaired malformed JSON.
+[12:14:18 +24s | quixquantum] Extracting: https://www.quixquantum.com/products/special-purpose-photonic-quantum-computer (1/18), chunk 3/6
+[12:14:24 +30s | quixquantum] Repaired malformed JSON.
+[12:14:24 +30s | quixquantum] Extracting: https://www.quixquantum.com/products/special-purpose-photonic-quantum-computer (1/18), chunk 4/6
+[12:14:32 +38s | quixquantum] Repaired malformed JSON.
+[12:14:32 +38s | quixquantum] Extracting: https://www.quixquantum.com/products/special-purpose-photonic-quantum-computer (1/18), chunk 5/6
+[12:14:38 +45s | quixquantum] Repaired malformed JSON.
+[12:14:38 +45s | quixquantum] Extracting: https://www.quixquantum.com/products/special-purpose-photonic-quantum-computer (1/18), chunk 6/6
+[12:14:44 +50s | quixquantum] Repaired malformed JSON.
+[12:14:44 +50s | quixquantum] Reading page (2/18): https://www.quixquantum.com/news/quix-quantum-photonic-quantum-chip-joins-national-scientific-heritage-at-rijksmuseum-boerhaave
+[12:14:44 +50s | quixquantum] Extracting: https://www.quixquantum.com/news/quix-quantum-photonic-quantum-chip-joins-national-scientific-heritage-at-rijksmuseum-boerhaave (2/18), chunk 1/10
+[12:14:53 +59s | quixquantum] Repaired malformed JSON.
+[12:14:53 +59s | quixquantum] Extracting: https://www.quixquantum.com/news/quix-quantum-photonic-quantum-chip-joins-national-scientific-heritage-at-rijksmuseum-boerhaave (2/18), chunk 2/10
+[12:15:00 +1m 6s | quixquantum] Repaired malformed JSON.
+[12:15:00 +1m 6s | quixquantum] Extracting: https://www.quixquantum.com/news/quix-quantum-photonic-quantum-chip-joins-national-scientific-heritage-at-rijksmuseum-boerhaave (2/18), chunk 3/10
+[12:15:07 +1m 13s | quixquantum] Repaired malformed JSON.
+[12:15:07 +1m 13s | quixquantum] Extracting: https://www.quixquantum.com/news/quix-quantum-photonic-quantum-chip-joins-national-scientific-heritage-at-rijksmuseum-boerhaave (2/18), chunk 4/10
+[12:15:15 +1m 21s | quixquantum] Repaired malformed JSON.
+[12:15:15 +1m 21s | quixquantum] Extracting: https://www.quixquantum.com/news/quix-quantum-photonic-quantum-chip-joins-national-scientific-heritage-at-rijksmuseum-boerhaave (2/18), chunk 5/10
+[12:15:21 +1m 28s | quixquantum] Repaired malformed JSON.
+[12:15:21 +1m 28s | quixquantum] Extracting: https://www.quixquantum.com/news/quix-quantum-photonic-quantum-chip-joins-national-scientific-heritage-at-rijksmuseum-boerhaave (2/18), chunk 6/10
+[12:15:27 +1m 34s | quixquantum] Repaired malformed JSON.
+[12:15:27 +1m 34s | quixquantum] Extracting: https://www.quixquantum.com/news/quix-quantum-photonic-quantum-chip-joins-national-scientific-heritage-at-rijksmuseum-boerhaave (2/18), chunk 7/10
+[12:15:34 +1m 40s | quixquantum] Repaired malformed JSON.
+[12:15:34 +1m 40s | quixquantum] Extracting: https://www.quixquantum.com/news/quix-quantum-photonic-quantum-chip-joins-national-scientific-heritage-at-rijksmuseum-boerhaave (2/18), chunk 8/10
+[12:15:40 +1m 46s | quixquantum] Repaired malformed JSON.
+[12:15:40 +1m 46s | quixquantum] Extracting: https://www.quixquantum.com/news/quix-quantum-photonic-quantum-chip-joins-national-scientific-heritage-at-rijksmuseum-boerhaave (2/18), chunk 9/10
+[12:15:49 +1m 55s | quixquantum] Repaired malformed JSON.
+[12:15:49 +1m 55s | quixquantum] Extracting: https://www.quixquantum.com/news/quix-quantum-photonic-quantum-chip-joins-national-scientific-heritage-at-rijksmuseum-boerhaave (2/18), chunk 10/10
+[12:15:55 +2m 2s | quixquantum] Repaired malformed JSON.
+[12:15:55 +2m 2s | quixquantum] Reading page (3/18): https://www.quixquantum.com/news/quix-quantum-joins-quantumbw-and-photonics-bw-to-strengthen-the-photonic-quantum-ecosystem-in-baden-wurttemberg-and-europe
+[12:15:55 +2m 2s | quixquantum] Extracting: https://www.quixquantum.com/news/quix-quantum-joins-quantumbw-and-photonics-bw-to-strengthen-the-photonic-quantum-ecosystem-in-baden-wurttemberg-and-europe (3/18), chunk 1/10
+[12:16:02 +2m 8s | quixquantum] Repaired malformed JSON.
+[12:16:02 +2m 8s | quixquantum] Extracting: https://www.quixquantum.com/news/quix-quantum-joins-quantumbw-and-photonics-bw-to-strengthen-the-photonic-quantum-ecosystem-in-baden-wurttemberg-and-europe (3/18), chunk 2/10
+[12:16:08 +2m 14s | quixquantum] Repaired malformed JSON.
+[12:16:08 +2m 14s | quixquantum] Extracting: https://www.quixquantum.com/news/quix-quantum-joins-quantumbw-and-photonics-bw-to-strengthen-the-photonic-quantum-ecosystem-in-baden-wurttemberg-and-europe (3/18), chunk 3/10
+[12:16:16 +2m 23s | quixquantum] Repaired malformed JSON.
+[12:16:16 +2m 23s | quixquantum] Extracting: https://www.quixquantum.com/news/quix-quantum-joins-quantumbw-and-photonics-bw-to-strengthen-the-photonic-quantum-ecosystem-in-baden-wurttemberg-and-europe (3/18), chunk 4/10
+[12:16:24 +2m 30s | quixquantum] Repaired malformed JSON.
+[12:16:24 +2m 30s | quixquantum] Extracting: https://www.quixquantum.com/news/quix-quantum-joins-quantumbw-and-photonics-bw-to-strengthen-the-photonic-quantum-ecosystem-in-baden-wurttemberg-and-europe (3/18), chunk 5/10
+[12:16:31 +2m 37s | quixquantum] Repaired malformed JSON.
+[12:16:31 +2m 37s | quixquantum] Extracting: https://www.quixquantum.com/news/quix-quantum-joins-quantumbw-and-photonics-bw-to-strengthen-the-photonic-quantum-ecosystem-in-baden-wurttemberg-and-europe (3/18), chunk 6/10
+[12:16:37 +2m 44s | quixquantum] Repaired malformed JSON.
+[12:16:37 +2m 44s | quixquantum] Extracting: https://www.quixquantum.com/news/quix-quantum-joins-quantumbw-and-photonics-bw-to-strengthen-the-photonic-quantum-ecosystem-in-baden-wurttemberg-and-europe (3/18), chunk 7/10
+[12:16:43 +2m 49s | quixquantum] Repaired malformed JSON.
+[12:16:43 +2m 49s | quixquantum] Extracting: https://www.quixquantum.com/news/quix-quantum-joins-quantumbw-and-photonics-bw-to-strengthen-the-photonic-quantum-ecosystem-in-baden-wurttemberg-and-europe (3/18), chunk 8/10
+[12:16:52 +2m 58s | quixquantum] Repaired malformed JSON.
+[12:16:52 +2m 58s | quixquantum] Extracting: https://www.quixquantum.com/news/quix-quantum-joins-quantumbw-and-photonics-bw-to-strengthen-the-photonic-quantum-ecosystem-in-baden-wurttemberg-and-europe (3/18), chunk 9/10
+[12:16:58 +3m 4s | quixquantum] Repaired malformed JSON.
+[12:16:58 +3m 4s | quixquantum] Extracting: https://www.quixquantum.com/news/quix-quantum-joins-quantumbw-and-photonics-bw-to-strengthen-the-photonic-quantum-ecosystem-in-baden-wurttemberg-and-europe (3/18), chunk 10/10
+[12:17:04 +3m 10s | quixquantum] Repaired malformed JSON.
+[12:17:04 +3m 10s | quixquantum] Reading page (4/18): https://www.quixquantum.com/news/quix-quantum-appoints-robin-wittland-as-chief-commercial-officer-to-drive-global-growth-and-market-expansion
+[12:17:04 +3m 10s | quixquantum] Extracting: https://www.quixquantum.com/news/quix-quantum-appoints-robin-wittland-as-chief-commercial-officer-to-drive-global-growth-and-market-expansion (4/18), chunk 1/10
+[12:17:10 +3m 16s | quixquantum] Repaired malformed JSON.
+[12:17:10 +3m 16s | quixquantum] Extracting: https://www.quixquantum.com/news/quix-quantum-appoints-robin-wittland-as-chief-commercial-officer-to-drive-global-growth-and-market-expansion (4/18), chunk 2/10
+[12:17:16 +3m 22s | quixquantum] Repaired malformed JSON.
+[12:17:16 +3m 22s | quixquantum] Extracting: https://www.quixquantum.com/news/quix-quantum-appoints-robin-wittland-as-chief-commercial-officer-to-drive-global-growth-and-market-expansion (4/18), chunk 3/10
+[12:17:23 +3m 29s | quixquantum] Repaired malformed JSON.
+[12:17:23 +3m 29s | quixquantum] Extracting: https://www.quixquantum.com/news/quix-quantum-appoints-robin-wittland-as-chief-commercial-officer-to-drive-global-growth-and-market-expansion (4/18), chunk 4/10
+[12:17:31 +3m 37s | quixquantum] Repaired malformed JSON.
+[12:17:31 +3m 37s | quixquantum] Extracting: https://www.quixquantum.com/news/quix-quantum-appoints-robin-wittland-as-chief-commercial-officer-to-drive-global-growth-and-market-expansion (4/18), chunk 5/10
+[12:17:37 +3m 43s | quixquantum] Repaired malformed JSON.
+[12:17:37 +3m 43s | quixquantum] Extracting: https://www.quixquantum.com/news/quix-quantum-appoints-robin-wittland-as-chief-commercial-officer-to-drive-global-growth-and-market-expansion (4/18), chunk 6/10
+[12:17:44 +3m 50s | quixquantum] Repaired malformed JSON.
+[12:17:44 +3m 50s | quixquantum] Extracting: https://www.quixquantum.com/news/quix-quantum-appoints-robin-wittland-as-chief-commercial-officer-to-drive-global-growth-and-market-expansion (4/18), chunk 7/10
+[12:17:50 +3m 57s | quixquantum] Repaired malformed JSON.
+[12:17:50 +3m 57s | quixquantum] Extracting: https://www.quixquantum.com/news/quix-quantum-appoints-robin-wittland-as-chief-commercial-officer-to-drive-global-growth-and-market-expansion (4/18), chunk 8/10
+[12:17:57 +4m 3s | quixquantum] Repaired malformed JSON.
+[12:17:57 +4m 3s | quixquantum] Extracting: https://www.quixquantum.com/news/quix-quantum-appoints-robin-wittland-as-chief-commercial-officer-to-drive-global-growth-and-market-expansion (4/18), chunk 9/10
+[12:18:03 +4m 10s | quixquantum] Repaired malformed JSON.
+[12:18:03 +4m 10s | quixquantum] Extracting: https://www.quixquantum.com/news/quix-quantum-appoints-robin-wittland-as-chief-commercial-officer-to-drive-global-growth-and-market-expansion (4/18), chunk 10/10
+[12:18:10 +4m 16s | quixquantum] Repaired malformed JSON.
+[12:18:10 +4m 16s | quixquantum] Reading page (5/18): https://www.quixquantum.com/products/universal-quantum-computer
+[12:18:10 +4m 16s | quixquantum] Extracting: https://www.quixquantum.com/products/universal-quantum-computer (5/18), chunk 1/5
+[12:18:15 +4m 22s | quixquantum] Repaired malformed JSON.
+[12:18:15 +4m 22s | quixquantum] Extracting: https://www.quixquantum.com/products/universal-quantum-computer (5/18), chunk 2/5
+[12:18:24 +4m 31s | quixquantum] Repaired malformed JSON.
+[12:18:24 +4m 31s | quixquantum] Extracting: https://www.quixquantum.com/products/universal-quantum-computer (5/18), chunk 3/5
+[12:18:33 +4m 40s | quixquantum] Repaired malformed JSON.
+[12:18:33 +4m 40s | quixquantum] Extracting: https://www.quixquantum.com/products/universal-quantum-computer (5/18), chunk 4/5
+[12:18:40 +4m 46s | quixquantum] Repaired malformed JSON.
+[12:18:40 +4m 46s | quixquantum] Extracting: https://www.quixquantum.com/products/universal-quantum-computer (5/18), chunk 5/5
+[12:18:46 +4m 53s | quixquantum] Repaired malformed JSON.
+[12:18:46 +4m 53s | quixquantum] Reading page (6/18): https://www.quixquantum.com/events
+[12:18:46 +4m 53s | quixquantum] Extracting: https://www.quixquantum.com/events (6/18), chunk 1/5
+[12:18:53 +4m 59s | quixquantum] Repaired malformed JSON.
+[12:18:53 +4m 59s | quixquantum] Extracting: https://www.quixquantum.com/events (6/18), chunk 2/5
+[12:19:00 +5m 6s | quixquantum] Repaired malformed JSON.
+[12:19:00 +5m 6s | quixquantum] Extracting: https://www.quixquantum.com/events (6/18), chunk 3/5
+[12:19:07 +5m 13s | quixquantum] Repaired malformed JSON.
+[12:19:07 +5m 13s | quixquantum] Extracting: https://www.quixquantum.com/events (6/18), chunk 4/5
+[12:19:14 +5m 21s | quixquantum] Repaired malformed JSON.
+[12:19:14 +5m 21s | quixquantum] Extracting: https://www.quixquantum.com/events (6/18), chunk 5/5
+[12:19:21 +5m 27s | quixquantum] Repaired malformed JSON.
+[12:19:21 +5m 27s | quixquantum] Reading page (7/18): https://www.quixquantum.com/contact
+[12:19:21 +5m 27s | quixquantum] Extracting: https://www.quixquantum.com/contact (7/18), chunk 1/6
+[12:19:26 +5m 33s | quixquantum] Repaired malformed JSON.
+[12:19:26 +5m 33s | quixquantum] Extracting: https://www.quixquantum.com/contact (7/18), chunk 2/6
+[12:19:34 +5m 41s | quixquantum] Repaired malformed JSON.
+[12:19:34 +5m 41s | quixquantum] Extracting: https://www.quixquantum.com/contact (7/18), chunk 3/6
+[12:19:42 +5m 48s | quixquantum] Repaired malformed JSON.
+[12:19:42 +5m 48s | quixquantum] Extracting: https://www.quixquantum.com/contact (7/18), chunk 4/6
+[12:19:49 +5m 55s | quixquantum] Repaired malformed JSON.
+[12:19:49 +5m 55s | quixquantum] Extracting: https://www.quixquantum.com/contact (7/18), chunk 5/6
+[12:19:58 +6m 4s | quixquantum] Repaired malformed JSON.
+[12:19:58 +6m 4s | quixquantum] Extracting: https://www.quixquantum.com/contact (7/18), chunk 6/6
+[12:20:03 +6m 9s | quixquantum] Repaired malformed JSON.
+[12:20:03 +6m 9s | quixquantum] Reading page (8/18): https://www.quixquantum.com/news/quix-quantum-introduces-pacu-a-photonic-assembly-control-unit-for-scalable-quantum-systems
+[12:20:03 +6m 9s | quixquantum] Extracting: https://www.quixquantum.com/news/quix-quantum-introduces-pacu-a-photonic-assembly-control-unit-for-scalable-quantum-systems (8/18), chunk 1/13
+[12:20:09 +6m 15s | quixquantum] Repaired malformed JSON.
+[12:20:09 +6m 15s | quixquantum] Extracting: https://www.quixquantum.com/news/quix-quantum-introduces-pacu-a-photonic-assembly-control-unit-for-scalable-quantum-systems (8/18), chunk 2/13
+[12:20:17 +6m 23s | quixquantum] Repaired malformed JSON.
+[12:20:17 +6m 23s | quixquantum] Extracting: https://www.quixquantum.com/news/quix-quantum-introduces-pacu-a-photonic-assembly-control-unit-for-scalable-quantum-systems (8/18), chunk 3/13
+[12:20:24 +6m 30s | quixquantum] Repaired malformed JSON.
+[12:20:24 +6m 30s | quixquantum] Extracting: https://www.quixquantum.com/news/quix-quantum-introduces-pacu-a-photonic-assembly-control-unit-for-scalable-quantum-systems (8/18), chunk 4/13
+[12:20:29 +6m 35s | quixquantum] Extracting: https://www.quixquantum.com/news/quix-quantum-introduces-pacu-a-photonic-assembly-control-unit-for-scalable-quantum-systems (8/18), chunk 5/13
+[12:20:34 +6m 41s | quixquantum] Extracting: https://www.quixquantum.com/news/quix-quantum-introduces-pacu-a-photonic-assembly-control-unit-for-scalable-quantum-systems (8/18), chunk 6/13
+[12:20:43 +6m 50s | quixquantum] Repaired malformed JSON.
+[12:20:43 +6m 50s | quixquantum] Extracting: https://www.quixquantum.com/news/quix-quantum-introduces-pacu-a-photonic-assembly-control-unit-for-scalable-quantum-systems (8/18), chunk 7/13
+[12:20:50 +6m 57s | quixquantum] Repaired malformed JSON.
+[12:20:50 +6m 57s | quixquantum] Extracting: https://www.quixquantum.com/news/quix-quantum-introduces-pacu-a-photonic-assembly-control-unit-for-scalable-quantum-systems (8/18), chunk 8/13
+[12:20:55 +7m 1s | quixquantum] Extracting: https://www.quixquantum.com/news/quix-quantum-introduces-pacu-a-photonic-assembly-control-unit-for-scalable-quantum-systems (8/18), chunk 9/13
+[12:21:02 +7m 8s | quixquantum] Repaired malformed JSON.
+[12:21:02 +7m 8s | quixquantum] Extracting: https://www.quixquantum.com/news/quix-quantum-introduces-pacu-a-photonic-assembly-control-unit-for-scalable-quantum-systems (8/18), chunk 10/13
+[12:21:08 +7m 14s | quixquantum] Repaired malformed JSON.
+[12:21:08 +7m 14s | quixquantum] Extracting: https://www.quixquantum.com/news/quix-quantum-introduces-pacu-a-photonic-assembly-control-unit-for-scalable-quantum-systems (8/18), chunk 11/13
+[12:21:13 +7m 19s | quixquantum] Repaired malformed JSON.
+[12:21:13 +7m 19s | quixquantum] Extracting: https://www.quixquantum.com/news/quix-quantum-introduces-pacu-a-photonic-assembly-control-unit-for-scalable-quantum-systems (8/18), chunk 12/13
+[12:21:20 +7m 26s | quixquantum] Repaired malformed JSON.
+[12:21:20 +7m 26s | quixquantum] Extracting: https://www.quixquantum.com/news/quix-quantum-introduces-pacu-a-photonic-assembly-control-unit-for-scalable-quantum-systems (8/18), chunk 13/13
+[12:21:27 +7m 34s | quixquantum] Repaired malformed JSON.
+[12:21:27 +7m 34s | quixquantum] Reading page (9/18): https://www.quixquantum.com
+[12:21:27 +7m 34s | quixquantum] Extracting: https://www.quixquantum.com (9/18), chunk 1/12
+[12:21:35 +7m 41s | quixquantum] Extracting: https://www.quixquantum.com (9/18), chunk 2/12
+[12:21:42 +7m 48s | quixquantum] Repaired malformed JSON.
+[12:21:42 +7m 48s | quixquantum] Extracting: https://www.quixquantum.com (9/18), chunk 3/12
+[12:21:47 +7m 53s | quixquantum] Extracting: https://www.quixquantum.com (9/18), chunk 4/12
+[12:21:52 +7m 58s | quixquantum] Extracting: https://www.quixquantum.com (9/18), chunk 5/12
+[12:21:57 +8m 3s | quixquantum] Extracting: https://www.quixquantum.com (9/18), chunk 6/12
+[12:22:01 +8m 7s | quixquantum] Extracting: https://www.quixquantum.com (9/18), chunk 7/12
+[12:22:10 +8m 17s | quixquantum] Repaired malformed JSON.
+[12:22:10 +8m 17s | quixquantum] Extracting: https://www.quixquantum.com (9/18), chunk 8/12
+[12:22:18 +8m 25s | quixquantum] Repaired malformed JSON.
+[12:22:18 +8m 25s | quixquantum] Extracting: https://www.quixquantum.com (9/18), chunk 9/12
+[12:22:24 +8m 31s | quixquantum] Repaired malformed JSON.
+[12:22:24 +8m 31s | quixquantum] Extracting: https://www.quixquantum.com (9/18), chunk 10/12
+[12:22:30 +8m 36s | quixquantum] Repaired malformed JSON.
+[12:22:30 +8m 36s | quixquantum] Extracting: https://www.quixquantum.com (9/18), chunk 11/12
+[12:22:38 +8m 44s | quixquantum] Repaired malformed JSON.
+[12:22:38 +8m 44s | quixquantum] Extracting: https://www.quixquantum.com (9/18), chunk 12/12
+[12:22:45 +8m 51s | quixquantum] Repaired malformed JSON.
+[12:22:45 +8m 51s | quixquantum] Reading page (10/18): https://www.quixquantum.com/disclaimer
+[12:22:45 +8m 51s | quixquantum] Extracting: https://www.quixquantum.com/disclaimer (10/18), chunk 1/6
+[12:22:52 +8m 59s | quixquantum] Repaired malformed JSON.
+[12:22:52 +8m 59s | quixquantum] Extracting: https://www.quixquantum.com/disclaimer (10/18), chunk 2/6
+[12:22:59 +9m 6s | quixquantum] Repaired malformed JSON.
+[12:22:59 +9m 6s | quixquantum] Extracting: https://www.quixquantum.com/disclaimer (10/18), chunk 3/6
+[12:23:05 +9m 11s | quixquantum] Repaired malformed JSON.
+[12:23:05 +9m 11s | quixquantum] Extracting: https://www.quixquantum.com/disclaimer (10/18), chunk 4/6
+[12:23:09 +9m 15s | quixquantum] Extracting: https://www.quixquantum.com/disclaimer (10/18), chunk 5/6
+[12:23:17 +9m 23s | quixquantum] Repaired malformed JSON.
+[12:23:17 +9m 23s | quixquantum] Extracting: https://www.quixquantum.com/disclaimer (10/18), chunk 6/6
+[12:23:26 +9m 32s | quixquantum] Repaired malformed JSON.
+[12:23:26 +9m 32s | quixquantum] Reading page (11/18): https://www.quixquantum.com/products/quantum-photonic-processor
+[12:23:26 +9m 32s | quixquantum] Extracting: https://www.quixquantum.com/products/quantum-photonic-processor (11/18), chunk 1/6
+[12:23:34 +9m 41s | quixquantum] Repaired malformed JSON.
+[12:23:34 +9m 41s | quixquantum] Extracting: https://www.quixquantum.com/products/quantum-photonic-processor (11/18), chunk 2/6
+[12:23:40 +9m 46s | quixquantum] Repaired malformed JSON.
+[12:23:40 +9m 46s | quixquantum] Extracting: https://www.quixquantum.com/products/quantum-photonic-processor (11/18), chunk 3/6
+[12:23:48 +9m 54s | quixquantum] Repaired malformed JSON.
+[12:23:48 +9m 54s | quixquantum] Extracting: https://www.quixquantum.com/products/quantum-photonic-processor (11/18), chunk 4/6
+[12:23:57 +10m 3s | quixquantum] Repaired malformed JSON.
+[12:23:57 +10m 3s | quixquantum] Extracting: https://www.quixquantum.com/products/quantum-photonic-processor (11/18), chunk 5/6
+[12:24:02 +10m 8s | quixquantum] Extracting: https://www.quixquantum.com/products/quantum-photonic-processor (11/18), chunk 6/6
+[12:24:08 +10m 14s | quixquantum] Repaired malformed JSON.
+[12:24:08 +10m 14s | quixquantum] Reading page (12/18): https://www.quixquantum.com/news
+[12:24:08 +10m 14s | quixquantum] Extracting: https://www.quixquantum.com/news (12/18), chunk 1/10
+[12:24:18 +10m 24s | quixquantum] Repaired malformed JSON.
+[12:24:18 +10m 24s | quixquantum] Extracting: https://www.quixquantum.com/news (12/18), chunk 2/10
+[12:24:24 +10m 30s | quixquantum] Repaired malformed JSON.
+[12:24:24 +10m 30s | quixquantum] Extracting: https://www.quixquantum.com/news (12/18), chunk 3/10
+[12:24:31 +10m 37s | quixquantum] Repaired malformed JSON.
+[12:24:31 +10m 38s | quixquantum] Extracting: https://www.quixquantum.com/news (12/18), chunk 4/10
+[12:24:38 +10m 44s | quixquantum] Repaired malformed JSON.
+[12:24:38 +10m 44s | quixquantum] Extracting: https://www.quixquantum.com/news (12/18), chunk 5/10
+[12:24:45 +10m 52s | quixquantum] Repaired malformed JSON.
+[12:24:45 +10m 52s | quixquantum] Extracting: https://www.quixquantum.com/news (12/18), chunk 6/10
+[12:24:54 +11m 0s | quixquantum] Repaired malformed JSON.
+[12:24:54 +11m 0s | quixquantum] Extracting: https://www.quixquantum.com/news (12/18), chunk 7/10
+[12:25:01 +11m 7s | quixquantum] Repaired malformed JSON.
+[12:25:01 +11m 7s | quixquantum] Extracting: https://www.quixquantum.com/news (12/18), chunk 8/10
+[12:25:09 +11m 15s | quixquantum] Repaired malformed JSON.
+[12:25:09 +11m 15s | quixquantum] Extracting: https://www.quixquantum.com/news (12/18), chunk 9/10
+[12:25:16 +11m 22s | quixquantum] Repaired malformed JSON.
+[12:25:16 +11m 22s | quixquantum] Extracting: https://www.quixquantum.com/news (12/18), chunk 10/10
+[12:25:24 +11m 31s | quixquantum] Repaired malformed JSON.
+[12:25:24 +11m 31s | quixquantum] Reading page (13/18): https://www.quixquantum.com/news/quix-quantum-installs-real-time-control-component-for-universal-photonic-quantum-computer
+[12:25:24 +11m 31s | quixquantum] Extracting: https://www.quixquantum.com/news/quix-quantum-installs-real-time-control-component-for-universal-photonic-quantum-computer (13/18), chunk 1/10
+[12:25:30 +11m 37s | quixquantum] Repaired malformed JSON.
+[12:25:30 +11m 37s | quixquantum] Extracting: https://www.quixquantum.com/news/quix-quantum-installs-real-time-control-component-for-universal-photonic-quantum-computer (13/18), chunk 2/10
+[12:25:36 +11m 42s | quixquantum] Repaired malformed JSON.
+[12:25:36 +11m 42s | quixquantum] Extracting: https://www.quixquantum.com/news/quix-quantum-installs-real-time-control-component-for-universal-photonic-quantum-computer (13/18), chunk 3/10
+[12:25:42 +11m 48s | quixquantum] Repaired malformed JSON.
+[12:25:42 +11m 48s | quixquantum] Extracting: https://www.quixquantum.com/news/quix-quantum-installs-real-time-control-component-for-universal-photonic-quantum-computer (13/18), chunk 4/10
+[12:25:49 +11m 55s | quixquantum] Repaired malformed JSON.
+[12:25:49 +11m 55s | quixquantum] Extracting: https://www.quixquantum.com/news/quix-quantum-installs-real-time-control-component-for-universal-photonic-quantum-computer (13/18), chunk 5/10
+[12:25:56 +12m 2s | quixquantum] Repaired malformed JSON.
+[12:25:56 +12m 2s | quixquantum] Extracting: https://www.quixquantum.com/news/quix-quantum-installs-real-time-control-component-for-universal-photonic-quantum-computer (13/18), chunk 6/10
+[12:26:02 +12m 8s | quixquantum] Repaired malformed JSON.
+[12:26:02 +12m 8s | quixquantum] Extracting: https://www.quixquantum.com/news/quix-quantum-installs-real-time-control-component-for-universal-photonic-quantum-computer (13/18), chunk 7/10
+[12:26:08 +12m 14s | quixquantum] Repaired malformed JSON.
+[12:26:08 +12m 14s | quixquantum] Extracting: https://www.quixquantum.com/news/quix-quantum-installs-real-time-control-component-for-universal-photonic-quantum-computer (13/18), chunk 8/10
+[12:26:15 +12m 21s | quixquantum] Repaired malformed JSON.
+[12:26:15 +12m 21s | quixquantum] Extracting: https://www.quixquantum.com/news/quix-quantum-installs-real-time-control-component-for-universal-photonic-quantum-computer (13/18), chunk 9/10
+[12:26:21 +12m 27s | quixquantum] Repaired malformed JSON.
+[12:26:21 +12m 27s | quixquantum] Extracting: https://www.quixquantum.com/news/quix-quantum-installs-real-time-control-component-for-universal-photonic-quantum-computer (13/18), chunk 10/10
+[12:26:27 +12m 33s | quixquantum] Repaired malformed JSON.
+[12:26:27 +12m 33s | quixquantum] Reading page (14/18): https://www.quixquantum.com/news/quix-quantum-demonstrates-below-threshold-error-mitigation-in-photonic-quantum-computing-for-first-time
+[12:26:27 +12m 33s | quixquantum] Extracting: https://www.quixquantum.com/news/quix-quantum-demonstrates-below-threshold-error-mitigation-in-photonic-quantum-computing-for-first-time (14/18), chunk 1/11
+[12:26:34 +12m 40s | quixquantum] Repaired malformed JSON.
+[12:26:34 +12m 40s | quixquantum] Extracting: https://www.quixquantum.com/news/quix-quantum-demonstrates-below-threshold-error-mitigation-in-photonic-quantum-computing-for-first-time (14/18), chunk 2/11
+[12:26:40 +12m 46s | quixquantum] Repaired malformed JSON.
+[12:26:40 +12m 46s | quixquantum] Extracting: https://www.quixquantum.com/news/quix-quantum-demonstrates-below-threshold-error-mitigation-in-photonic-quantum-computing-for-first-time (14/18), chunk 3/11
+[12:26:49 +12m 55s | quixquantum] Repaired malformed JSON.
+[12:26:49 +12m 55s | quixquantum] Extracting: https://www.quixquantum.com/news/quix-quantum-demonstrates-below-threshold-error-mitigation-in-photonic-quantum-computing-for-first-time (14/18), chunk 4/11
+[12:26:57 +13m 3s | quixquantum] Repaired malformed JSON.
+[12:26:57 +13m 3s | quixquantum] Extracting: https://www.quixquantum.com/news/quix-quantum-demonstrates-below-threshold-error-mitigation-in-photonic-quantum-computing-for-first-time (14/18), chunk 5/11
+[12:27:03 +13m 10s | quixquantum] Repaired malformed JSON.
+[12:27:03 +13m 10s | quixquantum] Extracting: https://www.quixquantum.com/news/quix-quantum-demonstrates-below-threshold-error-mitigation-in-photonic-quantum-computing-for-first-time (14/18), chunk 6/11
+[12:27:10 +13m 16s | quixquantum] Repaired malformed JSON.
+[12:27:10 +13m 16s | quixquantum] Extracting: https://www.quixquantum.com/news/quix-quantum-demonstrates-below-threshold-error-mitigation-in-photonic-quantum-computing-for-first-time (14/18), chunk 7/11
+[12:27:18 +13m 24s | quixquantum] Repaired malformed JSON.
+[12:27:18 +13m 24s | quixquantum] Extracting: https://www.quixquantum.com/news/quix-quantum-demonstrates-below-threshold-error-mitigation-in-photonic-quantum-computing-for-first-time (14/18), chunk 8/11
+[12:27:25 +13m 32s | quixquantum] Repaired malformed JSON.
+[12:27:25 +13m 32s | quixquantum] Extracting: https://www.quixquantum.com/news/quix-quantum-demonstrates-below-threshold-error-mitigation-in-photonic-quantum-computing-for-first-time (14/18), chunk 9/11
+[12:27:34 +13m 40s | quixquantum] Repaired malformed JSON.
+[12:27:34 +13m 40s | quixquantum] Extracting: https://www.quixquantum.com/news/quix-quantum-demonstrates-below-threshold-error-mitigation-in-photonic-quantum-computing-for-first-time (14/18), chunk 10/11
+[12:27:41 +13m 48s | quixquantum] Repaired malformed JSON.
+[12:27:41 +13m 48s | quixquantum] Extracting: https://www.quixquantum.com/news/quix-quantum-demonstrates-below-threshold-error-mitigation-in-photonic-quantum-computing-for-first-time (14/18), chunk 11/11
+[12:27:48 +13m 54s | quixquantum] Repaired malformed JSON.
+[12:27:48 +13m 54s | quixquantum] Reading page (15/18): https://www.quixquantum.com/news/quix-quantum-becomes-a-member-of-the-arena2036-research-campus
+[12:27:48 +13m 54s | quixquantum] Extracting: https://www.quixquantum.com/news/quix-quantum-becomes-a-member-of-the-arena2036-research-campus (15/18), chunk 1/9
+[12:27:55 +14m 1s | quixquantum] Repaired malformed JSON.
+[12:27:55 +14m 1s | quixquantum] Extracting: https://www.quixquantum.com/news/quix-quantum-becomes-a-member-of-the-arena2036-research-campus (15/18), chunk 2/9
+[12:28:01 +14m 7s | quixquantum] Repaired malformed JSON.
+[12:28:01 +14m 7s | quixquantum] Extracting: https://www.quixquantum.com/news/quix-quantum-becomes-a-member-of-the-arena2036-research-campus (15/18), chunk 3/9
+[12:28:07 +14m 13s | quixquantum] Repaired malformed JSON.
+[12:28:07 +14m 13s | quixquantum] Extracting: https://www.quixquantum.com/news/quix-quantum-becomes-a-member-of-the-arena2036-research-campus (15/18), chunk 4/9
+[12:28:14 +14m 20s | quixquantum] Repaired malformed JSON.
+[12:28:14 +14m 20s | quixquantum] Extracting: https://www.quixquantum.com/news/quix-quantum-becomes-a-member-of-the-arena2036-research-campus (15/18), chunk 5/9
+[12:28:22 +14m 28s | quixquantum] Repaired malformed JSON.
+[12:28:22 +14m 28s | quixquantum] Extracting: https://www.quixquantum.com/news/quix-quantum-becomes-a-member-of-the-arena2036-research-campus (15/18), chunk 6/9
+[12:28:28 +14m 35s | quixquantum] Repaired malformed JSON.
+[12:28:28 +14m 35s | quixquantum] Extracting: https://www.quixquantum.com/news/quix-quantum-becomes-a-member-of-the-arena2036-research-campus (15/18), chunk 7/9
+[12:28:35 +14m 41s | quixquantum] Repaired malformed JSON.
+[12:28:35 +14m 41s | quixquantum] Extracting: https://www.quixquantum.com/news/quix-quantum-becomes-a-member-of-the-arena2036-research-campus (15/18), chunk 8/9
+[12:28:42 +14m 48s | quixquantum] Repaired malformed JSON.
+[12:28:42 +14m 48s | quixquantum] Extracting: https://www.quixquantum.com/news/quix-quantum-becomes-a-member-of-the-arena2036-research-campus (15/18), chunk 9/9
+[12:28:48 +14m 54s | quixquantum] Repaired malformed JSON.
+[12:28:48 +14m 54s | quixquantum] Reading page (16/18): https://www.quixquantum.com/careers
+[12:28:48 +14m 54s | quixquantum] Extracting: https://www.quixquantum.com/careers (16/18), chunk 1/3
+[12:28:57 +15m 4s | quixquantum] Repaired malformed JSON.
+[12:28:57 +15m 4s | quixquantum] Extracting: https://www.quixquantum.com/careers (16/18), chunk 2/3
+[12:29:06 +15m 13s | quixquantum] Repaired malformed JSON.
+[12:29:06 +15m 13s | quixquantum] Extracting: https://www.quixquantum.com/careers (16/18), chunk 3/3
+[12:29:13 +15m 19s | quixquantum] Repaired malformed JSON.
+[12:29:13 +15m 19s | quixquantum] Reading page (17/18): https://www.quixquantum.com/about
+[12:29:13 +15m 19s | quixquantum] Extracting: https://www.quixquantum.com/about (17/18), chunk 1/7
+[12:29:21 +15m 27s | quixquantum] Repaired malformed JSON.
+[12:29:21 +15m 27s | quixquantum] Extracting: https://www.quixquantum.com/about (17/18), chunk 2/7
+[12:29:29 +15m 36s | quixquantum] Repaired malformed JSON.
+[12:29:29 +15m 36s | quixquantum] Extracting: https://www.quixquantum.com/about (17/18), chunk 3/7
+[12:29:36 +15m 42s | quixquantum] Repaired malformed JSON.
+[12:29:36 +15m 42s | quixquantum] Extracting: https://www.quixquantum.com/about (17/18), chunk 4/7
+[12:29:42 +15m 48s | quixquantum] Repaired malformed JSON.
+[12:29:42 +15m 48s | quixquantum] Extracting: https://www.quixquantum.com/about (17/18), chunk 5/7
+[12:29:48 +15m 54s | quixquantum] Repaired malformed JSON.
+[12:29:48 +15m 54s | quixquantum] Extracting: https://www.quixquantum.com/about (17/18), chunk 6/7
+[12:29:54 +16m 0s | quixquantum] Repaired malformed JSON.
+[12:29:54 +16m 0s | quixquantum] Extracting: https://www.quixquantum.com/about (17/18), chunk 7/7
+[12:30:02 +16m 8s | quixquantum] Repaired malformed JSON.
+[12:30:02 +16m 8s | quixquantum] Reading page (18/18): https://cloud.quixquantum.com/login
+[12:30:02 +16m 8s | quixquantum] Extracting: https://cloud.quixquantum.com/login (18/18), chunk 1/1
+[12:30:04 +16m 10s | quixquantum] Saved 1_actor_results.json with 279 extracted records
+
+[12:30:04 +16m 10s | quixquantum] === 2 clean actors ===
+[12:30:05 +16m 11s | quixquantum] Loaded 279 extracted records
+[12:30:05 +16m 11s | quixquantum] Saved 2_actor_nodes.json with 32 canonical actor nodes
+
+[12:30:05 +16m 11s | quixquantum] === 3 interaction extraction ===
+[12:30:05 +16m 11s | quixquantum] Extracting interactions: https://www.quixquantum.com/products/special-purpose-photonic-quantum-computer (1/18), chunk 1/6
+[12:30:12 +16m 19s | quixquantum] Extracting interactions: https://www.quixquantum.com/products/special-purpose-photonic-quantum-computer (1/18), chunk 2/6
+[12:30:20 +16m 26s | quixquantum] Extracting interactions: https://www.quixquantum.com/products/special-purpose-photonic-quantum-computer (1/18), chunk 4/6
+[12:30:23 +16m 29s | quixquantum] Extracting interactions: https://www.quixquantum.com/products/special-purpose-photonic-quantum-computer (1/18), chunk 5/6
+[12:30:27 +16m 33s | quixquantum] Extracting interactions: https://www.quixquantum.com/products/special-purpose-photonic-quantum-computer (1/18), chunk 6/6
+[12:30:31 +16m 37s | quixquantum] Extracting interactions: https://www.quixquantum.com/news/quix-quantum-photonic-quantum-chip-joins-national-scientific-heritage-at-rijksmuseum-boerhaave (2/18), chunk 1/10
+[12:30:38 +16m 44s | quixquantum] Extracting interactions: https://www.quixquantum.com/news/quix-quantum-photonic-quantum-chip-joins-national-scientific-heritage-at-rijksmuseum-boerhaave (2/18), chunk 2/10
+[12:30:48 +16m 54s | quixquantum] Extracting interactions: https://www.quixquantum.com/news/quix-quantum-photonic-quantum-chip-joins-national-scientific-heritage-at-rijksmuseum-boerhaave (2/18), chunk 3/10
+[12:30:53 +16m 59s | quixquantum] Extracting interactions: https://www.quixquantum.com/news/quix-quantum-photonic-quantum-chip-joins-national-scientific-heritage-at-rijksmuseum-boerhaave (2/18), chunk 4/10
+[12:31:01 +17m 7s | quixquantum] Extracting interactions: https://www.quixquantum.com/news/quix-quantum-photonic-quantum-chip-joins-national-scientific-heritage-at-rijksmuseum-boerhaave (2/18), chunk 5/10
+[12:31:27 +17m 33s | quixquantum] Extracting interactions: https://www.quixquantum.com/news/quix-quantum-photonic-quantum-chip-joins-national-scientific-heritage-at-rijksmuseum-boerhaave (2/18), chunk 6/10
+[12:31:49 +17m 55s | quixquantum] Extracting interactions: https://www.quixquantum.com/news/quix-quantum-photonic-quantum-chip-joins-national-scientific-heritage-at-rijksmuseum-boerhaave (2/18), chunk 7/10
+[12:32:02 +18m 8s | quixquantum] Extracting interactions: https://www.quixquantum.com/news/quix-quantum-photonic-quantum-chip-joins-national-scientific-heritage-at-rijksmuseum-boerhaave (2/18), chunk 8/10
+[12:32:12 +18m 18s | quixquantum] Extracting interactions: https://www.quixquantum.com/news/quix-quantum-photonic-quantum-chip-joins-national-scientific-heritage-at-rijksmuseum-boerhaave (2/18), chunk 9/10
+[12:32:23 +18m 29s | quixquantum] Extracting interactions: https://www.quixquantum.com/news/quix-quantum-photonic-quantum-chip-joins-national-scientific-heritage-at-rijksmuseum-boerhaave (2/18), chunk 10/10
+[12:32:32 +18m 38s | quixquantum] Extracting interactions: https://www.quixquantum.com/news/quix-quantum-joins-quantumbw-and-photonics-bw-to-strengthen-the-photonic-quantum-ecosystem-in-baden-wurttemberg-and-europe (3/18), chunk 1/10
+[12:32:37 +18m 44s | quixquantum] Extracting interactions: https://www.quixquantum.com/news/quix-quantum-joins-quantumbw-and-photonics-bw-to-strengthen-the-photonic-quantum-ecosystem-in-baden-wurttemberg-and-europe (3/18), chunk 2/10
+[12:32:44 +18m 50s | quixquantum] Extracting interactions: https://www.quixquantum.com/news/quix-quantum-joins-quantumbw-and-photonics-bw-to-strengthen-the-photonic-quantum-ecosystem-in-baden-wurttemberg-and-europe (3/18), chunk 3/10
+[12:32:53 +18m 59s | quixquantum] Extracting interactions: https://www.quixquantum.com/news/quix-quantum-joins-quantumbw-and-photonics-bw-to-strengthen-the-photonic-quantum-ecosystem-in-baden-wurttemberg-and-europe (3/18), chunk 4/10
+[12:33:09 +19m 15s | quixquantum] Extracting interactions: https://www.quixquantum.com/news/quix-quantum-joins-quantumbw-and-photonics-bw-to-strengthen-the-photonic-quantum-ecosystem-in-baden-wurttemberg-and-europe (3/18), chunk 5/10
+[12:33:37 +19m 44s | quixquantum] Extracting interactions: https://www.quixquantum.com/news/quix-quantum-joins-quantumbw-and-photonics-bw-to-strengthen-the-photonic-quantum-ecosystem-in-baden-wurttemberg-and-europe (3/18), chunk 6/10
+[12:33:49 +19m 55s | quixquantum] Extracting interactions: https://www.quixquantum.com/news/quix-quantum-joins-quantumbw-and-photonics-bw-to-strengthen-the-photonic-quantum-ecosystem-in-baden-wurttemberg-and-europe (3/18), chunk 7/10
+[12:33:57 +20m 3s | quixquantum] Extracting interactions: https://www.quixquantum.com/news/quix-quantum-joins-quantumbw-and-photonics-bw-to-strengthen-the-photonic-quantum-ecosystem-in-baden-wurttemberg-and-europe (3/18), chunk 8/10
+[12:34:07 +20m 13s | quixquantum] Extracting interactions: https://www.quixquantum.com/news/quix-quantum-joins-quantumbw-and-photonics-bw-to-strengthen-the-photonic-quantum-ecosystem-in-baden-wurttemberg-and-europe (3/18), chunk 9/10
+[12:34:20 +20m 26s | quixquantum] Extracting interactions: https://www.quixquantum.com/news/quix-quantum-joins-quantumbw-and-photonics-bw-to-strengthen-the-photonic-quantum-ecosystem-in-baden-wurttemberg-and-europe (3/18), chunk 10/10
+[12:34:24 +20m 30s | quixquantum] Extracting interactions: https://www.quixquantum.com/news/quix-quantum-appoints-robin-wittland-as-chief-commercial-officer-to-drive-global-growth-and-market-expansion (4/18), chunk 1/10
+[12:34:30 +20m 36s | quixquantum] Extracting interactions: https://www.quixquantum.com/news/quix-quantum-appoints-robin-wittland-as-chief-commercial-officer-to-drive-global-growth-and-market-expansion (4/18), chunk 2/10
+[12:34:38 +20m 44s | quixquantum] Extracting interactions: https://www.quixquantum.com/news/quix-quantum-appoints-robin-wittland-as-chief-commercial-officer-to-drive-global-growth-and-market-expansion (4/18), chunk 3/10
+[12:34:44 +20m 51s | quixquantum] Extracting interactions: https://www.quixquantum.com/news/quix-quantum-appoints-robin-wittland-as-chief-commercial-officer-to-drive-global-growth-and-market-expansion (4/18), chunk 4/10
+[12:34:50 +20m 57s | quixquantum] Extracting interactions: https://www.quixquantum.com/news/quix-quantum-appoints-robin-wittland-as-chief-commercial-officer-to-drive-global-growth-and-market-expansion (4/18), chunk 5/10
+[12:35:09 +21m 15s | quixquantum] Extracting interactions: https://www.quixquantum.com/news/quix-quantum-appoints-robin-wittland-as-chief-commercial-officer-to-drive-global-growth-and-market-expansion (4/18), chunk 6/10
+[12:35:19 +21m 25s | quixquantum] Extracting interactions: https://www.quixquantum.com/news/quix-quantum-appoints-robin-wittland-as-chief-commercial-officer-to-drive-global-growth-and-market-expansion (4/18), chunk 7/10
+[12:35:25 +21m 31s | quixquantum] Extracting interactions: https://www.quixquantum.com/news/quix-quantum-appoints-robin-wittland-as-chief-commercial-officer-to-drive-global-growth-and-market-expansion (4/18), chunk 8/10
+[12:35:35 +21m 42s | quixquantum] Extracting interactions: https://www.quixquantum.com/news/quix-quantum-appoints-robin-wittland-as-chief-commercial-officer-to-drive-global-growth-and-market-expansion (4/18), chunk 9/10
+[12:35:48 +21m 54s | quixquantum] Extracting interactions: https://www.quixquantum.com/news/quix-quantum-appoints-robin-wittland-as-chief-commercial-officer-to-drive-global-growth-and-market-expansion (4/18), chunk 10/10
+[12:35:54 +22m 1s | quixquantum] Extracting interactions: https://www.quixquantum.com/products/universal-quantum-computer (5/18), chunk 1/5
+[12:35:59 +22m 5s | quixquantum] Extracting interactions: https://www.quixquantum.com/products/universal-quantum-computer (5/18), chunk 2/5
+[12:36:06 +22m 12s | quixquantum] Extracting interactions: https://www.quixquantum.com/products/universal-quantum-computer (5/18), chunk 3/5
+[12:36:09 +22m 16s | quixquantum] Extracting interactions: https://www.quixquantum.com/products/universal-quantum-computer (5/18), chunk 4/5
+[12:36:15 +22m 21s | quixquantum] Extracting interactions: https://www.quixquantum.com/products/universal-quantum-computer (5/18), chunk 5/5
+[12:36:19 +22m 25s | quixquantum] Extracting interactions: https://www.quixquantum.com/events (6/18), chunk 1/5
+[12:36:23 +22m 29s | quixquantum] Extracting interactions: https://www.quixquantum.com/events (6/18), chunk 2/5
+[12:36:31 +22m 38s | quixquantum] Extracting interactions: https://www.quixquantum.com/events (6/18), chunk 4/5
+[12:36:36 +22m 42s | quixquantum] Extracting interactions: https://www.quixquantum.com/events (6/18), chunk 5/5
+[12:36:39 +22m 45s | quixquantum] Extracting interactions: https://www.quixquantum.com/contact (7/18), chunk 1/6
+[12:36:44 +22m 50s | quixquantum] Extracting interactions: https://www.quixquantum.com/contact (7/18), chunk 2/6
+[12:36:49 +22m 55s | quixquantum] Extracting interactions: https://www.quixquantum.com/contact (7/18), chunk 4/6
+[12:36:51 +22m 57s | quixquantum] Extracting interactions: https://www.quixquantum.com/contact (7/18), chunk 5/6
+[12:36:52 +22m 59s | quixquantum] Extracting interactions: https://www.quixquantum.com/contact (7/18), chunk 6/6
+[12:36:56 +23m 2s | quixquantum] Extracting interactions: https://www.quixquantum.com/news/quix-quantum-introduces-pacu-a-photonic-assembly-control-unit-for-scalable-quantum-systems (8/18), chunk 1/13
+[12:37:02 +23m 8s | quixquantum] Extracting interactions: https://www.quixquantum.com/news/quix-quantum-introduces-pacu-a-photonic-assembly-control-unit-for-scalable-quantum-systems (8/18), chunk 2/13
+[12:37:07 +23m 13s | quixquantum] Extracting interactions: https://www.quixquantum.com/news/quix-quantum-introduces-pacu-a-photonic-assembly-control-unit-for-scalable-quantum-systems (8/18), chunk 3/13
+[12:37:13 +23m 19s | quixquantum] Extracting interactions: https://www.quixquantum.com/news/quix-quantum-introduces-pacu-a-photonic-assembly-control-unit-for-scalable-quantum-systems (8/18), chunk 4/13
+[12:37:23 +23m 29s | quixquantum] Extracting interactions: https://www.quixquantum.com/news/quix-quantum-introduces-pacu-a-photonic-assembly-control-unit-for-scalable-quantum-systems (8/18), chunk 5/13
+[12:37:33 +23m 39s | quixquantum] Extracting interactions: https://www.quixquantum.com/news/quix-quantum-introduces-pacu-a-photonic-assembly-control-unit-for-scalable-quantum-systems (8/18), chunk 6/13
+[12:37:39 +23m 45s | quixquantum] Extracting interactions: https://www.quixquantum.com/news/quix-quantum-introduces-pacu-a-photonic-assembly-control-unit-for-scalable-quantum-systems (8/18), chunk 7/13
+[12:37:46 +23m 52s | quixquantum] Extracting interactions: https://www.quixquantum.com/news/quix-quantum-introduces-pacu-a-photonic-assembly-control-unit-for-scalable-quantum-systems (8/18), chunk 8/13
+[12:37:50 +23m 56s | quixquantum] Extracting interactions: https://www.quixquantum.com/news/quix-quantum-introduces-pacu-a-photonic-assembly-control-unit-for-scalable-quantum-systems (8/18), chunk 9/13
+[12:37:55 +24m 1s | quixquantum] Extracting interactions: https://www.quixquantum.com/news/quix-quantum-introduces-pacu-a-photonic-assembly-control-unit-for-scalable-quantum-systems (8/18), chunk 10/13
+[12:38:06 +24m 12s | quixquantum] Extracting interactions: https://www.quixquantum.com/news/quix-quantum-introduces-pacu-a-photonic-assembly-control-unit-for-scalable-quantum-systems (8/18), chunk 11/13
+[12:38:16 +24m 22s | quixquantum] Extracting interactions: https://www.quixquantum.com/news/quix-quantum-introduces-pacu-a-photonic-assembly-control-unit-for-scalable-quantum-systems (8/18), chunk 12/13
+[12:38:26 +24m 33s | quixquantum] Extracting interactions: https://www.quixquantum.com/news/quix-quantum-introduces-pacu-a-photonic-assembly-control-unit-for-scalable-quantum-systems (8/18), chunk 13/13
+[12:38:33 +24m 40s | quixquantum] Extracting interactions: https://www.quixquantum.com (9/18), chunk 1/12
+[12:38:38 +24m 44s | quixquantum] Extracting interactions: https://www.quixquantum.com (9/18), chunk 2/12
+[12:38:43 +24m 49s | quixquantum] Extracting interactions: https://www.quixquantum.com (9/18), chunk 6/12
+[12:38:46 +24m 52s | quixquantum] Extracting interactions: https://www.quixquantum.com (9/18), chunk 7/12
+[12:38:47 +24m 53s | quixquantum] Extracting interactions: https://www.quixquantum.com (9/18), chunk 8/12
+[12:38:57 +25m 3s | quixquantum] Extracting interactions: https://www.quixquantum.com (9/18), chunk 9/12
+[12:39:04 +25m 11s | quixquantum] Extracting interactions: https://www.quixquantum.com (9/18), chunk 10/12
+[12:39:10 +25m 16s | quixquantum] Extracting interactions: https://www.quixquantum.com (9/18), chunk 11/12
+[12:39:15 +25m 22s | quixquantum] Extracting interactions: https://www.quixquantum.com (9/18), chunk 12/12
+[12:39:19 +25m 25s | quixquantum] Extracting interactions: https://www.quixquantum.com/disclaimer (10/18), chunk 1/6
+[12:39:25 +25m 31s | quixquantum] Extracting interactions: https://www.quixquantum.com/disclaimer (10/18), chunk 2/6
+[12:39:32 +25m 38s | quixquantum] Extracting interactions: https://www.quixquantum.com/disclaimer (10/18), chunk 3/6
+[12:39:35 +25m 41s | quixquantum] Extracting interactions: https://www.quixquantum.com/disclaimer (10/18), chunk 4/6
+[12:39:44 +25m 50s | quixquantum] Extracting interactions: https://www.quixquantum.com/disclaimer (10/18), chunk 5/6
+[12:39:48 +25m 54s | quixquantum] Extracting interactions: https://www.quixquantum.com/disclaimer (10/18), chunk 6/6
+[12:39:52 +25m 58s | quixquantum] Extracting interactions: https://www.quixquantum.com/products/quantum-photonic-processor (11/18), chunk 1/6
+[12:39:58 +26m 5s | quixquantum] Extracting interactions: https://www.quixquantum.com/products/quantum-photonic-processor (11/18), chunk 2/6
+[12:40:06 +26m 12s | quixquantum] Extracting interactions: https://www.quixquantum.com/products/quantum-photonic-processor (11/18), chunk 3/6
+[12:40:07 +26m 13s | quixquantum] Extracting interactions: https://www.quixquantum.com/products/quantum-photonic-processor (11/18), chunk 5/6
+[12:40:10 +26m 17s | quixquantum] Extracting interactions: https://www.quixquantum.com/products/quantum-photonic-processor (11/18), chunk 6/6
+[12:40:15 +26m 21s | quixquantum] Extracting interactions: https://www.quixquantum.com/news (12/18), chunk 1/10
+[12:40:21 +26m 27s | quixquantum] Extracting interactions: https://www.quixquantum.com/news (12/18), chunk 2/10
+[12:40:25 +26m 32s | quixquantum] Extracting interactions: https://www.quixquantum.com/news (12/18), chunk 3/10
+[12:40:35 +26m 42s | quixquantum] Extracting interactions: https://www.quixquantum.com/news (12/18), chunk 4/10
+[12:40:43 +26m 49s | quixquantum] Extracting interactions: https://www.quixquantum.com/news (12/18), chunk 5/10
+[12:40:47 +26m 54s | quixquantum] Extracting interactions: https://www.quixquantum.com/news (12/18), chunk 6/10
+[12:40:57 +27m 4s | quixquantum] Extracting interactions: https://www.quixquantum.com/news (12/18), chunk 7/10
+[12:41:02 +27m 8s | quixquantum] Extracting interactions: https://www.quixquantum.com/news (12/18), chunk 8/10
+[12:41:20 +27m 26s | quixquantum] Extracting interactions: https://www.quixquantum.com/news (12/18), chunk 9/10
+[12:41:37 +27m 43s | quixquantum] Extracting interactions: https://www.quixquantum.com/news (12/18), chunk 10/10
+[12:41:41 +27m 47s | quixquantum] Extracting interactions: https://www.quixquantum.com/news/quix-quantum-installs-real-time-control-component-for-universal-photonic-quantum-computer (13/18), chunk 1/10
+[12:41:49 +27m 56s | quixquantum] Extracting interactions: https://www.quixquantum.com/news/quix-quantum-installs-real-time-control-component-for-universal-photonic-quantum-computer (13/18), chunk 2/10
+[12:41:55 +28m 1s | quixquantum] Extracting interactions: https://www.quixquantum.com/news/quix-quantum-installs-real-time-control-component-for-universal-photonic-quantum-computer (13/18), chunk 3/10
+[12:41:59 +28m 5s | quixquantum] Extracting interactions: https://www.quixquantum.com/news/quix-quantum-installs-real-time-control-component-for-universal-photonic-quantum-computer (13/18), chunk 4/10
+[12:42:05 +28m 12s | quixquantum] Extracting interactions: https://www.quixquantum.com/news/quix-quantum-installs-real-time-control-component-for-universal-photonic-quantum-computer (13/18), chunk 5/10
+[12:42:14 +28m 20s | quixquantum] Extracting interactions: https://www.quixquantum.com/news/quix-quantum-installs-real-time-control-component-for-universal-photonic-quantum-computer (13/18), chunk 6/10
+[12:42:22 +28m 28s | quixquantum] Extracting interactions: https://www.quixquantum.com/news/quix-quantum-installs-real-time-control-component-for-universal-photonic-quantum-computer (13/18), chunk 7/10
+[12:42:34 +28m 40s | quixquantum] Extracting interactions: https://www.quixquantum.com/news/quix-quantum-installs-real-time-control-component-for-universal-photonic-quantum-computer (13/18), chunk 8/10
+[12:42:43 +28m 49s | quixquantum] Extracting interactions: https://www.quixquantum.com/news/quix-quantum-installs-real-time-control-component-for-universal-photonic-quantum-computer (13/18), chunk 9/10
+[12:42:54 +29m 0s | quixquantum] Extracting interactions: https://www.quixquantum.com/news/quix-quantum-installs-real-time-control-component-for-universal-photonic-quantum-computer (13/18), chunk 10/10
+[12:43:01 +29m 8s | quixquantum] Extracting interactions: https://www.quixquantum.com/news/quix-quantum-demonstrates-below-threshold-error-mitigation-in-photonic-quantum-computing-for-first-time (14/18), chunk 1/11
+[12:43:09 +29m 15s | quixquantum] Extracting interactions: https://www.quixquantum.com/news/quix-quantum-demonstrates-below-threshold-error-mitigation-in-photonic-quantum-computing-for-first-time (14/18), chunk 2/11
+[12:43:15 +29m 22s | quixquantum] Extracting interactions: https://www.quixquantum.com/news/quix-quantum-demonstrates-below-threshold-error-mitigation-in-photonic-quantum-computing-for-first-time (14/18), chunk 3/11
+[12:43:19 +29m 25s | quixquantum] Extracting interactions: https://www.quixquantum.com/news/quix-quantum-demonstrates-below-threshold-error-mitigation-in-photonic-quantum-computing-for-first-time (14/18), chunk 4/11
+[12:43:33 +29m 39s | quixquantum] Extracting interactions: https://www.quixquantum.com/news/quix-quantum-demonstrates-below-threshold-error-mitigation-in-photonic-quantum-computing-for-first-time (14/18), chunk 5/11
+[12:43:44 +29m 50s | quixquantum] Extracting interactions: https://www.quixquantum.com/news/quix-quantum-demonstrates-below-threshold-error-mitigation-in-photonic-quantum-computing-for-first-time (14/18), chunk 6/11
+[12:43:48 +29m 54s | quixquantum] Extracting interactions: https://www.quixquantum.com/news/quix-quantum-demonstrates-below-threshold-error-mitigation-in-photonic-quantum-computing-for-first-time (14/18), chunk 7/11
+[12:43:55 +30m 1s | quixquantum] Extracting interactions: https://www.quixquantum.com/news/quix-quantum-demonstrates-below-threshold-error-mitigation-in-photonic-quantum-computing-for-first-time (14/18), chunk 8/11
+[12:44:07 +30m 14s | quixquantum] Extracting interactions: https://www.quixquantum.com/news/quix-quantum-demonstrates-below-threshold-error-mitigation-in-photonic-quantum-computing-for-first-time (14/18), chunk 9/11
+[12:44:27 +30m 33s | quixquantum] Extracting interactions: https://www.quixquantum.com/news/quix-quantum-demonstrates-below-threshold-error-mitigation-in-photonic-quantum-computing-for-first-time (14/18), chunk 10/11
+[12:44:43 +30m 49s | quixquantum] Extracting interactions: https://www.quixquantum.com/news/quix-quantum-demonstrates-below-threshold-error-mitigation-in-photonic-quantum-computing-for-first-time (14/18), chunk 11/11
+[12:44:50 +30m 57s | quixquantum] Extracting interactions: https://www.quixquantum.com/news/quix-quantum-becomes-a-member-of-the-arena2036-research-campus (15/18), chunk 1/9
+[12:44:58 +31m 4s | quixquantum] Extracting interactions: https://www.quixquantum.com/news/quix-quantum-becomes-a-member-of-the-arena2036-research-campus (15/18), chunk 2/9
+[12:45:09 +31m 15s | quixquantum] Extracting interactions: https://www.quixquantum.com/news/quix-quantum-becomes-a-member-of-the-arena2036-research-campus (15/18), chunk 3/9
+[12:45:22 +31m 28s | quixquantum] Extracting interactions: https://www.quixquantum.com/news/quix-quantum-becomes-a-member-of-the-arena2036-research-campus (15/18), chunk 4/9
+[12:45:38 +31m 44s | quixquantum] Extracting interactions: https://www.quixquantum.com/news/quix-quantum-becomes-a-member-of-the-arena2036-research-campus (15/18), chunk 5/9
+[12:45:45 +31m 51s | quixquantum] Extracting interactions: https://www.quixquantum.com/news/quix-quantum-becomes-a-member-of-the-arena2036-research-campus (15/18), chunk 6/9
+[12:45:53 +31m 59s | quixquantum] Extracting interactions: https://www.quixquantum.com/news/quix-quantum-becomes-a-member-of-the-arena2036-research-campus (15/18), chunk 7/9
+[12:46:03 +32m 9s | quixquantum] Extracting interactions: https://www.quixquantum.com/news/quix-quantum-becomes-a-member-of-the-arena2036-research-campus (15/18), chunk 8/9
+[12:46:12 +32m 18s | quixquantum] Extracting interactions: https://www.quixquantum.com/news/quix-quantum-becomes-a-member-of-the-arena2036-research-campus (15/18), chunk 9/9
+[12:46:18 +32m 24s | quixquantum] Extracting interactions: https://www.quixquantum.com/careers (16/18), chunk 1/3
+[12:46:22 +32m 29s | quixquantum] Extracting interactions: https://www.quixquantum.com/careers (16/18), chunk 2/3
+[12:46:28 +32m 34s | quixquantum] Extracting interactions: https://www.quixquantum.com/careers (16/18), chunk 3/3
+[12:46:31 +32m 37s | quixquantum] Extracting interactions: https://www.quixquantum.com/about (17/18), chunk 1/7
+[12:46:36 +32m 43s | quixquantum] Extracting interactions: https://www.quixquantum.com/about (17/18), chunk 2/7
+[12:46:42 +32m 48s | quixquantum] Extracting interactions: https://www.quixquantum.com/about (17/18), chunk 3/7
+[12:46:51 +32m 58s | quixquantum] Extracting interactions: https://www.quixquantum.com/about (17/18), chunk 4/7
+[12:46:59 +33m 6s | quixquantum] Extracting interactions: https://www.quixquantum.com/about (17/18), chunk 5/7
+[12:47:02 +33m 8s | quixquantum] Extracting interactions: https://www.quixquantum.com/about (17/18), chunk 6/7
+[12:47:06 +33m 12s | quixquantum] Extracting interactions: https://www.quixquantum.com/about (17/18), chunk 7/7
+[12:47:09 +33m 15s | quixquantum] Saved 3_interaction_results.json with 281 extracted interactions.
+
+[12:47:09 +33m 15s | quixquantum] === 4 clean interactions ===
+[12:47:09 +33m 16s | quixquantum] Saved 4_edges.json with 65 cleaned interactions.
+
+[12:47:09 +33m 16s | quixquantum] === 5 helix enrichment ===
+[12:47:09 +33m 16s | quixquantum] Wrote 5_nodes.json (32 actors)
+[12:47:09 +33m 16s | quixquantum] Wrote 5_edges.json (65 interactions)
+[12:47:09 +33m 16s | quixquantum] Actor helix counts: {'Academia': 5, 'Civil Society': 3, 'Government': 5, 'Industry': 5, 'Intermediary': 6, 'Unknown': 8}
+[12:47:09 +33m 16s | quixquantum] Functional-space counts: {'Consensus': 2, 'Innovation': 55, 'Intra-helix / Not classified': 6, 'Public': 2}
+
+[12:47:09 +33m 16s | quixquantum] === 6 network visualisation ===
+[12:47:10 +33m 16s | quixquantum] Wrote quantum_network.html
+[12:47:10 +33m 16s | quixquantum] Nodes: 32
+[12:47:10 +33m 16s | quixquantum] Edges: 13
+
+[12:47:10 +33m 16s | quixquantum] Done. Outputs written to: /home/lv/IDP/idpdeeptech/pipeline/site_outputs/quixquantum
+[12:47:10 +33m 16s | quixquantum] Log: /home/lv/IDP/idpdeeptech/pipeline/site_outputs/quixquantum/run.log
+
+========================================================================
+RUN FINISHED 2026-06-17 12:47:10  (OK)
+Started:     2026-06-17 12:13:54
+Elapsed:     33m 16s
+========================================================================

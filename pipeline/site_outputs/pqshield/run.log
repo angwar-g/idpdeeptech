@@ -1,0 +1,1462 @@
+
+========================================================================
+RUN STARTED  2026-06-17 04:36:57
+site_pipeline.py https://pqshield.com/
+========================================================================
+
+[04:36:57 +0s | pqshield] === 0 crawl site ===
+[04:37:00 +2s | pqshield] [INIT].... → Crawl4AI 0.8.6 
+[04:37:01 +4s | pqshield] [FETCH]... ↓ https://pqshield.com/                                                                                | ✓ | ⏱: 1.69s 
+[04:37:01 +4s | pqshield] [SCRAPE].. ◆ https://pqshield.com/                                                                                | ✓ | ⏱: 0.12s 
+[04:37:01 +4s | pqshield] [COMPLETE] ● https://pqshield.com/                                                                                | ✓ | ⏱: 1.83s 
+[04:37:02 +5s | pqshield] [FETCH]... ↓ https://pqshield.com/                                                                                | ✓ | ⏱: 1.03s 
+[04:37:03 +5s | pqshield] [SCRAPE].. ◆ https://pqshield.com/                                                                                | ✓ | ⏱: 0.19s 
+[04:37:03 +5s | pqshield] [COMPLETE] ● https://pqshield.com/                                                                                | ✓ | ⏱: 1.24s 
+[04:37:03 +6s | pqshield] [FETCH]... ↓ https://pqshield.com/products/pqp-cop/                                                               | ✓ | ⏱: 1.50s 
+[04:37:03 +6s | pqshield] [SCRAPE].. ◆ https://pqshield.com/products/pqp-cop/                                                               | ✓ | ⏱: 0.11s 
+[04:37:03 +6s | pqshield] [COMPLETE] ● https://pqshield.com/products/pqp-cop/                                                               | ✓ | ⏱: 1.63s 
+[04:37:05 +7s | pqshield] [FETCH]... ↓ https://pqshield.com/products/                                                                       | ✓ | ⏱: 2.98s 
+[04:37:05 +8s | pqshield] [SCRAPE].. ◆ https://pqshield.com/products/                                                                       | ✓ | ⏱: 0.21s 
+[04:37:05 +8s | pqshield] [COMPLETE] ● https://pqshield.com/products/                                                                       | ✓ | ⏱: 3.27s 
+[04:37:05 +8s | pqshield] [FETCH]... ↓ https://pqshield.com/products/pqp-tru/                                                               | ✓ | ⏱: 3.76s 
+[04:37:06 +8s | pqshield] [SCRAPE].. ◆ https://pqshield.com/products/pqp-tru/                                                               | ✓ | ⏱: 0.17s 
+[04:37:06 +8s | pqshield] [COMPLETE] ● https://pqshield.com/products/pqp-tru/                                                               | ✓ | ⏱: 3.95s 
+[04:37:06 +9s | pqshield] [FETCH]... ↓ https://pqshield.com/products/pqf-flr/                                                               | ✓ | ⏱: 4.26s 
+[04:37:06 +9s | pqshield] [SCRAPE].. ◆ https://pqshield.com/products/pqf-flr/                                                               | ✓ | ⏱: 0.13s 
+[04:37:06 +9s | pqshield] [COMPLETE] ● https://pqshield.com/products/pqf-flr/                                                               | ✓ | ⏱: 4.41s 
+[04:37:06 +9s | pqshield] [FETCH]... ↓ https://pqshield.com/markets/identity-paymentech/                                                    | ✓ | ⏱: 4.46s 
+[04:37:06 +9s | pqshield] [SCRAPE].. ◆ https://pqshield.com/markets/identity-paymentech/                                                    | ✓ | ⏱: 0.14s 
+[04:37:06 +9s | pqshield] [COMPLETE] ● https://pqshield.com/markets/identity-paymentech/                                                    | ✓ | ⏱: 4.62s 
+[04:37:07 +9s | pqshield] [FETCH]... ↓ https://pqshield.com/products/pqf-inf/                                                               | ✓ | ⏱: 4.95s 
+[04:37:07 +9s | pqshield] [SCRAPE].. ◆ https://pqshield.com/products/pqf-inf/                                                               | ✓ | ⏱: 0.15s 
+[04:37:07 +10s | pqshield] [COMPLETE] ● https://pqshield.com/products/pqf-inf/                                                               | ✓ | ⏱: 5.13s 
+[04:37:07 +10s | pqshield] [FETCH]... ↓ https://pqshield.com/products/pqm-cor/                                                               | ✓ | ⏱: 5.32s 
+[04:37:07 +10s | pqshield] [SCRAPE].. ◆ https://pqshield.com/products/pqm-cor/                                                               | ✓ | ⏱: 0.08s 
+[04:37:07 +10s | pqshield] [COMPLETE] ● https://pqshield.com/products/pqm-cor/                                                               | ✓ | ⏱: 5.42s 
+[04:37:07 +10s | pqshield] [FETCH]... ↓ https://pqshield.com/markets/                                                                        | ✓ | ⏱: 5.46s 
+[04:37:08 +10s | pqshield] [SCRAPE].. ◆ https://pqshield.com/markets/                                                                        | ✓ | ⏱: 0.51s 
+[04:37:08 +10s | pqshield] [COMPLETE] ● https://pqshield.com/markets/                                                                        | ✓ | ⏱: 5.98s 
+[04:37:08 +10s | pqshield] [FETCH]... ↓ https://pqshield.com/products/pqc-sdk/                                                               | ✓ | ⏱: 6.01s 
+[04:37:08 +10s | pqshield] [SCRAPE].. ◆ https://pqshield.com/products/pqc-sdk/                                                               | ✓ | ⏱: 0.07s 
+[04:37:08 +10s | pqshield] [COMPLETE] ● https://pqshield.com/products/pqc-sdk/                                                               | ✓ | ⏱: 6.09s 
+[04:37:08 +10s | pqshield] [FETCH]... ↓ https://pqshield.com/products/pqf-flx/                                                               | ✓ | ⏱: 6.13s 
+[04:37:08 +11s | pqshield] [SCRAPE].. ◆ https://pqshield.com/products/pqf-flx/                                                               | ✓ | ⏱: 0.08s 
+[04:37:08 +11s | pqshield] [COMPLETE] ● https://pqshield.com/products/pqf-flx/                                                               | ✓ | ⏱: 6.22s 
+[04:37:08 +11s | pqshield] [FETCH]... ↓ https://pqshield.com/pqc-transition-roadmaps-and-guidance/                                           | ✓ | ⏱: 6.22s 
+[04:37:08 +11s | pqshield] [SCRAPE].. ◆ https://pqshield.com/pqc-transition-roadmaps-and-guidance/                                           | ✓ | ⏱: 0.09s 
+[04:37:08 +11s | pqshield] [COMPLETE] ● https://pqshield.com/pqc-transition-roadmaps-and-guidance/                                           | ✓ | ⏱: 6.33s 
+[04:37:08 +11s | pqshield] [FETCH]... ↓ https://pqshield.com/products/pqc-cor/                                                               | ✓ | ⏱: 6.33s 
+[04:37:08 +11s | pqshield] [SCRAPE].. ◆ https://pqshield.com/products/pqc-cor/                                                               | ✓ | ⏱: 0.07s 
+[04:37:08 +11s | pqshield] [COMPLETE] ● https://pqshield.com/products/pqc-cor/                                                               | ✓ | ⏱: 6.41s 
+[04:37:08 +11s | pqshield] [FETCH]... ↓ https://pqshield.com/markets/military-aerospace/                                                     | ✓ | ⏱: 6.55s 
+[04:37:08 +11s | pqshield] [SCRAPE].. ◆ https://pqshield.com/markets/military-aerospace/                                                     | ✓ | ⏱: 0.08s 
+[04:37:08 +11s | pqshield] [COMPLETE] ● https://pqshield.com/markets/military-aerospace/                                                     | ✓ | ⏱: 6.64s 
+[04:37:08 +11s | pqshield] [FETCH]... ↓ https://pqshield.com/products/certifications/                                                        | ✓ | ⏱: 6.65s 
+[04:37:08 +11s | pqshield] [SCRAPE].. ◆ https://pqshield.com/products/certifications/                                                        | ✓ | ⏱: 0.07s 
+[04:37:08 +11s | pqshield] [COMPLETE] ● https://pqshield.com/products/certifications/                                                        | ✓ | ⏱: 6.73s 
+[04:37:08 +11s | pqshield] [FETCH]... ↓ https://pqshield.com/products/product-security/                                                      | ✓ | ⏱: 6.73s 
+[04:37:08 +11s | pqshield] [SCRAPE].. ◆ https://pqshield.com/products/product-security/                                                      | ✓ | ⏱: 0.06s 
+[04:37:08 +11s | pqshield] [COMPLETE] ● https://pqshield.com/products/product-security/                                                      | ✓ | ⏱: 6.81s 
+[04:37:08 +11s | pqshield] [FETCH]... ↓ https://pqshield.com/team-pqshield/                                                                  | ✓ | ⏱: 6.81s 
+[04:37:09 +11s | pqshield] [SCRAPE].. ◆ https://pqshield.com/team-pqshield/                                                                  | ✓ | ⏱: 0.06s 
+[04:37:09 +11s | pqshield] [COMPLETE] ● https://pqshield.com/team-pqshield/                                                                  | ✓ | ⏱: 6.89s 
+[04:37:09 +11s | pqshield] [FETCH]... ↓ https://pqshield.com/markets/system-integrators/                                                     | ✓ | ⏱: 6.89s 
+[04:37:09 +11s | pqshield] [SCRAPE].. ◆ https://pqshield.com/markets/system-integrators/                                                     | ✓ | ⏱: 0.06s 
+[04:37:09 +11s | pqshield] [COMPLETE] ● https://pqshield.com/markets/system-integrators/                                                     | ✓ | ⏱: 6.95s 
+[04:37:09 +11s | pqshield] [FETCH]... ↓ https://pqshield.com/markets/semiconductors-manufacturing/                                           | ✓ | ⏱: 7.01s 
+[04:37:09 +11s | pqshield] [SCRAPE].. ◆ https://pqshield.com/markets/semiconductors-manufacturing/                                           | ✓ | ⏱: 0.06s 
+[04:37:09 +11s | pqshield] [COMPLETE] ● https://pqshield.com/markets/semiconductors-manufacturing/                                           | ✓ | ⏱: 7.09s 
+[04:37:09 +11s | pqshield] Saved: crawl_output/84fca2ac43_pqshield.com.json
+[04:37:09 +11s | pqshield] Duplicate skipped: https://pqshield.com
+[04:37:09 +11s | pqshield] Saved: crawl_output/77727cc582_pqshield.com_products_pqp-cop.json
+[04:37:09 +11s | pqshield] Saved: crawl_output/8c4bf60443_pqshield.com_products.json
+[04:37:09 +11s | pqshield] Saved: crawl_output/b7748e9b70_pqshield.com_products_pqp-tru.json
+[04:37:09 +11s | pqshield] Saved: crawl_output/c21a88befc_pqshield.com_products_pqf-flr.json
+[04:37:09 +11s | pqshield] Saved: crawl_output/d5eadba811_pqshield.com_markets_identity-paymentech.json
+[04:37:09 +11s | pqshield] Saved: crawl_output/770c67ae28_pqshield.com_products_pqf-inf.json
+[04:37:09 +11s | pqshield] Saved: crawl_output/7e2461a50b_pqshield.com_products_pqm-cor.json
+[04:37:09 +11s | pqshield] Saved: crawl_output/fad1c6fb89_pqshield.com_markets.json
+[04:37:09 +11s | pqshield] Saved: crawl_output/8c59b79333_pqshield.com_products_pqc-sdk.json
+[04:37:09 +11s | pqshield] Saved: crawl_output/66a8efcf13_pqshield.com_products_pqf-flx.json
+[04:37:09 +11s | pqshield] Saved: crawl_output/5981eef4ae_pqshield.com_pqc-transition-roadmaps-and-guidance.json
+[04:37:09 +11s | pqshield] Saved: crawl_output/396155616a_pqshield.com_products_pqc-cor.json
+[04:37:09 +11s | pqshield] Saved: crawl_output/ff44cf45bd_pqshield.com_markets_military-aerospace.json
+[04:37:09 +11s | pqshield] Saved: crawl_output/0d8e984af5_pqshield.com_products_certifications.json
+[04:37:09 +11s | pqshield] Saved: crawl_output/38e4dca0e6_pqshield.com_products_product-security.json
+[04:37:09 +11s | pqshield] Saved: crawl_output/3048a7dc0c_pqshield.com_team-pqshield.json
+[04:37:09 +11s | pqshield] Saved: crawl_output/383fe4d140_pqshield.com_markets_system-integrators.json
+[04:37:09 +12s | pqshield] Saved: crawl_output/f4a1b41ba0_pqshield.com_markets_semiconductors-manufacturing.json
+
+[04:37:09 +12s | pqshield] === 1 actor extraction ===
+[04:37:10 +13s | pqshield] Reading page (1/19): https://pqshield.com/products/certifications
+[04:37:10 +13s | pqshield] Extracting: https://pqshield.com/products/certifications (1/19), chunk 1/31
+[04:37:12 +15s | pqshield] Extracting: https://pqshield.com/products/certifications (1/19), chunk 2/31
+[04:37:15 +18s | pqshield] Extracting: https://pqshield.com/products/certifications (1/19), chunk 3/31
+[04:37:23 +25s | pqshield] Repaired malformed JSON.
+[04:37:23 +25s | pqshield] Extracting: https://pqshield.com/products/certifications (1/19), chunk 4/31
+[04:37:33 +33s | pqshield] Repaired malformed JSON.
+[04:37:33 +33s | pqshield] Extracting: https://pqshield.com/products/certifications (1/19), chunk 5/31
+[04:37:39 +40s | pqshield] Repaired malformed JSON.
+[04:37:39 +40s | pqshield] Extracting: https://pqshield.com/products/certifications (1/19), chunk 6/31
+[04:37:48 +48s | pqshield] Repaired malformed JSON.
+[04:37:48 +48s | pqshield] Extracting: https://pqshield.com/products/certifications (1/19), chunk 7/31
+[04:37:53 +54s | pqshield] Repaired malformed JSON.
+[04:37:53 +54s | pqshield] Extracting: https://pqshield.com/products/certifications (1/19), chunk 8/31
+[04:38:02 +1m 1s | pqshield] Repaired malformed JSON.
+[04:38:02 +1m 1s | pqshield] Extracting: https://pqshield.com/products/certifications (1/19), chunk 9/31
+[04:38:09 +1m 7s | pqshield] Repaired malformed JSON.
+[04:38:09 +1m 7s | pqshield] Extracting: https://pqshield.com/products/certifications (1/19), chunk 10/31
+[04:38:14 +1m 12s | pqshield] Repaired malformed JSON.
+[04:38:14 +1m 12s | pqshield] Extracting: https://pqshield.com/products/certifications (1/19), chunk 11/31
+[04:38:20 +1m 18s | pqshield] Extracting: https://pqshield.com/products/certifications (1/19), chunk 12/31
+[04:38:22 +1m 20s | pqshield] Extracting: https://pqshield.com/products/certifications (1/19), chunk 13/31
+[04:38:29 +1m 27s | pqshield] Repaired malformed JSON.
+[04:38:29 +1m 27s | pqshield] Extracting: https://pqshield.com/products/certifications (1/19), chunk 14/31
+[04:38:36 +1m 32s | pqshield] Repaired malformed JSON.
+[04:38:36 +1m 32s | pqshield] Extracting: https://pqshield.com/products/certifications (1/19), chunk 15/31
+[04:38:40 +1m 36s | pqshield] Extracting: https://pqshield.com/products/certifications (1/19), chunk 16/31
+[04:38:44 +1m 40s | pqshield] Extracting: https://pqshield.com/products/certifications (1/19), chunk 17/31
+[04:38:49 +1m 45s | pqshield] Extracting: https://pqshield.com/products/certifications (1/19), chunk 18/31
+[04:38:53 +1m 49s | pqshield] Extracting: https://pqshield.com/products/certifications (1/19), chunk 19/31
+[04:38:57 +1m 53s | pqshield] Extracting: https://pqshield.com/products/certifications (1/19), chunk 20/31
+[04:39:03 +1m 59s | pqshield] Repaired malformed JSON.
+[04:39:03 +1m 59s | pqshield] Extracting: https://pqshield.com/products/certifications (1/19), chunk 21/31
+[04:39:11 +2m 6s | pqshield] Repaired malformed JSON.
+[04:39:11 +2m 6s | pqshield] Extracting: https://pqshield.com/products/certifications (1/19), chunk 22/31
+[04:39:19 +2m 13s | pqshield] Repaired malformed JSON.
+[04:39:19 +2m 13s | pqshield] Extracting: https://pqshield.com/products/certifications (1/19), chunk 23/31
+[04:39:26 +2m 20s | pqshield] Repaired malformed JSON.
+[04:39:26 +2m 20s | pqshield] Extracting: https://pqshield.com/products/certifications (1/19), chunk 24/31
+[04:39:32 +2m 27s | pqshield] Repaired malformed JSON.
+[04:39:32 +2m 27s | pqshield] Extracting: https://pqshield.com/products/certifications (1/19), chunk 25/31
+[04:39:39 +2m 33s | pqshield] Extracting: https://pqshield.com/products/certifications (1/19), chunk 26/31
+[04:39:48 +2m 40s | pqshield] Repaired malformed JSON.
+[04:39:48 +2m 40s | pqshield] Extracting: https://pqshield.com/products/certifications (1/19), chunk 27/31
+[04:39:57 +2m 49s | pqshield] Repaired malformed JSON.
+[04:39:57 +2m 49s | pqshield] Extracting: https://pqshield.com/products/certifications (1/19), chunk 28/31
+[04:40:04 +2m 56s | pqshield] Repaired malformed JSON.
+[04:40:04 +2m 56s | pqshield] Extracting: https://pqshield.com/products/certifications (1/19), chunk 29/31
+[04:40:07 +2m 59s | pqshield] Extracting: https://pqshield.com/products/certifications (1/19), chunk 30/31
+[04:40:10 +3m 2s | pqshield] Extracting: https://pqshield.com/products/certifications (1/19), chunk 31/31
+[04:40:18 +3m 8s | pqshield] Repaired malformed JSON.
+[04:40:18 +3m 8s | pqshield] Reading page (2/19): https://pqshield.com/team-pqshield
+[04:40:18 +3m 8s | pqshield] Extracting: https://pqshield.com/team-pqshield (2/19), chunk 1/27
+[04:40:23 +3m 13s | pqshield] Extracting: https://pqshield.com/team-pqshield (2/19), chunk 2/27
+[04:40:30 +3m 20s | pqshield] Repaired malformed JSON.
+[04:40:30 +3m 20s | pqshield] Extracting: https://pqshield.com/team-pqshield (2/19), chunk 3/27
+[04:40:38 +3m 28s | pqshield] Repaired malformed JSON.
+[04:40:38 +3m 28s | pqshield] Extracting: https://pqshield.com/team-pqshield (2/19), chunk 4/27
+[04:40:45 +3m 35s | pqshield] Repaired malformed JSON.
+[04:40:45 +3m 35s | pqshield] Extracting: https://pqshield.com/team-pqshield (2/19), chunk 5/27
+[04:40:54 +3m 42s | pqshield] Repaired malformed JSON.
+[04:40:54 +3m 42s | pqshield] Extracting: https://pqshield.com/team-pqshield (2/19), chunk 6/27
+[04:41:03 +3m 50s | pqshield] Repaired malformed JSON.
+[04:41:03 +3m 50s | pqshield] Extracting: https://pqshield.com/team-pqshield (2/19), chunk 7/27
+[04:41:10 +3m 58s | pqshield] Repaired malformed JSON.
+[04:41:10 +3m 58s | pqshield] Extracting: https://pqshield.com/team-pqshield (2/19), chunk 8/27
+[04:41:19 +4m 6s | pqshield] Repaired malformed JSON.
+[04:41:19 +4m 6s | pqshield] Extracting: https://pqshield.com/team-pqshield (2/19), chunk 9/27
+[04:41:27 +4m 13s | pqshield] Repaired malformed JSON.
+[04:41:27 +4m 13s | pqshield] Extracting: https://pqshield.com/team-pqshield (2/19), chunk 10/27
+[04:41:29 +4m 14s | pqshield] Extracting: https://pqshield.com/team-pqshield (2/19), chunk 11/27
+[04:41:37 +4m 23s | pqshield] Repaired malformed JSON.
+[04:41:37 +4m 23s | pqshield] Extracting: https://pqshield.com/team-pqshield (2/19), chunk 12/27
+[04:41:45 +4m 30s | pqshield] Repaired malformed JSON.
+[04:41:45 +4m 30s | pqshield] Extracting: https://pqshield.com/team-pqshield (2/19), chunk 13/27
+[04:41:51 +4m 36s | pqshield] Extracting: https://pqshield.com/team-pqshield (2/19), chunk 14/27
+[04:41:56 +4m 41s | pqshield] Extracting: https://pqshield.com/team-pqshield (2/19), chunk 15/27
+[04:42:03 +4m 47s | pqshield] Extracting: https://pqshield.com/team-pqshield (2/19), chunk 16/27
+[04:42:07 +4m 50s | pqshield] Extracting: https://pqshield.com/team-pqshield (2/19), chunk 17/27
+[04:42:13 +4m 57s | pqshield] Extracting: https://pqshield.com/team-pqshield (2/19), chunk 18/27
+[04:42:17 +5m 0s | pqshield] Extracting: https://pqshield.com/team-pqshield (2/19), chunk 19/27
+[04:42:24 +5m 8s | pqshield] Extracting: https://pqshield.com/team-pqshield (2/19), chunk 20/27
+[04:42:29 +5m 13s | pqshield] Extracting: https://pqshield.com/team-pqshield (2/19), chunk 21/27
+[04:42:36 +5m 17s | pqshield] Extracting: https://pqshield.com/team-pqshield (2/19), chunk 22/27
+[04:42:40 +5m 21s | pqshield] Extracting: https://pqshield.com/team-pqshield (2/19), chunk 23/27
+[04:42:47 +5m 28s | pqshield] Extracting: https://pqshield.com/team-pqshield (2/19), chunk 24/27
+[04:42:53 +5m 34s | pqshield] Repaired malformed JSON.
+[04:42:53 +5m 34s | pqshield] Extracting: https://pqshield.com/team-pqshield (2/19), chunk 25/27
+[04:42:57 +5m 38s | pqshield] Extracting: https://pqshield.com/team-pqshield (2/19), chunk 26/27
+[04:43:02 +5m 43s | pqshield] Extracting: https://pqshield.com/team-pqshield (2/19), chunk 27/27
+[04:43:09 +5m 49s | pqshield] Repaired malformed JSON.
+[04:43:09 +5m 49s | pqshield] Reading page (3/19): https://pqshield.com/markets/system-integrators
+[04:43:09 +5m 49s | pqshield] Extracting: https://pqshield.com/markets/system-integrators (3/19), chunk 1/28
+[04:43:11 +5m 50s | pqshield] Extracting: https://pqshield.com/markets/system-integrators (3/19), chunk 2/28
+[04:43:16 +5m 55s | pqshield] Extracting: https://pqshield.com/markets/system-integrators (3/19), chunk 3/28
+[04:43:25 +6m 4s | pqshield] Repaired malformed JSON.
+[04:43:25 +6m 4s | pqshield] Extracting: https://pqshield.com/markets/system-integrators (3/19), chunk 4/28
+[04:43:31 +6m 10s | pqshield] Repaired malformed JSON.
+[04:43:31 +6m 10s | pqshield] Extracting: https://pqshield.com/markets/system-integrators (3/19), chunk 5/28
+[04:43:36 +6m 15s | pqshield] Repaired malformed JSON.
+[04:43:36 +6m 15s | pqshield] Extracting: https://pqshield.com/markets/system-integrators (3/19), chunk 6/28
+[04:43:46 +6m 23s | pqshield] Repaired malformed JSON.
+[04:43:46 +6m 23s | pqshield] Extracting: https://pqshield.com/markets/system-integrators (3/19), chunk 7/28
+[04:43:54 +6m 31s | pqshield] Repaired malformed JSON.
+[04:43:54 +6m 31s | pqshield] Extracting: https://pqshield.com/markets/system-integrators (3/19), chunk 8/28
+[04:43:59 +6m 37s | pqshield] Repaired malformed JSON.
+[04:43:59 +6m 37s | pqshield] Extracting: https://pqshield.com/markets/system-integrators (3/19), chunk 9/28
+[04:44:06 +6m 44s | pqshield] Extracting: https://pqshield.com/markets/system-integrators (3/19), chunk 10/28
+[04:44:13 +6m 51s | pqshield] Repaired malformed JSON.
+[04:44:13 +6m 51s | pqshield] Extracting: https://pqshield.com/markets/system-integrators (3/19), chunk 11/28
+[04:44:24 +6m 59s | pqshield] Repaired malformed JSON.
+[04:44:24 +6m 59s | pqshield] Extracting: https://pqshield.com/markets/system-integrators (3/19), chunk 12/28
+[04:44:25 +7m 1s | pqshield] Extracting: https://pqshield.com/markets/system-integrators (3/19), chunk 13/28
+[04:44:31 +7m 6s | pqshield] Repaired malformed JSON.
+[04:44:31 +7m 6s | pqshield] Extracting: https://pqshield.com/markets/system-integrators (3/19), chunk 14/28
+[04:44:38 +7m 13s | pqshield] Repaired malformed JSON.
+[04:44:38 +7m 13s | pqshield] Extracting: https://pqshield.com/markets/system-integrators (3/19), chunk 15/28
+[04:44:42 +7m 17s | pqshield] Extracting: https://pqshield.com/markets/system-integrators (3/19), chunk 16/28
+[04:44:46 +7m 22s | pqshield] Extracting: https://pqshield.com/markets/system-integrators (3/19), chunk 17/28
+[04:44:57 +7m 30s | pqshield] Extracting: https://pqshield.com/markets/system-integrators (3/19), chunk 18/28
+[04:45:03 +7m 36s | pqshield] Repaired malformed JSON.
+[04:45:03 +7m 36s | pqshield] Extracting: https://pqshield.com/markets/system-integrators (3/19), chunk 19/28
+[04:45:07 +7m 40s | pqshield] Extracting: https://pqshield.com/markets/system-integrators (3/19), chunk 20/28
+[04:45:12 +7m 44s | pqshield] Extracting: https://pqshield.com/markets/system-integrators (3/19), chunk 21/28
+[04:45:16 +7m 48s | pqshield] Extracting: https://pqshield.com/markets/system-integrators (3/19), chunk 22/28
+[04:45:19 +7m 52s | pqshield] Extracting: https://pqshield.com/markets/system-integrators (3/19), chunk 23/28
+[04:45:29 +8m 0s | pqshield] Repaired malformed JSON.
+[04:45:29 +8m 0s | pqshield] Extracting: https://pqshield.com/markets/system-integrators (3/19), chunk 24/28
+[04:45:36 +8m 6s | pqshield] Repaired malformed JSON.
+[04:45:36 +8m 6s | pqshield] Extracting: https://pqshield.com/markets/system-integrators (3/19), chunk 25/28
+[04:45:43 +8m 13s | pqshield] Repaired malformed JSON.
+[04:45:43 +8m 13s | pqshield] Extracting: https://pqshield.com/markets/system-integrators (3/19), chunk 26/28
+[04:45:47 +8m 17s | pqshield] Extracting: https://pqshield.com/markets/system-integrators (3/19), chunk 27/28
+[04:45:51 +8m 22s | pqshield] Extracting: https://pqshield.com/markets/system-integrators (3/19), chunk 28/28
+[04:45:56 +8m 27s | pqshield] Repaired malformed JSON.
+[04:45:56 +8m 27s | pqshield] Reading page (4/19): https://pqshield.com/products/product-security
+[04:45:56 +8m 27s | pqshield] Extracting: https://pqshield.com/products/product-security (4/19), chunk 1/28
+[04:45:58 +8m 28s | pqshield] Extracting: https://pqshield.com/products/product-security (4/19), chunk 2/28
+[04:46:04 +8m 31s | pqshield] Extracting: https://pqshield.com/products/product-security (4/19), chunk 3/28
+[04:46:09 +8m 37s | pqshield] Repaired malformed JSON.
+[04:46:09 +8m 37s | pqshield] Extracting: https://pqshield.com/products/product-security (4/19), chunk 4/28
+[04:46:16 +8m 44s | pqshield] Repaired malformed JSON.
+[04:46:16 +8m 44s | pqshield] Extracting: https://pqshield.com/products/product-security (4/19), chunk 5/28
+[04:46:21 +8m 49s | pqshield] Repaired malformed JSON.
+[04:46:21 +8m 49s | pqshield] Extracting: https://pqshield.com/products/product-security (4/19), chunk 6/28
+[04:46:27 +8m 55s | pqshield] Repaired malformed JSON.
+[04:46:27 +8m 55s | pqshield] Extracting: https://pqshield.com/products/product-security (4/19), chunk 7/28
+[04:46:38 +9m 3s | pqshield] Repaired malformed JSON.
+[04:46:38 +9m 3s | pqshield] Extracting: https://pqshield.com/products/product-security (4/19), chunk 8/28
+[04:46:44 +9m 9s | pqshield] Repaired malformed JSON.
+[04:46:44 +9m 9s | pqshield] Extracting: https://pqshield.com/products/product-security (4/19), chunk 9/28
+[04:46:50 +9m 15s | pqshield] Extracting: https://pqshield.com/products/product-security (4/19), chunk 10/28
+[04:46:56 +9m 21s | pqshield] Repaired malformed JSON.
+[04:46:56 +9m 21s | pqshield] Extracting: https://pqshield.com/products/product-security (4/19), chunk 11/28
+[04:47:02 +9m 27s | pqshield] Repaired malformed JSON.
+[04:47:02 +9m 27s | pqshield] Extracting: https://pqshield.com/products/product-security (4/19), chunk 12/28
+[04:47:03 +9m 29s | pqshield] Extracting: https://pqshield.com/products/product-security (4/19), chunk 13/28
+[04:47:13 +9m 36s | pqshield] Repaired malformed JSON.
+[04:47:13 +9m 36s | pqshield] Extracting: https://pqshield.com/products/product-security (4/19), chunk 14/28
+[04:47:20 +9m 43s | pqshield] Repaired malformed JSON.
+[04:47:20 +9m 43s | pqshield] Extracting: https://pqshield.com/products/product-security (4/19), chunk 15/28
+[04:47:25 +9m 47s | pqshield] Extracting: https://pqshield.com/products/product-security (4/19), chunk 16/28
+[04:47:28 +9m 50s | pqshield] Extracting: https://pqshield.com/products/product-security (4/19), chunk 17/28
+[04:47:32 +9m 55s | pqshield] Extracting: https://pqshield.com/products/product-security (4/19), chunk 18/28
+[04:47:37 +10m 0s | pqshield] Extracting: https://pqshield.com/products/product-security (4/19), chunk 19/28
+[04:47:42 +10m 4s | pqshield] Extracting: https://pqshield.com/products/product-security (4/19), chunk 20/28
+[04:47:46 +10m 8s | pqshield] Extracting: https://pqshield.com/products/product-security (4/19), chunk 21/28
+[04:47:49 +10m 11s | pqshield] Extracting: https://pqshield.com/products/product-security (4/19), chunk 22/28
+[04:47:54 +10m 16s | pqshield] Extracting: https://pqshield.com/products/product-security (4/19), chunk 23/28
+[04:47:58 +10m 20s | pqshield] Extracting: https://pqshield.com/products/product-security (4/19), chunk 24/28
+[04:48:07 +10m 26s | pqshield] Repaired malformed JSON.
+[04:48:07 +10m 26s | pqshield] Extracting: https://pqshield.com/products/product-security (4/19), chunk 25/28
+[04:48:14 +10m 33s | pqshield] Repaired malformed JSON.
+[04:48:14 +10m 33s | pqshield] Extracting: https://pqshield.com/products/product-security (4/19), chunk 26/28
+[04:48:18 +10m 36s | pqshield] Extracting: https://pqshield.com/products/product-security (4/19), chunk 27/28
+[04:48:21 +10m 40s | pqshield] Extracting: https://pqshield.com/products/product-security (4/19), chunk 28/28
+[04:48:30 +10m 49s | pqshield] Repaired malformed JSON.
+[04:48:30 +10m 49s | pqshield] Reading page (5/19): https://pqshield.com/products/pqc-cor
+[04:48:30 +10m 49s | pqshield] Extracting: https://pqshield.com/products/pqc-cor (5/19), chunk 1/29
+[04:48:31 +10m 50s | pqshield] Extracting: https://pqshield.com/products/pqc-cor (5/19), chunk 2/29
+[04:48:35 +10m 54s | pqshield] Extracting: https://pqshield.com/products/pqc-cor (5/19), chunk 3/29
+[04:48:45 +11m 2s | pqshield] Repaired malformed JSON.
+[04:48:45 +11m 2s | pqshield] Extracting: https://pqshield.com/products/pqc-cor (5/19), chunk 4/29
+[04:48:51 +11m 8s | pqshield] Repaired malformed JSON.
+[04:48:51 +11m 8s | pqshield] Extracting: https://pqshield.com/products/pqc-cor (5/19), chunk 5/29
+[04:48:59 +11m 15s | pqshield] Repaired malformed JSON.
+[04:48:59 +11m 15s | pqshield] Extracting: https://pqshield.com/products/pqc-cor (5/19), chunk 6/29
+[04:49:04 +11m 21s | pqshield] Repaired malformed JSON.
+[04:49:04 +11m 21s | pqshield] Extracting: https://pqshield.com/products/pqc-cor (5/19), chunk 7/29
+[04:49:09 +11m 26s | pqshield] Repaired malformed JSON.
+[04:49:09 +11m 26s | pqshield] Extracting: https://pqshield.com/products/pqc-cor (5/19), chunk 8/29
+[04:49:18 +11m 31s | pqshield] Repaired malformed JSON.
+[04:49:18 +11m 31s | pqshield] Extracting: https://pqshield.com/products/pqc-cor (5/19), chunk 9/29
+[04:49:23 +11m 37s | pqshield] Repaired malformed JSON.
+[04:49:23 +11m 37s | pqshield] Extracting: https://pqshield.com/products/pqc-cor (5/19), chunk 10/29
+[04:49:29 +11m 43s | pqshield] Repaired malformed JSON.
+[04:49:29 +11m 43s | pqshield] Extracting: https://pqshield.com/products/pqc-cor (5/19), chunk 11/29
+[04:49:36 +11m 49s | pqshield] Repaired malformed JSON.
+[04:49:36 +11m 49s | pqshield] Extracting: https://pqshield.com/products/pqc-cor (5/19), chunk 12/29
+[04:49:37 +11m 51s | pqshield] Extracting: https://pqshield.com/products/pqc-cor (5/19), chunk 13/29
+[04:49:48 +11m 59s | pqshield] Repaired malformed JSON.
+[04:49:48 +11m 59s | pqshield] Extracting: https://pqshield.com/products/pqc-cor (5/19), chunk 14/29
+[04:49:54 +12m 5s | pqshield] Repaired malformed JSON.
+[04:49:54 +12m 5s | pqshield] Extracting: https://pqshield.com/products/pqc-cor (5/19), chunk 15/29
+[04:49:57 +12m 9s | pqshield] Extracting: https://pqshield.com/products/pqc-cor (5/19), chunk 16/29
+[04:50:01 +12m 12s | pqshield] Extracting: https://pqshield.com/products/pqc-cor (5/19), chunk 17/29
+[04:50:05 +12m 16s | pqshield] Extracting: https://pqshield.com/products/pqc-cor (5/19), chunk 18/29
+[04:50:10 +12m 21s | pqshield] Extracting: https://pqshield.com/products/pqc-cor (5/19), chunk 19/29
+[04:50:14 +12m 25s | pqshield] Extracting: https://pqshield.com/products/pqc-cor (5/19), chunk 20/29
+[04:50:17 +12m 28s | pqshield] Extracting: https://pqshield.com/products/pqc-cor (5/19), chunk 21/29
+[04:50:25 +12m 33s | pqshield] Repaired malformed JSON.
+[04:50:25 +12m 33s | pqshield] Extracting: https://pqshield.com/products/pqc-cor (5/19), chunk 22/29
+[04:50:29 +12m 37s | pqshield] Extracting: https://pqshield.com/products/pqc-cor (5/19), chunk 23/29
+[04:50:34 +12m 42s | pqshield] Extracting: https://pqshield.com/products/pqc-cor (5/19), chunk 24/29
+[04:50:38 +12m 46s | pqshield] Extracting: https://pqshield.com/products/pqc-cor (5/19), chunk 25/29
+[04:50:45 +12m 53s | pqshield] Extracting: https://pqshield.com/products/pqc-cor (5/19), chunk 26/29
+[04:50:52 +13m 1s | pqshield] Repaired malformed JSON.
+[04:50:52 +13m 1s | pqshield] Extracting: https://pqshield.com/products/pqc-cor (5/19), chunk 27/29
+[04:50:59 +13m 4s | pqshield] Extracting: https://pqshield.com/products/pqc-cor (5/19), chunk 28/29
+[04:51:02 +13m 8s | pqshield] Extracting: https://pqshield.com/products/pqc-cor (5/19), chunk 29/29
+[04:51:07 +13m 13s | pqshield] Repaired malformed JSON.
+[04:51:07 +13m 13s | pqshield] Reading page (6/19): https://pqshield.com/pqc-transition-roadmaps-and-guidance
+[04:51:07 +13m 13s | pqshield] Extracting: https://pqshield.com/pqc-transition-roadmaps-and-guidance (6/19), chunk 1/35
+[04:51:09 +13m 14s | pqshield] Extracting: https://pqshield.com/pqc-transition-roadmaps-and-guidance (6/19), chunk 2/35
+[04:51:12 +13m 18s | pqshield] Extracting: https://pqshield.com/pqc-transition-roadmaps-and-guidance (6/19), chunk 3/35
+[04:51:18 +13m 24s | pqshield] Repaired malformed JSON.
+[04:51:18 +13m 24s | pqshield] Extracting: https://pqshield.com/pqc-transition-roadmaps-and-guidance (6/19), chunk 4/35
+[04:51:25 +13m 30s | pqshield] Repaired malformed JSON.
+[04:51:25 +13m 30s | pqshield] Extracting: https://pqshield.com/pqc-transition-roadmaps-and-guidance (6/19), chunk 5/35
+[04:51:33 +13m 36s | pqshield] Repaired malformed JSON.
+[04:51:33 +13m 36s | pqshield] Extracting: https://pqshield.com/pqc-transition-roadmaps-and-guidance (6/19), chunk 6/35
+[04:51:39 +13m 42s | pqshield] Repaired malformed JSON.
+[04:51:39 +13m 42s | pqshield] Extracting: https://pqshield.com/pqc-transition-roadmaps-and-guidance (6/19), chunk 7/35
+[04:51:45 +13m 48s | pqshield] Repaired malformed JSON.
+[04:51:45 +13m 48s | pqshield] Extracting: https://pqshield.com/pqc-transition-roadmaps-and-guidance (6/19), chunk 8/35
+[04:51:51 +13m 54s | pqshield] Repaired malformed JSON.
+[04:51:51 +13m 54s | pqshield] Extracting: https://pqshield.com/pqc-transition-roadmaps-and-guidance (6/19), chunk 9/35
+[04:51:56 +13m 59s | pqshield] Repaired malformed JSON.
+[04:51:56 +13m 59s | pqshield] Extracting: https://pqshield.com/pqc-transition-roadmaps-and-guidance (6/19), chunk 10/35
+[04:52:02 +14m 5s | pqshield] Repaired malformed JSON.
+[04:52:02 +14m 5s | pqshield] Extracting: https://pqshield.com/pqc-transition-roadmaps-and-guidance (6/19), chunk 11/35
+[04:52:11 +14m 12s | pqshield] Repaired malformed JSON.
+[04:52:11 +14m 12s | pqshield] Extracting: https://pqshield.com/pqc-transition-roadmaps-and-guidance (6/19), chunk 12/35
+[04:52:15 +14m 15s | pqshield] Extracting: https://pqshield.com/pqc-transition-roadmaps-and-guidance (6/19), chunk 13/35
+[04:52:20 +14m 20s | pqshield] Repaired malformed JSON.
+[04:52:20 +14m 20s | pqshield] Extracting: https://pqshield.com/pqc-transition-roadmaps-and-guidance (6/19), chunk 14/35
+[04:52:25 +14m 26s | pqshield] Repaired malformed JSON.
+[04:52:25 +14m 26s | pqshield] Extracting: https://pqshield.com/pqc-transition-roadmaps-and-guidance (6/19), chunk 15/35
+[04:52:29 +14m 29s | pqshield] Extracting: https://pqshield.com/pqc-transition-roadmaps-and-guidance (6/19), chunk 16/35
+[04:52:36 +14m 36s | pqshield] Extracting: https://pqshield.com/pqc-transition-roadmaps-and-guidance (6/19), chunk 17/35
+[04:52:44 +14m 41s | pqshield] Extracting: https://pqshield.com/pqc-transition-roadmaps-and-guidance (6/19), chunk 18/35
+[04:52:48 +14m 45s | pqshield] Extracting: https://pqshield.com/pqc-transition-roadmaps-and-guidance (6/19), chunk 19/35
+[04:52:52 +14m 49s | pqshield] Extracting: https://pqshield.com/pqc-transition-roadmaps-and-guidance (6/19), chunk 20/35
+[04:52:58 +14m 55s | pqshield] Repaired malformed JSON.
+[04:52:58 +14m 55s | pqshield] Extracting: https://pqshield.com/pqc-transition-roadmaps-and-guidance (6/19), chunk 21/35
+[04:53:03 +15m 0s | pqshield] Repaired malformed JSON.
+[04:53:03 +15m 0s | pqshield] Extracting: https://pqshield.com/pqc-transition-roadmaps-and-guidance (6/19), chunk 22/35
+[04:53:10 +15m 7s | pqshield] Repaired malformed JSON.
+[04:53:10 +15m 7s | pqshield] Extracting: https://pqshield.com/pqc-transition-roadmaps-and-guidance (6/19), chunk 23/35
+[04:53:15 +15m 12s | pqshield] Repaired malformed JSON.
+[04:53:15 +15m 12s | pqshield] Extracting: https://pqshield.com/pqc-transition-roadmaps-and-guidance (6/19), chunk 24/35
+[04:53:25 +15m 19s | pqshield] Repaired malformed JSON.
+[04:53:25 +15m 19s | pqshield] Extracting: https://pqshield.com/pqc-transition-roadmaps-and-guidance (6/19), chunk 25/35
+[04:53:33 +15m 27s | pqshield] Repaired malformed JSON.
+[04:53:33 +15m 27s | pqshield] Extracting: https://pqshield.com/pqc-transition-roadmaps-and-guidance (6/19), chunk 26/35
+[04:53:38 +15m 32s | pqshield] Repaired malformed JSON.
+[04:53:38 +15m 32s | pqshield] Extracting: https://pqshield.com/pqc-transition-roadmaps-and-guidance (6/19), chunk 27/35
+[04:53:45 +15m 39s | pqshield] Repaired malformed JSON.
+[04:53:45 +15m 39s | pqshield] Extracting: https://pqshield.com/pqc-transition-roadmaps-and-guidance (6/19), chunk 28/35
+[04:53:51 +15m 45s | pqshield] Repaired malformed JSON.
+[04:53:51 +15m 45s | pqshield] Extracting: https://pqshield.com/pqc-transition-roadmaps-and-guidance (6/19), chunk 29/35
+[04:53:59 +15m 51s | pqshield] Repaired malformed JSON.
+[04:53:59 +15m 51s | pqshield] Extracting: https://pqshield.com/pqc-transition-roadmaps-and-guidance (6/19), chunk 30/35
+[04:54:04 +15m 56s | pqshield] Repaired malformed JSON.
+[04:54:04 +15m 56s | pqshield] Extracting: https://pqshield.com/pqc-transition-roadmaps-and-guidance (6/19), chunk 31/35
+[04:54:11 +16m 3s | pqshield] Repaired malformed JSON.
+[04:54:11 +16m 3s | pqshield] Extracting: https://pqshield.com/pqc-transition-roadmaps-and-guidance (6/19), chunk 32/35
+[04:54:19 +16m 10s | pqshield] Repaired malformed JSON.
+[04:54:19 +16m 10s | pqshield] Extracting: https://pqshield.com/pqc-transition-roadmaps-and-guidance (6/19), chunk 33/35
+[04:54:22 +16m 14s | pqshield] Extracting: https://pqshield.com/pqc-transition-roadmaps-and-guidance (6/19), chunk 34/35
+[04:54:31 +16m 19s | pqshield] Extracting: https://pqshield.com/pqc-transition-roadmaps-and-guidance (6/19), chunk 35/35
+[04:54:38 +16m 26s | pqshield] Repaired malformed JSON.
+[04:54:38 +16m 26s | pqshield] Reading page (7/19): https://pqshield.com/products/pqf-flx
+[04:54:38 +16m 26s | pqshield] Extracting: https://pqshield.com/products/pqf-flx (7/19), chunk 1/29
+[04:54:39 +16m 27s | pqshield] Extracting: https://pqshield.com/products/pqf-flx (7/19), chunk 2/29
+[04:54:43 +16m 32s | pqshield] Extracting: https://pqshield.com/products/pqf-flx (7/19), chunk 3/29
+[04:54:49 +16m 37s | pqshield] Repaired malformed JSON.
+[04:54:49 +16m 37s | pqshield] Extracting: https://pqshield.com/products/pqf-flx (7/19), chunk 4/29
+[04:54:55 +16m 43s | pqshield] Repaired malformed JSON.
+[04:54:55 +16m 43s | pqshield] Extracting: https://pqshield.com/products/pqf-flx (7/19), chunk 5/29
+[04:55:05 +16m 51s | pqshield] Repaired malformed JSON.
+[04:55:05 +16m 51s | pqshield] Extracting: https://pqshield.com/products/pqf-flx (7/19), chunk 6/29
+[04:55:12 +16m 58s | pqshield] Repaired malformed JSON.
+[04:55:12 +16m 58s | pqshield] Extracting: https://pqshield.com/products/pqf-flx (7/19), chunk 7/29
+[04:55:18 +17m 4s | pqshield] Repaired malformed JSON.
+[04:55:18 +17m 4s | pqshield] Extracting: https://pqshield.com/products/pqf-flx (7/19), chunk 8/29
+[04:55:25 +17m 11s | pqshield] Repaired malformed JSON.
+[04:55:25 +17m 11s | pqshield] Extracting: https://pqshield.com/products/pqf-flx (7/19), chunk 9/29
+[04:55:33 +17m 19s | pqshield] Repaired malformed JSON.
+[04:55:33 +17m 19s | pqshield] Extracting: https://pqshield.com/products/pqf-flx (7/19), chunk 10/29
+[04:55:41 +17m 24s | pqshield] Repaired malformed JSON.
+[04:55:41 +17m 24s | pqshield] Extracting: https://pqshield.com/products/pqf-flx (7/19), chunk 11/29
+[04:55:47 +17m 29s | pqshield] Repaired malformed JSON.
+[04:55:47 +17m 29s | pqshield] Extracting: https://pqshield.com/products/pqf-flx (7/19), chunk 12/29
+[04:55:53 +17m 36s | pqshield] Repaired malformed JSON.
+[04:55:53 +17m 36s | pqshield] Extracting: https://pqshield.com/products/pqf-flx (7/19), chunk 13/29
+[04:55:59 +17m 42s | pqshield] Repaired malformed JSON.
+[04:55:59 +17m 42s | pqshield] Extracting: https://pqshield.com/products/pqf-flx (7/19), chunk 14/29
+[04:56:05 +17m 48s | pqshield] Repaired malformed JSON.
+[04:56:05 +17m 48s | pqshield] Extracting: https://pqshield.com/products/pqf-flx (7/19), chunk 15/29
+[04:56:09 +17m 51s | pqshield] Extracting: https://pqshield.com/products/pqf-flx (7/19), chunk 16/29
+[04:56:15 +17m 55s | pqshield] Extracting: https://pqshield.com/products/pqf-flx (7/19), chunk 17/29
+[04:56:19 +17m 59s | pqshield] Extracting: https://pqshield.com/products/pqf-flx (7/19), chunk 18/29
+[04:56:24 +18m 3s | pqshield] Extracting: https://pqshield.com/products/pqf-flx (7/19), chunk 19/29
+[04:56:29 +18m 8s | pqshield] Extracting: https://pqshield.com/products/pqf-flx (7/19), chunk 20/29
+[04:56:33 +18m 13s | pqshield] Extracting: https://pqshield.com/products/pqf-flx (7/19), chunk 21/29
+[04:56:38 +18m 18s | pqshield] Extracting: https://pqshield.com/products/pqf-flx (7/19), chunk 22/29
+[04:56:39 +18m 19s | pqshield] Extracting: https://pqshield.com/products/pqf-flx (7/19), chunk 23/29
+[04:56:43 +18m 22s | pqshield] Extracting: https://pqshield.com/products/pqf-flx (7/19), chunk 24/29
+[04:56:49 +18m 26s | pqshield] Extracting: https://pqshield.com/products/pqf-flx (7/19), chunk 25/29
+[04:56:57 +18m 33s | pqshield] Repaired malformed JSON.
+[04:56:57 +18m 33s | pqshield] Extracting: https://pqshield.com/products/pqf-flx (7/19), chunk 26/29
+[04:57:06 +18m 43s | pqshield] Repaired malformed JSON.
+[04:57:06 +18m 43s | pqshield] Extracting: https://pqshield.com/products/pqf-flx (7/19), chunk 27/29
+[04:57:10 +18m 46s | pqshield] Extracting: https://pqshield.com/products/pqf-flx (7/19), chunk 28/29
+[04:57:13 +18m 49s | pqshield] Extracting: https://pqshield.com/products/pqf-flx (7/19), chunk 29/29
+[04:57:19 +18m 55s | pqshield] Repaired malformed JSON.
+[04:57:19 +18m 55s | pqshield] Reading page (8/19): https://pqshield.com/products/pqf-inf
+[04:57:19 +18m 55s | pqshield] Extracting: https://pqshield.com/products/pqf-inf (8/19), chunk 1/30
+[04:57:20 +18m 57s | pqshield] Extracting: https://pqshield.com/products/pqf-inf (8/19), chunk 2/30
+[04:57:26 +19m 0s | pqshield] Extracting: https://pqshield.com/products/pqf-inf (8/19), chunk 3/30
+[04:57:35 +19m 9s | pqshield] Repaired malformed JSON.
+[04:57:35 +19m 9s | pqshield] Extracting: https://pqshield.com/products/pqf-inf (8/19), chunk 4/30
+[04:57:40 +19m 14s | pqshield] Repaired malformed JSON.
+[04:57:40 +19m 14s | pqshield] Extracting: https://pqshield.com/products/pqf-inf (8/19), chunk 5/30
+[04:57:47 +19m 21s | pqshield] Repaired malformed JSON.
+[04:57:47 +19m 21s | pqshield] Extracting: https://pqshield.com/products/pqf-inf (8/19), chunk 6/30
+[04:57:52 +19m 26s | pqshield] Repaired malformed JSON.
+[04:57:52 +19m 26s | pqshield] Extracting: https://pqshield.com/products/pqf-inf (8/19), chunk 7/30
+[04:58:03 +19m 34s | pqshield] Repaired malformed JSON.
+[04:58:03 +19m 34s | pqshield] Extracting: https://pqshield.com/products/pqf-inf (8/19), chunk 8/30
+[04:58:11 +19m 41s | pqshield] Repaired malformed JSON.
+[04:58:11 +19m 41s | pqshield] Extracting: https://pqshield.com/products/pqf-inf (8/19), chunk 9/30
+[04:58:16 +19m 47s | pqshield] Repaired malformed JSON.
+[04:58:16 +19m 47s | pqshield] Extracting: https://pqshield.com/products/pqf-inf (8/19), chunk 10/30
+[04:58:23 +19m 54s | pqshield] Repaired malformed JSON.
+[04:58:23 +19m 54s | pqshield] Extracting: https://pqshield.com/products/pqf-inf (8/19), chunk 11/30
+[04:58:31 +20m 2s | pqshield] Repaired malformed JSON.
+[04:58:31 +20m 2s | pqshield] Extracting: https://pqshield.com/products/pqf-inf (8/19), chunk 12/30
+[04:58:36 +20m 3s | pqshield] Extracting: https://pqshield.com/products/pqf-inf (8/19), chunk 13/30
+[04:58:43 +20m 10s | pqshield] Repaired malformed JSON.
+[04:58:43 +20m 10s | pqshield] Extracting: https://pqshield.com/products/pqf-inf (8/19), chunk 14/30
+[04:58:48 +20m 16s | pqshield] Repaired malformed JSON.
+[04:58:48 +20m 16s | pqshield] Extracting: https://pqshield.com/products/pqf-inf (8/19), chunk 15/30
+[04:58:51 +20m 19s | pqshield] Extracting: https://pqshield.com/products/pqf-inf (8/19), chunk 16/30
+[04:58:58 +20m 25s | pqshield] Extracting: https://pqshield.com/products/pqf-inf (8/19), chunk 17/30
+[04:59:01 +20m 29s | pqshield] Extracting: https://pqshield.com/products/pqf-inf (8/19), chunk 18/30
+[04:59:05 +20m 33s | pqshield] Extracting: https://pqshield.com/products/pqf-inf (8/19), chunk 19/30
+[04:59:11 +20m 36s | pqshield] Extracting: https://pqshield.com/products/pqf-inf (8/19), chunk 20/30
+[04:59:15 +20m 40s | pqshield] Extracting: https://pqshield.com/products/pqf-inf (8/19), chunk 21/30
+[04:59:20 +20m 45s | pqshield] Extracting: https://pqshield.com/products/pqf-inf (8/19), chunk 22/30
+[04:59:24 +20m 49s | pqshield] Extracting: https://pqshield.com/products/pqf-inf (8/19), chunk 23/30
+[04:59:29 +20m 54s | pqshield] Extracting: https://pqshield.com/products/pqf-inf (8/19), chunk 24/30
+[04:59:33 +20m 58s | pqshield] Extracting: https://pqshield.com/products/pqf-inf (8/19), chunk 25/30
+[04:59:37 +21m 2s | pqshield] Extracting: https://pqshield.com/products/pqf-inf (8/19), chunk 26/30
+[04:59:46 +21m 8s | pqshield] Repaired malformed JSON.
+[04:59:46 +21m 8s | pqshield] Extracting: https://pqshield.com/products/pqf-inf (8/19), chunk 27/30
+[04:59:55 +21m 17s | pqshield] Repaired malformed JSON.
+[04:59:55 +21m 17s | pqshield] Extracting: https://pqshield.com/products/pqf-inf (8/19), chunk 28/30
+[04:59:59 +21m 21s | pqshield] Extracting: https://pqshield.com/products/pqf-inf (8/19), chunk 29/30
+[05:00:02 +21m 24s | pqshield] Extracting: https://pqshield.com/products/pqf-inf (8/19), chunk 30/30
+[05:00:08 +21m 31s | pqshield] Repaired malformed JSON.
+[05:00:08 +21m 31s | pqshield] Reading page (9/19): https://pqshield.com/products/pqp-cop
+[05:00:08 +21m 31s | pqshield] Extracting: https://pqshield.com/products/pqp-cop (9/19), chunk 1/29
+[05:00:10 +21m 32s | pqshield] Extracting: https://pqshield.com/products/pqp-cop (9/19), chunk 2/29
+[05:00:14 +21m 36s | pqshield] Extracting: https://pqshield.com/products/pqp-cop (9/19), chunk 3/29
+[05:00:24 +21m 44s | pqshield] Repaired malformed JSON.
+[05:00:24 +21m 44s | pqshield] Extracting: https://pqshield.com/products/pqp-cop (9/19), chunk 4/29
+[05:00:31 +21m 50s | pqshield] Repaired malformed JSON.
+[05:00:31 +21m 50s | pqshield] Extracting: https://pqshield.com/products/pqp-cop (9/19), chunk 5/29
+[05:00:37 +21m 56s | pqshield] Repaired malformed JSON.
+[05:00:37 +21m 56s | pqshield] Extracting: https://pqshield.com/products/pqp-cop (9/19), chunk 6/29
+[05:00:45 +22m 5s | pqshield] Repaired malformed JSON.
+[05:00:45 +22m 5s | pqshield] Extracting: https://pqshield.com/products/pqp-cop (9/19), chunk 7/29
+[05:00:56 +22m 13s | pqshield] Repaired malformed JSON.
+[05:00:56 +22m 13s | pqshield] Extracting: https://pqshield.com/products/pqp-cop (9/19), chunk 8/29
+[05:01:04 +22m 20s | pqshield] Repaired malformed JSON.
+[05:01:04 +22m 20s | pqshield] Extracting: https://pqshield.com/products/pqp-cop (9/19), chunk 9/29
+[05:01:11 +22m 28s | pqshield] Repaired malformed JSON.
+[05:01:11 +22m 28s | pqshield] Extracting: https://pqshield.com/products/pqp-cop (9/19), chunk 10/29
+[05:01:17 +22m 34s | pqshield] Repaired malformed JSON.
+[05:01:17 +22m 34s | pqshield] Extracting: https://pqshield.com/products/pqp-cop (9/19), chunk 11/29
+[05:01:23 +22m 40s | pqshield] Repaired malformed JSON.
+[05:01:23 +22m 40s | pqshield] Extracting: https://pqshield.com/products/pqp-cop (9/19), chunk 12/29
+[05:01:27 +22m 44s | pqshield] Extracting: https://pqshield.com/products/pqp-cop (9/19), chunk 13/29
+[05:01:36 +22m 50s | pqshield] Repaired malformed JSON.
+[05:01:36 +22m 50s | pqshield] Extracting: https://pqshield.com/products/pqp-cop (9/19), chunk 14/29
+[05:01:43 +22m 57s | pqshield] Repaired malformed JSON.
+[05:01:43 +22m 57s | pqshield] Extracting: https://pqshield.com/products/pqp-cop (9/19), chunk 15/29
+[05:01:46 +23m 0s | pqshield] Extracting: https://pqshield.com/products/pqp-cop (9/19), chunk 16/29
+[05:01:50 +23m 4s | pqshield] Extracting: https://pqshield.com/products/pqp-cop (9/19), chunk 17/29
+[05:01:54 +23m 8s | pqshield] Extracting: https://pqshield.com/products/pqp-cop (9/19), chunk 18/29
+[05:01:58 +23m 12s | pqshield] Extracting: https://pqshield.com/products/pqp-cop (9/19), chunk 19/29
+[05:02:07 +23m 18s | pqshield] Extracting: https://pqshield.com/products/pqp-cop (9/19), chunk 20/29
+[05:02:12 +23m 23s | pqshield] Extracting: https://pqshield.com/products/pqp-cop (9/19), chunk 21/29
+[05:02:18 +23m 29s | pqshield] Extracting: https://pqshield.com/products/pqp-cop (9/19), chunk 22/29
+[05:02:19 +23m 30s | pqshield] Extracting: https://pqshield.com/products/pqp-cop (9/19), chunk 23/29
+[05:02:24 +23m 35s | pqshield] Extracting: https://pqshield.com/products/pqp-cop (9/19), chunk 24/29
+[05:02:27 +23m 39s | pqshield] Extracting: https://pqshield.com/products/pqp-cop (9/19), chunk 25/29
+[05:02:36 +23m 47s | pqshield] Repaired malformed JSON.
+[05:02:36 +23m 47s | pqshield] Extracting: https://pqshield.com/products/pqp-cop (9/19), chunk 26/29
+[05:02:46 +23m 54s | pqshield] Repaired malformed JSON.
+[05:02:46 +23m 54s | pqshield] Extracting: https://pqshield.com/products/pqp-cop (9/19), chunk 27/29
+[05:02:49 +23m 57s | pqshield] Extracting: https://pqshield.com/products/pqp-cop (9/19), chunk 28/29
+[05:02:55 +24m 3s | pqshield] Extracting: https://pqshield.com/products/pqp-cop (9/19), chunk 29/29
+[05:03:01 +24m 10s | pqshield] Repaired malformed JSON.
+[05:03:01 +24m 10s | pqshield] Reading page (10/19): https://pqshield.com/products/pqm-cor
+[05:03:01 +24m 10s | pqshield] Extracting: https://pqshield.com/products/pqm-cor (10/19), chunk 1/30
+[05:03:03 +24m 11s | pqshield] Extracting: https://pqshield.com/products/pqm-cor (10/19), chunk 2/30
+[05:03:07 +24m 15s | pqshield] Extracting: https://pqshield.com/products/pqm-cor (10/19), chunk 3/30
+[05:03:17 +24m 22s | pqshield] Repaired malformed JSON.
+[05:03:17 +24m 22s | pqshield] Extracting: https://pqshield.com/products/pqm-cor (10/19), chunk 4/30
+[05:03:23 +24m 28s | pqshield] Repaired malformed JSON.
+[05:03:23 +24m 28s | pqshield] Extracting: https://pqshield.com/products/pqm-cor (10/19), chunk 5/30
+[05:03:32 +24m 37s | pqshield] Repaired malformed JSON.
+[05:03:32 +24m 37s | pqshield] Extracting: https://pqshield.com/products/pqm-cor (10/19), chunk 6/30
+[05:03:38 +24m 43s | pqshield] Repaired malformed JSON.
+[05:03:38 +24m 43s | pqshield] Extracting: https://pqshield.com/products/pqm-cor (10/19), chunk 7/30
+[05:03:44 +24m 49s | pqshield] Repaired malformed JSON.
+[05:03:44 +24m 49s | pqshield] Extracting: https://pqshield.com/products/pqm-cor (10/19), chunk 8/30
+[05:03:53 +24m 55s | pqshield] Repaired malformed JSON.
+[05:03:53 +24m 55s | pqshield] Extracting: https://pqshield.com/products/pqm-cor (10/19), chunk 9/30
+[05:04:00 +25m 3s | pqshield] Repaired malformed JSON.
+[05:04:00 +25m 3s | pqshield] Extracting: https://pqshield.com/products/pqm-cor (10/19), chunk 10/30
+[05:04:06 +25m 8s | pqshield] Repaired malformed JSON.
+[05:04:06 +25m 8s | pqshield] Extracting: https://pqshield.com/products/pqm-cor (10/19), chunk 11/30
+[05:04:14 +25m 16s | pqshield] Repaired malformed JSON.
+[05:04:14 +25m 16s | pqshield] Extracting: https://pqshield.com/products/pqm-cor (10/19), chunk 12/30
+[05:04:15 +25m 18s | pqshield] Extracting: https://pqshield.com/products/pqm-cor (10/19), chunk 13/30
+[05:04:22 +25m 25s | pqshield] Repaired malformed JSON.
+[05:04:22 +25m 25s | pqshield] Extracting: https://pqshield.com/products/pqm-cor (10/19), chunk 14/30
+[05:04:30 +25m 30s | pqshield] Repaired malformed JSON.
+[05:04:30 +25m 30s | pqshield] Extracting: https://pqshield.com/products/pqm-cor (10/19), chunk 15/30
+[05:04:34 +25m 34s | pqshield] Extracting: https://pqshield.com/products/pqm-cor (10/19), chunk 16/30
+[05:04:40 +25m 40s | pqshield] Extracting: https://pqshield.com/products/pqm-cor (10/19), chunk 17/30
+[05:04:44 +25m 44s | pqshield] Extracting: https://pqshield.com/products/pqm-cor (10/19), chunk 18/30
+[05:04:48 +25m 48s | pqshield] Extracting: https://pqshield.com/products/pqm-cor (10/19), chunk 19/30
+[05:04:55 +25m 55s | pqshield] Extracting: https://pqshield.com/products/pqm-cor (10/19), chunk 20/30
+[05:05:03 +26m 0s | pqshield] Extracting: https://pqshield.com/products/pqm-cor (10/19), chunk 21/30
+[05:05:08 +26m 5s | pqshield] Extracting: https://pqshield.com/products/pqm-cor (10/19), chunk 22/30
+[05:05:14 +26m 11s | pqshield] Extracting: https://pqshield.com/products/pqm-cor (10/19), chunk 23/30
+[05:05:18 +26m 15s | pqshield] Extracting: https://pqshield.com/products/pqm-cor (10/19), chunk 24/30
+[05:05:22 +26m 19s | pqshield] Extracting: https://pqshield.com/products/pqm-cor (10/19), chunk 25/30
+[05:05:29 +26m 26s | pqshield] Repaired malformed JSON.
+[05:05:29 +26m 26s | pqshield] Extracting: https://pqshield.com/products/pqm-cor (10/19), chunk 26/30
+[05:05:37 +26m 31s | pqshield] Repaired malformed JSON.
+[05:05:37 +26m 31s | pqshield] Extracting: https://pqshield.com/products/pqm-cor (10/19), chunk 27/30
+[05:05:45 +26m 39s | pqshield] Repaired malformed JSON.
+[05:05:45 +26m 39s | pqshield] Extracting: https://pqshield.com/products/pqm-cor (10/19), chunk 28/30
+[05:05:50 +26m 44s | pqshield] Extracting: https://pqshield.com/products/pqm-cor (10/19), chunk 29/30
+[05:05:54 +26m 49s | pqshield] Extracting: https://pqshield.com/products/pqm-cor (10/19), chunk 30/30
+[05:06:01 +26m 55s | pqshield] Repaired malformed JSON.
+[05:06:01 +26m 55s | pqshield] Reading page (11/19): https://pqshield.com
+[05:06:01 +26m 55s | pqshield] Extracting: https://pqshield.com (11/19), chunk 1/65
+[05:06:04 +26m 58s | pqshield] Extracting: https://pqshield.com (11/19), chunk 2/65
+[05:06:16 +27m 8s | pqshield] Repaired malformed JSON.
+[05:06:16 +27m 8s | pqshield] Extracting: https://pqshield.com (11/19), chunk 3/65
+[05:06:22 +27m 14s | pqshield] Repaired malformed JSON.
+[05:06:22 +27m 14s | pqshield] Extracting: https://pqshield.com (11/19), chunk 4/65
+[05:06:29 +27m 20s | pqshield] Repaired malformed JSON.
+[05:06:29 +27m 20s | pqshield] Extracting: https://pqshield.com (11/19), chunk 5/65
+[05:06:35 +27m 26s | pqshield] Repaired malformed JSON.
+[05:06:35 +27m 26s | pqshield] Extracting: https://pqshield.com (11/19), chunk 6/65
+[05:06:43 +27m 34s | pqshield] Repaired malformed JSON.
+[05:06:43 +27m 34s | pqshield] Extracting: https://pqshield.com (11/19), chunk 7/65
+[05:06:51 +27m 40s | pqshield] Repaired malformed JSON.
+[05:06:51 +27m 40s | pqshield] Extracting: https://pqshield.com (11/19), chunk 8/65
+[05:06:58 +27m 46s | pqshield] Repaired malformed JSON.
+[05:06:58 +27m 46s | pqshield] Extracting: https://pqshield.com (11/19), chunk 9/65
+[05:07:06 +27m 54s | pqshield] Repaired malformed JSON.
+[05:07:06 +27m 54s | pqshield] Extracting: https://pqshield.com (11/19), chunk 10/65
+[05:07:08 +27m 56s | pqshield] Extracting: https://pqshield.com (11/19), chunk 11/65
+[05:07:14 +28m 2s | pqshield] Repaired malformed JSON.
+[05:07:14 +28m 2s | pqshield] Extracting: https://pqshield.com (11/19), chunk 12/65
+[05:07:22 +28m 8s | pqshield] Repaired malformed JSON.
+[05:07:22 +28m 8s | pqshield] Extracting: https://pqshield.com (11/19), chunk 13/65
+[05:07:26 +28m 11s | pqshield] Extracting: https://pqshield.com (11/19), chunk 14/65
+[05:07:29 +28m 14s | pqshield] Extracting: https://pqshield.com (11/19), chunk 15/65
+[05:07:32 +28m 18s | pqshield] Extracting: https://pqshield.com (11/19), chunk 16/65
+[05:07:38 +28m 23s | pqshield] Repaired malformed JSON.
+[05:07:38 +28m 23s | pqshield] Extracting: https://pqshield.com (11/19), chunk 17/65
+[05:07:43 +28m 29s | pqshield] Extracting: https://pqshield.com (11/19), chunk 18/65
+[05:07:48 +28m 33s | pqshield] Extracting: https://pqshield.com (11/19), chunk 19/65
+[05:08:00 +28m 43s | pqshield] Repaired malformed JSON.
+[05:08:00 +28m 43s | pqshield] Extracting: https://pqshield.com (11/19), chunk 20/65
+[05:08:07 +28m 50s | pqshield] Repaired malformed JSON.
+[05:08:07 +28m 50s | pqshield] Extracting: https://pqshield.com (11/19), chunk 21/65
+[05:08:14 +28m 57s | pqshield] Repaired malformed JSON.
+[05:08:14 +28m 57s | pqshield] Extracting: https://pqshield.com (11/19), chunk 22/65
+[05:08:21 +29m 4s | pqshield] Repaired malformed JSON.
+[05:08:21 +29m 4s | pqshield] Extracting: https://pqshield.com (11/19), chunk 23/65
+[05:08:33 +29m 13s | pqshield] Repaired malformed JSON.
+[05:08:33 +29m 13s | pqshield] Extracting: https://pqshield.com (11/19), chunk 24/65
+[05:08:40 +29m 19s | pqshield] Repaired malformed JSON.
+[05:08:40 +29m 19s | pqshield] Extracting: https://pqshield.com (11/19), chunk 25/65
+[05:08:44 +29m 24s | pqshield] Extracting: https://pqshield.com (11/19), chunk 26/65
+[05:08:47 +29m 27s | pqshield] Extracting: https://pqshield.com (11/19), chunk 27/65
+[05:08:49 +29m 29s | pqshield] Extracting: https://pqshield.com (11/19), chunk 28/65
+[05:08:50 +29m 30s | pqshield] Extracting: https://pqshield.com (11/19), chunk 29/65
+[05:08:52 +29m 32s | pqshield] Extracting: https://pqshield.com (11/19), chunk 30/65
+[05:08:54 +29m 33s | pqshield] Extracting: https://pqshield.com (11/19), chunk 31/65
+[05:08:56 +29m 36s | pqshield] Extracting: https://pqshield.com (11/19), chunk 32/65
+[05:08:58 +29m 37s | pqshield] Extracting: https://pqshield.com (11/19), chunk 33/65
+[05:08:59 +29m 39s | pqshield] Extracting: https://pqshield.com (11/19), chunk 34/65
+[05:09:01 +29m 41s | pqshield] Extracting: https://pqshield.com (11/19), chunk 35/65
+[05:09:03 +29m 43s | pqshield] Extracting: https://pqshield.com (11/19), chunk 36/65
+[05:09:08 +29m 44s | pqshield] Extracting: https://pqshield.com (11/19), chunk 37/65
+[05:09:09 +29m 46s | pqshield] Extracting: https://pqshield.com (11/19), chunk 38/65
+[05:09:11 +29m 48s | pqshield] Extracting: https://pqshield.com (11/19), chunk 39/65
+[05:09:15 +29m 52s | pqshield] Extracting: https://pqshield.com (11/19), chunk 40/65
+[05:09:20 +29m 57s | pqshield] Repaired malformed JSON.
+[05:09:20 +29m 57s | pqshield] Extracting: https://pqshield.com (11/19), chunk 41/65
+[05:09:27 +30m 3s | pqshield] Repaired malformed JSON.
+[05:09:27 +30m 3s | pqshield] Extracting: https://pqshield.com (11/19), chunk 42/65
+[05:09:31 +30m 7s | pqshield] Extracting: https://pqshield.com (11/19), chunk 43/65
+[05:09:37 +30m 14s | pqshield] Repaired malformed JSON.
+[05:09:37 +30m 14s | pqshield] Extracting: https://pqshield.com (11/19), chunk 44/65
+[05:09:48 +30m 22s | pqshield] Repaired malformed JSON.
+[05:09:48 +30m 22s | pqshield] Extracting: https://pqshield.com (11/19), chunk 45/65
+[05:09:52 +30m 26s | pqshield] Extracting: https://pqshield.com (11/19), chunk 46/65
+[05:09:57 +30m 31s | pqshield] Repaired malformed JSON.
+[05:09:57 +30m 31s | pqshield] Extracting: https://pqshield.com (11/19), chunk 47/65
+[05:10:00 +30m 34s | pqshield] Extracting: https://pqshield.com (11/19), chunk 48/65
+[05:10:02 +30m 36s | pqshield] Extracting: https://pqshield.com (11/19), chunk 49/65
+[05:10:07 +30m 41s | pqshield] Extracting: https://pqshield.com (11/19), chunk 50/65
+[05:10:13 +30m 47s | pqshield] Repaired malformed JSON.
+[05:10:13 +30m 47s | pqshield] Extracting: https://pqshield.com (11/19), chunk 51/65
+[05:10:23 +30m 54s | pqshield] Extracting: https://pqshield.com (11/19), chunk 52/65
+[05:10:29 +31m 0s | pqshield] Extracting: https://pqshield.com (11/19), chunk 53/65
+[05:10:33 +31m 4s | pqshield] Extracting: https://pqshield.com (11/19), chunk 54/65
+[05:10:41 +31m 12s | pqshield] Extracting: https://pqshield.com (11/19), chunk 55/65
+[05:10:45 +31m 16s | pqshield] Extracting: https://pqshield.com (11/19), chunk 56/65
+[05:10:56 +31m 24s | pqshield] Repaired malformed JSON.
+[05:10:56 +31m 24s | pqshield] Extracting: https://pqshield.com (11/19), chunk 57/65
+[05:11:05 +31m 33s | pqshield] Extracting: https://pqshield.com (11/19), chunk 58/65
+[05:11:11 +31m 39s | pqshield] Repaired malformed JSON.
+[05:11:11 +31m 39s | pqshield] Extracting: https://pqshield.com (11/19), chunk 59/65
+[05:11:20 +31m 48s | pqshield] Repaired malformed JSON.
+[05:11:20 +31m 48s | pqshield] Extracting: https://pqshield.com (11/19), chunk 60/65
+[05:11:23 +31m 51s | pqshield] Extracting: https://pqshield.com (11/19), chunk 61/65
+[05:11:32 +31m 57s | pqshield] Repaired malformed JSON.
+[05:11:32 +31m 57s | pqshield] Extracting: https://pqshield.com (11/19), chunk 62/65
+[05:11:38 +32m 3s | pqshield] Repaired malformed JSON.
+[05:11:38 +32m 3s | pqshield] Extracting: https://pqshield.com (11/19), chunk 63/65
+[05:11:44 +32m 9s | pqshield] Extracting: https://pqshield.com (11/19), chunk 64/65
+[05:11:47 +32m 12s | pqshield] Extracting: https://pqshield.com (11/19), chunk 65/65
+[05:11:55 +32m 20s | pqshield] Repaired malformed JSON.
+[05:11:55 +32m 20s | pqshield] Reading page (12/19): https://pqshield.com/products
+[05:11:55 +32m 20s | pqshield] Extracting: https://pqshield.com/products (12/19), chunk 1/32
+[05:11:58 +32m 23s | pqshield] Extracting: https://pqshield.com/products (12/19), chunk 2/32
+[05:12:10 +32m 32s | pqshield] Repaired malformed JSON.
+[05:12:10 +32m 32s | pqshield] Extracting: https://pqshield.com/products (12/19), chunk 3/32
+[05:12:16 +32m 38s | pqshield] Repaired malformed JSON.
+[05:12:16 +32m 38s | pqshield] Extracting: https://pqshield.com/products (12/19), chunk 4/32
+[05:12:22 +32m 44s | pqshield] Repaired malformed JSON.
+[05:12:22 +32m 44s | pqshield] Extracting: https://pqshield.com/products (12/19), chunk 5/32
+[05:12:29 +32m 51s | pqshield] Extracting: https://pqshield.com/products (12/19), chunk 6/32
+[05:12:34 +32m 56s | pqshield] Repaired malformed JSON.
+[05:12:34 +32m 56s | pqshield] Extracting: https://pqshield.com/products (12/19), chunk 7/32
+[05:12:43 +33m 2s | pqshield] Repaired malformed JSON.
+[05:12:43 +33m 2s | pqshield] Extracting: https://pqshield.com/products (12/19), chunk 8/32
+[05:12:49 +33m 9s | pqshield] Repaired malformed JSON.
+[05:12:49 +33m 9s | pqshield] Extracting: https://pqshield.com/products (12/19), chunk 9/32
+[05:12:55 +33m 15s | pqshield] Repaired malformed JSON.
+[05:12:55 +33m 15s | pqshield] Extracting: https://pqshield.com/products (12/19), chunk 10/32
+[05:13:03 +33m 23s | pqshield] Repaired malformed JSON.
+[05:13:03 +33m 23s | pqshield] Extracting: https://pqshield.com/products (12/19), chunk 11/32
+[05:13:09 +33m 28s | pqshield] Repaired malformed JSON.
+[05:13:09 +33m 28s | pqshield] Extracting: https://pqshield.com/products (12/19), chunk 12/32
+[05:13:20 +33m 36s | pqshield] Repaired malformed JSON.
+[05:13:20 +33m 36s | pqshield] Extracting: https://pqshield.com/products (12/19), chunk 13/32
+[05:13:24 +33m 40s | pqshield] Extracting: https://pqshield.com/products (12/19), chunk 14/32
+[05:13:28 +33m 44s | pqshield] Extracting: https://pqshield.com/products (12/19), chunk 15/32
+[05:13:31 +33m 48s | pqshield] Extracting: https://pqshield.com/products (12/19), chunk 16/32
+[05:13:36 +33m 52s | pqshield] Extracting: https://pqshield.com/products (12/19), chunk 17/32
+[05:13:40 +33m 56s | pqshield] Extracting: https://pqshield.com/products (12/19), chunk 18/32
+[05:13:44 +34m 0s | pqshield] Extracting: https://pqshield.com/products (12/19), chunk 19/32
+[05:13:51 +34m 4s | pqshield] Extracting: https://pqshield.com/products (12/19), chunk 20/32
+[05:13:55 +34m 8s | pqshield] Extracting: https://pqshield.com/products (12/19), chunk 21/32
+[05:14:01 +34m 14s | pqshield] Repaired malformed JSON.
+[05:14:01 +34m 14s | pqshield] Extracting: https://pqshield.com/products (12/19), chunk 22/32
+[05:14:06 +34m 19s | pqshield] Repaired malformed JSON.
+[05:14:06 +34m 19s | pqshield] Extracting: https://pqshield.com/products (12/19), chunk 23/32
+[05:14:10 +34m 24s | pqshield] Extracting: https://pqshield.com/products (12/19), chunk 24/32
+[05:14:19 +34m 32s | pqshield] Repaired malformed JSON.
+[05:14:19 +34m 32s | pqshield] Extracting: https://pqshield.com/products (12/19), chunk 25/32
+[05:14:31 +34m 41s | pqshield] Repaired malformed JSON.
+[05:14:31 +34m 41s | pqshield] Extracting: https://pqshield.com/products (12/19), chunk 26/32
+[05:14:37 +34m 48s | pqshield] Repaired malformed JSON.
+[05:14:37 +34m 48s | pqshield] Extracting: https://pqshield.com/products (12/19), chunk 27/32
+[05:14:41 +34m 51s | pqshield] Extracting: https://pqshield.com/products (12/19), chunk 28/32
+[05:14:47 +34m 57s | pqshield] Repaired malformed JSON.
+[05:14:47 +34m 57s | pqshield] Extracting: https://pqshield.com/products (12/19), chunk 29/32
+[05:14:59 +35m 6s | pqshield] Repaired malformed JSON.
+[05:14:59 +35m 6s | pqshield] Extracting: https://pqshield.com/products (12/19), chunk 30/32
+[05:15:03 +35m 10s | pqshield] Extracting: https://pqshield.com/products (12/19), chunk 31/32
+[05:15:04 +35m 11s | pqshield] Extracting: https://pqshield.com/products (12/19), chunk 32/32
+[05:15:14 +35m 21s | pqshield] Repaired malformed JSON.
+[05:15:14 +35m 21s | pqshield] Reading page (13/19): https://pqshield.com/products/pqc-sdk
+[05:15:14 +35m 21s | pqshield] Extracting: https://pqshield.com/products/pqc-sdk (13/19), chunk 1/29
+[05:15:16 +35m 23s | pqshield] Extracting: https://pqshield.com/products/pqc-sdk (13/19), chunk 2/29
+[05:15:21 +35m 28s | pqshield] Extracting: https://pqshield.com/products/pqc-sdk (13/19), chunk 3/29
+[05:15:26 +35m 33s | pqshield] Repaired malformed JSON.
+[05:15:26 +35m 33s | pqshield] Extracting: https://pqshield.com/products/pqc-sdk (13/19), chunk 4/29
+[05:15:38 +35m 42s | pqshield] Repaired malformed JSON.
+[05:15:38 +35m 42s | pqshield] Extracting: https://pqshield.com/products/pqc-sdk (13/19), chunk 5/29
+[05:15:44 +35m 49s | pqshield] Repaired malformed JSON.
+[05:15:44 +35m 49s | pqshield] Extracting: https://pqshield.com/products/pqc-sdk (13/19), chunk 6/29
+[05:15:50 +35m 55s | pqshield] Repaired malformed JSON.
+[05:15:50 +35m 55s | pqshield] Extracting: https://pqshield.com/products/pqc-sdk (13/19), chunk 7/29
+[05:15:57 +36m 2s | pqshield] Repaired malformed JSON.
+[05:15:57 +36m 2s | pqshield] Extracting: https://pqshield.com/products/pqc-sdk (13/19), chunk 8/29
+[05:16:09 +36m 11s | pqshield] Repaired malformed JSON.
+[05:16:09 +36m 11s | pqshield] Extracting: https://pqshield.com/products/pqc-sdk (13/19), chunk 9/29
+[05:16:16 +36m 18s | pqshield] Repaired malformed JSON.
+[05:16:16 +36m 18s | pqshield] Extracting: https://pqshield.com/products/pqc-sdk (13/19), chunk 10/29
+[05:16:23 +36m 25s | pqshield] Repaired malformed JSON.
+[05:16:23 +36m 25s | pqshield] Extracting: https://pqshield.com/products/pqc-sdk (13/19), chunk 11/29
+[05:16:28 +36m 30s | pqshield] Repaired malformed JSON.
+[05:16:28 +36m 30s | pqshield] Extracting: https://pqshield.com/products/pqc-sdk (13/19), chunk 12/29
+[05:16:30 +36m 32s | pqshield] Extracting: https://pqshield.com/products/pqc-sdk (13/19), chunk 13/29
+[05:16:37 +36m 38s | pqshield] Repaired malformed JSON.
+[05:16:37 +36m 38s | pqshield] Extracting: https://pqshield.com/products/pqc-sdk (13/19), chunk 14/29
+[05:16:45 +36m 44s | pqshield] Repaired malformed JSON.
+[05:16:45 +36m 44s | pqshield] Extracting: https://pqshield.com/products/pqc-sdk (13/19), chunk 15/29
+[05:16:50 +36m 49s | pqshield] Extracting: https://pqshield.com/products/pqc-sdk (13/19), chunk 16/29
+[05:16:56 +36m 55s | pqshield] Extracting: https://pqshield.com/products/pqc-sdk (13/19), chunk 17/29
+[05:17:00 +36m 59s | pqshield] Extracting: https://pqshield.com/products/pqc-sdk (13/19), chunk 18/29
+[05:17:05 +37m 5s | pqshield] Extracting: https://pqshield.com/products/pqc-sdk (13/19), chunk 19/29
+[05:17:09 +37m 8s | pqshield] Extracting: https://pqshield.com/products/pqc-sdk (13/19), chunk 20/29
+[05:17:21 +37m 17s | pqshield] Repaired malformed JSON.
+[05:17:21 +37m 17s | pqshield] Extracting: https://pqshield.com/products/pqc-sdk (13/19), chunk 21/29
+[05:17:29 +37m 25s | pqshield] Repaired malformed JSON.
+[05:17:29 +37m 25s | pqshield] Extracting: https://pqshield.com/products/pqc-sdk (13/19), chunk 22/29
+[05:17:35 +37m 30s | pqshield] Repaired malformed JSON.
+[05:17:35 +37m 30s | pqshield] Extracting: https://pqshield.com/products/pqc-sdk (13/19), chunk 23/29
+[05:17:40 +37m 36s | pqshield] Repaired malformed JSON.
+[05:17:40 +37m 36s | pqshield] Extracting: https://pqshield.com/products/pqc-sdk (13/19), chunk 24/29
+[05:17:46 +37m 42s | pqshield] Repaired malformed JSON.
+[05:17:46 +37m 42s | pqshield] Extracting: https://pqshield.com/products/pqc-sdk (13/19), chunk 25/29
+[05:17:55 +37m 48s | pqshield] Repaired malformed JSON.
+[05:17:55 +37m 48s | pqshield] Extracting: https://pqshield.com/products/pqc-sdk (13/19), chunk 26/29
+[05:18:01 +37m 54s | pqshield] Repaired malformed JSON.
+[05:18:01 +37m 54s | pqshield] Extracting: https://pqshield.com/products/pqc-sdk (13/19), chunk 27/29
+[05:18:04 +37m 58s | pqshield] Extracting: https://pqshield.com/products/pqc-sdk (13/19), chunk 28/29
+[05:18:12 +38m 5s | pqshield] Extracting: https://pqshield.com/products/pqc-sdk (13/19), chunk 29/29
+[05:18:19 +38m 12s | pqshield] Repaired malformed JSON.
+[05:18:19 +38m 12s | pqshield] Reading page (14/19): https://pqshield.com/products/pqp-tru
+[05:18:19 +38m 12s | pqshield] Extracting: https://pqshield.com/products/pqp-tru (14/19), chunk 1/29
+[05:18:20 +38m 13s | pqshield] Extracting: https://pqshield.com/products/pqp-tru (14/19), chunk 2/29
+[05:18:25 +38m 18s | pqshield] Extracting: https://pqshield.com/products/pqp-tru (14/19), chunk 3/29
+[05:18:37 +38m 27s | pqshield] Repaired malformed JSON.
+[05:18:37 +38m 27s | pqshield] Extracting: https://pqshield.com/products/pqp-tru (14/19), chunk 4/29
+[05:18:43 +38m 33s | pqshield] Repaired malformed JSON.
+[05:18:43 +38m 33s | pqshield] Extracting: https://pqshield.com/products/pqp-tru (14/19), chunk 5/29
+[05:18:51 +38m 40s | pqshield] Repaired malformed JSON.
+[05:18:51 +38m 40s | pqshield] Extracting: https://pqshield.com/products/pqp-tru (14/19), chunk 6/29
+[05:18:58 +38m 48s | pqshield] Repaired malformed JSON.
+[05:18:58 +38m 48s | pqshield] Extracting: https://pqshield.com/products/pqp-tru (14/19), chunk 7/29
+[05:19:08 +38m 54s | pqshield] Repaired malformed JSON.
+[05:19:08 +38m 54s | pqshield] Extracting: https://pqshield.com/products/pqp-tru (14/19), chunk 8/29
+[05:19:16 +39m 2s | pqshield] Repaired malformed JSON.
+[05:19:16 +39m 2s | pqshield] Extracting: https://pqshield.com/products/pqp-tru (14/19), chunk 9/29
+[05:19:23 +39m 10s | pqshield] Repaired malformed JSON.
+[05:19:23 +39m 10s | pqshield] Extracting: https://pqshield.com/products/pqp-tru (14/19), chunk 10/29
+[05:19:32 +39m 19s | pqshield] Repaired malformed JSON.
+[05:19:32 +39m 19s | pqshield] Extracting: https://pqshield.com/products/pqp-tru (14/19), chunk 11/29
+[05:19:41 +39m 24s | pqshield] Repaired malformed JSON.
+[05:19:41 +39m 24s | pqshield] Extracting: https://pqshield.com/products/pqp-tru (14/19), chunk 12/29
+[05:19:47 +39m 31s | pqshield] Repaired malformed JSON.
+[05:19:47 +39m 31s | pqshield] Extracting: https://pqshield.com/products/pqp-tru (14/19), chunk 13/29
+[05:19:53 +39m 37s | pqshield] Repaired malformed JSON.
+[05:19:53 +39m 37s | pqshield] Extracting: https://pqshield.com/products/pqp-tru (14/19), chunk 14/29
+[05:19:59 +39m 43s | pqshield] Repaired malformed JSON.
+[05:19:59 +39m 43s | pqshield] Extracting: https://pqshield.com/products/pqp-tru (14/19), chunk 15/29
+[05:20:03 +39m 46s | pqshield] Extracting: https://pqshield.com/products/pqp-tru (14/19), chunk 16/29
+[05:20:10 +39m 53s | pqshield] Extracting: https://pqshield.com/products/pqp-tru (14/19), chunk 17/29
+[05:20:16 +39m 57s | pqshield] Extracting: https://pqshield.com/products/pqp-tru (14/19), chunk 18/29
+[05:20:21 +40m 3s | pqshield] Extracting: https://pqshield.com/products/pqp-tru (14/19), chunk 19/29
+[05:20:26 +40m 8s | pqshield] Extracting: https://pqshield.com/products/pqp-tru (14/19), chunk 20/29
+[05:20:32 +40m 13s | pqshield] Extracting: https://pqshield.com/products/pqp-tru (14/19), chunk 21/29
+[05:20:36 +40m 18s | pqshield] Extracting: https://pqshield.com/products/pqp-tru (14/19), chunk 22/29
+[05:20:40 +40m 21s | pqshield] Extracting: https://pqshield.com/products/pqp-tru (14/19), chunk 23/29
+[05:20:45 +40m 26s | pqshield] Extracting: https://pqshield.com/products/pqp-tru (14/19), chunk 24/29
+[05:20:53 +40m 32s | pqshield] Extracting: https://pqshield.com/products/pqp-tru (14/19), chunk 25/29
+[05:21:01 +40m 40s | pqshield] Repaired malformed JSON.
+[05:21:01 +40m 40s | pqshield] Extracting: https://pqshield.com/products/pqp-tru (14/19), chunk 26/29
+[05:21:09 +40m 48s | pqshield] Repaired malformed JSON.
+[05:21:09 +40m 48s | pqshield] Extracting: https://pqshield.com/products/pqp-tru (14/19), chunk 27/29
+[05:21:12 +40m 51s | pqshield] Extracting: https://pqshield.com/products/pqp-tru (14/19), chunk 28/29
+[05:21:16 +40m 54s | pqshield] Extracting: https://pqshield.com/products/pqp-tru (14/19), chunk 29/29
+[05:21:27 +41m 3s | pqshield] Repaired malformed JSON.
+[05:21:27 +41m 3s | pqshield] Reading page (15/19): https://pqshield.com/products/pqf-flr
+[05:21:27 +41m 3s | pqshield] Extracting: https://pqshield.com/products/pqf-flr (15/19), chunk 1/30
+[05:21:29 +41m 5s | pqshield] Extracting: https://pqshield.com/products/pqf-flr (15/19), chunk 2/30
+[05:21:33 +41m 9s | pqshield] Extracting: https://pqshield.com/products/pqf-flr (15/19), chunk 3/30
+[05:21:38 +41m 14s | pqshield] Repaired malformed JSON.
+[05:21:38 +41m 14s | pqshield] Extracting: https://pqshield.com/products/pqf-flr (15/19), chunk 4/30
+[05:21:46 +41m 22s | pqshield] Repaired malformed JSON.
+[05:21:46 +41m 22s | pqshield] Extracting: https://pqshield.com/products/pqf-flr (15/19), chunk 5/30
+[05:21:54 +41m 30s | pqshield] Repaired malformed JSON.
+[05:21:54 +41m 30s | pqshield] Extracting: https://pqshield.com/products/pqf-flr (15/19), chunk 6/30
+[05:22:04 +41m 37s | pqshield] Repaired malformed JSON.
+[05:22:04 +41m 37s | pqshield] Extracting: https://pqshield.com/products/pqf-flr (15/19), chunk 7/30
+[05:22:11 +41m 44s | pqshield] Repaired malformed JSON.
+[05:22:11 +41m 44s | pqshield] Extracting: https://pqshield.com/products/pqf-flr (15/19), chunk 8/30
+[05:22:18 +41m 51s | pqshield] Repaired malformed JSON.
+[05:22:18 +41m 51s | pqshield] Extracting: https://pqshield.com/products/pqf-flr (15/19), chunk 9/30
+[05:22:27 +42m 0s | pqshield] Repaired malformed JSON.
+[05:22:27 +42m 0s | pqshield] Extracting: https://pqshield.com/products/pqf-flr (15/19), chunk 10/30
+[05:22:35 +42m 6s | pqshield] Repaired malformed JSON.
+[05:22:35 +42m 6s | pqshield] Extracting: https://pqshield.com/products/pqf-flr (15/19), chunk 11/30
+[05:22:42 +42m 13s | pqshield] Repaired malformed JSON.
+[05:22:42 +42m 13s | pqshield] Extracting: https://pqshield.com/products/pqf-flr (15/19), chunk 12/30
+[05:22:44 +42m 15s | pqshield] Extracting: https://pqshield.com/products/pqf-flr (15/19), chunk 13/30
+[05:22:50 +42m 21s | pqshield] Repaired malformed JSON.
+[05:22:50 +42m 21s | pqshield] Extracting: https://pqshield.com/products/pqf-flr (15/19), chunk 14/30
+[05:22:56 +42m 26s | pqshield] Repaired malformed JSON.
+[05:22:56 +42m 26s | pqshield] Extracting: https://pqshield.com/products/pqf-flr (15/19), chunk 15/30
+[05:23:01 +42m 31s | pqshield] Extracting: https://pqshield.com/products/pqf-flr (15/19), chunk 16/30
+[05:23:06 +42m 37s | pqshield] Extracting: https://pqshield.com/products/pqf-flr (15/19), chunk 17/30
+[05:23:12 +42m 40s | pqshield] Extracting: https://pqshield.com/products/pqf-flr (15/19), chunk 18/30
+[05:23:16 +42m 44s | pqshield] Extracting: https://pqshield.com/products/pqf-flr (15/19), chunk 19/30
+[05:23:21 +42m 49s | pqshield] Extracting: https://pqshield.com/products/pqf-flr (15/19), chunk 20/30
+[05:23:25 +42m 53s | pqshield] Extracting: https://pqshield.com/products/pqf-flr (15/19), chunk 21/30
+[05:23:30 +42m 58s | pqshield] Extracting: https://pqshield.com/products/pqf-flr (15/19), chunk 22/30
+[05:23:36 +43m 4s | pqshield] Extracting: https://pqshield.com/products/pqf-flr (15/19), chunk 23/30
+[05:23:40 +43m 8s | pqshield] Extracting: https://pqshield.com/products/pqf-flr (15/19), chunk 24/30
+[05:23:46 +43m 12s | pqshield] Extracting: https://pqshield.com/products/pqf-flr (15/19), chunk 25/30
+[05:23:51 +43m 16s | pqshield] Extracting: https://pqshield.com/products/pqf-flr (15/19), chunk 26/30
+[05:23:57 +43m 22s | pqshield] Repaired malformed JSON.
+[05:23:57 +43m 22s | pqshield] Extracting: https://pqshield.com/products/pqf-flr (15/19), chunk 27/30
+[05:24:05 +43m 30s | pqshield] Repaired malformed JSON.
+[05:24:05 +43m 30s | pqshield] Extracting: https://pqshield.com/products/pqf-flr (15/19), chunk 28/30
+[05:24:10 +43m 35s | pqshield] Extracting: https://pqshield.com/products/pqf-flr (15/19), chunk 29/30
+[05:24:15 +43m 40s | pqshield] Extracting: https://pqshield.com/products/pqf-flr (15/19), chunk 30/30
+[05:24:24 +43m 47s | pqshield] Repaired malformed JSON.
+[05:24:24 +43m 47s | pqshield] Reading page (16/19): https://pqshield.com/markets/identity-paymentech
+[05:24:24 +43m 47s | pqshield] Extracting: https://pqshield.com/markets/identity-paymentech (16/19), chunk 1/29
+[05:24:26 +43m 48s | pqshield] Extracting: https://pqshield.com/markets/identity-paymentech (16/19), chunk 2/29
+[05:24:29 +43m 51s | pqshield] Extracting: https://pqshield.com/markets/identity-paymentech (16/19), chunk 3/29
+[05:24:34 +43m 57s | pqshield] Repaired malformed JSON.
+[05:24:34 +43m 57s | pqshield] Extracting: https://pqshield.com/markets/identity-paymentech (16/19), chunk 4/29
+[05:24:43 +44m 6s | pqshield] Repaired malformed JSON.
+[05:24:43 +44m 6s | pqshield] Extracting: https://pqshield.com/markets/identity-paymentech (16/19), chunk 5/29
+[05:24:50 +44m 13s | pqshield] Repaired malformed JSON.
+[05:24:50 +44m 13s | pqshield] Extracting: https://pqshield.com/markets/identity-paymentech (16/19), chunk 6/29
+[05:24:59 +44m 19s | pqshield] Repaired malformed JSON.
+[05:24:59 +44m 19s | pqshield] Extracting: https://pqshield.com/markets/identity-paymentech (16/19), chunk 7/29
+[05:25:06 +44m 26s | pqshield] Repaired malformed JSON.
+[05:25:06 +44m 26s | pqshield] Extracting: https://pqshield.com/markets/identity-paymentech (16/19), chunk 8/29
+[05:25:12 +44m 32s | pqshield] Repaired malformed JSON.
+[05:25:12 +44m 32s | pqshield] Extracting: https://pqshield.com/markets/identity-paymentech (16/19), chunk 9/29
+[05:25:18 +44m 38s | pqshield] Extracting: https://pqshield.com/markets/identity-paymentech (16/19), chunk 10/29
+[05:25:24 +44m 44s | pqshield] Repaired malformed JSON.
+[05:25:24 +44m 44s | pqshield] Extracting: https://pqshield.com/markets/identity-paymentech (16/19), chunk 11/29
+[05:25:34 +44m 51s | pqshield] Repaired malformed JSON.
+[05:25:34 +44m 51s | pqshield] Extracting: https://pqshield.com/markets/identity-paymentech (16/19), chunk 12/29
+[05:25:41 +44m 58s | pqshield] Extracting: https://pqshield.com/markets/identity-paymentech (16/19), chunk 13/29
+[05:25:47 +45m 4s | pqshield] Repaired malformed JSON.
+[05:25:47 +45m 4s | pqshield] Extracting: https://pqshield.com/markets/identity-paymentech (16/19), chunk 14/29
+[05:25:54 +45m 11s | pqshield] Repaired malformed JSON.
+[05:25:54 +45m 11s | pqshield] Extracting: https://pqshield.com/markets/identity-paymentech (16/19), chunk 15/29
+[05:26:01 +45m 18s | pqshield] Extracting: https://pqshield.com/markets/identity-paymentech (16/19), chunk 16/29
+[05:26:08 +45m 22s | pqshield] Extracting: https://pqshield.com/markets/identity-paymentech (16/19), chunk 17/29
+[05:26:11 +45m 26s | pqshield] Extracting: https://pqshield.com/markets/identity-paymentech (16/19), chunk 18/29
+[05:26:15 +45m 30s | pqshield] Extracting: https://pqshield.com/markets/identity-paymentech (16/19), chunk 19/29
+[05:26:19 +45m 33s | pqshield] Extracting: https://pqshield.com/markets/identity-paymentech (16/19), chunk 20/29
+[05:26:24 +45m 39s | pqshield] Extracting: https://pqshield.com/markets/identity-paymentech (16/19), chunk 21/29
+[05:26:28 +45m 43s | pqshield] Extracting: https://pqshield.com/markets/identity-paymentech (16/19), chunk 22/29
+[05:26:32 +45m 47s | pqshield] Extracting: https://pqshield.com/markets/identity-paymentech (16/19), chunk 23/29
+[05:26:42 +45m 53s | pqshield] Repaired malformed JSON.
+[05:26:42 +45m 53s | pqshield] Extracting: https://pqshield.com/markets/identity-paymentech (16/19), chunk 24/29
+[05:26:49 +46m 1s | pqshield] Repaired malformed JSON.
+[05:26:49 +46m 1s | pqshield] Extracting: https://pqshield.com/markets/identity-paymentech (16/19), chunk 25/29
+[05:26:55 +46m 6s | pqshield] Repaired malformed JSON.
+[05:26:55 +46m 6s | pqshield] Extracting: https://pqshield.com/markets/identity-paymentech (16/19), chunk 26/29
+[05:27:02 +46m 14s | pqshield] Repaired malformed JSON.
+[05:27:02 +46m 14s | pqshield] Extracting: https://pqshield.com/markets/identity-paymentech (16/19), chunk 27/29
+[05:27:06 +46m 18s | pqshield] Extracting: https://pqshield.com/markets/identity-paymentech (16/19), chunk 28/29
+[05:27:10 +46m 21s | pqshield] Extracting: https://pqshield.com/markets/identity-paymentech (16/19), chunk 29/29
+[05:27:20 +46m 29s | pqshield] Repaired malformed JSON.
+[05:27:20 +46m 29s | pqshield] Reading page (17/19): https://pqshield.com/markets/semiconductors-manufacturing
+[05:27:20 +46m 29s | pqshield] Extracting: https://pqshield.com/markets/semiconductors-manufacturing (17/19), chunk 1/28
+[05:27:21 +46m 30s | pqshield] Extracting: https://pqshield.com/markets/semiconductors-manufacturing (17/19), chunk 2/28
+[05:27:25 +46m 34s | pqshield] Extracting: https://pqshield.com/markets/semiconductors-manufacturing (17/19), chunk 3/28
+[05:27:31 +46m 40s | pqshield] Repaired malformed JSON.
+[05:27:31 +46m 40s | pqshield] Extracting: https://pqshield.com/markets/semiconductors-manufacturing (17/19), chunk 4/28
+[05:27:38 +46m 47s | pqshield] Repaired malformed JSON.
+[05:27:38 +46m 47s | pqshield] Extracting: https://pqshield.com/markets/semiconductors-manufacturing (17/19), chunk 5/28
+[05:27:45 +46m 54s | pqshield] Repaired malformed JSON.
+[05:27:45 +46m 54s | pqshield] Extracting: https://pqshield.com/markets/semiconductors-manufacturing (17/19), chunk 6/28
+[05:27:54 +47m 0s | pqshield] Repaired malformed JSON.
+[05:27:54 +47m 0s | pqshield] Extracting: https://pqshield.com/markets/semiconductors-manufacturing (17/19), chunk 7/28
+[05:27:59 +47m 5s | pqshield] Repaired malformed JSON.
+[05:27:59 +47m 5s | pqshield] Extracting: https://pqshield.com/markets/semiconductors-manufacturing (17/19), chunk 8/28
+[05:28:06 +47m 12s | pqshield] Repaired malformed JSON.
+[05:28:06 +47m 12s | pqshield] Extracting: https://pqshield.com/markets/semiconductors-manufacturing (17/19), chunk 9/28
+[05:28:11 +47m 17s | pqshield] Extracting: https://pqshield.com/markets/semiconductors-manufacturing (17/19), chunk 10/28
+[05:28:18 +47m 24s | pqshield] Repaired malformed JSON.
+[05:28:18 +47m 24s | pqshield] Extracting: https://pqshield.com/markets/semiconductors-manufacturing (17/19), chunk 11/28
+[05:28:27 +47m 30s | pqshield] Extracting: https://pqshield.com/markets/semiconductors-manufacturing (17/19), chunk 12/28
+[05:28:30 +47m 33s | pqshield] Extracting: https://pqshield.com/markets/semiconductors-manufacturing (17/19), chunk 13/28
+[05:28:38 +47m 41s | pqshield] Repaired malformed JSON.
+[05:28:38 +47m 41s | pqshield] Extracting: https://pqshield.com/markets/semiconductors-manufacturing (17/19), chunk 14/28
+[05:28:43 +47m 46s | pqshield] Repaired malformed JSON.
+[05:28:43 +47m 46s | pqshield] Extracting: https://pqshield.com/markets/semiconductors-manufacturing (17/19), chunk 15/28
+[05:28:48 +47m 51s | pqshield] Extracting: https://pqshield.com/markets/semiconductors-manufacturing (17/19), chunk 16/28
+[05:28:53 +47m 56s | pqshield] Extracting: https://pqshield.com/markets/semiconductors-manufacturing (17/19), chunk 17/28
+[05:29:00 +48m 0s | pqshield] Extracting: https://pqshield.com/markets/semiconductors-manufacturing (17/19), chunk 18/28
+[05:29:06 +48m 6s | pqshield] Repaired malformed JSON.
+[05:29:06 +48m 6s | pqshield] Extracting: https://pqshield.com/markets/semiconductors-manufacturing (17/19), chunk 19/28
+[05:29:10 +48m 10s | pqshield] Extracting: https://pqshield.com/markets/semiconductors-manufacturing (17/19), chunk 20/28
+[05:29:17 +48m 17s | pqshield] Extracting: https://pqshield.com/markets/semiconductors-manufacturing (17/19), chunk 21/28
+[05:29:24 +48m 25s | pqshield] Repaired malformed JSON.
+[05:29:24 +48m 25s | pqshield] Extracting: https://pqshield.com/markets/semiconductors-manufacturing (17/19), chunk 22/28
+[05:29:35 +48m 32s | pqshield] Repaired malformed JSON.
+[05:29:35 +48m 32s | pqshield] Extracting: https://pqshield.com/markets/semiconductors-manufacturing (17/19), chunk 23/28
+[05:29:40 +48m 37s | pqshield] Extracting: https://pqshield.com/markets/semiconductors-manufacturing (17/19), chunk 24/28
+[05:29:47 +48m 44s | pqshield] Repaired malformed JSON.
+[05:29:47 +48m 44s | pqshield] Extracting: https://pqshield.com/markets/semiconductors-manufacturing (17/19), chunk 25/28
+[05:29:56 +48m 53s | pqshield] Repaired malformed JSON.
+[05:29:56 +48m 53s | pqshield] Extracting: https://pqshield.com/markets/semiconductors-manufacturing (17/19), chunk 26/28
+[05:29:59 +48m 57s | pqshield] Extracting: https://pqshield.com/markets/semiconductors-manufacturing (17/19), chunk 27/28
+[05:30:04 +49m 1s | pqshield] Extracting: https://pqshield.com/markets/semiconductors-manufacturing (17/19), chunk 28/28
+[05:30:14 +49m 8s | pqshield] Repaired malformed JSON.
+[05:30:14 +49m 8s | pqshield] Reading page (18/19): https://pqshield.com/markets
+[05:30:14 +49m 8s | pqshield] Extracting: https://pqshield.com/markets (18/19), chunk 1/29
+[05:30:18 +49m 12s | pqshield] Extracting: https://pqshield.com/markets (18/19), chunk 2/29
+[05:30:24 +49m 18s | pqshield] Repaired malformed JSON.
+[05:30:24 +49m 18s | pqshield] Extracting: https://pqshield.com/markets (18/19), chunk 3/29
+[05:30:31 +49m 25s | pqshield] Repaired malformed JSON.
+[05:30:31 +49m 25s | pqshield] Extracting: https://pqshield.com/markets (18/19), chunk 4/29
+[05:30:39 +49m 33s | pqshield] Repaired malformed JSON.
+[05:30:39 +49m 33s | pqshield] Extracting: https://pqshield.com/markets (18/19), chunk 5/29
+[05:30:48 +49m 40s | pqshield] Repaired malformed JSON.
+[05:30:48 +49m 40s | pqshield] Extracting: https://pqshield.com/markets (18/19), chunk 6/29
+[05:30:57 +49m 49s | pqshield] Repaired malformed JSON.
+[05:30:57 +49m 49s | pqshield] Extracting: https://pqshield.com/markets (18/19), chunk 7/29
+[05:31:03 +49m 54s | pqshield] Repaired malformed JSON.
+[05:31:03 +49m 54s | pqshield] Extracting: https://pqshield.com/markets (18/19), chunk 8/29
+[05:31:09 +50m 0s | pqshield] Repaired malformed JSON.
+[05:31:09 +50m 0s | pqshield] Extracting: https://pqshield.com/markets (18/19), chunk 9/29
+[05:31:14 +50m 5s | pqshield] Repaired malformed JSON.
+[05:31:14 +50m 5s | pqshield] Extracting: https://pqshield.com/markets (18/19), chunk 10/29
+[05:31:24 +50m 12s | pqshield] Extracting: https://pqshield.com/markets (18/19), chunk 11/29
+[05:31:29 +50m 17s | pqshield] Repaired malformed JSON.
+[05:31:29 +50m 17s | pqshield] Extracting: https://pqshield.com/markets (18/19), chunk 12/29
+[05:31:37 +50m 25s | pqshield] Repaired malformed JSON.
+[05:31:37 +50m 25s | pqshield] Extracting: https://pqshield.com/markets (18/19), chunk 13/29
+[05:31:41 +50m 29s | pqshield] Extracting: https://pqshield.com/markets (18/19), chunk 14/29
+[05:31:46 +50m 34s | pqshield] Extracting: https://pqshield.com/markets (18/19), chunk 15/29
+[05:31:51 +50m 39s | pqshield] Extracting: https://pqshield.com/markets (18/19), chunk 16/29
+[05:31:55 +50m 44s | pqshield] Extracting: https://pqshield.com/markets (18/19), chunk 17/29
+[05:32:01 +50m 49s | pqshield] Extracting: https://pqshield.com/markets (18/19), chunk 18/29
+[05:32:08 +50m 56s | pqshield] Repaired malformed JSON.
+[05:32:08 +50m 56s | pqshield] Extracting: https://pqshield.com/markets (18/19), chunk 19/29
+[05:32:17 +51m 1s | pqshield] Extracting: https://pqshield.com/markets (18/19), chunk 20/29
+[05:32:22 +51m 6s | pqshield] Extracting: https://pqshield.com/markets (18/19), chunk 21/29
+[05:32:31 +51m 15s | pqshield] Repaired malformed JSON.
+[05:32:31 +51m 15s | pqshield] Extracting: https://pqshield.com/markets (18/19), chunk 22/29
+[05:32:34 +51m 18s | pqshield] Extracting: https://pqshield.com/markets (18/19), chunk 23/29
+[05:32:38 +51m 22s | pqshield] Extracting: https://pqshield.com/markets (18/19), chunk 24/29
+[05:32:42 +51m 26s | pqshield] Extracting: https://pqshield.com/markets (18/19), chunk 25/29
+[05:32:53 +51m 34s | pqshield] Repaired malformed JSON.
+[05:32:53 +51m 34s | pqshield] Extracting: https://pqshield.com/markets (18/19), chunk 26/29
+[05:32:59 +51m 40s | pqshield] Repaired malformed JSON.
+[05:32:59 +51m 40s | pqshield] Extracting: https://pqshield.com/markets (18/19), chunk 27/29
+[05:33:04 +51m 45s | pqshield] Extracting: https://pqshield.com/markets (18/19), chunk 28/29
+[05:33:08 +51m 49s | pqshield] Extracting: https://pqshield.com/markets (18/19), chunk 29/29
+[05:33:15 +51m 56s | pqshield] Repaired malformed JSON.
+[05:33:15 +51m 56s | pqshield] Reading page (19/19): https://pqshield.com/markets/military-aerospace
+[05:33:15 +51m 56s | pqshield] Extracting: https://pqshield.com/markets/military-aerospace (19/19), chunk 1/29
+[05:33:17 +51m 58s | pqshield] Extracting: https://pqshield.com/markets/military-aerospace (19/19), chunk 2/29
+[05:33:23 +52m 1s | pqshield] Extracting: https://pqshield.com/markets/military-aerospace (19/19), chunk 3/29
+[05:33:31 +52m 9s | pqshield] Repaired malformed JSON.
+[05:33:31 +52m 9s | pqshield] Extracting: https://pqshield.com/markets/military-aerospace (19/19), chunk 4/29
+[05:33:38 +52m 16s | pqshield] Repaired malformed JSON.
+[05:33:38 +52m 16s | pqshield] Extracting: https://pqshield.com/markets/military-aerospace (19/19), chunk 5/29
+[05:33:47 +52m 25s | pqshield] Repaired malformed JSON.
+[05:33:47 +52m 25s | pqshield] Extracting: https://pqshield.com/markets/military-aerospace (19/19), chunk 6/29
+[05:33:54 +52m 32s | pqshield] Repaired malformed JSON.
+[05:33:54 +52m 32s | pqshield] Extracting: https://pqshield.com/markets/military-aerospace (19/19), chunk 7/29
+[05:34:05 +52m 40s | pqshield] Repaired malformed JSON.
+[05:34:05 +52m 40s | pqshield] Extracting: https://pqshield.com/markets/military-aerospace (19/19), chunk 8/29
+[05:34:11 +52m 47s | pqshield] Repaired malformed JSON.
+[05:34:11 +52m 47s | pqshield] Extracting: https://pqshield.com/markets/military-aerospace (19/19), chunk 9/29
+[05:34:20 +52m 55s | pqshield] Extracting: https://pqshield.com/markets/military-aerospace (19/19), chunk 10/29
+[05:34:26 +53m 2s | pqshield] Repaired malformed JSON.
+[05:34:26 +53m 2s | pqshield] Extracting: https://pqshield.com/markets/military-aerospace (19/19), chunk 11/29
+[05:34:37 +53m 9s | pqshield] Repaired malformed JSON.
+[05:34:37 +53m 9s | pqshield] Extracting: https://pqshield.com/markets/military-aerospace (19/19), chunk 12/29
+[05:34:39 +53m 11s | pqshield] Extracting: https://pqshield.com/markets/military-aerospace (19/19), chunk 13/29
+[05:34:45 +53m 17s | pqshield] Repaired malformed JSON.
+[05:34:45 +53m 17s | pqshield] Extracting: https://pqshield.com/markets/military-aerospace (19/19), chunk 14/29
+[05:34:51 +53m 23s | pqshield] Repaired malformed JSON.
+[05:34:51 +53m 23s | pqshield] Extracting: https://pqshield.com/markets/military-aerospace (19/19), chunk 15/29
+[05:34:55 +53m 27s | pqshield] Extracting: https://pqshield.com/markets/military-aerospace (19/19), chunk 16/29
+[05:34:59 +53m 32s | pqshield] Extracting: https://pqshield.com/markets/military-aerospace (19/19), chunk 17/29
+[05:35:03 +53m 35s | pqshield] Extracting: https://pqshield.com/markets/military-aerospace (19/19), chunk 18/29
+[05:35:09 +53m 38s | pqshield] Extracting: https://pqshield.com/markets/military-aerospace (19/19), chunk 19/29
+[05:35:14 +53m 43s | pqshield] Extracting: https://pqshield.com/markets/military-aerospace (19/19), chunk 20/29
+[05:35:18 +53m 48s | pqshield] Extracting: https://pqshield.com/markets/military-aerospace (19/19), chunk 21/29
+[05:35:27 +53m 57s | pqshield] Repaired malformed JSON.
+[05:35:27 +53m 57s | pqshield] Extracting: https://pqshield.com/markets/military-aerospace (19/19), chunk 22/29
+[05:35:32 +54m 2s | pqshield] Repaired malformed JSON.
+[05:35:32 +54m 2s | pqshield] Extracting: https://pqshield.com/markets/military-aerospace (19/19), chunk 23/29
+[05:35:39 +54m 9s | pqshield] Repaired malformed JSON.
+[05:35:39 +54m 9s | pqshield] Extracting: https://pqshield.com/markets/military-aerospace (19/19), chunk 24/29
+[05:35:47 +54m 13s | pqshield] Extracting: https://pqshield.com/markets/military-aerospace (19/19), chunk 25/29
+[05:35:56 +54m 22s | pqshield] Repaired malformed JSON.
+[05:35:56 +54m 22s | pqshield] Extracting: https://pqshield.com/markets/military-aerospace (19/19), chunk 26/29
+[05:36:02 +54m 29s | pqshield] Repaired malformed JSON.
+[05:36:02 +54m 29s | pqshield] Extracting: https://pqshield.com/markets/military-aerospace (19/19), chunk 27/29
+[05:36:08 +54m 35s | pqshield] Extracting: https://pqshield.com/markets/military-aerospace (19/19), chunk 28/29
+[05:36:15 +54m 41s | pqshield] Extracting: https://pqshield.com/markets/military-aerospace (19/19), chunk 29/29
+[05:36:25 +54m 51s | pqshield] Repaired malformed JSON.
+[05:36:25 +54m 51s | pqshield] Saved 1_actor_results.json with 867 extracted records
+
+[05:36:25 +54m 51s | pqshield] === 2 clean actors ===
+[05:36:27 +54m 54s | pqshield] Loaded 867 extracted records
+[05:36:27 +54m 54s | pqshield] Saved 2_actor_nodes.json with 36 canonical actor nodes
+
+[05:36:27 +54m 54s | pqshield] === 3 interaction extraction ===
+[05:36:28 +54m 54s | pqshield] Extracting interactions: https://pqshield.com/products/certifications (1/19), chunk 3/31
+[05:36:29 +54m 56s | pqshield] Extracting interactions: https://pqshield.com/products/certifications (1/19), chunk 4/31
+[05:36:31 +54m 57s | pqshield] Extracting interactions: https://pqshield.com/products/certifications (1/19), chunk 5/31
+[05:36:53 +55m 15s | pqshield] Extracting interactions: https://pqshield.com/products/certifications (1/19), chunk 6/31
+[05:37:19 +55m 38s | pqshield] Extracting interactions: https://pqshield.com/products/certifications (1/19), chunk 7/31
+[05:37:21 +55m 40s | pqshield] Extracting interactions: https://pqshield.com/products/certifications (1/19), chunk 8/31
+[05:37:23 +55m 42s | pqshield] Extracting interactions: https://pqshield.com/products/certifications (1/19), chunk 9/31
+[05:37:30 +55m 49s | pqshield] Extracting interactions: https://pqshield.com/products/certifications (1/19), chunk 10/31
+[05:37:32 +55m 51s | pqshield] Extracting interactions: https://pqshield.com/products/certifications (1/19), chunk 11/31
+[05:37:33 +55m 52s | pqshield] Extracting interactions: https://pqshield.com/products/certifications (1/19), chunk 13/31
+[05:37:35 +55m 54s | pqshield] Extracting interactions: https://pqshield.com/products/certifications (1/19), chunk 14/31
+[05:37:36 +55m 55s | pqshield] Extracting interactions: https://pqshield.com/products/certifications (1/19), chunk 16/31
+[05:37:40 +55m 59s | pqshield] Extracting interactions: https://pqshield.com/products/certifications (1/19), chunk 17/31
+[05:37:52 +56m 8s | pqshield] Extracting interactions: https://pqshield.com/products/certifications (1/19), chunk 18/31
+[05:38:06 +56m 22s | pqshield] Extracting interactions: https://pqshield.com/products/certifications (1/19), chunk 19/31
+[05:38:07 +56m 24s | pqshield] Extracting interactions: https://pqshield.com/products/certifications (1/19), chunk 20/31
+[05:38:14 +56m 30s | pqshield] Extracting interactions: https://pqshield.com/products/certifications (1/19), chunk 21/31
+[05:38:17 +56m 33s | pqshield] Extracting interactions: https://pqshield.com/products/certifications (1/19), chunk 26/31
+[05:38:26 +56m 39s | pqshield] Extracting interactions: https://pqshield.com/products/certifications (1/19), chunk 27/31
+[05:38:32 +56m 46s | pqshield] Extracting interactions: https://pqshield.com/products/certifications (1/19), chunk 28/31
+[05:38:35 +56m 49s | pqshield] Extracting interactions: https://pqshield.com/products/certifications (1/19), chunk 31/31
+[05:38:54 +57m 7s | pqshield] Extracting interactions: https://pqshield.com/team-pqshield (2/19), chunk 2/27
+[05:39:03 +57m 17s | pqshield] Extracting interactions: https://pqshield.com/team-pqshield (2/19), chunk 3/27
+[05:39:05 +57m 18s | pqshield] Extracting interactions: https://pqshield.com/team-pqshield (2/19), chunk 4/27
+[05:39:39 +57m 48s | pqshield] Extracting interactions: https://pqshield.com/team-pqshield (2/19), chunk 5/27
+[05:40:03 +58m 9s | pqshield] Extracting interactions: https://pqshield.com/team-pqshield (2/19), chunk 6/27
+[05:40:04 +58m 10s | pqshield] Extracting interactions: https://pqshield.com/team-pqshield (2/19), chunk 7/27
+[05:40:06 +58m 12s | pqshield] Extracting interactions: https://pqshield.com/team-pqshield (2/19), chunk 8/27
+[05:40:07 +58m 13s | pqshield] Extracting interactions: https://pqshield.com/team-pqshield (2/19), chunk 9/27
+[05:40:09 +58m 15s | pqshield] Extracting interactions: https://pqshield.com/team-pqshield (2/19), chunk 10/27
+[05:40:10 +58m 17s | pqshield] Extracting interactions: https://pqshield.com/team-pqshield (2/19), chunk 11/27
+[05:40:12 +58m 18s | pqshield] Extracting interactions: https://pqshield.com/team-pqshield (2/19), chunk 12/27
+[05:40:13 +58m 20s | pqshield] Extracting interactions: https://pqshield.com/team-pqshield (2/19), chunk 14/27
+[05:40:15 +58m 21s | pqshield] Extracting interactions: https://pqshield.com/team-pqshield (2/19), chunk 15/27
+[05:40:30 +58m 33s | pqshield] Extracting interactions: https://pqshield.com/team-pqshield (2/19), chunk 16/27
+[05:40:40 +58m 43s | pqshield] Extracting interactions: https://pqshield.com/team-pqshield (2/19), chunk 17/27
+[05:40:41 +58m 44s | pqshield] Extracting interactions: https://pqshield.com/team-pqshield (2/19), chunk 18/27
+[05:40:42 +58m 46s | pqshield] Extracting interactions: https://pqshield.com/team-pqshield (2/19), chunk 19/27
+[05:40:46 +58m 49s | pqshield] Extracting interactions: https://pqshield.com/team-pqshield (2/19), chunk 20/27
+[05:40:50 +58m 54s | pqshield] Extracting interactions: https://pqshield.com/team-pqshield (2/19), chunk 21/27
+[05:40:52 +58m 55s | pqshield] Extracting interactions: https://pqshield.com/team-pqshield (2/19), chunk 22/27
+[05:40:58 +58m 59s | pqshield] Extracting interactions: https://pqshield.com/team-pqshield (2/19), chunk 23/27
+[05:41:03 +59m 4s | pqshield] Extracting interactions: https://pqshield.com/team-pqshield (2/19), chunk 24/27
+[05:41:06 +59m 7s | pqshield] Extracting interactions: https://pqshield.com/team-pqshield (2/19), chunk 27/27
+[05:41:22 +59m 22s | pqshield] Extracting interactions: https://pqshield.com/markets/system-integrators (3/19), chunk 3/28
+[05:41:23 +59m 24s | pqshield] Extracting interactions: https://pqshield.com/markets/system-integrators (3/19), chunk 4/28
+[05:41:25 +59m 25s | pqshield] Extracting interactions: https://pqshield.com/markets/system-integrators (3/19), chunk 5/28
+[05:41:52 +59m 49s | pqshield] Extracting interactions: https://pqshield.com/markets/system-integrators (3/19), chunk 6/28
+[05:42:11 +1h 0m 5s | pqshield] Extracting interactions: https://pqshield.com/markets/system-integrators (3/19), chunk 7/28
+[05:42:12 +1h 0m 7s | pqshield] Extracting interactions: https://pqshield.com/markets/system-integrators (3/19), chunk 8/28
+[05:42:14 +1h 0m 8s | pqshield] Extracting interactions: https://pqshield.com/markets/system-integrators (3/19), chunk 9/28
+[05:42:15 +1h 0m 9s | pqshield] Extracting interactions: https://pqshield.com/markets/system-integrators (3/19), chunk 10/28
+[05:42:17 +1h 0m 11s | pqshield] Extracting interactions: https://pqshield.com/markets/system-integrators (3/19), chunk 11/28
+[05:42:18 +1h 0m 12s | pqshield] Extracting interactions: https://pqshield.com/markets/system-integrators (3/19), chunk 13/28
+[05:42:20 +1h 0m 14s | pqshield] Extracting interactions: https://pqshield.com/markets/system-integrators (3/19), chunk 14/28
+[05:42:22 +1h 0m 16s | pqshield] Extracting interactions: https://pqshield.com/markets/system-integrators (3/19), chunk 16/28
+[05:42:26 +1h 0m 20s | pqshield] Extracting interactions: https://pqshield.com/markets/system-integrators (3/19), chunk 17/28
+[05:42:39 +1h 0m 33s | pqshield] Extracting interactions: https://pqshield.com/markets/system-integrators (3/19), chunk 18/28
+[05:42:52 +1h 0m 43s | pqshield] Extracting interactions: https://pqshield.com/markets/system-integrators (3/19), chunk 19/28
+[05:42:54 +1h 0m 45s | pqshield] Extracting interactions: https://pqshield.com/markets/system-integrators (3/19), chunk 20/28
+[05:42:55 +1h 0m 46s | pqshield] Extracting interactions: https://pqshield.com/markets/system-integrators (3/19), chunk 23/28
+[05:42:59 +1h 0m 50s | pqshield] Extracting interactions: https://pqshield.com/markets/system-integrators (3/19), chunk 24/28
+[05:43:06 +1h 0m 57s | pqshield] Extracting interactions: https://pqshield.com/markets/system-integrators (3/19), chunk 25/28
+[05:43:09 +1h 1m 0s | pqshield] Extracting interactions: https://pqshield.com/markets/system-integrators (3/19), chunk 28/28
+[05:43:24 +1h 1m 12s | pqshield] Extracting interactions: https://pqshield.com/products/product-security (4/19), chunk 3/28
+[05:43:31 +1h 1m 20s | pqshield] Extracting interactions: https://pqshield.com/products/product-security (4/19), chunk 4/28
+[05:43:33 +1h 1m 22s | pqshield] Extracting interactions: https://pqshield.com/products/product-security (4/19), chunk 5/28
+[05:43:45 +1h 1m 34s | pqshield] Extracting interactions: https://pqshield.com/products/product-security (4/19), chunk 6/28
+[05:44:11 +1h 1m 56s | pqshield] Extracting interactions: https://pqshield.com/products/product-security (4/19), chunk 7/28
+[05:44:12 +1h 1m 57s | pqshield] Extracting interactions: https://pqshield.com/products/product-security (4/19), chunk 8/28
+[05:44:14 +1h 1m 59s | pqshield] Extracting interactions: https://pqshield.com/products/product-security (4/19), chunk 9/28
+[05:44:17 +1h 2m 2s | pqshield] Extracting interactions: https://pqshield.com/products/product-security (4/19), chunk 10/28
+[05:44:18 +1h 2m 3s | pqshield] Extracting interactions: https://pqshield.com/products/product-security (4/19), chunk 11/28
+[05:44:29 +1h 2m 12s | pqshield] Extracting interactions: https://pqshield.com/products/product-security (4/19), chunk 13/28
+[05:44:30 +1h 2m 13s | pqshield] Extracting interactions: https://pqshield.com/products/product-security (4/19), chunk 14/28
+[05:44:32 +1h 2m 14s | pqshield] Extracting interactions: https://pqshield.com/products/product-security (4/19), chunk 16/28
+[05:44:33 +1h 2m 16s | pqshield] Extracting interactions: https://pqshield.com/products/product-security (4/19), chunk 17/28
+[05:44:46 +1h 2m 29s | pqshield] Extracting interactions: https://pqshield.com/products/product-security (4/19), chunk 18/28
+[05:45:00 +1h 2m 42s | pqshield] Extracting interactions: https://pqshield.com/products/product-security (4/19), chunk 19/28
+[05:45:05 +1h 2m 45s | pqshield] Extracting interactions: https://pqshield.com/products/product-security (4/19), chunk 22/28
+[05:45:08 +1h 2m 48s | pqshield] Extracting interactions: https://pqshield.com/products/product-security (4/19), chunk 23/28
+[05:45:13 +1h 2m 52s | pqshield] Extracting interactions: https://pqshield.com/products/product-security (4/19), chunk 24/28
+[05:45:19 +1h 2m 59s | pqshield] Extracting interactions: https://pqshield.com/products/product-security (4/19), chunk 25/28
+[05:45:22 +1h 3m 2s | pqshield] Extracting interactions: https://pqshield.com/products/product-security (4/19), chunk 28/28
+[05:45:41 +1h 3m 17s | pqshield] Extracting interactions: https://pqshield.com/products/pqc-cor (5/19), chunk 3/29
+[05:45:42 +1h 3m 19s | pqshield] Extracting interactions: https://pqshield.com/products/pqc-cor (5/19), chunk 4/29
+[05:45:44 +1h 3m 20s | pqshield] Extracting interactions: https://pqshield.com/products/pqc-cor (5/19), chunk 5/29
+[05:46:03 +1h 3m 39s | pqshield] Extracting interactions: https://pqshield.com/products/pqc-cor (5/19), chunk 6/29
+[05:46:31 +1h 4m 5s | pqshield] Extracting interactions: https://pqshield.com/products/pqc-cor (5/19), chunk 7/29
+[05:46:33 +1h 4m 7s | pqshield] Extracting interactions: https://pqshield.com/products/pqc-cor (5/19), chunk 8/29
+[05:46:35 +1h 4m 8s | pqshield] Extracting interactions: https://pqshield.com/products/pqc-cor (5/19), chunk 9/29
+[05:46:37 +1h 4m 10s | pqshield] Extracting interactions: https://pqshield.com/products/pqc-cor (5/19), chunk 10/29
+[05:46:39 +1h 4m 12s | pqshield] Extracting interactions: https://pqshield.com/products/pqc-cor (5/19), chunk 11/29
+[05:46:40 +1h 4m 13s | pqshield] Extracting interactions: https://pqshield.com/products/pqc-cor (5/19), chunk 13/29
+[05:46:41 +1h 4m 15s | pqshield] Extracting interactions: https://pqshield.com/products/pqc-cor (5/19), chunk 14/29
+[05:46:43 +1h 4m 16s | pqshield] Extracting interactions: https://pqshield.com/products/pqc-cor (5/19), chunk 16/29
+[05:46:44 +1h 4m 18s | pqshield] Extracting interactions: https://pqshield.com/products/pqc-cor (5/19), chunk 17/29
+[05:46:58 +1h 4m 28s | pqshield] Extracting interactions: https://pqshield.com/products/pqc-cor (5/19), chunk 18/29
+[05:47:13 +1h 4m 44s | pqshield] Extracting interactions: https://pqshield.com/products/pqc-cor (5/19), chunk 19/29
+[05:47:15 +1h 4m 45s | pqshield] Extracting interactions: https://pqshield.com/products/pqc-cor (5/19), chunk 23/29
+[05:47:19 +1h 4m 49s | pqshield] Extracting interactions: https://pqshield.com/products/pqc-cor (5/19), chunk 24/29
+[05:47:26 +1h 4m 53s | pqshield] Extracting interactions: https://pqshield.com/products/pqc-cor (5/19), chunk 25/29
+[05:47:31 +1h 4m 58s | pqshield] Extracting interactions: https://pqshield.com/products/pqc-cor (5/19), chunk 26/29
+[05:47:34 +1h 5m 1s | pqshield] Extracting interactions: https://pqshield.com/products/pqc-cor (5/19), chunk 29/29
+[05:47:52 +1h 5m 19s | pqshield] Extracting interactions: https://pqshield.com/pqc-transition-roadmaps-and-guidance (6/19), chunk 3/35
+[05:47:54 +1h 5m 21s | pqshield] Extracting interactions: https://pqshield.com/pqc-transition-roadmaps-and-guidance (6/19), chunk 4/35
+[05:47:56 +1h 5m 23s | pqshield] Extracting interactions: https://pqshield.com/pqc-transition-roadmaps-and-guidance (6/19), chunk 5/35
+[05:48:21 +1h 5m 45s | pqshield] Extracting interactions: https://pqshield.com/pqc-transition-roadmaps-and-guidance (6/19), chunk 6/35
+[05:48:32 +1h 5m 56s | pqshield] Extracting interactions: https://pqshield.com/pqc-transition-roadmaps-and-guidance (6/19), chunk 7/35
+[05:48:37 +1h 5m 57s | pqshield] Extracting interactions: https://pqshield.com/pqc-transition-roadmaps-and-guidance (6/19), chunk 8/35
+[05:48:40 +1h 6m 0s | pqshield] Extracting interactions: https://pqshield.com/pqc-transition-roadmaps-and-guidance (6/19), chunk 9/35
+[05:48:41 +1h 6m 2s | pqshield] Extracting interactions: https://pqshield.com/pqc-transition-roadmaps-and-guidance (6/19), chunk 10/35
+[05:48:42 +1h 6m 3s | pqshield] Extracting interactions: https://pqshield.com/pqc-transition-roadmaps-and-guidance (6/19), chunk 11/35
+[05:48:44 +1h 6m 5s | pqshield] Extracting interactions: https://pqshield.com/pqc-transition-roadmaps-and-guidance (6/19), chunk 13/35
+[05:48:46 +1h 6m 6s | pqshield] Extracting interactions: https://pqshield.com/pqc-transition-roadmaps-and-guidance (6/19), chunk 14/35
+[05:48:47 +1h 6m 8s | pqshield] Extracting interactions: https://pqshield.com/pqc-transition-roadmaps-and-guidance (6/19), chunk 16/35
+[05:48:51 +1h 6m 12s | pqshield] Extracting interactions: https://pqshield.com/pqc-transition-roadmaps-and-guidance (6/19), chunk 17/35
+[05:49:02 +1h 6m 23s | pqshield] Extracting interactions: https://pqshield.com/pqc-transition-roadmaps-and-guidance (6/19), chunk 18/35
+[05:49:20 +1h 6m 38s | pqshield] Extracting interactions: https://pqshield.com/pqc-transition-roadmaps-and-guidance (6/19), chunk 19/35
+[05:49:22 +1h 6m 40s | pqshield] Extracting interactions: https://pqshield.com/pqc-transition-roadmaps-and-guidance (6/19), chunk 22/35
+[05:49:26 +1h 6m 44s | pqshield] Extracting interactions: https://pqshield.com/pqc-transition-roadmaps-and-guidance (6/19), chunk 23/35
+[05:49:30 +1h 6m 47s | pqshield] Extracting interactions: https://pqshield.com/pqc-transition-roadmaps-and-guidance (6/19), chunk 24/35
+[05:49:34 +1h 6m 52s | pqshield] Extracting interactions: https://pqshield.com/pqc-transition-roadmaps-and-guidance (6/19), chunk 25/35
+[05:49:43 +1h 7m 0s | pqshield] Extracting interactions: https://pqshield.com/pqc-transition-roadmaps-and-guidance (6/19), chunk 26/35
+[05:49:51 +1h 7m 5s | pqshield] Extracting interactions: https://pqshield.com/pqc-transition-roadmaps-and-guidance (6/19), chunk 27/35
+[05:49:56 +1h 7m 11s | pqshield] Extracting interactions: https://pqshield.com/pqc-transition-roadmaps-and-guidance (6/19), chunk 28/35
+[05:50:05 +1h 7m 20s | pqshield] Extracting interactions: https://pqshield.com/pqc-transition-roadmaps-and-guidance (6/19), chunk 29/35
+[05:50:09 +1h 7m 23s | pqshield] Extracting interactions: https://pqshield.com/pqc-transition-roadmaps-and-guidance (6/19), chunk 30/35
+[05:50:13 +1h 7m 28s | pqshield] Extracting interactions: https://pqshield.com/pqc-transition-roadmaps-and-guidance (6/19), chunk 31/35
+[05:50:27 +1h 7m 38s | pqshield] Extracting interactions: https://pqshield.com/pqc-transition-roadmaps-and-guidance (6/19), chunk 32/35
+[05:50:31 +1h 7m 42s | pqshield] Extracting interactions: https://pqshield.com/pqc-transition-roadmaps-and-guidance (6/19), chunk 35/35
+[05:50:47 +1h 7m 58s | pqshield] Extracting interactions: https://pqshield.com/products/pqf-flx (7/19), chunk 3/29
+[05:51:02 +1h 8m 11s | pqshield] Extracting interactions: https://pqshield.com/products/pqf-flx (7/19), chunk 4/29
+[05:51:04 +1h 8m 13s | pqshield] Extracting interactions: https://pqshield.com/products/pqf-flx (7/19), chunk 5/29
+[05:51:23 +1h 8m 32s | pqshield] Extracting interactions: https://pqshield.com/products/pqf-flx (7/19), chunk 6/29
+[05:51:50 +1h 8m 55s | pqshield] Extracting interactions: https://pqshield.com/products/pqf-flx (7/19), chunk 7/29
+[05:51:51 +1h 8m 57s | pqshield] Extracting interactions: https://pqshield.com/products/pqf-flx (7/19), chunk 8/29
+[05:51:52 +1h 8m 58s | pqshield] Extracting interactions: https://pqshield.com/products/pqf-flx (7/19), chunk 9/29
+[05:51:54 +1h 9m 0s | pqshield] Extracting interactions: https://pqshield.com/products/pqf-flx (7/19), chunk 10/29
+[05:51:55 +1h 9m 1s | pqshield] Extracting interactions: https://pqshield.com/products/pqf-flx (7/19), chunk 11/29
+[05:51:57 +1h 9m 3s | pqshield] Extracting interactions: https://pqshield.com/products/pqf-flx (7/19), chunk 13/29
+[05:51:59 +1h 9m 5s | pqshield] Extracting interactions: https://pqshield.com/products/pqf-flx (7/19), chunk 14/29
+[05:52:02 +1h 9m 8s | pqshield] Extracting interactions: https://pqshield.com/products/pqf-flx (7/19), chunk 16/29
+[05:52:03 +1h 9m 9s | pqshield] Extracting interactions: https://pqshield.com/products/pqf-flx (7/19), chunk 17/29
+[05:52:21 +1h 9m 23s | pqshield] Extracting interactions: https://pqshield.com/products/pqf-flx (7/19), chunk 18/29
+[05:52:38 +1h 9m 40s | pqshield] Extracting interactions: https://pqshield.com/products/pqf-flx (7/19), chunk 19/29
+[05:52:40 +1h 9m 42s | pqshield] Extracting interactions: https://pqshield.com/products/pqf-flx (7/19), chunk 24/29
+[05:52:48 +1h 9m 48s | pqshield] Extracting interactions: https://pqshield.com/products/pqf-flx (7/19), chunk 25/29
+[05:52:56 +1h 9m 56s | pqshield] Extracting interactions: https://pqshield.com/products/pqf-flx (7/19), chunk 26/29
+[05:52:59 +1h 9m 59s | pqshield] Extracting interactions: https://pqshield.com/products/pqf-flx (7/19), chunk 29/29
+[05:53:21 +1h 10m 18s | pqshield] Extracting interactions: https://pqshield.com/products/pqf-inf (8/19), chunk 3/30
+[05:53:23 +1h 10m 20s | pqshield] Extracting interactions: https://pqshield.com/products/pqf-inf (8/19), chunk 4/30
+[05:53:24 +1h 10m 21s | pqshield] Extracting interactions: https://pqshield.com/products/pqf-inf (8/19), chunk 5/30
+[05:53:46 +1h 10m 43s | pqshield] Extracting interactions: https://pqshield.com/products/pqf-inf (8/19), chunk 6/30
+[05:54:01 +1h 10m 55s | pqshield] Extracting interactions: https://pqshield.com/products/pqf-inf (8/19), chunk 7/30
+[05:54:03 +1h 10m 56s | pqshield] Extracting interactions: https://pqshield.com/products/pqf-inf (8/19), chunk 8/30
+[05:54:04 +1h 10m 58s | pqshield] Extracting interactions: https://pqshield.com/products/pqf-inf (8/19), chunk 9/30
+[05:54:06 +1h 10m 59s | pqshield] Extracting interactions: https://pqshield.com/products/pqf-inf (8/19), chunk 10/30
+[05:54:10 +1h 11m 3s | pqshield] Extracting interactions: https://pqshield.com/products/pqf-inf (8/19), chunk 11/30
+[05:54:11 +1h 11m 5s | pqshield] Extracting interactions: https://pqshield.com/products/pqf-inf (8/19), chunk 13/30
+[05:54:13 +1h 11m 6s | pqshield] Extracting interactions: https://pqshield.com/products/pqf-inf (8/19), chunk 14/30
+[05:54:15 +1h 11m 8s | pqshield] Extracting interactions: https://pqshield.com/products/pqf-inf (8/19), chunk 16/30
+[05:54:36 +1h 11m 27s | pqshield] Extracting interactions: https://pqshield.com/products/pqf-inf (8/19), chunk 17/30
+[05:54:46 +1h 11m 37s | pqshield] Extracting interactions: https://pqshield.com/products/pqf-inf (8/19), chunk 18/30
+[05:54:58 +1h 11m 49s | pqshield] Extracting interactions: https://pqshield.com/products/pqf-inf (8/19), chunk 19/30
+[05:55:00 +1h 11m 50s | pqshield] Extracting interactions: https://pqshield.com/products/pqf-inf (8/19), chunk 24/30
+[05:55:01 +1h 11m 52s | pqshield] Extracting interactions: https://pqshield.com/products/pqf-inf (8/19), chunk 25/30
+[05:55:09 +1h 11m 57s | pqshield] Extracting interactions: https://pqshield.com/products/pqf-inf (8/19), chunk 26/30
+[05:55:16 +1h 12m 4s | pqshield] Extracting interactions: https://pqshield.com/products/pqf-inf (8/19), chunk 27/30
+[05:55:21 +1h 12m 8s | pqshield] Extracting interactions: https://pqshield.com/products/pqf-inf (8/19), chunk 30/30
+[05:55:41 +1h 12m 26s | pqshield] Extracting interactions: https://pqshield.com/products/pqp-cop (9/19), chunk 3/29
+[05:55:43 +1h 12m 28s | pqshield] Extracting interactions: https://pqshield.com/products/pqp-cop (9/19), chunk 4/29
+[05:55:46 +1h 12m 30s | pqshield] Extracting interactions: https://pqshield.com/products/pqp-cop (9/19), chunk 5/29
+[05:56:04 +1h 12m 48s | pqshield] Extracting interactions: https://pqshield.com/products/pqp-cop (9/19), chunk 6/29
+[05:56:30 +1h 13m 12s | pqshield] Extracting interactions: https://pqshield.com/products/pqp-cop (9/19), chunk 7/29
+[05:56:34 +1h 13m 15s | pqshield] Extracting interactions: https://pqshield.com/products/pqp-cop (9/19), chunk 8/29
+[05:56:35 +1h 13m 16s | pqshield] Extracting interactions: https://pqshield.com/products/pqp-cop (9/19), chunk 9/29
+[05:56:36 +1h 13m 18s | pqshield] Extracting interactions: https://pqshield.com/products/pqp-cop (9/19), chunk 10/29
+[05:56:38 +1h 13m 19s | pqshield] Extracting interactions: https://pqshield.com/products/pqp-cop (9/19), chunk 11/29
+[05:56:39 +1h 13m 21s | pqshield] Extracting interactions: https://pqshield.com/products/pqp-cop (9/19), chunk 13/29
+[05:56:41 +1h 13m 22s | pqshield] Extracting interactions: https://pqshield.com/products/pqp-cop (9/19), chunk 14/29
+[05:56:43 +1h 13m 24s | pqshield] Extracting interactions: https://pqshield.com/products/pqp-cop (9/19), chunk 16/29
+[05:56:44 +1h 13m 26s | pqshield] Extracting interactions: https://pqshield.com/products/pqp-cop (9/19), chunk 17/29
+[05:56:58 +1h 13m 36s | pqshield] Extracting interactions: https://pqshield.com/products/pqp-cop (9/19), chunk 18/29
+[05:57:07 +1h 13m 45s | pqshield] Extracting interactions: https://pqshield.com/products/pqp-cop (9/19), chunk 19/29
+[05:57:08 +1h 13m 47s | pqshield] Extracting interactions: https://pqshield.com/products/pqp-cop (9/19), chunk 24/29
+[05:57:12 +1h 13m 51s | pqshield] Extracting interactions: https://pqshield.com/products/pqp-cop (9/19), chunk 25/29
+[05:57:18 +1h 13m 57s | pqshield] Extracting interactions: https://pqshield.com/products/pqp-cop (9/19), chunk 26/29
+[05:57:21 +1h 14m 0s | pqshield] Extracting interactions: https://pqshield.com/products/pqp-cop (9/19), chunk 29/29
+[05:57:40 +1h 14m 15s | pqshield] Extracting interactions: https://pqshield.com/products/pqm-cor (10/19), chunk 3/30
+[05:57:41 +1h 14m 17s | pqshield] Extracting interactions: https://pqshield.com/products/pqm-cor (10/19), chunk 4/30
+[05:57:43 +1h 14m 18s | pqshield] Extracting interactions: https://pqshield.com/products/pqm-cor (10/19), chunk 5/30
+[05:58:00 +1h 14m 35s | pqshield] Extracting interactions: https://pqshield.com/products/pqm-cor (10/19), chunk 6/30
+[05:58:12 +1h 14m 48s | pqshield] Extracting interactions: https://pqshield.com/products/pqm-cor (10/19), chunk 7/30
+[05:58:18 +1h 14m 49s | pqshield] Extracting interactions: https://pqshield.com/products/pqm-cor (10/19), chunk 8/30
+[05:58:20 +1h 14m 51s | pqshield] Extracting interactions: https://pqshield.com/products/pqm-cor (10/19), chunk 9/30
+[05:58:21 +1h 14m 52s | pqshield] Extracting interactions: https://pqshield.com/products/pqm-cor (10/19), chunk 10/30
+[05:58:24 +1h 14m 55s | pqshield] Extracting interactions: https://pqshield.com/products/pqm-cor (10/19), chunk 11/30
+[05:58:26 +1h 14m 57s | pqshield] Extracting interactions: https://pqshield.com/products/pqm-cor (10/19), chunk 13/30
+[05:58:28 +1h 14m 59s | pqshield] Extracting interactions: https://pqshield.com/products/pqm-cor (10/19), chunk 14/30
+[05:58:29 +1h 15m 0s | pqshield] Extracting interactions: https://pqshield.com/products/pqm-cor (10/19), chunk 16/30
+[05:58:32 +1h 15m 3s | pqshield] Extracting interactions: https://pqshield.com/products/pqm-cor (10/19), chunk 17/30
+[05:58:43 +1h 15m 14s | pqshield] Extracting interactions: https://pqshield.com/products/pqm-cor (10/19), chunk 18/30
+[05:59:01 +1h 15m 29s | pqshield] Extracting interactions: https://pqshield.com/products/pqm-cor (10/19), chunk 19/30
+[05:59:04 +1h 15m 32s | pqshield] Extracting interactions: https://pqshield.com/products/pqm-cor (10/19), chunk 20/30
+[05:59:10 +1h 15m 38s | pqshield] Extracting interactions: https://pqshield.com/products/pqm-cor (10/19), chunk 21/30
+[05:59:14 +1h 15m 42s | pqshield] Extracting interactions: https://pqshield.com/products/pqm-cor (10/19), chunk 24/30
+[05:59:16 +1h 15m 43s | pqshield] Extracting interactions: https://pqshield.com/products/pqm-cor (10/19), chunk 25/30
+[05:59:22 +1h 15m 49s | pqshield] Extracting interactions: https://pqshield.com/products/pqm-cor (10/19), chunk 26/30
+[05:59:32 +1h 15m 56s | pqshield] Extracting interactions: https://pqshield.com/products/pqm-cor (10/19), chunk 27/30
+[05:59:35 +1h 16m 0s | pqshield] Extracting interactions: https://pqshield.com/products/pqm-cor (10/19), chunk 30/30
+[05:59:52 +1h 16m 17s | pqshield] Extracting interactions: https://pqshield.com (11/19), chunk 2/65
+[06:00:00 +1h 16m 24s | pqshield] Extracting interactions: https://pqshield.com (11/19), chunk 3/65
+[06:00:04 +1h 16m 26s | pqshield] Extracting interactions: https://pqshield.com (11/19), chunk 4/65
+[06:00:23 +1h 16m 45s | pqshield] Extracting interactions: https://pqshield.com (11/19), chunk 5/65
+[06:00:51 +1h 17m 10s | pqshield] Extracting interactions: https://pqshield.com (11/19), chunk 6/65
+[06:00:53 +1h 17m 11s | pqshield] Extracting interactions: https://pqshield.com (11/19), chunk 7/65
+[06:00:54 +1h 17m 13s | pqshield] Extracting interactions: https://pqshield.com (11/19), chunk 8/65
+[06:00:56 +1h 17m 14s | pqshield] Extracting interactions: https://pqshield.com (11/19), chunk 9/65
+[06:00:58 +1h 17m 16s | pqshield] Extracting interactions: https://pqshield.com (11/19), chunk 10/65
+[06:00:59 +1h 17m 18s | pqshield] Extracting interactions: https://pqshield.com (11/19), chunk 11/65
+[06:01:01 +1h 17m 19s | pqshield] Extracting interactions: https://pqshield.com (11/19), chunk 12/65
+[06:01:09 +1h 17m 27s | pqshield] Extracting interactions: https://pqshield.com (11/19), chunk 14/65
+[06:01:10 +1h 17m 29s | pqshield] Extracting interactions: https://pqshield.com (11/19), chunk 15/65
+[06:01:26 +1h 17m 41s | pqshield] Extracting interactions: https://pqshield.com (11/19), chunk 16/65
+[06:01:38 +1h 17m 54s | pqshield] Extracting interactions: https://pqshield.com (11/19), chunk 17/65
+[06:01:40 +1h 17m 55s | pqshield] Extracting interactions: https://pqshield.com (11/19), chunk 19/65
+[06:01:44 +1h 18m 0s | pqshield] Extracting interactions: https://pqshield.com (11/19), chunk 20/65
+[06:01:54 +1h 18m 6s | pqshield] Extracting interactions: https://pqshield.com (11/19), chunk 21/65
+[06:02:00 +1h 18m 12s | pqshield] Extracting interactions: https://pqshield.com (11/19), chunk 22/65
+[06:02:09 +1h 18m 22s | pqshield] Extracting interactions: https://pqshield.com (11/19), chunk 23/65
+[06:02:15 +1h 18m 28s | pqshield] Extracting interactions: https://pqshield.com (11/19), chunk 24/65
+[06:02:20 +1h 18m 32s | pqshield] Extracting interactions: https://pqshield.com (11/19), chunk 49/65
+[06:02:26 +1h 18m 35s | pqshield] Extracting interactions: https://pqshield.com (11/19), chunk 50/65
+[06:02:31 +1h 18m 40s | pqshield] Extracting interactions: https://pqshield.com (11/19), chunk 51/65
+[06:02:34 +1h 18m 44s | pqshield] Extracting interactions: https://pqshield.com (11/19), chunk 52/65
+[06:02:38 +1h 18m 48s | pqshield] Extracting interactions: https://pqshield.com (11/19), chunk 54/65
+[06:02:44 +1h 18m 53s | pqshield] Extracting interactions: https://pqshield.com (11/19), chunk 58/65
+[06:02:49 +1h 18m 58s | pqshield] Extracting interactions: https://pqshield.com (11/19), chunk 59/65
+[06:02:54 +1h 19m 4s | pqshield] Extracting interactions: https://pqshield.com (11/19), chunk 60/65
+[06:03:01 +1h 19m 7s | pqshield] Extracting interactions: https://pqshield.com (11/19), chunk 61/65
+[06:03:06 +1h 19m 12s | pqshield] Extracting interactions: https://pqshield.com (11/19), chunk 62/65
+[06:03:09 +1h 19m 16s | pqshield] Extracting interactions: https://pqshield.com (11/19), chunk 65/65
+[06:03:25 +1h 19m 32s | pqshield] Extracting interactions: https://pqshield.com/products (12/19), chunk 2/32
+[06:03:41 +1h 19m 44s | pqshield] Extracting interactions: https://pqshield.com/products (12/19), chunk 3/32
+[06:03:42 +1h 19m 46s | pqshield] Extracting interactions: https://pqshield.com/products (12/19), chunk 4/32
+[06:04:01 +1h 20m 4s | pqshield] Extracting interactions: https://pqshield.com/products (12/19), chunk 5/32
+[06:04:24 +1h 20m 24s | pqshield] Extracting interactions: https://pqshield.com/products (12/19), chunk 6/32
+[06:04:25 +1h 20m 26s | pqshield] Extracting interactions: https://pqshield.com/products (12/19), chunk 7/32
+[06:04:27 +1h 20m 27s | pqshield] Extracting interactions: https://pqshield.com/products (12/19), chunk 8/32
+[06:04:28 +1h 20m 29s | pqshield] Extracting interactions: https://pqshield.com/products (12/19), chunk 9/32
+[06:04:30 +1h 20m 30s | pqshield] Extracting interactions: https://pqshield.com/products (12/19), chunk 10/32
+[06:04:31 +1h 20m 32s | pqshield] Extracting interactions: https://pqshield.com/products (12/19), chunk 11/32
+[06:04:33 +1h 20m 33s | pqshield] Extracting interactions: https://pqshield.com/products (12/19), chunk 12/32
+[06:04:39 +1h 20m 39s | pqshield] Extracting interactions: https://pqshield.com/products (12/19), chunk 14/32
+[06:04:42 +1h 20m 42s | pqshield] Extracting interactions: https://pqshield.com/products (12/19), chunk 15/32
+[06:04:54 +1h 20m 51s | pqshield] Extracting interactions: https://pqshield.com/products (12/19), chunk 16/32
+[06:05:05 +1h 21m 2s | pqshield] Extracting interactions: https://pqshield.com/products (12/19), chunk 17/32
+[06:05:06 +1h 21m 3s | pqshield] Extracting interactions: https://pqshield.com/products (12/19), chunk 18/32
+[06:05:08 +1h 21m 5s | pqshield] Extracting interactions: https://pqshield.com/products (12/19), chunk 20/32
+[06:05:12 +1h 21m 9s | pqshield] Extracting interactions: https://pqshield.com/products (12/19), chunk 21/32
+[06:05:17 +1h 21m 14s | pqshield] Extracting interactions: https://pqshield.com/products (12/19), chunk 22/32
+[06:05:24 +1h 21m 18s | pqshield] Extracting interactions: https://pqshield.com/products (12/19), chunk 25/32
+[06:05:31 +1h 21m 24s | pqshield] Extracting interactions: https://pqshield.com/products (12/19), chunk 26/32
+[06:05:36 +1h 21m 30s | pqshield] Extracting interactions: https://pqshield.com/products (12/19), chunk 27/32
+[06:05:40 +1h 21m 34s | pqshield] Extracting interactions: https://pqshield.com/products (12/19), chunk 28/32
+[06:05:43 +1h 21m 37s | pqshield] Extracting interactions: https://pqshield.com/products (12/19), chunk 29/32
+[06:05:47 +1h 21m 41s | pqshield] Extracting interactions: https://pqshield.com/products (12/19), chunk 32/32
+[06:06:06 +1h 21m 57s | pqshield] Extracting interactions: https://pqshield.com/products/pqc-sdk (13/19), chunk 3/29
+[06:06:08 +1h 21m 58s | pqshield] Extracting interactions: https://pqshield.com/products/pqc-sdk (13/19), chunk 4/29
+[06:06:09 +1h 22m 0s | pqshield] Extracting interactions: https://pqshield.com/products/pqc-sdk (13/19), chunk 5/29
+[06:06:23 +1h 22m 14s | pqshield] Extracting interactions: https://pqshield.com/products/pqc-sdk (13/19), chunk 6/29
+[06:06:37 +1h 22m 25s | pqshield] Extracting interactions: https://pqshield.com/products/pqc-sdk (13/19), chunk 7/29
+[06:06:39 +1h 22m 27s | pqshield] Extracting interactions: https://pqshield.com/products/pqc-sdk (13/19), chunk 8/29
+[06:06:40 +1h 22m 28s | pqshield] Extracting interactions: https://pqshield.com/products/pqc-sdk (13/19), chunk 9/29
+[06:06:42 +1h 22m 30s | pqshield] Extracting interactions: https://pqshield.com/products/pqc-sdk (13/19), chunk 10/29
+[06:06:44 +1h 22m 32s | pqshield] Extracting interactions: https://pqshield.com/products/pqc-sdk (13/19), chunk 11/29
+[06:06:45 +1h 22m 33s | pqshield] Extracting interactions: https://pqshield.com/products/pqc-sdk (13/19), chunk 13/29
+[06:06:47 +1h 22m 35s | pqshield] Extracting interactions: https://pqshield.com/products/pqc-sdk (13/19), chunk 14/29
+[06:06:49 +1h 22m 37s | pqshield] Extracting interactions: https://pqshield.com/products/pqc-sdk (13/19), chunk 16/29
+[06:06:51 +1h 22m 39s | pqshield] Extracting interactions: https://pqshield.com/products/pqc-sdk (13/19), chunk 17/29
+[06:07:03 +1h 22m 51s | pqshield] Extracting interactions: https://pqshield.com/products/pqc-sdk (13/19), chunk 18/29
+[06:07:17 +1h 23m 1s | pqshield] Extracting interactions: https://pqshield.com/products/pqc-sdk (13/19), chunk 19/29
+[06:07:18 +1h 23m 3s | pqshield] Extracting interactions: https://pqshield.com/products/pqc-sdk (13/19), chunk 20/29
+[06:07:26 +1h 23m 11s | pqshield] Extracting interactions: https://pqshield.com/products/pqc-sdk (13/19), chunk 21/29
+[06:07:32 +1h 23m 16s | pqshield] Extracting interactions: https://pqshield.com/products/pqc-sdk (13/19), chunk 22/29
+[06:07:35 +1h 23m 20s | pqshield] Extracting interactions: https://pqshield.com/products/pqc-sdk (13/19), chunk 23/29
+[06:07:45 +1h 23m 27s | pqshield] Extracting interactions: https://pqshield.com/products/pqc-sdk (13/19), chunk 24/29
+[06:07:57 +1h 23m 40s | pqshield] Extracting interactions: https://pqshield.com/products/pqc-sdk (13/19), chunk 25/29
+[06:08:03 +1h 23m 46s | pqshield] Extracting interactions: https://pqshield.com/products/pqc-sdk (13/19), chunk 26/29
+[06:08:09 +1h 23m 52s | pqshield] Extracting interactions: https://pqshield.com/products/pqc-sdk (13/19), chunk 29/29
+[06:08:31 +1h 24m 10s | pqshield] Extracting interactions: https://pqshield.com/products/pqp-tru (14/19), chunk 3/29
+[06:08:40 +1h 24m 19s | pqshield] Extracting interactions: https://pqshield.com/products/pqp-tru (14/19), chunk 4/29
+[06:08:42 +1h 24m 21s | pqshield] Extracting interactions: https://pqshield.com/products/pqp-tru (14/19), chunk 5/29
+[06:09:01 +1h 24m 38s | pqshield] Extracting interactions: https://pqshield.com/products/pqp-tru (14/19), chunk 6/29
+[06:09:19 +1h 24m 56s | pqshield] Extracting interactions: https://pqshield.com/products/pqp-tru (14/19), chunk 7/29
+[06:09:21 +1h 24m 58s | pqshield] Extracting interactions: https://pqshield.com/products/pqp-tru (14/19), chunk 8/29
+[06:09:23 +1h 24m 59s | pqshield] Extracting interactions: https://pqshield.com/products/pqp-tru (14/19), chunk 9/29
+[06:09:24 +1h 25m 1s | pqshield] Extracting interactions: https://pqshield.com/products/pqp-tru (14/19), chunk 10/29
+[06:09:29 +1h 25m 2s | pqshield] Extracting interactions: https://pqshield.com/products/pqp-tru (14/19), chunk 11/29
+[06:09:30 +1h 25m 4s | pqshield] Extracting interactions: https://pqshield.com/products/pqp-tru (14/19), chunk 13/29
+[06:09:32 +1h 25m 5s | pqshield] Extracting interactions: https://pqshield.com/products/pqp-tru (14/19), chunk 14/29
+[06:09:33 +1h 25m 7s | pqshield] Extracting interactions: https://pqshield.com/products/pqp-tru (14/19), chunk 16/29
+[06:09:35 +1h 25m 9s | pqshield] Extracting interactions: https://pqshield.com/products/pqp-tru (14/19), chunk 17/29
+[06:09:47 +1h 25m 20s | pqshield] Extracting interactions: https://pqshield.com/products/pqp-tru (14/19), chunk 18/29
+[06:10:00 +1h 25m 33s | pqshield] Extracting interactions: https://pqshield.com/products/pqp-tru (14/19), chunk 19/29
+[06:10:05 +1h 25m 35s | pqshield] Extracting interactions: https://pqshield.com/products/pqp-tru (14/19), chunk 24/29
+[06:10:10 +1h 25m 40s | pqshield] Extracting interactions: https://pqshield.com/products/pqp-tru (14/19), chunk 25/29
+[06:10:15 +1h 25m 45s | pqshield] Extracting interactions: https://pqshield.com/products/pqp-tru (14/19), chunk 26/29
+[06:10:18 +1h 25m 48s | pqshield] Extracting interactions: https://pqshield.com/products/pqp-tru (14/19), chunk 29/29
+[06:10:33 +1h 26m 4s | pqshield] Extracting interactions: https://pqshield.com/products/pqf-flr (15/19), chunk 3/30
+[06:10:47 +1h 26m 15s | pqshield] Extracting interactions: https://pqshield.com/products/pqf-flr (15/19), chunk 4/30
+[06:10:49 +1h 26m 17s | pqshield] Extracting interactions: https://pqshield.com/products/pqf-flr (15/19), chunk 5/30
+[06:11:06 +1h 26m 33s | pqshield] Extracting interactions: https://pqshield.com/products/pqf-flr (15/19), chunk 6/30
+[06:11:26 +1h 26m 54s | pqshield] Extracting interactions: https://pqshield.com/products/pqf-flr (15/19), chunk 7/30
+[06:11:31 +1h 26m 55s | pqshield] Extracting interactions: https://pqshield.com/products/pqf-flr (15/19), chunk 8/30
+[06:11:33 +1h 26m 57s | pqshield] Extracting interactions: https://pqshield.com/products/pqf-flr (15/19), chunk 9/30
+[06:11:34 +1h 26m 58s | pqshield] Extracting interactions: https://pqshield.com/products/pqf-flr (15/19), chunk 10/30
+[06:11:36 +1h 27m 0s | pqshield] Extracting interactions: https://pqshield.com/products/pqf-flr (15/19), chunk 11/30
+[06:11:38 +1h 27m 2s | pqshield] Extracting interactions: https://pqshield.com/products/pqf-flr (15/19), chunk 13/30
+[06:11:40 +1h 27m 4s | pqshield] Extracting interactions: https://pqshield.com/products/pqf-flr (15/19), chunk 14/30
+[06:11:44 +1h 27m 8s | pqshield] Extracting interactions: https://pqshield.com/products/pqf-flr (15/19), chunk 16/30
+[06:11:45 +1h 27m 9s | pqshield] Extracting interactions: https://pqshield.com/products/pqf-flr (15/19), chunk 17/30
+[06:11:58 +1h 27m 22s | pqshield] Extracting interactions: https://pqshield.com/products/pqf-flr (15/19), chunk 18/30
+[06:12:10 +1h 27m 35s | pqshield] Extracting interactions: https://pqshield.com/products/pqf-flr (15/19), chunk 19/30
+[06:12:13 +1h 27m 38s | pqshield] Extracting interactions: https://pqshield.com/products/pqf-flr (15/19), chunk 24/30
+[06:12:14 +1h 27m 40s | pqshield] Extracting interactions: https://pqshield.com/products/pqf-flr (15/19), chunk 25/30
+[06:12:19 +1h 27m 44s | pqshield] Extracting interactions: https://pqshield.com/products/pqf-flr (15/19), chunk 26/30
+[06:12:24 +1h 27m 50s | pqshield] Extracting interactions: https://pqshield.com/products/pqf-flr (15/19), chunk 27/30
+[06:12:29 +1h 27m 54s | pqshield] Extracting interactions: https://pqshield.com/products/pqf-flr (15/19), chunk 30/30
+[06:12:47 +1h 28m 11s | pqshield] Extracting interactions: https://pqshield.com/markets/identity-paymentech (16/19), chunk 3/29
+[06:12:48 +1h 28m 12s | pqshield] Extracting interactions: https://pqshield.com/markets/identity-paymentech (16/19), chunk 4/29
+[06:12:50 +1h 28m 14s | pqshield] Extracting interactions: https://pqshield.com/markets/identity-paymentech (16/19), chunk 5/29
+[06:13:16 +1h 28m 38s | pqshield] Extracting interactions: https://pqshield.com/markets/identity-paymentech (16/19), chunk 6/29
+[06:13:34 +1h 28m 56s | pqshield] Extracting interactions: https://pqshield.com/markets/identity-paymentech (16/19), chunk 7/29
+[06:13:36 +1h 28m 58s | pqshield] Extracting interactions: https://pqshield.com/markets/identity-paymentech (16/19), chunk 8/29
+[06:13:37 +1h 28m 59s | pqshield] Extracting interactions: https://pqshield.com/markets/identity-paymentech (16/19), chunk 9/29
+[06:13:39 +1h 29m 1s | pqshield] Extracting interactions: https://pqshield.com/markets/identity-paymentech (16/19), chunk 10/29
+[06:13:40 +1h 29m 2s | pqshield] Extracting interactions: https://pqshield.com/markets/identity-paymentech (16/19), chunk 11/29
+[06:13:44 +1h 29m 4s | pqshield] Extracting interactions: https://pqshield.com/markets/identity-paymentech (16/19), chunk 13/29
+[06:13:47 +1h 29m 7s | pqshield] Extracting interactions: https://pqshield.com/markets/identity-paymentech (16/19), chunk 14/29
+[06:13:49 +1h 29m 8s | pqshield] Extracting interactions: https://pqshield.com/markets/identity-paymentech (16/19), chunk 16/29
+[06:13:52 +1h 29m 12s | pqshield] Extracting interactions: https://pqshield.com/markets/identity-paymentech (16/19), chunk 17/29
+[06:14:02 +1h 29m 22s | pqshield] Extracting interactions: https://pqshield.com/markets/identity-paymentech (16/19), chunk 18/29
+[06:14:26 +1h 29m 43s | pqshield] Extracting interactions: https://pqshield.com/markets/identity-paymentech (16/19), chunk 19/29
+[06:14:28 +1h 29m 45s | pqshield] Extracting interactions: https://pqshield.com/markets/identity-paymentech (16/19), chunk 20/29
+[06:14:31 +1h 29m 48s | pqshield] Extracting interactions: https://pqshield.com/markets/identity-paymentech (16/19), chunk 23/29
+[06:14:34 +1h 29m 52s | pqshield] Extracting interactions: https://pqshield.com/markets/identity-paymentech (16/19), chunk 24/29
+[06:14:41 +1h 29m 59s | pqshield] Extracting interactions: https://pqshield.com/markets/identity-paymentech (16/19), chunk 25/29
+[06:14:47 +1h 30m 5s | pqshield] Extracting interactions: https://pqshield.com/markets/identity-paymentech (16/19), chunk 26/29
+[06:14:53 +1h 30m 9s | pqshield] Extracting interactions: https://pqshield.com/markets/identity-paymentech (16/19), chunk 29/29
+[06:15:11 +1h 30m 27s | pqshield] Extracting interactions: https://pqshield.com/markets/semiconductors-manufacturing (17/19), chunk 3/28
+[06:15:13 +1h 30m 28s | pqshield] Extracting interactions: https://pqshield.com/markets/semiconductors-manufacturing (17/19), chunk 4/28
+[06:15:14 +1h 30m 29s | pqshield] Extracting interactions: https://pqshield.com/markets/semiconductors-manufacturing (17/19), chunk 5/28
+[06:15:42 +1h 30m 55s | pqshield] Extracting interactions: https://pqshield.com/markets/semiconductors-manufacturing (17/19), chunk 6/28
+[06:16:07 +1h 31m 18s | pqshield] Extracting interactions: https://pqshield.com/markets/semiconductors-manufacturing (17/19), chunk 7/28
+[06:16:08 +1h 31m 19s | pqshield] Extracting interactions: https://pqshield.com/markets/semiconductors-manufacturing (17/19), chunk 8/28
+[06:16:10 +1h 31m 21s | pqshield] Extracting interactions: https://pqshield.com/markets/semiconductors-manufacturing (17/19), chunk 9/28
+[06:16:11 +1h 31m 22s | pqshield] Extracting interactions: https://pqshield.com/markets/semiconductors-manufacturing (17/19), chunk 10/28
+[06:16:13 +1h 31m 24s | pqshield] Extracting interactions: https://pqshield.com/markets/semiconductors-manufacturing (17/19), chunk 11/28
+[06:16:15 +1h 31m 26s | pqshield] Extracting interactions: https://pqshield.com/markets/semiconductors-manufacturing (17/19), chunk 13/28
+[06:16:17 +1h 31m 28s | pqshield] Extracting interactions: https://pqshield.com/markets/semiconductors-manufacturing (17/19), chunk 14/28
+[06:16:19 +1h 31m 29s | pqshield] Extracting interactions: https://pqshield.com/markets/semiconductors-manufacturing (17/19), chunk 16/28
+[06:16:20 +1h 31m 31s | pqshield] Extracting interactions: https://pqshield.com/markets/semiconductors-manufacturing (17/19), chunk 17/28
+[06:16:31 +1h 31m 42s | pqshield] Extracting interactions: https://pqshield.com/markets/semiconductors-manufacturing (17/19), chunk 18/28
+[06:16:55 +1h 32m 3s | pqshield] Extracting interactions: https://pqshield.com/markets/semiconductors-manufacturing (17/19), chunk 19/28
+[06:16:56 +1h 32m 5s | pqshield] Extracting interactions: https://pqshield.com/markets/semiconductors-manufacturing (17/19), chunk 20/28
+[06:16:58 +1h 32m 6s | pqshield] Extracting interactions: https://pqshield.com/markets/semiconductors-manufacturing (17/19), chunk 21/28
+[06:17:02 +1h 32m 10s | pqshield] Extracting interactions: https://pqshield.com/markets/semiconductors-manufacturing (17/19), chunk 22/28
+[06:17:05 +1h 32m 14s | pqshield] Extracting interactions: https://pqshield.com/markets/semiconductors-manufacturing (17/19), chunk 23/28
+[06:17:12 +1h 32m 18s | pqshield] Extracting interactions: https://pqshield.com/markets/semiconductors-manufacturing (17/19), chunk 24/28
+[06:17:21 +1h 32m 27s | pqshield] Extracting interactions: https://pqshield.com/markets/semiconductors-manufacturing (17/19), chunk 25/28
+[06:17:25 +1h 32m 31s | pqshield] Extracting interactions: https://pqshield.com/markets/semiconductors-manufacturing (17/19), chunk 28/28
+[06:17:27 +1h 32m 34s | pqshield] Extracting interactions: https://pqshield.com/markets (18/19), chunk 2/29
+[06:17:29 +1h 32m 35s | pqshield] Extracting interactions: https://pqshield.com/markets (18/19), chunk 3/29
+[06:17:30 +1h 32m 37s | pqshield] Extracting interactions: https://pqshield.com/markets (18/19), chunk 4/29
+[06:17:59 +1h 33m 4s | pqshield] Extracting interactions: https://pqshield.com/markets (18/19), chunk 5/29
+[06:18:27 +1h 33m 29s | pqshield] Extracting interactions: https://pqshield.com/markets (18/19), chunk 6/29
+[06:18:28 +1h 33m 30s | pqshield] Extracting interactions: https://pqshield.com/markets (18/19), chunk 7/29
+[06:18:30 +1h 33m 32s | pqshield] Extracting interactions: https://pqshield.com/markets (18/19), chunk 8/29
+[06:18:32 +1h 33m 34s | pqshield] Extracting interactions: https://pqshield.com/markets (18/19), chunk 9/29
+[06:18:34 +1h 33m 36s | pqshield] Extracting interactions: https://pqshield.com/markets (18/19), chunk 10/29
+[06:18:35 +1h 33m 37s | pqshield] Extracting interactions: https://pqshield.com/markets (18/19), chunk 11/29
+[06:18:37 +1h 33m 39s | pqshield] Extracting interactions: https://pqshield.com/markets (18/19), chunk 12/29
+[06:18:40 +1h 33m 42s | pqshield] Extracting interactions: https://pqshield.com/markets (18/19), chunk 14/29
+[06:18:41 +1h 33m 44s | pqshield] Extracting interactions: https://pqshield.com/markets (18/19), chunk 15/29
+[06:18:55 +1h 33m 58s | pqshield] Extracting interactions: https://pqshield.com/markets (18/19), chunk 16/29
+[06:19:07 +1h 34m 9s | pqshield] Extracting interactions: https://pqshield.com/markets (18/19), chunk 17/29
+[06:19:08 +1h 34m 10s | pqshield] Extracting interactions: https://pqshield.com/markets (18/19), chunk 18/29
+[06:19:10 +1h 34m 12s | pqshield] Extracting interactions: https://pqshield.com/markets (18/19), chunk 24/29
+[06:19:14 +1h 34m 16s | pqshield] Extracting interactions: https://pqshield.com/markets (18/19), chunk 25/29
+[06:19:21 +1h 34m 23s | pqshield] Extracting interactions: https://pqshield.com/markets (18/19), chunk 26/29
+[06:19:24 +1h 34m 27s | pqshield] Extracting interactions: https://pqshield.com/markets (18/19), chunk 29/29
+[06:19:44 +1h 34m 45s | pqshield] Extracting interactions: https://pqshield.com/markets/military-aerospace (19/19), chunk 3/29
+[06:19:46 +1h 34m 46s | pqshield] Extracting interactions: https://pqshield.com/markets/military-aerospace (19/19), chunk 4/29
+[06:19:48 +1h 34m 48s | pqshield] Extracting interactions: https://pqshield.com/markets/military-aerospace (19/19), chunk 5/29
+[06:20:07 +1h 35m 7s | pqshield] Extracting interactions: https://pqshield.com/markets/military-aerospace (19/19), chunk 6/29
+[06:20:22 +1h 35m 22s | pqshield] Extracting interactions: https://pqshield.com/markets/military-aerospace (19/19), chunk 7/29
+[06:20:24 +1h 35m 24s | pqshield] Extracting interactions: https://pqshield.com/markets/military-aerospace (19/19), chunk 8/29
+[06:20:25 +1h 35m 25s | pqshield] Extracting interactions: https://pqshield.com/markets/military-aerospace (19/19), chunk 9/29
+[06:20:27 +1h 35m 27s | pqshield] Extracting interactions: https://pqshield.com/markets/military-aerospace (19/19), chunk 10/29
+[06:20:28 +1h 35m 29s | pqshield] Extracting interactions: https://pqshield.com/markets/military-aerospace (19/19), chunk 11/29
+[06:20:30 +1h 35m 30s | pqshield] Extracting interactions: https://pqshield.com/markets/military-aerospace (19/19), chunk 13/29
+[06:20:31 +1h 35m 32s | pqshield] Extracting interactions: https://pqshield.com/markets/military-aerospace (19/19), chunk 14/29
+[06:20:33 +1h 35m 33s | pqshield] Extracting interactions: https://pqshield.com/markets/military-aerospace (19/19), chunk 16/29
+[06:20:36 +1h 35m 36s | pqshield] Extracting interactions: https://pqshield.com/markets/military-aerospace (19/19), chunk 17/29
+[06:20:53 +1h 35m 53s | pqshield] Extracting interactions: https://pqshield.com/markets/military-aerospace (19/19), chunk 18/29
+[06:21:22 +1h 36m 20s | pqshield] Extracting interactions: https://pqshield.com/markets/military-aerospace (19/19), chunk 19/29
+[06:21:23 +1h 36m 22s | pqshield] Extracting interactions: https://pqshield.com/markets/military-aerospace (19/19), chunk 20/29
+[06:21:25 +1h 36m 23s | pqshield] Extracting interactions: https://pqshield.com/markets/military-aerospace (19/19), chunk 23/29
+[06:21:28 +1h 36m 26s | pqshield] Extracting interactions: https://pqshield.com/markets/military-aerospace (19/19), chunk 24/29
+[06:21:34 +1h 36m 33s | pqshield] Extracting interactions: https://pqshield.com/markets/military-aerospace (19/19), chunk 25/29
+[06:21:39 +1h 36m 37s | pqshield] Extracting interactions: https://pqshield.com/markets/military-aerospace (19/19), chunk 26/29
+[06:21:44 +1h 36m 40s | pqshield] Extracting interactions: https://pqshield.com/markets/military-aerospace (19/19), chunk 29/29
+[06:21:45 +1h 36m 42s | pqshield] Saved 3_interaction_results.json with 630 extracted interactions.
+
+[06:21:45 +1h 36m 42s | pqshield] === 4 clean interactions ===
+[06:21:46 +1h 36m 42s | pqshield] Saved 4_edges.json with 46 cleaned interactions.
+
+[06:21:46 +1h 36m 42s | pqshield] === 5 helix enrichment ===
+[06:21:46 +1h 36m 42s | pqshield] Wrote 5_nodes.json (36 actors)
+[06:21:46 +1h 36m 42s | pqshield] Wrote 5_edges.json (46 interactions)
+[06:21:46 +1h 36m 42s | pqshield] Actor helix counts: {'Academia': 2, 'Civil Society': 3, 'Government': 8, 'Industry': 17, 'Intermediary': 1, 'Unknown': 5}
+[06:21:46 +1h 36m 42s | pqshield] Functional-space counts: {'Consensus': 35, 'Intra-helix / Not classified': 11}
+
+[06:21:46 +1h 36m 42s | pqshield] === 6 network visualisation ===
+[06:21:46 +1h 36m 43s | pqshield] Wrote quantum_network.html
+[06:21:46 +1h 36m 43s | pqshield] Nodes: 36
+[06:21:46 +1h 36m 43s | pqshield] Edges: 11
+
+[06:21:46 +1h 36m 43s | pqshield] Done. Outputs written to: /home/lv/IDP/idpdeeptech/pipeline/site_outputs/pqshield
+[06:21:46 +1h 36m 43s | pqshield] Log: /home/lv/IDP/idpdeeptech/pipeline/site_outputs/pqshield/run.log
+
+========================================================================
+RUN FINISHED 2026-06-17 06:21:46  (OK)
+Started:     2026-06-17 04:36:57
+Elapsed:     1h 36m 43s
+========================================================================

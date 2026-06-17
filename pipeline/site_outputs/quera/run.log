@@ -1,0 +1,910 @@
+
+========================================================================
+RUN STARTED  2026-06-17 11:37:37
+site_pipeline.py https://www.quera.com/
+========================================================================
+
+[11:37:37 +0s | quera] === 0 crawl site ===
+[11:37:39 +2s | quera] [INIT].... → Crawl4AI 0.8.6 
+[11:37:41 +4s | quera] [FETCH]... ↓ https://www.quera.com/                                                                               | ✓ | ⏱: 1.66s 
+[11:37:41 +4s | quera] [SCRAPE].. ◆ https://www.quera.com/                                                                               | ✓ | ⏱: 0.10s 
+[11:37:41 +4s | quera] [COMPLETE] ● https://www.quera.com/                                                                               | ✓ | ⏱: 1.81s 
+[11:37:43 +5s | quera] [FETCH]... ↓ https://www.quera.com/                                                                               | ✓ | ⏱: 1.27s 
+[11:37:43 +5s | quera] [SCRAPE].. ◆ https://www.quera.com/                                                                               | ✓ | ⏱: 0.09s 
+[11:37:43 +5s | quera] [COMPLETE] ● https://www.quera.com/                                                                               | ✓ | ⏱: 1.41s 
+[11:37:43 +6s | quera] [FETCH]... ↓ https://www.quera.com/partners                                                                       | ✓ | ⏱: 1.86s 
+[11:37:44 +6s | quera] [SCRAPE].. ◆ https://www.quera.com/partners                                                                       | ✓ | ⏱: 0.15s 
+[11:37:44 +6s | quera] [COMPLETE] ● https://www.quera.com/partners                                                                       | ✓ | ⏱: 2.06s 
+[11:37:44 +7s | quera] [FETCH]... ↓ https://www.quera.com/national-programs                                                              | ✓ | ⏱: 2.88s 
+[11:37:45 +7s | quera] [SCRAPE].. ◆ https://www.quera.com/national-programs                                                              | ✓ | ⏱: 0.08s 
+[11:37:45 +7s | quera] [COMPLETE] ● https://www.quera.com/national-programs                                                              | ✓ | ⏱: 3.01s 
+[11:37:45 +8s | quera] [FETCH]... ↓ https://www.quera.com/publications                                                                   | ✓ | ⏱: 3.42s 
+[11:37:45 +8s | quera] [SCRAPE].. ◆ https://www.quera.com/publications                                                                   | ✓ | ⏱: 0.11s 
+[11:37:45 +8s | quera] [COMPLETE] ● https://www.quera.com/publications                                                                   | ✓ | ⏱: 3.59s 
+[11:37:45 +8s | quera] [FETCH]... ↓ https://www.quera.com/neutral-atom-platform                                                          | ✓ | ⏱: 3.77s 
+[11:37:45 +8s | quera] [SCRAPE].. ◆ https://www.quera.com/neutral-atom-platform                                                          | ✓ | ⏱: 0.09s 
+[11:37:45 +8s | quera] [COMPLETE] ● https://www.quera.com/neutral-atom-platform                                                          | ✓ | ⏱: 3.94s 
+[11:37:46 +8s | quera] [FETCH]... ↓ https://www.quera.com/bloqade                                                                        | ✓ | ⏱: 4.15s 
+[11:37:46 +8s | quera] [SCRAPE].. ◆ https://www.quera.com/bloqade                                                                        | ✓ | ⏱: 0.10s 
+[11:37:46 +9s | quera] [COMPLETE] ● https://www.quera.com/bloqade                                                                        | ✓ | ⏱: 4.31s 
+[11:37:46 +9s | quera] [FETCH]... ↓ https://www.quera.com/hpc-centers                                                                    | ✓ | ⏱: 4.54s 
+[11:37:46 +9s | quera] [SCRAPE].. ◆ https://www.quera.com/hpc-centers                                                                    | ✓ | ⏱: 0.09s 
+[11:37:46 +9s | quera] [COMPLETE] ● https://www.quera.com/hpc-centers                                                                    | ✓ | ⏱: 4.69s 
+[11:37:46 +9s | quera] [FETCH]... ↓ https://www.quera.com/aquila                                                                         | ✓ | ⏱: 4.69s 
+[11:37:46 +9s | quera] [SCRAPE].. ◆ https://www.quera.com/aquila                                                                         | ✓ | ⏱: 0.09s 
+[11:37:46 +9s | quera] [COMPLETE] ● https://www.quera.com/aquila                                                                         | ✓ | ⏱: 4.85s 
+[11:37:47 +10s | quera] [FETCH]... ↓ https://www.quera.com/news                                                                           | ✓ | ⏱: 5.65s 
+[11:37:47 +10s | quera] [SCRAPE].. ◆ https://www.quera.com/news                                                                           | ✓ | ⏱: 0.22s 
+[11:37:47 +10s | quera] [COMPLETE] ● https://www.quera.com/news                                                                           | ✓ | ⏱: 5.94s 
+[11:37:48 +10s | quera] [FETCH]... ↓ https://www.quera.com/vision-mission                                                                 | ✓ | ⏱: 6.14s 
+[11:37:48 +10s | quera] [SCRAPE].. ◆ https://www.quera.com/vision-mission                                                                 | ✓ | ⏱: 0.09s 
+[11:37:48 +10s | quera] [COMPLETE] ● https://www.quera.com/vision-mission                                                                 | ✓ | ⏱: 6.28s 
+[11:37:48 +11s | quera] [FETCH]... ↓ https://www.quera.com/quantum-error-correction                                                       | ✓ | ⏱: 6.33s 
+[11:37:48 +11s | quera] [SCRAPE].. ◆ https://www.quera.com/quantum-error-correction                                                       | ✓ | ⏱: 0.11s 
+[11:37:48 +11s | quera] [COMPLETE] ● https://www.quera.com/quantum-error-correction                                                       | ✓ | ⏱: 6.49s 
+[11:37:48 +11s | quera] [FETCH]... ↓ https://www.quera.com/our-quantum-roadmap                                                            | ✓ | ⏱: 6.50s 
+[11:37:48 +11s | quera] [SCRAPE].. ◆ https://www.quera.com/our-quantum-roadmap                                                            | ✓ | ⏱: 0.09s 
+[11:37:48 +11s | quera] [COMPLETE] ● https://www.quera.com/our-quantum-roadmap                                                            | ✓ | ⏱: 6.64s 
+[11:37:48 +11s | quera] [FETCH]... ↓ https://www.quera.com/enterprise-innovators                                                          | ✓ | ⏱: 6.91s 
+[11:37:49 +11s | quera] [SCRAPE].. ◆ https://www.quera.com/enterprise-innovators                                                          | ✓ | ⏱: 0.13s 
+[11:37:49 +11s | quera] [COMPLETE] ● https://www.quera.com/enterprise-innovators                                                          | ✓ | ⏱: 7.10s 
+[11:37:49 +11s | quera] [FETCH]... ↓ https://www.quera.com/gemini                                                                         | ✓ | ⏱: 7.24s 
+[11:37:49 +12s | quera] [SCRAPE].. ◆ https://www.quera.com/gemini                                                                         | ✓ | ⏱: 0.12s 
+[11:37:49 +12s | quera] [COMPLETE] ● https://www.quera.com/gemini                                                                         | ✓ | ⏱: 7.43s 
+[11:37:49 +12s | quera] [FETCH]... ↓ https://www.quera.com/co-design                                                                      | ✓ | ⏱: 7.93s 
+[11:37:50 +12s | quera] [SCRAPE].. ◆ https://www.quera.com/co-design                                                                      | ✓ | ⏱: 0.10s 
+[11:37:50 +12s | quera] [COMPLETE] ● https://www.quera.com/co-design                                                                      | ✓ | ⏱: 8.08s 
+[11:37:50 +12s | quera] [FETCH]... ↓ https://www.quera.com/blog                                                                           | ✓ | ⏱: 8.09s 
+[11:37:50 +12s | quera] [SCRAPE].. ◆ https://www.quera.com/blog                                                                           | ✓ | ⏱: 0.10s 
+[11:37:50 +12s | quera] [COMPLETE] ● https://www.quera.com/blog                                                                           | ✓ | ⏱: 8.24s 
+[11:37:50 +13s | quera] [FETCH]... ↓ https://www.quera.com/on-premise-quantum-computers                                                   | ✓ | ⏱: 8.31s 
+[11:37:50 +13s | quera] [SCRAPE].. ◆ https://www.quera.com/on-premise-quantum-computers                                                   | ✓ | ⏱: 0.07s 
+[11:37:50 +13s | quera] [COMPLETE] ● https://www.quera.com/on-premise-quantum-computers                                                   | ✓ | ⏱: 8.43s 
+[11:37:50 +13s | quera] [FETCH]... ↓ https://www.quera.com/premium-access                                                                 | ✓ | ⏱: 8.43s 
+[11:37:50 +13s | quera] [SCRAPE].. ◆ https://www.quera.com/premium-access                                                                 | ✓ | ⏱: 0.13s 
+[11:37:50 +13s | quera] [COMPLETE] ● https://www.quera.com/premium-access                                                                 | ✓ | ⏱: 8.60s 
+[11:37:54 +16s | quera] [FETCH]... ↓ https://www.quera.com/about                                                                          | ✓ | ⏱: 12.15s 
+[11:37:54 +17s | quera] [SCRAPE].. ◆ https://www.quera.com/about                                                                          | ✓ | ⏱: 0.17s 
+[11:37:54 +17s | quera] [COMPLETE] ● https://www.quera.com/about                                                                          | ✓ | ⏱: 12.37s 
+[11:37:54 +17s | quera] Saved: crawl_output/48aa9b7b85_www.quera.com.json
+[11:37:54 +17s | quera] Duplicate skipped: https://www.quera.com
+[11:37:54 +17s | quera] Saved: crawl_output/c14ba4f2b5_www.quera.com_partners.json
+[11:37:54 +17s | quera] Saved: crawl_output/28f134d58d_www.quera.com_national-programs.json
+[11:37:54 +17s | quera] Saved: crawl_output/131fd3bf3a_www.quera.com_publications.json
+[11:37:54 +17s | quera] Saved: crawl_output/9bfedc2ab6_www.quera.com_neutral-atom-platform.json
+[11:37:54 +17s | quera] Saved: crawl_output/b896d25751_www.quera.com_bloqade.json
+[11:37:54 +17s | quera] Saved: crawl_output/366c020045_www.quera.com_hpc-centers.json
+[11:37:54 +17s | quera] Saved: crawl_output/e12908cc21_www.quera.com_aquila.json
+[11:37:54 +17s | quera] Saved: crawl_output/939e685b50_www.quera.com_news.json
+[11:37:54 +17s | quera] Saved: crawl_output/554f4b549b_www.quera.com_vision-mission.json
+[11:37:54 +17s | quera] Saved: crawl_output/f103c43acb_www.quera.com_quantum-error-correction.json
+[11:37:54 +17s | quera] Saved: crawl_output/67e4e029be_www.quera.com_our-quantum-roadmap.json
+[11:37:54 +17s | quera] Saved: crawl_output/2ebaf14081_www.quera.com_enterprise-innovators.json
+[11:37:54 +17s | quera] Saved: crawl_output/892ef658ad_www.quera.com_gemini.json
+[11:37:54 +17s | quera] Saved: crawl_output/b5d482063b_www.quera.com_co-design.json
+[11:37:54 +17s | quera] Saved: crawl_output/701a1707a8_www.quera.com_blog.json
+[11:37:54 +17s | quera] Saved: crawl_output/3f256121a0_www.quera.com_on-premise-quantum-computers.json
+[11:37:54 +17s | quera] Saved: crawl_output/0cc8430ae5_www.quera.com_premium-access.json
+[11:37:54 +17s | quera] Saved: crawl_output/629afda29d_www.quera.com_about.json
+
+[11:37:55 +17s | quera] === 1 actor extraction ===
+[11:37:55 +18s | quera] Reading page (1/19): https://www.quera.com/premium-access
+[11:37:55 +18s | quera] Extracting: https://www.quera.com/premium-access (1/19), chunk 1/15
+[11:37:58 +21s | quera] Extracting: https://www.quera.com/premium-access (1/19), chunk 2/15
+[11:38:02 +25s | quera] Extracting: https://www.quera.com/premium-access (1/19), chunk 3/15
+[11:38:11 +34s | quera] Repaired malformed JSON.
+[11:38:11 +34s | quera] Extracting: https://www.quera.com/premium-access (1/19), chunk 4/15
+[11:38:15 +38s | quera] Extracting: https://www.quera.com/premium-access (1/19), chunk 5/15
+[11:38:21 +43s | quera] Repaired malformed JSON.
+[11:38:21 +43s | quera] Extracting: https://www.quera.com/premium-access (1/19), chunk 6/15
+[11:38:29 +52s | quera] Repaired malformed JSON.
+[11:38:29 +52s | quera] Extracting: https://www.quera.com/premium-access (1/19), chunk 7/15
+[11:38:38 +1m 1s | quera] Repaired malformed JSON.
+[11:38:38 +1m 1s | quera] Extracting: https://www.quera.com/premium-access (1/19), chunk 8/15
+[11:38:42 +1m 5s | quera] Extracting: https://www.quera.com/premium-access (1/19), chunk 9/15
+[11:38:47 +1m 9s | quera] Extracting: https://www.quera.com/premium-access (1/19), chunk 10/15
+[11:38:54 +1m 17s | quera] Repaired malformed JSON.
+[11:38:54 +1m 17s | quera] Extracting: https://www.quera.com/premium-access (1/19), chunk 11/15
+[11:39:02 +1m 25s | quera] Extracting: https://www.quera.com/premium-access (1/19), chunk 12/15
+[11:39:08 +1m 30s | quera] Extracting: https://www.quera.com/premium-access (1/19), chunk 13/15
+[11:39:12 +1m 35s | quera] Extracting: https://www.quera.com/premium-access (1/19), chunk 14/15
+[11:39:16 +1m 38s | quera] Extracting: https://www.quera.com/premium-access (1/19), chunk 15/15
+[11:39:23 +1m 46s | quera] Repaired malformed JSON.
+[11:39:23 +1m 46s | quera] Reading page (2/19): https://www.quera.com/publications
+[11:39:23 +1m 46s | quera] Extracting: https://www.quera.com/publications (2/19), chunk 1/15
+[11:39:29 +1m 52s | quera] Extracting: https://www.quera.com/publications (2/19), chunk 2/15
+[11:39:38 +2m 0s | quera] Repaired malformed JSON.
+[11:39:38 +2m 0s | quera] Extracting: https://www.quera.com/publications (2/19), chunk 3/15
+[11:39:48 +2m 11s | quera] Repaired malformed JSON.
+[11:39:48 +2m 11s | quera] Extracting: https://www.quera.com/publications (2/19), chunk 4/15
+[11:39:53 +2m 15s | quera] Extracting: https://www.quera.com/publications (2/19), chunk 5/15
+[11:40:01 +2m 23s | quera] Repaired malformed JSON.
+[11:40:01 +2m 23s | quera] Extracting: https://www.quera.com/publications (2/19), chunk 6/15
+[11:40:08 +2m 30s | quera] Repaired malformed JSON.
+[11:40:08 +2m 30s | quera] Extracting: https://www.quera.com/publications (2/19), chunk 7/15
+[11:40:17 +2m 40s | quera] Repaired malformed JSON.
+[11:40:17 +2m 40s | quera] Extracting: https://www.quera.com/publications (2/19), chunk 8/15
+[11:40:24 +2m 47s | quera] Repaired malformed JSON.
+[11:40:24 +2m 47s | quera] Extracting: https://www.quera.com/publications (2/19), chunk 9/15
+[11:40:33 +2m 55s | quera] Repaired malformed JSON.
+[11:40:33 +2m 55s | quera] Extracting: https://www.quera.com/publications (2/19), chunk 10/15
+[11:40:37 +3m 0s | quera] Extracting: https://www.quera.com/publications (2/19), chunk 11/15
+[11:40:41 +3m 4s | quera] Extracting: https://www.quera.com/publications (2/19), chunk 12/15
+[11:40:46 +3m 9s | quera] Extracting: https://www.quera.com/publications (2/19), chunk 13/15
+[11:40:51 +3m 14s | quera] Extracting: https://www.quera.com/publications (2/19), chunk 14/15
+[11:40:54 +3m 17s | quera] Extracting: https://www.quera.com/publications (2/19), chunk 15/15
+[11:41:02 +3m 24s | quera] Repaired malformed JSON.
+[11:41:02 +3m 24s | quera] Reading page (3/19): https://www.quera.com/national-programs
+[11:41:02 +3m 24s | quera] Extracting: https://www.quera.com/national-programs (3/19), chunk 1/11
+[11:41:05 +3m 28s | quera] Extracting: https://www.quera.com/national-programs (3/19), chunk 2/11
+[11:41:11 +3m 34s | quera] Repaired malformed JSON.
+[11:41:11 +3m 34s | quera] Extracting: https://www.quera.com/national-programs (3/19), chunk 3/11
+[11:41:21 +3m 44s | quera] Repaired malformed JSON.
+[11:41:21 +3m 44s | quera] Extracting: https://www.quera.com/national-programs (3/19), chunk 4/11
+[11:41:27 +3m 50s | quera] Extracting: https://www.quera.com/national-programs (3/19), chunk 5/11
+[11:41:36 +3m 58s | quera] Repaired malformed JSON.
+[11:41:36 +3m 58s | quera] Extracting: https://www.quera.com/national-programs (3/19), chunk 6/11
+[11:41:44 +4m 7s | quera] Repaired malformed JSON.
+[11:41:44 +4m 7s | quera] Extracting: https://www.quera.com/national-programs (3/19), chunk 7/11
+[11:41:50 +4m 12s | quera] Repaired malformed JSON.
+[11:41:50 +4m 12s | quera] Extracting: https://www.quera.com/national-programs (3/19), chunk 8/11
+[11:41:58 +4m 21s | quera] Repaired malformed JSON.
+[11:41:58 +4m 21s | quera] Extracting: https://www.quera.com/national-programs (3/19), chunk 9/11
+[11:42:02 +4m 24s | quera] Extracting: https://www.quera.com/national-programs (3/19), chunk 10/11
+[11:42:05 +4m 28s | quera] Extracting: https://www.quera.com/national-programs (3/19), chunk 11/11
+[11:42:11 +4m 33s | quera] Repaired malformed JSON.
+[11:42:11 +4m 33s | quera] Reading page (4/19): https://www.quera.com/enterprise-innovators
+[11:42:11 +4m 33s | quera] Extracting: https://www.quera.com/enterprise-innovators (4/19), chunk 1/25
+[11:42:14 +4m 37s | quera] Extracting: https://www.quera.com/enterprise-innovators (4/19), chunk 2/25
+[11:42:19 +4m 42s | quera] Extracting: https://www.quera.com/enterprise-innovators (4/19), chunk 3/25
+[11:42:26 +4m 48s | quera] Repaired malformed JSON.
+[11:42:26 +4m 48s | quera] Extracting: https://www.quera.com/enterprise-innovators (4/19), chunk 4/25
+[11:42:29 +4m 52s | quera] Extracting: https://www.quera.com/enterprise-innovators (4/19), chunk 5/25
+[11:42:38 +5m 1s | quera] Repaired malformed JSON.
+[11:42:38 +5m 1s | quera] Extracting: https://www.quera.com/enterprise-innovators (4/19), chunk 6/25
+[11:42:45 +5m 8s | quera] Repaired malformed JSON.
+[11:42:45 +5m 8s | quera] Extracting: https://www.quera.com/enterprise-innovators (4/19), chunk 7/25
+[11:42:50 +5m 13s | quera] Extracting: https://www.quera.com/enterprise-innovators (4/19), chunk 8/25
+[11:42:54 +5m 17s | quera] Extracting: https://www.quera.com/enterprise-innovators (4/19), chunk 9/25
+[11:43:02 +5m 25s | quera] Repaired malformed JSON.
+[11:43:02 +5m 25s | quera] Extracting: https://www.quera.com/enterprise-innovators (4/19), chunk 10/25
+[11:43:09 +5m 32s | quera] Extracting: https://www.quera.com/enterprise-innovators (4/19), chunk 11/25
+[11:43:19 +5m 41s | quera] Repaired malformed JSON.
+[11:43:19 +5m 41s | quera] Extracting: https://www.quera.com/enterprise-innovators (4/19), chunk 12/25
+[11:43:25 +5m 47s | quera] Extracting: https://www.quera.com/enterprise-innovators (4/19), chunk 13/25
+[11:43:33 +5m 55s | quera] Repaired malformed JSON.
+[11:43:33 +5m 55s | quera] Extracting: https://www.quera.com/enterprise-innovators (4/19), chunk 14/25
+[11:43:37 +6m 0s | quera] Extracting: https://www.quera.com/enterprise-innovators (4/19), chunk 15/25
+[11:43:46 +6m 8s | quera] Repaired malformed JSON.
+[11:43:46 +6m 8s | quera] Extracting: https://www.quera.com/enterprise-innovators (4/19), chunk 16/25
+[11:43:51 +6m 14s | quera] Repaired malformed JSON.
+[11:43:51 +6m 14s | quera] Extracting: https://www.quera.com/enterprise-innovators (4/19), chunk 17/25
+[11:43:57 +6m 20s | quera] Repaired malformed JSON.
+[11:43:57 +6m 20s | quera] Extracting: https://www.quera.com/enterprise-innovators (4/19), chunk 18/25
+[11:44:04 +6m 27s | quera] Repaired malformed JSON.
+[11:44:04 +6m 27s | quera] Extracting: https://www.quera.com/enterprise-innovators (4/19), chunk 19/25
+[11:44:12 +6m 35s | quera] Repaired malformed JSON.
+[11:44:12 +6m 35s | quera] Extracting: https://www.quera.com/enterprise-innovators (4/19), chunk 20/25
+[11:44:19 +6m 42s | quera] Repaired malformed JSON.
+[11:44:19 +6m 42s | quera] Extracting: https://www.quera.com/enterprise-innovators (4/19), chunk 21/25
+[11:44:26 +6m 48s | quera] Repaired malformed JSON.
+[11:44:26 +6m 48s | quera] Extracting: https://www.quera.com/enterprise-innovators (4/19), chunk 22/25
+[11:44:31 +6m 54s | quera] Repaired malformed JSON.
+[11:44:31 +6m 54s | quera] Extracting: https://www.quera.com/enterprise-innovators (4/19), chunk 23/25
+[11:44:36 +6m 59s | quera] Extracting: https://www.quera.com/enterprise-innovators (4/19), chunk 24/25
+[11:44:40 +7m 3s | quera] Extracting: https://www.quera.com/enterprise-innovators (4/19), chunk 25/25
+[11:44:45 +7m 8s | quera] Repaired malformed JSON.
+[11:44:45 +7m 8s | quera] Reading page (5/19): https://www.quera.com/hpc-centers
+[11:44:45 +7m 8s | quera] Extracting: https://www.quera.com/hpc-centers (5/19), chunk 1/14
+[11:44:49 +7m 12s | quera] Extracting: https://www.quera.com/hpc-centers (5/19), chunk 2/14
+[11:44:56 +7m 18s | quera] Repaired malformed JSON.
+[11:44:56 +7m 18s | quera] Extracting: https://www.quera.com/hpc-centers (5/19), chunk 3/14
+[11:45:03 +7m 26s | quera] Repaired malformed JSON.
+[11:45:03 +7m 26s | quera] Extracting: https://www.quera.com/hpc-centers (5/19), chunk 4/14
+[11:45:06 +7m 29s | quera] Extracting: https://www.quera.com/hpc-centers (5/19), chunk 5/14
+[11:45:12 +7m 35s | quera] Repaired malformed JSON.
+[11:45:12 +7m 35s | quera] Extracting: https://www.quera.com/hpc-centers (5/19), chunk 6/14
+[11:45:18 +7m 41s | quera] Repaired malformed JSON.
+[11:45:18 +7m 41s | quera] Extracting: https://www.quera.com/hpc-centers (5/19), chunk 7/14
+[11:45:23 +7m 46s | quera] Extracting: https://www.quera.com/hpc-centers (5/19), chunk 8/14
+[11:45:27 +7m 49s | quera] Extracting: https://www.quera.com/hpc-centers (5/19), chunk 9/14
+[11:45:33 +7m 56s | quera] Repaired malformed JSON.
+[11:45:33 +7m 56s | quera] Extracting: https://www.quera.com/hpc-centers (5/19), chunk 10/14
+[11:45:39 +8m 2s | quera] Repaired malformed JSON.
+[11:45:39 +8m 2s | quera] Extracting: https://www.quera.com/hpc-centers (5/19), chunk 11/14
+[11:45:45 +8m 7s | quera] Repaired malformed JSON.
+[11:45:45 +8m 7s | quera] Extracting: https://www.quera.com/hpc-centers (5/19), chunk 12/14
+[11:45:48 +8m 11s | quera] Extracting: https://www.quera.com/hpc-centers (5/19), chunk 13/14
+[11:45:57 +8m 19s | quera] Repaired malformed JSON.
+[11:45:57 +8m 19s | quera] Extracting: https://www.quera.com/hpc-centers (5/19), chunk 14/14
+[11:46:02 +8m 25s | quera] Repaired malformed JSON.
+[11:46:02 +8m 25s | quera] Reading page (6/19): https://www.quera.com/on-premise-quantum-computers
+[11:46:02 +8m 25s | quera] Extracting: https://www.quera.com/on-premise-quantum-computers (6/19), chunk 1/14
+[11:46:07 +8m 29s | quera] Extracting: https://www.quera.com/on-premise-quantum-computers (6/19), chunk 2/14
+[11:46:16 +8m 39s | quera] Repaired malformed JSON.
+[11:46:16 +8m 39s | quera] Extracting: https://www.quera.com/on-premise-quantum-computers (6/19), chunk 3/14
+[11:46:24 +8m 47s | quera] Repaired malformed JSON.
+[11:46:24 +8m 47s | quera] Extracting: https://www.quera.com/on-premise-quantum-computers (6/19), chunk 4/14
+[11:46:29 +8m 51s | quera] Extracting: https://www.quera.com/on-premise-quantum-computers (6/19), chunk 5/14
+[11:46:34 +8m 57s | quera] Repaired malformed JSON.
+[11:46:34 +8m 57s | quera] Extracting: https://www.quera.com/on-premise-quantum-computers (6/19), chunk 6/14
+[11:46:42 +9m 5s | quera] Repaired malformed JSON.
+[11:46:42 +9m 5s | quera] Extracting: https://www.quera.com/on-premise-quantum-computers (6/19), chunk 7/14
+[11:46:46 +9m 9s | quera] Extracting: https://www.quera.com/on-premise-quantum-computers (6/19), chunk 8/14
+[11:46:54 +9m 16s | quera] Repaired malformed JSON.
+[11:46:54 +9m 16s | quera] Extracting: https://www.quera.com/on-premise-quantum-computers (6/19), chunk 9/14
+[11:47:01 +9m 24s | quera] Repaired malformed JSON.
+[11:47:01 +9m 24s | quera] Extracting: https://www.quera.com/on-premise-quantum-computers (6/19), chunk 10/14
+[11:47:09 +9m 32s | quera] Repaired malformed JSON.
+[11:47:09 +9m 32s | quera] Extracting: https://www.quera.com/on-premise-quantum-computers (6/19), chunk 11/14
+[11:47:13 +9m 36s | quera] Extracting: https://www.quera.com/on-premise-quantum-computers (6/19), chunk 12/14
+[11:47:19 +9m 41s | quera] Extracting: https://www.quera.com/on-premise-quantum-computers (6/19), chunk 13/14
+[11:47:23 +9m 46s | quera] Extracting: https://www.quera.com/on-premise-quantum-computers (6/19), chunk 14/14
+[11:47:29 +9m 52s | quera] Repaired malformed JSON.
+[11:47:29 +9m 52s | quera] Reading page (7/19): https://www.quera.com
+[11:47:29 +9m 52s | quera] Extracting: https://www.quera.com (7/19), chunk 1/19
+[11:47:33 +9m 56s | quera] Extracting: https://www.quera.com (7/19), chunk 2/19
+[11:47:39 +10m 1s | quera] Repaired malformed JSON.
+[11:47:39 +10m 1s | quera] Extracting: https://www.quera.com (7/19), chunk 3/19
+[11:47:46 +10m 9s | quera] Repaired malformed JSON.
+[11:47:46 +10m 9s | quera] Extracting: https://www.quera.com (7/19), chunk 4/19
+[11:47:52 +10m 15s | quera] Repaired malformed JSON.
+[11:47:52 +10m 15s | quera] Extracting: https://www.quera.com (7/19), chunk 5/19
+[11:47:59 +10m 22s | quera] Repaired malformed JSON.
+[11:47:59 +10m 22s | quera] Extracting: https://www.quera.com (7/19), chunk 6/19
+[11:48:06 +10m 28s | quera] Extracting: https://www.quera.com (7/19), chunk 7/19
+[11:48:13 +10m 36s | quera] Repaired malformed JSON.
+[11:48:13 +10m 36s | quera] Extracting: https://www.quera.com (7/19), chunk 8/19
+[11:48:20 +10m 42s | quera] Repaired malformed JSON.
+[11:48:20 +10m 42s | quera] Extracting: https://www.quera.com (7/19), chunk 9/19
+[11:48:27 +10m 50s | quera] Repaired malformed JSON.
+[11:48:27 +10m 50s | quera] Extracting: https://www.quera.com (7/19), chunk 10/19
+[11:48:35 +10m 57s | quera] Repaired malformed JSON.
+[11:48:35 +10m 57s | quera] Extracting: https://www.quera.com (7/19), chunk 11/19
+[11:48:42 +11m 5s | quera] Repaired malformed JSON.
+[11:48:42 +11m 5s | quera] Extracting: https://www.quera.com (7/19), chunk 12/19
+[11:48:49 +11m 11s | quera] Repaired malformed JSON.
+[11:48:49 +11m 11s | quera] Extracting: https://www.quera.com (7/19), chunk 13/19
+[11:48:55 +11m 18s | quera] Repaired malformed JSON.
+[11:48:55 +11m 18s | quera] Extracting: https://www.quera.com (7/19), chunk 14/19
+[11:49:02 +11m 25s | quera] Repaired malformed JSON.
+[11:49:02 +11m 25s | quera] Extracting: https://www.quera.com (7/19), chunk 15/19
+[11:49:08 +11m 31s | quera] Repaired malformed JSON.
+[11:49:08 +11m 31s | quera] Extracting: https://www.quera.com (7/19), chunk 16/19
+[11:49:15 +11m 38s | quera] Repaired malformed JSON.
+[11:49:15 +11m 38s | quera] Extracting: https://www.quera.com (7/19), chunk 17/19
+[11:49:22 +11m 45s | quera] Repaired malformed JSON.
+[11:49:22 +11m 45s | quera] Extracting: https://www.quera.com (7/19), chunk 18/19
+[11:49:29 +11m 52s | quera] Repaired malformed JSON.
+[11:49:29 +11m 52s | quera] Extracting: https://www.quera.com (7/19), chunk 19/19
+[11:49:35 +11m 57s | quera] Repaired malformed JSON.
+[11:49:35 +11m 57s | quera] Reading page (8/19): https://www.quera.com/vision-mission
+[11:49:35 +11m 57s | quera] Extracting: https://www.quera.com/vision-mission (8/19), chunk 1/11
+[11:49:38 +12m 1s | quera] Extracting: https://www.quera.com/vision-mission (8/19), chunk 2/11
+[11:49:44 +12m 7s | quera] Repaired malformed JSON.
+[11:49:44 +12m 7s | quera] Extracting: https://www.quera.com/vision-mission (8/19), chunk 3/11
+[11:49:52 +12m 14s | quera] Repaired malformed JSON.
+[11:49:52 +12m 14s | quera] Extracting: https://www.quera.com/vision-mission (8/19), chunk 4/11
+[11:49:55 +12m 18s | quera] Extracting: https://www.quera.com/vision-mission (8/19), chunk 5/11
+[11:50:02 +12m 25s | quera] Repaired malformed JSON.
+[11:50:02 +12m 25s | quera] Extracting: https://www.quera.com/vision-mission (8/19), chunk 6/11
+[11:50:09 +12m 32s | quera] Repaired malformed JSON.
+[11:50:09 +12m 32s | quera] Extracting: https://www.quera.com/vision-mission (8/19), chunk 7/11
+[11:50:17 +12m 40s | quera] Repaired malformed JSON.
+[11:50:17 +12m 40s | quera] Extracting: https://www.quera.com/vision-mission (8/19), chunk 8/11
+[11:50:22 +12m 45s | quera] Extracting: https://www.quera.com/vision-mission (8/19), chunk 9/11
+[11:50:26 +12m 49s | quera] Extracting: https://www.quera.com/vision-mission (8/19), chunk 10/11
+[11:50:30 +12m 53s | quera] Extracting: https://www.quera.com/vision-mission (8/19), chunk 11/11
+[11:50:37 +13m 0s | quera] Repaired malformed JSON.
+[11:50:37 +13m 0s | quera] Reading page (9/19): https://www.quera.com/about
+[11:50:37 +13m 0s | quera] Extracting: https://www.quera.com/about (9/19), chunk 1/37
+[11:50:40 +13m 3s | quera] Extracting: https://www.quera.com/about (9/19), chunk 2/37
+[11:50:48 +13m 11s | quera] Repaired malformed JSON.
+[11:50:48 +13m 11s | quera] Extracting: https://www.quera.com/about (9/19), chunk 3/37
+[11:50:56 +13m 19s | quera] Repaired malformed JSON.
+[11:50:56 +13m 19s | quera] Extracting: https://www.quera.com/about (9/19), chunk 4/37
+[11:51:00 +13m 22s | quera] Extracting: https://www.quera.com/about (9/19), chunk 5/37
+[11:51:07 +13m 30s | quera] Repaired malformed JSON.
+[11:51:07 +13m 30s | quera] Extracting: https://www.quera.com/about (9/19), chunk 6/37
+[11:51:13 +13m 35s | quera] Repaired malformed JSON.
+[11:51:13 +13m 35s | quera] Extracting: https://www.quera.com/about (9/19), chunk 7/37
+[11:51:18 +13m 41s | quera] Extracting: https://www.quera.com/about (9/19), chunk 8/37
+[11:51:26 +13m 48s | quera] Repaired malformed JSON.
+[11:51:26 +13m 48s | quera] Extracting: https://www.quera.com/about (9/19), chunk 9/37
+[11:51:32 +13m 55s | quera] Repaired malformed JSON.
+[11:51:32 +13m 55s | quera] Extracting: https://www.quera.com/about (9/19), chunk 10/37
+[11:51:39 +14m 1s | quera] Repaired malformed JSON.
+[11:51:39 +14m 1s | quera] Extracting: https://www.quera.com/about (9/19), chunk 11/37
+[11:51:45 +14m 8s | quera] Repaired malformed JSON.
+[11:51:45 +14m 8s | quera] Extracting: https://www.quera.com/about (9/19), chunk 12/37
+[11:51:51 +14m 14s | quera] Repaired malformed JSON.
+[11:51:51 +14m 14s | quera] Extracting: https://www.quera.com/about (9/19), chunk 13/37
+[11:51:58 +14m 20s | quera] Repaired malformed JSON.
+[11:51:58 +14m 20s | quera] Extracting: https://www.quera.com/about (9/19), chunk 14/37
+[11:52:07 +14m 29s | quera] Repaired malformed JSON.
+[11:52:07 +14m 29s | quera] Extracting: https://www.quera.com/about (9/19), chunk 15/37
+[11:52:12 +14m 35s | quera] Repaired malformed JSON.
+[11:52:12 +14m 35s | quera] Extracting: https://www.quera.com/about (9/19), chunk 16/37
+[11:52:23 +14m 46s | quera] Repaired malformed JSON.
+[11:52:23 +14m 46s | quera] Extracting: https://www.quera.com/about (9/19), chunk 17/37
+[11:52:30 +14m 53s | quera] Repaired malformed JSON.
+[11:52:30 +14m 53s | quera] Extracting: https://www.quera.com/about (9/19), chunk 18/37
+[11:52:39 +15m 1s | quera] Repaired malformed JSON.
+[11:52:39 +15m 1s | quera] Extracting: https://www.quera.com/about (9/19), chunk 19/37
+[11:52:47 +15m 9s | quera] Repaired malformed JSON.
+[11:52:47 +15m 9s | quera] Extracting: https://www.quera.com/about (9/19), chunk 20/37
+[11:52:54 +15m 17s | quera] Repaired malformed JSON.
+[11:52:54 +15m 17s | quera] Extracting: https://www.quera.com/about (9/19), chunk 21/37
+[11:53:00 +15m 23s | quera] Repaired malformed JSON.
+[11:53:00 +15m 23s | quera] Extracting: https://www.quera.com/about (9/19), chunk 22/37
+[11:53:07 +15m 29s | quera] Repaired malformed JSON.
+[11:53:07 +15m 29s | quera] Extracting: https://www.quera.com/about (9/19), chunk 23/37
+[11:53:14 +15m 36s | quera] Repaired malformed JSON.
+[11:53:14 +15m 36s | quera] Extracting: https://www.quera.com/about (9/19), chunk 24/37
+[11:53:20 +15m 43s | quera] Repaired malformed JSON.
+[11:53:20 +15m 43s | quera] Extracting: https://www.quera.com/about (9/19), chunk 25/37
+[11:53:26 +15m 49s | quera] Repaired malformed JSON.
+[11:53:26 +15m 49s | quera] Extracting: https://www.quera.com/about (9/19), chunk 26/37
+[11:53:33 +15m 56s | quera] Repaired malformed JSON.
+[11:53:33 +15m 56s | quera] Extracting: https://www.quera.com/about (9/19), chunk 27/37
+[11:53:42 +16m 5s | quera] Repaired malformed JSON.
+[11:53:42 +16m 5s | quera] Extracting: https://www.quera.com/about (9/19), chunk 28/37
+[11:53:51 +16m 14s | quera] Repaired malformed JSON.
+[11:53:51 +16m 14s | quera] Extracting: https://www.quera.com/about (9/19), chunk 29/37
+[11:54:00 +16m 23s | quera] Repaired malformed JSON.
+[11:54:00 +16m 23s | quera] Extracting: https://www.quera.com/about (9/19), chunk 30/37
+[11:54:06 +16m 28s | quera] Repaired malformed JSON.
+[11:54:06 +16m 28s | quera] Extracting: https://www.quera.com/about (9/19), chunk 31/37
+[11:54:12 +16m 35s | quera] Repaired malformed JSON.
+[11:54:12 +16m 35s | quera] Extracting: https://www.quera.com/about (9/19), chunk 32/37
+[11:54:19 +16m 42s | quera] Repaired malformed JSON.
+[11:54:19 +16m 42s | quera] Extracting: https://www.quera.com/about (9/19), chunk 33/37
+[11:54:27 +16m 49s | quera] Repaired malformed JSON.
+[11:54:27 +16m 49s | quera] Extracting: https://www.quera.com/about (9/19), chunk 34/37
+[11:54:32 +16m 55s | quera] Repaired malformed JSON.
+[11:54:32 +16m 55s | quera] Extracting: https://www.quera.com/about (9/19), chunk 35/37
+[11:54:37 +17m 0s | quera] Extracting: https://www.quera.com/about (9/19), chunk 36/37
+[11:54:46 +17m 8s | quera] Repaired malformed JSON.
+[11:54:46 +17m 8s | quera] Extracting: https://www.quera.com/about (9/19), chunk 37/37
+[11:54:51 +17m 14s | quera] Repaired malformed JSON.
+[11:54:51 +17m 14s | quera] Reading page (10/19): https://www.quera.com/our-quantum-roadmap
+[11:54:51 +17m 14s | quera] Extracting: https://www.quera.com/our-quantum-roadmap (10/19), chunk 1/12
+[11:54:55 +17m 17s | quera] Extracting: https://www.quera.com/our-quantum-roadmap (10/19), chunk 2/12
+[11:55:00 +17m 23s | quera] Extracting: https://www.quera.com/our-quantum-roadmap (10/19), chunk 3/12
+[11:55:08 +17m 31s | quera] Repaired malformed JSON.
+[11:55:08 +17m 31s | quera] Extracting: https://www.quera.com/our-quantum-roadmap (10/19), chunk 4/12
+[11:55:15 +17m 37s | quera] Extracting: https://www.quera.com/our-quantum-roadmap (10/19), chunk 5/12
+[11:55:21 +17m 44s | quera] Repaired malformed JSON.
+[11:55:21 +17m 44s | quera] Extracting: https://www.quera.com/our-quantum-roadmap (10/19), chunk 6/12
+[11:55:28 +17m 50s | quera] Repaired malformed JSON.
+[11:55:28 +17m 50s | quera] Extracting: https://www.quera.com/our-quantum-roadmap (10/19), chunk 7/12
+[11:55:35 +17m 58s | quera] Repaired malformed JSON.
+[11:55:35 +17m 58s | quera] Extracting: https://www.quera.com/our-quantum-roadmap (10/19), chunk 8/12
+[11:55:42 +18m 5s | quera] Repaired malformed JSON.
+[11:55:42 +18m 5s | quera] Extracting: https://www.quera.com/our-quantum-roadmap (10/19), chunk 9/12
+[11:55:50 +18m 13s | quera] Repaired malformed JSON.
+[11:55:50 +18m 13s | quera] Extracting: https://www.quera.com/our-quantum-roadmap (10/19), chunk 10/12
+[11:55:54 +18m 16s | quera] Extracting: https://www.quera.com/our-quantum-roadmap (10/19), chunk 11/12
+[11:55:58 +18m 20s | quera] Extracting: https://www.quera.com/our-quantum-roadmap (10/19), chunk 12/12
+[11:56:05 +18m 28s | quera] Repaired malformed JSON.
+[11:56:05 +18m 28s | quera] Reading page (11/19): https://www.quera.com/blog
+[11:56:05 +18m 28s | quera] Extracting: https://www.quera.com/blog (11/19), chunk 1/21
+[11:56:08 +18m 31s | quera] Extracting: https://www.quera.com/blog (11/19), chunk 2/21
+[11:56:14 +18m 37s | quera] Repaired malformed JSON.
+[11:56:14 +18m 37s | quera] Extracting: https://www.quera.com/blog (11/19), chunk 3/21
+[11:56:24 +18m 46s | quera] Repaired malformed JSON.
+[11:56:24 +18m 46s | quera] Extracting: https://www.quera.com/blog (11/19), chunk 4/21
+[11:56:30 +18m 53s | quera] Repaired malformed JSON.
+[11:56:30 +18m 53s | quera] Extracting: https://www.quera.com/blog (11/19), chunk 5/21
+[11:56:38 +19m 1s | quera] Repaired malformed JSON.
+[11:56:38 +19m 1s | quera] Extracting: https://www.quera.com/blog (11/19), chunk 6/21
+[11:56:47 +19m 10s | quera] Repaired malformed JSON.
+[11:56:47 +19m 10s | quera] Extracting: https://www.quera.com/blog (11/19), chunk 7/21
+[11:56:52 +19m 15s | quera] Extracting: https://www.quera.com/blog (11/19), chunk 8/21
+[11:56:56 +19m 19s | quera] Extracting: https://www.quera.com/blog (11/19), chunk 9/21
+[11:57:00 +19m 22s | quera] Extracting: https://www.quera.com/blog (11/19), chunk 10/21
+[11:57:05 +19m 28s | quera] Extracting: https://www.quera.com/blog (11/19), chunk 11/21
+[11:57:11 +19m 33s | quera] Repaired malformed JSON.
+[11:57:11 +19m 33s | quera] Extracting: https://www.quera.com/blog (11/19), chunk 12/21
+[11:57:21 +19m 43s | quera] Repaired malformed JSON.
+[11:57:21 +19m 43s | quera] Extracting: https://www.quera.com/blog (11/19), chunk 13/21
+[11:57:28 +19m 51s | quera] Repaired malformed JSON.
+[11:57:28 +19m 51s | quera] Extracting: https://www.quera.com/blog (11/19), chunk 14/21
+[11:57:35 +19m 58s | quera] Repaired malformed JSON.
+[11:57:35 +19m 58s | quera] Extracting: https://www.quera.com/blog (11/19), chunk 15/21
+[11:57:41 +20m 3s | quera] Extracting: https://www.quera.com/blog (11/19), chunk 16/21
+[11:57:45 +20m 8s | quera] Extracting: https://www.quera.com/blog (11/19), chunk 17/21
+[11:57:53 +20m 15s | quera] Repaired malformed JSON.
+[11:57:53 +20m 15s | quera] Extracting: https://www.quera.com/blog (11/19), chunk 18/21
+[11:58:00 +20m 23s | quera] Repaired malformed JSON.
+[11:58:00 +20m 23s | quera] Extracting: https://www.quera.com/blog (11/19), chunk 19/21
+[11:58:04 +20m 26s | quera] Extracting: https://www.quera.com/blog (11/19), chunk 20/21
+[11:58:09 +20m 31s | quera] Extracting: https://www.quera.com/blog (11/19), chunk 21/21
+[11:58:14 +20m 37s | quera] Repaired malformed JSON.
+[11:58:14 +20m 37s | quera] Reading page (12/19): https://www.quera.com/gemini
+[11:58:14 +20m 37s | quera] Extracting: https://www.quera.com/gemini (12/19), chunk 1/13
+[11:58:18 +20m 40s | quera] Extracting: https://www.quera.com/gemini (12/19), chunk 2/13
+[11:58:27 +20m 50s | quera] Repaired malformed JSON.
+[11:58:27 +20m 50s | quera] Extracting: https://www.quera.com/gemini (12/19), chunk 3/13
+[11:58:36 +20m 59s | quera] Repaired malformed JSON.
+[11:58:36 +20m 59s | quera] Extracting: https://www.quera.com/gemini (12/19), chunk 4/13
+[11:58:41 +21m 3s | quera] Extracting: https://www.quera.com/gemini (12/19), chunk 5/13
+[11:58:48 +21m 10s | quera] Repaired malformed JSON.
+[11:58:48 +21m 10s | quera] Extracting: https://www.quera.com/gemini (12/19), chunk 6/13
+[11:58:53 +21m 16s | quera] Extracting: https://www.quera.com/gemini (12/19), chunk 7/13
+[11:58:59 +21m 21s | quera] Repaired malformed JSON.
+[11:58:59 +21m 21s | quera] Extracting: https://www.quera.com/gemini (12/19), chunk 8/13
+[11:59:07 +21m 29s | quera] Repaired malformed JSON.
+[11:59:07 +21m 29s | quera] Extracting: https://www.quera.com/gemini (12/19), chunk 9/13
+[11:59:14 +21m 36s | quera] Repaired malformed JSON.
+[11:59:14 +21m 36s | quera] Extracting: https://www.quera.com/gemini (12/19), chunk 10/13
+[11:59:20 +21m 43s | quera] Repaired malformed JSON.
+[11:59:20 +21m 43s | quera] Extracting: https://www.quera.com/gemini (12/19), chunk 11/13
+[11:59:25 +21m 47s | quera] Extracting: https://www.quera.com/gemini (12/19), chunk 12/13
+[11:59:32 +21m 54s | quera] Repaired malformed JSON.
+[11:59:32 +21m 54s | quera] Extracting: https://www.quera.com/gemini (12/19), chunk 13/13
+[11:59:39 +22m 2s | quera] Repaired malformed JSON.
+[11:59:39 +22m 2s | quera] Reading page (13/19): https://www.quera.com/news
+[11:59:39 +22m 2s | quera] Extracting: https://www.quera.com/news (13/19), chunk 1/26
+[11:59:43 +22m 6s | quera] Extracting: https://www.quera.com/news (13/19), chunk 2/26
+[11:59:50 +22m 13s | quera] Repaired malformed JSON.
+[11:59:50 +22m 13s | quera] Extracting: https://www.quera.com/news (13/19), chunk 3/26
+[11:59:57 +22m 20s | quera] Repaired malformed JSON.
+[11:59:57 +22m 20s | quera] Extracting: https://www.quera.com/news (13/19), chunk 4/26
+[12:00:02 +22m 24s | quera] Extracting: https://www.quera.com/news (13/19), chunk 5/26
+[12:00:09 +22m 31s | quera] Repaired malformed JSON.
+[12:00:09 +22m 31s | quera] Extracting: https://www.quera.com/news (13/19), chunk 6/26
+[12:00:15 +22m 37s | quera] Repaired malformed JSON.
+[12:00:15 +22m 37s | quera] Extracting: https://www.quera.com/news (13/19), chunk 7/26
+[12:00:23 +22m 46s | quera] Repaired malformed JSON.
+[12:00:23 +22m 46s | quera] Extracting: https://www.quera.com/news (13/19), chunk 8/26
+[12:00:29 +22m 52s | quera] Extracting: https://www.quera.com/news (13/19), chunk 9/26
+[12:00:35 +22m 58s | quera] Repaired malformed JSON.
+[12:00:35 +22m 58s | quera] Extracting: https://www.quera.com/news (13/19), chunk 10/26
+[12:00:44 +23m 7s | quera] Repaired malformed JSON.
+[12:00:44 +23m 7s | quera] Extracting: https://www.quera.com/news (13/19), chunk 11/26
+[12:00:50 +23m 13s | quera] Repaired malformed JSON.
+[12:00:50 +23m 13s | quera] Extracting: https://www.quera.com/news (13/19), chunk 12/26
+[12:00:55 +23m 18s | quera] Repaired malformed JSON.
+[12:00:55 +23m 18s | quera] Extracting: https://www.quera.com/news (13/19), chunk 13/26
+[12:01:03 +23m 25s | quera] Repaired malformed JSON.
+[12:01:03 +23m 25s | quera] Extracting: https://www.quera.com/news (13/19), chunk 14/26
+[12:01:09 +23m 32s | quera] Repaired malformed JSON.
+[12:01:09 +23m 32s | quera] Extracting: https://www.quera.com/news (13/19), chunk 15/26
+[12:01:13 +23m 36s | quera] Extracting: https://www.quera.com/news (13/19), chunk 16/26
+[12:01:21 +23m 43s | quera] Repaired malformed JSON.
+[12:01:21 +23m 43s | quera] Extracting: https://www.quera.com/news (13/19), chunk 17/26
+[12:01:26 +23m 49s | quera] Repaired malformed JSON.
+[12:01:26 +23m 49s | quera] Extracting: https://www.quera.com/news (13/19), chunk 18/26
+[12:01:35 +23m 57s | quera] Repaired malformed JSON.
+[12:01:35 +23m 57s | quera] Extracting: https://www.quera.com/news (13/19), chunk 19/26
+[12:01:44 +24m 7s | quera] Repaired malformed JSON.
+[12:01:44 +24m 7s | quera] Extracting: https://www.quera.com/news (13/19), chunk 20/26
+[12:01:51 +24m 14s | quera] Repaired malformed JSON.
+[12:01:51 +24m 14s | quera] Extracting: https://www.quera.com/news (13/19), chunk 21/26
+[12:01:59 +24m 22s | quera] Repaired malformed JSON.
+[12:01:59 +24m 22s | quera] Extracting: https://www.quera.com/news (13/19), chunk 22/26
+[12:02:07 +24m 30s | quera] Repaired malformed JSON.
+[12:02:07 +24m 30s | quera] Extracting: https://www.quera.com/news (13/19), chunk 23/26
+[12:02:13 +24m 36s | quera] Repaired malformed JSON.
+[12:02:13 +24m 36s | quera] Extracting: https://www.quera.com/news (13/19), chunk 24/26
+[12:02:18 +24m 41s | quera] Extracting: https://www.quera.com/news (13/19), chunk 25/26
+[12:02:23 +24m 45s | quera] Extracting: https://www.quera.com/news (13/19), chunk 26/26
+[12:02:29 +24m 52s | quera] Repaired malformed JSON.
+[12:02:29 +24m 52s | quera] Reading page (14/19): https://www.quera.com/neutral-atom-platform
+[12:02:29 +24m 52s | quera] Extracting: https://www.quera.com/neutral-atom-platform (14/19), chunk 1/19
+[12:02:34 +24m 57s | quera] Extracting: https://www.quera.com/neutral-atom-platform (14/19), chunk 2/19
+[12:02:38 +25m 1s | quera] Extracting: https://www.quera.com/neutral-atom-platform (14/19), chunk 3/19
+[12:02:46 +25m 9s | quera] Repaired malformed JSON.
+[12:02:46 +25m 9s | quera] Extracting: https://www.quera.com/neutral-atom-platform (14/19), chunk 4/19
+[12:02:50 +25m 13s | quera] Extracting: https://www.quera.com/neutral-atom-platform (14/19), chunk 5/19
+[12:02:59 +25m 22s | quera] Repaired malformed JSON.
+[12:02:59 +25m 22s | quera] Extracting: https://www.quera.com/neutral-atom-platform (14/19), chunk 6/19
+[12:03:06 +25m 28s | quera] Repaired malformed JSON.
+[12:03:06 +25m 28s | quera] Extracting: https://www.quera.com/neutral-atom-platform (14/19), chunk 7/19
+[12:03:11 +25m 34s | quera] Extracting: https://www.quera.com/neutral-atom-platform (14/19), chunk 8/19
+[12:03:15 +25m 37s | quera] Extracting: https://www.quera.com/neutral-atom-platform (14/19), chunk 9/19
+[12:03:19 +25m 42s | quera] Extracting: https://www.quera.com/neutral-atom-platform (14/19), chunk 10/19
+[12:03:25 +25m 48s | quera] Extracting: https://www.quera.com/neutral-atom-platform (14/19), chunk 11/19
+[12:03:33 +25m 56s | quera] Extracting: https://www.quera.com/neutral-atom-platform (14/19), chunk 12/19
+[12:03:35 +25m 57s | quera] Extracting: https://www.quera.com/neutral-atom-platform (14/19), chunk 13/19
+[12:03:39 +26m 1s | quera] Extracting: https://www.quera.com/neutral-atom-platform (14/19), chunk 14/19
+[12:03:43 +26m 6s | quera] Extracting: https://www.quera.com/neutral-atom-platform (14/19), chunk 15/19
+[12:03:49 +26m 12s | quera] Extracting: https://www.quera.com/neutral-atom-platform (14/19), chunk 16/19
+[12:03:53 +26m 15s | quera] Extracting: https://www.quera.com/neutral-atom-platform (14/19), chunk 17/19
+[12:03:56 +26m 19s | quera] Extracting: https://www.quera.com/neutral-atom-platform (14/19), chunk 18/19
+[12:04:00 +26m 23s | quera] Extracting: https://www.quera.com/neutral-atom-platform (14/19), chunk 19/19
+[12:04:09 +26m 32s | quera] Repaired malformed JSON.
+[12:04:09 +26m 32s | quera] Reading page (15/19): https://www.quera.com/co-design
+[12:04:09 +26m 32s | quera] Extracting: https://www.quera.com/co-design (15/19), chunk 1/18
+[12:04:14 +26m 37s | quera] Extracting: https://www.quera.com/co-design (15/19), chunk 2/18
+[12:04:17 +26m 40s | quera] Extracting: https://www.quera.com/co-design (15/19), chunk 3/18
+[12:04:26 +26m 48s | quera] Repaired malformed JSON.
+[12:04:26 +26m 48s | quera] Extracting: https://www.quera.com/co-design (15/19), chunk 4/18
+[12:04:29 +26m 52s | quera] Extracting: https://www.quera.com/co-design (15/19), chunk 5/18
+[12:04:35 +26m 57s | quera] Repaired malformed JSON.
+[12:04:35 +26m 57s | quera] Extracting: https://www.quera.com/co-design (15/19), chunk 6/18
+[12:04:42 +27m 5s | quera] Repaired malformed JSON.
+[12:04:42 +27m 5s | quera] Extracting: https://www.quera.com/co-design (15/19), chunk 7/18
+[12:04:51 +27m 14s | quera] Repaired malformed JSON.
+[12:04:51 +27m 14s | quera] Extracting: https://www.quera.com/co-design (15/19), chunk 8/18
+[12:04:58 +27m 20s | quera] Repaired malformed JSON.
+[12:04:58 +27m 20s | quera] Extracting: https://www.quera.com/co-design (15/19), chunk 9/18
+[12:05:03 +27m 26s | quera] Extracting: https://www.quera.com/co-design (15/19), chunk 10/18
+[12:05:10 +27m 32s | quera] Repaired malformed JSON.
+[12:05:10 +27m 32s | quera] Extracting: https://www.quera.com/co-design (15/19), chunk 11/18
+[12:05:15 +27m 38s | quera] Extracting: https://www.quera.com/co-design (15/19), chunk 12/18
+[12:05:23 +27m 46s | quera] Repaired malformed JSON.
+[12:05:23 +27m 46s | quera] Extracting: https://www.quera.com/co-design (15/19), chunk 13/18
+[12:05:29 +27m 52s | quera] Repaired malformed JSON.
+[12:05:29 +27m 52s | quera] Extracting: https://www.quera.com/co-design (15/19), chunk 14/18
+[12:05:34 +27m 57s | quera] Extracting: https://www.quera.com/co-design (15/19), chunk 15/18
+[12:05:37 +28m 0s | quera] Extracting: https://www.quera.com/co-design (15/19), chunk 16/18
+[12:05:42 +28m 5s | quera] Extracting: https://www.quera.com/co-design (15/19), chunk 17/18
+[12:05:49 +28m 11s | quera] Repaired malformed JSON.
+[12:05:49 +28m 11s | quera] Extracting: https://www.quera.com/co-design (15/19), chunk 18/18
+[12:05:55 +28m 18s | quera] Repaired malformed JSON.
+[12:05:55 +28m 18s | quera] Reading page (16/19): https://www.quera.com/bloqade
+[12:05:55 +28m 18s | quera] Extracting: https://www.quera.com/bloqade (16/19), chunk 1/13
+[12:05:59 +28m 22s | quera] Extracting: https://www.quera.com/bloqade (16/19), chunk 2/13
+[12:06:06 +28m 29s | quera] Repaired malformed JSON.
+[12:06:06 +28m 29s | quera] Extracting: https://www.quera.com/bloqade (16/19), chunk 3/13
+[12:06:14 +28m 37s | quera] Repaired malformed JSON.
+[12:06:14 +28m 37s | quera] Extracting: https://www.quera.com/bloqade (16/19), chunk 4/13
+[12:06:18 +28m 41s | quera] Extracting: https://www.quera.com/bloqade (16/19), chunk 5/13
+[12:06:24 +28m 47s | quera] Repaired malformed JSON.
+[12:06:24 +28m 47s | quera] Extracting: https://www.quera.com/bloqade (16/19), chunk 6/13
+[12:06:33 +28m 56s | quera] Repaired malformed JSON.
+[12:06:33 +28m 56s | quera] Extracting: https://www.quera.com/bloqade (16/19), chunk 7/13
+[12:06:39 +29m 1s | quera] Repaired malformed JSON.
+[12:06:39 +29m 1s | quera] Extracting: https://www.quera.com/bloqade (16/19), chunk 8/13
+[12:06:46 +29m 8s | quera] Repaired malformed JSON.
+[12:06:46 +29m 8s | quera] Extracting: https://www.quera.com/bloqade (16/19), chunk 9/13
+[12:06:50 +29m 13s | quera] Extracting: https://www.quera.com/bloqade (16/19), chunk 10/13
+[12:06:58 +29m 21s | quera] Extracting: https://www.quera.com/bloqade (16/19), chunk 11/13
+[12:07:05 +29m 28s | quera] Extracting: https://www.quera.com/bloqade (16/19), chunk 12/13
+[12:07:11 +29m 34s | quera] Repaired malformed JSON.
+[12:07:11 +29m 34s | quera] Extracting: https://www.quera.com/bloqade (16/19), chunk 13/13
+[12:07:16 +29m 39s | quera] Repaired malformed JSON.
+[12:07:16 +29m 39s | quera] Reading page (17/19): https://www.quera.com/partners
+[12:07:16 +29m 39s | quera] Extracting: https://www.quera.com/partners (17/19), chunk 1/22
+[12:07:20 +29m 42s | quera] Extracting: https://www.quera.com/partners (17/19), chunk 2/22
+[12:07:23 +29m 46s | quera] Extracting: https://www.quera.com/partners (17/19), chunk 3/22
+[12:07:28 +29m 51s | quera] Repaired malformed JSON.
+[12:07:28 +29m 51s | quera] Extracting: https://www.quera.com/partners (17/19), chunk 4/22
+[12:07:32 +29m 55s | quera] Extracting: https://www.quera.com/partners (17/19), chunk 5/22
+[12:07:39 +30m 2s | quera] Repaired malformed JSON.
+[12:07:39 +30m 2s | quera] Extracting: https://www.quera.com/partners (17/19), chunk 6/22
+[12:07:45 +30m 7s | quera] Repaired malformed JSON.
+[12:07:45 +30m 7s | quera] Extracting: https://www.quera.com/partners (17/19), chunk 7/22
+[12:07:51 +30m 14s | quera] Repaired malformed JSON.
+[12:07:51 +30m 14s | quera] Extracting: https://www.quera.com/partners (17/19), chunk 8/22
+[12:07:58 +30m 20s | quera] Repaired malformed JSON.
+[12:07:58 +30m 20s | quera] Extracting: https://www.quera.com/partners (17/19), chunk 9/22
+[12:08:04 +30m 27s | quera] Repaired malformed JSON.
+[12:08:04 +30m 27s | quera] Extracting: https://www.quera.com/partners (17/19), chunk 10/22
+[12:08:10 +30m 33s | quera] Repaired malformed JSON.
+[12:08:10 +30m 33s | quera] Extracting: https://www.quera.com/partners (17/19), chunk 11/22
+[12:08:16 +30m 39s | quera] Repaired malformed JSON.
+[12:08:16 +30m 39s | quera] Extracting: https://www.quera.com/partners (17/19), chunk 12/22
+[12:08:21 +30m 44s | quera] Repaired malformed JSON.
+[12:08:21 +30m 44s | quera] Extracting: https://www.quera.com/partners (17/19), chunk 13/22
+[12:08:28 +30m 51s | quera] Repaired malformed JSON.
+[12:08:28 +30m 51s | quera] Extracting: https://www.quera.com/partners (17/19), chunk 14/22
+[12:08:36 +30m 59s | quera] Repaired malformed JSON.
+[12:08:36 +30m 59s | quera] Extracting: https://www.quera.com/partners (17/19), chunk 15/22
+[12:08:42 +31m 4s | quera] Repaired malformed JSON.
+[12:08:42 +31m 4s | quera] Extracting: https://www.quera.com/partners (17/19), chunk 16/22
+[12:08:48 +31m 11s | quera] Repaired malformed JSON.
+[12:08:48 +31m 11s | quera] Extracting: https://www.quera.com/partners (17/19), chunk 17/22
+[12:08:54 +31m 17s | quera] Repaired malformed JSON.
+[12:08:54 +31m 17s | quera] Extracting: https://www.quera.com/partners (17/19), chunk 18/22
+[12:09:01 +31m 24s | quera] Repaired malformed JSON.
+[12:09:01 +31m 24s | quera] Extracting: https://www.quera.com/partners (17/19), chunk 19/22
+[12:09:07 +31m 30s | quera] Repaired malformed JSON.
+[12:09:07 +31m 30s | quera] Extracting: https://www.quera.com/partners (17/19), chunk 20/22
+[12:09:12 +31m 35s | quera] Extracting: https://www.quera.com/partners (17/19), chunk 21/22
+[12:09:15 +31m 38s | quera] Extracting: https://www.quera.com/partners (17/19), chunk 22/22
+[12:09:22 +31m 44s | quera] Repaired malformed JSON.
+[12:09:22 +31m 44s | quera] Reading page (18/19): https://www.quera.com/aquila
+[12:09:22 +31m 44s | quera] Extracting: https://www.quera.com/aquila (18/19), chunk 1/16
+[12:09:29 +31m 52s | quera] Repaired malformed JSON.
+[12:09:29 +31m 52s | quera] Extracting: https://www.quera.com/aquila (18/19), chunk 2/16
+[12:09:34 +31m 57s | quera] Repaired malformed JSON.
+[12:09:34 +31m 57s | quera] Extracting: https://www.quera.com/aquila (18/19), chunk 3/16
+[12:09:40 +32m 3s | quera] Repaired malformed JSON.
+[12:09:40 +32m 3s | quera] Extracting: https://www.quera.com/aquila (18/19), chunk 4/16
+[12:09:43 +32m 6s | quera] Extracting: https://www.quera.com/aquila (18/19), chunk 5/16
+[12:09:49 +32m 12s | quera] Repaired malformed JSON.
+[12:09:49 +32m 12s | quera] Extracting: https://www.quera.com/aquila (18/19), chunk 6/16
+[12:09:53 +32m 16s | quera] Extracting: https://www.quera.com/aquila (18/19), chunk 7/16
+[12:10:00 +32m 23s | quera] Repaired malformed JSON.
+[12:10:00 +32m 23s | quera] Extracting: https://www.quera.com/aquila (18/19), chunk 8/16
+[12:10:07 +32m 29s | quera] Repaired malformed JSON.
+[12:10:07 +32m 29s | quera] Extracting: https://www.quera.com/aquila (18/19), chunk 9/16
+[12:10:13 +32m 36s | quera] Repaired malformed JSON.
+[12:10:13 +32m 36s | quera] Extracting: https://www.quera.com/aquila (18/19), chunk 10/16
+[12:10:20 +32m 43s | quera] Repaired malformed JSON.
+[12:10:20 +32m 43s | quera] Extracting: https://www.quera.com/aquila (18/19), chunk 11/16
+[12:10:27 +32m 50s | quera] Extracting: https://www.quera.com/aquila (18/19), chunk 12/16
+[12:10:31 +32m 53s | quera] Extracting: https://www.quera.com/aquila (18/19), chunk 13/16
+[12:10:34 +32m 57s | quera] Extracting: https://www.quera.com/aquila (18/19), chunk 14/16
+[12:10:37 +33m 0s | quera] Extracting: https://www.quera.com/aquila (18/19), chunk 15/16
+[12:10:45 +33m 7s | quera] Repaired malformed JSON.
+[12:10:45 +33m 7s | quera] Extracting: https://www.quera.com/aquila (18/19), chunk 16/16
+[12:10:53 +33m 15s | quera] Repaired malformed JSON.
+[12:10:53 +33m 15s | quera] Reading page (19/19): https://www.quera.com/quantum-error-correction
+[12:10:53 +33m 15s | quera] Extracting: https://www.quera.com/quantum-error-correction (19/19), chunk 1/17
+[12:10:56 +33m 19s | quera] Extracting: https://www.quera.com/quantum-error-correction (19/19), chunk 2/17
+[12:11:03 +33m 26s | quera] Extracting: https://www.quera.com/quantum-error-correction (19/19), chunk 3/17
+[12:11:14 +33m 36s | quera] Repaired malformed JSON.
+[12:11:14 +33m 36s | quera] Extracting: https://www.quera.com/quantum-error-correction (19/19), chunk 4/17
+[12:11:18 +33m 41s | quera] Extracting: https://www.quera.com/quantum-error-correction (19/19), chunk 5/17
+[12:11:25 +33m 48s | quera] Repaired malformed JSON.
+[12:11:25 +33m 48s | quera] Extracting: https://www.quera.com/quantum-error-correction (19/19), chunk 6/17
+[12:11:35 +33m 58s | quera] Repaired malformed JSON.
+[12:11:35 +33m 58s | quera] Extracting: https://www.quera.com/quantum-error-correction (19/19), chunk 7/17
+[12:11:43 +34m 6s | quera] Repaired malformed JSON.
+[12:11:43 +34m 6s | quera] Extracting: https://www.quera.com/quantum-error-correction (19/19), chunk 8/17
+[12:11:50 +34m 13s | quera] Repaired malformed JSON.
+[12:11:50 +34m 13s | quera] Extracting: https://www.quera.com/quantum-error-correction (19/19), chunk 9/17
+[12:11:57 +34m 20s | quera] Repaired malformed JSON.
+[12:11:57 +34m 20s | quera] Extracting: https://www.quera.com/quantum-error-correction (19/19), chunk 10/17
+[12:12:05 +34m 27s | quera] Repaired malformed JSON.
+[12:12:05 +34m 27s | quera] Extracting: https://www.quera.com/quantum-error-correction (19/19), chunk 11/17
+[12:12:11 +34m 34s | quera] Repaired malformed JSON.
+[12:12:11 +34m 34s | quera] Extracting: https://www.quera.com/quantum-error-correction (19/19), chunk 12/17
+[12:12:18 +34m 41s | quera] Repaired malformed JSON.
+[12:12:18 +34m 41s | quera] Extracting: https://www.quera.com/quantum-error-correction (19/19), chunk 13/17
+[12:12:27 +34m 50s | quera] Repaired malformed JSON.
+[12:12:27 +34m 50s | quera] Extracting: https://www.quera.com/quantum-error-correction (19/19), chunk 14/17
+[12:12:30 +34m 53s | quera] Extracting: https://www.quera.com/quantum-error-correction (19/19), chunk 15/17
+[12:12:34 +34m 57s | quera] Extracting: https://www.quera.com/quantum-error-correction (19/19), chunk 16/17
+[12:12:38 +35m 1s | quera] Extracting: https://www.quera.com/quantum-error-correction (19/19), chunk 17/17
+[12:12:47 +35m 9s | quera] Repaired malformed JSON.
+[12:12:47 +35m 9s | quera] Saved 1_actor_results.json with 622 extracted records
+
+[12:12:47 +35m 9s | quera] === 2 clean actors ===
+[12:12:50 +35m 13s | quera] Loaded 622 extracted records
+[12:12:50 +35m 13s | quera] Saved 2_actor_nodes.json with 96 canonical actor nodes
+
+[12:12:50 +35m 13s | quera] === 3 interaction extraction ===
+[12:12:51 +35m 13s | quera] Extracting interactions: https://www.quera.com/premium-access (1/19), chunk 2/15
+[12:13:27 +35m 50s | quera] Extracting interactions: https://www.quera.com/premium-access (1/19), chunk 3/15
+[12:13:29 +35m 52s | quera] Extracting interactions: https://www.quera.com/premium-access (1/19), chunk 5/15
+[12:13:30 +35m 53s | quera] Extracting interactions: https://www.quera.com/premium-access (1/19), chunk 6/15
+[12:13:33 +35m 56s | quera] Extracting interactions: https://www.quera.com/premium-access (1/19), chunk 7/15
+[12:13:46 +36m 9s | quera] Extracting interactions: https://www.quera.com/premium-access (1/19), chunk 13/15
+[12:13:52 +36m 14s | quera] Extracting interactions: https://www.quera.com/premium-access (1/19), chunk 14/15
+[12:13:57 +36m 19s | quera] Extracting interactions: https://www.quera.com/publications (2/19), chunk 2/15
+[12:14:30 +36m 53s | quera] Extracting interactions: https://www.quera.com/publications (2/19), chunk 3/15
+[12:14:32 +36m 55s | quera] Extracting interactions: https://www.quera.com/publications (2/19), chunk 5/15
+[12:14:34 +36m 57s | quera] Extracting interactions: https://www.quera.com/publications (2/19), chunk 6/15
+[12:14:38 +37m 1s | quera] Extracting interactions: https://www.quera.com/publications (2/19), chunk 10/15
+[12:14:43 +37m 5s | quera] Extracting interactions: https://www.quera.com/publications (2/19), chunk 11/15
+[12:14:46 +37m 8s | quera] Extracting interactions: https://www.quera.com/publications (2/19), chunk 13/15
+[12:14:49 +37m 12s | quera] Extracting interactions: https://www.quera.com/publications (2/19), chunk 14/15
+[12:14:51 +37m 14s | quera] Extracting interactions: https://www.quera.com/national-programs (3/19), chunk 2/11
+[12:15:17 +37m 39s | quera] Extracting interactions: https://www.quera.com/national-programs (3/19), chunk 3/11
+[12:15:18 +37m 41s | quera] Extracting interactions: https://www.quera.com/national-programs (3/19), chunk 5/11
+[12:15:24 +37m 47s | quera] Extracting interactions: https://www.quera.com/national-programs (3/19), chunk 6/11
+[12:15:27 +37m 50s | quera] Extracting interactions: https://www.quera.com/national-programs (3/19), chunk 9/11
+[12:15:32 +37m 54s | quera] Extracting interactions: https://www.quera.com/national-programs (3/19), chunk 10/11
+[12:15:36 +37m 59s | quera] Extracting interactions: https://www.quera.com/enterprise-innovators (4/19), chunk 2/25
+[12:15:54 +38m 16s | quera] Extracting interactions: https://www.quera.com/enterprise-innovators (4/19), chunk 3/25
+[12:15:56 +38m 19s | quera] Extracting interactions: https://www.quera.com/enterprise-innovators (4/19), chunk 5/25
+[12:16:01 +38m 24s | quera] Extracting interactions: https://www.quera.com/enterprise-innovators (4/19), chunk 6/25
+[12:16:06 +38m 28s | quera] Extracting interactions: https://www.quera.com/enterprise-innovators (4/19), chunk 15/25
+[12:16:18 +38m 40s | quera] Extracting interactions: https://www.quera.com/enterprise-innovators (4/19), chunk 16/25
+[12:16:24 +38m 46s | quera] Extracting interactions: https://www.quera.com/enterprise-innovators (4/19), chunk 17/25
+[12:16:30 +38m 52s | quera] Extracting interactions: https://www.quera.com/enterprise-innovators (4/19), chunk 20/25
+[12:16:34 +38m 57s | quera] Extracting interactions: https://www.quera.com/enterprise-innovators (4/19), chunk 21/25
+[12:16:37 +39m 0s | quera] Extracting interactions: https://www.quera.com/enterprise-innovators (4/19), chunk 22/25
+[12:16:42 +39m 5s | quera] Extracting interactions: https://www.quera.com/enterprise-innovators (4/19), chunk 23/25
+[12:16:43 +39m 6s | quera] Extracting interactions: https://www.quera.com/enterprise-innovators (4/19), chunk 24/25
+[12:16:48 +39m 10s | quera] Extracting interactions: https://www.quera.com/hpc-centers (5/19), chunk 2/14
+[12:17:22 +39m 45s | quera] Extracting interactions: https://www.quera.com/hpc-centers (5/19), chunk 3/14
+[12:17:25 +39m 47s | quera] Extracting interactions: https://www.quera.com/hpc-centers (5/19), chunk 5/14
+[12:17:30 +39m 52s | quera] Extracting interactions: https://www.quera.com/hpc-centers (5/19), chunk 6/14
+[12:17:33 +39m 55s | quera] Extracting interactions: https://www.quera.com/hpc-centers (5/19), chunk 9/14
+[12:17:39 +40m 1s | quera] Extracting interactions: https://www.quera.com/hpc-centers (5/19), chunk 10/14
+[12:17:47 +40m 10s | quera] Extracting interactions: https://www.quera.com/hpc-centers (5/19), chunk 11/14
+[12:17:52 +40m 15s | quera] Extracting interactions: https://www.quera.com/hpc-centers (5/19), chunk 12/14
+[12:17:57 +40m 20s | quera] Extracting interactions: https://www.quera.com/hpc-centers (5/19), chunk 13/14
+[12:18:02 +40m 25s | quera] Extracting interactions: https://www.quera.com/on-premise-quantum-computers (6/19), chunk 2/14
+[12:18:32 +40m 54s | quera] Extracting interactions: https://www.quera.com/on-premise-quantum-computers (6/19), chunk 3/14
+[12:18:34 +40m 57s | quera] Extracting interactions: https://www.quera.com/on-premise-quantum-computers (6/19), chunk 5/14
+[12:18:37 +41m 0s | quera] Extracting interactions: https://www.quera.com/on-premise-quantum-computers (6/19), chunk 6/14
+[12:18:39 +41m 1s | quera] Extracting interactions: https://www.quera.com/on-premise-quantum-computers (6/19), chunk 12/14
+[12:18:41 +41m 3s | quera] Extracting interactions: https://www.quera.com/on-premise-quantum-computers (6/19), chunk 13/14
+[12:18:46 +41m 9s | quera] Extracting interactions: https://www.quera.com (7/19), chunk 2/19
+[12:19:21 +41m 44s | quera] Extracting interactions: https://www.quera.com (7/19), chunk 3/19
+[12:19:22 +41m 45s | quera] Extracting interactions: https://www.quera.com (7/19), chunk 5/19
+[12:19:24 +41m 47s | quera] Extracting interactions: https://www.quera.com (7/19), chunk 6/19
+[12:19:27 +41m 50s | quera] Extracting interactions: https://www.quera.com (7/19), chunk 7/19
+[12:19:32 +41m 54s | quera] Extracting interactions: https://www.quera.com (7/19), chunk 8/19
+[12:19:37 +42m 0s | quera] Extracting interactions: https://www.quera.com (7/19), chunk 9/19
+[12:19:39 +42m 2s | quera] Extracting interactions: https://www.quera.com (7/19), chunk 10/19
+[12:20:10 +42m 33s | quera] Extracting interactions: https://www.quera.com (7/19), chunk 11/19
+[12:20:11 +42m 34s | quera] Extracting interactions: https://www.quera.com (7/19), chunk 12/19
+[12:20:13 +42m 36s | quera] Extracting interactions: https://www.quera.com (7/19), chunk 13/19
+[12:20:18 +42m 40s | quera] Extracting interactions: https://www.quera.com (7/19), chunk 14/19
+[12:20:23 +42m 46s | quera] Extracting interactions: https://www.quera.com (7/19), chunk 15/19
+[12:20:26 +42m 49s | quera] Extracting interactions: https://www.quera.com (7/19), chunk 17/19
+[12:20:28 +42m 51s | quera] Extracting interactions: https://www.quera.com (7/19), chunk 18/19
+[12:20:33 +42m 55s | quera] Extracting interactions: https://www.quera.com/vision-mission (8/19), chunk 2/11
+[12:20:56 +43m 19s | quera] Extracting interactions: https://www.quera.com/vision-mission (8/19), chunk 3/11
+[12:20:58 +43m 20s | quera] Extracting interactions: https://www.quera.com/vision-mission (8/19), chunk 5/11
+[12:20:59 +43m 22s | quera] Extracting interactions: https://www.quera.com/vision-mission (8/19), chunk 6/11
+[12:21:01 +43m 23s | quera] Extracting interactions: https://www.quera.com/vision-mission (8/19), chunk 9/11
+[12:21:06 +43m 28s | quera] Extracting interactions: https://www.quera.com/vision-mission (8/19), chunk 10/11
+[12:21:10 +43m 33s | quera] Extracting interactions: https://www.quera.com/about (9/19), chunk 2/37
+[12:21:30 +43m 53s | quera] Extracting interactions: https://www.quera.com/about (9/19), chunk 3/37
+[12:21:32 +43m 55s | quera] Extracting interactions: https://www.quera.com/about (9/19), chunk 5/37
+[12:21:34 +43m 56s | quera] Extracting interactions: https://www.quera.com/about (9/19), chunk 6/37
+[12:21:35 +43m 58s | quera] Extracting interactions: https://www.quera.com/about (9/19), chunk 7/37
+[12:21:40 +44m 3s | quera] Extracting interactions: https://www.quera.com/about (9/19), chunk 8/37
+[12:21:45 +44m 8s | quera] Extracting interactions: https://www.quera.com/about (9/19), chunk 9/37
+[12:21:54 +44m 16s | quera] Extracting interactions: https://www.quera.com/about (9/19), chunk 10/37
+[12:21:57 +44m 19s | quera] Extracting interactions: https://www.quera.com/about (9/19), chunk 11/37
+[12:22:08 +44m 31s | quera] Extracting interactions: https://www.quera.com/about (9/19), chunk 12/37
+[12:22:15 +44m 38s | quera] Extracting interactions: https://www.quera.com/about (9/19), chunk 13/37
+[12:22:21 +44m 44s | quera] Extracting interactions: https://www.quera.com/about (9/19), chunk 14/37
+[12:22:34 +44m 57s | quera] Extracting interactions: https://www.quera.com/about (9/19), chunk 15/37
+[12:22:54 +45m 17s | quera] Extracting interactions: https://www.quera.com/about (9/19), chunk 16/37
+[12:23:19 +45m 42s | quera] Extracting interactions: https://www.quera.com/about (9/19), chunk 17/37
+[12:23:32 +45m 54s | quera] Extracting interactions: https://www.quera.com/about (9/19), chunk 18/37
+[12:23:41 +46m 4s | quera] Extracting interactions: https://www.quera.com/about (9/19), chunk 19/37
+[12:23:46 +46m 8s | quera] Extracting interactions: https://www.quera.com/about (9/19), chunk 20/37
+[12:23:54 +46m 17s | quera] Extracting interactions: https://www.quera.com/about (9/19), chunk 21/37
+[12:23:58 +46m 21s | quera] Extracting interactions: https://www.quera.com/about (9/19), chunk 22/37
+[12:24:11 +46m 34s | quera] Extracting interactions: https://www.quera.com/about (9/19), chunk 23/37
+[12:24:29 +46m 51s | quera] Extracting interactions: https://www.quera.com/about (9/19), chunk 24/37
+[12:24:44 +47m 7s | quera] Extracting interactions: https://www.quera.com/about (9/19), chunk 25/37
+[12:25:00 +47m 22s | quera] Extracting interactions: https://www.quera.com/about (9/19), chunk 26/37
+[12:25:10 +47m 33s | quera] Extracting interactions: https://www.quera.com/about (9/19), chunk 27/37
+[12:25:19 +47m 42s | quera] Extracting interactions: https://www.quera.com/about (9/19), chunk 28/37
+[12:25:25 +47m 47s | quera] Extracting interactions: https://www.quera.com/about (9/19), chunk 29/37
+[12:25:43 +48m 6s | quera] Extracting interactions: https://www.quera.com/about (9/19), chunk 30/37
+[12:26:16 +48m 39s | quera] Extracting interactions: https://www.quera.com/about (9/19), chunk 31/37
+[12:26:49 +49m 12s | quera] Extracting interactions: https://www.quera.com/about (9/19), chunk 32/37
+[12:26:54 +49m 17s | quera] Extracting interactions: https://www.quera.com/about (9/19), chunk 35/37
+[12:26:58 +49m 21s | quera] Extracting interactions: https://www.quera.com/about (9/19), chunk 36/37
+[12:27:11 +49m 33s | quera] Extracting interactions: https://www.quera.com/our-quantum-roadmap (10/19), chunk 2/12
+[12:27:29 +49m 51s | quera] Extracting interactions: https://www.quera.com/our-quantum-roadmap (10/19), chunk 3/12
+[12:27:31 +49m 54s | quera] Extracting interactions: https://www.quera.com/our-quantum-roadmap (10/19), chunk 5/12
+[12:27:35 +49m 58s | quera] Extracting interactions: https://www.quera.com/our-quantum-roadmap (10/19), chunk 6/12
+[12:27:45 +50m 8s | quera] Extracting interactions: https://www.quera.com/our-quantum-roadmap (10/19), chunk 7/12
+[12:27:50 +50m 12s | quera] Extracting interactions: https://www.quera.com/our-quantum-roadmap (10/19), chunk 10/12
+[12:27:54 +50m 17s | quera] Extracting interactions: https://www.quera.com/our-quantum-roadmap (10/19), chunk 11/12
+[12:27:56 +50m 18s | quera] Extracting interactions: https://www.quera.com/blog (11/19), chunk 2/21
+[12:28:13 +50m 36s | quera] Extracting interactions: https://www.quera.com/blog (11/19), chunk 3/21
+[12:28:15 +50m 37s | quera] Extracting interactions: https://www.quera.com/blog (11/19), chunk 5/21
+[12:28:16 +50m 39s | quera] Extracting interactions: https://www.quera.com/blog (11/19), chunk 10/21
+[12:28:19 +50m 42s | quera] Extracting interactions: https://www.quera.com/blog (11/19), chunk 11/21
+[12:28:22 +50m 45s | quera] Extracting interactions: https://www.quera.com/blog (11/19), chunk 12/21
+[12:28:33 +50m 56s | quera] Extracting interactions: https://www.quera.com/blog (11/19), chunk 13/21
+[12:28:47 +51m 10s | quera] Extracting interactions: https://www.quera.com/blog (11/19), chunk 14/21
+[12:28:53 +51m 16s | quera] Extracting interactions: https://www.quera.com/blog (11/19), chunk 16/21
+[12:28:57 +51m 20s | quera] Extracting interactions: https://www.quera.com/blog (11/19), chunk 17/21
+[12:29:01 +51m 24s | quera] Extracting interactions: https://www.quera.com/blog (11/19), chunk 18/21
+[12:29:06 +51m 28s | quera] Extracting interactions: https://www.quera.com/blog (11/19), chunk 19/21
+[12:29:09 +51m 32s | quera] Extracting interactions: https://www.quera.com/blog (11/19), chunk 20/21
+[12:29:12 +51m 34s | quera] Extracting interactions: https://www.quera.com/gemini (12/19), chunk 2/13
+[12:29:45 +52m 8s | quera] Extracting interactions: https://www.quera.com/gemini (12/19), chunk 3/13
+[12:29:48 +52m 10s | quera] Extracting interactions: https://www.quera.com/gemini (12/19), chunk 5/13
+[12:29:51 +52m 14s | quera] Extracting interactions: https://www.quera.com/gemini (12/19), chunk 6/13
+[12:29:56 +52m 19s | quera] Extracting interactions: https://www.quera.com/gemini (12/19), chunk 7/13
+[12:30:05 +52m 27s | quera] Extracting interactions: https://www.quera.com/gemini (12/19), chunk 8/13
+[12:30:11 +52m 33s | quera] Extracting interactions: https://www.quera.com/gemini (12/19), chunk 9/13
+[12:30:20 +52m 43s | quera] Extracting interactions: https://www.quera.com/gemini (12/19), chunk 11/13
+[12:30:22 +52m 44s | quera] Extracting interactions: https://www.quera.com/gemini (12/19), chunk 12/13
+[12:30:26 +52m 49s | quera] Extracting interactions: https://www.quera.com/news (13/19), chunk 2/26
+[12:30:57 +53m 20s | quera] Extracting interactions: https://www.quera.com/news (13/19), chunk 3/26
+[12:31:00 +53m 22s | quera] Extracting interactions: https://www.quera.com/news (13/19), chunk 5/26
+[12:31:01 +53m 24s | quera] Extracting interactions: https://www.quera.com/news (13/19), chunk 6/26
+[12:31:05 +53m 28s | quera] Extracting interactions: https://www.quera.com/news (13/19), chunk 7/26
+[12:31:09 +53m 32s | quera] Extracting interactions: https://www.quera.com/news (13/19), chunk 10/26
+[12:31:14 +53m 36s | quera] Extracting interactions: https://www.quera.com/news (13/19), chunk 11/26
+[12:31:17 +53m 40s | quera] Extracting interactions: https://www.quera.com/news (13/19), chunk 12/26
+[12:31:47 +54m 9s | quera] Extracting interactions: https://www.quera.com/news (13/19), chunk 17/26
+[12:31:53 +54m 16s | quera] Extracting interactions: https://www.quera.com/news (13/19), chunk 20/26
+[12:31:59 +54m 22s | quera] Extracting interactions: https://www.quera.com/news (13/19), chunk 21/26
+[12:32:08 +54m 30s | quera] Extracting interactions: https://www.quera.com/news (13/19), chunk 22/26
+[12:32:12 +54m 35s | quera] Extracting interactions: https://www.quera.com/news (13/19), chunk 24/26
+[12:32:14 +54m 37s | quera] Extracting interactions: https://www.quera.com/news (13/19), chunk 25/26
+[12:32:16 +54m 39s | quera] Extracting interactions: https://www.quera.com/neutral-atom-platform (14/19), chunk 2/19
+[12:32:52 +55m 15s | quera] Extracting interactions: https://www.quera.com/neutral-atom-platform (14/19), chunk 3/19
+[12:32:55 +55m 17s | quera] Extracting interactions: https://www.quera.com/neutral-atom-platform (14/19), chunk 5/19
+[12:32:56 +55m 19s | quera] Extracting interactions: https://www.quera.com/neutral-atom-platform (14/19), chunk 6/19
+[12:32:58 +55m 20s | quera] Extracting interactions: https://www.quera.com/neutral-atom-platform (14/19), chunk 7/19
+[12:33:00 +55m 22s | quera] Extracting interactions: https://www.quera.com/neutral-atom-platform (14/19), chunk 8/19
+[12:33:03 +55m 25s | quera] Extracting interactions: https://www.quera.com/neutral-atom-platform (14/19), chunk 13/19
+[12:33:06 +55m 29s | quera] Extracting interactions: https://www.quera.com/neutral-atom-platform (14/19), chunk 14/19
+[12:33:08 +55m 31s | quera] Extracting interactions: https://www.quera.com/neutral-atom-platform (14/19), chunk 17/19
+[12:33:14 +55m 37s | quera] Extracting interactions: https://www.quera.com/neutral-atom-platform (14/19), chunk 18/19
+[12:33:18 +55m 41s | quera] Extracting interactions: https://www.quera.com/co-design (15/19), chunk 2/18
+[12:33:53 +56m 16s | quera] Extracting interactions: https://www.quera.com/co-design (15/19), chunk 3/18
+[12:33:55 +56m 18s | quera] Extracting interactions: https://www.quera.com/co-design (15/19), chunk 5/18
+[12:33:58 +56m 21s | quera] Extracting interactions: https://www.quera.com/co-design (15/19), chunk 6/18
+[12:34:01 +56m 24s | quera] Extracting interactions: https://www.quera.com/co-design (15/19), chunk 7/18
+[12:34:05 +56m 27s | quera] Extracting interactions: https://www.quera.com/co-design (15/19), chunk 8/18
+[12:34:11 +56m 34s | quera] Extracting interactions: https://www.quera.com/co-design (15/19), chunk 16/18
+[12:34:17 +56m 40s | quera] Extracting interactions: https://www.quera.com/co-design (15/19), chunk 17/18
+[12:34:21 +56m 44s | quera] Extracting interactions: https://www.quera.com/bloqade (16/19), chunk 2/13
+[12:34:31 +56m 53s | quera] Extracting interactions: https://www.quera.com/bloqade (16/19), chunk 3/13
+[12:34:32 +56m 55s | quera] Extracting interactions: https://www.quera.com/bloqade (16/19), chunk 5/13
+[12:34:39 +57m 2s | quera] Extracting interactions: https://www.quera.com/bloqade (16/19), chunk 6/13
+[12:34:47 +57m 10s | quera] Extracting interactions: https://www.quera.com/bloqade (16/19), chunk 7/13
+[12:34:58 +57m 21s | quera] Extracting interactions: https://www.quera.com/bloqade (16/19), chunk 8/13
+[12:35:03 +57m 25s | quera] Extracting interactions: https://www.quera.com/bloqade (16/19), chunk 9/13
+[12:35:08 +57m 31s | quera] Extracting interactions: https://www.quera.com/bloqade (16/19), chunk 10/13
+[12:35:15 +57m 38s | quera] Extracting interactions: https://www.quera.com/bloqade (16/19), chunk 11/13
+[12:35:17 +57m 40s | quera] Extracting interactions: https://www.quera.com/bloqade (16/19), chunk 12/13
+[12:35:21 +57m 44s | quera] Extracting interactions: https://www.quera.com/partners (17/19), chunk 2/22
+[12:35:33 +57m 56s | quera] Extracting interactions: https://www.quera.com/partners (17/19), chunk 3/22
+[12:35:35 +57m 58s | quera] Extracting interactions: https://www.quera.com/partners (17/19), chunk 5/22
+[12:35:38 +58m 0s | quera] Extracting interactions: https://www.quera.com/partners (17/19), chunk 6/22
+[12:35:42 +58m 5s | quera] Extracting interactions: https://www.quera.com/partners (17/19), chunk 7/22
+[12:35:47 +58m 10s | quera] Extracting interactions: https://www.quera.com/partners (17/19), chunk 8/22
+[12:35:49 +58m 12s | quera] Extracting interactions: https://www.quera.com/partners (17/19), chunk 9/22
+[12:35:51 +58m 14s | quera] Extracting interactions: https://www.quera.com/partners (17/19), chunk 10/22
+[12:35:56 +58m 18s | quera] Extracting interactions: https://www.quera.com/partners (17/19), chunk 11/22
+[12:36:01 +58m 23s | quera] Extracting interactions: https://www.quera.com/partners (17/19), chunk 12/22
+[12:36:05 +58m 28s | quera] Extracting interactions: https://www.quera.com/partners (17/19), chunk 13/22
+[12:36:15 +58m 37s | quera] Extracting interactions: https://www.quera.com/partners (17/19), chunk 14/22
+[12:36:27 +58m 50s | quera] Extracting interactions: https://www.quera.com/partners (17/19), chunk 15/22
+[12:36:30 +58m 53s | quera] Extracting interactions: https://www.quera.com/partners (17/19), chunk 16/22
+[12:36:35 +58m 58s | quera] Extracting interactions: https://www.quera.com/partners (17/19), chunk 17/22
+[12:36:36 +58m 59s | quera] Extracting interactions: https://www.quera.com/partners (17/19), chunk 18/22
+[12:36:39 +59m 1s | quera] Extracting interactions: https://www.quera.com/partners (17/19), chunk 19/22
+[12:36:40 +59m 3s | quera] Extracting interactions: https://www.quera.com/partners (17/19), chunk 20/22
+[12:36:42 +59m 4s | quera] Extracting interactions: https://www.quera.com/partners (17/19), chunk 21/22
+[12:36:48 +59m 11s | quera] Extracting interactions: https://www.quera.com/aquila (18/19), chunk 2/16
+[12:37:19 +59m 42s | quera] Extracting interactions: https://www.quera.com/aquila (18/19), chunk 3/16
+[12:37:21 +59m 43s | quera] Extracting interactions: https://www.quera.com/aquila (18/19), chunk 5/16
+[12:37:24 +59m 47s | quera] Extracting interactions: https://www.quera.com/aquila (18/19), chunk 6/16
+[12:37:28 +59m 51s | quera] Extracting interactions: https://www.quera.com/aquila (18/19), chunk 7/16
+[12:37:33 +59m 55s | quera] Extracting interactions: https://www.quera.com/aquila (18/19), chunk 8/16
+[12:37:38 +1h 0m 0s | quera] Extracting interactions: https://www.quera.com/aquila (18/19), chunk 9/16
+[12:37:53 +1h 0m 16s | quera] Extracting interactions: https://www.quera.com/aquila (18/19), chunk 10/16
+[12:38:13 +1h 0m 35s | quera] Extracting interactions: https://www.quera.com/aquila (18/19), chunk 11/16
+[12:38:15 +1h 0m 37s | quera] Extracting interactions: https://www.quera.com/aquila (18/19), chunk 14/16
+[12:38:16 +1h 0m 39s | quera] Extracting interactions: https://www.quera.com/aquila (18/19), chunk 15/16
+[12:38:17 +1h 0m 40s | quera] Extracting interactions: https://www.quera.com/quantum-error-correction (19/19), chunk 2/17
+[12:38:40 +1h 1m 3s | quera] Extracting interactions: https://www.quera.com/quantum-error-correction (19/19), chunk 3/17
+[12:38:42 +1h 1m 5s | quera] Extracting interactions: https://www.quera.com/quantum-error-correction (19/19), chunk 5/17
+[12:38:43 +1h 1m 6s | quera] Extracting interactions: https://www.quera.com/quantum-error-correction (19/19), chunk 6/17
+[12:39:02 +1h 1m 25s | quera] Extracting interactions: https://www.quera.com/quantum-error-correction (19/19), chunk 7/17
+[12:39:13 +1h 1m 36s | quera] Extracting interactions: https://www.quera.com/quantum-error-correction (19/19), chunk 8/17
+[12:39:34 +1h 1m 56s | quera] Extracting interactions: https://www.quera.com/quantum-error-correction (19/19), chunk 9/17
+[12:39:50 +1h 2m 13s | quera] Extracting interactions: https://www.quera.com/quantum-error-correction (19/19), chunk 10/17
+[12:39:55 +1h 2m 18s | quera] Extracting interactions: https://www.quera.com/quantum-error-correction (19/19), chunk 11/17
+[12:40:02 +1h 2m 25s | quera] Extracting interactions: https://www.quera.com/quantum-error-correction (19/19), chunk 12/17
+[12:40:13 +1h 2m 36s | quera] Extracting interactions: https://www.quera.com/quantum-error-correction (19/19), chunk 13/17
+[12:40:22 +1h 2m 45s | quera] Extracting interactions: https://www.quera.com/quantum-error-correction (19/19), chunk 15/17
+[12:40:27 +1h 2m 50s | quera] Extracting interactions: https://www.quera.com/quantum-error-correction (19/19), chunk 16/17
+[12:40:33 +1h 2m 55s | quera] Saved 3_interaction_results.json with 374 extracted interactions.
+
+[12:40:33 +1h 2m 55s | quera] === 4 clean interactions ===
+[12:40:33 +1h 2m 56s | quera] Saved 4_edges.json with 50 cleaned interactions.
+
+[12:40:33 +1h 2m 56s | quera] === 5 helix enrichment ===
+[12:40:33 +1h 2m 56s | quera] Wrote 5_nodes.json (96 actors)
+[12:40:33 +1h 2m 56s | quera] Wrote 5_edges.json (50 interactions)
+[12:40:33 +1h 2m 56s | quera] Actor helix counts: {'Academia': 19, 'Civil Society': 9, 'Government': 5, 'Industry': 42, 'Intermediary': 10, 'Unknown': 11}
+[12:40:33 +1h 2m 56s | quera] Functional-space counts: {'Innovation': 13, 'Intra-helix / Not classified': 35, 'Unknown': 2}
+
+[12:40:33 +1h 2m 56s | quera] === 6 network visualisation ===
+[12:40:34 +1h 2m 56s | quera] Wrote quantum_network.html
+[12:40:34 +1h 2m 56s | quera] Nodes: 96
+[12:40:34 +1h 2m 56s | quera] Edges: 17
+
+[12:40:34 +1h 2m 56s | quera] Done. Outputs written to: /home/lv/IDP/idpdeeptech/pipeline/site_outputs/quera
+[12:40:34 +1h 2m 56s | quera] Log: /home/lv/IDP/idpdeeptech/pipeline/site_outputs/quera/run.log
+
+========================================================================
+RUN FINISHED 2026-06-17 12:40:34  (OK)
+Started:     2026-06-17 11:37:37
+Elapsed:     1h 2m 56s
+========================================================================

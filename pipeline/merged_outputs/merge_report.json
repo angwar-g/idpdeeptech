@@ -1,5 +1,5 @@
 {
-  "source_count": 57,
+  "source_count": 133,
   "sources": [
     "pdf/Austria24",
     "pdf/BadenWurttemberg",
@@ -54,15 +54,91 @@
     "pdf/china25",
     "pdf/japan25",
     "pdf/singapore25",
+    "site/1qbit",
+    "site/aeluma",
+    "site/aimphotonics",
+    "site/alice_bob",
+    "site/anyonsys",
+    "site/aqt",
+    "site/atom_computing",
     "site/aws_amazon_braket",
+    "site/bluequbit",
+    "site/bqpsim",
+    "site/classiq",
+    "site/cryptoquantique",
+    "site/delft_circuits",
+    "site/diraq",
+    "site/dwavequantum",
+    "site/eeroq",
+    "site/eleqtron",
+    "site/evolutionq",
+    "site/global_fujitsu_en_global_technology_research_quantum",
+    "site/horizonquantum",
     "site/ibm",
+    "site/infleqtion",
+    "site/intel_content_www_us_en_research_quantum_computing_html",
     "site/ionq",
-    "site/psiquantum"
+    "site/kets_quantum",
+    "site/kiutra",
+    "site/meetiqm",
+    "site/microsoft",
+    "site/multiversecomputing",
+    "site/nordquantique",
+    "site/oqc",
+    "site/orcacomputing",
+    "site/parityqc",
+    "site/pasqal",
+    "site/photonic",
+    "site/pqshield",
+    "site/proteinqure",
+    "site/psiquantum",
+    "site/q_ctrl",
+    "site/qaisec",
+    "site/qcware",
+    "site/qnulabs",
+    "site/qruise",
+    "site/qsimulate",
+    "site/quandela",
+    "site/quantfi",
+    "site/quantinuum",
+    "site/quantistry",
+    "site/quantum_dice",
+    "site/quantum_machines",
+    "site/quantum_south",
+    "site/quantumai_google",
+    "site/quantumbase",
+    "site/quantumbrilliance",
+    "site/quantumcircuits",
+    "site/quantumcomputinginc",
+    "site/quantummotion",
+    "site/quantumsimulations",
+    "site/quantware",
+    "site/qubit_pharmaceuticals",
+    "site/qubitengineering",
+    "site/quera",
+    "site/quintessencelabs",
+    "site/quixquantum",
+    "site/qunasys_en",
+    "site/qunnect_inc",
+    "site/rigetti",
+    "site/riverlane",
+    "site/scalinq",
+    "site/seeqc",
+    "site/singlequantum",
+    "site/sparrowquantum",
+    "site/spinquanta",
+    "site/sqc_com",
+    "site/strangeworks",
+    "site/terraquantum",
+    "site/turing",
+    "site/universalquantum",
+    "site/welinq",
+    "site/xanadu"
   ],
-  "input_node_records": 2047,
-  "input_edge_records": 1213,
-  "output_unique_actors": 1660,
-  "output_unique_edges": 1213,
+  "input_node_records": 6899,
+  "input_edge_records": 5134,
+  "output_unique_actors": 5073,
+  "output_unique_edges": 5134,
   "rewrites_applied": {
     "japan25.pdf: ^(the )?government$ -> Japan Government": 1,
     "japan25.pdf: ^we$ -> Japan": 1
@@ -105,7 +181,23 @@
       "chosen_helix": "Academia",
       "source_documents": [
         "Europe25.pdf",
-        "Luis_Germany18.pdf"
+        "Luis_Germany18.pdf",
+        "https://www.bluequbit.io/quantum-mechanical-model"
+      ]
+    },
+    {
+      "entity": "Alice",
+      "canonical_actor_key": "alice",
+      "helixes": [
+        "Government",
+        "Industry",
+        "Unknown"
+      ],
+      "chosen_helix": "Industry",
+      "source_documents": [
+        "SouthAfrica21.pdf",
+        "https://alice-bob.com/blog/who-are-alice-and-bob-the-story-behind-our-name",
+        "https://www.bluequbit.io/blog/quantum-advantage-inside-peaked-circuits"
       ]
     },
     {
@@ -118,7 +210,94 @@
       "chosen_helix": "Industry",
       "source_documents": [
         "https://aws.amazon.com/braket",
-        "https://www.ionq.com/quantum-cloud"
+        "https://blog.qubit-pharmaceuticals.com/blog/greedy-quantum-algorithm-charts-a-new-course-to-ground-state-energy-success-1",
+        "https://docs.rigetti.com/qcs/guides/how-to-use-rigetti-qpus",
+        "https://infleqtion.com/research",
+        "https://q-ctrl.com/fire-opal",
+        "https://q2b.qcware.com/conference/2025-silicon-valley",
+        "https://quantumsimulations.de",
+        "https://www.aqt.eu/about",
+        "https://www.bluequbit.io/blog/how-does-quantum-computing-work",
+        "https://www.bqpsim.com/optimization",
+        "https://www.ionq.com/quantum-cloud",
+        "https://www.quera.com/enterprise-innovators"
+      ]
+    },
+    {
+      "entity": "American Physical Society",
+      "canonical_actor_key": "american physical society",
+      "helixes": [
+        "Academia",
+        "Civil Society"
+      ],
+      "chosen_helix": "Civil Society",
+      "source_documents": [
+        "Luis_USA22.pdf",
+        "https://atom-computing.com/news-resources/scientific-publications",
+        "https://blog.qubit-pharmaceuticals.com/scientific-publications",
+        "https://infleqtion.com/research",
+        "https://photonic.com/technology/qubit-platform",
+        "https://quantummotion.com/blog/page/2",
+        "https://www.quantinuum.com/news/blog",
+        "https://www.quera.com/publications",
+        "https://www.quixquantum.com/events",
+        "https://www.rigetti.com/research",
+        "https://www.singlequantum.com/events",
+        "https://www.welinq.fr/blog/welinq-scientific-board"
+      ]
+    },
+    {
+      "entity": "Andrew Dzurak",
+      "canonical_actor_key": "andrew dzurak",
+      "helixes": [
+        "Intermediary",
+        "Unknown"
+      ],
+      "chosen_helix": "Intermediary",
+      "source_documents": [
+        "https://q2b.qcware.com",
+        "https://www.diraq.com/team",
+        "https://www.quantum-machines.co"
+      ]
+    },
+    {
+      "entity": "APS",
+      "canonical_actor_key": "aps",
+      "helixes": [
+        "Civil Society",
+        "Unknown"
+      ],
+      "chosen_helix": "Civil Society",
+      "source_documents": [
+        "https://kiutra.com/news-events",
+        "https://www.riverlane.com/news/aps-march-meeting-2026",
+        "https://www.scalinq.com/news/resonance-ii-amplifying-the-quantumcommunity-at-aps-2025"
+      ]
+    },
+    {
+      "entity": "arXiv",
+      "canonical_actor_key": "arxiv",
+      "helixes": [
+        "Academia",
+        "Civil Society"
+      ],
+      "chosen_helix": "Academia",
+      "source_documents": [
+        "Luis_USA22.pdf",
+        "https://atom-computing.com/news-resources/scientific-publications",
+        "https://blog.qubit-pharmaceuticals.com/scientific-publications",
+        "https://eeroq.com/publications",
+        "https://infleqtion.com/research",
+        "https://iqm.tech",
+        "https://orcacomputing.com/orca-computing-demonstrates-scalable-quantum-memory",
+        "https://sparrowquantum.com/publications",
+        "https://www.bluequbit.io/research",
+        "https://www.pasqal.com/publications",
+        "https://www.qcware.com/research",
+        "https://www.quantum-machines.co/solutions/transducers",
+        "https://www.quera.com/publications",
+        "https://www.rigetti.com/research/p7",
+        "https://www.riverlane.com/news/the-need-for-approximation-new-paper-proves-exact-colour-code-decoding-is-intractable"
       ]
     },
     {
@@ -135,7 +314,52 @@
         "India25.pdf",
         "Luis_Australia23.pdf",
         "Luis_Czechia25.pdf",
-        "https://www.psiquantum.com/news-import/category/Company"
+        "https://global.fujitsu/en-global/careers",
+        "https://quantumbrilliance.com/contact-us/general-inquiry",
+        "https://www.diraq.com/publications",
+        "https://www.psiquantum.com/news-import/category/Company",
+        "https://www.quintessencelabs.com/why-us"
+      ]
+    },
+    {
+      "entity": "Azure Quantum",
+      "canonical_actor_key": "azure quantum",
+      "helixes": [
+        "Industry",
+        "Unknown"
+      ],
+      "chosen_helix": "Industry",
+      "source_documents": [
+        "https://1qbit.com/research/scaling-overhead-of-locality-reduction-in-binary-optimization-problems",
+        "https://quantumai.google/cirq/hardware",
+        "https://www.rigetti.com/applications"
+      ]
+    },
+    {
+      "entity": "Bob",
+      "canonical_actor_key": "bob",
+      "helixes": [
+        "Government",
+        "Unknown"
+      ],
+      "chosen_helix": "Government",
+      "source_documents": [
+        "SouthAfrica21.pdf",
+        "https://alice-bob.com/blog",
+        "https://www.bluequbit.io/blog/quantum-advantage-inside-peaked-circuits"
+      ]
+    },
+    {
+      "entity": "Bohdan Kulchytskyy",
+      "canonical_actor_key": "bohdan kulchytskyy",
+      "helixes": [
+        "Government",
+        "Unknown"
+      ],
+      "chosen_helix": "Government",
+      "source_documents": [
+        "https://1qbit.com/research/variationally-scheduled-quantum-simulation",
+        "https://nordquantique.com/people"
       ]
     },
     {
@@ -152,7 +376,16 @@
         "Luis_Netherlands19.pdf",
         "Luis_UK23.pdf",
         "SouthAfrica21.pdf",
-        "WEF25.pdf"
+        "WEF25.pdf",
+        "https://delft-circuits.com/study--press-release/delft-circuits-secures-funding-for-manufacturing-expansion",
+        "https://infleqtion.com/videos",
+        "https://newsroom.intel.com/new-technologies/intel-newsroom-archive-2023",
+        "https://q2b.qcware.com/conference/2025-paris",
+        "https://quantumsimulations.de/services",
+        "https://qunasys.com/en/technology",
+        "https://www.quera.com",
+        "https://www.quintessencelabs.com/quantum-101",
+        "https://www.riverlane.com/blog/why-you-should-consider-a-career-in-quantum-computing"
       ]
     },
     {
@@ -183,7 +416,39 @@
         "India25.pdf",
         "Luis_Canada22.pdf",
         "Luis_Japan24.pdf",
-        "OECD25.pdf"
+        "OECD25.pdf",
+        "https://1qbit.com/careers/current-openings/job-description-qec-scientist",
+        "https://anyonsys.com/en/products",
+        "https://global.fujitsu/en-global/country-selector",
+        "https://nordquantique.com/fr/articles/budget-2025-batir-lavenir-quantique-du-canada",
+        "https://www.quantum-machines.co/products/qualibrate"
+      ]
+    },
+    {
+      "entity": "CERN",
+      "canonical_actor_key": "cern",
+      "helixes": [
+        "Academia",
+        "Government"
+      ],
+      "chosen_helix": "Academia",
+      "source_documents": [
+        "Europe23.pdf",
+        "https://www.pasqal.com/about-us/partners",
+        "https://www.riverlane.com/about-us"
+      ]
+    },
+    {
+      "entity": "ChatGPT",
+      "canonical_actor_key": "chatgpt",
+      "helixes": [
+        "Industry",
+        "Unknown"
+      ],
+      "chosen_helix": "Industry",
+      "source_documents": [
+        "https://strangeworks.com/use-cases/predict",
+        "https://www.turing.com/blog/passing-the-turing-test-whats-next"
       ]
     },
     {
@@ -205,7 +470,69 @@
         "Luis_UK23.pdf",
         "SaudiArabia19.pdf",
         "Turkey.pdf",
+        "https://seeqc.com/whitepaper",
+        "https://www.bluequbit.io/blog/quantum-internet",
+        "https://www.intel.com/content/www/us/en/foundry/overview.html",
+        "https://www.quintessencelabs.com",
+        "https://www.spinquanta.com/news/media-coverage",
         "japan25.pdf"
+      ]
+    },
+    {
+      "entity": "Cirq",
+      "canonical_actor_key": "cirq",
+      "helixes": [
+        "Academia",
+        "Unknown"
+      ],
+      "chosen_helix": "Academia",
+      "source_documents": [
+        "https://quantumai.google/cirq/dev/development",
+        "https://www.bluequbit.io/google-quantum-computer"
+      ]
+    },
+    {
+      "entity": "Cohere",
+      "canonical_actor_key": "cohere",
+      "helixes": [
+        "Civil Society",
+        "Industry"
+      ],
+      "chosen_helix": "Industry",
+      "source_documents": [
+        "https://aws.amazon.com/marketplace",
+        "https://multiversecomputing.com/resources"
+      ]
+    },
+    {
+      "entity": "Commissariat à l'énergie atomique et aux énergies alternatives (CEA)",
+      "canonical_actor_key": "commissariat l nergie atomique et aux nergies alternatives",
+      "helixes": [
+        "Academia",
+        "Government"
+      ],
+      "chosen_helix": "Academia",
+      "source_documents": [
+        "Luis_France21.pdf",
+        "https://parityqc.com/hpcqs-project-inauguration-of-jade-and-ruby-quantum-processors",
+        "https://www.quandela.com/products-and-services/belenos"
+      ]
+    },
+    {
+      "entity": "Cookiebot",
+      "canonical_actor_key": "cookiebot",
+      "helixes": [
+        "Industry",
+        "Unknown"
+      ],
+      "chosen_helix": "Industry",
+      "source_documents": [
+        "https://infleqtion.com/quantum-computing",
+        "https://iqm.tech/technology/tech-stack",
+        "https://kiutra.com/projects/large-scale-magnetic-cooling",
+        "https://pqshield.com/markets/system-integrators",
+        "https://www.quandela.com/ko",
+        "https://www.riverlane.com/jobs"
       ]
     },
     {
@@ -235,6 +562,37 @@
       ]
     },
     {
+      "entity": "David Wineland",
+      "canonical_actor_key": "david wineland",
+      "helixes": [
+        "Academia",
+        "Unknown"
+      ],
+      "chosen_helix": "Academia",
+      "source_documents": [
+        "Luis_USA18.pdf",
+        "https://www.aqt.eu/quantum-glossary"
+      ]
+    },
+    {
+      "entity": "Deloitte",
+      "canonical_actor_key": "deloitte",
+      "helixes": [
+        "Industry",
+        "Intermediary"
+      ],
+      "chosen_helix": "Industry",
+      "source_documents": [
+        "https://iqm.tech/company/about-iqm",
+        "https://quantum-south.com/airlinescargo/green-air-cargo-ops-with-quantum-optimization",
+        "https://qunasys.com/en/articles/20260506",
+        "https://strangeworks.com",
+        "https://www.bqpsim.com/press/bqp-appoints-nuair-ceo-craig-marcinkowski-to-board-as-u-s-defense-and-aerospace-growth-accelerates",
+        "https://www.ionq.com",
+        "https://www.quera.com/blog"
+      ]
+    },
+    {
       "entity": "Denmark",
       "canonical_actor_key": "denmark",
       "helixes": [
@@ -245,7 +603,102 @@
       "source_documents": [
         "India25.pdf",
         "Luis_Denmark23.pdf",
-        "Nordic23.pdf"
+        "Nordic23.pdf",
+        "https://sparrowquantum.com/news"
+      ]
+    },
+    {
+      "entity": "DLR (German Aerospace Center)",
+      "canonical_actor_key": "dlr",
+      "helixes": [
+        "Academia",
+        "Government"
+      ],
+      "chosen_helix": "Government",
+      "source_documents": [
+        "https://universalquantum.com/knowledge-hub/universal-quantum-selected-for-tech-nation-fifty-2026",
+        "https://www.quixquantum.com/careers"
+      ]
+    },
+    {
+      "entity": "DLR Quantum Computing Initiative",
+      "canonical_actor_key": "dlr quantum computing initiative",
+      "helixes": [
+        "Academia",
+        "Government"
+      ],
+      "chosen_helix": "Academia",
+      "source_documents": [
+        "BadenWurttemberg.pdf",
+        "https://parityqc.com/parityqc-awarded-contract-by-dlr-to-integrate-quantum-computing-for-next-generation-mobility-solutions"
+      ]
+    },
+    {
+      "entity": "Dr. Juan Loredo",
+      "canonical_actor_key": "dr juan loredo",
+      "helixes": [
+        "Academia",
+        "Industry"
+      ],
+      "chosen_helix": "Industry",
+      "source_documents": [
+        "https://sparrowquantum.com/customer-stories/university-of-vienna",
+        "https://www.singlequantum.com"
+      ]
+    },
+    {
+      "entity": "Dr Peter Leek",
+      "canonical_actor_key": "dr peter leek",
+      "helixes": [
+        "Intermediary",
+        "Unknown"
+      ],
+      "chosen_helix": "Intermediary",
+      "source_documents": [
+        "https://oqc.tech/company/senior-leadership",
+        "https://www.scalinq.com/news"
+      ]
+    },
+    {
+      "entity": "Dr. Prineha Narang",
+      "canonical_actor_key": "dr prineha narang",
+      "helixes": [
+        "Intermediary",
+        "Unknown"
+      ],
+      "chosen_helix": "Intermediary",
+      "source_documents": [
+        "https://atom-computing.com/about-us",
+        "https://quantummotion.com/series-c-funding"
+      ]
+    },
+    {
+      "entity": "EeroQ",
+      "canonical_actor_key": "eeroq",
+      "helixes": [
+        "Academia",
+        "Industry",
+        "Unknown"
+      ],
+      "chosen_helix": "Industry",
+      "source_documents": [
+        "https://eeroq.com/governor-j-b-pritzker-visits-eeroq-hq",
+        "https://infleqtion.com/quantum-software",
+        "https://www.quantum-machines.co/products/opx"
+      ]
+    },
+    {
+      "entity": "Elevate Quantum",
+      "canonical_actor_key": "elevate quantum",
+      "helixes": [
+        "Industry",
+        "Intermediary"
+      ],
+      "chosen_helix": "Industry",
+      "source_documents": [
+        "https://q-ctrl.com/boulder-opal",
+        "https://q2b.qcware.com/conference/2025-silicon-valley",
+        "https://quantware.com/news/elevate-quantum-and-partners-launch-us-first-qoa-system-in-record-time"
       ]
     },
     {
@@ -261,6 +714,12 @@
         "Luis_Germany18.pdf",
         "Luis_Korea23.pdf",
         "Luis_Spain25.pdf",
+        "https://alice-bob.com/blog/scaling-the-cats-quantum-engineering-at-infrastructure-scale",
+        "https://q2b.qcware.com/conference/2025-paris",
+        "https://sparrowquantum.com/post/forbes-is-europe-poised-to-lead-the-quantum-computing-race",
+        "https://www.qnulabs.com/quantum-security-platform/qverse-quantum-safe-messaging-collaboration-platform",
+        "https://www.quixquantum.com/news/quix-quantum-introduces-pacu-a-photonic-assembly-control-unit-for-scalable-quantum-systems",
+        "https://www.spinquanta.com/news",
         "japan25.pdf"
       ]
     },
@@ -293,7 +752,42 @@
         "SouthAfrica21.pdf",
         "Switzerland26.pdf",
         "Turkey.pdf",
-        "WEF25.pdf"
+        "WEF25.pdf",
+        "https://delft-circuits.com/dc_news_article/havik-project-cryogenic-io-two-qubit-fidelity",
+        "https://kiutra.com/projects/large-scale-magnetic-cooling",
+        "https://multiversecomputing.com",
+        "https://quantummotion.com/quantum-motion-scientist-and-professor-m-fernando-gonzalez-zalba-awarded-competitive-erc-consolidator-grant",
+        "https://quantumsimulations.de/hqspectrum",
+        "https://qunasys.com/en/news",
+        "https://sparrowquantum.com/post/noqtes-to-set-scientific-and-market-benchmarks-for-quantum-sensors",
+        "https://www.aqt.eu/press",
+        "https://www.bluequbit.io/blog/quantum-internet",
+        "https://www.cryptoquantique.com/medical",
+        "https://www.qruise.com/company/partners",
+        "https://www.qubit-pharmaceuticals.com/legal-notices",
+        "https://www.singlequantum.com/solutions/excellence-line",
+        "https://www.welinq.fr/blog/welinq-launches-its-world-record-storage-solution-for-quantum-computing-scale-out"
+      ]
+    },
+    {
+      "entity": "Facebook",
+      "canonical_actor_key": "facebook",
+      "helixes": [
+        "Civil Society",
+        "Industry"
+      ],
+      "chosen_helix": "Industry",
+      "source_documents": [
+        "https://1qbit.com/careers/current-openings/job-description-qec-scientist",
+        "https://atom-computing.com/page/3",
+        "https://quantumcircuits.com/why-cavities-are-great-for-dual-rail-qubits",
+        "https://www.classiq.io/industries-collection/logistics",
+        "https://www.microsoft.com/de-de/windows",
+        "https://www.proteinqure.com/contact",
+        "https://www.quantfi.us/legal/cookie-policy",
+        "https://www.quantum-machines.co/products/qua-universal-quantum-language",
+        "https://www.thailand.intel.com/content/www/th/th/download-center/home.html",
+        "https://www.turing.com/intelligence/talent"
       ]
     },
     {
@@ -301,13 +795,16 @@
       "canonical_actor_key": "finland",
       "helixes": [
         "Academia",
-        "Industry"
+        "Industry",
+        "Unknown"
       ],
       "chosen_helix": "Industry",
       "source_documents": [
         "Luis_Finland25.pdf",
         "Luis_Japan24.pdf",
-        "Nordic23.pdf"
+        "Nordic23.pdf",
+        "https://iqm.tech/company/about-iqm",
+        "https://www.spinquanta.com/contact-us"
       ]
     },
     {
@@ -315,6 +812,7 @@
       "canonical_actor_key": "france",
       "helixes": [
         "Government",
+        "Industry",
         "Unknown"
       ],
       "chosen_helix": "Government",
@@ -324,7 +822,24 @@
         "India25.pdf",
         "Luis_France21.pdf",
         "Luis_Italy25.pdf",
-        "OECD25.pdf"
+        "OECD25.pdf",
+        "https://q2b.qcware.com/conference/2025-paris",
+        "https://www.quandela.com/products-and-services/entropy",
+        "https://www.quintessencelabs.com/events",
+        "https://www.welinq.fr/blog/welinq-launches-its-world-record-storage-solution-for-quantum-computing-scale-out"
+      ]
+    },
+    {
+      "entity": "Gemini",
+      "canonical_actor_key": "gemini",
+      "helixes": [
+        "Industry",
+        "Unknown"
+      ],
+      "chosen_helix": "Industry",
+      "source_documents": [
+        "https://go.turing.com/llm-model-evaluation",
+        "https://strangeworks.com/use-cases/predict"
       ]
     },
     {
@@ -337,7 +852,10 @@
       "chosen_helix": "Academia",
       "source_documents": [
         "Luis_Germany18.pdf",
-        "USA24.pdf"
+        "USA24.pdf",
+        "https://parityqc.com/parityqc-awarded-contract-by-dlr-to-integrate-quantum-computing-for-next-generation-mobility-solutions",
+        "https://www.quantinuum.com/products-solutions/quantinuum-systems/system-model-h1",
+        "https://www.quixquantum.com/products/universal-quantum-computer"
       ]
     },
     {
@@ -355,7 +873,154 @@
         "Luis_Germany18.pdf",
         "Luis_Germany23.pdf",
         "OECD25.pdf",
-        "SouthAfrica21.pdf"
+        "SouthAfrica21.pdf",
+        "https://kiutra.com/services",
+        "https://parityqc.com/career",
+        "https://quantumbrilliance.com/careers",
+        "https://universalquantum.com/de/hier-arbeiten",
+        "https://www.aqt.eu/about",
+        "https://www.qruise.com/company/research-projects",
+        "https://www.quantum-machines.co/products/qualibrate",
+        "https://www.spinquanta.com/contact-us"
+      ]
+    },
+    {
+      "entity": "GitHub",
+      "canonical_actor_key": "github",
+      "helixes": [
+        "Civil Society",
+        "Industry",
+        "Intermediary",
+        "Unknown"
+      ],
+      "chosen_helix": "Industry",
+      "source_documents": [
+        "https://azure.microsoft.com/de-de",
+        "https://quantumai.google/cirq/dev/development",
+        "https://www.classiq.io/applications/algorithm-optimization-benchmarking",
+        "https://www.cryptoquantique.com/products/quarklink-provisioning",
+        "https://www.quantum-machines.co/products/qua-universal-quantum-language",
+        "https://www.turing.com/advance/coding"
+      ]
+    },
+    {
+      "entity": "GitLab",
+      "canonical_actor_key": "gitlab",
+      "helixes": [
+        "Industry",
+        "Unknown"
+      ],
+      "chosen_helix": "Industry",
+      "source_documents": [
+        "https://aws.amazon.com/marketplace",
+        "https://www.aimphotonics.com/pdk"
+      ]
+    },
+    {
+      "entity": "Google Analytics",
+      "canonical_actor_key": "google analytics",
+      "helixes": [
+        "Industry",
+        "Unknown"
+      ],
+      "chosen_helix": "Industry",
+      "source_documents": [
+        "https://alice-bob.com/publications",
+        "https://orcacomputing.com/cookies-policy",
+        "https://quantumcircuits.com/cookie-policy",
+        "https://quantumcomputinginc.com/cookie-policy",
+        "https://sparrowquantum.com/team-categories/leadership-team",
+        "https://www.bluequbit.io/contact-us",
+        "https://www.rigetti.com/research"
+      ]
+    },
+    {
+      "entity": "Google Cloud",
+      "canonical_actor_key": "google cloud",
+      "helixes": [
+        "Government",
+        "Industry"
+      ],
+      "chosen_helix": "Industry",
+      "source_documents": [
+        "https://alice-bob.com/blog/alice-bob-2030-roadmap-to-useful-quantum-computers",
+        "https://www.intel.com/content/www/us/en/newsroom/resources/press-kits-labs-day-2020.html",
+        "https://www.ionq.com/quantum-cloud",
+        "https://www.pasqal.com/about-us/partners",
+        "https://www.turing.com/press"
+      ]
+    },
+    {
+      "entity": "Helium",
+      "canonical_actor_key": "helium",
+      "helixes": [
+        "Academia",
+        "Unknown"
+      ],
+      "chosen_helix": "Academia",
+      "source_documents": [
+        "https://alice-bob.com/blog/this-is-not-a-product-launch",
+        "https://www.horizonquantum.com/product/core-capabilities/subroutines"
+      ]
+    },
+    {
+      "entity": "HubSpot",
+      "canonical_actor_key": "hubspot",
+      "helixes": [
+        "Industry",
+        "Unknown"
+      ],
+      "chosen_helix": "Industry",
+      "source_documents": [
+        "http://www.quantware.com",
+        "https://kiutra.com/quantum-training",
+        "https://pqshield.com/markets/identity-paymentech",
+        "https://sparrowquantum.com/post/49-indium-hackernes-vaerste-mareridt",
+        "https://www.classiq.io/industries-collection/logistics",
+        "https://www.riverlane.com/news/the-need-for-approximation-new-paper-proves-exact-colour-code-decoding-is-intractable"
+      ]
+    },
+    {
+      "entity": "Hugging Face",
+      "canonical_actor_key": "hugging face",
+      "helixes": [
+        "Industry",
+        "Intermediary"
+      ],
+      "chosen_helix": "Industry",
+      "source_documents": [
+        "https://multiversecomputing.com/resources/hypernova-60b-the-world-s-most-efficient-model-in-its-category-according-to-artificial-analysis",
+        "https://research.turing.com/swebench",
+        "https://www.intel.com/content/www/us/en/artificial-intelligence/overview.html"
+      ]
+    },
+    {
+      "entity": "Hyperion Research, LLC",
+      "canonical_actor_key": "hyperion research llc",
+      "helixes": [
+        "Academia",
+        "Industry"
+      ],
+      "chosen_helix": "Academia",
+      "source_documents": [
+        "https://orcacomputing.com/orca-computing-leaps-forward-in-quantum-computing-race-with-acquisition",
+        "https://q2b.qcware.com/conference/2025-silicon-valley"
+      ]
+    },
+    {
+      "entity": "IDC",
+      "canonical_actor_key": "idc",
+      "helixes": [
+        "Academia",
+        "Civil Society"
+      ],
+      "chosen_helix": "Civil Society",
+      "source_documents": [
+        "https://global.fujitsu/en-global/about",
+        "https://www.dwavequantum.com/solutions-and-products/cloud-platform",
+        "https://www.dwavequantum.com/solutions-and-products/systems",
+        "https://www.ibm.com/services/technology-lifecycle-services",
+        "https://www.qcware.com/news"
       ]
     },
     {
@@ -363,12 +1028,31 @@
       "canonical_actor_key": "ieee",
       "helixes": [
         "Academia",
+        "Civil Society",
+        "Government",
         "Unknown"
       ],
-      "chosen_helix": "Academia",
+      "chosen_helix": "Civil Society",
       "source_documents": [
         "Luis_Ireland23.pdf",
-        "Luis_Spain25.pdf"
+        "Luis_Spain25.pdf",
+        "https://infleqtion.com/research",
+        "https://seeqc.com/resources",
+        "https://www.quera.com/neutral-atom-platform",
+        "https://www.singlequantum.com/library"
+      ]
+    },
+    {
+      "entity": "Illinois",
+      "canonical_actor_key": "illinois",
+      "helixes": [
+        "Government",
+        "Industry"
+      ],
+      "chosen_helix": "Industry",
+      "source_documents": [
+        "https://eeroq.com/governor-j-b-pritzker-visits-eeroq-hq",
+        "https://q2b.qcware.com/conference/2025-silicon-valley"
       ]
     },
     {
@@ -381,6 +1065,9 @@
       "chosen_helix": "Government",
       "source_documents": [
         "India25.pdf",
+        "https://quantumbrilliance.com/contact-us/product-inquiry",
+        "https://www.bqpsim.com/press",
+        "https://www.qnulabs.com/quantum-key-distribution-network-qkdn",
         "japan25.pdf"
       ]
     },
@@ -411,6 +1098,20 @@
       ]
     },
     {
+      "entity": "Italy",
+      "canonical_actor_key": "italy",
+      "helixes": [
+        "Industry",
+        "Unknown"
+      ],
+      "chosen_helix": "Industry",
+      "source_documents": [
+        "Luis_Italy25.pdf",
+        "https://q2b.qcware.com/conference/2025-paris",
+        "https://quantware.com/news/quantware-delivers-tenor-qpu-to-power-italys-largest-quantum-computer"
+      ]
+    },
+    {
       "entity": "Japan",
       "canonical_actor_key": "japan",
       "helixes": [
@@ -424,6 +1125,10 @@
         "Luis_Japan22.pdf",
         "Luis_Japan23.pdf",
         "Luis_Japan24.pdf",
+        "https://global.fujitsu/en-global/about/corporate/locations",
+        "https://iqm.tech",
+        "https://universalquantum.com/de/hier-arbeiten",
+        "https://www.riverlane.com/press-release/riverlane-report-reveals-scale-of-the-quantum-error-correction-challenge",
         "japan25.pdf"
       ]
     },
@@ -441,6 +1146,45 @@
       ]
     },
     {
+      "entity": "JB Pritzker",
+      "canonical_actor_key": "jb pritzker",
+      "helixes": [
+        "Government",
+        "Unknown"
+      ],
+      "chosen_helix": "Government",
+      "source_documents": [
+        "https://eeroq.com/governor-j-b-pritzker-visits-eeroq-hq",
+        "https://www.psiquantum.com/news-import/psiquantum-breaks-ground-chicago"
+      ]
+    },
+    {
+      "entity": "Jungsang Kim",
+      "canonical_actor_key": "jungsang kim",
+      "helixes": [
+        "Academia",
+        "Unknown"
+      ],
+      "chosen_helix": "Academia",
+      "source_documents": [
+        "https://1qbit.com/research/benchmark-study-of-quantum-algorithms-for-combinatorial-optimization-unitary-versus-dissipative",
+        "https://www.ionq.com/company"
+      ]
+    },
+    {
+      "entity": "JUNIQ",
+      "canonical_actor_key": "juniq",
+      "helixes": [
+        "Academia",
+        "Intermediary"
+      ],
+      "chosen_helix": "Intermediary",
+      "source_documents": [
+        "https://eleqtron.com/event/spring-school-2026",
+        "https://parityqc.com"
+      ]
+    },
+    {
       "entity": "Kingdom of Saudi Arabia (KSA)",
       "canonical_actor_key": "kingdom of saudi arabia",
       "helixes": [
@@ -454,6 +1198,83 @@
       ]
     },
     {
+      "entity": "LinkedIn",
+      "canonical_actor_key": "linkedin",
+      "helixes": [
+        "Civil Society",
+        "Industry",
+        "Intermediary",
+        "Unknown"
+      ],
+      "chosen_helix": "Industry",
+      "source_documents": [
+        "https://1qbit.com/life-at-1qbit",
+        "https://alice-bob.com/engineering",
+        "https://blog.qubit-pharmaceuticals.com/blog/going-15-30-faster-in-relative-binding-free-energy-calculations",
+        "https://eleqtron.com/datenschutzerklaerung",
+        "https://go.microsoft.com/fwlink",
+        "https://infleqtion.com/materials-science",
+        "https://meetiqm.com",
+        "https://pqshield.com/markets/system-integrators",
+        "https://qsimulate.com/news/1",
+        "https://quantummotion.com/early-career-opportunities",
+        "https://seeqc.com/technology",
+        "https://strangeworks.com/use-cases/predict",
+        "https://textbook.riverlane.com",
+        "https://universalquantum.com/de/wissenszentrum",
+        "https://www.classiq.io/industries-collection/logistics",
+        "https://www.evolutionq.com/contact",
+        "https://www.pasqal.com/solutions/cloud",
+        "https://www.quandela.com/fr-ca",
+        "https://www.quantfi.us",
+        "https://www.quantum-machines.co/solutions/transducers",
+        "https://www.quera.com",
+        "https://www.rigetti.com/careers",
+        "https://www.scalinq.com/career/senior-rf-microwave-engineer",
+        "https://www.sqc.com.au/qubits",
+        "https://www.turing.com/press"
+      ]
+    },
+    {
+      "entity": "Lip-Bu Tan",
+      "canonical_actor_key": "lip bu tan",
+      "helixes": [
+        "Intermediary",
+        "Unknown"
+      ],
+      "chosen_helix": "Intermediary",
+      "source_documents": [
+        "https://newsroom.intel.com/corporate",
+        "https://www.psiquantum.com/news-import"
+      ]
+    },
+    {
+      "entity": "Lord Vallance",
+      "canonical_actor_key": "lord vallance",
+      "helixes": [
+        "Industry",
+        "Unknown"
+      ],
+      "chosen_helix": "Industry",
+      "source_documents": [
+        "https://oqc.tech/company/series-c-fundraise",
+        "https://quantummotion.com/quantum-motion-delivers-the-industrys-first-full-stack-silicon-cmos-quantum-computer"
+      ]
+    },
+    {
+      "entity": "Matthijs Rijlaarsdam",
+      "canonical_actor_key": "matthijs rijlaarsdam",
+      "helixes": [
+        "Intermediary",
+        "Unknown"
+      ],
+      "chosen_helix": "Intermediary",
+      "source_documents": [
+        "https://q-ctrl.com/boulder-opal",
+        "https://quantware.com/about"
+      ]
+    },
+    {
       "entity": "Max Planck",
       "canonical_actor_key": "max planck",
       "helixes": [
@@ -463,7 +1284,8 @@
       "chosen_helix": "Academia",
       "source_documents": [
         "Europe25.pdf",
-        "Luis_Germany18.pdf"
+        "Luis_Germany18.pdf",
+        "https://www.bluequbit.io/quantum-mechanical-model"
       ]
     },
     {
@@ -474,11 +1296,16 @@
         "Industry",
         "Intermediary"
       ],
-      "chosen_helix": "Academia",
+      "chosen_helix": "Industry",
       "source_documents": [
         "India25.pdf",
         "Luis_Finland25.pdf",
-        "Luis_Spain25.pdf"
+        "Luis_Spain25.pdf",
+        "https://iqm.tech/products/iqm-spark",
+        "https://q-ctrl.com",
+        "https://www.bqpsim.com/press",
+        "https://www.cryptoquantique.com/industry-4-0",
+        "https://www.qnulabs.com/qnu-academy"
       ]
     },
     {
@@ -495,6 +1322,47 @@
       ]
     },
     {
+      "entity": "Michele Mosca (University of Waterloo)",
+      "canonical_actor_key": "michele mosca",
+      "helixes": [
+        "Academia",
+        "Unknown"
+      ],
+      "chosen_helix": "Academia",
+      "source_documents": [
+        "https://aws.amazon.com/braket/customers",
+        "https://www.evolutionq.com/resources/quantum-safe-publications"
+      ]
+    },
+    {
+      "entity": "Microsoft Azure",
+      "canonical_actor_key": "microsoft azure",
+      "helixes": [
+        "Government",
+        "Industry"
+      ],
+      "chosen_helix": "Industry",
+      "source_documents": [
+        "https://photonic.com/products",
+        "https://www.ionq.com/quantum-cloud",
+        "https://www.pasqal.com/solutions/cloud",
+        "https://www.quantinuum.com/products-solutions/hardware-h-series"
+      ]
+    },
+    {
+      "entity": "Microsoft Quantum",
+      "canonical_actor_key": "microsoft quantum",
+      "helixes": [
+        "Academia",
+        "Industry"
+      ],
+      "chosen_helix": "Industry",
+      "source_documents": [
+        "https://photonic.com/news/photonic-inc-closes-investment-round-with-over-200m-usd-275m-cad",
+        "https://www.ionq.com/quantum-cloud"
+      ]
+    },
+    {
       "entity": "Mitacs",
       "canonical_actor_key": "mitacs",
       "helixes": [
@@ -505,6 +1373,19 @@
       "source_documents": [
         "GlobalQuantumStrategies26.pdf",
         "Luis_Canada22.pdf"
+      ]
+    },
+    {
+      "entity": "National Academy of Engineering",
+      "canonical_actor_key": "national academy of engineering",
+      "helixes": [
+        "Civil Society",
+        "Government"
+      ],
+      "chosen_helix": "Government",
+      "source_documents": [
+        "https://infleqtion.com/inertial-sensing",
+        "https://www.bqpsim.com/press"
       ]
     },
     {
@@ -519,7 +1400,8 @@
         "GlobalQuantumStrategies26.pdf",
         "Luis_UK23.pdf",
         "UK24.pdf",
-        "https://ionq.com"
+        "https://ionq.com",
+        "https://seeqc.com/resources/seeqc-and-the-nqcc-announce-first-digital-interface-system-for-scalable-quantum-error-correction-in-collaboration-with-nvidia"
       ]
     },
     {
@@ -547,7 +1429,8 @@
         "Canada25.pdf",
         "Luis_Canada22.pdf",
         "Luis_Italy25.pdf",
-        "NATO23.pdf"
+        "NATO23.pdf",
+        "https://nordquantique.com/articles/budget-2025-building-canadas-quantum-future"
       ]
     },
     {
@@ -564,8 +1447,222 @@
         "OECD25.pdf",
         "SouthAfrica21.pdf",
         "https://aws.amazon.com/braket/quantum-computers",
+        "https://parityqc.com/parityos",
+        "https://quantumbrilliance.com/about-us",
         "https://www.ionq.com",
+        "https://www.quintessencelabs.com/news",
         "singapore25.pdf"
+      ]
+    },
+    {
+      "entity": "Nature",
+      "canonical_actor_key": "nature",
+      "helixes": [
+        "Academia",
+        "Civil Society"
+      ],
+      "chosen_helix": "Civil Society",
+      "source_documents": [
+        "https://blog.qubit-pharmaceuticals.com/scientific-publications",
+        "https://infleqtion.com/research",
+        "https://quantumai.google",
+        "https://quantware.com/technology",
+        "https://www.diraq.com/publications",
+        "https://www.proteinqure.com/differences-in-breast-cancer-through-a-biochemical-lens",
+        "https://www.qcware.com/research",
+        "https://www.quandela.com/resources/publications",
+        "https://www.quantinuum.com/research/research-areas",
+        "https://www.quantum-machines.co/solutions/transducers",
+        "https://www.quera.com/our-quantum-roadmap",
+        "https://www.rigetti.com/what-we-build",
+        "https://www.sqc.com.au/about"
+      ]
+    },
+    {
+      "entity": "Nature Communications",
+      "canonical_actor_key": "nature communications",
+      "helixes": [
+        "Academia",
+        "Civil Society"
+      ],
+      "chosen_helix": "Civil Society",
+      "source_documents": [
+        "https://infleqtion.com/research",
+        "https://photonic.com/resources",
+        "https://www.diraq.com/publications",
+        "https://www.qcware.com/research",
+        "https://www.riverlane.com/news/introducing-deltakit-stim",
+        "https://www.singlequantum.com/solutions/excellence-line"
+      ]
+    },
+    {
+      "entity": "Nature Nanotechnology",
+      "canonical_actor_key": "nature nanotechnology",
+      "helixes": [
+        "Academia",
+        "Civil Society"
+      ],
+      "chosen_helix": "Academia",
+      "source_documents": [
+        "https://sparrowquantum.com/publications",
+        "https://www.diraq.com/research-papers/tag/QUBIT+CONTROL",
+        "https://www.sqc.com.au/about"
+      ]
+    },
+    {
+      "entity": "Neil",
+      "canonical_actor_key": "neil",
+      "helixes": [
+        "Government",
+        "Industry"
+      ],
+      "chosen_helix": "Government",
+      "source_documents": [
+        "https://quantumcircuits.com/company",
+        "https://www.riverlane.com/about-us"
+      ]
+    },
+    {
+      "entity": "Network Rail",
+      "canonical_actor_key": "network rail",
+      "helixes": [
+        "Government",
+        "Industry"
+      ],
+      "chosen_helix": "Government",
+      "source_documents": [
+        "https://q-ctrl.com/our-users/defense-and-aerospace",
+        "https://q2b.qcware.com/conference/2025-silicon-valley"
+      ]
+    },
+    {
+      "entity": "Nord Quantique",
+      "canonical_actor_key": "nord quantique",
+      "helixes": [
+        "Academia",
+        "Industry"
+      ],
+      "chosen_helix": "Industry",
+      "source_documents": [
+        "https://nordquantique.com/fr/articles/redonner-la-ou-tout-a-commence",
+        "https://q-ctrl.com/our-users/enterprise"
+      ]
+    },
+    {
+      "entity": "Office",
+      "canonical_actor_key": "office",
+      "helixes": [
+        "Government",
+        "Industry"
+      ],
+      "chosen_helix": "Industry",
+      "source_documents": [
+        "Luis_Slovenia25.pdf",
+        "https://go.microsoft.com/fwlink"
+      ]
+    },
+    {
+      "entity": "Open Quantum Institute (OQI)",
+      "canonical_actor_key": "open quantum institute",
+      "helixes": [
+        "Academia",
+        "Civil Society"
+      ],
+      "chosen_helix": "Civil Society",
+      "source_documents": [
+        "https://universalquantum.com/knowledge-hub/universal-quantum-selected-for-tech-nation-fifty-2026",
+        "https://www.pasqal.com/about-us/partners",
+        "https://www.quera.com"
+      ]
+    },
+    {
+      "entity": "Pasqal",
+      "canonical_actor_key": "pasqal",
+      "helixes": [
+        "Academia",
+        "Industry"
+      ],
+      "chosen_helix": "Industry",
+      "source_documents": [
+        "France23.pdf",
+        "https://aws.amazon.com/braket",
+        "https://blog.qubit-pharmaceuticals.com/blog/qubit-pasqal-leveraging-analog-quantum-computing-for-drugdiscovery",
+        "https://q2b.qcware.com/conference/2025-paris",
+        "https://quantumai.google/cirq/hardware",
+        "https://www.bluequbit.io/blog/quantum-annealing",
+        "https://www.pasqal.com/quantum-advantage",
+        "https://www.qruise.com/company/research-projects",
+        "https://www.welinq.fr/blog/welinq-and-pasqal-partnership"
+      ]
+    },
+    {
+      "entity": "Pennylane",
+      "canonical_actor_key": "pennylane",
+      "helixes": [
+        "Industry",
+        "Unknown"
+      ],
+      "chosen_helix": "Industry",
+      "source_documents": [
+        "https://app.bluequbit.io/sdk-docs/index.html",
+        "https://quantumai.google/qualtran"
+      ]
+    },
+    {
+      "entity": "Peter Shor",
+      "canonical_actor_key": "peter shor",
+      "helixes": [
+        "Academia",
+        "Unknown"
+      ],
+      "chosen_helix": "Academia",
+      "source_documents": [
+        "Luis_Netherlands19.pdf",
+        "SouthAfrica21.pdf",
+        "https://kets-quantum.com/q-day-is-coming-and-we-are-not-prepared",
+        "https://seeqc.com/whitepaper"
+      ]
+    },
+    {
+      "entity": "Phasecraft",
+      "canonical_actor_key": "phasecraft",
+      "helixes": [
+        "Academia",
+        "Industry"
+      ],
+      "chosen_helix": "Academia",
+      "source_documents": [
+        "https://atom-computing.com/page/3",
+        "https://oqc.tech/tech/technical-roadmap",
+        "https://www.ionq.com",
+        "https://www.quantinuum.com/news/blog"
+      ]
+    },
+    {
+      "entity": "Physical Review Letters",
+      "canonical_actor_key": "physical review letters",
+      "helixes": [
+        "Academia",
+        "Civil Society"
+      ],
+      "chosen_helix": "Academia",
+      "source_documents": [
+        "https://photonic.com/resources",
+        "https://www.qcware.com/research",
+        "https://www.sqc.com.au/about"
+      ]
+    },
+    {
+      "entity": "Physical Review X",
+      "canonical_actor_key": "physical review x",
+      "helixes": [
+        "Academia",
+        "Civil Society"
+      ],
+      "chosen_helix": "Academia",
+      "source_documents": [
+        "https://atom-computing.com/news-resources/scientific-publications",
+        "https://www.sqc.com.au/about"
       ]
     },
     {
@@ -582,6 +1679,48 @@
       ]
     },
     {
+      "entity": "PRX Quantum",
+      "canonical_actor_key": "prx quantum",
+      "helixes": [
+        "Academia",
+        "Civil Society"
+      ],
+      "chosen_helix": "Civil Society",
+      "source_documents": [
+        "https://sparrowquantum.com/publications",
+        "https://www.qcware.com/research"
+      ]
+    },
+    {
+      "entity": "Q-STAR",
+      "canonical_actor_key": "q star",
+      "helixes": [
+        "Academia",
+        "Intermediary"
+      ],
+      "chosen_helix": "Intermediary",
+      "source_documents": [
+        "Luis_Japan23.pdf",
+        "Luis_Japan24.pdf",
+        "https://q2b.qcware.com/conference/2025-tokyo"
+      ]
+    },
+    {
+      "entity": "qBraid",
+      "canonical_actor_key": "qbraid",
+      "helixes": [
+        "Industry",
+        "Intermediary"
+      ],
+      "chosen_helix": "Industry",
+      "source_documents": [
+        "https://q-ctrl.com/fire-opal",
+        "https://www.bluequbit.io/blog/quantum-computing-software-platforms",
+        "https://www.intel.com/content/www/us/en/developer/tools/quantum-sdk/overview.html",
+        "https://www.quera.com/partners"
+      ]
+    },
+    {
       "entity": "QC Ware",
       "canonical_actor_key": "qc ware",
       "helixes": [
@@ -592,7 +1731,145 @@
       "source_documents": [
         "WEF25.pdf",
         "https://aws.amazon.com/braket/customers",
-        "https://ionq.com"
+        "https://ionq.com",
+        "https://q2b.qcware.com/conference/2025-tokyo",
+        "https://quantumcircuits.com/company",
+        "https://www.aqt.eu/solutions",
+        "https://www.bluequbit.io/blog/quantum-computing-companies",
+        "https://www.bqpsim.com/quantum-optimization"
+      ]
+    },
+    {
+      "entity": "QED-C",
+      "canonical_actor_key": "qed c",
+      "helixes": [
+        "Academia",
+        "Intermediary"
+      ],
+      "chosen_helix": "Academia",
+      "source_documents": [
+        "USA24.pdf",
+        "https://q2b.qcware.com/conference/2025-silicon-valley"
+      ]
+    },
+    {
+      "entity": "Qiskit",
+      "canonical_actor_key": "qiskit",
+      "helixes": [
+        "Academia",
+        "Industry",
+        "Unknown"
+      ],
+      "chosen_helix": "Industry",
+      "source_documents": [
+        "Bavaria.pdf",
+        "https://iqm.tech/products/iqm-resonance",
+        "https://q-ctrl.com/integrations",
+        "https://quantumcircuits.com/aqumen-sdk-overview",
+        "https://www.aqt.eu/quantum-sdk-connectors",
+        "https://www.bluequbit.io/blog/quantum-financial-system",
+        "https://www.quantum-machines.co/products/qua-universal-quantum-language"
+      ]
+    },
+    {
+      "entity": "Quantum Consortium",
+      "canonical_actor_key": "quantum consortium",
+      "helixes": [
+        "Academia",
+        "Intermediary"
+      ],
+      "chosen_helix": "Academia",
+      "source_documents": [
+        "https://quantumcircuits.com/aqumen-seeker-demonstrates-high-performance-at-the-system-level",
+        "https://www.quintessencelabs.com/faqs",
+        "https://www.scalinq.com/about"
+      ]
+    },
+    {
+      "entity": "Quantum Economic Development Consortium (QED-C)",
+      "canonical_actor_key": "quantum economic development consortium",
+      "helixes": [
+        "Academia",
+        "Civil Society",
+        "Intermediary"
+      ],
+      "chosen_helix": "Intermediary",
+      "source_documents": [
+        "Luis_Japan23.pdf",
+        "Luis_USA22.pdf",
+        "USA26.pdf",
+        "china25.pdf",
+        "https://infleqtion.com",
+        "https://kiutra.com/characterization-white-paper",
+        "https://seeqc.com/whitepaper"
+      ]
+    },
+    {
+      "entity": "Quantum Hardware",
+      "canonical_actor_key": "quantum hardware",
+      "helixes": [
+        "Academia",
+        "Industry"
+      ],
+      "chosen_helix": "Academia",
+      "source_documents": [
+        "https://nordquantique.com/fr/carrieres",
+        "https://quantummotion.com/early-career-opportunities"
+      ]
+    },
+    {
+      "entity": "Quantum Internet Alliance (QIA)",
+      "canonical_actor_key": "quantum internet alliance",
+      "helixes": [
+        "Academia",
+        "Intermediary",
+        "Unknown"
+      ],
+      "chosen_helix": "Intermediary",
+      "source_documents": [
+        "https://sparrowquantum.com",
+        "https://www.aqt.eu/press",
+        "https://www.welinq.fr/blog/welinq-sells-qdrive-quantum-memory-in-europe"
+      ]
+    },
+    {
+      "entity": "Quantum Software Consortium (QSC)",
+      "canonical_actor_key": "quantum software consortium",
+      "helixes": [
+        "Academia",
+        "Intermediary"
+      ],
+      "chosen_helix": "Academia",
+      "source_documents": [
+        "Luis_Netherlands19.pdf",
+        "https://www.riverlane.com/blog/running-end-to-end-qec-on-real-hardware-at-oak-ridge-national-laboratory"
+      ]
+    },
+    {
+      "entity": "Quantum.Tech World",
+      "canonical_actor_key": "quantum tech world",
+      "helixes": [
+        "Government",
+        "Unknown"
+      ],
+      "chosen_helix": "Government",
+      "source_documents": [
+        "https://quantware.com/news",
+        "https://www.quera.com/news",
+        "https://www.quintessencelabs.com/events"
+      ]
+    },
+    {
+      "entity": "QuantumBW",
+      "canonical_actor_key": "quantumbw",
+      "helixes": [
+        "Government",
+        "Intermediary"
+      ],
+      "chosen_helix": "Intermediary",
+      "source_documents": [
+        "BadenWurttemberg.pdf",
+        "https://www.quixquantum.com/news/quix-quantum-joins-quantumbw-and-photonics-bw-to-strengthen-the-photonic-quantum-ecosystem-in-baden-wurttemberg-and-europe"
       ]
     },
     {
@@ -609,6 +1886,76 @@
       ]
     },
     {
+      "entity": "Rigetti Computing",
+      "canonical_actor_key": "rigetti computing",
+      "helixes": [
+        "Industry",
+        "Unknown"
+      ],
+      "chosen_helix": "Industry",
+      "source_documents": [
+        "https://ionq.com",
+        "https://q-ctrl.com/integrations",
+        "https://quantware.com/articles/quantum-open-architecture",
+        "https://www.bluequbit.io/quantum-advantage-challenge",
+        "https://www.rigetti.com/rigetti-computing-news",
+        "https://www.riverlane.com/news/deltaflow-2-delivered-to-rigetti-and-infleqtion"
+      ]
+    },
+    {
+      "entity": "Science",
+      "canonical_actor_key": "science",
+      "helixes": [
+        "Academia",
+        "Civil Society"
+      ],
+      "chosen_helix": "Civil Society",
+      "source_documents": [
+        "https://diraq.com",
+        "https://www.quantum-machines.co/solutions/quantum-research",
+        "https://www.sqc.com.au/about"
+      ]
+    },
+    {
+      "entity": "Serafino Sorrenti",
+      "canonical_actor_key": "serafino sorrenti",
+      "helixes": [
+        "Government",
+        "Industry"
+      ],
+      "chosen_helix": "Government",
+      "source_documents": [
+        "Luis_Italy25.pdf",
+        "https://q2b.qcware.com/conference/2025-paris"
+      ]
+    },
+    {
+      "entity": "Silicon Quantum Computing (SQC)",
+      "canonical_actor_key": "silicon quantum computing",
+      "helixes": [
+        "Academia",
+        "Industry"
+      ],
+      "chosen_helix": "Academia",
+      "source_documents": [
+        "Luis_Australia23.pdf",
+        "https://www.sqc.com.au/news/sqc-x-amd"
+      ]
+    },
+    {
+      "entity": "Simon Phillips",
+      "canonical_actor_key": "simon phillips",
+      "helixes": [
+        "Industry",
+        "Unknown"
+      ],
+      "chosen_helix": "Industry",
+      "source_documents": [
+        "https://oqc.tech/company/senior-leadership",
+        "https://www.riverlane.com/error-corrected-with-riverlane"
+      ]
+    },
+    {
       "entity": "Singapore",
       "canonical_actor_key": "singapore",
       "helixes": [
@@ -619,6 +1966,45 @@
       "source_documents": [
         "SaudiArabia19.pdf",
         "singapore25.pdf"
+      ]
+    },
+    {
+      "entity": "Slovenia",
+      "canonical_actor_key": "slovenia",
+      "helixes": [
+        "Civil Society",
+        "Unknown"
+      ],
+      "chosen_helix": "Civil Society",
+      "source_documents": [
+        "Luis_Slovenia25.pdf",
+        "https://quantumbrilliance.com/contact-us/product-inquiry"
+      ]
+    },
+    {
+      "entity": "SPIE",
+      "canonical_actor_key": "spie",
+      "helixes": [
+        "Academia",
+        "Civil Society"
+      ],
+      "chosen_helix": "Civil Society",
+      "source_documents": [
+        "https://infleqtion.com/integrated-photonics",
+        "https://www.singlequantum.com/events"
+      ]
+    },
+    {
+      "entity": "SQC",
+      "canonical_actor_key": "sqc",
+      "helixes": [
+        "Academia",
+        "Industry"
+      ],
+      "chosen_helix": "Industry",
+      "source_documents": [
+        "https://www.ionq.com",
+        "https://www.sqc.com.au/career/7709888"
       ]
     },
     {
@@ -636,15 +2022,77 @@
       ]
     },
     {
+      "entity": "Takuya Kitagawa",
+      "canonical_actor_key": "takuya kitagawa",
+      "helixes": [
+        "Intermediary",
+        "Unknown"
+      ],
+      "chosen_helix": "Intermediary",
+      "source_documents": [
+        "https://q2b.qcware.com/conference/2025-tokyo",
+        "https://www.quera.com/about"
+      ]
+    },
+    {
+      "entity": "Teague Tomesh",
+      "canonical_actor_key": "teague tomesh",
+      "helixes": [
+        "Academia",
+        "Unknown"
+      ],
+      "chosen_helix": "Academia",
+      "source_documents": [
+        "https://infleqtion.com/life-sciences-and-drug-discovery",
+        "https://q2b.qcware.com/conference/2025-silicon-valley"
+      ]
+    },
+    {
+      "entity": "Technology Innovation Institute (TII)",
+      "canonical_actor_key": "technology innovation institute",
+      "helixes": [
+        "Academia",
+        "Government"
+      ],
+      "chosen_helix": "Government",
+      "source_documents": [
+        "UAE25.pdf",
+        "http://www.quantware.com",
+        "https://www.quantum-machines.co/solutions/quantum-for-hpc"
+      ]
+    },
+    {
+      "entity": "Twitter",
+      "canonical_actor_key": "twitter",
+      "helixes": [
+        "Civil Society",
+        "Industry"
+      ],
+      "chosen_helix": "Industry",
+      "source_documents": [
+        "https://1qbit.com/careers/current-openings",
+        "https://pqshield.com",
+        "https://q-ctrl.com/fire-opal",
+        "https://quantumbase.com/supply-chain-security",
+        "https://www.classiq.io/industries-collection/logistics",
+        "https://www.evolutionq.com/contact",
+        "https://www.quantum-machines.co/solutions/transducers",
+        "https://www.spinquanta.com/news/media-coverage"
+      ]
+    },
+    {
       "entity": "U.S.",
       "canonical_actor_key": "u s",
       "helixes": [
         "Government",
+        "Industry",
         "Unknown"
       ],
-      "chosen_helix": "Government",
+      "chosen_helix": "Industry",
       "source_documents": [
         "India25.pdf",
+        "https://infleqtion.com/national-security-and-resilience",
+        "https://seeqc.com/whitepaper",
         "https://www.psiquantum.com/news-import/us-department-of-commerce",
         "japan25.pdf"
       ]
@@ -662,7 +2110,12 @@
         "India25.pdf",
         "Luis_UK23.pdf",
         "UK24.pdf",
-        "https://www.psiquantum.com/news-import/category/Company"
+        "https://kets-quantum.com/kets-response-to-the-ncsc-quantum-key-distribution-whitepaper",
+        "https://oqc.tech/company/series-c-fundraise",
+        "https://orcacomputing.com/careers",
+        "https://quantummotion.com/quiche-project-uk-germany-collaboration-bringing-chemistry-software-into-the-quantum-computing-era",
+        "https://www.psiquantum.com/news-import/category/Company",
+        "https://www.riverlane.com/newsroom"
       ]
     },
     {
@@ -686,7 +2139,12 @@
         "SouthAfrica21.pdf",
         "Switzerland26.pdf",
         "WEF25.pdf",
-        "https://www.psiquantum.com/about"
+        "https://anyonsys.com/en/careers/jobs",
+        "https://orcacomputing.com/turning-the-uks-quantum-leadership-into-real-world-advantage",
+        "https://universalquantum.com/de/hier-arbeiten",
+        "https://www.psiquantum.com/about",
+        "https://www.spinquanta.com/quantum-computing-solutions/artificial-intelligence",
+        "https://www.turing.com/policy"
       ]
     },
     {
@@ -714,6 +2172,15 @@
         "Turkey.pdf",
         "UK24.pdf",
         "USA26.pdf",
+        "https://photonic.com/press-room",
+        "https://seeqc.com/whitepaper",
+        "https://www.cryptoquantique.com/industry-4-0",
+        "https://www.diraq.com/contact",
+        "https://www.dwavequantum.com/company/contact",
+        "https://www.quantum-machines.co/products/qualibrate",
+        "https://www.quera.com/national-programs",
+        "https://www.quintessencelabs.com/contact",
+        "https://www.spinquanta.com/quantum-computing-solutions/education",
         "japan25.pdf"
       ]
     },
@@ -721,6 +2188,7 @@
       "entity": "United States of America (US)",
       "canonical_actor_key": "united states of america",
       "helixes": [
+        "Government",
         "Industry",
         "Unknown"
       ],
@@ -729,7 +2197,8 @@
         "India25.pdf",
         "Luis_Germany23.pdf",
         "SouthAfrica21.pdf",
-        "Turkey.pdf"
+        "Turkey.pdf",
+        "https://www.rigetti.com/applicant-privacy-policy-non-us"
       ]
     },
     {
@@ -737,13 +2206,68 @@
       "canonical_actor_key": "usa",
       "helixes": [
         "Government",
-        "Industry"
+        "Industry",
+        "Unknown"
       ],
       "chosen_helix": "Industry",
       "source_documents": [
         "GlobalQuantumStrategies26.pdf",
         "Luis_Denmark23.pdf",
-        "Luis_Netherlands19.pdf"
+        "Luis_Netherlands19.pdf",
+        "https://global.fujitsu/en-global/careers",
+        "https://www.aqt.eu/products",
+        "https://www.bqpsim.com/access-bqphy",
+        "https://www.classiq.io/industries-collection/manufacturing",
+        "https://www.intel.com/content/www/us/en/jobs/overlay-accordion-video-1-2-close"
+      ]
+    },
+    {
+      "entity": "Vikram Sharma",
+      "canonical_actor_key": "vikram sharma",
+      "helixes": [
+        "Intermediary",
+        "Unknown"
+      ],
+      "chosen_helix": "Intermediary",
+      "source_documents": [
+        "WEF25.pdf",
+        "https://www.quintessencelabs.com/awards"
+      ]
+    },
+    {
+      "entity": "Vimeo",
+      "canonical_actor_key": "vimeo",
+      "helixes": [
+        "Civil Society",
+        "Industry",
+        "Unknown"
+      ],
+      "chosen_helix": "Industry",
+      "source_documents": [
+        "https://eleqtron.com/quantencomputing-scale-up-eleqtron-schliesst-eine-der-weltweit-groessten-series-a-finanzierungen-ueber-57-mio-euro-ab",
+        "https://iqm.tech",
+        "https://kiutra.com/characterization-white-paper",
+        "https://pqshield.com/products",
+        "https://quantumbase.com",
+        "https://quantumcircuits.com/cookie-policy",
+        "https://sparrowquantum.com/publications",
+        "https://www.aqt.eu/about"
+      ]
+    },
+    {
+      "entity": "WordPress",
+      "canonical_actor_key": "wordpress",
+      "helixes": [
+        "Industry",
+        "Unknown"
+      ],
+      "chosen_helix": "Industry",
+      "source_documents": [
+        "https://alice-bob.com/newsroom",
+        "https://iqm.tech/investors",
+        "https://qaisec.eu/index.php/contact",
+        "https://quantumcircuits.com/cookie-policy",
+        "https://quantummotion.com/quantum-motion-attends-aps-march-meeting-2026-who-what-where-and-when"
       ]
     },
     {
@@ -759,7 +2283,81 @@
         "Luis_Spain25.pdf",
         "Luis_UK23.pdf",
         "UNESCO26.pdf",
-        "WEF25.pdf"
+        "WEF25.pdf",
+        "https://eleqtron.com",
+        "https://kets-quantum.com/the-time-to-prepare-for-a-safe-quantum-computing-future-is-now",
+        "https://pqshield.com",
+        "https://q-ctrl.com",
+        "https://www.aqt.eu/press",
+        "https://www.bluequbit.io/blog/quantum-computing-hardware",
+        "https://www.evolutionq.com/company/news",
+        "https://www.qnulabs.com",
+        "https://www.quintessencelabs.com/resources"
+      ]
+    },
+    {
+      "entity": "X",
+      "canonical_actor_key": "x",
+      "helixes": [
+        "Civil Society",
+        "Industry",
+        "Unknown"
+      ],
+      "chosen_helix": "Industry",
+      "source_documents": [
+        "https://www.microsoft.com/de-de/windows",
+        "https://www.quandela.com/fr-ca",
+        "https://www.scalinq.com/solutions/cliq"
+      ]
+    },
+    {
+      "entity": "YouTube",
+      "canonical_actor_key": "youtube",
+      "helixes": [
+        "Civil Society",
+        "Industry",
+        "Unknown"
+      ],
+      "chosen_helix": "Industry",
+      "source_documents": [
+        "https://alice-bob.com/hpc-report",
+        "https://eleqtron.com/en/quantum-computing-scale-up-eleqtron-secures-57-million-in-one-of-the-largest-series-a-funding-rounds-worldwide",
+        "https://infleqtion.com/quantum-computing",
+        "https://pqshield.com/products/pqf-flx",
+        "https://quantumcircuits.com/cookie-policy",
+        "https://textbook.riverlane.com",
+        "https://www.aqt.eu/partnerships",
+        "https://www.bluequbit.io/contact-us",
+        "https://www.classiq.io/industries-collection/logistics",
+        "https://www.quandela.com/resources/publications",
+        "https://www.quantum-machines.co/products/cryogenic-control-systems",
+        "https://www.rigetti.com/applications/p2"
+      ]
+    },
+    {
+      "entity": "Yuping Huang",
+      "canonical_actor_key": "yuping huang",
+      "helixes": [
+        "Intermediary",
+        "Unknown"
+      ],
+      "chosen_helix": "Intermediary",
+      "source_documents": [
+        "https://q2b.qcware.com/conference/2025-silicon-valley",
+        "https://quantumcomputinginc.com/company"
+      ]
+    },
+    {
+      "entity": "Yuval Boger",
+      "canonical_actor_key": "yuval boger",
+      "helixes": [
+        "Industry",
+        "Unknown"
+      ],
+      "chosen_helix": "Industry",
+      "source_documents": [
+        "https://q2b.qcware.com/conference/2025-paris",
+        "https://www.quera.com/about"
       ]
     }
   ]

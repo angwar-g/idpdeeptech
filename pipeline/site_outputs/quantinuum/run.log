@@ -1,0 +1,947 @@
+
+========================================================================
+RUN STARTED  2026-06-17 17:29:48
+site_pipeline.py https://www.quantinuum.com/
+========================================================================
+
+[17:29:48 +0s | quantinuum] === 0 crawl site ===
+[17:29:51 +2s | quantinuum] [INIT].... → Crawl4AI 0.8.6 
+[17:29:53 +5s | quantinuum] [FETCH]... ↓ https://www.quantinuum.com/                                                                          | ✓ | ⏱: 2.66s 
+[17:29:53 +5s | quantinuum] [SCRAPE].. ◆ https://www.quantinuum.com/                                                                          | ✓ | ⏱: 0.10s 
+[17:29:53 +5s | quantinuum] [COMPLETE] ● https://www.quantinuum.com/                                                                          | ✓ | ⏱: 2.80s 
+[17:29:55 +7s | quantinuum] [FETCH]... ↓ https://www.quantinuum.com/                                                                          | ✓ | ⏱: 2.03s 
+[17:29:56 +8s | quantinuum] [SCRAPE].. ◆ https://www.quantinuum.com/                                                                          | ✓ | ⏱: 0.18s 
+[17:29:56 +8s | quantinuum] [COMPLETE] ● https://www.quantinuum.com/                                                                          | ✓ | ⏱: 2.26s 
+[17:29:56 +8s | quantinuum] [FETCH]... ↓ https://www.quantinuum.com/research/research-areas                                                   | ✓ | ⏱: 2.30s 
+[17:29:56 +8s | quantinuum] [SCRAPE].. ◆ https://www.quantinuum.com/research/research-areas                                                   | ✓ | ⏱: 0.17s 
+[17:29:56 +8s | quantinuum] [COMPLETE] ● https://www.quantinuum.com/research/research-areas                                                   | ✓ | ⏱: 2.50s 
+[17:29:59 +11s | quantinuum] [FETCH]... ↓ https://www.quantinuum.com/company/careers                                                           | ✓ | ⏱: 5.31s 
+[17:29:59 +11s | quantinuum] [SCRAPE].. ◆ https://www.quantinuum.com/company/careers                                                           | ✓ | ⏱: 0.13s 
+[17:29:59 +11s | quantinuum] [COMPLETE] ● https://www.quantinuum.com/company/careers                                                           | ✓ | ⏱: 5.49s 
+[17:30:00 +12s | quantinuum] [FETCH]... ↓ https://www.quantinuum.com/blog/technical-perspe...liver-universal-fault-tolerant-quantum-computing  | ✓ | ⏱: 6.16s 
+[17:30:00 +12s | quantinuum] [SCRAPE].. ◆ https://www.quantinuum.com/blog/technical-perspe...liver-universal-fault-tolerant-quantum-computing  | ✓ | ⏱: 0.17s 
+[17:30:00 +12s | quantinuum] [COMPLETE] ● https://www.quantinuum.com/blog/technical-perspe...liver-universal-fault-tolerant-quantum-computing  | ✓ | ⏱: 6.37s 
+[17:30:00 +12s | quantinuum] [FETCH]... ↓ https://www.quantinuum.com/news/blog                                                                 | ✓ | ⏱: 6.42s 
+[17:30:00 +12s | quantinuum] [SCRAPE].. ◆ https://www.quantinuum.com/news/blog                                                                 | ✓ | ⏱: 0.22s 
+[17:30:00 +12s | quantinuum] [COMPLETE] ● https://www.quantinuum.com/news/blog                                                                 | ✓ | ⏱: 6.69s 
+[17:30:01 +13s | quantinuum] [FETCH]... ↓ https://www.quantinuum.com/contact                                                                   | ✓ | ⏱: 6.95s 
+[17:30:01 +13s | quantinuum] [SCRAPE].. ◆ https://www.quantinuum.com/contact                                                                   | ✓ | ⏱: 0.16s 
+[17:30:01 +13s | quantinuum] [COMPLETE] ● https://www.quantinuum.com/contact                                                                   | ✓ | ⏱: 7.15s 
+[17:30:01 +13s | quantinuum] [FETCH]... ↓ https://www.quantinuum.com/company/about                                                             | ✓ | ⏱: 7.19s 
+[17:30:01 +13s | quantinuum] [SCRAPE].. ◆ https://www.quantinuum.com/company/about                                                             | ✓ | ⏱: 0.41s 
+[17:30:01 +13s | quantinuum] [COMPLETE] ● https://www.quantinuum.com/company/about                                                             | ✓ | ⏱: 7.66s 
+[17:30:01 +13s | quantinuum] [FETCH]... ↓ https://www.quantinuum.com/products-solutions/quantum-origin                                         | ✓ | ⏱: 7.77s 
+[17:30:02 +14s | quantinuum] [SCRAPE].. ◆ https://www.quantinuum.com/products-solutions/quantum-origin                                         | ✓ | ⏱: 0.20s 
+[17:30:02 +14s | quantinuum] [COMPLETE] ● https://www.quantinuum.com/products-solutions/quantum-origin                                         | ✓ | ⏱: 8.03s 
+[17:30:02 +14s | quantinuum] [FETCH]... ↓ https://www.quantinuum.com/glossary                                                                  | ✓ | ⏱: 8.06s 
+[17:30:02 +14s | quantinuum] [SCRAPE].. ◆ https://www.quantinuum.com/glossary                                                                  | ✓ | ⏱: 0.15s 
+[17:30:02 +14s | quantinuum] [COMPLETE] ● https://www.quantinuum.com/glossary                                                                  | ✓ | ⏱: 8.25s 
+[17:30:02 +14s | quantinuum] [FETCH]... ↓ https://www.quantinuum.com/products-solutions/quantinuum-systems                                     | ✓ | ⏱: 8.25s 
+[17:30:02 +14s | quantinuum] [SCRAPE].. ◆ https://www.quantinuum.com/products-solutions/quantinuum-systems                                     | ✓ | ⏱: 0.14s 
+[17:30:02 +14s | quantinuum] [COMPLETE] ● https://www.quantinuum.com/products-solutions/quantinuum-systems                                     | ✓ | ⏱: 8.43s 
+[17:30:02 +14s | quantinuum] [FETCH]... ↓ https://www.quantinuum.com/products-solutions/quantinuum-systems/system-model-h2                     | ✓ | ⏱: 8.46s 
+[17:30:02 +14s | quantinuum] [SCRAPE].. ◆ https://www.quantinuum.com/products-solutions/quantinuum-systems/system-model-h2                     | ✓ | ⏱: 0.13s 
+[17:30:02 +14s | quantinuum] [COMPLETE] ● https://www.quantinuum.com/products-solutions/quantinuum-systems/system-model-h2                     | ✓ | ⏱: 8.62s 
+[17:30:02 +14s | quantinuum] [FETCH]... ↓ https://www.quantinuum.com/news/news                                                                 | ✓ | ⏱: 8.62s 
+[17:30:02 +14s | quantinuum] [SCRAPE].. ◆ https://www.quantinuum.com/news/news                                                                 | ✓ | ⏱: 0.11s 
+[17:30:02 +14s | quantinuum] [COMPLETE] ● https://www.quantinuum.com/news/news                                                                 | ✓ | ⏱: 8.76s 
+[17:30:03 +14s | quantinuum] [FETCH]... ↓ https://www.quantinuum.com/products-solutions/quantinuum-systems/system-model-h1                     | ✓ | ⏱: 8.79s 
+[17:30:03 +15s | quantinuum] [SCRAPE].. ◆ https://www.quantinuum.com/products-solutions/quantinuum-systems/system-model-h1                     | ✓ | ⏱: 0.12s 
+[17:30:03 +15s | quantinuum] [COMPLETE] ● https://www.quantinuum.com/products-solutions/quantinuum-systems/system-model-h1                     | ✓ | ⏱: 8.94s 
+[17:30:03 +15s | quantinuum] [FETCH]... ↓ https://www.quantinuum.com/products-solutions/inquanto                                               | ✓ | ⏱: 8.98s 
+[17:30:03 +15s | quantinuum] [SCRAPE].. ◆ https://www.quantinuum.com/products-solutions/inquanto                                               | ✓ | ⏱: 0.68s 
+[17:30:03 +15s | quantinuum] [COMPLETE] ● https://www.quantinuum.com/products-solutions/inquanto                                               | ✓ | ⏱: 9.68s 
+[17:30:03 +15s | quantinuum] [FETCH]... ↓ https://www.quantinuum.com/products-solutions/developer-tools                                        | ✓ | ⏱: 9.68s 
+[17:30:03 +15s | quantinuum] [SCRAPE].. ◆ https://www.quantinuum.com/products-solutions/developer-tools                                        | ✓ | ⏱: 0.07s 
+[17:30:04 +15s | quantinuum] [COMPLETE] ● https://www.quantinuum.com/products-solutions/developer-tools                                        | ✓ | ⏱: 9.78s 
+[17:30:04 +15s | quantinuum] [FETCH]... ↓ https://www.quantinuum.com/products-solutions/nexus                                                  | ✓ | ⏱: 9.79s 
+[17:30:04 +16s | quantinuum] [SCRAPE].. ◆ https://www.quantinuum.com/products-solutions/nexus                                                  | ✓ | ⏱: 0.09s 
+[17:30:04 +16s | quantinuum] [COMPLETE] ● https://www.quantinuum.com/products-solutions/nexus                                                  | ✓ | ⏱: 9.91s 
+[17:30:04 +16s | quantinuum] [FETCH]... ↓ https://www.quantinuum.com/products-solutions/hardware-h-series                                      | ✓ | ⏱: 9.92s 
+[17:30:04 +16s | quantinuum] [SCRAPE].. ◆ https://www.quantinuum.com/products-solutions/hardware-h-series                                      | ✓ | ⏱: 0.15s 
+[17:30:04 +16s | quantinuum] [COMPLETE] ● https://www.quantinuum.com/products-solutions/hardware-h-series                                      | ✓ | ⏱: 10.10s 
+[17:30:04 +16s | quantinuum] [FETCH]... ↓ https://www.quantinuum.com/products-solutions/quantinuum-systems/helios                              | ✓ | ⏱: 10.12s 
+[17:30:04 +16s | quantinuum] [SCRAPE].. ◆ https://www.quantinuum.com/products-solutions/quantinuum-systems/helios                              | ✓ | ⏱: 0.13s 
+[17:30:04 +16s | quantinuum] [COMPLETE] ● https://www.quantinuum.com/products-solutions/quantinuum-systems/helios                              | ✓ | ⏱: 10.28s 
+[17:30:07 +19s | quantinuum] [FETCH]... ↓ https://ir.quantinuum.com/                                                                           | ✓ | ⏱: 13.96s 
+[17:30:07 +19s | quantinuum] [SCRAPE].. ◆ https://ir.quantinuum.com/                                                                           | ✓ | ⏱: 0.07s 
+[17:30:07 +19s | quantinuum] [COMPLETE] ● https://ir.quantinuum.com/                                                                           | ✓ | ⏱: 14.07s 
+[17:30:08 +19s | quantinuum] Saved: crawl_output/5d2d837d19_www.quantinuum.com.json
+[17:30:08 +19s | quantinuum] Duplicate skipped: https://www.quantinuum.com
+[17:30:08 +19s | quantinuum] Saved: crawl_output/b6e727d332_www.quantinuum.com_research_research-areas.json
+[17:30:08 +19s | quantinuum] Saved: crawl_output/2943bf6e83_www.quantinuum.com_company_careers.json
+[17:30:08 +19s | quantinuum] Saved: crawl_output/9116d1ccfd_www.quantinuum.com_blog_technical-perspective-by-the-end-of-the-decade-we-will-deliver-universal-fault-tolerant-quantum-computing.json
+[17:30:08 +19s | quantinuum] Saved: crawl_output/6c85dd6de8_www.quantinuum.com_news_blog.json
+[17:30:08 +19s | quantinuum] Saved: crawl_output/0d702b8dae_www.quantinuum.com_contact.json
+[17:30:08 +19s | quantinuum] Saved: crawl_output/cf8740af9e_www.quantinuum.com_company_about.json
+[17:30:08 +19s | quantinuum] Saved: crawl_output/29a9a21d11_www.quantinuum.com_products-solutions_quantum-origin.json
+[17:30:08 +19s | quantinuum] Saved: crawl_output/016cbe7db4_www.quantinuum.com_glossary.json
+[17:30:08 +19s | quantinuum] Saved: crawl_output/6a618bbf3c_www.quantinuum.com_products-solutions_quantinuum-systems.json
+[17:30:08 +19s | quantinuum] Saved: crawl_output/ee250b5fed_www.quantinuum.com_products-solutions_quantinuum-systems_system-model-h2.json
+[17:30:08 +19s | quantinuum] Saved: crawl_output/4d8ecd8142_www.quantinuum.com_news_news.json
+[17:30:08 +19s | quantinuum] Saved: crawl_output/32a998993b_www.quantinuum.com_products-solutions_quantinuum-systems_system-model-h1.json
+[17:30:08 +19s | quantinuum] Saved: crawl_output/a78d996f30_www.quantinuum.com_products-solutions_inquanto.json
+[17:30:08 +19s | quantinuum] Saved: crawl_output/ec2d989009_www.quantinuum.com_products-solutions_developer-tools.json
+[17:30:08 +20s | quantinuum] Saved: crawl_output/5f123233ee_www.quantinuum.com_products-solutions_nexus.json
+[17:30:08 +20s | quantinuum] Saved: crawl_output/0f5e09fbc3_www.quantinuum.com_products-solutions_hardware-h-series.json
+[17:30:08 +20s | quantinuum] Saved: crawl_output/7a2f4ac96e_www.quantinuum.com_products-solutions_quantinuum-systems_helios.json
+[17:30:08 +20s | quantinuum] Saved: crawl_output/1fb134a0c7_ir.quantinuum.com.json
+
+[17:30:08 +20s | quantinuum] === 1 actor extraction ===
+[17:30:09 +21s | quantinuum] Reading page (1/19): https://www.quantinuum.com/glossary
+[17:30:09 +21s | quantinuum] Extracting: https://www.quantinuum.com/glossary (1/19), chunk 1/16
+[17:30:18 +30s | quantinuum] Extracting: https://www.quantinuum.com/glossary (1/19), chunk 2/16
+[17:30:22 +34s | quantinuum] Extracting: https://www.quantinuum.com/glossary (1/19), chunk 3/16
+[17:30:29 +41s | quantinuum] Repaired malformed JSON.
+[17:30:29 +41s | quantinuum] Extracting: https://www.quantinuum.com/glossary (1/19), chunk 4/16
+[17:30:37 +49s | quantinuum] Repaired malformed JSON.
+[17:30:37 +49s | quantinuum] Extracting: https://www.quantinuum.com/glossary (1/19), chunk 5/16
+[17:30:47 +59s | quantinuum] Repaired malformed JSON.
+[17:30:47 +59s | quantinuum] Extracting: https://www.quantinuum.com/glossary (1/19), chunk 6/16
+[17:30:52 +1m 4s | quantinuum] Extracting: https://www.quantinuum.com/glossary (1/19), chunk 7/16
+[17:30:57 +1m 9s | quantinuum] Extracting: https://www.quantinuum.com/glossary (1/19), chunk 8/16
+[17:31:01 +1m 13s | quantinuum] Extracting: https://www.quantinuum.com/glossary (1/19), chunk 9/16
+[17:31:06 +1m 18s | quantinuum] Extracting: https://www.quantinuum.com/glossary (1/19), chunk 10/16
+[17:31:11 +1m 23s | quantinuum] Extracting: https://www.quantinuum.com/glossary (1/19), chunk 11/16
+[17:31:16 +1m 28s | quantinuum] Extracting: https://www.quantinuum.com/glossary (1/19), chunk 12/16
+[17:31:21 +1m 33s | quantinuum] Extracting: https://www.quantinuum.com/glossary (1/19), chunk 13/16
+[17:31:25 +1m 37s | quantinuum] Extracting: https://www.quantinuum.com/glossary (1/19), chunk 14/16
+[17:31:32 +1m 44s | quantinuum] Extracting: https://www.quantinuum.com/glossary (1/19), chunk 15/16
+[17:31:41 +1m 53s | quantinuum] Extracting: https://www.quantinuum.com/glossary (1/19), chunk 16/16
+[17:31:48 +2m 0s | quantinuum] Repaired malformed JSON.
+[17:31:48 +2m 0s | quantinuum] Reading page (2/19): https://www.quantinuum.com/contact
+[17:31:48 +2m 0s | quantinuum] Extracting: https://www.quantinuum.com/contact (2/19), chunk 1/12
+[17:31:53 +2m 4s | quantinuum] Extracting: https://www.quantinuum.com/contact (2/19), chunk 2/12
+[17:31:57 +2m 9s | quantinuum] Extracting: https://www.quantinuum.com/contact (2/19), chunk 3/12
+[17:32:03 +2m 15s | quantinuum] Extracting: https://www.quantinuum.com/contact (2/19), chunk 4/12
+[17:32:12 +2m 24s | quantinuum] Repaired malformed JSON.
+[17:32:12 +2m 24s | quantinuum] Extracting: https://www.quantinuum.com/contact (2/19), chunk 5/12
+[17:32:21 +2m 33s | quantinuum] Extracting: https://www.quantinuum.com/contact (2/19), chunk 6/12
+[17:32:26 +2m 38s | quantinuum] Extracting: https://www.quantinuum.com/contact (2/19), chunk 7/12
+[17:32:31 +2m 43s | quantinuum] Extracting: https://www.quantinuum.com/contact (2/19), chunk 8/12
+[17:32:36 +2m 48s | quantinuum] Extracting: https://www.quantinuum.com/contact (2/19), chunk 9/12
+[17:32:39 +2m 50s | quantinuum] Extracting: https://www.quantinuum.com/contact (2/19), chunk 10/12
+[17:32:46 +2m 58s | quantinuum] Repaired malformed JSON.
+[17:32:46 +2m 58s | quantinuum] Extracting: https://www.quantinuum.com/contact (2/19), chunk 11/12
+[17:32:50 +3m 2s | quantinuum] Extracting: https://www.quantinuum.com/contact (2/19), chunk 12/12
+[17:32:58 +3m 10s | quantinuum] Reading page (3/19): https://www.quantinuum.com/products-solutions/hardware-h-series
+[17:32:58 +3m 10s | quantinuum] Extracting: https://www.quantinuum.com/products-solutions/hardware-h-series (3/19), chunk 1/17
+[17:33:02 +3m 14s | quantinuum] Extracting: https://www.quantinuum.com/products-solutions/hardware-h-series (3/19), chunk 2/17
+[17:33:07 +3m 19s | quantinuum] Extracting: https://www.quantinuum.com/products-solutions/hardware-h-series (3/19), chunk 3/17
+[17:33:14 +3m 26s | quantinuum] Repaired malformed JSON.
+[17:33:14 +3m 26s | quantinuum] Extracting: https://www.quantinuum.com/products-solutions/hardware-h-series (3/19), chunk 4/17
+[17:33:22 +3m 34s | quantinuum] Repaired malformed JSON.
+[17:33:22 +3m 34s | quantinuum] Extracting: https://www.quantinuum.com/products-solutions/hardware-h-series (3/19), chunk 5/17
+[17:33:31 +3m 43s | quantinuum] Extracting: https://www.quantinuum.com/products-solutions/hardware-h-series (3/19), chunk 6/17
+[17:33:42 +3m 54s | quantinuum] Repaired malformed JSON.
+[17:33:42 +3m 54s | quantinuum] Extracting: https://www.quantinuum.com/products-solutions/hardware-h-series (3/19), chunk 7/17
+[17:33:56 +4m 8s | quantinuum] Extracting: https://www.quantinuum.com/products-solutions/hardware-h-series (3/19), chunk 8/17
+[17:34:01 +4m 13s | quantinuum] Extracting: https://www.quantinuum.com/products-solutions/hardware-h-series (3/19), chunk 9/17
+[17:34:07 +4m 19s | quantinuum] Extracting: https://www.quantinuum.com/products-solutions/hardware-h-series (3/19), chunk 10/17
+[17:34:16 +4m 27s | quantinuum] Repaired malformed JSON.
+[17:34:16 +4m 27s | quantinuum] Extracting: https://www.quantinuum.com/products-solutions/hardware-h-series (3/19), chunk 11/17
+[17:34:22 +4m 34s | quantinuum] Extracting: https://www.quantinuum.com/products-solutions/hardware-h-series (3/19), chunk 12/17
+[17:34:26 +4m 38s | quantinuum] Extracting: https://www.quantinuum.com/products-solutions/hardware-h-series (3/19), chunk 13/17
+[17:34:34 +4m 46s | quantinuum] Repaired malformed JSON.
+[17:34:34 +4m 46s | quantinuum] Extracting: https://www.quantinuum.com/products-solutions/hardware-h-series (3/19), chunk 14/17
+[17:34:42 +4m 54s | quantinuum] Repaired malformed JSON.
+[17:34:42 +4m 54s | quantinuum] Extracting: https://www.quantinuum.com/products-solutions/hardware-h-series (3/19), chunk 15/17
+[17:34:47 +4m 59s | quantinuum] Extracting: https://www.quantinuum.com/products-solutions/hardware-h-series (3/19), chunk 16/17
+[17:34:51 +5m 3s | quantinuum] Extracting: https://www.quantinuum.com/products-solutions/hardware-h-series (3/19), chunk 17/17
+[17:34:57 +5m 9s | quantinuum] Reading page (4/19): https://ir.quantinuum.com
+[17:34:57 +5m 9s | quantinuum] Extracting: https://ir.quantinuum.com (4/19), chunk 1/7
+[17:35:03 +5m 15s | quantinuum] Extracting: https://ir.quantinuum.com (4/19), chunk 2/7
+[17:35:14 +5m 26s | quantinuum] Repaired malformed JSON.
+[17:35:14 +5m 26s | quantinuum] Extracting: https://ir.quantinuum.com (4/19), chunk 3/7
+[17:35:21 +5m 33s | quantinuum] Extracting: https://ir.quantinuum.com (4/19), chunk 4/7
+[17:35:31 +5m 43s | quantinuum] Repaired malformed JSON.
+[17:35:31 +5m 43s | quantinuum] Extracting: https://ir.quantinuum.com (4/19), chunk 5/7
+[17:35:38 +5m 50s | quantinuum] Extracting: https://ir.quantinuum.com (4/19), chunk 6/7
+[17:35:41 +5m 53s | quantinuum] Extracting: https://ir.quantinuum.com (4/19), chunk 7/7
+[17:35:47 +5m 59s | quantinuum] Reading page (5/19): https://www.quantinuum.com/company/careers
+[17:35:47 +5m 59s | quantinuum] Extracting: https://www.quantinuum.com/company/careers (5/19), chunk 1/10
+[17:35:51 +6m 3s | quantinuum] Extracting: https://www.quantinuum.com/company/careers (5/19), chunk 2/10
+[17:35:56 +6m 8s | quantinuum] Extracting: https://www.quantinuum.com/company/careers (5/19), chunk 3/10
+[17:36:04 +6m 16s | quantinuum] Repaired malformed JSON.
+[17:36:04 +6m 16s | quantinuum] Extracting: https://www.quantinuum.com/company/careers (5/19), chunk 4/10
+[17:36:12 +6m 24s | quantinuum] Repaired malformed JSON.
+[17:36:12 +6m 24s | quantinuum] Extracting: https://www.quantinuum.com/company/careers (5/19), chunk 5/10
+[17:36:20 +6m 32s | quantinuum] Repaired malformed JSON.
+[17:36:20 +6m 32s | quantinuum] Extracting: https://www.quantinuum.com/company/careers (5/19), chunk 6/10
+[17:36:29 +6m 41s | quantinuum] Repaired malformed JSON.
+[17:36:29 +6m 41s | quantinuum] Extracting: https://www.quantinuum.com/company/careers (5/19), chunk 7/10
+[17:36:40 +6m 52s | quantinuum] Repaired malformed JSON.
+[17:36:40 +6m 52s | quantinuum] Extracting: https://www.quantinuum.com/company/careers (5/19), chunk 8/10
+[17:36:47 +6m 59s | quantinuum] Repaired malformed JSON.
+[17:36:47 +6m 59s | quantinuum] Extracting: https://www.quantinuum.com/company/careers (5/19), chunk 9/10
+[17:36:59 +7m 11s | quantinuum] Repaired malformed JSON.
+[17:36:59 +7m 11s | quantinuum] Extracting: https://www.quantinuum.com/company/careers (5/19), chunk 10/10
+[17:37:03 +7m 15s | quantinuum] Reading page (6/19): https://www.quantinuum.com/products-solutions/quantum-origin
+[17:37:03 +7m 15s | quantinuum] Extracting: https://www.quantinuum.com/products-solutions/quantum-origin (6/19), chunk 1/16
+[17:37:07 +7m 19s | quantinuum] Extracting: https://www.quantinuum.com/products-solutions/quantum-origin (6/19), chunk 2/16
+[17:37:13 +7m 25s | quantinuum] Extracting: https://www.quantinuum.com/products-solutions/quantum-origin (6/19), chunk 3/16
+[17:37:19 +7m 31s | quantinuum] Extracting: https://www.quantinuum.com/products-solutions/quantum-origin (6/19), chunk 4/16
+[17:37:26 +7m 38s | quantinuum] Repaired malformed JSON.
+[17:37:26 +7m 38s | quantinuum] Extracting: https://www.quantinuum.com/products-solutions/quantum-origin (6/19), chunk 5/16
+[17:37:35 +7m 47s | quantinuum] Repaired malformed JSON.
+[17:37:35 +7m 47s | quantinuum] Extracting: https://www.quantinuum.com/products-solutions/quantum-origin (6/19), chunk 6/16
+[17:37:40 +7m 52s | quantinuum] Extracting: https://www.quantinuum.com/products-solutions/quantum-origin (6/19), chunk 7/16
+[17:37:45 +7m 57s | quantinuum] Extracting: https://www.quantinuum.com/products-solutions/quantum-origin (6/19), chunk 8/16
+[17:37:52 +8m 4s | quantinuum] Repaired malformed JSON.
+[17:37:52 +8m 4s | quantinuum] Extracting: https://www.quantinuum.com/products-solutions/quantum-origin (6/19), chunk 9/16
+[17:38:04 +8m 16s | quantinuum] Repaired malformed JSON.
+[17:38:04 +8m 16s | quantinuum] Extracting: https://www.quantinuum.com/products-solutions/quantum-origin (6/19), chunk 10/16
+[17:38:21 +8m 33s | quantinuum] Repaired malformed JSON.
+[17:38:21 +8m 33s | quantinuum] Extracting: https://www.quantinuum.com/products-solutions/quantum-origin (6/19), chunk 11/16
+[17:38:39 +8m 51s | quantinuum] Repaired malformed JSON.
+[17:38:39 +8m 51s | quantinuum] Extracting: https://www.quantinuum.com/products-solutions/quantum-origin (6/19), chunk 12/16
+[17:38:50 +9m 2s | quantinuum] Extracting: https://www.quantinuum.com/products-solutions/quantum-origin (6/19), chunk 13/16
+[17:38:58 +9m 10s | quantinuum] Extracting: https://www.quantinuum.com/products-solutions/quantum-origin (6/19), chunk 14/16
+[17:39:08 +9m 20s | quantinuum] Repaired malformed JSON.
+[17:39:08 +9m 20s | quantinuum] Extracting: https://www.quantinuum.com/products-solutions/quantum-origin (6/19), chunk 15/16
+[17:39:35 +9m 47s | quantinuum] Extracting: https://www.quantinuum.com/products-solutions/quantum-origin (6/19), chunk 16/16
+[17:39:45 +9m 57s | quantinuum] Reading page (7/19): https://www.quantinuum.com/products-solutions/quantinuum-systems/system-model-h1
+[17:39:45 +9m 57s | quantinuum] Extracting: https://www.quantinuum.com/products-solutions/quantinuum-systems/system-model-h1 (7/19), chunk 1/13
+[17:39:56 +10m 8s | quantinuum] Extracting: https://www.quantinuum.com/products-solutions/quantinuum-systems/system-model-h1 (7/19), chunk 2/13
+[17:40:03 +10m 15s | quantinuum] Extracting: https://www.quantinuum.com/products-solutions/quantinuum-systems/system-model-h1 (7/19), chunk 3/13
+[17:40:09 +10m 21s | quantinuum] Extracting: https://www.quantinuum.com/products-solutions/quantinuum-systems/system-model-h1 (7/19), chunk 4/13
+[17:40:25 +10m 37s | quantinuum] Repaired malformed JSON.
+[17:40:25 +10m 37s | quantinuum] Extracting: https://www.quantinuum.com/products-solutions/quantinuum-systems/system-model-h1 (7/19), chunk 5/13
+[17:40:38 +10m 50s | quantinuum] Repaired malformed JSON.
+[17:40:38 +10m 50s | quantinuum] Extracting: https://www.quantinuum.com/products-solutions/quantinuum-systems/system-model-h1 (7/19), chunk 6/13
+[17:40:44 +10m 56s | quantinuum] Extracting: https://www.quantinuum.com/products-solutions/quantinuum-systems/system-model-h1 (7/19), chunk 7/13
+[17:40:52 +11m 4s | quantinuum] Repaired malformed JSON.
+[17:40:52 +11m 4s | quantinuum] Extracting: https://www.quantinuum.com/products-solutions/quantinuum-systems/system-model-h1 (7/19), chunk 8/13
+[17:41:03 +11m 15s | quantinuum] Repaired malformed JSON.
+[17:41:03 +11m 15s | quantinuum] Extracting: https://www.quantinuum.com/products-solutions/quantinuum-systems/system-model-h1 (7/19), chunk 9/13
+[17:41:11 +11m 23s | quantinuum] Repaired malformed JSON.
+[17:41:11 +11m 23s | quantinuum] Extracting: https://www.quantinuum.com/products-solutions/quantinuum-systems/system-model-h1 (7/19), chunk 10/13
+[17:41:18 +11m 29s | quantinuum] Repaired malformed JSON.
+[17:41:18 +11m 29s | quantinuum] Extracting: https://www.quantinuum.com/products-solutions/quantinuum-systems/system-model-h1 (7/19), chunk 11/13
+[17:41:25 +11m 37s | quantinuum] Repaired malformed JSON.
+[17:41:25 +11m 37s | quantinuum] Extracting: https://www.quantinuum.com/products-solutions/quantinuum-systems/system-model-h1 (7/19), chunk 12/13
+[17:41:33 +11m 45s | quantinuum] Extracting: https://www.quantinuum.com/products-solutions/quantinuum-systems/system-model-h1 (7/19), chunk 13/13
+[17:41:40 +11m 52s | quantinuum] Repaired malformed JSON.
+[17:41:40 +11m 52s | quantinuum] Reading page (8/19): https://www.quantinuum.com/news/news
+[17:41:40 +11m 52s | quantinuum] Extracting: https://www.quantinuum.com/news/news (8/19), chunk 1/13
+[17:41:45 +11m 57s | quantinuum] Extracting: https://www.quantinuum.com/news/news (8/19), chunk 2/13
+[17:41:49 +12m 1s | quantinuum] Extracting: https://www.quantinuum.com/news/news (8/19), chunk 3/13
+[17:41:54 +12m 6s | quantinuum] Extracting: https://www.quantinuum.com/news/news (8/19), chunk 4/13
+[17:42:04 +12m 16s | quantinuum] Repaired malformed JSON.
+[17:42:04 +12m 16s | quantinuum] Extracting: https://www.quantinuum.com/news/news (8/19), chunk 5/13
+[17:42:11 +12m 23s | quantinuum] Extracting: https://www.quantinuum.com/news/news (8/19), chunk 6/13
+[17:42:19 +12m 31s | quantinuum] Extracting: https://www.quantinuum.com/news/news (8/19), chunk 7/13
+[17:42:28 +12m 40s | quantinuum] Repaired malformed JSON.
+[17:42:28 +12m 40s | quantinuum] Extracting: https://www.quantinuum.com/news/news (8/19), chunk 8/13
+[17:42:35 +12m 47s | quantinuum] Repaired malformed JSON.
+[17:42:35 +12m 47s | quantinuum] Extracting: https://www.quantinuum.com/news/news (8/19), chunk 9/13
+[17:42:42 +12m 54s | quantinuum] Repaired malformed JSON.
+[17:42:42 +12m 54s | quantinuum] Extracting: https://www.quantinuum.com/news/news (8/19), chunk 10/13
+[17:42:50 +13m 2s | quantinuum] Repaired malformed JSON.
+[17:42:50 +13m 2s | quantinuum] Extracting: https://www.quantinuum.com/news/news (8/19), chunk 11/13
+[17:42:59 +13m 11s | quantinuum] Repaired malformed JSON.
+[17:42:59 +13m 11s | quantinuum] Extracting: https://www.quantinuum.com/news/news (8/19), chunk 12/13
+[17:43:09 +13m 21s | quantinuum] Repaired malformed JSON.
+[17:43:09 +13m 21s | quantinuum] Extracting: https://www.quantinuum.com/news/news (8/19), chunk 13/13
+[17:43:17 +13m 29s | quantinuum] Repaired malformed JSON.
+[17:43:17 +13m 29s | quantinuum] Reading page (9/19): https://www.quantinuum.com
+[17:43:17 +13m 29s | quantinuum] Extracting: https://www.quantinuum.com (9/19), chunk 1/15
+[17:43:22 +13m 34s | quantinuum] Extracting: https://www.quantinuum.com (9/19), chunk 2/15
+[17:43:27 +13m 39s | quantinuum] Extracting: https://www.quantinuum.com (9/19), chunk 3/15
+[17:43:35 +13m 47s | quantinuum] Repaired malformed JSON.
+[17:43:35 +13m 47s | quantinuum] Extracting: https://www.quantinuum.com (9/19), chunk 4/15
+[17:43:43 +13m 55s | quantinuum] Repaired malformed JSON.
+[17:43:43 +13m 55s | quantinuum] Extracting: https://www.quantinuum.com (9/19), chunk 5/15
+[17:43:51 +14m 2s | quantinuum] Repaired malformed JSON.
+[17:43:51 +14m 2s | quantinuum] Extracting: https://www.quantinuum.com (9/19), chunk 6/15
+[17:44:00 +14m 12s | quantinuum] Repaired malformed JSON.
+[17:44:00 +14m 12s | quantinuum] Extracting: https://www.quantinuum.com (9/19), chunk 7/15
+[17:44:13 +14m 25s | quantinuum] Repaired malformed JSON.
+[17:44:13 +14m 25s | quantinuum] Extracting: https://www.quantinuum.com (9/19), chunk 8/15
+[17:44:22 +14m 34s | quantinuum] Repaired malformed JSON.
+[17:44:22 +14m 34s | quantinuum] Extracting: https://www.quantinuum.com (9/19), chunk 9/15
+[17:44:32 +14m 44s | quantinuum] Repaired malformed JSON.
+[17:44:32 +14m 44s | quantinuum] Extracting: https://www.quantinuum.com (9/19), chunk 10/15
+[17:44:41 +14m 53s | quantinuum] Repaired malformed JSON.
+[17:44:41 +14m 53s | quantinuum] Extracting: https://www.quantinuum.com (9/19), chunk 11/15
+[17:44:50 +15m 2s | quantinuum] Repaired malformed JSON.
+[17:44:50 +15m 2s | quantinuum] Extracting: https://www.quantinuum.com (9/19), chunk 12/15
+[17:44:58 +15m 10s | quantinuum] Repaired malformed JSON.
+[17:44:58 +15m 10s | quantinuum] Extracting: https://www.quantinuum.com (9/19), chunk 13/15
+[17:45:04 +15m 16s | quantinuum] Extracting: https://www.quantinuum.com (9/19), chunk 14/15
+[17:45:12 +15m 24s | quantinuum] Extracting: https://www.quantinuum.com (9/19), chunk 15/15
+[17:45:17 +15m 29s | quantinuum] Reading page (10/19): https://www.quantinuum.com/products-solutions/nexus
+[17:45:17 +15m 29s | quantinuum] Extracting: https://www.quantinuum.com/products-solutions/nexus (10/19), chunk 1/15
+[17:45:24 +15m 36s | quantinuum] Extracting: https://www.quantinuum.com/products-solutions/nexus (10/19), chunk 2/15
+[17:45:29 +15m 41s | quantinuum] Extracting: https://www.quantinuum.com/products-solutions/nexus (10/19), chunk 3/15
+[17:45:33 +15m 45s | quantinuum] Extracting: https://www.quantinuum.com/products-solutions/nexus (10/19), chunk 4/15
+[17:45:39 +15m 51s | quantinuum] Repaired malformed JSON.
+[17:45:39 +15m 51s | quantinuum] Extracting: https://www.quantinuum.com/products-solutions/nexus (10/19), chunk 5/15
+[17:45:48 +16m 0s | quantinuum] Repaired malformed JSON.
+[17:45:48 +16m 0s | quantinuum] Extracting: https://www.quantinuum.com/products-solutions/nexus (10/19), chunk 6/15
+[17:45:55 +16m 7s | quantinuum] Repaired malformed JSON.
+[17:45:55 +16m 7s | quantinuum] Extracting: https://www.quantinuum.com/products-solutions/nexus (10/19), chunk 7/15
+[17:46:02 +16m 14s | quantinuum] Extracting: https://www.quantinuum.com/products-solutions/nexus (10/19), chunk 8/15
+[17:46:11 +16m 22s | quantinuum] Repaired malformed JSON.
+[17:46:11 +16m 22s | quantinuum] Extracting: https://www.quantinuum.com/products-solutions/nexus (10/19), chunk 9/15
+[17:46:18 +16m 30s | quantinuum] Repaired malformed JSON.
+[17:46:18 +16m 30s | quantinuum] Extracting: https://www.quantinuum.com/products-solutions/nexus (10/19), chunk 10/15
+[17:46:26 +16m 38s | quantinuum] Repaired malformed JSON.
+[17:46:26 +16m 38s | quantinuum] Extracting: https://www.quantinuum.com/products-solutions/nexus (10/19), chunk 11/15
+[17:46:34 +16m 46s | quantinuum] Repaired malformed JSON.
+[17:46:34 +16m 46s | quantinuum] Extracting: https://www.quantinuum.com/products-solutions/nexus (10/19), chunk 12/15
+[17:46:42 +16m 54s | quantinuum] Repaired malformed JSON.
+[17:46:42 +16m 54s | quantinuum] Extracting: https://www.quantinuum.com/products-solutions/nexus (10/19), chunk 13/15
+[17:46:50 +17m 2s | quantinuum] Repaired malformed JSON.
+[17:46:50 +17m 2s | quantinuum] Extracting: https://www.quantinuum.com/products-solutions/nexus (10/19), chunk 14/15
+[17:46:58 +17m 10s | quantinuum] Repaired malformed JSON.
+[17:46:58 +17m 10s | quantinuum] Extracting: https://www.quantinuum.com/products-solutions/nexus (10/19), chunk 15/15
+[17:47:05 +17m 17s | quantinuum] Reading page (11/19): https://www.quantinuum.com/products-solutions/quantinuum-systems
+[17:47:05 +17m 17s | quantinuum] Extracting: https://www.quantinuum.com/products-solutions/quantinuum-systems (11/19), chunk 1/17
+[17:47:11 +17m 23s | quantinuum] Extracting: https://www.quantinuum.com/products-solutions/quantinuum-systems (11/19), chunk 2/17
+[17:47:17 +17m 29s | quantinuum] Extracting: https://www.quantinuum.com/products-solutions/quantinuum-systems (11/19), chunk 3/17
+[17:47:21 +17m 33s | quantinuum] Extracting: https://www.quantinuum.com/products-solutions/quantinuum-systems (11/19), chunk 4/17
+[17:47:29 +17m 41s | quantinuum] Repaired malformed JSON.
+[17:47:29 +17m 41s | quantinuum] Extracting: https://www.quantinuum.com/products-solutions/quantinuum-systems (11/19), chunk 5/17
+[17:47:38 +17m 50s | quantinuum] Repaired malformed JSON.
+[17:47:38 +17m 50s | quantinuum] Extracting: https://www.quantinuum.com/products-solutions/quantinuum-systems (11/19), chunk 6/17
+[17:47:45 +17m 57s | quantinuum] Extracting: https://www.quantinuum.com/products-solutions/quantinuum-systems (11/19), chunk 7/17
+[17:47:50 +18m 2s | quantinuum] Extracting: https://www.quantinuum.com/products-solutions/quantinuum-systems (11/19), chunk 8/17
+[17:48:05 +18m 17s | quantinuum] Model call failed for https://www.quantinuum.com/products-solutions/quantinuum-systems chunk 8: Cannot connect to host api.cloudflare.com:443 ssl:default [Temporary failure in name resolution]
+[17:48:05 +18m 17s | quantinuum] Extracting: https://www.quantinuum.com/products-solutions/quantinuum-systems (11/19), chunk 9/17
+[17:48:14 +18m 26s | quantinuum] Repaired malformed JSON.
+[17:48:14 +18m 26s | quantinuum] Extracting: https://www.quantinuum.com/products-solutions/quantinuum-systems (11/19), chunk 10/17
+[17:48:23 +18m 35s | quantinuum] Repaired malformed JSON.
+[17:48:23 +18m 35s | quantinuum] Extracting: https://www.quantinuum.com/products-solutions/quantinuum-systems (11/19), chunk 11/17
+[17:48:28 +18m 40s | quantinuum] Extracting: https://www.quantinuum.com/products-solutions/quantinuum-systems (11/19), chunk 12/17
+[17:48:34 +18m 46s | quantinuum] Extracting: https://www.quantinuum.com/products-solutions/quantinuum-systems (11/19), chunk 13/17
+[17:48:43 +18m 55s | quantinuum] Repaired malformed JSON.
+[17:48:43 +18m 55s | quantinuum] Extracting: https://www.quantinuum.com/products-solutions/quantinuum-systems (11/19), chunk 14/17
+[17:48:52 +19m 4s | quantinuum] Repaired malformed JSON.
+[17:48:52 +19m 4s | quantinuum] Extracting: https://www.quantinuum.com/products-solutions/quantinuum-systems (11/19), chunk 15/17
+[17:48:57 +19m 9s | quantinuum] Extracting: https://www.quantinuum.com/products-solutions/quantinuum-systems (11/19), chunk 16/17
+[17:49:01 +19m 13s | quantinuum] Extracting: https://www.quantinuum.com/products-solutions/quantinuum-systems (11/19), chunk 17/17
+[17:49:07 +19m 19s | quantinuum] Reading page (12/19): https://www.quantinuum.com/news/blog
+[17:49:07 +19m 19s | quantinuum] Extracting: https://www.quantinuum.com/news/blog (12/19), chunk 1/34
+[17:49:12 +19m 24s | quantinuum] Extracting: https://www.quantinuum.com/news/blog (12/19), chunk 2/34
+[17:49:17 +19m 29s | quantinuum] Extracting: https://www.quantinuum.com/news/blog (12/19), chunk 3/34
+[17:49:26 +19m 38s | quantinuum] Repaired malformed JSON.
+[17:49:26 +19m 38s | quantinuum] Extracting: https://www.quantinuum.com/news/blog (12/19), chunk 4/34
+[17:49:34 +19m 46s | quantinuum] Repaired malformed JSON.
+[17:49:34 +19m 46s | quantinuum] Extracting: https://www.quantinuum.com/news/blog (12/19), chunk 5/34
+[17:49:42 +19m 54s | quantinuum] Extracting: https://www.quantinuum.com/news/blog (12/19), chunk 6/34
+[17:49:47 +19m 59s | quantinuum] Extracting: https://www.quantinuum.com/news/blog (12/19), chunk 7/34
+[17:49:53 +20m 5s | quantinuum] Extracting: https://www.quantinuum.com/news/blog (12/19), chunk 8/34
+[17:50:02 +20m 14s | quantinuum] Repaired malformed JSON.
+[17:50:02 +20m 14s | quantinuum] Extracting: https://www.quantinuum.com/news/blog (12/19), chunk 9/34
+[17:50:10 +20m 22s | quantinuum] Repaired malformed JSON.
+[17:50:10 +20m 22s | quantinuum] Extracting: https://www.quantinuum.com/news/blog (12/19), chunk 10/34
+[17:50:19 +20m 31s | quantinuum] Repaired malformed JSON.
+[17:50:19 +20m 31s | quantinuum] Extracting: https://www.quantinuum.com/news/blog (12/19), chunk 11/34
+[17:50:28 +20m 40s | quantinuum] Repaired malformed JSON.
+[17:50:28 +20m 40s | quantinuum] Extracting: https://www.quantinuum.com/news/blog (12/19), chunk 12/34
+[17:50:36 +20m 48s | quantinuum] Repaired malformed JSON.
+[17:50:36 +20m 48s | quantinuum] Extracting: https://www.quantinuum.com/news/blog (12/19), chunk 13/34
+[17:50:47 +20m 59s | quantinuum] Repaired malformed JSON.
+[17:50:47 +20m 59s | quantinuum] Extracting: https://www.quantinuum.com/news/blog (12/19), chunk 14/34
+[17:50:57 +21m 9s | quantinuum] Repaired malformed JSON.
+[17:50:57 +21m 9s | quantinuum] Extracting: https://www.quantinuum.com/news/blog (12/19), chunk 15/34
+[17:51:05 +21m 17s | quantinuum] Repaired malformed JSON.
+[17:51:05 +21m 17s | quantinuum] Extracting: https://www.quantinuum.com/news/blog (12/19), chunk 16/34
+[17:51:16 +21m 28s | quantinuum] Repaired malformed JSON.
+[17:51:16 +21m 28s | quantinuum] Extracting: https://www.quantinuum.com/news/blog (12/19), chunk 17/34
+[17:51:26 +21m 38s | quantinuum] Repaired malformed JSON.
+[17:51:26 +21m 38s | quantinuum] Extracting: https://www.quantinuum.com/news/blog (12/19), chunk 18/34
+[17:51:33 +21m 45s | quantinuum] Repaired malformed JSON.
+[17:51:33 +21m 45s | quantinuum] Extracting: https://www.quantinuum.com/news/blog (12/19), chunk 19/34
+[17:51:41 +21m 53s | quantinuum] Repaired malformed JSON.
+[17:51:41 +21m 53s | quantinuum] Extracting: https://www.quantinuum.com/news/blog (12/19), chunk 20/34
+[17:51:51 +22m 3s | quantinuum] Repaired malformed JSON.
+[17:51:51 +22m 3s | quantinuum] Extracting: https://www.quantinuum.com/news/blog (12/19), chunk 21/34
+[17:51:57 +22m 9s | quantinuum] Repaired malformed JSON.
+[17:51:57 +22m 9s | quantinuum] Extracting: https://www.quantinuum.com/news/blog (12/19), chunk 22/34
+[17:52:08 +22m 20s | quantinuum] Repaired malformed JSON.
+[17:52:08 +22m 20s | quantinuum] Extracting: https://www.quantinuum.com/news/blog (12/19), chunk 23/34
+[17:52:14 +22m 26s | quantinuum] Repaired malformed JSON.
+[17:52:14 +22m 26s | quantinuum] Extracting: https://www.quantinuum.com/news/blog (12/19), chunk 24/34
+[17:52:25 +22m 37s | quantinuum] Repaired malformed JSON.
+[17:52:25 +22m 37s | quantinuum] Extracting: https://www.quantinuum.com/news/blog (12/19), chunk 25/34
+[17:52:34 +22m 46s | quantinuum] Repaired malformed JSON.
+[17:52:34 +22m 46s | quantinuum] Extracting: https://www.quantinuum.com/news/blog (12/19), chunk 26/34
+[17:52:43 +22m 55s | quantinuum] Repaired malformed JSON.
+[17:52:43 +22m 55s | quantinuum] Extracting: https://www.quantinuum.com/news/blog (12/19), chunk 27/34
+[17:52:50 +23m 1s | quantinuum] Repaired malformed JSON.
+[17:52:50 +23m 1s | quantinuum] Extracting: https://www.quantinuum.com/news/blog (12/19), chunk 28/34
+[17:52:59 +23m 11s | quantinuum] Repaired malformed JSON.
+[17:52:59 +23m 11s | quantinuum] Extracting: https://www.quantinuum.com/news/blog (12/19), chunk 29/34
+[17:53:09 +23m 20s | quantinuum] Repaired malformed JSON.
+[17:53:09 +23m 20s | quantinuum] Extracting: https://www.quantinuum.com/news/blog (12/19), chunk 30/34
+[17:53:17 +23m 29s | quantinuum] Repaired malformed JSON.
+[17:53:17 +23m 29s | quantinuum] Extracting: https://www.quantinuum.com/news/blog (12/19), chunk 31/34
+[17:53:24 +23m 36s | quantinuum] Repaired malformed JSON.
+[17:53:24 +23m 36s | quantinuum] Extracting: https://www.quantinuum.com/news/blog (12/19), chunk 32/34
+[17:53:32 +23m 44s | quantinuum] Repaired malformed JSON.
+[17:53:32 +23m 44s | quantinuum] Extracting: https://www.quantinuum.com/news/blog (12/19), chunk 33/34
+[17:53:37 +23m 49s | quantinuum] Extracting: https://www.quantinuum.com/news/blog (12/19), chunk 34/34
+[17:53:43 +23m 55s | quantinuum] Reading page (13/19): https://www.quantinuum.com/products-solutions/quantinuum-systems/helios
+[17:53:43 +23m 55s | quantinuum] Extracting: https://www.quantinuum.com/products-solutions/quantinuum-systems/helios (13/19), chunk 1/19
+[17:53:47 +23m 59s | quantinuum] Extracting: https://www.quantinuum.com/products-solutions/quantinuum-systems/helios (13/19), chunk 2/19
+[17:53:53 +24m 5s | quantinuum] Extracting: https://www.quantinuum.com/products-solutions/quantinuum-systems/helios (13/19), chunk 3/19
+[17:53:58 +24m 9s | quantinuum] Extracting: https://www.quantinuum.com/products-solutions/quantinuum-systems/helios (13/19), chunk 4/19
+[17:54:05 +24m 17s | quantinuum] Extracting: https://www.quantinuum.com/products-solutions/quantinuum-systems/helios (13/19), chunk 5/19
+[17:54:14 +24m 26s | quantinuum] Repaired malformed JSON.
+[17:54:14 +24m 26s | quantinuum] Extracting: https://www.quantinuum.com/products-solutions/quantinuum-systems/helios (13/19), chunk 6/19
+[17:54:24 +24m 36s | quantinuum] Repaired malformed JSON.
+[17:54:24 +24m 36s | quantinuum] Extracting: https://www.quantinuum.com/products-solutions/quantinuum-systems/helios (13/19), chunk 7/19
+[17:54:33 +24m 45s | quantinuum] Repaired malformed JSON.
+[17:54:33 +24m 45s | quantinuum] Extracting: https://www.quantinuum.com/products-solutions/quantinuum-systems/helios (13/19), chunk 8/19
+[17:54:42 +24m 53s | quantinuum] Repaired malformed JSON.
+[17:54:42 +24m 53s | quantinuum] Extracting: https://www.quantinuum.com/products-solutions/quantinuum-systems/helios (13/19), chunk 9/19
+[17:54:50 +25m 2s | quantinuum] Repaired malformed JSON.
+[17:54:50 +25m 2s | quantinuum] Extracting: https://www.quantinuum.com/products-solutions/quantinuum-systems/helios (13/19), chunk 10/19
+[17:54:56 +25m 8s | quantinuum] Repaired malformed JSON.
+[17:54:56 +25m 8s | quantinuum] Extracting: https://www.quantinuum.com/products-solutions/quantinuum-systems/helios (13/19), chunk 11/19
+[17:55:01 +25m 13s | quantinuum] Extracting: https://www.quantinuum.com/products-solutions/quantinuum-systems/helios (13/19), chunk 12/19
+[17:55:06 +25m 18s | quantinuum] Extracting: https://www.quantinuum.com/products-solutions/quantinuum-systems/helios (13/19), chunk 13/19
+[17:55:13 +25m 25s | quantinuum] Repaired malformed JSON.
+[17:55:13 +25m 25s | quantinuum] Extracting: https://www.quantinuum.com/products-solutions/quantinuum-systems/helios (13/19), chunk 14/19
+[17:55:15 +25m 27s | quantinuum] Extracting: https://www.quantinuum.com/products-solutions/quantinuum-systems/helios (13/19), chunk 15/19
+[17:55:21 +25m 33s | quantinuum] Extracting: https://www.quantinuum.com/products-solutions/quantinuum-systems/helios (13/19), chunk 16/19
+[17:55:29 +25m 41s | quantinuum] Repaired malformed JSON.
+[17:55:29 +25m 41s | quantinuum] Extracting: https://www.quantinuum.com/products-solutions/quantinuum-systems/helios (13/19), chunk 17/19
+[17:55:35 +25m 47s | quantinuum] Repaired malformed JSON.
+[17:55:35 +25m 47s | quantinuum] Extracting: https://www.quantinuum.com/products-solutions/quantinuum-systems/helios (13/19), chunk 18/19
+[17:55:42 +25m 53s | quantinuum] Repaired malformed JSON.
+[17:55:42 +25m 53s | quantinuum] Extracting: https://www.quantinuum.com/products-solutions/quantinuum-systems/helios (13/19), chunk 19/19
+[17:55:48 +26m 0s | quantinuum] Reading page (14/19): https://www.quantinuum.com/blog/technical-perspective-by-the-end-of-the-decade-we-will-deliver-universal-fault-tolerant-quantum-computing
+[17:55:48 +26m 0s | quantinuum] Extracting: https://www.quantinuum.com/blog/technical-perspective-by-the-end-of-the-decade-we-will-deliver-universal-fault-tolerant-quantum-computing (14/19), chunk 1/32
+[17:55:54 +26m 6s | quantinuum] Extracting: https://www.quantinuum.com/blog/technical-perspective-by-the-end-of-the-decade-we-will-deliver-universal-fault-tolerant-quantum-computing (14/19), chunk 2/32
+[17:56:00 +26m 12s | quantinuum] Extracting: https://www.quantinuum.com/blog/technical-perspective-by-the-end-of-the-decade-we-will-deliver-universal-fault-tolerant-quantum-computing (14/19), chunk 3/32
+[17:56:06 +26m 17s | quantinuum] Extracting: https://www.quantinuum.com/blog/technical-perspective-by-the-end-of-the-decade-we-will-deliver-universal-fault-tolerant-quantum-computing (14/19), chunk 4/32
+[17:56:12 +26m 24s | quantinuum] Repaired malformed JSON.
+[17:56:12 +26m 24s | quantinuum] Extracting: https://www.quantinuum.com/blog/technical-perspective-by-the-end-of-the-decade-we-will-deliver-universal-fault-tolerant-quantum-computing (14/19), chunk 5/32
+[17:56:18 +26m 30s | quantinuum] Repaired malformed JSON.
+[17:56:18 +26m 30s | quantinuum] Extracting: https://www.quantinuum.com/blog/technical-perspective-by-the-end-of-the-decade-we-will-deliver-universal-fault-tolerant-quantum-computing (14/19), chunk 6/32
+[17:56:25 +26m 37s | quantinuum] Repaired malformed JSON.
+[17:56:25 +26m 37s | quantinuum] Extracting: https://www.quantinuum.com/blog/technical-perspective-by-the-end-of-the-decade-we-will-deliver-universal-fault-tolerant-quantum-computing (14/19), chunk 7/32
+[17:56:33 +26m 45s | quantinuum] Repaired malformed JSON.
+[17:56:33 +26m 45s | quantinuum] Extracting: https://www.quantinuum.com/blog/technical-perspective-by-the-end-of-the-decade-we-will-deliver-universal-fault-tolerant-quantum-computing (14/19), chunk 8/32
+[17:56:41 +26m 53s | quantinuum] Repaired malformed JSON.
+[17:56:41 +26m 53s | quantinuum] Extracting: https://www.quantinuum.com/blog/technical-perspective-by-the-end-of-the-decade-we-will-deliver-universal-fault-tolerant-quantum-computing (14/19), chunk 9/32
+[17:56:50 +27m 2s | quantinuum] Repaired malformed JSON.
+[17:56:50 +27m 2s | quantinuum] Extracting: https://www.quantinuum.com/blog/technical-perspective-by-the-end-of-the-decade-we-will-deliver-universal-fault-tolerant-quantum-computing (14/19), chunk 10/32
+[17:56:58 +27m 10s | quantinuum] Repaired malformed JSON.
+[17:56:58 +27m 10s | quantinuum] Extracting: https://www.quantinuum.com/blog/technical-perspective-by-the-end-of-the-decade-we-will-deliver-universal-fault-tolerant-quantum-computing (14/19), chunk 11/32
+[17:57:04 +27m 16s | quantinuum] Extracting: https://www.quantinuum.com/blog/technical-perspective-by-the-end-of-the-decade-we-will-deliver-universal-fault-tolerant-quantum-computing (14/19), chunk 12/32
+[17:57:13 +27m 25s | quantinuum] Repaired malformed JSON.
+[17:57:13 +27m 25s | quantinuum] Extracting: https://www.quantinuum.com/blog/technical-perspective-by-the-end-of-the-decade-we-will-deliver-universal-fault-tolerant-quantum-computing (14/19), chunk 13/32
+[17:57:22 +27m 34s | quantinuum] Repaired malformed JSON.
+[17:57:22 +27m 34s | quantinuum] Extracting: https://www.quantinuum.com/blog/technical-perspective-by-the-end-of-the-decade-we-will-deliver-universal-fault-tolerant-quantum-computing (14/19), chunk 14/32
+[17:57:30 +27m 42s | quantinuum] Repaired malformed JSON.
+[17:57:30 +27m 42s | quantinuum] Extracting: https://www.quantinuum.com/blog/technical-perspective-by-the-end-of-the-decade-we-will-deliver-universal-fault-tolerant-quantum-computing (14/19), chunk 15/32
+[17:57:41 +27m 53s | quantinuum] Repaired malformed JSON.
+[17:57:41 +27m 53s | quantinuum] Extracting: https://www.quantinuum.com/blog/technical-perspective-by-the-end-of-the-decade-we-will-deliver-universal-fault-tolerant-quantum-computing (14/19), chunk 16/32
+[17:57:51 +28m 3s | quantinuum] Model call failed for https://www.quantinuum.com/blog/technical-perspective-by-the-end-of-the-decade-we-will-deliver-universal-fault-tolerant-quantum-computing chunk 16: Cannot connect to host api.cloudflare.com:443 ssl:default [Temporary failure in name resolution]
+[17:57:51 +28m 3s | quantinuum] Extracting: https://www.quantinuum.com/blog/technical-perspective-by-the-end-of-the-decade-we-will-deliver-universal-fault-tolerant-quantum-computing (14/19), chunk 17/32
+[17:57:58 +28m 10s | quantinuum] Extracting: https://www.quantinuum.com/blog/technical-perspective-by-the-end-of-the-decade-we-will-deliver-universal-fault-tolerant-quantum-computing (14/19), chunk 18/32
+[17:58:08 +28m 20s | quantinuum] Repaired malformed JSON.
+[17:58:08 +28m 20s | quantinuum] Extracting: https://www.quantinuum.com/blog/technical-perspective-by-the-end-of-the-decade-we-will-deliver-universal-fault-tolerant-quantum-computing (14/19), chunk 19/32
+[17:58:17 +28m 29s | quantinuum] Repaired malformed JSON.
+[17:58:17 +28m 29s | quantinuum] Extracting: https://www.quantinuum.com/blog/technical-perspective-by-the-end-of-the-decade-we-will-deliver-universal-fault-tolerant-quantum-computing (14/19), chunk 20/32
+[17:58:24 +28m 36s | quantinuum] Repaired malformed JSON.
+[17:58:24 +28m 36s | quantinuum] Extracting: https://www.quantinuum.com/blog/technical-perspective-by-the-end-of-the-decade-we-will-deliver-universal-fault-tolerant-quantum-computing (14/19), chunk 21/32
+[17:58:33 +28m 44s | quantinuum] Repaired malformed JSON.
+[17:58:33 +28m 44s | quantinuum] Extracting: https://www.quantinuum.com/blog/technical-perspective-by-the-end-of-the-decade-we-will-deliver-universal-fault-tolerant-quantum-computing (14/19), chunk 22/32
+[17:58:38 +28m 50s | quantinuum] Repaired malformed JSON.
+[17:58:38 +28m 50s | quantinuum] Extracting: https://www.quantinuum.com/blog/technical-perspective-by-the-end-of-the-decade-we-will-deliver-universal-fault-tolerant-quantum-computing (14/19), chunk 23/32
+[17:58:45 +28m 57s | quantinuum] Repaired malformed JSON.
+[17:58:45 +28m 57s | quantinuum] Extracting: https://www.quantinuum.com/blog/technical-perspective-by-the-end-of-the-decade-we-will-deliver-universal-fault-tolerant-quantum-computing (14/19), chunk 24/32
+[17:58:53 +29m 5s | quantinuum] Repaired malformed JSON.
+[17:58:53 +29m 5s | quantinuum] Extracting: https://www.quantinuum.com/blog/technical-perspective-by-the-end-of-the-decade-we-will-deliver-universal-fault-tolerant-quantum-computing (14/19), chunk 25/32
+[17:58:59 +29m 11s | quantinuum] Repaired malformed JSON.
+[17:58:59 +29m 11s | quantinuum] Extracting: https://www.quantinuum.com/blog/technical-perspective-by-the-end-of-the-decade-we-will-deliver-universal-fault-tolerant-quantum-computing (14/19), chunk 26/32
+[17:59:05 +29m 17s | quantinuum] Repaired malformed JSON.
+[17:59:05 +29m 17s | quantinuum] Extracting: https://www.quantinuum.com/blog/technical-perspective-by-the-end-of-the-decade-we-will-deliver-universal-fault-tolerant-quantum-computing (14/19), chunk 27/32
+[17:59:13 +29m 24s | quantinuum] Repaired malformed JSON.
+[17:59:13 +29m 24s | quantinuum] Extracting: https://www.quantinuum.com/blog/technical-perspective-by-the-end-of-the-decade-we-will-deliver-universal-fault-tolerant-quantum-computing (14/19), chunk 28/32
+[17:59:18 +29m 30s | quantinuum] Repaired malformed JSON.
+[17:59:18 +29m 30s | quantinuum] Extracting: https://www.quantinuum.com/blog/technical-perspective-by-the-end-of-the-decade-we-will-deliver-universal-fault-tolerant-quantum-computing (14/19), chunk 29/32
+[17:59:26 +29m 38s | quantinuum] Repaired malformed JSON.
+[17:59:26 +29m 38s | quantinuum] Extracting: https://www.quantinuum.com/blog/technical-perspective-by-the-end-of-the-decade-we-will-deliver-universal-fault-tolerant-quantum-computing (14/19), chunk 30/32
+[17:59:32 +29m 44s | quantinuum] Repaired malformed JSON.
+[17:59:32 +29m 44s | quantinuum] Extracting: https://www.quantinuum.com/blog/technical-perspective-by-the-end-of-the-decade-we-will-deliver-universal-fault-tolerant-quantum-computing (14/19), chunk 31/32
+[17:59:36 +29m 48s | quantinuum] Extracting: https://www.quantinuum.com/blog/technical-perspective-by-the-end-of-the-decade-we-will-deliver-universal-fault-tolerant-quantum-computing (14/19), chunk 32/32
+[17:59:41 +29m 53s | quantinuum] Reading page (15/19): https://www.quantinuum.com/products-solutions/inquanto
+[17:59:41 +29m 53s | quantinuum] Extracting: https://www.quantinuum.com/products-solutions/inquanto (15/19), chunk 1/16
+[17:59:45 +29m 57s | quantinuum] Extracting: https://www.quantinuum.com/products-solutions/inquanto (15/19), chunk 2/16
+[17:59:49 +30m 0s | quantinuum] Extracting: https://www.quantinuum.com/products-solutions/inquanto (15/19), chunk 3/16
+[17:59:53 +30m 5s | quantinuum] Extracting: https://www.quantinuum.com/products-solutions/inquanto (15/19), chunk 4/16
+[17:59:59 +30m 11s | quantinuum] Repaired malformed JSON.
+[17:59:59 +30m 11s | quantinuum] Extracting: https://www.quantinuum.com/products-solutions/inquanto (15/19), chunk 5/16
+[18:00:09 +30m 21s | quantinuum] Repaired malformed JSON.
+[18:00:09 +30m 21s | quantinuum] Extracting: https://www.quantinuum.com/products-solutions/inquanto (15/19), chunk 6/16
+[18:00:17 +30m 29s | quantinuum] Repaired malformed JSON.
+[18:00:17 +30m 29s | quantinuum] Extracting: https://www.quantinuum.com/products-solutions/inquanto (15/19), chunk 7/16
+[18:00:26 +30m 38s | quantinuum] Repaired malformed JSON.
+[18:00:26 +30m 38s | quantinuum] Extracting: https://www.quantinuum.com/products-solutions/inquanto (15/19), chunk 8/16
+[18:00:30 +30m 42s | quantinuum] Extracting: https://www.quantinuum.com/products-solutions/inquanto (15/19), chunk 9/16
+[18:00:36 +30m 48s | quantinuum] Repaired malformed JSON.
+[18:00:36 +30m 48s | quantinuum] Extracting: https://www.quantinuum.com/products-solutions/inquanto (15/19), chunk 10/16
+[18:00:40 +30m 52s | quantinuum] Extracting: https://www.quantinuum.com/products-solutions/inquanto (15/19), chunk 11/16
+[18:00:46 +30m 58s | quantinuum] Extracting: https://www.quantinuum.com/products-solutions/inquanto (15/19), chunk 12/16
+[18:00:53 +31m 5s | quantinuum] Repaired malformed JSON.
+[18:00:53 +31m 5s | quantinuum] Extracting: https://www.quantinuum.com/products-solutions/inquanto (15/19), chunk 13/16
+[18:01:00 +31m 12s | quantinuum] Repaired malformed JSON.
+[18:01:00 +31m 12s | quantinuum] Extracting: https://www.quantinuum.com/products-solutions/inquanto (15/19), chunk 14/16
+[18:01:05 +31m 17s | quantinuum] Extracting: https://www.quantinuum.com/products-solutions/inquanto (15/19), chunk 15/16
+[18:01:11 +31m 23s | quantinuum] Extracting: https://www.quantinuum.com/products-solutions/inquanto (15/19), chunk 16/16
+[18:01:16 +31m 28s | quantinuum] Reading page (16/19): https://www.quantinuum.com/research/research-areas
+[18:01:16 +31m 28s | quantinuum] Extracting: https://www.quantinuum.com/research/research-areas (16/19), chunk 1/18
+[18:01:21 +31m 33s | quantinuum] Extracting: https://www.quantinuum.com/research/research-areas (16/19), chunk 2/18
+[18:01:25 +31m 37s | quantinuum] Extracting: https://www.quantinuum.com/research/research-areas (16/19), chunk 3/18
+[18:01:33 +31m 45s | quantinuum] Repaired malformed JSON.
+[18:01:33 +31m 45s | quantinuum] Extracting: https://www.quantinuum.com/research/research-areas (16/19), chunk 4/18
+[18:01:41 +31m 53s | quantinuum] Repaired malformed JSON.
+[18:01:41 +31m 53s | quantinuum] Extracting: https://www.quantinuum.com/research/research-areas (16/19), chunk 5/18
+[18:01:48 +32m 0s | quantinuum] Extracting: https://www.quantinuum.com/research/research-areas (16/19), chunk 6/18
+[18:01:57 +32m 9s | quantinuum] Repaired malformed JSON.
+[18:01:57 +32m 9s | quantinuum] Extracting: https://www.quantinuum.com/research/research-areas (16/19), chunk 7/18
+[18:02:02 +32m 14s | quantinuum] Extracting: https://www.quantinuum.com/research/research-areas (16/19), chunk 8/18
+[18:02:08 +32m 20s | quantinuum] Extracting: https://www.quantinuum.com/research/research-areas (16/19), chunk 9/18
+[18:02:14 +32m 26s | quantinuum] Repaired malformed JSON.
+[18:02:14 +32m 26s | quantinuum] Extracting: https://www.quantinuum.com/research/research-areas (16/19), chunk 10/18
+[18:02:20 +32m 32s | quantinuum] Repaired malformed JSON.
+[18:02:20 +32m 32s | quantinuum] Extracting: https://www.quantinuum.com/research/research-areas (16/19), chunk 11/18
+[18:02:27 +32m 39s | quantinuum] Repaired malformed JSON.
+[18:02:27 +32m 39s | quantinuum] Extracting: https://www.quantinuum.com/research/research-areas (16/19), chunk 12/18
+[18:02:33 +32m 45s | quantinuum] Repaired malformed JSON.
+[18:02:33 +32m 45s | quantinuum] Extracting: https://www.quantinuum.com/research/research-areas (16/19), chunk 13/18
+[18:02:39 +32m 51s | quantinuum] Repaired malformed JSON.
+[18:02:39 +32m 51s | quantinuum] Extracting: https://www.quantinuum.com/research/research-areas (16/19), chunk 14/18
+[18:02:47 +32m 59s | quantinuum] Repaired malformed JSON.
+[18:02:47 +32m 59s | quantinuum] Extracting: https://www.quantinuum.com/research/research-areas (16/19), chunk 15/18
+[18:02:56 +33m 8s | quantinuum] Repaired malformed JSON.
+[18:02:56 +33m 8s | quantinuum] Extracting: https://www.quantinuum.com/research/research-areas (16/19), chunk 16/18
+[18:03:02 +33m 14s | quantinuum] Repaired malformed JSON.
+[18:03:02 +33m 14s | quantinuum] Extracting: https://www.quantinuum.com/research/research-areas (16/19), chunk 17/18
+[18:03:09 +33m 20s | quantinuum] Repaired malformed JSON.
+[18:03:09 +33m 20s | quantinuum] Extracting: https://www.quantinuum.com/research/research-areas (16/19), chunk 18/18
+[18:03:16 +33m 28s | quantinuum] Repaired malformed JSON.
+[18:03:16 +33m 28s | quantinuum] Reading page (17/19): https://www.quantinuum.com/company/about
+[18:03:16 +33m 28s | quantinuum] Extracting: https://www.quantinuum.com/company/about (17/19), chunk 1/41
+[18:03:20 +33m 31s | quantinuum] Extracting: https://www.quantinuum.com/company/about (17/19), chunk 2/41
+[18:03:26 +33m 38s | quantinuum] Extracting: https://www.quantinuum.com/company/about (17/19), chunk 3/41
+[18:03:33 +33m 45s | quantinuum] Repaired malformed JSON.
+[18:03:33 +33m 45s | quantinuum] Extracting: https://www.quantinuum.com/company/about (17/19), chunk 4/41
+[18:03:41 +33m 53s | quantinuum] Extracting: https://www.quantinuum.com/company/about (17/19), chunk 5/41
+[18:03:50 +34m 2s | quantinuum] Extracting: https://www.quantinuum.com/company/about (17/19), chunk 6/41
+[18:03:55 +34m 7s | quantinuum] Extracting: https://www.quantinuum.com/company/about (17/19), chunk 7/41
+[18:04:03 +34m 15s | quantinuum] Repaired malformed JSON.
+[18:04:03 +34m 15s | quantinuum] Extracting: https://www.quantinuum.com/company/about (17/19), chunk 8/41
+[18:04:09 +34m 21s | quantinuum] Repaired malformed JSON.
+[18:04:09 +34m 21s | quantinuum] Extracting: https://www.quantinuum.com/company/about (17/19), chunk 9/41
+[18:04:18 +34m 30s | quantinuum] Repaired malformed JSON.
+[18:04:18 +34m 30s | quantinuum] Extracting: https://www.quantinuum.com/company/about (17/19), chunk 10/41
+[18:04:25 +34m 37s | quantinuum] Repaired malformed JSON.
+[18:04:25 +34m 37s | quantinuum] Extracting: https://www.quantinuum.com/company/about (17/19), chunk 11/41
+[18:04:36 +34m 48s | quantinuum] Repaired malformed JSON.
+[18:04:36 +34m 48s | quantinuum] Extracting: https://www.quantinuum.com/company/about (17/19), chunk 12/41
+[18:04:47 +34m 59s | quantinuum] Repaired malformed JSON.
+[18:04:47 +34m 59s | quantinuum] Extracting: https://www.quantinuum.com/company/about (17/19), chunk 13/41
+[18:04:55 +35m 7s | quantinuum] Repaired malformed JSON.
+[18:04:55 +35m 7s | quantinuum] Extracting: https://www.quantinuum.com/company/about (17/19), chunk 14/41
+[18:05:03 +35m 15s | quantinuum] Repaired malformed JSON.
+[18:05:03 +35m 15s | quantinuum] Extracting: https://www.quantinuum.com/company/about (17/19), chunk 15/41
+[18:05:11 +35m 23s | quantinuum] Repaired malformed JSON.
+[18:05:11 +35m 23s | quantinuum] Extracting: https://www.quantinuum.com/company/about (17/19), chunk 16/41
+[18:05:21 +35m 33s | quantinuum] Repaired malformed JSON.
+[18:05:21 +35m 33s | quantinuum] Extracting: https://www.quantinuum.com/company/about (17/19), chunk 17/41
+[18:05:30 +35m 42s | quantinuum] Repaired malformed JSON.
+[18:05:30 +35m 42s | quantinuum] Extracting: https://www.quantinuum.com/company/about (17/19), chunk 18/41
+[18:05:36 +35m 48s | quantinuum] Repaired malformed JSON.
+[18:05:36 +35m 48s | quantinuum] Extracting: https://www.quantinuum.com/company/about (17/19), chunk 19/41
+[18:05:44 +35m 56s | quantinuum] Repaired malformed JSON.
+[18:05:44 +35m 56s | quantinuum] Extracting: https://www.quantinuum.com/company/about (17/19), chunk 20/41
+[18:05:54 +36m 6s | quantinuum] Repaired malformed JSON.
+[18:05:54 +36m 6s | quantinuum] Extracting: https://www.quantinuum.com/company/about (17/19), chunk 21/41
+[18:06:03 +36m 15s | quantinuum] Repaired malformed JSON.
+[18:06:03 +36m 15s | quantinuum] Extracting: https://www.quantinuum.com/company/about (17/19), chunk 22/41
+[18:06:13 +36m 24s | quantinuum] Repaired malformed JSON.
+[18:06:13 +36m 24s | quantinuum] Extracting: https://www.quantinuum.com/company/about (17/19), chunk 23/41
+[18:06:21 +36m 33s | quantinuum] Repaired malformed JSON.
+[18:06:21 +36m 33s | quantinuum] Extracting: https://www.quantinuum.com/company/about (17/19), chunk 24/41
+[18:06:29 +36m 41s | quantinuum] Repaired malformed JSON.
+[18:06:29 +36m 41s | quantinuum] Extracting: https://www.quantinuum.com/company/about (17/19), chunk 25/41
+[18:06:37 +36m 49s | quantinuum] Repaired malformed JSON.
+[18:06:37 +36m 49s | quantinuum] Extracting: https://www.quantinuum.com/company/about (17/19), chunk 26/41
+[18:06:46 +36m 58s | quantinuum] Repaired malformed JSON.
+[18:06:46 +36m 58s | quantinuum] Extracting: https://www.quantinuum.com/company/about (17/19), chunk 27/41
+[18:06:52 +37m 4s | quantinuum] Repaired malformed JSON.
+[18:06:52 +37m 4s | quantinuum] Extracting: https://www.quantinuum.com/company/about (17/19), chunk 28/41
+[18:07:00 +37m 12s | quantinuum] Repaired malformed JSON.
+[18:07:00 +37m 12s | quantinuum] Extracting: https://www.quantinuum.com/company/about (17/19), chunk 29/41
+[18:07:07 +37m 19s | quantinuum] Repaired malformed JSON.
+[18:07:07 +37m 19s | quantinuum] Extracting: https://www.quantinuum.com/company/about (17/19), chunk 30/41
+[18:07:14 +37m 26s | quantinuum] Repaired malformed JSON.
+[18:07:14 +37m 26s | quantinuum] Extracting: https://www.quantinuum.com/company/about (17/19), chunk 31/41
+[18:07:24 +37m 36s | quantinuum] Repaired malformed JSON.
+[18:07:24 +37m 36s | quantinuum] Extracting: https://www.quantinuum.com/company/about (17/19), chunk 32/41
+[18:07:32 +37m 44s | quantinuum] Repaired malformed JSON.
+[18:07:32 +37m 44s | quantinuum] Extracting: https://www.quantinuum.com/company/about (17/19), chunk 33/41
+[18:07:43 +37m 55s | quantinuum] Repaired malformed JSON.
+[18:07:43 +37m 55s | quantinuum] Extracting: https://www.quantinuum.com/company/about (17/19), chunk 34/41
+[18:07:52 +38m 4s | quantinuum] Repaired malformed JSON.
+[18:07:52 +38m 4s | quantinuum] Extracting: https://www.quantinuum.com/company/about (17/19), chunk 35/41
+[18:07:58 +38m 10s | quantinuum] Repaired malformed JSON.
+[18:07:58 +38m 10s | quantinuum] Extracting: https://www.quantinuum.com/company/about (17/19), chunk 36/41
+[18:08:04 +38m 16s | quantinuum] Repaired malformed JSON.
+[18:08:04 +38m 16s | quantinuum] Extracting: https://www.quantinuum.com/company/about (17/19), chunk 37/41
+[18:08:09 +38m 21s | quantinuum] Extracting: https://www.quantinuum.com/company/about (17/19), chunk 38/41
+[18:08:18 +38m 30s | quantinuum] Repaired malformed JSON.
+[18:08:18 +38m 30s | quantinuum] Extracting: https://www.quantinuum.com/company/about (17/19), chunk 39/41
+[18:08:26 +38m 38s | quantinuum] Extracting: https://www.quantinuum.com/company/about (17/19), chunk 40/41
+[18:08:33 +38m 45s | quantinuum] Extracting: https://www.quantinuum.com/company/about (17/19), chunk 41/41
+[18:08:41 +38m 53s | quantinuum] Repaired malformed JSON.
+[18:08:41 +38m 53s | quantinuum] Reading page (18/19): https://www.quantinuum.com/products-solutions/developer-tools
+[18:08:41 +38m 53s | quantinuum] Extracting: https://www.quantinuum.com/products-solutions/developer-tools (18/19), chunk 1/12
+[18:08:47 +38m 59s | quantinuum] Extracting: https://www.quantinuum.com/products-solutions/developer-tools (18/19), chunk 2/12
+[18:08:51 +39m 3s | quantinuum] Extracting: https://www.quantinuum.com/products-solutions/developer-tools (18/19), chunk 3/12
+[18:08:56 +39m 7s | quantinuum] Extracting: https://www.quantinuum.com/products-solutions/developer-tools (18/19), chunk 4/12
+[18:09:01 +39m 13s | quantinuum] Repaired malformed JSON.
+[18:09:01 +39m 13s | quantinuum] Extracting: https://www.quantinuum.com/products-solutions/developer-tools (18/19), chunk 5/12
+[18:09:08 +39m 20s | quantinuum] Extracting: https://www.quantinuum.com/products-solutions/developer-tools (18/19), chunk 6/12
+[18:09:14 +39m 26s | quantinuum] Repaired malformed JSON.
+[18:09:14 +39m 26s | quantinuum] Extracting: https://www.quantinuum.com/products-solutions/developer-tools (18/19), chunk 7/12
+[18:09:20 +39m 32s | quantinuum] Repaired malformed JSON.
+[18:09:20 +39m 32s | quantinuum] Extracting: https://www.quantinuum.com/products-solutions/developer-tools (18/19), chunk 8/12
+[18:09:27 +39m 39s | quantinuum] Repaired malformed JSON.
+[18:09:27 +39m 39s | quantinuum] Extracting: https://www.quantinuum.com/products-solutions/developer-tools (18/19), chunk 9/12
+[18:09:34 +39m 46s | quantinuum] Extracting: https://www.quantinuum.com/products-solutions/developer-tools (18/19), chunk 10/12
+[18:09:39 +39m 51s | quantinuum] Extracting: https://www.quantinuum.com/products-solutions/developer-tools (18/19), chunk 11/12
+[18:09:49 +40m 1s | quantinuum] Repaired malformed JSON.
+[18:09:49 +40m 1s | quantinuum] Extracting: https://www.quantinuum.com/products-solutions/developer-tools (18/19), chunk 12/12
+[18:09:52 +40m 4s | quantinuum] Reading page (19/19): https://www.quantinuum.com/products-solutions/quantinuum-systems/system-model-h2
+[18:09:52 +40m 4s | quantinuum] Extracting: https://www.quantinuum.com/products-solutions/quantinuum-systems/system-model-h2 (19/19), chunk 1/14
+[18:09:56 +40m 8s | quantinuum] Extracting: https://www.quantinuum.com/products-solutions/quantinuum-systems/system-model-h2 (19/19), chunk 2/14
+[18:10:02 +40m 14s | quantinuum] Extracting: https://www.quantinuum.com/products-solutions/quantinuum-systems/system-model-h2 (19/19), chunk 3/14
+[18:10:12 +40m 24s | quantinuum] Repaired malformed JSON.
+[18:10:12 +40m 24s | quantinuum] Extracting: https://www.quantinuum.com/products-solutions/quantinuum-systems/system-model-h2 (19/19), chunk 4/14
+[18:10:19 +40m 31s | quantinuum] Repaired malformed JSON.
+[18:10:19 +40m 31s | quantinuum] Extracting: https://www.quantinuum.com/products-solutions/quantinuum-systems/system-model-h2 (19/19), chunk 5/14
+[18:10:28 +40m 40s | quantinuum] Repaired malformed JSON.
+[18:10:28 +40m 40s | quantinuum] Extracting: https://www.quantinuum.com/products-solutions/quantinuum-systems/system-model-h2 (19/19), chunk 6/14
+[18:10:35 +40m 47s | quantinuum] Extracting: https://www.quantinuum.com/products-solutions/quantinuum-systems/system-model-h2 (19/19), chunk 7/14
+[18:10:39 +40m 51s | quantinuum] Extracting: https://www.quantinuum.com/products-solutions/quantinuum-systems/system-model-h2 (19/19), chunk 8/14
+[18:10:46 +40m 58s | quantinuum] Repaired malformed JSON.
+[18:10:46 +40m 58s | quantinuum] Extracting: https://www.quantinuum.com/products-solutions/quantinuum-systems/system-model-h2 (19/19), chunk 9/14
+[18:10:53 +41m 5s | quantinuum] Repaired malformed JSON.
+[18:10:53 +41m 5s | quantinuum] Extracting: https://www.quantinuum.com/products-solutions/quantinuum-systems/system-model-h2 (19/19), chunk 10/14
+[18:11:02 +41m 14s | quantinuum] Repaired malformed JSON.
+[18:11:02 +41m 14s | quantinuum] Extracting: https://www.quantinuum.com/products-solutions/quantinuum-systems/system-model-h2 (19/19), chunk 11/14
+[18:11:10 +41m 22s | quantinuum] Repaired malformed JSON.
+[18:11:10 +41m 22s | quantinuum] Extracting: https://www.quantinuum.com/products-solutions/quantinuum-systems/system-model-h2 (19/19), chunk 12/14
+[18:11:19 +41m 31s | quantinuum] Repaired malformed JSON.
+[18:11:19 +41m 31s | quantinuum] Extracting: https://www.quantinuum.com/products-solutions/quantinuum-systems/system-model-h2 (19/19), chunk 13/14
+[18:11:27 +41m 39s | quantinuum] Repaired malformed JSON.
+[18:11:27 +41m 39s | quantinuum] Extracting: https://www.quantinuum.com/products-solutions/quantinuum-systems/system-model-h2 (19/19), chunk 14/14
+[18:11:31 +41m 43s | quantinuum] Saved 1_actor_results.json with 559 extracted records
+
+[18:11:31 +41m 43s | quantinuum] === 2 clean actors ===
+[18:11:33 +41m 45s | quantinuum] Loaded 559 extracted records
+[18:11:33 +41m 45s | quantinuum] Saved 2_actor_nodes.json with 118 canonical actor nodes
+
+[18:11:33 +41m 45s | quantinuum] === 3 interaction extraction ===
+[18:11:33 +41m 45s | quantinuum] Extracting interactions: https://www.quantinuum.com/glossary (1/19), chunk 1/16
+[18:11:37 +41m 49s | quantinuum] Extracting interactions: https://www.quantinuum.com/glossary (1/19), chunk 2/16
+[18:11:39 +41m 51s | quantinuum] Extracting interactions: https://www.quantinuum.com/glossary (1/19), chunk 3/16
+[18:11:42 +41m 54s | quantinuum] Extracting interactions: https://www.quantinuum.com/glossary (1/19), chunk 4/16
+[18:11:48 +42m 0s | quantinuum] Extracting interactions: https://www.quantinuum.com/glossary (1/19), chunk 5/16
+[18:11:51 +42m 3s | quantinuum] Extracting interactions: https://www.quantinuum.com/glossary (1/19), chunk 6/16
+[18:11:55 +42m 7s | quantinuum] Extracting interactions: https://www.quantinuum.com/glossary (1/19), chunk 14/16
+[18:12:01 +42m 13s | quantinuum] Extracting interactions: https://www.quantinuum.com/glossary (1/19), chunk 15/16
+[18:12:02 +42m 14s | quantinuum] Extracting interactions: https://www.quantinuum.com/contact (2/19), chunk 1/12
+[18:12:04 +42m 16s | quantinuum] Extracting interactions: https://www.quantinuum.com/contact (2/19), chunk 2/12
+[18:12:05 +42m 17s | quantinuum] Extracting interactions: https://www.quantinuum.com/contact (2/19), chunk 3/12
+[18:12:10 +42m 22s | quantinuum] Extracting interactions: https://www.quantinuum.com/contact (2/19), chunk 4/12
+[18:12:12 +42m 23s | quantinuum] Extracting interactions: https://www.quantinuum.com/contact (2/19), chunk 5/12
+[18:12:17 +42m 29s | quantinuum] Extracting interactions: https://www.quantinuum.com/contact (2/19), chunk 6/12
+[18:12:22 +42m 34s | quantinuum] Extracting interactions: https://www.quantinuum.com/contact (2/19), chunk 10/12
+[18:12:30 +42m 41s | quantinuum] Extracting interactions: https://www.quantinuum.com/contact (2/19), chunk 11/12
+[18:12:33 +42m 45s | quantinuum] Extracting interactions: https://www.quantinuum.com/products-solutions/hardware-h-series (3/19), chunk 1/17
+[18:12:35 +42m 47s | quantinuum] Extracting interactions: https://www.quantinuum.com/products-solutions/hardware-h-series (3/19), chunk 2/17
+[18:12:39 +42m 51s | quantinuum] Extracting interactions: https://www.quantinuum.com/products-solutions/hardware-h-series (3/19), chunk 3/17
+[18:12:42 +42m 54s | quantinuum] Extracting interactions: https://www.quantinuum.com/products-solutions/hardware-h-series (3/19), chunk 4/17
+[18:12:43 +42m 55s | quantinuum] Extracting interactions: https://www.quantinuum.com/products-solutions/hardware-h-series (3/19), chunk 5/17
+[18:12:47 +42m 59s | quantinuum] Extracting interactions: https://www.quantinuum.com/products-solutions/hardware-h-series (3/19), chunk 6/17
+[18:12:51 +43m 3s | quantinuum] Extracting interactions: https://www.quantinuum.com/products-solutions/hardware-h-series (3/19), chunk 7/17
+[18:12:55 +43m 7s | quantinuum] Extracting interactions: https://www.quantinuum.com/products-solutions/hardware-h-series (3/19), chunk 8/17
+[18:13:04 +43m 16s | quantinuum] Extracting interactions: https://www.quantinuum.com/products-solutions/hardware-h-series (3/19), chunk 11/17
+[18:13:08 +43m 19s | quantinuum] Extracting interactions: https://www.quantinuum.com/products-solutions/hardware-h-series (3/19), chunk 13/17
+[18:13:15 +43m 27s | quantinuum] Extracting interactions: https://www.quantinuum.com/products-solutions/hardware-h-series (3/19), chunk 14/17
+[18:13:23 +43m 35s | quantinuum] Extracting interactions: https://www.quantinuum.com/products-solutions/hardware-h-series (3/19), chunk 15/17
+[18:13:34 +43m 46s | quantinuum] Extracting interactions: https://www.quantinuum.com/products-solutions/hardware-h-series (3/19), chunk 16/17
+[18:13:39 +43m 51s | quantinuum] Extracting interactions: https://ir.quantinuum.com (4/19), chunk 4/7
+[18:13:45 +43m 57s | quantinuum] Extracting interactions: https://ir.quantinuum.com (4/19), chunk 5/7
+[18:13:53 +44m 5s | quantinuum] Extracting interactions: https://www.quantinuum.com/company/careers (5/19), chunk 1/10
+[18:13:57 +44m 9s | quantinuum] Extracting interactions: https://www.quantinuum.com/company/careers (5/19), chunk 2/10
+[18:13:59 +44m 11s | quantinuum] Extracting interactions: https://www.quantinuum.com/company/careers (5/19), chunk 3/10
+[18:14:02 +44m 14s | quantinuum] Extracting interactions: https://www.quantinuum.com/company/careers (5/19), chunk 4/10
+[18:14:04 +44m 15s | quantinuum] Extracting interactions: https://www.quantinuum.com/company/careers (5/19), chunk 5/10
+[18:14:07 +44m 19s | quantinuum] Extracting interactions: https://www.quantinuum.com/company/careers (5/19), chunk 6/10
+[18:14:10 +44m 22s | quantinuum] Extracting interactions: https://www.quantinuum.com/company/careers (5/19), chunk 7/10
+[18:14:14 +44m 26s | quantinuum] Extracting interactions: https://www.quantinuum.com/company/careers (5/19), chunk 8/10
+[18:14:22 +44m 34s | quantinuum] Extracting interactions: https://www.quantinuum.com/company/careers (5/19), chunk 9/10
+[18:14:26 +44m 38s | quantinuum] Extracting interactions: https://www.quantinuum.com/products-solutions/quantum-origin (6/19), chunk 1/16
+[18:14:27 +44m 39s | quantinuum] Extracting interactions: https://www.quantinuum.com/products-solutions/quantum-origin (6/19), chunk 2/16
+[18:14:29 +44m 41s | quantinuum] Extracting interactions: https://www.quantinuum.com/products-solutions/quantum-origin (6/19), chunk 3/16
+[18:14:32 +44m 44s | quantinuum] Extracting interactions: https://www.quantinuum.com/products-solutions/quantum-origin (6/19), chunk 4/16
+[18:14:33 +44m 45s | quantinuum] Extracting interactions: https://www.quantinuum.com/products-solutions/quantum-origin (6/19), chunk 5/16
+[18:14:37 +44m 49s | quantinuum] Extracting interactions: https://www.quantinuum.com/products-solutions/quantum-origin (6/19), chunk 6/16
+[18:14:41 +44m 53s | quantinuum] Extracting interactions: https://www.quantinuum.com/products-solutions/quantum-origin (6/19), chunk 9/16
+[18:14:51 +45m 3s | quantinuum] Extracting interactions: https://www.quantinuum.com/products-solutions/quantum-origin (6/19), chunk 10/16
+[18:15:05 +45m 17s | quantinuum] Extracting interactions: https://www.quantinuum.com/products-solutions/quantum-origin (6/19), chunk 11/16
+[18:15:13 +45m 25s | quantinuum] Extracting interactions: https://www.quantinuum.com/products-solutions/quantum-origin (6/19), chunk 12/16
+[18:15:16 +45m 28s | quantinuum] Extracting interactions: https://www.quantinuum.com/products-solutions/quantum-origin (6/19), chunk 14/16
+[18:15:23 +45m 35s | quantinuum] Extracting interactions: https://www.quantinuum.com/products-solutions/quantum-origin (6/19), chunk 15/16
+[18:15:25 +45m 37s | quantinuum] Extracting interactions: https://www.quantinuum.com/products-solutions/quantinuum-systems/system-model-h1 (7/19), chunk 1/13
+[18:15:27 +45m 38s | quantinuum] Extracting interactions: https://www.quantinuum.com/products-solutions/quantinuum-systems/system-model-h1 (7/19), chunk 2/13
+[18:15:31 +45m 43s | quantinuum] Extracting interactions: https://www.quantinuum.com/products-solutions/quantinuum-systems/system-model-h1 (7/19), chunk 3/13
+[18:15:34 +45m 46s | quantinuum] Extracting interactions: https://www.quantinuum.com/products-solutions/quantinuum-systems/system-model-h1 (7/19), chunk 4/13
+[18:15:38 +45m 50s | quantinuum] Extracting interactions: https://www.quantinuum.com/products-solutions/quantinuum-systems/system-model-h1 (7/19), chunk 5/13
+[18:15:42 +45m 54s | quantinuum] Extracting interactions: https://www.quantinuum.com/products-solutions/quantinuum-systems/system-model-h1 (7/19), chunk 6/13
+[18:15:47 +45m 59s | quantinuum] Extracting interactions: https://www.quantinuum.com/products-solutions/quantinuum-systems/system-model-h1 (7/19), chunk 7/13
+[18:15:51 +46m 3s | quantinuum] Extracting interactions: https://www.quantinuum.com/products-solutions/quantinuum-systems/system-model-h1 (7/19), chunk 8/13
+[18:16:06 +46m 18s | quantinuum] Extracting interactions: https://www.quantinuum.com/products-solutions/quantinuum-systems/system-model-h1 (7/19), chunk 9/13
+[18:16:20 +46m 32s | quantinuum] Extracting interactions: https://www.quantinuum.com/products-solutions/quantinuum-systems/system-model-h1 (7/19), chunk 10/13
+[18:16:26 +46m 38s | quantinuum] Extracting interactions: https://www.quantinuum.com/products-solutions/quantinuum-systems/system-model-h1 (7/19), chunk 11/13
+[18:16:36 +46m 48s | quantinuum] Extracting interactions: https://www.quantinuum.com/products-solutions/quantinuum-systems/system-model-h1 (7/19), chunk 12/13
+[18:16:40 +46m 52s | quantinuum] Extracting interactions: https://www.quantinuum.com/products-solutions/quantinuum-systems/system-model-h1 (7/19), chunk 13/13
+[18:16:45 +46m 57s | quantinuum] Extracting interactions: https://www.quantinuum.com/news/news (8/19), chunk 1/13
+[18:16:48 +47m 0s | quantinuum] Extracting interactions: https://www.quantinuum.com/news/news (8/19), chunk 2/13
+[18:16:50 +47m 2s | quantinuum] Extracting interactions: https://www.quantinuum.com/news/news (8/19), chunk 3/13
+[18:16:54 +47m 5s | quantinuum] Extracting interactions: https://www.quantinuum.com/news/news (8/19), chunk 4/13
+[18:16:55 +47m 7s | quantinuum] Extracting interactions: https://www.quantinuum.com/news/news (8/19), chunk 5/13
+[18:16:58 +47m 10s | quantinuum] Extracting interactions: https://www.quantinuum.com/news/news (8/19), chunk 6/13
+[18:17:04 +47m 16s | quantinuum] Extracting interactions: https://www.quantinuum.com/news/news (8/19), chunk 7/13
+[18:17:07 +47m 19s | quantinuum] Extracting interactions: https://www.quantinuum.com/news/news (8/19), chunk 8/13
+[18:17:15 +47m 27s | quantinuum] Extracting interactions: https://www.quantinuum.com/news/news (8/19), chunk 9/13
+[18:17:26 +47m 38s | quantinuum] Extracting interactions: https://www.quantinuum.com/news/news (8/19), chunk 10/13
+[18:17:35 +47m 47s | quantinuum] Extracting interactions: https://www.quantinuum.com/news/news (8/19), chunk 11/13
+[18:17:42 +47m 53s | quantinuum] Extracting interactions: https://www.quantinuum.com/news/news (8/19), chunk 12/13
+[18:17:43 +47m 55s | quantinuum] Extracting interactions: https://www.quantinuum.com (9/19), chunk 1/15
+[18:17:45 +47m 56s | quantinuum] Extracting interactions: https://www.quantinuum.com (9/19), chunk 2/15
+[18:17:46 +47m 58s | quantinuum] Extracting interactions: https://www.quantinuum.com (9/19), chunk 3/15
+[18:17:49 +48m 1s | quantinuum] Extracting interactions: https://www.quantinuum.com (9/19), chunk 4/15
+[18:17:53 +48m 5s | quantinuum] Extracting interactions: https://www.quantinuum.com (9/19), chunk 5/15
+[18:17:57 +48m 9s | quantinuum] Extracting interactions: https://www.quantinuum.com (9/19), chunk 6/15
+[18:18:02 +48m 14s | quantinuum] Extracting interactions: https://www.quantinuum.com (9/19), chunk 7/15
+[18:18:10 +48m 22s | quantinuum] Extracting interactions: https://www.quantinuum.com (9/19), chunk 8/15
+[18:18:22 +48m 34s | quantinuum] Extracting interactions: https://www.quantinuum.com (9/19), chunk 9/15
+[18:18:33 +48m 45s | quantinuum] Extracting interactions: https://www.quantinuum.com (9/19), chunk 10/15
+[18:18:42 +48m 54s | quantinuum] Extracting interactions: https://www.quantinuum.com (9/19), chunk 11/15
+[18:18:53 +49m 5s | quantinuum] Extracting interactions: https://www.quantinuum.com (9/19), chunk 12/15
+[18:19:00 +49m 12s | quantinuum] Extracting interactions: https://www.quantinuum.com (9/19), chunk 13/15
+[18:19:05 +49m 16s | quantinuum] Extracting interactions: https://www.quantinuum.com (9/19), chunk 14/15
+[18:19:06 +49m 18s | quantinuum] Extracting interactions: https://www.quantinuum.com/products-solutions/nexus (10/19), chunk 1/15
+[18:19:13 +49m 25s | quantinuum] Extracting interactions: https://www.quantinuum.com/products-solutions/nexus (10/19), chunk 2/15
+[18:19:14 +49m 26s | quantinuum] Extracting interactions: https://www.quantinuum.com/products-solutions/nexus (10/19), chunk 3/15
+[18:19:18 +49m 30s | quantinuum] Extracting interactions: https://www.quantinuum.com/products-solutions/nexus (10/19), chunk 4/15
+[18:19:21 +49m 33s | quantinuum] Extracting interactions: https://www.quantinuum.com/products-solutions/nexus (10/19), chunk 5/15
+[18:19:26 +49m 38s | quantinuum] Extracting interactions: https://www.quantinuum.com/products-solutions/nexus (10/19), chunk 6/15
+[18:19:29 +49m 41s | quantinuum] Extracting interactions: https://www.quantinuum.com/products-solutions/nexus (10/19), chunk 8/15
+[18:19:34 +49m 46s | quantinuum] Extracting interactions: https://www.quantinuum.com/products-solutions/nexus (10/19), chunk 9/15
+[18:19:46 +49m 57s | quantinuum] Extracting interactions: https://www.quantinuum.com/products-solutions/nexus (10/19), chunk 10/15
+[18:19:55 +50m 7s | quantinuum] Extracting interactions: https://www.quantinuum.com/products-solutions/nexus (10/19), chunk 11/15
+[18:20:03 +50m 15s | quantinuum] Extracting interactions: https://www.quantinuum.com/products-solutions/nexus (10/19), chunk 12/15
+[18:20:07 +50m 19s | quantinuum] Extracting interactions: https://www.quantinuum.com/products-solutions/nexus (10/19), chunk 13/15
+[18:20:14 +50m 26s | quantinuum] Extracting interactions: https://www.quantinuum.com/products-solutions/nexus (10/19), chunk 14/15
+[18:20:19 +50m 31s | quantinuum] Extracting interactions: https://www.quantinuum.com/products-solutions/nexus (10/19), chunk 15/15
+[18:20:23 +50m 35s | quantinuum] Extracting interactions: https://www.quantinuum.com/products-solutions/quantinuum-systems (11/19), chunk 1/17
+[18:20:25 +50m 37s | quantinuum] Extracting interactions: https://www.quantinuum.com/products-solutions/quantinuum-systems (11/19), chunk 2/17
+[18:20:27 +50m 39s | quantinuum] Extracting interactions: https://www.quantinuum.com/products-solutions/quantinuum-systems (11/19), chunk 3/17
+[18:20:30 +50m 42s | quantinuum] Extracting interactions: https://www.quantinuum.com/products-solutions/quantinuum-systems (11/19), chunk 4/17
+[18:20:34 +50m 46s | quantinuum] Extracting interactions: https://www.quantinuum.com/products-solutions/quantinuum-systems (11/19), chunk 5/17
+[18:20:38 +50m 50s | quantinuum] Extracting interactions: https://www.quantinuum.com/products-solutions/quantinuum-systems (11/19), chunk 6/17
+[18:20:43 +50m 55s | quantinuum] Extracting interactions: https://www.quantinuum.com/products-solutions/quantinuum-systems (11/19), chunk 7/17
+[18:20:47 +50m 59s | quantinuum] Extracting interactions: https://www.quantinuum.com/products-solutions/quantinuum-systems (11/19), chunk 8/17
+[18:21:01 +51m 13s | quantinuum] Extracting interactions: https://www.quantinuum.com/products-solutions/quantinuum-systems (11/19), chunk 11/17
+[18:21:09 +51m 21s | quantinuum] Extracting interactions: https://www.quantinuum.com/products-solutions/quantinuum-systems (11/19), chunk 13/17
+[18:21:19 +51m 31s | quantinuum] Extracting interactions: https://www.quantinuum.com/products-solutions/quantinuum-systems (11/19), chunk 14/17
+[18:21:28 +51m 40s | quantinuum] Extracting interactions: https://www.quantinuum.com/products-solutions/quantinuum-systems (11/19), chunk 15/17
+[18:21:29 +51m 41s | quantinuum] Extracting interactions: https://www.quantinuum.com/products-solutions/quantinuum-systems (11/19), chunk 16/17
+[18:21:31 +51m 43s | quantinuum] Extracting interactions: https://www.quantinuum.com/news/blog (12/19), chunk 1/34
+[18:21:33 +51m 44s | quantinuum] Extracting interactions: https://www.quantinuum.com/news/blog (12/19), chunk 2/34
+[18:21:34 +51m 46s | quantinuum] Extracting interactions: https://www.quantinuum.com/news/blog (12/19), chunk 3/34
+[18:21:39 +51m 51s | quantinuum] Extracting interactions: https://www.quantinuum.com/news/blog (12/19), chunk 4/34
+[18:21:41 +51m 53s | quantinuum] Extracting interactions: https://www.quantinuum.com/news/blog (12/19), chunk 5/34
+[18:21:47 +51m 59s | quantinuum] Extracting interactions: https://www.quantinuum.com/news/blog (12/19), chunk 6/34
+[18:21:51 +52m 3s | quantinuum] Extracting interactions: https://www.quantinuum.com/news/blog (12/19), chunk 8/34
+[18:21:58 +52m 10s | quantinuum] Extracting interactions: https://www.quantinuum.com/news/blog (12/19), chunk 9/34
+[18:22:07 +52m 19s | quantinuum] Extracting interactions: https://www.quantinuum.com/news/blog (12/19), chunk 10/34
+[18:22:14 +52m 26s | quantinuum] Extracting interactions: https://www.quantinuum.com/news/blog (12/19), chunk 12/34
+[18:22:23 +52m 35s | quantinuum] Extracting interactions: https://www.quantinuum.com/news/blog (12/19), chunk 13/34
+[18:22:41 +52m 53s | quantinuum] Extracting interactions: https://www.quantinuum.com/news/blog (12/19), chunk 14/34
+[18:22:56 +53m 8s | quantinuum] Extracting interactions: https://www.quantinuum.com/news/blog (12/19), chunk 15/34
+[18:23:09 +53m 21s | quantinuum] Extracting interactions: https://www.quantinuum.com/news/blog (12/19), chunk 16/34
+[18:23:24 +53m 35s | quantinuum] Extracting interactions: https://www.quantinuum.com/news/blog (12/19), chunk 17/34
+[18:23:42 +53m 54s | quantinuum] Extracting interactions: https://www.quantinuum.com/news/blog (12/19), chunk 18/34
+[18:23:58 +54m 10s | quantinuum] Extracting interactions: https://www.quantinuum.com/news/blog (12/19), chunk 19/34
+[18:24:04 +54m 16s | quantinuum] Extracting interactions: https://www.quantinuum.com/news/blog (12/19), chunk 20/34
+[18:24:13 +54m 25s | quantinuum] Extracting interactions: https://www.quantinuum.com/news/blog (12/19), chunk 21/34
+[18:24:34 +54m 46s | quantinuum] Extracting interactions: https://www.quantinuum.com/news/blog (12/19), chunk 22/34
+[18:24:38 +54m 50s | quantinuum] Extracting interactions: https://www.quantinuum.com/news/blog (12/19), chunk 23/34
+[18:24:50 +55m 2s | quantinuum] Extracting interactions: https://www.quantinuum.com/news/blog (12/19), chunk 24/34
+[18:25:01 +55m 13s | quantinuum] Extracting interactions: https://www.quantinuum.com/news/blog (12/19), chunk 26/34
+[18:25:22 +55m 34s | quantinuum] Extracting interactions: https://www.quantinuum.com/news/blog (12/19), chunk 27/34
+[18:25:34 +55m 45s | quantinuum] Extracting interactions: https://www.quantinuum.com/news/blog (12/19), chunk 28/34
+[18:25:57 +56m 9s | quantinuum] Extracting interactions: https://www.quantinuum.com/news/blog (12/19), chunk 29/34
+[18:25:58 +56m 10s | quantinuum] Extracting interactions: https://www.quantinuum.com/news/blog (12/19), chunk 30/34
+[18:26:11 +56m 23s | quantinuum] Extracting interactions: https://www.quantinuum.com/news/blog (12/19), chunk 31/34
+[18:26:29 +56m 41s | quantinuum] Extracting interactions: https://www.quantinuum.com/news/blog (12/19), chunk 32/34
+[18:26:38 +56m 50s | quantinuum] Extracting interactions: https://www.quantinuum.com/news/blog (12/19), chunk 33/34
+[18:26:41 +56m 53s | quantinuum] Extracting interactions: https://www.quantinuum.com/products-solutions/quantinuum-systems/helios (13/19), chunk 1/19
+[18:26:46 +56m 58s | quantinuum] Extracting interactions: https://www.quantinuum.com/products-solutions/quantinuum-systems/helios (13/19), chunk 2/19
+[18:26:50 +57m 2s | quantinuum] Extracting interactions: https://www.quantinuum.com/products-solutions/quantinuum-systems/helios (13/19), chunk 3/19
+[18:26:54 +57m 5s | quantinuum] Extracting interactions: https://www.quantinuum.com/products-solutions/quantinuum-systems/helios (13/19), chunk 4/19
+[18:26:58 +57m 10s | quantinuum] Extracting interactions: https://www.quantinuum.com/products-solutions/quantinuum-systems/helios (13/19), chunk 6/19
+[18:27:04 +57m 16s | quantinuum] Extracting interactions: https://www.quantinuum.com/products-solutions/quantinuum-systems/helios (13/19), chunk 7/19
+[18:27:12 +57m 24s | quantinuum] Extracting interactions: https://www.quantinuum.com/products-solutions/quantinuum-systems/helios (13/19), chunk 8/19
+[18:27:23 +57m 35s | quantinuum] Extracting interactions: https://www.quantinuum.com/products-solutions/quantinuum-systems/helios (13/19), chunk 9/19
+[18:27:27 +57m 39s | quantinuum] Extracting interactions: https://www.quantinuum.com/products-solutions/quantinuum-systems/helios (13/19), chunk 10/19
+[18:27:33 +57m 44s | quantinuum] Extracting interactions: https://www.quantinuum.com/products-solutions/quantinuum-systems/helios (13/19), chunk 12/19
+[18:27:41 +57m 53s | quantinuum] Extracting interactions: https://www.quantinuum.com/products-solutions/quantinuum-systems/helios (13/19), chunk 13/19
+[18:27:43 +57m 55s | quantinuum] Extracting interactions: https://www.quantinuum.com/products-solutions/quantinuum-systems/helios (13/19), chunk 15/19
+[18:27:53 +58m 5s | quantinuum] Extracting interactions: https://www.quantinuum.com/products-solutions/quantinuum-systems/helios (13/19), chunk 16/19
+[18:27:56 +58m 8s | quantinuum] Extracting interactions: https://www.quantinuum.com/products-solutions/quantinuum-systems/helios (13/19), chunk 17/19
+[18:28:01 +58m 13s | quantinuum] Extracting interactions: https://www.quantinuum.com/products-solutions/quantinuum-systems/helios (13/19), chunk 18/19
+[18:28:03 +58m 15s | quantinuum] Extracting interactions: https://www.quantinuum.com/blog/technical-perspective-by-the-end-of-the-decade-we-will-deliver-universal-fault-tolerant-quantum-computing (14/19), chunk 1/32
+[18:28:11 +58m 23s | quantinuum] Extracting interactions: https://www.quantinuum.com/blog/technical-perspective-by-the-end-of-the-decade-we-will-deliver-universal-fault-tolerant-quantum-computing (14/19), chunk 2/32
+[18:28:16 +58m 28s | quantinuum] Extracting interactions: https://www.quantinuum.com/blog/technical-perspective-by-the-end-of-the-decade-we-will-deliver-universal-fault-tolerant-quantum-computing (14/19), chunk 3/32
+[18:28:23 +58m 35s | quantinuum] Extracting interactions: https://www.quantinuum.com/blog/technical-perspective-by-the-end-of-the-decade-we-will-deliver-universal-fault-tolerant-quantum-computing (14/19), chunk 4/32
+[18:28:25 +58m 37s | quantinuum] Extracting interactions: https://www.quantinuum.com/blog/technical-perspective-by-the-end-of-the-decade-we-will-deliver-universal-fault-tolerant-quantum-computing (14/19), chunk 5/32
+[18:28:30 +58m 42s | quantinuum] Extracting interactions: https://www.quantinuum.com/blog/technical-perspective-by-the-end-of-the-decade-we-will-deliver-universal-fault-tolerant-quantum-computing (14/19), chunk 6/32
+[18:28:34 +58m 46s | quantinuum] Extracting interactions: https://www.quantinuum.com/blog/technical-perspective-by-the-end-of-the-decade-we-will-deliver-universal-fault-tolerant-quantum-computing (14/19), chunk 7/32
+[18:28:44 +58m 56s | quantinuum] Extracting interactions: https://www.quantinuum.com/blog/technical-perspective-by-the-end-of-the-decade-we-will-deliver-universal-fault-tolerant-quantum-computing (14/19), chunk 8/32
+[18:28:48 +59m 0s | quantinuum] Extracting interactions: https://www.quantinuum.com/blog/technical-perspective-by-the-end-of-the-decade-we-will-deliver-universal-fault-tolerant-quantum-computing (14/19), chunk 16/32
+[18:28:52 +59m 4s | quantinuum] Extracting interactions: https://www.quantinuum.com/blog/technical-perspective-by-the-end-of-the-decade-we-will-deliver-universal-fault-tolerant-quantum-computing (14/19), chunk 18/32
+[18:29:03 +59m 15s | quantinuum] Extracting interactions: https://www.quantinuum.com/blog/technical-perspective-by-the-end-of-the-decade-we-will-deliver-universal-fault-tolerant-quantum-computing (14/19), chunk 19/32
+[18:29:14 +59m 26s | quantinuum] Extracting interactions: https://www.quantinuum.com/blog/technical-perspective-by-the-end-of-the-decade-we-will-deliver-universal-fault-tolerant-quantum-computing (14/19), chunk 20/32
+[18:29:21 +59m 33s | quantinuum] Extracting interactions: https://www.quantinuum.com/blog/technical-perspective-by-the-end-of-the-decade-we-will-deliver-universal-fault-tolerant-quantum-computing (14/19), chunk 22/32
+[18:29:31 +59m 43s | quantinuum] Extracting interactions: https://www.quantinuum.com/blog/technical-perspective-by-the-end-of-the-decade-we-will-deliver-universal-fault-tolerant-quantum-computing (14/19), chunk 23/32
+[18:29:59 +1h 0m 10s | quantinuum] Extracting interactions: https://www.quantinuum.com/blog/technical-perspective-by-the-end-of-the-decade-we-will-deliver-universal-fault-tolerant-quantum-computing (14/19), chunk 24/32
+[18:30:29 +1h 0m 41s | quantinuum] Extracting interactions: https://www.quantinuum.com/blog/technical-perspective-by-the-end-of-the-decade-we-will-deliver-universal-fault-tolerant-quantum-computing (14/19), chunk 25/32
+[18:30:42 +1h 0m 54s | quantinuum] Extracting interactions: https://www.quantinuum.com/blog/technical-perspective-by-the-end-of-the-decade-we-will-deliver-universal-fault-tolerant-quantum-computing (14/19), chunk 26/32
+[18:30:57 +1h 1m 9s | quantinuum] Extracting interactions: https://www.quantinuum.com/blog/technical-perspective-by-the-end-of-the-decade-we-will-deliver-universal-fault-tolerant-quantum-computing (14/19), chunk 27/32
+[18:31:26 +1h 1m 38s | quantinuum] Extracting interactions: https://www.quantinuum.com/blog/technical-perspective-by-the-end-of-the-decade-we-will-deliver-universal-fault-tolerant-quantum-computing (14/19), chunk 28/32
+[18:31:48 +1h 2m 0s | quantinuum] Extracting interactions: https://www.quantinuum.com/blog/technical-perspective-by-the-end-of-the-decade-we-will-deliver-universal-fault-tolerant-quantum-computing (14/19), chunk 29/32
+[18:31:55 +1h 2m 7s | quantinuum] Extracting interactions: https://www.quantinuum.com/blog/technical-perspective-by-the-end-of-the-decade-we-will-deliver-universal-fault-tolerant-quantum-computing (14/19), chunk 30/32
+[18:32:12 +1h 2m 24s | quantinuum] Extracting interactions: https://www.quantinuum.com/blog/technical-perspective-by-the-end-of-the-decade-we-will-deliver-universal-fault-tolerant-quantum-computing (14/19), chunk 31/32
+[18:32:15 +1h 2m 27s | quantinuum] Extracting interactions: https://www.quantinuum.com/products-solutions/inquanto (15/19), chunk 1/16
+[18:32:21 +1h 2m 33s | quantinuum] Extracting interactions: https://www.quantinuum.com/products-solutions/inquanto (15/19), chunk 2/16
+[18:32:23 +1h 2m 35s | quantinuum] Extracting interactions: https://www.quantinuum.com/products-solutions/inquanto (15/19), chunk 3/16
+[18:32:26 +1h 2m 38s | quantinuum] Extracting interactions: https://www.quantinuum.com/products-solutions/inquanto (15/19), chunk 4/16
+[18:32:28 +1h 2m 40s | quantinuum] Extracting interactions: https://www.quantinuum.com/products-solutions/inquanto (15/19), chunk 5/16
+[18:32:33 +1h 2m 45s | quantinuum] Extracting interactions: https://www.quantinuum.com/products-solutions/inquanto (15/19), chunk 6/16
+[18:32:37 +1h 2m 49s | quantinuum] Extracting interactions: https://www.quantinuum.com/products-solutions/inquanto (15/19), chunk 11/16
+[18:32:40 +1h 2m 52s | quantinuum] Extracting interactions: https://www.quantinuum.com/products-solutions/inquanto (15/19), chunk 12/16
+[18:32:44 +1h 2m 56s | quantinuum] Extracting interactions: https://www.quantinuum.com/products-solutions/inquanto (15/19), chunk 13/16
+[18:32:48 +1h 3m 0s | quantinuum] Extracting interactions: https://www.quantinuum.com/products-solutions/inquanto (15/19), chunk 14/16
+[18:32:50 +1h 3m 2s | quantinuum] Extracting interactions: https://www.quantinuum.com/products-solutions/inquanto (15/19), chunk 15/16
+[18:32:53 +1h 3m 5s | quantinuum] Extracting interactions: https://www.quantinuum.com/research/research-areas (16/19), chunk 1/18
+[18:32:57 +1h 3m 9s | quantinuum] Extracting interactions: https://www.quantinuum.com/research/research-areas (16/19), chunk 2/18
+[18:32:59 +1h 3m 11s | quantinuum] Extracting interactions: https://www.quantinuum.com/research/research-areas (16/19), chunk 3/18
+[18:33:02 +1h 3m 14s | quantinuum] Extracting interactions: https://www.quantinuum.com/research/research-areas (16/19), chunk 4/18
+[18:33:07 +1h 3m 19s | quantinuum] Extracting interactions: https://www.quantinuum.com/research/research-areas (16/19), chunk 5/18
+[18:33:11 +1h 3m 23s | quantinuum] Extracting interactions: https://www.quantinuum.com/research/research-areas (16/19), chunk 6/18
+[18:33:19 +1h 3m 31s | quantinuum] Extracting interactions: https://www.quantinuum.com/research/research-areas (16/19), chunk 8/18
+[18:33:25 +1h 3m 37s | quantinuum] Extracting interactions: https://www.quantinuum.com/research/research-areas (16/19), chunk 9/18
+[18:33:33 +1h 3m 45s | quantinuum] Extracting interactions: https://www.quantinuum.com/research/research-areas (16/19), chunk 10/18
+[18:33:47 +1h 3m 59s | quantinuum] Extracting interactions: https://www.quantinuum.com/research/research-areas (16/19), chunk 11/18
+[18:34:18 +1h 4m 30s | quantinuum] Extracting interactions: https://www.quantinuum.com/research/research-areas (16/19), chunk 12/18
+[18:34:53 +1h 5m 5s | quantinuum] Extracting interactions: https://www.quantinuum.com/research/research-areas (16/19), chunk 13/18
+[18:35:21 +1h 5m 33s | quantinuum] Extracting interactions: https://www.quantinuum.com/research/research-areas (16/19), chunk 14/18
+[18:35:55 +1h 6m 7s | quantinuum] Extracting interactions: https://www.quantinuum.com/research/research-areas (16/19), chunk 15/18
+[18:36:31 +1h 6m 43s | quantinuum] Extracting interactions: https://www.quantinuum.com/research/research-areas (16/19), chunk 16/18
+[18:37:08 +1h 7m 20s | quantinuum] Extracting interactions: https://www.quantinuum.com/research/research-areas (16/19), chunk 17/18
+[18:37:21 +1h 7m 33s | quantinuum] Extracting interactions: https://www.quantinuum.com/company/about (17/19), chunk 1/41
+[18:37:22 +1h 7m 34s | quantinuum] Extracting interactions: https://www.quantinuum.com/company/about (17/19), chunk 2/41
+[18:37:24 +1h 7m 36s | quantinuum] Extracting interactions: https://www.quantinuum.com/company/about (17/19), chunk 3/41
+[18:37:27 +1h 7m 39s | quantinuum] Extracting interactions: https://www.quantinuum.com/company/about (17/19), chunk 4/41
+[18:37:31 +1h 7m 43s | quantinuum] Extracting interactions: https://www.quantinuum.com/company/about (17/19), chunk 5/41
+[18:37:36 +1h 7m 48s | quantinuum] Extracting interactions: https://www.quantinuum.com/company/about (17/19), chunk 6/41
+[18:37:40 +1h 7m 52s | quantinuum] Extracting interactions: https://www.quantinuum.com/company/about (17/19), chunk 7/41
+[18:37:44 +1h 7m 56s | quantinuum] Extracting interactions: https://www.quantinuum.com/company/about (17/19), chunk 8/41
+[18:37:55 +1h 8m 7s | quantinuum] Extracting interactions: https://www.quantinuum.com/company/about (17/19), chunk 9/41
+[18:38:06 +1h 8m 18s | quantinuum] Extracting interactions: https://www.quantinuum.com/company/about (17/19), chunk 10/41
+[18:38:26 +1h 8m 37s | quantinuum] Extracting interactions: https://www.quantinuum.com/company/about (17/19), chunk 11/41
+[18:38:57 +1h 9m 9s | quantinuum] Extracting interactions: https://www.quantinuum.com/company/about (17/19), chunk 12/41
+[18:39:16 +1h 9m 28s | quantinuum] Extracting interactions: https://www.quantinuum.com/company/about (17/19), chunk 13/41
+[18:39:29 +1h 9m 41s | quantinuum] Extracting interactions: https://www.quantinuum.com/company/about (17/19), chunk 14/41
+[18:39:39 +1h 9m 51s | quantinuum] Extracting interactions: https://www.quantinuum.com/company/about (17/19), chunk 15/41
+[18:39:51 +1h 10m 3s | quantinuum] Extracting interactions: https://www.quantinuum.com/company/about (17/19), chunk 16/41
+[18:40:01 +1h 10m 13s | quantinuum] Extracting interactions: https://www.quantinuum.com/company/about (17/19), chunk 17/41
+[18:40:20 +1h 10m 32s | quantinuum] Extracting interactions: https://www.quantinuum.com/company/about (17/19), chunk 18/41
+[18:40:26 +1h 10m 38s | quantinuum] Extracting interactions: https://www.quantinuum.com/company/about (17/19), chunk 19/41
+[18:40:39 +1h 10m 51s | quantinuum] Extracting interactions: https://www.quantinuum.com/company/about (17/19), chunk 20/41
+[18:40:51 +1h 11m 3s | quantinuum] Extracting interactions: https://www.quantinuum.com/company/about (17/19), chunk 21/41
+[18:41:01 +1h 11m 13s | quantinuum] Extracting interactions: https://www.quantinuum.com/company/about (17/19), chunk 22/41
+[18:41:13 +1h 11m 24s | quantinuum] Extracting interactions: https://www.quantinuum.com/company/about (17/19), chunk 23/41
+[18:41:33 +1h 11m 45s | quantinuum] Extracting interactions: https://www.quantinuum.com/company/about (17/19), chunk 24/41
+[18:41:49 +1h 12m 1s | quantinuum] Extracting interactions: https://www.quantinuum.com/company/about (17/19), chunk 25/41
+[18:42:07 +1h 12m 19s | quantinuum] Extracting interactions: https://www.quantinuum.com/company/about (17/19), chunk 26/41
+[18:42:25 +1h 12m 37s | quantinuum] Extracting interactions: https://www.quantinuum.com/company/about (17/19), chunk 27/41
+[18:42:32 +1h 12m 44s | quantinuum] Extracting interactions: https://www.quantinuum.com/company/about (17/19), chunk 28/41
+[18:42:40 +1h 12m 52s | quantinuum] Extracting interactions: https://www.quantinuum.com/company/about (17/19), chunk 29/41
+[18:42:51 +1h 13m 3s | quantinuum] Extracting interactions: https://www.quantinuum.com/company/about (17/19), chunk 30/41
+[18:43:04 +1h 13m 15s | quantinuum] Extracting interactions: https://www.quantinuum.com/company/about (17/19), chunk 31/41
+[18:43:11 +1h 13m 23s | quantinuum] Extracting interactions: https://www.quantinuum.com/company/about (17/19), chunk 32/41
+[18:43:21 +1h 13m 33s | quantinuum] Extracting interactions: https://www.quantinuum.com/company/about (17/19), chunk 33/41
+[18:43:36 +1h 13m 48s | quantinuum] Extracting interactions: https://www.quantinuum.com/company/about (17/19), chunk 34/41
+[18:43:58 +1h 14m 10s | quantinuum] Extracting interactions: https://www.quantinuum.com/company/about (17/19), chunk 35/41
+[18:44:17 +1h 14m 29s | quantinuum] Extracting interactions: https://www.quantinuum.com/company/about (17/19), chunk 36/41
+[18:44:21 +1h 14m 33s | quantinuum] Extracting interactions: https://www.quantinuum.com/company/about (17/19), chunk 39/41
+[18:44:23 +1h 14m 35s | quantinuum] Extracting interactions: https://www.quantinuum.com/company/about (17/19), chunk 40/41
+[18:44:25 +1h 14m 37s | quantinuum] Extracting interactions: https://www.quantinuum.com/products-solutions/developer-tools (18/19), chunk 1/12
+[18:44:26 +1h 14m 38s | quantinuum] Extracting interactions: https://www.quantinuum.com/products-solutions/developer-tools (18/19), chunk 2/12
+[18:44:28 +1h 14m 40s | quantinuum] Extracting interactions: https://www.quantinuum.com/products-solutions/developer-tools (18/19), chunk 3/12
+[18:44:31 +1h 14m 43s | quantinuum] Extracting interactions: https://www.quantinuum.com/products-solutions/developer-tools (18/19), chunk 4/12
+[18:44:34 +1h 14m 46s | quantinuum] Extracting interactions: https://www.quantinuum.com/products-solutions/developer-tools (18/19), chunk 5/12
+[18:44:39 +1h 14m 50s | quantinuum] Extracting interactions: https://www.quantinuum.com/products-solutions/developer-tools (18/19), chunk 6/12
+[18:44:42 +1h 14m 54s | quantinuum] Extracting interactions: https://www.quantinuum.com/products-solutions/developer-tools (18/19), chunk 10/12
+[18:44:49 +1h 15m 1s | quantinuum] Extracting interactions: https://www.quantinuum.com/products-solutions/developer-tools (18/19), chunk 11/12
+[18:44:51 +1h 15m 3s | quantinuum] Extracting interactions: https://www.quantinuum.com/products-solutions/quantinuum-systems/system-model-h2 (19/19), chunk 1/14
+[18:44:53 +1h 15m 4s | quantinuum] Extracting interactions: https://www.quantinuum.com/products-solutions/quantinuum-systems/system-model-h2 (19/19), chunk 2/14
+[18:44:54 +1h 15m 6s | quantinuum] Extracting interactions: https://www.quantinuum.com/products-solutions/quantinuum-systems/system-model-h2 (19/19), chunk 3/14
+[18:44:59 +1h 15m 11s | quantinuum] Extracting interactions: https://www.quantinuum.com/products-solutions/quantinuum-systems/system-model-h2 (19/19), chunk 4/14
+[18:45:03 +1h 15m 15s | quantinuum] Extracting interactions: https://www.quantinuum.com/products-solutions/quantinuum-systems/system-model-h2 (19/19), chunk 5/14
+[18:45:08 +1h 15m 20s | quantinuum] Extracting interactions: https://www.quantinuum.com/products-solutions/quantinuum-systems/system-model-h2 (19/19), chunk 6/14
+[18:45:11 +1h 15m 23s | quantinuum] Extracting interactions: https://www.quantinuum.com/products-solutions/quantinuum-systems/system-model-h2 (19/19), chunk 8/14
+[18:45:15 +1h 15m 27s | quantinuum] Extracting interactions: https://www.quantinuum.com/products-solutions/quantinuum-systems/system-model-h2 (19/19), chunk 9/14
+[18:45:19 +1h 15m 31s | quantinuum] Extracting interactions: https://www.quantinuum.com/products-solutions/quantinuum-systems/system-model-h2 (19/19), chunk 10/14
+[18:45:24 +1h 15m 36s | quantinuum] Extracting interactions: https://www.quantinuum.com/products-solutions/quantinuum-systems/system-model-h2 (19/19), chunk 11/14
+[18:45:30 +1h 15m 42s | quantinuum] Extracting interactions: https://www.quantinuum.com/products-solutions/quantinuum-systems/system-model-h2 (19/19), chunk 12/14
+[18:45:42 +1h 15m 54s | quantinuum] Extracting interactions: https://www.quantinuum.com/products-solutions/quantinuum-systems/system-model-h2 (19/19), chunk 13/14
+[18:45:44 +1h 15m 56s | quantinuum] Saved 3_interaction_results.json with 421 extracted interactions.
+
+[18:45:45 +1h 15m 57s | quantinuum] === 4 clean interactions ===
+[18:45:45 +1h 15m 57s | quantinuum] Saved 4_edges.json with 72 cleaned interactions.
+
+[18:45:45 +1h 15m 57s | quantinuum] === 5 helix enrichment ===
+[18:45:45 +1h 15m 57s | quantinuum] Wrote 5_nodes.json (118 actors)
+[18:45:45 +1h 15m 57s | quantinuum] Wrote 5_edges.json (72 interactions)
+[18:45:45 +1h 15m 57s | quantinuum] Actor helix counts: {'Academia': 24, 'Civil Society': 3, 'Government': 6, 'Industry': 40, 'Intermediary': 2, 'Unknown': 43}
+[18:45:45 +1h 15m 57s | quantinuum] Functional-space counts: {'Consensus': 4, 'Innovation': 24, 'Intra-helix / Not classified': 34, 'Knowledge': 7, 'Unknown': 3}
+
+[18:45:45 +1h 15m 57s | quantinuum] === 6 network visualisation ===
+[18:45:46 +1h 15m 58s | quantinuum] Wrote quantum_network.html
+[18:45:46 +1h 15m 58s | quantinuum] Nodes: 118
+[18:45:46 +1h 15m 58s | quantinuum] Edges: 26
+
+[18:45:46 +1h 15m 58s | quantinuum] Done. Outputs written to: /home/lv/IDP/idpdeeptech/pipeline/site_outputs/quantinuum
+[18:45:46 +1h 15m 58s | quantinuum] Log: /home/lv/IDP/idpdeeptech/pipeline/site_outputs/quantinuum/run.log
+
+========================================================================
+RUN FINISHED 2026-06-17 18:45:46  (OK)
+Started:     2026-06-17 17:29:48
+Elapsed:     1h 15m 58s
+========================================================================

@@ -1,0 +1,422 @@
+[
+  {
+    "interaction_phrase": "collaboration with the renowned quantum hardware company, QuEra",
+    "occurrence_sentence": "Particularly noteworthy is BlueQubit's collaboration with the renowned quantum hardware company, QuEra.",
+    "page": 4,
+    "source_actor": "BlueQubit Inc",
+    "source_document": "https://www.bluequbit.io/blog/bluequbit-darpa",
+    "target_actor": "QuEra",
+    "relation_label": "networking",
+    "relation_label_confidence": "high"
+  },
+  {
+    "source_actor": "BlueQubit Inc",
+    "target_actor": "QuEra",
+    "interaction_phrase": "collaboration with the renowned quantum hardware company, QuEra",
+    "occurrence_sentence": "Particularly noteworthy is BlueQubit's collaboration with the renowned quantum hardware company, QuEra.",
+    "source_document": "https://www.bluequbit.io/blog/bluequbit-darpa",
+    "page": 5,
+    "relation_label": "networking",
+    "relation_label_confidence": "high"
+  },
+  {
+    "interaction_phrase": "HSBC and IBM announced",
+    "occurrence_sentence": "In September 2025, HSBC and IBM announced the world's first-known empirical evidence that today's quantum computers can add value in real-world algorithmic bond trading.",
+    "page": 5,
+    "source_actor": "HSBC",
+    "source_document": "https://www.bluequbit.io/blog/quantum-financial-system",
+    "target_actor": "IBM",
+    "relation_label": "collaborative_leadership",
+    "relation_label_confidence": "high"
+  },
+  {
+    "source_actor": "HSBC",
+    "target_actor": "IBM",
+    "interaction_phrase": "HSBC and IBM announced",
+    "occurrence_sentence": "In September 2025, HSBC and IBM announced the world's first-known empirical evidence that today's quantum computers can add value in real-world algorithmic bond trading.",
+    "source_document": "https://www.bluequbit.io/blog/quantum-financial-system",
+    "page": 6,
+    "relation_label": "collaborative_leadership",
+    "relation_label_confidence": "high"
+  },
+  {
+    "interaction_phrase": "HSBC and IBM announced",
+    "occurrence_sentence": "In September 2025, HSBC and IBM announced the first-known empirical evidence of quantum value in algorithmic bond trading, reporting up to a 34% improvement in trade-fill prediction over classical methods.",
+    "page": 16,
+    "source_actor": "HSBC",
+    "source_document": "https://www.bluequbit.io/blog/quantum-financial-system",
+    "target_actor": "IBM",
+    "relation_label": "collaborative_leadership",
+    "relation_label_confidence": "high"
+  },
+  {
+    "interaction_phrase": "announced the first-known empirical evidence of quantum value",
+    "occurrence_sentence": "In September 2025, HSBC and IBM announced the first-known empirical evidence of quantum value in algorithmic bond trading, reporting up to a 34% improvement in trade-fill prediction over classical methods.",
+    "page": 17,
+    "source_actor": "HSBC",
+    "source_document": "https://www.bluequbit.io/blog/quantum-financial-system",
+    "target_actor": "IBM",
+    "relation_label": "collaborative_leadership",
+    "relation_label_confidence": "high"
+  },
+  {
+    "source_actor": "IBM",
+    "target_actor": "Q-CTRL",
+    "interaction_phrase": "with the collaboration of",
+    "occurrence_sentence": "These experiments, conducted on IBM quantum machines with the collaboration of Q-CTRL, underscore the practicality and scalability of our method.",
+    "source_document": "https://www.bluequbit.io/blog/quantum-data-loading",
+    "page": 7,
+    "relation_label": "networking",
+    "relation_label_confidence": "high"
+  },
+  {
+    "source_actor": "IBM",
+    "target_actor": "Q-CTRL",
+    "interaction_phrase": "with the collaboration of",
+    "occurrence_sentence": "These experiments, conducted on IBM quantum machines with the collaboration of Q-CTRL, underscore the practicality and scalability of our method.",
+    "source_document": "https://www.bluequbit.io/blog/quantum-data-loading",
+    "page": 8,
+    "relation_label": "networking",
+    "relation_label_confidence": "high"
+  },
+  {
+    "source_actor": "Xanadu",
+    "target_actor": "University of Toronto",
+    "interaction_phrase": "University of Toronto postdoctoral physics researcher",
+    "occurrence_sentence": "Former University of Toronto postdoctoral physics researcher Christian Weedbrook founded Xanadu Quantum Technologies",
+    "source_document": "https://www.bluequbit.io/quantum-computing-companies",
+    "page": 9,
+    "relation_label": "collaborative_leadership",
+    "relation_label_confidence": "high"
+  },
+  {
+    "source_actor": "Honeywell",
+    "target_actor": "Quantinuum",
+    "interaction_phrase": "Honeywell Quantum Solutions and Cambridge Quantum teamed together to form Quantinuum",
+    "occurrence_sentence": "Honeywell Quantum Solutions and Cambridge Quantum teamed together to form Quantinuum, a quantum computing powerhouse that has quickly established itself as the world's largest integrated quantum computing company.",
+    "source_document": "https://www.bluequbit.io/quantum-computing-companies",
+    "page": 11,
+    "relation_label": "collaborative_leadership",
+    "relation_label_confidence": "high"
+  },
+  {
+    "interaction_phrase": "companies like IBM and Google",
+    "occurrence_sentence": "Several different hardware approaches are being developed to build stable qubits: * **Superconducting qubits** : Used by companies like IBM and Google, these rely on superconducting electrical circuits cooled to extremely low temperatures inside dilution refrigerators.",
+    "page": 4,
+    "source_actor": "IBM",
+    "source_document": "https://www.bluequbit.io/blog/quantum-computing-vs-classical-computing",
+    "target_actor": "Google",
+    "relation_label": "technology_transfer",
+    "relation_label_confidence": "high"
+  },
+  {
+    "interaction_phrase": "companies like IBM and Google",
+    "occurrence_sentence": "Several different hardware approaches are being developed to build stable qubits: * **Superconducting qubits** : Used by companies like IBM and Google, these rely on superconducting electrical circuits cooled to extremely low temperatures inside dilution refrigerators.",
+    "page": 5,
+    "source_actor": "IBM",
+    "source_document": "https://www.bluequbit.io/blog/quantum-computing-vs-classical-computing",
+    "target_actor": "Google",
+    "relation_label": "technology_transfer",
+    "relation_label_confidence": "high"
+  },
+  {
+    "interaction_phrase": "support for multiple QPUs from providers like IBM",
+    "occurrence_sentence": "Features like support for multiple QPUs from providers like IBM and Quantinuum, real-time error correction, and tools for developing and testing quantum algorithms bring the spotlight to BlueQubit.",
+    "page": 16,
+    "source_actor": "BlueQubit",
+    "source_document": "https://www.bluequbit.io/blog/how-does-quantum-computing-work",
+    "target_actor": "IBM",
+    "relation_label": "collaborative_leadership",
+    "relation_label_confidence": "high"
+  },
+  {
+    "interaction_phrase": "support for multiple QPUs from providers like Quantinuum",
+    "occurrence_sentence": "Features like support for multiple QPUs from providers like IBM and Quantinuum, real-time error correction, and tools for developing and testing quantum algorithms bring the spotlight to BlueQubit.",
+    "page": 16,
+    "source_actor": "BlueQubit",
+    "source_document": "https://www.bluequbit.io/blog/how-does-quantum-computing-work",
+    "target_actor": "Quantinuum",
+    "relation_label": "collaborative_leadership",
+    "relation_label_confidence": "high"
+  },
+  {
+    "interaction_phrase": "support for multiple QPUs from providers like IBM",
+    "occurrence_sentence": "Features like support for multiple QPUs from providers like IBM and Quantinuum, real-time error correction, and tools for developing and testing quantum algorithms bring the spotlight to BlueQubit.",
+    "page": 17,
+    "source_actor": "BlueQubit",
+    "source_document": "https://www.bluequbit.io/blog/how-does-quantum-computing-work",
+    "target_actor": "IBM",
+    "relation_label": "collaborative_leadership",
+    "relation_label_confidence": "high"
+  },
+  {
+    "interaction_phrase": "support for multiple QPUs from providers like Quantinuum",
+    "occurrence_sentence": "Features like support for multiple QPUs from providers like IBM and Quantinuum, real-time error correction, and tools for developing and testing quantum algorithms bring the spotlight to BlueQubit.",
+    "page": 17,
+    "source_actor": "BlueQubit",
+    "source_document": "https://www.bluequbit.io/blog/how-does-quantum-computing-work",
+    "target_actor": "Quantinuum",
+    "relation_label": "collaborative_leadership",
+    "relation_label_confidence": "high"
+  },
+  {
+    "source_actor": "Google",
+    "target_actor": "Google Quantum AI",
+    "interaction_phrase": "Google's researchers have launched a new chapter in the quantum computing narrative",
+    "occurrence_sentence": "Google's researchers have launched a new chapter in the quantum computing narrative as we drive towards an age where quantum dominance is within grasp.",
+    "source_document": "https://www.bluequbit.io/google-quantum-computer",
+    "page": 4,
+    "relation_label": "collaborative_leadership",
+    "relation_label_confidence": "high"
+  },
+  {
+    "interaction_phrase": "developed by Google",
+    "occurrence_sentence": "As an open-source framework developed by Google, Cirq facilitates the design, simulation, and execution of quantum algorithms on quantum computers.",
+    "page": 12,
+    "source_actor": "Google",
+    "source_document": "https://www.bluequbit.io/google-quantum-computer",
+    "target_actor": "Cirq",
+    "relation_label": "technology_transfer",
+    "relation_label_confidence": "high"
+  },
+  {
+    "interaction_phrase": "developed by Google",
+    "occurrence_sentence": "As an open-source framework developed by Google, Cirq facilitates the design, simulation, and execution of quantum algorithms on quantum computers.",
+    "page": 13,
+    "source_actor": "Google",
+    "source_document": "https://www.bluequbit.io/google-quantum-computer",
+    "target_actor": "Cirq",
+    "relation_label": "technology_transfer",
+    "relation_label_confidence": "high"
+  },
+  {
+    "interaction_phrase": "Former University of Toronto postdoctoral physics researcher",
+    "occurrence_sentence": "Former University of Toronto postdoctoral physics researcher Christian Weedbrook founded Xanadu Quantum Technologies",
+    "page": 9,
+    "source_actor": "Xanadu",
+    "source_document": "https://www.bluequbit.io/blog/quantum-computing-companies",
+    "target_actor": "University of Toronto",
+    "relation_label": "collaborative_leadership",
+    "relation_label_confidence": "high"
+  },
+  {
+    "source_actor": "Honeywell",
+    "target_actor": "Quantinuum",
+    "interaction_phrase": "Honeywell Quantum Solutions and Cambridge Quantum teamed together to form Quantinuum",
+    "occurrence_sentence": "Honeywell Quantum Solutions and Cambridge Quantum teamed together to form Quantinuum, a quantum computing powerhouse that has quickly established itself as the world's largest integrated quantum computing company.",
+    "source_document": "https://www.bluequbit.io/blog/quantum-computing-companies",
+    "page": 11,
+    "relation_label": "collaborative_leadership",
+    "relation_label_confidence": "high"
+  },
+  {
+    "interaction_phrase": "from historical efforts like the DARPA Quantum Network to current deployments like",
+    "occurrence_sentence": "While a quantum internet on a global scale could still be a decade or two away, early prototypes and local networks—from historical efforts like the DARPA Quantum Network to current deployments like China's Beijing-Shanghai QKD backbone and the Chicago Quantum Exchange—have demonstrated feasibility.",
+    "page": 17,
+    "source_actor": "Defense Advanced Research Projects Agency (DARPA)",
+    "source_document": "https://www.bluequbit.io/blog/quantum-internet",
+    "target_actor": "China",
+    "relation_label": "networking",
+    "relation_label_confidence": "high"
+  },
+  {
+    "interaction_phrase": "IBM, Google, and a few other commodities",
+    "occurrence_sentence": "IBM, Google, and a few other commodities have developed quantum study platforms, but these have yet to be widely available.",
+    "page": 5,
+    "source_actor": "IBM",
+    "source_document": "https://www.bluequbit.io/blog/quantum-computing-and-ai",
+    "target_actor": "Google",
+    "relation_label": "technology_transfer",
+    "relation_label_confidence": "high"
+  },
+  {
+    "interaction_phrase": "IBM, Google, and a few other commodities have developed quantum study platforms",
+    "occurrence_sentence": "IBM, Google, and a few other commodities have developed quantum study platforms, but these have yet to be widely available.",
+    "page": 6,
+    "source_actor": "IBM",
+    "source_document": "https://www.bluequbit.io/blog/quantum-computing-and-ai",
+    "target_actor": "Google",
+    "relation_label": "technology_transfer",
+    "relation_label_confidence": "high"
+  },
+  {
+    "interaction_phrase": "partnership with",
+    "occurrence_sentence": "IBM's partnership with Cleveland Clinic, which introduced the IBM Quantum System One, is pioneering quantum applications in genomics and complex disease modeling.",
+    "page": 4,
+    "source_actor": "IBM",
+    "source_document": "https://www.bluequbit.io/blog/quantum-computing-applications",
+    "target_actor": "Cleveland Clinic",
+    "relation_label": "networking",
+    "relation_label_confidence": "high"
+  },
+  {
+    "interaction_phrase": "introduced the",
+    "occurrence_sentence": "IBM's partnership with Cleveland Clinic, which introduced the IBM Quantum System One, is pioneering quantum applications in genomics and complex disease modeling.",
+    "page": 4,
+    "source_actor": "IBM",
+    "source_document": "https://www.bluequbit.io/blog/quantum-computing-applications",
+    "target_actor": "IBM's Quantum System One",
+    "relation_label": "networking",
+    "relation_label_confidence": "high"
+  },
+  {
+    "interaction_phrase": "partnership with",
+    "occurrence_sentence": "IBM's partnership with Cleveland Clinic, which introduced the IBM Quantum System One, is pioneering quantum applications in genomics and complex disease modeling.",
+    "page": 5,
+    "source_actor": "IBM",
+    "source_document": "https://www.bluequbit.io/blog/quantum-computing-applications",
+    "target_actor": "Cleveland Clinic",
+    "relation_label": "networking",
+    "relation_label_confidence": "high"
+  },
+  {
+    "interaction_phrase": "introduced the",
+    "occurrence_sentence": "IBM's partnership with Cleveland Clinic, which introduced the IBM Quantum System One, is pioneering quantum applications in genomics and complex disease modeling.",
+    "page": 5,
+    "source_actor": "IBM",
+    "source_document": "https://www.bluequbit.io/blog/quantum-computing-applications",
+    "target_actor": "IBM's Quantum System One",
+    "relation_label": "networking",
+    "relation_label_confidence": "high"
+  },
+  {
+    "interaction_phrase": "partnered with IBM Quantum",
+    "occurrence_sentence": "JPMorgan has partnered with IBM Quantum to develop advanced portfolio optimization and risk analysis algorithms.",
+    "page": 8,
+    "source_actor": "JPMorgan",
+    "source_document": "https://www.bluequbit.io/blog/quantum-computing-applications",
+    "target_actor": "IBM",
+    "relation_label": "networking",
+    "relation_label_confidence": "high"
+  },
+  {
+    "source_actor": "JPMorgan",
+    "target_actor": "IBM",
+    "interaction_phrase": "partnered with IBM Quantum",
+    "occurrence_sentence": "JPMorgan has partnered with IBM Quantum to develop advanced portfolio optimization and risk analysis algorithms.",
+    "source_document": "https://www.bluequbit.io/blog/quantum-computing-applications",
+    "page": 9,
+    "relation_label": "networking",
+    "relation_label_confidence": "high"
+  },
+  {
+    "source_actor": "Xanadu",
+    "target_actor": "Pennylane",
+    "interaction_phrase": "has developed a quantum machine learning platform called PennyLane",
+    "occurrence_sentence": "Xanadu, a Canadian company specializing in photonic quantum computing, has developed a quantum machine learning platform called PennyLane.",
+    "source_document": "https://www.bluequbit.io/blog/quantum-computing-applications",
+    "page": 11,
+    "relation_label": "technology_transfer",
+    "relation_label_confidence": "high"
+  },
+  {
+    "source_actor": "Xanadu",
+    "target_actor": "Pennylane",
+    "interaction_phrase": "has developed a quantum machine learning platform called PennyLane",
+    "occurrence_sentence": "Xanadu, a Canadian company specializing in photonic quantum computing, has developed a quantum machine learning platform called PennyLane.",
+    "source_document": "https://www.bluequbit.io/blog/quantum-computing-applications",
+    "page": 12,
+    "relation_label": "technology_transfer",
+    "relation_label_confidence": "high"
+  },
+  {
+    "source_actor": "Daimler",
+    "target_actor": "IBM",
+    "interaction_phrase": "partnering with IBM",
+    "occurrence_sentence": "Several companies are leading the way in using quantum computing for battery innovations. Daimler is one of these companies, partnering with IBM to investigate quantum approaches for designing lithium-sulfur batteries.",
+    "source_document": "https://www.bluequbit.io/blog/quantum-computing-applications",
+    "page": 13,
+    "relation_label": "networking",
+    "relation_label_confidence": "high"
+  },
+  {
+    "source_actor": "Daimler",
+    "target_actor": "IBM",
+    "interaction_phrase": "partnering with IBM",
+    "occurrence_sentence": "Daimler is one of these companies, partnering with IBM to investigate quantum approaches for designing lithium-sulfur batteries.",
+    "source_document": "https://www.bluequbit.io/blog/quantum-computing-applications",
+    "page": 14,
+    "relation_label": "networking",
+    "relation_label_confidence": "high"
+  },
+  {
+    "source_actor": "Pfizer",
+    "target_actor": "IBM",
+    "interaction_phrase": "in collaboration with IBM",
+    "occurrence_sentence": "Pfizer is investing in quantum computing in collaboration with IBM to accelerate its drug discovery efforts.",
+    "source_document": "https://www.bluequbit.io/blog/quantum-computing-applications",
+    "page": 15,
+    "relation_label": "networking",
+    "relation_label_confidence": "high"
+  },
+  {
+    "source_actor": "Pfizer",
+    "target_actor": "IBM",
+    "interaction_phrase": "in collaboration with IBM",
+    "occurrence_sentence": "Pfizer is investing in quantum computing in collaboration with IBM to accelerate its drug discovery efforts.",
+    "source_document": "https://www.bluequbit.io/blog/quantum-computing-applications",
+    "page": 16,
+    "relation_label": "networking",
+    "relation_label_confidence": "high"
+  },
+  {
+    "source_actor": "Google Quantum AI",
+    "target_actor": "Google",
+    "interaction_phrase": "Google's researchers",
+    "occurrence_sentence": "Google's researchers have launched a new chapter in the quantum computing narrative as we drive towards an age where quantum dominance is within grasp.",
+    "source_document": "https://www.bluequbit.io/blog/google-quantum-computer",
+    "page": 3,
+    "relation_label": "collaborative_leadership",
+    "relation_label_confidence": "high"
+  },
+  {
+    "interaction_phrase": "Google's researchers",
+    "occurrence_sentence": "Google's researchers have launched a new chapter in the quantum computing narrative as we drive towards an age where quantum dominance is within grasp.",
+    "page": 4,
+    "source_actor": "Google",
+    "source_document": "https://www.bluequbit.io/blog/google-quantum-computer",
+    "target_actor": "Google Quantum AI",
+    "relation_label": "collaborative_leadership",
+    "relation_label_confidence": "high"
+  },
+  {
+    "source_actor": "Google",
+    "target_actor": "Cirq",
+    "interaction_phrase": "developed by Google",
+    "occurrence_sentence": "As an open-source framework developed by Google, Cirq facilitates the design, simulation, and execution of quantum algorithms on quantum computers.",
+    "source_document": "https://www.bluequbit.io/blog/google-quantum-computer",
+    "page": 12,
+    "relation_label": "technology_transfer",
+    "relation_label_confidence": "high"
+  },
+  {
+    "interaction_phrase": "developed by Google",
+    "occurrence_sentence": "As an open-source framework developed by Google, Cirq facilitates the design, simulation, and execution of quantum algorithms on quantum computers.",
+    "page": 13,
+    "source_actor": "Google",
+    "source_document": "https://www.bluequbit.io/blog/google-quantum-computer",
+    "target_actor": "Cirq",
+    "relation_label": "technology_transfer",
+    "relation_label_confidence": "high"
+  },
+  {
+    "source_actor": "BlueQubit",
+    "target_actor": "AWS Braket",
+    "interaction_phrase": "BlueQubit's BQ-CPU is approximately 13x faster than AWS Braket",
+    "occurrence_sentence": "IBM's simulator supports up to 32 qubits, while AWS Braket can go up to 34 qubits. * BlueQubit's BQ-CPU is approximately 13x faster than AWS Braket, and its BQ-GPU outperforms AWS Braket by a massive 230x. This speed boost comes from BlueQubit using more GPUs for each additional qubit, especially past 32 qubits.",
+    "source_document": "https://www.bluequbit.io/blog/quantum-computing-simulators",
+    "page": 8,
+    "relation_label": "collaborative_leadership",
+    "relation_label_confidence": "high"
+  },
+  {
+    "source_actor": "BlueQubit",
+    "target_actor": "AWS Braket",
+    "interaction_phrase": "its BQ-GPU outperforms AWS Braket by a massive 230x",
+    "occurrence_sentence": "IBM's simulator supports up to 32 qubits, while AWS Braket can go up to 34 qubits. * BlueQubit's BQ-CPU is approximately 13x faster than AWS Braket, and its BQ-GPU outperforms AWS Braket by a massive 230x. This speed boost comes from BlueQubit using more GPUs for each additional qubit, especially past 32 qubits.",
+    "source_document": "https://www.bluequbit.io/blog/quantum-computing-simulators",
+    "page": 8,
+    "relation_label": "collaborative_leadership",
+    "relation_label_confidence": "high"
+  }
+]

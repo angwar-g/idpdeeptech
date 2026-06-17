@@ -15,3 +15,968 @@ RUN FINISHED 2026-06-14 15:35:54  (INTERRUPTED)
 Started:     2026-06-14 15:35:35
 Elapsed:     18s
 ========================================================================
+
+========================================================================
+RUN STARTED  2026-06-16 17:12:59
+site_pipeline.py https://quantumai.google/
+========================================================================
+
+[17:12:59 +0s | quantumai_google] === 0 crawl site ===
+[17:13:01 +2s | quantumai_google] Cleared existing crawl_output/
+[17:13:03 +3s | quantumai_google] [INIT].... → Crawl4AI 0.8.6 
+[17:13:05 +6s | quantumai_google] [FETCH]... ↓ https://quantumai.google/                                                                            | ✓ | ⏱: 2.06s 
+[17:13:05 +6s | quantumai_google] [SCRAPE].. ◆ https://quantumai.google/                                                                            | ✓ | ⏱: 0.07s 
+[17:13:05 +6s | quantumai_google] [COMPLETE] ● https://quantumai.google/                                                                            | ✓ | ⏱: 2.17s 
+[17:13:09 +10s | quantumai_google] [FETCH]... ↓ https://quantumai.google/static/site-assets/downloads/willow-spec-sheet.pdf                          | ✓ | ⏱: 3.84s 
+[17:13:09 +10s | quantumai_google] [SCRAPE].. ◆ https://quantumai.google/static/site-assets/downloads/willow-spec-sheet.pdf                          | ✓ | ⏱: 0.08s 
+[17:13:09 +10s | quantumai_google] [COMPLETE] ● https://quantumai.google/static/site-assets/downloads/willow-spec-sheet.pdf                          | ✗ | ⏱: 4.00s 
+[17:13:09 +10s | quantumai_google] [FETCH]... ↓ https://quantumai.google/learn/map                                                                   | ✓ | ⏱: 4.05s 
+[17:13:09 +10s | quantumai_google] [SCRAPE].. ◆ https://quantumai.google/learn/map                                                                   | ✓ | ⏱: 0.05s 
+[17:13:09 +10s | quantumai_google] [COMPLETE] ● https://quantumai.google/learn/map                                                                   | ✗ | ⏱: 4.14s 
+[17:13:10 +11s | quantumai_google] [FETCH]... ↓ https://quantumai.google/learn/lab                                                                   | ✓ | ⏱: 5.08s 
+[17:13:10 +11s | quantumai_google] [SCRAPE].. ◆ https://quantumai.google/learn/lab                                                                   | ✓ | ⏱: 0.02s 
+[17:13:10 +11s | quantumai_google] [COMPLETE] ● https://quantumai.google/learn/lab                                                                   | ✗ | ⏱: 5.12s 
+[17:13:13 +13s | quantumai_google] [FETCH]... ↓ https://quantumai.google/                                                                            | ✓ | ⏱: 7.51s 
+[17:13:13 +14s | quantumai_google] [SCRAPE].. ◆ https://quantumai.google/                                                                            | ✓ | ⏱: 0.34s 
+[17:13:13 +14s | quantumai_google] [COMPLETE] ● https://quantumai.google/                                                                            | ✓ | ⏱: 7.93s 
+[17:13:14 +14s | quantumai_google] [FETCH]... ↓ https://quantumai.google/willowearlyaccess                                                           | ✓ | ⏱: 8.49s 
+[17:13:16 +15s | quantumai_google] [SCRAPE].. ◆ https://quantumai.google/willowearlyaccess                                                           | ✓ | ⏱: 0.25s 
+[17:13:16 +15s | quantumai_google] [COMPLETE] ● https://quantumai.google/willowearlyaccess                                                           | ✓ | ⏱: 8.85s 
+[17:13:17 +16s | quantumai_google] [FETCH]... ↓ https://quantumai.google/roadmap                                                                     | ✓ | ⏱: 10.02s 
+[17:13:17 +16s | quantumai_google] [SCRAPE].. ◆ https://quantumai.google/roadmap                                                                     | ✓ | ⏱: 0.09s 
+[17:13:17 +16s | quantumai_google] [COMPLETE] ● https://quantumai.google/roadmap                                                                     | ✓ | ⏱: 10.20s 
+[17:13:18 +17s | quantumai_google] [FETCH]... ↓ https://quantumai.google/research                                                                    | ✓ | ⏱: 11.23s 
+[17:13:19 +17s | quantumai_google] [SCRAPE].. ◆ https://quantumai.google/research                                                                    | ✓ | ⏱: 0.26s 
+[17:13:19 +17s | quantumai_google] [COMPLETE] ● https://quantumai.google/research                                                                    | ✓ | ⏱: 11.61s 
+[17:13:21 +19s | quantumai_google] [FETCH]... ↓ https://quantumai.google/whatisqc                                                                    | ✓ | ⏱: 13.47s 
+[17:13:21 +20s | quantumai_google] [SCRAPE].. ◆ https://quantumai.google/whatisqc                                                                    | ✓ | ⏱: 0.20s 
+[17:13:21 +20s | quantumai_google] [COMPLETE] ● https://quantumai.google/whatisqc                                                                    | ✓ | ⏱: 13.77s 
+[17:13:21 +20s | quantumai_google] [FETCH]... ↓ https://quantumai.google/quantumcomputer                                                             | ✓ | ⏱: 13.84s 
+[17:13:21 +20s | quantumai_google] [SCRAPE].. ◆ https://quantumai.google/quantumcomputer                                                             | ✓ | ⏱: 0.11s 
+[17:13:21 +20s | quantumai_google] [COMPLETE] ● https://quantumai.google/quantumcomputer                                                             | ✓ | ⏱: 14.02s 
+[17:13:21 +20s | quantumai_google] [FETCH]... ↓ https://quantumai.google/lab                                                                         | ✓ | ⏱: 14.09s 
+[17:13:21 +20s | quantumai_google] [SCRAPE].. ◆ https://quantumai.google/lab                                                                         | ✓ | ⏱: 0.10s 
+[17:13:21 +20s | quantumai_google] [COMPLETE] ● https://quantumai.google/lab                                                                         | ✓ | ⏱: 14.27s 
+[17:13:21 +20s | quantumai_google] [FETCH]... ↓ https://quantumai.google/software                                                                    | ✓ | ⏱: 14.32s 
+[17:13:22 +20s | quantumai_google] [SCRAPE].. ◆ https://quantumai.google/software                                                                    | ✓ | ⏱: 0.16s 
+[17:13:22 +20s | quantumai_google] [COMPLETE] ● https://quantumai.google/software                                                                    | ✓ | ⏱: 14.53s 
+[17:13:22 +20s | quantumai_google] [FETCH]... ↓ https://quantumai.google/resources                                                                   | ✓ | ⏱: 14.52s 
+[17:13:22 +20s | quantumai_google] [SCRAPE].. ◆ https://quantumai.google/resources                                                                   | ✓ | ⏱: 0.08s 
+[17:13:22 +21s | quantumai_google] [COMPLETE] ● https://quantumai.google/resources                                                                   | ✓ | ⏱: 14.65s 
+[17:13:22 +21s | quantumai_google] [FETCH]... ↓ https://quantumai.google/cirq                                                                        | ✓ | ⏱: 14.64s 
+[17:13:22 +21s | quantumai_google] [SCRAPE].. ◆ https://quantumai.google/cirq                                                                        | ✓ | ⏱: 0.13s 
+[17:13:22 +21s | quantumai_google] [COMPLETE] ● https://quantumai.google/cirq                                                                        | ✓ | ⏱: 14.83s 
+[17:13:31 +30s | quantumai_google] [FETCH]... ↓ https://quantumai.google/education/thequbitgame                                                      | ✓ | ⏱: 8.77s 
+[17:13:31 +30s | quantumai_google] [SCRAPE].. ◆ https://quantumai.google/education/thequbitgame                                                      | ✓ | ⏱: 0.01s 
+[17:13:31 +30s | quantumai_google] [COMPLETE] ● https://quantumai.google/education/thequbitgame                                                      | ✗ | ⏱: 8.80s 
+[17:13:31 +30s | quantumai_google] [FETCH]... ↓ https://quantumai.google/cirq/noise                                                                  | ✓ | ⏱: 9.09s 
+[17:13:32 +30s | quantumai_google] [SCRAPE].. ◆ https://quantumai.google/cirq/noise                                                                  | ✓ | ⏱: 0.10s 
+[17:13:32 +30s | quantumai_google] [COMPLETE] ● https://quantumai.google/cirq/noise                                                                  | ✓ | ⏱: 9.23s 
+[17:13:32 +31s | quantumai_google] [FETCH]... ↓ https://quantumai.google/cirq/build                                                                  | ✓ | ⏱: 10.22s 
+[17:13:32 +31s | quantumai_google] [SCRAPE].. ◆ https://quantumai.google/cirq/build                                                                  | ✓ | ⏱: 0.17s 
+[17:13:33 +31s | quantumai_google] [COMPLETE] ● https://quantumai.google/cirq/build                                                                  | ✓ | ⏱: 10.44s 
+[17:13:33 +31s | quantumai_google] [FETCH]... ↓ https://quantumai.google/static/site-assets/downloads/what-is-quantum-computing.pdf                  | ✓ | ⏱: 10.10s 
+[17:13:33 +31s | quantumai_google] [SCRAPE].. ◆ https://quantumai.google/static/site-assets/downloads/what-is-quantum-computing.pdf                  | ✓ | ⏱: 0.00s 
+[17:13:33 +31s | quantumai_google] [COMPLETE] ● https://quantumai.google/static/site-assets/downloads/what-is-quantum-computing.pdf                  | ✗ | ⏱: 10.11s 
+[17:13:33 +31s | quantumai_google] [FETCH]... ↓ https://quantumai.google/static/site-assets/downloads/willow-early-access-program-instructions.pdf   | ✓ | ⏱: 10.14s 
+[17:13:33 +31s | quantumai_google] [SCRAPE].. ◆ https://quantumai.google/static/site-assets/downloads/willow-early-access-program-instructions.pdf   | ✓ | ⏱: 0.00s 
+[17:13:33 +31s | quantumai_google] [COMPLETE] ● https://quantumai.google/static/site-assets/downloads/willow-early-access-program-instructions.pdf   | ✗ | ⏱: 10.18s 
+[17:13:35 +34s | quantumai_google] [FETCH]... ↓ https://quantumai.google/cirq/transform                                                              | ✓ | ⏱: 12.48s 
+[17:13:35 +34s | quantumai_google] [SCRAPE].. ◆ https://quantumai.google/cirq/transform                                                              | ✓ | ⏱: 0.13s 
+[17:13:35 +34s | quantumai_google] [COMPLETE] ● https://quantumai.google/cirq/transform                                                              | ✓ | ⏱: 12.65s 
+[17:13:35 +34s | quantumai_google] [FETCH]... ↓ https://quantumai.google/qualtran                                                                    | ✓ | ⏱: 12.65s 
+[17:13:35 +34s | quantumai_google] [SCRAPE].. ◆ https://quantumai.google/qualtran                                                                    | ✓ | ⏱: 0.06s 
+[17:13:35 +34s | quantumai_google] [COMPLETE] ● https://quantumai.google/qualtran                                                                    | ✓ | ⏱: 12.77s 
+[17:13:35 +34s | quantumai_google] [FETCH]... ↓ https://quantumai.google/openfermion                                                                 | ✓ | ⏱: 12.81s 
+[17:13:35 +34s | quantumai_google] [SCRAPE].. ◆ https://quantumai.google/openfermion                                                                 | ✓ | ⏱: 0.10s 
+[17:13:35 +34s | quantumai_google] [COMPLETE] ● https://quantumai.google/openfermion                                                                 | ✓ | ⏱: 12.98s 
+[17:13:36 +34s | quantumai_google] [FETCH]... ↓ https://quantumai.google/cirq/simulate                                                               | ✓ | ⏱: 13.34s 
+[17:13:36 +35s | quantumai_google] [SCRAPE].. ◆ https://quantumai.google/cirq/simulate                                                               | ✓ | ⏱: 0.21s 
+[17:13:36 +35s | quantumai_google] [COMPLETE] ● https://quantumai.google/cirq/simulate                                                               | ✓ | ⏱: 13.61s 
+[17:13:36 +35s | quantumai_google] [FETCH]... ↓ https://quantumai.google/qsim                                                                        | ✓ | ⏱: 13.60s 
+[17:13:36 +35s | quantumai_google] [SCRAPE].. ◆ https://quantumai.google/qsim                                                                        | ✓ | ⏱: 0.10s 
+[17:13:36 +35s | quantumai_google] [COMPLETE] ● https://quantumai.google/qsim                                                                        | ✓ | ⏱: 13.73s 
+[17:13:36 +35s | quantumai_google] [FETCH]... ↓ https://quantumai.google/cirq/hardware                                                               | ✓ | ⏱: 13.78s 
+[17:13:36 +35s | quantumai_google] [SCRAPE].. ◆ https://quantumai.google/cirq/hardware                                                               | ✓ | ⏱: 0.19s 
+[17:13:36 +35s | quantumai_google] [COMPLETE] ● https://quantumai.google/cirq/hardware                                                               | ✓ | ⏱: 14.00s 
+[17:13:36 +35s | quantumai_google] [FETCH]... ↓ https://quantumai.google/cirq/start/install                                                          | ✓ | ⏱: 14.01s 
+[17:13:37 +35s | quantumai_google] [SCRAPE].. ◆ https://quantumai.google/cirq/start/install                                                          | ✓ | ⏱: 0.14s 
+[17:13:37 +35s | quantumai_google] [COMPLETE] ● https://quantumai.google/cirq/start/install                                                          | ✓ | ⏱: 14.18s 
+[17:13:37 +35s | quantumai_google] [FETCH]... ↓ https://quantumai.google/cirq/dev/development                                                        | ✓ | ⏱: 14.15s 
+[17:13:37 +35s | quantumai_google] [SCRAPE].. ◆ https://quantumai.google/cirq/dev/development                                                        | ✓ | ⏱: 0.12s 
+[17:13:37 +35s | quantumai_google] [COMPLETE] ● https://quantumai.google/cirq/dev/development                                                        | ✓ | ⏱: 14.30s 
+[17:13:37 +35s | quantumai_google] [FETCH]... ↓ https://quantumai.google/cirq/experiments                                                            | ✓ | ⏱: 14.32s 
+[17:13:37 +36s | quantumai_google] [SCRAPE].. ◆ https://quantumai.google/cirq/experiments                                                            | ✓ | ⏱: 0.16s 
+[17:13:37 +36s | quantumai_google] [COMPLETE] ● https://quantumai.google/cirq/experiments                                                            | ✓ | ⏱: 14.51s 
+[17:13:37 +36s | quantumai_google] [FETCH]... ↓ https://quantumai.google/reference/python/cirq/all_symbols                                           | ✓ | ⏱: 14.52s 
+[17:13:39 +37s | quantumai_google] [SCRAPE].. ◆ https://quantumai.google/reference/python/cirq/all_symbols                                           | ✓ | ⏱: 1.85s 
+[17:13:39 +38s | quantumai_google] [COMPLETE] ● https://quantumai.google/reference/python/cirq/all_symbols                                           | ✓ | ⏱: 16.40s 
+[17:13:39 +38s | quantumai_google] Saved: crawl_output/439ec80eee_quantumai.google.json
+[17:13:39 +38s | quantumai_google] Saved: crawl_output/c171a4d2d8_quantumai.google_static_site-assets_downloads_willow-spec-sheet.pdf.json
+[17:13:39 +38s | quantumai_google] Saved: crawl_output/0b614328fc_quantumai.google_learn_map.json
+[17:13:39 +38s | quantumai_google] Saved: crawl_output/d7675ec985_quantumai.google_learn_lab.json
+[17:13:39 +38s | quantumai_google] Duplicate skipped: https://quantumai.google
+[17:13:39 +38s | quantumai_google] Saved: crawl_output/f09ca9a635_quantumai.google_willowearlyaccess.json
+[17:13:39 +38s | quantumai_google] Saved: crawl_output/86fc15d862_quantumai.google_roadmap.json
+[17:13:39 +38s | quantumai_google] Saved: crawl_output/d4e1d26c8a_quantumai.google_research.json
+[17:13:39 +38s | quantumai_google] Saved: crawl_output/a2498790ef_quantumai.google_whatisqc.json
+[17:13:39 +38s | quantumai_google] Saved: crawl_output/7c4b666e24_quantumai.google_quantumcomputer.json
+[17:13:39 +38s | quantumai_google] Saved: crawl_output/319573a176_quantumai.google_lab.json
+[17:13:39 +38s | quantumai_google] Saved: crawl_output/88031aa7bf_quantumai.google_software.json
+[17:13:39 +38s | quantumai_google] Saved: crawl_output/9c7586267f_quantumai.google_resources.json
+[17:13:39 +38s | quantumai_google] Saved: crawl_output/fc2ac2dc75_quantumai.google_cirq.json
+[17:13:39 +38s | quantumai_google] Saved: crawl_output/b12851ca01_quantumai.google_education_thequbitgame.json
+[17:13:39 +38s | quantumai_google] Saved: crawl_output/af9383325d_quantumai.google_cirq_noise.json
+[17:13:39 +38s | quantumai_google] Saved: crawl_output/3f38021383_quantumai.google_cirq_build.json
+[17:13:39 +38s | quantumai_google] Saved: crawl_output/9a663c8c82_quantumai.google_static_site-assets_downloads_what-is-quantum-computing.pdf.json
+[17:13:39 +38s | quantumai_google] Saved: crawl_output/0594e700d6_quantumai.google_static_site-assets_downloads_willow-early-access-program-instructions.pdf.json
+[17:13:39 +38s | quantumai_google] Saved: crawl_output/1f9f375540_quantumai.google_cirq_transform.json
+[17:13:39 +38s | quantumai_google] Saved: crawl_output/88beb852ff_quantumai.google_qualtran.json
+[17:13:39 +38s | quantumai_google] Saved: crawl_output/bb830fe4cf_quantumai.google_openfermion.json
+[17:13:39 +38s | quantumai_google] Saved: crawl_output/ac0715735b_quantumai.google_cirq_simulate.json
+[17:13:39 +38s | quantumai_google] Saved: crawl_output/4beffee2ed_quantumai.google_qsim.json
+[17:13:39 +38s | quantumai_google] Saved: crawl_output/8840901fbc_quantumai.google_cirq_hardware.json
+[17:13:39 +38s | quantumai_google] Saved: crawl_output/fd60121550_quantumai.google_cirq_start_install.json
+[17:13:39 +38s | quantumai_google] Saved: crawl_output/70b7f02c36_quantumai.google_cirq_dev_development.json
+[17:13:39 +38s | quantumai_google] Saved: crawl_output/f4fd86c9d8_quantumai.google_cirq_experiments.json
+[17:13:39 +38s | quantumai_google] Saved: crawl_output/a47ce69a33_quantumai.google_reference_python_cirq_all_symbols.json
+
+[17:13:40 +39s | quantumai_google] === 1 actor extraction ===
+[17:13:41 +39s | quantumai_google] Reading page (3/28): https://quantumai.google/cirq/transform
+[17:13:41 +39s | quantumai_google] Extracting: https://quantumai.google/cirq/transform (3/28), chunk 1/7
+[17:13:46 +45s | quantumai_google] Repaired malformed JSON.
+[17:13:46 +45s | quantumai_google] Extracting: https://quantumai.google/cirq/transform (3/28), chunk 2/7
+[17:13:54 +51s | quantumai_google] Repaired malformed JSON.
+[17:13:54 +51s | quantumai_google] Extracting: https://quantumai.google/cirq/transform (3/28), chunk 3/7
+[17:14:01 +57s | quantumai_google] Extracting: https://quantumai.google/cirq/transform (3/28), chunk 4/7
+[17:14:05 +1m 1s | quantumai_google] Extracting: https://quantumai.google/cirq/transform (3/28), chunk 5/7
+[17:14:10 +1m 7s | quantumai_google] Extracting: https://quantumai.google/cirq/transform (3/28), chunk 6/7
+[17:14:17 +1m 13s | quantumai_google] Extracting: https://quantumai.google/cirq/transform (3/28), chunk 7/7
+[17:14:25 +1m 19s | quantumai_google] Reading page (4/28): https://quantumai.google/lab
+[17:14:25 +1m 19s | quantumai_google] Extracting: https://quantumai.google/lab (4/28), chunk 1/7
+[17:14:28 +1m 22s | quantumai_google] Extracting: https://quantumai.google/lab (4/28), chunk 2/7
+[17:14:32 +1m 27s | quantumai_google] Extracting: https://quantumai.google/lab (4/28), chunk 3/7
+[17:14:38 +1m 32s | quantumai_google] Extracting: https://quantumai.google/lab (4/28), chunk 4/7
+[17:14:43 +1m 37s | quantumai_google] Extracting: https://quantumai.google/lab (4/28), chunk 5/7
+[17:14:52 +1m 46s | quantumai_google] Repaired malformed JSON.
+[17:14:52 +1m 46s | quantumai_google] Extracting: https://quantumai.google/lab (4/28), chunk 6/7
+[17:15:00 +1m 52s | quantumai_google] Repaired malformed JSON.
+[17:15:00 +1m 52s | quantumai_google] Extracting: https://quantumai.google/lab (4/28), chunk 7/7
+[17:15:07 +1m 59s | quantumai_google] Reading page (5/28): https://quantumai.google/cirq/build
+[17:15:07 +1m 59s | quantumai_google] Extracting: https://quantumai.google/cirq/build (5/28), chunk 1/9
+[17:15:15 +2m 7s | quantumai_google] Repaired malformed JSON.
+[17:15:15 +2m 7s | quantumai_google] Extracting: https://quantumai.google/cirq/build (5/28), chunk 2/9
+[17:15:18 +2m 10s | quantumai_google] Extracting: https://quantumai.google/cirq/build (5/28), chunk 3/9
+[17:15:22 +2m 14s | quantumai_google] Extracting: https://quantumai.google/cirq/build (5/28), chunk 4/9
+[17:15:26 +2m 18s | quantumai_google] Extracting: https://quantumai.google/cirq/build (5/28), chunk 5/9
+[17:15:37 +2m 27s | quantumai_google] Extracting: https://quantumai.google/cirq/build (5/28), chunk 6/9
+[17:15:38 +2m 28s | quantumai_google] Extracting: https://quantumai.google/cirq/build (5/28), chunk 7/9
+[17:15:44 +2m 34s | quantumai_google] Repaired malformed JSON.
+[17:15:44 +2m 34s | quantumai_google] Extracting: https://quantumai.google/cirq/build (5/28), chunk 8/9
+[17:15:50 +2m 40s | quantumai_google] Repaired malformed JSON.
+[17:15:50 +2m 40s | quantumai_google] Extracting: https://quantumai.google/cirq/build (5/28), chunk 9/9
+[17:15:54 +2m 44s | quantumai_google] Reading page (6/28): https://quantumai.google
+[17:15:54 +2m 44s | quantumai_google] Extracting: https://quantumai.google (6/28), chunk 1/10
+[17:16:00 +2m 49s | quantumai_google] Extracting: https://quantumai.google (6/28), chunk 2/10
+[17:16:09 +2m 56s | quantumai_google] Extracting: https://quantumai.google (6/28), chunk 3/10
+[17:16:14 +3m 2s | quantumai_google] Extracting: https://quantumai.google (6/28), chunk 4/10
+[17:16:18 +3m 5s | quantumai_google] Extracting: https://quantumai.google (6/28), chunk 5/10
+[17:16:26 +3m 14s | quantumai_google] Repaired malformed JSON.
+[17:16:26 +3m 14s | quantumai_google] Extracting: https://quantumai.google (6/28), chunk 6/10
+[17:16:35 +3m 23s | quantumai_google] Repaired malformed JSON.
+[17:16:35 +3m 23s | quantumai_google] Extracting: https://quantumai.google (6/28), chunk 7/10
+[17:16:44 +3m 29s | quantumai_google] Repaired malformed JSON.
+[17:16:44 +3m 29s | quantumai_google] Extracting: https://quantumai.google (6/28), chunk 8/10
+[17:16:52 +3m 37s | quantumai_google] Repaired malformed JSON.
+[17:16:52 +3m 37s | quantumai_google] Extracting: https://quantumai.google (6/28), chunk 9/10
+[17:16:59 +3m 45s | quantumai_google] Repaired malformed JSON.
+[17:16:59 +3m 45s | quantumai_google] Extracting: https://quantumai.google (6/28), chunk 10/10
+[17:17:05 +3m 50s | quantumai_google] Reading page (7/28): https://quantumai.google/qsim
+[17:17:05 +3m 50s | quantumai_google] Extracting: https://quantumai.google/qsim (7/28), chunk 1/9
+[17:17:08 +3m 53s | quantumai_google] Extracting: https://quantumai.google/qsim (7/28), chunk 2/9
+[17:17:12 +3m 57s | quantumai_google] Extracting: https://quantumai.google/qsim (7/28), chunk 3/9
+[17:17:22 +4m 5s | quantumai_google] Repaired malformed JSON.
+[17:17:22 +4m 5s | quantumai_google] Extracting: https://quantumai.google/qsim (7/28), chunk 4/9
+[17:17:29 +4m 12s | quantumai_google] Repaired malformed JSON.
+[17:17:29 +4m 12s | quantumai_google] Extracting: https://quantumai.google/qsim (7/28), chunk 5/9
+[17:17:38 +4m 21s | quantumai_google] Repaired malformed JSON.
+[17:17:38 +4m 21s | quantumai_google] Extracting: https://quantumai.google/qsim (7/28), chunk 6/9
+[17:17:44 +4m 26s | quantumai_google] Repaired malformed JSON.
+[17:17:44 +4m 26s | quantumai_google] Extracting: https://quantumai.google/qsim (7/28), chunk 7/9
+[17:17:49 +4m 32s | quantumai_google] Repaired malformed JSON.
+[17:17:49 +4m 32s | quantumai_google] Extracting: https://quantumai.google/qsim (7/28), chunk 8/9
+[17:17:58 +4m 39s | quantumai_google] Repaired malformed JSON.
+[17:17:58 +4m 39s | quantumai_google] Extracting: https://quantumai.google/qsim (7/28), chunk 9/9
+[17:18:06 +4m 47s | quantumai_google] Repaired malformed JSON.
+[17:18:06 +4m 47s | quantumai_google] Reading page (8/28): https://quantumai.google/cirq/dev/development
+[17:18:06 +4m 47s | quantumai_google] Extracting: https://quantumai.google/cirq/dev/development (8/28), chunk 1/17
+[17:18:13 +4m 54s | quantumai_google] Repaired malformed JSON.
+[17:18:13 +4m 54s | quantumai_google] Extracting: https://quantumai.google/cirq/dev/development (8/28), chunk 2/17
+[17:18:20 +5m 1s | quantumai_google] Repaired malformed JSON.
+[17:18:20 +5m 1s | quantumai_google] Extracting: https://quantumai.google/cirq/dev/development (8/28), chunk 3/17
+[17:18:29 +5m 8s | quantumai_google] Repaired malformed JSON.
+[17:18:29 +5m 8s | quantumai_google] Extracting: https://quantumai.google/cirq/dev/development (8/28), chunk 4/17
+[17:18:35 +5m 13s | quantumai_google] Repaired malformed JSON.
+[17:18:35 +5m 13s | quantumai_google] Extracting: https://quantumai.google/cirq/dev/development (8/28), chunk 5/17
+[17:18:44 +5m 22s | quantumai_google] Repaired malformed JSON.
+[17:18:44 +5m 22s | quantumai_google] Extracting: https://quantumai.google/cirq/dev/development (8/28), chunk 6/17
+[17:18:51 +5m 29s | quantumai_google] Repaired malformed JSON.
+[17:18:51 +5m 29s | quantumai_google] Extracting: https://quantumai.google/cirq/dev/development (8/28), chunk 7/17
+[17:18:57 +5m 35s | quantumai_google] Repaired malformed JSON.
+[17:18:57 +5m 35s | quantumai_google] Extracting: https://quantumai.google/cirq/dev/development (8/28), chunk 8/17
+[17:19:06 +5m 43s | quantumai_google] Repaired malformed JSON.
+[17:19:06 +5m 43s | quantumai_google] Extracting: https://quantumai.google/cirq/dev/development (8/28), chunk 9/17
+[17:19:14 +5m 50s | quantumai_google] Repaired malformed JSON.
+[17:19:14 +5m 50s | quantumai_google] Extracting: https://quantumai.google/cirq/dev/development (8/28), chunk 10/17
+[17:19:23 +5m 59s | quantumai_google] Repaired malformed JSON.
+[17:19:23 +5m 59s | quantumai_google] Extracting: https://quantumai.google/cirq/dev/development (8/28), chunk 11/17
+[17:19:29 +6m 5s | quantumai_google] Repaired malformed JSON.
+[17:19:29 +6m 5s | quantumai_google] Extracting: https://quantumai.google/cirq/dev/development (8/28), chunk 12/17
+[17:19:30 +6m 6s | quantumai_google] Extracting: https://quantumai.google/cirq/dev/development (8/28), chunk 13/17
+[17:19:36 +6m 13s | quantumai_google] Repaired malformed JSON.
+[17:19:36 +6m 13s | quantumai_google] Extracting: https://quantumai.google/cirq/dev/development (8/28), chunk 14/17
+[17:19:42 +6m 19s | quantumai_google] Repaired malformed JSON.
+[17:19:42 +6m 19s | quantumai_google] Extracting: https://quantumai.google/cirq/dev/development (8/28), chunk 15/17
+[17:19:50 +6m 26s | quantumai_google] Repaired malformed JSON.
+[17:19:50 +6m 26s | quantumai_google] Extracting: https://quantumai.google/cirq/dev/development (8/28), chunk 16/17
+[17:19:59 +6m 36s | quantumai_google] Extracting: https://quantumai.google/cirq/dev/development (8/28), chunk 17/17
+[17:20:07 +6m 43s | quantumai_google] Reading page (9/28): https://quantumai.google/quantumcomputer
+[17:20:07 +6m 43s | quantumai_google] Extracting: https://quantumai.google/quantumcomputer (9/28), chunk 1/8
+[17:20:13 +6m 49s | quantumai_google] Extracting: https://quantumai.google/quantumcomputer (9/28), chunk 2/8
+[17:20:19 +6m 55s | quantumai_google] Repaired malformed JSON.
+[17:20:19 +6m 55s | quantumai_google] Extracting: https://quantumai.google/quantumcomputer (9/28), chunk 3/8
+[17:20:23 +6m 59s | quantumai_google] Extracting: https://quantumai.google/quantumcomputer (9/28), chunk 4/8
+[17:20:30 +7m 6s | quantumai_google] Repaired malformed JSON.
+[17:20:30 +7m 6s | quantumai_google] Extracting: https://quantumai.google/quantumcomputer (9/28), chunk 5/8
+[17:20:40 +7m 14s | quantumai_google] Repaired malformed JSON.
+[17:20:40 +7m 14s | quantumai_google] Extracting: https://quantumai.google/quantumcomputer (9/28), chunk 6/8
+[17:20:48 +7m 22s | quantumai_google] Repaired malformed JSON.
+[17:20:48 +7m 22s | quantumai_google] Extracting: https://quantumai.google/quantumcomputer (9/28), chunk 7/8
+[17:20:56 +7m 30s | quantumai_google] Repaired malformed JSON.
+[17:20:56 +7m 30s | quantumai_google] Extracting: https://quantumai.google/quantumcomputer (9/28), chunk 8/8
+[17:21:02 +7m 36s | quantumai_google] Reading page (10/28): https://quantumai.google/roadmap
+[17:21:02 +7m 36s | quantumai_google] Extracting: https://quantumai.google/roadmap (10/28), chunk 1/4
+[17:21:06 +7m 40s | quantumai_google] Extracting: https://quantumai.google/roadmap (10/28), chunk 2/4
+[17:21:12 +7m 46s | quantumai_google] Repaired malformed JSON.
+[17:21:12 +7m 46s | quantumai_google] Extracting: https://quantumai.google/roadmap (10/28), chunk 3/4
+[17:21:21 +7m 53s | quantumai_google] Repaired malformed JSON.
+[17:21:21 +7m 53s | quantumai_google] Extracting: https://quantumai.google/roadmap (10/28), chunk 4/4
+[17:21:29 +8m 1s | quantumai_google] Reading page (11/28): https://quantumai.google/software
+[17:21:29 +8m 1s | quantumai_google] Extracting: https://quantumai.google/software (11/28), chunk 1/8
+[17:21:32 +8m 4s | quantumai_google] Extracting: https://quantumai.google/software (11/28), chunk 2/8
+[17:21:35 +8m 7s | quantumai_google] Extracting: https://quantumai.google/software (11/28), chunk 3/8
+[17:21:39 +8m 11s | quantumai_google] Extracting: https://quantumai.google/software (11/28), chunk 4/8
+[17:21:45 +8m 17s | quantumai_google] Repaired malformed JSON.
+[17:21:45 +8m 17s | quantumai_google] Extracting: https://quantumai.google/software (11/28), chunk 5/8
+[17:21:55 +8m 26s | quantumai_google] Repaired malformed JSON.
+[17:21:55 +8m 26s | quantumai_google] Extracting: https://quantumai.google/software (11/28), chunk 6/8
+[17:22:03 +8m 33s | quantumai_google] Repaired malformed JSON.
+[17:22:03 +8m 33s | quantumai_google] Extracting: https://quantumai.google/software (11/28), chunk 7/8
+[17:22:11 +8m 42s | quantumai_google] Repaired malformed JSON.
+[17:22:11 +8m 42s | quantumai_google] Extracting: https://quantumai.google/software (11/28), chunk 8/8
+[17:22:17 +8m 48s | quantumai_google] Reading page (12/28): https://quantumai.google/cirq/hardware
+[17:22:17 +8m 48s | quantumai_google] Extracting: https://quantumai.google/cirq/hardware (12/28), chunk 1/11
+[17:22:29 +8m 57s | quantumai_google] Repaired malformed JSON.
+[17:22:29 +8m 57s | quantumai_google] Extracting: https://quantumai.google/cirq/hardware (12/28), chunk 2/11
+[17:22:33 +9m 1s | quantumai_google] Extracting: https://quantumai.google/cirq/hardware (12/28), chunk 3/11
+[17:22:38 +9m 6s | quantumai_google] Extracting: https://quantumai.google/cirq/hardware (12/28), chunk 4/11
+[17:22:47 +9m 15s | quantumai_google] Repaired malformed JSON.
+[17:22:47 +9m 15s | quantumai_google] Extracting: https://quantumai.google/cirq/hardware (12/28), chunk 5/11
+[17:22:54 +9m 22s | quantumai_google] Repaired malformed JSON.
+[17:22:54 +9m 22s | quantumai_google] Extracting: https://quantumai.google/cirq/hardware (12/28), chunk 6/11
+[17:23:01 +9m 27s | quantumai_google] Extracting: https://quantumai.google/cirq/hardware (12/28), chunk 7/11
+[17:23:11 +9m 37s | quantumai_google] Repaired malformed JSON.
+[17:23:11 +9m 37s | quantumai_google] Extracting: https://quantumai.google/cirq/hardware (12/28), chunk 8/11
+[17:23:18 +9m 44s | quantumai_google] Repaired malformed JSON.
+[17:23:18 +9m 44s | quantumai_google] Extracting: https://quantumai.google/cirq/hardware (12/28), chunk 9/11
+[17:23:27 +9m 52s | quantumai_google] Repaired malformed JSON.
+[17:23:27 +9m 52s | quantumai_google] Extracting: https://quantumai.google/cirq/hardware (12/28), chunk 10/11
+[17:23:37 +10m 1s | quantumai_google] Repaired malformed JSON.
+[17:23:37 +10m 1s | quantumai_google] Extracting: https://quantumai.google/cirq/hardware (12/28), chunk 11/11
+[17:23:41 +10m 4s | quantumai_google] Reading page (13/28): https://quantumai.google/qualtran
+[17:23:41 +10m 4s | quantumai_google] Extracting: https://quantumai.google/qualtran (13/28), chunk 1/4
+[17:23:47 +10m 10s | quantumai_google] Extracting: https://quantumai.google/qualtran (13/28), chunk 2/4
+[17:23:56 +10m 19s | quantumai_google] Repaired malformed JSON.
+[17:23:56 +10m 19s | quantumai_google] Extracting: https://quantumai.google/qualtran (13/28), chunk 3/4
+[17:24:07 +10m 28s | quantumai_google] Repaired malformed JSON.
+[17:24:07 +10m 28s | quantumai_google] Extracting: https://quantumai.google/qualtran (13/28), chunk 4/4
+[17:24:15 +10m 36s | quantumai_google] Reading page (15/28): https://quantumai.google/resources
+[17:24:15 +10m 36s | quantumai_google] Extracting: https://quantumai.google/resources (15/28), chunk 1/8
+[17:24:21 +10m 42s | quantumai_google] Extracting: https://quantumai.google/resources (15/28), chunk 2/8
+[17:24:29 +10m 50s | quantumai_google] Repaired malformed JSON.
+[17:24:29 +10m 50s | quantumai_google] Extracting: https://quantumai.google/resources (15/28), chunk 3/8
+[17:24:32 +10m 53s | quantumai_google] Extracting: https://quantumai.google/resources (15/28), chunk 4/8
+[17:24:42 +11m 0s | quantumai_google] Repaired malformed JSON.
+[17:24:42 +11m 0s | quantumai_google] Extracting: https://quantumai.google/resources (15/28), chunk 5/8
+[17:24:49 +11m 7s | quantumai_google] Repaired malformed JSON.
+[17:24:49 +11m 7s | quantumai_google] Extracting: https://quantumai.google/resources (15/28), chunk 6/8
+[17:24:54 +11m 13s | quantumai_google] Repaired malformed JSON.
+[17:24:54 +11m 13s | quantumai_google] Extracting: https://quantumai.google/resources (15/28), chunk 7/8
+[17:24:59 +11m 18s | quantumai_google] Repaired malformed JSON.
+[17:24:59 +11m 18s | quantumai_google] Extracting: https://quantumai.google/resources (15/28), chunk 8/8
+[17:25:07 +11m 26s | quantumai_google] Repaired malformed JSON.
+[17:25:07 +11m 26s | quantumai_google] Reading page (16/28): https://quantumai.google/whatisqc
+[17:25:07 +11m 26s | quantumai_google] Extracting: https://quantumai.google/whatisqc (16/28), chunk 1/8
+[17:25:16 +11m 32s | quantumai_google] Extracting: https://quantumai.google/whatisqc (16/28), chunk 2/8
+[17:25:23 +11m 39s | quantumai_google] Repaired malformed JSON.
+[17:25:23 +11m 39s | quantumai_google] Extracting: https://quantumai.google/whatisqc (16/28), chunk 3/8
+[17:25:31 +11m 47s | quantumai_google] Extracting: https://quantumai.google/whatisqc (16/28), chunk 4/8
+[17:25:36 +11m 52s | quantumai_google] Extracting: https://quantumai.google/whatisqc (16/28), chunk 5/8
+[17:25:41 +11m 57s | quantumai_google] Extracting: https://quantumai.google/whatisqc (16/28), chunk 6/8
+[17:25:45 +12m 1s | quantumai_google] Extracting: https://quantumai.google/whatisqc (16/28), chunk 7/8
+[17:25:53 +12m 6s | quantumai_google] Extracting: https://quantumai.google/whatisqc (16/28), chunk 8/8
+[17:25:59 +12m 13s | quantumai_google] Repaired malformed JSON.
+[17:25:59 +12m 13s | quantumai_google] Reading page (17/28): https://quantumai.google/reference/python/cirq/all_symbols
+[17:25:59 +12m 13s | quantumai_google] Extracting: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 1/178
+[17:26:07 +12m 21s | quantumai_google] Repaired malformed JSON.
+[17:26:07 +12m 21s | quantumai_google] Extracting: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 2/178
+[17:26:14 +12m 28s | quantumai_google] Repaired malformed JSON.
+[17:26:14 +12m 28s | quantumai_google] Extracting: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 3/178
+[17:26:21 +12m 35s | quantumai_google] Extracting: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 4/178
+[17:26:30 +12m 41s | quantumai_google] Repaired malformed JSON.
+[17:26:30 +12m 41s | quantumai_google] Extracting: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 5/178
+[17:26:31 +12m 43s | quantumai_google] Extracting: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 6/178
+[17:26:33 +12m 44s | quantumai_google] Extracting: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 7/178
+[17:26:34 +12m 46s | quantumai_google] Extracting: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 8/178
+[17:26:37 +12m 48s | quantumai_google] Extracting: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 9/178
+[17:26:41 +12m 53s | quantumai_google] Extracting: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 10/178
+[17:26:44 +12m 55s | quantumai_google] Extracting: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 11/178
+[17:26:45 +12m 57s | quantumai_google] Extracting: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 12/178
+[17:26:56 +13m 7s | quantumai_google] Repaired malformed JSON.
+[17:26:56 +13m 7s | quantumai_google] Extracting: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 13/178
+[17:27:00 +13m 9s | quantumai_google] Extracting: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 14/178
+[17:27:09 +13m 18s | quantumai_google] Extracting: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 15/178
+[17:27:13 +13m 22s | quantumai_google] Extracting: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 16/178
+[17:27:19 +13m 28s | quantumai_google] Repaired malformed JSON.
+[17:27:19 +13m 28s | quantumai_google] Extracting: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 17/178
+[17:27:21 +13m 30s | quantumai_google] Extracting: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 18/178
+[17:27:24 +13m 33s | quantumai_google] Extracting: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 19/178
+[17:27:31 +13m 40s | quantumai_google] Repaired malformed JSON.
+[17:27:31 +13m 40s | quantumai_google] Extracting: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 20/178
+[17:27:36 +13m 42s | quantumai_google] Extracting: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 21/178
+[17:27:38 +13m 44s | quantumai_google] Extracting: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 22/178
+[17:27:39 +13m 46s | quantumai_google] Extracting: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 23/178
+[17:27:41 +13m 48s | quantumai_google] Extracting: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 24/178
+[17:27:44 +13m 50s | quantumai_google] Extracting: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 25/178
+[17:27:46 +13m 52s | quantumai_google] Extracting: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 26/178
+[17:27:49 +13m 55s | quantumai_google] Extracting: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 27/178
+[17:27:50 +13m 57s | quantumai_google] Extracting: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 28/178
+[17:27:52 +13m 58s | quantumai_google] Extracting: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 29/178
+[17:27:53 +14m 0s | quantumai_google] Extracting: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 30/178
+[17:27:55 +14m 2s | quantumai_google] Extracting: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 31/178
+[17:27:57 +14m 4s | quantumai_google] Extracting: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 32/178
+[17:27:58 +14m 5s | quantumai_google] Extracting: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 33/178
+[17:28:00 +14m 7s | quantumai_google] Extracting: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 34/178
+[17:28:01 +14m 8s | quantumai_google] Extracting: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 35/178
+[17:28:03 +14m 10s | quantumai_google] Extracting: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 36/178
+[17:28:04 +14m 11s | quantumai_google] Extracting: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 37/178
+[17:28:06 +14m 12s | quantumai_google] Extracting: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 38/178
+[17:28:10 +14m 14s | quantumai_google] Extracting: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 39/178
+[17:28:11 +14m 16s | quantumai_google] Extracting: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 40/178
+[17:28:19 +14m 23s | quantumai_google] Repaired malformed JSON.
+[17:28:19 +14m 23s | quantumai_google] Extracting: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 41/178
+[17:28:25 +14m 29s | quantumai_google] Repaired malformed JSON.
+[17:28:25 +14m 29s | quantumai_google] Extracting: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 42/178
+[17:28:29 +14m 33s | quantumai_google] Extracting: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 43/178
+[17:28:33 +14m 37s | quantumai_google] Extracting: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 44/178
+[17:28:36 +14m 40s | quantumai_google] Extracting: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 45/178
+[17:28:38 +14m 42s | quantumai_google] Extracting: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 46/178
+[17:28:45 +14m 47s | quantumai_google] Extracting: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 47/178
+[17:28:50 +14m 52s | quantumai_google] Extracting: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 48/178
+[17:28:54 +14m 56s | quantumai_google] Extracting: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 49/178
+[17:28:58 +15m 0s | quantumai_google] Extracting: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 50/178
+[17:29:00 +15m 2s | quantumai_google] Extracting: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 51/178
+[17:29:01 +15m 3s | quantumai_google] Extracting: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 52/178
+[17:29:03 +15m 5s | quantumai_google] Extracting: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 53/178
+[17:29:04 +15m 6s | quantumai_google] Extracting: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 54/178
+[17:29:06 +15m 8s | quantumai_google] Extracting: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 55/178
+[17:29:08 +15m 10s | quantumai_google] Extracting: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 56/178
+[17:29:13 +15m 15s | quantumai_google] Extracting: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 57/178
+[17:29:19 +15m 18s | quantumai_google] Extracting: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 58/178
+[17:29:23 +15m 22s | quantumai_google] Extracting: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 59/178
+[17:29:26 +15m 26s | quantumai_google] Extracting: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 60/178
+[17:29:32 +15m 31s | quantumai_google] Repaired malformed JSON.
+[17:29:32 +15m 31s | quantumai_google] Extracting: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 61/178
+[17:29:36 +15m 36s | quantumai_google] Extracting: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 62/178
+[17:29:40 +15m 39s | quantumai_google] Extracting: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 63/178
+[17:29:41 +15m 41s | quantumai_google] Extracting: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 64/178
+[17:29:43 +15m 42s | quantumai_google] Extracting: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 65/178
+[17:29:50 +15m 49s | quantumai_google] Extracting: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 66/178
+[17:29:56 +15m 53s | quantumai_google] Extracting: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 67/178
+[17:29:57 +15m 54s | quantumai_google] Extracting: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 68/178
+[17:30:10 +16m 8s | quantumai_google] Extracting: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 69/178
+[17:30:12 +16m 10s | quantumai_google] Extracting: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 70/178
+[17:30:19 +16m 16s | quantumai_google] Extracting: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 71/178
+[17:30:23 +16m 20s | quantumai_google] Extracting: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 72/178
+[17:30:28 +16m 23s | quantumai_google] Extracting: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 73/178
+[17:30:33 +16m 28s | quantumai_google] Extracting: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 74/178
+[17:30:35 +16m 30s | quantumai_google] Extracting: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 75/178
+[17:30:39 +16m 34s | quantumai_google] Extracting: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 76/178
+[17:30:47 +16m 42s | quantumai_google] Repaired malformed JSON.
+[17:30:47 +16m 42s | quantumai_google] Extracting: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 77/178
+[17:30:54 +16m 49s | quantumai_google] Repaired malformed JSON.
+[17:30:54 +16m 49s | quantumai_google] Extracting: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 78/178
+[17:31:01 +16m 54s | quantumai_google] Extracting: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 79/178
+[17:31:06 +16m 59s | quantumai_google] Extracting: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 80/178
+[17:31:12 +17m 5s | quantumai_google] Extracting: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 81/178
+[17:31:16 +17m 9s | quantumai_google] Extracting: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 82/178
+[17:31:19 +17m 12s | quantumai_google] Extracting: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 83/178
+[17:31:21 +17m 14s | quantumai_google] Extracting: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 84/178
+[17:31:26 +17m 20s | quantumai_google] Repaired malformed JSON.
+[17:31:26 +17m 20s | quantumai_google] Extracting: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 85/178
+[17:31:29 +17m 23s | quantumai_google] Extracting: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 86/178
+[17:31:35 +17m 26s | quantumai_google] Extracting: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 87/178
+[17:31:39 +17m 30s | quantumai_google] Extracting: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 88/178
+[17:31:43 +17m 34s | quantumai_google] Extracting: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 89/178
+[17:31:48 +17m 39s | quantumai_google] Extracting: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 90/178
+[17:31:52 +17m 43s | quantumai_google] Extracting: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 91/178
+[17:32:02 +17m 53s | quantumai_google] Repaired malformed JSON.
+[17:32:02 +17m 53s | quantumai_google] Extracting: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 92/178
+[17:32:10 +17m 59s | quantumai_google] Extracting: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 93/178
+[17:32:15 +18m 4s | quantumai_google] Extracting: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 94/178
+[17:32:23 +18m 12s | quantumai_google] Repaired malformed JSON.
+[17:32:23 +18m 12s | quantumai_google] Extracting: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 95/178
+[17:32:28 +18m 17s | quantumai_google] Extracting: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 96/178
+[17:32:32 +18m 21s | quantumai_google] Extracting: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 97/178
+[17:32:38 +18m 27s | quantumai_google] Extracting: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 98/178
+[17:32:45 +18m 32s | quantumai_google] Extracting: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 99/178
+[17:32:53 +18m 40s | quantumai_google] Repaired malformed JSON.
+[17:32:53 +18m 40s | quantumai_google] Extracting: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 100/178
+[17:32:58 +18m 45s | quantumai_google] Extracting: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 101/178
+[17:33:03 +18m 50s | quantumai_google] Repaired malformed JSON.
+[17:33:03 +18m 50s | quantumai_google] Extracting: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 102/178
+[17:33:10 +18m 57s | quantumai_google] Repaired malformed JSON.
+[17:33:10 +18m 57s | quantumai_google] Extracting: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 103/178
+[17:33:19 +19m 4s | quantumai_google] Repaired malformed JSON.
+[17:33:19 +19m 4s | quantumai_google] Extracting: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 104/178
+[17:33:26 +19m 11s | quantumai_google] Repaired malformed JSON.
+[17:33:26 +19m 11s | quantumai_google] Extracting: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 105/178
+[17:33:31 +19m 16s | quantumai_google] Extracting: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 106/178
+[17:33:36 +19m 21s | quantumai_google] Extracting: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 107/178
+[17:33:41 +19m 26s | quantumai_google] Repaired malformed JSON.
+[17:33:41 +19m 26s | quantumai_google] Extracting: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 108/178
+[17:33:45 +19m 30s | quantumai_google] Extracting: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 109/178
+[17:33:48 +19m 33s | quantumai_google] Extracting: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 110/178
+[17:33:55 +19m 38s | quantumai_google] Extracting: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 111/178
+[17:34:02 +19m 45s | quantumai_google] Repaired malformed JSON.
+[17:34:02 +19m 45s | quantumai_google] Extracting: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 112/178
+[17:34:10 +19m 53s | quantumai_google] Repaired malformed JSON.
+[17:34:10 +19m 53s | quantumai_google] Extracting: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 113/178
+[17:34:14 +19m 57s | quantumai_google] Extracting: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 114/178
+[17:34:20 +20m 3s | quantumai_google] Extracting: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 115/178
+[17:34:31 +20m 11s | quantumai_google] Repaired malformed JSON.
+[17:34:31 +20m 11s | quantumai_google] Extracting: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 116/178
+[17:34:34 +20m 15s | quantumai_google] Extracting: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 117/178
+[17:34:39 +20m 20s | quantumai_google] Extracting: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 118/178
+[17:34:45 +20m 26s | quantumai_google] Extracting: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 119/178
+[17:34:53 +20m 33s | quantumai_google] Repaired malformed JSON.
+[17:34:53 +20m 33s | quantumai_google] Extracting: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 120/178
+[17:34:55 +20m 35s | quantumai_google] Extracting: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 121/178
+[17:34:57 +20m 38s | quantumai_google] Extracting: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 122/178
+[17:35:05 +20m 44s | quantumai_google] Repaired malformed JSON.
+[17:35:05 +20m 44s | quantumai_google] Extracting: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 123/178
+[17:35:14 +20m 52s | quantumai_google] Repaired malformed JSON.
+[17:35:14 +20m 52s | quantumai_google] Extracting: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 124/178
+[17:35:16 +20m 54s | quantumai_google] Extracting: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 125/178
+[17:35:17 +20m 56s | quantumai_google] Extracting: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 126/178
+[17:35:20 +20m 59s | quantumai_google] Extracting: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 127/178
+[17:35:24 +21m 2s | quantumai_google] Extracting: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 128/178
+[17:35:32 +21m 10s | quantumai_google] Repaired malformed JSON.
+[17:35:32 +21m 10s | quantumai_google] Extracting: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 129/178
+[17:35:41 +21m 17s | quantumai_google] Repaired malformed JSON.
+[17:35:41 +21m 17s | quantumai_google] Extracting: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 130/178
+[17:35:46 +21m 23s | quantumai_google] Repaired malformed JSON.
+[17:35:46 +21m 23s | quantumai_google] Extracting: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 131/178
+[17:35:52 +21m 28s | quantumai_google] Repaired malformed JSON.
+[17:35:52 +21m 28s | quantumai_google] Extracting: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 132/178
+[17:35:54 +21m 31s | quantumai_google] Extracting: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 133/178
+[17:36:01 +21m 37s | quantumai_google] Repaired malformed JSON.
+[17:36:01 +21m 37s | quantumai_google] Extracting: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 134/178
+[17:36:02 +21m 39s | quantumai_google] Extracting: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 135/178
+[17:36:06 +21m 42s | quantumai_google] Extracting: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 136/178
+[17:36:14 +21m 49s | quantumai_google] Repaired malformed JSON.
+[17:36:14 +21m 49s | quantumai_google] Extracting: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 137/178
+[17:36:19 +21m 54s | quantumai_google] Repaired malformed JSON.
+[17:36:19 +21m 54s | quantumai_google] Extracting: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 138/178
+[17:36:27 +22m 2s | quantumai_google] Repaired malformed JSON.
+[17:36:27 +22m 2s | quantumai_google] Extracting: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 139/178
+[17:36:37 +22m 11s | quantumai_google] Repaired malformed JSON.
+[17:36:37 +22m 11s | quantumai_google] Extracting: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 140/178
+[17:36:38 +22m 13s | quantumai_google] Extracting: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 141/178
+[17:36:40 +22m 15s | quantumai_google] Extracting: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 142/178
+[17:36:48 +22m 20s | quantumai_google] Repaired malformed JSON.
+[17:36:48 +22m 20s | quantumai_google] Extracting: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 143/178
+[17:36:55 +22m 27s | quantumai_google] Repaired malformed JSON.
+[17:36:55 +22m 27s | quantumai_google] Extracting: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 144/178
+[17:37:14 +22m 46s | quantumai_google] Repaired malformed JSON.
+[17:37:14 +22m 46s | quantumai_google] Extracting: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 145/178
+[17:37:20 +22m 50s | quantumai_google] Extracting: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 146/178
+[17:37:22 +22m 52s | quantumai_google] Extracting: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 147/178
+[17:37:24 +22m 54s | quantumai_google] Extracting: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 148/178
+[17:37:25 +22m 55s | quantumai_google] Extracting: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 149/178
+[17:37:28 +22m 58s | quantumai_google] Extracting: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 150/178
+[17:37:29 +22m 59s | quantumai_google] Extracting: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 151/178
+[17:37:34 +23m 4s | quantumai_google] Extracting: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 152/178
+[17:37:38 +23m 8s | quantumai_google] Extracting: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 153/178
+[17:37:40 +23m 10s | quantumai_google] Extracting: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 154/178
+[17:37:42 +23m 12s | quantumai_google] Extracting: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 155/178
+[17:37:43 +23m 13s | quantumai_google] Extracting: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 156/178
+[17:37:45 +23m 15s | quantumai_google] Extracting: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 157/178
+[17:37:55 +23m 23s | quantumai_google] Repaired malformed JSON.
+[17:37:55 +23m 23s | quantumai_google] Extracting: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 158/178
+[17:37:58 +23m 26s | quantumai_google] Extracting: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 159/178
+[17:38:03 +23m 30s | quantumai_google] Extracting: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 160/178
+[17:38:09 +23m 37s | quantumai_google] Repaired malformed JSON.
+[17:38:09 +23m 37s | quantumai_google] Extracting: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 161/178
+[17:38:11 +23m 39s | quantumai_google] Extracting: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 162/178
+[17:38:13 +23m 40s | quantumai_google] Extracting: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 163/178
+[17:38:20 +23m 48s | quantumai_google] Repaired malformed JSON.
+[17:38:20 +23m 48s | quantumai_google] Extracting: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 164/178
+[17:38:22 +23m 50s | quantumai_google] Extracting: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 165/178
+[17:38:24 +23m 52s | quantumai_google] Extracting: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 166/178
+[17:38:26 +23m 53s | quantumai_google] Extracting: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 167/178
+[17:38:33 +23m 59s | quantumai_google] Extracting: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 168/178
+[17:38:41 +24m 7s | quantumai_google] Repaired malformed JSON.
+[17:38:41 +24m 7s | quantumai_google] Extracting: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 169/178
+[17:38:49 +24m 14s | quantumai_google] Repaired malformed JSON.
+[17:38:49 +24m 14s | quantumai_google] Extracting: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 170/178
+[17:38:55 +24m 20s | quantumai_google] Repaired malformed JSON.
+[17:38:55 +24m 20s | quantumai_google] Extracting: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 171/178
+[17:39:07 +24m 29s | quantumai_google] Repaired malformed JSON.
+[17:39:07 +24m 29s | quantumai_google] Extracting: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 172/178
+[17:39:11 +24m 34s | quantumai_google] Extracting: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 173/178
+[17:39:14 +24m 37s | quantumai_google] Extracting: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 174/178
+[17:39:18 +24m 40s | quantumai_google] Extracting: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 175/178
+[17:39:19 +24m 42s | quantumai_google] Extracting: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 176/178
+[17:39:27 +24m 50s | quantumai_google] Extracting: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 177/178
+[17:39:35 +24m 58s | quantumai_google] Repaired malformed JSON.
+[17:39:35 +24m 58s | quantumai_google] Extracting: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 178/178
+[17:39:45 +25m 5s | quantumai_google] Reading page (18/28): https://quantumai.google/cirq/simulate
+[17:39:45 +25m 5s | quantumai_google] Extracting: https://quantumai.google/cirq/simulate (18/28), chunk 1/9
+[17:39:52 +25m 12s | quantumai_google] Repaired malformed JSON.
+[17:39:52 +25m 12s | quantumai_google] Extracting: https://quantumai.google/cirq/simulate (18/28), chunk 2/9
+[17:39:55 +25m 15s | quantumai_google] Extracting: https://quantumai.google/cirq/simulate (18/28), chunk 3/9
+[17:39:58 +25m 18s | quantumai_google] Extracting: https://quantumai.google/cirq/simulate (18/28), chunk 4/9
+[17:40:06 +25m 26s | quantumai_google] Repaired malformed JSON.
+[17:40:06 +25m 26s | quantumai_google] Extracting: https://quantumai.google/cirq/simulate (18/28), chunk 5/9
+[17:40:16 +25m 33s | quantumai_google] Extracting: https://quantumai.google/cirq/simulate (18/28), chunk 6/9
+[17:40:23 +25m 40s | quantumai_google] Extracting: https://quantumai.google/cirq/simulate (18/28), chunk 7/9
+[17:40:29 +25m 46s | quantumai_google] Repaired malformed JSON.
+[17:40:29 +25m 46s | quantumai_google] Extracting: https://quantumai.google/cirq/simulate (18/28), chunk 8/9
+[17:40:37 +25m 54s | quantumai_google] Extracting: https://quantumai.google/cirq/simulate (18/28), chunk 9/9
+[17:40:43 +26m 0s | quantumai_google] Reading page (19/28): https://quantumai.google/cirq/noise
+[17:40:43 +26m 0s | quantumai_google] Extracting: https://quantumai.google/cirq/noise (19/28), chunk 1/8
+[17:40:56 +26m 10s | quantumai_google] Repaired malformed JSON.
+[17:40:56 +26m 10s | quantumai_google] Extracting: https://quantumai.google/cirq/noise (19/28), chunk 2/8
+[17:41:02 +26m 16s | quantumai_google] Repaired malformed JSON.
+[17:41:02 +26m 16s | quantumai_google] Extracting: https://quantumai.google/cirq/noise (19/28), chunk 3/8
+[17:41:07 +26m 22s | quantumai_google] Extracting: https://quantumai.google/cirq/noise (19/28), chunk 4/8
+[17:41:12 +26m 26s | quantumai_google] Extracting: https://quantumai.google/cirq/noise (19/28), chunk 5/8
+[17:41:23 +26m 35s | quantumai_google] Repaired malformed JSON.
+[17:41:23 +26m 35s | quantumai_google] Extracting: https://quantumai.google/cirq/noise (19/28), chunk 6/8
+[17:41:32 +26m 44s | quantumai_google] Repaired malformed JSON.
+[17:41:32 +26m 44s | quantumai_google] Extracting: https://quantumai.google/cirq/noise (19/28), chunk 7/8
+[17:41:39 +26m 51s | quantumai_google] Repaired malformed JSON.
+[17:41:39 +26m 51s | quantumai_google] Extracting: https://quantumai.google/cirq/noise (19/28), chunk 8/8
+[17:41:44 +26m 57s | quantumai_google] Reading page (21/28): https://quantumai.google/openfermion
+[17:41:44 +26m 57s | quantumai_google] Extracting: https://quantumai.google/openfermion (21/28), chunk 1/8
+[17:41:47 +26m 59s | quantumai_google] Extracting: https://quantumai.google/openfermion (21/28), chunk 2/8
+[17:41:51 +27m 3s | quantumai_google] Extracting: https://quantumai.google/openfermion (21/28), chunk 3/8
+[17:42:01 +27m 11s | quantumai_google] Repaired malformed JSON.
+[17:42:01 +27m 11s | quantumai_google] Extracting: https://quantumai.google/openfermion (21/28), chunk 4/8
+[17:42:09 +27m 19s | quantumai_google] Extracting: https://quantumai.google/openfermion (21/28), chunk 5/8
+[17:42:16 +27m 26s | quantumai_google] Repaired malformed JSON.
+[17:42:16 +27m 26s | quantumai_google] Extracting: https://quantumai.google/openfermion (21/28), chunk 6/8
+[17:42:24 +27m 34s | quantumai_google] Repaired malformed JSON.
+[17:42:24 +27m 34s | quantumai_google] Extracting: https://quantumai.google/openfermion (21/28), chunk 7/8
+[17:42:33 +27m 40s | quantumai_google] Repaired malformed JSON.
+[17:42:33 +27m 40s | quantumai_google] Extracting: https://quantumai.google/openfermion (21/28), chunk 8/8
+[17:42:42 +27m 49s | quantumai_google] Repaired malformed JSON.
+[17:42:42 +27m 49s | quantumai_google] Reading page (23/28): https://quantumai.google/research
+[17:42:42 +27m 49s | quantumai_google] Extracting: https://quantumai.google/research (23/28), chunk 1/4
+[17:42:46 +27m 54s | quantumai_google] Extracting: https://quantumai.google/research (23/28), chunk 2/4
+[17:42:53 +28m 0s | quantumai_google] Extracting: https://quantumai.google/research (23/28), chunk 3/4
+[17:43:00 +28m 7s | quantumai_google] Extracting: https://quantumai.google/research (23/28), chunk 4/4
+[17:43:10 +28m 15s | quantumai_google] Repaired malformed JSON.
+[17:43:10 +28m 15s | quantumai_google] Reading page (25/28): https://quantumai.google/willowearlyaccess
+[17:43:10 +28m 15s | quantumai_google] Extracting: https://quantumai.google/willowearlyaccess (25/28), chunk 1/6
+[17:43:15 +28m 20s | quantumai_google] Extracting: https://quantumai.google/willowearlyaccess (25/28), chunk 2/6
+[17:43:22 +28m 27s | quantumai_google] Repaired malformed JSON.
+[17:43:22 +28m 27s | quantumai_google] Extracting: https://quantumai.google/willowearlyaccess (25/28), chunk 3/6
+[17:43:29 +28m 34s | quantumai_google] Extracting: https://quantumai.google/willowearlyaccess (25/28), chunk 4/6
+[17:43:37 +28m 42s | quantumai_google] Repaired malformed JSON.
+[17:43:37 +28m 42s | quantumai_google] Extracting: https://quantumai.google/willowearlyaccess (25/28), chunk 5/6
+[17:43:48 +28m 50s | quantumai_google] Extracting: https://quantumai.google/willowearlyaccess (25/28), chunk 6/6
+[17:43:57 +28m 59s | quantumai_google] Reading page (26/28): https://quantumai.google/cirq/experiments
+[17:43:57 +28m 59s | quantumai_google] Extracting: https://quantumai.google/cirq/experiments (26/28), chunk 1/15
+[17:44:03 +29m 6s | quantumai_google] Extracting: https://quantumai.google/cirq/experiments (26/28), chunk 2/15
+[17:44:07 +29m 9s | quantumai_google] Extracting: https://quantumai.google/cirq/experiments (26/28), chunk 3/15
+[17:44:10 +29m 13s | quantumai_google] Extracting: https://quantumai.google/cirq/experiments (26/28), chunk 4/15
+[17:44:19 +29m 20s | quantumai_google] Repaired malformed JSON.
+[17:44:19 +29m 20s | quantumai_google] Extracting: https://quantumai.google/cirq/experiments (26/28), chunk 5/15
+[17:44:24 +29m 24s | quantumai_google] Extracting: https://quantumai.google/cirq/experiments (26/28), chunk 6/15
+[17:44:27 +29m 28s | quantumai_google] Extracting: https://quantumai.google/cirq/experiments (26/28), chunk 7/15
+[17:44:31 +29m 31s | quantumai_google] Extracting: https://quantumai.google/cirq/experiments (26/28), chunk 8/15
+[17:44:40 +29m 40s | quantumai_google] Extracting: https://quantumai.google/cirq/experiments (26/28), chunk 9/15
+[17:44:52 +29m 50s | quantumai_google] Repaired malformed JSON.
+[17:44:52 +29m 50s | quantumai_google] Extracting: https://quantumai.google/cirq/experiments (26/28), chunk 10/15
+[17:45:01 +29m 59s | quantumai_google] Repaired malformed JSON.
+[17:45:01 +29m 59s | quantumai_google] Extracting: https://quantumai.google/cirq/experiments (26/28), chunk 11/15
+[17:45:07 +30m 5s | quantumai_google] Extracting: https://quantumai.google/cirq/experiments (26/28), chunk 12/15
+[17:45:13 +30m 11s | quantumai_google] Extracting: https://quantumai.google/cirq/experiments (26/28), chunk 13/15
+[17:45:20 +30m 18s | quantumai_google] Repaired malformed JSON.
+[17:45:20 +30m 18s | quantumai_google] Extracting: https://quantumai.google/cirq/experiments (26/28), chunk 14/15
+[17:45:31 +30m 26s | quantumai_google] Repaired malformed JSON.
+[17:45:31 +30m 26s | quantumai_google] Extracting: https://quantumai.google/cirq/experiments (26/28), chunk 15/15
+[17:45:35 +30m 31s | quantumai_google] Reading page (27/28): https://quantumai.google/cirq
+[17:45:35 +30m 31s | quantumai_google] Extracting: https://quantumai.google/cirq (27/28), chunk 1/9
+[17:45:40 +30m 35s | quantumai_google] Extracting: https://quantumai.google/cirq (27/28), chunk 2/9
+[17:45:47 +30m 42s | quantumai_google] Repaired malformed JSON.
+[17:45:47 +30m 42s | quantumai_google] Extracting: https://quantumai.google/cirq (27/28), chunk 3/9
+[17:45:52 +30m 48s | quantumai_google] Extracting: https://quantumai.google/cirq (27/28), chunk 4/9
+[17:45:57 +30m 53s | quantumai_google] Extracting: https://quantumai.google/cirq (27/28), chunk 5/9
+[17:46:01 +30m 54s | quantumai_google] Extracting: https://quantumai.google/cirq (27/28), chunk 6/9
+[17:46:08 +31m 1s | quantumai_google] Extracting: https://quantumai.google/cirq (27/28), chunk 7/9
+[17:46:12 +31m 5s | quantumai_google] Extracting: https://quantumai.google/cirq (27/28), chunk 8/9
+[17:46:16 +31m 9s | quantumai_google] Extracting: https://quantumai.google/cirq (27/28), chunk 9/9
+[17:46:22 +31m 15s | quantumai_google] Repaired malformed JSON.
+[17:46:22 +31m 15s | quantumai_google] Reading page (28/28): https://quantumai.google/cirq/start/install
+[17:46:22 +31m 15s | quantumai_google] Extracting: https://quantumai.google/cirq/start/install (28/28), chunk 1/17
+[17:46:28 +31m 21s | quantumai_google] Extracting: https://quantumai.google/cirq/start/install (28/28), chunk 2/17
+[17:46:37 +31m 27s | quantumai_google] Repaired malformed JSON.
+[17:46:37 +31m 27s | quantumai_google] Extracting: https://quantumai.google/cirq/start/install (28/28), chunk 3/17
+[17:46:40 +31m 30s | quantumai_google] Extracting: https://quantumai.google/cirq/start/install (28/28), chunk 4/17
+[17:46:49 +31m 40s | quantumai_google] Repaired malformed JSON.
+[17:46:49 +31m 40s | quantumai_google] Extracting: https://quantumai.google/cirq/start/install (28/28), chunk 5/17
+[17:46:57 +31m 48s | quantumai_google] Repaired malformed JSON.
+[17:46:57 +31m 48s | quantumai_google] Extracting: https://quantumai.google/cirq/start/install (28/28), chunk 6/17
+[17:47:05 +31m 55s | quantumai_google] Repaired malformed JSON.
+[17:47:05 +31m 55s | quantumai_google] Extracting: https://quantumai.google/cirq/start/install (28/28), chunk 7/17
+[17:47:09 +31m 57s | quantumai_google] Extracting: https://quantumai.google/cirq/start/install (28/28), chunk 8/17
+[17:47:11 +31m 59s | quantumai_google] Extracting: https://quantumai.google/cirq/start/install (28/28), chunk 9/17
+[17:47:21 +32m 9s | quantumai_google] Repaired malformed JSON.
+[17:47:21 +32m 9s | quantumai_google] Extracting: https://quantumai.google/cirq/start/install (28/28), chunk 10/17
+[17:47:22 +32m 10s | quantumai_google] Extracting: https://quantumai.google/cirq/start/install (28/28), chunk 11/17
+[17:47:25 +32m 13s | quantumai_google] Extracting: https://quantumai.google/cirq/start/install (28/28), chunk 12/17
+[17:47:32 +32m 20s | quantumai_google] Repaired malformed JSON.
+[17:47:32 +32m 20s | quantumai_google] Extracting: https://quantumai.google/cirq/start/install (28/28), chunk 13/17
+[17:47:33 +32m 21s | quantumai_google] Extracting: https://quantumai.google/cirq/start/install (28/28), chunk 14/17
+[17:47:35 +32m 23s | quantumai_google] Extracting: https://quantumai.google/cirq/start/install (28/28), chunk 15/17
+[17:47:37 +32m 25s | quantumai_google] Extracting: https://quantumai.google/cirq/start/install (28/28), chunk 16/17
+[17:47:47 +32m 33s | quantumai_google] Extracting: https://quantumai.google/cirq/start/install (28/28), chunk 17/17
+[17:47:53 +32m 39s | quantumai_google] Saved 1_actor_results.json with 463 extracted records
+
+[17:47:54 +32m 39s | quantumai_google] === 2 clean actors ===
+[17:47:54 +32m 40s | quantumai_google] Loaded 463 extracted records
+[17:47:54 +32m 40s | quantumai_google] Saved 2_actor_nodes.json with 28 canonical actor nodes
+
+[17:47:54 +32m 40s | quantumai_google] === 3 interaction extraction ===
+[17:47:55 +32m 41s | quantumai_google] Extracting interactions: https://quantumai.google/cirq/transform (3/28), chunk 1/7
+[17:48:05 +32m 51s | quantumai_google] Extracting interactions: https://quantumai.google/cirq/transform (3/28), chunk 2/7
+[17:48:07 +32m 53s | quantumai_google] Extracting interactions: https://quantumai.google/cirq/transform (3/28), chunk 3/7
+[17:48:09 +32m 54s | quantumai_google] Extracting interactions: https://quantumai.google/cirq/transform (3/28), chunk 4/7
+[17:48:20 +33m 4s | quantumai_google] Extracting interactions: https://quantumai.google/cirq/transform (3/28), chunk 5/7
+[17:48:25 +33m 8s | quantumai_google] Extracting interactions: https://quantumai.google/cirq/transform (3/28), chunk 6/7
+[17:48:28 +33m 12s | quantumai_google] Extracting interactions: https://quantumai.google/cirq/transform (3/28), chunk 7/7
+[17:48:30 +33m 13s | quantumai_google] Extracting interactions: https://quantumai.google/lab (4/28), chunk 1/7
+[17:48:34 +33m 17s | quantumai_google] Extracting interactions: https://quantumai.google/lab (4/28), chunk 2/7
+[17:48:35 +33m 18s | quantumai_google] Extracting interactions: https://quantumai.google/lab (4/28), chunk 3/7
+[17:48:39 +33m 22s | quantumai_google] Extracting interactions: https://quantumai.google/lab (4/28), chunk 6/7
+[17:48:48 +33m 31s | quantumai_google] Extracting interactions: https://quantumai.google/lab (4/28), chunk 7/7
+[17:48:49 +33m 32s | quantumai_google] Extracting interactions: https://quantumai.google/cirq/build (5/28), chunk 1/9
+[17:48:57 +33m 38s | quantumai_google] Extracting interactions: https://quantumai.google/cirq/build (5/28), chunk 2/9
+[17:48:59 +33m 39s | quantumai_google] Extracting interactions: https://quantumai.google/cirq/build (5/28), chunk 3/9
+[17:49:00 +33m 41s | quantumai_google] Extracting interactions: https://quantumai.google/cirq/build (5/28), chunk 4/9
+[17:49:02 +33m 42s | quantumai_google] Extracting interactions: https://quantumai.google/cirq/build (5/28), chunk 5/9
+[17:49:05 +33m 46s | quantumai_google] Extracting interactions: https://quantumai.google/cirq/build (5/28), chunk 6/9
+[17:49:07 +33m 48s | quantumai_google] Extracting interactions: https://quantumai.google/cirq/build (5/28), chunk 7/9
+[17:49:13 +33m 54s | quantumai_google] Extracting interactions: https://quantumai.google/cirq/build (5/28), chunk 8/9
+[17:49:21 +34m 1s | quantumai_google] Extracting interactions: https://quantumai.google/cirq/build (5/28), chunk 9/9
+[17:49:23 +34m 3s | quantumai_google] Extracting interactions: https://quantumai.google (6/28), chunk 1/10
+[17:49:24 +34m 4s | quantumai_google] Extracting interactions: https://quantumai.google (6/28), chunk 2/10
+[17:49:25 +34m 6s | quantumai_google] Extracting interactions: https://quantumai.google (6/28), chunk 3/10
+[17:49:29 +34m 7s | quantumai_google] Extracting interactions: https://quantumai.google (6/28), chunk 4/10
+[17:49:33 +34m 11s | quantumai_google] Extracting interactions: https://quantumai.google (6/28), chunk 5/10
+[17:49:38 +34m 16s | quantumai_google] Extracting interactions: https://quantumai.google (6/28), chunk 7/10
+[17:49:41 +34m 18s | quantumai_google] Extracting interactions: https://quantumai.google (6/28), chunk 9/10
+[17:49:49 +34m 27s | quantumai_google] Extracting interactions: https://quantumai.google (6/28), chunk 10/10
+[17:49:51 +34m 29s | quantumai_google] Extracting interactions: https://quantumai.google/qsim (7/28), chunk 1/9
+[17:49:52 +34m 30s | quantumai_google] Extracting interactions: https://quantumai.google/qsim (7/28), chunk 2/9
+[17:49:54 +34m 32s | quantumai_google] Extracting interactions: https://quantumai.google/qsim (7/28), chunk 3/9
+[17:49:56 +34m 33s | quantumai_google] Extracting interactions: https://quantumai.google/qsim (7/28), chunk 4/9
+[17:50:06 +34m 41s | quantumai_google] Extracting interactions: https://quantumai.google/qsim (7/28), chunk 5/9
+[17:50:18 +34m 53s | quantumai_google] Extracting interactions: https://quantumai.google/qsim (7/28), chunk 6/9
+[17:50:28 +35m 3s | quantumai_google] Extracting interactions: https://quantumai.google/qsim (7/28), chunk 7/9
+[17:50:33 +35m 8s | quantumai_google] Extracting interactions: https://quantumai.google/qsim (7/28), chunk 9/9
+[17:50:41 +35m 14s | quantumai_google] Extracting interactions: https://quantumai.google/cirq/dev/development (8/28), chunk 1/17
+[17:50:50 +35m 23s | quantumai_google] Extracting interactions: https://quantumai.google/cirq/dev/development (8/28), chunk 2/17
+[17:50:52 +35m 25s | quantumai_google] Extracting interactions: https://quantumai.google/cirq/dev/development (8/28), chunk 3/17
+[17:50:54 +35m 26s | quantumai_google] Extracting interactions: https://quantumai.google/cirq/dev/development (8/28), chunk 4/17
+[17:50:56 +35m 28s | quantumai_google] Extracting interactions: https://quantumai.google/cirq/dev/development (8/28), chunk 5/17
+[17:51:00 +35m 33s | quantumai_google] Extracting interactions: https://quantumai.google/cirq/dev/development (8/28), chunk 6/17
+[17:51:14 +35m 44s | quantumai_google] Extracting interactions: https://quantumai.google/cirq/dev/development (8/28), chunk 9/17
+[17:51:23 +35m 54s | quantumai_google] Extracting interactions: https://quantumai.google/cirq/dev/development (8/28), chunk 10/17
+[17:51:31 +36m 1s | quantumai_google] Extracting interactions: https://quantumai.google/cirq/dev/development (8/28), chunk 13/17
+[17:51:35 +36m 6s | quantumai_google] Extracting interactions: https://quantumai.google/cirq/dev/development (8/28), chunk 15/17
+[17:51:42 +36m 12s | quantumai_google] Extracting interactions: https://quantumai.google/cirq/dev/development (8/28), chunk 16/17
+[17:51:51 +36m 18s | quantumai_google] Extracting interactions: https://quantumai.google/cirq/dev/development (8/28), chunk 17/17
+[17:51:52 +36m 20s | quantumai_google] Extracting interactions: https://quantumai.google/quantumcomputer (9/28), chunk 1/8
+[17:51:56 +36m 24s | quantumai_google] Extracting interactions: https://quantumai.google/quantumcomputer (9/28), chunk 2/8
+[17:52:03 +36m 31s | quantumai_google] Extracting interactions: https://quantumai.google/quantumcomputer (9/28), chunk 3/8
+[17:52:08 +36m 35s | quantumai_google] Extracting interactions: https://quantumai.google/quantumcomputer (9/28), chunk 7/8
+[17:52:16 +36m 44s | quantumai_google] Extracting interactions: https://quantumai.google/quantumcomputer (9/28), chunk 8/8
+[17:52:18 +36m 45s | quantumai_google] Extracting interactions: https://quantumai.google/roadmap (10/28), chunk 1/4
+[17:52:25 +36m 50s | quantumai_google] Extracting interactions: https://quantumai.google/roadmap (10/28), chunk 2/4
+[17:52:27 +36m 51s | quantumai_google] Extracting interactions: https://quantumai.google/roadmap (10/28), chunk 3/4
+[17:52:35 +37m 0s | quantumai_google] Extracting interactions: https://quantumai.google/roadmap (10/28), chunk 4/4
+[17:52:39 +37m 3s | quantumai_google] Extracting interactions: https://quantumai.google/software (11/28), chunk 1/8
+[17:52:43 +37m 7s | quantumai_google] Extracting interactions: https://quantumai.google/software (11/28), chunk 2/8
+[17:52:44 +37m 9s | quantumai_google] Extracting interactions: https://quantumai.google/software (11/28), chunk 3/8
+[17:52:48 +37m 13s | quantumai_google] Extracting interactions: https://quantumai.google/software (11/28), chunk 4/8
+[17:53:00 +37m 22s | quantumai_google] Extracting interactions: https://quantumai.google/software (11/28), chunk 5/8
+[17:53:12 +37m 34s | quantumai_google] Extracting interactions: https://quantumai.google/software (11/28), chunk 6/8
+[17:53:15 +37m 37s | quantumai_google] Extracting interactions: https://quantumai.google/software (11/28), chunk 7/8
+[17:53:22 +37m 44s | quantumai_google] Extracting interactions: https://quantumai.google/software (11/28), chunk 8/8
+[17:53:23 +37m 45s | quantumai_google] Extracting interactions: https://quantumai.google/cirq/hardware (12/28), chunk 1/11
+[17:53:25 +37m 47s | quantumai_google] Extracting interactions: https://quantumai.google/cirq/hardware (12/28), chunk 2/11
+[17:53:26 +37m 48s | quantumai_google] Extracting interactions: https://quantumai.google/cirq/hardware (12/28), chunk 3/11
+[17:53:28 +37m 50s | quantumai_google] Extracting interactions: https://quantumai.google/cirq/hardware (12/28), chunk 4/11
+[17:53:42 +38m 2s | quantumai_google] Extracting interactions: https://quantumai.google/cirq/hardware (12/28), chunk 5/11
+[17:53:47 +38m 6s | quantumai_google] Extracting interactions: https://quantumai.google/cirq/hardware (12/28), chunk 6/11
+[17:53:58 +38m 18s | quantumai_google] Extracting interactions: https://quantumai.google/cirq/hardware (12/28), chunk 7/11
+[17:54:09 +38m 25s | quantumai_google] Extracting interactions: https://quantumai.google/cirq/hardware (12/28), chunk 8/11
+[17:54:19 +38m 35s | quantumai_google] Extracting interactions: https://quantumai.google/cirq/hardware (12/28), chunk 9/11
+[17:54:23 +38m 40s | quantumai_google] Extracting interactions: https://quantumai.google/cirq/hardware (12/28), chunk 10/11
+[17:54:30 +38m 47s | quantumai_google] Extracting interactions: https://quantumai.google/cirq/hardware (12/28), chunk 11/11
+[17:54:32 +38m 48s | quantumai_google] Extracting interactions: https://quantumai.google/qualtran (13/28), chunk 1/4
+[17:54:38 +38m 55s | quantumai_google] Extracting interactions: https://quantumai.google/qualtran (13/28), chunk 3/4
+[17:54:44 +38m 58s | quantumai_google] Extracting interactions: https://quantumai.google/qualtran (13/28), chunk 4/4
+[17:54:46 +38m 59s | quantumai_google] Extracting interactions: https://quantumai.google/resources (15/28), chunk 1/8
+[17:54:49 +39m 3s | quantumai_google] Extracting interactions: https://quantumai.google/resources (15/28), chunk 2/8
+[17:54:51 +39m 4s | quantumai_google] Extracting interactions: https://quantumai.google/resources (15/28), chunk 3/8
+[17:54:57 +39m 11s | quantumai_google] Extracting interactions: https://quantumai.google/resources (15/28), chunk 4/8
+[17:55:00 +39m 14s | quantumai_google] Extracting interactions: https://quantumai.google/resources (15/28), chunk 5/8
+[17:55:05 +39m 19s | quantumai_google] Extracting interactions: https://quantumai.google/resources (15/28), chunk 6/8
+[17:55:10 +39m 24s | quantumai_google] Extracting interactions: https://quantumai.google/resources (15/28), chunk 8/8
+[17:55:12 +39m 26s | quantumai_google] Extracting interactions: https://quantumai.google/whatisqc (16/28), chunk 1/8
+[17:55:18 +39m 29s | quantumai_google] Extracting interactions: https://quantumai.google/whatisqc (16/28), chunk 2/8
+[17:55:20 +39m 31s | quantumai_google] Extracting interactions: https://quantumai.google/whatisqc (16/28), chunk 3/8
+[17:55:25 +39m 36s | quantumai_google] Extracting interactions: https://quantumai.google/whatisqc (16/28), chunk 4/8
+[17:55:28 +39m 39s | quantumai_google] Extracting interactions: https://quantumai.google/whatisqc (16/28), chunk 5/8
+[17:55:31 +39m 42s | quantumai_google] Extracting interactions: https://quantumai.google/whatisqc (16/28), chunk 8/8
+[17:55:33 +39m 44s | quantumai_google] Extracting interactions: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 1/178
+[17:55:39 +39m 50s | quantumai_google] Extracting interactions: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 2/178
+[17:55:46 +39m 57s | quantumai_google] Extracting interactions: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 3/178
+[17:55:48 +39m 59s | quantumai_google] Extracting interactions: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 4/178
+[17:55:53 +40m 1s | quantumai_google] Extracting interactions: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 8/178
+[17:55:55 +40m 3s | quantumai_google] Extracting interactions: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 9/178
+[17:55:57 +40m 5s | quantumai_google] Extracting interactions: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 10/178
+[17:55:59 +40m 7s | quantumai_google] Extracting interactions: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 12/178
+[17:56:01 +40m 9s | quantumai_google] Extracting interactions: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 14/178
+[17:56:02 +40m 10s | quantumai_google] Extracting interactions: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 17/178
+[17:56:04 +40m 12s | quantumai_google] Extracting interactions: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 18/178
+[17:56:06 +40m 14s | quantumai_google] Extracting interactions: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 19/178
+[17:56:07 +40m 16s | quantumai_google] Extracting interactions: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 21/178
+[17:56:09 +40m 17s | quantumai_google] Extracting interactions: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 22/178
+[17:56:10 +40m 19s | quantumai_google] Extracting interactions: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 24/178
+[17:56:12 +40m 20s | quantumai_google] Extracting interactions: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 25/178
+[17:56:14 +40m 23s | quantumai_google] Extracting interactions: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 26/178
+[17:56:16 +40m 24s | quantumai_google] Extracting interactions: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 28/178
+[17:56:17 +40m 26s | quantumai_google] Extracting interactions: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 29/178
+[17:56:19 +40m 27s | quantumai_google] Extracting interactions: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 30/178
+[17:56:20 +40m 29s | quantumai_google] Extracting interactions: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 33/178
+[17:56:29 +40m 34s | quantumai_google] Extracting interactions: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 34/178
+[17:56:35 +40m 41s | quantumai_google] Extracting interactions: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 35/178
+[17:56:38 +40m 43s | quantumai_google] Extracting interactions: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 37/178
+[17:56:40 +40m 45s | quantumai_google] Extracting interactions: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 38/178
+[17:56:41 +40m 47s | quantumai_google] Extracting interactions: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 40/178
+[17:56:42 +40m 48s | quantumai_google] Extracting interactions: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 42/178
+[17:56:44 +40m 50s | quantumai_google] Extracting interactions: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 45/178
+[17:56:46 +40m 51s | quantumai_google] Extracting interactions: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 46/178
+[17:56:47 +40m 53s | quantumai_google] Extracting interactions: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 48/178
+[17:57:23 +41m 26s | quantumai_google] Extracting interactions: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 49/178
+[17:57:56 +41m 55s | quantumai_google] Extracting interactions: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 50/178
+[17:58:31 +42m 27s | quantumai_google] Extracting interactions: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 51/178
+[17:58:32 +42m 29s | quantumai_google] Extracting interactions: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 53/178
+[17:58:34 +42m 31s | quantumai_google] Extracting interactions: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 54/178
+[17:58:36 +42m 32s | quantumai_google] Extracting interactions: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 56/178
+[17:58:38 +42m 35s | quantumai_google] Extracting interactions: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 57/178
+[17:58:49 +42m 42s | quantumai_google] Extracting interactions: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 58/178
+[17:58:50 +42m 44s | quantumai_google] Extracting interactions: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 59/178
+[17:59:18 +43m 11s | quantumai_google] Extracting interactions: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 63/178
+[17:59:19 +43m 13s | quantumai_google] Extracting interactions: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 64/178
+[17:59:24 +43m 15s | quantumai_google] Extracting interactions: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 65/178
+[17:59:26 +43m 17s | quantumai_google] Extracting interactions: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 68/178
+[17:59:28 +43m 18s | quantumai_google] Extracting interactions: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 69/178
+[17:59:29 +43m 20s | quantumai_google] Extracting interactions: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 71/178
+[17:59:31 +43m 21s | quantumai_google] Extracting interactions: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 72/178
+[17:59:32 +43m 23s | quantumai_google] Extracting interactions: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 73/178
+[17:59:34 +43m 24s | quantumai_google] Extracting interactions: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 75/178
+[17:59:35 +43m 26s | quantumai_google] Extracting interactions: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 76/178
+[17:59:37 +43m 28s | quantumai_google] Extracting interactions: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 77/178
+[17:59:39 +43m 29s | quantumai_google] Extracting interactions: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 78/178
+[17:59:40 +43m 31s | quantumai_google] Extracting interactions: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 79/178
+[17:59:42 +43m 32s | quantumai_google] Extracting interactions: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 80/178
+[17:59:43 +43m 34s | quantumai_google] Extracting interactions: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 82/178
+[17:59:46 +43m 37s | quantumai_google] Extracting interactions: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 84/178
+[17:59:47 +43m 38s | quantumai_google] Extracting interactions: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 85/178
+[17:59:50 +43m 40s | quantumai_google] Extracting interactions: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 86/178
+[17:59:51 +43m 42s | quantumai_google] Extracting interactions: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 87/178
+[17:59:53 +43m 43s | quantumai_google] Extracting interactions: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 88/178
+[17:59:54 +43m 45s | quantumai_google] Extracting interactions: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 89/178
+[17:59:59 +43m 47s | quantumai_google] Extracting interactions: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 90/178
+[18:00:01 +43m 48s | quantumai_google] Extracting interactions: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 91/178
+[18:00:02 +43m 50s | quantumai_google] Extracting interactions: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 92/178
+[18:00:04 +43m 52s | quantumai_google] Extracting interactions: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 93/178
+[18:00:06 +43m 53s | quantumai_google] Extracting interactions: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 94/178
+[18:00:07 +43m 55s | quantumai_google] Extracting interactions: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 95/178
+[18:00:09 +43m 57s | quantumai_google] Extracting interactions: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 96/178
+[18:00:11 +43m 58s | quantumai_google] Extracting interactions: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 97/178
+[18:00:13 +44m 0s | quantumai_google] Extracting interactions: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 98/178
+[18:00:15 +44m 2s | quantumai_google] Extracting interactions: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 99/178
+[18:00:29 +44m 17s | quantumai_google] Extracting interactions: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 100/178
+[18:00:45 +44m 30s | quantumai_google] Extracting interactions: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 101/178
+[18:01:24 +45m 6s | quantumai_google] Extracting interactions: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 102/178
+[18:01:28 +45m 10s | quantumai_google] Extracting interactions: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 103/178
+[18:01:30 +45m 11s | quantumai_google] Extracting interactions: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 104/178
+[18:01:46 +45m 25s | quantumai_google] Extracting interactions: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 105/178
+[18:01:56 +45m 35s | quantumai_google] Extracting interactions: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 106/178
+[18:02:01 +45m 40s | quantumai_google] Extracting interactions: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 109/178
+[18:02:03 +45m 42s | quantumai_google] Extracting interactions: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 110/178
+[18:02:05 +45m 44s | quantumai_google] Extracting interactions: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 111/178
+[18:02:07 +45m 46s | quantumai_google] Extracting interactions: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 113/178
+[18:02:09 +45m 48s | quantumai_google] Extracting interactions: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 115/178
+[18:02:10 +45m 49s | quantumai_google] Extracting interactions: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 116/178
+[18:02:12 +45m 50s | quantumai_google] Extracting interactions: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 117/178
+[18:02:13 +45m 52s | quantumai_google] Extracting interactions: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 118/178
+[18:02:16 +45m 55s | quantumai_google] Extracting interactions: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 121/178
+[18:02:17 +45m 56s | quantumai_google] Extracting interactions: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 122/178
+[18:02:19 +45m 58s | quantumai_google] Extracting interactions: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 123/178
+[18:02:20 +45m 59s | quantumai_google] Extracting interactions: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 126/178
+[18:02:22 +46m 1s | quantumai_google] Extracting interactions: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 127/178
+[18:02:24 +46m 3s | quantumai_google] Extracting interactions: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 130/178
+[18:02:26 +46m 5s | quantumai_google] Extracting interactions: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 131/178
+[18:02:28 +46m 6s | quantumai_google] Extracting interactions: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 134/178
+[18:02:30 +46m 8s | quantumai_google] Extracting interactions: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 136/178
+[18:02:32 +46m 11s | quantumai_google] Extracting interactions: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 138/178
+[18:02:37 +46m 12s | quantumai_google] Extracting interactions: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 140/178
+[18:02:38 +46m 14s | quantumai_google] Extracting interactions: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 141/178
+[18:02:40 +46m 16s | quantumai_google] Extracting interactions: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 143/178
+[18:03:06 +46m 42s | quantumai_google] Extracting interactions: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 144/178
+[18:03:48 +47m 20s | quantumai_google] Extracting interactions: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 145/178
+[18:04:22 +47m 53s | quantumai_google] Extracting interactions: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 146/178
+[18:04:40 +48m 11s | quantumai_google] Extracting interactions: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 147/178
+[18:04:42 +48m 13s | quantumai_google] Extracting interactions: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 148/178
+[18:04:44 +48m 15s | quantumai_google] Extracting interactions: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 152/178
+[18:04:45 +48m 16s | quantumai_google] Extracting interactions: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 156/178
+[18:04:52 +48m 21s | quantumai_google] Extracting interactions: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 157/178
+[18:05:17 +48m 46s | quantumai_google] Extracting interactions: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 158/178
+[18:05:19 +48m 48s | quantumai_google] Extracting interactions: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 159/178
+[18:05:21 +48m 51s | quantumai_google] Extracting interactions: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 161/178
+[18:06:06 +49m 32s | quantumai_google] Extracting interactions: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 162/178
+[18:06:08 +49m 34s | quantumai_google] Extracting interactions: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 163/178
+[18:06:40 +50m 5s | quantumai_google] Extracting interactions: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 164/178
+[18:06:41 +50m 6s | quantumai_google] Extracting interactions: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 166/178
+[18:06:44 +50m 9s | quantumai_google] Extracting interactions: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 167/178
+[18:06:45 +50m 10s | quantumai_google] Extracting interactions: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 168/178
+[18:06:49 +50m 12s | quantumai_google] Extracting interactions: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 169/178
+[18:06:51 +50m 13s | quantumai_google] Extracting interactions: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 170/178
+[18:06:52 +50m 15s | quantumai_google] Extracting interactions: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 171/178
+[18:06:54 +50m 17s | quantumai_google] Extracting interactions: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 173/178
+[18:06:56 +50m 19s | quantumai_google] Extracting interactions: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 174/178
+[18:06:57 +50m 20s | quantumai_google] Extracting interactions: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 176/178
+[18:07:02 +50m 25s | quantumai_google] Extracting interactions: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 177/178
+[18:07:06 +50m 29s | quantumai_google] Extracting interactions: https://quantumai.google/reference/python/cirq/all_symbols (17/28), chunk 178/178
+[18:07:08 +50m 31s | quantumai_google] Extracting interactions: https://quantumai.google/cirq/simulate (18/28), chunk 1/9
+[18:07:14 +50m 37s | quantumai_google] Extracting interactions: https://quantumai.google/cirq/simulate (18/28), chunk 2/9
+[18:07:16 +50m 39s | quantumai_google] Extracting interactions: https://quantumai.google/cirq/simulate (18/28), chunk 3/9
+[18:07:17 +50m 40s | quantumai_google] Extracting interactions: https://quantumai.google/cirq/simulate (18/28), chunk 4/9
+[18:07:19 +50m 42s | quantumai_google] Extracting interactions: https://quantumai.google/cirq/simulate (18/28), chunk 5/9
+[18:07:34 +50m 55s | quantumai_google] Extracting interactions: https://quantumai.google/cirq/simulate (18/28), chunk 6/9
+[18:07:36 +50m 56s | quantumai_google] Extracting interactions: https://quantumai.google/cirq/simulate (18/28), chunk 7/9
+[18:07:45 +51m 5s | quantumai_google] Extracting interactions: https://quantumai.google/cirq/simulate (18/28), chunk 8/9
+[18:07:52 +51m 13s | quantumai_google] Extracting interactions: https://quantumai.google/cirq/simulate (18/28), chunk 9/9
+[18:07:54 +51m 14s | quantumai_google] Extracting interactions: https://quantumai.google/cirq/noise (19/28), chunk 1/8
+[18:07:55 +51m 16s | quantumai_google] Extracting interactions: https://quantumai.google/cirq/noise (19/28), chunk 2/8
+[18:07:59 +51m 18s | quantumai_google] Extracting interactions: https://quantumai.google/cirq/noise (19/28), chunk 3/8
+[18:08:12 +51m 31s | quantumai_google] Extracting interactions: https://quantumai.google/cirq/noise (19/28), chunk 4/8
+[18:08:14 +51m 33s | quantumai_google] Extracting interactions: https://quantumai.google/cirq/noise (19/28), chunk 5/8
+[18:08:23 +51m 42s | quantumai_google] Extracting interactions: https://quantumai.google/cirq/noise (19/28), chunk 6/8
+[18:08:32 +51m 49s | quantumai_google] Extracting interactions: https://quantumai.google/cirq/noise (19/28), chunk 7/8
+[18:08:37 +51m 53s | quantumai_google] Extracting interactions: https://quantumai.google/cirq/noise (19/28), chunk 8/8
+[18:08:38 +51m 55s | quantumai_google] Extracting interactions: https://quantumai.google/openfermion (21/28), chunk 1/8
+[18:08:40 +51m 57s | quantumai_google] Extracting interactions: https://quantumai.google/openfermion (21/28), chunk 2/8
+[18:08:46 +52m 3s | quantumai_google] Extracting interactions: https://quantumai.google/openfermion (21/28), chunk 3/8
+[18:08:50 +52m 7s | quantumai_google] Extracting interactions: https://quantumai.google/openfermion (21/28), chunk 4/8
+[18:08:56 +52m 13s | quantumai_google] Extracting interactions: https://quantumai.google/openfermion (21/28), chunk 5/8
+[18:09:01 +52m 17s | quantumai_google] Extracting interactions: https://quantumai.google/openfermion (21/28), chunk 6/8
+[18:09:08 +52m 22s | quantumai_google] Extracting interactions: https://quantumai.google/openfermion (21/28), chunk 7/8
+[18:09:16 +52m 30s | quantumai_google] Extracting interactions: https://quantumai.google/openfermion (21/28), chunk 8/8
+[18:09:32 +52m 46s | quantumai_google] Extracting interactions: https://quantumai.google/research (23/28), chunk 1/4
+[18:09:35 +52m 50s | quantumai_google] Extracting interactions: https://quantumai.google/research (23/28), chunk 2/4
+[18:09:37 +52m 51s | quantumai_google] Extracting interactions: https://quantumai.google/research (23/28), chunk 3/4
+[18:09:44 +52m 56s | quantumai_google] Extracting interactions: https://quantumai.google/research (23/28), chunk 4/4
+[18:09:53 +53m 5s | quantumai_google] Extracting interactions: https://quantumai.google/willowearlyaccess (25/28), chunk 1/6
+[18:09:57 +53m 9s | quantumai_google] Extracting interactions: https://quantumai.google/willowearlyaccess (25/28), chunk 2/6
+[18:09:58 +53m 10s | quantumai_google] Extracting interactions: https://quantumai.google/willowearlyaccess (25/28), chunk 3/6
+[18:10:01 +53m 14s | quantumai_google] Extracting interactions: https://quantumai.google/willowearlyaccess (25/28), chunk 6/6
+[18:10:03 +53m 15s | quantumai_google] Extracting interactions: https://quantumai.google/cirq/experiments (26/28), chunk 1/15
+[18:10:16 +53m 26s | quantumai_google] Extracting interactions: https://quantumai.google/cirq/experiments (26/28), chunk 2/15
+[18:10:17 +53m 27s | quantumai_google] Extracting interactions: https://quantumai.google/cirq/experiments (26/28), chunk 3/15
+[18:10:19 +53m 29s | quantumai_google] Extracting interactions: https://quantumai.google/cirq/experiments (26/28), chunk 4/15
+[18:10:21 +53m 31s | quantumai_google] Extracting interactions: https://quantumai.google/cirq/experiments (26/28), chunk 5/15
+[18:10:25 +53m 35s | quantumai_google] Extracting interactions: https://quantumai.google/cirq/experiments (26/28), chunk 8/15
+[18:10:30 +53m 40s | quantumai_google] Extracting interactions: https://quantumai.google/cirq/experiments (26/28), chunk 9/15
+[18:10:39 +53m 49s | quantumai_google] Extracting interactions: https://quantumai.google/cirq/experiments (26/28), chunk 10/15
+[18:10:45 +53m 55s | quantumai_google] Extracting interactions: https://quantumai.google/cirq/experiments (26/28), chunk 11/15
+[18:10:51 +54m 0s | quantumai_google] Extracting interactions: https://quantumai.google/cirq/experiments (26/28), chunk 12/15
+[18:10:55 +54m 3s | quantumai_google] Extracting interactions: https://quantumai.google/cirq/experiments (26/28), chunk 13/15
+[18:10:58 +54m 7s | quantumai_google] Extracting interactions: https://quantumai.google/cirq/experiments (26/28), chunk 14/15
+[18:11:05 +54m 14s | quantumai_google] Extracting interactions: https://quantumai.google/cirq/experiments (26/28), chunk 15/15
+[18:11:07 +54m 15s | quantumai_google] Extracting interactions: https://quantumai.google/cirq (27/28), chunk 1/9
+[18:11:11 +54m 20s | quantumai_google] Extracting interactions: https://quantumai.google/cirq (27/28), chunk 2/9
+[18:11:19 +54m 27s | quantumai_google] Extracting interactions: https://quantumai.google/cirq (27/28), chunk 3/9
+[18:11:20 +54m 29s | quantumai_google] Extracting interactions: https://quantumai.google/cirq (27/28), chunk 4/9
+[18:11:30 +54m 37s | quantumai_google] Extracting interactions: https://quantumai.google/cirq (27/28), chunk 7/9
+[18:11:33 +54m 40s | quantumai_google] Extracting interactions: https://quantumai.google/cirq (27/28), chunk 8/9
+[18:11:38 +54m 44s | quantumai_google] Extracting interactions: https://quantumai.google/cirq (27/28), chunk 9/9
+[18:11:39 +54m 46s | quantumai_google] Extracting interactions: https://quantumai.google/cirq/start/install (28/28), chunk 1/17
+[18:11:45 +54m 52s | quantumai_google] Extracting interactions: https://quantumai.google/cirq/start/install (28/28), chunk 2/17
+[18:11:47 +54m 54s | quantumai_google] Extracting interactions: https://quantumai.google/cirq/start/install (28/28), chunk 3/17
+[18:11:51 +54m 57s | quantumai_google] Extracting interactions: https://quantumai.google/cirq/start/install (28/28), chunk 4/17
+[18:12:04 +55m 9s | quantumai_google] Extracting interactions: https://quantumai.google/cirq/start/install (28/28), chunk 5/17
+[18:12:11 +55m 16s | quantumai_google] Extracting interactions: https://quantumai.google/cirq/start/install (28/28), chunk 6/17
+[18:12:14 +55m 19s | quantumai_google] Extracting interactions: https://quantumai.google/cirq/start/install (28/28), chunk 7/17
+[18:12:16 +55m 21s | quantumai_google] Extracting interactions: https://quantumai.google/cirq/start/install (28/28), chunk 8/17
+[18:12:17 +55m 22s | quantumai_google] Extracting interactions: https://quantumai.google/cirq/start/install (28/28), chunk 9/17
+[18:12:22 +55m 27s | quantumai_google] Extracting interactions: https://quantumai.google/cirq/start/install (28/28), chunk 10/17
+[18:12:25 +55m 30s | quantumai_google] Extracting interactions: https://quantumai.google/cirq/start/install (28/28), chunk 11/17
+[18:12:27 +55m 32s | quantumai_google] Extracting interactions: https://quantumai.google/cirq/start/install (28/28), chunk 12/17
+[18:12:44 +55m 47s | quantumai_google] Extracting interactions: https://quantumai.google/cirq/start/install (28/28), chunk 13/17
+[18:12:45 +55m 48s | quantumai_google] Extracting interactions: https://quantumai.google/cirq/start/install (28/28), chunk 14/17
+[18:12:47 +55m 50s | quantumai_google] Extracting interactions: https://quantumai.google/cirq/start/install (28/28), chunk 16/17
+[18:12:53 +55m 56s | quantumai_google] Extracting interactions: https://quantumai.google/cirq/start/install (28/28), chunk 17/17
+[18:12:54 +55m 57s | quantumai_google] Saved 3_interaction_results.json with 348 extracted interactions.
+
+[18:12:55 +55m 58s | quantumai_google] === 4 clean interactions ===
+[18:12:55 +55m 58s | quantumai_google] Saved 4_edges.json with 2 cleaned interactions.
+
+[18:12:55 +55m 58s | quantumai_google] === 5 helix enrichment ===
+[18:12:55 +55m 58s | quantumai_google] Wrote 5_nodes.json (28 actors)
+[18:12:55 +55m 58s | quantumai_google] Wrote 5_edges.json (2 interactions)
+[18:12:55 +55m 58s | quantumai_google] Actor helix counts: {'Academia': 1, 'Civil Society': 1, 'Industry': 17, 'Intermediary': 1, 'Unknown': 8}
+[18:12:55 +55m 58s | quantumai_google] Functional-space counts: {'Innovation': 1, 'Intra-helix / Not classified': 1}
+
+[18:12:55 +55m 58s | quantumai_google] === 6 network visualisation ===
+[18:12:57 +56m 0s | quantumai_google] Wrote quantum_network.html
+[18:12:57 +56m 0s | quantumai_google] Nodes: 28
+[18:12:57 +56m 0s | quantumai_google] Edges: 2
+
+[18:12:57 +56m 0s | quantumai_google] Done. Outputs written to: /home/lv/IDP/idpdeeptech/pipeline/site_outputs/quantumai_google
+[18:12:57 +56m 0s | quantumai_google] Log: /home/lv/IDP/idpdeeptech/pipeline/site_outputs/quantumai_google/run.log
+
+========================================================================
+RUN FINISHED 2026-06-16 18:12:57  (OK)
+Started:     2026-06-16 17:12:59
+Elapsed:     56m 0s
+========================================================================

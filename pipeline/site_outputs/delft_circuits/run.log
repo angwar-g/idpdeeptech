@@ -1,0 +1,611 @@
+
+========================================================================
+RUN STARTED  2026-06-17 00:15:14
+site_pipeline.py https://delft-circuits.com/
+========================================================================
+
+[00:15:14 +0s | delft_circuits] === 0 crawl site ===
+[00:15:16 +2s | delft_circuits] [INIT].... → Crawl4AI 0.8.6 
+[00:15:18 +3s | delft_circuits] [FETCH]... ↓ https://delft-circuits.com/                                                                          | ✓ | ⏱: 1.16s 
+[00:15:18 +3s | delft_circuits] [SCRAPE].. ◆ https://delft-circuits.com/                                                                          | ✓ | ⏱: 0.02s 
+[00:15:18 +3s | delft_circuits] [COMPLETE] ● https://delft-circuits.com/                                                                          | ✓ | ⏱: 1.20s 
+[00:15:22 +4s | delft_circuits] [FETCH]... ↓ https://delft-circuits.com/                                                                          | ✓ | ⏱: 0.92s 
+[00:15:22 +4s | delft_circuits] [SCRAPE].. ◆ https://delft-circuits.com/                                                                          | ✓ | ⏱: 0.05s 
+[00:15:22 +4s | delft_circuits] [COMPLETE] ● https://delft-circuits.com/                                                                          | ✓ | ⏱: 0.98s 
+[00:15:22 +5s | delft_circuits] [FETCH]... ↓ https://delft-circuits.com/roadmap_2025/                                                             | ✓ | ⏱: 0.96s 
+[00:15:22 +5s | delft_circuits] [SCRAPE].. ◆ https://delft-circuits.com/roadmap_2025/                                                             | ✓ | ⏱: 0.00s 
+[00:15:22 +5s | delft_circuits] [COMPLETE] ● https://delft-circuits.com/roadmap_2025/                                                             | ✗ | ⏱: 0.96s 
+[00:15:22 +5s | delft_circuits] [FETCH]... ↓ https://delft-circuits.com/privacy-policy/                                                           | ✓ | ⏱: 1.08s 
+[00:15:22 +5s | delft_circuits] [SCRAPE].. ◆ https://delft-circuits.com/privacy-policy/                                                           | ✓ | ⏱: 0.02s 
+[00:15:22 +5s | delft_circuits] [COMPLETE] ● https://delft-circuits.com/privacy-policy/                                                           | ✓ | ⏱: 1.12s 
+[00:15:23 +5s | delft_circuits] [FETCH]... ↓ https://delft-circuits.com/careers/                                                                  | ✓ | ⏱: 1.66s 
+[00:15:23 +5s | delft_circuits] [SCRAPE].. ◆ https://delft-circuits.com/careers/                                                                  | ✓ | ⏱: 0.03s 
+[00:15:23 +5s | delft_circuits] [COMPLETE] ● https://delft-circuits.com/careers/                                                                  | ✓ | ⏱: 1.71s 
+[00:15:23 +5s | delft_circuits] [FETCH]... ↓ https://delft-circuits.com/technology/                                                               | ✓ | ⏱: 1.89s 
+[00:15:23 +6s | delft_circuits] [SCRAPE].. ◆ https://delft-circuits.com/technology/                                                               | ✓ | ⏱: 0.03s 
+[00:15:23 +6s | delft_circuits] [COMPLETE] ● https://delft-circuits.com/technology/                                                               | ✓ | ⏱: 1.93s 
+[00:15:23 +6s | delft_circuits] [FETCH]... ↓ https://delft-circuits.com/news-resources/                                                           | ✓ | ⏱: 2.09s 
+[00:15:23 +6s | delft_circuits] [SCRAPE].. ◆ https://delft-circuits.com/news-resources/                                                           | ✓ | ⏱: 0.04s 
+[00:15:23 +6s | delft_circuits] [COMPLETE] ● https://delft-circuits.com/news-resources/                                                           | ✓ | ⏱: 2.15s 
+[00:15:23 +6s | delft_circuits] [FETCH]... ↓ https://delft-circuits.com/contact/                                                                  | ✓ | ⏱: 2.17s 
+[00:15:23 +6s | delft_circuits] [SCRAPE].. ◆ https://delft-circuits.com/contact/                                                                  | ✓ | ⏱: 0.02s 
+[00:15:23 +6s | delft_circuits] [COMPLETE] ● https://delft-circuits.com/contact/                                                                  | ✓ | ⏱: 2.21s 
+[00:15:24 +6s | delft_circuits] [FETCH]... ↓ https://delft-circuits.com/product-overview/                                                         | ✓ | ⏱: 2.37s 
+[00:15:24 +6s | delft_circuits] [SCRAPE].. ◆ https://delft-circuits.com/product-overview/                                                         | ✓ | ⏱: 0.04s 
+[00:15:24 +6s | delft_circuits] [COMPLETE] ● https://delft-circuits.com/product-overview/                                                         | ✓ | ⏱: 2.42s 
+[00:15:24 +6s | delft_circuits] [FETCH]... ↓ https://delft-circuits.com/company/                                                                  | ✓ | ⏱: 2.46s 
+[00:15:24 +6s | delft_circuits] [SCRAPE].. ◆ https://delft-circuits.com/company/                                                                  | ✓ | ⏱: 0.04s 
+[00:15:24 +6s | delft_circuits] [COMPLETE] ● https://delft-circuits.com/company/                                                                  | ✓ | ⏱: 2.52s 
+[00:15:24 +6s | delft_circuits] [FETCH]... ↓ https://delft-circuits.com/study--press-release/...annel-loader-validation-in-operational-testbeds/  | ✓ | ⏱: 2.61s 
+[00:15:24 +6s | delft_circuits] [SCRAPE].. ◆ https://delft-circuits.com/study--press-release/...annel-loader-validation-in-operational-testbeds/  | ✓ | ⏱: 0.03s 
+[00:15:24 +6s | delft_circuits] [COMPLETE] ● https://delft-circuits.com/study--press-release/...annel-loader-validation-in-operational-testbeds/  | ✓ | ⏱: 2.67s 
+[00:15:24 +6s | delft_circuits] [FETCH]... ↓ https://delft-circuits.com/terms-conditions/                                                         | ✓ | ⏱: 2.71s 
+[00:15:24 +6s | delft_circuits] [SCRAPE].. ◆ https://delft-circuits.com/terms-conditions/                                                         | ✓ | ⏱: 0.05s 
+[00:15:24 +6s | delft_circuits] [COMPLETE] ● https://delft-circuits.com/terms-conditions/                                                         | ✓ | ⏱: 2.78s 
+[00:15:24 +6s | delft_circuits] [FETCH]... ↓ https://delft-circuits.com/vacature/internship/                                                      | ✓ | ⏱: 2.80s 
+[00:15:24 +6s | delft_circuits] [SCRAPE].. ◆ https://delft-circuits.com/vacature/internship/                                                      | ✓ | ⏱: 0.03s 
+[00:15:24 +6s | delft_circuits] [COMPLETE] ● https://delft-circuits.com/vacature/internship/                                                      | ✓ | ⏱: 2.85s 
+[00:15:24 +7s | delft_circuits] [FETCH]... ↓ https://delft-circuits.com/study--press-release/...its-secures-funding-for-manufacturing-expansion/  | ✓ | ⏱: 2.98s 
+[00:15:24 +7s | delft_circuits] [SCRAPE].. ◆ https://delft-circuits.com/study--press-release/...its-secures-funding-for-manufacturing-expansion/  | ✓ | ⏱: 0.01s 
+[00:15:24 +7s | delft_circuits] [COMPLETE] ● https://delft-circuits.com/study--press-release/...its-secures-funding-for-manufacturing-expansion/  | ✓ | ⏱: 3.01s 
+[00:15:24 +7s | delft_circuits] [FETCH]... ↓ https://delft-circuits.com/study--press-release/...i-o-hardware-manufacturing-for-global-customers/  | ✓ | ⏱: 3.05s 
+[00:15:24 +7s | delft_circuits] [SCRAPE].. ◆ https://delft-circuits.com/study--press-release/...i-o-hardware-manufacturing-for-global-customers/  | ✓ | ⏱: 0.01s 
+[00:15:24 +7s | delft_circuits] [COMPLETE] ● https://delft-circuits.com/study--press-release/...i-o-hardware-manufacturing-for-global-customers/  | ✓ | ⏱: 3.08s 
+[00:15:24 +7s | delft_circuits] [FETCH]... ↓ https://delft-circuits.com/careers                                                                   | ✓ | ⏱: 3.19s 
+[00:15:24 +7s | delft_circuits] [SCRAPE].. ◆ https://delft-circuits.com/careers                                                                   | ✓ | ⏱: 0.02s 
+[00:15:24 +7s | delft_circuits] [COMPLETE] ● https://delft-circuits.com/careers                                                                   | ✓ | ⏱: 3.23s 
+[00:15:25 +7s | delft_circuits] [FETCH]... ↓ https://delft-circuits.com/company                                                                   | ✓ | ⏱: 3.29s 
+[00:15:25 +7s | delft_circuits] [SCRAPE].. ◆ https://delft-circuits.com/company                                                                   | ✓ | ⏱: 0.04s 
+[00:15:25 +7s | delft_circuits] [COMPLETE] ● https://delft-circuits.com/company                                                                   | ✓ | ⏱: 3.35s 
+[00:15:26 +8s | delft_circuits] [FETCH]... ↓ https://delft-circuits.com/brochure_2026_delft_circuits/                                             | ✓ | ⏱: 0.75s 
+[00:15:26 +8s | delft_circuits] [SCRAPE].. ◆ https://delft-circuits.com/brochure_2026_delft_circuits/                                             | ✓ | ⏱: 0.00s 
+[00:15:26 +8s | delft_circuits] [COMPLETE] ● https://delft-circuits.com/brochure_2026_delft_circuits/                                             | ✗ | ⏱: 0.76s 
+[00:15:26 +8s | delft_circuits] [FETCH]... ↓ https://delft-circuits.com/108mm-product-detail/                                                     | ✓ | ⏱: 0.99s 
+[00:15:26 +8s | delft_circuits] [SCRAPE].. ◆ https://delft-circuits.com/108mm-product-detail/                                                     | ✓ | ⏱: 0.02s 
+[00:15:26 +8s | delft_circuits] [COMPLETE] ● https://delft-circuits.com/108mm-product-detail/                                                     | ✓ | ⏱: 1.03s 
+[00:15:26 +8s | delft_circuits] [FETCH]... ↓ http://www.delft-circuits.com/                                                                       | ✓ | ⏱: 1.06s 
+[00:15:26 +8s | delft_circuits] [SCRAPE].. ◆ http://www.delft-circuits.com/                                                                       | ✓ | ⏱: 0.04s 
+[00:15:26 +8s | delft_circuits] [COMPLETE] ● http://www.delft-circuits.com/                                                                       | ✓ | ⏱: 1.11s 
+[00:15:26 +8s | delft_circuits] [FETCH]... ↓ https://delft-circuits.com/dc_news_article/precision-measurement-at-scale/                           | ✓ | ⏱: 1.25s 
+[00:15:26 +8s | delft_circuits] [SCRAPE].. ◆ https://delft-circuits.com/dc_news_article/precision-measurement-at-scale/                           | ✓ | ⏱: 0.02s 
+[00:15:26 +8s | delft_circuits] [COMPLETE] ● https://delft-circuits.com/dc_news_article/precision-measurement-at-scale/                           | ✓ | ⏱: 1.28s 
+[00:15:26 +9s | delft_circuits] [FETCH]... ↓ https://delft-circuits.com/dc_news_article/delft...rtin-danoesastro-as-ceo-announces-new-financing/  | ✓ | ⏱: 1.45s 
+[00:15:26 +9s | delft_circuits] [SCRAPE].. ◆ https://delft-circuits.com/dc_news_article/delft...rtin-danoesastro-as-ceo-announces-new-financing/  | ✓ | ⏱: 0.02s 
+[00:15:26 +9s | delft_circuits] [COMPLETE] ● https://delft-circuits.com/dc_news_article/delft...rtin-danoesastro-as-ceo-announces-new-financing/  | ✓ | ⏱: 1.49s 
+[00:15:26 +9s | delft_circuits] [FETCH]... ↓ https://delft-circuits.com/research-proof/drive-line-performance-matches-coaxial-standards/          | ✓ | ⏱: 1.49s 
+[00:15:26 +9s | delft_circuits] [SCRAPE].. ◆ https://delft-circuits.com/research-proof/drive-line-performance-matches-coaxial-standards/          | ✓ | ⏱: 0.02s 
+[00:15:26 +9s | delft_circuits] [COMPLETE] ● https://delft-circuits.com/research-proof/drive-line-performance-matches-coaxial-standards/          | ✓ | ⏱: 1.52s 
+[00:15:26 +9s | delft_circuits] [FETCH]... ↓ https://delft-circuits.com/dc_event/sqa-2026/                                                        | ✓ | ⏱: 1.62s 
+[00:15:26 +9s | delft_circuits] [SCRAPE].. ◆ https://delft-circuits.com/dc_event/sqa-2026/                                                        | ✓ | ⏱: 0.02s 
+[00:15:26 +9s | delft_circuits] [COMPLETE] ● https://delft-circuits.com/dc_event/sqa-2026/                                                        | ✓ | ⏱: 1.65s 
+[00:15:26 +9s | delft_circuits] [FETCH]... ↓ https://delft-circuits.com/research-proof/cri-oflex-validation-for-spin-qubits/                      | ✓ | ⏱: 1.68s 
+[00:15:26 +9s | delft_circuits] [SCRAPE].. ◆ https://delft-circuits.com/research-proof/cri-oflex-validation-for-spin-qubits/                      | ✓ | ⏱: 0.02s 
+[00:15:26 +9s | delft_circuits] [COMPLETE] ● https://delft-circuits.com/research-proof/cri-oflex-validation-for-spin-qubits/                      | ✓ | ⏱: 1.72s 
+[00:15:27 +9s | delft_circuits] [FETCH]... ↓ https://delft-circuits.com/iso-k63-product-detail/                                                   | ✓ | ⏱: 1.86s 
+[00:15:27 +9s | delft_circuits] [SCRAPE].. ◆ https://delft-circuits.com/iso-k63-product-detail/                                                   | ✓ | ⏱: 0.03s 
+[00:15:27 +9s | delft_circuits] [COMPLETE] ● https://delft-circuits.com/iso-k63-product-detail/                                                   | ✓ | ⏱: 1.91s 
+[00:15:27 +9s | delft_circuits] [FETCH]... ↓ https://delft-circuits.com/dc_news_article/delft-circuits-and-bluefors-join-forces/                  | ✓ | ⏱: 1.91s 
+[00:15:27 +9s | delft_circuits] [SCRAPE].. ◆ https://delft-circuits.com/dc_news_article/delft-circuits-and-bluefors-join-forces/                  | ✓ | ⏱: 0.03s 
+[00:15:27 +9s | delft_circuits] [COMPLETE] ● https://delft-circuits.com/dc_news_article/delft-circuits-and-bluefors-join-forces/                  | ✓ | ⏱: 1.95s 
+[00:15:27 +9s | delft_circuits] [FETCH]... ↓ https://delft-circuits.com/dc_news_article/integrated-photonic-systems-demand-integrated-i-o/        | ✓ | ⏱: 2.00s 
+[00:15:27 +9s | delft_circuits] [SCRAPE].. ◆ https://delft-circuits.com/dc_news_article/integrated-photonic-systems-demand-integrated-i-o/        | ✓ | ⏱: 0.02s 
+[00:15:27 +9s | delft_circuits] [COMPLETE] ● https://delft-circuits.com/dc_news_article/integrated-photonic-systems-demand-integrated-i-o/        | ✓ | ⏱: 2.04s 
+[00:15:27 +9s | delft_circuits] [FETCH]... ↓ https://delft-circuits.com/research-proof/flex-thermalization-enables-order-of-magnitude-gains/      | ✓ | ⏱: 2.16s 
+[00:15:27 +9s | delft_circuits] [SCRAPE].. ◆ https://delft-circuits.com/research-proof/flex-thermalization-enables-order-of-magnitude-gains/      | ✓ | ⏱: 0.02s 
+[00:15:27 +9s | delft_circuits] [COMPLETE] ● https://delft-circuits.com/research-proof/flex-thermalization-enables-order-of-magnitude-gains/      | ✓ | ⏱: 2.20s 
+[00:15:27 +10s | delft_circuits] [FETCH]... ↓ https://delft-circuits.com/dc_news_article/delft-circuits-appoints-karen-keenan-coo/                 | ✓ | ⏱: 2.51s 
+[00:15:27 +10s | delft_circuits] [SCRAPE].. ◆ https://delft-circuits.com/dc_news_article/delft-circuits-appoints-karen-keenan-coo/                 | ✓ | ⏱: 0.02s 
+[00:15:27 +10s | delft_circuits] [COMPLETE] ● https://delft-circuits.com/dc_news_article/delft-circuits-appoints-karen-keenan-coo/                 | ✓ | ⏱: 2.54s 
+[00:15:27 +10s | delft_circuits] [FETCH]... ↓ https://delft-circuits.com/dc_news_article/scaling-qubit-counts-without-compromise/                  | ✓ | ⏱: 2.54s 
+[00:15:27 +10s | delft_circuits] [SCRAPE].. ◆ https://delft-circuits.com/dc_news_article/scaling-qubit-counts-without-compromise/                  | ✓ | ⏱: 0.02s 
+[00:15:27 +10s | delft_circuits] [COMPLETE] ● https://delft-circuits.com/dc_news_article/scaling-qubit-counts-without-compromise/                  | ✓ | ⏱: 2.58s 
+[00:15:27 +10s | delft_circuits] [FETCH]... ↓ https://delft-circuits.com/dc_news_article/havik-project-cryogenic-io-two-qubit-fidelity/            | ✓ | ⏱: 2.62s 
+[00:15:27 +10s | delft_circuits] [SCRAPE].. ◆ https://delft-circuits.com/dc_news_article/havik-project-cryogenic-io-two-qubit-fidelity/            | ✓ | ⏱: 0.02s 
+[00:15:27 +10s | delft_circuits] [COMPLETE] ● https://delft-circuits.com/dc_news_article/havik-project-cryogenic-io-two-qubit-fidelity/            | ✓ | ⏱: 2.65s 
+[00:15:27 +10s | delft_circuits] [FETCH]... ↓ https://delft-circuits.com/dc_event/aps-march-meeting/                                               | ✓ | ⏱: 2.72s 
+[00:15:28 +10s | delft_circuits] [SCRAPE].. ◆ https://delft-circuits.com/dc_event/aps-march-meeting/                                               | ✓ | ⏱: 0.10s 
+[00:15:28 +10s | delft_circuits] [COMPLETE] ● https://delft-circuits.com/dc_event/aps-march-meeting/                                               | ✓ | ⏱: 2.84s 
+[00:15:28 +10s | delft_circuits] [FETCH]... ↓ https://delft-circuits.com/dc_news_article/delft-circuits-presents-its-i-o-roadmap/                  | ✓ | ⏱: 3.01s 
+[00:15:28 +10s | delft_circuits] [SCRAPE].. ◆ https://delft-circuits.com/dc_news_article/delft-circuits-presents-its-i-o-roadmap/                  | ✓ | ⏱: 0.03s 
+[00:15:28 +10s | delft_circuits] [COMPLETE] ● https://delft-circuits.com/dc_news_article/delft-circuits-presents-its-i-o-roadmap/                  | ✓ | ⏱: 3.06s 
+[00:15:28 +10s | delft_circuits] [FETCH]... ↓ https://delft-circuits.com/kf40-product-detail/                                                      | ✓ | ⏱: 3.20s 
+[00:15:28 +10s | delft_circuits] [SCRAPE].. ◆ https://delft-circuits.com/kf40-product-detail/                                                      | ✓ | ⏱: 0.03s 
+[00:15:28 +10s | delft_circuits] [COMPLETE] ● https://delft-circuits.com/kf40-product-detail/                                                      | ✓ | ⏱: 3.25s 
+[00:15:28 +10s | delft_circuits] [FETCH]... ↓ https://delft-circuits.com/vacature/open-application/                                                | ✓ | ⏱: 2.49s 
+[00:15:28 +10s | delft_circuits] [SCRAPE].. ◆ https://delft-circuits.com/vacature/open-application/                                                | ✓ | ⏱: 0.02s 
+[00:15:28 +10s | delft_circuits] [COMPLETE] ● https://delft-circuits.com/vacature/open-application/                                                | ✓ | ⏱: 2.52s 
+[00:15:28 +10s | delft_circuits] [FETCH]... ↓ https://delft-circuits.com/kf25-product-detail/                                                      | ✓ | ⏱: 3.33s 
+[00:15:28 +10s | delft_circuits] [SCRAPE].. ◆ https://delft-circuits.com/kf25-product-detail/                                                      | ✓ | ⏱: 0.02s 
+[00:15:28 +11s | delft_circuits] [COMPLETE] ● https://delft-circuits.com/kf25-product-detail/                                                      | ✓ | ⏱: 3.37s 
+[00:15:28 +11s | delft_circuits] [FETCH]... ↓ https://delft-circuits.com/dc_event/quantum-2-business/                                              | ✓ | ⏱: 3.37s 
+[00:15:28 +11s | delft_circuits] [SCRAPE].. ◆ https://delft-circuits.com/dc_event/quantum-2-business/                                              | ✓ | ⏱: 0.02s 
+[00:15:28 +11s | delft_circuits] [COMPLETE] ● https://delft-circuits.com/dc_event/quantum-2-business/                                              | ✓ | ⏱: 3.40s 
+[00:15:28 +11s | delft_circuits] [FETCH]... ↓ https://delft-circuits.com/vacature/vakantiebaan-logistiek/                                          | ✓ | ⏱: 2.39s 
+[00:15:28 +11s | delft_circuits] [SCRAPE].. ◆ https://delft-circuits.com/vacature/vakantiebaan-logistiek/                                          | ✓ | ⏱: 0.01s 
+[00:15:28 +11s | delft_circuits] [COMPLETE] ● https://delft-circuits.com/vacature/vakantiebaan-logistiek/                                          | ✓ | ⏱: 2.42s 
+[00:15:28 +11s | delft_circuits] Saved: crawl_output/3aa816f9be_delft-circuits.com.json
+[00:15:28 +11s | delft_circuits] Duplicate skipped: https://delft-circuits.com
+[00:15:28 +11s | delft_circuits] Saved: crawl_output/cf77fbddb5_delft-circuits.com_roadmap_2025.json
+[00:15:28 +11s | delft_circuits] Skipped: https://delft-circuits.com/privacy-policy
+[00:15:28 +11s | delft_circuits] Saved: crawl_output/1c6b30b8ef_delft-circuits.com_careers.json
+[00:15:28 +11s | delft_circuits] Saved: crawl_output/10a9005df9_delft-circuits.com_technology.json
+[00:15:28 +11s | delft_circuits] Saved: crawl_output/a39eaae963_delft-circuits.com_news-resources.json
+[00:15:28 +11s | delft_circuits] Saved: crawl_output/b52428bef1_delft-circuits.com_contact.json
+[00:15:28 +11s | delft_circuits] Saved: crawl_output/a803137b83_delft-circuits.com_product-overview.json
+[00:15:28 +11s | delft_circuits] Saved: crawl_output/95508e26b5_delft-circuits.com_company.json
+[00:15:28 +11s | delft_circuits] Saved: crawl_output/b1b8666af2_delft-circuits.com_study--press-release_256-channel-loader-validation-in-operational-testbeds.json
+[00:15:28 +11s | delft_circuits] Skipped: https://delft-circuits.com/terms-conditions
+[00:15:28 +11s | delft_circuits] Saved: crawl_output/02fbf55679_delft-circuits.com_vacature_internship.json
+[00:15:28 +11s | delft_circuits] Saved: crawl_output/8adb54aab0_delft-circuits.com_study--press-release_delft-circuits-secures-funding-for-manufacturing-expansion.json
+[00:15:28 +11s | delft_circuits] Saved: crawl_output/e6736e65d6_delft-circuits.com_study--press-release_delft-circuits-appoints-karen-keenan-as-coo-to-scale-quantum-i-o-hardware-manufacturing-for-global-customers.json
+[00:15:28 +11s | delft_circuits] Duplicate skipped: https://delft-circuits.com/careers
+[00:15:28 +11s | delft_circuits] Duplicate skipped: https://delft-circuits.com/company
+[00:15:28 +11s | delft_circuits] Saved: crawl_output/8fe6f68b11_delft-circuits.com_brochure_2026_delft_circuits.json
+[00:15:28 +11s | delft_circuits] Saved: crawl_output/7427e5b597_delft-circuits.com_108mm-product-detail.json
+[00:15:28 +11s | delft_circuits] Saved: crawl_output/569cd0f05c_www.delft-circuits.com.json
+[00:15:28 +11s | delft_circuits] Saved: crawl_output/cbbaffcfb7_delft-circuits.com_dc_news_article_precision-measurement-at-scale.json
+[00:15:28 +11s | delft_circuits] Saved: crawl_output/de09cafceb_delft-circuits.com_dc_news_article_delft-circuits-appoints-martin-danoesastro-as-ceo-announces-new-financing.json
+[00:15:28 +11s | delft_circuits] Saved: crawl_output/41dc40ea0b_delft-circuits.com_research-proof_drive-line-performance-matches-coaxial-standards.json
+[00:15:28 +11s | delft_circuits] Saved: crawl_output/793ea7cb0f_delft-circuits.com_dc_event_sqa-2026.json
+[00:15:28 +11s | delft_circuits] Saved: crawl_output/9be1d1dfee_delft-circuits.com_research-proof_cri-oflex-validation-for-spin-qubits.json
+[00:15:28 +11s | delft_circuits] Saved: crawl_output/77015b6f4a_delft-circuits.com_iso-k63-product-detail.json
+[00:15:28 +11s | delft_circuits] Saved: crawl_output/a95306ed18_delft-circuits.com_dc_news_article_delft-circuits-and-bluefors-join-forces.json
+[00:15:28 +11s | delft_circuits] Saved: crawl_output/fabef25ae9_delft-circuits.com_dc_news_article_integrated-photonic-systems-demand-integrated-i-o.json
+[00:15:28 +11s | delft_circuits] Saved: crawl_output/7173080653_delft-circuits.com_research-proof_flex-thermalization-enables-order-of-magnitude-gains.json
+[00:15:28 +11s | delft_circuits] Saved: crawl_output/731811a802_delft-circuits.com_dc_news_article_delft-circuits-appoints-karen-keenan-coo.json
+[00:15:28 +11s | delft_circuits] Saved: crawl_output/2640089291_delft-circuits.com_dc_news_article_scaling-qubit-counts-without-compromise.json
+[00:15:28 +11s | delft_circuits] Saved: crawl_output/855453deaf_delft-circuits.com_dc_news_article_havik-project-cryogenic-io-two-qubit-fidelity.json
+[00:15:28 +11s | delft_circuits] Saved: crawl_output/226b7dfa49_delft-circuits.com_dc_event_aps-march-meeting.json
+[00:15:28 +11s | delft_circuits] Saved: crawl_output/236e993036_delft-circuits.com_dc_news_article_delft-circuits-presents-its-i-o-roadmap.json
+[00:15:28 +11s | delft_circuits] Saved: crawl_output/ba5680e37f_delft-circuits.com_kf40-product-detail.json
+[00:15:28 +11s | delft_circuits] Saved: crawl_output/bced1936ce_delft-circuits.com_vacature_open-application.json
+[00:15:28 +11s | delft_circuits] Saved: crawl_output/c79f7f833f_delft-circuits.com_kf25-product-detail.json
+[00:15:28 +11s | delft_circuits] Saved: crawl_output/faa4a646e0_delft-circuits.com_dc_event_quantum-2-business.json
+[00:15:28 +11s | delft_circuits] Saved: crawl_output/8292c6eaf1_delft-circuits.com_vacature_vakantiebaan-logistiek.json
+
+[00:15:29 +11s | delft_circuits] === 1 actor extraction ===
+[00:15:29 +11s | delft_circuits] Reading page (1/34): https://delft-circuits.com/vacature/internship
+[00:15:29 +11s | delft_circuits] Extracting: https://delft-circuits.com/vacature/internship (1/34), chunk 1/3
+[00:15:36 +19s | delft_circuits] Extracting: https://delft-circuits.com/vacature/internship (1/34), chunk 2/3
+[00:15:45 +27s | delft_circuits] Repaired malformed JSON.
+[00:15:45 +27s | delft_circuits] Extracting: https://delft-circuits.com/vacature/internship (1/34), chunk 3/3
+[00:15:52 +34s | delft_circuits] Repaired malformed JSON.
+[00:15:52 +34s | delft_circuits] Reading page (2/34): https://delft-circuits.com/technology
+[00:15:52 +34s | delft_circuits] Extracting: https://delft-circuits.com/technology (2/34), chunk 1/10
+[00:16:00 +39s | delft_circuits] Extracting: https://delft-circuits.com/technology (2/34), chunk 2/10
+[00:16:03 +43s | delft_circuits] Extracting: https://delft-circuits.com/technology (2/34), chunk 3/10
+[00:16:08 +48s | delft_circuits] Extracting: https://delft-circuits.com/technology (2/34), chunk 4/10
+[00:16:13 +53s | delft_circuits] Extracting: https://delft-circuits.com/technology (2/34), chunk 5/10
+[00:16:18 +58s | delft_circuits] Extracting: https://delft-circuits.com/technology (2/34), chunk 6/10
+[00:16:22 +1m 2s | delft_circuits] Extracting: https://delft-circuits.com/technology (2/34), chunk 7/10
+[00:16:27 +1m 7s | delft_circuits] Extracting: https://delft-circuits.com/technology (2/34), chunk 8/10
+[00:16:35 +1m 12s | delft_circuits] Extracting: https://delft-circuits.com/technology (2/34), chunk 9/10
+[00:16:39 +1m 15s | delft_circuits] Extracting: https://delft-circuits.com/technology (2/34), chunk 10/10
+[00:16:46 +1m 23s | delft_circuits] Repaired malformed JSON.
+[00:16:46 +1m 23s | delft_circuits] Reading page (3/34): https://delft-circuits.com/careers
+[00:16:46 +1m 23s | delft_circuits] Extracting: https://delft-circuits.com/careers (3/34), chunk 1/3
+[00:16:52 +1m 29s | delft_circuits] Extracting: https://delft-circuits.com/careers (3/34), chunk 2/3
+[00:16:57 +1m 34s | delft_circuits] Extracting: https://delft-circuits.com/careers (3/34), chunk 3/3
+[00:17:02 +1m 38s | delft_circuits] Reading page (4/34): https://delft-circuits.com/dc_event/aps-march-meeting
+[00:17:02 +1m 38s | delft_circuits] Extracting: https://delft-circuits.com/dc_event/aps-march-meeting (4/34), chunk 1/4
+[00:17:08 +1m 42s | delft_circuits] Extracting: https://delft-circuits.com/dc_event/aps-march-meeting (4/34), chunk 2/4
+[00:17:17 +1m 51s | delft_circuits] Repaired malformed JSON.
+[00:17:17 +1m 51s | delft_circuits] Extracting: https://delft-circuits.com/dc_event/aps-march-meeting (4/34), chunk 3/4
+[00:17:23 +1m 57s | delft_circuits] Repaired malformed JSON.
+[00:17:23 +1m 57s | delft_circuits] Extracting: https://delft-circuits.com/dc_event/aps-march-meeting (4/34), chunk 4/4
+[00:17:31 +2m 4s | delft_circuits] Repaired malformed JSON.
+[00:17:31 +2m 4s | delft_circuits] Reading page (5/34): https://delft-circuits.com/dc_news_article/delft-circuits-presents-its-i-o-roadmap
+[00:17:31 +2m 4s | delft_circuits] Extracting: https://delft-circuits.com/dc_news_article/delft-circuits-presents-its-i-o-roadmap (5/34), chunk 1/9
+[00:17:35 +2m 9s | delft_circuits] Extracting: https://delft-circuits.com/dc_news_article/delft-circuits-presents-its-i-o-roadmap (5/34), chunk 2/9
+[00:17:39 +2m 12s | delft_circuits] Extracting: https://delft-circuits.com/dc_news_article/delft-circuits-presents-its-i-o-roadmap (5/34), chunk 3/9
+[00:17:51 +2m 21s | delft_circuits] Repaired malformed JSON.
+[00:17:51 +2m 21s | delft_circuits] Extracting: https://delft-circuits.com/dc_news_article/delft-circuits-presents-its-i-o-roadmap (5/34), chunk 4/9
+[00:17:59 +2m 30s | delft_circuits] Repaired malformed JSON.
+[00:17:59 +2m 30s | delft_circuits] Extracting: https://delft-circuits.com/dc_news_article/delft-circuits-presents-its-i-o-roadmap (5/34), chunk 5/9
+[00:18:07 +2m 38s | delft_circuits] Repaired malformed JSON.
+[00:18:07 +2m 38s | delft_circuits] Extracting: https://delft-circuits.com/dc_news_article/delft-circuits-presents-its-i-o-roadmap (5/34), chunk 6/9
+[00:18:11 +2m 42s | delft_circuits] Extracting: https://delft-circuits.com/dc_news_article/delft-circuits-presents-its-i-o-roadmap (5/34), chunk 7/9
+[00:18:21 +2m 49s | delft_circuits] Repaired malformed JSON.
+[00:18:21 +2m 49s | delft_circuits] Extracting: https://delft-circuits.com/dc_news_article/delft-circuits-presents-its-i-o-roadmap (5/34), chunk 8/9
+[00:18:27 +2m 54s | delft_circuits] Repaired malformed JSON.
+[00:18:27 +2m 54s | delft_circuits] Extracting: https://delft-circuits.com/dc_news_article/delft-circuits-presents-its-i-o-roadmap (5/34), chunk 9/9
+[00:18:32 +3m 0s | delft_circuits] Reading page (6/34): https://delft-circuits.com/dc_news_article/scaling-qubit-counts-without-compromise
+[00:18:32 +3m 0s | delft_circuits] Extracting: https://delft-circuits.com/dc_news_article/scaling-qubit-counts-without-compromise (6/34), chunk 1/7
+[00:18:37 +3m 5s | delft_circuits] Extracting: https://delft-circuits.com/dc_news_article/scaling-qubit-counts-without-compromise (6/34), chunk 2/7
+[00:18:44 +3m 11s | delft_circuits] Repaired malformed JSON.
+[00:18:44 +3m 11s | delft_circuits] Extracting: https://delft-circuits.com/dc_news_article/scaling-qubit-counts-without-compromise (6/34), chunk 3/7
+[00:18:50 +3m 18s | delft_circuits] Repaired malformed JSON.
+[00:18:50 +3m 18s | delft_circuits] Extracting: https://delft-circuits.com/dc_news_article/scaling-qubit-counts-without-compromise (6/34), chunk 4/7
+[00:19:02 +3m 26s | delft_circuits] Repaired malformed JSON.
+[00:19:02 +3m 26s | delft_circuits] Extracting: https://delft-circuits.com/dc_news_article/scaling-qubit-counts-without-compromise (6/34), chunk 5/7
+[00:19:10 +3m 34s | delft_circuits] Repaired malformed JSON.
+[00:19:10 +3m 34s | delft_circuits] Extracting: https://delft-circuits.com/dc_news_article/scaling-qubit-counts-without-compromise (6/34), chunk 6/7
+[00:19:18 +3m 42s | delft_circuits] Repaired malformed JSON.
+[00:19:18 +3m 42s | delft_circuits] Extracting: https://delft-circuits.com/dc_news_article/scaling-qubit-counts-without-compromise (6/34), chunk 7/7
+[00:19:29 +3m 50s | delft_circuits] Repaired malformed JSON.
+[00:19:29 +3m 50s | delft_circuits] Reading page (7/34): https://delft-circuits.com
+[00:19:29 +3m 50s | delft_circuits] Extracting: https://delft-circuits.com (7/34), chunk 1/6
+[00:19:31 +3m 52s | delft_circuits] Extracting: https://delft-circuits.com (7/34), chunk 2/6
+[00:19:39 +4m 0s | delft_circuits] Repaired malformed JSON.
+[00:19:39 +4m 0s | delft_circuits] Extracting: https://delft-circuits.com (7/34), chunk 3/6
+[00:19:45 +4m 6s | delft_circuits] Repaired malformed JSON.
+[00:19:45 +4m 6s | delft_circuits] Extracting: https://delft-circuits.com (7/34), chunk 4/6
+[00:19:51 +4m 12s | delft_circuits] Repaired malformed JSON.
+[00:19:51 +4m 12s | delft_circuits] Extracting: https://delft-circuits.com (7/34), chunk 5/6
+[00:19:59 +4m 20s | delft_circuits] Repaired malformed JSON.
+[00:19:59 +4m 20s | delft_circuits] Extracting: https://delft-circuits.com (7/34), chunk 6/6
+[00:20:07 +4m 25s | delft_circuits] Reading page (8/34): https://delft-circuits.com/research-proof/drive-line-performance-matches-coaxial-standards
+[00:20:07 +4m 25s | delft_circuits] Extracting: https://delft-circuits.com/research-proof/drive-line-performance-matches-coaxial-standards (8/34), chunk 1/4
+[00:20:12 +4m 30s | delft_circuits] Extracting: https://delft-circuits.com/research-proof/drive-line-performance-matches-coaxial-standards (8/34), chunk 2/4
+[00:20:18 +4m 35s | delft_circuits] Extracting: https://delft-circuits.com/research-proof/drive-line-performance-matches-coaxial-standards (8/34), chunk 3/4
+[00:20:23 +4m 40s | delft_circuits] Extracting: https://delft-circuits.com/research-proof/drive-line-performance-matches-coaxial-standards (8/34), chunk 4/4
+[00:20:24 +4m 42s | delft_circuits] Reading page (9/34): http://www.delft-circuits.com
+[00:20:24 +4m 42s | delft_circuits] Extracting: http://www.delft-circuits.com (9/34), chunk 1/8
+[00:20:29 +4m 47s | delft_circuits] Extracting: http://www.delft-circuits.com (9/34), chunk 2/8
+[00:20:35 +4m 53s | delft_circuits] Extracting: http://www.delft-circuits.com (9/34), chunk 3/8
+[00:20:45 +5m 0s | delft_circuits] Repaired malformed JSON.
+[00:20:45 +5m 0s | delft_circuits] Extracting: http://www.delft-circuits.com (9/34), chunk 4/8
+[00:20:53 +5m 8s | delft_circuits] Repaired malformed JSON.
+[00:20:53 +5m 8s | delft_circuits] Extracting: http://www.delft-circuits.com (9/34), chunk 5/8
+[00:20:59 +5m 14s | delft_circuits] Repaired malformed JSON.
+[00:20:59 +5m 14s | delft_circuits] Extracting: http://www.delft-circuits.com (9/34), chunk 6/8
+[00:21:06 +5m 21s | delft_circuits] Repaired malformed JSON.
+[00:21:06 +5m 21s | delft_circuits] Extracting: http://www.delft-circuits.com (9/34), chunk 7/8
+[00:21:17 +5m 28s | delft_circuits] Repaired malformed JSON.
+[00:21:17 +5m 28s | delft_circuits] Extracting: http://www.delft-circuits.com (9/34), chunk 8/8
+[00:21:21 +5m 32s | delft_circuits] Reading page (10/34): https://delft-circuits.com/research-proof/flex-thermalization-enables-order-of-magnitude-gains
+[00:21:21 +5m 32s | delft_circuits] Extracting: https://delft-circuits.com/research-proof/flex-thermalization-enables-order-of-magnitude-gains (10/34), chunk 1/4
+[00:21:27 +5m 39s | delft_circuits] Extracting: https://delft-circuits.com/research-proof/flex-thermalization-enables-order-of-magnitude-gains (10/34), chunk 2/4
+[00:21:35 +5m 46s | delft_circuits] Repaired malformed JSON.
+[00:21:35 +5m 46s | delft_circuits] Extracting: https://delft-circuits.com/research-proof/flex-thermalization-enables-order-of-magnitude-gains (10/34), chunk 3/4
+[00:21:43 +5m 55s | delft_circuits] Repaired malformed JSON.
+[00:21:43 +5m 55s | delft_circuits] Extracting: https://delft-circuits.com/research-proof/flex-thermalization-enables-order-of-magnitude-gains (10/34), chunk 4/4
+[00:21:51 +6m 0s | delft_circuits] Reading page (11/34): https://delft-circuits.com/dc_news_article/delft-circuits-appoints-karen-keenan-coo
+[00:21:51 +6m 0s | delft_circuits] Extracting: https://delft-circuits.com/dc_news_article/delft-circuits-appoints-karen-keenan-coo (11/34), chunk 1/7
+[00:21:59 +6m 8s | delft_circuits] Repaired malformed JSON.
+[00:21:59 +6m 8s | delft_circuits] Extracting: https://delft-circuits.com/dc_news_article/delft-circuits-appoints-karen-keenan-coo (11/34), chunk 2/7
+[00:22:07 +6m 16s | delft_circuits] Repaired malformed JSON.
+[00:22:07 +6m 16s | delft_circuits] Extracting: https://delft-circuits.com/dc_news_article/delft-circuits-appoints-karen-keenan-coo (11/34), chunk 3/7
+[00:22:14 +6m 23s | delft_circuits] Repaired malformed JSON.
+[00:22:14 +6m 23s | delft_circuits] Extracting: https://delft-circuits.com/dc_news_article/delft-circuits-appoints-karen-keenan-coo (11/34), chunk 4/7
+[00:22:20 +6m 30s | delft_circuits] Repaired malformed JSON.
+[00:22:20 +6m 30s | delft_circuits] Extracting: https://delft-circuits.com/dc_news_article/delft-circuits-appoints-karen-keenan-coo (11/34), chunk 5/7
+[00:22:33 +6m 39s | delft_circuits] Repaired malformed JSON.
+[00:22:33 +6m 39s | delft_circuits] Extracting: https://delft-circuits.com/dc_news_article/delft-circuits-appoints-karen-keenan-coo (11/34), chunk 6/7
+[00:22:42 +6m 48s | delft_circuits] Repaired malformed JSON.
+[00:22:42 +6m 48s | delft_circuits] Extracting: https://delft-circuits.com/dc_news_article/delft-circuits-appoints-karen-keenan-coo (11/34), chunk 7/7
+[00:22:49 +6m 54s | delft_circuits] Repaired malformed JSON.
+[00:22:49 +6m 54s | delft_circuits] Reading page (12/34): https://delft-circuits.com/108mm-product-detail
+[00:22:49 +6m 54s | delft_circuits] Extracting: https://delft-circuits.com/108mm-product-detail (12/34), chunk 1/4
+[00:22:55 +7m 1s | delft_circuits] Extracting: https://delft-circuits.com/108mm-product-detail (12/34), chunk 2/4
+[00:23:03 +7m 7s | delft_circuits] Extracting: https://delft-circuits.com/108mm-product-detail (12/34), chunk 3/4
+[00:23:09 +7m 12s | delft_circuits] Extracting: https://delft-circuits.com/108mm-product-detail (12/34), chunk 4/4
+[00:23:16 +7m 20s | delft_circuits] Repaired malformed JSON.
+[00:23:16 +7m 20s | delft_circuits] Reading page (13/34): https://delft-circuits.com/iso-k63-product-detail
+[00:23:16 +7m 20s | delft_circuits] Extracting: https://delft-circuits.com/iso-k63-product-detail (13/34), chunk 1/4
+[00:23:20 +7m 24s | delft_circuits] Extracting: https://delft-circuits.com/iso-k63-product-detail (13/34), chunk 2/4
+[00:23:25 +7m 29s | delft_circuits] Extracting: https://delft-circuits.com/iso-k63-product-detail (13/34), chunk 3/4
+[00:23:29 +7m 33s | delft_circuits] Extracting: https://delft-circuits.com/iso-k63-product-detail (13/34), chunk 4/4
+[00:23:38 +7m 38s | delft_circuits] Repaired malformed JSON.
+[00:23:38 +7m 38s | delft_circuits] Reading page (14/34): https://delft-circuits.com/dc_event/sqa-2026
+[00:23:38 +7m 38s | delft_circuits] Extracting: https://delft-circuits.com/dc_event/sqa-2026 (14/34), chunk 1/4
+[00:23:44 +7m 44s | delft_circuits] Extracting: https://delft-circuits.com/dc_event/sqa-2026 (14/34), chunk 2/4
+[00:23:51 +7m 51s | delft_circuits] Repaired malformed JSON.
+[00:23:51 +7m 51s | delft_circuits] Extracting: https://delft-circuits.com/dc_event/sqa-2026 (14/34), chunk 3/4
+[00:24:00 +8m 0s | delft_circuits] Repaired malformed JSON.
+[00:24:00 +8m 0s | delft_circuits] Extracting: https://delft-circuits.com/dc_event/sqa-2026 (14/34), chunk 4/4
+[00:24:10 +8m 8s | delft_circuits] Repaired malformed JSON.
+[00:24:10 +8m 8s | delft_circuits] Reading page (15/34): https://delft-circuits.com/vacature/vakantiebaan-logistiek
+[00:24:10 +8m 8s | delft_circuits] Extracting: https://delft-circuits.com/vacature/vakantiebaan-logistiek (15/34), chunk 1/6
+[00:24:16 +8m 13s | delft_circuits] Extracting: https://delft-circuits.com/vacature/vakantiebaan-logistiek (15/34), chunk 2/6
+[00:24:23 +8m 20s | delft_circuits] Extracting: https://delft-circuits.com/vacature/vakantiebaan-logistiek (15/34), chunk 3/6
+[00:24:32 +8m 30s | delft_circuits] Repaired malformed JSON.
+[00:24:32 +8m 30s | delft_circuits] Extracting: https://delft-circuits.com/vacature/vakantiebaan-logistiek (15/34), chunk 4/6
+[00:24:39 +8m 37s | delft_circuits] Extracting: https://delft-circuits.com/vacature/vakantiebaan-logistiek (15/34), chunk 5/6
+[00:24:48 +8m 42s | delft_circuits] Extracting: https://delft-circuits.com/vacature/vakantiebaan-logistiek (15/34), chunk 6/6
+[00:24:53 +8m 47s | delft_circuits] Reading page (16/34): https://delft-circuits.com/dc_news_article/havik-project-cryogenic-io-two-qubit-fidelity
+[00:24:53 +8m 47s | delft_circuits] Extracting: https://delft-circuits.com/dc_news_article/havik-project-cryogenic-io-two-qubit-fidelity (16/34), chunk 1/5
+[00:24:59 +8m 53s | delft_circuits] Extracting: https://delft-circuits.com/dc_news_article/havik-project-cryogenic-io-two-qubit-fidelity (16/34), chunk 2/5
+[00:25:05 +8m 59s | delft_circuits] Repaired malformed JSON.
+[00:25:05 +8m 59s | delft_circuits] Extracting: https://delft-circuits.com/dc_news_article/havik-project-cryogenic-io-two-qubit-fidelity (16/34), chunk 3/5
+[00:25:10 +9m 5s | delft_circuits] Repaired malformed JSON.
+[00:25:10 +9m 5s | delft_circuits] Extracting: https://delft-circuits.com/dc_news_article/havik-project-cryogenic-io-two-qubit-fidelity (16/34), chunk 4/5
+[00:25:23 +9m 14s | delft_circuits] Repaired malformed JSON.
+[00:25:23 +9m 14s | delft_circuits] Extracting: https://delft-circuits.com/dc_news_article/havik-project-cryogenic-io-two-qubit-fidelity (16/34), chunk 5/5
+[00:25:32 +9m 23s | delft_circuits] Repaired malformed JSON.
+[00:25:32 +9m 23s | delft_circuits] Reading page (17/34): https://delft-circuits.com/study--press-release/delft-circuits-secures-funding-for-manufacturing-expansion
+[00:25:32 +9m 23s | delft_circuits] Extracting: https://delft-circuits.com/study--press-release/delft-circuits-secures-funding-for-manufacturing-expansion (17/34), chunk 1/5
+[00:25:35 +9m 27s | delft_circuits] Extracting: https://delft-circuits.com/study--press-release/delft-circuits-secures-funding-for-manufacturing-expansion (17/34), chunk 2/5
+[00:25:43 +9m 34s | delft_circuits] Repaired malformed JSON.
+[00:25:43 +9m 34s | delft_circuits] Extracting: https://delft-circuits.com/study--press-release/delft-circuits-secures-funding-for-manufacturing-expansion (17/34), chunk 3/5
+[00:25:50 +9m 41s | delft_circuits] Repaired malformed JSON.
+[00:25:50 +9m 41s | delft_circuits] Extracting: https://delft-circuits.com/study--press-release/delft-circuits-secures-funding-for-manufacturing-expansion (17/34), chunk 4/5
+[00:25:58 +9m 49s | delft_circuits] Repaired malformed JSON.
+[00:25:58 +9m 49s | delft_circuits] Extracting: https://delft-circuits.com/study--press-release/delft-circuits-secures-funding-for-manufacturing-expansion (17/34), chunk 5/5
+[00:26:05 +9m 56s | delft_circuits] Repaired malformed JSON.
+[00:26:05 +9m 56s | delft_circuits] Reading page (19/34): https://delft-circuits.com/company
+[00:26:05 +9m 56s | delft_circuits] Extracting: https://delft-circuits.com/company (19/34), chunk 1/8
+[00:26:06 +9m 58s | delft_circuits] Extracting: https://delft-circuits.com/company (19/34), chunk 2/8
+[00:26:20 +10m 7s | delft_circuits] Repaired malformed JSON.
+[00:26:20 +10m 7s | delft_circuits] Extracting: https://delft-circuits.com/company (19/34), chunk 3/8
+[00:26:28 +10m 15s | delft_circuits] Repaired malformed JSON.
+[00:26:28 +10m 15s | delft_circuits] Extracting: https://delft-circuits.com/company (19/34), chunk 4/8
+[00:26:37 +10m 24s | delft_circuits] Repaired malformed JSON.
+[00:26:37 +10m 24s | delft_circuits] Extracting: https://delft-circuits.com/company (19/34), chunk 5/8
+[00:26:44 +10m 33s | delft_circuits] Repaired malformed JSON.
+[00:26:44 +10m 33s | delft_circuits] Extracting: https://delft-circuits.com/company (19/34), chunk 6/8
+[00:26:51 +10m 40s | delft_circuits] Repaired malformed JSON.
+[00:26:51 +10m 40s | delft_circuits] Extracting: https://delft-circuits.com/company (19/34), chunk 7/8
+[00:26:59 +10m 48s | delft_circuits] Repaired malformed JSON.
+[00:26:59 +10m 48s | delft_circuits] Extracting: https://delft-circuits.com/company (19/34), chunk 8/8
+[00:27:04 +10m 53s | delft_circuits] Repaired malformed JSON.
+[00:27:04 +10m 53s | delft_circuits] Reading page (20/34): https://delft-circuits.com/research-proof/cri-oflex-validation-for-spin-qubits
+[00:27:04 +10m 53s | delft_circuits] Extracting: https://delft-circuits.com/research-proof/cri-oflex-validation-for-spin-qubits (20/34), chunk 1/4
+[00:27:10 +10m 59s | delft_circuits] Extracting: https://delft-circuits.com/research-proof/cri-oflex-validation-for-spin-qubits (20/34), chunk 2/4
+[00:27:21 +11m 8s | delft_circuits] Repaired malformed JSON.
+[00:27:21 +11m 8s | delft_circuits] Extracting: https://delft-circuits.com/research-proof/cri-oflex-validation-for-spin-qubits (20/34), chunk 3/4
+[00:27:28 +11m 15s | delft_circuits] Repaired malformed JSON.
+[00:27:28 +11m 15s | delft_circuits] Extracting: https://delft-circuits.com/research-proof/cri-oflex-validation-for-spin-qubits (20/34), chunk 4/4
+[00:27:35 +11m 22s | delft_circuits] Repaired malformed JSON.
+[00:27:35 +11m 22s | delft_circuits] Reading page (21/34): https://delft-circuits.com/news-resources
+[00:27:35 +11m 22s | delft_circuits] Extracting: https://delft-circuits.com/news-resources (21/34), chunk 1/7
+[00:27:38 +11m 25s | delft_circuits] Extracting: https://delft-circuits.com/news-resources (21/34), chunk 2/7
+[00:27:45 +11m 33s | delft_circuits] Repaired malformed JSON.
+[00:27:45 +11m 33s | delft_circuits] Extracting: https://delft-circuits.com/news-resources (21/34), chunk 3/7
+[00:27:53 +11m 38s | delft_circuits] Repaired malformed JSON.
+[00:27:53 +11m 38s | delft_circuits] Extracting: https://delft-circuits.com/news-resources (21/34), chunk 4/7
+[00:28:01 +11m 46s | delft_circuits] Repaired malformed JSON.
+[00:28:01 +11m 46s | delft_circuits] Extracting: https://delft-circuits.com/news-resources (21/34), chunk 5/7
+[00:28:10 +11m 56s | delft_circuits] Repaired malformed JSON.
+[00:28:10 +11m 56s | delft_circuits] Extracting: https://delft-circuits.com/news-resources (21/34), chunk 6/7
+[00:28:17 +12m 2s | delft_circuits] Repaired malformed JSON.
+[00:28:17 +12m 2s | delft_circuits] Extracting: https://delft-circuits.com/news-resources (21/34), chunk 7/7
+[00:28:24 +12m 9s | delft_circuits] Repaired malformed JSON.
+[00:28:24 +12m 9s | delft_circuits] Reading page (22/34): https://delft-circuits.com/product-overview
+[00:28:24 +12m 9s | delft_circuits] Extracting: https://delft-circuits.com/product-overview (22/34), chunk 1/8
+[00:28:32 +12m 15s | delft_circuits] Extracting: https://delft-circuits.com/product-overview (22/34), chunk 2/8
+[00:28:38 +12m 21s | delft_circuits] Extracting: https://delft-circuits.com/product-overview (22/34), chunk 3/8
+[00:28:44 +12m 27s | delft_circuits] Extracting: https://delft-circuits.com/product-overview (22/34), chunk 4/8
+[00:28:48 +12m 31s | delft_circuits] Extracting: https://delft-circuits.com/product-overview (22/34), chunk 5/8
+[00:28:55 +12m 38s | delft_circuits] Repaired malformed JSON.
+[00:28:55 +12m 38s | delft_circuits] Extracting: https://delft-circuits.com/product-overview (22/34), chunk 6/8
+[00:29:05 +12m 46s | delft_circuits] Repaired malformed JSON.
+[00:29:05 +12m 46s | delft_circuits] Extracting: https://delft-circuits.com/product-overview (22/34), chunk 7/8
+[00:29:13 +12m 54s | delft_circuits] Repaired malformed JSON.
+[00:29:13 +12m 54s | delft_circuits] Extracting: https://delft-circuits.com/product-overview (22/34), chunk 8/8
+[00:29:20 +13m 1s | delft_circuits] Repaired malformed JSON.
+[00:29:20 +13m 1s | delft_circuits] Reading page (23/34): https://delft-circuits.com/dc_news_article/delft-circuits-and-bluefors-join-forces
+[00:29:20 +13m 1s | delft_circuits] Extracting: https://delft-circuits.com/dc_news_article/delft-circuits-and-bluefors-join-forces (23/34), chunk 1/7
+[00:29:28 +13m 9s | delft_circuits] Extracting: https://delft-circuits.com/dc_news_article/delft-circuits-and-bluefors-join-forces (23/34), chunk 2/7
+[00:29:38 +13m 17s | delft_circuits] Extracting: https://delft-circuits.com/dc_news_article/delft-circuits-and-bluefors-join-forces (23/34), chunk 3/7
+[00:29:46 +13m 25s | delft_circuits] Repaired malformed JSON.
+[00:29:46 +13m 25s | delft_circuits] Extracting: https://delft-circuits.com/dc_news_article/delft-circuits-and-bluefors-join-forces (23/34), chunk 4/7
+[00:29:56 +13m 34s | delft_circuits] Repaired malformed JSON.
+[00:29:56 +13m 34s | delft_circuits] Extracting: https://delft-circuits.com/dc_news_article/delft-circuits-and-bluefors-join-forces (23/34), chunk 5/7
+[00:30:03 +13m 41s | delft_circuits] Repaired malformed JSON.
+[00:30:03 +13m 41s | delft_circuits] Extracting: https://delft-circuits.com/dc_news_article/delft-circuits-and-bluefors-join-forces (23/34), chunk 6/7
+[00:30:14 +13m 50s | delft_circuits] Repaired malformed JSON.
+[00:30:14 +13m 50s | delft_circuits] Extracting: https://delft-circuits.com/dc_news_article/delft-circuits-and-bluefors-join-forces (23/34), chunk 7/7
+[00:30:20 +13m 56s | delft_circuits] Repaired malformed JSON.
+[00:30:20 +13m 56s | delft_circuits] Reading page (24/34): https://delft-circuits.com/study--press-release/256-channel-loader-validation-in-operational-testbeds
+[00:30:20 +13m 56s | delft_circuits] Extracting: https://delft-circuits.com/study--press-release/256-channel-loader-validation-in-operational-testbeds (24/34), chunk 1/8
+[00:30:25 +14m 1s | delft_circuits] Extracting: https://delft-circuits.com/study--press-release/256-channel-loader-validation-in-operational-testbeds (24/34), chunk 2/8
+[00:30:33 +14m 9s | delft_circuits] Repaired malformed JSON.
+[00:30:33 +14m 9s | delft_circuits] Extracting: https://delft-circuits.com/study--press-release/256-channel-loader-validation-in-operational-testbeds (24/34), chunk 3/8
+[00:30:39 +14m 15s | delft_circuits] Repaired malformed JSON.
+[00:30:39 +14m 15s | delft_circuits] Extracting: https://delft-circuits.com/study--press-release/256-channel-loader-validation-in-operational-testbeds (24/34), chunk 4/8
+[00:30:49 +14m 23s | delft_circuits] Repaired malformed JSON.
+[00:30:49 +14m 23s | delft_circuits] Extracting: https://delft-circuits.com/study--press-release/256-channel-loader-validation-in-operational-testbeds (24/34), chunk 5/8
+[00:30:55 +14m 28s | delft_circuits] Extracting: https://delft-circuits.com/study--press-release/256-channel-loader-validation-in-operational-testbeds (24/34), chunk 6/8
+[00:31:01 +14m 35s | delft_circuits] Repaired malformed JSON.
+[00:31:01 +14m 35s | delft_circuits] Extracting: https://delft-circuits.com/study--press-release/256-channel-loader-validation-in-operational-testbeds (24/34), chunk 7/8
+[00:31:09 +14m 43s | delft_circuits] Repaired malformed JSON.
+[00:31:09 +14m 43s | delft_circuits] Extracting: https://delft-circuits.com/study--press-release/256-channel-loader-validation-in-operational-testbeds (24/34), chunk 8/8
+[00:31:11 +14m 44s | delft_circuits] Reading page (25/34): https://delft-circuits.com/contact
+[00:31:11 +14m 44s | delft_circuits] Extracting: https://delft-circuits.com/contact (25/34), chunk 1/3
+[00:31:13 +14m 47s | delft_circuits] Extracting: https://delft-circuits.com/contact (25/34), chunk 2/3
+[00:31:20 +14m 52s | delft_circuits] Extracting: https://delft-circuits.com/contact (25/34), chunk 3/3
+[00:31:25 +14m 56s | delft_circuits] Reading page (26/34): https://delft-circuits.com/kf40-product-detail
+[00:31:25 +14m 56s | delft_circuits] Extracting: https://delft-circuits.com/kf40-product-detail (26/34), chunk 1/4
+[00:31:29 +15m 1s | delft_circuits] Extracting: https://delft-circuits.com/kf40-product-detail (26/34), chunk 2/4
+[00:31:33 +15m 5s | delft_circuits] Extracting: https://delft-circuits.com/kf40-product-detail (26/34), chunk 3/4
+[00:31:38 +15m 9s | delft_circuits] Extracting: https://delft-circuits.com/kf40-product-detail (26/34), chunk 4/4
+[00:31:44 +15m 15s | delft_circuits] Reading page (27/34): https://delft-circuits.com/vacature/open-application
+[00:31:44 +15m 15s | delft_circuits] Extracting: https://delft-circuits.com/vacature/open-application (27/34), chunk 1/3
+[00:31:50 +15m 21s | delft_circuits] Extracting: https://delft-circuits.com/vacature/open-application (27/34), chunk 2/3
+[00:31:56 +15m 25s | delft_circuits] Extracting: https://delft-circuits.com/vacature/open-application (27/34), chunk 3/3
+[00:32:00 +15m 29s | delft_circuits] Reading page (28/34): https://delft-circuits.com/kf25-product-detail
+[00:32:00 +15m 29s | delft_circuits] Extracting: https://delft-circuits.com/kf25-product-detail (28/34), chunk 1/4
+[00:32:04 +15m 33s | delft_circuits] Extracting: https://delft-circuits.com/kf25-product-detail (28/34), chunk 2/4
+[00:32:09 +15m 39s | delft_circuits] Extracting: https://delft-circuits.com/kf25-product-detail (28/34), chunk 3/4
+[00:32:13 +15m 42s | delft_circuits] Extracting: https://delft-circuits.com/kf25-product-detail (28/34), chunk 4/4
+[00:32:18 +15m 47s | delft_circuits] Reading page (29/34): https://delft-circuits.com/dc_news_article/precision-measurement-at-scale
+[00:32:18 +15m 47s | delft_circuits] Extracting: https://delft-circuits.com/dc_news_article/precision-measurement-at-scale (29/34), chunk 1/9
+[00:32:22 +15m 51s | delft_circuits] Extracting: https://delft-circuits.com/dc_news_article/precision-measurement-at-scale (29/34), chunk 2/9
+[00:32:30 +15m 57s | delft_circuits] Extracting: https://delft-circuits.com/dc_news_article/precision-measurement-at-scale (29/34), chunk 3/9
+[00:32:37 +16m 4s | delft_circuits] Repaired malformed JSON.
+[00:32:37 +16m 4s | delft_circuits] Extracting: https://delft-circuits.com/dc_news_article/precision-measurement-at-scale (29/34), chunk 4/9
+[00:32:45 +16m 12s | delft_circuits] Repaired malformed JSON.
+[00:32:45 +16m 12s | delft_circuits] Extracting: https://delft-circuits.com/dc_news_article/precision-measurement-at-scale (29/34), chunk 5/9
+[00:32:51 +16m 18s | delft_circuits] Repaired malformed JSON.
+[00:32:51 +16m 18s | delft_circuits] Extracting: https://delft-circuits.com/dc_news_article/precision-measurement-at-scale (29/34), chunk 6/9
+[00:32:59 +16m 26s | delft_circuits] Repaired malformed JSON.
+[00:32:59 +16m 26s | delft_circuits] Extracting: https://delft-circuits.com/dc_news_article/precision-measurement-at-scale (29/34), chunk 7/9
+[00:33:06 +16m 31s | delft_circuits] Repaired malformed JSON.
+[00:33:06 +16m 31s | delft_circuits] Extracting: https://delft-circuits.com/dc_news_article/precision-measurement-at-scale (29/34), chunk 8/9
+[00:33:14 +16m 39s | delft_circuits] Repaired malformed JSON.
+[00:33:14 +16m 39s | delft_circuits] Extracting: https://delft-circuits.com/dc_news_article/precision-measurement-at-scale (29/34), chunk 9/9
+[00:33:22 +16m 47s | delft_circuits] Repaired malformed JSON.
+[00:33:23 +16m 47s | delft_circuits] Reading page (31/34): https://delft-circuits.com/dc_news_article/delft-circuits-appoints-martin-danoesastro-as-ceo-announces-new-financing
+[00:33:23 +16m 47s | delft_circuits] Extracting: https://delft-circuits.com/dc_news_article/delft-circuits-appoints-martin-danoesastro-as-ceo-announces-new-financing (31/34), chunk 1/6
+[00:33:28 +16m 53s | delft_circuits] Repaired malformed JSON.
+[00:33:28 +16m 53s | delft_circuits] Extracting: https://delft-circuits.com/dc_news_article/delft-circuits-appoints-martin-danoesastro-as-ceo-announces-new-financing (31/34), chunk 2/6
+[00:33:33 +16m 58s | delft_circuits] Repaired malformed JSON.
+[00:33:33 +16m 58s | delft_circuits] Extracting: https://delft-circuits.com/dc_news_article/delft-circuits-appoints-martin-danoesastro-as-ceo-announces-new-financing (31/34), chunk 3/6
+[00:33:43 +17m 5s | delft_circuits] Repaired malformed JSON.
+[00:33:43 +17m 5s | delft_circuits] Extracting: https://delft-circuits.com/dc_news_article/delft-circuits-appoints-martin-danoesastro-as-ceo-announces-new-financing (31/34), chunk 4/6
+[00:33:48 +17m 11s | delft_circuits] Repaired malformed JSON.
+[00:33:48 +17m 11s | delft_circuits] Extracting: https://delft-circuits.com/dc_news_article/delft-circuits-appoints-martin-danoesastro-as-ceo-announces-new-financing (31/34), chunk 5/6
+[00:33:56 +17m 18s | delft_circuits] Repaired malformed JSON.
+[00:33:56 +17m 18s | delft_circuits] Extracting: https://delft-circuits.com/dc_news_article/delft-circuits-appoints-martin-danoesastro-as-ceo-announces-new-financing (31/34), chunk 6/6
+[00:34:01 +17m 24s | delft_circuits] Repaired malformed JSON.
+[00:34:01 +17m 24s | delft_circuits] Reading page (32/34): https://delft-circuits.com/study--press-release/delft-circuits-appoints-karen-keenan-as-coo-to-scale-quantum-i-o-hardware-manufacturing-for-global-customers
+[00:34:01 +17m 24s | delft_circuits] Extracting: https://delft-circuits.com/study--press-release/delft-circuits-appoints-karen-keenan-as-coo-to-scale-quantum-i-o-hardware-manufacturing-for-global-customers (32/34), chunk 1/7
+[00:34:13 +17m 34s | delft_circuits] Repaired malformed JSON.
+[00:34:13 +17m 34s | delft_circuits] Extracting: https://delft-circuits.com/study--press-release/delft-circuits-appoints-karen-keenan-as-coo-to-scale-quantum-i-o-hardware-manufacturing-for-global-customers (32/34), chunk 2/7
+[00:34:21 +17m 41s | delft_circuits] Repaired malformed JSON.
+[00:34:21 +17m 41s | delft_circuits] Extracting: https://delft-circuits.com/study--press-release/delft-circuits-appoints-karen-keenan-as-coo-to-scale-quantum-i-o-hardware-manufacturing-for-global-customers (32/34), chunk 3/7
+[00:34:29 +17m 49s | delft_circuits] Repaired malformed JSON.
+[00:34:29 +17m 49s | delft_circuits] Extracting: https://delft-circuits.com/study--press-release/delft-circuits-appoints-karen-keenan-as-coo-to-scale-quantum-i-o-hardware-manufacturing-for-global-customers (32/34), chunk 4/7
+[00:34:36 +17m 56s | delft_circuits] Repaired malformed JSON.
+[00:34:36 +17m 56s | delft_circuits] Extracting: https://delft-circuits.com/study--press-release/delft-circuits-appoints-karen-keenan-as-coo-to-scale-quantum-i-o-hardware-manufacturing-for-global-customers (32/34), chunk 5/7
+[00:34:46 +18m 5s | delft_circuits] Repaired malformed JSON.
+[00:34:46 +18m 5s | delft_circuits] Extracting: https://delft-circuits.com/study--press-release/delft-circuits-appoints-karen-keenan-as-coo-to-scale-quantum-i-o-hardware-manufacturing-for-global-customers (32/34), chunk 6/7
+[00:34:55 +18m 13s | delft_circuits] Repaired malformed JSON.
+[00:34:55 +18m 13s | delft_circuits] Extracting: https://delft-circuits.com/study--press-release/delft-circuits-appoints-karen-keenan-as-coo-to-scale-quantum-i-o-hardware-manufacturing-for-global-customers (32/34), chunk 7/7
+[00:35:01 +18m 19s | delft_circuits] Repaired malformed JSON.
+[00:35:01 +18m 19s | delft_circuits] Reading page (33/34): https://delft-circuits.com/dc_event/quantum-2-business
+[00:35:01 +18m 19s | delft_circuits] Extracting: https://delft-circuits.com/dc_event/quantum-2-business (33/34), chunk 1/4
+[00:35:03 +18m 21s | delft_circuits] Extracting: https://delft-circuits.com/dc_event/quantum-2-business (33/34), chunk 2/4
+[00:35:10 +18m 28s | delft_circuits] Repaired malformed JSON.
+[00:35:10 +18m 28s | delft_circuits] Extracting: https://delft-circuits.com/dc_event/quantum-2-business (33/34), chunk 3/4
+[00:35:18 +18m 36s | delft_circuits] Repaired malformed JSON.
+[00:35:18 +18m 36s | delft_circuits] Extracting: https://delft-circuits.com/dc_event/quantum-2-business (33/34), chunk 4/4
+[00:35:25 +18m 43s | delft_circuits] Repaired malformed JSON.
+[00:35:25 +18m 43s | delft_circuits] Reading page (34/34): https://delft-circuits.com/dc_news_article/integrated-photonic-systems-demand-integrated-i-o
+[00:35:25 +18m 43s | delft_circuits] Extracting: https://delft-circuits.com/dc_news_article/integrated-photonic-systems-demand-integrated-i-o (34/34), chunk 1/6
+[00:35:31 +18m 49s | delft_circuits] Extracting: https://delft-circuits.com/dc_news_article/integrated-photonic-systems-demand-integrated-i-o (34/34), chunk 2/6
+[00:35:39 +18m 57s | delft_circuits] Repaired malformed JSON.
+[00:35:39 +18m 57s | delft_circuits] Extracting: https://delft-circuits.com/dc_news_article/integrated-photonic-systems-demand-integrated-i-o (34/34), chunk 3/6
+[00:35:47 +19m 5s | delft_circuits] Repaired malformed JSON.
+[00:35:47 +19m 5s | delft_circuits] Extracting: https://delft-circuits.com/dc_news_article/integrated-photonic-systems-demand-integrated-i-o (34/34), chunk 4/6
+[00:35:56 +19m 14s | delft_circuits] Repaired malformed JSON.
+[00:35:56 +19m 14s | delft_circuits] Extracting: https://delft-circuits.com/dc_news_article/integrated-photonic-systems-demand-integrated-i-o (34/34), chunk 5/6
+[00:36:05 +19m 23s | delft_circuits] Repaired malformed JSON.
+[00:36:05 +19m 23s | delft_circuits] Extracting: https://delft-circuits.com/dc_news_article/integrated-photonic-systems-demand-integrated-i-o (34/34), chunk 6/6
+[00:36:11 +19m 28s | delft_circuits] Saved 1_actor_results.json with 296 extracted records
+
+[00:36:11 +19m 28s | delft_circuits] === 2 clean actors ===
+[00:36:12 +19m 29s | delft_circuits] Loaded 296 extracted records
+[00:36:12 +19m 29s | delft_circuits] Saved 2_actor_nodes.json with 35 canonical actor nodes
+
+[00:36:12 +19m 29s | delft_circuits] === 3 interaction extraction ===
+[00:36:12 +19m 29s | delft_circuits] Extracting interactions: https://delft-circuits.com/vacature/internship (1/34), chunk 3/3
+[00:36:15 +19m 33s | delft_circuits] Extracting interactions: https://delft-circuits.com/technology (2/34), chunk 9/10
+[00:36:17 +19m 34s | delft_circuits] Extracting interactions: https://delft-circuits.com/technology (2/34), chunk 10/10
+[00:36:19 +19m 36s | delft_circuits] Extracting interactions: https://delft-circuits.com/dc_event/aps-march-meeting (4/34), chunk 3/4
+[00:36:22 +19m 39s | delft_circuits] Extracting interactions: https://delft-circuits.com/dc_event/aps-march-meeting (4/34), chunk 4/4
+[00:36:29 +19m 44s | delft_circuits] Extracting interactions: https://delft-circuits.com/dc_news_article/delft-circuits-presents-its-i-o-roadmap (5/34), chunk 4/9
+[00:36:37 +19m 52s | delft_circuits] Extracting interactions: https://delft-circuits.com/dc_news_article/delft-circuits-presents-its-i-o-roadmap (5/34), chunk 5/9
+[00:36:45 +20m 1s | delft_circuits] Extracting interactions: https://delft-circuits.com/dc_news_article/delft-circuits-presents-its-i-o-roadmap (5/34), chunk 7/9
+[00:36:53 +20m 9s | delft_circuits] Extracting interactions: https://delft-circuits.com/dc_news_article/delft-circuits-presents-its-i-o-roadmap (5/34), chunk 8/9
+[00:37:04 +20m 18s | delft_circuits] Extracting interactions: https://delft-circuits.com/dc_news_article/scaling-qubit-counts-without-compromise (6/34), chunk 2/7
+[00:37:09 +20m 23s | delft_circuits] Extracting interactions: https://delft-circuits.com/dc_news_article/scaling-qubit-counts-without-compromise (6/34), chunk 3/7
+[00:37:18 +20m 32s | delft_circuits] Extracting interactions: https://delft-circuits.com/dc_news_article/scaling-qubit-counts-without-compromise (6/34), chunk 4/7
+[00:37:35 +20m 46s | delft_circuits] Extracting interactions: https://delft-circuits.com/dc_news_article/scaling-qubit-counts-without-compromise (6/34), chunk 5/7
+[00:37:51 +21m 2s | delft_circuits] Extracting interactions: https://delft-circuits.com/dc_news_article/scaling-qubit-counts-without-compromise (6/34), chunk 6/7
+[00:37:57 +21m 8s | delft_circuits] Extracting interactions: https://delft-circuits.com/dc_news_article/scaling-qubit-counts-without-compromise (6/34), chunk 7/7
+[00:38:02 +21m 13s | delft_circuits] Extracting interactions: https://delft-circuits.com (7/34), chunk 2/6
+[00:38:13 +21m 22s | delft_circuits] Extracting interactions: https://delft-circuits.com (7/34), chunk 3/6
+[00:38:21 +21m 30s | delft_circuits] Extracting interactions: https://delft-circuits.com (7/34), chunk 4/6
+[00:38:27 +21m 36s | delft_circuits] Extracting interactions: https://delft-circuits.com (7/34), chunk 5/6
+[00:38:32 +21m 41s | delft_circuits] Extracting interactions: https://delft-circuits.com/research-proof/drive-line-performance-matches-coaxial-standards (8/34), chunk 2/4
+[00:38:36 +21m 45s | delft_circuits] Extracting interactions: https://delft-circuits.com/research-proof/drive-line-performance-matches-coaxial-standards (8/34), chunk 3/4
+[00:38:43 +21m 50s | delft_circuits] Extracting interactions: http://www.delft-circuits.com (9/34), chunk 3/8
+[00:38:52 +21m 59s | delft_circuits] Extracting interactions: http://www.delft-circuits.com (9/34), chunk 4/8
+[00:38:55 +22m 1s | delft_circuits] Extracting interactions: http://www.delft-circuits.com (9/34), chunk 5/8
+[00:38:56 +22m 3s | delft_circuits] Extracting interactions: http://www.delft-circuits.com (9/34), chunk 6/8
+[00:39:03 +22m 10s | delft_circuits] Extracting interactions: http://www.delft-circuits.com (9/34), chunk 7/8
+[00:39:09 +22m 15s | delft_circuits] Extracting interactions: https://delft-circuits.com/research-proof/flex-thermalization-enables-order-of-magnitude-gains (10/34), chunk 2/4
+[00:39:14 +22m 20s | delft_circuits] Extracting interactions: https://delft-circuits.com/research-proof/flex-thermalization-enables-order-of-magnitude-gains (10/34), chunk 3/4
+[00:39:19 +22m 23s | delft_circuits] Extracting interactions: https://delft-circuits.com/dc_news_article/delft-circuits-appoints-karen-keenan-coo (11/34), chunk 2/7
+[00:39:25 +22m 29s | delft_circuits] Extracting interactions: https://delft-circuits.com/dc_news_article/delft-circuits-appoints-karen-keenan-coo (11/34), chunk 3/7
+[00:39:33 +22m 37s | delft_circuits] Extracting interactions: https://delft-circuits.com/dc_news_article/delft-circuits-appoints-karen-keenan-coo (11/34), chunk 4/7
+[00:40:00 +23m 1s | delft_circuits] Extracting interactions: https://delft-circuits.com/dc_news_article/delft-circuits-appoints-karen-keenan-coo (11/34), chunk 5/7
+[00:40:18 +23m 19s | delft_circuits] Extracting interactions: https://delft-circuits.com/dc_news_article/delft-circuits-appoints-karen-keenan-coo (11/34), chunk 6/7
+[00:40:40 +23m 39s | delft_circuits] Extracting interactions: https://delft-circuits.com/dc_news_article/delft-circuits-appoints-karen-keenan-coo (11/34), chunk 7/7
+[00:40:47 +23m 46s | delft_circuits] Extracting interactions: https://delft-circuits.com/dc_event/sqa-2026 (14/34), chunk 3/4
+[00:40:50 +23m 49s | delft_circuits] Extracting interactions: https://delft-circuits.com/dc_event/sqa-2026 (14/34), chunk 4/4
+[00:40:57 +23m 55s | delft_circuits] Extracting interactions: https://delft-circuits.com/dc_news_article/havik-project-cryogenic-io-two-qubit-fidelity (16/34), chunk 2/5
+[00:41:19 +24m 15s | delft_circuits] Extracting interactions: https://delft-circuits.com/dc_news_article/havik-project-cryogenic-io-two-qubit-fidelity (16/34), chunk 3/5
+[00:41:41 +24m 35s | delft_circuits] Extracting interactions: https://delft-circuits.com/dc_news_article/havik-project-cryogenic-io-two-qubit-fidelity (16/34), chunk 4/5
+[00:41:44 +24m 38s | delft_circuits] Extracting interactions: https://delft-circuits.com/dc_news_article/havik-project-cryogenic-io-two-qubit-fidelity (16/34), chunk 5/5
+[00:41:49 +24m 43s | delft_circuits] Extracting interactions: https://delft-circuits.com/study--press-release/delft-circuits-secures-funding-for-manufacturing-expansion (17/34), chunk 2/5
+[00:41:58 +24m 52s | delft_circuits] Extracting interactions: https://delft-circuits.com/study--press-release/delft-circuits-secures-funding-for-manufacturing-expansion (17/34), chunk 3/5
+[00:42:29 +25m 20s | delft_circuits] Extracting interactions: https://delft-circuits.com/study--press-release/delft-circuits-secures-funding-for-manufacturing-expansion (17/34), chunk 4/5
+[00:42:49 +25m 38s | delft_circuits] Extracting interactions: https://delft-circuits.com/study--press-release/delft-circuits-secures-funding-for-manufacturing-expansion (17/34), chunk 5/5
+[00:42:55 +25m 44s | delft_circuits] Extracting interactions: https://delft-circuits.com/company (19/34), chunk 2/8
+[00:43:00 +25m 48s | delft_circuits] Extracting interactions: https://delft-circuits.com/company (19/34), chunk 3/8
+[00:43:10 +25m 59s | delft_circuits] Extracting interactions: https://delft-circuits.com/company (19/34), chunk 4/8
+[00:43:22 +26m 8s | delft_circuits] Extracting interactions: https://delft-circuits.com/company (19/34), chunk 5/8
+[00:43:25 +26m 11s | delft_circuits] Extracting interactions: https://delft-circuits.com/company (19/34), chunk 6/8
+[00:43:27 +26m 13s | delft_circuits] Extracting interactions: https://delft-circuits.com/company (19/34), chunk 7/8
+[00:43:29 +26m 15s | delft_circuits] Extracting interactions: https://delft-circuits.com/company (19/34), chunk 8/8
+[00:43:30 +26m 16s | delft_circuits] Extracting interactions: https://delft-circuits.com/research-proof/cri-oflex-validation-for-spin-qubits (20/34), chunk 2/4
+[00:43:35 +26m 21s | delft_circuits] Extracting interactions: https://delft-circuits.com/research-proof/cri-oflex-validation-for-spin-qubits (20/34), chunk 3/4
+[00:43:43 +26m 29s | delft_circuits] Extracting interactions: https://delft-circuits.com/research-proof/cri-oflex-validation-for-spin-qubits (20/34), chunk 4/4
+[00:43:51 +26m 37s | delft_circuits] Extracting interactions: https://delft-circuits.com/news-resources (21/34), chunk 3/7
+[00:44:02 +26m 46s | delft_circuits] Extracting interactions: https://delft-circuits.com/news-resources (21/34), chunk 4/7
+[00:44:16 +26m 59s | delft_circuits] Extracting interactions: https://delft-circuits.com/news-resources (21/34), chunk 5/7
+[00:44:26 +27m 10s | delft_circuits] Extracting interactions: https://delft-circuits.com/news-resources (21/34), chunk 6/7
+[00:44:38 +27m 19s | delft_circuits] Extracting interactions: https://delft-circuits.com/news-resources (21/34), chunk 7/7
+[00:44:41 +27m 21s | delft_circuits] Extracting interactions: https://delft-circuits.com/product-overview (22/34), chunk 5/8
+[00:44:42 +27m 23s | delft_circuits] Extracting interactions: https://delft-circuits.com/product-overview (22/34), chunk 6/8
+[00:44:44 +27m 24s | delft_circuits] Extracting interactions: https://delft-circuits.com/dc_news_article/delft-circuits-and-bluefors-join-forces (23/34), chunk 2/7
+[00:44:47 +27m 27s | delft_circuits] Extracting interactions: https://delft-circuits.com/dc_news_article/delft-circuits-and-bluefors-join-forces (23/34), chunk 3/7
+[00:45:14 +27m 52s | delft_circuits] Extracting interactions: https://delft-circuits.com/dc_news_article/delft-circuits-and-bluefors-join-forces (23/34), chunk 4/7
+[00:45:32 +28m 10s | delft_circuits] Extracting interactions: https://delft-circuits.com/dc_news_article/delft-circuits-and-bluefors-join-forces (23/34), chunk 5/7
+[00:45:47 +28m 23s | delft_circuits] Extracting interactions: https://delft-circuits.com/dc_news_article/delft-circuits-and-bluefors-join-forces (23/34), chunk 6/7
+[00:45:59 +28m 34s | delft_circuits] Extracting interactions: https://delft-circuits.com/dc_news_article/delft-circuits-and-bluefors-join-forces (23/34), chunk 7/7
+[00:46:08 +28m 43s | delft_circuits] Extracting interactions: https://delft-circuits.com/study--press-release/256-channel-loader-validation-in-operational-testbeds (24/34), chunk 3/8
+[00:46:17 +28m 50s | delft_circuits] Extracting interactions: https://delft-circuits.com/study--press-release/256-channel-loader-validation-in-operational-testbeds (24/34), chunk 4/8
+[00:46:26 +28m 59s | delft_circuits] Extracting interactions: https://delft-circuits.com/study--press-release/256-channel-loader-validation-in-operational-testbeds (24/34), chunk 6/8
+[00:46:35 +29m 7s | delft_circuits] Extracting interactions: https://delft-circuits.com/study--press-release/256-channel-loader-validation-in-operational-testbeds (24/34), chunk 7/8
+[00:46:41 +29m 14s | delft_circuits] Extracting interactions: https://delft-circuits.com/contact (25/34), chunk 3/3
+[00:46:43 +29m 16s | delft_circuits] Extracting interactions: https://delft-circuits.com/kf40-product-detail (26/34), chunk 3/4
+[00:46:45 +29m 17s | delft_circuits] Extracting interactions: https://delft-circuits.com/kf25-product-detail (28/34), chunk 3/4
+[00:46:46 +29m 19s | delft_circuits] Extracting interactions: https://delft-circuits.com/dc_news_article/precision-measurement-at-scale (29/34), chunk 2/9
+[00:46:52 +29m 22s | delft_circuits] Extracting interactions: https://delft-circuits.com/dc_news_article/precision-measurement-at-scale (29/34), chunk 3/9
+[00:47:01 +29m 31s | delft_circuits] Extracting interactions: https://delft-circuits.com/dc_news_article/precision-measurement-at-scale (29/34), chunk 4/9
+[00:47:12 +29m 42s | delft_circuits] Extracting interactions: https://delft-circuits.com/dc_news_article/precision-measurement-at-scale (29/34), chunk 5/9
+[00:47:21 +29m 51s | delft_circuits] Extracting interactions: https://delft-circuits.com/dc_news_article/precision-measurement-at-scale (29/34), chunk 6/9
+[00:47:37 +30m 4s | delft_circuits] Extracting interactions: https://delft-circuits.com/dc_news_article/precision-measurement-at-scale (29/34), chunk 7/9
+[00:47:42 +30m 9s | delft_circuits] Extracting interactions: https://delft-circuits.com/dc_news_article/precision-measurement-at-scale (29/34), chunk 8/9
+[00:47:49 +30m 16s | delft_circuits] Extracting interactions: https://delft-circuits.com/dc_news_article/delft-circuits-appoints-martin-danoesastro-as-ceo-announces-new-financing (31/34), chunk 2/6
+[00:47:53 +30m 20s | delft_circuits] Extracting interactions: https://delft-circuits.com/dc_news_article/delft-circuits-appoints-martin-danoesastro-as-ceo-announces-new-financing (31/34), chunk 3/6
+[00:48:02 +30m 26s | delft_circuits] Extracting interactions: https://delft-circuits.com/dc_news_article/delft-circuits-appoints-martin-danoesastro-as-ceo-announces-new-financing (31/34), chunk 4/6
+[00:48:25 +30m 49s | delft_circuits] Extracting interactions: https://delft-circuits.com/dc_news_article/delft-circuits-appoints-martin-danoesastro-as-ceo-announces-new-financing (31/34), chunk 5/6
+[00:49:01 +31m 23s | delft_circuits] Extracting interactions: https://delft-circuits.com/dc_news_article/delft-circuits-appoints-martin-danoesastro-as-ceo-announces-new-financing (31/34), chunk 6/6
+[00:49:12 +31m 31s | delft_circuits] Extracting interactions: https://delft-circuits.com/study--press-release/delft-circuits-appoints-karen-keenan-as-coo-to-scale-quantum-i-o-hardware-manufacturing-for-global-customers (32/34), chunk 2/7
+[00:49:23 +31m 41s | delft_circuits] Extracting interactions: https://delft-circuits.com/study--press-release/delft-circuits-appoints-karen-keenan-as-coo-to-scale-quantum-i-o-hardware-manufacturing-for-global-customers (32/34), chunk 3/7
+[00:49:41 +32m 0s | delft_circuits] Extracting interactions: https://delft-circuits.com/study--press-release/delft-circuits-appoints-karen-keenan-as-coo-to-scale-quantum-i-o-hardware-manufacturing-for-global-customers (32/34), chunk 4/7
+[00:50:13 +32m 29s | delft_circuits] Extracting interactions: https://delft-circuits.com/study--press-release/delft-circuits-appoints-karen-keenan-as-coo-to-scale-quantum-i-o-hardware-manufacturing-for-global-customers (32/34), chunk 5/7
+[00:50:43 +32m 57s | delft_circuits] Extracting interactions: https://delft-circuits.com/study--press-release/delft-circuits-appoints-karen-keenan-as-coo-to-scale-quantum-i-o-hardware-manufacturing-for-global-customers (32/34), chunk 6/7
+[00:51:01 +33m 11s | delft_circuits] Extracting interactions: https://delft-circuits.com/dc_event/quantum-2-business (33/34), chunk 3/4
+[00:51:06 +33m 16s | delft_circuits] Extracting interactions: https://delft-circuits.com/dc_event/quantum-2-business (33/34), chunk 4/4
+[00:51:10 +33m 21s | delft_circuits] Extracting interactions: https://delft-circuits.com/dc_news_article/integrated-photonic-systems-demand-integrated-i-o (34/34), chunk 4/6
+[00:51:17 +33m 28s | delft_circuits] Extracting interactions: https://delft-circuits.com/dc_news_article/integrated-photonic-systems-demand-integrated-i-o (34/34), chunk 5/6
+[00:51:23 +33m 34s | delft_circuits] Saved 3_interaction_results.json with 230 extracted interactions.
+
+[00:51:24 +33m 34s | delft_circuits] === 4 clean interactions ===
+[00:51:24 +33m 34s | delft_circuits] Saved 4_edges.json with 64 cleaned interactions.
+
+[00:51:24 +33m 34s | delft_circuits] === 5 helix enrichment ===
+[00:51:24 +33m 35s | delft_circuits] Wrote 5_nodes.json (35 actors)
+[00:51:24 +33m 35s | delft_circuits] Wrote 5_edges.json (64 interactions)
+[00:51:24 +33m 35s | delft_circuits] Actor helix counts: {'Academia': 2, 'Civil Society': 1, 'Government': 1, 'Industry': 19, 'Intermediary': 4, 'Unknown': 8}
+[00:51:24 +33m 35s | delft_circuits] Functional-space counts: {'Innovation': 15, 'Intra-helix / Not classified': 44, 'Unknown': 5}
+
+[00:51:24 +33m 35s | delft_circuits] === 6 network visualisation ===
+[00:51:24 +33m 35s | delft_circuits] Wrote quantum_network.html
+[00:51:24 +33m 35s | delft_circuits] Nodes: 35
+[00:51:24 +33m 35s | delft_circuits] Edges: 19
+
+[00:51:25 +33m 35s | delft_circuits] Done. Outputs written to: /home/lv/IDP/idpdeeptech/pipeline/site_outputs/delft_circuits
+[00:51:25 +33m 35s | delft_circuits] Log: /home/lv/IDP/idpdeeptech/pipeline/site_outputs/delft_circuits/run.log
+
+========================================================================
+RUN FINISHED 2026-06-17 00:51:25  (OK)
+Started:     2026-06-17 00:15:14
+Elapsed:     33m 35s
+========================================================================

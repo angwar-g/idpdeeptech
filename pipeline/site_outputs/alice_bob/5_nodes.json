@@ -1,0 +1,3858 @@
+[
+  {
+    "entity": "Akriti Jain",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "individual",
+    "role_in_text": "Jr. Marketing Specialist",
+    "technology_area": "quantum computing",
+    "occurrence_sentence": "By Akriti Jain Jr. Marketing Specialist",
+    "source_document": "https://alice-bob.com/blog/who-are-alice-and-bob-the-story-behind-our-name",
+    "page": 12,
+    "confidence": "high",
+    "canonical_actor_key": "akriti jain",
+    "aliases": [
+      "Akriti Jain"
+    ],
+    "pages": [
+      12,
+      13
+    ],
+    "mentions": [
+      {
+        "entity": "Akriti Jain",
+        "page": 12,
+        "role_in_text": "Jr. Marketing Specialist",
+        "occurrence_sentence": "By Akriti Jain Jr. Marketing Specialist",
+        "source_document": "https://alice-bob.com/blog/who-are-alice-and-bob-the-story-behind-our-name"
+      },
+      {
+        "entity": "Akriti Jain",
+        "page": 13,
+        "role_in_text": "Jr. Marketing Specialist",
+        "occurrence_sentence": "By Akriti Jain Jr. Marketing Specialist",
+        "source_document": "https://alice-bob.com/blog/who-are-alice-and-bob-the-story-behind-our-name"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Unknown",
+    "sphere": "Unknown",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "unknown_category",
+    "classification_needs_review": true,
+    "classification_review_reason": "unmapped_category:individual; individual_requires_role_classification"
+  },
+  {
+    "entity": "Alice",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "individual",
+    "role_in_text": "Sender in communication scenario",
+    "technology_area": "quantum communication",
+    "occurrence_sentence": "In the paper, the authors invented the characters Alice and Bob to explain the communication scenario and the workings of their technology.",
+    "source_document": "https://alice-bob.com/blog/who-are-alice-and-bob-the-story-behind-our-name",
+    "page": 11,
+    "confidence": "high",
+    "canonical_actor_key": "alice",
+    "aliases": [
+      "Alice"
+    ],
+    "pages": [
+      4,
+      11,
+      12,
+      14
+    ],
+    "mentions": [
+      {
+        "entity": "Alice",
+        "page": 4,
+        "role_in_text": "Named in the blog title",
+        "occurrence_sentence": "Who are Alice and Bob?",
+        "source_document": "https://alice-bob.com/blog"
+      },
+      {
+        "entity": "Alice",
+        "page": 11,
+        "role_in_text": "Sender in communication scenario",
+        "occurrence_sentence": "In the paper, the authors invented the characters Alice and Bob to explain the communication scenario and the workings of their technology.",
+        "source_document": "https://alice-bob.com/blog/who-are-alice-and-bob-the-story-behind-our-name"
+      },
+      {
+        "entity": "Alice",
+        "page": 12,
+        "role_in_text": "Sender of single photons",
+        "occurrence_sentence": "In the first quantum key distribution protocol (BB84), Alice sends Bob single photons, each encoded in different quantum states.",
+        "source_document": "https://alice-bob.com/blog/who-are-alice-and-bob-the-story-behind-our-name"
+      },
+      {
+        "entity": "Alice",
+        "page": 14,
+        "role_in_text": "Named character in the context of quantum communication",
+        "occurrence_sentence": "Who are Alice and Bob? The Story Behind Our Name",
+        "source_document": "https://alice-bob.com/blog/who-are-alice-and-bob-the-story-behind-our-name"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Industry",
+    "sphere": "Single",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "name_heuristic_industry",
+    "classification_needs_review": true,
+    "classification_review_reason": "individual_requires_role_classification"
+  },
+  {
+    "entity": "Alice-Bob",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "large enterprises",
+    "role_in_text": "developer of quantum computing technology",
+    "technology_area": "quantum computing",
+    "occurrence_sentence": "For example, we've shown that a quantum computer using cat qubits could run Shor's algorithm with up to [60 times fewer qubits than other approaches](https://doi.org/10.1103/PhysRevLett.131.040602), and 200 times fewer when employing [advanced error correction schemes](https://arxiv.org/abs/2401.09541).",
+    "source_document": "https://alice-bob.com/blog/alice-bob-2030-roadmap-to-useful-quantum-computers",
+    "page": 12,
+    "confidence": "high",
+    "canonical_actor_key": "alice bob",
+    "aliases": [
+      "Alice Bob",
+      "Alice-Bob"
+    ],
+    "pages": [
+      1,
+      2,
+      3,
+      7,
+      8,
+      9,
+      10,
+      12,
+      14,
+      16,
+      18,
+      19
+    ],
+    "mentions": [
+      {
+        "entity": "Alice-Bob",
+        "page": 16,
+        "role_in_text": "Company involved in quantum computing",
+        "occurrence_sentence": "Are you a pioneer? We are always on the lookout for bright minds to join the adventure.",
+        "source_document": "https://alice-bob.com/engineering"
+      },
+      {
+        "entity": "Alice-Bob",
+        "page": 14,
+        "role_in_text": "Publisher of the article",
+        "occurrence_sentence": "The finish line is further than what this framework covers. A fault-tolerant quantum computer must compute, not “just” store information, running logical gates and implementing magic states for universal quantum computation. That “computation” part will be the topic of a future report.",
+        "source_document": "https://alice-bob.com/blog/not-all-logical-qubits-are-created-equal-heres-how-to-benchmark-them"
+      },
+      {
+        "entity": "Alice-Bob",
+        "page": 8,
+        "role_in_text": "website owner",
+        "occurrence_sentence": "[ ](https://alice-bob.com)",
+        "source_document": "https://alice-bob.com/blog/beyond-moore-harnessing-quantum-for-the-next-era-of-hpc"
+      },
+      {
+        "entity": "Alice-Bob",
+        "page": 9,
+        "role_in_text": "Publisher of the article",
+        "occurrence_sentence": "Beyond Moore: Harnessing Quantum for the Next Era of HPC",
+        "source_document": "https://alice-bob.com/blog/beyond-moore-harnessing-quantum-for-the-next-era-of-hpc"
+      },
+      {
+        "entity": "Alice-Bob",
+        "page": 18,
+        "role_in_text": "publisher of the article",
+        "occurrence_sentence": "Finally, unlocking the full potential of eFTQC QPUs in HPC workflow",
+        "source_document": "https://alice-bob.com/blog/beyond-moore-harnessing-quantum-for-the-next-era-of-hpc"
+      },
+      {
+        "entity": "Alice-Bob",
+        "page": 19,
+        "role_in_text": "Publisher of the article",
+        "occurrence_sentence": "https://alice-bob.com/blog/beyond-moore-harnessing-quantum-for-the-next-era-of-hpc",
+        "source_document": "https://alice-bob.com/blog/beyond-moore-harnessing-quantum-for-the-next-era-of-hpc"
+      },
+      {
+        "entity": "Alice-Bob",
+        "page": 2,
+        "role_in_text": "company",
+        "occurrence_sentence": "https://alice-bob.com",
+        "source_document": "https://alice-bob.com/blog"
+      },
+      {
+        "entity": "Alice-Bob",
+        "page": 3,
+        "role_in_text": "website owner",
+        "occurrence_sentence": "Join us",
+        "source_document": "https://alice-bob.com/blog"
+      },
+      {
+        "entity": "Alice-Bob",
+        "page": 8,
+        "role_in_text": "company",
+        "occurrence_sentence": "https://alice-bob.com/blog/alice-bob-2030-roadmap-to-useful-quantum-computers",
+        "source_document": "https://alice-bob.com/blog/alice-bob-2030-roadmap-to-useful-quantum-computers"
+      },
+      {
+        "entity": "Alice-Bob",
+        "page": 12,
+        "role_in_text": "developer of quantum computing technology",
+        "occurrence_sentence": "For example, we've shown that a quantum computer using cat qubits could run Shor's algorithm with up to [60 times fewer qubits than other approaches](https://doi.org/10.1103/PhysRevLett.131.040602), and 200 times fewer when employing [advanced error correction schemes](https://arxiv.org/abs/2401.09541).",
+        "source_document": "https://alice-bob.com/blog/alice-bob-2030-roadmap-to-useful-quantum-computers"
+      },
+      {
+        "entity": "Alice-Bob",
+        "page": 8,
+        "role_in_text": "website owner",
+        "occurrence_sentence": "[ ](https://alice-bob.com)",
+        "source_document": "https://alice-bob.com/publications"
+      },
+      {
+        "entity": "Alice-Bob",
+        "page": 1,
+        "role_in_text": "platform",
+        "occurrence_sentence": "Platform",
+        "source_document": "https://alice-bob.com/join-us"
+      },
+      {
+        "entity": "Alice-Bob",
+        "page": 7,
+        "role_in_text": "Company offering various benefits and programs",
+        "occurrence_sentence": "Explore our internship, working-student, PhD-student and graduate-program openings.",
+        "source_document": "https://alice-bob.com/join-us"
+      },
+      {
+        "entity": "Alice-Bob",
+        "page": 1,
+        "role_in_text": "website owner",
+        "occurrence_sentence": "https://alice-bob.com",
+        "source_document": "https://alice-bob.com"
+      },
+      {
+        "entity": "Alice Bob",
+        "page": 8,
+        "role_in_text": "",
+        "occurrence_sentence": "",
+        "source_document": "https://alice-bob.com"
+      },
+      {
+        "entity": "Alice-Bob",
+        "page": 9,
+        "role_in_text": "Company",
+        "occurrence_sentence": "https://alice-bob.com/newsroom",
+        "source_document": "https://alice-bob.com/newsroom"
+      },
+      {
+        "entity": "Alice-Bob",
+        "page": 9,
+        "role_in_text": "website owner",
+        "occurrence_sentence": "Join us",
+        "source_document": "https://alice-bob.com/glossary"
+      },
+      {
+        "entity": "Alice-Bob",
+        "page": 10,
+        "role_in_text": "website",
+        "occurrence_sentence": "Join us",
+        "source_document": "https://alice-bob.com/glossary"
+      },
+      {
+        "entity": "Alice-Bob",
+        "page": 14,
+        "role_in_text": "The company is hiring and scaling quantum engineering at infrastructure scale.",
+        "occurrence_sentence": "We've been hiring those people : mechanical engineers, electrical engineers, building managers, and we need more help. This is their place to work. The question is no longer _can we build a quantum computer?_ It is _how do we build them at scale?_",
+        "source_document": "https://alice-bob.com/blog/scaling-the-cats-quantum-engineering-at-infrastructure-scale"
+      },
+      {
+        "entity": "Alice-Bob",
+        "page": 9,
+        "role_in_text": "Co-authored by HPC experts and quantum innovators.",
+        "occurrence_sentence": "Co-authored by HPC experts and quantum innovators.",
+        "source_document": "https://alice-bob.com/hpc-report"
+      },
+      {
+        "entity": "Alice-Bob",
+        "page": 10,
+        "role_in_text": "Publisher of the report",
+        "occurrence_sentence": "Quantum computing waits at decade's end.",
+        "source_document": "https://alice-bob.com/hpc-report"
+      },
+      {
+        "entity": "Alice-Bob",
+        "page": 10,
+        "role_in_text": "Publisher of the report",
+        "occurrence_sentence": "High-performance computing centers must prepare to seize this potential.",
+        "source_document": "https://alice-bob.com/hpc-report"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Industry",
+    "sphere": "Single",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "Anissa",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "individual",
+    "role_in_text": "Named as part of the",
+    "source_document": "https://alice-bob.com/thats-us",
+    "page": 9,
+    "canonical_actor_key": "anissa",
+    "aliases": [
+      "Anissa"
+    ],
+    "pages": [
+      9
+    ],
+    "mentions": [
+      {
+        "entity": "Anissa",
+        "page": 9,
+        "role_in_text": "Named as part of the",
+        "occurrence_sentence": "",
+        "source_document": "https://alice-bob.com/thats-us"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Unknown",
+    "sphere": "Unknown",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "unknown_category",
+    "classification_needs_review": true,
+    "classification_review_reason": "unmapped_category:individual; individual_requires_role_classification"
+  },
+  {
+    "entity": "Antoine Marquet",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "individual",
+    "role_in_text": "author",
+    "technology_area": "quantum computing",
+    "occurrence_sentence": "* [ Antoine Marquet Harnessing two-photon dissipation for enhanced quantum measurement and control 2024-03",
+    "source_document": "https://alice-bob.com/publications",
+    "page": 12,
+    "confidence": "high",
+    "canonical_actor_key": "antoine marquet",
+    "aliases": [
+      "Antoine Marquet"
+    ],
+    "pages": [
+      11,
+      12
+    ],
+    "mentions": [
+      {
+        "entity": "Antoine Marquet",
+        "page": 11,
+        "role_in_text": "author",
+        "occurrence_sentence": "Antoine Marquet Harnessing two-photon dissipation for enhanced quantum measurement and control 2024-03",
+        "source_document": "https://alice-bob.com/publications"
+      },
+      {
+        "entity": "Antoine Marquet",
+        "page": 12,
+        "role_in_text": "author",
+        "occurrence_sentence": "* [ Antoine Marquet Harnessing two-photon dissipation for enhanced quantum measurement and control 2024-03",
+        "source_document": "https://alice-bob.com/publications"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Unknown",
+    "sphere": "Unknown",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "unknown_category",
+    "classification_needs_review": true,
+    "classification_review_reason": "unmapped_category:individual; individual_requires_role_classification"
+  },
+  {
+    "entity": "Atos",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "large enterprises",
+    "role_in_text": "former CEO of Atos",
+    "technology_area": "quantum computing",
+    "occurrence_sentence": "former Atos CEO Girard joins French tech startup Alice & Bob",
+    "source_document": "https://alice-bob.com",
+    "page": 6,
+    "confidence": "high",
+    "canonical_actor_key": "atos",
+    "aliases": [
+      "Atos"
+    ],
+    "pages": [
+      6,
+      8,
+      9,
+      10
+    ],
+    "mentions": [
+      {
+        "entity": "Atos",
+        "page": 6,
+        "role_in_text": "former CEO of Atos",
+        "occurrence_sentence": "former Atos CEO Girard joins French tech startup Alice & Bob",
+        "source_document": "https://alice-bob.com"
+      },
+      {
+        "entity": "Atos",
+        "page": 8,
+        "role_in_text": "former CEO",
+        "occurrence_sentence": "former Atos CEO Girard joins French tech startup Alice Bob",
+        "source_document": "https://alice-bob.com"
+      },
+      {
+        "entity": "Atos",
+        "page": 9,
+        "role_in_text": "former CEO",
+        "occurrence_sentence": "former Atos CEO Girard joins French tech startup Alice & Bob",
+        "source_document": "https://alice-bob.com"
+      },
+      {
+        "entity": "Atos",
+        "page": 10,
+        "role_in_text": "former CEO",
+        "occurrence_sentence": "former Atos CEO Girard joins French tech startup Alice & Bob",
+        "source_document": "https://alice-bob.com"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Industry",
+    "sphere": "Single",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "AVP",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "financial support institutions",
+    "role_in_text": "investor",
+    "technology_area": "deep tech general",
+    "occurrence_sentence": "Since its establishment in 2016, AVP has invested in more than 60 technology companies in Venture and Growth stages in the U.S. and Europe.",
+    "source_document": "https://alice-bob.com/newsroom/alice-bob-100m-series-b-fundraising-press-release",
+    "page": 16,
+    "confidence": "high",
+    "canonical_actor_key": "avp",
+    "aliases": [
+      "AVP"
+    ],
+    "pages": [
+      13,
+      16,
+      17,
+      18
+    ],
+    "mentions": [
+      {
+        "entity": "AVP",
+        "page": 13,
+        "role_in_text": "supporting the company in their mission",
+        "occurrence_sentence": "AVP is therefore proud to support the company in their mission to reduce the hardware requirements for building a practical, large-scale quantum computer.",
+        "source_document": "https://alice-bob.com/newsroom/alice-bob-100m-series-b-fundraising-press-release"
+      },
+      {
+        "entity": "AVP",
+        "page": 16,
+        "role_in_text": "investor",
+        "occurrence_sentence": "Since its establishment in 2016, AVP has invested in more than 60 technology companies in Venture and Growth stages in the U.S. and Europe.",
+        "source_document": "https://alice-bob.com/newsroom/alice-bob-100m-series-b-fundraising-press-release"
+      },
+      {
+        "entity": "AVP",
+        "page": 17,
+        "role_in_text": "advisor",
+        "occurrence_sentence": "Thanks To Our Advisors * AVP: Francois Robinet, Arthur Brasseur",
+        "source_document": "https://alice-bob.com/newsroom/alice-bob-100m-series-b-fundraising-press-release"
+      },
+      {
+        "entity": "AVP",
+        "page": 18,
+        "role_in_text": "participated in the Series B funding",
+        "occurrence_sentence": "Alice & Bob Closes €100M Series B Led by Future French Champions (FFC)",
+        "source_document": "https://alice-bob.com/newsroom/alice-bob-100m-series-b-fundraising-press-release"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Intermediary",
+    "sphere": "Multi",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "Bluefors",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "large enterprises",
+    "role_in_text": "partner",
+    "technology_area": "quantum computing",
+    "occurrence_sentence": "Our engineers work with many partners such as Bluefors and QM to co-develop our systems.",
+    "source_document": "https://alice-bob.com/engineering",
+    "page": 14,
+    "confidence": "high",
+    "canonical_actor_key": "bluefors",
+    "aliases": [
+      "Bluefors"
+    ],
+    "pages": [
+      13,
+      14
+    ],
+    "mentions": [
+      {
+        "entity": "Bluefors",
+        "page": 13,
+        "role_in_text": "Partner for co-developing systems",
+        "occurrence_sentence": "Our engineers work with many partners such as Bluefors and QM to co-develop our systems.",
+        "source_document": "https://alice-bob.com/engineering"
+      },
+      {
+        "entity": "Bluefors",
+        "page": 14,
+        "role_in_text": "partner",
+        "occurrence_sentence": "Our engineers work with many partners such as Bluefors and QM to co-develop our systems.",
+        "source_document": "https://alice-bob.com/engineering"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Industry",
+    "sphere": "Single",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "Bob",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "individual",
+    "role_in_text": "Named in the blog title",
+    "technology_area": "unknown",
+    "occurrence_sentence": "Who are Alice and Bob?",
+    "source_document": "https://alice-bob.com/blog",
+    "page": 4,
+    "confidence": "low",
+    "canonical_actor_key": "bob",
+    "aliases": [
+      "Bob"
+    ],
+    "pages": [
+      4,
+      11,
+      14
+    ],
+    "mentions": [
+      {
+        "entity": "Bob",
+        "page": 4,
+        "role_in_text": "Named in the blog title",
+        "occurrence_sentence": "Who are Alice and Bob?",
+        "source_document": "https://alice-bob.com/blog"
+      },
+      {
+        "entity": "Bob",
+        "page": 11,
+        "role_in_text": "Receiver in communication scenario",
+        "occurrence_sentence": "In the paper, the authors invented the characters Alice and Bob to explain the communication scenario and the workings of their technology.",
+        "source_document": "https://alice-bob.com/blog/who-are-alice-and-bob-the-story-behind-our-name"
+      },
+      {
+        "entity": "Bob",
+        "page": 14,
+        "role_in_text": "Named character in the context of quantum communication",
+        "occurrence_sentence": "Who are Alice and Bob? The Story Behind Our Name",
+        "source_document": "https://alice-bob.com/blog/who-are-alice-and-bob-the-story-behind-our-name"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Unknown",
+    "sphere": "Unknown",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "unknown_category",
+    "classification_needs_review": true,
+    "classification_review_reason": "unmapped_category:individual; individual_requires_role_classification"
+  },
+  {
+    "entity": "Bpifrance",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "financial support institutions",
+    "role_in_text": "investor",
+    "technology_area": "deep tech general",
+    "occurrence_sentence": "Bpifrance",
+    "source_document": "https://alice-bob.com/thats-us",
+    "page": 19,
+    "confidence": "high",
+    "canonical_actor_key": "bpifrance",
+    "aliases": [
+      "Bpifrance"
+    ],
+    "pages": [
+      13,
+      19
+    ],
+    "mentions": [
+      {
+        "entity": "Bpifrance",
+        "page": 13,
+        "role_in_text": "investment in Alice & Bob",
+        "occurrence_sentence": "We are thrilled to once again contribute to the groundbreaking work that Alice & Bob is doing to scale quantum computers for real-world applications. Bpifrance",
+        "source_document": "https://alice-bob.com/newsroom/alice-bob-100m-series-b-fundraising-press-release"
+      },
+      {
+        "entity": "Bpifrance",
+        "page": 19,
+        "role_in_text": "investor",
+        "occurrence_sentence": "Bpifrance",
+        "source_document": "https://alice-bob.com/thats-us"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Intermediary",
+    "sphere": "Multi",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "Bpifrance Investissement",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "financial support institutions",
+    "role_in_text": "management company",
+    "technology_area": "deep tech general",
+    "occurrence_sentence": "Bpifrance Investissement is the management company that handles Bpifrance's equity investments.",
+    "source_document": "https://alice-bob.com/newsroom/alice-bob-100m-series-b-fundraising-press-release",
+    "page": 16,
+    "canonical_actor_key": "bpifrance investissement",
+    "aliases": [
+      "Bpifrance Investissement"
+    ],
+    "pages": [
+      16
+    ],
+    "mentions": [
+      {
+        "entity": "Bpifrance Investissement",
+        "page": 16,
+        "role_in_text": "management company",
+        "occurrence_sentence": "Bpifrance Investissement is the management company that handles Bpifrance's equity investments.",
+        "source_document": "https://alice-bob.com/newsroom/alice-bob-100m-series-b-fundraising-press-release"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Intermediary",
+    "sphere": "Multi",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "Calendly",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "large enterprises",
+    "role_in_text": "sets this cookie to track users across sessions",
+    "technology_area": "other",
+    "occurrence_sentence": "Calendly sets this cookie to track users across sessions to optimize user experience by maintaining session consistency and providing personalized services",
+    "source_document": "https://alice-bob.com/engineering",
+    "page": 1,
+    "confidence": "high",
+    "canonical_actor_key": "calendly",
+    "aliases": [
+      "Calendly"
+    ],
+    "pages": [
+      1
+    ],
+    "mentions": [
+      {
+        "entity": "Calendly",
+        "page": 1,
+        "role_in_text": "sets this cookie to track users across sessions",
+        "occurrence_sentence": "Calendly sets this cookie to track users across sessions to optimize user experience by maintaining session consistency and providing personalized services",
+        "source_document": "https://alice-bob.com/engineering"
+      },
+      {
+        "entity": "Calendly",
+        "page": 1,
+        "role_in_text": "sets cookies to track users across sessions",
+        "occurrence_sentence": "Calendly sets this cookie to track users across sessions to optimize user experience by maintaining session consistency and providing personalized services",
+        "source_document": "https://alice-bob.com/blog/not-all-logical-qubits-are-created-equal-heres-how-to-benchmark-them"
+      },
+      {
+        "entity": "Calendly",
+        "page": 1,
+        "role_in_text": "sets cookies",
+        "occurrence_sentence": "Calendly sets this cookie to track users across sessions to optimize user experience by maintaining session consistency and providing personalized services",
+        "source_document": "https://alice-bob.com/blog/beyond-moore-harnessing-quantum-for-the-next-era-of-hpc"
+      },
+      {
+        "entity": "Calendly",
+        "page": 1,
+        "role_in_text": "sets this cookie to track users across sessions",
+        "occurrence_sentence": "Calendly sets this cookie to track users across sessions to optimize user experience by maintaining session consistency and providing personalized services",
+        "source_document": "https://alice-bob.com/newsroom"
+      },
+      {
+        "entity": "Calendly",
+        "page": 1,
+        "role_in_text": "sets this cookie",
+        "occurrence_sentence": "Calendly sets this cookie to track users across sessions to optimize user experience by maintaining session consistency and providing personalized services",
+        "source_document": "https://alice-bob.com/glossary"
+      },
+      {
+        "entity": "Calendly",
+        "page": 1,
+        "role_in_text": "sets this cookie to track users across sessions",
+        "occurrence_sentence": "Calendly sets this cookie to track users across sessions to optimize user experience by maintaining session consistency and providing personalized services",
+        "source_document": "https://alice-bob.com/blog/scaling-the-cats-quantum-engineering-at-infrastructure-scale"
+      },
+      {
+        "entity": "Calendly",
+        "page": 1,
+        "role_in_text": "sets this cookie",
+        "occurrence_sentence": "Calendly sets this cookie to track users across sessions to optimize user experience by maintaining session consistency and providing personalized services",
+        "source_document": "https://alice-bob.com/hpc-report"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Industry",
+    "sphere": "Single",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "CEA",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "research institutes",
+    "role_in_text": "Research institute",
+    "technology_area": "unknown",
+    "occurrence_sentence": "Emmanuel Flurin CEA",
+    "source_document": "https://alice-bob.com/thats-us",
+    "page": 18,
+    "confidence": "high",
+    "canonical_actor_key": "cea",
+    "aliases": [
+      "CEA"
+    ],
+    "pages": [
+      18
+    ],
+    "mentions": [
+      {
+        "entity": "CEA",
+        "page": 18,
+        "role_in_text": "Research institute",
+        "occurrence_sentence": "Emmanuel Flurin CEA",
+        "source_document": "https://alice-bob.com/thats-us"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Academia",
+    "sphere": "Single",
+    "r_and_d": "R&D",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "Charlotte",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "individual",
+    "role_in_text": "Named as part of the team",
+    "technology_area": "unknown",
+    "occurrence_sentence": "CHARLOTTE",
+    "source_document": "https://alice-bob.com/thats-us",
+    "page": 9,
+    "confidence": "high",
+    "canonical_actor_key": "charlotte",
+    "aliases": [
+      "Charlotte"
+    ],
+    "pages": [
+      9,
+      10
+    ],
+    "mentions": [
+      {
+        "entity": "Charlotte",
+        "page": 9,
+        "role_in_text": "Named as part of the team",
+        "occurrence_sentence": "CHARLOTTE",
+        "source_document": "https://alice-bob.com/thats-us"
+      },
+      {
+        "entity": "Charlotte",
+        "page": 10,
+        "role_in_text": "Named individual",
+        "occurrence_sentence": "CHARLOTTE",
+        "source_document": "https://alice-bob.com/thats-us"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Unknown",
+    "sphere": "Unknown",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "unknown_category",
+    "classification_needs_review": true,
+    "classification_review_reason": "unmapped_category:individual; individual_requires_role_classification"
+  },
+  {
+    "entity": "Christopher Bishop",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "individual",
+    "role_in_text": "narrator of the audiobook",
+    "technology_area": "quantum computing",
+    "occurrence_sentence": "The whitepaper is designed to help anyone, regardless of their background, grasp the most crucial aspects of quantum computing, as well as understand the cat qubit and why hardware efficiency is so critical. To make it even more accessible, the full whitepaper is available both in a fully illustrated, printable version and as an audiobook narrated by Christopher Bishop.",
+    "source_document": "https://alice-bob.com/blog/alice-bob-2030-roadmap-to-useful-quantum-computers",
+    "page": 15,
+    "confidence": "high",
+    "canonical_actor_key": "christopher bishop",
+    "aliases": [
+      "Christopher Bishop"
+    ],
+    "pages": [
+      10,
+      11,
+      15,
+      16
+    ],
+    "mentions": [
+      {
+        "entity": "Christopher Bishop",
+        "page": 15,
+        "role_in_text": "narrator of the audiobook",
+        "occurrence_sentence": "The whitepaper is designed to help anyone, regardless of their background, grasp the most crucial aspects of quantum computing, as well as understand the cat qubit and why hardware efficiency is so critical. To make it even more accessible, the full whitepaper is available both in a fully illustrated, printable version and as an audiobook narrated by Christopher Bishop.",
+        "source_document": "https://alice-bob.com/blog/alice-bob-2030-roadmap-to-useful-quantum-computers"
+      },
+      {
+        "entity": "Christopher Bishop",
+        "page": 16,
+        "role_in_text": "narrator of the audiobook",
+        "occurrence_sentence": "To make it even more accessible, the full whitepaper is available both in a fully illustrated, printable version and as an audiobook narrated by Christopher Bishop.",
+        "source_document": "https://alice-bob.com/blog/alice-bob-2030-roadmap-to-useful-quantum-computers"
+      },
+      {
+        "entity": "Christopher Bishop",
+        "page": 10,
+        "role_in_text": "Audiobook narrator",
+        "occurrence_sentence": "Audiobook narrated by Christopher Bishop",
+        "source_document": "https://alice-bob.com/roadmap"
+      },
+      {
+        "entity": "Christopher Bishop",
+        "page": 11,
+        "role_in_text": "Narrator of the audiobook",
+        "occurrence_sentence": "Audiobook narrated by Christopher Bishop",
+        "source_document": "https://alice-bob.com/roadmap"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Unknown",
+    "sphere": "Unknown",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "unknown_category",
+    "classification_needs_review": true,
+    "classification_review_reason": "unmapped_category:individual; individual_requires_role_classification"
+  },
+  {
+    "entity": "Cloudflare",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "large enterprises",
+    "role_in_text": "sets this cookie to support Cloudflare Bot Management",
+    "technology_area": "other",
+    "occurrence_sentence": "This cookie, set by Cloudflare, is used to support Cloudflare Bot Management.",
+    "source_document": "https://alice-bob.com/engineering",
+    "page": 1,
+    "confidence": "high",
+    "canonical_actor_key": "cloudflare",
+    "aliases": [
+      "Cloudflare"
+    ],
+    "pages": [
+      1
+    ],
+    "mentions": [
+      {
+        "entity": "Cloudflare",
+        "page": 1,
+        "role_in_text": "sets this cookie to support Cloudflare Bot Management",
+        "occurrence_sentence": "This cookie, set by Cloudflare, is used to support Cloudflare Bot Management.",
+        "source_document": "https://alice-bob.com/engineering"
+      },
+      {
+        "entity": "Cloudflare",
+        "page": 1,
+        "role_in_text": "sets cookies for bot management",
+        "occurrence_sentence": "This cookie, set by Cloudflare, is used to support Cloudflare Bot Management.",
+        "source_document": "https://alice-bob.com/blog/not-all-logical-qubits-are-created-equal-heres-how-to-benchmark-them"
+      },
+      {
+        "entity": "Cloudflare",
+        "page": 1,
+        "role_in_text": "sets cookies",
+        "occurrence_sentence": "This cookie, set by Cloudflare, is used to support Cloudflare Bot Management.",
+        "source_document": "https://alice-bob.com/blog/beyond-moore-harnessing-quantum-for-the-next-era-of-hpc"
+      },
+      {
+        "entity": "Cloudflare",
+        "page": 1,
+        "role_in_text": "sets this cookie to support Cloudflare Bot Management",
+        "occurrence_sentence": "This cookie, set by Cloudflare, is used to support Cloudflare Bot Management.",
+        "source_document": "https://alice-bob.com/blog/who-are-alice-and-bob-the-story-behind-our-name"
+      },
+      {
+        "entity": "Cloudflare",
+        "page": 1,
+        "role_in_text": "sets this cookie to support Cloudflare Bot Management",
+        "occurrence_sentence": "This cookie, set by Cloudflare, is used to support Cloudflare Bot Management.",
+        "source_document": "https://alice-bob.com/newsroom"
+      },
+      {
+        "entity": "Cloudflare",
+        "page": 1,
+        "role_in_text": "sets this cookie",
+        "occurrence_sentence": "This cookie, set by Cloudflare, is used to support Cloudflare Bot Management.",
+        "source_document": "https://alice-bob.com/glossary"
+      },
+      {
+        "entity": "Cloudflare",
+        "page": 1,
+        "role_in_text": "sets this cookie to support Cloudflare Bot Management",
+        "occurrence_sentence": "This cookie, set by Cloudflare, is used to support Cloudflare Bot Management.",
+        "source_document": "https://alice-bob.com/blog/scaling-the-cats-quantum-engineering-at-infrastructure-scale"
+      },
+      {
+        "entity": "Cloudflare",
+        "page": 1,
+        "role_in_text": "sets this cookie",
+        "occurrence_sentence": "This cookie, set by Cloudflare, is used to support Cloudflare Bot Management.",
+        "source_document": "https://alice-bob.com/hpc-report"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Industry",
+    "sphere": "Single",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "École Normale Supérieure de Lyon",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "universities",
+    "source_document": "https://alice-bob.com/thats-us",
+    "page": 18,
+    "canonical_actor_key": "cole normale sup rieure de lyon",
+    "aliases": [
+      "École Normale Supérieure de Lyon"
+    ],
+    "pages": [
+      18
+    ],
+    "mentions": [
+      {
+        "entity": "École Normale Supérieure de Lyon",
+        "page": 18,
+        "role_in_text": "",
+        "occurrence_sentence": "",
+        "source_document": "https://alice-bob.com/thats-us"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Academia",
+    "sphere": "Single",
+    "r_and_d": "R&D",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "Cookieyes",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "large enterprises",
+    "role_in_text": "Powered by",
+    "technology_area": "other",
+    "occurrence_sentence": "Powered by [![Cookieyes logo](https://cdn-cookieyes.com/assets/images/poweredbtcky.svg)](https://www.cookieyes.com/product/cookie-consent/?ref=cypbcyb&utm_source=cookie-banner&utm_medium=powered-by-cookieyes)",
+    "source_document": "https://alice-bob.com/blog/this-is-not-a-product-launch",
+    "page": 7,
+    "confidence": "medium",
+    "canonical_actor_key": "cookieyes",
+    "aliases": [
+      "Cookieyes"
+    ],
+    "pages": [
+      7,
+      8
+    ],
+    "mentions": [
+      {
+        "entity": "Cookieyes",
+        "page": 8,
+        "role_in_text": "Powered by",
+        "occurrence_sentence": "Powered by [![Cookieyes logo](https://cdn-cookieyes.com/assets/images/poweredbtcky.svg)](https://www.cookieyes.com/product/cookie-consent/?ref=cypbcyb&utm_source=cookie-banner&utm_medium=powered-by-cookieyes)",
+        "source_document": "https://alice-bob.com/engineering"
+      },
+      {
+        "entity": "Cookieyes",
+        "page": 7,
+        "role_in_text": "provider of cookie consent management",
+        "occurrence_sentence": "Powered by [![Cookieyes logo](https://cdn-cookieyes.com/assets/images/poweredbtcky.svg)](https://www.cookieyes.com/product/cookie-consent/?ref=cypbcyb&utm_source=cookie-banner&utm_medium=powered-by-cookieyes)",
+        "source_document": "https://alice-bob.com/blog/not-all-logical-qubits-are-created-equal-heres-how-to-benchmark-them"
+      },
+      {
+        "entity": "Cookieyes",
+        "page": 8,
+        "role_in_text": "cookie consent provider",
+        "occurrence_sentence": "Powered by [![Cookieyes logo",
+        "source_document": "https://alice-bob.com/blog/beyond-moore-harnessing-quantum-for-the-next-era-of-hpc"
+      },
+      {
+        "entity": "Cookieyes",
+        "page": 8,
+        "role_in_text": "company",
+        "occurrence_sentence": "Powered by [![Cookieyes logo",
+        "source_document": "https://alice-bob.com/blog/alice-bob-2030-roadmap-to-useful-quantum-computers"
+      },
+      {
+        "entity": "Cookieyes",
+        "page": 7,
+        "role_in_text": "Powered by",
+        "occurrence_sentence": "Powered by [![Cookieyes logo](https://cdn-cookieyes.com/assets/images/poweredbtcky.svg)](https://www.cookieyes.com/product/cookie-consent/?ref=cypbcyb&utm_source=cookie-banner&utm_medium=powered-by-cookieyes)",
+        "source_document": "https://alice-bob.com/blog/this-is-not-a-product-launch"
+      },
+      {
+        "entity": "Cookieyes",
+        "page": 8,
+        "role_in_text": "Powered by",
+        "occurrence_sentence": "Powered by [![Cookieyes logo](https://cdn-cookieyes.com/assets/images/poweredbtcky.svg)](https://www.cookieyes.com/product/cookie-consent/?ref=cypbcyb&utm_source=cookie-banner&utm_medium=powered-by-cookieyes)",
+        "source_document": "https://alice-bob.com/blog/this-is-not-a-product-launch"
+      },
+      {
+        "entity": "Cookieyes",
+        "page": 7,
+        "role_in_text": "Powered by",
+        "occurrence_sentence": "Powered by [![Cookieyes logo](https://cdn-cookieyes.com/assets/images/poweredbtcky.svg)](https://www.cookieyes.com/product/cookie-consent/?ref=cypbcyb&utm_source=cookie-banner&utm_medium=powered-by-cookieyes)",
+        "source_document": "https://alice-bob.com/blog/who-are-alice-and-bob-the-story-behind-our-name"
+      },
+      {
+        "entity": "Cookieyes",
+        "page": 8,
+        "role_in_text": "Powered by",
+        "occurrence_sentence": "Powered by [![Cookieyes logo](https://cdn-cookieyes.com/assets/images/poweredbtcky.svg)](https://www.cookieyes.com/product/cookie-consent/?ref=cypbcyb&utm_source=cookie-banner&utm_medium=powered-by-cookieyes)",
+        "source_document": "https://alice-bob.com/blog/who-are-alice-and-bob-the-story-behind-our-name"
+      },
+      {
+        "entity": "Cookieyes",
+        "page": 8,
+        "role_in_text": "Powered by",
+        "occurrence_sentence": "Powered by [![Cookieyes logo](https://cdn-cookieyes.com/assets/images/poweredbtcky.svg)](https://www.cookieyes.com/product/cookie-consent/?ref=cypbcyb&utm_source=cookie-banner&utm_medium=powered-by-cookieyes)",
+        "source_document": "https://alice-bob.com/roadmap"
+      },
+      {
+        "entity": "Cookieyes",
+        "page": 7,
+        "role_in_text": "Powered by",
+        "occurrence_sentence": "Powered by [![Cookieyes logo](https://cdn-cookieyes.com/assets/images/poweredbtcky.svg)](https://www.cookieyes.com/product/cookie-consent/?ref=cypbcyb&utm_source=cookie-banner&utm_medium=powered-by-cookieyes)",
+        "source_document": "https://alice-bob.com/science"
+      },
+      {
+        "entity": "Cookieyes",
+        "page": 8,
+        "role_in_text": "Powered by",
+        "occurrence_sentence": "Powered by [![Cookieyes logo](https://cdn-cookieyes.com/assets/images/poweredbtcky.svg)](https://www.cookieyes.com/product/cookie-consent/?ref=cypbcyb&utm_source=cookie-banner&utm_medium=powered-by-cookieyes)",
+        "source_document": "https://alice-bob.com/science"
+      },
+      {
+        "entity": "Cookieyes",
+        "page": 8,
+        "role_in_text": "Powered by",
+        "occurrence_sentence": "Powered by [![Cookieyes logo](https://cdn-cookieyes.com/assets/images/poweredbtcky.svg)](https://www.cookieyes.com/product/cookie-consent/?ref=cypbcyb&utm_source=cookie-banner&utm_medium=powered-by-cookieyes)",
+        "source_document": "https://alice-bob.com/newsroom"
+      },
+      {
+        "entity": "Cookieyes",
+        "page": 7,
+        "role_in_text": "Powered by",
+        "occurrence_sentence": "Powered by [![Cookieyes logo](https://cdn-cookieyes.com/assets/images/poweredbtcky.svg)](https://www.cookieyes.com/product/cookie-consent/?ref=cypbcyb&utm_source=cookie-banner&utm_medium=powered-by-cookieyes)",
+        "source_document": "https://alice-bob.com/glossary"
+      },
+      {
+        "entity": "Cookieyes",
+        "page": 8,
+        "role_in_text": "Powered by",
+        "occurrence_sentence": "Powered by [![Cookieyes logo](https://cdn-cookieyes.com/assets/images/poweredbtcky.svg)](https://www.cookieyes.com/product/cookie-consent/?ref=cypbcyb&utm_source=cookie-banner&utm_medium=powered-by-cookieyes)",
+        "source_document": "https://alice-bob.com/glossary"
+      },
+      {
+        "entity": "Cookieyes",
+        "page": 8,
+        "role_in_text": "Powered by",
+        "occurrence_sentence": "Powered by [![Cookieyes logo](https://cdn-cookieyes.com/assets/images/poweredbtcky.svg)](https://www.cookieyes.com/product/cookie-consent/?ref=cypbcyb&utm_source=cookie-banner&utm_medium=powered-by-cookieyes)",
+        "source_document": "https://alice-bob.com/platform"
+      },
+      {
+        "entity": "Cookieyes",
+        "page": 8,
+        "role_in_text": "Powered by",
+        "occurrence_sentence": "Powered by [![Cookieyes logo](https://cdn-cookieyes.com/assets/images/poweredbtcky.svg)](https://www.cookieyes.com/product/cookie-consent/?ref=cypbcyb&utm_source=cookie-banner&utm_medium=powered-by-cookieyes)",
+        "source_document": "https://alice-bob.com/newsroom/alice-bob-100m-series-b-fundraising-press-release"
+      },
+      {
+        "entity": "Cookieyes",
+        "page": 8,
+        "role_in_text": "company",
+        "occurrence_sentence": "Powered by [![Cookieyes logo",
+        "source_document": "https://alice-bob.com/blog/scaling-the-cats-quantum-engineering-at-infrastructure-scale"
+      },
+      {
+        "entity": "Cookieyes",
+        "page": 8,
+        "role_in_text": "Powered by",
+        "occurrence_sentence": "Powered by [![Cookieyes logo](https://cdn-cookieyes.com/assets/images/poweredbtcky.svg)](https://www.cookieyes.com/product/cookie-consent/?ref=cypbcyb&utm_source=cookie-banner&utm_medium=powered-by-cookieyes)",
+        "source_document": "https://alice-bob.com/thats-us"
+      },
+      {
+        "entity": "Cookieyes",
+        "page": 8,
+        "role_in_text": "Powered by",
+        "occurrence_sentence": "Powered by [![Cookieyes logo](https://cdn-cookieyes.com/assets/images/poweredbtcky.svg)](https://www.cookieyes.com/product/cookie-consent/?ref=cypbcyb&utm_source=cookie-banner&utm_medium=powered-by-cookieyes)",
+        "source_document": "https://alice-bob.com/hpc-report"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Industry",
+    "sphere": "Single",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "Dr. Raphaël LESCANNE",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "individual",
+    "role_in_text": "Chief Technology Officer",
+    "technology_area": "unknown",
+    "occurrence_sentence": "#####  Dr. Raphaël LESCANNE Chief Technology Officer",
+    "source_document": "https://alice-bob.com/thats-us",
+    "page": 14,
+    "confidence": "high",
+    "canonical_actor_key": "dr rapha l lescanne",
+    "aliases": [
+      "Dr. Raphaël LESCANNE"
+    ],
+    "pages": [
+      14,
+      15,
+      16
+    ],
+    "mentions": [
+      {
+        "entity": "Dr. Raphaël LESCANNE",
+        "page": 14,
+        "role_in_text": "Chief Technology Officer",
+        "occurrence_sentence": "#####  Dr. Raphaël LESCANNE Chief Technology Officer",
+        "source_document": "https://alice-bob.com/thats-us"
+      },
+      {
+        "entity": "Dr. Raphaël LESCANNE",
+        "page": 15,
+        "role_in_text": "Chief Technology Officer",
+        "occurrence_sentence": "Dr. Raphaël LESCANNE Chief Technology Officer",
+        "source_document": "https://alice-bob.com/thats-us"
+      },
+      {
+        "entity": "Dr. Raphaël LESCANNE",
+        "page": 16,
+        "role_in_text": "Chief Technology Officer",
+        "occurrence_sentence": "Dr. Raphaël LESCANNE Chief Technology Officer",
+        "source_document": "https://alice-bob.com/thats-us"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Industry",
+    "sphere": "Single",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "name_heuristic_industry",
+    "classification_needs_review": true,
+    "classification_review_reason": "individual_requires_role_classification"
+  },
+  {
+    "entity": "Dr. Théau PERONNIN",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "individual",
+    "role_in_text": "Chief Executive Officer",
+    "technology_area": "unknown",
+    "occurrence_sentence": "#####  Dr. Théau PERONNIN Chief Executive Officer",
+    "source_document": "https://alice-bob.com/thats-us",
+    "page": 14,
+    "confidence": "high",
+    "canonical_actor_key": "dr th au peronnin",
+    "aliases": [
+      "Dr. Théau PERONNIN"
+    ],
+    "pages": [
+      14,
+      15,
+      16
+    ],
+    "mentions": [
+      {
+        "entity": "Dr. Théau PERONNIN",
+        "page": 14,
+        "role_in_text": "Chief Executive Officer",
+        "occurrence_sentence": "#####  Dr. Théau PERONNIN Chief Executive Officer",
+        "source_document": "https://alice-bob.com/thats-us"
+      },
+      {
+        "entity": "Dr. Théau PERONNIN",
+        "page": 15,
+        "role_in_text": "Chief Executive Officer",
+        "occurrence_sentence": "Dr. Théau PERONNIN Chief Executive Officer",
+        "source_document": "https://alice-bob.com/thats-us"
+      },
+      {
+        "entity": "Dr. Théau PERONNIN",
+        "page": 16,
+        "role_in_text": "Chief Executive Officer",
+        "occurrence_sentence": "Dr. Théau PERONNIN Chief Executive Officer",
+        "source_document": "https://alice-bob.com/thats-us"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Unknown",
+    "sphere": "Unknown",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "unknown_category",
+    "classification_needs_review": true,
+    "classification_review_reason": "unmapped_category:individual; individual_requires_role_classification"
+  },
+  {
+    "entity": "Efe Gümüs",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "individual",
+    "role_in_text": "author",
+    "technology_area": "quantum computing",
+    "occurrence_sentence": "Efe Gümüs Calorimetry of a phase slip in a Josephson junction 2023-01",
+    "source_document": "https://alice-bob.com/publications",
+    "page": 13,
+    "confidence": "",
+    "canonical_actor_key": "efe g m s",
+    "aliases": [
+      "Efe Gümüs"
+    ],
+    "pages": [
+      13
+    ],
+    "mentions": [
+      {
+        "entity": "Efe Gümüs",
+        "page": 13,
+        "role_in_text": "author",
+        "occurrence_sentence": "Efe Gümüs Calorimetry of a phase slip in a Josephson junction 2023-01",
+        "source_document": "https://alice-bob.com/publications"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Unknown",
+    "sphere": "Unknown",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "unknown_category",
+    "classification_needs_review": true,
+    "classification_review_reason": "unmapped_category:individual; individual_requires_role_classification"
+  },
+  {
+    "entity": "Elaia",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "financial support institutions",
+    "role_in_text": "investor",
+    "technology_area": "deep tech general",
+    "occurrence_sentence": "Elaia",
+    "source_document": "https://alice-bob.com/thats-us",
+    "page": 19,
+    "confidence": "high",
+    "canonical_actor_key": "elaia",
+    "aliases": [
+      "Elaia"
+    ],
+    "pages": [
+      19
+    ],
+    "mentions": [
+      {
+        "entity": "Elaia",
+        "page": 19,
+        "role_in_text": "investor",
+        "occurrence_sentence": "Elaia",
+        "source_document": "https://alice-bob.com/thats-us"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Intermediary",
+    "sphere": "Multi",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "Elaia Partners",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "financial support institutions",
+    "role_in_text": "Series A investor",
+    "technology_area": "quantum computing",
+    "occurrence_sentence": "All Series A investors, Elaia Partners, Breega, Supernova Invest and Bpifrance, returned for the Series B",
+    "source_document": "https://alice-bob.com/newsroom/alice-bob-100m-series-b-fundraising-press-release",
+    "page": 11,
+    "canonical_actor_key": "elaia partners",
+    "aliases": [
+      "Elaia Partners"
+    ],
+    "pages": [
+      11
+    ],
+    "mentions": [
+      {
+        "entity": "Elaia Partners",
+        "page": 11,
+        "role_in_text": "Series A investor",
+        "occurrence_sentence": "All Series A investors, Elaia Partners, Breega, Supernova Invest and Bpifrance, returned for the Series B",
+        "source_document": "https://alice-bob.com/newsroom/alice-bob-100m-series-b-fundraising-press-release"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Intermediary",
+    "sphere": "Multi",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "Elie Gouzien",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "individual",
+    "role_in_text": "author",
+    "technology_area": "quantum computing",
+    "occurrence_sentence": "Elie Gouzien Performance Analysis of a Repetition Cat Code Architecture: Computing 256-bit Elliptic Curve Logarithm in 9 Hours with 126 133 Cat Qubits 2023-02",
+    "source_document": "https://alice-bob.com/publications",
+    "page": 10,
+    "canonical_actor_key": "elie gouzien",
+    "aliases": [
+      "Elie Gouzien"
+    ],
+    "pages": [
+      9,
+      10
+    ],
+    "mentions": [
+      {
+        "entity": "Elie Gouzien",
+        "page": 9,
+        "role_in_text": "author of a publication",
+        "occurrence_sentence": "Elie Gouzien Performance Analysis of a Repetition Cat Code Architecture: Computing 256-bit Elliptic Curve Logarithm in 9 Hours with 126 133 Cat Qubits 2023-0",
+        "source_document": "https://alice-bob.com/publications"
+      },
+      {
+        "entity": "Elie Gouzien",
+        "page": 10,
+        "role_in_text": "author",
+        "occurrence_sentence": "Elie Gouzien Performance Analysis of a Repetition Cat Code Architecture: Computing 256-bit Elliptic Curve Logarithm in 9 Hours with 126 133 Cat Qubits 2023-02",
+        "source_document": "https://alice-bob.com/publications"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Unknown",
+    "sphere": "Unknown",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "unknown_category",
+    "classification_needs_review": true,
+    "classification_review_reason": "unmapped_category:individual; individual_requires_role_classification"
+  },
+  {
+    "entity": "Emmanuel Flurin",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "individual",
+    "role_in_text": "Named individual",
+    "technology_area": "unknown",
+    "occurrence_sentence": "Emmanuel Flurin CEA",
+    "source_document": "https://alice-bob.com/thats-us",
+    "page": 18,
+    "confidence": "high",
+    "canonical_actor_key": "emmanuel flurin",
+    "aliases": [
+      "Emmanuel Flurin"
+    ],
+    "pages": [
+      18
+    ],
+    "mentions": [
+      {
+        "entity": "Emmanuel Flurin",
+        "page": 18,
+        "role_in_text": "Named individual",
+        "occurrence_sentence": "Emmanuel Flurin CEA",
+        "source_document": "https://alice-bob.com/thats-us"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Unknown",
+    "sphere": "Unknown",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "unknown_category",
+    "classification_needs_review": true,
+    "classification_review_reason": "unmapped_category:individual; individual_requires_role_classification"
+  },
+  {
+    "entity": "Equinix",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "large enterprises",
+    "role_in_text": "partner of Alice & Bob",
+    "technology_area": "quantum computing",
+    "occurrence_sentence": "The following month, the first notebook to emulate a cat-qubit-based quantum system is distributed by Alice & Bob's new partners",
+    "source_document": "https://alice-bob.com/thats-us",
+    "page": 13,
+    "canonical_actor_key": "equinix",
+    "aliases": [
+      "Equinix"
+    ],
+    "pages": [
+      13
+    ],
+    "mentions": [
+      {
+        "entity": "Equinix",
+        "page": 13,
+        "role_in_text": "partner of Alice & Bob",
+        "occurrence_sentence": "The following month, the first notebook to emulate a cat-qubit-based quantum system is distributed by Alice & Bob's new partners",
+        "source_document": "https://alice-bob.com/thats-us"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Industry",
+    "sphere": "Single",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "error correction lab",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "research institutes",
+    "role_in_text": "The error correction lab",
+    "technology_area": "quantum computing",
+    "occurrence_sentence": "#  The error correction lab",
+    "source_document": "https://alice-bob.com/platform",
+    "page": 9,
+    "confidence": "medium",
+    "canonical_actor_key": "error correction lab",
+    "aliases": [
+      "error correction lab"
+    ],
+    "pages": [
+      9
+    ],
+    "mentions": [
+      {
+        "entity": "error correction lab",
+        "page": 9,
+        "role_in_text": "The error correction lab",
+        "occurrence_sentence": "#  The error correction lab",
+        "source_document": "https://alice-bob.com/platform"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Academia",
+    "sphere": "Single",
+    "r_and_d": "R&D",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "Etienne Moreau",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "individual",
+    "role_in_text": "Partner, Supernova Invest",
+    "technology_area": "quantum computing",
+    "occurrence_sentence": "Etienne Moreau, Partner, Supernova Invest",
+    "source_document": "https://alice-bob.com/newsroom/alice-bob-100m-series-b-fundraising-press-release",
+    "page": 14,
+    "canonical_actor_key": "etienne moreau",
+    "aliases": [
+      "Etienne Moreau"
+    ],
+    "pages": [
+      14
+    ],
+    "mentions": [
+      {
+        "entity": "Etienne Moreau",
+        "page": 14,
+        "role_in_text": "Partner, Supernova Invest",
+        "occurrence_sentence": "Etienne Moreau, Partner, Supernova Invest",
+        "source_document": "https://alice-bob.com/newsroom/alice-bob-100m-series-b-fundraising-press-release"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Unknown",
+    "sphere": "Unknown",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "unknown_category",
+    "classification_needs_review": true,
+    "classification_review_reason": "unmapped_category:individual; individual_requires_role_classification"
+  },
+  {
+    "entity": "Europe",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "country",
+    "role_in_text": "Geopolitical actor in the context of quantum computing sales",
+    "technology_area": "quantum computing",
+    "occurrence_sentence": "Such deals can take several years to come through, and the systems for now are crafted and installed one by one.",
+    "source_document": "https://alice-bob.com/blog/scaling-the-cats-quantum-engineering-at-infrastructure-scale",
+    "page": 11,
+    "canonical_actor_key": "europe",
+    "aliases": [
+      "Europe"
+    ],
+    "pages": [
+      11,
+      12
+    ],
+    "mentions": [
+      {
+        "entity": "Europe",
+        "page": 11,
+        "role_in_text": "Geopolitical actor in the context of quantum computing sales",
+        "occurrence_sentence": "Such deals can take several years to come through, and the systems for now are crafted and installed one by one.",
+        "source_document": "https://alice-bob.com/blog/scaling-the-cats-quantum-engineering-at-infrastructure-scale"
+      },
+      {
+        "entity": "Europe",
+        "page": 12,
+        "role_in_text": "Geopolitical actor where quantum computers are being sold.",
+        "occurrence_sentence": "today the number of quantum machines being sold at a European level is still very humbling.",
+        "source_document": "https://alice-bob.com/blog/scaling-the-cats-quantum-engineering-at-infrastructure-scale"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Unknown",
+    "sphere": "Unknown",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "unknown_category",
+    "classification_needs_review": true,
+    "classification_review_reason": "unmapped_category:country"
+  },
+  {
+    "entity": "European Innovation Council",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "supranational government",
+    "source_document": "https://alice-bob.com/thats-us",
+    "page": 19,
+    "canonical_actor_key": "european innovation council",
+    "aliases": [
+      "European Innovation Council"
+    ],
+    "pages": [
+      19
+    ],
+    "mentions": [
+      {
+        "entity": "European Innovation Council",
+        "page": 19,
+        "role_in_text": "",
+        "occurrence_sentence": "",
+        "source_document": "https://alice-bob.com/thats-us"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Government",
+    "sphere": "Single",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "name_heuristic_government",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "François-Marie Le Régent",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "individual",
+    "role_in_text": "author",
+    "technology_area": "quantum computing",
+    "occurrence_sentence": "François-Marie Le Régent Heisenberg formulation of adiabatic elimination for open quantum systems with two time-scales 2023-03",
+    "source_document": "https://alice-bob.com/publications",
+    "page": 13,
+    "confidence": "high",
+    "canonical_actor_key": "fran ois marie le r gent",
+    "aliases": [
+      "François-Marie Le Régent"
+    ],
+    "pages": [
+      13
+    ],
+    "mentions": [
+      {
+        "entity": "François-Marie Le Régent",
+        "page": 13,
+        "role_in_text": "author",
+        "occurrence_sentence": "François-Marie Le Régent Heisenberg formulation of adiabatic elimination for open quantum systems with two time-scales 2023-03",
+        "source_document": "https://alice-bob.com/publications"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Unknown",
+    "sphere": "Unknown",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "unknown_category",
+    "classification_needs_review": true,
+    "classification_review_reason": "unmapped_category:individual; individual_requires_role_classification"
+  },
+  {
+    "entity": "Future French Champions",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "financial support institutions",
+    "role_in_text": "advisor",
+    "technology_area": "deep tech general",
+    "occurrence_sentence": "Thanks To Our Advisors * Future French Champions: Sandra Pezet, Ezzeddine Alameddine, Justine Higelin, Marie-Berangère Mémin, Antoine Emmanuelli",
+    "source_document": "https://alice-bob.com/newsroom/alice-bob-100m-series-b-fundraising-press-release",
+    "page": 17,
+    "confidence": "high",
+    "canonical_actor_key": "future french champions",
+    "aliases": [
+      "FFC",
+      "Future French Champions",
+      "Future French Champions (FFC)"
+    ],
+    "pages": [
+      9,
+      10,
+      17,
+      18
+    ],
+    "mentions": [
+      {
+        "entity": "Future French Champions (FFC)",
+        "page": 9,
+        "role_in_text": "led the Series B funding round",
+        "occurrence_sentence": "",
+        "source_document": "https://alice-bob.com/newsroom/alice-bob-100m-series-b-fundraising-press-release"
+      },
+      {
+        "entity": "Future French Champions (FFC)",
+        "page": 10,
+        "role_in_text": "led by Future French Champions (FFC)",
+        "occurrence_sentence": "",
+        "source_document": "https://alice-bob.com/newsroom/alice-bob-100m-series-b-fundraising-press-release"
+      },
+      {
+        "entity": "Future French Champions",
+        "page": 17,
+        "role_in_text": "advisor",
+        "occurrence_sentence": "Thanks To Our Advisors * Future French Champions: Sandra Pezet, Ezzeddine Alameddine, Justine Higelin, Marie-Berangère Mémin, Antoine Emmanuelli",
+        "source_document": "https://alice-bob.com/newsroom/alice-bob-100m-series-b-fundraising-press-release"
+      },
+      {
+        "entity": "Future French Champions (FFC)",
+        "page": 18,
+        "role_in_text": "led the Series B funding",
+        "occurrence_sentence": "Alice & Bob Closes €100M Series B Led by Future French Champions (FFC), AVP and Bpifrance to Advance Towards a Useful Quantum Computer",
+        "source_document": "https://alice-bob.com/newsroom/alice-bob-100m-series-b-fundraising-press-release"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Intermediary",
+    "sphere": "Multi",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "Girard",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "individual",
+    "role_in_text": "former CEO of Atos",
+    "technology_area": "unknown",
+    "occurrence_sentence": "former Atos CEO Girard joins French tech startup Alice & Bob",
+    "source_document": "https://alice-bob.com",
+    "page": 10,
+    "confidence": "high",
+    "canonical_actor_key": "girard",
+    "aliases": [
+      "Girard"
+    ],
+    "pages": [
+      6,
+      8,
+      9,
+      10
+    ],
+    "mentions": [
+      {
+        "entity": "Girard",
+        "page": 6,
+        "role_in_text": "",
+        "occurrence_sentence": "",
+        "source_document": "https://alice-bob.com"
+      },
+      {
+        "entity": "Girard",
+        "page": 8,
+        "role_in_text": "former CEO of Atos",
+        "occurrence_sentence": "former Atos CEO Girard joins French tech startup Alice Bob",
+        "source_document": "https://alice-bob.com"
+      },
+      {
+        "entity": "Girard",
+        "page": 9,
+        "role_in_text": "",
+        "occurrence_sentence": "",
+        "source_document": "https://alice-bob.com"
+      },
+      {
+        "entity": "Girard",
+        "page": 10,
+        "role_in_text": "former CEO of Atos",
+        "occurrence_sentence": "former Atos CEO Girard joins French tech startup Alice & Bob",
+        "source_document": "https://alice-bob.com"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Unknown",
+    "sphere": "Unknown",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "unknown_category",
+    "classification_needs_review": true,
+    "classification_review_reason": "unmapped_category:individual; individual_requires_role_classification"
+  },
+  {
+    "entity": "Google",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "large enterprises",
+    "role_in_text": "sets this cookie to calculate visitor, session and campaign data and track site usage for the site's analytics report",
+    "technology_area": "other",
+    "occurrence_sentence": "Google Analytics sets this cookie to calculate visitor, session and campaign data and track site usage for the site's analytics report.",
+    "source_document": "https://alice-bob.com/blog/not-all-logical-qubits-are-created-equal-heres-how-to-benchmark-them",
+    "page": 5,
+    "confidence": "high",
+    "canonical_actor_key": "google",
+    "aliases": [
+      "Google"
+    ],
+    "pages": [
+      1,
+      2,
+      4,
+      5,
+      9,
+      10,
+      11
+    ],
+    "mentions": [
+      {
+        "entity": "Google",
+        "page": 2,
+        "role_in_text": "sets cookies for Google Recaptcha service",
+        "occurrence_sentence": "Google Recaptcha service sets this cookie to identify bots to protect the website against malicious spam attacks.",
+        "source_document": "https://alice-bob.com/engineering"
+      },
+      {
+        "entity": "Google",
+        "page": 2,
+        "role_in_text": "Google Recaptcha service",
+        "occurrence_sentence": "Google Recaptcha service sets this cookie to identify bots to protect the website against malicious spam attacks.",
+        "source_document": "https://alice-bob.com/blog/not-all-logical-qubits-are-created-equal-heres-how-to-benchmark-them"
+      },
+      {
+        "entity": "Google",
+        "page": 5,
+        "role_in_text": "sets this cookie to calculate visitor, session and campaign data and track site usage for the site's analytics report",
+        "occurrence_sentence": "Google Analytics sets this cookie to calculate visitor, session and campaign data and track site usage for the site's analytics report.",
+        "source_document": "https://alice-bob.com/blog/not-all-logical-qubits-are-created-equal-heres-how-to-benchmark-them"
+      },
+      {
+        "entity": "Google",
+        "page": 10,
+        "role_in_text": "Company that announced the Willow chip and first logical qubit demonstration",
+        "occurrence_sentence": "When Google announced its Willow chip and first logical qubit demonstration in 2024",
+        "source_document": "https://alice-bob.com/blog/not-all-logical-qubits-are-created-equal-heres-how-to-benchmark-them"
+      },
+      {
+        "entity": "Google",
+        "page": 11,
+        "role_in_text": "Company that announced the Willow chip and first logical qubit demonstration",
+        "occurrence_sentence": "When Google announced its Willow chip and first logical qubit demonstration in 2024 [1",
+        "source_document": "https://alice-bob.com/blog/not-all-logical-qubits-are-created-equal-heres-how-to-benchmark-them"
+      },
+      {
+        "entity": "Google",
+        "page": 2,
+        "role_in_text": "Google Recaptcha service",
+        "occurrence_sentence": "Google Recaptcha service sets this cookie to identify bots to protect the website against malicious spam attacks.",
+        "source_document": "https://alice-bob.com/blog/beyond-moore-harnessing-quantum-for-the-next-era-of-hpc"
+      },
+      {
+        "entity": "Google",
+        "page": 4,
+        "role_in_text": "sets this cookie",
+        "occurrence_sentence": "Google Analytics sets this cookie to store and count page views.",
+        "source_document": "https://alice-bob.com/blog/beyond-moore-harnessing-quantum-for-the-next-era-of-hpc"
+      },
+      {
+        "entity": "Google",
+        "page": 5,
+        "role_in_text": "sets this cookie to calculate visitor, session and campaign data and track site usage for the site's analytics report",
+        "occurrence_sentence": "Google Analytics sets this cookie to calculate visitor, session and campaign data and track site usage for the site's analytics report.",
+        "source_document": "https://alice-bob.com/blog/beyond-moore-harnessing-quantum-for-the-next-era-of-hpc"
+      },
+      {
+        "entity": "Google",
+        "page": 2,
+        "role_in_text": "provides recaptcha service",
+        "occurrence_sentence": "Google Recaptcha service sets this cookie to identify bots to protect the website against malicious spam attacks.",
+        "source_document": "https://alice-bob.com/blog/alice-bob-2030-roadmap-to-useful-quantum-computers"
+      },
+      {
+        "entity": "Google",
+        "page": 4,
+        "role_in_text": "sets cookies for analytics",
+        "occurrence_sentence": "Google Analytics sets this cookie to store and count page views.",
+        "source_document": "https://alice-bob.com/blog/alice-bob-2030-roadmap-to-useful-quantum-computers"
+      },
+      {
+        "entity": "Google",
+        "page": 5,
+        "role_in_text": "sets this cookie to calculate visitor, session and campaign data and track site usage for the site's analytics report",
+        "occurrence_sentence": "Google Analytics sets this cookie to calculate visitor, session and campaign data and track site usage for the site's analytics report.",
+        "source_document": "https://alice-bob.com/blog/alice-bob-2030-roadmap-to-useful-quantum-computers"
+      },
+      {
+        "entity": "Google",
+        "page": 9,
+        "role_in_text": "Big player in quantum computing",
+        "occurrence_sentence": "Big players like Google and IBM were making headlines with their advances.",
+        "source_document": "https://alice-bob.com/blog/alice-bob-2030-roadmap-to-useful-quantum-computers"
+      },
+      {
+        "entity": "Google",
+        "page": 10,
+        "role_in_text": "Big player in quantum computing.",
+        "occurrence_sentence": "Big players like Google and IBM were making headlines with their advances.",
+        "source_document": "https://alice-bob.com/blog/alice-bob-2030-roadmap-to-useful-quantum-computers"
+      },
+      {
+        "entity": "Google",
+        "page": 2,
+        "role_in_text": "Google Recaptcha service",
+        "occurrence_sentence": "Google Recaptcha service sets this cookie to identify bots to protect the website against malicious spam attacks.",
+        "source_document": "https://alice-bob.com/blog/this-is-not-a-product-launch"
+      },
+      {
+        "entity": "Google",
+        "page": 5,
+        "role_in_text": "sets this cookie to calculate visitor, session and campaign data and track site usage for the site's analytics report",
+        "occurrence_sentence": "Google Analytics sets this cookie to calculate visitor, session and campaign data and track site usage for the site's analytics report.",
+        "source_document": "https://alice-bob.com/blog/this-is-not-a-product-launch"
+      },
+      {
+        "entity": "Google",
+        "page": 1,
+        "role_in_text": "sets this cookie to identify bots to protect the website against malicious spam attacks",
+        "occurrence_sentence": "Google Recaptcha service sets this cookie to identify bots to protect the website against malicious spam attacks.",
+        "source_document": "https://alice-bob.com/blog/who-are-alice-and-bob-the-story-behind-our-name"
+      },
+      {
+        "entity": "Google",
+        "page": 2,
+        "role_in_text": "Google Recaptcha service",
+        "occurrence_sentence": "Google Recaptcha service sets this cookie to identify bots to protect the website against malicious spam attacks.",
+        "source_document": "https://alice-bob.com/blog/who-are-alice-and-bob-the-story-behind-our-name"
+      },
+      {
+        "entity": "Google",
+        "page": 2,
+        "role_in_text": "Google Recaptcha service",
+        "occurrence_sentence": "Google Recaptcha service sets this cookie to identify bots to protect the website against malicious spam attacks.",
+        "source_document": "https://alice-bob.com/roadmap"
+      },
+      {
+        "entity": "Google",
+        "page": 2,
+        "role_in_text": "Google Recaptcha service",
+        "occurrence_sentence": "Google Recaptcha service sets this cookie to identify bots to protect the website against malicious spam attacks.",
+        "source_document": "https://alice-bob.com/publications"
+      },
+      {
+        "entity": "Google",
+        "page": 5,
+        "role_in_text": "sets this cookie to calculate visitor, session and campaign data and track site usage for the site's analytics report",
+        "occurrence_sentence": "Google Analytics sets this cookie to calculate visitor, session and campaign data and track site usage for the site's analytics report.",
+        "source_document": "https://alice-bob.com/publications"
+      },
+      {
+        "entity": "Google",
+        "page": 2,
+        "role_in_text": "Google Recaptcha service",
+        "occurrence_sentence": "Google Recaptcha service sets this cookie to identify bots to protect the website against malicious spam attacks.",
+        "source_document": "https://alice-bob.com/science"
+      },
+      {
+        "entity": "Google",
+        "page": 5,
+        "role_in_text": "sets this cookie to calculate visitor, session and campaign data and track site usage for the site's analytics report",
+        "occurrence_sentence": "Google Analytics sets this cookie to calculate visitor, session and campaign data and track site usage for the site's analytics report.",
+        "source_document": "https://alice-bob.com/science"
+      },
+      {
+        "entity": "Google",
+        "page": 2,
+        "role_in_text": "sets cookies for recaptcha service",
+        "occurrence_sentence": "Google Recaptcha service sets this cookie to identify bots to protect the website against malicious spam attacks.",
+        "source_document": "https://alice-bob.com/newsroom"
+      },
+      {
+        "entity": "Google",
+        "page": 5,
+        "role_in_text": "sets this cookie to calculate visitor, session and campaign data and track site usage for the site's analytics report",
+        "occurrence_sentence": "Google Analytics sets this cookie to calculate visitor, session and campaign data and track site usage for the site's analytics report.",
+        "source_document": "https://alice-bob.com/newsroom"
+      },
+      {
+        "entity": "Google",
+        "page": 2,
+        "role_in_text": "sets cookies to identify bots",
+        "occurrence_sentence": "Google Recaptcha service sets this cookie to identify bots to protect the website against malicious spam attacks.",
+        "source_document": "https://alice-bob.com/glossary"
+      },
+      {
+        "entity": "Google",
+        "page": 4,
+        "role_in_text": "sets this cookie to store and count page views",
+        "occurrence_sentence": "Google Analytics sets this cookie to store and count page views.",
+        "source_document": "https://alice-bob.com/glossary"
+      },
+      {
+        "entity": "Google",
+        "page": 4,
+        "role_in_text": "sets this cookie to calculate visitor, session and campaign data and track site usage for the site's analytics report",
+        "occurrence_sentence": "Google Analytics sets this cookie to calculate visitor, session and campaign data and track site usage for the site's analytics report.",
+        "source_document": "https://alice-bob.com/glossary"
+      },
+      {
+        "entity": "Google",
+        "page": 5,
+        "role_in_text": "sets this cookie to calculate visitor, session and campaign data and track site usage for the site's analytics report",
+        "occurrence_sentence": "Google Analytics sets this cookie to calculate visitor, session and campaign data and track site usage for the site's analytics report.",
+        "source_document": "https://alice-bob.com/glossary"
+      },
+      {
+        "entity": "Google",
+        "page": 2,
+        "role_in_text": "sets cookies to identify bots and protect the website against malicious spam attacks",
+        "occurrence_sentence": "Google Recaptcha service sets this cookie to identify bots to protect the website against malicious spam attacks.",
+        "source_document": "https://alice-bob.com/platform"
+      },
+      {
+        "entity": "Google",
+        "page": 5,
+        "role_in_text": "sets this cookie to calculate visitor, session and campaign data and track site usage for the site's analytics report",
+        "occurrence_sentence": "Google Analytics sets this cookie to calculate visitor, session and campaign data and track site usage for the site's analytics report.",
+        "source_document": "https://alice-bob.com/platform"
+      },
+      {
+        "entity": "Google",
+        "page": 2,
+        "role_in_text": "Google Recaptcha service",
+        "occurrence_sentence": "Google Recaptcha service sets this cookie to identify bots to protect the website against malicious spam attacks.",
+        "source_document": "https://alice-bob.com/newsroom/alice-bob-100m-series-b-fundraising-press-release"
+      },
+      {
+        "entity": "Google",
+        "page": 5,
+        "role_in_text": "sets this cookie to calculate visitor, session and campaign data and track site usage for the site's analytics report",
+        "occurrence_sentence": "Google Analytics sets this cookie to calculate visitor, session and campaign data and track site usage for the site's analytics report.",
+        "source_document": "https://alice-bob.com/newsroom/alice-bob-100m-series-b-fundraising-press-release"
+      },
+      {
+        "entity": "Google",
+        "page": 2,
+        "role_in_text": "Google Recaptcha service",
+        "occurrence_sentence": "Google Recaptcha service sets this cookie to identify bots to protect the website against malicious spam attacks.",
+        "source_document": "https://alice-bob.com/blog/scaling-the-cats-quantum-engineering-at-infrastructure-scale"
+      },
+      {
+        "entity": "Google",
+        "page": 5,
+        "role_in_text": "sets this cookie to calculate visitor, session and campaign data and track site usage for the site's analytics report",
+        "occurrence_sentence": "Google Analytics sets this cookie to calculate visitor, session and campaign data and track site usage for the site's analytics report.",
+        "source_document": "https://alice-bob.com/blog/scaling-the-cats-quantum-engineering-at-infrastructure-scale"
+      },
+      {
+        "entity": "Google",
+        "page": 2,
+        "role_in_text": "Google Recaptcha service",
+        "occurrence_sentence": "Google Recaptcha service sets this cookie to identify bots to protect the website against malicious spam attacks.",
+        "source_document": "https://alice-bob.com/thats-us"
+      },
+      {
+        "entity": "Google",
+        "page": 5,
+        "role_in_text": "sets this cookie to calculate visitor, session and campaign data and track site usage for the site's analytics report",
+        "occurrence_sentence": "Google Analytics sets this cookie to calculate visitor, session and campaign data and track site usage for the site's analytics report.",
+        "source_document": "https://alice-bob.com/thats-us"
+      },
+      {
+        "entity": "Google",
+        "page": 2,
+        "role_in_text": "Google Recaptcha service",
+        "occurrence_sentence": "Google Recaptcha service sets this cookie to identify bots to protect the website against malicious spam attacks.",
+        "source_document": "https://alice-bob.com/hpc-report"
+      },
+      {
+        "entity": "Google",
+        "page": 5,
+        "role_in_text": "sets this cookie to calculate visitor, session and campaign data and track site usage for the site's analytics report",
+        "occurrence_sentence": "Google Analytics sets this cookie to calculate visitor, session and campaign data and track site usage for the site's analytics report.",
+        "source_document": "https://alice-bob.com/hpc-report"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Industry",
+    "sphere": "Single",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "Google Analytics",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "large enterprises",
+    "role_in_text": "sets cookies for tracking site usage",
+    "technology_area": "AI",
+    "occurrence_sentence": "Google Analytics sets this cookie to store and count page views.",
+    "source_document": "https://alice-bob.com/publications",
+    "page": 4,
+    "confidence": "high",
+    "canonical_actor_key": "google analytics",
+    "aliases": [
+      "Google Analytics"
+    ],
+    "pages": [
+      4
+    ],
+    "mentions": [
+      {
+        "entity": "Google Analytics",
+        "page": 4,
+        "role_in_text": "sets this cookie to store and count page views",
+        "occurrence_sentence": "Google Analytics sets this cookie to store and count page views.",
+        "source_document": "https://alice-bob.com/engineering"
+      },
+      {
+        "entity": "Google Analytics",
+        "page": 4,
+        "role_in_text": "sets this cookie to calculate visitor, session and campaign data and track site usage for the site's analytics report",
+        "occurrence_sentence": "Google Analytics sets this cookie to calculate visitor, session and campaign data and track site usage for the site's analytics report.",
+        "source_document": "https://alice-bob.com/engineering"
+      },
+      {
+        "entity": "Google Analytics",
+        "page": 4,
+        "role_in_text": "sets cookies to track site usage",
+        "occurrence_sentence": "Google Analytics sets this cookie to store and count page views.",
+        "source_document": "https://alice-bob.com/blog/not-all-logical-qubits-are-created-equal-heres-how-to-benchmark-them"
+      },
+      {
+        "entity": "Google Analytics",
+        "page": 4,
+        "role_in_text": "Google Analytics sets this cookie to store and count page views.",
+        "occurrence_sentence": "Google Analytics sets this cookie to store and count page views.",
+        "source_document": "https://alice-bob.com/blog/this-is-not-a-product-launch"
+      },
+      {
+        "entity": "Google Analytics",
+        "page": 4,
+        "role_in_text": "sets cookies to track site usage",
+        "occurrence_sentence": "Google Analytics sets this cookie to calculate visitor, session and campaign data and track site usage for the site's analytics report.",
+        "source_document": "https://alice-bob.com/blog/who-are-alice-and-bob-the-story-behind-our-name"
+      },
+      {
+        "entity": "Google Analytics",
+        "page": 4,
+        "role_in_text": "sets cookies for analytics",
+        "occurrence_sentence": "Google Analytics sets this cookie to store and count page views.",
+        "source_document": "https://alice-bob.com/roadmap"
+      },
+      {
+        "entity": "Google Analytics",
+        "page": 4,
+        "role_in_text": "sets cookies for tracking site usage",
+        "occurrence_sentence": "Google Analytics sets this cookie to store and count page views.",
+        "source_document": "https://alice-bob.com/publications"
+      },
+      {
+        "entity": "Google Analytics",
+        "page": 4,
+        "role_in_text": "Google Analytics sets this cookie to store and count page views.",
+        "occurrence_sentence": "Google Analytics sets this cookie to store and count page views.",
+        "source_document": "https://alice-bob.com/newsroom/alice-bob-100m-series-b-fundraising-press-release"
+      },
+      {
+        "entity": "Google Analytics",
+        "page": 4,
+        "role_in_text": "sets cookies to track site usage",
+        "occurrence_sentence": "Google Analytics sets this cookie to store and count page views.",
+        "source_document": "https://alice-bob.com/thats-us"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Industry",
+    "sphere": "Single",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "Google Cloud",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "large enterprises",
+    "role_in_text": "platform",
+    "technology_area": "quantum computing",
+    "occurrence_sentence": "Boson 4 was launched on Google Cloud for everyone to access and test earlier this year, marking an important product milestone.",
+    "source_document": "https://alice-bob.com/blog/alice-bob-2030-roadmap-to-useful-quantum-computers",
+    "page": 11,
+    "canonical_actor_key": "google cloud",
+    "aliases": [
+      "Google Cloud"
+    ],
+    "pages": [
+      11
+    ],
+    "mentions": [
+      {
+        "entity": "Google Cloud",
+        "page": 11,
+        "role_in_text": "platform",
+        "occurrence_sentence": "Boson 4 was launched on Google Cloud for everyone to access and test earlier this year, marking an important product milestone.",
+        "source_document": "https://alice-bob.com/blog/alice-bob-2030-roadmap-to-useful-quantum-computers"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Industry",
+    "sphere": "Single",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "Google Quantum AI",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "corporate labs",
+    "role_in_text": "demonstrated surface code",
+    "technology_area": "quantum computing",
+    "occurrence_sentence": "Google Quantum AI demonstrated this with their surface code as mentioned above.",
+    "source_document": "https://alice-bob.com/blog/not-all-logical-qubits-are-created-equal-heres-how-to-benchmark-them",
+    "page": 12,
+    "confidence": "high",
+    "canonical_actor_key": "google quantum ai",
+    "aliases": [
+      "Google Quantum AI"
+    ],
+    "pages": [
+      12
+    ],
+    "mentions": [
+      {
+        "entity": "Google Quantum AI",
+        "page": 12,
+        "role_in_text": "demonstrated surface code",
+        "occurrence_sentence": "Google Quantum AI demonstrated this with their surface code as mentioned above.",
+        "source_document": "https://alice-bob.com/blog/not-all-logical-qubits-are-created-equal-heres-how-to-benchmark-them"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Industry",
+    "sphere": "Single",
+    "r_and_d": "R&D",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "Helium",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "research institutes",
+    "role_in_text": "A system for quantum research.",
+    "technology_area": "quantum computing",
+    "occurrence_sentence": "The system runs an 18 cat-qubit chip.",
+    "source_document": "https://alice-bob.com/blog/this-is-not-a-product-launch",
+    "page": 11,
+    "confidence": "high",
+    "canonical_actor_key": "helium",
+    "aliases": [
+      "Helium"
+    ],
+    "pages": [
+      11
+    ],
+    "mentions": [
+      {
+        "entity": "Helium",
+        "page": 11,
+        "role_in_text": "A system for quantum research.",
+        "occurrence_sentence": "The system runs an 18 cat-qubit chip.",
+        "source_document": "https://alice-bob.com/blog/this-is-not-a-product-launch"
+      },
+      {
+        "entity": "Helium",
+        "page": 11,
+        "role_in_text": "A system for quantum research.",
+        "occurrence_sentence": "Helium is modular: it can host two generations of chips, which means the experimental protocols you develop today carry forward as the hardware evolves.",
+        "source_document": "https://alice-bob.com/blog/this-is-not-a-product-launch"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Academia",
+    "sphere": "Single",
+    "r_and_d": "R&D",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "HPC community",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "user communities",
+    "role_in_text": "active co-developer of the infrastructure",
+    "technology_area": "quantum computing",
+    "occurrence_sentence": "This makes the HPC community not just an end user of quantum, but an active co-developer of the infrastructure that will make it work.",
+    "source_document": "https://alice-bob.com/blog/not-all-logical-qubits-are-created-equal-heres-how-to-benchmark-them",
+    "page": 12,
+    "canonical_actor_key": "hpc community",
+    "aliases": [
+      "HPC community"
+    ],
+    "pages": [
+      12
+    ],
+    "mentions": [
+      {
+        "entity": "HPC community",
+        "page": 12,
+        "role_in_text": "active co-developer of the infrastructure",
+        "occurrence_sentence": "This makes the HPC community not just an end user of quantum, but an active co-developer of the infrastructure that will make it work.",
+        "source_document": "https://alice-bob.com/blog/not-all-logical-qubits-are-created-equal-heres-how-to-benchmark-them"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Civil Society",
+    "sphere": "Single",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "Hyperion Research",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "research institutes",
+    "role_in_text": "published a report",
+    "technology_area": "quantum computing",
+    "occurrence_sentence": "This is why, together with Hyperion Research, we published a report to explore what's next: early fault-tolerant quantum computers (eFTQC).",
+    "source_document": "https://alice-bob.com/blog/beyond-moore-harnessing-quantum-for-the-next-era-of-hpc",
+    "page": 11,
+    "confidence": "high",
+    "canonical_actor_key": "hyperion research",
+    "aliases": [
+      "Hyperion Research"
+    ],
+    "pages": [
+      10,
+      11,
+      17,
+      18
+    ],
+    "mentions": [
+      {
+        "entity": "Hyperion Research",
+        "page": 10,
+        "role_in_text": "collaborating on a report with Alice & Bob",
+        "occurrence_sentence": "Together with Hyperion Research, we published a report to explore what's next: early fault-tolerant quantum computers (eFT",
+        "source_document": "https://alice-bob.com/blog/beyond-moore-harnessing-quantum-for-the-next-era-of-hpc"
+      },
+      {
+        "entity": "Hyperion Research",
+        "page": 11,
+        "role_in_text": "published a report",
+        "occurrence_sentence": "This is why, together with Hyperion Research, we published a report to explore what's next: early fault-tolerant quantum computers (eFTQC).",
+        "source_document": "https://alice-bob.com/blog/beyond-moore-harnessing-quantum-for-the-next-era-of-hpc"
+      },
+      {
+        "entity": "Hyperion Research",
+        "page": 17,
+        "role_in_text": "hosts HPC User Forum",
+        "occurrence_sentence": "Industry events like the HPC User Forum from Hyperion Research and major supercomputing conferences (SC, ISC) have proven to be invaluable platforms for sharing ideas and learning from each other.",
+        "source_document": "https://alice-bob.com/blog/beyond-moore-harnessing-quantum-for-the-next-era-of-hpc"
+      },
+      {
+        "entity": "Hyperion Research",
+        "page": 18,
+        "role_in_text": "organizer of HPC User Forum",
+        "occurrence_sentence": "Industry events like the HPC User Forum from Hyperion Research and major supercomputing conferences (SC, ISC) have proven to be invaluable platforms for sharing ideas and learning from each other.",
+        "source_document": "https://alice-bob.com/blog/beyond-moore-harnessing-quantum-for-the-next-era-of-hpc"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Academia",
+    "sphere": "Single",
+    "r_and_d": "R&D",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "Inria",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "research institutes",
+    "role_in_text": "affiliation of Philippe Campagne-Ibarcq",
+    "technology_area": "unknown",
+    "occurrence_sentence": "Philippe Campagne-Ibarcq Inria",
+    "source_document": "https://alice-bob.com/thats-us",
+    "page": 17,
+    "confidence": "high",
+    "canonical_actor_key": "inria",
+    "aliases": [
+      "Inria"
+    ],
+    "pages": [
+      17
+    ],
+    "mentions": [
+      {
+        "entity": "Inria",
+        "page": 17,
+        "role_in_text": "affiliation of Philippe Campagne-Ibarcq",
+        "occurrence_sentence": "Philippe Campagne-Ibarcq Inria",
+        "source_document": "https://alice-bob.com/thats-us"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Academia",
+    "sphere": "Single",
+    "r_and_d": "R&D",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "Jérémie Guillaud",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "individual",
+    "role_in_text": "author",
+    "technology_area": "quantum computing",
+    "occurrence_sentence": "Jérémie Guillaud Repetition cat qubit for fault-tolerant quantum computation 2019-12",
+    "source_document": "https://alice-bob.com/science",
+    "page": 12,
+    "confidence": "high",
+    "canonical_actor_key": "j r mie guillaud",
+    "aliases": [
+      "Jérémie Guillaud"
+    ],
+    "pages": [
+      12
+    ],
+    "mentions": [
+      {
+        "entity": "Jérémie Guillaud",
+        "page": 12,
+        "role_in_text": "author",
+        "occurrence_sentence": "Jérémie Guillaud Repetition cat qubit for fault-tolerant quantum computation 2019-12",
+        "source_document": "https://alice-bob.com/science"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Unknown",
+    "sphere": "Unknown",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "unknown_category",
+    "classification_needs_review": true,
+    "classification_review_reason": "unmapped_category:individual; individual_requires_role_classification"
+  },
+  {
+    "entity": "Jeremy",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "individual",
+    "role_in_text": "Named as part of the team",
+    "technology_area": "unknown",
+    "occurrence_sentence": "JEREMY",
+    "source_document": "https://alice-bob.com/thats-us",
+    "page": 9,
+    "confidence": "high",
+    "canonical_actor_key": "jeremy",
+    "aliases": [
+      "Jeremy"
+    ],
+    "pages": [
+      9,
+      10
+    ],
+    "mentions": [
+      {
+        "entity": "Jeremy",
+        "page": 9,
+        "role_in_text": "Named as part of the team",
+        "occurrence_sentence": "JEREMY",
+        "source_document": "https://alice-bob.com/thats-us"
+      },
+      {
+        "entity": "Jeremy",
+        "page": 10,
+        "role_in_text": "Named",
+        "occurrence_sentence": "",
+        "source_document": "https://alice-bob.com/thats-us"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Unknown",
+    "sphere": "Unknown",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "unknown_category",
+    "classification_needs_review": true,
+    "classification_review_reason": "unmapped_category:individual; individual_requires_role_classification"
+  },
+  {
+    "entity": "Lescanne",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "individual",
+    "role_in_text": "author",
+    "technology_area": "quantum computing",
+    "occurrence_sentence": "Lescanne, Peronnin Exponential supression of bit-flips in a qubit encoded in an oscillator 2020-03",
+    "source_document": "https://alice-bob.com/science",
+    "page": 12,
+    "confidence": "",
+    "canonical_actor_key": "lescanne",
+    "aliases": [
+      "Lescanne"
+    ],
+    "pages": [
+      12
+    ],
+    "mentions": [
+      {
+        "entity": "Lescanne",
+        "page": 12,
+        "role_in_text": "author",
+        "occurrence_sentence": "Lescanne, Peronnin Exponential supression of bit-flips in a qubit encoded in an oscillator 2020-03",
+        "source_document": "https://alice-bob.com/science"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Unknown",
+    "sphere": "Unknown",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "unknown_category",
+    "classification_needs_review": true,
+    "classification_review_reason": "unmapped_category:individual; individual_requires_role_classification"
+  },
+  {
+    "entity": "Lever",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "business support institutions",
+    "role_in_text": "Platform for job openings",
+    "technology_area": "deep tech general",
+    "occurrence_sentence": "Explore open positions (https://jobs.lever.co/alice-bob?commitment=Intern%20%2F%20Stage)",
+    "source_document": "https://alice-bob.com/join-us",
+    "page": 7,
+    "confidence": "medium",
+    "canonical_actor_key": "lever",
+    "aliases": [
+      "Lever"
+    ],
+    "pages": [
+      7
+    ],
+    "mentions": [
+      {
+        "entity": "Lever",
+        "page": 7,
+        "role_in_text": "Platform for job openings",
+        "occurrence_sentence": "Explore open positions (https://jobs.lever.co/alice-bob?commitment=Intern%20%2F%20Stage)",
+        "source_document": "https://alice-bob.com/join-us"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Intermediary",
+    "sphere": "Multi",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "LinkedIn",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "large enterprises",
+    "role_in_text": "sets cookies for storing visitor's consent and facilitating data center selection",
+    "technology_area": "AI",
+    "occurrence_sentence": "Linkedin set this cookie for storing visitor's consent regarding using cookies for non-essential purposes.",
+    "source_document": "https://alice-bob.com/engineering",
+    "page": 2,
+    "confidence": "high",
+    "canonical_actor_key": "linkedin",
+    "aliases": [
+      "LinkedIn",
+      "Linkedin"
+    ],
+    "pages": [
+      2,
+      3,
+      5,
+      8
+    ],
+    "mentions": [
+      {
+        "entity": "LinkedIn",
+        "page": 2,
+        "role_in_text": "sets cookies for storing visitor's consent and facilitating data center selection",
+        "occurrence_sentence": "Linkedin set this cookie for storing visitor's consent regarding using cookies for non-essential purposes.",
+        "source_document": "https://alice-bob.com/engineering"
+      },
+      {
+        "entity": "LinkedIn",
+        "page": 2,
+        "role_in_text": "LinkedIn",
+        "occurrence_sentence": "Linkedin set this cookie for storing visitor's consent regarding using cookies for non-essential purposes.",
+        "source_document": "https://alice-bob.com/blog/not-all-logical-qubits-are-created-equal-heres-how-to-benchmark-them"
+      },
+      {
+        "entity": "LinkedIn",
+        "page": 3,
+        "role_in_text": "sets the lidc cookie to facilitate data center selection.",
+        "occurrence_sentence": "LinkedIn sets the lidc cookie to facilitate data center selection.",
+        "source_document": "https://alice-bob.com/blog/not-all-logical-qubits-are-created-equal-heres-how-to-benchmark-them"
+      },
+      {
+        "entity": "LinkedIn",
+        "page": 5,
+        "role_in_text": "sets this cookie from LinkedIn share buttons and ad tags to recognize browser IDs",
+        "occurrence_sentence": "LinkedIn sets this cookie from LinkedIn share buttons and ad tags to recognize browser IDs.",
+        "source_document": "https://alice-bob.com/blog/not-all-logical-qubits-are-created-equal-heres-how-to-benchmark-them"
+      },
+      {
+        "entity": "LinkedIn",
+        "page": 2,
+        "role_in_text": "LinkedIn",
+        "occurrence_sentence": "Linkedin set this cookie for storing visitor's consent regarding using cookies for non-essential purposes.",
+        "source_document": "https://alice-bob.com/blog/beyond-moore-harnessing-quantum-for-the-next-era-of-hpc"
+      },
+      {
+        "entity": "LinkedIn",
+        "page": 5,
+        "role_in_text": "sets this cookie from LinkedIn share buttons and ad tags to recognize browser IDs",
+        "occurrence_sentence": "LinkedIn sets this cookie from LinkedIn share buttons and ad tags to recognize browser IDs.",
+        "source_document": "https://alice-bob.com/blog/beyond-moore-harnessing-quantum-for-the-next-era-of-hpc"
+      },
+      {
+        "entity": "LinkedIn",
+        "page": 2,
+        "role_in_text": "sets cookies for storing visitor's consent and facilitating data center selection",
+        "occurrence_sentence": "Linkedin set this cookie for storing visitor's consent regarding using cookies for non-essential purposes.",
+        "source_document": "https://alice-bob.com/blog/alice-bob-2030-roadmap-to-useful-quantum-computers"
+      },
+      {
+        "entity": "LinkedIn",
+        "page": 5,
+        "role_in_text": "sets this cookie from LinkedIn share buttons and ad tags to recognize browser IDs",
+        "occurrence_sentence": "LinkedIn sets this cookie from LinkedIn share buttons and ad tags to",
+        "source_document": "https://alice-bob.com/blog/alice-bob-2030-roadmap-to-useful-quantum-computers"
+      },
+      {
+        "entity": "Linkedin",
+        "page": 2,
+        "role_in_text": "Linkedin set this cookie",
+        "occurrence_sentence": "Linkedin set this cookie for storing visitor's consent regarding using cookies for non-essential purposes.",
+        "source_document": "https://alice-bob.com/blog/this-is-not-a-product-launch"
+      },
+      {
+        "entity": "LinkedIn",
+        "page": 3,
+        "role_in_text": "sets the lidc cookie to facilitate data center selection",
+        "occurrence_sentence": "LinkedIn sets the lidc cookie to facilitate data center selection.",
+        "source_document": "https://alice-bob.com/blog/this-is-not-a-product-launch"
+      },
+      {
+        "entity": "LinkedIn",
+        "page": 5,
+        "role_in_text": "sets this cookie from LinkedIn share buttons and ad tags to recognize browser IDs",
+        "occurrence_sentence": "LinkedIn sets this cookie from LinkedIn share buttons and ad tags to recognize browser IDs.",
+        "source_document": "https://alice-bob.com/blog/this-is-not-a-product-launch"
+      },
+      {
+        "entity": "LinkedIn",
+        "page": 2,
+        "role_in_text": "LinkedIn",
+        "occurrence_sentence": "Linkedin set this cookie for storing visitor's consent regarding using cookies for non-essential purposes.",
+        "source_document": "https://alice-bob.com/blog/who-are-alice-and-bob-the-story-behind-our-name"
+      },
+      {
+        "entity": "LinkedIn",
+        "page": 3,
+        "role_in_text": "sets the lidc cookie to facilitate data center selection",
+        "occurrence_sentence": "LinkedIn sets the lidc cookie to facilitate data center selection.",
+        "source_document": "https://alice-bob.com/blog/who-are-alice-and-bob-the-story-behind-our-name"
+      },
+      {
+        "entity": "LinkedIn",
+        "page": 2,
+        "role_in_text": "LinkedIn",
+        "occurrence_sentence": "Linkedin set this cookie for storing visitor's consent regarding using cookies for non-essential purposes.",
+        "source_document": "https://alice-bob.com/roadmap"
+      },
+      {
+        "entity": "LinkedIn",
+        "page": 2,
+        "role_in_text": "LinkedIn",
+        "occurrence_sentence": "Linkedin set this cookie for storing visitor's consent regarding using cookies for non-essential purposes.",
+        "source_document": "https://alice-bob.com/publications"
+      },
+      {
+        "entity": "LinkedIn",
+        "page": 5,
+        "role_in_text": "sets this cookie from LinkedIn share buttons and ad tags to recognize browser IDs",
+        "occurrence_sentence": "LinkedIn sets this cookie from LinkedIn share buttons and ad tags to recognize browser IDs.",
+        "source_document": "https://alice-bob.com/publications"
+      },
+      {
+        "entity": "LinkedIn",
+        "page": 8,
+        "role_in_text": "online platform for professional networking",
+        "occurrence_sentence": "You can prepare for the interview using materials available online, such as our website, LinkedIn, academic articles, and YouTube.",
+        "source_document": "https://alice-bob.com/join-us"
+      },
+      {
+        "entity": "LinkedIn",
+        "page": 2,
+        "role_in_text": "LinkedIn",
+        "occurrence_sentence": "Linkedin set this cookie for storing visitor's consent regarding using cookies for non-essential purposes.",
+        "source_document": "https://alice-bob.com/science"
+      },
+      {
+        "entity": "LinkedIn",
+        "page": 5,
+        "role_in_text": "sets this cookie from LinkedIn share buttons and ad tags to recognize browser IDs",
+        "occurrence_sentence": "LinkedIn sets this cookie from LinkedIn share buttons and ad tags to recognize browser IDs.",
+        "source_document": "https://alice-bob.com/science"
+      },
+      {
+        "entity": "LinkedIn",
+        "page": 2,
+        "role_in_text": "sets cookies for storing visitor's consent and facilitating data center selection",
+        "occurrence_sentence": "Linkedin set this cookie for storing visitor's consent regarding using cookies for non-essential purposes.",
+        "source_document": "https://alice-bob.com/newsroom"
+      },
+      {
+        "entity": "LinkedIn",
+        "page": 3,
+        "role_in_text": "sets the lidc cookie to facilitate data center selection.",
+        "occurrence_sentence": "LinkedIn sets the lidc cookie to facilitate data center selection.",
+        "source_document": "https://alice-bob.com/newsroom"
+      },
+      {
+        "entity": "LinkedIn",
+        "page": 5,
+        "role_in_text": "sets this cookie from LinkedIn share buttons and ad tags to recognize browser IDs",
+        "occurrence_sentence": "LinkedIn sets this cookie from LinkedIn share buttons and ad tags to recognize browser IDs.",
+        "source_document": "https://alice-bob.com/newsroom"
+      },
+      {
+        "entity": "LinkedIn",
+        "page": 2,
+        "role_in_text": "sets cookies for storing visitor's consent",
+        "occurrence_sentence": "Linkedin set this cookie for storing visitor's consent regarding using cookies for non-essential purposes.",
+        "source_document": "https://alice-bob.com/glossary"
+      },
+      {
+        "entity": "LinkedIn",
+        "page": 3,
+        "role_in_text": "sets the lidc cookie to facilitate data center selection",
+        "occurrence_sentence": "LinkedIn sets the lidc cookie to facilitate data center selection.",
+        "source_document": "https://alice-bob.com/glossary"
+      },
+      {
+        "entity": "LinkedIn",
+        "page": 5,
+        "role_in_text": "sets this cookie from LinkedIn share buttons and ad tags to recognize browser IDs",
+        "occurrence_sentence": "LinkedIn sets this cookie from LinkedIn share buttons and ad tags to recognize browser IDs.",
+        "source_document": "https://alice-bob.com/glossary"
+      },
+      {
+        "entity": "LinkedIn",
+        "page": 2,
+        "role_in_text": "sets cookies for storing visitor's consent and facilitating data center selection",
+        "occurrence_sentence": "Linkedin set this cookie for storing visitor's consent regarding using cookies for non-essential purposes.",
+        "source_document": "https://alice-bob.com/platform"
+      },
+      {
+        "entity": "LinkedIn",
+        "page": 3,
+        "role_in_text": "sets the lidc cookie to facilitate data center selection",
+        "occurrence_sentence": "LinkedIn sets the lidc cookie to facilitate data center selection.",
+        "source_document": "https://alice-bob.com/platform"
+      },
+      {
+        "entity": "LinkedIn",
+        "page": 5,
+        "role_in_text": "sets this cookie from LinkedIn share buttons and ad tags to recognize browser IDs",
+        "occurrence_sentence": "LinkedIn sets this cookie from LinkedIn share buttons and ad tags to recognize browser IDs.",
+        "source_document": "https://alice-bob.com/platform"
+      },
+      {
+        "entity": "LinkedIn",
+        "page": 2,
+        "role_in_text": "LinkedIn",
+        "occurrence_sentence": "Linkedin set this cookie for storing visitor's consent regarding using cookies for non-essential purposes.",
+        "source_document": "https://alice-bob.com/newsroom/alice-bob-100m-series-b-fundraising-press-release"
+      },
+      {
+        "entity": "LinkedIn",
+        "page": 5,
+        "role_in_text": "sets this cookie from LinkedIn share buttons and ad tags to recognize browser IDs",
+        "occurrence_sentence": "LinkedIn sets this cookie from LinkedIn share buttons and ad tags to recognize browser IDs.",
+        "source_document": "https://alice-bob.com/newsroom/alice-bob-100m-series-b-fundraising-press-release"
+      },
+      {
+        "entity": "Linkedin",
+        "page": 2,
+        "role_in_text": "Linkedin set this cookie",
+        "occurrence_sentence": "Linkedin set this cookie for storing visitor's consent regarding using cookies for non-essential purposes.",
+        "source_document": "https://alice-bob.com/blog/scaling-the-cats-quantum-engineering-at-infrastructure-scale"
+      },
+      {
+        "entity": "LinkedIn",
+        "page": 3,
+        "role_in_text": "sets the lidc cookie to facilitate data center selection.",
+        "occurrence_sentence": "LinkedIn sets the lidc cookie to facilitate data center selection.",
+        "source_document": "https://alice-bob.com/blog/scaling-the-cats-quantum-engineering-at-infrastructure-scale"
+      },
+      {
+        "entity": "LinkedIn",
+        "page": 5,
+        "role_in_text": "sets this cookie from LinkedIn share buttons and ad tags to recognize browser IDs",
+        "occurrence_sentence": "LinkedIn sets this cookie from LinkedIn share buttons and ad tags to recognize browser IDs.",
+        "source_document": "https://alice-bob.com/blog/scaling-the-cats-quantum-engineering-at-infrastructure-scale"
+      },
+      {
+        "entity": "LinkedIn",
+        "page": 2,
+        "role_in_text": "LinkedIn",
+        "occurrence_sentence": "Linkedin set this cookie for storing visitor's consent regarding using cookies for non-essential purposes.",
+        "source_document": "https://alice-bob.com/thats-us"
+      },
+      {
+        "entity": "LinkedIn",
+        "page": 3,
+        "role_in_text": "sets the lidc cookie",
+        "occurrence_sentence": "LinkedIn sets the lidc cookie to facilitate data center selection.",
+        "source_document": "https://alice-bob.com/thats-us"
+      },
+      {
+        "entity": "LinkedIn",
+        "page": 5,
+        "role_in_text": "sets this cookie from LinkedIn share buttons and ad tags to recognize browser IDs",
+        "occurrence_sentence": "LinkedIn sets this cookie from LinkedIn share buttons and ad tags to recognize browser IDs.",
+        "source_document": "https://alice-bob.com/thats-us"
+      },
+      {
+        "entity": "LinkedIn",
+        "page": 2,
+        "role_in_text": "LinkedIn sets the lidc cookie",
+        "occurrence_sentence": "LinkedIn sets the lidc cookie to facilitate data center selection.",
+        "source_document": "https://alice-bob.com/hpc-report"
+      },
+      {
+        "entity": "LinkedIn",
+        "page": 5,
+        "role_in_text": "sets this cookie from LinkedIn share buttons and ad tags to recognize browser IDs",
+        "occurrence_sentence": "LinkedIn sets this cookie from LinkedIn share buttons and ad tags to recognize browser IDs.",
+        "source_document": "https://alice-bob.com/hpc-report"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Industry",
+    "sphere": "Single",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "Los Alamos National Laboratory",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "research institutes",
+    "role_in_text": "major U.S. DOE facilities",
+    "technology_area": "quantum computing",
+    "occurrence_sentence": "At major U.S. DOE facilities such as Los Alamos, NERSC, and other leadership computing centers, these fields represent between 13 and 54 percent of current computational workloads.",
+    "source_document": "https://alice-bob.com/blog/beyond-moore-harnessing-quantum-for-the-next-era-of-hpc",
+    "page": 12,
+    "confidence": "high",
+    "canonical_actor_key": "los alamos national laboratory",
+    "aliases": [
+      "Los Alamos National Laboratory"
+    ],
+    "pages": [
+      12,
+      13
+    ],
+    "mentions": [
+      {
+        "entity": "Los Alamos National Laboratory",
+        "page": 12,
+        "role_in_text": "major U.S. DOE facilities",
+        "occurrence_sentence": "At major U.S. DOE facilities such as Los Alamos, NERSC, and other leadership computing centers, these fields represent between 13 and 54 percent of current computational workloads.",
+        "source_document": "https://alice-bob.com/blog/beyond-moore-harnessing-quantum-for-the-next-era-of-hpc"
+      },
+      {
+        "entity": "Los Alamos National Laboratory",
+        "page": 13,
+        "role_in_text": "major U.S. DOE facility",
+        "occurrence_sentence": "At major U.S. DOE facilities such as Los Alamos, NERSC, and other leadership computing centers, these fields represent between 13 and 54 percent of current computational workloads.",
+        "source_document": "https://alice-bob.com/blog/beyond-moore-harnessing-quantum-for-the-next-era-of-hpc"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Academia",
+    "sphere": "Single",
+    "r_and_d": "R&D",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "National Energy Research Scientific Computing Center (NERSC)",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "research institutes",
+    "role_in_text": "major U.S. DOE facilities",
+    "technology_area": "quantum computing",
+    "occurrence_sentence": "At major U.S. DOE",
+    "source_document": "https://alice-bob.com/blog/beyond-moore-harnessing-quantum-for-the-next-era-of-hpc",
+    "page": 12,
+    "canonical_actor_key": "national energy research scientific computing center",
+    "aliases": [
+      "NERSC",
+      "National Energy Research Scientific Computing Center",
+      "National Energy Research Scientific Computing Center (NERSC)"
+    ],
+    "pages": [
+      12,
+      13
+    ],
+    "mentions": [
+      {
+        "entity": "National Energy Research Scientific Computing Center (NERSC)",
+        "page": 12,
+        "role_in_text": "major U.S. DOE facilities",
+        "occurrence_sentence": "At major U.S. DOE",
+        "source_document": "https://alice-bob.com/blog/beyond-moore-harnessing-quantum-for-the-next-era-of-hpc"
+      },
+      {
+        "entity": "National Energy Research Scientific Computing Center (NERSC)",
+        "page": 13,
+        "role_in_text": "major U.S. DOE facility",
+        "occurrence_sentence": "At major U.S. DOE",
+        "source_document": "https://alice-bob.com/blog/beyond-moore-harnessing-quantum-for-the-next-era-of-hpc"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Academia",
+    "sphere": "Single",
+    "r_and_d": "R&D",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "NVIDIA",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "large enterprises",
+    "role_in_text": "Company",
+    "technology_area": "quantum computing",
+    "occurrence_sentence": "how Alice & Bob uses NVIDIA's CUDA-Q to accelerate quantum error correction research",
+    "source_document": "https://alice-bob.com",
+    "page": 11,
+    "confidence": "high",
+    "canonical_actor_key": "nvidia",
+    "aliases": [
+      "NVIDIA"
+    ],
+    "pages": [
+      5,
+      6,
+      11,
+      15,
+      16,
+      18
+    ],
+    "mentions": [
+      {
+        "entity": "NVIDIA",
+        "page": 16,
+        "role_in_text": "Company whose CUDA-Q technology is used by Alice & Bob",
+        "occurrence_sentence": "How Alice & Bob Uses NVIDIA CUDA-Q to Accelerate Quantum Error Correction Research",
+        "source_document": "https://alice-bob.com/blog/not-all-logical-qubits-are-created-equal-heres-how-to-benchmark-them"
+      },
+      {
+        "entity": "NVIDIA",
+        "page": 5,
+        "role_in_text": "Company",
+        "occurrence_sentence": "How Alice & Bob Uses NVIDIA CUDA-Q to Accelerate Quantum Error Correction Research",
+        "source_document": "https://alice-bob.com/blog"
+      },
+      {
+        "entity": "NVIDIA",
+        "page": 6,
+        "role_in_text": "Company",
+        "occurrence_sentence": "How Alice & Bob Uses NVIDIA CUDA-Q to Accelerate Quantum Error Correction Research",
+        "source_document": "https://alice-bob.com/blog"
+      },
+      {
+        "entity": "NVIDIA",
+        "page": 18,
+        "role_in_text": "Company",
+        "occurrence_sentence": "How Alice & Bob Uses NVIDIA CUDA-Q to Accelerate Quantum Error Correction Research",
+        "source_document": "https://alice-bob.com/blog/alice-bob-2030-roadmap-to-useful-quantum-computers"
+      },
+      {
+        "entity": "NVIDIA",
+        "page": 11,
+        "role_in_text": "Company",
+        "occurrence_sentence": "how Alice & Bob uses NVIDIA's CUDA-Q to accelerate quantum error correction research",
+        "source_document": "https://alice-bob.com"
+      },
+      {
+        "entity": "NVIDIA",
+        "page": 15,
+        "role_in_text": "company",
+        "occurrence_sentence": "How Alice & Bob Uses NVIDIA CUDA-Q to Accelerate Quantum Error Correction Research",
+        "source_document": "https://alice-bob.com/blog/scaling-the-cats-quantum-engineering-at-infrastructure-scale"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Industry",
+    "sphere": "Single",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "Philippe Campagne-Ibarcq",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "individual",
+    "role_in_text": "member of the scientific board",
+    "technology_area": "unknown",
+    "occurrence_sentence": "Philippe Campagne-Ibarcq",
+    "source_document": "https://alice-bob.com/thats-us",
+    "page": 17,
+    "confidence": "high",
+    "canonical_actor_key": "philippe campagne ibarcq",
+    "aliases": [
+      "Philippe Campagne-Ibarcq"
+    ],
+    "pages": [
+      17
+    ],
+    "mentions": [
+      {
+        "entity": "Philippe Campagne-Ibarcq",
+        "page": 17,
+        "role_in_text": "member of the scientific board",
+        "occurrence_sentence": "Philippe Campagne-Ibarcq",
+        "source_document": "https://alice-bob.com/thats-us"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Unknown",
+    "sphere": "Unknown",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "unknown_category",
+    "classification_needs_review": true,
+    "classification_review_reason": "unmapped_category:individual; individual_requires_role_classification"
+  },
+  {
+    "entity": "Preskill",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "individual",
+    "role_in_text": "author of the _Megaquop_ paper",
+    "technology_area": "quantum computing",
+    "occurrence_sentence": "In his _Megaquop_ paper at Q2B 2024, Preskill noted that the concrete end-user value of such machines needs to be better defined.",
+    "source_document": "https://alice-bob.com/blog/beyond-moore-harnessing-quantum-for-the-next-era-of-hpc",
+    "page": 16,
+    "canonical_actor_key": "preskill",
+    "aliases": [
+      "Preskill"
+    ],
+    "pages": [
+      16
+    ],
+    "mentions": [
+      {
+        "entity": "Preskill",
+        "page": 16,
+        "role_in_text": "author of the _Megaquop_ paper",
+        "occurrence_sentence": "In his _Megaquop_ paper at Q2B 2024, Preskill noted that the concrete end-user value of such machines needs to be better defined.",
+        "source_document": "https://alice-bob.com/blog/beyond-moore-harnessing-quantum-for-the-next-era-of-hpc"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Unknown",
+    "sphere": "Unknown",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "unknown_category",
+    "classification_needs_review": true,
+    "classification_review_reason": "unmapped_category:individual; individual_requires_role_classification"
+  },
+  {
+    "entity": "QM",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "large enterprises",
+    "role_in_text": "partner",
+    "technology_area": "quantum computing",
+    "occurrence_sentence": "Our engineers work with many partners such as Bluefors and QM to co-develop our systems.",
+    "source_document": "https://alice-bob.com/engineering",
+    "page": 14,
+    "confidence": "high",
+    "canonical_actor_key": "qm",
+    "aliases": [
+      "QM"
+    ],
+    "pages": [
+      14
+    ],
+    "mentions": [
+      {
+        "entity": "QM",
+        "page": 14,
+        "role_in_text": "partner",
+        "occurrence_sentence": "Our engineers work with many partners such as Bluefors and QM to co-develop our systems.",
+        "source_document": "https://alice-bob.com/engineering"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Industry",
+    "sphere": "Single",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "Raphaël Lescanne",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "individual",
+    "role_in_text": "Chief Technology Officer",
+    "technology_area": "quantum computing",
+    "occurrence_sentence": "Raphaël Lescanne Chief Technology Officer",
+    "source_document": "https://alice-bob.com/blog/alice-bob-2030-roadmap-to-useful-quantum-computers",
+    "page": 17,
+    "confidence": "high",
+    "canonical_actor_key": "rapha l lescanne",
+    "aliases": [
+      "Raphael Lescanne",
+      "Raphaël Lescanne"
+    ],
+    "pages": [
+      15,
+      16,
+      17
+    ],
+    "mentions": [
+      {
+        "entity": "Raphael Lescanne",
+        "page": 15,
+        "role_in_text": "author of the blog post",
+        "occurrence_sentence": "",
+        "source_document": "https://alice-bob.com/blog/alice-bob-2030-roadmap-to-useful-quantum-computers"
+      },
+      {
+        "entity": "Raphaël Lescanne",
+        "page": 16,
+        "role_in_text": "Chief Technology Officer",
+        "occurrence_sentence": "By Dr. Raphaël Lescanne",
+        "source_document": "https://alice-bob.com/blog/alice-bob-2030-roadmap-to-useful-quantum-computers"
+      },
+      {
+        "entity": "Raphaël Lescanne",
+        "page": 17,
+        "role_in_text": "Chief Technology Officer",
+        "occurrence_sentence": "Raphaël Lescanne Chief Technology Officer",
+        "source_document": "https://alice-bob.com/blog/alice-bob-2030-roadmap-to-useful-quantum-computers"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Industry",
+    "sphere": "Single",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "name_heuristic_industry",
+    "classification_needs_review": true,
+    "classification_review_reason": "individual_requires_role_classification"
+  },
+  {
+    "entity": "Rivest",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "individual",
+    "role_in_text": "co-author of a paper",
+    "technology_area": "quantum cryptography",
+    "occurrence_sentence": "They were first popularized in a paper about RSA encryption by Shamir, Rivest, and Adleman, the main",
+    "source_document": "https://alice-bob.com/blog/who-are-alice-and-bob-the-story-behind-our-name",
+    "page": 9,
+    "canonical_actor_key": "rivest",
+    "aliases": [
+      "Rivest"
+    ],
+    "pages": [
+      9,
+      10
+    ],
+    "mentions": [
+      {
+        "entity": "Rivest",
+        "page": 9,
+        "role_in_text": "co-author of a paper",
+        "occurrence_sentence": "They were first popularized in a paper about RSA encryption by Shamir, Rivest, and Adleman, the main",
+        "source_document": "https://alice-bob.com/blog/who-are-alice-and-bob-the-story-behind-our-name"
+      },
+      {
+        "entity": "Rivest",
+        "page": 10,
+        "role_in_text": "co-author of the RSA encryption paper",
+        "occurrence_sentence": "They were first popularized in a paper about RSA encryption by Shamir, Rivest, and Adleman, the",
+        "source_document": "https://alice-bob.com/blog/who-are-alice-and-bob-the-story-behind-our-name"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Industry",
+    "sphere": "Single",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "name_heuristic_industry",
+    "classification_needs_review": true,
+    "classification_review_reason": "individual_requires_role_classification"
+  },
+  {
+    "entity": "Ronan Gautier",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "individual",
+    "role_in_text": "author",
+    "technology_area": "quantum computing",
+    "occurrence_sentence": "* [ Ronan Gautier Designing High-Fidelity Zeno Gates for Dissipative Cat Qubits 2023-10",
+    "source_document": "https://alice-bob.com/publications",
+    "page": 12,
+    "confidence": "high",
+    "canonical_actor_key": "ronan gautier",
+    "aliases": [
+      "Ronan Gautier"
+    ],
+    "pages": [
+      11,
+      12
+    ],
+    "mentions": [
+      {
+        "entity": "Ronan Gautier",
+        "page": 11,
+        "role_in_text": "author",
+        "occurrence_sentence": "Ronan Gautier Designing High-Fidelity Zeno Gates for Dissipative Cat Qubits 2023-10",
+        "source_document": "https://alice-bob.com/publications"
+      },
+      {
+        "entity": "Ronan Gautier",
+        "page": 12,
+        "role_in_text": "author",
+        "occurrence_sentence": "* [ Ronan Gautier Designing High-Fidelity Zeno Gates for Dissipative Cat Qubits 2023-10",
+        "source_document": "https://alice-bob.com/publications"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Unknown",
+    "sphere": "Unknown",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "unknown_category",
+    "classification_needs_review": true,
+    "classification_review_reason": "unmapped_category:individual; individual_requires_role_classification"
+  },
+  {
+    "entity": "Shamir",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "individual",
+    "role_in_text": "co-author of the RSA encryption paper",
+    "technology_area": "quantum cryptography",
+    "occurrence_sentence": "They were first popularized in a paper about RSA encryption by Shamir, Rivest, and Adleman, the main cryptographic system still used today around the world to keep communication secure.",
+    "source_document": "https://alice-bob.com/blog/who-are-alice-and-bob-the-story-behind-our-name",
+    "page": 10,
+    "confidence": "high",
+    "canonical_actor_key": "shamir",
+    "aliases": [
+      "Shamir"
+    ],
+    "pages": [
+      9,
+      10
+    ],
+    "mentions": [
+      {
+        "entity": "Shamir",
+        "page": 9,
+        "role_in_text": "co-author of a paper",
+        "occurrence_sentence": "They were first popularized in a paper about RSA encryption by Shamir, Rivest, and Adleman, the main cryptographic system still used today around the world to keep communication secure.",
+        "source_document": "https://alice-bob.com/blog/who-are-alice-and-bob-the-story-behind-our-name"
+      },
+      {
+        "entity": "Shamir",
+        "page": 10,
+        "role_in_text": "co-author of the RSA encryption paper",
+        "occurrence_sentence": "They were first popularized in a paper about RSA encryption by Shamir, Rivest, and Adleman, the main cryptographic system still used today around the world to keep communication secure.",
+        "source_document": "https://alice-bob.com/blog/who-are-alice-and-bob-the-story-behind-our-name"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Industry",
+    "sphere": "Single",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "name_heuristic_industry",
+    "classification_needs_review": true,
+    "classification_review_reason": "individual_requires_role_classification"
+  },
+  {
+    "entity": "Shor",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "individual",
+    "role_in_text": "Named in Shor's algorithm",
+    "technology_area": "quantum computing",
+    "occurrence_sentence": "Shor's algorithm quickly factors large numbers, solving a problem that traditional computers find extremely hard and is key to modern encryption security.",
+    "source_document": "https://alice-bob.com/glossary",
+    "page": 13,
+    "confidence": "medium",
+    "canonical_actor_key": "shor",
+    "aliases": [
+      "Shor"
+    ],
+    "pages": [
+      13,
+      14
+    ],
+    "mentions": [
+      {
+        "entity": "Shor",
+        "page": 13,
+        "role_in_text": "Named in Shor's algorithm",
+        "occurrence_sentence": "Shor's algorithm quickly factors large numbers, solving a problem that traditional computers find extremely hard and is key to modern encryption security.",
+        "source_document": "https://alice-bob.com/glossary"
+      },
+      {
+        "entity": "Shor",
+        "page": 14,
+        "role_in_text": "Named in Shor's algorithm",
+        "occurrence_sentence": "Shor's algorithm quickly factors large numbers, solving a problem that traditional computers find extremely hard and is key to modern encryption security.",
+        "source_document": "https://alice-bob.com/glossary"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Unknown",
+    "sphere": "Unknown",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "unknown_category",
+    "classification_needs_review": true,
+    "classification_review_reason": "unmapped_category:individual; individual_requires_role_classification"
+  },
+  {
+    "entity": "Sifted",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "media and cultural institutions",
+    "role_in_text": "media outlet",
+    "technology_area": "quantum computing",
+    "occurrence_sentence": "https://sifted.eu/articles/alice-bob-quantum-tech-france",
+    "source_document": "https://alice-bob.com",
+    "page": 7,
+    "confidence": "high",
+    "canonical_actor_key": "sifted",
+    "aliases": [
+      "Sifted"
+    ],
+    "pages": [
+      7
+    ],
+    "mentions": [
+      {
+        "entity": "Sifted",
+        "page": 7,
+        "role_in_text": "media outlet",
+        "occurrence_sentence": "https://sifted.eu/articles/alice-bob-quantum-tech-france",
+        "source_document": "https://alice-bob.com"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Civil Society",
+    "sphere": "Single",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "Sopra Steria",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "large enterprises",
+    "role_in_text": "Company in conversation with Alice & Bob",
+    "technology_area": "quantum computing",
+    "occurrence_sentence": "Preparing for the Quantum Era: In Conversation with Alice & Bob and Sopra Steria",
+    "source_document": "https://alice-bob.com/blog/who-are-alice-and-bob-the-story-behind-our-name",
+    "page": 15,
+    "canonical_actor_key": "sopra steria",
+    "aliases": [
+      "Sopra Steria"
+    ],
+    "pages": [
+      15
+    ],
+    "mentions": [
+      {
+        "entity": "Sopra Steria",
+        "page": 15,
+        "role_in_text": "Company in conversation with Alice & Bob",
+        "occurrence_sentence": "Preparing for the Quantum Era: In Conversation with Alice & Bob and Sopra Steria",
+        "source_document": "https://alice-bob.com/blog/who-are-alice-and-bob-the-story-behind-our-name"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Industry",
+    "sphere": "Single",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "Théau",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "individual",
+    "role_in_text": "PhD student and co-founder",
+    "technology_area": "quantum computing",
+    "occurrence_sentence": "Raphaël's fellow PhD student, Théau, convinces him to start Alice & Bob and, together, to bring cat qubits from the lab to industry.",
+    "source_document": "https://alice-bob.com/thats-us",
+    "page": 11,
+    "canonical_actor_key": "th au",
+    "aliases": [
+      "Théau"
+    ],
+    "pages": [
+      11
+    ],
+    "mentions": [
+      {
+        "entity": "Théau",
+        "page": 11,
+        "role_in_text": "PhD student and co-founder",
+        "occurrence_sentence": "Raphaël's fellow PhD student, Théau, convinces him to start Alice & Bob and, together, to bring cat qubits from the lab to industry.",
+        "source_document": "https://alice-bob.com/thats-us"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Academia",
+    "sphere": "Single",
+    "r_and_d": "R&D",
+    "classification_rule_source": "name_heuristic_research_institute",
+    "classification_needs_review": true,
+    "classification_review_reason": "individual_requires_role_classification"
+  },
+  {
+    "entity": "Theau Peronnin",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "individual",
+    "role_in_text": "CEO",
+    "technology_area": "quantum computing",
+    "occurrence_sentence": "Theau Peronnin April 28, 2026",
+    "source_document": "https://alice-bob.com/newsroom",
+    "page": 12,
+    "canonical_actor_key": "theau peronnin",
+    "aliases": [
+      "Theau Peronnin"
+    ],
+    "pages": [
+      12
+    ],
+    "mentions": [
+      {
+        "entity": "Theau Peronnin",
+        "page": 12,
+        "role_in_text": "CEO",
+        "occurrence_sentence": "Theau Peronnin April 28, 2026",
+        "source_document": "https://alice-bob.com/newsroom"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Unknown",
+    "sphere": "Unknown",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "unknown_category",
+    "classification_needs_review": true,
+    "classification_review_reason": "unmapped_category:individual; individual_requires_role_classification"
+  },
+  {
+    "entity": "Ulysse Réglade",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "individual",
+    "role_in_text": "author of a publication",
+    "technology_area": "quantum computing",
+    "occurrence_sentence": "Ulysse Réglade Quantum control of a cat-qubit with bit-flip times exceeding ten seconds 2023-07",
+    "source_document": "https://alice-bob.com/publications",
+    "page": 9,
+    "confidence": "high",
+    "canonical_actor_key": "ulysse r glade",
+    "aliases": [
+      "Ulysse Réglade"
+    ],
+    "pages": [
+      9,
+      10,
+      11
+    ],
+    "mentions": [
+      {
+        "entity": "Ulysse Réglade",
+        "page": 9,
+        "role_in_text": "author of a publication",
+        "occurrence_sentence": "Ulysse Réglade Quantum control of a cat-qubit with bit-flip times exceeding ten seconds 2023-07",
+        "source_document": "https://alice-bob.com/publications"
+      },
+      {
+        "entity": "Ulysse Réglade",
+        "page": 10,
+        "role_in_text": "author",
+        "occurrence_sentence": "Ulysse Réglade Quantum control of a cat-qubit with bit-flip times exceeding ten seconds 2023-07",
+        "source_document": "https://alice-bob.com/publications"
+      },
+      {
+        "entity": "Ulysse Réglade",
+        "page": 10,
+        "role_in_text": "Researcher",
+        "occurrence_sentence": "Ulysse Réglade Quantum control of a cat-qubit with bit-flip times exceeding ten seconds 2023-07",
+        "source_document": "https://alice-bob.com/science"
+      },
+      {
+        "entity": "Ulysse Réglade",
+        "page": 11,
+        "role_in_text": "Author of a foundational paper on quantum control of a cat-qubit",
+        "occurrence_sentence": "Ulysse Réglade Quantum control of a cat-qubit with bit-flip times exceeding ten seconds 2023-07",
+        "source_document": "https://alice-bob.com/science"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Unknown",
+    "sphere": "Unknown",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "unknown_category",
+    "classification_needs_review": true,
+    "classification_review_reason": "unmapped_category:individual; individual_requires_role_classification"
+  },
+  {
+    "entity": "Victor Kerros",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "individual",
+    "role_in_text": "US Business Developer",
+    "technology_area": "deep tech general",
+    "occurrence_sentence": "Victor Kerros US Business Developer",
+    "source_document": "https://alice-bob.com/blog/beyond-moore-harnessing-quantum-for-the-next-era-of-hpc",
+    "page": 17,
+    "canonical_actor_key": "victor kerros",
+    "aliases": [
+      "Victor Kerros"
+    ],
+    "pages": [
+      17
+    ],
+    "mentions": [
+      {
+        "entity": "Victor Kerros",
+        "page": 17,
+        "role_in_text": "US Business Developer",
+        "occurrence_sentence": "Victor Kerros US Business Developer",
+        "source_document": "https://alice-bob.com/blog/beyond-moore-harnessing-quantum-for-the-next-era-of-hpc"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Unknown",
+    "sphere": "Unknown",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "unknown_category",
+    "classification_needs_review": true,
+    "classification_review_reason": "unmapped_category:individual; individual_requires_role_classification"
+  },
+  {
+    "entity": "WordPress",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "large enterprises",
+    "role_in_text": "multilingual plugin sets this cookie to store the current language/language settings.",
+    "technology_area": "deep tech general",
+    "occurrence_sentence": "WordPress multilingual plugin sets this cookie to store the current language/language settings.",
+    "source_document": "https://alice-bob.com/newsroom",
+    "page": 3,
+    "confidence": "high",
+    "canonical_actor_key": "wordpress",
+    "aliases": [
+      "WordPress"
+    ],
+    "pages": [
+      3
+    ],
+    "mentions": [
+      {
+        "entity": "WordPress",
+        "page": 3,
+        "role_in_text": "multilingual plugin sets this cookie to store the current language/language settings.",
+        "occurrence_sentence": "WordPress multilingual plugin sets this cookie to store the current language/language settings.",
+        "source_document": "https://alice-bob.com/blog/not-all-logical-qubits-are-created-equal-heres-how-to-benchmark-them"
+      },
+      {
+        "entity": "WordPress",
+        "page": 3,
+        "role_in_text": "multilingual plugin sets this cookie to store the current language/language settings",
+        "occurrence_sentence": "WordPress multilingual plugin sets this cookie to store the current language/language settings.",
+        "source_document": "https://alice-bob.com/blog/this-is-not-a-product-launch"
+      },
+      {
+        "entity": "WordPress",
+        "page": 3,
+        "role_in_text": "multilingual plugin sets this cookie to store the current language/language settings",
+        "occurrence_sentence": "WordPress multilingual plugin sets this cookie to store the current language/language settings.",
+        "source_document": "https://alice-bob.com/blog/who-are-alice-and-bob-the-story-behind-our-name"
+      },
+      {
+        "entity": "WordPress",
+        "page": 3,
+        "role_in_text": "multilingual plugin sets this cookie to store the current language/language settings.",
+        "occurrence_sentence": "WordPress multilingual plugin sets this cookie to store the current language/language settings.",
+        "source_document": "https://alice-bob.com/newsroom"
+      },
+      {
+        "entity": "WordPress",
+        "page": 3,
+        "role_in_text": "multilingual plugin sets this cookie to store the current language/language settings",
+        "occurrence_sentence": "WordPress multilingual plugin sets this cookie to store the current language/language settings.",
+        "source_document": "https://alice-bob.com/glossary"
+      },
+      {
+        "entity": "WordPress",
+        "page": 3,
+        "role_in_text": "multilingual plugin sets this cookie to store the current language/language settings",
+        "occurrence_sentence": "WordPress multilingual plugin sets this cookie to store the current language/language settings.",
+        "source_document": "https://alice-bob.com/platform"
+      },
+      {
+        "entity": "WordPress",
+        "page": 3,
+        "role_in_text": "multilingual plugin sets this cookie to store the current language/language settings.",
+        "occurrence_sentence": "WordPress multilingual plugin sets this cookie to store the current language/language settings.",
+        "source_document": "https://alice-bob.com/blog/scaling-the-cats-quantum-engineering-at-infrastructure-scale"
+      },
+      {
+        "entity": "WordPress",
+        "page": 3,
+        "role_in_text": "multilingual plugin sets this cookie",
+        "occurrence_sentence": "WordPress multilingual plugin sets this cookie to store the current language/language settings.",
+        "source_document": "https://alice-bob.com/thats-us"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Industry",
+    "sphere": "Single",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "YouTube",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "large enterprises",
+    "role_in_text": "sets cookies for video player preferences",
+    "technology_area": "other",
+    "occurrence_sentence": "The yt-remote-session-name cookie is used by YouTube to store the user's video player preferences using embedded YouTube video.",
+    "source_document": "https://alice-bob.com/hpc-report",
+    "page": 4,
+    "confidence": "high",
+    "canonical_actor_key": "youtube",
+    "aliases": [
+      "YouTube"
+    ],
+    "pages": [
+      4,
+      6
+    ],
+    "mentions": [
+      {
+        "entity": "YouTube",
+        "page": 4,
+        "role_in_text": "sets cookies for embedded videos",
+        "occurrence_sentence": "The yt-remote-cast-installed cookie is used to store the user's video player preferences using embedded YouTube video.",
+        "source_document": "https://alice-bob.com/blog/not-all-logical-qubits-are-created-equal-heres-how-to-benchmark-them"
+      },
+      {
+        "entity": "YouTube",
+        "page": 6,
+        "role_in_text": "sets cookies",
+        "occurrence_sentence": "YouTube sets this cookie to store the user's cookie consent state for the current domain.",
+        "source_document": "https://alice-bob.com/blog/not-all-logical-qubits-are-created-equal-heres-how-to-benchmark-them"
+      },
+      {
+        "entity": "YouTube",
+        "page": 4,
+        "role_in_text": "stores the user's video player preferences",
+        "occurrence_sentence": "The yt-remote-cast-installed cookie is used to store the user's video player preferences using embedded YouTube video.",
+        "source_document": "https://alice-bob.com/blog/beyond-moore-harnessing-quantum-for-the-next-era-of-hpc"
+      },
+      {
+        "entity": "YouTube",
+        "page": 4,
+        "role_in_text": "sets cookies for video player preferences",
+        "occurrence_sentence": "The yt-remote-cast-installed cookie is used to store the user's video player preferences using embedded YouTube video.",
+        "source_document": "https://alice-bob.com/blog/alice-bob-2030-roadmap-to-useful-quantum-computers"
+      },
+      {
+        "entity": "YouTube",
+        "page": 4,
+        "role_in_text": "used by YouTube to store the user's video player preferences",
+        "occurrence_sentence": "The yt-remote-cast-installed cookie is used to store the user's video player preferences using embedded YouTube video.",
+        "source_document": "https://alice-bob.com/blog/this-is-not-a-product-launch"
+      },
+      {
+        "entity": "YouTube",
+        "page": 4,
+        "role_in_text": "stores user's video player preferences",
+        "occurrence_sentence": "The yt-remote-cast-installed cookie is used to store the user's video player preferences using embedded YouTube video.",
+        "source_document": "https://alice-bob.com/blog/who-are-alice-and-bob-the-story-behind-our-name"
+      },
+      {
+        "entity": "YouTube",
+        "page": 4,
+        "role_in_text": "sets cookies for embedded videos",
+        "occurrence_sentence": "The yt-remote-cast-installed cookie is used to store the user's video player preferences using embedded YouTube video.",
+        "source_document": "https://alice-bob.com/roadmap"
+      },
+      {
+        "entity": "YouTube",
+        "page": 4,
+        "role_in_text": "sets cookies for video player preferences",
+        "occurrence_sentence": "The yt-remote-cast-installed cookie is used to store the user's video player preferences using embedded YouTube video.",
+        "source_document": "https://alice-bob.com/publications"
+      },
+      {
+        "entity": "YouTube",
+        "page": 6,
+        "role_in_text": "sets cookies",
+        "occurrence_sentence": "YouTube sets this cookie to store the user's cookie consent state for the current domain.",
+        "source_document": "https://alice-bob.com/glossary"
+      },
+      {
+        "entity": "YouTube",
+        "page": 4,
+        "role_in_text": "used by YouTube to store the user's video player preferences",
+        "occurrence_sentence": "The yt-remote-cast-installed cookie is used to store the user's video player preferences using embedded YouTube video.",
+        "source_document": "https://alice-bob.com/platform"
+      },
+      {
+        "entity": "YouTube",
+        "page": 4,
+        "role_in_text": "used by YouTube to store the user's video player preferences",
+        "occurrence_sentence": "The yt-remote-session-name cookie is used by YouTube to store the user's video player preferences using embedded YouTube video.",
+        "source_document": "https://alice-bob.com/platform"
+      },
+      {
+        "entity": "YouTube",
+        "page": 4,
+        "role_in_text": "used by YouTube to store the user's video player preferences",
+        "occurrence_sentence": "The yt-remote-cast-installed cookie is used to store the user's video player preferences using embedded YouTube video.",
+        "source_document": "https://alice-bob.com/newsroom/alice-bob-100m-series-b-fundraising-press-release"
+      },
+      {
+        "entity": "YouTube",
+        "page": 6,
+        "role_in_text": "sets cookies",
+        "occurrence_sentence": "YouTube sets this cookie to store the user's cookie consent state for the current domain.",
+        "source_document": "https://alice-bob.com/newsroom/alice-bob-100m-series-b-fundraising-press-release"
+      },
+      {
+        "entity": "YouTube",
+        "page": 4,
+        "role_in_text": "sets cookies for video player preferences",
+        "occurrence_sentence": "The yt-remote-cast-installed cookie is used to store the user's video player preferences using embedded YouTube video.",
+        "source_document": "https://alice-bob.com/thats-us"
+      },
+      {
+        "entity": "YouTube",
+        "page": 6,
+        "role_in_text": "sets cookies",
+        "occurrence_sentence": "YouTube sets this cookie to store the user's cookie consent state for the current domain.",
+        "source_document": "https://alice-bob.com/thats-us"
+      },
+      {
+        "entity": "YouTube",
+        "page": 4,
+        "role_in_text": "sets cookies for video player preferences",
+        "occurrence_sentence": "The yt-remote-cast-installed cookie is used to store the user's video player preferences using embedded YouTube video.",
+        "source_document": "https://alice-bob.com/hpc-report"
+      },
+      {
+        "entity": "YouTube",
+        "page": 4,
+        "role_in_text": "sets cookies for video player preferences",
+        "occurrence_sentence": "The yt-remote-session-name cookie is used by YouTube to store the user's video player preferences using embedded YouTube video.",
+        "source_document": "https://alice-bob.com/hpc-report"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Industry",
+    "sphere": "Single",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  }
+]

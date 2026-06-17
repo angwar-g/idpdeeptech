@@ -1,0 +1,572 @@
+
+========================================================================
+RUN STARTED  2026-06-17 04:01:40
+site_pipeline.py https://photonic.com/
+========================================================================
+
+[04:01:40 +0s | photonic] === 0 crawl site ===
+[04:01:41 +1s | photonic] [INIT].... → Crawl4AI 0.8.6 
+[04:01:43 +3s | photonic] [FETCH]... ↓ https://photonic.com/                                                                                | ✓ | ⏱: 1.72s 
+[04:01:43 +3s | photonic] [SCRAPE].. ◆ https://photonic.com/                                                                                | ✓ | ⏱: 0.03s 
+[04:01:43 +3s | photonic] [COMPLETE] ● https://photonic.com/                                                                                | ✓ | ⏱: 1.76s 
+[04:01:44 +4s | photonic] [FETCH]... ↓ https://photonic.com/                                                                                | ✓ | ⏱: 1.02s 
+[04:01:44 +4s | photonic] [SCRAPE].. ◆ https://photonic.com/                                                                                | ✓ | ⏱: 0.04s 
+[04:01:44 +4s | photonic] [COMPLETE] ● https://photonic.com/                                                                                | ✓ | ⏱: 1.07s 
+[04:01:44 +4s | photonic] [FETCH]... ↓ https://photonic.com/resources/                                                                      | ✓ | ⏱: 1.06s 
+[04:01:44 +4s | photonic] [SCRAPE].. ◆ https://photonic.com/resources/                                                                      | ✓ | ⏱: 0.09s 
+[04:01:44 +4s | photonic] [COMPLETE] ● https://photonic.com/resources/                                                                      | ✓ | ⏱: 1.18s 
+[04:01:45 +5s | photonic] [FETCH]... ↓ https://photonic.com/events/                                                                         | ✓ | ⏱: 1.39s 
+[04:01:45 +5s | photonic] [SCRAPE].. ◆ https://photonic.com/events/                                                                         | ✓ | ⏱: 0.05s 
+[04:01:45 +5s | photonic] [COMPLETE] ● https://photonic.com/events/                                                                         | ✓ | ⏱: 1.46s 
+[04:01:45 +5s | photonic] [FETCH]... ↓ https://photonic.com/news/photonic-inc-appoints-four-new-directors-to-its-board-of-directors/        | ✓ | ⏱: 1.49s 
+[04:01:45 +5s | photonic] [SCRAPE].. ◆ https://photonic.com/news/photonic-inc-appoints-four-new-directors-to-its-board-of-directors/        | ✓ | ⏱: 0.02s 
+[04:01:45 +5s | photonic] [COMPLETE] ● https://photonic.com/news/photonic-inc-appoints-four-new-directors-to-its-board-of-directors/        | ✓ | ⏱: 1.53s 
+[04:01:45 +5s | photonic] [FETCH]... ↓ https://photonic.com/news/photonic-raises-180m/                                                      | ✓ | ⏱: 1.68s 
+[04:01:45 +5s | photonic] [SCRAPE].. ◆ https://photonic.com/news/photonic-raises-180m/                                                      | ✓ | ⏱: 0.03s 
+[04:01:45 +5s | photonic] [COMPLETE] ● https://photonic.com/news/photonic-raises-180m/                                                      | ✓ | ⏱: 1.72s 
+[04:01:45 +5s | photonic] [FETCH]... ↓ https://photonic.com/news/photonic-inc-closes-investment-round-with-over-200m-usd-275m-cad/          | ✓ | ⏱: 1.81s 
+[04:01:45 +5s | photonic] [SCRAPE].. ◆ https://photonic.com/news/photonic-inc-closes-investment-round-with-over-200m-usd-275m-cad/          | ✓ | ⏱: 0.03s 
+[04:01:45 +5s | photonic] [COMPLETE] ● https://photonic.com/news/photonic-inc-closes-investment-round-with-over-200m-usd-275m-cad/          | ✓ | ⏱: 1.86s 
+[04:01:45 +5s | photonic] [FETCH]... ↓ https://photonic.com/technology/error-correction/                                                    | ✓ | ⏱: 1.94s 
+[04:01:45 +5s | photonic] [SCRAPE].. ◆ https://photonic.com/technology/error-correction/                                                    | ✓ | ⏱: 0.03s 
+[04:01:45 +5s | photonic] [COMPLETE] ● https://photonic.com/technology/error-correction/                                                    | ✓ | ⏱: 1.99s 
+[04:01:45 +5s | photonic] [FETCH]... ↓ https://photonic.com/contact/                                                                        | ✓ | ⏱: 2.12s 
+[04:01:45 +5s | photonic] [SCRAPE].. ◆ https://photonic.com/contact/                                                                        | ✓ | ⏱: 0.02s 
+[04:01:45 +5s | photonic] [COMPLETE] ● https://photonic.com/contact/                                                                        | ✓ | ⏱: 2.16s 
+[04:01:45 +5s | photonic] [FETCH]... ↓ https://photonic.com/careers/                                                                        | ✓ | ⏱: 2.27s 
+[04:01:45 +5s | photonic] [SCRAPE].. ◆ https://photonic.com/careers/                                                                        | ✓ | ⏱: 0.06s 
+[04:01:45 +5s | photonic] [COMPLETE] ● https://photonic.com/careers/                                                                        | ✓ | ⏱: 2.35s 
+[04:01:45 +5s | photonic] [FETCH]... ↓ https://photonic.com/technology/                                                                     | ✓ | ⏱: 2.37s 
+[04:01:46 +6s | photonic] [SCRAPE].. ◆ https://photonic.com/technology/                                                                     | ✓ | ⏱: 0.04s 
+[04:01:46 +6s | photonic] [COMPLETE] ● https://photonic.com/technology/                                                                     | ✓ | ⏱: 2.43s 
+[04:01:46 +6s | photonic] [FETCH]... ↓ https://photonic.com/technology/qubit-platform/                                                      | ✓ | ⏱: 2.47s 
+[04:01:46 +6s | photonic] [SCRAPE].. ◆ https://photonic.com/technology/qubit-platform/                                                      | ✓ | ⏱: 0.04s 
+[04:01:46 +6s | photonic] [COMPLETE] ● https://photonic.com/technology/qubit-platform/                                                      | ✓ | ⏱: 2.53s 
+[04:01:46 +6s | photonic] [FETCH]... ↓ https://photonic.com/technology/networking/                                                          | ✓ | ⏱: 2.58s 
+[04:01:46 +6s | photonic] [SCRAPE].. ◆ https://photonic.com/technology/networking/                                                          | ✓ | ⏱: 0.04s 
+[04:01:46 +6s | photonic] [COMPLETE] ● https://photonic.com/technology/networking/                                                          | ✓ | ⏱: 2.64s 
+[04:01:46 +6s | photonic] [FETCH]... ↓ https://photonic.com/news/photonic-inc-partners-with-telus-demonstrates-quantum-teleportation/       | ✓ | ⏱: 2.66s 
+[04:01:46 +6s | photonic] [SCRAPE].. ◆ https://photonic.com/news/photonic-inc-partners-with-telus-demonstrates-quantum-teleportation/       | ✓ | ⏱: 0.04s 
+[04:01:46 +6s | photonic] [COMPLETE] ● https://photonic.com/news/photonic-inc-partners-with-telus-demonstrates-quantum-teleportation/       | ✓ | ⏱: 2.72s 
+[04:01:46 +6s | photonic] [FETCH]... ↓ https://photonic.com/about-us/                                                                       | ✓ | ⏱: 2.76s 
+[04:01:46 +6s | photonic] [SCRAPE].. ◆ https://photonic.com/about-us/                                                                       | ✓ | ⏱: 0.04s 
+[04:01:46 +6s | photonic] [COMPLETE] ● https://photonic.com/about-us/                                                                       | ✓ | ⏱: 2.83s 
+[04:01:46 +6s | photonic] [FETCH]... ↓ https://photonic.com/privacy-policy/                                                                 | ✓ | ⏱: 3.03s 
+[04:01:46 +6s | photonic] [SCRAPE].. ◆ https://photonic.com/privacy-policy/                                                                 | ✓ | ⏱: 0.04s 
+[04:01:46 +6s | photonic] [COMPLETE] ● https://photonic.com/privacy-policy/                                                                 | ✓ | ⏱: 3.10s 
+[04:01:46 +6s | photonic] [FETCH]... ↓ https://photonic.com/products/                                                                       | ✓ | ⏱: 3.13s 
+[04:01:46 +6s | photonic] [SCRAPE].. ◆ https://photonic.com/products/                                                                       | ✓ | ⏱: 0.04s 
+[04:01:46 +6s | photonic] [COMPLETE] ● https://photonic.com/products/                                                                       | ✓ | ⏱: 3.18s 
+[04:01:46 +6s | photonic] [FETCH]... ↓ https://photonic.com/blog/what-is-a-t-centre/                                                        | ✓ | ⏱: 3.18s 
+[04:01:46 +6s | photonic] [SCRAPE].. ◆ https://photonic.com/blog/what-is-a-t-centre/                                                        | ✓ | ⏱: 0.03s 
+[04:01:46 +6s | photonic] [COMPLETE] ● https://photonic.com/blog/what-is-a-t-centre/                                                        | ✓ | ⏱: 3.23s 
+[04:01:46 +6s | photonic] [FETCH]... ↓ https://photonic.com/technology/entanglement-first/                                                  | ✓ | ⏱: 3.25s 
+[04:01:46 +6s | photonic] [SCRAPE].. ◆ https://photonic.com/technology/entanglement-first/                                                  | ✓ | ⏱: 0.03s 
+[04:01:46 +6s | photonic] [COMPLETE] ● https://photonic.com/technology/entanglement-first/                                                  | ✓ | ⏱: 3.29s 
+[04:01:47 +7s | photonic] [FETCH]... ↓ https://photonic.com/press-room/                                                                     | ✓ | ⏱: 3.43s 
+[04:01:47 +7s | photonic] [SCRAPE].. ◆ https://photonic.com/press-room/                                                                     | ✓ | ⏱: 0.02s 
+[04:01:47 +7s | photonic] [COMPLETE] ● https://photonic.com/press-room/                                                                     | ✓ | ⏱: 3.47s 
+[04:01:47 +7s | photonic] Saved: crawl_output/0591bac744_photonic.com.json
+[04:01:47 +7s | photonic] Duplicate skipped: https://photonic.com
+[04:01:47 +7s | photonic] Saved: crawl_output/5d64a4e469_photonic.com_resources.json
+[04:01:47 +7s | photonic] Saved: crawl_output/8c4c86ec82_photonic.com_events.json
+[04:01:47 +7s | photonic] Saved: crawl_output/924cf2e9cc_photonic.com_news_photonic-inc-appoints-four-new-directors-to-its-board-of-directors.json
+[04:01:47 +7s | photonic] Saved: crawl_output/3d3042f1bc_photonic.com_news_photonic-raises-180m.json
+[04:01:47 +7s | photonic] Saved: crawl_output/cc86a7cd5b_photonic.com_news_photonic-inc-closes-investment-round-with-over-200m-usd-275m-cad.json
+[04:01:47 +7s | photonic] Saved: crawl_output/d165e98c0d_photonic.com_technology_error-correction.json
+[04:01:47 +7s | photonic] Saved: crawl_output/825ca0fdc0_photonic.com_contact.json
+[04:01:47 +7s | photonic] Saved: crawl_output/677c748d82_photonic.com_careers.json
+[04:01:47 +7s | photonic] Saved: crawl_output/0915f0f597_photonic.com_technology.json
+[04:01:47 +7s | photonic] Saved: crawl_output/b6deac4e1b_photonic.com_technology_qubit-platform.json
+[04:01:47 +7s | photonic] Saved: crawl_output/edd4809164_photonic.com_technology_networking.json
+[04:01:47 +7s | photonic] Saved: crawl_output/2f703b06f9_photonic.com_news_photonic-inc-partners-with-telus-demonstrates-quantum-teleportation.json
+[04:01:47 +7s | photonic] Saved: crawl_output/340a2e091b_photonic.com_about-us.json
+[04:01:47 +7s | photonic] Skipped: https://photonic.com/privacy-policy
+[04:01:47 +7s | photonic] Saved: crawl_output/7748e066e7_photonic.com_products.json
+[04:01:47 +7s | photonic] Saved: crawl_output/763d9b0cfc_photonic.com_blog_what-is-a-t-centre.json
+[04:01:47 +7s | photonic] Saved: crawl_output/c37adf3a3f_photonic.com_technology_entanglement-first.json
+[04:01:47 +7s | photonic] Saved: crawl_output/47365828c2_photonic.com_press-room.json
+
+[04:01:47 +7s | photonic] === 1 actor extraction ===
+[04:01:47 +7s | photonic] Reading page (1/18): https://photonic.com
+[04:01:47 +7s | photonic] Extracting: https://photonic.com (1/18), chunk 1/15
+[04:01:49 +9s | photonic] Extracting: https://photonic.com (1/18), chunk 2/15
+[04:01:57 +15s | photonic] Extracting: https://photonic.com (1/18), chunk 3/15
+[04:02:05 +22s | photonic] Extracting: https://photonic.com (1/18), chunk 4/15
+[04:02:08 +26s | photonic] Extracting: https://photonic.com (1/18), chunk 5/15
+[04:02:13 +31s | photonic] Extracting: https://photonic.com (1/18), chunk 6/15
+[04:02:18 +36s | photonic] Repaired malformed JSON.
+[04:02:18 +36s | photonic] Extracting: https://photonic.com (1/18), chunk 7/15
+[04:02:25 +42s | photonic] Repaired malformed JSON.
+[04:02:25 +42s | photonic] Extracting: https://photonic.com (1/18), chunk 8/15
+[04:02:35 +50s | photonic] Repaired malformed JSON.
+[04:02:35 +50s | photonic] Extracting: https://photonic.com (1/18), chunk 9/15
+[04:02:41 +56s | photonic] Repaired malformed JSON.
+[04:02:41 +56s | photonic] Extracting: https://photonic.com (1/18), chunk 10/15
+[04:02:48 +1m 3s | photonic] Repaired malformed JSON.
+[04:02:48 +1m 3s | photonic] Extracting: https://photonic.com (1/18), chunk 11/15
+[04:02:54 +1m 9s | photonic] Repaired malformed JSON.
+[04:02:54 +1m 9s | photonic] Extracting: https://photonic.com (1/18), chunk 12/15
+[04:03:04 +1m 17s | photonic] Repaired malformed JSON.
+[04:03:04 +1m 17s | photonic] Extracting: https://photonic.com (1/18), chunk 13/15
+[04:03:11 +1m 24s | photonic] Repaired malformed JSON.
+[04:03:11 +1m 24s | photonic] Extracting: https://photonic.com (1/18), chunk 14/15
+[04:03:16 +1m 29s | photonic] Repaired malformed JSON.
+[04:03:16 +1m 29s | photonic] Extracting: https://photonic.com (1/18), chunk 15/15
+[04:03:20 +1m 33s | photonic] Reading page (2/18): https://photonic.com/technology
+[04:03:20 +1m 33s | photonic] Extracting: https://photonic.com/technology (2/18), chunk 1/9
+[04:03:23 +1m 36s | photonic] Extracting: https://photonic.com/technology (2/18), chunk 2/9
+[04:03:29 +1m 42s | photonic] Extracting: https://photonic.com/technology (2/18), chunk 3/9
+[04:03:33 +1m 46s | photonic] Extracting: https://photonic.com/technology (2/18), chunk 4/9
+[04:03:39 +1m 49s | photonic] Extracting: https://photonic.com/technology (2/18), chunk 5/9
+[04:03:44 +1m 54s | photonic] Extracting: https://photonic.com/technology (2/18), chunk 6/9
+[04:03:49 +1m 59s | photonic] Extracting: https://photonic.com/technology (2/18), chunk 7/9
+[04:03:54 +2m 5s | photonic] Repaired malformed JSON.
+[04:03:54 +2m 5s | photonic] Extracting: https://photonic.com/technology (2/18), chunk 8/9
+[04:04:02 +2m 12s | photonic] Repaired malformed JSON.
+[04:04:02 +2m 12s | photonic] Extracting: https://photonic.com/technology (2/18), chunk 9/9
+[04:04:07 +2m 17s | photonic] Reading page (3/18): https://photonic.com/news/photonic-inc-partners-with-telus-demonstrates-quantum-teleportation
+[04:04:07 +2m 17s | photonic] Extracting: https://photonic.com/news/photonic-inc-partners-with-telus-demonstrates-quantum-teleportation (3/18), chunk 1/11
+[04:04:15 +2m 23s | photonic] Extracting: https://photonic.com/news/photonic-inc-partners-with-telus-demonstrates-quantum-teleportation (3/18), chunk 2/11
+[04:04:21 +2m 29s | photonic] Repaired malformed JSON.
+[04:04:21 +2m 29s | photonic] Extracting: https://photonic.com/news/photonic-inc-partners-with-telus-demonstrates-quantum-teleportation (3/18), chunk 3/11
+[04:04:27 +2m 35s | photonic] Repaired malformed JSON.
+[04:04:27 +2m 35s | photonic] Extracting: https://photonic.com/news/photonic-inc-partners-with-telus-demonstrates-quantum-teleportation (3/18), chunk 4/11
+[04:04:34 +2m 42s | photonic] Repaired malformed JSON.
+[04:04:34 +2m 42s | photonic] Extracting: https://photonic.com/news/photonic-inc-partners-with-telus-demonstrates-quantum-teleportation (3/18), chunk 5/11
+[04:04:40 +2m 48s | photonic] Repaired malformed JSON.
+[04:04:40 +2m 48s | photonic] Extracting: https://photonic.com/news/photonic-inc-partners-with-telus-demonstrates-quantum-teleportation (3/18), chunk 6/11
+[04:04:48 +2m 53s | photonic] Repaired malformed JSON.
+[04:04:48 +2m 53s | photonic] Extracting: https://photonic.com/news/photonic-inc-partners-with-telus-demonstrates-quantum-teleportation (3/18), chunk 7/11
+[04:04:55 +3m 1s | photonic] Repaired malformed JSON.
+[04:04:55 +3m 1s | photonic] Extracting: https://photonic.com/news/photonic-inc-partners-with-telus-demonstrates-quantum-teleportation (3/18), chunk 8/11
+[04:05:02 +3m 8s | photonic] Repaired malformed JSON.
+[04:05:02 +3m 8s | photonic] Extracting: https://photonic.com/news/photonic-inc-partners-with-telus-demonstrates-quantum-teleportation (3/18), chunk 9/11
+[04:05:08 +3m 13s | photonic] Repaired malformed JSON.
+[04:05:08 +3m 13s | photonic] Extracting: https://photonic.com/news/photonic-inc-partners-with-telus-demonstrates-quantum-teleportation (3/18), chunk 10/11
+[04:05:13 +3m 18s | photonic] Repaired malformed JSON.
+[04:05:13 +3m 18s | photonic] Extracting: https://photonic.com/news/photonic-inc-partners-with-telus-demonstrates-quantum-teleportation (3/18), chunk 11/11
+[04:05:22 +3m 25s | photonic] Repaired malformed JSON.
+[04:05:22 +3m 25s | photonic] Reading page (4/18): https://photonic.com/about-us
+[04:05:22 +3m 25s | photonic] Extracting: https://photonic.com/about-us (4/18), chunk 1/12
+[04:05:25 +3m 28s | photonic] Extracting: https://photonic.com/about-us (4/18), chunk 2/12
+[04:05:30 +3m 33s | photonic] Extracting: https://photonic.com/about-us (4/18), chunk 3/12
+[04:05:36 +3m 39s | photonic] Extracting: https://photonic.com/about-us (4/18), chunk 4/12
+[04:05:39 +3m 42s | photonic] Extracting: https://photonic.com/about-us (4/18), chunk 5/12
+[04:05:46 +3m 49s | photonic] Repaired malformed JSON.
+[04:05:46 +3m 49s | photonic] Extracting: https://photonic.com/about-us (4/18), chunk 6/12
+[04:05:57 +3m 57s | photonic] Repaired malformed JSON.
+[04:05:57 +3m 57s | photonic] Extracting: https://photonic.com/about-us (4/18), chunk 7/12
+[04:06:02 +4m 3s | photonic] Repaired malformed JSON.
+[04:06:02 +4m 3s | photonic] Extracting: https://photonic.com/about-us (4/18), chunk 8/12
+[04:06:11 +4m 11s | photonic] Repaired malformed JSON.
+[04:06:11 +4m 11s | photonic] Extracting: https://photonic.com/about-us (4/18), chunk 9/12
+[04:06:18 +4m 19s | photonic] Repaired malformed JSON.
+[04:06:18 +4m 19s | photonic] Extracting: https://photonic.com/about-us (4/18), chunk 10/12
+[04:06:24 +4m 25s | photonic] Repaired malformed JSON.
+[04:06:24 +4m 25s | photonic] Extracting: https://photonic.com/about-us (4/18), chunk 11/12
+[04:06:34 +4m 32s | photonic] Repaired malformed JSON.
+[04:06:34 +4m 32s | photonic] Extracting: https://photonic.com/about-us (4/18), chunk 12/12
+[04:06:37 +4m 35s | photonic] Reading page (5/18): https://photonic.com/news/photonic-raises-180m
+[04:06:37 +4m 35s | photonic] Extracting: https://photonic.com/news/photonic-raises-180m (5/18), chunk 1/10
+[04:06:41 +4m 39s | photonic] Extracting: https://photonic.com/news/photonic-raises-180m (5/18), chunk 2/10
+[04:06:49 +4m 48s | photonic] Extracting: https://photonic.com/news/photonic-raises-180m (5/18), chunk 3/10
+[04:06:55 +4m 53s | photonic] Extracting: https://photonic.com/news/photonic-raises-180m (5/18), chunk 4/10
+[04:07:01 +4m 59s | photonic] Repaired malformed JSON.
+[04:07:01 +4m 59s | photonic] Extracting: https://photonic.com/news/photonic-raises-180m (5/18), chunk 5/10
+[04:07:09 +5m 5s | photonic] Repaired malformed JSON.
+[04:07:09 +5m 5s | photonic] Extracting: https://photonic.com/news/photonic-raises-180m (5/18), chunk 6/10
+[04:07:16 +5m 12s | photonic] Repaired malformed JSON.
+[04:07:16 +5m 12s | photonic] Extracting: https://photonic.com/news/photonic-raises-180m (5/18), chunk 7/10
+[04:07:23 +5m 19s | photonic] Repaired malformed JSON.
+[04:07:23 +5m 19s | photonic] Extracting: https://photonic.com/news/photonic-raises-180m (5/18), chunk 8/10
+[04:07:30 +5m 26s | photonic] Repaired malformed JSON.
+[04:07:30 +5m 26s | photonic] Extracting: https://photonic.com/news/photonic-raises-180m (5/18), chunk 9/10
+[04:07:36 +5m 32s | photonic] Repaired malformed JSON.
+[04:07:36 +5m 32s | photonic] Extracting: https://photonic.com/news/photonic-raises-180m (5/18), chunk 10/10
+[04:07:43 +5m 36s | photonic] Reading page (6/18): https://photonic.com/press-room
+[04:07:43 +5m 36s | photonic] Extracting: https://photonic.com/press-room (6/18), chunk 1/9
+[04:07:45 +5m 38s | photonic] Extracting: https://photonic.com/press-room (6/18), chunk 2/9
+[04:07:48 +5m 42s | photonic] Extracting: https://photonic.com/press-room (6/18), chunk 3/9
+[04:07:52 +5m 46s | photonic] Extracting: https://photonic.com/press-room (6/18), chunk 4/9
+[04:07:59 +5m 52s | photonic] Repaired malformed JSON.
+[04:07:59 +5m 52s | photonic] Extracting: https://photonic.com/press-room (6/18), chunk 5/9
+[04:08:04 +5m 57s | photonic] Repaired malformed JSON.
+[04:08:04 +5m 57s | photonic] Extracting: https://photonic.com/press-room (6/18), chunk 6/9
+[04:08:10 +6m 4s | photonic] Repaired malformed JSON.
+[04:08:10 +6m 4s | photonic] Extracting: https://photonic.com/press-room (6/18), chunk 7/9
+[04:08:21 +6m 12s | photonic] Repaired malformed JSON.
+[04:08:21 +6m 12s | photonic] Extracting: https://photonic.com/press-room (6/18), chunk 8/9
+[04:08:25 +6m 16s | photonic] Extracting: https://photonic.com/press-room (6/18), chunk 9/9
+[04:08:30 +6m 20s | photonic] Reading page (7/18): https://photonic.com/resources
+[04:08:30 +6m 20s | photonic] Extracting: https://photonic.com/resources (7/18), chunk 1/20
+[04:08:34 +6m 25s | photonic] Extracting: https://photonic.com/resources (7/18), chunk 2/20
+[04:08:38 +6m 29s | photonic] Extracting: https://photonic.com/resources (7/18), chunk 3/20
+[04:08:43 +6m 34s | photonic] Extracting: https://photonic.com/resources (7/18), chunk 4/20
+[04:08:50 +6m 38s | photonic] Extracting: https://photonic.com/resources (7/18), chunk 5/20
+[04:08:58 +6m 46s | photonic] Repaired malformed JSON.
+[04:08:58 +6m 46s | photonic] Extracting: https://photonic.com/resources (7/18), chunk 6/20
+[04:09:05 +6m 53s | photonic] Repaired malformed JSON.
+[04:09:05 +6m 53s | photonic] Extracting: https://photonic.com/resources (7/18), chunk 7/20
+[04:09:13 +7m 1s | photonic] Repaired malformed JSON.
+[04:09:13 +7m 1s | photonic] Extracting: https://photonic.com/resources (7/18), chunk 8/20
+[04:09:19 +7m 7s | photonic] Repaired malformed JSON.
+[04:09:19 +7m 7s | photonic] Extracting: https://photonic.com/resources (7/18), chunk 9/20
+[04:09:28 +7m 14s | photonic] Extracting: https://photonic.com/resources (7/18), chunk 10/20
+[04:09:37 +7m 22s | photonic] Repaired malformed JSON.
+[04:09:37 +7m 22s | photonic] Extracting: https://photonic.com/resources (7/18), chunk 11/20
+[04:09:44 +7m 30s | photonic] Repaired malformed JSON.
+[04:09:44 +7m 30s | photonic] Extracting: https://photonic.com/resources (7/18), chunk 12/20
+[04:09:47 +7m 33s | photonic] Extracting: https://photonic.com/resources (7/18), chunk 13/20
+[04:09:54 +7m 40s | photonic] Repaired malformed JSON.
+[04:09:54 +7m 40s | photonic] Extracting: https://photonic.com/resources (7/18), chunk 14/20
+[04:10:05 +7m 48s | photonic] Repaired malformed JSON.
+[04:10:05 +7m 48s | photonic] Extracting: https://photonic.com/resources (7/18), chunk 15/20
+[04:10:11 +7m 54s | photonic] Repaired malformed JSON.
+[04:10:11 +7m 54s | photonic] Extracting: https://photonic.com/resources (7/18), chunk 16/20
+[04:10:18 +8m 1s | photonic] Repaired malformed JSON.
+[04:10:18 +8m 1s | photonic] Extracting: https://photonic.com/resources (7/18), chunk 17/20
+[04:10:24 +8m 7s | photonic] Repaired malformed JSON.
+[04:10:24 +8m 7s | photonic] Extracting: https://photonic.com/resources (7/18), chunk 18/20
+[04:10:31 +8m 14s | photonic] Repaired malformed JSON.
+[04:10:31 +8m 14s | photonic] Extracting: https://photonic.com/resources (7/18), chunk 19/20
+[04:10:39 +8m 22s | photonic] Repaired malformed JSON.
+[04:10:39 +8m 22s | photonic] Extracting: https://photonic.com/resources (7/18), chunk 20/20
+[04:10:45 +8m 28s | photonic] Reading page (8/18): https://photonic.com/careers
+[04:10:45 +8m 28s | photonic] Extracting: https://photonic.com/careers (8/18), chunk 1/18
+[04:10:50 +8m 30s | photonic] Extracting: https://photonic.com/careers (8/18), chunk 2/18
+[04:10:54 +8m 34s | photonic] Extracting: https://photonic.com/careers (8/18), chunk 3/18
+[04:10:59 +8m 39s | photonic] Extracting: https://photonic.com/careers (8/18), chunk 4/18
+[04:11:03 +8m 43s | photonic] Extracting: https://photonic.com/careers (8/18), chunk 5/18
+[04:11:07 +8m 47s | photonic] Extracting: https://photonic.com/careers (8/18), chunk 6/18
+[04:11:11 +8m 51s | photonic] Extracting: https://photonic.com/careers (8/18), chunk 7/18
+[04:11:19 +8m 59s | photonic] Repaired malformed JSON.
+[04:11:19 +8m 59s | photonic] Extracting: https://photonic.com/careers (8/18), chunk 8/18
+[04:11:27 +9m 5s | photonic] Repaired malformed JSON.
+[04:11:27 +9m 5s | photonic] Extracting: https://photonic.com/careers (8/18), chunk 9/18
+[04:11:32 +9m 10s | photonic] Repaired malformed JSON.
+[04:11:32 +9m 10s | photonic] Extracting: https://photonic.com/careers (8/18), chunk 10/18
+[04:11:39 +9m 17s | photonic] Repaired malformed JSON.
+[04:11:39 +9m 17s | photonic] Extracting: https://photonic.com/careers (8/18), chunk 11/18
+[04:11:47 +9m 25s | photonic] Repaired malformed JSON.
+[04:11:47 +9m 25s | photonic] Extracting: https://photonic.com/careers (8/18), chunk 12/18
+[04:11:54 +9m 32s | photonic] Repaired malformed JSON.
+[04:11:54 +9m 32s | photonic] Extracting: https://photonic.com/careers (8/18), chunk 13/18
+[04:12:01 +9m 39s | photonic] Repaired malformed JSON.
+[04:12:01 +9m 39s | photonic] Extracting: https://photonic.com/careers (8/18), chunk 14/18
+[04:12:07 +9m 45s | photonic] Repaired malformed JSON.
+[04:12:07 +9m 45s | photonic] Extracting: https://photonic.com/careers (8/18), chunk 15/18
+[04:12:18 +9m 52s | photonic] Repaired malformed JSON.
+[04:12:18 +9m 52s | photonic] Extracting: https://photonic.com/careers (8/18), chunk 16/18
+[04:12:25 +9m 59s | photonic] Repaired malformed JSON.
+[04:12:25 +9m 59s | photonic] Extracting: https://photonic.com/careers (8/18), chunk 17/18
+[04:12:30 +10m 5s | photonic] Repaired malformed JSON.
+[04:12:30 +10m 5s | photonic] Extracting: https://photonic.com/careers (8/18), chunk 18/18
+[04:12:33 +10m 8s | photonic] Reading page (9/18): https://photonic.com/blog/what-is-a-t-centre
+[04:12:33 +10m 8s | photonic] Extracting: https://photonic.com/blog/what-is-a-t-centre (9/18), chunk 1/10
+[04:12:35 +10m 9s | photonic] Extracting: https://photonic.com/blog/what-is-a-t-centre (9/18), chunk 2/10
+[04:12:39 +10m 13s | photonic] Extracting: https://photonic.com/blog/what-is-a-t-centre (9/18), chunk 3/10
+[04:12:43 +10m 17s | photonic] Extracting: https://photonic.com/blog/what-is-a-t-centre (9/18), chunk 4/10
+[04:12:46 +10m 21s | photonic] Extracting: https://photonic.com/blog/what-is-a-t-centre (9/18), chunk 5/10
+[04:12:51 +10m 25s | photonic] Extracting: https://photonic.com/blog/what-is-a-t-centre (9/18), chunk 6/10
+[04:12:55 +10m 30s | photonic] Extracting: https://photonic.com/blog/what-is-a-t-centre (9/18), chunk 7/10
+[04:13:00 +10m 35s | photonic] Extracting: https://photonic.com/blog/what-is-a-t-centre (9/18), chunk 8/10
+[04:13:10 +10m 41s | photonic] Repaired malformed JSON.
+[04:13:10 +10m 41s | photonic] Extracting: https://photonic.com/blog/what-is-a-t-centre (9/18), chunk 9/10
+[04:13:16 +10m 47s | photonic] Repaired malformed JSON.
+[04:13:16 +10m 47s | photonic] Extracting: https://photonic.com/blog/what-is-a-t-centre (9/18), chunk 10/10
+[04:13:19 +10m 50s | photonic] Reading page (10/18): https://photonic.com/products
+[04:13:19 +10m 50s | photonic] Extracting: https://photonic.com/products (10/18), chunk 1/8
+[04:13:23 +10m 54s | photonic] Extracting: https://photonic.com/products (10/18), chunk 2/8
+[04:13:27 +10m 58s | photonic] Extracting: https://photonic.com/products (10/18), chunk 3/8
+[04:13:31 +11m 2s | photonic] Extracting: https://photonic.com/products (10/18), chunk 4/8
+[04:13:37 +11m 8s | photonic] Repaired malformed JSON.
+[04:13:37 +11m 8s | photonic] Extracting: https://photonic.com/products (10/18), chunk 5/8
+[04:13:47 +11m 16s | photonic] Repaired malformed JSON.
+[04:13:47 +11m 16s | photonic] Extracting: https://photonic.com/products (10/18), chunk 6/8
+[04:13:54 +11m 22s | photonic] Extracting: https://photonic.com/products (10/18), chunk 7/8
+[04:13:59 +11m 28s | photonic] Extracting: https://photonic.com/products (10/18), chunk 8/8
+[04:14:02 +11m 31s | photonic] Reading page (11/18): https://photonic.com/contact
+[04:14:02 +11m 31s | photonic] Extracting: https://photonic.com/contact (11/18), chunk 1/5
+[04:14:06 +11m 35s | photonic] Extracting: https://photonic.com/contact (11/18), chunk 2/5
+[04:14:10 +11m 38s | photonic] Extracting: https://photonic.com/contact (11/18), chunk 3/5
+[04:14:17 +11m 43s | photonic] Extracting: https://photonic.com/contact (11/18), chunk 4/5
+[04:14:20 +11m 46s | photonic] Extracting: https://photonic.com/contact (11/18), chunk 5/5
+[04:14:29 +11m 56s | photonic] Repaired malformed JSON.
+[04:14:29 +11m 56s | photonic] Reading page (12/18): https://photonic.com/events
+[04:14:29 +11m 56s | photonic] Extracting: https://photonic.com/events (12/18), chunk 1/11
+[04:14:31 +11m 57s | photonic] Extracting: https://photonic.com/events (12/18), chunk 2/11
+[04:14:35 +12m 1s | photonic] Extracting: https://photonic.com/events (12/18), chunk 3/11
+[04:14:41 +12m 7s | photonic] Extracting: https://photonic.com/events (12/18), chunk 4/11
+[04:14:50 +12m 14s | photonic] Repaired malformed JSON.
+[04:14:50 +12m 14s | photonic] Extracting: https://photonic.com/events (12/18), chunk 5/11
+[04:14:55 +12m 19s | photonic] Repaired malformed JSON.
+[04:14:55 +12m 19s | photonic] Extracting: https://photonic.com/events (12/18), chunk 6/11
+[04:15:01 +12m 25s | photonic] Repaired malformed JSON.
+[04:15:01 +12m 25s | photonic] Extracting: https://photonic.com/events (12/18), chunk 7/11
+[04:15:06 +12m 30s | photonic] Repaired malformed JSON.
+[04:15:06 +12m 30s | photonic] Extracting: https://photonic.com/events (12/18), chunk 8/11
+[04:15:12 +12m 36s | photonic] Repaired malformed JSON.
+[04:15:12 +12m 36s | photonic] Extracting: https://photonic.com/events (12/18), chunk 9/11
+[04:15:18 +12m 42s | photonic] Repaired malformed JSON.
+[04:15:18 +12m 42s | photonic] Extracting: https://photonic.com/events (12/18), chunk 10/11
+[04:15:29 +12m 51s | photonic] Repaired malformed JSON.
+[04:15:29 +12m 51s | photonic] Extracting: https://photonic.com/events (12/18), chunk 11/11
+[04:15:33 +12m 54s | photonic] Reading page (13/18): https://photonic.com/news/photonic-inc-appoints-four-new-directors-to-its-board-of-directors
+[04:15:33 +12m 54s | photonic] Extracting: https://photonic.com/news/photonic-inc-appoints-four-new-directors-to-its-board-of-directors (13/18), chunk 1/9
+[04:15:36 +12m 58s | photonic] Extracting: https://photonic.com/news/photonic-inc-appoints-four-new-directors-to-its-board-of-directors (13/18), chunk 2/9
+[04:15:41 +13m 3s | photonic] Extracting: https://photonic.com/news/photonic-inc-appoints-four-new-directors-to-its-board-of-directors (13/18), chunk 3/9
+[04:15:45 +13m 7s | photonic] Extracting: https://photonic.com/news/photonic-inc-appoints-four-new-directors-to-its-board-of-directors (13/18), chunk 4/9
+[04:15:52 +13m 14s | photonic] Repaired malformed JSON.
+[04:15:52 +13m 14s | photonic] Extracting: https://photonic.com/news/photonic-inc-appoints-four-new-directors-to-its-board-of-directors (13/18), chunk 5/9
+[04:16:03 +13m 22s | photonic] Repaired malformed JSON.
+[04:16:03 +13m 22s | photonic] Extracting: https://photonic.com/news/photonic-inc-appoints-four-new-directors-to-its-board-of-directors (13/18), chunk 6/9
+[04:16:10 +13m 29s | photonic] Repaired malformed JSON.
+[04:16:10 +13m 29s | photonic] Extracting: https://photonic.com/news/photonic-inc-appoints-four-new-directors-to-its-board-of-directors (13/18), chunk 7/9
+[04:16:17 +13m 36s | photonic] Repaired malformed JSON.
+[04:16:17 +13m 36s | photonic] Extracting: https://photonic.com/news/photonic-inc-appoints-four-new-directors-to-its-board-of-directors (13/18), chunk 8/9
+[04:16:24 +13m 43s | photonic] Repaired malformed JSON.
+[04:16:24 +13m 43s | photonic] Extracting: https://photonic.com/news/photonic-inc-appoints-four-new-directors-to-its-board-of-directors (13/18), chunk 9/9
+[04:16:28 +13m 48s | photonic] Reading page (14/18): https://photonic.com/technology/qubit-platform
+[04:16:28 +13m 48s | photonic] Extracting: https://photonic.com/technology/qubit-platform (14/18), chunk 1/8
+[04:16:35 +13m 52s | photonic] Extracting: https://photonic.com/technology/qubit-platform (14/18), chunk 2/8
+[04:16:41 +13m 58s | photonic] Extracting: https://photonic.com/technology/qubit-platform (14/18), chunk 3/8
+[04:16:45 +14m 2s | photonic] Extracting: https://photonic.com/technology/qubit-platform (14/18), chunk 4/8
+[04:16:51 +14m 8s | photonic] Extracting: https://photonic.com/technology/qubit-platform (14/18), chunk 5/8
+[04:16:56 +14m 12s | photonic] Extracting: https://photonic.com/technology/qubit-platform (14/18), chunk 6/8
+[04:17:01 +14m 18s | photonic] Repaired malformed JSON.
+[04:17:01 +14m 18s | photonic] Extracting: https://photonic.com/technology/qubit-platform (14/18), chunk 7/8
+[04:17:10 +14m 25s | photonic] Repaired malformed JSON.
+[04:17:10 +14m 25s | photonic] Extracting: https://photonic.com/technology/qubit-platform (14/18), chunk 8/8
+[04:17:15 +14m 29s | photonic] Reading page (15/18): https://photonic.com/technology/entanglement-first
+[04:17:15 +14m 29s | photonic] Extracting: https://photonic.com/technology/entanglement-first (15/18), chunk 1/9
+[04:17:20 +14m 35s | photonic] Extracting: https://photonic.com/technology/entanglement-first (15/18), chunk 2/9
+[04:17:25 +14m 39s | photonic] Extracting: https://photonic.com/technology/entanglement-first (15/18), chunk 3/9
+[04:17:31 +14m 46s | photonic] Extracting: https://photonic.com/technology/entanglement-first (15/18), chunk 4/9
+[04:17:38 +14m 52s | photonic] Extracting: https://photonic.com/technology/entanglement-first (15/18), chunk 5/9
+[04:17:45 +14m 57s | photonic] Extracting: https://photonic.com/technology/entanglement-first (15/18), chunk 6/9
+[04:17:51 +15m 3s | photonic] Repaired malformed JSON.
+[04:17:51 +15m 3s | photonic] Extracting: https://photonic.com/technology/entanglement-first (15/18), chunk 7/9
+[04:17:57 +15m 9s | photonic] Repaired malformed JSON.
+[04:17:57 +15m 9s | photonic] Extracting: https://photonic.com/technology/entanglement-first (15/18), chunk 8/9
+[04:18:06 +15m 18s | photonic] Repaired malformed JSON.
+[04:18:06 +15m 18s | photonic] Extracting: https://photonic.com/technology/entanglement-first (15/18), chunk 9/9
+[04:18:10 +15m 22s | photonic] Reading page (16/18): https://photonic.com/news/photonic-inc-closes-investment-round-with-over-200m-usd-275m-cad
+[04:18:10 +15m 22s | photonic] Extracting: https://photonic.com/news/photonic-inc-closes-investment-round-with-over-200m-usd-275m-cad (16/18), chunk 1/10
+[04:18:14 +15m 26s | photonic] Extracting: https://photonic.com/news/photonic-inc-closes-investment-round-with-over-200m-usd-275m-cad (16/18), chunk 2/10
+[04:18:19 +15m 30s | photonic] Extracting: https://photonic.com/news/photonic-inc-closes-investment-round-with-over-200m-usd-275m-cad (16/18), chunk 3/10
+[04:18:26 +15m 37s | photonic] Extracting: https://photonic.com/news/photonic-inc-closes-investment-round-with-over-200m-usd-275m-cad (16/18), chunk 4/10
+[04:18:34 +15m 45s | photonic] Repaired malformed JSON.
+[04:18:34 +15m 45s | photonic] Extracting: https://photonic.com/news/photonic-inc-closes-investment-round-with-over-200m-usd-275m-cad (16/18), chunk 5/10
+[04:18:40 +15m 51s | photonic] Repaired malformed JSON.
+[04:18:40 +15m 51s | photonic] Extracting: https://photonic.com/news/photonic-inc-closes-investment-round-with-over-200m-usd-275m-cad (16/18), chunk 6/10
+[04:18:46 +15m 56s | photonic] Repaired malformed JSON.
+[04:18:46 +15m 56s | photonic] Extracting: https://photonic.com/news/photonic-inc-closes-investment-round-with-over-200m-usd-275m-cad (16/18), chunk 7/10
+[04:18:55 +16m 3s | photonic] Repaired malformed JSON.
+[04:18:55 +16m 3s | photonic] Extracting: https://photonic.com/news/photonic-inc-closes-investment-round-with-over-200m-usd-275m-cad (16/18), chunk 8/10
+[04:19:03 +16m 11s | photonic] Repaired malformed JSON.
+[04:19:03 +16m 11s | photonic] Extracting: https://photonic.com/news/photonic-inc-closes-investment-round-with-over-200m-usd-275m-cad (16/18), chunk 9/10
+[04:19:10 +16m 18s | photonic] Repaired malformed JSON.
+[04:19:10 +16m 18s | photonic] Extracting: https://photonic.com/news/photonic-inc-closes-investment-round-with-over-200m-usd-275m-cad (16/18), chunk 10/10
+[04:19:14 +16m 23s | photonic] Reading page (17/18): https://photonic.com/technology/error-correction
+[04:19:14 +16m 23s | photonic] Extracting: https://photonic.com/technology/error-correction (17/18), chunk 1/10
+[04:19:18 +16m 26s | photonic] Extracting: https://photonic.com/technology/error-correction (17/18), chunk 2/10
+[04:19:21 +16m 30s | photonic] Extracting: https://photonic.com/technology/error-correction (17/18), chunk 3/10
+[04:19:29 +16m 34s | photonic] Extracting: https://photonic.com/technology/error-correction (17/18), chunk 4/10
+[04:19:33 +16m 38s | photonic] Extracting: https://photonic.com/technology/error-correction (17/18), chunk 5/10
+[04:19:37 +16m 42s | photonic] Extracting: https://photonic.com/technology/error-correction (17/18), chunk 6/10
+[04:19:41 +16m 47s | photonic] Extracting: https://photonic.com/technology/error-correction (17/18), chunk 7/10
+[04:19:47 +16m 52s | photonic] Repaired malformed JSON.
+[04:19:47 +16m 52s | photonic] Extracting: https://photonic.com/technology/error-correction (17/18), chunk 8/10
+[04:19:52 +16m 57s | photonic] Repaired malformed JSON.
+[04:19:52 +16m 57s | photonic] Extracting: https://photonic.com/technology/error-correction (17/18), chunk 9/10
+[04:20:02 +17m 5s | photonic] Repaired malformed JSON.
+[04:20:02 +17m 5s | photonic] Extracting: https://photonic.com/technology/error-correction (17/18), chunk 10/10
+[04:20:06 +17m 9s | photonic] Reading page (18/18): https://photonic.com/technology/networking
+[04:20:06 +17m 9s | photonic] Extracting: https://photonic.com/technology/networking (18/18), chunk 1/8
+[04:20:08 +17m 11s | photonic] Extracting: https://photonic.com/technology/networking (18/18), chunk 2/8
+[04:20:14 +17m 16s | photonic] Extracting: https://photonic.com/technology/networking (18/18), chunk 3/8
+[04:20:17 +17m 20s | photonic] Extracting: https://photonic.com/technology/networking (18/18), chunk 4/8
+[04:20:21 +17m 24s | photonic] Extracting: https://photonic.com/technology/networking (18/18), chunk 5/8
+[04:20:27 +17m 30s | photonic] Repaired malformed JSON.
+[04:20:27 +17m 30s | photonic] Extracting: https://photonic.com/technology/networking (18/18), chunk 6/8
+[04:20:36 +17m 36s | photonic] Repaired malformed JSON.
+[04:20:36 +17m 36s | photonic] Extracting: https://photonic.com/technology/networking (18/18), chunk 7/8
+[04:20:42 +17m 42s | photonic] Repaired malformed JSON.
+[04:20:42 +17m 42s | photonic] Extracting: https://photonic.com/technology/networking (18/18), chunk 8/8
+[04:20:49 +17m 49s | photonic] Repaired malformed JSON.
+[04:20:49 +17m 49s | photonic] Saved 1_actor_results.json with 306 extracted records
+
+[04:20:49 +17m 49s | photonic] === 2 clean actors ===
+[04:20:49 +17m 50s | photonic] Loaded 306 extracted records
+[04:20:49 +17m 50s | photonic] Saved 2_actor_nodes.json with 48 canonical actor nodes
+
+[04:20:49 +17m 50s | photonic] === 3 interaction extraction ===
+[04:20:49 +17m 50s | photonic] Extracting interactions: https://photonic.com (1/18), chunk 1/15
+[04:20:51 +17m 51s | photonic] Extracting interactions: https://photonic.com (1/18), chunk 2/15
+[04:20:53 +17m 54s | photonic] Extracting interactions: https://photonic.com (1/18), chunk 6/15
+[04:20:59 +18m 0s | photonic] Extracting interactions: https://photonic.com (1/18), chunk 7/15
+[04:21:05 +18m 5s | photonic] Extracting interactions: https://photonic.com (1/18), chunk 8/15
+[04:21:12 +18m 10s | photonic] Extracting interactions: https://photonic.com (1/18), chunk 9/15
+[04:21:21 +18m 18s | photonic] Extracting interactions: https://photonic.com (1/18), chunk 10/15
+[04:21:23 +18m 21s | photonic] Extracting interactions: https://photonic.com (1/18), chunk 11/15
+[04:21:29 +18m 26s | photonic] Extracting interactions: https://photonic.com (1/18), chunk 12/15
+[04:21:34 +18m 32s | photonic] Extracting interactions: https://photonic.com (1/18), chunk 13/15
+[04:21:38 +18m 36s | photonic] Extracting interactions: https://photonic.com (1/18), chunk 14/15
+[04:21:41 +18m 39s | photonic] Extracting interactions: https://photonic.com (1/18), chunk 15/15
+[04:21:43 +18m 40s | photonic] Extracting interactions: https://photonic.com/technology (2/18), chunk 1/9
+[04:21:47 +18m 42s | photonic] Extracting interactions: https://photonic.com/technology (2/18), chunk 2/9
+[04:21:50 +18m 45s | photonic] Extracting interactions: https://photonic.com/technology (2/18), chunk 9/9
+[04:21:52 +18m 47s | photonic] Extracting interactions: https://photonic.com/news/photonic-inc-partners-with-telus-demonstrates-quantum-teleportation (3/18), chunk 1/11
+[04:21:55 +18m 50s | photonic] Extracting interactions: https://photonic.com/news/photonic-inc-partners-with-telus-demonstrates-quantum-teleportation (3/18), chunk 2/11
+[04:21:57 +18m 52s | photonic] Extracting interactions: https://photonic.com/news/photonic-inc-partners-with-telus-demonstrates-quantum-teleportation (3/18), chunk 4/11
+[04:22:08 +19m 3s | photonic] Extracting interactions: https://photonic.com/news/photonic-inc-partners-with-telus-demonstrates-quantum-teleportation (3/18), chunk 5/11
+[04:22:25 +19m 18s | photonic] Extracting interactions: https://photonic.com/news/photonic-inc-partners-with-telus-demonstrates-quantum-teleportation (3/18), chunk 6/11
+[04:22:40 +19m 32s | photonic] Extracting interactions: https://photonic.com/news/photonic-inc-partners-with-telus-demonstrates-quantum-teleportation (3/18), chunk 7/11
+[04:22:56 +19m 45s | photonic] Extracting interactions: https://photonic.com/news/photonic-inc-partners-with-telus-demonstrates-quantum-teleportation (3/18), chunk 8/11
+[04:23:07 +19m 57s | photonic] Extracting interactions: https://photonic.com/news/photonic-inc-partners-with-telus-demonstrates-quantum-teleportation (3/18), chunk 9/11
+[04:23:11 +20m 1s | photonic] Extracting interactions: https://photonic.com/news/photonic-inc-partners-with-telus-demonstrates-quantum-teleportation (3/18), chunk 10/11
+[04:23:15 +20m 5s | photonic] Extracting interactions: https://photonic.com/news/photonic-inc-partners-with-telus-demonstrates-quantum-teleportation (3/18), chunk 11/11
+[04:23:16 +20m 6s | photonic] Extracting interactions: https://photonic.com/about-us (4/18), chunk 1/12
+[04:23:18 +20m 8s | photonic] Extracting interactions: https://photonic.com/about-us (4/18), chunk 2/12
+[04:23:22 +20m 12s | photonic] Extracting interactions: https://photonic.com/about-us (4/18), chunk 5/12
+[04:23:32 +20m 19s | photonic] Extracting interactions: https://photonic.com/about-us (4/18), chunk 6/12
+[04:23:37 +20m 24s | photonic] Extracting interactions: https://photonic.com/about-us (4/18), chunk 7/12
+[04:23:46 +20m 33s | photonic] Extracting interactions: https://photonic.com/about-us (4/18), chunk 8/12
+[04:23:49 +20m 36s | photonic] Extracting interactions: https://photonic.com/about-us (4/18), chunk 9/12
+[04:23:56 +20m 43s | photonic] Extracting interactions: https://photonic.com/about-us (4/18), chunk 10/12
+[04:24:31 +21m 15s | photonic] Extracting interactions: https://photonic.com/about-us (4/18), chunk 11/12
+[04:24:52 +21m 34s | photonic] Extracting interactions: https://photonic.com/about-us (4/18), chunk 12/12
+[04:24:54 +21m 35s | photonic] Extracting interactions: https://photonic.com/news/photonic-raises-180m (5/18), chunk 1/10
+[04:24:57 +21m 39s | photonic] Extracting interactions: https://photonic.com/news/photonic-raises-180m (5/18), chunk 2/10
+[04:25:01 +21m 43s | photonic] Extracting interactions: https://photonic.com/news/photonic-raises-180m (5/18), chunk 4/10
+[04:25:16 +21m 55s | photonic] Extracting interactions: https://photonic.com/news/photonic-raises-180m (5/18), chunk 5/10
+[04:25:35 +22m 14s | photonic] Extracting interactions: https://photonic.com/news/photonic-raises-180m (5/18), chunk 6/10
+[04:25:47 +22m 26s | photonic] Extracting interactions: https://photonic.com/news/photonic-raises-180m (5/18), chunk 7/10
+[04:26:06 +22m 42s | photonic] Extracting interactions: https://photonic.com/news/photonic-raises-180m (5/18), chunk 8/10
+[04:26:18 +22m 54s | photonic] Extracting interactions: https://photonic.com/news/photonic-raises-180m (5/18), chunk 9/10
+[04:26:26 +23m 0s | photonic] Extracting interactions: https://photonic.com/news/photonic-raises-180m (5/18), chunk 10/10
+[04:26:28 +23m 1s | photonic] Extracting interactions: https://photonic.com/press-room (6/18), chunk 1/9
+[04:26:30 +23m 4s | photonic] Extracting interactions: https://photonic.com/press-room (6/18), chunk 2/9
+[04:26:34 +23m 8s | photonic] Extracting interactions: https://photonic.com/press-room (6/18), chunk 4/9
+[04:26:39 +23m 12s | photonic] Extracting interactions: https://photonic.com/press-room (6/18), chunk 5/9
+[04:26:47 +23m 20s | photonic] Extracting interactions: https://photonic.com/press-room (6/18), chunk 6/9
+[04:26:51 +23m 24s | photonic] Extracting interactions: https://photonic.com/press-room (6/18), chunk 7/9
+[04:26:54 +23m 27s | photonic] Extracting interactions: https://photonic.com/press-room (6/18), chunk 8/9
+[04:26:55 +23m 29s | photonic] Extracting interactions: https://photonic.com/press-room (6/18), chunk 9/9
+[04:26:57 +23m 30s | photonic] Extracting interactions: https://photonic.com/resources (7/18), chunk 1/20
+[04:27:01 +23m 32s | photonic] Extracting interactions: https://photonic.com/resources (7/18), chunk 2/20
+[04:27:06 +23m 37s | photonic] Extracting interactions: https://photonic.com/resources (7/18), chunk 5/20
+[04:27:11 +23m 41s | photonic] Extracting interactions: https://photonic.com/resources (7/18), chunk 6/20
+[04:27:17 +23m 47s | photonic] Extracting interactions: https://photonic.com/resources (7/18), chunk 7/20
+[04:27:28 +23m 59s | photonic] Extracting interactions: https://photonic.com/resources (7/18), chunk 8/20
+[04:27:41 +24m 9s | photonic] Extracting interactions: https://photonic.com/resources (7/18), chunk 9/20
+[04:27:42 +24m 10s | photonic] Model call failed on https://photonic.com/resources, chunk 9: Cloudflare API error: [5030] Internal Error
+[04:27:42 +24m 10s | photonic] Extracting interactions: https://photonic.com/resources (7/18), chunk 10/20
+[04:27:54 +24m 22s | photonic] Extracting interactions: https://photonic.com/resources (7/18), chunk 11/20
+[04:28:12 +24m 38s | photonic] Extracting interactions: https://photonic.com/resources (7/18), chunk 14/20
+[04:28:21 +24m 47s | photonic] Extracting interactions: https://photonic.com/resources (7/18), chunk 15/20
+[04:28:24 +24m 50s | photonic] Extracting interactions: https://photonic.com/resources (7/18), chunk 16/20
+[04:28:32 +24m 57s | photonic] Extracting interactions: https://photonic.com/resources (7/18), chunk 17/20
+[04:28:42 +25m 8s | photonic] Extracting interactions: https://photonic.com/resources (7/18), chunk 18/20
+[04:28:58 +25m 21s | photonic] Extracting interactions: https://photonic.com/resources (7/18), chunk 19/20
+[04:29:24 +25m 43s | photonic] Extracting interactions: https://photonic.com/resources (7/18), chunk 20/20
+[04:29:29 +25m 48s | photonic] Extracting interactions: https://photonic.com/careers (8/18), chunk 1/18
+[04:29:31 +25m 51s | photonic] Extracting interactions: https://photonic.com/careers (8/18), chunk 2/18
+[04:29:34 +25m 53s | photonic] Extracting interactions: https://photonic.com/careers (8/18), chunk 8/18
+[04:29:36 +25m 56s | photonic] Extracting interactions: https://photonic.com/careers (8/18), chunk 9/18
+[04:29:40 +25m 59s | photonic] Extracting interactions: https://photonic.com/careers (8/18), chunk 10/18
+[04:29:41 +26m 1s | photonic] Extracting interactions: https://photonic.com/careers (8/18), chunk 11/18
+[04:29:44 +26m 3s | photonic] Extracting interactions: https://photonic.com/careers (8/18), chunk 12/18
+[04:29:48 +26m 8s | photonic] Extracting interactions: https://photonic.com/careers (8/18), chunk 13/18
+[04:29:49 +26m 9s | photonic] Extracting interactions: https://photonic.com/careers (8/18), chunk 14/18
+[04:29:56 +26m 12s | photonic] Extracting interactions: https://photonic.com/careers (8/18), chunk 15/18
+[04:29:59 +26m 16s | photonic] Extracting interactions: https://photonic.com/careers (8/18), chunk 18/18
+[04:30:01 +26m 17s | photonic] Extracting interactions: https://photonic.com/blog/what-is-a-t-centre (9/18), chunk 1/10
+[04:30:02 +26m 19s | photonic] Extracting interactions: https://photonic.com/blog/what-is-a-t-centre (9/18), chunk 2/10
+[04:30:06 +26m 23s | photonic] Extracting interactions: https://photonic.com/blog/what-is-a-t-centre (9/18), chunk 7/10
+[04:30:09 +26m 25s | photonic] Extracting interactions: https://photonic.com/blog/what-is-a-t-centre (9/18), chunk 8/10
+[04:30:14 +26m 31s | photonic] Extracting interactions: https://photonic.com/blog/what-is-a-t-centre (9/18), chunk 9/10
+[04:30:18 +26m 35s | photonic] Extracting interactions: https://photonic.com/blog/what-is-a-t-centre (9/18), chunk 10/10
+[04:30:19 +26m 36s | photonic] Extracting interactions: https://photonic.com/products (10/18), chunk 1/8
+[04:30:21 +26m 38s | photonic] Extracting interactions: https://photonic.com/products (10/18), chunk 2/8
+[04:30:24 +26m 41s | photonic] Extracting interactions: https://photonic.com/products (10/18), chunk 4/8
+[04:30:34 +26m 49s | photonic] Extracting interactions: https://photonic.com/products (10/18), chunk 5/8
+[04:30:43 +26m 58s | photonic] Extracting interactions: https://photonic.com/products (10/18), chunk 6/8
+[04:30:49 +27m 3s | photonic] Extracting interactions: https://photonic.com/products (10/18), chunk 7/8
+[04:30:53 +27m 7s | photonic] Extracting interactions: https://photonic.com/products (10/18), chunk 8/8
+[04:30:54 +27m 9s | photonic] Extracting interactions: https://photonic.com/contact (11/18), chunk 1/5
+[04:30:56 +27m 10s | photonic] Extracting interactions: https://photonic.com/contact (11/18), chunk 2/5
+[04:30:59 +27m 14s | photonic] Extracting interactions: https://photonic.com/contact (11/18), chunk 5/5
+[04:31:01 +27m 15s | photonic] Extracting interactions: https://photonic.com/events (12/18), chunk 1/11
+[04:31:02 +27m 16s | photonic] Extracting interactions: https://photonic.com/events (12/18), chunk 2/11
+[04:31:07 +27m 19s | photonic] Extracting interactions: https://photonic.com/events (12/18), chunk 4/11
+[04:31:12 +27m 24s | photonic] Extracting interactions: https://photonic.com/events (12/18), chunk 5/11
+[04:31:22 +27m 34s | photonic] Extracting interactions: https://photonic.com/events (12/18), chunk 6/11
+[04:31:29 +27m 41s | photonic] Extracting interactions: https://photonic.com/events (12/18), chunk 7/11
+[04:31:34 +27m 46s | photonic] Extracting interactions: https://photonic.com/events (12/18), chunk 8/11
+[04:31:50 +27m 59s | photonic] Extracting interactions: https://photonic.com/events (12/18), chunk 9/11
+[04:31:53 +28m 3s | photonic] Extracting interactions: https://photonic.com/events (12/18), chunk 10/11
+[04:32:01 +28m 11s | photonic] Extracting interactions: https://photonic.com/events (12/18), chunk 11/11
+[04:32:03 +28m 12s | photonic] Extracting interactions: https://photonic.com/news/photonic-inc-appoints-four-new-directors-to-its-board-of-directors (13/18), chunk 1/9
+[04:32:04 +28m 14s | photonic] Extracting interactions: https://photonic.com/news/photonic-inc-appoints-four-new-directors-to-its-board-of-directors (13/18), chunk 2/9
+[04:32:06 +28m 16s | photonic] Extracting interactions: https://photonic.com/news/photonic-inc-appoints-four-new-directors-to-its-board-of-directors (13/18), chunk 4/9
+[04:32:37 +28m 44s | photonic] Extracting interactions: https://photonic.com/news/photonic-inc-appoints-four-new-directors-to-its-board-of-directors (13/18), chunk 5/9
+[04:33:10 +29m 14s | photonic] Extracting interactions: https://photonic.com/news/photonic-inc-appoints-four-new-directors-to-its-board-of-directors (13/18), chunk 6/9
+[04:33:36 +29m 38s | photonic] Extracting interactions: https://photonic.com/news/photonic-inc-appoints-four-new-directors-to-its-board-of-directors (13/18), chunk 7/9
+[04:33:46 +29m 48s | photonic] Extracting interactions: https://photonic.com/news/photonic-inc-appoints-four-new-directors-to-its-board-of-directors (13/18), chunk 8/9
+[04:33:53 +29m 55s | photonic] Extracting interactions: https://photonic.com/news/photonic-inc-appoints-four-new-directors-to-its-board-of-directors (13/18), chunk 9/9
+[04:33:55 +29m 57s | photonic] Extracting interactions: https://photonic.com/technology/qubit-platform (14/18), chunk 1/8
+[04:33:59 +29m 58s | photonic] Extracting interactions: https://photonic.com/technology/qubit-platform (14/18), chunk 2/8
+[04:34:02 +30m 1s | photonic] Extracting interactions: https://photonic.com/technology/qubit-platform (14/18), chunk 8/8
+[04:34:06 +30m 5s | photonic] Extracting interactions: https://photonic.com/technology/entanglement-first (15/18), chunk 1/9
+[04:34:07 +30m 7s | photonic] Extracting interactions: https://photonic.com/technology/entanglement-first (15/18), chunk 2/9
+[04:34:09 +30m 8s | photonic] Extracting interactions: https://photonic.com/technology/entanglement-first (15/18), chunk 4/9
+[04:34:12 +30m 11s | photonic] Extracting interactions: https://photonic.com/technology/entanglement-first (15/18), chunk 5/9
+[04:34:15 +30m 14s | photonic] Extracting interactions: https://photonic.com/technology/entanglement-first (15/18), chunk 7/9
+[04:34:18 +30m 18s | photonic] Extracting interactions: https://photonic.com/technology/entanglement-first (15/18), chunk 8/9
+[04:34:22 +30m 21s | photonic] Extracting interactions: https://photonic.com/technology/entanglement-first (15/18), chunk 9/9
+[04:34:23 +30m 23s | photonic] Extracting interactions: https://photonic.com/news/photonic-inc-closes-investment-round-with-over-200m-usd-275m-cad (16/18), chunk 1/10
+[04:34:26 +30m 26s | photonic] Extracting interactions: https://photonic.com/news/photonic-inc-closes-investment-round-with-over-200m-usd-275m-cad (16/18), chunk 2/10
+[04:34:28 +30m 27s | photonic] Extracting interactions: https://photonic.com/news/photonic-inc-closes-investment-round-with-over-200m-usd-275m-cad (16/18), chunk 4/10
+[04:34:48 +30m 45s | photonic] Extracting interactions: https://photonic.com/news/photonic-inc-closes-investment-round-with-over-200m-usd-275m-cad (16/18), chunk 5/10
+[04:35:04 +31m 1s | photonic] Extracting interactions: https://photonic.com/news/photonic-inc-closes-investment-round-with-over-200m-usd-275m-cad (16/18), chunk 6/10
+[04:35:26 +31m 21s | photonic] Extracting interactions: https://photonic.com/news/photonic-inc-closes-investment-round-with-over-200m-usd-275m-cad (16/18), chunk 7/10
+[04:35:48 +31m 41s | photonic] Extracting interactions: https://photonic.com/news/photonic-inc-closes-investment-round-with-over-200m-usd-275m-cad (16/18), chunk 8/10
+[04:36:08 +32m 0s | photonic] Extracting interactions: https://photonic.com/news/photonic-inc-closes-investment-round-with-over-200m-usd-275m-cad (16/18), chunk 9/10
+[04:36:14 +32m 7s | photonic] Extracting interactions: https://photonic.com/news/photonic-inc-closes-investment-round-with-over-200m-usd-275m-cad (16/18), chunk 10/10
+[04:36:18 +32m 8s | photonic] Extracting interactions: https://photonic.com/technology/error-correction (17/18), chunk 1/10
+[04:36:19 +32m 9s | photonic] Extracting interactions: https://photonic.com/technology/error-correction (17/18), chunk 2/10
+[04:36:22 +32m 13s | photonic] Extracting interactions: https://photonic.com/technology/error-correction (17/18), chunk 8/10
+[04:36:25 +32m 15s | photonic] Extracting interactions: https://photonic.com/technology/error-correction (17/18), chunk 9/10
+[04:36:28 +32m 18s | photonic] Extracting interactions: https://photonic.com/technology/error-correction (17/18), chunk 10/10
+[04:36:29 +32m 19s | photonic] Extracting interactions: https://photonic.com/technology/networking (18/18), chunk 1/8
+[04:36:31 +32m 21s | photonic] Extracting interactions: https://photonic.com/technology/networking (18/18), chunk 2/8
+[04:36:33 +32m 24s | photonic] Extracting interactions: https://photonic.com/technology/networking (18/18), chunk 5/8
+[04:36:38 +32m 29s | photonic] Extracting interactions: https://photonic.com/technology/networking (18/18), chunk 6/8
+[04:36:52 +32m 40s | photonic] Extracting interactions: https://photonic.com/technology/networking (18/18), chunk 7/8
+[04:36:54 +32m 43s | photonic] Extracting interactions: https://photonic.com/technology/networking (18/18), chunk 8/8
+[04:36:56 +32m 44s | photonic] Saved 3_interaction_results.json with 257 extracted interactions.
+
+[04:36:56 +32m 44s | photonic] === 4 clean interactions ===
+[04:36:56 +32m 45s | photonic] Saved 4_edges.json with 74 cleaned interactions.
+
+[04:36:56 +32m 45s | photonic] === 5 helix enrichment ===
+[04:36:56 +32m 45s | photonic] Wrote 5_nodes.json (48 actors)
+[04:36:56 +32m 45s | photonic] Wrote 5_edges.json (74 interactions)
+[04:36:56 +32m 45s | photonic] Actor helix counts: {'Academia': 5, 'Civil Society': 3, 'Government': 2, 'Industry': 17, 'Intermediary': 7, 'Unknown': 14}
+[04:36:56 +32m 45s | photonic] Functional-space counts: {'Consensus': 2, 'Innovation': 10, 'Intra-helix / Not classified': 53, 'Unknown': 9}
+
+[04:36:56 +32m 45s | photonic] === 6 network visualisation ===
+[04:36:57 +32m 45s | photonic] Wrote quantum_network.html
+[04:36:57 +32m 45s | photonic] Nodes: 48
+[04:36:57 +32m 45s | photonic] Edges: 28
+
+[04:36:57 +32m 45s | photonic] Done. Outputs written to: /home/lv/IDP/idpdeeptech/pipeline/site_outputs/photonic
+[04:36:57 +32m 45s | photonic] Log: /home/lv/IDP/idpdeeptech/pipeline/site_outputs/photonic/run.log
+
+========================================================================
+RUN FINISHED 2026-06-17 04:36:57  (OK)
+Started:     2026-06-17 04:01:40
+Elapsed:     32m 45s
+========================================================================
