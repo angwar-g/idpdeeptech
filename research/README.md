@@ -52,7 +52,7 @@ python sitemap_scrape_with_date.py
 
 ### `top_quantum_companies_extractor.py`
 
-Scrapes The Quantum Insider article listing top quantum computing companies and extracts company names together with their website links.
+Scrapes [The Quantum Insider article listing top quantum computing companies](https://thequantuminsider.com/2025/09/23/top-quantum-computing-companies/) and extracts company names together with their website links.
 
 The extracted companies are saved in JSON format, with each company name as a key and its website link as the value.
 
