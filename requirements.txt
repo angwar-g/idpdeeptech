@@ -22,3 +22,7 @@ pyvis>=0.3.2            # interactive HTML output in network.py
 
 # JSON cleanup
 json_repair>=0.25.0     # recovers malformed LLM JSON output in feed_*/interactions_*
+
+# If running scripts from the research folder
+requests
+beautifulsoup4
