@@ -108,6 +108,183 @@ OUTPUT_JSON = "company_validation_results.json"
 
 ---
 
+### `excel_scraper.py`
+
+Extracts company names and website links from an Excel spreadsheet and converts them into JSON format.
+
+The script reads the columns:
+
+```text
+Company name (final)
+Website (final)
+```
+
+and automatically adds `https://` to website links when missing.
+
+Each company is stored as a JSON entry where the key is the company name and the value contains the website URL under `website_link`.
+
+**Input:**
+
+```text
+Philipp_Company_Websites.xlsx
+```
+
+**Output:**
+
+```text
+philipp_companies.json
+```
+
+**Run:**
+
+```bash
+python excel_scraper.py
+```
+
+---
+
+### `invalid_companies.json`
+
+Contains company entries whose website links were flagged as invalid during validation.
+
+This file is typically generated from a link validation step and serves as input for automatic URL repair.
+
+---
+
+### `invalid_to_valid.py`
+
+Attempts to automatically repair invalid company website URLs.
+
+The script tests multiple URL variations, including:
+
+- HTTP vs HTTPS
+- With and without `www`
+- Redirect handling
+
+It also identifies websites that may be valid but return bot-protection responses such as HTTP 403 or HTTP 429.
+
+**Input:**
+
+```text
+invalid_companies.json
+```
+
+**Outputs:**
+
+```text
+invalid_companies_fixed.json
+invalid_companies_needing_review.json
+```
+
+**Run:**
+
+```bash
+python invalid_to_valid.py
+```
+
+The file:
+
+```text
+invalid_companies_fixed.json
+```
+
+contains companies whose URLs were attempted to be repaired.
+
+The file:
+
+```text
+invalid_companies_needing_review.json
+```
+
+contains companies whose URLs could not be automatically repaired and may require manual verification.
+
+---
+
+### `json_cleaner.py`
+
+Removes companies from one JSON file based on matching company names found in another JSON file.
+
+This is useful when excluding a subset of companies from a larger dataset.
+
+**Inputs:**
+
+```text
+philipp_companies.json
+invalid_companies_fixed.json
+```
+
+**Output:**
+
+```text
+philipp_companies_clean.json
+```
+
+**Run:**
+
+```bash
+python json_cleaner.py
+```
+
+Matching is performed using company names.
+
+---
+
+### `json_cleaner_by_link.py`
+
+Removes companies from one JSON file based on matching website URLs rather than company names.
+
+This approach is useful when company names differ slightly between datasets but website URLs remain consistent.
+
+Before comparison, URLs are normalized by:
+
+- Converting to lowercase
+- Removing trailing slashes
+
+**Inputs:**
+
+```text
+philipp_companies.json
+quantum_companies.json
+```
+
+**Output:**
+
+```text
+philipp_companies_clean.json
+```
+
+**Run:**
+
+```bash
+python json_cleaner_by_link.py
+```
+
+Matching is performed using website URLs.
+
+---
+
+## Company Dataset Disclaimer
+
+The company dataset was compiled from publicly available sources and may contain outdated, incomplete, or incorrectly formatted website URLs.
+
+Automated validation was performed using HTTP requests and redirect handling. Some websites may be incorrectly flagged due to:
+
+- Bot protection systems (Cloudflare, Akamai, Imperva, etc.)
+- Temporary downtime
+- Geographic restrictions
+- Rate limiting
+- SSL certificate issues
+
+Companies contained in:
+
+```text
+invalid_companies.json
+```
+
+should be considered unresolved and may require manual verification before use in downstream analysis.
+
+The scripts are intended to accelerate large-scale data collection and cleaning but do not guarantee that every website URL is correct, active, or associated with the intended company.
+
 ## Requirements
 
 Install the required Python packages before running the scripts:
