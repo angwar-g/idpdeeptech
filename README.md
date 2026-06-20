@@ -17,15 +17,16 @@ Quick check that the LLM side is wired up: `python3 test_llm.py` fires one short
 ## Layout
 
 ```
-pdf_input/*.pdf                       site_input/companies.json
-       ↓                                       ↓
-pdf_pipeline.py    pdf_pipeline_batch.py   site_pipeline.py    site_pipeline_batch.py
-       ↓                                       ↓
-pdf_outputs/<stem>/                    site_outputs/<slug>/
+pdf_input/*.pdf                       site_input/companies.json    site_input/news.json
+       ↓                                       ↓                            ↓
+pdf_pipeline(_batch).py            site_pipeline(_batch).py        site_pipeline_batch.py --news
+       ↓                                       ↓                            ↓
+pdf_outputs/<stem>/                    site_outputs/<slug>/         news_outputs/<slug>/
    network.html  +  5_nodes.json  +  5_edges.json  +  intermediates
 ```
 
 Slugs for sites come from the URL: `https://ionq.com/` → `ionq`. Same in single and batch.
+News URLs include the path: `https://thequantuminsider.com/2019/12/02/amazon-primed/` → `thequantuminsider_2019_12_02_amazon_primed`.
 
 ## Single document
 
@@ -71,12 +72,38 @@ Skips docs with existing `network.html` by default. Walks `pdf_input/X.pdf` or r
 | `-f`, `--force` | Queue and redo every doc, including completed ones. Forwards `--force` to each. |
 | `-c N`, `--crawl N` *(site)* | Crawl depth per company (default 3). |
 | `--max-pages N` *(site)* | Max pages crawled per company (default 20). |
+| `--news` / `--no-news` *(site)* | Force news mode on/off. Auto-detected (see below). |
 
 Skip flags (`-s`, `-i`, `--skip-crawl`) are **single-pipeline only** - not on the batch.
 
+## News batches
+
+A "news batch" is a config of article URLs (e.g. quantum-news articles) rather than company homepages. They get different default behaviour because each URL is a single self-contained page, not the entry point of a site to crawl.
+
+**Auto-detection.** The site batch checks the config and switches into news mode automatically if either:
+
+- the filename stem contains `news`, `article`, or `post` (`news.json`, `q4_articles.json`, `blog_posts.json`, etc), OR
+- at least 50% of URLs in the config have paths with 3+ segments (typical of articles like `/YYYY/MM/DD/title`)
+
+You can force the mode explicitly with `--news` (on) or `--no-news` (off).
+
+**What news mode does.** Outputs go to `news_outputs/<slug>/` instead of `site_outputs/<slug>/`. Same layout inside — `network.html`, `5_nodes.json`, `5_edges.json`, etc. The single pipeline also accepts `--news` directly:
+
+```bash
+python3 site_pipeline.py URL --news
+```
+
+**Recommended flags for news.** Articles are single pages, so `--crawl 0 --max-pages 1`. The batch will warn (with a 5-second pause) if you run a detected news batch with company-style crawl flags.
+
+```bash
+python3 site_pipeline_batch.py news.json --crawl 0 --max-pages 1
+```
+
+`merge_all.py` walks `news_outputs/` too, so news graphs combine with PDFs and sites at merge time.
+
 ## Auto-resume
 
-Three levels, all automatic - no flag needed:
+Four levels, all automatic - no flag needed:
 
 1. Batch skips docs with `network.html`.
 2. Single pipeline errors out if `network.html` exists (unless `--force` or skip flag).
@@ -99,6 +126,9 @@ python3 pdf_pipeline.py singapore25.pdf --force -i
 
 # Redo a site without re-crawling
 python3 site_pipeline.py https://psiquantum.com/ --force --skip-crawl
+
+# Process a batch of news articles (single page each, no link-following)
+python3 site_pipeline_batch.py news.json --crawl 0 --max-pages 1
 
 # Redo everything in the batch
 python3 pdf_pipeline_batch.py --workers 4 --force

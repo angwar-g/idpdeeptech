@@ -82,7 +82,7 @@ def site_stem(url: str) -> str:
     path = parsed.path.strip("/")
     if path:
         path_slug = re.sub(r"[^a-z0-9]+", "_", path.lower()).strip("_")
-                # Cap path component at ~80 chars to keep total folder paths sane on
+        # Cap path component at ~80 chars to keep total folder paths sane on
         # filesystems that limit them (Windows enforces MAX_PATH=260 on full
         # absolute paths). When we truncate, append a short URL hash so two
         # URLs that share a long prefix don't collapse to the same slug
@@ -91,7 +91,6 @@ def site_stem(url: str) -> str:
             import hashlib
             digest = hashlib.md5(url.encode()).hexdigest()[:8]
             path_slug = path_slug[:71].rstrip("_") + "_" + digest
-            
         slug = f"{host_slug}_{path_slug}" if host_slug else path_slug
     else:
         slug = host_slug
@@ -154,6 +153,14 @@ def main():
              "Without this flag, an existing network.html triggers an early exit "
              "to avoid accidentally redoing expensive work (and re-crawling).",
     )
+    parser.add_argument(
+        "--news", action="store_true",
+        help="Treat the URL as a news article rather than a company website. "
+             "Output is written to news_outputs/<slug>/ instead of "
+             "site_outputs/<slug>/. Useful when batch-processing article URLs "
+             "to keep them separate from company-site outputs. Has no effect "
+             "when --out-dir is set (caller controls path directly).",
+    )
     args = parser.parse_args()
 
     # Implication chain: -i -> -s -> --skip-crawl.
@@ -178,7 +185,8 @@ def main():
         if not out_dir.is_absolute():
             out_dir = root / args.out_dir
     else:
-        out_dir = root / "site_outputs" / site_stem(args.url)
+        parent_dir = "news_outputs" if args.news else "site_outputs"
+        out_dir = root / parent_dir / site_stem(args.url)
 
     out_dir.mkdir(parents=True, exist_ok=True)
 

@@ -86,6 +86,18 @@ def main():
              "Cloudflare Workers AI can handle ~4-8 cheaply; with local Ollama on "
              "a laptop, keep this at 1 unless you have a beefy GPU.",
     )
+    parser.add_argument(
+        "--news", dest="news_mode", action="store_true", default=None,
+        help="Treat URLs as news articles. Routes outputs to news_outputs/ "
+             "instead of site_outputs/, and forwards --news to each per-doc "
+             "pipeline call. Auto-enabled if the config file looks like a news "
+             "batch (filename contains news/article/post, OR most URLs have "
+             "deep paths). Pass --no-news to force off.",
+    )
+    parser.add_argument(
+        "--no-news", dest="news_mode", action="store_false",
+        help="Force news mode off (overrides auto-detection).",
+    )
     args = parser.parse_args()
 
     if args.resume and args.force:
@@ -121,15 +133,15 @@ def main():
     if not isinstance(companies, dict):
         sys.exit(f"Error: {config_path} must contain a JSON object keyed by company name.")
 
-    # Detect article/news batches so we can warn if the user is running them
-    # with company-style crawl settings. Two signals combined:
+    # Detect article/news batches so we can (a) route output to news_outputs/
+    # instead of site_outputs/, and (b) warn if the user is running with
+    # company-style crawl settings. Two signals combined:
     #   (a) filename hint: contains "news", "article", or "post"
     #   (b) content heuristic: most URLs have deep paths (3+ segments), which
     #       is typical of article URLs (/YYYY/MM/DD/title) but not company
     #       homepages.
-    # Either signal alone is enough to suspect a news batch. The warning is
-    # advisory only -- the user can ignore it and continue, since they may
-    # have a legitimate reason (e.g. a config of deep-linked product pages).
+    # Either signal alone is enough to suspect a news batch.
+    # User can override with --news (force on) or --no-news (force off).
     name_lower = config_path.stem.lower()
     looks_like_news_by_name = any(
         tok in name_lower for tok in ("news", "article", "post")
@@ -151,8 +163,15 @@ def main():
             pass
     deep_path_ratio = (deep_path_count / sampled) if sampled else 0.0
     looks_like_news_by_content = deep_path_ratio >= 0.5
+    auto_detected_news = looks_like_news_by_name or looks_like_news_by_content
 
-    if looks_like_news_by_name or looks_like_news_by_content:
+    # Resolve news mode: explicit CLI flag wins; otherwise auto-detect.
+    if args.news_mode is None:
+        is_news_batch = auto_detected_news
+    else:
+        is_news_batch = args.news_mode
+
+    if auto_detected_news:
         signals = []
         if looks_like_news_by_name:
             signals.append(f"filename contains a news/article keyword ({config_path.name!r})")
@@ -161,23 +180,37 @@ def main():
                 f"{deep_path_count}/{sampled} URLs have deep paths "
                 f"({deep_path_ratio:.0%}, typical of articles)"
             )
-        intended = "--crawl 0 --max-pages 1"
-        actual = f"--crawl {args.crawl} --max-pages {args.max_pages}"
-        if actual.strip() != intended.strip():
+        if is_news_batch:
+            # News mode is on (either auto or explicit). Warn only if the
+            # user's crawl flags don't match the news-batch convention.
+            intended = "--crawl 0 --max-pages 1"
+            actual = f"--crawl {args.crawl} --max-pages {args.max_pages}"
             print(
-                "\n" + "!" * 72 + "\n"
-                "WARNING: this looks like a news/article batch:\n"
-                + "\n".join(f"  - {s}" for s in signals) + "\n\n"
-                f"You are running with:  {actual}\n"
-                f"News batches usually want:  {intended}  (one page per article, no link-following)\n\n"
-                "Press Ctrl-C now to abort and re-run with the right flags, or wait 5 seconds to continue.\n"
-                + "!" * 72
+                f"\nDetected news/article batch (output -> news_outputs/):\n"
+                + "\n".join(f"  - {s}" for s in signals)
             )
-            try:
-                import time as _time
-                _time.sleep(5)
-            except KeyboardInterrupt:
-                sys.exit("Aborted by user.")
+            if actual.strip() != intended.strip():
+                print(
+                    "\n" + "!" * 72 + "\n"
+                    f"WARNING: news batch but running with:  {actual}\n"
+                    f"News batches usually want:  {intended}  (one page per article, no link-following)\n\n"
+                    "Press Ctrl-C now to abort and re-run with the right flags, or wait 5 seconds to continue.\n"
+                    + "!" * 72
+                )
+                try:
+                    import time as _time
+                    _time.sleep(5)
+                except KeyboardInterrupt:
+                    sys.exit("Aborted by user.")
+        else:
+            # Auto-detect said news but user passed --no-news.
+            print(
+                f"\nNote: this config looks like a news batch but --no-news was passed, "
+                f"so output goes to site_outputs/ as usual.\n"
+            )
+
+    # Output root for this batch.
+    output_root_name = "news_outputs" if is_news_batch else "site_outputs"
 
     # Optional filter.
     if args.only:
@@ -201,8 +234,8 @@ def main():
     # Mirror all subsequent stdout/stderr to a batch log so we can review the
     # full terminal output later. New file per run (timestamped) -- no
     # appending to one giant file. The per-doc logs (run.log inside each
-    # site_outputs/<slug>/) are still written by the worker pipelines.
-    batch_logs_dir = root / "site_outputs" / "batch_logs"
+    # <root>/<slug>/) are still written by the worker pipelines.
+    batch_logs_dir = root / output_root_name / "batch_logs"
     batch_logs_dir.mkdir(parents=True, exist_ok=True)
     batch_log_path = batch_logs_dir / f"batch_{time.strftime('%Y%m%d_%H%M%S')}.log"
 
@@ -232,9 +265,13 @@ def main():
     # remember what flags this run used.
     print()
     print("=" * 72)
-    print(f"SITE BATCH RUN  {time.strftime('%Y-%m-%d %H:%M:%S')}")
+    if is_news_batch:
+        print(f"NEWS BATCH RUN  {time.strftime('%Y-%m-%d %H:%M:%S')}")
+    else:
+        print(f"SITE BATCH RUN  {time.strftime('%Y-%m-%d %H:%M:%S')}")
     print("=" * 72)
     print(f"  Config file:    {config_path}")
+    print(f"  Output root:    {output_root_name}/")
     print(f"  Documents:      {total}")
     print(f"  Workers:        {args.workers}")
     print(f"  Crawl depth:    {args.crawl}")
@@ -245,8 +282,8 @@ def main():
     print(f"  Batch log:      {batch_log_path}")
     print("=" * 72)
     print()
-    
-    failures_log = root / "site_outputs" / "batch_failures.log"
+
+    failures_log = root / output_root_name / "batch_failures.log"
     failures_log.parent.mkdir(parents=True, exist_ok=True)
     with failures_log.open("a", encoding="utf-8") as f:
         f.write(f"\n=== Batch run started {time.strftime('%Y-%m-%d %H:%M:%S')} "
@@ -268,7 +305,7 @@ def main():
             continue
 
         slug = site_stem(website_url)
-        out_dir = root / "site_outputs" / slug
+        out_dir = root / output_root_name / slug
 
         if (out_dir / "network.html").exists() and not args.force:
             print(f"[{idx}/{total}] {name}: skipping (already done; pass --force to redo)")
@@ -296,6 +333,8 @@ def main():
         ]
         if args.force:
             cmd.append("--force")
+        if is_news_batch:
+            cmd.append("--news")
         try:
             subprocess.run(cmd, check=True)
             return job["name"], None

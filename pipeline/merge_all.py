@@ -126,6 +126,16 @@ def find_output_pairs(root: Path) -> list[tuple[Path, Path, str]]:
                     if n.exists() and e.exists():
                         pairs.append((n, e, f"site/{sub.name}"))
 
+    # News articles: same layout as site_outputs but a separate top folder.
+    news_root = root / "news_outputs"
+    if news_root.exists():
+        for sub in sorted(news_root.iterdir()):
+            if sub.is_dir():
+                n = sub / "5_nodes.json"
+                e = sub / "5_edges.json"
+                if n.exists() and e.exists():
+                    pairs.append((n, e, f"news/{sub.name}"))
+
     return pairs
 
 
@@ -348,7 +358,7 @@ def main():
     pairs = find_output_pairs(root)
     if not pairs:
         sys.exit(
-            "No 5_nodes.json / 5_edges.json pairs found under pdf_outputs/ or site_outputs/.\n"
+            "No 5_nodes.json / 5_edges.json pairs found under pdf_outputs/, site_outputs/, or news_outputs/.\n"
             "Run the per-document pipelines first."
         )
 
