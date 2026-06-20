@@ -34,7 +34,7 @@ from pathlib import Path
 
 # Reuse the URL-based slug helper from the single pipeline. Both entry points
 # (single and batch) now produce the same folder for the same URL.
-from site_pipeline import site_stem
+from site_pipeline import site_stem, DEFAULT_CRAWL_DEPTH, DEFAULT_MAX_PAGES
 
 
 def is_linkedin_url(url: str) -> bool:
@@ -44,6 +44,20 @@ def is_linkedin_url(url: str) -> bool:
 def normalize_for_match(text: str) -> str:
     """Lowercase + strip non-alnum, for tolerant --only matching."""
     return re.sub(r"[^a-z0-9]+", "", text.lower())
+
+
+_NEWS_KEY_DATE_RE = re.compile(r"^\s*(\d{4}-\d{2}-\d{2})\b")
+
+
+def extract_date_from_key(key: str) -> str:
+    """Pull an ISO date prefix out of a news.json key.
+
+    News keys are formatted like:
+        "2018-11-09 - Princeton Researchers Discover ... [d9cb1dc0]"
+    Returns "2018-11-09" or "" if no date prefix found.
+    """
+    m = _NEWS_KEY_DATE_RE.match(key)
+    return m.group(1) if m else ""
 
 
 def main():
@@ -56,12 +70,12 @@ def main():
         help="Path to companies JSON file (default: companies.json in site_input/).",
     )
     parser.add_argument(
-        "--crawl", "-c", type=int, default=3,
-        help="Crawl depth passed to each site_pipeline run (default 3).",
+        "--crawl", "-c", type=int, default=DEFAULT_CRAWL_DEPTH,
+        help=f"Crawl depth passed to each site_pipeline run (default {DEFAULT_CRAWL_DEPTH}).",
     )
     parser.add_argument(
-        "--max-pages", type=int, default=20,
-        help="Max pages per company (default 20).",
+        "--max-pages", type=int, default=DEFAULT_MAX_PAGES,
+        help=f"Max pages per company (default {DEFAULT_MAX_PAGES}).",
     )
     parser.add_argument(
         "--only", nargs="+", default=None,
@@ -319,7 +333,51 @@ def main():
             "slug": slug,
             "url": website_url,
             "out_dir": out_dir,
+            "date": extract_date_from_key(name) if is_news_batch else "",
         })
+
+    # For news batches, write a manifest mapping URL -> {date, title, slug} so
+    # merge_all.py can join article metadata (especially date) onto each node
+    # and edge at merge time. Date stays out of the per-doc extraction path --
+    # it's metadata about the article, not about the actors/interactions
+    # inside it. Manifest goes next to the per-doc folders so it lives or dies
+    # with the news_outputs/ tree.
+    if is_news_batch:
+        manifest_path = root / output_root_name / "manifest.json"
+        # Merge with any existing manifest so multiple batch runs accumulate
+        # rather than clobbering each other.
+        if manifest_path.exists():
+            try:
+                existing = json.loads(manifest_path.read_text(encoding="utf-8"))
+            except Exception:
+                existing = {}
+        else:
+            existing = {}
+        for job in plan:
+            existing[job["url"]] = {
+                "date": job["date"],
+                "title": job["name"],
+                "slug": job["slug"],
+            }
+        # Also include already-completed docs that were skipped above, so the
+        # manifest reflects everything the news_outputs/ tree contains, not
+        # just what this run processed.
+        for name, links in companies.items():
+            url = (links or {}).get("website_link", "").strip()
+            if not url or url in existing:
+                continue
+            if is_linkedin_url(url):
+                continue
+            existing[url] = {
+                "date": extract_date_from_key(name),
+                "title": name,
+                "slug": site_stem(url),
+            }
+        manifest_path.write_text(
+            json.dumps(existing, indent=2, ensure_ascii=False),
+            encoding="utf-8",
+        )
+        print(f"Wrote {manifest_path} ({len(existing)} articles)")
 
     def run_one(job: dict) -> tuple[str, str | None]:
         """Run site_pipeline.py for one company. Returns (name, error_or_None)."""

@@ -76,6 +76,8 @@ Skips docs with existing `network.html` by default. Walks `pdf_input/X.pdf` or r
 
 Skip flags (`-s`, `-i`, `--skip-crawl`) are **single-pipeline only** - not on the batch.
 
+To change `--crawl` / `--max-pages` defaults globally, edit `DEFAULT_CRAWL_DEPTH` and `DEFAULT_MAX_PAGES` at the top of `site_pipeline.py`. The batch one and `crawl_site.py` import from there.
+
 ## News batches
 
 A "news batch" is a config of article URLs (e.g. quantum-news articles) rather than company homepages. They get different default behaviour because each URL is a single self-contained page, not the entry point of a site to crawl.
@@ -87,7 +89,7 @@ A "news batch" is a config of article URLs (e.g. quantum-news articles) rather t
 
 You can force the mode explicitly with `--news` (on) or `--no-news` (off).
 
-**What news mode does.** Outputs go to `news_outputs/<slug>/` instead of `site_outputs/<slug>/`. Same layout inside — `network.html`, `5_nodes.json`, `5_edges.json`, etc. The single pipeline also accepts `--news` directly:
+**What news mode does.** Outputs go to `news_outputs/<slug>/` instead of `site_outputs/<slug>/`. Same layout inside - `network.html`, `5_nodes.json`, `5_edges.json`, etc. The single pipeline also accepts `--news` directly:
 
 ```bash
 python3 site_pipeline.py URL --news

@@ -385,6 +385,45 @@ def main():
     merged_nodes, diagnostics = merge_nodes(all_nodes, rewrites)
     merged_edges = merge_edges(all_edges, rewrites, merged_nodes)
 
+    # Load the news manifest (URL -> {date, title, slug}) if it exists, and
+    # join article dates onto each node and edge whose source_document matches
+    # a news URL. Done at merge time rather than extraction time so the date
+    # stays out of the per-doc pipeline; it's metadata about the article, not
+    # about the extracted actors/interactions inside it.
+    news_manifest_path = root / "news_outputs" / "manifest.json"
+    if news_manifest_path.exists():
+        try:
+            news_manifest = json.loads(news_manifest_path.read_text(encoding="utf-8"))
+        except Exception as e:
+            print(f"WARNING: could not read {news_manifest_path}: {e}")
+            news_manifest = {}
+    else:
+        news_manifest = {}
+
+    if news_manifest:
+        url_to_date = {
+            url: meta.get("date", "") for url, meta in news_manifest.items()
+        }
+        # Edges have a single source_document -> single date.
+        for e in merged_edges:
+            sd = e.get("source_document", "")
+            if sd in url_to_date and url_to_date[sd]:
+                e["source_date"] = url_to_date[sd]
+        # Nodes have source_documents (plural -- merged across articles). Join
+        # the union of dates so the viz can filter "actor appears in any
+        # article in this range" or "actor's earliest mention is...".
+        for n in merged_nodes:
+            sds = n.get("source_documents") or []
+            dates = sorted({url_to_date[sd] for sd in sds if sd in url_to_date and url_to_date[sd]})
+            if dates:
+                n["source_dates"] = dates
+                n["earliest_date"] = dates[0]
+                n["latest_date"] = dates[-1]
+        joined_edges = sum(1 for e in merged_edges if "source_date" in e)
+        joined_nodes = sum(1 for n in merged_nodes if "source_dates" in n)
+        print(f"\nJoined article dates from news manifest: "
+              f"{joined_nodes} nodes, {joined_edges} edges tagged.")
+
     print(f"\nAfter merge: {len(merged_nodes)} unique actors, {len(merged_edges)} unique edges.")
 
     if diagnostics["rewrites_applied"]:

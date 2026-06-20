@@ -34,6 +34,13 @@ from urllib.parse import urlparse
 from pipeline_logging import open_run_log, close_run_log, log_print, run_subprocess_logged
 
 
+# Single source of truth for crawl tuning. Imported by site_pipeline_batch.py
+# and crawl_site.py so all three CLIs share the same defaults. Change values
+# here and all entry points pick them up.
+DEFAULT_CRAWL_DEPTH = 3
+DEFAULT_MAX_PAGES = 20
+
+
 def site_stem(url: str) -> str:
     """Derive an output folder name from a URL.
 
@@ -110,12 +117,12 @@ def main():
     )
     parser.add_argument("url", help="Seed URL to crawl, e.g. https://www.psiquantum.com")
     parser.add_argument(
-        "--crawl", "-c", type=int, default=3,
-        help="Crawl depth (default 3). Higher = follows more internal links.",
+        "--crawl", "-c", type=int, default=DEFAULT_CRAWL_DEPTH,
+        help=f"Crawl depth (default {DEFAULT_CRAWL_DEPTH}). Higher = follows more internal links.",
     )
     parser.add_argument(
-        "--max-pages", type=int, default=20,
-        help="Max pages to crawl (default 20).",
+        "--max-pages", type=int, default=DEFAULT_MAX_PAGES,
+        help=f"Max pages to crawl (default {DEFAULT_MAX_PAGES}).",
     )
     parser.add_argument(
         "--skip-crawl", action="store_true",
