@@ -15,6 +15,8 @@ from urllib.parse import urlparse, urlunparse
 from crawl4ai import AsyncWebCrawler, BrowserConfig, CrawlerRunConfig, CacheMode
 from crawl4ai.deep_crawling import BFSDeepCrawlStrategy
 
+from site_pipeline import DEFAULT_CRAWL_DEPTH, DEFAULT_MAX_PAGES
+
 OUT_DIR = Path("crawl_output")
 SKIP_PATHS = ["/cart", "/privacy", "/terms"]
 
@@ -85,12 +87,12 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("url", help="Seed URL to crawl")
     parser.add_argument(
-        "--crawl", "-c", type=int, default=3,
-        help="Max crawl depth (default 3)",
+        "--crawl", "-c", type=int, default=DEFAULT_CRAWL_DEPTH,
+        help=f"Max crawl depth (default {DEFAULT_CRAWL_DEPTH})",
     )
     parser.add_argument(
-        "--max-pages", type=int, default=20,
-        help="Max pages to crawl (default 20)",
+        "--max-pages", type=int, default=DEFAULT_MAX_PAGES,
+        help=f"Max pages to crawl (default {DEFAULT_MAX_PAGES})",
     )
     args = parser.parse_args()
 

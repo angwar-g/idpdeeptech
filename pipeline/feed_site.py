@@ -298,7 +298,7 @@ async def main():
 
         for chunk_idx, chunk in enumerate(chunks, start=1):
             print(
-                f"Extracting: {url} "
+                f"Extracting actors: {url} "
                 f"({file_idx}/{total_files}), "
                 f"chunk {chunk_idx}/{total_chunks}"
             )

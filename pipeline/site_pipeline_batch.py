@@ -34,7 +34,7 @@ from pathlib import Path
 
 # Reuse the URL-based slug helper from the single pipeline. Both entry points
 # (single and batch) now produce the same folder for the same URL.
-from site_pipeline import site_stem
+from site_pipeline import site_stem, DEFAULT_CRAWL_DEPTH, DEFAULT_MAX_PAGES
 
 
 def is_linkedin_url(url: str) -> bool:
@@ -56,12 +56,12 @@ def main():
         help="Path to companies JSON file (default: companies.json in site_input/).",
     )
     parser.add_argument(
-        "--crawl", "-c", type=int, default=3,
-        help="Crawl depth passed to each site_pipeline run (default 3).",
+        "--crawl", "-c", type=int, default=DEFAULT_CRAWL_DEPTH,
+        help=f"Crawl depth passed to each site_pipeline run (default {DEFAULT_CRAWL_DEPTH}).",
     )
     parser.add_argument(
-        "--max-pages", type=int, default=20,
-        help="Max pages per company (default 20).",
+        "--max-pages", type=int, default=DEFAULT_MAX_PAGES,
+        help=f"Max pages per company (default {DEFAULT_MAX_PAGES}).",
     )
     parser.add_argument(
         "--only", nargs="+", default=None,

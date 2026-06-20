@@ -380,7 +380,7 @@ async def main():
 
             for chunk_idx, chunk in enumerate(chunks, start=1):
                 print(
-                    f"Extracting: {pdf_path.name}, "
+                    f"Extracting actors: {pdf_path.name}, "
                     f"page {page_num}/{total_pages}, "
                     f"chunk {chunk_idx}/{total_chunks}"
                 )
