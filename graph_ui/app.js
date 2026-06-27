@@ -6,6 +6,14 @@ let actorSelect = null;
 let yearSelect = null;
 
 const FULL_NETWORK_SUMMARY = "Showing connected network without isolated actors.";
+const HELIX_TYPES = [
+  { label: "Government", className: "government" },
+  { label: "Industry", className: "industry" },
+  { label: "Academia", className: "academia" },
+  { label: "Intermediary", className: "intermediary" },
+  { label: "Civil Society", className: "civil" },
+  { label: "Unknown", className: "unknown" }
+];
 
 Promise.all([
   fetch("../pipeline/merged_outputs/combined_nodes.json").then(assertOk).then(r => r.json()),
@@ -15,8 +23,6 @@ Promise.all([
     allNodes = nodes;
     allEdges = edges;
 
-    document.getElementById("totalNodeCount").textContent = `${nodes.length.toLocaleString()} total nodes`;
-    document.getElementById("totalEdgeCount").textContent = `${edges.length.toLocaleString()} total edges`;
     document.getElementById("totalNodeMetric").textContent = nodes.length.toLocaleString();
     document.getElementById("totalEdgeMetric").textContent = edges.length.toLocaleString();
 
@@ -395,6 +401,7 @@ function applyFilters() {
   updateFilterSummary(
     filteredNodes.length,
     filteredEdges.length,
+    filteredNodes,
     filteredNodes.length > 1500
       ? "Showing filtered graph with static layout for performance."
       : "Showing filtered graph with static layout."
@@ -431,7 +438,12 @@ function showFullNetwork() {
     usePhysics: false
   });
 
-  updateFilterSummary(connectedGraph.nodes.length, connectedGraph.edges.length, FULL_NETWORK_SUMMARY);
+  updateFilterSummary(
+    connectedGraph.nodes.length,
+    connectedGraph.edges.length,
+    connectedGraph.nodes,
+    FULL_NETWORK_SUMMARY
+  );
 }
 
 function getConnectedGraph(nodes, edges) {
@@ -452,10 +464,45 @@ function getConnectedGraph(nodes, edges) {
   };
 }
 
-function updateFilterSummary(nodeCount, edgeCount, message = "Showing graph.") {
+function updateFilterSummary(nodeCount, edgeCount, visibleNodes = [], message = "Showing graph.") {
   document.getElementById("visibleNodeCount").textContent = nodeCount.toLocaleString();
   document.getElementById("visibleEdgeCount").textContent = edgeCount.toLocaleString();
   document.getElementById("filterSummary").textContent = message;
+  renderHelixLegend(visibleNodes);
+}
+
+function renderHelixLegend(nodes) {
+  const legend = document.getElementById("helixLegend");
+  if (!legend) return;
+
+  const counts = new Map(HELIX_TYPES.map(type => [type.label, 0]));
+
+  nodes.forEach(node => {
+    const helix = HELIX_TYPES.some(type => type.label === node.helix)
+      ? node.helix
+      : "Unknown";
+    counts.set(helix, (counts.get(helix) || 0) + 1);
+  });
+
+  legend.innerHTML = "";
+
+  HELIX_TYPES.forEach(type => {
+    const item = document.createElement("div");
+    item.className = "topbar-legend-item";
+
+    const dot = document.createElement("span");
+    dot.className = `legend-dot ${type.className}`;
+
+    const label = document.createElement("span");
+    label.className = "topbar-legend-label";
+    label.textContent = type.label;
+
+    const count = document.createElement("strong");
+    count.textContent = (counts.get(type.label) || 0).toLocaleString();
+
+    item.append(dot, label, count);
+    legend.appendChild(item);
+  });
 }
 
 function drawGraph(nodes, edges, settings = {}) {

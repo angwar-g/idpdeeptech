@@ -395,22 +395,46 @@ main {
   justify-content: space-between;
   min-height: 72px;
   padding: 0 2px;
+  gap: 18px;
 }
 
-.topbar-stats {
+.topbar-legend {
   display: flex;
-  gap: 10px;
+  flex-wrap: nowrap;
   align-items: center;
+  justify-content: flex-end;
+  gap: 6px;
+  flex: 1;
+  min-width: 0;
 }
 
-.topbar-stats span {
-  padding: 9px 12px;
-  color: #cfe4ff;
-  font-size: 13px;
+.topbar-legend-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  min-height: 32px;
+  padding: 6px 9px;
+  color: #d8e9ff;
+  font-size: clamp(10px, 0.8vw, 11px);
   font-weight: 700;
   border-radius: 999px;
   background: rgba(255, 255, 255, 0.065);
   border: 1px solid var(--border-soft);
+}
+
+.topbar-legend-item .legend-dot {
+  flex: 0 0 auto;
+}
+
+.topbar-legend-label {
+  white-space: nowrap;
+}
+
+.topbar-legend-item strong {
+  color: #ffffff;
+  font-size: clamp(10px, 0.8vw, 11px);
+  font-weight: 850;
+  line-height: 1;
 }
 
 .graph-card {
@@ -532,6 +556,17 @@ main {
 
   main {
     height: 75vh;
+  }
+
+  .topbar {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .topbar-legend {
+    justify-content: flex-start;
+    max-width: 100%;
   }
 }
 
