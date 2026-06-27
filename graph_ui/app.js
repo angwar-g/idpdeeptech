@@ -540,12 +540,7 @@ function drawGraph(nodes, edges, settings = {}) {
       id: node.canonical_actor_key,
       label: node.entity || node.canonical_actor_key,
       ...staticPosition,
-      title: `
-        <b>${escapeHtml(node.entity || node.canonical_actor_key)}</b><br>
-        Helix: ${escapeHtml(node.helix || "Unknown")}<br>
-        Category: ${escapeHtml(node.category || "Unknown")}<br>
-        Sources: ${sourceCount}${dateRange ? `<br>Range: ${escapeHtml(dateRange)}` : ""}
-      `,
+      title: createNodeTooltipText(node, sourceCount, dateRange),
       color: {
         background: getHelixColor(node.helix),
         border: "rgba(255,255,255,0.72)",
@@ -772,8 +767,9 @@ function drawGraph(nodes, edges, settings = {}) {
       document.getElementById("details").innerHTML = `
         <b>${escapeHtml(node.label)}</b><br><br>
         <b>Helix:</b> ${escapeHtml(raw.helix || "Unknown")}<br>
-        <b>Category:</b> ${escapeHtml(raw.category || "Unknown")}<br>
-        <b>Canonical key:</b> ${escapeHtml(node.id)}<br>
+        <b>Sphere:</b> ${escapeHtml(raw.sphere || "Unknown")}<br>
+        <b>R&amp;D:</b> ${escapeHtml(formatRnDValue(raw.r_and_d))}<br>
+        <b>Category:</b> ${escapeHtml(formatTitleCase(raw.category || "Unknown"))}<br>
         ${dateRange ? `<b>Date range:</b> ${escapeHtml(dateRange)}<br>` : ""}<br>
         <b>Sources (${(raw.source_documents || []).length}):</b><br>
         ${formatSourceList(raw.source_documents || [])}
@@ -1105,7 +1101,9 @@ function fallbackNode(id, label, isFullNetwork = false, index = 0, totalNodes = 
     id,
     label: label || id,
     ...staticPosition,
-    title: `<b>${escapeHtml(label || id)}</b><br>Node inferred from edge`,
+    title: createTooltipText(label || id, [
+      ["Record type", "Node inferred from edge"]
+    ]),
     color: {
       background: "#9aa4b2",
       border: "rgba(255,255,255,0.65)"
@@ -1120,6 +1118,49 @@ function fallbackNode(id, label, isFullNetwork = false, index = 0, totalNodes = 
       strokeColor: "#06101f"
     }
   };
+}
+
+function createNodeTooltipText(node, sourceCount, dateRange) {
+  const rows = [
+    ["Helix", node.helix || "Unknown"],
+    ["Sphere", node.sphere || "Unknown"],
+    ["R&D", formatRnDValue(node.r_and_d)],
+    ["Category", formatTitleCase(node.category || "Unknown")],
+    ["Sources", sourceCount.toLocaleString()]
+  ];
+
+  if (dateRange) {
+    rows.push(["Date range", dateRange]);
+  }
+
+  return createTooltipText(node.entity || node.canonical_actor_key, rows);
+}
+
+function createTooltipText(title, rows) {
+  const lines = [title || "Unknown actor", ""];
+
+  rows.forEach(([label, value]) => {
+    lines.push(`${label}: ${value || "Unknown"}`);
+  });
+
+  return lines.join("\n");
+}
+
+function formatTitleCase(value) {
+  return String(value || "")
+    .split(/\s+/)
+    .filter(Boolean)
+    .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+    .join(" ");
+}
+
+function formatRnDValue(value) {
+  const normalized = String(value || "").trim().toLowerCase();
+
+  if (normalized === "r&d") return "True";
+  if (normalized === "assessed" || normalized === "non-r&d") return "False";
+
+  return "Not specified";
 }
 
 function getNodeSize(node) {
@@ -1144,8 +1185,15 @@ function getHelixColor(helix) {
 function formatSourceList(sources) {
   if (!sources.length) return "None listed";
 
-  return sources.slice(0, 6).map(source => escapeHtml(source)).join("<br>") +
-    (sources.length > 6 ? `<br>+ ${sources.length - 6} more` : "");
+  const visibleSources = sources.slice(0, 6)
+    .map(source => `<div class="source-line">${escapeHtml(source)}</div>`)
+    .join("");
+
+  const remaining = sources.length > 6
+    ? `<div class="source-line source-line-more">+ ${sources.length - 6} more</div>`
+    : "";
+
+  return `<div class="source-lines">${visibleSources}${remaining}</div>`;
 }
 
 function escapeHtml(value) {
