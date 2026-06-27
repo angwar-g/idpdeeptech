@@ -137,11 +137,32 @@
   ],
   "input_node_records": 6899,
   "input_edge_records": 5134,
-  "output_unique_actors": 5073,
-  "output_unique_edges": 2301,
+  "output_unique_actors": 4903,
+  "output_unique_edges": 2136,
   "rewrites_applied": {
-    "japan25.pdf: ^(the )?government$ -> Japan Government": 1,
-    "japan25.pdf: ^we$ -> Japan": 1
+    "*: ^(.{2,}?),? (ltd\\.?|limited|gmbh|llc|inc\\.?|incorporated|corp\\.?|corporation|s\\.a\\.|sas|s\\.r\\.l\\.|ag|kg|kgaa|pty ltd|pte ltd|bv|nv|oy|ab|spa|plc)$ -> $1": 166,
+    "per-source rewrite chain": 4,
+    "*: ^microsoft (365|advertising|azure|bing|build|clarity|copilot|designer|developer|developer network|developer network \\(msdn\\)|edge|entra id|fabric|family safety|foundry|graph|ireland|ireland operations|learn|loop|m12|marketplace|office|office 365|office mobile|onedrive|onenote|outlook|places|power apps|power automate|power bi|power platform|powerpoint|sharepoint|start|store|teams|to do|viva|word|windows|excel|affiliates)$ -> Microsoft": 30,
+    "*: ^google (inc\\.?|llc|cloud|developers|doubleclick|analytics|search|workspace|maps|chrome|drive|gmail|advertising|ads|domains|workspace marketplace|store|recaptcha)$ -> Google": 18,
+    "*: ^amazon (web services|web services, inc\\.?|web services \\(aws\\)|web services emea sarl|web services \\(aws\\) marketplace solutions)$ -> AWS": 11,
+    "*: ^honeywell (international|international inc\\.?|connected enterprise)$ -> Honeywell": 2,
+    "*: ^microsoft corporation$ -> Microsoft": 2,
+    "*: ^intel (corporation|inc\\.?|capital|foundation|ignite|labs|geti|automotive|data center group|inside®|news room|pride|vitality|core™|core™ ultra|developer catalog|nuc|partner alliance|partner showcase|server m50fcp family|trust authority|xeon®|® core™|® core™ ultra|® developer catalog|® nuc|® partner alliance|® partner showcase|® server m50fcp family|® trust authority|® xeon®)$ -> Intel": 13,
+    "*: ^fujitsu (limited|group|japan limited|corp\\.?|corporation|laboratories|research|distinguished engineers|sports|accelerator|blog|cross culture center|technology park|uvance|uvance kawasaki tower|ventures)$ -> Fujitsu": 16,
+    "*: ^ibm (corp\\.?|corporation|inc\\.?|corporation \\(ibm\\)|business partners|champions|developer|cloud catalog|cloud support team|cio office|center for cloud training|cloud center for training enterprise subscription administrators|community advocacy|consulting|deutschland|education|fix central|granite\\.code|instana observability path|japan,?|learning individual subscription with coursera|partner|partner ecosystem|partner plus|partner plus program|partner portal|partner program|partnerplus|passport advantage|redbooks|skills network|support|support portal|sustainability software|techxchange community|techxchange event attendees|techxchange rewards program - formerly known as ibm learn 'n score program|technology|training|tutorials|user groups|verify|webinar series|bob)$ -> IBM": 24,
+    "*: ^amazon \\(amzn\\)$ -> Amazon": 1,
+    "*: ^thales group \\(epa:ho\\) \\(thales sa\\)$ -> Thales": 1,
+    "*: ^microsoft corp\\.?$ -> Microsoft": 1,
+    "*: ^siemens ag$ -> Siemens": 1
+  },
+  "actors_dropped": {
+    "*: ^universities$ -> [drop]": 19,
+    "*: academia -> [drop]": 7,
+    "*: ^(the )?federal government$ -> [drop_if_unmapped]": 3,
+    "*: ^(the )?parliament$ -> [drop_if_unmapped]": 2,
+    "*: ^(the )?government$ -> [drop_if_unmapped]": 2,
+    "*: ^(the )?ministry$ -> [drop_if_unmapped]": 1,
+    "*: ^us$ -> [drop]": 2
   },
   "helix_conflicts": [
     {
@@ -682,6 +703,7 @@
       ],
       "chosen_helix": "Industry",
       "source_documents": [
+        "https://eeroq.com/eeroq-co-founder-elected-to-wall-street-journal-board-of-directors-council",
         "https://eeroq.com/governor-j-b-pritzker-visits-eeroq-hq",
         "https://infleqtion.com/quantum-software",
         "https://www.quantum-machines.co/products/opx"
@@ -830,6 +852,29 @@
       ]
     },
     {
+      "entity": "Fujitsu",
+      "canonical_actor_key": "fujitsu",
+      "helixes": [
+        "Civil Society",
+        "Industry",
+        "Intermediary"
+      ],
+      "chosen_helix": "Industry",
+      "source_documents": [
+        "https://global.fujitsu/en-global/about",
+        "https://global.fujitsu/en-global/about/activities/startup",
+        "https://global.fujitsu/en-global/about/corporate/locations",
+        "https://global.fujitsu/en-global/country-selector",
+        "https://global.fujitsu/en-global/industries/finance",
+        "https://global.fujitsu/en-global/ir",
+        "https://global.fujitsu/en-global/pr",
+        "https://global.fujitsu/en-global/technology/research/quantum",
+        "https://q2b.qcware.com/conference/2025-tokyo",
+        "https://qunasys.com/en/articles/20260506",
+        "https://www.intel.com/content/www/us/en/newsroom/resources/press-kits-labs-day-2020.html"
+      ]
+    },
+    {
       "entity": "Gemini",
       "canonical_actor_key": "gemini",
       "helixes": [
@@ -917,36 +962,69 @@
       ]
     },
     {
-      "entity": "Google Analytics",
-      "canonical_actor_key": "google analytics",
+      "entity": "Google",
+      "canonical_actor_key": "google",
       "helixes": [
+        "Government",
         "Industry",
         "Unknown"
       ],
       "chosen_helix": "Industry",
       "source_documents": [
+        "Bavaria.pdf",
+        "India25.pdf",
+        "Luis_Germany23.pdf",
+        "Luis_Ireland23.pdf",
+        "Luis_Japan22.pdf",
+        "SaudiArabia19.pdf",
+        "SouthAfrica21.pdf",
+        "Turkey.pdf",
+        "https://alice-bob.com/blog/alice-bob-2030-roadmap-to-useful-quantum-computers",
+        "https://alice-bob.com/blog/not-all-logical-qubits-are-created-equal-heres-how-to-benchmark-them",
         "https://alice-bob.com/publications",
+        "https://atom-computing.com/quantum-error-correction-with-toric-code",
+        "https://eleqtron.com/datenschutzerklaerung",
+        "https://go.microsoft.com/fwlink",
+        "https://infleqtion.com/quantum-computing",
+        "https://ionq.com",
+        "https://iqm.tech",
+        "https://kiutra.com/projects/large-scale-magnetic-cooling",
+        "https://multiversecomputing.com/resources",
+        "https://newsroom.intel.com/data-center",
         "https://orcacomputing.com/cookies-policy",
+        "https://pqshield.com/team-pqshield",
+        "https://q-ctrl.com/our-work/defense",
+        "https://qaisec.eu/index.php/info",
+        "https://quantumai.google",
+        "https://quantumai.google/roadmap",
+        "https://quantumbase.com",
         "https://quantumcircuits.com/cookie-policy",
         "https://quantumcomputinginc.com/cookie-policy",
+        "https://quantummotion.com/glossary-terms/quantum-coherence",
+        "https://quantware.com/technology",
+        "https://seeqc.com/whitepaper",
+        "https://sparrowquantum.com/sparrow-core",
         "https://sparrowquantum.com/team-categories/leadership-team",
         "https://www.bluequbit.io/contact-us",
-        "https://www.rigetti.com/research"
-      ]
-    },
-    {
-      "entity": "Google Cloud",
-      "canonical_actor_key": "google cloud",
-      "helixes": [
-        "Government",
-        "Industry"
-      ],
-      "chosen_helix": "Industry",
-      "source_documents": [
-        "https://alice-bob.com/blog/alice-bob-2030-roadmap-to-useful-quantum-computers",
+        "https://www.bluequbit.io/google-quantum-computer",
+        "https://www.classiq.io/industries-collection/automotive",
         "https://www.intel.com/content/www/us/en/newsroom/resources/press-kits-labs-day-2020.html",
         "https://www.ionq.com/quantum-cloud",
         "https://www.pasqal.com/about-us/partners",
+        "https://www.pasqal.com/solutions/cloud",
+        "https://www.psiquantum.com/applications",
+        "https://www.qcware.com/news",
+        "https://www.qruise.com",
+        "https://www.quandela.com/ko",
+        "https://www.quantfi.us/legal/cookie-policy",
+        "https://www.quantum-machines.co/solutions/transducers",
+        "https://www.quera.com/about",
+        "https://www.rigetti.com/research",
+        "https://www.riverlane.com/deltakit",
+        "https://www.spinquanta.com/news-detail/spinq-quantum-computing-products-showcased-in-europe-and-southeast-asia20260605",
+        "https://www.spinquanta.com/quantum-computing-solutions/education",
+        "https://www.sqc.com.au/news",
+        "https://www.turing.com/blog/agi-advance-newsletter-66",
         "https://www.turing.com/press"
       ]
     },
@@ -961,6 +1039,19 @@
       "source_documents": [
         "https://alice-bob.com/blog/this-is-not-a-product-launch",
         "https://www.horizonquantum.com/product/core-capabilities/subroutines"
+      ]
+    },
+    {
+      "entity": "HQS Quantum Simulations",
+      "canonical_actor_key": "hqs quantum simulations",
+      "helixes": [
+        "Academia",
+        "Industry"
+      ],
+      "chosen_helix": "Industry",
+      "source_documents": [
+        "https://quantumsimulations.de",
+        "https://quantumsimulations.de/publications-1"
       ]
     },
     {
@@ -995,16 +1086,73 @@
       ]
     },
     {
-      "entity": "Hyperion Research, LLC",
-      "canonical_actor_key": "hyperion research llc",
+      "entity": "Hyperion Research",
+      "canonical_actor_key": "hyperion research",
       "helixes": [
         "Academia",
         "Industry"
       ],
       "chosen_helix": "Academia",
       "source_documents": [
+        "https://alice-bob.com/blog/beyond-moore-harnessing-quantum-for-the-next-era-of-hpc",
         "https://orcacomputing.com/orca-computing-leaps-forward-in-quantum-computing-race-with-acquisition",
+        "https://orcacomputing.com/orca-pt-2",
         "https://q2b.qcware.com/conference/2025-silicon-valley"
+      ]
+    },
+    {
+      "entity": "IBM",
+      "canonical_actor_key": "ibm",
+      "helixes": [
+        "Academia",
+        "Civil Society",
+        "Industry",
+        "Intermediary"
+      ],
+      "chosen_helix": "Industry",
+      "source_documents": [
+        "BadenWurttemberg.pdf",
+        "Bavaria.pdf",
+        "India25.pdf",
+        "Luis_Australia23.pdf",
+        "Luis_Germany18.pdf",
+        "Luis_Germany23.pdf",
+        "Luis_Ireland23.pdf",
+        "Luis_Italy25.pdf",
+        "Luis_UK23.pdf",
+        "SaudiArabia19.pdf",
+        "SouthAfrica21.pdf",
+        "https://community.ibm.com/community/user/community",
+        "https://developer.ibm.com",
+        "https://eeroq.com/joel-tendler-scholarship-winner",
+        "https://global.fujitsu/en-global",
+        "https://infleqtion.com/quantum-software",
+        "https://ionq.com",
+        "https://iqm.tech/careers/life-at-iqm",
+        "https://parityqc.com/parityqc-set-new-record-benchmark-using-ibm-quantum-computer-with-the-largest-quantum-fourier-transform-ever-reported",
+        "https://q-ctrl.com/our-work/quantum-computing",
+        "https://q2b.qcware.com/conference/2025-paris",
+        "https://qaisec.eu/index.php/sequre",
+        "https://quantum-south.com/blog/page/13",
+        "https://quantumbrilliance.com/about-us",
+        "https://quantummotion.com/category/news-alert",
+        "https://quantumsimulations.de/scientific-papers",
+        "https://quantware.com/news/intel-backs-quantware-a-dutch-startup-making-quantum-computing-chips",
+        "https://qunasys.com/en/articles/20260506",
+        "https://seeqc.com/about",
+        "https://strangeworks.com/heterogeneous-hybrid-compute",
+        "https://www.bluequbit.io/blog/quantum-financial-system",
+        "https://www.bqpsim.com",
+        "https://www.horizonquantum.com/technology/quantum-systems-and-integration",
+        "https://www.ibm.com/docs/en",
+        "https://www.ibm.com/products/cloud/support",
+        "https://www.ibm.com/products/expertlabs",
+        "https://www.ibm.com/services/technology-lifecycle-services",
+        "https://www.ibm.com/training",
+        "https://www.pasqal.com",
+        "https://www.psiquantum.com/applications",
+        "https://www.quantinuum.com/products-solutions/nexus",
+        "https://www.riverlane.com/blog/what-do-the-quantum-experts-really-think-of-qec"
       ]
     },
     {
@@ -1095,6 +1243,41 @@
       "source_documents": [
         "Canada25.pdf",
         "Luis_Canada22.pdf"
+      ]
+    },
+    {
+      "entity": "Intel",
+      "canonical_actor_key": "intel",
+      "helixes": [
+        "Civil Society",
+        "Industry",
+        "Intermediary"
+      ],
+      "chosen_helix": "Industry",
+      "source_documents": [
+        "Luis_Netherlands19.pdf",
+        "https://atom-computing.com/about-us",
+        "https://ionq.com",
+        "https://kets-quantum.com",
+        "https://newsroom.intel.com/data-center",
+        "https://newsroom.intel.com/security",
+        "https://quantware.com/news",
+        "https://quantware.com/news/quantware-raises-178-million",
+        "https://www.bluequbit.io/blog/quantum-error-correction",
+        "https://www.bqpsim.com",
+        "https://www.bqpsim.com/press",
+        "https://www.intel.com/content/www/us/en/jobs/benefits.html",
+        "https://www.intel.com/content/www/us/en/jobs/life-at-intel.html",
+        "https://www.intel.com/content/www/us/en/newsroom/opinion/journey-building-true-quantum-computer.html",
+        "https://www.intel.com/content/www/us/en/newsroom/resources/press-kits-labs-day-2020.html",
+        "https://www.microsoft.com/de-de/store/b/business",
+        "https://www.psiquantum.com/applications",
+        "https://www.psiquantum.com/news",
+        "https://www.quantum-machines.co/solutions/open-acceleration-stack",
+        "https://www.riverlane.com/blog/the-emerging-quantum-supply-chain",
+        "https://www.thailand.intel.com/content/www/th/th/homepage.html",
+        "https://www.thailand.intel.com/content/www/th/th/inclusion/inclusion-at-intel.html",
+        "https://www.thailand.intel.com/content/www/us/en/research/emerging-innovations.html"
       ]
     },
     {
@@ -1335,18 +1518,49 @@
       ]
     },
     {
-      "entity": "Microsoft Azure",
-      "canonical_actor_key": "microsoft azure",
+      "entity": "Microsoft",
+      "canonical_actor_key": "microsoft",
       "helixes": [
         "Government",
-        "Industry"
+        "Industry",
+        "Unknown"
       ],
       "chosen_helix": "Industry",
       "source_documents": [
+        "India25.pdf",
+        "Luis_Ireland23.pdf",
+        "Luis_Netherlands19.pdf",
+        "SouthAfrica21.pdf",
+        "https://atom-computing.com/page/3",
+        "https://azure.microsoft.com/de-de",
+        "https://global.fujitsu/en-global/industries/mobility-transport",
+        "https://go.microsoft.com/fwlink",
+        "https://ionq.com",
+        "https://iqm.tech/careers/life-at-iqm",
         "https://photonic.com/products",
+        "https://quantum-south.com",
+        "https://seeqc.com/whitepaper",
+        "https://www.bluequbit.io/blog/quantum-computing-applications",
+        "https://www.bluequbit.io/blog/quantum-computing-companies",
+        "https://www.classiq.io/industries-collection/logistics",
+        "https://www.intel.com/content/www/us/en/products/details/servers.html",
         "https://www.ionq.com/quantum-cloud",
+        "https://www.microsoft.com/de-de/microsoft-365/onenote/digital-note-taking-app",
+        "https://www.microsoft.com/de-de/microsoft-365/outlook/email-and-calendar-software-microsoft-outlook",
+        "https://www.microsoft.com/de-de/microsoft-teams/group-chat-software",
+        "https://www.microsoft.com/de-de/store/b/xbox",
+        "https://www.microsoft.com/surface",
+        "https://www.pasqal.com/about-us/partners",
         "https://www.pasqal.com/solutions/cloud",
-        "https://www.quantinuum.com/products-solutions/hardware-h-series"
+        "https://www.psiquantum.com/about",
+        "https://www.psiquantum.com/applications",
+        "https://www.qnulabs.com/quantum-security-platform/quantum-key-management-system",
+        "https://www.qruise.com/company/partners",
+        "https://www.quantinuum.com",
+        "https://www.quantinuum.com/products-solutions/hardware-h-series",
+        "https://www.quantum-machines.co/products/octave",
+        "https://www.quantum-machines.co/solutions/transducers",
+        "https://www.rigetti.com/applications/p2"
       ]
     },
     {
@@ -1576,6 +1790,19 @@
       ]
     },
     {
+      "entity": "OpenVPN",
+      "canonical_actor_key": "openvpn",
+      "helixes": [
+        "Industry",
+        "Unknown"
+      ],
+      "chosen_helix": "Industry",
+      "source_documents": [
+        "https://aws.amazon.com/marketplace",
+        "https://pqshield.com/products/pqc-sdk"
+      ]
+    },
+    {
       "entity": "Pasqal",
       "canonical_actor_key": "pasqal",
       "helixes": [
@@ -1586,6 +1813,7 @@
       "source_documents": [
         "France23.pdf",
         "https://aws.amazon.com/braket",
+        "https://aws.amazon.com/braket/customers",
         "https://blog.qubit-pharmaceuticals.com/blog/qubit-pasqal-leveraging-analog-quantum-computing-for-drugdiscovery",
         "https://q2b.qcware.com/conference/2025-paris",
         "https://quantumai.google/cirq/hardware",
@@ -1736,7 +1964,8 @@
         "https://quantumcircuits.com/company",
         "https://www.aqt.eu/solutions",
         "https://www.bluequbit.io/blog/quantum-computing-companies",
-        "https://www.bqpsim.com/quantum-optimization"
+        "https://www.bqpsim.com/quantum-optimization",
+        "https://www.qcware.com/news"
       ]
     },
     {
@@ -1917,6 +2146,19 @@
       ]
     },
     {
+      "entity": "SEALSQ",
+      "canonical_actor_key": "sealsq",
+      "helixes": [
+        "Industry",
+        "Intermediary"
+      ],
+      "chosen_helix": "Industry",
+      "source_documents": [
+        "https://eeroq.com/company-news",
+        "https://eeroq.com/eeroq-featured-in-quantum-computing-report-following-sealsq-investment"
+      ]
+    },
+    {
       "entity": "Serafino Sorrenti",
       "canonical_actor_key": "serafino sorrenti",
       "helixes": [
@@ -1939,6 +2181,7 @@
       "chosen_helix": "Academia",
       "source_documents": [
         "Luis_Australia23.pdf",
+        "https://www.sqc.com.au/news/silicon-quantum-computing-awarded-darpa-qbi-contract",
         "https://www.sqc.com.au/news/sqc-x-amd"
       ]
     },
@@ -2071,6 +2314,7 @@
       "chosen_helix": "Industry",
       "source_documents": [
         "https://1qbit.com/careers/current-openings",
+        "https://infleqtion.com/quantum-computing",
         "https://pqshield.com",
         "https://q-ctrl.com/fire-opal",
         "https://quantumbase.com/supply-chain-security",
@@ -2252,6 +2496,19 @@
         "https://quantumcircuits.com/cookie-policy",
         "https://sparrowquantum.com/publications",
         "https://www.aqt.eu/about"
+      ]
+    },
+    {
+      "entity": "Webflow",
+      "canonical_actor_key": "webflow",
+      "helixes": [
+        "Industry",
+        "Unknown"
+      ],
+      "chosen_helix": "Industry",
+      "source_documents": [
+        "https://www.qubit-pharmaceuticals.com/legal-notices",
+        "https://www.welinq.fr/legal-notice"
       ]
     },
     {

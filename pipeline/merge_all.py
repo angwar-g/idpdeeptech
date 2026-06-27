@@ -81,17 +81,84 @@ def load_rewrites(path: Path) -> dict:
     return raw.get("rewrites", {})
 
 
-def apply_rewrite(entity: str, source: str, rewrites: dict) -> tuple[str, str | None]:
-    """Apply per-source rewrites to entity. Returns (new_entity, rule_used_or_None)."""
-    # Per-source first, then global. First match wins.
+def apply_rewrite(entity: str, source: str, rewrites: dict) -> tuple[str | None, str | None]:
+    """Apply per-source rewrites to entity.
+
+    Returns (new_entity, rule_used_or_None) where new_entity is:
+      - the rewritten string (possibly with regex capture-group substitution)
+      - the original entity if no rule matched
+      - None if the actor was matched by a drop rule and should be removed
+
+    Rule schema (in rewrites.json under "rewrites" -> source_document key):
+
+      Standard rewrite:
+        { "match": "<regex>", "replace": "<replacement>" }
+        Supports capture groups: "match": "^(.+) ltd\\.?$", "replace": "$1"
+
+      Drop unconditionally (actor + its edges removed):
+        { "match": "<regex>", "drop": true }
+
+      Drop only if no earlier rule already renamed this actor. Useful for
+      generic terms like "Government" -- a doc-specific rule may already
+      have rewritten it to "Japan Government", but if not, drop it.
+        { "match": "<regex>", "drop_if_unmapped": true }
+
+    Matching order: per-source rules first, then "*" (wildcard) rules. First
+    match within either group wins. The "drop_if_unmapped" flag is checked at
+    the * stage and only fires if no per-source rule already produced a name
+    change.
+    """
+    # Track whether an earlier (per-source) rule already changed the name.
+    already_mapped = False
+    current = entity
+
     for source_key in [source, "*"]:
         for rule in rewrites.get(source_key, []):
-            match = rule.get("match", "")
-            replace = rule.get("replace", "")
-            if not match:
+            match_re = rule.get("match", "")
+            if not match_re:
                 continue
-            if re.search(match, entity, flags=re.IGNORECASE):
-                return replace, f"{source_key}: {match} -> {replace}"
+            if not re.search(match_re, current, flags=re.IGNORECASE):
+                continue
+
+            # Drop rules return None as the new entity.
+            if rule.get("drop"):
+                return None, f"{source_key}: {match_re} -> [drop]"
+            if rule.get("drop_if_unmapped"):
+                if already_mapped:
+                    # An earlier rule already renamed this actor, so don't drop.
+                    continue
+                return None, f"{source_key}: {match_re} -> [drop_if_unmapped]"
+
+            # Standard rewrite with regex capture-group substitution.
+            # Users write $1, $2, ... (JS-style); convert to Python's \1, \2.
+            replace = rule.get("replace", "")
+            replace_py = re.sub(r"\$(\d+)", r"\\\1", replace)
+            try:
+                new_entity = re.sub(
+                    match_re, replace_py, current, flags=re.IGNORECASE
+                )
+            except re.error as exc:
+                print(f"WARNING: bad regex in rewrite rule "
+                      f"({source_key}: {match_re}): {exc}")
+                continue
+
+            # If we're in the per-source pass, remember and continue so that
+            # later wildcard rules see the already-renamed value (and can
+            # avoid re-dropping it via drop_if_unmapped).
+            if source_key != "*":
+                current = new_entity
+                already_mapped = True
+                # Keep applying later rules to the new name. Don't return yet --
+                # this is what allows "Government" -> "Japan Government" (per-doc)
+                # followed by no-op of the global "drop_if_unmapped" rule.
+                # We return at the first WILDCARD match below, or after the loop.
+                continue
+
+            return new_entity, f"{source_key}: {match_re} -> {replace}"
+
+    if already_mapped:
+        # Per-source rule(s) renamed it but no wildcard rule fired.
+        return current, "per-source rewrite chain"
     return entity, None
 
 
@@ -180,14 +247,28 @@ def merge_nodes(
     """Merge nodes across sources. Returns (merged_nodes, diagnostics)."""
     rewrite_log: Counter = Counter()
     helix_conflicts: list[dict] = []
+    dropped_log: Counter = Counter()  # rule_used -> count of dropped actors
 
-    # First pass: apply rewrites in place (on a copy).
+    # First pass: apply rewrites in place (on a copy). Some rewrites are
+    # drops (apply_rewrite returns None); those actors are removed entirely
+    # and their canonical keys recorded so we can also drop edges touching
+    # them later.
     rewritten: list[tuple[dict, str]] = []
+    dropped_keys: set[str] = set()
     for node, label in all_nodes:
         node = dict(node)
         src = node.get("source_document", "")
         original = node.get("entity", "")
         new_entity, rule_used = apply_rewrite(original, src, rewrites)
+
+        if new_entity is None:
+            # Drop rule fired -- skip this node and remember its key so we
+            # can prune edges touching it.
+            if rule_used:
+                dropped_log[rule_used] += 1
+            dropped_keys.add(canonical_key(original))
+            continue
+
         if rule_used and new_entity != original:
             rewrite_log[rule_used] += 1
             node["entity"] = new_entity
@@ -267,6 +348,8 @@ def merge_nodes(
 
     diagnostics = {
         "rewrites_applied": dict(rewrite_log),
+        "actors_dropped": dict(dropped_log),
+        "_dropped_keys": dropped_keys,  # used by merge_edges; not for JSON serialization
         "helix_conflicts": helix_conflicts,
     }
     return merged, diagnostics
@@ -291,6 +374,7 @@ def merge_edges(
     all_edges: list[tuple[dict, str]],
     rewrites: dict,
     merged_nodes: list[dict],
+    dropped_keys: set[str] | None = None,
 ) -> list[dict]:
     """Collapse all edge mentions into one logical edge per
     (source_actor, target_actor, relation_label, directional) tuple.
@@ -306,7 +390,10 @@ def merge_edges(
     preserved.
 
     Also resolves source/target actor names to merged canonical keys.
+    Edges touching any actor in `dropped_keys` (returned from merge_nodes) are
+    removed -- these are the actors a drop rule removed.
     """
+    dropped_keys = dropped_keys or set()
     # Build alias -> canonical_actor_key lookup from merged nodes.
     alias_to_key: dict[str, str] = {}
     for node in merged_nodes:
@@ -321,16 +408,43 @@ def merge_edges(
         return alias_to_key.get(ck, ck)
 
     # First pass: apply rewrites and key resolution to every input edge.
+    # An edge is dropped if either endpoint was matched by a drop rule, or
+    # if either endpoint's canonical key matches an actor that was dropped
+    # in the node pass (e.g. "Government" got dropped on a website source).
     rewritten: list[dict] = []
     for edge, _label in all_edges:
         edge = dict(edge)
         src = edge.get("source_document", "")
+        endpoint_dropped = False
         for field in ("source_actor", "target_actor"):
             original = edge.get(field, "")
             new_name, _rule = apply_rewrite(original, src, rewrites)
+            if new_name is None:
+                # Drop rule fired on this endpoint -- discard the whole edge.
+                endpoint_dropped = True
+                break
             edge[field] = new_name
+            # Also defend against the node pass having dropped this key by a
+            # rule that the edge's source_document didn't match (e.g. node
+            # rewrite came from a different doc). If the *original* canonical
+            # key was dropped, drop this edge too.
+            if canonical_key(original) in dropped_keys:
+                endpoint_dropped = True
+                break
+        if endpoint_dropped:
+            continue
+
         edge["source_actor_key"] = resolve_key(edge.get("source_actor", ""))
         edge["target_actor_key"] = resolve_key(edge.get("target_actor", ""))
+
+        # Belt-and-braces: also drop if the resolved keys ended up in
+        # dropped_keys (covers the case where both an edge endpoint and a
+        # node share the same canonical name but the drop rule only matched
+        # via the node pass).
+        if (edge["source_actor_key"] in dropped_keys or
+                edge["target_actor_key"] in dropped_keys):
+            continue
+
         # Drop edges that would self-loop after rewriting (e.g. "We" + "Japan"
         # both rewritten to "Japan").
         if edge["source_actor_key"] and edge["source_actor_key"] == edge["target_actor_key"]:
@@ -444,6 +558,128 @@ SYMMETRIC_RELATIONS_DOC = SYMMETRIC_RELATIONS  # exported for tests / introspect
 DIRECTIONAL_RELATIONS_DOC = DIRECTIONAL_RELATIONS
 
 
+def compute_layout(
+    merged_nodes: list[dict],
+    merged_edges: list[dict],
+    scale: float = 3000.0,
+) -> dict[str, dict[str, float]]:
+    """Lay out the merged graph using networkx spring layout per connected
+    component, then arrange components spatially so they don't overlap.
+
+    Returns a {canonical_actor_key: {"x": ..., "y": ...}} map suitable for
+    direct attachment to nodes. The frontend (vis-network) uses these as
+    static positions when showing the full network.
+
+    Layout philosophy:
+      - One spring_layout per connected component (matches the look of the
+        old per-component frontend layout the user prefers).
+      - Edge weight = log(1 + occurrence_count). Well-attested relations
+        pull their endpoints closer.
+      - Components arranged in a spiral by size (largest at center).
+      - Singletons clustered in a separate ring at the outer edge.
+    """
+    try:
+        import networkx as nx
+    except ImportError:
+        print("WARNING: networkx not installed; skipping layout computation. "
+              "Run: pip install networkx")
+        return {}
+
+    import math
+
+    # Build the graph.
+    G = nx.Graph()
+    node_keys = [n["canonical_actor_key"] for n in merged_nodes if n.get("canonical_actor_key")]
+    G.add_nodes_from(node_keys)
+
+    for edge in merged_edges:
+        s = edge.get("source_actor_key", "")
+        t = edge.get("target_actor_key", "")
+        if not s or not t or s == t:
+            continue
+        weight = math.log(1 + edge.get("occurrence_count", 1))
+        if G.has_edge(s, t):
+            # Multiple logical edges between same pair (e.g. different relation
+            # labels). Sum weights so the spring force adds up.
+            G[s][t]["weight"] += weight
+        else:
+            G.add_edge(s, t, weight=weight)
+
+    # Sort components by size, largest first.
+    components = sorted(
+        nx.connected_components(G),
+        key=len,
+        reverse=True,
+    )
+
+    positions: dict[str, dict[str, float]] = {}
+    connected = [c for c in components if len(c) > 1]
+    singletons = [c for c in components if len(c) == 1]
+
+    # Lay out each multi-node component independently, then offset.
+    # Use a spiral arrangement: component i goes to angle (i * 2.4) radians
+    # at radius proportional to sqrt of accumulated previous-component sizes.
+    cumulative_radius = 0.0
+    for i, component in enumerate(connected):
+        subgraph = G.subgraph(component)
+        size = len(component)
+        # spring_layout: k controls optimal distance between nodes; larger
+        # graphs need larger k so the layout doesn't compress.
+        k = 1.0 / math.sqrt(size) if size > 1 else None
+        try:
+            sub_positions = nx.spring_layout(
+                subgraph,
+                k=k,
+                iterations=80 if size < 100 else 50,
+                weight="weight",
+                seed=42,  # deterministic across runs
+            )
+        except Exception as exc:
+            print(f"WARNING: layout failed for component {i} (size {size}): {exc}")
+            continue
+
+        # Scale to roughly fit the component in a box proportional to its size.
+        component_scale = scale * math.sqrt(size) / 8.0
+        # Component center: spiral outward by index.
+        if i == 0:
+            center_x, center_y = 0.0, 0.0
+        else:
+            angle = i * 2.4
+            cumulative_radius += scale * 0.6 * math.sqrt(size) / 8.0
+            center_x = cumulative_radius * math.cos(angle)
+            center_y = cumulative_radius * math.sin(angle)
+
+        for key, (nx_x, nx_y) in sub_positions.items():
+            positions[key] = {
+                "x": center_x + nx_x * component_scale,
+                "y": center_y + nx_y * component_scale,
+            }
+
+    # Singletons: arrange in a grid in the outer ring, well clear of the main
+    # component blob.
+    if singletons:
+        # Determine outer radius based on what we've already placed.
+        max_existing = 0.0
+        for p in positions.values():
+            d = math.hypot(p["x"], p["y"])
+            if d > max_existing:
+                max_existing = d
+        outer_radius = max(max_existing * 1.4, scale * 1.5)
+
+        cols = max(8, int(math.sqrt(len(singletons))))
+        spacing = scale * 0.08
+        for i, component in enumerate(singletons):
+            key = next(iter(component))
+            # Place in two columns far left and far right, alternating.
+            side = -1 if i % 2 == 0 else 1
+            row = i // 2
+            x = side * outer_radius + side * (row % cols) * spacing
+            y = (row // cols - len(singletons) // (cols * 4)) * spacing
+            positions[key] = {"x": x, "y": y}
+
+    return positions
+
+
 # --------------------------------------------------------------------------
 # Main
 # --------------------------------------------------------------------------
@@ -524,7 +760,10 @@ def main():
         url_to_date = {}
 
     merged_nodes, diagnostics = merge_nodes(all_nodes, rewrites)
-    merged_edges = merge_edges(all_edges, rewrites, merged_nodes)
+    merged_edges = merge_edges(
+        all_edges, rewrites, merged_nodes,
+        dropped_keys=diagnostics.get("_dropped_keys", set()),
+    )
 
     # Inject the same dates onto merged nodes (each node's source_documents
     # gives a list of URLs/PDFs; intersect with the manifest to get dates).
@@ -543,12 +782,33 @@ def main():
 
     print(f"\nAfter merge: {len(merged_nodes)} unique actors, {len(merged_edges)} unique logical edges.")
 
+    # Compute node positions via networkx spring layout (per connected
+    # component). The frontend uses these as static coordinates for the full
+    # network view, replacing the JS-side layout that produced cluttered
+    # placements. Filtered subsets fall back to vis-network's live physics.
+    print("\nComputing node layout via networkx...")
+    layout = compute_layout(merged_nodes, merged_edges)
+    if layout:
+        for n in merged_nodes:
+            pos = layout.get(n.get("canonical_actor_key", ""))
+            if pos:
+                n["x"] = round(pos["x"], 2)
+                n["y"] = round(pos["y"], 2)
+        placed = sum(1 for n in merged_nodes if "x" in n)
+        print(f"Placed {placed}/{len(merged_nodes)} actors.")
+
     if diagnostics["rewrites_applied"]:
         print("\nRewrites applied:")
         for rule, n in sorted(diagnostics["rewrites_applied"].items(), key=lambda x: -x[1]):
             print(f"  {n:4d}x  {rule}")
     else:
         print("\nNo rewrites applied.")
+
+    if diagnostics.get("actors_dropped"):
+        total_dropped = sum(diagnostics["actors_dropped"].values())
+        print(f"\nActors dropped: {total_dropped}")
+        for rule, n in sorted(diagnostics["actors_dropped"].items(), key=lambda x: -x[1]):
+            print(f"  {n:4d}x  {rule}")
 
     if diagnostics["helix_conflicts"]:
         print(f"\nHelix conflicts (same actor classified differently across sources): "
@@ -571,6 +831,9 @@ def main():
     (out_dir / "combined_edges.json").write_text(
         json.dumps(merged_edges, indent=2, ensure_ascii=False), encoding="utf-8"
     )
+    # Strip the non-serializable internal set from diagnostics before writing.
+    report_diagnostics = {k: v for k, v in diagnostics.items() if not k.startswith("_")}
+
     (out_dir / "merge_report.json").write_text(
         json.dumps({
             "source_count": len(pairs),
@@ -579,7 +842,7 @@ def main():
             "input_edge_records": len(all_edges),
             "output_unique_actors": len(merged_nodes),
             "output_unique_edges": len(merged_edges),
-            **diagnostics,
+            **report_diagnostics,
         }, indent=2, ensure_ascii=False),
         encoding="utf-8",
     )

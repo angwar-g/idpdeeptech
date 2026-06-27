@@ -1,30 +1,123 @@
 {
-  "_comment": "Per-source actor rewrites applied BEFORE cross-document merging. Keys are source_document values exactly as they appear in 5_nodes.json. Each rewrite has a 'match' (case-insensitive regex on the full entity name) and 'replace' (the new entity name). Wildcards: use 'source_document' '*' to apply to every source.",
+  "_comment": "Per-source actor rewrites applied BEFORE cross-document merging. Keys are source_document values exactly as they appear in 5_nodes.json (e.g. 'japan25.pdf' or 'https://www.example.com/page'). Each rule has 'match' (case-insensitive regex on the full entity name) and either 'replace' (new name, supports $1/$2 capture groups), 'drop' (remove the actor + its edges), or 'drop_if_unmapped' (remove only if no per-source rule already renamed it). Wildcards: keys under '*' apply to every source. Matching order: per-source rules first (can rename, chain continues), then '*' rules.",
+
   "rewrites": {
+
     "japan25.pdf": [
-      {
-        "match": "^we$",
-        "replace": "Japan"
-      },
-      {
-        "match": "^our country$",
-        "replace": "Japan"
-      },
-      {
-        "match": "^(the )?government$",
-        "replace": "Japan Government"
-      },
-      {
-        "match": "^(the )?national government$",
-        "replace": "Japan Government"
-      }
+      { "match": "^we$",                            "replace": "Japan" },
+      { "match": "^our country$",                   "replace": "Japan" },
+      { "match": "^(the )?government$",             "replace": "Japan Government" },
+      { "match": "^(the )?national government$",    "replace": "Japan Government" }
     ],
+
     "china25.pdf": [
-      {
-        "match": "^(the )?state council$",
-        "replace": "China State Council"
-      }
+      { "match": "^we$",                            "replace": "China" },
+      { "match": "^(the )?state council$",          "replace": "China State Council" },
+      { "match": "^(the )?government$",             "replace": "China Government" },
+      { "match": "^(the )?national government$",    "replace": "China Government" }
     ],
-    "*": []
+
+    "Canada25.pdf": [
+      { "match": "^we$",                            "replace": "Canada" },
+      { "match": "^(the )?government$",             "replace": "Canada Government" },
+      { "match": "^(the )?federal government$",     "replace": "Canada Government" }
+    ],
+
+    "India25.pdf": [
+      { "match": "^we$",                            "replace": "India" },
+      { "match": "^(the )?government$",             "replace": "India Government" }
+    ],
+
+    "Germany25.pdf": [
+      { "match": "^we$",                            "replace": "Germany" },
+      { "match": "^(the )?government$",             "replace": "Germany Government" },
+      { "match": "^(the )?federal government$",     "replace": "Germany Government" },
+      { "match": "^(the )?bundesregierung$",        "replace": "Germany Government" }
+    ],
+
+    "France23.pdf": [
+      { "match": "^we$",                            "replace": "France" },
+      { "match": "^(the )?government$",             "replace": "France Government" }
+    ],
+
+    "FrancoGerman25.pdf": [
+      { "match": "^(the )?government$",             "replace": "France-Germany Government" }
+    ],
+
+    "Austria24.pdf": [
+      { "match": "^we$",                            "replace": "Austria" },
+      { "match": "^(the )?government$",             "replace": "Austria Government" }
+    ],
+
+    "BadenWurttemberg.pdf": [
+      { "match": "^we$",                            "replace": "Baden-Württemberg" },
+      { "match": "^(the )?government$",             "replace": "Baden-Württemberg Government" }
+    ],
+
+    "Bavaria.pdf": [
+      { "match": "^we$",                            "replace": "Bavaria" },
+      { "match": "^(the )?government$",             "replace": "Bavaria Government" }
+    ],
+
+    "Europe23.pdf": [
+      { "match": "^we$",                            "replace": "European Union" },
+      { "match": "^(the )?union$",                  "replace": "European Union" }
+    ],
+
+    "Europe25.pdf": [
+      { "match": "^we$",                            "replace": "European Union" },
+      { "match": "^(the )?union$",                  "replace": "European Union" }
+    ],
+
+    "*": [
+      { "match": "^microsoft (365|advertising|azure|bing|build|clarity|copilot|designer|developer|developer network|developer network \\(msdn\\)|edge|entra id|fabric|family safety|foundry|graph|ireland|ireland operations|learn|loop|m12|marketplace|office|office 365|office mobile|onedrive|onenote|outlook|places|power apps|power automate|power bi|power platform|powerpoint|sharepoint|start|store|teams|to do|viva|word|windows|excel|affiliates)$", "replace": "Microsoft" },
+      { "match": "^microsoft corp\\.?$",            "replace": "Microsoft" },
+      { "match": "^microsoft corporation$",         "replace": "Microsoft" },
+
+      { "match": "^fujitsu (limited|group|japan limited|corp\\.?|corporation|laboratories|research|distinguished engineers|sports|accelerator|blog|cross culture center|technology park|uvance|uvance kawasaki tower|ventures)$", "replace": "Fujitsu" },
+
+      { "match": "^google (inc\\.?|llc|cloud|developers|doubleclick|analytics|search|workspace|maps|chrome|drive|gmail|advertising|ads|domains|workspace marketplace|store|recaptcha)$", "replace": "Google" },
+
+      { "match": "^amazon (web services|web services, inc\\.?|web services \\(aws\\)|web services emea sarl|web services \\(aws\\) marketplace solutions)$", "replace": "AWS" },
+      { "match": "^aws$",                           "replace": "AWS" },
+      { "match": "^amazon \\(amzn\\)$",             "replace": "Amazon" },
+
+      { "match": "^ibm (corp\\.?|corporation|inc\\.?|corporation \\(ibm\\)|business partners|champions|developer|cloud catalog|cloud support team|cio office|center for cloud training|cloud center for training enterprise subscription administrators|community advocacy|consulting|deutschland|education|fix central|granite\\.code|instana observability path|japan,?|learning individual subscription with coursera|partner|partner ecosystem|partner plus|partner plus program|partner portal|partner program|partnerplus|passport advantage|redbooks|skills network|support|support portal|sustainability software|techxchange community|techxchange event attendees|techxchange rewards program - formerly known as ibm learn 'n score program|technology|training|tutorials|user groups|verify|webinar series|bob)$", "replace": "IBM" },
+
+      { "match": "^intel (corporation|inc\\.?|capital|foundation|ignite|labs|geti|automotive|data center group|inside®|news room|pride|vitality|core™|core™ ultra|developer catalog|nuc|partner alliance|partner showcase|server m50fcp family|trust authority|xeon®|® core™|® core™ ultra|® developer catalog|® nuc|® partner alliance|® partner showcase|® server m50fcp family|® trust authority|® xeon®)$", "replace": "Intel" },
+
+      { "match": "^nvidia (corporation|corp\\.?|inc\\.?)$", "replace": "NVIDIA" },
+
+      { "match": "^honeywell (international|international inc\\.?|connected enterprise)$", "replace": "Honeywell" },
+
+      { "match": "^siemens ag$",                    "replace": "Siemens" },
+
+      { "match": "^thales group \\(epa:ho\\) \\(thales sa\\)$", "replace": "Thales" },
+
+      { "match": "^(.{2,}?),? (ltd\\.?|limited|gmbh|llc|inc\\.?|incorporated|corp\\.?|corporation|s\\.a\\.|sas|s\\.r\\.l\\.|ag|kg|kgaa|pty ltd|pte ltd|bv|nv|oy|ab|spa|plc)$", "replace": "$1" },
+
+      { "match": "academia",                        "drop": true },
+      { "match": "^universities$",                  "drop": true },
+      { "match": "^companies$",                     "drop": true },
+      { "match": "^researchers$",                   "drop": true },
+      { "match": "^scientists$",                    "drop": true },
+      { "match": "^stakeholders$",                  "drop": true },
+      { "match": "^the public$",                    "drop": true },
+      { "match": "^public$",                        "drop": true },
+      { "match": "^institutions$",                  "drop": true },
+      { "match": "^other institutions$",            "drop": true },
+      { "match": "^we$",                            "drop": true },
+      { "match": "^us$",                            "drop": true },
+      { "match": "^the team$",                      "drop": true },
+      { "match": "^team$",                          "drop": true },
+
+      { "match": "^(the )?government$",             "drop_if_unmapped": true },
+      { "match": "^(the )?national government$",    "drop_if_unmapped": true },
+      { "match": "^(the )?federal government$",     "drop_if_unmapped": true },
+      { "match": "^(the )?state council$",          "drop_if_unmapped": true },
+      { "match": "^(the )?ministry$",               "drop_if_unmapped": true },
+      { "match": "^(the )?parliament$",             "drop_if_unmapped": true }
+    ]
+
   }
 }
