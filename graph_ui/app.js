@@ -8,8 +8,8 @@ let yearSelect = null;
 const FULL_NETWORK_SUMMARY = "Showing full network with static layout.";
 
 Promise.all([
-  fetch("../pipeline/merged_outputs/5_nodes.json").then(assertOk).then(r => r.json()),
-  fetch("../pipeline/merged_outputs/5_edges.json").then(assertOk).then(r => r.json())
+  fetch("../pipeline/merged_outputs/combined_nodes.json").then(assertOk).then(r => r.json()),
+  fetch("../pipeline/merged_outputs/combined_edges.json").then(assertOk).then(r => r.json())
 ])
   .then(([nodes, edges]) => {
     allNodes = nodes;
@@ -23,8 +23,8 @@ Promise.all([
       inputId: "sourceSearch",
       chipsId: "selectedSources",
       optionsId: "sourceOptions",
-      emptyText: "No matching PDF sources",
-      defaultText: "Type to search PDF sources",
+      emptyText: "No matching sources",
+      defaultText: "Type to search sources",
       onChange: applyFilters
     });
 
@@ -68,18 +68,45 @@ function assertOk(response) {
   return response;
 }
 
-function inferYear(edge) {
-  const text = `${edge.source_year || ""} ${edge.source_document || ""} ${edge.source_actor_key || ""} ${edge.target_actor_key || ""}`;
-  const match = text.match(/20\d{2}/);
-  return match ? match[0] : null;
+// Year handling: edges now carry `first_seen` / `last_seen` (from news article
+// dates joined at merge time). For edges without dates, fall back to scanning
+// the source_documents list for a YYYY pattern (covers PDFs like japan25.pdf).
+function yearsForEdge(edge) {
+  const years = new Set();
+  if (edge.first_seen) years.add(edge.first_seen.slice(0, 4));
+  if (edge.last_seen) years.add(edge.last_seen.slice(0, 4));
+  // Per-occurrence dates (in case the edge spans multiple years).
+  (edge.occurrences || []).forEach(occ => {
+    if (occ.source_date) years.add(occ.source_date.slice(0, 4));
+  });
+  // Fallback: extract year from source document filenames (japan25.pdf -> 2025).
+  if (years.size === 0) {
+    (edge.source_documents || []).forEach(sd => {
+      const m = String(sd).match(/(?:^|[^0-9])(\d{2})(?:\.pdf$|\D|$)/);
+      if (m) years.add("20" + m[1]);
+      const m4 = String(sd).match(/20\d{2}/);
+      if (m4) years.add(m4[0]);
+    });
+  }
+  return years;
 }
 
 function populateFilters(nodes, edges) {
-  const pdfSources = [...new Set(
-    edges
-      .map(edge => edge.source_document || "")
-      .filter(doc => doc.toLowerCase().endsWith(".pdf"))
-  )].sort((a, b) => a.localeCompare(b));
+  // Collect every distinct source document across all edges.
+  const allSources = new Set();
+  edges.forEach(edge => {
+    (edge.source_documents || []).forEach(sd => {
+      if (sd) allSources.add(sd);
+    });
+  });
+  // Also include actor sources (an actor may appear in a doc with no edges).
+  nodes.forEach(node => {
+    (node.source_documents || []).forEach(sd => {
+      if (sd) allSources.add(sd);
+    });
+  });
+
+  const sources = [...allSources].sort((a, b) => a.localeCompare(b));
 
   const actors = nodes
     .filter(n => n.canonical_actor_key && n.entity)
@@ -89,14 +116,13 @@ function populateFilters(nodes, edges) {
     }))
     .sort((a, b) => a.label.localeCompare(b.label));
 
-  const years = [...new Set(edges.map(inferYear).filter(Boolean))]
+  const allYears = new Set();
+  edges.forEach(edge => yearsForEdge(edge).forEach(y => allYears.add(y)));
+  const years = [...allYears]
     .sort()
-    .map(year => ({
-      value: year,
-      label: year
-    }));
+    .map(year => ({ value: year, label: year }));
 
-  sourceSelect.setOptions(pdfSources.map(doc => ({
+  sourceSelect.setOptions(sources.map(doc => ({
     value: doc,
     label: doc
   })));
@@ -107,7 +133,6 @@ function populateFilters(nodes, edges) {
 
 function deduplicateOptions(options) {
   const seen = new Set();
-
   return options.filter(option => {
     const key = `${option.value}::${option.label.toLowerCase()}`;
     if (seen.has(key)) return false;
@@ -311,32 +336,55 @@ function applyFilters() {
     return;
   }
 
-  const filteredEdges = allEdges.filter(edge => {
-    const doc = edge.source_document || "";
-    const edgeYear = inferYear(edge);
+  // Edge passes if AT LEAST ONE of its occurrences satisfies all active filters.
+  // We also keep the matching occurrences only so tooltips show only what fits.
+  const filteredEdges = [];
+  allEdges.forEach(edge => {
+    const matchingOccurrences = (edge.occurrences || []).filter(occ => {
+      const docOk = selectedSources.size === 0 ||
+                    selectedSources.has(occ.source_document);
+      const yearOk = selectedYears.size === 0 ||
+                     occurrenceYearsMatch(occ, edge, selectedYears);
+      return docOk && yearOk;
+    });
+    if (matchingOccurrences.length === 0 &&
+        (selectedSources.size > 0 || selectedYears.size > 0)) {
+      return;
+    }
+    const actorOk = selectedActors.size === 0 ||
+                    selectedActors.has(edge.source_actor_key) ||
+                    selectedActors.has(edge.target_actor_key);
+    if (!actorOk) return;
 
-    const sourceMatch =
-      selectedSources.size === 0 ||
-      selectedSources.has(doc);
-
-    const actorMatch =
-      selectedActors.size === 0 ||
-      selectedActors.has(edge.source_actor_key) ||
-      selectedActors.has(edge.target_actor_key);
-
-    const yearMatch =
-      selectedYears.size === 0 ||
-      selectedYears.has(edgeYear);
-
-    return sourceMatch && actorMatch && yearMatch;
+    // Make a shallow copy of the edge with only the matching occurrences,
+    // so tooltip text reflects what was actually selected.
+    filteredEdges.push({
+      ...edge,
+      occurrences: selectedSources.size === 0 && selectedYears.size === 0
+        ? edge.occurrences
+        : matchingOccurrences
+    });
   });
 
   const visibleActorKeys = new Set();
-
   filteredEdges.forEach(edge => {
     if (edge.source_actor_key) visibleActorKeys.add(edge.source_actor_key);
     if (edge.target_actor_key) visibleActorKeys.add(edge.target_actor_key);
   });
+
+  // Also include nodes whose own source_documents intersect the source filter
+  // (an actor mentioned in a doc but with no surviving edges).
+  if (selectedSources.size > 0) {
+    allNodes.forEach(node => {
+      const nodeDocs = node.source_documents || [];
+      if (nodeDocs.some(d => selectedSources.has(d))) {
+        if (node.canonical_actor_key) visibleActorKeys.add(node.canonical_actor_key);
+      }
+    });
+  }
+  if (selectedActors.size > 0) {
+    selectedActors.forEach(k => visibleActorKeys.add(k));
+  }
 
   const filteredNodes = allNodes.filter(node =>
     visibleActorKeys.has(node.canonical_actor_key)
@@ -354,6 +402,19 @@ function applyFilters() {
       ? "Showing filtered graph with static layout for performance."
       : "Showing filtered graph with static layout."
   );
+}
+
+function occurrenceYearsMatch(occ, edge, selectedYears) {
+  if (occ.source_date) {
+    return selectedYears.has(occ.source_date.slice(0, 4));
+  }
+  // No explicit date on this occurrence -- fall back to whole-edge year set
+  // (covers PDFs with a year-stamped filename).
+  const fallbackYears = yearsForEdge(edge);
+  for (const y of fallbackYears) {
+    if (selectedYears.has(y)) return true;
+  }
+  return false;
 }
 
 function resetFilters() {
@@ -405,6 +466,11 @@ function drawGraph(nodes, edges, settings = {}) {
       ? staticPositions.get(node.canonical_actor_key) || getStaticNodePosition(node.canonical_actor_key, index, nodes.length)
       : {};
 
+    const sourceCount = (node.source_documents || []).length;
+    const dateRange = node.earliest_date
+      ? `${node.earliest_date}${node.latest_date && node.latest_date !== node.earliest_date ? ` – ${node.latest_date}` : ""}`
+      : "";
+
     nodeMap.set(node.canonical_actor_key, {
       id: node.canonical_actor_key,
       label: node.entity || node.canonical_actor_key,
@@ -412,7 +478,8 @@ function drawGraph(nodes, edges, settings = {}) {
       title: `
         <b>${escapeHtml(node.entity || node.canonical_actor_key)}</b><br>
         Helix: ${escapeHtml(node.helix || "Unknown")}<br>
-        Category: ${escapeHtml(node.category || "Unknown")}
+        Category: ${escapeHtml(node.category || "Unknown")}<br>
+        Sources: ${sourceCount}${dateRange ? `<br>Range: ${escapeHtml(dateRange)}` : ""}
       `,
       color: {
         background: getHelixColor(node.helix),
@@ -456,22 +523,37 @@ function drawGraph(nodes, edges, settings = {}) {
       );
     }
 
+    const occurrences = edge.occurrences || [];
+    const firstOcc = occurrences[0] || {};
+
+    // Arrow only for directional relations. Symmetric ones render as a plain
+    // line. In full-network mode we suppress arrows regardless to keep the
+    // overview readable.
+    const directional = edge.directional === true && !isFullNetwork;
+
+    const sampleSentence = firstOcc.occurrence_sentence || "";
+    const samplePhrase = firstOcc.interaction_phrase || "";
+
     visEdges.push({
       id: `edge-${index}`,
       from: edge.source_actor_key,
       to: edge.target_actor_key,
       label: showEdgeLabels ? edge.relation_label || "" : "",
       title: `
-        <b>${escapeHtml(edge.relation_label || "interaction")}</b><br>
-        ${escapeHtml(edge.interaction_phrase || "")}<br><br>
-        <b>Evidence:</b><br>
-        ${escapeHtml(edge.occurrence_sentence || "")}<br><br>
-        <b>Source:</b><br>
-        ${escapeHtml(edge.source_document || "")}
+        <b>${escapeHtml(edge.relation_label || "interaction")}</b>
+        ${edge.directional ? "(directional)" : "(symmetric)"}<br>
+        <b>${escapeHtml(edge.source_actor || edge.source_actor_key)}</b>
+          ${edge.directional ? "→" : "↔"}
+        <b>${escapeHtml(edge.target_actor || edge.target_actor_key)}</b><br>
+        Mentions: ${occurrences.length}
+        ${edge.first_seen ? `<br>First seen: ${escapeHtml(edge.first_seen)}` : ""}
+        ${edge.last_seen && edge.last_seen !== edge.first_seen ? `<br>Last seen: ${escapeHtml(edge.last_seen)}` : ""}
+        ${samplePhrase ? `<br><br><b>Phrase:</b><br>${escapeHtml(samplePhrase)}` : ""}
+        ${sampleSentence ? `<br><br><b>Sample evidence:</b><br>${escapeHtml(sampleSentence)}` : ""}
       `,
       arrows: {
         to: {
-          enabled: !isFullNetwork,
+          enabled: directional,
           scaleFactor: 0.65
         }
       },
@@ -482,7 +564,11 @@ function drawGraph(nodes, edges, settings = {}) {
         highlight: "#9fd2ff",
         hover: "#9fd2ff"
       },
-      width: isFullNetwork ? 0.35 : 1.15,
+      // Slightly thicker line for edges with many occurrences (visual signal
+      // of how well-attested a relation is).
+      width: isFullNetwork
+        ? 0.35
+        : Math.min(3.5, 1.0 + Math.log2(occurrences.length + 1) * 0.6),
       smooth: {
         enabled: !isFullNetwork,
         type: "dynamic"
@@ -614,12 +700,17 @@ function drawGraph(nodes, edges, settings = {}) {
       const node = data.nodes.get(params.nodes[0]);
       const raw = node.raw || {};
 
+      const dateRange = raw.earliest_date
+        ? `${raw.earliest_date}${raw.latest_date && raw.latest_date !== raw.earliest_date ? ` – ${raw.latest_date}` : ""}`
+        : "";
+
       document.getElementById("details").innerHTML = `
         <b>${escapeHtml(node.label)}</b><br><br>
         <b>Helix:</b> ${escapeHtml(raw.helix || "Unknown")}<br>
         <b>Category:</b> ${escapeHtml(raw.category || "Unknown")}<br>
-        <b>Canonical key:</b> ${escapeHtml(node.id)}<br><br>
-        <b>Sources:</b><br>
+        <b>Canonical key:</b> ${escapeHtml(node.id)}<br>
+        ${dateRange ? `<b>Date range:</b> ${escapeHtml(dateRange)}<br>` : ""}<br>
+        <b>Sources (${(raw.source_documents || []).length}):</b><br>
         ${formatSourceList(raw.source_documents || [])}
       `;
 
@@ -629,13 +720,19 @@ function drawGraph(nodes, edges, settings = {}) {
     if (params.edges.length > 0) {
       const edge = data.edges.get(params.edges[0]);
       const raw = edge.raw || {};
+      const occurrences = raw.occurrences || [];
 
       document.getElementById("details").innerHTML = `
-        <b>${escapeHtml(raw.relation_label || "interaction")}</b><br><br>
-        <b>From:</b> ${escapeHtml(raw.source_actor || raw.source_actor_key || "")}<br>
-        <b>To:</b> ${escapeHtml(raw.target_actor || raw.target_actor_key || "")}<br><br>
-        <b>Phrase:</b><br>${escapeHtml(raw.interaction_phrase || "")}<br><br>
-        <b>Source:</b><br>${escapeHtml(raw.source_document || "")}
+        <b>${escapeHtml(raw.relation_label || "interaction")}</b>
+        ${raw.directional ? "(directional)" : "(symmetric)"}<br><br>
+        <b>${escapeHtml(raw.source_actor || raw.source_actor_key || "")}</b>
+        ${raw.directional ? "→" : "↔"}
+        <b>${escapeHtml(raw.target_actor || raw.target_actor_key || "")}</b><br><br>
+        <b>${occurrences.length} mention${occurrences.length === 1 ? "" : "s"}</b>
+        ${raw.first_seen ? `<br><i>First: ${escapeHtml(raw.first_seen)}` : ""}
+        ${raw.last_seen && raw.last_seen !== raw.first_seen ? `, Last: ${escapeHtml(raw.last_seen)}</i>` : raw.first_seen ? "</i>" : ""}
+        <br><br>
+        ${formatOccurrenceList(occurrences)}
       `;
 
       return;
@@ -643,6 +740,21 @@ function drawGraph(nodes, edges, settings = {}) {
 
     document.getElementById("details").innerHTML = "Click a node or edge to inspect it.";
   });
+}
+
+function formatOccurrenceList(occurrences) {
+  if (!occurrences.length) return "<i>No occurrences listed</i>";
+
+  return occurrences.slice(0, 5).map(occ => {
+    const date = occ.source_date ? `<b>${escapeHtml(occ.source_date)}</b> · ` : "";
+    return `
+      <div style="margin-bottom: 10px; padding-bottom: 8px; border-bottom: 1px solid rgba(255,255,255,0.08);">
+        ${date}${escapeHtml(occ.source_document || "")}<br>
+        ${occ.interaction_phrase ? `<i>${escapeHtml(occ.interaction_phrase)}</i><br>` : ""}
+        ${escapeHtml(occ.occurrence_sentence || "")}
+      </div>
+    `;
+  }).join("") + (occurrences.length > 5 ? `<i>+ ${occurrences.length - 5} more</i>` : "");
 }
 
 function freezeNetworkLayout() {
@@ -946,8 +1058,9 @@ function fallbackNode(id, label, isFullNetwork = false, index = 0, totalNodes = 
 }
 
 function getNodeSize(node) {
-  const mentions = Array.isArray(node.mentions) ? node.mentions.length : 1;
-  return Math.max(10, Math.min(26, 9 + Math.sqrt(mentions) * 1.6));
+  const sources = (node.source_documents || []).length;
+  const mentions = Array.isArray(node.mentions) ? node.mentions.length : sources;
+  return Math.max(10, Math.min(26, 9 + Math.sqrt(mentions || 1) * 1.6));
 }
 
 function getHelixColor(helix) {

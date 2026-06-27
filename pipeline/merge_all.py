@@ -1,15 +1,21 @@
 #!/usr/bin/env python3
 """Merge per-document network outputs into one combined graph.
 
-Walks pdf_outputs/*/ and site_outputs/*/website/ for 5_nodes.json + 5_edges.json
-pairs, applies document-relative rewrites (e.g. "We" -> "Japan" in japan25.pdf),
-deduplicates actors across sources, and writes:
+Walks pdf_outputs/*/, site_outputs/*/, and news_outputs/*/ for 5_nodes.json +
+5_edges.json pairs, applies document-relative rewrites (e.g. "We" -> "Japan"
+in japan25.pdf), deduplicates actors across sources, collapses edges into
+logical edges with occurrence lists, joins news article dates from the news
+manifest, and writes:
 
     merged_outputs/
       combined_nodes.json       <- one record per canonical actor
-      combined_edges.json       <- all edges, with rewrites applied
+      combined_edges.json       <- one record per logical edge, with
+                                   occurrences[] listing every (source, page,
+                                   sentence, date) mention
       merge_report.json         <- diagnostics: rewrite counts, helix conflicts
-      network.html              <- combined pyvis visualisation
+
+The output is consumed by the frontend UI (vis-network) directly. We do not
+render an HTML preview here -- the UI is the renderer.
 
 Rewrites are configured in merge_rewrites.json next to this script. Edit it
 when you spot new patterns (a country's PDF using "we", a site using generic
@@ -19,7 +25,6 @@ rewrite change without writing files.
 Usage:
     python3 merge_all.py                          # write merged outputs
     python3 merge_all.py --dry-run                # show actions, don't write
-    python3 merge_all.py --no-network             # skip network.html generation
     python3 merge_all.py --rewrites custom.json   # use a non-default rewrite file
 """
 from __future__ import annotations
@@ -27,7 +32,6 @@ from __future__ import annotations
 import argparse
 import json
 import re
-import subprocess
 import sys
 from collections import Counter, defaultdict
 from pathlib import Path
@@ -268,14 +272,40 @@ def merge_nodes(
     return merged, diagnostics
 
 
+# Which relation labels are symmetric (undirected) vs directional.
+# Symmetric: (A, B, label) and (B, A, label) collapse to one edge.
+# Directional: (A, B, label) and (B, A, label) stay as two edges.
+SYMMETRIC_RELATIONS = {
+    "networking",
+    "collaboration_conflict_moderation",
+    "no_explicit_relation",
+}
+DIRECTIONAL_RELATIONS = {
+    "technology_transfer",
+    "collaborative_leadership",
+    "substitution",
+}
+
+
 def merge_edges(
     all_edges: list[tuple[dict, str]],
     rewrites: dict,
     merged_nodes: list[dict],
 ) -> list[dict]:
-    """Apply rewrites to edge actors, then dedupe.
+    """Collapse all edge mentions into one logical edge per
+    (source_actor, target_actor, relation_label, directional) tuple.
 
-    Also re-points source/target actor keys to the merged canonical keys.
+    Each logical edge carries an `occurrences` list -- every (source_document,
+    page, sentence, date, confidence) where this relation was extracted. The
+    UI renders one line per logical edge but can show "this connection
+    appears in N sources" via the occurrences list.
+
+    For symmetric relations (networking, etc.), (A, B) and (B, A) collapse to
+    the same logical edge; the pair is stored alphabetically for stability.
+    For directional relations (technology_transfer, etc.), the direction is
+    preserved.
+
+    Also resolves source/target actor names to merged canonical keys.
     """
     # Build alias -> canonical_actor_key lookup from merged nodes.
     alias_to_key: dict[str, str] = {}
@@ -290,6 +320,7 @@ def merge_edges(
         ck = canonical_key(name)
         return alias_to_key.get(ck, ck)
 
+    # First pass: apply rewrites and key resolution to every input edge.
     rewritten: list[dict] = []
     for edge, _label in all_edges:
         edge = dict(edge)
@@ -300,28 +331,117 @@ def merge_edges(
             edge[field] = new_name
         edge["source_actor_key"] = resolve_key(edge.get("source_actor", ""))
         edge["target_actor_key"] = resolve_key(edge.get("target_actor", ""))
+        # Drop edges that would self-loop after rewriting (e.g. "We" + "Japan"
+        # both rewritten to "Japan").
+        if edge["source_actor_key"] and edge["source_actor_key"] == edge["target_actor_key"]:
+            continue
         rewritten.append(edge)
 
-    # Dedup. Same logic as clean_interactions.dedupe_edges.
-    seen: set = set()
-    deduped: list[dict] = []
+    # Second pass: group into logical edges.
+    # Key shape:
+    #   directional: ("dir", source_key, target_key, label)
+    #   symmetric:   ("sym", min(s,t), max(s,t), label)
+    # The `directional` boolean is also recorded on the output for the UI.
+    grouped: dict[tuple, dict] = {}
     for edge in rewritten:
         s = edge.get("source_actor_key", "")
         t = edge.get("target_actor_key", "")
-        pair = tuple(sorted([s, t]))
-        key = (
-            pair,
-            (edge.get("interaction_phrase", "") or "").strip().lower(),
-            (edge.get("occurrence_sentence", "") or "").strip().lower(),
-            str(edge.get("source_document", "")).strip(),
-            str(edge.get("page", "")).strip(),
-        )
-        if key in seen:
+        if not s or not t:
             continue
-        seen.add(key)
-        deduped.append(edge)
+        label = edge.get("relation_label", "no_explicit_relation")
+        is_directional = label in DIRECTIONAL_RELATIONS
 
-    return deduped
+        if is_directional:
+            group_key = ("dir", s, t, label)
+            canon_s, canon_t = s, t
+            canon_src_name = edge.get("source_actor", "")
+            canon_tgt_name = edge.get("target_actor", "")
+        else:
+            # Stable ordering: alphabetical by key. Picks one of the two
+            # actor names as the canonical "source" side for display, but
+            # the UI should treat both ends equivalently.
+            if s <= t:
+                canon_s, canon_t = s, t
+                canon_src_name = edge.get("source_actor", "")
+                canon_tgt_name = edge.get("target_actor", "")
+            else:
+                canon_s, canon_t = t, s
+                canon_src_name = edge.get("target_actor", "")
+                canon_tgt_name = edge.get("source_actor", "")
+            group_key = ("sym", canon_s, canon_t, label)
+
+        occurrence = {
+            "source_document": edge.get("source_document", ""),
+            "page": edge.get("page"),
+            "interaction_phrase": edge.get("interaction_phrase", ""),
+            "occurrence_sentence": edge.get("occurrence_sentence", ""),
+            "source_date": edge.get("source_date", ""),
+            "relation_label_confidence": edge.get("relation_label_confidence", ""),
+            # Preserve the original direction so the UI can show "X did Y to Z"
+            # even when the logical edge is stored canonically.
+            "source_actor": edge.get("source_actor", ""),
+            "target_actor": edge.get("target_actor", ""),
+        }
+
+        if group_key in grouped:
+            grouped[group_key]["occurrences"].append(occurrence)
+        else:
+            grouped[group_key] = {
+                "source_actor_key": canon_s,
+                "target_actor_key": canon_t,
+                "source_actor": canon_src_name,
+                "target_actor": canon_tgt_name,
+                "relation_label": label,
+                "directional": is_directional,
+                "occurrences": [occurrence],
+            }
+
+    # Deduplicate occurrences within each logical edge (same source_document
+    # + page + sentence is the same fact picked up twice; collapse).
+    for edge in grouped.values():
+        seen: set = set()
+        unique: list[dict] = []
+        for occ in edge["occurrences"]:
+            key = (
+                str(occ.get("source_document", "")).strip(),
+                str(occ.get("page", "")).strip(),
+                (occ.get("occurrence_sentence", "") or "").strip().lower(),
+            )
+            if key in seen:
+                continue
+            seen.add(key)
+            unique.append(occ)
+        edge["occurrences"] = unique
+
+        # Convenience aggregates for the UI / source-filter:
+        #  - source_documents: list of unique source docs (in order of first appearance)
+        #  - occurrence_count: how many distinct mentions
+        #  - first_seen / last_seen: earliest and latest dated occurrence
+        srcs_seen: list[str] = []
+        seen_set: set = set()
+        dates: list[str] = []
+        for occ in unique:
+            sd = occ.get("source_document", "")
+            if sd and sd not in seen_set:
+                seen_set.add(sd)
+                srcs_seen.append(sd)
+            d = occ.get("source_date", "")
+            if d:
+                dates.append(d)
+        edge["source_documents"] = srcs_seen
+        edge["occurrence_count"] = len(unique)
+        if dates:
+            edge["first_seen"] = min(dates)
+            edge["last_seen"] = max(dates)
+
+    return sorted(
+        grouped.values(),
+        key=lambda e: (e["source_actor_key"], e["target_actor_key"], e["relation_label"]),
+    )
+
+
+SYMMETRIC_RELATIONS_DOC = SYMMETRIC_RELATIONS  # exported for tests / introspection
+DIRECTIONAL_RELATIONS_DOC = DIRECTIONAL_RELATIONS
 
 
 # --------------------------------------------------------------------------
@@ -344,10 +464,6 @@ def main():
     parser.add_argument(
         "--dry-run", action="store_true",
         help="Print what would be done; don't write any files.",
-    )
-    parser.add_argument(
-        "--no-network", action="store_true",
-        help="Skip running network.py at the end.",
     )
     args = parser.parse_args()
 
@@ -382,14 +498,10 @@ def main():
 
     print(f"\nLoaded {len(all_nodes)} node records and {len(all_edges)} edge records.")
 
-    merged_nodes, diagnostics = merge_nodes(all_nodes, rewrites)
-    merged_edges = merge_edges(all_edges, rewrites, merged_nodes)
-
-    # Load the news manifest (URL -> {date, title, slug}) if it exists, and
-    # join article dates onto each node and edge whose source_document matches
-    # a news URL. Done at merge time rather than extraction time so the date
-    # stays out of the per-doc pipeline; it's metadata about the article, not
-    # about the extracted actors/interactions inside it.
+    # Load the news manifest (URL -> {date, title, slug}) so we can attach
+    # article dates to each raw edge before they're grouped into occurrences.
+    # Done before merge_edges so the dates flow into the occurrences list
+    # naturally, and we can compute first_seen / last_seen per logical edge.
     news_manifest_path = root / "news_outputs" / "manifest.json"
     if news_manifest_path.exists():
         try:
@@ -404,14 +516,19 @@ def main():
         url_to_date = {
             url: meta.get("date", "") for url, meta in news_manifest.items()
         }
-        # Edges have a single source_document -> single date.
-        for e in merged_edges:
-            sd = e.get("source_document", "")
+        for raw_edge, _label in all_edges:
+            sd = raw_edge.get("source_document", "")
             if sd in url_to_date and url_to_date[sd]:
-                e["source_date"] = url_to_date[sd]
-        # Nodes have source_documents (plural -- merged across articles). Join
-        # the union of dates so the viz can filter "actor appears in any
-        # article in this range" or "actor's earliest mention is...".
+                raw_edge["source_date"] = url_to_date[sd]
+    else:
+        url_to_date = {}
+
+    merged_nodes, diagnostics = merge_nodes(all_nodes, rewrites)
+    merged_edges = merge_edges(all_edges, rewrites, merged_nodes)
+
+    # Inject the same dates onto merged nodes (each node's source_documents
+    # gives a list of URLs/PDFs; intersect with the manifest to get dates).
+    if url_to_date:
         for n in merged_nodes:
             sds = n.get("source_documents") or []
             dates = sorted({url_to_date[sd] for sd in sds if sd in url_to_date and url_to_date[sd]})
@@ -419,12 +536,12 @@ def main():
                 n["source_dates"] = dates
                 n["earliest_date"] = dates[0]
                 n["latest_date"] = dates[-1]
-        joined_edges = sum(1 for e in merged_edges if "source_date" in e)
         joined_nodes = sum(1 for n in merged_nodes if "source_dates" in n)
+        joined_edges = sum(1 for e in merged_edges if "first_seen" in e)
         print(f"\nJoined article dates from news manifest: "
               f"{joined_nodes} nodes, {joined_edges} edges tagged.")
 
-    print(f"\nAfter merge: {len(merged_nodes)} unique actors, {len(merged_edges)} unique edges.")
+    print(f"\nAfter merge: {len(merged_nodes)} unique actors, {len(merged_edges)} unique logical edges.")
 
     if diagnostics["rewrites_applied"]:
         print("\nRewrites applied:")
@@ -470,27 +587,7 @@ def main():
     print(f"\nWrote {out_dir / 'combined_nodes.json'}")
     print(f"Wrote {out_dir / 'combined_edges.json'}")
     print(f"Wrote {out_dir / 'merge_report.json'}")
-
-    if args.no_network:
-        return
-
-    # network.py expects 5_nodes.json / 5_edges.json in cwd, so symlink (or copy).
-    nodes_link = out_dir / "5_nodes.json"
-    edges_link = out_dir / "5_edges.json"
-    nodes_link.write_text((out_dir / "combined_nodes.json").read_text(encoding="utf-8"), encoding="utf-8")
-    edges_link.write_text((out_dir / "combined_edges.json").read_text(encoding="utf-8"), encoding="utf-8")
-
-    network_script = root / "network.py"
-    if not network_script.exists():
-        print(f"\nSkipping network.html: {network_script} not found.")
-        return
-
-    print("\nRunning network.py to render combined graph...")
-    subprocess.run([sys.executable, str(network_script)], cwd=out_dir, check=True)
-    html = out_dir / "quantum_network.html"
-    if html.exists():
-        html.rename(out_dir / "network.html")
-    print(f"Wrote {out_dir / 'network.html'}")
+    print("\nDone. Open the frontend UI to explore the merged graph.")
 
 
 if __name__ == "__main__":
