@@ -280,6 +280,21 @@ button:hover {
   box-shadow: 0 16px 36px rgba(35, 132, 255, 0.34);
 }
 
+#resetBtn {
+  color: #06101f;
+  background: var(--text-accent);
+  border: 1px solid rgba(143, 199, 255, 0.28);
+  box-shadow: 0 12px 28px rgba(143, 199, 255, 0.18);
+}
+
+#resetBtn:hover {
+  transform: translateY(-1px);
+  filter: none;
+  background: #a7d4ff;
+  border-color: rgba(143, 199, 255, 0.42);
+  box-shadow: 0 16px 34px rgba(143, 199, 255, 0.26);
+}
+
 .metric-grid {
   display: grid;
   grid-template-columns: 1fr;

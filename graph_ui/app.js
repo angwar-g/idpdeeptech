@@ -208,8 +208,9 @@ function createSearchableMultiSelect(config) {
     caret.addEventListener("click", event => {
       event.preventDefault();
       event.stopPropagation();
+      const wasOpen = root.classList.contains("open");
       input.focus();
-      root.classList.contains("open") ? closeMenu() : openMenu();
+      wasOpen ? closeMenu() : openMenu();
     });
   }
 
