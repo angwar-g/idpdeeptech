@@ -137,32 +137,109 @@
   ],
   "input_node_records": 6899,
   "input_edge_records": 5134,
-  "output_unique_actors": 4903,
-  "output_unique_edges": 2136,
+  "output_unique_actors": 4830,
+  "output_unique_edges": 2042,
   "rewrites_applied": {
-    "*: ^(.{2,}?),? (ltd\\.?|limited|gmbh|llc|inc\\.?|incorporated|corp\\.?|corporation|s\\.a\\.|sas|s\\.r\\.l\\.|ag|kg|kgaa|pty ltd|pte ltd|bv|nv|oy|ab|spa|plc)$ -> $1": 166,
+    "*: ^(.{2,}?),? (ltd\\.?|limited|gmbh|llc|inc\\.?|incorporated|corp\\.?|corporation|s\\.a\\.|sas|s\\.r\\.l\\.|ag|kg|kgaa|pty ltd|pte ltd|bv|nv|oy|ab|spa|plc|kk|kft|sa|sl|srl|sro|asa|holdings|holding)$ -> $1": 170,
+    "*: ^fraunhofer research fab microelectronics germany \\(fmd\\)$ -> FMD": 1,
+    "*: ^fraunhofer-einrichtung für mikrosysteme und festkörper-technologien \\(emft\\)$ -> Fraunhofer EMFT": 1,
     "per-source rewrite chain": 4,
-    "*: ^microsoft (365|advertising|azure|bing|build|clarity|copilot|designer|developer|developer network|developer network \\(msdn\\)|edge|entra id|fabric|family safety|foundry|graph|ireland|ireland operations|learn|loop|m12|marketplace|office|office 365|office mobile|onedrive|onenote|outlook|places|power apps|power automate|power bi|power platform|powerpoint|sharepoint|start|store|teams|to do|viva|word|windows|excel|affiliates)$ -> Microsoft": 30,
+    "*: ^massachusetts institute of technology \\(mit\\)$ -> MIT": 15,
+    "*: ^netherlands organisation for applied scientific research \\(tno\\)$ -> TNO": 1,
+    "*: ^reserve bank of india \\(rbi\\)$ -> RBI": 1,
+    "*: ^association of southeast asian nations \\(asean\\)$ -> ASEAN": 1,
+    "*: ^silicon quantum computing \\(sqc\\)$ -> SQC": 2,
+    "*: ^centre national de la recherche scientifique \\(cnrs\\)$ -> CNRS": 2,
+    "*: ^commissariat à l'énergie atomique et aux énergies alternatives \\(cea\\)$ -> CEA": 3,
+    "*: ^grand equipement national de calcul intensif \\(genci\\)$ -> GENCI": 1,
+    "*: ^fraunhofer society$ -> Fraunhofer-Gesellschaft": 2,
+    "*: ^physikalisch-technische bundesanstalt \\(ptb\\)$ -> PTB": 2,
+    "*: ^defense advanced research projects agency \\(darpa\\)$ -> DARPA": 7,
+    "*: ^international organization for standardization \\(iso\\)$ -> ISO": 3,
+    "*: ^microsoft (365|advertising|azure|bing|build|clarity|copilot|designer|developer|developer network|developer network \\(msdn\\)|edge|entra id|fabric|family safety|foundry|graph|ireland|ireland operations|learn|loop|m12|marketplace|office|office 365|office mobile|onedrive|onenote|outlook|places|power apps|power automate|power bi|power platform|powerpoint|sharepoint|start|store|teams|to do|viva|word|windows|excel|affiliates|quantum network)$ -> Microsoft": 31,
+    "*: ^north atlantic treaty organization \\(nato\\)$ -> NATO": 3,
+    "*: ^interuniversity microelectronics centre \\(imec\\)$ -> IMEC": 1,
+    "*: ^quantum technology-based new industry creation council \\(q-star\\)$ -> Q-STAR": 1,
+    "*: ^national institute for basic biology \\(riken\\)$ -> RIKEN": 1,
+    "*: ^quantum economic development consortium \\(qed-c\\)$ -> QED-C": 4,
+    "*: ^quantum computation center \\(riken\\)$ -> RIKEN": 1,
+    "*: ^european telecommunications standards institute \\(etsi\\)$ -> ETSI": 1,
+    "*: ^national cyber security centre \\(ncsc\\)$ -> NCSC": 2,
+    "*: ^national quantum computing centre \\(nqcc\\)$ -> NQCC": 4,
+    "*: ^department of defense \\(dod\\)$ -> DOD": 4,
+    "*: ^national centre for scientific research \\(cnrs\\)$ -> CNRS": 1,
+    "*: ^united kingdom's national quantum computing centre \\(nqcc\\)$ -> NQCC": 1,
+    "*: ^uk national cyber security centre \\(ncsc\\)$ -> NCSC": 1,
+    "*: ^fraunhofer$ -> Fraunhofer-Gesellschaft": 3,
+    "*: ^taiwan semiconductor manufacturing company \\(tsmc\\)$ -> TSMC": 1,
+    "*: ^global quantum initiative \\(gqi\\)$ -> GQI": 1,
+    "*: ^joint institute for laboratory astrophysics \\(jila\\)$ -> JILA": 1,
+    "*: ^national security agency \\(nsa\\)$ -> NSA": 2,
+    "*: ^national institute of standard technology \\(nist\\)$ -> NIST": 1,
     "*: ^google (inc\\.?|llc|cloud|developers|doubleclick|analytics|search|workspace|maps|chrome|drive|gmail|advertising|ads|domains|workspace marketplace|store|recaptcha)$ -> Google": 18,
+    "*: ^national energy research scientific computing center \\(nersc\\)$ -> NERSC": 2,
+    "*: ^university of california, los angeles \\(ucla\\)$ -> UCLA": 1,
     "*: ^amazon (web services|web services, inc\\.?|web services \\(aws\\)|web services emea sarl|web services \\(aws\\) marketplace solutions)$ -> AWS": 11,
+    "*: ^alphabet (inc\\.?|inc\\.? \\(googl\\))$ -> Alphabet": 2,
+    "*: ^amazon\\.com (inc\\.?|inc\\.? \\(amzn\\))$ -> Amazon": 1,
     "*: ^honeywell (international|international inc\\.?|connected enterprise)$ -> Honeywell": 2,
     "*: ^microsoft corporation$ -> Microsoft": 2,
     "*: ^intel (corporation|inc\\.?|capital|foundation|ignite|labs|geti|automotive|data center group|inside®|news room|pride|vitality|core™|core™ ultra|developer catalog|nuc|partner alliance|partner showcase|server m50fcp family|trust authority|xeon®|® core™|® core™ ultra|® developer catalog|® nuc|® partner alliance|® partner showcase|® server m50fcp family|® trust authority|® xeon®)$ -> Intel": 13,
+    "*: ^hewlett-packard \\(hp\\)$ -> Hewlett-Packard": 1,
+    "*: ^hewlett packard enterprise \\(hpe\\)$ -> HPE": 2,
+    "*: ^fraunhofer institute for industrial engineering \\(fraunhofer iao\\)$ -> Fraunhofer IAO": 1,
     "*: ^fujitsu (limited|group|japan limited|corp\\.?|corporation|laboratories|research|distinguished engineers|sports|accelerator|blog|cross culture center|technology park|uvance|uvance kawasaki tower|ventures)$ -> Fujitsu": 16,
     "*: ^ibm (corp\\.?|corporation|inc\\.?|corporation \\(ibm\\)|business partners|champions|developer|cloud catalog|cloud support team|cio office|center for cloud training|cloud center for training enterprise subscription administrators|community advocacy|consulting|deutschland|education|fix central|granite\\.code|instana observability path|japan,?|learning individual subscription with coursera|partner|partner ecosystem|partner plus|partner plus program|partner portal|partner program|partnerplus|passport advantage|redbooks|skills network|support|support portal|sustainability software|techxchange community|techxchange event attendees|techxchange rewards program - formerly known as ibm learn 'n score program|technology|training|tutorials|user groups|verify|webinar series|bob)$ -> IBM": 24,
+    "*: ^semiconductor research corporation \\(src\\)$ -> SRC": 1,
+    "*: ^accenture \\(acn\\)$ -> Accenture": 1,
+    "*: ^airbus se \\(air\\) \\(eads\\)$ -> Airbus": 1,
     "*: ^amazon \\(amzn\\)$ -> Amazon": 1,
+    "*: ^hyundai \\(hyundai\\)$ -> Hyundai": 1,
+    "*: ^hyundai motor group \\(hmg\\)$ -> Hyundai Motor Group": 1,
     "*: ^thales group \\(epa:ho\\) \\(thales sa\\)$ -> Thales": 1,
+    "*: ^us national security agency \\(nsa\\)$ -> NSA": 1,
+    "*: ^international data corporation \\(idc\\)$ -> IDC": 1,
+    "*: ^vtt technical research centre of finland \\(vtt\\)$ -> VTT": 1,
     "*: ^microsoft corp\\.?$ -> Microsoft": 1,
-    "*: ^siemens ag$ -> Siemens": 1
+    "*: ^siemens ag$ -> Siemens": 1,
+    "*: ^glaxosmithkline \\(gsk\\)$ -> GlaxoSmithKline": 1,
+    "*: ^fraunhofer institute$ -> Fraunhofer-Gesellschaft": 1,
+    "*: ^fraunhofer institute for applied solid state physics \\(fraunhofer iaf\\)$ -> Fraunhofer IAF": 1,
+    "*: ^fraunhofer institute for integrated circuits \\(fraunhofer iis\\)$ -> Fraunhofer IIS": 1,
+    "*: ^électricité de france \\(edf\\)$ -> EDF": 1,
+    "*: ^oxford quantum circuits \\(oqc\\)$ -> OQC": 1,
+    "*: ^uk national quantum computing centre \\(nqcc\\)$ -> NQCC": 1,
+    "*: ^university college london \\(ucl\\)$ -> UCL": 1,
+    "*: ^association for computing machinery \\(acm\\)$ -> ACM": 1,
+    "*: ^computing research association \\(cra\\)$ -> CRA": 1,
+    "*: ^american institute of certified public accountants \\(aicpa\\)$ -> AICPA": 1
   },
   "actors_dropped": {
     "*: ^universities$ -> [drop]": 19,
-    "*: academia -> [drop]": 7,
+    "*: ^academia$ -> [drop]": 3,
+    "*: ^(the )?eu$ -> [drop_if_unmapped]": 3,
+    "*: ^[a-z0-9\\-]+\\.(com|org|net|io|tech|ai|co|ca|uk|de|fr)$ -> [drop]": 17,
+    "*: ^(the )?uk$ -> [drop_if_unmapped]": 9,
+    "*: ^europe$ -> [drop]": 11,
     "*: ^(the )?federal government$ -> [drop_if_unmapped]": 3,
     "*: ^(the )?parliament$ -> [drop_if_unmapped]": 2,
+    "*: ^european$ -> [drop]": 1,
     "*: ^(the )?government$ -> [drop_if_unmapped]": 2,
+    "*: ^users$ -> [drop]": 3,
+    "*: ^countries$ -> [drop]": 1,
+    "*: ^industry$ -> [drop]": 1,
     "*: ^(the )?ministry$ -> [drop_if_unmapped]": 1,
-    "*: ^us$ -> [drop]": 2
+    "*: ^employer$ -> [drop]": 1,
+    "*: ^municipality$ -> [drop]": 1,
+    "*: ^country$ -> [drop]": 1,
+    "*: ^admin$ -> [drop]": 1,
+    "*: ^us$ -> [drop]": 2,
+    "*: ^community$ -> [drop]": 1,
+    "*: ^citizens$ -> [drop]": 1,
+    "*: ^quantum$ -> [drop]": 1,
+    "*: ^[a-z0-9\\-]+\\.[a-z]+\\.(com|org|net|io|tech|ai|co)$ -> [drop]": 2,
+    "*: ^nation-states$ -> [drop]": 1,
+    "*: ^nations$ -> [drop]": 1
   },
   "helix_conflicts": [
     {
@@ -176,6 +253,19 @@
       "source_documents": [
         "BadenWurttemberg.pdf",
         "Luis_Germany23.pdf"
+      ]
+    },
+    {
+      "entity": "ACM",
+      "canonical_actor_key": "acm",
+      "helixes": [
+        "Civil Society",
+        "Unknown"
+      ],
+      "chosen_helix": "Civil Society",
+      "source_documents": [
+        "https://www.pasqal.com/publications",
+        "https://www.quera.com/news"
       ]
     },
     {
@@ -322,6 +412,19 @@
       ]
     },
     {
+      "entity": "ASEAN",
+      "canonical_actor_key": "asean",
+      "helixes": [
+        "Government",
+        "Unknown"
+      ],
+      "chosen_helix": "Government",
+      "source_documents": [
+        "Luis_Australia23.pdf",
+        "japan25.pdf"
+      ]
+    },
+    {
       "entity": "Australia",
       "canonical_actor_key": "australia",
       "helixes": [
@@ -446,6 +549,21 @@
       ]
     },
     {
+      "entity": "CEA",
+      "canonical_actor_key": "cea",
+      "helixes": [
+        "Academia",
+        "Government"
+      ],
+      "chosen_helix": "Academia",
+      "source_documents": [
+        "Luis_France21.pdf",
+        "https://alice-bob.com/thats-us",
+        "https://parityqc.com/hpcqs-project-inauguration-of-jade-and-ruby-quantum-processors",
+        "https://www.quandela.com/products-and-services/belenos"
+      ]
+    },
+    {
       "entity": "CERN",
       "canonical_actor_key": "cern",
       "helixes": [
@@ -526,20 +644,6 @@
       ]
     },
     {
-      "entity": "Commissariat à l'énergie atomique et aux énergies alternatives (CEA)",
-      "canonical_actor_key": "commissariat l nergie atomique et aux nergies alternatives",
-      "helixes": [
-        "Academia",
-        "Government"
-      ],
-      "chosen_helix": "Academia",
-      "source_documents": [
-        "Luis_France21.pdf",
-        "https://parityqc.com/hpcqs-project-inauguration-of-jade-and-ruby-quantum-processors",
-        "https://www.quandela.com/products-and-services/belenos"
-      ]
-    },
-    {
       "entity": "Cookiebot",
       "canonical_actor_key": "cookiebot",
       "helixes": [
@@ -554,6 +658,19 @@
         "https://pqshield.com/markets/system-integrators",
         "https://www.quandela.com/ko",
         "https://www.riverlane.com/jobs"
+      ]
+    },
+    {
+      "entity": "CRA",
+      "canonical_actor_key": "cra",
+      "helixes": [
+        "Civil Society",
+        "Government"
+      ],
+      "chosen_helix": "Government",
+      "source_documents": [
+        "https://www.cryptoquantique.com/products/quarklink-fleet-management",
+        "https://www.quintessencelabs.com/quantum-101"
       ]
     },
     {
@@ -721,28 +838,6 @@
         "https://q-ctrl.com/boulder-opal",
         "https://q2b.qcware.com/conference/2025-silicon-valley",
         "https://quantware.com/news/elevate-quantum-and-partners-launch-us-first-qoa-system-in-record-time"
-      ]
-    },
-    {
-      "entity": "Europe",
-      "canonical_actor_key": "europe",
-      "helixes": [
-        "Industry",
-        "Unknown"
-      ],
-      "chosen_helix": "Industry",
-      "source_documents": [
-        "Luis_France21.pdf",
-        "Luis_Germany18.pdf",
-        "Luis_Korea23.pdf",
-        "Luis_Spain25.pdf",
-        "https://alice-bob.com/blog/scaling-the-cats-quantum-engineering-at-infrastructure-scale",
-        "https://q2b.qcware.com/conference/2025-paris",
-        "https://sparrowquantum.com/post/forbes-is-europe-poised-to-lead-the-quantum-computing-race",
-        "https://www.qnulabs.com/quantum-security-platform/qverse-quantum-safe-messaging-collaboration-platform",
-        "https://www.quixquantum.com/news/quix-quantum-introduces-pacu-a-photonic-assembly-control-unit-for-scalable-quantum-systems",
-        "https://www.spinquanta.com/news",
-        "japan25.pdf"
       ]
     },
     {
@@ -1029,6 +1124,19 @@
       ]
     },
     {
+      "entity": "GQI",
+      "canonical_actor_key": "gqi",
+      "helixes": [
+        "Academia",
+        "Unknown"
+      ],
+      "chosen_helix": "Academia",
+      "source_documents": [
+        "UNESCO26.pdf",
+        "https://q2b.qcware.com/conference/2025-tokyo"
+      ]
+    },
+    {
       "entity": "Helium",
       "canonical_actor_key": "helium",
       "helixes": [
@@ -1165,6 +1273,7 @@
       "chosen_helix": "Civil Society",
       "source_documents": [
         "https://global.fujitsu/en-global/about",
+        "https://iqm.tech/products/iqm-spark",
         "https://www.dwavequantum.com/solutions-and-products/cloud-platform",
         "https://www.dwavequantum.com/solutions-and-products/systems",
         "https://www.ibm.com/services/technology-lifecycle-services",
@@ -1339,6 +1448,19 @@
       "source_documents": [
         "https://eeroq.com/governor-j-b-pritzker-visits-eeroq-hq",
         "https://www.psiquantum.com/news-import/psiquantum-breaks-ground-chicago"
+      ]
+    },
+    {
+      "entity": "JILA",
+      "canonical_actor_key": "jila",
+      "helixes": [
+        "Academia",
+        "Intermediary"
+      ],
+      "chosen_helix": "Academia",
+      "source_documents": [
+        "USA24.pdf",
+        "https://atom-computing.com/about-us"
       ]
     },
     {
@@ -1523,6 +1645,7 @@
       "helixes": [
         "Government",
         "Industry",
+        "Intermediary",
         "Unknown"
       ],
       "chosen_helix": "Industry",
@@ -1539,6 +1662,7 @@
         "https://iqm.tech/careers/life-at-iqm",
         "https://photonic.com/products",
         "https://quantum-south.com",
+        "https://quantum-south.com/about-us-2",
         "https://seeqc.com/whitepaper",
         "https://www.bluequbit.io/blog/quantum-computing-applications",
         "https://www.bluequbit.io/blog/quantum-computing-companies",
@@ -1600,22 +1724,6 @@
       "source_documents": [
         "https://infleqtion.com/inertial-sensing",
         "https://www.bqpsim.com/press"
-      ]
-    },
-    {
-      "entity": "National Quantum Computing Centre (NQCC)",
-      "canonical_actor_key": "national quantum computing centre",
-      "helixes": [
-        "Academia",
-        "Government"
-      ],
-      "chosen_helix": "Government",
-      "source_documents": [
-        "GlobalQuantumStrategies26.pdf",
-        "Luis_UK23.pdf",
-        "UK24.pdf",
-        "https://ionq.com",
-        "https://seeqc.com/resources/seeqc-and-the-nqcc-announce-first-digital-interface-system-for-scalable-quantum-error-correction-in-collaboration-with-nvidia"
       ]
     },
     {
@@ -1763,6 +1871,24 @@
       ]
     },
     {
+      "entity": "NQCC",
+      "canonical_actor_key": "nqcc",
+      "helixes": [
+        "Academia",
+        "Government"
+      ],
+      "chosen_helix": "Government",
+      "source_documents": [
+        "Luis_UK23.pdf",
+        "OECD25.pdf",
+        "UK24.pdf",
+        "https://ionq.com",
+        "https://quantummotion.com/series-c-funding",
+        "https://seeqc.com/resources/seeqc-and-the-nqcc-announce-first-digital-interface-system-for-scalable-quantum-error-correction-in-collaboration-with-nvidia",
+        "https://sparrowquantum.com/technology"
+      ]
+    },
+    {
       "entity": "Office",
       "canonical_actor_key": "office",
       "helixes": [
@@ -1894,19 +2020,6 @@
       ]
     },
     {
-      "entity": "Physikalisch-Technische Bundesanstalt (PTB)",
-      "canonical_actor_key": "physikalisch technische bundesanstalt",
-      "helixes": [
-        "Academia",
-        "Government"
-      ],
-      "chosen_helix": "Government",
-      "source_documents": [
-        "Luis_Germany18.pdf",
-        "Luis_Germany23.pdf"
-      ]
-    },
-    {
       "entity": "PRX Quantum",
       "canonical_actor_key": "prx quantum",
       "helixes": [
@@ -1920,6 +2033,19 @@
       ]
     },
     {
+      "entity": "PTB",
+      "canonical_actor_key": "ptb",
+      "helixes": [
+        "Academia",
+        "Government"
+      ],
+      "chosen_helix": "Academia",
+      "source_documents": [
+        "Luis_Germany18.pdf",
+        "Luis_Germany23.pdf"
+      ]
+    },
+    {
       "entity": "Q-STAR",
       "canonical_actor_key": "q star",
       "helixes": [
@@ -1928,6 +2054,7 @@
       ],
       "chosen_helix": "Intermediary",
       "source_documents": [
+        "Luis_Japan22.pdf",
         "Luis_Japan23.pdf",
         "Luis_Japan24.pdf",
         "https://q2b.qcware.com/conference/2025-tokyo"
@@ -1975,10 +2102,14 @@
         "Academia",
         "Intermediary"
       ],
-      "chosen_helix": "Academia",
+      "chosen_helix": "Intermediary",
       "source_documents": [
+        "Luis_Japan23.pdf",
+        "Luis_USA22.pdf",
         "USA24.pdf",
-        "https://q2b.qcware.com/conference/2025-silicon-valley"
+        "USA26.pdf",
+        "https://q2b.qcware.com/conference/2025-silicon-valley",
+        "https://seeqc.com/whitepaper"
       ]
     },
     {
@@ -2015,22 +2146,18 @@
       ]
     },
     {
-      "entity": "Quantum Economic Development Consortium (QED-C)",
+      "entity": "Quantum Economic Development Consortium (QEDC)",
       "canonical_actor_key": "quantum economic development consortium",
       "helixes": [
         "Academia",
         "Civil Society",
         "Intermediary"
       ],
-      "chosen_helix": "Intermediary",
+      "chosen_helix": "Academia",
       "source_documents": [
-        "Luis_Japan23.pdf",
-        "Luis_USA22.pdf",
-        "USA26.pdf",
         "china25.pdf",
         "https://infleqtion.com",
-        "https://kiutra.com/characterization-white-paper",
-        "https://seeqc.com/whitepaper"
+        "https://kiutra.com/characterization-white-paper"
       ]
     },
     {
@@ -2172,20 +2299,6 @@
       ]
     },
     {
-      "entity": "Silicon Quantum Computing (SQC)",
-      "canonical_actor_key": "silicon quantum computing",
-      "helixes": [
-        "Academia",
-        "Industry"
-      ],
-      "chosen_helix": "Academia",
-      "source_documents": [
-        "Luis_Australia23.pdf",
-        "https://www.sqc.com.au/news/silicon-quantum-computing-awarded-darpa-qbi-contract",
-        "https://www.sqc.com.au/news/sqc-x-amd"
-      ]
-    },
-    {
       "entity": "Simon Phillips",
       "canonical_actor_key": "simon phillips",
       "helixes": [
@@ -2246,8 +2359,23 @@
       ],
       "chosen_helix": "Industry",
       "source_documents": [
+        "Luis_Australia23.pdf",
         "https://www.ionq.com",
-        "https://www.sqc.com.au/career/7709888"
+        "https://www.sqc.com.au/career/7709888",
+        "https://www.sqc.com.au/news/sqc-x-amd"
+      ]
+    },
+    {
+      "entity": "SRC",
+      "canonical_actor_key": "src",
+      "helixes": [
+        "Academia",
+        "Industry"
+      ],
+      "chosen_helix": "Academia",
+      "source_documents": [
+        "https://www.bqpsim.com/press-old",
+        "https://www.thailand.intel.com/content/www/th/th/research/partnerships.html"
       ]
     },
     {
@@ -2339,27 +2467,6 @@
         "https://seeqc.com/whitepaper",
         "https://www.psiquantum.com/news-import/us-department-of-commerce",
         "japan25.pdf"
-      ]
-    },
-    {
-      "entity": "UK",
-      "canonical_actor_key": "uk",
-      "helixes": [
-        "Academia",
-        "Industry",
-        "Unknown"
-      ],
-      "chosen_helix": "Academia",
-      "source_documents": [
-        "India25.pdf",
-        "Luis_UK23.pdf",
-        "UK24.pdf",
-        "https://kets-quantum.com/kets-response-to-the-ncsc-quantum-key-distribution-whitepaper",
-        "https://oqc.tech/company/series-c-fundraise",
-        "https://orcacomputing.com/careers",
-        "https://quantummotion.com/quiche-project-uk-germany-collaboration-bringing-chemistry-software-into-the-quantum-computing-era",
-        "https://www.psiquantum.com/news-import/category/Company",
-        "https://www.riverlane.com/newsroom"
       ]
     },
     {
