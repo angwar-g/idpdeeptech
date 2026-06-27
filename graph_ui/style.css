@@ -282,30 +282,63 @@ button:hover {
 
 .metric-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   gap: 10px;
 }
 
 .metric-card {
-  padding: 13px;
+  display: grid;
+  grid-template-columns: minmax(0, 72px) minmax(0, 1fr);
+  align-items: center;
+  gap: 12px;
+  min-width: 0;
+  padding: 13px 14px;
   border-radius: 13px;
-  background: rgba(255, 255, 255, 0.055);
+  background:
+    linear-gradient(180deg, rgba(143, 199, 255, 0.09), rgba(255, 255, 255, 0.035));
   border: 1px solid var(--border-soft);
-}
-
-.metric-card span {
-  display: block;
-  font-size: 24px;
-  font-weight: 800;
-  letter-spacing: -0.7px;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.055);
 }
 
 .metric-card small {
+  display: block;
+  margin: 0;
   color: var(--text-muted);
   font-size: 11px;
   font-weight: 700;
   letter-spacing: 0.8px;
   text-transform: uppercase;
+}
+
+.metric-ratio {
+  display: flex;
+  align-items: baseline;
+  justify-content: flex-end;
+  gap: 6px;
+  min-width: 0;
+  white-space: nowrap;
+}
+
+.metric-ratio b {
+  min-width: 0;
+  color: #f5f9ff;
+  font-size: 23px;
+  font-weight: 800;
+  letter-spacing: 0;
+  line-height: 1;
+}
+
+.metric-ratio b:last-child {
+  color: #9bb8d9;
+  font-size: 16px;
+  font-weight: 750;
+}
+
+.metric-ratio em {
+  color: rgba(143, 199, 255, 0.56);
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 800;
 }
 
 .legend-item {
@@ -386,15 +419,26 @@ main {
   min-height: 0;
   overflow: hidden;
   border-radius: 14px;
-  background: #fbfcff;
-  border: 1px solid rgba(156, 174, 198, 0.36);
+  background:
+    radial-gradient(circle at 15% 10%, rgba(29, 73, 121, 0.56), transparent 34%),
+    radial-gradient(circle at 80% 92%, rgba(10, 88, 120, 0.18), transparent 30%),
+    linear-gradient(145deg, #08131f 0%, #07111d 60%, #040913 100%);
+  border: 1px solid rgba(156, 194, 255, 0.20);
   box-shadow:
-    inset 0 1px 0 rgba(255, 255, 255, 0.86),
-    0 24px 65px rgba(0, 0, 0, 0.22);
+    inset 0 1px 0 rgba(255, 255, 255, 0.06),
+    0 24px 65px rgba(0, 0, 0, 0.36);
 }
 
 .graph-card::before {
-  content: none;
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background-image:
+    linear-gradient(rgba(255,255,255,0.025) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.025) 1px, transparent 1px);
+  background-size: 34px 34px;
+  mask-image: linear-gradient(to bottom, rgba(0,0,0,0.42), transparent 70%);
 }
 
 #network {
@@ -544,24 +588,42 @@ main {
   position: absolute;
   top: 8px;
   right: 8px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   width: 28px;
   height: 28px;
   margin: 0;
   padding: 0;
-  color: #dcecff;
-  font-size: 18px;
-  line-height: 1;
-  border: 0;
+  color: transparent;
+  font-size: 0;
+  line-height: 0;
+  border: 1px solid rgba(143, 199, 255, 0.18);
   border-radius: 8px;
-  background: rgba(255, 255, 255, 0.08);
+  background: rgba(143, 199, 255, 0.10);
   box-shadow: none;
+}
+
+.select-caret::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border-right: 2px solid #dcecff;
+  border-bottom: 2px solid #dcecff;
+  transform: translateY(-2px) rotate(45deg);
+  transition: transform 0.15s ease, border-color 0.15s ease;
 }
 
 .select-caret:hover {
   transform: none;
   filter: none;
-  background: rgba(255, 255, 255, 0.16);
+  border-color: rgba(143, 199, 255, 0.36);
+  background: rgba(143, 199, 255, 0.18);
   box-shadow: none;
+}
+
+.search-select.open .select-caret::before {
+  transform: translateY(2px) rotate(225deg);
 }
 
 .select-chip {
@@ -624,7 +686,7 @@ main {
 
 .search-actions {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   gap: 6px;
   padding: 0 0 6px;
   margin-bottom: 5px;

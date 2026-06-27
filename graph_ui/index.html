@@ -25,7 +25,7 @@
       <div class="search-select" id="sourceSelect">
         <div class="selected-chips" id="selectedSources"></div>
         <input id="sourceSearch" type="text" placeholder="Search PDFs, e.g. Japan" autocomplete="off" />
-        <button type="button" class="select-caret" aria-label="Open PDF source options">⌄</button>
+        <button type="button" class="select-caret" aria-label="Open PDF source options"></button>
         <div class="search-options" id="sourceOptions" role="listbox"></div>
       </div>
 
@@ -33,7 +33,7 @@
       <div class="search-select" id="actorSelect">
         <div class="selected-chips" id="selectedActors"></div>
         <input id="actorSearch" type="text" placeholder="Search actors, e.g. IBM" autocomplete="off" />
-        <button type="button" class="select-caret" aria-label="Open actor options">⌄</button>
+        <button type="button" class="select-caret" aria-label="Open actor options"></button>
         <div class="search-options" id="actorOptions" role="listbox"></div>
       </div>
 
@@ -41,7 +41,7 @@
       <div class="search-select" id="yearSelect">
         <div class="selected-chips" id="selectedYears"></div>
         <input id="yearSearch" type="text" placeholder="Search years, e.g. 2025" autocomplete="off" />
-        <button type="button" class="select-caret" aria-label="Open year options">⌄</button>
+        <button type="button" class="select-caret" aria-label="Open year options"></button>
         <div class="search-options" id="yearOptions" role="listbox"></div>
       </div>
 
@@ -51,8 +51,22 @@
     <section class="panel-section compact">
       <div class="section-heading">Graph info</div>
       <div class="metric-grid">
-        <div class="metric-card"><span id="visibleNodeCount">0</span><small>Nodes</small></div>
-        <div class="metric-card"><span id="visibleEdgeCount">0</span><small>Edges</small></div>
+        <div class="metric-card">
+          <small>Nodes</small>
+          <span class="metric-ratio">
+            <b id="visibleNodeCount">0</b>
+            <em>/</em>
+            <b id="totalNodeMetric">0</b>
+          </span>
+        </div>
+        <div class="metric-card">
+          <small>Edges</small>
+          <span class="metric-ratio">
+            <b id="visibleEdgeCount">0</b>
+            <em>/</em>
+            <b id="totalEdgeMetric">0</b>
+          </span>
+        </div>
       </div>
       <p id="filterSummary" class="summary-text">Showing graph.</p>
     </section>
@@ -97,6 +111,6 @@
     </section>
   </main>
 
-  <script src="app.js?v=networkx-like-static-layout"></script>
+  <script src="app.js?v=networkx-like-static-layout-connected"></script>
 </body>
 </html>

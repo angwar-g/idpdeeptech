@@ -5,7 +5,7 @@ let sourceSelect = null;
 let actorSelect = null;
 let yearSelect = null;
 
-const FULL_NETWORK_SUMMARY = "Showing full network with static layout.";
+const FULL_NETWORK_SUMMARY = "Showing connected network without isolated actors.";
 
 Promise.all([
   fetch("../pipeline/merged_outputs/combined_nodes.json").then(assertOk).then(r => r.json()),
@@ -17,6 +17,8 @@ Promise.all([
 
     document.getElementById("totalNodeCount").textContent = `${nodes.length.toLocaleString()} total nodes`;
     document.getElementById("totalEdgeCount").textContent = `${edges.length.toLocaleString()} total edges`;
+    document.getElementById("totalNodeMetric").textContent = nodes.length.toLocaleString();
+    document.getElementById("totalEdgeMetric").textContent = edges.length.toLocaleString();
 
     sourceSelect = createSearchableMultiSelect({
       rootId: "sourceSelect",
@@ -192,8 +194,14 @@ function createSearchableMultiSelect(config) {
   });
 
   if (caret) {
+    caret.setAttribute("aria-expanded", "false");
+    caret.addEventListener("mousedown", event => {
+      event.preventDefault();
+    });
+
     caret.addEventListener("click", event => {
       event.preventDefault();
+      event.stopPropagation();
       input.focus();
       root.classList.contains("open") ? closeMenu() : openMenu();
     });
@@ -205,11 +213,13 @@ function createSearchableMultiSelect(config) {
 
   function openMenu() {
     root.classList.add("open");
+    if (caret) caret.setAttribute("aria-expanded", "true");
     renderMenu();
   }
 
   function closeMenu() {
     root.classList.remove("open");
+    if (caret) caret.setAttribute("aria-expanded", "false");
   }
 
   function renderChips() {
@@ -301,20 +311,7 @@ function createSearchableMultiSelect(config) {
       config.onChange();
     });
 
-    const clear = document.createElement("button");
-    clear.type = "button";
-    clear.textContent = "None";
-
-    clear.addEventListener("click", event => {
-      event.preventDefault();
-      selected.clear();
-      input.value = "";
-      renderChips();
-      renderMenu();
-      config.onChange();
-    });
-
-    row.append(selectAll, clear);
+    row.append(selectAll);
     return row;
   }
 
@@ -427,12 +424,32 @@ function resetFilters() {
 }
 
 function showFullNetwork() {
-  drawGraph(allNodes, allEdges, {
+  const connectedGraph = getConnectedGraph(allNodes, allEdges);
+
+  drawGraph(connectedGraph.nodes, connectedGraph.edges, {
     isFullNetwork: true,
     usePhysics: false
   });
 
-  updateFilterSummary(allNodes.length, allEdges.length, FULL_NETWORK_SUMMARY);
+  updateFilterSummary(connectedGraph.nodes.length, connectedGraph.edges.length, FULL_NETWORK_SUMMARY);
+}
+
+function getConnectedGraph(nodes, edges) {
+  const connectedActorKeys = new Set();
+
+  edges.forEach(edge => {
+    if (!edge.source_actor_key || !edge.target_actor_key) return;
+    connectedActorKeys.add(edge.source_actor_key);
+    connectedActorKeys.add(edge.target_actor_key);
+  });
+
+  return {
+    nodes: nodes.filter(node => connectedActorKeys.has(node.canonical_actor_key)),
+    edges: edges.filter(edge =>
+      connectedActorKeys.has(edge.source_actor_key) &&
+      connectedActorKeys.has(edge.target_actor_key)
+    )
+  };
 }
 
 function updateFilterSummary(nodeCount, edgeCount, message = "Showing graph.") {
@@ -483,20 +500,20 @@ function drawGraph(nodes, edges, settings = {}) {
       `,
       color: {
         background: getHelixColor(node.helix),
-        border: isFullNetwork ? "rgba(96, 115, 135, 0.42)" : "rgba(255,255,255,0.72)",
+        border: "rgba(255,255,255,0.72)",
         highlight: {
           background: getHelixColor(node.helix),
-          border: isFullNetwork ? "#2f6fb0" : "#ffffff"
+          border: "#ffffff"
         }
       },
-      borderWidth: isFullNetwork ? 0.5 : 1,
+      borderWidth: isFullNetwork ? 0.75 : 1,
       shape: "dot",
-      size: isFullNetwork ? getNodeSize(node) * 0.45 : getNodeSize(node),
+      size: isFullNetwork ? getNodeSize(node) * 0.62 : getNodeSize(node),
       font: {
         color: "#dcecff",
-        size: isFullNetwork ? 0 : 13,
+        size: isFullNetwork ? 11 : 13,
         face: "Inter, Arial",
-        strokeWidth: isFullNetwork ? 0 : 3,
+        strokeWidth: 3,
         strokeColor: "#06101f"
       },
       raw: node
@@ -559,7 +576,7 @@ function drawGraph(nodes, edges, settings = {}) {
       },
       color: {
         color: isFullNetwork
-          ? "rgba(128, 146, 170, 0.24)"
+          ? "rgba(151, 180, 218, 0.30)"
           : "rgba(151, 180, 218, 0.42)",
         highlight: "#9fd2ff",
         hover: "#9fd2ff"
@@ -567,7 +584,7 @@ function drawGraph(nodes, edges, settings = {}) {
       // Slightly thicker line for edges with many occurrences (visual signal
       // of how well-attested a relation is).
       width: isFullNetwork
-        ? 0.35
+        ? Math.min(1.8, 0.5 + Math.log2(occurrences.length + 1) * 0.25)
         : Math.min(3.5, 1.0 + Math.log2(occurrences.length + 1) * 0.6),
       smooth: {
         enabled: !isFullNetwork,
