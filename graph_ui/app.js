@@ -4,6 +4,9 @@ let network = null;
 let sourceSelect = null;
 let actorSelect = null;
 let yearSelect = null;
+let pendingFilterTimer = null;
+let pendingPreparingTimer = null;
+const searchableSelects = [];
 
 const FULL_NETWORK_SUMMARY = "Showing connected network without isolated actors.";
 const HELIX_TYPES = [
@@ -33,7 +36,10 @@ Promise.all([
       optionsId: "sourceOptions",
       emptyText: "No matching sources",
       defaultText: "Type to search sources",
-      onChange: applyFilters
+      onChange() {
+        updateActorFilterOptions();
+        scheduleApplyFilters();
+      }
     });
 
     actorSelect = createSearchableMultiSelect({
@@ -43,7 +49,7 @@ Promise.all([
       optionsId: "actorOptions",
       emptyText: "No matching actors",
       defaultText: "Type to search actors",
-      onChange: applyFilters
+      onChange: scheduleApplyFilters
     });
 
     yearSelect = createSearchableMultiSelect({
@@ -53,7 +59,7 @@ Promise.all([
       optionsId: "yearOptions",
       emptyText: "No matching years",
       defaultText: "Type to search years",
-      onChange: applyFilters
+      onChange: scheduleApplyFilters
     });
 
     populateFilters(nodes, edges);
@@ -100,28 +106,22 @@ function yearsForEdge(edge) {
 }
 
 function populateFilters(nodes, edges) {
-  // Collect every distinct source document across all edges.
-  const allSources = new Set();
+  // Collect source websites/documents across all edges and nodes. URLs are
+  // grouped by hostname so different pages of one website appear together.
+  const allSources = new Map();
   edges.forEach(edge => {
     (edge.source_documents || []).forEach(sd => {
-      if (sd) allSources.add(sd);
+      addSourceOption(allSources, sd);
     });
   });
   // Also include actor sources (an actor may appear in a doc with no edges).
   nodes.forEach(node => {
     (node.source_documents || []).forEach(sd => {
-      if (sd) allSources.add(sd);
+      addSourceOption(allSources, sd);
     });
   });
 
-  const sources = [...allSources].sort((a, b) => a.localeCompare(b));
-
-  const actors = nodes
-    .filter(n => n.canonical_actor_key && n.entity)
-    .map(n => ({
-      value: n.canonical_actor_key,
-      label: n.entity.trim()
-    }))
+  const sources = [...allSources.values()]
     .sort((a, b) => a.label.localeCompare(b.label));
 
   const allYears = new Set();
@@ -130,13 +130,77 @@ function populateFilters(nodes, edges) {
     .sort()
     .map(year => ({ value: year, label: year }));
 
-  sourceSelect.setOptions(sources.map(doc => ({
-    value: doc,
-    label: doc
-  })));
+  sourceSelect.setOptions(sources);
 
-  actorSelect.setOptions(deduplicateOptions(actors));
+  updateActorFilterOptions();
   yearSelect.setOptions(years);
+}
+
+function updateActorFilterOptions() {
+  const selectedSources = sourceSelect
+    ? sourceSelect.getSelectedValues()
+    : new Set();
+  actorSelect.setOptions(getActorOptionsForSources(selectedSources), true);
+}
+
+function getActorOptionsForSources(selectedSources) {
+  let actorKeys = null;
+
+  if (selectedSources.size > 0) {
+    actorKeys = new Set();
+
+    allEdges.forEach(edge => {
+      const edgeMatchesSource = (edge.occurrences || []).some(occ =>
+        selectedSources.has(getSourceGroupKey(occ.source_document))
+      ) || (edge.source_documents || []).some(source =>
+        selectedSources.has(getSourceGroupKey(source))
+      );
+
+      if (!edgeMatchesSource) return;
+      if (edge.source_actor_key) actorKeys.add(edge.source_actor_key);
+      if (edge.target_actor_key) actorKeys.add(edge.target_actor_key);
+    });
+
+    allNodes.forEach(node => {
+      const nodeMatchesSource = (node.source_documents || []).some(source =>
+        selectedSources.has(getSourceGroupKey(source))
+      );
+
+      if (nodeMatchesSource && node.canonical_actor_key) {
+        actorKeys.add(node.canonical_actor_key);
+      }
+    });
+  }
+
+  const actors = allNodes
+    .filter(node => node.canonical_actor_key && node.entity)
+    .filter(node => !actorKeys || actorKeys.has(node.canonical_actor_key))
+    .map(node => ({
+      value: node.canonical_actor_key,
+      label: cleanActorLabel(node.entity)
+    }))
+    .sort((a, b) => a.label.localeCompare(b.label));
+
+  return deduplicateOptions(actors);
+}
+
+function cleanActorLabel(label) {
+  let value = String(label || "").trim();
+
+  value = value.replace(/!\[([^\]]*)\]\([^)]+\)/g, "$1");
+  value = value.replace(/\[([^\]]+)\]\([^)]+\)/g, "$1");
+  value = value.replace(/<[^>]+>/g, " ");
+
+  try {
+    const url = new URL(value);
+    const hostname = normalizeHostname(url.hostname);
+    const path = url.pathname.replace(/^\/+|\/+$/g, "");
+    value = path ? `${hostname} / ${path}` : hostname;
+  } catch {
+    // Ordinary names with parentheses, such as "AFRL (AFRL)", are kept intact.
+  }
+
+  return value.replace(/\s+/g, " ").trim();
 }
 
 function deduplicateOptions(options) {
@@ -160,11 +224,20 @@ function createSearchableMultiSelect(config) {
   const selected = new Map();
 
   const api = {
-    setOptions(newOptions) {
+    setOptions(newOptions, pruneSelected = false) {
       options = newOptions.map(option => ({
         ...option,
         searchLabel: `${option.label} ${option.value}`.toLowerCase()
       }));
+
+      if (pruneSelected) {
+        const optionValues = new Set(options.map(option => option.value));
+        selected.forEach((_, value) => {
+          if (!optionValues.has(value)) selected.delete(value);
+        });
+        renderChips();
+      }
+
       renderMenu();
     },
 
@@ -219,6 +292,10 @@ function createSearchableMultiSelect(config) {
   });
 
   function openMenu() {
+    searchableSelects.forEach(select => {
+      if (select.root !== root) select.closeMenu();
+    });
+
     root.classList.add("open");
     if (caret) caret.setAttribute("aria-expanded", "true");
     renderMenu();
@@ -261,8 +338,7 @@ function createSearchableMultiSelect(config) {
 
     const matches = options
       .filter(option => !selected.has(option.value))
-      .filter(option => !query || option.searchLabel.includes(query))
-      .slice(0, 80);
+      .filter(option => !query || option.searchLabel.includes(query));
 
     menu.innerHTML = "";
     menu.appendChild(renderActions(matches));
@@ -322,7 +398,77 @@ function createSearchableMultiSelect(config) {
     return row;
   }
 
+  searchableSelects.push({ root, closeMenu });
+
   return api;
+}
+
+function addSourceOption(sourceMap, source) {
+  if (!source) return;
+
+  const value = getSourceGroupKey(source);
+  if (sourceMap.has(value)) return;
+
+  sourceMap.set(value, {
+    value,
+    label: getSourceGroupLabel(source)
+  });
+}
+
+function getSourceGroupKey(source) {
+  const value = String(source || "").trim();
+  if (!value) return "";
+
+  try {
+    const url = new URL(value);
+    return `site:${normalizeHostname(url.hostname)}`;
+  } catch {
+    return `doc:${value}`;
+  }
+}
+
+function getSourceGroupLabel(source) {
+  const value = String(source || "").trim();
+  if (!value) return "Unknown source";
+
+  try {
+    const url = new URL(value);
+    return normalizeHostname(url.hostname);
+  } catch {
+    return value;
+  }
+}
+
+function normalizeHostname(hostname) {
+  return String(hostname || "")
+    .trim()
+    .toLowerCase()
+    .replace(/^www\./, "");
+}
+
+function scheduleApplyFilters() {
+  if (pendingFilterTimer !== null) {
+    clearTimeout(pendingFilterTimer);
+  }
+  if (pendingPreparingTimer !== null) {
+    clearTimeout(pendingPreparingTimer);
+  }
+
+  setLoading(true, 10, "Preparing graph...");
+
+  pendingPreparingTimer = setTimeout(() => {
+    pendingPreparingTimer = null;
+    setLoading(true, 22, "Preparing graph...");
+  }, 90);
+
+  pendingFilterTimer = setTimeout(() => {
+    pendingFilterTimer = null;
+    if (pendingPreparingTimer !== null) {
+      clearTimeout(pendingPreparingTimer);
+      pendingPreparingTimer = null;
+    }
+    applyFilters();
+  }, 260);
 }
 
 function applyFilters() {
@@ -342,11 +488,11 @@ function applyFilters() {
 
   // Edge passes if AT LEAST ONE of its occurrences satisfies all active filters.
   // We also keep the matching occurrences only so tooltips show only what fits.
-  const filteredEdges = [];
+  const sourceYearFilteredEdges = [];
   allEdges.forEach(edge => {
     const matchingOccurrences = (edge.occurrences || []).filter(occ => {
       const docOk = selectedSources.size === 0 ||
-                    selectedSources.has(occ.source_document);
+                    selectedSources.has(getSourceGroupKey(occ.source_document));
       const yearOk = selectedYears.size === 0 ||
                      occurrenceYearsMatch(occ, edge, selectedYears);
       return docOk && yearOk;
@@ -355,14 +501,10 @@ function applyFilters() {
         (selectedSources.size > 0 || selectedYears.size > 0)) {
       return;
     }
-    const actorOk = selectedActors.size === 0 ||
-                    selectedActors.has(edge.source_actor_key) ||
-                    selectedActors.has(edge.target_actor_key);
-    if (!actorOk) return;
 
     // Make a shallow copy of the edge with only the matching occurrences,
     // so tooltip text reflects what was actually selected.
-    filteredEdges.push({
+    sourceYearFilteredEdges.push({
       ...edge,
       occurrences: selectedSources.size === 0 && selectedYears.size === 0
         ? edge.occurrences
@@ -370,24 +512,26 @@ function applyFilters() {
     });
   });
 
+  const actorFilteredGraph = selectedActors.size > 0
+    ? getSelectedActorComponentGraph(sourceYearFilteredEdges, selectedActors)
+    : { edges: sourceYearFilteredEdges, isolatedActorKeys: new Set() };
+  const filteredEdges = actorFilteredGraph.edges;
   const visibleActorKeys = new Set();
   filteredEdges.forEach(edge => {
     if (edge.source_actor_key) visibleActorKeys.add(edge.source_actor_key);
     if (edge.target_actor_key) visibleActorKeys.add(edge.target_actor_key);
   });
+  actorFilteredGraph.isolatedActorKeys.forEach(key => visibleActorKeys.add(key));
 
   // Also include nodes whose own source_documents intersect the source filter
   // (an actor mentioned in a doc but with no surviving edges).
-  if (selectedSources.size > 0) {
+  if (selectedSources.size > 0 && selectedActors.size === 0) {
     allNodes.forEach(node => {
       const nodeDocs = node.source_documents || [];
-      if (nodeDocs.some(d => selectedSources.has(d))) {
+      if (nodeDocs.some(d => selectedSources.has(getSourceGroupKey(d)))) {
         if (node.canonical_actor_key) visibleActorKeys.add(node.canonical_actor_key);
       }
     });
-  }
-  if (selectedActors.size > 0) {
-    selectedActors.forEach(k => visibleActorKeys.add(k));
   }
 
   const filteredNodes = allNodes.filter(node =>
@@ -422,12 +566,60 @@ function occurrenceYearsMatch(occ, edge, selectedYears) {
   return false;
 }
 
+function getSelectedActorComponentGraph(edges, selectedActors) {
+  const adjacency = new Map();
+
+  edges.forEach(edge => {
+    const source = edge.source_actor_key;
+    const target = edge.target_actor_key;
+    if (!source || !target) return;
+
+    if (!adjacency.has(source)) adjacency.set(source, new Set());
+    if (!adjacency.has(target)) adjacency.set(target, new Set());
+    adjacency.get(source).add(target);
+    adjacency.get(target).add(source);
+  });
+
+  const componentActorKeys = new Set();
+  const isolatedActorKeys = new Set();
+
+  selectedActors.forEach(actorKey => {
+    if (!adjacency.has(actorKey)) {
+      isolatedActorKeys.add(actorKey);
+      return;
+    }
+
+    const stack = [actorKey];
+    componentActorKeys.add(actorKey);
+
+    while (stack.length) {
+      const current = stack.pop();
+      (adjacency.get(current) || new Set()).forEach(next => {
+        if (componentActorKeys.has(next)) return;
+        componentActorKeys.add(next);
+        stack.push(next);
+      });
+    }
+  });
+
+  const componentEdges = edges.filter(edge =>
+    componentActorKeys.has(edge.source_actor_key) &&
+    componentActorKeys.has(edge.target_actor_key)
+  );
+
+  return {
+    edges: componentEdges,
+    isolatedActorKeys
+  };
+}
+
 function resetFilters() {
   sourceSelect.clear();
+  updateActorFilterOptions();
   actorSelect.clear();
   yearSelect.clear();
 
-  showFullNetwork();
+  scheduleApplyFilters();
   document.getElementById("details").innerHTML = "Click a node or edge to inspect it.";
 }
 
@@ -563,7 +755,7 @@ function drawGraph(nodes, edges, settings = {}) {
     });
   });
 
-  const showEdgeLabels = edges.length <= 120;
+  const showEdgeLabels = isFullNetwork || edges.length <= 120;
   const visEdges = [];
 
   edges.forEach((edge, index) => {
@@ -591,26 +783,12 @@ function drawGraph(nodes, edges, settings = {}) {
     // overview readable.
     const directional = edge.directional === true && !isFullNetwork;
 
-    const sampleSentence = firstOcc.occurrence_sentence || "";
-    const samplePhrase = firstOcc.interaction_phrase || "";
-
     visEdges.push({
       id: `edge-${index}`,
       from: edge.source_actor_key,
       to: edge.target_actor_key,
-      label: showEdgeLabels ? edge.relation_label || "" : "",
-      title: `
-        <b>${escapeHtml(edge.relation_label || "interaction")}</b>
-        ${edge.directional ? "(directional)" : "(symmetric)"}<br>
-        <b>${escapeHtml(edge.source_actor || edge.source_actor_key)}</b>
-          ${edge.directional ? "→" : "↔"}
-        <b>${escapeHtml(edge.target_actor || edge.target_actor_key)}</b><br>
-        Mentions: ${occurrences.length}
-        ${edge.first_seen ? `<br>First seen: ${escapeHtml(edge.first_seen)}` : ""}
-        ${edge.last_seen && edge.last_seen !== edge.first_seen ? `<br>Last seen: ${escapeHtml(edge.last_seen)}` : ""}
-        ${samplePhrase ? `<br><br><b>Phrase:</b><br>${escapeHtml(samplePhrase)}` : ""}
-        ${sampleSentence ? `<br><br><b>Sample evidence:</b><br>${escapeHtml(sampleSentence)}` : ""}
-      `,
+      label: showEdgeLabels ? formatRelationLabel(edge.relation_label || "") : "",
+      title: createEdgeTooltipText(edge),
       arrows: {
         to: {
           enabled: directional,
@@ -635,8 +813,8 @@ function drawGraph(nodes, edges, settings = {}) {
       },
       font: {
         color: "#cfe4ff",
-        size: 10,
-        strokeWidth: 4,
+        size: isFullNetwork ? 7 : 10,
+        strokeWidth: isFullNetwork ? 2 : 4,
         strokeColor: "#06101f",
         align: "middle"
       },
@@ -709,7 +887,7 @@ function drawGraph(nodes, edges, settings = {}) {
       multiselect: false,
       dragNodes: true,
       hideEdgesOnDrag: false,
-      hideEdgesOnZoom: isFullNetwork
+      hideEdgesOnZoom: false
     }
   };
 
@@ -781,19 +959,18 @@ function drawGraph(nodes, edges, settings = {}) {
     if (params.edges.length > 0) {
       const edge = data.edges.get(params.edges[0]);
       const raw = edge.raw || {};
-      const occurrences = raw.occurrences || [];
 
       document.getElementById("details").innerHTML = `
-        <b>${escapeHtml(raw.relation_label || "interaction")}</b>
-        ${raw.directional ? "(directional)" : "(symmetric)"}<br><br>
         <b>${escapeHtml(raw.source_actor || raw.source_actor_key || "")}</b>
         ${raw.directional ? "→" : "↔"}
         <b>${escapeHtml(raw.target_actor || raw.target_actor_key || "")}</b><br><br>
-        <b>${occurrences.length} mention${occurrences.length === 1 ? "" : "s"}</b>
-        ${raw.first_seen ? `<br><i>First: ${escapeHtml(raw.first_seen)}` : ""}
-        ${raw.last_seen && raw.last_seen !== raw.first_seen ? `, Last: ${escapeHtml(raw.last_seen)}</i>` : raw.first_seen ? "</i>" : ""}
-        <br><br>
-        ${formatOccurrenceList(occurrences)}
+        <b>Label:</b> ${escapeHtml(formatRelationLabel(raw.relation_label || "Interaction"))}<br>
+        <b>Direction:</b> ${raw.directional ? "Directional" : "Symmetric"}<br>
+        ${raw.first_seen ? `<b>First seen:</b> ${escapeHtml(raw.first_seen)}<br>` : ""}
+        ${raw.last_seen && raw.last_seen !== raw.first_seen ? `<b>Last seen:</b> ${escapeHtml(raw.last_seen)}<br>` : ""}
+        <br>
+        <b>Sources (${(raw.source_documents || []).length}):</b><br>
+        ${formatSourceList(raw.source_documents || [])}
       `;
 
       return;
@@ -1136,6 +1313,31 @@ function createNodeTooltipText(node, sourceCount, dateRange) {
   return createTooltipText(node.entity || node.canonical_actor_key, rows);
 }
 
+function createEdgeTooltipText(edge) {
+  const actorPair = [
+    edge.source_actor || edge.source_actor_key || "Unknown source",
+    edge.target_actor || edge.target_actor_key || "Unknown target"
+  ].join(edge.directional ? " → " : " ↔ ");
+
+  const rows = [
+    ["Label", formatRelationLabel(edge.relation_label || "Interaction")],
+    ["Direction", edge.directional ? "Directional" : "Symmetric"]
+  ];
+
+  if (edge.first_seen) {
+    rows.push(["First seen", edge.first_seen]);
+  }
+
+  if (edge.last_seen && edge.last_seen !== edge.first_seen) {
+    rows.push(["Last seen", edge.last_seen]);
+  }
+
+  const sources = edge.source_documents || [];
+  rows.push(["Sources", sources.length.toLocaleString()]);
+
+  return createTooltipText(actorPair, rows);
+}
+
 function createTooltipText(title, rows) {
   const lines = [title || "Unknown actor", ""];
 
@@ -1146,6 +1348,15 @@ function createTooltipText(title, rows) {
   return lines.join("\n");
 }
 
+function formatRnDValue(value) {
+  const normalized = String(value || "").trim().toLowerCase();
+
+  if (normalized === "r&d") return "True";
+  if (normalized === "assessed" || normalized === "non-r&d") return "False";
+
+  return "Not specified";
+}
+
 function formatTitleCase(value) {
   return String(value || "")
     .split(/\s+/)
@@ -1154,13 +1365,13 @@ function formatTitleCase(value) {
     .join(" ");
 }
 
-function formatRnDValue(value) {
-  const normalized = String(value || "").trim().toLowerCase();
-
-  if (normalized === "r&d") return "True";
-  if (normalized === "assessed" || normalized === "non-r&d") return "False";
-
-  return "Not specified";
+function formatRelationLabel(value) {
+  return String(value || "")
+    .replaceAll("_", " ")
+    .split(/\s+/)
+    .filter(Boolean)
+    .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+    .join(" ");
 }
 
 function getNodeSize(node) {

@@ -458,9 +458,9 @@ main {
 }
 
 .topbar-legend {
-  display: flex;
-  flex-wrap: nowrap;
-  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  align-items: stretch;
   justify-content: flex-end;
   gap: 6px;
   flex: 1;
@@ -470,6 +470,7 @@ main {
 .topbar-legend-item {
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   gap: 6px;
   min-height: 32px;
   padding: 6px 9px;
@@ -486,7 +487,10 @@ main {
 }
 
 .topbar-legend-label {
+  min-width: 0;
   white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .topbar-legend-item strong {
@@ -663,7 +667,7 @@ main {
   }
 
   .topbar-legend {
-    justify-content: flex-start;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     max-width: 100%;
   }
 }
