@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Quantum Ecosystem Explorer</title>
+  <title>HelixNet - Quantum Ecosystem Network</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -21,11 +21,11 @@
     <section class="panel-section">
       <div class="section-heading">Filters</div>
 
-      <label for="sourceSearch">PDF source document</label>
+      <label for="sourceSearch">Source document</label>
       <div class="search-select" id="sourceSelect">
         <div class="selected-chips" id="selectedSources"></div>
-        <input id="sourceSearch" type="text" placeholder="Search PDFs, e.g. Japan" autocomplete="off" />
-        <button type="button" class="select-caret" aria-label="Open PDF source options">⌄</button>
+        <input id="sourceSearch" type="text" placeholder="Search websites or documents" autocomplete="off" />
+        <button type="button" class="select-caret" aria-label="Open PDF source options"></button>
         <div class="search-options" id="sourceOptions" role="listbox"></div>
       </div>
 
@@ -33,7 +33,7 @@
       <div class="search-select" id="actorSelect">
         <div class="selected-chips" id="selectedActors"></div>
         <input id="actorSearch" type="text" placeholder="Search actors, e.g. IBM" autocomplete="off" />
-        <button type="button" class="select-caret" aria-label="Open actor options">⌄</button>
+        <button type="button" class="select-caret" aria-label="Open actor options"></button>
         <div class="search-options" id="actorOptions" role="listbox"></div>
       </div>
 
@@ -41,7 +41,7 @@
       <div class="search-select" id="yearSelect">
         <div class="selected-chips" id="selectedYears"></div>
         <input id="yearSearch" type="text" placeholder="Search years, e.g. 2025" autocomplete="off" />
-        <button type="button" class="select-caret" aria-label="Open year options">⌄</button>
+        <button type="button" class="select-caret" aria-label="Open year options"></button>
         <div class="search-options" id="yearOptions" role="listbox"></div>
       </div>
 
@@ -51,37 +51,46 @@
     <section class="panel-section compact">
       <div class="section-heading">Graph info</div>
       <div class="metric-grid">
-        <div class="metric-card"><span id="visibleNodeCount">0</span><small>Nodes</small></div>
-        <div class="metric-card"><span id="visibleEdgeCount">0</span><small>Edges</small></div>
+        <div class="metric-card">
+          <small>Nodes</small>
+          <span class="metric-ratio">
+            <b id="visibleNodeCount">0</b>
+            <em>/</em>
+            <b id="totalNodeMetric">0</b>
+          </span>
+        </div>
+        <div class="metric-card">
+          <small>Edges</small>
+          <span class="metric-ratio">
+            <b id="visibleEdgeCount">0</b>
+            <em>/</em>
+            <b id="totalEdgeMetric">0</b>
+          </span>
+        </div>
       </div>
       <p id="filterSummary" class="summary-text">Showing graph.</p>
-    </section>
-
-    <section class="panel-section compact">
-      <div class="section-heading">Helix legend</div>
-      <div class="legend-item"><span class="legend-dot government"></span>Government</div>
-      <div class="legend-item"><span class="legend-dot industry"></span>Industry</div>
-      <div class="legend-item"><span class="legend-dot academia"></span>Academia</div>
-      <div class="legend-item"><span class="legend-dot intermediary"></span>Intermediary</div>
-      <div class="legend-item"><span class="legend-dot civil"></span>Civil Society</div>
-      <div class="legend-item"><span class="legend-dot unknown"></span>Unknown</div>
     </section>
 
     <section class="panel-section compact">
       <div class="section-heading">Selected item</div>
       <div id="details" class="details-card">Click a node or edge to inspect it.</div>
     </section>
+
+    <footer class="footer">
+      <strong>Created by Amishi Gangwar &amp; Lourenço Vieira</strong><br>
+      IDP · Technical University of Munich · CSO<br><br>
+      Data derived from publicly available sources.<br>
+      Original content remains property of its owners.
+    </footer>
   </aside>
 
   <main>
     <header class="topbar">
       <div>
         <p class="eyebrow">Merged output</p>
-        <h2>Quantum Ecosystem Network</h2>
+        <h2>HelixNet - Quantum Ecosystem Network</h2>
       </div>
-      <div class="topbar-stats">
-        <span id="totalNodeCount">0 total nodes</span>
-        <span id="totalEdgeCount">0 total edges</span>
+      <div class="topbar-legend" id="helixLegend" aria-label="Helix legend">
       </div>
     </header>
 
@@ -97,6 +106,6 @@
     </section>
   </main>
 
-  <script src="app.js?v=networkx-like-static-layout"></script>
+  <script src="app.js?v=preparing-graph-overlay"></script>
 </body>
 </html>
