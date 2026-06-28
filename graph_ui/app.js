@@ -8,7 +8,7 @@ let pendingFilterTimer = null;
 let pendingPreparingTimer = null;
 const searchableSelects = [];
 
-const FULL_NETWORK_SUMMARY = "Showing connected network without isolated actors.";
+const FULL_NETWORK_SUMMARY = "Connected network without isolated actors.";
 const HELIX_TYPES = [
   { label: "Government", className: "government" },
   { label: "Industry", className: "industry" },
