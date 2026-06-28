@@ -42,7 +42,7 @@ def main():
             "A run.log is written in the output directory and appended to on every run."
         ),
     )
-    parser.add_argument("pdf", help="PDF filename inside pdf_input/, e.g. china25.pdf")
+    parser.add_argument("pdf", help="PDF filename inside pdf_input/, e.g. China25.pdf")
     parser.add_argument(
         "--skip-actors", "-s", action="store_true",
         help="Skip feed_pdf (actor LLM). Requires 1_actor_results.json. Re-runs clean_actors.",

@@ -53,13 +53,13 @@ DEFAULT_REWRITES = {
         "Wildcards: use 'source_document' '*' to apply to every source."
     ),
     "rewrites": {
-        "japan25.pdf": [
+        "Japan25.pdf": [
             {"match": "^we$", "replace": "Japan"},
             {"match": "^our country$", "replace": "Japan"},
             {"match": "^(the )?government$", "replace": "Japan Government"},
             {"match": "^(the )?national government$", "replace": "Japan Government"},
         ],
-        "china25.pdf": [
+        "China25.pdf": [
             {"match": "^(the )?state council$", "replace": "China State Council"},
         ],
         "*": [
@@ -495,6 +495,15 @@ def merge_edges(
             # even when the logical edge is stored canonically.
             "source_actor": edge.get("source_actor", ""),
             "target_actor": edge.get("target_actor", ""),
+            # Helix + functional space come from the per-doc helix.py step. Each
+            # occurrence keeps its own values because the same actor may be
+            # classified differently across docs (cross-doc helix conflicts are
+            # tracked in merge_report.json). Edge-level aggregates are computed
+            # below from these per-occurrence values.
+            "source_helix": edge.get("source_helix", ""),
+            "target_helix": edge.get("target_helix", ""),
+            "helix_pair": edge.get("helix_pair", ""),
+            "functional_space": edge.get("functional_space", ""),
         }
 
         if group_key in grouped:
@@ -547,6 +556,34 @@ def merge_edges(
         if dates:
             edge["first_seen"] = min(dates)
             edge["last_seen"] = max(dates)
+
+        # Aggregate helix and functional_space across occurrences. Most common
+        # value wins, with a tie-break preferring non-empty / non-Unknown. The
+        # per-occurrence values are still preserved in `occurrences[]` for
+        # anyone who wants source-by-source detail.
+        def _most_common_nonempty(values: list[str]) -> str:
+            counts: Counter = Counter(v for v in values if v)
+            if not counts:
+                return ""
+            # Prefer non-"Unknown" when counts are equal.
+            best = counts.most_common()
+            top_count = best[0][1]
+            top_tied = [v for v, c in best if c == top_count]
+            non_unknown = [v for v in top_tied if v.lower() != "unknown"]
+            return (non_unknown or top_tied)[0]
+
+        edge["source_helix"] = _most_common_nonempty(
+            [o.get("source_helix", "") for o in unique]
+        )
+        edge["target_helix"] = _most_common_nonempty(
+            [o.get("target_helix", "") for o in unique]
+        )
+        edge["helix_pair"] = _most_common_nonempty(
+            [o.get("helix_pair", "") for o in unique]
+        )
+        edge["functional_space"] = _most_common_nonempty(
+            [o.get("functional_space", "") for o in unique]
+        )
 
     return sorted(
         grouped.values(),
