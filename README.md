@@ -7,7 +7,7 @@ Extracts actor/interaction graphs from PDFs and websites. Four entry points; all
 ```bash
 pip install -r requirements.txt
 playwright install chromium       # browser engine used by crawl4ai
-cp .env.example .env              # edit to point at the used LLM
+cp .env.example .env              # edit to point at Cloudflare or local Ollama
 ```
 
 `.env` keys: `LLM_PROVIDER` (`cloudflare` or `ollama`), `LLM_MODEL`, and the matching credentials. For Cloudflare set `CLOUDFLARE_ACCOUNT_ID` and `CLOUDFLARE_API_TOKEN`. For Ollama, install Ollama separately (`curl -fsSL https://ollama.com/install.sh | sh`) and pull a model (`ollama pull mistral`).
@@ -142,7 +142,22 @@ python3 pdf_pipeline_batch.py --workers 4 --force
 python3 merge_all.py
 ```
 
-Walks `pdf_outputs/` and `site_outputs/`, dedupes actors cross-document, applies per-source rewrites from `merge_rewrites.json` (e.g. `"We"` → `"Japan"` in `Japan25.pdf`), writes `merged_outputs/{combined_nodes.json, combined_edges.json, network.html, merge_report.json}`. `--dry-run` to preview.
+Walks `pdf_outputs/`, `site_outputs/`, and `news_outputs/`, dedupes actors cross-document, applies per-source rewrites from `merge_rewrites.json` (e.g. `"We"` → `"Japan"` in `Japan25.pdf`), and writes `merged_outputs/{combined_nodes.json, combined_edges.json, merge_report.json}`. `--dry-run` to preview without writing.
+
+Edges are collapsed into one logical record per `(source_actor, target_actor, relation_label, directional)` tuple, with an `occurrences[]` list of every mention. Symmetric relations (`networking`, `collaboration_conflict_moderation`, `no_explicit_relation`) collapse `(A,B)` and `(B,A)` together.
+Directional ones (`technology_transfer`, `collaborative_leadership`, `substitution`) stay separate.
+
+ToDo: Node positions are precomputed via NetworkX spring layout (per connected component, edge-weighted by `occurrence_count`) and written into `combined_nodes.json` as `x`/`y`. The UI currently runs its own JS-side layout and ignores these, the coordinates remain in the JSON in case we want to switch later for deterministic placement.
+
+## Viewing the merged graph
+
+The pipeline doesn't render HTML, it produces `combined_*.json`. The interactive viewer lives in `graph_ui/`. See [`graph_ui/README.md`](../graph_ui/README.md) for how to run it locally. Short version:
+
+```bash
+# parent of graph_ui/
+python3 -m http.server 8000
+# open http://localhost:8000/graph_ui/index.html
+```
 
 ## Logs
 
@@ -157,7 +172,9 @@ Each run writes `<output_dir>/run.log` with timestamped output. Batch failures a
 4_edges.json               # cleaned interactions
 5_nodes.json               # actors enriched with helix classification
 5_edges.json               # edges enriched with relation labels
-network.html               # interactive pyvis visualisation
+network.html               # per-doc pyvis visualisation
 run.log                    # timestamped run log
 *.progress.json            # per-page sidecars for auto-resume
 ```
+
+The merged graph (`merged_outputs/combined_*.json`) is what the UI consumes. Per-doc `network.html` files are useful for spot-checking a single document during development.
