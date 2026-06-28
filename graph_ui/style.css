@@ -457,6 +457,24 @@ main {
   gap: 18px;
 }
 
+.topbar-brand {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  min-width: 0;
+}
+
+.topbar-logo {
+  width: 64px;
+  height: 64px;
+  object-fit: contain;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--border-soft);
+  padding: 6px;
+  flex: 0 0 auto;
+}
+
 .topbar-legend {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
