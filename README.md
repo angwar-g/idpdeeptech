@@ -31,7 +31,7 @@ News URLs include the path: `https://thequantuminsider.com/2019/12/02/amazon-pri
 ## Single document
 
 ```bash
-python3 pdf_pipeline.py china25.pdf
+python3 pdf_pipeline.py China25.pdf
 python3 site_pipeline.py https://www.psiquantum.com/
 ```
 
@@ -121,10 +121,10 @@ So a crash + bare re-run picks up cleanly. The only time you need flags is when 
 python3 pdf_pipeline_batch.py --workers 4
 
 # Tweaked an interactions prompt, redo just that step for one doc
-python3 pdf_pipeline.py singapore25.pdf --force -s
+python3 pdf_pipeline.py Singapore25.pdf --force -s
 
 # Tweaked only cleaning rules, redo cleaning + viz only
-python3 pdf_pipeline.py singapore25.pdf --force -i
+python3 pdf_pipeline.py Singapore25.pdf --force -i
 
 # Redo a site without re-crawling
 python3 site_pipeline.py https://psiquantum.com/ --force --skip-crawl
@@ -142,7 +142,7 @@ python3 pdf_pipeline_batch.py --workers 4 --force
 python3 merge_all.py
 ```
 
-Walks `pdf_outputs/` and `site_outputs/`, dedupes actors cross-document, applies per-source rewrites from `merge_rewrites.json` (e.g. `"We"` → `"Japan"` in `japan25.pdf`), writes `merged_outputs/{combined_nodes.json, combined_edges.json, network.html, merge_report.json}`. `--dry-run` to preview.
+Walks `pdf_outputs/` and `site_outputs/`, dedupes actors cross-document, applies per-source rewrites from `merge_rewrites.json` (e.g. `"We"` → `"Japan"` in `Japan25.pdf`), writes `merged_outputs/{combined_nodes.json, combined_edges.json, network.html, merge_report.json}`. `--dry-run` to preview.
 
 ## Logs
 

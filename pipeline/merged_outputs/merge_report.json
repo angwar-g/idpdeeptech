@@ -5,6 +5,7 @@
     "pdf/BadenWurttemberg",
     "pdf/Bavaria",
     "pdf/Canada25",
+    "pdf/China25",
     "pdf/Europe23",
     "pdf/Europe25",
     "pdf/France23",
@@ -12,6 +13,7 @@
     "pdf/Germany25",
     "pdf/GlobalQuantumStrategies26",
     "pdf/India25",
+    "pdf/Japan25",
     "pdf/Luis_Australia23",
     "pdf/Luis_Canada22",
     "pdf/Luis_Czechia25",
@@ -40,6 +42,7 @@
     "pdf/Portugal25",
     "pdf/Russia19",
     "pdf/SaudiArabia19",
+    "pdf/Singapore25",
     "pdf/SouthAfrica21",
     "pdf/Switzerland26",
     "pdf/Taiwan25",
@@ -51,9 +54,6 @@
     "pdf/USA24",
     "pdf/USA26",
     "pdf/WEF25",
-    "pdf/china25",
-    "pdf/japan25",
-    "pdf/singapore25",
     "site/1qbit",
     "site/aeluma",
     "site/aimphotonics",
@@ -135,10 +135,10 @@
     "site/welinq",
     "site/xanadu"
   ],
-  "input_node_records": 6899,
+  "input_node_records": 6900,
   "input_edge_records": 5134,
-  "output_unique_actors": 4830,
-  "output_unique_edges": 2042,
+  "output_unique_actors": 4831,
+  "output_unique_edges": 2044,
   "rewrites_applied": {
     "*: ^(.{2,}?),? (ltd\\.?|limited|gmbh|llc|inc\\.?|incorporated|corp\\.?|corporation|s\\.a\\.|sas|s\\.r\\.l\\.|ag|kg|kgaa|pty ltd|pte ltd|bv|nv|oy|ab|spa|plc|kk|kft|sa|sl|srl|sro|asa|holdings|holding)$ -> $1": 170,
     "*: ^fraunhofer research fab microelectronics germany \\(fmd\\)$ -> FMD": 1,
@@ -221,14 +221,14 @@
     "*: ^[a-z0-9\\-]+\\.(com|org|net|io|tech|ai|co|ca|uk|de|fr)$ -> [drop]": 17,
     "*: ^(the )?uk$ -> [drop_if_unmapped]": 9,
     "*: ^europe$ -> [drop]": 11,
+    "*: ^industry$ -> [drop]": 1,
+    "*: ^(the )?ministry$ -> [drop_if_unmapped]": 1,
     "*: ^(the )?federal government$ -> [drop_if_unmapped]": 3,
     "*: ^(the )?parliament$ -> [drop_if_unmapped]": 2,
     "*: ^european$ -> [drop]": 1,
     "*: ^(the )?government$ -> [drop_if_unmapped]": 2,
     "*: ^users$ -> [drop]": 3,
     "*: ^countries$ -> [drop]": 1,
-    "*: ^industry$ -> [drop]": 1,
-    "*: ^(the )?ministry$ -> [drop_if_unmapped]": 1,
     "*: ^employer$ -> [drop]": 1,
     "*: ^municipality$ -> [drop]": 1,
     "*: ^country$ -> [drop]": 1,
@@ -420,8 +420,8 @@
       ],
       "chosen_helix": "Government",
       "source_documents": [
-        "Luis_Australia23.pdf",
-        "japan25.pdf"
+        "Japan25.pdf",
+        "Luis_Australia23.pdf"
       ]
     },
     {
@@ -602,6 +602,7 @@
       "chosen_helix": "Academia",
       "source_documents": [
         "India25.pdf",
+        "Japan25.pdf",
         "Luis_Denmark23.pdf",
         "Luis_France21.pdf",
         "Luis_Netherlands19.pdf",
@@ -613,8 +614,7 @@
         "https://www.bluequbit.io/blog/quantum-internet",
         "https://www.intel.com/content/www/us/en/foundry/overview.html",
         "https://www.quintessencelabs.com",
-        "https://www.spinquanta.com/news/media-coverage",
-        "japan25.pdf"
+        "https://www.spinquanta.com/news/media-coverage"
       ]
     },
     {
@@ -1322,10 +1322,10 @@
       "chosen_helix": "Government",
       "source_documents": [
         "India25.pdf",
+        "Japan25.pdf",
         "https://quantumbrilliance.com/contact-us/product-inquiry",
         "https://www.bqpsim.com/press",
-        "https://www.qnulabs.com/quantum-key-distribution-network-qkdn",
-        "japan25.pdf"
+        "https://www.qnulabs.com/quantum-key-distribution-network-qkdn"
       ]
     },
     {
@@ -1414,14 +1414,14 @@
       "chosen_helix": "Government",
       "source_documents": [
         "India25.pdf",
+        "Japan25.pdf",
         "Luis_Japan22.pdf",
         "Luis_Japan23.pdf",
         "Luis_Japan24.pdf",
         "https://global.fujitsu/en-global/about/corporate/locations",
         "https://iqm.tech",
         "https://universalquantum.com/de/hier-arbeiten",
-        "https://www.riverlane.com/press-release/riverlane-report-reveals-scale-of-the-quantum-error-correction-challenge",
-        "japan25.pdf"
+        "https://www.riverlane.com/press-release/riverlane-report-reveals-scale-of-the-quantum-error-correction-challenge"
       ]
     },
     {
@@ -1433,8 +1433,8 @@
       ],
       "chosen_helix": "Government",
       "source_documents": [
-        "Turkey.pdf",
-        "japan25.pdf"
+        "Japan25.pdf",
+        "Turkey.pdf"
       ]
     },
     {
@@ -1767,13 +1767,13 @@
         "Austria24.pdf",
         "Luis_Korea23.pdf",
         "OECD25.pdf",
+        "Singapore25.pdf",
         "SouthAfrica21.pdf",
         "https://aws.amazon.com/braket/quantum-computers",
         "https://parityqc.com/parityos",
         "https://quantumbrilliance.com/about-us",
         "https://www.ionq.com",
-        "https://www.quintessencelabs.com/news",
-        "singapore25.pdf"
+        "https://www.quintessencelabs.com/news"
       ]
     },
     {
@@ -2155,7 +2155,7 @@
       ],
       "chosen_helix": "Academia",
       "source_documents": [
-        "china25.pdf",
+        "China25.pdf",
         "https://infleqtion.com",
         "https://kiutra.com/characterization-white-paper"
       ]
@@ -2321,7 +2321,7 @@
       "chosen_helix": "Government",
       "source_documents": [
         "SaudiArabia19.pdf",
-        "singapore25.pdf"
+        "Singapore25.pdf"
       ]
     },
     {
@@ -2463,10 +2463,10 @@
       "chosen_helix": "Industry",
       "source_documents": [
         "India25.pdf",
+        "Japan25.pdf",
         "https://infleqtion.com/national-security-and-resilience",
         "https://seeqc.com/whitepaper",
-        "https://www.psiquantum.com/news-import/us-department-of-commerce",
-        "japan25.pdf"
+        "https://www.psiquantum.com/news-import/us-department-of-commerce"
       ]
     },
     {
@@ -2509,6 +2509,7 @@
       "chosen_helix": "Industry",
       "source_documents": [
         "India25.pdf",
+        "Japan25.pdf",
         "Luis_Australia23.pdf",
         "Luis_France21.pdf",
         "Luis_Italy25.pdf",
@@ -2531,8 +2532,7 @@
         "https://www.quantum-machines.co/products/qualibrate",
         "https://www.quera.com/national-programs",
         "https://www.quintessencelabs.com/contact",
-        "https://www.spinquanta.com/quantum-computing-solutions/education",
-        "japan25.pdf"
+        "https://www.spinquanta.com/quantum-computing-solutions/education"
       ]
     },
     {

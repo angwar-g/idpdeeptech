@@ -1,5 +1,5 @@
 {
-  "_comment": "Per-source actor rewrites applied BEFORE cross-document merging. Keys are source_document values (e.g. 'japan25.pdf' or 'https://...'). Each rule has 'match' (case-insensitive regex on the full entity name) and either 'replace' (new name; supports $1/$2 capture groups), 'drop' (remove the actor + its edges), or 'drop_if_unmapped' (remove only if no per-source rule already renamed it). Wildcards: keys under '*' apply to every source. Matching order: per-source rules first (can rename, chain continues), then '*' rules.",
+  "_comment": "Per-source actor rewrites applied BEFORE cross-document merging. Keys are source_document values (e.g. 'Japan25.pdf' or 'https://...'). Each rule has 'match' (case-insensitive regex on the full entity name) and either 'replace' (new name; supports $1/$2 capture groups), 'drop' (remove the actor + its edges), or 'drop_if_unmapped' (remove only if no per-source rule already renamed it). Wildcards: keys under '*' apply to every source. Matching order: per-source rules first (can rename, chain continues), then '*' rules.",
 
   "_organization": "Rules under '*' are organized by purpose: (1) Brand consolidation; (2) Abbreviation-pair canonicalization; (3) Fraunhofer cluster (parent vs institutes); (4) Universal legal-suffix stripping; (5) Common-noun drops; (5b) Domain/URL fragments; (6) Context-dependent drops.",
 
@@ -14,14 +14,14 @@
 
   "rewrites": {
 
-    "japan25.pdf": [
+    "Japan25.pdf": [
       { "match": "^we$",                            "replace": "Japan" },
       { "match": "^our country$",                   "replace": "Japan" },
       { "match": "^(the )?government$",             "replace": "Japan Government" },
       { "match": "^(the )?national government$",    "replace": "Japan Government" }
     ],
 
-    "china25.pdf": [
+    "China25.pdf": [
       { "match": "^we$",                            "replace": "China" },
       { "match": "^(the )?state council$",          "replace": "China State Council" },
       { "match": "^(the )?government$",             "replace": "China Government" },

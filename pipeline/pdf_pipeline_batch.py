@@ -30,7 +30,7 @@ def main():
     parser.add_argument(
         "--only", nargs="+", default=None,
         help="Restrict to these filenames (matched against pdf_input/). "
-             "Example: --only china25.pdf japan25.pdf",
+             "Example: --only China25.pdf Japan25.pdf",
     )
     parser.add_argument(
         "--resume", action="store_true",
