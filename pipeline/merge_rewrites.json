@@ -286,10 +286,10 @@
       { "match": "^ieee$",                          "drop": true },
       { "match": "^spie$",                          "drop": true },
 
-      { "match": "[Research]",                           "drop": true },
-      { "match": "1QBit Information Technologies",       "drop": true },
-      { "match": "little .NET on AWS",                  "replace": "" },
-      { "match": "Clients Only",                        "replace": "" },
+      { "match": "^\\[research\\]$",                     "drop": true },
+      { "match": "^1qbit information technologies$",     "drop": true },
+      { "match": "^little \\.net on aws$",               "drop": true },
+      { "match": "^clients only$",                       "replace": "" },
 
       { "match": "^(the )?government$",             "drop_if_unmapped": true },
       { "match": "^(the )?national government$",    "drop_if_unmapped": true },
