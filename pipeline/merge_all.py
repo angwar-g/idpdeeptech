@@ -44,6 +44,59 @@ from typing import Any
 
 DEFAULT_REWRITE_FILE = "merge_rewrites.json"
 
+
+# --------------------------------------------------------------------------
+# Hardcoded helix overrides
+# --------------------------------------------------------------------------
+# Countries and sub-national regions are *definitionally* Government-helix
+# actors regardless of how the LLM classified them in any individual source.
+# Per-doc confidence-weighted helix resolution gets these wrong because some
+# sources describe a country in industry context ("the UK quantum industry")
+# and that gets picked up as helix="Industry".
+#
+# This override is applied AFTER cross-document helix resolution but BEFORE
+# the conflict is logged, so the merge_report reflects the corrected helix
+# and the override count is auditable.
+#
+# Add new entries here when you spot countries/regions in your data that
+# aren't covered. Names are matched case-insensitively against the canonical
+# actor name AFTER merge_rewrites has been applied -- so use the canonical
+# form (e.g. "United States", not "USA"; "Germany", not "Deutschland").
+COUNTRY_GOVERNMENT_ACTORS: frozenset[str] = frozenset({
+    # Europe
+    "austria", "belgium", "bulgaria", "croatia", "cyprus", "czech republic",
+    "czechia", "denmark", "estonia", "finland", "france", "germany", "greece",
+    "hungary", "iceland", "ireland", "italy", "latvia", "lithuania",
+    "luxembourg", "malta", "netherlands", "norway", "poland", "portugal",
+    "romania", "slovakia", "slovenia", "spain", "sweden", "switzerland",
+    "united kingdom", "uk", "great britain", "scotland", "wales",
+    "ukraine", "serbia",
+    # Asia-Pacific
+    "australia", "new zealand", "china", "japan", "south korea", "korea",
+    "north korea", "republic of korea", "taiwan", "thailand", "vietnam",
+    "philippines", "indonesia", "malaysia", "singapore", "india",
+    "bangladesh", "pakistan", "sri lanka", "hong kong",
+    # Americas
+    "united states", "canada", "mexico", "brazil", "argentina", "chile",
+    "colombia", "peru", "venezuela",
+    # Middle East / Africa
+    "israel", "saudi arabia", "kingdom of saudi arabia", "uae",
+    "united arab emirates", "turkey", "iran", "iraq", "qatar", "kuwait",
+    "egypt", "south africa", "kenya", "nigeria", "morocco",
+    # Russia / Central Asia
+    "russia", "kazakhstan",
+    # Supranational
+    "european union", "asean", "nato",
+    # US states and major sub-national regions present in current data
+    "california", "illinois", "texas", "massachusetts", "new york",
+    "quebec", "ontario", "bavaria", "baden-württemberg",
+})
+
+
+# --------------------------------------------------------------------------
+# Rewrite map handling
+# --------------------------------------------------------------------------
+
 DEFAULT_REWRITES = {
     "_comment": (
         "Per-source actor rewrites applied BEFORE cross-document merging. "
@@ -53,13 +106,13 @@ DEFAULT_REWRITES = {
         "Wildcards: use 'source_document' '*' to apply to every source."
     ),
     "rewrites": {
-        "Japan25.pdf": [
+        "japan25.pdf": [
             {"match": "^we$", "replace": "Japan"},
             {"match": "^our country$", "replace": "Japan"},
             {"match": "^(the )?government$", "replace": "Japan Government"},
             {"match": "^(the )?national government$", "replace": "Japan Government"},
         ],
-        "China25.pdf": [
+        "china25.pdf": [
             {"match": "^(the )?state council$", "replace": "China State Council"},
         ],
         "*": [
@@ -247,6 +300,7 @@ def merge_nodes(
     """Merge nodes across sources. Returns (merged_nodes, diagnostics)."""
     rewrite_log: Counter = Counter()
     helix_conflicts: list[dict] = []
+    helix_overrides_applied: list[dict] = []
     dropped_log: Counter = Counter()  # rule_used -> count of dropped actors
 
     # First pass: apply rewrites in place (on a copy). Some rewrites are
@@ -327,6 +381,25 @@ def merge_nodes(
             if h:
                 helixes_seen.add(h)
 
+        # Apply country/region helix override. Countries and sub-national
+        # regions are Government by definition; this corrects the cases where
+        # cross-source resolution picked up an "Industry context" mention and
+        # mis-classified the country itself. We override BEFORE the conflict
+        # is logged so the chosen_helix recorded in merge_report.json shows
+        # the corrected value.
+        entity_lower = (base.get("entity") or "").lower()
+        original_helix_before_override = base.get("helix")
+        if entity_lower in COUNTRY_GOVERNMENT_ACTORS:
+            if base.get("helix") != "Government":
+                base["helix"] = "Government"
+                helix_overrides_applied.append({
+                    "entity": base.get("entity"),
+                    "canonical_actor_key": key,
+                    "original_helix": original_helix_before_override,
+                    "overridden_to": "Government",
+                    "reason": "country_or_region",
+                })
+
         if len(helixes_seen) > 1:
             helix_conflicts.append({
                 "entity": base.get("entity"),
@@ -351,6 +424,7 @@ def merge_nodes(
         "actors_dropped": dict(dropped_log),
         "_dropped_keys": dropped_keys,  # used by merge_edges; not for JSON serialization
         "helix_conflicts": helix_conflicts,
+        "helix_overrides_applied": helix_overrides_applied,
     }
     return merged, diagnostics
 
@@ -504,6 +578,12 @@ def merge_edges(
             "target_helix": edge.get("target_helix", ""),
             "helix_pair": edge.get("helix_pair", ""),
             "functional_space": edge.get("functional_space", ""),
+            "functional_space_needs_review": edge.get(
+                "functional_space_needs_review", False
+            ),
+            "functional_space_review_reason": edge.get(
+                "functional_space_review_reason", ""
+            ),
         }
 
         if group_key in grouped:
@@ -583,6 +663,10 @@ def merge_edges(
         )
         edge["functional_space"] = _most_common_nonempty(
             [o.get("functional_space", "") for o in unique]
+        )
+        # needs_review is true if ANY occurrence flagged it -- conservative.
+        edge["functional_space_needs_review"] = any(
+            o.get("functional_space_needs_review") for o in unique
         )
 
     return sorted(
@@ -846,6 +930,16 @@ def main():
         print(f"\nActors dropped: {total_dropped}")
         for rule, n in sorted(diagnostics["actors_dropped"].items(), key=lambda x: -x[1]):
             print(f"  {n:4d}x  {rule}")
+
+    if diagnostics.get("helix_overrides_applied"):
+        overrides = diagnostics["helix_overrides_applied"]
+        print(f"\nHelix overrides applied (countries/regions forced to "
+              f"Government): {len(overrides)}")
+        for o in overrides[:10]:
+            print(f"  - {o['entity']}: {o['original_helix']!r} -> "
+                  f"{o['overridden_to']!r}")
+        if len(overrides) > 10:
+            print(f"  ... and {len(overrides) - 10} more (see merge_report.json)")
 
     if diagnostics["helix_conflicts"]:
         print(f"\nHelix conflicts (same actor classified differently across sources): "

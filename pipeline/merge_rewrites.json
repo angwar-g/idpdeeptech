@@ -1,7 +1,7 @@
 {
   "_comment": "Per-source actor rewrites applied BEFORE cross-document merging. Keys are source_document values (e.g. 'Japan25.pdf' or 'https://...'). Each rule has 'match' (case-insensitive regex on the full entity name) and either 'replace' (new name; supports $1/$2 capture groups), 'drop' (remove the actor + its edges), or 'drop_if_unmapped' (remove only if no per-source rule already renamed it). Wildcards: keys under '*' apply to every source. Matching order: per-source rules first (can rename, chain continues), then '*' rules.",
 
-  "_organization": "Rules under '*' are organized by purpose: (1) Brand consolidation; (2) Abbreviation-pair canonicalization; (3) Fraunhofer cluster (parent vs institutes); (4) Universal legal-suffix stripping; (5) Common-noun drops; (5b) Domain/URL fragments; (5c) Cryptographic placeholder names (Alice/Bob/Eve/...); (6) Context-dependent drops.",
+  "_organization": "Rules under '*' are organized by purpose: (1) Brand consolidation; (2) Abbreviation-pair canonicalization; (2b) Country-name consolidation; (3) Fraunhofer cluster (parent vs institutes); (4) Universal legal-suffix stripping; (5) Common-noun drops; (5b) Domain/URL fragments; (5c) Cryptographic placeholder names (Alice/Bob/Eve/...); (5d) Web scraper noise (Cookiebot/GitHub/social media); (5e) Journals and publication venues; (6) Context-dependent drops.",
 
   "_review_notes": [
     "SQC is BOTH 'Silicon Quantum Computing' (Aus) and 'Swiss Quantum Commission' -- kept separate intentionally.",
@@ -10,9 +10,12 @@
     "Honeywell Quantum Solutions was historically a distinct org that merged with Cambridge Quantum to form Quantinuum -- kept separate from 'Honeywell'.",
     "Microsoft Quantum and IBM Quantum are research orgs and are deliberately KEPT SEPARATE from their parent brands.",
     "Google DeepMind is a research org distinct from Google -- kept separate.",
-    "Alice / Bob / Eve / etc. are cryptographic placeholder names (the canonical 'Alice sends a message to Bob' actors used in every quantum-crypto document). They are NOT real actors; dropped unconditionally. The COMPANY 'Alice-Bob' (alice-bob.com, French quantum startup) is kept -- the drop rules use ^...$ anchors so they only match exact strings.",
+    "Alice / Bob / Eve / etc. are cryptographic placeholder names. The COMPANY 'Alice-Bob' (alice-bob.com) is preserved -- drop rules use ^...$ anchors.",
     "DTU Fotonik is a specific institute within DTU and is KEPT SEPARATE from DTU itself, same logic as Fraunhofer institutes vs Fraunhofer-Gesellschaft.",
-    "Bundeswehr University Munich is a different university from TUM (Technical University of Munich) -- kept separate."
+    "Bundeswehr University Munich is a different university from TUM -- kept separate.",
+    "Web-scraper noise (Cookiebot, WordPress, Webflow, HubSpot, GitHub, GitLab, OpenVPN, Vimeo, YouTube, LinkedIn, Twitter, Facebook, X) is dropped unconditionally. These are extraction artifacts from page footers/script tags, not real actors. TRADEOFF: GitHub/GitLab as code-host companies are real orgs in some contexts; if you ever need them, remove the specific rule.",
+    "Journals (arXiv, Nature, Science, Physical Review Letters, Physical Review X, PRX Quantum, IEEE, SPIE, Nature Communications, Nature Nanotechnology) are dropped. They are publication venues, not actors. TRADEOFF: IEEE is also a real standards body; if your analysis covers standards, remove the IEEE rule.",
+    "Famous physicists (Albert Einstein, Max Planck, Peter Shor, David Wineland) are NOT dropped -- they exist as actors but may need person-vs-org treatment in future analysis."
   ],
 
   "rewrites": {
@@ -153,6 +156,7 @@
       { "match": "^oxford quantum circuits \\(oqc\\)$",                            "replace": "OQC" },
       { "match": "^physikalisch-technische bundesanstalt \\(ptb\\)$",              "replace": "PTB" },
       { "match": "^quantum economic development consortium \\(qed-c\\)$",          "replace": "QED-C" },
+      { "match": "^quantum economic development consortium \\(qedc\\)$",           "replace": "QED-C" },
       { "match": "^quantum technology-based new industry creation council \\(q-star\\)$", "replace": "Q-STAR" },
       { "match": "^reserve bank of india \\(rbi\\)$",                              "replace": "RBI" },
       { "match": "^semiconductor research corporation \\(src\\)$",                 "replace": "SRC" },
@@ -176,6 +180,14 @@
       { "match": "^lmu \\(ludwig-maximilians-universität münchen\\)$",              "replace": "LMU" },
       { "match": "^danmarks nationale metrologi institut \\(dfm\\)$",                "replace": "DFM" },
       { "match": "^dfm – danmarks nationale metrologiinstitut$",                     "replace": "DFM" },
+
+      { "match": "^united states of america \\(us\\)$",   "replace": "United States" },
+      { "match": "^united states of america$",            "replace": "United States" },
+      { "match": "^u\\.s\\.$",                            "replace": "United States" },
+      { "match": "^u\\.s\\.a\\.$",                        "replace": "United States" },
+      { "match": "^usa$",                                 "replace": "United States" },
+      { "match": "^u s$",                                 "replace": "United States" },
+      { "match": "^u s a$",                               "replace": "United States" },
 
       { "match": "^fraunhofer institute$",          "replace": "Fraunhofer-Gesellschaft" },
       { "match": "^fraunhofer society$",            "replace": "Fraunhofer-Gesellschaft" },
@@ -249,6 +261,31 @@
       { "match": "^trent$",                         "drop": true },
       { "match": "^walter$",                        "drop": true },
 
+      { "match": "^cookiebot$",                     "drop": true },
+      { "match": "^wordpress$",                     "drop": true },
+      { "match": "^webflow$",                       "drop": true },
+      { "match": "^hubspot$",                       "drop": true },
+      { "match": "^github$",                        "drop": true },
+      { "match": "^gitlab$",                        "drop": true },
+      { "match": "^openvpn$",                       "drop": true },
+      { "match": "^vimeo$",                         "drop": true },
+      { "match": "^youtube$",                       "drop": true },
+      { "match": "^linkedin$",                      "drop": true },
+      { "match": "^twitter$",                       "drop": true },
+      { "match": "^facebook$",                      "drop": true },
+      { "match": "^x$",                             "drop": true },
+
+      { "match": "^arxiv$",                         "drop": true },
+      { "match": "^nature$",                        "drop": true },
+      { "match": "^nature communications$",         "drop": true },
+      { "match": "^nature nanotechnology$",         "drop": true },
+      { "match": "^science$",                       "drop": true },
+      { "match": "^physical review letters$",       "drop": true },
+      { "match": "^physical review x$",             "drop": true },
+      { "match": "^prx quantum$",                   "drop": true },
+      { "match": "^ieee$",                          "drop": true },
+      { "match": "^spie$",                          "drop": true },
+
       { "match": "^(the )?government$",             "drop_if_unmapped": true },
       { "match": "^(the )?national government$",    "drop_if_unmapped": true },
       { "match": "^(the )?federal government$",     "drop_if_unmapped": true },
@@ -257,7 +294,6 @@
       { "match": "^(the )?parliament$",             "drop_if_unmapped": true },
       { "match": "^(the )?eu$",                     "drop_if_unmapped": true },
       { "match": "^(the )?uk$",                     "drop_if_unmapped": true },
-      { "match": "^(the )?us$",                     "drop_if_unmapped": true },
       { "match": "^(the )?union$",                  "drop_if_unmapped": true }
     ]
 

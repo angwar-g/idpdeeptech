@@ -137,8 +137,8 @@
   ],
   "input_node_records": 6900,
   "input_edge_records": 5134,
-  "output_unique_actors": 4824,
-  "output_unique_edges": 2041,
+  "output_unique_actors": 4804,
+  "output_unique_edges": 2025,
   "rewrites_applied": {
     "*: ^(.{2,}?),? (ltd\\.?|limited|gmbh|llc|inc\\.?|incorporated|corp\\.?|corporation|s\\.a\\.|sas|s\\.r\\.l\\.|ag|kg|kgaa|pty ltd|pte ltd|bv|nv|oy|ab|spa|plc|kk|kft|sa|sl|srl|sro|asa|holdings|holding)$ -> $1": 170,
     "*: ^fraunhofer research fab microelectronics germany \\(fmd\\)$ -> FMD": 1,
@@ -146,9 +146,12 @@
     "*: ^lmu \\(ludwig-maximilians-universität münchen\\)$ -> LMU": 1,
     "*: ^tum \\(technische universität münchen\\)$ -> TUM": 1,
     "per-source rewrite chain": 4,
+    "*: ^usa$ -> United States": 8,
     "*: ^massachusetts institute of technology \\(mit\\)$ -> MIT": 15,
     "*: ^netherlands organisation for applied scientific research \\(tno\\)$ -> TNO": 1,
     "*: ^reserve bank of india \\(rbi\\)$ -> RBI": 1,
+    "*: ^u\\.s\\.$ -> United States": 5,
+    "*: ^united states of america \\(us\\)$ -> United States": 1,
     "*: ^association of southeast asian nations \\(asean\\)$ -> ASEAN": 1,
     "*: ^silicon quantum computing \\(sqc\\)$ -> SQC": 2,
     "*: ^czech technical university \\(ctu\\)$ -> CTU": 1,
@@ -175,6 +178,7 @@
     "*: ^national centre for scientific research \\(cnrs\\)$ -> CNRS": 1,
     "*: ^united kingdom's national quantum computing centre \\(nqcc\\)$ -> NQCC": 1,
     "*: ^uk national cyber security centre \\(ncsc\\)$ -> NCSC": 1,
+    "*: ^united states of america$ -> United States": 2,
     "*: ^fraunhofer$ -> Fraunhofer-Gesellschaft": 3,
     "*: ^taiwan semiconductor manufacturing company \\(tsmc\\)$ -> TSMC": 1,
     "*: ^global quantum initiative \\(gqi\\)$ -> GQI": 1,
@@ -196,6 +200,7 @@
     "*: ^fujitsu (limited|group|japan limited|corp\\.?|corporation|laboratories|research|distinguished engineers|sports|accelerator|blog|cross culture center|technology park|uvance|uvance kawasaki tower|ventures)$ -> Fujitsu": 16,
     "*: ^ibm (corp\\.?|corporation|inc\\.?|corporation \\(ibm\\)|business partners|champions|developer|cloud catalog|cloud support team|cio office|center for cloud training|cloud center for training enterprise subscription administrators|community advocacy|consulting|deutschland|education|fix central|granite\\.code|instana observability path|japan,?|learning individual subscription with coursera|partner|partner ecosystem|partner plus|partner plus program|partner portal|partner program|partnerplus|passport advantage|redbooks|skills network|support|support portal|sustainability software|techxchange community|techxchange event attendees|techxchange rewards program - formerly known as ibm learn 'n score program|technology|training|tutorials|user groups|verify|webinar series)$ -> IBM": 23,
     "*: ^technical university of munich$ -> TUM": 1,
+    "*: ^quantum economic development consortium \\(qedc\\)$ -> QED-C": 1,
     "*: ^semiconductor research corporation \\(src\\)$ -> SRC": 1,
     "*: ^accenture \\(acn\\)$ -> Accenture": 1,
     "*: ^airbus se \\(air\\) \\(eads\\)$ -> Airbus": 1,
@@ -236,23 +241,46 @@
     "*: ^(the )?ministry$ -> [drop_if_unmapped]": 1,
     "*: ^(the )?federal government$ -> [drop_if_unmapped]": 3,
     "*: ^(the )?parliament$ -> [drop_if_unmapped]": 2,
+    "*: ^ieee$ -> [drop]": 6,
     "*: ^european$ -> [drop]": 1,
     "*: ^(the )?government$ -> [drop_if_unmapped]": 2,
     "*: ^users$ -> [drop]": 3,
+    "*: ^arxiv$ -> [drop]": 15,
     "*: ^alice$ -> [drop]": 3,
     "*: ^bob$ -> [drop]": 3,
     "*: ^countries$ -> [drop]": 1,
+    "*: ^facebook$ -> [drop]": 10,
+    "*: ^linkedin$ -> [drop]": 25,
+    "*: ^twitter$ -> [drop]": 8,
+    "*: ^gitlab$ -> [drop]": 2,
+    "*: ^wordpress$ -> [drop]": 5,
+    "*: ^youtube$ -> [drop]": 12,
+    "*: ^vimeo$ -> [drop]": 8,
+    "*: ^physical review x$ -> [drop]": 2,
+    "*: ^github$ -> [drop]": 6,
+    "*: ^hubspot$ -> [drop]": 6,
+    "*: ^nature$ -> [drop]": 13,
+    "*: ^nature communications$ -> [drop]": 6,
+    "*: ^nature nanotechnology$ -> [drop]": 3,
+    "*: ^science$ -> [drop]": 3,
     "*: ^employer$ -> [drop]": 1,
     "*: ^municipality$ -> [drop]": 1,
+    "*: ^cookiebot$ -> [drop]": 6,
+    "*: ^spie$ -> [drop]": 2,
     "*: ^country$ -> [drop]": 1,
     "*: ^admin$ -> [drop]": 1,
     "*: ^us$ -> [drop]": 2,
+    "*: ^x$ -> [drop]": 1,
     "*: ^eve$ -> [drop]": 1,
+    "*: ^physical review letters$ -> [drop]": 3,
+    "*: ^openvpn$ -> [drop]": 1,
     "*: ^community$ -> [drop]": 1,
     "*: ^citizens$ -> [drop]": 1,
+    "*: ^prx quantum$ -> [drop]": 2,
     "*: ^quantum$ -> [drop]": 1,
     "*: ^[a-z0-9\\-]+\\.[a-z]+\\.(com|org|net|io|tech|ai|co)$ -> [drop]": 2,
     "*: ^dave$ -> [drop]": 1,
+    "*: ^webflow$ -> [drop]": 1,
     "*: ^nation-states$ -> [drop]": 1,
     "*: ^nations$ -> [drop]": 1
   },
@@ -386,32 +414,6 @@
       ]
     },
     {
-      "entity": "arXiv",
-      "canonical_actor_key": "arxiv",
-      "helixes": [
-        "Academia",
-        "Civil Society"
-      ],
-      "chosen_helix": "Academia",
-      "source_documents": [
-        "Luis_USA22.pdf",
-        "https://atom-computing.com/news-resources/scientific-publications",
-        "https://blog.qubit-pharmaceuticals.com/scientific-publications",
-        "https://eeroq.com/publications",
-        "https://infleqtion.com/research",
-        "https://iqm.tech",
-        "https://orcacomputing.com/orca-computing-demonstrates-scalable-quantum-memory",
-        "https://sparrowquantum.com/publications",
-        "https://www.bluequbit.io/research",
-        "https://www.pasqal.com/publications",
-        "https://www.qcware.com/research",
-        "https://www.quantum-machines.co/solutions/transducers",
-        "https://www.quera.com/publications",
-        "https://www.rigetti.com/research/p7",
-        "https://www.riverlane.com/news/the-need-for-approximation-new-paper-proves-exact-colour-code-decoding-is-intractable"
-      ]
-    },
-    {
       "entity": "ASEAN",
       "canonical_actor_key": "asean",
       "helixes": [
@@ -431,7 +433,7 @@
         "Industry",
         "Unknown"
       ],
-      "chosen_helix": "Industry",
+      "chosen_helix": "Government",
       "source_documents": [
         "Austria24.pdf",
         "GlobalQuantumStrategies26.pdf",
@@ -585,7 +587,7 @@
         "Industry",
         "Unknown"
       ],
-      "chosen_helix": "Academia",
+      "chosen_helix": "Government",
       "source_documents": [
         "India25.pdf",
         "Japan25.pdf",
@@ -627,23 +629,6 @@
       "source_documents": [
         "https://aws.amazon.com/marketplace",
         "https://multiversecomputing.com/resources"
-      ]
-    },
-    {
-      "entity": "Cookiebot",
-      "canonical_actor_key": "cookiebot",
-      "helixes": [
-        "Industry",
-        "Unknown"
-      ],
-      "chosen_helix": "Industry",
-      "source_documents": [
-        "https://infleqtion.com/quantum-computing",
-        "https://iqm.tech/technology/tech-stack",
-        "https://kiutra.com/projects/large-scale-magnetic-cooling",
-        "https://pqshield.com/markets/system-integrators",
-        "https://www.quandela.com/ko",
-        "https://www.riverlane.com/jobs"
       ]
     },
     {
@@ -723,7 +708,7 @@
         "Industry",
         "Unknown"
       ],
-      "chosen_helix": "Industry",
+      "chosen_helix": "Government",
       "source_documents": [
         "India25.pdf",
         "Luis_Denmark23.pdf",
@@ -885,27 +870,6 @@
       ]
     },
     {
-      "entity": "Facebook",
-      "canonical_actor_key": "facebook",
-      "helixes": [
-        "Civil Society",
-        "Industry"
-      ],
-      "chosen_helix": "Industry",
-      "source_documents": [
-        "https://1qbit.com/careers/current-openings/job-description-qec-scientist",
-        "https://atom-computing.com/page/3",
-        "https://quantumcircuits.com/why-cavities-are-great-for-dual-rail-qubits",
-        "https://www.classiq.io/industries-collection/logistics",
-        "https://www.microsoft.com/de-de/windows",
-        "https://www.proteinqure.com/contact",
-        "https://www.quantfi.us/legal/cookie-policy",
-        "https://www.quantum-machines.co/products/qua-universal-quantum-language",
-        "https://www.thailand.intel.com/content/www/th/th/download-center/home.html",
-        "https://www.turing.com/intelligence/talent"
-      ]
-    },
-    {
       "entity": "Finland",
       "canonical_actor_key": "finland",
       "helixes": [
@@ -913,7 +877,7 @@
         "Industry",
         "Unknown"
       ],
-      "chosen_helix": "Industry",
+      "chosen_helix": "Government",
       "source_documents": [
         "Luis_Finland25.pdf",
         "Luis_Japan24.pdf",
@@ -1023,38 +987,6 @@
       ]
     },
     {
-      "entity": "GitHub",
-      "canonical_actor_key": "github",
-      "helixes": [
-        "Civil Society",
-        "Industry",
-        "Intermediary",
-        "Unknown"
-      ],
-      "chosen_helix": "Industry",
-      "source_documents": [
-        "https://azure.microsoft.com/de-de",
-        "https://quantumai.google/cirq/dev/development",
-        "https://www.classiq.io/applications/algorithm-optimization-benchmarking",
-        "https://www.cryptoquantique.com/products/quarklink-provisioning",
-        "https://www.quantum-machines.co/products/qua-universal-quantum-language",
-        "https://www.turing.com/advance/coding"
-      ]
-    },
-    {
-      "entity": "GitLab",
-      "canonical_actor_key": "gitlab",
-      "helixes": [
-        "Industry",
-        "Unknown"
-      ],
-      "chosen_helix": "Industry",
-      "source_documents": [
-        "https://aws.amazon.com/marketplace",
-        "https://www.aimphotonics.com/pdk"
-      ]
-    },
-    {
       "entity": "Google",
       "canonical_actor_key": "google",
       "helixes": [
@@ -1161,23 +1093,6 @@
       ]
     },
     {
-      "entity": "HubSpot",
-      "canonical_actor_key": "hubspot",
-      "helixes": [
-        "Industry",
-        "Unknown"
-      ],
-      "chosen_helix": "Industry",
-      "source_documents": [
-        "http://www.quantware.com",
-        "https://kiutra.com/quantum-training",
-        "https://pqshield.com/markets/identity-paymentech",
-        "https://sparrowquantum.com/post/49-indium-hackernes-vaerste-mareridt",
-        "https://www.classiq.io/industries-collection/logistics",
-        "https://www.riverlane.com/news/the-need-for-approximation-new-paper-proves-exact-colour-code-decoding-is-intractable"
-      ]
-    },
-    {
       "entity": "Hugging Face",
       "canonical_actor_key": "hugging face",
       "helixes": [
@@ -1279,32 +1194,13 @@
       ]
     },
     {
-      "entity": "IEEE",
-      "canonical_actor_key": "ieee",
-      "helixes": [
-        "Academia",
-        "Civil Society",
-        "Government",
-        "Unknown"
-      ],
-      "chosen_helix": "Civil Society",
-      "source_documents": [
-        "Luis_Ireland23.pdf",
-        "Luis_Spain25.pdf",
-        "https://infleqtion.com/research",
-        "https://seeqc.com/resources",
-        "https://www.quera.com/neutral-atom-platform",
-        "https://www.singlequantum.com/library"
-      ]
-    },
-    {
       "entity": "Illinois",
       "canonical_actor_key": "illinois",
       "helixes": [
         "Government",
         "Industry"
       ],
-      "chosen_helix": "Industry",
+      "chosen_helix": "Government",
       "source_documents": [
         "https://eeroq.com/governor-j-b-pritzker-visits-eeroq-hq",
         "https://q2b.qcware.com/conference/2025-silicon-valley"
@@ -1394,7 +1290,7 @@
         "Industry",
         "Unknown"
       ],
-      "chosen_helix": "Industry",
+      "chosen_helix": "Government",
       "source_documents": [
         "Luis_Italy25.pdf",
         "https://q2b.qcware.com/conference/2025-paris",
@@ -1498,44 +1394,6 @@
       "source_documents": [
         "SaudiArabia19.pdf",
         "https://aws.amazon.com"
-      ]
-    },
-    {
-      "entity": "LinkedIn",
-      "canonical_actor_key": "linkedin",
-      "helixes": [
-        "Civil Society",
-        "Industry",
-        "Intermediary",
-        "Unknown"
-      ],
-      "chosen_helix": "Industry",
-      "source_documents": [
-        "https://1qbit.com/life-at-1qbit",
-        "https://alice-bob.com/engineering",
-        "https://blog.qubit-pharmaceuticals.com/blog/going-15-30-faster-in-relative-binding-free-energy-calculations",
-        "https://eleqtron.com/datenschutzerklaerung",
-        "https://go.microsoft.com/fwlink",
-        "https://infleqtion.com/materials-science",
-        "https://meetiqm.com",
-        "https://pqshield.com/markets/system-integrators",
-        "https://qsimulate.com/news/1",
-        "https://quantummotion.com/early-career-opportunities",
-        "https://seeqc.com/technology",
-        "https://strangeworks.com/use-cases/predict",
-        "https://textbook.riverlane.com",
-        "https://universalquantum.com/de/wissenszentrum",
-        "https://www.classiq.io/industries-collection/logistics",
-        "https://www.evolutionq.com/contact",
-        "https://www.pasqal.com/solutions/cloud",
-        "https://www.quandela.com/fr-ca",
-        "https://www.quantfi.us",
-        "https://www.quantum-machines.co/solutions/transducers",
-        "https://www.quera.com",
-        "https://www.rigetti.com/careers",
-        "https://www.scalinq.com/career/senior-rf-microwave-engineer",
-        "https://www.sqc.com.au/qubits",
-        "https://www.turing.com/press"
       ]
     },
     {
@@ -1775,61 +1633,6 @@
       ]
     },
     {
-      "entity": "Nature",
-      "canonical_actor_key": "nature",
-      "helixes": [
-        "Academia",
-        "Civil Society"
-      ],
-      "chosen_helix": "Civil Society",
-      "source_documents": [
-        "https://blog.qubit-pharmaceuticals.com/scientific-publications",
-        "https://infleqtion.com/research",
-        "https://quantumai.google",
-        "https://quantware.com/technology",
-        "https://www.diraq.com/publications",
-        "https://www.proteinqure.com/differences-in-breast-cancer-through-a-biochemical-lens",
-        "https://www.qcware.com/research",
-        "https://www.quandela.com/resources/publications",
-        "https://www.quantinuum.com/research/research-areas",
-        "https://www.quantum-machines.co/solutions/transducers",
-        "https://www.quera.com/our-quantum-roadmap",
-        "https://www.rigetti.com/what-we-build",
-        "https://www.sqc.com.au/about"
-      ]
-    },
-    {
-      "entity": "Nature Communications",
-      "canonical_actor_key": "nature communications",
-      "helixes": [
-        "Academia",
-        "Civil Society"
-      ],
-      "chosen_helix": "Civil Society",
-      "source_documents": [
-        "https://infleqtion.com/research",
-        "https://photonic.com/resources",
-        "https://www.diraq.com/publications",
-        "https://www.qcware.com/research",
-        "https://www.riverlane.com/news/introducing-deltakit-stim",
-        "https://www.singlequantum.com/solutions/excellence-line"
-      ]
-    },
-    {
-      "entity": "Nature Nanotechnology",
-      "canonical_actor_key": "nature nanotechnology",
-      "helixes": [
-        "Academia",
-        "Civil Society"
-      ],
-      "chosen_helix": "Academia",
-      "source_documents": [
-        "https://sparrowquantum.com/publications",
-        "https://www.diraq.com/research-papers/tag/QUBIT+CONTROL",
-        "https://www.sqc.com.au/about"
-      ]
-    },
-    {
       "entity": "Neil",
       "canonical_actor_key": "neil",
       "helixes": [
@@ -1914,19 +1717,6 @@
       ]
     },
     {
-      "entity": "OpenVPN",
-      "canonical_actor_key": "openvpn",
-      "helixes": [
-        "Industry",
-        "Unknown"
-      ],
-      "chosen_helix": "Industry",
-      "source_documents": [
-        "https://aws.amazon.com/marketplace",
-        "https://pqshield.com/products/pqc-sdk"
-      ]
-    },
-    {
       "entity": "Pasqal",
       "canonical_actor_key": "pasqal",
       "helixes": [
@@ -1988,46 +1778,6 @@
         "https://oqc.tech/tech/technical-roadmap",
         "https://www.ionq.com",
         "https://www.quantinuum.com/news/blog"
-      ]
-    },
-    {
-      "entity": "Physical Review Letters",
-      "canonical_actor_key": "physical review letters",
-      "helixes": [
-        "Academia",
-        "Civil Society"
-      ],
-      "chosen_helix": "Academia",
-      "source_documents": [
-        "https://photonic.com/resources",
-        "https://www.qcware.com/research",
-        "https://www.sqc.com.au/about"
-      ]
-    },
-    {
-      "entity": "Physical Review X",
-      "canonical_actor_key": "physical review x",
-      "helixes": [
-        "Academia",
-        "Civil Society"
-      ],
-      "chosen_helix": "Academia",
-      "source_documents": [
-        "https://atom-computing.com/news-resources/scientific-publications",
-        "https://www.sqc.com.au/about"
-      ]
-    },
-    {
-      "entity": "PRX Quantum",
-      "canonical_actor_key": "prx quantum",
-      "helixes": [
-        "Academia",
-        "Civil Society"
-      ],
-      "chosen_helix": "Civil Society",
-      "source_documents": [
-        "https://sparrowquantum.com/publications",
-        "https://www.qcware.com/research"
       ]
     },
     {
@@ -2106,6 +1856,7 @@
         "Luis_USA22.pdf",
         "USA24.pdf",
         "USA26.pdf",
+        "https://infleqtion.com",
         "https://q2b.qcware.com/conference/2025-silicon-valley",
         "https://seeqc.com/whitepaper"
       ]
@@ -2144,17 +1895,15 @@
       ]
     },
     {
-      "entity": "Quantum Economic Development Consortium (QEDC)",
+      "entity": "Quantum Economic Development Consortium",
       "canonical_actor_key": "quantum economic development consortium",
       "helixes": [
-        "Academia",
         "Civil Society",
         "Intermediary"
       ],
-      "chosen_helix": "Academia",
+      "chosen_helix": "Civil Society",
       "source_documents": [
         "China25.pdf",
-        "https://infleqtion.com",
         "https://kiutra.com/characterization-white-paper"
       ]
     },
@@ -2257,20 +2006,6 @@
       ]
     },
     {
-      "entity": "Science",
-      "canonical_actor_key": "science",
-      "helixes": [
-        "Academia",
-        "Civil Society"
-      ],
-      "chosen_helix": "Civil Society",
-      "source_documents": [
-        "https://diraq.com",
-        "https://www.quantum-machines.co/solutions/quantum-research",
-        "https://www.sqc.com.au/about"
-      ]
-    },
-    {
       "entity": "SEALSQ",
       "canonical_actor_key": "sealsq",
       "helixes": [
@@ -2329,23 +2064,10 @@
         "Civil Society",
         "Unknown"
       ],
-      "chosen_helix": "Civil Society",
+      "chosen_helix": "Government",
       "source_documents": [
         "Luis_Slovenia25.pdf",
         "https://quantumbrilliance.com/contact-us/product-inquiry"
-      ]
-    },
-    {
-      "entity": "SPIE",
-      "canonical_actor_key": "spie",
-      "helixes": [
-        "Academia",
-        "Civil Society"
-      ],
-      "chosen_helix": "Civil Society",
-      "source_documents": [
-        "https://infleqtion.com/integrated-photonics",
-        "https://www.singlequantum.com/events"
       ]
     },
     {
@@ -2383,7 +2105,7 @@
         "Industry",
         "Unknown"
       ],
-      "chosen_helix": "Industry",
+      "chosen_helix": "Government",
       "source_documents": [
         "GlobalQuantumStrategies26.pdf",
         "Luis_Netherlands19.pdf",
@@ -2431,43 +2153,6 @@
       ]
     },
     {
-      "entity": "Twitter",
-      "canonical_actor_key": "twitter",
-      "helixes": [
-        "Civil Society",
-        "Industry"
-      ],
-      "chosen_helix": "Industry",
-      "source_documents": [
-        "https://1qbit.com/careers/current-openings",
-        "https://infleqtion.com/quantum-computing",
-        "https://pqshield.com",
-        "https://q-ctrl.com/fire-opal",
-        "https://quantumbase.com/supply-chain-security",
-        "https://www.classiq.io/industries-collection/logistics",
-        "https://www.evolutionq.com/contact",
-        "https://www.quantum-machines.co/solutions/transducers",
-        "https://www.spinquanta.com/news/media-coverage"
-      ]
-    },
-    {
-      "entity": "U.S.",
-      "canonical_actor_key": "u s",
-      "helixes": [
-        "Government",
-        "Industry",
-        "Unknown"
-      ],
-      "chosen_helix": "Industry",
-      "source_documents": [
-        "India25.pdf",
-        "Japan25.pdf",
-        "https://infleqtion.com/national-security-and-resilience",
-        "https://seeqc.com/whitepaper",
-        "https://www.psiquantum.com/news-import/us-department-of-commerce"
-      ]
-    },
-    {
       "entity": "United Kingdom",
       "canonical_actor_key": "united kingdom",
       "helixes": [
@@ -2476,7 +2161,7 @@
         "Intermediary",
         "Unknown"
       ],
-      "chosen_helix": "Industry",
+      "chosen_helix": "Government",
       "source_documents": [
         "India25.pdf",
         "Luis_Australia23.pdf",
@@ -2501,18 +2186,22 @@
       "canonical_actor_key": "united states",
       "helixes": [
         "Academia",
+        "Government",
         "Industry",
         "Unknown"
       ],
-      "chosen_helix": "Industry",
+      "chosen_helix": "Government",
       "source_documents": [
+        "GlobalQuantumStrategies26.pdf",
         "India25.pdf",
         "Japan25.pdf",
         "Luis_Australia23.pdf",
+        "Luis_Denmark23.pdf",
         "Luis_France21.pdf",
         "Luis_Italy25.pdf",
         "Luis_Japan24.pdf",
         "Luis_Korea23.pdf",
+        "Luis_Netherlands19.pdf",
         "Luis_Spain25.pdf",
         "Luis_UK23.pdf",
         "Luis_USA18.pdf",
@@ -2522,52 +2211,23 @@
         "Turkey.pdf",
         "UK24.pdf",
         "USA26.pdf",
+        "https://global.fujitsu/en-global/careers",
+        "https://infleqtion.com/national-security-and-resilience",
         "https://photonic.com/press-room",
         "https://seeqc.com/whitepaper",
-        "https://www.cryptoquantique.com/industry-4-0",
-        "https://www.diraq.com/contact",
-        "https://www.dwavequantum.com/company/contact",
-        "https://www.quantum-machines.co/products/qualibrate",
-        "https://www.quera.com/national-programs",
-        "https://www.quintessencelabs.com/contact",
-        "https://www.spinquanta.com/quantum-computing-solutions/education"
-      ]
-    },
-    {
-      "entity": "United States of America (US)",
-      "canonical_actor_key": "united states of america",
-      "helixes": [
-        "Government",
-        "Industry",
-        "Unknown"
-      ],
-      "chosen_helix": "Industry",
-      "source_documents": [
-        "India25.pdf",
-        "Luis_Germany23.pdf",
-        "SouthAfrica21.pdf",
-        "Turkey.pdf",
-        "https://www.rigetti.com/applicant-privacy-policy-non-us"
-      ]
-    },
-    {
-      "entity": "USA",
-      "canonical_actor_key": "usa",
-      "helixes": [
-        "Government",
-        "Industry",
-        "Unknown"
-      ],
-      "chosen_helix": "Industry",
-      "source_documents": [
-        "GlobalQuantumStrategies26.pdf",
-        "Luis_Denmark23.pdf",
-        "Luis_Netherlands19.pdf",
-        "https://global.fujitsu/en-global/careers",
         "https://www.aqt.eu/products",
         "https://www.bqpsim.com/access-bqphy",
         "https://www.classiq.io/industries-collection/manufacturing",
-        "https://www.intel.com/content/www/us/en/jobs/overlay-accordion-video-1-2-close"
+        "https://www.cryptoquantique.com/industry-4-0",
+        "https://www.diraq.com/contact",
+        "https://www.dwavequantum.com/company/contact",
+        "https://www.intel.com/content/www/us/en/jobs/overlay-accordion-video-1-2-close",
+        "https://www.psiquantum.com/news-import/us-department-of-commerce",
+        "https://www.quantum-machines.co/products/qualibrate",
+        "https://www.quera.com/national-programs",
+        "https://www.quintessencelabs.com/contact",
+        "https://www.rigetti.com/applicant-privacy-policy-non-us",
+        "https://www.spinquanta.com/quantum-computing-solutions/education"
       ]
     },
     {
@@ -2581,55 +2241,6 @@
       "source_documents": [
         "WEF25.pdf",
         "https://www.quintessencelabs.com/awards"
-      ]
-    },
-    {
-      "entity": "Vimeo",
-      "canonical_actor_key": "vimeo",
-      "helixes": [
-        "Civil Society",
-        "Industry",
-        "Unknown"
-      ],
-      "chosen_helix": "Industry",
-      "source_documents": [
-        "https://eleqtron.com/quantencomputing-scale-up-eleqtron-schliesst-eine-der-weltweit-groessten-series-a-finanzierungen-ueber-57-mio-euro-ab",
-        "https://iqm.tech",
-        "https://kiutra.com/characterization-white-paper",
-        "https://pqshield.com/products",
-        "https://quantumbase.com",
-        "https://quantumcircuits.com/cookie-policy",
-        "https://sparrowquantum.com/publications",
-        "https://www.aqt.eu/about"
-      ]
-    },
-    {
-      "entity": "Webflow",
-      "canonical_actor_key": "webflow",
-      "helixes": [
-        "Industry",
-        "Unknown"
-      ],
-      "chosen_helix": "Industry",
-      "source_documents": [
-        "https://www.qubit-pharmaceuticals.com/legal-notices",
-        "https://www.welinq.fr/legal-notice"
-      ]
-    },
-    {
-      "entity": "WordPress",
-      "canonical_actor_key": "wordpress",
-      "helixes": [
-        "Industry",
-        "Unknown"
-      ],
-      "chosen_helix": "Industry",
-      "source_documents": [
-        "https://alice-bob.com/newsroom",
-        "https://iqm.tech/investors",
-        "https://qaisec.eu/index.php/contact",
-        "https://quantumcircuits.com/cookie-policy",
-        "https://quantummotion.com/quantum-motion-attends-aps-march-meeting-2026-who-what-where-and-when"
       ]
     },
     {
@@ -2658,42 +2269,16 @@
       ]
     },
     {
-      "entity": "X",
+      "entity": "X (Twitter)",
       "canonical_actor_key": "x",
       "helixes": [
         "Civil Society",
-        "Industry",
         "Unknown"
       ],
-      "chosen_helix": "Industry",
+      "chosen_helix": "Civil Society",
       "source_documents": [
-        "https://www.microsoft.com/de-de/windows",
         "https://www.quandela.com/fr-ca",
         "https://www.scalinq.com/solutions/cliq"
-      ]
-    },
-    {
-      "entity": "YouTube",
-      "canonical_actor_key": "youtube",
-      "helixes": [
-        "Civil Society",
-        "Industry",
-        "Unknown"
-      ],
-      "chosen_helix": "Industry",
-      "source_documents": [
-        "https://alice-bob.com/hpc-report",
-        "https://eleqtron.com/en/quantum-computing-scale-up-eleqtron-secures-57-million-in-one-of-the-largest-series-a-funding-rounds-worldwide",
-        "https://infleqtion.com/quantum-computing",
-        "https://pqshield.com/products/pqf-flx",
-        "https://quantumcircuits.com/cookie-policy",
-        "https://textbook.riverlane.com",
-        "https://www.aqt.eu/partnerships",
-        "https://www.bluequbit.io/contact-us",
-        "https://www.classiq.io/industries-collection/logistics",
-        "https://www.quandela.com/resources/publications",
-        "https://www.quantum-machines.co/products/cryogenic-control-systems",
-        "https://www.rigetti.com/applications/p2"
       ]
     },
     {
@@ -2721,6 +2306,323 @@
         "https://q2b.qcware.com/conference/2025-paris",
         "https://www.quera.com/about"
       ]
+    }
+  ],
+  "helix_overrides_applied": [
+    {
+      "entity": "Australia",
+      "canonical_actor_key": "australia",
+      "original_helix": "Industry",
+      "overridden_to": "Government",
+      "reason": "country_or_region"
+    },
+    {
+      "entity": "Austria",
+      "canonical_actor_key": "austria",
+      "original_helix": "Unknown",
+      "overridden_to": "Government",
+      "reason": "country_or_region"
+    },
+    {
+      "entity": "Bangladesh",
+      "canonical_actor_key": "bangladesh",
+      "original_helix": "Unknown",
+      "overridden_to": "Government",
+      "reason": "country_or_region"
+    },
+    {
+      "entity": "Bavaria",
+      "canonical_actor_key": "bavaria",
+      "original_helix": "Unknown",
+      "overridden_to": "Government",
+      "reason": "country_or_region"
+    },
+    {
+      "entity": "Brazil",
+      "canonical_actor_key": "brazil",
+      "original_helix": "Unknown",
+      "overridden_to": "Government",
+      "reason": "country_or_region"
+    },
+    {
+      "entity": "Bulgaria",
+      "canonical_actor_key": "bulgaria",
+      "original_helix": "Unknown",
+      "overridden_to": "Government",
+      "reason": "country_or_region"
+    },
+    {
+      "entity": "California",
+      "canonical_actor_key": "california",
+      "original_helix": "Unknown",
+      "overridden_to": "Government",
+      "reason": "country_or_region"
+    },
+    {
+      "entity": "Chile",
+      "canonical_actor_key": "chile",
+      "original_helix": "Industry",
+      "overridden_to": "Government",
+      "reason": "country_or_region"
+    },
+    {
+      "entity": "China",
+      "canonical_actor_key": "china",
+      "original_helix": "Academia",
+      "overridden_to": "Government",
+      "reason": "country_or_region"
+    },
+    {
+      "entity": "Czech Republic",
+      "canonical_actor_key": "czech republic",
+      "original_helix": "Industry",
+      "overridden_to": "Government",
+      "reason": "country_or_region"
+    },
+    {
+      "entity": "Czechia",
+      "canonical_actor_key": "czechia",
+      "original_helix": "Unknown",
+      "overridden_to": "Government",
+      "reason": "country_or_region"
+    },
+    {
+      "entity": "Denmark",
+      "canonical_actor_key": "denmark",
+      "original_helix": "Industry",
+      "overridden_to": "Government",
+      "reason": "country_or_region"
+    },
+    {
+      "entity": "Finland",
+      "canonical_actor_key": "finland",
+      "original_helix": "Industry",
+      "overridden_to": "Government",
+      "reason": "country_or_region"
+    },
+    {
+      "entity": "Greece",
+      "canonical_actor_key": "greece",
+      "original_helix": "Unknown",
+      "overridden_to": "Government",
+      "reason": "country_or_region"
+    },
+    {
+      "entity": "Illinois",
+      "canonical_actor_key": "illinois",
+      "original_helix": "Industry",
+      "overridden_to": "Government",
+      "reason": "country_or_region"
+    },
+    {
+      "entity": "Indonesia",
+      "canonical_actor_key": "indonesia",
+      "original_helix": "Unknown",
+      "overridden_to": "Government",
+      "reason": "country_or_region"
+    },
+    {
+      "entity": "Iran",
+      "canonical_actor_key": "iran",
+      "original_helix": "Unknown",
+      "overridden_to": "Government",
+      "reason": "country_or_region"
+    },
+    {
+      "entity": "Iraq",
+      "canonical_actor_key": "iraq",
+      "original_helix": "Unknown",
+      "overridden_to": "Government",
+      "reason": "country_or_region"
+    },
+    {
+      "entity": "Ireland",
+      "canonical_actor_key": "ireland",
+      "original_helix": "Unknown",
+      "overridden_to": "Government",
+      "reason": "country_or_region"
+    },
+    {
+      "entity": "Israel",
+      "canonical_actor_key": "israel",
+      "original_helix": "Unknown",
+      "overridden_to": "Government",
+      "reason": "country_or_region"
+    },
+    {
+      "entity": "Italy",
+      "canonical_actor_key": "italy",
+      "original_helix": "Industry",
+      "overridden_to": "Government",
+      "reason": "country_or_region"
+    },
+    {
+      "entity": "Korea",
+      "canonical_actor_key": "korea",
+      "original_helix": "Industry",
+      "overridden_to": "Government",
+      "reason": "country_or_region"
+    },
+    {
+      "entity": "Latvia",
+      "canonical_actor_key": "latvia",
+      "original_helix": "Unknown",
+      "overridden_to": "Government",
+      "reason": "country_or_region"
+    },
+    {
+      "entity": "Luxembourg",
+      "canonical_actor_key": "luxembourg",
+      "original_helix": "Unknown",
+      "overridden_to": "Government",
+      "reason": "country_or_region"
+    },
+    {
+      "entity": "Mexico",
+      "canonical_actor_key": "mexico",
+      "original_helix": "Unknown",
+      "overridden_to": "Government",
+      "reason": "country_or_region"
+    },
+    {
+      "entity": "Netherlands",
+      "canonical_actor_key": "netherlands",
+      "original_helix": "Unknown",
+      "overridden_to": "Government",
+      "reason": "country_or_region"
+    },
+    {
+      "entity": "Ontario",
+      "canonical_actor_key": "ontario",
+      "original_helix": "Unknown",
+      "overridden_to": "Government",
+      "reason": "country_or_region"
+    },
+    {
+      "entity": "Poland",
+      "canonical_actor_key": "poland",
+      "original_helix": "Unknown",
+      "overridden_to": "Government",
+      "reason": "country_or_region"
+    },
+    {
+      "entity": "Portugal",
+      "canonical_actor_key": "portugal",
+      "original_helix": "Unknown",
+      "overridden_to": "Government",
+      "reason": "country_or_region"
+    },
+    {
+      "entity": "Quebec",
+      "canonical_actor_key": "quebec",
+      "original_helix": "Unknown",
+      "overridden_to": "Government",
+      "reason": "country_or_region"
+    },
+    {
+      "entity": "Russia",
+      "canonical_actor_key": "russia",
+      "original_helix": "Unknown",
+      "overridden_to": "Government",
+      "reason": "country_or_region"
+    },
+    {
+      "entity": "Saudi Arabia",
+      "canonical_actor_key": "saudi arabia",
+      "original_helix": "Unknown",
+      "overridden_to": "Government",
+      "reason": "country_or_region"
+    },
+    {
+      "entity": "Slovenia",
+      "canonical_actor_key": "slovenia",
+      "original_helix": "Civil Society",
+      "overridden_to": "Government",
+      "reason": "country_or_region"
+    },
+    {
+      "entity": "South Korea",
+      "canonical_actor_key": "south korea",
+      "original_helix": "Unknown",
+      "overridden_to": "Government",
+      "reason": "country_or_region"
+    },
+    {
+      "entity": "Spain",
+      "canonical_actor_key": "spain",
+      "original_helix": "Unknown",
+      "overridden_to": "Government",
+      "reason": "country_or_region"
+    },
+    {
+      "entity": "Sweden",
+      "canonical_actor_key": "sweden",
+      "original_helix": "Unknown",
+      "overridden_to": "Government",
+      "reason": "country_or_region"
+    },
+    {
+      "entity": "Switzerland",
+      "canonical_actor_key": "switzerland",
+      "original_helix": "Industry",
+      "overridden_to": "Government",
+      "reason": "country_or_region"
+    },
+    {
+      "entity": "Taiwan",
+      "canonical_actor_key": "taiwan",
+      "original_helix": "Unknown",
+      "overridden_to": "Government",
+      "reason": "country_or_region"
+    },
+    {
+      "entity": "Thailand",
+      "canonical_actor_key": "thailand",
+      "original_helix": "Unknown",
+      "overridden_to": "Government",
+      "reason": "country_or_region"
+    },
+    {
+      "entity": "Turkey",
+      "canonical_actor_key": "turkey",
+      "original_helix": "Unknown",
+      "overridden_to": "Government",
+      "reason": "country_or_region"
+    },
+    {
+      "entity": "UAE",
+      "canonical_actor_key": "uae",
+      "original_helix": "Unknown",
+      "overridden_to": "Government",
+      "reason": "country_or_region"
+    },
+    {
+      "entity": "Ukraine",
+      "canonical_actor_key": "ukraine",
+      "original_helix": "Unknown",
+      "overridden_to": "Government",
+      "reason": "country_or_region"
+    },
+    {
+      "entity": "United Kingdom",
+      "canonical_actor_key": "united kingdom",
+      "original_helix": "Industry",
+      "overridden_to": "Government",
+      "reason": "country_or_region"
+    },
+    {
+      "entity": "United States",
+      "canonical_actor_key": "united states",
+      "original_helix": "Industry",
+      "overridden_to": "Government",
+      "reason": "country_or_region"
+    },
+    {
+      "entity": "Vietnam",
+      "canonical_actor_key": "vietnam",
+      "original_helix": "Unknown",
+      "overridden_to": "Government",
+      "reason": "country_or_region"
     }
   ]
 }
