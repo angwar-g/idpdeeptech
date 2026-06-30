@@ -137,18 +137,23 @@
   ],
   "input_node_records": 6900,
   "input_edge_records": 5134,
-  "output_unique_actors": 4831,
-  "output_unique_edges": 2044,
+  "output_unique_actors": 4824,
+  "output_unique_edges": 2041,
   "rewrites_applied": {
     "*: ^(.{2,}?),? (ltd\\.?|limited|gmbh|llc|inc\\.?|incorporated|corp\\.?|corporation|s\\.a\\.|sas|s\\.r\\.l\\.|ag|kg|kgaa|pty ltd|pte ltd|bv|nv|oy|ab|spa|plc|kk|kft|sa|sl|srl|sro|asa|holdings|holding)$ -> $1": 170,
     "*: ^fraunhofer research fab microelectronics germany \\(fmd\\)$ -> FMD": 1,
     "*: ^fraunhofer-einrichtung für mikrosysteme und festkörper-technologien \\(emft\\)$ -> Fraunhofer EMFT": 1,
+    "*: ^lmu \\(ludwig-maximilians-universität münchen\\)$ -> LMU": 1,
+    "*: ^tum \\(technische universität münchen\\)$ -> TUM": 1,
     "per-source rewrite chain": 4,
     "*: ^massachusetts institute of technology \\(mit\\)$ -> MIT": 15,
     "*: ^netherlands organisation for applied scientific research \\(tno\\)$ -> TNO": 1,
     "*: ^reserve bank of india \\(rbi\\)$ -> RBI": 1,
     "*: ^association of southeast asian nations \\(asean\\)$ -> ASEAN": 1,
     "*: ^silicon quantum computing \\(sqc\\)$ -> SQC": 2,
+    "*: ^czech technical university \\(ctu\\)$ -> CTU": 1,
+    "*: ^czech technical university in prague$ -> CTU": 1,
+    "*: ^technical university of denmark \\(dtu\\)$ -> DTU": 3,
     "*: ^centre national de la recherche scientifique \\(cnrs\\)$ -> CNRS": 2,
     "*: ^commissariat à l'énergie atomique et aux énergies alternatives \\(cea\\)$ -> CEA": 3,
     "*: ^grand equipement national de calcul intensif \\(genci\\)$ -> GENCI": 1,
@@ -189,7 +194,8 @@
     "*: ^hewlett packard enterprise \\(hpe\\)$ -> HPE": 2,
     "*: ^fraunhofer institute for industrial engineering \\(fraunhofer iao\\)$ -> Fraunhofer IAO": 1,
     "*: ^fujitsu (limited|group|japan limited|corp\\.?|corporation|laboratories|research|distinguished engineers|sports|accelerator|blog|cross culture center|technology park|uvance|uvance kawasaki tower|ventures)$ -> Fujitsu": 16,
-    "*: ^ibm (corp\\.?|corporation|inc\\.?|corporation \\(ibm\\)|business partners|champions|developer|cloud catalog|cloud support team|cio office|center for cloud training|cloud center for training enterprise subscription administrators|community advocacy|consulting|deutschland|education|fix central|granite\\.code|instana observability path|japan,?|learning individual subscription with coursera|partner|partner ecosystem|partner plus|partner plus program|partner portal|partner program|partnerplus|passport advantage|redbooks|skills network|support|support portal|sustainability software|techxchange community|techxchange event attendees|techxchange rewards program - formerly known as ibm learn 'n score program|technology|training|tutorials|user groups|verify|webinar series|bob)$ -> IBM": 24,
+    "*: ^ibm (corp\\.?|corporation|inc\\.?|corporation \\(ibm\\)|business partners|champions|developer|cloud catalog|cloud support team|cio office|center for cloud training|cloud center for training enterprise subscription administrators|community advocacy|consulting|deutschland|education|fix central|granite\\.code|instana observability path|japan,?|learning individual subscription with coursera|partner|partner ecosystem|partner plus|partner plus program|partner portal|partner program|partnerplus|passport advantage|redbooks|skills network|support|support portal|sustainability software|techxchange community|techxchange event attendees|techxchange rewards program - formerly known as ibm learn 'n score program|technology|training|tutorials|user groups|verify|webinar series)$ -> IBM": 23,
+    "*: ^technical university of munich$ -> TUM": 1,
     "*: ^semiconductor research corporation \\(src\\)$ -> SRC": 1,
     "*: ^accenture \\(acn\\)$ -> Accenture": 1,
     "*: ^airbus se \\(air\\) \\(eads\\)$ -> Airbus": 1,
@@ -206,12 +212,17 @@
     "*: ^fraunhofer institute$ -> Fraunhofer-Gesellschaft": 1,
     "*: ^fraunhofer institute for applied solid state physics \\(fraunhofer iaf\\)$ -> Fraunhofer IAF": 1,
     "*: ^fraunhofer institute for integrated circuits \\(fraunhofer iis\\)$ -> Fraunhofer IIS": 1,
+    "*: ^ludwig-maximilians-universität münchen \\(lmu münchen\\)$ -> LMU": 1,
+    "*: ^technische universität münchen \\(tum\\)$ -> TUM": 1,
     "*: ^électricité de france \\(edf\\)$ -> EDF": 1,
     "*: ^oxford quantum circuits \\(oqc\\)$ -> OQC": 1,
     "*: ^uk national quantum computing centre \\(nqcc\\)$ -> NQCC": 1,
     "*: ^university college london \\(ucl\\)$ -> UCL": 1,
     "*: ^association for computing machinery \\(acm\\)$ -> ACM": 1,
     "*: ^computing research association \\(cra\\)$ -> CRA": 1,
+    "*: ^danmarks nationale metrologi institut \\(dfm\\)$ -> DFM": 1,
+    "*: ^denmark's technical university$ -> DTU": 1,
+    "*: ^dfm – danmarks nationale metrologiinstitut$ -> DFM": 1,
     "*: ^american institute of certified public accountants \\(aicpa\\)$ -> AICPA": 1
   },
   "actors_dropped": {
@@ -228,16 +239,20 @@
     "*: ^european$ -> [drop]": 1,
     "*: ^(the )?government$ -> [drop_if_unmapped]": 2,
     "*: ^users$ -> [drop]": 3,
+    "*: ^alice$ -> [drop]": 3,
+    "*: ^bob$ -> [drop]": 3,
     "*: ^countries$ -> [drop]": 1,
     "*: ^employer$ -> [drop]": 1,
     "*: ^municipality$ -> [drop]": 1,
     "*: ^country$ -> [drop]": 1,
     "*: ^admin$ -> [drop]": 1,
     "*: ^us$ -> [drop]": 2,
+    "*: ^eve$ -> [drop]": 1,
     "*: ^community$ -> [drop]": 1,
     "*: ^citizens$ -> [drop]": 1,
     "*: ^quantum$ -> [drop]": 1,
     "*: ^[a-z0-9\\-]+\\.[a-z]+\\.(com|org|net|io|tech|ai|co)$ -> [drop]": 2,
+    "*: ^dave$ -> [drop]": 1,
     "*: ^nation-states$ -> [drop]": 1,
     "*: ^nations$ -> [drop]": 1
   },
@@ -294,21 +309,6 @@
         "Europe25.pdf",
         "Luis_Germany18.pdf",
         "https://www.bluequbit.io/quantum-mechanical-model"
-      ]
-    },
-    {
-      "entity": "Alice",
-      "canonical_actor_key": "alice",
-      "helixes": [
-        "Government",
-        "Industry",
-        "Unknown"
-      ],
-      "chosen_helix": "Industry",
-      "source_documents": [
-        "SouthAfrica21.pdf",
-        "https://alice-bob.com/blog/who-are-alice-and-bob-the-story-behind-our-name",
-        "https://www.bluequbit.io/blog/quantum-advantage-inside-peaked-circuits"
       ]
     },
     {
@@ -457,20 +457,6 @@
         "https://1qbit.com/research/scaling-overhead-of-locality-reduction-in-binary-optimization-problems",
         "https://quantumai.google/cirq/hardware",
         "https://www.rigetti.com/applications"
-      ]
-    },
-    {
-      "entity": "Bob",
-      "canonical_actor_key": "bob",
-      "helixes": [
-        "Government",
-        "Unknown"
-      ],
-      "chosen_helix": "Government",
-      "source_documents": [
-        "SouthAfrica21.pdf",
-        "https://alice-bob.com/blog",
-        "https://www.bluequbit.io/blog/quantum-advantage-inside-peaked-circuits"
       ]
     },
     {
@@ -743,6 +729,18 @@
         "Luis_Denmark23.pdf",
         "Nordic23.pdf",
         "https://sparrowquantum.com/news"
+      ]
+    },
+    {
+      "entity": "DFM",
+      "canonical_actor_key": "dfm",
+      "helixes": [
+        "Academia",
+        "Government"
+      ],
+      "chosen_helix": "Government",
+      "source_documents": [
+        "https://sparrowquantum.com/post/danske-fotonkilder-til-fremtidens-kvanteberegninger"
       ]
     },
     {

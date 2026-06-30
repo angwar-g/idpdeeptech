@@ -1,7 +1,7 @@
 {
   "_comment": "Per-source actor rewrites applied BEFORE cross-document merging. Keys are source_document values (e.g. 'Japan25.pdf' or 'https://...'). Each rule has 'match' (case-insensitive regex on the full entity name) and either 'replace' (new name; supports $1/$2 capture groups), 'drop' (remove the actor + its edges), or 'drop_if_unmapped' (remove only if no per-source rule already renamed it). Wildcards: keys under '*' apply to every source. Matching order: per-source rules first (can rename, chain continues), then '*' rules.",
 
-  "_organization": "Rules under '*' are organized by purpose: (1) Brand consolidation; (2) Abbreviation-pair canonicalization; (3) Fraunhofer cluster (parent vs institutes); (4) Universal legal-suffix stripping; (5) Common-noun drops; (5b) Domain/URL fragments; (6) Context-dependent drops.",
+  "_organization": "Rules under '*' are organized by purpose: (1) Brand consolidation; (2) Abbreviation-pair canonicalization; (3) Fraunhofer cluster (parent vs institutes); (4) Universal legal-suffix stripping; (5) Common-noun drops; (5b) Domain/URL fragments; (5c) Cryptographic placeholder names (Alice/Bob/Eve/...); (6) Context-dependent drops.",
 
   "_review_notes": [
     "SQC is BOTH 'Silicon Quantum Computing' (Aus) and 'Swiss Quantum Commission' -- kept separate intentionally.",
@@ -9,7 +9,10 @@
     "ISTA: 'Israel Institute of Technology (ISTA)' looks like a misextraction (Technion is the usual abbreviation; ISTA normally = Institute of Science and Technology Austria). Spot-check the source.",
     "Honeywell Quantum Solutions was historically a distinct org that merged with Cambridge Quantum to form Quantinuum -- kept separate from 'Honeywell'.",
     "Microsoft Quantum and IBM Quantum are research orgs and are deliberately KEPT SEPARATE from their parent brands.",
-    "Google DeepMind is a research org distinct from Google -- kept separate."
+    "Google DeepMind is a research org distinct from Google -- kept separate.",
+    "Alice / Bob / Eve / etc. are cryptographic placeholder names (the canonical 'Alice sends a message to Bob' actors used in every quantum-crypto document). They are NOT real actors; dropped unconditionally. The COMPANY 'Alice-Bob' (alice-bob.com, French quantum startup) is kept -- the drop rules use ^...$ anchors so they only match exact strings.",
+    "DTU Fotonik is a specific institute within DTU and is KEPT SEPARATE from DTU itself, same logic as Fraunhofer institutes vs Fraunhofer-Gesellschaft.",
+    "Bundeswehr University Munich is a different university from TUM (Technical University of Munich) -- kept separate."
   ],
 
   "rewrites": {
@@ -95,7 +98,7 @@
       { "match": "^amazon\\.com (inc\\.?|inc\\.? \\(amzn\\))$", "replace": "Amazon" },
       { "match": "^alphabet (inc\\.?|inc\\.? \\(googl\\))$", "replace": "Alphabet" },
 
-      { "match": "^ibm (corp\\.?|corporation|inc\\.?|corporation \\(ibm\\)|business partners|champions|developer|cloud catalog|cloud support team|cio office|center for cloud training|cloud center for training enterprise subscription administrators|community advocacy|consulting|deutschland|education|fix central|granite\\.code|instana observability path|japan,?|learning individual subscription with coursera|partner|partner ecosystem|partner plus|partner plus program|partner portal|partner program|partnerplus|passport advantage|redbooks|skills network|support|support portal|sustainability software|techxchange community|techxchange event attendees|techxchange rewards program - formerly known as ibm learn 'n score program|technology|training|tutorials|user groups|verify|webinar series|bob)$", "replace": "IBM" },
+      { "match": "^ibm (corp\\.?|corporation|inc\\.?|corporation \\(ibm\\)|business partners|champions|developer|cloud catalog|cloud support team|cio office|center for cloud training|cloud center for training enterprise subscription administrators|community advocacy|consulting|deutschland|education|fix central|granite\\.code|instana observability path|japan,?|learning individual subscription with coursera|partner|partner ecosystem|partner plus|partner plus program|partner portal|partner program|partnerplus|passport advantage|redbooks|skills network|support|support portal|sustainability software|techxchange community|techxchange event attendees|techxchange rewards program - formerly known as ibm learn 'n score program|technology|training|tutorials|user groups|verify|webinar series)$", "replace": "IBM" },
 
       { "match": "^intel (corporation|inc\\.?|capital|foundation|ignite|labs|geti|automotive|data center group|inside®|news room|pride|vitality|core™|core™ ultra|developer catalog|nuc|partner alliance|partner showcase|server m50fcp family|trust authority|xeon®|® core™|® core™ ultra|® developer catalog|® nuc|® partner alliance|® partner showcase|® server m50fcp family|® trust authority|® xeon®)$", "replace": "Intel" },
 
@@ -162,6 +165,18 @@
       { "match": "^national institute for basic biology \\(riken\\)$",             "replace": "RIKEN" },
       { "match": "^quantum computation center \\(riken\\)$",                       "replace": "RIKEN" },
 
+      { "match": "^czech technical university \\(ctu\\)$",                          "replace": "CTU" },
+      { "match": "^czech technical university in prague$",                          "replace": "CTU" },
+      { "match": "^technical university of denmark \\(dtu\\)$",                     "replace": "DTU" },
+      { "match": "^denmark's technical university$",                                "replace": "DTU" },
+      { "match": "^technische universität münchen \\(tum\\)$",                      "replace": "TUM" },
+      { "match": "^tum \\(technische universität münchen\\)$",                      "replace": "TUM" },
+      { "match": "^technical university of munich$",                                "replace": "TUM" },
+      { "match": "^ludwig-maximilians-universität münchen \\(lmu münchen\\)$",      "replace": "LMU" },
+      { "match": "^lmu \\(ludwig-maximilians-universität münchen\\)$",              "replace": "LMU" },
+      { "match": "^danmarks nationale metrologi institut \\(dfm\\)$",                "replace": "DFM" },
+      { "match": "^dfm – danmarks nationale metrologiinstitut$",                     "replace": "DFM" },
+
       { "match": "^fraunhofer institute$",          "replace": "Fraunhofer-Gesellschaft" },
       { "match": "^fraunhofer society$",            "replace": "Fraunhofer-Gesellschaft" },
       { "match": "^fraunhofer$",                    "replace": "Fraunhofer-Gesellschaft" },
@@ -223,6 +238,16 @@
 
       { "match": "^[a-z0-9\\-]+\\.(com|org|net|io|tech|ai|co|ca|uk|de|fr)$", "drop": true },
       { "match": "^[a-z0-9\\-]+\\.[a-z]+\\.(com|org|net|io|tech|ai|co)$", "drop": true },
+
+      { "match": "^alice$",                         "drop": true },
+      { "match": "^bob$",                           "drop": true },
+      { "match": "^charlie$",                       "drop": true },
+      { "match": "^carol$",                         "drop": true },
+      { "match": "^dave$",                          "drop": true },
+      { "match": "^eve$",                           "drop": true },
+      { "match": "^mallory$",                       "drop": true },
+      { "match": "^trent$",                         "drop": true },
+      { "match": "^walter$",                        "drop": true },
 
       { "match": "^(the )?government$",             "drop_if_unmapped": true },
       { "match": "^(the )?national government$",    "drop_if_unmapped": true },
