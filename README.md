@@ -130,7 +130,7 @@ python3 pdf_pipeline.py Singapore25.pdf --force -i
 python3 site_pipeline.py https://psiquantum.com/ --force --skip-crawl
 
 # Process a batch of news articles (single page each, no link-following)
-python3 site_pipeline_batch.py news.json --crawl 0 --max-pages 1
+python3 site_pipeline_batch.py news.json --crawl 0 --max-pages 1 --workers 4
 
 # Redo everything in the batch
 python3 pdf_pipeline_batch.py --workers 4 --force
