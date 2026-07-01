@@ -7,12 +7,17 @@ in japan25.pdf), deduplicates actors across sources, collapses edges into
 logical edges with occurrence lists, joins news article dates from the news
 manifest, and writes:
 
-    merged_outputs/
+    pipeline/merged_outputs/
       combined_nodes.json       <- one record per canonical actor
       combined_edges.json       <- one record per logical edge, with
                                    occurrences[] listing every (source, page,
                                    sentence, date) mention
       merge_report.json         <- diagnostics: rewrite counts, helix conflicts
+
+After writing, the two combined_*.json files are also copied to docs/data/
+(configurable via --publish-to) so the UI can fetch them when served locally
+or via GitHub Pages. The merge_report.json is NOT copied -- it's a
+development/audit artifact and doesn't belong on the public site.
 
 The output is consumed by the frontend UI (vis-network) directly. We do not
 render an HTML preview here -- the UI is the renderer.
@@ -23,8 +28,10 @@ when you spot new patterns (a country's PDF using "we", a site using generic
 rewrite change without writing files.
 
 Usage:
-    python3 merge_all.py                          # write merged outputs
+    python3 merge_all.py                          # write merged outputs + publish
     python3 merge_all.py --dry-run                # show actions, don't write
+    python3 merge_all.py --no-publish             # don't copy to docs/data/
+    python3 merge_all.py --publish-to <dir>       # copy to a different dir
     python3 merge_all.py --rewrites custom.json   # use a non-default rewrite file
 """
 from __future__ import annotations
@@ -32,6 +39,7 @@ from __future__ import annotations
 import argparse
 import json
 import re
+import shutil
 import sys
 from collections import Counter, defaultdict
 from pathlib import Path
@@ -92,10 +100,6 @@ COUNTRY_GOVERNMENT_ACTORS: frozenset[str] = frozenset({
     "quebec", "ontario", "bavaria", "baden-württemberg",
 })
 
-
-# --------------------------------------------------------------------------
-# Rewrite map handling
-# --------------------------------------------------------------------------
 
 DEFAULT_REWRITES = {
     "_comment": (
@@ -802,6 +806,29 @@ def compute_layout(
 
 
 # --------------------------------------------------------------------------
+# Publishing (copy combined_*.json to the UI's data directory)
+# --------------------------------------------------------------------------
+
+def publish_to_ui(out_dir: Path, publish_dir: Path) -> None:
+    """Copy combined_nodes.json and combined_edges.json to the UI data folder.
+
+    Does not copy merge_report.json -- that's a development/audit artifact
+    and doesn't belong on the public site.
+
+    Creates publish_dir (and parents) if missing.
+    """
+    publish_dir.mkdir(parents=True, exist_ok=True)
+    for filename in ("combined_nodes.json", "combined_edges.json"):
+        src = out_dir / filename
+        dst = publish_dir / filename
+        if not src.exists():
+            print(f"WARNING: {src} missing; skipping publish of this file.")
+            continue
+        shutil.copy2(src, dst)
+        print(f"Published {src.name} -> {dst}")
+
+
+# --------------------------------------------------------------------------
 # Main
 # --------------------------------------------------------------------------
 
@@ -821,6 +848,17 @@ def main():
     parser.add_argument(
         "--dry-run", action="store_true",
         help="Print what would be done; don't write any files.",
+    )
+    parser.add_argument(
+        "--no-publish", action="store_true",
+        help="Skip copying combined_*.json to the UI data directory. "
+             "Useful when iterating on merge logic without touching deployed data.",
+    )
+    parser.add_argument(
+        "--publish-to", default=None,
+        help="Directory to publish combined_*.json into. "
+             "Defaults to <repo_root>/docs/data/ (relative to the pipeline/ folder). "
+             "Use --no-publish to skip publishing entirely.",
     )
     args = parser.parse_args()
 
@@ -981,6 +1019,21 @@ def main():
     print(f"\nWrote {out_dir / 'combined_nodes.json'}")
     print(f"Wrote {out_dir / 'combined_edges.json'}")
     print(f"Wrote {out_dir / 'merge_report.json'}")
+
+    # Publish to the UI data folder. Default target is <repo_root>/docs/data/
+    # where repo_root is the parent of pipeline/. This is what the UI (both
+    # local and GitHub Pages) fetches from.
+    if args.no_publish:
+        print("\n--no-publish: skipping copy to UI data directory.")
+    else:
+        if args.publish_to:
+            publish_dir = Path(args.publish_to).resolve()
+        else:
+            repo_root = root.parent
+            publish_dir = repo_root / "docs" / "data"
+        print(f"\nPublishing to UI data directory: {publish_dir}")
+        publish_to_ui(out_dir, publish_dir)
+
     print("\nDone. Open the frontend UI to explore the merged graph.")
 
 
