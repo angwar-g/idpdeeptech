@@ -1,0 +1,69 @@
+
+========================================================================
+RUN STARTED  2026-07-01 16:55:11
+site_pipeline.py https://thequantuminsider.com/2019/08/19/heisenberg-by-name-heisenberg-by-nature/
+========================================================================
+
+[16:55:11 +0s | thequantuminsider_2019_08_19_heisenberg_by_name_heisenberg_by_nature] === 0 crawl site ===
+[16:55:12 +1s | thequantuminsider_2019_08_19_heisenberg_by_name_heisenberg_by_nature] [INIT].... → Crawl4AI 0.8.6 
+[16:56:15 +1m 1s | thequantuminsider_2019_08_19_heisenberg_by_name_heisenberg_by_nature] [ANTIBOT]. ℹ https://thequantuminsid...e-heisenberg-by-nature/  | Error: Proxy direct failed: Failed on navigating ACS-GOTO:
+[16:56:15 +1m 1s | thequantuminsider_2019_08_19_heisenberg_by_name_heisenberg_by_nature] Page.goto: Timeout 60000ms exceeded.
+[16:56:15 +1m 1s | thequantuminsider_2019_08_19_heisenberg_by_name_heisenberg_by_nature] Call log:
+[16:56:15 +1m 1s | thequantuminsider_2019_08_19_heisenberg_by_name_heisenberg_by_nature]   - navigating to "https://thequantuminsider.com/2019/08/19/heisenberg-by-name-heisenberg-by-nature/", waiting until "domcontentloaded"
+ 
+[16:56:15 +1m 1s | thequantuminsider_2019_08_19_heisenberg_by_name_heisenberg_by_nature] [ERROR]... × https://thequantuminsid...e-heisenberg-by-nature/  | Error: Unexpected error in _crawl_web at line 778 in _crawl_web 
+[16:56:15 +1m 1s | thequantuminsider_2019_08_19_heisenberg_by_name_heisenberg_by_nature] (../../../../../.local/lib/python3.10/site-packages/crawl4ai/async_crawler_strategy.py):
+[16:56:15 +1m 1s | thequantuminsider_2019_08_19_heisenberg_by_name_heisenberg_by_nature] Error: Failed on navigating ACS-GOTO:
+[16:56:15 +1m 1s | thequantuminsider_2019_08_19_heisenberg_by_name_heisenberg_by_nature] Page.goto: Timeout 60000ms exceeded.
+[16:56:15 +1m 1s | thequantuminsider_2019_08_19_heisenberg_by_name_heisenberg_by_nature] Call log:
+[16:56:15 +1m 1s | thequantuminsider_2019_08_19_heisenberg_by_name_heisenberg_by_nature]   - navigating to "https://thequantuminsider.com/2019/08/19/heisenberg-by-name-heisenberg-by-nature/", waiting until "domcontentloaded"
+
+
+[16:56:15 +1m 1s | thequantuminsider_2019_08_19_heisenberg_by_name_heisenberg_by_nature] Code context:
+[16:56:15 +1m 1s | thequantuminsider_2019_08_19_heisenberg_by_name_heisenberg_by_nature]  773                                   tag="GOTO",
+[16:56:15 +1m 1s | thequantuminsider_2019_08_19_heisenberg_by_name_heisenberg_by_nature]  774                                   params={"url": url},
+[16:56:15 +1m 1s | thequantuminsider_2019_08_19_heisenberg_by_name_heisenberg_by_nature]  775                               )
+[16:56:15 +1m 1s | thequantuminsider_2019_08_19_heisenberg_by_name_heisenberg_by_nature]  776                               response = None
+[16:56:15 +1m 1s | thequantuminsider_2019_08_19_heisenberg_by_name_heisenberg_by_nature]  777                           else:
+[16:56:15 +1m 1s | thequantuminsider_2019_08_19_heisenberg_by_name_heisenberg_by_nature]  778 →                             raise RuntimeError(f"Failed on navigating ACS-GOTO:\n{str(e)}")
+[16:56:15 +1m 1s | thequantuminsider_2019_08_19_heisenberg_by_name_heisenberg_by_nature]  779   
+[16:56:15 +1m 1s | thequantuminsider_2019_08_19_heisenberg_by_name_heisenberg_by_nature]  780                       # ──────────────────────────────────────────────────────────────
+[16:56:15 +1m 1s | thequantuminsider_2019_08_19_heisenberg_by_name_heisenberg_by_nature]  781                       # Walk the redirect chain.  Playwright returns only the last
+[16:56:15 +1m 1s | thequantuminsider_2019_08_19_heisenberg_by_name_heisenberg_by_nature]  782                       # hop, so we trace the `request.redirected_from` links until the
+[16:56:15 +1m 1s | thequantuminsider_2019_08_19_heisenberg_by_name_heisenberg_by_nature]  783                       # first response that differs from the final one and surface its 
+[16:56:15 +1m 1s | thequantuminsider_2019_08_19_heisenberg_by_name_heisenberg_by_nature] Saved: crawl_output/2dd47aa8f8_thequantuminsider.com_2019_08_19_heisenberg-by-name-heisenberg-by-nature.json
+
+[16:56:18 +1m 2s | thequantuminsider_2019_08_19_heisenberg_by_name_heisenberg_by_nature] === 1 actor extraction ===
+[16:56:18 +1m 2s | thequantuminsider_2019_08_19_heisenberg_by_name_heisenberg_by_nature] Reading page (1/1): https://thequantuminsider.com/2019/08/19/heisenberg-by-name-heisenberg-by-nature
+[16:56:18 +1m 2s | thequantuminsider_2019_08_19_heisenberg_by_name_heisenberg_by_nature] Extracting actors: https://thequantuminsider.com/2019/08/19/heisenberg-by-name-heisenberg-by-nature (1/1), chunk 1/1
+[16:56:20 +1m 3s | thequantuminsider_2019_08_19_heisenberg_by_name_heisenberg_by_nature] Saved 1_actor_results.json with 0 extracted records
+
+[16:56:20 +1m 3s | thequantuminsider_2019_08_19_heisenberg_by_name_heisenberg_by_nature] === 2 clean actors ===
+[16:56:20 +1m 3s | thequantuminsider_2019_08_19_heisenberg_by_name_heisenberg_by_nature] Loaded 0 extracted records
+[16:56:20 +1m 3s | thequantuminsider_2019_08_19_heisenberg_by_name_heisenberg_by_nature] Saved 2_actor_nodes.json with 0 canonical actor nodes
+
+[16:56:20 +1m 3s | thequantuminsider_2019_08_19_heisenberg_by_name_heisenberg_by_nature] === 3 interaction extraction ===
+[16:56:20 +1m 3s | thequantuminsider_2019_08_19_heisenberg_by_name_heisenberg_by_nature] No valid actors found, skipping.
+
+[16:56:20 +1m 4s | thequantuminsider_2019_08_19_heisenberg_by_name_heisenberg_by_nature] === 4 clean interactions ===
+[16:56:20 +1m 4s | thequantuminsider_2019_08_19_heisenberg_by_name_heisenberg_by_nature] No input (3_interaction_results.json missing -- upstream produced no edges). Wrote empty 4_edges.json.
+
+[16:56:20 +1m 4s | thequantuminsider_2019_08_19_heisenberg_by_name_heisenberg_by_nature] === 5 helix enrichment ===
+[16:56:20 +1m 4s | thequantuminsider_2019_08_19_heisenberg_by_name_heisenberg_by_nature] Wrote 5_nodes.json (0 actors)
+[16:56:20 +1m 4s | thequantuminsider_2019_08_19_heisenberg_by_name_heisenberg_by_nature] Wrote 5_edges.json (0 interactions)
+[16:56:20 +1m 4s | thequantuminsider_2019_08_19_heisenberg_by_name_heisenberg_by_nature] Actor helix counts: {}
+[16:56:20 +1m 4s | thequantuminsider_2019_08_19_heisenberg_by_name_heisenberg_by_nature] Functional-space counts: {}
+
+[16:56:20 +1m 4s | thequantuminsider_2019_08_19_heisenberg_by_name_heisenberg_by_nature] === 6 network visualisation ===
+[16:56:21 +1m 4s | thequantuminsider_2019_08_19_heisenberg_by_name_heisenberg_by_nature] Wrote quantum_network.html
+[16:56:21 +1m 4s | thequantuminsider_2019_08_19_heisenberg_by_name_heisenberg_by_nature] Nodes: 0
+[16:56:21 +1m 4s | thequantuminsider_2019_08_19_heisenberg_by_name_heisenberg_by_nature] Edges: 0
+
+[16:56:21 +1m 4s | thequantuminsider_2019_08_19_heisenberg_by_name_heisenberg_by_nature] Done. Outputs written to: /home/lv/IDP/idpdeeptech/pipeline/news_outputs/thequantuminsider_2019_08_19_heisenberg_by_name_heisenberg_by_nature
+[16:56:21 +1m 4s | thequantuminsider_2019_08_19_heisenberg_by_name_heisenberg_by_nature] Log: /home/lv/IDP/idpdeeptech/pipeline/news_outputs/thequantuminsider_2019_08_19_heisenberg_by_name_heisenberg_by_nature/run.log
+
+========================================================================
+RUN FINISHED 2026-07-01 16:56:21  (OK)
+Started:     2026-07-01 16:55:11
+Elapsed:     1m 4s
+========================================================================

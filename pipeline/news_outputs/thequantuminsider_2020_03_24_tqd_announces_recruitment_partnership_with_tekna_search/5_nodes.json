@@ -1,0 +1,956 @@
+[
+  {
+    "entity": "Army Research Office",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "national government institutions",
+    "role_in_text": "Launches QuantumEAGLe Initiative",
+    "technology_area": "quantum computing",
+    "occurrence_sentence": "NSA Introduces QuantumEAGLe Program to Advance U.S. Quantum Computing",
+    "source_document": "https://thequantuminsider.com/2020/03/24/tqd-announces-recruitment-partnership-with-tekna-search",
+    "page": 17,
+    "canonical_actor_key": "army research office",
+    "aliases": [
+      "Army Research Office"
+    ],
+    "pages": [
+      17
+    ],
+    "mentions": [
+      {
+        "entity": "Army Research Office",
+        "page": 17,
+        "role_in_text": "Launches QuantumEAGLe Initiative",
+        "occurrence_sentence": "NSA Introduces QuantumEAGLe Program to Advance U.S. Quantum Computing",
+        "source_document": "https://thequantuminsider.com/2020/03/24/tqd-announces-recruitment-partnership-with-tekna-search"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Government",
+    "sphere": "Single",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "Classiq",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "small and medium-sized enterprises",
+    "role_in_text": "launched a quantum cloud offering",
+    "technology_area": "quantum computing",
+    "occurrence_sentence": "Classiq and QAI Launch Quantum Cloud Offering in Korea",
+    "source_document": "https://thequantuminsider.com/2020/03/24/tqd-announces-recruitment-partnership-with-tekna-search",
+    "page": 15,
+    "confidence": "high",
+    "canonical_actor_key": "classiq",
+    "aliases": [
+      "Classiq"
+    ],
+    "pages": [
+      15
+    ],
+    "mentions": [
+      {
+        "entity": "Classiq",
+        "page": 15,
+        "role_in_text": "launched a quantum cloud offering",
+        "occurrence_sentence": "Classiq and QAI Launch Quantum Cloud Offering in Korea",
+        "source_document": "https://thequantuminsider.com/2020/03/24/tqd-announces-recruitment-partnership-with-tekna-search"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Industry",
+    "sphere": "Single",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "Defense Advanced Research Projects Agency (DARPA)",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "national government institutions",
+    "role_in_text": "Part of the QuantumEAGLe initiative",
+    "technology_area": "quantum computing",
+    "occurrence_sentence": "NSA Introduces QuantumEAGLe Program to Advance U.S. Quantum Computing",
+    "source_document": "https://thequantuminsider.com/2020/03/24/tqd-announces-recruitment-partnership-with-tekna-search",
+    "page": 20,
+    "canonical_actor_key": "defense advanced research projects agency",
+    "aliases": [
+      "DARPA",
+      "Defense Advanced Research Projects Agency",
+      "Defense Advanced Research Projects Agency (DARPA)"
+    ],
+    "pages": [
+      20
+    ],
+    "mentions": [
+      {
+        "entity": "Defense Advanced Research Projects Agency (DARPA)",
+        "page": 20,
+        "role_in_text": "Part of the QuantumEAGLe initiative",
+        "occurrence_sentence": "NSA Introduces QuantumEAGLe Program to Advance U.S. Quantum Computing",
+        "source_document": "https://thequantuminsider.com/2020/03/24/tqd-announces-recruitment-partnership-with-tekna-search"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Government",
+    "sphere": "Single",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "Evan Kubes",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "individual",
+    "role_in_text": "Director and Co-founder of The Quantum Daily",
+    "technology_area": "quantum computing",
+    "occurrence_sentence": "Evan Kubes is a Director and Co-founder of The Quantum Daily.",
+    "source_document": "https://thequantuminsider.com/2020/03/24/tqd-announces-recruitment-partnership-with-tekna-search",
+    "page": 14,
+    "confidence": "high",
+    "canonical_actor_key": "evan kubes",
+    "aliases": [
+      "Evan Kubes"
+    ],
+    "pages": [
+      14
+    ],
+    "mentions": [
+      {
+        "entity": "Evan Kubes",
+        "page": 14,
+        "role_in_text": "Director and Co-founder of The Quantum Daily",
+        "occurrence_sentence": "Evan Kubes is a Director and Co-founder of The Quantum Daily.",
+        "source_document": "https://thequantuminsider.com/2020/03/24/tqd-announces-recruitment-partnership-with-tekna-search"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Industry",
+    "sphere": "Single",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "name_heuristic_industry",
+    "classification_needs_review": true,
+    "classification_review_reason": "individual_requires_role_classification"
+  },
+  {
+    "entity": "Germany",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "country",
+    "role_in_text": "country",
+    "technology_area": "unknown",
+    "occurrence_sentence": "აქართველო) Germany (Deutschland) Ghana (Gaana) Gibraltar Greece (Ελλάδα) Greenland (Kalaallit Nunaat) Grenada Guadeloupe Guam Guatemala Guinea (Guinée) Guinea-Bissau (Guiné Bissau) Guyana Haiti Honduras Hong Kong (香港) Hungary (Magyarország) Iceland (Ísland) India (भारत) Indonesia Iran (‫ایران‬‎) Iraq (‫العراق‬‎) Ireland Israel (‫ישראל‬‎) Italy (Italia) Jamaica Japan (日本) Jordan (‫الأردن‬‎) Kazakhstan (Казахстан) Kenya Kiribati Kosovo Kuwait (‫الكويت‬‎) Kyrgyzstan (Кыргызстан) Laos (ລາວ) Latvia (Latvija) Lebanon (‫لبنان‬‎) Lesotho Liberia Libya (‫ليبيا‬‎) Liechtenstein Lithuania (Lietuva) Luxembourg",
+    "source_document": "https://thequantuminsider.com/2020/03/24/tqd-announces-recruitment-partnership-with-tekna-search",
+    "page": 26,
+    "canonical_actor_key": "germany",
+    "aliases": [
+      "Germany"
+    ],
+    "pages": [
+      26
+    ],
+    "mentions": [
+      {
+        "entity": "Germany",
+        "page": 26,
+        "role_in_text": "country",
+        "occurrence_sentence": "აქართველო) Germany (Deutschland) Ghana (Gaana) Gibraltar Greece (Ελλάδα) Greenland (Kalaallit Nunaat) Grenada Guadeloupe Guam Guatemala Guinea (Guinée) Guinea-Bissau (Guiné Bissau) Guyana Haiti Honduras Hong Kong (香港) Hungary (Magyarország) Iceland (Ísland) India (भारत) Indonesia Iran (‫ایران‬‎) Iraq (‫العراق‬‎) Ireland Israel (‫ישראל‬‎) Italy (Italia) Jamaica Japan (日本) Jordan (‫الأردن‬‎) Kazakhstan (Казахстан) Kenya Kiribati Kosovo Kuwait (‫الكويت‬‎) Kyrgyzstan (Кыргызстан) Laos (ລາວ) Latvia (Latvija) Lebanon (‫لبنان‬‎) Lesotho Liberia Libya (‫ليبيا‬‎) Liechtenstein Lithuania (Lietuva) Luxembourg",
+        "source_document": "https://thequantuminsider.com/2020/03/24/tqd-announces-recruitment-partnership-with-tekna-search"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Unknown",
+    "sphere": "Unknown",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "unknown_category",
+    "classification_needs_review": true,
+    "classification_review_reason": "unmapped_category:country"
+  },
+  {
+    "entity": "Matt Swayne",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "individual",
+    "role_in_text": "author",
+    "technology_area": "unknown",
+    "occurrence_sentence": "* [ Matt Swayne  ](https://thequantuminsider.com/author/matt-swayne/)",
+    "source_document": "https://thequantuminsider.com/2020/03/24/tqd-announces-recruitment-partnership-with-tekna-search",
+    "page": 16,
+    "confidence": "high",
+    "canonical_actor_key": "matt swayne",
+    "aliases": [
+      "Matt Swayne"
+    ],
+    "pages": [
+      16
+    ],
+    "mentions": [
+      {
+        "entity": "Matt Swayne",
+        "page": 16,
+        "role_in_text": "author",
+        "occurrence_sentence": "* [ Matt Swayne  ](https://thequantuminsider.com/author/matt-swayne/)",
+        "source_document": "https://thequantuminsider.com/2020/03/24/tqd-announces-recruitment-partnership-with-tekna-search"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Unknown",
+    "sphere": "Unknown",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "unknown_category",
+    "classification_needs_review": true,
+    "classification_review_reason": "unmapped_category:individual; individual_requires_role_classification"
+  },
+  {
+    "entity": "Mohib Ur Rehman",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "individual",
+    "role_in_text": "author",
+    "technology_area": "unknown",
+    "occurrence_sentence": "* [ Mohib Ur Rehman",
+    "source_document": "https://thequantuminsider.com/2020/03/24/tqd-announces-recruitment-partnership-with-tekna-search",
+    "page": 16,
+    "canonical_actor_key": "mohib ur rehman",
+    "aliases": [
+      "Mohib Ur Rehman"
+    ],
+    "pages": [
+      16
+    ],
+    "mentions": [
+      {
+        "entity": "Mohib Ur Rehman",
+        "page": 16,
+        "role_in_text": "author",
+        "occurrence_sentence": "* [ Mohib Ur Rehman",
+        "source_document": "https://thequantuminsider.com/2020/03/24/tqd-announces-recruitment-partnership-with-tekna-search"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Unknown",
+    "sphere": "Unknown",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "unknown_category",
+    "classification_needs_review": true,
+    "classification_review_reason": "unmapped_category:individual; individual_requires_role_classification"
+  },
+  {
+    "entity": "National Security Agency (NSA)",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "national government institutions",
+    "role_in_text": "Introduces QuantumEAGLe Program",
+    "technology_area": "quantum computing",
+    "occurrence_sentence": "NSA Introduces QuantumEAGLe Program to Advance U.S. Quantum Computing",
+    "source_document": "https://thequantuminsider.com/2020/03/24/tqd-announces-recruitment-partnership-with-tekna-search",
+    "page": 17,
+    "confidence": "high",
+    "canonical_actor_key": "national security agency",
+    "aliases": [
+      "NSA",
+      "National Security Agency",
+      "National Security Agency (NSA)"
+    ],
+    "pages": [
+      17,
+      18,
+      20
+    ],
+    "mentions": [
+      {
+        "entity": "National Security Agency (NSA)",
+        "page": 17,
+        "role_in_text": "Introduces QuantumEAGLe Program",
+        "occurrence_sentence": "NSA Introduces QuantumEAGLe Program to Advance U.S. Quantum Computing",
+        "source_document": "https://thequantuminsider.com/2020/03/24/tqd-announces-recruitment-partnership-with-tekna-search"
+      },
+      {
+        "entity": "National Security Agency (NSA)",
+        "page": 18,
+        "role_in_text": "introduces QuantumEAGLe Program",
+        "occurrence_sentence": "NSA Introduces QuantumE",
+        "source_document": "https://thequantuminsider.com/2020/03/24/tqd-announces-recruitment-partnership-with-tekna-search"
+      },
+      {
+        "entity": "National Security Agency (NSA)",
+        "page": 20,
+        "role_in_text": "Introduces QuantumEAGLe Program",
+        "occurrence_sentence": "NSA Introduces QuantumEAGLe Program to Advance U.S. Quantum Computing",
+        "source_document": "https://thequantuminsider.com/2020/03/24/tqd-announces-recruitment-partnership-with-tekna-search"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Government",
+    "sphere": "Single",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "QAI",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "small and medium-sized enterprises",
+    "role_in_text": "launched a quantum cloud offering",
+    "technology_area": "quantum computing",
+    "occurrence_sentence": "Classiq and QAI Launch Quantum Cloud Offering in Korea",
+    "source_document": "https://thequantuminsider.com/2020/03/24/tqd-announces-recruitment-partnership-with-tekna-search",
+    "page": 15,
+    "canonical_actor_key": "qai",
+    "aliases": [
+      "QAI"
+    ],
+    "pages": [
+      15
+    ],
+    "mentions": [
+      {
+        "entity": "QAI",
+        "page": 15,
+        "role_in_text": "launched a quantum cloud offering",
+        "occurrence_sentence": "Classiq and QAI Launch Quantum Cloud Offering in Korea",
+        "source_document": "https://thequantuminsider.com/2020/03/24/tqd-announces-recruitment-partnership-with-tekna-search"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Industry",
+    "sphere": "Single",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "Quantum Daily",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "media and cultural institutions",
+    "role_in_text": "partnering with Tekna Search",
+    "technology_area": "quantum computing",
+    "occurrence_sentence": "The Quantum Daily is pleased to announce it is partnering with Tekna Search, a startup recruitment agency founded to support tech business.",
+    "source_document": "https://thequantuminsider.com/2020/03/24/tqd-announces-recruitment-partnership-with-tekna-search",
+    "page": 12,
+    "confidence": "high",
+    "canonical_actor_key": "quantum daily",
+    "aliases": [
+      "Quantum Daily"
+    ],
+    "pages": [
+      12,
+      14
+    ],
+    "mentions": [
+      {
+        "entity": "Quantum Daily",
+        "page": 12,
+        "role_in_text": "partnering with Tekna Search",
+        "occurrence_sentence": "The Quantum Daily is pleased to announce it is partnering with Tekna Search, a startup recruitment agency founded to support tech business.",
+        "source_document": "https://thequantuminsider.com/2020/03/24/tqd-announces-recruitment-partnership-with-tekna-search"
+      },
+      {
+        "entity": "Quantum Daily",
+        "page": 14,
+        "role_in_text": "Media outlet",
+        "occurrence_sentence": "Evan Kubes is a Director and Co-founder of The Quantum Daily.",
+        "source_document": "https://thequantuminsider.com/2020/03/24/tqd-announces-recruitment-partnership-with-tekna-search"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Civil Society",
+    "sphere": "Single",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "Quantum Insider (TQI)",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "media and cultural institutions",
+    "role_in_text": "leading source for the latest quantum technology news",
+    "technology_area": "deep tech general",
+    "occurrence_sentence": "The Quantum Insider (TQI) is the leading source for the latest quantum technology news, market intelligence, industry analysis, and data covering the global quantum ecosystem.",
+    "source_document": "https://thequantuminsider.com/2020/03/24/tqd-announces-recruitment-partnership-with-tekna-search",
+    "page": 18,
+    "confidence": "high",
+    "canonical_actor_key": "quantum insider",
+    "aliases": [
+      "Quantum Insider",
+      "Quantum Insider (TQI)",
+      "TQI"
+    ],
+    "pages": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      18,
+      19,
+      21,
+      22,
+      31
+    ],
+    "mentions": [
+      {
+        "entity": "Quantum Insider",
+        "page": 2,
+        "role_in_text": "website publisher",
+        "occurrence_sentence": "The Quantum Insider",
+        "source_document": "https://thequantuminsider.com/2020/03/24/tqd-announces-recruitment-partnership-with-tekna-search"
+      },
+      {
+        "entity": "Quantum Insider",
+        "page": 3,
+        "role_in_text": "website",
+        "occurrence_sentence": "https://thequantuminsider.com/2020/03/24/tqd-announces-recruitment-partnership-with-tekna-search",
+        "source_document": "https://thequantuminsider.com/2020/03/24/tqd-announces-recruitment-partnership-with-tekna-search"
+      },
+      {
+        "entity": "Quantum Insider",
+        "page": 4,
+        "role_in_text": "Source of the article",
+        "occurrence_sentence": "https://thequantuminsider.com/2020/03/24/tqd-announces-recruitment-partnership-with-tekna-search",
+        "source_document": "https://thequantuminsider.com/2020/03/24/tqd-announces-recruitment-partnership-with-tekna-search"
+      },
+      {
+        "entity": "Quantum Insider",
+        "page": 5,
+        "role_in_text": "source of the article",
+        "occurrence_sentence": "https://thequantuminsider.com/2020/03/24/tqd-announces-recruitment-partnership-with-tekna-search",
+        "source_document": "https://thequantuminsider.com/2020/03/24/tqd-announces-recruitment-partnership-with-tekna-search"
+      },
+      {
+        "entity": "Quantum Insider",
+        "page": 6,
+        "role_in_text": "website",
+        "occurrence_sentence": "https://thequantuminsider.com/2020/03/24/tqd-announces-recruitment-partnership-with-tekna-search",
+        "source_document": "https://thequantuminsider.com/2020/03/24/tqd-announces-recruitment-partnership-with-tekna-search"
+      },
+      {
+        "entity": "Quantum Insider",
+        "page": 7,
+        "role_in_text": "source of the article",
+        "occurrence_sentence": "The Quantum Insider",
+        "source_document": "https://thequantuminsider.com/2020/03/24/tqd-announces-recruitment-partnership-with-tekna-search"
+      },
+      {
+        "entity": "Quantum Insider",
+        "page": 8,
+        "role_in_text": "source of the article",
+        "occurrence_sentence": "The Quantum Insider",
+        "source_document": "https://thequantuminsider.com/2020/03/24/tqd-announces-recruitment-partnership-with-tekna-search"
+      },
+      {
+        "entity": "Quantum Insider",
+        "page": 9,
+        "role_in_text": "website",
+        "occurrence_sentence": "https://thequantuminsider.com/2020/03/24/tqd-announces-recruitment-partnership-with-tekna-search",
+        "source_document": "https://thequantuminsider.com/2020/03/24/tqd-announces-recruitment-partnership-with-tekna-search"
+      },
+      {
+        "entity": "Quantum Insider",
+        "page": 10,
+        "role_in_text": "website",
+        "occurrence_sentence": "SOURCE source_type: \"website\" source_document: \"https://thequantuminsider.com/2020/03/24/tqd-announces-recruitment-partnership-with-tekna-search\"",
+        "source_document": "https://thequantuminsider.com/2020/03/24/tqd-announces-recruitment-partnership-with-tekna-search"
+      },
+      {
+        "entity": "Quantum Insider (TQI)",
+        "page": 18,
+        "role_in_text": "leading source for the latest quantum technology news",
+        "occurrence_sentence": "The Quantum Insider (TQI) is the leading source for the latest quantum technology news, market intelligence, industry analysis, and data covering the global quantum ecosystem.",
+        "source_document": "https://thequantuminsider.com/2020/03/24/tqd-announces-recruitment-partnership-with-tekna-search"
+      },
+      {
+        "entity": "Quantum Insider (TQI)",
+        "page": 19,
+        "role_in_text": "leading source for the latest quantum technology news",
+        "occurrence_sentence": "The Quantum Insider (TQI) is the leading source for the latest quantum technology news, market intelligence, industry analysis, and data covering the global quantum ecosystem.",
+        "source_document": "https://thequantuminsider.com/2020/03/24/tqd-announces-recruitment-partnership-with-tekna-search"
+      },
+      {
+        "entity": "Quantum Insider",
+        "page": 21,
+        "role_in_text": "website",
+        "occurrence_sentence": "https://thequantuminsider.com/2020/03/24/tqd-announces-recruitment-partnership-with-tekna-search",
+        "source_document": "https://thequantuminsider.com/2020/03/24/tqd-announces-recruitment-partnership-with-tekna-search"
+      },
+      {
+        "entity": "Quantum Insider (TQI)",
+        "page": 22,
+        "role_in_text": "leading source for quantum technology news, market intelligence, industry analysis, and data covering the global quantum ecosystem",
+        "occurrence_sentence": "The Quantum Insider (TQI) is the leading source for quantum technology news, market intelligence, industry analysis, and data covering the global quantum ecosystem.",
+        "source_document": "https://thequantuminsider.com/2020/03/24/tqd-announces-recruitment-partnership-with-tekna-search"
+      },
+      {
+        "entity": "Quantum Insider",
+        "page": 31,
+        "role_in_text": "source of the article",
+        "occurrence_sentence": "Subscribe to our industry leading leading newsletter for the latest in quantum news and insights.",
+        "source_document": "https://thequantuminsider.com/2020/03/24/tqd-announces-recruitment-partnership-with-tekna-search"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Civil Society",
+    "sphere": "Single",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "Quantum Leap",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "small and medium-sized enterprises",
+    "role_in_text": "raises $230 million",
+    "technology_area": "quantum computing",
+    "occurrence_sentence": "Quantum Leap Raises",
+    "source_document": "https://thequantuminsider.com/2020/03/24/tqd-announces-recruitment-partnership-with-tekna-search",
+    "page": 19,
+    "canonical_actor_key": "quantum leap",
+    "aliases": [
+      "Quantum Leap"
+    ],
+    "pages": [
+      19
+    ],
+    "mentions": [
+      {
+        "entity": "Quantum Leap",
+        "page": 19,
+        "role_in_text": "raises $230 million",
+        "occurrence_sentence": "Quantum Leap Raises",
+        "source_document": "https://thequantuminsider.com/2020/03/24/tqd-announces-recruitment-partnership-with-tekna-search"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Industry",
+    "sphere": "Single",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "Resonance Alliance Inc.",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "large enterprises",
+    "role_in_text": "Designed by Resonance",
+    "technology_area": "unknown",
+    "occurrence_sentence": "2026 © Resonance Alliance Inc.",
+    "source_document": "https://thequantuminsider.com/2020/03/24/tqd-announces-recruitment-partnership-with-tekna-search",
+    "page": 24,
+    "confidence": "medium",
+    "canonical_actor_key": "resonance alliance inc",
+    "aliases": [
+      "Resonance Alliance Inc."
+    ],
+    "pages": [
+      23,
+      24
+    ],
+    "mentions": [
+      {
+        "entity": "Resonance Alliance Inc.",
+        "page": 23,
+        "role_in_text": "© Resonance Alliance Inc.",
+        "occurrence_sentence": "2026 © Resonance Alliance Inc.",
+        "source_document": "https://thequantuminsider.com/2020/03/24/tqd-announces-recruitment-partnership-with-tekna-search"
+      },
+      {
+        "entity": "Resonance Alliance Inc.",
+        "page": 24,
+        "role_in_text": "Designed by Resonance",
+        "occurrence_sentence": "2026 © Resonance Alliance Inc.",
+        "source_document": "https://thequantuminsider.com/2020/03/24/tqd-announces-recruitment-partnership-with-tekna-search"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Industry",
+    "sphere": "Single",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "Resonance Holdings",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "non-governmental and non-profit organizations",
+    "role_in_text": "Resonance Holdings",
+    "technology_area": "deep tech general",
+    "occurrence_sentence": "* [ Resonance",
+    "source_document": "https://thequantuminsider.com/2020/03/24/tqd-announces-recruitment-partnership-with-tekna-search",
+    "page": 23,
+    "canonical_actor_key": "resonance holdings",
+    "aliases": [
+      "Resonance Holdings"
+    ],
+    "pages": [
+      23
+    ],
+    "mentions": [
+      {
+        "entity": "Resonance Holdings",
+        "page": 23,
+        "role_in_text": "Resonance Holdings",
+        "occurrence_sentence": "* [ Resonance",
+        "source_document": "https://thequantuminsider.com/2020/03/24/tqd-announces-recruitment-partnership-with-tekna-search"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Civil Society",
+    "sphere": "Single",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "Tekna Search",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "small and medium-sized enterprises",
+    "role_in_text": "startup recruitment agency",
+    "technology_area": "deep tech general",
+    "occurrence_sentence": "The Quantum Daily is pleased to announce it is partnering with Tekna Search, a startup recruitment agency founded to support tech business.",
+    "source_document": "https://thequantuminsider.com/2020/03/24/tqd-announces-recruitment-partnership-with-tekna-search",
+    "page": 13,
+    "confidence": "high",
+    "canonical_actor_key": "tekna search",
+    "aliases": [
+      "Tekna Search"
+    ],
+    "pages": [
+      1,
+      3,
+      4,
+      6,
+      9,
+      11,
+      12,
+      13,
+      21,
+      29,
+      31
+    ],
+    "mentions": [
+      {
+        "entity": "Tekna Search",
+        "page": 1,
+        "role_in_text": "recruitment partner",
+        "occurrence_sentence": "TQD announces recruitment partnership with Tekna Search",
+        "source_document": "https://thequantuminsider.com/2020/03/24/tqd-announces-recruitment-partnership-with-tekna-search"
+      },
+      {
+        "entity": "Tekna Search",
+        "page": 3,
+        "role_in_text": "recruitment partner",
+        "occurrence_sentence": "TQD announces recruitment partnership with Tekna Search",
+        "source_document": "https://thequantuminsider.com/2020/03/24/tqd-announces-recruitment-partnership-with-tekna-search"
+      },
+      {
+        "entity": "Tekna Search",
+        "page": 4,
+        "role_in_text": "Recruitment partner",
+        "occurrence_sentence": "tqd-announces-recruitment-partnership-with-tekna-search",
+        "source_document": "https://thequantuminsider.com/2020/03/24/tqd-announces-recruitment-partnership-with-tekna-search"
+      },
+      {
+        "entity": "Tekna Search",
+        "page": 6,
+        "role_in_text": "recruitment partner",
+        "occurrence_sentence": "TQD announces recruitment partnership with Tekna Search",
+        "source_document": "https://thequantuminsider.com/2020/03/24/tqd-announces-recruitment-partnership-with-tekna-search"
+      },
+      {
+        "entity": "Tekna Search",
+        "page": 9,
+        "role_in_text": "recruitment partner",
+        "occurrence_sentence": "https://thequantuminsider.com/2020/03/24/tqd-",
+        "source_document": "https://thequantuminsider.com/2020/03/24/tqd-announces-recruitment-partnership-with-tekna-search"
+      },
+      {
+        "entity": "Tekna Search",
+        "page": 11,
+        "role_in_text": "Recruitment partner",
+        "occurrence_sentence": "TQD Announces Recruitment Partnership with Tekna search",
+        "source_document": "https://thequantuminsider.com/2020/03/24/tqd-announces-recruitment-partnership-with-tekna-search"
+      },
+      {
+        "entity": "Tekna Search",
+        "page": 12,
+        "role_in_text": "startup recruitment agency",
+        "occurrence_sentence": "The Quantum Daily is pleased to announce it is partnering with Tekna Search, a startup recruitment agency founded to support tech business",
+        "source_document": "https://thequantuminsider.com/2020/03/24/tqd-announces-recruitment-partnership-with-tekna-search"
+      },
+      {
+        "entity": "Tekna Search",
+        "page": 13,
+        "role_in_text": "startup recruitment agency",
+        "occurrence_sentence": "The Quantum Daily is pleased to announce it is partnering with Tekna Search, a startup recruitment agency founded to support tech business.",
+        "source_document": "https://thequantuminsider.com/2020/03/24/tqd-announces-recruitment-partnership-with-tekna-search"
+      },
+      {
+        "entity": "Tekna Search",
+        "page": 21,
+        "role_in_text": "recruitment partner",
+        "occurrence_sentence": "TQD announces recruitment partnership with Tekna Search",
+        "source_document": "https://thequantuminsider.com/2020/03/24/tqd-announces-recruitment-partnership-with-tekna-search"
+      },
+      {
+        "entity": "Tekna Search",
+        "page": 29,
+        "role_in_text": "recruitment partnership",
+        "occurrence_sentence": "TQD announces recruitment partnership with Tekna Search",
+        "source_document": "https://thequantuminsider.com/2020/03/24/tqd-announces-recruitment-partnership-with-tekna-search"
+      },
+      {
+        "entity": "Tekna Search",
+        "page": 31,
+        "role_in_text": "recruitment partner",
+        "occurrence_sentence": "TQD announces recruitment partnership with Tekna Search",
+        "source_document": "https://thequantuminsider.com/2020/03/24/tqd-announces-recruitment-partnership-with-tekna-search"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Industry",
+    "sphere": "Single",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "TQD",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "other",
+    "role_in_text": "Announces recruitment partnership",
+    "technology_area": "deep tech general",
+    "occurrence_sentence": "TQD Announces Recruitment Partnership with Tekna search",
+    "source_document": "https://thequantuminsider.com/2020/03/24/tqd-announces-recruitment-partnership-with-tekna-search",
+    "page": 11,
+    "confidence": "medium",
+    "canonical_actor_key": "tqd",
+    "aliases": [
+      "TQD"
+    ],
+    "pages": [
+      1,
+      2,
+      5,
+      7,
+      8,
+      11
+    ],
+    "mentions": [
+      {
+        "entity": "TQD",
+        "page": 1,
+        "role_in_text": "announces recruitment partnership",
+        "occurrence_sentence": "TQD announces recruitment partnership with Tekna Search",
+        "source_document": "https://thequantuminsider.com/2020/03/24/tqd-announces-recruitment-partnership-with-tekna-search"
+      },
+      {
+        "entity": "TQD",
+        "page": 2,
+        "role_in_text": "publisher of the article",
+        "occurrence_sentence": "TQD announces recruitment partnership with Tekna Search",
+        "source_document": "https://thequantuminsider.com/2020/03/24/tqd-announces-recruitment-partnership-with-tekna-search"
+      },
+      {
+        "entity": "TQD",
+        "page": 5,
+        "role_in_text": "announces recruitment partnership",
+        "occurrence_sentence": "TQD announces recruitment partnership with Tekna Search",
+        "source_document": "https://thequantuminsider.com/2020/03/24/tqd-announces-recruitment-partnership-with-tekna-search"
+      },
+      {
+        "entity": "TQD",
+        "page": 7,
+        "role_in_text": "announces a partnership",
+        "occurrence_sentence": "TQD announces recruitment partnership with Tekna Search",
+        "source_document": "https://thequantuminsider.com/2020/03/24/tqd-announces-recruitment-partnership-with-tekna-search"
+      },
+      {
+        "entity": "TQD",
+        "page": 8,
+        "role_in_text": "announcing a partnership",
+        "occurrence_sentence": "TQD announces recruitment partnership with Tekna Search",
+        "source_document": "https://thequantuminsider.com/2020/03/24/tqd-announces-recruitment-partnership-with-tekna-search"
+      },
+      {
+        "entity": "TQD",
+        "page": 11,
+        "role_in_text": "Announces recruitment partnership",
+        "occurrence_sentence": "TQD Announces Recruitment Partnership with Tekna search",
+        "source_document": "https://thequantuminsider.com/2020/03/24/tqd-announces-recruitment-partnership-with-tekna-search"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Unknown",
+    "sphere": "Unknown",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "unknown_category",
+    "classification_needs_review": true,
+    "classification_review_reason": "unmapped_category:other"
+  },
+  {
+    "entity": "United Kingdom",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "country",
+    "role_in_text": "country",
+    "technology_area": "unknown",
+    "occurrence_sentence": "Virgin Islands Uganda Ukraine (Україна) United Arab Emirates (‫الإمارات العربية المتحدة‬‎) United Kingdom United States Uruguay Uzbekistan (Oʻzbekiston) Vanuatu Vatican City (Città del Vaticano) Venezuela Vietnam (Việt Nam) Wallis and Futuna Yemen (‫اليمن‬‎) Zambia Zimbabwe",
+    "source_document": "https://thequantuminsider.com/2020/03/24/tqd-announces-recruitment-partnership-with-tekna-search",
+    "page": 28,
+    "confidence": "high",
+    "canonical_actor_key": "united kingdom",
+    "aliases": [
+      "United Kingdom"
+    ],
+    "pages": [
+      27,
+      28
+    ],
+    "mentions": [
+      {
+        "entity": "United Kingdom",
+        "page": 27,
+        "role_in_text": "country",
+        "occurrence_sentence": "Select Country United Kingdom United States",
+        "source_document": "https://thequantuminsider.com/2020/03/24/tqd-announces-recruitment-partnership-with-tekna-search"
+      },
+      {
+        "entity": "United Kingdom",
+        "page": 28,
+        "role_in_text": "country",
+        "occurrence_sentence": "Virgin Islands Uganda Ukraine (Україна) United Arab Emirates (‫الإمارات العربية المتحدة‬‎) United Kingdom United States Uruguay Uzbekistan (Oʻzbekiston) Vanuatu Vatican City (Città del Vaticano) Venezuela Vietnam (Việt Nam) Wallis and Futuna Yemen (‫اليمن‬‎) Zambia Zimbabwe",
+        "source_document": "https://thequantuminsider.com/2020/03/24/tqd-announces-recruitment-partnership-with-tekna-search"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Unknown",
+    "sphere": "Unknown",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "unknown_category",
+    "classification_needs_review": true,
+    "classification_review_reason": "unmapped_category:country"
+  },
+  {
+    "entity": "United States",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "country",
+    "role_in_text": "country",
+    "technology_area": "unknown",
+    "occurrence_sentence": "Select Country United Kingdom United States",
+    "source_document": "https://thequantuminsider.com/2020/03/24/tqd-announces-recruitment-partnership-with-tekna-search",
+    "page": 27,
+    "confidence": "high",
+    "canonical_actor_key": "united states",
+    "aliases": [
+      "United States"
+    ],
+    "pages": [
+      27,
+      28
+    ],
+    "mentions": [
+      {
+        "entity": "United States",
+        "page": 27,
+        "role_in_text": "country",
+        "occurrence_sentence": "Select Country United Kingdom United States",
+        "source_document": "https://thequantuminsider.com/2020/03/24/tqd-announces-recruitment-partnership-with-tekna-search"
+      },
+      {
+        "entity": "United States",
+        "page": 28,
+        "role_in_text": "country",
+        "occurrence_sentence": "Virgin Islands Uganda",
+        "source_document": "https://thequantuminsider.com/2020/03/24/tqd-announces-recruitment-partnership-with-tekna-search"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Unknown",
+    "sphere": "Unknown",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "unknown_category",
+    "classification_needs_review": true,
+    "classification_review_reason": "unmapped_category:country"
+  },
+  {
+    "entity": "Vincent Yam",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "individual",
+    "role_in_text": "Co-Founder of Tekna Search",
+    "technology_area": "deep tech general",
+    "occurrence_sentence": "\"In a space where academia meets industry we can help with attracting the best researchers for your business\", said Vincent Yam, Co-Founder of",
+    "source_document": "https://thequantuminsider.com/2020/03/24/tqd-announces-recruitment-partnership-with-tekna-search",
+    "page": 13,
+    "canonical_actor_key": "vincent yam",
+    "aliases": [
+      "Vincent Yam"
+    ],
+    "pages": [
+      13
+    ],
+    "mentions": [
+      {
+        "entity": "Vincent Yam",
+        "page": 13,
+        "role_in_text": "Co-Founder of Tekna Search",
+        "occurrence_sentence": "\"In a space where academia meets industry we can help with attracting the best researchers for your business\", said Vincent Yam, Co-Founder of",
+        "source_document": "https://thequantuminsider.com/2020/03/24/tqd-announces-recruitment-partnership-with-tekna-search"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Industry",
+    "sphere": "Single",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "name_heuristic_industry",
+    "classification_needs_review": true,
+    "classification_review_reason": "individual_requires_role_classification"
+  }
+]

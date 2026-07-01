@@ -1,0 +1,71 @@
+
+========================================================================
+RUN STARTED  2026-07-01 16:54:22
+site_pipeline.py https://thequantuminsider.com/2019/10/10/ibm-committed-to-moving-quantum-computers-out-of-the-lab-and-into-main-street/
+========================================================================
+
+[16:54:22 +0s | thequantuminsider_2019_10_10_ibm_committed_to_moving_quantum_computers_out_of_the_lab_and_f1a8b498] === 0 crawl site ===
+[16:54:24 +2s | thequantuminsider_2019_10_10_ibm_committed_to_moving_quantum_computers_out_of_the_lab_and_f1a8b498] [INIT].... → Crawl4AI 0.8.6 
+[16:55:30 +1m 2s | thequantuminsider_2019_10_10_ibm_committed_to_moving_quantum_computers_out_of_the_lab_and_f1a8b498] [ANTIBOT]. ℹ https://thequantuminsid...b-and-into-main-street/  | Error: Proxy direct failed: Failed on navigating ACS-GOTO:
+[16:55:30 +1m 2s | thequantuminsider_2019_10_10_ibm_committed_to_moving_quantum_computers_out_of_the_lab_and_f1a8b498] Page.goto: Timeout 60000ms exceeded.
+[16:55:30 +1m 2s | thequantuminsider_2019_10_10_ibm_committed_to_moving_quantum_computers_out_of_the_lab_and_f1a8b498] Call log:
+[16:55:30 +1m 2s | thequantuminsider_2019_10_10_ibm_committed_to_moving_quantum_computers_out_of_the_lab_and_f1a8b498]   - navigating to "https://thequantuminsider.com/2019/10/10/ibm-committed-to-moving-quantum-computers-out-of-the-lab-and-into-main-street/", waiting until 
+[16:55:30 +1m 2s | thequantuminsider_2019_10_10_ibm_committed_to_moving_quantum_computers_out_of_the_lab_and_f1a8b498] "domcontentloaded"
+ 
+[16:55:30 +1m 2s | thequantuminsider_2019_10_10_ibm_committed_to_moving_quantum_computers_out_of_the_lab_and_f1a8b498] [ERROR]... × https://thequantuminsid...b-and-into-main-street/  | Error: Unexpected error in _crawl_web at line 778 in _crawl_web 
+[16:55:30 +1m 2s | thequantuminsider_2019_10_10_ibm_committed_to_moving_quantum_computers_out_of_the_lab_and_f1a8b498] (../../../../../.local/lib/python3.10/site-packages/crawl4ai/async_crawler_strategy.py):
+[16:55:30 +1m 2s | thequantuminsider_2019_10_10_ibm_committed_to_moving_quantum_computers_out_of_the_lab_and_f1a8b498] Error: Failed on navigating ACS-GOTO:
+[16:55:30 +1m 2s | thequantuminsider_2019_10_10_ibm_committed_to_moving_quantum_computers_out_of_the_lab_and_f1a8b498] Page.goto: Timeout 60000ms exceeded.
+[16:55:30 +1m 2s | thequantuminsider_2019_10_10_ibm_committed_to_moving_quantum_computers_out_of_the_lab_and_f1a8b498] Call log:
+[16:55:30 +1m 2s | thequantuminsider_2019_10_10_ibm_committed_to_moving_quantum_computers_out_of_the_lab_and_f1a8b498]   - navigating to "https://thequantuminsider.com/2019/10/10/ibm-committed-to-moving-quantum-computers-out-of-the-lab-and-into-main-street/", waiting until 
+[16:55:30 +1m 2s | thequantuminsider_2019_10_10_ibm_committed_to_moving_quantum_computers_out_of_the_lab_and_f1a8b498] "domcontentloaded"
+
+
+[16:55:30 +1m 2s | thequantuminsider_2019_10_10_ibm_committed_to_moving_quantum_computers_out_of_the_lab_and_f1a8b498] Code context:
+[16:55:30 +1m 2s | thequantuminsider_2019_10_10_ibm_committed_to_moving_quantum_computers_out_of_the_lab_and_f1a8b498]  773                                   tag="GOTO",
+[16:55:30 +1m 2s | thequantuminsider_2019_10_10_ibm_committed_to_moving_quantum_computers_out_of_the_lab_and_f1a8b498]  774                                   params={"url": url},
+[16:55:30 +1m 2s | thequantuminsider_2019_10_10_ibm_committed_to_moving_quantum_computers_out_of_the_lab_and_f1a8b498]  775                               )
+[16:55:30 +1m 2s | thequantuminsider_2019_10_10_ibm_committed_to_moving_quantum_computers_out_of_the_lab_and_f1a8b498]  776                               response = None
+[16:55:30 +1m 2s | thequantuminsider_2019_10_10_ibm_committed_to_moving_quantum_computers_out_of_the_lab_and_f1a8b498]  777                           else:
+[16:55:30 +1m 2s | thequantuminsider_2019_10_10_ibm_committed_to_moving_quantum_computers_out_of_the_lab_and_f1a8b498]  778 →                             raise RuntimeError(f"Failed on navigating ACS-GOTO:\n{str(e)}")
+[16:55:30 +1m 2s | thequantuminsider_2019_10_10_ibm_committed_to_moving_quantum_computers_out_of_the_lab_and_f1a8b498]  779   
+[16:55:30 +1m 2s | thequantuminsider_2019_10_10_ibm_committed_to_moving_quantum_computers_out_of_the_lab_and_f1a8b498]  780                       # ──────────────────────────────────────────────────────────────
+[16:55:30 +1m 2s | thequantuminsider_2019_10_10_ibm_committed_to_moving_quantum_computers_out_of_the_lab_and_f1a8b498]  781                       # Walk the redirect chain.  Playwright returns only the last
+[16:55:30 +1m 2s | thequantuminsider_2019_10_10_ibm_committed_to_moving_quantum_computers_out_of_the_lab_and_f1a8b498]  782                       # hop, so we trace the `request.redirected_from` links until the
+[16:55:30 +1m 2s | thequantuminsider_2019_10_10_ibm_committed_to_moving_quantum_computers_out_of_the_lab_and_f1a8b498]  783                       # first response that differs from the final one and surface its 
+[16:55:30 +1m 2s | thequantuminsider_2019_10_10_ibm_committed_to_moving_quantum_computers_out_of_the_lab_and_f1a8b498] Saved: crawl_output/6bff372ed8_thequantuminsider.com_2019_10_10_ibm-committed-to-moving-quantum-computers-out-of-the-lab-and-into-main-street.json
+
+[16:55:30 +1m 3s | thequantuminsider_2019_10_10_ibm_committed_to_moving_quantum_computers_out_of_the_lab_and_f1a8b498] === 1 actor extraction ===
+[16:55:31 +1m 3s | thequantuminsider_2019_10_10_ibm_committed_to_moving_quantum_computers_out_of_the_lab_and_f1a8b498] Reading page (1/1): https://thequantuminsider.com/2019/10/10/ibm-committed-to-moving-quantum-computers-out-of-the-lab-and-into-main-street
+[16:55:31 +1m 3s | thequantuminsider_2019_10_10_ibm_committed_to_moving_quantum_computers_out_of_the_lab_and_f1a8b498] Extracting actors: https://thequantuminsider.com/2019/10/10/ibm-committed-to-moving-quantum-computers-out-of-the-lab-and-into-main-street (1/1), chunk 1/1
+[16:55:36 +1m 8s | thequantuminsider_2019_10_10_ibm_committed_to_moving_quantum_computers_out_of_the_lab_and_f1a8b498] Saved 1_actor_results.json with 1 extracted records
+
+[16:55:36 +1m 8s | thequantuminsider_2019_10_10_ibm_committed_to_moving_quantum_computers_out_of_the_lab_and_f1a8b498] === 2 clean actors ===
+[16:55:36 +1m 8s | thequantuminsider_2019_10_10_ibm_committed_to_moving_quantum_computers_out_of_the_lab_and_f1a8b498] Loaded 1 extracted records
+[16:55:36 +1m 8s | thequantuminsider_2019_10_10_ibm_committed_to_moving_quantum_computers_out_of_the_lab_and_f1a8b498] Saved 2_actor_nodes.json with 1 canonical actor nodes
+
+[16:55:36 +1m 8s | thequantuminsider_2019_10_10_ibm_committed_to_moving_quantum_computers_out_of_the_lab_and_f1a8b498] === 3 interaction extraction ===
+[16:55:36 +1m 9s | thequantuminsider_2019_10_10_ibm_committed_to_moving_quantum_computers_out_of_the_lab_and_f1a8b498] Saved 3_interaction_results.json with 0 extracted interactions.
+
+[16:55:36 +1m 9s | thequantuminsider_2019_10_10_ibm_committed_to_moving_quantum_computers_out_of_the_lab_and_f1a8b498] === 4 clean interactions ===
+[16:55:36 +1m 9s | thequantuminsider_2019_10_10_ibm_committed_to_moving_quantum_computers_out_of_the_lab_and_f1a8b498] Saved 4_edges.json with 0 cleaned interactions.
+
+[16:55:36 +1m 9s | thequantuminsider_2019_10_10_ibm_committed_to_moving_quantum_computers_out_of_the_lab_and_f1a8b498] === 5 helix enrichment ===
+[16:55:36 +1m 9s | thequantuminsider_2019_10_10_ibm_committed_to_moving_quantum_computers_out_of_the_lab_and_f1a8b498] Wrote 5_nodes.json (1 actors)
+[16:55:36 +1m 9s | thequantuminsider_2019_10_10_ibm_committed_to_moving_quantum_computers_out_of_the_lab_and_f1a8b498] Wrote 5_edges.json (0 interactions)
+[16:55:36 +1m 9s | thequantuminsider_2019_10_10_ibm_committed_to_moving_quantum_computers_out_of_the_lab_and_f1a8b498] Actor helix counts: {'Industry': 1}
+[16:55:36 +1m 9s | thequantuminsider_2019_10_10_ibm_committed_to_moving_quantum_computers_out_of_the_lab_and_f1a8b498] Functional-space counts: {}
+
+[16:55:36 +1m 9s | thequantuminsider_2019_10_10_ibm_committed_to_moving_quantum_computers_out_of_the_lab_and_f1a8b498] === 6 network visualisation ===
+[16:55:37 +1m 9s | thequantuminsider_2019_10_10_ibm_committed_to_moving_quantum_computers_out_of_the_lab_and_f1a8b498] Wrote quantum_network.html
+[16:55:37 +1m 9s | thequantuminsider_2019_10_10_ibm_committed_to_moving_quantum_computers_out_of_the_lab_and_f1a8b498] Nodes: 1
+[16:55:37 +1m 9s | thequantuminsider_2019_10_10_ibm_committed_to_moving_quantum_computers_out_of_the_lab_and_f1a8b498] Edges: 0
+
+[16:55:37 +1m 9s | thequantuminsider_2019_10_10_ibm_committed_to_moving_quantum_computers_out_of_the_lab_and_f1a8b498] Done. Outputs written to: /home/lv/IDP/idpdeeptech/pipeline/news_outputs/thequantuminsider_2019_10_10_ibm_committed_to_moving_quantum_computers_out_of_the_lab_and_f1a8b498
+[16:55:37 +1m 9s | thequantuminsider_2019_10_10_ibm_committed_to_moving_quantum_computers_out_of_the_lab_and_f1a8b498] Log: /home/lv/IDP/idpdeeptech/pipeline/news_outputs/thequantuminsider_2019_10_10_ibm_committed_to_moving_quantum_computers_out_of_the_lab_and_f1a8b498/run.log
+
+========================================================================
+RUN FINISHED 2026-07-01 16:55:37  (OK)
+Started:     2026-07-01 16:54:22
+Elapsed:     1m 9s
+========================================================================

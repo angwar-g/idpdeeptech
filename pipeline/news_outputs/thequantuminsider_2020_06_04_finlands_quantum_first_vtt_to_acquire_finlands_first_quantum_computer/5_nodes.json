@@ -1,0 +1,885 @@
+[
+  {
+    "entity": "Antti Vasara",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "individual",
+    "role_in_text": "CEO of VTT",
+    "technology_area": "quantum computing",
+    "occurrence_sentence": "Antti Vasara , CEO of VTT, reminded that advances in quantum technology and computing are expected to enable societies to overcome challenges that are impossible for contemporary supercomputers, including pandemics similar to COVID-19.",
+    "source_document": "https://thequantuminsider.com/2020/06/04/finlands-quantum-first-vtt-to-acquire-finlands-first-quantum-computer",
+    "page": 14,
+    "confidence": "high",
+    "canonical_actor_key": "antti vasara",
+    "aliases": [
+      "Antti Vasara"
+    ],
+    "pages": [
+      14
+    ],
+    "mentions": [
+      {
+        "entity": "Antti Vasara",
+        "page": 14,
+        "role_in_text": "CEO of VTT",
+        "occurrence_sentence": "Antti Vasara , CEO of VTT, reminded that advances in quantum technology and computing are expected to enable societies to overcome challenges that are impossible for contemporary supercomputers, including pandemics similar to COVID-19.",
+        "source_document": "https://thequantuminsider.com/2020/06/04/finlands-quantum-first-vtt-to-acquire-finlands-first-quantum-computer"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Industry",
+    "sphere": "Single",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "name_heuristic_industry",
+    "classification_needs_review": true,
+    "classification_review_reason": "individual_requires_role_classification"
+  },
+  {
+    "entity": "Army Research Office",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "national government institutions",
+    "role_in_text": "Launches QuantumEAGLe Initiative",
+    "technology_area": "quantum computing",
+    "occurrence_sentence": "NSA Introduces QuantumEAGLe Program to Advance U.S. Quantum Computing",
+    "source_document": "https://thequantuminsider.com/2020/06/04/finlands-quantum-first-vtt-to-acquire-finlands-first-quantum-computer",
+    "page": 17,
+    "canonical_actor_key": "army research office",
+    "aliases": [
+      "Army Research Office"
+    ],
+    "pages": [
+      17
+    ],
+    "mentions": [
+      {
+        "entity": "Army Research Office",
+        "page": 17,
+        "role_in_text": "Launches QuantumEAGLe Initiative",
+        "occurrence_sentence": "NSA Introduces QuantumEAGLe Program to Advance U.S. Quantum Computing",
+        "source_document": "https://thequantuminsider.com/2020/06/04/finlands-quantum-first-vtt-to-acquire-finlands-first-quantum-computer"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Government",
+    "sphere": "Single",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "Defense Advanced Research Projects Agency (DARPA)",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "national government institutions",
+    "role_in_text": "Part of the QuantumEAGLe Program",
+    "technology_area": "quantum computing",
+    "occurrence_sentence": "NSA Introduces QuantumEAGLe Program to Advance U.S. Quantum Computing",
+    "source_document": "https://thequantuminsider.com/2020/06/04/finlands-quantum-first-vtt-to-acquire-finlands-first-quantum-computer",
+    "page": 16,
+    "canonical_actor_key": "defense advanced research projects agency",
+    "aliases": [
+      "DARPA",
+      "Defense Advanced Research Projects Agency",
+      "Defense Advanced Research Projects Agency (DARPA)"
+    ],
+    "pages": [
+      16,
+      22
+    ],
+    "mentions": [
+      {
+        "entity": "Defense Advanced Research Projects Agency (DARPA)",
+        "page": 16,
+        "role_in_text": "Part of the QuantumEAGLe Program",
+        "occurrence_sentence": "NSA Introduces QuantumEAGLe Program to Advance U.S. Quantum Computing",
+        "source_document": "https://thequantuminsider.com/2020/06/04/finlands-quantum-first-vtt-to-acquire-finlands-first-quantum-computer"
+      },
+      {
+        "entity": "Defense Advanced Research Projects Agency (DARPA)",
+        "page": 22,
+        "role_in_text": "Part of the QuantumEAGLe initiative",
+        "occurrence_sentence": "NSA Introduces QuantumEAGLe Program to Advance U.S. Quantum Computing",
+        "source_document": "https://thequantuminsider.com/2020/06/04/finlands-quantum-first-vtt-to-acquire-finlands-first-quantum-computer"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Government",
+    "sphere": "Single",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "Finland",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "country",
+    "role_in_text": "country where the quantum computer is acquired",
+    "technology_area": "quantum computing",
+    "occurrence_sentence": "Finland's quantum-first VTT to acquire Finland's first quantum computer",
+    "source_document": "https://thequantuminsider.com/2020/06/04/finlands-quantum-first-vtt-to-acquire-finlands-first-quantum-computer",
+    "page": 29,
+    "confidence": "high",
+    "canonical_actor_key": "finland",
+    "aliases": [
+      "Finland",
+      "Finland (Suomi)",
+      "Suomi"
+    ],
+    "pages": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      7,
+      8,
+      23,
+      26,
+      28,
+      29,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      38
+    ],
+    "mentions": [
+      {
+        "entity": "Finland",
+        "page": 1,
+        "role_in_text": "acquiring Finland's first quantum computer",
+        "occurrence_sentence": "Finland's quantum-first VTT to acquire Finland's first quantum computer",
+        "source_document": "https://thequantuminsider.com/2020/06/04/finlands-quantum-first-vtt-to-acquire-finlands-first-quantum-computer"
+      },
+      {
+        "entity": "Finland",
+        "page": 2,
+        "role_in_text": "to acquire Finland's first quantum computer",
+        "occurrence_sentence": "Finland's quantum first: VTT to acquire Finland's first quantum computer",
+        "source_document": "https://thequantuminsider.com/2020/06/04/finlands-quantum-first-vtt-to-acquire-finlands-first-quantum-computer"
+      },
+      {
+        "entity": "Finland",
+        "page": 3,
+        "role_in_text": "to acquire Finland's first quantum computer",
+        "occurrence_sentence": "Finland's quantum-first VTT to acquire Finland's first quantum computer",
+        "source_document": "https://thequantuminsider.com/2020/06/04/finlands-quantum-first-vtt-to-acquire-finlands-first-quantum-computer"
+      },
+      {
+        "entity": "Finland",
+        "page": 4,
+        "role_in_text": "to acquire Finland's first quantum computer",
+        "occurrence_sentence": "Finland's quantum-first VTT to acquire Finland's first quantum computer",
+        "source_document": "https://thequantuminsider.com/2020/06/04/finlands-quantum-first-vtt-to-acquire-finlands-first-quantum-computer"
+      },
+      {
+        "entity": "Finland",
+        "page": 5,
+        "role_in_text": "to acquire Finland's first quantum computer",
+        "occurrence_sentence": "Finland's quantum first: VTT to acquire Finland's first quantum computer",
+        "source_document": "https://thequantuminsider.com/2020/06/04/finlands-quantum-first-vtt-to-acquire-finlands-first-quantum-computer"
+      },
+      {
+        "entity": "Finland",
+        "page": 7,
+        "role_in_text": "to acquire Finland's first quantum computer",
+        "occurrence_sentence": "VTT to acquire Finland's first quantum computer",
+        "source_document": "https://thequantuminsider.com/2020/06/04/finlands-quantum-first-vtt-to-acquire-finlands-first-quantum-computer"
+      },
+      {
+        "entity": "Finland",
+        "page": 8,
+        "role_in_text": "to acquire Finland's first quantum computer",
+        "occurrence_sentence": "Finland's quantum first: VTT to acquire Finland's first quantum computer",
+        "source_document": "https://thequantuminsider.com/2020/06/04/finlands-quantum-first-vtt-to-acquire-finlands-first-quantum-computer"
+      },
+      {
+        "entity": "Finland",
+        "page": 23,
+        "role_in_text": "to acquire Finland's first quantum computer",
+        "occurrence_sentence": "Finland's quantum first: VTT to acquire Finland's first quantum computer",
+        "source_document": "https://thequantuminsider.com/2020/06/04/finlands-quantum-first-vtt-to-acquire-finlands-first-quantum-computer"
+      },
+      {
+        "entity": "Finland",
+        "page": 26,
+        "role_in_text": "Finland's quantum-first",
+        "occurrence_sentence": "Finland's quantum-first VTT to acquire Finland's first quantum computer",
+        "source_document": "https://thequantuminsider.com/2020/06/04/finlands-quantum-first-vtt-to-acquire-finlands-first-quantum-computer"
+      },
+      {
+        "entity": "Finland",
+        "page": 28,
+        "role_in_text": "country where the quantum computer is acquired",
+        "occurrence_sentence": "Finlands-quantum-first-vtt-to-acquire-finlands-first-quantum-computer",
+        "source_document": "https://thequantuminsider.com/2020/06/04/finlands-quantum-first-vtt-to-acquire-finlands-first-quantum-computer"
+      },
+      {
+        "entity": "Finland",
+        "page": 29,
+        "role_in_text": "country where the quantum computer is acquired",
+        "occurrence_sentence": "Finland's quantum-first VTT to acquire Finland's first quantum computer",
+        "source_document": "https://thequantuminsider.com/2020/06/04/finlands-quantum-first-vtt-to-acquire-finlands-first-quantum-computer"
+      },
+      {
+        "entity": "Finland",
+        "page": 31,
+        "role_in_text": "Finland's quantum first",
+        "occurrence_sentence": "Finland's quantum first: VTT to acquire Finland's first quantum computer",
+        "source_document": "https://thequantuminsider.com/2020/06/04/finlands-quantum-first-vtt-to-acquire-finlands-first-quantum-computer"
+      },
+      {
+        "entity": "Finland",
+        "page": 32,
+        "role_in_text": "Finland's quantum-first",
+        "occurrence_sentence": "Finland's quantum-first VTT to acquire Finland's first quantum computer",
+        "source_document": "https://thequantuminsider.com/2020/06/04/finlands-quantum-first-vtt-to-acquire-finlands-first-quantum-computer"
+      },
+      {
+        "entity": "Finland (Suomi)",
+        "page": 33,
+        "role_in_text": "Finland is mentioned as a country in the quantum ecosystem.",
+        "occurrence_sentence": "Faroe Islands (Føroyar) Fiji Finland (Suomi) France French Guiana (Guyane française) French Polynesia (Polynésie française) Gabon Gambia Georgia (საქართველო) Germany (Deutschland) Ghana (Gaana) Gibraltar Greece (Ελλάδα) Greenland (Kalaallit Nunaat) Grenada Guadeloupe Guam Guatemala Guinea (Guinée) Guinea-Bissau (Guiné Bissau) Guyana Haiti Honduras Hong Kong (香港) Hungary (Magyarország) Iceland (Ísland) India (भारत) Indonesia Iran (‫ایران‬‎) Iraq (‫العراق‬‎) Ireland Israel (‫ישראל‬‎) Italy (Italia) Jamaica Japan (日本) Jordan (‫الأردن‬‎) Kazakhstan (Казахстан) Kenya Kiribati Kosovo Kuwait (‫الكويت‬‎",
+        "source_document": "https://thequantuminsider.com/2020/06/04/finlands-quantum-first-vtt-to-acquire-finlands-first-quantum-computer"
+      },
+      {
+        "entity": "Finland",
+        "page": 34,
+        "role_in_text": "Finland's quantum-first",
+        "occurrence_sentence": "Finland's quantum-first VTT to acquire Finland's first quantum computer",
+        "source_document": "https://thequantuminsider.com/2020/06/04/finlands-quantum-first-vtt-to-acquire-finlands-first-quantum-computer"
+      },
+      {
+        "entity": "Finland",
+        "page": 35,
+        "role_in_text": "Finland's quantum-first",
+        "occurrence_sentence": "Finland's quantum-first VTT to acquire Finland's first quantum computer",
+        "source_document": "https://thequantuminsider.com/2020/06/04/finlands-quantum-first-vtt-to-acquire-finlands-first-quantum-computer"
+      },
+      {
+        "entity": "Finland",
+        "page": 36,
+        "role_in_text": "Finland's quantum-first",
+        "occurrence_sentence": "Finland's quantum-first VTT to acquire Finland's first quantum computer",
+        "source_document": "https://thequantuminsider.com/2020/06/04/finlands-quantum-first-vtt-to-acquire-finlands-first-quantum-computer"
+      },
+      {
+        "entity": "Finland",
+        "page": 38,
+        "role_in_text": "to acquire Finland's first quantum computer",
+        "occurrence_sentence": "Finland's quantum-first VTT to acquire Finland's first quantum computer",
+        "source_document": "https://thequantuminsider.com/2020/06/04/finlands-quantum-first-vtt-to-acquire-finlands-first-quantum-computer"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Unknown",
+    "sphere": "Unknown",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "unknown_category",
+    "classification_needs_review": true,
+    "classification_review_reason": "unmapped_category:country"
+  },
+  {
+    "entity": "Matt Swayne",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "individual",
+    "role_in_text": "writer, editor, and analyst",
+    "technology_area": "deep tech general",
+    "occurrence_sentence": "Matt Swayne has worked as a science communicator for an R1 university for more than 12 years, specializing in translating high tech and deep tech for the general audience.",
+    "source_document": "https://thequantuminsider.com/2020/06/04/finlands-quantum-first-vtt-to-acquire-finlands-first-quantum-computer",
+    "page": 15,
+    "confidence": "high",
+    "canonical_actor_key": "matt swayne",
+    "aliases": [
+      "Matt Swayne"
+    ],
+    "pages": [
+      11,
+      15,
+      18
+    ],
+    "mentions": [
+      {
+        "entity": "Matt Swayne",
+        "page": 11,
+        "role_in_text": "author of the article",
+        "occurrence_sentence": "Matt Swayne",
+        "source_document": "https://thequantuminsider.com/2020/06/04/finlands-quantum-first-vtt-to-acquire-finlands-first-quantum-computer"
+      },
+      {
+        "entity": "Matt Swayne",
+        "page": 15,
+        "role_in_text": "writer, editor, and analyst",
+        "occurrence_sentence": "Matt Swayne has worked as a science communicator for an R1 university for more than 12 years, specializing in translating high tech and deep tech for the general audience.",
+        "source_document": "https://thequantuminsider.com/2020/06/04/finlands-quantum-first-vtt-to-acquire-finlands-first-quantum-computer"
+      },
+      {
+        "entity": "Matt Swayne",
+        "page": 18,
+        "role_in_text": "author",
+        "occurrence_sentence": "[ Matt Swayne  ](https://thequantuminsider.com/author/matt-swayne/)",
+        "source_document": "https://thequantuminsider.com/2020/06/04/finlands-quantum-first-vtt-to-acquire-finlands-first-quantum-computer"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Academia",
+    "sphere": "Single",
+    "r_and_d": "R&D",
+    "classification_rule_source": "name_heuristic_academia",
+    "classification_needs_review": true,
+    "classification_review_reason": "individual_requires_role_classification"
+  },
+  {
+    "entity": "Mohib Ur Rehman",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "individual",
+    "role_in_text": "author",
+    "technology_area": "unknown",
+    "occurrence_sentence": "[ Mohib Ur Rehman",
+    "source_document": "https://thequantuminsider.com/2020/06/04/finlands-quantum-first-vtt-to-acquire-finlands-first-quantum-computer",
+    "page": 18,
+    "canonical_actor_key": "mohib ur rehman",
+    "aliases": [
+      "Mohib Ur Rehman"
+    ],
+    "pages": [
+      18,
+      19
+    ],
+    "mentions": [
+      {
+        "entity": "Mohib Ur Rehman",
+        "page": 18,
+        "role_in_text": "author",
+        "occurrence_sentence": "[ Mohib Ur Rehman",
+        "source_document": "https://thequantuminsider.com/2020/06/04/finlands-quantum-first-vtt-to-acquire-finlands-first-quantum-computer"
+      },
+      {
+        "entity": "Mohib Ur Rehman",
+        "page": 19,
+        "role_in_text": "Author",
+        "occurrence_sentence": "Mohib Ur Rehman",
+        "source_document": "https://thequantuminsider.com/2020/06/04/finlands-quantum-first-vtt-to-acquire-finlands-first-quantum-computer"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Unknown",
+    "sphere": "Unknown",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "unknown_category",
+    "classification_needs_review": true,
+    "classification_review_reason": "unmapped_category:individual; individual_requires_role_classification"
+  },
+  {
+    "entity": "National Security Agency (NSA)",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "national government institutions",
+    "role_in_text": "Introduces QuantumEAGLe Program",
+    "technology_area": "quantum computing",
+    "occurrence_sentence": "NSA Introduces QuantumEAGLe Program to Advance U.S. Quantum Computing",
+    "source_document": "https://thequantuminsider.com/2020/06/04/finlands-quantum-first-vtt-to-acquire-finlands-first-quantum-computer",
+    "page": 16,
+    "confidence": "high",
+    "canonical_actor_key": "national security agency",
+    "aliases": [
+      "NSA",
+      "National Security Agency",
+      "National Security Agency (NSA)"
+    ],
+    "pages": [
+      16,
+      17,
+      19,
+      20,
+      22
+    ],
+    "mentions": [
+      {
+        "entity": "National Security Agency (NSA)",
+        "page": 16,
+        "role_in_text": "Introduces QuantumEAGLe Program",
+        "occurrence_sentence": "NSA Introduces QuantumEAGLe Program to Advance U.S. Quantum Computing",
+        "source_document": "https://thequantuminsider.com/2020/06/04/finlands-quantum-first-vtt-to-acquire-finlands-first-quantum-computer"
+      },
+      {
+        "entity": "National Security Agency (NSA)",
+        "page": 17,
+        "role_in_text": "Introduces QuantumEAGLe Program",
+        "occurrence_sentence": "NSA Introduces QuantumEAGLe Program to Advance U.S. Quantum Computing",
+        "source_document": "https://thequantuminsider.com/2020/06/04/finlands-quantum-first-vtt-to-acquire-finlands-first-quantum-computer"
+      },
+      {
+        "entity": "National Security Agency (NSA)",
+        "page": 19,
+        "role_in_text": "Introduces QuantumEAGLe Program",
+        "occurrence_sentence": "NSA Introduces QuantumEAGLe Program to Advance U.S. Quantum Computing",
+        "source_document": "https://thequantuminsider.com/2020/06/04/finlands-quantum-first-vtt-to-acquire-finlands-first-quantum-computer"
+      },
+      {
+        "entity": "National Security Agency (NSA)",
+        "page": 20,
+        "role_in_text": "Introduces QuantumEAGLe Program",
+        "occurrence_sentence": "NSA Introduces QuantumEAGLe Program to Advance U.S. Quantum Computing",
+        "source_document": "https://thequantuminsider.com/2020/06/04/finlands-quantum-first-vtt-to-acquire-finlands-first-quantum-computer"
+      },
+      {
+        "entity": "National Security Agency (NSA)",
+        "page": 22,
+        "role_in_text": "Introduces QuantumEAGLe Program",
+        "occurrence_sentence": "NSA Introduces QuantumEAGLe Program to Advance U.S. Quantum Computing",
+        "source_document": "https://thequantuminsider.com/2020/06/04/finlands-quantum-first-vtt-to-acquire-finlands-first-quantum-computer"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Government",
+    "sphere": "Single",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "Quantum Insider (TQI)",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "media and cultural institutions",
+    "role_in_text": "leading source for the latest quantum technology news",
+    "technology_area": "deep tech general",
+    "occurrence_sentence": "The Quantum Insider (TQI) is the leading source for the latest quantum technology news, market intelligence, industry analysis, and data covering the global quantum ecosystem.",
+    "source_document": "https://thequantuminsider.com/2020/06/04/finlands-quantum-first-vtt-to-acquire-finlands-first-quantum-computer",
+    "page": 21,
+    "confidence": "high",
+    "canonical_actor_key": "quantum insider",
+    "aliases": [
+      "Quantum Insider",
+      "Quantum Insider (TQI)",
+      "TQI"
+    ],
+    "pages": [
+      6,
+      9,
+      10,
+      15,
+      21,
+      24,
+      25
+    ],
+    "mentions": [
+      {
+        "entity": "Quantum Insider",
+        "page": 6,
+        "role_in_text": "website",
+        "occurrence_sentence": "https://thequantuminsider.com/2020/06/04/finlands-quantum-first-vtt-to-acquire-finlands-first-quantum-computer",
+        "source_document": "https://thequantuminsider.com/2020/06/04/finlands-quantum-first-vtt-to-acquire-finlands-first-quantum-computer"
+      },
+      {
+        "entity": "Quantum Insider",
+        "page": 9,
+        "role_in_text": "source of the article",
+        "occurrence_sentence": "source_document: \"https://thequantuminsider.com/2020/06/04/finlands-quantum-first-vtt-to-acquire-finlands-first-quantum-computer\"",
+        "source_document": "https://thequantuminsider.com/2020/06/04/finlands-quantum-first-vtt-to-acquire-finlands-first-quantum-computer"
+      },
+      {
+        "entity": "Quantum Insider",
+        "page": 10,
+        "role_in_text": "website publisher",
+        "occurrence_sentence": "The Quantum Insider",
+        "source_document": "https://thequantuminsider.com/2020/06/04/finlands-quantum-first-vtt-to-acquire-finlands-first-quantum-computer"
+      },
+      {
+        "entity": "Quantum Insider",
+        "page": 15,
+        "role_in_text": "writer, editor, and analyst",
+        "occurrence_sentence": "He has served as a writer, editor",
+        "source_document": "https://thequantuminsider.com/2020/06/04/finlands-quantum-first-vtt-to-acquire-finlands-first-quantum-computer"
+      },
+      {
+        "entity": "Quantum Insider (TQI)",
+        "page": 21,
+        "role_in_text": "leading source for the latest quantum technology news",
+        "occurrence_sentence": "The Quantum Insider (TQI) is the leading source for the latest quantum technology news, market intelligence, industry analysis, and data covering the global quantum ecosystem.",
+        "source_document": "https://thequantuminsider.com/2020/06/04/finlands-quantum-first-vtt-to-acquire-finlands-first-quantum-computer"
+      },
+      {
+        "entity": "Quantum Insider (TQI)",
+        "page": 24,
+        "role_in_text": "leading source for quantum technology news, market intelligence, industry analysis, and data covering the global quantum ecosystem",
+        "occurrence_sentence": "The Quantum Insider (TQI) is the leading source for quantum technology news, market intelligence, industry analysis, and data covering the global quantum ecosystem.",
+        "source_document": "https://thequantuminsider.com/2020/06/04/finlands-quantum-first-vtt-to-acquire-finlands-first-quantum-computer"
+      },
+      {
+        "entity": "Quantum Insider",
+        "page": 25,
+        "role_in_text": "website",
+        "occurrence_sentence": "About TQI",
+        "source_document": "https://thequantuminsider.com/2020/06/04/finlands-quantum-first-vtt-to-acquire-finlands-first-quantum-computer"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Civil Society",
+    "sphere": "Single",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "Quantum Leap",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "small and medium-sized enterprises",
+    "role_in_text": "Raises $230 Million",
+    "technology_area": "quantum computing",
+    "occurrence_sentence": "Quantum Leap Raises $230 Million as SPAC Eyes AI And Quantum Targets",
+    "source_document": "https://thequantuminsider.com/2020/06/04/finlands-quantum-first-vtt-to-acquire-finlands-first-quantum-computer",
+    "page": 20,
+    "canonical_actor_key": "quantum leap",
+    "aliases": [
+      "Quantum Leap"
+    ],
+    "pages": [
+      20,
+      21
+    ],
+    "mentions": [
+      {
+        "entity": "Quantum Leap",
+        "page": 20,
+        "role_in_text": "Raises $230 Million",
+        "occurrence_sentence": "Quantum Leap Raises $230 Million as SPAC Eyes AI And Quantum Targets",
+        "source_document": "https://thequantuminsider.com/2020/06/04/finlands-quantum-first-vtt-to-acquire-finlands-first-quantum-computer"
+      },
+      {
+        "entity": "Quantum Leap",
+        "page": 21,
+        "role_in_text": "raises $230 million",
+        "occurrence_sentence": "Quant",
+        "source_document": "https://thequantuminsider.com/2020/06/04/finlands-quantum-first-vtt-to-acquire-finlands-first-quantum-computer"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Industry",
+    "sphere": "Single",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "Resonance Alliance Inc.",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "large enterprises",
+    "role_in_text": "Designed by Resonance",
+    "technology_area": "unknown",
+    "occurrence_sentence": "2026 © Resonance Alliance Inc. All Rights Reserved Designed by Resonance",
+    "source_document": "https://thequantuminsider.com/2020/06/04/finlands-quantum-first-vtt-to-acquire-finlands-first-quantum-computer",
+    "page": 26,
+    "confidence": "medium",
+    "canonical_actor_key": "resonance alliance inc",
+    "aliases": [
+      "Resonance Alliance Inc."
+    ],
+    "pages": [
+      26
+    ],
+    "mentions": [
+      {
+        "entity": "Resonance Alliance Inc.",
+        "page": 26,
+        "role_in_text": "Designed by Resonance",
+        "occurrence_sentence": "2026 © Resonance Alliance Inc. All Rights Reserved Designed by Resonance",
+        "source_document": "https://thequantuminsider.com/2020/06/04/finlands-quantum-first-vtt-to-acquire-finlands-first-quantum-computer"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Industry",
+    "sphere": "Single",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "Resonance Holdings",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "business support institutions",
+    "role_in_text": "website",
+    "technology_area": "deep tech general",
+    "occurrence_sentence": "Resonance Holdings",
+    "source_document": "https://thequantuminsider.com/2020/06/04/finlands-quantum-first-vtt-to-acquire-finlands-first-quantum-computer",
+    "page": 25,
+    "canonical_actor_key": "resonance holdings",
+    "aliases": [
+      "Resonance Holdings"
+    ],
+    "pages": [
+      25
+    ],
+    "mentions": [
+      {
+        "entity": "Resonance Holdings",
+        "page": 25,
+        "role_in_text": "website",
+        "occurrence_sentence": "Resonance Holdings",
+        "source_document": "https://thequantuminsider.com/2020/06/04/finlands-quantum-first-vtt-to-acquire-finlands-first-quantum-computer"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Intermediary",
+    "sphere": "Multi",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "VTT Technical Research Centre of Finland (VTT)",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "research institutes",
+    "role_in_text": "to acquire Finland's first quantum computer",
+    "technology_area": "quantum computing",
+    "occurrence_sentence": "Finland's quantum first: VTT to acquire Finland's first quantum computer",
+    "source_document": "https://thequantuminsider.com/2020/06/04/finlands-quantum-first-vtt-to-acquire-finlands-first-quantum-computer",
+    "page": 2,
+    "confidence": "high",
+    "canonical_actor_key": "vtt technical research centre of finland",
+    "aliases": [
+      "VTT",
+      "VTT (VTT)",
+      "VTT Technical Research Centre",
+      "VTT Technical Research Centre (VTT)",
+      "VTT Technical Research Centre of Finland",
+      "VTT Technical Research Centre of Finland (VTT)"
+    ],
+    "pages": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      7,
+      8,
+      11,
+      12,
+      13,
+      14,
+      23,
+      28,
+      29,
+      31,
+      32,
+      34,
+      35,
+      36,
+      38
+    ],
+    "mentions": [
+      {
+        "entity": "VTT Technical Research Centre of Finland",
+        "page": 1,
+        "role_in_text": "acquiring Finland's first quantum computer",
+        "occurrence_sentence": "Finland's quantum-first VTT to acquire Finland's first quantum computer",
+        "source_document": "https://thequantuminsider.com/2020/06/04/finlands-quantum-first-vtt-to-acquire-finlands-first-quantum-computer"
+      },
+      {
+        "entity": "VTT Technical Research Centre of Finland (VTT)",
+        "page": 2,
+        "role_in_text": "to acquire Finland's first quantum computer",
+        "occurrence_sentence": "Finland's quantum first: VTT to acquire Finland's first quantum computer",
+        "source_document": "https://thequantuminsider.com/2020/06/04/finlands-quantum-first-vtt-to-acquire-finlands-first-quantum-computer"
+      },
+      {
+        "entity": "VTT",
+        "page": 3,
+        "role_in_text": "to acquire Finland's first quantum computer",
+        "occurrence_sentence": "Finland's quantum-first VTT to acquire Finland's first quantum computer",
+        "source_document": "https://thequantuminsider.com/2020/06/04/finlands-quantum-first-vtt-to-acquire-finlands-first-quantum-computer"
+      },
+      {
+        "entity": "VTT Technical Research Centre of Finland (VTT)",
+        "page": 4,
+        "role_in_text": "to acquire Finland's first quantum computer",
+        "occurrence_sentence": "Finland's quantum-first VTT to acquire Finland's first quantum computer",
+        "source_document": "https://thequantuminsider.com/2020/06/04/finlands-quantum-first-vtt-to-acquire-finlands-first-quantum-computer"
+      },
+      {
+        "entity": "VTT Technical Research Centre of Finland",
+        "page": 5,
+        "role_in_text": "to acquire Finland's first quantum computer",
+        "occurrence_sentence": "Finland's quantum first: VTT to acquire Finland's first quantum computer",
+        "source_document": "https://thequantuminsider.com/2020/06/04/finlands-quantum-first-vtt-to-acquire-finlands-first-quantum-computer"
+      },
+      {
+        "entity": "VTT Technical Research Centre of Finland (VTT)",
+        "page": 7,
+        "role_in_text": "to acquire Finland's first quantum computer",
+        "occurrence_sentence": "VTT to acquire Finland's first quantum computer",
+        "source_document": "https://thequantuminsider.com/2020/06/04/finlands-quantum-first-vtt-to-acquire-finlands-first-quantum-computer"
+      },
+      {
+        "entity": "VTT Technical Research Centre of Finland",
+        "page": 8,
+        "role_in_text": "to acquire Finland's first quantum computer",
+        "occurrence_sentence": "Finland's quantum first: VTT to acquire Finland's first quantum computer",
+        "source_document": "https://thequantuminsider.com/2020/06/04/finlands-quantum-first-vtt-to-acquire-finlands-first-quantum-computer"
+      },
+      {
+        "entity": "VTT",
+        "page": 11,
+        "role_in_text": "to acquire Finland's first quantum computer",
+        "occurrence_sentence": "Finland's Quantum First: VTT to Acquire Finland's First Quantum Computer",
+        "source_document": "https://thequantuminsider.com/2020/06/04/finlands-quantum-first-vtt-to-acquire-finlands-first-quantum-computer"
+      },
+      {
+        "entity": "VTT Technical Research Centre (VTT)",
+        "page": 12,
+        "role_in_text": "Launched a project to establish an ecosystem with companies and universities to acquire Finland's first quantum computer.",
+        "occurrence_sentence": "[VTT Technical Research Centre",
+        "source_document": "https://thequantuminsider.com/2020/06/04/finlands-quantum-first-vtt-to-acquire-finlands-first-quantum-computer"
+      },
+      {
+        "entity": "VTT Technical Research Centre (VTT)",
+        "page": 13,
+        "role_in_text": "Launched a project to establish an ecosystem with companies and universities to acquire Finland's first quantum computer.",
+        "occurrence_sentence": "[VTT Technical Research Centre",
+        "source_document": "https://thequantuminsider.com/2020/06/04/finlands-quantum-first-vtt-to-acquire-finlands-first-quantum-computer"
+      },
+      {
+        "entity": "VTT (VTT)",
+        "page": 14,
+        "role_in_text": "CEO of VTT",
+        "occurrence_sentence": "Antti Vas",
+        "source_document": "https://thequantuminsider.com/2020/06/04/finlands-quantum-first-vtt-to-acquire-finlands-first-quantum-computer"
+      },
+      {
+        "entity": "VTT",
+        "page": 23,
+        "role_in_text": "to acquire Finland's first quantum computer",
+        "occurrence_sentence": "Finland's quantum first: VTT to acquire Finland's first quantum computer",
+        "source_document": "https://thequantuminsider.com/2020/06/04/finlands-quantum-first-vtt-to-acquire-finlands-first-quantum-computer"
+      },
+      {
+        "entity": "VTT",
+        "page": 28,
+        "role_in_text": "acquiring Finland's first quantum computer",
+        "occurrence_sentence": "Finlands-quantum-first-vtt-to-acquire-finlands-first-quantum-computer",
+        "source_document": "https://thequantuminsider.com/2020/06/04/finlands-quantum-first-vtt-to-acquire-finlands-first-quantum-computer"
+      },
+      {
+        "entity": "VTT Technical Research Centre of Finland (VTT)",
+        "page": 29,
+        "role_in_text": "research institute acquiring Finland's first quantum computer",
+        "occurrence_sentence": "Finland's quantum-first VTT to acquire Finland's first quantum computer",
+        "source_document": "https://thequantuminsider.com/2020/06/04/finlands-quantum-first-vtt-to-acquire-finlands-first-quantum-computer"
+      },
+      {
+        "entity": "VTT",
+        "page": 31,
+        "role_in_text": "to acquire Finland's first quantum computer",
+        "occurrence_sentence": "Finland's quantum first: VTT to acquire Finland's first quantum computer",
+        "source_document": "https://thequantuminsider.com/2020/06/04/finlands-quantum-first-vtt-to-acquire-finlands-first-quantum-computer"
+      },
+      {
+        "entity": "VTT Technical Research Centre of Finland (VTT)",
+        "page": 32,
+        "role_in_text": "VTT to acquire Finland's first quantum computer",
+        "occurrence_sentence": "Finland's quantum-first VTT to acquire Finland's first quantum computer",
+        "source_document": "https://thequantuminsider.com/2020/06/04/finlands-quantum-first-vtt-to-acquire-finlands-first-quantum-computer"
+      },
+      {
+        "entity": "VTT Technical Research Centre of Finland (VTT)",
+        "page": 34,
+        "role_in_text": "VTT to acquire Finland's first quantum computer",
+        "occurrence_sentence": "Finland's quantum-first VTT to acquire Finland's first quantum computer",
+        "source_document": "https://thequantuminsider.com/2020/06/04/finlands-quantum-first-vtt-to-acquire-finlands-first-quantum-computer"
+      },
+      {
+        "entity": "VTT Technical Research Centre of Finland (VTT)",
+        "page": 35,
+        "role_in_text": "VTT to acquire Finland's first quantum computer",
+        "occurrence_sentence": "Finland's quantum-first VTT to acquire Finland's first quantum computer",
+        "source_document": "https://thequantuminsider.com/2020/06/04/finlands-quantum-first-vtt-to-acquire-finlands-first-quantum-computer"
+      },
+      {
+        "entity": "VTT",
+        "page": 36,
+        "role_in_text": "VTT to acquire Finland's first quantum computer",
+        "occurrence_sentence": "Finland's quantum-first VTT to acquire Finland's first quantum computer",
+        "source_document": "https://thequantuminsider.com/2020/06/04/finlands-quantum-first-vtt-to-acquire-finlands-first-quantum-computer"
+      },
+      {
+        "entity": "VTT Technical Research Centre of Finland (VTT)",
+        "page": 38,
+        "role_in_text": "to acquire Finland's first quantum computer",
+        "occurrence_sentence": "Finland's quantum-first VTT to acquire Finland's first quantum computer",
+        "source_document": "https://thequantuminsider.com/2020/06/04/finlands-quantum-first-vtt-to-acquire-finlands-first-quantum-computer"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Academia",
+    "sphere": "Single",
+    "r_and_d": "R&D",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "Women In Quantum",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "user communities",
+    "role_in_text": "category",
+    "technology_area": "quantum computing",
+    "occurrence_sentence": "* [Women In Quantum",
+    "source_document": "https://thequantuminsider.com/2020/06/04/finlands-quantum-first-vtt-to-acquire-finlands-first-quantum-computer",
+    "page": 6,
+    "canonical_actor_key": "women in quantum",
+    "aliases": [
+      "Women In Quantum"
+    ],
+    "pages": [
+      6
+    ],
+    "mentions": [
+      {
+        "entity": "Women In Quantum",
+        "page": 6,
+        "role_in_text": "category",
+        "occurrence_sentence": "* [Women In Quantum",
+        "source_document": "https://thequantuminsider.com/2020/06/04/finlands-quantum-first-vtt-to-acquire-finlands-first-quantum-computer"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Civil Society",
+    "sphere": "Single",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  }
+]

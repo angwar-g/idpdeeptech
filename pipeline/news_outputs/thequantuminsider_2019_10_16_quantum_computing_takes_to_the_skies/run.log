@@ -1,0 +1,69 @@
+
+========================================================================
+RUN STARTED  2026-07-01 16:54:51
+site_pipeline.py https://thequantuminsider.com/2019/10/16/quantum-computing-takes-to-the-skies/
+========================================================================
+
+[16:54:51 +0s | thequantuminsider_2019_10_16_quantum_computing_takes_to_the_skies] === 0 crawl site ===
+[16:54:52 +1s | thequantuminsider_2019_10_16_quantum_computing_takes_to_the_skies] [INIT].... → Crawl4AI 0.8.6 
+[16:55:58 +1m 1s | thequantuminsider_2019_10_16_quantum_computing_takes_to_the_skies] [ANTIBOT]. ℹ https://thequantuminsid...ing-takes-to-the-skies/  | Error: Proxy direct failed: Failed on navigating ACS-GOTO:
+[16:55:58 +1m 1s | thequantuminsider_2019_10_16_quantum_computing_takes_to_the_skies] Page.goto: Timeout 60000ms exceeded.
+[16:55:58 +1m 1s | thequantuminsider_2019_10_16_quantum_computing_takes_to_the_skies] Call log:
+[16:55:58 +1m 1s | thequantuminsider_2019_10_16_quantum_computing_takes_to_the_skies]   - navigating to "https://thequantuminsider.com/2019/10/16/quantum-computing-takes-to-the-skies/", waiting until "domcontentloaded"
+ 
+[16:55:58 +1m 1s | thequantuminsider_2019_10_16_quantum_computing_takes_to_the_skies] [ERROR]... × https://thequantuminsid...ing-takes-to-the-skies/  | Error: Unexpected error in _crawl_web at line 778 in _crawl_web 
+[16:55:58 +1m 1s | thequantuminsider_2019_10_16_quantum_computing_takes_to_the_skies] (../../../../../.local/lib/python3.10/site-packages/crawl4ai/async_crawler_strategy.py):
+[16:55:58 +1m 1s | thequantuminsider_2019_10_16_quantum_computing_takes_to_the_skies] Error: Failed on navigating ACS-GOTO:
+[16:55:58 +1m 1s | thequantuminsider_2019_10_16_quantum_computing_takes_to_the_skies] Page.goto: Timeout 60000ms exceeded.
+[16:55:58 +1m 1s | thequantuminsider_2019_10_16_quantum_computing_takes_to_the_skies] Call log:
+[16:55:58 +1m 1s | thequantuminsider_2019_10_16_quantum_computing_takes_to_the_skies]   - navigating to "https://thequantuminsider.com/2019/10/16/quantum-computing-takes-to-the-skies/", waiting until "domcontentloaded"
+
+
+[16:55:58 +1m 1s | thequantuminsider_2019_10_16_quantum_computing_takes_to_the_skies] Code context:
+[16:55:58 +1m 1s | thequantuminsider_2019_10_16_quantum_computing_takes_to_the_skies]  773                                   tag="GOTO",
+[16:55:58 +1m 1s | thequantuminsider_2019_10_16_quantum_computing_takes_to_the_skies]  774                                   params={"url": url},
+[16:55:58 +1m 1s | thequantuminsider_2019_10_16_quantum_computing_takes_to_the_skies]  775                               )
+[16:55:58 +1m 1s | thequantuminsider_2019_10_16_quantum_computing_takes_to_the_skies]  776                               response = None
+[16:55:58 +1m 1s | thequantuminsider_2019_10_16_quantum_computing_takes_to_the_skies]  777                           else:
+[16:55:58 +1m 1s | thequantuminsider_2019_10_16_quantum_computing_takes_to_the_skies]  778 →                             raise RuntimeError(f"Failed on navigating ACS-GOTO:\n{str(e)}")
+[16:55:58 +1m 1s | thequantuminsider_2019_10_16_quantum_computing_takes_to_the_skies]  779   
+[16:55:58 +1m 1s | thequantuminsider_2019_10_16_quantum_computing_takes_to_the_skies]  780                       # ──────────────────────────────────────────────────────────────
+[16:55:58 +1m 1s | thequantuminsider_2019_10_16_quantum_computing_takes_to_the_skies]  781                       # Walk the redirect chain.  Playwright returns only the last
+[16:55:58 +1m 1s | thequantuminsider_2019_10_16_quantum_computing_takes_to_the_skies]  782                       # hop, so we trace the `request.redirected_from` links until the
+[16:55:58 +1m 1s | thequantuminsider_2019_10_16_quantum_computing_takes_to_the_skies]  783                       # first response that differs from the final one and surface its 
+[16:55:58 +1m 1s | thequantuminsider_2019_10_16_quantum_computing_takes_to_the_skies] Saved: crawl_output/4afd39d94c_thequantuminsider.com_2019_10_16_quantum-computing-takes-to-the-skies.json
+
+[16:55:59 +1m 1s | thequantuminsider_2019_10_16_quantum_computing_takes_to_the_skies] === 1 actor extraction ===
+[16:55:59 +1m 2s | thequantuminsider_2019_10_16_quantum_computing_takes_to_the_skies] Reading page (1/1): https://thequantuminsider.com/2019/10/16/quantum-computing-takes-to-the-skies
+[16:55:59 +1m 2s | thequantuminsider_2019_10_16_quantum_computing_takes_to_the_skies] Extracting actors: https://thequantuminsider.com/2019/10/16/quantum-computing-takes-to-the-skies (1/1), chunk 1/1
+[16:56:00 +1m 3s | thequantuminsider_2019_10_16_quantum_computing_takes_to_the_skies] Saved 1_actor_results.json with 0 extracted records
+
+[16:56:00 +1m 3s | thequantuminsider_2019_10_16_quantum_computing_takes_to_the_skies] === 2 clean actors ===
+[16:56:00 +1m 3s | thequantuminsider_2019_10_16_quantum_computing_takes_to_the_skies] Loaded 0 extracted records
+[16:56:00 +1m 3s | thequantuminsider_2019_10_16_quantum_computing_takes_to_the_skies] Saved 2_actor_nodes.json with 0 canonical actor nodes
+
+[16:56:00 +1m 3s | thequantuminsider_2019_10_16_quantum_computing_takes_to_the_skies] === 3 interaction extraction ===
+[16:56:01 +1m 3s | thequantuminsider_2019_10_16_quantum_computing_takes_to_the_skies] No valid actors found, skipping.
+
+[16:56:01 +1m 3s | thequantuminsider_2019_10_16_quantum_computing_takes_to_the_skies] === 4 clean interactions ===
+[16:56:01 +1m 3s | thequantuminsider_2019_10_16_quantum_computing_takes_to_the_skies] No input (3_interaction_results.json missing -- upstream produced no edges). Wrote empty 4_edges.json.
+
+[16:56:01 +1m 3s | thequantuminsider_2019_10_16_quantum_computing_takes_to_the_skies] === 5 helix enrichment ===
+[16:56:01 +1m 3s | thequantuminsider_2019_10_16_quantum_computing_takes_to_the_skies] Wrote 5_nodes.json (0 actors)
+[16:56:01 +1m 3s | thequantuminsider_2019_10_16_quantum_computing_takes_to_the_skies] Wrote 5_edges.json (0 interactions)
+[16:56:01 +1m 3s | thequantuminsider_2019_10_16_quantum_computing_takes_to_the_skies] Actor helix counts: {}
+[16:56:01 +1m 3s | thequantuminsider_2019_10_16_quantum_computing_takes_to_the_skies] Functional-space counts: {}
+
+[16:56:01 +1m 3s | thequantuminsider_2019_10_16_quantum_computing_takes_to_the_skies] === 6 network visualisation ===
+[16:56:01 +1m 4s | thequantuminsider_2019_10_16_quantum_computing_takes_to_the_skies] Wrote quantum_network.html
+[16:56:01 +1m 4s | thequantuminsider_2019_10_16_quantum_computing_takes_to_the_skies] Nodes: 0
+[16:56:01 +1m 4s | thequantuminsider_2019_10_16_quantum_computing_takes_to_the_skies] Edges: 0
+
+[16:56:01 +1m 4s | thequantuminsider_2019_10_16_quantum_computing_takes_to_the_skies] Done. Outputs written to: /home/lv/IDP/idpdeeptech/pipeline/news_outputs/thequantuminsider_2019_10_16_quantum_computing_takes_to_the_skies
+[16:56:01 +1m 4s | thequantuminsider_2019_10_16_quantum_computing_takes_to_the_skies] Log: /home/lv/IDP/idpdeeptech/pipeline/news_outputs/thequantuminsider_2019_10_16_quantum_computing_takes_to_the_skies/run.log
+
+========================================================================
+RUN FINISHED 2026-07-01 16:56:01  (OK)
+Started:     2026-07-01 16:54:51
+Elapsed:     1m 4s
+========================================================================

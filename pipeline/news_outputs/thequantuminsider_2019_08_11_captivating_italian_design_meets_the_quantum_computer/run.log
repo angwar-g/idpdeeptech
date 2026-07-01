@@ -1,0 +1,69 @@
+
+========================================================================
+RUN STARTED  2026-07-01 16:55:02
+site_pipeline.py https://thequantuminsider.com/2019/08/11/captivating-italian-design-meets-the-quantum-computer/
+========================================================================
+
+[16:55:02 +0s | thequantuminsider_2019_08_11_captivating_italian_design_meets_the_quantum_computer] === 0 crawl site ===
+[16:55:03 +1s | thequantuminsider_2019_08_11_captivating_italian_design_meets_the_quantum_computer] [INIT].... → Crawl4AI 0.8.6 
+[16:56:09 +1m 1s | thequantuminsider_2019_08_11_captivating_italian_design_meets_the_quantum_computer] [ANTIBOT]. ℹ https://thequantuminsid...s-the-quantum-computer/  | Error: Proxy direct failed: Failed on navigating ACS-GOTO:
+[16:56:09 +1m 1s | thequantuminsider_2019_08_11_captivating_italian_design_meets_the_quantum_computer] Page.goto: Timeout 60000ms exceeded.
+[16:56:09 +1m 1s | thequantuminsider_2019_08_11_captivating_italian_design_meets_the_quantum_computer] Call log:
+[16:56:09 +1m 1s | thequantuminsider_2019_08_11_captivating_italian_design_meets_the_quantum_computer]   - navigating to "https://thequantuminsider.com/2019/08/11/captivating-italian-design-meets-the-quantum-computer/", waiting until "domcontentloaded"
+ 
+[16:56:09 +1m 1s | thequantuminsider_2019_08_11_captivating_italian_design_meets_the_quantum_computer] [ERROR]... × https://thequantuminsid...s-the-quantum-computer/  | Error: Unexpected error in _crawl_web at line 778 in _crawl_web 
+[16:56:09 +1m 1s | thequantuminsider_2019_08_11_captivating_italian_design_meets_the_quantum_computer] (../../../../../.local/lib/python3.10/site-packages/crawl4ai/async_crawler_strategy.py):
+[16:56:09 +1m 1s | thequantuminsider_2019_08_11_captivating_italian_design_meets_the_quantum_computer] Error: Failed on navigating ACS-GOTO:
+[16:56:09 +1m 1s | thequantuminsider_2019_08_11_captivating_italian_design_meets_the_quantum_computer] Page.goto: Timeout 60000ms exceeded.
+[16:56:09 +1m 1s | thequantuminsider_2019_08_11_captivating_italian_design_meets_the_quantum_computer] Call log:
+[16:56:09 +1m 1s | thequantuminsider_2019_08_11_captivating_italian_design_meets_the_quantum_computer]   - navigating to "https://thequantuminsider.com/2019/08/11/captivating-italian-design-meets-the-quantum-computer/", waiting until "domcontentloaded"
+
+
+[16:56:09 +1m 1s | thequantuminsider_2019_08_11_captivating_italian_design_meets_the_quantum_computer] Code context:
+[16:56:09 +1m 1s | thequantuminsider_2019_08_11_captivating_italian_design_meets_the_quantum_computer]  773                                   tag="GOTO",
+[16:56:09 +1m 1s | thequantuminsider_2019_08_11_captivating_italian_design_meets_the_quantum_computer]  774                                   params={"url": url},
+[16:56:09 +1m 1s | thequantuminsider_2019_08_11_captivating_italian_design_meets_the_quantum_computer]  775                               )
+[16:56:09 +1m 1s | thequantuminsider_2019_08_11_captivating_italian_design_meets_the_quantum_computer]  776                               response = None
+[16:56:09 +1m 1s | thequantuminsider_2019_08_11_captivating_italian_design_meets_the_quantum_computer]  777                           else:
+[16:56:09 +1m 1s | thequantuminsider_2019_08_11_captivating_italian_design_meets_the_quantum_computer]  778 →                             raise RuntimeError(f"Failed on navigating ACS-GOTO:\n{str(e)}")
+[16:56:09 +1m 1s | thequantuminsider_2019_08_11_captivating_italian_design_meets_the_quantum_computer]  779   
+[16:56:09 +1m 1s | thequantuminsider_2019_08_11_captivating_italian_design_meets_the_quantum_computer]  780                       # ──────────────────────────────────────────────────────────────
+[16:56:09 +1m 1s | thequantuminsider_2019_08_11_captivating_italian_design_meets_the_quantum_computer]  781                       # Walk the redirect chain.  Playwright returns only the last
+[16:56:09 +1m 1s | thequantuminsider_2019_08_11_captivating_italian_design_meets_the_quantum_computer]  782                       # hop, so we trace the `request.redirected_from` links until the
+[16:56:09 +1m 1s | thequantuminsider_2019_08_11_captivating_italian_design_meets_the_quantum_computer]  783                       # first response that differs from the final one and surface its 
+[16:56:09 +1m 1s | thequantuminsider_2019_08_11_captivating_italian_design_meets_the_quantum_computer] Saved: crawl_output/e3a0e44af9_thequantuminsider.com_2019_08_11_captivating-italian-design-meets-the-quantum-computer.json
+
+[16:56:09 +1m 2s | thequantuminsider_2019_08_11_captivating_italian_design_meets_the_quantum_computer] === 1 actor extraction ===
+[16:56:10 +1m 2s | thequantuminsider_2019_08_11_captivating_italian_design_meets_the_quantum_computer] Reading page (1/1): https://thequantuminsider.com/2019/08/11/captivating-italian-design-meets-the-quantum-computer
+[16:56:10 +1m 2s | thequantuminsider_2019_08_11_captivating_italian_design_meets_the_quantum_computer] Extracting actors: https://thequantuminsider.com/2019/08/11/captivating-italian-design-meets-the-quantum-computer (1/1), chunk 1/1
+[16:56:11 +1m 3s | thequantuminsider_2019_08_11_captivating_italian_design_meets_the_quantum_computer] Saved 1_actor_results.json with 0 extracted records
+
+[16:56:11 +1m 3s | thequantuminsider_2019_08_11_captivating_italian_design_meets_the_quantum_computer] === 2 clean actors ===
+[16:56:11 +1m 3s | thequantuminsider_2019_08_11_captivating_italian_design_meets_the_quantum_computer] Loaded 0 extracted records
+[16:56:11 +1m 3s | thequantuminsider_2019_08_11_captivating_italian_design_meets_the_quantum_computer] Saved 2_actor_nodes.json with 0 canonical actor nodes
+
+[16:56:11 +1m 3s | thequantuminsider_2019_08_11_captivating_italian_design_meets_the_quantum_computer] === 3 interaction extraction ===
+[16:56:11 +1m 4s | thequantuminsider_2019_08_11_captivating_italian_design_meets_the_quantum_computer] No valid actors found, skipping.
+
+[16:56:11 +1m 4s | thequantuminsider_2019_08_11_captivating_italian_design_meets_the_quantum_computer] === 4 clean interactions ===
+[16:56:11 +1m 4s | thequantuminsider_2019_08_11_captivating_italian_design_meets_the_quantum_computer] No input (3_interaction_results.json missing -- upstream produced no edges). Wrote empty 4_edges.json.
+
+[16:56:12 +1m 4s | thequantuminsider_2019_08_11_captivating_italian_design_meets_the_quantum_computer] === 5 helix enrichment ===
+[16:56:12 +1m 4s | thequantuminsider_2019_08_11_captivating_italian_design_meets_the_quantum_computer] Wrote 5_nodes.json (0 actors)
+[16:56:12 +1m 4s | thequantuminsider_2019_08_11_captivating_italian_design_meets_the_quantum_computer] Wrote 5_edges.json (0 interactions)
+[16:56:12 +1m 4s | thequantuminsider_2019_08_11_captivating_italian_design_meets_the_quantum_computer] Actor helix counts: {}
+[16:56:12 +1m 4s | thequantuminsider_2019_08_11_captivating_italian_design_meets_the_quantum_computer] Functional-space counts: {}
+
+[16:56:12 +1m 4s | thequantuminsider_2019_08_11_captivating_italian_design_meets_the_quantum_computer] === 6 network visualisation ===
+[16:56:12 +1m 4s | thequantuminsider_2019_08_11_captivating_italian_design_meets_the_quantum_computer] Wrote quantum_network.html
+[16:56:12 +1m 4s | thequantuminsider_2019_08_11_captivating_italian_design_meets_the_quantum_computer] Nodes: 0
+[16:56:12 +1m 4s | thequantuminsider_2019_08_11_captivating_italian_design_meets_the_quantum_computer] Edges: 0
+
+[16:56:12 +1m 4s | thequantuminsider_2019_08_11_captivating_italian_design_meets_the_quantum_computer] Done. Outputs written to: /home/lv/IDP/idpdeeptech/pipeline/news_outputs/thequantuminsider_2019_08_11_captivating_italian_design_meets_the_quantum_computer
+[16:56:12 +1m 4s | thequantuminsider_2019_08_11_captivating_italian_design_meets_the_quantum_computer] Log: /home/lv/IDP/idpdeeptech/pipeline/news_outputs/thequantuminsider_2019_08_11_captivating_italian_design_meets_the_quantum_computer/run.log
+
+========================================================================
+RUN FINISHED 2026-07-01 16:56:12  (OK)
+Started:     2026-07-01 16:55:02
+Elapsed:     1m 4s
+========================================================================

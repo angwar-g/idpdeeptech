@@ -1,0 +1,70 @@
+
+========================================================================
+RUN STARTED  2026-07-01 16:56:01
+site_pipeline.py https://thequantuminsider.com/2019/09/22/the-headhunter-the-headhunted-2/
+========================================================================
+
+[16:56:01 +0s | thequantuminsider_2019_09_22_the_headhunter_the_headhunted_2] === 0 crawl site ===
+[16:56:02 +1s | thequantuminsider_2019_09_22_the_headhunter_the_headhunted_2] [INIT].... → Crawl4AI 0.8.6 
+[16:57:08 +1m 1s | thequantuminsider_2019_09_22_the_headhunter_the_headhunted_2] [ANTIBOT]. ℹ https://thequantuminsid...unter-the-headhunted-2/  | Error: Proxy direct failed: Failed on navigating ACS-GOTO:
+[16:57:08 +1m 1s | thequantuminsider_2019_09_22_the_headhunter_the_headhunted_2] Page.goto: Timeout 60000ms exceeded.
+[16:57:08 +1m 1s | thequantuminsider_2019_09_22_the_headhunter_the_headhunted_2] Call log:
+[16:57:08 +1m 1s | thequantuminsider_2019_09_22_the_headhunter_the_headhunted_2]   - navigating to "https://thequantuminsider.com/2019/09/22/the-headhunter-the-headhunted-2/", waiting until "domcontentloaded"
+ 
+[16:57:08 +1m 1s | thequantuminsider_2019_09_22_the_headhunter_the_headhunted_2] [ERROR]... × https://thequantuminsid...unter-the-headhunted-2/  | Error: Unexpected error in _crawl_web at line 778 in _crawl_web 
+[16:57:08 +1m 1s | thequantuminsider_2019_09_22_the_headhunter_the_headhunted_2] (../../../../../.local/lib/python3.10/site-packages/crawl4ai/async_crawler_strategy.py):
+[16:57:08 +1m 1s | thequantuminsider_2019_09_22_the_headhunter_the_headhunted_2] Error: Failed on navigating ACS-GOTO:
+[16:57:08 +1m 1s | thequantuminsider_2019_09_22_the_headhunter_the_headhunted_2] Page.goto: Timeout 60000ms exceeded.
+[16:57:08 +1m 1s | thequantuminsider_2019_09_22_the_headhunter_the_headhunted_2] Call log:
+[16:57:08 +1m 1s | thequantuminsider_2019_09_22_the_headhunter_the_headhunted_2]   - navigating to "https://thequantuminsider.com/2019/09/22/the-headhunter-the-headhunted-2/", waiting until "domcontentloaded"
+
+
+[16:57:08 +1m 1s | thequantuminsider_2019_09_22_the_headhunter_the_headhunted_2] Code context:
+[16:57:08 +1m 1s | thequantuminsider_2019_09_22_the_headhunter_the_headhunted_2]  773                                   tag="GOTO",
+[16:57:08 +1m 1s | thequantuminsider_2019_09_22_the_headhunter_the_headhunted_2]  774                                   params={"url": url},
+[16:57:08 +1m 1s | thequantuminsider_2019_09_22_the_headhunter_the_headhunted_2]  775                               )
+[16:57:08 +1m 1s | thequantuminsider_2019_09_22_the_headhunter_the_headhunted_2]  776                               response = None
+[16:57:08 +1m 1s | thequantuminsider_2019_09_22_the_headhunter_the_headhunted_2]  777                           else:
+[16:57:08 +1m 1s | thequantuminsider_2019_09_22_the_headhunter_the_headhunted_2]  778 →                             raise RuntimeError(f"Failed on navigating ACS-GOTO:\n{str(e)}")
+[16:57:08 +1m 1s | thequantuminsider_2019_09_22_the_headhunter_the_headhunted_2]  779   
+[16:57:08 +1m 1s | thequantuminsider_2019_09_22_the_headhunter_the_headhunted_2]  780                       # ──────────────────────────────────────────────────────────────
+[16:57:08 +1m 1s | thequantuminsider_2019_09_22_the_headhunter_the_headhunted_2]  781                       # Walk the redirect chain.  Playwright returns only the last
+[16:57:08 +1m 1s | thequantuminsider_2019_09_22_the_headhunter_the_headhunted_2]  782                       # hop, so we trace the `request.redirected_from` links until the
+[16:57:08 +1m 1s | thequantuminsider_2019_09_22_the_headhunter_the_headhunted_2]  783                       # first response that differs from the final one and surface its 
+[16:57:08 +1m 1s | thequantuminsider_2019_09_22_the_headhunter_the_headhunted_2] Saved: crawl_output/cc9a3a8047_thequantuminsider.com_2019_09_22_the-headhunter-the-headhunted-2.json
+
+[16:57:08 +1m 2s | thequantuminsider_2019_09_22_the_headhunter_the_headhunted_2] === 1 actor extraction ===
+[16:57:09 +1m 2s | thequantuminsider_2019_09_22_the_headhunter_the_headhunted_2] Reading page (1/1): https://thequantuminsider.com/2019/09/22/the-headhunter-the-headhunted-2
+[16:57:09 +1m 2s | thequantuminsider_2019_09_22_the_headhunter_the_headhunted_2] Extracting actors: https://thequantuminsider.com/2019/09/22/the-headhunter-the-headhunted-2 (1/1), chunk 1/1
+[16:57:16 +1m 9s | thequantuminsider_2019_09_22_the_headhunter_the_headhunted_2] Repaired malformed JSON.
+[16:57:16 +1m 9s | thequantuminsider_2019_09_22_the_headhunter_the_headhunted_2] Saved 1_actor_results.json with 2 extracted records
+
+[16:57:16 +1m 9s | thequantuminsider_2019_09_22_the_headhunter_the_headhunted_2] === 2 clean actors ===
+[16:57:16 +1m 9s | thequantuminsider_2019_09_22_the_headhunter_the_headhunted_2] Loaded 2 extracted records
+[16:57:16 +1m 9s | thequantuminsider_2019_09_22_the_headhunter_the_headhunted_2] Saved 2_actor_nodes.json with 2 canonical actor nodes
+
+[16:57:16 +1m 9s | thequantuminsider_2019_09_22_the_headhunter_the_headhunted_2] === 3 interaction extraction ===
+[16:57:17 +1m 10s | thequantuminsider_2019_09_22_the_headhunter_the_headhunted_2] Saved 3_interaction_results.json with 0 extracted interactions.
+
+[16:57:17 +1m 10s | thequantuminsider_2019_09_22_the_headhunter_the_headhunted_2] === 4 clean interactions ===
+[16:57:17 +1m 10s | thequantuminsider_2019_09_22_the_headhunter_the_headhunted_2] Saved 4_edges.json with 0 cleaned interactions.
+
+[16:57:17 +1m 10s | thequantuminsider_2019_09_22_the_headhunter_the_headhunted_2] === 5 helix enrichment ===
+[16:57:17 +1m 10s | thequantuminsider_2019_09_22_the_headhunter_the_headhunted_2] Wrote 5_nodes.json (2 actors)
+[16:57:17 +1m 10s | thequantuminsider_2019_09_22_the_headhunter_the_headhunted_2] Wrote 5_edges.json (0 interactions)
+[16:57:17 +1m 10s | thequantuminsider_2019_09_22_the_headhunter_the_headhunted_2] Actor helix counts: {'Industry': 2}
+[16:57:17 +1m 10s | thequantuminsider_2019_09_22_the_headhunter_the_headhunted_2] Functional-space counts: {}
+
+[16:57:17 +1m 10s | thequantuminsider_2019_09_22_the_headhunter_the_headhunted_2] === 6 network visualisation ===
+[16:57:17 +1m 10s | thequantuminsider_2019_09_22_the_headhunter_the_headhunted_2] Wrote quantum_network.html
+[16:57:17 +1m 10s | thequantuminsider_2019_09_22_the_headhunter_the_headhunted_2] Nodes: 2
+[16:57:17 +1m 10s | thequantuminsider_2019_09_22_the_headhunter_the_headhunted_2] Edges: 0
+
+[16:57:17 +1m 10s | thequantuminsider_2019_09_22_the_headhunter_the_headhunted_2] Done. Outputs written to: /home/lv/IDP/idpdeeptech/pipeline/news_outputs/thequantuminsider_2019_09_22_the_headhunter_the_headhunted_2
+[16:57:17 +1m 10s | thequantuminsider_2019_09_22_the_headhunter_the_headhunted_2] Log: /home/lv/IDP/idpdeeptech/pipeline/news_outputs/thequantuminsider_2019_09_22_the_headhunter_the_headhunted_2/run.log
+
+========================================================================
+RUN FINISHED 2026-07-01 16:57:17  (OK)
+Started:     2026-07-01 16:56:01
+Elapsed:     1m 10s
+========================================================================

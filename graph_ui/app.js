@@ -454,11 +454,11 @@ function scheduleApplyFilters() {
     clearTimeout(pendingPreparingTimer);
   }
 
-  setLoading(true, 10, "Preparing graph...");
+  setLoading(true, 10, "Preparing graph data...");
 
   pendingPreparingTimer = setTimeout(() => {
     pendingPreparingTimer = null;
-    setLoading(true, 22, "Preparing graph...");
+    setLoading(true, 22, "Preparing graph data...");
   }, 90);
 
   pendingFilterTimer = setTimeout(() => {
@@ -548,7 +548,7 @@ function applyFilters() {
     filteredEdges.length,
     filteredNodes,
     filteredNodes.length > 1500
-      ? "Showing filtered graph with static layout for performance."
+      ? "Showing filtered graph with static layout."
       : "Showing filtered graph with static layout."
   );
 }
@@ -657,7 +657,7 @@ function getConnectedGraph(nodes, edges) {
   };
 }
 
-function updateFilterSummary(nodeCount, edgeCount, visibleNodes = [], message = "Showing graph.") {
+function updateFilterSummary(nodeCount, edgeCount, visibleNodes = [], message = "Fetching graph data and loading network.") {
   document.getElementById("visibleNodeCount").textContent = nodeCount.toLocaleString();
   document.getElementById("visibleEdgeCount").textContent = edgeCount.toLocaleString();
   document.getElementById("filterSummary").textContent = message;

@@ -1,0 +1,38 @@
+[
+  {
+    "interaction_phrase": "Managing Partner at INKEF capital",
+    "occurrence_sentence": "Robert Jan Galema, Managing Partner at INKEF capital, said the company's technology reminds him of technology that brought on the computer revolution.",
+    "page": 14,
+    "source_actor": "Robert Jan Galema",
+    "source_document": "https://thequantuminsider.com/2020/05/13/quantum-motion-technologies-locks-in-8-0-million-in-series-a-round-investment",
+    "target_actor": "INKEF Capital",
+    "relation_label": "networking",
+    "relation_label_confidence": "high",
+    "source_actor_key": "robert jan galema",
+    "target_actor_key": "inkef capital",
+    "source_helix": "Industry",
+    "target_helix": "Intermediary",
+    "helix_pair": "Industry–Intermediary",
+    "functional_space": "Innovation",
+    "functional_space_needs_review": true,
+    "functional_space_review_reason": "source_actor_classification_needs_review"
+  },
+  {
+    "interaction_phrase": "Professor John Morton, of UCL",
+    "occurrence_sentence": "The company is led by founders Professor Simon Benjamin, of Oxford University, and Professor John Morton, of UCL, and commercial director James Palles-Dimmock.",
+    "page": 14,
+    "source_actor": "Morton",
+    "source_document": "https://thequantuminsider.com/2020/05/13/quantum-motion-technologies-locks-in-8-0-million-in-series-a-round-investment",
+    "target_actor": "UCL",
+    "relation_label": "collaborative_leadership",
+    "relation_label_confidence": "high",
+    "source_actor_key": "morton",
+    "target_actor_key": "ucl",
+    "source_helix": "Unknown",
+    "target_helix": "Academia",
+    "helix_pair": "Unknown–Academia",
+    "functional_space": "Unknown",
+    "functional_space_needs_review": true,
+    "functional_space_review_reason": "source_actor_classification_needs_review; functional_space:Unknown"
+  }
+]
