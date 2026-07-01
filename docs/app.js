@@ -965,6 +965,7 @@ function drawGraph(nodes, edges, settings = {}) {
         ${raw.directional ? "→" : "↔"}
         <b>${escapeHtml(raw.target_actor || raw.target_actor_key || "")}</b><br><br>
         <b>Label:</b> ${escapeHtml(formatRelationLabel(raw.relation_label || "Interaction"))}<br>
+        <b>Functional space:</b> ${escapeHtml(getEdgeFunctionalSpace(raw))}<br>
         <b>Direction:</b> ${raw.directional ? "Directional" : "Symmetric"}<br>
         ${raw.first_seen ? `<b>First seen:</b> ${escapeHtml(raw.first_seen)}<br>` : ""}
         ${raw.last_seen && raw.last_seen !== raw.first_seen ? `<b>Last seen:</b> ${escapeHtml(raw.last_seen)}<br>` : ""}
@@ -1321,6 +1322,7 @@ function createEdgeTooltipText(edge) {
 
   const rows = [
     ["Label", formatRelationLabel(edge.relation_label || "Interaction")],
+    ["Functional space", getEdgeFunctionalSpace(edge)],
     ["Direction", edge.directional ? "Directional" : "Symmetric"]
   ];
 
@@ -1372,6 +1374,13 @@ function formatRelationLabel(value) {
     .filter(Boolean)
     .map(word => word.charAt(0).toUpperCase() + word.slice(1))
     .join(" ");
+}
+
+function getEdgeFunctionalSpace(edge) {
+  if (edge.functional_space) return edge.functional_space;
+
+  const occurrence = (edge.occurrences || []).find(item => item.functional_space);
+  return occurrence ? occurrence.functional_space : "Not specified";
 }
 
 function getNodeSize(node) {
