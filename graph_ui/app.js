@@ -19,8 +19,8 @@ const HELIX_TYPES = [
 ];
 
 Promise.all([
-  fetch("data/combined_nodes.json").then(assertOk).then(r => r.json()),
-  fetch("data/combined_edges.json").then(assertOk).then(r => r.json())
+  fetch("../pipeline/merged_outputs/combined_nodes.json").then(assertOk).then(r => r.json()),
+  fetch("../pipeline/merged_outputs/combined_edges.json").then(assertOk).then(r => r.json())
 ])
   .then(([nodes, edges]) => {
     allNodes = nodes;
