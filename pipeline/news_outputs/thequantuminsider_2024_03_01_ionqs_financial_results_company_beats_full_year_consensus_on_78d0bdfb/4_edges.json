@@ -1,0 +1,72 @@
+[
+  {
+    "interaction_phrase": "President and CEO of IonQ",
+    "occurrence_sentence": "Among the highlights, Peter Chapman, President and CEO of IonQ said they company sold four systems, unveiled the designs for our upcoming generations and opened our new Seattle manufacturing facility.",
+    "page": 11,
+    "source_actor": "Peter Chapman",
+    "source_document": "https://thequantuminsider.com/2024/03/01/ionqs-financial-results-company-beats-full-year-consensus-on-revenue-and-bookings",
+    "target_actor": "IonQ",
+    "relation_label": "technology_transfer",
+    "relation_label_confidence": "high"
+  },
+  {
+    "interaction_phrase": "President and CEO of IonQ",
+    "occurrence_sentence": "Among the highlights, Peter Chapman, President and CEO of IonQ said they company sold four systems, unveiled the designs for our upcoming generations and opened our new Seattle manufacturing facility.",
+    "page": 12,
+    "source_actor": "Peter Chapman",
+    "source_document": "https://thequantuminsider.com/2024/03/01/ionqs-financial-results-company-beats-full-year-consensus-on-revenue-and-bookings",
+    "target_actor": "IonQ",
+    "relation_label": "technology_transfer",
+    "relation_label_confidence": "high"
+  },
+  {
+    "interaction_phrase": "appointment of Robert Cardillo, former Director of the National Geospatial-Intelligence Agency, to",
+    "occurrence_sentence": "IonQ today announced the appointment of Robert Cardillo, former Director of the National Geospatial-Intelligence Agency, to its Board of Directors.",
+    "page": 14,
+    "source_actor": "Robert Cardillo",
+    "source_document": "https://thequantuminsider.com/2024/03/01/ionqs-financial-results-company-beats-full-year-consensus-on-revenue-and-bookings",
+    "target_actor": "IonQ",
+    "relation_label": "collaborative_leadership",
+    "relation_label_confidence": "high"
+  },
+  {
+    "interaction_phrase": "appointment of Robert Cardillo",
+    "occurrence_sentence": "IonQ today announced the appointment of Robert Cardillo, former Director of the National Geospatial-Intelligence Agency, to its Board of Directors.",
+    "page": 15,
+    "source_actor": "IonQ",
+    "source_document": "https://thequantuminsider.com/2024/03/01/ionqs-financial-results-company-beats-full-year-consensus-on-revenue-and-bookings",
+    "target_actor": "Robert Cardillo",
+    "relation_label": "collaborative_leadership",
+    "relation_label_confidence": "high"
+  },
+  {
+    "interaction_phrase": "former Director of the National Geospatial-Intelligence Agency",
+    "occurrence_sentence": "IonQ today announced the appointment of Robert Cardillo, former Director of the National Geospatial-Intelligence Agency, to its Board of Directors.",
+    "page": 15,
+    "source_actor": "Robert Cardillo",
+    "source_document": "https://thequantuminsider.com/2024/03/01/ionqs-financial-results-company-beats-full-year-consensus-on-revenue-and-bookings",
+    "target_actor": "National Geospatial-Intelligence Agency",
+    "relation_label": "collaborative_leadership",
+    "relation_label_confidence": "high"
+  },
+  {
+    "interaction_phrase": "through Amazon Braket Direct",
+    "occurrence_sentence": "IonQ announced the availability of IonQ Forte through Amazon Braket Direct, a fully managed, white glove quantum computing service from Amazon Web Services.",
+    "page": 17,
+    "source_actor": "IonQ",
+    "source_document": "https://thequantuminsider.com/2024/03/01/ionqs-financial-results-company-beats-full-year-consensus-on-revenue-and-bookings",
+    "target_actor": "Amazon Web Services (AWS)",
+    "relation_label": "collaborative_leadership",
+    "relation_label_confidence": "high"
+  },
+  {
+    "source_actor": "IonQ",
+    "target_actor": "Amazon Web Services (AWS)",
+    "interaction_phrase": "through Amazon Braket Direct",
+    "occurrence_sentence": "IonQ announced the availability of IonQ Forte through Amazon Braket Direct, a fully managed, white glove quantum computing service from Amazon Web Services.",
+    "source_document": "https://thequantuminsider.com/2024/03/01/ionqs-financial-results-company-beats-full-year-consensus-on-revenue-and-bookings",
+    "page": 18,
+    "relation_label": "collaborative_leadership",
+    "relation_label_confidence": "high"
+  }
+]

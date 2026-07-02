@@ -1,0 +1,42 @@
+[
+  {
+    "interaction_phrase": "led by",
+    "occurrence_sentence": "Located at the University of Birmingham in the leafy suburb of Edgbaston, the Hub for Quantum Technology in Sensors and Metrology, led by Professor Kai Bongs and his group of scientists, has one goal in mind:",
+    "page": 15,
+    "source_actor": "University of Birmingham",
+    "source_document": "https://thequantuminsider.com/2020/02/03/3-british-quantum-computing-research-hubs-not-in-oxbridge-or-london",
+    "target_actor": "Professor Kai Bongs",
+    "relation_label": "collaborative_leadership",
+    "relation_label_confidence": "high"
+  },
+  {
+    "interaction_phrase": "led by",
+    "occurrence_sentence": "Located at the University of Birmingham in the leafy suburb of Edgbaston, the Hub for Quantum Technology in Sensors and Metrology, led by Professor Kai Bongs and his group of scientists, has one goal in mind:",
+    "page": 16,
+    "source_actor": "Professor Kai Bongs",
+    "source_document": "https://thequantuminsider.com/2020/02/03/3-british-quantum-computing-research-hubs-not-in-oxbridge-or-london",
+    "target_actor": "University of Birmingham",
+    "relation_label": "collaborative_leadership",
+    "relation_label_confidence": "high"
+  },
+  {
+    "source_actor": "QuantIC",
+    "target_actor": "University of Glasgow",
+    "interaction_phrase": "led by",
+    "occurrence_sentence": "'One of the hubs, Quantic, led by the University of Glasgow, focusses on enhanced imaging projects.",
+    "source_document": "https://thequantuminsider.com/2020/02/03/3-british-quantum-computing-research-hubs-not-in-oxbridge-or-london",
+    "page": 19,
+    "relation_label": "collaborative_leadership",
+    "relation_label_confidence": "high"
+  },
+  {
+    "source_actor": "QuantIC",
+    "target_actor": "Professor Miles Padgett",
+    "interaction_phrase": "Principal Investigator",
+    "occurrence_sentence": "The particularity of the research and technology developed by Quantic, whose Principal Investigator is Prof. Miles Padgett, is that it does not purely rely on the quantum phenomena we hear every day in the news, such as superposition and entanglement.",
+    "source_document": "https://thequantuminsider.com/2020/02/03/3-british-quantum-computing-research-hubs-not-in-oxbridge-or-london",
+    "page": 19,
+    "relation_label": "technology_transfer",
+    "relation_label_confidence": "high"
+  }
+]

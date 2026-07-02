@@ -1,0 +1,72 @@
+
+========================================================================
+RUN STARTED  2026-07-02 10:22:09
+site_pipeline.py https://thequantuminsider.com/2024/02/14/new-roadmap-to-position-europe-as-the-quantum-valley-of-the-world/
+========================================================================
+
+[10:22:09 +0s | thequantuminsider_2024_02_14_new_roadmap_to_position_europe_as_the_quantum_valley_of_the_world] === 0 crawl site ===
+[10:22:11 +2s | thequantuminsider_2024_02_14_new_roadmap_to_position_europe_as_the_quantum_valley_of_the_world] [INIT].... → Crawl4AI 0.8.6 
+[10:23:11 +1m 3s | thequantuminsider_2024_02_14_new_roadmap_to_position_europe_as_the_quantum_valley_of_the_world] [ANTIBOT]. ℹ https://thequantuminsid...um-valley-of-the-world/  | Error: Proxy direct failed: Failed on navigating ACS-GOTO:
+[10:23:11 +1m 3s | thequantuminsider_2024_02_14_new_roadmap_to_position_europe_as_the_quantum_valley_of_the_world] Page.goto: Timeout 60000ms exceeded.
+[10:23:11 +1m 3s | thequantuminsider_2024_02_14_new_roadmap_to_position_europe_as_the_quantum_valley_of_the_world] Call log:
+[10:23:11 +1m 3s | thequantuminsider_2024_02_14_new_roadmap_to_position_europe_as_the_quantum_valley_of_the_world]   - navigating to "https://thequantuminsider.com/2024/02/14/new-roadmap-to-position-europe-as-the-quantum-valley-of-the-world/", waiting until 
+[10:23:11 +1m 3s | thequantuminsider_2024_02_14_new_roadmap_to_position_europe_as_the_quantum_valley_of_the_world] "domcontentloaded"
+ 
+[10:23:11 +1m 3s | thequantuminsider_2024_02_14_new_roadmap_to_position_europe_as_the_quantum_valley_of_the_world] [ERROR]... × https://thequantuminsid...um-valley-of-the-world/  | Error: Unexpected error in _crawl_web at line 778 in _crawl_web 
+[10:23:11 +1m 3s | thequantuminsider_2024_02_14_new_roadmap_to_position_europe_as_the_quantum_valley_of_the_world] (../../../../../.local/lib/python3.10/site-packages/crawl4ai/async_crawler_strategy.py):
+[10:23:11 +1m 3s | thequantuminsider_2024_02_14_new_roadmap_to_position_europe_as_the_quantum_valley_of_the_world] Error: Failed on navigating ACS-GOTO:
+[10:23:11 +1m 3s | thequantuminsider_2024_02_14_new_roadmap_to_position_europe_as_the_quantum_valley_of_the_world] Page.goto: Timeout 60000ms exceeded.
+[10:23:11 +1m 3s | thequantuminsider_2024_02_14_new_roadmap_to_position_europe_as_the_quantum_valley_of_the_world] Call log:
+[10:23:11 +1m 3s | thequantuminsider_2024_02_14_new_roadmap_to_position_europe_as_the_quantum_valley_of_the_world]   - navigating to "https://thequantuminsider.com/2024/02/14/new-roadmap-to-position-europe-as-the-quantum-valley-of-the-world/", waiting until 
+[10:23:11 +1m 3s | thequantuminsider_2024_02_14_new_roadmap_to_position_europe_as_the_quantum_valley_of_the_world] "domcontentloaded"
+
+
+[10:23:11 +1m 3s | thequantuminsider_2024_02_14_new_roadmap_to_position_europe_as_the_quantum_valley_of_the_world] Code context:
+[10:23:11 +1m 3s | thequantuminsider_2024_02_14_new_roadmap_to_position_europe_as_the_quantum_valley_of_the_world]  773                                   tag="GOTO",
+[10:23:11 +1m 3s | thequantuminsider_2024_02_14_new_roadmap_to_position_europe_as_the_quantum_valley_of_the_world]  774                                   params={"url": url},
+[10:23:11 +1m 3s | thequantuminsider_2024_02_14_new_roadmap_to_position_europe_as_the_quantum_valley_of_the_world]  775                               )
+[10:23:11 +1m 3s | thequantuminsider_2024_02_14_new_roadmap_to_position_europe_as_the_quantum_valley_of_the_world]  776                               response = None
+[10:23:11 +1m 3s | thequantuminsider_2024_02_14_new_roadmap_to_position_europe_as_the_quantum_valley_of_the_world]  777                           else:
+[10:23:11 +1m 3s | thequantuminsider_2024_02_14_new_roadmap_to_position_europe_as_the_quantum_valley_of_the_world]  778 →                             raise RuntimeError(f"Failed on navigating ACS-GOTO:\n{str(e)}")
+[10:23:11 +1m 3s | thequantuminsider_2024_02_14_new_roadmap_to_position_europe_as_the_quantum_valley_of_the_world]  779   
+[10:23:11 +1m 3s | thequantuminsider_2024_02_14_new_roadmap_to_position_europe_as_the_quantum_valley_of_the_world]  780                       # ──────────────────────────────────────────────────────────────
+[10:23:11 +1m 3s | thequantuminsider_2024_02_14_new_roadmap_to_position_europe_as_the_quantum_valley_of_the_world]  781                       # Walk the redirect chain.  Playwright returns only the last
+[10:23:11 +1m 3s | thequantuminsider_2024_02_14_new_roadmap_to_position_europe_as_the_quantum_valley_of_the_world]  782                       # hop, so we trace the `request.redirected_from` links until the
+[10:23:11 +1m 3s | thequantuminsider_2024_02_14_new_roadmap_to_position_europe_as_the_quantum_valley_of_the_world]  783                       # first response that differs from the final one and surface its 
+[10:23:11 +1m 3s | thequantuminsider_2024_02_14_new_roadmap_to_position_europe_as_the_quantum_valley_of_the_world] Saved: crawl_output/3c5ba6fc16_thequantuminsider.com_2024_02_14_new-roadmap-to-position-europe-as-the-quantum-valley-of-the-world.json
+
+[10:23:12 +1m 3s | thequantuminsider_2024_02_14_new_roadmap_to_position_europe_as_the_quantum_valley_of_the_world] === 1 actor extraction ===
+[10:23:12 +1m 3s | thequantuminsider_2024_02_14_new_roadmap_to_position_europe_as_the_quantum_valley_of_the_world] Reading page (1/1): https://thequantuminsider.com/2024/02/14/new-roadmap-to-position-europe-as-the-quantum-valley-of-the-world
+[10:23:12 +1m 3s | thequantuminsider_2024_02_14_new_roadmap_to_position_europe_as_the_quantum_valley_of_the_world] Extracting actors: https://thequantuminsider.com/2024/02/14/new-roadmap-to-position-europe-as-the-quantum-valley-of-the-world (1/1), chunk 1/1
+[10:23:22 +1m 13s | thequantuminsider_2024_02_14_new_roadmap_to_position_europe_as_the_quantum_valley_of_the_world] Repaired malformed JSON.
+[10:23:22 +1m 13s | thequantuminsider_2024_02_14_new_roadmap_to_position_europe_as_the_quantum_valley_of_the_world] Saved 1_actor_results.json with 2 extracted records
+
+[10:23:22 +1m 13s | thequantuminsider_2024_02_14_new_roadmap_to_position_europe_as_the_quantum_valley_of_the_world] === 2 clean actors ===
+[10:23:22 +1m 13s | thequantuminsider_2024_02_14_new_roadmap_to_position_europe_as_the_quantum_valley_of_the_world] Loaded 2 extracted records
+[10:23:22 +1m 13s | thequantuminsider_2024_02_14_new_roadmap_to_position_europe_as_the_quantum_valley_of_the_world] Saved 2_actor_nodes.json with 2 canonical actor nodes
+
+[10:23:22 +1m 13s | thequantuminsider_2024_02_14_new_roadmap_to_position_europe_as_the_quantum_valley_of_the_world] === 3 interaction extraction ===
+[10:23:22 +1m 14s | thequantuminsider_2024_02_14_new_roadmap_to_position_europe_as_the_quantum_valley_of_the_world] Saved 3_interaction_results.json with 0 extracted interactions.
+
+[10:23:23 +1m 14s | thequantuminsider_2024_02_14_new_roadmap_to_position_europe_as_the_quantum_valley_of_the_world] === 4 clean interactions ===
+[10:23:23 +1m 14s | thequantuminsider_2024_02_14_new_roadmap_to_position_europe_as_the_quantum_valley_of_the_world] Saved 4_edges.json with 0 cleaned interactions.
+
+[10:23:23 +1m 14s | thequantuminsider_2024_02_14_new_roadmap_to_position_europe_as_the_quantum_valley_of_the_world] === 5 helix enrichment ===
+[10:23:23 +1m 14s | thequantuminsider_2024_02_14_new_roadmap_to_position_europe_as_the_quantum_valley_of_the_world] Wrote 5_nodes.json (2 actors)
+[10:23:23 +1m 14s | thequantuminsider_2024_02_14_new_roadmap_to_position_europe_as_the_quantum_valley_of_the_world] Wrote 5_edges.json (0 interactions)
+[10:23:23 +1m 14s | thequantuminsider_2024_02_14_new_roadmap_to_position_europe_as_the_quantum_valley_of_the_world] Actor helix counts: {'Government': 2}
+[10:23:23 +1m 14s | thequantuminsider_2024_02_14_new_roadmap_to_position_europe_as_the_quantum_valley_of_the_world] Functional-space counts: {}
+
+[10:23:23 +1m 14s | thequantuminsider_2024_02_14_new_roadmap_to_position_europe_as_the_quantum_valley_of_the_world] === 6 network visualisation ===
+[10:23:23 +1m 15s | thequantuminsider_2024_02_14_new_roadmap_to_position_europe_as_the_quantum_valley_of_the_world] Wrote quantum_network.html
+[10:23:23 +1m 15s | thequantuminsider_2024_02_14_new_roadmap_to_position_europe_as_the_quantum_valley_of_the_world] Nodes: 2
+[10:23:23 +1m 15s | thequantuminsider_2024_02_14_new_roadmap_to_position_europe_as_the_quantum_valley_of_the_world] Edges: 0
+
+[10:23:24 +1m 15s | thequantuminsider_2024_02_14_new_roadmap_to_position_europe_as_the_quantum_valley_of_the_world] Done. Outputs written to: /home/lv/IDP/idpdeeptech/pipeline/news_outputs/thequantuminsider_2024_02_14_new_roadmap_to_position_europe_as_the_quantum_valley_of_the_world
+[10:23:24 +1m 15s | thequantuminsider_2024_02_14_new_roadmap_to_position_europe_as_the_quantum_valley_of_the_world] Log: /home/lv/IDP/idpdeeptech/pipeline/news_outputs/thequantuminsider_2024_02_14_new_roadmap_to_position_europe_as_the_quantum_valley_of_the_world/run.log
+
+========================================================================
+RUN FINISHED 2026-07-02 10:23:24  (OK)
+Started:     2026-07-02 10:22:09
+Elapsed:     1m 15s
+========================================================================

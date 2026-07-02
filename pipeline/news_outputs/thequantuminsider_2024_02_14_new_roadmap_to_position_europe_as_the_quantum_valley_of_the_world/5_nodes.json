@@ -1,0 +1,73 @@
+[
+  {
+    "entity": "Europe",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "country",
+    "role_in_text": "Geopolitical actor",
+    "technology_area": "deep tech general",
+    "occurrence_sentence": "The European Commission has outlined a new roadmap to position Europe as the quantum valley of the world.",
+    "source_document": "https://thequantuminsider.com/2024/02/14/new-roadmap-to-position-europe-as-the-quantum-valley-of-the-world",
+    "page": 1,
+    "canonical_actor_key": "europe",
+    "aliases": [
+      "Europe"
+    ],
+    "pages": [
+      1
+    ],
+    "mentions": [
+      {
+        "entity": "Europe",
+        "page": 1,
+        "role_in_text": "Geopolitical actor",
+        "occurrence_sentence": "The European Commission has outlined a new roadmap to position Europe as the quantum valley of the world.",
+        "source_document": "https://thequantuminsider.com/2024/02/14/new-roadmap-to-position-europe-as-the-quantum-valley-of-the-world"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Government",
+    "sphere": "Single",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "name_heuristic_government",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  },
+  {
+    "entity": "European Commission",
+    "status": "entity",
+    "excluded_reason": "Null",
+    "category": "supranational government institutions",
+    "role_in_text": "Policy maker",
+    "technology_area": "deep tech general",
+    "occurrence_sentence": "The European Commission has outlined a new roadmap to position Europe as the quantum valley of the world.",
+    "source_document": "https://thequantuminsider.com/2024/02/14/new-roadmap-to-position-europe-as-the-quantum-valley-of-the-world",
+    "page": 1,
+    "confidence": "high",
+    "canonical_actor_key": "european commission",
+    "aliases": [
+      "European Commission"
+    ],
+    "pages": [
+      1
+    ],
+    "mentions": [
+      {
+        "entity": "European Commission",
+        "page": 1,
+        "role_in_text": "Policy maker",
+        "occurrence_sentence": "The European Commission has outlined a new roadmap to position Europe as the quantum valley of the world.",
+        "source_document": "https://thequantuminsider.com/2024/02/14/new-roadmap-to-position-europe-as-the-quantum-valley-of-the-world"
+      }
+    ],
+    "needs_review": false,
+    "review_reason": "",
+    "helix": "Government",
+    "sphere": "Single",
+    "r_and_d": "Assessed",
+    "classification_rule_source": "category_rule",
+    "classification_needs_review": false,
+    "classification_review_reason": ""
+  }
+]

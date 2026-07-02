@@ -1,0 +1,74 @@
+
+========================================================================
+RUN STARTED  2026-07-02 09:45:26
+site_pipeline.py https://thequantuminsider.com/2024/02/20/iqm-quantum-computers-achieves-a-new-benchmark-result-on-20-qubit-quantum-computer/
+========================================================================
+
+[09:45:26 +0s | thequantuminsider_2024_02_20_iqm_quantum_computers_achieves_a_new_benchmark_result_on_20_174a887f] === 0 crawl site ===
+[09:45:29 +2s | thequantuminsider_2024_02_20_iqm_quantum_computers_achieves_a_new_benchmark_result_on_20_174a887f] [INIT].... → Crawl4AI 0.8.6 
+[09:45:55 +29s | thequantuminsider_2024_02_20_iqm_quantum_computers_achieves_a_new_benchmark_result_on_20_174a887f] [ANTIBOT]. ℹ https://thequantuminsid...qubit-quantum-computer/  | Error: Proxy direct failed: Failed on navigating ACS-GOTO:
+[09:45:55 +29s | thequantuminsider_2024_02_20_iqm_quantum_computers_achieves_a_new_benchmark_result_on_20_174a887f] Page.goto: net::ERR_NAME_NOT_RESOLVED at 
+[09:45:55 +29s | thequantuminsider_2024_02_20_iqm_quantum_computers_achieves_a_new_benchmark_result_on_20_174a887f] https://thequantuminsider.com/2024/02/20/iqm-quantum-computers-achieves-a-new-benchmark-result-on-20-qubit-quantum-computer/
+[09:45:55 +29s | thequantuminsider_2024_02_20_iqm_quantum_computers_achieves_a_new_benchmark_result_on_20_174a887f] Call log:
+[09:45:55 +29s | thequantuminsider_2024_02_20_iqm_quantum_computers_achieves_a_new_benchmark_result_on_20_174a887f]   - navigating to "https://thequantuminsider.com/2024/02/20/iqm-quantum-computers-achieves-a-new-benchmark-result-on-20-qubit-quantum-computer/", 
+[09:45:55 +29s | thequantuminsider_2024_02_20_iqm_quantum_computers_achieves_a_new_benchmark_result_on_20_174a887f] waiting until "domcontentloaded"
+ 
+[09:45:55 +29s | thequantuminsider_2024_02_20_iqm_quantum_computers_achieves_a_new_benchmark_result_on_20_174a887f] [ERROR]... × https://thequantuminsid...qubit-quantum-computer/  | Error: Unexpected error in _crawl_web at line 778 in _crawl_web 
+[09:45:55 +29s | thequantuminsider_2024_02_20_iqm_quantum_computers_achieves_a_new_benchmark_result_on_20_174a887f] (../../../../../.local/lib/python3.10/site-packages/crawl4ai/async_crawler_strategy.py):
+[09:45:55 +29s | thequantuminsider_2024_02_20_iqm_quantum_computers_achieves_a_new_benchmark_result_on_20_174a887f] Error: Failed on navigating ACS-GOTO:
+[09:45:55 +29s | thequantuminsider_2024_02_20_iqm_quantum_computers_achieves_a_new_benchmark_result_on_20_174a887f] Page.goto: net::ERR_NAME_NOT_RESOLVED at 
+[09:45:55 +29s | thequantuminsider_2024_02_20_iqm_quantum_computers_achieves_a_new_benchmark_result_on_20_174a887f] https://thequantuminsider.com/2024/02/20/iqm-quantum-computers-achieves-a-new-benchmark-result-on-20-qubit-quantum-computer/
+[09:45:55 +29s | thequantuminsider_2024_02_20_iqm_quantum_computers_achieves_a_new_benchmark_result_on_20_174a887f] Call log:
+[09:45:55 +29s | thequantuminsider_2024_02_20_iqm_quantum_computers_achieves_a_new_benchmark_result_on_20_174a887f]   - navigating to "https://thequantuminsider.com/2024/02/20/iqm-quantum-computers-achieves-a-new-benchmark-result-on-20-qubit-quantum-computer/", 
+[09:45:55 +29s | thequantuminsider_2024_02_20_iqm_quantum_computers_achieves_a_new_benchmark_result_on_20_174a887f] waiting until "domcontentloaded"
+
+
+[09:45:55 +29s | thequantuminsider_2024_02_20_iqm_quantum_computers_achieves_a_new_benchmark_result_on_20_174a887f] Code context:
+[09:45:55 +29s | thequantuminsider_2024_02_20_iqm_quantum_computers_achieves_a_new_benchmark_result_on_20_174a887f]  773                                   tag="GOTO",
+[09:45:55 +29s | thequantuminsider_2024_02_20_iqm_quantum_computers_achieves_a_new_benchmark_result_on_20_174a887f]  774                                   params={"url": url},
+[09:45:55 +29s | thequantuminsider_2024_02_20_iqm_quantum_computers_achieves_a_new_benchmark_result_on_20_174a887f]  775                               )
+[09:45:55 +29s | thequantuminsider_2024_02_20_iqm_quantum_computers_achieves_a_new_benchmark_result_on_20_174a887f]  776                               response = None
+[09:45:55 +29s | thequantuminsider_2024_02_20_iqm_quantum_computers_achieves_a_new_benchmark_result_on_20_174a887f]  777                           else:
+[09:45:55 +29s | thequantuminsider_2024_02_20_iqm_quantum_computers_achieves_a_new_benchmark_result_on_20_174a887f]  778 →                             raise RuntimeError(f"Failed on navigating ACS-GOTO:\n{str(e)}")
+[09:45:55 +29s | thequantuminsider_2024_02_20_iqm_quantum_computers_achieves_a_new_benchmark_result_on_20_174a887f]  779   
+[09:45:55 +29s | thequantuminsider_2024_02_20_iqm_quantum_computers_achieves_a_new_benchmark_result_on_20_174a887f]  780                       # ──────────────────────────────────────────────────────────────
+[09:45:55 +29s | thequantuminsider_2024_02_20_iqm_quantum_computers_achieves_a_new_benchmark_result_on_20_174a887f]  781                       # Walk the redirect chain.  Playwright returns only the last
+[09:45:55 +29s | thequantuminsider_2024_02_20_iqm_quantum_computers_achieves_a_new_benchmark_result_on_20_174a887f]  782                       # hop, so we trace the `request.redirected_from` links until the
+[09:45:55 +29s | thequantuminsider_2024_02_20_iqm_quantum_computers_achieves_a_new_benchmark_result_on_20_174a887f]  783                       # first response that differs from the final one and surface its 
+[09:45:55 +29s | thequantuminsider_2024_02_20_iqm_quantum_computers_achieves_a_new_benchmark_result_on_20_174a887f] Saved: crawl_output/cc3efb411b_thequantuminsider.com_2024_02_20_iqm-quantum-computers-achieves-a-new-benchmark-result-on-20-qubit-quantum-computer.json
+
+[09:45:55 +29s | thequantuminsider_2024_02_20_iqm_quantum_computers_achieves_a_new_benchmark_result_on_20_174a887f] === 1 actor extraction ===
+[09:45:56 +29s | thequantuminsider_2024_02_20_iqm_quantum_computers_achieves_a_new_benchmark_result_on_20_174a887f] Reading page (1/1): https://thequantuminsider.com/2024/02/20/iqm-quantum-computers-achieves-a-new-benchmark-result-on-20-qubit-quantum-computer
+[09:45:56 +29s | thequantuminsider_2024_02_20_iqm_quantum_computers_achieves_a_new_benchmark_result_on_20_174a887f] Extracting actors: https://thequantuminsider.com/2024/02/20/iqm-quantum-computers-achieves-a-new-benchmark-result-on-20-qubit-quantum-computer (1/1), chunk 1/1
+[09:46:06 +39s | thequantuminsider_2024_02_20_iqm_quantum_computers_achieves_a_new_benchmark_result_on_20_174a887f] Model call failed for https://thequantuminsider.com/2024/02/20/iqm-quantum-computers-achieves-a-new-benchmark-result-on-20-qubit-quantum-computer chunk 1: Cannot connect to host api.cloudflare.com:443 ssl:default [Temporary failure in name resolution]
+[09:46:06 +39s | thequantuminsider_2024_02_20_iqm_quantum_computers_achieves_a_new_benchmark_result_on_20_174a887f] Saved 1_actor_results.json with 0 extracted records
+
+[09:46:06 +39s | thequantuminsider_2024_02_20_iqm_quantum_computers_achieves_a_new_benchmark_result_on_20_174a887f] === 2 clean actors ===
+[09:46:06 +40s | thequantuminsider_2024_02_20_iqm_quantum_computers_achieves_a_new_benchmark_result_on_20_174a887f] Loaded 0 extracted records
+[09:46:06 +40s | thequantuminsider_2024_02_20_iqm_quantum_computers_achieves_a_new_benchmark_result_on_20_174a887f] Saved 2_actor_nodes.json with 0 canonical actor nodes
+
+[09:46:06 +40s | thequantuminsider_2024_02_20_iqm_quantum_computers_achieves_a_new_benchmark_result_on_20_174a887f] === 3 interaction extraction ===
+[09:46:06 +40s | thequantuminsider_2024_02_20_iqm_quantum_computers_achieves_a_new_benchmark_result_on_20_174a887f] No valid actors found, skipping.
+
+[09:46:06 +40s | thequantuminsider_2024_02_20_iqm_quantum_computers_achieves_a_new_benchmark_result_on_20_174a887f] === 4 clean interactions ===
+[09:46:06 +40s | thequantuminsider_2024_02_20_iqm_quantum_computers_achieves_a_new_benchmark_result_on_20_174a887f] No input (3_interaction_results.json missing -- upstream produced no edges). Wrote empty 4_edges.json.
+
+[09:46:06 +40s | thequantuminsider_2024_02_20_iqm_quantum_computers_achieves_a_new_benchmark_result_on_20_174a887f] === 5 helix enrichment ===
+[09:46:06 +40s | thequantuminsider_2024_02_20_iqm_quantum_computers_achieves_a_new_benchmark_result_on_20_174a887f] Wrote 5_nodes.json (0 actors)
+[09:46:06 +40s | thequantuminsider_2024_02_20_iqm_quantum_computers_achieves_a_new_benchmark_result_on_20_174a887f] Wrote 5_edges.json (0 interactions)
+[09:46:06 +40s | thequantuminsider_2024_02_20_iqm_quantum_computers_achieves_a_new_benchmark_result_on_20_174a887f] Actor helix counts: {}
+[09:46:06 +40s | thequantuminsider_2024_02_20_iqm_quantum_computers_achieves_a_new_benchmark_result_on_20_174a887f] Functional-space counts: {}
+
+[09:46:06 +40s | thequantuminsider_2024_02_20_iqm_quantum_computers_achieves_a_new_benchmark_result_on_20_174a887f] === 6 network visualisation ===
+[09:46:07 +41s | thequantuminsider_2024_02_20_iqm_quantum_computers_achieves_a_new_benchmark_result_on_20_174a887f] Wrote quantum_network.html
+[09:46:07 +41s | thequantuminsider_2024_02_20_iqm_quantum_computers_achieves_a_new_benchmark_result_on_20_174a887f] Nodes: 0
+[09:46:07 +41s | thequantuminsider_2024_02_20_iqm_quantum_computers_achieves_a_new_benchmark_result_on_20_174a887f] Edges: 0
+
+[09:46:07 +41s | thequantuminsider_2024_02_20_iqm_quantum_computers_achieves_a_new_benchmark_result_on_20_174a887f] Done. Outputs written to: /home/lv/IDP/idpdeeptech/pipeline/news_outputs/thequantuminsider_2024_02_20_iqm_quantum_computers_achieves_a_new_benchmark_result_on_20_174a887f
+[09:46:07 +41s | thequantuminsider_2024_02_20_iqm_quantum_computers_achieves_a_new_benchmark_result_on_20_174a887f] Log: /home/lv/IDP/idpdeeptech/pipeline/news_outputs/thequantuminsider_2024_02_20_iqm_quantum_computers_achieves_a_new_benchmark_result_on_20_174a887f/run.log
+
+========================================================================
+RUN FINISHED 2026-07-02 09:46:07  (OK)
+Started:     2026-07-02 09:45:26
+Elapsed:     41s
+========================================================================

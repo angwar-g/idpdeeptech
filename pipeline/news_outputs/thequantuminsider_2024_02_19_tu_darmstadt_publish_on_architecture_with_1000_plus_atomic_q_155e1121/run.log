@@ -1,0 +1,74 @@
+
+========================================================================
+RUN STARTED  2026-07-02 09:46:07
+site_pipeline.py https://thequantuminsider.com/2024/02/19/tu-darmstadt-publish-on-architecture-with-1000-plus-atomic-qubits-in-a-single-plane/
+========================================================================
+
+[09:46:07 +0s | thequantuminsider_2024_02_19_tu_darmstadt_publish_on_architecture_with_1000_plus_atomic_q_155e1121] === 0 crawl site ===
+[09:46:10 +2s | thequantuminsider_2024_02_19_tu_darmstadt_publish_on_architecture_with_1000_plus_atomic_q_155e1121] [INIT].... → Crawl4AI 0.8.6 
+[09:46:36 +29s | thequantuminsider_2024_02_19_tu_darmstadt_publish_on_architecture_with_1000_plus_atomic_q_155e1121] [ANTIBOT]. ℹ https://thequantuminsid...bits-in-a-single-plane/  | Error: Proxy direct failed: Failed on navigating ACS-GOTO:
+[09:46:36 +29s | thequantuminsider_2024_02_19_tu_darmstadt_publish_on_architecture_with_1000_plus_atomic_q_155e1121] Page.goto: net::ERR_NAME_NOT_RESOLVED at 
+[09:46:36 +29s | thequantuminsider_2024_02_19_tu_darmstadt_publish_on_architecture_with_1000_plus_atomic_q_155e1121] https://thequantuminsider.com/2024/02/19/tu-darmstadt-publish-on-architecture-with-1000-plus-atomic-qubits-in-a-single-plane/
+[09:46:36 +29s | thequantuminsider_2024_02_19_tu_darmstadt_publish_on_architecture_with_1000_plus_atomic_q_155e1121] Call log:
+[09:46:36 +29s | thequantuminsider_2024_02_19_tu_darmstadt_publish_on_architecture_with_1000_plus_atomic_q_155e1121]   - navigating to "https://thequantuminsider.com/2024/02/19/tu-darmstadt-publish-on-architecture-with-1000-plus-atomic-qubits-in-a-single-plane/", 
+[09:46:36 +29s | thequantuminsider_2024_02_19_tu_darmstadt_publish_on_architecture_with_1000_plus_atomic_q_155e1121] waiting until "domcontentloaded"
+ 
+[09:46:36 +29s | thequantuminsider_2024_02_19_tu_darmstadt_publish_on_architecture_with_1000_plus_atomic_q_155e1121] [ERROR]... × https://thequantuminsid...bits-in-a-single-plane/  | Error: Unexpected error in _crawl_web at line 778 in _crawl_web 
+[09:46:36 +29s | thequantuminsider_2024_02_19_tu_darmstadt_publish_on_architecture_with_1000_plus_atomic_q_155e1121] (../../../../../.local/lib/python3.10/site-packages/crawl4ai/async_crawler_strategy.py):
+[09:46:36 +29s | thequantuminsider_2024_02_19_tu_darmstadt_publish_on_architecture_with_1000_plus_atomic_q_155e1121] Error: Failed on navigating ACS-GOTO:
+[09:46:36 +29s | thequantuminsider_2024_02_19_tu_darmstadt_publish_on_architecture_with_1000_plus_atomic_q_155e1121] Page.goto: net::ERR_NAME_NOT_RESOLVED at 
+[09:46:36 +29s | thequantuminsider_2024_02_19_tu_darmstadt_publish_on_architecture_with_1000_plus_atomic_q_155e1121] https://thequantuminsider.com/2024/02/19/tu-darmstadt-publish-on-architecture-with-1000-plus-atomic-qubits-in-a-single-plane/
+[09:46:36 +29s | thequantuminsider_2024_02_19_tu_darmstadt_publish_on_architecture_with_1000_plus_atomic_q_155e1121] Call log:
+[09:46:36 +29s | thequantuminsider_2024_02_19_tu_darmstadt_publish_on_architecture_with_1000_plus_atomic_q_155e1121]   - navigating to "https://thequantuminsider.com/2024/02/19/tu-darmstadt-publish-on-architecture-with-1000-plus-atomic-qubits-in-a-single-plane/", 
+[09:46:36 +29s | thequantuminsider_2024_02_19_tu_darmstadt_publish_on_architecture_with_1000_plus_atomic_q_155e1121] waiting until "domcontentloaded"
+
+
+[09:46:36 +29s | thequantuminsider_2024_02_19_tu_darmstadt_publish_on_architecture_with_1000_plus_atomic_q_155e1121] Code context:
+[09:46:36 +29s | thequantuminsider_2024_02_19_tu_darmstadt_publish_on_architecture_with_1000_plus_atomic_q_155e1121]  773                                   tag="GOTO",
+[09:46:36 +29s | thequantuminsider_2024_02_19_tu_darmstadt_publish_on_architecture_with_1000_plus_atomic_q_155e1121]  774                                   params={"url": url},
+[09:46:36 +29s | thequantuminsider_2024_02_19_tu_darmstadt_publish_on_architecture_with_1000_plus_atomic_q_155e1121]  775                               )
+[09:46:36 +29s | thequantuminsider_2024_02_19_tu_darmstadt_publish_on_architecture_with_1000_plus_atomic_q_155e1121]  776                               response = None
+[09:46:36 +29s | thequantuminsider_2024_02_19_tu_darmstadt_publish_on_architecture_with_1000_plus_atomic_q_155e1121]  777                           else:
+[09:46:36 +29s | thequantuminsider_2024_02_19_tu_darmstadt_publish_on_architecture_with_1000_plus_atomic_q_155e1121]  778 →                             raise RuntimeError(f"Failed on navigating ACS-GOTO:\n{str(e)}")
+[09:46:36 +29s | thequantuminsider_2024_02_19_tu_darmstadt_publish_on_architecture_with_1000_plus_atomic_q_155e1121]  779   
+[09:46:36 +29s | thequantuminsider_2024_02_19_tu_darmstadt_publish_on_architecture_with_1000_plus_atomic_q_155e1121]  780                       # ──────────────────────────────────────────────────────────────
+[09:46:36 +29s | thequantuminsider_2024_02_19_tu_darmstadt_publish_on_architecture_with_1000_plus_atomic_q_155e1121]  781                       # Walk the redirect chain.  Playwright returns only the last
+[09:46:36 +29s | thequantuminsider_2024_02_19_tu_darmstadt_publish_on_architecture_with_1000_plus_atomic_q_155e1121]  782                       # hop, so we trace the `request.redirected_from` links until the
+[09:46:36 +29s | thequantuminsider_2024_02_19_tu_darmstadt_publish_on_architecture_with_1000_plus_atomic_q_155e1121]  783                       # first response that differs from the final one and surface its 
+[09:46:36 +29s | thequantuminsider_2024_02_19_tu_darmstadt_publish_on_architecture_with_1000_plus_atomic_q_155e1121] Saved: crawl_output/8bd660a194_thequantuminsider.com_2024_02_19_tu-darmstadt-publish-on-architecture-with-1000-plus-atomic-qubits-in-a-single-plane.json
+
+[09:46:36 +29s | thequantuminsider_2024_02_19_tu_darmstadt_publish_on_architecture_with_1000_plus_atomic_q_155e1121] === 1 actor extraction ===
+[09:46:37 +29s | thequantuminsider_2024_02_19_tu_darmstadt_publish_on_architecture_with_1000_plus_atomic_q_155e1121] Reading page (1/1): https://thequantuminsider.com/2024/02/19/tu-darmstadt-publish-on-architecture-with-1000-plus-atomic-qubits-in-a-single-plane
+[09:46:37 +29s | thequantuminsider_2024_02_19_tu_darmstadt_publish_on_architecture_with_1000_plus_atomic_q_155e1121] Extracting actors: https://thequantuminsider.com/2024/02/19/tu-darmstadt-publish-on-architecture-with-1000-plus-atomic-qubits-in-a-single-plane (1/1), chunk 1/1
+[09:46:47 +39s | thequantuminsider_2024_02_19_tu_darmstadt_publish_on_architecture_with_1000_plus_atomic_q_155e1121] Model call failed for https://thequantuminsider.com/2024/02/19/tu-darmstadt-publish-on-architecture-with-1000-plus-atomic-qubits-in-a-single-plane chunk 1: Cannot connect to host api.cloudflare.com:443 ssl:default [Temporary failure in name resolution]
+[09:46:47 +39s | thequantuminsider_2024_02_19_tu_darmstadt_publish_on_architecture_with_1000_plus_atomic_q_155e1121] Saved 1_actor_results.json with 0 extracted records
+
+[09:46:47 +40s | thequantuminsider_2024_02_19_tu_darmstadt_publish_on_architecture_with_1000_plus_atomic_q_155e1121] === 2 clean actors ===
+[09:46:47 +40s | thequantuminsider_2024_02_19_tu_darmstadt_publish_on_architecture_with_1000_plus_atomic_q_155e1121] Loaded 0 extracted records
+[09:46:47 +40s | thequantuminsider_2024_02_19_tu_darmstadt_publish_on_architecture_with_1000_plus_atomic_q_155e1121] Saved 2_actor_nodes.json with 0 canonical actor nodes
+
+[09:46:47 +40s | thequantuminsider_2024_02_19_tu_darmstadt_publish_on_architecture_with_1000_plus_atomic_q_155e1121] === 3 interaction extraction ===
+[09:46:47 +40s | thequantuminsider_2024_02_19_tu_darmstadt_publish_on_architecture_with_1000_plus_atomic_q_155e1121] No valid actors found, skipping.
+
+[09:46:47 +40s | thequantuminsider_2024_02_19_tu_darmstadt_publish_on_architecture_with_1000_plus_atomic_q_155e1121] === 4 clean interactions ===
+[09:46:47 +40s | thequantuminsider_2024_02_19_tu_darmstadt_publish_on_architecture_with_1000_plus_atomic_q_155e1121] No input (3_interaction_results.json missing -- upstream produced no edges). Wrote empty 4_edges.json.
+
+[09:46:47 +40s | thequantuminsider_2024_02_19_tu_darmstadt_publish_on_architecture_with_1000_plus_atomic_q_155e1121] === 5 helix enrichment ===
+[09:46:47 +40s | thequantuminsider_2024_02_19_tu_darmstadt_publish_on_architecture_with_1000_plus_atomic_q_155e1121] Wrote 5_nodes.json (0 actors)
+[09:46:47 +40s | thequantuminsider_2024_02_19_tu_darmstadt_publish_on_architecture_with_1000_plus_atomic_q_155e1121] Wrote 5_edges.json (0 interactions)
+[09:46:47 +40s | thequantuminsider_2024_02_19_tu_darmstadt_publish_on_architecture_with_1000_plus_atomic_q_155e1121] Actor helix counts: {}
+[09:46:47 +40s | thequantuminsider_2024_02_19_tu_darmstadt_publish_on_architecture_with_1000_plus_atomic_q_155e1121] Functional-space counts: {}
+
+[09:46:47 +40s | thequantuminsider_2024_02_19_tu_darmstadt_publish_on_architecture_with_1000_plus_atomic_q_155e1121] === 6 network visualisation ===
+[09:46:48 +41s | thequantuminsider_2024_02_19_tu_darmstadt_publish_on_architecture_with_1000_plus_atomic_q_155e1121] Wrote quantum_network.html
+[09:46:48 +41s | thequantuminsider_2024_02_19_tu_darmstadt_publish_on_architecture_with_1000_plus_atomic_q_155e1121] Nodes: 0
+[09:46:48 +41s | thequantuminsider_2024_02_19_tu_darmstadt_publish_on_architecture_with_1000_plus_atomic_q_155e1121] Edges: 0
+
+[09:46:48 +41s | thequantuminsider_2024_02_19_tu_darmstadt_publish_on_architecture_with_1000_plus_atomic_q_155e1121] Done. Outputs written to: /home/lv/IDP/idpdeeptech/pipeline/news_outputs/thequantuminsider_2024_02_19_tu_darmstadt_publish_on_architecture_with_1000_plus_atomic_q_155e1121
+[09:46:48 +41s | thequantuminsider_2024_02_19_tu_darmstadt_publish_on_architecture_with_1000_plus_atomic_q_155e1121] Log: /home/lv/IDP/idpdeeptech/pipeline/news_outputs/thequantuminsider_2024_02_19_tu_darmstadt_publish_on_architecture_with_1000_plus_atomic_q_155e1121/run.log
+
+========================================================================
+RUN FINISHED 2026-07-02 09:46:48  (OK)
+Started:     2026-07-02 09:46:07
+Elapsed:     41s
+========================================================================

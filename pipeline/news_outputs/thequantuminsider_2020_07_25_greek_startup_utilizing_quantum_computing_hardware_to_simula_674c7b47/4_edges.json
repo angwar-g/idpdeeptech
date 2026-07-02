@@ -1,0 +1,32 @@
+[
+  {
+    "interaction_phrase": "According to 2018 data from AngelList published at Enterprise Greece",
+    "occurrence_sentence": "According to [2018 data from AngelList published at Enterprise Greece](https://www.enterprisegreece.gov.gr/images/public/The-Greek-Startup-Scene_2018.pdf), a social network site for investors and startups, there were approximately 550 startups and over 2800 investors operating in the country.",
+    "page": 13,
+    "source_actor": "Greece",
+    "source_document": "https://thequantuminsider.com/2020/07/25/greek-startup-utilizing-quantum-computing-hardware-to-simulate-drugs-chemicals-materials-and-other-quantum-systems",
+    "target_actor": "Enterprise Greece",
+    "relation_label": "networking",
+    "relation_label_confidence": "high"
+  },
+  {
+    "interaction_phrase": "the brainchild of ... Dimitris Badounas",
+    "occurrence_sentence": "Founded in Patras, Achaia, the regional capital of western Greece in 2019, PiDust is the brainchild of innovative entrepreneurs Vasilis Armaos, Paraskevas Deligiannis and Dimitris Badounas.",
+    "page": 14,
+    "source_actor": "Dimitris Badounas",
+    "source_document": "https://thequantuminsider.com/2020/07/25/greek-startup-utilizing-quantum-computing-hardware-to-simulate-drugs-chemicals-materials-and-other-quantum-systems",
+    "target_actor": "PiDust",
+    "relation_label": "collaborative_leadership",
+    "relation_label_confidence": "high"
+  },
+  {
+    "interaction_phrase": "published at Enterprise Greece",
+    "occurrence_sentence": "According [2018 data from AngelList published at Enterprise Greece](https://www.enterprisegreece.gov.gr/images/public/The-Greek-Startup-Scene_2018.pdf), a social network site for investors and startups, there were approximately 550 startups and over 2800 investors operating in the country.",
+    "page": 14,
+    "source_actor": "Enterprise Greece",
+    "source_document": "https://thequantuminsider.com/2020/07/25/greek-startup-utilizing-quantum-computing-hardware-to-simulate-drugs-chemicals-materials-and-other-quantum-systems",
+    "target_actor": "Greece",
+    "relation_label": "networking",
+    "relation_label_confidence": "high"
+  }
+]

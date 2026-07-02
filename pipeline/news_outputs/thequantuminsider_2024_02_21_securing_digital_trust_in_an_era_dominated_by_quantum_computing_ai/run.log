@@ -1,0 +1,72 @@
+
+========================================================================
+RUN STARTED  2026-07-02 09:44:33
+site_pipeline.py https://thequantuminsider.com/2024/02/21/securing-digital-trust-in-an-era-dominated-by-quantum-computing-ai/
+========================================================================
+
+[09:44:33 +0s | thequantuminsider_2024_02_21_securing_digital_trust_in_an_era_dominated_by_quantum_computing_ai] === 0 crawl site ===
+[09:44:36 +2s | thequantuminsider_2024_02_21_securing_digital_trust_in_an_era_dominated_by_quantum_computing_ai] [INIT].... → Crawl4AI 0.8.6 
+[09:45:02 +28s | thequantuminsider_2024_02_21_securing_digital_trust_in_an_era_dominated_by_quantum_computing_ai] [ANTIBOT]. ℹ https://thequantuminsid...y-quantum-computing-ai/  | Error: Proxy direct failed: Failed on navigating ACS-GOTO:
+[09:45:02 +28s | thequantuminsider_2024_02_21_securing_digital_trust_in_an_era_dominated_by_quantum_computing_ai] Page.goto: net::ERR_NAME_NOT_RESOLVED at https://thequantuminsider.com/2024/02/21/securing-digital-trust-in-an-era-dominated-by-quantum-computing-ai/
+[09:45:02 +28s | thequantuminsider_2024_02_21_securing_digital_trust_in_an_era_dominated_by_quantum_computing_ai] Call log:
+[09:45:02 +28s | thequantuminsider_2024_02_21_securing_digital_trust_in_an_era_dominated_by_quantum_computing_ai]   - navigating to "https://thequantuminsider.com/2024/02/21/securing-digital-trust-in-an-era-dominated-by-quantum-computing-ai/", waiting until 
+[09:45:02 +28s | thequantuminsider_2024_02_21_securing_digital_trust_in_an_era_dominated_by_quantum_computing_ai] "domcontentloaded"
+ 
+[09:45:02 +28s | thequantuminsider_2024_02_21_securing_digital_trust_in_an_era_dominated_by_quantum_computing_ai] [ERROR]... × https://thequantuminsid...y-quantum-computing-ai/  | Error: Unexpected error in _crawl_web at line 778 in _crawl_web 
+[09:45:02 +28s | thequantuminsider_2024_02_21_securing_digital_trust_in_an_era_dominated_by_quantum_computing_ai] (../../../../../.local/lib/python3.10/site-packages/crawl4ai/async_crawler_strategy.py):
+[09:45:02 +28s | thequantuminsider_2024_02_21_securing_digital_trust_in_an_era_dominated_by_quantum_computing_ai] Error: Failed on navigating ACS-GOTO:
+[09:45:02 +28s | thequantuminsider_2024_02_21_securing_digital_trust_in_an_era_dominated_by_quantum_computing_ai] Page.goto: net::ERR_NAME_NOT_RESOLVED at https://thequantuminsider.com/2024/02/21/securing-digital-trust-in-an-era-dominated-by-quantum-computing-ai/
+[09:45:02 +28s | thequantuminsider_2024_02_21_securing_digital_trust_in_an_era_dominated_by_quantum_computing_ai] Call log:
+[09:45:02 +28s | thequantuminsider_2024_02_21_securing_digital_trust_in_an_era_dominated_by_quantum_computing_ai]   - navigating to "https://thequantuminsider.com/2024/02/21/securing-digital-trust-in-an-era-dominated-by-quantum-computing-ai/", waiting until 
+[09:45:02 +28s | thequantuminsider_2024_02_21_securing_digital_trust_in_an_era_dominated_by_quantum_computing_ai] "domcontentloaded"
+
+
+[09:45:02 +28s | thequantuminsider_2024_02_21_securing_digital_trust_in_an_era_dominated_by_quantum_computing_ai] Code context:
+[09:45:02 +28s | thequantuminsider_2024_02_21_securing_digital_trust_in_an_era_dominated_by_quantum_computing_ai]  773                                   tag="GOTO",
+[09:45:02 +28s | thequantuminsider_2024_02_21_securing_digital_trust_in_an_era_dominated_by_quantum_computing_ai]  774                                   params={"url": url},
+[09:45:02 +28s | thequantuminsider_2024_02_21_securing_digital_trust_in_an_era_dominated_by_quantum_computing_ai]  775                               )
+[09:45:02 +28s | thequantuminsider_2024_02_21_securing_digital_trust_in_an_era_dominated_by_quantum_computing_ai]  776                               response = None
+[09:45:02 +28s | thequantuminsider_2024_02_21_securing_digital_trust_in_an_era_dominated_by_quantum_computing_ai]  777                           else:
+[09:45:02 +28s | thequantuminsider_2024_02_21_securing_digital_trust_in_an_era_dominated_by_quantum_computing_ai]  778 →                             raise RuntimeError(f"Failed on navigating ACS-GOTO:\n{str(e)}")
+[09:45:02 +28s | thequantuminsider_2024_02_21_securing_digital_trust_in_an_era_dominated_by_quantum_computing_ai]  779   
+[09:45:02 +28s | thequantuminsider_2024_02_21_securing_digital_trust_in_an_era_dominated_by_quantum_computing_ai]  780                       # ──────────────────────────────────────────────────────────────
+[09:45:02 +28s | thequantuminsider_2024_02_21_securing_digital_trust_in_an_era_dominated_by_quantum_computing_ai]  781                       # Walk the redirect chain.  Playwright returns only the last
+[09:45:02 +28s | thequantuminsider_2024_02_21_securing_digital_trust_in_an_era_dominated_by_quantum_computing_ai]  782                       # hop, so we trace the `request.redirected_from` links until the
+[09:45:02 +28s | thequantuminsider_2024_02_21_securing_digital_trust_in_an_era_dominated_by_quantum_computing_ai]  783                       # first response that differs from the final one and surface its 
+[09:45:02 +28s | thequantuminsider_2024_02_21_securing_digital_trust_in_an_era_dominated_by_quantum_computing_ai] Saved: crawl_output/45b49be5af_thequantuminsider.com_2024_02_21_securing-digital-trust-in-an-era-dominated-by-quantum-computing-ai.json
+
+[09:45:02 +29s | thequantuminsider_2024_02_21_securing_digital_trust_in_an_era_dominated_by_quantum_computing_ai] === 1 actor extraction ===
+[09:45:03 +29s | thequantuminsider_2024_02_21_securing_digital_trust_in_an_era_dominated_by_quantum_computing_ai] Reading page (1/1): https://thequantuminsider.com/2024/02/21/securing-digital-trust-in-an-era-dominated-by-quantum-computing-ai
+[09:45:03 +29s | thequantuminsider_2024_02_21_securing_digital_trust_in_an_era_dominated_by_quantum_computing_ai] Extracting actors: https://thequantuminsider.com/2024/02/21/securing-digital-trust-in-an-era-dominated-by-quantum-computing-ai (1/1), chunk 1/1
+[09:45:13 +39s | thequantuminsider_2024_02_21_securing_digital_trust_in_an_era_dominated_by_quantum_computing_ai] Model call failed for https://thequantuminsider.com/2024/02/21/securing-digital-trust-in-an-era-dominated-by-quantum-computing-ai chunk 1: Cannot connect to host api.cloudflare.com:443 ssl:default [Temporary failure in name resolution]
+[09:45:13 +39s | thequantuminsider_2024_02_21_securing_digital_trust_in_an_era_dominated_by_quantum_computing_ai] Saved 1_actor_results.json with 0 extracted records
+
+[09:45:13 +39s | thequantuminsider_2024_02_21_securing_digital_trust_in_an_era_dominated_by_quantum_computing_ai] === 2 clean actors ===
+[09:45:13 +39s | thequantuminsider_2024_02_21_securing_digital_trust_in_an_era_dominated_by_quantum_computing_ai] Loaded 0 extracted records
+[09:45:13 +39s | thequantuminsider_2024_02_21_securing_digital_trust_in_an_era_dominated_by_quantum_computing_ai] Saved 2_actor_nodes.json with 0 canonical actor nodes
+
+[09:45:13 +39s | thequantuminsider_2024_02_21_securing_digital_trust_in_an_era_dominated_by_quantum_computing_ai] === 3 interaction extraction ===
+[09:45:13 +40s | thequantuminsider_2024_02_21_securing_digital_trust_in_an_era_dominated_by_quantum_computing_ai] No valid actors found, skipping.
+
+[09:45:13 +40s | thequantuminsider_2024_02_21_securing_digital_trust_in_an_era_dominated_by_quantum_computing_ai] === 4 clean interactions ===
+[09:45:13 +40s | thequantuminsider_2024_02_21_securing_digital_trust_in_an_era_dominated_by_quantum_computing_ai] No input (3_interaction_results.json missing -- upstream produced no edges). Wrote empty 4_edges.json.
+
+[09:45:13 +40s | thequantuminsider_2024_02_21_securing_digital_trust_in_an_era_dominated_by_quantum_computing_ai] === 5 helix enrichment ===
+[09:45:13 +40s | thequantuminsider_2024_02_21_securing_digital_trust_in_an_era_dominated_by_quantum_computing_ai] Wrote 5_nodes.json (0 actors)
+[09:45:13 +40s | thequantuminsider_2024_02_21_securing_digital_trust_in_an_era_dominated_by_quantum_computing_ai] Wrote 5_edges.json (0 interactions)
+[09:45:13 +40s | thequantuminsider_2024_02_21_securing_digital_trust_in_an_era_dominated_by_quantum_computing_ai] Actor helix counts: {}
+[09:45:13 +40s | thequantuminsider_2024_02_21_securing_digital_trust_in_an_era_dominated_by_quantum_computing_ai] Functional-space counts: {}
+
+[09:45:13 +40s | thequantuminsider_2024_02_21_securing_digital_trust_in_an_era_dominated_by_quantum_computing_ai] === 6 network visualisation ===
+[09:45:14 +41s | thequantuminsider_2024_02_21_securing_digital_trust_in_an_era_dominated_by_quantum_computing_ai] Wrote quantum_network.html
+[09:45:14 +41s | thequantuminsider_2024_02_21_securing_digital_trust_in_an_era_dominated_by_quantum_computing_ai] Nodes: 0
+[09:45:14 +41s | thequantuminsider_2024_02_21_securing_digital_trust_in_an_era_dominated_by_quantum_computing_ai] Edges: 0
+
+[09:45:14 +41s | thequantuminsider_2024_02_21_securing_digital_trust_in_an_era_dominated_by_quantum_computing_ai] Done. Outputs written to: /home/lv/IDP/idpdeeptech/pipeline/news_outputs/thequantuminsider_2024_02_21_securing_digital_trust_in_an_era_dominated_by_quantum_computing_ai
+[09:45:14 +41s | thequantuminsider_2024_02_21_securing_digital_trust_in_an_era_dominated_by_quantum_computing_ai] Log: /home/lv/IDP/idpdeeptech/pipeline/news_outputs/thequantuminsider_2024_02_21_securing_digital_trust_in_an_era_dominated_by_quantum_computing_ai/run.log
+
+========================================================================
+RUN FINISHED 2026-07-02 09:45:14  (OK)
+Started:     2026-07-02 09:44:33
+Elapsed:     41s
+========================================================================

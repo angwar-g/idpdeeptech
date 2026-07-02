@@ -1,0 +1,792 @@
+[
+  {
+    "source_actor": "Amazon Web Services (AWS)",
+    "target_actor": "Amazon",
+    "interaction_phrase": "launched in 2019 by Amazon Web Services (AWS)",
+    "occurrence_sentence": "[Amazon Braket](https://aws.amazon.com/), launched in 2019 by Amazon Web Services (AWS), is a fully managed quantum computing service that provides researchers, developers, and enterprises with unified, on-demand access to a broad array of quantum hardware technologies and simulation tools.",
+    "source_document": "https://thequantuminsider.com/2022/09/05/quantum-computing-companies-ultimate-list-for-2022",
+    "page": 15,
+    "relation_label": "collaborative_leadership",
+    "relation_label_confidence": "high"
+  },
+  {
+    "source_actor": "IonQ",
+    "target_actor": "Amazon",
+    "interaction_phrase": "major cloud services like Amazon Braket",
+    "occurrence_sentence": "IonQ is a public quantum computing company founded in 2015 (with a heritage spanning decades), specializing in trapped ion quantum computers and offers a full-stack quantum platform accessible via major cloud services like Amazon Braket and its own IonQ Quantum Cloud.",
+    "source_document": "https://thequantuminsider.com/2022/09/05/quantum-computing-companies-ultimate-list-for-2022",
+    "page": 22,
+    "relation_label": "collaborative_leadership",
+    "relation_label_confidence": "high"
+  },
+  {
+    "source_actor": "IonQ",
+    "target_actor": "Amazon",
+    "interaction_phrase": "Amazon Braket",
+    "occurrence_sentence": "IonQ is a public quantum computing company founded in 2015 (with a heritage spanning decades), specializing in trapped ion quantum computers and offers a full-stack quantum platform accessible via major cloud services like Amazon Braket and its own IonQ Quantum Cloud.",
+    "source_document": "https://thequantuminsider.com/2022/09/05/quantum-computing-companies-ultimate-list-for-2022",
+    "page": 23,
+    "relation_label": "collaborative_leadership",
+    "relation_label_confidence": "high"
+  },
+  {
+    "source_actor": "IonQ",
+    "target_actor": "Photonic",
+    "interaction_phrase": "photonic interconnects",
+    "occurrence_sentence": "IonQ is pioneering quantum networking through its photonic interconnects, enabling entanglement between multiple QPUs, and recently acquired Qubitekk, a leader in quantum communications.",
+    "source_document": "https://thequantuminsider.com/2022/09/05/quantum-computing-companies-ultimate-list-for-2022",
+    "page": 24,
+    "relation_label": "networking",
+    "relation_label_confidence": "high"
+  },
+  {
+    "source_actor": "IonQ",
+    "target_actor": "Dell",
+    "interaction_phrase": "partner to test classical-quantum hybrid system",
+    "occurrence_sentence": "The company has secured major enterprise and government partnerships, [including Dell](https://thequantuminsider.com/2021/11/24/dell-and-ionq-partner-to-test-classical-quantum-hybrid-system/), Airbus, the Naval Research Lab, and DESY, while operating out of multiple data centers in College Park (MD), Seattle, and Basel.",
+    "source_document": "https://thequantuminsider.com/2022/09/05/quantum-computing-companies-ultimate-list-for-2022",
+    "page": 25,
+    "relation_label": "networking",
+    "relation_label_confidence": "high"
+  },
+  {
+    "source_actor": "Google",
+    "target_actor": "NASA",
+    "interaction_phrase": "a collaboration between Google, NASA, and the Universities Space Research Association",
+    "occurrence_sentence": "Founded in 2013 as a collaboration between Google, NASA, and the Universities Space Research Association, the Quantum Artificial Intelligence Lab quickly became a hub for innovation.",
+    "source_document": "https://thequantuminsider.com/2022/09/05/quantum-computing-companies-ultimate-list-for-2022",
+    "page": 26,
+    "relation_label": "networking",
+    "relation_label_confidence": "medium"
+  },
+  {
+    "source_actor": "Google",
+    "target_actor": "Google Quantum AI",
+    "interaction_phrase": "Founded in 2013 as a collaboration between Google, NASA, and the Universities",
+    "occurrence_sentence": "Founded in 2013 as a collaboration between Google, NASA, and the Universities Space Research Association, the Quantum Artificial Intelligence Lab quickly became a hub for innovation.",
+    "source_document": "https://thequantuminsider.com/2022/09/05/quantum-computing-companies-ultimate-list-for-2022",
+    "page": 26,
+    "relation_label": "networking",
+    "relation_label_confidence": "medium"
+  },
+  {
+    "source_actor": "NASA",
+    "target_actor": "Google Quantum AI",
+    "interaction_phrase": "Founded in 2013 as a collaboration between Google, NASA, and the Universities",
+    "occurrence_sentence": "Founded in 2013 as a collaboration between Google, NASA, and the Universities Space Research Association, the Quantum Artificial Intelligence Lab quickly became a hub for innovation.",
+    "source_document": "https://thequantuminsider.com/2022/09/05/quantum-computing-companies-ultimate-list-for-2022",
+    "page": 26,
+    "relation_label": "networking",
+    "relation_label_confidence": "medium"
+  },
+  {
+    "source_actor": "Google",
+    "target_actor": "Google Quantum AI",
+    "interaction_phrase": "Google's",
+    "occurrence_sentence": "On the software side, Google has created a rich ecosystem for quantum algorithm development.",
+    "source_document": "https://thequantuminsider.com/2022/09/05/quantum-computing-companies-ultimate-list-for-2022",
+    "page": 27,
+    "relation_label": "collaborative_leadership",
+    "relation_label_confidence": "high"
+  },
+  {
+    "source_actor": "Google",
+    "target_actor": "NASA",
+    "interaction_phrase": "collaboration between Google, NASA, and the Universities Space Research Association",
+    "occurrence_sentence": "Founded in 2013 as a collaboration between Google, NASA, and the Universities Space Research Association, the Quantum Artificial Intelligence Lab quickly became a hub for innovation.",
+    "source_document": "https://thequantuminsider.com/2022/09/05/quantum-computing-companies-ultimate-list-for-2022",
+    "page": 27,
+    "relation_label": "networking",
+    "relation_label_confidence": "medium"
+  },
+  {
+    "source_actor": "NASA",
+    "target_actor": "Google Quantum AI",
+    "interaction_phrase": "collaboration between Google, NASA, and the Universities Space Research Association",
+    "occurrence_sentence": "Founded in 2013 as a collaboration between Google, NASA, and the Universities Space Research Association, the Quantum Artificial Intelligence Lab quickly became a hub for innovation.",
+    "source_document": "https://thequantuminsider.com/2022/09/05/quantum-computing-companies-ultimate-list-for-2022",
+    "page": 27,
+    "relation_label": "networking",
+    "relation_label_confidence": "medium"
+  },
+  {
+    "interaction_phrase": "collaboration with NVIDIA",
+    "occurrence_sentence": "In collaboration with NVIDIA, Google simulates 40-qubit systems using more than 1,000 H100 GPUs, reinforcing its commitment to integrated classical-quantum processing.",
+    "page": 28,
+    "source_actor": "Google Quantum AI",
+    "source_document": "https://thequantuminsider.com/2022/09/05/quantum-computing-companies-ultimate-list-for-2022",
+    "target_actor": "NVIDIA",
+    "relation_label": "networking",
+    "relation_label_confidence": "high"
+  },
+  {
+    "source_actor": "Google Quantum AI",
+    "target_actor": "NVIDIA",
+    "interaction_phrase": "In [collaboration with NVIDIA]",
+    "occurrence_sentence": "In [collaboration with NVIDIA](https://thequantuminsider.com/2024/11/19/nvidia-accelerates-google-quantum-ai-processor-design-with-simulation-of-quantum-device-physics/), Google simulates 40-qubit systems using more than 1,000 H100 GPUs, reinforcing its commitment to integrated classical-quantum processing.",
+    "source_document": "https://thequantuminsider.com/2022/09/05/quantum-computing-companies-ultimate-list-for-2022",
+    "page": 29,
+    "relation_label": "networking",
+    "relation_label_confidence": "high"
+  },
+  {
+    "source_actor": "Microsoft",
+    "target_actor": "Julie Love",
+    "interaction_phrase": "Under the leadership of Julie Love",
+    "occurrence_sentence": "Under the leadership of Julie Love, Partner and Product Leader for Quantum Computing, Microsoft's quantum strategy reflects both patience and persistence, focusing on high-risk, high-reward innovation to ultimately achieve practical quantum advantage through topological fault-tolerant architectures.",
+    "source_document": "https://thequantuminsider.com/2022/09/05/quantum-computing-companies-ultimate-list-for-2022",
+    "page": 32,
+    "relation_label": "networking",
+    "relation_label_confidence": "high"
+  },
+  {
+    "source_actor": "NVIDIA",
+    "target_actor": "Photonic",
+    "interaction_phrase": "partners with leading hardware makers and labs across ... photonic",
+    "occurrence_sentence": "NVIDIA's ecosystem is intentionally QPU-agnostic. The company partners with leading hardware makers and labs across trapped-ion, superconducting, neutral-atom, photonic, and annealing modalities, positioning its stack as the common layer for development, scheduling, calibration assistance, and large-scale simulation.",
+    "source_document": "https://thequantuminsider.com/2022/09/05/quantum-computing-companies-ultimate-list-for-2022",
+    "page": 33,
+    "relation_label": "networking",
+    "relation_label_confidence": "high"
+  },
+  {
+    "source_actor": "NVIDIA",
+    "target_actor": "Photonic",
+    "interaction_phrase": "partners with leading hardware makers and labs across ... photonic",
+    "occurrence_sentence": "NVIDIA's ecosystem is intentionally QPU-agnostic. The company partners with leading hardware makers and labs across trapped-ion, superconducting, neutral-atom, photonic, and annealing modalities, positioning its stack as the common layer for development, scheduling, calibration assistance, and large-scale simulation.",
+    "source_document": "https://thequantuminsider.com/2022/09/05/quantum-computing-companies-ultimate-list-for-2022",
+    "page": 34,
+    "relation_label": "networking",
+    "relation_label_confidence": "high"
+  },
+  {
+    "source_actor": "Quantum Computing Inc (QCI)",
+    "target_actor": "millionways",
+    "interaction_phrase": "collaboration with millionways",
+    "occurrence_sentence": "QCI maintains a small but growing network of partnerships and investors, including a collaboration with millionways to integrate AI sensing algorithms with QCI's photonic quantum computing capabilities.",
+    "source_document": "https://thequantuminsider.com/2022/09/05/quantum-computing-companies-ultimate-list-for-2022",
+    "page": 36,
+    "relation_label": "networking",
+    "relation_label_confidence": "high"
+  },
+  {
+    "source_actor": "Rigetti",
+    "target_actor": "Riverlane",
+    "interaction_phrase": "In collaboration with Riverlane",
+    "occurrence_sentence": "In collaboration with Riverlane, Rigetti achieved a breakthrough in real-time, low-latency quantum error correction in October 2024.",
+    "source_document": "https://thequantuminsider.com/2022/09/05/quantum-computing-companies-ultimate-list-for-2022",
+    "page": 37,
+    "relation_label": "networking",
+    "relation_label_confidence": "high"
+  },
+  {
+    "source_actor": "Rigetti",
+    "target_actor": "Riverlane",
+    "interaction_phrase": "In collaboration with Riverlane",
+    "occurrence_sentence": "In collaboration with Riverlane, Rigetti achieved a breakthrough in real-time, low-latency quantum error correction in October 2024.",
+    "source_document": "https://thequantuminsider.com/2022/09/05/quantum-computing-companies-ultimate-list-for-2022",
+    "page": 38,
+    "relation_label": "networking",
+    "relation_label_confidence": "high"
+  },
+  {
+    "source_actor": "Alpine Quantum Technologies (AQT)",
+    "target_actor": "European Quantum Industry Consortium (QuIC)",
+    "interaction_phrase": "is a member of",
+    "occurrence_sentence": "AQT is a member of the European Quantum Industry Consortium (QuIC) and maintains active partnerships with three organizations and three research centers.",
+    "source_document": "https://thequantuminsider.com/2022/09/05/quantum-computing-companies-ultimate-list-for-2022",
+    "page": 46,
+    "relation_label": "collaborative_leadership",
+    "relation_label_confidence": "high"
+  },
+  {
+    "source_actor": "Atlantic Quantum",
+    "target_actor": "Riverlane",
+    "interaction_phrase": "partnerships with three organizations and one university",
+    "occurrence_sentence": "With a small but highly specialized team, Atlantic Quantum maintains [partnerships with three organizations and one university.](https://thequantuminsider.com/2024/07/18/riverlane-partners-with-atlantic-quantum-to-advance-quantum-error-correction-on-fluxonium-architecture/)",
+    "source_document": "https://thequantuminsider.com/2022/09/05/quantum-computing-companies-ultimate-list-for-2022",
+    "page": 49,
+    "relation_label": "collaborative_leadership",
+    "relation_label_confidence": "high"
+  },
+  {
+    "interaction_phrase": "BosonQ Psi (BQP)",
+    "occurrence_sentence": "[BosonQ Psi (BQP)](https://www.bqpsim.com/) is a private enterprise software company founded in 2020 that is leveraging quantum computing to transform simulation-based engineering.",
+    "page": 53,
+    "source_actor": "BosonQ Psi",
+    "source_document": "https://thequantuminsider.com/2022/09/05/quantum-computing-companies-ultimate-list-for-2022",
+    "target_actor": "BQP",
+    "relation_label": "collaborative_leadership",
+    "relation_label_confidence": "high"
+  },
+  {
+    "source_actor": "Classiq",
+    "target_actor": "Q-CTRL",
+    "interaction_phrase": "collaboration with Q-CTRL",
+    "occurrence_sentence": "In November 2022, Classiq announced a collaboration with Q-CTRL to deliver an end-to-end development environment for quantum algorithms.",
+    "source_document": "https://thequantuminsider.com/2022/09/05/quantum-computing-companies-ultimate-list-for-2022",
+    "page": 55,
+    "relation_label": "collaborative_leadership",
+    "relation_label_confidence": "high"
+  },
+  {
+    "source_actor": "Classiq",
+    "target_actor": "Q-CTRL",
+    "interaction_phrase": "collaboration with Q-CTRL",
+    "occurrence_sentence": "In November 2022, Classiq announced a collaboration with Q-CTRL to deliver an end-to-end development environment for quantum algorithms.",
+    "source_document": "https://thequantuminsider.com/2022/09/05/quantum-computing-companies-ultimate-list-for-2022",
+    "page": 56,
+    "relation_label": "collaborative_leadership",
+    "relation_label_confidence": "high"
+  },
+  {
+    "interaction_phrase": "including QInnovision, Le Lab Quantique, and Les Maisons du Quantique",
+    "occurrence_sentence": "It is also a member of leading quantum consortia including QInnovision, Le Lab Quantique, and Les Maisons du Quantique, reflecting its deep integration in both commercial and academic quantum communities.",
+    "page": 57,
+    "source_actor": "QInnovision",
+    "source_document": "https://thequantuminsider.com/2022/09/05/quantum-computing-companies-ultimate-list-for-2022",
+    "target_actor": "Les Maisons du Quantique",
+    "relation_label": "networking",
+    "relation_label_confidence": "high"
+  },
+  {
+    "interaction_phrase": "including QInnovision, Le Lab Quantique, and Les Maisons du Quantique",
+    "occurrence_sentence": "It is also a member of leading quantum consortia including QInnovision, Le Lab Quantique, and Les Maisons du Quantique, reflecting its deep integration in both commercial and academic quantum communities.",
+    "page": 57,
+    "source_actor": "QInnovision",
+    "source_document": "https://thequantuminsider.com/2022/09/05/quantum-computing-companies-ultimate-list-for-2022",
+    "target_actor": "Le Lab Quantique",
+    "relation_label": "networking",
+    "relation_label_confidence": "high"
+  },
+  {
+    "interaction_phrase": "including QInnovision, Le Lab Quantique, and Les Maisons du Quantique",
+    "occurrence_sentence": "It is also a member of leading quantum consortia including QInnovision, Le Lab Quantique, and Les Maisons du Quantique, reflecting its deep integration in both commercial and academic quantum communities.",
+    "page": 57,
+    "source_actor": "Le Lab Quantique",
+    "source_document": "https://thequantuminsider.com/2022/09/05/quantum-computing-companies-ultimate-list-for-2022",
+    "target_actor": "Les Maisons du Quantique",
+    "relation_label": "networking",
+    "relation_label_confidence": "high"
+  },
+  {
+    "source_actor": "eleQtron",
+    "target_actor": "University of Siegen",
+    "interaction_phrase": "Founded in 2020 as a spin-off from",
+    "occurrence_sentence": "Founded in 2020 as a spin-off from the Chair of Quantum Optics at the University of Siegen, eleQtron is a private German company developing ion-trap quantum computers with a focus on commercial deployment.",
+    "source_document": "https://thequantuminsider.com/2022/09/05/quantum-computing-companies-ultimate-list-for-2022",
+    "page": 65,
+    "relation_label": "collaborative_leadership",
+    "relation_label_confidence": "high"
+  },
+  {
+    "source_actor": "eleQtron",
+    "target_actor": "University of Siegen",
+    "interaction_phrase": "spin-off from the Chair of Quantum Optics at the University of Siegen",
+    "occurrence_sentence": "Founded in 2020 as a spin-off from the Chair of Quantum Optics at the University of Siegen, eleQtron is a private German company developing ion-trap quantum computers with a focus on commercial deployment.",
+    "source_document": "https://thequantuminsider.com/2022/09/05/quantum-computing-companies-ultimate-list-for-2022",
+    "page": 66,
+    "relation_label": "collaborative_leadership",
+    "relation_label_confidence": "high"
+  },
+  {
+    "source_actor": "eleQtron",
+    "target_actor": "German Aerospace Center (DLR)",
+    "interaction_phrase": "funded by the German Aerospace Center",
+    "occurrence_sentence": "As part of a €208.5 million initiative funded by the German Aerospace Center (DLR), eleQtron is one of five sub-projects tasked with advancing ion-trap processor development over four years, alongside companies like NXP Semiconductors Germany and QUDORA Technologies.",
+    "source_document": "https://thequantuminsider.com/2022/09/05/quantum-computing-companies-ultimate-list-for-2022",
+    "page": 66,
+    "relation_label": "collaborative_leadership",
+    "relation_label_confidence": "high"
+  },
+  {
+    "source_actor": "eleQtron",
+    "target_actor": "Quantum Business Network (QBN)",
+    "interaction_phrase": "member of both the Quantum Business Network",
+    "occurrence_sentence": "With a talented team and active collaborations with five organizations, one university, two research centers, and three investors, eleQtron is a member of both the Quantum Business Network (QBN) and QuIC.",
+    "source_document": "https://thequantuminsider.com/2022/09/05/quantum-computing-companies-ultimate-list-for-2022",
+    "page": 66,
+    "relation_label": "collaborative_leadership",
+    "relation_label_confidence": "high"
+  },
+  {
+    "source_actor": "eleQtron",
+    "target_actor": "European Quantum Industry Consortium (QuIC)",
+    "interaction_phrase": "member of both ... QuIC",
+    "occurrence_sentence": "With a talented team and active collaborations with five organizations, one university, two research centers, and three investors, eleQtron is a member of both the Quantum Business Network (QBN) and QuIC.",
+    "source_document": "https://thequantuminsider.com/2022/09/05/quantum-computing-companies-ultimate-list-for-2022",
+    "page": 66,
+    "relation_label": "collaborative_leadership",
+    "relation_label_confidence": "high"
+  },
+  {
+    "source_actor": "eleQtron",
+    "target_actor": "Quantum Business Network (QBN)",
+    "interaction_phrase": "is a member of",
+    "occurrence_sentence": "eleQtron is a member of both the Quantum Business Network (QBN) and QuIC.",
+    "source_document": "https://thequantuminsider.com/2022/09/05/quantum-computing-companies-ultimate-list-for-2022",
+    "page": 67,
+    "relation_label": "networking",
+    "relation_label_confidence": "high"
+  },
+  {
+    "source_actor": "eleQtron",
+    "target_actor": "European Quantum Industry Consortium (QuIC)",
+    "interaction_phrase": "is a member of",
+    "occurrence_sentence": "eleQtron is a member of both the Quantum Business Network (QBN) and QuIC.",
+    "source_document": "https://thequantuminsider.com/2022/09/05/quantum-computing-companies-ultimate-list-for-2022",
+    "page": 67,
+    "relation_label": "networking",
+    "relation_label_confidence": "high"
+  },
+  {
+    "source_actor": "HQS Quantum Simulations",
+    "target_actor": "QuantumBW",
+    "interaction_phrase": "is a member of the QuantumBW",
+    "occurrence_sentence": "HQS Quantum Simulations is a member of the QuantumBW and PlanQK consortia and maintains partnerships with two enterprise users and one organizational partner.",
+    "source_document": "https://thequantuminsider.com/2022/09/05/quantum-computing-companies-ultimate-list-for-2022",
+    "page": 72,
+    "relation_label": "collaborative_leadership",
+    "relation_label_confidence": "high"
+  },
+  {
+    "source_actor": "HQS Quantum Simulations",
+    "target_actor": "QuantumBW",
+    "interaction_phrase": "is a member of the QuantumBW",
+    "occurrence_sentence": "HQS Quantum Simulations is a member of the QuantumBW and PlanQK consortia and maintains partnerships with two enterprise users and one organizational partner.",
+    "source_document": "https://thequantuminsider.com/2022/09/05/quantum-computing-companies-ultimate-list-for-2022",
+    "page": 73,
+    "relation_label": "collaborative_leadership",
+    "relation_label_confidence": "high"
+  },
+  {
+    "interaction_phrase": "is a member of",
+    "occurrence_sentence": "infinityQ is a member of major quantum and emerging tech consortia including QInnovision and the Quantum Economic Development Consortium (QED-C).",
+    "page": 74,
+    "source_actor": "InfinityQ",
+    "source_document": "https://thequantuminsider.com/2022/09/05/quantum-computing-companies-ultimate-list-for-2022",
+    "target_actor": "QInnovision",
+    "relation_label": "networking",
+    "relation_label_confidence": "high"
+  },
+  {
+    "source_actor": "InfinityQ",
+    "target_actor": "QInnovision",
+    "interaction_phrase": "including QInnovision",
+    "occurrence_sentence": "infinityQ is a member of major quantum and emerging tech consortia including QInnovision and the [Quantum Economic Development Consortium](https://thequantuminsider.com/2021/03/17/qed-c-the-american-quantum-industrys-collective-voice/) (QED-C).",
+    "source_document": "https://thequantuminsider.com/2022/09/05/quantum-computing-companies-ultimate-list-for-2022",
+    "page": 75,
+    "relation_label": "networking",
+    "relation_label_confidence": "high"
+  },
+  {
+    "source_actor": "KETS",
+    "target_actor": "European Quantum Industry Consortium (QuIC)",
+    "interaction_phrase": "is a member of major consortia including ... QuIC",
+    "occurrence_sentence": "KETS is a member of major consortia including UKQuantum and QuIC, reflecting its key role in the European and UK quantum ecosystems.",
+    "source_document": "https://thequantuminsider.com/2022/09/05/quantum-computing-companies-ultimate-list-for-2022",
+    "page": 78,
+    "relation_label": "networking",
+    "relation_label_confidence": "high"
+  },
+  {
+    "source_actor": "KETS",
+    "target_actor": "European Quantum Industry Consortium (QuIC)",
+    "interaction_phrase": "including UKQuantum and QuIC",
+    "occurrence_sentence": "KETS is a member of major consortia including UKQuantum and QuIC, reflecting its key role in the European and UK quantum ecosystems.",
+    "source_document": "https://thequantuminsider.com/2022/09/05/quantum-computing-companies-ultimate-list-for-2022",
+    "page": 79,
+    "relation_label": "networking",
+    "relation_label_confidence": "high"
+  },
+  {
+    "source_actor": "Kiutra",
+    "target_actor": "Quantum Business Network (QBN)",
+    "interaction_phrase": "As a member of the Quantum Business Network (QBN)",
+    "occurrence_sentence": "As a member of the Quantum Business Network (QBN), Kiutra is part of Europe's growing ecosystem of quantum hardware suppliers.",
+    "source_document": "https://thequantuminsider.com/2022/09/05/quantum-computing-companies-ultimate-list-for-2022",
+    "page": 79,
+    "relation_label": "networking",
+    "relation_label_confidence": "high"
+  },
+  {
+    "source_actor": "Kiutra",
+    "target_actor": "Quantum Business Network (QBN)",
+    "interaction_phrase": "As a member of the Quantum Business Network (QBN)",
+    "occurrence_sentence": "As a member of the Quantum Business Network (QBN), Kiutra is part of Europe's growing ecosystem of quantum hardware suppliers.",
+    "source_document": "https://thequantuminsider.com/2022/09/05/quantum-computing-companies-ultimate-list-for-2022",
+    "page": 80,
+    "relation_label": "networking",
+    "relation_label_confidence": "high"
+  },
+  {
+    "source_actor": "Nord Quantique",
+    "target_actor": "C2MI",
+    "interaction_phrase": "partnered in October 2024 with C2MI",
+    "occurrence_sentence": "To support chip production and growth, [the company partnered in October 2024 with C2MI in Quebec and NY CREATES in New York](https://thequantuminsider.com/2024/10/23/nord-quantique-secures-semiconductor-supply-chain-through-two-new-partnerships/), securing a robust supply chain for its superconducting and CMOS-based qubit fabrication.",
+    "source_document": "https://thequantuminsider.com/2022/09/05/quantum-computing-companies-ultimate-list-for-2022",
+    "page": 83,
+    "relation_label": "collaborative_leadership",
+    "relation_label_confidence": "high"
+  },
+  {
+    "source_actor": "ORCA Computing",
+    "target_actor": "UK Ministry of Defence",
+    "interaction_phrase": "partnered with the UK Ministry of Defence",
+    "occurrence_sentence": "ORCA is also deeply embedded in the UK's national quantum strategy. In 2022, it partnered with the UK Ministry of Defence to explore photonic quantum computing for defense applications.",
+    "source_document": "https://thequantuminsider.com/2022/09/05/quantum-computing-companies-ultimate-list-for-2022",
+    "page": 84,
+    "relation_label": "networking",
+    "relation_label_confidence": "high"
+  },
+  {
+    "source_actor": "Photonic",
+    "target_actor": "Microsoft",
+    "interaction_phrase": "in partnership with Microsoft",
+    "occurrence_sentence": "In partnership with Microsoft, Photonic is building a multi-stage quantum network architecture.",
+    "source_document": "https://thequantuminsider.com/2022/09/05/quantum-computing-companies-ultimate-list-for-2022",
+    "page": 89,
+    "relation_label": "networking",
+    "relation_label_confidence": "high"
+  },
+  {
+    "source_actor": "Microsoft",
+    "target_actor": "Photonic",
+    "interaction_phrase": "In partnership with Microsoft",
+    "occurrence_sentence": "In partnership with Microsoft, Photonic is building a multi-stage quantum network architecture.",
+    "source_document": "https://thequantuminsider.com/2022/09/05/quantum-computing-companies-ultimate-list-for-2022",
+    "page": 90,
+    "relation_label": "networking",
+    "relation_label_confidence": "high"
+  },
+  {
+    "source_actor": "PsiQuantum",
+    "target_actor": "Microsoft",
+    "interaction_phrase": "partnered with Microsoft",
+    "occurrence_sentence": "PsiQuantum has also partnered with Microsoft, the US DOE, and Griffith University to scale its cryogenic infrastructure, software stack, and testing labs.",
+    "source_document": "https://thequantuminsider.com/2022/09/05/quantum-computing-companies-ultimate-list-for-2022",
+    "page": 94,
+    "relation_label": "technology_transfer",
+    "relation_label_confidence": "high"
+  },
+  {
+    "source_actor": "QC Ware",
+    "target_actor": "QED-C",
+    "interaction_phrase": "active member of QED-C",
+    "occurrence_sentence": "QC Ware operates in close collaboration with industry partners and investors and is an active member of QED-C, Le Lab Quantique, and Les Maisons du Quantique, positioning itself at the forefront of applied quantum development for real-world use cases.",
+    "source_document": "https://thequantuminsider.com/2022/09/05/quantum-computing-companies-ultimate-list-for-2022",
+    "page": 95,
+    "relation_label": "networking",
+    "relation_label_confidence": "high"
+  },
+  {
+    "source_actor": "QC Ware",
+    "target_actor": "Le Lab Quantique",
+    "interaction_phrase": "active member of Le Lab Quantique",
+    "occurrence_sentence": "QC Ware operates in close collaboration with industry partners and investors and is an active member of QED-C, Le Lab Quantique, and Les Maisons du Quantique, positioning itself at the forefront of applied quantum development for real-world use cases.",
+    "source_document": "https://thequantuminsider.com/2022/09/05/quantum-computing-companies-ultimate-list-for-2022",
+    "page": 95,
+    "relation_label": "networking",
+    "relation_label_confidence": "high"
+  },
+  {
+    "source_actor": "QC Ware",
+    "target_actor": "Les Maisons du Quantique",
+    "interaction_phrase": "active member of Les Maisons du Quantique",
+    "occurrence_sentence": "QC Ware operates in close collaboration with industry partners and investors and is an active member of QED-C, Le Lab Quantique, and Les Maisons du Quantique, positioning itself at the forefront of applied quantum development for real-world use cases.",
+    "source_document": "https://thequantuminsider.com/2022/09/05/quantum-computing-companies-ultimate-list-for-2022",
+    "page": 95,
+    "relation_label": "networking",
+    "relation_label_confidence": "high"
+  },
+  {
+    "source_actor": "QC Ware",
+    "target_actor": "QED-C",
+    "interaction_phrase": "active member of QED-C",
+    "occurrence_sentence": "QC Ware operates in close collaboration with industry partners and investors and is an active member of QED-C, Le Lab Quantique, and Les Maisons du Quantique, positioning itself at the forefront of applied quantum development for real-world use cases.",
+    "source_document": "https://thequantuminsider.com/2022/09/05/quantum-computing-companies-ultimate-list-for-2022",
+    "page": 96,
+    "relation_label": "networking",
+    "relation_label_confidence": "high"
+  },
+  {
+    "source_actor": "QC Ware",
+    "target_actor": "Le Lab Quantique",
+    "interaction_phrase": "active member of Le Lab Quantique",
+    "occurrence_sentence": "QC Ware operates in close collaboration with industry partners and investors and is an active member of QED-C, Le Lab Quantique, and Les Maisons du Quantique, positioning itself at the forefront of applied quantum development for real-world use cases.",
+    "source_document": "https://thequantuminsider.com/2022/09/05/quantum-computing-companies-ultimate-list-for-2022",
+    "page": 96,
+    "relation_label": "networking",
+    "relation_label_confidence": "high"
+  },
+  {
+    "source_actor": "QC Ware",
+    "target_actor": "Les Maisons du Quantique",
+    "interaction_phrase": "active member of Les Maisons du Quantique",
+    "occurrence_sentence": "QC Ware operates in close collaboration with industry partners and investors and is an active member of QED-C, Le Lab Quantique, and Les Maisons du Quantique, positioning itself at the forefront of applied quantum development for real-world use cases.",
+    "source_document": "https://thequantuminsider.com/2022/09/05/quantum-computing-companies-ultimate-list-for-2022",
+    "page": 96,
+    "relation_label": "networking",
+    "relation_label_confidence": "high"
+  },
+  {
+    "source_actor": "Qruise",
+    "target_actor": "Forschungszentrum Jülich",
+    "interaction_phrase": "spinoff from Forschungszentrum Jülich",
+    "occurrence_sentence": "Founded in 2021, Qruise is a spinoff from Forschungszentrum Jülich and develops machine learning software to support scientists and researchers in the calibration, optimization, and characterization of quantum devices , particularly noisy intermediate-scale quantum (NISQ) systems.",
+    "source_document": "https://thequantuminsider.com/2022/09/05/quantum-computing-companies-ultimate-list-for-2022",
+    "page": 96,
+    "relation_label": "collaborative_leadership",
+    "relation_label_confidence": "high"
+  },
+  {
+    "source_actor": "Qruise",
+    "target_actor": "Quantum Machines",
+    "interaction_phrase": "partners with leading hardware firms like Quantum Machines",
+    "occurrence_sentence": "Qruise also partners with leading hardware firms like Quantum Machines and Zurich Instruments, integrating its software with advanced control systems.",
+    "source_document": "https://thequantuminsider.com/2022/09/05/quantum-computing-companies-ultimate-list-for-2022",
+    "page": 96,
+    "relation_label": "networking",
+    "relation_label_confidence": "high"
+  },
+  {
+    "source_actor": "Qruise",
+    "target_actor": "Forschungszentrum Jülich",
+    "interaction_phrase": "spinoff from",
+    "occurrence_sentence": "Founded in 2021, Qruise is a spinoff from Forschungszentrum Jülich and develops machine learning software to support scientists and researchers in the calibration, optimization, and characterization of quantum devices , particularly noisy intermediate-scale quantum (NISQ) systems.",
+    "source_document": "https://thequantuminsider.com/2022/09/05/quantum-computing-companies-ultimate-list-for-2022",
+    "page": 97,
+    "relation_label": "collaborative_leadership",
+    "relation_label_confidence": "high"
+  },
+  {
+    "source_actor": "Qruise",
+    "target_actor": "Quantum Machines",
+    "interaction_phrase": "partners with",
+    "occurrence_sentence": "Qruise also partners with leading hardware firms like Quantum Machines and Zurich Instruments, integrating its software with advanced control systems.",
+    "source_document": "https://thequantuminsider.com/2022/09/05/quantum-computing-companies-ultimate-list-for-2022",
+    "page": 97,
+    "relation_label": "networking",
+    "relation_label_confidence": "high"
+  },
+  {
+    "source_actor": "QSimulate",
+    "target_actor": "Amgen",
+    "interaction_phrase": "collaborates with",
+    "occurrence_sentence": "Specializing in quantum molecular simulation, QSimulate collaborates with leading partners including Amgen, Google AI Quantum Lab, and the Amazon Quantum Solutions Lab to advance computational methods for drug discovery and materials science.",
+    "source_document": "https://thequantuminsider.com/2022/09/05/quantum-computing-companies-ultimate-list-for-2022",
+    "page": 97,
+    "relation_label": "networking",
+    "relation_label_confidence": "high"
+  },
+  {
+    "source_actor": "QSimulate",
+    "target_actor": "Google",
+    "interaction_phrase": "collaborates with",
+    "occurrence_sentence": "Specializing in quantum molecular simulation, QSimulate collaborates with leading partners including Amgen, Google AI Quantum Lab, and the Amazon Quantum Solutions Lab to advance computational methods for drug discovery and materials science.",
+    "source_document": "https://thequantuminsider.com/2022/09/05/quantum-computing-companies-ultimate-list-for-2022",
+    "page": 97,
+    "relation_label": "networking",
+    "relation_label_confidence": "high"
+  },
+  {
+    "source_actor": "QSimulate",
+    "target_actor": "Amazon",
+    "interaction_phrase": "collaborates with",
+    "occurrence_sentence": "Specializing in quantum molecular simulation, QSimulate collaborates with leading partners including Amgen, Google AI Quantum Lab, and the Amazon Quantum Solutions Lab to advance computational methods for drug discovery and materials science.",
+    "source_document": "https://thequantuminsider.com/2022/09/05/quantum-computing-companies-ultimate-list-for-2022",
+    "page": 97,
+    "relation_label": "networking",
+    "relation_label_confidence": "high"
+  },
+  {
+    "source_actor": "QSimulate",
+    "target_actor": "Amgen",
+    "interaction_phrase": "collaborates with leading partners including Amgen",
+    "occurrence_sentence": "Specializing in quantum molecular simulation, QSimulate collaborates with leading partners including Amgen, Google AI Quantum Lab, and the Amazon Quantum Solutions Lab to advance computational methods for drug discovery and materials science.",
+    "source_document": "https://thequantuminsider.com/2022/09/05/quantum-computing-companies-ultimate-list-for-2022",
+    "page": 98,
+    "relation_label": "networking",
+    "relation_label_confidence": "high"
+  },
+  {
+    "source_actor": "QSimulate",
+    "target_actor": "Google",
+    "interaction_phrase": "collaborates with leading partners including Google AI Quantum Lab",
+    "occurrence_sentence": "Specializing in quantum molecular simulation, QSimulate collaborates with leading partners including Amgen, Google AI Quantum Lab, and the Amazon Quantum Solutions Lab to advance computational methods for drug discovery and materials science.",
+    "source_document": "https://thequantuminsider.com/2022/09/05/quantum-computing-companies-ultimate-list-for-2022",
+    "page": 98,
+    "relation_label": "networking",
+    "relation_label_confidence": "high"
+  },
+  {
+    "source_actor": "QSimulate",
+    "target_actor": "Amazon",
+    "interaction_phrase": "collaborates with leading partners including the Amazon Quantum Solutions Lab",
+    "occurrence_sentence": "Specializing in quantum molecular simulation, QSimulate collaborates with leading partners including Amgen, Google AI Quantum Lab, and the Amazon Quantum Solutions Lab to advance computational methods for drug discovery and materials science.",
+    "source_document": "https://thequantuminsider.com/2022/09/05/quantum-computing-companies-ultimate-list-for-2022",
+    "page": 98,
+    "relation_label": "networking",
+    "relation_label_confidence": "high"
+  },
+  {
+    "source_actor": "QuantFi",
+    "target_actor": "IBM Quantum",
+    "interaction_phrase": "joined the IBM Quantum network",
+    "occurrence_sentence": "QuantFi is known for its quantum emulator, QIWI, which integrates waveform-level and circuit-level simulations for high-accuracy financial modeling. It joined the IBM Quantum network in 2020 and is an active member of Le Lab Quantique and QuIC.",
+    "source_document": "https://thequantuminsider.com/2022/09/05/quantum-computing-companies-ultimate-list-for-2022",
+    "page": 100,
+    "relation_label": "networking",
+    "relation_label_confidence": "high"
+  },
+  {
+    "source_actor": "QuantFi",
+    "target_actor": "Le Lab Quantique",
+    "interaction_phrase": "is an active member of",
+    "occurrence_sentence": "QuantFi is known for its quantum emulator, QIWI, which integrates waveform-level and circuit-level simulations for high-accuracy financial modeling. It joined the IBM Quantum network in 2020 and is an active member of Le Lab Quantique and QuIC.",
+    "source_document": "https://thequantuminsider.com/2022/09/05/quantum-computing-companies-ultimate-list-for-2022",
+    "page": 100,
+    "relation_label": "networking",
+    "relation_label_confidence": "high"
+  },
+  {
+    "source_actor": "QuantFi",
+    "target_actor": "European Quantum Industry Consortium (QuIC)",
+    "interaction_phrase": "is an active member of",
+    "occurrence_sentence": "QuantFi is known for its quantum emulator, QIWI, which integrates waveform-level and circuit-level simulations for high-accuracy financial modeling. It joined the IBM Quantum network in 2020 and is an active member of Le Lab Quantique and QuIC.",
+    "source_document": "https://thequantuminsider.com/2022/09/05/quantum-computing-companies-ultimate-list-for-2022",
+    "page": 100,
+    "relation_label": "networking",
+    "relation_label_confidence": "high"
+  },
+  {
+    "source_actor": "QuantWare",
+    "target_actor": "QuantrolOx",
+    "interaction_phrase": "partnerships with QuantrolOx",
+    "occurrence_sentence": "In 2024 and 2025, QuantWare expanded its enterprise offerings with Crescendo-E for high-volume TWPA deployment and enabled automated QPU characterization in under 25 minutes via partnerships with QuantrolOx and Qblox, a breakthrough in simplifying quantum integration and accelerating development cycles.",
+    "source_document": "https://thequantuminsider.com/2022/09/05/quantum-computing-companies-ultimate-list-for-2022",
+    "page": 108,
+    "relation_label": "technology_transfer",
+    "relation_label_confidence": "high"
+  },
+  {
+    "source_actor": "QuantWare",
+    "target_actor": "QuantrolOx",
+    "interaction_phrase": "partnerships with QuantrolOx",
+    "occurrence_sentence": "In 2024 and 2025, QuantWare expanded its enterprise offerings with Crescendo-E for high-volume TWPA deployment and enabled automated QPU characterization in under 25 minutes via partnerships with QuantrolOx and Qblox, a breakthrough in simplifying quantum integration and accelerating development cycles.",
+    "source_document": "https://thequantuminsider.com/2022/09/05/quantum-computing-companies-ultimate-list-for-2022",
+    "page": 109,
+    "relation_label": "technology_transfer",
+    "relation_label_confidence": "high"
+  },
+  {
+    "source_actor": "Qubit Pharmaceuticals",
+    "target_actor": "Sorbonne Université",
+    "interaction_phrase": "co-developed with Sorbonne Université",
+    "occurrence_sentence": "In July 2024, Qubit Pharmaceuticals announced that its Hyperion-1 emulator, co-developed with Sorbonne Université, reduced the quantum hardware requirements for small molecule simulations.",
+    "source_document": "https://thequantuminsider.com/2022/09/05/quantum-computing-companies-ultimate-list-for-2022",
+    "page": 109,
+    "relation_label": "collaborative_leadership",
+    "relation_label_confidence": "high"
+  },
+  {
+    "source_actor": "Qubit Pharmaceuticals",
+    "target_actor": "Sorbonne Université",
+    "interaction_phrase": "co-developed with Sorbonne Université",
+    "occurrence_sentence": "In July 2024, Qubit Pharmaceuticals announced that its Hyperion-1 emulator, co-developed with Sorbonne Université, reduced the quantum hardware requirements for small molecule simulations.",
+    "source_document": "https://thequantuminsider.com/2022/09/05/quantum-computing-companies-ultimate-list-for-2022",
+    "page": 110,
+    "relation_label": "collaborative_leadership",
+    "relation_label_confidence": "high"
+  },
+  {
+    "source_actor": "QuEra",
+    "target_actor": "Kipu Quantum",
+    "interaction_phrase": "formed major partnerships, including with Kipu Quantum",
+    "occurrence_sentence": "It is actively developing hybrid digital-analog platforms, and recently introduced a co-design program integrating hardware, software, and applications to accelerate adoption in business and research. QuEra has also formed major partnerships, including with Kipu Quantum and PlanQK to provide easier access to quantum technology, and received investment from Google Quantum AI to advance fault-tolerance.",
+    "source_document": "https://thequantuminsider.com/2022/09/05/quantum-computing-companies-ultimate-list-for-2022",
+    "page": 112,
+    "relation_label": "collaborative_leadership",
+    "relation_label_confidence": "high"
+  },
+  {
+    "source_actor": "QuEra",
+    "target_actor": "Google Quantum AI",
+    "interaction_phrase": "received investment from Google Quantum AI",
+    "occurrence_sentence": "It is actively developing hybrid digital-analog platforms, and recently introduced a co-design program integrating hardware, software, and applications to accelerate adoption in business and research. QuEra has also formed major partnerships, including with Kipu Quantum and PlanQK to provide easier access to quantum technology, and received investment from Google Quantum AI to advance fault-tolerance.",
+    "source_document": "https://thequantuminsider.com/2022/09/05/quantum-computing-companies-ultimate-list-for-2022",
+    "page": 112,
+    "relation_label": "collaborative_leadership",
+    "relation_label_confidence": "high"
+  },
+  {
+    "source_actor": "Qunnect",
+    "target_actor": "New York University (NYU)",
+    "interaction_phrase": "In collaboration with",
+    "occurrence_sentence": "In collaboration with NYU, Qunnect established a 16km quantum link across New York City, demonstrating real-world quantum networking capabilities over standard fiber.",
+    "source_document": "https://thequantuminsider.com/2022/09/05/quantum-computing-companies-ultimate-list-for-2022",
+    "page": 115,
+    "relation_label": "collaborative_leadership",
+    "relation_label_confidence": "high"
+  },
+  {
+    "interaction_phrase": "Founded in 2017 by world-leading materials scientist, Michelle Simmons",
+    "occurrence_sentence": "Founded in 2017 by world-leading materials scientist, Michelle Simmons, the company develops quantum computers and application-specific systems using precision-placed atoms in silicon: an approach within the field of spin qubits.",
+    "page": 120,
+    "source_actor": "Michelle Simmons",
+    "source_document": "https://thequantuminsider.com/2022/09/05/quantum-computing-companies-ultimate-list-for-2022",
+    "target_actor": "Silicon Quantum Computing",
+    "relation_label": "collaborative_leadership",
+    "relation_label_confidence": "high"
+  },
+  {
+    "source_actor": "Michelle Simmons",
+    "target_actor": "Silicon Quantum Computing",
+    "interaction_phrase": "Founded in 2017 by world-leading materials scientist, Michelle Simmons",
+    "occurrence_sentence": "Founded in 2017 by world-leading materials scientist, Michelle Simmons, the company develops quantum computers and application-specific systems using precision-placed atoms in silicon: an approach within the field of spin qubits.",
+    "source_document": "https://thequantuminsider.com/2022/09/05/quantum-computing-companies-ultimate-list-for-2022",
+    "page": 121,
+    "relation_label": "collaborative_leadership",
+    "relation_label_confidence": "high"
+  },
+  {
+    "source_actor": "Strangeworks",
+    "target_actor": "Amazon",
+    "interaction_phrase": "Amazon Braket",
+    "occurrence_sentence": "Its flagship offering, Strangeworks QC, is a free platform that supports quantum programming using tools like Qiskit, Cirq, and Amazon Braket.",
+    "source_document": "https://thequantuminsider.com/2022/09/05/quantum-computing-companies-ultimate-list-for-2022",
+    "page": 122,
+    "relation_label": "collaborative_leadership",
+    "relation_label_confidence": "high"
+  },
+  {
+    "interaction_phrase": "Amazon Braket",
+    "occurrence_sentence": "Its flagship offering, Strangeworks QC, is a free platform that supports quantum programming using tools like Qiskit, Cirq, and Amazon Braket.",
+    "page": 123,
+    "source_actor": "Strangeworks",
+    "source_document": "https://thequantuminsider.com/2022/09/05/quantum-computing-companies-ultimate-list-for-2022",
+    "target_actor": "Amazon",
+    "relation_label": "collaborative_leadership",
+    "relation_label_confidence": "high"
+  },
+  {
+    "source_actor": "Welinq",
+    "target_actor": "Sorbonne Université",
+    "interaction_phrase": "supported by academic partners like",
+    "occurrence_sentence": "Supported by academic partners like Sorbonne Université and CNRS, Welinq's R&D is based in Paris.",
+    "source_document": "https://thequantuminsider.com/2022/09/05/quantum-computing-companies-ultimate-list-for-2022",
+    "page": 125,
+    "relation_label": "networking",
+    "relation_label_confidence": "high"
+  },
+  {
+    "source_actor": "Welinq",
+    "target_actor": "Sorbonne Université",
+    "interaction_phrase": "supported by academic partners like Sorbonne Université",
+    "occurrence_sentence": "Supported by academic partners like Sorbonne Université and CNRS, Welinq's R&D is based in Paris.",
+    "source_document": "https://thequantuminsider.com/2022/09/05/quantum-computing-companies-ultimate-list-for-2022",
+    "page": 126,
+    "relation_label": "networking",
+    "relation_label_confidence": "high"
+  }
+]

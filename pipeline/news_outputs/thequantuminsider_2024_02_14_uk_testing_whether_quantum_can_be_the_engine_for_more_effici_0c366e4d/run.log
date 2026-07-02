@@ -1,0 +1,71 @@
+
+========================================================================
+RUN STARTED  2026-07-02 10:20:59
+site_pipeline.py https://thequantuminsider.com/2024/02/14/uk-testing-whether-quantum-can-be-the-engine-for-more-efficient-safer-rail-service/
+========================================================================
+
+[10:20:59 +0s | thequantuminsider_2024_02_14_uk_testing_whether_quantum_can_be_the_engine_for_more_effici_0c366e4d] === 0 crawl site ===
+[10:21:01 +2s | thequantuminsider_2024_02_14_uk_testing_whether_quantum_can_be_the_engine_for_more_effici_0c366e4d] [INIT].... → Crawl4AI 0.8.6 
+[10:22:01 +1m 2s | thequantuminsider_2024_02_14_uk_testing_whether_quantum_can_be_the_engine_for_more_effici_0c366e4d] [ANTIBOT]. ℹ https://thequantuminsid...ent-safer-rail-service/  | Error: Proxy direct failed: Failed on navigating ACS-GOTO:
+[10:22:01 +1m 2s | thequantuminsider_2024_02_14_uk_testing_whether_quantum_can_be_the_engine_for_more_effici_0c366e4d] Page.goto: Timeout 60000ms exceeded.
+[10:22:01 +1m 2s | thequantuminsider_2024_02_14_uk_testing_whether_quantum_can_be_the_engine_for_more_effici_0c366e4d] Call log:
+[10:22:01 +1m 2s | thequantuminsider_2024_02_14_uk_testing_whether_quantum_can_be_the_engine_for_more_effici_0c366e4d]   - navigating to "https://thequantuminsider.com/2024/02/14/uk-testing-whether-quantum-can-be-the-engine-for-more-efficient-safer-rail-service/", 
+[10:22:01 +1m 2s | thequantuminsider_2024_02_14_uk_testing_whether_quantum_can_be_the_engine_for_more_effici_0c366e4d] waiting until "domcontentloaded"
+ 
+[10:22:02 +1m 2s | thequantuminsider_2024_02_14_uk_testing_whether_quantum_can_be_the_engine_for_more_effici_0c366e4d] [ERROR]... × https://thequantuminsid...ent-safer-rail-service/  | Error: Unexpected error in _crawl_web at line 778 in _crawl_web 
+[10:22:02 +1m 2s | thequantuminsider_2024_02_14_uk_testing_whether_quantum_can_be_the_engine_for_more_effici_0c366e4d] (../../../../../.local/lib/python3.10/site-packages/crawl4ai/async_crawler_strategy.py):
+[10:22:02 +1m 2s | thequantuminsider_2024_02_14_uk_testing_whether_quantum_can_be_the_engine_for_more_effici_0c366e4d] Error: Failed on navigating ACS-GOTO:
+[10:22:02 +1m 2s | thequantuminsider_2024_02_14_uk_testing_whether_quantum_can_be_the_engine_for_more_effici_0c366e4d] Page.goto: Timeout 60000ms exceeded.
+[10:22:02 +1m 2s | thequantuminsider_2024_02_14_uk_testing_whether_quantum_can_be_the_engine_for_more_effici_0c366e4d] Call log:
+[10:22:02 +1m 2s | thequantuminsider_2024_02_14_uk_testing_whether_quantum_can_be_the_engine_for_more_effici_0c366e4d]   - navigating to "https://thequantuminsider.com/2024/02/14/uk-testing-whether-quantum-can-be-the-engine-for-more-efficient-safer-rail-service/", 
+[10:22:02 +1m 2s | thequantuminsider_2024_02_14_uk_testing_whether_quantum_can_be_the_engine_for_more_effici_0c366e4d] waiting until "domcontentloaded"
+
+
+[10:22:02 +1m 2s | thequantuminsider_2024_02_14_uk_testing_whether_quantum_can_be_the_engine_for_more_effici_0c366e4d] Code context:
+[10:22:02 +1m 2s | thequantuminsider_2024_02_14_uk_testing_whether_quantum_can_be_the_engine_for_more_effici_0c366e4d]  773                                   tag="GOTO",
+[10:22:02 +1m 2s | thequantuminsider_2024_02_14_uk_testing_whether_quantum_can_be_the_engine_for_more_effici_0c366e4d]  774                                   params={"url": url},
+[10:22:02 +1m 2s | thequantuminsider_2024_02_14_uk_testing_whether_quantum_can_be_the_engine_for_more_effici_0c366e4d]  775                               )
+[10:22:02 +1m 2s | thequantuminsider_2024_02_14_uk_testing_whether_quantum_can_be_the_engine_for_more_effici_0c366e4d]  776                               response = None
+[10:22:02 +1m 2s | thequantuminsider_2024_02_14_uk_testing_whether_quantum_can_be_the_engine_for_more_effici_0c366e4d]  777                           else:
+[10:22:02 +1m 2s | thequantuminsider_2024_02_14_uk_testing_whether_quantum_can_be_the_engine_for_more_effici_0c366e4d]  778 →                             raise RuntimeError(f"Failed on navigating ACS-GOTO:\n{str(e)}")
+[10:22:02 +1m 2s | thequantuminsider_2024_02_14_uk_testing_whether_quantum_can_be_the_engine_for_more_effici_0c366e4d]  779   
+[10:22:02 +1m 2s | thequantuminsider_2024_02_14_uk_testing_whether_quantum_can_be_the_engine_for_more_effici_0c366e4d]  780                       # ──────────────────────────────────────────────────────────────
+[10:22:02 +1m 2s | thequantuminsider_2024_02_14_uk_testing_whether_quantum_can_be_the_engine_for_more_effici_0c366e4d]  781                       # Walk the redirect chain.  Playwright returns only the last
+[10:22:02 +1m 2s | thequantuminsider_2024_02_14_uk_testing_whether_quantum_can_be_the_engine_for_more_effici_0c366e4d]  782                       # hop, so we trace the `request.redirected_from` links until the
+[10:22:02 +1m 2s | thequantuminsider_2024_02_14_uk_testing_whether_quantum_can_be_the_engine_for_more_effici_0c366e4d]  783                       # first response that differs from the final one and surface its 
+[10:22:02 +1m 2s | thequantuminsider_2024_02_14_uk_testing_whether_quantum_can_be_the_engine_for_more_effici_0c366e4d] Saved: crawl_output/126ef1afb7_thequantuminsider.com_2024_02_14_uk-testing-whether-quantum-can-be-the-engine-for-more-efficient-safer-rail-service.json
+
+[10:22:02 +1m 3s | thequantuminsider_2024_02_14_uk_testing_whether_quantum_can_be_the_engine_for_more_effici_0c366e4d] === 1 actor extraction ===
+[10:22:02 +1m 3s | thequantuminsider_2024_02_14_uk_testing_whether_quantum_can_be_the_engine_for_more_effici_0c366e4d] Reading page (1/1): https://thequantuminsider.com/2024/02/14/uk-testing-whether-quantum-can-be-the-engine-for-more-efficient-safer-rail-service
+[10:22:02 +1m 3s | thequantuminsider_2024_02_14_uk_testing_whether_quantum_can_be_the_engine_for_more_effici_0c366e4d] Extracting actors: https://thequantuminsider.com/2024/02/14/uk-testing-whether-quantum-can-be-the-engine-for-more-efficient-safer-rail-service (1/1), chunk 1/1
+[10:22:07 +1m 8s | thequantuminsider_2024_02_14_uk_testing_whether_quantum_can_be_the_engine_for_more_effici_0c366e4d] Saved 1_actor_results.json with 1 extracted records
+
+[10:22:07 +1m 8s | thequantuminsider_2024_02_14_uk_testing_whether_quantum_can_be_the_engine_for_more_effici_0c366e4d] === 2 clean actors ===
+[10:22:07 +1m 8s | thequantuminsider_2024_02_14_uk_testing_whether_quantum_can_be_the_engine_for_more_effici_0c366e4d] Loaded 1 extracted records
+[10:22:07 +1m 8s | thequantuminsider_2024_02_14_uk_testing_whether_quantum_can_be_the_engine_for_more_effici_0c366e4d] Saved 2_actor_nodes.json with 1 canonical actor nodes
+
+[10:22:07 +1m 8s | thequantuminsider_2024_02_14_uk_testing_whether_quantum_can_be_the_engine_for_more_effici_0c366e4d] === 3 interaction extraction ===
+[10:22:07 +1m 8s | thequantuminsider_2024_02_14_uk_testing_whether_quantum_can_be_the_engine_for_more_effici_0c366e4d] Saved 3_interaction_results.json with 0 extracted interactions.
+
+[10:22:07 +1m 8s | thequantuminsider_2024_02_14_uk_testing_whether_quantum_can_be_the_engine_for_more_effici_0c366e4d] === 4 clean interactions ===
+[10:22:07 +1m 8s | thequantuminsider_2024_02_14_uk_testing_whether_quantum_can_be_the_engine_for_more_effici_0c366e4d] Saved 4_edges.json with 0 cleaned interactions.
+
+[10:22:08 +1m 8s | thequantuminsider_2024_02_14_uk_testing_whether_quantum_can_be_the_engine_for_more_effici_0c366e4d] === 5 helix enrichment ===
+[10:22:08 +1m 9s | thequantuminsider_2024_02_14_uk_testing_whether_quantum_can_be_the_engine_for_more_effici_0c366e4d] Wrote 5_nodes.json (1 actors)
+[10:22:08 +1m 9s | thequantuminsider_2024_02_14_uk_testing_whether_quantum_can_be_the_engine_for_more_effici_0c366e4d] Wrote 5_edges.json (0 interactions)
+[10:22:08 +1m 9s | thequantuminsider_2024_02_14_uk_testing_whether_quantum_can_be_the_engine_for_more_effici_0c366e4d] Actor helix counts: {'Unknown': 1}
+[10:22:08 +1m 9s | thequantuminsider_2024_02_14_uk_testing_whether_quantum_can_be_the_engine_for_more_effici_0c366e4d] Functional-space counts: {}
+
+[10:22:08 +1m 9s | thequantuminsider_2024_02_14_uk_testing_whether_quantum_can_be_the_engine_for_more_effici_0c366e4d] === 6 network visualisation ===
+[10:22:08 +1m 9s | thequantuminsider_2024_02_14_uk_testing_whether_quantum_can_be_the_engine_for_more_effici_0c366e4d] Wrote quantum_network.html
+[10:22:08 +1m 9s | thequantuminsider_2024_02_14_uk_testing_whether_quantum_can_be_the_engine_for_more_effici_0c366e4d] Nodes: 1
+[10:22:08 +1m 9s | thequantuminsider_2024_02_14_uk_testing_whether_quantum_can_be_the_engine_for_more_effici_0c366e4d] Edges: 0
+
+[10:22:08 +1m 9s | thequantuminsider_2024_02_14_uk_testing_whether_quantum_can_be_the_engine_for_more_effici_0c366e4d] Done. Outputs written to: /home/lv/IDP/idpdeeptech/pipeline/news_outputs/thequantuminsider_2024_02_14_uk_testing_whether_quantum_can_be_the_engine_for_more_effici_0c366e4d
+[10:22:08 +1m 9s | thequantuminsider_2024_02_14_uk_testing_whether_quantum_can_be_the_engine_for_more_effici_0c366e4d] Log: /home/lv/IDP/idpdeeptech/pipeline/news_outputs/thequantuminsider_2024_02_14_uk_testing_whether_quantum_can_be_the_engine_for_more_effici_0c366e4d/run.log
+
+========================================================================
+RUN FINISHED 2026-07-02 10:22:08  (OK)
+Started:     2026-07-02 10:20:59
+Elapsed:     1m 9s
+========================================================================

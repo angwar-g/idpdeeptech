@@ -1,0 +1,78 @@
+
+========================================================================
+RUN STARTED  2026-07-02 09:43:22
+site_pipeline.py https://thequantuminsider.com/2024/02/22/novo-nordisk-foundation-pledges-dkk-150-million-to-build-research-center-to-explore-quantum-sensing-for-early-disease-detection-prevention/
+========================================================================
+
+[09:43:22 +0s | thequantuminsider_2024_02_22_novo_nordisk_foundation_pledges_dkk_150_million_to_build_res_1ea9a15e] === 0 crawl site ===
+[09:43:25 +2s | thequantuminsider_2024_02_22_novo_nordisk_foundation_pledges_dkk_150_million_to_build_res_1ea9a15e] [INIT].... → Crawl4AI 0.8.6 
+[09:43:51 +29s | thequantuminsider_2024_02_22_novo_nordisk_foundation_pledges_dkk_150_million_to_build_res_1ea9a15e] [ANTIBOT]. ℹ https://thequantuminsid...e-detection-prevention/  | Error: Proxy direct failed: Failed on navigating ACS-GOTO:
+[09:43:51 +29s | thequantuminsider_2024_02_22_novo_nordisk_foundation_pledges_dkk_150_million_to_build_res_1ea9a15e] Page.goto: net::ERR_NAME_NOT_RESOLVED at 
+[09:43:51 +29s | thequantuminsider_2024_02_22_novo_nordisk_foundation_pledges_dkk_150_million_to_build_res_1ea9a15e] https://thequantuminsider.com/2024/02/22/novo-nordisk-foundation-pledges-dkk-150-million-to-build-research-center-to-explore-quantum-sensing-for-early-
+[09:43:51 +29s | thequantuminsider_2024_02_22_novo_nordisk_foundation_pledges_dkk_150_million_to_build_res_1ea9a15e] disease-detection-prevention/
+[09:43:51 +29s | thequantuminsider_2024_02_22_novo_nordisk_foundation_pledges_dkk_150_million_to_build_res_1ea9a15e] Call log:
+[09:43:51 +29s | thequantuminsider_2024_02_22_novo_nordisk_foundation_pledges_dkk_150_million_to_build_res_1ea9a15e]   - navigating to 
+[09:43:51 +29s | thequantuminsider_2024_02_22_novo_nordisk_foundation_pledges_dkk_150_million_to_build_res_1ea9a15e] "https://thequantuminsider.com/2024/02/22/novo-nordisk-foundation-pledges-dkk-150-million-to-build-research-center-to-explore-quantum-sensing-for-early
+[09:43:51 +29s | thequantuminsider_2024_02_22_novo_nordisk_foundation_pledges_dkk_150_million_to_build_res_1ea9a15e] -disease-detection-prevention/", waiting until "domcontentloaded"
+ 
+[09:43:51 +29s | thequantuminsider_2024_02_22_novo_nordisk_foundation_pledges_dkk_150_million_to_build_res_1ea9a15e] [ERROR]... × https://thequantuminsid...e-detection-prevention/  | Error: Unexpected error in _crawl_web at line 778 in _crawl_web 
+[09:43:51 +29s | thequantuminsider_2024_02_22_novo_nordisk_foundation_pledges_dkk_150_million_to_build_res_1ea9a15e] (../../../../../.local/lib/python3.10/site-packages/crawl4ai/async_crawler_strategy.py):
+[09:43:51 +29s | thequantuminsider_2024_02_22_novo_nordisk_foundation_pledges_dkk_150_million_to_build_res_1ea9a15e] Error: Failed on navigating ACS-GOTO:
+[09:43:51 +29s | thequantuminsider_2024_02_22_novo_nordisk_foundation_pledges_dkk_150_million_to_build_res_1ea9a15e] Page.goto: net::ERR_NAME_NOT_RESOLVED at 
+[09:43:51 +29s | thequantuminsider_2024_02_22_novo_nordisk_foundation_pledges_dkk_150_million_to_build_res_1ea9a15e] https://thequantuminsider.com/2024/02/22/novo-nordisk-foundation-pledges-dkk-150-million-to-build-research-center-to-explore-quantum-sensing-for-early-
+[09:43:51 +29s | thequantuminsider_2024_02_22_novo_nordisk_foundation_pledges_dkk_150_million_to_build_res_1ea9a15e] disease-detection-prevention/
+[09:43:51 +29s | thequantuminsider_2024_02_22_novo_nordisk_foundation_pledges_dkk_150_million_to_build_res_1ea9a15e] Call log:
+[09:43:51 +29s | thequantuminsider_2024_02_22_novo_nordisk_foundation_pledges_dkk_150_million_to_build_res_1ea9a15e]   - navigating to 
+[09:43:51 +29s | thequantuminsider_2024_02_22_novo_nordisk_foundation_pledges_dkk_150_million_to_build_res_1ea9a15e] "https://thequantuminsider.com/2024/02/22/novo-nordisk-foundation-pledges-dkk-150-million-to-build-research-center-to-explore-quantum-sensing-for-early
+[09:43:51 +29s | thequantuminsider_2024_02_22_novo_nordisk_foundation_pledges_dkk_150_million_to_build_res_1ea9a15e] -disease-detection-prevention/", waiting until "domcontentloaded"
+
+
+[09:43:51 +29s | thequantuminsider_2024_02_22_novo_nordisk_foundation_pledges_dkk_150_million_to_build_res_1ea9a15e] Code context:
+[09:43:51 +29s | thequantuminsider_2024_02_22_novo_nordisk_foundation_pledges_dkk_150_million_to_build_res_1ea9a15e]  773                                   tag="GOTO",
+[09:43:51 +29s | thequantuminsider_2024_02_22_novo_nordisk_foundation_pledges_dkk_150_million_to_build_res_1ea9a15e]  774                                   params={"url": url},
+[09:43:51 +29s | thequantuminsider_2024_02_22_novo_nordisk_foundation_pledges_dkk_150_million_to_build_res_1ea9a15e]  775                               )
+[09:43:51 +29s | thequantuminsider_2024_02_22_novo_nordisk_foundation_pledges_dkk_150_million_to_build_res_1ea9a15e]  776                               response = None
+[09:43:51 +29s | thequantuminsider_2024_02_22_novo_nordisk_foundation_pledges_dkk_150_million_to_build_res_1ea9a15e]  777                           else:
+[09:43:51 +29s | thequantuminsider_2024_02_22_novo_nordisk_foundation_pledges_dkk_150_million_to_build_res_1ea9a15e]  778 →                             raise RuntimeError(f"Failed on navigating ACS-GOTO:\n{str(e)}")
+[09:43:51 +29s | thequantuminsider_2024_02_22_novo_nordisk_foundation_pledges_dkk_150_million_to_build_res_1ea9a15e]  779   
+[09:43:51 +29s | thequantuminsider_2024_02_22_novo_nordisk_foundation_pledges_dkk_150_million_to_build_res_1ea9a15e]  780                       # ──────────────────────────────────────────────────────────────
+[09:43:51 +29s | thequantuminsider_2024_02_22_novo_nordisk_foundation_pledges_dkk_150_million_to_build_res_1ea9a15e]  781                       # Walk the redirect chain.  Playwright returns only the last
+[09:43:51 +29s | thequantuminsider_2024_02_22_novo_nordisk_foundation_pledges_dkk_150_million_to_build_res_1ea9a15e]  782                       # hop, so we trace the `request.redirected_from` links until the
+[09:43:51 +29s | thequantuminsider_2024_02_22_novo_nordisk_foundation_pledges_dkk_150_million_to_build_res_1ea9a15e]  783                       # first response that differs from the final one and surface its 
+[09:43:51 +29s | thequantuminsider_2024_02_22_novo_nordisk_foundation_pledges_dkk_150_million_to_build_res_1ea9a15e] Saved: crawl_output/ba0ed69123_thequantuminsider.com_2024_02_22_novo-nordisk-foundation-pledges-dkk-150-million-to-build-research-center-to-explore-quantum-sensing-for-early-disease-detection-prevention.json
+
+[09:43:52 +29s | thequantuminsider_2024_02_22_novo_nordisk_foundation_pledges_dkk_150_million_to_build_res_1ea9a15e] === 1 actor extraction ===
+[09:43:52 +30s | thequantuminsider_2024_02_22_novo_nordisk_foundation_pledges_dkk_150_million_to_build_res_1ea9a15e] Reading page (1/1): https://thequantuminsider.com/2024/02/22/novo-nordisk-foundation-pledges-dkk-150-million-to-build-research-center-to-explore-quantum-sensing-for-early-disease-detection-prevention
+[09:43:52 +30s | thequantuminsider_2024_02_22_novo_nordisk_foundation_pledges_dkk_150_million_to_build_res_1ea9a15e] Extracting actors: https://thequantuminsider.com/2024/02/22/novo-nordisk-foundation-pledges-dkk-150-million-to-build-research-center-to-explore-quantum-sensing-for-early-disease-detection-prevention (1/1), chunk 1/1
+[09:44:02 +40s | thequantuminsider_2024_02_22_novo_nordisk_foundation_pledges_dkk_150_million_to_build_res_1ea9a15e] Model call failed for https://thequantuminsider.com/2024/02/22/novo-nordisk-foundation-pledges-dkk-150-million-to-build-research-center-to-explore-quantum-sensing-for-early-disease-detection-prevention chunk 1: Cannot connect to host api.cloudflare.com:443 ssl:default [Temporary failure in name resolution]
+[09:44:02 +40s | thequantuminsider_2024_02_22_novo_nordisk_foundation_pledges_dkk_150_million_to_build_res_1ea9a15e] Saved 1_actor_results.json with 0 extracted records
+
+[09:44:02 +40s | thequantuminsider_2024_02_22_novo_nordisk_foundation_pledges_dkk_150_million_to_build_res_1ea9a15e] === 2 clean actors ===
+[09:44:02 +40s | thequantuminsider_2024_02_22_novo_nordisk_foundation_pledges_dkk_150_million_to_build_res_1ea9a15e] Loaded 0 extracted records
+[09:44:02 +40s | thequantuminsider_2024_02_22_novo_nordisk_foundation_pledges_dkk_150_million_to_build_res_1ea9a15e] Saved 2_actor_nodes.json with 0 canonical actor nodes
+
+[09:44:02 +40s | thequantuminsider_2024_02_22_novo_nordisk_foundation_pledges_dkk_150_million_to_build_res_1ea9a15e] === 3 interaction extraction ===
+[09:44:03 +40s | thequantuminsider_2024_02_22_novo_nordisk_foundation_pledges_dkk_150_million_to_build_res_1ea9a15e] No valid actors found, skipping.
+
+[09:44:03 +40s | thequantuminsider_2024_02_22_novo_nordisk_foundation_pledges_dkk_150_million_to_build_res_1ea9a15e] === 4 clean interactions ===
+[09:44:03 +40s | thequantuminsider_2024_02_22_novo_nordisk_foundation_pledges_dkk_150_million_to_build_res_1ea9a15e] No input (3_interaction_results.json missing -- upstream produced no edges). Wrote empty 4_edges.json.
+
+[09:44:03 +40s | thequantuminsider_2024_02_22_novo_nordisk_foundation_pledges_dkk_150_million_to_build_res_1ea9a15e] === 5 helix enrichment ===
+[09:44:03 +40s | thequantuminsider_2024_02_22_novo_nordisk_foundation_pledges_dkk_150_million_to_build_res_1ea9a15e] Wrote 5_nodes.json (0 actors)
+[09:44:03 +40s | thequantuminsider_2024_02_22_novo_nordisk_foundation_pledges_dkk_150_million_to_build_res_1ea9a15e] Wrote 5_edges.json (0 interactions)
+[09:44:03 +40s | thequantuminsider_2024_02_22_novo_nordisk_foundation_pledges_dkk_150_million_to_build_res_1ea9a15e] Actor helix counts: {}
+[09:44:03 +40s | thequantuminsider_2024_02_22_novo_nordisk_foundation_pledges_dkk_150_million_to_build_res_1ea9a15e] Functional-space counts: {}
+
+[09:44:03 +40s | thequantuminsider_2024_02_22_novo_nordisk_foundation_pledges_dkk_150_million_to_build_res_1ea9a15e] === 6 network visualisation ===
+[09:44:03 +41s | thequantuminsider_2024_02_22_novo_nordisk_foundation_pledges_dkk_150_million_to_build_res_1ea9a15e] Wrote quantum_network.html
+[09:44:03 +41s | thequantuminsider_2024_02_22_novo_nordisk_foundation_pledges_dkk_150_million_to_build_res_1ea9a15e] Nodes: 0
+[09:44:03 +41s | thequantuminsider_2024_02_22_novo_nordisk_foundation_pledges_dkk_150_million_to_build_res_1ea9a15e] Edges: 0
+
+[09:44:04 +41s | thequantuminsider_2024_02_22_novo_nordisk_foundation_pledges_dkk_150_million_to_build_res_1ea9a15e] Done. Outputs written to: /home/lv/IDP/idpdeeptech/pipeline/news_outputs/thequantuminsider_2024_02_22_novo_nordisk_foundation_pledges_dkk_150_million_to_build_res_1ea9a15e
+[09:44:04 +41s | thequantuminsider_2024_02_22_novo_nordisk_foundation_pledges_dkk_150_million_to_build_res_1ea9a15e] Log: /home/lv/IDP/idpdeeptech/pipeline/news_outputs/thequantuminsider_2024_02_22_novo_nordisk_foundation_pledges_dkk_150_million_to_build_res_1ea9a15e/run.log
+
+========================================================================
+RUN FINISHED 2026-07-02 09:44:04  (OK)
+Started:     2026-07-02 09:43:22
+Elapsed:     41s
+========================================================================

@@ -1,0 +1,69 @@
+
+========================================================================
+RUN STARTED  2026-07-02 10:22:09
+site_pipeline.py https://thequantuminsider.com/2024/02/14/iqm-quantum-computers-announces-new-co-ceo-structure/
+========================================================================
+
+[10:22:09 +0s | thequantuminsider_2024_02_14_iqm_quantum_computers_announces_new_co_ceo_structure] === 0 crawl site ===
+[10:22:12 +2s | thequantuminsider_2024_02_14_iqm_quantum_computers_announces_new_co_ceo_structure] [INIT].... → Crawl4AI 0.8.6 
+[10:23:12 +1m 3s | thequantuminsider_2024_02_14_iqm_quantum_computers_announces_new_co_ceo_structure] [ANTIBOT]. ℹ https://thequantuminsid...s-new-co-ceo-structure/  | Error: Proxy direct failed: Failed on navigating ACS-GOTO:
+[10:23:12 +1m 3s | thequantuminsider_2024_02_14_iqm_quantum_computers_announces_new_co_ceo_structure] Page.goto: Timeout 60000ms exceeded.
+[10:23:12 +1m 3s | thequantuminsider_2024_02_14_iqm_quantum_computers_announces_new_co_ceo_structure] Call log:
+[10:23:12 +1m 3s | thequantuminsider_2024_02_14_iqm_quantum_computers_announces_new_co_ceo_structure]   - navigating to "https://thequantuminsider.com/2024/02/14/iqm-quantum-computers-announces-new-co-ceo-structure/", waiting until "domcontentloaded"
+ 
+[10:23:12 +1m 3s | thequantuminsider_2024_02_14_iqm_quantum_computers_announces_new_co_ceo_structure] [ERROR]... × https://thequantuminsid...s-new-co-ceo-structure/  | Error: Unexpected error in _crawl_web at line 778 in _crawl_web 
+[10:23:12 +1m 3s | thequantuminsider_2024_02_14_iqm_quantum_computers_announces_new_co_ceo_structure] (../../../../../.local/lib/python3.10/site-packages/crawl4ai/async_crawler_strategy.py):
+[10:23:12 +1m 3s | thequantuminsider_2024_02_14_iqm_quantum_computers_announces_new_co_ceo_structure] Error: Failed on navigating ACS-GOTO:
+[10:23:12 +1m 3s | thequantuminsider_2024_02_14_iqm_quantum_computers_announces_new_co_ceo_structure] Page.goto: Timeout 60000ms exceeded.
+[10:23:12 +1m 3s | thequantuminsider_2024_02_14_iqm_quantum_computers_announces_new_co_ceo_structure] Call log:
+[10:23:12 +1m 3s | thequantuminsider_2024_02_14_iqm_quantum_computers_announces_new_co_ceo_structure]   - navigating to "https://thequantuminsider.com/2024/02/14/iqm-quantum-computers-announces-new-co-ceo-structure/", waiting until "domcontentloaded"
+
+
+[10:23:12 +1m 3s | thequantuminsider_2024_02_14_iqm_quantum_computers_announces_new_co_ceo_structure] Code context:
+[10:23:12 +1m 3s | thequantuminsider_2024_02_14_iqm_quantum_computers_announces_new_co_ceo_structure]  773                                   tag="GOTO",
+[10:23:12 +1m 3s | thequantuminsider_2024_02_14_iqm_quantum_computers_announces_new_co_ceo_structure]  774                                   params={"url": url},
+[10:23:12 +1m 3s | thequantuminsider_2024_02_14_iqm_quantum_computers_announces_new_co_ceo_structure]  775                               )
+[10:23:12 +1m 3s | thequantuminsider_2024_02_14_iqm_quantum_computers_announces_new_co_ceo_structure]  776                               response = None
+[10:23:12 +1m 3s | thequantuminsider_2024_02_14_iqm_quantum_computers_announces_new_co_ceo_structure]  777                           else:
+[10:23:12 +1m 3s | thequantuminsider_2024_02_14_iqm_quantum_computers_announces_new_co_ceo_structure]  778 →                             raise RuntimeError(f"Failed on navigating ACS-GOTO:\n{str(e)}")
+[10:23:12 +1m 3s | thequantuminsider_2024_02_14_iqm_quantum_computers_announces_new_co_ceo_structure]  779   
+[10:23:12 +1m 3s | thequantuminsider_2024_02_14_iqm_quantum_computers_announces_new_co_ceo_structure]  780                       # ──────────────────────────────────────────────────────────────
+[10:23:12 +1m 3s | thequantuminsider_2024_02_14_iqm_quantum_computers_announces_new_co_ceo_structure]  781                       # Walk the redirect chain.  Playwright returns only the last
+[10:23:12 +1m 3s | thequantuminsider_2024_02_14_iqm_quantum_computers_announces_new_co_ceo_structure]  782                       # hop, so we trace the `request.redirected_from` links until the
+[10:23:12 +1m 3s | thequantuminsider_2024_02_14_iqm_quantum_computers_announces_new_co_ceo_structure]  783                       # first response that differs from the final one and surface its 
+[10:23:12 +1m 3s | thequantuminsider_2024_02_14_iqm_quantum_computers_announces_new_co_ceo_structure] Saved: crawl_output/b4f5e700a3_thequantuminsider.com_2024_02_14_iqm-quantum-computers-announces-new-co-ceo-structure.json
+
+[10:23:12 +1m 3s | thequantuminsider_2024_02_14_iqm_quantum_computers_announces_new_co_ceo_structure] === 1 actor extraction ===
+[10:23:13 +1m 3s | thequantuminsider_2024_02_14_iqm_quantum_computers_announces_new_co_ceo_structure] Reading page (1/1): https://thequantuminsider.com/2024/02/14/iqm-quantum-computers-announces-new-co-ceo-structure
+[10:23:13 +1m 3s | thequantuminsider_2024_02_14_iqm_quantum_computers_announces_new_co_ceo_structure] Extracting actors: https://thequantuminsider.com/2024/02/14/iqm-quantum-computers-announces-new-co-ceo-structure (1/1), chunk 1/1
+[10:23:20 +1m 11s | thequantuminsider_2024_02_14_iqm_quantum_computers_announces_new_co_ceo_structure] Saved 1_actor_results.json with 1 extracted records
+
+[10:23:20 +1m 11s | thequantuminsider_2024_02_14_iqm_quantum_computers_announces_new_co_ceo_structure] === 2 clean actors ===
+[10:23:20 +1m 11s | thequantuminsider_2024_02_14_iqm_quantum_computers_announces_new_co_ceo_structure] Loaded 1 extracted records
+[10:23:20 +1m 11s | thequantuminsider_2024_02_14_iqm_quantum_computers_announces_new_co_ceo_structure] Saved 2_actor_nodes.json with 1 canonical actor nodes
+
+[10:23:20 +1m 11s | thequantuminsider_2024_02_14_iqm_quantum_computers_announces_new_co_ceo_structure] === 3 interaction extraction ===
+[10:23:21 +1m 12s | thequantuminsider_2024_02_14_iqm_quantum_computers_announces_new_co_ceo_structure] Saved 3_interaction_results.json with 0 extracted interactions.
+
+[10:23:21 +1m 12s | thequantuminsider_2024_02_14_iqm_quantum_computers_announces_new_co_ceo_structure] === 4 clean interactions ===
+[10:23:21 +1m 12s | thequantuminsider_2024_02_14_iqm_quantum_computers_announces_new_co_ceo_structure] Saved 4_edges.json with 0 cleaned interactions.
+
+[10:23:21 +1m 12s | thequantuminsider_2024_02_14_iqm_quantum_computers_announces_new_co_ceo_structure] === 5 helix enrichment ===
+[10:23:21 +1m 12s | thequantuminsider_2024_02_14_iqm_quantum_computers_announces_new_co_ceo_structure] Wrote 5_nodes.json (1 actors)
+[10:23:21 +1m 12s | thequantuminsider_2024_02_14_iqm_quantum_computers_announces_new_co_ceo_structure] Wrote 5_edges.json (0 interactions)
+[10:23:21 +1m 12s | thequantuminsider_2024_02_14_iqm_quantum_computers_announces_new_co_ceo_structure] Actor helix counts: {'Industry': 1}
+[10:23:21 +1m 12s | thequantuminsider_2024_02_14_iqm_quantum_computers_announces_new_co_ceo_structure] Functional-space counts: {}
+
+[10:23:21 +1m 12s | thequantuminsider_2024_02_14_iqm_quantum_computers_announces_new_co_ceo_structure] === 6 network visualisation ===
+[10:23:22 +1m 12s | thequantuminsider_2024_02_14_iqm_quantum_computers_announces_new_co_ceo_structure] Wrote quantum_network.html
+[10:23:22 +1m 12s | thequantuminsider_2024_02_14_iqm_quantum_computers_announces_new_co_ceo_structure] Nodes: 1
+[10:23:22 +1m 12s | thequantuminsider_2024_02_14_iqm_quantum_computers_announces_new_co_ceo_structure] Edges: 0
+
+[10:23:22 +1m 13s | thequantuminsider_2024_02_14_iqm_quantum_computers_announces_new_co_ceo_structure] Done. Outputs written to: /home/lv/IDP/idpdeeptech/pipeline/news_outputs/thequantuminsider_2024_02_14_iqm_quantum_computers_announces_new_co_ceo_structure
+[10:23:22 +1m 13s | thequantuminsider_2024_02_14_iqm_quantum_computers_announces_new_co_ceo_structure] Log: /home/lv/IDP/idpdeeptech/pipeline/news_outputs/thequantuminsider_2024_02_14_iqm_quantum_computers_announces_new_co_ceo_structure/run.log
+
+========================================================================
+RUN FINISHED 2026-07-02 10:23:22  (OK)
+Started:     2026-07-02 10:22:09
+Elapsed:     1m 13s
+========================================================================

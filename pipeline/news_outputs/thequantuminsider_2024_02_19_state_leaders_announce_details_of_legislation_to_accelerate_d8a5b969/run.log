@@ -1,0 +1,74 @@
+
+========================================================================
+RUN STARTED  2026-07-02 09:45:55
+site_pipeline.py https://thequantuminsider.com/2024/02/19/state-leaders-announce-details-of-legislation-to-accelerate-colorados-quantum-ecosystem/
+========================================================================
+
+[09:45:55 +0s | thequantuminsider_2024_02_19_state_leaders_announce_details_of_legislation_to_accelerate_d8a5b969] === 0 crawl site ===
+[09:45:57 +2s | thequantuminsider_2024_02_19_state_leaders_announce_details_of_legislation_to_accelerate_d8a5b969] [INIT].... → Crawl4AI 0.8.6 
+[09:46:24 +28s | thequantuminsider_2024_02_19_state_leaders_announce_details_of_legislation_to_accelerate_d8a5b969] [ANTIBOT]. ℹ https://thequantuminsid...ados-quantum-ecosystem/  | Error: Proxy direct failed: Failed on navigating ACS-GOTO:
+[09:46:24 +28s | thequantuminsider_2024_02_19_state_leaders_announce_details_of_legislation_to_accelerate_d8a5b969] Page.goto: net::ERR_NAME_NOT_RESOLVED at 
+[09:46:24 +28s | thequantuminsider_2024_02_19_state_leaders_announce_details_of_legislation_to_accelerate_d8a5b969] https://thequantuminsider.com/2024/02/19/state-leaders-announce-details-of-legislation-to-accelerate-colorados-quantum-ecosystem/
+[09:46:24 +28s | thequantuminsider_2024_02_19_state_leaders_announce_details_of_legislation_to_accelerate_d8a5b969] Call log:
+[09:46:24 +28s | thequantuminsider_2024_02_19_state_leaders_announce_details_of_legislation_to_accelerate_d8a5b969]   - navigating to "https://thequantuminsider.com/2024/02/19/state-leaders-announce-details-of-legislation-to-accelerate-colorados-quantum-ecosystem/", 
+[09:46:24 +28s | thequantuminsider_2024_02_19_state_leaders_announce_details_of_legislation_to_accelerate_d8a5b969] waiting until "domcontentloaded"
+ 
+[09:46:24 +28s | thequantuminsider_2024_02_19_state_leaders_announce_details_of_legislation_to_accelerate_d8a5b969] [ERROR]... × https://thequantuminsid...ados-quantum-ecosystem/  | Error: Unexpected error in _crawl_web at line 778 in _crawl_web 
+[09:46:24 +28s | thequantuminsider_2024_02_19_state_leaders_announce_details_of_legislation_to_accelerate_d8a5b969] (../../../../../.local/lib/python3.10/site-packages/crawl4ai/async_crawler_strategy.py):
+[09:46:24 +28s | thequantuminsider_2024_02_19_state_leaders_announce_details_of_legislation_to_accelerate_d8a5b969] Error: Failed on navigating ACS-GOTO:
+[09:46:24 +28s | thequantuminsider_2024_02_19_state_leaders_announce_details_of_legislation_to_accelerate_d8a5b969] Page.goto: net::ERR_NAME_NOT_RESOLVED at 
+[09:46:24 +28s | thequantuminsider_2024_02_19_state_leaders_announce_details_of_legislation_to_accelerate_d8a5b969] https://thequantuminsider.com/2024/02/19/state-leaders-announce-details-of-legislation-to-accelerate-colorados-quantum-ecosystem/
+[09:46:24 +28s | thequantuminsider_2024_02_19_state_leaders_announce_details_of_legislation_to_accelerate_d8a5b969] Call log:
+[09:46:24 +28s | thequantuminsider_2024_02_19_state_leaders_announce_details_of_legislation_to_accelerate_d8a5b969]   - navigating to "https://thequantuminsider.com/2024/02/19/state-leaders-announce-details-of-legislation-to-accelerate-colorados-quantum-ecosystem/", 
+[09:46:24 +28s | thequantuminsider_2024_02_19_state_leaders_announce_details_of_legislation_to_accelerate_d8a5b969] waiting until "domcontentloaded"
+
+
+[09:46:24 +28s | thequantuminsider_2024_02_19_state_leaders_announce_details_of_legislation_to_accelerate_d8a5b969] Code context:
+[09:46:24 +28s | thequantuminsider_2024_02_19_state_leaders_announce_details_of_legislation_to_accelerate_d8a5b969]  773                                   tag="GOTO",
+[09:46:24 +28s | thequantuminsider_2024_02_19_state_leaders_announce_details_of_legislation_to_accelerate_d8a5b969]  774                                   params={"url": url},
+[09:46:24 +28s | thequantuminsider_2024_02_19_state_leaders_announce_details_of_legislation_to_accelerate_d8a5b969]  775                               )
+[09:46:24 +28s | thequantuminsider_2024_02_19_state_leaders_announce_details_of_legislation_to_accelerate_d8a5b969]  776                               response = None
+[09:46:24 +28s | thequantuminsider_2024_02_19_state_leaders_announce_details_of_legislation_to_accelerate_d8a5b969]  777                           else:
+[09:46:24 +28s | thequantuminsider_2024_02_19_state_leaders_announce_details_of_legislation_to_accelerate_d8a5b969]  778 →                             raise RuntimeError(f"Failed on navigating ACS-GOTO:\n{str(e)}")
+[09:46:24 +28s | thequantuminsider_2024_02_19_state_leaders_announce_details_of_legislation_to_accelerate_d8a5b969]  779   
+[09:46:24 +28s | thequantuminsider_2024_02_19_state_leaders_announce_details_of_legislation_to_accelerate_d8a5b969]  780                       # ──────────────────────────────────────────────────────────────
+[09:46:24 +28s | thequantuminsider_2024_02_19_state_leaders_announce_details_of_legislation_to_accelerate_d8a5b969]  781                       # Walk the redirect chain.  Playwright returns only the last
+[09:46:24 +28s | thequantuminsider_2024_02_19_state_leaders_announce_details_of_legislation_to_accelerate_d8a5b969]  782                       # hop, so we trace the `request.redirected_from` links until the
+[09:46:24 +28s | thequantuminsider_2024_02_19_state_leaders_announce_details_of_legislation_to_accelerate_d8a5b969]  783                       # first response that differs from the final one and surface its 
+[09:46:24 +28s | thequantuminsider_2024_02_19_state_leaders_announce_details_of_legislation_to_accelerate_d8a5b969] Saved: crawl_output/713ceb930c_thequantuminsider.com_2024_02_19_state-leaders-announce-details-of-legislation-to-accelerate-colorados-quantum-ecosystem.json
+
+[09:46:24 +29s | thequantuminsider_2024_02_19_state_leaders_announce_details_of_legislation_to_accelerate_d8a5b969] === 1 actor extraction ===
+[09:46:24 +29s | thequantuminsider_2024_02_19_state_leaders_announce_details_of_legislation_to_accelerate_d8a5b969] Reading page (1/1): https://thequantuminsider.com/2024/02/19/state-leaders-announce-details-of-legislation-to-accelerate-colorados-quantum-ecosystem
+[09:46:24 +29s | thequantuminsider_2024_02_19_state_leaders_announce_details_of_legislation_to_accelerate_d8a5b969] Extracting actors: https://thequantuminsider.com/2024/02/19/state-leaders-announce-details-of-legislation-to-accelerate-colorados-quantum-ecosystem (1/1), chunk 1/1
+[09:46:34 +39s | thequantuminsider_2024_02_19_state_leaders_announce_details_of_legislation_to_accelerate_d8a5b969] Model call failed for https://thequantuminsider.com/2024/02/19/state-leaders-announce-details-of-legislation-to-accelerate-colorados-quantum-ecosystem chunk 1: Cannot connect to host api.cloudflare.com:443 ssl:default [Temporary failure in name resolution]
+[09:46:34 +39s | thequantuminsider_2024_02_19_state_leaders_announce_details_of_legislation_to_accelerate_d8a5b969] Saved 1_actor_results.json with 0 extracted records
+
+[09:46:34 +39s | thequantuminsider_2024_02_19_state_leaders_announce_details_of_legislation_to_accelerate_d8a5b969] === 2 clean actors ===
+[09:46:34 +39s | thequantuminsider_2024_02_19_state_leaders_announce_details_of_legislation_to_accelerate_d8a5b969] Loaded 0 extracted records
+[09:46:34 +39s | thequantuminsider_2024_02_19_state_leaders_announce_details_of_legislation_to_accelerate_d8a5b969] Saved 2_actor_nodes.json with 0 canonical actor nodes
+
+[09:46:34 +39s | thequantuminsider_2024_02_19_state_leaders_announce_details_of_legislation_to_accelerate_d8a5b969] === 3 interaction extraction ===
+[09:46:35 +40s | thequantuminsider_2024_02_19_state_leaders_announce_details_of_legislation_to_accelerate_d8a5b969] No valid actors found, skipping.
+
+[09:46:35 +40s | thequantuminsider_2024_02_19_state_leaders_announce_details_of_legislation_to_accelerate_d8a5b969] === 4 clean interactions ===
+[09:46:35 +40s | thequantuminsider_2024_02_19_state_leaders_announce_details_of_legislation_to_accelerate_d8a5b969] No input (3_interaction_results.json missing -- upstream produced no edges). Wrote empty 4_edges.json.
+
+[09:46:35 +40s | thequantuminsider_2024_02_19_state_leaders_announce_details_of_legislation_to_accelerate_d8a5b969] === 5 helix enrichment ===
+[09:46:35 +40s | thequantuminsider_2024_02_19_state_leaders_announce_details_of_legislation_to_accelerate_d8a5b969] Wrote 5_nodes.json (0 actors)
+[09:46:35 +40s | thequantuminsider_2024_02_19_state_leaders_announce_details_of_legislation_to_accelerate_d8a5b969] Wrote 5_edges.json (0 interactions)
+[09:46:35 +40s | thequantuminsider_2024_02_19_state_leaders_announce_details_of_legislation_to_accelerate_d8a5b969] Actor helix counts: {}
+[09:46:35 +40s | thequantuminsider_2024_02_19_state_leaders_announce_details_of_legislation_to_accelerate_d8a5b969] Functional-space counts: {}
+
+[09:46:35 +40s | thequantuminsider_2024_02_19_state_leaders_announce_details_of_legislation_to_accelerate_d8a5b969] === 6 network visualisation ===
+[09:46:36 +41s | thequantuminsider_2024_02_19_state_leaders_announce_details_of_legislation_to_accelerate_d8a5b969] Wrote quantum_network.html
+[09:46:36 +41s | thequantuminsider_2024_02_19_state_leaders_announce_details_of_legislation_to_accelerate_d8a5b969] Nodes: 0
+[09:46:36 +41s | thequantuminsider_2024_02_19_state_leaders_announce_details_of_legislation_to_accelerate_d8a5b969] Edges: 0
+
+[09:46:36 +41s | thequantuminsider_2024_02_19_state_leaders_announce_details_of_legislation_to_accelerate_d8a5b969] Done. Outputs written to: /home/lv/IDP/idpdeeptech/pipeline/news_outputs/thequantuminsider_2024_02_19_state_leaders_announce_details_of_legislation_to_accelerate_d8a5b969
+[09:46:36 +41s | thequantuminsider_2024_02_19_state_leaders_announce_details_of_legislation_to_accelerate_d8a5b969] Log: /home/lv/IDP/idpdeeptech/pipeline/news_outputs/thequantuminsider_2024_02_19_state_leaders_announce_details_of_legislation_to_accelerate_d8a5b969/run.log
+
+========================================================================
+RUN FINISHED 2026-07-02 09:46:36  (OK)
+Started:     2026-07-02 09:45:55
+Elapsed:     41s
+========================================================================

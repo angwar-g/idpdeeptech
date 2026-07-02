@@ -1,0 +1,266 @@
+[
+  {
+    "source_actor": "Superposition Guy Podcast",
+    "target_actor": "Niccolo Somaschi",
+    "interaction_phrase": "Niccolo Somaschi, CEO, Quandela",
+    "occurrence_sentence": "# Superposition Guy Podcast — Niccolo Somaschi, CEO, Quandela",
+    "source_document": "https://thequantuminsider.com/2024/03/14/superposition-guy-podcast-niccolo-somaschi-ceo-quandela",
+    "page": 11
+  },
+  {
+    "source_actor": "Superposition Guy Podcast",
+    "target_actor": "Quandela",
+    "interaction_phrase": "Niccolo Somaschi, CEO, Quandela",
+    "occurrence_sentence": "# Superposition Guy Podcast — Niccolo Somaschi, CEO, Quandela",
+    "source_document": "https://thequantuminsider.com/2024/03/14/superposition-guy-podcast-niccolo-somaschi-ceo-quandela",
+    "page": 11
+  },
+  {
+    "interaction_phrase": "interviewed by",
+    "occurrence_sentence": "Niccolo Somaschi, CEO of Quandela, is interviewed by Yuval Boger.",
+    "page": 12,
+    "source_actor": "Yuval Boger",
+    "source_document": "https://thequantuminsider.com/2024/03/14/superposition-guy-podcast-niccolo-somaschi-ceo-quandela",
+    "target_actor": "Niccolo Somaschi"
+  },
+  {
+    "interaction_phrase": "Hello, Nicolo, and thank you for joining me today.",
+    "occurrence_sentence": "**Yuval Boger:** Hello, Nicolo, and thank you for joining me today.",
+    "page": 12,
+    "source_actor": "Yuval Boger",
+    "source_document": "https://thequantuminsider.com/2024/03/14/superposition-guy-podcast-niccolo-somaschi-ceo-quandela",
+    "target_actor": "Niccolo Somaschi"
+  },
+  {
+    "interaction_phrase": "Hello, Yuval.",
+    "occurrence_sentence": "**Niccolo Somaschi:** Hello, Yuval.",
+    "page": 12,
+    "source_actor": "Niccolo Somaschi",
+    "source_document": "https://thequantuminsider.com/2024/03/14/superposition-guy-podcast-niccolo-somaschi-ceo-quandela",
+    "target_actor": "Yuval Boger"
+  },
+  {
+    "interaction_phrase": "CEO of",
+    "occurrence_sentence": "Niccolo Somaschi, CEO of Quandela, is interviewed by Yuval Boger.",
+    "page": 12,
+    "source_actor": "Niccolo Somaschi",
+    "source_document": "https://thequantuminsider.com/2024/03/14/superposition-guy-podcast-niccolo-somaschi-ceo-quandela",
+    "target_actor": "Quandela"
+  },
+  {
+    "interaction_phrase": "hosted by",
+    "occurrence_sentence": "**\"The Superposition Guy's Podcast, hosted by Yuval Boger, CMO at QuEra Computing",
+    "page": 12,
+    "source_actor": "Yuval Boger",
+    "source_document": "https://thequantuminsider.com/2024/03/14/superposition-guy-podcast-niccolo-somaschi-ceo-quandela",
+    "target_actor": "QuEra Computing"
+  },
+  {
+    "interaction_phrase": "is interviewed by",
+    "occurrence_sentence": "Niccolo Somaschi, CEO of Quandela, is interviewed by Yuval Boger.",
+    "page": 13,
+    "source_actor": "Yuval Boger",
+    "source_document": "https://thequantuminsider.com/2024/03/14/superposition-guy-podcast-niccolo-somaschi-ceo-quandela",
+    "target_actor": "Niccolo Somaschi"
+  },
+  {
+    "interaction_phrase": "CEO of",
+    "occurrence_sentence": "Niccolo Somaschi, CEO of Quandela, is interviewed by Yuval Boger.",
+    "page": 13,
+    "source_actor": "Niccolo Somaschi",
+    "source_document": "https://thequantuminsider.com/2024/03/14/superposition-guy-podcast-niccolo-somaschi-ceo-quandela",
+    "target_actor": "Quandela"
+  },
+  {
+    "interaction_phrase": "co-founded",
+    "occurrence_sentence": "I'm the CEO of Quandela, a quantum computing company based in Europe, with head-quarters in Paris, which I co-founded in 2017, together with Valerian Giesz and Pascale Senellart.",
+    "page": 13,
+    "source_actor": "Niccolo Somaschi",
+    "source_document": "https://thequantuminsider.com/2024/03/14/superposition-guy-podcast-niccolo-somaschi-ceo-quandela",
+    "target_actor": "Quandela"
+  },
+  {
+    "interaction_phrase": "your computer",
+    "occurrence_sentence": "Yuval : So that probably means I can't just take a QASM program and send it to your computer, right?",
+    "page": 15,
+    "source_actor": "Yuval",
+    "source_document": "https://thequantuminsider.com/2024/03/14/superposition-guy-podcast-niccolo-somaschi-ceo-quandela",
+    "target_actor": "Quandela"
+  },
+  {
+    "interaction_phrase": "your computer",
+    "occurrence_sentence": "Yuval : And if I compare your computer today to one in two years, for instance, is the number of qubits the measure that you're looking at, or is it something else?",
+    "page": 15,
+    "source_actor": "Yuval",
+    "source_document": "https://thequantuminsider.com/2024/03/14/superposition-guy-podcast-niccolo-somaschi-ceo-quandela",
+    "target_actor": "Quandela"
+  },
+  {
+    "interaction_phrase": "Something similar to what Quantinuum",
+    "occurrence_sentence": "This is a simple application, but powerful itself. And we can even call it a quantum advantage in the sense it's not a quantum computing advantage, but it's a quantum advantage in cryptography where quantum helps to increase the level of security compared to other classical methods. **Yuval** : You mentioned IBM and Quantinuum, and I think certainly IBM, when they think about a larger number of qubits, they say at some point we're going to need to use interconnects. IonQ, I think the same thing. They have optical interconnects. Now, given that your system is optical from the get-go, how does it scale? Do you need multiple machines and somehow interconnect them, or do you just add more fibers? **Niccolo** : A bit of both. As I was saying in the beginning, today we use semiconductors a matter-based qubits, to generate light, to generate the qubits. So the photon itself, the qubits, part of the computation, gets out of the parts of the machine and runs into fibers.",
+    "page": 18,
+    "source_actor": "Quandela",
+    "source_document": "https://thequantuminsider.com/2024/03/14/superposition-guy-podcast-niccolo-somaschi-ceo-quandela",
+    "target_actor": "Quantinuum"
+  },
+  {
+    "interaction_phrase": "Something similar to what IBM",
+    "occurrence_sentence": "This is a simple application, but powerful itself. And we can even call it a quantum advantage in the sense it's not a quantum computing advantage, but it's a quantum advantage in cryptography where quantum helps to increase the level of security compared to other classical methods. **Yuval** : You mentioned IBM and Quantinuum, and I think certainly IBM, when they think about a larger number of qubits, they say at some point we're going to need to use interconnects. IonQ, I think the same thing. They have optical interconnects. Now, given that your system is optical from the get-go, how does it scale? Do you need multiple machines and somehow interconnect them, or do you just add more fibers? **Niccolo** : A bit of both. As I was saying in the beginning, today we use semiconductors a matter-based qubits, to generate light, to generate the qubits. So the photon itself, the qubits, part of the computation, gets out of the parts of the machine and runs into fibers.",
+    "page": 18,
+    "source_actor": "Quandela",
+    "source_document": "https://thequantuminsider.com/2024/03/14/superposition-guy-podcast-niccolo-somaschi-ceo-quandela",
+    "target_actor": "IBM"
+  },
+  {
+    "interaction_phrase": "Quantinuum and IBM",
+    "occurrence_sentence": "the application that we run on this computer is to generate quantum-certified random numbers. Something similar to what Quantinuum and IBM have developed with their platform.",
+    "page": 19,
+    "source_actor": "Quantinuum",
+    "source_document": "https://thequantuminsider.com/2024/03/14/superposition-guy-podcast-niccolo-somaschi-ceo-quandela",
+    "target_actor": "IBM"
+  },
+  {
+    "interaction_phrase": "OVH, just one of your first customers",
+    "occurrence_sentence": "When you install a system, I think you mentioned OVH, just one of your first customers.",
+    "page": 22,
+    "source_actor": "Yuval",
+    "source_document": "https://thequantuminsider.com/2024/03/14/superposition-guy-podcast-niccolo-somaschi-ceo-quandela",
+    "target_actor": "Quandela"
+  },
+  {
+    "interaction_phrase": "Perceval, the programming framework",
+    "occurrence_sentence": "But Perceval, the programming framework, has everything needed as APIs to be connected to the internal cloud, for example, OVH, which is not opening this machine to their customer because it's used for internal research purposes.",
+    "page": 22,
+    "source_actor": "Yuval",
+    "source_document": "https://thequantuminsider.com/2024/03/14/superposition-guy-podcast-niccolo-somaschi-ceo-quandela",
+    "target_actor": "Quandela"
+  },
+  {
+    "interaction_phrase": "the quantum simulator shares part of the algorithm with the classical GPU",
+    "occurrence_sentence": "This is something we already do with the simulator, so the quantum simulator shares part of the algorithm with the classical GPU.",
+    "page": 22,
+    "source_actor": "Yuval",
+    "source_document": "https://thequantuminsider.com/2024/03/14/superposition-guy-podcast-niccolo-somaschi-ceo-quandela",
+    "target_actor": "Quandela"
+  },
+  {
+    "interaction_phrase": "every photon counts",
+    "occurrence_sentence": "So in Quandela, what we say is that \"every photon counts\".",
+    "page": 22,
+    "source_actor": "Yuval",
+    "source_document": "https://thequantuminsider.com/2024/03/14/superposition-guy-podcast-niccolo-somaschi-ceo-quandela",
+    "target_actor": "Quandela"
+  },
+  {
+    "interaction_phrase": "in Quandela",
+    "occurrence_sentence": "So in Quandela, what we say is that \"every photon counts\".",
+    "page": 23,
+    "source_actor": "Yuval",
+    "source_document": "https://thequantuminsider.com/2024/03/14/superposition-guy-podcast-niccolo-somaschi-ceo-quandela",
+    "target_actor": "Quandela"
+  },
+  {
+    "interaction_phrase": "joining me today",
+    "occurrence_sentence": "Nicolo, thank you so much for joining me today.",
+    "page": 23,
+    "source_actor": "Yuval",
+    "source_document": "https://thequantuminsider.com/2024/03/14/superposition-guy-podcast-niccolo-somaschi-ceo-quandela",
+    "target_actor": "Quandela"
+  },
+  {
+    "interaction_phrase": "thank you, Yuval",
+    "occurrence_sentence": "Niccolo: Thank you, Yuval.",
+    "page": 24,
+    "source_actor": "Niccolo Somaschi",
+    "source_document": "https://thequantuminsider.com/2024/03/14/superposition-guy-podcast-niccolo-somaschi-ceo-quandela",
+    "target_actor": "Yuval"
+  },
+  {
+    "interaction_phrase": "thank you so much for joining me today",
+    "occurrence_sentence": "Yuval: Very good. Nicolo, thank you so much for joining me today.",
+    "page": 24,
+    "source_actor": "Yuval",
+    "source_document": "https://thequantuminsider.com/2024/03/14/superposition-guy-podcast-niccolo-somaschi-ceo-quandela",
+    "target_actor": "Niccolo Somaschi"
+  },
+  {
+    "source_actor": "Niccolo Somaschi",
+    "target_actor": "Quandela",
+    "interaction_phrase": "Niccolo Somaschi, CEO Quandela",
+    "occurrence_sentence": "Superposition Guy Podcast Niccolo Somaschi, CEO Quandela",
+    "source_document": "https://thequantuminsider.com/2024/03/14/superposition-guy-podcast-niccolo-somaschi-ceo-quandela",
+    "page": 25
+  },
+  {
+    "source_actor": "Resonance",
+    "target_actor": "Quantum Insider (TQI)",
+    "interaction_phrase": "The Quantum Insider",
+    "occurrence_sentence": "The Quantum Insider is the leading online resource dedicated exclusively to Quantum Computing.",
+    "source_document": "https://thequantuminsider.com/2024/03/14/superposition-guy-podcast-niccolo-somaschi-ceo-quandela",
+    "page": 25
+  },
+  {
+    "source_actor": "Classiq",
+    "target_actor": "QAI",
+    "interaction_phrase": "Classiq and QAI Launch Quantum Cloud Offering in Korea",
+    "occurrence_sentence": "Classiq and QAI Launch Quantum Cloud Offering in Korea",
+    "source_document": "https://thequantuminsider.com/2024/03/14/superposition-guy-podcast-niccolo-somaschi-ceo-quandela",
+    "page": 26
+  },
+  {
+    "source_actor": "Classiq",
+    "target_actor": "QAI",
+    "interaction_phrase": "launch Quantum Cloud Offering in Korea",
+    "occurrence_sentence": "Classiq and QAI Launch Quantum Cloud Offering in Korea",
+    "source_document": "https://thequantuminsider.com/2024/03/14/superposition-guy-podcast-niccolo-somaschi-ceo-quandela",
+    "page": 27
+  },
+  {
+    "source_actor": "Classiq",
+    "target_actor": "QAI",
+    "interaction_phrase": "Classiq and QAI Launch",
+    "occurrence_sentence": "Classiq and QAI Launch Quantum Cloud Offering in Korea",
+    "source_document": "https://thequantuminsider.com/2024/03/14/superposition-guy-podcast-niccolo-somaschi-ceo-quandela",
+    "page": 28
+  },
+  {
+    "source_actor": "Classiq",
+    "target_actor": "QAI",
+    "interaction_phrase": "Classiq and QAI Launch",
+    "occurrence_sentence": "[Classiq and QAI Launch Quantum Cloud Offering in Korea](https://thequantuminsider.com/2026/07/01/classiq-and-qai-launch-quantum-cloud-offering-in-korea/)",
+    "source_document": "https://thequantuminsider.com/2024/03/14/superposition-guy-podcast-niccolo-somaschi-ceo-quandela",
+    "page": 29
+  },
+  {
+    "source_actor": "Classiq",
+    "target_actor": "QAI",
+    "interaction_phrase": "Classiq and QAI Launch",
+    "occurrence_sentence": "Classiq and QAI Launch Quantum Cloud Offering in Korea",
+    "source_document": "https://thequantuminsider.com/2024/03/14/superposition-guy-podcast-niccolo-somaschi-ceo-quandela",
+    "page": 30
+  },
+  {
+    "source_actor": "Classiq",
+    "target_actor": "QAI",
+    "interaction_phrase": "Launch Quantum Cloud Offering in Korea",
+    "occurrence_sentence": "Classiq and QAI Launch Quantum Cloud Offering in Korea",
+    "source_document": "https://thequantuminsider.com/2024/03/14/superposition-guy-podcast-niccolo-somaschi-ceo-quandela",
+    "page": 31
+  },
+  {
+    "interaction_phrase": "Launch Quantum Cloud Offering",
+    "occurrence_sentence": "Classiq and QAI Launch Quantum Cloud Offering in Korea",
+    "page": 32,
+    "source_actor": "Classiq",
+    "source_document": "https://thequantuminsider.com/2024/03/14/superposition-guy-podcast-niccolo-somaschi-ceo-quandela",
+    "target_actor": "QAI"
+  },
+  {
+    "interaction_phrase": "Designed by Resonance",
+    "occurrence_sentence": "2026 © Resonance Alliance Inc. All Rights Reserved Designed by Resonance",
+    "page": 36,
+    "source_actor": "Resonance Alliance Inc.",
+    "source_document": "https://thequantuminsider.com/2024/03/14/superposition-guy-podcast-niccolo-somaschi-ceo-quandela",
+    "target_actor": "Resonance"
+  }
+]

@@ -1,0 +1,38 @@
+[
+  {
+    "interaction_phrase": "from NVIDIA",
+    "occurrence_sentence": "Dr. Jin-Sung Kim from NVIDIA emphasized the importance of ecosystem collaboration.",
+    "page": 12,
+    "source_actor": "Dr. Jin-Sung Kim",
+    "source_document": "https://thequantuminsider.com/2024/02/28/quantum-computing-pioneers-unveil-future-of-supercomputing-at-nvidia",
+    "target_actor": "NVIDIA",
+    "relation_label": "networking",
+    "relation_label_confidence": "high",
+    "source_actor_key": "dr jin sung kim",
+    "target_actor_key": "nvidia",
+    "source_helix": "Unknown",
+    "target_helix": "Industry",
+    "helix_pair": "Unknown–Industry",
+    "functional_space": "Unknown",
+    "functional_space_needs_review": true,
+    "functional_space_review_reason": "source_actor_classification_needs_review; functional_space:Unknown"
+  },
+  {
+    "interaction_phrase": "from NVIDIA",
+    "occurrence_sentence": "Dr. Jin-Sung Kim from NVIDIA emphasized the importance of ecosystem collaboration.",
+    "page": 13,
+    "source_actor": "NVIDIA",
+    "source_document": "https://thequantuminsider.com/2024/02/28/quantum-computing-pioneers-unveil-future-of-supercomputing-at-nvidia",
+    "target_actor": "Dr. Jin-Sung Kim",
+    "relation_label": "networking",
+    "relation_label_confidence": "high",
+    "source_actor_key": "nvidia",
+    "target_actor_key": "dr jin sung kim",
+    "source_helix": "Industry",
+    "target_helix": "Unknown",
+    "helix_pair": "Industry–Unknown",
+    "functional_space": "Unknown",
+    "functional_space_needs_review": true,
+    "functional_space_review_reason": "target_actor_classification_needs_review; functional_space:Unknown"
+  }
+]

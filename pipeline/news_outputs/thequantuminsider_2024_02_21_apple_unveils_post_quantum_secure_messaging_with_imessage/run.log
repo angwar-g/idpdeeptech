@@ -1,0 +1,72 @@
+
+========================================================================
+RUN STARTED  2026-07-02 09:44:04
+site_pipeline.py https://thequantuminsider.com/2024/02/21/apple-unveils-post-quantum-secure-messaging-with-imessage/
+========================================================================
+
+[09:44:04 +0s | thequantuminsider_2024_02_21_apple_unveils_post_quantum_secure_messaging_with_imessage] === 0 crawl site ===
+[09:44:06 +2s | thequantuminsider_2024_02_21_apple_unveils_post_quantum_secure_messaging_with_imessage] [INIT].... → Crawl4AI 0.8.6 
+[09:44:32 +29s | thequantuminsider_2024_02_21_apple_unveils_post_quantum_secure_messaging_with_imessage] [ANTIBOT]. ℹ https://thequantuminsid...essaging-with-imessage/  | Error: Proxy direct failed: Failed on navigating ACS-GOTO:
+[09:44:32 +29s | thequantuminsider_2024_02_21_apple_unveils_post_quantum_secure_messaging_with_imessage] Page.goto: net::ERR_NAME_NOT_RESOLVED at https://thequantuminsider.com/2024/02/21/apple-unveils-post-quantum-secure-messaging-with-imessage/
+[09:44:32 +29s | thequantuminsider_2024_02_21_apple_unveils_post_quantum_secure_messaging_with_imessage] Call log:
+[09:44:32 +29s | thequantuminsider_2024_02_21_apple_unveils_post_quantum_secure_messaging_with_imessage]   - navigating to "https://thequantuminsider.com/2024/02/21/apple-unveils-post-quantum-secure-messaging-with-imessage/", waiting until 
+[09:44:32 +29s | thequantuminsider_2024_02_21_apple_unveils_post_quantum_secure_messaging_with_imessage] "domcontentloaded"
+ 
+[09:44:32 +29s | thequantuminsider_2024_02_21_apple_unveils_post_quantum_secure_messaging_with_imessage] [ERROR]... × https://thequantuminsid...essaging-with-imessage/  | Error: Unexpected error in _crawl_web at line 778 in _crawl_web 
+[09:44:32 +29s | thequantuminsider_2024_02_21_apple_unveils_post_quantum_secure_messaging_with_imessage] (../../../../../.local/lib/python3.10/site-packages/crawl4ai/async_crawler_strategy.py):
+[09:44:32 +29s | thequantuminsider_2024_02_21_apple_unveils_post_quantum_secure_messaging_with_imessage] Error: Failed on navigating ACS-GOTO:
+[09:44:32 +29s | thequantuminsider_2024_02_21_apple_unveils_post_quantum_secure_messaging_with_imessage] Page.goto: net::ERR_NAME_NOT_RESOLVED at https://thequantuminsider.com/2024/02/21/apple-unveils-post-quantum-secure-messaging-with-imessage/
+[09:44:32 +29s | thequantuminsider_2024_02_21_apple_unveils_post_quantum_secure_messaging_with_imessage] Call log:
+[09:44:32 +29s | thequantuminsider_2024_02_21_apple_unveils_post_quantum_secure_messaging_with_imessage]   - navigating to "https://thequantuminsider.com/2024/02/21/apple-unveils-post-quantum-secure-messaging-with-imessage/", waiting until 
+[09:44:32 +29s | thequantuminsider_2024_02_21_apple_unveils_post_quantum_secure_messaging_with_imessage] "domcontentloaded"
+
+
+[09:44:32 +29s | thequantuminsider_2024_02_21_apple_unveils_post_quantum_secure_messaging_with_imessage] Code context:
+[09:44:32 +29s | thequantuminsider_2024_02_21_apple_unveils_post_quantum_secure_messaging_with_imessage]  773                                   tag="GOTO",
+[09:44:32 +29s | thequantuminsider_2024_02_21_apple_unveils_post_quantum_secure_messaging_with_imessage]  774                                   params={"url": url},
+[09:44:32 +29s | thequantuminsider_2024_02_21_apple_unveils_post_quantum_secure_messaging_with_imessage]  775                               )
+[09:44:32 +29s | thequantuminsider_2024_02_21_apple_unveils_post_quantum_secure_messaging_with_imessage]  776                               response = None
+[09:44:32 +29s | thequantuminsider_2024_02_21_apple_unveils_post_quantum_secure_messaging_with_imessage]  777                           else:
+[09:44:32 +29s | thequantuminsider_2024_02_21_apple_unveils_post_quantum_secure_messaging_with_imessage]  778 →                             raise RuntimeError(f"Failed on navigating ACS-GOTO:\n{str(e)}")
+[09:44:32 +29s | thequantuminsider_2024_02_21_apple_unveils_post_quantum_secure_messaging_with_imessage]  779   
+[09:44:32 +29s | thequantuminsider_2024_02_21_apple_unveils_post_quantum_secure_messaging_with_imessage]  780                       # ──────────────────────────────────────────────────────────────
+[09:44:32 +29s | thequantuminsider_2024_02_21_apple_unveils_post_quantum_secure_messaging_with_imessage]  781                       # Walk the redirect chain.  Playwright returns only the last
+[09:44:32 +29s | thequantuminsider_2024_02_21_apple_unveils_post_quantum_secure_messaging_with_imessage]  782                       # hop, so we trace the `request.redirected_from` links until the
+[09:44:32 +29s | thequantuminsider_2024_02_21_apple_unveils_post_quantum_secure_messaging_with_imessage]  783                       # first response that differs from the final one and surface its 
+[09:44:32 +29s | thequantuminsider_2024_02_21_apple_unveils_post_quantum_secure_messaging_with_imessage] Saved: crawl_output/1dc5506d28_thequantuminsider.com_2024_02_21_apple-unveils-post-quantum-secure-messaging-with-imessage.json
+
+[09:44:33 +29s | thequantuminsider_2024_02_21_apple_unveils_post_quantum_secure_messaging_with_imessage] === 1 actor extraction ===
+[09:44:33 +30s | thequantuminsider_2024_02_21_apple_unveils_post_quantum_secure_messaging_with_imessage] Reading page (1/1): https://thequantuminsider.com/2024/02/21/apple-unveils-post-quantum-secure-messaging-with-imessage
+[09:44:33 +30s | thequantuminsider_2024_02_21_apple_unveils_post_quantum_secure_messaging_with_imessage] Extracting actors: https://thequantuminsider.com/2024/02/21/apple-unveils-post-quantum-secure-messaging-with-imessage (1/1), chunk 1/1
+[09:44:43 +40s | thequantuminsider_2024_02_21_apple_unveils_post_quantum_secure_messaging_with_imessage] Model call failed for https://thequantuminsider.com/2024/02/21/apple-unveils-post-quantum-secure-messaging-with-imessage chunk 1: Cannot connect to host api.cloudflare.com:443 ssl:default [Temporary failure in name resolution]
+[09:44:43 +40s | thequantuminsider_2024_02_21_apple_unveils_post_quantum_secure_messaging_with_imessage] Saved 1_actor_results.json with 0 extracted records
+
+[09:44:43 +40s | thequantuminsider_2024_02_21_apple_unveils_post_quantum_secure_messaging_with_imessage] === 2 clean actors ===
+[09:44:43 +40s | thequantuminsider_2024_02_21_apple_unveils_post_quantum_secure_messaging_with_imessage] Loaded 0 extracted records
+[09:44:43 +40s | thequantuminsider_2024_02_21_apple_unveils_post_quantum_secure_messaging_with_imessage] Saved 2_actor_nodes.json with 0 canonical actor nodes
+
+[09:44:43 +40s | thequantuminsider_2024_02_21_apple_unveils_post_quantum_secure_messaging_with_imessage] === 3 interaction extraction ===
+[09:44:44 +40s | thequantuminsider_2024_02_21_apple_unveils_post_quantum_secure_messaging_with_imessage] No valid actors found, skipping.
+
+[09:44:44 +40s | thequantuminsider_2024_02_21_apple_unveils_post_quantum_secure_messaging_with_imessage] === 4 clean interactions ===
+[09:44:44 +40s | thequantuminsider_2024_02_21_apple_unveils_post_quantum_secure_messaging_with_imessage] No input (3_interaction_results.json missing -- upstream produced no edges). Wrote empty 4_edges.json.
+
+[09:44:44 +40s | thequantuminsider_2024_02_21_apple_unveils_post_quantum_secure_messaging_with_imessage] === 5 helix enrichment ===
+[09:44:44 +40s | thequantuminsider_2024_02_21_apple_unveils_post_quantum_secure_messaging_with_imessage] Wrote 5_nodes.json (0 actors)
+[09:44:44 +40s | thequantuminsider_2024_02_21_apple_unveils_post_quantum_secure_messaging_with_imessage] Wrote 5_edges.json (0 interactions)
+[09:44:44 +40s | thequantuminsider_2024_02_21_apple_unveils_post_quantum_secure_messaging_with_imessage] Actor helix counts: {}
+[09:44:44 +40s | thequantuminsider_2024_02_21_apple_unveils_post_quantum_secure_messaging_with_imessage] Functional-space counts: {}
+
+[09:44:44 +40s | thequantuminsider_2024_02_21_apple_unveils_post_quantum_secure_messaging_with_imessage] === 6 network visualisation ===
+[09:44:45 +41s | thequantuminsider_2024_02_21_apple_unveils_post_quantum_secure_messaging_with_imessage] Wrote quantum_network.html
+[09:44:45 +41s | thequantuminsider_2024_02_21_apple_unveils_post_quantum_secure_messaging_with_imessage] Nodes: 0
+[09:44:45 +41s | thequantuminsider_2024_02_21_apple_unveils_post_quantum_secure_messaging_with_imessage] Edges: 0
+
+[09:44:45 +41s | thequantuminsider_2024_02_21_apple_unveils_post_quantum_secure_messaging_with_imessage] Done. Outputs written to: /home/lv/IDP/idpdeeptech/pipeline/news_outputs/thequantuminsider_2024_02_21_apple_unveils_post_quantum_secure_messaging_with_imessage
+[09:44:45 +41s | thequantuminsider_2024_02_21_apple_unveils_post_quantum_secure_messaging_with_imessage] Log: /home/lv/IDP/idpdeeptech/pipeline/news_outputs/thequantuminsider_2024_02_21_apple_unveils_post_quantum_secure_messaging_with_imessage/run.log
+
+========================================================================
+RUN FINISHED 2026-07-02 09:44:45  (OK)
+Started:     2026-07-02 09:44:04
+Elapsed:     41s
+========================================================================

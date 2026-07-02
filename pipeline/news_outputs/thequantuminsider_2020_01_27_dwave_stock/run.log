@@ -1,0 +1,150 @@
+
+========================================================================
+RUN STARTED  2026-07-02 04:09:39
+site_pipeline.py https://thequantuminsider.com/2020/01/27/dwave-stock/
+========================================================================
+
+[04:09:39 +0s | thequantuminsider_2020_01_27_dwave_stock] === 0 crawl site ===
+[04:09:40 +1s | thequantuminsider_2020_01_27_dwave_stock] [INIT].... → Crawl4AI 0.8.6 
+[04:09:42 +3s | thequantuminsider_2020_01_27_dwave_stock] [FETCH]... ↓ https://thequantuminsider.com/2020/01/27/dwave-stock/                                                | ✓ | ⏱: 1.97s 
+[04:09:42 +3s | thequantuminsider_2020_01_27_dwave_stock] [SCRAPE].. ◆ https://thequantuminsider.com/2020/01/27/dwave-stock/                                                | ✓ | ⏱: 0.11s 
+[04:09:42 +3s | thequantuminsider_2020_01_27_dwave_stock] [COMPLETE] ● https://thequantuminsider.com/2020/01/27/dwave-stock/                                                | ✓ | ⏱: 2.09s 
+[04:09:42 +3s | thequantuminsider_2020_01_27_dwave_stock] Saved: crawl_output/8ec2917b87_thequantuminsider.com_2020_01_27_dwave-stock.json
+
+[04:09:42 +4s | thequantuminsider_2020_01_27_dwave_stock] === 1 actor extraction ===
+[04:09:42 +4s | thequantuminsider_2020_01_27_dwave_stock] Reading page (1/1): https://thequantuminsider.com/2020/01/27/dwave-stock
+[04:09:42 +4s | thequantuminsider_2020_01_27_dwave_stock] Extracting actors: https://thequantuminsider.com/2020/01/27/dwave-stock (1/1), chunk 1/45
+[04:09:46 +7s | thequantuminsider_2020_01_27_dwave_stock] Extracting actors: https://thequantuminsider.com/2020/01/27/dwave-stock (1/1), chunk 2/45
+[04:09:51 +12s | thequantuminsider_2020_01_27_dwave_stock] Extracting actors: https://thequantuminsider.com/2020/01/27/dwave-stock (1/1), chunk 3/45
+[04:09:59 +17s | thequantuminsider_2020_01_27_dwave_stock] Extracting actors: https://thequantuminsider.com/2020/01/27/dwave-stock (1/1), chunk 4/45
+[04:10:03 +21s | thequantuminsider_2020_01_27_dwave_stock] Extracting actors: https://thequantuminsider.com/2020/01/27/dwave-stock (1/1), chunk 5/45
+[04:10:07 +25s | thequantuminsider_2020_01_27_dwave_stock] Extracting actors: https://thequantuminsider.com/2020/01/27/dwave-stock (1/1), chunk 6/45
+[04:10:12 +30s | thequantuminsider_2020_01_27_dwave_stock] Extracting actors: https://thequantuminsider.com/2020/01/27/dwave-stock (1/1), chunk 7/45
+[04:10:16 +34s | thequantuminsider_2020_01_27_dwave_stock] Extracting actors: https://thequantuminsider.com/2020/01/27/dwave-stock (1/1), chunk 8/45
+[04:10:21 +39s | thequantuminsider_2020_01_27_dwave_stock] Extracting actors: https://thequantuminsider.com/2020/01/27/dwave-stock (1/1), chunk 9/45
+[04:10:24 +42s | thequantuminsider_2020_01_27_dwave_stock] Extracting actors: https://thequantuminsider.com/2020/01/27/dwave-stock (1/1), chunk 10/45
+[04:10:31 +46s | thequantuminsider_2020_01_27_dwave_stock] Extracting actors: https://thequantuminsider.com/2020/01/27/dwave-stock (1/1), chunk 11/45
+[04:10:37 +52s | thequantuminsider_2020_01_27_dwave_stock] Extracting actors: https://thequantuminsider.com/2020/01/27/dwave-stock (1/1), chunk 12/45
+[04:10:44 +59s | thequantuminsider_2020_01_27_dwave_stock] Repaired malformed JSON.
+[04:10:44 +59s | thequantuminsider_2020_01_27_dwave_stock] Extracting actors: https://thequantuminsider.com/2020/01/27/dwave-stock (1/1), chunk 13/45
+[04:10:49 +1m 4s | thequantuminsider_2020_01_27_dwave_stock] Repaired malformed JSON.
+[04:10:49 +1m 4s | thequantuminsider_2020_01_27_dwave_stock] Extracting actors: https://thequantuminsider.com/2020/01/27/dwave-stock (1/1), chunk 14/45
+[04:10:56 +1m 12s | thequantuminsider_2020_01_27_dwave_stock] Repaired malformed JSON.
+[04:10:56 +1m 12s | thequantuminsider_2020_01_27_dwave_stock] Extracting actors: https://thequantuminsider.com/2020/01/27/dwave-stock (1/1), chunk 15/45
+[04:11:05 +1m 17s | thequantuminsider_2020_01_27_dwave_stock] Repaired malformed JSON.
+[04:11:05 +1m 17s | thequantuminsider_2020_01_27_dwave_stock] Extracting actors: https://thequantuminsider.com/2020/01/27/dwave-stock (1/1), chunk 16/45
+[04:11:12 +1m 24s | thequantuminsider_2020_01_27_dwave_stock] Repaired malformed JSON.
+[04:11:12 +1m 24s | thequantuminsider_2020_01_27_dwave_stock] Extracting actors: https://thequantuminsider.com/2020/01/27/dwave-stock (1/1), chunk 17/45
+[04:11:17 +1m 29s | thequantuminsider_2020_01_27_dwave_stock] Repaired malformed JSON.
+[04:11:17 +1m 29s | thequantuminsider_2020_01_27_dwave_stock] Extracting actors: https://thequantuminsider.com/2020/01/27/dwave-stock (1/1), chunk 18/45
+[04:11:22 +1m 35s | thequantuminsider_2020_01_27_dwave_stock] Repaired malformed JSON.
+[04:11:22 +1m 35s | thequantuminsider_2020_01_27_dwave_stock] Extracting actors: https://thequantuminsider.com/2020/01/27/dwave-stock (1/1), chunk 19/45
+[04:11:27 +1m 40s | thequantuminsider_2020_01_27_dwave_stock] Repaired malformed JSON.
+[04:11:27 +1m 40s | thequantuminsider_2020_01_27_dwave_stock] Extracting actors: https://thequantuminsider.com/2020/01/27/dwave-stock (1/1), chunk 20/45
+[04:11:35 +1m 48s | thequantuminsider_2020_01_27_dwave_stock] Repaired malformed JSON.
+[04:11:35 +1m 48s | thequantuminsider_2020_01_27_dwave_stock] Extracting actors: https://thequantuminsider.com/2020/01/27/dwave-stock (1/1), chunk 21/45
+[04:11:46 +1m 55s | thequantuminsider_2020_01_27_dwave_stock] Repaired malformed JSON.
+[04:11:46 +1m 55s | thequantuminsider_2020_01_27_dwave_stock] Extracting actors: https://thequantuminsider.com/2020/01/27/dwave-stock (1/1), chunk 22/45
+[04:11:52 +2m 2s | thequantuminsider_2020_01_27_dwave_stock] Repaired malformed JSON.
+[04:11:52 +2m 2s | thequantuminsider_2020_01_27_dwave_stock] Extracting actors: https://thequantuminsider.com/2020/01/27/dwave-stock (1/1), chunk 23/45
+[04:11:59 +2m 8s | thequantuminsider_2020_01_27_dwave_stock] Repaired malformed JSON.
+[04:11:59 +2m 8s | thequantuminsider_2020_01_27_dwave_stock] Extracting actors: https://thequantuminsider.com/2020/01/27/dwave-stock (1/1), chunk 24/45
+[04:12:04 +2m 13s | thequantuminsider_2020_01_27_dwave_stock] Repaired malformed JSON.
+[04:12:04 +2m 13s | thequantuminsider_2020_01_27_dwave_stock] Extracting actors: https://thequantuminsider.com/2020/01/27/dwave-stock (1/1), chunk 25/45
+[04:12:11 +2m 20s | thequantuminsider_2020_01_27_dwave_stock] Repaired malformed JSON.
+[04:12:11 +2m 20s | thequantuminsider_2020_01_27_dwave_stock] Extracting actors: https://thequantuminsider.com/2020/01/27/dwave-stock (1/1), chunk 26/45
+[04:12:21 +2m 27s | thequantuminsider_2020_01_27_dwave_stock] Repaired malformed JSON.
+[04:12:21 +2m 27s | thequantuminsider_2020_01_27_dwave_stock] Extracting actors: https://thequantuminsider.com/2020/01/27/dwave-stock (1/1), chunk 27/45
+[04:12:27 +2m 33s | thequantuminsider_2020_01_27_dwave_stock] Repaired malformed JSON.
+[04:12:27 +2m 33s | thequantuminsider_2020_01_27_dwave_stock] Extracting actors: https://thequantuminsider.com/2020/01/27/dwave-stock (1/1), chunk 28/45
+[04:12:32 +2m 39s | thequantuminsider_2020_01_27_dwave_stock] Repaired malformed JSON.
+[04:12:32 +2m 39s | thequantuminsider_2020_01_27_dwave_stock] Extracting actors: https://thequantuminsider.com/2020/01/27/dwave-stock (1/1), chunk 29/45
+[04:12:37 +2m 44s | thequantuminsider_2020_01_27_dwave_stock] Repaired malformed JSON.
+[04:12:37 +2m 44s | thequantuminsider_2020_01_27_dwave_stock] Extracting actors: https://thequantuminsider.com/2020/01/27/dwave-stock (1/1), chunk 30/45
+[04:12:47 +2m 53s | thequantuminsider_2020_01_27_dwave_stock] Repaired malformed JSON.
+[04:12:47 +2m 53s | thequantuminsider_2020_01_27_dwave_stock] Extracting actors: https://thequantuminsider.com/2020/01/27/dwave-stock (1/1), chunk 31/45
+[04:12:56 +3m 0s | thequantuminsider_2020_01_27_dwave_stock] Repaired malformed JSON.
+[04:12:56 +3m 0s | thequantuminsider_2020_01_27_dwave_stock] Extracting actors: https://thequantuminsider.com/2020/01/27/dwave-stock (1/1), chunk 32/45
+[04:13:01 +3m 5s | thequantuminsider_2020_01_27_dwave_stock] Repaired malformed JSON.
+[04:13:01 +3m 5s | thequantuminsider_2020_01_27_dwave_stock] Extracting actors: https://thequantuminsider.com/2020/01/27/dwave-stock (1/1), chunk 33/45
+[04:13:06 +3m 10s | thequantuminsider_2020_01_27_dwave_stock] Extracting actors: https://thequantuminsider.com/2020/01/27/dwave-stock (1/1), chunk 34/45
+[04:13:10 +3m 13s | thequantuminsider_2020_01_27_dwave_stock] Extracting actors: https://thequantuminsider.com/2020/01/27/dwave-stock (1/1), chunk 35/45
+[04:13:13 +3m 17s | thequantuminsider_2020_01_27_dwave_stock] Extracting actors: https://thequantuminsider.com/2020/01/27/dwave-stock (1/1), chunk 36/45
+[04:13:16 +3m 20s | thequantuminsider_2020_01_27_dwave_stock] Extracting actors: https://thequantuminsider.com/2020/01/27/dwave-stock (1/1), chunk 37/45
+[04:13:25 +3m 26s | thequantuminsider_2020_01_27_dwave_stock] Repaired malformed JSON.
+[04:13:25 +3m 26s | thequantuminsider_2020_01_27_dwave_stock] Extracting actors: https://thequantuminsider.com/2020/01/27/dwave-stock (1/1), chunk 38/45
+[04:13:30 +3m 31s | thequantuminsider_2020_01_27_dwave_stock] Repaired malformed JSON.
+[04:13:30 +3m 31s | thequantuminsider_2020_01_27_dwave_stock] Extracting actors: https://thequantuminsider.com/2020/01/27/dwave-stock (1/1), chunk 39/45
+[04:13:37 +3m 38s | thequantuminsider_2020_01_27_dwave_stock] Repaired malformed JSON.
+[04:13:37 +3m 38s | thequantuminsider_2020_01_27_dwave_stock] Extracting actors: https://thequantuminsider.com/2020/01/27/dwave-stock (1/1), chunk 40/45
+[04:13:44 +3m 45s | thequantuminsider_2020_01_27_dwave_stock] Repaired malformed JSON.
+[04:13:44 +3m 45s | thequantuminsider_2020_01_27_dwave_stock] Extracting actors: https://thequantuminsider.com/2020/01/27/dwave-stock (1/1), chunk 41/45
+[04:13:50 +3m 50s | thequantuminsider_2020_01_27_dwave_stock] Repaired malformed JSON.
+[04:13:50 +3m 50s | thequantuminsider_2020_01_27_dwave_stock] Extracting actors: https://thequantuminsider.com/2020/01/27/dwave-stock (1/1), chunk 42/45
+[04:13:55 +3m 56s | thequantuminsider_2020_01_27_dwave_stock] Repaired malformed JSON.
+[04:13:55 +3m 56s | thequantuminsider_2020_01_27_dwave_stock] Extracting actors: https://thequantuminsider.com/2020/01/27/dwave-stock (1/1), chunk 43/45
+[04:14:05 +4m 3s | thequantuminsider_2020_01_27_dwave_stock] Repaired malformed JSON.
+[04:14:05 +4m 3s | thequantuminsider_2020_01_27_dwave_stock] Extracting actors: https://thequantuminsider.com/2020/01/27/dwave-stock (1/1), chunk 44/45
+[04:14:12 +4m 9s | thequantuminsider_2020_01_27_dwave_stock] Repaired malformed JSON.
+[04:14:12 +4m 9s | thequantuminsider_2020_01_27_dwave_stock] Extracting actors: https://thequantuminsider.com/2020/01/27/dwave-stock (1/1), chunk 45/45
+[04:14:17 +4m 14s | thequantuminsider_2020_01_27_dwave_stock] Repaired malformed JSON.
+[04:14:17 +4m 14s | thequantuminsider_2020_01_27_dwave_stock] Saved 1_actor_results.json with 74 extracted records
+
+[04:14:17 +4m 14s | thequantuminsider_2020_01_27_dwave_stock] === 2 clean actors ===
+[04:14:17 +4m 15s | thequantuminsider_2020_01_27_dwave_stock] Loaded 74 extracted records
+[04:14:17 +4m 15s | thequantuminsider_2020_01_27_dwave_stock] Saved 2_actor_nodes.json with 21 canonical actor nodes
+
+[04:14:17 +4m 15s | thequantuminsider_2020_01_27_dwave_stock] === 3 interaction extraction ===
+[04:14:17 +4m 15s | thequantuminsider_2020_01_27_dwave_stock] Extracting interactions: https://thequantuminsider.com/2020/01/27/dwave-stock (1/1), chunk 11/45
+[04:14:20 +4m 18s | thequantuminsider_2020_01_27_dwave_stock] Extracting interactions: https://thequantuminsider.com/2020/01/27/dwave-stock (1/1), chunk 15/45
+[04:14:23 +4m 21s | thequantuminsider_2020_01_27_dwave_stock] Extracting interactions: https://thequantuminsider.com/2020/01/27/dwave-stock (1/1), chunk 16/45
+[04:14:28 +4m 26s | thequantuminsider_2020_01_27_dwave_stock] Extracting interactions: https://thequantuminsider.com/2020/01/27/dwave-stock (1/1), chunk 17/45
+[04:14:36 +4m 31s | thequantuminsider_2020_01_27_dwave_stock] Extracting interactions: https://thequantuminsider.com/2020/01/27/dwave-stock (1/1), chunk 18/45
+[04:14:43 +4m 38s | thequantuminsider_2020_01_27_dwave_stock] Extracting interactions: https://thequantuminsider.com/2020/01/27/dwave-stock (1/1), chunk 19/45
+[04:14:46 +4m 41s | thequantuminsider_2020_01_27_dwave_stock] Extracting interactions: https://thequantuminsider.com/2020/01/27/dwave-stock (1/1), chunk 21/45
+[04:14:50 +4m 45s | thequantuminsider_2020_01_27_dwave_stock] Extracting interactions: https://thequantuminsider.com/2020/01/27/dwave-stock (1/1), chunk 22/45
+[04:14:57 +4m 51s | thequantuminsider_2020_01_27_dwave_stock] Extracting interactions: https://thequantuminsider.com/2020/01/27/dwave-stock (1/1), chunk 23/45
+[04:15:06 +5m 1s | thequantuminsider_2020_01_27_dwave_stock] Extracting interactions: https://thequantuminsider.com/2020/01/27/dwave-stock (1/1), chunk 24/45
+[04:15:12 +5m 4s | thequantuminsider_2020_01_27_dwave_stock] Extracting interactions: https://thequantuminsider.com/2020/01/27/dwave-stock (1/1), chunk 25/45
+[04:15:17 +5m 9s | thequantuminsider_2020_01_27_dwave_stock] Extracting interactions: https://thequantuminsider.com/2020/01/27/dwave-stock (1/1), chunk 26/45
+[04:15:24 +5m 16s | thequantuminsider_2020_01_27_dwave_stock] Extracting interactions: https://thequantuminsider.com/2020/01/27/dwave-stock (1/1), chunk 27/45
+[04:15:27 +5m 19s | thequantuminsider_2020_01_27_dwave_stock] Extracting interactions: https://thequantuminsider.com/2020/01/27/dwave-stock (1/1), chunk 28/45
+[04:15:33 +5m 25s | thequantuminsider_2020_01_27_dwave_stock] Extracting interactions: https://thequantuminsider.com/2020/01/27/dwave-stock (1/1), chunk 29/45
+[04:15:40 +5m 32s | thequantuminsider_2020_01_27_dwave_stock] Extracting interactions: https://thequantuminsider.com/2020/01/27/dwave-stock (1/1), chunk 30/45
+[04:15:50 +5m 39s | thequantuminsider_2020_01_27_dwave_stock] Extracting interactions: https://thequantuminsider.com/2020/01/27/dwave-stock (1/1), chunk 31/45
+[04:15:54 +5m 43s | thequantuminsider_2020_01_27_dwave_stock] Extracting interactions: https://thequantuminsider.com/2020/01/27/dwave-stock (1/1), chunk 32/45
+[04:15:56 +5m 45s | thequantuminsider_2020_01_27_dwave_stock] Extracting interactions: https://thequantuminsider.com/2020/01/27/dwave-stock (1/1), chunk 34/45
+[04:15:58 +5m 47s | thequantuminsider_2020_01_27_dwave_stock] Extracting interactions: https://thequantuminsider.com/2020/01/27/dwave-stock (1/1), chunk 35/45
+[04:16:01 +5m 50s | thequantuminsider_2020_01_27_dwave_stock] Extracting interactions: https://thequantuminsider.com/2020/01/27/dwave-stock (1/1), chunk 36/45
+[04:16:03 +5m 52s | thequantuminsider_2020_01_27_dwave_stock] Extracting interactions: https://thequantuminsider.com/2020/01/27/dwave-stock (1/1), chunk 38/45
+[04:16:04 +5m 53s | thequantuminsider_2020_01_27_dwave_stock] Extracting interactions: https://thequantuminsider.com/2020/01/27/dwave-stock (1/1), chunk 39/45
+[04:16:05 +5m 54s | thequantuminsider_2020_01_27_dwave_stock] Extracting interactions: https://thequantuminsider.com/2020/01/27/dwave-stock (1/1), chunk 40/45
+[04:16:07 +5m 56s | thequantuminsider_2020_01_27_dwave_stock] Extracting interactions: https://thequantuminsider.com/2020/01/27/dwave-stock (1/1), chunk 41/45
+[04:16:09 +5m 58s | thequantuminsider_2020_01_27_dwave_stock] Extracting interactions: https://thequantuminsider.com/2020/01/27/dwave-stock (1/1), chunk 42/45
+[04:16:10 +5m 59s | thequantuminsider_2020_01_27_dwave_stock] Extracting interactions: https://thequantuminsider.com/2020/01/27/dwave-stock (1/1), chunk 43/45
+[04:16:11 +6m 0s | thequantuminsider_2020_01_27_dwave_stock] Extracting interactions: https://thequantuminsider.com/2020/01/27/dwave-stock (1/1), chunk 44/45
+[04:16:13 +6m 2s | thequantuminsider_2020_01_27_dwave_stock] Extracting interactions: https://thequantuminsider.com/2020/01/27/dwave-stock (1/1), chunk 45/45
+[04:16:15 +6m 4s | thequantuminsider_2020_01_27_dwave_stock] Saved 3_interaction_results.json with 27 extracted interactions.
+
+[04:16:15 +6m 4s | thequantuminsider_2020_01_27_dwave_stock] === 4 clean interactions ===
+[04:16:15 +6m 4s | thequantuminsider_2020_01_27_dwave_stock] Saved 4_edges.json with 1 cleaned interactions.
+
+[04:16:15 +6m 4s | thequantuminsider_2020_01_27_dwave_stock] === 5 helix enrichment ===
+[04:16:15 +6m 4s | thequantuminsider_2020_01_27_dwave_stock] Wrote 5_nodes.json (21 actors)
+[04:16:15 +6m 4s | thequantuminsider_2020_01_27_dwave_stock] Wrote 5_edges.json (1 interactions)
+[04:16:15 +6m 4s | thequantuminsider_2020_01_27_dwave_stock] Actor helix counts: {'Civil Society': 2, 'Government': 2, 'Industry': 7, 'Intermediary': 3, 'Unknown': 7}
+[04:16:15 +6m 4s | thequantuminsider_2020_01_27_dwave_stock] Functional-space counts: {'Innovation': 1}
+
+[04:16:15 +6m 4s | thequantuminsider_2020_01_27_dwave_stock] === 6 network visualisation ===
+[04:16:15 +6m 4s | thequantuminsider_2020_01_27_dwave_stock] Wrote quantum_network.html
+[04:16:15 +6m 4s | thequantuminsider_2020_01_27_dwave_stock] Nodes: 21
+[04:16:15 +6m 4s | thequantuminsider_2020_01_27_dwave_stock] Edges: 1
+
+[04:16:15 +6m 4s | thequantuminsider_2020_01_27_dwave_stock] Done. Outputs written to: /home/lv/IDP/idpdeeptech/pipeline/news_outputs/thequantuminsider_2020_01_27_dwave_stock
+[04:16:15 +6m 4s | thequantuminsider_2020_01_27_dwave_stock] Log: /home/lv/IDP/idpdeeptech/pipeline/news_outputs/thequantuminsider_2020_01_27_dwave_stock/run.log
+
+========================================================================
+RUN FINISHED 2026-07-02 04:16:15  (OK)
+Started:     2026-07-02 04:09:39
+Elapsed:     6m 4s
+========================================================================
