@@ -389,7 +389,7 @@ button:hover {
   min-height: 76px;
   padding: 14px;
   border-radius: 14px;
-  color: #edf6ff;
+  color: rgba(255,255,255,0.82);
   background: rgba(4, 14, 28, 0.42);
   border: 1px solid var(--border-soft);
   font-size: 13px;
@@ -398,7 +398,14 @@ button:hover {
 }
 
 .details-card b {
+  color: inherit;
+  font-weight: 700;
+}
+
+.details-card .detail-title,
+.details-card .detail-title b {
   color: #ffffff;
+  font-weight: 800;
 }
 
 .source-lines {

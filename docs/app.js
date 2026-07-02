@@ -943,11 +943,11 @@ function drawGraph(nodes, edges, settings = {}) {
         : "";
 
       document.getElementById("details").innerHTML = `
-        <b>${escapeHtml(node.label)}</b><br><br>
+        <span class="detail-title"><b>${escapeHtml(node.label)}</b></span><br><br>
+        <b>Category:</b> ${escapeHtml(formatTitleCase(raw.category || "Unknown"))}<br>
         <b>Helix:</b> ${escapeHtml(raw.helix || "Unknown")}<br>
         <b>Sphere:</b> ${escapeHtml(raw.sphere || "Unknown")}<br>
         <b>R&amp;D:</b> ${escapeHtml(formatRnDValue(raw.r_and_d))}<br>
-        <b>Category:</b> ${escapeHtml(formatTitleCase(raw.category || "Unknown"))}<br>
         ${dateRange ? `<b>Date range:</b> ${escapeHtml(dateRange)}<br>` : ""}<br>
         <b>Sources (${(raw.source_documents || []).length}):</b><br>
         ${formatSourceList(raw.source_documents || [])}
@@ -961,9 +961,11 @@ function drawGraph(nodes, edges, settings = {}) {
       const raw = edge.raw || {};
 
       document.getElementById("details").innerHTML = `
-        <b>${escapeHtml(raw.source_actor || raw.source_actor_key || "")}</b>
-        ${raw.directional ? "→" : "↔"}
-        <b>${escapeHtml(raw.target_actor || raw.target_actor_key || "")}</b><br><br>
+        <span class="detail-title">
+          <b>${escapeHtml(raw.source_actor || raw.source_actor_key || "")}</b>
+          ${raw.directional ? "→" : "↔"}
+          <b>${escapeHtml(raw.target_actor || raw.target_actor_key || "")}</b>
+        </span><br><br>
         <b>Label:</b> ${escapeHtml(formatRelationLabel(raw.relation_label || "Interaction"))}<br>
         <b>Functional space:</b> ${escapeHtml(getEdgeFunctionalSpace(raw))}<br>
         <b>Direction:</b> ${raw.directional ? "Directional" : "Symmetric"}<br>
@@ -1300,10 +1302,10 @@ function fallbackNode(id, label, isFullNetwork = false, index = 0, totalNodes = 
 
 function createNodeTooltipText(node, sourceCount, dateRange) {
   const rows = [
+    ["Category", formatTitleCase(node.category || "Unknown")],
     ["Helix", node.helix || "Unknown"],
     ["Sphere", node.sphere || "Unknown"],
     ["R&D", formatRnDValue(node.r_and_d)],
-    ["Category", formatTitleCase(node.category || "Unknown")],
     ["Sources", sourceCount.toLocaleString()]
   ];
 
