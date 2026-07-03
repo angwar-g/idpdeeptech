@@ -552,7 +552,8 @@ function applyFilters() {
 
   drawGraph(filteredNodes, filteredEdges, {
     isInitialView: false,
-    usePhysics: false
+    usePhysics: false,
+    selectedActorKeys: selectedActors
   });
 
   updateFilterSummary(
@@ -775,7 +776,8 @@ function drawGraph(nodes, edges, settings = {}) {
   const {
     isInitialView = false,
     isFullNetwork = false,
-    usePhysics = true
+    usePhysics = true,
+    selectedActorKeys = new Set()
   } = settings;
   const useStaticLayout = isFullNetwork || !usePhysics;
 
@@ -793,9 +795,11 @@ function drawGraph(nodes, edges, settings = {}) {
   nodes.forEach((node, index) => {
     if (!node.canonical_actor_key) return;
 
+    const isSelectedActor = selectedActorKeys.has(node.canonical_actor_key);
     const staticPosition = useStaticLayout
       ? staticPositions.get(node.canonical_actor_key) || getStaticNodePosition(node.canonical_actor_key, index, nodes.length)
       : {};
+    const nodeSize = isFullNetwork ? getNodeSize(node) * 0.62 : getNodeSize(node);
 
     const sourceCount = (node.source_documents || []).length;
     const dateRange = node.earliest_date
@@ -809,18 +813,27 @@ function drawGraph(nodes, edges, settings = {}) {
       title: createNodeTooltipText(node, sourceCount, dateRange),
       color: {
         background: getHelixColor(node.helix),
-        border: "rgba(255,255,255,0.72)",
+        border: isSelectedActor ? "#ffffff" : "rgba(255,255,255,0.72)",
         highlight: {
           background: getHelixColor(node.helix),
           border: "#ffffff"
         }
       },
-      borderWidth: isFullNetwork ? 0.75 : 1,
+      borderWidth: isSelectedActor ? 4 : (isFullNetwork ? 0.75 : 1),
+      shadow: isSelectedActor
+        ? {
+            enabled: true,
+            color: "rgba(143, 199, 255, 0.95)",
+            size: 22,
+            x: 0,
+            y: 0
+          }
+        : undefined,
       shape: "dot",
-      size: isFullNetwork ? getNodeSize(node) * 0.62 : getNodeSize(node),
+      size: isSelectedActor ? nodeSize * 1.55 : nodeSize,
       font: {
         color: "#dcecff",
-        size: isFullNetwork ? 11 : 13,
+        size: isSelectedActor ? 16 : (isFullNetwork ? 11 : 13),
         face: "Inter, Arial",
         strokeWidth: 3,
         strokeColor: "#06101f"
@@ -829,7 +842,7 @@ function drawGraph(nodes, edges, settings = {}) {
     });
   });
 
-  const showEdgeLabels = isFullNetwork || edges.length <= 120;
+  const showEdgeLabels = !isFullNetwork && edges.length <= 120;
   const visEdges = [];
 
   edges.forEach((edge, index) => {
@@ -981,12 +994,7 @@ function drawGraph(nodes, edges, settings = {}) {
     network.once("stabilizationIterationsDone", () => {
       freezeNetworkLayout();
 
-      network.fit({
-        animation: {
-          duration: 650,
-          easingFunction: "easeInOutQuad"
-        }
-      });
+      focusSelectedActors(selectedActorKeys);
 
       setLoading(false);
     });
@@ -994,12 +1002,7 @@ function drawGraph(nodes, edges, settings = {}) {
     setTimeout(() => {
       freezeNetworkLayout();
 
-      network.fit({
-        animation: {
-          duration: 650,
-          easingFunction: "easeInOutQuad"
-        }
-      });
+      focusSelectedActors(selectedActorKeys);
 
       setLoading(false);
     }, 80);
@@ -1089,6 +1092,43 @@ function freezeNetworkLayout() {
     interaction: {
       dragNodes: true,
       hideEdgesOnDrag: false
+    }
+  });
+}
+
+function focusSelectedActors(selectedActorKeys) {
+  if (!network) return;
+
+  if (!selectedActorKeys.size) {
+    network.fit({
+      animation: {
+        duration: 650,
+        easingFunction: "easeInOutQuad"
+      }
+    });
+    return;
+  }
+
+  const selectedIds = [...selectedActorKeys].filter(id =>
+    network.body?.data?.nodes?.get(id)
+  );
+
+  if (selectedIds.length === 1) {
+    network.focus(selectedIds[0], {
+      scale: 1.15,
+      animation: {
+        duration: 650,
+        easingFunction: "easeInOutQuad"
+      }
+    });
+    return;
+  }
+
+  network.fit({
+    nodes: selectedIds.length ? selectedIds : undefined,
+    animation: {
+      duration: 650,
+      easingFunction: "easeInOutQuad"
     }
   });
 }
