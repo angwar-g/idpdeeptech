@@ -8,7 +8,7 @@ let pendingFilterTimer = null;
 let pendingPreparingTimer = null;
 const searchableSelects = [];
 
-const FULL_NETWORK_SUMMARY = "Connected network without isolated actors.";
+const FULL_NETWORK_SUMMARY = "Showing the largest connected network without smaller outlier components.";
 const HELIX_TYPES = [
   { label: "Government", className: "government" },
   { label: "Industry", className: "industry" },
@@ -74,6 +74,20 @@ Promise.all([
     document.getElementById("details").innerHTML =
       `<b>Error loading graph data</b><br>${escapeHtml(error.message)}`;
   });
+
+document.getElementById("details").addEventListener("click", event => {
+  const toggle = event.target.closest(".source-toggle");
+  if (!toggle) return;
+
+  const sourceList = toggle.closest(".source-lines");
+  if (!sourceList) return;
+
+  const expanded = sourceList.classList.toggle("expanded");
+  toggle.setAttribute("aria-expanded", String(expanded));
+  toggle.textContent = expanded
+    ? "Show less"
+    : `+ ${toggle.dataset.moreCount} more`;
+});
 
 function assertOk(response) {
   if (!response.ok) {
@@ -534,13 +548,11 @@ function applyFilters() {
     });
   }
 
-  const filteredNodes = allNodes.filter(node =>
-    visibleActorKeys.has(node.canonical_actor_key)
-  );
+  const filteredNodes = getNodesForActorKeys(allNodes, visibleActorKeys, filteredEdges);
 
   drawGraph(filteredNodes, filteredEdges, {
     isInitialView: false,
-    usePhysics: filteredNodes.length <= 1500
+    usePhysics: false
   });
 
   updateFilterSummary(
@@ -640,21 +652,82 @@ function showFullNetwork() {
 }
 
 function getConnectedGraph(nodes, edges) {
-  const connectedActorKeys = new Set();
+  const connectedEdges = edges.filter(edge =>
+    edge.source_actor_key && edge.target_actor_key
+  );
+  const adjacency = new Map();
+
+  connectedEdges.forEach(edge => {
+    if (!adjacency.has(edge.source_actor_key)) {
+      adjacency.set(edge.source_actor_key, new Set());
+    }
+    if (!adjacency.has(edge.target_actor_key)) {
+      adjacency.set(edge.target_actor_key, new Set());
+    }
+
+    adjacency.get(edge.source_actor_key).add(edge.target_actor_key);
+    adjacency.get(edge.target_actor_key).add(edge.source_actor_key);
+  });
+
+  const largestComponent = getConnectedComponents([...adjacency.keys()], adjacency)
+    .sort((a, b) => b.length - a.length)[0] || [];
+  const largestActorKeys = new Set(largestComponent);
+  const largestEdges = connectedEdges.filter(edge =>
+    largestActorKeys.has(edge.source_actor_key) &&
+    largestActorKeys.has(edge.target_actor_key)
+  );
+
+  return {
+    nodes: getNodesForActorKeys(nodes, largestActorKeys, largestEdges),
+    edges: largestEdges
+  };
+}
+
+function getNodesForActorKeys(nodes, actorKeys, edges) {
+  const nodeByKey = new Map(
+    nodes
+      .filter(node => node.canonical_actor_key)
+      .map(node => [node.canonical_actor_key, node])
+  );
+  const inferredNodes = new Map();
 
   edges.forEach(edge => {
     if (!edge.source_actor_key || !edge.target_actor_key) return;
-    connectedActorKeys.add(edge.source_actor_key);
-    connectedActorKeys.add(edge.target_actor_key);
+
+    addInferredEndpointNode(
+      inferredNodes,
+      nodeByKey,
+      edge.source_actor_key,
+      edge.source_actor,
+      edge
+    );
+    addInferredEndpointNode(
+      inferredNodes,
+      nodeByKey,
+      edge.target_actor_key,
+      edge.target_actor,
+      edge
+    );
   });
 
-  return {
-    nodes: nodes.filter(node => connectedActorKeys.has(node.canonical_actor_key)),
-    edges: edges.filter(edge =>
-      connectedActorKeys.has(edge.source_actor_key) &&
-      connectedActorKeys.has(edge.target_actor_key)
-    )
-  };
+  return [
+    ...nodes.filter(node => actorKeys.has(node.canonical_actor_key)),
+    ...inferredNodes.values()
+  ];
+}
+
+function addInferredEndpointNode(inferredNodes, nodeByKey, key, label, edge) {
+  if (!key || nodeByKey.has(key) || inferredNodes.has(key)) return;
+
+  inferredNodes.set(key, {
+    canonical_actor_key: key,
+    entity: label || key,
+    category: "Unknown",
+    helix: "Unknown",
+    sphere: "Unknown",
+    r_and_d: "",
+    source_documents: edge.source_documents || []
+  });
 }
 
 function updateFilterSummary(nodeCount, edgeCount, visibleNodes = [], message = "Fetching graph data and loading network.") {
@@ -704,6 +777,7 @@ function drawGraph(nodes, edges, settings = {}) {
     isFullNetwork = false,
     usePhysics = true
   } = settings;
+  const useStaticLayout = isFullNetwork || !usePhysics;
 
   setLoading(
     true,
@@ -711,7 +785,7 @@ function drawGraph(nodes, edges, settings = {}) {
     `Building ${nodes.length.toLocaleString()} actors and ${edges.length.toLocaleString()} edges...`
   );
 
-  const staticPositions = isFullNetwork
+  const staticPositions = useStaticLayout
     ? getStaticGraphPositions(nodes, edges)
     : new Map();
   const nodeMap = new Map();
@@ -719,7 +793,7 @@ function drawGraph(nodes, edges, settings = {}) {
   nodes.forEach((node, index) => {
     if (!node.canonical_actor_key) return;
 
-    const staticPosition = isFullNetwork
+    const staticPosition = useStaticLayout
       ? staticPositions.get(node.canonical_actor_key) || getStaticNodePosition(node.canonical_actor_key, index, nodes.length)
       : {};
 
@@ -764,24 +838,22 @@ function drawGraph(nodes, edges, settings = {}) {
     if (!nodeMap.has(edge.source_actor_key)) {
       nodeMap.set(
         edge.source_actor_key,
-        fallbackNode(edge.source_actor_key, edge.source_actor, isFullNetwork, nodeMap.size, nodes.length)
+        fallbackNode(edge.source_actor_key, edge.source_actor, useStaticLayout, nodeMap.size, nodes.length)
       );
     }
 
     if (!nodeMap.has(edge.target_actor_key)) {
       nodeMap.set(
         edge.target_actor_key,
-        fallbackNode(edge.target_actor_key, edge.target_actor, isFullNetwork, nodeMap.size, nodes.length)
+        fallbackNode(edge.target_actor_key, edge.target_actor, useStaticLayout, nodeMap.size, nodes.length)
       );
     }
 
     const occurrences = edge.occurrences || [];
     const firstOcc = occurrences[0] || {};
 
-    // Arrow only for directional relations. Symmetric ones render as a plain
-    // line. In full-network mode we suppress arrows regardless to keep the
-    // overview readable.
-    const directional = edge.directional === true && !isFullNetwork;
+    // Arrow only for directional relations. Symmetric ones render as a plain line.
+    const directional = edge.directional === true;
 
     visEdges.push({
       id: `edge-${index}`,
@@ -808,7 +880,7 @@ function drawGraph(nodes, edges, settings = {}) {
         ? Math.min(1.8, 0.5 + Math.log2(occurrences.length + 1) * 0.25)
         : Math.min(3.5, 1.0 + Math.log2(occurrences.length + 1) * 0.6),
       smooth: {
-        enabled: !isFullNetwork,
+        enabled: !useStaticLayout,
         type: "dynamic"
       },
       font: {
@@ -839,7 +911,7 @@ function drawGraph(nodes, edges, settings = {}) {
     autoResize: true,
 
     layout: {
-      improvedLayout: !isFullNetwork
+      improvedLayout: !useStaticLayout
     },
 
     physics: usePhysics
@@ -1411,8 +1483,21 @@ function formatSourceList(sources) {
     .map(source => `<div class="source-line">${escapeHtml(source)}</div>`)
     .join("");
 
-  const remaining = sources.length > 6
-    ? `<div class="source-line source-line-more">+ ${sources.length - 6} more</div>`
+  const extraSources = sources.slice(6)
+    .map(source => `<div class="source-line">${escapeHtml(source)}</div>`)
+    .join("");
+
+  const remainingCount = sources.length - 6;
+  const remaining = remainingCount > 0
+    ? `
+      <div class="source-extra">${extraSources}</div>
+      <button
+        type="button"
+        class="source-toggle"
+        data-more-count="${remainingCount}"
+        aria-expanded="false"
+      >+ ${remainingCount} more</button>
+    `
     : "";
 
   return `<div class="source-lines">${visibleSources}${remaining}</div>`;
