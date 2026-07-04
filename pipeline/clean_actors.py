@@ -3,8 +3,9 @@ import re
 from pathlib import Path
 from difflib import SequenceMatcher
 
-INPUT_JSON = Path("1_actor_results.json")
-OUTPUT_JSON = Path("2_actor_nodes.json")
+#PLACEHOLDER
+INPUT_JSON = Path("./site_outputs/psiquantum_com/1_actor_results_pdf.json")
+OUTPUT_JSON = Path("./site_outputs/psiquantum_com/2_actor_nodes_pdf.json")
 
 ENTITY_LIKE_STATUSES = {
     "entity",
@@ -96,6 +97,16 @@ def normalize_text(value: str) -> str:
 
 def display_clean(value: str) -> str:
     value = str(value).strip()
+    # Strip markdown link syntax. Web scrapers (crawl4ai) convert HTML anchors
+    # to markdown `[text](url)` before feeding to the LLM, and the LLM
+    # sometimes extracts the whole markdown string as an "entity" (e.g. from
+    # AWS Marketplace nav menus). We keep just the display text.
+    #   [Automotive Data](https://aws.amazon.com/marketplace/...) -> Automotive Data
+    #   [Foo Bar]                                                 -> Foo Bar
+    # Bare URLs (no brackets) are left alone; the merge-level URL-drop rule
+    # catches those.
+    value = re.sub(r"\[([^\]]+)\]\([^)]+\)", r"\1", value)
+    value = re.sub(r"^\[([^\]]+)\]$", r"\1", value)
     value = re.sub(r"^The\s+", "", value)
     return value.strip()
 

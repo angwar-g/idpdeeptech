@@ -343,7 +343,11 @@
       { "match": "^(the )?parliament$",             "drop_if_unmapped": true },
       { "match": "^(the )?eu$",                     "drop_if_unmapped": true },
       { "match": "^(the )?uk$",                     "drop_if_unmapped": true },
-      { "match": "^(the )?union$",                  "drop_if_unmapped": true }
+      { "match": "^(the )?union$",                  "drop_if_unmapped": true },
+
+      { "match": "^\\[[^\\]]+\\]\\(https?://[^)]+\\)$", "drop": true },
+      { "match": "^\\[[^\\]]+\\]$",                     "drop": true },
+      { "match": "^https?://[^\\s]{20,}$",              "drop": true }
     ]
 
   }

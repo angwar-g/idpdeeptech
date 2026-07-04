@@ -272,9 +272,34 @@ def find_output_pairs(root: Path) -> list[tuple[Path, Path, str]]:
 # --------------------------------------------------------------------------
 
 def canonical_key(entity: str) -> str:
-    """Loose key for cross-document actor matching."""
+    """Loose key for cross-document actor matching.
+
+    Strips:
+      - Case (lowercase)
+      - Parenthetical suffixes: 'X (Y)' -> 'X'
+      - Trailing legal suffixes: 'X Corp.' / 'X GmbH' / 'X Ltd' -> 'X'
+      - Non-alphanumeric chars
+      - Leading articles 'the', 'a', 'an'
+
+    The legal-suffix stripping matches what the '*' rewrite rule does at the
+    top-level, which is important because if the rewrite fires on some
+    source-forms (e.g. 'Allegro Merger Corp.') but not on parens-appended
+    forms (e.g. 'Allegro Merger Corp. (Allegro)'), we would otherwise get two
+    different canonical keys for the same actor -- and edges referring to
+    the stripped form would fail to resolve to the node keyed on the
+    parens form. Doing suffix-stripping here means both forms produce the
+    same key regardless of which rewrites fire.
+    """
     text = (entity or "").lower().strip()
     text = re.sub(r"\([^)]*\)", "", text)          # drop parentheticals
+    # Trailing legal suffixes. Keep this list in sync with the '*' rewrite
+    # rule that does the same thing.
+    text = re.sub(
+        r",?\s+(ltd\.?|limited|gmbh|llc|inc\.?|incorporated|corp\.?|corporation"
+        r"|s\.a\.|sas|s\.r\.l\.|ag|kg|kgaa|pty ltd|pte ltd|bv|nv|oy|ab|spa|plc"
+        r"|kk|kft|sa|sl|srl|sro|asa|holdings|holding)\s*$",
+        "", text
+    )
     text = re.sub(r"[^a-z0-9]+", " ", text)         # punct -> space
     text = re.sub(r"\b(the|a|an)\b", " ", text)
     return re.sub(r"\s+", " ", text).strip()

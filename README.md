@@ -1,6 +1,8 @@
 # Pipeline Cheat Sheet
 
-Extracts actor/interaction graphs from PDFs and websites. Four entry points; all share the same cleaning, helix, and visualisation steps downstream.
+Extracts actor/interaction graphs from PDFs and websites. 
+Different entry points, all share the same cleaning, helix, and visualisation steps downstream.
+Final product at - https://angwar-g.github.io/idpdeeptech/
 
 ## Setup
 
