@@ -372,7 +372,7 @@
       { "match": "^ibm quantum experience$",  "replace": "IBM" },
 
       { "match": "^1qbit information technologies$",            "replace": "1QB Information Technologies Inc. (1QBITS)" },
-      { "match": "^QB Information Technologies Inc. (1QBITS)$", "replace": "1QBit (1QB Information Technologies)" },
+      { "match": "^QB Information Technologies Inc\\. \\(1QBITS\\)$", "replace": "1QBit (1QB Information Technologies)" },
       { "match": "^@tsarcyanide$",                              "replace": "Tsar Cyanide (Artist)" },
       { "match": "^12 Quantum Computing Universities$",         "drop": true },
 
