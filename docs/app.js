@@ -537,6 +537,7 @@ function applyFilters() {
 
   if (noFilters) {
     showFullNetwork();
+    resetDetailsPanel();
     return;
   }
 
@@ -596,6 +597,10 @@ function applyFilters() {
     selectedActorKeys: selectedActors,
     activeActorKey: actorSelect.getLastSelectedValue()
   });
+
+  if (selectedActors.size === 0) {
+    resetDetailsPanel();
+  }
 
   updateFilterSummary(
     filteredNodes.length,
@@ -674,6 +679,10 @@ function resetFilters() {
   yearSelect.clear();
 
   scheduleApplyFilters();
+  resetDetailsPanel();
+}
+
+function resetDetailsPanel() {
   document.getElementById("details").innerHTML = "Click a node or edge to inspect it.";
 }
 
@@ -1064,7 +1073,7 @@ function drawGraph(nodes, edges, settings = {}) {
       return;
     }
 
-    document.getElementById("details").innerHTML = "Click a node or edge to inspect it.";
+    resetDetailsPanel();
   });
 }
 
