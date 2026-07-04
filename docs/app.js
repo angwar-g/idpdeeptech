@@ -780,6 +780,7 @@ function drawGraph(nodes, edges, settings = {}) {
     selectedActorKeys = new Set()
   } = settings;
   const useStaticLayout = isFullNetwork || !usePhysics;
+  const compactComponents = useStaticLayout && !isFullNetwork && nodes.length <= 500;
 
   setLoading(
     true,
@@ -788,7 +789,7 @@ function drawGraph(nodes, edges, settings = {}) {
   );
 
   const staticPositions = useStaticLayout
-    ? getStaticGraphPositions(nodes, edges)
+    ? getStaticGraphPositions(nodes, edges, { compactComponents })
     : new Map();
   const nodeMap = new Map();
 
@@ -808,7 +809,7 @@ function drawGraph(nodes, edges, settings = {}) {
 
     nodeMap.set(node.canonical_actor_key, {
       id: node.canonical_actor_key,
-      label: node.entity || node.canonical_actor_key,
+      label: formatActorDisplayName(node.entity || node.canonical_actor_key),
       ...staticPosition,
       title: createNodeTooltipText(node, sourceCount, dateRange),
       color: {
@@ -1037,9 +1038,9 @@ function drawGraph(nodes, edges, settings = {}) {
 
       document.getElementById("details").innerHTML = `
         <span class="detail-title">
-          <b>${escapeHtml(raw.source_actor || raw.source_actor_key || "")}</b>
+          <b>${escapeHtml(formatActorDisplayName(raw.source_actor || raw.source_actor_key || ""))}</b>
           ${raw.directional ? "→" : "↔"}
-          <b>${escapeHtml(raw.target_actor || raw.target_actor_key || "")}</b>
+          <b>${escapeHtml(formatActorDisplayName(raw.target_actor || raw.target_actor_key || ""))}</b>
         </span><br><br>
         <b>Label:</b> ${escapeHtml(formatRelationLabel(raw.relation_label || "Interaction"))}<br>
         <b>Functional space:</b> ${escapeHtml(getEdgeFunctionalSpace(raw))}<br>
@@ -1133,7 +1134,8 @@ function focusSelectedActors(selectedActorKeys) {
   });
 }
 
-function getStaticGraphPositions(nodes, edges) {
+function getStaticGraphPositions(nodes, edges, options = {}) {
+  const { compactComponents = false } = options;
   const nodeKeys = nodes
     .map(node => node.canonical_actor_key)
     .filter(Boolean);
@@ -1165,7 +1167,7 @@ function getStaticGraphPositions(nodes, edges) {
   const singletonComponents = components.filter(component => component.length === 1);
 
   connectedComponents.forEach((component, index) => {
-    const center = getComponentCenter(index, component.length);
+    const center = getComponentCenter(index, component.length, compactComponents);
     const componentKeys = new Set(component);
     const localEdges = edgePairs.filter(([source, target]) =>
       componentEdges.get(source) === componentEdges.get(target) &&
@@ -1183,7 +1185,10 @@ function getStaticGraphPositions(nodes, edges) {
 
   singletonComponents.forEach((component, index) => {
     const key = component[0];
-    positions.set(key, getSingletonPosition(key, index, singletonComponents.length));
+    const position = compactComponents
+      ? getCompactComponentCenter(connectedComponents.length + index, 1)
+      : getSingletonPosition(key, index, singletonComponents.length);
+    positions.set(key, position);
   });
 
   return positions;
@@ -1217,7 +1222,8 @@ function getConnectedComponents(nodeKeys, adjacency) {
   return components;
 }
 
-function getComponentCenter(index, size) {
+function getComponentCenter(index, size, compactComponents = false) {
+  if (compactComponents) return getCompactComponentCenter(index, size);
   if (index === 0) return { x: 0, y: 0 };
 
   const random = createSeededRandom(`component:${index}:${size}`);
@@ -1227,6 +1233,21 @@ function getComponentCenter(index, size) {
   const y = -4200 + Math.floor(row / 4) * 1150 + (random() - 0.5) * 360;
 
   return { x, y };
+}
+
+function getCompactComponentCenter(index, size) {
+  if (index === 0) return { x: 0, y: 0 };
+
+  const random = createSeededRandom(`compact-component:${index}:${size}`);
+  const ringIndex = index - 1;
+  const angle = ringIndex * 2.399963229728653;
+  const ring = Math.floor(ringIndex / 8);
+  const radius = 720 + ring * 520 + Math.min(360, Math.sqrt(size) * 34);
+
+  return {
+    x: Math.cos(angle) * radius + (random() - 0.5) * 90,
+    y: Math.sin(angle) * radius + (random() - 0.5) * 90
+  };
 }
 
 function layoutComponent(component, edges) {
@@ -1388,12 +1409,13 @@ function fallbackNode(id, label, isFullNetwork = false, index = 0, totalNodes = 
   const staticPosition = isFullNetwork
     ? getStaticNodePosition(id, index, totalNodes)
     : {};
+  const displayLabel = formatActorDisplayName(label || id);
 
   return {
     id,
-    label: label || id,
+    label: displayLabel,
     ...staticPosition,
-    title: createTooltipText(label || id, [
+    title: createTooltipText(displayLabel, [
       ["Record type", "Node inferred from edge"]
     ]),
     color: {
@@ -1425,13 +1447,13 @@ function createNodeTooltipText(node, sourceCount, dateRange) {
     rows.push(["Date range", dateRange]);
   }
 
-  return createTooltipText(node.entity || node.canonical_actor_key, rows);
+  return createTooltipText(formatActorDisplayName(node.entity || node.canonical_actor_key), rows);
 }
 
 function createEdgeTooltipText(edge) {
   const actorPair = [
-    edge.source_actor || edge.source_actor_key || "Unknown source",
-    edge.target_actor || edge.target_actor_key || "Unknown target"
+    formatActorDisplayName(edge.source_actor || edge.source_actor_key || "Unknown source"),
+    formatActorDisplayName(edge.target_actor || edge.target_actor_key || "Unknown target")
   ].join(edge.directional ? " → " : " ↔ ");
 
   const rows = [
@@ -1488,6 +1510,14 @@ function formatRelationLabel(value) {
     .filter(Boolean)
     .map(word => word.charAt(0).toUpperCase() + word.slice(1))
     .join(" ");
+}
+
+function formatActorDisplayName(value) {
+  const label = String(value || "").trim();
+
+  if (/^t\|ket>?™?$/i.test(label)) return "TKET";
+
+  return label;
 }
 
 function getEdgeFunctionalSpace(edge) {
