@@ -906,7 +906,7 @@
   ],
   "input_node_records": 21785,
   "input_edge_records": 7526,
-  "output_unique_actors": 6384,
+  "output_unique_actors": 6383,
   "output_unique_edges": 2824,
   "rewrites_applied": {
     "*: ^(.{2,}?),? (ltd\\.?|limited|gmbh|llc|inc\\.?|incorporated|corp\\.?|corporation|s\\.a\\.|sas|s\\.r\\.l\\.|ag|kg|kgaa|pty ltd|pte ltd|bv|nv|oy|ab|spa|plc|kk|kft|sa|sl|srl|sro|asa|holdings|holding)$ -> $1": 1669,
@@ -939,7 +939,7 @@
     "*: ^fraunhofer$ -> Fraunhofer-Gesellschaft": 3,
     "*: ^qed-c$ -> Quantum Economic Development Consortium (QED-C)": 4,
     "*: ^national institute of standard technology \\(nist\\)$ -> National Institute of Standards and Technology (NIST)": 1,
-    "*: ^1qbit information technologies$ -> 1QB Information Technologies Inc. (1QBITS)": 1,
+    "*: ^1qb(it)? information technologies(,? ?inc\\.?)?( \\(1qbits?\\))?$ -> 1QBit": 2,
     "*: ^azure quantum$ -> Microsoft": 4,
     "*: ^darpa$ -> Defense Advanced Research Projects Agency (DARPA)": 15,
     "*: ^cea$ -> Commissariat à l'Énergie Atomique et aux Énergies Alternatives (CEA)": 1,
@@ -1004,8 +1004,7 @@
     "*: ^dfm – danmarks nationale metrologiinstitut$ -> Danmarks Nationale Metrologi Institut (DFM)": 1,
     "*: ^nqcc$ -> National Quantum Computing Centre (NQCC)": 1,
     "*: ^sqc$ -> Silicon Quantum Computing (SQC)": 1,
-    "*: ^@tsarcyanide$ -> Tsar Cyanide (Artist)": 1,
-    "*: ^1QB Information Technologies Inc\\. \\(1QBITS\\)$ -> 1QBit (1QB Information Technologies)": 1
+    "*: ^@tsarcyanide$ -> Tsar Cyanide (Artist)": 1
   },
   "actors_dropped": {
     "*: ^universities$ -> [drop]": 22,
