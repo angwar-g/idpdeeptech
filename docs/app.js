@@ -49,7 +49,8 @@ Promise.all([
       optionsId: "actorOptions",
       emptyText: "No matching actors",
       defaultText: "Type to search actors",
-      onChange: scheduleApplyFilters
+      onChange: scheduleApplyFilters,
+      onChipClick: focusActorFromFilterChip
     });
 
     yearSelect = createSearchableMultiSelect({
@@ -267,6 +268,12 @@ function createSearchableMultiSelect(config) {
       return selected.has(lastSelectedValue) ? lastSelectedValue : null;
     },
 
+    setLastSelectedValue(value) {
+      if (selected.has(value)) {
+        lastSelectedValue = value;
+      }
+    },
+
     clear() {
       selected.clear();
       lastSelectedValue = null;
@@ -339,7 +346,22 @@ function createSearchableMultiSelect(config) {
     selected.forEach((label, value) => {
       const chip = document.createElement("span");
       chip.className = "select-chip";
+      chip.tabIndex = config.onChipClick ? 0 : -1;
       chip.append(document.createTextNode(label));
+
+      if (config.onChipClick) {
+        chip.addEventListener("click", () => {
+          lastSelectedValue = value;
+          config.onChipClick(value);
+        });
+
+        chip.addEventListener("keydown", event => {
+          if (event.key !== "Enter" && event.key !== " ") return;
+          event.preventDefault();
+          lastSelectedValue = value;
+          config.onChipClick(value);
+        });
+      }
 
       const removeButton = document.createElement("button");
       removeButton.type = "button";
@@ -1104,13 +1126,10 @@ function focusSelectedActors(selectedActorKeys, activeActorKey = null) {
     ? activeActorKey
     : selectedIds.at(-1);
 
-  if (activeId) {
+  if (activeActorKey && activeId) {
     network.selectNodes([activeId], true);
     const activeNode = network.body.data.nodes.get(activeId);
     if (activeNode) renderNodeDetails(activeNode);
-  }
-
-  if (activeId) {
     network.focus(activeId, {
       scale: 1.15,
       animation: {
@@ -1121,8 +1140,31 @@ function focusSelectedActors(selectedActorKeys, activeActorKey = null) {
     return;
   }
 
+  if (activeId) {
+    network.selectNodes([activeId], true);
+  }
+
   network.fit({
     nodes: selectedIds.length ? selectedIds : undefined,
+    animation: {
+      duration: 650,
+      easingFunction: "easeInOutQuad"
+    }
+  });
+}
+
+function focusActorFromFilterChip(actorKey) {
+  if (!network || !actorKey) return;
+
+  actorSelect.setLastSelectedValue(actorKey);
+
+  const node = network.body?.data?.nodes?.get(actorKey);
+  if (!node) return;
+
+  network.selectNodes([actorKey], true);
+  renderNodeDetails(node);
+  network.focus(actorKey, {
+    scale: 1.15,
     animation: {
       duration: 650,
       easingFunction: "easeInOutQuad"
