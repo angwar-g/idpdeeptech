@@ -331,7 +331,6 @@
       { "match": "^spie$",                          "drop": true },
 
       { "match": "^\\[research\\]$",                                         "drop": true },
-      { "match": "^1qbit information technologies$",                         "drop": true },
       { "match": "^\\.net on aws \\(\\.net\\)$",                             "drop": true },
       { "match": "^\\(clients only\\) IBM Turbonomic User Group \\(TUG\\)$", "replace": "IBM Turbonomic User Group (TUG)" },
 
@@ -371,6 +370,11 @@
       { "match": "^aws braket$",              "replace": "AWS" },
       { "match": "^azure quantum$",           "replace": "Microsoft" },
       { "match": "^ibm quantum experience$",  "replace": "IBM" },
+
+      { "match": "^1qbit information technologies$",            "replace": "1QB Information Technologies Inc. (1QBITS)" },
+      { "match": "1QB Information Technologies Inc. (1QBITS)",  "replace": "1QBit (1QB Information Technologies)" },
+      { "match": "^@tsarcyanide$",                              "replace": "Tsar Cyanide (Artist)" },
+      { "match": "^12 Quantum Computing Universities$",         "drop": true },
 
       { "match": "^\\[[^\\]]+\\]\\(https?://[^)]+\\)$", "drop": true },
       { "match": "^\\[[^\\]]+\\]$",                     "drop": true },
