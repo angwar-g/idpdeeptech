@@ -1524,7 +1524,8 @@ function formatRnDValue(value) {
   const normalized = String(value || "").trim().toLowerCase();
 
   if (normalized === "r&d") return "True";
-  if (normalized === "assessed" || normalized === "non-r&d") return "False";
+  if (normalized === "non-r&d") return "False";
+  if (normalized === "assessed") return "Assessed";
 
   return "Not specified";
 }
