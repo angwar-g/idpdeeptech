@@ -345,6 +345,33 @@
       { "match": "^(the )?uk$",                     "drop_if_unmapped": true },
       { "match": "^(the )?union$",                  "drop_if_unmapped": true },
 
+      { "match": "^tket$",                    "drop": true },
+      { "match": "^t\\|ket>$",                "drop": true },
+      { "match": "^t\\|ket⟩$",                "drop": true },
+      { "match": "^pyquil$",                  "drop": true },
+      { "match": "^openfermion$",             "drop": true },
+      { "match": "^qutip$",                   "drop": true },
+      { "match": "^stim$",                    "drop": true },
+      { "match": "^cuquantum$",               "drop": true },
+      { "match": "^tensorflow quantum$",      "drop": true },
+      { "match": "^mitiq$",                   "drop": true },
+      { "match": "^openqasm$",                "drop": true },
+      { "match": "^q#$",                      "drop": true },
+      { "match": "^qsharp$",                  "drop": true },
+      { "match": "^strawberry fields$",       "drop": true },
+
+      { "match": "^claude$",                  "drop": true },
+      { "match": "^gpt-4$",                   "drop": true },
+      { "match": "^gpt-3$",                   "drop": true },
+      { "match": "^gpt-3\\.5$",               "drop": true },
+      { "match": "^llama$",                   "drop": true },
+      { "match": "^llama-?[0-9]$",            "drop": true },
+
+      { "match": "^amazon braket$",           "replace": "AWS" },
+      { "match": "^aws braket$",              "replace": "AWS" },
+      { "match": "^azure quantum$",           "replace": "Microsoft" },
+      { "match": "^ibm quantum experience$",  "replace": "IBM" },
+
       { "match": "^\\[[^\\]]+\\]\\(https?://[^)]+\\)$", "drop": true },
       { "match": "^\\[[^\\]]+\\]$",                     "drop": true },
       { "match": "^https?://[^\\s]{20,}$",              "drop": true }

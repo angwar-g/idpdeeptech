@@ -693,6 +693,12 @@ def merge_edges(
         edge["functional_space"] = _most_common_nonempty(
             [o.get("functional_space", "") for o in unique]
         )
+        # Rename Luis's verbose combined label. Same-helix IS Luis's own category
+        # ("Intra-helix"), distinct from Unknown (data gap). The old per-doc data
+        # uses the compound label; we normalize here so downstream sees just
+        # "Intra-helix".
+        if edge["functional_space"] == "Intra-helix / Not classified":
+            edge["functional_space"] = "Intra-helix"
         # needs_review is true if ANY occurrence flagged it -- conservative.
         edge["functional_space_needs_review"] = any(
             o.get("functional_space_needs_review") for o in unique

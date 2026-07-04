@@ -906,8 +906,8 @@
   ],
   "input_node_records": 21785,
   "input_edge_records": 7526,
-  "output_unique_actors": 6422,
-  "output_unique_edges": 2860,
+  "output_unique_actors": 6385,
+  "output_unique_edges": 2824,
   "rewrites_applied": {
     "*: ^(.{2,}?),? (ltd\\.?|limited|gmbh|llc|inc\\.?|incorporated|corp\\.?|corporation|s\\.a\\.|sas|s\\.r\\.l\\.|ag|kg|kgaa|pty ltd|pte ltd|bv|nv|oy|ab|spa|plc|kk|kft|sa|sl|srl|sro|asa|holdings|holding)$ -> $1": 1669,
     "*: ^fraunhofer research fab microelectronics germany \\(fmd\\)$ -> FMD": 1,
@@ -939,15 +939,19 @@
     "*: ^fraunhofer$ -> Fraunhofer-Gesellschaft": 3,
     "*: ^qed-c$ -> Quantum Economic Development Consortium (QED-C)": 4,
     "*: ^national institute of standard technology \\(nist\\)$ -> National Institute of Standards and Technology (NIST)": 1,
+    "*: ^azure quantum$ -> Microsoft": 4,
     "*: ^darpa$ -> Defense Advanced Research Projects Agency (DARPA)": 15,
     "*: ^cea$ -> Commissariat à l'Énergie Atomique et aux Énergies Alternatives (CEA)": 1,
     "*: ^google (inc\\.?|llc|cloud|developers|doubleclick|analytics|search|workspace|maps|chrome|drive|gmail|advertising|ads|domains|workspace marketplace|store|recaptcha)$ -> Google": 18,
+    "*: ^amazon braket$ -> AWS": 20,
     "*: ^jila$ -> Joint Institute for Laboratory Astrophysics (JILA)": 1,
     "*: ^mit$ -> Massachusetts Institute of Technology (MIT)": 12,
     "*: ^amazon (web services|web services, inc\\.?|web services \\(aws\\)|web services emea sarl|web services \\(aws\\) marketplace solutions)$ -> AWS": 25,
     "*: ^alphabet (inc\\.?|inc\\.? \\(googl\\))$ -> Alphabet": 3,
     "*: ^amazon\\.com (inc\\.?|inc\\.? \\(amzn\\))$ -> Amazon": 2,
+    "*: ^aws braket$ -> AWS": 1,
     "*: ^honeywell (international|international inc\\.?|connected enterprise)$ -> Honeywell": 2,
+    "*: ^ibm quantum experience$ -> IBM": 2,
     "*: ^microsoft corporation$ -> Microsoft": 2,
     "*: ^nist$ -> National Institute of Standards and Technology (NIST)": 9,
     "*: ^dod$ -> Department of Defense (DOD)": 1,
@@ -1028,6 +1032,7 @@
     "*: ^youtube$ -> [drop]": 15,
     "*: ^vimeo$ -> [drop]": 8,
     "*: ^physical review x$ -> [drop]": 3,
+    "*: ^\\[[^\\]]+\\]\\(https?://[^)]+\\)$ -> [drop]": 5,
     "*: ^\\.net on aws \\(\\.net\\)$ -> [drop]": 1,
     "*: ^\\[research\\]$ -> [drop]": 1,
     "*: ^github$ -> [drop]": 10,
@@ -1051,11 +1056,19 @@
     "*: ^citizens$ -> [drop]": 1,
     "*: ^prx quantum$ -> [drop]": 2,
     "*: ^quantum$ -> [drop]": 1,
+    "*: ^qutip$ -> [drop]": 2,
     "*: ^[a-z0-9\\-]+\\.[a-z]+\\.(com|org|net|io|tech|ai|co)$ -> [drop]": 2,
     "*: ^dave$ -> [drop]": 1,
+    "*: ^openfermion$ -> [drop]": 1,
+    "*: ^t\\|ket>$ -> [drop]": 1,
+    "*: ^tket$ -> [drop]": 1,
     "*: ^webflow$ -> [drop]": 1,
     "*: ^nation-states$ -> [drop]": 1,
-    "*: ^nations$ -> [drop]": 1
+    "*: ^pyquil$ -> [drop]": 1,
+    "*: ^stim$ -> [drop]": 1,
+    "*: ^nations$ -> [drop]": 1,
+    "*: ^claude$ -> [drop]": 2,
+    "*: ^gpt-4$ -> [drop]": 1
   },
   "helix_conflicts": [
     {
@@ -1176,37 +1189,6 @@
       ]
     },
     {
-      "entity": "Amazon Braket",
-      "canonical_actor_key": "amazon braket",
-      "helixes": [
-        "Government",
-        "Industry"
-      ],
-      "chosen_helix": "Industry",
-      "source_documents": [
-        "https://aws.amazon.com/braket",
-        "https://blog.qubit-pharmaceuticals.com/blog/greedy-quantum-algorithm-charts-a-new-course-to-ground-state-energy-success-1",
-        "https://docs.rigetti.com/qcs/guides/how-to-use-rigetti-qpus",
-        "https://infleqtion.com/research",
-        "https://q-ctrl.com/fire-opal",
-        "https://q2b.qcware.com/conference/2025-silicon-valley",
-        "https://quantumsimulations.de",
-        "https://thequantuminsider.com/2020/07/15/quantycats-modern-developers-workflow-fix-for-qc",
-        "https://thequantuminsider.com/2020/07/21/qc-ware-races-ahead-with-research-into-quantum-machine-learning-algorithms",
-        "https://thequantuminsider.com/2020/08/04/bessemer-leads-79-million-series-c-round-of-rigetti-computing-to-advance-practical-quantum-computing",
-        "https://thequantuminsider.com/2020/08/18/aws-announces-general-availability-of-its-quantum-algorithm-design-service",
-        "https://thequantuminsider.com/2024/02/05/quantum-industry-explained-applications-innovations-challenges",
-        "https://thequantuminsider.com/2024/02/12/citi-and-classiq-use-amazon-braket-to-explore-quantum-solutions-for-portfolio-optimization",
-        "https://thequantuminsider.com/2024/02/16/ionq-opens-doors-to-first-dedicated-quantum-computing-manufacturing-facility-in-u-s",
-        "https://thequantuminsider.com/2024/02/22/in-step-toward-quantum-networks-ionq-generates-photons-entangled-with-ions",
-        "https://www.aqt.eu/about",
-        "https://www.bluequbit.io/blog/how-does-quantum-computing-work",
-        "https://www.bqpsim.com/optimization",
-        "https://www.ionq.com/quantum-cloud",
-        "https://www.quera.com/enterprise-innovators"
-      ]
-    },
-    {
       "entity": "American Physical Society",
       "canonical_actor_key": "american physical society",
       "helixes": [
@@ -1231,13 +1213,13 @@
       ]
     },
     {
-      "entity": "Andretti Acquisition",
+      "entity": "Andretti Acquisition Corp. (WNNR)",
       "canonical_actor_key": "andretti acquisition",
       "helixes": [
         "Industry",
         "Intermediary"
       ],
-      "chosen_helix": "Intermediary",
+      "chosen_helix": "Industry",
       "source_documents": [
         "https://thequantuminsider.com/2024/01/31/andretti-acquisition-zapata-ai-merger-gets-sec-approval-another-step-toward-public-listing",
         "https://thequantuminsider.com/2024/03/30/zapata-ai-to-begin-trading-april-1"
@@ -1411,18 +1393,64 @@
       ]
     },
     {
-      "entity": "Azure Quantum",
-      "canonical_actor_key": "azure quantum",
+      "entity": "AWS",
+      "canonical_actor_key": "aws",
       "helixes": [
-        "Industry",
-        "Unknown"
+        "Government",
+        "Industry"
       ],
       "chosen_helix": "Industry",
       "source_documents": [
-        "https://1qbit.com/research/scaling-overhead-of-locality-reduction-in-binary-optimization-problems",
-        "https://quantumai.google/cirq/hardware",
-        "https://thequantuminsider.com/2024/01/18/microsoft-unveils-open-source-azure-quantum-resource-estimator-prepares-for-fault-tolerant-quantum-computing",
-        "https://www.rigetti.com/applications"
+        "https://aws.amazon.com/braket",
+        "https://aws.amazon.com/braket/quantum-computers",
+        "https://aws.amazon.com/marketplace",
+        "https://blog.qubit-pharmaceuticals.com/blog/greedy-quantum-algorithm-charts-a-new-course-to-ground-state-energy-success-1",
+        "https://docs.rigetti.com/qcs/guides/how-to-use-rigetti-qpus",
+        "https://infleqtion.com/research",
+        "https://multiversecomputing.com/compactifai",
+        "https://parityqc.com/parityos",
+        "https://q-ctrl.com/fire-opal",
+        "https://q2b.qcware.com/conference/2025-paris",
+        "https://q2b.qcware.com/conference/2025-silicon-valley",
+        "https://quantumsimulations.de",
+        "https://thequantuminsider.com/2019/12/02/amazon-is-primed-for-quantum-computing",
+        "https://thequantuminsider.com/2019/12/20/quantum-weekly-digest-its-the-dawning-of-the-quantum-decade",
+        "https://thequantuminsider.com/2020/01/05/weekly-quantum-digest-quantum-materials-search-gets-some-large-scale-help",
+        "https://thequantuminsider.com/2020/07/15/quantycats-modern-developers-workflow-fix-for-qc",
+        "https://thequantuminsider.com/2020/07/21/qc-ware-races-ahead-with-research-into-quantum-machine-learning-algorithms",
+        "https://thequantuminsider.com/2020/08/04/bessemer-leads-79-million-series-c-round-of-rigetti-computing-to-advance-practical-quantum-computing",
+        "https://thequantuminsider.com/2020/08/07/u-s-launches-national-quantum-education-partnership-with-industry-and-academic-leaders",
+        "https://thequantuminsider.com/2020/08/18/aws-announces-general-availability-of-its-quantum-algorithm-design-service",
+        "https://thequantuminsider.com/2022/03/13/13-quantum-computing-companies-working-with-superconducting-technology",
+        "https://thequantuminsider.com/2022/09/05/quantum-computing-companies-ultimate-list-for-2022",
+        "https://thequantuminsider.com/2024/01/15/rigetti-computing-awarded-innovate-uk-grant-to-develop-quantum-machine-learning-techniques-for-financial-data-streams",
+        "https://thequantuminsider.com/2024/01/18/psirch-places-amazons-steve-flammia-as-quantum-center-director-at-virginia-tech-in-partnership-with-northrop-grumman",
+        "https://thequantuminsider.com/2024/01/24/quantum-algorithm-can-be-used-to-optimize-telecommunication-networks",
+        "https://thequantuminsider.com/2024/01/30/quantum-city-challenge-inspires-quantum-community-to-solve-real-world-energy-challenges",
+        "https://thequantuminsider.com/2024/02/05/quantum-industry-explained-applications-innovations-challenges",
+        "https://thequantuminsider.com/2024/02/06/alliance-launches-to-advance-post-quantum-cryptography",
+        "https://thequantuminsider.com/2024/02/12/citi-and-classiq-use-amazon-braket-to-explore-quantum-solutions-for-portfolio-optimization",
+        "https://thequantuminsider.com/2024/02/16/ionq-opens-doors-to-first-dedicated-quantum-computing-manufacturing-facility-in-u-s",
+        "https://thequantuminsider.com/2024/02/22/in-step-toward-quantum-networks-ionq-generates-photons-entangled-with-ions",
+        "https://thequantuminsider.com/2024/03/01/ionqs-financial-results-company-beats-full-year-consensus-on-revenue-and-bookings",
+        "https://thequantuminsider.com/2024/03/25/airbus-and-bmw-group-announce-jury-for-the-quantum-mobility-quest",
+        "https://www.aqt.eu/about",
+        "https://www.aqt.eu/partnerships",
+        "https://www.bluequbit.io/blog/how-does-quantum-computing-work",
+        "https://www.bluequbit.io/blog/quantum-computing-simulators",
+        "https://www.bluequbit.io/quantum-computing-simulators",
+        "https://www.bqpsim.com/optimization",
+        "https://www.bqpsim.com/quantum-optimization",
+        "https://www.cryptoquantique.com/industry-4-0",
+        "https://www.horizonquantum.com/technology/quantum-systems-and-integration/quantum-processors-supported-by-triple-alpha",
+        "https://www.ionq.com",
+        "https://www.ionq.com/quantum-cloud",
+        "https://www.promethium.qcware.com",
+        "https://www.qnulabs.com/digital-quantum-key-distribution-qkd",
+        "https://www.quantinuum.com",
+        "https://www.quera.com/enterprise-innovators",
+        "https://www.quera.com/news",
+        "https://www.rigetti.com/why-quantum"
       ]
     },
     {
@@ -3378,6 +3406,7 @@
         "https://thequantuminsider.com/2020/07/25/greek-startup-utilizing-quantum-computing-hardware-to-simulate-drugs-chemicals-materials-and-other-quantum-systems",
         "https://thequantuminsider.com/2020/07/28/q-ctrl-forms-professional-services-to-help-organizations-max-out-cloud-based-quantum-computers",
         "https://thequantuminsider.com/2020/07/30/head-of-business-development-at-qc-ware-yianni-gamvros-reflects-on-the-present-and-future-of-quantum-computing",
+        "https://thequantuminsider.com/2020/08/12/scientists-develop-first-quantum-algorithm-to-characterize-noise-across-large-systems",
         "https://thequantuminsider.com/2020/08/14/quantum-robotics-for-the-future",
         "https://thequantuminsider.com/2020/08/20/ibm-says-company-achieved-highest-quantum-volume-to-date",
         "https://thequantuminsider.com/2020/08/30/spains-timely-edge-for-quantum-leadership",
@@ -3403,6 +3432,7 @@
         "https://thequantuminsider.com/2024/03/26/is-q-day-closer-than-we-think-ibm-researchers-say-hybrid-quantum-ai-may-poses-near-term-threats",
         "https://thequantuminsider.com/2024/03/26/orangeqs-accelerates-roadmap-to-serve-industrial-quantum-chip-production-and-developmen",
         "https://thequantuminsider.com/2024/04/02/chicago-wont-be-second-city-in-quantum-illinois-governor-unveils-strategic-plan-for-quantum",
+        "https://www.bluequbit.io/blog/quantum-computing-software-platforms",
         "https://www.bluequbit.io/blog/quantum-financial-system",
         "https://www.bqpsim.com",
         "https://www.horizonquantum.com/technology/quantum-systems-and-integration",
@@ -3563,7 +3593,7 @@
     },
     {
       "entity": "International Data Corporation (IDC)",
-      "canonical_actor_key": "international data corporation",
+      "canonical_actor_key": "international data",
       "helixes": [
         "Academia",
         "Civil Society"
@@ -3580,13 +3610,13 @@
       ]
     },
     {
-      "entity": "IP Group",
+      "entity": "IP Group plc (IPO)",
       "canonical_actor_key": "ip group",
       "helixes": [
         "Industry",
         "Intermediary"
       ],
-      "chosen_helix": "Intermediary",
+      "chosen_helix": "Industry",
       "source_documents": [
         "https://quantum-dice.com/about",
         "https://thequantuminsider.com/2020/08/06/ip-group-launches-12-million-investment-partnership-in-quantum-technology"
@@ -4937,6 +4967,7 @@
         "Luis_Ireland23.pdf",
         "Luis_Netherlands19.pdf",
         "SouthAfrica21.pdf",
+        "https://1qbit.com/research/scaling-overhead-of-locality-reduction-in-binary-optimization-problems",
         "https://atom-computing.com/page/3",
         "https://azure.microsoft.com/de-de",
         "https://global.fujitsu/en-global/industries/mobility-transport",
@@ -4946,6 +4977,7 @@
         "https://photonic.com/products",
         "https://quantum-south.com",
         "https://quantum-south.com/about-us-2",
+        "https://quantumai.google/cirq/hardware",
         "https://seeqc.com/whitepaper",
         "https://thequantuminsider.com/2019/07/30/quantum-basic",
         "https://thequantuminsider.com/2019/11/05/microsoft-opens-new-doors-or-windows-to-the-quantum-cloud",
@@ -4991,6 +5023,7 @@
         "https://www.quantinuum.com/products-solutions/hardware-h-series",
         "https://www.quantum-machines.co/products/octave",
         "https://www.quantum-machines.co/solutions/transducers",
+        "https://www.rigetti.com/applications",
         "https://www.rigetti.com/applications/p2"
       ]
     },
@@ -5772,6 +5805,19 @@
       "source_documents": [
         "USA24.pdf",
         "USA26.pdf"
+      ]
+    },
+    {
+      "entity": "National Reconstruction Fund",
+      "canonical_actor_key": "national reconstruction fund",
+      "helixes": [
+        "Government",
+        "Intermediary"
+      ],
+      "chosen_helix": "Intermediary",
+      "source_documents": [
+        "Luis_Australia23.pdf",
+        "https://www.sqc.com.au/news/nrfc-investment"
       ]
     },
     {
@@ -8735,6 +8781,7 @@
       ],
       "chosen_helix": "Industry",
       "source_documents": [
+        "https://investors.rigetti.com/news-releases/news-release-details/rigetti-and-adia-lab-sign-collaboration-agreement-develop",
         "https://ionq.com",
         "https://q-ctrl.com/integrations",
         "https://quantware.com/articles/quantum-open-architecture",
@@ -8755,6 +8802,7 @@
         "https://thequantuminsider.com/2024/01/15/rigetti-computing-awarded-innovate-uk-grant-to-develop-quantum-machine-learning-techniques-for-financial-data-streams",
         "https://thequantuminsider.com/2024/02/02/what-is-quantum-computing",
         "https://thequantuminsider.com/2024/02/27/riverlane-rigetti-computing-and-oak-ridge-national-laboratory-partner-to-improve-hpc-quantum-integration",
+        "https://www.bluequbit.io/blog/quantum-computing-stocks",
         "https://www.bluequbit.io/quantum-advantage-challenge",
         "https://www.rigetti.com/rigetti-computing-news",
         "https://www.riverlane.com/news/deltaflow-2-delivered-to-rigetti-and-infleqtion"
@@ -8986,6 +9034,7 @@
       "chosen_helix": "Industry",
       "source_documents": [
         "Luis_Australia23.pdf",
+        "https://thequantuminsider.com/2019/12/17/silex-systems-teams-up-with-unsw-on-silicon-enrichment-project-for-quantum-computing",
         "https://thequantuminsider.com/2020/05/16/australias-national-science-agency-csiro-launches-quantum-technology-roadmap",
         "https://thequantuminsider.com/2022/03/13/13-quantum-computing-companies-working-with-superconducting-technology",
         "https://thequantuminsider.com/2022/06/02/tqi-exclusive-interview-with-michelle-simmons-of-silicon-quantum-computing",
@@ -10799,14 +10848,16 @@
       ]
     },
     {
-      "entity": "X (Twitter)",
+      "entity": "X GmbH",
       "canonical_actor_key": "x",
       "helixes": [
         "Civil Society",
+        "Industry",
         "Unknown"
       ],
-      "chosen_helix": "Civil Society",
+      "chosen_helix": "Industry",
       "source_documents": [
+        "https://thequantuminsider.com/2020/05/30/the-quantum-weekly-startup-has-brains-of-a-deep-tech-firm-heart-of-a-scrappy-small-business",
         "https://www.quandela.com/fr-ca",
         "https://www.scalinq.com/solutions/cliq"
       ]
@@ -10856,7 +10907,7 @@
       ]
     },
     {
-      "entity": "Zapata Computing",
+      "entity": "Zapata Computing, Inc. (Zapata AI)",
       "canonical_actor_key": "zapata computing",
       "helixes": [
         "Industry",
@@ -10875,7 +10926,8 @@
         "https://thequantuminsider.com/2024/01/31/andretti-acquisition-zapata-ai-merger-gets-sec-approval-another-step-toward-public-listing",
         "https://thequantuminsider.com/2024/02/09/d-wave-and-zapata-ai-announce-strategic-technical-and-commercial-collaboration-to-advance-quantum-enabled-machine-learning",
         "https://thequantuminsider.com/2024/02/20/quantum-enhanced-generative-ai-generates-viable-cancer-drug-candidates",
-        "https://thequantuminsider.com/2024/03/30/zapata-ai-to-begin-trading-april-1"
+        "https://thequantuminsider.com/2024/03/30/zapata-ai-to-begin-trading-april-1",
+        "https://thequantuminsider.com/2024/04/02/zapata-ai-stock-faces-steep-decline-on-first-day-of-trading-could-chill-future-spac-deals-in-quantum"
       ]
     }
   ],
