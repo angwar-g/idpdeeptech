@@ -6,6 +6,7 @@ let actorSelect = null;
 let yearSelect = null;
 let pendingFilterTimer = null;
 let pendingPreparingTimer = null;
+let selectedNeighbourDepth = null;
 const searchableSelects = [];
 
 const FULL_NETWORK_SUMMARY = "Showing the largest connected network without smaller outlier components.";
@@ -66,6 +67,11 @@ Promise.all([
     populateFilters(nodes, edges);
 
     document.getElementById("resetBtn").addEventListener("click", resetFilters);
+    const neighbourDepthSlider = document.getElementById("neighbourDepthSlider");
+    if (neighbourDepthSlider) {
+      neighbourDepthSlider.addEventListener("input", handleNeighbourDepthPreview);
+      neighbourDepthSlider.addEventListener("change", handleNeighbourDepthChange);
+    }
 
     resetFilters();
   })
@@ -536,6 +542,7 @@ function applyFilters() {
     selectedYears.size === 0;
 
   if (noFilters) {
+    updateNeighbourDepthControls(new Set(), []);
     showFullNetwork();
     resetDetailsPanel();
     return;
@@ -567,8 +574,13 @@ function applyFilters() {
     });
   });
 
+  const activeNeighbourDepth = updateNeighbourDepthControls(
+    selectedActors,
+    sourceYearFilteredEdges
+  );
+
   const actorFilteredGraph = selectedActors.size > 0
-    ? getSelectedActorComponentGraph(sourceYearFilteredEdges, selectedActors)
+    ? getSelectedActorComponentGraph(sourceYearFilteredEdges, selectedActors, activeNeighbourDepth)
     : { edges: sourceYearFilteredEdges, isolatedActorKeys: new Set() };
   const filteredEdges = actorFilteredGraph.edges;
   const visibleActorKeys = new Set();
@@ -625,19 +637,8 @@ function occurrenceYearsMatch(occ, edge, selectedYears) {
   return false;
 }
 
-function getSelectedActorComponentGraph(edges, selectedActors) {
-  const adjacency = new Map();
-
-  edges.forEach(edge => {
-    const source = edge.source_actor_key;
-    const target = edge.target_actor_key;
-    if (!source || !target) return;
-
-    if (!adjacency.has(source)) adjacency.set(source, new Set());
-    if (!adjacency.has(target)) adjacency.set(target, new Set());
-    adjacency.get(source).add(target);
-    adjacency.get(target).add(source);
-  });
+function getSelectedActorComponentGraph(edges, selectedActors, maxDepth = null) {
+  const adjacency = buildAdjacency(edges);
 
   const componentActorKeys = new Set();
   const isolatedActorKeys = new Set();
@@ -651,6 +652,10 @@ function getSelectedActorComponentGraph(edges, selectedActors) {
     const stack = [actorKey];
     componentActorKeys.add(actorKey);
 
+    if (Number.isInteger(maxDepth)) {
+      return;
+    }
+
     while (stack.length) {
       const current = stack.pop();
       (adjacency.get(current) || new Set()).forEach(next => {
@@ -660,6 +665,13 @@ function getSelectedActorComponentGraph(edges, selectedActors) {
       });
     }
   });
+
+  if (Number.isInteger(maxDepth)) {
+    const distances = getNeighbourDistances(adjacency, selectedActors);
+    distances.forEach((distance, actorKey) => {
+      if (distance <= maxDepth) componentActorKeys.add(actorKey);
+    });
+  }
 
   const componentEdges = edges.filter(edge =>
     componentActorKeys.has(edge.source_actor_key) &&
@@ -672,11 +684,147 @@ function getSelectedActorComponentGraph(edges, selectedActors) {
   };
 }
 
+function handleNeighbourDepthPreview(event) {
+  const slider = event.target.closest("#neighbourDepthSlider");
+  if (!slider) return;
+
+  const { depth, numericMaxDepth } = getNeighbourDepthFromSlider(slider);
+  updateNeighbourDepthSliderPresentation(slider, depth, numericMaxDepth);
+}
+
+function handleNeighbourDepthChange(event) {
+  const slider = event.target.closest("#neighbourDepthSlider");
+  if (!slider) return;
+
+  const { depth, numericMaxDepth } = getNeighbourDepthFromSlider(slider);
+  selectedNeighbourDepth = depth;
+  updateNeighbourDepthSliderPresentation(slider, selectedNeighbourDepth, numericMaxDepth);
+  scheduleApplyFilters();
+}
+
+function getNeighbourDepthFromSlider(slider) {
+  const value = Number(slider.value);
+  const allDepthValue = Number(slider.max);
+
+  return {
+    depth: value >= allDepthValue ? null : value,
+    numericMaxDepth: Math.max(1, allDepthValue - 1)
+  };
+}
+
+function updateNeighbourDepthControls(selectedActors, edges) {
+  const control = document.getElementById("neighbourDepthControl");
+  const slider = document.getElementById("neighbourDepthSlider");
+  const valueLabel = document.getElementById("neighbourDepthValue");
+
+  if (!control || !slider || !valueLabel) return null;
+
+  if (selectedActors.size === 0) {
+    control.classList.add("hidden");
+    selectedNeighbourDepth = null;
+    return null;
+  }
+
+  const adjacency = buildAdjacency(edges);
+  const distances = getNeighbourDistances(adjacency, selectedActors);
+  const maxDepth = Math.max(
+    0,
+    ...[...distances.values()].filter(distance => distance > 0)
+  );
+  const numericMaxDepth = Math.max(1, maxDepth - 1);
+
+  if (maxDepth === 0) {
+    control.classList.add("hidden");
+    selectedNeighbourDepth = null;
+    return null;
+  }
+
+  if (!Number.isInteger(selectedNeighbourDepth) || selectedNeighbourDepth > numericMaxDepth) {
+    selectedNeighbourDepth = null;
+  }
+
+  slider.min = "1";
+  slider.max = String(numericMaxDepth + 1);
+  slider.value = String(selectedNeighbourDepth === null ? numericMaxDepth + 1 : selectedNeighbourDepth);
+  updateNeighbourDepthSliderPresentation(slider, selectedNeighbourDepth, numericMaxDepth);
+  control.classList.remove("hidden");
+
+  return selectedNeighbourDepth;
+}
+
+function updateNeighbourDepthSliderPresentation(slider, depth, numericMaxDepth) {
+  const valueLabel = document.getElementById("neighbourDepthValue");
+  const allDepthValue = numericMaxDepth + 1;
+  const value = depth === null ? allDepthValue : depth;
+
+  slider.style.setProperty(
+    "--slider-progress",
+    `${((value - 1) / Math.max(1, numericMaxDepth)) * 100}%`
+  );
+
+  if (valueLabel) {
+    valueLabel.textContent = depth === null
+      ? "All neighbours"
+      : `${formatOrdinal(depth)} neighbours`;
+  }
+}
+
+function buildAdjacency(edges) {
+  const adjacency = new Map();
+
+  edges.forEach(edge => {
+    const source = edge.source_actor_key;
+    const target = edge.target_actor_key;
+    if (!source || !target) return;
+
+    if (!adjacency.has(source)) adjacency.set(source, new Set());
+    if (!adjacency.has(target)) adjacency.set(target, new Set());
+    adjacency.get(source).add(target);
+    adjacency.get(target).add(source);
+  });
+
+  return adjacency;
+}
+
+function getNeighbourDistances(adjacency, selectedActors) {
+  const distances = new Map();
+  const queue = [];
+
+  selectedActors.forEach(actorKey => {
+    distances.set(actorKey, 0);
+    if (adjacency.has(actorKey)) queue.push(actorKey);
+  });
+
+  for (let index = 0; index < queue.length; index += 1) {
+    const current = queue[index];
+    const nextDistance = distances.get(current) + 1;
+
+    (adjacency.get(current) || new Set()).forEach(next => {
+      if (distances.has(next)) return;
+      distances.set(next, nextDistance);
+      queue.push(next);
+    });
+  }
+
+  return distances;
+}
+
+function formatOrdinal(value) {
+  const suffix =
+    value % 100 >= 11 && value % 100 <= 13
+      ? "th"
+      : ({ 1: "st", 2: "nd", 3: "rd" }[value % 10] || "th");
+
+  return `${value}${suffix}`;
+}
+
 function resetFilters() {
   sourceSelect.clear();
   updateActorFilterOptions();
   actorSelect.clear();
   yearSelect.clear();
+  selectedNeighbourDepth = null;
+  updateNeighbourDepthControls(new Set(), []);
 
   scheduleApplyFilters();
   resetDetailsPanel();

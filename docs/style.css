@@ -262,6 +262,106 @@ select option {
   cursor: default;
 }
 
+.neighbour-depth.hidden {
+  display: none !important;
+}
+
+.neighbour-depth {
+  margin-top: 10px;
+  padding: 10px;
+  border: 1px solid rgba(143, 199, 255, 0.20);
+  border-radius: 12px;
+  background: rgba(6, 18, 35, 0.34);
+}
+
+.neighbour-depth-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
+.neighbour-depth-title {
+  color: rgba(143, 199, 255, 0.82);
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.9px;
+  text-transform: uppercase;
+}
+
+.neighbour-depth-value {
+  color: rgba(255,255,255,0.82);
+  font-size: 12px;
+  font-weight: 800;
+  text-align: right;
+  white-space: nowrap;
+}
+
+.neighbour-depth-slider {
+  width: 100%;
+  height: 24px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  border-radius: 999px;
+  outline: none;
+  background: transparent;
+  cursor: pointer;
+  appearance: none;
+}
+
+.neighbour-depth-slider:focus {
+  border: 0;
+  box-shadow: none;
+  background: transparent;
+}
+
+.neighbour-depth-slider::-webkit-slider-thumb {
+  width: 18px;
+  height: 18px;
+  margin-top: -6px;
+  border: 2px solid rgba(237, 246, 255, 0.92);
+  border-radius: 50%;
+  background: linear-gradient(135deg, rgba(56, 125, 255, 0.98), rgba(24, 200, 232, 0.88));
+  box-shadow: 0 0 0 5px rgba(143, 199, 255, 0.12);
+  appearance: none;
+}
+
+.neighbour-depth-slider::-webkit-slider-runnable-track {
+  height: 6px;
+  border-radius: 999px;
+  background:
+    linear-gradient(
+      90deg,
+      rgba(143, 199, 255, 0.58) 0%,
+      rgba(143, 199, 255, 0.58) var(--slider-progress, 100%),
+      rgba(143, 199, 255, 0.14) var(--slider-progress, 100%),
+      rgba(143, 199, 255, 0.14) 100%
+    );
+}
+
+.neighbour-depth-slider::-moz-range-track {
+  height: 6px;
+  border-radius: 999px;
+  background: rgba(143, 199, 255, 0.14);
+}
+
+.neighbour-depth-slider::-moz-range-progress {
+  height: 6px;
+  border-radius: 999px;
+  background: rgba(143, 199, 255, 0.58);
+}
+
+.neighbour-depth-slider::-moz-range-thumb {
+  width: 18px;
+  height: 18px;
+  border: 2px solid rgba(237, 246, 255, 0.92);
+  border-radius: 50%;
+  background: linear-gradient(135deg, rgba(56, 125, 255, 0.98), rgba(24, 200, 232, 0.88));
+  box-shadow: 0 0 0 5px rgba(143, 199, 255, 0.12);
+}
+
 button {
   margin-top: 18px;
   padding: 12px 14px;

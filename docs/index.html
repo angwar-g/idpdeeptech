@@ -38,6 +38,22 @@
         <button type="button" class="select-caret" aria-label="Open actor options"></button>
         <div class="search-options" id="actorOptions" role="listbox"></div>
       </div>
+      <div id="neighbourDepthControl" class="neighbour-depth hidden" aria-live="polite">
+        <div class="neighbour-depth-header">
+          <div class="neighbour-depth-title">Neighbour depth</div>
+          <div id="neighbourDepthValue" class="neighbour-depth-value">All neighbours</div>
+        </div>
+        <input
+          id="neighbourDepthSlider"
+          class="neighbour-depth-slider"
+          type="range"
+          min="1"
+          max="1"
+          value="1"
+          step="1"
+          aria-label="Neighbour depth"
+        >
+      </div>
 
       <label for="yearSearch">Year</label>
       <div class="search-select" id="yearSelect">
@@ -111,6 +127,6 @@
     </section>
   </main>
 
-  <script src="app.js?v=manual-filter-reset-details"></script>
+  <script src="app.js?v=neighbour-depth-slider-track-fix"></script>
 </body>
 </html>
