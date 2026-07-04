@@ -236,6 +236,7 @@ function createSearchableMultiSelect(config) {
 
   let options = [];
   const selected = new Map();
+  let lastSelectedValue = null;
 
   const api = {
     setOptions(newOptions, pruneSelected = false) {
@@ -249,6 +250,9 @@ function createSearchableMultiSelect(config) {
         selected.forEach((_, value) => {
           if (!optionValues.has(value)) selected.delete(value);
         });
+        if (!selected.has(lastSelectedValue)) {
+          lastSelectedValue = [...selected.keys()].at(-1) || null;
+        }
         renderChips();
       }
 
@@ -259,8 +263,13 @@ function createSearchableMultiSelect(config) {
       return new Set(selected.keys());
     },
 
+    getLastSelectedValue() {
+      return selected.has(lastSelectedValue) ? lastSelectedValue : null;
+    },
+
     clear() {
       selected.clear();
+      lastSelectedValue = null;
       input.value = "";
       renderChips();
       closeMenu();
@@ -272,7 +281,11 @@ function createSearchableMultiSelect(config) {
 
   input.addEventListener("keydown", event => {
     if (event.key === "Backspace" && !input.value && selected.size) {
-      selected.delete([...selected.keys()].at(-1));
+      const removedValue = [...selected.keys()].at(-1);
+      selected.delete(removedValue);
+      if (lastSelectedValue === removedValue) {
+        lastSelectedValue = [...selected.keys()].at(-1) || null;
+      }
       renderChips();
       config.onChange();
     }
@@ -337,6 +350,9 @@ function createSearchableMultiSelect(config) {
       removeButton.addEventListener("click", event => {
         event.stopPropagation();
         selected.delete(value);
+        if (lastSelectedValue === value) {
+          lastSelectedValue = [...selected.keys()].at(-1) || null;
+        }
         renderChips();
         renderMenu();
         config.onChange();
@@ -375,6 +391,7 @@ function createSearchableMultiSelect(config) {
       button.addEventListener("click", event => {
         event.preventDefault();
         selected.set(option.value, option.label);
+        lastSelectedValue = option.value;
         input.value = "";
         renderChips();
         renderMenu();
@@ -400,6 +417,7 @@ function createSearchableMultiSelect(config) {
 
       items.forEach(option => {
         selected.set(option.value, option.label);
+        lastSelectedValue = option.value;
       });
 
       input.value = "";
@@ -553,7 +571,8 @@ function applyFilters() {
   drawGraph(filteredNodes, filteredEdges, {
     isInitialView: false,
     usePhysics: false,
-    selectedActorKeys: selectedActors
+    selectedActorKeys: selectedActors,
+    activeActorKey: actorSelect.getLastSelectedValue()
   });
 
   updateFilterSummary(
@@ -777,7 +796,8 @@ function drawGraph(nodes, edges, settings = {}) {
     isInitialView = false,
     isFullNetwork = false,
     usePhysics = true,
-    selectedActorKeys = new Set()
+    selectedActorKeys = new Set(),
+    activeActorKey = null
   } = settings;
   const useStaticLayout = isFullNetwork || !usePhysics;
   const compactComponents = useStaticLayout && !isFullNetwork && nodes.length <= 500;
@@ -995,7 +1015,7 @@ function drawGraph(nodes, edges, settings = {}) {
     network.once("stabilizationIterationsDone", () => {
       freezeNetworkLayout();
 
-      focusSelectedActors(selectedActorKeys);
+      focusSelectedActors(selectedActorKeys, activeActorKey);
 
       setLoading(false);
     });
@@ -1003,7 +1023,7 @@ function drawGraph(nodes, edges, settings = {}) {
     setTimeout(() => {
       freezeNetworkLayout();
 
-      focusSelectedActors(selectedActorKeys);
+      focusSelectedActors(selectedActorKeys, activeActorKey);
 
       setLoading(false);
     }, 80);
@@ -1012,46 +1032,13 @@ function drawGraph(nodes, edges, settings = {}) {
   network.on("click", params => {
     if (params.nodes.length > 0) {
       const node = data.nodes.get(params.nodes[0]);
-      const raw = node.raw || {};
-
-      const dateRange = raw.earliest_date
-        ? `${raw.earliest_date}${raw.latest_date && raw.latest_date !== raw.earliest_date ? ` – ${raw.latest_date}` : ""}`
-        : "";
-
-      document.getElementById("details").innerHTML = `
-        <span class="detail-title"><b>${escapeHtml(node.label)}</b></span><br><br>
-        <b>Category:</b> ${escapeHtml(formatTitleCase(raw.category || "Unknown"))}<br>
-        <b>Helix:</b> ${escapeHtml(raw.helix || "Unknown")}<br>
-        <b>Sphere:</b> ${escapeHtml(raw.sphere || "Unknown")}<br>
-        <b>R&amp;D:</b> ${escapeHtml(formatRnDValue(raw.r_and_d))}<br>
-        ${dateRange ? `<b>Date range:</b> ${escapeHtml(dateRange)}<br>` : ""}<br>
-        <b>Sources (${(raw.source_documents || []).length}):</b><br>
-        ${formatSourceList(raw.source_documents || [])}
-      `;
-
+      renderNodeDetails(node);
       return;
     }
 
     if (params.edges.length > 0) {
       const edge = data.edges.get(params.edges[0]);
-      const raw = edge.raw || {};
-
-      document.getElementById("details").innerHTML = `
-        <span class="detail-title">
-          <b>${escapeHtml(formatActorDisplayName(raw.source_actor || raw.source_actor_key || ""))}</b>
-          ${raw.directional ? "→" : "↔"}
-          <b>${escapeHtml(formatActorDisplayName(raw.target_actor || raw.target_actor_key || ""))}</b>
-        </span><br><br>
-        <b>Label:</b> ${escapeHtml(formatRelationLabel(raw.relation_label || "Interaction"))}<br>
-        <b>Functional space:</b> ${escapeHtml(getEdgeFunctionalSpace(raw))}<br>
-        <b>Direction:</b> ${raw.directional ? "Directional" : "Symmetric"}<br>
-        ${raw.first_seen ? `<b>First seen:</b> ${escapeHtml(raw.first_seen)}<br>` : ""}
-        ${raw.last_seen && raw.last_seen !== raw.first_seen ? `<b>Last seen:</b> ${escapeHtml(raw.last_seen)}<br>` : ""}
-        <br>
-        <b>Sources (${(raw.source_documents || []).length}):</b><br>
-        ${formatSourceList(raw.source_documents || [])}
-      `;
-
+      renderEdgeDetails(edge);
       return;
     }
 
@@ -1097,7 +1084,7 @@ function freezeNetworkLayout() {
   });
 }
 
-function focusSelectedActors(selectedActorKeys) {
+function focusSelectedActors(selectedActorKeys, activeActorKey = null) {
   if (!network) return;
 
   if (!selectedActorKeys.size) {
@@ -1113,9 +1100,18 @@ function focusSelectedActors(selectedActorKeys) {
   const selectedIds = [...selectedActorKeys].filter(id =>
     network.body?.data?.nodes?.get(id)
   );
+  const activeId = activeActorKey && selectedIds.includes(activeActorKey)
+    ? activeActorKey
+    : selectedIds.at(-1);
 
-  if (selectedIds.length === 1) {
-    network.focus(selectedIds[0], {
+  if (activeId) {
+    network.selectNodes([activeId], true);
+    const activeNode = network.body.data.nodes.get(activeId);
+    if (activeNode) renderNodeDetails(activeNode);
+  }
+
+  if (activeId) {
+    network.focus(activeId, {
       scale: 1.15,
       animation: {
         duration: 650,
@@ -1132,6 +1128,44 @@ function focusSelectedActors(selectedActorKeys) {
       easingFunction: "easeInOutQuad"
     }
   });
+}
+
+function renderNodeDetails(node) {
+  const raw = node.raw || {};
+  const dateRange = raw.earliest_date
+    ? `${raw.earliest_date}${raw.latest_date && raw.latest_date !== raw.earliest_date ? ` – ${raw.latest_date}` : ""}`
+    : "";
+
+  document.getElementById("details").innerHTML = `
+    <span class="detail-title"><b>${escapeHtml(node.label)}</b></span><br><br>
+    <b>Category:</b> ${escapeHtml(formatTitleCase(raw.category || "Unknown"))}<br>
+    <b>Helix:</b> ${escapeHtml(raw.helix || "Unknown")}<br>
+    <b>Sphere:</b> ${escapeHtml(raw.sphere || "Unknown")}<br>
+    <b>R&amp;D:</b> ${escapeHtml(formatRnDValue(raw.r_and_d))}<br>
+    ${dateRange ? `<b>Date range:</b> ${escapeHtml(dateRange)}<br>` : ""}<br>
+    <b>Sources (${(raw.source_documents || []).length}):</b><br>
+    ${formatSourceList(raw.source_documents || [])}
+  `;
+}
+
+function renderEdgeDetails(edge) {
+  const raw = edge.raw || {};
+
+  document.getElementById("details").innerHTML = `
+    <span class="detail-title">
+      <b>${escapeHtml(formatActorDisplayName(raw.source_actor || raw.source_actor_key || ""))}</b>
+      ${raw.directional ? "→" : "↔"}
+      <b>${escapeHtml(formatActorDisplayName(raw.target_actor || raw.target_actor_key || ""))}</b>
+    </span><br><br>
+    <b>Label:</b> ${escapeHtml(formatRelationLabel(raw.relation_label || "Interaction"))}<br>
+    <b>Functional space:</b> ${escapeHtml(getEdgeFunctionalSpace(raw))}<br>
+    <b>Direction:</b> ${raw.directional ? "Directional" : "Symmetric"}<br>
+    ${raw.first_seen ? `<b>First seen:</b> ${escapeHtml(raw.first_seen)}<br>` : ""}
+    ${raw.last_seen && raw.last_seen !== raw.first_seen ? `<b>Last seen:</b> ${escapeHtml(raw.last_seen)}<br>` : ""}
+    <br>
+    <b>Sources (${(raw.source_documents || []).length}):</b><br>
+    ${formatSourceList(raw.source_documents || [])}
+  `;
 }
 
 function getStaticGraphPositions(nodes, edges, options = {}) {
