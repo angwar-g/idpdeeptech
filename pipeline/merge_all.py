@@ -895,7 +895,7 @@ def inject_fixtures(
     fixtures: dict,
     merged_nodes: list[dict],
     merged_edges: list[dict],
-    fixture_source_tag: str = "manual:fixtures",
+    fixture_source_tag: str = "Manual Fixtures",
 ) -> dict:
     """Inject fixture actors and edges into the merged output in place.
 
