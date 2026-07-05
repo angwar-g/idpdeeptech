@@ -1,0 +1,52 @@
+[
+  {
+    "source_actor": "Defense Advanced Research Projects Agency (DARPA)",
+    "target_actor": "BlueQubit Inc",
+    "interaction_phrase": "was selected by",
+    "occurrence_sentence": "BlueQubit Inc announced its project was selected by the Defense Advanced Research Projects Agency under the Imagining Practical Applications for a Quantum Tomorrow (IMPAQT) program.",
+    "source_document": "https://thequantuminsider.com/2023/10/26/bluequbits-algorithm-chosen-by-darpa-leveraging-gpu-simulators-and-infrastructure-to-advance-quantum-ai",
+    "page": 11,
+    "relation_label": "collaborative_leadership",
+    "relation_label_confidence": "high"
+  },
+  {
+    "source_actor": "BlueQubit Inc",
+    "target_actor": "Defense Advanced Research Projects Agency (DARPA)",
+    "interaction_phrase": "selected by the Defense Advanced Research Projects Agency",
+    "occurrence_sentence": "BlueQubit Inc announced its project was selected by the Defense Advanced Research Projects Agency under the Imagining Practical Applications for a Quantum Tomorrow (IMPAQT) program.",
+    "source_document": "https://thequantuminsider.com/2023/10/26/bluequbits-algorithm-chosen-by-darpa-leveraging-gpu-simulators-and-infrastructure-to-advance-quantum-ai",
+    "page": 12,
+    "relation_label": "collaborative_leadership",
+    "relation_label_confidence": "high"
+  },
+  {
+    "source_actor": "BlueQubit",
+    "target_actor": "QuEra",
+    "interaction_phrase": "collaboration with the renowned quantum hardware company, QuEra",
+    "occurrence_sentence": "Particularly noteworthy is BlueQubit's collaboration with the renowned quantum hardware company, QuEra.",
+    "source_document": "https://thequantuminsider.com/2023/10/26/bluequbits-algorithm-chosen-by-darpa-leveraging-gpu-simulators-and-infrastructure-to-advance-quantum-ai",
+    "page": 13,
+    "relation_label": "networking",
+    "relation_label_confidence": "high"
+  },
+  {
+    "source_actor": "BlueQubit",
+    "target_actor": "QuEra",
+    "interaction_phrase": "collaboration with the renowned quantum hardware company, QuEra",
+    "occurrence_sentence": "Particularly noteworthy is BlueQubit's collaboration with the renowned quantum hardware company, QuEra.",
+    "source_document": "https://thequantuminsider.com/2023/10/26/bluequbits-algorithm-chosen-by-darpa-leveraging-gpu-simulators-and-infrastructure-to-advance-quantum-ai",
+    "page": 14,
+    "relation_label": "networking",
+    "relation_label_confidence": "high"
+  },
+  {
+    "interaction_phrase": "chosen by",
+    "occurrence_sentence": "BlueQubit's algorithm chosen by DARPA leveraging GPU simulators and infrastructure to advance quantum AI.",
+    "page": 15,
+    "source_actor": "Defense Advanced Research Projects Agency (DARPA)",
+    "source_document": "https://thequantuminsider.com/2023/10/26/bluequbits-algorithm-chosen-by-darpa-leveraging-gpu-simulators-and-infrastructure-to-advance-quantum-ai",
+    "target_actor": "BlueQubit",
+    "relation_label": "technology_transfer",
+    "relation_label_confidence": "high"
+  }
+]

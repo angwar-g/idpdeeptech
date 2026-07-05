@@ -1,0 +1,32 @@
+[
+  {
+    "source_actor": "HSBC",
+    "target_actor": "BT",
+    "interaction_phrase": "became the first bank to join BT",
+    "occurrence_sentence": "In July, HSBC became the first bank to join BT and Toshiba's quantum secure metro network, working in collaboration with AWS – installing quantum infrastructure in their Global Headquarters in Canary Wharf that spans 63km via fibre-optic cables to their data centre in Slough.",
+    "source_document": "https://thequantuminsider.com/2023/12/08/hsbc-pioneers-quantum-protection-for-ai-powered-fx-trading",
+    "page": 14,
+    "relation_label": "technology_transfer",
+    "relation_label_confidence": "high"
+  },
+  {
+    "source_actor": "HSBC",
+    "target_actor": "Amazon Web Services (AWS)",
+    "interaction_phrase": "working in collaboration with AWS",
+    "occurrence_sentence": "In July, HSBC became the first bank to join BT and Toshiba's quantum secure metro network, working in collaboration with AWS – installing quantum infrastructure in their Global Headquarters in Canary Wharf that spans 63km via fibre-optic cables to their data centre in Slough.",
+    "source_document": "https://thequantuminsider.com/2023/12/08/hsbc-pioneers-quantum-protection-for-ai-powered-fx-trading",
+    "page": 14,
+    "relation_label": "technology_transfer",
+    "relation_label_confidence": "high"
+  },
+  {
+    "interaction_phrase": "first bank to join BT and Toshiba's quantum secure metro network",
+    "occurrence_sentence": "In July, HSBC became the first bank to join BT and Toshiba's quantum secure metro network, working in collaboration with AWS – installing quantum infrastructure in their Global Headquarters in Canary Wharf that spans 63km via fibre-optic cables to their data centre in Slough.",
+    "page": 15,
+    "source_actor": "HSBC",
+    "source_document": "https://thequantuminsider.com/2023/12/08/hsbc-pioneers-quantum-protection-for-ai-powered-fx-trading",
+    "target_actor": "BT",
+    "relation_label": "technology_transfer",
+    "relation_label_confidence": "high"
+  }
+]

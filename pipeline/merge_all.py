@@ -51,6 +51,7 @@ from typing import Any
 # --------------------------------------------------------------------------
 
 DEFAULT_REWRITE_FILE = "merge_rewrites.json"
+DEFAULT_FIXTURES_FILE = "merge_fixtures.json"
 
 
 # --------------------------------------------------------------------------
@@ -837,6 +838,270 @@ def compute_layout(
 
 
 # --------------------------------------------------------------------------
+# Fixtures (manually-injected actors and edges)
+# --------------------------------------------------------------------------
+
+# Inlined from helix.py so merge_all.py has no runtime dependency on it.
+# Keep in sync with helix.functional_space_for_pair -- both encode Luis's
+# framework mapping.
+def _functional_space_for_pair(source_helix: str, target_helix: str) -> str:
+    pair = frozenset([source_helix or "Unknown", target_helix or "Unknown"])
+    if "Unknown" in pair:
+        return "Unknown"
+    if "Civil Society" in pair:
+        return "Public"
+    if len(pair) == 1:
+        return "Intra-helix"
+    if pair == frozenset(["Academia", "Government"]):
+        return "Knowledge"
+    if pair in {
+        frozenset(["Academia", "Industry"]),
+        frozenset(["Academia", "Intermediary"]),
+        frozenset(["Industry", "Intermediary"]),
+    }:
+        return "Innovation"
+    if pair in {
+        frozenset(["Government", "Industry"]),
+        frozenset(["Government", "Intermediary"]),
+    }:
+        return "Consensus"
+    return "Unknown"
+
+
+def load_fixtures(path: Path) -> dict:
+    """Load the manual-fixtures file. Returns {} if the file doesn't exist.
+
+    The fixtures file lets you inject actors and edges that don't come from
+    any source document -- e.g. IDP supervisors, co-authors, or credits.
+    See merge_fixtures.json for the schema.
+    """
+    path = Path(path)
+    if not path.exists():
+        return {}
+    try:
+        raw = json.loads(path.read_text(encoding="utf-8"))
+    except Exception as exc:
+        print(f"WARNING: could not parse {path}: {exc}")
+        return {}
+    # Only the "nodes" and "edges" arrays are functional -- everything else
+    # is documentation.
+    return {
+        "nodes": raw.get("nodes", []) or [],
+        "edges": raw.get("edges", []) or [],
+    }
+
+
+def inject_fixtures(
+    fixtures: dict,
+    merged_nodes: list[dict],
+    merged_edges: list[dict],
+    fixture_source_tag: str = "manual:fixtures",
+) -> dict:
+    """Inject fixture actors and edges into the merged output in place.
+
+    Fixtures are for actors NOT already in the extracted data. If a fixture
+    actor's canonical_key matches an existing merged node, the fixture is
+    skipped with a warning. If a fixture edge references an endpoint that
+    resolves to no node, the edge is skipped with a warning.
+
+    Auto-computed for fixture actors:
+      - canonical_actor_key (from entity)
+      - source_documents (a fake identifier so the UI knows where it came from)
+      - defaults for helix/sphere/r_and_d if not provided
+
+    Auto-computed for fixture edges:
+      - source_actor_key, target_actor_key (canonical lookup)
+      - source_helix, target_helix, helix_pair, functional_space (from the
+        resolved endpoint nodes -- consistent with Luis's framework)
+      - occurrences (a single stub occurrence so the UI has something to show)
+      - directional flag (from the same SYMMETRIC_RELATIONS / DIRECTIONAL_RELATIONS
+        sets used by merge_edges)
+
+    Returns a diagnostics dict with counts of injected/skipped nodes and edges.
+    """
+    diagnostics = {
+        "nodes_injected": 0,
+        "nodes_skipped_already_exists": [],
+        "edges_injected": 0,
+        "edges_skipped_missing_endpoint": [],
+        "edges_skipped_already_exists": [],
+    }
+
+    # Index existing nodes by canonical_key for O(1) lookup + collision check.
+    node_by_key: dict[str, dict] = {
+        n["canonical_actor_key"]: n
+        for n in merged_nodes
+        if n.get("canonical_actor_key")
+    }
+    # Also index by every alias's canonical_key so fixture edges can reference
+    # actors by any known name and still resolve correctly.
+    alias_to_key: dict[str, str] = {}
+    for n in merged_nodes:
+        key = n["canonical_actor_key"]
+        for name in [n.get("entity", "")] + list(n.get("aliases") or []):
+            ck = canonical_key(name)
+            if ck:
+                alias_to_key[ck] = key
+
+    # Index existing edges by the same (source_key, target_key, relation,
+    # directional) tuple that merge_edges uses -- so we can detect fixture
+    # edges that would duplicate a real one.
+    def _edge_key(edge: dict) -> tuple:
+        s = edge.get("source_actor_key", "")
+        t = edge.get("target_actor_key", "")
+        label = edge.get("relation_label", "")
+        directional = edge.get("directional", False)
+        if directional:
+            return ("dir", s, t, label)
+        else:
+            lo, hi = (s, t) if s <= t else (t, s)
+            return ("sym", lo, hi, label)
+
+    existing_edge_keys: set[tuple] = {_edge_key(e) for e in merged_edges}
+
+    # ---- Inject nodes ----
+    for fixture_node in fixtures.get("nodes", []):
+        entity = (fixture_node.get("entity") or "").strip()
+        if not entity:
+            print(f"WARNING: fixture node with empty entity, skipping")
+            continue
+
+        key = canonical_key(entity)
+        if not key:
+            print(f"WARNING: fixture node {entity!r} produced empty canonical_key, skipping")
+            continue
+
+        if key in node_by_key:
+            existing = node_by_key[key]
+            diagnostics["nodes_skipped_already_exists"].append({
+                "fixture_entity": entity,
+                "existing_entity": existing.get("entity"),
+                "canonical_key": key,
+            })
+            continue
+
+        # Build the injected node record. Match the field set of a normal
+        # merged node so the UI treats it uniformly.
+        injected = {
+            "entity": entity,
+            "canonical_actor_key": key,
+            "category": fixture_node.get("category", "Unknown"),
+            "role_in_text": fixture_node.get("role_in_text", ""),
+            "helix": fixture_node.get("helix", "Unknown"),
+            "sphere": fixture_node.get("sphere", "Unknown"),
+            "r_and_d": fixture_node.get("r_and_d", "Assessed"),
+            "confidence": fixture_node.get("confidence", "high"),
+            "aliases": [entity],
+            "pages": [],
+            "mentions": [],
+            "source_documents": [fixture_source_tag],
+            "_source_labels": [fixture_source_tag],
+            # Route these actors through the UI's normal machinery.
+            "classification_needs_review": False,
+            "classification_review_reason": "",
+            "_is_fixture": True,
+        }
+        merged_nodes.append(injected)
+        node_by_key[key] = injected
+        alias_to_key[key] = key
+        diagnostics["nodes_injected"] += 1
+
+    # ---- Inject edges ----
+    for fixture_edge in fixtures.get("edges", []):
+        source_name = (fixture_edge.get("source_actor") or "").strip()
+        target_name = (fixture_edge.get("target_actor") or "").strip()
+        relation = fixture_edge.get("relation_label", "no_explicit_relation")
+        if not source_name or not target_name:
+            print(f"WARNING: fixture edge missing source or target, skipping: "
+                  f"{source_name!r} -> {target_name!r}")
+            continue
+
+        source_key = alias_to_key.get(canonical_key(source_name))
+        target_key = alias_to_key.get(canonical_key(target_name))
+        if not source_key or not target_key:
+            diagnostics["edges_skipped_missing_endpoint"].append({
+                "source_actor": source_name,
+                "target_actor": target_name,
+                "source_resolved": source_key,
+                "target_resolved": target_key,
+            })
+            continue
+
+        # Skip if this exact edge already exists (from a real source or a
+        # previous fixture injection).
+        directional_for_key = relation in DIRECTIONAL_RELATIONS
+        if directional_for_key:
+            existing_key = ("dir", source_key, target_key, relation)
+        else:
+            lo, hi = (source_key, target_key) if source_key <= target_key else (target_key, source_key)
+            existing_key = ("sym", lo, hi, relation)
+        if existing_key in existing_edge_keys:
+            diagnostics["edges_skipped_already_exists"].append({
+                "source_actor": source_name,
+                "target_actor": target_name,
+                "relation_label": relation,
+            })
+            continue
+        existing_edge_keys.add(existing_key)
+
+        # Look up the resolved endpoint nodes so we can copy helix values.
+        # (Fixture edges are auto-classified by Luis's framework, not by the
+        # user -- we don't trust the fixture author to compute functional_space.)
+        source_node = node_by_key[source_key]
+        target_node = node_by_key[target_key]
+        source_helix = source_node.get("helix", "Unknown")
+        target_helix = target_node.get("helix", "Unknown")
+        directional = relation in DIRECTIONAL_RELATIONS
+
+        # Canonical ordering for symmetric edges, matching merge_edges().
+        if not directional and source_key > target_key:
+            source_key, target_key = target_key, source_key
+            source_name, target_name = target_name, source_name
+            source_helix, target_helix = target_helix, source_helix
+
+        occurrence = {
+            "source_document": fixture_source_tag,
+            "page": None,
+            "interaction_phrase": fixture_edge.get("interaction_phrase", ""),
+            "occurrence_sentence": fixture_edge.get("occurrence_sentence", ""),
+            "source_date": "",
+            "relation_label_confidence": fixture_edge.get(
+                "relation_label_confidence", "high"
+            ),
+            "source_actor": source_name,
+            "target_actor": target_name,
+            "source_helix": source_helix,
+            "target_helix": target_helix,
+            "helix_pair": f"{source_helix}\u2013{target_helix}",
+            "functional_space": _functional_space_for_pair(source_helix, target_helix),
+            "functional_space_needs_review": False,
+            "functional_space_review_reason": "",
+        }
+
+        injected_edge = {
+            "source_actor_key": source_key,
+            "target_actor_key": target_key,
+            "source_actor": source_name,
+            "target_actor": target_name,
+            "relation_label": relation,
+            "directional": directional,
+            "occurrences": [occurrence],
+            "source_documents": [fixture_source_tag],
+            "occurrence_count": 1,
+            "source_helix": source_helix,
+            "target_helix": target_helix,
+            "helix_pair": f"{source_helix}\u2013{target_helix}",
+            "functional_space": _functional_space_for_pair(source_helix, target_helix),
+            "functional_space_needs_review": False,
+            "_is_fixture": True,
+        }
+        merged_edges.append(injected_edge)
+        diagnostics["edges_injected"] += 1
+
+    return diagnostics
+
+
+# --------------------------------------------------------------------------
 # Publishing (copy combined_*.json to the UI's data directory)
 # --------------------------------------------------------------------------
 
@@ -891,11 +1156,32 @@ def main():
              "Defaults to <repo_root>/docs/data/ (relative to the pipeline/ folder). "
              "Use --no-publish to skip publishing entirely.",
     )
+    parser.add_argument(
+        "--fixtures", default=DEFAULT_FIXTURES_FILE,
+        help=f"Path to manually-injected actors/edges JSON "
+             f"(default: {DEFAULT_FIXTURES_FILE} next to this script). "
+             f"If the file doesn't exist, no fixtures are injected.",
+    )
+    parser.add_argument(
+        "--no-fixtures", action="store_true",
+        help="Skip loading manual fixtures entirely.",
+    )
     args = parser.parse_args()
 
     root = Path(__file__).parent.resolve()
     rewrites_path = root / args.rewrites if not Path(args.rewrites).is_absolute() else Path(args.rewrites)
     rewrites = load_rewrites(rewrites_path)
+
+    if args.no_fixtures:
+        fixtures = {}
+        fixtures_path = None
+    else:
+        fixtures_path = (
+            root / args.fixtures
+            if not Path(args.fixtures).is_absolute()
+            else Path(args.fixtures)
+        )
+        fixtures = load_fixtures(fixtures_path)
 
     pairs = find_output_pairs(root)
     if not pairs:
@@ -972,6 +1258,30 @@ def main():
 
     print(f"\nAfter merge: {len(merged_nodes)} unique actors, {len(merged_edges)} unique logical edges.")
 
+    # Inject manual fixtures. These are actors and edges that don't come
+    # from any source document -- see merge_fixtures.json. Done AFTER
+    # cross-document merging (fixtures bypass rewrites) and BEFORE layout
+    # (fixture nodes get positioned properly in the graph).
+    fixture_diag = {"nodes_injected": 0, "edges_injected": 0,
+                    "nodes_skipped_already_exists": [],
+                    "edges_skipped_missing_endpoint": [],
+                    "edges_skipped_already_exists": []}
+    if fixtures.get("nodes") or fixtures.get("edges"):
+        fixture_diag = inject_fixtures(fixtures, merged_nodes, merged_edges)
+        print(f"\nManual fixtures ({fixtures_path.name if fixtures_path else 'inline'}):")
+        print(f"  Injected {fixture_diag['nodes_injected']} node(s), "
+              f"{fixture_diag['edges_injected']} edge(s)")
+        for skipped in fixture_diag["nodes_skipped_already_exists"]:
+            print(f"  Skipped node {skipped['fixture_entity']!r} -- already exists "
+                  f"as {skipped['existing_entity']!r} (canonical: {skipped['canonical_key']!r})")
+        for skipped in fixture_diag["edges_skipped_missing_endpoint"]:
+            print(f"  Skipped edge {skipped['source_actor']!r} <-> "
+                  f"{skipped['target_actor']!r} -- endpoint not found")
+        for skipped in fixture_diag["edges_skipped_already_exists"]:
+            print(f"  Skipped edge {skipped['source_actor']!r} <-> "
+                  f"{skipped['target_actor']!r} ({skipped['relation_label']}) "
+                  f"-- already exists")
+
     # Compute node positions via networkx spring layout (per connected
     # component). The frontend uses these as static coordinates for the full
     # network view, replacing the JS-side layout that produced cluttered
@@ -1042,6 +1352,7 @@ def main():
             "input_edge_records": len(all_edges),
             "output_unique_actors": len(merged_nodes),
             "output_unique_edges": len(merged_edges),
+            "fixtures": fixture_diag,
             **report_diagnostics,
         }, indent=2, ensure_ascii=False),
         encoding="utf-8",

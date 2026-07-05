@@ -1,0 +1,38 @@
+[
+  {
+    "source_actor": "Chris Burns",
+    "target_actor": "NOVONIX",
+    "interaction_phrase": "CEO of NOVONIX",
+    "occurrence_sentence": "Chris Burns, CEO of NOVONIX said: \"We are thrilled to partner with SandboxAQ and leverage their transformational AI and Quantum (AQ) solutions to accelerate innovation in the evolving battery landscape.",
+    "source_document": "https://thequantuminsider.com/2023/09/12/novonix-and-sandboxaq-collaborate-on-breakthrough-ai-solutions-for-battery-technology",
+    "page": 15,
+    "relation_label": "networking",
+    "relation_label_confidence": "high",
+    "source_actor_key": "chris burns",
+    "target_actor_key": "novonix",
+    "source_helix": "Unknown",
+    "target_helix": "Industry",
+    "helix_pair": "Unknown–Industry",
+    "functional_space": "Unknown",
+    "functional_space_needs_review": true,
+    "functional_space_review_reason": "source_actor_classification_needs_review; functional_space:Unknown"
+  },
+  {
+    "source_actor": "NOVONIX",
+    "target_actor": "SandboxAQ",
+    "interaction_phrase": "partner with SandboxAQ",
+    "occurrence_sentence": "Chris Burns, CEO of NOVONIX said: \"We are thrilled to partner with SandboxAQ and leverage their transformational AI and Quantum (AQ) solutions to accelerate innovation in the evolving battery landscape.",
+    "source_document": "https://thequantuminsider.com/2023/09/12/novonix-and-sandboxaq-collaborate-on-breakthrough-ai-solutions-for-battery-technology",
+    "page": 15,
+    "relation_label": "networking",
+    "relation_label_confidence": "high",
+    "source_actor_key": "novonix",
+    "target_actor_key": "sandboxaq",
+    "source_helix": "Industry",
+    "target_helix": "Industry",
+    "helix_pair": "Industry–Industry",
+    "functional_space": "Intra-helix / Not classified",
+    "functional_space_needs_review": true,
+    "functional_space_review_reason": "functional_space:Intra-helix / Not classified"
+  }
+]

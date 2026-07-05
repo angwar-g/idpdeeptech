@@ -1,0 +1,32 @@
+[
+  {
+    "source_actor": "Dr. Chris Monroe",
+    "target_actor": "IonQ (IONQ)",
+    "interaction_phrase": "co-founder",
+    "occurrence_sentence": "IonQ announced that Dr. Chris Monroe will be leaving the company.",
+    "source_document": "https://thequantuminsider.com/2023/10/24/ionq-announces-co-founder-chris-monroe-to-leave-the-company",
+    "page": 11,
+    "relation_label": "collaborative_leadership",
+    "relation_label_confidence": "high"
+  },
+  {
+    "interaction_phrase": "exclusive ion trap intellectual property licenses",
+    "occurrence_sentence": "Under his support and leadership, IonQ was granted exclusive ion trap intellectual property licenses from the University of Maryland and Duke University – two distinguished research universities pushing the frontiers of quantum computing.",
+    "page": 12,
+    "source_actor": "IonQ (IONQ)",
+    "source_document": "https://thequantuminsider.com/2023/10/24/ionq-announces-co-founder-chris-monroe-to-leave-the-company",
+    "target_actor": "Duke University",
+    "relation_label": "collaborative_leadership",
+    "relation_label_confidence": "high"
+  },
+  {
+    "source_actor": "IonQ",
+    "target_actor": "Duke University",
+    "interaction_phrase": "exclusive ion trap intellectual property licenses from the University of Maryland and",
+    "occurrence_sentence": "Under his support and leadership, IonQ was granted exclusive ion trap intellectual property licenses from the University of Maryland and Duke University – two distinguished research universities pushing the frontiers of quantum computing.",
+    "source_document": "https://thequantuminsider.com/2023/10/24/ionq-announces-co-founder-chris-monroe-to-leave-the-company",
+    "page": 13,
+    "relation_label": "collaborative_leadership",
+    "relation_label_confidence": "high"
+  }
+]

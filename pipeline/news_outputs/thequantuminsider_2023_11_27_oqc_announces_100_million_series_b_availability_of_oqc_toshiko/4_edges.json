@@ -1,0 +1,42 @@
+[
+  {
+    "source_actor": "Oxford Quantum Circuits (OQC)",
+    "target_actor": "OQC Toshiko",
+    "interaction_phrase": "the public availability of OQC Toshiko",
+    "occurrence_sentence": "The company also announced the public availability of OQC Toshiko, an enterprise-ready quantum computing platform.",
+    "source_document": "https://thequantuminsider.com/2023/11/27/oqc-announces-100-million-series-b-availability-of-oqc-toshiko",
+    "page": 11,
+    "relation_label": "collaborative_leadership",
+    "relation_label_confidence": "high"
+  },
+  {
+    "source_actor": "Oxford Quantum Circuits (OQC)",
+    "target_actor": "OQC Toshiko",
+    "interaction_phrase": "announced the public availability of OQC Toshiko",
+    "occurrence_sentence": "The company also announced the public availability of OQC Toshiko, an enterprise-ready quantum computing platform.",
+    "source_document": "https://thequantuminsider.com/2023/11/27/oqc-announces-100-million-series-b-availability-of-oqc-toshiko",
+    "page": 12,
+    "relation_label": "collaborative_leadership",
+    "relation_label_confidence": "high"
+  },
+  {
+    "interaction_phrase": "is leading OQC's $100m round",
+    "occurrence_sentence": "At the Global Investment Summit today, OQC announced that SBI Investment, Japan's premier venture capital fund, is leading OQC's $100m Series B raise.",
+    "page": 13,
+    "source_actor": "SBI Investment",
+    "source_document": "https://thequantuminsider.com/2023/11/27/oqc-announces-100-million-series-b-availability-of-oqc-toshiko",
+    "target_actor": "Oxford Quantum Circuits (OQC)",
+    "relation_label": "collaborative_leadership",
+    "relation_label_confidence": "high"
+  },
+  {
+    "interaction_phrase": "SBI Investment, Japan's premier venture capital fund, is leading OQC's $100m Series",
+    "occurrence_sentence": "At the Global Investment Summit today, OQC announced that SBI Investment, Japan's premier venture capital fund, is leading OQC's $100m Series B raise.",
+    "page": 14,
+    "source_actor": "Oxford Quantum Circuits (OQC)",
+    "source_document": "https://thequantuminsider.com/2023/11/27/oqc-announces-100-million-series-b-availability-of-oqc-toshiko",
+    "target_actor": "SBI Investment",
+    "relation_label": "collaborative_leadership",
+    "relation_label_confidence": "high"
+  }
+]

@@ -84,3 +84,99 @@ site_pipeline.py https://thequantuminsider.com/2024/01/11/researchers-make-strid
 [13:32:59 +3m 49s | thequantuminsider_2024_01_11_researchers_make_strides_in_generating_stable_qubits_at_room_eb621fe8] Extracting interactions: https://thequantuminsider.com/2024/01/11/researchers-make-strides-in-generating-stable-qubits-at-room-temperature (1/1), chunk 12/37
 [13:33:07 +3m 58s | thequantuminsider_2024_01_11_researchers_make_strides_in_generating_stable_qubits_at_room_eb621fe8] Extracting interactions: https://thequantuminsider.com/2024/01/11/researchers-make-strides-in-generating-stable-qubits-at-room-temperature (1/1), chunk 13/37
 [13:33:18 +4m 9s | thequantuminsider_2024_01_11_researchers_make_strides_in_generating_stable_qubits_at_room_eb621fe8] Extracting interactions: https://thequantuminsider.com/2024/01/11/researchers-make-strides-in-generating-stable-qubits-at-room-temperature (1/1), chunk 14/37
+
+========================================================================
+RUN STARTED  2026-07-04 22:28:34
+site_pipeline.py https://thequantuminsider.com/2024/01/11/researchers-make-strides-in-generating-stable-qubits-at-room-temperature/
+========================================================================
+
+[22:28:34 +0s | thequantuminsider_2024_01_11_researchers_make_strides_in_generating_stable_qubits_at_room_eb621fe8] === 0 crawl site (skipped via auto (actor data already exists; pass --force to re-crawl), reusing /home/lv/IDP/idpdeeptech/pipeline/news_outputs/thequantuminsider_2024_01_11_researchers_make_strides_in_generating_stable_qubits_at_room_eb621fe8/crawl_output) ===
+
+[22:28:34 +0s | thequantuminsider_2024_01_11_researchers_make_strides_in_generating_stable_qubits_at_room_eb621fe8] === 1 actor extraction ===
+[22:28:35 +0s | thequantuminsider_2024_01_11_researchers_make_strides_in_generating_stable_qubits_at_room_eb621fe8] Auto-resume: 1 (url, ordinal) pairs already done, skipping them.
+[22:28:35 +0s | thequantuminsider_2024_01_11_researchers_make_strides_in_generating_stable_qubits_at_room_eb621fe8] All 1 pages/URLs already processed (per 1_actor_results.progress.json). Nothing to do.
+[22:28:35 +0s | thequantuminsider_2024_01_11_researchers_make_strides_in_generating_stable_qubits_at_room_eb621fe8] Delete the progress sidecar to force a full re-run, or pass --start-page N.
+
+[22:28:35 +0s | thequantuminsider_2024_01_11_researchers_make_strides_in_generating_stable_qubits_at_room_eb621fe8] === 2 clean actors ===
+[22:28:35 +1s | thequantuminsider_2024_01_11_researchers_make_strides_in_generating_stable_qubits_at_room_eb621fe8] Traceback (most recent call last):
+[22:28:35 +1s | thequantuminsider_2024_01_11_researchers_make_strides_in_generating_stable_qubits_at_room_eb621fe8]   File "/home/lv/IDP/idpdeeptech/pipeline/clean_actors.py", line 429, in <module>
+[22:28:35 +1s | thequantuminsider_2024_01_11_researchers_make_strides_in_generating_stable_qubits_at_room_eb621fe8]     main()
+[22:28:35 +1s | thequantuminsider_2024_01_11_researchers_make_strides_in_generating_stable_qubits_at_room_eb621fe8]   File "/home/lv/IDP/idpdeeptech/pipeline/clean_actors.py", line 416, in main
+[22:28:35 +1s | thequantuminsider_2024_01_11_researchers_make_strides_in_generating_stable_qubits_at_room_eb621fe8]     records = json.loads(INPUT_JSON.read_text(encoding="utf-8"))
+[22:28:35 +1s | thequantuminsider_2024_01_11_researchers_make_strides_in_generating_stable_qubits_at_room_eb621fe8]   File "/usr/lib/python3.10/pathlib.py", line 1134, in read_text
+[22:28:35 +1s | thequantuminsider_2024_01_11_researchers_make_strides_in_generating_stable_qubits_at_room_eb621fe8]     with self.open(mode='r', encoding=encoding, errors=errors) as f:
+[22:28:35 +1s | thequantuminsider_2024_01_11_researchers_make_strides_in_generating_stable_qubits_at_room_eb621fe8]   File "/usr/lib/python3.10/pathlib.py", line 1119, in open
+[22:28:35 +1s | thequantuminsider_2024_01_11_researchers_make_strides_in_generating_stable_qubits_at_room_eb621fe8]     return self._accessor.open(self, mode, buffering, encoding, errors,
+[22:28:35 +1s | thequantuminsider_2024_01_11_researchers_make_strides_in_generating_stable_qubits_at_room_eb621fe8] FileNotFoundError: [Errno 2] No such file or directory: 'site_outputs/psiquantum_com/1_actor_results_pdf.json'
+
+========================================================================
+RUN FINISHED 2026-07-04 22:28:35  (FAILED)
+Started:     2026-07-04 22:28:34
+Elapsed:     1s
+========================================================================
+
+========================================================================
+RUN STARTED  2026-07-04 23:43:54
+site_pipeline.py https://thequantuminsider.com/2024/01/11/researchers-make-strides-in-generating-stable-qubits-at-room-temperature/
+========================================================================
+
+[23:43:54 +0s | thequantuminsider_2024_01_11_researchers_make_strides_in_generating_stable_qubits_at_room_eb621fe8] === 0 crawl site (skipped via auto (actor data already exists; pass --force to re-crawl), reusing /home/lv/IDP/idpdeeptech/pipeline/news_outputs/thequantuminsider_2024_01_11_researchers_make_strides_in_generating_stable_qubits_at_room_eb621fe8/crawl_output) ===
+
+[23:43:54 +0s | thequantuminsider_2024_01_11_researchers_make_strides_in_generating_stable_qubits_at_room_eb621fe8] === 1 actor extraction ===
+[23:43:54 +0s | thequantuminsider_2024_01_11_researchers_make_strides_in_generating_stable_qubits_at_room_eb621fe8] Auto-resume: 1 (url, ordinal) pairs already done, skipping them.
+[23:43:54 +0s | thequantuminsider_2024_01_11_researchers_make_strides_in_generating_stable_qubits_at_room_eb621fe8] All 1 pages/URLs already processed (per 1_actor_results.progress.json). Nothing to do.
+[23:43:54 +0s | thequantuminsider_2024_01_11_researchers_make_strides_in_generating_stable_qubits_at_room_eb621fe8] Delete the progress sidecar to force a full re-run, or pass --start-page N.
+
+[23:43:54 +1s | thequantuminsider_2024_01_11_researchers_make_strides_in_generating_stable_qubits_at_room_eb621fe8] === 2 clean actors ===
+[23:43:54 +1s | thequantuminsider_2024_01_11_researchers_make_strides_in_generating_stable_qubits_at_room_eb621fe8] Loaded 52 extracted records
+[23:43:54 +1s | thequantuminsider_2024_01_11_researchers_make_strides_in_generating_stable_qubits_at_room_eb621fe8] Saved 2_actor_nodes.json with 16 canonical actor nodes
+
+[23:43:54 +1s | thequantuminsider_2024_01_11_researchers_make_strides_in_generating_stable_qubits_at_room_eb621fe8] === 3 interaction extraction ===
+[23:43:55 +1s | thequantuminsider_2024_01_11_researchers_make_strides_in_generating_stable_qubits_at_room_eb621fe8] Extracting interactions: https://thequantuminsider.com/2024/01/11/researchers-make-strides-in-generating-stable-qubits-at-room-temperature (1/1), chunk 12/37
+[23:44:07 +14s | thequantuminsider_2024_01_11_researchers_make_strides_in_generating_stable_qubits_at_room_eb621fe8] Extracting interactions: https://thequantuminsider.com/2024/01/11/researchers-make-strides-in-generating-stable-qubits-at-room-temperature (1/1), chunk 13/37
+[23:44:23 +30s | thequantuminsider_2024_01_11_researchers_make_strides_in_generating_stable_qubits_at_room_eb621fe8] Extracting interactions: https://thequantuminsider.com/2024/01/11/researchers-make-strides-in-generating-stable-qubits-at-room-temperature (1/1), chunk 14/37
+[23:44:27 +34s | thequantuminsider_2024_01_11_researchers_make_strides_in_generating_stable_qubits_at_room_eb621fe8] Extracting interactions: https://thequantuminsider.com/2024/01/11/researchers-make-strides-in-generating-stable-qubits-at-room-temperature (1/1), chunk 15/37
+[23:44:33 +40s | thequantuminsider_2024_01_11_researchers_make_strides_in_generating_stable_qubits_at_room_eb621fe8] Extracting interactions: https://thequantuminsider.com/2024/01/11/researchers-make-strides-in-generating-stable-qubits-at-room-temperature (1/1), chunk 16/37
+[23:44:38 +44s | thequantuminsider_2024_01_11_researchers_make_strides_in_generating_stable_qubits_at_room_eb621fe8] Extracting interactions: https://thequantuminsider.com/2024/01/11/researchers-make-strides-in-generating-stable-qubits-at-room-temperature (1/1), chunk 17/37
+[23:45:00 +1m 7s | thequantuminsider_2024_01_11_researchers_make_strides_in_generating_stable_qubits_at_room_eb621fe8] Extracting interactions: https://thequantuminsider.com/2024/01/11/researchers-make-strides-in-generating-stable-qubits-at-room-temperature (1/1), chunk 18/37
+[23:45:08 +1m 14s | thequantuminsider_2024_01_11_researchers_make_strides_in_generating_stable_qubits_at_room_eb621fe8] Extracting interactions: https://thequantuminsider.com/2024/01/11/researchers-make-strides-in-generating-stable-qubits-at-room-temperature (1/1), chunk 19/37
+[23:45:12 +1m 19s | thequantuminsider_2024_01_11_researchers_make_strides_in_generating_stable_qubits_at_room_eb621fe8] Extracting interactions: https://thequantuminsider.com/2024/01/11/researchers-make-strides-in-generating-stable-qubits-at-room-temperature (1/1), chunk 20/37
+[23:45:17 +1m 23s | thequantuminsider_2024_01_11_researchers_make_strides_in_generating_stable_qubits_at_room_eb621fe8] Extracting interactions: https://thequantuminsider.com/2024/01/11/researchers-make-strides-in-generating-stable-qubits-at-room-temperature (1/1), chunk 21/37
+[23:45:24 +1m 30s | thequantuminsider_2024_01_11_researchers_make_strides_in_generating_stable_qubits_at_room_eb621fe8] Extracting interactions: https://thequantuminsider.com/2024/01/11/researchers-make-strides-in-generating-stable-qubits-at-room-temperature (1/1), chunk 22/37
+[23:45:28 +1m 34s | thequantuminsider_2024_01_11_researchers_make_strides_in_generating_stable_qubits_at_room_eb621fe8] Extracting interactions: https://thequantuminsider.com/2024/01/11/researchers-make-strides-in-generating-stable-qubits-at-room-temperature (1/1), chunk 23/37
+[23:45:32 +1m 39s | thequantuminsider_2024_01_11_researchers_make_strides_in_generating_stable_qubits_at_room_eb621fe8] Extracting interactions: https://thequantuminsider.com/2024/01/11/researchers-make-strides-in-generating-stable-qubits-at-room-temperature (1/1), chunk 24/37
+[23:45:36 +1m 42s | thequantuminsider_2024_01_11_researchers_make_strides_in_generating_stable_qubits_at_room_eb621fe8] Extracting interactions: https://thequantuminsider.com/2024/01/11/researchers-make-strides-in-generating-stable-qubits-at-room-temperature (1/1), chunk 26/37
+[23:45:41 +1m 47s | thequantuminsider_2024_01_11_researchers_make_strides_in_generating_stable_qubits_at_room_eb621fe8] Extracting interactions: https://thequantuminsider.com/2024/01/11/researchers-make-strides-in-generating-stable-qubits-at-room-temperature (1/1), chunk 27/37
+[23:45:42 +1m 49s | thequantuminsider_2024_01_11_researchers_make_strides_in_generating_stable_qubits_at_room_eb621fe8] Extracting interactions: https://thequantuminsider.com/2024/01/11/researchers-make-strides-in-generating-stable-qubits-at-room-temperature (1/1), chunk 28/37
+[23:45:44 +1m 50s | thequantuminsider_2024_01_11_researchers_make_strides_in_generating_stable_qubits_at_room_eb621fe8] Extracting interactions: https://thequantuminsider.com/2024/01/11/researchers-make-strides-in-generating-stable-qubits-at-room-temperature (1/1), chunk 29/37
+[23:45:45 +1m 51s | thequantuminsider_2024_01_11_researchers_make_strides_in_generating_stable_qubits_at_room_eb621fe8] Extracting interactions: https://thequantuminsider.com/2024/01/11/researchers-make-strides-in-generating-stable-qubits-at-room-temperature (1/1), chunk 30/37
+[23:46:06 +2m 12s | thequantuminsider_2024_01_11_researchers_make_strides_in_generating_stable_qubits_at_room_eb621fe8] Extracting interactions: https://thequantuminsider.com/2024/01/11/researchers-make-strides-in-generating-stable-qubits-at-room-temperature (1/1), chunk 31/37
+[23:46:17 +2m 24s | thequantuminsider_2024_01_11_researchers_make_strides_in_generating_stable_qubits_at_room_eb621fe8] Extracting interactions: https://thequantuminsider.com/2024/01/11/researchers-make-strides-in-generating-stable-qubits-at-room-temperature (1/1), chunk 32/37
+[23:46:19 +2m 25s | thequantuminsider_2024_01_11_researchers_make_strides_in_generating_stable_qubits_at_room_eb621fe8] Extracting interactions: https://thequantuminsider.com/2024/01/11/researchers-make-strides-in-generating-stable-qubits-at-room-temperature (1/1), chunk 33/37
+[23:46:21 +2m 27s | thequantuminsider_2024_01_11_researchers_make_strides_in_generating_stable_qubits_at_room_eb621fe8] Extracting interactions: https://thequantuminsider.com/2024/01/11/researchers-make-strides-in-generating-stable-qubits-at-room-temperature (1/1), chunk 35/37
+[23:46:23 +2m 29s | thequantuminsider_2024_01_11_researchers_make_strides_in_generating_stable_qubits_at_room_eb621fe8] Extracting interactions: https://thequantuminsider.com/2024/01/11/researchers-make-strides-in-generating-stable-qubits-at-room-temperature (1/1), chunk 36/37
+[23:46:26 +2m 32s | thequantuminsider_2024_01_11_researchers_make_strides_in_generating_stable_qubits_at_room_eb621fe8] Extracting interactions: https://thequantuminsider.com/2024/01/11/researchers-make-strides-in-generating-stable-qubits-at-room-temperature (1/1), chunk 37/37
+[23:46:28 +2m 34s | thequantuminsider_2024_01_11_researchers_make_strides_in_generating_stable_qubits_at_room_eb621fe8] Saved 3_interaction_results.json with 19 extracted interactions.
+
+[23:46:28 +2m 34s | thequantuminsider_2024_01_11_researchers_make_strides_in_generating_stable_qubits_at_room_eb621fe8] === 4 clean interactions ===
+[23:46:28 +2m 35s | thequantuminsider_2024_01_11_researchers_make_strides_in_generating_stable_qubits_at_room_eb621fe8] Saved 4_edges.json with 11 cleaned interactions.
+
+[23:46:28 +2m 35s | thequantuminsider_2024_01_11_researchers_make_strides_in_generating_stable_qubits_at_room_eb621fe8] === 5 helix enrichment ===
+[23:46:28 +2m 35s | thequantuminsider_2024_01_11_researchers_make_strides_in_generating_stable_qubits_at_room_eb621fe8] Wrote 5_nodes.json (16 actors)
+[23:46:28 +2m 35s | thequantuminsider_2024_01_11_researchers_make_strides_in_generating_stable_qubits_at_room_eb621fe8] Wrote 5_edges.json (11 interactions)
+[23:46:28 +2m 35s | thequantuminsider_2024_01_11_researchers_make_strides_in_generating_stable_qubits_at_room_eb621fe8] Actor helix counts: {'Academia': 3, 'Civil Society': 1, 'Industry': 3, 'Unknown': 9}
+[23:46:28 +2m 35s | thequantuminsider_2024_01_11_researchers_make_strides_in_generating_stable_qubits_at_room_eb621fe8] Functional-space counts: {'Intra-helix / Not classified': 7, 'Unknown': 4}
+
+[23:46:28 +2m 35s | thequantuminsider_2024_01_11_researchers_make_strides_in_generating_stable_qubits_at_room_eb621fe8] === 6 network visualisation ===
+[23:46:29 +2m 36s | thequantuminsider_2024_01_11_researchers_make_strides_in_generating_stable_qubits_at_room_eb621fe8] Wrote quantum_network.html
+[23:46:29 +2m 36s | thequantuminsider_2024_01_11_researchers_make_strides_in_generating_stable_qubits_at_room_eb621fe8] Nodes: 16
+[23:46:29 +2m 36s | thequantuminsider_2024_01_11_researchers_make_strides_in_generating_stable_qubits_at_room_eb621fe8] Edges: 4
+
+[23:46:29 +2m 36s | thequantuminsider_2024_01_11_researchers_make_strides_in_generating_stable_qubits_at_room_eb621fe8] Done. Outputs written to: /home/lv/IDP/idpdeeptech/pipeline/news_outputs/thequantuminsider_2024_01_11_researchers_make_strides_in_generating_stable_qubits_at_room_eb621fe8
+[23:46:29 +2m 36s | thequantuminsider_2024_01_11_researchers_make_strides_in_generating_stable_qubits_at_room_eb621fe8] Log: /home/lv/IDP/idpdeeptech/pipeline/news_outputs/thequantuminsider_2024_01_11_researchers_make_strides_in_generating_stable_qubits_at_room_eb621fe8/run.log
+
+========================================================================
+RUN FINISHED 2026-07-04 23:46:29  (OK)
+Started:     2026-07-04 23:43:54
+Elapsed:     2m 36s
+========================================================================

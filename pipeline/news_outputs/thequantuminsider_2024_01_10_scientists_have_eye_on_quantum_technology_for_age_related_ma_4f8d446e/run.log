@@ -81,3 +81,100 @@ site_pipeline.py https://thequantuminsider.com/2024/01/10/scientists-have-eye-on
 [13:33:11 +3m 46s | thequantuminsider_2024_01_10_scientists_have_eye_on_quantum_technology_for_age_related_ma_4f8d446e] === 3 interaction extraction ===
 [13:33:12 +3m 46s | thequantuminsider_2024_01_10_scientists_have_eye_on_quantum_technology_for_age_related_ma_4f8d446e] Extracting interactions: https://thequantuminsider.com/2024/01/10/scientists-have-eye-on-quantum-technology-for-age-related-macular-degeneration-detection (1/1), chunk 11/36
 [13:33:16 +3m 50s | thequantuminsider_2024_01_10_scientists_have_eye_on_quantum_technology_for_age_related_ma_4f8d446e] Extracting interactions: https://thequantuminsider.com/2024/01/10/scientists-have-eye-on-quantum-technology-for-age-related-macular-degeneration-detection (1/1), chunk 12/36
+
+========================================================================
+RUN STARTED  2026-07-04 22:28:34
+site_pipeline.py https://thequantuminsider.com/2024/01/10/scientists-have-eye-on-quantum-technology-for-age-related-macular-degeneration-detection/
+========================================================================
+
+[22:28:34 +0s | thequantuminsider_2024_01_10_scientists_have_eye_on_quantum_technology_for_age_related_ma_4f8d446e] === 0 crawl site (skipped via auto (actor data already exists; pass --force to re-crawl), reusing /home/lv/IDP/idpdeeptech/pipeline/news_outputs/thequantuminsider_2024_01_10_scientists_have_eye_on_quantum_technology_for_age_related_ma_4f8d446e/crawl_output) ===
+
+[22:28:34 +0s | thequantuminsider_2024_01_10_scientists_have_eye_on_quantum_technology_for_age_related_ma_4f8d446e] === 1 actor extraction ===
+[22:28:35 +0s | thequantuminsider_2024_01_10_scientists_have_eye_on_quantum_technology_for_age_related_ma_4f8d446e] Auto-resume: 1 (url, ordinal) pairs already done, skipping them.
+[22:28:35 +0s | thequantuminsider_2024_01_10_scientists_have_eye_on_quantum_technology_for_age_related_ma_4f8d446e] All 1 pages/URLs already processed (per 1_actor_results.progress.json). Nothing to do.
+[22:28:35 +0s | thequantuminsider_2024_01_10_scientists_have_eye_on_quantum_technology_for_age_related_ma_4f8d446e] Delete the progress sidecar to force a full re-run, or pass --start-page N.
+
+[22:28:35 +0s | thequantuminsider_2024_01_10_scientists_have_eye_on_quantum_technology_for_age_related_ma_4f8d446e] === 2 clean actors ===
+[22:28:35 +1s | thequantuminsider_2024_01_10_scientists_have_eye_on_quantum_technology_for_age_related_ma_4f8d446e] Traceback (most recent call last):
+[22:28:35 +1s | thequantuminsider_2024_01_10_scientists_have_eye_on_quantum_technology_for_age_related_ma_4f8d446e]   File "/home/lv/IDP/idpdeeptech/pipeline/clean_actors.py", line 429, in <module>
+[22:28:35 +1s | thequantuminsider_2024_01_10_scientists_have_eye_on_quantum_technology_for_age_related_ma_4f8d446e]     main()
+[22:28:35 +1s | thequantuminsider_2024_01_10_scientists_have_eye_on_quantum_technology_for_age_related_ma_4f8d446e]   File "/home/lv/IDP/idpdeeptech/pipeline/clean_actors.py", line 416, in main
+[22:28:35 +1s | thequantuminsider_2024_01_10_scientists_have_eye_on_quantum_technology_for_age_related_ma_4f8d446e]     records = json.loads(INPUT_JSON.read_text(encoding="utf-8"))
+[22:28:35 +1s | thequantuminsider_2024_01_10_scientists_have_eye_on_quantum_technology_for_age_related_ma_4f8d446e]   File "/usr/lib/python3.10/pathlib.py", line 1134, in read_text
+[22:28:35 +1s | thequantuminsider_2024_01_10_scientists_have_eye_on_quantum_technology_for_age_related_ma_4f8d446e]     with self.open(mode='r', encoding=encoding, errors=errors) as f:
+[22:28:35 +1s | thequantuminsider_2024_01_10_scientists_have_eye_on_quantum_technology_for_age_related_ma_4f8d446e]   File "/usr/lib/python3.10/pathlib.py", line 1119, in open
+[22:28:35 +1s | thequantuminsider_2024_01_10_scientists_have_eye_on_quantum_technology_for_age_related_ma_4f8d446e]     return self._accessor.open(self, mode, buffering, encoding, errors,
+[22:28:35 +1s | thequantuminsider_2024_01_10_scientists_have_eye_on_quantum_technology_for_age_related_ma_4f8d446e] FileNotFoundError: [Errno 2] No such file or directory: 'site_outputs/psiquantum_com/1_actor_results_pdf.json'
+
+========================================================================
+RUN FINISHED 2026-07-04 22:28:35  (FAILED)
+Started:     2026-07-04 22:28:34
+Elapsed:     1s
+========================================================================
+
+========================================================================
+RUN STARTED  2026-07-04 23:43:54
+site_pipeline.py https://thequantuminsider.com/2024/01/10/scientists-have-eye-on-quantum-technology-for-age-related-macular-degeneration-detection/
+========================================================================
+
+[23:43:54 +0s | thequantuminsider_2024_01_10_scientists_have_eye_on_quantum_technology_for_age_related_ma_4f8d446e] === 0 crawl site (skipped via auto (actor data already exists; pass --force to re-crawl), reusing /home/lv/IDP/idpdeeptech/pipeline/news_outputs/thequantuminsider_2024_01_10_scientists_have_eye_on_quantum_technology_for_age_related_ma_4f8d446e/crawl_output) ===
+
+[23:43:54 +0s | thequantuminsider_2024_01_10_scientists_have_eye_on_quantum_technology_for_age_related_ma_4f8d446e] === 1 actor extraction ===
+[23:43:54 +0s | thequantuminsider_2024_01_10_scientists_have_eye_on_quantum_technology_for_age_related_ma_4f8d446e] Auto-resume: 1 (url, ordinal) pairs already done, skipping them.
+[23:43:54 +0s | thequantuminsider_2024_01_10_scientists_have_eye_on_quantum_technology_for_age_related_ma_4f8d446e] All 1 pages/URLs already processed (per 1_actor_results.progress.json). Nothing to do.
+[23:43:54 +0s | thequantuminsider_2024_01_10_scientists_have_eye_on_quantum_technology_for_age_related_ma_4f8d446e] Delete the progress sidecar to force a full re-run, or pass --start-page N.
+
+[23:43:54 +1s | thequantuminsider_2024_01_10_scientists_have_eye_on_quantum_technology_for_age_related_ma_4f8d446e] === 2 clean actors ===
+[23:43:54 +1s | thequantuminsider_2024_01_10_scientists_have_eye_on_quantum_technology_for_age_related_ma_4f8d446e] Loaded 52 extracted records
+[23:43:54 +1s | thequantuminsider_2024_01_10_scientists_have_eye_on_quantum_technology_for_age_related_ma_4f8d446e] Saved 2_actor_nodes.json with 20 canonical actor nodes
+
+[23:43:54 +1s | thequantuminsider_2024_01_10_scientists_have_eye_on_quantum_technology_for_age_related_ma_4f8d446e] === 3 interaction extraction ===
+[23:43:55 +1s | thequantuminsider_2024_01_10_scientists_have_eye_on_quantum_technology_for_age_related_ma_4f8d446e] Extracting interactions: https://thequantuminsider.com/2024/01/10/scientists-have-eye-on-quantum-technology-for-age-related-macular-degeneration-detection (1/1), chunk 11/36
+[23:44:04 +10s | thequantuminsider_2024_01_10_scientists_have_eye_on_quantum_technology_for_age_related_ma_4f8d446e] Extracting interactions: https://thequantuminsider.com/2024/01/10/scientists-have-eye-on-quantum-technology-for-age-related-macular-degeneration-detection (1/1), chunk 12/36
+[23:44:13 +19s | thequantuminsider_2024_01_10_scientists_have_eye_on_quantum_technology_for_age_related_ma_4f8d446e] Extracting interactions: https://thequantuminsider.com/2024/01/10/scientists-have-eye-on-quantum-technology-for-age-related-macular-degeneration-detection (1/1), chunk 13/36
+[23:44:25 +32s | thequantuminsider_2024_01_10_scientists_have_eye_on_quantum_technology_for_age_related_ma_4f8d446e] Extracting interactions: https://thequantuminsider.com/2024/01/10/scientists-have-eye-on-quantum-technology-for-age-related-macular-degeneration-detection (1/1), chunk 14/36
+[23:44:33 +40s | thequantuminsider_2024_01_10_scientists_have_eye_on_quantum_technology_for_age_related_ma_4f8d446e] Extracting interactions: https://thequantuminsider.com/2024/01/10/scientists-have-eye-on-quantum-technology-for-age-related-macular-degeneration-detection (1/1), chunk 15/36
+[23:44:48 +55s | thequantuminsider_2024_01_10_scientists_have_eye_on_quantum_technology_for_age_related_ma_4f8d446e] Extracting interactions: https://thequantuminsider.com/2024/01/10/scientists-have-eye-on-quantum-technology-for-age-related-macular-degeneration-detection (1/1), chunk 16/36
+[23:44:50 +56s | thequantuminsider_2024_01_10_scientists_have_eye_on_quantum_technology_for_age_related_ma_4f8d446e] Extracting interactions: https://thequantuminsider.com/2024/01/10/scientists-have-eye-on-quantum-technology-for-age-related-macular-degeneration-detection (1/1), chunk 17/36
+[23:44:55 +1m 2s | thequantuminsider_2024_01_10_scientists_have_eye_on_quantum_technology_for_age_related_ma_4f8d446e] Extracting interactions: https://thequantuminsider.com/2024/01/10/scientists-have-eye-on-quantum-technology-for-age-related-macular-degeneration-detection (1/1), chunk 18/36
+[23:44:59 +1m 5s | thequantuminsider_2024_01_10_scientists_have_eye_on_quantum_technology_for_age_related_ma_4f8d446e] Extracting interactions: https://thequantuminsider.com/2024/01/10/scientists-have-eye-on-quantum-technology-for-age-related-macular-degeneration-detection (1/1), chunk 19/36
+[23:45:03 +1m 10s | thequantuminsider_2024_01_10_scientists_have_eye_on_quantum_technology_for_age_related_ma_4f8d446e] Extracting interactions: https://thequantuminsider.com/2024/01/10/scientists-have-eye-on-quantum-technology-for-age-related-macular-degeneration-detection (1/1), chunk 20/36
+[23:45:11 +1m 17s | thequantuminsider_2024_01_10_scientists_have_eye_on_quantum_technology_for_age_related_ma_4f8d446e] Extracting interactions: https://thequantuminsider.com/2024/01/10/scientists-have-eye-on-quantum-technology-for-age-related-macular-degeneration-detection (1/1), chunk 21/36
+[23:45:16 +1m 23s | thequantuminsider_2024_01_10_scientists_have_eye_on_quantum_technology_for_age_related_ma_4f8d446e] Extracting interactions: https://thequantuminsider.com/2024/01/10/scientists-have-eye-on-quantum-technology-for-age-related-macular-degeneration-detection (1/1), chunk 22/36
+[23:45:23 +1m 30s | thequantuminsider_2024_01_10_scientists_have_eye_on_quantum_technology_for_age_related_ma_4f8d446e] Extracting interactions: https://thequantuminsider.com/2024/01/10/scientists-have-eye-on-quantum-technology-for-age-related-macular-degeneration-detection (1/1), chunk 23/36
+[23:45:28 +1m 35s | thequantuminsider_2024_01_10_scientists_have_eye_on_quantum_technology_for_age_related_ma_4f8d446e] Extracting interactions: https://thequantuminsider.com/2024/01/10/scientists-have-eye-on-quantum-technology-for-age-related-macular-degeneration-detection (1/1), chunk 25/36
+[23:45:33 +1m 39s | thequantuminsider_2024_01_10_scientists_have_eye_on_quantum_technology_for_age_related_ma_4f8d446e] Extracting interactions: https://thequantuminsider.com/2024/01/10/scientists-have-eye-on-quantum-technology-for-age-related-macular-degeneration-detection (1/1), chunk 26/36
+[23:45:34 +1m 41s | thequantuminsider_2024_01_10_scientists_have_eye_on_quantum_technology_for_age_related_ma_4f8d446e] Extracting interactions: https://thequantuminsider.com/2024/01/10/scientists-have-eye-on-quantum-technology-for-age-related-macular-degeneration-detection (1/1), chunk 27/36
+[23:46:08 +2m 15s | thequantuminsider_2024_01_10_scientists_have_eye_on_quantum_technology_for_age_related_ma_4f8d446e] Extracting interactions: https://thequantuminsider.com/2024/01/10/scientists-have-eye-on-quantum-technology-for-age-related-macular-degeneration-detection (1/1), chunk 28/36
+[23:46:10 +2m 16s | thequantuminsider_2024_01_10_scientists_have_eye_on_quantum_technology_for_age_related_ma_4f8d446e] Extracting interactions: https://thequantuminsider.com/2024/01/10/scientists-have-eye-on-quantum-technology-for-age-related-macular-degeneration-detection (1/1), chunk 29/36
+[23:46:11 +2m 18s | thequantuminsider_2024_01_10_scientists_have_eye_on_quantum_technology_for_age_related_ma_4f8d446e] Extracting interactions: https://thequantuminsider.com/2024/01/10/scientists-have-eye-on-quantum-technology-for-age-related-macular-degeneration-detection (1/1), chunk 30/36
+[23:46:13 +2m 19s | thequantuminsider_2024_01_10_scientists_have_eye_on_quantum_technology_for_age_related_ma_4f8d446e] Extracting interactions: https://thequantuminsider.com/2024/01/10/scientists-have-eye-on-quantum-technology-for-age-related-macular-degeneration-detection (1/1), chunk 31/36
+[23:46:15 +2m 21s | thequantuminsider_2024_01_10_scientists_have_eye_on_quantum_technology_for_age_related_ma_4f8d446e] Extracting interactions: https://thequantuminsider.com/2024/01/10/scientists-have-eye-on-quantum-technology-for-age-related-macular-degeneration-detection (1/1), chunk 32/36
+[23:47:17 +3m 23s | thequantuminsider_2024_01_10_scientists_have_eye_on_quantum_technology_for_age_related_ma_4f8d446e] Extracting interactions: https://thequantuminsider.com/2024/01/10/scientists-have-eye-on-quantum-technology-for-age-related-macular-degeneration-detection (1/1), chunk 33/36
+[23:47:18 +3m 25s | thequantuminsider_2024_01_10_scientists_have_eye_on_quantum_technology_for_age_related_ma_4f8d446e] Extracting interactions: https://thequantuminsider.com/2024/01/10/scientists-have-eye-on-quantum-technology-for-age-related-macular-degeneration-detection (1/1), chunk 34/36
+[23:47:21 +3m 27s | thequantuminsider_2024_01_10_scientists_have_eye_on_quantum_technology_for_age_related_ma_4f8d446e] Extracting interactions: https://thequantuminsider.com/2024/01/10/scientists-have-eye-on-quantum-technology-for-age-related-macular-degeneration-detection (1/1), chunk 35/36
+[23:47:57 +4m 3s | thequantuminsider_2024_01_10_scientists_have_eye_on_quantum_technology_for_age_related_ma_4f8d446e] Extracting interactions: https://thequantuminsider.com/2024/01/10/scientists-have-eye-on-quantum-technology-for-age-related-macular-degeneration-detection (1/1), chunk 36/36
+[23:47:58 +4m 5s | thequantuminsider_2024_01_10_scientists_have_eye_on_quantum_technology_for_age_related_ma_4f8d446e] Saved 3_interaction_results.json with 22 extracted interactions.
+
+[23:47:59 +4m 6s | thequantuminsider_2024_01_10_scientists_have_eye_on_quantum_technology_for_age_related_ma_4f8d446e] === 4 clean interactions ===
+[23:47:59 +4m 6s | thequantuminsider_2024_01_10_scientists_have_eye_on_quantum_technology_for_age_related_ma_4f8d446e] Saved 4_edges.json with 8 cleaned interactions.
+
+[23:47:59 +4m 6s | thequantuminsider_2024_01_10_scientists_have_eye_on_quantum_technology_for_age_related_ma_4f8d446e] === 5 helix enrichment ===
+[23:47:59 +4m 6s | thequantuminsider_2024_01_10_scientists_have_eye_on_quantum_technology_for_age_related_ma_4f8d446e] Wrote 5_nodes.json (20 actors)
+[23:47:59 +4m 6s | thequantuminsider_2024_01_10_scientists_have_eye_on_quantum_technology_for_age_related_ma_4f8d446e] Wrote 5_edges.json (8 interactions)
+[23:47:59 +4m 6s | thequantuminsider_2024_01_10_scientists_have_eye_on_quantum_technology_for_age_related_ma_4f8d446e] Actor helix counts: {'Academia': 4, 'Civil Society': 1, 'Industry': 4, 'Intermediary': 1, 'Unknown': 10}
+[23:47:59 +4m 6s | thequantuminsider_2024_01_10_scientists_have_eye_on_quantum_technology_for_age_related_ma_4f8d446e] Functional-space counts: {'Intra-helix / Not classified': 8}
+
+[23:47:59 +4m 6s | thequantuminsider_2024_01_10_scientists_have_eye_on_quantum_technology_for_age_related_ma_4f8d446e] === 6 network visualisation ===
+[23:48:01 +4m 7s | thequantuminsider_2024_01_10_scientists_have_eye_on_quantum_technology_for_age_related_ma_4f8d446e] Wrote quantum_network.html
+[23:48:01 +4m 7s | thequantuminsider_2024_01_10_scientists_have_eye_on_quantum_technology_for_age_related_ma_4f8d446e] Nodes: 20
+[23:48:01 +4m 7s | thequantuminsider_2024_01_10_scientists_have_eye_on_quantum_technology_for_age_related_ma_4f8d446e] Edges: 2
+
+[23:48:01 +4m 7s | thequantuminsider_2024_01_10_scientists_have_eye_on_quantum_technology_for_age_related_ma_4f8d446e] Done. Outputs written to: /home/lv/IDP/idpdeeptech/pipeline/news_outputs/thequantuminsider_2024_01_10_scientists_have_eye_on_quantum_technology_for_age_related_ma_4f8d446e
+[23:48:01 +4m 7s | thequantuminsider_2024_01_10_scientists_have_eye_on_quantum_technology_for_age_related_ma_4f8d446e] Log: /home/lv/IDP/idpdeeptech/pipeline/news_outputs/thequantuminsider_2024_01_10_scientists_have_eye_on_quantum_technology_for_age_related_ma_4f8d446e/run.log
+
+========================================================================
+RUN FINISHED 2026-07-04 23:48:01  (OK)
+Started:     2026-07-04 23:43:54
+Elapsed:     4m 7s
+========================================================================

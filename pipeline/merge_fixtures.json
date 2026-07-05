@@ -1,0 +1,30 @@
+{
+  "_comment": "Manually-injected actors and edges that don't come from any source document. Used for entries like IDP supervisors, co-authors, or other credits that should appear in the graph but weren't extracted from the ecosystem data. Injected by merge_all.py AFTER normal cross-document merging, so these entries bypass merge_rewrites.json (they're already in their final form). Their functional_space, helix_pair, canonical_actor_key, and layout coordinates are computed automatically by merge_all.py -- you don't specify them here.",
+
+  "_schema": {
+    "nodes": "List of actor records. Required: entity. Recommended: category, helix, sphere, r_and_d, role_in_text. helix is used to compute edge functional_space, so set it correctly. If an actor with the same canonical_key already exists (from real source data), the fixture is skipped with a warning -- fixtures are for actors NOT in the extracted data.",
+    "edges": "List of edge records. Required: source_actor, target_actor, relation_label. If either endpoint's canonical_key resolves to no node (fixture or otherwise), the edge is skipped with a warning. source_helix/target_helix/functional_space/helix_pair are auto-computed from the resolved endpoint nodes -- do NOT set them here."
+  },
+
+  "nodes": [
+    {
+      "entity": "Philipp Sonnenschein",
+      "category": "Universities",
+      "role_in_text": "IDP supervisor at TUM Chair for Strategy and Organization",
+      "helix": "Academia",
+      "sphere": "Single",
+      "r_and_d": "R&D",
+      "confidence": "high"
+    }
+  ],
+
+  "edges": [
+    {
+      "source_actor": "Philipp Sonnenschein",
+      "target_actor": "Technical University of Munich (TUM)",
+      "relation_label": "networking",
+      "relation_label_confidence": "high",
+      "interaction_phrase": "IDP supervision"
+    }
+  ]
+}
