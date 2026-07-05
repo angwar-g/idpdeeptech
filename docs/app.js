@@ -1042,7 +1042,6 @@ function drawGraph(nodes, edges, settings = {}) {
     });
   });
 
-  const showEdgeLabels = !isFullNetwork && edges.length <= 120;
   const visEdges = [];
 
   edges.forEach((edge, index) => {
@@ -1072,7 +1071,7 @@ function drawGraph(nodes, edges, settings = {}) {
       id: `edge-${index}`,
       from: edge.source_actor_key,
       to: edge.target_actor_key,
-      label: showEdgeLabels ? formatRelationLabel(edge.relation_label || "") : "",
+      label: formatRelationLabel(edge.relation_label || "Interaction"),
       title: createEdgeTooltipText(edge),
       arrows: {
         to: {
