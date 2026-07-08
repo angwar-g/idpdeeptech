@@ -53672,9 +53672,9 @@
   },
   {
     "source_actor_key": "extended partnership",
-    "target_actor_key": "italian",
+    "target_actor_key": "italy",
     "source_actor": "Extended Partnership",
-    "target_actor": "Italian",
+    "target_actor": "Italy",
     "relation_label": "technology_transfer",
     "directional": true,
     "occurrences": [
@@ -53686,7 +53686,7 @@
         "source_date": "",
         "relation_label_confidence": "high",
         "source_actor": "Extended Partnership",
-        "target_actor": "Italian",
+        "target_actor": "Italy",
         "source_helix": "Government",
         "target_helix": "Unknown",
         "helix_pair": "Government–Unknown",
@@ -83040,92 +83040,6 @@
     "functional_space_needs_review": false
   },
   {
-    "source_actor_key": "italian",
-    "target_actor_key": "european union",
-    "source_actor": "Italian",
-    "target_actor": "European Union (EU)",
-    "relation_label": "collaborative_leadership",
-    "directional": true,
-    "occurrences": [
-      {
-        "source_document": "Luis_Italy25.pdf",
-        "page": 59,
-        "interaction_phrase": "strengthening partnerships with other EU member states",
-        "occurrence_sentence": "d) Coordinate Italian investments in infrastructure with those made by European institutions, including by strengthening partnerships with other EU member states, ensuring an active Italian presence in European strategic initiatives.",
-        "source_date": "",
-        "relation_label_confidence": "high",
-        "source_actor": "Italian",
-        "target_actor": "European Union (EU)",
-        "source_helix": "Unknown",
-        "target_helix": "Government",
-        "helix_pair": "Unknown–Government",
-        "functional_space": "Unknown",
-        "functional_space_needs_review": true,
-        "functional_space_review_reason": "source_actor_classification_needs_review; functional_space:Unknown"
-      }
-    ],
-    "source_documents": [
-      "Luis_Italy25.pdf"
-    ],
-    "occurrence_count": 1,
-    "source_helix": "Unknown",
-    "target_helix": "Government",
-    "helix_pair": "Unknown–Government",
-    "functional_space": "Unknown",
-    "functional_space_needs_review": true
-  },
-  {
-    "source_actor_key": "italian",
-    "target_actor_key": "research institutions",
-    "source_actor": "Italian",
-    "target_actor": "research institutions",
-    "relation_label": "networking",
-    "directional": false,
-    "occurrences": [
-      {
-        "source_document": "Luis_Italy25.pdf",
-        "page": 21,
-        "interaction_phrase": "active collaboration between industry and research institutions",
-        "occurrence_sentence": "Overcoming the challenges required to move from NISQ to FQTC scale requires active collaboration between industry and research institutions, fostering rapid feedback loops and co-design of the entire processing stack.",
-        "source_date": "",
-        "relation_label_confidence": "medium",
-        "source_actor": "research institutions",
-        "target_actor": "Italian",
-        "source_helix": "Academia",
-        "target_helix": "Unknown",
-        "helix_pair": "Academia–Unknown",
-        "functional_space": "Unknown",
-        "functional_space_needs_review": true,
-        "functional_space_review_reason": "source_actor_classification_needs_review; target_actor_classification_needs_review; functional_space:Unknown"
-      },
-      {
-        "source_document": "Luis_Italy25.pdf",
-        "page": 21,
-        "interaction_phrase": "close collaboration between industry and research",
-        "occurrence_sentence": "These advances require close collaboration between industry and research to overcome the challenges and to build large-scale quantum computers.",
-        "source_date": "",
-        "relation_label_confidence": "medium",
-        "source_actor": "research institutions",
-        "target_actor": "Italian",
-        "source_helix": "Academia",
-        "target_helix": "Unknown",
-        "helix_pair": "Academia–Unknown",
-        "functional_space": "Unknown",
-        "functional_space_needs_review": true,
-        "functional_space_review_reason": "source_actor_classification_needs_review; target_actor_classification_needs_review; functional_space:Unknown"
-      }
-    ],
-    "source_documents": [
-      "Luis_Italy25.pdf"
-    ],
-    "occurrence_count": 2,
-    "source_helix": "Academia",
-    "target_helix": "Unknown",
-    "helix_pair": "Academia–Unknown",
-    "functional_space": "Unknown",
-    "functional_space_needs_review": true
-  },
-  {
     "source_actor_key": "italian national institute for nuclear physics",
     "target_actor_key": "northwestern university",
     "source_actor": "Italian National Institute for Nuclear Physics",
@@ -83162,9 +83076,9 @@
   },
   {
     "source_actor_key": "italian trade agency",
-    "target_actor_key": "italian",
+    "target_actor_key": "italy",
     "source_actor": "Italian Trade Agency",
-    "target_actor": "Italian",
+    "target_actor": "Italy",
     "relation_label": "collaborative_leadership",
     "directional": true,
     "occurrences": [
@@ -83176,7 +83090,7 @@
         "source_date": "",
         "relation_label_confidence": "high",
         "source_actor": "Italian Trade Agency",
-        "target_actor": "Italian",
+        "target_actor": "Italy",
         "source_helix": "Government",
         "target_helix": "Unknown",
         "helix_pair": "Government–Unknown",
@@ -83192,6 +83106,92 @@
     "source_helix": "Government",
     "target_helix": "Unknown",
     "helix_pair": "Government–Unknown",
+    "functional_space": "Unknown",
+    "functional_space_needs_review": true
+  },
+  {
+    "source_actor_key": "italy",
+    "target_actor_key": "european union",
+    "source_actor": "Italy",
+    "target_actor": "European Union (EU)",
+    "relation_label": "collaborative_leadership",
+    "directional": true,
+    "occurrences": [
+      {
+        "source_document": "Luis_Italy25.pdf",
+        "page": 59,
+        "interaction_phrase": "strengthening partnerships with other EU member states",
+        "occurrence_sentence": "d) Coordinate Italian investments in infrastructure with those made by European institutions, including by strengthening partnerships with other EU member states, ensuring an active Italian presence in European strategic initiatives.",
+        "source_date": "",
+        "relation_label_confidence": "high",
+        "source_actor": "Italy",
+        "target_actor": "European Union (EU)",
+        "source_helix": "Unknown",
+        "target_helix": "Government",
+        "helix_pair": "Unknown–Government",
+        "functional_space": "Unknown",
+        "functional_space_needs_review": true,
+        "functional_space_review_reason": "source_actor_classification_needs_review; functional_space:Unknown"
+      }
+    ],
+    "source_documents": [
+      "Luis_Italy25.pdf"
+    ],
+    "occurrence_count": 1,
+    "source_helix": "Unknown",
+    "target_helix": "Government",
+    "helix_pair": "Unknown–Government",
+    "functional_space": "Unknown",
+    "functional_space_needs_review": true
+  },
+  {
+    "source_actor_key": "italy",
+    "target_actor_key": "research institutions",
+    "source_actor": "Italy",
+    "target_actor": "research institutions",
+    "relation_label": "networking",
+    "directional": false,
+    "occurrences": [
+      {
+        "source_document": "Luis_Italy25.pdf",
+        "page": 21,
+        "interaction_phrase": "active collaboration between industry and research institutions",
+        "occurrence_sentence": "Overcoming the challenges required to move from NISQ to FQTC scale requires active collaboration between industry and research institutions, fostering rapid feedback loops and co-design of the entire processing stack.",
+        "source_date": "",
+        "relation_label_confidence": "medium",
+        "source_actor": "research institutions",
+        "target_actor": "Italy",
+        "source_helix": "Academia",
+        "target_helix": "Unknown",
+        "helix_pair": "Academia–Unknown",
+        "functional_space": "Unknown",
+        "functional_space_needs_review": true,
+        "functional_space_review_reason": "source_actor_classification_needs_review; target_actor_classification_needs_review; functional_space:Unknown"
+      },
+      {
+        "source_document": "Luis_Italy25.pdf",
+        "page": 21,
+        "interaction_phrase": "close collaboration between industry and research",
+        "occurrence_sentence": "These advances require close collaboration between industry and research to overcome the challenges and to build large-scale quantum computers.",
+        "source_date": "",
+        "relation_label_confidence": "medium",
+        "source_actor": "research institutions",
+        "target_actor": "Italy",
+        "source_helix": "Academia",
+        "target_helix": "Unknown",
+        "helix_pair": "Academia–Unknown",
+        "functional_space": "Unknown",
+        "functional_space_needs_review": true,
+        "functional_space_review_reason": "source_actor_classification_needs_review; target_actor_classification_needs_review; functional_space:Unknown"
+      }
+    ],
+    "source_documents": [
+      "Luis_Italy25.pdf"
+    ],
+    "occurrence_count": 2,
+    "source_helix": "Academia",
+    "target_helix": "Unknown",
+    "helix_pair": "Academia–Unknown",
     "functional_space": "Unknown",
     "functional_space_needs_review": true
   },

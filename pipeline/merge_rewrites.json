@@ -372,8 +372,11 @@
       { "match": "^ibm quantum experience$",  "replace": "IBM" },
 
       { "match": "^1qb(it)? information technologies(,? ?inc\\.?)?( \\(1qbits?\\))?$",  "replace": "1QBit" },
-      { "match": "^@tsarcyanide$",                                       "replace": "Tsar Cyanide (Artist)" },
-      { "match": "^12 Quantum Computing Universities$",                  "drop": true },
+      { "match": "^@tsarcyanide$",                                                      "replace": "Tsar Cyanide (Artist)" },
+      { "match": "^italian$",                                                           "replace": "Italy" },
+      { "match": "^psi quantum$",                                                       "replace": "PsiQuantum" },
+      { "match": "^psiq$",                                                           "replace": "PsiQuantum" },
+      { "match": "^12 Quantum Computing Universities$",                                 "drop": true },
 
       { "match": "^\\[[^\\]]+\\]\\(https?://[^)]+\\)$", "drop": true },
       { "match": "^\\[[^\\]]+\\]$",                     "drop": true },
