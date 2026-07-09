@@ -10,6 +10,9 @@ let selectedNeighbourDepth = null;
 const searchableSelects = [];
 
 const FULL_NETWORK_SUMMARY = "Showing the largest connected network without smaller outlier components.";
+const EDGE_LABEL_ALWAYS_LIMIT = 120;
+const EDGE_LABEL_ZOOM_THRESHOLD = 0.85;
+const EDGE_LABEL_ZOOM_IDLE_MS = 220;
 const HELIX_TYPES = [
   { label: "Government", className: "government" },
   { label: "Industry", className: "industry" },
@@ -1066,12 +1069,14 @@ function drawGraph(nodes, edges, settings = {}) {
 
     // Arrow only for directional relations. Symmetric ones render as a plain line.
     const directional = edge.directional === true;
+    const relationLabel = formatRelationLabel(edge.relation_label || "Interaction");
 
     visEdges.push({
       id: `edge-${index}`,
       from: edge.source_actor_key,
       to: edge.target_actor_key,
-      label: formatRelationLabel(edge.relation_label || "Interaction"),
+      label: edges.length <= EDGE_LABEL_ALWAYS_LIMIT ? relationLabel : "",
+      displayLabel: relationLabel,
       title: createEdgeTooltipText(edge),
       arrows: {
         to: {
@@ -1180,6 +1185,39 @@ function drawGraph(nodes, edges, settings = {}) {
   }
 
   network = new vis.Network(container, data, options);
+  const currentNetwork = network;
+  let edgeLabelsVisible = edges.length <= EDGE_LABEL_ALWAYS_LIMIT;
+  let edgeLabelTimer = null;
+  const syncEdgeLabels = () => {
+    edgeLabelTimer = null;
+    if (network !== currentNetwork) return;
+
+    const shouldShow = shouldShowEdgeLabels(edges.length, currentNetwork.getScale());
+    if (edgeLabelsVisible === shouldShow) return;
+
+    edgeLabelsVisible = shouldShow;
+    data.edges.update(data.edges.getIds().map(id => {
+      const edge = data.edges.get(id);
+      return {
+        id,
+        label: shouldShow ? edge.displayLabel : ""
+      };
+    }));
+  };
+  const scheduleEdgeLabelSync = (delay = EDGE_LABEL_ZOOM_IDLE_MS) => {
+    if (edgeLabelsVisible && edges.length > EDGE_LABEL_ALWAYS_LIMIT) {
+      edgeLabelsVisible = false;
+      data.edges.update(data.edges.getIds().map(id => ({ id, label: "" })));
+    }
+
+    if (edgeLabelTimer !== null) {
+      clearTimeout(edgeLabelTimer);
+    }
+
+    edgeLabelTimer = setTimeout(syncEdgeLabels, delay);
+  };
+
+  network.on("zoom", () => scheduleEdgeLabelSync());
 
   if (usePhysics) {
     network.on("stabilizationProgress", params => {
@@ -1194,6 +1232,7 @@ function drawGraph(nodes, edges, settings = {}) {
       freezeNetworkLayout();
 
       focusSelectedActors(selectedActorKeys, activeActorKey);
+      scheduleEdgeLabelSync(720);
 
       setLoading(false);
     });
@@ -1202,6 +1241,7 @@ function drawGraph(nodes, edges, settings = {}) {
       freezeNetworkLayout();
 
       focusSelectedActors(selectedActorKeys, activeActorKey);
+      scheduleEdgeLabelSync(720);
 
       setLoading(false);
     }, 80);
@@ -1260,6 +1300,10 @@ function freezeNetworkLayout() {
       hideEdgesOnDrag: false
     }
   });
+}
+
+function shouldShowEdgeLabels(edgeCount, scale) {
+  return edgeCount <= EDGE_LABEL_ALWAYS_LIMIT || scale >= EDGE_LABEL_ZOOM_THRESHOLD;
 }
 
 function focusSelectedActors(selectedActorKeys, activeActorKey = null) {
