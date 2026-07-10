@@ -14,6 +14,7 @@ const EDGE_LABEL_ALWAYS_LIMIT = 120;
 const EDGE_LABEL_ZOOM_THRESHOLD = 0.85;
 const EDGE_LABEL_ZOOM_IDLE_MS = 220;
 const EDGE_LABEL_VISIBLE_LIMIT = 180;
+const SMOOTH_ZOOM_EDGE_LIMIT = 650;
 const HELIX_TYPES = [
   { label: "Government", className: "government" },
   { label: "Industry", className: "industry" },
@@ -984,6 +985,7 @@ function drawGraph(nodes, edges, settings = {}) {
   } = settings;
   const useStaticLayout = isFullNetwork || !usePhysics;
   const compactComponents = useStaticLayout && !isFullNetwork && nodes.length <= 500;
+  const optimizeZoomRendering = edges.length > SMOOTH_ZOOM_EDGE_LIMIT;
 
   setLoading(
     true,
@@ -1176,8 +1178,8 @@ function drawGraph(nodes, edges, settings = {}) {
       keyboard: true,
       multiselect: false,
       dragNodes: true,
-      hideEdgesOnDrag: false,
-      hideEdgesOnZoom: false
+      hideEdgesOnDrag: optimizeZoomRendering,
+      hideEdgesOnZoom: optimizeZoomRendering
     }
   };
 
@@ -1203,11 +1205,6 @@ function drawGraph(nodes, edges, settings = {}) {
     labeledEdgeIds = nextLabeledEdgeIds;
   };
   const scheduleEdgeLabelSync = (delay = EDGE_LABEL_ZOOM_IDLE_MS) => {
-    if (labeledEdgeIds.size && edges.length > EDGE_LABEL_ALWAYS_LIMIT) {
-      updateEdgeLabelSet(data.edges, labeledEdgeIds, new Set());
-      labeledEdgeIds = new Set();
-    }
-
     if (edgeLabelTimer !== null) {
       clearTimeout(edgeLabelTimer);
     }
@@ -1228,7 +1225,7 @@ function drawGraph(nodes, edges, settings = {}) {
     });
 
     network.once("stabilizationIterationsDone", () => {
-      freezeNetworkLayout();
+      freezeNetworkLayout(optimizeZoomRendering);
 
       focusSelectedActors(selectedActorKeys, activeActorKey);
       scheduleEdgeLabelSync(720);
@@ -1237,7 +1234,7 @@ function drawGraph(nodes, edges, settings = {}) {
     });
   } else {
     setTimeout(() => {
-      freezeNetworkLayout();
+      freezeNetworkLayout(optimizeZoomRendering);
 
       focusSelectedActors(selectedActorKeys, activeActorKey);
       scheduleEdgeLabelSync(720);
@@ -1278,7 +1275,7 @@ function formatOccurrenceList(occurrences) {
   }).join("") + (occurrences.length > 5 ? `<i>+ ${occurrences.length - 5} more</i>` : "");
 }
 
-function freezeNetworkLayout() {
+function freezeNetworkLayout(optimizeInteraction = false) {
   if (!network) return;
 
   network.stopSimulation();
@@ -1296,7 +1293,8 @@ function freezeNetworkLayout() {
     },
     interaction: {
       dragNodes: true,
-      hideEdgesOnDrag: false
+      hideEdgesOnDrag: optimizeInteraction,
+      hideEdgesOnZoom: optimizeInteraction
     }
   });
 }
