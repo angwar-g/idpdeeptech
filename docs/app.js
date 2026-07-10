@@ -13,6 +13,7 @@ const FULL_NETWORK_SUMMARY = "Showing the largest connected network without smal
 const EDGE_LABEL_ALWAYS_LIMIT = 120;
 const EDGE_LABEL_ZOOM_THRESHOLD = 0.85;
 const EDGE_LABEL_ZOOM_IDLE_MS = 220;
+const EDGE_LABEL_VISIBLE_LIMIT = 180;
 const HELIX_TYPES = [
   { label: "Government", className: "government" },
   { label: "Industry", className: "industry" },
@@ -1186,28 +1187,25 @@ function drawGraph(nodes, edges, settings = {}) {
 
   network = new vis.Network(container, data, options);
   const currentNetwork = network;
-  let edgeLabelsVisible = edges.length <= EDGE_LABEL_ALWAYS_LIMIT;
+  let labeledEdgeIds = new Set(
+    edges.length <= EDGE_LABEL_ALWAYS_LIMIT ? data.edges.getIds() : []
+  );
   let edgeLabelTimer = null;
   const syncEdgeLabels = () => {
     edgeLabelTimer = null;
     if (network !== currentNetwork) return;
 
-    const shouldShow = shouldShowEdgeLabels(edges.length, currentNetwork.getScale());
-    if (edgeLabelsVisible === shouldShow) return;
+    const nextLabeledEdgeIds = shouldShowEdgeLabels(edges.length, currentNetwork.getScale())
+      ? getVisibleEdgeLabelIds(data.edges, currentNetwork, container)
+      : new Set();
 
-    edgeLabelsVisible = shouldShow;
-    data.edges.update(data.edges.getIds().map(id => {
-      const edge = data.edges.get(id);
-      return {
-        id,
-        label: shouldShow ? edge.displayLabel : ""
-      };
-    }));
+    updateEdgeLabelSet(data.edges, labeledEdgeIds, nextLabeledEdgeIds);
+    labeledEdgeIds = nextLabeledEdgeIds;
   };
   const scheduleEdgeLabelSync = (delay = EDGE_LABEL_ZOOM_IDLE_MS) => {
-    if (edgeLabelsVisible && edges.length > EDGE_LABEL_ALWAYS_LIMIT) {
-      edgeLabelsVisible = false;
-      data.edges.update(data.edges.getIds().map(id => ({ id, label: "" })));
+    if (labeledEdgeIds.size && edges.length > EDGE_LABEL_ALWAYS_LIMIT) {
+      updateEdgeLabelSet(data.edges, labeledEdgeIds, new Set());
+      labeledEdgeIds = new Set();
     }
 
     if (edgeLabelTimer !== null) {
@@ -1218,6 +1216,7 @@ function drawGraph(nodes, edges, settings = {}) {
   };
 
   network.on("zoom", () => scheduleEdgeLabelSync());
+  network.on("animationFinished", () => scheduleEdgeLabelSync(40));
 
   if (usePhysics) {
     network.on("stabilizationProgress", params => {
@@ -1304,6 +1303,79 @@ function freezeNetworkLayout() {
 
 function shouldShowEdgeLabels(edgeCount, scale) {
   return edgeCount <= EDGE_LABEL_ALWAYS_LIMIT || scale >= EDGE_LABEL_ZOOM_THRESHOLD;
+}
+
+function getVisibleEdgeLabelIds(edgeDataSet, graphNetwork, container) {
+  const edgeIds = edgeDataSet.getIds();
+
+  if (edgeIds.length <= EDGE_LABEL_ALWAYS_LIMIT) {
+    return new Set(edgeIds);
+  }
+
+  const scale = graphNetwork.getScale();
+  const center = graphNetwork.getViewPosition();
+  const positions = graphNetwork.getPositions();
+  const halfWidth = container.clientWidth / Math.max(0.1, scale) / 2;
+  const halfHeight = container.clientHeight / Math.max(0.1, scale) / 2;
+  const margin = Math.max(180, Math.min(420, 220 / Math.max(0.35, scale)));
+  const bounds = {
+    left: center.x - halfWidth - margin,
+    right: center.x + halfWidth + margin,
+    top: center.y - halfHeight - margin,
+    bottom: center.y + halfHeight + margin
+  };
+
+  const candidates = [];
+
+  edgeIds.forEach(id => {
+    const edge = edgeDataSet.get(id);
+    const from = positions[edge.from];
+    const to = positions[edge.to];
+    if (!from || !to) return;
+
+    if (!isPointInBounds(from, bounds) && !isPointInBounds(to, bounds)) return;
+
+    const midX = (from.x + to.x) / 2;
+    const midY = (from.y + to.y) / 2;
+    const distanceFromCenter = Math.hypot(midX - center.x, midY - center.y);
+    candidates.push({ id, distanceFromCenter });
+  });
+
+  candidates.sort((a, b) => a.distanceFromCenter - b.distanceFromCenter);
+
+  return new Set(
+    candidates
+      .slice(0, EDGE_LABEL_VISIBLE_LIMIT)
+      .map(candidate => candidate.id)
+  );
+}
+
+function updateEdgeLabelSet(edgeDataSet, currentIds, nextIds) {
+  const updates = [];
+
+  currentIds.forEach(id => {
+    if (!nextIds.has(id)) {
+      updates.push({ id, label: "" });
+    }
+  });
+
+  nextIds.forEach(id => {
+    if (!currentIds.has(id)) {
+      const edge = edgeDataSet.get(id);
+      updates.push({ id, label: edge.displayLabel || "" });
+    }
+  });
+
+  if (updates.length) {
+    edgeDataSet.update(updates);
+  }
+}
+
+function isPointInBounds(point, bounds) {
+  return point.x >= bounds.left &&
+    point.x <= bounds.right &&
+    point.y >= bounds.top &&
+    point.y <= bounds.bottom;
 }
 
 function focusSelectedActors(selectedActorKeys, activeActorKey = null) {
