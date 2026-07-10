@@ -12,9 +12,8 @@ const searchableSelects = [];
 const FULL_NETWORK_SUMMARY = "Showing the largest connected network without smaller outlier components.";
 const EDGE_LABEL_ALWAYS_LIMIT = 120;
 const EDGE_LABEL_ZOOM_THRESHOLD = 0.85;
-const EDGE_LABEL_ZOOM_IDLE_MS = 220;
+const EDGE_LABEL_ZOOM_IDLE_MS = 360;
 const EDGE_LABEL_VISIBLE_LIMIT = 180;
-const SMOOTH_ZOOM_EDGE_LIMIT = 650;
 const HELIX_TYPES = [
   { label: "Government", className: "government" },
   { label: "Industry", className: "industry" },
@@ -985,7 +984,6 @@ function drawGraph(nodes, edges, settings = {}) {
   } = settings;
   const useStaticLayout = isFullNetwork || !usePhysics;
   const compactComponents = useStaticLayout && !isFullNetwork && nodes.length <= 500;
-  const optimizeZoomRendering = edges.length > SMOOTH_ZOOM_EDGE_LIMIT;
 
   setLoading(
     true,
@@ -1122,6 +1120,11 @@ function drawGraph(nodes, edges, settings = {}) {
     return;
   }
 
+  if (container.edgeLabelWheelHandler) {
+    container.removeEventListener("wheel", container.edgeLabelWheelHandler);
+    container.edgeLabelWheelHandler = null;
+  }
+
   const data = {
     nodes: new vis.DataSet([...nodeMap.values()]),
     edges: new vis.DataSet(visEdges)
@@ -1178,8 +1181,8 @@ function drawGraph(nodes, edges, settings = {}) {
       keyboard: true,
       multiselect: false,
       dragNodes: true,
-      hideEdgesOnDrag: optimizeZoomRendering,
-      hideEdgesOnZoom: optimizeZoomRendering
+      hideEdgesOnDrag: false,
+      hideEdgesOnZoom: false
     }
   };
 
@@ -1204,16 +1207,32 @@ function drawGraph(nodes, edges, settings = {}) {
     updateEdgeLabelSet(data.edges, labeledEdgeIds, nextLabeledEdgeIds);
     labeledEdgeIds = nextLabeledEdgeIds;
   };
+  const hideEdgeLabels = () => {
+    if (labeledEdgeIds.size) {
+      updateEdgeLabelSet(data.edges, labeledEdgeIds, new Set());
+      labeledEdgeIds = new Set();
+    }
+  };
   const scheduleEdgeLabelSync = (delay = EDGE_LABEL_ZOOM_IDLE_MS) => {
+    hideEdgeLabels();
+
     if (edgeLabelTimer !== null) {
       clearTimeout(edgeLabelTimer);
     }
 
     edgeLabelTimer = setTimeout(syncEdgeLabels, delay);
   };
+  const handleViewportMove = () => scheduleEdgeLabelSync();
 
-  network.on("zoom", () => scheduleEdgeLabelSync());
+  container.edgeLabelWheelHandler = handleViewportMove;
+  container.addEventListener("wheel", container.edgeLabelWheelHandler, { passive: true });
+  network.on("zoom", handleViewportMove);
+  network.on("dragStart", hideEdgeLabels);
+  network.on("dragging", hideEdgeLabels);
+  network.on("dragEnd", handleViewportMove);
   network.on("animationFinished", () => scheduleEdgeLabelSync(40));
+  network.hideEdgeLabels = hideEdgeLabels;
+  network.scheduleEdgeLabelSync = scheduleEdgeLabelSync;
 
   if (usePhysics) {
     network.on("stabilizationProgress", params => {
@@ -1225,19 +1244,19 @@ function drawGraph(nodes, edges, settings = {}) {
     });
 
     network.once("stabilizationIterationsDone", () => {
-      freezeNetworkLayout(optimizeZoomRendering);
+      freezeNetworkLayout();
 
-      focusSelectedActors(selectedActorKeys, activeActorKey);
       scheduleEdgeLabelSync(720);
+      focusSelectedActors(selectedActorKeys, activeActorKey);
 
       setLoading(false);
     });
   } else {
     setTimeout(() => {
-      freezeNetworkLayout(optimizeZoomRendering);
+      freezeNetworkLayout();
 
-      focusSelectedActors(selectedActorKeys, activeActorKey);
       scheduleEdgeLabelSync(720);
+      focusSelectedActors(selectedActorKeys, activeActorKey);
 
       setLoading(false);
     }, 80);
@@ -1275,7 +1294,7 @@ function formatOccurrenceList(occurrences) {
   }).join("") + (occurrences.length > 5 ? `<i>+ ${occurrences.length - 5} more</i>` : "");
 }
 
-function freezeNetworkLayout(optimizeInteraction = false) {
+function freezeNetworkLayout() {
   if (!network) return;
 
   network.stopSimulation();
@@ -1293,8 +1312,8 @@ function freezeNetworkLayout(optimizeInteraction = false) {
     },
     interaction: {
       dragNodes: true,
-      hideEdgesOnDrag: optimizeInteraction,
-      hideEdgesOnZoom: optimizeInteraction
+      hideEdgesOnDrag: false,
+      hideEdgesOnZoom: false
     }
   });
 }
@@ -1380,6 +1399,7 @@ function focusSelectedActors(selectedActorKeys, activeActorKey = null) {
   if (!network) return;
 
   if (!selectedActorKeys.size) {
+    if (network.hideEdgeLabels) network.hideEdgeLabels();
     network.fit({
       animation: {
         duration: 650,
@@ -1400,6 +1420,7 @@ function focusSelectedActors(selectedActorKeys, activeActorKey = null) {
     network.selectNodes([activeId], true);
     const activeNode = network.body.data.nodes.get(activeId);
     if (activeNode) renderNodeDetails(activeNode);
+    if (network.hideEdgeLabels) network.hideEdgeLabels();
     network.focus(activeId, {
       scale: 1.15,
       animation: {
@@ -1414,6 +1435,7 @@ function focusSelectedActors(selectedActorKeys, activeActorKey = null) {
     network.selectNodes([activeId], true);
   }
 
+  if (network.hideEdgeLabels) network.hideEdgeLabels();
   network.fit({
     nodes: selectedIds.length ? selectedIds : undefined,
     animation: {
@@ -1433,6 +1455,7 @@ function focusActorFromFilterChip(actorKey) {
 
   network.selectNodes([actorKey], true);
   renderNodeDetails(node);
+  if (network.hideEdgeLabels) network.hideEdgeLabels();
   network.focus(actorKey, {
     scale: 1.15,
     animation: {
