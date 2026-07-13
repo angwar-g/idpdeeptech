@@ -108,8 +108,9 @@ function assertOk(response) {
 }
 
 // Year handling: edges now carry `first_seen` / `last_seen` (from news article
-// dates joined at merge time). For edges without dates, fall back to scanning
-// the source_documents list for a YYYY pattern (covers PDFs like japan25.pdf).
+// dates joined at merge time). For edges without dates, fall back to source
+// document names. Full 20xx years can come from URLs; short yy years only come
+// from file-like names such as japan25.pdf.
 function yearsForEdge(edge) {
   const years = new Set();
   if (edge.first_seen) years.add(edge.first_seen.slice(0, 4));
@@ -118,16 +119,27 @@ function yearsForEdge(edge) {
   (edge.occurrences || []).forEach(occ => {
     if (occ.source_date) years.add(occ.source_date.slice(0, 4));
   });
-  // Fallback: extract year from source document filenames (japan25.pdf -> 2025).
+  // Fallback: extract years from source document strings.
   if (years.size === 0) {
     (edge.source_documents || []).forEach(sd => {
-      const m = String(sd).match(/(?:^|[^0-9])(\d{2})(?:\.pdf$|\D|$)/);
-      if (m) years.add("20" + m[1]);
-      const m4 = String(sd).match(/20\d{2}/);
+      const source = String(sd);
+      const m4 = source.match(/20\d{2}/);
       if (m4) years.add(m4[0]);
+
+      if (isFileLikeSource(source)) {
+        const m = source.match(/(?:^|[^0-9])(\d{2})(?:\.[a-z0-9]+$|[_-]|$)/i);
+        if (m) years.add("20" + m[1]);
+      }
     });
   }
   return years;
+}
+
+function isFileLikeSource(source) {
+  if (/^https?:\/\//i.test(source)) return false;
+
+  const fileName = source.split(/[\\/]/).pop() || source;
+  return /\.[a-z0-9]{2,5}$/i.test(fileName);
 }
 
 function populateFilters(nodes, edges) {
