@@ -14,6 +14,21 @@ const EDGE_LABEL_ALWAYS_LIMIT = 120;
 const EDGE_LABEL_ZOOM_THRESHOLD = 0.85;
 const EDGE_LABEL_ZOOM_IDLE_MS = 360;
 const EDGE_LABEL_VISIBLE_LIMIT = 180;
+
+// Two-level TLDs where the registrable domain spans the last 3 DNS labels
+// (e.g. bbc.co.uk, not co.uk). Without this list, naive last-2-labels would
+// wrongly collapse different UK/JP/etc. sites into one group.
+const TWO_LEVEL_TLDS = new Set([
+  "co.uk", "org.uk", "ac.uk", "gov.uk",
+  "co.jp", "or.jp", "ac.jp", "ne.jp",
+  "com.au", "org.au", "edu.au", "gov.au", "net.au",
+  "co.nz", "org.nz",
+  "com.br", "com.mx", "com.ar",
+  "co.kr", "or.kr",
+  "com.cn", "com.tw", "com.hk", "com.sg",
+  "co.in", "co.za"
+]);
+
 const HELIX_TYPES = [
   { label: "Government", className: "government" },
   { label: "Industry", className: "industry" },
@@ -516,10 +531,21 @@ function getSourceGroupLabel(source) {
 }
 
 function normalizeHostname(hostname) {
-  return String(hostname || "")
+  const clean = String(hostname || "")
     .trim()
     .toLowerCase()
     .replace(/^www\./, "");
+
+  const parts = clean.split(".");
+  if (parts.length <= 2) return clean;
+
+  const lastTwo = parts.slice(-2).join(".");
+  if (TWO_LEVEL_TLDS.has(lastTwo)) {
+    // Keep 3 labels for two-level TLDs, e.g. "bbc.co.uk".
+    return parts.slice(-3).join(".");
+  }
+  // Otherwise collapse to the registrable domain, e.g. "intel.com".
+  return lastTwo;
 }
 
 function scheduleApplyFilters() {
