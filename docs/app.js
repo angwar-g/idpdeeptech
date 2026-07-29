@@ -1989,3 +1989,34 @@ function escapeHtml(value) {
     .replaceAll('"', "&quot;")
     .replaceAll("'", "&#039;");
 }
+
+const infoButton = document.getElementById("infoButton");
+const infoModal = document.getElementById("infoModal");
+const infoCloseButton = document.getElementById("infoCloseButton");
+
+function openInfoModal() {
+  infoModal.hidden = false;
+  infoButton.setAttribute("aria-expanded", "true");
+  infoCloseButton.focus();
+}
+
+function closeInfoModal() {
+  infoModal.hidden = true;
+  infoButton.setAttribute("aria-expanded", "false");
+  infoButton.focus();
+}
+
+infoButton.addEventListener("click", openInfoModal);
+infoCloseButton.addEventListener("click", closeInfoModal);
+
+infoModal.addEventListener("click", event => {
+  if (event.target === infoModal) {
+    closeInfoModal();
+  }
+});
+
+document.addEventListener("keydown", event => {
+  if (event.key === "Escape" && !infoModal.hidden) {
+    closeInfoModal();
+  }
+});

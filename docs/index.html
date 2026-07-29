@@ -127,6 +127,83 @@
     </section>
   </main>
 
-  <script src="app.js?v=year-filter-url-fallback-fix"></script>
+  <button
+    id="infoButton"
+    class="info-button"
+    type="button"
+    aria-label="Open information guide"
+    aria-haspopup="dialog"
+    aria-controls="infoModal"
+    aria-expanded="false"
+  >
+    <span aria-hidden="true">i</span>
+  </button>
+
+  <div id="infoModal" class="info-modal" hidden>
+    <section
+      class="info-dialog"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="infoDialogTitle"
+    >
+      <div class="info-dialog-header">
+        <h2 id="infoDialogTitle">Nodes (actors)</h2>
+        <button id="infoCloseButton" class="info-close-button" type="button" aria-label="Close information guide">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+
+      <div class="info-dialog-content">
+        <p>Helix - the primary sphere the actor belongs to:</p>
+
+        <ul>
+          <li><strong>Government</strong>: public sector bodies, agencies, ministries</li>
+          <li><strong>Industry</strong>: private companies, startups, corporations</li>
+          <li><strong>Academia</strong>: universities, research institutes, labs</li>
+          <li><strong>Intermediary</strong>: span or connect other helices (accelerators, foundations)</li>
+          <li><strong>Civil Society</strong>: NGOs, advocacy groups, professional associations</li>
+          <li><strong>Unknown</strong>: helix couldn't be determined from available sources</li>
+        </ul>
+
+        <p>Sphere - how many helices an actor participates in:</p>
+
+        <ul>
+          <li><strong>Single</strong>: primarily embedded in one helix across mandate, governance, and function</li>
+          <li><strong>Multi</strong>: Intermediary category, spans multiple helices in mandate, governance, or function</li>
+        </ul>
+
+        <p>R&amp;D - whether the actor engages in research activity:</p>
+
+        <ul>
+          <li><strong>R&amp;D</strong>: basic research, applied research, or an explicit innovation mandate indicated</li>
+          <li><strong>Assessed</strong>: reviewed but no clear indication of research activity when entity mentioned</li>
+        </ul>
+
+        <h2>Edges (interactions)</h2>
+
+        <p>Label - the type of interaction between two actors:</p>
+
+        <ul>
+          <li><strong>Technology Transfer</strong>: core activity of innovation systems, market or non-market transfer of technology, knowledge, or IP</li>
+          <li><strong>Collaborative Leadership</strong>: an innovation organiser exercises convening power to bring spheres together, coordinating top-down and bottom-up processes</li>
+          <li><strong>Substitution</strong>: one sphere fills gaps when another is weak, one actor takes the role of another</li>
+          <li><strong>Networking</strong>: formal or informal networks, a manifestation of the collective nature of science, technology and innovation</li>
+          <li><strong>Collaboration Conflict Moderation</strong>: triadic moderation of tensions and conflicts, turning diverging interests into convergence and win-win outcomes</li>
+        </ul>
+
+        <p>Functional space - determined by the helix pair of the two actors:</p>
+
+        <ul>
+          <li><strong>Knowledge</strong>: Academia ↔ Government</li>
+          <li><strong>Innovation</strong>: Academia ↔ Industry | Academia ↔ Intermediary | Industry ↔ Intermediary</li>
+          <li><strong>Consensus</strong>: Government ↔ Industry | Government ↔ Intermediary</li>
+          <li><strong>Public</strong>: any pair involving Civil Society</li>
+          <li><strong>Intra-Helix</strong>: same helix on both</li>
+        </ul>
+      </div>
+    </section>
+  </div>
+
+  <script src="app.js?v=info-dialog"></script>
 </body>
 </html>
