@@ -930,6 +930,13 @@ main {
   background: rgba(56, 125, 255, 0.22);
 }
 
+.select-chip-label {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
 .select-chip[tabindex="0"] {
   cursor: pointer;
 }
@@ -940,7 +947,12 @@ main {
 }
 
 .select-chip-remove {
+  display: inline-flex;
+  flex: 0 0 18px;
+  align-items: center;
+  justify-content: center;
   width: 18px;
+  min-width: 18px;
   height: 18px;
   margin: 0;
   padding: 0;
@@ -1071,7 +1083,7 @@ main {
   font-size: 32px;
   font-style: italic;
   font-weight: 700;
-  line-height: 1;
+  line-height: 18px;
   transform: translate(-1px, -1px);
 }
 

@@ -405,7 +405,12 @@ function createSearchableMultiSelect(config) {
       const chip = document.createElement("span");
       chip.className = "select-chip";
       chip.tabIndex = config.onChipClick ? 0 : -1;
-      chip.append(document.createTextNode(label));
+
+      const chipLabel = document.createElement("span");
+      chipLabel.className = "select-chip-label";
+      chipLabel.textContent = label;
+      chipLabel.title = label;
+      chip.appendChild(chipLabel);
 
       if (config.onChipClick) {
         chip.addEventListener("click", () => {
