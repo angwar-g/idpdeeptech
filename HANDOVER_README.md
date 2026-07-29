@@ -1,6 +1,6 @@
 # HelixNet project handover
 
-HelixNet creates an interactive map of organizations and relationships in the
+HelixNet creates an interactive map of organisations and relationships in the
 quantum ecosystem. It gathers information from PDFs, company websites, and
 news articles, then displays the combined results as a network.
 
@@ -8,13 +8,13 @@ Public website: <https://angwar-g.github.io/idpdeeptech/>
 
 The project has two parts:
 
-1. **UI** — the website people use to explore the network.
-2. **Pipeline** — the process that reads sources and prepares the network data.
+1. **UI** - the website that anyone can use to explore the combined network.
+2. **Pipeline** - the process that reads sources and prepares the network data.
 
 ## Project folders
 
 ```text
-docs/                    The public website
+docs/                    All for the public website lives here
 docs/data/               The data currently shown on the website
 pipeline/pdf_input/      PDFs that the pipeline will process
 pipeline/site_input/     Lists of websites and news articles
@@ -23,10 +23,7 @@ pipeline/site_outputs/   Results from company websites
 pipeline/news_outputs/   Results from news articles
 pipeline/merged_outputs/ The final combined data and quality report
 research/                Supporting research tools
-deprecated/              Old files that are no longer used
 ```
-
-Do not use files in `deprecated/` for normal work.
 
 # UI section
 
@@ -40,7 +37,7 @@ It allows people to:
 - search for a particular actor;
 - choose how many levels of neighbouring actors to display;
 - click actors to see their classification and sources;
-- click relationships to see their type, sources, and supporting evidence; and
+- click relationships to see their type, sources, and supporting evidence;
 - see how actors are distributed across the following Helix categories: Government, Industry, Academia,
   Intermediary, Civil Society, and Unknown.
 
@@ -62,17 +59,14 @@ Open a terminal in the main project folder and run:
 python -m http.server 8000
 ```
 
-Then open:
+Then open in your browser the following:
 
 <http://localhost:8000/docs/>
-
-Do not open `index.html` by double-clicking it. The data may not load correctly
-that way.
 
 ## How the filters work
 
 - **Source document:** filters by a PDF or website.
-- **Actor:** filters by an organization or other actor.
+- **Actor:** filters by an organisation or other actor.
 - **Year:** filters by the year associated with the source.
 - **Neighbour depth:** controls how far the network expands from a selected
   actor.
@@ -109,7 +103,7 @@ Check that:
 - source, actor, and year filters work;
 - reset works;
 - actor and relationship details open;
-- the visible node and edge counts change when filtering; and
+- the visible node and edge counts change when filtering;
 - the website still works on a smaller browser window.
 
 ## Common UI problems
@@ -119,7 +113,7 @@ Check that:
 Make sure:
 
 - the local server was started from the main project folder;
-- the address is `http://localhost:8000/docs/`; and
+- the address is `http://localhost:8000/docs/`;
 - both files exist in `docs/data/`.
 
 ### New pipeline results are not visible
@@ -149,11 +143,11 @@ The pipeline:
 
 1. reads a PDF or website;
 2. identifies actors such as companies, universities, governments, and
-   research organizations;
+   research organisations;
 3. identifies relationships between those actors;
 4. removes duplicate or low-quality results;
 5. classifies actors;
-6. creates a network for checking each source; and
+6. creates a network for checking each source;
 7. combines all completed sources into the public network.
 
 The overall flow is:
@@ -205,8 +199,8 @@ playwright install chromium
 
 The pipeline also needs access to an AI model. It supports:
 
-- **Ollama** for a model running on the same computer; or
-- **Cloudflare Workers AI** for a remote model.
+- **Ollama** for a model running on the same computer;
+- **Cloudflare Workers AI** to call a remote model.
 
 The connection settings belong in a private `.env` file in the main project
 folder. Do not commit this file because it may contain an API token.
@@ -430,10 +424,6 @@ it when one source refers to the same actor in an unusual way.
 For example, a country report might use “we” to mean that country. Corrections
 should be limited to the affected source so unrelated actors are not combined.
 
-`pipeline/merge_fixtures.json` contains deliberately added actors or
-relationships that were not extracted from a source. Use this only when a
-manual addition is intentional, and record why it was added.
-
 After changing either file, preview and rerun the merge.
 
 ## Reviewing the final merge
@@ -450,7 +440,7 @@ Check:
 - the number of actors and relationships before and after merging;
 - warnings about conflicting actor classifications;
 - skipped records;
-- applied name corrections; and
+- applied name corrections;
 - manual records that were added or skipped.
 
 Large or unexpected changes should be investigated before publishing.
