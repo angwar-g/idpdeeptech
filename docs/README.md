@@ -68,7 +68,7 @@ When you filter, the network switches to live physics for the filtered subset (u
 
 ## Layout
 
-The UI computes node positions in JavaScript (per-connected-component force layout, with singletons placed in side columns). This runs every time the full network is rendered.
+The UI computes node positions in JavaScript. The largest connected component stays in the center, while small connected components and singleton actors are arranged on concentric rings around it. This runs every time the full network is rendered.
 
 `merge_all.py` also computes node positions via NetworkX and writes them to `combined_nodes.json` as `x`/`y` fields, but the current UI ignores those and uses its own layout. If we want deterministic placement across reloads, switching to the precomputed coordinates is a small change in `app.js` - see the `getStaticGraphPositions` function. (Currently kept this way because the JS-side layout reacts better to filtered subsets where coordinates would otherwise need recomputation.)
 

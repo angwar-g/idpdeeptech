@@ -1587,15 +1587,39 @@ function getStaticGraphPositions(nodes, edges, options = {}) {
   const positions = new Map();
   const connectedComponents = components.filter(component => component.length > 1);
   const singletonComponents = components.filter(component => component.length === 1);
+  let primaryComponentExtent = 0;
+  let connectedComponentsOuterRadius = 0;
 
   connectedComponents.forEach((component, index) => {
-    const center = getComponentCenter(index, component.length, compactComponents);
     const componentKeys = new Set(component);
     const localEdges = edgePairs.filter(([source, target]) =>
       componentEdges.get(source) === componentEdges.get(target) &&
       componentKeys.has(source)
     );
     const localPositions = layoutComponent(component, localEdges);
+    const localExtent = getPositionExtent(localPositions);
+    let center;
+
+    if (compactComponents) {
+      center = getCompactComponentCenter(index, component.length);
+    } else if (index === 0) {
+      center = { x: 0, y: 0 };
+      primaryComponentExtent = localExtent;
+    } else {
+      // Small connected components orbit the primary network on evenly spaced
+      // rings instead of being pushed into alternating side columns.
+      center = getConcentricRingPosition(
+        index - 1,
+        Math.max(1600, primaryComponentExtent + 700),
+        560,
+        720
+      );
+    }
+
+    connectedComponentsOuterRadius = Math.max(
+      connectedComponentsOuterRadius,
+      Math.hypot(center.x, center.y) + localExtent
+    );
 
     localPositions.forEach((position, key) => {
       positions.set(key, {
@@ -1609,7 +1633,16 @@ function getStaticGraphPositions(nodes, edges, options = {}) {
     const key = component[0];
     const position = compactComponents
       ? getCompactComponentCenter(connectedComponents.length + index, 1)
-      : getSingletonPosition(key, index, singletonComponents.length);
+      : getConcentricRingPosition(
+          index,
+          Math.max(
+            1800,
+            primaryComponentExtent + 1000,
+            connectedComponentsOuterRadius + 420
+          ),
+          135,
+          165
+        );
     positions.set(key, position);
   });
 
@@ -1644,17 +1677,38 @@ function getConnectedComponents(nodeKeys, adjacency) {
   return components;
 }
 
-function getComponentCenter(index, size, compactComponents = false) {
-  if (compactComponents) return getCompactComponentCenter(index, size);
-  if (index === 0) return { x: 0, y: 0 };
+function getPositionExtent(positionMap) {
+  let extent = 0;
 
-  const random = createSeededRandom(`component:${index}:${size}`);
-  const side = index % 2 === 0 ? 1 : -1;
-  const row = Math.floor((index - 1) / 2);
-  const x = side * (5200 + (row % 4) * 700 + random() * 360);
-  const y = -4200 + Math.floor(row / 4) * 1150 + (random() - 0.5) * 360;
+  positionMap.forEach(position => {
+    extent = Math.max(extent, Math.hypot(position.x, position.y));
+  });
 
-  return { x, y };
+  return extent;
+}
+
+function getConcentricRingPosition(index, innerRadius, itemSpacing, ringSpacing) {
+  let ring = 0;
+  let itemOnRing = index;
+  let radius = innerRadius;
+  let capacity = Math.max(8, Math.floor((Math.PI * 2 * radius) / itemSpacing));
+
+  while (itemOnRing >= capacity) {
+    itemOnRing -= capacity;
+    ring += 1;
+    radius = innerRadius + ring * ringSpacing;
+    capacity = Math.max(8, Math.floor((Math.PI * 2 * radius) / itemSpacing));
+  }
+
+  // Offset alternating rings so their nodes do not form distracting radial
+  // spokes while keeping every item on a clean circular band.
+  const angleOffset = (ring * 0.6180339887498949) % 1;
+  const angle = (itemOnRing / capacity + angleOffset) * Math.PI * 2;
+
+  return {
+    x: Math.cos(angle) * radius,
+    y: Math.sin(angle) * radius
+  };
 }
 
 function getCompactComponentCenter(index, size) {
@@ -1763,23 +1817,6 @@ function applyRepulsion(component, positions, velocities, size) {
       velocities.get(target).y += fy;
     }
   }
-}
-
-function getSingletonPosition(key, index, totalSingletons) {
-  const random = createSeededRandom(`${key}:singleton`);
-  const side = index % 2 === 0 ? -1 : 1;
-  const sideIndex = Math.floor(index / 2);
-  const columns = 18;
-  const spacing = 245;
-  const col = sideIndex % columns;
-  const row = Math.floor(sideIndex / columns);
-  const rows = Math.ceil((totalSingletons / 2) / columns);
-  const xBase = side * 9200;
-  const xDirection = side < 0 ? -1 : 1;
-  const x = xBase + xDirection * (col - columns / 2) * spacing + (random() - 0.5) * 42;
-  const y = (row - rows / 2) * spacing + (random() - 0.5) * 42;
-
-  return { x, y };
 }
 
 function getStaticNodePosition(id, index, totalNodes) {
