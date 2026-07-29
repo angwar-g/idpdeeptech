@@ -1064,8 +1064,8 @@ main {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 58px;
-  height: 58px;
+  width: 46px;
+  height: 46px;
   margin: 0;
   padding: 0;
   color: #ffffff;
@@ -1080,7 +1080,7 @@ main {
 
 .info-button span {
   font-family: Georgia, "Times New Roman", serif;
-  font-size: 32px;
+  font-size: 25px;
   font-style: italic;
   font-weight: 700;
   line-height: 18px;
@@ -1121,7 +1121,7 @@ main {
 .info-dialog {
   display: flex;
   flex-direction: column;
-  width: min(360px, 100%);
+  width: min(540px, 100%);
   height: min(690px, calc(100vh - 48px));
   overflow: hidden;
   border: 1px solid rgba(143, 199, 255, 0.38);
@@ -1390,8 +1390,8 @@ main {
   .info-button {
     right: 24px;
     bottom: 24px;
-    width: 52px;
-    height: 52px;
+    width: 42px;
+    height: 42px;
   }
 
   .info-modal {
@@ -1400,7 +1400,7 @@ main {
   }
 
   .info-dialog {
-    width: min(360px, 100%);
+    width: min(520px, 100%);
     height: min(650px, calc(100vh - 28px));
     max-height: none;
     border-radius: 16px;

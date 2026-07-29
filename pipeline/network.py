@@ -76,7 +76,7 @@ def main():
             title=(
                 f"<b>{relation}</b><br>"
                 f"Confidence: {confidence}<br>"
-                f"Functional space: {functional_space}<br>"
+                f"Functional Space: {functional_space}<br>"
                 f"Page: {page}<br>"
                 f"Phrase: {phrase}"
             ),
