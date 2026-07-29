@@ -71,6 +71,11 @@ Promise.all([
       optionsId: "sourceOptions",
       emptyText: "No matching sources",
       defaultText: "Type to search sources",
+      quickSelectGroups: [
+        { label: "All docs", sourceType: "pdf" },
+        { label: "All sites", sourceType: "site" },
+        { label: "All news", sourceType: "news" }
+      ],
       onChange() {
         updateActorFilterOptions();
         scheduleApplyFilters();
@@ -176,15 +181,16 @@ function populateFilters(nodes, edges) {
   // Collect source websites/documents across all edges and nodes. URLs are
   // grouped by hostname so different pages of one website appear together.
   const allSources = new Map();
+  const sourceTypesByGroup = buildSourceTypesByGroup(nodes, edges);
   edges.forEach(edge => {
     (edge.source_documents || []).forEach(sd => {
-      addSourceOption(allSources, sd);
+      addSourceOption(allSources, sd, sourceTypesByGroup);
     });
   });
   // Also include actor sources (an actor may appear in a doc with no edges).
   nodes.forEach(node => {
     (node.source_documents || []).forEach(sd => {
-      addSourceOption(allSources, sd);
+      addSourceOption(allSources, sd, sourceTypesByGroup);
     });
   });
 
@@ -501,6 +507,43 @@ function createSearchableMultiSelect(config) {
     });
 
     row.append(selectAll);
+
+    if (config.quickSelectGroups?.length) {
+      const quickSelectRow = document.createElement("div");
+      quickSelectRow.className = "search-type-actions";
+
+      config.quickSelectGroups.forEach(group => {
+        const groupButton = document.createElement("button");
+        groupButton.type = "button";
+        groupButton.textContent = group.label;
+
+        groupButton.addEventListener("click", event => {
+          event.preventDefault();
+
+          const groupOptions = options.filter(option =>
+            (option.sourceTypes || []).includes(group.sourceType)
+          );
+
+          selected.clear();
+          lastSelectedValue = null;
+
+          groupOptions.forEach(option => {
+            selected.set(option.value, option.label);
+            lastSelectedValue = option.value;
+          });
+
+          input.value = "";
+          renderChips();
+          renderMenu();
+          config.onChange();
+        });
+
+        quickSelectRow.appendChild(groupButton);
+      });
+
+      row.appendChild(quickSelectRow);
+    }
+
     return row;
   }
 
@@ -509,15 +552,115 @@ function createSearchableMultiSelect(config) {
   return api;
 }
 
-function addSourceOption(sourceMap, source) {
+function buildSourceTypesByGroup(nodes, edges = []) {
+  const sourceTypesByGroup = new Map();
+  const allSourceGroups = new Set();
+
+  nodes.forEach(node => {
+    const sourceDocuments = node.source_documents || [];
+    sourceDocuments.forEach(source =>
+      allSourceGroups.add(getSourceGroupKey(source))
+    );
+
+    // A node with exactly one merge source label gives an unambiguous mapping
+    // between its source documents and the pipeline that produced them.
+    const sourceLabels = node._source_labels || [];
+    if (sourceLabels.length !== 1) return;
+
+    const sourceType = getSourceTypeFromLabel(sourceLabels[0]);
+    if (!sourceType) return;
+
+    sourceDocuments.forEach(source => {
+      const groupKey = getSourceGroupKey(source);
+      if (!sourceTypesByGroup.has(groupKey)) {
+        sourceTypesByGroup.set(groupKey, new Set());
+      }
+      sourceTypesByGroup.get(groupKey).add(sourceType);
+    });
+  });
+
+  edges.forEach(edge => {
+    (edge.source_documents || []).forEach(source =>
+      allSourceGroups.add(getSourceGroupKey(source))
+    );
+  });
+
+  // A small number of crawled pages use subdomains (for example,
+  // docs.riverlane.com) while their pipeline label belongs to the parent
+  // company site. Inherit the parent hostname's type when direct evidence is
+  // not available.
+  allSourceGroups.forEach(groupKey => {
+    if (sourceTypesByGroup.has(groupKey) || !groupKey.startsWith("site:")) return;
+
+    const hostname = groupKey.slice("site:".length);
+    const parts = hostname.split(".");
+
+    for (let index = 1; index < parts.length - 1; index += 1) {
+      const parentKey = `site:${parts.slice(index).join(".")}`;
+      if (!sourceTypesByGroup.has(parentKey)) continue;
+
+      sourceTypesByGroup.set(
+        groupKey,
+        new Set(sourceTypesByGroup.get(parentKey))
+      );
+      break;
+    }
+  });
+
+  // Merged logical edges can retain an older domain that is absent from the
+  // node records. If every already-classified document on that same edge has
+  // one source type, safely carry that type to its unclassified documents.
+  edges.forEach(edge => {
+    const groupKeys = (edge.source_documents || []).map(getSourceGroupKey);
+    const knownTypes = new Set();
+
+    groupKeys.forEach(groupKey => {
+      (sourceTypesByGroup.get(groupKey) || []).forEach(sourceType =>
+        knownTypes.add(sourceType)
+      );
+    });
+
+    if (knownTypes.size !== 1) return;
+    const sourceType = [...knownTypes][0];
+
+    groupKeys.forEach(groupKey => {
+      if (!sourceTypesByGroup.has(groupKey)) {
+        sourceTypesByGroup.set(groupKey, new Set([sourceType]));
+      }
+    });
+  });
+
+  return sourceTypesByGroup;
+}
+
+function getSourceTypeFromLabel(sourceLabel) {
+  const prefix = String(sourceLabel || "")
+    .trim()
+    .toLowerCase()
+    .split("/", 1)[0];
+
+  return ["pdf", "site", "news"].includes(prefix) ? prefix : "";
+}
+
+function addSourceOption(sourceMap, source, sourceTypesByGroup = new Map()) {
   if (!source) return;
 
   const value = getSourceGroupKey(source);
-  if (sourceMap.has(value)) return;
+  const sourceTypes = [...(sourceTypesByGroup.get(value) || [])];
+
+  if (sourceMap.has(value)) {
+    const existing = sourceMap.get(value);
+    existing.sourceTypes = [...new Set([
+      ...(existing.sourceTypes || []),
+      ...sourceTypes
+    ])];
+    return;
+  }
 
   sourceMap.set(value, {
     value,
-    label: getSourceGroupLabel(source)
+    label: getSourceGroupLabel(source),
+    sourceTypes
   });
 }
 

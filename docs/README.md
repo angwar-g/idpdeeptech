@@ -46,6 +46,7 @@ This writes `combined_nodes.json` and `combined_edges.json` into `pipeline/merge
 
 - **Full network** loads on page open, **excluding isolated actors** (singleton nodes with no edges). Only the connected portions of the graph is shown by default to keep the view readable.
 - **Filter chips** in the sidebar narrow the view by source, actor, or year. Each is searchable. "Select all" / "Select matches" shortcut at the top of each dropdown.
+- **Source-type shortcuts** under "Select all" choose every PDF, company site, or news source in one click using the merged data's `pdf/`, `site/`, and `news/` source labels.
 - **Source filter groups by hostname.** Multiple pages of the same website (`https://www.psiquantum.com/about`, `https://psiquantum.com/research`) appear as one `psiquantum.com` entry. PDFs appear individually under their filename.
 - **Year filter** uses real article dates from news (`source_date`) plus filename-year extraction for PDFs as fallback.
 - **Actor filter is source-aware.** Pick a source first and the actor dropdown re-populates to only actors that appear in those sources.

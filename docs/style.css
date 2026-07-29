@@ -990,6 +990,12 @@ main {
   border-bottom: 1px solid rgba(143, 199, 255, 0.16);
 }
 
+.search-type-actions {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 6px;
+}
+
 .search-actions button {
   margin: 0;
   padding: 7px 9px;
@@ -1148,6 +1154,12 @@ main {
   border-radius: 50%;
   background: rgba(143, 199, 255, 0.09);
   box-shadow: none;
+}
+
+.search-type-actions button {
+  padding-inline: 5px;
+  font-size: 10px;
+  white-space: nowrap;
 }
 
 .info-close-button:hover {
