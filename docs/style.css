@@ -1103,7 +1103,7 @@ main {
 .info-dialog {
   display: flex;
   flex-direction: column;
-  width: min(590px, 100%);
+  width: min(360px, 100%);
   height: min(690px, calc(100vh - 48px));
   overflow: hidden;
   border: 1px solid rgba(143, 199, 255, 0.38);
@@ -1376,7 +1376,7 @@ main {
   }
 
   .info-dialog {
-    width: min(520px, 100%);
+    width: min(360px, 100%);
     height: min(650px, calc(100vh - 28px));
     max-height: none;
     border-radius: 16px;
