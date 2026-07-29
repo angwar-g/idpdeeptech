@@ -38,6 +38,21 @@ const HELIX_TYPES = [
   { label: "Unknown", className: "unknown" }
 ];
 
+const HELIX_COLOR_SCALE = Object.freeze({
+  "Government": "#4C78A8",
+  "Industry": "#F58518",
+  "Academia": "#54A24B",
+  "Intermediary": "#B279A2",
+  "Civil Society": "#E45756",
+  "Unknown": "#9AA4B2"
+});
+
+const GRAPH_EDGE_STYLE = Object.freeze({
+  fullColor: "rgba(151, 180, 218, 0.30)",
+  filteredColor: "rgba(151, 180, 218, 0.42)",
+  highlightColor: "#9fd2ff"
+});
+
 Promise.all([
   fetch("data/combined_nodes.json").then(assertOk).then(r => r.json()),
   fetch("data/combined_edges.json").then(assertOk).then(r => r.json())
@@ -1125,10 +1140,10 @@ function drawGraph(nodes, edges, settings = {}) {
       },
       color: {
         color: isFullNetwork
-          ? "rgba(151, 180, 218, 0.30)"
-          : "rgba(151, 180, 218, 0.42)",
-        highlight: "#9fd2ff",
-        hover: "#9fd2ff"
+          ? GRAPH_EDGE_STYLE.fullColor
+          : GRAPH_EDGE_STYLE.filteredColor,
+        highlight: GRAPH_EDGE_STYLE.highlightColor,
+        hover: GRAPH_EDGE_STYLE.highlightColor
       },
       // Slightly thicker line for edges with many occurrences (visual signal
       // of how well-attested a relation is).
@@ -1942,16 +1957,7 @@ function getNodeSize(node) {
 }
 
 function getHelixColor(helix) {
-  const colors = {
-    "Government": "#4C78A8",
-    "Industry": "#F58518",
-    "Academia": "#54A24B",
-    "Intermediary": "#B279A2",
-    "Civil Society": "#E45756",
-    "Unknown": "#9AA4B2"
-  };
-
-  return colors[helix] || "#9AA4B2";
+  return HELIX_COLOR_SCALE[helix] || HELIX_COLOR_SCALE.Unknown;
 }
 
 function formatSourceList(sources) {
@@ -1993,10 +1999,31 @@ function escapeHtml(value) {
 const infoButton = document.getElementById("infoButton");
 const infoModal = document.getElementById("infoModal");
 const infoCloseButton = document.getElementById("infoCloseButton");
+const infoDialogContent = document.getElementById("infoDialogContent");
+const infoScrollFade = document.getElementById("infoScrollFade");
+const infoJumpLinks = [...document.querySelectorAll(".info-jump-link")];
+const infoAccordions = [...document.querySelectorAll(".info-accordion")];
+
+document.querySelectorAll(".node-swatch").forEach(swatch => {
+  swatch.style.backgroundColor = getHelixColor(swatch.dataset.helix);
+});
+
+document.querySelectorAll(".edge-swatch").forEach(swatch => {
+  swatch.style.setProperty("--info-edge-color", GRAPH_EDGE_STYLE.filteredColor);
+});
+
+function updateInfoScrollFade() {
+  const distanceFromBottom =
+    infoDialogContent.scrollHeight -
+    infoDialogContent.scrollTop -
+    infoDialogContent.clientHeight;
+  infoScrollFade.classList.toggle("hidden", distanceFromBottom <= 4);
+}
 
 function openInfoModal() {
   infoModal.hidden = false;
   infoButton.setAttribute("aria-expanded", "true");
+  requestAnimationFrame(updateInfoScrollFade);
   infoCloseButton.focus();
 }
 
@@ -2006,8 +2033,61 @@ function closeInfoModal() {
   infoButton.focus();
 }
 
+function openOnlyInfoAccordion(selectedAccordion) {
+  infoAccordions.forEach(accordion => {
+    if (accordion !== selectedAccordion) {
+      accordion.open = false;
+    }
+  });
+}
+
+function setActiveInfoJumpLink(targetId) {
+  infoJumpLinks.forEach(link => {
+    const isActive = link.dataset.infoTarget === targetId;
+    link.classList.toggle("active", isActive);
+    if (isActive) {
+      link.setAttribute("aria-current", "true");
+    } else {
+      link.removeAttribute("aria-current");
+    }
+  });
+}
+
 infoButton.addEventListener("click", openInfoModal);
 infoCloseButton.addEventListener("click", closeInfoModal);
+infoDialogContent.addEventListener("scroll", updateInfoScrollFade);
+
+infoJumpLinks.forEach(link => {
+  link.addEventListener("click", () => {
+    const targetId = link.dataset.infoTarget;
+    const target = document.getElementById(targetId);
+
+    if (targetId === "infoEdges") {
+      const edgeAccordion = target.querySelector(".info-accordion");
+      edgeAccordion.open = true;
+      openOnlyInfoAccordion(edgeAccordion);
+    } else {
+      const helixAccordion = document.querySelector("#infoNodes .info-accordion");
+      helixAccordion.open = true;
+      openOnlyInfoAccordion(helixAccordion);
+    }
+
+    setActiveInfoJumpLink(targetId);
+    target.scrollIntoView({ behavior: "smooth", block: "start" });
+    requestAnimationFrame(updateInfoScrollFade);
+  });
+});
+
+infoAccordions.forEach(accordion => {
+  accordion.addEventListener("toggle", () => {
+    if (accordion.open) {
+      openOnlyInfoAccordion(accordion);
+      const section = accordion.closest(".info-guide-section");
+      setActiveInfoJumpLink(section.id);
+    }
+    requestAnimationFrame(updateInfoScrollFade);
+  });
+});
 
 infoModal.addEventListener("click", event => {
   if (event.target === infoModal) {

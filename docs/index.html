@@ -7,7 +7,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css?v=info-guide-compact" />
   <link rel="icon" type="image/png" href="logo.png" />
   <link rel="apple-touch-icon" href="logo.png" />
   <script src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
@@ -147,63 +147,103 @@
       aria-labelledby="infoDialogTitle"
     >
       <div class="info-dialog-header">
-        <h2 id="infoDialogTitle">Nodes (actors)</h2>
+        <h2 id="infoDialogTitle">How to read the network</h2>
         <button id="infoCloseButton" class="info-close-button" type="button" aria-label="Close information guide">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
 
-      <div class="info-dialog-content">
-        <p>Helix - the primary sphere the actor belongs to:</p>
+      <nav class="info-section-nav" aria-label="Information guide sections">
+        <button type="button" class="info-jump-link active" data-info-target="infoNodes" aria-current="true">Nodes</button>
+        <span aria-hidden="true">|</span>
+        <button type="button" class="info-jump-link" data-info-target="infoEdges">Edges</button>
+      </nav>
 
-        <ul>
-          <li><strong>Government</strong>: public sector bodies, agencies, ministries</li>
-          <li><strong>Industry</strong>: private companies, startups, corporations</li>
-          <li><strong>Academia</strong>: universities, research institutes, labs</li>
-          <li><strong>Intermediary</strong>: span or connect other helices (accelerators, foundations)</li>
-          <li><strong>Civil Society</strong>: NGOs, advocacy groups, professional associations</li>
-          <li><strong>Unknown</strong>: helix couldn't be determined from available sources</li>
-        </ul>
+      <div class="info-scroll-region">
+        <div id="infoDialogContent" class="info-dialog-content">
+          <section id="infoNodes" class="info-guide-section">
+            <h2>Nodes (actors)</h2>
 
-        <p>Sphere - how many helices an actor participates in:</p>
+            <details class="info-accordion" open>
+              <summary>Helix</summary>
+              <div class="info-accordion-body">
+                <p>Helix - the primary sphere the actor belongs to:</p>
 
-        <ul>
-          <li><strong>Single</strong>: primarily embedded in one helix across mandate, governance, and function</li>
-          <li><strong>Multi</strong>: Intermediary category, spans multiple helices in mandate, governance, or function</li>
-        </ul>
+                <ul class="info-definition-list">
+                  <li><span class="node-swatch" data-helix="Government" aria-hidden="true"></span><span><strong>Government</strong>: public sector bodies, agencies, ministries</span></li>
+                  <li><span class="node-swatch" data-helix="Industry" aria-hidden="true"></span><span><strong>Industry</strong>: private companies, startups, corporations</span></li>
+                  <li><span class="node-swatch" data-helix="Academia" aria-hidden="true"></span><span><strong>Academia</strong>: universities, research institutes, labs</span></li>
+                  <li><span class="node-swatch" data-helix="Intermediary" aria-hidden="true"></span><span><strong>Intermediary</strong>: span or connect other helices (accelerators, foundations)</span></li>
+                  <li><span class="node-swatch" data-helix="Civil Society" aria-hidden="true"></span><span><strong>Civil Society</strong>: NGOs, advocacy groups, professional associations</span></li>
+                  <li><span class="node-swatch" data-helix="Unknown" aria-hidden="true"></span><span><strong>Unknown</strong>: helix couldn't be determined from available sources</span></li>
+                </ul>
+              </div>
+            </details>
 
-        <p>R&amp;D - whether the actor engages in research activity:</p>
+            <details class="info-accordion">
+              <summary>Sphere</summary>
+              <div class="info-accordion-body">
+                <p>Sphere - how many helices an actor participates in:</p>
 
-        <ul>
-          <li><strong>R&amp;D</strong>: basic research, applied research, or an explicit innovation mandate indicated</li>
-          <li><strong>Assessed</strong>: reviewed but no clear indication of research activity when entity mentioned</li>
-        </ul>
+                <ul>
+                  <li><strong>Single</strong>: primarily embedded in one helix across mandate, governance, and function</li>
+                  <li><strong>Multi</strong>: Intermediary category, spans multiple helices in mandate, governance, or function</li>
+                </ul>
+              </div>
+            </details>
 
-        <h2>Edges (interactions)</h2>
+            <details class="info-accordion">
+              <summary>R&amp;D</summary>
+              <div class="info-accordion-body">
+                <p>R&amp;D - whether the actor engages in research activity:</p>
 
-        <p>Label - the type of interaction between two actors:</p>
+                <ul>
+                  <li><strong>R&amp;D</strong>: basic research, applied research, or an explicit innovation mandate indicated</li>
+                  <li><strong>Assessed</strong>: reviewed but no clear indication of research activity when entity mentioned</li>
+                </ul>
+              </div>
+            </details>
+          </section>
 
-        <ul>
-          <li><strong>Technology Transfer</strong>: core activity of innovation systems, market or non-market transfer of technology, knowledge, or IP</li>
-          <li><strong>Collaborative Leadership</strong>: an innovation organiser exercises convening power to bring spheres together, coordinating top-down and bottom-up processes</li>
-          <li><strong>Substitution</strong>: one sphere fills gaps when another is weak, one actor takes the role of another</li>
-          <li><strong>Networking</strong>: formal or informal networks, a manifestation of the collective nature of science, technology and innovation</li>
-          <li><strong>Collaboration Conflict Moderation</strong>: triadic moderation of tensions and conflicts, turning diverging interests into convergence and win-win outcomes</li>
-        </ul>
+          <section id="infoEdges" class="info-guide-section">
+            <h2>Edges (interactions)</h2>
 
-        <p>Functional space - determined by the helix pair of the two actors:</p>
+            <details class="info-accordion">
+              <summary>Label</summary>
+              <div class="info-accordion-body">
+                <p>Label - the type of interaction between two actors:</p>
 
-        <ul>
-          <li><strong>Knowledge</strong>: Academia ↔ Government</li>
-          <li><strong>Innovation</strong>: Academia ↔ Industry | Academia ↔ Intermediary | Industry ↔ Intermediary</li>
-          <li><strong>Consensus</strong>: Government ↔ Industry | Government ↔ Intermediary</li>
-          <li><strong>Public</strong>: any pair involving Civil Society</li>
-          <li><strong>Intra-Helix</strong>: same helix on both</li>
-        </ul>
+                <ul class="info-definition-list">
+                  <li><span class="edge-swatch directional" aria-hidden="true"></span><span><strong>Technology Transfer</strong>: core activity of innovation systems, market or non-market transfer of technology, knowledge, or IP</span></li>
+                  <li><span class="edge-swatch directional" aria-hidden="true"></span><span><strong>Collaborative Leadership</strong>: an innovation organiser exercises convening power to bring spheres together, coordinating top-down and bottom-up processes</span></li>
+                  <li><span class="edge-swatch directional" aria-hidden="true"></span><span><strong>Substitution</strong>: one sphere fills gaps when another is weak, one actor takes the role of another</span></li>
+                  <li><span class="edge-swatch" aria-hidden="true"></span><span><strong>Networking</strong>: formal or informal networks, a manifestation of the collective nature of science, technology and innovation</span></li>
+                  <li><span class="edge-swatch" aria-hidden="true"></span><span><strong>Collaboration Conflict Moderation</strong>: triadic moderation of tensions and conflicts, turning diverging interests into convergence and win-win outcomes</span></li>
+                </ul>
+              </div>
+            </details>
+
+            <details class="info-accordion">
+              <summary>Functional space</summary>
+              <div class="info-accordion-body">
+                <p>Functional space - determined by the helix pair of the two actors:</p>
+
+                <ul>
+                  <li><strong>Knowledge</strong>: Academia ↔ Government</li>
+                  <li><strong>Innovation</strong>: Academia ↔ Industry | Academia ↔ Intermediary | Industry ↔ Intermediary</li>
+                  <li><strong>Consensus</strong>: Government ↔ Industry | Government ↔ Intermediary</li>
+                  <li><strong>Public</strong>: any pair involving Civil Society</li>
+                  <li><strong>Intra-Helix</strong>: same helix on both</li>
+                </ul>
+              </div>
+            </details>
+          </section>
+        </div>
+        <div id="infoScrollFade" class="info-scroll-fade" aria-hidden="true"></div>
       </div>
     </section>
   </div>
 
-  <script src="app.js?v=info-dialog"></script>
+  <script src="app.js?v=info-guide-compact"></script>
 </body>
 </html>
